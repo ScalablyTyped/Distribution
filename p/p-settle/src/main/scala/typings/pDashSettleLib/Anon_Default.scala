@@ -37,10 +37,10 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply[ValueType](promises: js.Array[ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[pDashSettleLib.pDashSettleMod.pSettleNs.PromiseResult[ValueType]]] = js.native
+  def apply[ValueType](promises: js.Array[ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[pDashSettleLib.pDashSettleMod.PromiseResult[ValueType]]] = js.native
   def apply[ValueType](
     promises: js.Array[ValueType | js.Thenable[ValueType]],
-    options: pDashSettleLib.pDashSettleMod.pSettleNs.Options
-  ): js.Promise[js.Array[pDashSettleLib.pDashSettleMod.pSettleNs.PromiseResult[ValueType]]] = js.native
+    options: pDashSettleLib.pDashSettleMod.Options
+  ): js.Promise[js.Array[pDashSettleLib.pDashSettleMod.PromiseResult[ValueType]]] = js.native
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fixed-data-table", "Cell")
 @js.native
 class Cell ()
-  extends fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.Cell
+  extends reactLib.reactMod.Component[CellProps, js.Object, js.Any]
 

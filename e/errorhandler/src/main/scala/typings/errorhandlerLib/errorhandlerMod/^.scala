@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("errorhandler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressLib.expressMod.eNs.ErrorRequestHandler = js.native
-  def apply(options: errorhandlerLib.errorhandlerMod.errorHandlerNs.Options): expressLib.expressMod.eNs.ErrorRequestHandler = js.native
+  def apply(): expressLib.expressMod.ErrorRequestHandler = js.native
+  def apply(options: Options): expressLib.expressMod.ErrorRequestHandler = js.native
 }
 

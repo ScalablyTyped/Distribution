@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Fade")
 @js.native
 class Fade ()
-  extends reactDashBootstrapLib.libFadeMod.namespaced
+  extends reactDashBootstrapLib.libFadeMod.^
 

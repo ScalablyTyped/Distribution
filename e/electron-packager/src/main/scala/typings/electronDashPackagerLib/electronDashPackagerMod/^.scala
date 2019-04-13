@@ -19,6 +19,6 @@ object ^ extends js.Object {
     *
     * @returns A promise containing the path(s) to the newly created application(s)
     */
-  def apply(opts: electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.Options): js.Promise[java.lang.String | js.Array[java.lang.String]] = js.native
+  def apply(opts: Options): js.Promise[java.lang.String | js.Array[java.lang.String]] = js.native
 }
 

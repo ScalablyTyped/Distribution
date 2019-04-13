@@ -7,27 +7,20 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "TerrainData")
 @js.native
-class TerrainData ()
-  extends cesiumLib.cesiumMod.CesiumNs.TerrainData {
-  /* CompleteClass */
-  override var credits: js.Array[cesiumLib.cesiumMod.CesiumNs.Credit] = js.native
-  /* CompleteClass */
-  override var waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement = js.native
-  /* CompleteClass */
-  override def interpolateHeight(rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle, longitude: scala.Double, latitude: scala.Double): scala.Double = js.native
-  /* CompleteClass */
-  override def isChildAvailable(thisX: scala.Double, thisY: scala.Double, childX: scala.Double, childY: scala.Double): scala.Boolean = js.native
-  /* CompleteClass */
-  override def upsample(
-    tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme,
+class TerrainData () extends js.Object {
+  var credits: js.Array[Credit] = js.native
+  var waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement = js.native
+  def interpolateHeight(rectangle: Rectangle, longitude: scala.Double, latitude: scala.Double): scala.Double = js.native
+  def isChildAvailable(thisX: scala.Double, thisY: scala.Double, childX: scala.Double, childY: scala.Double): scala.Boolean = js.native
+  def upsample(
+    tilingScheme: TilingScheme,
     thisX: scala.Double,
     thisY: scala.Double,
     thisLevel: scala.Double,
     descendantX: scala.Double,
     descendantY: scala.Double,
     descendantLevel: scala.Double
-  ): js.Promise[cesiumLib.cesiumMod.CesiumNs.TerrainData] = js.native
-  /* CompleteClass */
-  override def wasCreatedByUpsampling(): scala.Boolean = js.native
+  ): js.Promise[TerrainData] = js.native
+  def wasCreatedByUpsampling(): scala.Boolean = js.native
 }
 

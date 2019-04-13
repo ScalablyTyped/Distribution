@@ -25,3 +25,8 @@ class SearchDef ()
   override def IsIndirectionUsed(): scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.SearchDef")
+@js.native
+object SearchDef
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISearchDef]
+

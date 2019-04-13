@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object proxyDashAddrLibStrings {
   @js.native
   sealed trait linklocal
-    extends proxyDashAddrLib.proxyDashAddrMod.proxyAddrNs._Address
+    extends proxyDashAddrLib.proxyDashAddrMod._Address
   
   @js.native
   sealed trait loopback
-    extends proxyDashAddrLib.proxyDashAddrMod.proxyAddrNs._Address
+    extends proxyDashAddrLib.proxyDashAddrMod._Address
   
   @js.native
   sealed trait uniquelocal
-    extends proxyDashAddrLib.proxyDashAddrMod.proxyAddrNs._Address
+    extends proxyDashAddrLib.proxyDashAddrMod._Address
   
   @scala.inline
   def linklocal: linklocal = "linklocal".asInstanceOf[linklocal]

@@ -18,6 +18,8 @@ package object caniuseDashLiteMod {
     - java.lang.String
   */
   type FeatureStatus = _FeatureStatus | java.lang.String
+  type PackedFeature = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type PackedRegion = org.scalablytyped.runtime.StringDictionary[js.Any]
   type StatsByAgentID = stdLib.Readonly[org.scalablytyped.runtime.StringDictionary[SupportStatusByVersion]]
   /* Rewritten from type alias, can be one of: 
     - caniuseDashLiteLib.caniuseDashLiteLibStrings.n

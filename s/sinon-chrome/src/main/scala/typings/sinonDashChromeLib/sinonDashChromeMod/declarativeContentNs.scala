@@ -21,6 +21,6 @@ object declarativeContentNs extends js.Object {
   var PageStateMatcher: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var RequestContentScript: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var ShowPageAction: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onPageChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onPageChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
 }
 

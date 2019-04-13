@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SimpleDB ()
   extends awsDashSdkLib.clientsAllMod.SimpleDB {
-  def this(options: awsDashSdkLib.clientsSimpledbMod.SimpleDBNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSimpledbMod.ClientConfiguration) = this()
 }
 

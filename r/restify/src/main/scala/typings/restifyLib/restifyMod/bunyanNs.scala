@@ -19,7 +19,7 @@ object bunyanNs extends js.Object {
       * The level at which to trigger dumping captured records. Defaults to
       * bunyan.WARN.
       */
-    var level: js.UndefOr[bunyanLib.bunyanMod.LoggerNs.LogLevel] = js.undefined
+    var level: js.UndefOr[bunyanLib.bunyanMod.LogLevel] = js.undefined
     /** Number of records to capture. Default 100. */
     var maxRecords: js.UndefOr[scala.Double] = js.undefined
     /**
@@ -28,9 +28,9 @@ object bunyanNs extends js.Object {
       */
     var maxRequestIds: js.UndefOr[scala.Double] = js.undefined
     /** The stream to which to write when dumping captured records. */
-    var stream: js.UndefOr[bunyanLib.bunyanMod.LoggerNs.Stream] = js.undefined
+    var stream: js.UndefOr[bunyanLib.bunyanMod.Stream] = js.undefined
     /** The streams to which to write when dumping captured records. */
-    var streams: js.UndefOr[js.Array[bunyanLib.bunyanMod.LoggerNs.Stream]] = js.undefined
+    var streams: js.UndefOr[js.Array[bunyanLib.bunyanMod.Stream]] = js.undefined
   }
   
   /**
@@ -46,8 +46,8 @@ object bunyanNs extends js.Object {
     def write(record: js.Any): scala.Unit = js.native
   }
   
-  val serializers: bunyanLib.bunyanMod.LoggerNs.Serializers with restifyLib.Anon_Clientreq = js.native
+  val serializers: bunyanLib.bunyanMod.Serializers with restifyLib.Anon_Clientreq = js.native
   /** create a bunyan logger */
-  def createLogger(name: java.lang.String): bunyanLib.bunyanMod.namespaced = js.native
+  def createLogger(name: java.lang.String): bunyanLib.bunyanMod.^ = js.native
 }
 

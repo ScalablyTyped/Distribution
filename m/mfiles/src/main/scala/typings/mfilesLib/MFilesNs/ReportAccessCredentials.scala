@@ -19,3 +19,8 @@ class ReportAccessCredentials ()
   override val UserName: java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.ReportAccessCredentials")
+@js.native
+object ReportAccessCredentials
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IReportAccessCredentials]
+

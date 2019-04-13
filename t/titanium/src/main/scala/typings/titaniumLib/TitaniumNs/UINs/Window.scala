@@ -79,8 +79,7 @@ trait Window extends View {
   			 */
   var extendEdges: js.Array[scala.Double] = js.native
   /**
-  			 * Specifies whether the content (subviews) of the window  will render inside the safe-area or not.
-  			 * Only used in iOS 11.0 and later.
+  			 * Specifies whether the screen insets/notches are allowed to overlap the window's content or not.
   			 */
   var extendSafeArea: scala.Boolean = js.native
   /**
@@ -148,9 +147,9 @@ trait Window extends View {
   			 */
   var navTintColor: java.lang.String = js.native
   /**
-  			 * The <Titanium.UI.iOS.NavigationWindow> instance hosting this window.
+  			 * The <Titanium.UI.NavigationWindow> instance hosting this window.
   			 */
-  val navigationWindow: titaniumLib.TitaniumNs.UINs.iOSNs.NavigationWindow = js.native
+  val navigationWindow: NavigationWindow = js.native
   /**
   			 * Current orientation of the window.
   			 */
@@ -168,6 +167,10 @@ trait Window extends View {
   			 * An Array of views to show in the right nav bar area.
   			 */
   var rightNavButtons: js.Array[View] = js.native
+  /**
+  			 * The padding needed to safely display content without it being overlapped by the screen insets and notches.
+  			 */
+  val safeAreaPadding: titaniumLib.Dimension = js.native
   /**
   			 * Shadow image for the navigation bar, specified as a URL to a local image..
   			 */
@@ -230,7 +233,7 @@ trait Window extends View {
   var toolbar: js.Array[_] = js.native
   /**
   			 * Use a transition animation when opening or closing windows in a
-  			 * <Titanium.UI.iOS.NavigationWindow> or <Titanium.UI.Tab>.
+  			 * <Titanium.UI.NavigationWindow> or <Titanium.UI.Tab>.
   			 */
   var transitionAnimation: titaniumLib.TitaniumNs.Proxy = js.native
   /**
@@ -399,7 +402,7 @@ trait Window extends View {
   /**
   			 * Gets the value of the <Titanium.UI.Window.navigationWindow> property.
   			 */
-  def getNavigationWindow(): titaniumLib.TitaniumNs.UINs.iOSNs.NavigationWindow = js.native
+  def getNavigationWindow(): NavigationWindow = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Window.onBack> property.
   			 */
@@ -420,6 +423,10 @@ trait Window extends View {
   			 * Gets the value of the <Titanium.UI.Window.rightNavButtons> property.
   			 */
   def getRightNavButtons(): js.Array[View] = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.Window.safeAreaPadding> property.
+  			 */
+  def getSafeAreaPadding(): titaniumLib.Dimension = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Window.shadowImage> property.
   			 */
@@ -738,9 +745,6 @@ trait Window extends View {
   def setTitlepromptid(titlepromptid: java.lang.String): scala.Unit = js.native
   /**
   			 * Sets the array of items to show in the window's toolbar.
-  			 */
-  /**
-  			 * Sets the value of the <Titanium.UI.Window.toolbar> property.
   			 */
   def setToolbar(items: js.Array[_]): scala.Unit = js.native
   def setToolbar(items: js.Array[_], params: titaniumLib.windowToolbarParam): scala.Unit = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("dependency-tree", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(options: dependencyDashTreeLib.dependencyDashTreeMod.dependencyTreeNs.Options): dependencyDashTreeLib.dependencyDashTreeMod.dependencyTreeNs.DependencyObj = js.native
-  def toList(options: dependencyDashTreeLib.dependencyDashTreeMod.dependencyTreeNs.Options): js.Array[java.lang.String] = js.native
+  def apply(options: Options): DependencyObj = js.native
+  def toList(options: Options): js.Array[java.lang.String] = js.native
 }
 

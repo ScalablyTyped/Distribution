@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-visibility-sensor", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[reactLib.reactMod.ReactNs.StatelessComponent[Props]]
+  extends org.scalablytyped.runtime.TopLevel[reactLib.reactMod.StatelessComponent[Props]]
 

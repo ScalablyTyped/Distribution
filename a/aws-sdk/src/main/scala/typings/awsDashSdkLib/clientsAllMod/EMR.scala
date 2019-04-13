@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class EMR ()
-  extends awsDashSdkLib.clientsEmrMod.namespaced {
-  def this(options: awsDashSdkLib.clientsEmrMod.EMRNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsEmrMod.^ {
+  def this(options: awsDashSdkLib.clientsEmrMod.ClientConfiguration) = this()
 }
 

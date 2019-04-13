@@ -9,7 +9,7 @@ trait AssertionsResult extends js.Object {
   /**
     * Actual checked aXe verification results.
     */
-  var actual: js.Array[axeDashCoreLib.axeDashCoreMod.axeNs.Result]
+  var actual: js.Array[axeDashCoreLib.axeDashCoreMod.Result]
   /**
     * Whether the assertion passed.
     */
@@ -23,7 +23,7 @@ trait AssertionsResult extends js.Object {
 object AssertionsResult {
   @scala.inline
   def apply(
-    actual: js.Array[axeDashCoreLib.axeDashCoreMod.axeNs.Result],
+    actual: js.Array[axeDashCoreLib.axeDashCoreMod.Result],
     message: () => java.lang.String,
     pass: scala.Boolean
   ): AssertionsResult = {

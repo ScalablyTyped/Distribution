@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IValidator extends js.Object {
   var Error: IError
   def Validate(context: js.Any): IValidationFailure
-  def ValidateAsync(context: js.Any): qLib.qMod.QNs.Promise[IValidationFailure]
+  def ValidateAsync(context: js.Any): qLib.qMod.Promise[IValidationFailure]
 }
 
 object IValidator {
@@ -16,7 +16,7 @@ object IValidator {
   def apply(
     Error: IError,
     Validate: js.Any => IValidationFailure,
-    ValidateAsync: js.Any => qLib.qMod.QNs.Promise[IValidationFailure]
+    ValidateAsync: js.Any => qLib.qMod.Promise[IValidationFailure]
   ): IValidator = {
     val __obj = js.Dynamic.literal(Error = Error, Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync))
   

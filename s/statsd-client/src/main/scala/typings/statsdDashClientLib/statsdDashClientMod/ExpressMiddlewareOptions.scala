@@ -19,8 +19,8 @@ trait ExpressMiddlewareOptions extends js.Object {
     js.Function4[
       /* client */ StatsdClient, 
       /* startTime */ stdLib.Date, 
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
+      /* req */ expressLib.expressMod.Request, 
+      /* res */ expressLib.expressMod.Response, 
       scala.Unit
     ]
   ] = js.undefined
@@ -35,7 +35,7 @@ object ExpressMiddlewareOptions {
   @scala.inline
   def apply(
     notFoundRouteName: java.lang.String = null,
-    onResponseEnd: (/* client */ StatsdClient, /* startTime */ stdLib.Date, /* req */ expressLib.expressMod.eNs.Request, /* res */ expressLib.expressMod.eNs.Response) => scala.Unit = null,
+    onResponseEnd: (/* client */ StatsdClient, /* startTime */ stdLib.Date, /* req */ expressLib.expressMod.Request, /* res */ expressLib.expressMod.Response) => scala.Unit = null,
     timeByUrl: js.UndefOr[scala.Boolean] = js.undefined
   ): ExpressMiddlewareOptions = {
     val __obj = js.Dynamic.literal()

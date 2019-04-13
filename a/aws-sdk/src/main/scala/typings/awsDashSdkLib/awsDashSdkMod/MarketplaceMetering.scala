@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MarketplaceMetering ()
   extends awsDashSdkLib.clientsAllMod.MarketplaceMetering {
-  def this(options: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMarketplacemeteringMod.ClientConfiguration) = this()
 }
 

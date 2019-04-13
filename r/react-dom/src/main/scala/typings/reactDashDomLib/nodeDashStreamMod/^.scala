@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val version: java.lang.String = js.native
-  def renderToStaticStream(element: reactLib.reactMod.ReactNs.ReactElement[_]): js.Any = js.native
-  def renderToStream(element: reactLib.reactMod.ReactNs.ReactElement[_]): js.Any = js.native
+  def renderToStaticStream(element: reactLib.reactMod.ReactElement[_]): js.Any = js.native
+  def renderToStream(element: reactLib.reactMod.ReactElement[_]): js.Any = js.native
 }
 

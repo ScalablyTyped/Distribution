@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-fns/dist/Media", JSImport.Namespace)
 @js.native
 object distMediaMod extends js.Object {
-  val Media: reactLib.reactMod.ReactNs.SFC[
+  val Media: reactLib.reactMod.SFC[
     reactDashFnsLib.distTypesMod.SharedRenderProps[reactDashFnsLib.distMediaMediaMod.MediaProps]
   ] = js.native
 }

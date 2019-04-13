@@ -11,7 +11,7 @@ trait InfiniteScrollProps extends js.Object {
   var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var renderMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var replace: js.UndefOr[scala.Boolean] = js.undefined
-  var scrollableAncestor: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | grommetLib.grommetLibStrings.window] = js.undefined
+  var scrollableAncestor: js.UndefOr[reactLib.reactMod.ReactNode | grommetLib.grommetLibStrings.window] = js.undefined
   var show: js.UndefOr[scala.Double] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
 }
@@ -24,7 +24,7 @@ object InfiniteScrollProps {
     onMore: /* repeated */ js.Any => _ = null,
     renderMarker: /* repeated */ js.Any => _ = null,
     replace: js.UndefOr[scala.Boolean] = js.undefined,
-    scrollableAncestor: reactLib.reactMod.ReactNs.ReactNode | grommetLib.grommetLibStrings.window = null,
+    scrollableAncestor: reactLib.reactMod.ReactNode | grommetLib.grommetLibStrings.window = null,
     show: scala.Int | scala.Double = null,
     step: scala.Int | scala.Double = null
   ): InfiniteScrollProps = {

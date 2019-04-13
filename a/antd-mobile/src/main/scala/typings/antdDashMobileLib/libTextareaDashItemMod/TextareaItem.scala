@@ -20,10 +20,10 @@ trait TextareaItem
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTextareaItem(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
-  def onBlur(e: reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
-  def onChange(e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
+  def onBlur(e: reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
+  def onChange(e: reactLib.reactMod.ChangeEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
   def onErrorClick(): scala.Unit = js.native
-  def onFocus(e: reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
+  def onFocus(e: reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement]): scala.Unit = js.native
   def reAlignHeight(): scala.Unit = js.native
 }
 

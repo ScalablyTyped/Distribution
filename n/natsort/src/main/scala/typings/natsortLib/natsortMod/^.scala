@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
-  def apply(options: natsortLib.natsortMod.natsortNs.Options): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
+  def apply(options: Options): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
 }
 

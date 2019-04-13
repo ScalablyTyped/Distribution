@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("csv-parse", "Parser")
 @js.native
 class Parser protected ()
-  extends csvDashParseLib.csvDashParseMod.parseNs.Parser {
-  def this(options: csvDashParseLib.csvDashParseMod.parseNs.Options) = this()
+  extends nodeLib.streamMod.Transform {
+  def this(options: Options) = this()
+  def __push(line: js.Any): js.Any = js.native
+  def __write(chars: js.Any, end: js.Any, callback: js.Any): js.Any = js.native
 }
 

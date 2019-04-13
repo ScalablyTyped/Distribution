@@ -20,7 +20,7 @@ object ^ extends js.Object {
   def arcsin[T](x: NjParam[T]): NdArray[T] = js.native
   def arctan[T](x: NjParam[T]): NdArray[T] = js.native
   def array[T](arr: NjArray[T]): NdArray[T] = js.native
-  def array[T](arr: NjArray[T], dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType): NdArray[T] = js.native
+  def array[T](arr: NjArray[T], dtype: ndarrayLib.ndarrayMod.DataType): NdArray[T] = js.native
   def broadcast[T, U](shape1: js.Array[T], shape2: js.Array[U]): js.Array[T | U] = js.native
   def clip[T](x: NjParam[T]): NdArray[T] = js.native
   def clip[T](x: NjParam[T], min: scala.Double): NdArray[T] = js.native
@@ -44,7 +44,7 @@ object ^ extends js.Object {
   def float64[T](arr: NjArray[T]): NjArray[stdLib.Float64Array] = js.native
   def getRawData[T](array: NdArrayData[T]): stdLib.Uint8Array = js.native
   def identity[T](n: T): NdArray[T] = js.native
-  def identity[T](n: T, dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType): NdArray[T] = js.native
+  def identity[T](n: T, dtype: ndarrayLib.ndarrayMod.DataType): NdArray[T] = js.native
   def ifft[T](x: NjArray[T]): NdArray[T] = js.native
   def int16[T](arr: NjArray[T]): NjArray[stdLib.Int16Array] = js.native
   def int32[T](arr: NjArray[T]): NjArray[stdLib.Int32Array] = js.native
@@ -55,9 +55,9 @@ object ^ extends js.Object {
   def multiply[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = js.native
   def negative[T](x: NjParam[T]): NdArray[T] = js.native
   def ones[T](shape: NdArrayData[T]): NdArray[T] = js.native
-  def ones[T](shape: NdArrayData[T], dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType): NdArray[T] = js.native
+  def ones[T](shape: NdArrayData[T], dtype: ndarrayLib.ndarrayMod.DataType): NdArray[T] = js.native
   def ones[T](shape: scala.Double): NdArray[T] = js.native
-  def ones[T](shape: scala.Double, dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType): NdArray[T] = js.native
+  def ones[T](shape: scala.Double, dtype: ndarrayLib.ndarrayMod.DataType): NdArray[T] = js.native
   def power[T](x1: NjParam[T], x2: NjParam[T]): NdArray[T] = js.native
   def random[T](): NdArray[T] = js.native
   def random[T](shape: NdArrayData[T]): NdArray[T] = js.native
@@ -83,8 +83,8 @@ object ^ extends js.Object {
   def uint32[T](arr: NjArray[T]): NjArray[stdLib.Uint32Array] = js.native
   def uint8[T](arr: NjArray[T]): NjArray[stdLib.Uint8Array] = js.native
   def zeros[T](shape: NdArrayData[T]): NdArray[T] = js.native
-  def zeros[T](shape: NdArrayData[T], dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType): NdArray[T] = js.native
+  def zeros[T](shape: NdArrayData[T], dtype: ndarrayLib.ndarrayMod.DataType): NdArray[T] = js.native
   def zeros[T](shape: scala.Double): NdArray[T] = js.native
-  def zeros[T](shape: scala.Double, dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType): NdArray[T] = js.native
+  def zeros[T](shape: scala.Double, dtype: ndarrayLib.ndarrayMod.DataType): NdArray[T] = js.native
 }
 

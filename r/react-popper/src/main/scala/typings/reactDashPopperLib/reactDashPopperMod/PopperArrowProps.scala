@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait PopperArrowProps extends js.Object {
   @JSName("ref")
   var ref_Original: reactDashPopperLib.RefHandler = js.native
-  var style: reactLib.reactMod.ReactNs.CSSProperties = js.native
+  var style: reactLib.reactMod.CSSProperties = js.native
   def ref(): scala.Unit = js.native
   def ref(ref: stdLib.HTMLElement): scala.Unit = js.native
 }

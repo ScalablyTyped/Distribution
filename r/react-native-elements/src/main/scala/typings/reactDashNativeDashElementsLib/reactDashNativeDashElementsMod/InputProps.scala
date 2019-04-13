@@ -30,9 +30,7 @@ import scala.scalajs.js.annotation._
   /**
     * Renders component in place of the React Native `TextInput` (optional)
     */
-  var inputComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var inputComponent: js.UndefOr[reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Styling for Input Component Container (optional)
     */
@@ -92,7 +90,7 @@ object InputProps {
     errorMessage: java.lang.String = null,
     errorProps: TextProps = null,
     errorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    inputComponent: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
+    inputComponent: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = null,
     inputContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     inputStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     label: java.lang.String = null,

@@ -15,9 +15,9 @@ trait Options extends js.Object {
   var public: js.UndefOr[java.lang.String] = js.undefined
   var secret: js.UndefOr[java.lang.String] = js.undefined
   var security: js.UndefOr[
-    (serverLib.serverLibNumbers.`false` | helmetLib.helmetMod.helmetNs.IHelmetConfiguration) with serverLib.Anon_Csurf
+    (serverLib.serverLibNumbers.`false` | helmetLib.helmetMod.IHelmetConfiguration) with serverLib.Anon_Csurf
   ] = js.undefined
-  var session: js.UndefOr[expressDashSessionLib.expressDashSessionMod.sessionNs.SessionOptions] = js.undefined
+  var session: js.UndefOr[expressDashSessionLib.expressDashSessionMod.SessionOptions] = js.undefined
   var views: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -32,8 +32,8 @@ object Options {
     port: scala.Int | scala.Double = null,
     public: java.lang.String = null,
     secret: java.lang.String = null,
-    security: (serverLib.serverLibNumbers.`false` | helmetLib.helmetMod.helmetNs.IHelmetConfiguration) with serverLib.Anon_Csurf = null,
-    session: expressDashSessionLib.expressDashSessionMod.sessionNs.SessionOptions = null,
+    security: (serverLib.serverLibNumbers.`false` | helmetLib.helmetMod.IHelmetConfiguration) with serverLib.Anon_Csurf = null,
+    session: expressDashSessionLib.expressDashSessionMod.SessionOptions = null,
     views: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()

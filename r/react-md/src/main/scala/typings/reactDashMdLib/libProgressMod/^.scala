@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Progress", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CircularProgress: reactLib.reactMod.ReactNs.ComponentClass[
+  val CircularProgress: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libProgressCircularProgressMod.CircularProgressProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val LinearProgress: reactLib.reactMod.ReactNs.ComponentClass[
+  val LinearProgress: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libProgressLinearProgressMod.LinearProgressProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

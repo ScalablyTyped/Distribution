@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FindOptions
-  extends globLib.globMod.GNs.IOptions {
+  extends globLib.globMod.IOptions {
   var filter: js.UndefOr[
     java.lang.String | (js.Function2[
       /* filepath */ js.UndefOr[java.lang.String], 

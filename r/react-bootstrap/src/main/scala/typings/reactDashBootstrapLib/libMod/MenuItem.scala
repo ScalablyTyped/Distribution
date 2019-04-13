@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "MenuItem")
 @js.native
 class MenuItem ()
-  extends reactDashBootstrapLib.libMenuItemMod.namespaced
+  extends reactDashBootstrapLib.libMenuItemMod.^
 

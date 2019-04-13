@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FormComponent
-  extends reactLib.reactMod.ReactNs.FunctionComponent[FormProps] {
-  var Button: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.FunctionComponent[FormProps] {
+  var Button: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormButtonMod.FormButtonProps
   ] = js.native
-  var Checkbox: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Checkbox: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormCheckboxMod.FormCheckboxProps
   ] = js.native
-  var Dropdown: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Dropdown: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormDropdownMod.FormDropdownProps
   ] = js.native
-  var Field: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Field: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.FormFieldProps
   ] = js.native
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Group: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormGroupMod.FormGroupProps
   ] = js.native
-  var Input: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Input: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormInputMod.FormInputProps
   ] = js.native
-  var Radio: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Radio: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormRadioMod.FormRadioProps
   ] = js.native
-  var Select: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Select: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormSelectMod.FormSelectProps
   ] = js.native
-  var TextArea: reactLib.reactMod.ReactNs.StatelessComponent[
+  var TextArea: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps
   ] = js.native
 }

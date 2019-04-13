@@ -31,10 +31,10 @@ trait MasonryProps
   var overscanByPixels: js.UndefOr[scala.Double] = js.native
   var role: js.UndefOr[java.lang.String] = js.native
   var scrollingResetTimeInterval: js.UndefOr[scala.Double] = js.native
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.native
   var tabIndex: js.UndefOr[scala.Double | scala.Null] = js.native
   var width: scala.Double = js.native
   def cellPositioner(index: scala.Double): Position = js.native
-  def cellRenderer(props: MasonryCellProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def cellRenderer(props: MasonryCellProps): reactLib.reactMod.ReactNode = js.native
 }
 

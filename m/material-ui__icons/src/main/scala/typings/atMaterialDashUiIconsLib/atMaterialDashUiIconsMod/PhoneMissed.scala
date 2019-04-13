@@ -16,9 +16,9 @@ class PhoneMissed protected ()
 @JSImport("@material-ui/icons", "PhoneMissed")
 @js.native
 class PhoneMissedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

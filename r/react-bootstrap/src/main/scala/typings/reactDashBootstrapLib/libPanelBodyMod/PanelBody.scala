@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PanelBody
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libPanelBodyMod.PanelBodyNs.PanelBodyProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[PanelBodyProps, js.Object, js.Any]
 

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/DataTables", "TableFooter")
 @js.native
 class TableFooter protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libDataTablesTableFooterMod.TableFooterProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libDataTablesTableFooterMod.TableFooterProps) = this()

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Tabs", "default")
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps) = this()

@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 //Instantiated Chart
 trait HighChartsNGChart extends HighChartsNGConfig {
   //This is a simple way to access all the Highcharts API that is not currently managed by this directive.
-  def getHighcharts(): highchartsLib.highchartsMod.HighchartsNs.ChartObject
+  def getHighcharts(): highchartsLib.highchartsMod.ChartObject
 }
 
 object HighChartsNGChart {
   @scala.inline
   def apply(
-    getHighcharts: () => highchartsLib.highchartsMod.HighchartsNs.ChartObject,
-    options: highchartsLib.highchartsMod.HighchartsNs.Options,
-    func: /* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject => scala.Unit = null,
+    getHighcharts: () => highchartsLib.highchartsMod.ChartObject,
+    options: highchartsLib.highchartsMod.Options,
+    func: /* chart */ highchartsLib.highchartsMod.ChartObject => scala.Unit = null,
     loading: scala.Boolean | java.lang.String = null,
     noData: java.lang.String = null,
-    series: js.Array[highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions] = null,
+    series: js.Array[highchartsLib.highchartsMod.IndividualSeriesOptions] = null,
     size: highchartsDashNgLib.Anon_Height = null,
     title: highchartsDashNgLib.Anon_Text = null,
     useHighStocks: js.UndefOr[scala.Boolean] = js.undefined,

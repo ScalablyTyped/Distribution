@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SharedEnhancedButtonProps[T] extends js.Object {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
-  var containerElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var containerElement: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined
   var disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined
@@ -15,19 +15,19 @@ trait SharedEnhancedButtonProps[T] extends js.Object {
   var focusRippleOpacity: js.UndefOr[scala.Double] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
-  var onKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object]] = js.undefined
-  var onKeyUp: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[js.Object]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[js.Object]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[js.Object]] = js.undefined
+  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[js.Object]] = js.undefined
   var onKeyboardFocus: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
+      /* e */ reactLib.reactMod.FocusEvent[js.Object], 
       /* isKeyboardFocused */ scala.Boolean, 
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var target: js.UndefOr[java.lang.String] = js.undefined
   var touchRippleColor: js.UndefOr[java.lang.String] = js.undefined
@@ -39,7 +39,7 @@ object SharedEnhancedButtonProps {
   @scala.inline
   def apply[T](
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
-    containerElement: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    containerElement: reactLib.reactMod.ReactNode | java.lang.String = null,
     disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined,
@@ -47,13 +47,13 @@ object SharedEnhancedButtonProps {
     focusRippleOpacity: scala.Int | scala.Double = null,
     href: java.lang.String = null,
     keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     target: java.lang.String = null,
     touchRippleColor: java.lang.String = null,

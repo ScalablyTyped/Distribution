@@ -32,7 +32,7 @@ object inputBaseSettableProperties {
     help: atOracleOraclejetLib.Anon_Instruction,
     helpHints: atOracleOraclejetLib.Anon_Definition,
     labelHint: java.lang.String,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     placeholder: java.lang.String,
     rawValue: RV,
     readonly: scala.Boolean,

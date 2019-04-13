@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Textract ()
-  extends awsDashSdkLib.clientsTextractMod.namespaced {
-  def this(options: awsDashSdkLib.clientsTextractMod.TextractNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsTextractMod.^ {
+  def this(options: awsDashSdkLib.clientsTextractMod.ClientConfiguration) = this()
 }
 

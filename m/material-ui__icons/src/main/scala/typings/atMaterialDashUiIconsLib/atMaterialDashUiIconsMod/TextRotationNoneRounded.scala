@@ -16,9 +16,9 @@ class TextRotationNoneRounded protected ()
 @JSImport("@material-ui/icons", "TextRotationNoneRounded")
 @js.native
 class TextRotationNoneRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

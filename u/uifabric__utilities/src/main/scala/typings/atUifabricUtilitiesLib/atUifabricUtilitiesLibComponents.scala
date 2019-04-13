@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 object atUifabricUtilitiesLibComponents {
   @scala.inline
-  def BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_] */, TState]: reactLib.reactMod.ReactNs.ComponentType[TProps] = js.constructorOf[atUifabricUtilitiesLib.libBaseComponentMod.BaseComponent[TProps, TState]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[TProps]]
+  def BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_] */, TState]: reactLib.reactMod.ComponentType[TProps] = js.constructorOf[atUifabricUtilitiesLib.libBaseComponentMod.BaseComponent[TProps, TState]].asInstanceOf[reactLib.reactMod.ComponentType[TProps]]
   @scala.inline
-  def Customizer: reactLib.reactMod.ReactNs.ComponentType[atUifabricUtilitiesLib.libCustomizationsCustomizerDotTypesMod.ICustomizerProps] = js.constructorOf[atUifabricUtilitiesLib.atUifabricUtilitiesMod.Customizer].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atUifabricUtilitiesLib.libCustomizationsCustomizerDotTypesMod.ICustomizerProps]]
+  def Customizer: reactLib.reactMod.ComponentType[atUifabricUtilitiesLib.libCustomizationsCustomizerDotTypesMod.ICustomizerProps] = js.constructorOf[atUifabricUtilitiesLib.atUifabricUtilitiesMod.Customizer].asInstanceOf[reactLib.reactMod.ComponentType[atUifabricUtilitiesLib.libCustomizationsCustomizerDotTypesMod.ICustomizerProps]]
   @scala.inline
-  def DelayedRender: reactLib.reactMod.ReactNs.ComponentType[atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps] = js.constructorOf[atUifabricUtilitiesLib.libDelayedRenderMod.DelayedRender].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps]]
+  def DelayedRender: reactLib.reactMod.ComponentType[atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps] = js.constructorOf[atUifabricUtilitiesLib.libDelayedRenderMod.DelayedRender].asInstanceOf[reactLib.reactMod.ComponentType[atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps]]
   type ICustomizerProps = atUifabricUtilitiesLib.libCustomizationsCustomizerDotTypesMod.ICustomizerProps
   @scala.inline
   def IDelayedRenderProps: atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps.type = atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps

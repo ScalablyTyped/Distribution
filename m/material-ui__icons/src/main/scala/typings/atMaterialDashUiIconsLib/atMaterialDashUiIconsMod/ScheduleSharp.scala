@@ -16,9 +16,9 @@ class ScheduleSharp protected ()
 @JSImport("@material-ui/icons", "ScheduleSharp")
 @js.native
 class ScheduleSharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

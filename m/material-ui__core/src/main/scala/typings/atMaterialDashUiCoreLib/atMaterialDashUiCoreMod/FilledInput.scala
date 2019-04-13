@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "FilledInput")
 @js.native
 class FilledInput protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputProps) = this()

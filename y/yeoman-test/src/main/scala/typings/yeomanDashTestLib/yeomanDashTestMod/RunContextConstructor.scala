@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RunContextConstructor
   extends org.scalablytyped.runtime.Instantiable2[
-      (/* Generator */ Constructor[yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced]) | (/* Generator */ java.lang.String), 
+      (/* Generator */ Constructor[yeomanDashGeneratorLib.yeomanDashGeneratorMod.^]) | (/* Generator */ java.lang.String), 
       /* settings */ RunContextSettings, 
       RunContext
     ]
@@ -20,7 +20,7 @@ trait RunContextConstructor
 	 *                                      'gen:test' in all cases
 	 */
 org.scalablytyped.runtime.Instantiable1[
-      (/* Generator */ Constructor[yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced]) | (/* Generator */ java.lang.String), 
+      (/* Generator */ Constructor[yeomanDashGeneratorLib.yeomanDashGeneratorMod.^]) | (/* Generator */ java.lang.String), 
       RunContext
     ]
 

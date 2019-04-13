@@ -30,17 +30,17 @@ object IFieldConfigurationObject {
     defaultValue: js.Any = null,
     elementAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     expressionProperties: org.scalablytyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator] = null,
-    formControl: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController] = null,
+    formControl: angularLib.angularMod.IFormController | js.Array[angularLib.angularMod.IFormController] = null,
     hide: js.UndefOr[scala.Boolean] = js.undefined,
     hideExpression: java.lang.String | IExpressionFunction = null,
     id: java.lang.String = null,
     initialValue: js.Any = null,
     key: java.lang.String | scala.Double = null,
-    link: angularLib.angularMod.angularNs.IDirectiveLinkFn[
-      angularLib.angularMod.angularNs.IScope, 
+    link: angularLib.angularMod.IDirectiveLinkFn[
+      angularLib.angularMod.IScope, 
       angularLib.JQLite, 
-      angularLib.angularMod.angularNs.IAttributes, 
-      angularLib.angularMod.angularNs.IController
+      angularLib.angularMod.IAttributes, 
+      angularLib.angularMod.IController
     ] = null,
     model: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     modelOptions: IModelOptions = null,

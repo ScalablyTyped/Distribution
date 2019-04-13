@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DAX ()
   extends awsDashSdkLib.clientsAllMod.DAX {
-  def this(options: awsDashSdkLib.clientsDaxMod.DAXNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDaxMod.ClientConfiguration) = this()
 }
 

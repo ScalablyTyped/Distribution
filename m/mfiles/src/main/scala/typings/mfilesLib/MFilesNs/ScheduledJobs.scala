@@ -15,3 +15,8 @@ class ScheduledJobs ()
   override def Item(Index: scala.Double): mfilesLib.IScheduledJob = js.native
 }
 
+@JSGlobal("MFiles.ScheduledJobs")
+@js.native
+object ScheduledJobs
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IScheduledJobs]
+

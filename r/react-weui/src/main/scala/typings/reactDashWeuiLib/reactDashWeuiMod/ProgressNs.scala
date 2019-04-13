@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("react-weui", "Progress")
 @js.native
 object ProgressNs extends js.Object {
-  val defaultProps: reactDashWeuiLib.Anon_ShowCancel = js.native
+  @js.native
+  object defaultProps extends js.Object {
+    var showCancel: scala.Boolean = js.native
+    var value: scala.Double = js.native
+  }
+  
   @JSName("propTypes")
   @js.native
   object propTypesNs extends js.Object {

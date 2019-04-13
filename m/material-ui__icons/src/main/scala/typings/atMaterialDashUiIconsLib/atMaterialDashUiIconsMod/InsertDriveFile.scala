@@ -16,9 +16,9 @@ class InsertDriveFile protected ()
 @JSImport("@material-ui/icons", "InsertDriveFile")
 @js.native
 class InsertDriveFileCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

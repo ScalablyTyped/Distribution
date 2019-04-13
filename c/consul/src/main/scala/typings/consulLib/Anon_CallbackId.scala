@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_CallbackId extends js.Object {
-  def apply[TData](id: java.lang.String): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
-  def apply[TData](id: java.lang.String, callback: consulLib.consulMod.ConsulNs.Callback[TData]): scala.Unit = js.native
-  def apply[TData](opts: consulLib.consulMod.ConsulNs.AclNs.DestroyOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
-  def apply[TData](
-    opts: consulLib.consulMod.ConsulNs.AclNs.DestroyOptions,
-    callback: consulLib.consulMod.ConsulNs.Callback[TData]
-  ): scala.Unit = js.native
+  def apply[TData](id: java.lang.String): consulLib.consulMod.Thenable[TData] = js.native
+  def apply[TData](id: java.lang.String, callback: consulLib.consulMod.Callback[TData]): scala.Unit = js.native
+  def apply[TData](opts: consulLib.consulMod.AclNs.DestroyOptions): consulLib.consulMod.Thenable[TData] = js.native
+  def apply[TData](opts: consulLib.consulMod.AclNs.DestroyOptions, callback: consulLib.consulMod.Callback[TData]): scala.Unit = js.native
 }
 

@@ -19,3 +19,8 @@ class ShortcutMappingInfo ()
   override var ObjectTypeSemanticAliases: mfilesLib.ISemanticAliases = js.native
 }
 
+@JSGlobal("MFiles.ShortcutMappingInfo")
+@js.native
+object ShortcutMappingInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IShortcutMappingInfo]
+

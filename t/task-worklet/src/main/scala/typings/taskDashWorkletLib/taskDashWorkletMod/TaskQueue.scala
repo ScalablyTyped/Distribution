@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait TaskQueue extends js.Object {
   def addModule(moduleURL: java.lang.String): js.Promise[scala.Unit]
-  def postTask(taskName: java.lang.String, args: js.Any*): taskDashWorkletLib.taskDashWorkletMod.TaskQueueNs.Task[_]
+  def postTask(taskName: java.lang.String, args: js.Any*): Task[_]
 }
 
 object TaskQueue {
   @scala.inline
   def apply(
     addModule: java.lang.String => js.Promise[scala.Unit],
-    postTask: (java.lang.String, /* repeated */ js.Any) => taskDashWorkletLib.taskDashWorkletMod.TaskQueueNs.Task[_]
+    postTask: (java.lang.String, /* repeated */ js.Any) => Task[_]
   ): TaskQueue = {
     val __obj = js.Dynamic.literal(addModule = js.Any.fromFunction1(addModule), postTask = js.Any.fromFunction2(postTask))
   

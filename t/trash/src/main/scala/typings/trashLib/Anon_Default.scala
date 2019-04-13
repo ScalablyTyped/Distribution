@@ -19,8 +19,8 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(input: java.lang.String): js.Promise[scala.Unit] = js.native
-  def apply(input: java.lang.String, options: trashLib.trashMod.trashNs.Options): js.Promise[scala.Unit] = js.native
+  def apply(input: java.lang.String, options: trashLib.trashMod.Options): js.Promise[scala.Unit] = js.native
   def apply(input: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  def apply(input: js.Array[java.lang.String], options: trashLib.trashMod.trashNs.Options): js.Promise[scala.Unit] = js.native
+  def apply(input: js.Array[java.lang.String], options: trashLib.trashMod.Options): js.Promise[scala.Unit] = js.native
 }
 

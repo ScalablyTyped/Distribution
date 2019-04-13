@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CodeCommit ()
-  extends awsDashSdkLib.clientsCodecommitMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCodecommitMod.^ {
+  def this(options: awsDashSdkLib.clientsCodecommitMod.ClientConfiguration) = this()
 }
 

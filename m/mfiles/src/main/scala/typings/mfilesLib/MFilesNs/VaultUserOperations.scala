@@ -31,3 +31,8 @@ class VaultUserOperations ()
   override def RemoveUserAccount(UserID: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultUserOperations")
+@js.native
+object VaultUserOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultUserOperations]
+

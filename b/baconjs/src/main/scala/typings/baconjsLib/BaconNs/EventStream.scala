@@ -553,3 +553,40 @@ class EventStreamCls[E, A] protected () extends EventStream[E, A] {
     ]) = this()
 }
 
+@JSGlobal("Bacon.EventStream")
+@js.native
+object EventStream
+  extends /**
+  * @callback EventStream#new~subscribe
+  * @param {EventStream#new~sink} sink
+  * @returns {EventStream#new~unsubscribe}
+  */
+/**
+  * @callback EventStream#new~sink
+  * @param {More|NoMore|(A|Initial<A>|Next<A>|End<A>|Error<E>)|(A|Initial<A>|Next<A>|End<A>|Error<E>)[]} value
+  * @returns {void}
+  */
+/**
+  * @callback EventStream#new~unsubscribe
+  * @returns {void}
+  */
+/**
+  * @constructor EventStream#new
+  * @constructs Bacon.EventStream
+  * @description Creates an [EventStream]{@link Bacon.EventStream} with the given `subscribe` function.
+  * @param {EventStream#new~subscribe} subscribe
+  * @returns {EventStream<E, A>}
+  */
+org.scalablytyped.runtime.Instantiable1[
+      /* subscribe */ js.Function1[
+        /* sink */ js.Function1[
+          /* value */ More | NoMore | js.Object | Initial[js.Object] | Next[js.Object] | End[js.Object] | Error[js.Object] | (js.Array[
+            js.Object | Initial[js.Object] | Next[js.Object] | End[js.Object] | Error[js.Object]
+          ]), 
+          scala.Unit
+        ], 
+        js.Function0[scala.Unit]
+      ], 
+      EventStream[js.Object, js.Object]
+    ]
+

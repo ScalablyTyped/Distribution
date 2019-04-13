@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommandLineOptions
-  extends minimistLib.minimistMod.minimistNs.ParsedArgs
+  extends minimistLib.minimistMod.ParsedArgs
 
 object CommandLineOptions {
   @scala.inline

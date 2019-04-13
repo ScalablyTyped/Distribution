@@ -15,7 +15,7 @@ object ^ extends js.Object {
     * @returns	Checksum
     */
   def apply(value: js.Any): java.lang.String = js.native
-  def apply(value: js.Any, options: checksumLib.checksumMod.checksumNs.ChecksumOptions): java.lang.String = js.native
+  def apply(value: js.Any, options: ChecksumOptions): java.lang.String = js.native
   /**
     * Generate the checksum for a file on disk
     * @param filename	The file name
@@ -33,7 +33,7 @@ object ^ extends js.Object {
     */
   def file(
     filename: java.lang.String,
-    options: checksumLib.checksumMod.checksumNs.ChecksumOptions,
+    options: ChecksumOptions,
     callback: js.Function2[/* error */ stdLib.Error, /* hash */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
 }

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class KMS ()
   extends awsDashSdkLib.clientsAllMod.KMS {
-  def this(options: awsDashSdkLib.clientsKmsMod.KMSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsKmsMod.ClientConfiguration) = this()
 }
 

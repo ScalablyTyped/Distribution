@@ -11,7 +11,7 @@ trait StrictTransitionProps extends js.Object {
     semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS | java.lang.String
   ] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Whether it is directional animation event or not. Use it only for custom transitions. */
   var directional: js.UndefOr[scala.Boolean] = js.undefined
   /** Duration of the CSS transition animation in milliseconds. */
@@ -68,7 +68,7 @@ object StrictTransitionProps {
   @scala.inline
   def apply(
     animation: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS | java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     directional: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Double | java.lang.String | TransitionPropDuration = null,
     mountOnShow: js.UndefOr[scala.Boolean] = js.undefined,

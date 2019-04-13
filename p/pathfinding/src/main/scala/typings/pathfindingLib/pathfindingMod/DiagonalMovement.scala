@@ -5,14 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait DiagonalMovement extends js.Object
+
 @JSImport("pathfinding", "DiagonalMovement")
 @js.native
 object DiagonalMovement extends js.Object {
-  /* 1 */ val Always: pathfindingLib.pathfindingMod.PathfindingNs.DiagonalMovement.Always with scala.Double = js.native
-  /* 3 */ val IfAtMostOneObstacle: pathfindingLib.pathfindingMod.PathfindingNs.DiagonalMovement.IfAtMostOneObstacle with scala.Double = js.native
-  /* 2 */ val Never: pathfindingLib.pathfindingMod.PathfindingNs.DiagonalMovement.Never with scala.Double = js.native
-  /* 4 */ val OnlyWhenNoObstacle: pathfindingLib.pathfindingMod.PathfindingNs.DiagonalMovement.OnlyWhenNoObstacle with scala.Double = js.native
+  @js.native
+  sealed trait Always
+    extends pathfindingLib.pathfindingMod.DiagonalMovement
+  
+  @js.native
+  sealed trait IfAtMostOneObstacle
+    extends pathfindingLib.pathfindingMod.DiagonalMovement
+  
+  @js.native
+  sealed trait Never
+    extends pathfindingLib.pathfindingMod.DiagonalMovement
+  
+  @js.native
+  sealed trait OnlyWhenNoObstacle
+    extends pathfindingLib.pathfindingMod.DiagonalMovement
+  
+  /* 1 */ val Always: Always with scala.Double = js.native
+  /* 3 */ val IfAtMostOneObstacle: IfAtMostOneObstacle with scala.Double = js.native
+  /* 2 */ val Never: Never with scala.Double = js.native
+  /* 4 */ val OnlyWhenNoObstacle: OnlyWhenNoObstacle with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[pathfindingLib.pathfindingMod.PathfindingNs.DiagonalMovement with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[pathfindingLib.pathfindingMod.DiagonalMovement with scala.Double] = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fluxible-router", "RouteStore")
 @js.native
 class RouteStore ()
-  extends fluxibleLib.addonsBaseStoreMod.namespaced[js.Object] {
+  extends fluxibleLib.addonsBaseStoreMod.^[js.Object] {
   @JSName("dehydrate")
   def dehydrate_MRouteStore(): js.Any = js.native
   @JSName("dehydrate")

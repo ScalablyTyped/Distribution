@@ -15,9 +15,9 @@ class Pool[T] protected () extends js.Object {
     * @param endless defaults to false. indicates whether this task pool is endless, if so, tasks can still be added even after all previous tasks have been fulfilled.
     * @param tasksData an initializing array of task data.
     */
-  def this(processor: js.Function2[/* data */ T, /* index */ scala.Double, qLib.qMod.QNs.IPromise[scala.Unit]], concurrency: scala.Double) = this()
-  def this(processor: js.Function2[/* data */ T, /* index */ scala.Double, qLib.qMod.QNs.IPromise[scala.Unit]], concurrency: scala.Double, endless: scala.Boolean) = this()
-  def this(processor: js.Function2[/* data */ T, /* index */ scala.Double, qLib.qMod.QNs.IPromise[scala.Unit]], concurrency: scala.Double, endless: scala.Boolean, tasksData: js.Array[T]) = this()
+  def this(processor: js.Function2[/* data */ T, /* index */ scala.Double, qLib.qMod.IPromise[scala.Unit]], concurrency: scala.Double) = this()
+  def this(processor: js.Function2[/* data */ T, /* index */ scala.Double, qLib.qMod.IPromise[scala.Unit]], concurrency: scala.Double, endless: scala.Boolean) = this()
+  def this(processor: js.Function2[/* data */ T, /* index */ scala.Double, qLib.qMod.IPromise[scala.Unit]], concurrency: scala.Double, endless: scala.Boolean, tasksData: js.Array[T]) = this()
   var _currentConcurrency: js.Any = js.native
   var _deferred: js.Any = js.native
   var _index: js.Any = js.native
@@ -81,15 +81,15 @@ class Pool[T] protected () extends js.Object {
   /**
     * pause tasks and return a promise that will be fulfilled after the running tasks accomplish. this will wait for running tasks to complete instead of aborting them.
     */
-  def pause(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  def pause(): qLib.qMod.Promise[scala.Unit] = js.native
   /**
     * (get/set) the processor function that handles tasks data.
     */
-  def processor(data: T, index: scala.Double): qLib.qMod.QNs.IPromise[scala.Unit] = js.native
+  def processor(data: T, index: scala.Double): qLib.qMod.IPromise[scala.Unit] = js.native
   /**
     * pause tasks, then clear pending tasks data and reset counters. return a promise that will be fulfilled after resetting accomplish.
     */
-  def reset(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  def reset(): qLib.qMod.Promise[scala.Unit] = js.native
   /**
     * resume tasks.
     */
@@ -98,7 +98,7 @@ class Pool[T] protected () extends js.Object {
     * start tasks, return a promise that will be fulfilled after all tasks accomplish if endless is false.
     * @param onProgress a callback that will be triggered every time when a single task is fulfilled.
     */
-  def start(): qLib.qMod.QNs.Promise[IResult] = js.native
-  def start(onProgress: js.Function1[/* progress */ IProgress, scala.Unit]): qLib.qMod.QNs.Promise[IResult] = js.native
+  def start(): qLib.qMod.Promise[IResult] = js.native
+  def start(onProgress: js.Function1[/* progress */ IProgress, scala.Unit]): qLib.qMod.Promise[IResult] = js.native
 }
 

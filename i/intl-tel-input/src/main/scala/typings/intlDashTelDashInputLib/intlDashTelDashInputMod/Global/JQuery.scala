@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   @JSName("intlTelInput")
-  var intlTelInput_Original: intlDashTelDashInputLib.intlDashTelDashInputMod.IntlTelInputNs.JQueryPlugin = js.native
+  var intlTelInput_Original: intlDashTelDashInputLib.intlDashTelDashInputMod.JQueryPlugin = js.native
   /**
     * initialise the plugin with optional options.
     * @param options options that can be provided during initialization.
@@ -18,7 +18,7 @@ trait JQuery extends js.Object {
     method: java.lang.String,
     numberFormat: intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.numberFormat
   ): java.lang.String = js.native
-  def intlTelInput(options: intlDashTelDashInputLib.intlDashTelDashInputMod.IntlTelInputNs.Options): js.Any = js.native
+  def intlTelInput(options: intlDashTelDashInputLib.intlDashTelDashInputMod.Options): js.Any = js.native
   /**
     * Remove the plugin from the input, and unbind any event listeners.
     */

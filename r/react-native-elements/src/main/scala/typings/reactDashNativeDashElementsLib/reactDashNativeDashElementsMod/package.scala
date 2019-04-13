@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 package object reactDashNativeDashElementsMod {
   type DividerProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any
   /* Rewritten from type alias, can be one of: 
-    - reactLib.reactMod.ReactNs.ReactElement[js.Object]
+    - reactLib.reactMod.ReactElement[js.Object]
     - TextProps
     - HeaderIcon
   */
-  type HeaderSubComponent = _HeaderSubComponent | reactLib.reactMod.ReactNs.ReactElement[js.Object]
-  type IconNode = scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[js.Object] | IconProps
+  type HeaderSubComponent = _HeaderSubComponent | reactLib.reactMod.ReactElement[js.Object]
+  type IconNode = scala.Boolean | reactLib.reactMod.ReactElement[js.Object] | IconProps
   /* Rewritten from type alias, can be one of: 
     - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.material
     - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.`material-community`

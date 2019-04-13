@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "ProgressBar")
 @js.native
 class ProgressBar ()
-  extends reactDashBootstrapLib.libProgressBarMod.namespaced
+  extends reactDashBootstrapLib.libProgressBarMod.^
 

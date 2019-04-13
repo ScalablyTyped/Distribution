@@ -1,0 +1,23 @@
+package typings
+package awsDashSdkLib.clientsGuarddutyMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DisassociateFromMasterAccountRequest extends js.Object {
+  /**
+    * The unique ID of the detector of the GuardDuty member account.
+    */
+  var DetectorId: __string
+}
+
+object DisassociateFromMasterAccountRequest {
+  @scala.inline
+  def apply(DetectorId: __string): DisassociateFromMasterAccountRequest = {
+    val __obj = js.Dynamic.literal(DetectorId = DetectorId)
+  
+    __obj.asInstanceOf[DisassociateFromMasterAccountRequest]
+  }
+}
+

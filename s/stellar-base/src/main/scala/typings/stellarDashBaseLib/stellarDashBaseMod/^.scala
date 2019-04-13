@@ -12,12 +12,12 @@ object ^ extends js.Object {
   val AuthRequiredFlag: stellarDashBaseLib.stellarDashBaseLibNumbers.`1` = js.native
   val AuthRevocableFlag: stellarDashBaseLib.stellarDashBaseLibNumbers.`2` = js.native
   val FastSigning: scala.Boolean = js.native
-  val MemoHash: /* hash */ java.lang.String = js.native
-  val MemoID: /* id */ java.lang.String = js.native
-  val MemoNone: /* none */ java.lang.String = js.native
-  val MemoReturn: /* return */ java.lang.String = js.native
-  val MemoText: /* text */ java.lang.String = js.native
-  val TimeoutInfinite: /* 0 */ scala.Double = js.native
+  val MemoHash: stellarDashBaseLib.stellarDashBaseLibStrings.hash = js.native
+  val MemoID: stellarDashBaseLib.stellarDashBaseLibStrings.id = js.native
+  val MemoNone: stellarDashBaseLib.stellarDashBaseLibStrings.none = js.native
+  val MemoReturn: stellarDashBaseLib.stellarDashBaseLibStrings.`return` = js.native
+  val MemoText: stellarDashBaseLib.stellarDashBaseLibStrings.text = js.native
+  val TimeoutInfinite: stellarDashBaseLib.stellarDashBaseLibNumbers.`0` = js.native
   def hash(data: nodeLib.Buffer): nodeLib.Buffer = js.native
   def sign(data: nodeLib.Buffer, rawSecret: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature = js.native
   def verify(

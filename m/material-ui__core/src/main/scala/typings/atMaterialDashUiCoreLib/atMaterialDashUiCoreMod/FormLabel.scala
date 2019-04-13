@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "FormLabel")
 @js.native
 class FormLabel protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps) = this()

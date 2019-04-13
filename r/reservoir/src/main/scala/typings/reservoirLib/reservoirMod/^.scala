@@ -16,8 +16,8 @@ object ^ extends js.Object {
     * @param randomNumberGenerator is an optional random number generating function to use in
     *   place of the default Math.random.
     */
-  def apply[T](): reservoirLib.reservoirMod.ReservoirNs.ReservoirArray[T] = js.native
-  def apply[T](reservoirSize: scala.Double): reservoirLib.reservoirMod.ReservoirNs.ReservoirArray[T] = js.native
-  def apply[T](reservoirSize: scala.Double, randomNumberGenerator: js.Function0[scala.Double]): reservoirLib.reservoirMod.ReservoirNs.ReservoirArray[T] = js.native
+  def apply[T](): ReservoirArray[T] = js.native
+  def apply[T](reservoirSize: scala.Double): ReservoirArray[T] = js.native
+  def apply[T](reservoirSize: scala.Double, randomNumberGenerator: js.Function0[scala.Double]): ReservoirArray[T] = js.native
 }
 

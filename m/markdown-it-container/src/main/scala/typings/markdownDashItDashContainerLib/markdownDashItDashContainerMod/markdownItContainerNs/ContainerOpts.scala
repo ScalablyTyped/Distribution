@@ -9,11 +9,11 @@ trait ContainerOpts extends js.Object {
   var marker: js.UndefOr[java.lang.String] = js.undefined
   var render: js.UndefOr[
     js.Function5[
-      /* tokens */ js.Array[markdownDashItLib.libTokenMod.namespaced], 
+      /* tokens */ js.Array[markdownDashItLib.libTokenMod.^], 
       /* index */ scala.Double, 
       /* options */ js.Any, 
       /* env */ js.Any, 
-      /* self */ markdownDashItLib.libRendererMod.namespaced, 
+      /* self */ markdownDashItLib.libRendererMod.^, 
       scala.Unit
     ]
   ] = js.undefined
@@ -24,7 +24,7 @@ object ContainerOpts {
   @scala.inline
   def apply(
     marker: java.lang.String = null,
-    render: (/* tokens */ js.Array[markdownDashItLib.libTokenMod.namespaced], /* index */ scala.Double, /* options */ js.Any, /* env */ js.Any, /* self */ markdownDashItLib.libRendererMod.namespaced) => scala.Unit = null,
+    render: (/* tokens */ js.Array[markdownDashItLib.libTokenMod.^], /* index */ scala.Double, /* options */ js.Any, /* env */ js.Any, /* self */ markdownDashItLib.libRendererMod.^) => scala.Unit = null,
     validate: /* params */ java.lang.String => scala.Boolean = null
   ): ContainerOpts = {
     val __obj = js.Dynamic.literal()

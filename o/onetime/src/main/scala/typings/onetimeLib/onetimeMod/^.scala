@@ -15,7 +15,7 @@ object ^ extends js.Object {
     * @returns A function that only calls `fn` once.
     */
   def apply[T /* <: js.Array[_] */, R](fn: js.Function1[/* args */ T, R]): js.Function1[/* args */ T, R] = js.native
-  def apply[T /* <: js.Array[_] */, R](fn: js.Function1[/* args */ T, R], options: onetimeLib.onetimeMod.oneTimeNs.Options): js.Function1[/* args */ T, R] = js.native
+  def apply[T /* <: js.Array[_] */, R](fn: js.Function1[/* args */ T, R], options: Options): js.Function1[/* args */ T, R] = js.native
   /**
     * Get the number of times `fn` has been called.
     *

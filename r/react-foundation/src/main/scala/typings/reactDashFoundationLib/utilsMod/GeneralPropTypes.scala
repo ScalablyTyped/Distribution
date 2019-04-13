@@ -22,40 +22,116 @@ trait GeneralPropTypes extends ClassNameProps {
   var showOnlyFor: js.UndefOr[reactDashFoundationLib.enumsMod.Breakpoints] = js.undefined
 }
 
-object GeneralPropTypes {
-  @scala.inline
-  def apply(
-    className: java.lang.String = null,
-    float: reactDashFoundationLib.enumsMod.FloatTypes = null,
-    hideFor: reactDashFoundationLib.reactDashFoundationLibStrings.medium | reactDashFoundationLib.reactDashFoundationLibStrings.large = null,
-    hideOnlyFor: reactDashFoundationLib.enumsMod.Breakpoints = null,
-    isClearfix: js.UndefOr[scala.Boolean] = js.undefined,
-    isHidden: js.UndefOr[scala.Boolean] = js.undefined,
-    isInvisible: js.UndefOr[scala.Boolean] = js.undefined,
-    noDefaultClassName: java.lang.String = null,
-    showFor: reactDashFoundationLib.enumsMod.Breakpoints = null,
-    showForLandscape: js.UndefOr[scala.Boolean] = js.undefined,
-    showForPortrait: js.UndefOr[scala.Boolean] = js.undefined,
-    showForSr: js.UndefOr[scala.Boolean] = js.undefined,
-    showOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    showOnlyFor: reactDashFoundationLib.enumsMod.Breakpoints = null
-  ): GeneralPropTypes = {
-    val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (float != null) __obj.updateDynamic("float")(float)
-    if (hideFor != null) __obj.updateDynamic("hideFor")(hideFor.asInstanceOf[js.Any])
-    if (hideOnlyFor != null) __obj.updateDynamic("hideOnlyFor")(hideOnlyFor)
-    if (!js.isUndefined(isClearfix)) __obj.updateDynamic("isClearfix")(isClearfix)
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
-    if (!js.isUndefined(isInvisible)) __obj.updateDynamic("isInvisible")(isInvisible)
-    if (noDefaultClassName != null) __obj.updateDynamic("noDefaultClassName")(noDefaultClassName)
-    if (showFor != null) __obj.updateDynamic("showFor")(showFor)
-    if (!js.isUndefined(showForLandscape)) __obj.updateDynamic("showForLandscape")(showForLandscape)
-    if (!js.isUndefined(showForPortrait)) __obj.updateDynamic("showForPortrait")(showForPortrait)
-    if (!js.isUndefined(showForSr)) __obj.updateDynamic("showForSr")(showForSr)
-    if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus)
-    if (showOnlyFor != null) __obj.updateDynamic("showOnlyFor")(showOnlyFor)
-    __obj.asInstanceOf[GeneralPropTypes]
-  }
+@JSImport("react-foundation/utils", "GeneralPropTypes")
+@js.native
+object GeneralPropTypes extends js.Object {
+  @JSName("float")
+  var float_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("hideFor")
+  var hideFor_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("hideOnlyFor")
+  var hideOnlyFor_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("isClearfix")
+  var isClearfix_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("isHidden")
+  var isHidden_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("isInvisible")
+  var isInvisible_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("showForLandscape")
+  var showForLandscape_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("showForPortrait")
+  var showForPortrait_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("showForSr")
+  var showForSr_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("showFor")
+  var showFor_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("showOnFocus")
+  var showOnFocus_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("showOnlyFor")
+  var showOnlyFor_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  def float(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def hideFor(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def hideOnlyFor(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def isClearfix(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def isHidden(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def isInvisible(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def showFor(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def showForLandscape(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def showForPortrait(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def showForSr(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def showOnFocus(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def showOnlyFor(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
 }
 

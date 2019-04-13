@@ -7,22 +7,18 @@ import scala.scalajs.js.annotation._
 
 @JSImport("precise", "Precise")
 @js.native
-class Precise ()
-  extends preciseLib.preciseMod.underscorePreciseNs.Precise {
+class Precise () extends js.Object {
   /**
     * Returns the nanoseconds from `start()` to `stop()`
     */
-  /* CompleteClass */
-  override def diff(): scala.Double = js.native
+  def diff(): scala.Double = js.native
   /**
     * Starts a timer
     */
-  /* CompleteClass */
-  override def start(): preciseLib.preciseMod.underscorePreciseNs.Precise = js.native
+  def start(): Precise = js.native
   /**
     * Stops a timer
     */
-  /* CompleteClass */
-  override def stop(): preciseLib.preciseMod.underscorePreciseNs.Precise = js.native
+  def stop(): Precise = js.native
 }
 

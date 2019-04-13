@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait RouteConfig extends js.Object {
   var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ReactNs.ComponentType[js.Object]
+    reactLib.reactMod.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ComponentType[js.Object]
   ] = js.undefined
   var exact: js.UndefOr[scala.Boolean] = js.undefined
-  var key: js.UndefOr[reactLib.reactMod.ReactNs.Key] = js.undefined
+  var key: js.UndefOr[reactLib.reactMod.Key] = js.undefined
   var location: js.UndefOr[historyLib.historyMod.Location[historyLib.historyMod.LocationState]] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
   var routes: js.UndefOr[js.Array[RouteConfig]] = js.undefined
@@ -20,9 +20,9 @@ trait RouteConfig extends js.Object {
 object RouteConfig {
   @scala.inline
   def apply(
-    component: reactLib.reactMod.ReactNs.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    component: reactLib.reactMod.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ComponentType[js.Object] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
     path: java.lang.String = null,
     routes: js.Array[RouteConfig] = null,

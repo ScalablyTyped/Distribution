@@ -10,6 +10,5 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val defaults: Defaults with ClientConfig = js.native
   val native: pgLib.Anon_Client | scala.Null = js.native
-  val types: pgLib.Anon_ArrayParser = js.native
 }
 

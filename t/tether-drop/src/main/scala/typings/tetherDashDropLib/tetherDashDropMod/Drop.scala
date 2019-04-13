@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Drop extends js.Object {
   var content: stdLib.HTMLElement = js.native
-  var tether: tetherLib.tetherMod.namespaced = js.native
+  var tether: tetherLib.tetherMod.^ = js.native
   def close(): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
   def isOpened(): scala.Boolean = js.native

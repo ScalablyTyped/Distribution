@@ -15,3 +15,8 @@ class ValueListItemsWithPermissions ()
   override val ValueListItems: mfilesLib.IValueListItems = js.native
 }
 
+@JSGlobal("MFiles.ValueListItemsWithPermissions")
+@js.native
+object ValueListItemsWithPermissions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IValueListItemsWithPermissions]
+

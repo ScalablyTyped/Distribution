@@ -11,3 +11,9 @@ class Area () extends IArea {
   def this(values: js.Array[scala.Double]) = this()
 }
 
+@JSGlobal("Tee.Area")
+@js.native
+object Area
+  extends org.scalablytyped.runtime.Instantiable0[IArea]
+     with org.scalablytyped.runtime.Instantiable1[/* values */ js.Array[scala.Double], IArea]
+

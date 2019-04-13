@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Bucket extends js.Object {
   var bucket: java.lang.String
-  var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
+  var res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse
 }
 
 object Anon_Bucket {
   @scala.inline
-  def apply(bucket: java.lang.String, res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse): Anon_Bucket = {
+  def apply(bucket: java.lang.String, res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse): Anon_Bucket = {
     val __obj = js.Dynamic.literal(bucket = bucket, res = res)
   
     __obj.asInstanceOf[Anon_Bucket]

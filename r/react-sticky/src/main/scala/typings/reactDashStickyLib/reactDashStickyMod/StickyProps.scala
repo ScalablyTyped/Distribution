@@ -17,13 +17,13 @@ trait StickyProps extends js.Object {
   var stickyStyle: js.UndefOr[js.Any] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
   var topOffset: js.UndefOr[scala.Double] = js.undefined
-  def children(args: StickyChildArgs): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(args: StickyChildArgs): reactLib.reactMod.ReactElement[_]
 }
 
 object StickyProps {
   @scala.inline
   def apply(
-    children: StickyChildArgs => reactLib.reactMod.ReactNs.ReactElement[_],
+    children: StickyChildArgs => reactLib.reactMod.ReactElement[_],
     bottomOffset: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     disableCompensation: js.UndefOr[scala.Boolean] = js.undefined,

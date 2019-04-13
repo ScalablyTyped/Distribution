@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScaleInChildProps
-  extends reactLib.reactMod.ReactNs.Props[ScaleInChild] {
+  extends reactLib.reactMod.Props[ScaleInChild] {
   var enterDelay: js.UndefOr[scala.Double] = js.undefined
   var maxScale: js.UndefOr[scala.Double] = js.undefined
   var minScale: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ScaleInChildProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     enterDelay: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ScaleInChild] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    ref: reactLib.reactMod.LegacyRef[ScaleInChild] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): ScaleInChildProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

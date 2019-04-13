@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("nanoevents/unbind-all", JSImport.Namespace)
 @js.native
 object unbindDashAllMod extends js.Object {
-  def apply(emitter: nanoeventsLib.nanoeventsMod.namespaced[_]): scala.Unit = js.native
+  def apply(emitter: nanoeventsLib.nanoeventsMod.^[_]): scala.Unit = js.native
 }
 

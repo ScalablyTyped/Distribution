@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "FooterSection")
 @js.native
-class FooterSection ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.FooterSection
+class FooterSection () extends __MDLComponent[FooterSectionProps]
 

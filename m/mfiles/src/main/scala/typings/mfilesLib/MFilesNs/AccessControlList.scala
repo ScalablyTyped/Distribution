@@ -29,3 +29,8 @@ class AccessControlList ()
   override def HasIdenticalPermissions(AccessControlList: mfilesLib.IAccessControlList): scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.AccessControlList")
+@js.native
+object AccessControlList
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlList]
+

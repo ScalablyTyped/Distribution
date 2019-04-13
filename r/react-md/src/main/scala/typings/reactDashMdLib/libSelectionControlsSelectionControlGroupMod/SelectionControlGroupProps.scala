@@ -9,19 +9,19 @@ trait SelectionControlGroupProps
   extends reactDashMdLib.libMod.Props
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var controlClassName: js.UndefOr[java.lang.String] = js.undefined
-  var controlStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var controlStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var controls: js.Array[reactDashMdLib.Anon_Key]
   var defaultValue: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var labelClassName: js.UndefOr[java.lang.String] = js.undefined
-  var labelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var labelComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var name: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var onChange: js.UndefOr[js.Function2[/* value */ java.lang.String, /* event */ stdLib.Event, scala.Unit]] = js.undefined
-  var selectionControl: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var selectionControl: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var `type`: reactDashMdLib.reactDashMdLibStrings.checkbox | reactDashMdLib.reactDashMdLibStrings.radio
   var value: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
@@ -34,43 +34,43 @@ object SelectionControlGroupProps {
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     className: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    component: reactLib.reactMod.ReactType[_] = null,
     controlClassName: java.lang.String = null,
-    controlStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    controlStyle: reactLib.reactMod.CSSProperties = null,
     defaultValue: scala.Double | java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: reactDashMdLib.libMod.IdPropType = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     labelClassName: java.lang.String = null,
-    labelComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    labelComponent: reactLib.reactMod.ReactType[_] = null,
     name: java.lang.String | scala.Double = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
     onChange: (/* value */ java.lang.String, /* event */ stdLib.Event) => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    selectionControl: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    selectionControl: reactLib.reactMod.ReactType[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: scala.Double | java.lang.String = null
   ): SelectionControlGroupProps = {
     val __obj = js.Dynamic.literal(controls = controls)

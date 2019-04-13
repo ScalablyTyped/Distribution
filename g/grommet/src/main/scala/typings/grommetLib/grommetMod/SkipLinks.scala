@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet", "SkipLinks")
 @js.native
 class SkipLinks protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       grommetLib.componentsSkipLinksMod.SkipLinksProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: grommetLib.componentsSkipLinksMod.SkipLinksProps) = this()

@@ -12,9 +12,9 @@ object expressDashEnforcesDashSslMod extends js.Object {
     * Enforces HTTPS connections on any incoming requests.
     */
   def apply(): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* res */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* res */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ] = js.native
 }

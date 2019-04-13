@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(input: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
-  def apply(input: java.lang.String, options: base64DashAsyncLib.base64DashAsyncMod.base64AsyncNs.Options): js.Promise[nodeLib.Buffer] = js.native
+  def apply(input: java.lang.String, options: Options): js.Promise[nodeLib.Buffer] = js.native
   def apply(input: nodeLib.Buffer): js.Promise[java.lang.String] = js.native
-  def apply(input: nodeLib.Buffer, options: base64DashAsyncLib.base64DashAsyncMod.base64AsyncNs.Options): js.Promise[java.lang.String] = js.native
+  def apply(input: nodeLib.Buffer, options: Options): js.Promise[java.lang.String] = js.native
   def decode(input: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
-  def decode(input: java.lang.String, options: base64DashAsyncLib.base64DashAsyncMod.base64AsyncNs.Options): js.Promise[nodeLib.Buffer] = js.native
+  def decode(input: java.lang.String, options: Options): js.Promise[nodeLib.Buffer] = js.native
   def encode(input: nodeLib.Buffer): js.Promise[java.lang.String] = js.native
-  def encode(input: nodeLib.Buffer, options: base64DashAsyncLib.base64DashAsyncMod.base64AsyncNs.Options): js.Promise[java.lang.String] = js.native
+  def encode(input: nodeLib.Buffer, options: Options): js.Promise[java.lang.String] = js.native
 }
 

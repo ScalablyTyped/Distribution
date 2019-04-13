@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DrawerViewConfig extends js.Object {
-  var contentComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[DrawerItemsProps]] = js.undefined
+  var contentComponent: js.UndefOr[reactLib.reactMod.ComponentType[DrawerItemsProps]] = js.undefined
   var contentOptions: js.UndefOr[js.Any] = js.undefined
   var drawerBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var drawerPosition: js.UndefOr[
@@ -21,7 +21,7 @@ trait DrawerViewConfig extends js.Object {
 object DrawerViewConfig {
   @scala.inline
   def apply(
-    contentComponent: reactLib.reactMod.ReactNs.ComponentType[DrawerItemsProps] = null,
+    contentComponent: reactLib.reactMod.ComponentType[DrawerItemsProps] = null,
     contentOptions: js.Any = null,
     drawerBackgroundColor: java.lang.String = null,
     drawerPosition: reactDashNavigationLib.reactDashNavigationLibStrings.left | reactDashNavigationLib.reactDashNavigationLibStrings.right = null,

@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Clock extends js.Object {
-  var clock: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Clock] = js.undefined
-  var credit: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String] = js.undefined
+  var clock: js.UndefOr[cesiumLib.cesiumMod.Clock] = js.undefined
+  var credit: js.UndefOr[cesiumLib.cesiumMod.Credit | java.lang.String] = js.undefined
   var dimensions: js.UndefOr[js.Any] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
   var layer: java.lang.String
   var maximumLevel: js.UndefOr[scala.Double] = js.undefined
   var minimumLevel: js.UndefOr[scala.Double] = js.undefined
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
   var style: java.lang.String
   var subdomains: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var tileHeight: js.UndefOr[scala.Double] = js.undefined
   var tileMatrixLabels: js.UndefOr[js.Array[_]] = js.undefined
   var tileMatrixSetID: java.lang.String
   var tileWidth: js.UndefOr[scala.Double] = js.undefined
-  var tilingScheme: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.TilingScheme] = js.undefined
-  var times: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.TimeIntervalCollection] = js.undefined
+  var tilingScheme: js.UndefOr[cesiumLib.cesiumMod.TilingScheme] = js.undefined
+  var times: js.UndefOr[cesiumLib.cesiumMod.TimeIntervalCollection] = js.undefined
   var url: java.lang.String
 }
 
@@ -33,20 +33,20 @@ object Anon_Clock {
     style: java.lang.String,
     tileMatrixSetID: java.lang.String,
     url: java.lang.String,
-    clock: cesiumLib.cesiumMod.CesiumNs.Clock = null,
-    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
+    clock: cesiumLib.cesiumMod.Clock = null,
+    credit: cesiumLib.cesiumMod.Credit | java.lang.String = null,
     dimensions: js.Any = null,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     format: java.lang.String = null,
     maximumLevel: scala.Int | scala.Double = null,
     minimumLevel: scala.Int | scala.Double = null,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null,
+    rectangle: cesiumLib.cesiumMod.Rectangle = null,
     subdomains: java.lang.String | js.Array[java.lang.String] = null,
     tileHeight: scala.Int | scala.Double = null,
     tileMatrixLabels: js.Array[_] = null,
     tileWidth: scala.Int | scala.Double = null,
-    tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null,
-    times: cesiumLib.cesiumMod.CesiumNs.TimeIntervalCollection = null
+    tilingScheme: cesiumLib.cesiumMod.TilingScheme = null,
+    times: cesiumLib.cesiumMod.TimeIntervalCollection = null
   ): Anon_Clock = {
     val __obj = js.Dynamic.literal(layer = layer, style = style, tileMatrixSetID = tileMatrixSetID, url = url)
     if (clock != null) __obj.updateDynamic("clock")(clock)

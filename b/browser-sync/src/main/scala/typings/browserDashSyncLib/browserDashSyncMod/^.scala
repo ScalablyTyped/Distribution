@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("browser-sync", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[browserDashSyncLib.browserDashSyncMod.browserSyncNs.BrowserSyncStatic]
+  extends org.scalablytyped.runtime.TopLevel[BrowserSyncStatic]
 

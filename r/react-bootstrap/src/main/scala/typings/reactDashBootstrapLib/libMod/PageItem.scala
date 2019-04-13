@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "PageItem")
 @js.native
 class PageItem ()
-  extends reactDashBootstrapLib.libPageItemMod.namespaced
+  extends reactDashBootstrapLib.libPageItemMod.^
 

@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation._
 		 * @constructor
 		 * @param values - object matching the fields defined in the .srv definition file
 		 */
-class ServiceResponse ()
-  extends roslibLib.roslibMod.ROSLIBNs.ServiceResponse {
+class ServiceResponse () extends js.Object {
   def this(values: js.Any) = this()
 }
 

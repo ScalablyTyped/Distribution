@@ -1,0 +1,29 @@
+package typings
+package atRgroveParseDashXmlLib.atRgroveParseDashXmlMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CData
+  extends NodeBase
+     with Node {
+  var text: java.lang.String
+  @JSName("type")
+  var type_CData: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.cdata
+}
+
+object CData {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.cdata,
+    parent: NodeBase = null
+  ): CData = {
+    val __obj = js.Dynamic.literal(text = text)
+    __obj.updateDynamic("type")(`type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[CData]
+  }
+}
+

@@ -15,10 +15,11 @@ object cssClasses {
   @scala.inline
   def apply(
     DISABLED: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio--disabled`,
-    ROOT: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio`
+    ROOT: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(DISABLED = DISABLED, ROOT = ROOT)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

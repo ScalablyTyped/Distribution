@@ -9,7 +9,7 @@ trait PaginationProps
   extends antdDashMobileLib.libPaginationPropsTypeMod.PaginationPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object PaginationProps {
@@ -26,7 +26,7 @@ object PaginationProps {
     prefixCls: java.lang.String = null,
     prevText: java.lang.String = null,
     simple: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): PaginationProps = {
     val __obj = js.Dynamic.literal(current = current, total = total)
     if (className != null) __obj.updateDynamic("className")(className)

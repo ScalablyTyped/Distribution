@@ -17,7 +17,7 @@ trait IModalSettings extends js.Object {
     *
     * @default 'body'
     */
-  var appendTo: js.UndefOr[angularLib.angularMod.angularNs.IAugmentedJQuery] = js.undefined
+  var appendTo: js.UndefOr[angularLib.angularMod.IAugmentedJQuery] = js.undefined
   /**
     * Sets the `aria-describedby` property on the modal.
     * The string should be an id (without the leading '#') pointing to the element that describes your modal.
@@ -100,7 +100,7 @@ trait IModalSettings extends js.Object {
     * a scope instance to be used for the modal's content (actually the $modal service is going to create a child scope of a provided scope).
     * Defaults to `$rootScope`.
     */
-  var scope: js.UndefOr[angularLib.angularMod.angularNs.IScope | IModalScope] = js.undefined
+  var scope: js.UndefOr[angularLib.angularMod.IScope | IModalScope] = js.undefined
   /**
     * Optional suffix of modal window class. The value used is appended to the `modal-` class, i.e. a value of `sm` gives `modal-sm`.
     */
@@ -131,7 +131,7 @@ object IModalSettings {
   @scala.inline
   def apply(
     animation: js.UndefOr[scala.Boolean] = js.undefined,
-    appendTo: angularLib.angularMod.angularNs.IAugmentedJQuery = null,
+    appendTo: angularLib.angularMod.IAugmentedJQuery = null,
     ariaDescribedBy: java.lang.String = null,
     ariaLabelledBy: java.lang.String = null,
     backdrop: scala.Boolean | java.lang.String = null,
@@ -145,7 +145,7 @@ object IModalSettings {
     resolve: org.scalablytyped.runtime.StringDictionary[
       java.lang.String | angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) | js.Object
     ] = null,
-    scope: angularLib.angularMod.angularNs.IScope | IModalScope = null,
+    scope: angularLib.angularMod.IScope | IModalScope = null,
     size: java.lang.String = null,
     template: java.lang.String | js.Function0[java.lang.String] = null,
     templateUrl: java.lang.String | js.Function0[java.lang.String] = null,

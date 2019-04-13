@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Tabs/MenuTab", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[MenuTabProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[MenuTabProps, reactLib.reactMod.ComponentState] = js.native
 }
 

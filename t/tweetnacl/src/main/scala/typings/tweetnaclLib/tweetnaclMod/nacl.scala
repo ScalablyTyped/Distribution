@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait nacl extends js.Object {
   @JSName("box")
-  var box_Original: tweetnaclLib.tweetnaclMod.naclNs.box = js.native
+  var box_Original: box = js.native
   @JSName("hash")
-  var hash_Original: tweetnaclLib.tweetnaclMod.naclNs.hash = js.native
+  var hash_Original: hash = js.native
   @JSName("scalarMult")
-  var scalarMult_Original: tweetnaclLib.tweetnaclMod.naclNs.scalarMult = js.native
+  var scalarMult_Original: scalarMult = js.native
   @JSName("secretbox")
-  var secretbox_Original: tweetnaclLib.tweetnaclMod.naclNs.secretbox = js.native
+  var secretbox_Original: secretbox = js.native
   @JSName("sign")
-  var sign_Original: tweetnaclLib.tweetnaclMod.naclNs.sign = js.native
+  var sign_Original: sign = js.native
   def box(
     msg: stdLib.Uint8Array,
     nonce: stdLib.Uint8Array,

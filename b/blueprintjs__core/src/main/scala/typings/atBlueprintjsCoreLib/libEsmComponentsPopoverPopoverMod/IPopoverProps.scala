@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IPopoverProps
   extends atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverSharedPropsMod.IPopoverSharedProps {
   /** HTML props for the backdrop element. Can be combined with `backdropClassName`. */
-  var backdropProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]] = js.undefined
+  var backdropProps: js.UndefOr[reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]] = js.undefined
   /**
     * The content displayed inside the popover. This can instead be provided as
     * the _second_ element in `children` (first is `target`).
@@ -50,7 +50,7 @@ object IPopoverProps {
   @scala.inline
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
+    backdropProps: reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] = null,
     boundary: popperDotJsLib.popperDotJsMod.Boundary = null,
     canEscapeKeyClose: js.UndefOr[scala.Boolean] = js.undefined,
     captureDismiss: js.UndefOr[scala.Boolean] = js.undefined,
@@ -68,10 +68,10 @@ object IPopoverProps {
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     minimal: js.UndefOr[scala.Boolean] = js.undefined,
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
-    onClose: /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClose: /* event */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
     onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
-    onInteraction: (/* nextOpenState */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
+    onInteraction: (/* nextOpenState */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
     onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     openOnTargetFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -82,7 +82,7 @@ object IPopoverProps {
     position: atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition = null,
     target: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
     targetClassName: java.lang.String = null,
-    targetProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
+    targetProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     transitionDuration: scala.Int | scala.Double = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined,

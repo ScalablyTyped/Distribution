@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Event
   extends jqueryLib.JQueryEventObject {
-  var date: momentLib.momentMod.momentNs.Moment = js.native
+  var date: momentLib.momentMod.Moment = js.native
 }
 

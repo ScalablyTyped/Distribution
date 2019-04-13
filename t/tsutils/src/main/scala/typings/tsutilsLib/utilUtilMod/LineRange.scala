@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LineRange
-  extends typescriptLib.typescriptMod.tsNs.TextRange {
+  extends typescriptLib.typescriptMod.TextRange {
   var contentLength: scala.Double
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CipherCCMOptions
-  extends nodeLib.streamMod.internalNs.TransformOptions {
+  extends nodeLib.streamMod.TransformOptions {
   var authTagLength: scala.Double
 }
 
@@ -19,7 +19,7 @@ object CipherCCMOptions {
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
     defaultEncoding: java.lang.String = null,
     destroy: js.ThisFunction2[
-      /* this */ nodeLib.streamMod.internalNs.Transform, 
+      /* this */ nodeLib.streamMod.Transform, 
       /* error */ nodeLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
@@ -27,40 +27,36 @@ object CipherCCMOptions {
     emitClose: js.UndefOr[scala.Boolean] = js.undefined,
     encoding: java.lang.String = null,
     `final`: js.ThisFunction1[
-      /* this */ nodeLib.streamMod.internalNs.Transform, 
+      /* this */ nodeLib.streamMod.Transform, 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     flush: js.ThisFunction1[
-      /* this */ nodeLib.streamMod.internalNs.Transform, 
-      /* callback */ nodeLib.streamMod.internalNs.TransformCallback, 
+      /* this */ nodeLib.streamMod.Transform, 
+      /* callback */ nodeLib.streamMod.TransformCallback, 
       scala.Unit
     ] = null,
     highWaterMark: scala.Int | scala.Double = null,
     objectMode: js.UndefOr[scala.Boolean] = js.undefined,
-    read: js.ThisFunction1[
-      /* this */ nodeLib.streamMod.internalNs.Transform, 
-      /* size */ scala.Double, 
-      scala.Unit
-    ] = null,
+    read: js.ThisFunction1[/* this */ nodeLib.streamMod.Transform, /* size */ scala.Double, scala.Unit] = null,
     readableObjectMode: js.UndefOr[scala.Boolean] = js.undefined,
     transform: js.ThisFunction3[
-      /* this */ nodeLib.streamMod.internalNs.Transform, 
+      /* this */ nodeLib.streamMod.Transform, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ nodeLib.streamMod.internalNs.TransformCallback, 
+      /* callback */ nodeLib.streamMod.TransformCallback, 
       scala.Unit
     ] = null,
     writableObjectMode: js.UndefOr[scala.Boolean] = js.undefined,
     write: js.ThisFunction3[
-      /* this */ nodeLib.streamMod.internalNs.Transform, 
+      /* this */ nodeLib.streamMod.Transform, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     writev: js.ThisFunction2[
-      /* this */ nodeLib.streamMod.internalNs.Transform, 
+      /* this */ nodeLib.streamMod.Transform, 
       /* chunks */ js.Array[nodeLib.Anon_Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit

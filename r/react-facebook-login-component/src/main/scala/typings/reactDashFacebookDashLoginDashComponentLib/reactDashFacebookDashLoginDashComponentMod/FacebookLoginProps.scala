@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FacebookLoginProps
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
+  extends reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
   var buttonText: js.UndefOr[java.lang.String] = js.undefined
   var fields: js.UndefOr[java.lang.String] = js.undefined
   var socialId: java.lang.String
@@ -20,7 +20,7 @@ object FacebookLoginProps {
   def apply(
     responseHandler: FacebookLoginInfo => scala.Unit,
     socialId: java.lang.String,
-    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
+    ButtonHTMLAttributes: reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
     buttonText: java.lang.String = null,
     fields: java.lang.String = null,
     version: java.lang.String = null,

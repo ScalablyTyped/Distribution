@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object objectDotGetownpropertydescriptorsLibStrings {
   @js.native
-  sealed trait Anon_GetPolyfill extends js.Object
+  sealed trait Anon_O extends js.Object
   
   @js.native
-  sealed trait namespaced extends js.Object
+  sealed trait `_backtick^_backtick` extends js.Object
   
   @scala.inline
-  def Anon_GetPolyfill: Anon_GetPolyfill = "Anon_GetPolyfill".asInstanceOf[Anon_GetPolyfill]
+  def Anon_O: Anon_O = "Anon_O".asInstanceOf[Anon_O]
   @scala.inline
-  def namespaced: namespaced = "namespaced".asInstanceOf[namespaced]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
 }
 

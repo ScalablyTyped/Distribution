@@ -10,32 +10,32 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     fn: js.Function1[
-      (/* options */ streamDashJsonLib.filtersFilterBaseMod.FilterBaseNs.FilterOptions) | (/* options */ js.UndefOr[
-        streamDashJsonLib.streamersStreamBaseMod.StreamBaseNs.StreamOptions | nodeLib.streamMod.internalNs.TransformOptions
+      (/* options */ streamDashJsonLib.filtersFilterBaseMod.FilterOptions) | (/* options */ js.UndefOr[
+        streamDashJsonLib.streamersStreamBaseMod.StreamOptions | nodeLib.streamMod.TransformOptions
       ]), 
-      nodeLib.streamMod.Transform | streamDashJsonLib.streamersStreamBaseMod.namespaced | streamDashJsonLib.filtersFilterBaseMod.namespaced
+      nodeLib.streamMod.Transform | streamDashJsonLib.filtersFilterBaseMod.^  | streamDashJsonLib.streamersStreamBaseMod.^ 
     ]
-  ): streamDashChainLib.streamDashChainMod.namespaced = js.native
+  ): streamDashChainLib.streamDashChainMod.^ = js.native
   def apply(
     fn: js.Function1[
-      /* options */ js.UndefOr[nodeLib.streamMod.internalNs.TransformOptions], 
+      /* options */ js.UndefOr[nodeLib.streamMod.TransformOptions], 
       nodeLib.streamMod.Transform
     ],
-    options: streamDashJsonLib.parserMod.ParserNs.ParserOptions
-  ): streamDashChainLib.streamDashChainMod.namespaced = js.native
+    options: streamDashJsonLib.parserMod.ParserOptions
+  ): streamDashChainLib.streamDashChainMod.^ = js.native
   def apply(
     fn: js.Function1[
-      /* options */ streamDashJsonLib.filtersFilterBaseMod.FilterBaseNs.FilterOptions, 
-      streamDashJsonLib.filtersFilterBaseMod.namespaced
+      /* options */ streamDashJsonLib.filtersFilterBaseMod.FilterOptions, 
+      streamDashJsonLib.filtersFilterBaseMod.^
     ],
-    options: streamDashJsonLib.utilsWithParserMod.withParserNs.FilterOptions
-  ): streamDashChainLib.streamDashChainMod.namespaced = js.native
+    options: FilterOptions
+  ): streamDashChainLib.streamDashChainMod.^ = js.native
   def apply(
     fn: js.Function1[
-      /* options */ js.UndefOr[streamDashJsonLib.streamersStreamBaseMod.StreamBaseNs.StreamOptions], 
-      streamDashJsonLib.streamersStreamBaseMod.namespaced
+      /* options */ js.UndefOr[streamDashJsonLib.streamersStreamBaseMod.StreamOptions], 
+      streamDashJsonLib.streamersStreamBaseMod.^
     ],
-    options: streamDashJsonLib.utilsWithParserMod.withParserNs.StreamOptions
-  ): streamDashChainLib.streamDashChainMod.namespaced = js.native
+    options: StreamOptions
+  ): streamDashChainLib.streamDashChainMod.^ = js.native
 }
 

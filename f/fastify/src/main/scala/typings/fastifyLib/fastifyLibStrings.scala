@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 object fastifyLibStrings {
   @js.native
   sealed trait DELETE
-    extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
+    extends fastifyLib.fastifyMod.HTTPMethod
   
   @js.native
   sealed trait GET
-    extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
+    extends fastifyLib.fastifyMod.HTTPMethod
   
   @js.native
   sealed trait HEAD
-    extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
+    extends fastifyLib.fastifyMod.HTTPMethod
   
   @js.native
   sealed trait OPTIONS
-    extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
+    extends fastifyLib.fastifyMod.HTTPMethod
   
   @js.native
   sealed trait PATCH
-    extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
+    extends fastifyLib.fastifyMod.HTTPMethod
   
   @js.native
   sealed trait POST
-    extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
+    extends fastifyLib.fastifyMod.HTTPMethod
   
   @js.native
   sealed trait PUT
-    extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
+    extends fastifyLib.fastifyMod.HTTPMethod
   
   @js.native
   sealed trait both extends js.Object

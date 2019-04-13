@@ -16,3 +16,15 @@ class Promise[T] protected ()
     ]) = this()
 }
 
+@JSGlobal("Rx.config.Promise")
+@js.native
+object Promise
+  extends org.scalablytyped.runtime.Instantiable1[
+      /* resolver */ js.Function2[
+        /* resolvePromise */ js.Function1[/* value */ js.Object, scala.Unit], 
+        /* rejectPromise */ js.Function1[/* reason */ js.Any, scala.Unit], 
+        scala.Unit
+      ], 
+      rxDashCoreLib.RxNs.IPromise[js.Object]
+    ]
+

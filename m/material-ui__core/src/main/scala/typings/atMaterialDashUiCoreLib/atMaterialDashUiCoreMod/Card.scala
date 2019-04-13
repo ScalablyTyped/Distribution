@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "Card")
 @js.native
 class Card protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.cardCardMod.CardProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.cardCardMod.CardProps) = this()

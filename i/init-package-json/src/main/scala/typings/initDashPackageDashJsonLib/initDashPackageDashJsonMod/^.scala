@@ -16,11 +16,9 @@ object ^ extends js.Object {
   def apply(
     dir: java.lang.String,
     input: java.lang.String,
-    config: initDashPackageDashJsonLib.initDashPackageDashJsonMod.initUnderscorePackageUnderscoreJsonNs.Config | js.Object,
+    config: Config | js.Object,
     cb: js.Function2[/* err */ js.Any, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def yes(
-    conf: initDashPackageDashJsonLib.initDashPackageDashJsonMod.initUnderscorePackageUnderscoreJsonNs.Config
-  ): scala.Boolean = js.native
+  def yes(conf: Config): scala.Boolean = js.native
 }
 

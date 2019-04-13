@@ -11,21 +11,6 @@ sealed trait ActiveView extends js.Object
 // Enumerations
 /**
   * Specifies the state of the active view of the document, for example, whether the user can edit the document.
-  * @remarks
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this enumeration.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-  *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-  *  </table>
   */
 @JSGlobal("Office.ActiveView")
 @js.native

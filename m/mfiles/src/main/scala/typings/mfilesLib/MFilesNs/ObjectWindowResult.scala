@@ -25,3 +25,8 @@ class ObjectWindowResult ()
   override val Visible: scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.ObjectWindowResult")
+@js.native
+object ObjectWindowResult
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectWindowResult]
+

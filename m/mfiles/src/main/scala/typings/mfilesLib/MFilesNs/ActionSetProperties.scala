@@ -15,3 +15,8 @@ class ActionSetProperties ()
   override def Clone(): mfilesLib.IActionSetProperties = js.native
 }
 
+@JSGlobal("MFiles.ActionSetProperties")
+@js.native
+object ActionSetProperties
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IActionSetProperties]
+

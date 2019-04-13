@@ -7,18 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("scalike", "OptionalBuilder2")
 @js.native
-class OptionalBuilder2[A, B, C] protected ()
-  extends scalikeLib.scalikeMod.scalikeNs.OptionalBuilder2[A, B, C] {
-  def this(oa: scalikeLib.scalikeMod.scalikeNs.Optional[A], ob: scalikeLib.scalikeMod.scalikeNs.Optional[B], oc: scalikeLib.scalikeMod.scalikeNs.Optional[C]) = this()
-  /* CompleteClass */
-  override var oa: js.Any = js.native
-  /* CompleteClass */
-  override var ob: js.Any = js.native
-  /* CompleteClass */
-  override var oc: js.Any = js.native
-  /* CompleteClass */
-  override def chain[D](od: scalikeLib.scalikeMod.scalikeNs.Optional[D]): scalikeLib.scalikeMod.scalikeNs.OptionalBuilder3[A, B, C, D] = js.native
-  /* CompleteClass */
-  override def run[D](f: js.Function3[A, B, C, D]): scalikeLib.scalikeMod.scalikeNs.Optional[D] = js.native
+class OptionalBuilder2[A, B, C] protected () extends js.Object {
+  def this(oa: Optional[A], ob: Optional[B], oc: Optional[C]) = this()
+  var oa: js.Any = js.native
+  var ob: js.Any = js.native
+  var oc: js.Any = js.native
+  def chain[D](od: Optional[D]): OptionalBuilder3[A, B, C, D] = js.native
+  def run[D](f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Optional[D] = js.native
 }
 

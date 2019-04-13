@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RouterOptions extends js.Object {
   var ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined
-  var log: js.UndefOr[bunyanLib.bunyanMod.namespaced] = js.undefined
+  var log: js.UndefOr[bunyanLib.bunyanMod.^] = js.undefined
   var onceNext: js.UndefOr[scala.Boolean] = js.undefined
   var registry: js.UndefOr[RouterRegistryRadix] = js.undefined
   var strictNext: js.UndefOr[scala.Boolean] = js.undefined
@@ -17,7 +17,7 @@ object RouterOptions {
   @scala.inline
   def apply(
     ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
-    log: bunyanLib.bunyanMod.namespaced = null,
+    log: bunyanLib.bunyanMod.^ = null,
     onceNext: js.UndefOr[scala.Boolean] = js.undefined,
     registry: RouterRegistryRadix = null,
     strictNext: js.UndefOr[scala.Boolean] = js.undefined

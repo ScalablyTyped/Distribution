@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("bufferstream", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val fn: bufferstreamLib.Anon_Warn = js.native
+class ^ () extends BufferStream {
+  def this(options: Opts) = this()
 }
 

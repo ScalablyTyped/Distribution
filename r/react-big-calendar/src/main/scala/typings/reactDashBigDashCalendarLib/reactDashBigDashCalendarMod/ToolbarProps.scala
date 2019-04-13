@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ToolbarProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   var date: stdLib.Date = js.native
   var label: java.lang.String = js.native
   var localizer: reactDashBigDashCalendarLib.Anon_Messages = js.native

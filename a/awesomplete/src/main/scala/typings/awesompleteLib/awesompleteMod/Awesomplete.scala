@@ -10,7 +10,7 @@ trait Awesomplete extends js.Object {
   var container: stdLib.HTMLElement = js.native
   var index: scala.Double = js.native
   var input: stdLib.HTMLElement | java.lang.String = js.native
-  var list: java.lang.String | stdLib.Element | js.Array[awesompleteLib.awesompleteMod.AwesompleteNs.Suggestion] = js.native
+  var list: java.lang.String | stdLib.Element | js.Array[Suggestion] = js.native
   var opened: scala.Double = js.native
   var selected: scala.Boolean = js.native
   var status: stdLib.HTMLElement = js.native

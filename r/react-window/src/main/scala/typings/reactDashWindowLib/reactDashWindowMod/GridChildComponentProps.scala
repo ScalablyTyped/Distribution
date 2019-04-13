@@ -10,7 +10,7 @@ trait GridChildComponentProps extends js.Object {
   var data: js.Any
   var isScrolling: js.UndefOr[scala.Boolean] = js.undefined
   var rowIndex: scala.Double
-  var style: reactLib.reactMod.ReactNs.CSSProperties
+  var style: reactLib.reactMod.CSSProperties
 }
 
 object GridChildComponentProps {
@@ -19,7 +19,7 @@ object GridChildComponentProps {
     columnIndex: scala.Double,
     data: js.Any,
     rowIndex: scala.Double,
-    style: reactLib.reactMod.ReactNs.CSSProperties,
+    style: reactLib.reactMod.CSSProperties,
     isScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): GridChildComponentProps = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex, data = data, rowIndex = rowIndex, style = style)

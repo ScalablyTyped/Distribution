@@ -84,11 +84,11 @@ object ^ extends js.Object {
   /**
   			 * Show the notification's subtitle, even if the user has disabled notification previews for the app.
   			 */
-  val USER_NOTIFICATION_CATEGORY_OPTION_HIDEEN_PREVIEWS_SHOW_SUBTITLE: scala.Double = js.native
+  val USER_NOTIFICATION_CATEGORY_OPTION_HIDDEN_PREVIEWS_SHOW_SUBTITLE: scala.Double = js.native
   /**
   			 * Show the notification's title, even if the user has disabled notification previews for the app.
   			 */
-  val USER_NOTIFICATION_CATEGORY_OPTION_HIDEEN_PREVIEWS_SHOW_TITLE: scala.Double = js.native
+  val USER_NOTIFICATION_CATEGORY_OPTION_HIDDEN_PREVIEWS_SHOW_TITLE: scala.Double = js.native
   /**
   			 * No options.
   			 */

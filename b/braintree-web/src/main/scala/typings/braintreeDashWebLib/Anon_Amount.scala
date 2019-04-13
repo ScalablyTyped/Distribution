@@ -16,7 +16,7 @@ trait Anon_Amount extends js.Object {
   var locale: js.UndefOr[java.lang.String] = js.undefined
   var offerCredit: js.UndefOr[scala.Boolean] = js.undefined
   var shippingAddressEditable: js.UndefOr[scala.Boolean] = js.undefined
-  var shippingAddressOverride: js.UndefOr[braintreeDashWebLib.braintreeDashWebMod.braintreeNs.PayPalShippingAddress] = js.undefined
+  var shippingAddressOverride: js.UndefOr[braintreeDashWebLib.braintreeDashWebMod.PayPalShippingAddress] = js.undefined
   var useraction: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -33,7 +33,7 @@ object Anon_Amount {
     locale: java.lang.String = null,
     offerCredit: js.UndefOr[scala.Boolean] = js.undefined,
     shippingAddressEditable: js.UndefOr[scala.Boolean] = js.undefined,
-    shippingAddressOverride: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.PayPalShippingAddress = null,
+    shippingAddressOverride: braintreeDashWebLib.braintreeDashWebMod.PayPalShippingAddress = null,
     useraction: java.lang.String = null
   ): Anon_Amount = {
     val __obj = js.Dynamic.literal(flow = flow)

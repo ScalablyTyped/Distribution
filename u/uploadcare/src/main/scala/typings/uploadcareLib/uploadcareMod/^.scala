@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("uploadcare", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(publicKey: java.lang.String, privateKey: java.lang.String): uploadcareLib.uploadcareMod.UploadcareNs.Instance = js.native
+  def apply(publicKey: java.lang.String, privateKey: java.lang.String): Instance = js.native
 }
 

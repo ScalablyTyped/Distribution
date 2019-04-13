@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def GoogleApiWrapper(opts: GoogleApiOptions): js.Function1[
-    /* ctor */ reactLib.reactMod.ReactNs.ComponentType[ProvidedProps], 
-    reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.Omit[ProvidedProps, ProvidedProps]]
+    /* ctor */ reactLib.reactMod.ComponentType[ProvidedProps], 
+    reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.Omit[ProvidedProps, ProvidedProps]]
   ] = js.native
   def GoogleApiWrapper(opts: GoogleApiOptionsFunc): js.Function1[
-    /* ctor */ reactLib.reactMod.ReactNs.ComponentType[ProvidedProps], 
-    reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.Omit[ProvidedProps, ProvidedProps]]
+    /* ctor */ reactLib.reactMod.ComponentType[ProvidedProps], 
+    reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.Omit[ProvidedProps, ProvidedProps]]
   ] = js.native
 }
 

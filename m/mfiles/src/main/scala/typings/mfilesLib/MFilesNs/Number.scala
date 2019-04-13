@@ -15,3 +15,8 @@ class Number ()
   override def Clone(): mfilesLib.INumber = js.native
 }
 
+@JSGlobal("MFiles.Number")
+@js.native
+object Number
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.INumber]
+

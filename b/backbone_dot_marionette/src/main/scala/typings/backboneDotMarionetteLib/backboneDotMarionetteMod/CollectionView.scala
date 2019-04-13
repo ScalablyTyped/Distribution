@@ -14,6 +14,12 @@ class CollectionView[TModel /* <: backboneLib.backboneMod.Model */, TView /* <: 
     */
   var childView: (js.Function1[/* model */ TModel, backboneDotMarionetteLib.Anon_Args[TView]]) | backboneDotMarionetteLib.Anon_Args[TView] = js.native
   /**
+    * Customize the event prefix for events that are forwarded through the
+    * collection view.
+    */
+  @JSName("childViewEventPrefix")
+  var childViewEventPrefix_CollectionView: java.lang.String | backboneDotMarionetteLib.backboneDotMarionetteLibNumbers.`false` = js.native
+  /**
     * Use the childViewEvents attribute to map child events to methods on the
     * parent view.
     */

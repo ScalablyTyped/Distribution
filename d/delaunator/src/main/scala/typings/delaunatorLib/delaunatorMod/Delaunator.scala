@@ -17,7 +17,7 @@ trait Delaunator[P] extends js.Object {
   /**
     * A circular doubly-linked list that holds a convex hull of the delaunay triangulation.
     */
-  var hull: delaunatorLib.delaunatorMod.DelaunatorNs.Node
+  var hull: Node
   /**
     * A flat Uint32Array array of triangle vertex indices (each group of three numbers forms a triangle). All triangles are directed counterclockwise.
     */
@@ -26,11 +26,7 @@ trait Delaunator[P] extends js.Object {
 
 object Delaunator {
   @scala.inline
-  def apply[P](
-    halfedges: stdLib.Int32Array,
-    hull: delaunatorLib.delaunatorMod.DelaunatorNs.Node,
-    triangles: stdLib.Uint32Array
-  ): Delaunator[P] = {
+  def apply[P](halfedges: stdLib.Int32Array, hull: Node, triangles: stdLib.Uint32Array): Delaunator[P] = {
     val __obj = js.Dynamic.literal(halfedges = halfedges, hull = hull, triangles = triangles)
   
     __obj.asInstanceOf[Delaunator[P]]

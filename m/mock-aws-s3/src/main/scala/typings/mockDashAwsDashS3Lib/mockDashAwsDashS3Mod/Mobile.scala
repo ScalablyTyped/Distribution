@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Mobile ()
   extends awsDashSdkLib.awsDashSdkMod.Mobile {
-  def this(options: awsDashSdkLib.clientsMobileMod.MobileNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMobileMod.ClientConfiguration) = this()
 }
 

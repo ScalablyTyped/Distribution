@@ -17,7 +17,7 @@ trait TProtocol extends js.Object {
   def readFieldEnd(): scala.Unit = js.native
   def readI16(): scala.Double = js.native
   def readI32(): scala.Double = js.native
-  def readI64(): nodeDashInt64Lib.nodeDashInt64Mod.namespaced = js.native
+  def readI64(): nodeDashInt64Lib.nodeDashInt64Mod.^ = js.native
   def readListBegin(): TList = js.native
   def readListEnd(): scala.Unit = js.native
   def readMapBegin(): TMap = js.native
@@ -40,7 +40,7 @@ trait TProtocol extends js.Object {
   def writeFieldStop(): scala.Unit = js.native
   def writeI16(i16: scala.Double): scala.Unit = js.native
   def writeI32(i32: scala.Double): scala.Unit = js.native
-  def writeI64(i64: nodeDashInt64Lib.nodeDashInt64Mod.namespaced): scala.Unit = js.native
+  def writeI64(i64: nodeDashInt64Lib.nodeDashInt64Mod.^): scala.Unit = js.native
   def writeI64(i64: scala.Double): scala.Unit = js.native
   def writeListBegin(etype: thriftLib.thriftMod.ThriftNs.Type, size: scala.Double): scala.Unit = js.native
   def writeListEnd(): scala.Unit = js.native

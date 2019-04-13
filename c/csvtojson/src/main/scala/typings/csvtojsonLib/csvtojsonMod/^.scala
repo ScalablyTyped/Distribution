@@ -14,11 +14,8 @@ object ^ extends js.Object {
     * @param    streamOptions stream options
     * @return Converter object
     */
-  def apply(): csvtojsonLib.csvtojsonMod.csvtojsonNs.Converter = js.native
-  def apply(options: csvtojsonLib.csvtojsonMod.csvtojsonNs.ConverterOptions): csvtojsonLib.csvtojsonMod.csvtojsonNs.Converter = js.native
-  def apply(
-    options: csvtojsonLib.csvtojsonMod.csvtojsonNs.ConverterOptions,
-    streamOptions: csvtojsonLib.csvtojsonMod.csvtojsonNs.StreamOptions
-  ): csvtojsonLib.csvtojsonMod.csvtojsonNs.Converter = js.native
+  def apply(): Converter = js.native
+  def apply(options: ConverterOptions): Converter = js.native
+  def apply(options: ConverterOptions, streamOptions: StreamOptions): Converter = js.native
 }
 

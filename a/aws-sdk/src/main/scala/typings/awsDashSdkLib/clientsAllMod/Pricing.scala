@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Pricing ()
-  extends awsDashSdkLib.clientsPricingMod.namespaced {
-  def this(options: awsDashSdkLib.clientsPricingMod.PricingNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsPricingMod.^ {
+  def this(options: awsDashSdkLib.clientsPricingMod.ClientConfiguration) = this()
 }
 

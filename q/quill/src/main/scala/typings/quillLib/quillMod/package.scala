@@ -21,6 +21,7 @@ package object quillMod {
     js.Any
   ])
   type SelectionChangeHandler = js.Function3[/* range */ RangeStatic, /* oldRange */ RangeStatic, /* source */ Sources, js.Any]
+  type StringMap = org.scalablytyped.runtime.StringDictionary[js.Any]
   type TextChangeHandler = js.Function3[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ /* oldContents */ js.Any, 

@@ -9,14 +9,14 @@ trait Anon_ClassName extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
-  var text: reactLib.reactMod.ReactNs.ReactNode
+  var text: reactLib.reactMod.ReactNode
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
 object Anon_ClassName {
   @scala.inline
   def apply(
-    text: reactLib.reactMod.ReactNs.ReactNode,
+    text: reactLib.reactMod.ReactNode,
     className: java.lang.String = null,
     onPress: () => scala.Unit = null,
     style: js.Any = null,

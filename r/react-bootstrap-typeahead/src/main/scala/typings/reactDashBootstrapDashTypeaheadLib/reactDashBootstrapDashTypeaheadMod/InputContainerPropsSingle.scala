@@ -13,7 +13,7 @@ trait InputContainerPropsSingle[T /* <: TypeaheadModel */] extends js.Object {
   var `aria-owns`: java.lang.String
   var autoComplete: java.lang.String
   var disabled: scala.Boolean
-  var inputRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement]
+  var inputRef: reactLib.reactMod.LegacyRef[stdLib.HTMLInputElement]
   var placeholder: java.lang.String | scala.Null
   var role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.combobox
   var value: java.lang.String
@@ -34,7 +34,7 @@ object InputContainerPropsSingle {
     `aria-owns`: java.lang.String,
     autoComplete: java.lang.String,
     disabled: scala.Boolean,
-    inputRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement],
+    inputRef: reactLib.reactMod.LegacyRef[stdLib.HTMLInputElement],
     onBlur: stdLib.Event => scala.Unit,
     onChange: js.Array[T] => scala.Unit,
     onClick: stdLib.Event => scala.Unit,

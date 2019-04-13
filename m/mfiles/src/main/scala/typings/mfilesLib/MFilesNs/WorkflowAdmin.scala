@@ -25,3 +25,8 @@ class WorkflowAdmin ()
   override def Clone(): mfilesLib.IWorkflowAdmin = js.native
 }
 
+@JSGlobal("MFiles.WorkflowAdmin")
+@js.native
+object WorkflowAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IWorkflowAdmin]
+

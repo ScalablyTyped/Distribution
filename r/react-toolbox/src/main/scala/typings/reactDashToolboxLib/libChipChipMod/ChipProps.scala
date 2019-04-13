@@ -10,7 +10,7 @@ trait ChipProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the chip will be rendered with a delete icon.
     * @default false
@@ -29,10 +29,10 @@ trait ChipProps
 object ChipProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     deletable: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDeleteClick: js.Function = null,
@@ -56,7 +56,7 @@ object ChipProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ChipTheme = null
   ): ChipProps = {
     val __obj = js.Dynamic.literal()

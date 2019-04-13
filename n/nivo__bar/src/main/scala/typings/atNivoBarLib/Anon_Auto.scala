@@ -11,7 +11,7 @@ trait Anon_Auto extends js.Object {
   var axisLeft: atNivoBarLib.atNivoBarMod.Axis = js.native
   var axisRight: atNivoBarLib.atNivoBarMod.Axis = js.native
   var axisTop: atNivoBarLib.atNivoBarMod.Axis = js.native
-  var barComponent: reactLib.reactMod.ReactNs.StatelessComponent[atNivoBarLib.atNivoBarMod.BarItemProps] = js.native
+  var barComponent: reactLib.reactMod.StatelessComponent[atNivoBarLib.atNivoBarMod.BarItemProps] = js.native
   var borderRadius: scala.Double = js.native
   var borderWidth: scala.Double = js.native
   var enableGridX: scala.Boolean = js.native
@@ -40,10 +40,10 @@ trait Anon_Auto extends js.Object {
   var tooltipFormat: java.lang.String | atNivoBarLib.atNivoBarMod.ValueFormatter = js.native
   @JSName("tooltip")
   var tooltip_Original: atNivoBarLib.atNivoBarMod.TooltipProp = js.native
-  def tooltip(props: reactLib.reactMod.ReactNs.PropsWithChildren[atNivoBarLib.atNivoBarMod.BarExtendedDatum]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def tooltip(props: reactLib.reactMod.PropsWithChildren[atNivoBarLib.atNivoBarMod.BarExtendedDatum]): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def tooltip(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[atNivoBarLib.atNivoBarMod.BarExtendedDatum],
+    props: reactLib.reactMod.PropsWithChildren[atNivoBarLib.atNivoBarMod.BarExtendedDatum],
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

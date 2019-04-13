@@ -25,3 +25,9 @@ class DragTool () extends IDragTool {
   override def mousemove(event: js.Any): scala.Boolean = js.native
 }
 
+@JSGlobal("Tee.DragTool")
+@js.native
+object DragTool
+  extends org.scalablytyped.runtime.Instantiable0[IDragTool]
+     with org.scalablytyped.runtime.Instantiable1[/* chart */ Chart, IDragTool]
+

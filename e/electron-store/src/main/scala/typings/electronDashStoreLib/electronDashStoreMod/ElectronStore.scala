@@ -46,7 +46,7 @@ trait ElectronStore[T]
       /* oldValue */ js.UndefOr[electronDashStoreLib.JSONValue], 
       scala.Unit
     ]
-  ): js.Function0[nodeLib.eventsMod.namespaced] = js.native
+  ): js.Function0[nodeLib.eventsMod.^] = js.native
   /**
     * Watches the given key, calling callback on any changes. When a key is first set oldValue
     * will be undefined, and when a key is deleted newValue will be undefined.
@@ -58,7 +58,7 @@ trait ElectronStore[T]
       /* oldValue */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ]
-  ): js.Function0[nodeLib.eventsMod.namespaced] = js.native
+  ): js.Function0[nodeLib.eventsMod.^] = js.native
   /**
     * Open the storage file in the user's editor.
     */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Props extends PropsBase {
   var children: js.UndefOr[
-    js.Function1[/* formattedRelative */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* formattedRelative */ java.lang.String, reactLib.reactMod.ReactNode]
   ] = js.undefined
   var value: reactDashIntlLib.ReactIntlNs.DateSource
 }
@@ -16,7 +16,7 @@ object Props {
   @scala.inline
   def apply(
     value: reactDashIntlLib.ReactIntlNs.DateSource,
-    children: /* formattedRelative */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
+    children: /* formattedRelative */ java.lang.String => reactLib.reactMod.ReactNode = null,
     format: java.lang.String = null,
     initialNow: js.Any = null,
     style: reactDashIntlLib.reactDashIntlLibStrings.`best-fit` | reactDashIntlLib.reactDashIntlLibStrings.numeric = null,

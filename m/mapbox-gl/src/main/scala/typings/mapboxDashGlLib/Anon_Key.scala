@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Key extends js.Object {
-  var layer: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Layer
+  var layer: mapboxDashGlLib.mapboxDashGlMod.Layer
   var source: java.lang.String
   var sourceLayer: java.lang.String
   var state: org.scalablytyped.runtime.StringDictionary[js.Any]
@@ -15,7 +15,7 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(
-    layer: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Layer,
+    layer: mapboxDashGlLib.mapboxDashGlMod.Layer,
     source: java.lang.String,
     sourceLayer: java.lang.String,
     state: org.scalablytyped.runtime.StringDictionary[js.Any]

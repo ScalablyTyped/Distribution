@@ -15,12 +15,12 @@ trait IActionProps
   /** Click event handler. */
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   /** Action text. Can be any single React renderable. */
-  var text: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var text: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object IActionProps {
@@ -30,8 +30,8 @@ object IActionProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | MaybeElement = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    text: reactLib.reactMod.ReactNs.ReactNode = null
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    text: reactLib.reactMod.ReactNode = null
   ): IActionProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

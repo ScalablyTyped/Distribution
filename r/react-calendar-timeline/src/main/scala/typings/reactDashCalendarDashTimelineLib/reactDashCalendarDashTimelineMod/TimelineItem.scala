@@ -17,7 +17,7 @@ trait TimelineItem extends js.Object {
   var id: scala.Double
   var itemProps: js.UndefOr[js.Object] = js.undefined
   var start_time: js.Any
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object TimelineItem {
@@ -32,7 +32,7 @@ object TimelineItem {
     canResize: scala.Boolean | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.left | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.right | reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineLibStrings.both = null,
     className: java.lang.String = null,
     itemProps: js.Object = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): TimelineItem = {
     val __obj = js.Dynamic.literal(end_time = end_time, group = group, id = id, start_time = start_time)
     if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup)

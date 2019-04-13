@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "DataObjects")
 @js.native
-class DataObjects ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DataObjects
+class DataObjects () extends XmlSignatureCollection[DataObject]
 

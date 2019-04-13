@@ -24,9 +24,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(packageName: java.lang.String): js.Promise[java.lang.String] = js.native
-  def apply(
-    packageName: java.lang.String,
-    options: latestDashVersionLib.latestDashVersionMod.latestVersionNs.Options
-  ): js.Promise[java.lang.String] = js.native
+  def apply(packageName: java.lang.String, options: latestDashVersionLib.latestDashVersionMod.Options): js.Promise[java.lang.String] = js.native
 }
 

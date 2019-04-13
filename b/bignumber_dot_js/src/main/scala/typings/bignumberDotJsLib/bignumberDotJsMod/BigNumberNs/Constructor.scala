@@ -14,9 +14,7 @@ trait Constructor
       bignumberDotJsLib.bignumberDotJsMod.BigNumber
     ] {
   /** Helps ES6 import. */
-  val BigNumber: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.UndefOr[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.Object
-  ] = js.native
+  val BigNumber: js.UndefOr[Constructor] = js.native
   /**
     * To aid in debugging, if a `BigNumber.DEBUG` property is `true` then an error will be thrown
     * if the BigNumber constructor receives an invalid `BigNumber.Value`, or if `BigNumber.isBigNumber`
@@ -81,10 +79,8 @@ trait Constructor
   /** Rounds away from zero. */
   val ROUND_UP: bignumberDotJsLib.bignumberDotJsLibNumbers.`0` = js.native
   /** Helps ES6 import. */
-  val default: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.UndefOr[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.Object
-  ] = js.native
-  def clone(`object`: Config): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.Object = js.native
+  val default: js.UndefOr[Constructor] = js.native
+  def clone(`object`: Config): Constructor = js.native
   /**
     * Configures the settings that apply to this BigNumber constructor.
     *

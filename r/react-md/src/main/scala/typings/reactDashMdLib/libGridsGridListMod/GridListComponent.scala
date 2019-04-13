@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GridListComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[GridListProps, reactLib.reactMod.ReactNs.ComponentState] {
+  extends reactLib.reactMod.ComponentClass[GridListProps, reactLib.reactMod.ComponentState] {
   def getClassNames(): reactDashMdLib.Anon_CellClassName = js.native
   def getClassNames(props: GridListProps): reactDashMdLib.Anon_CellClassName = js.native
 }

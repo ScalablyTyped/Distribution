@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object cleaveDotJsLibComponents {
   @scala.inline
-  def React: reactLib.reactMod.ReactNs.ComponentType[cleaveDotJsLib.reactPropsMod.Props] = js.constructorOf[cleaveDotJsLib.reactMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[cleaveDotJsLib.reactPropsMod.Props]]
+  def React: reactLib.reactMod.ComponentType[cleaveDotJsLib.reactPropsMod.Props] = js.constructorOf[cleaveDotJsLib.reactMod.^].asInstanceOf[reactLib.reactMod.ComponentType[cleaveDotJsLib.reactPropsMod.Props]]
   @scala.inline
   def Props: cleaveDotJsLib.reactPropsMod.Props.type = cleaveDotJsLib.reactPropsMod.Props
   type Props = cleaveDotJsLib.reactPropsMod.Props

@@ -7,35 +7,35 @@ import scala.scalajs.js.annotation._
 
 object expoLibComponents {
   @scala.inline
-  def AdIconView: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.AdIconView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  def AdIconView: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.AdIconView].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def AdMediaView: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.AdMediaView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  def AdMediaView: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.AdMediaView].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def AdMobBanner: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.AdMobBannerProperties] = js.constructorOf[expoLib.expoMod.AdMobBanner].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.AdMobBannerProperties]]
+  def AdMobBanner: reactLib.reactMod.ComponentType[expoLib.expoMod.AdMobBannerProperties] = js.constructorOf[expoLib.expoMod.AdMobBanner].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.AdMobBannerProperties]]
   @scala.inline
-  def AdTriggerView[P]: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.FacebookAdsNs.AdTriggerViewProps[P]] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.AdTriggerView[P]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.FacebookAdsNs.AdTriggerViewProps[P]]]
+  def AdTriggerView[P]: reactLib.reactMod.ComponentType[expoLib.expoMod.FacebookAdsNs.AdTriggerViewProps[P]] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.AdTriggerView[P]].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.FacebookAdsNs.AdTriggerViewProps[P]]]
   @scala.inline
-  def AppLoading: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.AppLoadingProps] = js.constructorOf[expoLib.expoMod.AppLoading].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.AppLoadingProps]]
+  def AppLoading: reactLib.reactMod.ComponentType[expoLib.expoMod.AppLoadingProps] = js.constructorOf[expoLib.expoMod.AppLoading].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.AppLoadingProps]]
   @scala.inline
-  def BannerView: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.FacebookAdsNs.BannerViewProps] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.BannerView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.FacebookAdsNs.BannerViewProps]]
+  def BannerView: reactLib.reactMod.ComponentType[expoLib.expoMod.FacebookAdsNs.BannerViewProps] = js.constructorOf[expoLib.expoMod.FacebookAdsNs.BannerView].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.FacebookAdsNs.BannerViewProps]]
   @scala.inline
-  def BarCodeScanner: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.BarCodeScannerProps] = js.constructorOf[expoLib.expoMod.BarCodeScanner].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.BarCodeScannerProps]]
+  def BarCodeScanner: reactLib.reactMod.ComponentType[expoLib.expoMod.BarCodeScannerProps] = js.constructorOf[expoLib.expoMod.BarCodeScanner].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.BarCodeScannerProps]]
   @scala.inline
-  def BlurView: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.BlurViewProps] = js.constructorOf[expoLib.expoMod.BlurView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.BlurViewProps]]
+  def BlurView: reactLib.reactMod.ComponentType[expoLib.expoMod.BlurViewProps] = js.constructorOf[expoLib.expoMod.BlurView].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.BlurViewProps]]
   @scala.inline
-  def Camera: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.CameraProps] = js.constructorOf[expoLib.expoMod.Camera].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.CameraProps]]
+  def Camera: reactLib.reactMod.ComponentType[expoLib.expoMod.CameraProps] = js.constructorOf[expoLib.expoMod.Camera].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.CameraProps]]
   @scala.inline
-  def GLView: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.GLViewProps] = js.constructorOf[expoLib.expoMod.GLView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.GLViewProps]]
+  def GLView: reactLib.reactMod.ComponentType[expoLib.expoMod.GLViewProps] = js.constructorOf[expoLib.expoMod.GLView].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.GLViewProps]]
   @scala.inline
-  def KeepAwake: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[expoLib.expoMod.KeepAwake].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  def KeepAwake: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[expoLib.expoMod.KeepAwake].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def LinearGradient: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.LinearGradientProps] = js.constructorOf[expoLib.expoMod.LinearGradient].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.LinearGradientProps]]
+  def LinearGradient: reactLib.reactMod.ComponentType[expoLib.expoMod.LinearGradientProps] = js.constructorOf[expoLib.expoMod.LinearGradient].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.LinearGradientProps]]
   @scala.inline
-  def PublisherBanner: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.PublisherBannerProperties] = js.constructorOf[expoLib.expoMod.PublisherBanner].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.PublisherBannerProperties]]
+  def PublisherBanner: reactLib.reactMod.ComponentType[expoLib.expoMod.PublisherBannerProperties] = js.constructorOf[expoLib.expoMod.PublisherBanner].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.PublisherBannerProperties]]
   @scala.inline
-  def Svg: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.SvgCommonProps] = expoLib.expoMod.Svg.G.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.SvgCommonProps]]
+  def Svg: reactLib.reactMod.ComponentType[expoLib.expoMod.SvgCommonProps] = expoLib.expoMod.Svg.G.asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.SvgCommonProps]]
   @scala.inline
-  def Video: reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.VideoProps] = js.constructorOf[expoLib.expoMod.Video].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[expoLib.expoMod.VideoProps]]
+  def Video: reactLib.reactMod.ComponentType[expoLib.expoMod.VideoProps] = js.constructorOf[expoLib.expoMod.Video].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.VideoProps]]
   @scala.inline
   def AdMobBannerProperties: expoLib.expoMod.AdMobBannerProperties.type = expoLib.expoMod.AdMobBannerProperties
   type AdMobBannerProperties = expoLib.expoMod.AdMobBannerProperties

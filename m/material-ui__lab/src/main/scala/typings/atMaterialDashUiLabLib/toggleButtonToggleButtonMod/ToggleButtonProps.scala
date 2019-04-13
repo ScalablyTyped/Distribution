@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps[P]} */ trait ToggleButtonProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ToggleButtonClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ToggleButtonProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[ToggleButtonProps]] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disableRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -23,13 +23,13 @@ object ToggleButtonProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ToggleButtonClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[ToggleButtonProps] = null,
+    component: reactLib.reactMod.ReactType[ToggleButtonProps] = null,
     disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disableRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: java.lang.String = null,
     value: js.Any = null
   ): ToggleButtonProps = {

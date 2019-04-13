@@ -22,13 +22,13 @@ trait HighlightProvided[TDoc] extends js.Object {
     * }) as Array<Array<{value: string, isHighlighted: boolean}>>
     * ```
     */
-  def highlight(configuration: reactDashInstantsearchDashCoreLib.Anon_AttributeHighlightProperty[TDoc]): js.Array[reactDashInstantsearchDashCoreLib.Anon_IsHighlighted]
+  def highlight(configuration: reactDashInstantsearchDashCoreLib.Anon_Attribute[TDoc]): js.Array[reactDashInstantsearchDashCoreLib.Anon_IsHighlighted]
 }
 
 object HighlightProvided {
   @scala.inline
   def apply[TDoc](
-    highlight: reactDashInstantsearchDashCoreLib.Anon_AttributeHighlightProperty[TDoc] => js.Array[reactDashInstantsearchDashCoreLib.Anon_IsHighlighted]
+    highlight: reactDashInstantsearchDashCoreLib.Anon_Attribute[TDoc] => js.Array[reactDashInstantsearchDashCoreLib.Anon_IsHighlighted]
   ): HighlightProvided[TDoc] = {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction1(highlight))
   

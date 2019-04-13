@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Translate ()
   extends awsDashSdkLib.awsDashSdkMod.Translate {
-  def this(options: awsDashSdkLib.clientsTranslateMod.TranslateNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsTranslateMod.ClientConfiguration) = this()
 }
 

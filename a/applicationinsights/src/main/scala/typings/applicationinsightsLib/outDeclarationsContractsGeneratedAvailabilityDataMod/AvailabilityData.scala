@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AvailabilityData
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.namespaced {
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.^ {
   /**
     * Duration in format: DD.HH:MM:SS.MMMMMM. Must be less than 1000 days.
     */

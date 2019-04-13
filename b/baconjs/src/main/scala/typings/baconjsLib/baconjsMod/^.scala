@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("baconjs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Bus: baconjsLib.Anon_A = js.native
-  var EventStream: baconjsLib.Anon_Sink = js.native
   /**
     * @property more
     * @constant

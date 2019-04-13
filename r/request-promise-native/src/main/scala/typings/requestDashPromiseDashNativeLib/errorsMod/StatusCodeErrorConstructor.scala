@@ -11,15 +11,15 @@ trait StatusCodeErrorConstructor
      with org.scalablytyped.runtime.Instantiable4[
       /* statusCode */ scala.Double, 
       /* body */ js.Any, 
-      /* options */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options, 
-      /* response */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse, 
+      /* options */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options, 
+      /* response */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse, 
       StatusCodeError
     ] {
   def apply(
     statusCode: scala.Double,
     body: js.Any,
-    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options,
-    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse
+    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options,
+    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse
   ): StatusCodeError = js.native
 }
 

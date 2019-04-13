@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RedBoxProps
-  extends reactLib.reactMod.ReactNs.Props[RedBoxError] {
+  extends reactLib.reactMod.Props[RedBoxError] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var editorScheme: js.UndefOr[java.lang.String] = js.undefined
   var error: stdLib.Error
   var filename: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var useColumns: js.UndefOr[scala.Boolean] = js.undefined
   var useLines: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -20,13 +20,13 @@ object RedBoxProps {
   @scala.inline
   def apply(
     error: stdLib.Error,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     editorScheme: java.lang.String = null,
     filename: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[RedBoxError] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[RedBoxError] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     useColumns: js.UndefOr[scala.Boolean] = js.undefined,
     useLines: js.UndefOr[scala.Boolean] = js.undefined
   ): RedBoxProps = {

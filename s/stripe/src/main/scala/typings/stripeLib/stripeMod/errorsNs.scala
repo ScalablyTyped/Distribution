@@ -11,246 +11,90 @@ import scala.scalajs.js.annotation._
 @JSImport("stripe", "errors")
 @js.native
 object errorsNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - stripeLib.stripeLibStrings.card_error
+    - stripeLib.stripeLibStrings.invalid_request_error
+    - stripeLib.stripeLibStrings.api_error
+    - stripeLib.stripeLibStrings.idempotency_error
+  */
+  trait RawType extends js.Object
+  
   @js.native
-  class StripeAPIError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeAPIError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripeAPIError () extends StripeError {
     @JSName("type")
-    override val type_StripeAPIError: stripeLib.stripeLibStrings.StripeAPIError = js.native
+    val type_StripeAPIError: stripeLib.stripeLibStrings.StripeAPIError = js.native
   }
   
   @js.native
-  class StripeAuthenticationError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeAuthenticationError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripeAuthenticationError () extends StripeError {
     @JSName("type")
-    override val type_StripeAuthenticationError: stripeLib.stripeLibStrings.StripeAuthenticationError = js.native
+    val type_StripeAuthenticationError: stripeLib.stripeLibStrings.StripeAuthenticationError = js.native
   }
   
   @js.native
-  class StripeCardError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeCardError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripeCardError () extends StripeError {
     @JSName("type")
-    override val type_StripeCardError: stripeLib.stripeLibStrings.StripeCardError = js.native
+    val type_StripeCardError: stripeLib.stripeLibStrings.StripeCardError = js.native
   }
   
   @js.native
-  class StripeConnectionError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeConnectionError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripeConnectionError () extends StripeError {
     @JSName("type")
-    override val type_StripeConnectionError: stripeLib.stripeLibStrings.StripeConnectionError = js.native
+    val type_StripeConnectionError: stripeLib.stripeLibStrings.StripeConnectionError = js.native
+  }
+  
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stripeLib.stripeMod.IStripeError because var conflicts: message. Inlined `type`, code, param */ @js.native
+  abstract class StripeError () extends _Error {
+    val code: js.UndefOr[java.lang.String] = js.native
+    val detail: js.UndefOr[js.Any] = js.native
+    val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+    /**
+      * The parameter the error relates to if the error is parameter-specific. You can use this to display a
+      * message near the correct form field, for example.
+      */
+    var param: js.UndefOr[java.lang.String] = js.native
+    val params: js.UndefOr[java.lang.String] = js.native
+    val raw: js.Any = js.native
+    val rawType: RawType = js.native
+    var readonly: scala.Double = js.native
+    val requestId: java.lang.String = js.native
+    val `type`: java.lang.String = js.native
   }
   
   @js.native
-  abstract class StripeError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
+  class StripeIdempotencyError () extends StripeError {
+    @JSName("type")
+    val type_StripeIdempotencyError: stripeLib.stripeLibStrings.StripeIdempotencyError = js.native
   }
   
   @js.native
-  class StripeIdempotencyError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeIdempotencyError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripeInvalidRequestError () extends StripeError {
     @JSName("type")
-    override val type_StripeIdempotencyError: stripeLib.stripeLibStrings.StripeIdempotencyError = js.native
+    val type_StripeInvalidRequestError: stripeLib.stripeLibStrings.StripeInvalidRequestError = js.native
   }
   
   @js.native
-  class StripeInvalidRequestError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeInvalidRequestError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripePermissionError () extends StripeError {
     @JSName("type")
-    override val type_StripeInvalidRequestError: stripeLib.stripeLibStrings.StripeInvalidRequestError = js.native
+    val type_StripePermissionError: stripeLib.stripeLibStrings.StripePermissionError = js.native
   }
   
   @js.native
-  class StripePermissionError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripePermissionError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripeRateLimitError () extends StripeError {
     @JSName("type")
-    override val type_StripePermissionError: stripeLib.stripeLibStrings.StripePermissionError = js.native
+    val type_StripeRateLimitError: stripeLib.stripeLibStrings.StripeRateLimitError = js.native
   }
   
   @js.native
-  class StripeRateLimitError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeRateLimitError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
+  class StripeSignatureVerificationError () extends StripeError {
     @JSName("type")
-    override val type_StripeRateLimitError: stripeLib.stripeLibStrings.StripeRateLimitError = js.native
-  }
-  
-  @js.native
-  class StripeSignatureVerificationError ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs.StripeSignatureVerificationError {
-    /* CompleteClass */
-    override val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override val raw: js.Any = js.native
-    /* CompleteClass */
-    override val rawType: stripeLib.stripeMod.StripeNs.errorsNs.RawType = js.native
-    /* CompleteClass */
-    override var readonly: scala.Double = js.native
-    /* CompleteClass */
-    override val requestId: java.lang.String = js.native
-    /* CompleteClass */
-    override val `type`: java.lang.String = js.native
-    /* CompleteClass */
-    @JSName("type")
-    override val type_StripeSignatureVerificationError: stripeLib.stripeLibStrings.StripeSignatureVerificationError = js.native
+    val type_StripeSignatureVerificationError: stripeLib.stripeLibStrings.StripeSignatureVerificationError = js.native
   }
   
   @js.native
   class _Error ()
-    extends stripeLib.stripeMod.StripeNs.errorsNs._Error {
+    extends stdLib.Error {
     /* CompleteClass */
     override var message: java.lang.String = js.native
     /* CompleteClass */
@@ -260,7 +104,7 @@ object errorsNs extends js.Object {
   /* static members */
   @js.native
   object StripeError extends js.Object {
-    def populate(`type`: stripeLib.stripeMod.StripeNs.errorsNs.RawType): stripeLib.stripeMod.StripeNs.errorsNs.StripeError = js.native
+    def populate(`type`: stripeLib.stripeMod.errorsNs.RawType): stripeLib.stripeMod.errorsNs.StripeError = js.native
   }
   
 }

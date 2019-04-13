@@ -28,3 +28,11 @@ class DebugNodeCls protected ()
   override val references: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+@JSImport("@angular/core/src/core", "DebugNode")
+@js.native
+object DebugNode
+  extends org.scalablytyped.runtime.Instantiable1[
+      /* args (repeated) */ js.Any, 
+      atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode
+    ]
+

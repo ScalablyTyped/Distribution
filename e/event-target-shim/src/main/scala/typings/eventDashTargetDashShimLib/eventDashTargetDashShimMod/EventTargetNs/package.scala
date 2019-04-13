@@ -23,6 +23,7 @@ package object EventTargetNs {
   ]) with (stdLib.Partial[
     stdLib.Pick[eventDashTargetDashShimLib.eventDashTargetDashShimMod.Event, OmittableEventKeys]
   ]))
+  type EventDefinition = org.scalablytyped.runtime.StringDictionary[eventDashTargetDashShimLib.eventDashTargetDashShimMod.Event]
   type EventType[TEvents /* <: EventDefinition */, TMode /* <: Mode */] = java.lang.String
   type FunctionListener[TEvent] = js.Function1[/* event */ TEvent, scala.Unit]
   type Listener[TEvent] = FunctionListener[TEvent] | ObjectListener[TEvent]

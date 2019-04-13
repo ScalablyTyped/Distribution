@@ -46,7 +46,7 @@ object ^ extends js.Object {
     * pinyin("中心") // returns [ [ 'zhōng' ], [ 'xīn' ] ]
     */
   def apply(words: java.lang.String): js.Array[js.Array[java.lang.String]] = js.native
-  def apply(words: java.lang.String, options: pinyinLib.pinyinMod.pinyinNs.Options): js.Array[js.Array[java.lang.String]] = js.native
+  def apply(words: java.lang.String, options: Options): js.Array[js.Array[java.lang.String]] = js.native
   /**
     * 按拼音比较两个字符串 a 和 b 的顺序。
     * 如果返回 -1 表示 a 在 b 前

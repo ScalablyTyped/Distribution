@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Container[T /* <: Elem */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] ()
   extends tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] {
-  /* CompleteClass */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
   /**
     * Iterator to the first element.
     *

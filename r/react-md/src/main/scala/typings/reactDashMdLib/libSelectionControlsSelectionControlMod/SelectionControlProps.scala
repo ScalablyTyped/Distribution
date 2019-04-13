@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectionControlProps extends BaseSelectionControlProps {
-  var checkedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var checkedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var checkedCheckboxIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var checkedCheckboxIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
   var checkedCheckboxIconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var checkedRadioIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var checkedRadioIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var checkedRadioIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var checkedRadioIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -32,20 +32,20 @@ trait SelectionControlProps extends BaseSelectionControlProps {
     ]
   ] = js.undefined
   var `type`: Types
-  var uncheckedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var uncheckedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var uncheckedCheckboxIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var uncheckedCheckboxIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
   var uncheckedCheckboxIconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var uncheckedRadioIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var uncheckedRadioIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var uncheckedRadioIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var uncheckedRadioIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -61,49 +61,49 @@ object SelectionControlProps {
     `aria-label`: java.lang.String = null,
     `aria-labelledby`: reactDashMdLib.libMod.IdPropType = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    checkedCheckboxIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    checkedCheckboxIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    checkedCheckboxIcon: reactLib.reactMod.ReactElement[_] = null,
+    checkedCheckboxIconChildren: reactLib.reactMod.ReactNode = null,
     checkedCheckboxIconClassName: java.lang.String = null,
-    checkedRadioIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    checkedRadioIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    checkedRadioIcon: reactLib.reactMod.ReactElement[_] = null,
+    checkedRadioIconChildren: reactLib.reactMod.ReactNode = null,
     checkedRadioIconClassName: java.lang.String = null,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     labelBefore: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
     onChange: (/* result */ scala.Boolean | scala.Double | java.lang.String, /* event */ stdLib.Event) => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    uncheckedCheckboxIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    uncheckedCheckboxIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    uncheckedCheckboxIcon: reactLib.reactMod.ReactElement[_] = null,
+    uncheckedCheckboxIconChildren: reactLib.reactMod.ReactNode = null,
     uncheckedCheckboxIconClassName: java.lang.String = null,
-    uncheckedRadioIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    uncheckedRadioIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    uncheckedRadioIcon: reactLib.reactMod.ReactElement[_] = null,
+    uncheckedRadioIconChildren: reactLib.reactMod.ReactNode = null,
     uncheckedRadioIconClassName: java.lang.String = null,
     value: scala.Double | java.lang.String = null
   ): SelectionControlProps = {

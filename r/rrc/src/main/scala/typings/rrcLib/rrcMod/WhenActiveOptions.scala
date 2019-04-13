@@ -11,7 +11,7 @@ trait WhenActiveOptions extends js.Object {
   var isActive: js.UndefOr[IsActiveCallback] = js.undefined
   var pathProp: js.UndefOr[java.lang.String] = js.undefined
   var strict: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object WhenActiveOptions {
@@ -22,7 +22,7 @@ object WhenActiveOptions {
     isActive: IsActiveCallback = null,
     pathProp: java.lang.String = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): WhenActiveOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

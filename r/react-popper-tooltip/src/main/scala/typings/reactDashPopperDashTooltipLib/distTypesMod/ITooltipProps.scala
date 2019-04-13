@@ -13,7 +13,7 @@ trait ITooltipProps extends js.Object {
   var innerRef_Original: reactDashPopperLib.RefHandler = js.native
   var outOfBoundaries: scala.Boolean | scala.Null = js.native
   var placement: popperDotJsLib.popperDotJsMod.PopperNs.Placement = js.native
-  var style: reactLib.reactMod.ReactNs.CSSProperties = js.native
+  var style: reactLib.reactMod.CSSProperties = js.native
   var trigger: reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.none | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.click | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.`right-click` | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.hover = js.native
   def addParentOutsideClickHandler(): scala.Unit = js.native
   def addParentOutsideRightClickHandler(): scala.Unit = js.native
@@ -26,6 +26,6 @@ trait ITooltipProps extends js.Object {
   def removeParentOutsideClickHandler(): scala.Unit = js.native
   def removeParentOutsideRightClickHandler(): scala.Unit = js.native
   def scheduleUpdate(): scala.Unit = js.native
-  def tooltip(arg: ITooltipArg): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def tooltip(arg: ITooltipArg): reactLib.reactMod.ReactNode = js.native
 }
 

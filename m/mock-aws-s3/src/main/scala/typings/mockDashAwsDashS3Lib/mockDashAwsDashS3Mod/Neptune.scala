@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Neptune ()
   extends awsDashSdkLib.awsDashSdkMod.Neptune {
-  def this(options: awsDashSdkLib.clientsNeptuneMod.NeptuneNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsNeptuneMod.ClientConfiguration) = this()
 }
 

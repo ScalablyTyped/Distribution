@@ -13,7 +13,6 @@ package object typesSpecOnDashEventsMod {
   */
   type EventListener = _EventListener | vegaDashTypingsLib.typesSpecStreamMod.EventStream
   type Events = vegaDashTypingsLib.typesSpecSelectorMod.EventSelector | EventListener
-  type OnEvent = (vegaDashTypingsLib.Anon_Encode | vegaDashTypingsLib.Anon_Update) with vegaDashTypingsLib.Anon_Events
   /* Rewritten from type alias, can be one of: 
     - vegaDashTypingsLib.typesSpecExprMod.Expr
     - vegaDashTypingsLib.typesSpecExprMod.ExprRef

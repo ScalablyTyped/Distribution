@@ -21,7 +21,7 @@ trait Anon_Args extends js.Object {
   var fs: js.UndefOr[Anon_AccessAccessSync] = js.undefined
   var input: js.UndefOr[java.lang.String] = js.undefined
   var stdin: js.UndefOr[nodeLib.NodeJSNs.ReadStream] = js.undefined
-  var textFormat: js.UndefOr[Anon_M with cliDashColorLib.cliDashColorMod.mNs.Format] = js.undefined
+  var textFormat: js.UndefOr[cliDashColorLib.cliDashColorMod.Format] = js.undefined
 }
 
 object Anon_Args {
@@ -35,7 +35,7 @@ object Anon_Args {
     fs: Anon_AccessAccessSync = null,
     input: java.lang.String = null,
     stdin: nodeLib.NodeJSNs.ReadStream = null,
-    textFormat: Anon_M with cliDashColorLib.cliDashColorMod.mNs.Format = null
+    textFormat: cliDashColorLib.cliDashColorMod.Format = null
   ): Anon_Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))

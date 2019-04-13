@@ -14,7 +14,7 @@ trait _Impl extends js.Object {
     * Debug output to console
     */
   var debug: scala.Boolean
-  var defaults: /* import warning: ImportType.apply Failed type conversion: {[name: string] : semantic-ui-form.SemanticUI.Form.Field, [name: string] : semantic-ui-form.SemanticUI.Form.Field} */ js.Any
+  var defaults: org.scalablytyped.runtime.StringDictionary[semanticDashUiDashFormLib.SemanticUINs.FormNs.Field]
   /**
     * Delay from last typed letter to validate a field when using on: change or when revalidating a field.
     *
@@ -30,7 +30,9 @@ trait _Impl extends js.Object {
   // endregion
   // region Debug Settings
   var error: semanticDashUiDashFormLib.SemanticUINs.FormNs.ErrorSettings
-  var fields: /* import warning: ImportType.apply Failed type conversion: {[name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field, [name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field} */ js.Any
+  var fields: org.scalablytyped.runtime.StringDictionary[
+    java.lang.String | js.Array[java.lang.String] | semanticDashUiDashFormLib.SemanticUINs.FormNs.Field
+  ]
   /**
     * Adds inline error on field validation error
     *
@@ -80,7 +82,9 @@ trait _Impl extends js.Object {
   var revalidate: scala.Boolean
   // endregion
   // region Rules
-  var rules: /* import warning: ImportType.apply Failed type conversion: {[name: string] : (this : std.HTMLElement, args : ...any): boolean, [name: string] : (this : std.HTMLElement, args : ...any): boolean} */ js.Any
+  var rules: org.scalablytyped.runtime.StringDictionary[
+    js.ThisFunction1[/* this */ stdLib.HTMLElement, /* repeated */ js.Any, scala.Boolean]
+  ]
   // endregion
   // region DOM Settings
   /**
@@ -137,11 +141,13 @@ object _Impl {
   def apply(
     className: semanticDashUiDashFormLib.SemanticUINs.FormNs.ClassNameSettings,
     debug: scala.Boolean,
-    defaults: /* import warning: ImportType.apply Failed type conversion: {[name: string] : semantic-ui-form.SemanticUI.Form.Field, [name: string] : semantic-ui-form.SemanticUI.Form.Field} */ js.Any,
+    defaults: org.scalablytyped.runtime.StringDictionary[semanticDashUiDashFormLib.SemanticUINs.FormNs.Field],
     delay: scala.Boolean,
     duration: scala.Double,
     error: semanticDashUiDashFormLib.SemanticUINs.FormNs.ErrorSettings,
-    fields: /* import warning: ImportType.apply Failed type conversion: {[name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field, [name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field} */ js.Any,
+    fields: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | js.Array[java.lang.String] | semanticDashUiDashFormLib.SemanticUINs.FormNs.Field
+    ],
     `inline`: scala.Boolean,
     keyboardShortcuts: scala.Boolean,
     metadata: semanticDashUiDashFormLib.SemanticUINs.FormNs.MetadataSettings,
@@ -155,7 +161,9 @@ object _Impl {
     performance: scala.Boolean,
     prompt: semanticDashUiDashFormLib.SemanticUINs.FormNs.PromptSettings,
     revalidate: scala.Boolean,
-    rules: /* import warning: ImportType.apply Failed type conversion: {[name: string] : (this : std.HTMLElement, args : ...any): boolean, [name: string] : (this : std.HTMLElement, args : ...any): boolean} */ js.Any,
+    rules: org.scalablytyped.runtime.StringDictionary[
+      js.ThisFunction1[/* this */ stdLib.HTMLElement, /* repeated */ js.Any, scala.Boolean]
+    ],
     selector: semanticDashUiDashFormLib.SemanticUINs.FormNs.SelectorSettings,
     silent: scala.Boolean,
     templates: semanticDashUiDashFormLib.SemanticUINs.FormNs.TemplatesSettings,

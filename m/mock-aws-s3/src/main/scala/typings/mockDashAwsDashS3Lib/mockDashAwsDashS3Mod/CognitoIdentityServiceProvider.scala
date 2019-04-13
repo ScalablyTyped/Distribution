@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CognitoIdentityServiceProvider ()
   extends awsDashSdkLib.awsDashSdkMod.CognitoIdentityServiceProvider {
-  def this(options: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.ClientConfiguration) = this()
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): stdLib.RegExp = js.native
-  def apply(options: ansiDashRegexLib.ansiDashRegexMod.ansiRegexNs.Options): stdLib.RegExp = js.native
+  def apply(options: Options): stdLib.RegExp = js.native
 }
 

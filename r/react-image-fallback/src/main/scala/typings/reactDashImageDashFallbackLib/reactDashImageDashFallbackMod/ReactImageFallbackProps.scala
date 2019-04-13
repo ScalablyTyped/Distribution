@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactImageFallbackProps extends js.Object {
-  var fallbackImage: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
-  var initialImage: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactElement[_]]
+  var initialImage: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   var initialTimeout: js.UndefOr[scala.Double] = js.undefined
   var onError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onLoad: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -27,12 +27,12 @@ trait ReactImageFallbackProps extends js.Object {
 object ReactImageFallbackProps {
   @scala.inline
   def apply(
-    fallbackImage: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]],
+    fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactElement[_]],
     src: java.lang.String,
-    initialImage: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    initialImage: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     initialTimeout: scala.Int | scala.Double = null,
-    onError: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null,
-    onLoad: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null
+    onError: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null,
+    onLoad: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null
   ): ReactImageFallbackProps = {
     val __obj = js.Dynamic.literal(fallbackImage = fallbackImage.asInstanceOf[js.Any], src = src)
     if (initialImage != null) __obj.updateDynamic("initialImage")(initialImage.asInstanceOf[js.Any])

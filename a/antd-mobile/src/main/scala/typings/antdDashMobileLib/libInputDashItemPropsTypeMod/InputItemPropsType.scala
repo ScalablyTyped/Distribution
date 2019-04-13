@@ -11,7 +11,7 @@ trait InputItemPropsType extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var editable: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var labelNumber: js.UndefOr[scala.Double] = js.undefined
   var labelPosition: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.left | antdDashMobileLib.antdDashMobileLibStrings.top
@@ -19,7 +19,7 @@ trait InputItemPropsType extends js.Object {
   var locale: js.UndefOr[js.Object] = js.undefined
   var maxLength: js.UndefOr[scala.Double] = js.undefined
   var moneyKeyboardAlign: js.UndefOr[java.lang.String] = js.undefined
-  var moneyKeyboardHeader: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var moneyKeyboardHeader: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var moneyKeyboardWrapProps: js.UndefOr[js.Object] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[InputEventHandler] = js.undefined
@@ -45,13 +45,13 @@ object InputItemPropsType {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     labelNumber: scala.Int | scala.Double = null,
     labelPosition: antdDashMobileLib.antdDashMobileLibStrings.left | antdDashMobileLib.antdDashMobileLibStrings.top = null,
     locale: js.Object = null,
     maxLength: scala.Int | scala.Double = null,
     moneyKeyboardAlign: java.lang.String = null,
-    moneyKeyboardHeader: reactLib.reactMod.ReactNs.ReactNode = null,
+    moneyKeyboardHeader: reactLib.reactMod.ReactNode = null,
     moneyKeyboardWrapProps: js.Object = null,
     name: java.lang.String = null,
     onBlur: InputEventHandler = null,

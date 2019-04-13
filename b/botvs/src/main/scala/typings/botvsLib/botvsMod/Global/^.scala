@@ -80,7 +80,7 @@ object ^ extends js.Object {
     * 5分钟
     */
   val PERIOD_M5: botvsLib.botvsMod.Global.botvsNs.VPeriod = js.native
-  val `_`: lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
+  val `_`: lodashLib.lodashMod.LoDashStatic = js.native
   /**
     * 默认主交易所对像, 添加交易平台时排列第一的交易所
     */

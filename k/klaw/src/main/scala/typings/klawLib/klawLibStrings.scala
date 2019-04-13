@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 object klawLibStrings {
   @js.native
   sealed trait close
-    extends klawLib.klawMod.KNs.Event
+    extends klawLib.klawMod.Event
   
   @js.native
   sealed trait data
-    extends klawLib.klawMod.KNs.Event
+    extends klawLib.klawMod.Event
   
   @js.native
   sealed trait end
-    extends klawLib.klawMod.KNs.Event
+    extends klawLib.klawMod.Event
   
   @js.native
   sealed trait error
-    extends klawLib.klawMod.KNs.Event
+    extends klawLib.klawMod.Event
   
   @js.native
   sealed trait pop
-    extends klawLib.klawMod.KNs.QueueMethod
+    extends klawLib.klawMod.QueueMethod
   
   @js.native
   sealed trait readable
-    extends klawLib.klawMod.KNs.Event
+    extends klawLib.klawMod.Event
   
   @js.native
   sealed trait shift
-    extends klawLib.klawMod.KNs.QueueMethod
+    extends klawLib.klawMod.QueueMethod
   
   @scala.inline
   def close: close = "close".asInstanceOf[close]

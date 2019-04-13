@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object cliDashBoxesLibStrings {
   @js.native
   sealed trait classic
-    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
+    extends cliDashBoxesLib.cliDashBoxesMod.BoxNames
   
   @js.native
   sealed trait double
-    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
+    extends cliDashBoxesLib.cliDashBoxesMod.BoxNames
   
   @js.native
   sealed trait `double-single`
-    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
+    extends cliDashBoxesLib.cliDashBoxesMod.BoxNames
   
   @js.native
   sealed trait round
-    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
+    extends cliDashBoxesLib.cliDashBoxesMod.BoxNames
   
   @js.native
   sealed trait single
-    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
+    extends cliDashBoxesLib.cliDashBoxesMod.BoxNames
   
   @js.native
   sealed trait `single-double`
-    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
+    extends cliDashBoxesLib.cliDashBoxesMod.BoxNames
   
   @scala.inline
   def classic: classic = "classic".asInstanceOf[classic]

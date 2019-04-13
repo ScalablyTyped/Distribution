@@ -27,3 +27,8 @@ class MFilesVersion ()
   override def CompareTo(RightSide: mfilesLib.IMFilesVersion): scala.Double = js.native
 }
 
+@JSGlobal("MFiles.MFilesVersion")
+@js.native
+object MFilesVersion
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMFilesVersion]
+

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "WildcardQuery")
 @js.native
-class WildcardQuery protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.WildcardQuery {
+class WildcardQuery protected () extends Query {
   /*
     A Query that matches documents containing a wildcard. This may be
     combined with other wildcards with a BooleanQuery.
@@ -17,18 +16,15 @@ class WildcardQuery protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost value for documents matching the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: stdLib.Number): elasticDotJsLib.elasticDotJsMod.elasticjsNs.WildcardQuery = js.native
+  def boost(boost: stdLib.Number): WildcardQuery = js.native
   /*
     Sets the fields to query against.
     */
-  /* CompleteClass */
-  override def field(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.WildcardQuery = js.native
+  def field(f: java.lang.String): WildcardQuery = js.native
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -48,18 +44,15 @@ class WildcardQuery protected ()
     Default is constant_score_auto.
     This is an advanced option, use with care.
     */
-  /* CompleteClass */
-  override def rewrite(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.WildcardQuery = js.native
+  def rewrite(m: java.lang.String): WildcardQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
   /*
     Sets the wildcard query value.
     */
-  /* CompleteClass */
-  override def value(v: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.WildcardQuery = js.native
+  def value(v: java.lang.String): WildcardQuery = js.native
 }
 

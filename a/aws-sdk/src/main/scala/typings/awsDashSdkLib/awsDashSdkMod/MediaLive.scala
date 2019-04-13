@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MediaLive ()
   extends awsDashSdkLib.clientsAllMod.MediaLive {
-  def this(options: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMedialiveMod.ClientConfiguration) = this()
 }
 

@@ -9,147 +9,99 @@ import scala.scalajs.js.annotation._
 trait MediaLive
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_MediaLive: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ClientConfiguration = js.native
+  var config_MediaLive: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Update a channel schedule
     */
-  def batchUpdateSchedule(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchUpdateSchedule(): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchUpdateSchedule(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleResponse, 
+      /* data */ BatchUpdateScheduleResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update a channel schedule
     */
-  def batchUpdateSchedule(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchUpdateSchedule(params: BatchUpdateScheduleRequest): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchUpdateSchedule(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleRequest,
+    params: BatchUpdateScheduleRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleResponse, 
+      /* data */ BatchUpdateScheduleResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.BatchUpdateScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchUpdateScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new channel
     */
-  def createChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createChannel(): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelResponse, 
+      /* data */ CreateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new channel
     */
-  def createChannel(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createChannel(params: CreateChannelRequest): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createChannel(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelRequest,
+    params: CreateChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelResponse, 
+      /* data */ CreateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create an input
     */
-  def createInput(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createInput(): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInput(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputResponse, 
+      /* data */ CreateInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create an input
     */
-  def createInput(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createInput(params: CreateInputRequest): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInput(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputRequest,
+    params: CreateInputRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputResponse, 
+      /* data */ CreateInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Input Security Group
     */
-  def createInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInputSecurityGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupResponse, 
+      /* data */ CreateInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Input Security Group
     */
-  def createInputSecurityGroup(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createInputSecurityGroup(params: CreateInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInputSecurityGroup(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupRequest,
+    params: CreateInputSecurityGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupResponse, 
+      /* data */ CreateInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create tags for a resource
     */
@@ -160,151 +112,103 @@ trait MediaLive
   /**
     * Create tags for a resource
     */
-  def createTags(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTags(params: CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createTags(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateTagsRequest,
+    params: CreateTagsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts deletion of channel. The associated outputs are also deleted.
     */
-  def deleteChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteChannel(): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelResponse, 
+      /* data */ DeleteChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts deletion of channel. The associated outputs are also deleted.
     */
-  def deleteChannel(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteChannel(params: DeleteChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteChannel(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelRequest,
+    params: DeleteChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelResponse, 
+      /* data */ DeleteChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the input end point
     */
-  def deleteInput(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInput(): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInput(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputResponse, 
+      /* data */ DeleteInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the input end point
     */
-  def deleteInput(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInput(params: DeleteInputRequest): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInput(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputRequest,
+    params: DeleteInputRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputResponse, 
+      /* data */ DeleteInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an Input Security Group
     */
-  def deleteInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInputSecurityGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupResponse, 
+      /* data */ DeleteInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an Input Security Group
     */
-  def deleteInputSecurityGroup(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInputSecurityGroup(params: DeleteInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInputSecurityGroup(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupRequest,
+    params: DeleteInputSecurityGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupResponse, 
+      /* data */ DeleteInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an expired reservation.
     */
-  def deleteReservation(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteReservation(): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteReservation(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationResponse, 
+      /* data */ DeleteReservationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an expired reservation.
     */
-  def deleteReservation(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteReservation(params: DeleteReservationRequest): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteReservation(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationRequest,
+    params: DeleteReservationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationResponse, 
+      /* data */ DeleteReservationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes tags for a resource
     */
@@ -315,675 +219,447 @@ trait MediaLive
   /**
     * Removes tags for a resource
     */
-  def deleteTags(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTags(params: DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTags(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteTagsRequest,
+    params: DeleteTagsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets details about a channel
     */
-  def describeChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeChannel(): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelResponse, 
+      /* data */ DescribeChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets details about a channel
     */
-  def describeChannel(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeChannel(params: DescribeChannelRequest): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeChannel(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelRequest,
+    params: DescribeChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelResponse, 
+      /* data */ DescribeChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces details about an input
     */
-  def describeInput(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeInput(): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeInput(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputResponse, 
+      /* data */ DescribeInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces details about an input
     */
-  def describeInput(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeInput(params: DescribeInputRequest): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeInput(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputRequest,
+    params: DescribeInputRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputResponse, 
+      /* data */ DescribeInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces a summary of an Input Security Group
     */
-  def describeInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeInputSecurityGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupResponse, 
+      /* data */ DescribeInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces a summary of an Input Security Group
     */
-  def describeInputSecurityGroup(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeInputSecurityGroup(params: DescribeInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeInputSecurityGroup(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupRequest,
+    params: DescribeInputSecurityGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupResponse, 
+      /* data */ DescribeInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get details for an offering.
     */
-  def describeOffering(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeOffering(): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeOffering(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingResponse, 
+      /* data */ DescribeOfferingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get details for an offering.
     */
-  def describeOffering(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeOffering(params: DescribeOfferingRequest): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeOffering(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingRequest,
+    params: DescribeOfferingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingResponse, 
+      /* data */ DescribeOfferingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get details for a reservation.
     */
-  def describeReservation(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeReservation(): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeReservation(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationResponse, 
+      /* data */ DescribeReservationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get details for a reservation.
     */
-  def describeReservation(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeReservation(params: DescribeReservationRequest): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeReservation(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationRequest,
+    params: DescribeReservationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationResponse, 
+      /* data */ DescribeReservationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get a channel schedule
     */
-  def describeSchedule(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeSchedule(): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeSchedule(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleResponse, 
+      /* data */ DescribeScheduleResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get a channel schedule
     */
-  def describeSchedule(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeSchedule(params: DescribeScheduleRequest): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeSchedule(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleRequest,
+    params: DescribeScheduleRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleResponse, 
+      /* data */ DescribeScheduleResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DescribeScheduleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces list of channels that have been created
     */
-  def listChannels(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listChannels(): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listChannels(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsResponse, 
+      /* data */ ListChannelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces list of channels that have been created
     */
-  def listChannels(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listChannels(params: ListChannelsRequest): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listChannels(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsRequest,
+    params: ListChannelsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsResponse, 
+      /* data */ ListChannelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces a list of Input Security Groups for an account
     */
-  def listInputSecurityGroups(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInputSecurityGroups(): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInputSecurityGroups(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsResponse, 
+      /* data */ ListInputSecurityGroupsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces a list of Input Security Groups for an account
     */
-  def listInputSecurityGroups(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInputSecurityGroups(params: ListInputSecurityGroupsRequest): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInputSecurityGroups(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsRequest,
+    params: ListInputSecurityGroupsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsResponse, 
+      /* data */ ListInputSecurityGroupsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputSecurityGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInputSecurityGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces list of inputs that have been created
     */
-  def listInputs(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInputs(): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInputs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsResponse, 
+      /* data */ ListInputsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces list of inputs that have been created
     */
-  def listInputs(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInputs(params: ListInputsRequest): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInputs(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsRequest,
+    params: ListInputsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsResponse, 
+      /* data */ ListInputsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListInputsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInputsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List offerings available for purchase.
     */
-  def listOfferings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOfferings(): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOfferings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsResponse, 
+      /* data */ ListOfferingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List offerings available for purchase.
     */
-  def listOfferings(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOfferings(params: ListOfferingsRequest): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOfferings(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsRequest,
+    params: ListOfferingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsResponse, 
+      /* data */ ListOfferingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListOfferingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOfferingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List purchased reservations.
     */
-  def listReservations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listReservations(): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listReservations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsResponse, 
+      /* data */ ListReservationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List purchased reservations.
     */
-  def listReservations(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listReservations(params: ListReservationsRequest): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listReservations(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsRequest,
+    params: ListReservationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsResponse, 
+      /* data */ ListReservationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces list of tags that have been created for a resource
     */
-  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Produces list of tags that have been created for a resource
     */
-  def listTagsForResource(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceRequest,
+    params: ListTagsForResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Purchase an offering and create a reservation.
     */
-  def purchaseOffering(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def purchaseOffering(): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def purchaseOffering(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingResponse, 
+      /* data */ PurchaseOfferingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Purchase an offering and create a reservation.
     */
-  def purchaseOffering(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def purchaseOffering(params: PurchaseOfferingRequest): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def purchaseOffering(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingRequest,
+    params: PurchaseOfferingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingResponse, 
+      /* data */ PurchaseOfferingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.PurchaseOfferingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PurchaseOfferingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts an existing channel
     */
-  def startChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startChannel(): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelResponse, 
+      /* data */ StartChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts an existing channel
     */
-  def startChannel(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startChannel(params: StartChannelRequest): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startChannel(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelRequest,
+    params: StartChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelResponse, 
+      /* data */ StartChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StartChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops a running channel
     */
-  def stopChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopChannel(): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelResponse, 
+      /* data */ StopChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops a running channel
     */
-  def stopChannel(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopChannel(params: StopChannelRequest): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopChannel(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelRequest,
+    params: StopChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelResponse, 
+      /* data */ StopChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.StopChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a channel.
     */
-  def updateChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateChannel(): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelResponse, 
+      /* data */ UpdateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a channel.
     */
-  def updateChannel(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateChannel(params: UpdateChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateChannel(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelRequest,
+    params: UpdateChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelResponse, 
+      /* data */ UpdateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an input.
     */
-  def updateInput(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateInput(): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateInput(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputResponse, 
+      /* data */ UpdateInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an input.
     */
-  def updateInput(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateInput(params: UpdateInputRequest): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateInput(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputRequest,
+    params: UpdateInputRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputResponse, 
+      /* data */ UpdateInputResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateInputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update an Input Security Group's Whilelists.
     */
-  def updateInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateInputSecurityGroup(): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateInputSecurityGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupResponse, 
+      /* data */ UpdateInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update an Input Security Group's Whilelists.
     */
-  def updateInputSecurityGroup(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateInputSecurityGroup(params: UpdateInputSecurityGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateInputSecurityGroup(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupRequest,
+    params: UpdateInputSecurityGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupResponse, 
+      /* data */ UpdateInputSecurityGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update reservation.
     */
-  def updateReservation(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateReservation(): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateReservation(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+      /* data */ UpdateReservationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update reservation.
     */
-  def updateReservation(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateReservation(params: UpdateReservationRequest): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateReservation(
-    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationRequest,
+    params: UpdateReservationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+      /* data */ UpdateReservationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

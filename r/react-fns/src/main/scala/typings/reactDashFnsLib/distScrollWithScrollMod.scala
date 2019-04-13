@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distScrollWithScrollMod extends js.Object {
   def withScroll[Props](
-    Component: reactLib.reactMod.ReactNs.ComponentType[Props with reactDashFnsLib.distScrollScrollMod.ScrollProps]
-  ): reactLib.reactMod.ReactNs.ComponentType[Props] = js.native
+    Component: reactLib.reactMod.ComponentType[Props with reactDashFnsLib.distScrollScrollMod.ScrollProps]
+  ): reactLib.reactMod.ComponentType[Props] = js.native
 }
 

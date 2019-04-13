@@ -1,15 +1,11 @@
 organization := "org.scalablytyped"
 name := "axios"
-version := "0.18.0-42b8e2"
+version := "0.18.0-25f628"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "follow-redirects" % "1.5-dt-20190402Z-4e953b",
-  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-2943d0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
-  "org.scalablytyped" %%% "std" % "3.4-d52857")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

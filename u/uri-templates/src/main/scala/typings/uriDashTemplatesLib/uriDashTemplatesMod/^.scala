@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("uri-templates", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(template: java.lang.String): uriDashTemplatesLib.uriDashTemplatesMod.utplNs.URITemplate = js.native
+  def apply(template: java.lang.String): URITemplate = js.native
 }
 

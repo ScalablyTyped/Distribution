@@ -14,7 +14,7 @@ object stateNs extends js.Object {
     def this(run: js.Function1[/* s */ S, js.Tuple2[A, S]]) = this()
   }
   
-  val URI: /* State */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.State = js.native
   val state: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libStateMod.URI] = js.native
   def get[S](): fpDashTsLib.libStateMod.State[S, S] = js.native
   def gets[S, A](f: js.Function1[/* s */ S, A]): fpDashTsLib.libStateMod.State[S, A] = js.native

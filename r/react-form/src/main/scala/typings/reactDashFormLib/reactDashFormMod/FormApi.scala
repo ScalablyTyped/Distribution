@@ -31,7 +31,7 @@ trait FormApi extends js.Object {
   def setValue(fieldName: java.lang.String, value: js.Any): scala.Unit
   def setWarning(field: java.lang.String, warning: java.lang.String): scala.Unit
   // Methods
-  def submitForm(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit
+  def submitForm(event: reactLib.reactMod.SyntheticEvent[_, reactLib.Event]): scala.Unit
   def swapValues(name: java.lang.String, index1: scala.Double, index2: scala.Double): scala.Unit
 }
 
@@ -52,7 +52,7 @@ object FormApi {
     setTouched: (java.lang.String, scala.Boolean) => scala.Unit,
     setValue: (java.lang.String, js.Any) => scala.Unit,
     setWarning: (java.lang.String, java.lang.String) => scala.Unit,
-    submitForm: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event] => scala.Unit,
+    submitForm: reactLib.reactMod.SyntheticEvent[_, reactLib.Event] => scala.Unit,
     submits: scala.Double,
     submitted: scala.Boolean,
     successes: FormErrors,

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait ndarray[T] extends js.Object {
   var T: ndarray[T]
-  var data: ndarrayLib.ndarrayMod.ndarrayNs.Data[T]
+  var data: Data[T]
   var dimension: scala.Double
-  var dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType
+  var dtype: DataType
   var offset: scala.Double
   var order: js.Array[scala.Double]
   var shape: js.Array[scala.Double]
@@ -30,9 +30,9 @@ object ndarray {
   @scala.inline
   def apply[T](
     T: ndarray[T],
-    data: ndarrayLib.ndarrayMod.ndarrayNs.Data[T],
+    data: Data[T],
     dimension: scala.Double,
-    dtype: ndarrayLib.ndarrayMod.ndarrayNs.DataType,
+    dtype: DataType,
     get: /* repeated */ scala.Double => T,
     hi: /* repeated */ scala.Double => ndarray[T],
     index: /* repeated */ scala.Double => T,

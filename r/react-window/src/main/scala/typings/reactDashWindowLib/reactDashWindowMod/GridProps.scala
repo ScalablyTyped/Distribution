@@ -11,7 +11,7 @@ trait GridProps extends CommonProps {
     *
     * If useIsScrolling is enabled for the list, the component also receives an additional isScrolling boolean prop.
     */
-  var children: reactLib.reactMod.ReactNs.ComponentType[GridChildComponentProps]
+  var children: reactLib.reactMod.ComponentType[GridChildComponentProps]
   /**
     * Number of columns in the grid. Note that only a few columns will be rendered and displayed at a time.
     */
@@ -95,7 +95,7 @@ trait GridProps extends CommonProps {
 object GridProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ComponentType[GridChildComponentProps],
+    children: reactLib.reactMod.ComponentType[GridChildComponentProps],
     columnCount: scala.Double,
     height: scala.Double,
     rowCount: scala.Double,
@@ -105,19 +105,19 @@ object GridProps {
     initialScrollLeft: scala.Int | scala.Double = null,
     initialScrollTop: scala.Int | scala.Double = null,
     innerElementType: ReactElementType = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] = null,
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     itemKey: GridItemKeySelector = null,
     onItemsRendered: /* props */ GridOnItemsRenderedProps => _ = null,
     onScroll: /* props */ GridOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
-    outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    outerRef: reactLib.reactMod.Ref[_] = null,
     outerTagName: java.lang.String = null,
     overscanColumnsCount: scala.Int | scala.Double = null,
     overscanCount: scala.Int | scala.Double = null,
     overscanRowsCount: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): GridProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, height = height, rowCount = rowCount, width = width)

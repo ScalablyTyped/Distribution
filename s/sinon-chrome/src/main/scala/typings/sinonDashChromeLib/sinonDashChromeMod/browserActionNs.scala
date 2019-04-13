@@ -14,7 +14,7 @@ object browserActionNs extends js.Object {
   var getBadgeText: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getPopup: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getTitle: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onClicked: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onClicked: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
   var setBadgeBackgroundColor: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var setBadgeText: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var setIcon: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native

@@ -12,7 +12,7 @@ package object bearerDashStrategyMod {
     scala.Unit
   ]
   type VerifyBearerFunctionWithReq = js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* token */ passportDashAzureDashAdLib.commonMod.ITokenPayload, 
     /* done */ passportDashAzureDashAdLib.commonMod.VerifyCallback, 
     scala.Unit

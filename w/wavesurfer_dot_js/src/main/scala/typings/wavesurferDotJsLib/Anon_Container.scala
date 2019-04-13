@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Container
   extends org.scalablytyped.runtime.Instantiable2[
       /* container */ stdLib.HTMLElement, 
-      /* params */ wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.WaveSurferParams, 
-      wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.WaveRenderer
+      /* params */ wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferParams, 
+      wavesurferDotJsLib.wavesurferDotJsMod.WaveRenderer
     ]
 

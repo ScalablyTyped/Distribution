@@ -17,3 +17,8 @@ class AccessControlEntryKeys ()
   override def Item(Index: scala.Double): mfilesLib.IAccessControlEntryKey = js.native
 }
 
+@JSGlobal("MFiles.AccessControlEntryKeys")
+@js.native
+object AccessControlEntryKeys
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlEntryKeys]
+

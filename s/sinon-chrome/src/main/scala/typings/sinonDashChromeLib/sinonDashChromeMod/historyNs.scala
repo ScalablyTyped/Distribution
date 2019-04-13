@@ -13,8 +13,8 @@ object historyNs extends js.Object {
   var deleteRange: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var deleteUrl: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getVisits: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onVisitRemoved: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onVisited: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onVisitRemoved: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onVisited: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
   var search: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
 }
 

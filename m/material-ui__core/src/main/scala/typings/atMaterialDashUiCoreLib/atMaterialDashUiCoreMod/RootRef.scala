@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "RootRef")
 @js.native
 class RootRef protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.rootRefRootRefMod.RootRefProps[js.Any], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.rootRefRootRefMod.RootRefProps[_]) = this()

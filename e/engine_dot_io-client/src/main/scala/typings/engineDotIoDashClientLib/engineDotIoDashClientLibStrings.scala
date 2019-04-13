@@ -35,7 +35,7 @@ object engineDotIoDashClientLibStrings {
   
   @js.native
   sealed trait polling
-    extends engineDotIoDashClientLib.engineDotIoDashClientMod.clientNs.Transport
+    extends engineDotIoDashClientLib.engineDotIoDashClientMod.Transport
   
   @js.native
   sealed trait pong extends js.Object
@@ -48,7 +48,7 @@ object engineDotIoDashClientLibStrings {
   
   @js.native
   sealed trait websocket
-    extends engineDotIoDashClientLib.engineDotIoDashClientMod.clientNs.Transport
+    extends engineDotIoDashClientLib.engineDotIoDashClientMod.Transport
   
   @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]

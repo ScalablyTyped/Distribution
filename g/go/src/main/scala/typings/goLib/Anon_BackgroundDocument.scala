@@ -6,35 +6,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BackgroundDocument extends js.Object {
-  var background: js.UndefOr[goLib.goMod.goNs.BrushLike] = js.undefined
+  var background: js.UndefOr[goLib.goMod.BrushLike] = js.undefined
   var document: js.UndefOr[stdLib.Document] = js.undefined
   var elementFinished: js.UndefOr[
-    js.Function2[/* obj */ goLib.goMod.goNs.GraphObject, /* elt */ stdLib.SVGElement, scala.Unit]
+    js.Function2[/* obj */ goLib.goMod.GraphObject, /* elt */ stdLib.SVGElement, scala.Unit]
   ] = js.undefined
-  var maxSize: js.UndefOr[goLib.goMod.goNs.Size] = js.undefined
-  var padding: js.UndefOr[goLib.goMod.goNs.MarginLike] = js.undefined
-  var parts: js.UndefOr[goLib.goMod.goNs.Iterable[goLib.goMod.goNs.Part]] = js.undefined
-  var position: js.UndefOr[goLib.goMod.goNs.Point] = js.undefined
+  var maxSize: js.UndefOr[goLib.goMod.Size] = js.undefined
+  var padding: js.UndefOr[goLib.goMod.MarginLike] = js.undefined
+  var parts: js.UndefOr[goLib.goMod.Iterable[goLib.goMod.Part]] = js.undefined
+  var position: js.UndefOr[goLib.goMod.Point] = js.undefined
   var scale: js.UndefOr[scala.Double] = js.undefined
   var showGrid: js.UndefOr[scala.Boolean] = js.undefined
   var showTemporary: js.UndefOr[scala.Boolean] = js.undefined
-  var size: js.UndefOr[goLib.goMod.goNs.Size] = js.undefined
+  var size: js.UndefOr[goLib.goMod.Size] = js.undefined
 }
 
 object Anon_BackgroundDocument {
   @scala.inline
   def apply(
-    background: goLib.goMod.goNs.BrushLike = null,
+    background: goLib.goMod.BrushLike = null,
     document: stdLib.Document = null,
-    elementFinished: (/* obj */ goLib.goMod.goNs.GraphObject, /* elt */ stdLib.SVGElement) => scala.Unit = null,
-    maxSize: goLib.goMod.goNs.Size = null,
-    padding: goLib.goMod.goNs.MarginLike = null,
-    parts: goLib.goMod.goNs.Iterable[goLib.goMod.goNs.Part] = null,
-    position: goLib.goMod.goNs.Point = null,
+    elementFinished: (/* obj */ goLib.goMod.GraphObject, /* elt */ stdLib.SVGElement) => scala.Unit = null,
+    maxSize: goLib.goMod.Size = null,
+    padding: goLib.goMod.MarginLike = null,
+    parts: goLib.goMod.Iterable[goLib.goMod.Part] = null,
+    position: goLib.goMod.Point = null,
     scale: scala.Int | scala.Double = null,
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,
     showTemporary: js.UndefOr[scala.Boolean] = js.undefined,
-    size: goLib.goMod.goNs.Size = null
+    size: goLib.goMod.Size = null
   ): Anon_BackgroundDocument = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])

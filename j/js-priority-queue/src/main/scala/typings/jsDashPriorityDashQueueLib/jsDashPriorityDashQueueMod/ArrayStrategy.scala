@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-priority-queue", "ArrayStrategy")
 @js.native
-class ArrayStrategy[T] ()
-  extends jsDashPriorityDashQueueLib.jsDashPriorityDashQueueMod.PriorityQueueNs.ArrayStrategy[T] {
+class ArrayStrategy[T] () extends AbstractPriorityQueue[T] {
   /**
     * Returns the number of elements in the queue
     */

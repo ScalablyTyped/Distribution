@@ -65,7 +65,7 @@ object typesNs extends js.Object {
   
   @js.native
   class DurationCls protected () extends Duration {
-    def this(month: scala.Double, days: scala.Double, nanoseconds: longLib.longMod.namespaced) = this()
+    def this(month: scala.Double, days: scala.Double, nanoseconds: longLib.longMod.^) = this()
     def this(month: scala.Double, days: scala.Double, nanoseconds: scala.Double) = this()
     /* CompleteClass */
     override def equals(other: Duration): scala.Boolean = js.native
@@ -78,7 +78,7 @@ object typesNs extends js.Object {
     extends org.scalablytyped.runtime.Instantiable3[
           /* month */ scala.Double, 
           /* days */ scala.Double, 
-          (/* nanoseconds */ scala.Double) | (/* nanoseconds */ longLib.longMod.namespaced), 
+          (/* nanoseconds */ scala.Double) | (/* nanoseconds */ longLib.longMod.^), 
           Duration
         ] {
     def fromBuffer(buffer: nodeLib.Buffer): Duration = js.native
@@ -221,7 +221,7 @@ object typesNs extends js.Object {
     var second: scala.Double
     def compare(other: LocalTime): scala.Boolean
     def equals(other: LocalTime): scala.Boolean
-    def getTotalNanoseconds(): longLib.longMod.namespaced
+    def getTotalNanoseconds(): longLib.longMod.^
     def inspect(): java.lang.String
     def toBuffer(): nodeLib.Buffer
     def toJSON(): java.lang.String
@@ -229,7 +229,7 @@ object typesNs extends js.Object {
   
   @js.native
   class LocalTimeCls protected () extends LocalTime {
-    def this(totalNanoseconds: longLib.longMod.namespaced) = this()
+    def this(totalNanoseconds: longLib.longMod.^) = this()
     /* CompleteClass */
     override var hour: scala.Double = js.native
     /* CompleteClass */
@@ -243,7 +243,7 @@ object typesNs extends js.Object {
     /* CompleteClass */
     override def equals(other: LocalTime): scala.Boolean = js.native
     /* CompleteClass */
-    override def getTotalNanoseconds(): longLib.longMod.namespaced = js.native
+    override def getTotalNanoseconds(): longLib.longMod.^ = js.native
     /* CompleteClass */
     override def inspect(): java.lang.String = js.native
     /* CompleteClass */
@@ -254,7 +254,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait LocalTimeStatic
-    extends org.scalablytyped.runtime.Instantiable1[/* totalNanoseconds */ longLib.longMod.namespaced, LocalTime] {
+    extends org.scalablytyped.runtime.Instantiable1[/* totalNanoseconds */ longLib.longMod.^, LocalTime] {
     def fromBuffer(value: nodeLib.Buffer): LocalTime = js.native
     def fromDate(date: stdLib.Date, nanoseconds: scala.Double): LocalTime = js.native
     def fromMilliseconds(milliseconds: scala.Double): LocalTime = js.native
@@ -264,47 +264,25 @@ object typesNs extends js.Object {
     def now(nanoseconds: scala.Double): LocalTime = js.native
   }
   
+  @js.native
   trait ResultSet extends js.Object {
-    var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
-    var info: cassandraDashDriverLib.Anon_AchievedConsistency
-    @JSName(org.scalablytyped.runtime.Symbol.iterator)
-    var iterator: js.Function0[stdLib.Iterator[Row]]
-    var pageState: java.lang.String
-    var rowLength: scala.Double
-    var rows: js.Array[Row]
-    def first(): Row | scala.Null
-    def getColumns(): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
-    def getPageState(): java.lang.String
-    def nextPage(): scala.Unit
-    def wasApplied(): scala.Boolean
+    var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+    var info: cassandraDashDriverLib.Anon_AchievedConsistency = js.native
+    @JSName(scala.scalajs.js.Symbol.iterator)
+    var iterator: js.Function0[stdLib.Iterator[Row]] = js.native
+    var pageState: java.lang.String = js.native
+    var rowLength: scala.Double = js.native
+    var rows: js.Array[Row] = js.native
+    def first(): Row | scala.Null = js.native
+    def getColumns(): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+    def getPageState(): java.lang.String = js.native
+    def nextPage(): scala.Unit = js.native
+    def wasApplied(): scala.Boolean = js.native
   }
   
   @js.native
   class ResultSetCls protected () extends ResultSet {
     def this(response: js.Any, host: java.lang.String, triedHost: org.scalablytyped.runtime.StringDictionary[js.Any], speculativeExecutions: scala.Double, consistency: consistencies) = this()
-    /* CompleteClass */
-    override var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
-    /* CompleteClass */
-    override var info: cassandraDashDriverLib.Anon_AchievedConsistency = js.native
-    /* CompleteClass */
-    @JSName(org.scalablytyped.runtime.Symbol.iterator)
-    override var iterator: js.Function0[stdLib.Iterator[Row]] = js.native
-    /* CompleteClass */
-    override var pageState: java.lang.String = js.native
-    /* CompleteClass */
-    override var rowLength: scala.Double = js.native
-    /* CompleteClass */
-    override var rows: js.Array[Row] = js.native
-    /* CompleteClass */
-    override def first(): Row | scala.Null = js.native
-    /* CompleteClass */
-    override def getColumns(): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
-    /* CompleteClass */
-    override def getPageState(): java.lang.String = js.native
-    /* CompleteClass */
-    override def nextPage(): scala.Unit = js.native
-    /* CompleteClass */
-    override def wasApplied(): scala.Boolean = js.native
   }
   
   @js.native
@@ -501,9 +479,6 @@ object typesNs extends js.Object {
   @js.native
   sealed trait distance extends js.Object
   
-  trait responseErrorCodes
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double]
-  
   trait unset extends js.Object {
     var unset: scala.Boolean
   }
@@ -514,16 +489,16 @@ object typesNs extends js.Object {
   var Integer: IntegerStatic = js.native
   var LocalDate: LocalDateStatic = js.native
   var LocalTime: LocalTimeStatic = js.native
-  var Long: longLib.longMod.namespaced = js.native
+  var Long: longLib.longMod.^ = js.native
   var ResultSet: ResultSetStatic = js.native
   // let ResultStream: ResultStreamStatic;
   var Row: RowStatic = js.native
   var TimeUuid: TimeUuidStatic = js.native
   var Tuple: TupleStatic = js.native
   var Uuid: UuidStatic = js.native
-  def generateTimestamp(): longLib.longMod.namespaced = js.native
-  def generateTimestamp(date: stdLib.Date): longLib.longMod.namespaced = js.native
-  def generateTimestamp(date: stdLib.Date, microseconds: scala.Double): longLib.longMod.namespaced = js.native
+  def generateTimestamp(): longLib.longMod.^ = js.native
+  def generateTimestamp(date: stdLib.Date): longLib.longMod.^ = js.native
+  def generateTimestamp(date: stdLib.Date, microseconds: scala.Double): longLib.longMod.^ = js.native
   def timeuuid(): java.lang.String = js.native
   def timeuuid(options: cassandraDashDriverLib.Anon_Clockseq): java.lang.String = js.native
   def timeuuid(options: cassandraDashDriverLib.Anon_Clockseq, buffer: nodeLib.Buffer): java.lang.String = js.native
@@ -750,5 +725,6 @@ object typesNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance with scala.Double] = js.native
   }
   
+  type responseErrorCodes = org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[T, U](config: restLib.interceptorMod.interceptorNs.Config[T, U]): restLib.restMod.restNs.Interceptor[T] = js.native
+  def apply[T, U](config: Config[T, U]): restLib.restMod.Interceptor[T] = js.native
 }
 

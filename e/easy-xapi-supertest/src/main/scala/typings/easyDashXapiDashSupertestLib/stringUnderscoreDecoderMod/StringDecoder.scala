@@ -15,3 +15,8 @@ class StringDecoder protected () extends NodeStringDecoder {
   override def write(buffer: easyDashXapiDashSupertestLib.Buffer): java.lang.String = js.native
 }
 
+@JSImport("string_decoder", "StringDecoder")
+@js.native
+object StringDecoder
+  extends org.scalablytyped.runtime.Instantiable1[/* encoding */ java.lang.String, NodeStringDecoder]
+

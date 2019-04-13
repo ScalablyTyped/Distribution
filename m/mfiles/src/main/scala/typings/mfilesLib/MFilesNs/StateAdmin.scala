@@ -63,3 +63,8 @@ class StateAdmin ()
   override def Clone(): mfilesLib.IStateAdmin = js.native
 }
 
+@JSGlobal("MFiles.StateAdmin")
+@js.native
+object StateAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStateAdmin]
+

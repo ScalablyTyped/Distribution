@@ -19,3 +19,8 @@ class VaultDataSetOperations ()
   override def StartDataSetExport(ID: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultDataSetOperations")
+@js.native
+object VaultDataSetOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultDataSetOperations]
+

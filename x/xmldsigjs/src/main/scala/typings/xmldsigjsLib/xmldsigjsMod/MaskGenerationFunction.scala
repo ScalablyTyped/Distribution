@@ -8,5 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("xmldsigjs", "MaskGenerationFunction")
 @js.native
 class MaskGenerationFunction ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.MaskGenerationFunction
+  extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
+  var Algorithm: java.lang.String = js.native
+  var DigestMethod: xmldsigjsLib.xmldsigjsMod.DigestMethod = js.native
+}
 

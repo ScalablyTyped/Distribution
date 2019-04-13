@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class AlexaForBusiness ()
-  extends awsDashSdkLib.clientsAlexaforbusinessMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAlexaforbusinessMod.^ {
+  def this(options: awsDashSdkLib.clientsAlexaforbusinessMod.ClientConfiguration) = this()
 }
 

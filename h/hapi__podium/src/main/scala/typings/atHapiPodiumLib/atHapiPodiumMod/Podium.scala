@@ -7,20 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Podium
-  extends atHapiPodiumLib.atHapiPodiumMod.PodiumNs._Events
+  extends _Events
      with /**
   * Creates a new podium emitter
   * @param events  if present, the value is passed to podium.registerEvent().
   */
 org.scalablytyped.runtime.Instantiable0[Podium]
-     with org.scalablytyped.runtime.Instantiable1[
-      (/* events */ js.Array[atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Events]) | (/* events */ atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Events), 
-      Podium
-    ] {
-  def addListener(
-    criteria: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Criteria,
-    listener: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Listener
-  ): scala.Unit = js.native
+     with org.scalablytyped.runtime.Instantiable1[(/* events */ js.Array[Events]) | (/* events */ Events), Podium] {
+  def addListener(criteria: Criteria, listener: Listener): scala.Unit = js.native
   /**
     * podium.addListener(criteria, listener)
     * Same as podium.on()
@@ -28,7 +22,7 @@ org.scalablytyped.runtime.Instantiable0[Podium]
     * @param listener  the handler method set to receive event updates. The function signature depends on the block, spread, and tags options.
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumoncriteria-listener}
     */
-  def addListener(criteria: java.lang.String, listener: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Listener): scala.Unit = js.native
+  def addListener(criteria: java.lang.String, listener: Listener): scala.Unit = js.native
   def emit(criteria: atHapiPodiumLib.Anon_Channel, data: js.Any): scala.Unit = js.native
   def emit(criteria: atHapiPodiumLib.Anon_Channel, data: js.Any, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
@@ -49,10 +43,7 @@ org.scalablytyped.runtime.Instantiable0[Podium]
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumhaslistenersname}
     */
   def hasListeners(name: java.lang.String): scala.Boolean = js.native
-  def on(
-    criteria: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Criteria,
-    listener: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Listener
-  ): scala.Unit = js.native
+  def on(criteria: Criteria, listener: Listener): scala.Unit = js.native
   /**
     * podium.on(criteria, listener)
     * Subscribe a handler to an event
@@ -60,11 +51,8 @@ org.scalablytyped.runtime.Instantiable0[Podium]
     * @param listener  the handler method set to receive event updates. The function signature depends on the block, spread, and tags options.
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumoncriteria-listener}
     */
-  def on(criteria: java.lang.String, listener: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Listener): scala.Unit = js.native
-  def once(
-    criteria: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Criteria,
-    listener: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Listener
-  ): scala.Unit = js.native
+  def on(criteria: java.lang.String, listener: Listener): scala.Unit = js.native
+  def once(criteria: Criteria, listener: Listener): scala.Unit = js.native
   /**
     * podium.once(criteria, listener)
     * Same as podium.on() with the count option set to 1.
@@ -72,14 +60,14 @@ org.scalablytyped.runtime.Instantiable0[Podium]
     * @param listener  the handler method set to receive event updates. The function signature depends on the block, spread, and tags options.
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumoncriteria-listener}
     */
-  def once(criteria: java.lang.String, listener: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Listener): scala.Unit = js.native
-  def registerEvent(events: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Events): scala.Unit = js.native
+  def once(criteria: java.lang.String, listener: Listener): scala.Unit = js.native
+  def registerEvent(events: Events): scala.Unit = js.native
   /**
     * podium.registerEvent(events)
     * Register the specified events and their optional configuration. Events must be registered before they can be emitted or subscribed to. This is done to detect event name mispelling and invalid event activities.
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumregistereventevents}
     */
-  def registerEvent(events: js.Array[atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Events]): scala.Unit = js.native
+  def registerEvent(events: js.Array[Events]): scala.Unit = js.native
   def registerPodium(podiums: Podium): scala.Unit = js.native
   /**
     * podium.registerPodium(podiums)
@@ -104,6 +92,6 @@ org.scalablytyped.runtime.Instantiable0[Podium]
     * Returns a reference to the current emitter.
     * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumremovelistenername-listener}
     */
-  def removeListener(name: java.lang.String, listener: atHapiPodiumLib.atHapiPodiumMod.PodiumNs.Listener): Podium = js.native
+  def removeListener(name: java.lang.String, listener: Listener): Podium = js.native
 }
 

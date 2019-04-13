@@ -7,17 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fsevents", "FSEvents")
 @js.native
-class FSEvents protected ()
-  extends fseventsLib.fseventsMod.fseventsNs.FSEvents {
+class FSEvents protected () extends js.Object {
   def this(path: java.lang.String, handler: js.Function3[
       /* path */ java.lang.String, 
       /* flags */ scala.Double, 
       /* id */ scala.Double, 
       scala.Unit
     ]) = this()
-  /* CompleteClass */
-  override def start(): this.type = js.native
-  /* CompleteClass */
-  override def stop(): this.type = js.native
+  def start(): this.type = js.native
+  def stop(): this.type = js.native
 }
 

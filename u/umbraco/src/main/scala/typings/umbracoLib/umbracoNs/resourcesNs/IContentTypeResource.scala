@@ -22,7 +22,7 @@ trait IContentTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllPropertyTypeAliases(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getAllPropertyTypeAliases(): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.contentTypeResource#getAllowedTypes
@@ -42,14 +42,14 @@ trait IContentTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllowedTypes(contentId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getAllowedTypes(contentId: scala.Double): angularLib.angularMod.IPromise[IResourcePromise]
 }
 
 object IContentTypeResource {
   @scala.inline
   def apply(
-    getAllPropertyTypeAliases: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getAllowedTypes: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    getAllPropertyTypeAliases: () => angularLib.angularMod.IPromise[IResourcePromise],
+    getAllowedTypes: scala.Double => angularLib.angularMod.IPromise[IResourcePromise]
   ): IContentTypeResource = {
     val __obj = js.Dynamic.literal(getAllPropertyTypeAliases = js.Any.fromFunction0(getAllPropertyTypeAliases), getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
   

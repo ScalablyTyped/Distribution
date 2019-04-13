@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EllipsoidHeight extends js.Object {
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var height: scala.Double
   var heightmap: stdLib.Int8Array | stdLib.Uint8Array | stdLib.Int16Array | stdLib.Uint16Array | stdLib.Float32Array | stdLib.Float64Array
   var isGeographic: js.UndefOr[scala.Boolean] = js.undefined
-  var nativeRectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
-  var relativetoCenter: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian3] = js.undefined
+  var nativeRectangle: cesiumLib.cesiumMod.Rectangle
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
+  var relativetoCenter: js.UndefOr[cesiumLib.cesiumMod.Cartesian3] = js.undefined
   var skirtHeight: scala.Double
   var structure: js.UndefOr[js.Any] = js.undefined
   var structureelementMultiplier: js.UndefOr[scala.Double] = js.undefined
@@ -30,14 +30,14 @@ object Anon_EllipsoidHeight {
   def apply(
     height: scala.Double,
     heightmap: stdLib.Int8Array | stdLib.Uint8Array | stdLib.Int16Array | stdLib.Uint16Array | stdLib.Float32Array | stdLib.Float64Array,
-    nativeRectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle,
+    nativeRectangle: cesiumLib.cesiumMod.Rectangle,
     skirtHeight: scala.Double,
     vertices: js.Array[_] | stdLib.Float32Array,
     width: scala.Double,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     isGeographic: js.UndefOr[scala.Boolean] = js.undefined,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null,
-    relativetoCenter: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null,
+    rectangle: cesiumLib.cesiumMod.Rectangle = null,
+    relativetoCenter: cesiumLib.cesiumMod.Cartesian3 = null,
     structure: js.Any = null,
     structureelementMultiplier: scala.Int | scala.Double = null,
     structureelementsPerHeight: scala.Int | scala.Double = null,

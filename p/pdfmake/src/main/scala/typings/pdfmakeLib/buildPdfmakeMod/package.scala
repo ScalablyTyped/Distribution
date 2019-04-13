@@ -22,5 +22,6 @@ package object buildPdfmakeMod {
   ]
   type Margins = scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
   type TDocumentHeaderFooterFunction = js.Function2[/* currentPage */ scala.Double, /* pageCount */ scala.Double, js.Any]
+  type TFontFamily = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type TableRowFunction = js.Function1[/* row */ scala.Double, scala.Double]
 }

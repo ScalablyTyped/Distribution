@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 object cwiseDashCompilerLibStrings {
   @js.native
   sealed trait array
-    extends cwiseDashCompilerLib.cwiseDashCompilerMod.cwiseUnderscoreCompilerNs.ArgType
+    extends cwiseDashCompilerLib.cwiseDashCompilerMod.ArgType
   
   @js.native
   sealed trait index
-    extends cwiseDashCompilerLib.cwiseDashCompilerMod.cwiseUnderscoreCompilerNs.ArgType
+    extends cwiseDashCompilerLib.cwiseDashCompilerMod.ArgType
   
   @js.native
   sealed trait offset
-    extends cwiseDashCompilerLib.cwiseDashCompilerMod.cwiseUnderscoreCompilerNs.ArgType
+    extends cwiseDashCompilerLib.cwiseDashCompilerMod.ArgType
   
   @js.native
   sealed trait scalar
-    extends cwiseDashCompilerLib.cwiseDashCompilerMod.cwiseUnderscoreCompilerNs.ArgType
+    extends cwiseDashCompilerLib.cwiseDashCompilerMod.ArgType
   
   @js.native
   sealed trait shape
-    extends cwiseDashCompilerLib.cwiseDashCompilerMod.cwiseUnderscoreCompilerNs.ArgType
+    extends cwiseDashCompilerLib.cwiseDashCompilerMod.ArgType
   
   @scala.inline
   def array: array = "array".asInstanceOf[array]

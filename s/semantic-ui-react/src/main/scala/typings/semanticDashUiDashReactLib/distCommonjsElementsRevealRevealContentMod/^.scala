@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/elements/Reveal/RevealContent", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[RevealContentProps] = js.native
+  val default: reactLib.reactMod.StatelessComponent[RevealContentProps] = js.native
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Organization extends OrganizationSummary {
   var blog: java.lang.String = js.native
   var company: java.lang.String = js.native
-  var createdAt: momentLib.momentMod.momentNs.Moment = js.native
+  var createdAt: momentLib.momentMod.Moment = js.native
   var email: java.lang.String = js.native
   var followers: scala.Double = js.native
   var following: scala.Double = js.native
@@ -20,6 +20,6 @@ trait Organization extends OrganizationSummary {
   var name: java.lang.String = js.native
   var publicGists: scala.Double = js.native
   var publicRepos: scala.Double = js.native
-  var updatedAt: momentLib.momentMod.momentNs.Moment = js.native
+  var updatedAt: momentLib.momentMod.Moment = js.native
 }
 

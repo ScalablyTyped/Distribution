@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Amplify ()
   extends awsDashSdkLib.clientsAllMod.Amplify {
-  def this(options: awsDashSdkLib.clientsAmplifyMod.AmplifyNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAmplifyMod.ClientConfiguration) = this()
 }
 

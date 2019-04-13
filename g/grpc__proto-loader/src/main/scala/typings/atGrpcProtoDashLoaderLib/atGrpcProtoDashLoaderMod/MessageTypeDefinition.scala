@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MessageTypeDefinition
   extends ProtobufTypeDefinition
-     with AnyDefinition {
+     with _AnyDefinition {
   @JSName("format")
   var format_MessageTypeDefinition: atGrpcProtoDashLoaderLib.atGrpcProtoDashLoaderLibStrings.`Protocol Buffer 3 DescriptorProto`
 }

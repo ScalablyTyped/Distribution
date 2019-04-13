@@ -9,7 +9,7 @@ trait IToastOptions extends js.Object {
   var autoWrap: js.UndefOr[scala.Boolean] = js.undefined
   var bindToController: js.UndefOr[scala.Boolean] = js.undefined
   var controller: js.UndefOr[
-    java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor]
+    java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor]
   ] = js.undefined
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined
    // default: false
@@ -22,7 +22,7 @@ trait IToastOptions extends js.Object {
   var preserveScope: js.UndefOr[scala.Boolean] = js.undefined
    // default: false
   var resolve: js.UndefOr[ResolveObject] = js.undefined
-  var scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
+  var scope: js.UndefOr[angularLib.angularMod.IScope] = js.undefined
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
    // any combination of 'bottom'/'left'/'top'/'right'/'fit'; default: 'bottom left'
@@ -34,7 +34,7 @@ object IToastOptions {
   def apply(
     autoWrap: js.UndefOr[scala.Boolean] = js.undefined,
     bindToController: js.UndefOr[scala.Boolean] = js.undefined,
-    controller: java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor] = null,
+    controller: java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor] = null,
     controllerAs: java.lang.String = null,
     hideDelay: scala.Double | angularDashMaterialLib.angularDashMaterialLibNumbers.`false` = null,
     locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
@@ -42,7 +42,7 @@ object IToastOptions {
     position: java.lang.String = null,
     preserveScope: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: ResolveObject = null,
-    scope: angularLib.angularMod.angularNs.IScope = null,
+    scope: angularLib.angularMod.IScope = null,
     template: java.lang.String = null,
     templateUrl: java.lang.String = null,
     toastClass: java.lang.String = null

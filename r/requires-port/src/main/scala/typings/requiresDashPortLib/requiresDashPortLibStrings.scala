@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 object requiresDashPortLibStrings {
   @js.native
   sealed trait file
-    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
+    extends requiresDashPortLib.requiresDashPortMod.Protocol
   
   @js.native
   sealed trait ftp
-    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
+    extends requiresDashPortLib.requiresDashPortMod.Protocol
   
   @js.native
   sealed trait gopher
-    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
+    extends requiresDashPortLib.requiresDashPortMod.Protocol
   
   @js.native
   sealed trait http
-    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
+    extends requiresDashPortLib.requiresDashPortMod.Protocol
   
   @js.native
   sealed trait https
-    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
+    extends requiresDashPortLib.requiresDashPortMod.Protocol
   
   @js.native
   sealed trait ws
-    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
+    extends requiresDashPortLib.requiresDashPortMod.Protocol
   
   @js.native
   sealed trait wss
-    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
+    extends requiresDashPortLib.requiresDashPortMod.Protocol
   
   @scala.inline
   def file: file = "file".asInstanceOf[file]

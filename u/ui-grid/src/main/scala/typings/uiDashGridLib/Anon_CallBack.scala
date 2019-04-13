@@ -12,8 +12,8 @@ trait Anon_CallBack[TEntity] extends js.Object {
     * @param {canvasHeightChangedHandler} handler Callback
     */
   def canvasHeightChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.canvasHeightChangedHandler
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.canvasHeightChangedHandler
   ): scala.Unit
   /**
     * The visibility of a column has changed, the column itself is passed out as a parameter of the event
@@ -23,8 +23,8 @@ trait Anon_CallBack[TEntity] extends js.Object {
     *        The function passes back the GridCol that has changed
     */
   def columnVisibilityChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    callBack: uiDashGridLib.uiDashGridMod.uiGridNs.columnVisibilityChangedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    callBack: uiDashGridLib.uiDashGridMod.columnVisibilityChangedHandler[TEntity]
   ): scala.Unit
   /**
     * is raised after the filter is changed.
@@ -34,8 +34,8 @@ trait Anon_CallBack[TEntity] extends js.Object {
     * @param {filterChangedHandler} handler Callback
     */
   def filterChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.filterChangedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.filterChangedHandler[TEntity]
   ): scala.Unit
   /**
     * is raised after the cache of visible rows is changed
@@ -43,8 +43,8 @@ trait Anon_CallBack[TEntity] extends js.Object {
     * @param {rowsRenderedHandler} handler callback
     */
   def rowsRendered(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.rowsRenderedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.rowsRenderedHandler[TEntity]
   ): scala.Unit
   /**
     * is raised after the rows that are visible change.
@@ -56,49 +56,43 @@ trait Anon_CallBack[TEntity] extends js.Object {
     * @param {rowsVisibleChangedHandler} handler callback
     */
   def rowsVisibleChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.rowsVisibleChangedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.rowsVisibleChangedHandler[TEntity]
   ): scala.Unit
   /**
     * is raised when scroll begins. Is throttled, so won't be raised too frequently
     * @param {ng.IScope} scope Grid scope
     * @param {scrollBeginHandler} handler callback
     */
-  def scrollBegin(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.scrollBeginHandler
-  ): scala.Unit
+  def scrollBegin(scope: angularLib.angularMod.IScope, handler: uiDashGridLib.uiDashGridMod.scrollBeginHandler): scala.Unit
   /**
     * is raised when scroll has finished. Is throttled, so won't be raised too frequently
     * @param {ng.IScope} scope Grid scope
     * @param {scrollEndHandler} handler callback
     */
-  def scrollEnd(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.scrollEndHandler
-  ): scala.Unit
+  def scrollEnd(scope: angularLib.angularMod.IScope, handler: uiDashGridLib.uiDashGridMod.scrollEndHandler): scala.Unit
   /**
     * is raised after the sort criteria on one or more columns have changed
     * @param {ng.IScope} scope Grid scope
     * @param {sortChangedHandler} handler callback
     */
   def sortChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.sortChangedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.sortChangedHandler[TEntity]
   ): scala.Unit
 }
 
 object Anon_CallBack {
   @scala.inline
   def apply[TEntity](
-    canvasHeightChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.canvasHeightChangedHandler) => scala.Unit,
-    columnVisibilityChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.columnVisibilityChangedHandler[TEntity]) => scala.Unit,
-    filterChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.filterChangedHandler[TEntity]) => scala.Unit,
-    rowsRendered: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.rowsRenderedHandler[TEntity]) => scala.Unit,
-    rowsVisibleChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.rowsVisibleChangedHandler[TEntity]) => scala.Unit,
-    scrollBegin: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.scrollBeginHandler) => scala.Unit,
-    scrollEnd: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.scrollEndHandler) => scala.Unit,
-    sortChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.sortChangedHandler[TEntity]) => scala.Unit
+    canvasHeightChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.canvasHeightChangedHandler) => scala.Unit,
+    columnVisibilityChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.columnVisibilityChangedHandler[TEntity]) => scala.Unit,
+    filterChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.filterChangedHandler[TEntity]) => scala.Unit,
+    rowsRendered: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.rowsRenderedHandler[TEntity]) => scala.Unit,
+    rowsVisibleChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.rowsVisibleChangedHandler[TEntity]) => scala.Unit,
+    scrollBegin: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.scrollBeginHandler) => scala.Unit,
+    scrollEnd: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.scrollEndHandler) => scala.Unit,
+    sortChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.sortChangedHandler[TEntity]) => scala.Unit
   ): Anon_CallBack[TEntity] = {
     val __obj = js.Dynamic.literal(canvasHeightChanged = js.Any.fromFunction2(canvasHeightChanged), columnVisibilityChanged = js.Any.fromFunction2(columnVisibilityChanged), filterChanged = js.Any.fromFunction2(filterChanged), rowsRendered = js.Any.fromFunction2(rowsRendered), rowsVisibleChanged = js.Any.fromFunction2(rowsVisibleChanged), scrollBegin = js.Any.fromFunction2(scrollBegin), scrollEnd = js.Any.fromFunction2(scrollEnd), sortChanged = js.Any.fromFunction2(sortChanged))
   

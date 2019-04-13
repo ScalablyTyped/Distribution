@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait LocationProps extends js.Object {
   @JSName("children")
   var children_Original: LocationProviderRenderFn = js.native
-  def children(context: LocationContext): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def children(context: LocationContext): reactLib.reactMod.ReactNode = js.native
 }
 

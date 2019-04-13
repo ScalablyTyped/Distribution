@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object globDashStreamLibStrings {
   @js.native
   sealed trait base
-    extends globDashStreamLib.globDashStreamMod.GlobStreamNs.UniqueByStringPredicate
+    extends globDashStreamLib.globDashStreamMod.UniqueByStringPredicate
   
   @js.native
   sealed trait cwd
-    extends globDashStreamLib.globDashStreamMod.GlobStreamNs.UniqueByStringPredicate
+    extends globDashStreamLib.globDashStreamMod.UniqueByStringPredicate
   
   @js.native
   sealed trait path
-    extends globDashStreamLib.globDashStreamMod.GlobStreamNs.UniqueByStringPredicate
+    extends globDashStreamLib.globDashStreamMod.UniqueByStringPredicate
   
   @scala.inline
   def base: base = "base".asInstanceOf[base]

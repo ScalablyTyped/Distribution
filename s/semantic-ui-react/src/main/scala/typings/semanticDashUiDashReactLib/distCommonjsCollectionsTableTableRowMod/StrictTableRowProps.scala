@@ -19,7 +19,7 @@ trait StrictTableRowProps extends js.Object {
     ]
   ] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** A row can be disabled. */
@@ -49,7 +49,7 @@ object StrictTableRowProps {
     cells: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[
       semanticDashUiDashReactLib.distCommonjsCollectionsTableTableCellMod.TableCellProps
     ] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,

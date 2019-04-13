@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ɵDomRendererFactory2 protected ()
   extends atAngularPlatformDashBrowserLib.srcPlatformDashBrowserMod.ɵDomRendererFactory2 {
-  def this(eventManager: atAngularPlatformDashBrowserLib.srcDomEventsEventUnderscoreManagerMod.EventManager, sharedStylesHost: atAngularPlatformDashBrowserLib.srcDomSharedUnderscoreStylesUnderscoreHostMod.DomSharedStylesHost) = this()
+  def this(eventManager: atAngularPlatformDashBrowserLib.srcDomEventsEventUnderscoreManagerMod.EventManager, sharedStylesHost: atAngularPlatformDashBrowserLib.srcDomSharedUnderscoreStylesUnderscoreHostMod.DomSharedStylesHost, appId: java.lang.String) = this()
 }
 

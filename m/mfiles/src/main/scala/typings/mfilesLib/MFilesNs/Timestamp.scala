@@ -35,3 +35,8 @@ class Timestamp ()
   override def UtcToLocalTime(): mfilesLib.ITimestamp = js.native
 }
 
+@JSGlobal("MFiles.Timestamp")
+@js.native
+object Timestamp
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITimestamp]
+

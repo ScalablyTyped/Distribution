@@ -16,9 +16,9 @@ class PrintDisabledTwoTone protected ()
 @JSImport("@material-ui/icons", "PrintDisabledTwoTone")
 @js.native
 class PrintDisabledTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

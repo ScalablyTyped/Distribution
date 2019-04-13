@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SnackbarProps
-  extends reactLib.reactMod.ReactNs.Props[materialDashUiLib.underscoreUnderscoreMaterialUINs.Snackbar] {
+  extends reactLib.reactMod.Props[materialDashUiLib.underscoreUnderscoreMaterialUINs.Snackbar] {
   var action: js.UndefOr[java.lang.String] = js.undefined
   var autoHideDuration: js.UndefOr[scala.Double] = js.undefined
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var message: java.lang.String | reactLib.reactMod.Global.JSXNs.Element
-  var onActionClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
+  var onActionClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   /** @deprecated Use the open property to control the component instead */
   var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** @deprecated Use the open property to control the component instead */
@@ -33,15 +33,15 @@ object SnackbarProps {
     open: scala.Boolean,
     action: java.lang.String = null,
     autoHideDuration: scala.Int | scala.Double = null,
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    onActionClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    key: reactLib.reactMod.Key = null,
+    onActionClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     onDismiss: () => scala.Unit = null,
     onShow: () => scala.Unit = null,
     openOnMount: js.UndefOr[scala.Boolean] = js.undefined,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[materialDashUiLib.underscoreUnderscoreMaterialUINs.Snackbar] = null
+    ref: reactLib.reactMod.LegacyRef[materialDashUiLib.underscoreUnderscoreMaterialUINs.Snackbar] = null
   ): SnackbarProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction1(onRequestClose), open = open)
     if (action != null) __obj.updateDynamic("action")(action)

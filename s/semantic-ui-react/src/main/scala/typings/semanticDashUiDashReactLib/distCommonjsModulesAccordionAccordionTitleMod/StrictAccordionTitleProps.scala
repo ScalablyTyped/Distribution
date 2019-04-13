@@ -11,7 +11,7 @@ trait StrictAccordionTitleProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -30,7 +30,7 @@ trait StrictAccordionTitleProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ AccordionTitleProps, 
       scala.Unit
     ]
@@ -42,12 +42,12 @@ object StrictAccordionTitleProps {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     index: scala.Double | java.lang.String = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ AccordionTitleProps) => scala.Unit = null
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ AccordionTitleProps) => scala.Unit = null
   ): StrictAccordionTitleProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

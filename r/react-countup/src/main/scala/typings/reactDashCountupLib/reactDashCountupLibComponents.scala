@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashCountupLibComponents {
   @scala.inline
-  def ReactDashCountup: reactLib.reactMod.ReactNs.ComponentType[reactDashCountupLib.reactDashCountupMod.ReactCountUpNs.Props] = js.constructorOf[reactDashCountupLib.reactDashCountupMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashCountupLib.reactDashCountupMod.ReactCountUpNs.Props]]
+  def ReactDashCountup: reactLib.reactMod.ComponentType[reactDashCountupLib.reactDashCountupMod.Props] = js.constructorOf[reactDashCountupLib.reactDashCountupMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCountupLib.reactDashCountupMod.Props]]
   @scala.inline
-  def Props: reactDashCountupLib.reactDashCountupMod.ReactCountUpNs.Props.type = reactDashCountupLib.reactDashCountupMod.ReactCountUpNs.Props
-  type Props = reactDashCountupLib.reactDashCountupMod.ReactCountUpNs.Props
+  def Props: reactDashCountupLib.reactDashCountupMod.Props.type = reactDashCountupLib.reactDashCountupMod.Props
+  type Props = reactDashCountupLib.reactDashCountupMod.Props
 }
 

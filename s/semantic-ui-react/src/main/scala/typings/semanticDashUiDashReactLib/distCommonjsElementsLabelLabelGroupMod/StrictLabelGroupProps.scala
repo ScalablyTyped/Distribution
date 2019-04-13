@@ -9,7 +9,7 @@ trait StrictLabelGroupProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Labels can share shapes. */
   var circular: js.UndefOr[scala.Boolean] = js.undefined
   /** Additional classes. */
@@ -28,7 +28,7 @@ object StrictLabelGroupProps {
   @scala.inline
   def apply(
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     circular: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,

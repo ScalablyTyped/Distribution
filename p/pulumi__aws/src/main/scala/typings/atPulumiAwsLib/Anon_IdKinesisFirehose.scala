@@ -11,7 +11,7 @@ trait Anon_IdKinesisFirehose extends js.Object {
   var kinesisStream: js.UndefOr[Anon_ResourceArn] = js.undefined
   var namePrefix: java.lang.String
   var parallelism: js.UndefOr[Anon_Count] = js.undefined
-  var processingConfiguration: js.UndefOr[Anon_LambdaAnonResourceArn] = js.undefined
+  var processingConfiguration: js.UndefOr[Anon_Lambda] = js.undefined
   var schema: Anon_RecordColumns
   var startingPositionConfigurations: js.Array[Anon_StartingPosition]
   var streamNames: js.Array[java.lang.String]
@@ -28,7 +28,7 @@ object Anon_IdKinesisFirehose {
     kinesisFirehose: Anon_ResourceArn = null,
     kinesisStream: Anon_ResourceArn = null,
     parallelism: Anon_Count = null,
-    processingConfiguration: Anon_LambdaAnonResourceArn = null
+    processingConfiguration: Anon_Lambda = null
   ): Anon_IdKinesisFirehose = {
     val __obj = js.Dynamic.literal(id = id, namePrefix = namePrefix, schema = schema, startingPositionConfigurations = startingPositionConfigurations, streamNames = streamNames)
     if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose)

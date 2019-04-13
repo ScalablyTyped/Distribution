@@ -18,7 +18,7 @@ object TypeaheadSingleInputWithHocProps {
     `aria-owns`: java.lang.String,
     autoComplete: java.lang.String,
     disabled: scala.Boolean,
-    inputRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement],
+    inputRef: reactLib.reactMod.LegacyRef[stdLib.HTMLInputElement],
     onBlur: stdLib.Event => scala.Unit,
     onChange: js.Array[T] => scala.Unit,
     onClick: stdLib.Event => scala.Unit,

@@ -14,7 +14,7 @@ trait NavigationProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Array of objects similar to actions but that will be rendered as <Link/> component definition.
     */
@@ -36,9 +36,9 @@ object NavigationProps {
   @scala.inline
   def apply(
     actions: js.Array[_] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -62,7 +62,7 @@ object NavigationProps {
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
     routes: js.Array[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: NavigationTheme = null,
     `type`: reactDashToolboxLib.reactDashToolboxLibStrings.vertical | reactDashToolboxLib.reactDashToolboxLibStrings.horizontal = null
   ): NavigationProps = {

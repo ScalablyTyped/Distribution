@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/render3/view/util", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CONTEXT_NAME: /* ctx */ java.lang.String = js.native
-  val IMPLICIT_REFERENCE: /* $implicit */ java.lang.String = js.native
-  val NON_BINDABLE_ATTR: /* ngNonBindable */ java.lang.String = js.native
-  val REFERENCE_PREFIX: /* _r */ java.lang.String = js.native
-  val RENDER_FLAGS: /* rf */ java.lang.String = js.native
-  val TEMPORARY_NAME: /* _t */ java.lang.String = js.native
+  val CONTEXT_NAME: atAngularCompilerLib.atAngularCompilerLibStrings.ctx = js.native
+  val IMPLICIT_REFERENCE: atAngularCompilerLib.atAngularCompilerLibStrings.DOLLARimplicit = js.native
+  val NON_BINDABLE_ATTR: atAngularCompilerLib.atAngularCompilerLibStrings.ngNonBindable = js.native
+  val REFERENCE_PREFIX: atAngularCompilerLib.atAngularCompilerLibStrings._r = js.native
+  val RENDER_FLAGS: atAngularCompilerLib.atAngularCompilerLibStrings.rf = js.native
+  val TEMPORARY_NAME: atAngularCompilerLib.atAngularCompilerLibStrings._t = js.native
   def asLiteral(value: js.Any): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def conditionallyCreateMapObjectLiteral(keys: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null = js.native
   def conditionallyCreateMapObjectLiteral(

@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class FolderListingColumns ()
   extends mfilesLib.IFolderListingColumns
 
+@JSGlobal("MFiles.FolderListingColumns")
+@js.native
+object FolderListingColumns
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderListingColumns]
+

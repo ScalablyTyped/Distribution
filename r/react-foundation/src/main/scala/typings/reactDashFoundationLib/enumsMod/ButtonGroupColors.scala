@@ -14,3 +14,13 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonGroupColors extends js.Object
 
+@JSImport("react-foundation/enums", "ButtonGroupColors")
+@js.native
+object ButtonGroupColors extends js.Object {
+  var ALERT: reactDashFoundationLib.enumsMod.ButtonColors = js.native
+  var PRIMARY: reactDashFoundationLib.enumsMod.ButtonColors = js.native
+  var SECONDARY: reactDashFoundationLib.enumsMod.ButtonColors = js.native
+  var SUCCESS: reactDashFoundationLib.enumsMod.ButtonColors = js.native
+  var WARNING: reactDashFoundationLib.enumsMod.ButtonColors = js.native
+}
+

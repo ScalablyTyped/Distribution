@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md", "Snackbar")
 @js.native
 class Snackbar protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps) = this()

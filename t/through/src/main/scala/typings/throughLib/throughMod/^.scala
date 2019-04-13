@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("through", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): throughLib.throughMod.throughNs.ThroughStream = js.native
-  def apply(write: js.Function1[/* data */ js.Any, scala.Unit]): throughLib.throughMod.throughNs.ThroughStream = js.native
-  def apply(write: js.Function1[/* data */ js.Any, scala.Unit], end: js.Function0[scala.Unit]): throughLib.throughMod.throughNs.ThroughStream = js.native
+  def apply(): ThroughStream = js.native
+  def apply(write: js.Function1[/* data */ js.Any, scala.Unit]): ThroughStream = js.native
+  def apply(write: js.Function1[/* data */ js.Any, scala.Unit], end: js.Function0[scala.Unit]): ThroughStream = js.native
   def apply(
     write: js.Function1[/* data */ js.Any, scala.Unit],
     end: js.Function0[scala.Unit],
     opts: throughLib.Anon_AutoDestroy
-  ): throughLib.throughMod.throughNs.ThroughStream = js.native
+  ): ThroughStream = js.native
 }
 

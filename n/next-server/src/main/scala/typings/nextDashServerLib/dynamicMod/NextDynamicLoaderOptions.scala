@@ -15,7 +15,7 @@ object NextDynamicLoaderOptions {
   def apply[P /* <: js.Object */](
     loadableGenerated: nextDashServerLib.Anon_Modules = null,
     loader: AsyncComponentLoader[P] = null,
-    loading: reactLib.reactMod.ReactNs.ComponentType[reactDashLoadableLib.LoadableExportNs.LoadingComponentProps] | js.Function0[scala.Null] = null,
+    loading: reactLib.reactMod.ComponentType[reactDashLoadableLib.LoadableExportNs.LoadingComponentProps] | js.Function0[scala.Null] = null,
     ssr: js.UndefOr[scala.Boolean] = js.undefined
   ): NextDynamicLoaderOptions[P] = {
     val __obj = js.Dynamic.literal()

@@ -11,7 +11,7 @@ trait KarmaCoverageReporter
   var dir: js.UndefOr[java.lang.String] = js.undefined
   var includeAllSources: js.UndefOr[scala.Boolean] = js.undefined
   var instrumenter: js.UndefOr[js.Any] = js.undefined
-  var sourceStore: js.UndefOr[istanbulLib.istanbulMod.istanbulNs.Store] = js.undefined
+  var sourceStore: js.UndefOr[istanbulLib.istanbulMod.Store] = js.undefined
   var subdir: js.UndefOr[
     java.lang.String | (js.Function1[/* browser */ java.lang.String, java.lang.String])
   ] = js.undefined
@@ -27,7 +27,7 @@ object KarmaCoverageReporter {
     dir: java.lang.String = null,
     includeAllSources: js.UndefOr[scala.Boolean] = js.undefined,
     instrumenter: js.Any = null,
-    sourceStore: istanbulLib.istanbulMod.istanbulNs.Store = null,
+    sourceStore: istanbulLib.istanbulMod.Store = null,
     subdir: java.lang.String | (js.Function1[/* browser */ java.lang.String, java.lang.String]) = null,
     `type`: java.lang.String = null,
     watermarks: js.Any = null

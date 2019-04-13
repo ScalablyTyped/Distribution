@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-foundation/components/callout", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Callout: reactLib.reactMod.ReactNs.StatelessComponent[CalloutProps] = js.native
+  val Callout: reactLib.reactMod.StatelessComponent[CalloutProps] = js.native
 }
 

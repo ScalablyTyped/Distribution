@@ -11,12 +11,12 @@ object reactDashInstantsearchMod extends js.Object {
   def createConnector[TProvided, TExposed](
     connectorDesc: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectorDescription[TProvided, TExposed]
   ): (js.Function1[
-    /* stateless */ reactLib.reactMod.ReactNs.StatelessComponent[
+    /* stateless */ reactLib.reactMod.StatelessComponent[
       reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectorProvided[TProvided]
     ], 
-    reactLib.reactMod.ReactNs.ComponentClass[TExposed, reactLib.reactMod.ReactNs.ComponentState]
+    reactLib.reactMod.ComponentClass[TExposed, reactLib.reactMod.ComponentState]
   ]) with (js.Function1[
-    /* Composed */ reactLib.reactMod.ReactNs.ComponentType[
+    /* Composed */ reactLib.reactMod.ComponentType[
       stdLib.Partial[
         reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectorProvided[TProvided]
       ]

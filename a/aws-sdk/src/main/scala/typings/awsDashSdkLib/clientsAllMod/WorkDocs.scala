@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class WorkDocs ()
-  extends awsDashSdkLib.clientsWorkdocsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsWorkdocsMod.^ {
+  def this(options: awsDashSdkLib.clientsWorkdocsMod.ClientConfiguration) = this()
 }
 

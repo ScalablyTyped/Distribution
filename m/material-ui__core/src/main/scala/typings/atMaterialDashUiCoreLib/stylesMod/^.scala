@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/styles", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val MuiThemeProvider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.MuiThemeProviderProps] = js.native
+  val MuiThemeProvider: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.MuiThemeProviderProps] = js.native
   def createGenerateClassName(): jssLib.jssMod.GenerateClassName[_] = js.native
   def createGenerateClassName(options: atMaterialDashUiCoreLib.stylesCreateGenerateClassNameMod.GenerateClassNameOptions): jssLib.jssMod.GenerateClassName[_] = js.native
   def createMuiTheme(): atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = js.native

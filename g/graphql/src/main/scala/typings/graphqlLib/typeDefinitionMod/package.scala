@@ -12,6 +12,10 @@ package object typeDefinitionMod {
     - GraphQLUnionType
   */
   type GraphQLCompositeType = _GraphQLCompositeType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]])
+  type GraphQLEnumValueConfigMap = org.scalablytyped.runtime.StringDictionary[GraphQLEnumValueConfig]
+  type GraphQLFieldConfigArgumentMap = org.scalablytyped.runtime.StringDictionary[GraphQLArgumentConfig]
+  type GraphQLFieldConfigMap[TSource, TContext, TArgs] = org.scalablytyped.runtime.StringDictionary[GraphQLFieldConfig[TSource, TContext, TArgs]]
+  type GraphQLFieldMap[TSource, TContext, TArgs] = org.scalablytyped.runtime.StringDictionary[GraphQLField[TSource, TContext, TArgs]]
   type GraphQLFieldResolver[TSource, TContext, TArgs] = js.Function4[
     /* source */ TSource, 
     /* args */ TArgs, 
@@ -19,6 +23,8 @@ package object typeDefinitionMod {
     /* info */ GraphQLResolveInfo, 
     js.Any
   ]
+  type GraphQLInputFieldConfigMap = org.scalablytyped.runtime.StringDictionary[GraphQLInputFieldConfig]
+  type GraphQLInputFieldMap = org.scalablytyped.runtime.StringDictionary[GraphQLInputField]
   /* Rewritten from type alias, can be one of: 
     - GraphQLScalarType
     - GraphQLEnumType

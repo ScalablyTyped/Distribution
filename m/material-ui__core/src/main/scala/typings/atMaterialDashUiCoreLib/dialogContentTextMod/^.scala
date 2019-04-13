@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/DialogContentText", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[
+  val default: reactLib.reactMod.ComponentType[
     atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
   ] = js.native
 }

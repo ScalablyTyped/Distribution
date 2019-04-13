@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Label")
 @js.native
 class Label ()
-  extends reactDashBootstrapLib.libLabelMod.namespaced
+  extends reactDashBootstrapLib.libLabelMod.^
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class STS ()
-  extends awsDashSdkLib.clientsStsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsStsMod.STSNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsStsMod.^ {
+  def this(options: awsDashSdkLib.clientsStsMod.ClientConfiguration) = this()
 }
 

@@ -19,3 +19,8 @@ class AccessControlListComponentContainer ()
   override def HasKey(AccessControlListComponentKey: mfilesLib.IAccessControlListComponentKey): scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.AccessControlListComponentContainer")
+@js.native
+object AccessControlListComponentContainer
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlListComponentContainer]
+

@@ -16,5 +16,6 @@ package object select2Mod {
     /* repeated */ js.Any, 
     scala.Unit | select2Lib.select2LibNumbers.`false`
   ]
+  type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
   type Sub[O /* <: java.lang.String */, D /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: {[ K in O ]: std.Record<D, never> & std.Record<string, K>[K]}[O] */ js.Any
 }

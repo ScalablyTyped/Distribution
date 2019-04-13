@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SocketServer
   extends nodeLib.eventsMod.EventEmitter {
-  var clients: stdLib.Set[wsLib.wsMod.namespaced] = js.native
-  var options: simpleDashWebsocketLib.serverMod.SocketServerNs.Options = js.native
+  var clients: stdLib.Set[wsLib.wsMod.^] = js.native
+  var options: Options = js.native
   var path: java.lang.String = js.native
   // Events
   @JSName("addListener")
   def addListener_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
-    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, scala.Unit]
+    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_error(
@@ -41,7 +41,7 @@ trait SocketServer
   @JSName("emit")
   def emit_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
-    socket: simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced
+    socket: simpleDashWebsocketLib.simpleDashWebsocketMod.^
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_error(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.error, error: stdLib.Error): scala.Boolean = js.native
@@ -57,12 +57,12 @@ trait SocketServer
     request: nodeLib.httpMod.IncomingMessage,
     socket: nodeLib.netMod.Socket,
     upgradeHead: nodeLib.Buffer,
-    callback: js.Function1[/* client */ wsLib.wsMod.namespaced, scala.Unit]
+    callback: js.Function1[/* client */ wsLib.wsMod.^, scala.Unit]
   ): scala.Unit = js.native
   @JSName("listeners")
   def listeners_connection(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection): js.Array[
     js.Function2[
-      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, 
+      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, 
       /* request */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
@@ -83,7 +83,7 @@ trait SocketServer
   def off_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
     cb: js.Function2[
-      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, 
+      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, 
       /* request */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
@@ -111,7 +111,7 @@ trait SocketServer
   def on_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
     cb: js.Function2[
-      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, 
+      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, 
       /* request */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
@@ -139,7 +139,7 @@ trait SocketServer
   def once_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
     cb: js.Function2[
-      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, 
+      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, 
       /* request */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
@@ -166,7 +166,7 @@ trait SocketServer
   @JSName("prependListener")
   def prependListener_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
-    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, scala.Unit]
+    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(
@@ -190,7 +190,7 @@ trait SocketServer
   @JSName("prependOnceListener")
   def prependOnceListener_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
-    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, scala.Unit]
+    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(
@@ -214,7 +214,7 @@ trait SocketServer
   @JSName("rawListeners")
   def rawListeners_connection(event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection): js.Array[
     js.Function2[
-      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, 
+      /* socket */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, 
       /* request */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
@@ -234,7 +234,7 @@ trait SocketServer
   @JSName("removeListener")
   def removeListener_connection(
     event: simpleDashWebsocketLib.simpleDashWebsocketLibStrings.connection,
-    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.namespaced, scala.Unit]
+    cb: js.Function1[/* client */ simpleDashWebsocketLib.simpleDashWebsocketMod.^, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_error(

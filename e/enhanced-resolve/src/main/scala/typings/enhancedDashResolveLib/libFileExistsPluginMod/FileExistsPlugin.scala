@@ -9,13 +9,13 @@ trait FileExistsPlugin extends js.Object {
   var source: java.lang.String
   var target: java.lang.String
   @JSName("apply")
-  def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
+  def apply(resolver: enhancedDashResolveLib.libResolverMod.^): scala.Unit
 }
 
 object FileExistsPlugin {
   @scala.inline
   def apply(
-    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
+    apply: enhancedDashResolveLib.libResolverMod.^ => scala.Unit,
     source: java.lang.String,
     target: java.lang.String
   ): FileExistsPlugin = {

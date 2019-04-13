@@ -14,7 +14,7 @@ trait Anon_AutoFocus extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
-  var external: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var external: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var fade: js.UndefOr[scala.Boolean] = js.undefined
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
@@ -46,7 +46,7 @@ object Anon_AutoFocus {
     className: java.lang.String = null,
     contentClassName: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
-    external: reactLib.reactMod.ReactNs.ReactNode = null,
+    external: reactLib.reactMod.ReactNode = null,
     fade: js.UndefOr[scala.Boolean] = js.undefined,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,

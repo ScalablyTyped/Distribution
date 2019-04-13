@@ -20,7 +20,7 @@ class CognitoIdentityCredentials ()
   /**
     * The raw data response from the call to AWS.CognitoIdentity.getCredentialsForIdentity(), or AWS.STS.assumeRoleWithWebIdentity().
     */
-  var data: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetCredentialsForIdentityResponse | awsDashSdkLib.clientsStsMod.STSNs.AssumeRoleWithWebIdentityResponse = js.native
+  var data: awsDashSdkLib.clientsCognitoidentityMod.GetCredentialsForIdentityResponse | awsDashSdkLib.clientsStsMod.AssumeRoleWithWebIdentityResponse = js.native
   /**
     * The Cognito ID returned by the last call to AWS.CognitoIdentity.getOpenIdToken().
     */
@@ -28,7 +28,7 @@ class CognitoIdentityCredentials ()
   /**
     * The map of params passed to AWS.CognitoIdentity.getId(), AWS.CognitoIdentity.getOpenIdToken(), and AWS.STS.assumeRoleWithWebIdentity().
     */
-  var params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetIdInput | awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetOpenIdTokenInput | awsDashSdkLib.clientsStsMod.STSNs.AssumeRoleWithWebIdentityRequest = js.native
+  var params: awsDashSdkLib.clientsCognitoidentityMod.GetIdInput | awsDashSdkLib.clientsCognitoidentityMod.GetOpenIdTokenInput | awsDashSdkLib.clientsStsMod.AssumeRoleWithWebIdentityRequest = js.native
   /**
     * Clears the cached Cognito ID associated with the currently configured identity pool ID.
     */

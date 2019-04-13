@@ -8,135 +8,135 @@ import scala.scalajs.js.annotation._
 object snekfetchLibStrings {
   @js.native
   sealed trait ACL
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait BIND
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait CHECKOUT
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait CONNECT
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait COPY
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait DELETE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait GET
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait HEAD
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait LINK
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait LOCK
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait MERGE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait MKACTIVITY
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait MKCALENDAR
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait MKCOL
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait MOVE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait NOTIFY
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait OPTIONS
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait PATCH
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait POST
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait PROPFIND
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait PROPPATCH
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait PURGE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait PUT
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait REBIND
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait REPORT
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait SEARCH
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait SOURCE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait SUBSCRIBE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait TRACE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait UNBIND
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait UNLINK
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait UNLOCK
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @js.native
   sealed trait UNSUBSCRIBE
-    extends snekfetchLib.snekfetchMod.SnekfetchNs.methods
+    extends snekfetchLib.snekfetchMod.methods
   
   @scala.inline
   def ACL: ACL = "ACL".asInstanceOf[ACL]

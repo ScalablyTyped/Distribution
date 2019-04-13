@@ -16,9 +16,9 @@ class CalendarViewDayTwoTone protected ()
 @JSImport("@material-ui/icons", "CalendarViewDayTwoTone")
 @js.native
 class CalendarViewDayTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

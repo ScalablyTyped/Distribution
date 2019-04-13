@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "EllipsoidTerrainProvider")
 @js.native
-class EllipsoidTerrainProvider ()
-  extends cesiumLib.cesiumMod.CesiumNs.EllipsoidTerrainProvider {
+class EllipsoidTerrainProvider () extends TerrainProvider {
   def this(options: cesiumLib.Anon_Ellipsoid) = this()
 }
 

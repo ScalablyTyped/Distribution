@@ -11,56 +11,56 @@ trait GeographyProps extends js.Object {
   var onBlur: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement], 
+      /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onFocus: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement], 
+      /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseDown: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseMove: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseUp: js.UndefOr[
     js.Function2[
       /* geography */ js.Object, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -76,14 +76,14 @@ object GeographyProps {
   def apply(
     cacheId: scala.Double | java.lang.String = null,
     geography: js.Object = null,
-    onBlur: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
-    onClick: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onFocus: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
-    onMouseDown: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseEnter: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseLeave: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseMove: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseUp: (/* geography */ js.Object, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onBlur: (/* geography */ js.Object, /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
+    onClick: (/* geography */ js.Object, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onFocus: (/* geography */ js.Object, /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
+    onMouseDown: (/* geography */ js.Object, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseEnter: (/* geography */ js.Object, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseLeave: (/* geography */ js.Object, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseMove: (/* geography */ js.Object, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseUp: (/* geography */ js.Object, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     precision: scala.Int | scala.Double = null,
     projection: d3DashGeoLib.d3DashGeoMod.GeoProjection = null,
     round: js.UndefOr[scala.Boolean] = js.undefined,

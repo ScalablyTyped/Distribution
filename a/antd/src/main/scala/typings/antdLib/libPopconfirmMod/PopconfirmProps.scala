@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 trait PopconfirmProps
   extends antdLib.libTooltipMod.AbstractTooltipProps {
   var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
-  var cancelText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var cancelText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
-  var okText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var okText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   var onCancel: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]], 
+      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]
   ] = js.undefined
   var onConfirm: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]], 
+      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -29,42 +29,42 @@ trait PopconfirmProps
   var onVisibleChange_PopconfirmProps: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]], 
+      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]
   ] = js.undefined
-  var title: reactLib.reactMod.ReactNs.ReactNode
+  var title: reactLib.reactMod.ReactNode
 }
 
 object PopconfirmProps {
   @scala.inline
   def apply(
-    title: reactLib.reactMod.ReactNs.ReactNode,
+    title: reactLib.reactMod.ReactNode,
     align: antdLib.libTooltipMod.TooltipAlignConfig = null,
     arrowPointAtCenter: js.UndefOr[scala.Boolean] = js.undefined,
     autoAdjustOverflow: scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow = null,
     builtinPlacements: js.Object = null,
     cancelButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
-    cancelText: reactLib.reactMod.ReactNs.ReactNode = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    cancelText: reactLib.reactMod.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
     okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
-    okText: reactLib.reactMod.ReactNs.ReactNode = null,
+    okText: reactLib.reactMod.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
-    onConfirm: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
-    onVisibleChange: (/* visible */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]]) => scala.Unit = null,
+    onCancel: /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
+    onConfirm: /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]] => scala.Unit = null,
+    onVisibleChange: (/* visible */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]]) => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     placement: antdLib.libTooltipMod.TooltipPlacement = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionName: java.lang.String = null,
     trigger: antdLib.libTooltipMod.TooltipTrigger = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined

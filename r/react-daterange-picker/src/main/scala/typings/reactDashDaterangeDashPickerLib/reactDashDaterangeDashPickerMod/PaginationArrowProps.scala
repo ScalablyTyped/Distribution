@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginationArrowProps[T]
-  extends reactLib.reactMod.ReactNs.Props[T] {
+  extends reactLib.reactMod.Props[T] {
   var direction: js.UndefOr[
     reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.next | reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.previous
   ] = js.undefined
@@ -17,12 +17,12 @@ trait PaginationArrowProps[T]
 object PaginationArrowProps {
   @scala.inline
   def apply[T](
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     direction: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.next | reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.previous = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onTrigger: () => scala.Unit = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[T] = null
+    ref: reactLib.reactMod.LegacyRef[T] = null
   ): PaginationArrowProps[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

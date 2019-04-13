@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PanelToggle
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libPanelToggleMod.PanelToggleNs.PanelToggleProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[PanelToggleProps, js.Object, js.Any]
 

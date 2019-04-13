@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class FolderDef ()
   extends mfilesLib.IFolderDef
 
+@JSGlobal("MFiles.FolderDef")
+@js.native
+object FolderDef
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderDef]
+

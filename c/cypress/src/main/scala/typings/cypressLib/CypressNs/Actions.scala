@@ -130,9 +130,7 @@ trait Actions extends js.Object {
   ): scala.Unit = js.native
   def apply(
     action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[
-      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
-    ]
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
@@ -172,9 +170,7 @@ trait Actions extends js.Object {
   ): scala.Unit = js.native
   def apply(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[
-      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
-    ]
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.

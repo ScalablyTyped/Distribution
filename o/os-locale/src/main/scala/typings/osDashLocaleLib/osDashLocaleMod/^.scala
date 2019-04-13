@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Promise[java.lang.String] = js.native
-  def apply(options: osDashLocaleLib.osDashLocaleMod.osLocaleNs.Options): js.Promise[java.lang.String] = js.native
+  def apply(options: Options): js.Promise[java.lang.String] = js.native
   def sync(): java.lang.String = js.native
-  def sync(options: osDashLocaleLib.osDashLocaleMod.osLocaleNs.Options): java.lang.String = js.native
+  def sync(options: Options): java.lang.String = js.native
 }
 

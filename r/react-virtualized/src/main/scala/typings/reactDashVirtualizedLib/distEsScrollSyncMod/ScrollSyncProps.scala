@@ -19,13 +19,13 @@ trait ScrollSyncProps
     * This function should implement the following signature:
     * ({ onScroll, scrollLeft, scrollTop }) => PropTypes.element
     */
-  def children(props: ScrollSyncChildProps): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: ScrollSyncChildProps): reactLib.reactMod.ReactNode
 }
 
 object ScrollSyncProps {
   @scala.inline
   def apply(
-    children: ScrollSyncChildProps => reactLib.reactMod.ReactNs.ReactNode,
+    children: ScrollSyncChildProps => reactLib.reactMod.ReactNode,
     StringDictionary: /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose

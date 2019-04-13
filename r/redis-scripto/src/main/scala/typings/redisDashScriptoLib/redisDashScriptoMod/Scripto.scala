@@ -18,7 +18,7 @@ trait Scripto extends js.Object {
     args: js.Array[_],
     callback: js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   ): scala.Unit
-  def load(scripts: redisDashScriptoLib.redisDashScriptoMod.ScriptoNs.Scripts): scala.Unit
+  def load(scripts: Scripts): scala.Unit
   def loadFromDir(scriptsDir: java.lang.String): scala.Unit
   def loadFromFile(name: java.lang.String, filepath: java.lang.String): scala.Unit
   def run(
@@ -34,7 +34,7 @@ object Scripto {
   def apply(
     eval: (java.lang.String, js.Array[java.lang.String], js.Array[_], js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]) => scala.Unit,
     evalSha: (java.lang.String, js.Array[java.lang.String], js.Array[_], js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]) => scala.Unit,
-    load: redisDashScriptoLib.redisDashScriptoMod.ScriptoNs.Scripts => scala.Unit,
+    load: Scripts => scala.Unit,
     loadFromDir: java.lang.String => scala.Unit,
     loadFromFile: (java.lang.String, java.lang.String) => scala.Unit,
     run: (java.lang.String, js.Array[java.lang.String], js.Array[_], js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]) => scala.Unit

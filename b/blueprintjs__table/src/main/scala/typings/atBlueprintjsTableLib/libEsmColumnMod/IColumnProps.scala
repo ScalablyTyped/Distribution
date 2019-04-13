@@ -46,7 +46,7 @@ object IColumnProps {
     id: java.lang.String | scala.Double = null,
     loadingOptions: js.Array[atBlueprintjsTableLib.libEsmRegionsMod.ColumnLoadingOption] = null,
     name: java.lang.String = null,
-    nameRenderer: (/* name */ java.lang.String, /* index */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps] = null
+    nameRenderer: (/* name */ java.lang.String, /* index */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps] = null
   ): IColumnProps = {
     val __obj = js.Dynamic.literal()
     if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(cellRenderer)

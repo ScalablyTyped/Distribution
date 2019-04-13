@@ -12,31 +12,16 @@ import scala.scalajs.js.annotation._
 trait Bindings extends js.Object {
   /**
     * Gets an {@link Office.Document} object that represents the document associated with this set of bindings.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var document: Document = js.native
   /**
     * Creates a binding against a named object in the document.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
     *
     * For Excel, the itemName parameter can refer to a named range or a table.
     *
@@ -56,21 +41,6 @@ trait Bindings extends js.Object {
     *     **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
     * these content controls with this method (by specifying its name as the itemName parameter), the operation will fail.
     *
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     * @param itemName Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
     * @param bindingType The {@link Office.BindingType} for the data. The method returns null if the selected object cannot be coerced into the specified type.
     * @param options Provides options for configuring the binding that is created.
@@ -94,25 +64,10 @@ trait Bindings extends js.Object {
     * Create a binding by prompting the user to make a selection on the document.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id. 
     * The method fails if the specified selection cannot be bound.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param bindingType Specifies the type of the binding object to create. Required. 
     *                    Returns null if the selected object cannot be coerced into the specified type.
@@ -132,7 +87,10 @@ trait Bindings extends js.Object {
     * Create a binding based on the user's current selection.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
     *
     * Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied id.
     *
@@ -140,22 +98,6 @@ trait Bindings extends js.Object {
     * binding is used, and its type cannot be changed by specifying a different value for the bindingType parameter. 
     * If you need to use an existing id and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and 
     * then call the addFromSelectionAsync method to reestablish the binding with a new type.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param bindingType Specifies the type of the binding object to create. Required. 
     *                    Returns null if the selected object cannot be coerced into the specified type.
@@ -175,23 +117,10 @@ trait Bindings extends js.Object {
     * Gets all bindings that were previously created.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -208,25 +137,12 @@ trait Bindings extends js.Object {
     * Retrieves a binding based on its Name
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings, TextBindings</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
     *
     * Fails if the specified id does not exist.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param id Specifies the unique name of the binding object. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -245,25 +161,12 @@ trait Bindings extends js.Object {
     * Removes the binding from the document
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
     *
     * Fails if the specified id does not exist.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param id Specifies the unique name to be used to identify the binding object. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.

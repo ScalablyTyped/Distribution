@@ -24,7 +24,7 @@ trait Boom[Data]
   /** isServer - convenience bool indicating status code >= 500. */
   var isServer: scala.Boolean
   /** output - the formatted response. Can be directly manipulated after object construction to return a custom error response. Allowed root keys: */
-  var output: atHapiBoomLib.atHapiBoomMod.BoomNs.Output
+  var output: Output
   /** reformat() - rebuilds error.output using the other object properties. */
   def reformat(): java.lang.String
 }
@@ -37,7 +37,7 @@ object Boom {
     isServer: scala.Boolean,
     message: java.lang.String,
     name: java.lang.String,
-    output: atHapiBoomLib.atHapiBoomMod.BoomNs.Output,
+    output: Output,
     reformat: () => java.lang.String,
     isMissing: js.UndefOr[scala.Boolean] = js.undefined,
     stack: java.lang.String = null

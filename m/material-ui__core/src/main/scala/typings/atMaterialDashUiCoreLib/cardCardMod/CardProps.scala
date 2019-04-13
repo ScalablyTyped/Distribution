@@ -17,9 +17,9 @@ object CardProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     raised: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

@@ -9,13 +9,13 @@ trait TabData
   extends /** for user's custom extends */
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var key: js.UndefOr[java.lang.String] = js.undefined
-  var title: reactLib.reactMod.ReactNs.ReactNode
+  var title: reactLib.reactMod.ReactNode
 }
 
 object TabData {
   @scala.inline
   def apply(
-    title: reactLib.reactMod.ReactNs.ReactNode,
+    title: reactLib.reactMod.ReactNode,
     StringDictionary: /** for user's custom extends */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     key: java.lang.String = null

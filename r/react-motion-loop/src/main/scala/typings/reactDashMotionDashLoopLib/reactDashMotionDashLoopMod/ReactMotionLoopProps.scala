@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   var children: js.UndefOr[
     js.Function1[
       /* interpolatedStyle */ reactDashMotionLib.reactDashMotionMod.PlainStyle, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   var styleFrom: reactDashMotionLib.reactDashMotionMod.Style
@@ -22,7 +22,7 @@ object ReactMotionLoopProps {
   def apply(
     styleFrom: reactDashMotionLib.reactDashMotionMod.Style,
     styleTo: reactDashMotionLib.reactDashMotionMod.Style,
-    children: /* interpolatedStyle */ reactDashMotionLib.reactDashMotionMod.PlainStyle => reactLib.reactMod.ReactNs.ReactElement[_] = null
+    children: /* interpolatedStyle */ reactDashMotionLib.reactDashMotionMod.PlainStyle => reactLib.reactMod.ReactElement[_] = null
   ): ReactMotionLoopProps = {
     val __obj = js.Dynamic.literal(styleFrom = styleFrom, styleTo = styleTo)
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))

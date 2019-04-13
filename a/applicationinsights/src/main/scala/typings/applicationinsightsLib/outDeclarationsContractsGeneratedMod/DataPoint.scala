@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "DataPoint")
 @js.native
 class DataPoint ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedDataPointMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedDataPointMod.^
 

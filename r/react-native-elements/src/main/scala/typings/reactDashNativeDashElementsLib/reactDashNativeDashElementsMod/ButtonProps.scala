@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
     *
     * Default is TouchableOpacity on IOS and TouchableNativeFeedback on Android
     */
-  var TouchableComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var TouchableComponent: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Specify a different component as the background for the button.
     * Useful for if you want to make a button with a gradient background.
     *
     * @default View
     */
-  var ViewComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var ViewComponent: js.UndefOr[reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Determines the type of background drawable that's going to be used to display feedback.
     * It takes an object with type property and extra data depending on the type.
@@ -142,8 +138,8 @@ import scala.scalajs.js.annotation._
 object ButtonProps {
   @scala.inline
   def apply(
-    TouchableComponent: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
-    ViewComponent: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
+    TouchableComponent: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
+    ViewComponent: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = null,
     accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
     accessibilityHint: java.lang.String = null,

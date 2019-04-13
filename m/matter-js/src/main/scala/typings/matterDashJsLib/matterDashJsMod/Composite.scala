@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Composite")
 @js.native
-class Composite ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Composite {
+class Composite () extends js.Object {
   /**
     * An array of `Body` that are _direct_ children of this composite.
     * To add or remove bodies you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
@@ -18,8 +17,7 @@ class Composite ()
     * @type body[]
     * @default []
     */
-  /* CompleteClass */
-  override var bodies: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body] = js.native
+  var bodies: js.Array[Body] = js.native
   /**
     * An array of `Composite` that are _direct_ children of this composite.
     * To add or remove composites you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
@@ -29,8 +27,7 @@ class Composite ()
     * @type composite[]
     * @default []
     */
-  /* CompleteClass */
-  override var composites: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Composite] = js.native
+  var composites: js.Array[Composite] = js.native
   /**
     * An array of `Constraint` that are _direct_ children of this composite.
     * To add or remove constraints you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
@@ -40,16 +37,14 @@ class Composite ()
     * @type constraint[]
     * @default []
     */
-  /* CompleteClass */
-  override var constraints: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Constraint] = js.native
+  var constraints: js.Array[Constraint] = js.native
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
     * @property id
     * @type number
     */
-  /* CompleteClass */
-  override var id: scala.Double = js.native
+  var id: scala.Double = js.native
   /**
     * A flag that specifies whether the composite has been modified during the current step.
     * Most `Matter.Composite` methods will automatically set this flag to `true` to inform the engine of changes to be handled.
@@ -59,8 +54,7 @@ class Composite ()
     * @type boolean
     * @default false
     */
-  /* CompleteClass */
-  override var isModified: scala.Boolean = js.native
+  var isModified: scala.Boolean = js.native
   /**
     * An arbitrary `String` name to help the user identify and manage composites.
     *
@@ -68,8 +62,7 @@ class Composite ()
     * @type string
     * @default "Composite"
     */
-  /* CompleteClass */
-  override var label: java.lang.String = js.native
+  var label: java.lang.String = js.native
   /**
     * The `Composite` that is the parent of this composite. It is automatically managed by the `Matter.Composite` methods.
     *
@@ -77,8 +70,7 @@ class Composite ()
     * @type composite
     * @default null
     */
-  /* CompleteClass */
-  override var parent: matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  var parent: Composite = js.native
   /**
     * A `String` denoting the type of object.
     *
@@ -86,8 +78,7 @@ class Composite ()
     * @type string
     * @default "composite"
     */
-  /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  var `type`: java.lang.String = js.native
 }
 
 /* static members */
@@ -103,38 +94,38 @@ object Composite extends js.Object {
     * @return {composite} The original composite with the objects added
     */
   def add(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Body
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Body
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   def add(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Composite
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Composite
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   def add(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Constraint
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Constraint
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Returns all bodies in the given composite, including all bodies in its children, recursively.
     * @method allBodies
     * @param {composite} composite
     * @return {body[]} All the bodies
     */
-  def allBodies(composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body] = js.native
+  def allBodies(composite: matterDashJsLib.matterDashJsMod.Composite): js.Array[matterDashJsLib.matterDashJsMod.Body] = js.native
   /**
     * Returns all composites in the given composite, including all composites in its children, recursively.
     * @method allComposites
     * @param {composite} composite
     * @return {composite[]} All the composites
     */
-  def allComposites(composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Composite] = js.native
+  def allComposites(composite: matterDashJsLib.matterDashJsMod.Composite): js.Array[matterDashJsLib.matterDashJsMod.Composite] = js.native
   /**
     * Returns all constraints in the given composite, including all constraints in its children, recursively.
     * @method allConstraints
     * @param {composite} composite
     * @return {constraint[]} All the constraints
     */
-  def allConstraints(composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Composite] = js.native
+  def allConstraints(composite: matterDashJsLib.matterDashJsMod.Composite): js.Array[matterDashJsLib.matterDashJsMod.Composite] = js.native
   /**
     * Removes all bodies, constraints and composites from the given composite.
     * Optionally clearing its children recursively.
@@ -143,9 +134,9 @@ object Composite extends js.Object {
     * @param {boolean} keepStatic
     * @param {boolean} [deep=false]
     */
-  def clear(composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite, keepStatic: scala.Boolean): scala.Unit = js.native
+  def clear(composite: matterDashJsLib.matterDashJsMod.Composite, keepStatic: scala.Boolean): scala.Unit = js.native
   def clear(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     keepStatic: scala.Boolean,
     deep: scala.Boolean
   ): scala.Unit = js.native
@@ -156,8 +147,8 @@ object Composite extends js.Object {
     * @param {} [options]
     * @return {composite} A new composite
     */
-  def create(): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
-  def create(options: matterDashJsLib.matterDashJsMod.MatterNs.ICompositeDefinition): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  def create(): matterDashJsLib.matterDashJsMod.Composite = js.native
+  def create(options: matterDashJsLib.matterDashJsMod.ICompositeDefinition): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Searches the composite recursively for an object matching the type and id supplied, null if not found.
     * @method get
@@ -166,11 +157,7 @@ object Composite extends js.Object {
     * @param {string} type
     * @return {object} The requested object, if found
     */
-  def get(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    id: scala.Double,
-    `type`: java.lang.String
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body | matterDashJsLib.matterDashJsMod.MatterNs.Composite | matterDashJsLib.matterDashJsMod.MatterNs.Constraint = js.native
+  def get(composite: matterDashJsLib.matterDashJsMod.Composite, id: scala.Double, `type`: java.lang.String): matterDashJsLib.matterDashJsMod.Body | matterDashJsLib.matterDashJsMod.Composite | matterDashJsLib.matterDashJsMod.Constraint = js.native
   /**
     * Moves the given object(s) from compositeA to compositeB (equal to a remove followed by an add).
     * @method move
@@ -180,19 +167,19 @@ object Composite extends js.Object {
     * @return {composite} Returns compositeA
     */
   def move(
-    compositeA: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    compositeA: matterDashJsLib.matterDashJsMod.Composite,
     objects: js.Array[
-      matterDashJsLib.matterDashJsMod.MatterNs.Body | matterDashJsLib.matterDashJsMod.MatterNs.Composite | matterDashJsLib.matterDashJsMod.MatterNs.Constraint
+      matterDashJsLib.matterDashJsMod.Body | matterDashJsLib.matterDashJsMod.Composite | matterDashJsLib.matterDashJsMod.Constraint
     ],
-    compositeB: matterDashJsLib.matterDashJsMod.MatterNs.Composite
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+    compositeB: matterDashJsLib.matterDashJsMod.Composite
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Assigns new ids for all objects in the composite, recursively.
     * @method rebase
     * @param {composite} composite
     * @return {composite} Returns composite
     */
-  def rebase(composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  def rebase(composite: matterDashJsLib.matterDashJsMod.Composite): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Generic remove function. Removes one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Optionally searching its children recursively.
@@ -204,32 +191,32 @@ object Composite extends js.Object {
     * @return {composite} The original composite with the objects removed
     */
   def remove(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Body
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Body
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   def remove(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Body,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Body,
     deep: scala.Boolean
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   def remove(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Composite
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Composite
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   def remove(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Composite,
     deep: scala.Boolean
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   def remove(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Constraint
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Constraint
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   def remove(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    `object`: matterDashJsLib.matterDashJsMod.MatterNs.Constraint,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    `object`: matterDashJsLib.matterDashJsMod.Constraint,
     deep: scala.Boolean
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Rotates all children in the composite by a given angle about the given point, without imparting any angular velocity.
     * @method rotate
@@ -239,14 +226,14 @@ object Composite extends js.Object {
     * @param {bool} [recursive=true]
     */
   def rotate(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     rotation: scala.Double,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    point: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
   def rotate(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     rotation: scala.Double,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
+    point: matterDashJsLib.matterDashJsMod.Vector,
     recursive: scala.Boolean
   ): scala.Unit = js.native
   /**
@@ -259,16 +246,16 @@ object Composite extends js.Object {
     * @param {bool} [recursive=true]
     */
   def scale(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     scaleX: scala.Double,
     scaleY: scala.Double,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    point: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
   def scale(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     scaleX: scala.Double,
     scaleY: scala.Double,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
+    point: matterDashJsLib.matterDashJsMod.Vector,
     recursive: scala.Boolean
   ): scala.Unit = js.native
   /**
@@ -281,14 +268,14 @@ object Composite extends js.Object {
     * @param {boolean} [updateParents=false]
     * @param {boolean} [updateChildren=false]
     */
-  def setModified(composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite, isModified: scala.Boolean): scala.Unit = js.native
+  def setModified(composite: matterDashJsLib.matterDashJsMod.Composite, isModified: scala.Boolean): scala.Unit = js.native
   def setModified(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     isModified: scala.Boolean,
     updateParents: scala.Boolean
   ): scala.Unit = js.native
   def setModified(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     isModified: scala.Boolean,
     updateParents: scala.Boolean,
     updateChildren: scala.Boolean
@@ -302,12 +289,12 @@ object Composite extends js.Object {
     * @param {bool} [recursive=true]
     */
   def translate(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    translation: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    translation: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
   def translate(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
-    translation: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
+    translation: matterDashJsLib.matterDashJsMod.Vector,
     recursive: scala.Boolean
   ): scala.Unit = js.native
 }

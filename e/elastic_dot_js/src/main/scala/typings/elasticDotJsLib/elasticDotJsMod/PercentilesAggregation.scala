@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "PercentilesAggregation")
 @js.native
-class PercentilesAggregation protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation {
+class PercentilesAggregation protected () extends Aggregation {
   /*
     Aggregation that calculates one or more percentiles over numeric values
     extracted from the aggregated documents.
@@ -17,8 +16,7 @@ class PercentilesAggregation protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Compression controls memory usage and approximation error. The compression
     value limits the maximum number of nodes to 100 * compression.  By
@@ -28,55 +26,45 @@ class PercentilesAggregation protected ()
     size, resulting in more expensive operations. The default compression
     value is 100.
     */
-  /* CompleteClass */
-  override def compression(c: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def compression(c: scala.Double): PercentilesAggregation = js.native
   /*
     Sets the field to operate on.
     */
-  /* CompleteClass */
-  override def field(field: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def field(field: java.lang.String): PercentilesAggregation = js.native
   /*
     Enable the response to be returned as a keyed object where the key is the
     bucket interval.
     */
-  /* CompleteClass */
-  override def keyed(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def keyed(trueFalse: scala.Boolean): PercentilesAggregation = js.native
   /*
     The script language being used.
     */
-  /* CompleteClass */
-  override def lang(language: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def lang(language: java.lang.String): PercentilesAggregation = js.native
   /*
     Sets parameters that will be applied to the script.  Overwrites
     any existing params.
     */
-  /* CompleteClass */
-  override def params(p: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def params(p: js.Object): PercentilesAggregation = js.native
   /*
     Add a single percentile to the current list of percentiles.
     */
-  /* CompleteClass */
-  override def percent(percentile: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def percent(percentile: scala.Double): PercentilesAggregation = js.native
   /*
     Sets the percentile bucket array.  Overwrites all existing values.
     */
-  /* CompleteClass */
-  override def percents(percents: js.Array[scala.Double]): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def percents(percents: js.Array[scala.Double]): PercentilesAggregation = js.native
   /*
     Allows you generate or modify the terms/values using a script.
     */
-  /* CompleteClass */
-  override def script(scriptCode: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def script(scriptCode: java.lang.String): PercentilesAggregation = js.native
   /*
     Set to true to assume script values are sorted.
     */
-  /* CompleteClass */
-  override def scriptValuesSorted(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PercentilesAggregation = js.native
+  def scriptValuesSorted(trueFalse: scala.Boolean): PercentilesAggregation = js.native
   /*
     Retrieves the internal agg object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
 }
 

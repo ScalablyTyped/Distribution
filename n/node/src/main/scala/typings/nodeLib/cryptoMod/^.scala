@@ -8,18 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Certificate: nodeLib.Anon_Certificate = js.native
   /** @deprecated since v10.0.0 */
   val DEFAULT_ENCODING: java.lang.String = js.native
   /** @deprecated since v10.0.0 */
   val fips: scala.Boolean = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: java.lang.String, password: BinaryLike): Cipher = js.native
-  def createCipher(
-    algorithm: java.lang.String,
-    password: BinaryLike,
-    options: nodeLib.streamMod.internalNs.TransformOptions
-  ): Cipher = js.native
+  def createCipher(algorithm: java.lang.String, password: BinaryLike, options: nodeLib.streamMod.TransformOptions): Cipher = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): CipherCCM = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
@@ -31,13 +26,13 @@ object ^ extends js.Object {
     algorithm: java.lang.String,
     key: CipherKey,
     iv: BinaryLike,
-    options: nodeLib.streamMod.internalNs.TransformOptions
+    options: nodeLib.streamMod.TransformOptions
   ): Cipher = js.native
   def createCipheriv(
     algorithm: java.lang.String,
     key: CipherKey,
     iv: scala.Null,
-    options: nodeLib.streamMod.internalNs.TransformOptions
+    options: nodeLib.streamMod.TransformOptions
   ): Cipher = js.native
   def createCipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): CipherCCM = js.native
   def createCipheriv(algorithm: CipherCCMTypes, key: CipherKey, iv: scala.Null, options: CipherCCMOptions): CipherCCM = js.native
@@ -47,11 +42,7 @@ object ^ extends js.Object {
   def createCipheriv(algorithm: CipherGCMTypes, key: CipherKey, iv: scala.Null, options: CipherGCMOptions): CipherGCM = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: java.lang.String, password: BinaryLike): Decipher = js.native
-  def createDecipher(
-    algorithm: java.lang.String,
-    password: BinaryLike,
-    options: nodeLib.streamMod.internalNs.TransformOptions
-  ): Decipher = js.native
+  def createDecipher(algorithm: java.lang.String, password: BinaryLike, options: nodeLib.streamMod.TransformOptions): Decipher = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): DecipherCCM = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
@@ -63,13 +54,13 @@ object ^ extends js.Object {
     algorithm: java.lang.String,
     key: BinaryLike,
     iv: BinaryLike,
-    options: nodeLib.streamMod.internalNs.TransformOptions
+    options: nodeLib.streamMod.TransformOptions
   ): Decipher = js.native
   def createDecipheriv(
     algorithm: java.lang.String,
     key: BinaryLike,
     iv: scala.Null,
-    options: nodeLib.streamMod.internalNs.TransformOptions
+    options: nodeLib.streamMod.TransformOptions
   ): Decipher = js.native
   def createDecipheriv(algorithm: CipherCCMTypes, key: BinaryLike, iv: BinaryLike, options: CipherCCMOptions): DecipherCCM = js.native
   def createDecipheriv(algorithm: CipherCCMTypes, key: BinaryLike, iv: scala.Null, options: CipherCCMOptions): DecipherCCM = js.native
@@ -92,13 +83,9 @@ object ^ extends js.Object {
   def createDiffieHellman(prime: Binary): DiffieHellman = js.native
   def createECDH(curve_name: java.lang.String): ECDH = js.native
   def createHash(algorithm: java.lang.String): Hash = js.native
-  def createHash(algorithm: java.lang.String, options: nodeLib.streamMod.internalNs.TransformOptions): Hash = js.native
+  def createHash(algorithm: java.lang.String, options: nodeLib.streamMod.TransformOptions): Hash = js.native
   def createHmac(algorithm: java.lang.String, key: BinaryLike): Hmac = js.native
-  def createHmac(
-    algorithm: java.lang.String,
-    key: BinaryLike,
-    options: nodeLib.streamMod.internalNs.TransformOptions
-  ): Hmac = js.native
+  def createHmac(algorithm: java.lang.String, key: BinaryLike, options: nodeLib.streamMod.TransformOptions): Hmac = js.native
   def createPrivateKey(key: java.lang.String): KeyObject = js.native
   def createPrivateKey(key: nodeLib.Buffer): KeyObject = js.native
   def createPrivateKey(key: PrivateKeyInput): KeyObject = js.native
@@ -108,9 +95,9 @@ object ^ extends js.Object {
   def createPublicKey(key: PublicKeyInput): KeyObject = js.native
   def createSecretKey(key: nodeLib.Buffer): KeyObject = js.native
   def createSign(algorithm: java.lang.String): Signer = js.native
-  def createSign(algorithm: java.lang.String, options: nodeLib.streamMod.internalNs.WritableOptions): Signer = js.native
+  def createSign(algorithm: java.lang.String, options: nodeLib.streamMod.WritableOptions): Signer = js.native
   def createVerify(algorith: java.lang.String): Verify = js.native
-  def createVerify(algorith: java.lang.String, options: nodeLib.streamMod.internalNs.WritableOptions): Verify = js.native
+  def createVerify(algorith: java.lang.String, options: nodeLib.streamMod.WritableOptions): Verify = js.native
   def generateKeyPair(
     `type`: nodeLib.nodeLibStrings.dsa,
     options: DSAKeyPairOptions[

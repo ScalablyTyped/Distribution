@@ -7,12 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait LabelListProps extends js.Object {
   var angle: js.UndefOr[scala.Double] = js.undefined
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var clockWise: js.UndefOr[scala.Boolean] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[LabelProps]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactElement[_] | ContentRenderer[LabelProps]] = js.undefined
   var data: js.UndefOr[scala.Double] = js.undefined
   var dataKey: java.lang.String | scala.Double | RechartsFunction
   var formatter: js.UndefOr[LabelFormatter] = js.undefined
@@ -27,10 +25,10 @@ object LabelListProps {
   def apply(
     dataKey: java.lang.String | scala.Double | RechartsFunction,
     angle: scala.Int | scala.Double = null,
-    children: js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     clockWise: js.UndefOr[scala.Boolean] = js.undefined,
-    content: reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[LabelProps] = null,
+    content: reactLib.reactMod.ReactElement[_] | ContentRenderer[LabelProps] = null,
     data: scala.Int | scala.Double = null,
     formatter: LabelFormatter = null,
     id: java.lang.String = null,

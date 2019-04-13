@@ -5,37 +5,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait NodeFlags extends js.Object
+
 @JSImport("typescript", "NodeFlags")
 @js.native
 object NodeFlags extends js.Object {
-  /* 16384 */ val AwaitContext: typescriptLib.typescriptMod.tsNs.NodeFlags.AwaitContext with scala.Double = js.native
-  /* 3 */ val BlockScoped: typescriptLib.typescriptMod.tsNs.NodeFlags.BlockScoped with scala.Double = js.native
-  /* 2 */ val Const: typescriptLib.typescriptMod.tsNs.NodeFlags.Const with scala.Double = js.native
-  /* 64 */ val ContainsThis: typescriptLib.typescriptMod.tsNs.NodeFlags.ContainsThis with scala.Double = js.native
-  /* 12679168 */ val ContextFlags: typescriptLib.typescriptMod.tsNs.NodeFlags.ContextFlags with scala.Double = js.native
-  /* 8192 */ val DecoratorContext: typescriptLib.typescriptMod.tsNs.NodeFlags.DecoratorContext with scala.Double = js.native
-  /* 2048 */ val DisallowInContext: typescriptLib.typescriptMod.tsNs.NodeFlags.DisallowInContext with scala.Double = js.native
-  /* 32 */ val ExportContext: typescriptLib.typescriptMod.tsNs.NodeFlags.ExportContext with scala.Double = js.native
-  /* 512 */ val GlobalAugmentation: typescriptLib.typescriptMod.tsNs.NodeFlags.GlobalAugmentation with scala.Double = js.native
-  /* 262144 */ val HasAggregatedChildData: typescriptLib.typescriptMod.tsNs.NodeFlags.HasAggregatedChildData with scala.Double = js.native
-  /* 1024 */ val HasAsyncFunctions: typescriptLib.typescriptMod.tsNs.NodeFlags.HasAsyncFunctions with scala.Double = js.native
-  /* 256 */ val HasExplicitReturn: typescriptLib.typescriptMod.tsNs.NodeFlags.HasExplicitReturn with scala.Double = js.native
-  /* 128 */ val HasImplicitReturn: typescriptLib.typescriptMod.tsNs.NodeFlags.HasImplicitReturn with scala.Double = js.native
-  /* 2097152 */ val JSDoc: typescriptLib.typescriptMod.tsNs.NodeFlags.JSDoc with scala.Double = js.native
-  /* 65536 */ val JavaScriptFile: typescriptLib.typescriptMod.tsNs.NodeFlags.JavaScriptFile with scala.Double = js.native
-  /* 16777216 */ val JsonFile: typescriptLib.typescriptMod.tsNs.NodeFlags.JsonFile with scala.Double = js.native
-  /* 1 */ val Let: typescriptLib.typescriptMod.tsNs.NodeFlags.Let with scala.Double = js.native
-  /* 16 */ val Namespace: typescriptLib.typescriptMod.tsNs.NodeFlags.Namespace with scala.Double = js.native
-  /* 4 */ val NestedNamespace: typescriptLib.typescriptMod.tsNs.NodeFlags.NestedNamespace with scala.Double = js.native
-  /* 0 */ val None: typescriptLib.typescriptMod.tsNs.NodeFlags.None with scala.Double = js.native
-  /* 1408 */ val ReachabilityAndEmitFlags: typescriptLib.typescriptMod.tsNs.NodeFlags.ReachabilityAndEmitFlags with scala.Double = js.native
-  /* 384 */ val ReachabilityCheckFlags: typescriptLib.typescriptMod.tsNs.NodeFlags.ReachabilityCheckFlags with scala.Double = js.native
-  /* 8 */ val Synthesized: typescriptLib.typescriptMod.tsNs.NodeFlags.Synthesized with scala.Double = js.native
-  /* 32768 */ val ThisNodeHasError: typescriptLib.typescriptMod.tsNs.NodeFlags.ThisNodeHasError with scala.Double = js.native
-  /* 131072 */ val ThisNodeOrAnySubNodesHasError: typescriptLib.typescriptMod.tsNs.NodeFlags.ThisNodeOrAnySubNodesHasError with scala.Double = js.native
-  /* 20480 */ val TypeExcludesFlags: typescriptLib.typescriptMod.tsNs.NodeFlags.TypeExcludesFlags with scala.Double = js.native
-  /* 4096 */ val YieldContext: typescriptLib.typescriptMod.tsNs.NodeFlags.YieldContext with scala.Double = js.native
+  @js.native
+  sealed trait AwaitContext
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait BlockScoped
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait Const
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait ContainsThis
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait ContextFlags
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait DecoratorContext
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait DisallowInContext
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait ExportContext
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait GlobalAugmentation
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait HasAggregatedChildData
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait HasAsyncFunctions
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait HasExplicitReturn
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait HasImplicitReturn
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait JSDoc
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait JavaScriptFile
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait JsonFile
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait Let
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait Namespace
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait NestedNamespace
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait None
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait ReachabilityAndEmitFlags
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait ReachabilityCheckFlags
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait Synthesized
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait ThisNodeHasError
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait ThisNodeOrAnySubNodesHasError
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait TypeExcludesFlags
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  @js.native
+  sealed trait YieldContext
+    extends typescriptLib.typescriptMod.NodeFlags
+  
+  /* 16384 */ val AwaitContext: AwaitContext with scala.Double = js.native
+  /* 3 */ val BlockScoped: BlockScoped with scala.Double = js.native
+  /* 2 */ val Const: Const with scala.Double = js.native
+  /* 64 */ val ContainsThis: ContainsThis with scala.Double = js.native
+  /* 12679168 */ val ContextFlags: ContextFlags with scala.Double = js.native
+  /* 8192 */ val DecoratorContext: DecoratorContext with scala.Double = js.native
+  /* 2048 */ val DisallowInContext: DisallowInContext with scala.Double = js.native
+  /* 32 */ val ExportContext: ExportContext with scala.Double = js.native
+  /* 512 */ val GlobalAugmentation: GlobalAugmentation with scala.Double = js.native
+  /* 262144 */ val HasAggregatedChildData: HasAggregatedChildData with scala.Double = js.native
+  /* 1024 */ val HasAsyncFunctions: HasAsyncFunctions with scala.Double = js.native
+  /* 256 */ val HasExplicitReturn: HasExplicitReturn with scala.Double = js.native
+  /* 128 */ val HasImplicitReturn: HasImplicitReturn with scala.Double = js.native
+  /* 2097152 */ val JSDoc: JSDoc with scala.Double = js.native
+  /* 65536 */ val JavaScriptFile: JavaScriptFile with scala.Double = js.native
+  /* 16777216 */ val JsonFile: JsonFile with scala.Double = js.native
+  /* 1 */ val Let: Let with scala.Double = js.native
+  /* 16 */ val Namespace: Namespace with scala.Double = js.native
+  /* 4 */ val NestedNamespace: NestedNamespace with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 1408 */ val ReachabilityAndEmitFlags: ReachabilityAndEmitFlags with scala.Double = js.native
+  /* 384 */ val ReachabilityCheckFlags: ReachabilityCheckFlags with scala.Double = js.native
+  /* 8 */ val Synthesized: Synthesized with scala.Double = js.native
+  /* 32768 */ val ThisNodeHasError: ThisNodeHasError with scala.Double = js.native
+  /* 131072 */ val ThisNodeOrAnySubNodesHasError: ThisNodeOrAnySubNodesHasError with scala.Double = js.native
+  /* 20480 */ val TypeExcludesFlags: TypeExcludesFlags with scala.Double = js.native
+  /* 4096 */ val YieldContext: YieldContext with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.tsNs.NodeFlags with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.NodeFlags with scala.Double] = js.native
 }
 

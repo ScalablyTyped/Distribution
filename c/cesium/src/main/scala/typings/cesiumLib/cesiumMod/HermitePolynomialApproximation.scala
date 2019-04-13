@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "HermitePolynomialApproximation")
 @js.native
-class HermitePolynomialApproximation ()
-  extends cesiumLib.cesiumMod.CesiumNs.HermitePolynomialApproximation
+class HermitePolynomialApproximation () extends InterpolationAlgorithm
 
 /* static members */
 @JSImport("cesium", "HermitePolynomialApproximation")

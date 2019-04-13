@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object jasmineNs {
   type CustomEqualityTester = js.Function2[/* first */ js.Any, /* second */ js.Any, scala.Boolean | scala.Unit]
+  type CustomMatcherFactories = org.scalablytyped.runtime.StringDictionary[CustomMatcherFactory]
   type CustomMatcherFactory = js.Function2[
     /* util */ MatchersUtil, 
     /* customEqualityTesters */ js.Array[CustomEqualityTester], 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Image")
 @js.native
 class Image ()
-  extends reactDashBootstrapLib.libImageMod.namespaced
+  extends reactDashBootstrapLib.libImageMod.^
 

@@ -23,3 +23,16 @@ class TemplateTagCls () extends TemplateTag {
   def this(transformers: js.Array[TemplateTransformer[_]]) = this()
 }
 
+@JSImport("common-tags", "TemplateTag")
+@js.native
+object TemplateTag
+  extends /**
+  * New Tag Constructor
+  * @deprecated
+  */
+org.scalablytyped.runtime.Instantiable0[TemplateTag]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* transformers */ js.Array[TemplateTransformer[js.Any]]) | (/* pluginFunctions (repeated) */ PluginFunction) | (/* transformers (repeated) */ TemplateTransformer[js.Any]), 
+      TemplateTag
+    ]
+

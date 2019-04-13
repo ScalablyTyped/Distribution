@@ -9,7 +9,7 @@ trait BadgeProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   /** Number to show in badge */
-  var count: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var count: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** whether to show red dot without number */
   var dot: js.UndefOr[scala.Boolean] = js.undefined
   var offset: js.UndefOr[js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String]] = js.undefined
@@ -21,8 +21,8 @@ trait BadgeProps extends js.Object {
   var status: js.UndefOr[
     antdLib.antdLibStrings.success | antdLib.antdLibStrings.processing | antdLib.antdLibStrings.default | antdLib.antdLibStrings.error | antdLib.antdLibStrings.warning
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var text: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var text: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -31,7 +31,7 @@ object BadgeProps {
   def apply(
     className: java.lang.String = null,
     color: java.lang.String = null,
-    count: reactLib.reactMod.ReactNs.ReactNode = null,
+    count: reactLib.reactMod.ReactNode = null,
     dot: js.UndefOr[scala.Boolean] = js.undefined,
     offset: js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String] = null,
     overflowCount: scala.Int | scala.Double = null,
@@ -39,8 +39,8 @@ object BadgeProps {
     scrollNumberPrefixCls: java.lang.String = null,
     showZero: js.UndefOr[scala.Boolean] = js.undefined,
     status: antdLib.antdLibStrings.success | antdLib.antdLibStrings.processing | antdLib.antdLibStrings.default | antdLib.antdLibStrings.error | antdLib.antdLibStrings.warning = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    text: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    text: reactLib.reactMod.ReactNode = null,
     title: java.lang.String = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()

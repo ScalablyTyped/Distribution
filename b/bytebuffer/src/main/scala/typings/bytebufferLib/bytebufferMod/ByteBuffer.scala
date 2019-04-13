@@ -233,8 +233,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit signed integer.
     */
-  def readInt64(): longLib.longMod.namespaced = js.native
-  def readInt64(offset: scala.Double): longLib.longMod.namespaced = js.native
+  def readInt64(): longLib.longMod.^ = js.native
+  def readInt64(offset: scala.Double): longLib.longMod.^ = js.native
   /**
     * Reads an 8bit signed integer.
     */
@@ -243,8 +243,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit signed integer. This is an alias of ByteBuffer#readInt64.
     */
-  def readLong(): longLib.longMod.namespaced = js.native
-  def readLong(offset: scala.Double): longLib.longMod.namespaced = js.native
+  def readLong(): longLib.longMod.^ = js.native
+  def readLong(offset: scala.Double): longLib.longMod.^ = js.native
   /**
     * Reads a 16bit signed integer. This is an alias of ByteBuffer#readInt16.
     */
@@ -275,8 +275,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit unsigned integer.
     */
-  def readUint64(): longLib.longMod.namespaced = js.native
-  def readUint64(offset: scala.Double): longLib.longMod.namespaced = js.native
+  def readUint64(): longLib.longMod.^ = js.native
+  def readUint64(offset: scala.Double): longLib.longMod.^ = js.native
   /**
     * Reads an 8bit unsigned integer.
     */
@@ -300,13 +300,13 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit base 128 variable-length integer. Requires Long.js.
     */
-  def readVarint64(): longLib.longMod.namespaced = js.native
-  def readVarint64(offset: scala.Double): longLib.longMod.namespaced = js.native
+  def readVarint64(): longLib.longMod.^ = js.native
+  def readVarint64(offset: scala.Double): longLib.longMod.^ = js.native
   /**
     * Reads a zig-zag encoded 64bit base 128 variable-length integer. Requires Long.js.
     */
-  def readVarint64ZigZag(): longLib.longMod.namespaced = js.native
-  def readVarint64ZigZag(offset: scala.Double): longLib.longMod.namespaced = js.native
+  def readVarint64ZigZag(): longLib.longMod.^ = js.native
+  def readVarint64ZigZag(offset: scala.Double): longLib.longMod.^ = js.native
   /**
     * Gets the number of remaining readable bytes. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit, so this returns limit - offset.
     */
@@ -458,8 +458,8 @@ trait ByteBuffer extends js.Object {
     */
   def writeInt32(value: scala.Double): ByteBuffer = js.native
   def writeInt32(value: scala.Double, offset: scala.Double): ByteBuffer = js.native
-  def writeInt64(value: longLib.longMod.namespaced): ByteBuffer = js.native
-  def writeInt64(value: longLib.longMod.namespaced, offset: scala.Double): ByteBuffer = js.native
+  def writeInt64(value: longLib.longMod.^): ByteBuffer = js.native
+  def writeInt64(value: longLib.longMod.^, offset: scala.Double): ByteBuffer = js.native
   /**
     * Writes a 64bit signed integer.
     */
@@ -470,8 +470,8 @@ trait ByteBuffer extends js.Object {
     */
   def writeInt8(value: scala.Double): ByteBuffer = js.native
   def writeInt8(value: scala.Double, offset: scala.Double): ByteBuffer = js.native
-  def writeLong(value: longLib.longMod.namespaced): ByteBuffer = js.native
-  def writeLong(value: longLib.longMod.namespaced, offset: scala.Double): ByteBuffer = js.native
+  def writeLong(value: longLib.longMod.^): ByteBuffer = js.native
+  def writeLong(value: longLib.longMod.^, offset: scala.Double): ByteBuffer = js.native
   /**
     * Write a 64bit signed integer. This is an alias of ByteBuffer#writeInt64.
     */
@@ -502,8 +502,8 @@ trait ByteBuffer extends js.Object {
     */
   def writeUint32(value: scala.Double): ByteBuffer = js.native
   def writeUint32(value: scala.Double, offset: scala.Double): ByteBuffer = js.native
-  def writeUint64(value: longLib.longMod.namespaced): ByteBuffer = js.native
-  def writeUint64(value: longLib.longMod.namespaced, offset: scala.Double): ByteBuffer = js.native
+  def writeUint64(value: longLib.longMod.^): ByteBuffer = js.native
+  def writeUint64(value: longLib.longMod.^, offset: scala.Double): ByteBuffer = js.native
   /**
     * Writes a 64bit unsigned integer.
     */
@@ -529,15 +529,15 @@ trait ByteBuffer extends js.Object {
     */
   def writeVarint32ZigZag(value: scala.Double): ByteBuffer | scala.Double = js.native
   def writeVarint32ZigZag(value: scala.Double, offset: scala.Double): ByteBuffer | scala.Double = js.native
-  def writeVarint64(value: longLib.longMod.namespaced): ByteBuffer = js.native
-  def writeVarint64(value: longLib.longMod.namespaced, offset: scala.Double): ByteBuffer = js.native
+  def writeVarint64(value: longLib.longMod.^): ByteBuffer = js.native
+  def writeVarint64(value: longLib.longMod.^, offset: scala.Double): ByteBuffer = js.native
   /**
     * Writes a 64bit base 128 variable-length integer.
     */
   def writeVarint64(value: scala.Double): ByteBuffer = js.native
   def writeVarint64(value: scala.Double, offset: scala.Double): ByteBuffer = js.native
-  def writeVarint64ZigZag(value: longLib.longMod.namespaced): ByteBuffer | scala.Double = js.native
-  def writeVarint64ZigZag(value: longLib.longMod.namespaced, offset: scala.Double): ByteBuffer | scala.Double = js.native
+  def writeVarint64ZigZag(value: longLib.longMod.^): ByteBuffer | scala.Double = js.native
+  def writeVarint64ZigZag(value: longLib.longMod.^, offset: scala.Double): ByteBuffer | scala.Double = js.native
   /**
     * Writes a zig-zag encoded 64bit base 128 variable-length integer.
     */

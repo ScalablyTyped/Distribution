@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RadialGradientProps extends js.Object {
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var cx: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp
   var cy: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp
   var fx: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp
@@ -30,7 +28,7 @@ object RadialGradientProps {
     fx: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp,
     fy: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp,
     id: java.lang.String,
-    children: js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     gradientUnits: reactDashSketchappLib.reactDashSketchappLibStrings.objectBoundingBox | reactDashSketchappLib.reactDashSketchappLibStrings.userSpaceOnUse = null,
     r: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp = null,
     rx: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp = null,

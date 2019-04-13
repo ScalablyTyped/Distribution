@@ -17,7 +17,7 @@ trait CommonProps extends js.Object {
   /**
     * Ref to attach to the inner container element. This is an advanced property.
     */
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   /**
     * Tag name passed to document.createElement to create the inner container element. This is an advanced property; in most cases, the default ("div") should be used.
     *
@@ -37,7 +37,7 @@ trait CommonProps extends js.Object {
   /**
     * Ref to attach to the outer container element. This is an advanced property.
     */
-  var outerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
+  var outerRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   /**
     * Tag name passed to document.createElement to create the outer container element. This is an advanced property; in most cases, the default ("div") should be used.
     *
@@ -47,7 +47,7 @@ trait CommonProps extends js.Object {
   /**
     * Optional inline style to attach to outermost <div> element.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Adds an additional isScrolling parameter to the children render function. This parameter can be used to show a placeholder row or column while the list is being scrolled.
     *
@@ -61,13 +61,13 @@ object CommonProps {
   def apply(
     className: java.lang.String = null,
     innerElementType: ReactElementType = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] = null,
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     outerElementType: ReactElementType = null,
-    outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    outerRef: reactLib.reactMod.Ref[_] = null,
     outerTagName: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): CommonProps = {
     val __obj = js.Dynamic.literal()

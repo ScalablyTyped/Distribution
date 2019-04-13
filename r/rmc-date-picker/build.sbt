@@ -1,19 +1,14 @@
 organization := "org.scalablytyped"
 name := "rmc-date-picker"
-version := "6.0.9-ec72d4"
+version := "6.0.9-cce70d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20190326Z-9fc905",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-3351b3",
-  "org.scalablytyped" %%% "rmc-dialog" % "1.1.1-5456fb",
-  "org.scalablytyped" %%% "rmc-feedback" % "2.0.0-e7cc4d",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.8-a4e7af",
-  "org.scalablytyped" %%% "std" % "3.4-d52857")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-7e744c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-5f45a9",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

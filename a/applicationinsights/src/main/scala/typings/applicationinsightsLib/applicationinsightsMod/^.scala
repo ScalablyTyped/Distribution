@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var defaultClient: TelemetryClient = js.native
-  var liveMetricsClient: applicationinsightsLib.outLibraryQuickPulseStateManagerMod.namespaced = js.native
+  var liveMetricsClient: applicationinsightsLib.outLibraryQuickPulseStateManagerMod.^ = js.native
   def dispose(): scala.Unit = js.native
   def getCorrelationContext(): applicationinsightsLib.outAutoCollectionCorrelationContextManagerMod.CorrelationContext = js.native
   def setup(): applicationinsightsLib.Anon_CollectConsoleLog = js.native

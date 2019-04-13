@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactLib.reactMod.ReactNs.AnchorHTMLAttributes because var conflicts: className. Inlined download, href, hrefLang, media, referrerPolicy, rel, target, `type` */ trait AccordionTitleProps
+- reactLib.reactMod.AnchorHTMLAttributes because var conflicts: className. Inlined download, href, hrefLang, media, referrerPolicy, rel, target, `type` */ trait AccordionTitleProps
   extends reactDashFoundationLib.utilsMod.FlexboxPropTypes {
   var download: js.UndefOr[js.Any] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 object AccordionTitleProps {
   @scala.inline
   def apply(
-    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
+    AnchorHTMLAttributes: reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
     isActive: js.UndefOr[scala.Boolean] = js.undefined
   ): AccordionTitleProps = {

@@ -43,7 +43,7 @@ trait HexoConfig
   /**
     * Deployment settings
     */
-  val deploy: hexoLib.hexoMod.HexoNs.extendNs.DeployerNs.Config | scala.Null
+  val deploy: hexoLib.hexoMod.extendNs.DeployerNs.Config | scala.Null
   /**
     * The description of your website
     */
@@ -214,7 +214,7 @@ object HexoConfig {
     titlecase: scala.Boolean,
     url: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    deploy: hexoLib.hexoMod.HexoNs.extendNs.DeployerNs.Config = null,
+    deploy: hexoLib.hexoMod.extendNs.DeployerNs.Config = null,
     exclude: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     permalink_defaults: java.lang.String = null,

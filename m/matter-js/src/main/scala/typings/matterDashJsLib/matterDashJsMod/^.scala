@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("matter-js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def use(plugins: (matterDashJsLib.matterDashJsMod.MatterNs.Plugin | java.lang.String)*): scala.Unit = js.native
+  def use(plugins: (Plugin | java.lang.String)*): scala.Unit = js.native
 }
 

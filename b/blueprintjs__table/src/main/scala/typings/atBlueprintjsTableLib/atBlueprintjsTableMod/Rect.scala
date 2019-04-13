@@ -21,7 +21,7 @@ object Rect extends js.Object {
     * Returns the CSS properties representing the absolute positioning of
     * this Rect.
     */
-  def style(rect: atBlueprintjsTableLib.libEsmCommonRectMod.AnyRect): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def style(rect: atBlueprintjsTableLib.libEsmCommonRectMod.AnyRect): reactLib.reactMod.CSSProperties = js.native
   /**
     * Returns a new Rect that subtracts the origin of the second argument
     * from the first.

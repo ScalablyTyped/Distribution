@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavbarFormProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[NavbarForm] {
-  var componentClass: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  extends reactLib.reactMod.HTMLProps[NavbarForm] {
+  var componentClass: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var pullLeft: js.UndefOr[scala.Boolean] = js.undefined
   var pullRight: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -15,8 +15,8 @@ trait NavbarFormProps
 object NavbarFormProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[NavbarForm] = null,
-    componentClass: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[NavbarForm] = null,
+    componentClass: reactLib.reactMod.ReactType[_] = null,
     pullLeft: js.UndefOr[scala.Boolean] = js.undefined,
     pullRight: js.UndefOr[scala.Boolean] = js.undefined
   ): NavbarFormProps = {

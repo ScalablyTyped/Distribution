@@ -17,8 +17,8 @@ trait QuickPulseStateManager extends js.Object {
   var _lastSuccessTime: js.Any = js.native
   var _metrics: js.Any = js.native
   var _sender: js.Any = js.native
-  var config: applicationinsightsLib.outLibraryConfigMod.namespaced = js.native
-  var context: applicationinsightsLib.outLibraryContextMod.namespaced = js.native
+  var config: applicationinsightsLib.outLibraryConfigMod.^ = js.native
+  var context: applicationinsightsLib.outLibraryContextMod.^ = js.native
   /**
     * Add the metric to this buffer. If same metric already exists in this buffer, add weight to it
     * @param telemetry

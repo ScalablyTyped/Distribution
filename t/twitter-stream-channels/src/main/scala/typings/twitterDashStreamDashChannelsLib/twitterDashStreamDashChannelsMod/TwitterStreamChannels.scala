@@ -22,7 +22,7 @@ trait TwitterStreamChannels extends js.Object {
     * @returns {Twit}
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/TwitterStreamChannels.js#L113
     */
-  def getApiClient(): twitLib.twitMod.namespaced
+  def getApiClient(): twitLib.twitMod.^
   /**
     * Opens a Twitter Stream and returns you an other one on which you'll be able to attach events for each channels
     * @method streamChannels
@@ -37,15 +37,15 @@ trait TwitterStreamChannels extends js.Object {
     * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/TwitterStreamChannels.js#L131
     */
   def streamChannels(
-    options: twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannelsNs.StreamChannelsOptions
-  ): twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannels
+    options: twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.StreamChannelsNs.StreamChannelsOptions
+  ): StreamChannels
 }
 
 object TwitterStreamChannels {
   @scala.inline
   def apply(
-    getApiClient: () => twitLib.twitMod.namespaced,
-    streamChannels: twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannelsNs.StreamChannelsOptions => twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannels
+    getApiClient: () => twitLib.twitMod.^,
+    streamChannels: twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.StreamChannelsNs.StreamChannelsOptions => StreamChannels
   ): TwitterStreamChannels = {
     val __obj = js.Dynamic.literal(getApiClient = js.Any.fromFunction0(getApiClient), streamChannels = js.Any.fromFunction1(streamChannels))
   

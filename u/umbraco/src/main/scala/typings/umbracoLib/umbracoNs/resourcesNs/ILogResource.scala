@@ -33,7 +33,7 @@ trait ILogResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getEntityLog(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getEntityLog(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.logResource#getLog
@@ -55,7 +55,7 @@ trait ILogResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getLog(`type`: LogType, since: stdLib.Date): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getLog(`type`: LogType, since: stdLib.Date): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.logResource#getUserLog
@@ -77,15 +77,15 @@ trait ILogResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getUserLog(`type`: LogType, since: stdLib.Date): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getUserLog(`type`: LogType, since: stdLib.Date): angularLib.angularMod.IPromise[IResourcePromise]
 }
 
 object ILogResource {
   @scala.inline
   def apply(
-    getEntityLog: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getLog: (LogType, stdLib.Date) => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getUserLog: (LogType, stdLib.Date) => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    getEntityLog: scala.Double => angularLib.angularMod.IPromise[IResourcePromise],
+    getLog: (LogType, stdLib.Date) => angularLib.angularMod.IPromise[IResourcePromise],
+    getUserLog: (LogType, stdLib.Date) => angularLib.angularMod.IPromise[IResourcePromise]
   ): ILogResource = {
     val __obj = js.Dynamic.literal(getEntityLog = js.Any.fromFunction1(getEntityLog), getLog = js.Any.fromFunction2(getLog), getUserLog = js.Any.fromFunction2(getUserLog))
   

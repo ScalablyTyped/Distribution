@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SrcOptions
-  extends globDashStreamLib.globDashStreamMod.GlobStreamNs.Options {
+  extends globDashStreamLib.globDashStreamMod.Options {
   /**
     * Setting this to false will make file.contents a paused stream
     * If true it will buffer the file contents
@@ -117,7 +117,7 @@ object SrcOptions {
     stripBOM: js.UndefOr[scala.Boolean] = js.undefined,
     symlinks: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]] = null,
     sync: js.UndefOr[scala.Boolean] = js.undefined,
-    uniqueBy: globDashStreamLib.globDashStreamMod.GlobStreamNs.UniqueByStringPredicate | globDashStreamLib.globDashStreamMod.GlobStreamNs.UniqueByFunctionPredicate = null
+    uniqueBy: globDashStreamLib.globDashStreamMod.UniqueByStringPredicate | globDashStreamLib.globDashStreamMod.UniqueByFunctionPredicate = null
   ): SrcOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)

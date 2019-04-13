@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RemoteDependencyData
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.namespaced {
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.^ {
   /**
     * Command initiated by this dependency call. Examples are SQL statement and HTTP URL's with all query parameters.
     */

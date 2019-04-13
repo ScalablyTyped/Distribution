@@ -33,7 +33,7 @@ trait AngularFireArray
   	 * @returns a promise resolved after data is added
   	 */
   @JSName("$add")
-  def $add(newData: js.Any): angularLib.angularMod.angularNs.IPromise[
+  def $add(newData: js.Any): angularLib.angularMod.IPromise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
@@ -84,22 +84,22 @@ trait AngularFireArray
   	 * @returns a promise
   	 */
   @JSName("$loaded")
-  def $loaded(): angularLib.angularMod.angularNs.IPromise[AngularFireArray] = js.native
+  def $loaded(): angularLib.angularMod.IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[
       /* x */ this.type, 
-      angularLib.angularMod.angularNs.IHttpPromise[js.Object] | angularLib.angularMod.angularNs.IPromise[js.Object] | scala.Unit
+      angularLib.angularMod.IHttpPromise[js.Object] | angularLib.angularMod.IPromise[js.Object] | scala.Unit
     ]
-  ): angularLib.angularMod.angularNs.IPromise[AngularFireArray] = js.native
+  ): angularLib.angularMod.IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[
       /* x */ this.type, 
-      angularLib.angularMod.angularNs.IHttpPromise[js.Object] | angularLib.angularMod.angularNs.IPromise[js.Object] | scala.Unit
+      angularLib.angularMod.IHttpPromise[js.Object] | angularLib.angularMod.IPromise[js.Object] | scala.Unit
     ],
     reject: js.Function1[/* err */ js.Any, _]
-  ): angularLib.angularMod.angularNs.IPromise[AngularFireArray] = js.native
+  ): angularLib.angularMod.IPromise[AngularFireArray] = js.native
   /**
   	 * @returns {Firebase} the original Firebase ref used to create this object.
   	 */
@@ -120,7 +120,7 @@ trait AngularFireArray
   	 * @returns a promise which resolves after data is removed
   	 */
   @JSName("$remove")
-  def $remove(recordOrIndex: js.Any): angularLib.angularMod.angularNs.IPromise[
+  def $remove(recordOrIndex: js.Any): angularLib.angularMod.IPromise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
@@ -138,7 +138,7 @@ trait AngularFireArray
   	 * @returns a promise resolved after data is saved
   	 */
   @JSName("$save")
-  def $save(recordOrIndex: js.Any): angularLib.angularMod.angularNs.IPromise[
+  def $save(recordOrIndex: js.Any): angularLib.angularMod.IPromise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**

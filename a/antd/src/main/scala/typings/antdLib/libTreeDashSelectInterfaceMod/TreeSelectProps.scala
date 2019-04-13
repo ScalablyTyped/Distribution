@@ -16,16 +16,16 @@ trait TreeSelectProps
   var loadData: js.UndefOr[js.Function1[/* node */ js.Any, scala.Unit]] = js.undefined
   var maxTagCount: js.UndefOr[scala.Double] = js.undefined
   var maxTagPlaceholder: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* omittedValues */ js.Array[_], reactLib.reactMod.ReactNs.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* omittedValues */ js.Array[_], reactLib.reactMod.ReactNode])
   ] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("notFoundContent")
-  var notFoundContent_TreeSelectProps: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
+  var notFoundContent_TreeSelectProps: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any, scala.Unit]
   ] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement]] = js.undefined
   @JSName("onSearch")
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
@@ -35,9 +35,9 @@ trait TreeSelectProps
   var showCheckedStrategy: js.UndefOr[
     antdLib.antdLibStrings.SHOW_ALL | antdLib.antdLibStrings.SHOW_PARENT | antdLib.antdLibStrings.SHOW_CHILD
   ] = js.undefined
-  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var treeCheckStrictly: js.UndefOr[scala.Boolean] = js.undefined
-  var treeCheckable: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var treeCheckable: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNode] = js.undefined
   var treeData: js.UndefOr[js.Array[TreeNode]] = js.undefined
   var treeDataSimpleMode: js.UndefOr[scala.Boolean | TreeDataSimpleMode] = js.undefined
   var treeDefaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined
@@ -63,12 +63,12 @@ object TreeSelectProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropdownClassName: java.lang.String = null,
     dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    dropdownMenuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]]) => reactLib.reactMod.ReactNs.ReactNode = null,
-    dropdownStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
+    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[antdLib.libSelectMod.SelectProps[antdLib.libSelectMod.SelectValue]]) => reactLib.reactMod.ReactNode = null,
+    dropdownStyle: reactLib.reactMod.CSSProperties = null,
     filterOption: scala.Boolean | (js.Function2[
       /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactNs.ReactElement[antdLib.libSelectMod.OptionProps], 
+      /* option */ reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps], 
       _
     ]) = null,
     filterTreeNode: (/* inputValue */ java.lang.String, /* treeNode */ js.Any) => scala.Boolean = null,
@@ -78,18 +78,18 @@ object TreeSelectProps {
     loadData: /* node */ js.Any => scala.Unit = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     maxTagCount: scala.Int | scala.Double = null,
-    maxTagPlaceholder: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* omittedValues */ js.Array[_], reactLib.reactMod.ReactNs.ReactNode]) = null,
+    maxTagPlaceholder: reactLib.reactMod.ReactNode | (js.Function1[/* omittedValues */ js.Array[_], reactLib.reactMod.ReactNode]) = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement] = null,
+    notFoundContent: reactLib.reactMod.ReactNode = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] = null,
     onChange: (/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any) => scala.Unit = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLInputElement] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[stdLib.HTMLInputElement] = null,
     onSearch: /* value */ js.Any => scala.Unit = null,
     onSelect: /* value */ js.Any => scala.Unit = null,
     onTreeExpand: /* keys */ js.Array[java.lang.String] => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: java.lang.String | reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     searchPlaceholder: java.lang.String = null,
     searchValue: java.lang.String = null,
@@ -98,12 +98,12 @@ object TreeSelectProps {
     showCheckedStrategy: antdLib.antdLibStrings.SHOW_ALL | antdLib.antdLibStrings.SHOW_PARENT | antdLib.antdLibStrings.SHOW_CHILD = null,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
     size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    suffixIcon: reactLib.reactMod.ReactNode = null,
     tabIndex: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null,
     treeCheckStrictly: js.UndefOr[scala.Boolean] = js.undefined,
-    treeCheckable: scala.Boolean | reactLib.reactMod.ReactNs.ReactNode = null,
+    treeCheckable: scala.Boolean | reactLib.reactMod.ReactNode = null,
     treeData: js.Array[TreeNode] = null,
     treeDataSimpleMode: scala.Boolean | TreeDataSimpleMode = null,
     treeDefaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined,

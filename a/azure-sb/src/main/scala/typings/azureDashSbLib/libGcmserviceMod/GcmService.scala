@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GcmService extends js.Object {
-  var notificationHubService: azureDashSbLib.libNotificationhubserviceMod.namespaced = js.native
+  var notificationHubService: azureDashSbLib.libNotificationhubserviceMod.^ = js.native
   def createNativeRegistration(
     gcmRegistrationId: java.lang.String,
     tags: java.lang.String,

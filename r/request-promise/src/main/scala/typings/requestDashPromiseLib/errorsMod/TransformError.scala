@@ -9,14 +9,14 @@ trait TransformError
   extends stdLib.Error {
   var cause: js.Any
   var error: js.Any
-  var options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options
+  var options: requestDashPromiseLib.requestDashPromiseMod.Options
   var response: nodeLib.httpMod.IncomingMessage
 }
 
 @JSImport("request-promise/errors", "TransformError")
 @js.native
 class TransformErrorCls protected () extends TransformError {
-  def this(cause: js.Any, options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options, response: nodeLib.httpMod.IncomingMessage) = this()
+  def this(cause: js.Any, options: requestDashPromiseLib.requestDashPromiseMod.Options, response: nodeLib.httpMod.IncomingMessage) = this()
   /* CompleteClass */
   override var cause: js.Any = js.native
   /* CompleteClass */
@@ -26,7 +26,7 @@ class TransformErrorCls protected () extends TransformError {
   /* CompleteClass */
   override var name: java.lang.String = js.native
   /* CompleteClass */
-  override var options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options = js.native
+  override var options: requestDashPromiseLib.requestDashPromiseMod.Options = js.native
   /* CompleteClass */
   override var response: nodeLib.httpMod.IncomingMessage = js.native
 }
@@ -38,7 +38,7 @@ object TransformError {
     error: js.Any,
     message: java.lang.String,
     name: java.lang.String,
-    options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options,
+    options: requestDashPromiseLib.requestDashPromiseMod.Options,
     response: nodeLib.httpMod.IncomingMessage,
     stack: java.lang.String = null
   ): TransformError = {

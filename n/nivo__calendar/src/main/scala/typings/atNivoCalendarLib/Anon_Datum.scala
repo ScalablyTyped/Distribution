@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait Anon_Datum extends js.Object {
   def onClick(
     datum: atNivoCalendarLib.atNivoCalendarMod.CalendarDayData,
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGRectElement, reactLib.NativeMouseEvent]
+    event: reactLib.reactMod.MouseEvent[stdLib.SVGRectElement, reactLib.NativeMouseEvent]
   ): scala.Unit
 }
 
 object Anon_Datum {
   @scala.inline
   def apply(
-    onClick: (atNivoCalendarLib.atNivoCalendarMod.CalendarDayData, reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGRectElement, reactLib.NativeMouseEvent]) => scala.Unit
+    onClick: (atNivoCalendarLib.atNivoCalendarMod.CalendarDayData, reactLib.reactMod.MouseEvent[stdLib.SVGRectElement, reactLib.NativeMouseEvent]) => scala.Unit
   ): Anon_Datum = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction2(onClick))
   

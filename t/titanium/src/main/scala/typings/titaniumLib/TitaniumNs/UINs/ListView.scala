@@ -48,6 +48,10 @@ trait ListView extends View {
   			 */
   var editing: scala.Boolean = js.native
   /**
+  			 * Sets the fastScroll mode on Android ListViews.
+  			 */
+  var fastScroll: scala.Boolean = js.native
+  /**
   			 * When set to false, the ListView will not draw the divider before the footer view.
   			 */
   var footerDividersEnabled: scala.Boolean = js.native
@@ -243,6 +247,10 @@ trait ListView extends View {
   			 * Gets the value of the <Titanium.UI.ListView.editing> property.
   			 */
   def getEditing(): scala.Boolean = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.ListView.fastScroll> property.
+  			 */
+  def getFastScroll(): scala.Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ListView.footerDividersEnabled> property.
   			 */
@@ -467,6 +475,10 @@ trait ListView extends View {
   			 * Sets the value of the <Titanium.UI.ListView.editing> property.
   			 */
   def setEditing(editing: scala.Boolean): scala.Unit = js.native
+  /**
+  			 * Sets the value of the <Titanium.UI.ListView.fastScroll> property.
+  			 */
+  def setFastScroll(fastScroll: scala.Boolean): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ListView.footerDividersEnabled> property.
   			 */

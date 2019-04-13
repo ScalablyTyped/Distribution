@@ -32,6 +32,16 @@ package object dataNs {
     */
   type ProcessCallbackDelegate = xrmLib.XrmNs.ProcessFlowNs.ProcessCallbackDelegate
   /**
+    * Represents a key-value pair, where the key is the Process Flow's ID, and the value is the name thereof.
+    * @deprecated Use {@link Xrm.ProcessFlow.ProcessDictionary} instead.
+    */
+  type ProcessDictionary = xrmLib.XrmNs.ProcessFlowNs.ProcessDictionary
+  /**
+    * Interface for the Xrm.Page.data.process API.
+    * @deprecated Use {@link Xrm.ProcessFlow.ProcessManager} instead.
+    */
+  type ProcessManager = xrmLib.XrmNs.ProcessFlowNs.ProcessManager
+  /**
     * Called when process set status method has completed.
     * @param status The new status of the process instance
     * @remarks **Values returned are**:

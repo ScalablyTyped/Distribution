@@ -8,30 +8,28 @@ import scala.scalajs.js.annotation._
 trait ModalFuncProps extends js.Object {
   var autoFocusButton: js.UndefOr[scala.Null | antdLib.antdLibStrings.ok | antdLib.antdLibStrings.cancel] = js.undefined
   var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
-  var cancelText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var cancelText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var getContainer: js.UndefOr[
-    js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, stdLib.HTMLElement]
-  ] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var getContainer: js.UndefOr[js.Function1[/* instance */ reactLib.reactMod.ReactInstance, stdLib.HTMLElement]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
   var iconType: js.UndefOr[java.lang.String] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
-  var maskStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var maskStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
   var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   var okCancel: js.UndefOr[scala.Boolean] = js.undefined
-  var okText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var okText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.undefined
   var onOk: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -44,28 +42,28 @@ object ModalFuncProps {
   def apply(
     autoFocusButton: antdLib.antdLibStrings.ok | antdLib.antdLibStrings.cancel = null,
     cancelButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
-    cancelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    cancelText: reactLib.reactMod.ReactNode = null,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
-    getContainer: /* instance */ reactLib.reactMod.ReactNs.ReactInstance => stdLib.HTMLElement = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
+    getContainer: /* instance */ reactLib.reactMod.ReactInstance => stdLib.HTMLElement = null,
+    icon: reactLib.reactMod.ReactNode = null,
     iconClassName: java.lang.String = null,
     iconType: java.lang.String = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
-    maskStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    maskStyle: reactLib.reactMod.CSSProperties = null,
     maskTransitionName: java.lang.String = null,
     okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     okCancel: js.UndefOr[scala.Boolean] = js.undefined,
-    okText: reactLib.reactMod.ReactNs.ReactNode = null,
+    okText: reactLib.reactMod.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
     onCancel: /* repeated */ js.Any => _ | js.Thenable[_] = null,
     onOk: /* repeated */ js.Any => _ | js.Thenable[_] = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionName: java.lang.String = null,
     `type`: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,

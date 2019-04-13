@@ -19,3 +19,8 @@ class ViewLocation ()
   override def Clone(): mfilesLib.IViewLocation = js.native
 }
 
+@JSGlobal("MFiles.ViewLocation")
+@js.native
+object ViewLocation
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IViewLocation]
+

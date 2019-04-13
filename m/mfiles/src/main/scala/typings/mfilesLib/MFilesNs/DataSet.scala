@@ -17,3 +17,8 @@ class DataSet ()
   override def Clone(): mfilesLib.IDataSet = js.native
 }
 
+@JSGlobal("MFiles.DataSet")
+@js.native
+object DataSet
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IDataSet]
+

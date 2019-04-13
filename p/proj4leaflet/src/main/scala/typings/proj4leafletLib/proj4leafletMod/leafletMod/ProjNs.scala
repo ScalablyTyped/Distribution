@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ProjNs extends js.Object {
   @js.native
   class CRS protected () extends js.Object {
-    def this(projection: proj4Lib.proj4Mod.proj4Ns.InterfaceProjection) = this()
+    def this(projection: proj4Lib.proj4Mod.InterfaceProjection) = this()
     def this(code: java.lang.String, proj4def: java.lang.String) = this()
-    def this(projection: proj4Lib.proj4Mod.proj4Ns.InterfaceProjection, options: ProjCRSOptions) = this()
+    def this(projection: proj4Lib.proj4Mod.InterfaceProjection, options: ProjCRSOptions) = this()
     def this(code: java.lang.String, proj4def: java.lang.String, options: ProjCRSOptions) = this()
     var code: js.UndefOr[java.lang.String] = js.native
     var infinite: scala.Boolean = js.native

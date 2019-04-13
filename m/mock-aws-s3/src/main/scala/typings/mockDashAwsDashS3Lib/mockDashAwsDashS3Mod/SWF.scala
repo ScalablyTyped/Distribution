@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SWF ()
   extends awsDashSdkLib.awsDashSdkMod.SWF {
-  def this(options: awsDashSdkLib.clientsSwfMod.SWFNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSwfMod.ClientConfiguration) = this()
 }
 

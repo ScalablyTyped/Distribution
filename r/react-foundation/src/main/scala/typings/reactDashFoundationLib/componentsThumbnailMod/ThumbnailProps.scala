@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactLib.reactMod.ReactNs.ImgHTMLAttributes because var conflicts: className. Inlined alt, crossOrigin, decoding, height, sizes, src, srcSet, useMap, width */ trait ThumbnailProps
+- reactLib.reactMod.ImgHTMLAttributes because var conflicts: className. Inlined alt, crossOrigin, decoding, height, sizes, src, srcSet, useMap, width */ trait ThumbnailProps
   extends reactDashFoundationLib.utilsMod.FlexboxPropTypes {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var crossOrigin: js.UndefOr[
@@ -27,7 +27,7 @@ object ThumbnailProps {
   @scala.inline
   def apply(
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
-    ImgHTMLAttributes: reactLib.reactMod.ReactNs.ImgHTMLAttributes[stdLib.HTMLImageElement] = null
+    ImgHTMLAttributes: reactLib.reactMod.ImgHTMLAttributes[stdLib.HTMLImageElement] = null
   ): ThumbnailProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)

@@ -30,29 +30,23 @@ class Converter ()
   var typeNodeConverters: js.Any = js.native
   var typeTypeConverters: js.Any = js.native
   def convert(fileNames: js.Array[java.lang.String]): ConverterResult = js.native
-  def convertNode(
-    context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.Node
-  ): js.UndefOr[typedocLib.distLibModelsMod.Reflection] = js.native
+  def convertNode(context: typedocLib.distLibConverterContextMod.Context, node: typescriptLib.typescriptMod.Node): js.UndefOr[typedocLib.distLibModelsMod.Reflection] = js.native
   def convertType(context: typedocLib.distLibConverterContextMod.Context): js.UndefOr[typedocLib.distLibModelsMod.Type] = js.native
+  def convertType(context: typedocLib.distLibConverterContextMod.Context, node: typescriptLib.typescriptMod.Node): js.UndefOr[typedocLib.distLibModelsMod.Type] = js.native
   def convertType(
     context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.Node
-  ): js.UndefOr[typedocLib.distLibModelsMod.Type] = js.native
-  def convertType(
-    context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.Node,
-    `type`: typescriptLib.typescriptMod.tsNs.Type
+    node: typescriptLib.typescriptMod.Node,
+    `type`: typescriptLib.typescriptMod.Type
   ): js.UndefOr[typedocLib.distLibModelsMod.Type] = js.native
   def convertTypes(context: typedocLib.distLibConverterContextMod.Context): js.Array[typedocLib.distLibModelsMod.Type] = js.native
   def convertTypes(
     context: typedocLib.distLibConverterContextMod.Context,
-    nodes: js.Array[typescriptLib.typescriptMod.tsNs.Node]
+    nodes: js.Array[typescriptLib.typescriptMod.Node]
   ): js.Array[typedocLib.distLibModelsMod.Type] = js.native
   def convertTypes(
     context: typedocLib.distLibConverterContextMod.Context,
-    nodes: js.Array[typescriptLib.typescriptMod.tsNs.Node],
-    types: js.Array[typescriptLib.typescriptMod.tsNs.Type]
+    nodes: js.Array[typescriptLib.typescriptMod.Node],
+    types: js.Array[typescriptLib.typescriptMod.Type]
   ): js.Array[typedocLib.distLibModelsMod.Type] = js.native
   def getDefaultLib(): java.lang.String = js.native
 }

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CodeStar ()
   extends awsDashSdkLib.awsDashSdkMod.CodeStar {
-  def this(options: awsDashSdkLib.clientsCodestarMod.CodeStarNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCodestarMod.ClientConfiguration) = this()
 }
 

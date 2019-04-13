@@ -31,3 +31,8 @@ class ExpressionEx ()
   override def Clone(): mfilesLib.IExpressionEx = js.native
 }
 
+@JSGlobal("MFiles.ExpressionEx")
+@js.native
+object ExpressionEx
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IExpressionEx]
+

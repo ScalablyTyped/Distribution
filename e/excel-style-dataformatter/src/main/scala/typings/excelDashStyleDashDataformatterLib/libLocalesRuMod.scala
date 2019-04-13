@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libLocalesRuMod
   extends org.scalablytyped.runtime.TopLevel[
-      excelDashStyleDashDataformatterLib.excelDashStyleDashDataformatterMod.DataFormatterNs.LocalesOptions
+      excelDashStyleDashDataformatterLib.excelDashStyleDashDataformatterMod.LocalesOptions
     ]
 

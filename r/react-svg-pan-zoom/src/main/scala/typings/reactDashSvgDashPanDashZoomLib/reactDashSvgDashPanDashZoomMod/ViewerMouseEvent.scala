@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ViewerMouseEvent[T] extends js.Object {
   var SVGViewer: stdLib.SVGSVGElement
-  var originalEvent: reactLib.reactMod.ReactNs.MouseEvent[T, reactLib.NativeMouseEvent]
+  var originalEvent: reactLib.reactMod.MouseEvent[T, reactLib.NativeMouseEvent]
   var point: Point
   var scaleFactor: scala.Double
   var translationX: scala.Double
@@ -22,7 +22,7 @@ object ViewerMouseEvent {
   @scala.inline
   def apply[T](
     SVGViewer: stdLib.SVGSVGElement,
-    originalEvent: reactLib.reactMod.ReactNs.MouseEvent[T, reactLib.NativeMouseEvent],
+    originalEvent: reactLib.reactMod.MouseEvent[T, reactLib.NativeMouseEvent],
     point: Point,
     preventDefault: () => scala.Unit,
     scaleFactor: scala.Double,

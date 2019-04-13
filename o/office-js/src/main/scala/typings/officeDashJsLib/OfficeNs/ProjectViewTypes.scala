@@ -14,20 +14,6 @@ sealed trait ProjectViewTypes extends js.Object
   * @remarks
   * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the 
   * active view.
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this enumeration.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-  *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
-  *  </table>
   */
 @JSGlobal("Office.ProjectViewTypes")
 @js.native

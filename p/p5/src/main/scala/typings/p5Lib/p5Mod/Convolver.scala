@@ -5,36 +5,100 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("p5", "Convolver")
 @js.native
-class Convolver protected ()
-  extends p5Lib.p5Mod.p5Ns.Convolver {
+trait Convolver extends Effect {
   /**
-    *   p5.Convolver extends p5.Reverb. It can emulate the
-    *   sound of real physical spaces through a process
-    *   called  convolution. Convolution multiplies any
-    *   audio input by an "impulse response" to simulate
-    *   the dispersion of sound over time. The impulse
-    *   response is generated from an audio file that you
-    *   provide. One way to generate an impulse response
-    *   is to pop a balloon in a reverberant space and
-    *   record the echo. Convolution can also be used to
-    *   experiment with sound.
-    *
-    *   Use the method createConvolution(path) to
-    *   instantiate a p5.Convolver with a path to your
-    *   impulse response audio file.
-    *
-    *   @param path path to a sound file
-    *   @param [callback] function to call when loading
-    *   succeeds
-    *   @param [errorCallback] function to call if loading
-    *   fails. This function will receive an error or
-    *   XMLHttpRequest object with information about what
-    *   went wrong.
+    *   Internally, the p5.Convolver uses the a  Web Audio
+    *   Convolver Node.
     */
-  def this(path: java.lang.String) = this()
-  def this(path: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]) = this()
-  def this(path: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _], errorCallback: js.Function1[/* repeated */ js.Any, _]) = this()
+  var convolverNode: stdLib.ConvolverNode = js.native
+  /**
+    *   If you load multiple impulse files using the
+    *   .addImpulse method, they will be stored as Objects
+    *   in this Array. Toggle between them with the
+    *   toggleImpulse(id) method.
+    */
+  var impulses: js.Array[_] = js.native
+  /**
+    *   Load and assign a new Impulse Response to the
+    *   p5.Convolver. The impulse is added to the
+    *   .impulses array. Previous impulses can be accessed
+    *   with the .toggleImpulse(id) method.
+    *   @param path path to a sound file
+    *   @param callback function (optional)
+    *   @param errorCallback function (optional)
+    */
+  def addImpulse(
+    path: java.lang.String,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): scala.Unit = js.native
+  /**
+    *   Create a p5.Convolver. Accepts a path to a
+    *   soundfile that will be used to generate an impulse
+    *   response.
+    *   @param path path to a sound file
+    *   @param [callback] function to call if loading is
+    *   successful. The object will be passed in as the
+    *   argument to the callback function.
+    *   @param [errorCallback] function to call if loading
+    *   is not successful. A custom error will be passed
+    *   in as the argument to the callback function.
+    */
+  def createConvolver(path: java.lang.String): Convolver = js.native
+  def createConvolver(path: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): Convolver = js.native
+  def createConvolver(
+    path: java.lang.String,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): Convolver = js.native
+  /**
+    *   Connect a source to the reverb, and assign reverb
+    *   parameters.
+    *   @param src p5.sound / Web Audio object with a
+    *   sound output.
+    */
+  def process(src: js.Object): scala.Unit = js.native
+  /**
+    *   Similar to .addImpulse, except that the .impulses
+    *   Array is reset to save memory. A new .impulses
+    *   array is created with this impulse as the only
+    *   item.
+    *   @param path path to a sound file
+    *   @param callback function (optional)
+    *   @param errorCallback function (optional)
+    */
+  def resetImpulse(
+    path: java.lang.String,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): scala.Unit = js.native
+  /**
+    *   Set the global tempo, in beats per minute, for all
+    *   p5.Parts. This method will impact all active
+    *   p5.Parts.
+    *   @param BPM Beats Per Minute
+    *   @param rampTime Seconds from now
+    */
+  def setBPM(BPM: scala.Double, rampTime: scala.Double): scala.Unit = js.native
+  /**
+    *   If you have used .addImpulse() to add multiple
+    *   impulses to a p5.Convolver, then you can use this
+    *   method to toggle between the items in the
+    *   .impulses Array. Accepts a parameter to identify
+    *   which impulse you wish to use, identified either
+    *   by its original filename (String) or by its
+    *   position in the .impulses  Array (Number). You can
+    *   access the objects in the .impulses Array
+    *   directly. Each Object has two attributes: an
+    *   .audioBuffer (type: Web Audio  AudioBuffer) and a
+    *   .name, a String that corresponds with the original
+    *   filename.
+    *   @param id Identify the impulse by its original
+    *   filename (String), or by its position in the
+    *   .impulses Array (Number).
+    */
+  def toggleImpulse(id: java.lang.String): scala.Unit = js.native
+  def toggleImpulse(id: scala.Double): scala.Unit = js.native
 }
 

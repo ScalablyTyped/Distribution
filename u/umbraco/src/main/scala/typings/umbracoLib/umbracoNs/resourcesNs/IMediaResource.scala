@@ -33,7 +33,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def addFolder(name: java.lang.String, parentId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def addFolder(name: java.lang.String, parentId: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#deleteById
@@ -54,7 +54,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def deleteById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def deleteById(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#emptyRecycleBin
@@ -74,7 +74,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def emptyRecycleBin(): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def emptyRecycleBin(): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getById
@@ -96,7 +96,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the media item.
     *
     */
-  def getById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getById(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getByIds
@@ -118,7 +118,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the media items array.
     *
     */
-  def getByIds(ids: js.Array[scala.Double]): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getByIds(ids: js.Array[scala.Double]): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getChildren
@@ -146,8 +146,8 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object containing an array of content items.
     *
     */
-  def getChildren(parentId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
-  def getChildren(parentId: scala.Double, options: umbracoLib.Anon_Filter): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getChildren(parentId: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
+  def getChildren(parentId: scala.Double, options: umbracoLib.Anon_Filter): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getScaffold
@@ -180,7 +180,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the media scaffold.
     *
     */
-  def getScaffold(parentId: scala.Double, alias: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getScaffold(parentId: scala.Double, alias: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#move
@@ -204,7 +204,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def move(args: js.Any*): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def move(args: js.Any*): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   def rootMedia(): js.Any = js.native
   /**
     * @ngdoc method
@@ -234,7 +234,7 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the saved media item.
     *
     */
-  def save(media: js.Object, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def save(media: js.Object, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#sort
@@ -257,6 +257,6 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def sort(args: js.Any*): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def sort(args: js.Any*): angularLib.angularMod.IPromise[IResourcePromise] = js.native
 }
 

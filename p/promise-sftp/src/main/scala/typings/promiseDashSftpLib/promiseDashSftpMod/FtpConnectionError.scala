@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("promise-sftp", "FtpConnectionError")
 @js.native
 class FtpConnectionError ()
-  extends promiseDashSftpLib.promiseDashSftpMod.PromiseSftpNs.FtpConnectionError
+  extends promiseDashFtpDashCommonLib.promiseDashFtpDashCommonMod.FtpConnectionError
 

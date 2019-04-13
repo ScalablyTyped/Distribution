@@ -18,7 +18,7 @@ class Stack[T] () extends js.Object {
   /**
     * Returns an iterator over the values
     */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[stdLib.IterableIterator[T]] = js.native
   /**
     * The top element of the stack

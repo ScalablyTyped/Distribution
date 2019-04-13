@@ -12,12 +12,12 @@ trait SparklinesBarsProps extends js.Object {
   var onMouseMove: js.UndefOr[
     js.Function2[
       /* p */ Point, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.reactMod.ReactNs.ReactSVGElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[reactLib.reactMod.ReactSVGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var points: js.UndefOr[js.Array[Point]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SparklinesBarsProps {
@@ -26,9 +26,9 @@ object SparklinesBarsProps {
     barWidth: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
     margin: scala.Int | scala.Double = null,
-    onMouseMove: (/* p */ Point, /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.reactMod.ReactNs.ReactSVGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseMove: (/* p */ Point, /* event */ reactLib.reactMod.MouseEvent[reactLib.reactMod.ReactSVGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     points: js.Array[Point] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): SparklinesBarsProps = {
     val __obj = js.Dynamic.literal()
     if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])

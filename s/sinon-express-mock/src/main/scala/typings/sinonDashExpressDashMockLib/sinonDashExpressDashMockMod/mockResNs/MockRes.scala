@@ -8,49 +8,49 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MockRes extends js.Object {
   @JSName("append")
-  var append_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var append_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("attachement")
-  var attachement_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var attachement_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("clearCookie")
-  var clearCookie_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var clearCookie_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("cookie")
-  var cookie_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var cookie_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("download")
-  var download_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var download_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("end")
-  var end_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var end_Original: sinonLib.sinonMod.SinonStub = js.native
   var format: js.Object = js.native
   @JSName("get")
-  var get_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var get_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("headersSent")
-  var headersSent_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var headersSent_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("json")
-  var json_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var json_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("jsonp")
-  var jsonp_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var jsonp_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("links")
-  var links_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var links_Original: sinonLib.sinonMod.SinonStub = js.native
   var locals: js.Object = js.native
   @JSName("location")
-  var location_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var location_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("redirect")
-  var redirect_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var redirect_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("render")
-  var render_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var render_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("sendFile")
-  var sendFile_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var sendFile_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("sendStatus")
-  var sendStatus_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var sendStatus_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("send")
-  var send_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var send_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("set")
-  var set_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var set_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("status")
-  var status_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var status_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("type")
-  var type_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var type_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("vary")
-  var vary_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var vary_Original: sinonLib.sinonMod.SinonStub = js.native
   // Methods
   def append(args: js.Any*): js.Any = js.native
   // Methods

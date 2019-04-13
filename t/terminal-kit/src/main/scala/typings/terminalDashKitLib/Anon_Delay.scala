@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait Anon_Delay extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
   var flashDelay: js.UndefOr[scala.Double] = js.undefined
-  var flashStyle: js.UndefOr[terminalDashKitLib.terminalMod.TerminalNs.CTerminal] = js.undefined
-  var style: js.UndefOr[terminalDashKitLib.terminalMod.TerminalNs.CTerminal] = js.undefined
+  var flashStyle: js.UndefOr[terminalDashKitLib.terminalMod.CTerminal] = js.undefined
+  var style: js.UndefOr[terminalDashKitLib.terminalMod.CTerminal] = js.undefined
 }
 
 object Anon_Delay {
@@ -17,8 +17,8 @@ object Anon_Delay {
   def apply(
     delay: scala.Int | scala.Double = null,
     flashDelay: scala.Int | scala.Double = null,
-    flashStyle: terminalDashKitLib.terminalMod.TerminalNs.CTerminal = null,
-    style: terminalDashKitLib.terminalMod.TerminalNs.CTerminal = null
+    flashStyle: terminalDashKitLib.terminalMod.CTerminal = null,
+    style: terminalDashKitLib.terminalMod.CTerminal = null
   ): Anon_Delay = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

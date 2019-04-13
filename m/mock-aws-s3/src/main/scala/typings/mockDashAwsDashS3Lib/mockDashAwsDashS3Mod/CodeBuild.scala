@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CodeBuild ()
   extends awsDashSdkLib.awsDashSdkMod.CodeBuild {
-  def this(options: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCodebuildMod.ClientConfiguration) = this()
 }
 

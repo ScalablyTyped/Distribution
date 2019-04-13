@@ -49,7 +49,7 @@ object SwitchProps {
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     label: java.lang.String = null,
     name: java.lang.String = null,
     onBlur: js.Function = null,
@@ -77,7 +77,7 @@ object SwitchProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: SwitchTheme = null
   ): SwitchProps = {
     val __obj = js.Dynamic.literal()

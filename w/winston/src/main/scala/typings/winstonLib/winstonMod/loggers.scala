@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("winston", "loggers")
 @js.native
-class loggers ()
-  extends winstonLib.winstonMod.winstonNs.Container {
-  def this(options: winstonLib.winstonMod.winstonNs.LoggerOptions) = this()
+class loggers () extends Container {
+  def this(options: LoggerOptions) = this()
 }
 

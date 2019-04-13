@@ -12,7 +12,7 @@ trait Anon_Autofocus extends js.Object {
   var modifier: js.UndefOr[java.lang.String] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ChangeEvent[_], scala.Unit]] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
@@ -27,7 +27,7 @@ object Anon_Autofocus {
     modifier: java.lang.String = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: /* e */ reactLib.reactMod.ReactNs.ChangeEvent[_] => scala.Unit = null,
+    onChange: /* e */ reactLib.reactMod.ChangeEvent[_] => scala.Unit = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     value: java.lang.String = null

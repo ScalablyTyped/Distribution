@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   extends EventAttributes
      with Animatable {
   var background: js.UndefOr[
-    scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | js.Object
+    scala.Boolean | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | js.Object
   ] = js.undefined
   var barSize: js.UndefOr[scala.Double] = js.undefined
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   // see label section at http://recharts.org/#/en-US/api/Bar
   var label: js.UndefOr[
-    scala.Boolean | Label | LabelProps | reactLib.reactMod.ReactNs.SFC[LabelProps] | reactLib.reactMod.ReactNs.ReactElement[LabelProps] | ContentRenderer[_]
+    scala.Boolean | Label | LabelProps | reactLib.reactMod.SFC[LabelProps] | reactLib.reactMod.ReactElement[LabelProps] | ContentRenderer[_]
   ] = js.undefined
   var layout: js.UndefOr[LayoutType] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
   var minPointSize: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var radius: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
-  var shape: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[RectangleProps]] = js.undefined
+  var shape: js.UndefOr[reactLib.reactMod.ReactElement[_] | ContentRenderer[RectangleProps]] = js.undefined
   var stackId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var unit: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var xAxis: js.UndefOr[js.Object] = js.undefined
@@ -46,7 +46,7 @@ object BarProps {
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: AnimationEasingType = null,
     animationId: scala.Int | scala.Double = null,
-    background: scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | js.Object = null,
+    background: scala.Boolean | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | js.Object = null,
     barSize: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     data: js.Array[BarData] = null,
@@ -54,7 +54,7 @@ object BarProps {
     hide: js.UndefOr[scala.Boolean] = js.undefined,
     isAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
-    label: scala.Boolean | Label | LabelProps | reactLib.reactMod.ReactNs.SFC[LabelProps] | reactLib.reactMod.ReactNs.ReactElement[LabelProps] | ContentRenderer[_] = null,
+    label: scala.Boolean | Label | LabelProps | reactLib.reactMod.SFC[LabelProps] | reactLib.reactMod.ReactElement[LabelProps] | ContentRenderer[_] = null,
     layout: LayoutType = null,
     legendType: LegendType = null,
     maxBarSize: scala.Int | scala.Double = null,
@@ -75,7 +75,7 @@ object BarProps {
     onTouchMove: RechartsFunction = null,
     onTouchStart: RechartsFunction = null,
     radius: scala.Double | js.Array[scala.Double] = null,
-    shape: reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[RectangleProps] = null,
+    shape: reactLib.reactMod.ReactElement[_] | ContentRenderer[RectangleProps] = null,
     stackId: java.lang.String | scala.Double = null,
     unit: java.lang.String | scala.Double = null,
     xAxis: js.Object = null,

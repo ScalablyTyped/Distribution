@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MediaStore ()
   extends awsDashSdkLib.clientsAllMod.MediaStore {
-  def this(options: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMediastoreMod.ClientConfiguration) = this()
 }
 

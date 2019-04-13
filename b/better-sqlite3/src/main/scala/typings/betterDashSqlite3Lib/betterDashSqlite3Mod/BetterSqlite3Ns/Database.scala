@@ -12,10 +12,7 @@ trait Database extends js.Object {
   var name: java.lang.String = js.native
   var open: scala.Boolean = js.native
   var readonly: scala.Boolean = js.native
-  def aggregate(
-    name: java.lang.String,
-    options: betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.AggregateOptions
-  ): this.type = js.native
+  def aggregate(name: java.lang.String, options: betterDashSqlite3Lib.betterDashSqlite3Mod.AggregateOptions): this.type = js.native
   def checkpoint(): this.type = js.native
   def checkpoint(databaseName: java.lang.String): this.type = js.native
   def close(): this.type = js.native
@@ -25,15 +22,12 @@ trait Database extends js.Object {
   def function(name: java.lang.String, cb: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
   def function(
     name: java.lang.String,
-    options: betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.RegistrationOptions,
+    options: betterDashSqlite3Lib.betterDashSqlite3Mod.RegistrationOptions,
     cb: js.Function1[/* repeated */ js.Any, _]
   ): this.type = js.native
   def loadExtension(path: java.lang.String): this.type = js.native
   def pragma(source: java.lang.String): js.Any = js.native
-  def pragma(
-    source: java.lang.String,
-    options: betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.PragmaOptions
-  ): js.Any = js.native
+  def pragma(source: java.lang.String, options: betterDashSqlite3Lib.betterDashSqlite3Mod.PragmaOptions): js.Any = js.native
   def prepare(source: java.lang.String): Statement = js.native
   def transaction[F /* <: betterDashSqlite3Lib.VariableArgFunction */](fn: F): Transaction[F] = js.native
 }

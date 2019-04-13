@@ -23,3 +23,8 @@ class SourceObjectFiles ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.SourceObjectFiles")
+@js.native
+object SourceObjectFiles
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISourceObjectFiles]
+

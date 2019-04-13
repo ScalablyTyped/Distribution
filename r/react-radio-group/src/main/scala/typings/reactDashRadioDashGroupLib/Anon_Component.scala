@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Component extends js.Object {
   var Component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactType[
+    reactLib.reactMod.ReactType[
       reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.Omit[
-        reactLib.reactMod.ReactNs.HTMLProps[_], 
+        reactLib.reactMod.HTMLProps[_], 
         reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.onChange | reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.role
       ]
     ]
@@ -21,9 +21,9 @@ trait Anon_Component extends js.Object {
 object Anon_Component {
   @scala.inline
   def apply(
-    Component: reactLib.reactMod.ReactNs.ReactType[
+    Component: reactLib.reactMod.ReactType[
       reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.Omit[
-        reactLib.reactMod.ReactNs.HTMLProps[_], 
+        reactLib.reactMod.HTMLProps[_], 
         reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.onChange | reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.role
       ]
     ] = null,

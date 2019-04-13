@@ -13,6 +13,6 @@ object ^ extends js.Object {
     */
   def apply(): js.Function2[/* view */ java.lang.String, /* locals */ js.UndefOr[js.Object], _] = js.native
   def apply(dir: java.lang.String): js.Function2[/* view */ java.lang.String, /* locals */ js.UndefOr[js.Object], _] = js.native
-  def apply(dir: java.lang.String, opts: coDashViewsLib.coDashViewsMod.CoViewsNs.Options): js.Function2[/* view */ java.lang.String, /* locals */ js.UndefOr[js.Object], _] = js.native
+  def apply(dir: java.lang.String, opts: Options): js.Function2[/* view */ java.lang.String, /* locals */ js.UndefOr[js.Object], _] = js.native
 }
 

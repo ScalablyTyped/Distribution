@@ -62,7 +62,7 @@ trait Cypress extends js.Object {
     * @example
     *    Cypress._.keys(obj)
     */
-  var `_`: cypressLib.typesLodashMod.underscoreNs.LoDashStatic = js.native
+  var `_`: cypressLib.typesLodashMod.LoDashStatic = js.native
   /**
     * CPU architecture, from Node `os.arch()`
     *
@@ -1154,9 +1154,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:alert`(
     action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[
-      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
-    ]
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
@@ -1212,9 +1210,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[
-      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
-    ]
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
@@ -1461,9 +1457,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:alert`(
     action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[
-      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
-    ]
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
@@ -1519,9 +1513,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[
-      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
-    ]
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.

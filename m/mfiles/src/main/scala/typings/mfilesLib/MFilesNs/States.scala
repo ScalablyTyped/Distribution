@@ -15,3 +15,8 @@ class States ()
   override def Item(Index: scala.Double): mfilesLib.IState = js.native
 }
 
+@JSGlobal("MFiles.States")
+@js.native
+object States
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStates]
+

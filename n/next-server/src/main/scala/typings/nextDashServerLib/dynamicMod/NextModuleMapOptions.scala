@@ -15,7 +15,7 @@ trait NextModuleMapOptions[P /* <: js.Object */, E /* <: org.scalablytyped.runti
     loaded: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof E ]: next-server.next-server/dynamic.DynamicComponent<E[P]>}
     */ nextDashServerLib.nextDashServerLibStrings.NextModuleMapOptions with E
-  ): reactLib.reactMod.ReactNs.ReactNode
+  ): reactLib.reactMod.ReactNode
 }
 
 object NextModuleMapOptions {
@@ -26,9 +26,9 @@ object NextModuleMapOptions {
     */ nextDashServerLib.nextDashServerLibStrings.NextModuleMapOptions with E,
     render: (P, /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof E ]: next-server.next-server/dynamic.DynamicComponent<E[P]>}
-    */ nextDashServerLib.nextDashServerLibStrings.NextModuleMapOptions with E) => reactLib.reactMod.ReactNs.ReactNode,
+    */ nextDashServerLib.nextDashServerLibStrings.NextModuleMapOptions with E) => reactLib.reactMod.ReactNode,
     loadableGenerated: nextDashServerLib.Anon_Modules = null,
-    loading: reactLib.reactMod.ReactNs.ComponentType[reactDashLoadableLib.LoadableExportNs.LoadingComponentProps] | js.Function0[scala.Null] = null,
+    loading: reactLib.reactMod.ComponentType[reactDashLoadableLib.LoadableExportNs.LoadingComponentProps] | js.Function0[scala.Null] = null,
     ssr: js.UndefOr[scala.Boolean] = js.undefined
   ): NextModuleMapOptions[P, E] = {
     val __obj = js.Dynamic.literal(modules = js.Any.fromFunction0(modules), render = js.Any.fromFunction2(render))

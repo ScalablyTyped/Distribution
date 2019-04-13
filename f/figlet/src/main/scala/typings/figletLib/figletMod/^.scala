@@ -18,7 +18,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def apply(
     txt: java.lang.String,
-    font: figletLib.figletMod.figletNs.Fonts,
+    font: Fonts,
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
       /* result */ js.UndefOr[java.lang.String], 
@@ -32,15 +32,15 @@ object ^ extends js.Object {
   // tslint:disable-next-line: unified-signatures
   def apply(
     txt: java.lang.String,
-    options: js.UndefOr[figletLib.figletMod.figletNs.Options],
+    options: js.UndefOr[Options],
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
       /* result */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def defaults(): figletLib.figletMod.figletNs.Defaults = js.native
-  def defaults(opt: stdLib.Partial[figletLib.figletMod.figletNs.Defaults]): figletLib.figletMod.figletNs.Defaults = js.native
+  def defaults(): Defaults = js.native
+  def defaults(opt: stdLib.Partial[Defaults]): Defaults = js.native
   /**
     * @warn
     * This method exists in node environment only.
@@ -49,7 +49,7 @@ object ^ extends js.Object {
   def fonts(
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
-      /* fontList */ js.UndefOr[js.Array[figletLib.figletMod.figletNs.Fonts]], 
+      /* fontList */ js.UndefOr[js.Array[Fonts]], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -58,12 +58,12 @@ object ^ extends js.Object {
     * This method exists in node environment only.
     * In browser environment, this method does not exist.
     */
-  def fontsSync(): js.Array[figletLib.figletMod.figletNs.Fonts] = js.native
+  def fontsSync(): js.Array[Fonts] = js.native
   def loadFont(
-    font: figletLib.figletMod.figletNs.Fonts,
+    font: Fonts,
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
-      /* fontOptions */ js.UndefOr[figletLib.figletMod.figletNs.FontOptions], 
+      /* fontOptions */ js.UndefOr[FontOptions], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -76,12 +76,12 @@ object ^ extends js.Object {
     * This method works in node environment only.
     * In browser environment, this method does not work.
     */
-  def loadFontSync(font: figletLib.figletMod.figletNs.Fonts): figletLib.figletMod.figletNs.FontOptions = js.native
+  def loadFontSync(font: Fonts): FontOptions = js.native
   def metadata(
-    font: figletLib.figletMod.figletNs.Fonts,
+    font: Fonts,
     cb: js.Function3[
       /* error */ stdLib.Error | scala.Null, 
-      /* fontOptions */ js.UndefOr[figletLib.figletMod.figletNs.FontOptions], 
+      /* fontOptions */ js.UndefOr[FontOptions], 
       /* headerComment */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
@@ -96,7 +96,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def text(
     txt: java.lang.String,
-    font: figletLib.figletMod.figletNs.Fonts,
+    font: Fonts,
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
       /* result */ js.UndefOr[java.lang.String], 
@@ -110,7 +110,7 @@ object ^ extends js.Object {
   // tslint:disable-next-line: unified-signatures
   def text(
     txt: java.lang.String,
-    options: figletLib.figletMod.figletNs.Options,
+    options: Options,
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
       /* result */ js.UndefOr[java.lang.String], 
@@ -127,12 +127,12 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def textSync(txt: java.lang.String): java.lang.String = js.native
-  def textSync(txt: java.lang.String, font: figletLib.figletMod.figletNs.Fonts): java.lang.String = js.native
+  def textSync(txt: java.lang.String, font: Fonts): java.lang.String = js.native
   /**
     * @desc
     * This `unified-signatures` is disabled because `Fonts` type is too long
     */
   // tslint:disable-next-line: unified-signatures
-  def textSync(txt: java.lang.String, options: figletLib.figletMod.figletNs.Options): java.lang.String = js.native
+  def textSync(txt: java.lang.String, options: Options): java.lang.String = js.native
 }
 

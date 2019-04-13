@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait VideoTrackList
   extends EventTarget
      with /* index */ org.scalablytyped.runtime.NumberDictionary[VideoTrack] {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[VideoTrack]] = js.native
   val length: scala.Double = js.native
   var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | scala.Null = js.native

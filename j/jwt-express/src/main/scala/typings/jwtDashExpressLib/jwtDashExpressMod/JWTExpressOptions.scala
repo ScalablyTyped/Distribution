@@ -13,7 +13,7 @@ trait JWTExpressOptions extends js.Object {
   /**
     * Options to use when storing the cookie (default: {httpOnly: true})
     */
-  var cookieOptions: js.UndefOr[expressLib.expressMod.eNs.CookieOptions] = js.undefined
+  var cookieOptions: js.UndefOr[expressLib.expressMod.CookieOptions] = js.undefined
   /**
     * If true, will use cookies, otherwise will use the Authorization header (default: true)
     */
@@ -52,7 +52,7 @@ object JWTExpressOptions {
   @scala.inline
   def apply(
     cookie: java.lang.String = null,
-    cookieOptions: expressLib.expressMod.eNs.CookieOptions = null,
+    cookieOptions: expressLib.expressMod.CookieOptions = null,
     cookies: js.UndefOr[scala.Boolean] = js.undefined,
     refresh: js.UndefOr[scala.Boolean] = js.undefined,
     reqProperty: java.lang.String = null,

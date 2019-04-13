@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object glDashReactMod {
+  type ShadersSheet = org.scalablytyped.runtime.StringDictionary[ShaderIdentifier]
   type Vec2 = js.Tuple2[scala.Double, scala.Double]
   type Vec4 = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
   type connectSize = js.Function1[/* GLComponent */ js.Any, js.Any]

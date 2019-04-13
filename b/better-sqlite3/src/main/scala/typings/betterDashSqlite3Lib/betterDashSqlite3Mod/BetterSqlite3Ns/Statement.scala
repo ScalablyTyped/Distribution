@@ -21,7 +21,7 @@ trait Statement extends js.Object {
   def pluck(toggleState: scala.Boolean): this.type = js.native
   def raw(): this.type = js.native
   def raw(toggleState: scala.Boolean): this.type = js.native
-  def run(params: js.Any*): betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.RunResult = js.native
+  def run(params: js.Any*): betterDashSqlite3Lib.betterDashSqlite3Mod.RunResult = js.native
   def safeIntegers(): this.type = js.native
   def safeIntegers(toggleState: scala.Boolean): this.type = js.native
 }

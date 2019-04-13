@@ -11,7 +11,7 @@ trait StrictBreadcrumbSectionProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -29,7 +29,7 @@ trait StrictBreadcrumbSectionProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ BreadcrumbSectionProps, 
       scala.Unit
     ]
@@ -41,12 +41,12 @@ object StrictBreadcrumbSectionProps {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     href: java.lang.String = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ BreadcrumbSectionProps) => scala.Unit = null
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ BreadcrumbSectionProps) => scala.Unit = null
   ): StrictBreadcrumbSectionProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

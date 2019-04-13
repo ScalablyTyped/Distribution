@@ -10,42 +10,32 @@ trait Twitter extends js.Object {
   val VERSION: java.lang.String = js.native
   val allow_promise: scala.Boolean = js.native
   @JSName("request")
-  val request_Original: (requestLib.requestMod.requestNs.RequestAPI[
-    requestLib.requestMod.requestNs.Request, 
-    requestLib.requestMod.requestNs.CoreOptions, 
-    requestLib.requestMod.requestNs.RequiredUriUrl
-  ]) with twitterLib.Anon_Request = js.native
-  def get(path: java.lang.String): js.Promise[twitterLib.twitterMod.TwitterNs.ResponseData] = js.native
-  def get(path: java.lang.String, callback: twitterLib.twitterMod.TwitterNs.Callback): scala.Unit = js.native
-  def get(path: java.lang.String, params: twitterLib.twitterMod.TwitterNs.RequestParams): js.Promise[twitterLib.twitterMod.TwitterNs.ResponseData] = js.native
-  def get(
-    path: java.lang.String,
-    params: twitterLib.twitterMod.TwitterNs.RequestParams,
-    callback: twitterLib.twitterMod.TwitterNs.Callback
-  ): scala.Unit = js.native
-  def post(path: java.lang.String): js.Promise[twitterLib.twitterMod.TwitterNs.ResponseData] = js.native
-  def post(path: java.lang.String, callback: twitterLib.twitterMod.TwitterNs.Callback): scala.Unit = js.native
-  def post(path: java.lang.String, params: twitterLib.twitterMod.TwitterNs.RequestParams): js.Promise[twitterLib.twitterMod.TwitterNs.ResponseData] = js.native
-  def post(
-    path: java.lang.String,
-    params: twitterLib.twitterMod.TwitterNs.RequestParams,
-    callback: twitterLib.twitterMod.TwitterNs.Callback
-  ): scala.Unit = js.native
+  val request_Original: requestLib.requestMod.RequestAPI[
+    requestLib.requestMod.Request, 
+    requestLib.requestMod.CoreOptions, 
+    requestLib.requestMod.RequiredUriUrl
+  ] = js.native
+  def get(path: java.lang.String): js.Promise[ResponseData] = js.native
+  def get(path: java.lang.String, callback: Callback): scala.Unit = js.native
+  def get(path: java.lang.String, params: RequestParams): js.Promise[ResponseData] = js.native
+  def get(path: java.lang.String, params: RequestParams, callback: Callback): scala.Unit = js.native
+  def post(path: java.lang.String): js.Promise[ResponseData] = js.native
+  def post(path: java.lang.String, callback: Callback): scala.Unit = js.native
+  def post(path: java.lang.String, params: RequestParams): js.Promise[ResponseData] = js.native
+  def post(path: java.lang.String, params: RequestParams, callback: Callback): scala.Unit = js.native
+  def request(options: requestLib.requestMod.RequiredUriUrl with requestLib.requestMod.CoreOptions): requestLib.requestMod.Request = js.native
   def request(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def request(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def request(uri: java.lang.String): requestLib.requestMod.requestNs.Request = js.native
-  def request(uri: java.lang.String, callback: requestLib.requestMod.requestNs.RequestCallback): requestLib.requestMod.requestNs.Request = js.native
-  def request(uri: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): requestLib.requestMod.requestNs.Request = js.native
+    options: requestLib.requestMod.RequiredUriUrl with requestLib.requestMod.CoreOptions,
+    callback: requestLib.requestMod.RequestCallback
+  ): requestLib.requestMod.Request = js.native
+  def request(uri: java.lang.String): requestLib.requestMod.Request = js.native
+  def request(uri: java.lang.String, callback: requestLib.requestMod.RequestCallback): requestLib.requestMod.Request = js.native
+  def request(uri: java.lang.String, options: requestLib.requestMod.CoreOptions): requestLib.requestMod.Request = js.native
   def request(
     uri: java.lang.String,
-    options: requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
+    options: requestLib.requestMod.CoreOptions,
+    callback: requestLib.requestMod.RequestCallback
+  ): requestLib.requestMod.Request = js.native
   def stream(method: java.lang.String): nodeLib.eventsMod.EventEmitter = js.native
   def stream(
     method: java.lang.String,

@@ -68,13 +68,13 @@ object ^ extends js.Object {
     *
     * @throws on parse error of options.url
     */
-  def mockAccessTokenEndpoint(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions): nockLib.nockMod.nockNs.Scope = js.native
-  def mockAccessTokenEndpointWithErrorResponse(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions, httpStatus: scala.Double): nockLib.nockMod.nockNs.Scope = js.native
+  def mockAccessTokenEndpoint(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions): nockLib.nockMod.Scope = js.native
+  def mockAccessTokenEndpointWithErrorResponse(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions, httpStatus: scala.Double): nockLib.nockMod.Scope = js.native
   def mockAccessTokenEndpointWithErrorResponse(
     options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions,
     httpStatus: scala.Double,
     responseBody: js.Object
-  ): nockLib.nockMod.nockNs.Scope = js.native
+  ): nockLib.nockMod.Scope = js.native
   /**
     * Creates a __very basic__ mock of a token validation endpoint.
     *
@@ -83,17 +83,17 @@ object ^ extends js.Object {
     *
     * @throws on parse error of options.url
     */
-  def mockTokeninfoEndpoint(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions): nockLib.nockMod.nockNs.Scope = js.native
+  def mockTokeninfoEndpoint(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions): nockLib.nockMod.Scope = js.native
   def mockTokeninfoEndpoint(
     options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions,
     tokens: js.Array[authmosphereLib.Anon_Accesstoken]
-  ): nockLib.nockMod.nockNs.Scope = js.native
-  def mockTokeninfoEndpointWithErrorResponse(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions, httpStatus: scala.Double): nockLib.nockMod.nockNs.Scope = js.native
+  ): nockLib.nockMod.Scope = js.native
+  def mockTokeninfoEndpointWithErrorResponse(options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions, httpStatus: scala.Double): nockLib.nockMod.Scope = js.native
   def mockTokeninfoEndpointWithErrorResponse(
     options: authmosphereLib.libSrcTypesMockOptionsMod.MockOptions,
     httpStatus: scala.Double,
     responseBody: js.Object
-  ): nockLib.nockMod.nockNs.Scope = js.native
+  ): nockLib.nockMod.Scope = js.native
   def safeLogger(): authmosphereLib.libSrcTypesLoggerMod.Logger = js.native
   def safeLogger(logger: authmosphereLib.libSrcTypesLoggerMod.Logger): authmosphereLib.libSrcTypesLoggerMod.Logger = js.native
 }

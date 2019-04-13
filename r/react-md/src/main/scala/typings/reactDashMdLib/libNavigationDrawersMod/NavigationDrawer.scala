@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/NavigationDrawers", "NavigationDrawer")
 @js.native
 class NavigationDrawer protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps) = this()

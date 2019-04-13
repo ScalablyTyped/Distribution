@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("express-busboy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def extend(app: expressLib.expressMod.eNs.Application): expressLib.expressMod.eNs.Application = js.native
-  def extend(app: expressLib.expressMod.eNs.Application, options: ExpressBusboyOptions): expressLib.expressMod.eNs.Application = js.native
+  def extend(app: expressLib.expressMod.Application): expressLib.expressMod.Application = js.native
+  def extend(app: expressLib.expressMod.Application, options: ExpressBusboyOptions): expressLib.expressMod.Application = js.native
 }
 

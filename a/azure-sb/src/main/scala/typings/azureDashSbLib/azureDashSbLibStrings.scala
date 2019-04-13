@@ -37,6 +37,21 @@ object azureDashSbLibStrings {
     extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
+  sealed trait `d2p1:ActiveMessageCount` extends js.Object
+  
+  @js.native
+  sealed trait `d2p1:DeadLetterMessageCount` extends js.Object
+  
+  @js.native
+  sealed trait `d2p1:ScheduledMessageCount` extends js.Object
+  
+  @js.native
+  sealed trait `d2p1:TransferDeadLetterMessageCount` extends js.Object
+  
+  @js.native
+  sealed trait `d2p1:TransferMessageCount` extends js.Object
+  
+  @js.native
   sealed trait error
     extends azureDashSbLib.libWnsserviceMod.badges
   
@@ -101,6 +116,16 @@ object azureDashSbLibStrings {
   def away: away = "away".asInstanceOf[away]
   @scala.inline
   def busy: busy = "busy".asInstanceOf[busy]
+  @scala.inline
+  def `d2p1:ActiveMessageCount`: `d2p1:ActiveMessageCount` = "d2p1:ActiveMessageCount".asInstanceOf[`d2p1:ActiveMessageCount`]
+  @scala.inline
+  def `d2p1:DeadLetterMessageCount`: `d2p1:DeadLetterMessageCount` = "d2p1:DeadLetterMessageCount".asInstanceOf[`d2p1:DeadLetterMessageCount`]
+  @scala.inline
+  def `d2p1:ScheduledMessageCount`: `d2p1:ScheduledMessageCount` = "d2p1:ScheduledMessageCount".asInstanceOf[`d2p1:ScheduledMessageCount`]
+  @scala.inline
+  def `d2p1:TransferDeadLetterMessageCount`: `d2p1:TransferDeadLetterMessageCount` = "d2p1:TransferDeadLetterMessageCount".asInstanceOf[`d2p1:TransferDeadLetterMessageCount`]
+  @scala.inline
+  def `d2p1:TransferMessageCount`: `d2p1:TransferMessageCount` = "d2p1:TransferMessageCount".asInstanceOf[`d2p1:TransferMessageCount`]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline

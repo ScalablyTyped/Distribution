@@ -15,3 +15,8 @@ class ObjectVersionFile ()
   override val ObjectVersion: mfilesLib.IObjectVersionAndProperties = js.native
 }
 
+@JSGlobal("MFiles.ObjectVersionFile")
+@js.native
+object ObjectVersionFile
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectFileAndVersion]
+

@@ -115,3 +115,8 @@ class Vault ()
   override def TestConnectionToVaultWithTimeout(TimeoutInMilliseconds: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.Vault")
+@js.native
+object Vault
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVault]
+

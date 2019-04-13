@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashGravatarLibComponents {
   @scala.inline
-  def ReactDashGravatar: reactLib.reactMod.ReactNs.ComponentType[reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Props] = js.constructorOf[reactDashGravatarLib.reactDashGravatarMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Props]]
+  def ReactDashGravatar: reactLib.reactMod.ComponentType[reactDashGravatarLib.reactDashGravatarMod.Props] = js.constructorOf[reactDashGravatarLib.reactDashGravatarMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashGravatarLib.reactDashGravatarMod.Props]]
   @scala.inline
-  def Props: reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Props.type = reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Props
-  type Props = reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Props
+  def Props: reactDashGravatarLib.reactDashGravatarMod.Props.type = reactDashGravatarLib.reactDashGravatarMod.Props
+  type Props = reactDashGravatarLib.reactDashGravatarMod.Props
 }
 

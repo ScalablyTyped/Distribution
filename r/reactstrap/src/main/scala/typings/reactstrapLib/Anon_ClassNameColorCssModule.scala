@@ -10,7 +10,7 @@ trait Anon_ClassNameColorCssModule extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ClassNameColorCssModule {
@@ -20,7 +20,7 @@ object Anon_ClassNameColorCssModule {
     color: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ClassNameColorCssModule = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

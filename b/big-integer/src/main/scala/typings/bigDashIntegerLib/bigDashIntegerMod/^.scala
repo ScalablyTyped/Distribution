@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("big-integer", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[bigDashIntegerLib.bigDashIntegerMod.bigIntNs.BigIntegerStatic]
+  extends org.scalablytyped.runtime.TopLevel[BigIntegerStatic]
 

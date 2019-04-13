@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HTMLAttributes
-  extends preactLib.preactMod.preactNs.ClassAttributes[js.Any]
+  extends preactLib.preactMod.ClassAttributes[js.Any]
      with DOMAttributes {
   // RDFa Attributes
   var about: js.UndefOr[java.lang.String] = js.undefined
@@ -146,7 +146,7 @@ trait HTMLAttributes
 object HTMLAttributes {
   @scala.inline
   def apply(
-    ClassAttributes: preactLib.preactMod.preactNs.ClassAttributes[js.Any] = null,
+    ClassAttributes: preactLib.preactMod.ClassAttributes[js.Any] = null,
     DOMAttributes: DOMAttributes = null,
     about: java.lang.String = null,
     accept: java.lang.String = null,

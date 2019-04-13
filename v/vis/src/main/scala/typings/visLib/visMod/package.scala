@@ -17,18 +17,19 @@ package object visMod {
   type IdType = java.lang.String | scala.Double
   type MomentConstructor = MomentConstructor1 | MomentConstructor2
   type MomentConstructor1 = js.Function3[
-    /* inp */ js.UndefOr[momentLib.momentMod.momentNs.MomentInput], 
-    /* format */ js.UndefOr[momentLib.momentMod.momentNs.MomentFormatSpecification], 
+    /* inp */ js.UndefOr[momentLib.momentMod.MomentInput], 
+    /* format */ js.UndefOr[momentLib.momentMod.MomentFormatSpecification], 
     /* strict */ js.UndefOr[scala.Boolean], 
-    momentLib.momentMod.momentNs.Moment
+    momentLib.momentMod.Moment
   ]
   type MomentConstructor2 = js.Function4[
-    /* inp */ js.UndefOr[momentLib.momentMod.momentNs.MomentInput], 
-    /* format */ js.UndefOr[momentLib.momentMod.momentNs.MomentFormatSpecification], 
+    /* inp */ js.UndefOr[momentLib.momentMod.MomentInput], 
+    /* format */ js.UndefOr[momentLib.momentMod.MomentFormatSpecification], 
     /* language */ js.UndefOr[java.lang.String], 
     /* strict */ js.UndefOr[scala.Boolean], 
-    momentLib.momentMod.momentNs.Moment
+    momentLib.momentMod.Moment
   ]
+  type SubGroupStackOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   type SubgroupType = IdType
   type TimelineAnimationType = scala.Boolean | AnimationOptions
   type TimelineFormatLabelsFunction = js.Function3[

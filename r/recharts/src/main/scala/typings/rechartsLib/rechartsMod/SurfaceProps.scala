@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SurfaceProps extends js.Object {
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -19,7 +17,7 @@ trait SurfaceProps extends js.Object {
 object SurfaceProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     height: scala.Int | scala.Double = null,
     style: js.Object = null,

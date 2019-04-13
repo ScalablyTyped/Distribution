@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RuleFailurePosition protected ()
   extends tslintLib.libLanguageRuleRuleMod.RuleFailurePosition {
-  def this(position: scala.Double, lineAndCharacter: typescriptLib.typescriptMod.tsNs.LineAndCharacter) = this()
+  def this(position: scala.Double, lineAndCharacter: typescriptLib.typescriptMod.LineAndCharacter) = this()
 }
 

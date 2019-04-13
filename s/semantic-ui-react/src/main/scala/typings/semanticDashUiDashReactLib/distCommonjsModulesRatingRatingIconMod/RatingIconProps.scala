@@ -17,9 +17,9 @@ object RatingIconProps {
     as: js.Any = null,
     className: java.lang.String = null,
     index: scala.Int | scala.Double = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
-    onKeyUp: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
-    onMouseEnter: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
+    onKeyUp: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
+    onMouseEnter: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined
   ): RatingIconProps = {
     val __obj = js.Dynamic.literal()

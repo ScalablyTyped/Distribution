@@ -27,3 +27,8 @@ class VaultScheduledJobManagementOperations ()
   override def StartScheduledJob(ID: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultScheduledJobManagementOperations")
+@js.native
+object VaultScheduledJobManagementOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultScheduledJobManagementOperations]
+

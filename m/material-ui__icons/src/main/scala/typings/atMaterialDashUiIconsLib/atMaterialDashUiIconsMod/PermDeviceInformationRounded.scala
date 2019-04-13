@@ -16,9 +16,9 @@ class PermDeviceInformationRounded protected ()
 @JSImport("@material-ui/icons", "PermDeviceInformationRounded")
 @js.native
 class PermDeviceInformationRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

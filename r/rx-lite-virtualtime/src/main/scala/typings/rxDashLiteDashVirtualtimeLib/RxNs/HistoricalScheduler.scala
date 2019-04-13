@@ -128,3 +128,12 @@ class HistoricalSchedulerCls protected () extends HistoricalScheduler {
   override def toRelative(duetime: scala.Double): scala.Double = js.native
 }
 
+@JSGlobal("Rx.HistoricalScheduler")
+@js.native
+object HistoricalScheduler
+  extends org.scalablytyped.runtime.Instantiable2[
+      /* initialClock */ scala.Double, 
+      /* comparer */ js.Function2[/* first */ scala.Double, /* second */ scala.Double, scala.Double], 
+      HistoricalScheduler
+    ]
+

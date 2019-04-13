@@ -10,7 +10,7 @@ trait RadioGroupProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the group will be displayed as disabled.
     * @default false
@@ -33,10 +33,10 @@ trait RadioGroupProps
 object RadioGroupProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     name: java.lang.String = null,
     onChange: js.Function = null,
     onClick: js.Function = null,
@@ -61,7 +61,7 @@ object RadioGroupProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: js.Any = null
   ): RadioGroupProps = {
     val __obj = js.Dynamic.literal()

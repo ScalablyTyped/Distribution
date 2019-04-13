@@ -17,7 +17,7 @@ object getCSSModuleLocalIdentMod extends js.Object {
     * class `MyClass` the output will be `MyFolder_MyClass__[hash]`
     */
   def apply(
-    context: webpackLib.webpackMod.webpackNs.loaderNs.LoaderContext,
+    context: webpackLib.webpackMod.loaderNs.LoaderContext,
     localIdentName: java.lang.String,
     localName: java.lang.String,
     options: js.Object

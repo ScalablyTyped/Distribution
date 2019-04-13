@@ -9,7 +9,7 @@ trait TableFooterProps extends js.Object {
   // <tfoot/> is element that get the 'other' properties
   var adjustForCheckbox: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TableFooterProps {
@@ -17,7 +17,7 @@ object TableFooterProps {
   def apply(
     adjustForCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TableFooterProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(adjustForCheckbox)) __obj.updateDynamic("adjustForCheckbox")(adjustForCheckbox)

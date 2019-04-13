@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Key extends js.Object {
   var key: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var label: reactLib.reactMod.ReactNs.ReactNode
+  var label: reactLib.reactMod.ReactNode
   var value: scala.Double | java.lang.String
 }
 
 object Anon_Key {
   @scala.inline
   def apply(
-    label: reactLib.reactMod.ReactNs.ReactNode,
+    label: reactLib.reactMod.ReactNode,
     value: scala.Double | java.lang.String,
     key: scala.Double | java.lang.String = null
   ): Anon_Key = {

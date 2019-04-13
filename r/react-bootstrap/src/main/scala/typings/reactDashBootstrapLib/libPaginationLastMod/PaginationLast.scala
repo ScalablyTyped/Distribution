@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PaginationLast
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libPaginationLastMod.PaginationLastNs.PaginationLastProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[PaginationLastProps, js.Object, js.Any]
 

@@ -22,9 +22,6 @@ object AzureNs extends js.Object {
       var RequiresDuplicateDetection: scala.Boolean
     }
     
-    trait Dictionary[T]
-      extends /* k */ org.scalablytyped.runtime.StringDictionary[T]
-    
     trait ErrorResponse extends Response {
       @JSName("body")
       var body_ErrorResponse: azureDashSbLib.Anon_Error
@@ -230,11 +227,11 @@ object AzureNs extends js.Object {
           var TopicName: java.lang.String
         }
         
-        val ActiveMessageCount: /* d2p1:ActiveMessageCount */ java.lang.String = js.native
-        val DeadLetterMessageCount: /* d2p1:DeadLetterMessageCount */ java.lang.String = js.native
-        val ScheduledMessageCount: /* d2p1:ScheduledMessageCount */ java.lang.String = js.native
-        val TransferDeadLetterMessageCount: /* d2p1:TransferDeadLetterMessageCount */ java.lang.String = js.native
-        val TransferMessageCount: /* d2p1:TransferMessageCount */ java.lang.String = js.native
+        val ActiveMessageCount: azureDashSbLib.azureDashSbLibStrings.`d2p1:ActiveMessageCount` = js.native
+        val DeadLetterMessageCount: azureDashSbLib.azureDashSbLibStrings.`d2p1:DeadLetterMessageCount` = js.native
+        val ScheduledMessageCount: azureDashSbLib.azureDashSbLibStrings.`d2p1:ScheduledMessageCount` = js.native
+        val TransferDeadLetterMessageCount: azureDashSbLib.azureDashSbLibStrings.`d2p1:TransferDeadLetterMessageCount` = js.native
+        val TransferMessageCount: azureDashSbLib.azureDashSbLibStrings.`d2p1:TransferMessageCount` = js.native
         @js.native
         object EntityAvailabilityStatus extends js.Object {
           @js.native
@@ -335,6 +332,7 @@ object AzureNs extends js.Object {
     type CreateTopicIfNotExistsOptions = stdLib.Partial[ICreateTopicIfNotExistsOptions]
     type CreateTopicOptions = stdLib.Partial[ICreateTopicOptions]
     type DateString = java.lang.String
+    type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
     type Duration = java.lang.String
     type ListNotificationHubsOptions = stdLib.Partial[PaginationOptions]
     type ListQueuesOptions = stdLib.Partial[PaginationOptions]

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class WorkLink ()
-  extends awsDashSdkLib.clientsWorklinkMod.namespaced {
-  def this(options: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsWorklinkMod.^ {
+  def this(options: awsDashSdkLib.clientsWorklinkMod.ClientConfiguration) = this()
 }
 

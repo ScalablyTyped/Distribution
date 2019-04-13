@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectProps
-  extends reactLib.reactMod.ReactNs.SelectHTMLAttributes[stdLib.HTMLSelectElement]
+  extends reactLib.reactMod.SelectHTMLAttributes[stdLib.HTMLSelectElement]
      with FieldProps {
   var options: SelectOptions
 }
@@ -16,7 +16,7 @@ object SelectProps {
   def apply(
     options: SelectOptions,
     FieldProps: FieldProps = null,
-    SelectHTMLAttributes: reactLib.reactMod.ReactNs.SelectHTMLAttributes[stdLib.HTMLSelectElement] = null,
+    SelectHTMLAttributes: reactLib.reactMod.SelectHTMLAttributes[stdLib.HTMLSelectElement] = null,
     placeholder: java.lang.String = null
   ): SelectProps = {
     val __obj = js.Dynamic.literal(options = options)

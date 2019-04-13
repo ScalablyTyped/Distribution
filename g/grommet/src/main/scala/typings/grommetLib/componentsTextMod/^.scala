@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Text", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Text: reactLib.reactMod.ReactNs.FC[
-    TextProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement], 
+  val Text: reactLib.reactMod.FC[
+    TextProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
       reactLib.HTMLSpanElement
     ])
   ] = js.native

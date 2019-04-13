@@ -15,8 +15,8 @@ object CardFooterProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null
   ): CardFooterProps = {
     val __obj = js.Dynamic.literal()

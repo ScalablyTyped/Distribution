@@ -14,7 +14,7 @@ trait GraticuleProps extends js.Object {
   var round: js.UndefOr[scala.Boolean] = js.undefined
   var step: js.UndefOr[Point] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object GraticuleProps {
@@ -28,7 +28,7 @@ object GraticuleProps {
     round: js.UndefOr[scala.Boolean] = js.undefined,
     step: Point = null,
     stroke: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): GraticuleProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Globe)) __obj.updateDynamic("Globe")(Globe)

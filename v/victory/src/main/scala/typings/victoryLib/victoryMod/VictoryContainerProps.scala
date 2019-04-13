@@ -24,7 +24,7 @@ trait VictoryContainerProps extends js.Object {
     * data. `scale.x.invert(evt.offsetX)`.
     * @examples {{ onClick: (evt) => alert(`x: ${evt.clientX}, y: ${evt.clientY}`)}}
     */
-  var events: js.UndefOr[reactLib.reactMod.ReactNs.DOMAttributes[_]] = js.undefined
+  var events: js.UndefOr[reactLib.reactMod.DOMAttributes[_]] = js.undefined
   /**
     * The height props specifies the height the svg viewBox of the container.
     * This value should be given as a number of pixels. If no height prop
@@ -45,7 +45,7 @@ trait VictoryContainerProps extends js.Object {
     * also be passed, if any exist.
     * @examples {border: 1px solid red}
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * The title prop specifies the title to be applied to the SVG to assist
     * accessibility for screen readers. The more descriptive this title is, the more
@@ -66,10 +66,10 @@ object VictoryContainerProps {
   @scala.inline
   def apply(
     desc: java.lang.String = null,
-    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    events: reactLib.reactMod.DOMAttributes[_] = null,
     height: scala.Int | scala.Double = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): VictoryContainerProps = {

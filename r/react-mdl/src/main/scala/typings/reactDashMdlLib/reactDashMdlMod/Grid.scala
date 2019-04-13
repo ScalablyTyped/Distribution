@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Grid")
 @js.native
-class Grid ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Grid
+class Grid () extends __MDLComponent[GridProps]
 

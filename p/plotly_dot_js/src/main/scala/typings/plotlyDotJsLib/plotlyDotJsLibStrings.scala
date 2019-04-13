@@ -614,6 +614,9 @@ object plotlyDotJsLibStrings {
   sealed trait img extends js.Object
   
   @js.native
+  sealed trait `implicit` extends js.Object
+  
+  @js.native
   sealed trait input extends js.Object
   
   @js.native
@@ -1989,6 +1992,8 @@ object plotlyDotJsLibStrings {
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def img: img = "img".asInstanceOf[img]
+  @scala.inline
+  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline

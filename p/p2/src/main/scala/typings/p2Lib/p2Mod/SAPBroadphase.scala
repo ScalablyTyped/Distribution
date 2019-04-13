@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "SAPBroadphase")
 @js.native
-class SAPBroadphase ()
-  extends p2Lib.p2Mod.p2Ns.SAPBroadphase
+class SAPBroadphase () extends Broadphase {
+  var axisIndex: scala.Double = js.native
+  var axisList: js.Array[Body] = js.native
+}
 

@@ -1,0 +1,35 @@
+package typings
+package globalizeDashCompilerLib.globalizeDashCompilerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait CompileExtractsAttributes extends CompileOptions {
+  /**
+    * an Object with CLDR data (in the JSON format) or a Function taking one argument: locale, a String; returning
+    *  an Object with the CLDR data for the passed locale. Defaults to the entire supplemental data plus the entire
+    *  main data for the defaultLocale.
+    */
+  var cldr: js.UndefOr[js.Object | (js.Function1[/* locale */ java.lang.String, js.Object])] = js.native
+  /**
+    * a locale to be used as Globalize.locale(defaultLocale) when generating the extracted formatters and parsers.
+    */
+  var defaultLocale: java.lang.String = js.native
+  /**
+    * an Array of extracts obtained by @see{GlobalizeCompilerStatic.extract}
+    */
+  @JSName("extracts")
+  var extracts_Original: ExtractFunction = js.native
+  /**
+    * an Object with messages data (in the JSON format) or a Function taking one argument: locale, a String; returning
+    *  an Object with the messages data for the passed locale. Defaults to {}.
+    */
+  var messages: js.UndefOr[js.Object | (js.Function1[/* locale */ java.lang.String, js.Object])] = js.native
+  /**
+    * an Array of extracts obtained by @see{GlobalizeCompilerStatic.extract}
+    */
+  def extracts(globalize: globalizeLib.distGlobalizeMessageMod.distGlobalizeMod.Static): js.Array[FormatterOrParserFunction] = js.native
+}
+

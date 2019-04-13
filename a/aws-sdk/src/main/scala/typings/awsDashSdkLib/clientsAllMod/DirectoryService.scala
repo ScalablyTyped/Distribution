@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class DirectoryService ()
-  extends awsDashSdkLib.clientsDirectoryserviceMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDirectoryserviceMod.^ {
+  def this(options: awsDashSdkLib.clientsDirectoryserviceMod.ClientConfiguration) = this()
 }
 

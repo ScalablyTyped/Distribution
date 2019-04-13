@@ -643,80 +643,14 @@ class VirtualRendererCls protected () extends VirtualRenderer {
   override def visualizeFocus(): scala.Unit = js.native
 }
 
-object VirtualRenderer {
-  @scala.inline
-  def apply(
-    addGutterDecoration: () => scala.Unit,
-    adjustWrapLimit: () => scala.Unit,
-    characterWidth: scala.Double,
-    destroy: () => scala.Unit,
-    getAnimatedScroll: () => scala.Boolean,
-    getContainerElement: () => stdLib.HTMLElement,
-    getFirstFullyVisibleRow: () => scala.Double,
-    getFirstVisibleRow: () => scala.Double,
-    getHScrollBarAlwaysVisible: () => scala.Boolean,
-    getLastFullyVisibleRow: () => scala.Double,
-    getLastVisibleRow: () => scala.Double,
-    getMouseEventTarget: () => stdLib.HTMLElement,
-    getOption: java.lang.String => js.Any,
-    getOptions: () => js.Any,
-    getPrintMarginColumn: () => scala.Boolean,
-    getScrollBottomRow: () => scala.Double,
-    getScrollLeft: () => scala.Double,
-    getScrollTop: () => scala.Double,
-    getScrollTopRow: () => scala.Double,
-    getShowGutter: () => scala.Boolean,
-    getShowInvisibles: () => scala.Boolean,
-    getShowPrintMargin: () => scala.Boolean,
-    getTextAreaContainer: () => stdLib.HTMLElement,
-    getTheme: () => java.lang.String,
-    hideComposition: () => scala.Unit,
-    hideCursor: () => scala.Unit,
-    isScrollableBy: (scala.Double, scala.Double) => scala.Boolean,
-    lineHeight: scala.Double,
-    onResize: (scala.Boolean, scala.Double, scala.Double, scala.Double) => scala.Unit,
-    removeGutterDecoration: () => scala.Unit,
-    screenToTextCoordinates: (scala.Double, scala.Double) => scala.Unit,
-    scrollBy: (scala.Double, scala.Double) => scala.Unit,
-    scrollCursorIntoView: () => scala.Unit,
-    scrollToLine: (scala.Double, scala.Boolean, scala.Boolean, js.Function) => scala.Unit,
-    scrollToRow: scala.Double => scala.Unit,
-    scrollToX: scala.Double => scala.Double,
-    scrollToY: scala.Double => scala.Double,
-    scroller: js.Any,
-    setAnimatedScroll: scala.Boolean => scala.Unit,
-    setAnnotations: js.Array[_] => scala.Unit,
-    setCompositionText: java.lang.String => scala.Unit,
-    setHScrollBarAlwaysVisible: scala.Boolean => scala.Unit,
-    setOption: (java.lang.String, js.Any) => scala.Unit,
-    setOptions: js.Any => scala.Unit,
-    setPadding: scala.Double => scala.Unit,
-    setPrintMarginColumn: scala.Boolean => scala.Unit,
-    setScrollMargin: (scala.Double, scala.Double, scala.Double, scala.Double) => scala.Unit,
-    setSession: IEditSession => scala.Unit,
-    setShowGutter: scala.Boolean => scala.Unit,
-    setShowInvisibles: scala.Boolean => scala.Unit,
-    setShowPrintMargin: scala.Boolean => scala.Unit,
-    setStyle: java.lang.String => scala.Unit,
-    setTheme: java.lang.String => scala.Unit,
-    showComposition: scala.Double => scala.Unit,
-    showCursor: () => scala.Unit,
-    textToScreenCoordinates: (scala.Double, scala.Double) => js.Any,
-    unsetStyle: java.lang.String => scala.Unit,
-    updateBackMarkers: () => scala.Unit,
-    updateBreakpoints: () => scala.Unit,
-    updateCursor: () => scala.Unit,
-    updateFontSize: () => scala.Unit,
-    updateFrontMarkers: () => scala.Unit,
-    updateFull: scala.Boolean => scala.Unit,
-    updateLines: (scala.Double, scala.Double) => scala.Unit,
-    updateText: () => scala.Unit,
-    visualizeBlur: () => scala.Unit,
-    visualizeFocus: () => scala.Unit
-  ): VirtualRenderer = {
-    val __obj = js.Dynamic.literal(addGutterDecoration = js.Any.fromFunction0(addGutterDecoration), adjustWrapLimit = js.Any.fromFunction0(adjustWrapLimit), characterWidth = characterWidth, destroy = js.Any.fromFunction0(destroy), getAnimatedScroll = js.Any.fromFunction0(getAnimatedScroll), getContainerElement = js.Any.fromFunction0(getContainerElement), getFirstFullyVisibleRow = js.Any.fromFunction0(getFirstFullyVisibleRow), getFirstVisibleRow = js.Any.fromFunction0(getFirstVisibleRow), getHScrollBarAlwaysVisible = js.Any.fromFunction0(getHScrollBarAlwaysVisible), getLastFullyVisibleRow = js.Any.fromFunction0(getLastFullyVisibleRow), getLastVisibleRow = js.Any.fromFunction0(getLastVisibleRow), getMouseEventTarget = js.Any.fromFunction0(getMouseEventTarget), getOption = js.Any.fromFunction1(getOption), getOptions = js.Any.fromFunction0(getOptions), getPrintMarginColumn = js.Any.fromFunction0(getPrintMarginColumn), getScrollBottomRow = js.Any.fromFunction0(getScrollBottomRow), getScrollLeft = js.Any.fromFunction0(getScrollLeft), getScrollTop = js.Any.fromFunction0(getScrollTop), getScrollTopRow = js.Any.fromFunction0(getScrollTopRow), getShowGutter = js.Any.fromFunction0(getShowGutter), getShowInvisibles = js.Any.fromFunction0(getShowInvisibles), getShowPrintMargin = js.Any.fromFunction0(getShowPrintMargin), getTextAreaContainer = js.Any.fromFunction0(getTextAreaContainer), getTheme = js.Any.fromFunction0(getTheme), hideComposition = js.Any.fromFunction0(hideComposition), hideCursor = js.Any.fromFunction0(hideCursor), isScrollableBy = js.Any.fromFunction2(isScrollableBy), lineHeight = lineHeight, onResize = js.Any.fromFunction4(onResize), removeGutterDecoration = js.Any.fromFunction0(removeGutterDecoration), screenToTextCoordinates = js.Any.fromFunction2(screenToTextCoordinates), scrollBy = js.Any.fromFunction2(scrollBy), scrollCursorIntoView = js.Any.fromFunction0(scrollCursorIntoView), scrollToLine = js.Any.fromFunction4(scrollToLine), scrollToRow = js.Any.fromFunction1(scrollToRow), scrollToX = js.Any.fromFunction1(scrollToX), scrollToY = js.Any.fromFunction1(scrollToY), scroller = scroller, setAnimatedScroll = js.Any.fromFunction1(setAnimatedScroll), setAnnotations = js.Any.fromFunction1(setAnnotations), setCompositionText = js.Any.fromFunction1(setCompositionText), setHScrollBarAlwaysVisible = js.Any.fromFunction1(setHScrollBarAlwaysVisible), setOption = js.Any.fromFunction2(setOption), setOptions = js.Any.fromFunction1(setOptions), setPadding = js.Any.fromFunction1(setPadding), setPrintMarginColumn = js.Any.fromFunction1(setPrintMarginColumn), setScrollMargin = js.Any.fromFunction4(setScrollMargin), setSession = js.Any.fromFunction1(setSession), setShowGutter = js.Any.fromFunction1(setShowGutter), setShowInvisibles = js.Any.fromFunction1(setShowInvisibles), setShowPrintMargin = js.Any.fromFunction1(setShowPrintMargin), setStyle = js.Any.fromFunction1(setStyle), setTheme = js.Any.fromFunction1(setTheme), showComposition = js.Any.fromFunction1(showComposition), showCursor = js.Any.fromFunction0(showCursor), textToScreenCoordinates = js.Any.fromFunction2(textToScreenCoordinates), unsetStyle = js.Any.fromFunction1(unsetStyle), updateBackMarkers = js.Any.fromFunction0(updateBackMarkers), updateBreakpoints = js.Any.fromFunction0(updateBreakpoints), updateCursor = js.Any.fromFunction0(updateCursor), updateFontSize = js.Any.fromFunction0(updateFontSize), updateFrontMarkers = js.Any.fromFunction0(updateFrontMarkers), updateFull = js.Any.fromFunction1(updateFull), updateLines = js.Any.fromFunction2(updateLines), updateText = js.Any.fromFunction0(updateText), visualizeBlur = js.Any.fromFunction0(visualizeBlur), visualizeFocus = js.Any.fromFunction0(visualizeFocus))
-  
-    __obj.asInstanceOf[VirtualRenderer]
-  }
-}
+@JSGlobal("AceAjax.VirtualRenderer")
+@js.native
+object VirtualRenderer
+  extends /**
+  * Constructs a new `VirtualRenderer` within the `container` specified, applying the given `theme`.
+  * @param container The root element of the editor
+  * @param theme The starting theme
+  **/
+org.scalablytyped.runtime.Instantiable1[/* container */ stdLib.HTMLElement, VirtualRenderer]
+     with org.scalablytyped.runtime.Instantiable2[/* container */ stdLib.HTMLElement, /* theme */ java.lang.String, VirtualRenderer]
 

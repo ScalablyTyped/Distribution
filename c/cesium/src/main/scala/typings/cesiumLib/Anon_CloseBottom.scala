@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation._
 trait Anon_CloseBottom extends js.Object {
   var closeBottom: js.UndefOr[scala.Boolean] = js.undefined
   var closeTop: js.UndefOr[scala.Boolean] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var extrudedHeight: js.UndefOr[scala.Double] = js.undefined
   var granularity: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var perPositionHeight: js.UndefOr[scala.Boolean] = js.undefined
-  var positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3]
+  var positions: js.Array[cesiumLib.cesiumMod.Cartesian3]
   var stRotation: js.UndefOr[scala.Double] = js.undefined
-  var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.VertexFormat] = js.undefined
+  var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.VertexFormat] = js.undefined
 }
 
 object Anon_CloseBottom {
   @scala.inline
   def apply(
-    positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
+    positions: js.Array[cesiumLib.cesiumMod.Cartesian3],
     closeBottom: js.UndefOr[scala.Boolean] = js.undefined,
     closeTop: js.UndefOr[scala.Boolean] = js.undefined,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     extrudedHeight: scala.Int | scala.Double = null,
     granularity: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
     perPositionHeight: js.UndefOr[scala.Boolean] = js.undefined,
     stRotation: scala.Int | scala.Double = null,
-    vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
+    vertexFormat: cesiumLib.cesiumMod.VertexFormat = null
   ): Anon_CloseBottom = {
     val __obj = js.Dynamic.literal(positions = positions)
     if (!js.isUndefined(closeBottom)) __obj.updateDynamic("closeBottom")(closeBottom)

@@ -8,47 +8,47 @@ import scala.scalajs.js.annotation._
 object systemjsLibStrings {
   @js.native
   sealed trait amd
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.ModuleFormat
+    extends systemjsLib.systemjsMod.ModuleFormat
   
   @js.native
   sealed trait babel
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.Transpiler
+    extends systemjsLib.systemjsMod.Transpiler
   
   @js.native
   sealed trait cjs
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.ModuleFormat
+    extends systemjsLib.systemjsMod.ModuleFormat
   
   @js.native
   sealed trait esm
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.ModuleFormat
+    extends systemjsLib.systemjsMod.ModuleFormat
   
   @js.native
   sealed trait global
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.ModuleFormat
+    extends systemjsLib.systemjsMod.ModuleFormat
   
   @js.native
   sealed trait `plugin-babel`
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.Transpiler
+    extends systemjsLib.systemjsMod.Transpiler
   
   @js.native
   sealed trait `plugin-traceur`
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.Transpiler
+    extends systemjsLib.systemjsMod.Transpiler
   
   @js.native
   sealed trait `plugin-typescript`
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.Transpiler
+    extends systemjsLib.systemjsMod.Transpiler
   
   @js.native
   sealed trait register
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.ModuleFormat
+    extends systemjsLib.systemjsMod.ModuleFormat
   
   @js.native
   sealed trait traceur
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.Transpiler
+    extends systemjsLib.systemjsMod.Transpiler
   
   @js.native
   sealed trait typescript
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.Transpiler
+    extends systemjsLib.systemjsMod.Transpiler
   
   @scala.inline
   def amd: amd = "amd".asInstanceOf[amd]

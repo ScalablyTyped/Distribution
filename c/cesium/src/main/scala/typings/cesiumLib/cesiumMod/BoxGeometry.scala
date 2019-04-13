@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "BoxGeometry")
 @js.native
-class BoxGeometry protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.BoxGeometry {
+class BoxGeometry protected () extends Packable {
   def this(options: cesiumLib.Anon_MaximumCorner) = this()
 }
 
@@ -16,14 +15,14 @@ class BoxGeometry protected ()
 @JSImport("cesium", "BoxGeometry")
 @js.native
 object BoxGeometry extends js.Object {
-  def createGeometry(boxGeometry: cesiumLib.cesiumMod.CesiumNs.BoxGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
+  def createGeometry(boxGeometry: cesiumLib.cesiumMod.BoxGeometry): cesiumLib.cesiumMod.Geometry = js.native
   def fromDimensions(): scala.Unit = js.native
-  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.BoxGeometry = js.native
-  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.BoxGeometry = js.native
+  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.BoxGeometry = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.BoxGeometry = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.BoxGeometry
-  ): cesiumLib.cesiumMod.CesiumNs.BoxGeometry = js.native
+    result: cesiumLib.cesiumMod.BoxGeometry
+  ): cesiumLib.cesiumMod.BoxGeometry = js.native
 }
 

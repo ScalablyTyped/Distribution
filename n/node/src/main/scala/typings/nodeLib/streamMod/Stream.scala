@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stream", "Stream")
 @js.native
-class Stream ()
-  extends nodeLib.streamMod.internalNs.Stream
+class Stream () extends internal
 

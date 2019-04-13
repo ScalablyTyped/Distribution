@@ -13,4 +13,5 @@ package object reactDashMoveMod {
     /* namespace */ js.UndefOr[java.lang.String], 
     js.Function1[/* t */ scala.Double, js.Any]
   ]
+  type HashMap = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

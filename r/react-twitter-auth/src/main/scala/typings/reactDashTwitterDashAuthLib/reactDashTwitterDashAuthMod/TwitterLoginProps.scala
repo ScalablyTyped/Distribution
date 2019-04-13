@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TwitterLoginProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var credentials: js.UndefOr[
     reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.omit | reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.`same-origin` | reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.include
   ] = js.undefined
@@ -18,8 +18,8 @@ trait TwitterLoginProps extends js.Object {
   var loginUrl: java.lang.String
   var requestTokenUrl: java.lang.String
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
   def onFailure(msg: java.lang.String): scala.Unit
   def onSuccess(response: java.lang.String): scala.Unit
@@ -32,7 +32,7 @@ object TwitterLoginProps {
     onFailure: java.lang.String => scala.Unit,
     onSuccess: java.lang.String => scala.Unit,
     requestTokenUrl: java.lang.String,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     credentials: reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.omit | reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.`same-origin` | reactDashTwitterDashAuthLib.reactDashTwitterDashAuthLibStrings.include = null,
     customHeaders: stdLib.HeadersInit = null,
     dialogHeight: scala.Int | scala.Double = null,
@@ -40,8 +40,8 @@ object TwitterLoginProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     forceLogin: js.UndefOr[scala.Boolean] = js.undefined,
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     text: java.lang.String = null
   ): TwitterLoginProps = {
     val __obj = js.Dynamic.literal(loginUrl = loginUrl, onFailure = js.Any.fromFunction1(onFailure), onSuccess = js.Any.fromFunction1(onSuccess), requestTokenUrl = requestTokenUrl)

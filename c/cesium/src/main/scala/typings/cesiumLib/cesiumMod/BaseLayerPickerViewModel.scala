@@ -7,26 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "BaseLayerPickerViewModel")
 @js.native
-class BaseLayerPickerViewModel protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.BaseLayerPickerViewModel {
+class BaseLayerPickerViewModel protected () extends js.Object {
   def this(options: cesiumLib.Anon_Globe) = this()
-  /* CompleteClass */
-  override var buttonImageUrl: java.lang.String = js.native
-  /* CompleteClass */
-  override var buttonTooltip: java.lang.String = js.native
-  /* CompleteClass */
-  override var dropDownVisible: scala.Boolean = js.native
-  /* CompleteClass */
-  override var globe: cesiumLib.cesiumMod.CesiumNs.Globe = js.native
-  /* CompleteClass */
-  override var imageryProviderViewModels: js.Array[cesiumLib.cesiumMod.CesiumNs.ProviderViewModel] = js.native
-  /* CompleteClass */
-  override var selectedImagery: cesiumLib.cesiumMod.CesiumNs.ProviderViewModel = js.native
-  /* CompleteClass */
-  override var selectedTerrain: cesiumLib.cesiumMod.CesiumNs.ProviderViewModel = js.native
-  /* CompleteClass */
-  override var terrainProviderViewModels: js.Array[cesiumLib.cesiumMod.CesiumNs.ProviderViewModel] = js.native
-  /* CompleteClass */
-  override var toggleDropDown: cesiumLib.cesiumMod.CesiumNs.Command = js.native
+  var buttonImageUrl: java.lang.String = js.native
+  var buttonTooltip: java.lang.String = js.native
+  var dropDownVisible: scala.Boolean = js.native
+  var globe: Globe = js.native
+  var imageryProviderViewModels: js.Array[ProviderViewModel] = js.native
+  var selectedImagery: ProviderViewModel = js.native
+  var selectedTerrain: ProviderViewModel = js.native
+  var terrainProviderViewModels: js.Array[ProviderViewModel] = js.native
+  var toggleDropDown: Command = js.native
 }
 

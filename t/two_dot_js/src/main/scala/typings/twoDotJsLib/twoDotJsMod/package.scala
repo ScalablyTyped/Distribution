@@ -6,7 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object twoDotJsMod {
-  type Commands = twoDotJsLib.twoDotJsMod.TwoNs.Commands
-  type Events = twoDotJsLib.twoDotJsMod.TwoNs.Events
-  type Types = twoDotJsLib.twoDotJsMod.TwoNs.Types
+  type BoundingClientRect = stdLib.Record[
+    twoDotJsLib.twoDotJsLibStrings.top | twoDotJsLib.twoDotJsLibStrings.left | twoDotJsLib.twoDotJsLibStrings.right | twoDotJsLib.twoDotJsLibStrings.bottom | twoDotJsLib.twoDotJsLibStrings.width | twoDotJsLib.twoDotJsLibStrings.height, 
+    scala.Double
+  ]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - LinearGradient
+    - RadialGradient
+  */
+  type Color = _Color | java.lang.String
 }

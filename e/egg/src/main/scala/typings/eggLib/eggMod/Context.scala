@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Context
-  extends koaLib.koaMod.ApplicationNs.BaseContext {
+  extends koaLib.koaMod.BaseContext {
   /**
     * @see Request#accept
     */
-  var accept: acceptsLib.acceptsMod.acceptsNs.Accepts = js.native
+  var accept: acceptsLib.acceptsMod.Accepts = js.native
   /**
     * @see Request#acceptJSON
     */
   var acceptJSON: scala.Boolean = js.native
   var app: eggDashViewLib.eggMod.Application = js.native
   // The new 'cookies' instead of Koa's.
-  var cookies: eggDashCookiesLib.eggDashCookiesMod.namespaced = js.native
+  var cookies: eggDashCookiesLib.eggDashCookiesMod.^ = js.native
   /**
     * Set the ctx.body.data value
     *

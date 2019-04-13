@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tocktimer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): tocktimerLib.tocktimerMod.tNs.Tock = js.native
-  def apply(opts: tocktimerLib.tocktimerMod.tNs.TockOptions): tocktimerLib.tocktimerMod.tNs.Tock = js.native
+  def apply(): Tock = js.native
+  def apply(opts: TockOptions): Tock = js.native
 }
 

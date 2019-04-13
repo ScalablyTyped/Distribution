@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def getLocals(ctx: atUirouterCoreLib.atUirouterCoreMod.ResolveContext): atUirouterCoreLib.libCommonCommonMod.TypedMap[_] = js.native
-  def watchDigests($rootScope: angularLib.angularMod.angularNs.IRootScopeService): scala.Unit = js.native
+  def watchDigests($rootScope: angularLib.angularMod.IRootScopeService): scala.Unit = js.native
 }
 

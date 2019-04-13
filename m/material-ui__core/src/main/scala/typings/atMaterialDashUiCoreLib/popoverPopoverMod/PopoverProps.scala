@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var TransitionComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
+    reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
   var action: js.UndefOr[js.Function1[/* actions */ PopoverActions, scala.Unit]] = js.undefined
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   var anchorOrigin: js.UndefOr[PopoverOrigin] = js.undefined
   var anchorPosition: js.UndefOr[PopoverPosition] = js.undefined
   var anchorReference: js.UndefOr[PopoverReference] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var elevation: js.UndefOr[scala.Double] = js.undefined
   var getContentAnchorEl: js.UndefOr[
     scala.Null | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement])
@@ -45,23 +45,23 @@ object PopoverProps {
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.modalModalMod.ModalClassKey]
     ] = null,
     PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    TransitionComponent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
+    TransitionComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
     action: /* actions */ PopoverActions => scala.Unit = null,
     anchorEl: stdLib.HTMLElement | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement]) = null,
     anchorOrigin: PopoverOrigin = null,
     anchorPosition: PopoverPosition = null,
     anchorReference: PopoverReference = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[PopoverClassKey]] = null,
     elevation: scala.Int | scala.Double = null,
     getContentAnchorEl: /* element */ stdLib.HTMLElement => stdLib.HTMLElement = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     marginThreshold: scala.Int | scala.Double = null,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transformOrigin: PopoverOrigin = null,
     transitionDuration: scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
   ): PopoverProps = {

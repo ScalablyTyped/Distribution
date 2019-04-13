@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object sassDashWebpackDashPluginLibStrings {
   @js.native
   sealed trait development
-    extends sassDashWebpackDashPluginLib.sassDashWebpackDashPluginMod.SassPluginNs.NODE_ENV
+    extends sassDashWebpackDashPluginLib.sassDashWebpackDashPluginMod.NODE_ENV
   
   @js.native
   sealed trait production
-    extends sassDashWebpackDashPluginLib.sassDashWebpackDashPluginMod.SassPluginNs.NODE_ENV
+    extends sassDashWebpackDashPluginLib.sassDashWebpackDashPluginMod.NODE_ENV
   
   @scala.inline
   def development: development = "development".asInstanceOf[development]

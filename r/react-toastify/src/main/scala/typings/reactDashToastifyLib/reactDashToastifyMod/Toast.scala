@@ -10,23 +10,17 @@ trait Toast extends js.Object {
   var POSITION: reactDashToastifyLib.Anon_BOTTOMCENTER = js.native
   var TYPE: reactDashToastifyLib.Anon_DEFAULT = js.native
   def apply(
-    content: js.Function1[
-      /* props */ reactDashToastifyLib.Anon_CloseToast, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    content: js.Function1[/* props */ reactDashToastifyLib.Anon_CloseToast, reactLib.reactMod.ReactNode]
   ): java.lang.String = js.native
   def apply(
-    content: js.Function1[
-      /* props */ reactDashToastifyLib.Anon_CloseToast, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ],
+    content: js.Function1[/* props */ reactDashToastifyLib.Anon_CloseToast, reactLib.reactMod.ReactNode],
     options: ToastOptions
   ): java.lang.String = js.native
   /**
     * @return The ID of the toast, for future reference.
     */
-  def apply(content: reactLib.reactMod.ReactNs.ReactNode): java.lang.String = js.native
-  def apply(content: reactLib.reactMod.ReactNs.ReactNode, options: ToastOptions): java.lang.String = js.native
+  def apply(content: reactLib.reactMod.ReactNode): java.lang.String = js.native
+  def apply(content: reactLib.reactMod.ReactNode, options: ToastOptions): java.lang.String = js.native
   /**
     * Dismiss the toast with the given ID, or all toasts if no ID is given.
     */
@@ -35,13 +29,13 @@ trait Toast extends js.Object {
   /**
     * Shorthand for a toast with `type: toast.TYPE.ERROR`.
     */
-  def error(content: reactLib.reactMod.ReactNs.ReactNode): java.lang.String = js.native
-  def error(content: reactLib.reactMod.ReactNs.ReactNode, options: ToastOptions): java.lang.String = js.native
+  def error(content: reactLib.reactMod.ReactNode): java.lang.String = js.native
+  def error(content: reactLib.reactMod.ReactNode, options: ToastOptions): java.lang.String = js.native
   /**
     * Shorthand for a toast with `type: toast.TYPE.INFO`.
     */
-  def info(content: reactLib.reactMod.ReactNs.ReactNode): java.lang.String = js.native
-  def info(content: reactLib.reactMod.ReactNs.ReactNode, options: ToastOptions): java.lang.String = js.native
+  def info(content: reactLib.reactMod.ReactNode): java.lang.String = js.native
+  def info(content: reactLib.reactMod.ReactNode, options: ToastOptions): java.lang.String = js.native
   /**
     * Test if the toast with the given ID is active.
     */
@@ -50,8 +44,8 @@ trait Toast extends js.Object {
   /**
     * Shorthand for a toast with `type: toast.TYPE.SUCCESS`.
     */
-  def success(content: reactLib.reactMod.ReactNs.ReactNode): java.lang.String = js.native
-  def success(content: reactLib.reactMod.ReactNs.ReactNode, options: ToastOptions): java.lang.String = js.native
+  def success(content: reactLib.reactMod.ReactNode): java.lang.String = js.native
+  def success(content: reactLib.reactMod.ReactNode, options: ToastOptions): java.lang.String = js.native
   /**
     * Update an existing toast by ID.
     */
@@ -59,7 +53,7 @@ trait Toast extends js.Object {
   /**
     * Shorthand for a toast with `type: toast.TYPE.WARNING`.
     */
-  def warning(content: reactLib.reactMod.ReactNs.ReactNode): java.lang.String = js.native
-  def warning(content: reactLib.reactMod.ReactNs.ReactNode, options: ToastOptions): java.lang.String = js.native
+  def warning(content: reactLib.reactMod.ReactNode): java.lang.String = js.native
+  def warning(content: reactLib.reactMod.ReactNode, options: ToastOptions): java.lang.String = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheckboxItemPropsType extends CheckboxPropsType {
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -17,7 +17,7 @@ object CheckboxItemPropsType {
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     onChange: /* params */ OnChangeParams => scala.Unit = null,
     onClick: /* e */ js.UndefOr[js.Any] => scala.Unit = null,
     prefixCls: java.lang.String = null

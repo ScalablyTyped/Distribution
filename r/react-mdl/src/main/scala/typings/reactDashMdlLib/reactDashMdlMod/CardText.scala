@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "CardText")
 @js.native
-class CardText ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.CardText
+class CardText () extends __MDLBasicComponent
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.InputHTMLAttributes<std.HTMLInputElement>, antd.antd/lib/input-number.OmitAttrs> ]: react.react.React.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait InputNumberProps extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.InputHTMLAttributes<std.HTMLInputElement>, antd.antd/lib/input-number.OmitAttrs> ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait InputNumberProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var decimalSeparator: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[scala.Double] = js.undefined
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
     antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default
   ] = js.undefined
   var step: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
 }
@@ -51,7 +51,7 @@ object InputNumberProps {
     prefixCls: java.lang.String = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     step: scala.Double | java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     value: scala.Int | scala.Double = null
   ): InputNumberProps = {

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenComponents[OptionType] extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var components: js.Any
   var cropWithEllipsis: scala.Boolean
   var data: OptionType
@@ -19,7 +19,7 @@ trait Anon_ChildrenComponents[OptionType] extends js.Object {
 object Anon_ChildrenComponents {
   @scala.inline
   def apply[OptionType](
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     components: js.Any,
     cropWithEllipsis: scala.Boolean,
     data: OptionType,

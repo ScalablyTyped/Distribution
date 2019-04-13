@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SSM ()
   extends awsDashSdkLib.awsDashSdkMod.SSM {
-  def this(options: awsDashSdkLib.clientsSsmMod.SSMNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSsmMod.ClientConfiguration) = this()
 }
 

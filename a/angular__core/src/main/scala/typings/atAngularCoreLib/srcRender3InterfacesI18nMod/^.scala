@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val COMMENT_MARKER: atAngularCoreLib.srcRender3InterfacesI18nMod.COMMENT_MARKER = js.native
   val ELEMENT_MARKER: atAngularCoreLib.srcRender3InterfacesI18nMod.ELEMENT_MARKER = js.native
-  val unusedValueExportToPlacateAjd: /* 1 */ scala.Double = js.native
+  val unusedValueExportToPlacateAjd: atAngularCoreLib.atAngularCoreLibNumbers.`1` = js.native
 }
 

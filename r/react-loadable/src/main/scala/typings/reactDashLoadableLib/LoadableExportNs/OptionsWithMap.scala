@@ -27,7 +27,7 @@ trait OptionsWithMap[Props, Exports /* <: org.scalablytyped.runtime.StringDictio
     * });
     * ```
     */
-  def render(loaded: Exports, props: Props): reactLib.reactMod.ReactNs.ReactNode
+  def render(loaded: Exports, props: Props): reactLib.reactMod.ReactNode
 }
 
 object OptionsWithMap {
@@ -36,8 +36,8 @@ object OptionsWithMap {
     loader: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
     */ reactDashLoadableLib.reactDashLoadableLibStrings.OptionsWithMap with Exports,
-    loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
-    render: (Exports, Props) => reactLib.reactMod.ReactNs.ReactNode,
+    loading: reactLib.reactMod.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
+    render: (Exports, Props) => reactLib.reactMod.ReactNode,
     delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
     modules: js.Array[java.lang.String] = null,
     timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,

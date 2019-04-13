@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 trait VerticalTimelineElementProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var date: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var iconOnClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var position: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var visibilitySensorProps: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -22,12 +22,12 @@ object VerticalTimelineElementProps {
   def apply(
     className: java.lang.String = null,
     date: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     iconOnClick: () => scala.Unit = null,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
     id: java.lang.String = null,
     position: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     visibilitySensorProps: js.Any = null
   ): VerticalTimelineElementProps = {
     val __obj = js.Dynamic.literal()

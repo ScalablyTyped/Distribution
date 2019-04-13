@@ -15,3 +15,8 @@ class TraditionalFolder ()
   override val Name: java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.TraditionalFolder")
+@js.native
+object TraditionalFolder
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITraditionalFolder]
+

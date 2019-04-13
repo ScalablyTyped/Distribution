@@ -13,7 +13,7 @@ trait Anon_ArialabelAutoHeightChildren extends js.Object {
     */
   var autoHeight: js.UndefOr[scala.Boolean] = js.undefined
   /** One or more Columns describing the data displayed in this row */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Optional CSS class name */
   var className: js.UndefOr[java.lang.String] = js.undefined
   var deferredMeasurementCache: js.UndefOr[reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCache] = js.undefined
@@ -165,9 +165,9 @@ trait Anon_ArialabelAutoHeightChildren extends js.Object {
   var rowRenderer: js.UndefOr[reactDashVirtualizedLib.distEsTableMod.TableRowRenderer] = js.undefined
   /** Optional custom inline style to attach to table rows. */
   var rowStyle: js.UndefOr[
-    reactLib.reactMod.ReactNs.CSSProperties | (js.Function1[
+    reactLib.reactMod.CSSProperties | (js.Function1[
       /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
-      reactLib.reactMod.ReactNs.CSSProperties
+      reactLib.reactMod.CSSProperties
     ])
   ] = js.undefined
   /** See Grid#scrollToAlignment */
@@ -186,7 +186,7 @@ trait Anon_ArialabelAutoHeightChildren extends js.Object {
   /** Table data is currently sorted in this direction (if it is sorted at all) */
   var sortDirection: js.UndefOr[reactDashVirtualizedLib.distEsTableMod.SortDirectionType] = js.undefined
   /** Optional inline style */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** Tab index for focus */
   var tabIndex: js.UndefOr[scala.Double | scala.Null] = js.undefined
   /** Width of list */
@@ -201,7 +201,7 @@ object Anon_ArialabelAutoHeightChildren {
     rowHeight: scala.Double | (js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Double]),
     `aria-label`: java.lang.String = null,
     autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     deferredMeasurementCache: reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCache = null,
     disableHeader: js.UndefOr[scala.Boolean] = js.undefined,
@@ -225,9 +225,9 @@ object Anon_ArialabelAutoHeightChildren {
     rowClassName: java.lang.String | (js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, java.lang.String]) = null,
     rowGetter: /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index => _ = null,
     rowRenderer: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer = null,
-    rowStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function1[
+    rowStyle: reactLib.reactMod.CSSProperties | (js.Function1[
       /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
-      reactLib.reactMod.ReactNs.CSSProperties
+      reactLib.reactMod.CSSProperties
     ]) = null,
     scrollToAlignment: java.lang.String = null,
     scrollToIndex: scala.Int | scala.Double = null,
@@ -235,7 +235,7 @@ object Anon_ArialabelAutoHeightChildren {
     sort: /* info */ Anon_SortBy => scala.Unit = null,
     sortBy: java.lang.String = null,
     sortDirection: reactDashVirtualizedLib.distEsTableMod.SortDirectionType = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Anon_ArialabelAutoHeightChildren = {

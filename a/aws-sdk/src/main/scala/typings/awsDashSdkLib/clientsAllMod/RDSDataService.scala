@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class RDSDataService ()
-  extends awsDashSdkLib.clientsRdsdataserviceMod.namespaced {
-  def this(options: awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsRdsdataserviceMod.^ {
+  def this(options: awsDashSdkLib.clientsRdsdataserviceMod.ClientConfiguration) = this()
 }
 

@@ -11,7 +11,7 @@ trait SaneWatcher
   val dot: scala.Boolean = js.native
   val globs: js.Array[java.lang.String] = js.native
   val hasIgnore: scala.Boolean = js.native
-  val ignored: saneLib.saneMod.saneNs.AnymatchMatcher | js.Array[saneLib.saneMod.saneNs.AnymatchMatcher] = js.native
+  val ignored: AnymatchMatcher | js.Array[AnymatchMatcher] = js.native
   val root: java.lang.String = js.native
   @JSName("addListener")
   def addListener_add(

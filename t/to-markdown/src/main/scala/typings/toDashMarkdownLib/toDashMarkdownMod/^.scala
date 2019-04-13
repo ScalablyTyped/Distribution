@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Converts HTML to markdown.
     */
   def apply(input: java.lang.String): java.lang.String = js.native
-  def apply(input: java.lang.String, options: toDashMarkdownLib.toDashMarkdownMod.toMarkdownNs.Options): java.lang.String = js.native
+  def apply(input: java.lang.String, options: Options): java.lang.String = js.native
   /**
     * Returns true / false depending on whether the element is block level.
     */

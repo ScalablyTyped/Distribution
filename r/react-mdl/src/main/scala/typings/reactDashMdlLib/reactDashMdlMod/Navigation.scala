@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Navigation")
 @js.native
-class Navigation ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Navigation
+class Navigation () extends __MDLComponent[NavigationProps]
 

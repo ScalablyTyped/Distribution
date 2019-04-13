@@ -11,7 +11,7 @@ class PendingActions ()
   extends Plugin[scala.Unit] {
   var first: (scala.Null | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Observable) with atCkeditorCkeditor5DashCoreLib.Anon_Message = js.native
   val hasAny: scala.Boolean = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[
     stdLib.Iterator[
       atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Observable with atCkeditorCkeditor5DashCoreLib.Anon_Message

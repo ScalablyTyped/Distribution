@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AlertProviderProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
   /**
     * The style of the alert container
     *
     * Default z-index value: 100
     */
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Custom context to separate alerts.
     */
-  var context: js.UndefOr[reactLib.reactMod.ReactNs.Context[js.UndefOr[AlertManager]]] = js.undefined
+  var context: js.UndefOr[reactLib.reactMod.Context[js.UndefOr[AlertManager]]] = js.undefined
   /**
     * The margin of each alert
     *
@@ -32,7 +32,7 @@ trait AlertProviderProps
   /**
     * The alert component for each message
     */
-  var template: reactLib.reactMod.ReactNs.ComponentType[AlertComponentPropsWithStyle]
+  var template: reactLib.reactMod.ComponentType[AlertComponentPropsWithStyle]
   /**
     * Timeout to alert remove itself, if  set to 0 it never removes itself
     *
@@ -56,10 +56,10 @@ trait AlertProviderProps
 object AlertProviderProps {
   @scala.inline
   def apply(
-    template: reactLib.reactMod.ReactNs.ComponentType[AlertComponentPropsWithStyle],
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    context: reactLib.reactMod.ReactNs.Context[js.UndefOr[AlertManager]] = null,
+    template: reactLib.reactMod.ComponentType[AlertComponentPropsWithStyle],
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
+    context: reactLib.reactMod.Context[js.UndefOr[AlertManager]] = null,
     offset: java.lang.String = null,
     position: AlertPosition = null,
     timeout: scala.Int | scala.Double = null,

@@ -65,18 +65,19 @@ class TokenIteratorCls protected () extends TokenIterator {
   override def stepForward(): java.lang.String = js.native
 }
 
-object TokenIterator {
-  @scala.inline
-  def apply(
-    getCurrentToken: () => TokenInfo,
-    getCurrentTokenColumn: () => scala.Double,
-    getCurrentTokenRow: () => scala.Double,
-    stepBackward: () => js.Array[java.lang.String],
-    stepForward: () => java.lang.String
-  ): TokenIterator = {
-    val __obj = js.Dynamic.literal(getCurrentToken = js.Any.fromFunction0(getCurrentToken), getCurrentTokenColumn = js.Any.fromFunction0(getCurrentTokenColumn), getCurrentTokenRow = js.Any.fromFunction0(getCurrentTokenRow), stepBackward = js.Any.fromFunction0(stepBackward), stepForward = js.Any.fromFunction0(stepForward))
-  
-    __obj.asInstanceOf[TokenIterator]
-  }
-}
+@JSGlobal("AceAjax.TokenIterator")
+@js.native
+object TokenIterator
+  extends /**
+  * Creates a new token iterator object. The inital token index is set to the provided row and column coordinates.
+  * @param session The session to associate with
+  * @param initialRow The row to start the tokenizing at
+  * @param initialColumn The column to start the tokenizing at
+  **/
+org.scalablytyped.runtime.Instantiable3[
+      /* session */ IEditSession, 
+      /* initialRow */ scala.Double, 
+      /* initialColumn */ scala.Double, 
+      TokenIterator
+    ]
 

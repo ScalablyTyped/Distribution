@@ -17,11 +17,7 @@ trait Rule extends js.Object {
     ]
   ] = js.undefined
   var serialize: js.UndefOr[
-    js.Function2[
-      /* obj */ js.Any, 
-      /* children */ java.lang.String, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function2[/* obj */ js.Any, /* children */ java.lang.String, reactLib.reactMod.ReactNode]
   ] = js.undefined
 }
 
@@ -32,7 +28,7 @@ object Rule {
       /* elements */ js.Array[stdLib.Element] | stdLib.NodeList | (js.Array[stdLib.Node with stdLib.ChildNode]), 
       _
     ]) => _ = null,
-    serialize: (/* obj */ js.Any, /* children */ java.lang.String) => reactLib.reactMod.ReactNs.ReactNode = null
+    serialize: (/* obj */ js.Any, /* children */ java.lang.String) => reactLib.reactMod.ReactNode = null
   ): Rule = {
     val __obj = js.Dynamic.literal()
     if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction2(deserialize))

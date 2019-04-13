@@ -46,7 +46,7 @@ trait IIconProps
     */
   var iconSize: js.UndefOr[scala.Double] = js.undefined
   /** CSS style properties. */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * HTML tag to use for the rendered element.
     * @default "span"
@@ -75,7 +75,7 @@ object IIconProps {
     htmlTitle: java.lang.String = null,
     iconSize: scala.Int | scala.Double = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     title: java.lang.String | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`false` = null
   ): IIconProps = {

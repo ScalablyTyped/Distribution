@@ -11,9 +11,9 @@ object ^ extends js.Object {
   val CONTENT_ATTR: java.lang.String = js.native
   val DEFAULT_INTERPOLATION_CONFIG: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig = js.native
   val EOF: atAngularCompilerLib.srcExpressionUnderscoreParserLexerMod.Token = js.native
-  val ERROR_COMPONENT_TYPE: /* ngComponentType */ java.lang.String = js.native
+  val ERROR_COMPONENT_TYPE: atAngularCompilerLib.atAngularCompilerLibStrings.ngComponentType = js.native
   val HOST_ATTR: java.lang.String = js.native
-  val NGSP_UNICODE: /* \\uE500 */ java.lang.String = js.native
+  val NGSP_UNICODE: atAngularCompilerLib.atAngularCompilerLibStrings.BACKSLASHuE500 = js.native
   val UrlResolver: atAngularCompilerLib.srcUrlUnderscoreResolverMod.UrlResolverCtor = js.native
   val VERSION: atAngularCompilerLib.srcUtilMod.Version = js.native
   def analyzeAndValidateNgModules(

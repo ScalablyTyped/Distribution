@@ -18,11 +18,9 @@ object ^ extends js.Object {
   var defaultTransOpts: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions = js.native
   @JSName("equals")
   val `equals_F^`: js.Any = js.native
-  val extend: atUirouterCoreLib.Anon_Source = js.native
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
   val hostRegex: stdLib.RegExp = js.native
-  val inArray: atUirouterCoreLib.Anon_Array = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
@@ -34,9 +32,6 @@ object ^ extends js.Object {
     org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.native
   val propEq: js.Function = js.native
-  val pushTo: atUirouterCoreLib.Anon_Arr = js.native
-  val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
-  var resolvePolicies: atUirouterCoreLib.Anon_Async = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
   val toJson: js.Any = js.native
@@ -225,6 +220,6 @@ object ^ extends js.Object {
   def unnestR(memo: js.Array[_], elem: js.Array[_]): js.Array[_] = js.native
   def `val`[T](v: T): js.Function0[T] = js.native
   def values[T](obj: atUirouterCoreLib.libCommonCommonMod.TypedMap[T]): js.Array[T] = js.native
-  def watchDigests($rootScope: angularLib.angularMod.angularNs.IRootScopeService): scala.Unit = js.native
+  def watchDigests($rootScope: angularLib.angularMod.IRootScopeService): scala.Unit = js.native
 }
 

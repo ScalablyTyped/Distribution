@@ -139,10 +139,5 @@ object defaultNs extends js.Object {
       ] = js.native
   }
   
-  type CheckFrequency = reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency
-  type DeploymentStatus = reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus
-  type InstallMode = reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode
-  type SyncStatus = reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus
-  type UpdateState = reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState
 }
 

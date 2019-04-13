@@ -8,35 +8,35 @@ import scala.scalajs.js.annotation._
 object audiospriteLibStrings {
   @js.native
   sealed trait createjs
-    extends audiospriteLib.audiospriteMod.audiospriteNs._ExportType
+    extends audiospriteLib.audiospriteMod._ExportType
   
   @js.native
   sealed trait debug
-    extends audiospriteLib.audiospriteMod.audiospriteNs.LogLevel
+    extends audiospriteLib.audiospriteMod.LogLevel
   
   @js.native
   sealed trait error
-    extends audiospriteLib.audiospriteMod.audiospriteNs.LogLevel
+    extends audiospriteLib.audiospriteMod.LogLevel
   
   @js.native
   sealed trait howler
-    extends audiospriteLib.audiospriteMod.audiospriteNs._ExportType
+    extends audiospriteLib.audiospriteMod._ExportType
   
   @js.native
   sealed trait info
-    extends audiospriteLib.audiospriteMod.audiospriteNs.LogLevel
+    extends audiospriteLib.audiospriteMod.LogLevel
   
   @js.native
   sealed trait jukebox
-    extends audiospriteLib.audiospriteMod.audiospriteNs._ExportType
+    extends audiospriteLib.audiospriteMod._ExportType
   
   @js.native
   sealed trait notice
-    extends audiospriteLib.audiospriteMod.audiospriteNs.LogLevel
+    extends audiospriteLib.audiospriteMod.LogLevel
   
   @js.native
   sealed trait warning
-    extends audiospriteLib.audiospriteMod.audiospriteNs.LogLevel
+    extends audiospriteLib.audiospriteMod.LogLevel
   
   @scala.inline
   def createjs: createjs = "createjs".asInstanceOf[createjs]

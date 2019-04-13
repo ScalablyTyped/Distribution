@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack-hot-client", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    compiler: webpackLib.webpackMod.Compiler | webpackLib.webpackMod.MultiCompiler,
-    options: webpackDashHotDashClientLib.webpackDashHotDashClientMod.WebpackHotClientNs.Options
-  ): scala.Unit = js.native
+  def apply(compiler: webpackLib.webpackMod.Compiler | webpackLib.webpackMod.MultiCompiler, options: Options): scala.Unit = js.native
 }
 

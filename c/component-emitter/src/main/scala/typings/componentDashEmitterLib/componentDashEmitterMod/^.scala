@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("component-emitter", JSImport.Namespace)
 @js.native
-object ^
-  extends org.scalablytyped.runtime.TopLevel[componentDashEmitterLib.Anon_Obj]
+object ^ extends js.Object {
+  def apply(): Emitter = js.native
+  def apply(obj: js.Object): Emitter = js.native
+}
 

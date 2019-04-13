@@ -21,14 +21,13 @@ object debugNs extends js.Object {
     */
   @js.native
   class ProfilingPlugin ()
-    extends webpackLib.webpackMod.webpackNs.debugNs.ProfilingPlugin {
-    def this(options: webpackLib.webpackMod.webpackNs.debugNs.ProfilingPluginOptions) = this()
-    /* CompleteClass */
-    @JSName("apply")
-    override def apply(args: js.Any*): scala.Unit = js.native
-    /* CompleteClass */
-    @JSName("apply")
-    override def apply(compiler: webpackLib.webpackMod.webpackNs.Compiler): scala.Unit = js.native
+    extends webpackLib.webpackMod.Plugin {
+    def this(options: ProfilingPluginOptions) = this()
+  }
+  
+  trait ProfilingPluginOptions extends js.Object {
+    /** A relative path to a custom output file (json) */
+    var outputPath: js.UndefOr[java.lang.String] = js.undefined
   }
   
 }

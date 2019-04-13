@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CalendarClass
-  extends reactLib.reactMod.ReactNs.ComponentClass[CalendarProps, reactLib.reactMod.ReactNs.ComponentState]
+  extends reactLib.reactMod.ComponentClass[CalendarProps, reactLib.reactMod.ComponentState]
 

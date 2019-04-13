@@ -10,21 +10,21 @@ trait ShallowRenderer extends js.Object {
   /**
     * After `shallowRenderer.render()` has been called, returns mounted instance.
     */
-  def getMountedInstance(): reactLib.reactMod.ReactNs.ReactInstance = js.native
+  def getMountedInstance(): reactLib.reactMod.ReactInstance = js.native
   /**
     * After `shallowRenderer.render()` has been called, returns shallowly rendered output.
     */
-  def getRenderOutput(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def getRenderOutput(): reactLib.reactMod.ReactElement[_] = js.native
   /**
     * After `shallowRenderer.render()` has been called, returns shallowly rendered output.
     */
   @JSName("getRenderOutput")
-  def getRenderOutput_EReactElementE[E /* <: reactLib.reactMod.ReactNs.ReactElement[_] */](): E = js.native
+  def getRenderOutput_EReactElementE[E /* <: reactLib.reactMod.ReactElement[_] */](): E = js.native
   /**
     * Similar to `ReactDOM.render` but it doesn't require DOM and only renders a single level deep.
     */
-  def render(element: reactLib.reactMod.ReactNs.ReactElement[_]): scala.Unit = js.native
-  def render(element: reactLib.reactMod.ReactNs.ReactElement[_], context: js.Any): scala.Unit = js.native
+  def render(element: reactLib.reactMod.ReactElement[_]): scala.Unit = js.native
+  def render(element: reactLib.reactMod.ReactElement[_], context: js.Any): scala.Unit = js.native
   def unmount(): scala.Unit = js.native
 }
 

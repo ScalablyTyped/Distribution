@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def withContentRect(types: js.Array[MeasurementType]): js.Function1[
     /* fn */ reactDashMeasureLib.MeasuredComponent[js.Object], 
-    reactLib.reactMod.ReactNs.ComponentType[js.Object]
+    reactLib.reactMod.ComponentType[js.Object]
   ] = js.native
   def withContentRect(types: MeasurementType): js.Function1[
     /* fn */ reactDashMeasureLib.MeasuredComponent[js.Object], 
-    reactLib.reactMod.ReactNs.ComponentType[js.Object]
+    reactLib.reactMod.ComponentType[js.Object]
   ] = js.native
 }
 

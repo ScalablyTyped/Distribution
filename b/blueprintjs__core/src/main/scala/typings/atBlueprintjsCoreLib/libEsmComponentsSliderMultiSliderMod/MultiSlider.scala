@@ -48,7 +48,7 @@ class MultiSlider ()
 @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider")
 @js.native
 object MultiSlider extends js.Object {
-  var Handle: reactLib.reactMod.ReactNs.StatelessComponent[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps] = js.native
+  var Handle: reactLib.reactMod.StatelessComponent[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps] = js.native
   var defaultProps: atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps = js.native
   var defaultSliderProps: atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.ISliderBaseProps = js.native
   var displayName: java.lang.String = js.native

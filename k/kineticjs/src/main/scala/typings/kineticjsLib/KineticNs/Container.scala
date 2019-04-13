@@ -11,3 +11,8 @@ class Container protected () extends IContainer {
   def this(config: js.Any) = this()
 }
 
+@JSGlobal("Kinetic.Container")
+@js.native
+object Container
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ js.Any, IContainer]
+

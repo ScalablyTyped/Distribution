@@ -19,7 +19,7 @@ trait StrictButtonGroupProps extends js.Object {
     semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps]
   ] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Groups can have a shared color. */
@@ -63,7 +63,7 @@ object StrictButtonGroupProps {
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom = null,
     basic: js.UndefOr[scala.Boolean] = js.undefined,
     buttons: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,

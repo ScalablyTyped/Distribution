@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("method-override", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
   def apply(
     getter: java.lang.String | (js.Function2[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
+      /* req */ expressLib.expressMod.Request, 
+      /* res */ expressLib.expressMod.Response, 
       java.lang.String
     ])
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
+  ): expressLib.expressMod.RequestHandler = js.native
   def apply(
     getter: java.lang.String | (js.Function2[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
+      /* req */ expressLib.expressMod.Request, 
+      /* res */ expressLib.expressMod.Response, 
       java.lang.String
     ]),
-    options: methodDashOverrideLib.methodDashOverrideMod.eNs.MethodOverrideOptions
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
+    options: MethodOverrideOptions
+  ): expressLib.expressMod.RequestHandler = js.native
 }
 

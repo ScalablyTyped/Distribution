@@ -7,21 +7,20 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "BoxOutlineGeometry")
 @js.native
-class BoxOutlineGeometry ()
-  extends cesiumLib.cesiumMod.CesiumNs.BoxOutlineGeometry
+class BoxOutlineGeometry () extends Packable
 
 /* static members */
 @JSImport("cesium", "BoxOutlineGeometry")
 @js.native
 object BoxOutlineGeometry extends js.Object {
-  def createGeometry(boxGeometry: cesiumLib.cesiumMod.CesiumNs.BoxOutlineGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
+  def createGeometry(boxGeometry: cesiumLib.cesiumMod.BoxOutlineGeometry): cesiumLib.cesiumMod.Geometry = js.native
   def fromDimensions(): scala.Unit = js.native
-  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.BoxOutlineGeometry = js.native
-  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.BoxOutlineGeometry = js.native
+  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.BoxOutlineGeometry = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.BoxOutlineGeometry = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.BoxOutlineGeometry
-  ): cesiumLib.cesiumMod.CesiumNs.BoxOutlineGeometry = js.native
+    result: cesiumLib.cesiumMod.BoxOutlineGeometry
+  ): cesiumLib.cesiumMod.BoxOutlineGeometry = js.native
 }
 

@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("react-weui", "Toptips")
 @js.native
 object ToptipsNs extends js.Object {
-  val defaultProps: reactDashWeuiLib.Anon_ShowType = js.native
+  @js.native
+  object defaultProps extends js.Object {
+    var show: scala.Boolean = js.native
+    var `type`: java.lang.String = js.native
+  }
+  
   @JSName("propTypes")
   @js.native
   object propTypesNs extends js.Object {

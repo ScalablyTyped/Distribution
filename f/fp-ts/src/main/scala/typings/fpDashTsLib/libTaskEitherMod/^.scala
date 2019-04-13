@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/TaskEither", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* TaskEither */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.TaskEither = js.native
   val taskEither: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libMonadIOMod.MonadIO2[URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[URI] = js.native
   val taskEitherSeq: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libMonadIOMod.MonadIO2[URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[URI] = js.native
   def bracket[L, A, B](

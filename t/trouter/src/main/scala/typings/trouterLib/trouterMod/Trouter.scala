@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Trouter[T] extends js.Object {
-  def add(method: trouterLib.trouterMod.TrouterNs.HTTPMethod, pattern: java.lang.String, handlers: T*): this.type
+  def add(method: HTTPMethod, pattern: java.lang.String, handlers: T*): this.type
   def all(pattern: java.lang.String, handlers: T*): this.type
   def connect(pattern: java.lang.String, handlers: T*): this.type
   def delete(pattern: java.lang.String, handlers: T*): this.type
-  def find(method: trouterLib.trouterMod.TrouterNs.HTTPMethod, url: java.lang.String): trouterLib.trouterMod.TrouterNs.FindResult[T]
+  def find(method: HTTPMethod, url: java.lang.String): FindResult[T]
   def get(pattern: java.lang.String, handlers: T*): this.type
   def head(pattern: java.lang.String, handlers: T*): this.type
   def options(pattern: java.lang.String, handlers: T*): this.type
@@ -24,11 +24,11 @@ trait Trouter[T] extends js.Object {
 object Trouter {
   @scala.inline
   def apply[T](
-    add: (trouterLib.trouterMod.TrouterNs.HTTPMethod, java.lang.String, /* repeated */ T) => Trouter[T],
+    add: (HTTPMethod, java.lang.String, /* repeated */ T) => Trouter[T],
     all: (java.lang.String, /* repeated */ T) => Trouter[T],
     connect: (java.lang.String, /* repeated */ T) => Trouter[T],
     delete: (java.lang.String, /* repeated */ T) => Trouter[T],
-    find: (trouterLib.trouterMod.TrouterNs.HTTPMethod, java.lang.String) => trouterLib.trouterMod.TrouterNs.FindResult[T],
+    find: (HTTPMethod, java.lang.String) => FindResult[T],
     get: (java.lang.String, /* repeated */ T) => Trouter[T],
     head: (java.lang.String, /* repeated */ T) => Trouter[T],
     options: (java.lang.String, /* repeated */ T) => Trouter[T],

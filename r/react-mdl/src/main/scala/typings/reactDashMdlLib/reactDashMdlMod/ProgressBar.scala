@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "ProgressBar")
 @js.native
-class ProgressBar ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.ProgressBar
+class ProgressBar () extends __MDLComponent[ProgressBarProps]
 

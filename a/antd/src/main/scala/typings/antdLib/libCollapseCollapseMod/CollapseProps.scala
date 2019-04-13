@@ -13,12 +13,12 @@ trait CollapseProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultActiveKey: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var destroyInactivePanel: js.UndefOr[scala.Boolean] = js.undefined
-  var expandIcon: js.UndefOr[js.Function1[/* panelProps */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var expandIcon: js.UndefOr[js.Function1[/* panelProps */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   var onChange: js.UndefOr[
     js.Function1[/* key */ java.lang.String | js.Array[java.lang.String], scala.Unit]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CollapseProps {
@@ -30,10 +30,10 @@ object CollapseProps {
     className: java.lang.String = null,
     defaultActiveKey: js.Array[java.lang.String] = null,
     destroyInactivePanel: js.UndefOr[scala.Boolean] = js.undefined,
-    expandIcon: /* panelProps */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
+    expandIcon: /* panelProps */ js.Any => reactLib.reactMod.ReactNode = null,
     onChange: /* key */ java.lang.String | js.Array[java.lang.String] => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CollapseProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(accordion)) __obj.updateDynamic("accordion")(accordion)

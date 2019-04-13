@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavbarTextProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[NavbarText] {
+  extends reactLib.reactMod.HTMLProps[NavbarText] {
   var pullRight: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object NavbarTextProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[NavbarText] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[NavbarText] = null,
     pullRight: js.UndefOr[scala.Boolean] = js.undefined
   ): NavbarTextProps = {
     val __obj = js.Dynamic.literal()

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BottomNavigationProps extends TabBarProps {
-  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
@@ -16,14 +16,14 @@ trait BottomNavigationProps extends TabBarProps {
 object BottomNavigationProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: js.Array[reactLib.reactMod.ReactNode] = null,
     hideTabBar: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabActiveTintColor: java.lang.String = null,
     tabBarIndicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,

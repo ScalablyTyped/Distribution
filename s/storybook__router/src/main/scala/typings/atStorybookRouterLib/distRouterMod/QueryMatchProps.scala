@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait QueryMatchProps extends js.Object {
   var path: java.lang.String
   var startsWith: scala.Boolean
-  def children(matchingData: MatchingData): reactLib.reactMod.ReactNs.ReactNode
+  def children(matchingData: MatchingData): reactLib.reactMod.ReactNode
 }
 
 object QueryMatchProps {
   @scala.inline
   def apply(
-    children: MatchingData => reactLib.reactMod.ReactNs.ReactNode,
+    children: MatchingData => reactLib.reactMod.ReactNode,
     path: java.lang.String,
     startsWith: scala.Boolean
   ): QueryMatchProps = {

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "BottomNavigationAction")
 @js.native
 class BottomNavigationAction protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionProps) = this()

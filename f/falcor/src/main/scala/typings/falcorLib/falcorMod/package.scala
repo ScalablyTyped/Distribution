@@ -11,7 +11,7 @@ package object falcorMod {
   type ModelOnChange = js.Function0[scala.Unit]
   type ObservableOnCompletedCallback = js.Function0[scala.Unit]
   type ObservableOnErrorCallback = js.Function1[
-    /* error */ falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.Error, 
+    /* error */ falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.Error, 
     scala.Unit
   ]
   type ObservableOnNextCallback[T] = js.Function1[/* value */ T, scala.Unit]

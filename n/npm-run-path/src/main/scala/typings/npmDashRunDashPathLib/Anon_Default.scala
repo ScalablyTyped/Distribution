@@ -25,11 +25,11 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(): java.lang.String = js.native
-  def apply(options: npmDashRunDashPathLib.npmDashRunDashPathMod.npmRunPathNs.RunPathOptions): java.lang.String = js.native
+  def apply(options: npmDashRunDashPathLib.npmDashRunDashPathMod.RunPathOptions): java.lang.String = js.native
   /**
   	@returns The augmented [`process.env`](https://nodejs.org/api/process.html#process_process_env) object.
   	*/
-  def env(): npmDashRunDashPathLib.npmDashRunDashPathMod.npmRunPathNs.ProcessEnv = js.native
-  def env(options: npmDashRunDashPathLib.npmDashRunDashPathMod.npmRunPathNs.EnvOptions): npmDashRunDashPathLib.npmDashRunDashPathMod.npmRunPathNs.ProcessEnv = js.native
+  def env(): npmDashRunDashPathLib.npmDashRunDashPathMod.ProcessEnv = js.native
+  def env(options: npmDashRunDashPathLib.npmDashRunDashPathMod.EnvOptions): npmDashRunDashPathLib.npmDashRunDashPathMod.ProcessEnv = js.native
 }
 

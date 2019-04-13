@@ -11,7 +11,7 @@ trait SwipeoutButtonProperties extends js.Object {
   var component: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var text: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var text: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var `type`: js.UndefOr[
     reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.default | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.delete | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.primary | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.secondary
   ] = js.undefined
@@ -26,7 +26,7 @@ object SwipeoutButtonProperties {
     component: reactLib.reactMod.Global.JSXNs.Element = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     onPress: () => scala.Unit = null,
-    text: reactLib.reactMod.ReactNs.ReactNode = null,
+    text: reactLib.reactMod.ReactNode = null,
     `type`: reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.default | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.delete | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.primary | reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutLibStrings.secondary = null,
     underlayColor: java.lang.String = null
   ): SwipeoutButtonProperties = {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var job: (js.Function9[
-    /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 
+    /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.Moment, 
     /* onTick */ js.Function0[scala.Unit], 
     /* onComplete */ js.UndefOr[CronCommand], 
     /* start */ js.UndefOr[scala.Boolean], 
@@ -21,16 +21,16 @@ object ^ extends js.Object {
     CronJob
   ]) | (js.Function1[/* options */ CronJobParameters, CronJob]) = js.native
   var sendAt: js.Function1[
-    /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 
-    momentLib.momentMod.momentNs.Moment
+    /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.Moment, 
+    momentLib.momentMod.Moment
   ] = js.native
   var time: js.Function2[
-    /* source */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 
+    /* source */ java.lang.String | stdLib.Date | momentLib.momentMod.Moment, 
     /* zone */ js.UndefOr[java.lang.String], 
     CronTime
   ] = js.native
   var timeout: js.Function1[
-    /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 
+    /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.Moment, 
     scala.Double
   ] = js.native
 }

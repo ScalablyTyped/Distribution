@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("autobahn", "Result")
 @js.native
-class Result ()
-  extends autobahnLib.autobahnMod.autobahnNs.Result {
+class Result () extends IResult {
   def this(args: js.Array[_]) = this()
   def this(args: js.Array[_], kwargs: js.Any) = this()
   /* CompleteClass */

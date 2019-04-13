@@ -13,7 +13,7 @@ trait DocumentClientOptions extends ConverterOptions {
   /**
     * An optional pre-configured instance of the AWS.DynamoDB service object to use for requests. The object may bound parameters used by the document client.
     */
-  var service: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.namespaced] = js.undefined
+  var service: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.^] = js.undefined
 }
 
 object DocumentClientOptions {
@@ -21,7 +21,7 @@ object DocumentClientOptions {
   def apply(
     convertEmptyValues: js.UndefOr[scala.Boolean] = js.undefined,
     params: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    service: awsDashSdkLib.clientsDynamodbMod.namespaced = null,
+    service: awsDashSdkLib.clientsDynamodbMod.^ = null,
     wrapNumbers: js.UndefOr[scala.Boolean] = js.undefined
   ): DocumentClientOptions = {
     val __obj = js.Dynamic.literal()

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("http", "Server")
 @js.native
 class Server ()
-  extends fibjsLib.httpMod.httpNs.Server
+  extends fibjsLib.Class_HttpServer
 

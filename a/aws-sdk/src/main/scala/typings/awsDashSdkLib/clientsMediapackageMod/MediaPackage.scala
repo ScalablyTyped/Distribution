@@ -9,392 +9,260 @@ import scala.scalajs.js.annotation._
 trait MediaPackage
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_MediaPackage: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ClientConfiguration = js.native
+  var config_MediaPackage: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Creates a new Channel.
     */
-  def createChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createChannel(): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelResponse, 
+      /* data */ CreateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new Channel.
     */
-  def createChannel(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createChannel(params: CreateChannelRequest): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createChannel(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelRequest,
+    params: CreateChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelResponse, 
+      /* data */ CreateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new OriginEndpoint record.
     */
-  def createOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[CreateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createOriginEndpoint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointResponse, 
+      /* data */ CreateOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new OriginEndpoint record.
     */
-  def createOriginEndpoint(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createOriginEndpoint(params: CreateOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[CreateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createOriginEndpoint(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointRequest,
+    params: CreateOriginEndpointRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointResponse, 
+      /* data */ CreateOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.CreateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing Channel.
     */
-  def deleteChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteChannel(): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelResponse, 
+      /* data */ DeleteChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing Channel.
     */
-  def deleteChannel(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteChannel(params: DeleteChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteChannel(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelRequest,
+    params: DeleteChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelResponse, 
+      /* data */ DeleteChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing OriginEndpoint.
     */
-  def deleteOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[DeleteOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteOriginEndpoint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointResponse, 
+      /* data */ DeleteOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing OriginEndpoint.
     */
-  def deleteOriginEndpoint(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteOriginEndpoint(params: DeleteOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[DeleteOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteOriginEndpoint(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointRequest,
+    params: DeleteOriginEndpointRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointResponse, 
+      /* data */ DeleteOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DeleteOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets details about a Channel.
     */
-  def describeChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeChannel(): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelResponse, 
+      /* data */ DescribeChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets details about a Channel.
     */
-  def describeChannel(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeChannel(params: DescribeChannelRequest): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeChannel(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelRequest,
+    params: DescribeChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelResponse, 
+      /* data */ DescribeChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets details about an existing OriginEndpoint.
     */
-  def describeOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[DescribeOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeOriginEndpoint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointResponse, 
+      /* data */ DescribeOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets details about an existing OriginEndpoint.
     */
-  def describeOriginEndpoint(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeOriginEndpoint(params: DescribeOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[DescribeOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeOriginEndpoint(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointRequest,
+    params: DescribeOriginEndpointRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointResponse, 
+      /* data */ DescribeOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.DescribeOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a collection of Channels.
     */
-  def listChannels(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listChannels(): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listChannels(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsResponse, 
+      /* data */ ListChannelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a collection of Channels.
     */
-  def listChannels(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listChannels(params: ListChannelsRequest): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listChannels(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsRequest,
+    params: ListChannelsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsResponse, 
+      /* data */ ListChannelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a collection of OriginEndpoint records.
     */
-  def listOriginEndpoints(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOriginEndpoints(): awsDashSdkLib.libRequestMod.Request[ListOriginEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOriginEndpoints(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsResponse, 
+      /* data */ ListOriginEndpointsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOriginEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a collection of OriginEndpoint records.
     */
-  def listOriginEndpoints(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOriginEndpoints(params: ListOriginEndpointsRequest): awsDashSdkLib.libRequestMod.Request[ListOriginEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOriginEndpoints(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsRequest,
+    params: ListOriginEndpointsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsResponse, 
+      /* data */ ListOriginEndpointsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListOriginEndpointsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOriginEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * 
     */
-  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * 
     */
-  def listTagsForResource(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceRequest,
+    params: ListTagsForResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Changes the Channel's first IngestEndpoint's username and password. WARNING - This API is deprecated. Please use RotateIngestEndpointCredentials instead
     */
-  def rotateChannelCredentials(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rotateChannelCredentials(): awsDashSdkLib.libRequestMod.Request[RotateChannelCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rotateChannelCredentials(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsResponse, 
+      /* data */ RotateChannelCredentialsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RotateChannelCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Changes the Channel's first IngestEndpoint's username and password. WARNING - This API is deprecated. Please use RotateIngestEndpointCredentials instead
     */
-  def rotateChannelCredentials(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rotateChannelCredentials(params: RotateChannelCredentialsRequest): awsDashSdkLib.libRequestMod.Request[RotateChannelCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rotateChannelCredentials(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsRequest,
+    params: RotateChannelCredentialsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsResponse, 
+      /* data */ RotateChannelCredentialsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateChannelCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RotateChannelCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Rotate the IngestEndpoint's username and password, as specified by the IngestEndpoint's id.
     */
-  def rotateIngestEndpointCredentials(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rotateIngestEndpointCredentials(): awsDashSdkLib.libRequestMod.Request[RotateIngestEndpointCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rotateIngestEndpointCredentials(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsResponse, 
+      /* data */ RotateIngestEndpointCredentialsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RotateIngestEndpointCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Rotate the IngestEndpoint's username and password, as specified by the IngestEndpoint's id.
     */
-  def rotateIngestEndpointCredentials(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rotateIngestEndpointCredentials(params: RotateIngestEndpointCredentialsRequest): awsDashSdkLib.libRequestMod.Request[RotateIngestEndpointCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rotateIngestEndpointCredentials(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsRequest,
+    params: RotateIngestEndpointCredentialsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsResponse, 
+      /* data */ RotateIngestEndpointCredentialsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.RotateIngestEndpointCredentialsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RotateIngestEndpointCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * 
     */
@@ -405,9 +273,9 @@ trait MediaPackage
   /**
     * 
     */
-  def tagResource(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.TagResourceRequest,
+    params: TagResourceRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -420,80 +288,56 @@ trait MediaPackage
   /**
     * 
     */
-  def untagResource(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UntagResourceRequest,
+    params: UntagResourceRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing Channel.
     */
-  def updateChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateChannel(): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelResponse, 
+      /* data */ UpdateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing Channel.
     */
-  def updateChannel(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateChannel(params: UpdateChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateChannel(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelRequest,
+    params: UpdateChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelResponse, 
+      /* data */ UpdateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing OriginEndpoint.
     */
-  def updateOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateOriginEndpoint(): awsDashSdkLib.libRequestMod.Request[UpdateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateOriginEndpoint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointResponse, 
+      /* data */ UpdateOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing OriginEndpoint.
     */
-  def updateOriginEndpoint(params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateOriginEndpoint(params: UpdateOriginEndpointRequest): awsDashSdkLib.libRequestMod.Request[UpdateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateOriginEndpoint(
-    params: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointRequest,
+    params: UpdateOriginEndpointRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointResponse, 
+      /* data */ UpdateOriginEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.UpdateOriginEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

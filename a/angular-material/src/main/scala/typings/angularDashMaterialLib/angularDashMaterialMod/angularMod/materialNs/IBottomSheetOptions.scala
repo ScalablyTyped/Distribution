@@ -10,7 +10,7 @@ trait IBottomSheetOptions extends js.Object {
   var clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined
    // default: false
   var controller: js.UndefOr[
-    java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor]
+    java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor]
   ] = js.undefined
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined
    // default: false
@@ -21,7 +21,7 @@ trait IBottomSheetOptions extends js.Object {
   var locals: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var parent: js.UndefOr[
     (js.Function2[
-      /* scope */ angularLib.angularMod.angularNs.IScope, 
+      /* scope */ angularLib.angularMod.IScope, 
       /* element */ angularLib.JQuery, 
       stdLib.Element | angularLib.JQuery
     ]) | java.lang.String | stdLib.Element | angularLib.JQuery
@@ -29,7 +29,7 @@ trait IBottomSheetOptions extends js.Object {
    // default: new child scope
   var preserveScope: js.UndefOr[scala.Boolean] = js.undefined
   var resolve: js.UndefOr[ResolveObject] = js.undefined
-  var scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
+  var scope: js.UndefOr[angularLib.angularMod.IScope] = js.undefined
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -39,20 +39,20 @@ object IBottomSheetOptions {
   def apply(
     bindToController: js.UndefOr[scala.Boolean] = js.undefined,
     clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined,
-    controller: java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor] = null,
+    controller: java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor] = null,
     controllerAs: java.lang.String = null,
     disableBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     disableParentScroll: js.UndefOr[scala.Boolean] = js.undefined,
     escapeToClose: js.UndefOr[scala.Boolean] = js.undefined,
     locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     parent: (js.Function2[
-      /* scope */ angularLib.angularMod.angularNs.IScope, 
+      /* scope */ angularLib.angularMod.IScope, 
       /* element */ angularLib.JQuery, 
       stdLib.Element | angularLib.JQuery
     ]) | java.lang.String | stdLib.Element | angularLib.JQuery = null,
     preserveScope: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: ResolveObject = null,
-    scope: angularLib.angularMod.angularNs.IScope = null,
+    scope: angularLib.angularMod.IScope = null,
     template: java.lang.String = null,
     templateUrl: java.lang.String = null
   ): IBottomSheetOptions = {

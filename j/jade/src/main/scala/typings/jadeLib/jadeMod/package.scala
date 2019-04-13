@@ -12,4 +12,5 @@ package object jadeMod {
     java.lang.String
   ]
   type JadeGenerationFunction = js.Function1[/* locals */ js.UndefOr[TemplateLocals], java.lang.String]
+  type TemplateLocals = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

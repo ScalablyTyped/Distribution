@@ -10,5 +10,5 @@ package object libDropdownMod {
   type DropdownProps[T] = Props[T]
   type Props[T] = UncontrolledProps[T] with reactstrapLib.Anon_AddonType
   type UncontrolledDropdownProps[T] = UncontrolledProps[T]
-  type UncontrolledProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleInNavbar with T
+  type UncontrolledProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleInNavbar with T
 }

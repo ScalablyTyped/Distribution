@@ -14,9 +14,9 @@ object filterMod extends js.Object {
   val sanitizeParam: expressDashValidatorLib.filterSanitizationDashChainDashBuildersMod.SanitizationChainBuilder = js.native
   val sanitizeQuery: expressDashValidatorLib.filterSanitizationDashChainDashBuildersMod.SanitizationChainBuilder = js.native
   def buildSanitizeFunction(location: js.Array[expressDashValidatorLib.checkLocationMod.Location]): expressDashValidatorLib.filterSanitizationDashChainDashBuildersMod.SanitizationChainBuilder = js.native
-  def matchedData(req: expressLib.expressMod.eNs.Request): stdLib.Record[java.lang.String, _] = js.native
+  def matchedData(req: expressLib.expressMod.Request): stdLib.Record[java.lang.String, _] = js.native
   def matchedData(
-    req: expressLib.expressMod.eNs.Request,
+    req: expressLib.expressMod.Request,
     options: stdLib.Partial[expressDashValidatorLib.filterMatchedDashDataMod.MatchedDataOptions]
   ): stdLib.Record[java.lang.String, _] = js.native
 }

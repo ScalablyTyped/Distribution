@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashSwipeableDashViewsLibComponents {
   @scala.inline
-  def ReactDashSwipeableDashViews: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashSwipeableDashViews: reactLib.reactMod.ComponentType[
     reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps
-  ] = js.constructorOf[reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps]]
   @scala.inline
   def SwipeableViewsProps: reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps.type = reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps

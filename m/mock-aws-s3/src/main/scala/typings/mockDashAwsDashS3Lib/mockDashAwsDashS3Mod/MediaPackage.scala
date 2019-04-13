@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MediaPackage ()
   extends awsDashSdkLib.awsDashSdkMod.MediaPackage {
-  def this(options: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMediapackageMod.ClientConfiguration) = this()
 }
 

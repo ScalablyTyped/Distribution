@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ACMPCA ()
   extends awsDashSdkLib.clientsAllMod.ACMPCA {
-  def this(options: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAcmpcaMod.ClientConfiguration) = this()
 }
 

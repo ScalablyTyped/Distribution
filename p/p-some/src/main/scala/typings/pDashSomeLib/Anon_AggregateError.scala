@@ -30,8 +30,8 @@ trait Anon_AggregateError extends js.Object {
   	```
   	*/
   def apply[T](
-    values: stdLib.Iterable[pDashSomeLib.pDashSomeMod.pSomeNs.Value[T]],
-    options: pDashSomeLib.pDashSomeMod.pSomeNs.Options[T]
-  ): pDashSomeLib.pDashSomeMod.pSomeNs.CancelablePromise[js.Array[T]] = js.native
+    values: stdLib.Iterable[pDashSomeLib.pDashSomeMod.Value[T]],
+    options: pDashSomeLib.pDashSomeMod.Options[T]
+  ): pDashSomeLib.pDashSomeMod.CancelablePromise[js.Array[T]] = js.native
 }
 

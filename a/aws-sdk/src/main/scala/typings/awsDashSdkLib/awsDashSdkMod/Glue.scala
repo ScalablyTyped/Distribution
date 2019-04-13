@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Glue ()
   extends awsDashSdkLib.clientsAllMod.Glue {
-  def this(options: awsDashSdkLib.clientsGlueMod.GlueNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsGlueMod.ClientConfiguration) = this()
 }
 

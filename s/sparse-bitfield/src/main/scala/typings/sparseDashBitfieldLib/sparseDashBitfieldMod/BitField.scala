@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BitField
-  extends org.scalablytyped.runtime.Instantiable0[sparseDashBitfieldLib.sparseDashBitfieldMod.BitFieldNs.BitFieldInstance]
+  extends org.scalablytyped.runtime.Instantiable0[BitFieldInstance]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* bufferOrOptions */ nodeLib.Buffer) | (/* bufferOrOptions */ sparseDashBitfieldLib.sparseDashBitfieldMod.BitFieldNs.Options), 
-      sparseDashBitfieldLib.sparseDashBitfieldMod.BitFieldNs.BitFieldInstance
+      (/* bufferOrOptions */ nodeLib.Buffer) | (/* bufferOrOptions */ Options), 
+      BitFieldInstance
     ] {
-  def apply(): sparseDashBitfieldLib.sparseDashBitfieldMod.BitFieldNs.BitFieldInstance = js.native
-  def apply(bufferOrOptions: nodeLib.Buffer): sparseDashBitfieldLib.sparseDashBitfieldMod.BitFieldNs.BitFieldInstance = js.native
-  def apply(bufferOrOptions: sparseDashBitfieldLib.sparseDashBitfieldMod.BitFieldNs.Options): sparseDashBitfieldLib.sparseDashBitfieldMod.BitFieldNs.BitFieldInstance = js.native
+  def apply(): BitFieldInstance = js.native
+  def apply(bufferOrOptions: nodeLib.Buffer): BitFieldInstance = js.native
+  def apply(bufferOrOptions: Options): BitFieldInstance = js.native
 }
 

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("scheduler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val unstable_IdlePriority: /* 5 */ scala.Double = js.native
-  val unstable_ImmediatePriority: /* 1 */ scala.Double = js.native
-  val unstable_LowPriority: /* 4 */ scala.Double = js.native
-  val unstable_NormalPriority: /* 3 */ scala.Double = js.native
-  val unstable_UserBlockingPriority: /* 2 */ scala.Double = js.native
+  val unstable_IdlePriority: schedulerLib.schedulerLibNumbers.`5` = js.native
+  val unstable_ImmediatePriority: schedulerLib.schedulerLibNumbers.`1` = js.native
+  val unstable_LowPriority: schedulerLib.schedulerLibNumbers.`4` = js.native
+  val unstable_NormalPriority: schedulerLib.schedulerLibNumbers.`3` = js.native
+  val unstable_UserBlockingPriority: schedulerLib.schedulerLibNumbers.`2` = js.native
   def unstable_cancelCallback(callbackNode: CallbackNode): scala.Unit = js.native
   def unstable_continueExecution(): scala.Unit = js.native
   def unstable_getCurrentPriorityLevel(): scala.Double = js.native

@@ -33,12 +33,6 @@ object ^ extends js.Object {
     */
   var useColors: scala.Boolean = js.native
   /**
-    * Expose terminal window size
-    *
-    * @see https://mochajs.org/api/module-base#.window
-    */
-  val window: mochaLib.Anon_Width = js.native
-  /**
     * Color `str` with the given `type` (from `colors`)
     *
     * @see https://mochajs.org/api/module-base#.color

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("reactTagCloud.TagCloud")
 @js.native
 class TagCloud protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashTagcloudLib.ReactTagCloudNs.TagCloudProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashTagcloudLib.ReactTagCloudNs.TagCloudProps) = this()

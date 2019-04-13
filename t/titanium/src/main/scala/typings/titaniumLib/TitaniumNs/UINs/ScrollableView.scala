@@ -45,6 +45,10 @@ trait ScrollableView extends View {
   			 */
   var overlayEnabled: scala.Boolean = js.native
   /**
+  			 * The padding applied to the scrollable view.
+  			 */
+  var padding: titaniumLib.ViewPadding = js.native
+  /**
   			 * Color of the paging control, as a color name or hex triplet.
   			 */
   var pageIndicatorColor: java.lang.String = js.native
@@ -116,6 +120,10 @@ trait ScrollableView extends View {
   			 * Gets the value of the <Titanium.UI.ScrollableView.overlayEnabled> property.
   			 */
   def getOverlayEnabled(): scala.Boolean = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.ScrollableView.padding> property.
+  			 */
+  def getPadding(): titaniumLib.ViewPadding = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ScrollableView.pageIndicatorColor> property.
   			 */
@@ -212,6 +220,10 @@ trait ScrollableView extends View {
   			 * Sets the value of the <Titanium.UI.ScrollableView.overlayEnabled> property.
   			 */
   def setOverlayEnabled(overlayEnabled: scala.Boolean): scala.Unit = js.native
+  /**
+  			 * Sets the value of the <Titanium.UI.ScrollableView.padding> property.
+  			 */
+  def setPadding(padding: titaniumLib.ViewPadding): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ScrollableView.pageIndicatorColor> property.
   			 */

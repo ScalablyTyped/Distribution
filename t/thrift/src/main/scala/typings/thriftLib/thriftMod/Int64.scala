@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("thrift", "Int64")
 @js.native
 class Int64 protected ()
-  extends nodeDashInt64Lib.nodeDashInt64Mod.namespaced {
+  extends nodeDashInt64Lib.nodeDashInt64Mod.^ {
   def this(array: stdLib.Uint8Array) = this()
   def this(buffer: nodeLib.Buffer) = this()
   def this(num: scala.Double) = this()

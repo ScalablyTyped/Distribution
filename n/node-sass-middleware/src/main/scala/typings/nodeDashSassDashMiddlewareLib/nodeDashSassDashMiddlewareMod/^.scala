@@ -12,6 +12,6 @@ object ^ extends js.Object {
     * 
     *
     */
-  def apply(options: Options): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(options: Options): expressLib.expressMod.RequestHandler = js.native
 }
 

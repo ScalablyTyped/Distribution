@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation._
 @js.native
 object requestDashAsDashCurlMod extends js.Object {
   def apply(
-    request: requestLib.requestMod.requestNs.RequestAPI[
-      requestLib.requestMod.requestNs.Request, 
-      requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl
+    request: requestLib.requestMod.RequestAPI[
+      requestLib.requestMod.Request, 
+      requestLib.requestMod.CoreOptions, 
+      requestLib.requestMod.RequiredUriUrl
     ]
   ): java.lang.String = js.native
   def apply(
-    request: requestLib.requestMod.requestNs.RequestAPI[
-      requestLib.requestMod.requestNs.Request, 
-      requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl
+    request: requestLib.requestMod.RequestAPI[
+      requestLib.requestMod.Request, 
+      requestLib.requestMod.CoreOptions, 
+      requestLib.requestMod.RequiredUriUrl
     ],
     body: js.Any
   ): java.lang.String = js.native
   def serialize(
-    request: requestLib.requestMod.requestNs.RequestAPI[
-      requestLib.requestMod.requestNs.Request, 
-      requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl
+    request: requestLib.requestMod.RequestAPI[
+      requestLib.requestMod.Request, 
+      requestLib.requestMod.CoreOptions, 
+      requestLib.requestMod.RequiredUriUrl
     ]
   ): java.lang.String = js.native
 }

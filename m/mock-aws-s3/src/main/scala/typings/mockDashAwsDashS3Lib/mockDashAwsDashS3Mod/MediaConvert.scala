@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MediaConvert ()
   extends awsDashSdkLib.awsDashSdkMod.MediaConvert {
-  def this(options: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMediaconvertMod.ClientConfiguration) = this()
 }
 

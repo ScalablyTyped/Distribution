@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("xadesjs", "Application")
 @js.native
 class Application ()
-  extends xadesjsLib.xadesjsMod.XAdESNs.Application
+  extends xmldsigjsLib.xmldsigjsMod.Application
 

@@ -44,7 +44,7 @@ object ojComboboxOneSettableProperties {
     help: atOracleOraclejetLib.Anon_Instruction,
     helpHints: atOracleOraclejetLib.Anon_Definition,
     labelHint: java.lang.String,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     minLength: scala.Double,
     optionsKeys: atOracleOraclejetLib.Anon_ChildKeysChildren,
     pickerAttributes: atOracleOraclejetLib.Anon_Class,

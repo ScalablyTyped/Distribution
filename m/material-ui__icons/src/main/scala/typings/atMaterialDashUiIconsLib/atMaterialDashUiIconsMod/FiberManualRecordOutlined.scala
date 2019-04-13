@@ -16,9 +16,9 @@ class FiberManualRecordOutlined protected ()
 @JSImport("@material-ui/icons", "FiberManualRecordOutlined")
 @js.native
 class FiberManualRecordOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

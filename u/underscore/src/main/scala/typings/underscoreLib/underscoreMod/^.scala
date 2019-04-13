@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("underscore", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[underscoreLib.underscoreMod.underscoreNs.UnderscoreStatic]
+  extends org.scalablytyped.runtime.TopLevel[UnderscoreStatic]
 

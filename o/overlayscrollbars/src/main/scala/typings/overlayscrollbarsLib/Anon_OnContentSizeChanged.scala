@@ -6,59 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_OnContentSizeChanged extends js.Object {
-  var onContentSizeChanged: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.SizeChangedCallback | scala.Null
-  ] = js.undefined
-  var onDestroyed: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BasicEventCallback | scala.Null
-  ] = js.undefined
-  var onDirectionChanged: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.DirectionChangedCallback | scala.Null
-  ] = js.undefined
-  var onHostSizeChanged: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.SizeChangedCallback | scala.Null
-  ] = js.undefined
-  var onInitializationWithdrawn: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BasicEventCallback | scala.Null
-  ] = js.undefined
-  var onInitialized: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BasicEventCallback | scala.Null
-  ] = js.undefined
+  var onContentSizeChanged: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.SizeChangedCallback | scala.Null] = js.undefined
+  var onDestroyed: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.BasicEventCallback | scala.Null] = js.undefined
+  var onDirectionChanged: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.DirectionChangedCallback | scala.Null] = js.undefined
+  var onHostSizeChanged: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.SizeChangedCallback | scala.Null] = js.undefined
+  var onInitializationWithdrawn: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.BasicEventCallback | scala.Null] = js.undefined
+  var onInitialized: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.BasicEventCallback | scala.Null] = js.undefined
   var onOverflowAmountChanged: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowAmountChangedCallback | scala.Null
+    overlayscrollbarsLib.overlayscrollbarsMod.OverflowAmountChangedCallback | scala.Null
   ] = js.undefined
-  var onOverflowChanged: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowChangedCallback | scala.Null
-  ] = js.undefined
-  var onScroll: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollEventCallback | scala.Null
-  ] = js.undefined
-  var onScrollStart: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollEventCallback | scala.Null
-  ] = js.undefined
-  var onScrollStop: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollEventCallback | scala.Null
-  ] = js.undefined
-  var onUpdated: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.UpdatedCallback | scala.Null
-  ] = js.undefined
+  var onOverflowChanged: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverflowChangedCallback | scala.Null] = js.undefined
+  var onScroll: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.ScrollEventCallback | scala.Null] = js.undefined
+  var onScrollStart: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.ScrollEventCallback | scala.Null] = js.undefined
+  var onScrollStop: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.ScrollEventCallback | scala.Null] = js.undefined
+  var onUpdated: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.UpdatedCallback | scala.Null] = js.undefined
 }
 
 object Anon_OnContentSizeChanged {
   @scala.inline
   def apply(
-    onContentSizeChanged: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.SizeChangedCallback = null,
-    onDestroyed: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BasicEventCallback = null,
-    onDirectionChanged: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.DirectionChangedCallback = null,
-    onHostSizeChanged: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.SizeChangedCallback = null,
-    onInitializationWithdrawn: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BasicEventCallback = null,
-    onInitialized: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BasicEventCallback = null,
-    onOverflowAmountChanged: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowAmountChangedCallback = null,
-    onOverflowChanged: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowChangedCallback = null,
-    onScroll: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollEventCallback = null,
-    onScrollStart: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollEventCallback = null,
-    onScrollStop: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollEventCallback = null,
-    onUpdated: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.UpdatedCallback = null
+    onContentSizeChanged: overlayscrollbarsLib.overlayscrollbarsMod.SizeChangedCallback = null,
+    onDestroyed: overlayscrollbarsLib.overlayscrollbarsMod.BasicEventCallback = null,
+    onDirectionChanged: overlayscrollbarsLib.overlayscrollbarsMod.DirectionChangedCallback = null,
+    onHostSizeChanged: overlayscrollbarsLib.overlayscrollbarsMod.SizeChangedCallback = null,
+    onInitializationWithdrawn: overlayscrollbarsLib.overlayscrollbarsMod.BasicEventCallback = null,
+    onInitialized: overlayscrollbarsLib.overlayscrollbarsMod.BasicEventCallback = null,
+    onOverflowAmountChanged: overlayscrollbarsLib.overlayscrollbarsMod.OverflowAmountChangedCallback = null,
+    onOverflowChanged: overlayscrollbarsLib.overlayscrollbarsMod.OverflowChangedCallback = null,
+    onScroll: overlayscrollbarsLib.overlayscrollbarsMod.ScrollEventCallback = null,
+    onScrollStart: overlayscrollbarsLib.overlayscrollbarsMod.ScrollEventCallback = null,
+    onScrollStop: overlayscrollbarsLib.overlayscrollbarsMod.ScrollEventCallback = null,
+    onUpdated: overlayscrollbarsLib.overlayscrollbarsMod.UpdatedCallback = null
   ): Anon_OnContentSizeChanged = {
     val __obj = js.Dynamic.literal()
     if (onContentSizeChanged != null) __obj.updateDynamic("onContentSizeChanged")(onContentSizeChanged)

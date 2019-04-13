@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a binding to a section of the document.
   *
-  * @remarks
-  * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
-  *
   * The Binding object exposes the functionality possessed by all bindings regardless of type.
   *
   * The Binding object is never called directly. It is the abstract parent class of the objects that represent each type of binding: 
@@ -19,22 +16,14 @@ import scala.scalajs.js.annotation._
   * and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the id and type 
   * properties for querying those property values. Additionally, the MatrixBinding and TableBinding objects expose additional methods for matrix- 
   * and table-specific features, such as counting the number of rows and columns.
+  *
+  * @remarks
+  * **Hosts**: Access, Excel, Word
   * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this interface.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-  *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-  *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-  *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-  *  </table>
+  * **Requirement sets**: 
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
   */
 @js.native
 trait Binding extends js.Object {
@@ -55,6 +44,9 @@ trait Binding extends js.Object {
     * `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`.
     *
     * @remarks
+    * 
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents | BindingEvents}
+    *  
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
     * @param eventType The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`.
@@ -79,7 +71,15 @@ trait Binding extends js.Object {
     * Returns the data contained within the binding.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`),  
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
     *
     * When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, 
     * startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range).
@@ -97,8 +97,9 @@ trait Binding extends js.Object {
     * Removes the specified handler from the binding for the specified event type.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>BindingEvents</td></tr></table>
-    *
+    * 
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents | BindingEvents}
+    * 
     * @param eventType The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`.
     * @param options Provides options to determine which event handler or handlers are removed.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -123,9 +124,16 @@ trait Binding extends js.Object {
     * Writes data to the bound section of the document represented by the specified binding object.
     *
     * @remarks
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`),  
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
     *
-    * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
-    * 
     * The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as 
     * described in the following table.
     * 

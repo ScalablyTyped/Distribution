@@ -7,26 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "Frustum")
 @js.native
-abstract class Frustum ()
-  extends cesiumLib.cesiumMod.CesiumNs.Frustum {
-  /* CompleteClass */
-  override var far: scala.Double = js.native
-  /* CompleteClass */
-  override var near: scala.Double = js.native
-  /* CompleteClass */
-  override val projectionMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = js.native
-  /* CompleteClass */
-  override def computeCullingVolume(
-    position: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
-    direction: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
-    up: cesiumLib.cesiumMod.CesiumNs.Cartesian3
-  ): cesiumLib.cesiumMod.CesiumNs.CullingVolume = js.native
-  /* CompleteClass */
-  override def getPixelDimensions(
+abstract class Frustum () extends js.Object {
+  var far: scala.Double = js.native
+  var near: scala.Double = js.native
+  val projectionMatrix: Matrix4 = js.native
+  def computeCullingVolume(position: Cartesian3, direction: Cartesian3, up: Cartesian3): CullingVolume = js.native
+  def getPixelDimensions(
     drawingBufferWidth: scala.Double,
     drawingBufferHeight: scala.Double,
     distance: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.Cartesian2
-  ): cesiumLib.cesiumMod.CesiumNs.Cartesian2 = js.native
+    result: Cartesian2
+  ): Cartesian2 = js.native
 }
 

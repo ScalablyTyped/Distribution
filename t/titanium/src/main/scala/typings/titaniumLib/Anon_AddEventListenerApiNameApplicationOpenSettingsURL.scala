@@ -83,11 +83,11 @@ trait Anon_AddEventListenerApiNameApplicationOpenSettingsURL extends js.Object {
   /**
   			 * Show the notification's subtitle, even if the user has disabled notification previews for the app.
   			 */
-  val USER_NOTIFICATION_CATEGORY_OPTION_HIDEEN_PREVIEWS_SHOW_SUBTITLE: scala.Double = js.native
+  val USER_NOTIFICATION_CATEGORY_OPTION_HIDDEN_PREVIEWS_SHOW_SUBTITLE: scala.Double = js.native
   /**
   			 * Show the notification's title, even if the user has disabled notification previews for the app.
   			 */
-  val USER_NOTIFICATION_CATEGORY_OPTION_HIDEEN_PREVIEWS_SHOW_TITLE: scala.Double = js.native
+  val USER_NOTIFICATION_CATEGORY_OPTION_HIDDEN_PREVIEWS_SHOW_TITLE: scala.Double = js.native
   /**
   			 * No options.
   			 */
@@ -276,7 +276,7 @@ trait Anon_AddEventListenerApiNameApplicationOpenSettingsURL extends js.Object {
   			 * The top-level App iOS Notification Center module. It is used to control scheduled notifications
   			 * and receive details about the system-wide notification settings.
   			 */
-  val UserNotificationCenterNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName = js.native
+  val UserNotificationCenterNs: Anon_ApiName = js.native
   /**
   			 * The name of the API that this proxy corresponds to.
   			 */

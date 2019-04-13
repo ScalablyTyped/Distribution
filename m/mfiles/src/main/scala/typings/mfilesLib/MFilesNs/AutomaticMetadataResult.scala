@@ -15,3 +15,8 @@ class AutomaticMetadataResult ()
   override def Clone(): mfilesLib.IAutomaticMetadataResult = js.native
 }
 
+@JSGlobal("MFiles.AutomaticMetadataResult")
+@js.native
+object AutomaticMetadataResult
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAutomaticMetadataResult]
+

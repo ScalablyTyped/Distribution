@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OverlayProps
-  extends reactLib.reactMod.ReactNs.Props[Overlay] {
+  extends reactLib.reactMod.Props[Overlay] {
   var autoLockScrolling: js.UndefOr[scala.Boolean] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var show: scala.Boolean
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var transitionEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -19,11 +19,11 @@ object OverlayProps {
   def apply(
     show: scala.Boolean,
     autoLockScrolling: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Overlay] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    children: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    ref: reactLib.reactMod.LegacyRef[Overlay] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayProps = {
     val __obj = js.Dynamic.literal(show = show)

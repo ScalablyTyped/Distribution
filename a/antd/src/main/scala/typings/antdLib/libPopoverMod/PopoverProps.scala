@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait PopoverProps
   extends antdLib.libTooltipMod.AbstractTooltipProps {
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object PopoverProps {
@@ -18,8 +18,8 @@ object PopoverProps {
     arrowPointAtCenter: js.UndefOr[scala.Boolean] = js.undefined,
     autoAdjustOverflow: scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow = null,
     builtinPlacements: js.Object = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
@@ -28,11 +28,11 @@ object PopoverProps {
     onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     placement: antdLib.libTooltipMod.TooltipPlacement = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionName: java.lang.String = null,
     trigger: antdLib.libTooltipMod.TooltipTrigger = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined

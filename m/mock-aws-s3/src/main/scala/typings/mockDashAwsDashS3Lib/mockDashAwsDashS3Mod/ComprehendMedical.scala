@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ComprehendMedical ()
   extends awsDashSdkLib.awsDashSdkMod.ComprehendMedical {
-  def this(options: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsComprehendmedicalMod.ClientConfiguration) = this()
 }
 

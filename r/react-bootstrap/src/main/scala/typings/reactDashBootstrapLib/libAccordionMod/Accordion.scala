@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Accordion
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libAccordionMod.AccordionNs.AccordionProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[AccordionProps, js.Object, js.Any]
 

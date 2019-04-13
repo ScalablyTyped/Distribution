@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ILocalStorageService extends js.Object {
-  def bind($scope: angularLib.angularMod.angularNs.IScope, key: java.lang.String): js.Any = js.native
+  def bind($scope: angularLib.angularMod.IScope, key: java.lang.String): js.Any = js.native
   def bind(
-    $scope: angularLib.angularMod.angularNs.IScope,
+    $scope: angularLib.angularMod.IScope,
     key: java.lang.String,
     opts: angularlocalstorageLib.Anon_DefaultValue
   ): js.Any = js.native
@@ -17,7 +17,7 @@ trait ILocalStorageService extends js.Object {
   def get(key: java.lang.String): js.Any = js.native
   def remove(key: java.lang.String): scala.Boolean = js.native
   def set(key: java.lang.String, value: js.Any): js.Any = js.native
-  def unbind($scope: angularLib.angularMod.angularNs.IScope, key: java.lang.String): scala.Unit = js.native
-  def unbind($scope: angularLib.angularMod.angularNs.IScope, key: java.lang.String, storeName: java.lang.String): scala.Unit = js.native
+  def unbind($scope: angularLib.angularMod.IScope, key: java.lang.String): scala.Unit = js.native
+  def unbind($scope: angularLib.angularMod.IScope, key: java.lang.String, storeName: java.lang.String): scala.Unit = js.native
 }
 

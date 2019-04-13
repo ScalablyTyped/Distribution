@@ -6,37 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChromePickerDefaultStyles extends js.Object {
-  var Alpha: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var Hue: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var Saturation: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var active: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var alpha: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var body: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var color: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var controls: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var hue: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var picker: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var saturation: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var swatch: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var toggles: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var Alpha: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var Hue: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var Saturation: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var active: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var alpha: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var body: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var color: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var controls: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var hue: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var picker: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var saturation: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var swatch: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var toggles: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ChromePickerDefaultStyles {
   @scala.inline
   def apply(
-    Alpha: reactLib.reactMod.ReactNs.CSSProperties = null,
-    Hue: reactLib.reactMod.ReactNs.CSSProperties = null,
-    Saturation: reactLib.reactMod.ReactNs.CSSProperties = null,
-    active: reactLib.reactMod.ReactNs.CSSProperties = null,
-    alpha: reactLib.reactMod.ReactNs.CSSProperties = null,
-    body: reactLib.reactMod.ReactNs.CSSProperties = null,
-    color: reactLib.reactMod.ReactNs.CSSProperties = null,
-    controls: reactLib.reactMod.ReactNs.CSSProperties = null,
-    hue: reactLib.reactMod.ReactNs.CSSProperties = null,
-    picker: reactLib.reactMod.ReactNs.CSSProperties = null,
-    saturation: reactLib.reactMod.ReactNs.CSSProperties = null,
-    swatch: reactLib.reactMod.ReactNs.CSSProperties = null,
-    toggles: reactLib.reactMod.ReactNs.CSSProperties = null
+    Alpha: reactLib.reactMod.CSSProperties = null,
+    Hue: reactLib.reactMod.CSSProperties = null,
+    Saturation: reactLib.reactMod.CSSProperties = null,
+    active: reactLib.reactMod.CSSProperties = null,
+    alpha: reactLib.reactMod.CSSProperties = null,
+    body: reactLib.reactMod.CSSProperties = null,
+    color: reactLib.reactMod.CSSProperties = null,
+    controls: reactLib.reactMod.CSSProperties = null,
+    hue: reactLib.reactMod.CSSProperties = null,
+    picker: reactLib.reactMod.CSSProperties = null,
+    saturation: reactLib.reactMod.CSSProperties = null,
+    swatch: reactLib.reactMod.CSSProperties = null,
+    toggles: reactLib.reactMod.CSSProperties = null
   ): ChromePickerDefaultStyles = {
     val __obj = js.Dynamic.literal()
     if (Alpha != null) __obj.updateDynamic("Alpha")(Alpha)

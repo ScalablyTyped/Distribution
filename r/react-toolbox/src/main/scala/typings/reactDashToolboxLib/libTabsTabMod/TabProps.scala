@@ -32,7 +32,7 @@ trait TabProps
   /**
     * Icon to be used in inner FontIcon.
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Label text for navigation header.
     */
@@ -59,8 +59,8 @@ object TabProps {
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    icon: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
     label: java.lang.String = null,
     onActive: js.Function = null,
     onClick: js.Function = null,
@@ -85,7 +85,7 @@ object TabProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: TabTheme = null
   ): TabProps = {
     val __obj = js.Dynamic.literal()

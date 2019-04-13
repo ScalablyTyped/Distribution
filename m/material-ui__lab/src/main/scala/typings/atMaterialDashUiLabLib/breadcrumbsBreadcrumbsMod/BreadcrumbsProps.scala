@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLElement>[P]} */ trait BreadcrumbsProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLElement>[P]} */ trait BreadcrumbsProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BreadcrumbsClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var itemsAfterCollapse: js.UndefOr[scala.Boolean] = js.undefined
   var itemsBeforeCollapse: js.UndefOr[scala.Boolean] = js.undefined
   var maxItems: js.UndefOr[scala.Double] = js.undefined
-  var separator: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var separator: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object BreadcrumbsProps {
@@ -20,12 +20,12 @@ object BreadcrumbsProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BreadcrumbsClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     itemsAfterCollapse: js.UndefOr[scala.Boolean] = js.undefined,
     itemsBeforeCollapse: js.UndefOr[scala.Boolean] = js.undefined,
     maxItems: scala.Int | scala.Double = null,
-    separator: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    separator: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): BreadcrumbsProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

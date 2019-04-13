@@ -17,3 +17,8 @@ class AssociatedPropertyDef ()
   override def Clone(): mfilesLib.IAssociatedPropertyDef = js.native
 }
 
+@JSGlobal("MFiles.AssociatedPropertyDef")
+@js.native
+object AssociatedPropertyDef
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAssociatedPropertyDef]
+

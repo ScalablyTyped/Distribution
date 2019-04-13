@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   var connectNulls: js.UndefOr[scala.Boolean] = js.undefined
   var layout: js.UndefOr[LayoutType] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
-  var pathRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
+  var pathRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   var points: js.UndefOr[js.Array[js.Object]] = js.undefined
   var `type`: js.UndefOr[LineType] = js.undefined
 }
@@ -37,7 +37,7 @@ object CurveProps {
     onTouchMove: RechartsFunction = null,
     onTouchStart: RechartsFunction = null,
     path: java.lang.String = null,
-    pathRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    pathRef: reactLib.reactMod.Ref[_] = null,
     points: js.Array[js.Object] = null,
     `type`: LineType = null
   ): CurveProps = {

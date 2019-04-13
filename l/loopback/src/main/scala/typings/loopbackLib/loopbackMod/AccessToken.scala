@@ -21,39 +21,24 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "AccessToken")
 @js.native
-class AccessToken ()
-  extends loopbackLib.loopbackMod.lNs.AccessToken {
-  /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
+class AccessToken () extends PersistedModel {
+  /** When the token was created. */
+  var created: stdLib.Date = js.native
+  /** Generated token ID */
+  var id: java.lang.String = js.native
+  /** Extends the `Model.settings` object. */
+  @JSName("settings")
+  var settings_AccessToken: loopbackLib.Anon_AccessTokenIdLength = js.native
+  /** Time to live in seconds, 2 weeks by default. */
+  var ttl: scala.Double = js.native
   /**
-    * loopback 3.x Remote hooks
-    * http://loopback.io/doc/en/lb3/Remote-hooks.html
-    * @param method
-    * @param backback
+    * Validate the token.
+    *
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {boolean} isValid
     */
-  /* CompleteClass */
-  override def beforeRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def validate(callback: js.Function2[/* err */ stdLib.Error, /* isValid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
 }
 
 /* static members */

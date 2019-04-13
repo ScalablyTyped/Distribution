@@ -32,7 +32,7 @@ trait Anon_ArgsClassName extends js.Object {
   @JSName("style")
   var style_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   @JSName("value")
-  var value_Original: propDashTypesLib.propDashTypesMod.Requireable[momentLib.momentMod.momentNs.Moment] = js.native
+  var value_Original: propDashTypesLib.propDashTypesMod.Requireable[momentLib.momentMod.Moment] = js.native
   def className(
     props: js.Object,
     propName: java.lang.String,

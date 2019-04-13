@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "UndecoratedTable")
 @js.native
-class UndecoratedTable ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.UndecoratedTable
+class UndecoratedTable () extends __MDLComponent[UndecoratedTableProps]
 

@@ -17,3 +17,8 @@ class StringData ()
   override def Clone(): mfilesLib.IStringData = js.native
 }
 
+@JSGlobal("MFiles.StringData")
+@js.native
+object StringData
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStringData]
+

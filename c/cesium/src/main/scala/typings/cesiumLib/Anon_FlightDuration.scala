@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait Anon_FlightDuration extends js.Object {
   var flightDuration: js.UndefOr[scala.Double] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
-  var scene: cesiumLib.cesiumMod.CesiumNs.Scene
+  var scene: cesiumLib.cesiumMod.Scene
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_FlightDuration {
   @scala.inline
   def apply(
-    scene: cesiumLib.cesiumMod.CesiumNs.Scene,
+    scene: cesiumLib.cesiumMod.Scene,
     flightDuration: scala.Int | scala.Double = null,
     key: java.lang.String = null,
     url: java.lang.String = null

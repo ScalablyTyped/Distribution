@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SubscriptionProps[TData, TVariables] extends js.Object {
   var children: js.UndefOr[
-    js.Function1[/* result */ SubscriptionResult[TData], reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* result */ SubscriptionResult[TData], reactLib.reactMod.ReactNode]
   ] = js.undefined
   var client: js.UndefOr[apolloDashClientLib.apolloDashClientMod.default[js.Object]] = js.undefined
   var fetchPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy] = js.undefined
@@ -22,7 +22,7 @@ object SubscriptionProps {
   @scala.inline
   def apply[TData, TVariables](
     subscription: graphqlLib.languageAstMod.DocumentNode,
-    children: /* result */ SubscriptionResult[TData] => reactLib.reactMod.ReactNs.ReactNode = null,
+    children: /* result */ SubscriptionResult[TData] => reactLib.reactMod.ReactNode = null,
     client: apolloDashClientLib.apolloDashClientMod.default[js.Object] = null,
     fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,
     onSubscriptionComplete: () => scala.Unit = null,

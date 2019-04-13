@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RouterProps extends js.Object {
   var basepath: js.UndefOr[java.lang.String] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[js.Object] | java.lang.String] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[js.Object] | java.lang.String] = js.undefined
   var location: js.UndefOr[WindowLocation] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -16,7 +16,7 @@ object RouterProps {
   @scala.inline
   def apply(
     basepath: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ComponentType[js.Object] | java.lang.String = null,
+    component: reactLib.reactMod.ComponentType[js.Object] | java.lang.String = null,
     location: WindowLocation = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined
   ): RouterProps = {

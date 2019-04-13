@@ -9,7 +9,7 @@ trait IStepProps extends js.Object {
   var adjustMarginRight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[js.Any] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var iconPrefix: js.UndefOr[java.lang.String] = js.undefined
   var itemWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
@@ -27,7 +27,7 @@ object IStepProps {
     adjustMarginRight: scala.Double | java.lang.String = null,
     className: java.lang.String = null,
     description: js.Any = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     iconPrefix: java.lang.String = null,
     itemWidth: scala.Double | java.lang.String = null,
     prefixCls: java.lang.String = null,

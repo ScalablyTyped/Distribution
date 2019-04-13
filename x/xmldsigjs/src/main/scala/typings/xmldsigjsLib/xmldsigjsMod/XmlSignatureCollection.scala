@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "XmlSignatureCollection")
 @js.native
-abstract class XmlSignatureCollection[I /* <: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.XmlSignatureObject */] ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.XmlSignatureCollection[I]
+abstract class XmlSignatureCollection[I /* <: XmlSignatureObject */] ()
+  extends xmlDashCoreLib.xmlDashCoreMod.XmlCollection[I]
 

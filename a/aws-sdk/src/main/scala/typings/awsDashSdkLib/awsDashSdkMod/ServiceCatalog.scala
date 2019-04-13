@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ServiceCatalog ()
   extends awsDashSdkLib.clientsAllMod.ServiceCatalog {
-  def this(options: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsServicecatalogMod.ClientConfiguration) = this()
 }
 

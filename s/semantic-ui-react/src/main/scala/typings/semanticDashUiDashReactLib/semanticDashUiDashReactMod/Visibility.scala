@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react", "Visibility")
 @js.native
 class Visibility protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       semanticDashUiDashReactLib.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: semanticDashUiDashReactLib.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps) = this()

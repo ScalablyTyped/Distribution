@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait TablePaginationProps
   extends reactDashMdLib.libMod.Props {
-  var decrementIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var decrementIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var decrementIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var decrementIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -20,11 +20,11 @@ trait TablePaginationProps
   var defaultPage: js.UndefOr[scala.Double] = js.undefined
   var defaultRowsPerPage: js.UndefOr[scala.Double] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
-  var incrementIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var incrementIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var incrementIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var incrementIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -42,11 +42,11 @@ trait TablePaginationProps
   var rows: scala.Double
   var rowsPerPage: js.UndefOr[scala.Double] = js.undefined
   var rowsPerPageItems: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var rowsPerPageLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var rowsPerPageLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var selectFieldClassName: js.UndefOr[java.lang.String] = js.undefined
   var selectFieldInputClassName: js.UndefOr[java.lang.String] = js.undefined
-  var selectFieldInputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var selectFieldStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var selectFieldInputStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var selectFieldStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var simplifiedMenu: js.UndefOr[scala.Boolean] = js.undefined
   def onPagination(startIndex: scala.Double, rowsPerPage: scala.Double, currentPage: scala.Double): scala.Unit
 }
@@ -57,52 +57,52 @@ object TablePaginationProps {
     onPagination: (scala.Double, scala.Double, scala.Double) => scala.Unit,
     rows: scala.Double,
     className: java.lang.String = null,
-    decrementIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    decrementIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    decrementIcon: reactLib.reactMod.ReactElement[_] = null,
+    decrementIconChildren: reactLib.reactMod.ReactNode = null,
     decrementIconClassName: java.lang.String = null,
     decrementId: reactDashMdLib.libMod.IdPropType = null,
     defaultPage: scala.Int | scala.Double = null,
     defaultRowsPerPage: scala.Int | scala.Double = null,
     id: reactDashMdLib.libMod.IdPropType = null,
-    incrementIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    incrementIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    incrementIcon: reactLib.reactMod.ReactElement[_] = null,
+    incrementIconChildren: reactLib.reactMod.ReactNode = null,
     incrementIconClassName: java.lang.String = null,
     incrementId: reactDashMdLib.libMod.IdPropType = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     page: scala.Int | scala.Double = null,
     paginationLabel: (/* startRow */ scala.Double, /* lastRow */ scala.Double, /* totalRows */ scala.Double) => java.lang.String = null,
     rowsPerPage: scala.Int | scala.Double = null,
     rowsPerPageItems: js.Array[scala.Double] = null,
-    rowsPerPageLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    rowsPerPageLabel: reactLib.reactMod.ReactNode = null,
     selectFieldClassName: java.lang.String = null,
     selectFieldInputClassName: java.lang.String = null,
-    selectFieldInputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    selectFieldStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    selectFieldInputStyle: reactLib.reactMod.CSSProperties = null,
+    selectFieldStyle: reactLib.reactMod.CSSProperties = null,
     simplifiedMenu: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TablePaginationProps = {
     val __obj = js.Dynamic.literal(onPagination = js.Any.fromFunction3(onPagination), rows = rows)
     if (className != null) __obj.updateDynamic("className")(className)

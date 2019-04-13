@@ -7,16 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Slack extends js.Object {
-  def respond(query: nodeDashSlackLib.nodeDashSlackMod.SlackNs.Query): nodeDashSlackLib.nodeDashSlackMod.SlackNs.TextResponse = js.native
-  def respond(
-    query: nodeDashSlackLib.nodeDashSlackMod.SlackNs.Query,
-    callback: nodeDashSlackLib.nodeDashSlackMod.SlackNs.ResponseCallback
-  ): nodeDashSlackLib.nodeDashSlackMod.SlackNs.TextResponse = js.native
-  def send(message: nodeDashSlackLib.nodeDashSlackMod.SlackNs.Message): js.Any = js.native
+  def respond(query: Query): TextResponse = js.native
+  def respond(query: Query, callback: ResponseCallback): TextResponse = js.native
+  def send(message: Message): js.Any = js.native
    //TODO: Here comes deferred's promise as a return type
-  def send(
-    message: nodeDashSlackLib.nodeDashSlackMod.SlackNs.Message,
-    callback: nodeDashSlackLib.nodeDashSlackMod.SlackNs.SendCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
+  def send(message: Message, callback: SendCallback): requestLib.requestMod.Request = js.native
 }
 

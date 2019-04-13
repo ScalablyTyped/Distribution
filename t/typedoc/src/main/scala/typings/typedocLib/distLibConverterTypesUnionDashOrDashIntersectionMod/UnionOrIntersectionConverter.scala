@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UnionOrIntersectionConverter ()
   extends typedocLib.distLibConverterComponentsMod.TypeConverter[
-      typescriptLib.typescriptMod.tsNs.UnionOrIntersectionType, 
-      typescriptLib.typescriptMod.tsNs.UnionOrIntersectionTypeNode
+      typescriptLib.typescriptMod.UnionOrIntersectionType, 
+      typescriptLib.typescriptMod.UnionOrIntersectionTypeNode
     ]
 

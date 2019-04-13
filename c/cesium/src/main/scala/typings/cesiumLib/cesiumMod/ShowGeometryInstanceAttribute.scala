@@ -7,17 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "ShowGeometryInstanceAttribute")
 @js.native
-class ShowGeometryInstanceAttribute ()
-  extends cesiumLib.cesiumMod.CesiumNs.ShowGeometryInstanceAttribute {
+class ShowGeometryInstanceAttribute () extends js.Object {
   def this(show: scala.Boolean) = this()
-  /* CompleteClass */
-  override var componentDatatype: cesiumLib.cesiumMod.CesiumNs.ComponentDatatype = js.native
-  /* CompleteClass */
-  override var componentsPerAttribute: scala.Double = js.native
-  /* CompleteClass */
-  override var normalize: scala.Boolean = js.native
-  /* CompleteClass */
-  override var value: stdLib.Uint8Array = js.native
+  var componentDatatype: ComponentDatatype = js.native
+  var componentsPerAttribute: scala.Double = js.native
+  var normalize: scala.Boolean = js.native
+  var value: stdLib.Uint8Array = js.native
 }
 
 /* static members */

@@ -10,24 +10,16 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     root: java.lang.String,
-    cb: js.Function2[
-      /* er */ stdLib.Error | scala.Null, 
-      /* data */ readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node, 
-      scala.Unit
-    ]
+    cb: js.Function2[/* er */ stdLib.Error | scala.Null, /* data */ Node, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     root: java.lang.String,
     filterWith: js.Function2[
-      /* node */ readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node, 
+      /* node */ Node, 
       /* kidName */ java.lang.String, 
       js.UndefOr[scala.Unit | scala.Boolean]
     ],
-    cb: js.Function2[
-      /* er */ stdLib.Error | scala.Null, 
-      /* data */ readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node, 
-      scala.Unit
-    ]
+    cb: js.Function2[/* er */ stdLib.Error | scala.Null, /* data */ Node, scala.Unit]
   ): scala.Unit = js.native
 }
 

@@ -10,11 +10,8 @@ trait Timer extends js.Object {
   def emitTime(): scala.Unit = js.native
   def isStarted(): scala.Boolean = js.native
   def isStopped(): scala.Boolean = js.native
-  def on(event: timerDashMachineLib.timerDashMachineMod.TimerNs.TimerEvent): scala.Unit = js.native
-  def on(
-    event: timerDashMachineLib.timerDashMachineMod.TimerNs.TimerEvent,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def on(event: TimerEvent): scala.Unit = js.native
+  def on(event: TimerEvent, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def start(): scala.Unit = js.native
   def stop(): scala.Unit = js.native
   def time(): scala.Double = js.native

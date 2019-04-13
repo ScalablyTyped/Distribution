@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "Utils")
 @js.native
-class Utils ()
-  extends p2Lib.p2Mod.p2Ns.Utils
+class Utils () extends js.Object
 
 /* static members */
 @JSImport("p2", "Utils")

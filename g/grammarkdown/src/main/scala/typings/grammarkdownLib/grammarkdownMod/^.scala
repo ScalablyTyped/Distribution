@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Diagnostics: grammarkdownLib.Anon_0expected = js.native
   def forEachChild[T](
     node: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind],
     cbNode: js.Function1[

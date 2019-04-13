@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Cancel extends js.Object {
-  var cancel: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCancelledCallback] = js.undefined
-  var complete: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCompleteCallback] = js.undefined
-  var destination: cesiumLib.cesiumMod.CesiumNs.Cartesian3 | cesiumLib.cesiumMod.CesiumNs.Rectangle
+  var cancel: js.UndefOr[cesiumLib.cesiumMod.CameraNs.FlightCancelledCallback] = js.undefined
+  var complete: js.UndefOr[cesiumLib.cesiumMod.CameraNs.FlightCompleteCallback] = js.undefined
+  var destination: cesiumLib.cesiumMod.Cartesian3 | cesiumLib.cesiumMod.Rectangle
   var duration: js.UndefOr[scala.Double] = js.undefined
-  var easingFunction: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.EasingFunction] = js.undefined
-  var endTransform: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
+  var easingFunction: js.UndefOr[cesiumLib.cesiumMod.EasingFunction] = js.undefined
+  var endTransform: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
   var flyOverLongitude: js.UndefOr[scala.Double] = js.undefined
   var flyOverLongitudeWeight: js.UndefOr[scala.Double] = js.undefined
   var maximumHeight: js.UndefOr[scala.Double] = js.undefined
@@ -22,12 +22,12 @@ trait Anon_Cancel extends js.Object {
 object Anon_Cancel {
   @scala.inline
   def apply(
-    destination: cesiumLib.cesiumMod.CesiumNs.Cartesian3 | cesiumLib.cesiumMod.CesiumNs.Rectangle,
-    cancel: cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCancelledCallback = null,
-    complete: cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCompleteCallback = null,
+    destination: cesiumLib.cesiumMod.Cartesian3 | cesiumLib.cesiumMod.Rectangle,
+    cancel: cesiumLib.cesiumMod.CameraNs.FlightCancelledCallback = null,
+    complete: cesiumLib.cesiumMod.CameraNs.FlightCompleteCallback = null,
     duration: scala.Int | scala.Double = null,
-    easingFunction: cesiumLib.cesiumMod.CesiumNs.EasingFunction = null,
-    endTransform: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
+    easingFunction: cesiumLib.cesiumMod.EasingFunction = null,
+    endTransform: cesiumLib.cesiumMod.Matrix4 = null,
     flyOverLongitude: scala.Int | scala.Double = null,
     flyOverLongitudeWeight: scala.Int | scala.Double = null,
     maximumHeight: scala.Int | scala.Double = null,

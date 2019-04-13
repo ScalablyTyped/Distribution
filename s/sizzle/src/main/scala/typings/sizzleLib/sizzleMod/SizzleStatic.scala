@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SizzleStatic extends js.Object {
-  var selectors: sizzleLib.sizzleMod.SizzleNs.Selectors = js.native
+  var selectors: Selectors = js.native
   def apply(selector: java.lang.String): js.Array[stdLib.Element] = js.native
   def apply(selector: java.lang.String, context: stdLib.Document): js.Array[stdLib.Element] = js.native
   def apply(selector: java.lang.String, context: stdLib.DocumentFragment): js.Array[stdLib.Element] = js.native

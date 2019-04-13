@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Autocomplete
-  extends reactLib.reactMod.Component[
-      reactDashAutocompleteLib.reactDashAutocompleteMod.AutocompleteNs.Props, 
-      reactDashAutocompleteLib.reactDashAutocompleteMod.AutocompleteNs.State, 
-      js.Any
-    ] {
+  extends reactLib.reactMod.Component[Props, State, js.Any] {
   /**
     * Autocomplete exposes a subset of `HTMLInputElement` properties to the parent component.
     * They can be accessed through Autocomplete's `ref` prop.

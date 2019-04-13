@@ -8,1171 +8,1171 @@ import scala.scalajs.js.annotation._
 object figletLibStrings {
   @js.native
   sealed trait `1Row`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `3-D`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `3D Diagonal`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `3D-ASCII`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `3x5`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `4Max`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `5 Line Oblique`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC 3 Line`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC 3 Liv1`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC AAA01`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Neko`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Razor`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Razor2`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Slash`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Slider`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Thin`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Tubes`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `AMC Untitled`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `ANSI Shadow`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `ASCII New Roman`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Acrobatic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Alligator
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Alligator2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Alpha
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Alphabet
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Arrows
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Avatar
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait B1FF
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Banner
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Banner3
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Banner3-D`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Banner4
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Barbwire
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Basic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bear
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bell
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Benjamin
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Big
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Big Chief`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Big Money-ne`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Big Money-nw`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Big Money-se`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Big Money-sw`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bigfig
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Binary
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Block
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Blocks
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bloody
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bolger
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Braced
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bright
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Broadway
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Broadway KB`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bubble
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Bulbhead
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Caligraphy
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Caligraphy2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Calvin S`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cards
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Catwalk
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Chiseled
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Chunky
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Coinstak
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cola
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Colossal
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Computer
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Contessa
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Contrast
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cosmike
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Crawford
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Crawford2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Crazy
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cricket
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cursive
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cyberlarge
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cybermedium
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cybersmall
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Cygnet
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait DANC4
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `DOS Rebel`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait DWhistled
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Dancing Font`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Decimal
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Def Leppard`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Delta Corps Priest 1`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Diamond
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Diet Cola`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Digital
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Doh
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Doom
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Dot Matrix`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Double
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Double Shorts`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Dr Pepper`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Efti Chess`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Efti Font`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Efti Italic`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Efti Piti`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Efti Robot`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Efti Wall`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Efti Water`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Electronic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Elite
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Epic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Fender
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Filter
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Fire Font-k`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Fire Font-s`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Flipped
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Flower Power`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Four Tops`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Fraktur
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Fun Face`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Fun Faces`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Fuzzy
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Georgi16
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Georgia11
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Ghost
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Ghoulish
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Glenyn
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Goofy
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Gothic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Graceful
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Gradient
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Graffiti
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Greek
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Heart Left`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Heart Right`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Henry 3D`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Hex
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Hieroglyphs
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Hollywood
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Horizontal Left`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Horizontal Right`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `ICL-1900`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Impossible
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Invita
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Isometric1
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Isometric2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Isometric3
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Isometric4
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Italic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Ivrit
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `JS Block Letters`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `JS Bracket Letters`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `JS Capital Curves`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `JS Cursive`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `JS Stick Letters`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Jacky
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Jazmine
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Jerusalem
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Katakana
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Kban
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Keyboard
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Knob
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Konto
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Konto Slant`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait LCD
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Larry 3D`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Larry 3D 2`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Lean
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Letters
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Lil Devil`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Line Blocks`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Linux
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Lockergnome
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Madrid
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Marquee
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Maxfour
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Merlin1
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Merlin2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Mike
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Mini
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Mirror
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Mnemonic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Modular
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Morse
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Morse2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Moscow
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Mshebrew210
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Muzzle
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait NScript
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `NT Greek`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `NV Script`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Nancyj
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Nancyj-Fancy`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Nancyj-Improved`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Nancyj-Underlined`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Nipples
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait O8
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait OS2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Octal
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Ogre
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Old Banner`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Patorjk_quotes Cheese`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Patorjk-HeX`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Pawp
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Peaks
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Peaks Slant`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Pebbles
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Pepper
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Poison
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Puffy
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Puzzle
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Pyramid
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Rammstein
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Rectangles
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Red Phoenix`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Relief
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Relief2
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Reverse
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Roman
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Rot13
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Rotated
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Rounded
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Rowan Cap`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Rozzo
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Runic
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Runyc
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `S Blood`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `SL Script`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Santa Clara`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Script
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Serifcap
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Shadow
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Shimrod
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Short
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Slant
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Slant Relief`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Slide
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Small
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Caps`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Isometric1`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Keyboard`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Poison`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Script`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Shadow`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Slant`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Small Tengwar`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Soft
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Speed
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Spliff
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Stacey
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Stampate
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Stampatello
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Standard
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Star Strips`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Star Wars`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Stellar
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Stforek
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Stick Letters`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Stop
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Straight
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Stronger Than All`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Sub-Zero`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Swamp Land`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Swan
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Sweet
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait THIS
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Tanja
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Tengwar
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Term
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Test1
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `The Edge`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Thick
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Thin
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Thorned
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Three Point`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Ticks
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Ticks Slant`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Tiles
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Tinker-Toy`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Tombstone
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Train
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Trek
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Tsalagi
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Tubular
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Twisted
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Two Point`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `USA Flag`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Univers
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Varsity
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Wavy
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Weird
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `Wet Letter`
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Whimsy
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait Wow
-    extends figletLib.figletMod.figletNs.Fonts
+    extends figletLib.figletMod.Fonts
   
   @js.native
   sealed trait `controlled smushing`
-    extends figletLib.figletMod.figletNs.KerningMethods
+    extends figletLib.figletMod.KerningMethods
   
   @js.native
   sealed trait default
-    extends figletLib.figletMod.figletNs.KerningMethods
+    extends figletLib.figletMod.KerningMethods
   
   @js.native
   sealed trait fitted
-    extends figletLib.figletMod.figletNs.KerningMethods
+    extends figletLib.figletMod.KerningMethods
   
   @js.native
   sealed trait full
-    extends figletLib.figletMod.figletNs.KerningMethods
+    extends figletLib.figletMod.KerningMethods
   
   @js.native
   sealed trait `universal smushing`
-    extends figletLib.figletMod.figletNs.KerningMethods
+    extends figletLib.figletMod.KerningMethods
   
   @scala.inline
   def `1Row`: `1Row` = "1Row".asInstanceOf[`1Row`]

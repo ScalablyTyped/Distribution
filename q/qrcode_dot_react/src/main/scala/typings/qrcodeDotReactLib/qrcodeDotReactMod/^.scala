@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("qrcode.react", JSImport.Namespace)
 @js.native
+class ^ protected ()
+  extends reactLib.reactMod.Component[QRCodeProps, reactLib.reactMod.ComponentState, js.Any] {
+  def this(props: QRCodeProps) = this()
+  def this(props: QRCodeProps, context: js.Any) = this()
+}
+
+@JSImport("qrcode.react", JSImport.Namespace)
+@js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[qrcodeDotReactLib.qrcodeDotReactMod.qrcodeNs.QRCode]
+  extends org.scalablytyped.runtime.TopLevel[QRCode]
 

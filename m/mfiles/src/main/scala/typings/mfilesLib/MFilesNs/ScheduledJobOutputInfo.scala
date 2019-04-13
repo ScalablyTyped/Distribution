@@ -17,3 +17,8 @@ class ScheduledJobOutputInfo ()
   override var Message: java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.ScheduledJobOutputInfo")
+@js.native
+object ScheduledJobOutputInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IScheduledJobOutputInfo]
+

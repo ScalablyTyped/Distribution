@@ -37,7 +37,7 @@ trait DatePickerProps
   /**
     * A key to identify an Icon from Material Design Icons or a custom Icon Element.
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * This class will be applied to Input component of DatePicker.
     */
@@ -127,10 +127,10 @@ object DatePickerProps {
     disabledDates: js.Array[stdLib.Date] = null,
     enabledDates: js.Array[stdLib.Date] = null,
     error: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     inputClassName: java.lang.String = null,
     inputFormat: js.Function = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     label: java.lang.String = null,
     locale: reactDashToolboxLib.reactDashToolboxLibStrings.de | reactDashToolboxLib.reactDashToolboxLibStrings.no | reactDashToolboxLib.reactDashToolboxLibStrings.en | reactDashToolboxLib.reactDashToolboxLibStrings.es | reactDashToolboxLib.reactDashToolboxLibStrings.af | reactDashToolboxLib.reactDashToolboxLibStrings.ar | reactDashToolboxLib.reactDashToolboxLibStrings.be | reactDashToolboxLib.reactDashToolboxLibStrings.bg | reactDashToolboxLib.reactDashToolboxLibStrings.bn | reactDashToolboxLib.reactDashToolboxLibStrings.bo | reactDashToolboxLib.reactDashToolboxLibStrings.br | reactDashToolboxLib.reactDashToolboxLibStrings.bs | reactDashToolboxLib.reactDashToolboxLibStrings.ca | reactDashToolboxLib.reactDashToolboxLibStrings.gl | reactDashToolboxLib.reactDashToolboxLibStrings.eu | reactDashToolboxLib.reactDashToolboxLibStrings.pt | reactDashToolboxLib.reactDashToolboxLibStrings.it | reactDashToolboxLib.reactDashToolboxLibStrings.fr | reactDashToolboxLib.reactDashToolboxLibStrings.ru | reactDashToolboxLib.reactDashToolboxLibStrings.ua | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-cn` | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-hk` | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-tw` | DatePickerLocale = null,
     maxDate: stdLib.Date = null,
@@ -166,7 +166,7 @@ object DatePickerProps {
     onTouchStart: js.Function = null,
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     sundayFirstDayOfWeek: js.UndefOr[scala.Boolean] = js.undefined,
     theme: DatePickerTheme = null,
     value: stdLib.Date | java.lang.String = null

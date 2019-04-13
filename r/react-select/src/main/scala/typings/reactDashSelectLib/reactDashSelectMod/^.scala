@@ -21,6 +21,6 @@ object ^ extends js.Object {
   ] = js.native
   def makeAnimated[OptionType](): reactDashSelectLib.libComponentsMod.SelectComponents[OptionType] = js.native
   def makeAnimated[OptionType](externalComponents: reactDashSelectLib.libComponentsMod.SelectComponentsConfig[OptionType]): reactDashSelectLib.libComponentsMod.SelectComponents[OptionType] = js.native
-  def mergeStyles(source: js.Any, target: js.Any): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def mergeStyles(source: js.Any, target: js.Any): reactLib.reactMod.CSSProperties = js.native
 }
 

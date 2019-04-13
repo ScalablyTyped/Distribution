@@ -26,26 +26,20 @@ object UtilsNs extends js.Object {
     inputs: js.Array[T],
     getOutputs: js.Function2[/* input */ T, /* index */ scala.Double, js.Array[U]]
   ): js.Array[U] = js.native
-  def getIndentation(
-    node: typescriptLib.typescriptMod.tsNs.Node,
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile
-  ): java.lang.String = js.native
+  def getIndentation(node: typescriptLib.typescriptMod.Node, sourceFile: typescriptLib.typescriptMod.SourceFile): java.lang.String = js.native
   def hasOwnProperty(arg: js.Object, key: java.lang.String): scala.Boolean = js.native
   def isCamelCased(name: java.lang.String): scala.Boolean = js.native
-  def isFunctionScopeBoundary(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
+  def isFunctionScopeBoundary(node: typescriptLib.typescriptMod.Node): scala.Boolean = js.native
   def isKebabCased(name: java.lang.String): scala.Boolean = js.native
   def isLowerCase(str: java.lang.String): scala.Boolean = js.native
   def isPascalCased(name: java.lang.String): scala.Boolean = js.native
   def isSnakeCased(name: java.lang.String): scala.Boolean = js.native
   def isUpperCase(str: java.lang.String): scala.Boolean = js.native
   def mapDefined[T, U](inputs: js.Array[T], getOutput: js.Function1[/* input */ T, js.UndefOr[U]]): js.Array[U] = js.native
+  def newLineWithIndentation(node: typescriptLib.typescriptMod.Node, sourceFile: typescriptLib.typescriptMod.SourceFile): java.lang.String = js.native
   def newLineWithIndentation(
-    node: typescriptLib.typescriptMod.tsNs.Node,
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile
-  ): java.lang.String = js.native
-  def newLineWithIndentation(
-    node: typescriptLib.typescriptMod.tsNs.Node,
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
+    node: typescriptLib.typescriptMod.Node,
+    sourceFile: typescriptLib.typescriptMod.SourceFile,
     linesCount: scala.Double
   ): java.lang.String = js.native
   def objectify(arg: js.Any): js.Any = js.native

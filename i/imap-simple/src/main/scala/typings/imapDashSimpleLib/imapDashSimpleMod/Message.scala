@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Message extends js.Object {
-  var attributes: imapLib.imapMod.ConnectionNs.ImapMessageAttributes
+  var attributes: imapLib.imapMod.ImapMessageAttributes
   var parts: js.Array[MessageBodyPart]
   var seqno: scala.Double
 }
@@ -14,7 +14,7 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(
-    attributes: imapLib.imapMod.ConnectionNs.ImapMessageAttributes,
+    attributes: imapLib.imapMod.ImapMessageAttributes,
     parts: js.Array[MessageBodyPart],
     seqno: scala.Double
   ): Message = {

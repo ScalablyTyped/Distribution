@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IRouteProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   /**
     * Match routes without being case sensitive
     *

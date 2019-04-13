@@ -12,8 +12,8 @@ trait Anon_HandlerRowCollapsed[TEntity] extends js.Object {
     * @param {rowCollapsedHandler} handler Callback
     */
   def rowCollapsed(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowCollapsedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.treeBaseNs.rowCollapsedHandler[TEntity]
   ): scala.Unit
   /**
     * Raised whenever a row is expanded.
@@ -26,16 +26,16 @@ trait Anon_HandlerRowCollapsed[TEntity] extends js.Object {
     * @param {rowExpandedHandler} handler Callback
     */
   def rowExpanded(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowExpandedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.treeBaseNs.rowExpandedHandler[TEntity]
   ): scala.Unit
 }
 
 object Anon_HandlerRowCollapsed {
   @scala.inline
   def apply[TEntity](
-    rowCollapsed: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowCollapsedHandler[TEntity]) => scala.Unit,
-    rowExpanded: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowExpandedHandler[TEntity]) => scala.Unit
+    rowCollapsed: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.treeBaseNs.rowCollapsedHandler[TEntity]) => scala.Unit,
+    rowExpanded: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.treeBaseNs.rowExpandedHandler[TEntity]) => scala.Unit
   ): Anon_HandlerRowCollapsed[TEntity] = {
     val __obj = js.Dynamic.literal(rowCollapsed = js.Any.fromFunction2(rowCollapsed), rowExpanded = js.Any.fromFunction2(rowExpanded))
   

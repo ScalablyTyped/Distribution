@@ -8,17 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("mapbox-gl", "ErrorEvent")
 @js.native
 class ErrorEvent ()
-  extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ErrorEvent {
-  /* CompleteClass */
-  override var error: stdLib.Error = js.native
-  /* CompleteClass */
-  override var originalEvent: js.UndefOr[scala.Nothing] = js.native
-  /* CompleteClass */
-  override var target: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Map = js.native
-  /* CompleteClass */
-  override var `type`: java.lang.String = js.native
-  /* CompleteClass */
+  extends MapboxEvent[js.UndefOr[scala.Nothing]] {
+  var error: stdLib.Error = js.native
   @JSName("type")
-  override var type_ErrorEvent: mapboxDashGlLib.mapboxDashGlLibStrings.error = js.native
+  var type_ErrorEvent: mapboxDashGlLib.mapboxDashGlLibStrings.error = js.native
 }
 

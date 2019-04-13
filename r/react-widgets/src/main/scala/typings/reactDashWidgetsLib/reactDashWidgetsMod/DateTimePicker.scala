@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets", "DateTimePicker")
 @js.native
 class DateTimePickerCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashWidgetsLib.libDateTimePickerMod.DateTimePickerProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashWidgetsLib.libDateTimePickerMod.DateTimePickerProps) = this()

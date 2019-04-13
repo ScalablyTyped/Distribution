@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class EFS ()
   extends awsDashSdkLib.awsDashSdkMod.EFS {
-  def this(options: awsDashSdkLib.clientsEfsMod.EFSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsEfsMod.ClientConfiguration) = this()
 }
 

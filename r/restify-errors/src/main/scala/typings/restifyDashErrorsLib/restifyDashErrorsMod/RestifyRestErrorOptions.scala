@@ -16,7 +16,7 @@ object RestifyRestErrorOptions {
     code: java.lang.String = null,
     constructorOpt: /* repeated */ js.Any => scala.Unit = null,
     context: js.Any = null,
-    info: verrorLib.verrorMod.VErrorNs.Info = null,
+    info: verrorLib.verrorMod.Info = null,
     message: java.lang.String = null,
     name: java.lang.String = null,
     restCode: java.lang.String = null,

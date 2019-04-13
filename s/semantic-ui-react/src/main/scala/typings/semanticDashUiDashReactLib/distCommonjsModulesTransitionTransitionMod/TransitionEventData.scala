@@ -14,7 +14,7 @@ object TransitionEventData {
   def apply(
     status: TRANSITION_STATUSES,
     animation: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS | java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     directional: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Double | java.lang.String | TransitionPropDuration = null,
     mountOnShow: js.UndefOr[scala.Boolean] = js.undefined,

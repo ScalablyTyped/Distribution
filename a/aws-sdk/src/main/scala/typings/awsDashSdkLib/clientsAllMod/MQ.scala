@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MQ ()
-  extends awsDashSdkLib.clientsMqMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMqMod.MQNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMqMod.^ {
+  def this(options: awsDashSdkLib.clientsMqMod.ClientConfiguration) = this()
 }
 

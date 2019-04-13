@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait CircularProgressProps extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var innerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var innerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var mode: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.determinate | materialDashUiLib.materialDashUiLibStrings.indeterminate
   ] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var thickness: js.UndefOr[scala.Double] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
 }
@@ -23,12 +23,12 @@ object CircularProgressProps {
   @scala.inline
   def apply(
     color: java.lang.String = null,
-    innerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerStyle: reactLib.reactMod.CSSProperties = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     mode: materialDashUiLib.materialDashUiLibStrings.determinate | materialDashUiLib.materialDashUiLibStrings.indeterminate = null,
     size: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     thickness: scala.Int | scala.Double = null,
     value: scala.Int | scala.Double = null
   ): CircularProgressProps = {

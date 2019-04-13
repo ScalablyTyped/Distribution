@@ -14,12 +14,9 @@ trait Anon_ActiveClassName extends js.Object {
   var header: js.UndefOr[scala.Boolean] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit]
   ] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var toggle: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -33,8 +30,8 @@ object Anon_ActiveClassName {
     divider: js.UndefOr[scala.Boolean] = js.undefined,
     header: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     toggle: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ActiveClassName = {
     val __obj = js.Dynamic.literal()

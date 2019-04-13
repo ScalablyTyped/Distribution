@@ -17,3 +17,8 @@ class TraditionalFolderContents ()
   override val TraditionalFolders: mfilesLib.ITraditionalFolders = js.native
 }
 
+@JSGlobal("MFiles.TraditionalFolderContents")
+@js.native
+object TraditionalFolderContents
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITraditionalFolderContents]
+

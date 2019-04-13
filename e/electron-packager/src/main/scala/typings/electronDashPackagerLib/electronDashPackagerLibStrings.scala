@@ -8,53 +8,53 @@ import scala.scalajs.js.annotation._
 object electronDashPackagerLibStrings {
   @js.native
   sealed trait all
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.arch
-       with electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.platform
+    extends electronDashPackagerLib.electronDashPackagerMod.arch
+       with electronDashPackagerLib.electronDashPackagerMod.platform
   
   @js.native
   sealed trait arm64
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.arch
+    extends electronDashPackagerLib.electronDashPackagerMod.arch
   
   @js.native
   sealed trait armv7l
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.arch
+    extends electronDashPackagerLib.electronDashPackagerMod.arch
   
   @js.native
   sealed trait asInvoker extends js.Object
   
   @js.native
   sealed trait darwin
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.platform
+    extends electronDashPackagerLib.electronDashPackagerMod.platform
   
   @js.native
   sealed trait highestAvailable extends js.Object
   
   @js.native
   sealed trait ia32
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.arch
+    extends electronDashPackagerLib.electronDashPackagerMod.arch
   
   @js.native
   sealed trait linux
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.platform
+    extends electronDashPackagerLib.electronDashPackagerMod.platform
   
   @js.native
   sealed trait mas
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.platform
+    extends electronDashPackagerLib.electronDashPackagerMod.platform
   
   @js.native
   sealed trait mips64el
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.arch
+    extends electronDashPackagerLib.electronDashPackagerMod.arch
   
   @js.native
   sealed trait requireAdministrator extends js.Object
   
   @js.native
   sealed trait win32
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.platform
+    extends electronDashPackagerLib.electronDashPackagerMod.platform
   
   @js.native
   sealed trait x64
-    extends electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.arch
+    extends electronDashPackagerLib.electronDashPackagerMod.arch
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

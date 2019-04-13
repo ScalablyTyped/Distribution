@@ -19,14 +19,14 @@ trait Anon_CallbackDelete extends js.Object {
     *
     * @param email Recipient email address
     */
-  def delete(email: java.lang.String, callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[scala.Unit]): scala.Unit = js.native
+  def delete(email: java.lang.String, callback: sparkpostLib.sparkpostMod.Callback[scala.Unit]): scala.Unit = js.native
   /**
     * Retrieve an entry by recipient email.
     *
     * @param email address to check
     * @returns void
     */
-  def get(email: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SupressionListEntry]] = js.native
+  def get(email: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SupressionListEntry]] = js.native
   /**
     * Retrieve an entry by recipient email.
     *
@@ -35,7 +35,7 @@ trait Anon_CallbackDelete extends js.Object {
     */
   def get(
     email: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SupressionListEntry]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SupressionListEntry]]
   ): scala.Unit = js.native
   /**
     * List all entries in your suppression list, filtered by an optional set of search parameters.
@@ -43,16 +43,16 @@ trait Anon_CallbackDelete extends js.Object {
     * @param [parameters] an object of [search parameters]{@link https://developers.sparkpost.com/api/suppression-list#suppression-list-search-get}
     * @returns Promise The supression lists
     */
-  def list(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SupressionListEntry]] = js.native
+  def list(): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SupressionListEntry]] = js.native
   /**
     * List all entries in your suppression list, filtered by an optional set of search parameters.
     *
     * @param callback The request callback with supression lists.
     */
   def list(
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SupressionListEntry]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SupressionListEntry]]
   ): scala.Unit = js.native
-  def list(parameters: sparkpostLib.sparkpostMod.SparkPostNs.SupressionSearchParameters): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SupressionListEntry]] = js.native
+  def list(parameters: sparkpostLib.sparkpostMod.SupressionSearchParameters): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SupressionListEntry]] = js.native
   /**
     * List all entries in your suppression list, filtered by an optional set of search parameters.
     *
@@ -60,20 +60,20 @@ trait Anon_CallbackDelete extends js.Object {
     * @param callback The request callback with supression lists.
     */
   def list(
-    parameters: sparkpostLib.sparkpostMod.SparkPostNs.SupressionSearchParameters,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SupressionListEntry]]
+    parameters: sparkpostLib.sparkpostMod.SupressionSearchParameters,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SupressionListEntry]]
   ): scala.Unit = js.native
-  def upsert(listEntries: js.Array[sparkpostLib.sparkpostMod.SparkPostNs.CreateSupressionListEntry]): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Message] = js.native
+  def upsert(listEntries: js.Array[sparkpostLib.sparkpostMod.CreateSupressionListEntry]): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Message] = js.native
   def upsert(
-    listEntries: js.Array[sparkpostLib.sparkpostMod.SparkPostNs.CreateSupressionListEntry],
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Message]
+    listEntries: js.Array[sparkpostLib.sparkpostMod.CreateSupressionListEntry],
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Message]
   ): scala.Unit = js.native
   /**
     * Insert or update one or many entries.
     *
     * @param listEntries The suppression entry list
     */
-  def upsert(listEntries: sparkpostLib.sparkpostMod.SparkPostNs.CreateSupressionListEntry): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Message] = js.native
+  def upsert(listEntries: sparkpostLib.sparkpostMod.CreateSupressionListEntry): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Message] = js.native
   /**
     * Insert or update one or many entries.
     *
@@ -81,8 +81,8 @@ trait Anon_CallbackDelete extends js.Object {
     * @param callback The request callback
     */
   def upsert(
-    listEntries: sparkpostLib.sparkpostMod.SparkPostNs.CreateSupressionListEntry,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Message]
+    listEntries: sparkpostLib.sparkpostMod.CreateSupressionListEntry,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Message]
   ): scala.Unit = js.native
 }
 

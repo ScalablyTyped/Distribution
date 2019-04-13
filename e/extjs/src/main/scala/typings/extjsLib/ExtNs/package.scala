@@ -13,6 +13,7 @@ package object ExtNs {
   type IComponentQuery = IBase
   type ICompositeElement = extjsLib.ExtNs.domNs.ICompositeElementLite
   type IDomHelper = extjsLib.ExtNs.domNs.IHelper
+  type IMessageBox = extjsLib.ExtNs.windowNs.IMessageBox
   type IModelManager = IAbstractManager
   type IModelMgr = IAbstractManager
   type IMsg = extjsLib.ExtNs.windowNs.IMessageBox

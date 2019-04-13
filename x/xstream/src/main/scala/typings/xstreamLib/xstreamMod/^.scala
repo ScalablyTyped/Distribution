@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val NO_IL: InternalListener[js.Any] = js.native
-  val default: xstreamLib.Anon_Array = js.native
 }
 

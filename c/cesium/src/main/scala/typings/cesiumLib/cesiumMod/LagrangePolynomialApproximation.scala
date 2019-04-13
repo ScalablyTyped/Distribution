@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "LagrangePolynomialApproximation")
 @js.native
-class LagrangePolynomialApproximation ()
-  extends cesiumLib.cesiumMod.CesiumNs.LagrangePolynomialApproximation
+class LagrangePolynomialApproximation () extends InterpolationAlgorithm
 

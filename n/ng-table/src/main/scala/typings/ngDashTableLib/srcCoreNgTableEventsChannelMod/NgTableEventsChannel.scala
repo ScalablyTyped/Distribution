@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ng-table/src/core/ngTableEventsChannel", "NgTableEventsChannel")
 @js.native
 class NgTableEventsChannel protected () extends js.Object {
-  def this($rootScope: angularLib.angularMod.angularNs.IRootScopeService) = this()
+  def this($rootScope: angularLib.angularMod.IRootScopeService) = this()
   @JSName("$rootScope")
   var $rootScope: js.Any = js.native
   /* private */ def addTableParamsEvent(eventName: js.Any, target: js.Any): js.Any = js.native
@@ -34,10 +34,10 @@ class NgTableEventsChannel protected () extends js.Object {
     * @param eventFilter a predicate function that should return true to receive the event
     * @return a unregistration function that when called will unregister the `listener`
     */
-  def onAfterCreated(listener: IAfterCreatedListener, scope: angularLib.angularMod.angularNs.IScope): IUnregistrationFunc = js.native
+  def onAfterCreated(listener: IAfterCreatedListener, scope: angularLib.angularMod.IScope): IUnregistrationFunc = js.native
   def onAfterCreated(
     listener: IAfterCreatedListener,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     eventFilter: IEventSelectorFunc
   ): IUnregistrationFunc = js.native
   /**
@@ -59,10 +59,10 @@ class NgTableEventsChannel protected () extends js.Object {
     * @param eventFilter either the specific `IDefaultGetData` instance you want to receive events for or a predicate function that should return true to receive the event
     * @return a unregistration function that when called will unregister the `listener`
     */
-  def onAfterDataFiltered[T](listener: IAfterDataFilteredListener[T], scope: angularLib.angularMod.angularNs.IScope): IUnregistrationFunc = js.native
+  def onAfterDataFiltered[T](listener: IAfterDataFilteredListener[T], scope: angularLib.angularMod.IScope): IUnregistrationFunc = js.native
   def onAfterDataFiltered[T](
     listener: IAfterDataFilteredListener[T],
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     eventFilter: EventSelector[T]
   ): IUnregistrationFunc = js.native
   /**
@@ -84,10 +84,10 @@ class NgTableEventsChannel protected () extends js.Object {
     * @param eventFilter either the specific `IDefaultGetData` instance you want to receive events for or a predicate function that should return true to receive the event
     * @return a unregistration function that when called will unregister the `listener`
     */
-  def onAfterDataSorted[T](listener: IAfterDataSortedListener[T], scope: angularLib.angularMod.angularNs.IScope): IUnregistrationFunc = js.native
+  def onAfterDataSorted[T](listener: IAfterDataSortedListener[T], scope: angularLib.angularMod.IScope): IUnregistrationFunc = js.native
   def onAfterDataSorted[T](
     listener: IAfterDataSortedListener[T],
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     eventFilter: EventSelector[T]
   ): IUnregistrationFunc = js.native
   /**
@@ -110,10 +110,10 @@ class NgTableEventsChannel protected () extends js.Object {
     * @param eventFilter either the specific `NgTableParams` instance you want to receive events for or a predicate function that should return true to receive the event
     * @return a unregistration function that when called will unregister the `listener`
     */
-  def onAfterReloadData[T](listener: IAfterReloadDataListener[T], scope: angularLib.angularMod.angularNs.IScope): IUnregistrationFunc = js.native
+  def onAfterReloadData[T](listener: IAfterReloadDataListener[T], scope: angularLib.angularMod.IScope): IUnregistrationFunc = js.native
   def onAfterReloadData[T](
     listener: IAfterReloadDataListener[T],
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     eventFilter: EventSelector[T]
   ): IUnregistrationFunc = js.native
   /**
@@ -136,10 +136,10 @@ class NgTableEventsChannel protected () extends js.Object {
     * @param eventFilter either the specific `NgTableParams` instance you want to receive events for or a predicate function that should return true to receive the event
     * @return a unregistration function that when called will unregister the `listener`
     */
-  def onDatasetChanged[T](listener: IDatasetChangedListener[T], scope: angularLib.angularMod.angularNs.IScope): IUnregistrationFunc = js.native
+  def onDatasetChanged[T](listener: IDatasetChangedListener[T], scope: angularLib.angularMod.IScope): IUnregistrationFunc = js.native
   def onDatasetChanged[T](
     listener: IDatasetChangedListener[T],
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     eventFilter: EventSelector[T]
   ): IUnregistrationFunc = js.native
   /**
@@ -162,10 +162,10 @@ class NgTableEventsChannel protected () extends js.Object {
     * @param eventFilter either the specific `NgTableParams` instance you want to receive events for or a predicate function that should return true to receive the event
     * @return a unregistration function that when called will unregister the `listener`
     */
-  def onPagesChanged[T](listener: IPagesChangedListener, scope: angularLib.angularMod.angularNs.IScope): IUnregistrationFunc = js.native
+  def onPagesChanged[T](listener: IPagesChangedListener, scope: angularLib.angularMod.IScope): IUnregistrationFunc = js.native
   def onPagesChanged[T](
     listener: IPagesChangedListener,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     eventFilter: EventSelector[T]
   ): IUnregistrationFunc = js.native
   def publishAfterCreated[T](publisher: ngDashTableLib.srcCoreNgTableParamsMod.NgTableParams[T]): scala.Unit = js.native

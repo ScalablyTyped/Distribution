@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_FragmentShaderSourceMaterial extends js.Object {
   var fragmentShaderSource: js.UndefOr[java.lang.String] = js.undefined
-  var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Material] = js.undefined
-  var renderState: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.RenderState] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.Material] = js.undefined
+  var renderState: js.UndefOr[cesiumLib.cesiumMod.RenderState] = js.undefined
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
   var vertexShaderSource: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -17,8 +17,8 @@ object Anon_FragmentShaderSourceMaterial {
   @scala.inline
   def apply(
     fragmentShaderSource: java.lang.String = null,
-    material: cesiumLib.cesiumMod.CesiumNs.Material = null,
-    renderState: cesiumLib.cesiumMod.CesiumNs.RenderState = null,
+    material: cesiumLib.cesiumMod.Material = null,
+    renderState: cesiumLib.cesiumMod.RenderState = null,
     translucent: js.UndefOr[scala.Boolean] = js.undefined,
     vertexShaderSource: java.lang.String = null
   ): Anon_FragmentShaderSourceMaterial = {

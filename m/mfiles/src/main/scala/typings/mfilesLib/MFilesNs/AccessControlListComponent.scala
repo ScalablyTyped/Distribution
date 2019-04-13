@@ -39,3 +39,8 @@ class AccessControlListComponent ()
   override def ResetNamedACLLink(): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.AccessControlListComponent")
+@js.native
+object AccessControlListComponent
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlListComponent]
+

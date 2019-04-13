@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MetricData
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.namespaced {
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.^ {
   /**
     * List of metrics. Only one metric in the list is currently supported by Application Insights storage. If multiple data points were sent only the first one will be used.
     */
-  var metrics: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedDataPointMod.namespaced] = js.native
+  var metrics: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedDataPointMod.^] = js.native
   /**
     * Collection of custom properties.
     */

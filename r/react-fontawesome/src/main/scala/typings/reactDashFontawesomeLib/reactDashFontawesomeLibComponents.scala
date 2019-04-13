@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashFontawesomeLibComponents {
   @scala.inline
-  def ReactDashFontawesome: reactLib.reactMod.ReactNs.ComponentType[reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeProps] = js.constructorOf[reactDashFontawesomeLib.reactDashFontawesomeMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeProps]]
+  def ReactDashFontawesome: reactLib.reactMod.ComponentType[reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeProps] = js.constructorOf[reactDashFontawesomeLib.reactDashFontawesomeMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeProps]]
   @scala.inline
-  def FontAwesomeProps: reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeProps.type = reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeProps
-  type FontAwesomeProps = reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeProps
+  def FontAwesomeProps: reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeProps.type = reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeProps
+  type FontAwesomeProps = reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeProps
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SparklinesSpotsProps extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
   var spotColors: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SparklinesSpotsProps {
@@ -16,7 +16,7 @@ object SparklinesSpotsProps {
   def apply(
     size: scala.Int | scala.Double = null,
     spotColors: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): SparklinesSpotsProps = {
     val __obj = js.Dynamic.literal()
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

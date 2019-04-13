@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mapbox-gl", "NavigationControl")
 @js.native
-class NavigationControl ()
-  extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.NavigationControl {
+class NavigationControl () extends Control {
   def this(options: mapboxDashGlLib.Anon_ShowCompass) = this()
 }
 

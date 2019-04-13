@@ -13,3 +13,21 @@ class default ()
   def this(props: rmcDashPickerLib.libPickerTypesMod.IPickerProps, context: js.Any) = this()
 }
 
+@JSImport("rmc-picker", "default")
+@js.native
+object default
+  extends org.scalablytyped.runtime.Instantiable0[rmcDashPickerLib.Anon_CallBack]
+     with org.scalablytyped.runtime.Instantiable1[
+      /* props */ rmcDashPickerLib.libPickerTypesMod.IPickerProps, 
+      rmcDashPickerLib.Anon_CallBack
+    ]
+     with org.scalablytyped.runtime.Instantiable2[
+      /* props */ rmcDashPickerLib.libPickerTypesMod.IPickerProps, 
+      /* context */ js.Any, 
+      rmcDashPickerLib.Anon_CallBack
+    ] {
+  def Item(
+    _props: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_rmc-picker/lib/PickerMixin.IItemProps */ js.Any
+  ): js.Any = js.native
+}
+

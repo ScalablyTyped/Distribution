@@ -9,19 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val blockSize: scala.Double = js.native
-  val c: tarLib.Anon_Callback = js.native
   val fieldEnds: js.Array[scala.Double] = js.native
   val fieldOffs: js.Array[scala.Double] = js.native
   val fieldSize: js.Array[scala.Double] = js.native
   val headerSize: scala.Double = js.native
-  val knownExtended: tarLib.Anon_AtimeCharset = js.native
-  val modes: tarLib.Anon_Gexec = js.native
-  val numeric: tarLib.Anon_Atime = js.native
-  val r: tarLib.Anon_CallbackErrFileListOptions = js.native
-  val t: tarLib.Anon_CallbackErrFileList = js.native
-  val types: tarLib.Anon_ = js.native
-  val u: tarLib.Anon_CallbackErrFileListOptions = js.native
-  val x: tarLib.Anon_CallbackErr = js.native
   def Extract(opts: java.lang.String): ParseStream = js.native
   def Extract(opts: ExtractOptions): ParseStream = js.native
   def Pack(): PackStream = js.native

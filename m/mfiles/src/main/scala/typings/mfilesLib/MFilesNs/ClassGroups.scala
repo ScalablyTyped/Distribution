@@ -17,3 +17,8 @@ class ClassGroups ()
   override def Item(Index: scala.Double): mfilesLib.IClassGroup = js.native
 }
 
+@JSGlobal("MFiles.ClassGroups")
+@js.native
+object ClassGroups
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IClassGroups]
+

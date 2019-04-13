@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Chip/Chip", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[ChipProps] = js.native
+  val default: reactLib.reactMod.ComponentType[ChipProps] = js.native
 }
 

@@ -12,7 +12,7 @@ trait Anon_Actual extends js.Object {
   def EXPECTED_COLOR(text: java.lang.String): java.lang.String = js.native
   def RECEIVED_COLOR(text: java.lang.String): java.lang.String = js.native
   def diff(a: js.Any, b: js.Any): java.lang.String = js.native
-  def diff(a: js.Any, b: js.Any, options: jestDashDiffLib.jestDashDiffMod.diffNs.DiffOptions): java.lang.String = js.native
+  def diff(a: js.Any, b: js.Any, options: jestDashDiffLib.jestDashDiffMod.DiffOptions): java.lang.String = js.native
   def ensureActualIsNumber(actual: js.Any): scala.Unit = js.native
   def ensureActualIsNumber(actual: js.Any, matcherName: java.lang.String): scala.Unit = js.native
   def ensureExpectedIsNumber(actual: js.Any): scala.Unit = js.native

@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Pagination")
 @js.native
 class Pagination ()
-  extends reactDashBootstrapLib.libPaginationMod.namespaced
+  extends reactDashBootstrapLib.libPaginationMod.^
 
 /* static members */
 @JSImport("react-bootstrap/lib", "Pagination")
 @js.native
 object Pagination extends js.Object {
-  var Ellipsis: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationEllipsisMod.namespaced] with reactDashBootstrapLib.Anon_PaginationEllipsis = js.native
-  var First: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationFirstMod.namespaced] with reactDashBootstrapLib.Anon_PaginationFirst = js.native
-  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationItemMod.namespaced] with reactDashBootstrapLib.Anon_PaginationItem = js.native
-  var Last: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationLastMod.namespaced] with reactDashBootstrapLib.Anon_PaginationLast = js.native
-  var Next: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationNextMod.namespaced] with reactDashBootstrapLib.Anon_PaginationNext = js.native
-  var Prev: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationPrevMod.namespaced] with reactDashBootstrapLib.Anon_PaginationPrev = js.native
+  var Ellipsis: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationEllipsisMod.^] = js.native
+  var First: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationFirstMod.^] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationItemMod.^] = js.native
+  var Last: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationLastMod.^] = js.native
+  var Next: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationNextMod.^] = js.native
+  var Prev: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPaginationPrevMod.^] = js.native
 }
 

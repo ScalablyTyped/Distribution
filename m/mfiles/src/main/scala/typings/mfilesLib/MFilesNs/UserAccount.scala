@@ -33,3 +33,8 @@ class UserAccount ()
   override def RemoveVaultRoles(VaultRolesToRemove: MFUserAccountVaultRole): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.UserAccount")
+@js.native
+object UserAccount
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserAccount]
+

@@ -9,13 +9,13 @@ package object reactDashBootstrapDashTypeaheadMod {
   type AllTypeaheadOwnAndInjectedProps[T /* <: TypeaheadModel */] = TypeaheadProps[T] with TypeaheadContainerProps[T]
   type HintedInputContext[T /* <: TypeaheadModel */] = stdLib.Pick[TypeaheadContext[T], HintedInputContextKeys]
   type InputProps = Omit[
-    reactLib.reactMod.ReactNs.InputHTMLAttributes[
+    reactLib.reactMod.InputHTMLAttributes[
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.input
     ], 
     reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onBlur | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onChange | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onFocus | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onKeyDown
   ]
   type MenuHeaderProps = Omit[
-    reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.li], 
+    reactLib.reactMod.HTMLProps[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.li], 
     reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.className
   ]
   type MenuItemContext[T /* <: TypeaheadModel */] = stdLib.Pick[TypeaheadContext[T], MenuItemContextKeys]

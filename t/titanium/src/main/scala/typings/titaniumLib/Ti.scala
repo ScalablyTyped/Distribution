@@ -58,7 +58,7 @@ object Ti extends js.Object {
   	 * The Gesture module is responsible for high-level device gestures such as orientation changes
   	 * and shake gestures.
   	 */
-  val GestureNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParent = js.native
+  val GestureNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName = js.native
   /**
   	 * The top level Locale module.
   	 */
@@ -100,11 +100,11 @@ object Ti extends js.Object {
   /**
   	 * The top level XML module.  The XML module is used for parsing and processing XML-based content.
   	 */
-  val XMLNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParentGetLifecycleContainerLifecycleContainer = js.native
+  val XMLNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParentGetLifecycleContainer = js.native
   /**
   	 * The top level Yahoo module.  The Yahoo module is used for accessing Yahoo related API services.
   	 */
-  val YahooNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParentGetLifecycleContainerLifecycleContainerName = js.native
+  val YahooNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParentGetLifecycleContainerLifecycleContainer = js.native
   /**
   	 * The name of the API that this proxy corresponds to.
   	 */

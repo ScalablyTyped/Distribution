@@ -37,9 +37,6 @@ object errorNs extends js.Object {
     def this(message: java.lang.String) = this()
   }
   
-  trait ErrorCodeType
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double]
-  
   trait ErrorData
     extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double] {
     var error: java.lang.String | scala.Double
@@ -307,5 +304,6 @@ object errorNs extends js.Object {
     * if the provided `data` is not a valid encoded error.
     */
   def throwDecodedError(data: ErrorData): scala.Nothing = js.native
+  type ErrorCodeType = org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 

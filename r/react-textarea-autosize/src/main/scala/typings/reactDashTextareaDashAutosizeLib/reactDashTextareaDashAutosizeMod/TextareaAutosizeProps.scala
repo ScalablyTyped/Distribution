@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextareaAutosizeProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLTextAreaElement] {
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLTextAreaElement] {
   /**
     * Allows an owner to retrieve the DOM node.
     */
   var inputRef: js.UndefOr[
-    (js.Function1[/* node */ stdLib.HTMLTextAreaElement, scala.Unit]) | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement]
+    (js.Function1[/* node */ stdLib.HTMLTextAreaElement, scala.Unit]) | reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement]
   ] = js.undefined
   /**
     * Maximum number of rows to show.
@@ -27,10 +27,7 @@ trait TextareaAutosizeProps
     */
   @JSName("onChange")
   var onChange_TextareaAutosizeProps: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLTextAreaElement], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLTextAreaElement], scala.Unit]
   ] = js.undefined
   /**
     * Callback on height change
@@ -56,11 +53,11 @@ trait TextareaAutosizeProps
 object TextareaAutosizeProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLTextAreaElement] = null,
-    inputRef: (js.Function1[/* node */ stdLib.HTMLTextAreaElement, scala.Unit]) | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLTextAreaElement] = null,
+    inputRef: (js.Function1[/* node */ stdLib.HTMLTextAreaElement, scala.Unit]) | reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement] = null,
     maxRows: scala.Int | scala.Double = null,
     minRows: scala.Int | scala.Double = null,
-    onChange: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLTextAreaElement] => scala.Unit = null,
+    onChange: /* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLTextAreaElement] => scala.Unit = null,
     onHeightChange: /* height */ scala.Double => scala.Unit = null,
     rows: scala.Int | scala.Double = null,
     useCacheForDOMMeasurements: js.UndefOr[scala.Boolean] = js.undefined,

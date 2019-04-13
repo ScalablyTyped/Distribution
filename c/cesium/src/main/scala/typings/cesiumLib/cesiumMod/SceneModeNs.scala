@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "SceneMode")
 @js.native
 object SceneModeNs extends js.Object {
-  def getMorphTime(value: cesiumLib.cesiumMod.CesiumNs.SceneMode): scala.Double = js.native
+  def getMorphTime(value: cesiumLib.cesiumMod.SceneMode): scala.Double = js.native
 }
 

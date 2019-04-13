@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class DeleteQuery[T] protected () extends IQuery[T] {
   def this(_table: Table[T]) = this()
-  def execute(criteriaOrID: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  def execute(criteriaOrID: java.lang.String): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
   def execute(
     criteriaOrID: java.lang.String,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
-  ): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
-  def execute(criteriaOrID: scala.Double): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  ): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  def execute(criteriaOrID: scala.Double): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
   def execute(
     criteriaOrID: scala.Double,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
-  ): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  ): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
 }
 

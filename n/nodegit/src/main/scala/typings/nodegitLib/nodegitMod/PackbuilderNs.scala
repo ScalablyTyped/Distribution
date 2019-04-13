@@ -16,6 +16,5 @@ object PackbuilderNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.packDashBuilderMod.PackbuilderNs.STAGE with scala.Double] = js.native
   }
   
-  type STAGE = nodegitLib.packDashBuilderMod.PackbuilderNs.STAGE
 }
 

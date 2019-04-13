@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ShouldSinonAssertion
-  extends shouldLib.shouldMod.shouldNs.Assertion {
+  extends shouldLib.shouldMod.Assertion {
   /**
     * Assert stub was called with given object as this always. So if you call stub several times
     * all should be with the same object

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("backbone", "AssociatedModel")
 @js.native
 class AssociatedModel ()
-  extends backboneLib.backboneMod.BackboneNs.Model {
+  extends backboneLib.backboneMod.Model {
   var _proxyCalls: js.Any = js.native
   /** Reverse association lookup for objects that contain this object */
   var parents: js.Array[_] = js.native

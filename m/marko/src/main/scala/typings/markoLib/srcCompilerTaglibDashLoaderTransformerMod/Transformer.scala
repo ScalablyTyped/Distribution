@@ -11,7 +11,7 @@ trait Transformer extends js.Object {
   var path: java.lang.String | scala.Null
   var priority: js.Any
   var properties: js.Any
-  var tag: markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced | scala.Null
+  var tag: markoLib.srcCompilerTaglibDashLoaderTagMod.^  | scala.Null
   var taglibId: java.lang.String
   def getFunc(): js.Any
 }
@@ -26,7 +26,7 @@ object Transformer {
     taglibId: java.lang.String,
     name: java.lang.String = null,
     path: java.lang.String = null,
-    tag: markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced = null
+    tag: markoLib.srcCompilerTaglibDashLoaderTagMod.^ = null
   ): Transformer = {
     val __obj = js.Dynamic.literal(getFunc = js.Any.fromFunction0(getFunc), id = id, priority = priority, properties = properties, taglibId = taglibId)
     if (name != null) __obj.updateDynamic("name")(name)

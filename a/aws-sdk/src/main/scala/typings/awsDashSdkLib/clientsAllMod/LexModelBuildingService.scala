@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class LexModelBuildingService ()
-  extends awsDashSdkLib.clientsLexmodelbuildingserviceMod.namespaced {
-  def this(options: awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsLexmodelbuildingserviceMod.^ {
+  def this(options: awsDashSdkLib.clientsLexmodelbuildingserviceMod.ClientConfiguration) = this()
 }
 

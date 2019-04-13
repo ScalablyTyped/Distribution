@@ -15,7 +15,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * is not supplied, VictoryAxis will render its default AxisLine component.
     * @default <AxisLine/>
     */
-  var axisComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var axisComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The axisLabelComponent prop takes in an entire component which will be used
     * to create the axis label. The new element created from the passed axisLabelComponent
@@ -26,7 +26,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * VictoryLabel will be created with props described above
     * @default <VictoryLabel/>
     */
-  var axisLabelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var axisLabelComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * This prop specifies whether a given axis is intended to cross another axis.
     */
@@ -107,7 +107,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * is not supplied, VictoryAxis will render its default GridLine component.
     * @default <GridLine/>
     */
-  var gridComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var gridComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * If true, this value will flip the domain of a given axis.
     */
@@ -164,7 +164,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * is not supplied, VictoryAxis will render its default Tick component.
     * @default <Tick/>
     */
-  var tickComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var tickComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The tickCount prop specifies approximately how many ticks should be drawn on the axis if
     * tickValues are not explicitly provided. This value is calculated by d3 scale and
@@ -191,7 +191,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * VictoryLabel will be created with props described above
     * @default <VictoryLabel/>
     */
-  var tickLabelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var tickLabelComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The tickValues prop explicitly specifies which tick values to draw on the axis.
     * @example ["apples", "bananas", "oranges"], [2, 4, 6, 8]
@@ -203,9 +203,9 @@ object VictoryAxisProps {
   @scala.inline
   def apply(
     animate: AnimatePropTypeInterface = null,
-    axisComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    axisLabelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    axisComponent: reactLib.reactMod.ReactElement[_] = null,
+    axisLabelComponent: reactLib.reactMod.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement[_] = null,
     crossAxis: js.UndefOr[scala.Boolean] = js.undefined,
     dependentAxis: js.UndefOr[scala.Boolean] = js.undefined,
     domain: DomainPropType = null,
@@ -216,8 +216,8 @@ object VictoryAxisProps {
       ]
     ] = null,
     fixLabelOverlap: js.UndefOr[scala.Boolean] = js.undefined,
-    gridComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    gridComponent: reactLib.reactMod.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
     invertAxis: js.UndefOr[scala.Boolean] = js.undefined,
     label: js.Any = null,
@@ -230,10 +230,10 @@ object VictoryAxisProps {
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     style: victoryLib.Anon_AxisAxisLabel = null,
     theme: VictoryThemeDefinition = null,
-    tickComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    tickComponent: reactLib.reactMod.ReactElement[_] = null,
     tickCount: scala.Int | scala.Double = null,
     tickFormat: js.Array[_] | victoryLib.Anon_Index = null,
-    tickLabelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    tickLabelComponent: reactLib.reactMod.ReactElement[_] = null,
     tickValues: js.Array[_] = null,
     width: scala.Int | scala.Double = null
   ): VictoryAxisProps = {

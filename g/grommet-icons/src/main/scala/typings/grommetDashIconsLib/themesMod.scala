@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet-icons/themes", JSImport.Namespace)
 @js.native
 object themesMod extends js.Object {
-  val base: grommetDashIconsLib.Anon_Global = js.native
+  @js.native
+  object base extends js.Object {
+    var global: grommetDashIconsLib.Anon_Colors = js.native
+    var icon: grommetDashIconsLib.Anon_Size = js.native
+  }
+  
 }
 

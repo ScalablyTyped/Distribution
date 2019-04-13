@@ -8,11 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CustomizerContext: reactLib.reactMod.ReactNs.Context[atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext] = js.native
-  val DATA_IS_SCROLLABLE_ATTRIBUTE: /* data-is-scrollable */ java.lang.String = js.native
-  val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
-  val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
-  val KeyCodes: atUifabricUtilitiesLib.Anon_100 = js.native
+  val CustomizerContext: reactLib.reactMod.Context[atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext] = js.native
+  val DATA_IS_SCROLLABLE_ATTRIBUTE: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-is-scrollable` = js.native
+  val DATA_PORTAL_ATTRIBUTE: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-portal-element` = js.native
+  val IsFocusVisibleClassName: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`ms-Fabric--isFocusVisible` = js.native
   val anchorProperties: js.Array[java.lang.String] = js.native
   val baseElementEvents: js.Array[java.lang.String] = js.native
   val baseElementProperties: js.Array[java.lang.String] = js.native
@@ -28,7 +27,7 @@ object ^ extends js.Object {
   def allowScrollOnElement(element: stdLib.HTMLElement, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[scala.Unit] = js.native
   def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): scala.Boolean = js.native
-  def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ReactNs.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
+  def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
   def assign(target: js.Any, args: js.Any*): js.Any = js.native
   def autobind[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Configurable[T] | scala.Unit = js.native
@@ -44,8 +43,8 @@ object ^ extends js.Object {
   def createArray[T](size: scala.Double, getItem: js.Function1[/* index */ scala.Double, T]): js.Array[T] = js.native
   def createRef[T](): atUifabricUtilitiesLib.libCreateRefMod.RefObject[T] = js.native
   def css(args: atUifabricUtilitiesLib.libCssMod.ICssInput*): java.lang.String = js.native
-  def customizable(scope: java.lang.String, fields: js.Array[java.lang.String]): js.Function1[/* ComposedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], _] = js.native
-  def customizable(scope: java.lang.String, fields: js.Array[java.lang.String], concatStyles: scala.Boolean): js.Function1[/* ComposedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], _] = js.native
+  def customizable(scope: java.lang.String, fields: js.Array[java.lang.String]): js.Function1[/* ComposedComponent */ reactLib.reactMod.ComponentType[_], _] = js.native
+  def customizable(scope: java.lang.String, fields: js.Array[java.lang.String], concatStyles: scala.Boolean): js.Function1[/* ComposedComponent */ reactLib.reactMod.ComponentType[_], _] = js.native
   def disableBodyScroll(): scala.Unit = js.native
   def doesElementContainFocus(element: stdLib.HTMLElement): scala.Boolean = js.native
   def elementContains(): scala.Boolean = js.native
@@ -293,7 +292,7 @@ object ^ extends js.Object {
   def provideContext[TContext, TProps](
     contextTypes: propDashTypesLib.propDashTypesMod.ValidationMap[TContext],
     mapPropsToContext: js.Function1[/* props */ TProps, TContext]
-  ): reactLib.reactMod.ReactNs.ComponentType[TProps] = js.native
+  ): reactLib.reactMod.ComponentType[TProps] = js.native
   def raiseClick(target: stdLib.Element): scala.Unit = js.native
   def removeIndex[T](array: js.Array[T], index: scala.Double): js.Array[T] = js.native
   def replaceElement[T](array: js.Array[T], newElement: T, index: scala.Double): js.Array[T] = js.native
@@ -325,35 +324,35 @@ object ^ extends js.Object {
     noWrapDataAttribute: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-no-vertical-wrap`
   ): scala.Boolean = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
-    Component: reactLib.reactMod.ReactNs.ComponentClass[TComponentProps, reactLib.reactMod.ReactNs.ComponentState],
+    Component: reactLib.reactMod.ComponentClass[TComponentProps, reactLib.reactMod.ComponentState],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps] = js.native
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
-    Component: reactLib.reactMod.ReactNs.ComponentClass[TComponentProps, reactLib.reactMod.ReactNs.ComponentState],
+    Component: reactLib.reactMod.ComponentClass[TComponentProps, reactLib.reactMod.ComponentState],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]]
-  ): reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps] = js.native
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
-    Component: reactLib.reactMod.ReactNs.ComponentClass[TComponentProps, reactLib.reactMod.ReactNs.ComponentState],
+    Component: reactLib.reactMod.ComponentClass[TComponentProps, reactLib.reactMod.ComponentState],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
     customizable: atUifabricUtilitiesLib.libStyledMod.ICustomizableProps
-  ): reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps] = js.native
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
-    Component: reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps],
+    Component: reactLib.reactMod.StatelessComponent[TComponentProps],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps] = js.native
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
-    Component: reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps],
+    Component: reactLib.reactMod.StatelessComponent[TComponentProps],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]]
-  ): reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps] = js.native
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
-    Component: reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps],
+    Component: reactLib.reactMod.StatelessComponent[TComponentProps],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
     customizable: atUifabricUtilitiesLib.libStyledMod.ICustomizableProps
-  ): reactLib.reactMod.ReactNs.StatelessComponent[TComponentProps] = js.native
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def toMatrix[T](items: js.Array[T], columnCount: scala.Double): js.Array[js.Array[T]] = js.native
   def unhoistMethods(source: js.Any, methodNames: js.Array[java.lang.String]): scala.Unit = js.native
   def values[T](obj: js.Any): js.Array[T] = js.native

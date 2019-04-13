@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashMaterialDashDropdownLibComponents {
   @scala.inline
-  def Dropdown: reactLib.reactMod.ReactNs.ComponentType[
+  def Dropdown: reactLib.reactMod.ComponentType[
     reactDashNativeDashMaterialDashDropdownLib.reactDashNativeDashMaterialDashDropdownMod.DropDownProps
-  ] = js.constructorOf[reactDashNativeDashMaterialDashDropdownLib.reactDashNativeDashMaterialDashDropdownMod.Dropdown].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashMaterialDashDropdownLib.reactDashNativeDashMaterialDashDropdownMod.Dropdown].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashMaterialDashDropdownLib.reactDashNativeDashMaterialDashDropdownMod.DropDownProps]]
   @scala.inline
   def DropDownProps: reactDashNativeDashMaterialDashDropdownLib.reactDashNativeDashMaterialDashDropdownMod.DropDownProps.type = reactDashNativeDashMaterialDashDropdownLib.reactDashNativeDashMaterialDashDropdownMod.DropDownProps

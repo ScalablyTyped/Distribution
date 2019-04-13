@@ -9,7 +9,7 @@ trait StrictVisibilityProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Context which sticky element should stick to. */
   var context: js.UndefOr[js.Object] = js.undefined
   /**
@@ -159,7 +159,7 @@ object StrictVisibilityProps {
   @scala.inline
   def apply(
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     context: js.Object = null,
     continuous: js.UndefOr[scala.Boolean] = js.undefined,
     fireOnMount: js.UndefOr[scala.Boolean] = js.undefined,

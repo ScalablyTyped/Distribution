@@ -39,16 +39,16 @@ trait SelectListProps
     * This component is used to render each option group, when groupBy is specified. By default
     * the groupBy value will be used.
     */
-  var groupComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var groupComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * This component is used to render each item in the SelectList. The default component
     * renders the text of the selected item (specified by textfield)
     */
-  var itemComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var itemComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * @default List
     */
-  var listComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var listComponent: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * An object of props that is passed directly to the underlying List component.
     */
@@ -126,18 +126,18 @@ object SelectListProps {
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     busy: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     data: js.Array[_] = null,
     defaultValue: js.Any | js.Array[_] = null,
     delay: scala.Int | scala.Double = null,
     disabled: scala.Boolean | js.Array[_] = null,
     groupBy: java.lang.String | (js.Function1[/* dataItem */ js.Any, _]) = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    groupComponent: reactLib.reactMod.ReactType[_] = null,
     id: java.lang.String = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    itemComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    listComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    itemComponent: reactLib.reactMod.ReactType[_] = null,
+    key: reactLib.reactMod.Key = null,
+    listComponent: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     listProps: js.Object = null,
     messages: SelectListMessages = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
@@ -147,7 +147,7 @@ object SelectListProps {
     onKeyPress: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
     onMove: (/* list */ stdLib.HTMLElement, /* focusedNode */ stdLib.HTMLElement, /* focusedItem */ js.Any) => scala.Unit = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[SelectListClass] = null,
+    ref: reactLib.reactMod.LegacyRef[SelectListClass] = null,
     tabIndex: scala.Int | scala.Double = null,
     textField: java.lang.String | (js.Function1[/* dataItem */ js.Any, java.lang.String]) = null,
     value: js.Any | js.Array[_] = null,

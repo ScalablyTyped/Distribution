@@ -22,7 +22,7 @@ class Default protected () extends js.Object {
   def buildRangeFromDuration(date: js.Any, direction: js.Any, duration: js.Any, unit: js.Any): js.Any = js.native
   def buildRenderRange(currentUnzonedRange: js.Any, currentRangeUnit: js.Any, isRangeAllDay: js.Any): js.Any = js.native
   def buildValidRange(): js.Any = js.native
-  def getFallbackDuration(): momentLib.momentMod.momentNs.Duration = js.native
+  def getFallbackDuration(): momentLib.momentMod.Duration = js.native
   def msToUtcMoment(ms: js.Any, forceAllDay: js.Any): js.Any = js.native
   def opt(name: js.Any): js.Any = js.native
   def trimHiddenDays(unzonedRange: js.Any): js.Any = js.native

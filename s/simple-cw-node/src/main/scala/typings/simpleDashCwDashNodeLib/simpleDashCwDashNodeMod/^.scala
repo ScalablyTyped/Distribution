@@ -12,6 +12,6 @@ object ^ extends js.Object {
   // TODO 2. create underscore.deffered .d.ts file
   // TODO 3. refactor & improve specialized parameter methods
   // Merged declaration, ChatWork is both a callable function and a namespace
-  def apply(): simpleDashCwDashNodeLib.simpleDashCwDashNodeMod.ChatWorkNs.ChatWork = js.native
+  def apply(): ChatWork = js.native
 }
 

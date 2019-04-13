@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-form/immutable", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val FormName: reactLib.reactMod.ReactNs.StatelessComponent[reduxDashFormLib.libFormNameMod.FormNameProps] = js.native
+  val FormName: reactLib.reactMod.StatelessComponent[reduxDashFormLib.libFormNameMod.FormNameProps] = js.native
   val getFormAsyncErrors: reduxDashFormLib.libSelectorsMod.ErrorSelector[js.Object, js.Object, java.lang.String] = js.native
   val getFormInitialValues: reduxDashFormLib.libSelectorsMod.DataSelector[js.Object, js.Object] = js.native
   val getFormMeta: reduxDashFormLib.libSelectorsMod.DataSelector[js.Object, js.Object] = js.native

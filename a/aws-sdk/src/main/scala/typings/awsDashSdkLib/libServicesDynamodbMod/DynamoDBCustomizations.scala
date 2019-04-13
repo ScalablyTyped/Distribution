@@ -20,7 +20,7 @@ object DynamoDBCustomizations extends js.Object {
     */
   var DocumentClient: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
-      /* options */ awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.DocumentClientOptions with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration
+      /* options */ awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.DocumentClientOptions with awsDashSdkLib.clientsDynamodbMod.ClientConfiguration
     ], 
     awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClient
   ] = js.native

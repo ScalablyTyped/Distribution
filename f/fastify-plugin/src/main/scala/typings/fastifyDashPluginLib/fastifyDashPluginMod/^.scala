@@ -18,16 +18,16 @@ object ^ extends js.Object {
     * @param next The `next` callback is not available when using `async`/`await`. If you do invoke a `next` callback in this situation unexpected behavior may occur.
     */
   def apply[HttpServer, HttpRequest, HttpResponse, T](
-    fn: (fastifyLib.fastifyMod.fastifyNs.Plugin[HttpServer, HttpRequest, HttpResponse, T]) | (fastifyDashPluginLib.Anon_Default[HttpServer, HttpRequest, HttpResponse, T])
-  ): fastifyLib.fastifyMod.fastifyNs.Plugin[HttpServer, HttpRequest, HttpResponse, T] = js.native
+    fn: (fastifyLib.fastifyMod.Plugin[HttpServer, HttpRequest, HttpResponse, T]) | (fastifyDashPluginLib.Anon_Default[HttpServer, HttpRequest, HttpResponse, T])
+  ): fastifyLib.fastifyMod.Plugin[HttpServer, HttpRequest, HttpResponse, T] = js.native
   def apply[HttpServer, HttpRequest, HttpResponse, T](
-    fn: (fastifyLib.fastifyMod.fastifyNs.Plugin[HttpServer, HttpRequest, HttpResponse, T]) | (fastifyDashPluginLib.Anon_Default[HttpServer, HttpRequest, HttpResponse, T]),
-    options: fastifyDashPluginLib.fastifyDashPluginMod.fastifyPluginNs.PluginOptions | java.lang.String
-  ): fastifyLib.fastifyMod.fastifyNs.Plugin[HttpServer, HttpRequest, HttpResponse, T] = js.native
+    fn: (fastifyLib.fastifyMod.Plugin[HttpServer, HttpRequest, HttpResponse, T]) | (fastifyDashPluginLib.Anon_Default[HttpServer, HttpRequest, HttpResponse, T]),
+    options: PluginOptions | java.lang.String
+  ): fastifyLib.fastifyMod.Plugin[HttpServer, HttpRequest, HttpResponse, T] = js.native
   def apply[HttpServer, HttpRequest, HttpResponse, T](
-    fn: (fastifyLib.fastifyMod.fastifyNs.Plugin[HttpServer, HttpRequest, HttpResponse, T]) | (fastifyDashPluginLib.Anon_Default[HttpServer, HttpRequest, HttpResponse, T]),
-    options: fastifyDashPluginLib.fastifyDashPluginMod.fastifyPluginNs.PluginOptions | java.lang.String,
-    next: fastifyDashPluginLib.fastifyDashPluginMod.fastifyPluginNs.nextCallback
-  ): fastifyLib.fastifyMod.fastifyNs.Plugin[HttpServer, HttpRequest, HttpResponse, T] = js.native
+    fn: (fastifyLib.fastifyMod.Plugin[HttpServer, HttpRequest, HttpResponse, T]) | (fastifyDashPluginLib.Anon_Default[HttpServer, HttpRequest, HttpResponse, T]),
+    options: PluginOptions | java.lang.String,
+    next: nextCallback
+  ): fastifyLib.fastifyMod.Plugin[HttpServer, HttpRequest, HttpResponse, T] = js.native
 }
 

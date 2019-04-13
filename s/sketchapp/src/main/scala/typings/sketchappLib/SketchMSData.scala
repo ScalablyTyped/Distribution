@@ -22,7 +22,7 @@ object SketchMSData {
     previews: js.Array[SketchMSPreview],
     user: SketchMSUserData
   ): SketchMSData = {
-    val __obj = js.Dynamic.literal(document = document, meta = meta, pages = pages, previews = previews, user = user)
+    val __obj = js.Dynamic.literal(document = document, meta = meta, pages = pages, previews = previews, user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSData]
   }

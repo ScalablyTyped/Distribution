@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts", "nonEmptyArray2v")
 @js.native
 object nonEmptyArray2vNs extends js.Object {
-  val URI: /* NonEmptyArray2v */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v = js.native
   val nonEmptyArray: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libNonEmptyArray2vMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libNonEmptyArray2vMod.URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[fpDashTsLib.libNonEmptyArray2vMod.URI, scala.Double]) with (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[fpDashTsLib.libNonEmptyArray2vMod.URI, scala.Double]) with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.libNonEmptyArray2vMod.URI, scala.Double]) = js.native
   def filter[A](
     nea: fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A],

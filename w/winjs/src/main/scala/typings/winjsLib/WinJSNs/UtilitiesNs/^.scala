@@ -8,12 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WinJS.Utilities")
 @js.native
 object ^ extends js.Object {
-  //#endregion Enumerations
-  //#region Objects
-  /**
-    * A mixin that contains event-related functions.
-    **/
-  var eventMixin: winjsLib.Anon_AddEventListener = js.native
   //#endregion Functions
   //#region Properties
   /**

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait LineContentProps extends js.Object {
   var data: js.Array[reactDashLazylogLib.Anon_Text]
-  var formatPart: js.UndefOr[js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var formatPart: js.UndefOr[js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNode]] = js.undefined
   var number: scala.Double
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object LineContentProps {
@@ -17,8 +17,8 @@ object LineContentProps {
   def apply(
     data: js.Array[reactDashLazylogLib.Anon_Text],
     number: scala.Double,
-    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): LineContentProps = {
     val __obj = js.Dynamic.literal(data = data, number = number)
     if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))

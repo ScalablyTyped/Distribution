@@ -17,7 +17,7 @@ trait ICommAngularService extends js.Object {
   		 * @param eventName Name of the even that will trigger a command sequence
   		 * @param data Data of any type that will be passed to the command.
   		 */
-  def dispatch(eventName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def dispatch(eventName: java.lang.String, data: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def dispatch(eventName: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def dispatch(eventName: java.lang.String, data: js.Any): angularLib.angularMod.IPromise[_] = js.native
 }
 

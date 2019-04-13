@@ -7,26 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("nextgen-events", "Internal")
 @js.native
-class Internal ()
-  extends nextgenDashEventsLib.nextgenDashEventsMod.NextGenEventsNs.Internal {
+class Internal () extends js.Object {
   def this(from: NextGenEvents) = this()
-  /* CompleteClass */
-  override var contexts: org.scalablytyped.runtime.StringDictionary[nextgenDashEventsLib.nextgenDashEventsMod.NextGenEventsNs.Context] = js.native
-  /* CompleteClass */
-  override var depth: scala.Double = js.native
-  /* CompleteClass */
-  override var interruptible: scala.Boolean = js.native
-  /* CompleteClass */
-  override var listeners: nextgenDashEventsLib.nextgenDashEventsMod.NextGenEventsNs.Listeners = js.native
-  /* CompleteClass */
-  override var maxListeners: scala.Double = js.native
-  /* CompleteClass */
-  override var nice: scala.Double = js.native
-  /* CompleteClass */
-  override var stateGroups: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  /* CompleteClass */
-  override var states: nextgenDashEventsLib.nextgenDashEventsMod.NextGenEventsNs.States = js.native
-  /* CompleteClass */
-  override def desync(fn: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): scala.Unit = js.native
+  var contexts: org.scalablytyped.runtime.StringDictionary[Context] = js.native
+  var depth: scala.Double = js.native
+  var interruptible: scala.Boolean = js.native
+  var listeners: Listeners = js.native
+  var maxListeners: scala.Double = js.native
+  var nice: scala.Double = js.native
+  var stateGroups: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var states: States = js.native
+  def desync(fn: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): scala.Unit = js.native
 }
 

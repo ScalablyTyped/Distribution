@@ -32,40 +32,36 @@ trait Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEv
   		 */
   def fireEvent(name: java.lang.String, event: js.Any): scala.Unit = js.native
   /**
-  		 * Gets the value of the <Titanium.XML.apiName> property.
+  		 * Gets the value of the <Titanium.Yahoo.apiName> property.
   		 */
   def getApiName(): java.lang.String = js.native
   /**
-  		 * Gets the value of the <Titanium.XML.bubbleParent> property.
+  		 * Gets the value of the <Titanium.Yahoo.bubbleParent> property.
   		 */
   def getBubbleParent(): scala.Boolean = js.native
   /**
-  		 * Gets the value of the <Titanium.XML.lifecycleContainer> property.
+  		 * Gets the value of the <Titanium.Yahoo.lifecycleContainer> property.
   		 */
   def getLifecycleContainer(): titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = js.native
-  /**
-  		 * Parses an XML string into a <Titanium.XML.Document> object.
-  		 */
-  def parseString(xml: java.lang.String): titaniumLib.TitaniumNs.XMLNs.Document = js.native
   /**
   		 * Removes the specified callback as an event listener for the named event.
   		 */
   def removeEventListener(name: java.lang.String, callback: js.Function1[/* param0 */ js.Any, _]): scala.Unit = js.native
   /**
-  		 * Serializes a [Node](Titanium.XML.Node) object into a string.
-  		 */
-  def serializeToString(node: titaniumLib.TitaniumNs.XMLNs.Node): java.lang.String = js.native
-  /**
-  		 * Sets the value of the <Titanium.XML.bubbleParent> property.
+  		 * Sets the value of the <Titanium.Yahoo.bubbleParent> property.
   		 */
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit = js.native
   /**
-  		 * Sets the value of the <Titanium.XML.lifecycleContainer> property.
+  		 * Sets the value of the <Titanium.Yahoo.lifecycleContainer> property.
   		 */
   def setLifecycleContainer(lifecycleContainer: titaniumLib.TitaniumNs.UINs.TabGroup): scala.Unit = js.native
   /**
-  		 * Sets the value of the <Titanium.XML.lifecycleContainer> property.
+  		 * Sets the value of the <Titanium.Yahoo.lifecycleContainer> property.
   		 */
   def setLifecycleContainer(lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window): scala.Unit = js.native
+  /**
+  		 * invoke a Yahoo YQL query
+  		 */
+  def yql(yql: java.lang.String, callback: js.Function1[/* param0 */ YQLResponse, _]): scala.Unit = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Alter extends js.Object {
-  var attributes: js.UndefOr[waterlineLib.waterlineMod.WaterlineNs.Attributes] = js.undefined
+  var attributes: js.UndefOr[waterlineLib.waterlineMod.Attributes] = js.undefined
   var autoCreatedAt: js.UndefOr[scala.Boolean] = js.undefined
   var autoPK: js.UndefOr[scala.Boolean] = js.undefined
   var autoUpdatedAt: js.UndefOr[scala.Boolean] = js.undefined
@@ -23,7 +23,7 @@ trait Anon_Alter extends js.Object {
 object Anon_Alter {
   @scala.inline
   def apply(
-    attributes: waterlineLib.waterlineMod.WaterlineNs.Attributes = null,
+    attributes: waterlineLib.waterlineMod.Attributes = null,
     autoCreatedAt: js.UndefOr[scala.Boolean] = js.undefined,
     autoPK: js.UndefOr[scala.Boolean] = js.undefined,
     autoUpdatedAt: js.UndefOr[scala.Boolean] = js.undefined,

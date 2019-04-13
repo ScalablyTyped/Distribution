@@ -5,27 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("asn1js", "LocalIntegerValueBlock")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- asn1jsLib.asn1jsMod.LocalHexBlock because Inheritance from two classes. Inlined isHexOnly, valueHex, fromBER, toBER, toBER, toJSON */ @JSImport("asn1js", "LocalIntegerValueBlock")
 @js.native
-class LocalIntegerValueBlock ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalIntegerValueBlock {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalIntegerValueBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+class LocalIntegerValueBlock () extends LocalValueBlock {
+  def this(params: LocalIntegerValueBlockParams) = this()
+  var isHexOnly: scala.Boolean = js.native
+  var valueDec: scala.Double = js.native
+  var valueHex: stdLib.ArrayBuffer = js.native
   /**
-    * Convertion for the block to JSON object
+    * Base function for converting block from DER encoded array of bytes
     * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * @param {ArrayBuffer} inputBuffer ASN.1 DER encoded array
+    * @param {number} inputOffset Offset in ASN.1 DER encoded array where decoding should be started
+    * @param {number} inputLength Maximum length of array of bytes which can be using in this function
+    * @param {number} [expectedLength=0] Expected length of converted "valueHex" buffer
+    * @returns {number} Offset after least decoded byte
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  def fromDER(inputBuffer: stdLib.ArrayBuffer, inputOffset: scala.Double, inputLength: scala.Double): scala.Double = js.native
+  def fromDER(
+    inputBuffer: stdLib.ArrayBuffer,
+    inputOffset: scala.Double,
+    inputLength: scala.Double,
+    expectedLength: scala.Double
+  ): scala.Double = js.native
+  /**
+    * Encoding of current ASN.1 block into ASN.1 encoded array (DER rules)
+    * 
+    * @param {boolean} [sizeOnly=false] Flag that we need only a size of encoding, not a real array of bytes
+    * @returns {ArrayBuffer}
+    */
+  def toDER(): stdLib.ArrayBuffer = js.native
+  def toDER(sizeOnly: scala.Boolean): stdLib.ArrayBuffer = js.native
 }
 

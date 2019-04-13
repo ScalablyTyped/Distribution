@@ -10,7 +10,7 @@ trait TextProps extends js.Object {
     gestaltLib.gestaltLibStrings.left | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.center | gestaltLib.gestaltLibStrings.justify
   ] = js.undefined
   var bold: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var color: js.UndefOr[
     gestaltLib.gestaltLibStrings.blue | gestaltLib.gestaltLibStrings.darkGray | gestaltLib.gestaltLibStrings.eggplant | gestaltLib.gestaltLibStrings.gray | gestaltLib.gestaltLibStrings.green | gestaltLib.gestaltLibStrings.lightGray | gestaltLib.gestaltLibStrings.maroon | gestaltLib.gestaltLibStrings.midnight | gestaltLib.gestaltLibStrings.navy | gestaltLib.gestaltLibStrings.olive | gestaltLib.gestaltLibStrings.orange | gestaltLib.gestaltLibStrings.orchid | gestaltLib.gestaltLibStrings.pine | gestaltLib.gestaltLibStrings.purple | gestaltLib.gestaltLibStrings.red | gestaltLib.gestaltLibStrings.watermelon | gestaltLib.gestaltLibStrings.white
   ] = js.undefined
@@ -37,7 +37,7 @@ object TextProps {
   def apply(
     align: gestaltLib.gestaltLibStrings.left | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.center | gestaltLib.gestaltLibStrings.justify = null,
     bold: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: gestaltLib.gestaltLibStrings.blue | gestaltLib.gestaltLibStrings.darkGray | gestaltLib.gestaltLibStrings.eggplant | gestaltLib.gestaltLibStrings.gray | gestaltLib.gestaltLibStrings.green | gestaltLib.gestaltLibStrings.lightGray | gestaltLib.gestaltLibStrings.maroon | gestaltLib.gestaltLibStrings.midnight | gestaltLib.gestaltLibStrings.navy | gestaltLib.gestaltLibStrings.olive | gestaltLib.gestaltLibStrings.orange | gestaltLib.gestaltLibStrings.orchid | gestaltLib.gestaltLibStrings.pine | gestaltLib.gestaltLibStrings.purple | gestaltLib.gestaltLibStrings.red | gestaltLib.gestaltLibStrings.watermelon | gestaltLib.gestaltLibStrings.white = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     italic: js.UndefOr[scala.Boolean] = js.undefined,

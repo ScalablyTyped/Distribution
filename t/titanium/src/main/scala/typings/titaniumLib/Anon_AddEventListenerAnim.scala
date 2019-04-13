@@ -133,7 +133,7 @@ trait Anon_AddEventListenerAnim extends js.Object {
   			 */
   val style: js.Any = js.native
   /**
-  			 * Styleable reosurces. See
+  			 * Styleable resources. See
   			 * [R.styleable](https://developer.android.com/reference/android/R.styleable.html)
   			 * in the Android Developer Reference.
   			 */

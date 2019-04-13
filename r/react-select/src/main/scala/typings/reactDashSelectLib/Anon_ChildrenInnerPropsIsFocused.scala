@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenInnerPropsIsFocused extends js.Object {
   /** The children to be rendered inside the indicator. */
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement[_]
   /** Props that will be passed on to the children. */
   var innerProps: js.Any
   /** The focused state of the select. */
@@ -19,7 +19,7 @@ trait Anon_ChildrenInnerPropsIsFocused extends js.Object {
 object Anon_ChildrenInnerPropsIsFocused {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    children: reactLib.reactMod.ReactElement[_],
     innerProps: js.Any,
     isFocused: scala.Boolean,
     isRtl: scala.Boolean

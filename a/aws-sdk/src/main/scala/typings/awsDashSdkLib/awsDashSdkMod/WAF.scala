@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class WAF ()
   extends awsDashSdkLib.clientsAllMod.WAF {
-  def this(options: awsDashSdkLib.clientsWafMod.WAFNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsWafMod.ClientConfiguration) = this()
 }
 

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/setPropTypes", JSImport.Namespace)
 @js.native
 object setPropTypesMod extends js.Object {
-  def default[P](propTypes: reactLib.reactMod.ReactNs.ValidationMap[P]): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[P], 
-    reactLib.reactMod.ReactNs.ComponentType[P]
+  def default[P](propTypes: reactLib.reactMod.ValidationMap[P]): js.Function1[
+    /* component */ reactLib.reactMod.ComponentType[P], 
+    reactLib.reactMod.ComponentType[P]
   ] = js.native
 }
 

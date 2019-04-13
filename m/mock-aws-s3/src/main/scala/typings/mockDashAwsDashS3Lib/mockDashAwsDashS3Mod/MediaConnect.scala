@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MediaConnect ()
   extends awsDashSdkLib.awsDashSdkMod.MediaConnect {
-  def this(options: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMediaconnectMod.ClientConfiguration) = this()
 }
 

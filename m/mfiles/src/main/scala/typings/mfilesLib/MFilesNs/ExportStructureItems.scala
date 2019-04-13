@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class ExportStructureItems ()
   extends mfilesLib.IExportStructureItems
 
+@JSGlobal("MFiles.ExportStructureItems")
+@js.native
+object ExportStructureItems
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IExportStructureItems]
+

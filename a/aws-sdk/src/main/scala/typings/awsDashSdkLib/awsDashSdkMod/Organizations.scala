@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Organizations ()
   extends awsDashSdkLib.clientsAllMod.Organizations {
-  def this(options: awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsOrganizationsMod.ClientConfiguration) = this()
 }
 

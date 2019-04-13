@@ -76,7 +76,7 @@ trait IPopoverSharedProps
   var onInteraction: js.UndefOr[
     js.Function2[
       /* nextOpenState */ scala.Boolean, 
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
+      /* e */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -108,7 +108,7 @@ trait IPopoverSharedProps
     * HTML props to spread to target element. Use `targetTagName` to change
     * the type of element rendered. Note that `ref` is not supported.
     */
-  var targetProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
+  var targetProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
   /**
     * HTML tag name for the target element. This must be an HTML element to
     * ensure that it supports the necessary DOM event handlers.
@@ -147,10 +147,10 @@ object IPopoverSharedProps {
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
-    onClose: /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClose: /* event */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
     onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
-    onInteraction: (/* nextOpenState */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
+    onInteraction: (/* nextOpenState */ scala.Boolean, /* e */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
     onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     openOnTargetFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -159,7 +159,7 @@ object IPopoverSharedProps {
     portalContainer: stdLib.HTMLElement = null,
     position: PopoverPosition = null,
     targetClassName: java.lang.String = null,
-    targetProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
+    targetProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     transitionDuration: scala.Int | scala.Double = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined,

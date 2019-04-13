@@ -21,10 +21,11 @@ object cssClasses {
     ANIMATING_OPEN: atMaterialMenuLib.atMaterialMenuLibStrings.`mdc-menu--animating-open`,
     OPEN: atMaterialMenuLib.atMaterialMenuLibStrings.`mdc-menu--open`,
     ROOT: atMaterialMenuLib.atMaterialMenuLibStrings.`mdc-menu`,
-    SELECTED_LIST_ITEM: atMaterialMenuLib.atMaterialMenuLibStrings.`mdc-list-item--selected`
+    SELECTED_LIST_ITEM: atMaterialMenuLib.atMaterialMenuLibStrings.`mdc-list-item--selected`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(ANIMATING_CLOSED = ANIMATING_CLOSED, ANIMATING_OPEN = ANIMATING_OPEN, OPEN = OPEN, ROOT = ROOT, SELECTED_LIST_ITEM = SELECTED_LIST_ITEM)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

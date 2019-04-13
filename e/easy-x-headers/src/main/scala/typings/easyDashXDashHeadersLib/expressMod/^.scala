@@ -11,10 +11,10 @@ object ^ extends js.Object {
   var static: (js.Function2[
     /* root */ java.lang.String, 
     /* options */ js.UndefOr[easyDashXDashHeadersLib.Anon_Dotfiles], 
-    easyDashXDashHeadersLib.expressMod.eNs.Handler
+    Handler
   ]) with easyDashXDashHeadersLib.Anon_Mime = js.native
-  def apply(): easyDashXDashHeadersLib.expressMod.eNs.Express = js.native
-  def Router(): easyDashXDashHeadersLib.expressMod.eNs.Router = js.native
-  def Router(options: js.Any): easyDashXDashHeadersLib.expressMod.eNs.Router = js.native
+  def apply(): Express = js.native
+  def Router(): easyDashXDashHeadersLib.expressMod.Router = js.native
+  def Router(options: js.Any): easyDashXDashHeadersLib.expressMod.Router = js.native
 }
 

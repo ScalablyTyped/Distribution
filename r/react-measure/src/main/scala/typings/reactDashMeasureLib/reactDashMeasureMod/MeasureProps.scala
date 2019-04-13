@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MeasureProps extends js.Object {
   var bounds: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.SFC[MeasuredComponentProps]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.SFC[MeasuredComponentProps]] = js.undefined
   var client: js.UndefOr[scala.Boolean] = js.undefined
   var innerRef: js.UndefOr[js.Function1[/* ref */ stdLib.Element | scala.Null, scala.Unit]] = js.undefined
   var margin: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,7 +20,7 @@ object MeasureProps {
   @scala.inline
   def apply(
     bounds: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.SFC[MeasuredComponentProps] = null,
+    children: reactLib.reactMod.SFC[MeasuredComponentProps] = null,
     client: js.UndefOr[scala.Boolean] = js.undefined,
     innerRef: /* ref */ stdLib.Element | scala.Null => scala.Unit = null,
     margin: js.UndefOr[scala.Boolean] = js.undefined,

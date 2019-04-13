@@ -26,13 +26,13 @@ trait Props extends js.Object {
     */
   var disabled: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Props to apply to the container. */
-  var innerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
+  var innerProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   /** The number of the month (from 1 to 12) which the calendar should be on. */
   var month: js.UndefOr[scala.Double] = js.undefined
   /** Function which is called when the calendar is no longer focused. */
   var onBlur: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]], 
+      /* e */ js.UndefOr[reactLib.reactMod.FocusEvent[stdLib.HTMLDivElement]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -44,7 +44,7 @@ trait Props extends js.Object {
   /** Called when the calendar receives focus. This could be from a mouse event on the container by tabbing into it. */
   var onFocus: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]], 
+      /* e */ js.UndefOr[reactLib.reactMod.FocusEvent[stdLib.HTMLDivElement]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -82,11 +82,11 @@ object Props {
     defaultSelected: js.Array[java.lang.String] = null,
     defaultYear: scala.Int | scala.Double = null,
     disabled: js.Array[java.lang.String] = null,
-    innerProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    innerProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     month: scala.Int | scala.Double = null,
-    onBlur: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]] => scala.Unit = null,
+    onBlur: /* e */ js.UndefOr[reactLib.reactMod.FocusEvent[stdLib.HTMLDivElement]] => scala.Unit = null,
     onChange: /* e */ ChangeEvent => scala.Unit = null,
-    onFocus: /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLDivElement]] => scala.Unit = null,
+    onFocus: /* e */ js.UndefOr[reactLib.reactMod.FocusEvent[stdLib.HTMLDivElement]] => scala.Unit = null,
     onSelect: /* e */ SelectEvent => scala.Unit = null,
     previouslySelected: js.Array[java.lang.String] = null,
     selected: js.Array[java.lang.String] = null,

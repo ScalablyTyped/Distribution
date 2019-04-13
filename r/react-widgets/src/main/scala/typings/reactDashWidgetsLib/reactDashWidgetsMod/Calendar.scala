@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets", "Calendar")
 @js.native
 class CalendarCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashWidgetsLib.libCalendarMod.CalendarProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashWidgetsLib.libCalendarMod.CalendarProps) = this()

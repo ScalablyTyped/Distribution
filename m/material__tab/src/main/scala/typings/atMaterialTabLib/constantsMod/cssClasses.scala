@@ -17,10 +17,11 @@ object cssClasses {
   def apply(
     ACTIVE: atMaterialTabLib.atMaterialTabLibStrings.`mdc-tab--active`,
     ANIMATING_ACTIVATE: atMaterialTabLib.atMaterialTabLibStrings.`mdc-tab--animating-activate`,
-    ANIMATING_DEACTIVATE: atMaterialTabLib.atMaterialTabLibStrings.`mdc-tab--animating-deactivate`
+    ANIMATING_DEACTIVATE: atMaterialTabLib.atMaterialTabLibStrings.`mdc-tab--animating-deactivate`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, ANIMATING_ACTIVATE = ANIMATING_ACTIVATE, ANIMATING_DEACTIVATE = ANIMATING_DEACTIVATE)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

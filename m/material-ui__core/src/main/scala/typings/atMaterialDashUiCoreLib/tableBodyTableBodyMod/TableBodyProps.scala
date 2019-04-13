@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/TableBody/TableBody.TableBodyBaseProps, 'classes' | never> ]: @material-ui/core.@material-ui/core/TableBody/TableBody.TableBodyBaseProps[P]} */ trait TableBodyProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TableBodyClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TableBodyBaseProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[TableBodyBaseProps]] = js.undefined
 }
 
 object TableBodyProps {
@@ -17,9 +17,9 @@ object TableBodyProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TableBodyClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[TableBodyBaseProps] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    component: reactLib.reactMod.ReactType[TableBodyBaseProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): TableBodyProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

@@ -13,8 +13,8 @@ trait Anon_Action extends js.Object {
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_Action {
@@ -27,8 +27,8 @@ object Anon_Action {
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_Action = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(action)) __obj.updateDynamic("action")(action)

@@ -23,3 +23,8 @@ class WorkflowAssignment ()
   override def Clone_DEPRECATED(): mfilesLib.IWorkflowAssignment = js.native
 }
 
+@JSGlobal("MFiles.WorkflowAssignment")
+@js.native
+object WorkflowAssignment
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IWorkflowAssignment]
+

@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* resp */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* resp */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     _
   ] = js.native
   def apply(config: LogConfig): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* resp */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* resp */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     _
   ] = js.native
-  def getLogger(): yogDashLogLib.yogDashLogMod.yogUnderscoreLogNs.Logger = js.native
-  def getLogger(config: LogConfig): yogDashLogLib.yogDashLogMod.yogUnderscoreLogNs.Logger = js.native
+  def getLogger(): Logger = js.native
+  def getLogger(config: LogConfig): Logger = js.native
 }
 

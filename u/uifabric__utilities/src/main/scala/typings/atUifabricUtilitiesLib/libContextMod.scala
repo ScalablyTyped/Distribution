@@ -11,6 +11,6 @@ object libContextMod extends js.Object {
   def provideContext[TContext, TProps](
     contextTypes: propDashTypesLib.propDashTypesMod.ValidationMap[TContext],
     mapPropsToContext: js.Function1[/* props */ TProps, TContext]
-  ): reactLib.reactMod.ReactNs.ComponentType[TProps] = js.native
+  ): reactLib.reactMod.ComponentType[TProps] = js.native
 }
 

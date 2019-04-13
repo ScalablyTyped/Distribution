@@ -19,6 +19,9 @@ object reduxDashLittleDashRouterLibStrings {
   sealed trait ROUTER_BLOCK extends js.Object
   
   @js.native
+  sealed trait ROUTER_DID_REPLACE_ROUTES extends js.Object
+  
+  @js.native
   sealed trait ROUTER_GO extends js.Object
   
   @js.native
@@ -29,6 +32,9 @@ object reduxDashLittleDashRouterLibStrings {
   
   @js.native
   sealed trait ROUTER_LOCATION_CHANGED extends js.Object
+  
+  @js.native
+  sealed trait ROUTER_POP extends js.Object
   
   @js.native
   sealed trait ROUTER_PUSH extends js.Object
@@ -51,6 +57,8 @@ object reduxDashLittleDashRouterLibStrings {
   @scala.inline
   def ROUTER_BLOCK: ROUTER_BLOCK = "ROUTER_BLOCK".asInstanceOf[ROUTER_BLOCK]
   @scala.inline
+  def ROUTER_DID_REPLACE_ROUTES: ROUTER_DID_REPLACE_ROUTES = "ROUTER_DID_REPLACE_ROUTES".asInstanceOf[ROUTER_DID_REPLACE_ROUTES]
+  @scala.inline
   def ROUTER_GO: ROUTER_GO = "ROUTER_GO".asInstanceOf[ROUTER_GO]
   @scala.inline
   def ROUTER_GO_BACK: ROUTER_GO_BACK = "ROUTER_GO_BACK".asInstanceOf[ROUTER_GO_BACK]
@@ -58,6 +66,8 @@ object reduxDashLittleDashRouterLibStrings {
   def ROUTER_GO_FORWARD: ROUTER_GO_FORWARD = "ROUTER_GO_FORWARD".asInstanceOf[ROUTER_GO_FORWARD]
   @scala.inline
   def ROUTER_LOCATION_CHANGED: ROUTER_LOCATION_CHANGED = "ROUTER_LOCATION_CHANGED".asInstanceOf[ROUTER_LOCATION_CHANGED]
+  @scala.inline
+  def ROUTER_POP: ROUTER_POP = "ROUTER_POP".asInstanceOf[ROUTER_POP]
   @scala.inline
   def ROUTER_PUSH: ROUTER_PUSH = "ROUTER_PUSH".asInstanceOf[ROUTER_PUSH]
   @scala.inline

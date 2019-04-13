@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MediaTailor ()
   extends awsDashSdkLib.clientsAllMod.MediaTailor {
-  def this(options: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMediatailorMod.ClientConfiguration) = this()
 }
 

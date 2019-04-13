@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class DomRendererFactory2 protected ()
   extends atAngularCoreLib.atAngularCoreMod.RendererFactory2 {
-  def this(eventManager: atAngularPlatformDashBrowserLib.srcDomEventsEventUnderscoreManagerMod.EventManager, sharedStylesHost: atAngularPlatformDashBrowserLib.srcDomSharedUnderscoreStylesUnderscoreHostMod.DomSharedStylesHost) = this()
+  def this(eventManager: atAngularPlatformDashBrowserLib.srcDomEventsEventUnderscoreManagerMod.EventManager, sharedStylesHost: atAngularPlatformDashBrowserLib.srcDomSharedUnderscoreStylesUnderscoreHostMod.DomSharedStylesHost, appId: java.lang.String) = this()
+  var appId: js.Any = js.native
   var defaultRenderer: js.Any = js.native
   var eventManager: js.Any = js.native
   var rendererByCompId: js.Any = js.native

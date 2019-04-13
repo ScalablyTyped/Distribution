@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[T](
-    SourceComponent: (reactLib.reactMod.ReactNs.ComponentClass[T, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[T]
-  ): reactLib.reactMod.ReactNs.ComponentClass[T, reactLib.reactMod.ReactNs.ComponentState] = js.native
+    SourceComponent: (reactLib.reactMod.ComponentClass[T, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[T]
+  ): reactLib.reactMod.ComponentClass[T, reactLib.reactMod.ComponentState] = js.native
 }
 

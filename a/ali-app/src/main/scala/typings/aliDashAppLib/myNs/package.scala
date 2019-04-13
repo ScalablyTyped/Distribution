@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 package object myNs {
   type Color = java.lang.String | js.Array[scala.Double] | scala.Double | CanvasAction
   type RemoveSavedFileOptions = GetSavedFileInfoOptions
+  //#region 网络 https://docs.alipay.com/mini/api/network
+  type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   //#endregion
   //#region 文本风险识别 https://docs.alipay.com/mini/api/text-identification
   /* Rewritten from type alias, can be one of: 

@@ -41,3 +41,8 @@ class SetPropertiesParams ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.SetPropertiesParams")
+@js.native
+object SetPropertiesParams
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISetPropertiesParams]
+

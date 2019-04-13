@@ -168,3 +168,8 @@ class VaultObjectFileOperations ()
   override def UploadTemporaryFileCommit_32bit(UploadID: scala.Double, LogicalSize: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultObjectFileOperations")
+@js.native
+object VaultObjectFileOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultObjectFileOperations]
+

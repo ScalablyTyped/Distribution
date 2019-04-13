@@ -22,7 +22,7 @@ trait IDockMonitorProps extends js.Object {
   /**
     * Any valid Redux DevTools monitor.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @default true
     */
@@ -60,7 +60,7 @@ object IDockMonitorProps {
     changePositionKey: java.lang.String,
     toggleVisibilityKey: java.lang.String,
     changeMonitorKey: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     defaultIsVisible: js.UndefOr[scala.Boolean] = js.undefined,
     defaultPosition: reduxDashDevtoolsDashDockDashMonitorLib.DockPosition = null,
     defaultSize: scala.Int | scala.Double = null,

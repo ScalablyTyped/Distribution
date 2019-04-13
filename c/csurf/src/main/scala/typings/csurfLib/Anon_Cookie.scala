@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Cookie extends js.Object {
-  var cookie: js.UndefOr[csurfLib.csurfMod.csurfNs.CookieOptions | scala.Boolean] = js.undefined
+  var cookie: js.UndefOr[csurfLib.csurfMod.CookieOptions | scala.Boolean] = js.undefined
   var ignoreMethods: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var sessionKey: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[
@@ -20,7 +20,7 @@ trait Anon_Cookie extends js.Object {
 object Anon_Cookie {
   @scala.inline
   def apply(
-    cookie: csurfLib.csurfMod.csurfNs.CookieOptions | scala.Boolean = null,
+    cookie: csurfLib.csurfMod.CookieOptions | scala.Boolean = null,
     ignoreMethods: js.Array[java.lang.String] = null,
     sessionKey: java.lang.String = null,
     value: /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request => java.lang.String = null

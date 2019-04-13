@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ClassNameBottomLeftGrid extends js.Object {
   @JSName("classNameBottomLeftGrid")
-  var classNameBottomLeftGrid_Original: reactLib.reactMod.ReactNs.Validator[java.lang.String] = js.native
+  var classNameBottomLeftGrid_Original: reactLib.reactMod.Validator[java.lang.String] = js.native
   @JSName("classNameBottomRightGrid")
-  var classNameBottomRightGrid_Original: reactLib.reactMod.ReactNs.Validator[java.lang.String] = js.native
+  var classNameBottomRightGrid_Original: reactLib.reactMod.Validator[java.lang.String] = js.native
   @JSName("classNameTopLeftGrid")
-  var classNameTopLeftGrid_Original: reactLib.reactMod.ReactNs.Validator[java.lang.String] = js.native
+  var classNameTopLeftGrid_Original: reactLib.reactMod.Validator[java.lang.String] = js.native
   @JSName("classNameTopRightGrid")
-  var classNameTopRightGrid_Original: reactLib.reactMod.ReactNs.Validator[java.lang.String] = js.native
+  var classNameTopRightGrid_Original: reactLib.reactMod.Validator[java.lang.String] = js.native
   @JSName("enableFixedColumnScroll")
-  var enableFixedColumnScroll_Original: reactLib.reactMod.ReactNs.Validator[scala.Boolean] = js.native
+  var enableFixedColumnScroll_Original: reactLib.reactMod.Validator[scala.Boolean] = js.native
   @JSName("enableFixedRowScroll")
-  var enableFixedRowScroll_Original: reactLib.reactMod.ReactNs.Validator[scala.Boolean] = js.native
+  var enableFixedRowScroll_Original: reactLib.reactMod.Validator[scala.Boolean] = js.native
   @JSName("fixedColumnCount")
-  var fixedColumnCount_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var fixedColumnCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("fixedRowCount")
-  var fixedRowCount_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var fixedRowCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("styleBottomLeftGrid")
-  var styleBottomLeftGrid_Original: reactLib.reactMod.ReactNs.Validator[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var styleBottomLeftGrid_Original: reactLib.reactMod.Validator[reactLib.reactMod.CSSProperties] = js.native
   @JSName("styleBottomRightGrid")
-  var styleBottomRightGrid_Original: reactLib.reactMod.ReactNs.Validator[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var styleBottomRightGrid_Original: reactLib.reactMod.Validator[reactLib.reactMod.CSSProperties] = js.native
   @JSName("styleTopLeftGrid")
-  var styleTopLeftGrid_Original: reactLib.reactMod.ReactNs.Validator[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var styleTopLeftGrid_Original: reactLib.reactMod.Validator[reactLib.reactMod.CSSProperties] = js.native
   @JSName("styleTopRightGrid")
-  var styleTopRightGrid_Original: reactLib.reactMod.ReactNs.Validator[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var styleTopRightGrid_Original: reactLib.reactMod.Validator[reactLib.reactMod.CSSProperties] = js.native
   @JSName("style")
-  var style_Original: reactLib.reactMod.ReactNs.Validator[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var style_Original: reactLib.reactMod.Validator[reactLib.reactMod.CSSProperties] = js.native
   def classNameBottomLeftGrid(
     props: js.Object,
     propName: java.lang.String,

@@ -9,11 +9,11 @@ package object permissionNs {
   type PermissionValidationFunction = js.Function2[
     /* permissionName */ js.UndefOr[java.lang.String], 
     /* transitionProperties */ js.UndefOr[TransitionProperties], 
-    scala.Boolean | angularLib.angularMod.angularNs.IPromise[js.Any]
+    scala.Boolean | angularLib.angularMod.IPromise[js.Any]
   ]
   type RoleValidationFunction = js.Function2[
     /* roleName */ js.UndefOr[java.lang.String], 
     /* transitionProperties */ js.UndefOr[TransitionProperties], 
-    scala.Boolean | angularLib.angularMod.angularNs.IPromise[js.Any]
+    scala.Boolean | angularLib.angularMod.IPromise[js.Any]
   ]
 }

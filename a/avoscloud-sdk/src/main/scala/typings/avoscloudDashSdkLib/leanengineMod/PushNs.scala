@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @JSImport("leanengine", "Push")
 @js.native
 object PushNs extends js.Object {
-  def send[T](data: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.PushNs.PushData): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+  def send[T](data: avoscloudDashSdkLib.avoscloudDashSdkMod.PushNs.PushData): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def send[T](
-    data: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.PushNs.PushData,
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.PushNs.SendOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    data: avoscloudDashSdkLib.avoscloudDashSdkMod.PushNs.PushData,
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.PushNs.SendOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
 }
 

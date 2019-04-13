@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Translate ()
-  extends awsDashSdkLib.clientsTranslateMod.namespaced {
-  def this(options: awsDashSdkLib.clientsTranslateMod.TranslateNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsTranslateMod.^ {
+  def this(options: awsDashSdkLib.clientsTranslateMod.ClientConfiguration) = this()
 }
 

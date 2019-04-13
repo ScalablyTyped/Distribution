@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select/lib/animated", "Placeholder")
 @js.native
 class Placeholder protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashSelectLib.libAnimatedPlaceholderMod.AnimatedPlaceholderProps[js.Any], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashSelectLib.libAnimatedPlaceholderMod.AnimatedPlaceholderProps[_]) = this()

@@ -16,14 +16,14 @@ trait ReactWidgetsCommonDropdownProps[C] extends ReactWidgetsCommonProps[C] {
 object ReactWidgetsCommonDropdownProps {
   @scala.inline
   def apply[C](
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     disabled: scala.Boolean | js.Array[_] = null,
     dropUp: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[C] = null
+    ref: reactLib.reactMod.LegacyRef[C] = null
   ): ReactWidgetsCommonDropdownProps[C] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

@@ -17,11 +17,11 @@ object checkMod extends js.Object {
   val validationResult: expressDashValidatorLib.checkValidationDashResultMod.ResultFactory = js.native
   def buildCheckFunction(location: js.Array[expressDashValidatorLib.checkLocationMod.Location]): expressDashValidatorLib.checkValidationDashChainDashBuildersMod.ValidationChainBuilder = js.native
   def checkSchema(schema: expressDashValidatorLib.checkSchemaMod.ValidationSchema): js.Array[expressDashValidatorLib.checkCheckMod.ValidationChain] = js.native
-  def oneOf(chains: expressDashValidatorLib.checkOneDashOfMod.ValidationChains): expressLib.expressMod.eNs.RequestHandler = js.native
+  def oneOf(chains: expressDashValidatorLib.checkOneDashOfMod.ValidationChains): expressLib.expressMod.RequestHandler = js.native
   def oneOf(
     chains: expressDashValidatorLib.checkOneDashOfMod.ValidationChains,
     message: expressDashValidatorLib.checkOneDashOfMod.OneOfCustomMessageBuilder
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
-  def oneOf(chains: expressDashValidatorLib.checkOneDashOfMod.ValidationChains, message: js.Any): expressLib.expressMod.eNs.RequestHandler = js.native
+  ): expressLib.expressMod.RequestHandler = js.native
+  def oneOf(chains: expressDashValidatorLib.checkOneDashOfMod.ValidationChains, message: js.Any): expressLib.expressMod.RequestHandler = js.native
 }
 

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("go", "CircularNetwork")
 @js.native
-class CircularNetwork ()
-  extends goLib.goMod.goNs.CircularNetwork
+class CircularNetwork () extends LayoutNetwork
 

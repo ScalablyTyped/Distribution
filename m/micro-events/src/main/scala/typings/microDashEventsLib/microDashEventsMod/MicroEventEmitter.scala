@@ -13,14 +13,8 @@ trait MicroEventEmitter extends js.Object {
   def emit(`type`: java.lang.String, arguments: js.Any*): MicroEventEmitter = js.native
   /** Detach listener */
   def off(`type`: java.lang.String): MicroEventEmitter = js.native
-  def off(
-    `type`: java.lang.String,
-    handler: microDashEventsLib.microDashEventsMod.MicroEventEmitterNs.EventHandler
-  ): MicroEventEmitter = js.native
+  def off(`type`: java.lang.String, handler: EventHandler): MicroEventEmitter = js.native
   /** Attach listener */
-  def on(
-    `type`: java.lang.String,
-    handler: microDashEventsLib.microDashEventsMod.MicroEventEmitterNs.EventHandler
-  ): MicroEventEmitter = js.native
+  def on(`type`: java.lang.String, handler: EventHandler): MicroEventEmitter = js.native
 }
 

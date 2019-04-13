@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CodeDeploy ()
   extends awsDashSdkLib.awsDashSdkMod.CodeDeploy {
-  def this(options: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCodedeployMod.ClientConfiguration) = this()
 }
 

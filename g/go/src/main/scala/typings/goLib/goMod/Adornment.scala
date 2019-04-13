@@ -17,8 +17,13 @@ import scala.scalajs.js.annotation._
 /**
   * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
   */
-class Adornment ()
-  extends goLib.goMod.goNs.Adornment {
-  def this(`type`: goLib.goMod.goNs.EnumValue) = this()
+class Adornment () extends Part {
+  def this(`type`: EnumValue) = this()
+  /**Gets or sets the GraphObject that is adorned.*/
+  var adornedObject: GraphObject = js.native
+  /**This read-only property returns the Part that contains the adorned object.*/
+  var adornedPart: Part = js.native
+  /**This read-only property returns a Placeholder that this Adornment may contain in its visual tree.*/
+  var placeholder: Placeholder = js.native
 }
 

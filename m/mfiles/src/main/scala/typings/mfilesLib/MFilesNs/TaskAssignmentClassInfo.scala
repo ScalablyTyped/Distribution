@@ -17,3 +17,8 @@ class TaskAssignmentClassInfo ()
   override def Clone(): mfilesLib.ITaskAssignmentClassInfo = js.native
 }
 
+@JSGlobal("MFiles.TaskAssignmentClassInfo")
+@js.native
+object TaskAssignmentClassInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITaskAssignmentClassInfo]
+

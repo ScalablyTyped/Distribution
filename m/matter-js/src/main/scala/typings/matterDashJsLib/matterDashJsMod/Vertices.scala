@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Vertices")
 @js.native
-class Vertices ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Vertices
+class Vertices () extends js.Object
 
 /* static members */
 @JSImport("matter-js", "Vertices")
@@ -21,16 +20,16 @@ object Vertices extends js.Object {
     * @param {bool} signed
     * @return {number} The area
     */
-  def area(vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector], signed: scala.Boolean): scala.Double = js.native
+  def area(vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector], signed: scala.Boolean): scala.Double = js.native
   /**
     * Returns the centre (centroid) of the set of vertices.
     * @method centre
     * @param {vertices} vertices
     * @return {vector} The centre point
     */
-  def centre(vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]): matterDashJsLib.matterDashJsMod.MatterNs.Vector = js.native
+  def centre(vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector]): matterDashJsLib.matterDashJsMod.Vector = js.native
   def chamfer(
-    vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector],
+    vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector],
     radius: js.Array[scala.Double],
     quality: scala.Double,
     qualityMin: scala.Double,
@@ -47,7 +46,7 @@ object Vertices extends js.Object {
     * @param {number} qualityMax
     */
   def chamfer(
-    vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector],
+    vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector],
     radius: scala.Double,
     quality: scala.Double,
     qualityMin: scala.Double,
@@ -59,7 +58,7 @@ object Vertices extends js.Object {
     * @param {vertices} vertices
     * @return {vertices} vertices
     */
-  def clockwiseSort(vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
+  def clockwiseSort(vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector]): js.Array[matterDashJsLib.matterDashJsMod.Vector] = js.native
   /**
     * Returns `true` if the `point` is inside the set of `vertices`.
     * @method contains
@@ -68,8 +67,8 @@ object Vertices extends js.Object {
     * @return {boolean} True if the vertices contains point, otherwise false
     */
   def contains(
-    vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector],
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector],
+    point: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Boolean = js.native
   /**
     * Creates a new set of `Matter.Body` compatible vertices.
@@ -87,8 +86,8 @@ object Vertices extends js.Object {
     * @param {body} body
     */
   def create(
-    points: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector],
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body
+    points: js.Array[matterDashJsLib.matterDashJsMod.Vector],
+    body: matterDashJsLib.matterDashJsMod.Body
   ): scala.Unit = js.native
   /**
     * Parses a string containing ordered x y pairs separated by spaces (and optionally commas),
@@ -99,14 +98,14 @@ object Vertices extends js.Object {
     * @param {body} body
     * @return {vertices} vertices
     */
-  def fromPath(path: java.lang.String, body: matterDashJsLib.matterDashJsMod.MatterNs.Body): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
+  def fromPath(path: java.lang.String, body: matterDashJsLib.matterDashJsMod.Body): js.Array[matterDashJsLib.matterDashJsMod.Vector] = js.native
   /**
     * Returns the convex hull of the input vertices as a new array of points.
     * @method hull
     * @param {vertices} vertices
     * @return [vertex] vertices
     */
-  def hull(vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
+  def hull(vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector]): js.Array[matterDashJsLib.matterDashJsMod.Vector] = js.native
   /**
     * Returns the moment of inertia (second moment of area) of the set of vertices given the total mass.
     * @method inertia
@@ -114,21 +113,21 @@ object Vertices extends js.Object {
     * @param {number} mass
     * @return {number} The polygon's moment of inertia
     */
-  def inertia(vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector], mass: scala.Double): scala.Double = js.native
+  def inertia(vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector], mass: scala.Double): scala.Double = js.native
   /**
     * Returns true if the vertices form a convex shape (vertices must be in clockwise order).
     * @method isConvex
     * @param {vertices} vertices
     * @return {bool} `true` if the `vertices` are convex, `false` if not (or `null` if not computable).
     */
-  def isConvex(vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]): scala.Boolean = js.native
+  def isConvex(vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector]): scala.Boolean = js.native
   /**
     * Returns the average (mean) of the set of vertices.
     * @method mean
     * @param {vertices} vertices
     * @return {vector} The average point
     */
-  def mean(vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
+  def mean(vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector]): js.Array[matterDashJsLib.matterDashJsMod.Vector] = js.native
   /**
     * Rotates the set of vertices in-place.
     * @method rotate
@@ -137,9 +136,9 @@ object Vertices extends js.Object {
     * @param {vector} point
     */
   def rotate(
-    vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector],
+    vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector],
     angle: scala.Double,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    point: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
   /**
     * Scales the vertices from a point (default is centre) in-place.
@@ -150,10 +149,10 @@ object Vertices extends js.Object {
     * @param {vector} point
     */
   def scale(
-    vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector],
+    vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector],
     scaleX: scala.Double,
     scaleY: scala.Double,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    point: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
   /**
     * Translates the set of vertices in-place.
@@ -163,8 +162,8 @@ object Vertices extends js.Object {
     * @param {number} scalar
     */
   def translate(
-    vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector],
-    vector: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
+    vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector],
+    vector: matterDashJsLib.matterDashJsMod.Vector,
     scalar: scala.Double
   ): scala.Unit = js.native
 }

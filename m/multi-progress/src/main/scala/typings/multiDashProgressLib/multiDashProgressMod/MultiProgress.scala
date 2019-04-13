@@ -14,7 +14,7 @@ trait MultiProgress extends js.Object {
   /**
     * Add a new bar
     */
-  def newBar(format: java.lang.String, options: progressLib.progressMod.ProgressBarNs.ProgressBarOptions): progressLib.progressMod.namespaced = js.native
+  def newBar(format: java.lang.String, options: progressLib.progressMod.ProgressBarOptions): progressLib.progressMod.^ = js.native
   /**
     * Close all bars
     */

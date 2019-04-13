@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 /**
   * An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
   *
-  * @remarks
-  * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
-  *
   * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access 
   * from the `callback` function's only parameter.
   */
@@ -20,47 +17,12 @@ trait AsyncResult[T] extends js.Object {
     * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. 
     * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed 
     * to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td>                            </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *  </table>
     */
   var asyncContext: js.Any
   /**
     * Gets an object that may provide additional information if an error occurred.
     *
     * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong>Outlook</strong></td><td> Y (Mailbox Preview)    </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *  </table>
     * 
     * *Supported APIs*
     * 
@@ -76,52 +38,10 @@ trait AsyncResult[T] extends js.Object {
   var diagnostics: js.Any
   /**
     * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *  </table>
     */
   var error: Error
   /**
     * Gets the {@link Office.AsyncResultStatus} of the asynchronous operation.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *  </table>
     */
   var status: AsyncResultStatus
   /**
@@ -133,25 +53,6 @@ trait AsyncResult[T] extends js.Object {
     *
     * **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. 
     * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-    *  </table>
     */
   var value: T
 }

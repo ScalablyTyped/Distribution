@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stream", "PassThrough")
 @js.native
-class PassThrough ()
-  extends nodeLib.streamMod.internalNs.PassThrough
+class PassThrough () extends Transform
 

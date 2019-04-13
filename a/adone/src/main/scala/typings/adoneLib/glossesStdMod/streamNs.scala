@@ -12,7 +12,7 @@ object streamNs extends js.Object {
   @js.native
   class Duplex ()
     extends nodeLib.streamMod.Duplex {
-    def this(opts: nodeLib.streamMod.internalNs.DuplexOptions) = this()
+    def this(opts: nodeLib.streamMod.DuplexOptions) = this()
   }
   
   @js.native
@@ -22,7 +22,7 @@ object streamNs extends js.Object {
   @js.native
   class Readable ()
     extends nodeLib.streamMod.Readable {
-    def this(opts: nodeLib.streamMod.internalNs.ReadableOptions) = this()
+    def this(opts: nodeLib.streamMod.ReadableOptions) = this()
   }
   
   @js.native
@@ -32,13 +32,13 @@ object streamNs extends js.Object {
   @js.native
   class Transform ()
     extends nodeLib.streamMod.Transform {
-    def this(opts: nodeLib.streamMod.internalNs.TransformOptions) = this()
+    def this(opts: nodeLib.streamMod.TransformOptions) = this()
   }
   
   @js.native
   class Writable ()
     extends nodeLib.streamMod.Writable {
-    def this(opts: nodeLib.streamMod.internalNs.WritableOptions) = this()
+    def this(opts: nodeLib.streamMod.WritableOptions) = this()
   }
   
   def finished(

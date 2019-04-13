@@ -43,3 +43,8 @@ class ValueListItem ()
   override def GetIconAsPNG(Width: scala.Double, Height: scala.Double): js.Array[scala.Double] = js.native
 }
 
+@JSGlobal("MFiles.ValueListItem")
+@js.native
+object ValueListItem
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IValueListItem]
+

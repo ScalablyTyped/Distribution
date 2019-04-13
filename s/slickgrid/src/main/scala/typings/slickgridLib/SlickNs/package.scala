@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SlickNs {
+  type CellCssStylesHash = org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   type Formatter[T /* <: SlickData */] = js.Function5[
     /* row */ scala.Double, 
     /* cell */ scala.Double, 

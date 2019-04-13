@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props[P, S]
-  extends reactLib.reactMod.ReactNs.ComponentLifecycle[P, S, js.Any]
+  extends reactLib.reactMod.ComponentLifecycle[P, S, js.Any]
      with LifecycleStateProps[P, S]
 
 object Props {
   @scala.inline
   def apply[P, S](
-    component: reactLib.reactMod.ReactNs.ComponentClass[P, S],
+    component: reactLib.reactMod.ComponentClass[P, S],
     UNSAFE_componentWillMount: () => scala.Unit = null,
     UNSAFE_componentWillReceiveProps: (/* nextProps */ stdLib.Readonly[P], /* nextContext */ js.Any) => scala.Unit = null,
     UNSAFE_componentWillUpdate: (/* nextProps */ stdLib.Readonly[P], /* nextState */ stdLib.Readonly[S], /* nextContext */ js.Any) => scala.Unit = null,
-    componentDidCatch: (/* error */ stdLib.Error, /* errorInfo */ reactLib.reactMod.ReactNs.ErrorInfo) => scala.Unit = null,
+    componentDidCatch: (/* error */ stdLib.Error, /* errorInfo */ reactLib.reactMod.ErrorInfo) => scala.Unit = null,
     componentDidMount: () => scala.Unit = null,
     componentDidUpdate: (/* prevProps */ stdLib.Readonly[P], /* prevState */ stdLib.Readonly[S], /* snapshot */ js.UndefOr[js.Any]) => scala.Unit = null,
     componentWillMount: () => scala.Unit = null,

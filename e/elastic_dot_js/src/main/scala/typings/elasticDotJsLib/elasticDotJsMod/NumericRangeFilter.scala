@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "NumericRangeFilter")
 @js.native
-class NumericRangeFilter protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter {
+class NumericRangeFilter protected () extends Filter {
   /*
     A Filter that only accepts numeric values within a specified range.
     */
@@ -16,77 +15,63 @@ class NumericRangeFilter protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def cache(trueFalse: scala.Boolean): NumericRangeFilter = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def cacheKey(key: java.lang.String): NumericRangeFilter = js.native
   /*
     Returns the field name used to create this object.
     */
-  /* CompleteClass */
-  override def field(field: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def field(field: java.lang.String): NumericRangeFilter = js.native
   /*
     Sets the endpoint for the current range.
     */
-  /* CompleteClass */
-  override def from(startPoint: stdLib.Number): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def from(startPoint: stdLib.Number): NumericRangeFilter = js.native
   /*
     Greater than value.  Same as setting from to the value, and
     include_lower to false,
     */
-  /* CompleteClass */
-  override def gt(`val`: js.Any): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def gt(`val`: js.Any): NumericRangeFilter = js.native
   /*
     Greater than or equal to value.  Same as setting from to the value,
     and include_lower to true.
     */
-  /* CompleteClass */
-  override def gte(`val`: js.Any): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def gte(`val`: js.Any): NumericRangeFilter = js.native
   /*
     Should the first from (if set) be inclusive or not.
     Defaults to true
     */
-  /* CompleteClass */
-  override def includeLower(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def includeLower(trueFalse: scala.Boolean): NumericRangeFilter = js.native
   /*
     Should the last to (if set) be inclusive or not. Defaults to true.
     */
-  /* CompleteClass */
-  override def includeUpper(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def includeUpper(trueFalse: scala.Boolean): NumericRangeFilter = js.native
   /*
     Less than value.  Same as setting to to the value, and include_upper
     to false.
     */
-  /* CompleteClass */
-  override def lt(`val`: js.Any): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def lt(`val`: js.Any): NumericRangeFilter = js.native
   /*
     Less than or equal to value.  Same as setting to to the value,
     and include_upper to true.
     */
-  /* CompleteClass */
-  override def lte(`val`: js.Any): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def lte(`val`: js.Any): NumericRangeFilter = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def name(name: java.lang.String): NumericRangeFilter = js.native
   /*
     Sets the endpoint for the current range.
     */
-  /* CompleteClass */
-  override def to(endPoint: stdLib.Number): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def to(endPoint: stdLib.Number): NumericRangeFilter = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.NumericRangeFilter = js.native
+  def toJSON(): NumericRangeFilter = js.native
 }
 

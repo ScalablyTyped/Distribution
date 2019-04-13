@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def withGeoPosition[Props](
-    Component: reactLib.reactMod.ReactNs.ComponentType[Props with reactDashFnsLib.distGeoPositionGeoPositionMod.GeoPositionProps]
-  ): reactLib.reactMod.ReactNs.ComponentType[Props] = js.native
+    Component: reactLib.reactMod.ComponentType[Props with reactDashFnsLib.distGeoPositionGeoPositionMod.GeoPositionProps]
+  ): reactLib.reactMod.ComponentType[Props] = js.native
 }
 

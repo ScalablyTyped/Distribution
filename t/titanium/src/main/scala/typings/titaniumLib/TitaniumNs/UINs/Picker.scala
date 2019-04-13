@@ -227,10 +227,6 @@ trait Picker extends View {
   			 */
   def setValue(date: js.Any, suppressEvent: scala.Boolean): PickerRow = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Picker.value> property.
-  			 */
-  def setValue(value: stdLib.Date): scala.Unit = js.native
-  /**
   			 * Sets the value of the <Titanium.UI.Picker.visibleItems> property.
   			 */
   def setVisibleItems(visibleItems: scala.Double): scala.Unit = js.native

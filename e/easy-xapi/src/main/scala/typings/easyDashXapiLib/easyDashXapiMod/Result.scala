@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Result extends js.Object {
   @JSName("app")
-  var app_Original: expressLib.expressMod.eNs.Application = js.native
+  var app_Original: expressLib.expressMod.Application = js.native
   var express: js.Any = js.native
-  var log: bunyanLib.bunyanMod.namespaced = js.native
+  var log: bunyanLib.bunyanMod.^ = js.native
   var server: nodeLib.httpMod.Server = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without

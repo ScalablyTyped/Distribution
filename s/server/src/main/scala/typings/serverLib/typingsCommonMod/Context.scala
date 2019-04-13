@@ -18,8 +18,8 @@ trait Context extends js.Object {
   var params: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var path: java.lang.String
   var query: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
-  var req: expressLib.expressMod.eNs.Request
-  var res: expressLib.expressMod.eNs.Response
+  var req: expressLib.expressMod.Request
+  var res: expressLib.expressMod.Response
   var secure: scala.Boolean
   var session: js.Object
   var url: java.lang.String
@@ -40,8 +40,8 @@ object Context {
     params: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     path: java.lang.String,
     query: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]],
-    req: expressLib.expressMod.eNs.Request,
-    res: expressLib.expressMod.eNs.Response,
+    req: expressLib.expressMod.Request,
+    res: expressLib.expressMod.Response,
     secure: scala.Boolean,
     session: js.Object,
     url: java.lang.String,

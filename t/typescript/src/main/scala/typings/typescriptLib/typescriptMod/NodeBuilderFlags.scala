@@ -5,39 +5,158 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait NodeBuilderFlags extends js.Object
+
 @JSImport("typescript", "NodeBuilderFlags")
 @js.native
 object NodeBuilderFlags extends js.Object {
-  /* 131072 */ val AllowAnonymousIdentifier: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowAnonymousIdentifier with scala.Double = js.native
-  /* 2097152 */ val AllowEmptyIndexInfoType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowEmptyIndexInfoType with scala.Double = js.native
-  /* 524288 */ val AllowEmptyTuple: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowEmptyTuple with scala.Double = js.native
-  /* 262144 */ val AllowEmptyUnionOrIntersection: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowEmptyUnionOrIntersection with scala.Double = js.native
-  /* 67108864 */ val AllowNodeModulesRelativePaths: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowNodeModulesRelativePaths with scala.Double = js.native
-  /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier with scala.Double = js.native
-  /* 32768 */ val AllowThisInObjectLiteral: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowThisInObjectLiteral with scala.Double = js.native
-  /* 1048576 */ val AllowUniqueESSymbolType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowUniqueESSymbolType with scala.Double = js.native
-  /* 16 */ val ForbidIndexedAccessSymbolReferences: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.ForbidIndexedAccessSymbolReferences with scala.Double = js.native
-  /* 4 */ val GenerateNamesForShadowedTypeParams: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.GenerateNamesForShadowedTypeParams with scala.Double = js.native
-  /* 70221824 */ val IgnoreErrors: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.IgnoreErrors with scala.Double = js.native
-  /* 16777216 */ val InInitialEntityName: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.InInitialEntityName with scala.Double = js.native
-  /* 4194304 */ val InObjectTypeLiteral: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.InObjectTypeLiteral with scala.Double = js.native
-  /* 33554432 */ val InReverseMappedType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.InReverseMappedType with scala.Double = js.native
-  /* 8388608 */ val InTypeAlias: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.InTypeAlias with scala.Double = js.native
-  /* 1024 */ val MultilineObjectLiterals: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.MultilineObjectLiterals with scala.Double = js.native
-  /* 1 */ val NoTruncation: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.NoTruncation with scala.Double = js.native
-  /* 0 */ val None: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.None with scala.Double = js.native
-  /* 8192 */ val OmitParameterModifiers: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.OmitParameterModifiers with scala.Double = js.native
-  /* 256 */ val SuppressAnyReturnType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.SuppressAnyReturnType with scala.Double = js.native
-  /* 16384 */ val UseAliasDefinedOutsideCurrentScope: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.UseAliasDefinedOutsideCurrentScope with scala.Double = js.native
-  /* 64 */ val UseFullyQualifiedType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.UseFullyQualifiedType with scala.Double = js.native
-  /* 128 */ val UseOnlyExternalAliasing: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.UseOnlyExternalAliasing with scala.Double = js.native
-  /* 8 */ val UseStructuralFallback: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.UseStructuralFallback with scala.Double = js.native
-  /* 4096 */ val UseTypeOfFunction: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.UseTypeOfFunction with scala.Double = js.native
-  /* 2 */ val WriteArrayAsGenericType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.WriteArrayAsGenericType with scala.Double = js.native
-  /* 2048 */ val WriteClassExpressionAsTypeLiteral: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.WriteClassExpressionAsTypeLiteral with scala.Double = js.native
-  /* 32 */ val WriteTypeArgumentsOfSignature: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.WriteTypeArgumentsOfSignature with scala.Double = js.native
-  /* 512 */ val WriteTypeParametersInQualifiedName: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.WriteTypeParametersInQualifiedName with scala.Double = js.native
+  @js.native
+  sealed trait AllowAnonymousIdentifier
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait AllowEmptyIndexInfoType
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait AllowEmptyTuple
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait AllowEmptyUnionOrIntersection
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait AllowNodeModulesRelativePaths
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait AllowQualifedNameInPlaceOfIdentifier
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait AllowThisInObjectLiteral
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait AllowUniqueESSymbolType
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait ForbidIndexedAccessSymbolReferences
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait GenerateNamesForShadowedTypeParams
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait IgnoreErrors
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait InInitialEntityName
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait InObjectTypeLiteral
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait InReverseMappedType
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait InTypeAlias
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait MultilineObjectLiterals
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait NoTruncation
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait None
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait OmitParameterModifiers
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait SuppressAnyReturnType
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait UseAliasDefinedOutsideCurrentScope
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait UseFullyQualifiedType
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait UseOnlyExternalAliasing
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait UseStructuralFallback
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait UseTypeOfFunction
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait WriteArrayAsGenericType
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait WriteClassExpressionAsTypeLiteral
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait WriteTypeArgumentsOfSignature
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  @js.native
+  sealed trait WriteTypeParametersInQualifiedName
+    extends typescriptLib.typescriptMod.NodeBuilderFlags
+  
+  /* 131072 */ val AllowAnonymousIdentifier: AllowAnonymousIdentifier with scala.Double = js.native
+  /* 2097152 */ val AllowEmptyIndexInfoType: AllowEmptyIndexInfoType with scala.Double = js.native
+  /* 524288 */ val AllowEmptyTuple: AllowEmptyTuple with scala.Double = js.native
+  /* 262144 */ val AllowEmptyUnionOrIntersection: AllowEmptyUnionOrIntersection with scala.Double = js.native
+  /* 67108864 */ val AllowNodeModulesRelativePaths: AllowNodeModulesRelativePaths with scala.Double = js.native
+  /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: AllowQualifedNameInPlaceOfIdentifier with scala.Double = js.native
+  /* 32768 */ val AllowThisInObjectLiteral: AllowThisInObjectLiteral with scala.Double = js.native
+  /* 1048576 */ val AllowUniqueESSymbolType: AllowUniqueESSymbolType with scala.Double = js.native
+  /* 16 */ val ForbidIndexedAccessSymbolReferences: ForbidIndexedAccessSymbolReferences with scala.Double = js.native
+  /* 4 */ val GenerateNamesForShadowedTypeParams: GenerateNamesForShadowedTypeParams with scala.Double = js.native
+  /* 70221824 */ val IgnoreErrors: IgnoreErrors with scala.Double = js.native
+  /* 16777216 */ val InInitialEntityName: InInitialEntityName with scala.Double = js.native
+  /* 4194304 */ val InObjectTypeLiteral: InObjectTypeLiteral with scala.Double = js.native
+  /* 33554432 */ val InReverseMappedType: InReverseMappedType with scala.Double = js.native
+  /* 8388608 */ val InTypeAlias: InTypeAlias with scala.Double = js.native
+  /* 1024 */ val MultilineObjectLiterals: MultilineObjectLiterals with scala.Double = js.native
+  /* 1 */ val NoTruncation: NoTruncation with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 8192 */ val OmitParameterModifiers: OmitParameterModifiers with scala.Double = js.native
+  /* 256 */ val SuppressAnyReturnType: SuppressAnyReturnType with scala.Double = js.native
+  /* 16384 */ val UseAliasDefinedOutsideCurrentScope: UseAliasDefinedOutsideCurrentScope with scala.Double = js.native
+  /* 64 */ val UseFullyQualifiedType: UseFullyQualifiedType with scala.Double = js.native
+  /* 128 */ val UseOnlyExternalAliasing: UseOnlyExternalAliasing with scala.Double = js.native
+  /* 8 */ val UseStructuralFallback: UseStructuralFallback with scala.Double = js.native
+  /* 4096 */ val UseTypeOfFunction: UseTypeOfFunction with scala.Double = js.native
+  /* 2 */ val WriteArrayAsGenericType: WriteArrayAsGenericType with scala.Double = js.native
+  /* 2048 */ val WriteClassExpressionAsTypeLiteral: WriteClassExpressionAsTypeLiteral with scala.Double = js.native
+  /* 32 */ val WriteTypeArgumentsOfSignature: WriteTypeArgumentsOfSignature with scala.Double = js.native
+  /* 512 */ val WriteTypeParametersInQualifiedName: WriteTypeParametersInQualifiedName with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.tsNs.NodeBuilderFlags with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.NodeBuilderFlags with scala.Double] = js.native
 }
 

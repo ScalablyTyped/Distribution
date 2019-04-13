@@ -11,7 +11,7 @@ trait MUIDataTableColumnOptions extends js.Object {
       /* value */ js.Any, 
       /* tableMeta */ MUIDataTableMeta, 
       /* updateValue */ js.Function3[/* s */ js.Any, /* c */ js.Any, /* p */ js.Any, _], 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactNode
+      java.lang.String | reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var customHeadRender: js.UndefOr[
@@ -48,7 +48,7 @@ trait MUIDataTableColumnOptions extends js.Object {
 object MUIDataTableColumnOptions {
   @scala.inline
   def apply(
-    customBodyRender: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function3[/* s */ js.Any, /* c */ js.Any, /* p */ js.Any, _]) => java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    customBodyRender: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function3[/* s */ js.Any, /* c */ js.Any, /* p */ js.Any, _]) => java.lang.String | reactLib.reactMod.ReactNode = null,
     customHeadRender: (/* columnMeta */ MUIDataTableCustomHeadRenderer, /* updateDirection */ js.Function1[/* params */ js.Any, _]) => java.lang.String = null,
     display: muiDashDatatablesLib.muiDashDatatablesLibStrings.`true` | muiDashDatatablesLib.muiDashDatatablesLibStrings.`false` | muiDashDatatablesLib.muiDashDatatablesLibStrings.excluded = null,
     download: js.UndefOr[scala.Boolean] = js.undefined,

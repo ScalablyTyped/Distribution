@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/sdk/utils", "utils")
 @js.native
 object utilsNs extends js.Object {
-  trait IMap[T]
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[T]
-  
   def assertNotNull[T](value: T, propertyName: java.lang.String): scala.Unit = js.native
   def assertNotNull[T](value: T, propertyName: java.lang.String, listy: scala.Boolean): scala.Unit = js.native
   /**
@@ -31,5 +28,6 @@ object utilsNs extends js.Object {
   def randomUuid(): java.lang.String = js.native
   def removeFromArray[T](list: js.Array[T], item: T): scala.Unit = js.native
   def shallowEquals(first: js.Array[_], second: js.Array[_]): scala.Boolean = js.native
+  type IMap[T] = org.scalablytyped.runtime.StringDictionary[T]
 }
 

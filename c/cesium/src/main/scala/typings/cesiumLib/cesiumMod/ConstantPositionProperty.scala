@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "ConstantPositionProperty")
 @js.native
-class ConstantPositionProperty ()
-  extends cesiumLib.cesiumMod.CesiumNs.ConstantPositionProperty {
-  def this(value: cesiumLib.cesiumMod.CesiumNs.Cartesian3) = this()
-  def this(value: cesiumLib.cesiumMod.CesiumNs.Cartesian3, referenceFrame: cesiumLib.cesiumMod.CesiumNs.ReferenceFrame) = this()
+class ConstantPositionProperty () extends js.Object {
+  def this(value: Cartesian3) = this()
+  def this(value: Cartesian3, referenceFrame: ReferenceFrame) = this()
+  var definitionChanged: Event[js.Array[_]] = js.native
+  var isConstant: scala.Boolean = js.native
+  var referenceFrame: ReferenceFrame = js.native
+  def equals(): scala.Boolean = js.native
+  def equals(other: Property): scala.Boolean = js.native
+  def getValue(time: JulianDate): js.Any = js.native
+  def getValue(time: JulianDate, result: js.Any): js.Any = js.native
+  def getValueInReferenceFrame(time: JulianDate, referenceFrame: ReferenceFrame): Cartesian3 = js.native
+  def getValueInReferenceFrame(time: JulianDate, referenceFrame: ReferenceFrame, result: Cartesian3): Cartesian3 = js.native
+  def setValue(value: Cartesian3): scala.Unit = js.native
+  def setValue(value: Cartesian3, referenceFrame: ReferenceFrame): scala.Unit = js.native
 }
 

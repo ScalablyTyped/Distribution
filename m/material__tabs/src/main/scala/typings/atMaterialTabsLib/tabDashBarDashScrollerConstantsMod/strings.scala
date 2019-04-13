@@ -21,10 +21,11 @@ object strings {
     INDICATOR_BACK_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__indicator--back`,
     INDICATOR_FORWARD_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__indicator--forward`,
     TABS_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__scroll-frame__tabs`,
-    TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`
+    TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(FRAME_SELECTOR = FRAME_SELECTOR, INDICATOR_BACK_SELECTOR = INDICATOR_BACK_SELECTOR, INDICATOR_FORWARD_SELECTOR = INDICATOR_FORWARD_SELECTOR, TABS_SELECTOR = TABS_SELECTOR, TAB_SELECTOR = TAB_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

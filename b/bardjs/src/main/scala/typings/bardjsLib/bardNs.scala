@@ -21,14 +21,14 @@ object bardNs extends js.Object {
     *  Could restore $q with $qReal in which case don't need to flush.
     */
   @JSName("$httpBackend")
-  def $httpBackend($provide: angularLib.angularMod.angularNs.autoNs.IProvideService): js.Any = js.native
+  def $httpBackend($provide: angularLib.angularMod.autoNs.IProvideService): js.Any = js.native
   /**
     *  Replaces the ngMock'ed $q with the real one from ng thus
     *  obviating the need to flush $http and $q queues
     *  at the expense of ability to control $q timing.
     */
   @JSName("$q")
-  def $q($provide: angularLib.angularMod.angularNs.autoNs.IProvideService): js.Any = js.native
+  def $q($provide: angularLib.angularMod.autoNs.IProvideService): js.Any = js.native
   /**
     * Add names of globals to list of OK globals for this mocha spec
     * NB: Call this method ONLY if you're using mocha!
@@ -65,29 +65,29 @@ object bardNs extends js.Object {
   /**
     * Registers a fake logger service that you can spy on
     */
-  def fakeLogger($provide: angularLib.angularMod.angularNs.autoNs.IProvideService): scala.Unit = js.native
+  def fakeLogger($provide: angularLib.angularMod.autoNs.IProvideService): scala.Unit = js.native
   /**
     * Registers a fake route helper provider service that you can spy on
     */
-  def fakeRouteHelperProvider($provide: angularLib.angularMod.angularNs.autoNs.IProvideService): scala.Unit = js.native
+  def fakeRouteHelperProvider($provide: angularLib.angularMod.autoNs.IProvideService): scala.Unit = js.native
   /**
     * Stub out the $routeProvider so we avoid
     * all routing calls, including the default route
     * which runs on every test otherwise.
     * Make sure this goes before the inject in the spec.
     */
-  def fakeRouteProvider($provide: angularLib.angularMod.angularNs.autoNs.IProvideService): scala.Unit = js.native
+  def fakeRouteProvider($provide: angularLib.angularMod.autoNs.IProvideService): scala.Unit = js.native
   /**
     * Stub out the $stateProvider so we avoid
     * all routing calls, including the default state
     * which runs on every test otherwise.
     * Make sure this goes before the inject in the spec.
     */
-  def fakeStateProvider($provide: angularLib.angularMod.angularNs.autoNs.IProvideService): scala.Unit = js.native
+  def fakeStateProvider($provide: angularLib.angularMod.autoNs.IProvideService): scala.Unit = js.native
   /**
     * Registers a fake toastr service that you can spy on
     */
-  def fakeToastr($provide: angularLib.angularMod.angularNs.autoNs.IProvideService): scala.Unit = js.native
+  def fakeToastr($provide: angularLib.angularMod.autoNs.IProvideService): scala.Unit = js.native
   /**
     * Inject selected services into the windows object during test
     * then remove them when test ends with an `afterEach`.

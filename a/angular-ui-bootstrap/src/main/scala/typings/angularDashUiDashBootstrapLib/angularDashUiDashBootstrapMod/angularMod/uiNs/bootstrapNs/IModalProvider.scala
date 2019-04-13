@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IModalProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   /**
     * Default options all modals will use.
     */

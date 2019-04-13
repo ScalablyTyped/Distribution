@@ -9,7 +9,7 @@ trait FlexPropsType extends js.Object {
   var align: js.UndefOr[
     antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.start | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.center | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.end | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.baseline | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.stretch
   ] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var direction: js.UndefOr[
     antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.row | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.`row-reverse` | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.column | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.`column-reverse`
   ] = js.undefined
@@ -26,7 +26,7 @@ object FlexPropsType {
   @scala.inline
   def apply(
     align: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.start | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.center | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.end | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.baseline | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.stretch = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     direction: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.row | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.`row-reverse` | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.column | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.`column-reverse` = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     justify: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.start | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.end | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.center | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.between | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.around = null,

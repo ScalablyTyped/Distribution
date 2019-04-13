@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object reactDashRouterLibComponents {
   @scala.inline
-  def MemoryRouter: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.MemoryRouterProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.MemoryRouter].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.MemoryRouterProps]]
+  def MemoryRouter: reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.MemoryRouterProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.MemoryRouter].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.MemoryRouterProps]]
   @scala.inline
-  def Prompt: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.PromptProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Prompt].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.PromptProps]]
+  def Prompt: reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.PromptProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Prompt].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.PromptProps]]
   @scala.inline
-  def Redirect: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.RedirectProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Redirect].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.RedirectProps]]
+  def Redirect: reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.RedirectProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Redirect].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.RedirectProps]]
   @scala.inline
-  def Route[T /* <: reactDashRouterLib.reactDashRouterMod.RouteProps */]: reactLib.reactMod.ReactNs.ComponentType[T] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Route[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[T]]
+  def Route[T /* <: reactDashRouterLib.reactDashRouterMod.RouteProps */]: reactLib.reactMod.ComponentType[T] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Route[T]].asInstanceOf[reactLib.reactMod.ComponentType[T]]
   @scala.inline
-  def Router: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.RouterProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Router].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.RouterProps]]
+  def Router: reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.RouterProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Router].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.RouterProps]]
   @scala.inline
-  def StaticRouter: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.StaticRouterProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.StaticRouter].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.StaticRouterProps]]
+  def StaticRouter: reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.StaticRouterProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.StaticRouter].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.StaticRouterProps]]
   @scala.inline
-  def Switch: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.SwitchProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Switch].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterLib.reactDashRouterMod.SwitchProps]]
+  def Switch: reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.SwitchProps] = js.constructorOf[reactDashRouterLib.reactDashRouterMod.Switch].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRouterLib.reactDashRouterMod.SwitchProps]]
   @scala.inline
   def MemoryRouterProps: reactDashRouterLib.reactDashRouterMod.MemoryRouterProps.type = reactDashRouterLib.reactDashRouterMod.MemoryRouterProps
   type MemoryRouterProps = reactDashRouterLib.reactDashRouterMod.MemoryRouterProps

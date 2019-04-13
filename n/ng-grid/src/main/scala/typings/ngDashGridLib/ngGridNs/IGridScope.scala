@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IGridScope
-  extends angularLib.angularMod.angularNs.IRootScopeService {
+  extends angularLib.angularMod.IRootScopeService {
   var columns: js.Array[_] = js.native
   var configGroups: js.Array[_] = js.native
   var elementsNeedMeasuring: scala.Boolean = js.native

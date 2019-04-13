@@ -16,7 +16,7 @@ trait CrossRoadsStatic extends js.Object {
   /**
     * Signal dispatched every time that crossroads.parse can't find a Route that matches the request. Useful for debuging and error handling.
     */
-  var bypassed: signalsLib.signalsMod.signalsNs.Signal[_] = js.native
+  var bypassed: signalsLib.signalsMod.Signal[_] = js.native
   /**
     * Sets global route matching behavior to greedy so crossroads will try to match every single route with the supplied request (if true it won't stop at first match).
     */
@@ -36,7 +36,7 @@ trait CrossRoadsStatic extends js.Object {
   /**
     * Signal dispatched every time that crossroads.parse find a Route that matches the request. Useful for debuging and for executing tasks that should happen at each routing.
     */
-  var routed: signalsLib.signalsMod.signalsNs.Signal[_] = js.native
+  var routed: signalsLib.signalsMod.Signal[_] = js.native
   /**
     * Set if crossroads should typecast route paths. Default value is false (IMPORTANT: on v0.5.0 it was true by default).
     */

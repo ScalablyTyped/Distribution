@@ -7,23 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("koa-router", "ParamName")
 @js.native
-class ParamName ()
-  extends koaDashRouterLib.koaDashRouterMod.RouterNs.ParamName {
-  /* CompleteClass */
-  override var asterisk: scala.Boolean = js.native
-  /* CompleteClass */
-  override var delimiter: java.lang.String = js.native
-  /* CompleteClass */
-  override var name: java.lang.String = js.native
-  /* CompleteClass */
-  override var optional: scala.Boolean = js.native
-  /* CompleteClass */
-  override var partial: scala.Boolean = js.native
-  /* CompleteClass */
-  override var pattern: java.lang.String = js.native
-  /* CompleteClass */
-  override var prefix: java.lang.String = js.native
-  /* CompleteClass */
-  override var repeat: java.lang.String = js.native
+class ParamName () extends js.Object {
+  var asterisk: scala.Boolean = js.native
+  var delimiter: java.lang.String = js.native
+  var name: java.lang.String = js.native
+  var optional: scala.Boolean = js.native
+  var partial: scala.Boolean = js.native
+  var pattern: java.lang.String = js.native
+  var prefix: java.lang.String = js.native
+  var repeat: java.lang.String = js.native
 }
 

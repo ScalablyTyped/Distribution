@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "XmlAlgorithm")
 @js.native
-abstract class XmlAlgorithm ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.XmlAlgorithm {
+abstract class XmlAlgorithm () extends IAlgorithm {
   /* CompleteClass */
   override var algorithm: stdLib.Algorithm = js.native
   /* CompleteClass */

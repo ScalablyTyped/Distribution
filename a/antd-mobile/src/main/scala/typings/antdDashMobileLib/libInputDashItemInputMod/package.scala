@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object libInputDashItemInputMod {
   type HTMLInputProps = antdDashMobileLib.libUnderscoreUtilTypesMod.Omit[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement], 
+    reactLib.reactMod.HTMLProps[stdLib.HTMLInputElement], 
     antdDashMobileLib.antdDashMobileLibStrings.onFocus | antdDashMobileLib.antdDashMobileLibStrings.onBlur
   ]
 }

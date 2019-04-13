@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Table", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Table: reactLib.reactMod.ReactNs.FC[
-    TableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
+  val Table: reactLib.reactMod.FC[
+    TableProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TableHTMLAttributes[reactLib.HTMLTableElement], 
       reactLib.HTMLTableElement
     ])
   ] = js.native

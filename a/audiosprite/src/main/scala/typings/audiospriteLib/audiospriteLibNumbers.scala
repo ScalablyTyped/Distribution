@@ -8,53 +8,53 @@ import scala.scalajs.js.annotation._
 object audiospriteLibNumbers {
   @js.native
   sealed trait `-1`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `0`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `1`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
-       with audiospriteLib.audiospriteMod.audiospriteNs.Channels
+    extends audiospriteLib.audiospriteMod.VBR
+       with audiospriteLib.audiospriteMod.Channels
   
   @js.native
   sealed trait `10`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR_Vorbis
+    extends audiospriteLib.audiospriteMod.VBR_Vorbis
   
   @js.native
   sealed trait `2`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
-       with audiospriteLib.audiospriteMod.audiospriteNs.Channels
+    extends audiospriteLib.audiospriteMod.VBR
+       with audiospriteLib.audiospriteMod.Channels
   
   @js.native
   sealed trait `3`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `4`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `5`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `6`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `7`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `8`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @js.native
   sealed trait `9`
-    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+    extends audiospriteLib.audiospriteMod.VBR
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

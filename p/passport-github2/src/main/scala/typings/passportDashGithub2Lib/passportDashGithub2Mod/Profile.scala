@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Profile
-  extends passportLib.passportMod.passportNs.Profile {
+  extends passportLib.passportMod.Profile {
   var profileUrl: java.lang.String
 }
 

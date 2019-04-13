@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLInputElement>, 'onFocus' | 'onBlur'> ]: react.react.React.HTMLProps<std.HTMLInputElement>[P]} */ trait InputProps extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLInputElement>, 'onFocus' | 'onBlur'> ]: react.react.HTMLProps<std.HTMLInputElement>[P]} */ trait InputProps extends js.Object {
   var onBlur: js.UndefOr[antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler] = js.undefined
   var onFocus: js.UndefOr[antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler] = js.undefined
 }

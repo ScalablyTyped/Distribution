@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CostExplorer ()
   extends awsDashSdkLib.clientsAllMod.CostExplorer {
-  def this(options: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCostexplorerMod.ClientConfiguration) = this()
 }
 

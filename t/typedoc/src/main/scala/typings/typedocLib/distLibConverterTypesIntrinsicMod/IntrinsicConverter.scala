@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/converter/types/intrinsic", "IntrinsicConverter")
 @js.native
 class IntrinsicConverter ()
-  extends typedocLib.distLibConverterComponentsMod.TypeTypeConverter[typescriptLib.typescriptMod.tsNs.Type]
+  extends typedocLib.distLibConverterComponentsMod.TypeTypeConverter[typescriptLib.typescriptMod.Type]
 

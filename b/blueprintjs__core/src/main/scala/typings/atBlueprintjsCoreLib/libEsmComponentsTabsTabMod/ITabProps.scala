@@ -11,7 +11,7 @@ trait ITabProps
     * Content of tab title, rendered in a list above the active panel.
     * Can also be set via the `title` prop.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Whether the tab is disabled.
     * @default false
@@ -35,19 +35,19 @@ trait ITabProps
     * Content of tab title element, rendered in a list above the active panel.
     * Can also be set via React `children`.
     */
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object ITabProps {
   @scala.inline
   def apply(
     id: TabId,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     panel: reactLib.reactMod.Global.JSXNs.Element = null,
     panelClassName: java.lang.String = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): ITabProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

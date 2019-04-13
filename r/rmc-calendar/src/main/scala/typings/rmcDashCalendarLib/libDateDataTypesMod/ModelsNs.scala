@@ -20,7 +20,7 @@ object ModelsNs extends js.Object {
   trait ExtraData extends js.Object {
     /** (web only) 附加cell样式 className */
     var cellCls: js.UndefOr[js.Any] = js.undefined
-    var cellRender: js.UndefOr[js.Function1[/* date */ stdLib.Date, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+    var cellRender: js.UndefOr[js.Function1[/* date */ stdLib.Date, reactLib.reactMod.ReactNode]] = js.undefined
     /** 是否禁止选择 */
     var disable: js.UndefOr[scala.Boolean] = js.undefined
     /** 扩展信息 */
@@ -56,7 +56,7 @@ object ModelsNs extends js.Object {
   }
   
   trait MonthData extends js.Object {
-    var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+    var component: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
     var componentRef: js.UndefOr[rmcDashCalendarLib.libDateSingleMonthMod.default] = js.undefined
     var firstDate: stdLib.Date
     var height: js.UndefOr[scala.Double] = js.undefined

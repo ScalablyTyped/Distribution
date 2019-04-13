@@ -59,7 +59,7 @@ trait JWT extends js.Object {
     * @param res The response in which to store the JWT.
     * @return this
     */
-  def store(res: expressLib.expressMod.eNs.Response): JWT
+  def store(res: expressLib.expressMod.Response): JWT
   /**
     * This function is called when the jwt is passed through JSON.stringify.
     * We don't want the secret or options to be stringified.
@@ -87,7 +87,7 @@ object JWT {
     secret: java.lang.String,
     sign: js.Any => JWT,
     stale: scala.Boolean,
-    store: expressLib.expressMod.eNs.Response => JWT,
+    store: expressLib.expressMod.Response => JWT,
     toJSON: () => js.Any,
     token: java.lang.String,
     valid: scala.Boolean,

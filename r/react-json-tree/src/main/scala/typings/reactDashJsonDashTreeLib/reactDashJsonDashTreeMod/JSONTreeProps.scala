@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JSONTreeProps
-  extends reactLib.reactMod.ReactNs.Props[JSONTreeComponent] {
+  extends reactLib.reactMod.Props[JSONTreeComponent] {
   var collectionLimit: js.UndefOr[scala.Double] = js.undefined
   var data: js.Array[_] | js.Object
   var getItemString: js.UndefOr[
@@ -56,17 +56,17 @@ object JSONTreeProps {
   @scala.inline
   def apply(
     data: js.Array[_] | js.Object,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     collectionLimit: scala.Int | scala.Double = null,
     getItemString: (/* type */ java.lang.String, /* data */ js.Array[_] | js.Object, /* itemType */ java.lang.String, /* itemString */ java.lang.String) => reactLib.reactMod.Global.JSXNs.Element = null,
     hideRoot: js.UndefOr[scala.Boolean] = js.undefined,
     invertTheme: js.UndefOr[scala.Boolean] = js.undefined,
     isCustomNode: () => scala.Boolean = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     keyPath: js.Array[java.lang.String | scala.Double] = null,
     labelRenderer: (/* keyPath */ js.Array[java.lang.String], /* nodeType */ js.UndefOr[java.lang.String], /* expanded */ js.UndefOr[scala.Boolean], /* expandable */ js.UndefOr[scala.Boolean]) => reactLib.reactMod.Global.JSXNs.Element = null,
     postprocessValue: /* raw */ java.lang.String => reactLib.reactMod.Global.JSXNs.Element = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[JSONTreeComponent] = null,
+    ref: reactLib.reactMod.LegacyRef[JSONTreeComponent] = null,
     shouldExpandNode: (/* keyPath */ js.Array[java.lang.String | scala.Double], /* data */ js.Array[_] | js.Object, /* level */ scala.Double) => scala.Boolean = null,
     sortObjectKeys: js.Function | scala.Boolean = null,
     theme: js.Object | java.lang.String = null,

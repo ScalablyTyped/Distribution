@@ -19,3 +19,8 @@ class DefaultProperties ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.DefaultProperties")
+@js.native
+object DefaultProperties
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IDefaultProperties]
+

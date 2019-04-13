@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSortableDashListLibComponents {
   @scala.inline
-  def ReactDashNativeDashSortableDashList: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashSortableDashList: reactLib.reactMod.ComponentType[
     reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps
-  ] = js.constructorOf[reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps]]
   @scala.inline
   def SortableListProps: reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps.type = reactDashNativeDashSortableDashListLib.reactDashNativeDashSortableDashListMod.SortableListProps

@@ -16,6 +16,6 @@ object ^ extends js.Object {
     * @return String representation of `obj`
     */
   def apply(obj: js.Any): java.lang.String = js.native
-  def apply(obj: js.Any, opts: objectDashInspectLib.objectDashInspectMod.objectInspectNs.Options): java.lang.String = js.native
+  def apply(obj: js.Any, opts: Options): java.lang.String = js.native
 }
 

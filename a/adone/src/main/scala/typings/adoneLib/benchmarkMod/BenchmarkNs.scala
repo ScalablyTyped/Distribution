@@ -25,7 +25,7 @@ object BenchmarkNs extends js.Object {
   class Suite ()
     extends benchmarkLib.benchmarkMod.Suite {
     def this(name: java.lang.String) = this()
-    def this(name: java.lang.String, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
+    def this(name: java.lang.String, options: benchmarkLib.benchmarkMod.Options) = this()
   }
   
   /* static members */

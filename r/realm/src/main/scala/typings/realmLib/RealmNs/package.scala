@@ -12,11 +12,15 @@ package object RealmNs {
     */
   type MigrationCallback = js.Function2[/* oldRealm */ realmLib.Realm, /* newRealm */ realmLib.Realm, scala.Unit]
   type ObjectChangeCallback = js.Function2[/* object */ Object, /* changes */ ObjectChangeSet, scala.Unit]
+  // object props type
+  type ObjectPropsType = org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
     * realm configuration used for overriding default configuration values.
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
     */
   type PartialConfiguration = stdLib.Partial[Configuration]
+  // properties types
+  type PropertiesTypes = org.scalablytyped.runtime.StringDictionary[PropertyType | ObjectSchemaProperty]
   /**
     * PropertyType
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~PropertyType }

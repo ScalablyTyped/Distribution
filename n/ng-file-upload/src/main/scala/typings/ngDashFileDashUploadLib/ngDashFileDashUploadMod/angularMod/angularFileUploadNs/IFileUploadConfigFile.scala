@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFileUploadConfigFile
-  extends angularLib.angularMod.angularNs.IRequestConfig {
+  extends angularLib.angularMod.IRequestConfig {
   /**
     * This is to accommodate server implementations expecting array data object keys in '[i]' or '[]' or
     * ''(multiple entries with same key) format.
@@ -59,7 +59,7 @@ object IFileUploadConfigFile {
     cache: js.Any = null,
     disableProgress: js.UndefOr[scala.Boolean] = js.undefined,
     eventHandlers: org.scalablytyped.runtime.StringDictionary[stdLib.EventListenerOrEventListenerObject] = null,
-    headers: angularLib.angularMod.angularNs.IHttpRequestConfigHeaders = null,
+    headers: angularLib.angularMod.IHttpRequestConfigHeaders = null,
     jsonpCallbackParam: java.lang.String = null,
     objectKey: java.lang.String = null,
     paramSerializer: java.lang.String | (js.Function1[/* obj */ js.Any, java.lang.String]) = null,
@@ -69,9 +69,9 @@ object IFileUploadConfigFile {
     resumeSize: angularLib.angularMod.Global.Function = null,
     resumeSizeResponseReader: angularLib.angularMod.Global.Function = null,
     resumeSizeUrl: java.lang.String = null,
-    timeout: scala.Double | angularLib.angularMod.angularNs.IPromise[_] = null,
-    transformRequest: angularLib.angularMod.angularNs.IHttpRequestTransformer | js.Array[angularLib.angularMod.angularNs.IHttpRequestTransformer] = null,
-    transformResponse: angularLib.angularMod.angularNs.IHttpResponseTransformer | js.Array[angularLib.angularMod.angularNs.IHttpResponseTransformer] = null,
+    timeout: scala.Double | angularLib.angularMod.IPromise[_] = null,
+    transformRequest: angularLib.angularMod.IHttpRequestTransformer | js.Array[angularLib.angularMod.IHttpRequestTransformer] = null,
+    transformResponse: angularLib.angularMod.IHttpResponseTransformer | js.Array[angularLib.angularMod.IHttpResponseTransformer] = null,
     uploadEventHandlers: org.scalablytyped.runtime.StringDictionary[stdLib.EventListenerOrEventListenerObject] = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
     xsrfCookieName: java.lang.String = null,

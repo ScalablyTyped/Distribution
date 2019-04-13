@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack-serve", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(argv: js.Object, options: webpackDashServeLib.webpackDashServeMod.WebpackServeNs.Options): js.Promise[webpackDashServeLib.webpackDashServeMod.WebpackServeNs.Result] = js.native
+  def apply(argv: js.Object, options: Options): js.Promise[Result] = js.native
 }
 

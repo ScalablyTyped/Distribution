@@ -26,15 +26,15 @@ object adalDashAngularLibStrings {
   
   @js.native
   sealed trait LOGIN
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestType
+    extends adalDashAngularLib.adalDashAngularMod.RequestType
   
   @js.native
   sealed trait RENEW_TOKEN
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestType
+    extends adalDashAngularLib.adalDashAngularMod.RequestType
   
   @js.native
   sealed trait UNKNOWN
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestType
+    extends adalDashAngularLib.adalDashAngularMod.RequestType
   
   @js.native
   sealed trait `VERBOSE:` extends js.Object
@@ -98,7 +98,7 @@ object adalDashAngularLibStrings {
   
   @js.native
   sealed trait `id_token token`
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.ResponseType
+    extends adalDashAngularLib.adalDashAngularMod.ResponseType
   
   @js.native
   sealed trait localStorage extends js.Object
@@ -111,7 +111,7 @@ object adalDashAngularLibStrings {
   
   @js.native
   sealed trait token
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.ResponseType
+    extends adalDashAngularLib.adalDashAngularMod.ResponseType
   
   @js.native
   sealed trait `|` extends js.Object

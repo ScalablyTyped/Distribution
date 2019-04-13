@@ -104,7 +104,7 @@ trait ITreeService extends js.Object {
     * @param {string} args.section Section alias
     * @param {string} args.cacheKey Optional cachekey
     */
-  def getTree(args: ITreeArgs): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getTree(args: ITreeArgs): angularLib.angularMod.IPromise[_] = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getTreeAlias
@@ -153,7 +153,7 @@ trait ITreeService extends js.Object {
     * @param {object} args.node The tree node
     * @param {object} args.section The current section
     */
-  def loadNodeChildren(args: INodeArgs): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def loadNodeChildren(args: INodeArgs): angularLib.angularMod.IPromise[_] = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#reloadNode

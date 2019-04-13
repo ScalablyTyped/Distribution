@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object libTableColumnMod {
   type Column[T] = reactLib.reactMod.Component[
     antdLib.libTableInterfaceMod.ColumnProps[T], 
-    reactLib.reactMod.ReactNs.ComponentState, 
+    reactLib.reactMod.ComponentState, 
     js.Any
   ]
 }

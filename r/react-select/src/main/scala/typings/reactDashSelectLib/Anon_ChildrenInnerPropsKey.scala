@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenInnerPropsKey extends js.Object {
   /** The children to be rendered. */
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   /** props passed to the wrapping element for the group. */
   var innerProps: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
@@ -15,7 +15,7 @@ trait Anon_ChildrenInnerPropsKey extends js.Object {
 object Anon_ChildrenInnerPropsKey {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     innerProps: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Anon_ChildrenInnerPropsKey = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerProps = innerProps)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 // Just a reference to facilitate describing new actions
 trait IActionDescriptor extends js.Object {
-  var cache: js.UndefOr[scala.Boolean | angularLib.angularMod.angularNs.ICacheObject] = js.undefined
+  var cache: js.UndefOr[scala.Boolean | angularLib.angularMod.ICacheObject] = js.undefined
   var cancellable: js.UndefOr[scala.Boolean] = js.undefined
   var hasBody: js.UndefOr[scala.Boolean] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
@@ -23,10 +23,10 @@ trait IActionDescriptor extends js.Object {
     */
   var timeout: js.UndefOr[scala.Double] = js.undefined
   var transformRequest: js.UndefOr[
-    angularLib.angularMod.angularNs.IHttpRequestTransformer | js.Array[angularLib.angularMod.angularNs.IHttpRequestTransformer]
+    angularLib.angularMod.IHttpRequestTransformer | js.Array[angularLib.angularMod.IHttpRequestTransformer]
   ] = js.undefined
   var transformResponse: js.UndefOr[
-    angularLib.angularMod.angularNs.IHttpResponseTransformer | js.Array[angularLib.angularMod.angularNs.IHttpResponseTransformer]
+    angularLib.angularMod.IHttpResponseTransformer | js.Array[angularLib.angularMod.IHttpResponseTransformer]
   ] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,7 +36,7 @@ object IActionDescriptor {
   @scala.inline
   def apply(
     method: java.lang.String,
-    cache: scala.Boolean | angularLib.angularMod.angularNs.ICacheObject = null,
+    cache: scala.Boolean | angularLib.angularMod.ICacheObject = null,
     cancellable: js.UndefOr[scala.Boolean] = js.undefined,
     hasBody: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Any = null,
@@ -45,8 +45,8 @@ object IActionDescriptor {
     params: js.Any = null,
     responseType: java.lang.String = null,
     timeout: scala.Int | scala.Double = null,
-    transformRequest: angularLib.angularMod.angularNs.IHttpRequestTransformer | js.Array[angularLib.angularMod.angularNs.IHttpRequestTransformer] = null,
-    transformResponse: angularLib.angularMod.angularNs.IHttpResponseTransformer | js.Array[angularLib.angularMod.angularNs.IHttpResponseTransformer] = null,
+    transformRequest: angularLib.angularMod.IHttpRequestTransformer | js.Array[angularLib.angularMod.IHttpRequestTransformer] = null,
+    transformResponse: angularLib.angularMod.IHttpResponseTransformer | js.Array[angularLib.angularMod.IHttpResponseTransformer] = null,
     url: java.lang.String = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): IActionDescriptor = {

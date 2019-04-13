@@ -11,20 +11,14 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("svg-path-bounding-box", "BoundingBox")
 @js.native
-class BoundingBox protected ()
-  extends svgDashPathDashBoundingDashBoxLib.svgDashPathDashBoundingDashBoxMod.svgPathBoundingBoxNs.BoundingBox {
+class BoundingBox protected () extends js.Object {
   def this(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double) = this()
-  /* CompleteClass */
-  override var x1: scala.Double = js.native
-  /* CompleteClass */
-  override var x2: scala.Double = js.native
-  /* CompleteClass */
-  override var y1: scala.Double = js.native
-  /* CompleteClass */
-  override var y2: scala.Double = js.native
+  var x1: scala.Double = js.native
+  var x2: scala.Double = js.native
+  var y1: scala.Double = js.native
+  var y2: scala.Double = js.native
   /** @see http://blog.hackers-cafe.net/2009/06/how-to-calculate-bezier-curves-bounding.html */
-  /* CompleteClass */
-  override def addBezierCurve(
+  def addBezierCurve(
     p0x: scala.Double,
     p0y: scala.Double,
     p1x: scala.Double,
@@ -34,10 +28,8 @@ class BoundingBox protected ()
     p3x: scala.Double,
     p3y: scala.Double
   ): scala.Unit = js.native
-  /* CompleteClass */
-  override def addPoint(x: scala.Double, y: scala.Double): scala.Unit = js.native
-  /* CompleteClass */
-  override def addQuadraticCurve(
+  def addPoint(x: scala.Double, y: scala.Double): scala.Unit = js.native
+  def addQuadraticCurve(
     p0x: scala.Double,
     p0y: scala.Double,
     p1x: scala.Double,
@@ -45,13 +37,9 @@ class BoundingBox protected ()
     p2x: scala.Double,
     p2y: scala.Double
   ): scala.Unit = js.native
-  /* CompleteClass */
-  override def addX(x: scala.Double): scala.Unit = js.native
-  /* CompleteClass */
-  override def addY(y: scala.Double): scala.Unit = js.native
-  /* CompleteClass */
-  override def height(): scala.Double = js.native
-  /* CompleteClass */
-  override def width(): scala.Double = js.native
+  def addX(x: scala.Double): scala.Unit = js.native
+  def addY(y: scala.Double): scala.Unit = js.native
+  def height(): scala.Double = js.native
+  def width(): scala.Double = js.native
 }
 

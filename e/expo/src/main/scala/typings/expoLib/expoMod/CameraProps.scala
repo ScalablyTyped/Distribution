@@ -19,7 +19,7 @@ trait CameraProps
   var onMountError: js.UndefOr[js.Function1[/* error */ expoLib.Anon_Message, scala.Unit]] = js.undefined
   var pictureSize: js.UndefOr[java.lang.String] = js.undefined
   var ratio: js.UndefOr[java.lang.String] = js.undefined
-  var ref: js.UndefOr[reactLib.reactMod.ReactNs.Ref[CameraObject]] = js.undefined
+  var ref: js.UndefOr[reactLib.reactMod.Ref[CameraObject]] = js.undefined
   var `type`: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var useCamera2Api: js.UndefOr[scala.Boolean] = js.undefined
   var videoStabilizationMode: js.UndefOr[scala.Double] = js.undefined
@@ -80,7 +80,7 @@ object CameraProps {
     pictureSize: java.lang.String = null,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     ratio: java.lang.String = null,
-    ref: reactLib.reactMod.ReactNs.Ref[CameraObject] = null,
+    ref: reactLib.reactMod.Ref[CameraObject] = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     shouldRasterizeIOS: js.UndefOr[scala.Boolean] = js.undefined,

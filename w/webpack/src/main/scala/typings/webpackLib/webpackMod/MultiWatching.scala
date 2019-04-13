@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack", "MultiWatching")
 @js.native
-abstract class MultiWatching ()
-  extends webpackLib.webpackMod.webpackNs.MultiWatching {
+abstract class MultiWatching () extends Watching {
   /* CompleteClass */
   override def close(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /* CompleteClass */

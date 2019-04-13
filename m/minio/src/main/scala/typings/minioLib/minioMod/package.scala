@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object minioMod {
+  type ItemBucketMetadata = org.scalablytyped.runtime.StringDictionary[js.Any]
   type NoResultCallback = js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit]
   /* Rewritten from type alias, can be one of: 
     - minioLib.minioLibStrings.`us-east-1`

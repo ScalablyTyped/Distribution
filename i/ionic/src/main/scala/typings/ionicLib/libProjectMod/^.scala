@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def createProjectFromDetails(details: ProjectDetailsResult, deps: ProjectDeps): js.Promise[ionicLib.definitionsMod.IProject] = js.native
+  def createProjectFromDirectory(rootDirectory: java.lang.String, args: minimistLib.minimistMod.ParsedArgs, deps: ProjectDeps): js.Promise[js.UndefOr[ionicLib.definitionsMod.IProject]] = js.native
   def createProjectFromDirectory(
     rootDirectory: java.lang.String,
-    args: minimistLib.minimistMod.minimistNs.ParsedArgs,
-    deps: ProjectDeps
-  ): js.Promise[js.UndefOr[ionicLib.definitionsMod.IProject]] = js.native
-  def createProjectFromDirectory(
-    rootDirectory: java.lang.String,
-    args: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    args: minimistLib.minimistMod.ParsedArgs,
     deps: ProjectDeps,
     hasLogErrors: CreateProjectFromDirectoryOptions
   ): js.Promise[js.UndefOr[ionicLib.definitionsMod.IProject]] = js.native

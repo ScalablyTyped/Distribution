@@ -17,7 +17,7 @@ trait StrictProgressProps extends js.Object {
   /** Whether success state should automatically trigger when progress completes. */
   var autoSuccess: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** A progress bar can have different colors. */
@@ -65,7 +65,7 @@ object StrictProgressProps {
     as: js.Any = null,
     attached: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom = null,
     autoSuccess: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,

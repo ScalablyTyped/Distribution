@@ -36,9 +36,12 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("avoscloud-sdk", "File")
 @js.native
-class File protected ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.File {
+class File protected () extends js.Object {
   def this(name: java.lang.String, data: js.Any) = this()
   def this(name: java.lang.String, data: js.Any, `type`: java.lang.String) = this()
+  def name(): java.lang.String = js.native
+  def save[T](): Promise[T] = js.native
+  def save[T](options: SuccessFailureOptions): Promise[T] = js.native
+  def url(): java.lang.String = js.native
 }
 

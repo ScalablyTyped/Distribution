@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Either", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Either */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Either = js.native
   val either: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libExtendMod.Extend2[URI] with fpDashTsLib.libChainRecMod.ChainRec2[URI] = js.native
   def fromNullable[L](defaultValue: L): js.Function1[/* a */ js.UndefOr[js.Any | scala.Null], Either[L, _]] = js.native
   def fromOption[L](defaultValue: L): js.Function1[/* fa */ fpDashTsLib.libOptionMod.Option[_], Either[L, _]] = js.native

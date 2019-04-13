@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object dropdownNs {
   type IDropdownService = js.Function2[
-    /* element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+    /* element */ angularLib.angularMod.IAugmentedJQuery, 
     /* config */ IDropdownOptions, 
     IDropdown
   ]

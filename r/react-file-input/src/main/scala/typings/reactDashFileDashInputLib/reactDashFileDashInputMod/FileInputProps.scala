@@ -11,7 +11,7 @@ trait FileInputProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var name: java.lang.String
   var placeholder: java.lang.String
-  def onChange(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit
+  def onChange(event: reactLib.reactMod.SyntheticEvent[_, reactLib.Event]): scala.Unit
 }
 
 object FileInputProps {
@@ -20,7 +20,7 @@ object FileInputProps {
     accept: java.lang.String,
     className: java.lang.String,
     name: java.lang.String,
-    onChange: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event] => scala.Unit,
+    onChange: reactLib.reactMod.SyntheticEvent[_, reactLib.Event] => scala.Unit,
     placeholder: java.lang.String,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): FileInputProps = {

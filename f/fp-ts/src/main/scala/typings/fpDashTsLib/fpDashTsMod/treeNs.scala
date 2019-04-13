@@ -14,7 +14,7 @@ object treeNs extends js.Object {
     def this(value: A, forest: fpDashTsLib.libTreeMod.Forest[A]) = this()
   }
   
-  val URI: /* Tree */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Tree = js.native
   val tree: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTreeMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libTreeMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libTreeMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libTreeMod.URI] = js.native
   def drawForest(forest: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libTreeMod.Tree[java.lang.String]]): java.lang.String = js.native
   def drawTree(tree: fpDashTsLib.libTreeMod.Tree[java.lang.String]): java.lang.String = js.native

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("lime-js", "Authentication")
 @js.native
-class Authentication ()
-  extends limeDashJsLib.limeDashJsMod.LimeNs.Authentication {
-  /* CompleteClass */
-  override var scheme: java.lang.String = js.native
+class Authentication () extends js.Object {
+  var scheme: java.lang.String = js.native
 }
 
 /* static members */

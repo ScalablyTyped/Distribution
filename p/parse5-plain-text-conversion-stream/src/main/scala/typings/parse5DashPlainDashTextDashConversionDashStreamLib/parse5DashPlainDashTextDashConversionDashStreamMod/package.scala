@@ -28,5 +28,5 @@ package object parse5DashPlainDashTextDashConversionDashStreamMod {
     * file.pipe(converter);
     * ```
     */
-  type PlainTextConversionStream[TDocument] = parse5DashParserDashStreamLib.parse5DashParserDashStreamMod.namespaced[TDocument]
+  type PlainTextConversionStream[TDocument] = parse5DashParserDashStreamLib.parse5DashParserDashStreamMod.^[TDocument]
 }

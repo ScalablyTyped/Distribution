@@ -31,3 +31,8 @@ class AttachVaultOptions ()
   override def DisableAll(): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.AttachVaultOptions")
+@js.native
+object AttachVaultOptions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAttachVaultOptions]
+

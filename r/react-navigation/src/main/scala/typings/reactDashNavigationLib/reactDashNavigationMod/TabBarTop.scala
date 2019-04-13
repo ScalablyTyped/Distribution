@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-navigation", "TabBarTop")
 @js.native
 class TabBarTop protected ()
-  extends reactLib.reactMod.ReactNs.Component[TabBarTopProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[TabBarTopProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: TabBarTopProps) = this()
   def this(props: TabBarTopProps, context: js.Any) = this()
 }

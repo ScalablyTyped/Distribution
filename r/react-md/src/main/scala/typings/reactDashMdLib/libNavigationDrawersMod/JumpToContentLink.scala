@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/NavigationDrawers", "JumpToContentLink")
 @js.native
 class JumpToContentLink protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.JumpToContentLinkProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.JumpToContentLinkProps) = this()

@@ -102,9 +102,9 @@ object VictoryScatterProps {
     animate: AnimatePropTypeInterface = null,
     bubbleProperty: java.lang.String = null,
     categories: CategoryPropType = null,
-    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement[_] = null,
     data: js.Array[_] = null,
-    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    dataComponent: reactLib.reactMod.ReactElement[_] = null,
     domain: DomainPropType = null,
     eventKey: StringOrNumberOrCallback = null,
     events: js.Array[
@@ -113,9 +113,9 @@ object VictoryScatterProps {
         StringOrNumberOrCallback
       ]
     ] = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
-    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
     maxBubbleSize: scala.Int | scala.Double = null,
     name: java.lang.String = null,

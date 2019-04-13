@@ -9,1021 +9,673 @@ import scala.scalajs.js.annotation._
 trait SecurityHub
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_SecurityHub: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ClientConfiguration = js.native
+  var config_SecurityHub: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Accepts the invitation to be monitored by a master SecurityHub account.
     */
-  def acceptInvitation(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acceptInvitation(): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptInvitation(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationResponse, 
+      /* data */ AcceptInvitationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Accepts the invitation to be monitored by a master SecurityHub account.
     */
-  def acceptInvitation(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acceptInvitation(params: AcceptInvitationRequest): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptInvitation(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationRequest,
+    params: AcceptInvitationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationResponse, 
+      /* data */ AcceptInvitationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disables the standards specified by the standards subscription ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices. 
     */
-  def batchDisableStandards(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchDisableStandards(): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchDisableStandards(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsResponse, 
+      /* data */ BatchDisableStandardsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disables the standards specified by the standards subscription ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices. 
     */
-  def batchDisableStandards(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchDisableStandards(params: BatchDisableStandardsRequest): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchDisableStandards(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsRequest,
+    params: BatchDisableStandardsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsResponse, 
+      /* data */ BatchDisableStandardsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchDisableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchDisableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enables the standards specified by the standards ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices. 
     */
-  def batchEnableStandards(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchEnableStandards(): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchEnableStandards(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsResponse, 
+      /* data */ BatchEnableStandardsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enables the standards specified by the standards ARNs. In the context of Security Hub, supported standards (for example, CIS AWS Foundations) are automated and continuous checks that help determine your compliance status against security industry (including AWS) best practices. 
     */
-  def batchEnableStandards(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchEnableStandards(params: BatchEnableStandardsRequest): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchEnableStandards(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsRequest,
+    params: BatchEnableStandardsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsResponse, 
+      /* data */ BatchEnableStandardsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchEnableStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchEnableStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Imports security findings that are generated by the integrated third-party products into Security Hub.
     */
-  def batchImportFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchImportFindings(): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchImportFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsResponse, 
+      /* data */ BatchImportFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Imports security findings that are generated by the integrated third-party products into Security Hub.
     */
-  def batchImportFindings(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchImportFindings(params: BatchImportFindingsRequest): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchImportFindings(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsRequest,
+    params: BatchImportFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsResponse, 
+      /* data */ BatchImportFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.BatchImportFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchImportFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an insight, which is a consolidation of findings that identifies a security area that requires attention or intervention.
     */
-  def createInsight(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createInsight(): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInsight(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightResponse, 
+      /* data */ CreateInsightResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an insight, which is a consolidation of findings that identifies a security area that requires attention or intervention.
     */
-  def createInsight(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createInsight(params: CreateInsightRequest): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createInsight(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightRequest,
+    params: CreateInsightRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightResponse, 
+      /* data */ CreateInsightResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates member Security Hub accounts in the current AWS account (which becomes the master Security Hub account) that has Security Hub enabled.
     */
-  def createMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createMembers(): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersResponse, 
+      /* data */ CreateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates member Security Hub accounts in the current AWS account (which becomes the master Security Hub account) that has Security Hub enabled.
     */
-  def createMembers(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createMembers(params: CreateMembersRequest): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMembers(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersRequest,
+    params: CreateMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersResponse, 
+      /* data */ CreateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Declines invitations that are sent to this AWS account (invitee) by the AWS accounts (inviters) that are specified by the account IDs. 
     */
-  def declineInvitations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def declineInvitations(): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def declineInvitations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsResponse, 
+      /* data */ DeclineInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Declines invitations that are sent to this AWS account (invitee) by the AWS accounts (inviters) that are specified by the account IDs. 
     */
-  def declineInvitations(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def declineInvitations(params: DeclineInvitationsRequest): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def declineInvitations(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsRequest,
+    params: DeclineInvitationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsResponse, 
+      /* data */ DeclineInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an insight that is specified by the insight ARN.
     */
-  def deleteInsight(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInsight(): awsDashSdkLib.libRequestMod.Request[DeleteInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInsight(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightResponse, 
+      /* data */ DeleteInsightResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an insight that is specified by the insight ARN.
     */
-  def deleteInsight(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInsight(params: DeleteInsightRequest): awsDashSdkLib.libRequestMod.Request[DeleteInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInsight(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightRequest,
+    params: DeleteInsightRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightResponse, 
+      /* data */ DeleteInsightResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes invitations that are sent to this AWS account (invitee) by the AWS accounts (inviters) that are specified by their account IDs. 
     */
-  def deleteInvitations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInvitations(): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInvitations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsResponse, 
+      /* data */ DeleteInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes invitations that are sent to this AWS account (invitee) by the AWS accounts (inviters) that are specified by their account IDs. 
     */
-  def deleteInvitations(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInvitations(params: DeleteInvitationsRequest): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInvitations(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsRequest,
+    params: DeleteInvitationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsResponse, 
+      /* data */ DeleteInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the Security Hub member accounts that are specified by the account IDs.
     */
-  def deleteMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteMembers(): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersResponse, 
+      /* data */ DeleteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the Security Hub member accounts that are specified by the account IDs.
     */
-  def deleteMembers(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteMembers(params: DeleteMembersRequest): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMembers(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersRequest,
+    params: DeleteMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersResponse, 
+      /* data */ DeleteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels the subscription that allows a findings-generating solution (product) to import its findings into Security Hub.
     */
-  def disableImportFindingsForProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disableImportFindingsForProduct(): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableImportFindingsForProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductResponse, 
+      /* data */ DisableImportFindingsForProductResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels the subscription that allows a findings-generating solution (product) to import its findings into Security Hub.
     */
-  def disableImportFindingsForProduct(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disableImportFindingsForProduct(params: DisableImportFindingsForProductRequest): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableImportFindingsForProduct(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductRequest,
+    params: DisableImportFindingsForProductRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductResponse, 
+      /* data */ DisableImportFindingsForProductResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disables the AWS Security Hub Service.
     */
-  def disableSecurityHub(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disableSecurityHub(): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableSecurityHub(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubResponse, 
+      /* data */ DisableSecurityHubResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disables the AWS Security Hub Service.
     */
-  def disableSecurityHub(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disableSecurityHub(params: DisableSecurityHubRequest): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableSecurityHub(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubRequest,
+    params: DisableSecurityHubRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubResponse, 
+      /* data */ DisableSecurityHubResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the current Security Hub member account from its master account.
     */
-  def disassociateFromMasterAccount(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateFromMasterAccount(): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateFromMasterAccount(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountResponse, 
+      /* data */ DisassociateFromMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the current Security Hub member account from its master account.
     */
-  def disassociateFromMasterAccount(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateFromMasterAccount(params: DisassociateFromMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateFromMasterAccount(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountRequest,
+    params: DisassociateFromMasterAccountRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountResponse, 
+      /* data */ DisassociateFromMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the Security Hub member accounts that are specified by the account IDs from their master account. 
     */
-  def disassociateMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateMembers(): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersResponse, 
+      /* data */ DisassociateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the Security Hub member accounts that are specified by the account IDs from their master account. 
     */
-  def disassociateMembers(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateMembers(params: DisassociateMembersRequest): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateMembers(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersRequest,
+    params: DisassociateMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersResponse, 
+      /* data */ DisassociateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets up the subscription that enables a findings-generating solution (product) to import its findings into Security Hub.
     */
-  def enableImportFindingsForProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def enableImportFindingsForProduct(): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableImportFindingsForProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductResponse, 
+      /* data */ EnableImportFindingsForProductResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets up the subscription that enables a findings-generating solution (product) to import its findings into Security Hub.
     */
-  def enableImportFindingsForProduct(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def enableImportFindingsForProduct(params: EnableImportFindingsForProductRequest): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableImportFindingsForProduct(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductRequest,
+    params: EnableImportFindingsForProductRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductResponse, 
+      /* data */ EnableImportFindingsForProductResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableImportFindingsForProductResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[EnableImportFindingsForProductResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enables the AWS Security Hub service.
     */
-  def enableSecurityHub(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def enableSecurityHub(): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableSecurityHub(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubResponse, 
+      /* data */ EnableSecurityHubResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enables the AWS Security Hub service.
     */
-  def enableSecurityHub(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def enableSecurityHub(params: EnableSecurityHubRequest): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableSecurityHub(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubRequest,
+    params: EnableSecurityHubRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubResponse, 
+      /* data */ EnableSecurityHubResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.EnableSecurityHubResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[EnableSecurityHubResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists and describes enabled standards.
     */
-  def getEnabledStandards(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getEnabledStandards(): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEnabledStandards(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsResponse, 
+      /* data */ GetEnabledStandardsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists and describes enabled standards.
     */
-  def getEnabledStandards(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getEnabledStandards(params: GetEnabledStandardsRequest): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEnabledStandards(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsRequest,
+    params: GetEnabledStandardsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsResponse, 
+      /* data */ GetEnabledStandardsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetEnabledStandardsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEnabledStandardsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists and describes Security Hub-aggregated findings that are specified by filter attributes.
     */
-  def getFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFindings(): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsResponse, 
+      /* data */ GetFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists and describes Security Hub-aggregated findings that are specified by filter attributes.
     */
-  def getFindings(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFindings(params: GetFindingsRequest): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindings(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsRequest,
+    params: GetFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsResponse, 
+      /* data */ GetFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the results of the Security Hub insight specified by the insight ARN.
     */
-  def getInsightResults(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInsightResults(): awsDashSdkLib.libRequestMod.Request[GetInsightResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInsightResults(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsResponse, 
+      /* data */ GetInsightResultsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInsightResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the results of the Security Hub insight specified by the insight ARN.
     */
-  def getInsightResults(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInsightResults(params: GetInsightResultsRequest): awsDashSdkLib.libRequestMod.Request[GetInsightResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInsightResults(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsRequest,
+    params: GetInsightResultsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsResponse, 
+      /* data */ GetInsightResultsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightResultsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInsightResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists and describes insights that are specified by insight ARNs.
     */
-  def getInsights(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInsights(): awsDashSdkLib.libRequestMod.Request[GetInsightsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInsights(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsResponse, 
+      /* data */ GetInsightsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInsightsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists and describes insights that are specified by insight ARNs.
     */
-  def getInsights(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInsights(params: GetInsightsRequest): awsDashSdkLib.libRequestMod.Request[GetInsightsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInsights(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsRequest,
+    params: GetInsightsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsResponse, 
+      /* data */ GetInsightsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInsightsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInsightsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the count of all Security Hub membership invitations that were sent to the current member account, not including the currently accepted invitation. 
     */
-  def getInvitationsCount(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInvitationsCount(): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInvitationsCount(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountResponse, 
+      /* data */ GetInvitationsCountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the count of all Security Hub membership invitations that were sent to the current member account, not including the currently accepted invitation. 
     */
-  def getInvitationsCount(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInvitationsCount(params: GetInvitationsCountRequest): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInvitationsCount(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountRequest,
+    params: GetInvitationsCountRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountResponse, 
+      /* data */ GetInvitationsCountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides the details for the Security Hub master account to the current member account. 
     */
-  def getMasterAccount(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMasterAccount(): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMasterAccount(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountResponse, 
+      /* data */ GetMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides the details for the Security Hub master account to the current member account. 
     */
-  def getMasterAccount(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMasterAccount(params: GetMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMasterAccount(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountRequest,
+    params: GetMasterAccountRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountResponse, 
+      /* data */ GetMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the details on the Security Hub member accounts that are specified by the account IDs. 
     */
-  def getMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMembers(): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersResponse, 
+      /* data */ GetMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the details on the Security Hub member accounts that are specified by the account IDs. 
     */
-  def getMembers(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMembers(params: GetMembersRequest): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMembers(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersRequest,
+    params: GetMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersResponse, 
+      /* data */ GetMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Invites other AWS accounts to enable Security Hub and become Security Hub member accounts. When an account accepts the invitation and becomes a member account, the master account can view Security Hub findings of the member account. 
     */
-  def inviteMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def inviteMembers(): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def inviteMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersResponse, 
+      /* data */ InviteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Invites other AWS accounts to enable Security Hub and become Security Hub member accounts. When an account accepts the invitation and becomes a member account, the master account can view Security Hub findings of the member account. 
     */
-  def inviteMembers(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def inviteMembers(params: InviteMembersRequest): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def inviteMembers(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersRequest,
+    params: InviteMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersResponse, 
+      /* data */ InviteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all findings-generating solutions (products) whose findings you've subscribed to receive in Security Hub.
     */
-  def listEnabledProductsForImport(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listEnabledProductsForImport(): awsDashSdkLib.libRequestMod.Request[ListEnabledProductsForImportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listEnabledProductsForImport(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportResponse, 
+      /* data */ ListEnabledProductsForImportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListEnabledProductsForImportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all findings-generating solutions (products) whose findings you've subscribed to receive in Security Hub.
     */
-  def listEnabledProductsForImport(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listEnabledProductsForImport(params: ListEnabledProductsForImportRequest): awsDashSdkLib.libRequestMod.Request[ListEnabledProductsForImportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listEnabledProductsForImport(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportRequest,
+    params: ListEnabledProductsForImportRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportResponse, 
+      /* data */ ListEnabledProductsForImportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListEnabledProductsForImportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListEnabledProductsForImportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all Security Hub membership invitations that were sent to the current AWS account. 
     */
-  def listInvitations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInvitations(): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInvitations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsResponse, 
+      /* data */ ListInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all Security Hub membership invitations that were sent to the current AWS account. 
     */
-  def listInvitations(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInvitations(params: ListInvitationsRequest): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInvitations(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsRequest,
+    params: ListInvitationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsResponse, 
+      /* data */ ListInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists details about all member accounts for the current Security Hub master account.
     */
-  def listMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listMembers(): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersResponse, 
+      /* data */ ListMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists details about all member accounts for the current Security Hub master account.
     */
-  def listMembers(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listMembers(params: ListMembersRequest): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listMembers(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersRequest,
+    params: ListMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersResponse, 
+      /* data */ ListMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the AWS Security Hub-aggregated findings specified by the filter attributes.
     */
-  def updateFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFindings(): awsDashSdkLib.libRequestMod.Request[UpdateFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsResponse, 
+      /* data */ UpdateFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the AWS Security Hub-aggregated findings specified by the filter attributes.
     */
-  def updateFindings(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFindings(params: UpdateFindingsRequest): awsDashSdkLib.libRequestMod.Request[UpdateFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFindings(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsRequest,
+    params: UpdateFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsResponse, 
+      /* data */ UpdateFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the AWS Security Hub insight specified by the insight ARN.
     */
-  def updateInsight(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateInsight(): awsDashSdkLib.libRequestMod.Request[UpdateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateInsight(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightResponse, 
+      /* data */ UpdateInsightResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the AWS Security Hub insight specified by the insight ARN.
     */
-  def updateInsight(params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateInsight(params: UpdateInsightRequest): awsDashSdkLib.libRequestMod.Request[UpdateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateInsight(
-    params: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightRequest,
+    params: UpdateInsightRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightResponse, 
+      /* data */ UpdateInsightResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.UpdateInsightResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateInsightResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

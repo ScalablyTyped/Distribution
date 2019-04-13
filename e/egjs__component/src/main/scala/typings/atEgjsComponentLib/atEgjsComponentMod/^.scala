@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@egjs/component", JSImport.Namespace)
 @js.native
+class ^ () extends Component {
+  def this(options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+}
+
+@JSImport("@egjs/component", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
   def hasOn(eventName: java.lang.String): scala.Boolean = js.native
   def off(): Component = js.native

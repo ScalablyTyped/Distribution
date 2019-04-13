@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class Expressions ()
   extends mfilesLib.IExpressions
 
+@JSGlobal("MFiles.Expressions")
+@js.native
+object Expressions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IExpressions]
+

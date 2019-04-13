@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/CardMedia/CardMedia", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[CardMediaProps] = js.native
+  val default: reactLib.reactMod.ComponentType[CardMediaProps] = js.native
 }
 

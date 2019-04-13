@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var anonymityLevels: js.UndefOr[js.Array[AnonymityLevel]] = js.undefined
   var countries: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var countriesBlackList: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var defaultRequestOptions: js.UndefOr[requestLib.requestMod.requestNs.CoreOptions] = js.undefined
+  var defaultRequestOptions: js.UndefOr[requestLib.requestMod.CoreOptions] = js.undefined
   var filterMode: js.UndefOr[
     proxyDashListsLib.proxyDashListsLibStrings.strict | proxyDashListsLib.proxyDashListsLibStrings.loose
   ] = js.undefined
@@ -26,7 +26,7 @@ object Options {
     anonymityLevels: js.Array[AnonymityLevel] = null,
     countries: js.Array[java.lang.String] = null,
     countriesBlackList: js.Array[java.lang.String] = null,
-    defaultRequestOptions: requestLib.requestMod.requestNs.CoreOptions = null,
+    defaultRequestOptions: requestLib.requestMod.CoreOptions = null,
     filterMode: proxyDashListsLib.proxyDashListsLibStrings.strict | proxyDashListsLib.proxyDashListsLibStrings.loose = null,
     ipTypes: js.Array[IPType] = null,
     protocols: js.Array[Protocol] = null,

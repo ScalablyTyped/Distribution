@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation._
 trait ToggleProps extends CommonEnhancedSwitchProps[Toggle] {
   // <EnhancedSwitch/> is element that get the 'other' properties
   var defaultToggled: js.UndefOr[scala.Boolean] = js.undefined
-  var elementStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var elementStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var inputStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var labelPosition: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right
   ] = js.undefined
-  var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var labelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var onToggle: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* isInputChecked */ scala.Boolean, 
       scala.Unit
     ]
   ] = js.undefined
-  var rippleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var thumbStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var thumbSwitchedStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var rippleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var thumbStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var thumbSwitchedStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var toggled: js.UndefOr[scala.Boolean] = js.undefined
-  var trackStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var trackSwitchedStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var trackStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var trackSwitchedStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var valueLink: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[scala.Boolean]] = js.undefined
 }
 
@@ -37,20 +37,20 @@ object ToggleProps {
     CommonEnhancedSwitchProps: CommonEnhancedSwitchProps[Toggle] = null,
     defaultToggled: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    elementStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    elementStyle: reactLib.reactMod.CSSProperties = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
+    inputStyle: reactLib.reactMod.CSSProperties = null,
+    label: reactLib.reactMod.ReactNode = null,
     labelPosition: materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right = null,
-    labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onToggle: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* isInputChecked */ scala.Boolean) => scala.Unit = null,
-    rippleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    thumbStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    thumbSwitchedStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    labelStyle: reactLib.reactMod.CSSProperties = null,
+    onToggle: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* isInputChecked */ scala.Boolean) => scala.Unit = null,
+    rippleStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    thumbStyle: reactLib.reactMod.CSSProperties = null,
+    thumbSwitchedStyle: reactLib.reactMod.CSSProperties = null,
     toggled: js.UndefOr[scala.Boolean] = js.undefined,
-    trackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    trackSwitchedStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    trackStyle: reactLib.reactMod.CSSProperties = null,
+    trackSwitchedStyle: reactLib.reactMod.CSSProperties = null,
     valueLink: materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[scala.Boolean] = null
   ): ToggleProps = {
     val __obj = js.Dynamic.literal()

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseFieldArrayProps[P] extends js.Object {
-  var component: reactLib.reactMod.ReactNs.ComponentType[P]
+  var component: reactLib.reactMod.ComponentType[P]
   var forwardRef: js.UndefOr[scala.Boolean] = js.undefined
   var name: java.lang.String
   var props: js.UndefOr[P] = js.undefined
@@ -22,7 +22,7 @@ trait BaseFieldArrayProps[P] extends js.Object {
 object BaseFieldArrayProps {
   @scala.inline
   def apply[P](
-    component: reactLib.reactMod.ReactNs.ComponentType[P],
+    component: reactLib.reactMod.ComponentType[P],
     name: java.lang.String,
     forwardRef: js.UndefOr[scala.Boolean] = js.undefined,
     props: P = null,

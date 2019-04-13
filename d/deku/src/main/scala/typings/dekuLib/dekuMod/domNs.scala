@@ -14,7 +14,7 @@ object domNs extends js.Object {
   		 * so they are treated like any other native element.
   		 */
   def create[C](
-    vnode: dekuLib.dekuMod.dekuNs.VirtualElement,
+    vnode: dekuLib.dekuMod.VirtualElement,
     path: java.lang.String,
     dispatch: dekuLib.Dispatch,
     context: C

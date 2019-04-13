@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_Ctx
   extends org.scalablytyped.runtime.Instantiable1[
       /* ctx */ koaDashSessionLib.koaDashSessionMod.koaMod.Context, 
-      koaDashSessionLib.koaDashSessionMod.sessionNs.stores
+      koaDashSessionLib.koaDashSessionMod.stores
     ]
 

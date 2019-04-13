@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeight extends js.Object {
   var `@media (min-width: 42rem)`: Anon_FontSizeLineHeight
   var `@media (min-width: 66rem)`: Anon_FontSizeLetterSpacing
-  var `@media (min-width: 82rem)`: Anon_FontSizeLetterSpacing
+  var `@media (min-width: 82rem)`: Anon_FontSizeLineHeight
   var `@media (min-width: 99rem)`: Anon_FontSizeLetterSpacing
   var fontFamily: java.lang.String
   var fontSize: java.lang.String
@@ -22,7 +22,7 @@ object Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeight {
   def apply(
     `@media (min-width: 42rem)`: Anon_FontSizeLineHeight,
     `@media (min-width: 66rem)`: Anon_FontSizeLetterSpacing,
-    `@media (min-width: 82rem)`: Anon_FontSizeLetterSpacing,
+    `@media (min-width: 82rem)`: Anon_FontSizeLineHeight,
     `@media (min-width: 99rem)`: Anon_FontSizeLetterSpacing,
     fontFamily: java.lang.String,
     fontSize: java.lang.String,

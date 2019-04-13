@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class SearchConditions ()
   extends mfilesLib.ISearchConditions
 
+@JSGlobal("MFiles.SearchConditions")
+@js.native
+object SearchConditions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISearchConditions]
+

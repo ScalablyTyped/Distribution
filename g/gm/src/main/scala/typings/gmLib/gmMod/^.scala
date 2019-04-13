@@ -8,30 +8,26 @@ import scala.scalajs.js.annotation._
 @JSImport("gm", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(stream: nodeLib.NodeJSNs.ReadableStream | nodeLib.Buffer | java.lang.String): gmLib.gmMod.mNs.State = js.native
+  def apply(stream: nodeLib.NodeJSNs.ReadableStream | nodeLib.Buffer | java.lang.String): State = js.native
   def apply(
     stream: nodeLib.NodeJSNs.ReadableStream | nodeLib.Buffer | java.lang.String,
     image: java.lang.String
-  ): gmLib.gmMod.mNs.State = js.native
-  def apply(width: scala.Double, height: scala.Double): gmLib.gmMod.mNs.State = js.native
-  def apply(width: scala.Double, height: scala.Double, color: java.lang.String): gmLib.gmMod.mNs.State = js.native
+  ): State = js.native
+  def apply(width: scala.Double, height: scala.Double): State = js.native
+  def apply(width: scala.Double, height: scala.Double, color: java.lang.String): State = js.native
+  def compare(filename1: java.lang.String, filename2: java.lang.String, callback: CompareCallback): scala.Unit = js.native
   def compare(
     filename1: java.lang.String,
     filename2: java.lang.String,
-    callback: gmLib.gmMod.mNs.CompareCallback
-  ): scala.Unit = js.native
-  def compare(
-    filename1: java.lang.String,
-    filename2: java.lang.String,
-    options: gmLib.gmMod.mNs.CompareOptions,
-    callback: gmLib.gmMod.mNs.CompareCallback
+    options: CompareOptions,
+    callback: CompareCallback
   ): scala.Unit = js.native
   def compare(
     filename1: java.lang.String,
     filename2: java.lang.String,
     options: scala.Double,
-    callback: gmLib.gmMod.mNs.CompareCallback
+    callback: CompareCallback
   ): scala.Unit = js.native
-  def subClass(options: gmLib.gmMod.mNs.ClassOptions): gmLib.gmMod.mNs.SubClass = js.native
+  def subClass(options: ClassOptions): SubClass = js.native
 }
 

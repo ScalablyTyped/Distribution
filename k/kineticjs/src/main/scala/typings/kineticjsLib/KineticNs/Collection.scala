@@ -15,3 +15,8 @@ class Collection () extends ICollection {
   override def each(func: js.Function0[_]): js.Any = js.native
 }
 
+@JSGlobal("Kinetic.Collection")
+@js.native
+object Collection
+  extends org.scalablytyped.runtime.Instantiable0[ICollection]
+

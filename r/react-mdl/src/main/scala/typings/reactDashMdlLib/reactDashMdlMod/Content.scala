@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Content")
 @js.native
-class Content ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Content
+class Content () extends __MDLComponent[ContentProps]
 

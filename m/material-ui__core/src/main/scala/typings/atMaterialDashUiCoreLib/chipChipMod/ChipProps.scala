@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait ChipProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait ChipProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ChipClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var avatar: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var clickable: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ChipProps]] = js.undefined
-  var deleteIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var onDelete: js.UndefOr[reactLib.reactMod.ReactNs.EventHandler[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[ChipProps]] = js.undefined
+  var deleteIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var onDelete: js.UndefOr[reactLib.reactMod.EventHandler[_]] = js.undefined
   var variant: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined
   ] = js.undefined
@@ -25,18 +25,18 @@ import scala.scalajs.js.annotation._
 object ChipProps {
   @scala.inline
   def apply(
-    avatar: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    avatar: reactLib.reactMod.ReactElement[_] = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ChipClassKey]] = null,
     clickable: js.UndefOr[scala.Boolean] = js.undefined,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
-    component: reactLib.reactMod.ReactNs.ReactType[ChipProps] = null,
-    deleteIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    icon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onDelete: reactLib.reactMod.ReactNs.EventHandler[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    component: reactLib.reactMod.ReactType[ChipProps] = null,
+    deleteIcon: reactLib.reactMod.ReactElement[_] = null,
+    icon: reactLib.reactMod.ReactElement[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    label: reactLib.reactMod.ReactNode = null,
+    onDelete: reactLib.reactMod.EventHandler[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined = null
   ): ChipProps = {
     val __obj = js.Dynamic.literal()

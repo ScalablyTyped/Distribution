@@ -18,7 +18,7 @@ object EmbedProps {
     aspectRatio: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`4:3` | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`16:9` | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`21:9` = null,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
     brandedUI: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
@@ -27,7 +27,7 @@ object EmbedProps {
     icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     id: java.lang.String = null,
     iframe: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlIframeProps] = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ EmbedProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ EmbedProps) => scala.Unit = null,
     placeholder: java.lang.String = null,
     source: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.youtube | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vimeo = null,
     url: java.lang.String = null

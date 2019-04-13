@@ -9,26 +9,26 @@ trait IGetTooltipPropsArg
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var onMouseEnter: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object IGetTooltipPropsArg {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    onMouseEnter: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): IGetTooltipPropsArg = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

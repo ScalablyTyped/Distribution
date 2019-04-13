@@ -41,3 +41,8 @@ class ServerVaultManagementOperations ()
   override def TakeVaultOffline(VaultGUID: java.lang.String, DisconnectUsers: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ServerVaultManagementOperations")
+@js.native
+object ServerVaultManagementOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IServerVaultManagementOperations]
+

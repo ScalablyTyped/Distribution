@@ -7,4 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object buildSrcCommonMod {
   type GaxiosPromise[T] = js.Promise[GaxiosResponse[T]]
+  type Headers = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

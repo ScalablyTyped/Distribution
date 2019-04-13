@@ -22,7 +22,7 @@ trait ResponseToolkit extends js.Object {
   def view(
     templatePath: java.lang.String,
     context: js.Any,
-    options: visionLib.visionMod.visionNs.ViewHandlerOrReplyOptions
+    options: visionLib.visionMod.ViewHandlerOrReplyOptions
   ): hapiLib.hapiMod.ResponseObject = js.native
 }
 

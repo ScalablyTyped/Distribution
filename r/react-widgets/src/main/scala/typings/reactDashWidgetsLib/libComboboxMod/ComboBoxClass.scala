@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ComboBoxClass
-  extends reactLib.reactMod.ReactNs.ComponentClass[ComboBoxProps, reactLib.reactMod.ReactNs.ComponentState]
+  extends reactLib.reactMod.ComponentClass[ComboBoxProps, reactLib.reactMod.ComponentState]
 

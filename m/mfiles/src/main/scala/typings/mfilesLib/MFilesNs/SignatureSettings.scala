@@ -35,3 +35,8 @@ class SignatureSettings ()
   override def Clone(): mfilesLib.ISignatureSettings = js.native
 }
 
+@JSGlobal("MFiles.SignatureSettings")
+@js.native
+object SignatureSettings
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISignatureSettings]
+

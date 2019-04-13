@@ -14,7 +14,7 @@ trait Anon_Agent extends js.Object {
   val METHODS: js.Array[java.lang.String] = js.native
   // https://github.com/nodejs/node/blob/master/lib/_http_outgoing.js
   var OutgoingMessage: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.httpNs.OutgoingMessage] = js.native
-  val STATUS_CODES: /* import warning: ImportType.apply Failed type conversion: {[errorCode: number] : string | undefined, [errorCode: string] : string | undefined} */ js.Any = js.native
+  val STATUS_CODES: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] with org.scalablytyped.runtime.NumberDictionary[js.UndefOr[java.lang.String]] = js.native
   var Server: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.httpNs.Server] = js.native
   // https://github.com/nodejs/node/blob/master/lib/_http_server.js#L108-L256
   var ServerResponse: org.scalablytyped.runtime.Instantiable1[

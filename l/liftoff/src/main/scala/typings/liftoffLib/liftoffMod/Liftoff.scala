@@ -51,12 +51,8 @@ trait Liftoff
     * and invokes your callback, passing the calculated environment as the first argument.
     */
   def launch(
-    opts: liftoffLib.liftoffMod.LiftoffNs.LaunchOptions,
-    callback: js.ThisFunction1[
-      /* this */ this.type, 
-      /* env */ liftoffLib.liftoffMod.LiftoffNs.LiftoffEnv, 
-      scala.Unit
-    ]
+    opts: LaunchOptions,
+    callback: js.ThisFunction1[/* this */ this.type, /* env */ LiftoffEnv, scala.Unit]
   ): scala.Unit = js.native
   @JSName("listenerCount")
   def listenerCount_require(`type`: liftoffLib.liftoffLibStrings.require): scala.Double = js.native

@@ -10,32 +10,26 @@ import scala.scalajs.js.annotation._
 /*
   A filter that matches on all documents
   */
-class MatchAllFilter ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchAllFilter {
+class MatchAllFilter () extends Filter {
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchAllFilter = js.native
+  def cache(trueFalse: scala.Boolean): MatchAllFilter = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchAllFilter = js.native
+  def cacheKey(key: java.lang.String): MatchAllFilter = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchAllFilter = js.native
+  def name(name: java.lang.String): MatchAllFilter = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchAllFilter = js.native
+  def toJSON(): MatchAllFilter = js.native
 }
 

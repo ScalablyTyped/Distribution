@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TextareaState[TItem] extends js.Object {
   var actualToken: java.lang.String
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.SFC[ItemComponentProps[TItem]]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.SFC[ItemComponentProps[TItem]]] = js.undefined
   var currentTrigger: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Array[TItem]] = js.undefined
   var dataLoading: scala.Boolean
@@ -26,7 +26,7 @@ object TextareaState {
     selectionEnd: scala.Double,
     selectionStart: scala.Double,
     value: java.lang.String,
-    component: reactLib.reactMod.ReactNs.SFC[ItemComponentProps[TItem]] = null,
+    component: reactLib.reactMod.SFC[ItemComponentProps[TItem]] = null,
     currentTrigger: java.lang.String = null,
     data: js.Array[TItem] = null,
     left: scala.Int | scala.Double = null,

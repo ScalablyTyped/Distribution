@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/FormControlLabel", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[
+  val default: reactLib.reactMod.ComponentType[
     atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelProps
   ] = js.native
 }

@@ -13,7 +13,7 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
     stores: js.Array[
       (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
-        fluxibleLib.addonsBaseStoreMod.namespaced[js.Object]
+        fluxibleLib.addonsBaseStoreMod.^[js.Object]
       ]) | java.lang.String
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _]
@@ -23,7 +23,7 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
     stores: js.Array[
       (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
-        fluxibleLib.addonsBaseStoreMod.namespaced[js.Object]
+        fluxibleLib.addonsBaseStoreMod.^[js.Object]
       ]) | java.lang.String
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _],

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgTableFilterConfigProvider protected ()
   extends ngDashTableLib.srcBrowserMod.NgTableFilterConfigProvider {
-  def this($injector: angularLib.angularMod.angularNs.autoNs.IInjectorService) = this()
+  def this($injector: angularLib.angularMod.autoNs.IInjectorService) = this()
 }
 
 /* static members */

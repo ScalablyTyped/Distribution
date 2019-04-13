@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Children extends js.Object {
   @JSName("children")
-  var children_Original: reactLib.reactMod.ReactNs.Validator[
+  var children_Original: reactLib.reactMod.Validator[
     js.Function1[
       /* props */ reactDashVirtualizedLib.distEsColumnSizerMod.SizedColumnProps, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.native
   @JSName("columnCount")
-  var columnCount_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var columnCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("columnMaxWidth")
-  var columnMaxWidth_Original: reactLib.reactMod.ReactNs.Requireable[scala.Double] = js.native
+  var columnMaxWidth_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
   @JSName("columnMinWidth")
-  var columnMinWidth_Original: reactLib.reactMod.ReactNs.Requireable[scala.Double] = js.native
+  var columnMinWidth_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
   @JSName("width")
-  var width_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var width_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   def children(
     props: js.Object,
     propName: java.lang.String,

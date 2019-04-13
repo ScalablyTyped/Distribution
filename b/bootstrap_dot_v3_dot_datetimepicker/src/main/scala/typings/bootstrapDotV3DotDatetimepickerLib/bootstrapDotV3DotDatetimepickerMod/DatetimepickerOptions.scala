@@ -41,9 +41,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * Sets the picker default date/time. Overrides useCurrent
   	 * @default: false
   	 */
-  var defaultDate: js.UndefOr[
-    scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String
-  ] = js.undefined
+  var defaultDate: js.UndefOr[scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String] = js.undefined
   /**
   	 * Disables selection of dates in the array, e.g. holidays
   	 * @default: false
@@ -52,7 +50,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
   	 */
   var disabledDates: js.UndefOr[
-    scala.Boolean | (js.Array[momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String]) | js.Any
+    scala.Boolean | (js.Array[momentLib.momentMod.Moment | stdLib.Date | java.lang.String]) | js.Any
   ] = js.undefined
   /**
   	 * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days
@@ -67,7 +65,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * eg: [[moment({ h: 0 }), moment({ h: 8 })], [moment({ h: 18 }), moment({ h: 24 })]]
   	 * @default: false
   	 */
-  var disabledTimeIntervals: js.UndefOr[scala.Boolean | js.Array[js.Array[momentLib.momentMod.momentNs.Moment]]] = js.undefined
+  var disabledTimeIntervals: js.UndefOr[scala.Boolean | js.Array[js.Array[momentLib.momentMod.Moment]]] = js.undefined
   /**
   	 * Disables selection of dates NOT in the array, e.g. holidays
   	 * @default: false
@@ -76,7 +74,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
   	 */
   var enabledDates: js.UndefOr[
-    scala.Boolean | (js.Array[momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String]) | js.Any
+    scala.Boolean | (js.Array[momentLib.momentMod.Moment | stdLib.Date | java.lang.String]) | js.Any
   ] = js.undefined
   /**
   	 * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days
@@ -91,7 +89,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * @default: false
   	 */
   var extraFormats: js.UndefOr[
-    scala.Boolean | (js.Array[java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat])
+    scala.Boolean | (js.Array[java.lang.String | momentLib.momentMod.MomentBuiltinFormat])
   ] = js.undefined
   /**
   	 * If false, the textbox will not be given focus when the picker is shown
@@ -102,9 +100,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * See momentjs' docs for valid formats. Format also dictates what components are shown, e.g. MM/dd/YYYY will not display the time picker.
   	 * @default: false
   	 */
-  var format: js.UndefOr[
-    scala.Boolean | java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat
-  ] = js.undefined
+  var format: js.UndefOr[scala.Boolean | java.lang.String | momentLib.momentMod.MomentBuiltinFormat] = js.undefined
   /** Change the default icons for the pickers functions. */
   var icons: js.UndefOr[Icons] = js.undefined
   /**
@@ -153,17 +149,13 @@ trait DatetimepickerOptions extends js.Object {
   	 * maxDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
   	 * @default: false
   	 */
-  var maxDate: js.UndefOr[
-    scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String
-  ] = js.undefined
+  var maxDate: js.UndefOr[scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String] = js.undefined
   /**
   	 * Prevents date/time selections before this date.
   	 * minDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
   	 * @default: false
   	 */
-  var minDate: js.UndefOr[
-    scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String
-  ] = js.undefined
+  var minDate: js.UndefOr[scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String] = js.undefined
   /**
   	 * Allows custom input formatting For example: the user can enter "yesterday"" or "30 days ago".
   	 * {@link http://eonasdan.github.io/bootstrap-datetimepicker/Functions/#parseinputdate}
@@ -225,9 +217,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * This will change the viewDate without changing or setting the selected date.
   	 * @default: false
   	 */
-  var viewDate: js.UndefOr[
-    scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String
-  ] = js.undefined
+  var viewDate: js.UndefOr[scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String] = js.undefined
   /**
   	 * The default view to display when the picker is shown.
   	 * Note: To limit the picker to selecting, for instance the year and month, use format: MM/YYYY
@@ -255,15 +245,15 @@ object DatetimepickerOptions {
     dayViewHeaderFormat: java.lang.String = null,
     daysOfWeekDisabled: js.Array[scala.Double] | scala.Boolean = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    defaultDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
-    disabledDates: scala.Boolean | (js.Array[momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String]) | js.Any = null,
+    defaultDate: scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String = null,
+    disabledDates: scala.Boolean | (js.Array[momentLib.momentMod.Moment | stdLib.Date | java.lang.String]) | js.Any = null,
     disabledHours: scala.Boolean | js.Array[scala.Double] | js.Any = null,
-    disabledTimeIntervals: scala.Boolean | js.Array[js.Array[momentLib.momentMod.momentNs.Moment]] = null,
-    enabledDates: scala.Boolean | (js.Array[momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String]) | js.Any = null,
+    disabledTimeIntervals: scala.Boolean | js.Array[js.Array[momentLib.momentMod.Moment]] = null,
+    enabledDates: scala.Boolean | (js.Array[momentLib.momentMod.Moment | stdLib.Date | java.lang.String]) | js.Any = null,
     enabledHours: scala.Boolean | js.Array[scala.Double] = null,
-    extraFormats: scala.Boolean | (js.Array[java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat]) = null,
+    extraFormats: scala.Boolean | (js.Array[java.lang.String | momentLib.momentMod.MomentBuiltinFormat]) = null,
     focusOnShow: js.UndefOr[scala.Boolean] = js.undefined,
-    format: scala.Boolean | java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat = null,
+    format: scala.Boolean | java.lang.String | momentLib.momentMod.MomentBuiltinFormat = null,
     icons: Icons = null,
     ignoreReadonly: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
@@ -276,8 +266,8 @@ object DatetimepickerOptions {
       ]
     ] = null,
     locale: java.lang.String = null,
-    maxDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
-    minDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
+    maxDate: scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String = null,
+    minDate: scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String = null,
     parseInputDate: InputParser = null,
     showClear: js.UndefOr[scala.Boolean] = js.undefined,
     showClose: js.UndefOr[scala.Boolean] = js.undefined,
@@ -289,7 +279,7 @@ object DatetimepickerOptions {
     tooltips: Tooltips = null,
     useCurrent: js.UndefOr[scala.Boolean] = js.undefined,
     useStrict: js.UndefOr[scala.Boolean] = js.undefined,
-    viewDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
+    viewDate: scala.Boolean | momentLib.momentMod.Moment | stdLib.Date | java.lang.String = null,
     viewMode: bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.decades | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.years | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.months | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.days = null,
     widgetParent: java.lang.String | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery = null,
     widgetPositioning: WidgetPositioningOptions = null

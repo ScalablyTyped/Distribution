@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_CallbackChildChangeType extends js.Object {
   /** @enum */
-  val ChildChangeType: Anon_CHANGED = js.native
+  val ChildChangeType: Anon_CHANGEDCREATED = js.native
   /**
     * **openFile**
     *  - Prompts the user to open an existing file and returns a FileEntry on success.

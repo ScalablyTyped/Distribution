@@ -15,7 +15,7 @@ class PluginCollection[P /* <: Plugin[_] */] protected () extends js.Object {
         P
       ]
     ]) = this()
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[
     stdLib.Iterator[
       js.Tuple2[

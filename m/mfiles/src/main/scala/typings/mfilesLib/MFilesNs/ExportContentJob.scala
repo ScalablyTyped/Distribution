@@ -39,3 +39,8 @@ class ExportContentJob ()
   override def SetExportAllStructureItems(IncludeValueListItems: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ExportContentJob")
+@js.native
+object ExportContentJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IExportContentJob]
+

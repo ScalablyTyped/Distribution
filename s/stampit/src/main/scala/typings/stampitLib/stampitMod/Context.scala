@@ -22,7 +22,7 @@ trait Context extends js.Object {
     * The stamp the object has been instantiated with.
     */
   @JSName("stamp")
-  var stamp_Original: stampitLib.stampitMod.stampitNs.Stamp = js.native
+  var stamp_Original: Stamp = js.native
   /**
     * Invokes the stamp and returns a new object instance.
     * @param state Properties you wish to set on the new objects.

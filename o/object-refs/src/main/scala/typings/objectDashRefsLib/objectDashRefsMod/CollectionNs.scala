@@ -18,7 +18,7 @@ object CollectionNs extends js.Object {
   def extend(
     collection: js.Array[_],
     refs: objectDashRefsLib.objectDashRefsMod.Refs,
-    property: objectDashRefsLib.objectDashRefsMod.RefsNs.AttributeDescriptor,
+    property: objectDashRefsLib.objectDashRefsMod.AttributeDescriptor,
     target: js.Any
   ): js.Any = js.native
   def isExtended(collection: js.Array[_]): scala.Boolean = js.native

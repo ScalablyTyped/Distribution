@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SpeechGrammarList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[SpeechGrammar] {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[SpeechGrammar]] = js.native
   val length: scala.Double = js.native
   def addFromString(string: java.lang.String): scala.Unit = js.native

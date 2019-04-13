@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val DEFAULT_HEIGHT: scala.Double = js.native
   val DEFAULT_WIDTH: scala.Double = js.native
-  val DIRS: rotDashJsLib.Anon_4 = js.native
   val VK_0: scala.Double = js.native
   val VK_1: scala.Double = js.native
   val VK_2: scala.Double = js.native

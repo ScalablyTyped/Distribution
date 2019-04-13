@@ -7,13 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("hubot", "Message")
 @js.native
-class Message ()
-  extends hubotLib.hubotMod.HubotNs.Message {
-  /* CompleteClass */
-  override var id: java.lang.String = js.native
-  /* CompleteClass */
-  override var text: java.lang.String = js.native
-  /* CompleteClass */
-  override var user: hubotLib.hubotMod.HubotNs.User = js.native
+class Message () extends js.Object {
+  var id: java.lang.String = js.native
+  var text: java.lang.String = js.native
+  var user: User = js.native
 }
 

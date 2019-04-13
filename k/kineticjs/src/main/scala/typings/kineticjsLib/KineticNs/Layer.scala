@@ -11,3 +11,9 @@ class Layer () extends ILayer {
   def this(config: LayerConfig) = this()
 }
 
+@JSGlobal("Kinetic.Layer")
+@js.native
+object Layer
+  extends org.scalablytyped.runtime.Instantiable0[ILayer]
+     with org.scalablytyped.runtime.Instantiable1[/* config */ LayerConfig, ILayer]
+

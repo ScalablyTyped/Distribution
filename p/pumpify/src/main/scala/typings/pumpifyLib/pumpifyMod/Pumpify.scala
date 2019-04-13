@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Pumpify
-  extends duplexifyLib.duplexifyMod.duplexifyNs.Duplexify {
+  extends duplexifyLib.duplexifyMod.Duplexify {
   def setPipeline(streams: nodeLib.streamMod.Stream*): scala.Unit = js.native
   def setPipeline(streams: js.Array[nodeLib.streamMod.Stream]): scala.Unit = js.native
 }

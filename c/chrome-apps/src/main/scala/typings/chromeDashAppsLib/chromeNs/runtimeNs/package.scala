@@ -21,6 +21,15 @@ package object runtimeNs {
       scala.Unit
     ]
   ]
+  type ManifestIcons = /**
+    * @example
+    * {
+    *   '16': 'icon16.png',
+    *   '48': 'icon48.png',
+    *   '128': 'icon128.png'
+    * }
+    */
+  org.scalablytyped.runtime.NumberDictionary[java.lang.String]
   /**
     * Optional permissions
     * @see NotAllowedAsOptionalPermissions for permissions that you're not allowed to set on demand.

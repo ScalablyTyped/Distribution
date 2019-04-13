@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ionicMod extends js.Object {
   val ASSETS_DIRECTORY: java.lang.String = js.native
   val INTEGRATION_NAMES: js.Array[ionicLib.definitionsMod.IntegrationName] = js.native
-  val PROJECT_FILE: /* ionic.config.json */ java.lang.String = js.native
+  val PROJECT_FILE: ionicLib.ionicLibStrings.ionicDOTconfigDOTjson = js.native
   val PROJECT_TYPES: js.Array[ionicLib.definitionsMod.ProjectType] = js.native
   def generateContext(): js.Promise[ionicLib.definitionsMod.IonicContext] = js.native
   def isAPIResponseError(res: js.Any): /* is ionic.ionic/definitions.APIResponseError */ scala.Boolean = js.native

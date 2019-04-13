@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("styled-components/macro", "ThemeProvider")
 @js.native
 class ThemeProvider protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       styledDashComponentsLib.styledDashComponentsMod.ThemeProviderProps[
         styledDashComponentsLib.AnyIfEmpty[
           styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
@@ -17,7 +17,7 @@ class ThemeProvider protected ()
           styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
         ]
       ], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: styledDashComponentsLib.styledDashComponentsMod.ThemeProviderProps[

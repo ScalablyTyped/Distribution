@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IDividerProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] {
   /**
     * HTML tag to use for element.
     * @default "div"
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 object IDividerProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null
   ): IDividerProps = {

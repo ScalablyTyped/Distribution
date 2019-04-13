@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object parse5Mod {
+  type AttributesLocation = org.scalablytyped.runtime.StringDictionary[Location]
   type CommentNode = DefaultTreeCommentNode | js.Object
   type Document = DefaultTreeDocument | js.Object
   type DocumentFragment = DefaultTreeDocumentFragment | js.Object

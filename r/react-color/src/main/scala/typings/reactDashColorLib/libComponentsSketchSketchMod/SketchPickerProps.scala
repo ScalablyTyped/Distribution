@@ -24,12 +24,12 @@ object SketchPickerProps {
   def apply(
     color: reactDashColorLib.reactDashColorMod.Color = null,
     disableAlpha: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
     presetColors: js.Array[java.lang.String] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[SketchPicker] = null,
+    ref: reactLib.reactMod.LegacyRef[SketchPicker] = null,
     width: java.lang.String = null
   ): SketchPickerProps = {
     val __obj = js.Dynamic.literal()

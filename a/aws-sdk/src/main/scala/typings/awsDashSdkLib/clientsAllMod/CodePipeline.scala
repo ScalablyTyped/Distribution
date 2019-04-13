@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CodePipeline ()
-  extends awsDashSdkLib.clientsCodepipelineMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCodepipelineMod.^ {
+  def this(options: awsDashSdkLib.clientsCodepipelineMod.ClientConfiguration) = this()
 }
 

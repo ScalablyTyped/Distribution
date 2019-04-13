@@ -5,18 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+trait JPFMoveDiagonallyIfAtMostOneObstacle extends JumpPointFinderBase
+
 @JSImport("pathfinding", "JPFMoveDiagonallyIfAtMostOneObstacle")
 @js.native
-class JPFMoveDiagonallyIfAtMostOneObstacleCls ()
-  extends pathfindingLib.pathfindingMod.PathfindingNs.JPFMoveDiagonallyIfAtMostOneObstacle {
-  def this(opt: pathfindingLib.pathfindingMod.PathfindingNs.JumpPointFinderBaseOptions) = this()
+class JPFMoveDiagonallyIfAtMostOneObstacleCls () extends JPFMoveDiagonallyIfAtMostOneObstacle {
+  def this(opt: JumpPointFinderBaseOptions) = this()
   /* CompleteClass */
-  override def findPath(
-    startX: scala.Double,
-    startY: scala.Double,
-    endX: scala.Double,
-    endY: scala.Double,
-    matrix: pathfindingLib.pathfindingMod.PathfindingNs.Grid
-  ): js.Array[js.Array[scala.Double]] = js.native
+  override def findPath(startX: scala.Double, startY: scala.Double, endX: scala.Double, endY: scala.Double, matrix: Grid): js.Array[js.Array[scala.Double]] = js.native
 }
 

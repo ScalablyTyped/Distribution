@@ -20,6 +20,6 @@ trait ConfirmChannel extends Channel {
     options: amqplibLib.propertiesMod.OptionsNs.Publish,
     callback: js.Function2[/* err */ js.Any, /* ok */ amqplibLib.propertiesMod.RepliesNs.Empty, scala.Unit]
   ): scala.Boolean = js.native
-  def waitForConfirms(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def waitForConfirms(): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
 }
 

@@ -10,9 +10,9 @@ trait Anon_ArialabelClassNameCssModule extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var listClassName: js.UndefOr[java.lang.String] = js.undefined
-  var listTag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var listTag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ArialabelClassNameCssModule {
@@ -22,9 +22,9 @@ object Anon_ArialabelClassNameCssModule {
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     listClassName: java.lang.String = null,
-    listTag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    listTag: reactLib.reactMod.ReactType[_] = null,
     size: java.lang.String = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ArialabelClassNameCssModule = {
     val __obj = js.Dynamic.literal()
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)

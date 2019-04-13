@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkProps
-  extends reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] {
+  extends reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] {
   var replace: js.UndefOr[scala.Boolean] = js.undefined
   var to: historyLib.historyMod.LocationDescriptor[historyLib.historyMod.LocationState]
 }
@@ -15,7 +15,7 @@ object LinkProps {
   @scala.inline
   def apply(
     to: historyLib.historyMod.LocationDescriptor[historyLib.historyMod.LocationState],
-    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
+    AnchorHTMLAttributes: reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
     replace: js.UndefOr[scala.Boolean] = js.undefined
   ): LinkProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])

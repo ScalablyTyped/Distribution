@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sshpk", "InvalidAlgorithmError")
 @js.native
 class InvalidAlgorithmError protected ()
-  extends sshpkLib.sshpkMod.SshPKNs.InvalidAlgorithmError {
+  extends stdLib.Error {
   def this(algo: java.lang.String) = this()
   /* CompleteClass */
   override var message: java.lang.String = js.native

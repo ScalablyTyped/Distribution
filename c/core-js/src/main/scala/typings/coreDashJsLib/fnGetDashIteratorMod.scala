@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/fn/get-iterator", JSImport.Namespace)
 @js.native
-object fnGetDashIteratorMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Iterable]
+object fnGetDashIteratorMod extends js.Object {
+  def apply[T](iterable: stdLib.Iterable[T]): stdLib.Iterator[T] = js.native
+}
 

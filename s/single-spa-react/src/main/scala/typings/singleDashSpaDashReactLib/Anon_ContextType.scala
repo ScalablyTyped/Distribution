@@ -32,6 +32,6 @@ trait Anon_ContextType
     *
     * @see https://reactjs.org/docs/context.html#classcontexttype
     */
-  var contextType: js.UndefOr[reactLib.reactMod.ReactNs.Context[_]] = js.native
+  var contextType: js.UndefOr[reactLib.reactMod.Context[_]] = js.native
 }
 

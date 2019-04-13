@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "TileDiscardPolicy")
 @js.native
-class TileDiscardPolicy ()
-  extends cesiumLib.cesiumMod.CesiumNs.TileDiscardPolicy
+class TileDiscardPolicy () extends js.Object {
+  def isReady(): scala.Boolean = js.native
+  def shouldDiscardImage(image: js.Promise[stdLib.HTMLImageElement]): js.Promise[scala.Boolean] = js.native
+  def shouldDiscardImage(image: stdLib.HTMLImageElement): js.Promise[scala.Boolean] = js.native
+}
 

@@ -13,7 +13,7 @@ trait Anon_AddonType extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var group: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_AddonType {
@@ -24,7 +24,7 @@ object Anon_AddonType {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     group: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_AddonType = {
     val __obj = js.Dynamic.literal()
     if (addonType != null) __obj.updateDynamic("addonType")(addonType.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait Anon_Css extends js.Object {
   var css: js.UndefOr[
     js.Function2[
       /* css */ java.lang.String, 
-      /* req */ expressLib.expressMod.eNs.Request, 
+      /* req */ expressLib.expressMod.Request, 
       java.lang.String
     ]
   ] = js.undefined
@@ -21,7 +21,7 @@ trait Anon_Css extends js.Object {
 object Anon_Css {
   @scala.inline
   def apply(
-    css: (/* css */ java.lang.String, /* req */ expressLib.expressMod.eNs.Request) => java.lang.String = null
+    css: (/* css */ java.lang.String, /* req */ expressLib.expressMod.Request) => java.lang.String = null
   ): Anon_Css = {
     val __obj = js.Dynamic.literal()
     if (css != null) __obj.updateDynamic("css")(js.Any.fromFunction2(css))

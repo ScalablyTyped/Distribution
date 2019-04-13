@@ -12,11 +12,11 @@ object ^ extends js.Object {
     url: java.lang.String,
     arg: js.Array[java.lang.String],
     opt: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ): youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Youtubedl = js.native
+  ): Youtubedl = js.native
   def exec(
     url: java.lang.String,
     args: js.Array[java.lang.String],
-    options: youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Options,
+    options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   def getExtractors(callback: js.Function2[/* err */ js.Any, /* output */ js.Array[java.lang.String], scala.Unit]): scala.Unit = js.native
@@ -26,43 +26,28 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def getExtractors(
     descriptions: scala.Boolean,
-    options: youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Options,
+    options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   def getInfo(
     url: java.lang.String,
     args: js.Array[java.lang.String],
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* output */ youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Info, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ js.Any, /* output */ Info, scala.Unit]
   ): scala.Unit = js.native
   def getInfo(
     url: java.lang.String,
     args: js.Array[java.lang.String],
-    options: youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Options,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* output */ youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Info, 
-      scala.Unit
-    ]
+    options: Options,
+    callback: js.Function2[/* err */ js.Any, /* output */ Info, scala.Unit]
   ): scala.Unit = js.native
-  def getInfo(
-    url: java.lang.String,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* output */ youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Info, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getInfo(url: java.lang.String, callback: js.Function2[/* err */ js.Any, /* output */ Info, scala.Unit]): scala.Unit = js.native
   def getSubs(
     url: java.lang.String,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   def getSubs(
     url: java.lang.String,
-    options: youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Options,
+    options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   def getThumbs(
@@ -71,7 +56,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def getThumbs(
     url: java.lang.String,
-    options: youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Options,
+    options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
 }

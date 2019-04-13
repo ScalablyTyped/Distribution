@@ -12,6 +12,6 @@ object ^ extends js.Object {
     * Return a new through stream that should get written module-deps objects and will output sorted objects.
     */
   def apply(): nodeLib.streamMod.Transform = js.native
-  def apply(opts: depsDashSortLib.depsDashSortMod.depsSortNs.Options): nodeLib.streamMod.Transform = js.native
+  def apply(opts: Options): nodeLib.streamMod.Transform = js.native
 }
 

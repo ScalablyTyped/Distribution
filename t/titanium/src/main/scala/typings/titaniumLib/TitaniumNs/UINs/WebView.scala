@@ -11,6 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebView extends View {
   /**
+  			 * List of allowed URL schemes for the web view.
+  			 */
+  var allowedURLSchemes: js.Array[java.lang.String] = js.native
+  /**
+  			 * A Boolean value indicating whether horizontal swipe gestures will trigger back-forward list navigations.
+  			 */
+  var allowsBackForwardNavigationGestures: scala.Boolean = js.native
+  /**
   			 * A Boolean value that determines whether pressing on a link displays a preview of the
   			 * destination for the link.
   			 */
@@ -23,6 +31,14 @@ trait WebView extends View {
   			 * Determines how a cache is used in this web view.
   			 */
   var cacheMode: scala.Double = js.native
+  /**
+  			 * The cache policy for the request.
+  			 */
+  var cachePolicy: scala.Double = js.native
+  /**
+  			 * The configuration for the new web view.
+  			 */
+  var configuration: titaniumLib.TitaniumNs.UINs.iOSNs.WebViewConfiguration = js.native
   /**
   			 * Web content to load.
   			 */
@@ -72,6 +88,10 @@ trait WebView extends View {
   			 */
   var loading: scala.Boolean = js.native
   /**
+  			 * If `true`, allows the loading of insecure resources from a secure origin.
+  			 */
+  var mixedContentMode: scala.Boolean = js.native
+  /**
   			 * Determines the behavior when the user overscrolls the view.
   			 */
   var overScrollMode: scala.Double = js.native
@@ -79,6 +99,10 @@ trait WebView extends View {
   			 * Determines how to treat content that requires plugins in this web view.
   			 */
   var pluginState: scala.Double = js.native
+  /**
+  			 * An estimate of what fraction of the current navigation has been loaded.
+  			 */
+  val progress: scala.Double = js.native
   /**
   			 * Sets extra request headers for this web view to use on subsequent URL requests.
   			 */
@@ -91,6 +115,23 @@ trait WebView extends View {
   			 * Controls whether the scroll-to-top gesture is effective.
   			 */
   var scrollsToTop: scala.Boolean = js.native
+  /**
+  			 * A Boolean value indicating whether all resources on the page have been loaded through
+  			 * securely encrypted connections.
+  			 */
+  val secure: scala.Boolean = js.native
+  /**
+  			 * The level of granularity with which the user can interactively select content in the web view.
+  			 */
+  val selectionGranularity: scala.Double = js.native
+  /**
+  			 * The timeout interval for the request, in seconds.
+  			 */
+  var timeout: scala.Double = js.native
+  /**
+  			 * Returns page title of webpage.
+  			 */
+  val title: java.lang.String = js.native
   /**
   			 * URL to the web document.
   			 */
@@ -108,6 +149,18 @@ trait WebView extends View {
   			 */
   var zoomLevel: scala.Double = js.native
   /**
+  			 * Adds a script message handler.
+  			 */
+  def addScriptMessageHandler(handlerName: java.lang.String): scala.Unit = js.native
+  /**
+  			 * Adds a user script.
+  			 */
+  def addUserScript(source: java.lang.String, injectionTime: scala.Double, mainFrameOnly: scala.Boolean): scala.Unit = js.native
+  /**
+  			 * An object which maintains a list of visited pages used to go back and forward to the most recent page.
+  			 */
+  def backForwardList(): titaniumLib.BackForwardList = js.native
+  /**
   			 * Returns `true` if the web view can go back in its history list.
   			 */
   def canGoBack(): scala.Boolean = js.native
@@ -117,9 +170,19 @@ trait WebView extends View {
   def canGoForward(): scala.Boolean = js.native
   /**
   			 * Evaluates a JavaScript expression inside the context of the web view and
-  			 * optionally, returns a result.
+  			 * optionally, returns a result. If a callback function is passed in as second argument,
+  			 * the evaluation will take place asynchronously and the the callback function will be called with the result.
   			 */
   def evalJS(code: java.lang.String): java.lang.String = js.native
+  def evalJS(code: java.lang.String, callback: js.Function1[/* param0 */ java.lang.String, _]): java.lang.String = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.allowedURLSchemes> property.
+  			 */
+  def getAllowedURLSchemes(): js.Array[java.lang.String] = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.allowsBackForwardNavigationGestures> property.
+  			 */
+  def getAllowsBackForwardNavigationGestures(): scala.Boolean = js.native
   /**
   			 * Gets the value of the <Titanium.UI.WebView.allowsLinkPreview> property.
   			 */
@@ -132,6 +195,14 @@ trait WebView extends View {
   			 * Gets the value of the <Titanium.UI.WebView.cacheMode> property.
   			 */
   def getCacheMode(): scala.Double = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.cachePolicy> property.
+  			 */
+  def getCachePolicy(): scala.Double = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.configuration> property.
+  			 */
+  def getConfiguration(): titaniumLib.TitaniumNs.UINs.iOSNs.WebViewConfiguration = js.native
   /**
   			 * Gets the value of the <Titanium.UI.WebView.data> property.
   			 */
@@ -181,9 +252,17 @@ trait WebView extends View {
   			 */
   def getLoading(): scala.Boolean = js.native
   /**
+  			 * Gets the value of the <Titanium.UI.WebView.mixedContentMode> property.
+  			 */
+  def getMixedContentMode(): scala.Boolean = js.native
+  /**
   			 * Gets the value of the <Titanium.UI.WebView.onCreateWindow> property.
   			 */
   def getOnCreateWindow(): js.Function1[/* param0 */ js.Any, _] = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.onlink> property.
+  			 */
+  def getOnlink(): js.Function1[/* param0 */ titaniumLib.OnLinkURLResponse, _] = js.native
   /**
   			 * Gets the value of the <Titanium.UI.WebView.overScrollMode> property.
   			 */
@@ -192,6 +271,10 @@ trait WebView extends View {
   			 * Gets the value of the <Titanium.UI.WebView.pluginState> property.
   			 */
   def getPluginState(): scala.Double = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.progress> property.
+  			 */
+  def getProgress(): scala.Double = js.native
   /**
   			 * Gets the value of the <Titanium.UI.WebView.requestHeaders> property.
   			 */
@@ -204,6 +287,22 @@ trait WebView extends View {
   			 * Gets the value of the <Titanium.UI.WebView.scrollsToTop> property.
   			 */
   def getScrollsToTop(): scala.Boolean = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.secure> property.
+  			 */
+  def getSecure(): scala.Boolean = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.selectionGranularity> property.
+  			 */
+  def getSelectionGranularity(): scala.Double = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.timeout> property.
+  			 */
+  def getTimeout(): scala.Double = js.native
+  /**
+  			 * Gets the value of the <Titanium.UI.WebView.title> property.
+  			 */
+  def getTitle(): java.lang.String = js.native
   /**
   			 * Gets the value of the <Titanium.UI.WebView.url> property.
   			 */
@@ -234,6 +333,10 @@ trait WebView extends View {
   			 */
   def onCreateWindow(param0: js.Any): js.Any = js.native
   /**
+  			 * Fired before navigating to a link.
+  			 */
+  def onlink(param0: titaniumLib.OnLinkURLResponse): js.Any = js.native
+  /**
   			 * Pauses native webview plugins.
   			 */
   def pause(): scala.Unit = js.native
@@ -246,6 +349,14 @@ trait WebView extends View {
   			 */
   def reload(): scala.Unit = js.native
   /**
+  			 * Removes all associated user scripts.
+  			 */
+  def removeAllUserScripts(): scala.Unit = js.native
+  /**
+  			 * Removes a script message handler.
+  			 */
+  def removeScriptMessageHandler(name: java.lang.String): scala.Unit = js.native
+  /**
   			 * Forces the web view to repaint its contents.
   			 */
   def repaint(): scala.Unit = js.native
@@ -254,13 +365,21 @@ trait WebView extends View {
   			 */
   def resume(): scala.Unit = js.native
   /**
+  			 * Sets the value of the <Titanium.UI.WebView.allowedURLSchemes> property.
+  			 */
+  def setAllowedURLSchemes(allowedURLSchemes: js.Array[java.lang.String]): scala.Unit = js.native
+  /**
+  			 * Sets the value of the <Titanium.UI.WebView.allowsBackForwardNavigationGestures> property.
+  			 */
+  def setAllowsBackForwardNavigationGestures(allowsBackForwardNavigationGestures: scala.Boolean): scala.Unit = js.native
+  /**
   			 * Sets the value of the <Titanium.UI.WebView.allowsLinkPreview> property.
   			 */
   def setAllowsLinkPreview(allowsLinkPreview: scala.Boolean): scala.Unit = js.native
   /**
-  			 * Sets the basic authentication for this web view to use on subsequent URl requests.
+  			 * Sets the basic authentication for this web view to use on subsequent URL requests.
   			 */
-  def setBasicAuthentication(username: java.lang.String, password: java.lang.String): scala.Unit = js.native
+  def setBasicAuthentication(username: java.lang.String, password: java.lang.String, persistence: scala.Double): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.WebView.blacklistedURLs> property.
   			 */
@@ -269,6 +388,14 @@ trait WebView extends View {
   			 * Sets the value of the <Titanium.UI.WebView.cacheMode> property.
   			 */
   def setCacheMode(cacheMode: scala.Double): scala.Unit = js.native
+  /**
+  			 * Sets the value of the <Titanium.UI.WebView.cachePolicy> property.
+  			 */
+  def setCachePolicy(cachePolicy: scala.Double): scala.Unit = js.native
+  /**
+  			 * Sets the value of the <Titanium.UI.WebView.configuration> property.
+  			 */
+  def setConfiguration(configuration: titaniumLib.TitaniumNs.UINs.iOSNs.WebViewConfiguration): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.WebView.data> property.
   			 */
@@ -302,10 +429,6 @@ trait WebView extends View {
   			 */
   def setHideLoadIndicator(hideLoadIndicator: scala.Boolean): scala.Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.WebView.html> property.
-  			 */
-  def setHtml(html: java.lang.String): scala.Unit = js.native
-  /**
   			 * Sets the value of [html](Titanium.UI.WebView.html) property.
   			 */
   def setHtml(html: js.Any): scala.Unit = js.native
@@ -327,9 +450,17 @@ trait WebView extends View {
   			 */
   def setLoading(loading: scala.Boolean): scala.Unit = js.native
   /**
+  			 * Sets the value of the <Titanium.UI.WebView.mixedContentMode> property.
+  			 */
+  def setMixedContentMode(mixedContentMode: scala.Boolean): scala.Unit = js.native
+  /**
   			 * Sets the value of the <Titanium.UI.WebView.onCreateWindow> property.
   			 */
   def setOnCreateWindow(onCreateWindow: js.Function1[/* param0 */ js.Any, _]): scala.Unit = js.native
+  /**
+  			 * Sets the value of the <Titanium.UI.WebView.onlink> property.
+  			 */
+  def setOnlink(onlink: js.Function1[/* param0 */ titaniumLib.OnLinkURLResponse, _]): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.WebView.overScrollMode> property.
   			 */
@@ -351,6 +482,10 @@ trait WebView extends View {
   			 */
   def setScrollsToTop(scrollsToTop: scala.Boolean): scala.Unit = js.native
   /**
+  			 * Sets the value of the <Titanium.UI.WebView.timeout> property.
+  			 */
+  def setTimeout(timeout: scala.Double): scala.Unit = js.native
+  /**
   			 * Sets the value of the <Titanium.UI.WebView.url> property.
   			 */
   def setUrl(url: java.lang.String): scala.Unit = js.native
@@ -367,8 +502,20 @@ trait WebView extends View {
   			 */
   def setZoomLevel(zoomLevel: scala.Double): scala.Unit = js.native
   /**
+  			 * Add native properties for observing for change.
+  			 */
+  def startListeningToProperties(propertyList: js.Array[java.lang.String]): scala.Unit = js.native
+  /**
+  			 * Remove native properties from observing.
+  			 */
+  def stopListeningToProperties(propertyList: js.Array[java.lang.String]): scala.Unit = js.native
+  /**
   			 * Stops loading a currently loading page.
   			 */
   def stopLoading(): scala.Unit = js.native
+  /**
+  			 * Takes a snapshot of the view's visible viewport.
+  			 */
+  def takeSnapshot(callback: js.Function1[/* param0 */ titaniumLib.SnapshotResult, _]): scala.Unit = js.native
 }
 

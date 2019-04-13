@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.AnchorHTMLAttributes<std.HTMLAnchorElement> & @material-ui/core.@material-ui/core/Typography/Typography.TypographyProps, 'classes' | 'component'> ]: react.react.React.AnchorHTMLAttributes<std.HTMLAnchorElement> & @material-ui/core.@material-ui/core/Typography/Typography.TypographyProps[P]} */ trait LinkProps
+- Dropped {[ P in std.Exclude<keyof react.react.AnchorHTMLAttributes<std.HTMLAnchorElement> & @material-ui/core.@material-ui/core/Typography/Typography.TypographyProps, 'classes' | 'component'> ]: react.react.AnchorHTMLAttributes<std.HTMLAnchorElement> & @material-ui/core.@material-ui/core/Typography/Typography.TypographyProps[P]} */ trait LinkProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[LinkClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var TypographyClasses: js.UndefOr[
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var block: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[LinkProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[LinkProps]] = js.undefined
   var underline: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.hover | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.always
   ] = js.undefined
@@ -32,9 +32,9 @@ object LinkProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[LinkClassKey]] = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
-    component: reactLib.reactMod.ReactNs.ReactType[LinkProps] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    component: reactLib.reactMod.ReactType[LinkProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     underline: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.hover | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.always = null
   ): LinkProps = {
     val __obj = js.Dynamic.literal()

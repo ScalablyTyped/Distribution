@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CameraCanvas extends js.Object {
-  var camera: cesiumLib.cesiumMod.CesiumNs.Camera
+  var camera: cesiumLib.cesiumMod.Camera
   var canvas: stdLib.HTMLCanvasElement
   var clampToGround: js.UndefOr[scala.Boolean] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var sourceUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_CameraCanvas {
   @scala.inline
   def apply(
-    camera: cesiumLib.cesiumMod.CesiumNs.Camera,
+    camera: cesiumLib.cesiumMod.Camera,
     canvas: stdLib.HTMLCanvasElement,
     clampToGround: js.UndefOr[scala.Boolean] = js.undefined,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     sourceUri: java.lang.String = null
   ): Anon_CameraCanvas = {
     val __obj = js.Dynamic.literal(camera = camera, canvas = canvas)

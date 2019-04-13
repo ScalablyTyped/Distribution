@@ -49,7 +49,5 @@ object CheckoutNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.checkoutMod.CheckoutNs.STRATEGY with scala.Double] = js.native
   }
   
-  type NOTIFY = nodegitLib.checkoutMod.CheckoutNs.NOTIFY
-  type STRATEGY = nodegitLib.checkoutMod.CheckoutNs.STRATEGY
 }
 

@@ -15,13 +15,13 @@ trait StrictHeaderProps extends js.Object {
   /** Format header to appear inside a content block. */
   var block: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Color of the header. */
   var color: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS] = js.undefined
   /** Shorthand for primary content. */
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Show that the header is inactive. */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Divide header from the content below it. */
@@ -52,10 +52,10 @@ object StrictHeaderProps {
     as: js.Any = null,
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom = null,
     block: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dividing: js.UndefOr[scala.Boolean] = js.undefined,
     floated: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS = null,

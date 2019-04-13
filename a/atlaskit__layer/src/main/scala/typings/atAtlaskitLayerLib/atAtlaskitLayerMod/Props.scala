@@ -18,9 +18,9 @@ trait Props extends js.Object {
     */
   var boundariesElement: js.UndefOr[BoundariesElementType] = js.undefined
   /** Target to which layer is attached */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** HTML content to display in the layer. Will be aligned to the target according to the position prop. */
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Lock scrolling behind the layer */
   var lockScroll: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -56,8 +56,8 @@ object Props {
   def apply(
     autoFlip: scala.Boolean | FlipPositionType | js.Array[FlipPositionType] = null,
     boundariesElement: BoundariesElementType = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
     lockScroll: js.UndefOr[scala.Boolean] = js.undefined,
     offset: java.lang.String = null,
     onFlippedChange: (/* flipped */ scala.Boolean, /* actualPosition */ CSSPositionType, /* originalPosition */ CSSPositionType) => scala.Unit = null,

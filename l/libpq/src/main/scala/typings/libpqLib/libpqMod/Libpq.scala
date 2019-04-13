@@ -204,7 +204,7 @@ trait Libpq
     * }
     * ```
     */
-  def notifies(): libpqLib.libpqMod.LibpqNs.NotifyMsg = js.native
+  def notifies(): NotifyMsg = js.native
   /**
     * Retrieve the number of tuples (rows) from the result.
     */
@@ -254,7 +254,7 @@ trait Libpq
     * console.log(pq.errorFields().messageDetail);
     * ```
     */
-  def resultErrorFields(): libpqLib.libpqMod.LibpqNs.ResultError = js.native
+  def resultErrorFields(): ResultError = js.native
   /**
     * Retrieves the error message from the result. This will return null if the result does not
     * have an error.

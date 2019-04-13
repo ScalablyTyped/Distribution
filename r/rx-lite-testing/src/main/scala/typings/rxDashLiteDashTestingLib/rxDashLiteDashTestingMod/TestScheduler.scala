@@ -145,3 +145,8 @@ class TestSchedulerCls ()
   override def toRelative(duetime: scala.Double): scala.Double = js.native
 }
 
+@JSImport("rx-lite-testing", "TestScheduler")
+@js.native
+object TestScheduler
+  extends org.scalablytyped.runtime.Instantiable0[rxDashLiteDashTestingLib.RxNs.TestScheduler]
+

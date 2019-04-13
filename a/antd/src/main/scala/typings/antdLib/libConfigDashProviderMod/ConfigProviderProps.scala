@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ConfigProviderProps extends js.Object {
   var autoInsertSpaceInButton: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var csp: js.UndefOr[CSPConfig] = js.undefined
   var getPopupContainer: js.UndefOr[
     js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
@@ -20,7 +20,7 @@ object ConfigProviderProps {
   @scala.inline
   def apply(
     autoInsertSpaceInButton: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     csp: CSPConfig = null,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     prefixCls: java.lang.String = null,

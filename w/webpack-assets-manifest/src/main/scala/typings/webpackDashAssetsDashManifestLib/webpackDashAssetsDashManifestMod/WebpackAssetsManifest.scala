@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait WebpackAssetsManifest
   extends webpackLib.webpackMod.Plugin {
   /** https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema */
-  var defaultOptions: webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Options = js.native
+  var defaultOptions: Options = js.native
   /** https://github.com/webdeveric/webpack-assets-manifest#hooks */
   var hooks: webpackDashAssetsDashManifestLib.Anon_AfterOptions = js.native
   /** Determine if the manifest data is currently being merged */
   var isMerging: scala.Boolean = js.native
   /** https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema */
-  var options: webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Options = js.native
+  var options: Options = js.native
   /** Delete an item from the manifest */
   def delete(key: java.lang.String): scala.Boolean = js.native
   /** Replace backslash with forward slash */

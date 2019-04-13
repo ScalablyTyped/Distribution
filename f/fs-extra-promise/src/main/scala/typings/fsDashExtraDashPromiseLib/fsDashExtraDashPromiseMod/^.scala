@@ -136,9 +136,9 @@ object ^ extends js.Object {
     options: nodeLib.fsMod.WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def appendFileAsync(filename: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def appendFileAsync(filename: java.lang.String, data: js.Any, option: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def appendFileAsync(filename: java.lang.String, data: js.Any, option: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def appendFileAsync(filename: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def appendFileAsync(filename: java.lang.String, data: js.Any, option: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def appendFileAsync(filename: java.lang.String, data: js.Any, option: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronously append data to a file, creating the file if it does not exist.
     * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -194,8 +194,8 @@ object ^ extends js.Object {
     mode: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def chmodAsync(path: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def chmodAsync(path: java.lang.String, mode: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def chmodAsync(path: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def chmodAsync(path: java.lang.String, mode: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous chmod(2) - Change permissions of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -227,7 +227,7 @@ object ^ extends js.Object {
     gid: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def chownAsync(path: java.lang.String, uid: scala.Double, gid: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def chownAsync(path: java.lang.String, uid: scala.Double, gid: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous chown(2) - Change ownership of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -239,7 +239,7 @@ object ^ extends js.Object {
     * @param fd A file descriptor.
     */
   def close(fd: scala.Double, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
-  def closeAsync(fd: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def closeAsync(fd: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous close(2) - close a file descriptor.
     * @param fd A file descriptor.
@@ -258,13 +258,13 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.CopyOptions,
     callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def copyAsync(src: java.lang.String, dest: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def copyAsync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.CopyOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def copyAsync(src: java.lang.String, dest: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def copyAsync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.CopyOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def copyAsync(
     src: java.lang.String,
     dest: java.lang.String,
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CopyFilter */ js.Any
-  ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def copyFile(
     src: java.lang.String,
@@ -328,7 +328,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def createFile(file: java.lang.String): js.Promise[scala.Unit] = js.native
   def createFile(file: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
-  def createFileAsync(file: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def createFileAsync(file: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def createFileSync(file: java.lang.String): scala.Unit = js.native
   /**
     * Returns a new `ReadStream` object.
@@ -351,7 +351,7 @@ object ^ extends js.Object {
   def emptyDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureDir(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
-  def ensureDirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def ensureDirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def ensureDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureFile(path: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureFile(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
@@ -385,7 +385,7 @@ object ^ extends js.Object {
     * URL support is _experimental_.
     */
   def exists(path: nodeLib.fsMod.PathLike, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = js.native
-  def existsAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
+  def existsAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Boolean] = js.native
   /**
     * Synchronously tests whether or not the given path exists by checking with the file system.
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
@@ -409,8 +409,8 @@ object ^ extends js.Object {
     mode: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def fchmodAsync(fd: scala.Double, mode: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def fchmodAsync(fd: scala.Double, mode: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def fchmodAsync(fd: scala.Double, mode: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def fchmodAsync(fd: scala.Double, mode: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous fchmod(2) - Change permissions of a file.
     * @param fd A file descriptor.
@@ -429,7 +429,7 @@ object ^ extends js.Object {
     gid: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def fchownAsync(fd: scala.Double, uid: scala.Double, gid: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def fchownAsync(fd: scala.Double, uid: scala.Double, gid: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous fchown(2) - Change ownership of a file.
     * @param fd A file descriptor.
@@ -460,7 +460,7 @@ object ^ extends js.Object {
       _ | scala.Unit
     ]
   ): scala.Unit = js.native
-  def fstatAsync(fd: scala.Double): bluebirdLib.bluebirdMod.namespaced[nodeLib.fsMod.Stats] = js.native
+  def fstatAsync(fd: scala.Double): bluebirdLib.bluebirdMod.^[nodeLib.fsMod.Stats] = js.native
   /**
     * Synchronous fstat(2) - Get file status.
     * @param fd A file descriptor.
@@ -472,7 +472,7 @@ object ^ extends js.Object {
     * @param fd A file descriptor.
     */
   def fsync(fd: scala.Double, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
-  def fsyncAsync(fd: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def fsyncAsync(fd: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
     * @param fd A file descriptor.
@@ -574,7 +574,7 @@ object ^ extends js.Object {
     mtime: stdLib.Date,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def futimesAsync(fd: scala.Double, atime: scala.Double, mtime: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def futimesAsync(fd: scala.Double, atime: scala.Double, mtime: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronously change file timestamps of the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -595,7 +595,7 @@ object ^ extends js.Object {
     path: java.lang.String,
     callback: js.Function2[/* err */ stdLib.Error, /* isDirectory */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
-  def isDirectoryAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
+  def isDirectoryAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Boolean] = js.native
   def isDirectorySync(path: java.lang.String): scala.Boolean = js.native
   /**
     * Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
@@ -612,8 +612,8 @@ object ^ extends js.Object {
     mode: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def lchmodAsync(path: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def lchmodAsync(path: java.lang.String, mode: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def lchmodAsync(path: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def lchmodAsync(path: java.lang.String, mode: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -645,7 +645,7 @@ object ^ extends js.Object {
     gid: scala.Double,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def lchownAsync(path: java.lang.String, uid: scala.Double, gid: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def lchownAsync(path: java.lang.String, uid: scala.Double, gid: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -685,7 +685,7 @@ object ^ extends js.Object {
     dstpath: nodeLib.Buffer,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def linkAsync(srcpath: java.lang.String, dstpath: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def linkAsync(srcpath: java.lang.String, dstpath: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous link(2) - Create a new link (also known as a hard link) to an existing file.
     * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -714,7 +714,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def lstatAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeLib.fsMod.Stats] = js.native
+  def lstatAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[nodeLib.fsMod.Stats] = js.native
   /**
     * Synchronous lstat(2) - Get file status. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -789,9 +789,9 @@ object ^ extends js.Object {
     options: scala.Null,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def mkdirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def mkdirAsync(path: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def mkdirAsync(path: java.lang.String, mode: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def mkdirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def mkdirAsync(path: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def mkdirAsync(path: java.lang.String, mode: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous mkdir(2) - create a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -804,13 +804,13 @@ object ^ extends js.Object {
   def mkdirSync(path: nodeLib.fsMod.PathLike, options: scala.Double): scala.Unit = js.native
   def mkdirp(dir: java.lang.String): js.Promise[scala.Unit] = js.native
   def mkdirp(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
-  def mkdirpAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def mkdirpAsync(dir: java.lang.String, options: MkdirOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def mkdirpAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def mkdirpAsync(dir: java.lang.String, options: MkdirOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def mkdirpSync(dir: java.lang.String): scala.Unit = js.native
   def mkdirs(dir: java.lang.String): js.Promise[scala.Unit] = js.native
   def mkdirs(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
-  def mkdirsAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def mkdirsAsync(dir: java.lang.String, options: MkdirOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def mkdirsAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def mkdirsAsync(dir: java.lang.String, options: MkdirOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def mkdirsSync(dir: java.lang.String): scala.Unit = js.native
   def mkdtemp(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
@@ -934,8 +934,8 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.MoveOptions,
     callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def moveAsync(src: java.lang.String, dest: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def moveAsync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.MoveOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def moveAsync(src: java.lang.String, dest: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def moveAsync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.MoveOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def moveSync(src: java.lang.String, dest: java.lang.String): scala.Unit = js.native
   def moveSync(src: java.lang.String, dest: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.MoveOptions): scala.Unit = js.native
   def open(path: java.lang.String, flags: java.lang.String): js.Promise[scala.Double] = js.native
@@ -1057,8 +1057,8 @@ object ^ extends js.Object {
     mode: scala.Null,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
-  def openAsync(path: java.lang.String, flags: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
-  def openAsync(path: java.lang.String, flags: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
+  def openAsync(path: java.lang.String, flags: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Double] = js.native
+  def openAsync(path: java.lang.String, flags: java.lang.String, mode: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Double] = js.native
   /**
     * Synchronous open(2) - open and possibly create a file, returning a file descriptor..
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1086,7 +1086,7 @@ object ^ extends js.Object {
     options: java.lang.String,
     callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def outputFileAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def outputFileAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def outputFileSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def outputFileSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteFileOptions): scala.Unit = js.native
   def outputFileSync(file: java.lang.String, data: js.Any, options: java.lang.String): scala.Unit = js.native
@@ -1099,7 +1099,7 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
     callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def outputJSONAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def outputJSONAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def outputJSONSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def outputJSONSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
   def outputJson(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
@@ -1111,7 +1111,7 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
     callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def outputJsonAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def outputJsonAsync(file: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def outputJsonSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def outputJsonSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
   def pathExists(path: java.lang.String): js.Promise[scala.Boolean] = js.native
@@ -1194,7 +1194,7 @@ object ^ extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[scala.Double, nodeLib.Buffer]] = js.native
+  ): bluebirdLib.bluebirdMod.^[js.Tuple2[scala.Double, nodeLib.Buffer]] = js.native
   def readFile(file: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   def readFile(
     file: java.lang.String,
@@ -1383,9 +1383,9 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def readFileAsync(filename: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeLib.Buffer] = js.native
-  def readFileAsync(filename: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def readFileAsync(filename: java.lang.String, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def readFileAsync(filename: java.lang.String): bluebirdLib.bluebirdMod.^[nodeLib.Buffer] = js.native
+  def readFileAsync(filename: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.^[java.lang.String] = js.native
+  def readFileAsync(filename: java.lang.String, options: java.lang.String): bluebirdLib.bluebirdMod.^[java.lang.String] = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1438,8 +1438,8 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.ReadOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def readJSONAsync(file: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def readJSONAsync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def readJSONAsync(file: java.lang.String): bluebirdLib.bluebirdMod.^[_] = js.native
+  def readJSONAsync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.^[_] = js.native
   def readJSONSync(file: java.lang.String): js.Any = js.native
   def readJSONSync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Any = js.native
   def readJson(file: java.lang.String): js.Promise[_] = js.native
@@ -1453,8 +1453,8 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.ReadOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* jsonObject */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def readJsonAsync(file: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def readJsonAsync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def readJsonAsync(file: java.lang.String): bluebirdLib.bluebirdMod.^[_] = js.native
+  def readJsonAsync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): bluebirdLib.bluebirdMod.^[_] = js.native
   def readJsonSync(file: java.lang.String): js.Any = js.native
   def readJsonSync(file: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.ReadOptions): js.Any = js.native
   def readSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
@@ -1595,7 +1595,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def readdirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
+  def readdirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[js.Array[java.lang.String]] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1740,7 +1740,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def readlinkAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def readlinkAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[java.lang.String] = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1891,8 +1891,8 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def realpathAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def realpathAsync(path: java.lang.String, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def realpathAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[java.lang.String] = js.native
+  def realpathAsync(path: java.lang.String, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): bluebirdLib.bluebirdMod.^[java.lang.String] = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1933,7 +1933,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def remove(dir: java.lang.String): js.Promise[scala.Unit] = js.native
   def remove(dir: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
-  def removeAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def removeAsync(dir: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def removeSync(dir: java.lang.String): scala.Unit = js.native
   def rename(oldPath: java.lang.String, newPath: java.lang.String): js.Promise[scala.Unit] = js.native
   def rename(
@@ -1953,7 +1953,7 @@ object ^ extends js.Object {
     newPath: nodeLib.fsMod.PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def renameAsync(oldPath: java.lang.String, newPath: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def renameAsync(oldPath: java.lang.String, newPath: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous rename(2) - Change the name or location of a file or directory.
     * @param oldPath A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1980,7 +1980,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def rmdirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def rmdirAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous rmdir(2) - delete a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -2008,7 +2008,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def statAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeLib.fsMod.Stats] = js.native
+  def statAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[nodeLib.fsMod.Stats] = js.native
   /**
     * Synchronous stat(2) - Get file status.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -2141,8 +2141,8 @@ object ^ extends js.Object {
     `type`: scala.Null,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def symlinkAsync(srcpath: java.lang.String, dstpath: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def symlinkAsync(srcpath: java.lang.String, dstpath: java.lang.String, `type`: nodeLib.fsMod.symlinkNs.Type): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def symlinkAsync(srcpath: java.lang.String, dstpath: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def symlinkAsync(srcpath: java.lang.String, dstpath: java.lang.String, `type`: nodeLib.fsMod.symlinkNs.Type): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous symlink(2) - Create a new symbolic link to an existing file.
     * @param target A path to an existing file. If a URL is provided, it must use the `file:` protocol.
@@ -2203,7 +2203,7 @@ object ^ extends js.Object {
     len: scala.Null,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def truncateAsync(fd: scala.Double, len: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def truncateAsync(fd: scala.Double, len: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous truncate(2) - Truncate a file to a specified length.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -2229,7 +2229,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def unlinkAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def unlinkAsync(path: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronous unlink(2) - delete a name and possibly the file it refers to.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -2333,7 +2333,7 @@ object ^ extends js.Object {
     mtime: stdLib.Date,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def utimesAsync(path: java.lang.String, atime: scala.Double, mtime: scala.Double): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def utimesAsync(path: java.lang.String, atime: scala.Double, mtime: scala.Double): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronously change file timestamps of the file referenced by the supplied path.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -2875,7 +2875,7 @@ object ^ extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[scala.Double, nodeLib.Buffer]] = js.native
+  ): bluebirdLib.bluebirdMod.^[js.Tuple2[scala.Double, nodeLib.Buffer]] = js.native
   def writeFile(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
   def writeFile(
     file: java.lang.String,
@@ -2972,9 +2972,9 @@ object ^ extends js.Object {
     options: nodeLib.fsMod.WriteFileOptions,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def writeFileAsync(filename: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def writeFileAsync(filename: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def writeFileAsync(filename: java.lang.String, data: js.Any, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def writeFileAsync(filename: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def writeFileAsync(filename: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def writeFileAsync(filename: java.lang.String, data: js.Any, options: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Synchronously writes data to a file, replacing the file if it already exists.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -3004,8 +3004,8 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
     callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def writeJSONAsync(file: java.lang.String, `object`: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def writeJSONAsync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def writeJSONAsync(file: java.lang.String, `object`: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def writeJSONAsync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def writeJSONSync(file: java.lang.String, `object`: js.Any): scala.Unit = js.native
   def writeJSONSync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
   def writeJson(file: java.lang.String, `object`: js.Any): js.Promise[scala.Unit] = js.native
@@ -3021,8 +3021,8 @@ object ^ extends js.Object {
     options: fsDashExtraLib.fsDashExtraMod.WriteOptions,
     callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def writeJsonAsync(file: java.lang.String, `object`: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def writeJsonAsync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def writeJsonAsync(file: java.lang.String, `object`: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def writeJsonAsync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def writeJsonSync(file: java.lang.String, `object`: js.Any): scala.Unit = js.native
   def writeJsonSync(file: java.lang.String, `object`: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
   /**

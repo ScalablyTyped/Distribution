@@ -6,29 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Block
-  extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs._Coordinates {
+  extends overlayscrollbarsLib.overlayscrollbarsMod._Coordinates {
   var block: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior | Anon_XYBlockBehavior | (js.Tuple2[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior
+    overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior | Anon_XYBlockBehavior | (js.Tuple2[
+      overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior, 
+      overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior
     ])
   ] = js.undefined
   var el: stdLib.HTMLElement | overlayscrollbarsLib.overlayscrollbarsMod.JQuery
   var margin: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin | Anon_Bottom | (js.Tuple2[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin
+    overlayscrollbarsLib.overlayscrollbarsMod.Margin | Anon_Bottom | (js.Tuple2[
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin
     ]) | (js.Tuple4[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin
     ])
   ] = js.undefined
   var scroll: js.UndefOr[
-    overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior | Anon_XY | (js.Tuple2[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior
+    overlayscrollbarsLib.overlayscrollbarsMod.ScrollBehavior | Anon_XY | (js.Tuple2[
+      overlayscrollbarsLib.overlayscrollbarsMod.ScrollBehavior, 
+      overlayscrollbarsLib.overlayscrollbarsMod.ScrollBehavior
     ])
   ] = js.undefined
 }
@@ -37,22 +37,22 @@ object Anon_Block {
   @scala.inline
   def apply(
     el: stdLib.HTMLElement | overlayscrollbarsLib.overlayscrollbarsMod.JQuery,
-    block: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior | Anon_XYBlockBehavior | (js.Tuple2[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior
+    block: overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior | Anon_XYBlockBehavior | (js.Tuple2[
+      overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior, 
+      overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior
     ]) = null,
-    margin: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin | Anon_Bottom | (js.Tuple2[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin
+    margin: overlayscrollbarsLib.overlayscrollbarsMod.Margin | Anon_Bottom | (js.Tuple2[
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin
     ]) | (js.Tuple4[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin, 
+      overlayscrollbarsLib.overlayscrollbarsMod.Margin
     ]) = null,
-    scroll: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior | Anon_XY | (js.Tuple2[
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior, 
-      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior
+    scroll: overlayscrollbarsLib.overlayscrollbarsMod.ScrollBehavior | Anon_XY | (js.Tuple2[
+      overlayscrollbarsLib.overlayscrollbarsMod.ScrollBehavior, 
+      overlayscrollbarsLib.overlayscrollbarsMod.ScrollBehavior
     ]) = null
   ): Anon_Block = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])

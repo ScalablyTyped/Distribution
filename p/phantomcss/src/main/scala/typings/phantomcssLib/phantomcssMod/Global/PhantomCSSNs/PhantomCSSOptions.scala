@@ -74,7 +74,7 @@ trait PhantomCSSOptions extends js.Object {
   var onNewImage: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, scala.Unit]] = js.undefined
   var onPass: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, scala.Unit]] = js.undefined
   var onTimeout: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, scala.Unit]] = js.undefined
-  var outputSettings: js.UndefOr[resemblejsLib.resemblejsMod.ResembleNs.OutputSettings] = js.undefined
+  var outputSettings: js.UndefOr[resemblejsLib.resemblejsMod.OutputSettings] = js.undefined
   /**
     Prefix the screenshot number to the filename, instead of suffixing it
     */
@@ -106,7 +106,7 @@ object PhantomCSSOptions {
     onNewImage: /* test */ PhantomCSSTest => scala.Unit = null,
     onPass: /* test */ PhantomCSSTest => scala.Unit = null,
     onTimeout: /* test */ PhantomCSSTest => scala.Unit = null,
-    outputSettings: resemblejsLib.resemblejsMod.ResembleNs.OutputSettings = null,
+    outputSettings: resemblejsLib.resemblejsMod.OutputSettings = null,
     prefixCount: js.UndefOr[scala.Boolean] = js.undefined,
     rebase: js.Any = null,
     screenshotRoot: java.lang.String = null

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SwiperProperties
-  extends reactLib.reactMod.ReactNs.Props[Swiper] {
+  extends reactLib.reactMod.Props[Swiper] {
   var activeDot: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   var activeDotColor: js.UndefOr[java.lang.String] = js.undefined
   var activeDotStyle: js.UndefOr[
@@ -119,14 +119,14 @@ object SwiperProperties {
     autoplayTimeout: scala.Int | scala.Double = null,
     bounces: js.UndefOr[scala.Boolean] = js.undefined,
     buttonWrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     dot: reactLib.reactMod.Global.JSXNs.Element = null,
     dotColor: java.lang.String = null,
     dotStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     loadMinimal: js.UndefOr[scala.Boolean] = js.undefined,
     loadMinimalLoader: reactLib.reactMod.Global.JSXNs.Element = null,
     loadMinimalSize: scala.Int | scala.Double = null,
@@ -141,7 +141,7 @@ object SwiperProperties {
     paginationStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     pagingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     prevButton: reactLib.reactMod.Global.JSXNs.Element = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Swiper] = null,
+    ref: reactLib.reactMod.LegacyRef[Swiper] = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     renderPagination: (/* index */ scala.Double, /* total */ scala.Double, /* thisObject */ Swiper) => reactLib.reactMod.Global.JSXNs.Element = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,

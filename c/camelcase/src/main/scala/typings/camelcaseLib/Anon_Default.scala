@@ -36,8 +36,8 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(input: java.lang.String): java.lang.String = js.native
-  def apply(input: java.lang.String, options: camelcaseLib.camelcaseMod.camelcaseNs.Options): java.lang.String = js.native
+  def apply(input: java.lang.String, options: camelcaseLib.camelcaseMod.Options): java.lang.String = js.native
   def apply(input: js.Array[java.lang.String]): java.lang.String = js.native
-  def apply(input: js.Array[java.lang.String], options: camelcaseLib.camelcaseMod.camelcaseNs.Options): java.lang.String = js.native
+  def apply(input: js.Array[java.lang.String], options: camelcaseLib.camelcaseMod.Options): java.lang.String = js.native
 }
 

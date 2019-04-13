@@ -8,67 +8,67 @@ import scala.scalajs.js.annotation._
 object signaleLibStrings {
   @js.native
   sealed trait await
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait complete
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait debug
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait error
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait fatal
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait fav
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait info
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait log
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait note
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait pause
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait pending
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait star
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait start
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait success
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait warn
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @js.native
   sealed trait watch
-    extends signaleLib.signaleMod.signaleNs.DefaultMethods
+    extends signaleLib.signaleMod.DefaultMethods
   
   @scala.inline
   def await: await = "await".asInstanceOf[await]

@@ -13,8 +13,8 @@ abstract class AbstractWalker[T] ()
   /* CompleteClass */
   override def getFailures(): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* CompleteClass */
-  override def getSourceFile(): typescriptLib.typescriptMod.tsNs.SourceFile = js.native
+  override def getSourceFile(): typescriptLib.typescriptMod.SourceFile = js.native
   /* CompleteClass */
-  override def walk(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): scala.Unit = js.native
+  override def walk(sourceFile: typescriptLib.typescriptMod.SourceFile): scala.Unit = js.native
 }
 

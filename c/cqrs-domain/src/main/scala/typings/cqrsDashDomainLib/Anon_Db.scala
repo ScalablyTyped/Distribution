@@ -12,14 +12,14 @@ trait Anon_Db extends js.Object {
   var port: js.UndefOr[scala.Double] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
-  var `type`: cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes
+  var `type`: cqrsDashDomainLib.cqrsDashDomainMod.SupportedDBTypes
 }
 
 object Anon_Db {
   @scala.inline
   def apply(
     db: scala.Double,
-    `type`: cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes,
+    `type`: cqrsDashDomainLib.cqrsDashDomainMod.SupportedDBTypes,
     host: java.lang.String = null,
     password: java.lang.String = null,
     port: scala.Int | scala.Double = null,

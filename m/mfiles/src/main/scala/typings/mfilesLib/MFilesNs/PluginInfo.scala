@@ -31,3 +31,8 @@ class PluginInfo ()
   override def Clone(): mfilesLib.IPluginInfo = js.native
 }
 
+@JSGlobal("MFiles.PluginInfo")
+@js.native
+object PluginInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPluginInfo]
+

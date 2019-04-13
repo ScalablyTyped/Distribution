@@ -10,10 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): java.lang.String = js.native
   def apply(filename: java.lang.String): java.lang.String = js.native
-  def apply(
-    filename: java.lang.String,
-    options: contentDashDispositionLib.contentDashDispositionMod.contentDispositionNs.Options
-  ): java.lang.String = js.native
-  def parse(contentDispositionHeader: java.lang.String): contentDashDispositionLib.contentDashDispositionMod.contentDispositionNs.ContentDisposition = js.native
+  def apply(filename: java.lang.String, options: Options): java.lang.String = js.native
+  def parse(contentDispositionHeader: java.lang.String): ContentDisposition = js.native
 }
 

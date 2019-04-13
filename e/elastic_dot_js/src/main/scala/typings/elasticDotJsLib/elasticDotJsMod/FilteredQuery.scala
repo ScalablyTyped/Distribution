@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "FilteredQuery")
 @js.native
-class FilteredQuery protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilteredQuery {
+class FilteredQuery protected () extends Query {
   /*
     A query that applies a filter to the results of another query.
     */
@@ -16,33 +15,27 @@ class FilteredQuery protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost value for documents matching the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilteredQuery = js.native
+  def boost(boost: scala.Double): FilteredQuery = js.native
   /*
     Enables caching of the filter.
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilteredQuery = js.native
+  def cache(trueFalse: scala.Boolean): FilteredQuery = js.native
   /*
     Set the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(k: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilteredQuery = js.native
+  def cacheKey(k: java.lang.String): FilteredQuery = js.native
   /*
     Adds the filter to apply a constant score to.
     */
-  /* CompleteClass */
-  override def filter(oFilter: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilteredQuery = js.native
+  def filter(oFilter: js.Object): FilteredQuery = js.native
   /*
     Adds the query to apply a constant score to.
     */
-  /* CompleteClass */
-  override def query(oQuery: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilteredQuery = js.native
+  def query(oQuery: js.Object): FilteredQuery = js.native
   /*
     Sets the filter strategy.
     The strategy defines how the filter is applied during document collection.
@@ -55,13 +48,11 @@ class FilteredQuery protected ()
     except you can specify a custom threshold
     This is an advanced setting, use with care.
     */
-  /* CompleteClass */
-  override def strategy(strategy: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilteredQuery = js.native
+  def strategy(strategy: java.lang.String): FilteredQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
 }
 

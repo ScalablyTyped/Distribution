@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BlockScopeAwareRuleWalker[T, U] protected ()
   extends tslintLib.libLanguageWalkerBlockScopeAwareRuleWalkerMod.BlockScopeAwareRuleWalker[T, U] {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
 }
 

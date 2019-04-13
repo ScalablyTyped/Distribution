@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MosaicWindowProps[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */] extends js.Object {
   var additionalControlButtonText: js.UndefOr[java.lang.String] = js.undefined
-  var additionalControls: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var additionalControls: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var createNode: js.UndefOr[reactDashMosaicDashComponentLib.libTypesMod.CreateNode[T]] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined
@@ -30,7 +30,7 @@ trait MosaicWindowProps[T /* <: reactDashMosaicDashComponentLib.libTypesMod.Mosa
     ]) | scala.Null
   ] = js.undefined
   var title: java.lang.String
-  var toolbarControls: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var toolbarControls: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object MosaicWindowProps {
@@ -39,7 +39,7 @@ object MosaicWindowProps {
     path: js.Array[reactDashMosaicDashComponentLib.libTypesMod.MosaicBranch],
     title: java.lang.String,
     additionalControlButtonText: java.lang.String = null,
-    additionalControls: reactLib.reactMod.ReactNs.ReactNode = null,
+    additionalControls: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     createNode: reactDashMosaicDashComponentLib.libTypesMod.CreateNode[T] = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -47,7 +47,7 @@ object MosaicWindowProps {
     onDragStart: () => scala.Unit = null,
     renderPreview: /* props */ MosaicWindowProps[T] => reactLib.reactMod.Global.JSXNs.Element = null,
     renderToolbar: (/* props */ MosaicWindowProps[T], /* draggable */ js.UndefOr[scala.Boolean]) => reactLib.reactMod.Global.JSXNs.Element = null,
-    toolbarControls: reactLib.reactMod.ReactNs.ReactNode = null
+    toolbarControls: reactLib.reactMod.ReactNode = null
   ): MosaicWindowProps[T] = {
     val __obj = js.Dynamic.literal(path = path, title = title)
     if (additionalControlButtonText != null) __obj.updateDynamic("additionalControlButtonText")(additionalControlButtonText)

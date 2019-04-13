@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Breadcrumb
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libBreadcrumbMod.BreadcrumbNs.BreadcrumbProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[BreadcrumbProps, js.Object, js.Any]
 

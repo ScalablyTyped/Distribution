@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 trait Anon_Headers extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var overrideMimeType: js.UndefOr[java.lang.String] = js.undefined
-  var proxy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.DefaultProxy] = js.undefined
+  var proxy: js.UndefOr[cesiumLib.cesiumMod.DefaultProxy] = js.undefined
   var queryParameters: js.UndefOr[js.Any] = js.undefined
   var request: js.UndefOr[stdLib.Request] = js.undefined
   var responseType: js.UndefOr[java.lang.String] = js.undefined
   var retryAttempts: js.UndefOr[scala.Double] = js.undefined
-  var retryCallback: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback] = js.undefined
+  var retryCallback: js.UndefOr[cesiumLib.cesiumMod.ResourceNs.RetryCallback] = js.undefined
   var templateValues: js.UndefOr[js.Any] = js.undefined
   var url: java.lang.String
 }
@@ -24,12 +24,12 @@ object Anon_Headers {
     url: java.lang.String,
     headers: js.Any = null,
     overrideMimeType: java.lang.String = null,
-    proxy: cesiumLib.cesiumMod.CesiumNs.DefaultProxy = null,
+    proxy: cesiumLib.cesiumMod.DefaultProxy = null,
     queryParameters: js.Any = null,
     request: stdLib.Request = null,
     responseType: java.lang.String = null,
     retryAttempts: scala.Int | scala.Double = null,
-    retryCallback: cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback = null,
+    retryCallback: cesiumLib.cesiumMod.ResourceNs.RetryCallback = null,
     templateValues: js.Any = null
   ): Anon_Headers = {
     val __obj = js.Dynamic.literal(url = url)

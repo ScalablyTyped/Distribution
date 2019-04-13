@@ -7,25 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "OctetString")
 @js.native
-class OctetString ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.OctetString {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalOctetStringValueBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+class OctetString () extends BaseBlock[LocalOctetStringValueBlock] {
+  def this(params: LocalOctetStringValueBlockParams) = this()
   /**
-    * Convertion for the block to JSON object
+    * Checking that two OCTETSTRINGs are equal
     * 
-    * @returns {JsonLocalBaseBlock}
+    * @param {OctetString} octetString
+    * @returns {boolean}
     * 
-    * @memberOf LocalBaseBlock
+    * @memberOf OctetString
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  def isEqual(octetString: OctetString): scala.Boolean = js.native
 }
 

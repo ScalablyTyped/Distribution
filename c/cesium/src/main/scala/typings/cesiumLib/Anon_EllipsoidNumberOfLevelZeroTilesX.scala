@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EllipsoidNumberOfLevelZeroTilesX extends js.Object {
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var numberOfLevelZeroTilesX: js.UndefOr[scala.Double] = js.undefined
   var numberOfLevelZeroTilesY: js.UndefOr[scala.Double] = js.undefined
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
 }
 
 object Anon_EllipsoidNumberOfLevelZeroTilesX {
   @scala.inline
   def apply(
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     numberOfLevelZeroTilesX: scala.Int | scala.Double = null,
     numberOfLevelZeroTilesY: scala.Int | scala.Double = null,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null
+    rectangle: cesiumLib.cesiumMod.Rectangle = null
   ): Anon_EllipsoidNumberOfLevelZeroTilesX = {
     val __obj = js.Dynamic.literal()
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)

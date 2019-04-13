@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stream", JSImport.Namespace)
 @js.native
+class ^ () extends internal
+
+@JSImport("stream", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
   def finished(
     stream: nodeLib.NodeJSNs.ReadWriteStream,

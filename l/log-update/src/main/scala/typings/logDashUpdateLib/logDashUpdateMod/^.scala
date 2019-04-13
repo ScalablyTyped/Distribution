@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("log-update", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[
-      logDashUpdateLib.logDashUpdateMod.logUpdateNs.LogUpdate with logDashUpdateLib.Anon_CreateDefault
-    ]
+  extends org.scalablytyped.runtime.TopLevel[LogUpdate with logDashUpdateLib.Anon_CreateDefault]
 

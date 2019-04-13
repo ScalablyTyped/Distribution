@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class GuardDuty ()
-  extends awsDashSdkLib.clientsGuarddutyMod.namespaced {
-  def this(options: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsGuarddutyMod.^ {
+  def this(options: awsDashSdkLib.clientsGuarddutyMod.ClientConfiguration) = this()
 }
 

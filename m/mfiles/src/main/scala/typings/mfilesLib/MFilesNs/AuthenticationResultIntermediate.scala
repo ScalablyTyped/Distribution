@@ -15,3 +15,8 @@ class AuthenticationResultIntermediate ()
   override val AuthenticationData: mfilesLib.INamedValues = js.native
 }
 
+@JSGlobal("MFiles.AuthenticationResultIntermediate")
+@js.native
+object AuthenticationResultIntermediate
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAuthenticationResultIntermediate]
+

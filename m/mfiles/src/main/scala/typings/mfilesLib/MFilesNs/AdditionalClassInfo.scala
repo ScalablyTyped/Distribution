@@ -19,3 +19,8 @@ class AdditionalClassInfo ()
   override def Clone(): mfilesLib.IAdditionalClassInfo = js.native
 }
 
+@JSGlobal("MFiles.AdditionalClassInfo")
+@js.native
+object AdditionalClassInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAdditionalClassInfo]
+

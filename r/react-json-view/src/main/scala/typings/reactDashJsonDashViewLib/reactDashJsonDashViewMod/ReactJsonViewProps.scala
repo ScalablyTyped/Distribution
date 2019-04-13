@@ -149,7 +149,7 @@ trait ReactJsonViewProps extends js.Object {
     *
     * Default: "rjv-default"
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * RJV supports base-16 themes. Check out the list of supported themes in the demo.
     * A custom "rjv-default" theme applies by default.
@@ -194,7 +194,7 @@ object ReactJsonViewProps {
     onSelect: (js.Function1[/* select */ OnSelectProps, scala.Unit]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` = null,
     shouldCollapse: reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | (js.Function1[/* field */ CollapsedFieldProps, scala.Boolean]) = null,
     sortKeys: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ThemeKeys | ThemeObject = null,
     validationMessage: java.lang.String = null
   ): ReactJsonViewProps = {

@@ -25,7 +25,7 @@ trait FilePondBaseProps extends js.Object {
   /** Sets the given value to the capture attribute */
   var captureMethod: js.UndefOr[js.Any] = js.undefined
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[File] | js.Array[reactLib.reactMod.ReactNs.ReactElement[File]]
+    reactLib.reactMod.ReactElement[File] | js.Array[reactLib.reactMod.ReactElement[File]]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -50,7 +50,7 @@ object FilePondBaseProps {
     allowReplace: js.UndefOr[scala.Boolean] = js.undefined,
     allowRevert: js.UndefOr[scala.Boolean] = js.undefined,
     captureMethod: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactElement[File] | js.Array[reactLib.reactMod.ReactNs.ReactElement[File]] = null,
+    children: reactLib.reactMod.ReactElement[File] | js.Array[reactLib.reactMod.ReactElement[File]] = null,
     className: java.lang.String = null,
     id: java.lang.String = null,
     maxFiles: scala.Int | scala.Double = null,

@@ -17,7 +17,7 @@ package object reactDashMentionsMod {
     /* type */ java.lang.String, 
     java.lang.String
   ]
-  type MentionsInputClass = reactLib.reactMod.ReactNs.ComponentClass[MentionsInputProps, reactLib.reactMod.ReactNs.ComponentState]
+  type MentionsInputClass = reactLib.reactMod.ComponentClass[MentionsInputProps, reactLib.reactMod.ComponentState]
   type OnChangeHandlerFunc = js.Function4[
     /* event */ reactDashMentionsLib.Anon_Target, 
     /* newValue */ java.lang.String, 

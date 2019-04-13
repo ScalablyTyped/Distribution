@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object setStaticMod extends js.Object {
   def default(key: java.lang.String, value: js.Any): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactLib.reactMod.ReactNs.ComponentType[_]
+    /* component */ reactLib.reactMod.ComponentType[_], 
+    reactLib.reactMod.ComponentType[_]
   ] = js.native
 }
 

@@ -10,7 +10,7 @@ package object buildSrcUtilMod {
   type BodyResponseCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* body */ js.UndefOr[ResponseBody], 
-    /* res */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
+    /* res */ js.UndefOr[requestLib.requestMod.Response], 
     scala.Unit
   ]
   type OnAuthenticatedCallback = js.Function2[

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("express-routes-versioning", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressDashRoutesDashVersioningLib.expressDashRoutesDashVersioningMod.routesVersioningNs.RoutesVersioningMiddleware = js.native
+  def apply(): RoutesVersioningMiddleware = js.native
 }
 

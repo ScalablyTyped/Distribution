@@ -11,14 +11,14 @@ trait ServiceObjectParent extends js.Object {
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
   ): scala.Unit
-  def requestStream(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): requestLib.requestMod.requestNs.Request
+  def requestStream(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): requestLib.requestMod.Request
 }
 
 object ServiceObjectParent {
   @scala.inline
   def apply(
     request: (atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions, atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback) => scala.Unit,
-    requestStream: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions => requestLib.requestMod.requestNs.Request,
+    requestStream: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions => requestLib.requestMod.Request,
     Promise: stdLib.PromiseConstructor = null
   ): ServiceObjectParent = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction2(request), requestStream = js.Any.fromFunction1(requestStream))

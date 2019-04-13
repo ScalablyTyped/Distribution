@@ -28,11 +28,11 @@ object Replacement extends js.Object {
   def deleteFromTo(start: scala.Double, end: scala.Double): tslintLib.libLanguageRuleRuleMod.Replacement = js.native
   def deleteText(start: scala.Double, length: scala.Double): tslintLib.libLanguageRuleRuleMod.Replacement = js.native
   def replaceFromTo(start: scala.Double, end: scala.Double, text: java.lang.String): tslintLib.libLanguageRuleRuleMod.Replacement = js.native
-  def replaceNode(node: typescriptLib.typescriptMod.tsNs.Node, text: java.lang.String): tslintLib.libLanguageRuleRuleMod.Replacement = js.native
+  def replaceNode(node: typescriptLib.typescriptMod.Node, text: java.lang.String): tslintLib.libLanguageRuleRuleMod.Replacement = js.native
   def replaceNode(
-    node: typescriptLib.typescriptMod.tsNs.Node,
+    node: typescriptLib.typescriptMod.Node,
     text: java.lang.String,
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile
+    sourceFile: typescriptLib.typescriptMod.SourceFile
   ): tslintLib.libLanguageRuleRuleMod.Replacement = js.native
 }
 

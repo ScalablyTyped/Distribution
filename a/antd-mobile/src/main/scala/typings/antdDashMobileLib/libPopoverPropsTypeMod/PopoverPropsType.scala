@@ -10,13 +10,13 @@ trait PopoverPropsType extends js.Object {
   var onSelect: js.UndefOr[
     js.Function2[/* node */ js.Any, /* index */ js.UndefOr[scala.Double], scala.Unit]
   ] = js.undefined
-  var overlay: reactLib.reactMod.ReactNs.ReactNode
+  var overlay: reactLib.reactMod.ReactNode
 }
 
 object PopoverPropsType {
   @scala.inline
   def apply(
-    overlay: reactLib.reactMod.ReactNs.ReactNode,
+    overlay: reactLib.reactMod.ReactNode,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     onSelect: (/* node */ js.Any, /* index */ js.UndefOr[scala.Double]) => scala.Unit = null
   ): PopoverPropsType = {

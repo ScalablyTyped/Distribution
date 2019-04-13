@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class S3 ()
   extends awsDashSdkLib.awsDashSdkMod.S3 {
-  def this(options: awsDashSdkLib.clientsS3Mod.S3Ns.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsS3Mod.ClientConfiguration) = this()
 }
 

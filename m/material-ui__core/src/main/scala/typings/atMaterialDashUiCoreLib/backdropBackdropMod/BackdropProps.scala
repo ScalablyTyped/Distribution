@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade/Fade.FadeProps>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade/Fade.FadeProps>[P]} */ trait BackdropProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade/Fade.FadeProps>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade/Fade.FadeProps>[P]} */ trait BackdropProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BackdropClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var invisible: js.UndefOr[scala.Boolean] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.ReactEventHandler[js.Object]] = js.undefined
   var open: scala.Boolean
   var transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
 }
@@ -21,10 +21,10 @@ object BackdropProps {
     open: scala.Boolean,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BackdropClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     invisible: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onClick: reactLib.reactMod.ReactEventHandler[js.Object] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
   ): BackdropProps = {
     val __obj = js.Dynamic.literal(open = open)

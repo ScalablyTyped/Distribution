@@ -14,7 +14,7 @@ trait RefreshIndicatorProps extends js.Object {
   var status: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.ready | materialDashUiLib.materialDashUiLibStrings.loading | materialDashUiLib.materialDashUiLibStrings.hide
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var top: scala.Double
 }
 
@@ -28,7 +28,7 @@ object RefreshIndicatorProps {
     percentage: scala.Int | scala.Double = null,
     size: scala.Int | scala.Double = null,
     status: materialDashUiLib.materialDashUiLibStrings.ready | materialDashUiLib.materialDashUiLibStrings.loading | materialDashUiLib.materialDashUiLibStrings.hide = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): RefreshIndicatorProps = {
     val __obj = js.Dynamic.literal(left = left, top = top)
     if (color != null) __obj.updateDynamic("color")(color)

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashDaterangeDashPickerLibComponents {
   @scala.inline
-  def ReactDashDaterangeDashPicker: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashDaterangeDashPicker: reactLib.reactMod.ComponentType[
     reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.DateRangePicker]
-  ] = js.constructorOf[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.DateRangePicker]]]
   @scala.inline
   def Props: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props.type = reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props

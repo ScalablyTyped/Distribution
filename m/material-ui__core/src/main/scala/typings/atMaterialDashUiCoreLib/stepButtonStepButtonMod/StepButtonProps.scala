@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[StepButtonIcon] = js.undefined
   var last: js.UndefOr[scala.Boolean] = js.undefined
-  var optional: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var optional: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var orientation: js.UndefOr[atMaterialDashUiCoreLib.stepperStepperMod.Orientation] = js.undefined
 }
 
@@ -29,11 +29,11 @@ object StepButtonProps {
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: StepButtonIcon = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     last: js.UndefOr[scala.Boolean] = js.undefined,
-    optional: reactLib.reactMod.ReactNs.ReactNode = null,
+    optional: reactLib.reactMod.ReactNode = null,
     orientation: atMaterialDashUiCoreLib.stepperStepperMod.Orientation = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): StepButtonProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

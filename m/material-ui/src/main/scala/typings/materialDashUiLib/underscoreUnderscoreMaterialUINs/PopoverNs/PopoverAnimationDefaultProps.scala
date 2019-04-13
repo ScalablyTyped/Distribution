@@ -16,7 +16,7 @@ object PopoverAnimationDefaultProps {
   def apply(
     open: scala.Boolean,
     className: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     zDepth: scala.Int | scala.Double = null
   ): PopoverAnimationDefaultProps = {

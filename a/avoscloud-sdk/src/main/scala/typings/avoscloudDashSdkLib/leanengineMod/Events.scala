@@ -36,14 +36,14 @@ class Events ()
 @JSImport("leanengine", "Events")
 @js.native
 object Events extends js.Object {
-  def bind(): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def off(events: js.Array[java.lang.String]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def off(events: js.Array[java.lang.String], callback: js.Function): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def off(events: js.Array[java.lang.String], callback: js.Function, context: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def on(events: js.Array[java.lang.String]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def on(events: js.Array[java.lang.String], callback: js.Function): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def on(events: js.Array[java.lang.String], callback: js.Function, context: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def trigger(events: js.Array[java.lang.String]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
-  def unbind(): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Events = js.native
+  def bind(): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def off(events: js.Array[java.lang.String]): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def off(events: js.Array[java.lang.String], callback: js.Function): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def off(events: js.Array[java.lang.String], callback: js.Function, context: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def on(events: js.Array[java.lang.String]): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def on(events: js.Array[java.lang.String], callback: js.Function): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def on(events: js.Array[java.lang.String], callback: js.Function, context: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def trigger(events: js.Array[java.lang.String]): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
+  def unbind(): avoscloudDashSdkLib.avoscloudDashSdkMod.Events = js.native
 }
 

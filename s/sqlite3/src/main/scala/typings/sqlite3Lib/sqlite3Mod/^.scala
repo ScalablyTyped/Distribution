@@ -14,7 +14,6 @@ object ^ extends js.Object {
   val OPEN_READWRITE: scala.Double = js.native
   val OPEN_SHAREDCACHE: scala.Double = js.native
   val OPEN_URI: scala.Double = js.native
-  val cached: sqlite3Lib.Anon_Callback = js.native
   def verbose(): sqlite3 = js.native
 }
 

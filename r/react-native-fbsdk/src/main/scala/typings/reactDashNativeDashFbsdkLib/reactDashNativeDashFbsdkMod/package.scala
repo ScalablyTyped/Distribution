@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashFbsdkMod {
   type GraphRequestCallback = js.Function2[/* error */ js.UndefOr[js.Object], /* result */ js.UndefOr[js.Object], scala.Unit]
+  type GraphRequestParameters = org.scalablytyped.runtime.StringDictionary[js.Object]
+  type OpenGraphProperties = org.scalablytyped.runtime.StringDictionary[OpenGraphValue]
+  type Params = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
   /* Rewritten from type alias, can be one of: 
     - reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.public_profile
     - reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.user_friends

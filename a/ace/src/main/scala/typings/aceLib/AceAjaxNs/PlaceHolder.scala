@@ -103,21 +103,31 @@ class PlaceHolderCls protected () extends PlaceHolder {
   override def showOtherMarkers(): scala.Unit = js.native
 }
 
-object PlaceHolder {
-  @scala.inline
-  def apply(
-    cancel: () => scala.Unit,
-    detach: () => scala.Unit,
-    hideOtherMarkers: () => scala.Unit,
-    on: (java.lang.String, js.Function1[/* e */ js.Any, _]) => scala.Unit,
-    onCursorChange: () => scala.Unit,
-    onUpdate: () => scala.Unit,
-    setup: () => scala.Unit,
-    showOtherMarkers: () => scala.Unit
-  ): PlaceHolder = {
-    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), detach = js.Any.fromFunction0(detach), hideOtherMarkers = js.Any.fromFunction0(hideOtherMarkers), on = js.Any.fromFunction2(on), onCursorChange = js.Any.fromFunction0(onCursorChange), onUpdate = js.Any.fromFunction0(onUpdate), setup = js.Any.fromFunction0(setup), showOtherMarkers = js.Any.fromFunction0(showOtherMarkers))
-  
-    __obj.asInstanceOf[PlaceHolder]
-  }
-}
+@JSGlobal("AceAjax.PlaceHolder")
+@js.native
+object PlaceHolder
+  extends /**
+  * - @param session (Document): The document to associate with the anchor
+  * - @param length (Number): The starting row position
+  * - @param pos (Number): The starting column position
+  * - @param others (String):
+  * - @param mainClass (String):
+  * - @param othersClass (String):
+  **/
+org.scalablytyped.runtime.Instantiable6[
+      /* session */ Document, 
+      /* length */ scala.Double, 
+      /* pos */ scala.Double, 
+      /* others */ java.lang.String, 
+      /* mainClass */ java.lang.String, 
+      /* othersClass */ java.lang.String, 
+      PlaceHolder
+    ]
+     with org.scalablytyped.runtime.Instantiable4[
+      /* session */ IEditSession, 
+      /* length */ scala.Double, 
+      /* pos */ Position, 
+      /* positions */ js.Array[Position], 
+      PlaceHolder
+    ]
 

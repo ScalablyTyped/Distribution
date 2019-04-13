@@ -16,7 +16,7 @@ trait StrictTextAreaProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ TextAreaProps, 
       scala.Unit
     ]
@@ -29,7 +29,7 @@ trait StrictTextAreaProps extends js.Object {
     */
   var onInput: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ TextAreaProps, 
       scala.Unit
     ]
@@ -44,8 +44,8 @@ object StrictTextAreaProps {
   @scala.inline
   def apply(
     as: js.Any = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
-    onInput: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
+    onInput: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
     rows: scala.Double | java.lang.String = null,
     value: scala.Double | java.lang.String = null
   ): StrictTextAreaProps = {

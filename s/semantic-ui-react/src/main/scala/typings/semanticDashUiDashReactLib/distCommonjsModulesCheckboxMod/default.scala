@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Checkbox", "default")
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) = this()

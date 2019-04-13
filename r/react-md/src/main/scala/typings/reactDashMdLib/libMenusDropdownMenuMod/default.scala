@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Menus/DropdownMenu", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[DropdownMenuProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[DropdownMenuProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: DropdownMenuProps) = this()
   def this(props: DropdownMenuProps, context: js.Any) = this()
 }

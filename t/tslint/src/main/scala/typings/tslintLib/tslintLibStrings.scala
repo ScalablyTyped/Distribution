@@ -48,6 +48,9 @@ object tslintLibStrings {
     extends tslintLib.libLanguageRuleRuleMod.RuleType
   
   @js.native
+  sealed trait tslintDOTjson extends js.Object
+  
+  @js.native
   sealed trait typescript
     extends tslintLib.libLanguageRuleRuleMod.RuleType
   
@@ -96,6 +99,8 @@ object tslintLibStrings {
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def style: style = "style".asInstanceOf[style]
+  @scala.inline
+  def tslintDOTjson: tslintDOTjson = "tslint.json".asInstanceOf[tslintDOTjson]
   @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   @scala.inline

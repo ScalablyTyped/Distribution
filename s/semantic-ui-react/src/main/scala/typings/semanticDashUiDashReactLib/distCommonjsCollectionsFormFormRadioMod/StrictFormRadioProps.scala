@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps because var conflicts: as, className, disabled, label, `type`. Inlined children, content, control, error, `inline`, required, width */ trait StrictFormRadioProps
   extends semanticDashUiDashReactLib.distCommonjsAddonsRadioRadioMod.StrictRadioProps {
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Shorthand for primary content. */
   var content: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent] = js.undefined
   /** A FormField control prop. */
@@ -29,7 +29,7 @@ object StrictFormRadioProps {
   def apply(
     as: js.Any = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
@@ -43,10 +43,10 @@ object StrictFormRadioProps {
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
     name: java.lang.String = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLInputElement], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
-    onMouseDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
-    onMouseUp: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLInputElement], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
+    onMouseDown: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
+    onMouseUp: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps) => scala.Unit = null,
     radio: js.UndefOr[scala.Boolean] = js.undefined,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.Any = null,

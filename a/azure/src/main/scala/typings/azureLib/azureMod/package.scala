@@ -24,6 +24,7 @@ package object azureMod {
     /* response */ WebResponse, 
     scala.Unit
   ]
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ErrorCallback = js.Function1[/* error */ stdLib.Error, scala.Unit]
   type GetBlobToTextCallback = js.Function4[
     /* err */ stdLib.Error, 
@@ -72,6 +73,7 @@ package object azureMod {
   type SimpleCallback[T] = js.Function2[/* error */ stdLib.Error, /* result */ T, scala.Unit]
   type StorageCallback[T] = js.Function3[/* err */ stdLib.Error, /* result */ T, /* response */ WebResponse, scala.Unit]
   type StorageCallbackVoid = js.Function2[/* err */ stdLib.Error, /* response */ WebResponse, scala.Unit]
+  type StorageMetadata = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type StorageServicePropertiesCallback = StorageCallback[StorageServiceProperties]
   type StorageServiceStatsCallback = StorageCallback[StorageServiceStats]
   type TableRequestCallback = js.Function3[

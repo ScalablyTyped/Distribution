@@ -15,7 +15,7 @@ object IndexDatatypeNs extends js.Object {
     byteOffset: scala.Double,
     length: scala.Double
   ): stdLib.Uint16Array | stdLib.Uint32Array = js.native
-  def getSizeInBytes(indexDatatype: cesiumLib.cesiumMod.CesiumNs.IndexDatatype): scala.Double = js.native
-  def validate(indexDatatype: cesiumLib.cesiumMod.CesiumNs.IndexDatatype): scala.Boolean = js.native
+  def getSizeInBytes(indexDatatype: cesiumLib.cesiumMod.IndexDatatype): scala.Double = js.native
+  def validate(indexDatatype: cesiumLib.cesiumMod.IndexDatatype): scala.Boolean = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SortableGridStatic
-  extends reactLib.reactMod.ReactNs.ClassicComponentClass[SortableGridProps] {
+  extends reactLib.reactMod.ClassicComponentClass[SortableGridProps] {
   /**
     * Calling this will toggle item deletion mode on/off.
     */

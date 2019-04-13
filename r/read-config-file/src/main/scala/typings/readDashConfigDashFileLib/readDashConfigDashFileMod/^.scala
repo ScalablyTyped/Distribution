@@ -21,7 +21,7 @@ object ^ extends js.Object {
     scheme: lazyDashValLib.lazyDashValMod.Lazy[_],
     errorMessage: js.Function2[
       /* error */ java.lang.String, 
-      /* errors */ js.Array[ajvLib.ajvMod.ajvNs.ErrorObject], 
+      /* errors */ js.Array[ajvLib.ajvMod.ErrorObject], 
       java.lang.String
     ]
   ): js.Promise[scala.Unit] = js.native

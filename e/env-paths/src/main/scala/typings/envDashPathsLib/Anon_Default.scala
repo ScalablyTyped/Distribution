@@ -21,7 +21,7 @@ trait Anon_Default extends js.Object {
   	//=> '/home/sindresorhus/.config/MyApp-nodejs'
   	```
   	*/
-  def apply(name: java.lang.String): envDashPathsLib.envDashPathsMod.envPathsNs.Paths = js.native
-  def apply(name: java.lang.String, options: envDashPathsLib.envDashPathsMod.envPathsNs.Options): envDashPathsLib.envDashPathsMod.envPathsNs.Paths = js.native
+  def apply(name: java.lang.String): envDashPathsLib.envDashPathsMod.Paths = js.native
+  def apply(name: java.lang.String, options: envDashPathsLib.envDashPathsMod.Options): envDashPathsLib.envDashPathsMod.Paths = js.native
 }
 

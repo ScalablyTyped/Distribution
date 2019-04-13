@@ -19,3 +19,8 @@ class FolderListingColumnSorting ()
   override def Clone(): mfilesLib.IFolderListingColumnSorting = js.native
 }
 
+@JSGlobal("MFiles.FolderListingColumnSorting")
+@js.native
+object FolderListingColumnSorting
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderListingColumnSorting]
+

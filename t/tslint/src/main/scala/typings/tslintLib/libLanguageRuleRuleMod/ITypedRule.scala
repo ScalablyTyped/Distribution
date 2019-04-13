@@ -6,17 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITypedRule extends IRule {
-  def applyWithProgram(
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
-    program: typescriptLib.typescriptMod.tsNs.Program
-  ): js.Array[RuleFailure]
+  def applyWithProgram(sourceFile: typescriptLib.typescriptMod.SourceFile, program: typescriptLib.typescriptMod.Program): js.Array[RuleFailure]
 }
 
 object ITypedRule {
   @scala.inline
   def apply(
-    apply: typescriptLib.typescriptMod.tsNs.SourceFile => js.Array[RuleFailure],
-    applyWithProgram: (typescriptLib.typescriptMod.tsNs.SourceFile, typescriptLib.typescriptMod.tsNs.Program) => js.Array[RuleFailure],
+    apply: typescriptLib.typescriptMod.SourceFile => js.Array[RuleFailure],
+    applyWithProgram: (typescriptLib.typescriptMod.SourceFile, typescriptLib.typescriptMod.Program) => js.Array[RuleFailure],
     applyWithWalker: tslintLib.libLanguageWalkerWalkerMod.IWalker => js.Array[RuleFailure],
     getOptions: () => IOptions,
     isEnabled: () => scala.Boolean

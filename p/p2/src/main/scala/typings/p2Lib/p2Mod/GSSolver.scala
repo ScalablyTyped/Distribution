@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "GSSolver")
 @js.native
-class GSSolver ()
-  extends p2Lib.p2Mod.p2Ns.GSSolver {
-  def this(options: p2Lib.p2Mod.p2Ns.GSSolverOptions) = this()
+class GSSolver () extends Solver {
+  def this(options: GSSolverOptions) = this()
+  var frictionIterations: scala.Double = js.native
+  var iterations: scala.Double = js.native
+  var tolerance: scala.Double = js.native
+  var usedIterations: scala.Double = js.native
 }
 

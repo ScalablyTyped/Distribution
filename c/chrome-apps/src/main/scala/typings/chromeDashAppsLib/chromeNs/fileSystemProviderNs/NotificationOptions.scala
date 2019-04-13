@@ -13,7 +13,7 @@ trait NotificationOptions extends js.Object {
     * @see ChangeType
     */
   var changeType: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_CHANGEDDELETED, 
+    chromeDashAppsLib.Anon_CHANGED, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
@@ -41,7 +41,7 @@ object NotificationOptions {
   @scala.inline
   def apply(
     changeType: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_CHANGEDDELETED, 
+      chromeDashAppsLib.Anon_CHANGED, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 

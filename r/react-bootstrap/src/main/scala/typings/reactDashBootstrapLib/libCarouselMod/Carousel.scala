@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Carousel
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libCarouselMod.CarouselNs.CarouselProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[CarouselProps, js.Object, js.Any]
 

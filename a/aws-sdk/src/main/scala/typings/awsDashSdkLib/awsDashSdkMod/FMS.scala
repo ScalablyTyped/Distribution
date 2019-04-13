@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class FMS ()
   extends awsDashSdkLib.clientsAllMod.FMS {
-  def this(options: awsDashSdkLib.clientsFmsMod.FMSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsFmsMod.ClientConfiguration) = this()
 }
 

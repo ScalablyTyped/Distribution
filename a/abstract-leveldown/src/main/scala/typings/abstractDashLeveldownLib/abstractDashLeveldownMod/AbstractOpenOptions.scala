@@ -13,10 +13,12 @@ trait AbstractOpenOptions extends AbstractOptions {
 object AbstractOpenOptions {
   @scala.inline
   def apply(
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     createIfMissing: js.UndefOr[scala.Boolean] = js.undefined,
     errorIfExists: js.UndefOr[scala.Boolean] = js.undefined
   ): AbstractOpenOptions = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(createIfMissing)) __obj.updateDynamic("createIfMissing")(createIfMissing)
     if (!js.isUndefined(errorIfExists)) __obj.updateDynamic("errorIfExists")(errorIfExists)
     __obj.asInstanceOf[AbstractOpenOptions]

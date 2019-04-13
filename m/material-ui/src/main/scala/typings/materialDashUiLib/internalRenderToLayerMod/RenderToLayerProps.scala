@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RenderToLayerProps
-  extends reactLib.reactMod.ReactNs.Props[RenderToLayer] {
+  extends reactLib.reactMod.Props[RenderToLayer] {
   var componentClickAway: js.UndefOr[js.Function] = js.undefined
   var open: scala.Boolean
   var render: js.Function
@@ -18,10 +18,10 @@ object RenderToLayerProps {
   def apply(
     open: scala.Boolean,
     render: js.Function,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     componentClickAway: js.Function = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[RenderToLayer] = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[RenderToLayer] = null,
     useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined
   ): RenderToLayerProps = {
     val __obj = js.Dynamic.literal(open = open, render = render)

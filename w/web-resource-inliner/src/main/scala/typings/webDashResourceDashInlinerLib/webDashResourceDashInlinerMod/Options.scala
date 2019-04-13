@@ -83,8 +83,8 @@ trait Options extends js.Object {
     */
   var requestTransform: js.UndefOr[
     js.Function1[
-      /* requestOptions */ requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
+      /* requestOptions */ requestLib.requestMod.RequiredUriUrl with requestLib.requestMod.CoreOptions, 
+      requestLib.requestMod.RequiredUriUrl with requestLib.requestMod.CoreOptions
     ]
   ] = js.undefined
   /**
@@ -135,7 +135,7 @@ object Options {
     links: scala.Boolean | scala.Double = null,
     rebaseRelativeTo: java.lang.String = null,
     relativeTo: java.lang.String = null,
-    requestTransform: /* requestOptions */ requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions => requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions = null,
+    requestTransform: /* requestOptions */ requestLib.requestMod.RequiredUriUrl with requestLib.requestMod.CoreOptions => requestLib.requestMod.RequiredUriUrl with requestLib.requestMod.CoreOptions = null,
     scriptTransform: (/* content */ java.lang.String, /* done */ Callback) => _ = null,
     scripts: scala.Boolean | scala.Double = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,

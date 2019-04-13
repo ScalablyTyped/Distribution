@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-typescript/release/host", "Host")
 @js.native
 class Host protected ()
-  extends typescriptLib.typescriptMod.tsNs.CompilerHost {
-  def this(typescript: gulpDashTypescriptLib.Anon_08, currentDirectory: java.lang.String, input: gulpDashTypescriptLib.releaseInputMod.FileCache, options: typescriptLib.typescriptMod.tsNs.CompilerOptions) = this()
+  extends typescriptLib.typescriptMod.CompilerHost {
+  def this(typescript: gulpDashTypescriptLib.Anon_08, currentDirectory: java.lang.String, input: gulpDashTypescriptLib.releaseInputMod.FileCache, options: typescriptLib.typescriptMod.CompilerOptions) = this()
   var currentDirectory: java.lang.String = js.native
-  var fallback: typescriptLib.typescriptMod.tsNs.CompilerHost = js.native
+  var fallback: typescriptLib.typescriptMod.CompilerHost = js.native
   var input: gulpDashTypescriptLib.releaseInputMod.FileCache = js.native
   var typescript: gulpDashTypescriptLib.Anon_08 = js.native
   @JSName("directoryExists")

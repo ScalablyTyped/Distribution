@@ -15,7 +15,7 @@ trait ModalProps extends js.Object {
   var backdropOpacity: js.UndefOr[scala.Double] = js.undefined
   var backdropTransitionInTiming: js.UndefOr[scala.Double] = js.undefined
   var backdropTransitionOutTiming: js.UndefOr[scala.Double] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var deviceHeight: js.UndefOr[scala.Double] = js.undefined
   var deviceWidth: js.UndefOr[scala.Double] = js.undefined
   var hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined
@@ -58,7 +58,7 @@ trait ModalProps extends js.Object {
 object ModalProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     isVisible: scala.Boolean,
     animationIn: AnimationConfig = null,
     animationInTiming: scala.Int | scala.Double = null,

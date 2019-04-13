@@ -132,11 +132,6 @@ trait File
   			 */
   def getParent(): java.lang.String | File = js.native
   /**
-  			 * Gets the value of the <Titanium.Filesystem.File.parent> property.
-  			 */
-  @JSName("getParent")
-  def getParent_File(): File = js.native
-  /**
   			 * Returns the protection key value of this file object.
   			 * Returns `null` if there's an error.
   			 */

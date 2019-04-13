@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LoopableProps
-  extends reactLib.reactMod.ReactNs.Props[js.Any] {
+  extends reactLib.reactMod.Props[js.Any] {
   var even: js.UndefOr[scala.Boolean] = js.undefined
   var `first-child`: js.UndefOr[scala.Boolean] = js.undefined
   var `last-child`: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,13 +18,13 @@ object LoopableProps {
   @scala.inline
   def apply(
     `nth-child`: scala.Double,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     even: js.UndefOr[scala.Boolean] = js.undefined,
     `first-child`: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     `last-child`: js.UndefOr[scala.Boolean] = js.undefined,
     odd: js.UndefOr[scala.Boolean] = js.undefined,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
+    ref: reactLib.reactMod.LegacyRef[js.Any] = null
   ): LoopableProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("nth-child")(`nth-child`)

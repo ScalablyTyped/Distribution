@@ -16,12 +16,12 @@ trait MenuProps extends js.Object {
   var dropProps: js.UndefOr[grommetLib.componentsDropMod.DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNode] = js.undefined
   var items: js.Array[js.Object]
   var justifyContent: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.between | grommetLib.grommetLibStrings.around | grommetLib.grommetLibStrings.stretch
   ] = js.undefined
-  var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String
   ] = js.undefined
@@ -43,9 +43,9 @@ object MenuProps {
     dropProps: grommetLib.componentsDropMod.DropProps = null,
     dropTarget: js.Object = null,
     gridArea: java.lang.String = null,
-    icon: scala.Boolean | reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: scala.Boolean | reactLib.reactMod.ReactNode = null,
     justifyContent: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.between | grommetLib.grommetLibStrings.around | grommetLib.grommetLibStrings.stretch = null,
-    label: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    label: java.lang.String | reactLib.reactMod.ReactNode = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     messages: grommetLib.Anon_CloseMenu = null,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null

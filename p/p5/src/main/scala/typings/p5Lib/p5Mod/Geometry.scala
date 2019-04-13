@@ -5,52 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("p5", "Geometry")
-@js.native
-/**
-  *   p5 Geometry class
-  *
-  *   @param [detailX] number of vertices on horizontal
-  *   surface
-  *   @param [detailY] number of vertices on horizontal
-  *   surface
-  *   @param [callback] function to call upon object
-  *   instantiation.
-  */
-class Geometry ()
-  extends p5Lib.p5Mod.p5Ns.Geometry {
-  def this(detailX: scala.Double) = this()
-  def this(detailX: scala.Double, detailY: scala.Double) = this()
-  def this(detailX: scala.Double, detailY: scala.Double, callback: js.Function1[/* repeated */ js.Any, _]) = this()
+trait Geometry extends js.Object {
   /**
     *   Averages the vertex normals. Used in curved
     *   surfaces
     *   @chainable
     */
-  /* CompleteClass */
-  override def averageNormals(): Geometry = js.native
+  def averageNormals(): Geometry
   /**
     *   Averages pole normals. Used in spherical
     *   primitives
     *   @chainable
     */
-  /* CompleteClass */
-  override def averagePoleNormals(): Geometry = js.native
-  /* CompleteClass */
-  override def computeFaces(): Geometry = js.native
+  def averagePoleNormals(): Geometry
+  def computeFaces(): Geometry
   /**
     *   computes smooth normals per vertex as an average
     *   of each face.
     *   @chainable
     */
-  /* CompleteClass */
-  override def computeNormals(): Geometry = js.native
+  def computeNormals(): Geometry
   /**
     *   Modifies all vertices to be centered within the
     *   range -100 to 100.
     *   @chainable
     */
-  /* CompleteClass */
-  override def normalize(): Geometry = js.native
+  def normalize(): Geometry
+}
+
+object Geometry {
+  @scala.inline
+  def apply(
+    averageNormals: () => Geometry,
+    averagePoleNormals: () => Geometry,
+    computeFaces: () => Geometry,
+    computeNormals: () => Geometry,
+    normalize: () => Geometry
+  ): Geometry = {
+    val __obj = js.Dynamic.literal(averageNormals = js.Any.fromFunction0(averageNormals), averagePoleNormals = js.Any.fromFunction0(averagePoleNormals), computeFaces = js.Any.fromFunction0(computeFaces), computeNormals = js.Any.fromFunction0(computeNormals), normalize = js.Any.fromFunction0(normalize))
+  
+    __obj.asInstanceOf[Geometry]
+  }
 }
 

@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation._
   // Mousewheel options
   var scrollWheelZoom: js.UndefOr[leafletLib.leafletMod.Zoom] = js.undefined
   var setView: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   // Touch interaction options
   var tap: js.UndefOr[scala.Boolean] = js.undefined
   var tapTolerance: js.UndefOr[scala.Double] = js.undefined
@@ -148,7 +148,7 @@ object MapProps {
     renderer: leafletLib.leafletMod.Renderer = null,
     scrollWheelZoom: leafletLib.leafletMod.Zoom = null,
     setView: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tap: js.UndefOr[scala.Boolean] = js.undefined,
     tapTolerance: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null,

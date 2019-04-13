@@ -30,7 +30,7 @@ trait UploadProps extends js.Object {
   var openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showUploadList: js.UndefOr[scala.Boolean | ShowUploadListInterface] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var supportServerRender: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[UploadType] = js.undefined
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
@@ -61,7 +61,7 @@ object UploadProps {
     openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
     showUploadList: scala.Boolean | ShowUploadListInterface = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     supportServerRender: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: UploadType = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined

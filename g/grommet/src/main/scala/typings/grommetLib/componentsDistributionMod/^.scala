@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Distribution", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Distribution: reactLib.reactMod.ReactNs.ComponentClass[
-    DistributionProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Distribution: reactLib.reactMod.ComponentClass[
+    DistributionProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashModalLibComponents {
   @scala.inline
-  def ReactDashModal: reactLib.reactMod.ReactNs.ComponentType[reactDashModalLib.reactDashModalMod.ReactModalNs.Props] = js.constructorOf[reactDashModalLib.reactDashModalMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashModalLib.reactDashModalMod.ReactModalNs.Props]]
+  def ReactDashModal: reactLib.reactMod.ComponentType[reactDashModalLib.reactDashModalMod.Props] = js.constructorOf[reactDashModalLib.reactDashModalMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashModalLib.reactDashModalMod.Props]]
   @scala.inline
-  def Props: reactDashModalLib.reactDashModalMod.ReactModalNs.Props.type = reactDashModalLib.reactDashModalMod.ReactModalNs.Props
-  type Props = reactDashModalLib.reactDashModalMod.ReactModalNs.Props
+  def Props: reactDashModalLib.reactDashModalMod.Props.type = reactDashModalLib.reactDashModalMod.Props
+  type Props = reactDashModalLib.reactDashModalMod.Props
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Kafka ()
-  extends awsDashSdkLib.clientsKafkaMod.namespaced {
-  def this(options: awsDashSdkLib.clientsKafkaMod.KafkaNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsKafkaMod.^ {
+  def this(options: awsDashSdkLib.clientsKafkaMod.ClientConfiguration) = this()
 }
 

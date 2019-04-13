@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "MissingFilter")
 @js.native
-class MissingFilter protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter {
+class MissingFilter protected () extends Filter {
   /*
     Filters documents where a specific field has no value present.
     */
@@ -16,42 +15,34 @@ class MissingFilter protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter = js.native
+  def cache(trueFalse: scala.Boolean): MissingFilter = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter = js.native
+  def cacheKey(key: java.lang.String): MissingFilter = js.native
   /*
     Checks if the field doesn't exist.
     */
-  /* CompleteClass */
-  override def existence(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter = js.native
+  def existence(trueFalse: scala.Boolean): MissingFilter = js.native
   /*
     Sets the field to check for missing values.
     */
-  /* CompleteClass */
-  override def field(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter = js.native
+  def field(name: java.lang.String): MissingFilter = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter = js.native
+  def name(name: java.lang.String): MissingFilter = js.native
   /*
     Checks if the field has null values.
     */
-  /* CompleteClass */
-  override def nullValue(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter = js.native
+  def nullValue(trueFalse: scala.Boolean): MissingFilter = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MissingFilter = js.native
+  def toJSON(): MissingFilter = js.native
 }
 

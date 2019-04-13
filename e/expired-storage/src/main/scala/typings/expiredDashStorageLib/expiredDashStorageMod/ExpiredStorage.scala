@@ -54,7 +54,7 @@ trait ExpiredStorage extends js.Object {
     * @param key Item key to get (string).
     * @return PeekInterface with: {value, timeLeft, isExpired}
     */
-  def peek(key: java.lang.String): expiredDashStorageLib.expiredDashStorageMod.ExpiredStorageNs.PeekInterface = js.native
+  def peek(key: java.lang.String): PeekInterface = js.native
   /**
     * Remove an item.
     * @param key Item key to remove (string).

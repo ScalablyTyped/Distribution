@@ -12,6 +12,6 @@ trait ResponseToolkit extends js.Object {
     * @see {@link https://github.com/hapijs/inert#replyfilepath-options}
     */
   def file(path: java.lang.String): atHapiHapiLib.atHapiHapiMod.ResponseObject = js.native
-  def file(path: java.lang.String, options: atHapiInertLib.atHapiInertMod.inertNs.ReplyFileHandlerOptions): atHapiHapiLib.atHapiHapiMod.ResponseObject = js.native
+  def file(path: java.lang.String, options: atHapiInertLib.atHapiInertMod.ReplyFileHandlerOptions): atHapiHapiLib.atHapiHapiMod.ResponseObject = js.native
 }
 

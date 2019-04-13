@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("dgram", "Socket")
 @js.native
 class Socket ()
-  extends fibjsLib.dgramMod.dgramNs.Socket
+  extends fibjsLib.Class_DgramSocket
 

@@ -12,7 +12,7 @@ trait Anon_AllowPickingAsynchronous extends js.Object {
   var debugWireframe: js.UndefOr[scala.Boolean] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var minimumPixelSize: js.UndefOr[scala.Double] = js.undefined
-  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
+  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
   var scale: js.UndefOr[scala.Double] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var url: java.lang.String
@@ -28,7 +28,7 @@ object Anon_AllowPickingAsynchronous {
     debugWireframe: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Any = null,
     minimumPixelSize: scala.Int | scala.Double = null,
-    modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
+    modelMatrix: cesiumLib.cesiumMod.Matrix4 = null,
     scale: scala.Int | scala.Double = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AllowPickingAsynchronous = {

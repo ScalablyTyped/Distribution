@@ -7,25 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "Material")
 @js.native
-class Material ()
-  extends cesiumLib.cesiumMod.CesiumNs.Material {
+class Material () extends js.Object {
   def this(options: cesiumLib.Anon_Fabric) = this()
-  /* CompleteClass */
-  override var materials: js.Any = js.native
-  /* CompleteClass */
-  override var shaderSource: java.lang.String = js.native
-  /* CompleteClass */
-  override var translucent: scala.Boolean = js.native
-  /* CompleteClass */
-  override var `type`: java.lang.String = js.native
-  /* CompleteClass */
-  override var uniforms: js.Any = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
-  /* CompleteClass */
-  override def isTranslucent(): scala.Boolean = js.native
+  var materials: js.Any = js.native
+  var shaderSource: java.lang.String = js.native
+  var translucent: scala.Boolean = js.native
+  var `type`: java.lang.String = js.native
+  var uniforms: js.Any = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
+  def isTranslucent(): scala.Boolean = js.native
 }
 
 /* static members */
@@ -52,7 +43,7 @@ object Material extends js.Object {
   var SpecularMapType: java.lang.String = js.native
   var StripeType: java.lang.String = js.native
   var WaterType: java.lang.String = js.native
-  def fromType(`type`: java.lang.String): cesiumLib.cesiumMod.CesiumNs.Material = js.native
-  def fromType(`type`: java.lang.String, uniforms: js.Any): cesiumLib.cesiumMod.CesiumNs.Material = js.native
+  def fromType(`type`: java.lang.String): cesiumLib.cesiumMod.Material = js.native
+  def fromType(`type`: java.lang.String, uniforms: js.Any): cesiumLib.cesiumMod.Material = js.native
 }
 

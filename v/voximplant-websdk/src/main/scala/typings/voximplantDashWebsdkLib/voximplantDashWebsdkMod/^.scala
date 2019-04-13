@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
   	*	Get Client instance to use platform functions
   	*/
-  def getInstance(): voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Client = js.native
+  def getInstance(): Client = js.native
   /**
   	*	VoxImplant Web SDK lib version
   	*/

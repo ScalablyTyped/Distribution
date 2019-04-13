@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class FunctionConverter ()
   extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[
-      typescriptLib.typescriptMod.tsNs.FunctionDeclaration | typescriptLib.typescriptMod.tsNs.MethodDeclaration
+      typescriptLib.typescriptMod.FunctionDeclaration | typescriptLib.typescriptMod.MethodDeclaration
     ] {
   def convert(
     context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.FunctionDeclaration
+    node: typescriptLib.typescriptMod.FunctionDeclaration
   ): js.UndefOr[typedocLib.distLibModelsMod.Reflection] = js.native
   def convert(
     context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.MethodDeclaration
+    node: typescriptLib.typescriptMod.MethodDeclaration
   ): js.UndefOr[typedocLib.distLibModelsMod.Reflection] = js.native
 }
 

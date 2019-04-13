@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-foundation/components/button-group", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ButtonGroup: reactLib.reactMod.ReactNs.StatelessComponent[ButtonGroupProps] = js.native
+  val ButtonGroup: reactLib.reactMod.StatelessComponent[ButtonGroupProps] = js.native
 }
 

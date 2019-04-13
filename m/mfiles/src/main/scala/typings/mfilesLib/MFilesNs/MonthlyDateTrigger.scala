@@ -15,3 +15,8 @@ class MonthlyDateTrigger ()
   override var Months: MFTriggerMonth = js.native
 }
 
+@JSGlobal("MFiles.MonthlyDateTrigger")
+@js.native
+object MonthlyDateTrigger
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMonthlyDateTrigger]
+

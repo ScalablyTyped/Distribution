@@ -25,12 +25,6 @@ object ramdaLibStrings {
   sealed trait Function extends js.Object
   
   @js.native
-  sealed trait Merge extends js.Object
-  
-  @js.native
-  sealed trait MergeDeep extends js.Object
-  
-  @js.native
   sealed trait Null extends js.Object
   
   @js.native
@@ -69,10 +63,6 @@ object ramdaLibStrings {
   def Evolve: Evolve = "Evolve".asInstanceOf[Evolve]
   @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
-  @scala.inline
-  def Merge: Merge = "Merge".asInstanceOf[Merge]
-  @scala.inline
-  def MergeDeep: MergeDeep = "MergeDeep".asInstanceOf[MergeDeep]
   @scala.inline
   def Null: Null = "Null".asInstanceOf[Null]
   @scala.inline

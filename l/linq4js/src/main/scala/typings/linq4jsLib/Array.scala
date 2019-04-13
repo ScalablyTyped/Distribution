@@ -348,23 +348,23 @@ trait Array[T] extends js.Object {
     * @param valueSelector The selector-function (or function-string) that selects the property for sorting
     */
   def ThenByDescending(valueSelector: js.Function1[/* item */ T, _]): Array[T] = js.native
-  def ToDictionary[Y](keySelector: java.lang.String): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
-  def ToDictionary[Y](keySelector: java.lang.String, valueSelector: java.lang.String): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
-  def ToDictionary[Y](keySelector: java.lang.String, valueSelector: js.Function1[/* item */ T, Y]): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  def ToDictionary[Y](keySelector: java.lang.String): org.scalablytyped.runtime.StringDictionary[Y] with org.scalablytyped.runtime.NumberDictionary[Y] = js.native
+  def ToDictionary[Y](keySelector: java.lang.String, valueSelector: java.lang.String): org.scalablytyped.runtime.StringDictionary[Y] with org.scalablytyped.runtime.NumberDictionary[Y] = js.native
+  def ToDictionary[Y](keySelector: java.lang.String, valueSelector: js.Function1[/* item */ T, Y]): org.scalablytyped.runtime.StringDictionary[Y] with org.scalablytyped.runtime.NumberDictionary[Y] = js.native
   /**
     * Converts the array to a dictionary
     * @param keySelector The selector-function (or function-string) to select property for key
     * @param valueSelector A selector-function (or function-string) to select property for value
     */
-  def ToDictionary[Y](keySelector: js.Function1[/* item */ T, java.lang.String | scala.Double]): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  def ToDictionary[Y](keySelector: js.Function1[/* item */ T, java.lang.String | scala.Double]): org.scalablytyped.runtime.StringDictionary[Y] with org.scalablytyped.runtime.NumberDictionary[Y] = js.native
   def ToDictionary[Y](
     keySelector: js.Function1[/* item */ T, java.lang.String | scala.Double],
     valueSelector: java.lang.String
-  ): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  ): org.scalablytyped.runtime.StringDictionary[Y] with org.scalablytyped.runtime.NumberDictionary[Y] = js.native
   def ToDictionary[Y](
     keySelector: js.Function1[/* item */ T, java.lang.String | scala.Double],
     valueSelector: js.Function1[/* item */ T, Y]
-  ): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  ): org.scalablytyped.runtime.StringDictionary[Y] with org.scalablytyped.runtime.NumberDictionary[Y] = js.native
   /**
     * Combines two arrays without duplicates
     * @param array The array to combine

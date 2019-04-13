@@ -10,7 +10,7 @@ trait ISearchProviderStatic
   extends org.scalablytyped.runtime.Instantiable3[
       /* $scope */ IGridScope, 
       /* grid */ IGridInstance, 
-      /* $filter */ angularLib.angularMod.angularNs.IFilterService, 
+      /* $filter */ angularLib.angularMod.IFilterService, 
       ISearchProvider
     ]
 

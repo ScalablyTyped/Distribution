@@ -30,7 +30,7 @@ object keyNs extends js.Object {
       * Returns ASCII armored text of key
       * @returns ASCII armor
       */
-    def armor(): openpgpLib.ReadableStream[java.lang.String] = js.native
+    def armor(): java.lang.String = js.native
     /**
       * Decrypts all secret key and subkey packets matching keyId
       * @param passphrases
@@ -98,6 +98,9 @@ object keyNs extends js.Object {
       * @param userId, optional user ID
       * @returns
       */
+    def getExpirationTime(): js.Promise[stdLib.Date | openpgpLib.Infinity | scala.Null] = js.native
+    def getExpirationTime(capabilities: js.Any): js.Promise[stdLib.Date | openpgpLib.Infinity | scala.Null] = js.native
+    def getExpirationTime(capabilities: js.Any, keyId: openpgpLib.openpgpMod.typeNs.keyidNs.Keyid): js.Promise[stdLib.Date | openpgpLib.Infinity | scala.Null] = js.native
     def getExpirationTime(capabilities: js.Any, keyId: openpgpLib.openpgpMod.typeNs.keyidNs.Keyid, userId: js.Object): js.Promise[stdLib.Date | openpgpLib.Infinity | scala.Null] = js.native
     /**
       * Calculates the fingerprint of the key
@@ -129,6 +132,8 @@ object keyNs extends js.Object {
       * @param userId (optional) user ID to get instead of the primary user, if it exists
       * @returns The primary user and the self signature
       */
+    def getPrimaryUser(): js.Promise[openpgpLib.Anon_SelfCertification] = js.native
+    def getPrimaryUser(date: stdLib.Date): js.Promise[openpgpLib.Anon_SelfCertification] = js.native
     def getPrimaryUser(date: stdLib.Date, userId: js.Object): js.Promise[openpgpLib.Anon_SelfCertification] = js.native
     /**
       * Get revocation certificate from a revoked key.
@@ -157,7 +162,7 @@ object keyNs extends js.Object {
       * Returns userids
       * @returns array of userids
       */
-    def getUserIds(): js.Array[_] = js.native
+    def getUserIds(): js.Array[java.lang.String] = js.native
     /**
       * Calculates whether two keys have the same fingerprint without actually calculating the fingerprint
       * @returns Whether the two keys have the same version and public key data
@@ -443,6 +448,7 @@ object keyNs extends js.Object {
     */
   @js.native
   class User () extends js.Object {
+    var userId: openpgpLib.openpgpMod.packetNs.Userid = js.native
     def isRevoked(
       primaryKey: openpgpLib.openpgpMod.packetNs.PublicKey,
       certificate: openpgpLib.openpgpMod.packetNs.Signature,

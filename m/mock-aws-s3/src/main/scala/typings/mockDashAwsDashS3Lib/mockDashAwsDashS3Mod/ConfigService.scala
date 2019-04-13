@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ConfigService ()
   extends awsDashSdkLib.awsDashSdkMod.ConfigService {
-  def this(options: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsConfigserviceMod.ClientConfiguration) = this()
 }
 

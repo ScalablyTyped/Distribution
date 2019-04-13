@@ -10,7 +10,7 @@ trait Anon_Classes extends js.Object {
     * Optional. A valid Angular scope object. The scope of the template will be created by calling $new() on this scope.
     */
   @JSName("$scope")
-  var $scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
+  var $scope: js.UndefOr[angularLib.angularMod.IScope] = js.undefined
   /**
     * Optional. A list of custom CSS classes to apply to the message element.
     */
@@ -46,7 +46,7 @@ object Anon_Classes {
   @scala.inline
   def apply(
     message: java.lang.String,
-    $scope: angularLib.angularMod.angularNs.IScope = null,
+    $scope: angularLib.angularMod.IScope = null,
     classes: java.lang.String = null,
     container: js.Any = null,
     duration: scala.Int | scala.Double = null,

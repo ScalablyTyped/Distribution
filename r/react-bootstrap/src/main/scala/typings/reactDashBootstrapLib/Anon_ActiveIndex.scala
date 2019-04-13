@@ -14,12 +14,12 @@ trait Anon_ActiveIndex extends js.Object {
   var direction: js.UndefOr[java.lang.String] = js.undefined
   var indicators: js.UndefOr[scala.Boolean] = js.undefined
   var interval: js.UndefOr[scala.Double | scala.Null] = js.undefined
-  var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var nextIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onSelect: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.SelectCallback] = js.undefined
   // TODO: Add more specific type
   var onSlideEnd: js.UndefOr[js.Function] = js.undefined
   var pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined
-  var prevIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var prevIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var slide: js.UndefOr[scala.Boolean] = js.undefined
   var wrap: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -35,11 +35,11 @@ object Anon_ActiveIndex {
     direction: java.lang.String = null,
     indicators: js.UndefOr[scala.Boolean] = js.undefined,
     interval: scala.Int | scala.Double = null,
-    nextIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    nextIcon: reactLib.reactMod.ReactNode = null,
     onSelect: reactDashBootstrapLib.reactDashBootstrapMod.SelectCallback = null,
     onSlideEnd: js.Function = null,
     pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
-    prevIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    prevIcon: reactLib.reactMod.ReactNode = null,
     slide: js.UndefOr[scala.Boolean] = js.undefined,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ActiveIndex = {

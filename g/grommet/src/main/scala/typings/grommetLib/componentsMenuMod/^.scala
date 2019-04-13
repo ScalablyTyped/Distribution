@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Menu", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Menu: reactLib.reactMod.ReactNs.ComponentClass[
-    MenuProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+  val Menu: reactLib.reactMod.ComponentClass[
+    MenuProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

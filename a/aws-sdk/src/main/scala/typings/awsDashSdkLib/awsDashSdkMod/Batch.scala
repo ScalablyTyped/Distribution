@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Batch ()
   extends awsDashSdkLib.clientsAllMod.Batch {
-  def this(options: awsDashSdkLib.clientsBatchMod.BatchNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsBatchMod.ClientConfiguration) = this()
 }
 

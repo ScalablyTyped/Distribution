@@ -15,3 +15,8 @@ class SemanticAliases ()
   override def Clone(): mfilesLib.ISemanticAliases = js.native
 }
 
+@JSGlobal("MFiles.SemanticAliases")
+@js.native
+object SemanticAliases
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISemanticAliases]
+

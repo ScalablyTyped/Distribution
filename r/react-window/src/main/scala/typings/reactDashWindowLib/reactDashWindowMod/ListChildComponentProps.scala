@@ -9,7 +9,7 @@ trait ListChildComponentProps extends js.Object {
   var data: js.Any
   var index: scala.Double
   var isScrolling: js.UndefOr[scala.Boolean] = js.undefined
-  var style: reactLib.reactMod.ReactNs.CSSProperties
+  var style: reactLib.reactMod.CSSProperties
 }
 
 object ListChildComponentProps {
@@ -17,7 +17,7 @@ object ListChildComponentProps {
   def apply(
     data: js.Any,
     index: scala.Double,
-    style: reactLib.reactMod.ReactNs.CSSProperties,
+    style: reactLib.reactMod.CSSProperties,
     isScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): ListChildComponentProps = {
     val __obj = js.Dynamic.literal(data = data, index = index, style = style)

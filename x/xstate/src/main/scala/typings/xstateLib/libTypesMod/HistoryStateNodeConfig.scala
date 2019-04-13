@@ -20,6 +20,8 @@ object HistoryStateNodeConfig {
     context: TContext = null,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     delimiter: java.lang.String = null,
+    entry: SingleOrArray[Action[TContext, TEvent]] = null,
+    exit: SingleOrArray[Action[TContext, TEvent]] = null,
     id: java.lang.String = null,
     initial: js.UndefOr[scala.Nothing] = js.undefined,
     invoke: InvokesConfig[TContext, TEvent] = null,
@@ -43,6 +45,8 @@ object HistoryStateNodeConfig {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial)
     if (invoke != null) __obj.updateDynamic("invoke")(invoke.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ object defaultNs extends js.Object {
   @js.native
   class OAuth1Verifier protected ()
     extends atFeathersjsAuthenticationDashOauth1Lib.atFeathersjsAuthenticationDashOauth1Mod.OAuth1Verifier {
-    def this(app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[_], options: js.Any) = this()
+    def this(app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], options: js.Any) = this()
   }
   
 }

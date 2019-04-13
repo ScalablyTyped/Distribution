@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distDeviceMotionWithDeviceMotionMod extends js.Object {
   def withDeviceMotion[Props](
-    Component: reactLib.reactMod.ReactNs.ComponentType[Props with reactDashFnsLib.distDeviceMotionDeviceMotionMod.DeviceMotionProps]
-  ): reactLib.reactMod.ReactNs.ComponentType[Props] = js.native
+    Component: reactLib.reactMod.ComponentType[Props with reactDashFnsLib.distDeviceMotionDeviceMotionMod.DeviceMotionProps]
+  ): reactLib.reactMod.ComponentType[Props] = js.native
 }
 

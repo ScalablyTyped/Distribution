@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SectionListStatic[SectionT]
-  extends reactLib.reactMod.ReactNs.ComponentClass[SectionListProps[SectionT], reactLib.reactMod.ReactNs.ComponentState] {
+  extends reactLib.reactMod.ComponentClass[SectionListProps[SectionT], reactLib.reactMod.ComponentState] {
   /**
     * Scrolls to the item at the specified sectionIndex and itemIndex (within the section)
     * positioned in the viewable area such that viewPosition 0 places it at the top

@@ -9,4 +9,5 @@ package object libCssMod {
   type ICssInput = js.UndefOr[
     java.lang.String | ISerializableObject | IDictionary | scala.Null | scala.Boolean
   ]
+  type IDictionary = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }

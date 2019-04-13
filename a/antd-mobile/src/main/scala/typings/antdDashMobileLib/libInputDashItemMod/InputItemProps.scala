@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLInputElement>, 'onChange' | 'onFocus' | 'onBlur' | 'value' | 'defaultValue' | 'type'> ]: react.react.React.HTMLProps<std.HTMLInputElement>[P]} */ trait InputItemProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLInputElement>, 'onChange' | 'onFocus' | 'onBlur' | 'value' | 'defaultValue' | 'type'> ]: react.react.HTMLProps<std.HTMLInputElement>[P]} */ trait InputItemProps
   extends antdDashMobileLib.libInputDashItemPropsTypeMod.InputItemPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var onErrorClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
-  var onExtraClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
+  var onErrorClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
+  var onExtraClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var prefixListCls: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -24,19 +24,19 @@ object InputItemProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     labelNumber: scala.Int | scala.Double = null,
     labelPosition: antdDashMobileLib.antdDashMobileLibStrings.left | antdDashMobileLib.antdDashMobileLibStrings.top = null,
     locale: js.Object = null,
     maxLength: scala.Int | scala.Double = null,
     moneyKeyboardAlign: java.lang.String = null,
-    moneyKeyboardHeader: reactLib.reactMod.ReactNs.ReactNode = null,
+    moneyKeyboardHeader: reactLib.reactMod.ReactNode = null,
     moneyKeyboardWrapProps: js.Object = null,
     name: java.lang.String = null,
     onBlur: antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler = null,
     onChange: /* value */ java.lang.String => scala.Unit = null,
-    onErrorClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
-    onExtraClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
+    onErrorClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] = null,
+    onExtraClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] = null,
     onFocus: antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler = null,
     onVirtualKeyboardConfirm: antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler = null,
     placeholder: java.lang.String = null,

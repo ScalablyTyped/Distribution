@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class AutoScalingPlans ()
   extends awsDashSdkLib.clientsAllMod.AutoScalingPlans {
-  def this(options: awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAutoscalingplansMod.ClientConfiguration) = this()
 }
 

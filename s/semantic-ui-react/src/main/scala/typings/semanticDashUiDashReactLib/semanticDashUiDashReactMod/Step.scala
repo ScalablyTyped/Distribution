@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react", "Step")
 @js.native
 class Step protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       semanticDashUiDashReactLib.distCommonjsElementsStepStepMod.StepProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: semanticDashUiDashReactLib.distCommonjsElementsStepStepMod.StepProps) = this()

@@ -9,7 +9,7 @@ trait CreateUltimatePaginationOptions extends js.Object {
   /**
     * A React.js component that will be used as a wrapper for pagination items
     */
-  var WrapperComponent: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
+  var WrapperComponent: js.UndefOr[java.lang.String | reactLib.reactMod.ComponentType[_]] = js.undefined
   /**
     * An object that is used as a map from the item type to the React.js component that will be used to render this item
     */
@@ -20,7 +20,7 @@ object CreateUltimatePaginationOptions {
   @scala.inline
   def apply(
     itemTypeToComponent: ItemTypeToComponent,
-    WrapperComponent: java.lang.String | reactLib.reactMod.ReactNs.ComponentType[_] = null
+    WrapperComponent: java.lang.String | reactLib.reactMod.ComponentType[_] = null
   ): CreateUltimatePaginationOptions = {
     val __obj = js.Dynamic.literal(itemTypeToComponent = itemTypeToComponent)
     if (WrapperComponent != null) __obj.updateDynamic("WrapperComponent")(WrapperComponent.asInstanceOf[js.Any])

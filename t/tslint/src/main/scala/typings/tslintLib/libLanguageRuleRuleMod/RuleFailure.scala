@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
 @js.native
 class RuleFailure protected () extends js.Object {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String) = this()
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: js.Array[Replacement]) = this()
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: Replacement) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: js.Array[Replacement]) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: Replacement) = this()
   var createFailurePosition: js.Any = js.native
   val endPosition: js.Any = js.native
   val failure: js.Any = js.native

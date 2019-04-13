@@ -24,30 +24,27 @@ class User ()
 @js.native
 object User extends js.Object {
   def allowCustomUserClass(isAllowed: scala.Boolean): scala.Unit = js.native
-  def become[T](sessionToken: java.lang.String): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+  def become[T](sessionToken: java.lang.String): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def become[T](
     sessionToken: java.lang.String,
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
-  def current(): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.User = js.native
-  def logIn[T](username: java.lang.String, password: java.lang.String): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.SuccessFailureOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
+  def current(): avoscloudDashSdkLib.avoscloudDashSdkMod.User = js.native
+  def logIn[T](username: java.lang.String, password: java.lang.String): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def logIn[T](
     username: java.lang.String,
     password: java.lang.String,
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
-  def logOut[T](): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
-  def requestPasswordReset[T](email: java.lang.String): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
-  def requestPasswordReset[T](
-    email: java.lang.String,
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
-  def signUp[T](username: java.lang.String, password: java.lang.String, attrs: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.SuccessFailureOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
+  def logOut[T](): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
+  def requestPasswordReset[T](email: java.lang.String): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
+  def requestPasswordReset[T](email: java.lang.String, options: avoscloudDashSdkLib.avoscloudDashSdkMod.SuccessFailureOptions): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
+  def signUp[T](username: java.lang.String, password: java.lang.String, attrs: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def signUp[T](
     username: java.lang.String,
     password: java.lang.String,
     attrs: js.Any,
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.SuccessFailureOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
 }
 

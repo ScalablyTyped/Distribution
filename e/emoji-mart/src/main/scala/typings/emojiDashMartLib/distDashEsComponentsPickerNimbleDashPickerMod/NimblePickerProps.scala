@@ -32,7 +32,7 @@ object NimblePickerProps {
     native: js.UndefOr[scala.Boolean] = js.undefined,
     notFound: () => reactLib.reactMod.Component[js.Object, js.Object, _] = null,
     notFoundEmoji: java.lang.String = null,
-    onClick: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onClick: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     onSelect: /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData => scala.Unit = null,
     onSkinChange: /* skin */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin => scala.Unit = null,
     perLine: scala.Int | scala.Double = null,
@@ -43,7 +43,7 @@ object NimblePickerProps {
     showSkinTones: js.UndefOr[scala.Boolean] = js.undefined,
     skin: emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin = null,
     skinEmoji: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null
   ): NimblePickerProps = {
     val __obj = js.Dynamic.literal(data = data)

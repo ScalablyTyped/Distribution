@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class PinpointEmail ()
   extends awsDashSdkLib.awsDashSdkMod.PinpointEmail {
-  def this(options: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsPinpointemailMod.ClientConfiguration) = this()
 }
 

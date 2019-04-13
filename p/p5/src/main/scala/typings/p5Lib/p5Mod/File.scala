@@ -5,48 +5,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("p5", "File")
-@js.native
-class File protected ()
-  extends p5Lib.p5Mod.p5Ns.File {
-  /**
-    *   Base class for a file Using this for
-    *   createFileInput
-    *
-    *   @param file File that is wrapped
-    */
-  def this(file: File) = this()
+trait File extends js.Object {
   /**
     *   URL string containing image data.
     */
-  /* CompleteClass */
-  override var data: js.Any = js.native
+  var data: js.Any
   /**
     *   Underlying File object. All normal File methods
     *   can be called on this.
     */
-  /* CompleteClass */
-  override var file: js.Any = js.native
+  var file: js.Any
   /**
     *   File name
     */
-  /* CompleteClass */
-  override var name: js.Any = js.native
+  var name: js.Any
   /**
     *   File size
     */
-  /* CompleteClass */
-  override var size: js.Any = js.native
+  var size: js.Any
   /**
     *   File subtype (usually the file extension jpg, png,
     *   xml, etc.)
     */
-  /* CompleteClass */
-  override var subtype: js.Any = js.native
+  var subtype: js.Any
   /**
     *   File type (image, text, etc.)
     */
-  /* CompleteClass */
-  override var `type`: js.Any = js.native
+  var `type`: js.Any
+}
+
+object File {
+  @scala.inline
+  def apply(data: js.Any, file: js.Any, name: js.Any, size: js.Any, subtype: js.Any, `type`: js.Any): File = {
+    val __obj = js.Dynamic.literal(data = data, file = file, name = name, size = size, subtype = subtype)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[File]
+  }
 }
 

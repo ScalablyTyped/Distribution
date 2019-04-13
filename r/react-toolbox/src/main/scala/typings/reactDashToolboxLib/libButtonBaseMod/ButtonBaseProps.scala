@@ -15,7 +15,7 @@ trait ButtonBaseProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, component will be disabled.
     * @default false
@@ -24,7 +24,7 @@ trait ButtonBaseProps
   /**
     * Value of the icon (See Font Icon Component).
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the neutral colors are inverted. Useful to put a button over a dark background.
     */
@@ -55,12 +55,12 @@ object ButtonBaseProps {
   @scala.inline
   def apply(
     accent: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     inverse: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     neutral: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -86,7 +86,7 @@ object ButtonBaseProps {
     onTouchStart: js.Function = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     ripple: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: java.lang.String = null
   ): ButtonBaseProps = {
     val __obj = js.Dynamic.literal()

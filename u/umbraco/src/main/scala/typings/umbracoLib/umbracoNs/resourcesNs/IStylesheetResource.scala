@@ -32,7 +32,7 @@ trait IStylesheetResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the stylesheets.
     *
     */
-  def getAll(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getAll(): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.stylesheetResource#getRules
@@ -52,7 +52,7 @@ trait IStylesheetResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the rules.
     *
     */
-  def getRules(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getRules(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.stylesheetResource#getRulesByName
@@ -72,15 +72,15 @@ trait IStylesheetResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the rules.
     *
     */
-  def getRulesByName(name: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getRulesByName(name: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise]
 }
 
 object IStylesheetResource {
   @scala.inline
   def apply(
-    getAll: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getRules: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getRulesByName: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    getAll: () => angularLib.angularMod.IPromise[IResourcePromise],
+    getRules: scala.Double => angularLib.angularMod.IPromise[IResourcePromise],
+    getRulesByName: java.lang.String => angularLib.angularMod.IPromise[IResourcePromise]
   ): IStylesheetResource = {
     val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction0(getAll), getRules = js.Any.fromFunction1(getRules), getRulesByName = js.Any.fromFunction1(getRulesByName))
   

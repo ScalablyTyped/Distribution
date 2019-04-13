@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class AppStream ()
-  extends awsDashSdkLib.clientsAppstreamMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAppstreamMod.^ {
+  def this(options: awsDashSdkLib.clientsAppstreamMod.ClientConfiguration) = this()
 }
 

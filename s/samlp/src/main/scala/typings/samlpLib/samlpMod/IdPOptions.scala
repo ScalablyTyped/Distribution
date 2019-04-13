@@ -15,7 +15,7 @@ trait IdPOptions extends js.Object {
   var encryptionAlgorithm: js.UndefOr[java.lang.String] = js.undefined
   var encryptionCert: js.UndefOr[java.lang.String | nodeLib.Buffer] = js.undefined
   var encryptionPublicKey: js.UndefOr[java.lang.String | nodeLib.Buffer] = js.undefined
-  var getUserFromRequest: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.eNs.Request, _]] = js.undefined
+  var getUserFromRequest: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.Request, _]] = js.undefined
   var inResponseTo: js.UndefOr[java.lang.String] = js.undefined
   var issuer: java.lang.String
   var key: java.lang.String | nodeLib.Buffer
@@ -28,7 +28,7 @@ trait IdPOptions extends js.Object {
   def getPostURL(
     audience: java.lang.String,
     authnRequestDom: js.Any,
-    req: expressLib.expressMod.eNs.Request,
+    req: expressLib.expressMod.Request,
     callback: js.Function2[/* err */ js.Any, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit
 }
@@ -37,7 +37,7 @@ object IdPOptions {
   @scala.inline
   def apply(
     cert: java.lang.String | nodeLib.Buffer,
-    getPostURL: (java.lang.String, js.Any, expressLib.expressMod.eNs.Request, js.Function2[/* err */ js.Any, /* url */ java.lang.String, scala.Unit]) => scala.Unit,
+    getPostURL: (java.lang.String, js.Any, expressLib.expressMod.Request, js.Function2[/* err */ js.Any, /* url */ java.lang.String, scala.Unit]) => scala.Unit,
     issuer: java.lang.String,
     key: java.lang.String | nodeLib.Buffer,
     RelayState: java.lang.String = null,
@@ -48,7 +48,7 @@ object IdPOptions {
     encryptionAlgorithm: java.lang.String = null,
     encryptionCert: java.lang.String | nodeLib.Buffer = null,
     encryptionPublicKey: java.lang.String | nodeLib.Buffer = null,
-    getUserFromRequest: /* req */ expressLib.expressMod.eNs.Request => _ = null,
+    getUserFromRequest: /* req */ expressLib.expressMod.Request => _ = null,
     inResponseTo: java.lang.String = null,
     keyEncryptionAlgorighm: java.lang.String = null,
     lifetimeInSeconds: scala.Int | scala.Double = null,

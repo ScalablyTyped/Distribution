@@ -14,7 +14,7 @@ trait Rect extends js.Object {
   val ymax: scala.Double
   val ymin: scala.Double
   def clip(dstRect: Rect, offsetX: scala.Double, offsetY: scala.Double, dstClipping: scala.Boolean): scala.Unit
-  def set(obj: terminalDashKitLib.rectMod.RectNs.Region): scala.Unit
+  def set(obj: Region): scala.Unit
 }
 
 object Rect {
@@ -23,7 +23,7 @@ object Rect {
     clip: (Rect, scala.Double, scala.Double, scala.Boolean) => scala.Unit,
     height: scala.Double,
     isNull: scala.Boolean,
-    set: terminalDashKitLib.rectMod.RectNs.Region => scala.Unit,
+    set: Region => scala.Unit,
     width: scala.Double,
     xmax: scala.Double,
     xmin: scala.Double,

@@ -16,6 +16,9 @@ package object distInterfacesMod {
   ]
   type IConnector[TContext] = IConnectorCls[TContext] | IConnectorFn[TContext]
   type IConnectorFn[TContext] = js.Function1[/* context */ js.UndefOr[TContext], js.Any]
+  type IConnectors[TContext] = org.scalablytyped.runtime.StringDictionary[IConnector[TContext]]
+  type IDirectiveResolvers[TSource, TContext] = org.scalablytyped.runtime.StringDictionary[DirectiveResolverFn[TSource, TContext]]
+  type IEnumResolver = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
   type IFieldIteratorFn = js.Function3[
     /* fieldDef */ graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* typeName */ java.lang.String, 
@@ -35,6 +38,13 @@ package object distInterfacesMod {
     /* typeName */ js.UndefOr[java.lang.String], 
     /* fieldName */ js.UndefOr[java.lang.String], 
     graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
+  ]
+  type IMocks = org.scalablytyped.runtime.StringDictionary[IMockFn]
+  type IResolverObject[TSource, TContext, TArgs] = org.scalablytyped.runtime.StringDictionary[
+    (IFieldResolver[TSource, TContext, TArgs]) | (IResolverOptions[TSource, TContext, js.Any]) | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias graphql-tools.graphql-tools/dist/Interfaces.IResolverObject<TSource, TContext, any> */ js.Object)
+  ]
+  type IResolvers[TSource, TContext] = org.scalablytyped.runtime.StringDictionary[
+    js.Function0[js.Any] | (IResolverObject[TSource, TContext, js.Any]) | (IResolverOptions[TSource, TContext, js.Any]) | graphqlLib.graphqlMod.GraphQLScalarType | IEnumResolver
   ]
   type IResolversParameter = (js.Array[
     (IResolvers[js.Any, js.Any]) | (js.Function1[/* mergeInfo */ MergeInfo, IResolvers[js.Any, js.Any]])

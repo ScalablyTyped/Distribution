@@ -10,19 +10,17 @@ import scala.scalajs.js.annotation._
   extends EventAttributes
      with Animatable {
   var activeIndex: js.UndefOr[scala.Double] = js.undefined
-  var activeShape: js.UndefOr[js.Object | RechartsFunction | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var activeShape: js.UndefOr[js.Object | RechartsFunction | reactLib.reactMod.ReactElement[_]] = js.undefined
   var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
-  var line: js.UndefOr[
-    scala.Boolean | js.Object | RechartsFunction | reactLib.reactMod.ReactNs.ReactElement[_]
-  ] = js.undefined
+  var line: js.UndefOr[scala.Boolean | js.Object | RechartsFunction | reactLib.reactMod.ReactElement[_]] = js.undefined
   var lineJointType: js.UndefOr[LineType] = js.undefined
   var lineType: js.UndefOr[rechartsLib.rechartsLibStrings.joint | rechartsLib.rechartsLibStrings.fitting] = js.undefined
   var name: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var points: js.UndefOr[js.Array[ScatterPoint]] = js.undefined
   var shape: js.UndefOr[
-    rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_]
+    rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye | reactLib.reactMod.ReactElement[_] | ContentRenderer[_]
   ] = js.undefined
   var xAxisId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var yAxisId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -33,7 +31,7 @@ object ScatterProps {
   @scala.inline
   def apply(
     activeIndex: scala.Int | scala.Double = null,
-    activeShape: js.Object | RechartsFunction | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    activeShape: js.Object | RechartsFunction | reactLib.reactMod.ReactElement[_] = null,
     animationBegin: scala.Int | scala.Double = null,
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: AnimationEasingType = null,
@@ -43,7 +41,7 @@ object ScatterProps {
     isAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     legendType: LegendType = null,
-    line: scala.Boolean | js.Object | RechartsFunction | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    line: scala.Boolean | js.Object | RechartsFunction | reactLib.reactMod.ReactElement[_] = null,
     lineJointType: LineType = null,
     lineType: rechartsLib.rechartsLibStrings.joint | rechartsLib.rechartsLibStrings.fitting = null,
     name: java.lang.String | scala.Double = null,
@@ -62,7 +60,7 @@ object ScatterProps {
     onTouchMove: RechartsFunction = null,
     onTouchStart: RechartsFunction = null,
     points: js.Array[ScatterPoint] = null,
-    shape: rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] = null,
+    shape: rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] = null,
     xAxisId: java.lang.String | scala.Double = null,
     yAxisId: java.lang.String | scala.Double = null,
     zAxisId: java.lang.String | scala.Double = null

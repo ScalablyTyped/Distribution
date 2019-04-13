@@ -15,3 +15,8 @@ class NamedACLsAdmin ()
   override def Item(Index: scala.Double): mfilesLib.INamedACLAdmin = js.native
 }
 
+@JSGlobal("MFiles.NamedACLsAdmin")
+@js.native
+object NamedACLsAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.INamedACLsAdmin]
+

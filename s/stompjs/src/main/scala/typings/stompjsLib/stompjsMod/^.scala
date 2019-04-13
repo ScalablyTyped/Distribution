@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("stompjs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val VERSIONS: stompjsLib.Anon_SupportedVersions = js.native
   def clearInterval(id: nodeLib.NodeJSNs.Timer): scala.Unit = js.native
   def client(url: java.lang.String): Client = js.native
   def client(url: java.lang.String, protocols: java.lang.String): Client = js.native

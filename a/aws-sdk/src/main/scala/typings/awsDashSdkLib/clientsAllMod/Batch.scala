@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Batch ()
-  extends awsDashSdkLib.clientsBatchMod.namespaced {
-  def this(options: awsDashSdkLib.clientsBatchMod.BatchNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsBatchMod.^ {
+  def this(options: awsDashSdkLib.clientsBatchMod.ClientConfiguration) = this()
 }
 

@@ -14,12 +14,12 @@ abstract class Default protected ()
   var calendar: fullcalendarLib.calendarMod.default = js.native
   var dateProfileGenerator: js.Any = js.native
   var dateProfileGeneratorClass: js.Any = js.native
-  var end: momentLib.momentMod.momentNs.Moment = js.native
+  var end: momentLib.momentMod.Moment = js.native
   var eventOrderSpecs: js.Any = js.native
-  var initialNowDate: momentLib.momentMod.momentNs.Moment = js.native
+  var initialNowDate: momentLib.momentMod.Moment = js.native
   var initialNowQueriedMs: scala.Double = js.native
-  var intervalEnd: momentLib.momentMod.momentNs.Moment = js.native
-  var intervalStart: momentLib.momentMod.momentNs.Moment = js.native
+  var intervalEnd: momentLib.momentMod.Moment = js.native
+  var intervalStart: momentLib.momentMod.Moment = js.native
   var isHiddenDayHash: js.Array[scala.Boolean] = js.native
   var isNowIndicatorRendered: scala.Boolean = js.native
   var isSelected: scala.Boolean = js.native
@@ -30,7 +30,7 @@ abstract class Default protected ()
   var queuedScroll: js.Object = js.native
   var renderQueue: fullcalendarLib.renderQueueMod.default = js.native
   var selectedEventInstance: fullcalendarLib.eventInstanceMod.default = js.native
-  var start: momentLib.momentMod.momentNs.Moment = js.native
+  var start: momentLib.momentMod.Moment = js.native
   var title: java.lang.String = js.native
   var `type`: java.lang.String = js.native
   var usesMinMaxTime: scala.Boolean = js.native

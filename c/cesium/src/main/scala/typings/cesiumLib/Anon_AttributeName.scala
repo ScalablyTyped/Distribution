@@ -9,7 +9,7 @@ trait Anon_AttributeName extends js.Object {
   var attributeName: java.lang.String
   var fragmentShaderSource: js.UndefOr[java.lang.String] = js.undefined
   var glslDatatype: js.UndefOr[java.lang.String] = js.undefined
-  var renderState: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.RenderState] = js.undefined
+  var renderState: js.UndefOr[cesiumLib.cesiumMod.RenderState] = js.undefined
   var vertexShaderSource: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object Anon_AttributeName {
     attributeName: java.lang.String,
     fragmentShaderSource: java.lang.String = null,
     glslDatatype: java.lang.String = null,
-    renderState: cesiumLib.cesiumMod.CesiumNs.RenderState = null,
+    renderState: cesiumLib.cesiumMod.RenderState = null,
     vertexShaderSource: java.lang.String = null
   ): Anon_AttributeName = {
     val __obj = js.Dynamic.literal(attributeName = attributeName)

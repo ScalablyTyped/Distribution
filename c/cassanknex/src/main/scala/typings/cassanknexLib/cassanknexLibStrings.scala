@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object cassanknexLibStrings {
   @js.native
   sealed trait `<`
-    extends cassanknexLib.cassanknexMod.CassanKnexNs.ComparisonRestriction
+    extends cassanknexLib.cassanknexMod.ComparisonRestriction
   
   @js.native
   sealed trait `<=`
-    extends cassanknexLib.cassanknexMod.CassanKnexNs.ComparisonRestriction
+    extends cassanknexLib.cassanknexMod.ComparisonRestriction
   
   @js.native
   sealed trait `=`
-    extends cassanknexLib.cassanknexMod.CassanKnexNs.ComparisonRestriction
+    extends cassanknexLib.cassanknexMod.ComparisonRestriction
   
   @js.native
   sealed trait `>`
-    extends cassanknexLib.cassanknexMod.CassanKnexNs.ComparisonRestriction
+    extends cassanknexLib.cassanknexMod.ComparisonRestriction
   
   @js.native
   sealed trait `>=`
-    extends cassanknexLib.cassanknexMod.CassanKnexNs.ComparisonRestriction
+    extends cassanknexLib.cassanknexMod.ComparisonRestriction
   
   @js.native
   sealed trait IN
-    extends cassanknexLib.cassanknexMod.CassanKnexNs.InRestriction
+    extends cassanknexLib.cassanknexMod.InRestriction
   
   @js.native
   sealed trait SelectAsClause extends js.Object
@@ -41,7 +41,7 @@ object cassanknexLibStrings {
   
   @js.native
   sealed trait in
-    extends cassanknexLib.cassanknexMod.CassanKnexNs.InRestriction
+    extends cassanknexLib.cassanknexMod.InRestriction
   
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]

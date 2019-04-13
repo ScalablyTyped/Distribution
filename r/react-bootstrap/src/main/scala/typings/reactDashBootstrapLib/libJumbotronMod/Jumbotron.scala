@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Jumbotron
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libJumbotronMod.JumbotronNs.JumbotronProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[JumbotronProps, js.Object, js.Any]
 

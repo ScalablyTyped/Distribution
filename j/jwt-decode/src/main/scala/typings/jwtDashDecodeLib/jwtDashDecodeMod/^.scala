@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[TTokenDto](token: java.lang.String): TTokenDto = js.native
-  def apply[TTokenDto](token: java.lang.String, options: jwtDashDecodeLib.jwtDashDecodeMod.JwtDecodeNs.Options): TTokenDto = js.native
+  def apply[TTokenDto](token: java.lang.String, options: Options): TTokenDto = js.native
 }
 

@@ -11,6 +11,7 @@ package object typesMod {
     */ skatejsLib.skatejsLibStrings.ComponentProps with T
   type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   type Maybe[T] = js.UndefOr[T | scala.Null]
+  type Mixed = js.Object
   type PropOptionsAttribute = PropOptionsAttributeIdentifier | PropOptionsAttributeIdentifierMap
   type PropOptionsAttributeIdentifier = scala.Boolean | java.lang.String
 }

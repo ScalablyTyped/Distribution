@@ -8,16 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("asn1js", "LocalIdentificationBlock")
 @js.native
 class LocalIdentificationBlock ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalIdentificationBlock {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalIdentificationBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+  extends LocalBaseBlock
+     with ILocalHexBlock {
+  def this(params: LocalIdentificationBlockParams) = this()
+  var isConstructed: scala.Boolean = js.native
+  var tagClass: scala.Double = js.native
+  var tagNumber: scala.Double = js.native
   /**
     * Convertion for the block to JSON object
     * 
@@ -25,7 +21,7 @@ class LocalIdentificationBlock ()
     * 
     * @memberOf LocalBaseBlock
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  /* InferMemberOverrides */
+  override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
 }
 

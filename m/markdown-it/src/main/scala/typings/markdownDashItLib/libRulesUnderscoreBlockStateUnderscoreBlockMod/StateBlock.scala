@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StateBlock
-  extends markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced {
+  extends markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.^ {
   var bMarks: js.Array[scala.Double] = js.native
   var blkIndent: scala.Double = js.native
   var bsCount: js.Array[scala.Double] = js.native

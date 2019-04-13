@@ -7,78 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "FrictionEquation")
 @js.native
-class FrictionEquation protected ()
-  extends p2Lib.p2Mod.p2Ns.FrictionEquation {
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, slipForce: scala.Double) = this()
-  /* CompleteClass */
-  override var G: js.Tuple2[scala.Double, scala.Double] = js.native
-  /* CompleteClass */
-  override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
-  /* CompleteClass */
-  override var bodyB: p2Lib.p2Mod.p2Ns.Body = js.native
-  /* CompleteClass */
-  override var contactEquations: js.Array[p2Lib.p2Mod.p2Ns.ContactEquation] = js.native
-  /* CompleteClass */
-  override var contactPointA: js.Tuple2[scala.Double, scala.Double] = js.native
-  /* CompleteClass */
-  override var contactPointB: js.Tuple2[scala.Double, scala.Double] = js.native
-  /* CompleteClass */
-  override var enabled: scala.Boolean = js.native
-  /* CompleteClass */
-  override var epsilon: scala.Double = js.native
-  /* CompleteClass */
-  override var frictionCoefficient: scala.Double = js.native
-  /* CompleteClass */
-  override var maxForce: scala.Double = js.native
-  /* CompleteClass */
-  override var minForce: scala.Double = js.native
-  /* CompleteClass */
-  override var multiplier: scala.Double = js.native
-  /* CompleteClass */
-  override var needsUpdate: scala.Boolean = js.native
-  /* CompleteClass */
-  override var relativeVelocity: scala.Double = js.native
-  /* CompleteClass */
-  override var relaxation: scala.Double = js.native
-  /* CompleteClass */
-  override var shapeA: p2Lib.p2Mod.p2Ns.Shape = js.native
-  /* CompleteClass */
-  override var shapeB: p2Lib.p2Mod.p2Ns.Shape = js.native
-  /* CompleteClass */
-  override var stiffness: scala.Double = js.native
-  /* CompleteClass */
-  override var t: js.Tuple2[scala.Double, scala.Double] = js.native
-  /* CompleteClass */
-  override var timeStep: scala.Double = js.native
-  /* CompleteClass */
-  override def addToWlambda(deltalambda: scala.Double): scala.Double = js.native
-  /* CompleteClass */
-  override def computeB(a: scala.Double, b: scala.Double, h: scala.Double): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGW(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGWlambda(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGiMGt(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGiMf(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGq(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeInvC(eps: scala.Double): scala.Double = js.native
-  /* CompleteClass */
-  override def getSlipForce(): scala.Double = js.native
-  /* CompleteClass */
-  override def gmult(
-    G: js.Tuple2[scala.Double, scala.Double],
-    vi: js.Tuple2[scala.Double, scala.Double],
-    wi: js.Tuple2[scala.Double, scala.Double],
-    vj: js.Tuple2[scala.Double, scala.Double],
-    wj: js.Tuple2[scala.Double, scala.Double]
-  ): scala.Double = js.native
-  /* CompleteClass */
-  override def setSlipForce(slipForce: scala.Double): scala.Unit = js.native
-  /* CompleteClass */
-  override def update(): scala.Unit = js.native
+class FrictionEquation protected () extends Equation {
+  def this(bodyA: Body, bodyB: Body, slipForce: scala.Double) = this()
+  var contactEquations: js.Array[ContactEquation] = js.native
+  var contactPointA: js.Tuple2[scala.Double, scala.Double] = js.native
+  var contactPointB: js.Tuple2[scala.Double, scala.Double] = js.native
+  var frictionCoefficient: scala.Double = js.native
+  var shapeA: Shape = js.native
+  var shapeB: Shape = js.native
+  var t: js.Tuple2[scala.Double, scala.Double] = js.native
+  def getSlipForce(): scala.Double = js.native
+  def setSlipForce(slipForce: scala.Double): scala.Unit = js.native
 }
 

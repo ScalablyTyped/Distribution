@@ -15,7 +15,7 @@ object ^ extends js.Object {
     * @name pc.ADDRESS_CLAMP_TO_EDGE
     * @description Clamps texture coordinate to the range 0 to 1.
     */
-  val ADDRESS_CLAMP_TO_EDGE: /* 1 */ scala.Double = js.native
+  val ADDRESS_CLAMP_TO_EDGE: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @static
     * @readonly
@@ -24,7 +24,7 @@ object ^ extends js.Object {
     * @description Texture coordinate to be set to the fractional part if the integer part is even; if the integer part is odd;
     * then the texture coordinate is set to 1 minus the fractional part.
     */
-  val ADDRESS_MIRRORED_REPEAT: /* 2 */ scala.Double = js.native
+  val ADDRESS_MIRRORED_REPEAT: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @static
     * @readonly
@@ -32,20 +32,20 @@ object ^ extends js.Object {
     * @name pc.ADDRESS_REPEAT
     * @description Ignores the integer part of texture coordinates; using only the fractional part.
     */
-  val ADDRESS_REPEAT: /* 0 */ scala.Double = js.native
-  val ASSET_ANIMATION: /* animation */ java.lang.String = js.native
-  val ASSET_AUDIO: /* audio */ java.lang.String = js.native
-  val ASSET_CSS: /* css */ java.lang.String = js.native
-  val ASSET_CUBEMAP: /* cubemap */ java.lang.String = js.native
-  val ASSET_HTML: /* html */ java.lang.String = js.native
-  val ASSET_IMAGE: /* image */ java.lang.String = js.native
-  val ASSET_JSON: /* json */ java.lang.String = js.native
-  val ASSET_MATERIAL: /* material */ java.lang.String = js.native
-  val ASSET_MODEL: /* model */ java.lang.String = js.native
-  val ASSET_SCRIPT: /* script */ java.lang.String = js.native
-  val ASSET_SHADER: /* shader */ java.lang.String = js.native
-  val ASSET_TEXT: /* text */ java.lang.String = js.native
-  val ASSET_TEXTURE: /* texture */ java.lang.String = js.native
+  val ADDRESS_REPEAT: playcanvasLib.playcanvasLibNumbers.`0` = js.native
+  val ASSET_ANIMATION: playcanvasLib.playcanvasLibStrings.animation = js.native
+  val ASSET_AUDIO: playcanvasLib.playcanvasLibStrings.audio = js.native
+  val ASSET_CSS: playcanvasLib.playcanvasLibStrings.css = js.native
+  val ASSET_CUBEMAP: playcanvasLib.playcanvasLibStrings.cubemap = js.native
+  val ASSET_HTML: playcanvasLib.playcanvasLibStrings.html = js.native
+  val ASSET_IMAGE: playcanvasLib.playcanvasLibStrings.image = js.native
+  val ASSET_JSON: playcanvasLib.playcanvasLibStrings.json = js.native
+  val ASSET_MATERIAL: playcanvasLib.playcanvasLibStrings.material = js.native
+  val ASSET_MODEL: playcanvasLib.playcanvasLibStrings.model = js.native
+  val ASSET_SCRIPT: playcanvasLib.playcanvasLibStrings.script = js.native
+  val ASSET_SHADER: playcanvasLib.playcanvasLibStrings.shader = js.native
+  val ASSET_TEXT: playcanvasLib.playcanvasLibStrings.text = js.native
+  val ASSET_TEXTURE: playcanvasLib.playcanvasLibStrings.texture = js.native
   val BAKE_COLOR: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val BAKE_COLORDIR: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
@@ -53,97 +53,97 @@ object ^ extends js.Object {
     * @name pc.BLENDEQUATION_ADD
     * @description Add the results of the source and destination fragment multiplies.
     */
-  val BLENDEQUATION_ADD: /* 0 */ scala.Double = js.native
+  val BLENDEQUATION_ADD: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.BLENDEQUATION
     * @name pc.BLENDEQUATION_MAX
     * @description Use the largest value. Check app.graphicsDevice.extBlendMinmax for support.
     */
-  val BLENDEQUATION_MAX: /* 4 */ scala.Double = js.native
+  val BLENDEQUATION_MAX: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @enum pc.BLENDEQUATION
     * @name pc.BLENDEQUATION_MIN
     * @description Use the smallest value. Check app.graphicsDevice.extBlendMinmax for support.
     */
-  val BLENDEQUATION_MIN: /* 3 */ scala.Double = js.native
+  val BLENDEQUATION_MIN: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.BLENDEQUATION
     * @name pc.BLENDEQUATION_REVERSE_SUBTRACT
     * @description Reverse and subtract the results of the source and destination fragment multiplies.
     */
-  val BLENDEQUATION_REVERSE_SUBTRACT: /* 2 */ scala.Double = js.native
+  val BLENDEQUATION_REVERSE_SUBTRACT: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.BLENDEQUATION
     * @name pc.BLENDEQUATION_SUBTRACT
     * @description Subtract the results of the source and destination fragment multiplies.
     */
-  val BLENDEQUATION_SUBTRACT: /* 1 */ scala.Double = js.native
+  val BLENDEQUATION_SUBTRACT: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_DST_ALPHA
     * @description Multiply all fragment components by the alpha value of the destination fragment.
     */
-  val BLENDMODE_DST_ALPHA: /* 9 */ scala.Double = js.native
+  val BLENDMODE_DST_ALPHA: playcanvasLib.playcanvasLibNumbers.`9` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_DST_COLOR
     * @description Multiply all fragment components by the components of the destination fragment.
     */
-  val BLENDMODE_DST_COLOR: /* 4 */ scala.Double = js.native
+  val BLENDMODE_DST_COLOR: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_ONE
     * @description Multiply all fragment components by one.
     */
-  val BLENDMODE_ONE: /* 1 */ scala.Double = js.native
+  val BLENDMODE_ONE: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_ONE_MINUS_DST_ALPHA
     * @description Multiply all fragment components by one minus the alpha value of the destination fragment.
     */
-  val BLENDMODE_ONE_MINUS_DST_ALPHA: /* 10 */ scala.Double = js.native
+  val BLENDMODE_ONE_MINUS_DST_ALPHA: playcanvasLib.playcanvasLibNumbers.`10` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_ONE_MINUS_DST_COLOR
     * @description Multiply all fragment components by one minus the components of the destination fragment.
     */
-  val BLENDMODE_ONE_MINUS_DST_COLOR: /* 5 */ scala.Double = js.native
+  val BLENDMODE_ONE_MINUS_DST_COLOR: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_ONE_MINUS_SRC_ALPHA
     * @description Multiply all fragment components by one minus the alpha value of the source fragment.
     */
-  val BLENDMODE_ONE_MINUS_SRC_ALPHA: /* 8 */ scala.Double = js.native
+  val BLENDMODE_ONE_MINUS_SRC_ALPHA: playcanvasLib.playcanvasLibNumbers.`8` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_ONE_MINUS_SRC_COLOR
     * @description Multiply all fragment components by one minus the components of the source fragment.
     */
-  val BLENDMODE_ONE_MINUS_SRC_COLOR: /* 3 */ scala.Double = js.native
+  val BLENDMODE_ONE_MINUS_SRC_COLOR: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_SRC_ALPHA
     * @description Multiply all fragment components by the alpha value of the source fragment.
     */
-  val BLENDMODE_SRC_ALPHA: /* 6 */ scala.Double = js.native
+  val BLENDMODE_SRC_ALPHA: playcanvasLib.playcanvasLibNumbers.`6` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_SRC_ALPHA_SATURATE
     * @description Multiply all fragment components by the alpha value of the source fragment.
     */
-  val BLENDMODE_SRC_ALPHA_SATURATE: /* 7 */ scala.Double = js.native
+  val BLENDMODE_SRC_ALPHA_SATURATE: playcanvasLib.playcanvasLibNumbers.`7` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_SRC_COLOR
     * @description Multiply all fragment components by the components of the source fragment.
     */
-  val BLENDMODE_SRC_COLOR: /* 2 */ scala.Double = js.native
+  val BLENDMODE_SRC_COLOR: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.BLENDMODE
     * @name pc.BLENDMODE_ZERO
     * @description Multiply all fragment components by zero.
     */
-  val BLENDMODE_ZERO: /* 0 */ scala.Double = js.native
+  val BLENDMODE_ZERO: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.BLEND
     * @name pc.BLEND_ADDITIVE
@@ -218,122 +218,122 @@ object ^ extends js.Object {
   val BLEND_SUBTRACTIVE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val BLUR_BOX: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val BLUR_GAUSSIAN: playcanvasLib.playcanvasLibNumbers.`1` = js.native
-  val BODYFLAG_KINEMATIC_OBJECT: /* 2 */ scala.Double = js.native
-  val BODYFLAG_NORESPONSE_OBJECT: /* 4 */ scala.Double = js.native
+  val BODYFLAG_KINEMATIC_OBJECT: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val BODYFLAG_NORESPONSE_OBJECT: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   // Collision flags
-  val BODYFLAG_STATIC_OBJECT: /* 1 */ scala.Double = js.native
-  val BODYGROUP_DEFAULT: /* 1 */ scala.Double = js.native
-  val BODYGROUP_DYNAMIC: /* 1 */ scala.Double = js.native
-  val BODYGROUP_ENGINE_1: /* 8 */ scala.Double = js.native
-  val BODYGROUP_ENGINE_2: /* 32 */ scala.Double = js.native
-  val BODYGROUP_ENGINE_3: /* 64 */ scala.Double = js.native
-  val BODYGROUP_KINEMATIC: /* 4 */ scala.Double = js.native
+  val BODYFLAG_STATIC_OBJECT: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val BODYGROUP_DEFAULT: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val BODYGROUP_DYNAMIC: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val BODYGROUP_ENGINE_1: playcanvasLib.playcanvasLibNumbers.`8` = js.native
+  val BODYGROUP_ENGINE_2: playcanvasLib.playcanvasLibNumbers.`32` = js.native
+  val BODYGROUP_ENGINE_3: playcanvasLib.playcanvasLibNumbers.`64` = js.native
+  val BODYGROUP_KINEMATIC: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   // groups
-  val BODYGROUP_NONE: /* 0 */ scala.Double = js.native
-  val BODYGROUP_STATIC: /* 2 */ scala.Double = js.native
-  val BODYGROUP_TRIGGER: /* 16 */ scala.Double = js.native
-  val BODYGROUP_USER_1: /* 128 */ scala.Double = js.native
-  val BODYGROUP_USER_2: /* 256 */ scala.Double = js.native
-  val BODYGROUP_USER_3: /* 512 */ scala.Double = js.native
-  val BODYGROUP_USER_4: /* 1024 */ scala.Double = js.native
-  val BODYGROUP_USER_5: /* 2048 */ scala.Double = js.native
-  val BODYGROUP_USER_6: /* 4096 */ scala.Double = js.native
-  val BODYGROUP_USER_7: /* 8192 */ scala.Double = js.native
-  val BODYGROUP_USER_8: /* 16384 */ scala.Double = js.native
-  val BODYMASK_ALL: /* 65535 */ scala.Double = js.native
+  val BODYGROUP_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
+  val BODYGROUP_STATIC: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val BODYGROUP_TRIGGER: playcanvasLib.playcanvasLibNumbers.`16` = js.native
+  val BODYGROUP_USER_1: playcanvasLib.playcanvasLibNumbers.`128` = js.native
+  val BODYGROUP_USER_2: playcanvasLib.playcanvasLibNumbers.`256` = js.native
+  val BODYGROUP_USER_3: playcanvasLib.playcanvasLibNumbers.`512` = js.native
+  val BODYGROUP_USER_4: playcanvasLib.playcanvasLibNumbers.`1024` = js.native
+  val BODYGROUP_USER_5: playcanvasLib.playcanvasLibNumbers.`2048` = js.native
+  val BODYGROUP_USER_6: playcanvasLib.playcanvasLibNumbers.`4096` = js.native
+  val BODYGROUP_USER_7: playcanvasLib.playcanvasLibNumbers.`8192` = js.native
+  val BODYGROUP_USER_8: playcanvasLib.playcanvasLibNumbers.`16384` = js.native
+  val BODYMASK_ALL: playcanvasLib.playcanvasLibNumbers.`65535` = js.native
   // masks
-  val BODYMASK_NONE: /* 0 */ scala.Double = js.native
+  val BODYMASK_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val BODYMASK_NOT_STATIC: scala.Double = js.native
   val BODYMASK_NOT_STATIC_KINEMATIC: scala.Double = js.native
-  val BODYMASK_STATIC: /* 2 */ scala.Double = js.native
+  val BODYMASK_STATIC: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   // Activation states
-  val BODYSTATE_ACTIVE_TAG: /* 1 */ scala.Double = js.native
-  val BODYSTATE_DISABLE_DEACTIVATION: /* 4 */ scala.Double = js.native
-  val BODYSTATE_DISABLE_SIMULATION: /* 5 */ scala.Double = js.native
-  val BODYSTATE_ISLAND_SLEEPING: /* 2 */ scala.Double = js.native
-  val BODYSTATE_WANTS_DEACTIVATION: /* 3 */ scala.Double = js.native
-  val BODYTYPE_DYNAMIC: /* dynamic */ java.lang.String = js.native
-  val BODYTYPE_KINEMATIC: /* kinematic */ java.lang.String = js.native
+  val BODYSTATE_ACTIVE_TAG: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val BODYSTATE_DISABLE_DEACTIVATION: playcanvasLib.playcanvasLibNumbers.`4` = js.native
+  val BODYSTATE_DISABLE_SIMULATION: playcanvasLib.playcanvasLibNumbers.`5` = js.native
+  val BODYSTATE_ISLAND_SLEEPING: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val BODYSTATE_WANTS_DEACTIVATION: playcanvasLib.playcanvasLibNumbers.`3` = js.native
+  val BODYTYPE_DYNAMIC: playcanvasLib.playcanvasLibStrings.dynamic = js.native
+  val BODYTYPE_KINEMATIC: playcanvasLib.playcanvasLibStrings.kinematic = js.native
   // types
-  val BODYTYPE_STATIC: /* static */ java.lang.String = js.native
+  val BODYTYPE_STATIC: playcanvasLib.playcanvasLibStrings.static = js.native
   /**
     * @enum pc.BUFFER
     * @name pc.BUFFER_DYNAMIC
     * @description The data store contents will be modified repeatedly and used many times.
     */
-  val BUFFER_DYNAMIC: /* 1 */ scala.Double = js.native
+  val BUFFER_DYNAMIC: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.BUFFER
     * @name pc.BUFFER_GPUDYNAMIC
     * @description The data store contents will be modified repeatedly on the GPU and used many times. Optimal for transform feedback usage (WebGL2 only).
     */
-  val BUFFER_GPUDYNAMIC: /* 3 */ scala.Double = js.native
+  val BUFFER_GPUDYNAMIC: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.BUFFER
     * @name pc.BUFFER_STATIC
     * @description The data store contents will be modified once and used many times.
     */
-  val BUFFER_STATIC: /* 0 */ scala.Double = js.native
+  val BUFFER_STATIC: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.BUFFER
     * @name pc.BUFFER_STREAM
     * @description The data store contents will be modified once and used at most a few times.
     */
-  val BUFFER_STREAM: /* 2 */ scala.Double = js.native
+  val BUFFER_STREAM: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.CLEARFLAG
     * @name pc.CLEARFLAG_COLOR
     * @description Clear the color buffer.
     */
-  val CLEARFLAG_COLOR: /* 1 */ scala.Double = js.native
+  val CLEARFLAG_COLOR: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.CLEARFLAG
     * @name pc.CLEARFLAG_DEPTH
     * @description Clear the depth buffer.
     */
-  val CLEARFLAG_DEPTH: /* 2 */ scala.Double = js.native
+  val CLEARFLAG_DEPTH: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.CLEARFLAG
     * @name pc.CLEARFLAG_STENCIL
     * @description Clear the stencil buffer.
     */
-  val CLEARFLAG_STENCIL: /* 4 */ scala.Double = js.native
+  val CLEARFLAG_STENCIL: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @enum pc.CUBEFACE
     * @name pc.CUBEFACE_NEGX
     * @description The negative X face of a cubemap.
     */
-  val CUBEFACE_NEGX: /* 1 */ scala.Double = js.native
+  val CUBEFACE_NEGX: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.CUBEFACE
     * @name pc.CUBEFACE_NEGY
     * @description The negative Y face of a cubemap.
     */
-  val CUBEFACE_NEGY: /* 3 */ scala.Double = js.native
+  val CUBEFACE_NEGY: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.CUBEFACE
     * @name pc.CUBEFACE_NEGZ
     * @description The negative Z face of a cubemap.
     */
-  val CUBEFACE_NEGZ: /* 5 */ scala.Double = js.native
+  val CUBEFACE_NEGZ: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   /**
     * @enum pc.CUBEFACE
     * @name pc.CUBEFACE_POSX
     * @description The positive X face of a cubemap.
     */
-  val CUBEFACE_POSX: /* 0 */ scala.Double = js.native
+  val CUBEFACE_POSX: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.CUBEFACE
     * @name pc.CUBEFACE_POSY
     * @description The positive Y face of a cubemap.
     */
-  val CUBEFACE_POSY: /* 2 */ scala.Double = js.native
+  val CUBEFACE_POSY: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.CUBEFACE
     * @name pc.CUBEFACE_POSZ
     * @description The positive Z face of a cubemap.
     */
-  val CUBEFACE_POSZ: /* 4 */ scala.Double = js.native
+  val CUBEFACE_POSZ: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   val CUBEPROJ_BOX: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   val CUBEPROJ_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
@@ -341,50 +341,50 @@ object ^ extends js.Object {
     * @name pc.CULLFACE_BACK
     * @description Triangles facing away from the view direction are culled.
     */
-  val CULLFACE_BACK: /* 1 */ scala.Double = js.native
+  val CULLFACE_BACK: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.CULLFACE
     * @name pc.CULLFACE_FRONT
     * @description Triangles facing the view direction are culled.
     */
-  val CULLFACE_FRONT: /* 2 */ scala.Double = js.native
+  val CULLFACE_FRONT: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.CULLFACE
     * @name pc.CULLFACE_FRONTANDBACK
     * @description Triangles are culled regardless of their orientation with respect to the view
     * direction. Note that point or line primitives are unaffected by this render state.
     */
-  val CULLFACE_FRONTANDBACK: /* 3 */ scala.Double = js.native
+  val CULLFACE_FRONTANDBACK: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.CULLFACE
     * @name pc.CULLFACE_NONE
     * @description No triangles are culled.
     */
-  val CULLFACE_NONE: /* 0 */ scala.Double = js.native
+  val CULLFACE_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.CURVE
     * @name pc.CURVE_CARDINAL
     * @description A cardinal spline interpolation scheme.
     */
-  val CURVE_CARDINAL: /* 3 */ scala.Double = js.native
+  val CURVE_CARDINAL: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.CURVE
     * @name pc.CURVE_CATMULL
     * @description A Catmull-Rom spline interpolation scheme.
     */
-  val CURVE_CATMULL: /* 2 */ scala.Double = js.native
+  val CURVE_CATMULL: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.CURVE
     * @name pc.CURVE_LINEAR
     * @description A linear interpolation scheme.
     */
-  val CURVE_LINEAR: /* 0 */ scala.Double = js.native
+  val CURVE_LINEAR: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.CURVE
     * @name pc.CURVE_SMOOTHSTEP
     * @description A smooth step interpolation scheme.
     */
-  val CURVE_SMOOTHSTEP: /* 1 */ scala.Double = js.native
+  val CURVE_SMOOTHSTEP: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @static
     * @readonly
@@ -392,7 +392,7 @@ object ^ extends js.Object {
     * @name pc.DISTANCE_EXPONENTIAL
     * @description Exponential distance model
     */
-  val DISTANCE_EXPONENTIAL: /* exponential */ java.lang.String = js.native
+  val DISTANCE_EXPONENTIAL: playcanvasLib.playcanvasLibStrings.exponential = js.native
   /**
     * @static
     * @readonly
@@ -400,7 +400,7 @@ object ^ extends js.Object {
     * @name pc.DISTANCE_INVERSE
     * @description Inverse distance model
     */
-  val DISTANCE_INVERSE: /* inverse */ java.lang.String = js.native
+  val DISTANCE_INVERSE: playcanvasLib.playcanvasLibStrings.inverse = js.native
   /**
     * @static
     * @readOnly
@@ -408,25 +408,25 @@ object ^ extends js.Object {
     * @type String
     * @description Linear distance model
     */
-  val DISTANCE_LINEAR: /* linear */ java.lang.String = js.native
+  val DISTANCE_LINEAR: playcanvasLib.playcanvasLibStrings.linear = js.native
   /**
     * @enum pc.ELEMENTTYPE
     * @name pc.ELEMENTTYPE_GROUP
     * @description A {@link pc.ElementComponent} that contains child {@link pc.ElementComponent}s.
     */
-  val ELEMENTTYPE_GROUP: /* group */ java.lang.String = js.native
+  val ELEMENTTYPE_GROUP: playcanvasLib.playcanvasLibStrings.group = js.native
   /**
     * @enum pc.ELEMENTTYPE
     * @name pc.ELEMENTTYPE_IMAGE
     * @description A {@link pc.ElementComponent} that displays an image.
     */
-  val ELEMENTTYPE_IMAGE: /* image */ java.lang.String = js.native
+  val ELEMENTTYPE_IMAGE: playcanvasLib.playcanvasLibStrings.image = js.native
   /**
     * @enum pc.ELEMENTTYPE
     * @name pc.ELEMENTTYPE_TEXT
     * @description A {@link pc.ElementComponent} that displays text.
     */
-  val ELEMENTTYPE_TEXT: /* text */ java.lang.String = js.native
+  val ELEMENTTYPE_TEXT: playcanvasLib.playcanvasLibStrings.text = js.native
   val EMITTERSHAPE_BOX: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val EMITTERSHAPE_SPHERE: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
@@ -434,37 +434,37 @@ object ^ extends js.Object {
     * @name pc.EVENT_KEYDOWN
     * @description Name of event fired when a key is pressed
     */
-  val EVENT_KEYDOWN: /* keydown */ java.lang.String = js.native
+  val EVENT_KEYDOWN: playcanvasLib.playcanvasLibStrings.keydown = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_KEYUP
     * @description Name of event fired when a key is released
     */
-  val EVENT_KEYUP: /* keyup */ java.lang.String = js.native
+  val EVENT_KEYUP: playcanvasLib.playcanvasLibStrings.keyup = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_MOUSEDOWN
     * @description Name of event fired when a mouse button is pressed
     */
-  val EVENT_MOUSEDOWN: /* mousedown */ java.lang.String = js.native
+  val EVENT_MOUSEDOWN: playcanvasLib.playcanvasLibStrings.mousedown = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_MOUSEMOVE
     * @description Name of event fired when the mouse is moved
     */
-  val EVENT_MOUSEMOVE: /* mousemove */ java.lang.String = js.native
+  val EVENT_MOUSEMOVE: playcanvasLib.playcanvasLibStrings.mousemove = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_MOUSEUP
     * @description Name of event fired when a mouse button is released
     */
-  val EVENT_MOUSEUP: /* mouseup */ java.lang.String = js.native
+  val EVENT_MOUSEUP: playcanvasLib.playcanvasLibStrings.mouseup = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_MOUSEWHEEL
     * @description Name of event fired when the mouse wheel is rotated
     */
-  val EVENT_MOUSEWHEEL: /* mousewheel */ java.lang.String = js.native
+  val EVENT_MOUSEWHEEL: playcanvasLib.playcanvasLibStrings.mousewheel = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_TOUCHCANCEL
@@ -473,79 +473,79 @@ object ^ extends js.Object {
     * For example, a modal alert pops up during the interaction; the touch point leaves the document area;
     * or there are more touch points than the device supports, in which case the earliest touch point is canceled.
     */
-  val EVENT_TOUCHCANCEL: /* touchcancel */ java.lang.String = js.native
+  val EVENT_TOUCHCANCEL: playcanvasLib.playcanvasLibStrings.touchcancel = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_TOUCHEND
     * @description Name of event fired when touch ends. For example, a finger is lifted off the device.
     */
-  val EVENT_TOUCHEND: /* touchend */ java.lang.String = js.native
+  val EVENT_TOUCHEND: playcanvasLib.playcanvasLibStrings.touchend = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_TOUCHMOVE
     * @description Name of event fired when a touch moves.
     */
-  val EVENT_TOUCHMOVE: /* touchmove */ java.lang.String = js.native
+  val EVENT_TOUCHMOVE: playcanvasLib.playcanvasLibStrings.touchmove = js.native
   /**
     * @enum pc.EVENT
     * @name pc.EVENT_TOUCHSTART
     * @description Name of event fired when a new touch occurs. For example, a finger is placed on the device.
     */
-  val EVENT_TOUCHSTART: /* touchstart */ java.lang.String = js.native
+  val EVENT_TOUCHSTART: playcanvasLib.playcanvasLibStrings.touchstart = js.native
   /**
     * @enum pc.FILLMODE
     * @name pc.FILLMODE_FILL_WINDOW
     * @description When resizing the window the size of the canvas will change to fill the window exactly.
     */
-  val FILLMODE_FILL_WINDOW: /* FILL_WINDOW */ java.lang.String = js.native
+  val FILLMODE_FILL_WINDOW: playcanvasLib.playcanvasLibStrings.FILL_WINDOW = js.native
   /**
     * @enum pc.FILLMODE
     * @name pc.FILLMODE_KEEP_ASPECT
     * @description When resizing the window the size of the canvas will change to fill the window as best it can, while maintaining the same aspect ratio.
     */
-  val FILLMODE_KEEP_ASPECT: /* KEEP_ASPECT */ java.lang.String = js.native
+  val FILLMODE_KEEP_ASPECT: playcanvasLib.playcanvasLibStrings.KEEP_ASPECT = js.native
   /**
     * @enum pc.FILLMODE
     * @name pc.FILLMODE_NONE
     * @description When resizing the window the size of the canvas will not change.
     */
-  val FILLMODE_NONE: /* NONE */ java.lang.String = js.native
+  val FILLMODE_NONE: playcanvasLib.playcanvasLibStrings.NONE = js.native
   /**
     * @enum pc.FILTER
     * @name pc.FILTER_LINEAR
     * @description Bilinear filtering.
     */
-  val FILTER_LINEAR: /* 1 */ scala.Double = js.native
+  val FILTER_LINEAR: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.FILTER
     * @name pc.FILTER_LINEAR_MIPMAP_LINEAR
     * @description Linearly interpolate both the mipmap levels and between texels.
     */
-  val FILTER_LINEAR_MIPMAP_LINEAR: /* 5 */ scala.Double = js.native
+  val FILTER_LINEAR_MIPMAP_LINEAR: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   /**
     * @enum pc.FILTER
     * @name pc.FILTER_LINEAR_MIPMAP_NEAREST
     * @description Use the nearest neighbor after linearly interpolating between mipmap levels.
     */
-  val FILTER_LINEAR_MIPMAP_NEAREST: /* 4 */ scala.Double = js.native
+  val FILTER_LINEAR_MIPMAP_NEAREST: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @enum pc.FILTER
     * @name pc.FILTER_NEAREST
     * @description Point sample filtering.
     */
-  val FILTER_NEAREST: /* 0 */ scala.Double = js.native
+  val FILTER_NEAREST: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.FILTER
     * @name pc.FILTER_NEAREST_MIPMAP_LINEAR
     * @description Linearly interpolate in the nearest mipmap level.
     */
-  val FILTER_NEAREST_MIPMAP_LINEAR: /* 3 */ scala.Double = js.native
+  val FILTER_NEAREST_MIPMAP_LINEAR: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.FILTER
     * @name pc.FILTER_NEAREST_MIPMAP_NEAREST
     * @description Use the nearest neighbor in the nearest mipmap level.
     */
-  val FILTER_NEAREST_MIPMAP_NEAREST: /* 2 */ scala.Double = js.native
+  val FILTER_NEAREST_MIPMAP_NEAREST: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.FOG
     * @name pc.FOG_EXP
@@ -572,14 +572,14 @@ object ^ extends js.Object {
   val FOG_NONE: playcanvasLib.playcanvasLibStrings.none = js.native
   val FRESNEL_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val FRESNEL_SCHLICK: playcanvasLib.playcanvasLibNumbers.`2` = js.native
-  val FUNC_ALWAYS: /* 7 */ scala.Double = js.native
-  val FUNC_EQUAL: /* 2 */ scala.Double = js.native
-  val FUNC_GREATER: /* 4 */ scala.Double = js.native
-  val FUNC_GREATEREQUAL: /* 6 */ scala.Double = js.native
-  val FUNC_LESS: /* 1 */ scala.Double = js.native
-  val FUNC_LESSEQUAL: /* 3 */ scala.Double = js.native
-  val FUNC_NEVER: /* 0 */ scala.Double = js.native
-  val FUNC_NOTEQUAL: /* 5 */ scala.Double = js.native
+  val FUNC_ALWAYS: playcanvasLib.playcanvasLibNumbers.`7` = js.native
+  val FUNC_EQUAL: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val FUNC_GREATER: playcanvasLib.playcanvasLibNumbers.`4` = js.native
+  val FUNC_GREATEREQUAL: playcanvasLib.playcanvasLibNumbers.`6` = js.native
+  val FUNC_LESS: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val FUNC_LESSEQUAL: playcanvasLib.playcanvasLibNumbers.`3` = js.native
+  val FUNC_NEVER: playcanvasLib.playcanvasLibNumbers.`0` = js.native
+  val FUNC_NOTEQUAL: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   val GAMMA_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val GAMMA_SRGB: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   val GAMMA_SRGBFAST: playcanvasLib.playcanvasLibNumbers.`2` = js.native
@@ -589,504 +589,504 @@ object ^ extends js.Object {
     * @name pc.INDEXFORMAT_UINT16
     * @description 16-bit unsigned vertex indices.
     */
-  val INDEXFORMAT_UINT16: /* 1 */ scala.Double = js.native
+  val INDEXFORMAT_UINT16: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.INDEXFORMAT
     * @name pc.INDEXFORMAT_UINT32
     * @description 32-bit unsigned vertex indices.
     */
-  val INDEXFORMAT_UINT32: /* 2 */ scala.Double = js.native
+  val INDEXFORMAT_UINT32: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.INDEXFORMAT
     * @name pc.INDEXFORMAT_UINT8
     * @description 8-bit unsigned vertex indices.
     */
-  val INDEXFORMAT_UINT8: /* 0 */ scala.Double = js.native
+  val INDEXFORMAT_UINT8: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_0
     */
-  val KEY_0: /* 48 */ scala.Double = js.native
+  val KEY_0: playcanvasLib.playcanvasLibNumbers.`48` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_1
     */
-  val KEY_1: /* 49 */ scala.Double = js.native
+  val KEY_1: playcanvasLib.playcanvasLibNumbers.`49` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_2
     */
-  val KEY_2: /* 50 */ scala.Double = js.native
+  val KEY_2: playcanvasLib.playcanvasLibNumbers.`50` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_3
     */
-  val KEY_3: /* 51 */ scala.Double = js.native
+  val KEY_3: playcanvasLib.playcanvasLibNumbers.`51` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_4
     */
-  val KEY_4: /* 52 */ scala.Double = js.native
+  val KEY_4: playcanvasLib.playcanvasLibNumbers.`52` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_5
     */
-  val KEY_5: /* 53 */ scala.Double = js.native
+  val KEY_5: playcanvasLib.playcanvasLibNumbers.`53` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_6
     */
-  val KEY_6: /* 54 */ scala.Double = js.native
+  val KEY_6: playcanvasLib.playcanvasLibNumbers.`54` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_7
     */
-  val KEY_7: /* 55 */ scala.Double = js.native
+  val KEY_7: playcanvasLib.playcanvasLibNumbers.`55` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_8
     */
-  val KEY_8: /* 56 */ scala.Double = js.native
+  val KEY_8: playcanvasLib.playcanvasLibNumbers.`56` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_9
     */
-  val KEY_9: /* 57 */ scala.Double = js.native
+  val KEY_9: playcanvasLib.playcanvasLibNumbers.`57` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_A
     */
-  val KEY_A: /* 65 */ scala.Double = js.native
+  val KEY_A: playcanvasLib.playcanvasLibNumbers.`65` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_ADD
     */
-  val KEY_ADD: /* 107 */ scala.Double = js.native
+  val KEY_ADD: playcanvasLib.playcanvasLibNumbers.`107` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_ALT
     */
-  val KEY_ALT: /* 18 */ scala.Double = js.native
+  val KEY_ALT: playcanvasLib.playcanvasLibNumbers.`18` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_B
     */
-  val KEY_B: /* 66 */ scala.Double = js.native
+  val KEY_B: playcanvasLib.playcanvasLibNumbers.`66` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_BACKSPACE
     */
-  val KEY_BACKSPACE: /* 8 */ scala.Double = js.native
+  val KEY_BACKSPACE: playcanvasLib.playcanvasLibNumbers.`8` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_BACK_SLASH
     */
-  val KEY_BACK_SLASH: /* 220 */ scala.Double = js.native
+  val KEY_BACK_SLASH: playcanvasLib.playcanvasLibNumbers.`220` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_C
     */
-  val KEY_C: /* 67 */ scala.Double = js.native
+  val KEY_C: playcanvasLib.playcanvasLibNumbers.`67` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_CAPS_LOCK
     */
-  val KEY_CAPS_LOCK: /* 20 */ scala.Double = js.native
+  val KEY_CAPS_LOCK: playcanvasLib.playcanvasLibNumbers.`20` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_CLOSE_BRACKET
     */
-  val KEY_CLOSE_BRACKET: /* 221 */ scala.Double = js.native
+  val KEY_CLOSE_BRACKET: playcanvasLib.playcanvasLibNumbers.`221` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_COMMA
     */
-  val KEY_COMMA: /* 188 */ scala.Double = js.native
+  val KEY_COMMA: playcanvasLib.playcanvasLibNumbers.`188` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_CONTEXT_MENU
     */
-  val KEY_CONTEXT_MENU: /* 93 */ scala.Double = js.native
+  val KEY_CONTEXT_MENU: playcanvasLib.playcanvasLibNumbers.`93` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_CONTROL
     */
-  val KEY_CONTROL: /* 17 */ scala.Double = js.native
+  val KEY_CONTROL: playcanvasLib.playcanvasLibNumbers.`17` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_D
     */
-  val KEY_D: /* 68 */ scala.Double = js.native
+  val KEY_D: playcanvasLib.playcanvasLibNumbers.`68` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_DECIMAL
     */
-  val KEY_DECIMAL: /* 110 */ scala.Double = js.native
+  val KEY_DECIMAL: playcanvasLib.playcanvasLibNumbers.`110` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_DELETE
     */
-  val KEY_DELETE: /* 46 */ scala.Double = js.native
+  val KEY_DELETE: playcanvasLib.playcanvasLibNumbers.`46` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_DIVIDE
     */
-  val KEY_DIVIDE: /* 111 */ scala.Double = js.native
+  val KEY_DIVIDE: playcanvasLib.playcanvasLibNumbers.`111` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_DOWN
     */
-  val KEY_DOWN: /* 40 */ scala.Double = js.native
+  val KEY_DOWN: playcanvasLib.playcanvasLibNumbers.`40` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_E
     */
-  val KEY_E: /* 69 */ scala.Double = js.native
+  val KEY_E: playcanvasLib.playcanvasLibNumbers.`69` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_END
     */
-  val KEY_END: /* 35 */ scala.Double = js.native
+  val KEY_END: playcanvasLib.playcanvasLibNumbers.`35` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_ENTER
     */
-  val KEY_ENTER: /* 13 */ scala.Double = js.native
+  val KEY_ENTER: playcanvasLib.playcanvasLibNumbers.`13` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_EQUAL
     */
-  val KEY_EQUAL: /* 61 */ scala.Double = js.native
+  val KEY_EQUAL: playcanvasLib.playcanvasLibNumbers.`61` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_ESCAPE
     */
-  val KEY_ESCAPE: /* 27 */ scala.Double = js.native
+  val KEY_ESCAPE: playcanvasLib.playcanvasLibNumbers.`27` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F
     */
-  val KEY_F: /* 70 */ scala.Double = js.native
+  val KEY_F: playcanvasLib.playcanvasLibNumbers.`70` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F1
     */
-  val KEY_F1: /* 112 */ scala.Double = js.native
+  val KEY_F1: playcanvasLib.playcanvasLibNumbers.`112` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F10
     */
-  val KEY_F10: /* 121 */ scala.Double = js.native
+  val KEY_F10: playcanvasLib.playcanvasLibNumbers.`121` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F11
     */
-  val KEY_F11: /* 122 */ scala.Double = js.native
+  val KEY_F11: playcanvasLib.playcanvasLibNumbers.`122` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F12
     */
-  val KEY_F12: /* 123 */ scala.Double = js.native
+  val KEY_F12: playcanvasLib.playcanvasLibNumbers.`123` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F2
     */
-  val KEY_F2: /* 113 */ scala.Double = js.native
+  val KEY_F2: playcanvasLib.playcanvasLibNumbers.`113` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F3
     */
-  val KEY_F3: /* 114 */ scala.Double = js.native
+  val KEY_F3: playcanvasLib.playcanvasLibNumbers.`114` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F4
     */
-  val KEY_F4: /* 115 */ scala.Double = js.native
+  val KEY_F4: playcanvasLib.playcanvasLibNumbers.`115` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F5
     */
-  val KEY_F5: /* 116 */ scala.Double = js.native
+  val KEY_F5: playcanvasLib.playcanvasLibNumbers.`116` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F6
     */
-  val KEY_F6: /* 117 */ scala.Double = js.native
+  val KEY_F6: playcanvasLib.playcanvasLibNumbers.`117` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F7
     */
-  val KEY_F7: /* 118 */ scala.Double = js.native
+  val KEY_F7: playcanvasLib.playcanvasLibNumbers.`118` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F8
     */
-  val KEY_F8: /* 119 */ scala.Double = js.native
+  val KEY_F8: playcanvasLib.playcanvasLibNumbers.`119` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_F9
     */
-  val KEY_F9: /* 120 */ scala.Double = js.native
+  val KEY_F9: playcanvasLib.playcanvasLibNumbers.`120` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_G
     */
-  val KEY_G: /* 71 */ scala.Double = js.native
+  val KEY_G: playcanvasLib.playcanvasLibNumbers.`71` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_H
     */
-  val KEY_H: /* 72 */ scala.Double = js.native
+  val KEY_H: playcanvasLib.playcanvasLibNumbers.`72` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_HOME
     */
-  val KEY_HOME: /* 36 */ scala.Double = js.native
+  val KEY_HOME: playcanvasLib.playcanvasLibNumbers.`36` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_I
     */
-  val KEY_I: /* 73 */ scala.Double = js.native
+  val KEY_I: playcanvasLib.playcanvasLibNumbers.`73` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_INSERT
     */
-  val KEY_INSERT: /* 45 */ scala.Double = js.native
+  val KEY_INSERT: playcanvasLib.playcanvasLibNumbers.`45` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_J
     */
-  val KEY_J: /* 74 */ scala.Double = js.native
+  val KEY_J: playcanvasLib.playcanvasLibNumbers.`74` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_K
     */
-  val KEY_K: /* 75 */ scala.Double = js.native
+  val KEY_K: playcanvasLib.playcanvasLibNumbers.`75` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_L
     */
-  val KEY_L: /* 76 */ scala.Double = js.native
+  val KEY_L: playcanvasLib.playcanvasLibNumbers.`76` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_LEFT
     */
-  val KEY_LEFT: /* 37 */ scala.Double = js.native
+  val KEY_LEFT: playcanvasLib.playcanvasLibNumbers.`37` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_M
     */
-  val KEY_M: /* 77 */ scala.Double = js.native
+  val KEY_M: playcanvasLib.playcanvasLibNumbers.`77` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_META
     */
-  val KEY_META: /* 224 */ scala.Double = js.native
+  val KEY_META: playcanvasLib.playcanvasLibNumbers.`224` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_MULTIPLY
     */
-  val KEY_MULTIPLY: /* 106 */ scala.Double = js.native
+  val KEY_MULTIPLY: playcanvasLib.playcanvasLibNumbers.`106` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_N
     */
-  val KEY_N: /* 78 */ scala.Double = js.native
+  val KEY_N: playcanvasLib.playcanvasLibNumbers.`78` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_0
     */
-  val KEY_NUMPAD_0: /* 96 */ scala.Double = js.native
+  val KEY_NUMPAD_0: playcanvasLib.playcanvasLibNumbers.`96` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_1
     */
-  val KEY_NUMPAD_1: /* 97 */ scala.Double = js.native
+  val KEY_NUMPAD_1: playcanvasLib.playcanvasLibNumbers.`97` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_2
     */
-  val KEY_NUMPAD_2: /* 98 */ scala.Double = js.native
+  val KEY_NUMPAD_2: playcanvasLib.playcanvasLibNumbers.`98` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_3
     */
-  val KEY_NUMPAD_3: /* 99 */ scala.Double = js.native
+  val KEY_NUMPAD_3: playcanvasLib.playcanvasLibNumbers.`99` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_4
     */
-  val KEY_NUMPAD_4: /* 100 */ scala.Double = js.native
+  val KEY_NUMPAD_4: playcanvasLib.playcanvasLibNumbers.`100` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_5
     */
-  val KEY_NUMPAD_5: /* 101 */ scala.Double = js.native
+  val KEY_NUMPAD_5: playcanvasLib.playcanvasLibNumbers.`101` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_6
     */
-  val KEY_NUMPAD_6: /* 102 */ scala.Double = js.native
+  val KEY_NUMPAD_6: playcanvasLib.playcanvasLibNumbers.`102` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_7
     */
-  val KEY_NUMPAD_7: /* 103 */ scala.Double = js.native
+  val KEY_NUMPAD_7: playcanvasLib.playcanvasLibNumbers.`103` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_8
     */
-  val KEY_NUMPAD_8: /* 104 */ scala.Double = js.native
+  val KEY_NUMPAD_8: playcanvasLib.playcanvasLibNumbers.`104` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_NUMPAD_9
     */
-  val KEY_NUMPAD_9: /* 105 */ scala.Double = js.native
+  val KEY_NUMPAD_9: playcanvasLib.playcanvasLibNumbers.`105` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_O
     */
-  val KEY_O: /* 79 */ scala.Double = js.native
+  val KEY_O: playcanvasLib.playcanvasLibNumbers.`79` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_OPEN_BRACKET
     */
-  val KEY_OPEN_BRACKET: /* 219 */ scala.Double = js.native
+  val KEY_OPEN_BRACKET: playcanvasLib.playcanvasLibNumbers.`219` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_P
     */
-  val KEY_P: /* 80 */ scala.Double = js.native
+  val KEY_P: playcanvasLib.playcanvasLibNumbers.`80` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_PAGE_DOWN
     */
-  val KEY_PAGE_DOWN: /* 34 */ scala.Double = js.native
+  val KEY_PAGE_DOWN: playcanvasLib.playcanvasLibNumbers.`34` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_PAGE_UP
     */
-  val KEY_PAGE_UP: /* 33 */ scala.Double = js.native
+  val KEY_PAGE_UP: playcanvasLib.playcanvasLibNumbers.`33` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_PAUSE
     */
-  val KEY_PAUSE: /* 19 */ scala.Double = js.native
+  val KEY_PAUSE: playcanvasLib.playcanvasLibNumbers.`19` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_PERIOD
     */
-  val KEY_PERIOD: /* 190 */ scala.Double = js.native
+  val KEY_PERIOD: playcanvasLib.playcanvasLibNumbers.`190` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_PRINT_SCREEN
     */
-  val KEY_PRINT_SCREEN: /* 44 */ scala.Double = js.native
+  val KEY_PRINT_SCREEN: playcanvasLib.playcanvasLibNumbers.`44` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_Q
     */
-  val KEY_Q: /* 81 */ scala.Double = js.native
+  val KEY_Q: playcanvasLib.playcanvasLibNumbers.`81` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_R
     */
-  val KEY_R: /* 82 */ scala.Double = js.native
+  val KEY_R: playcanvasLib.playcanvasLibNumbers.`82` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_RETURN
     */
-  val KEY_RETURN: /* 13 */ scala.Double = js.native
+  val KEY_RETURN: playcanvasLib.playcanvasLibNumbers.`13` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_RIGHT
     */
-  val KEY_RIGHT: /* 39 */ scala.Double = js.native
+  val KEY_RIGHT: playcanvasLib.playcanvasLibNumbers.`39` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_S
     */
-  val KEY_S: /* 83 */ scala.Double = js.native
+  val KEY_S: playcanvasLib.playcanvasLibNumbers.`83` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_SEMICOLON
     */
-  val KEY_SEMICOLON: /* 59 */ scala.Double = js.native
+  val KEY_SEMICOLON: playcanvasLib.playcanvasLibNumbers.`59` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_SEPARATOR
     */
-  val KEY_SEPARATOR: /* 108 */ scala.Double = js.native
+  val KEY_SEPARATOR: playcanvasLib.playcanvasLibNumbers.`108` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_SHIFT
     */
-  val KEY_SHIFT: /* 16 */ scala.Double = js.native
+  val KEY_SHIFT: playcanvasLib.playcanvasLibNumbers.`16` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_SLASH
     */
-  val KEY_SLASH: /* 191 */ scala.Double = js.native
+  val KEY_SLASH: playcanvasLib.playcanvasLibNumbers.`191` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_SPACE
     */
-  val KEY_SPACE: /* 32 */ scala.Double = js.native
+  val KEY_SPACE: playcanvasLib.playcanvasLibNumbers.`32` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_SUBTRACT
     */
-  val KEY_SUBTRACT: /* 109 */ scala.Double = js.native
+  val KEY_SUBTRACT: playcanvasLib.playcanvasLibNumbers.`109` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_T
     */
-  val KEY_T: /* 84 */ scala.Double = js.native
+  val KEY_T: playcanvasLib.playcanvasLibNumbers.`84` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_TAB
     */
-  val KEY_TAB: /* 9 */ scala.Double = js.native
+  val KEY_TAB: playcanvasLib.playcanvasLibNumbers.`9` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_U
     */
-  val KEY_U: /* 85 */ scala.Double = js.native
+  val KEY_U: playcanvasLib.playcanvasLibNumbers.`85` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_UP
     */
-  val KEY_UP: /* 38 */ scala.Double = js.native
+  val KEY_UP: playcanvasLib.playcanvasLibNumbers.`38` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_V
     */
-  val KEY_V: /* 86 */ scala.Double = js.native
+  val KEY_V: playcanvasLib.playcanvasLibNumbers.`86` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_W
     */
-  val KEY_W: /* 87 */ scala.Double = js.native
+  val KEY_W: playcanvasLib.playcanvasLibNumbers.`87` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_WINDOWS
     */
-  val KEY_WINDOWS: /* 91 */ scala.Double = js.native
+  val KEY_WINDOWS: playcanvasLib.playcanvasLibNumbers.`91` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_X
     */
-  val KEY_X: /* 88 */ scala.Double = js.native
+  val KEY_X: playcanvasLib.playcanvasLibNumbers.`88` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_Y
     */
-  val KEY_Y: /* 89 */ scala.Double = js.native
+  val KEY_Y: playcanvasLib.playcanvasLibNumbers.`89` = js.native
   /**
     * @enum pc.KEY
     * @name pc.KEY_Z
     */
-  val KEY_Z: /* 90 */ scala.Double = js.native
+  val KEY_Z: playcanvasLib.playcanvasLibNumbers.`90` = js.native
   val LAYER_FX: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   val LAYER_GIZMO: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   val LAYER_HUD: playcanvasLib.playcanvasLibNumbers.`0` = js.native
@@ -1120,125 +1120,125 @@ object ^ extends js.Object {
     * @name pc.MOUSEBUTTON_LEFT
     * @description The left mouse button
     */
-  val MOUSEBUTTON_LEFT: /* 0 */ scala.Double = js.native
+  val MOUSEBUTTON_LEFT: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.MOUSEBUTTON
     * @name pc.MOUSEBUTTON_MIDDLE
     * @description The middle mouse button
     */
-  val MOUSEBUTTON_MIDDLE: /* 1 */ scala.Double = js.native
+  val MOUSEBUTTON_MIDDLE: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.MOUSEBUTTON
     * @name pc.MOUSEBUTTON_NONE
     * @description No mouse buttons pressed
     */
-  val MOUSEBUTTON_NONE: /* -1 */ scala.Double = js.native
+  val MOUSEBUTTON_NONE: playcanvasLib.playcanvasLibNumbers.`-1` = js.native
   /**
     * @enum pc.MOUSEBUTTON
     * @name pc.MOUSEBUTTON_RIGHT
     * @description The right mouse button
     */
-  val MOUSEBUTTON_RIGHT: /* 2 */ scala.Double = js.native
+  val MOUSEBUTTON_RIGHT: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @description Index for pad 1
     */
-  val PAD_1: /* 0 */ scala.Double = js.native
+  val PAD_1: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @description Index for pad 2
     */
-  val PAD_2: /* 1 */ scala.Double = js.native
+  val PAD_2: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @description Index for pad 3
     */
-  val PAD_3: /* 2 */ scala.Double = js.native
+  val PAD_3: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @description Index for pad 4
     */
-  val PAD_4: /* 3 */ scala.Double = js.native
+  val PAD_4: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @description Direction pad down
     */
-  val PAD_DOWN: /* 13 */ scala.Double = js.native
+  val PAD_DOWN: playcanvasLib.playcanvasLibNumbers.`13` = js.native
   /**
     * @description The first face button, from bottom going clockwise
     */
-  val PAD_FACE_1: /* 0 */ scala.Double = js.native
+  val PAD_FACE_1: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @description The second face button, from bottom going clockwise
     */
-  val PAD_FACE_2: /* 1 */ scala.Double = js.native
+  val PAD_FACE_2: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @description The third face button, from bottom going clockwise
     */
-  val PAD_FACE_3: /* 2 */ scala.Double = js.native
+  val PAD_FACE_3: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @description The fourth face button, from bottom going clockwise
     */
-  val PAD_FACE_4: /* 3 */ scala.Double = js.native
+  val PAD_FACE_4: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @description Direction pad left
     */
-  val PAD_LEFT: /* 14 */ scala.Double = js.native
+  val PAD_LEFT: playcanvasLib.playcanvasLibNumbers.`14` = js.native
   /**
     * @description The first shoulder button on the left
     */
-  val PAD_L_SHOULDER_1: /* 4 */ scala.Double = js.native
+  val PAD_L_SHOULDER_1: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @description The second shoulder button on the left
     */
-  val PAD_L_SHOULDER_2: /* 6 */ scala.Double = js.native
+  val PAD_L_SHOULDER_2: playcanvasLib.playcanvasLibNumbers.`6` = js.native
   /**
     * @description The button when depressing the left analogue stick
     */
-  val PAD_L_STICK_BUTTON: /* 10 */ scala.Double = js.native
+  val PAD_L_STICK_BUTTON: playcanvasLib.playcanvasLibNumbers.`10` = js.native
   /**
     * @description Horizontal axis on the left analogue stick
     */
-  val PAD_L_STICK_X: /* 0 */ scala.Double = js.native
+  val PAD_L_STICK_X: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @description Vertical axis on the left analogue stick
     */
-  val PAD_L_STICK_Y: /* 1 */ scala.Double = js.native
+  val PAD_L_STICK_Y: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @description Direction pad right
     */
-  val PAD_RIGHT: /* 15 */ scala.Double = js.native
+  val PAD_RIGHT: playcanvasLib.playcanvasLibNumbers.`15` = js.native
   /**
     * @description The first shoulder button on the right
     */
-  val PAD_R_SHOULDER_1: /* 5 */ scala.Double = js.native
+  val PAD_R_SHOULDER_1: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   /**
     * @description The second shoulder button on the right
     */
-  val PAD_R_SHOULDER_2: /* 7 */ scala.Double = js.native
+  val PAD_R_SHOULDER_2: playcanvasLib.playcanvasLibNumbers.`7` = js.native
   /**
     * @description The button when depressing the right analogue stick
     */
-  val PAD_R_STICK_BUTTON: /* 11 */ scala.Double = js.native
+  val PAD_R_STICK_BUTTON: playcanvasLib.playcanvasLibNumbers.`11` = js.native
   /**
     * @description Horizontal axis on the right analogue stick
     */
-  val PAD_R_STICK_X: /* 2 */ scala.Double = js.native
+  val PAD_R_STICK_X: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @description Vertical axis on the right analogue stick
     */
-  val PAD_R_STICK_Y: /* 3 */ scala.Double = js.native
+  val PAD_R_STICK_Y: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @description The select button
     */
-  val PAD_SELECT: /* 8 */ scala.Double = js.native
+  val PAD_SELECT: playcanvasLib.playcanvasLibNumbers.`8` = js.native
   /**
     * @description The start button
     */
-  val PAD_START: /* 9 */ scala.Double = js.native
+  val PAD_START: playcanvasLib.playcanvasLibNumbers.`9` = js.native
   /**
     * @description Direction pad up
     */
-  val PAD_UP: /* 12 */ scala.Double = js.native
+  val PAD_UP: playcanvasLib.playcanvasLibNumbers.`12` = js.native
   /**
     * @description Vendor specific button
     */
-  val PAD_VENDOR: /* 16 */ scala.Double = js.native
+  val PAD_VENDOR: playcanvasLib.playcanvasLibNumbers.`16` = js.native
   val PARTICLEMODE_CPU: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   val PARTICLEMODE_GPU: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val PARTICLESORT_DISTANCE: playcanvasLib.playcanvasLibNumbers.`1` = js.native
@@ -1250,175 +1250,175 @@ object ^ extends js.Object {
     * @name pc.PIXELFORMAT_111110F
     * @description A floating-point color-only format with 11 bits for red and green channels; and 10 bits for the blue channel (WebGL2 only).
     */
-  val PIXELFORMAT_111110F: /* 18 */ scala.Double = js.native
+  val PIXELFORMAT_111110F: playcanvasLib.playcanvasLibNumbers.`18` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_A8
     * @description 8-bit alpha.
     */
-  val PIXELFORMAT_A8: /* 0 */ scala.Double = js.native
+  val PIXELFORMAT_A8: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_DEPTH
     * @description A readable depth buffer format
     */
-  val PIXELFORMAT_DEPTH: /* 16 */ scala.Double = js.native
+  val PIXELFORMAT_DEPTH: playcanvasLib.playcanvasLibNumbers.`16` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_DEPTHSTENCIL
     * @description A readable depth/stencil buffer format (WebGL2 only).
     */
-  val PIXELFORMAT_DEPTHSTENCIL: /* 17 */ scala.Double = js.native
+  val PIXELFORMAT_DEPTHSTENCIL: playcanvasLib.playcanvasLibNumbers.`17` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_DXT1
     * @description Block compressed format; storing 16 input pixels in 64 bits of output; consisting of two 16-bit RGB 5 =6 =5 color values and a 4x4 two bit lookup table.
     */
-  val PIXELFORMAT_DXT1: /* 8 */ scala.Double = js.native
+  val PIXELFORMAT_DXT1: playcanvasLib.playcanvasLibNumbers.`8` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_DXT3
     * @description Block compressed format; storing 16 input pixels (corresponding to a 4x4 pixel block) into 128 bits of output; consisting of 64 bits of alpha channel data (4 bits for each pixel) followed by 64 bits of color data; encoded the same way as DXT1.
     */
-  val PIXELFORMAT_DXT3: /* 9 */ scala.Double = js.native
+  val PIXELFORMAT_DXT3: playcanvasLib.playcanvasLibNumbers.`9` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_DXT5
     * @description Block compressed format; storing 16 input pixels into 128 bits of output; consisting of 64 bits of alpha channel data (two 8 bit alpha values and a 4x4 3 bit lookup table) followed by 64 bits of color data (encoded the same way as DXT1).
     */
-  val PIXELFORMAT_DXT5: /* 10 */ scala.Double = js.native
-  val PIXELFORMAT_ETC1: /* 21 */ scala.Double = js.native
+  val PIXELFORMAT_DXT5: playcanvasLib.playcanvasLibNumbers.`10` = js.native
+  val PIXELFORMAT_ETC1: playcanvasLib.playcanvasLibNumbers.`21` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_L8
     * @description 8-bit luminance.
     */
-  val PIXELFORMAT_L8: /* 1 */ scala.Double = js.native
+  val PIXELFORMAT_L8: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_L8_A8
     * @description 8-bit luminance with 8-bit alpha.
     */
-  val PIXELFORMAT_L8_A8: /* 2 */ scala.Double = js.native
-  val PIXELFORMAT_PVRTC_2BPP_RGBA_1: /* 23 */ scala.Double = js.native
-  val PIXELFORMAT_PVRTC_2BPP_RGB_1: /* 22 */ scala.Double = js.native
-  val PIXELFORMAT_PVRTC_4BPP_RGBA_1: /* 25 */ scala.Double = js.native
-  val PIXELFORMAT_PVRTC_4BPP_RGB_1: /* 24 */ scala.Double = js.native
+  val PIXELFORMAT_L8_A8: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val PIXELFORMAT_PVRTC_2BPP_RGBA_1: playcanvasLib.playcanvasLibNumbers.`23` = js.native
+  val PIXELFORMAT_PVRTC_2BPP_RGB_1: playcanvasLib.playcanvasLibNumbers.`22` = js.native
+  val PIXELFORMAT_PVRTC_4BPP_RGBA_1: playcanvasLib.playcanvasLibNumbers.`25` = js.native
+  val PIXELFORMAT_PVRTC_4BPP_RGB_1: playcanvasLib.playcanvasLibNumbers.`24` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_R32F
     * @description 32-bit floating point single channel format (WebGL2 only).
     */
-  val PIXELFORMAT_R32F: /* 15 */ scala.Double = js.native
+  val PIXELFORMAT_R32F: playcanvasLib.playcanvasLibNumbers.`15` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_R4_G4_B4_A4
     * @description 16-bit RGBA (4-bits for red channel; 4 for green; 4 for blue with 4-bit alpha).
     */
-  val PIXELFORMAT_R4_G4_B4_A4: /* 5 */ scala.Double = js.native
+  val PIXELFORMAT_R4_G4_B4_A4: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_R5_G5_B5_A1
     * @description 16-bit RGBA (5-bits for red channel; 5 for green; 5 for blue with 1-bit alpha).
     */
-  val PIXELFORMAT_R5_G5_B5_A1: /* 4 */ scala.Double = js.native
+  val PIXELFORMAT_R5_G5_B5_A1: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_R5_G6_B5
     * @description 16-bit RGB (5-bits for red channel; 6 for green and 5 for blue).
     */
-  val PIXELFORMAT_R5_G6_B5: /* 3 */ scala.Double = js.native
+  val PIXELFORMAT_R5_G6_B5: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_R8_G8_B8
     * @description 24-bit RGB (8-bits for red channel; 8 for green and 8 for blue).
     */
-  val PIXELFORMAT_R8_G8_B8: /* 6 */ scala.Double = js.native
+  val PIXELFORMAT_R8_G8_B8: playcanvasLib.playcanvasLibNumbers.`6` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_R8_G8_B8_A8
     * @description 32-bit RGBA (8-bits for red channel; 8 for green; 8 for blue with 8-bit alpha).
     */
-  val PIXELFORMAT_R8_G8_B8_A8: /* 7 */ scala.Double = js.native
+  val PIXELFORMAT_R8_G8_B8_A8: playcanvasLib.playcanvasLibNumbers.`7` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_RGB16F
     * @description 16-bit floating point RGB (16-bit float for each red; green and blue channels).
     */
-  val PIXELFORMAT_RGB16F: /* 11 */ scala.Double = js.native
+  val PIXELFORMAT_RGB16F: playcanvasLib.playcanvasLibNumbers.`11` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_RGB32F
     * @description 32-bit floating point RGB (32-bit float for each red; green and blue channels).
     */
-  val PIXELFORMAT_RGB32F: /* 13 */ scala.Double = js.native
+  val PIXELFORMAT_RGB32F: playcanvasLib.playcanvasLibNumbers.`13` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_RGBA16F
     * @description 16-bit floating point RGBA (16-bit float for each red; green; blue and alpha channels).
     */
-  val PIXELFORMAT_RGBA16F: /* 12 */ scala.Double = js.native
+  val PIXELFORMAT_RGBA16F: playcanvasLib.playcanvasLibNumbers.`12` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_RGBA32F
     * @description 32-bit floating point RGBA (32-bit float for each red; green; blue and alpha channels).
     */
-  val PIXELFORMAT_RGBA32F: /* 14 */ scala.Double = js.native
+  val PIXELFORMAT_RGBA32F: playcanvasLib.playcanvasLibNumbers.`14` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_SRGB
     * @description Color-only sRGB format (WebGL2 only).
     */
-  val PIXELFORMAT_SRGB: /* 19 */ scala.Double = js.native
+  val PIXELFORMAT_SRGB: playcanvasLib.playcanvasLibNumbers.`19` = js.native
   /**
     * @enum pc.PIXELFORMAT
     * @name pc.PIXELFORMAT_SRGBA
     * @description Color sRGB format with additional alpha channel (WebGL2 only).
     */
-  val PIXELFORMAT_SRGBA: /* 20 */ scala.Double = js.native
+  val PIXELFORMAT_SRGBA: playcanvasLib.playcanvasLibNumbers.`20` = js.native
   /**
     * @enum pc.PRIMITIVE
     * @name pc.PRIMITIVE_LINELOOP
     * @description List of points that are linked sequentially by line segments; with a closing line segment between the last and first points.
     */
-  val PRIMITIVE_LINELOOP: /* 2 */ scala.Double = js.native
+  val PRIMITIVE_LINELOOP: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.PRIMITIVE
     * @name pc.PRIMITIVE_LINES
     * @description Discrete list of line segments.
     */
-  val PRIMITIVE_LINES: /* 1 */ scala.Double = js.native
+  val PRIMITIVE_LINES: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.PRIMITIVE
     * @name pc.PRIMITIVE_LINESTRIP
     * @description List of points that are linked sequentially by line segments.
     */
-  val PRIMITIVE_LINESTRIP: /* 3 */ scala.Double = js.native
+  val PRIMITIVE_LINESTRIP: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   // only add compressed formats next
   /**
     * @enum pc.PRIMITIVE
     * @name pc.PRIMITIVE_POINTS
     * @description List of distinct points.
     */
-  val PRIMITIVE_POINTS: /* 0 */ scala.Double = js.native
+  val PRIMITIVE_POINTS: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.PRIMITIVE
     * @name pc.PRIMITIVE_TRIANGLES
     * @description Discrete list of triangles.
     */
-  val PRIMITIVE_TRIANGLES: /* 4 */ scala.Double = js.native
+  val PRIMITIVE_TRIANGLES: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @enum pc.PRIMITIVE
     * @name pc.PRIMITIVE_TRIFAN
     * @description Connected fan of triangles where the first vertex forms triangles with the following pairs of vertices.
     */
-  val PRIMITIVE_TRIFAN: /* 6 */ scala.Double = js.native
+  val PRIMITIVE_TRIFAN: playcanvasLib.playcanvasLibNumbers.`6` = js.native
   /**
     * @enum pc.PRIMITIVE
     * @name pc.PRIMITIVE_TRISTRIP
     * @description Connected strip of triangles where a specified vertex forms a triangle using the previous two.
     */
-  val PRIMITIVE_TRISTRIP: /* 5 */ scala.Double = js.native
+  val PRIMITIVE_TRISTRIP: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   /**
     * @enum pc.PROJECTION
     * @name pc.PROJECTION_ORTHOGRAPHIC
@@ -1439,205 +1439,205 @@ object ^ extends js.Object {
     * @name pc.RESOLUTION_AUTO
     * @description When the canvas is resized the resolution of the canvas will change to match the size of the canvas.
     */
-  val RESOLUTION_AUTO: /* AUTO */ java.lang.String = js.native
+  val RESOLUTION_AUTO: playcanvasLib.playcanvasLibStrings.AUTO = js.native
   /**
     * @enum pc.RESOLUTION
     * @name pc.RESOLUTION_FIXED
     * @description When the canvas is resized the resolution of the canvas will remain at the same value and the output will just be scaled to fit the canvas.
     */
-  val RESOLUTION_FIXED: /* FIXED */ java.lang.String = js.native
+  val RESOLUTION_FIXED: playcanvasLib.playcanvasLibStrings.FIXED = js.native
   /**
     * @enum pc.SCALEMODE
     * @name pc.SCALEMODE_BLEND
     * @description Scale the {@link pc.ScreenComponent} when the application's resolution is different than the ScreenComponent's referenceResolution.
     */
-  val SCALEMODE_BLEND: /* blend */ java.lang.String = js.native
+  val SCALEMODE_BLEND: playcanvasLib.playcanvasLibStrings.blend = js.native
   /**
     * @enum pc.SCALEMODE
     * @name pc.SCALEMODE_NONE
     * @description Always use the application's resolution as the resolution for the {@link pc.ScreenComponent}.
     */
-  val SCALEMODE_NONE: /* none */ java.lang.String = js.native
+  val SCALEMODE_NONE: playcanvasLib.playcanvasLibStrings.none = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR0
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR0: /* ATTR0 */ java.lang.String = js.native
+  val SEMANTIC_ATTR0: playcanvasLib.playcanvasLibStrings.ATTR0 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR1
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR1: /* ATTR1 */ java.lang.String = js.native
+  val SEMANTIC_ATTR1: playcanvasLib.playcanvasLibStrings.ATTR1 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR10
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR10: /* ATTR10 */ java.lang.String = js.native
+  val SEMANTIC_ATTR10: playcanvasLib.playcanvasLibStrings.ATTR10 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR11
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR11: /* ATTR11 */ java.lang.String = js.native
+  val SEMANTIC_ATTR11: playcanvasLib.playcanvasLibStrings.ATTR11 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR12
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR12: /* ATTR12 */ java.lang.String = js.native
+  val SEMANTIC_ATTR12: playcanvasLib.playcanvasLibStrings.ATTR12 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR13
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR13: /* ATTR13 */ java.lang.String = js.native
+  val SEMANTIC_ATTR13: playcanvasLib.playcanvasLibStrings.ATTR13 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR14
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR14: /* ATTR14 */ java.lang.String = js.native
+  val SEMANTIC_ATTR14: playcanvasLib.playcanvasLibStrings.ATTR14 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR15
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR15: /* ATTR15 */ java.lang.String = js.native
+  val SEMANTIC_ATTR15: playcanvasLib.playcanvasLibStrings.ATTR15 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR2
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR2: /* ATTR2 */ java.lang.String = js.native
+  val SEMANTIC_ATTR2: playcanvasLib.playcanvasLibStrings.ATTR2 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR3
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR3: /* ATTR3 */ java.lang.String = js.native
+  val SEMANTIC_ATTR3: playcanvasLib.playcanvasLibStrings.ATTR3 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR4
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR4: /* ATTR4 */ java.lang.String = js.native
+  val SEMANTIC_ATTR4: playcanvasLib.playcanvasLibStrings.ATTR4 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR5
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR5: /* ATTR5 */ java.lang.String = js.native
+  val SEMANTIC_ATTR5: playcanvasLib.playcanvasLibStrings.ATTR5 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR6
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR6: /* ATTR6 */ java.lang.String = js.native
+  val SEMANTIC_ATTR6: playcanvasLib.playcanvasLibStrings.ATTR6 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR7
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR7: /* ATTR7 */ java.lang.String = js.native
+  val SEMANTIC_ATTR7: playcanvasLib.playcanvasLibStrings.ATTR7 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR8
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR8: /* ATTR8 */ java.lang.String = js.native
+  val SEMANTIC_ATTR8: playcanvasLib.playcanvasLibStrings.ATTR8 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_ATTR9
     * @description Vertex attribute with a user defined semantic.
     */
-  val SEMANTIC_ATTR9: /* ATTR9 */ java.lang.String = js.native
+  val SEMANTIC_ATTR9: playcanvasLib.playcanvasLibStrings.ATTR9 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_BLENDINDICES
     * @description Vertex attribute to be treated as skin blend indices.
     */
-  val SEMANTIC_BLENDINDICES: /* BLENDINDICES */ java.lang.String = js.native
+  val SEMANTIC_BLENDINDICES: playcanvasLib.playcanvasLibStrings.BLENDINDICES = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_BLENDWEIGHT
     * @description Vertex attribute to be treated as skin blend weights.
     */
-  val SEMANTIC_BLENDWEIGHT: /* BLENDWEIGHT */ java.lang.String = js.native
+  val SEMANTIC_BLENDWEIGHT: playcanvasLib.playcanvasLibStrings.BLENDWEIGHT = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_COLOR
     * @description Vertex attribute to be treated as a color.
     */
-  val SEMANTIC_COLOR: /* COLOR */ java.lang.String = js.native
+  val SEMANTIC_COLOR: playcanvasLib.playcanvasLibStrings.COLOR = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_NORMAL
     * @description Vertex attribute to be treated as a normal.
     */
-  val SEMANTIC_NORMAL: /* NORMAL */ java.lang.String = js.native
+  val SEMANTIC_NORMAL: playcanvasLib.playcanvasLibStrings.NORMAL = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_POSITION
     * @description Vertex attribute to be treated as a position.
     */
-  val SEMANTIC_POSITION: /* POSITION */ java.lang.String = js.native
+  val SEMANTIC_POSITION: playcanvasLib.playcanvasLibStrings.POSITION = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TANGENT
     * @description Vertex attribute to be treated as a tangent.
     */
-  val SEMANTIC_TANGENT: /* TANGENT */ java.lang.String = js.native
+  val SEMANTIC_TANGENT: playcanvasLib.playcanvasLibStrings.TANGENT = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD0
     * @description Vertex attribute to be treated as a texture coordinate (set 0).
     */
-  val SEMANTIC_TEXCOORD0: /* TEXCOORD0 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD0: playcanvasLib.playcanvasLibStrings.TEXCOORD0 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD1
     * @description Vertex attribute to be treated as a texture coordinate (set 1).
     */
-  val SEMANTIC_TEXCOORD1: /* TEXCOORD1 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD1: playcanvasLib.playcanvasLibStrings.TEXCOORD1 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD2
     * @description Vertex attribute to be treated as a texture coordinate (set 2).
     */
-  val SEMANTIC_TEXCOORD2: /* TEXCOORD2 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD2: playcanvasLib.playcanvasLibStrings.TEXCOORD2 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD3
     * @description Vertex attribute to be treated as a texture coordinate (set 3).
     */
-  val SEMANTIC_TEXCOORD3: /* TEXCOORD3 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD3: playcanvasLib.playcanvasLibStrings.TEXCOORD3 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD4
     * @description Vertex attribute to be treated as a texture coordinate (set 4).
     */
-  val SEMANTIC_TEXCOORD4: /* TEXCOORD4 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD4: playcanvasLib.playcanvasLibStrings.TEXCOORD4 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD5
     * @description Vertex attribute to be treated as a texture coordinate (set 5).
     */
-  val SEMANTIC_TEXCOORD5: /* TEXCOORD5 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD5: playcanvasLib.playcanvasLibStrings.TEXCOORD5 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD6
     * @description Vertex attribute to be treated as a texture coordinate (set 6).
     */
-  val SEMANTIC_TEXCOORD6: /* TEXCOORD6 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD6: playcanvasLib.playcanvasLibStrings.TEXCOORD6 = js.native
   /**
     * @enum pc.SEMANTIC
     * @name pc.SEMANTIC_TEXCOORD7
     * @description Vertex attribute to be treated as a texture coordinate (set 7).
     */
-  val SEMANTIC_TEXCOORD7: /* TEXCOORD7 */ java.lang.String = js.native
+  val SEMANTIC_TEXCOORD7: playcanvasLib.playcanvasLibStrings.TEXCOORD7 = js.native
   val SHADERDEF_DIRLM: playcanvasLib.playcanvasLibNumbers.`128` = js.native
   val SHADERDEF_INSTANCING: playcanvasLib.playcanvasLibNumbers.`32` = js.native
   val SHADERDEF_LM: playcanvasLib.playcanvasLibNumbers.`64` = js.native
@@ -1647,7 +1647,7 @@ object ^ extends js.Object {
   val SHADERDEF_UV0: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   val SHADERDEF_UV1: playcanvasLib.playcanvasLibNumbers.`8` = js.native
   val SHADERDEF_VCOLOR: playcanvasLib.playcanvasLibNumbers.`16` = js.native
-  val SHADERTAG_MATERIAL: /* 1 */ scala.Double = js.native
+  val SHADERTAG_MATERIAL: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   val SHADER_DEPTH: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   val SHADER_FORWARD: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val SHADER_FORWARDHDR: playcanvasLib.playcanvasLibNumbers.`1` = js.native
@@ -1683,30 +1683,30 @@ object ^ extends js.Object {
   val SPECOCC_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val SPECULAR_BLINN: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   val SPECULAR_PHONG: playcanvasLib.playcanvasLibNumbers.`0` = js.native
-  val STENCILOP_DECREMENT: /* 5 */ scala.Double = js.native
-  val STENCILOP_DECREMENTWRAP: /* 6 */ scala.Double = js.native
-  val STENCILOP_INCREMENT: /* 3 */ scala.Double = js.native
-  val STENCILOP_INCREMENTWRAP: /* 4 */ scala.Double = js.native
-  val STENCILOP_INVERT: /* 7 */ scala.Double = js.native
-  val STENCILOP_KEEP: /* 0 */ scala.Double = js.native
-  val STENCILOP_REPLACE: /* 2 */ scala.Double = js.native
-  val STENCILOP_ZERO: /* 1 */ scala.Double = js.native
-  val TEXHINT_ASSET: /* 2 */ scala.Double = js.native
-  val TEXHINT_LIGHTMAP: /* 3 */ scala.Double = js.native
-  val TEXHINT_NONE: /* 0 */ scala.Double = js.native
-  val TEXHINT_SHADOWMAP: /* 1 */ scala.Double = js.native
+  val STENCILOP_DECREMENT: playcanvasLib.playcanvasLibNumbers.`5` = js.native
+  val STENCILOP_DECREMENTWRAP: playcanvasLib.playcanvasLibNumbers.`6` = js.native
+  val STENCILOP_INCREMENT: playcanvasLib.playcanvasLibNumbers.`3` = js.native
+  val STENCILOP_INCREMENTWRAP: playcanvasLib.playcanvasLibNumbers.`4` = js.native
+  val STENCILOP_INVERT: playcanvasLib.playcanvasLibNumbers.`7` = js.native
+  val STENCILOP_KEEP: playcanvasLib.playcanvasLibNumbers.`0` = js.native
+  val STENCILOP_REPLACE: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val STENCILOP_ZERO: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val TEXHINT_ASSET: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val TEXHINT_LIGHTMAP: playcanvasLib.playcanvasLibNumbers.`3` = js.native
+  val TEXHINT_NONE: playcanvasLib.playcanvasLibNumbers.`0` = js.native
+  val TEXHINT_SHADOWMAP: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.TEXTURELOCK
     * @name pc.TEXTURELOCK_READ
     * @description Read only. Any changes to the locked mip level's pixels will not update the texture.
     */
-  val TEXTURELOCK_READ: /* 1 */ scala.Double = js.native
+  val TEXTURELOCK_READ: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   /**
     * @enum pc.TEXTURELOCK
     * @name pc.TEXTURELOCK_WRITE
     * @description Write only. The contents of the specified mip level will be entirely replaced.
     */
-  val TEXTURELOCK_WRITE: /* 2 */ scala.Double = js.native
+  val TEXTURELOCK_WRITE: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   val TONEMAP_ACES: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   val TONEMAP_ACES2: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   val TONEMAP_FILMIC: playcanvasLib.playcanvasLibNumbers.`1` = js.native
@@ -1717,64 +1717,64 @@ object ^ extends js.Object {
     * @name pc.TYPE_FLOAT32
     * @description Floating point vertex element type.
     */
-  val TYPE_FLOAT32: /* 6 */ scala.Double = js.native
+  val TYPE_FLOAT32: playcanvasLib.playcanvasLibNumbers.`6` = js.native
   /**
     * @enum pc.TYPE
     * @name pc.TYPE_INT16
     * @description Signed short vertex element type.
     */
-  val TYPE_INT16: /* 2 */ scala.Double = js.native
+  val TYPE_INT16: playcanvasLib.playcanvasLibNumbers.`2` = js.native
   /**
     * @enum pc.TYPE
     * @name pc.TYPE_INT32
     * @description Signed integer vertex element type.
     */
-  val TYPE_INT32: /* 4 */ scala.Double = js.native
+  val TYPE_INT32: playcanvasLib.playcanvasLibNumbers.`4` = js.native
   /**
     * @enum pc.TYPE
     * @name pc.TYPE_INT8
     * @description Signed byte vertex element type.
     */
-  val TYPE_INT8: /* 0 */ scala.Double = js.native
+  val TYPE_INT8: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   /**
     * @enum pc.TYPE
     * @name pc.TYPE_UINT16
     * @description Unsigned short vertex element type.
     */
-  val TYPE_UINT16: /* 3 */ scala.Double = js.native
+  val TYPE_UINT16: playcanvasLib.playcanvasLibNumbers.`3` = js.native
   /**
     * @enum pc.TYPE
     * @name pc.TYPE_UINT32
     * @description Unsigned integer vertex element type.
     */
-  val TYPE_UINT32: /* 5 */ scala.Double = js.native
+  val TYPE_UINT32: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   /**
     * @enum pc.TYPE
     * @name pc.TYPE_UINT8
     * @description Unsigned byte vertex element type.
     */
-  val TYPE_UINT8: /* 1 */ scala.Double = js.native
-  val UNIFORMTYPE_BOOL: /* 0 */ scala.Double = js.native
-  val UNIFORMTYPE_BVEC2: /* 9 */ scala.Double = js.native
-  val UNIFORMTYPE_BVEC3: /* 10 */ scala.Double = js.native
-  val UNIFORMTYPE_BVEC4: /* 11 */ scala.Double = js.native
-  val UNIFORMTYPE_FLOAT: /* 2 */ scala.Double = js.native
-  val UNIFORMTYPE_FLOATARRAY: /* 17 */ scala.Double = js.native
-  val UNIFORMTYPE_INT: /* 1 */ scala.Double = js.native
-  val UNIFORMTYPE_IVEC2: /* 6 */ scala.Double = js.native
-  val UNIFORMTYPE_IVEC3: /* 7 */ scala.Double = js.native
-  val UNIFORMTYPE_IVEC4: /* 8 */ scala.Double = js.native
-  val UNIFORMTYPE_MAT2: /* 12 */ scala.Double = js.native
-  val UNIFORMTYPE_MAT3: /* 13 */ scala.Double = js.native
-  val UNIFORMTYPE_MAT4: /* 14 */ scala.Double = js.native
-  val UNIFORMTYPE_TEXTURE2D: /* 15 */ scala.Double = js.native
-  val UNIFORMTYPE_TEXTURE2D_SHADOW: /* 18 */ scala.Double = js.native
-  val UNIFORMTYPE_TEXTURE3D: /* 20 */ scala.Double = js.native
-  val UNIFORMTYPE_TEXTURECUBE: /* 16 */ scala.Double = js.native
-  val UNIFORMTYPE_TEXTURECUBE_SHADOW: /* 19 */ scala.Double = js.native
-  val UNIFORMTYPE_VEC2: /* 3 */ scala.Double = js.native
-  val UNIFORMTYPE_VEC3: /* 4 */ scala.Double = js.native
-  val UNIFORMTYPE_VEC4: /* 5 */ scala.Double = js.native
+  val TYPE_UINT8: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val UNIFORMTYPE_BOOL: playcanvasLib.playcanvasLibNumbers.`0` = js.native
+  val UNIFORMTYPE_BVEC2: playcanvasLib.playcanvasLibNumbers.`9` = js.native
+  val UNIFORMTYPE_BVEC3: playcanvasLib.playcanvasLibNumbers.`10` = js.native
+  val UNIFORMTYPE_BVEC4: playcanvasLib.playcanvasLibNumbers.`11` = js.native
+  val UNIFORMTYPE_FLOAT: playcanvasLib.playcanvasLibNumbers.`2` = js.native
+  val UNIFORMTYPE_FLOATARRAY: playcanvasLib.playcanvasLibNumbers.`17` = js.native
+  val UNIFORMTYPE_INT: playcanvasLib.playcanvasLibNumbers.`1` = js.native
+  val UNIFORMTYPE_IVEC2: playcanvasLib.playcanvasLibNumbers.`6` = js.native
+  val UNIFORMTYPE_IVEC3: playcanvasLib.playcanvasLibNumbers.`7` = js.native
+  val UNIFORMTYPE_IVEC4: playcanvasLib.playcanvasLibNumbers.`8` = js.native
+  val UNIFORMTYPE_MAT2: playcanvasLib.playcanvasLibNumbers.`12` = js.native
+  val UNIFORMTYPE_MAT3: playcanvasLib.playcanvasLibNumbers.`13` = js.native
+  val UNIFORMTYPE_MAT4: playcanvasLib.playcanvasLibNumbers.`14` = js.native
+  val UNIFORMTYPE_TEXTURE2D: playcanvasLib.playcanvasLibNumbers.`15` = js.native
+  val UNIFORMTYPE_TEXTURE2D_SHADOW: playcanvasLib.playcanvasLibNumbers.`18` = js.native
+  val UNIFORMTYPE_TEXTURE3D: playcanvasLib.playcanvasLibNumbers.`20` = js.native
+  val UNIFORMTYPE_TEXTURECUBE: playcanvasLib.playcanvasLibNumbers.`16` = js.native
+  val UNIFORMTYPE_TEXTURECUBE_SHADOW: playcanvasLib.playcanvasLibNumbers.`19` = js.native
+  val UNIFORMTYPE_VEC2: playcanvasLib.playcanvasLibNumbers.`3` = js.native
+  val UNIFORMTYPE_VEC3: playcanvasLib.playcanvasLibNumbers.`4` = js.native
+  val UNIFORMTYPE_VEC4: playcanvasLib.playcanvasLibNumbers.`5` = js.native
   val VIEW_CENTER: playcanvasLib.playcanvasLibNumbers.`0` = js.native
   val VIEW_LEFT: playcanvasLib.playcanvasLibNumbers.`1` = js.native
   val VIEW_RIGHT: playcanvasLib.playcanvasLibNumbers.`2` = js.native

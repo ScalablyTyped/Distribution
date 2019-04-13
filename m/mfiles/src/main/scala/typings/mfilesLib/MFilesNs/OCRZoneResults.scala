@@ -15,3 +15,8 @@ class OCRZoneResults ()
   override def Item(Index: scala.Double): mfilesLib.IOCRZoneResult = js.native
 }
 
+@JSGlobal("MFiles.OCRZoneResults")
+@js.native
+object OCRZoneResults
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRZoneResults]
+

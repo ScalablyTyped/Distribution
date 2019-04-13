@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormProps
-  extends reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement] {
+  extends reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement] {
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object FormProps {
   @scala.inline
   def apply(
-    FormHTMLAttributes: reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement] = null,
+    FormHTMLAttributes: reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement] = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined
   ): FormProps = {
     val __obj = js.Dynamic.literal()

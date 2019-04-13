@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DynamoDBStreams ()
   extends awsDashSdkLib.clientsAllMod.DynamoDBStreams {
-  def this(options: awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDynamodbstreamsMod.ClientConfiguration) = this()
 }
 

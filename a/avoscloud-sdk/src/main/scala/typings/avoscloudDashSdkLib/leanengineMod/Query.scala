@@ -72,7 +72,7 @@ class Query protected ()
 @JSImport("leanengine", "Query")
 @js.native
 object Query extends js.Object {
-  def and(var_args: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Query*): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Query = js.native
-  def or(var_args: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Query*): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Query = js.native
+  def and(var_args: avoscloudDashSdkLib.avoscloudDashSdkMod.Query*): avoscloudDashSdkLib.avoscloudDashSdkMod.Query = js.native
+  def or(var_args: avoscloudDashSdkLib.avoscloudDashSdkMod.Query*): avoscloudDashSdkLib.avoscloudDashSdkMod.Query = js.native
 }
 

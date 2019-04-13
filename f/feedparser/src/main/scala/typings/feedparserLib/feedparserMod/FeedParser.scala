@@ -12,7 +12,7 @@ trait FeedParser
   var errors: js.Array[stdLib.Error] = js.native
   var in_xhtml: scala.Boolean = js.native
   var meta: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  var options: feedparserLib.feedparserMod.FeedParserNs.Options = js.native
+  var options: Options = js.native
   var stack: js.Array[_] = js.native
   var stream: saxLib.saxMod.SAXStream = js.native
   var xhtml: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
@@ -20,31 +20,23 @@ trait FeedParser
   /* private */ def _flush(done: js.Function0[_]): scala.Unit = js.native
   /* private */ def _transform(data: js.Any, encoding: java.lang.String, done: js.Function0[_]): scala.Unit = js.native
   def addListener(ev: js.Any, fn: js.Any): js.Any = js.native
-  def handleAttributes(attrs: feedparserLib.feedparserMod.FeedParserNs.Attrs, el: java.lang.String): js.Any = js.native
+  def handleAttributes(attrs: Attrs, el: java.lang.String): js.Any = js.native
   def handleCloseTag(el: java.lang.String): scala.Unit = js.native
   def handleEnd(): js.Any = js.native
   def handleError(e: stdLib.Error): scala.Unit = js.native
-  def handleItem(
-    node: feedparserLib.feedparserMod.FeedParserNs.Node,
-    `type`: feedparserLib.feedparserMod.FeedParserNs.Type,
-    options: feedparserLib.feedparserMod.FeedParserNs.Options
-  ): feedparserLib.feedparserMod.FeedParserNs.Item = js.native
-  def handleMeta(
-    node: feedparserLib.feedparserMod.FeedParserNs.Node,
-    `type`: feedparserLib.feedparserMod.FeedParserNs.Type,
-    options: feedparserLib.feedparserMod.FeedParserNs.Options
-  ): feedparserLib.feedparserMod.FeedParserNs.Meta = js.native
-  def handleOpenTag(node: feedparserLib.feedparserMod.FeedParserNs.Node): scala.Unit = js.native
-  def handleProcessingInstruction(node: feedparserLib.feedparserMod.FeedParserNs.Node): scala.Unit = js.native
+  def handleItem(node: Node, `type`: Type, options: Options): Item = js.native
+  def handleMeta(node: Node, `type`: Type, options: Options): Meta = js.native
+  def handleOpenTag(node: Node): scala.Unit = js.native
+  def handleProcessingInstruction(node: Node): scala.Unit = js.native
   def handleSaxError(e: stdLib.Error): scala.Unit = js.native
   def handleText(text: java.lang.String): scala.Unit = js.native
   def init(): scala.Unit = js.native
-  def listenerCount(`type`: feedparserLib.feedparserMod.FeedParserNs.Type): js.Any = js.native
-  def listeners(`type`: feedparserLib.feedparserMod.FeedParserNs.Type): js.Any = js.native
+  def listenerCount(`type`: Type): js.Any = js.native
+  def listeners(`type`: Type): js.Any = js.native
   def on(ev: js.Any, fn: js.Any): js.Any = js.native
   def pipe(dest: js.Any, pipeOpts: js.Any): js.Any = js.native
   def push(chunk: js.Any, encoding: js.Any): js.Any = js.native
-  def removeAllListeners(`type`: feedparserLib.feedparserMod.FeedParserNs.Type, args: js.Any*): js.Any = js.native
+  def removeAllListeners(`type`: Type, args: js.Any*): js.Any = js.native
   def resumeSaxError(): scala.Unit = js.native
   def setDefaultEncoding(encoding: js.Any): js.Any = js.native
   def setEncoding(enc: js.Any): js.Any = js.native

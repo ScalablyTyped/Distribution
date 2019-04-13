@@ -55,16 +55,16 @@ trait RangeProps extends CommonApiProps {
 object RangeProps {
   @scala.inline
   def apply(
-    activeDotStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeDotStyle: reactLib.reactMod.CSSProperties = null,
     allowCross: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     count: scala.Int | scala.Double = null,
     defaultValue: js.Array[scala.Double] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    dotStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dotStyle: reactLib.reactMod.CSSProperties = null,
     dots: js.UndefOr[scala.Boolean] = js.undefined,
-    handle: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
-    handleStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    handle: /* props */ js.Any => reactLib.reactMod.ReactNode = null,
+    handleStyle: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     included: js.UndefOr[scala.Boolean] = js.undefined,
     marks: Marks = null,
     max: scala.Int | scala.Double = null,
@@ -73,13 +73,13 @@ object RangeProps {
     onBeforeChange: /* value */ js.Array[scala.Double] => scala.Unit = null,
     onChange: /* value */ js.Array[scala.Double] => scala.Unit = null,
     pushable: scala.Boolean | scala.Double = null,
-    railStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    railStyle: reactLib.reactMod.CSSProperties = null,
     step: scala.Int | scala.Double = null,
-    style: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     tabIndex: js.Array[scala.Double] = null,
     tipFormatter: /* value */ js.Any => js.UndefOr[_] = null,
     tipTransitionName: java.lang.String = null,
-    trackStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    trackStyle: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     value: js.Array[scala.Double] = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): RangeProps = {

@@ -25,3 +25,8 @@ class IndirectPropertyID ()
   override def ToJSON(): java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.IndirectPropertyID")
+@js.native
+object IndirectPropertyID
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IIndirectPropertyID]
+

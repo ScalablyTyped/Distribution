@@ -16,9 +16,9 @@ class SettingsApplicationsSharp protected ()
 @JSImport("@material-ui/icons", "SettingsApplicationsSharp")
 @js.native
 class SettingsApplicationsSharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

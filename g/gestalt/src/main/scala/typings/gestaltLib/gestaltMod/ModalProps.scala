@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait ModalProps extends js.Object {
   var accessibilityCloseLabel: java.lang.String
   var accessibilityModalLabel: java.lang.String
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var heading: java.lang.String
   var role: js.UndefOr[gestaltLib.gestaltLibStrings.alertdialog | gestaltLib.gestaltLibStrings.dialog] = js.undefined
   var size: js.UndefOr[
@@ -25,8 +25,8 @@ object ModalProps {
     accessibilityModalLabel: java.lang.String,
     heading: java.lang.String,
     onDismiss: () => scala.Unit,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
+    footer: reactLib.reactMod.ReactNode = null,
     role: gestaltLib.gestaltLibStrings.alertdialog | gestaltLib.gestaltLibStrings.dialog = null,
     size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null
   ): ModalProps = {

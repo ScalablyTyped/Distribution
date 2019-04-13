@@ -9,7 +9,7 @@ trait ListItemActionsProps extends js.Object {
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Object defining the component class name mappings.
     */
@@ -27,7 +27,7 @@ trait ListItemActionsProps extends js.Object {
 object ListItemActionsProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     theme: ListItemActionsTheme with reactDashToolboxLib.libListListItemActionMod.ListItemActionTheme = null,
     `type`: reactDashToolboxLib.reactDashToolboxLibStrings.left | reactDashToolboxLib.reactDashToolboxLibStrings.right = null
   ): ListItemActionsProps = {

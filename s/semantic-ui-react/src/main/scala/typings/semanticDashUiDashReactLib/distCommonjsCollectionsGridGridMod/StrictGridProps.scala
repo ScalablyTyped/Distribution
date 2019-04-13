@@ -15,7 +15,7 @@ trait StrictGridProps extends js.Object {
   /** A grid can have its columns centered. */
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Represents column count per row in Grid. */
@@ -58,7 +58,7 @@ object StrictGridProps {
     as: js.Any = null,
     celled: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.internally = null,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     columns: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.equal = null,
     container: js.UndefOr[scala.Boolean] = js.undefined,

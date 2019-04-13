@@ -20,18 +20,18 @@ trait TSCommon extends js.Object {
   var flattenDiagnosticMessageText_Original: tsDashNodeLib.Anon_MessageText = js.native
   @JSName("formatDiagnosticsWithColorAndContext")
   var formatDiagnosticsWithColorAndContext_Original: js.Function2[
-    /* diagnostics */ js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic], 
-    /* host */ typescriptLib.typescriptMod.tsNs.FormatDiagnosticsHost, 
+    /* diagnostics */ js.Array[typescriptLib.typescriptMod.Diagnostic], 
+    /* host */ typescriptLib.typescriptMod.FormatDiagnosticsHost, 
     java.lang.String
   ] = js.native
   @JSName("formatDiagnostics")
   var formatDiagnostics_Original: js.Function2[
-    /* diagnostics */ js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic], 
-    /* host */ typescriptLib.typescriptMod.tsNs.FormatDiagnosticsHost, 
+    /* diagnostics */ js.Array[typescriptLib.typescriptMod.Diagnostic], 
+    /* host */ typescriptLib.typescriptMod.FormatDiagnosticsHost, 
     java.lang.String
   ] = js.native
   @JSName("getDefaultLibFilePath")
-  var getDefaultLibFilePath_Original: js.Function1[/* options */ typescriptLib.typescriptMod.tsNs.CompilerOptions, java.lang.String] = js.native
+  var getDefaultLibFilePath_Original: js.Function1[/* options */ typescriptLib.typescriptMod.CompilerOptions, java.lang.String] = js.native
   @JSName("getPreEmitDiagnostics")
   var getPreEmitDiagnostics_Original: tsDashNodeLib.Anon_CancellationToken = js.native
   @JSName("parseJsonConfigFileContent")
@@ -42,26 +42,26 @@ trait TSCommon extends js.Object {
     /* readFile */ js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]], 
     typescriptLib.Anon_Config
   ] = js.native
-  var sys: typescriptLib.typescriptMod.tsNs.System = js.native
+  var sys: typescriptLib.typescriptMod.System = js.native
   @JSName("transpileModule")
   var transpileModule_Original: js.Function2[
     /* input */ java.lang.String, 
-    /* transpileOptions */ typescriptLib.typescriptMod.tsNs.TranspileOptions, 
-    typescriptLib.typescriptMod.tsNs.TranspileOutput
+    /* transpileOptions */ typescriptLib.typescriptMod.TranspileOptions, 
+    typescriptLib.typescriptMod.TranspileOutput
   ] = js.native
   var version: java.lang.String = js.native
-  def createLanguageService(host: typescriptLib.typescriptMod.tsNs.LanguageServiceHost): typescriptLib.typescriptMod.tsNs.LanguageService = js.native
+  def createLanguageService(host: typescriptLib.typescriptMod.LanguageServiceHost): typescriptLib.typescriptMod.LanguageService = js.native
   def createLanguageService(
-    host: typescriptLib.typescriptMod.tsNs.LanguageServiceHost,
-    documentRegistry: typescriptLib.typescriptMod.tsNs.DocumentRegistry
-  ): typescriptLib.typescriptMod.tsNs.LanguageService = js.native
+    host: typescriptLib.typescriptMod.LanguageServiceHost,
+    documentRegistry: typescriptLib.typescriptMod.DocumentRegistry
+  ): typescriptLib.typescriptMod.LanguageService = js.native
   def createLanguageService(
-    host: typescriptLib.typescriptMod.tsNs.LanguageServiceHost,
-    documentRegistry: typescriptLib.typescriptMod.tsNs.DocumentRegistry,
+    host: typescriptLib.typescriptMod.LanguageServiceHost,
+    documentRegistry: typescriptLib.typescriptMod.DocumentRegistry,
     syntaxOnly: scala.Boolean
-  ): typescriptLib.typescriptMod.tsNs.LanguageService = js.native
+  ): typescriptLib.typescriptMod.LanguageService = js.native
   def displayPartsToString(): java.lang.String = js.native
-  def displayPartsToString(displayParts: js.Array[typescriptLib.typescriptMod.tsNs.SymbolDisplayPart]): java.lang.String = js.native
+  def displayPartsToString(displayParts: js.Array[typescriptLib.typescriptMod.SymbolDisplayPart]): java.lang.String = js.native
   def findConfigFile(
     searchPath: java.lang.String,
     fileExists: js.Function1[/* fileName */ java.lang.String, scala.Boolean]
@@ -73,61 +73,58 @@ trait TSCommon extends js.Object {
   ): js.UndefOr[java.lang.String] = js.native
   def flattenDiagnosticMessageText(messageText: java.lang.String, newLine: java.lang.String): java.lang.String = js.native
   def flattenDiagnosticMessageText(messageText: js.UndefOr[scala.Nothing], newLine: java.lang.String): java.lang.String = js.native
-  def flattenDiagnosticMessageText(messageText: typescriptLib.typescriptMod.tsNs.DiagnosticMessageChain, newLine: java.lang.String): java.lang.String = js.native
+  def flattenDiagnosticMessageText(messageText: typescriptLib.typescriptMod.DiagnosticMessageChain, newLine: java.lang.String): java.lang.String = js.native
   def formatDiagnostics(
-    diagnostics: js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic],
-    host: typescriptLib.typescriptMod.tsNs.FormatDiagnosticsHost
+    diagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    host: typescriptLib.typescriptMod.FormatDiagnosticsHost
   ): java.lang.String = js.native
   def formatDiagnosticsWithColorAndContext(
-    diagnostics: js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic],
-    host: typescriptLib.typescriptMod.tsNs.FormatDiagnosticsHost
+    diagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    host: typescriptLib.typescriptMod.FormatDiagnosticsHost
   ): java.lang.String = js.native
-  def getDefaultLibFilePath(options: typescriptLib.typescriptMod.tsNs.CompilerOptions): java.lang.String = js.native
-  def getPreEmitDiagnostics(program: typescriptLib.typescriptMod.tsNs.Program): js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic] = js.native
+  def getDefaultLibFilePath(options: typescriptLib.typescriptMod.CompilerOptions): java.lang.String = js.native
+  def getPreEmitDiagnostics(program: typescriptLib.typescriptMod.Program): js.Array[typescriptLib.typescriptMod.Diagnostic] = js.native
+  def getPreEmitDiagnostics(program: typescriptLib.typescriptMod.Program, sourceFile: typescriptLib.typescriptMod.SourceFile): js.Array[typescriptLib.typescriptMod.Diagnostic] = js.native
   def getPreEmitDiagnostics(
-    program: typescriptLib.typescriptMod.tsNs.Program,
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile
-  ): js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic] = js.native
-  def getPreEmitDiagnostics(
-    program: typescriptLib.typescriptMod.tsNs.Program,
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
-    cancellationToken: typescriptLib.typescriptMod.tsNs.CancellationToken
-  ): js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic] = js.native
-  def parseJsonConfigFileContent(json: js.Any, host: typescriptLib.typescriptMod.tsNs.ParseConfigHost, basePath: java.lang.String): typescriptLib.typescriptMod.tsNs.ParsedCommandLine = js.native
+    program: typescriptLib.typescriptMod.Program,
+    sourceFile: typescriptLib.typescriptMod.SourceFile,
+    cancellationToken: typescriptLib.typescriptMod.CancellationToken
+  ): js.Array[typescriptLib.typescriptMod.Diagnostic] = js.native
+  def parseJsonConfigFileContent(json: js.Any, host: typescriptLib.typescriptMod.ParseConfigHost, basePath: java.lang.String): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   def parseJsonConfigFileContent(
     json: js.Any,
-    host: typescriptLib.typescriptMod.tsNs.ParseConfigHost,
+    host: typescriptLib.typescriptMod.ParseConfigHost,
     basePath: java.lang.String,
-    existingOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions
-  ): typescriptLib.typescriptMod.tsNs.ParsedCommandLine = js.native
+    existingOptions: typescriptLib.typescriptMod.CompilerOptions
+  ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   def parseJsonConfigFileContent(
     json: js.Any,
-    host: typescriptLib.typescriptMod.tsNs.ParseConfigHost,
+    host: typescriptLib.typescriptMod.ParseConfigHost,
     basePath: java.lang.String,
-    existingOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    existingOptions: typescriptLib.typescriptMod.CompilerOptions,
     configFileName: java.lang.String
-  ): typescriptLib.typescriptMod.tsNs.ParsedCommandLine = js.native
+  ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   def parseJsonConfigFileContent(
     json: js.Any,
-    host: typescriptLib.typescriptMod.tsNs.ParseConfigHost,
+    host: typescriptLib.typescriptMod.ParseConfigHost,
     basePath: java.lang.String,
-    existingOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    existingOptions: typescriptLib.typescriptMod.CompilerOptions,
     configFileName: java.lang.String,
-    resolutionStack: js.Array[typescriptLib.typescriptMod.tsNs.Path]
-  ): typescriptLib.typescriptMod.tsNs.ParsedCommandLine = js.native
+    resolutionStack: js.Array[typescriptLib.typescriptMod.Path]
+  ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   def parseJsonConfigFileContent(
     json: js.Any,
-    host: typescriptLib.typescriptMod.tsNs.ParseConfigHost,
+    host: typescriptLib.typescriptMod.ParseConfigHost,
     basePath: java.lang.String,
-    existingOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    existingOptions: typescriptLib.typescriptMod.CompilerOptions,
     configFileName: java.lang.String,
-    resolutionStack: js.Array[typescriptLib.typescriptMod.tsNs.Path],
-    extraFileExtensions: js.Array[typescriptLib.typescriptMod.tsNs.FileExtensionInfo]
-  ): typescriptLib.typescriptMod.tsNs.ParsedCommandLine = js.native
+    resolutionStack: js.Array[typescriptLib.typescriptMod.Path],
+    extraFileExtensions: js.Array[typescriptLib.typescriptMod.FileExtensionInfo]
+  ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   def readConfigFile(
     fileName: java.lang.String,
     readFile: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]]
   ): typescriptLib.Anon_Config = js.native
-  def transpileModule(input: java.lang.String, transpileOptions: typescriptLib.typescriptMod.tsNs.TranspileOptions): typescriptLib.typescriptMod.tsNs.TranspileOutput = js.native
+  def transpileModule(input: java.lang.String, transpileOptions: typescriptLib.typescriptMod.TranspileOptions): typescriptLib.typescriptMod.TranspileOutput = js.native
 }
 

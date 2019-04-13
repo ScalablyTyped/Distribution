@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ImageProps extends js.Object {
   var alt: java.lang.String
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var color: java.lang.String
   var fit: js.UndefOr[
     gestaltLib.gestaltLibStrings.cover | gestaltLib.gestaltLibStrings.contain | gestaltLib.gestaltLibStrings.none
@@ -29,7 +29,7 @@ object ImageProps {
     naturalHeight: scala.Double,
     naturalWidth: scala.Double,
     src: java.lang.String,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     fit: gestaltLib.gestaltLibStrings.cover | gestaltLib.gestaltLibStrings.contain | gestaltLib.gestaltLibStrings.none = null,
     onError: () => scala.Unit = null,
     onLoad: () => scala.Unit = null,

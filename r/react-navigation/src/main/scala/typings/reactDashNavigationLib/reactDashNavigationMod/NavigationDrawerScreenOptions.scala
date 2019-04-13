@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait NavigationDrawerScreenOptions extends js.Object {
   var drawerIcon: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    reactLib.reactMod.ReactElement[_] | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactElement[_] | scala.Null
     ])
   ] = js.undefined
   var drawerLabel: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactElement[_] | scala.Null
     ])
   ] = js.undefined
   var drawerLockMode: js.UndefOr[DrawerLockMode] = js.undefined
@@ -25,13 +25,13 @@ trait NavigationDrawerScreenOptions extends js.Object {
 object NavigationDrawerScreenOptions {
   @scala.inline
   def apply(
-    drawerIcon: reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    drawerIcon: reactLib.reactMod.ReactElement[_] | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactElement[_] | scala.Null
     ]) = null,
-    drawerLabel: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    drawerLabel: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactElement[_] | scala.Null
     ]) = null,
     drawerLockMode: DrawerLockMode = null,
     title: java.lang.String = null

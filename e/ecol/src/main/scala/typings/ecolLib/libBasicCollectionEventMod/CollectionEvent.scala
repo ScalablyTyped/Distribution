@@ -11,10 +11,7 @@ class CollectionEvent[T, SourceT /* <: tstlLib.baseContainerContainerMod.Contain
   extends stdLib.Iterable[T] {
   def this(`type`: java.lang.String, first: IteratorT, last: IteratorT) = this()
   val first: IteratorT = js.native
-  /* CompleteClass */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator_CollectionEvent: js.Function0[stdLib.IterableIterator[T]] = js.native
   val last: IteratorT = js.native
   val `type`: java.lang.String = js.native

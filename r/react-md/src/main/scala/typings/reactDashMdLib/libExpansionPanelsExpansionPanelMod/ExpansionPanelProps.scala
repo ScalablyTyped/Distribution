@@ -10,125 +10,125 @@ trait ExpansionPanelProps
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var animateContent: js.UndefOr[scala.Boolean] = js.undefined
-  var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var cancelPrimary: js.UndefOr[scala.Boolean] = js.undefined
   var cancelProps: js.UndefOr[js.Object] = js.undefined
   var cancelSecondary: js.UndefOr[scala.Boolean] = js.undefined
   var cancelType: js.UndefOr[reactDashMdLib.libButtonsButtonMod.ButtonTypes] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var closeOnCancel: js.UndefOr[scala.Boolean] = js.undefined
   var closeOnSave: js.UndefOr[scala.Boolean] = js.undefined
   var columnWidths: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var defaultExpanded: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * @deprecated
     */
-  var expandIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var expandIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
   var expandIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
-  var expandedSecondaryLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var expandedSecondaryLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var focused: js.UndefOr[scala.Boolean] = js.undefined
-  var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var footerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var footerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var footerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var headerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var label: reactLib.reactMod.ReactNs.ReactNode
+  var headerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var label: reactLib.reactMod.ReactNode
   var onCancel: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onExpandToggle: js.UndefOr[js.Function1[/* expanded */ scala.Boolean, scala.Unit]] = js.undefined
   var onSave: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
-  var saveLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var saveLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var savePrimary: js.UndefOr[scala.Boolean] = js.undefined
   var saveProps: js.UndefOr[js.Object] = js.undefined
   var saveSecondary: js.UndefOr[scala.Boolean] = js.undefined
   var saveType: js.UndefOr[reactDashMdLib.libButtonsButtonMod.ButtonTypes] = js.undefined
-  var secondaryLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var secondaryLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
 object ExpansionPanelProps {
   @scala.inline
   def apply(
-    label: reactLib.reactMod.ReactNs.ReactNode,
+    label: reactLib.reactMod.ReactNode,
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     animateContent: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    cancelLabel: reactLib.reactMod.ReactNode = null,
     cancelPrimary: js.UndefOr[scala.Boolean] = js.undefined,
     cancelProps: js.Object = null,
     cancelSecondary: js.UndefOr[scala.Boolean] = js.undefined,
     cancelType: reactDashMdLib.libButtonsButtonMod.ButtonTypes = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     closeOnCancel: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnSave: js.UndefOr[scala.Boolean] = js.undefined,
     columnWidths: js.Array[scala.Double] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    component: reactLib.reactMod.ReactType[_] = null,
     contentClassName: java.lang.String = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
     defaultExpanded: js.UndefOr[scala.Boolean] = js.undefined,
-    expandIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    expandIconChildren: reactLib.reactMod.ReactNode = null,
     expandIconClassName: java.lang.String = null,
     expanded: js.UndefOr[scala.Boolean] = js.undefined,
-    expandedSecondaryLabel: reactLib.reactMod.ReactNs.ReactNode = null,
-    expanderIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    expandedSecondaryLabel: reactLib.reactMod.ReactNode = null,
+    expanderIcon: reactLib.reactMod.ReactElement[_] = null,
     focused: js.UndefOr[scala.Boolean] = js.undefined,
-    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: reactLib.reactMod.ReactNode = null,
     footerClassName: java.lang.String = null,
-    footerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    footerStyle: reactLib.reactMod.CSSProperties = null,
     headerClassName: java.lang.String = null,
-    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onCancel: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    headerStyle: reactLib.reactMod.CSSProperties = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onCancel: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
     onExpandToggle: /* expanded */ scala.Boolean => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onSave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    saveLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onSave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    saveLabel: reactLib.reactMod.ReactNode = null,
     savePrimary: js.UndefOr[scala.Boolean] = js.undefined,
     saveProps: js.Object = null,
     saveSecondary: js.UndefOr[scala.Boolean] = js.undefined,
     saveType: reactDashMdLib.libButtonsButtonMod.ButtonTypes = null,
-    secondaryLabel: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    secondaryLabel: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null
   ): ExpansionPanelProps = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])

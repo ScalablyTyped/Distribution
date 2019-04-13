@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait Anon_KeyLevel
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var level: js.UndefOr[pinoLib.pinoMod.PNs.Level | java.lang.String] = js.undefined
-  var serializers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.SerializerFn]] = js.undefined
+  var level: js.UndefOr[pinoLib.pinoMod.Level | java.lang.String] = js.undefined
+  var serializers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.SerializerFn]] = js.undefined
 }
 
 object Anon_KeyLevel {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    level: pinoLib.pinoMod.PNs.Level | java.lang.String = null,
-    serializers: org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.SerializerFn] = null
+    level: pinoLib.pinoMod.Level | java.lang.String = null,
+    serializers: org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.SerializerFn] = null
   ): Anon_KeyLevel = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

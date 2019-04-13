@@ -9,7 +9,7 @@ trait FormProps extends js.Object {
   var asyncValidators: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[js.Function1[/* value */ FormValue, js.Promise[_]]]
   ] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[reactDashFormLib.Anon_FormApi]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[reactDashFormLib.Anon_FormApi]] = js.undefined
   var defaultValues: js.UndefOr[FormValues] = js.undefined
   var dontPreventDefault: js.UndefOr[scala.Boolean] = js.undefined
   var dontValidateOnMount: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,7 +18,7 @@ trait FormProps extends js.Object {
   var onSubmit: js.UndefOr[
     js.Function3[
       /* values */ FormValues, 
-      /* submissionEvent */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      /* submissionEvent */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], 
       /* formApi */ FormApi, 
       scala.Unit
     ]
@@ -37,13 +37,13 @@ object FormProps {
   @scala.inline
   def apply(
     asyncValidators: org.scalablytyped.runtime.StringDictionary[js.Function1[/* value */ FormValue, js.Promise[_]]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[reactDashFormLib.Anon_FormApi] = null,
+    component: reactLib.reactMod.ReactType[reactDashFormLib.Anon_FormApi] = null,
     defaultValues: FormValues = null,
     dontPreventDefault: js.UndefOr[scala.Boolean] = js.undefined,
     dontValidateOnMount: js.UndefOr[scala.Boolean] = js.undefined,
     formDidUpdate: /* formState */ FormState => scala.Unit = null,
     getApi: /* formApi */ FormApi => scala.Unit = null,
-    onSubmit: (/* values */ FormValues, /* submissionEvent */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], /* formApi */ FormApi) => scala.Unit = null,
+    onSubmit: (/* values */ FormValues, /* submissionEvent */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], /* formApi */ FormApi) => scala.Unit = null,
     onSubmitFailure: (/* errors */ FormErrors, /* formApi */ FormApi) => scala.Unit = null,
     preSubmit: (/* values */ FormValues, /* formApi */ FormApi) => FormValues = null,
     preValidate: /* values */ FormValues => FormValues = null,

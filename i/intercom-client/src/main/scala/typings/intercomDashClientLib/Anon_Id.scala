@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Id
-  extends intercomDashClientLib.companyMod.CompanyIdentifier
-     with intercomDashClientLib.leadMod.LeadIdentifier
-     with intercomDashClientLib.userMod.UserIdentifier {
+trait Anon_Id extends js.Object {
   var id: java.lang.String
+  var name: java.lang.String
+  var `type`: java.lang.String
 }
 
 object Anon_Id {
   @scala.inline
-  def apply(id: java.lang.String): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id)
-  
+  def apply(id: java.lang.String, name: java.lang.String, `type`: java.lang.String): Anon_Id = {
+    val __obj = js.Dynamic.literal(id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Id]
   }
 }

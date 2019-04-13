@@ -21,3 +21,8 @@ class SignaturePromptInfoMetadataBased ()
   override def Clone(): mfilesLib.ISignaturePromptInfoMetadataBased = js.native
 }
 
+@JSGlobal("MFiles.SignaturePromptInfoMetadataBased")
+@js.native
+object SignaturePromptInfoMetadataBased
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISignaturePromptInfoMetadataBased]
+

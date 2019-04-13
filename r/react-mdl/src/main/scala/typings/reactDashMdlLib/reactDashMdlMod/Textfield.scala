@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Textfield")
 @js.native
-class Textfield ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Textfield
+class Textfield () extends __MDLComponent[TextfieldProps] {
+  var inputRef: js.UndefOr[stdLib.HTMLInputElement] = js.native
+}
 

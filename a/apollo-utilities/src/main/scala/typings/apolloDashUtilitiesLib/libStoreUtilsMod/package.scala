@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libStoreUtilsMod {
+  type Directives = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
   type ListValue = js.Array[scala.Null | IdValue]
   type NumberValue = graphqlLib.languageAstMod.IntValueNode | graphqlLib.languageAstMod.FloatValueNode
   type ScalarValue = graphqlLib.languageAstMod.StringValueNode | graphqlLib.languageAstMod.BooleanValueNode | graphqlLib.languageAstMod.EnumValueNode

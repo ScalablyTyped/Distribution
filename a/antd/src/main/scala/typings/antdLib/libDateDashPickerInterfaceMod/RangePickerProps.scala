@@ -10,7 +10,7 @@ trait RangePickerProps extends PickerProps {
   var defaultValue: js.UndefOr[RangePickerValue] = js.undefined
   var disabledTime: js.UndefOr[
     js.Function2[
-      /* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], 
+      /* current */ js.UndefOr[momentLib.momentMod.Moment], 
       /* type */ java.lang.String, 
       antdLib.Anon_DisabledHours
     ]
@@ -40,7 +40,7 @@ trait RangePickerProps extends PickerProps {
   ] = js.undefined
   var placeholder: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
   var ranges: js.UndefOr[org.scalablytyped.runtime.StringDictionary[RangePickerPresetRange]] = js.undefined
-  var separator: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var separator: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var showTime: js.UndefOr[antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean] = js.undefined
   var value: js.UndefOr[RangePickerValue] = js.undefined
 }
@@ -50,12 +50,12 @@ object RangePickerProps {
   def apply(
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    dateRender: (/* current */ momentLib.momentMod.momentNs.Moment, /* today */ momentLib.momentMod.momentNs.Moment) => reactLib.reactMod.ReactNs.ReactNode = null,
+    dateRender: (/* current */ momentLib.momentMod.Moment, /* today */ momentLib.momentMod.Moment) => reactLib.reactMod.ReactNode = null,
     defaultPickerValue: RangePickerValue = null,
     defaultValue: RangePickerValue = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    disabledDate: /* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment] => scala.Boolean = null,
-    disabledTime: (/* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], /* type */ java.lang.String) => antdLib.Anon_DisabledHours = null,
+    disabledDate: /* current */ js.UndefOr[momentLib.momentMod.Moment] => scala.Boolean = null,
+    disabledTime: (/* current */ js.UndefOr[momentLib.momentMod.Moment], /* type */ java.lang.String) => antdLib.Anon_DisabledHours = null,
     dropdownClassName: java.lang.String = null,
     format: java.lang.String | js.Array[java.lang.String] = null,
     getCalendarContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
@@ -71,15 +71,15 @@ object RangePickerProps {
     onPanelChange: (/* value */ js.UndefOr[RangePickerValue], /* mode */ js.UndefOr[java.lang.String | js.Array[java.lang.String]]) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: js.Tuple2[java.lang.String, java.lang.String] = null,
-    popupStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    popupStyle: reactLib.reactMod.CSSProperties = null,
     prefixCls: java.lang.String = null,
     ranges: org.scalablytyped.runtime.StringDictionary[RangePickerPresetRange] = null,
-    renderExtraFooter: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    separator: reactLib.reactMod.ReactNs.ReactNode = null,
+    renderExtraFooter: () => reactLib.reactMod.ReactNode = null,
+    separator: reactLib.reactMod.ReactNode = null,
     showTime: antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    suffixIcon: reactLib.reactMod.ReactNode = null,
     value: RangePickerValue = null
   ): RangePickerProps = {
     val __obj = js.Dynamic.literal()

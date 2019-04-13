@@ -23,3 +23,8 @@ class SQLDatabase ()
   override def Clone(): mfilesLib.ISQLDatabase = js.native
 }
 
+@JSGlobal("MFiles.SQLDatabase")
+@js.native
+object SQLDatabase
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISQLDatabase]
+

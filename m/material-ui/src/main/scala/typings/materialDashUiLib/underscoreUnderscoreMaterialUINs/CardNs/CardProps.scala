@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait CardProps extends js.Object {
   var actAsExpander: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
   var initiallyExpanded: js.UndefOr[scala.Boolean] = js.undefined
   var onExpandChange: js.UndefOr[js.Function1[/* isExpanded */ scala.Boolean, scala.Unit]] = js.undefined
   var showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CardProps {
@@ -22,13 +22,13 @@ object CardProps {
   def apply(
     actAsExpander: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
     expanded: js.UndefOr[scala.Boolean] = js.undefined,
     initiallyExpanded: js.UndefOr[scala.Boolean] = js.undefined,
     onExpandChange: /* isExpanded */ scala.Boolean => scala.Unit = null,
     showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)

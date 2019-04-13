@@ -11,7 +11,7 @@ trait StrictRailProps extends js.Object {
   /** A rail can appear attached to the main viewport. */
   var attached: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** A rail can appear closer to the main viewport. */
@@ -38,7 +38,7 @@ object StrictRailProps {
     position: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS,
     as: js.Any = null,
     attached: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     close: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,

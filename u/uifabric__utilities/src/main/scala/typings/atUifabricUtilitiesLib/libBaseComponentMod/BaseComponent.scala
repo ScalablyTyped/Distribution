@@ -55,7 +55,7 @@ class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypes
     * @returns A function instance keyed from the given refname.
     * @deprecated Use `createRef` from React.createRef.
     */
-  /* protected */ def _resolveRef(refName: java.lang.String): js.Function1[/* ref */ reactLib.reactMod.ReactNs.ReactNode, reactLib.reactMod.ReactNs.ReactNode] = js.native
+  /* protected */ def _resolveRef(refName: java.lang.String): js.Function1[/* ref */ reactLib.reactMod.ReactNode, reactLib.reactMod.ReactNode] = js.native
   /* private */ def _setComponentRef[TRefInterface](ref: js.Any, value: js.Any): js.Any = js.native
   /**
     * Updates the componentRef (by calling it with "this" when necessary.)

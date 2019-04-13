@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DropdownToggle
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libDropdownToggleMod.DropdownToggleNs.DropdownToggleProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[DropdownToggleProps, js.Object, js.Any]
 

@@ -21,9 +21,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(input: java.lang.String): java.lang.String = js.native
-  def apply(
-    input: java.lang.String,
-    options: filenamifyDashUrlLib.filenamifyDashUrlMod.filenamifyUrlNs.Options
-  ): java.lang.String = js.native
+  def apply(input: java.lang.String, options: filenamifyDashUrlLib.filenamifyDashUrlMod.Options): java.lang.String = js.native
 }
 

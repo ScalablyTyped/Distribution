@@ -12,7 +12,7 @@ object identityNs extends js.Object {
   var getProfileUserInfo: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getRedirectURL: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var launchWebAuthFlow: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onSignInChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onSignInChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
   var removeCachedAuthToken: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
 }
 

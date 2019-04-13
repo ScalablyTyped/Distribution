@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def apply(
     patterns: java.lang.String | vinylLib.vinylMod.File | js.Array[java.lang.String] | js.Array[vinylLib.vinylMod.File],
     dir: java.lang.String,
-    callback: copyLib.copyMod.copyNs.Callback
+    callback: Callback
   ): scala.Unit = js.native
   /**
     * Copy a filepath, vinyl file, array of files, or glob of files to the
@@ -32,14 +32,10 @@ object ^ extends js.Object {
   def apply(
     patterns: java.lang.String | vinylLib.vinylMod.File | js.Array[java.lang.String] | js.Array[vinylLib.vinylMod.File],
     dir: java.lang.String,
-    options: copyLib.copyMod.copyNs.Options,
-    callback: copyLib.copyMod.copyNs.Callback
+    options: Options,
+    callback: Callback
   ): scala.Unit = js.native
-  def each(
-    files: js.Array[vinylLib.vinylMod.File | java.lang.String],
-    dir: java.lang.String,
-    cb: copyLib.copyMod.copyNs.Callback
-  ): scala.Unit = js.native
+  def each(files: js.Array[vinylLib.vinylMod.File | java.lang.String], dir: java.lang.String, cb: Callback): scala.Unit = js.native
   /**
     * Copy an array of files to the given destination `directory`, with
     * `options` and callback function that exposes `err` and the array of
@@ -58,10 +54,10 @@ object ^ extends js.Object {
   def each(
     files: js.Array[vinylLib.vinylMod.File | java.lang.String],
     dir: java.lang.String,
-    options: copyLib.copyMod.copyNs.Options,
-    cb: copyLib.copyMod.copyNs.Callback
+    options: Options,
+    cb: Callback
   ): scala.Unit = js.native
-  def one(pattern: java.lang.String, dir: java.lang.String, cb: copyLib.copyMod.copyNs.Callback): scala.Unit = js.native
+  def one(pattern: java.lang.String, dir: java.lang.String, cb: Callback): scala.Unit = js.native
   /**
     * Copy a single `file` to the given `dest` directory, using
     * the specified options and callback function.
@@ -77,18 +73,8 @@ object ^ extends js.Object {
     * @param `options` or callback function
     * @param `cb` Callback function if no options are specified
     */
-  def one(
-    pattern: java.lang.String,
-    dir: java.lang.String,
-    options: copyLib.copyMod.copyNs.Options,
-    cb: copyLib.copyMod.copyNs.Callback
-  ): scala.Unit = js.native
-  def one(pattern: vinylLib.vinylMod.File, dir: java.lang.String, cb: copyLib.copyMod.copyNs.Callback): scala.Unit = js.native
-  def one(
-    pattern: vinylLib.vinylMod.File,
-    dir: java.lang.String,
-    options: copyLib.copyMod.copyNs.Options,
-    cb: copyLib.copyMod.copyNs.Callback
-  ): scala.Unit = js.native
+  def one(pattern: java.lang.String, dir: java.lang.String, options: Options, cb: Callback): scala.Unit = js.native
+  def one(pattern: vinylLib.vinylMod.File, dir: java.lang.String, cb: Callback): scala.Unit = js.native
+  def one(pattern: vinylLib.vinylMod.File, dir: java.lang.String, options: Options, cb: Callback): scala.Unit = js.native
 }
 

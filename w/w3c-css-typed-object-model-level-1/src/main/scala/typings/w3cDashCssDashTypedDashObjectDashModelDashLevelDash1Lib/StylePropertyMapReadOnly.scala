@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StylePropertyMapReadOnly")
 @js.native
 class StylePropertyMapReadOnly () extends js.Object {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[stdLib.IterableIterator[js.Tuple2[java.lang.String, js.Array[CSSStyleValue]]]] = js.native
   val size: scala.Double = js.native
   def get(property: java.lang.String): js.UndefOr[CSSStyleValue] = js.native

@@ -33,7 +33,7 @@ trait Anon_CatchHandler extends js.Object {
   	```
   	*/
   def apply[T](
-    predicate: pDashCatchDashIfLib.pDashCatchDashIfMod.pCatchIfNs.Predicate,
+    predicate: pDashCatchDashIfLib.pDashCatchDashIfMod.Predicate,
     catchHandler: js.Function1[/* error */ stdLib.Error, T]
   ): js.Function1[/* error */ stdLib.Error, T] = js.native
 }

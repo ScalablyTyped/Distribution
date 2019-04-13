@@ -13,8 +13,8 @@ trait Anon_ColumnPositionChanged extends js.Object {
     */
   var columnPositionChanged: js.UndefOr[
     js.Function2[
-      /* scope */ angularLib.angularMod.angularNs.IScope, 
-      /* handler */ uiDashGridLib.uiDashGridMod.uiGridNs.moveColumnsNs.columnPositionChangedHandler, 
+      /* scope */ angularLib.angularMod.IScope, 
+      /* handler */ uiDashGridLib.uiDashGridMod.moveColumnsNs.columnPositionChangedHandler, 
       scala.Unit
     ]
   ] = js.undefined
@@ -23,7 +23,7 @@ trait Anon_ColumnPositionChanged extends js.Object {
 object Anon_ColumnPositionChanged {
   @scala.inline
   def apply(
-    columnPositionChanged: (/* scope */ angularLib.angularMod.angularNs.IScope, /* handler */ uiDashGridLib.uiDashGridMod.uiGridNs.moveColumnsNs.columnPositionChangedHandler) => scala.Unit = null
+    columnPositionChanged: (/* scope */ angularLib.angularMod.IScope, /* handler */ uiDashGridLib.uiDashGridMod.moveColumnsNs.columnPositionChangedHandler) => scala.Unit = null
   ): Anon_ColumnPositionChanged = {
     val __obj = js.Dynamic.literal()
     if (columnPositionChanged != null) __obj.updateDynamic("columnPositionChanged")(js.Any.fromFunction2(columnPositionChanged))

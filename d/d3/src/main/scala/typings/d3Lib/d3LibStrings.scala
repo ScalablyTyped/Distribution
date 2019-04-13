@@ -280,6 +280,9 @@ object d3LibStrings {
   sealed trait img extends js.Object
   
   @js.native
+  sealed trait `implicit` extends js.Object
+  
+  @js.native
   sealed trait input extends js.Object
   
   @js.native
@@ -704,6 +707,8 @@ object d3LibStrings {
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def img: img = "img".asInstanceOf[img]
+  @scala.inline
+  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline

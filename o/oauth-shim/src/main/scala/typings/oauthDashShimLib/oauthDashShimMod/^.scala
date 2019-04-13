@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("oauth-shim", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[oauthDashShimLib.oauthDashShimMod.oauthShimNs.Handler]
+  extends org.scalablytyped.runtime.TopLevel[Handler]
 

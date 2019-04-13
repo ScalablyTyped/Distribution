@@ -72,7 +72,7 @@ trait ReactTagsProps extends js.Object {
   /**
     * Provide a custom tag component to render. Default: null.
     */
-  var tagComponent: js.UndefOr[reactLib.reactMod.ReactNs.SFC[TagComponentProps]] = js.undefined
+  var tagComponent: js.UndefOr[reactLib.reactMod.SFC[TagComponentProps]] = js.undefined
   /**
     * An array of tags that are displayed as pre-selected. Each tag must have an id and a name property. Default: []
     */
@@ -108,7 +108,7 @@ object ReactTagsProps {
     minQueryLength: scala.Int | scala.Double = null,
     placeholder: java.lang.String = null,
     suggestions: js.Array[Tag] = null,
-    tagComponent: reactLib.reactMod.ReactNs.SFC[TagComponentProps] = null,
+    tagComponent: reactLib.reactMod.SFC[TagComponentProps] = null,
     tags: js.Array[Tag] = null
   ): ReactTagsProps = {
     val __obj = js.Dynamic.literal(handleAddition = js.Any.fromFunction1(handleAddition), handleDelete = js.Any.fromFunction1(handleDelete))

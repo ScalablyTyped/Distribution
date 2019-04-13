@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Linter protected () extends js.Object {
   def this(options: tslintLib.libMod.ILinterOptions) = this()
-  def this(options: tslintLib.libMod.ILinterOptions, program: typescriptLib.typescriptMod.tsNs.Program) = this()
+  def this(options: tslintLib.libMod.ILinterOptions, program: typescriptLib.typescriptMod.Program) = this()
   var applyAllFixes: js.Any = js.native
   var applyRule: js.Any = js.native
   var failures: js.Any = js.native
@@ -59,8 +59,8 @@ object Linter extends js.Object {
   /**
     * Creates a TypeScript program object from a tsconfig.json file path and optional project directory.
     */
-  def createProgram(configFile: java.lang.String): typescriptLib.typescriptMod.tsNs.Program = js.native
-  def createProgram(configFile: java.lang.String, projectDirectory: java.lang.String): typescriptLib.typescriptMod.tsNs.Program = js.native
+  def createProgram(configFile: java.lang.String): typescriptLib.typescriptMod.Program = js.native
+  def createProgram(configFile: java.lang.String, projectDirectory: java.lang.String): typescriptLib.typescriptMod.Program = js.native
   def findConfiguration(configFile: java.lang.String): tslintLib.libConfigurationMod.IConfigurationLoadResult = js.native
   def findConfiguration(configFile: java.lang.String, inputFilePath: java.lang.String): tslintLib.libConfigurationMod.IConfigurationLoadResult = js.native
   def findConfiguration(configFile: scala.Null, inputFilePath: java.lang.String): tslintLib.libConfigurationMod.IConfigurationLoadResult = js.native
@@ -72,7 +72,7 @@ object Linter extends js.Object {
     * files and excludes declaration (".d.ts") files, as well as JSON files, to avoid problems with
     * `resolveJsonModule`.
     */
-  def getFileNames(program: typescriptLib.typescriptMod.tsNs.Program): js.Array[java.lang.String] = js.native
+  def getFileNames(program: typescriptLib.typescriptMod.Program): js.Array[java.lang.String] = js.native
   def getRulesDirectories(): js.Array[java.lang.String] = js.native
   def getRulesDirectories(directories: java.lang.String): js.Array[java.lang.String] = js.native
   def getRulesDirectories(directories: java.lang.String, relativeTo: java.lang.String): js.Array[java.lang.String] = js.native

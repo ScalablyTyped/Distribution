@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Store", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Store */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Store = js.native
   val store: fpDashTsLib.libComonadMod.Comonad2[URI] = js.native
   def experiment[F](F: fpDashTsLib.libFunctorMod.Functor[F]): js.Function1[
     /* f */ js.Function1[/* s */ js.Any, fpDashTsLib.libHKTMod.HKT[F, _]], 

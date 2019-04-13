@@ -21,12 +21,12 @@ trait Ruler[RULE] extends js.Object {
     afterName: java.lang.String,
     ruleName: java.lang.String,
     fn: RULE,
-    options: remarkableLib.libMod.RemarkableNs.Options
+    options: remarkableLib.libMod.Options
   ): scala.Unit = js.native
   /**
     * Replace the rule `ruleName` with a new rule.
     */
-  def at(ruleName: java.lang.String, fn: RULE, options: remarkableLib.libMod.RemarkableNs.Options): scala.Unit = js.native
+  def at(ruleName: java.lang.String, fn: RULE, options: remarkableLib.libMod.Options): scala.Unit = js.native
   /**
     * Add a rule to the chain before given the `ruleName`.
     */
@@ -34,7 +34,7 @@ trait Ruler[RULE] extends js.Object {
     beforeName: java.lang.String,
     ruleName: java.lang.String,
     fn: RULE,
-    options: remarkableLib.libMod.RemarkableNs.Options
+    options: remarkableLib.libMod.Options
   ): scala.Unit = js.native
   /**
     * Disable a rule or list of rules.
@@ -56,10 +56,10 @@ trait Ruler[RULE] extends js.Object {
   /**
     * Get a rules list as an array of functions.
     */
-  def getRules(chainName: java.lang.String): js.Array[remarkableLib.libMod.RemarkableNs.Rule] = js.native
+  def getRules(chainName: java.lang.String): js.Array[remarkableLib.libMod.Rule] = js.native
   /**
     * Add a rule to the end of chain.
     */
-  def push(ruleName: java.lang.String, fn: RULE, options: remarkableLib.libMod.RemarkableNs.Options): scala.Unit = js.native
+  def push(ruleName: java.lang.String, fn: RULE, options: remarkableLib.libMod.Options): scala.Unit = js.native
 }
 

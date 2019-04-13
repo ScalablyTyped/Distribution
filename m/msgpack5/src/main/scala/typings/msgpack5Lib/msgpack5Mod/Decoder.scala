@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("msgpack5", "Decoder")
 @js.native
-class Decoder ()
-  extends msgpack5Lib.msgpack5Mod.msgpack5Ns.Decoder
+class Decoder () extends Base
 

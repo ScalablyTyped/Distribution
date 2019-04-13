@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 // This class is defined globally in not in a module context
 @js.native
 trait AuthenticationContext extends js.Object {
-  var CONSTANTS: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.Constants = js.native
+  var CONSTANTS: Constants = js.native
   /**
     * Enum for request type
     */
-  var REQUEST_TYPE: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestType = js.native
-  var RESPONSE_TYPE: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.ResponseType = js.native
+  var REQUEST_TYPE: RequestType = js.native
+  var RESPONSE_TYPE: ResponseType = js.native
   @JSName("callback")
-  var callback_Original: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback = js.native
-  var config: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.Options = js.native
+  var callback_Original: TokenCallback = js.native
+  var config: Options = js.native
   var instance: java.lang.String = js.native
   var isAngular: scala.Boolean = js.native
   var popUp: scala.Boolean = js.native
@@ -25,10 +25,7 @@ trait AuthenticationContext extends js.Object {
     * @param resource Resource URI identifying the target resource.
     * @param callback The callback provided by the caller. It will be called with token or error.
     */
-  def acquireToken(
-    resource: java.lang.String,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
-  ): scala.Unit = js.native
+  def acquireToken(resource: java.lang.String, callback: TokenCallback): scala.Unit = js.native
   /**
     * Acquires token (interactive flow using a popup window) by sending request to AAD to obtain a new token.
     * @param resource Resource URI identifying the target resource.
@@ -40,55 +37,55 @@ trait AuthenticationContext extends js.Object {
     resource: java.lang.String,
     extraQueryParameters: java.lang.String,
     claims: java.lang.String,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: java.lang.String,
     claims: js.UndefOr[scala.Nothing],
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: java.lang.String,
     claims: scala.Null,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: js.UndefOr[scala.Nothing],
     claims: java.lang.String,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: js.UndefOr[scala.Nothing],
     claims: js.UndefOr[scala.Nothing],
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: js.UndefOr[scala.Nothing],
     claims: scala.Null,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: scala.Null,
     claims: java.lang.String,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: scala.Null,
     claims: js.UndefOr[scala.Nothing],
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: scala.Null,
     claims: scala.Null,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
+    callback: TokenCallback
   ): scala.Unit = js.native
   /**
     * Acquires token (interactive flow using a redirect) by sending request to AAD to obtain a new token. In this case the callback passed in the authentication request constructor will be called.
@@ -133,7 +130,7 @@ trait AuthenticationContext extends js.Object {
   /**
     * If user object exists, returns it. Else creates a new user object by decoding `id_token` from the cache.
     */
-  def getCachedUser(): adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.UserInfo = js.native
+  def getCachedUser(): UserInfo = js.native
   /**
     * Gets login error.
     */
@@ -141,7 +138,7 @@ trait AuthenticationContext extends js.Object {
   /**
     * Creates a request info object from the URL fragment and returns it.
     */
-  def getRequestInfo(hash: java.lang.String): adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestInfo = js.native
+  def getRequestInfo(hash: java.lang.String): RequestInfo = js.native
   /**
     * Gets resource for given endpoint if mapping is provided with config.
     * @param endpoint Resource URI identifying the target resource.
@@ -151,7 +148,7 @@ trait AuthenticationContext extends js.Object {
     * Calls the passed in callback with the user object or error message related to the user.
     * @param callback The callback provided by the caller. It will be called with user or error.
     */
-  def getUser(callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.UserCallback): scala.Unit = js.native
+  def getUser(callback: UserCallback): scala.Unit = js.native
   /**
     * This method must be called for processing the response received from AAD. It extracts the hash, processes the token or error, saves it in the cache and calls the callbacks with the result.
     * @param hash Hash fragment of URL. Defaults to `window.location.hash`.
@@ -179,11 +176,7 @@ trait AuthenticationContext extends js.Object {
     * @param message Message to log.
     * @param error Error to log.
     */
-  def log(
-    level: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.LoggingLevel,
-    message: java.lang.String,
-    error: js.Any
-  ): scala.Unit = js.native
+  def log(level: LoggingLevel, message: java.lang.String, error: js.Any): scala.Unit = js.native
   /**
     * Redirects user to logout endpoint. After logout, it will redirect to `postLogoutRedirectUri` if added as a property on the config object.
     */
@@ -207,15 +200,11 @@ trait AuthenticationContext extends js.Object {
     * @param expectedState A unique identifier (guid).
     * @param callback The callback provided by the caller. It will be called with token or error.
     */
-  def registerCallback(
-    expectedState: java.lang.String,
-    resource: java.lang.String,
-    callback: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.TokenCallback
-  ): scala.Unit = js.native
+  def registerCallback(expectedState: java.lang.String, resource: java.lang.String, callback: TokenCallback): scala.Unit = js.native
   /**
     * Saves token or error received in the response from AAD in the cache. In case of `id_token`, it also creates the user object.
     */
-  def saveTokenFromHash(requestInfo: adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestInfo): scala.Unit = js.native
+  def saveTokenFromHash(requestInfo: RequestInfo): scala.Unit = js.native
   /**
     * Logs messages when logging level is set to 3.
     * @param message Message to log.

@@ -12,7 +12,7 @@ trait MultiSliderProps extends js.Object {
     * Default { height: 30 }
     */
   var containerStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
-  var customMarker: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[MarkerProps]] = js.undefined
+  var customMarker: js.UndefOr[reactLib.reactMod.ComponentType[MarkerProps]] = js.undefined
   /**
     * Customise the marker's style
     *
@@ -117,7 +117,7 @@ object MultiSliderProps {
   @scala.inline
   def apply(
     containerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
-    customMarker: reactLib.reactMod.ReactNs.ComponentType[MarkerProps] = null,
+    customMarker: reactLib.reactMod.ComponentType[MarkerProps] = null,
     markerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,

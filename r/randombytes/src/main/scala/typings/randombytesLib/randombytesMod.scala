@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("randombytes", JSImport.Namespace)
 @js.native
-object randombytesMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Buf]
+object randombytesMod extends js.Object {
+  def apply(size: scala.Double): nodeLib.Buffer = js.native
+  def apply(
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
+}
 

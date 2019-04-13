@@ -57,9 +57,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CircleSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGCircleSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait CircleSelectors
+    trait CircleSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGCircleSelector
     
     @js.native
     class Ellipse () extends Generic {
@@ -67,9 +67,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipseSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGEllipseSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait EllipseSelectors
+    trait EllipseSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGEllipseSelector
     
     @js.native
     class Generic ()
@@ -81,9 +81,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[ImageSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGImageSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait ImageSelectors
+    trait ImageSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGImageSelector
     
     @js.native
     class Path () extends Generic {
@@ -91,9 +91,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGPathSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait PathSelectors
+    trait PathSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGPathSelector
     
     @js.native
     class Polygon () extends Generic {
@@ -101,9 +101,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGPolygonSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait PolygonSelectors
+    trait PolygonSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGPolygonSelector
     
     @js.native
     class Polyline () extends Generic {
@@ -111,9 +111,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolylineSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGPolylineSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait PolylineSelectors
+    trait PolylineSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGPolylineSelector
     
     @js.native
     class Rect () extends Generic {
@@ -121,9 +121,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[RectSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait RectSelectors
+    trait RectSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGRectSelector
     
     @js.native
     class Rhombus () extends Generic {
@@ -143,9 +143,9 @@ object shapesNs extends js.Object {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[TextBlockSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]] */ trait TextBlockSelectors
-      extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector {
+    trait TextBlockSelectors
+      extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
+         with jointjsLib.jointjsMod.shapesNs.SVGRectSelector {
       var `.content`: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
     }
     

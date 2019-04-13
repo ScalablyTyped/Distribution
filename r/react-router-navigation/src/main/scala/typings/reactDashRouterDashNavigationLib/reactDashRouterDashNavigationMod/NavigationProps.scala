@@ -32,10 +32,10 @@ object NavigationProps {
     navBarStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     onTransitionEnd: /* repeated */ js.Any => scala.Unit = null,
     onTransitionStart: /* repeated */ js.Any => scala.Unit = null,
-    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
     title: java.lang.String = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null
   ): NavigationProps = {

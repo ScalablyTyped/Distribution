@@ -23,3 +23,8 @@ class ObjectFiles ()
   override def ToJSON(): java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.ObjectFiles")
+@js.native
+object ObjectFiles
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectFiles]
+

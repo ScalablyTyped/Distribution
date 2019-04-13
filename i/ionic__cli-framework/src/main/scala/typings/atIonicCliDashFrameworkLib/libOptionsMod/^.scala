@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/lib/options", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val parseArgs: atIonicCliDashFrameworkLib.Anon_Args = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](options: js.Array[O], parsedArgs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions): atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](
     options: js.Array[O],
@@ -35,15 +34,15 @@ object ^ extends js.Object {
     pargv: js.Array[java.lang.String],
     hasIncludeSeparated: atIonicCliDashFrameworkLib.Anon_IncludeSeparated
   ): js.Array[java.lang.String] = js.native
-  def unparseArgs(parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs): js.Array[java.lang.String] = js.native
+  def unparseArgs(parsedArgs: minimistLib.minimistMod.ParsedArgs): js.Array[java.lang.String] = js.native
   def unparseArgs(
-    parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    parsedArgs: minimistLib.minimistMod.ParsedArgs,
     hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions
   ): js.Array[java.lang.String] = js.native
   def unparseArgs(
-    parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    parsedArgs: minimistLib.minimistMod.ParsedArgs,
     hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions,
-    parseArgsOptions: minimistLib.minimistMod.minimistNs.Opts
+    parseArgsOptions: minimistLib.minimistMod.Opts
   ): js.Array[java.lang.String] = js.native
 }
 

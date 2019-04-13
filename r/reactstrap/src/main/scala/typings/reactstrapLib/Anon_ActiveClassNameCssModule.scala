@@ -9,7 +9,7 @@ trait Anon_ActiveClassNameCssModule extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ActiveClassNameCssModule {
@@ -18,7 +18,7 @@ object Anon_ActiveClassNameCssModule {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ActiveClassNameCssModule = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

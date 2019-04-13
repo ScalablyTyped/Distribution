@@ -33,13 +33,13 @@ trait WindowScrollerProps
     * This function should implement the following signature:
     * ({ height, isScrolling, scrollLeft, scrollTop, width, onChildScroll }) => PropTypes.element
     */
-  def children(params: WindowScrollerChildProps): reactLib.reactMod.ReactNs.ReactNode
+  def children(params: WindowScrollerChildProps): reactLib.reactMod.ReactNode
 }
 
 object WindowScrollerProps {
   @scala.inline
   def apply(
-    children: WindowScrollerChildProps => reactLib.reactMod.ReactNs.ReactNode,
+    children: WindowScrollerChildProps => reactLib.reactMod.ReactNode,
     StringDictionary: /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose

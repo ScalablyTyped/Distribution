@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class PropertyValueSuggestions ()
   extends mfilesLib.IPropertyValueSuggestions
 
+@JSGlobal("MFiles.PropertyValueSuggestions")
+@js.native
+object PropertyValueSuggestions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValueSuggestions]
+

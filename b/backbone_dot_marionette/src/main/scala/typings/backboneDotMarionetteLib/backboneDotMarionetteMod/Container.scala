@@ -16,19 +16,13 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.all
     */
-  def all(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
-  def all(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): scala.Boolean = js.native
+  def all(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
+  def all(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): scala.Boolean = js.native
   /**
     * @see _.any
     */
-  def any(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
-  def any(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): scala.Boolean = js.native
+  def any(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
+  def any(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): scala.Boolean = js.native
   /**
     * @see _.contains
     */
@@ -37,43 +31,28 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.detect
     */
-  def detect(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): js.UndefOr[Container[TView]] = js.native
-  def detect(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): js.UndefOr[Container[TView]] = js.native
+  def detect(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): js.UndefOr[Container[TView]] = js.native
+  def detect(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): js.UndefOr[Container[TView]] = js.native
   /**
     * @see _.each
     */
-  def each(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Unit]): Container[TView] = js.native
-  def each(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Unit],
-    context: js.Any
-  ): Container[TView] = js.native
+  def each(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Unit]): Container[TView] = js.native
+  def each(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Unit], context: js.Any): Container[TView] = js.native
   /**
     * @see _.every
     */
-  def every(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
-  def every(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): scala.Boolean = js.native
+  def every(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
+  def every(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): scala.Boolean = js.native
   /**
     * @see _.filter
     */
-  def filter(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): js.Array[TView] = js.native
-  def filter(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): js.Array[TView] = js.native
+  def filter(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): js.Array[TView] = js.native
+  def filter(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): js.Array[TView] = js.native
   /**
     * @see _.find
     */
-  def find(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): js.UndefOr[Container[TView]] = js.native
-  def find(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): js.UndefOr[Container[TView]] = js.native
+  def find(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): js.UndefOr[Container[TView]] = js.native
+  def find(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): js.UndefOr[Container[TView]] = js.native
   /**
     * Find a view by it's cid.
     */
@@ -101,11 +80,8 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.forEach
     */
-  def forEach(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Unit]): Container[TView] = js.native
-  def forEach(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Unit],
-    context: js.Any
-  ): Container[TView] = js.native
+  def forEach(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Unit]): Container[TView] = js.native
+  def forEach(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Unit], context: js.Any): Container[TView] = js.native
   /**
     * @see _.include
     */
@@ -131,16 +107,13 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.map
     */
-  def map[TResult](iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, TResult]): js.Array[TResult] = js.native
-  def map[TResult](iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, TResult], context: js.Any): js.Array[TResult] = js.native
+  def map[TResult](iterator: underscoreLib.underscoreMod.ListIterator[TView, TResult]): js.Array[TResult] = js.native
+  def map[TResult](iterator: underscoreLib.underscoreMod.ListIterator[TView, TResult], context: js.Any): js.Array[TResult] = js.native
   /**
     * @see _.partition
     */
-  def partition(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): js.Array[js.Array[TView]] = js.native
-  def partition(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): js.Array[js.Array[TView]] = js.native
+  def partition(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): js.Array[js.Array[TView]] = js.native
+  def partition(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): js.Array[js.Array[TView]] = js.native
   /**
     * @see _.pluck
     */
@@ -148,21 +121,14 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.reduce
     */
-  def reduce[TResult](iterator: underscoreLib.underscoreMod.underscoreNs.MemoIterator[TView, TResult]): TResult = js.native
-  def reduce[TResult](iterator: underscoreLib.underscoreMod.underscoreNs.MemoIterator[TView, TResult], memo: TResult): TResult = js.native
-  def reduce[TResult](
-    iterator: underscoreLib.underscoreMod.underscoreNs.MemoIterator[TView, TResult],
-    memo: TResult,
-    context: js.Any
-  ): TResult = js.native
+  def reduce[TResult](iterator: underscoreLib.underscoreMod.MemoIterator[TView, TResult]): TResult = js.native
+  def reduce[TResult](iterator: underscoreLib.underscoreMod.MemoIterator[TView, TResult], memo: TResult): TResult = js.native
+  def reduce[TResult](iterator: underscoreLib.underscoreMod.MemoIterator[TView, TResult], memo: TResult, context: js.Any): TResult = js.native
   /**
     * @see _.reject
     */
-  def reject(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): js.Array[TView] = js.native
-  def reject(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): js.Array[TView] = js.native
+  def reject(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): js.Array[TView] = js.native
+  def reject(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): js.Array[TView] = js.native
   /**
     * Find a view by it's cid.
     */
@@ -175,19 +141,13 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.select
     */
-  def select(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): js.Array[TView] = js.native
-  def select(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): js.Array[TView] = js.native
+  def select(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): js.Array[TView] = js.native
+  def select(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): js.Array[TView] = js.native
   /**
     * @see _.some
     */
-  def some(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
-  def some(
-    iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TView, scala.Boolean],
-    context: js.Any
-  ): scala.Boolean = js.native
+  def some(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean]): scala.Boolean = js.native
+  def some(iterator: underscoreLib.underscoreMod.ListIterator[TView, scala.Boolean], context: js.Any): scala.Boolean = js.native
   /**
     * @see _.toArray
     */

@@ -24,11 +24,11 @@ object AnchorDefaultProps {
     prefixCls: java.lang.String,
     showInkInFixed: scala.Boolean,
     bounds: scala.Int | scala.Double = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     offsetTop: scala.Int | scala.Double = null,
-    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* link */ antdLib.Anon_Href) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    onClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* link */ antdLib.Anon_Href) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): AnchorDefaultProps = {
     val __obj = js.Dynamic.literal(affix = affix, getContainer = js.Any.fromFunction0(getContainer), prefixCls = prefixCls, showInkInFixed = showInkInFixed)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])

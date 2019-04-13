@@ -28,9 +28,9 @@ object srcUtilMod extends js.Object {
   def cssToStr(cssProps: js.Any): java.lang.String = js.native
   def debounce(func: js.Any, wait: js.Any): js.Function0[_] = js.native
   def debounce(func: js.Any, wait: js.Any, immediate: scala.Boolean): js.Function0[_] = js.native
-  def diffByUnit(a: js.Any, b: js.Any, unit: js.Any): momentLib.momentMod.momentNs.Duration = js.native
-  def diffDay(a: js.Any, b: js.Any): momentLib.momentMod.momentNs.Duration = js.native
-  def diffDayTime(a: js.Any, b: js.Any): momentLib.momentMod.momentNs.Duration = js.native
+  def diffByUnit(a: js.Any, b: js.Any, unit: js.Any): momentLib.momentMod.Duration = js.native
+  def diffDay(a: js.Any, b: js.Any): momentLib.momentMod.Duration = js.native
+  def diffDayTime(a: js.Any, b: js.Any): momentLib.momentMod.Duration = js.native
   def diffPoints(point1: js.Any, point2: js.Any): fullcalendarLib.Anon_Left = js.native
   def disableCursor(): scala.Unit = js.native
   def distributeHeight(els: js.Any, availableHeight: js.Any, shouldRedistribute: js.Any): scala.Unit = js.native
@@ -63,7 +63,7 @@ object srcUtilMod extends js.Object {
   def matchCellWidths(els: js.Any): scala.Double = js.native
   def mergeProps(propObjs: js.Any): js.Object = js.native
   def mergeProps(propObjs: js.Any, complexProps: js.Any): js.Object = js.native
-  def multiplyDuration(dur: js.Any, n: js.Any): momentLib.momentMod.momentNs.Duration = js.native
+  def multiplyDuration(dur: js.Any, n: js.Any): momentLib.momentMod.Duration = js.native
   def parseFieldSpecs(input: js.Any): js.Array[_] = js.native
   def preventDefault(ev: js.Any): scala.Unit = js.native
   def preventSelection(el: js.Any): scala.Unit = js.native

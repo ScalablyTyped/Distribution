@@ -9,393 +9,494 @@ import scala.scalajs.js.annotation._
 @js.native
 object xmlNs extends js.Object {
   @js.native
-  class AllDataObjectsTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.AllDataObjectsTimeStamp
+  class AllDataObjectsTimeStamp () extends XAdESTimeStamp
   
   @js.native
-  class AllDataObjectsTimeStampCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.AllDataObjectsTimeStampCollection
+  class AllDataObjectsTimeStampCollection () extends XadesCollection[AllDataObjectsTimeStamp]
   
   @js.native
-  class Any ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.Any
+  class Any () extends XadesObject {
+    var Value: java.lang.String = js.native
+  }
   
   @js.native
-  class AnyCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.AnyCollection
+  class AnyCollection () extends XadesCollection[XadesObject]
+  
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - xadesjsLib.xadesjsMod.xmlNs.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @js.native
+  class ArchiveTimeStamp () extends XAdESTimeStamp
+  
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - xadesjsLib.xadesjsMod.xmlNs.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @js.native
+  class AttrAuthoritiesCertValues () extends CertificateValues
   
   @js.native
-  class ArchiveTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ArchiveTimeStamp
+  class AttributeCertificateRefs () extends CompleteCertificateRefs
   
   @js.native
-  class AttrAuthoritiesCertValues ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.AttrAuthoritiesCertValues
+  class AttributeRevocationRefs () extends CompleteRevocationRefs
+  
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - xadesjsLib.xadesjsMod.xmlNs.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @js.native
+  class AttributeRevocationValues () extends RevocationValues
   
   @js.native
-  class AttributeCertificateRefs ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.AttributeCertificateRefs
+  class CRLIdentifier () extends XadesObject {
+    var IssueTime: XadesDateTime = js.native
+    var Issuer: java.lang.String = js.native
+    var Number: scala.Double = js.native
+    var URI: java.lang.String = js.native
+  }
   
   @js.native
-  class AttributeRevocationRefs ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.AttributeRevocationRefs
+  class CRLRef () extends XadesObject {
+    var CRLIdentifier: xadesjsLib.xadesjsMod.xmlNs.CRLIdentifier = js.native
+    var DigestAlgAndValue: DigestAlgAndValueType = js.native
+  }
   
   @js.native
-  class AttributeRevocationValues ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.AttributeRevocationValues
+  class CRLRefs () extends XadesCollection[CRLRef]
   
   @js.native
-  class CRLIdentifier ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CRLIdentifier
+  class CRLValues () extends XadesCollection[EncapsulatedCRLValue]
   
   @js.native
-  class CRLRef ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CRLRef
+  class Cert () extends XadesObject {
+    var CertDigest: DigestAlgAndValueType = js.native
+    var IssuerSerial: xmldsigjsLib.xmldsigjsMod.X509IssuerSerial = js.native
+    var Uri: java.lang.String = js.native
+  }
   
   @js.native
-  class CRLRefs ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CRLRefs
+  class CertIDList () extends XadesCollection[Cert]
   
   @js.native
-  class CRLValues ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CRLValues
+  class CertificateValues () extends XadesObject {
+    var EncapsulatedX509Certificates: EncapsulatedX509CertificateCollection = js.native
+    var Id: java.lang.String = js.native
+    var OtherCertificates: OtherCertificateCollection = js.native
+  }
   
   @js.native
-  class Cert ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.Cert
+  class CertifiedRole () extends EncapsulatedPKIData
   
   @js.native
-  class CertIDList ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CertIDList
+  class CertifiedRoles () extends XadesCollection[CertifiedRole]
   
   @js.native
-  class CertificateValues ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CertificateValues
+  class ClaimedRole () extends Any
   
   @js.native
-  class CertifiedRole ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CertifiedRole
+  class ClaimedRoles () extends XadesCollection[ClaimedRole]
   
   @js.native
-  class CertifiedRoles ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CertifiedRoles
+  class CommitmentTypeIndication () extends XadesObject {
+    var AllSignedDataObjects: scala.Boolean = js.native
+    var CommitmentTypeId: ObjectIdentifier = js.native
+    var CommitmentTypeQualifiers: xadesjsLib.xadesjsMod.xmlNs.CommitmentTypeQualifiers = js.native
+    var ObjectReference: ObjectReferenceCollection = js.native
+  }
   
   @js.native
-  class ClaimedRole ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ClaimedRole
+  class CommitmentTypeIndicationCollection () extends XadesCollection[CommitmentTypeIndication]
   
   @js.native
-  class ClaimedRoles ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ClaimedRoles
+  class CommitmentTypeQualifier () extends Any
   
   @js.native
-  class CommitmentTypeIndication ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CommitmentTypeIndication
+  class CommitmentTypeQualifiers () extends XadesCollection[CommitmentTypeQualifier]
   
   @js.native
-  class CommitmentTypeIndicationCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CommitmentTypeIndicationCollection
+  class CompleteCertificateRefs () extends UnsignedSignatureProperty {
+    var CertRefs: CertIDList = js.native
+    var Id: java.lang.String = js.native
+  }
   
   @js.native
-  class CommitmentTypeQualifier ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CommitmentTypeQualifier
+  class CompleteRevocationRefs () extends UnsignedSignatureProperty {
+    var CRLRefs: xadesjsLib.xadesjsMod.xmlNs.CRLRefs = js.native
+    var Id: java.lang.String = js.native
+    var OCSPRefs: xadesjsLib.xadesjsMod.xmlNs.OCSPRefs = js.native
+    var OtherRefs: xadesjsLib.xadesjsMod.xmlNs.OtherRefs = js.native
+  }
   
   @js.native
-  class CommitmentTypeQualifiers ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CommitmentTypeQualifiers
-  
-  @js.native
-  class CompleteCertificateRefs ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CompleteCertificateRefs
-  
-  @js.native
-  class CompleteRevocationRefs ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CompleteRevocationRefs
-  
-  @js.native
-  class CounterSignature ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.CounterSignature
+  class CounterSignature () extends UnsignedSignatureProperty {
+    var Signature: xmldsigjsLib.xmldsigjsMod.Signature = js.native
+  }
   
   @js.native
   class DataObject ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.DataObject
+    extends xmldsigjsLib.xmldsigjsMod.DataObject {
+    var QualifyingProperties: xadesjsLib.xadesjsMod.xmlNs.QualifyingProperties = js.native
+  }
   
   @js.native
-  class DataObjectFormat ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.DataObjectFormat
+  class DataObjectFormat () extends XadesObject {
+    var Description: java.lang.String = js.native
+    var Encoding: java.lang.String = js.native
+    var MimeType: java.lang.String = js.native
+    var ObjectIdentifier: xadesjsLib.xadesjsMod.xmlNs.ObjectIdentifier = js.native
+    var ObjectReference: java.lang.String = js.native
+  }
   
   @js.native
-  class DataObjectFormatCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.DataObjectFormatCollection
+  class DataObjectFormatCollection () extends XadesCollection[DataObjectFormat]
   
   @js.native
-  class DigestAlgAndValueType ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.DigestAlgAndValueType
+  class DigestAlgAndValueType () extends XadesObject {
+    var DigestMethod: xmldsigjsLib.xmldsigjsMod.DigestMethod = js.native
+    var DigestValue: stdLib.Uint8Array = js.native
+  }
   
   @js.native
-  class DocumentationReference ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.DocumentationReference
+  class DocumentationReference () extends XadesObject {
+    var Uri: java.lang.String = js.native
+  }
   
   @js.native
-  class DocumentationReferences ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.DocumentationReferences
+  class DocumentationReferences () extends XadesCollection[DocumentationReference]
   
   @js.native
-  class EncapsulatedCRLValue ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.EncapsulatedCRLValue
+  class EncapsulatedCRLValue () extends EncapsulatedPKIData
   
   @js.native
-  class EncapsulatedOCSPValue ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.EncapsulatedOCSPValue
+  class EncapsulatedOCSPValue () extends EncapsulatedPKIData
   
   @js.native
-  class EncapsulatedPKIData ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.EncapsulatedPKIData
+  class EncapsulatedPKIData () extends XadesObject {
+    var Encoding: EncodingType = js.native
+    var Id: java.lang.String = js.native
+    var Value: stdLib.Uint8Array = js.native
+  }
   
   @js.native
-  class EncapsulatedTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.EncapsulatedTimeStamp
+  class EncapsulatedTimeStamp () extends EncapsulatedPKIData
   
   @js.native
-  class EncapsulatedTimeStampCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.EncapsulatedTimeStampCollection
+  class EncapsulatedTimeStampCollection () extends XadesCollection[EncapsulatedTimeStamp]
   
   @js.native
-  class EncapsulatedX509Certificate ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.EncapsulatedX509Certificate
+  class EncapsulatedX509Certificate () extends EncapsulatedPKIData
   
   @js.native
-  class EncapsulatedX509CertificateCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.EncapsulatedX509CertificateCollection
+  class EncapsulatedX509CertificateCollection () extends XadesCollection[EncapsulatedX509Certificate]
   
   @js.native
-  class GenericTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.GenericTimeStamp
+  class GenericTimeStamp () extends XadesObject {
+    var CanonicalizationMethod: xmldsigjsLib.xmldsigjsMod.CanonicalizationMethod = js.native
+    var EncapsulatedTimeStamp: EncapsulatedTimeStampCollection = js.native
+    var Id: java.lang.String = js.native
+    var Include: xadesjsLib.xadesjsMod.xmlNs.Include = js.native
+    var ReferenceInfo: ReferenceInfos = js.native
+    var XMLTimeStamp: XMLTimeStampCollection = js.native
+  }
   
   @js.native
-  class Identifier ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.Identifier
+  class Identifier () extends XadesObject {
+    var Qualifier: xadesjsLib.xadesjsLibStrings.OIDAsURI | xadesjsLib.xadesjsLibStrings.OIDAsURN = js.native
+    var Value: java.lang.String = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - xadesjsLib.xadesjsLibStrings.OIDAsURI
+    - xadesjsLib.xadesjsLibStrings.OIDAsURN
+  */
+  trait IdentifierQualifier extends js.Object
   
   @js.native
-  class Include ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.Include
+  class Include () extends XadesObject {
+    var ReferencedData: scala.Boolean = js.native
+    var Uri: java.lang.String = js.native
+  }
   
   @js.native
-  class IndividualDataObjectsTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.IndividualDataObjectsTimeStamp
+  class IndividualDataObjectsTimeStamp () extends XAdESTimeStamp
   
   @js.native
-  class IndividualDataObjectsTimeStampCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.IndividualDataObjectsTimeStampCollection
+  class IndividualDataObjectsTimeStampCollection () extends XadesCollection[IndividualDataObjectsTimeStamp]
   
   @js.native
-  class Integer ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.Integer
+  class Integer () extends XadesObject {
+    var Value: scala.Double = js.native
+  }
   
   @js.native
-  class IntegerList ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.IntegerList
+  class IntegerList () extends XadesCollection[Integer]
   
   @js.native
   class IssuerSerial ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.IssuerSerial
+    extends xmldsigjsLib.xmldsigjsMod.X509IssuerSerial
   
   @js.native
-  class NoticeReference ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.NoticeReference
+  class NoticeReference () extends XadesObject {
+    var NoticeNumbers: IntegerList = js.native
+    var Organization: java.lang.String = js.native
+  }
   
   @js.native
-  class OCSPIdentifier ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OCSPIdentifier
+  class OCSPIdentifier () extends XadesObject {
+    var ProducedAt: XadesDateTime = js.native
+    var ResponderID: xadesjsLib.xadesjsMod.xmlNs.ResponderID = js.native
+    var URI: java.lang.String = js.native
+  }
   
   @js.native
-  class OCSPRef ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OCSPRef
+  class OCSPRef () extends XadesObject {
+    var DigestAlgAndValue: DigestAlgAndValueType = js.native
+    var OCSPIdentifier: xadesjsLib.xadesjsMod.xmlNs.OCSPIdentifier = js.native
+  }
   
   @js.native
-  class OCSPRefs ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OCSPRefs
+  class OCSPRefs () extends XadesCollection[OCSPRef]
   
   @js.native
-  class OCSPValues ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OCSPValues
+  class OCSPValues () extends XadesCollection[EncapsulatedOCSPValue]
   
   @js.native
-  class ObjectIdentifier ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ObjectIdentifier
+  class ObjectIdentifier () extends XadesObject {
+    var Description: java.lang.String = js.native
+    var DocumentationReferences: xadesjsLib.xadesjsMod.xmlNs.DocumentationReferences = js.native
+    var Identifier: xadesjsLib.xadesjsMod.xmlNs.Identifier = js.native
+  }
   
   @js.native
-  class ObjectReference ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ObjectReference
+  class ObjectReference () extends XadesObject {
+    var Value: java.lang.String = js.native
+  }
   
   @js.native
-  class ObjectReferenceCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ObjectReferenceCollection
+  class ObjectReferenceCollection () extends XadesCollection[ObjectReference]
   
   @js.native
-  class OtherCertificate ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherCertificate
+  class OtherCertificate () extends Any
   
   @js.native
-  class OtherCertificateCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherCertificateCollection
+  class OtherCertificateCollection () extends XadesCollection[OtherCertificate]
   
   @js.native
-  class OtherRef ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherRef
+  class OtherRef () extends Any
   
   @js.native
-  class OtherRefs ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherRefs
+  class OtherRefs () extends XadesCollection[OtherRef]
   
   @js.native
-  class OtherTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherTimeStamp
+  class OtherTimeStamp () extends XadesObject {
+    var CanonicalizationMethod: xmldsigjsLib.xmldsigjsMod.CanonicalizationMethod = js.native
+    var EncapsulatedTimeStamp: EncapsulatedTimeStampCollection = js.native
+    var Id: java.lang.String = js.native
+    var ReferenceInfo: ReferenceInfos = js.native
+    var XMLTimeStamp: XMLTimeStampCollection = js.native
+  }
   
   @js.native
-  class OtherValue ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherValue
+  class OtherValue () extends EncapsulatedPKIData
   
   @js.native
-  class OtherValues ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.OtherValues
+  class OtherValues () extends XadesCollection[OtherValue]
   
   @js.native
-  class QualifyingProperties ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.QualifyingProperties
+  class QualifyingProperties () extends XadesObject {
+    var Id: java.lang.String = js.native
+    var SignedProperties: xadesjsLib.xadesjsMod.xmlNs.SignedProperties = js.native
+    var Target: java.lang.String = js.native
+    var UnsignedProperties: xadesjsLib.xadesjsMod.xmlNs.UnsignedProperties = js.native
+  }
   
   @js.native
-  class QualifyingPropertiesReference ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.QualifyingPropertiesReference
+  class QualifyingPropertiesReference () extends XadesObject {
+    var Id: java.lang.String = js.native
+    var Uri: java.lang.String = js.native
+  }
   
   @js.native
-  class ReferenceInfo ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ReferenceInfo
+  class ReferenceInfo () extends XadesObject {
+    var DigestMethod: java.lang.String = js.native
+    var DigestValue: stdLib.Uint8Array = js.native
+    var Id: java.lang.String = js.native
+    var Uri: java.lang.String = js.native
+  }
   
   @js.native
-  class ReferenceInfos ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ReferenceInfos
+  class ReferenceInfos () extends XadesCollection[ReferenceInfo]
+  
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - xadesjsLib.xadesjsMod.xmlNs.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @js.native
+  class RefsOnlyTimeStamp () extends XAdESTimeStamp
   
   @js.native
-  class RefsOnlyTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.RefsOnlyTimeStamp
+  class ResponderID () extends XadesObject {
+    var ByKey: stdLib.Uint8Array = js.native
+    var ByName: java.lang.String = js.native
+  }
   
   @js.native
-  class ResponderID ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.ResponderID
+  class RevocationValues () extends XadesObject {
+    var CRLValues: xadesjsLib.xadesjsMod.xmlNs.CRLValues = js.native
+    var Id: java.lang.String = js.native
+    var OCSPValues: xadesjsLib.xadesjsMod.xmlNs.OCSPValues = js.native
+    var OtherValues: xadesjsLib.xadesjsMod.xmlNs.OtherValues = js.native
+  }
   
   @js.native
-  class RevocationValues ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.RevocationValues
+  class SPURI () extends XadesObject {
+    var Value: java.lang.String = js.native
+  }
   
   @js.native
-  class SPURI ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SPURI
+  class SPUserNotice () extends XadesObject {
+    var ExplicitText: java.lang.String = js.native
+    var NoticeRef: NoticeReference = js.native
+  }
+  
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - xadesjsLib.xadesjsMod.xmlNs.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @js.native
+  class SigAndRefsTimeStamp () extends XAdESTimeStamp
   
   @js.native
-  class SPUserNotice ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SPUserNotice
+  class SigPolicyHash () extends DigestAlgAndValueType
   
   @js.native
-  class SigAndRefsTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SigAndRefsTimeStamp
+  class SigPolicyId () extends ObjectIdentifier
   
   @js.native
-  class SigPolicyHash ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SigPolicyHash
+  class SigPolicyQualifier () extends AnyCollection
   
   @js.native
-  class SigPolicyId ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SigPolicyId
+  class SigPolicyQualifiers () extends XadesCollection[SigPolicyQualifier]
   
   @js.native
-  class SigPolicyQualifier ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SigPolicyQualifier
+  class SignaturePolicyId () extends XadesObject {
+    var SigPolicyHash: DigestAlgAndValueType = js.native
+    var SigPolicyId: ObjectIdentifier = js.native
+    var SigPolicyQualifiers: xadesjsLib.xadesjsMod.xmlNs.SigPolicyQualifiers = js.native
+    var Transforms: xmldsigjsLib.xmldsigjsMod.Transforms = js.native
+  }
   
   @js.native
-  class SigPolicyQualifiers ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SigPolicyQualifiers
+  class SignaturePolicyIdentifier () extends XadesObject {
+    var SignaturePolicyId: xadesjsLib.xadesjsMod.xmlNs.SignaturePolicyId = js.native
+    var SignaturePolicyImplied: scala.Boolean = js.native
+  }
   
   @js.native
-  class SignaturePolicyId ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignaturePolicyId
+  class SignatureProductionPlace () extends XadesObject {
+    var City: java.lang.String = js.native
+    var CountryName: java.lang.String = js.native
+    var PostalCode: java.lang.String = js.native
+    var StateOrProvince: java.lang.String = js.native
+  }
+  
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - xadesjsLib.xadesjsMod.xmlNs.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @js.native
+  class SignatureTimeStamp () extends XAdESTimeStamp
   
   @js.native
-  class SignaturePolicyIdentifier ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignaturePolicyIdentifier
+  class SignedDataObjectProperties () extends XadesObject {
+    var AllDataObjectsTimeStamps: AllDataObjectsTimeStampCollection = js.native
+    var CommitmentTypeIndications: CommitmentTypeIndicationCollection = js.native
+    var DataObjectFormats: DataObjectFormatCollection = js.native
+    var Id: java.lang.String = js.native
+    var IndividualDataObjectsTimeStamps: IndividualDataObjectsTimeStampCollection = js.native
+  }
   
   @js.native
-  class SignatureProductionPlace ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignatureProductionPlace
+  class SignedProperties () extends XadesObject {
+    var Id: java.lang.String = js.native
+    var SignedDataObjectProperties: xadesjsLib.xadesjsMod.xmlNs.SignedDataObjectProperties = js.native
+    var SignedSignatureProperties: xadesjsLib.xadesjsMod.xmlNs.SignedSignatureProperties = js.native
+  }
   
   @js.native
-  class SignatureTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignatureTimeStamp
+  class SignedSignatureProperties () extends XadesObject {
+    var Id: java.lang.String = js.native
+    var SignaturePolicyIdentifier: xadesjsLib.xadesjsMod.xmlNs.SignaturePolicyIdentifier = js.native
+    var SignatureProductionPlace: xadesjsLib.xadesjsMod.xmlNs.SignatureProductionPlace = js.native
+    var SignerRole: xadesjsLib.xadesjsMod.xmlNs.SignerRole = js.native
+    var SigningCertificate: xadesjsLib.xadesjsMod.xmlNs.SigningCertificate = js.native
+    var SigningTime: XadesDateTime = js.native
+  }
   
   @js.native
-  class SignedDataObjectProperties ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignedDataObjectProperties
+  class SignerRole () extends XadesObject {
+    var CertifiedRoles: xadesjsLib.xadesjsMod.xmlNs.CertifiedRoles = js.native
+    var ClaimedRoles: xadesjsLib.xadesjsMod.xmlNs.ClaimedRoles = js.native
+  }
   
   @js.native
-  class SignedProperties ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignedProperties
+  class SigningCertificate () extends CertIDList
   
   @js.native
-  class SignedSignatureProperties ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignedSignatureProperties
+  class UnsignedDataObjectProperties () extends XadesCollection[UnsignedDataObjectProperty] {
+    var Id: java.lang.String = js.native
+  }
   
   @js.native
-  class SignerRole ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SignerRole
+  class UnsignedDataObjectProperty () extends Any
   
   @js.native
-  class SigningCertificate ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.SigningCertificate
+  class UnsignedProperties () extends XadesObject {
+    var Id: java.lang.String = js.native
+    var UnsignedDataObjectProperties: xadesjsLib.xadesjsMod.xmlNs.UnsignedDataObjectProperties = js.native
+    var UnsignedSignatureProperties: xadesjsLib.xadesjsMod.xmlNs.UnsignedSignatureProperties = js.native
+  }
   
   @js.native
-  class UnsignedDataObjectProperties ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedDataObjectProperties
+  class UnsignedSignatureProperties () extends XadesCollection[UnsignedSignatureProperty] {
+    var Id: java.lang.String = js.native
+  }
   
   @js.native
-  class UnsignedDataObjectProperty ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedDataObjectProperty
+  class UnsignedSignatureProperty () extends XadesObject
   
   @js.native
-  class UnsignedProperties ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedProperties
+  class XAdESTimeStamp () extends XadesObject {
+    var CanonicalizationMethod: xmldsigjsLib.xmldsigjsMod.CanonicalizationMethod = js.native
+    var EncapsulatedTimeStamp: EncapsulatedTimeStampCollection = js.native
+    var Id: java.lang.String = js.native
+    var Include: xadesjsLib.xadesjsMod.xmlNs.Include = js.native
+    var XMLTimeStamp: XMLTimeStampCollection = js.native
+  }
   
   @js.native
-  class UnsignedSignatureProperties ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedSignatureProperties
+  class XMLTimeStamp () extends Any
   
   @js.native
-  class UnsignedSignatureProperty ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.UnsignedSignatureProperty
+  class XMLTimeStampCollection () extends XadesCollection[XMLTimeStamp]
   
   @js.native
-  class XAdESTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XAdESTimeStamp
+  abstract class XadesCollection[I /* <: XadesObject */] ()
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlCollection[I]
   
   @js.native
-  class XMLTimeStamp ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XMLTimeStamp
-  
-  @js.native
-  class XMLTimeStampCollection ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XMLTimeStampCollection
-  
-  @js.native
-  abstract class XadesCollection[I /* <: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XadesObject */] ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XadesCollection[I]
-  
-  @js.native
-  class XadesDateTime ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XadesDateTime
+  class XadesDateTime () extends XadesObject {
+    var Format: js.UndefOr[java.lang.String] = js.native
+    var Value: stdLib.Date = js.native
+  }
   
   @js.native
   abstract class XadesObject ()
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XadesObject
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlObject
   
-  var XmlXades: xadesjsLib.Anon_AttributeNames = js.native
+  trait _EncodingType extends js.Object
+  
+  @js.native
+  object XmlXades extends js.Object {
+    var AttributeNames: xadesjsLib.Anon_Encoding = js.native
+    var DefaultPrefix: java.lang.String = js.native
+    var ElementNames: xadesjsLib.Anon_AllDataObjectsTimeStamp = js.native
+    var NamespaceURI: java.lang.String = js.native
+    var SignedPropertiesType: java.lang.String = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - xadesjsLib.xadesjsLibStrings.der
+    - xadesjsLib.xadesjsLibStrings.ber
+    - xadesjsLib.xadesjsLibStrings.cer
+    - xadesjsLib.xadesjsLibStrings.per
+    - xadesjsLib.xadesjsLibStrings.xer
+    - scala.Null
+  */
+  type EncodingType = _EncodingType | scala.Null
 }
 

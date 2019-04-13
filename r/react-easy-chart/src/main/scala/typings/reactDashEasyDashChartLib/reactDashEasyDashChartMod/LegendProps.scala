@@ -13,9 +13,7 @@ trait LegendProps extends js.Object {
   /** change list items to inline-block (default block) */
   var horizontal: js.UndefOr[scala.Boolean] = js.undefined
   /** Override the css styles of individual components, see http://rma-consulting.github.io/react-easy-chart/legend/index.html */
-  var styles: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties]
-  ] = js.undefined
+  var styles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.CSSProperties]] = js.undefined
 }
 
 object LegendProps {
@@ -25,7 +23,7 @@ object LegendProps {
     dataId: java.lang.String,
     config: js.Array[reactDashEasyDashChartLib.Anon_ColorString] = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
-    styles: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] = null
+    styles: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.CSSProperties] = null
   ): LegendProps = {
     val __obj = js.Dynamic.literal(data = data, dataId = dataId)
     if (config != null) __obj.updateDynamic("config")(config)

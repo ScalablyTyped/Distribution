@@ -47,3 +47,9 @@ class SocketCls () extends Socket {
   def this(options: easyDashXDashHeadersLib.Anon_AllowHalfOpen) = this()
 }
 
+@JSImport("net", "Socket")
+@js.native
+object Socket
+  extends org.scalablytyped.runtime.Instantiable0[Socket]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ easyDashXDashHeadersLib.Anon_AllowHalfOpen, Socket]
+

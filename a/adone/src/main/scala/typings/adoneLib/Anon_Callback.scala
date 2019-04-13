@@ -15,7 +15,6 @@ trait Anon_Callback extends js.Object {
   var Transform: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.Transform] = js.native
   var Writable: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.streamNs.Writable] = js.native
   val finishedNs: Anon_Promisify = js.native
-  val internalNs: Anon_Finished = js.native
   val pipelineNs: Anon_PromisifyStream1 = js.native
   def finished(
     stream: nodeLib.NodeJSNs.ReadWriteStream,

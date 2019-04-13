@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Key
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var mode: yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode
+  var mode: yogDashBigpipeLib.yogDashBigpipeMod.PageletNs.mode
 }
 
 object Anon_Key {
   @scala.inline
   def apply(
-    mode: yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode,
+    mode: yogDashBigpipeLib.yogDashBigpipeMod.PageletNs.mode,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Key = {
     val __obj = js.Dynamic.literal(mode = mode)

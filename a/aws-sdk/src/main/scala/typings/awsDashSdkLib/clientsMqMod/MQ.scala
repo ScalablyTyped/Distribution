@@ -9,77 +9,53 @@ import scala.scalajs.js.annotation._
 trait MQ
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_MQ: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsMqMod.MQNs.ClientConfiguration = js.native
+  var config_MQ: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Creates a broker. Note: This API is asynchronous.
     */
-  def createBroker(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createBroker(): awsDashSdkLib.libRequestMod.Request[CreateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createBroker(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerResponse, 
+      /* data */ CreateBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a broker. Note: This API is asynchronous.
     */
-  def createBroker(params: awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createBroker(params: CreateBrokerRequest): awsDashSdkLib.libRequestMod.Request[CreateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createBroker(
-    params: awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerRequest,
+    params: CreateBrokerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerResponse, 
+      /* data */ CreateBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new configuration for the specified configuration name. Amazon MQ uses the default configuration (the engine type and version).
     */
-  def createConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfiguration(): awsDashSdkLib.libRequestMod.Request[CreateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationResponse, 
+      /* data */ CreateConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new configuration for the specified configuration name. Amazon MQ uses the default configuration (the engine type and version).
     */
-  def createConfiguration(params: awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfiguration(params: CreateConfigurationRequest): awsDashSdkLib.libRequestMod.Request[CreateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfiguration(
-    params: awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationRequest,
+    params: CreateConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationResponse, 
+      /* data */ CreateConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Add a tag to a resource.
     */
@@ -90,81 +66,57 @@ trait MQ
   /**
     * Add a tag to a resource.
     */
-  def createTags(params: awsDashSdkLib.clientsMqMod.MQNs.CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTags(params: CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createTags(
-    params: awsDashSdkLib.clientsMqMod.MQNs.CreateTagsRequest,
+    params: CreateTagsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an ActiveMQ user.
     */
-  def createUser(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createUser(): awsDashSdkLib.libRequestMod.Request[CreateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createUser(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.CreateUserResponse, 
+      /* data */ CreateUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an ActiveMQ user.
     */
-  def createUser(params: awsDashSdkLib.clientsMqMod.MQNs.CreateUserRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createUser(params: CreateUserRequest): awsDashSdkLib.libRequestMod.Request[CreateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createUser(
-    params: awsDashSdkLib.clientsMqMod.MQNs.CreateUserRequest,
+    params: CreateUserRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.CreateUserResponse, 
+      /* data */ CreateUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.CreateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a broker. Note: This API is asynchronous.
     */
-  def deleteBroker(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteBroker(): awsDashSdkLib.libRequestMod.Request[DeleteBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBroker(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerResponse, 
+      /* data */ DeleteBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a broker. Note: This API is asynchronous.
     */
-  def deleteBroker(params: awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteBroker(params: DeleteBrokerRequest): awsDashSdkLib.libRequestMod.Request[DeleteBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBroker(
-    params: awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerRequest,
+    params: DeleteBrokerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerResponse, 
+      /* data */ DeleteBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Remove a tag from a resource.
     */
@@ -175,500 +127,332 @@ trait MQ
   /**
     * Remove a tag from a resource.
     */
-  def deleteTags(params: awsDashSdkLib.clientsMqMod.MQNs.DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTags(params: DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTags(
-    params: awsDashSdkLib.clientsMqMod.MQNs.DeleteTagsRequest,
+    params: DeleteTagsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an ActiveMQ user.
     */
-  def deleteUser(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteUser(): awsDashSdkLib.libRequestMod.Request[DeleteUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteUser(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DeleteUserResponse, 
+      /* data */ DeleteUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an ActiveMQ user.
     */
-  def deleteUser(params: awsDashSdkLib.clientsMqMod.MQNs.DeleteUserRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteUser(params: DeleteUserRequest): awsDashSdkLib.libRequestMod.Request[DeleteUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteUser(
-    params: awsDashSdkLib.clientsMqMod.MQNs.DeleteUserRequest,
+    params: DeleteUserRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DeleteUserResponse, 
+      /* data */ DeleteUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DeleteUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the specified broker.
     */
-  def describeBroker(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeBroker(): awsDashSdkLib.libRequestMod.Request[DescribeBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBroker(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerResponse, 
+      /* data */ DescribeBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the specified broker.
     */
-  def describeBroker(params: awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeBroker(params: DescribeBrokerRequest): awsDashSdkLib.libRequestMod.Request[DescribeBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBroker(
-    params: awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerRequest,
+    params: DescribeBrokerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerResponse, 
+      /* data */ DescribeBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the specified configuration.
     */
-  def describeConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeConfiguration(): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationResponse, 
+      /* data */ DescribeConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the specified configuration.
     */
-  def describeConfiguration(params: awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeConfiguration(params: DescribeConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeConfiguration(
-    params: awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRequest,
+    params: DescribeConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationResponse, 
+      /* data */ DescribeConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the specified configuration revision for the specified configuration.
     */
-  def describeConfigurationRevision(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeConfigurationRevision(): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationRevisionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeConfigurationRevision(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionResponse, 
+      /* data */ DescribeConfigurationRevisionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationRevisionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the specified configuration revision for the specified configuration.
     */
-  def describeConfigurationRevision(params: awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeConfigurationRevision(params: DescribeConfigurationRevisionRequest): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationRevisionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeConfigurationRevision(
-    params: awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionRequest,
+    params: DescribeConfigurationRevisionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionResponse, 
+      /* data */ DescribeConfigurationRevisionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeConfigurationRevisionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationRevisionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about an ActiveMQ user.
     */
-  def describeUser(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeUser(): awsDashSdkLib.libRequestMod.Request[DescribeUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeUser(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeUserResponse, 
+      /* data */ DescribeUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about an ActiveMQ user.
     */
-  def describeUser(params: awsDashSdkLib.clientsMqMod.MQNs.DescribeUserRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeUser(params: DescribeUserRequest): awsDashSdkLib.libRequestMod.Request[DescribeUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeUser(
-    params: awsDashSdkLib.clientsMqMod.MQNs.DescribeUserRequest,
+    params: DescribeUserRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.DescribeUserResponse, 
+      /* data */ DescribeUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.DescribeUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all brokers.
     */
-  def listBrokers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListBrokersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listBrokers(): awsDashSdkLib.libRequestMod.Request[ListBrokersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listBrokers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListBrokersResponse, 
+      /* data */ ListBrokersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListBrokersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListBrokersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all brokers.
     */
-  def listBrokers(params: awsDashSdkLib.clientsMqMod.MQNs.ListBrokersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListBrokersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listBrokers(params: ListBrokersRequest): awsDashSdkLib.libRequestMod.Request[ListBrokersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listBrokers(
-    params: awsDashSdkLib.clientsMqMod.MQNs.ListBrokersRequest,
+    params: ListBrokersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListBrokersResponse, 
+      /* data */ ListBrokersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListBrokersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListBrokersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all revisions for the specified configuration.
     */
-  def listConfigurationRevisions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurationRevisions(): awsDashSdkLib.libRequestMod.Request[ListConfigurationRevisionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurationRevisions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsResponse, 
+      /* data */ ListConfigurationRevisionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationRevisionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all revisions for the specified configuration.
     */
-  def listConfigurationRevisions(params: awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurationRevisions(params: ListConfigurationRevisionsRequest): awsDashSdkLib.libRequestMod.Request[ListConfigurationRevisionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurationRevisions(
-    params: awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsRequest,
+    params: ListConfigurationRevisionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsResponse, 
+      /* data */ ListConfigurationRevisionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationRevisionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationRevisionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all configurations.
     */
-  def listConfigurations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurations(): awsDashSdkLib.libRequestMod.Request[ListConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsResponse, 
+      /* data */ ListConfigurationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all configurations.
     */
-  def listConfigurations(params: awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurations(params: ListConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[ListConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurations(
-    params: awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsRequest,
+    params: ListConfigurationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsResponse, 
+      /* data */ ListConfigurationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists tags for a resource.
     */
-  def listTags(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTags(): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTags(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
+      /* data */ ListTagsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists tags for a resource.
     */
-  def listTags(params: awsDashSdkLib.clientsMqMod.MQNs.ListTagsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTags(params: ListTagsRequest): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTags(
-    params: awsDashSdkLib.clientsMqMod.MQNs.ListTagsRequest,
+    params: ListTagsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
+      /* data */ ListTagsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all ActiveMQ users.
     */
-  def listUsers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListUsersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listUsers(): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listUsers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListUsersResponse, 
+      /* data */ ListUsersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListUsersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all ActiveMQ users.
     */
-  def listUsers(params: awsDashSdkLib.clientsMqMod.MQNs.ListUsersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListUsersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listUsers(params: ListUsersRequest): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listUsers(
-    params: awsDashSdkLib.clientsMqMod.MQNs.ListUsersRequest,
+    params: ListUsersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListUsersResponse, 
+      /* data */ ListUsersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.ListUsersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Reboots a broker. Note: This API is asynchronous.
     */
-  def rebootBroker(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rebootBroker(): awsDashSdkLib.libRequestMod.Request[RebootBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rebootBroker(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerResponse, 
+      /* data */ RebootBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RebootBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Reboots a broker. Note: This API is asynchronous.
     */
-  def rebootBroker(params: awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rebootBroker(params: RebootBrokerRequest): awsDashSdkLib.libRequestMod.Request[RebootBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rebootBroker(
-    params: awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerRequest,
+    params: RebootBrokerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerResponse, 
+      /* data */ RebootBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.RebootBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RebootBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a pending configuration change to a broker.
     */
-  def updateBroker(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateBroker(): awsDashSdkLib.libRequestMod.Request[UpdateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBroker(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerResponse, 
+      /* data */ UpdateBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a pending configuration change to a broker.
     */
-  def updateBroker(params: awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateBroker(params: UpdateBrokerRequest): awsDashSdkLib.libRequestMod.Request[UpdateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBroker(
-    params: awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerRequest,
+    params: UpdateBrokerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerResponse, 
+      /* data */ UpdateBrokerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateBrokerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified configuration.
     */
-  def updateConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationResponse, 
+      /* data */ UpdateConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified configuration.
     */
-  def updateConfiguration(params: awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateConfiguration(params: UpdateConfigurationRequest): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConfiguration(
-    params: awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationRequest,
+    params: UpdateConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationResponse, 
+      /* data */ UpdateConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the information for an ActiveMQ user.
     */
-  def updateUser(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateUser(): awsDashSdkLib.libRequestMod.Request[UpdateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateUser(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.UpdateUserResponse, 
+      /* data */ UpdateUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the information for an ActiveMQ user.
     */
-  def updateUser(params: awsDashSdkLib.clientsMqMod.MQNs.UpdateUserRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateUser(params: UpdateUserRequest): awsDashSdkLib.libRequestMod.Request[UpdateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateUser(
-    params: awsDashSdkLib.clientsMqMod.MQNs.UpdateUserRequest,
+    params: UpdateUserRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMqMod.MQNs.UpdateUserResponse, 
+      /* data */ UpdateUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMqMod.MQNs.UpdateUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

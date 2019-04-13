@@ -29,3 +29,8 @@ class SharedLinkInfo ()
   override def Set(ObjVer: mfilesLib.IObjVer, FileVer: mfilesLib.IFileVer): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.SharedLinkInfo")
+@js.native
+object SharedLinkInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISharedLinkInfo]
+

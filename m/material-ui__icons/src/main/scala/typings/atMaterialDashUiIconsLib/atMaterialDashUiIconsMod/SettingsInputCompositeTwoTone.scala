@@ -16,9 +16,9 @@ class SettingsInputCompositeTwoTone protected ()
 @JSImport("@material-ui/icons", "SettingsInputCompositeTwoTone")
 @js.native
 class SettingsInputCompositeTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

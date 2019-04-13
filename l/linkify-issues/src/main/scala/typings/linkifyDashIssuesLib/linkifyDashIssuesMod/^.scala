@@ -9,13 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(input: java.lang.String): java.lang.String = js.native
-  def apply(
-    input: java.lang.String,
-    options: linkifyDashIssuesLib.linkifyDashIssuesMod.linkifyIssuesNs.TypeDomOptions
-  ): stdLib.DocumentFragment = js.native
-  def apply(
-    input: java.lang.String,
-    options: linkifyDashIssuesLib.linkifyDashIssuesMod.linkifyIssuesNs.TypeStringOptions
-  ): java.lang.String = js.native
+  def apply(input: java.lang.String, options: TypeDomOptions): stdLib.DocumentFragment = js.native
+  def apply(input: java.lang.String, options: TypeStringOptions): java.lang.String = js.native
 }
 

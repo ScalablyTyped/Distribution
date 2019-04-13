@@ -15,5 +15,6 @@ package object prettierMod {
     AST
   ]
   type Doc = prettierLib.prettierMod.docNs.buildersNs.Doc
+  type Options = stdLib.Partial[RequiredOptions]
   type SupportOptionValue = scala.Double | scala.Boolean | java.lang.String
 }

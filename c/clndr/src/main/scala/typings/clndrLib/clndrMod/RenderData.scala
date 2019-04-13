@@ -13,8 +13,8 @@ trait RenderData extends js.Object {
   var eventsThisInterval: js.UndefOr[js.Array[_]] = js.undefined
   var eventsThisMonth: js.Array[_]
   var extras: js.UndefOr[js.Any] = js.undefined
-  var intervalEnd: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
-  var intervalStart: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var intervalEnd: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
+  var intervalStart: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
   var month: java.lang.String
   var months: js.Array[Month]
   var numberOfRows: scala.Double
@@ -35,8 +35,8 @@ object RenderData {
     year: scala.Double,
     eventsThisInterval: js.Array[_] = null,
     extras: js.Any = null,
-    intervalEnd: momentLib.momentMod.momentNs.Moment = null,
-    intervalStart: momentLib.momentMod.momentNs.Moment = null
+    intervalEnd: momentLib.momentMod.Moment = null,
+    intervalStart: momentLib.momentMod.Moment = null
   ): RenderData = {
     val __obj = js.Dynamic.literal(days = days, daysOfTheWeek = daysOfTheWeek, eventsLastMonth = eventsLastMonth, eventsNextMonth = eventsNextMonth, eventsThisMonth = eventsThisMonth, month = month, months = months, numberOfRows = numberOfRows, year = year)
     if (eventsThisInterval != null) __obj.updateDynamic("eventsThisInterval")(eventsThisInterval)

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-websocket", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(app: koaLib.koaMod.namespaced[_, js.Object]): koaDashWebsocketLib.koaDashWebsocketMod.KoaWebsocketNs.App = js.native
-  def apply(app: koaLib.koaMod.namespaced[_, js.Object], wsOptions: wsLib.wsMod.WebSocketNs.ServerOptions): koaDashWebsocketLib.koaDashWebsocketMod.KoaWebsocketNs.App = js.native
+  def apply(app: koaLib.koaMod.^[_, js.Object]): App = js.native
+  def apply(app: koaLib.koaMod.^[_, js.Object], wsOptions: wsLib.wsMod.ServerOptions): App = js.native
   def apply(
-    app: koaLib.koaMod.namespaced[_, js.Object],
-    wsOptions: wsLib.wsMod.WebSocketNs.ServerOptions,
+    app: koaLib.koaMod.^[_, js.Object],
+    wsOptions: wsLib.wsMod.ServerOptions,
     httpsOptions: nodeLib.httpsMod.ServerOptions
-  ): koaDashWebsocketLib.koaDashWebsocketMod.KoaWebsocketNs.App = js.native
+  ): App = js.native
 }
 

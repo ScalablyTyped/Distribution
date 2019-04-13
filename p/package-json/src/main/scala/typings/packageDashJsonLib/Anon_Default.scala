@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Default extends js.Object {
-  def apply(packageName: java.lang.String): js.Promise[packageDashJsonLib.packageDashJsonMod.packageJsonNs.AbbreviatedMetadata] = js.native
+  def apply(packageName: java.lang.String): js.Promise[packageDashJsonLib.packageDashJsonMod.AbbreviatedMetadata] = js.native
   /**
   	Get metadata of a package from the npm registry.
   	@param packageName - Name of the package.
@@ -22,13 +22,7 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply(
-    packageName: java.lang.String,
-    options: packageDashJsonLib.packageDashJsonMod.packageJsonNs.FullMetadataOptions
-  ): js.Promise[packageDashJsonLib.packageDashJsonMod.packageJsonNs.FullMetadata] = js.native
-  def apply(
-    packageName: java.lang.String,
-    options: packageDashJsonLib.packageDashJsonMod.packageJsonNs.Options
-  ): js.Promise[packageDashJsonLib.packageDashJsonMod.packageJsonNs.AbbreviatedMetadata] = js.native
+  def apply(packageName: java.lang.String, options: packageDashJsonLib.packageDashJsonMod.FullMetadataOptions): js.Promise[packageDashJsonLib.packageDashJsonMod.FullMetadata] = js.native
+  def apply(packageName: java.lang.String, options: packageDashJsonLib.packageDashJsonMod.Options): js.Promise[packageDashJsonLib.packageDashJsonMod.AbbreviatedMetadata] = js.native
 }
 

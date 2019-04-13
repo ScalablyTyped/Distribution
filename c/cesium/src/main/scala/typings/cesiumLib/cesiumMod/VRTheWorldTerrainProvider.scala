@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "VRTheWorldTerrainProvider")
 @js.native
-class VRTheWorldTerrainProvider protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.VRTheWorldTerrainProvider {
+class VRTheWorldTerrainProvider protected () extends TerrainProvider {
   def this(options: cesiumLib.Anon_CreditEllipsoidProxy) = this()
 }
 

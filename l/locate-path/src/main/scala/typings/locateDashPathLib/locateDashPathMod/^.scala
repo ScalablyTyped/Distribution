@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(input: stdLib.Iterable[java.lang.String]): js.Promise[js.UndefOr[java.lang.String]] = js.native
-  def apply(
-    input: stdLib.Iterable[java.lang.String],
-    options: locateDashPathLib.locateDashPathMod.locatePathNs.Options
-  ): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def apply(input: stdLib.Iterable[java.lang.String], options: Options): js.Promise[js.UndefOr[java.lang.String]] = js.native
   def sync(input: stdLib.Iterable[java.lang.String]): js.UndefOr[java.lang.String] = js.native
   def sync(input: stdLib.Iterable[java.lang.String], options: locateDashPathLib.Anon_Cwd): js.UndefOr[java.lang.String] = js.native
 }

@@ -12,7 +12,7 @@ trait LinearProgressProps extends js.Object {
   var mode: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.determinate | materialDashUiLib.materialDashUiLibStrings.indeterminate
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -23,7 +23,7 @@ object LinearProgressProps {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     mode: materialDashUiLib.materialDashUiLibStrings.determinate | materialDashUiLib.materialDashUiLibStrings.indeterminate = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: scala.Int | scala.Double = null
   ): LinearProgressProps = {
     val __obj = js.Dynamic.literal()

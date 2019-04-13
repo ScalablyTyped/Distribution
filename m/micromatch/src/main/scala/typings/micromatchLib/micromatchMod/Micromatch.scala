@@ -25,17 +25,9 @@ trait Micromatch extends js.Object {
     * ```
     */
   def apply(list: js.Array[java.lang.String], patterns: java.lang.String): js.Array[java.lang.String] = js.native
-  def apply(
-    list: js.Array[java.lang.String],
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): js.Array[java.lang.String] = js.native
+  def apply(list: js.Array[java.lang.String], patterns: java.lang.String, options: Options): js.Array[java.lang.String] = js.native
   def apply(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def apply(
-    list: js.Array[java.lang.String],
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): js.Array[java.lang.String] = js.native
+  def apply(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String], options: Options): js.Array[java.lang.String] = js.native
   /**
     * Returns true if **all** of the given `patterns` match the specified string.
     *
@@ -63,29 +55,13 @@ trait Micromatch extends js.Object {
     * ```
     */
   def all(str: java.lang.String, patterns: java.lang.String): scala.Boolean = js.native
-  def all(
-    str: java.lang.String,
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def all(str: java.lang.String, patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def all(str: java.lang.String, patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def all(
-    str: java.lang.String,
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def all(str: java.lang.String, patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   def all(str: js.Array[java.lang.String], patterns: java.lang.String): scala.Boolean = js.native
-  def all(
-    str: js.Array[java.lang.String],
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def all(str: js.Array[java.lang.String], patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def all(str: js.Array[java.lang.String], patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def all(
-    str: js.Array[java.lang.String],
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def all(str: js.Array[java.lang.String], patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   /**
     * Returns true if **any** of the given glob `patterns` match the specified `string`.
     *
@@ -106,29 +82,13 @@ trait Micromatch extends js.Object {
     * ```
     */
   def any(str: java.lang.String, patterns: java.lang.String): scala.Boolean = js.native
-  def any(
-    str: java.lang.String,
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def any(str: java.lang.String, patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def any(str: java.lang.String, patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def any(
-    str: java.lang.String,
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def any(str: java.lang.String, patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   def any(str: js.Array[java.lang.String], patterns: java.lang.String): scala.Boolean = js.native
-  def any(
-    str: js.Array[java.lang.String],
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def any(str: js.Array[java.lang.String], patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def any(str: js.Array[java.lang.String], patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def any(
-    str: js.Array[java.lang.String],
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def any(str: js.Array[java.lang.String], patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   /**
     * Expand the given brace `pattern`.
     *
@@ -146,7 +106,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def braces(pattern: java.lang.String): js.Array[java.lang.String] = js.native
-  def braces(pattern: java.lang.String, options: bracesLib.bracesMod.bracesNs.Options): js.Array[java.lang.String] = js.native
+  def braces(pattern: java.lang.String, options: bracesLib.bracesMod.Options): js.Array[java.lang.String] = js.native
   /**
     * Returns an array of matches captured by `pattern` in `string, or`null` if the pattern did not match.
     *
@@ -167,11 +127,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def capture(pattern: java.lang.String, string: java.lang.String): js.Array[java.lang.String] | scala.Null = js.native
-  def capture(
-    pattern: java.lang.String,
-    string: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): js.Array[java.lang.String] | scala.Null = js.native
+  def capture(pattern: java.lang.String, string: java.lang.String, options: Options): js.Array[java.lang.String] | scala.Null = js.native
   /**
     * Clear the regex cache.
     *
@@ -182,7 +138,7 @@ trait Micromatch extends js.Object {
     */
   def clearCache(): scala.Unit = js.native
   def compile(ast: java.lang.String): js.Object = js.native
-  def compile(ast: java.lang.String, options: micromatchLib.micromatchMod.micromatchNs.Options): js.Object = js.native
+  def compile(ast: java.lang.String, options: Options): js.Object = js.native
   /**
     * Compile the given `ast` or string with the given `options`.
     *
@@ -212,7 +168,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def compile(ast: js.Object): js.Object = js.native
-  def compile(ast: js.Object, options: micromatchLib.micromatchMod.micromatchNs.Options): js.Object = js.native
+  def compile(ast: js.Object, options: Options): js.Object = js.native
   /**
     * Returns true if the given `string` contains the given pattern. Similar to [.isMatch](#isMatch) but the pattern can match any part of the string.
     *
@@ -233,17 +189,9 @@ trait Micromatch extends js.Object {
     * ```
     */
   def contains(str: java.lang.String, patterns: java.lang.String): scala.Boolean = js.native
-  def contains(
-    str: java.lang.String,
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def contains(str: java.lang.String, patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def contains(str: java.lang.String, patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def contains(
-    str: java.lang.String,
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def contains(str: java.lang.String, patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   /**
     * Parses the given glob `pattern` and returns an array of abstract syntax trees (ASTs), with the compiled `output` and optional source `map` on each AST.
     *
@@ -283,7 +231,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def create(pattern: java.lang.String): js.Object = js.native
-  def create(pattern: java.lang.String, options: micromatchLib.micromatchMod.micromatchNs.Options): js.Object = js.native
+  def create(pattern: java.lang.String, options: Options): js.Object = js.native
   /**
     * Returns true if every string in the given `list` matches any of the given glob `patterns`.
     *
@@ -308,29 +256,13 @@ trait Micromatch extends js.Object {
     * ```
     */
   def every(list: java.lang.String, patterns: java.lang.String): scala.Boolean = js.native
-  def every(
-    list: java.lang.String,
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def every(list: java.lang.String, patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def every(list: java.lang.String, patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def every(
-    list: java.lang.String,
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def every(list: java.lang.String, patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   def every(list: js.Array[java.lang.String], patterns: java.lang.String): scala.Boolean = js.native
-  def every(
-    list: js.Array[java.lang.String],
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def every(list: js.Array[java.lang.String], patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def every(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def every(
-    list: js.Array[java.lang.String],
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def every(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   /**
     * Returns true if the specified `string` matches the given glob `pattern`.
     *
@@ -351,11 +283,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def isMatch(string: java.lang.String, pattern: java.lang.String): scala.Boolean = js.native
-  def isMatch(
-    string: java.lang.String,
-    pattern: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def isMatch(string: java.lang.String, pattern: java.lang.String, options: Options): scala.Boolean = js.native
   /**
     * Create a regular expression from the given glob `pattern`.
     *
@@ -373,7 +301,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def makeRe(pattern: java.lang.String): stdLib.RegExp = js.native
-  def makeRe(pattern: java.lang.String, options: micromatchLib.micromatchMod.micromatchNs.Options): stdLib.RegExp = js.native
+  def makeRe(pattern: java.lang.String, options: Options): stdLib.RegExp = js.native
   /**
     * Similar to the main function, but `pattern` must be a string.
     *
@@ -392,11 +320,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def `match`(list: js.Array[java.lang.String], pattern: java.lang.String): js.Array[java.lang.String] = js.native
-  def `match`(
-    list: js.Array[java.lang.String],
-    pattern: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): js.Array[java.lang.String] = js.native
+  def `match`(list: js.Array[java.lang.String], pattern: java.lang.String, options: Options): js.Array[java.lang.String] = js.native
   /**
     * Filter the keys of the given object with the given `glob` pattern and `options`. Does not attempt to match nested keys.
     * If you need this feature, use [glob-object](https://github.com/jonschlinkert/glob-object) instead.
@@ -417,13 +341,9 @@ trait Micromatch extends js.Object {
     * ```
     */
   def matchKeys[T](`object`: T, patterns: java.lang.String): stdLib.Partial[T] = js.native
-  def matchKeys[T](`object`: T, patterns: java.lang.String, options: micromatchLib.micromatchMod.micromatchNs.Options): stdLib.Partial[T] = js.native
+  def matchKeys[T](`object`: T, patterns: java.lang.String, options: Options): stdLib.Partial[T] = js.native
   def matchKeys[T](`object`: T, patterns: js.Array[java.lang.String]): stdLib.Partial[T] = js.native
-  def matchKeys[T](
-    `object`: T,
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): stdLib.Partial[T] = js.native
+  def matchKeys[T](`object`: T, patterns: js.Array[java.lang.String], options: Options): stdLib.Partial[T] = js.native
   /**
     * Returns a memoized matcher function from the given glob `pattern` and `options`. The returned function takes a string to match as its only argument and returns true if the string is a match.
     *
@@ -444,7 +364,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def matcher(pattern: java.lang.String): js.Function1[/* str */ java.lang.String, scala.Boolean] = js.native
-  def matcher(pattern: java.lang.String, options: micromatchLib.micromatchMod.micromatchNs.Options): js.Function1[/* str */ java.lang.String, scala.Boolean] = js.native
+  def matcher(pattern: java.lang.String, options: Options): js.Function1[/* str */ java.lang.String, scala.Boolean] = js.native
   /**
     * Returns a list of strings that _**do not match any**_ of the given `patterns`.
     *
@@ -463,17 +383,9 @@ trait Micromatch extends js.Object {
     * ```
     */
   def not(list: js.Array[java.lang.String], patterns: java.lang.String): js.Array[java.lang.String] = js.native
-  def not(
-    list: js.Array[java.lang.String],
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): js.Array[java.lang.String] = js.native
+  def not(list: js.Array[java.lang.String], patterns: java.lang.String, options: Options): js.Array[java.lang.String] = js.native
   def not(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def not(
-    list: js.Array[java.lang.String],
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): js.Array[java.lang.String] = js.native
+  def not(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String], options: Options): js.Array[java.lang.String] = js.native
   /**
     * Parse the given `str` with the given `options`.
     *
@@ -502,7 +414,7 @@ trait Micromatch extends js.Object {
     * ```
     */
   def parse(str: java.lang.String): js.Object = js.native
-  def parse(str: java.lang.String, options: micromatchLib.micromatchMod.micromatchNs.Options): js.Object = js.native
+  def parse(str: java.lang.String, options: Options): js.Object = js.native
   /**
     * Returns true if some of the strings in the given `list` match any of the given glob `patterns`.
     *
@@ -523,28 +435,12 @@ trait Micromatch extends js.Object {
     * ```
     */
   def some(list: java.lang.String, patterns: java.lang.String): scala.Boolean = js.native
-  def some(
-    list: java.lang.String,
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def some(list: java.lang.String, patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def some(list: java.lang.String, patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def some(
-    list: java.lang.String,
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def some(list: java.lang.String, patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
   def some(list: js.Array[java.lang.String], patterns: java.lang.String): scala.Boolean = js.native
-  def some(
-    list: js.Array[java.lang.String],
-    patterns: java.lang.String,
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def some(list: js.Array[java.lang.String], patterns: java.lang.String, options: Options): scala.Boolean = js.native
   def some(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String]): scala.Boolean = js.native
-  def some(
-    list: js.Array[java.lang.String],
-    patterns: js.Array[java.lang.String],
-    options: micromatchLib.micromatchMod.micromatchNs.Options
-  ): scala.Boolean = js.native
+  def some(list: js.Array[java.lang.String], patterns: js.Array[java.lang.String], options: Options): scala.Boolean = js.native
 }
 

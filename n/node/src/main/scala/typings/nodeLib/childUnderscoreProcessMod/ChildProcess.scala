@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ChildProcess
   extends nodeLib.eventsMod.EventEmitter {
-  val channel: js.UndefOr[nodeLib.streamMod.internalNs.Pipe | scala.Null] = js.native
+  val channel: js.UndefOr[nodeLib.streamMod.Pipe | scala.Null] = js.native
   val connected: scala.Boolean = js.native
   val killed: scala.Boolean = js.native
   val pid: scala.Double = js.native

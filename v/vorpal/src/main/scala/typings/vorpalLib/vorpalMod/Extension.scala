@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vorpal", "Extension")
 @js.native
-class Extension ()
-  extends vorpalLib.vorpalMod.VorpalNs.Extension
+class Extension () extends js.Object
 

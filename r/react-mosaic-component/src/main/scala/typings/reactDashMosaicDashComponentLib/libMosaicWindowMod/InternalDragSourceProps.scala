@@ -11,15 +11,15 @@ trait InternalDragSourceProps extends js.Object {
   var connectDragPreview_Original: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview = js.native
   @JSName("connectDragSource")
   var connectDragSource_Original: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragSource = js.native
-  def connectDragPreview(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def connectDragPreview(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def connectDragPreview(
     elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement,
     options: reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def connectDragSource(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def connectDragSource(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def connectDragSource(
     elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement,
     options: reactDashDndLib.libCjsInterfacesOptionsMod.DragSourceOptions
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

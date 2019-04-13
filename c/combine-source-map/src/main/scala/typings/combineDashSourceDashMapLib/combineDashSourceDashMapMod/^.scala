@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("combine-source-map", JSImport.Namespace)
 @js.native
+class ^ () extends Combiner {
+  def this(file: java.lang.String) = this()
+  def this(file: java.lang.String, sourceRoot: java.lang.String) = this()
+}
+
+@JSImport("combine-source-map", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
   /**
     * Create a source map combiner that accepts multiple files, offsets them and then combines them into one source map.

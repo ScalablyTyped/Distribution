@@ -130,18 +130,6 @@ trait Anon_ACCURACYBEST extends js.Object {
   		 */
   val ERROR_REGION_MONITORING_FAILURE: scala.Double = js.native
   /**
-  		 * Specifies the GPS location provider.
-  		 */
-  val PROVIDER_GPS: java.lang.String = js.native
-  /**
-  		 * Specifies the network location provider.
-  		 */
-  val PROVIDER_NETWORK: java.lang.String = js.native
-  /**
-  		 * Specifies the passive location provider.
-  		 */
-  val PROVIDER_PASSIVE: java.lang.String = js.native
-  /**
   		 * Specifies the requested accuracy for location updates.
   		 */
   var accuracy: scala.Double = js.native

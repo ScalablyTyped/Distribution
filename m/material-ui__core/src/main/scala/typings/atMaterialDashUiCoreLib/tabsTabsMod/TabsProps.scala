@@ -9,22 +9,18 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, 'classes' | 'onChange' | 'action' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps[P]} */ trait TabsProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TabsClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var ScrollButtonComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var ScrollButtonComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var TabIndicatorProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps]] = js.undefined
   var action: js.UndefOr[js.Function1[/* actions */ TabsActions, scala.Unit]] = js.undefined
   var centered: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TabsProps]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[TabsProps]] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var indicatorColor: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | java.lang.String
   ] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
-      /* value */ js.Any, 
-      scala.Unit
-    ]
+    js.Function2[/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ js.Any, scala.Unit]
   ] = js.undefined
   var scrollButtons: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off
@@ -44,21 +40,21 @@ object TabsProps {
   @scala.inline
   def apply(
     value: js.Any,
-    ScrollButtonComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    ScrollButtonComponent: reactLib.reactMod.ReactType[_] = null,
     TabIndicatorProps: stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps] = null,
     action: /* actions */ TabsActions => scala.Unit = null,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TabsClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[TabsProps] = null,
+    component: reactLib.reactMod.ReactType[TabsProps] = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     indicatorColor: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* value */ js.Any) => scala.Unit = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ js.Any) => scala.Unit = null,
     scrollButtons: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
     scrollable: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     textColor: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | java.lang.String = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.scrollable | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth = null,
     width: java.lang.String = null

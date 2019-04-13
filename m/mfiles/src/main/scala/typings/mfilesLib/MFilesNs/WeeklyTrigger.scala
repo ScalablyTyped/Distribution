@@ -15,3 +15,8 @@ class WeeklyTrigger ()
   override var WeeksInterval: scala.Double = js.native
 }
 
+@JSGlobal("MFiles.WeeklyTrigger")
+@js.native
+object WeeklyTrigger
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IWeeklyTrigger]
+

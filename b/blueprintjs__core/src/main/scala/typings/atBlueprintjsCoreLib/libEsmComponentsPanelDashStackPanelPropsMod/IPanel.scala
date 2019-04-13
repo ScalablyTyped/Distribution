@@ -11,7 +11,7 @@ trait IPanel[P] extends js.Object {
     * the component class or SFC, _not_ a JSX element, so it can be re-created
     * dynamically when needed.
     */
-  var component: reactLib.reactMod.ReactNs.ComponentType[P with IPanelProps]
+  var component: reactLib.reactMod.ComponentType[P with IPanelProps]
   /**
     * The props passed to the component type when it is rendered. The methods
     * in `IPanelProps` will be injected by `PanelStack`.
@@ -21,15 +21,15 @@ trait IPanel[P] extends js.Object {
     * The title to be displayed above this panel. It is also used as the text
     * of the back button for any panel opened by this panel.
     */
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object IPanel {
   @scala.inline
   def apply[P](
-    component: reactLib.reactMod.ReactNs.ComponentType[P with IPanelProps],
+    component: reactLib.reactMod.ComponentType[P with IPanelProps],
     props: P = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): IPanel[P] = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])

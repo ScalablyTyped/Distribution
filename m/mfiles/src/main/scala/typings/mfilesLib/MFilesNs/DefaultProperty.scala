@@ -65,3 +65,8 @@ class DefaultProperty ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.DefaultProperty")
+@js.native
+object DefaultProperty
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IDefaultProperty]
+

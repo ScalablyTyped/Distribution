@@ -16,9 +16,9 @@ class SignalWifi1BarLockRounded protected ()
 @JSImport("@material-ui/icons", "SignalWifi1BarLockRounded")
 @js.native
 class SignalWifi1BarLockRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "PolylineVolumeGeometry")
 @js.native
-class PolylineVolumeGeometry protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.PolylineVolumeGeometry {
+class PolylineVolumeGeometry protected () extends Packable {
   def this(options: cesiumLib.Anon_CornerTypeEllipsoidGranularity) = this()
 }
 
@@ -16,13 +15,13 @@ class PolylineVolumeGeometry protected ()
 @JSImport("cesium", "PolylineVolumeGeometry")
 @js.native
 object PolylineVolumeGeometry extends js.Object {
-  def createGeometry(polylineVolumeGeometry: cesiumLib.cesiumMod.CesiumNs.PolylineVolumeGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
-  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.PolylineVolumeGeometry = js.native
-  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.PolylineVolumeGeometry = js.native
+  def createGeometry(polylineVolumeGeometry: cesiumLib.cesiumMod.PolylineVolumeGeometry): cesiumLib.cesiumMod.Geometry = js.native
+  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.PolylineVolumeGeometry = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.PolylineVolumeGeometry = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.PolylineVolumeGeometry
-  ): cesiumLib.cesiumMod.CesiumNs.PolylineVolumeGeometry = js.native
+    result: cesiumLib.cesiumMod.PolylineVolumeGeometry
+  ): cesiumLib.cesiumMod.PolylineVolumeGeometry = js.native
 }
 

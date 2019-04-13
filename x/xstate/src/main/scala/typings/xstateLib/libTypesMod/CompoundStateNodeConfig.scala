@@ -17,6 +17,8 @@ object CompoundStateNodeConfig {
     context: TContext = null,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     delimiter: java.lang.String = null,
+    entry: SingleOrArray[Action[TContext, TEvent]] = null,
+    exit: SingleOrArray[Action[TContext, TEvent]] = null,
     history: xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep | scala.Boolean = null,
     id: java.lang.String = null,
     initial: java.lang.String = null,
@@ -40,6 +42,8 @@ object CompoundStateNodeConfig {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (initial != null) __obj.updateDynamic("initial")(initial)

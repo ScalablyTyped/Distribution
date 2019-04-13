@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildDashEs5HocMod {
-  type TDecComponent[P] = reactLib.reactMod.ReactNs.SFC[P] | (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState])
+  type TDecComponent[P] = reactLib.reactMod.SFC[P] | (reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState])
 }

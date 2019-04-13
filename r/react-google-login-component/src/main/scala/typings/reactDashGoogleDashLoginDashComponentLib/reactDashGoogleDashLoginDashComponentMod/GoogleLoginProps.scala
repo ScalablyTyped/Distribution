@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GoogleLoginProps
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
+  extends reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
   var buttonText: js.UndefOr[java.lang.String] = js.undefined
   var fetchBasicProfile: js.UndefOr[scala.Boolean] = js.undefined
   var prompt: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ object GoogleLoginProps {
   def apply(
     responseHandler: GoogleLoginInfo => scala.Unit,
     socialId: java.lang.String,
-    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
+    ButtonHTMLAttributes: reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
     buttonText: java.lang.String = null,
     fetchBasicProfile: js.UndefOr[scala.Boolean] = js.undefined,
     prompt: java.lang.String = null,

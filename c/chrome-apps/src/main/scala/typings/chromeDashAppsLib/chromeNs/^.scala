@@ -9,16 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // #endregion
-  // #region classes
-  /////////////
-  // CLASSES //
-  /////////////
-  /**
-    * New Chrome Event
-    * @constructor
-    */
-  val Event: chromeDashAppsLib.Anon_Event = js.native
-  // #endregion
   // #region placeholders
   //////////////////
   // PLACEHOLDERS //

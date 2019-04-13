@@ -50,3 +50,13 @@ class ObservableCls[T] protected () extends Observable[T] {
   def this(subscriber: Subscriber[T]) = this()
 }
 
+@JSImport("zen-observable-ts/lib/zenObservable", "Observable")
+@js.native
+object Observable
+  extends org.scalablytyped.runtime.Instantiable1[/* subscriber */ Subscriber[js.Object], Observable[js.Object]] {
+  def from[R](observable: stdLib.ArrayLike[R]): zenDashObservableDashTsLib.libZenObservableMod.Observable[R] = js.native
+  def from[R](observable: zenDashObservableDashTsLib.libTypesMod.ZenObservableNs.ObservableLike[R]): zenDashObservableDashTsLib.libZenObservableMod.Observable[R] = js.native
+  def from[R](observable: zenDashObservableDashTsLib.libZenObservableMod.Observable[R]): zenDashObservableDashTsLib.libZenObservableMod.Observable[R] = js.native
+  def of[R](args: R*): zenDashObservableDashTsLib.libZenObservableMod.Observable[R] = js.native
+}
+

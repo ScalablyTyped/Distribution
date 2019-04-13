@@ -16,10 +16,10 @@ object HuePickerProps {
   def apply(
     color: reactDashColorLib.reactDashColorMod.Color = null,
     height: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[HuePicker] = null,
+    ref: reactLib.reactMod.LegacyRef[HuePicker] = null,
     width: java.lang.String = null
   ): HuePickerProps = {
     val __obj = js.Dynamic.literal()

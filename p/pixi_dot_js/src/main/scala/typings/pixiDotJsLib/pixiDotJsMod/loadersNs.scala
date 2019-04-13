@@ -99,9 +99,5 @@ object loadersNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE with java.lang.String] = js.native
   }
   
-  type LOAD_TYPE = pixiDotJsLib.PIXINs.loadersNs.LOAD_TYPE
-  type STATUS_FLAGS = pixiDotJsLib.PIXINs.loadersNs.STATUS_FLAGS
-  type TYPE = pixiDotJsLib.PIXINs.loadersNs.TYPE
-  type XHR_RESPONSE_TYPE = pixiDotJsLib.PIXINs.loadersNs.XHR_RESPONSE_TYPE
 }
 

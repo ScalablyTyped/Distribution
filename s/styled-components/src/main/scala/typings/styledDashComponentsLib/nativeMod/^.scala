@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("styled-components/native", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ThemeConsumer: reactLib.reactMod.ReactNs.Consumer[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]] with (js.Function1[
-    /* props */ reactLib.reactMod.ReactNs.ConsumerProps[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]], 
-    reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+  val ThemeConsumer: reactLib.reactMod.Consumer[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]] with (js.Function1[
+    /* props */ reactLib.reactMod.ConsumerProps[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]], 
+    reactLib.reactMod.ReactElement[_] | scala.Null
   ]) = js.native
-  val ThemeContext: reactLib.reactMod.ReactNs.Context[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]] = js.native
+  val ThemeContext: reactLib.reactMod.Context[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]] = js.native
   val ThemeProvider: styledDashComponentsLib.styledDashComponentsMod.ThemeProviderComponent[
     AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme], 
     AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]

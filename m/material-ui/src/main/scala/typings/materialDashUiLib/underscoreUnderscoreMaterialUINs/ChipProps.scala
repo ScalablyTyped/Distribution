@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait ChipProps extends js.Object {
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var containerElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
-  var deleteIconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerElement: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
+  var deleteIconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var labelColor: js.UndefOr[java.lang.String] = js.undefined
-  var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[Chip]] = js.undefined
-  var onRequestDelete: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[Chip]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var labelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[Chip]] = js.undefined
+  var onRequestDelete: js.UndefOr[reactLib.reactMod.TouchEventHandler[Chip]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ChipProps {
@@ -22,13 +22,13 @@ object ChipProps {
   def apply(
     backgroundColor: java.lang.String = null,
     className: java.lang.String = null,
-    containerElement: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
-    deleteIconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerElement: reactLib.reactMod.ReactNode | java.lang.String = null,
+    deleteIconStyle: reactLib.reactMod.CSSProperties = null,
     labelColor: java.lang.String = null,
-    labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[Chip] = null,
-    onRequestDelete: reactLib.reactMod.ReactNs.TouchEventHandler[Chip] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    labelStyle: reactLib.reactMod.CSSProperties = null,
+    onClick: reactLib.reactMod.MouseEventHandler[Chip] = null,
+    onRequestDelete: reactLib.reactMod.TouchEventHandler[Chip] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): ChipProps = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)

@@ -10,7 +10,7 @@ trait Anon_BottomRadius extends js.Object {
   var length: scala.Double
   var slices: js.UndefOr[scala.Double] = js.undefined
   var topRadius: scala.Double
-  var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.VertexFormat] = js.undefined
+  var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.VertexFormat] = js.undefined
 }
 
 object Anon_BottomRadius {
@@ -20,7 +20,7 @@ object Anon_BottomRadius {
     length: scala.Double,
     topRadius: scala.Double,
     slices: scala.Int | scala.Double = null,
-    vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
+    vertexFormat: cesiumLib.cesiumMod.VertexFormat = null
   ): Anon_BottomRadius = {
     val __obj = js.Dynamic.literal(bottomRadius = bottomRadius, length = length, topRadius = topRadius)
     if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])

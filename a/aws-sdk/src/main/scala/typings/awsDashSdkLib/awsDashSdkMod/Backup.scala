@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Backup ()
   extends awsDashSdkLib.clientsAllMod.Backup {
-  def this(options: awsDashSdkLib.clientsBackupMod.BackupNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsBackupMod.ClientConfiguration) = this()
 }
 

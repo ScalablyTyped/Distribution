@@ -24,3 +24,11 @@ object Typography {
   }
 }
 
+@JSImport("@storybook/theming/dist/base", "typography")
+@js.native
+object typography extends js.Object {
+  var fonts: atStorybookThemingLib.Anon_Base = js.native
+  var size: atStorybookThemingLib.Anon_Code = js.native
+  var weight: atStorybookThemingLib.Anon_Black = js.native
+}
+

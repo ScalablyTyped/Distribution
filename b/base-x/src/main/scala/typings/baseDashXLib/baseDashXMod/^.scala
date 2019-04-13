@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("base-x", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(ALPHABET: java.lang.String): baseDashXLib.baseDashXMod.baseXNs.BaseConverter = js.native
+  def apply(ALPHABET: java.lang.String): BaseConverter = js.native
 }
 

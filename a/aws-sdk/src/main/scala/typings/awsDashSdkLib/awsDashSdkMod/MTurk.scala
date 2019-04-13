@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MTurk ()
   extends awsDashSdkLib.clientsAllMod.MTurk {
-  def this(options: awsDashSdkLib.clientsMturkMod.MTurkNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMturkMod.ClientConfiguration) = this()
 }
 

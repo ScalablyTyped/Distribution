@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   *   promises library. Mongoose 5.0 will not support mpromise.
   */
 class MongoosePromise[T] ()
-  extends mpromiseLib.mpromiseMod.namespaced[T, js.Any] {
+  extends mpromiseLib.mpromiseMod.^[T, js.Any] {
   def this(fn: js.Function2[/* err */ js.Any, /* repeated */ T, scala.Unit]) = this()
   /**
     * Adds a single function as a listener to both err and complete.

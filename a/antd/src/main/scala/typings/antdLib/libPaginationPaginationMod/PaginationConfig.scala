@@ -19,7 +19,7 @@ object PaginationConfig {
     defaultCurrent: scala.Int | scala.Double = null,
     defaultPageSize: scala.Int | scala.Double = null,
     hideOnSinglePage: js.UndefOr[scala.Boolean] = js.undefined,
-    itemRender: (/* page */ scala.Double, /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, /* originalElement */ reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    itemRender: (/* page */ scala.Double, /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, /* originalElement */ reactLib.reactMod.ReactElement[stdLib.HTMLElement]) => reactLib.reactMod.ReactNode = null,
     locale: js.Object = null,
     onChange: (/* page */ scala.Double, /* pageSize */ js.UndefOr[scala.Double]) => scala.Unit = null,
     onShowSizeChange: (/* current */ scala.Double, /* size */ scala.Double) => scala.Unit = null,
@@ -31,10 +31,10 @@ object PaginationConfig {
     selectPrefixCls: java.lang.String = null,
     showQuickJumper: scala.Boolean | antdLib.Anon_GoButton = null,
     showSizeChanger: js.UndefOr[scala.Boolean] = js.undefined,
-    showTotal: (/* total */ scala.Double, /* range */ js.Tuple2[scala.Double, scala.Double]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    showTotal: (/* total */ scala.Double, /* range */ js.Tuple2[scala.Double, scala.Double]) => reactLib.reactMod.ReactNode = null,
     simple: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     total: scala.Int | scala.Double = null
   ): PaginationConfig = {
     val __obj = js.Dynamic.literal()

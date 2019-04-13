@@ -10,18 +10,18 @@ trait LinearComponentProps extends ChartComponentProps
 object LinearComponentProps {
   @scala.inline
   def apply(
-    data: ChartData[chartDotJsLib.chartDotJsMod.ChartNs.ChartData],
+    data: ChartData[chartDotJsLib.chartDotJsMod.ChartData],
     datasetKeyProvider: /* any */ js.Any => _ = null,
     getDatasetAtEvent: /* e */ js.Any => scala.Unit = null,
     getElementAtEvent: /* e */ js.Any => scala.Unit = null,
     getElementsAtEvent: /* e */ js.Any => scala.Unit = null,
     height: scala.Int | scala.Double = null,
-    legend: chartDotJsLib.chartDotJsMod.ChartNs.ChartLegendOptions = null,
+    legend: chartDotJsLib.chartDotJsMod.ChartLegendOptions = null,
     onElementsClick: /* e */ js.Any => scala.Unit = null,
-    options: chartDotJsLib.chartDotJsMod.ChartNs.ChartOptions = null,
+    options: chartDotJsLib.chartDotJsMod.ChartOptions = null,
     plugins: js.Array[js.Object] = null,
     redraw: js.UndefOr[scala.Boolean] = js.undefined,
-    `type`: chartDotJsLib.chartDotJsMod.ChartNs.ChartType = null,
+    `type`: chartDotJsLib.chartDotJsMod.ChartType = null,
     width: scala.Int | scala.Double = null
   ): LinearComponentProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])

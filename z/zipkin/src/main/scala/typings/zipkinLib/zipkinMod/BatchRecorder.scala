@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("zipkin", "BatchRecorder")
 @js.native
-class BatchRecorder protected ()
-  extends zipkinLib.zipkinMod.zipkinNs.BatchRecorder {
+class BatchRecorder protected () extends Recorder {
   def this(args: zipkinLib.Anon_Logger) = this()
   /* CompleteClass */
-  override def record(rec: zipkinLib.zipkinMod.zipkinNs.Record): scala.Unit = js.native
+  override def record(rec: Record): scala.Unit = js.native
 }
 

@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabStackProps extends js.Object {
-  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var forceSync: js.UndefOr[scala.Boolean] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
-  def render(props: TabsRendererProps): reactLib.reactMod.ReactNs.ReactNode
+  def render(props: TabsRendererProps): reactLib.reactMod.ReactNode
 }
 
 object TabStackProps {
   @scala.inline
   def apply(
-    render: TabsRendererProps => reactLib.reactMod.ReactNs.ReactNode,
-    children: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    render: TabsRendererProps => reactLib.reactMod.ReactNode,
+    children: js.Array[reactLib.reactMod.ReactNode] = null,
     forceSync: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null

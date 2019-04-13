@@ -16,7 +16,7 @@ object firestoreNs extends js.Object {
       * @param other The `Blob` to compare against.
       * @return true if this `Blob` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob): scala.Boolean = js.native
+    def isEqual(other: Blob): scala.Boolean = js.native
     /**
       * Returns the bytes of a Blob as a Base64-encoded string.
       *
@@ -34,15 +34,14 @@ object firestoreNs extends js.Object {
   }
   
   @js.native
-  class CollectionReference protected ()
-    extends firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query {
+  class CollectionReference protected () extends Query {
     /** The collection's identifier. */
     val id: java.lang.String = js.native
     /**
       * A reference to the containing `DocumentReference` if this is a subcollection.
       * If this isn't a subcollection, the reference is null.
       */
-    val parent: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference | scala.Null = js.native
+    val parent: DocumentReference | scala.Null = js.native
     /**
       * A string representing the path of the referenced collection (relative
       * to the root of the database).
@@ -56,7 +55,7 @@ object firestoreNs extends js.Object {
       * @return A Promise resolved with a `DocumentReference` pointing to the
       * newly created document after it has been written to the backend.
       */
-    def add(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference] = js.native
+    def add(data: DocumentData): js.Promise[DocumentReference] = js.native
     /**
       * Get a `DocumentReference` for the document within the collection at the
       * specified path. If no path is specified, an automatically-generated
@@ -65,20 +64,20 @@ object firestoreNs extends js.Object {
       * @param documentPath A slash-separated path to a document.
       * @return The `DocumentReference` instance.
       */
-    def doc(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference = js.native
-    def doc(documentPath: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference = js.native
+    def doc(): DocumentReference = js.native
+    def doc(documentPath: java.lang.String): DocumentReference = js.native
     /**
       * Returns true if this `CollectionReference` is equal to the provided one.
       *
       * @param other The `CollectionReference` to compare against.
       * @return true if this `CollectionReference` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.CollectionReference): scala.Boolean = js.native
+    def isEqual(other: CollectionReference): scala.Boolean = js.native
   }
   
   trait DocumentChange extends js.Object {
     /** The document affected by this change. */
-    val doc: firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot
+    val doc: QueryDocumentSnapshot
     /**
       * The index of the changed document in the result set immediately after
       * this `DocumentChange` (i.e. supposing that all prior `DocumentChange`
@@ -93,7 +92,7 @@ object firestoreNs extends js.Object {
       */
     val oldIndex: scala.Double
     /** The type of change ('added', 'modified', or 'removed'). */
-    val `type`: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChangeType
+    val `type`: DocumentChangeType
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -103,16 +102,13 @@ object firestoreNs extends js.Object {
   */
   trait DocumentChangeType extends js.Object
   
-  trait DocumentData
-    extends /* field */ org.scalablytyped.runtime.StringDictionary[js.Any]
-  
   @js.native
   class DocumentReference protected () extends js.Object {
     /**
       * The {@link firebase.firestore.Firestore} the document is in.
       * This is useful for performing transactions, for example.
       */
-    val firestore: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
+    val firestore: Firestore = js.native
     /**
       * The document's identifier within its collection.
       */
@@ -120,7 +116,7 @@ object firestoreNs extends js.Object {
     /**
       * The Collection this `DocumentReference` belongs to.
       */
-    val parent: firebaseLib.firebaseMod.firebaseNs.firestoreNs.CollectionReference = js.native
+    val parent: CollectionReference = js.native
     /**
       * A string representing the path of the referenced document (relative
       * to the root of the database).
@@ -133,7 +129,7 @@ object firestoreNs extends js.Object {
       * @param collectionPath A slash-separated path to a collection.
       * @return The `CollectionReference` instance.
       */
-    def collection(collectionPath: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.CollectionReference = js.native
+    def collection(collectionPath: java.lang.String): CollectionReference = js.native
     /**
       * Deletes the document referred to by this `DocumentReference`.
       *
@@ -154,15 +150,15 @@ object firestoreNs extends js.Object {
       * @return A Promise resolved with a DocumentSnapshot containing the
       * current document contents.
       */
-    def get(): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
-    def get(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.GetOptions): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
+    def get(): js.Promise[DocumentSnapshot] = js.native
+    def get(options: GetOptions): js.Promise[DocumentSnapshot] = js.native
     /**
       * Returns true if this `DocumentReference` is equal to the provided one.
       *
       * @param other The `DocumentReference` to compare against.
       * @return true if this `DocumentReference` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference): scala.Boolean = js.native
+    def isEqual(other: DocumentReference): scala.Boolean = js.native
     /**
       * Attaches a listener for DocumentSnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
@@ -191,24 +187,13 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
+    def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
-          scala.Unit
-        ]
-    ): js.Function0[scala.Unit] = js.native
-    def onSnapshot(
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
-          scala.Unit
-        ],
+      onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
-          scala.Unit
-        ],
+      onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
@@ -225,10 +210,7 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
-    def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      observer: firebaseLib.Anon_CompleteError
-    ): js.Function0[scala.Unit] = js.native
+    def onSnapshot(options: SnapshotListenOptions, observer: firebaseLib.Anon_CompleteError): js.Function0[scala.Unit] = js.native
     /**
       * Attaches a listener for DocumentSnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
@@ -245,27 +227,15 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
+    def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
-          scala.Unit
-        ]
-    ): js.Function0[scala.Unit] = js.native
-    def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
-          scala.Unit
-        ],
+      options: SnapshotListenOptions,
+      onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
-          scala.Unit
-        ],
+      options: SnapshotListenOptions,
+      onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
@@ -279,11 +249,8 @@ object firestoreNs extends js.Object {
       * @return A Promise resolved once the data has been successfully written
       * to the backend (Note that it won't resolve while you're offline).
       */
-    def set(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData): js.Promise[scala.Unit] = js.native
-    def set(
-      data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData,
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SetOptions
-    ): js.Promise[scala.Unit] = js.native
+    def set(data: DocumentData): js.Promise[scala.Unit] = js.native
+    def set(data: DocumentData, options: SetOptions): js.Promise[scala.Unit] = js.native
     /**
       * Updates fields in the document referred to by this `DocumentReference`.
       * The update will fail if applied to a document that does not exist.
@@ -294,12 +261,8 @@ object firestoreNs extends js.Object {
       * @return A Promise resolved once the data has been successfully written
       * to the backend (Note that it won't resolve while you're offline).
       */
-    def update(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.UpdateData): js.Promise[scala.Unit] = js.native
-    def update(
-      field: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath,
-      value: js.Any,
-      moreFieldsAndValues: js.Any*
-    ): js.Promise[scala.Unit] = js.native
+    def update(data: UpdateData): js.Promise[scala.Unit] = js.native
+    def update(field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[scala.Unit] = js.native
     /**
       * Updates fields in the document referred to by this `DocumentReference`.
       * The update will fail if applied to a document that does not exist.
@@ -331,11 +294,11 @@ object firestoreNs extends js.Object {
       *  Metadata about the `DocumentSnapshot`, including information about its
       *  source and local modifications.
       */
-    val metadata: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotMetadata = js.native
+    val metadata: SnapshotMetadata = js.native
     /**
       * The `DocumentReference` for the document included in the `DocumentSnapshot`.
       */
-    val ref: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference = js.native
+    val ref: DocumentReference = js.native
     /**
       * Retrieves all fields in the document as an Object. Returns 'undefined' if
       * the document doesn't exist.
@@ -350,13 +313,10 @@ object firestoreNs extends js.Object {
       * @return An Object containing all fields in the document or 'undefined' if
       * the document doesn't exist.
       */
-    def data(): js.UndefOr[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData] = js.native
-    def data(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotOptions): js.UndefOr[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData] = js.native
-    def get(fieldPath: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath): js.Any = js.native
-    def get(
-      fieldPath: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath,
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotOptions
-    ): js.Any = js.native
+    def data(): js.UndefOr[DocumentData] = js.native
+    def data(options: SnapshotOptions): js.UndefOr[DocumentData] = js.native
+    def get(fieldPath: FieldPath): js.Any = js.native
+    def get(fieldPath: FieldPath, options: SnapshotOptions): js.Any = js.native
     /**
       * Retrieves the field specified by `fieldPath`. Returns `undefined` if the
       * document or field doesn't exist.
@@ -373,17 +333,14 @@ object firestoreNs extends js.Object {
       * field exists in the document.
       */
     def get(fieldPath: java.lang.String): js.Any = js.native
-    def get(
-      fieldPath: java.lang.String,
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotOptions
-    ): js.Any = js.native
+    def get(fieldPath: java.lang.String, options: SnapshotOptions): js.Any = js.native
     /**
       * Returns true if this `DocumentSnapshot` is equal to the provided one.
       *
       * @param other The `DocumentSnapshot` to compare against.
       * @return true if this `DocumentSnapshot` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot): scala.Boolean = js.native
+    def isEqual(other: DocumentSnapshot): scala.Boolean = js.native
   }
   
   @js.native
@@ -401,7 +358,7 @@ object firestoreNs extends js.Object {
       * @param other The `FieldPath` to compare against.
       * @return true if this `FieldPath` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath): scala.Boolean = js.native
+    def isEqual(other: FieldPath): scala.Boolean = js.native
   }
   
   @js.native
@@ -412,7 +369,7 @@ object firestoreNs extends js.Object {
       * @param other The `FieldValue` to compare against.
       * @return true if this `FieldValue` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue): scala.Boolean = js.native
+    def isEqual(other: FieldValue): scala.Boolean = js.native
   }
   
   @js.native
@@ -425,7 +382,7 @@ object firestoreNs extends js.Object {
       * The {@link firebase.app.App app} associated with this `Firestore` service
       * instance.
       */
-    var app: firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+    var app: firebaseLib.firebaseMod.appNs.App = js.native
     /**
       * Creates a write batch, used for performing multiple writes as a single
       * atomic operation.
@@ -433,7 +390,7 @@ object firestoreNs extends js.Object {
       * @return
       *   A `WriteBatch` that can be used to atomically execute multiple writes.
       */
-    def batch(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
+    def batch(): WriteBatch = js.native
     /**
       * Gets a `CollectionReference` instance that refers to the collection at
       * the specified path.
@@ -441,7 +398,7 @@ object firestoreNs extends js.Object {
       * @param collectionPath A slash-separated path to a collection.
       * @return The `CollectionReference` instance.
       */
-    def collection(collectionPath: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.CollectionReference = js.native
+    def collection(collectionPath: java.lang.String): CollectionReference = js.native
     /**
       * Disables network usage for this instance. It can be re-enabled via
       * {@link firebase.firestore.Firestore.enableNetwork `enableNetwork()`}. While
@@ -460,7 +417,7 @@ object firestoreNs extends js.Object {
       * @param documentPath A slash-separated path to a document.
       * @return The `DocumentReference` instance.
       */
-    def doc(documentPath: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference = js.native
+    def doc(documentPath: java.lang.String): DocumentReference = js.native
     /**
       * Re-enables use of the network for this Firestore instance after a prior
       * call to {@link firebase.firestore.Firestore.disableNetwork
@@ -491,7 +448,7 @@ object firestoreNs extends js.Object {
       * storage.
       */
     def enablePersistence(): js.Promise[scala.Unit] = js.native
-    def enablePersistence(settings: firebaseLib.firebaseMod.firebaseNs.firestoreNs.PersistenceSettings): js.Promise[scala.Unit] = js.native
+    def enablePersistence(settings: PersistenceSettings): js.Promise[scala.Unit] = js.native
     /**
       * Executes the given `updateFunction` and then attempts to commit the changes
       * applied within the transaction. If any document read within the transaction
@@ -508,23 +465,18 @@ object firestoreNs extends js.Object {
       *   transaction failed, a rejected promise with the corresponding failure
       *   error will be returned.
       */
-    def runTransaction[T](
-      updateFunction: js.Function1[
-          /* transaction */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction, 
-          js.Promise[T]
-        ]
-    ): js.Promise[T] = js.native
+    def runTransaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native
     /**
       * Specifies custom settings to be used to configure the `Firestore`
       * instance. Must be set before invoking any other methods.
       *
       * @param settings The settings to use.
       */
-    def settings(settings: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Settings): scala.Unit = js.native
+    def settings(settings: Settings): scala.Unit = js.native
   }
   
   trait FirestoreError extends js.Object {
-    var code: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
+    var code: FirestoreErrorCode
     var message: java.lang.String
     var name: java.lang.String
     var stack: js.UndefOr[java.lang.String] = js.undefined
@@ -573,7 +525,7 @@ object firestoreNs extends js.Object {
       * @param other The `GeoPoint` to compare against.
       * @return true if this `GeoPoint` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.GeoPoint): scala.Boolean = js.native
+    def isEqual(other: GeoPoint): scala.Boolean = js.native
   }
   
   trait GetOptions extends js.Object {
@@ -637,7 +589,7 @@ object firestoreNs extends js.Object {
       * The `Firestore` for the Firestore database (useful for performing
       * transactions, etc.).
       */
-    val firestore: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
+    val firestore: Firestore = js.native
     /**
       * Creates and returns a new Query that ends at the provided fields
       * relative to the order of the query. The order of the field values
@@ -647,7 +599,7 @@ object firestoreNs extends js.Object {
       * of the query's order by.
       * @return The created Query.
       */
-    def endAt(fieldValues: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def endAt(fieldValues: js.Any*): Query = js.native
     /**
       * Creates and returns a new Query that ends at the provided document
       * (inclusive). The end position is relative to the order of the query. The
@@ -657,7 +609,7 @@ object firestoreNs extends js.Object {
       * @param snapshot The snapshot of the document to end at.
       * @return The created Query.
       */
-    def endAt(snapshot: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def endAt(snapshot: DocumentSnapshot): Query = js.native
     /**
       * Creates and returns a new Query that ends before the provided fields
       * relative to the order of the query. The order of the field values
@@ -667,7 +619,7 @@ object firestoreNs extends js.Object {
       * of the query's order by.
       * @return The created Query.
       */
-    def endBefore(fieldValues: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def endBefore(fieldValues: js.Any*): Query = js.native
     /**
       * Creates and returns a new Query that ends before the provided document
       * (exclusive). The end position is relative to the order of the query. The
@@ -677,7 +629,7 @@ object firestoreNs extends js.Object {
       * @param snapshot The snapshot of the document to end before.
       * @return The created Query.
       */
-    def endBefore(snapshot: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def endBefore(snapshot: DocumentSnapshot): Query = js.native
     /**
       * Executes the query and returns the results as a `QuerySnapshot`.
       *
@@ -689,15 +641,15 @@ object firestoreNs extends js.Object {
       * @param options An object to configure the get behavior.
       * @return A Promise that will be resolved with the results of the Query.
       */
-    def get(): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot] = js.native
-    def get(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.GetOptions): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot] = js.native
+    def get(): js.Promise[QuerySnapshot] = js.native
+    def get(options: GetOptions): js.Promise[QuerySnapshot] = js.native
     /**
       * Returns true if this `Query` is equal to the provided one.
       *
       * @param other The `Query` to compare against.
       * @return true if this `Query` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query): scala.Boolean = js.native
+    def isEqual(other: Query): scala.Boolean = js.native
     /**
       * Creates and returns a new Query where the results are limited to the
       * specified number of documents.
@@ -705,7 +657,7 @@ object firestoreNs extends js.Object {
       * @param limit The maximum number of items to return.
       * @return The created Query.
       */
-    def limit(limit: scala.Double): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def limit(limit: scala.Double): Query = js.native
     /**
       * Attaches a listener for QuerySnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
@@ -736,24 +688,13 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
+    def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
-          scala.Unit
-        ]
-    ): js.Function0[scala.Unit] = js.native
-    def onSnapshot(
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
-          scala.Unit
-        ],
+      onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
-          scala.Unit
-        ],
+      onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
@@ -771,10 +712,7 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
-    def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      observer: firebaseLib.Anon_CompleteErrorNext
-    ): js.Function0[scala.Unit] = js.native
+    def onSnapshot(options: SnapshotListenOptions, observer: firebaseLib.Anon_CompleteErrorNext): js.Function0[scala.Unit] = js.native
     /**
       * Attaches a listener for QuerySnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
@@ -792,35 +730,20 @@ object firestoreNs extends js.Object {
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
+    def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
-          scala.Unit
-        ]
-    ): js.Function0[scala.Unit] = js.native
-    def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
-          scala.Unit
-        ],
+      options: SnapshotListenOptions,
+      onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
     ): js.Function0[scala.Unit] = js.native
     def onSnapshot(
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
-      onNext: js.Function1[
-          /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
-          scala.Unit
-        ],
+      options: SnapshotListenOptions,
+      onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit],
       onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
-    def orderBy(fieldPath: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
-    def orderBy(
-      fieldPath: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath,
-      directionStr: firebaseLib.firebaseMod.firebaseNs.firestoreNs.OrderByDirection
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def orderBy(fieldPath: FieldPath): Query = js.native
+    def orderBy(fieldPath: FieldPath, directionStr: OrderByDirection): Query = js.native
     /**
       * Creates and returns a new Query that's additionally sorted by the
       * specified field, optionally in descending order instead of ascending.
@@ -830,11 +753,8 @@ object firestoreNs extends js.Object {
       * not specified, order will be ascending.
       * @return The created Query.
       */
-    def orderBy(fieldPath: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
-    def orderBy(
-      fieldPath: java.lang.String,
-      directionStr: firebaseLib.firebaseMod.firebaseNs.firestoreNs.OrderByDirection
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def orderBy(fieldPath: java.lang.String): Query = js.native
+    def orderBy(fieldPath: java.lang.String, directionStr: OrderByDirection): Query = js.native
     /**
       * Creates and returns a new Query that starts after the provided fields
       * relative to the order of the query. The order of the field values
@@ -844,7 +764,7 @@ object firestoreNs extends js.Object {
       * of the query's order by.
       * @return The created Query.
       */
-    def startAfter(fieldValues: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def startAfter(fieldValues: js.Any*): Query = js.native
     /**
       * Creates and returns a new Query that starts after the provided document
       * (exclusive). The starting position is relative to the order of the query.
@@ -854,7 +774,7 @@ object firestoreNs extends js.Object {
       * @param snapshot The snapshot of the document to start after.
       * @return The created Query.
       */
-    def startAfter(snapshot: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def startAfter(snapshot: DocumentSnapshot): Query = js.native
     /**
       * Creates and returns a new Query that starts at the provided fields
       * relative to the order of the query. The order of the field values
@@ -864,7 +784,7 @@ object firestoreNs extends js.Object {
       * of the query's order by.
       * @return The created Query.
       */
-    def startAt(fieldValues: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def startAt(fieldValues: js.Any*): Query = js.native
     /**
       * Creates and returns a new Query that starts at the provided document
       * (inclusive). The starting position is relative to the order of the query.
@@ -874,12 +794,8 @@ object firestoreNs extends js.Object {
       * @param snapshot The snapshot of the document to start at.
       * @return The created Query.
       */
-    def startAt(snapshot: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
-    def where(
-      fieldPath: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath,
-      opStr: firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp,
-      value: js.Any
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def startAt(snapshot: DocumentSnapshot): Query = js.native
+    def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: js.Any): Query = js.native
     /**
       * Creates and returns a new Query with the additional filter that documents
       * must contain the specified field and the value should satisfy the
@@ -890,33 +806,28 @@ object firestoreNs extends js.Object {
       * @param value The value for comparison
       * @return The created Query.
       */
-    def where(
-      fieldPath: java.lang.String,
-      opStr: firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp,
-      value: js.Any
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    def where(fieldPath: java.lang.String, opStr: WhereFilterOp, value: js.Any): Query = js.native
   }
   
   @js.native
-  class QueryDocumentSnapshot protected ()
-    extends firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot
+  class QueryDocumentSnapshot protected () extends DocumentSnapshot
   
   @js.native
   class QuerySnapshot protected () extends js.Object {
     /** An array of all the documents in the `QuerySnapshot`. */
-    val docs: js.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot] = js.native
+    val docs: js.Array[QueryDocumentSnapshot] = js.native
     /** True if there are no documents in the `QuerySnapshot`. */
     val empty: scala.Boolean = js.native
     /**
       * Metadata about this snapshot, concerning its source and if it has local
       * modifications.
       */
-    val metadata: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotMetadata = js.native
+    val metadata: SnapshotMetadata = js.native
     /**
       * The query on which you called `get` or `onSnapshot` in order to get this
       * `QuerySnapshot`.
       */
-    val query: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
+    val query: Query = js.native
     /** The number of documents in the `QuerySnapshot`. */
     val size: scala.Double = js.native
     /**
@@ -927,8 +838,8 @@ object firestoreNs extends js.Object {
       * changes (i.e. only `DocumentSnapshot.metadata` changed) should trigger
       * snapshot events.
       */
-    def docChanges(): js.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
-    def docChanges(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions): js.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
+    def docChanges(): js.Array[DocumentChange] = js.native
+    def docChanges(options: SnapshotListenOptions): js.Array[DocumentChange] = js.native
     /**
       * Enumerates all of the documents in the `QuerySnapshot`.
       *
@@ -936,26 +847,15 @@ object firestoreNs extends js.Object {
       * each document in the snapshot.
       * @param thisArg The `this` binding for the callback.
       */
-    def forEach(
-      callback: js.Function1[
-          /* result */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot, 
-          scala.Unit
-        ]
-    ): scala.Unit = js.native
-    def forEach(
-      callback: js.Function1[
-          /* result */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot, 
-          scala.Unit
-        ],
-      thisArg: js.Any
-    ): scala.Unit = js.native
+    def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot, scala.Unit]): scala.Unit = js.native
+    def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot, scala.Unit], thisArg: js.Any): scala.Unit = js.native
     /**
       * Returns true if this `QuerySnapshot` is equal to the provided one.
       *
       * @param other The `QuerySnapshot` to compare against.
       * @return true if this `QuerySnapshot` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot): scala.Boolean = js.native
+    def isEqual(other: QuerySnapshot): scala.Boolean = js.native
   }
   
   trait SetOptions extends js.Object {
@@ -970,9 +870,7 @@ object firestoreNs extends js.Object {
       * paths. Any field path that is not specified is ignored and remains
       * untouched.
       */
-    val mergeFields: js.UndefOr[
-        js.Array[java.lang.String | firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath]
-      ] = js.undefined
+    val mergeFields: js.UndefOr[js.Array[java.lang.String | FieldPath]] = js.undefined
   }
   
   trait Settings extends js.Object {
@@ -1046,7 +944,7 @@ object firestoreNs extends js.Object {
       * @param other The `SnapshotMetadata` to compare against.
       * @return true if this `SnapshotMetadata` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotMetadata): scala.Boolean
+    def isEqual(other: SnapshotMetadata): scala.Boolean
   }
   
   trait SnapshotOptions extends js.Object {
@@ -1091,7 +989,7 @@ object firestoreNs extends js.Object {
       * @param other The `Timestamp` to compare against.
       * @return true if this `Timestamp` is equal to the provided one.
       */
-    def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp): scala.Boolean = js.native
+    def isEqual(other: Timestamp): scala.Boolean = js.native
     /**
       * Convert a Timestamp to a JavaScript `Date` object. This conversion causes
       * a loss of precision since `Date` objects only support millisecond precision.
@@ -1118,14 +1016,14 @@ object firestoreNs extends js.Object {
       * @param documentRef A reference to the document to be deleted.
       * @return This `Transaction` instance. Used for chaining method calls.
       */
-    def delete(documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction = js.native
+    def delete(documentRef: DocumentReference): Transaction = js.native
     /**
       * Reads the document referenced by the provided `DocumentReference.`
       *
       * @param documentRef A reference to the document to be read.
       * @return A DocumentSnapshot for the read data.
       */
-    def get(documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
+    def get(documentRef: DocumentReference): js.Promise[DocumentSnapshot] = js.native
     /**
       * Writes to the document referred to by the provided `DocumentReference`.
       * If the document does not exist yet, it will be created. If you pass
@@ -1136,15 +1034,8 @@ object firestoreNs extends js.Object {
       * @param options An object to configure the set behavior.
       * @return This `Transaction` instance. Used for chaining method calls.
       */
-    def set(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction = js.native
-    def set(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData,
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SetOptions
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction = js.native
+    def set(documentRef: DocumentReference, data: DocumentData): Transaction = js.native
+    def set(documentRef: DocumentReference, data: DocumentData, options: SetOptions): Transaction = js.native
     /**
       * Updates fields in the document referred to by the provided
       * `DocumentReference`. The update will fail if applied to a document that
@@ -1156,16 +1047,8 @@ object firestoreNs extends js.Object {
       * within the document.
       * @return This `Transaction` instance. Used for chaining method calls.
       */
-    def update(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.UpdateData
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction = js.native
-    def update(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      field: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath,
-      value: js.Any,
-      moreFieldsAndValues: js.Any*
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction = js.native
+    def update(documentRef: DocumentReference, data: UpdateData): Transaction = js.native
+    def update(documentRef: DocumentReference, field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
     /**
       * Updates fields in the document referred to by the provided
       * `DocumentReference`. The update will fail if applied to a document that
@@ -1182,15 +1065,12 @@ object firestoreNs extends js.Object {
       * to the backend (Note that it won't resolve while you're offline).
       */
     def update(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
+      documentRef: DocumentReference,
       field: java.lang.String,
       value: js.Any,
       moreFieldsAndValues: js.Any*
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction = js.native
+    ): Transaction = js.native
   }
-  
-  trait UpdateData
-    extends /* fieldPath */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
   /* Rewritten from type alias, can be one of: 
     - firebaseLib.firebaseLibStrings.`<`
@@ -1218,7 +1098,7 @@ object firestoreNs extends js.Object {
       * @param documentRef A reference to the document to be deleted.
       * @return This `WriteBatch` instance. Used for chaining method calls.
       */
-    def delete(documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
+    def delete(documentRef: DocumentReference): WriteBatch = js.native
     /**
       * Writes to the document referred to by the provided `DocumentReference`.
       * If the document does not exist yet, it will be created. If you pass
@@ -1229,15 +1109,8 @@ object firestoreNs extends js.Object {
       * @param options An object to configure the set behavior.
       * @return This `WriteBatch` instance. Used for chaining method calls.
       */
-    def set(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
-    def set(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData,
-      options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SetOptions
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
+    def set(documentRef: DocumentReference, data: DocumentData): WriteBatch = js.native
+    def set(documentRef: DocumentReference, data: DocumentData, options: SetOptions): WriteBatch = js.native
     /**
       * Updates fields in the document referred to by the provided
       * `DocumentReference`. The update will fail if applied to a document that
@@ -1249,16 +1122,8 @@ object firestoreNs extends js.Object {
       * within the document.
       * @return This `WriteBatch` instance. Used for chaining method calls.
       */
-    def update(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.UpdateData
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
-    def update(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
-      field: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath,
-      value: js.Any,
-      moreFieldsAndValues: js.Any*
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
+    def update(documentRef: DocumentReference, data: UpdateData): WriteBatch = js.native
+    def update(documentRef: DocumentReference, field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): WriteBatch = js.native
     /**
       * Updates fields in the document referred to by this `DocumentReference`.
       * The update will fail if applied to a document that does not exist.
@@ -1274,15 +1139,15 @@ object firestoreNs extends js.Object {
       * to the backend (Note that it won't resolve while you're offline).
       */
     def update(
-      documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference,
+      documentRef: DocumentReference,
       field: java.lang.String,
       value: js.Any,
       moreFieldsAndValues: js.Any*
-    ): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
+    ): WriteBatch = js.native
   }
   
   val CACHE_SIZE_UNLIMITED: scala.Double = js.native
-  def setLogLevel(logLevel: firebaseLib.firebaseMod.firebaseNs.firestoreNs.LogLevel): scala.Unit = js.native
+  def setLogLevel(logLevel: LogLevel): scala.Unit = js.native
   /* static members */
   @js.native
   object Blob extends js.Object {
@@ -1293,14 +1158,14 @@ object firestoreNs extends js.Object {
       * @param base64
       *   The Base64 string used to create the Blob object.
       */
-    def fromBase64String(base64: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob = js.native
+    def fromBase64String(base64: java.lang.String): firebaseLib.firebaseMod.firestoreNs.Blob = js.native
     /**
       * Creates a new Blob from the given Uint8Array.
       *
       * @param array
       *   The Uint8Array used to create the Blob object.
       */
-    def fromUint8Array(array: stdLib.Uint8Array): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob = js.native
+    def fromUint8Array(array: stdLib.Uint8Array): firebaseLib.firebaseMod.firestoreNs.Blob = js.native
   }
   
   /* static members */
@@ -1310,7 +1175,7 @@ object firestoreNs extends js.Object {
       * Returns a special sentinel `FieldPath` to refer to the ID of a document.
       * It can be used in queries to sort or filter by the document ID.
       */
-    def documentId(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath = js.native
+    def documentId(): firebaseLib.firebaseMod.firestoreNs.FieldPath = js.native
   }
   
   /* static members */
@@ -1326,7 +1191,7 @@ object firestoreNs extends js.Object {
       * @param elements The elements to remove from the array.
       * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
       */
-    def arrayRemove(elements: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
+    def arrayRemove(elements: js.Any*): firebaseLib.firebaseMod.firestoreNs.FieldValue = js.native
     /**
       * Returns a special value that can be used with `set()` or `update()` that tells
       * the server to union the given elements with any array value that already
@@ -1338,11 +1203,11 @@ object firestoreNs extends js.Object {
       * @param elements The elements to union into the array.
       * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
       */
-    def arrayUnion(elements: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
+    def arrayUnion(elements: js.Any*): firebaseLib.firebaseMod.firestoreNs.FieldValue = js.native
     /**
       * Returns a sentinel for use with `update()` to mark a field for deletion.
       */
-    def delete(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
+    def delete(): firebaseLib.firebaseMod.firestoreNs.FieldValue = js.native
     /**
       * Returns a special value that can be used with `set()` or `update()` that tells
       * the server to increment the field's current value by the given value.
@@ -1360,12 +1225,12 @@ object firestoreNs extends js.Object {
       * @param n The value to increment by.
       * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
       */
-    def increment(n: scala.Double): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
+    def increment(n: scala.Double): firebaseLib.firebaseMod.firestoreNs.FieldValue = js.native
     /**
       * Returns a sentinel used with `set()` or `update()` to include a
       * server-generated timestamp in the written data.
       */
-    def serverTimestamp(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
+    def serverTimestamp(): firebaseLib.firebaseMod.firestoreNs.FieldValue = js.native
   }
   
   /* static members */
@@ -1378,7 +1243,7 @@ object firestoreNs extends js.Object {
       * @return A new `Timestamp` representing the same point in time as the given
       *     date.
       */
-    def fromDate(date: stdLib.Date): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp = js.native
+    def fromDate(date: stdLib.Date): firebaseLib.firebaseMod.firestoreNs.Timestamp = js.native
     /**
       * Creates a new timestamp from the given number of milliseconds.
       *
@@ -1387,14 +1252,16 @@ object firestoreNs extends js.Object {
       * @return A new `Timestamp` representing the same point in time as the given
       *     number of milliseconds.
       */
-    def fromMillis(milliseconds: scala.Double): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp = js.native
+    def fromMillis(milliseconds: scala.Double): firebaseLib.firebaseMod.firestoreNs.Timestamp = js.native
     /**
       * Creates a new timestamp with the current date, with millisecond precision.
       *
       * @return a new timestamp representing the current date.
       */
-    def now(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp = js.native
+    def now(): firebaseLib.firebaseMod.firestoreNs.Timestamp = js.native
   }
   
+  type DocumentData = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type UpdateData = org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

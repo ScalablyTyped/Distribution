@@ -7,11 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var TableComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[atStorybookAddonDashInfoLib.Anon_PropDefinitions]
+    reactLib.reactMod.ComponentType[atStorybookAddonDashInfoLib.Anon_PropDefinitions]
   ] = js.undefined
-  var components: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ComponentType[_]]
-  ] = js.undefined
+  var components: js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ComponentType[_]]] = js.undefined
   var excludedPropTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var header: js.UndefOr[scala.Boolean] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,9 +19,9 @@ trait Options extends js.Object {
   var maxPropStringLength: js.UndefOr[scala.Double] = js.undefined
   var maxPropsIntoLine: js.UndefOr[scala.Double] = js.undefined
   var propTables: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ComponentType[_]] | atStorybookAddonDashInfoLib.atStorybookAddonDashInfoLibNumbers.`false`
+    js.Array[reactLib.reactMod.ComponentType[_]] | atStorybookAddonDashInfoLib.atStorybookAddonDashInfoLibNumbers.`false`
   ] = js.undefined
-  var propTablesExclude: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ComponentType[_]]] = js.undefined
+  var propTablesExclude: js.UndefOr[js.Array[reactLib.reactMod.ComponentType[_]]] = js.undefined
   var source: js.UndefOr[scala.Boolean] = js.undefined
   var styles: js.UndefOr[js.Object] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
@@ -32,8 +30,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    TableComponent: reactLib.reactMod.ReactNs.ComponentType[atStorybookAddonDashInfoLib.Anon_PropDefinitions] = null,
-    components: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ComponentType[_]] = null,
+    TableComponent: reactLib.reactMod.ComponentType[atStorybookAddonDashInfoLib.Anon_PropDefinitions] = null,
+    components: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ComponentType[_]] = null,
     excludedPropTypes: js.Array[java.lang.String] = null,
     header: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
@@ -42,8 +40,8 @@ object Options {
     maxPropObjectKeys: scala.Int | scala.Double = null,
     maxPropStringLength: scala.Int | scala.Double = null,
     maxPropsIntoLine: scala.Int | scala.Double = null,
-    propTables: js.Array[reactLib.reactMod.ReactNs.ComponentType[_]] | atStorybookAddonDashInfoLib.atStorybookAddonDashInfoLibNumbers.`false` = null,
-    propTablesExclude: js.Array[reactLib.reactMod.ReactNs.ComponentType[_]] = null,
+    propTables: js.Array[reactLib.reactMod.ComponentType[_]] | atStorybookAddonDashInfoLib.atStorybookAddonDashInfoLibNumbers.`false` = null,
+    propTablesExclude: js.Array[reactLib.reactMod.ComponentType[_]] = null,
     source: js.UndefOr[scala.Boolean] = js.undefined,
     styles: js.Object = null,
     text: java.lang.String = null

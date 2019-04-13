@@ -12,14 +12,14 @@ object prosemirrorDashSchemaDashListMod extends js.Object {
   var listItem: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec = js.native
   var orderedList: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec = js.native
   def addListNodes(
-    nodes: orderedmapLib.orderedmapMod.namespaced[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec],
+    nodes: orderedmapLib.orderedmapMod.^[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec],
     itemContent: java.lang.String
-  ): orderedmapLib.orderedmapMod.namespaced[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec] = js.native
+  ): orderedmapLib.orderedmapMod.^[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec] = js.native
   def addListNodes(
-    nodes: orderedmapLib.orderedmapMod.namespaced[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec],
+    nodes: orderedmapLib.orderedmapMod.^[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec],
     itemContent: java.lang.String,
     listGroup: java.lang.String
-  ): orderedmapLib.orderedmapMod.namespaced[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec] = js.native
+  ): orderedmapLib.orderedmapMod.^[prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec] = js.native
   def liftListItem[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](itemType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S]): js.Function2[
     /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
     /* dispatch */ js.UndefOr[

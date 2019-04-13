@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atIonicCliDashFrameworkLibStrings {
   @js.native
+  sealed trait CommandNotFoundError extends js.Object
+  
+  @js.native
   sealed trait DEBUG
     extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
@@ -15,8 +18,26 @@ object atIonicCliDashFrameworkLibStrings {
     extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
   @js.native
+  sealed trait ERR_ICF_COMMAND_NOT_FOUND extends js.Object
+  
+  @js.native
+  sealed trait ERR_ICF_INPUT_VALIDATION extends js.Object
+  
+  @js.native
+  sealed trait ERR_ICF_IPC_MODULE_INACCESSIBLE extends js.Object
+  
+  @js.native
+  sealed trait ERR_ICF_IPC_UNKNOWN_PROCEDURE extends js.Object
+  
+  @js.native
   sealed trait INFO
     extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
+  
+  @js.native
+  sealed trait IPCError extends js.Object
+  
+  @js.native
+  sealed trait InputValidationError extends js.Object
   
   @js.native
   sealed trait LoggerColors extends js.Object
@@ -86,11 +107,25 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait tick extends js.Object
   
   @scala.inline
+  def CommandNotFoundError: CommandNotFoundError = "CommandNotFoundError".asInstanceOf[CommandNotFoundError]
+  @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
+  def ERR_ICF_COMMAND_NOT_FOUND: ERR_ICF_COMMAND_NOT_FOUND = "ERR_ICF_COMMAND_NOT_FOUND".asInstanceOf[ERR_ICF_COMMAND_NOT_FOUND]
+  @scala.inline
+  def ERR_ICF_INPUT_VALIDATION: ERR_ICF_INPUT_VALIDATION = "ERR_ICF_INPUT_VALIDATION".asInstanceOf[ERR_ICF_INPUT_VALIDATION]
+  @scala.inline
+  def ERR_ICF_IPC_MODULE_INACCESSIBLE: ERR_ICF_IPC_MODULE_INACCESSIBLE = "ERR_ICF_IPC_MODULE_INACCESSIBLE".asInstanceOf[ERR_ICF_IPC_MODULE_INACCESSIBLE]
+  @scala.inline
+  def ERR_ICF_IPC_UNKNOWN_PROCEDURE: ERR_ICF_IPC_UNKNOWN_PROCEDURE = "ERR_ICF_IPC_UNKNOWN_PROCEDURE".asInstanceOf[ERR_ICF_IPC_UNKNOWN_PROCEDURE]
+  @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
+  def IPCError: IPCError = "IPCError".asInstanceOf[IPCError]
+  @scala.inline
+  def InputValidationError: InputValidationError = "InputValidationError".asInstanceOf[InputValidationError]
   @scala.inline
   def LoggerColors: LoggerColors = "LoggerColors".asInstanceOf[LoggerColors]
   @scala.inline

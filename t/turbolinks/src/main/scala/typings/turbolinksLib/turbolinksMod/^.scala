@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("turbolinks", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[turbolinksLib.turbolinksMod.TurbolinksNs.TurbolinksStatic]
+  extends org.scalablytyped.runtime.TopLevel[TurbolinksStatic]
 

@@ -14,7 +14,7 @@ trait OptionsBase extends js.Object {
     *  Compatibility hash exposes the following properties: `colors`, `properties`, `selectors`, and `units`
     */
   var compatibility: js.UndefOr[
-    cleanDashCssLib.cleanDashCssLibStrings.`*` | cleanDashCssLib.cleanDashCssLibStrings.ie9 | cleanDashCssLib.cleanDashCssLibStrings.ie8 | cleanDashCssLib.cleanDashCssLibStrings.ie7 | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.CompatibilityOptions
+    cleanDashCssLib.cleanDashCssLibStrings.`*` | cleanDashCssLib.cleanDashCssLibStrings.ie9 | cleanDashCssLib.cleanDashCssLibStrings.ie8 | cleanDashCssLib.cleanDashCssLibStrings.ie7 | CompatibilityOptions
   ] = js.undefined
   /**
     * Controls a function for handling remote requests; Defaults to the build in `loadRemoteResource` function
@@ -37,7 +37,7 @@ trait OptionsBase extends js.Object {
     *  Format hash exposes the following properties: `breaks`, `breakWith`, `indentBy`, `indentWith`, `spaces`, and `wrapAt`.
     */
   var format: js.UndefOr[
-    cleanDashCssLib.cleanDashCssLibStrings.beautify | cleanDashCssLib.cleanDashCssLibStrings.`keep-breaks` | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.FormatOptions | cleanDashCssLib.cleanDashCssLibNumbers.`false`
+    cleanDashCssLib.cleanDashCssLibStrings.beautify | cleanDashCssLib.cleanDashCssLibStrings.`keep-breaks` | FormatOptions | cleanDashCssLib.cleanDashCssLibNumbers.`false`
   ] = js.undefined
   /**
     * inline option whitelists which @import rules will be processed.  Defaults to `'local'`
@@ -63,7 +63,7 @@ trait OptionsBase extends js.Object {
     * Level hash exposes `1`, and `2`.
     */
   var level: js.UndefOr[
-    cleanDashCssLib.cleanDashCssLibNumbers.`0` | cleanDashCssLib.cleanDashCssLibNumbers.`1` | cleanDashCssLib.cleanDashCssLibNumbers.`2` | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.OptimizationsOptions
+    cleanDashCssLib.cleanDashCssLibNumbers.`0` | cleanDashCssLib.cleanDashCssLibNumbers.`1` | cleanDashCssLib.cleanDashCssLibNumbers.`2` | OptimizationsOptions
   ] = js.undefined
   /**
     * Controls URL rebasing; defaults to `true`;
@@ -87,17 +87,17 @@ trait OptionsBase extends js.Object {
 object OptionsBase {
   @scala.inline
   def apply(
-    compatibility: cleanDashCssLib.cleanDashCssLibStrings.`*` | cleanDashCssLib.cleanDashCssLibStrings.ie9 | cleanDashCssLib.cleanDashCssLibStrings.ie8 | cleanDashCssLib.cleanDashCssLibStrings.ie7 | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.CompatibilityOptions = null,
+    compatibility: cleanDashCssLib.cleanDashCssLibStrings.`*` | cleanDashCssLib.cleanDashCssLibStrings.ie9 | cleanDashCssLib.cleanDashCssLibStrings.ie8 | cleanDashCssLib.cleanDashCssLibStrings.ie7 | CompatibilityOptions = null,
     fetch: (/* uri */ java.lang.String, /* inlineRequest */ nodeLib.httpMod.RequestOptions | nodeLib.httpsMod.RequestOptions, /* inlineTimeout */ scala.Double, /* done */ js.Function2[
       /* message */ java.lang.String | scala.Double, 
       /* body */ java.lang.String, 
       scala.Unit
     ]) => scala.Unit = null,
-    format: cleanDashCssLib.cleanDashCssLibStrings.beautify | cleanDashCssLib.cleanDashCssLibStrings.`keep-breaks` | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.FormatOptions | cleanDashCssLib.cleanDashCssLibNumbers.`false` = null,
+    format: cleanDashCssLib.cleanDashCssLibStrings.beautify | cleanDashCssLib.cleanDashCssLibStrings.`keep-breaks` | FormatOptions | cleanDashCssLib.cleanDashCssLibNumbers.`false` = null,
     `inline`: js.Array[java.lang.String] | cleanDashCssLib.cleanDashCssLibNumbers.`false` = null,
     inlineRequest: nodeLib.httpMod.RequestOptions | nodeLib.httpsMod.RequestOptions = null,
     inlineTimeout: scala.Int | scala.Double = null,
-    level: cleanDashCssLib.cleanDashCssLibNumbers.`0` | cleanDashCssLib.cleanDashCssLibNumbers.`1` | cleanDashCssLib.cleanDashCssLibNumbers.`2` | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.OptimizationsOptions = null,
+    level: cleanDashCssLib.cleanDashCssLibNumbers.`0` | cleanDashCssLib.cleanDashCssLibNumbers.`1` | cleanDashCssLib.cleanDashCssLibNumbers.`2` | OptimizationsOptions = null,
     rebase: js.UndefOr[scala.Boolean] = js.undefined,
     rebaseTo: java.lang.String = null,
     sourceMap: js.UndefOr[scala.Boolean] = js.undefined,

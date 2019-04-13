@@ -95,7 +95,7 @@ object ojInputDateTimeEventMap {
     loadstart: stdLib.Event,
     lostpointercapture: stdLib.PointerEvent,
     maxChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null],
-    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]],
+    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]],
     minChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null],
     mousedown: stdLib.MouseEvent,
     mouseenter: stdLib.MouseEvent,

@@ -10,7 +10,7 @@ trait AbstractTooltipProps extends js.Object {
   var arrowPointAtCenter: js.UndefOr[scala.Boolean] = js.undefined
   var autoAdjustOverflow: js.UndefOr[scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow] = js.undefined
   var builtinPlacements: js.UndefOr[js.Object] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var getPopupContainer: js.UndefOr[
     js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
@@ -21,10 +21,10 @@ trait AbstractTooltipProps extends js.Object {
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
   var openClassName: js.UndefOr[java.lang.String] = js.undefined
   var overlayClassName: js.UndefOr[java.lang.String] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var placement: js.UndefOr[TooltipPlacement] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var trigger: js.UndefOr[TooltipTrigger] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -37,7 +37,7 @@ object AbstractTooltipProps {
     arrowPointAtCenter: js.UndefOr[scala.Boolean] = js.undefined,
     autoAdjustOverflow: scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow = null,
     builtinPlacements: js.Object = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
@@ -46,10 +46,10 @@ object AbstractTooltipProps {
     onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     placement: TooltipPlacement = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionName: java.lang.String = null,
     trigger: TooltipTrigger = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined

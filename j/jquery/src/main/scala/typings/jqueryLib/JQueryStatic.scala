@@ -15203,9 +15203,8 @@ trait JQueryStatic extends js.Object {
     * @since 1.1
     */
   def speed[TElement /* <: stdLib.Element */](): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
-  def speed[TElement /* <: stdLib.Element */](
-    duration_complete_settings: jqueryLib.JQueryNs.Duration | jqueryLib.JQueryNs.SpeedSettings[TElement]
-  ): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
+  def speed[TElement /* <: stdLib.Element */](duration_complete_settings: jqueryLib.JQueryNs.Duration): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
+  def speed[TElement /* <: stdLib.Element */](duration_complete_settings: jqueryLib.JQueryNs.SpeedSettings[TElement]): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
   def speed[TElement /* <: stdLib.Element */](duration_complete_settings: js.ThisFunction0[/* this */ TElement, scala.Unit]): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
   /**
     * Creates an object containing a set of properties ready to be used in the definition of custom animations.

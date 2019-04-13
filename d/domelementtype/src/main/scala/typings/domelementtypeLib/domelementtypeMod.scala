@@ -14,35 +14,35 @@ object domelementtypeMod extends js.Object {
     /***
       * <![CDATA[ ... ]]>
       */
-    val CDATA: /* cdata */ java.lang.String = js.native
+    val CDATA: domelementtypeLib.domelementtypeLibStrings.cdata = js.native
     /***
       * <!-- ... -->
       */
-    val Comment: /* comment */ java.lang.String = js.native
+    val Comment: domelementtypeLib.domelementtypeLibStrings.comment = js.native
     /***
       * <? ... ?>
       */
-    val Directive: /* directive */ java.lang.String = js.native
+    val Directive: domelementtypeLib.domelementtypeLibStrings.directive = js.native
     /***
       * <!DOCTYPE ... >
       */
-    val Doctype: /* doctype */ java.lang.String = js.native
+    val Doctype: domelementtypeLib.domelementtypeLibStrings.doctype = js.native
     /***
       * <script> tags
       */
-    val Script: /* script */ java.lang.String = js.native
+    val Script: domelementtypeLib.domelementtypeLibStrings.script = js.native
     /***
       * <style> tags
       */
-    val Style: /* style */ java.lang.String = js.native
+    val Style: domelementtypeLib.domelementtypeLibStrings.style = js.native
     /***
       * Any tag
       */
-    val Tag: /* tag */ java.lang.String = js.native
+    val Tag: domelementtypeLib.domelementtypeLibStrings.tag = js.native
     /***
       * Text
       */
-    val Text: /* text */ java.lang.String = js.native
+    val Text: domelementtypeLib.domelementtypeLibStrings.text = js.native
     /***
       * Checks whether element object is a tag
       */

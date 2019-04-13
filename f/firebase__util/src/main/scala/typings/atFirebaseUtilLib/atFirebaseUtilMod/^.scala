@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/util", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CONSTANTS: atFirebaseUtilLib.Anon_NODEADMIN = js.native
-  val base64: atFirebaseUtilLib.Anon_ByteToCharMap = js.native
   def assert(assertion: js.Any, message: js.Any): scala.Unit = js.native
   def assertionError(message: js.Any): stdLib.Error = js.native
   def async(fn: js.Function): js.Function = js.native

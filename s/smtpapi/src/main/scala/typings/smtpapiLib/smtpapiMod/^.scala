@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("smtpapi", JSImport.Namespace)
 @js.native
+class ^ () extends Instance {
+  def this(header: Header) = this()
+}
+
+@JSImport("smtpapi", JSImport.Namespace)
+@js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[smtpapiLib.smtpapiMod.SmtpApiNs.Constructor]
+  extends org.scalablytyped.runtime.TopLevel[Constructor]
 

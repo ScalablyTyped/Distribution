@@ -7,31 +7,19 @@ import scala.scalajs.js.annotation._
 
 @JSImport("msportalfx-test", "PortalElement")
 @js.native
-class PortalElement protected ()
-  extends msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.PortalElement {
-  def this(baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator) = this()
-  def this(baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator, parentLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator) = this()
-  /* CompleteClass */
-  override var baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
-  /* CompleteClass */
-  override var parentLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
-  /* CompleteClass */
-  override def click(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
-  /* CompleteClass */
-  override def getAttribute(attributeName: java.lang.String): qLib.qMod.QNs.Promise[java.lang.String] = js.native
-  /* CompleteClass */
-  override def getLocator(): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
-  /* CompleteClass */
-  override def getText(): qLib.qMod.QNs.Promise[java.lang.String] = js.native
-  /* CompleteClass */
-  override def isDisplayed(): qLib.qMod.QNs.Promise[scala.Boolean] = js.native
-  /* CompleteClass */
-  override def isElementPresent(subLocator: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator): qLib.qMod.QNs.Promise[scala.Boolean] = js.native
-  /* CompleteClass */
-  override def isPresent(): qLib.qMod.QNs.Promise[scala.Boolean] = js.native
-  /* CompleteClass */
-  override def rightClick(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
-  /* CompleteClass */
-  override def sendKeys(var_args: java.lang.String*): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+class PortalElement protected () extends js.Object {
+  def this(baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.LocatorsNs.Locator) = this()
+  def this(baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.LocatorsNs.Locator, parentLocator: msportalfxDashTestLib.msportalfxDashTestMod.LocatorsNs.Locator) = this()
+  var baseLocator: msportalfxDashTestLib.msportalfxDashTestMod.LocatorsNs.Locator = js.native
+  var parentLocator: msportalfxDashTestLib.msportalfxDashTestMod.LocatorsNs.Locator = js.native
+  def click(): qLib.qMod.Promise[scala.Unit] = js.native
+  def getAttribute(attributeName: java.lang.String): qLib.qMod.Promise[java.lang.String] = js.native
+  def getLocator(): msportalfxDashTestLib.msportalfxDashTestMod.LocatorsNs.Locator = js.native
+  def getText(): qLib.qMod.Promise[java.lang.String] = js.native
+  def isDisplayed(): qLib.qMod.Promise[scala.Boolean] = js.native
+  def isElementPresent(subLocator: msportalfxDashTestLib.msportalfxDashTestMod.LocatorsNs.Locator): qLib.qMod.Promise[scala.Boolean] = js.native
+  def isPresent(): qLib.qMod.Promise[scala.Boolean] = js.native
+  def rightClick(): qLib.qMod.Promise[scala.Unit] = js.native
+  def sendKeys(var_args: java.lang.String*): qLib.qMod.Promise[scala.Unit] = js.native
 }
 

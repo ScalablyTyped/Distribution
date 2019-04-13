@@ -13,26 +13,26 @@ trait BreadcrumbProps extends js.Object {
       /* params */ js.Any, 
       /* routes */ js.Array[_], 
       /* paths */ js.Array[java.lang.String], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var params: js.UndefOr[js.Any] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var routes: js.UndefOr[js.Array[Route]] = js.undefined
-  var separator: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var separator: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object BreadcrumbProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    itemRender: (/* route */ js.Any, /* params */ js.Any, /* routes */ js.Array[_], /* paths */ js.Array[java.lang.String]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    itemRender: (/* route */ js.Any, /* params */ js.Any, /* routes */ js.Array[_], /* paths */ js.Array[java.lang.String]) => reactLib.reactMod.ReactNode = null,
     params: js.Any = null,
     prefixCls: java.lang.String = null,
     routes: js.Array[Route] = null,
-    separator: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    separator: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

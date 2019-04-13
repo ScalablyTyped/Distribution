@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends org.scalablytyped.runtime.TopLevel[
-      requestLib.requestMod.requestNs.RequestAPI[
-        requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.RequestPromise, 
-        requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.RequestPromiseOptions, 
-        requestLib.requestMod.requestNs.RequiredUriUrl
-      ]
+      requestLib.requestMod.RequestAPI[RequestPromise, RequestPromiseOptions, requestLib.requestMod.RequiredUriUrl]
     ]
 

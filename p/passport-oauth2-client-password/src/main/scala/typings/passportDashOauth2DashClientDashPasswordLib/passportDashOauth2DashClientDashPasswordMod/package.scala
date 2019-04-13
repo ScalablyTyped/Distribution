@@ -18,7 +18,7 @@ package object passportDashOauth2DashClientDashPasswordMod {
     scala.Unit
   ]
   type VerifyFunctionWithRequest = js.Function4[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* clientId */ java.lang.String, 
     /* clientSecret */ java.lang.String, 
     /* done */ js.Function3[

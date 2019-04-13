@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "PrefixFilter")
 @js.native
-class PrefixFilter protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixFilter {
+class PrefixFilter protected () extends Filter {
   /*
     Filters documents that have fields containing terms with a specified prefix.
     */
@@ -16,37 +15,30 @@ class PrefixFilter protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixFilter = js.native
+  def cache(trueFalse: scala.Boolean): PrefixFilter = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixFilter = js.native
+  def cacheKey(key: java.lang.String): PrefixFilter = js.native
   /*
     Returns the field name used to create this object.
     */
-  /* CompleteClass */
-  override def field(field: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixFilter = js.native
+  def field(field: java.lang.String): PrefixFilter = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixFilter = js.native
+  def name(name: java.lang.String): PrefixFilter = js.native
   /*
     Sets the prefix to search for.
     */
-  /* CompleteClass */
-  override def prefix(value: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixFilter = js.native
+  def prefix(value: java.lang.String): PrefixFilter = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixFilter = js.native
+  def toJSON(): PrefixFilter = js.native
 }
 

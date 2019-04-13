@@ -5,17 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Symbol extends js.Object {
-  @JSName(org.scalablytyped.runtime.Symbol.observable)
-  val observable: js.Symbol
-}
-
-object Symbol {
-  @scala.inline
-  def apply(observable: js.Symbol): Symbol = {
-    val __obj = js.Dynamic.literal(observable = observable)
-  
-    __obj.asInstanceOf[Symbol]
-  }
-}
+@js.native
+trait Symbol extends js.Object
 

@@ -70,7 +70,8 @@ object EightColorScheme {
       java.lang.String, 
       java.lang.String, 
       java.lang.String
-    ]
+    ],
+    NumberDictionary: org.scalablytyped.runtime.NumberDictionary[js.Array[java.lang.String]] = null
   ): EightColorScheme = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("3")(`3`)
@@ -79,6 +80,7 @@ object EightColorScheme {
     __obj.updateDynamic("6")(`6`)
     __obj.updateDynamic("7")(`7`)
     __obj.updateDynamic("8")(`8`)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[EightColorScheme]
   }
 }

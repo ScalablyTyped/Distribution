@@ -13,7 +13,7 @@ trait editableValueSettableProperties[V, SV, RV]
   var help: atOracleOraclejetLib.Anon_Instruction
   var helpHints: atOracleOraclejetLib.Anon_Definition
   var labelHint: java.lang.String
-  var messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]
+  var messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^]
   val valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown
   var value: SV
 }
@@ -26,7 +26,7 @@ object editableValueSettableProperties {
     help: atOracleOraclejetLib.Anon_Instruction,
     helpHints: atOracleOraclejetLib.Anon_Definition,
     labelHint: java.lang.String,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
     value: SV,
     describedBy: java.lang.String = null,

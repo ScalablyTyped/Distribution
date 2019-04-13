@@ -8,44 +8,50 @@ import scala.scalajs.js.annotation._
 object typescriptLibStrings {
   @js.native
   sealed trait _quote
-    extends typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
+    extends typescriptLib.typescriptMod.CompletionsTriggerCharacter
   
   @js.native
   sealed trait `(`
-    extends typescriptLib.typescriptMod.tsNs.SignatureHelpTriggerCharacter
+    extends typescriptLib.typescriptMod.SignatureHelpTriggerCharacter
   
   @js.native
   sealed trait `)`
-    extends typescriptLib.typescriptMod.tsNs.SignatureHelpRetriggerCharacter
+    extends typescriptLib.typescriptMod.SignatureHelpRetriggerCharacter
   
   @js.native
   sealed trait `,`
-    extends typescriptLib.typescriptMod.tsNs.SignatureHelpTriggerCharacter
+    extends typescriptLib.typescriptMod.SignatureHelpTriggerCharacter
   
   @js.native
   sealed trait `/`
-    extends typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
+    extends typescriptLib.typescriptMod.CompletionsTriggerCharacter
+  
+  @js.native
+  sealed trait `0DOT8` extends js.Object
+  
+  @js.native
+  sealed trait `3DOT4` extends js.Object
   
   @js.native
   sealed trait `<`
-    extends typescriptLib.typescriptMod.tsNs.SignatureHelpTriggerCharacter
-       with typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
+    extends typescriptLib.typescriptMod.SignatureHelpTriggerCharacter
+       with typescriptLib.typescriptMod.CompletionsTriggerCharacter
   
   @js.native
   sealed trait `@`
-    extends typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
+    extends typescriptLib.typescriptMod.CompletionsTriggerCharacter
   
   @js.native
   sealed trait BACKSLASH
-    extends typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
+    extends typescriptLib.typescriptMod.CompletionsTriggerCharacter
   
   @js.native
   sealed trait BACKTICK
-    extends typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
+    extends typescriptLib.typescriptMod.CompletionsTriggerCharacter
   
   @js.native
   sealed trait DOT
-    extends typescriptLib.typescriptMod.tsNs.CompletionsTriggerCharacter
+    extends typescriptLib.typescriptMod.CompletionsTriggerCharacter
   
   @js.native
   sealed trait JS extends js.Object
@@ -144,6 +150,10 @@ object typescriptLibStrings {
   def `,`: `,` = ",".asInstanceOf[`,`]
   @scala.inline
   def `/`: `/` = "/".asInstanceOf[`/`]
+  @scala.inline
+  def `0DOT8`: `0DOT8` = "0.8".asInstanceOf[`0DOT8`]
+  @scala.inline
+  def `3DOT4`: `3DOT4` = "3.4".asInstanceOf[`3DOT4`]
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
   @scala.inline

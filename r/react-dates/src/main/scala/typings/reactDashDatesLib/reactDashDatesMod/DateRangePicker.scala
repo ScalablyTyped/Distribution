@@ -8,11 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dates", "DateRangePicker")
 @js.native
 class DateRangePickerCls protected ()
-  extends reactLib.reactMod.ReactNs.ClassicComponent[
-      reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DateRangePickerShape, 
-      reactLib.reactMod.ReactNs.ComponentState
-    ] {
-  def this(props: reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DateRangePickerShape) = this()
-  def this(props: reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DateRangePickerShape, context: js.Any) = this()
+  extends reactLib.reactMod.ClassicComponent[DateRangePickerShape, reactLib.reactMod.ComponentState] {
+  def this(props: DateRangePickerShape) = this()
+  def this(props: DateRangePickerShape, context: js.Any) = this()
 }
 

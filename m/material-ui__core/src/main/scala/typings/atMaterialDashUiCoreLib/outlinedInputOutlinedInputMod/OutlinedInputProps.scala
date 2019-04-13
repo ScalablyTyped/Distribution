@@ -19,9 +19,9 @@ object OutlinedInputProps {
     labelWidth: scala.Double,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[OutlinedInputClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     notched: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): OutlinedInputProps = {
     val __obj = js.Dynamic.literal(labelWidth = labelWidth)
     if (className != null) __obj.updateDynamic("className")(className)

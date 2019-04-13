@@ -12,16 +12,16 @@ object TextDocumentSyncKindNs extends js.Object {
     * Documents are synced by always sending the full content
     * of the document.
     */
-  val Full: /* 1 */ scala.Double = js.native
+  val Full: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`1` = js.native
   /**
     * Documents are synced by sending the full content on open.
     * After that only incremental updates to the document are
     * send.
     */
-  val Incremental: /* 2 */ scala.Double = js.native
+  val Incremental: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`2` = js.native
   /**
     * Documents should not be synced at all.
     */
-  val None: /* 0 */ scala.Double = js.native
+  val None: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`0` = js.native
 }
 

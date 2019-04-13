@@ -30,3 +30,14 @@ object Background {
   }
 }
 
+@JSImport("@storybook/theming/dist/base", "background")
+@js.native
+object background extends js.Object {
+  var app: java.lang.String = js.native
+  var content: java.lang.String = js.native
+  var hoverable: java.lang.String = js.native
+  var negative: java.lang.String = js.native
+  var positive: java.lang.String = js.native
+  var warning: java.lang.String = js.native
+}
+

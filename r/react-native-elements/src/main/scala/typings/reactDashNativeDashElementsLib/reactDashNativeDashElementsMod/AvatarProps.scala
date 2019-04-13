@@ -11,16 +11,12 @@ trait AvatarProps extends js.Object {
     *
     * @default TouchableOpacity
     */
-  var Component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var Component: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Image Component of Avatar
     * @default React Native default Image component
     */
-  var ImageComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var ImageComponent: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Opacity when pressed
     *
@@ -88,7 +84,7 @@ trait AvatarProps extends js.Object {
   /**
     * Render a content inside placeholder
     */
-  var renderPlaceholderContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
+  var renderPlaceholderContent: js.UndefOr[reactLib.reactMod.ReactElement[js.Object]] = js.undefined
   /**
     * Determines the shape of avatar
     *
@@ -127,8 +123,8 @@ trait AvatarProps extends js.Object {
 object AvatarProps {
   @scala.inline
   def apply(
-    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
-    ImageComponent: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    Component: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
+    ImageComponent: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
     activeOpacity: scala.Int | scala.Double = null,
     avatarStyle: reactDashNativeLib.reactDashNativeMod.ImageStyle = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
@@ -143,7 +139,7 @@ object AvatarProps {
     onPress: () => scala.Unit = null,
     overlayContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     placeholderStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    renderPlaceholderContent: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    renderPlaceholderContent: reactLib.reactMod.ReactElement[js.Object] = null,
     rounded: js.UndefOr[scala.Boolean] = js.undefined,
     showEditButton: js.UndefOr[scala.Boolean] = js.undefined,
     size: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.small | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.medium | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.large | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.xlarge | scala.Double = null,

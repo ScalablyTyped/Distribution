@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("adone/glosses/std", "stream")
 @js.native
 class stream ()
-  extends nodeLib.streamMod.namespaced
+  extends nodeLib.streamMod.^
 

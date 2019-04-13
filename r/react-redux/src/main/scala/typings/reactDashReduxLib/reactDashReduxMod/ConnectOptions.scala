@@ -12,7 +12,7 @@ trait ConnectOptions extends js.Object {
     * @default ReactReduxContext
     */
   var context: js.UndefOr[
-    reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]]
+    reactLib.reactMod.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]]
   ] = js.undefined
   /**
     * Computes the connector component's displayName property relative to that of the wrapped component. Usually
@@ -61,7 +61,7 @@ trait ConnectOptions extends js.Object {
 object ConnectOptions {
   @scala.inline
   def apply(
-    context: reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null,
+    context: reactLib.reactMod.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null,
     getDisplayName: /* componentName */ java.lang.String => java.lang.String = null,
     methodName: java.lang.String = null,
     renderCountProp: java.lang.String = null,

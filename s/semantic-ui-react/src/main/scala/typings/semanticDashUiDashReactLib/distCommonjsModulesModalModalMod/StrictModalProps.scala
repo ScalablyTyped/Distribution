@@ -49,7 +49,7 @@ trait StrictModalProps
     */
   var onActionClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ ModalProps, 
       scala.Unit
     ]
@@ -63,7 +63,7 @@ trait StrictModalProps
   @JSName("onClose")
   var onClose_StrictModalProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ ModalProps, 
       scala.Unit
     ]
@@ -85,7 +85,7 @@ trait StrictModalProps
   @JSName("onOpen")
   var onOpen_StrictModalProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ ModalProps, 
       scala.Unit
     ]
@@ -103,7 +103,7 @@ trait StrictModalProps
     semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fullscreen
   ] = js.undefined
   /** Custom styles. */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object StrictModalProps {
@@ -115,7 +115,7 @@ object StrictModalProps {
     as: js.Any = null,
     basic: js.UndefOr[scala.Boolean] = js.undefined,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     closeIcon: js.Any = null,
     closeOnDimmerClick: js.UndefOr[scala.Boolean] = js.undefined,
@@ -137,19 +137,19 @@ object StrictModalProps {
     mountNode: js.Any = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onActionClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ ModalProps) => scala.Unit = null,
-    onClose: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ ModalProps) => scala.Unit = null,
+    onActionClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ ModalProps) => scala.Unit = null,
+    onClose: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ ModalProps) => scala.Unit = null,
     onMount: (/* nothing */ scala.Null, /* data */ ModalProps) => scala.Unit = null,
-    onOpen: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ ModalProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ ModalProps) => scala.Unit = null,
     onUnmount: (/* nothing */ scala.Null, /* data */ ModalProps) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined,
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fullscreen = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null
+    style: reactLib.reactMod.CSSProperties = null,
+    trigger: reactLib.reactMod.ReactNode = null,
+    triggerRef: reactLib.reactMod.Ref[_] = null
   ): StrictModalProps = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])

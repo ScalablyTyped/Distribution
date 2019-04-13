@@ -9,8 +9,8 @@ trait Anon_Drag extends js.Object {
   // optional callback fired when item is moved,
   var drag: js.UndefOr[
     js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+      /* event */ angularLib.angularMod.IAngularEvent, 
+      /* $element */ angularLib.angularMod.IAugmentedJQuery, 
       /* options */ js.Any, 
       scala.Unit
     ]
@@ -26,8 +26,8 @@ trait Anon_Drag extends js.Object {
   // optional callback fired when drag is started
   var start: js.UndefOr[
     js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+      /* event */ angularLib.angularMod.IAngularEvent, 
+      /* $element */ angularLib.angularMod.IAugmentedJQuery, 
       /* options */ js.Any, 
       scala.Unit
     ]
@@ -35,8 +35,8 @@ trait Anon_Drag extends js.Object {
   // optional callback fired when item is finished dragging
   var stop: js.UndefOr[
     js.Function3[
-      /* event */ angularLib.angularMod.angularNs.IAngularEvent, 
-      /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+      /* event */ angularLib.angularMod.IAngularEvent, 
+      /* $element */ angularLib.angularMod.IAugmentedJQuery, 
       /* options */ js.Any, 
       scala.Unit
     ]
@@ -46,13 +46,13 @@ trait Anon_Drag extends js.Object {
 object Anon_Drag {
   @scala.inline
   def apply(
-    drag: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
+    drag: (/* event */ angularLib.angularMod.IAngularEvent, /* $element */ angularLib.angularMod.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     handle: java.lang.String = null,
     scrollSensitivity: scala.Int | scala.Double = null,
     scrollSpeed: scala.Int | scala.Double = null,
-    start: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
-    stop: (/* event */ angularLib.angularMod.angularNs.IAngularEvent, /* $element */ angularLib.angularMod.angularNs.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null
+    start: (/* event */ angularLib.angularMod.IAngularEvent, /* $element */ angularLib.angularMod.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null,
+    stop: (/* event */ angularLib.angularMod.IAngularEvent, /* $element */ angularLib.angularMod.IAugmentedJQuery, /* options */ js.Any) => scala.Unit = null
   ): Anon_Drag = {
     val __obj = js.Dynamic.literal()
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction3(drag))

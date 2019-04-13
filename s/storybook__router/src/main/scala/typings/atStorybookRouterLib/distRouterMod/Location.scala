@@ -22,28 +22,10 @@ trait Location extends js.Object {
   def replace(url: java.lang.String): scala.Unit
 }
 
-object Location {
-  @scala.inline
-  def apply(
-    assign: java.lang.String => scala.Unit,
-    hash: java.lang.String,
-    host: java.lang.String,
-    hostname: java.lang.String,
-    href: java.lang.String,
-    key: java.lang.String,
-    origin: java.lang.String,
-    pathname: java.lang.String,
-    port: java.lang.String,
-    protocol: atStorybookRouterLib.atStorybookRouterLibStrings.`http:` | atStorybookRouterLib.atStorybookRouterLibStrings.`https:`,
-    reload: () => scala.Unit,
-    replace: java.lang.String => scala.Unit,
-    search: java.lang.String,
-    state: atStorybookRouterLib.Anon_Key,
-    toString: () => java.lang.String
-  ): Location = {
-    val __obj = js.Dynamic.literal(assign = js.Any.fromFunction1(assign), hash = hash, host = host, hostname = hostname, href = href, key = key, origin = origin, pathname = pathname, port = port, protocol = protocol.asInstanceOf[js.Any], reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction1(replace), search = search, state = state, toString = js.Any.fromFunction0(toString))
-  
-    __obj.asInstanceOf[Location]
-  }
+@JSImport("@storybook/router/dist/router", "Location")
+@js.native
+object Location extends js.Object {
+  var displayName: java.lang.String = js.native
+  def apply(hasChildren: atStorybookRouterLib.distRouterMod.QueryLocationProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

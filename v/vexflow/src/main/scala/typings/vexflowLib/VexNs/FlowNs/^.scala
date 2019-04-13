@@ -9,14 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val DEFAULT_NOTATION_FONT_SCALE: scala.Double = js.native
-  // from vexflow_font.js / gonville_original.js / gonville_all.js
-  var Font: vexflowLib.Anon_Ascender = js.native
   val RESOLUTION: scala.Double = js.native
   val STAVE_LINE_THICKNESS: scala.Double = js.native
   val STEM_HEIGHT: scala.Double = js.native
   // from tables.js:
   val STEM_WIDTH: scala.Double = js.native
-  val TIME4_4: vexflowLib.Anon_Beatvalue = js.native
   def accidentalCodes(acc: java.lang.String): vexflowLib.Anon_CodeGracenotewidth = js.native
   def articulationCodes(artic: java.lang.String): vexflowLib.Anon_Betweenlines = js.native
   def clefProperties(clef: java.lang.String): vexflowLib.Anon_Lineshift = js.native

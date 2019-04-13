@@ -15,3 +15,8 @@ class UserGroupsAdmin ()
   override def Item(Index: scala.Double): mfilesLib.IUserGroupAdmin = js.native
 }
 
+@JSGlobal("MFiles.UserGroupsAdmin")
+@js.native
+object UserGroupsAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserGroupsAdmin]
+

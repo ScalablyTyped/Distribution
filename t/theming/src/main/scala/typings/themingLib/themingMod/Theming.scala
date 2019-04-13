@@ -12,7 +12,7 @@ trait Theming[C /* <: java.lang.String */] extends js.Object {
   var themeListener: ThemeListener[C] = js.native
   @JSName("withTheme")
   var withTheme_Original: themingLib.Anon_Component = js.native
-  def withTheme[P](component: reactLib.reactMod.ReactNs.ComponentType[P with themingLib.Anon_Theme]): reactLib.reactMod.ReactNs.ComponentType[
+  def withTheme[P](component: reactLib.reactMod.ComponentType[P with themingLib.Anon_Theme]): reactLib.reactMod.ComponentType[
     stdLib.Pick[P, stdLib.Exclude[java.lang.String, themingLib.themingLibStrings.theme]]
   ] = js.native
 }

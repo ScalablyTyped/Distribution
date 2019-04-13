@@ -17,4 +17,5 @@ package object libTableInterfaceMod {
     /* nativeEvent */ stdLib.Event, 
     js.Any
   ]
+  type TableStateFilters = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 }

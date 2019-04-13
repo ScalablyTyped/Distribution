@@ -12,15 +12,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExtractTextPlugin
   extends webpackLib.webpackMod.Plugin {
-  def extract(
-    loader: extractDashTextDashWebpackDashPluginLib.extractDashTextDashWebpackDashPluginMod.ExtractTextPluginNs.LoaderOptions
-  ): js.Array[webpackLib.webpackMod.webpackNs.Loader] = js.native
-  def extract(loader: js.Array[webpackLib.webpackMod.webpackNs.Loader]): js.Array[webpackLib.webpackMod.webpackNs.Loader] = js.native
+  def extract(loader: LoaderOptions): js.Array[webpackLib.webpackMod.Loader] = js.native
+  def extract(loader: js.Array[webpackLib.webpackMod.Loader]): js.Array[webpackLib.webpackMod.Loader] = js.native
   /**
     * Creates an extracting loader from an existing loader (instance).
     * Use the resulting loader in `module.rules`/`module.loaders`.
     * @see {@link https://www.npmjs.com/package/extract-text-webpack-plugin#multiple-instances}
     */
-  def extract(loader: webpackLib.webpackMod.webpackNs.Loader): js.Array[webpackLib.webpackMod.webpackNs.Loader] = js.native
+  def extract(loader: webpackLib.webpackMod.Loader): js.Array[webpackLib.webpackMod.Loader] = js.native
 }
 

@@ -118,3 +118,9 @@ class Request protected ()
   override def text(): js.Promise[java.lang.String] = js.native
 }
 
+@JSImport("cross-fetch", "Request")
+@js.native
+object Request
+  extends org.scalablytyped.runtime.Instantiable1[/* input */ stdLib.RequestInfo, stdLib.Request]
+     with org.scalablytyped.runtime.Instantiable2[/* input */ stdLib.RequestInfo, /* init */ stdLib.RequestInit, stdLib.Request]
+

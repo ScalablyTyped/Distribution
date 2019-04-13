@@ -23,10 +23,11 @@ object strings {
     ARIA_PRESSED: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`aria-pressed`,
     CHANGE_EVENT: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`MDCIconToggle:change`,
     DATA_TOGGLE_OFF: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`data-toggle-off`,
-    DATA_TOGGLE_ON: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`data-toggle-on`
+    DATA_TOGGLE_ON: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`data-toggle-on`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(ARIA_DISABLED = ARIA_DISABLED, ARIA_LABEL = ARIA_LABEL, ARIA_PRESSED = ARIA_PRESSED, CHANGE_EVENT = CHANGE_EVENT, DATA_TOGGLE_OFF = DATA_TOGGLE_OFF, DATA_TOGGLE_ON = DATA_TOGGLE_ON)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

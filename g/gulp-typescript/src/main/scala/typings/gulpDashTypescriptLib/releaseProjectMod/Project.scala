@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait Project extends js.Object {
   val config: gulpDashTypescriptLib.releaseTypesMod.TsConfig = js.native
   val configFileName: java.lang.String = js.native
-  val options: typescriptLib.typescriptMod.tsNs.CompilerOptions = js.native
+  val options: typescriptLib.typescriptMod.CompilerOptions = js.native
   val projectDirectory: java.lang.String = js.native
-  val projectReferences: js.UndefOr[js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference]] = js.native
+  val projectReferences: js.UndefOr[js.Array[typescriptLib.typescriptMod.ProjectReference]] = js.native
   val rawConfig: js.Any = js.native
   val typescript: js.UndefOr[gulpDashTypescriptLib.Anon_08] = js.native
   def apply(): ICompileStream = js.native

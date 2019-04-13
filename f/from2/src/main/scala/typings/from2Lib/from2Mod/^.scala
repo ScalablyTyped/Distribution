@@ -8,16 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("from2", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(opts: from2Lib.from2Mod.from2Ns.ObjectModeOptions, read: from2Lib.from2Mod.from2Ns.ReadObjectInput): nodeLib.NodeJSNs.ReadableStream = js.native
-  def apply(opts: from2Lib.from2Mod.from2Ns.Options, read: from2Lib.from2Mod.from2Ns.ReadInput): nodeLib.NodeJSNs.ReadableStream = js.native
-  def apply(read: from2Lib.from2Mod.from2Ns.ReadInput): nodeLib.NodeJSNs.ReadableStream = js.native
-  def ctor(): from2Lib.from2Mod.from2Ns.From2Ctor[from2Lib.from2Mod.from2Ns.ReadInput] = js.native
-  def ctor(opts: from2Lib.from2Mod.from2Ns.ObjectModeOptions): from2Lib.from2Mod.from2Ns.From2Ctor[from2Lib.from2Mod.from2Ns.ReadObjectInput] = js.native
-  def ctor(opts: from2Lib.from2Mod.from2Ns.Options): from2Lib.from2Mod.from2Ns.From2Ctor[from2Lib.from2Mod.from2Ns.ReadInput] = js.native
-  def obj(
-    opts: from2Lib.Anon_ObjectMode with nodeLib.streamMod.internalNs.ReadableOptions,
-    read: from2Lib.from2Mod.from2Ns.ReadObjectInput
-  ): nodeLib.NodeJSNs.ReadableStream = js.native
-  def obj(read: from2Lib.from2Mod.from2Ns.ReadObjectInput): nodeLib.NodeJSNs.ReadableStream = js.native
+  def apply(opts: ObjectModeOptions, read: ReadObjectInput): nodeLib.NodeJSNs.ReadableStream = js.native
+  def apply(opts: Options, read: ReadInput): nodeLib.NodeJSNs.ReadableStream = js.native
+  def apply(read: ReadInput): nodeLib.NodeJSNs.ReadableStream = js.native
+  def ctor(): From2Ctor[ReadInput] = js.native
+  def ctor(opts: ObjectModeOptions): From2Ctor[ReadObjectInput] = js.native
+  def ctor(opts: Options): From2Ctor[ReadInput] = js.native
+  def obj(opts: from2Lib.Anon_ObjectMode with nodeLib.streamMod.ReadableOptions, read: ReadObjectInput): nodeLib.NodeJSNs.ReadableStream = js.native
+  def obj(read: ReadObjectInput): nodeLib.NodeJSNs.ReadableStream = js.native
 }
 

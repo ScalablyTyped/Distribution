@@ -96,6 +96,10 @@ trait Anon_ANIMATIONCURVEEASEIN extends js.Object {
   		 */
   val ATTRIBUTE_OBLIQUENESS: scala.Double = js.native
   /**
+  		 * Use with <Attribute.type> to manages the behaviour of string set.
+  		 */
+  val ATTRIBUTE_PARAGRAPH_STYLE: scala.Double = js.native
+  /**
   		 * Use with <Attribute.type> to display a shadow behind the text.
   		 */
   val ATTRIBUTE_SHADOW: scala.Double = js.native
@@ -1055,7 +1059,7 @@ trait Anon_ANIMATIONCURVEEASEIN extends js.Object {
   		 * Apple iOS specific UI capabilities.  All properties, methods and events in this namespace will
   		 * only work on Apple iOS devices.
   		 */
-  val iOSNs: Anon_ADSIZELANDSCAPE = js.native
+  val iOSNs: Anon_ACTIONPOLICYALLOW = js.native
   /**
   		 * iPad specific UI capabilities.
   		 */
@@ -1094,7 +1098,7 @@ trait Anon_ANIMATIONCURVEEASEIN extends js.Object {
   		 * Creates and returns an instance of <Titanium.UI.2DMatrix>.
   		 */
   def create2DMatrix(): titaniumLib.TitaniumNs.UINs.Matrix2D = js.native
-  def create2DMatrix(parameters: MatrixCreationDict): titaniumLib.TitaniumNs.UINs.Matrix2D = js.native
+  def create2DMatrix(parameters: Matrix2DCreationDict): titaniumLib.TitaniumNs.UINs.Matrix2D = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.3DMatrix>.
   		 */
@@ -1176,6 +1180,21 @@ trait Anon_ANIMATIONCURVEEASEIN extends js.Object {
   def createMaskedImage(): titaniumLib.TitaniumNs.UINs.MaskedImage = js.native
   def createMaskedImage(parameters: js.Any): titaniumLib.TitaniumNs.UINs.MaskedImage = js.native
   /**
+  		 * Creates and returns an instance of <Titanium.UI.Matrix2D>.
+  		 */
+  def createMatrix2D(): titaniumLib.TitaniumNs.UINs.Matrix2D = js.native
+  def createMatrix2D(parameters: Matrix2DCreationDict): titaniumLib.TitaniumNs.UINs.Matrix2D = js.native
+  /**
+  		 * Creates and returns an instance of <Titanium.UI.Matrix3D>.
+  		 */
+  def createMatrix3D(): titaniumLib.TitaniumNs.UINs.Matrix3D = js.native
+  def createMatrix3D(parameters: js.Any): titaniumLib.TitaniumNs.UINs.Matrix3D = js.native
+  /**
+  		 * Creates and returns an instance of <Titanium.UI.NavigationWindow>.
+  		 */
+  def createNavigationWindow(): titaniumLib.TitaniumNs.UINs.NavigationWindow = js.native
+  def createNavigationWindow(parameters: js.Any): titaniumLib.TitaniumNs.UINs.NavigationWindow = js.native
+  /**
   		 * Creates and returns an instance of <Titanium.UI.Notification>.
   		 */
   def createNotification(): titaniumLib.TitaniumNs.UINs.Notification = js.native
@@ -1225,6 +1244,11 @@ trait Anon_ANIMATIONCURVEEASEIN extends js.Object {
   		 */
   def createSearchBar(): titaniumLib.TitaniumNs.UINs.SearchBar = js.native
   def createSearchBar(parameters: js.Any): titaniumLib.TitaniumNs.UINs.SearchBar = js.native
+  /**
+  		 * Creates and returns an instance of <Titanium.UI.ShortcutItem>.
+  		 */
+  def createShortcutItem(): titaniumLib.TitaniumNs.UINs.ShortcutItem = js.native
+  def createShortcutItem(parameters: js.Any): titaniumLib.TitaniumNs.UINs.ShortcutItem = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Slider>.
   		 */

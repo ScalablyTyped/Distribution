@@ -15,7 +15,7 @@ trait Anon_CallbackCreate extends js.Object {
     * @param options The create options
     * @returns Promise metadata results
     */
-  def create(options: sparkpostLib.sparkpostMod.SparkPostNs.CreateRecipientList): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListMetadata] = js.native
+  def create(options: sparkpostLib.sparkpostMod.CreateRecipientList): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.RecipientListMetadata] = js.native
   /**
     * Create a recipient list by providing a recipient list object as the POST request body.
     * At a minimum, the “recipients” array is required, which must contain a valid “address”.
@@ -25,8 +25,8 @@ trait Anon_CallbackCreate extends js.Object {
     * @param callback The request callback with metadata results
     */
   def create(
-    options: sparkpostLib.sparkpostMod.SparkPostNs.CreateRecipientList,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListMetadata]
+    options: sparkpostLib.sparkpostMod.CreateRecipientList,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.RecipientListMetadata]
   ): scala.Unit = js.native
   /**
     * Permanently delete the specified recipient list.
@@ -41,14 +41,14 @@ trait Anon_CallbackCreate extends js.Object {
     * @param id The list id
     * @param callback The request callback
     */
-  def delete(id: java.lang.String, callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[scala.Unit]): scala.Unit = js.native
+  def delete(id: java.lang.String, callback: sparkpostLib.sparkpostMod.Callback[scala.Unit]): scala.Unit = js.native
   /**
     * Retrieve details about a specified recipient list by specifying its id in the URI path.
     * To retrieve the recipients contained in a list, the show_recipients parameter must be set to true.
     *
     * @param [options] specifies whether to retrieve the recipients. Defaults to false
     */
-  def get(id: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListWithRecipients] = js.native
+  def get(id: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.RecipientListWithRecipients] = js.native
   /**
     * Retrieve details about a specified recipient list by specifying its id in the URI path.
     * To retrieve the recipients contained in a list, the show_recipients parameter must be set to true.
@@ -56,9 +56,9 @@ trait Anon_CallbackCreate extends js.Object {
     */
   def get(
     id: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListWithRecipients]
+    callback: sparkpostLib.sparkpostMod.Callback[sparkpostLib.sparkpostMod.RecipientListWithRecipients]
   ): scala.Unit = js.native
-  def get(id: java.lang.String, options: Anon_Showrecipients): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListWithRecipients] = js.native
+  def get(id: java.lang.String, options: Anon_Showrecipients): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.RecipientListWithRecipients] = js.native
   /**
     * Retrieve details about a specified recipient list by specifying its id in the URI path.
     * To retrieve the recipients contained in a list, the show_recipients parameter must be set to true.
@@ -68,7 +68,7 @@ trait Anon_CallbackCreate extends js.Object {
   def get(
     id: java.lang.String,
     options: Anon_Showrecipients,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListWithRecipients]
+    callback: sparkpostLib.sparkpostMod.Callback[sparkpostLib.sparkpostMod.RecipientListWithRecipients]
   ): scala.Unit = js.native
   /**
     * List a summary of all recipient lists. The recipients for each list are not included in the results.
@@ -77,7 +77,7 @@ trait Anon_CallbackCreate extends js.Object {
     *
     * @returns Promise The RecipientList results array
     */
-  def list(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.RecipientList]] = js.native
+  def list(): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.RecipientList]] = js.native
   /**
     * List a summary of all recipient lists. The recipients for each list are not included in the results.
     * To retrieve recipient details, use the [Retrieve a Recipient List endpoint]{@link https://developers.sparkpost.com/api/recipient-lists.html#recipient-lists-retrieve-get},
@@ -86,7 +86,7 @@ trait Anon_CallbackCreate extends js.Object {
     * @param callback The request callback with RecipientList results array
     */
   def list(
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.RecipientList]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.RecipientList]]
   ): scala.Unit = js.native
   /**
     * Update an existing recipient list by specifying its ID in the URI path and use a recipient list object as the PUT request body.
@@ -94,7 +94,7 @@ trait Anon_CallbackCreate extends js.Object {
     *
     * @param id Identifier of the recipient list
     */
-  def update(id: java.lang.String, options: sparkpostLib.sparkpostMod.SparkPostNs.UpdateRecipientList): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListMetadata] = js.native
+  def update(id: java.lang.String, options: sparkpostLib.sparkpostMod.UpdateRecipientList): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.RecipientListMetadata] = js.native
   /**
     * Update an existing recipient list by specifying its ID in the URI path and use a recipient list object as the PUT request body.
     * Use the num_rcpt_errors parameter to limit the number of recipient errors returned.
@@ -105,8 +105,8 @@ trait Anon_CallbackCreate extends js.Object {
     */
   def update(
     id: java.lang.String,
-    options: sparkpostLib.sparkpostMod.SparkPostNs.UpdateRecipientList,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.RecipientListMetadata]
+    options: sparkpostLib.sparkpostMod.UpdateRecipientList,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.RecipientListMetadata]
   ): scala.Unit = js.native
 }
 

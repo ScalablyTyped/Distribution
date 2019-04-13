@@ -16,9 +16,9 @@ class PictureInPictureAltRounded protected ()
 @JSImport("@material-ui/icons", "PictureInPictureAltRounded")
 @js.native
 class PictureInPictureAltRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

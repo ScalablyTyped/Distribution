@@ -14,7 +14,7 @@ trait CalendarBaseProps extends js.Object {
     *  Provide custom day rendering component.
     */
   var dayComponent: js.UndefOr[
-    (reactLib.reactMod.Component[DayComponentProps, js.Object, _]) | reactLib.reactMod.ReactNs.SFC[DayComponentProps]
+    (reactLib.reactMod.Component[DayComponentProps, js.Object, _]) | reactLib.reactMod.SFC[DayComponentProps]
   ] = js.undefined
   /**
     *  If hideArrows=false and hideExtraDays=false do not switch month when tapping on greyed out
@@ -87,7 +87,7 @@ trait CalendarBaseProps extends js.Object {
   var renderArrow: js.UndefOr[
     js.Function1[
       /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /**
@@ -110,7 +110,7 @@ object CalendarBaseProps {
   @scala.inline
   def apply(
     current: TCalendarDate = null,
-    dayComponent: (reactLib.reactMod.Component[DayComponentProps, js.Object, _]) | reactLib.reactMod.ReactNs.SFC[DayComponentProps] = null,
+    dayComponent: (reactLib.reactMod.Component[DayComponentProps, js.Object, _]) | reactLib.reactMod.SFC[DayComponentProps] = null,
     disableMonthChange: js.UndefOr[scala.Boolean] = js.undefined,
     disabledByDefault: js.UndefOr[scala.Boolean] = js.undefined,
     displayLoadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,
@@ -127,7 +127,7 @@ object CalendarBaseProps {
     onPressArrowLeft: /* substractMonth */ js.Function0[scala.Unit] => scala.Unit = null,
     onPressArrowRight: /* addMonth */ js.Function0[scala.Unit] => scala.Unit = null,
     onVisibleMonthsChange: /* months */ js.Array[DateObject] => scala.Unit = null,
-    renderArrow: /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderArrow: /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right => reactLib.reactMod.ReactNode = null,
     showWeekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     theme: CalendarTheme = null

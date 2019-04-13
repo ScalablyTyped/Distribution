@@ -15,9 +15,9 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authAnonymously")
-  def $authAnonymously(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authAnonymously(): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authAnonymously")
-  def $authAnonymously(options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authAnonymously(options: js.Object): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with a custom authentication token.
   	 *
@@ -29,9 +29,9 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithCustomToken")
-  def $authWithCustomToken(authToken: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithCustomToken(authToken: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authWithCustomToken")
-  def $authWithCustomToken(authToken: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithCustomToken(authToken: java.lang.String, options: js.Object): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with the OAuth popup flow.
   	 *
@@ -42,9 +42,9 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithOAuthPopup")
-  def $authWithOAuthPopup(provider: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthPopup(provider: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authWithOAuthPopup")
-  def $authWithOAuthPopup(provider: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthPopup(provider: java.lang.String, options: js.Object): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with the OAuth redirect flow.
   	 *
@@ -55,13 +55,13 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithOAuthRedirect")
-  def $authWithOAuthRedirect(provider: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthRedirect(provider: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authWithOAuthRedirect")
-  def $authWithOAuthRedirect(provider: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthRedirect(provider: java.lang.String, options: js.Object): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: java.lang.String, credentials: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthToken(provider: java.lang.String, credentials: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: java.lang.String, credentials: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthToken(provider: java.lang.String, credentials: java.lang.String, options: js.Object): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with an OAuth token.
   	 *
@@ -74,9 +74,9 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: java.lang.String, credentials: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthToken(provider: java.lang.String, credentials: js.Object): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: java.lang.String, credentials: js.Object, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthToken(provider: java.lang.String, credentials: js.Object, options: js.Object): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with an email/password user.
   	 *
@@ -89,12 +89,12 @@ trait AngularFireAuth extends js.Object {
   @JSName("$authWithPassword")
   def $authWithPassword(
     credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
-  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  ): angularLib.angularMod.IPromise[_] = js.native
   @JSName("$authWithPassword")
   def $authWithPassword(
     credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any,
     options: js.Object
-  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  ): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Changes the email for an email/password user.
   	 *
@@ -105,7 +105,7 @@ trait AngularFireAuth extends js.Object {
   @JSName("$changeEmail")
   def $changeEmail(
     credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseChangeEmailCredentials */ js.Any
-  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  ): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Changes the password for an email/password user.
   	 *
@@ -116,7 +116,7 @@ trait AngularFireAuth extends js.Object {
   @JSName("$changePassword")
   def $changePassword(
     credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseChangePasswordCredentials */ js.Any
-  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  ): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Creates a new email/password user. Note that this function only creates the user, if you
   	 * wish to log in as the newly created user, call $authWithPassword() after the promise for
@@ -129,7 +129,7 @@ trait AngularFireAuth extends js.Object {
   @JSName("$createUser")
   def $createUser(
     credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
-  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  ): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Synchronously retrieves the current authentication data.
   	 *
@@ -162,7 +162,7 @@ trait AngularFireAuth extends js.Object {
   @JSName("$removeUser")
   def $removeUser(
     credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
-  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  ): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Utility method which can be used in a route's resolve() method to require that a route has
   	 * a logged in client.
@@ -171,7 +171,7 @@ trait AngularFireAuth extends js.Object {
   	 * state or rejected if the client is not authenticated.
   	 */
   @JSName("$requireAuth")
-  def $requireAuth(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $requireAuth(): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Sends a password reset email to an email/password user.
   	 *
@@ -182,7 +182,7 @@ trait AngularFireAuth extends js.Object {
   @JSName("$resetPassword")
   def $resetPassword(
     credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseResetPasswordCredentials */ js.Any
-  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  ): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Unauthenticates the Firebase reference.
   	 */
@@ -196,6 +196,6 @@ trait AngularFireAuth extends js.Object {
   	 * state, which will be null if the client is not authenticated.
   	 */
   @JSName("$waitForAuth")
-  def $waitForAuth(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $waitForAuth(): angularLib.angularMod.IPromise[_] = js.native
 }
 

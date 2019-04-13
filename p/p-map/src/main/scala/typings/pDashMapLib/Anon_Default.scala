@@ -32,14 +32,11 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
+  def apply[Element, NewElement](input: stdLib.Iterable[Element], mapper: pDashMapLib.pDashMapMod.Mapper[Element, NewElement]): js.Promise[js.Array[NewElement]] = js.native
   def apply[Element, NewElement](
     input: stdLib.Iterable[Element],
-    mapper: pDashMapLib.pDashMapMod.pMapNs.Mapper[Element, NewElement]
-  ): js.Promise[js.Array[NewElement]] = js.native
-  def apply[Element, NewElement](
-    input: stdLib.Iterable[Element],
-    mapper: pDashMapLib.pDashMapMod.pMapNs.Mapper[Element, NewElement],
-    options: pDashMapLib.pDashMapMod.pMapNs.Options
+    mapper: pDashMapLib.pDashMapMod.Mapper[Element, NewElement],
+    options: pDashMapLib.pDashMapMod.Options
   ): js.Promise[js.Array[NewElement]] = js.native
 }
 

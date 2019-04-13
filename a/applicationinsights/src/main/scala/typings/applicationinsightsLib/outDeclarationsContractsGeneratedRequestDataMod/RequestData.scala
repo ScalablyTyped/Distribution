@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait RequestData
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.namespaced {
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.^ {
   /**
     * Request duration in format: DD.HH:MM:SS.MMMMMM. Must be less than 1000 days.
     */

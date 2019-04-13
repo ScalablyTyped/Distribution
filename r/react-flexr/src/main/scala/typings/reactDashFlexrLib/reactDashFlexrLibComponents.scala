@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashFlexrLibComponents {
   @scala.inline
-  def Cell: reactLib.reactMod.ReactNs.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.CellProps] = js.constructorOf[reactDashFlexrLib.reactDashFlexrMod.Cell].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.CellProps]]
+  def Cell: reactLib.reactMod.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.CellProps] = js.constructorOf[reactDashFlexrLib.reactDashFlexrMod.Cell].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.CellProps]]
   @scala.inline
-  def Grid: reactLib.reactMod.ReactNs.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.GridProps] = js.constructorOf[reactDashFlexrLib.reactDashFlexrMod.Grid].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.GridProps]]
+  def Grid: reactLib.reactMod.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.GridProps] = js.constructorOf[reactDashFlexrLib.reactDashFlexrMod.Grid].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.GridProps]]
   @scala.inline
   def CellProps: reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.CellProps.type = reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.CellProps
   type CellProps = reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.CellProps

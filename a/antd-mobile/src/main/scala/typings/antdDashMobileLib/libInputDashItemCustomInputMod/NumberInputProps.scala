@@ -16,17 +16,17 @@ trait NumberInputProps extends js.Object {
   var moneyKeyboardAlign: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.left | antdDashMobileLib.antdDashMobileLibStrings.right | java.lang.String
   ] = js.undefined
-  var moneyKeyboardHeader: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var moneyKeyboardHeader: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var moneyKeyboardWrapProps: js.UndefOr[js.Object] = js.undefined
   var onBlur: js.UndefOr[antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler] = js.undefined
   var onChange: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], scala.Unit]
+    js.Function1[/* e */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement], scala.Unit]
   ] = js.undefined
   var onFocus: js.UndefOr[antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler] = js.undefined
   var onVirtualKeyboardConfirm: js.UndefOr[antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -42,15 +42,15 @@ object NumberInputProps {
     keyboardPrefixCls: java.lang.String = null,
     maxLength: scala.Int | scala.Double = null,
     moneyKeyboardAlign: antdDashMobileLib.antdDashMobileLibStrings.left | antdDashMobileLib.antdDashMobileLibStrings.right | java.lang.String = null,
-    moneyKeyboardHeader: reactLib.reactMod.ReactNs.ReactNode = null,
+    moneyKeyboardHeader: reactLib.reactMod.ReactNode = null,
     moneyKeyboardWrapProps: js.Object = null,
     onBlur: antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler = null,
-    onChange: /* e */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement] => scala.Unit = null,
+    onChange: /* e */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement] => scala.Unit = null,
     onFocus: antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler = null,
     onVirtualKeyboardConfirm: antdDashMobileLib.libInputDashItemPropsTypeMod.InputEventHandler = null,
     placeholder: java.lang.String = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: java.lang.String = null,
     value: java.lang.String = null
   ): NumberInputProps = {

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-radio-group", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Radio: reactLib.reactMod.ReactNs.ComponentClass[
+  val Radio: reactLib.reactMod.ComponentClass[
     reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.RadioNs.RadioProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val RadioGroup: reactLib.reactMod.ReactNs.ComponentClass[
+  val RadioGroup: reactLib.reactMod.ComponentClass[
     reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.RadioGroupNs.RadioGroupProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

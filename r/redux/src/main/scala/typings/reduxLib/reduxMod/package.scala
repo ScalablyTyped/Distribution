@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object reduxMod {
   type ActionCreator[A] = js.Function1[/* repeated */ js.Any, A]
+  type ActionCreatorsMapObject[A] = org.scalablytyped.runtime.StringDictionary[ActionCreator[A]]
   type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]:? object}
     */ reduxLib.reduxLibStrings.DeepPartial with js.Any

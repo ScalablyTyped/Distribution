@@ -6,34 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_InputM extends js.Object {
-  var input: js.UndefOr[nodeLib.Buffer] = js.undefined
-  var m: js.UndefOr[scala.Double] = js.undefined
-  var n: js.UndefOr[scala.Double] = js.undefined
-  var network: js.UndefOr[bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network] = js.undefined
-  var output: js.UndefOr[nodeLib.Buffer] = js.undefined
-  var pubkeys: js.UndefOr[js.Array[nodeLib.Buffer]] = js.undefined
-  var signatures: js.UndefOr[js.Array[nodeLib.Buffer]] = js.undefined
+  var input: nodeLib.Buffer
+  var m: scala.Double
+  var n: scala.Double
+  var output: nodeLib.Buffer
+  var pubkeys: js.Array[nodeLib.Buffer]
+  var signatures: js.Array[nodeLib.Buffer]
+  var witness: js.Array[nodeLib.Buffer]
 }
 
 object Anon_InputM {
   @scala.inline
   def apply(
-    input: nodeLib.Buffer = null,
-    m: scala.Int | scala.Double = null,
-    n: scala.Int | scala.Double = null,
-    network: bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network = null,
-    output: nodeLib.Buffer = null,
-    pubkeys: js.Array[nodeLib.Buffer] = null,
-    signatures: js.Array[nodeLib.Buffer] = null
+    input: nodeLib.Buffer,
+    m: scala.Double,
+    n: scala.Double,
+    output: nodeLib.Buffer,
+    pubkeys: js.Array[nodeLib.Buffer],
+    signatures: js.Array[nodeLib.Buffer],
+    witness: js.Array[nodeLib.Buffer]
   ): Anon_InputM = {
-    val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (pubkeys != null) __obj.updateDynamic("pubkeys")(pubkeys)
-    if (signatures != null) __obj.updateDynamic("signatures")(signatures)
+    val __obj = js.Dynamic.literal(input = input, m = m, n = n, output = output, pubkeys = pubkeys, signatures = signatures, witness = witness)
+  
     __obj.asInstanceOf[Anon_InputM]
   }
 }

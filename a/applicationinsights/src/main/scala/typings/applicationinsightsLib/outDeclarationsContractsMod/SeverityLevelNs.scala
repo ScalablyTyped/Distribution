@@ -21,6 +21,5 @@ object SeverityLevelNs extends js.Object {
       ] = js.native
   }
   
-  type SeverityLevel = applicationinsightsLib.outDeclarationsContractsGeneratedSeverityLevelMod.SeverityLevel
 }
 

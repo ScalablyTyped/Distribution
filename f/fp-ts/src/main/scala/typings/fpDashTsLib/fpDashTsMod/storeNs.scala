@@ -14,7 +14,7 @@ object storeNs extends js.Object {
     def this(peek: js.Function1[/* s */ S, A], pos: S) = this()
   }
   
-  val URI: /* Store */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Store = js.native
   val store: fpDashTsLib.libComonadMod.Comonad2[fpDashTsLib.libStoreMod.URI] = js.native
   def experiment[F](F: fpDashTsLib.libFunctorMod.Functor[F]): js.Function1[
     /* f */ js.Function1[/* s */ js.Any, fpDashTsLib.libHKTMod.HKT[F, _]], 

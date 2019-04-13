@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CloudWatchLogs ()
-  extends awsDashSdkLib.clientsCloudwatchlogsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCloudwatchlogsMod.^ {
+  def this(options: awsDashSdkLib.clientsCloudwatchlogsMod.ClientConfiguration) = this()
 }
 

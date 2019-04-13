@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 package object typesLibClientMod {
   type ClientSubscribeCallback = js.Function2[/* err */ stdLib.Error, /* granted */ js.Array[ISubscriptionGrant], scala.Unit]
   type CloseCallback = js.Function0[scala.Unit]
+  type ISubscriptionMap = /**
+    * object which has topic names as object keys and as value the QoS, like {'test1': 0, 'test2': 1}.
+    */
+  org.scalablytyped.runtime.StringDictionary[mqttDashPacketLib.mqttDashPacketMod.QoS]
   type OnErrorCallback = js.Function1[/* error */ stdLib.Error, scala.Unit]
   type OnMessageCallback = js.Function3[
     /* topic */ java.lang.String, 

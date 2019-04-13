@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object filtersFilterMod {
-  type Filter = streamDashJsonLib.filtersFilterBaseMod.namespaced
+  type Filter = streamDashJsonLib.filtersFilterBaseMod.^
 }

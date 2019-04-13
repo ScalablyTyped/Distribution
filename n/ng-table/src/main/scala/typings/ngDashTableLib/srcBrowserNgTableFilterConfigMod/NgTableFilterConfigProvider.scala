@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfigProvider")
 @js.native
 class NgTableFilterConfigProvider protected ()
-  extends angularLib.angularMod.angularNs.IServiceProvider {
-  def this($injector: angularLib.angularMod.angularNs.autoNs.IInjectorService) = this()
+  extends angularLib.angularMod.IServiceProvider {
+  def this($injector: angularLib.angularMod.autoNs.IInjectorService) = this()
   /* CompleteClass */
   @JSName("$get")
   override var $get: js.Any = js.native

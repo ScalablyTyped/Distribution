@@ -6,37 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartComponentProps extends js.Object {
-  var data: ChartData[chartDotJsLib.chartDotJsMod.ChartNs.ChartData]
+  var data: ChartData[chartDotJsLib.chartDotJsMod.ChartData]
   var datasetKeyProvider: js.UndefOr[js.Function1[/* any */ js.Any, _]] = js.undefined
   var getDatasetAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined
   var getElementAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined
   var getElementsAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
-  var legend: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartNs.ChartLegendOptions] = js.undefined
+  var legend: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartLegendOptions] = js.undefined
   var onElementsClick: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined
    // alias for getElementsAtEvent (backward compatibility)
-  var options: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartNs.ChartOptions] = js.undefined
+  var options: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartOptions] = js.undefined
   var plugins: js.UndefOr[js.Array[js.Object]] = js.undefined
   var redraw: js.UndefOr[scala.Boolean] = js.undefined
-  var `type`: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartNs.ChartType] = js.undefined
+  var `type`: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartType] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
 object ChartComponentProps {
   @scala.inline
   def apply(
-    data: ChartData[chartDotJsLib.chartDotJsMod.ChartNs.ChartData],
+    data: ChartData[chartDotJsLib.chartDotJsMod.ChartData],
     datasetKeyProvider: /* any */ js.Any => _ = null,
     getDatasetAtEvent: /* e */ js.Any => scala.Unit = null,
     getElementAtEvent: /* e */ js.Any => scala.Unit = null,
     getElementsAtEvent: /* e */ js.Any => scala.Unit = null,
     height: scala.Int | scala.Double = null,
-    legend: chartDotJsLib.chartDotJsMod.ChartNs.ChartLegendOptions = null,
+    legend: chartDotJsLib.chartDotJsMod.ChartLegendOptions = null,
     onElementsClick: /* e */ js.Any => scala.Unit = null,
-    options: chartDotJsLib.chartDotJsMod.ChartNs.ChartOptions = null,
+    options: chartDotJsLib.chartDotJsMod.ChartOptions = null,
     plugins: js.Array[js.Object] = null,
     redraw: js.UndefOr[scala.Boolean] = js.undefined,
-    `type`: chartDotJsLib.chartDotJsMod.ChartNs.ChartType = null,
+    `type`: chartDotJsLib.chartDotJsMod.ChartType = null,
     width: scala.Int | scala.Double = null
   ): ChartComponentProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])

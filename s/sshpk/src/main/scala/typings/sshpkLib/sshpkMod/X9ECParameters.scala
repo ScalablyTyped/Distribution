@@ -7,15 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sshpk", "X9ECParameters")
 @js.native
-class X9ECParameters ()
-  extends sshpkLib.sshpkMod.SshPKNs.X9ECParameters {
-  /* CompleteClass */
-  override var G: js.Any = js.native
-  /* CompleteClass */
-  override var g: js.Any = js.native
-  /* CompleteClass */
-  override var h: js.Any = js.native
-  /* CompleteClass */
-  override var n: js.Any = js.native
+class X9ECParameters () extends js.Object {
+  var G: js.Any = js.native
+  var g: js.Any = js.native
+  var h: js.Any = js.native
+  var n: js.Any = js.native
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class Object ()
   extends backboneLib.backboneMod.EventsMixin
      with CommonMixin
-     with backboneLib.backboneMod.BackboneNs.Events {
+     with backboneLib.backboneMod.Events {
   def this(options: ObjectOptions) = this()
   /* CompleteClass */
   override var bindEvents: js.Any = js.native

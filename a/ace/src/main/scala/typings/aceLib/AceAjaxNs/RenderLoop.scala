@@ -11,3 +11,8 @@ trait RenderLoop extends js.Object
 @js.native
 class RenderLoopCls () extends RenderLoop
 
+@JSGlobal("AceAjax.RenderLoop")
+@js.native
+object RenderLoop
+  extends org.scalablytyped.runtime.Instantiable0[RenderLoop]
+

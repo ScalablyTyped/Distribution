@@ -14,12 +14,12 @@ trait RadioButtonGroupProps extends js.Object {
   var name: java.lang.String
   var onChange: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], 
+      /* e */ reactLib.reactMod.FormEvent[js.Object], 
       /* selected */ java.lang.String, 
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var valueSelected: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -30,8 +30,8 @@ object RadioButtonGroupProps {
     className: java.lang.String = null,
     defaultSelected: js.Any = null,
     labelPosition: materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right = null,
-    onChange: (/* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], /* selected */ java.lang.String) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onChange: (/* e */ reactLib.reactMod.FormEvent[js.Object], /* selected */ java.lang.String) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null,
     valueSelected: js.Any = null
   ): RadioButtonGroupProps = {
     val __obj = js.Dynamic.literal(name = name)

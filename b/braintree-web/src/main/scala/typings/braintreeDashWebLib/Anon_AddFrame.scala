@@ -11,10 +11,7 @@ trait Anon_AddFrame extends js.Object {
   var nonce: java.lang.String = js.native
   var removeFrame: js.UndefOr[js.Function0[scala.Unit]] = js.native
   def addFrame(): scala.Unit = js.native
-  def addFrame(err: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeError): scala.Unit = js.native
-  def addFrame(
-    err: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeError,
-    iframe: stdLib.HTMLIFrameElement
-  ): scala.Unit = js.native
+  def addFrame(err: braintreeDashWebLib.braintreeDashWebMod.BraintreeError): scala.Unit = js.native
+  def addFrame(err: braintreeDashWebLib.braintreeDashWebMod.BraintreeError, iframe: stdLib.HTMLIFrameElement): scala.Unit = js.native
 }
 

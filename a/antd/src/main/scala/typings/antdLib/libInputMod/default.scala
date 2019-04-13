@@ -16,7 +16,7 @@ class default protected ()
 @JSImport("antd/lib/input", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[antdLib.libInputGroupMod.GroupProps] = js.native
+  var Group: reactLib.reactMod.StatelessComponent[antdLib.libInputGroupMod.GroupProps] = js.native
   var Password: antdLib.Anon_DefaultPropsAnonAction = js.native
   var Search: antdLib.Anon_DefaultPropsAnonEnterButton = js.native
   var TextArea: org.scalablytyped.runtime.Instantiable0[antdLib.libInputTextAreaMod.default] = js.native

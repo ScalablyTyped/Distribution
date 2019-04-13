@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITemplateScopeOptions extends js.Object {
-  var formControl: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController]
+  var formControl: angularLib.angularMod.IFormController | js.Array[angularLib.angularMod.IFormController]
   var templateOptions: ITemplateOptions
   var validation: js.Object
 }
@@ -14,7 +14,7 @@ trait ITemplateScopeOptions extends js.Object {
 object ITemplateScopeOptions {
   @scala.inline
   def apply(
-    formControl: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController],
+    formControl: angularLib.angularMod.IFormController | js.Array[angularLib.angularMod.IFormController],
     templateOptions: ITemplateOptions,
     validation: js.Object
   ): ITemplateScopeOptions = {

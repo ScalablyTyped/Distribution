@@ -43,15 +43,6 @@ object atUifabricMergeDashStylesLibStrings {
     extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait Anon_SubComponentStyles extends js.Object
-  
-  @js.native
-  sealed trait Anon_SubComponentStylesAny extends js.Object
-  
-  @js.native
-  sealed trait Anon_SubComponentStylesMapToFunctionType extends js.Object
-  
-  @js.native
   sealed trait IConcatenatedStyleSet extends js.Object
   
   @js.native
@@ -616,12 +607,6 @@ object atUifabricMergeDashStylesLibStrings {
   def `800`: `800` = "800".asInstanceOf[`800`]
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
-  @scala.inline
-  def Anon_SubComponentStyles: Anon_SubComponentStyles = "Anon_SubComponentStyles".asInstanceOf[Anon_SubComponentStyles]
-  @scala.inline
-  def Anon_SubComponentStylesAny: Anon_SubComponentStylesAny = "Anon_SubComponentStylesAny".asInstanceOf[Anon_SubComponentStylesAny]
-  @scala.inline
-  def Anon_SubComponentStylesMapToFunctionType: Anon_SubComponentStylesMapToFunctionType = "Anon_SubComponentStylesMapToFunctionType".asInstanceOf[Anon_SubComponentStylesMapToFunctionType]
   @scala.inline
   def IConcatenatedStyleSet: IConcatenatedStyleSet = "IConcatenatedStyleSet".asInstanceOf[IConcatenatedStyleSet]
   @scala.inline

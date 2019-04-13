@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenData extends js.Object {
   /** The children to be rendered. */
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   /* The data of the selected option. */
   var data: js.Any
   /** props passed to the wrapping element for the group. */
@@ -24,7 +24,7 @@ trait Anon_ChildrenData extends js.Object {
 object Anon_ChildrenData {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     data: js.Any,
     innerProps: reactDashSelectLib.libComponentsOptionMod.InnerProps,
     innerRef: reactDashSelectLib.libTypesMod.InnerRef,

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Jumbotron")
 @js.native
 class Jumbotron ()
-  extends reactDashBootstrapLib.libJumbotronMod.namespaced
+  extends reactDashBootstrapLib.libJumbotronMod.^
 

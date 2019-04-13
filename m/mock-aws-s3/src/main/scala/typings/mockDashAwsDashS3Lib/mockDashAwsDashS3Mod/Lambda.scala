@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Lambda ()
   extends awsDashSdkLib.awsDashSdkMod.Lambda {
-  def this(options: awsDashSdkLib.clientsLambdaMod.LambdaNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsLambdaMod.ClientConfiguration) = this()
 }
 

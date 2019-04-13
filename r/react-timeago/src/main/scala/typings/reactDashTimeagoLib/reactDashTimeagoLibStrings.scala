@@ -8,39 +8,39 @@ import scala.scalajs.js.annotation._
 object reactDashTimeagoLibStrings {
   @js.native
   sealed trait ago
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Suffix
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Suffix
   
   @js.native
   sealed trait day
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Unit
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Unit
   
   @js.native
   sealed trait `from now`
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Suffix
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Suffix
   
   @js.native
   sealed trait hour
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Unit
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Unit
   
   @js.native
   sealed trait minute
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Unit
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Unit
   
   @js.native
   sealed trait month
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Unit
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Unit
   
   @js.native
   sealed trait second
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Unit
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Unit
   
   @js.native
   sealed trait week
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Unit
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Unit
   
   @js.native
   sealed trait year
-    extends reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.Unit
+    extends reactDashTimeagoLib.reactDashTimeagoMod.Unit
   
   @scala.inline
   def ago: ago = "ago".asInstanceOf[ago]

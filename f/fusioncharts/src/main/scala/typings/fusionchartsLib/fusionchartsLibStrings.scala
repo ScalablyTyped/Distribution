@@ -8,44 +8,44 @@ import scala.scalajs.js.annotation._
 object fusionchartsLibStrings {
   @js.native
   sealed trait bottom
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ImageVAlign
+    extends fusionchartsLib.fusionchartsMod.ImageVAlign
   
   @js.native
   sealed trait csv
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ChartDataFormats
+    extends fusionchartsLib.fusionchartsMod.ChartDataFormats
   
   @js.native
   sealed trait json
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ChartDataFormats
+    extends fusionchartsLib.fusionchartsMod.ChartDataFormats
   
   @js.native
   sealed trait jsonurl
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ChartDataFormats
+    extends fusionchartsLib.fusionchartsMod.ChartDataFormats
   
   @js.native
   sealed trait left
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ImageHAlign
+    extends fusionchartsLib.fusionchartsMod.ImageHAlign
   
   @js.native
   sealed trait middle
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ImageHAlign
-       with fusionchartsLib.fusionchartsMod.FusionChartsNs.ImageVAlign
+    extends fusionchartsLib.fusionchartsMod.ImageHAlign
+       with fusionchartsLib.fusionchartsMod.ImageVAlign
   
   @js.native
   sealed trait right
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ImageHAlign
+    extends fusionchartsLib.fusionchartsMod.ImageHAlign
   
   @js.native
   sealed trait top
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ImageVAlign
+    extends fusionchartsLib.fusionchartsMod.ImageVAlign
   
   @js.native
   sealed trait xml
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ChartDataFormats
+    extends fusionchartsLib.fusionchartsMod.ChartDataFormats
   
   @js.native
   sealed trait xmlurl
-    extends fusionchartsLib.fusionchartsMod.FusionChartsNs.ChartDataFormats
+    extends fusionchartsLib.fusionchartsMod.ChartDataFormats
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

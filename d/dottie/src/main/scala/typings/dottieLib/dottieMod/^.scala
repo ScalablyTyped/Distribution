@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("dottie", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[dottieLib.dottieMod.dottieNs.Dottie]
+  extends org.scalablytyped.runtime.TopLevel[Dottie]
 

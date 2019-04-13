@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
+      /* event */ reactLib.reactMod.ChangeEvent[js.Object], 
       /* expanded */ scala.Boolean, 
       scala.Unit
     ]
@@ -31,9 +31,9 @@ object ExpansionPanelProps {
     defaultExpanded: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     expanded: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* expanded */ scala.Boolean) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* expanded */ scala.Boolean) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): ExpansionPanelProps = {
     val __obj = js.Dynamic.literal()
     if (CollapseProps != null) __obj.updateDynamic("CollapseProps")(CollapseProps)

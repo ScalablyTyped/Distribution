@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(text: java.lang.String): js.Any = js.native
   def stringify(`val`: js.Any): java.lang.String = js.native
-  def stringify(`val`: js.Any, opts: jsonicLib.jsonicMod.jsonicNs.Options): java.lang.String = js.native
+  def stringify(`val`: js.Any, opts: Options): java.lang.String = js.native
 }
 

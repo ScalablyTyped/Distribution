@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IFileTransferPromise[T]
-  extends angularLib.angularMod.angularNs.IPromise[T]
+  extends angularLib.angularMod.IPromise[T]
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TreeNodeNormal extends TreeNode {
+trait TreeNodeNormal extends js.Object {
   var children: js.UndefOr[js.Array[TreeNodeNormal]] = js.undefined
   var disableCheckbox: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,9 +14,9 @@ trait TreeNodeNormal extends TreeNode {
   /**
     * @deprecated Please use `title` instead.
     */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var value: java.lang.String | scala.Double
 }
 
@@ -29,9 +29,9 @@ object TreeNodeNormal {
     disableCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     isLeaf: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): TreeNodeNormal = {
     val __obj = js.Dynamic.literal(key = key, value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 object reactDashFocusDashLockLibComponents {
   @scala.inline
-  def AutoFocusInside: reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusInside].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps]]
+  def AutoFocusInside: reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusInside].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps]]
   @scala.inline
-  def FreeFocusInside: reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.FreeFocusProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.FreeFocusInside].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.FreeFocusProps]]
+  def FreeFocusInside: reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.FreeFocusProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.FreeFocusInside].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.FreeFocusProps]]
   @scala.inline
-  def InFocusGuard: reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.InFocusGuardProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.InFocusGuard].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.InFocusGuardProps]]
+  def InFocusGuard: reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.InFocusGuardProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.InFocusGuard].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.InFocusGuardProps]]
   @scala.inline
-  def MoveFocusInside: reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.MoveFocusInside].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps]]
+  def MoveFocusInside: reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.MoveFocusInside].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps]]
   @scala.inline
-  def ReactDashFocusDashLock: reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.Props] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.Props]]
+  def ReactDashFocusDashLock: reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.Props] = js.constructorOf[reactDashFocusDashLockLib.reactDashFocusDashLockMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFocusDashLockLib.reactDashFocusDashLockMod.Props]]
   @scala.inline
   def AutoFocusProps: reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps.type = reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps
   type AutoFocusProps = reactDashFocusDashLockLib.reactDashFocusDashLockMod.AutoFocusProps

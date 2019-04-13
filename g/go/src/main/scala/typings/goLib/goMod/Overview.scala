@@ -15,12 +15,17 @@ import scala.scalajs.js.annotation._
 /**
   * @param {string} id A reference to a DIV by its ID as a string.
   */
-class Overview ()
-  extends goLib.goMod.goNs.Overview {
+class Overview () extends Diagram {
   /**
     * @param {HTMLDivElement} div A reference to a DIV element in the DOM.
     */
   def this(div: stdLib.HTMLDivElement) = this()
   def this(id: java.lang.String) = this()
+  /**Gets or sets the rectangular Part that represents the viewport of the .observed Diagram.*/
+  var box: Part = js.native
+  /**Gets or sets whether this overview draws the temporary layers of the observed Diagram.*/
+  var drawsTemporaryLayers: scala.Boolean = js.native
+  /**Gets or sets the Diagram for which this Overview is displaying a model and showing its viewport into that model.*/
+  var observed: Diagram = js.native
 }
 

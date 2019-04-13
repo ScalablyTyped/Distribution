@@ -10,10 +10,10 @@ trait Meta extends js.Object {
   var $filler: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var controller: org.scalablytyped.runtime.StringDictionary[js.Any]
   var data: js.Array[MetaData]
-  var dataset: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartNs.ChartDataSets] = js.undefined
+  var dataset: js.UndefOr[ChartDataSets] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var total: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+  var `type`: ChartType
   var xAxisID: js.UndefOr[java.lang.String] = js.undefined
   var yAxisID: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -23,9 +23,9 @@ object Meta {
   def apply(
     controller: org.scalablytyped.runtime.StringDictionary[js.Any],
     data: js.Array[MetaData],
-    `type`: chartDotJsLib.chartDotJsMod.ChartNs.ChartType,
+    `type`: ChartType,
     $filler: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    dataset: chartDotJsLib.chartDotJsMod.ChartNs.ChartDataSets = null,
+    dataset: ChartDataSets = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     total: java.lang.String = null,
     xAxisID: java.lang.String = null,

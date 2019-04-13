@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sjcl", "bn")
 @js.native
-class bn ()
-  extends sjclLib.sjclMod.sjclNs.BigNumber {
+class bn () extends BigNumber {
   def this(n: java.lang.String) = this()
   def this(n: scala.Double) = this()
-  def this(n: sjclLib.sjclMod.sjclNs.BigNumber) = this()
+  def this(n: BigNumber) = this()
 }
 

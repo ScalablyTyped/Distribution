@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 trait AnchorProps extends js.Object {
   var affix: js.UndefOr[scala.Boolean] = js.undefined
   var bounds: js.UndefOr[scala.Double] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var getContainer: js.UndefOr[js.Function0[AnchorContainer]] = js.undefined
   var offsetTop: js.UndefOr[scala.Double] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* link */ antdLib.Anon_Href, 
       scala.Unit
     ]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showInkInFixed: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object AnchorProps {
@@ -29,14 +29,14 @@ object AnchorProps {
   def apply(
     affix: js.UndefOr[scala.Boolean] = js.undefined,
     bounds: scala.Int | scala.Double = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     getContainer: () => AnchorContainer = null,
     offsetTop: scala.Int | scala.Double = null,
-    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* link */ antdLib.Anon_Href) => scala.Unit = null,
+    onClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* link */ antdLib.Anon_Href) => scala.Unit = null,
     prefixCls: java.lang.String = null,
     showInkInFixed: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AnchorProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(affix)) __obj.updateDynamic("affix")(affix)

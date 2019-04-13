@@ -17,20 +17,6 @@ sealed trait ProjectTaskFields extends js.Object
   * For more information about working with fields in Project, see the 
   * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. 
   * In Project Help, search for Available fields.
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this enumeration.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-  *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
-  *  </table>
   */
 @JSGlobal("Office.ProjectTaskFields")
 @js.native

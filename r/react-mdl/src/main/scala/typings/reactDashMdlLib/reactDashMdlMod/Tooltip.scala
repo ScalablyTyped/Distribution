@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Tooltip")
 @js.native
-class Tooltip ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Tooltip
+class Tooltip () extends __MDLComponent[TooltipProps]
 

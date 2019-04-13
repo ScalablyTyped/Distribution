@@ -15,3 +15,8 @@ class VaultExtensionMethodOperations ()
   override def ExecuteVaultExtensionMethod(MethodIdentifier: java.lang.String, Input: java.lang.String): java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.VaultExtensionMethodOperations")
+@js.native
+object VaultExtensionMethodOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultExtensionMethodOperations]
+

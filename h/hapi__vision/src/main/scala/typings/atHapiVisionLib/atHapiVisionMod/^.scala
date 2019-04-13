@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@hapi/vision", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[
-      atHapiHapiLib.atHapiHapiMod.Plugin[atHapiVisionLib.atHapiVisionMod.visionNs.ServerViewsConfiguration]
-    ]
+  extends org.scalablytyped.runtime.TopLevel[atHapiHapiLib.atHapiHapiMod.Plugin[ServerViewsConfiguration]]
 

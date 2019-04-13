@@ -29,7 +29,7 @@ trait VictoryVoronoiContainerProps extends VictoryContainerProps {
   		 * The labelComponent prop specified the component that will be rendered when labels are defined
   		 * on VictoryVoronoiContainer. If the labels prop is omitted, no label component will be rendered.
   		 */
-  var labelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var labelComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
   		 * When a labels prop is provided to VictoryVoronoiContainer it will render a label component
   		 * rather than activating labels on the child components it renders. This is useful for
@@ -96,15 +96,15 @@ object VictoryVoronoiContainerProps {
     activateLabels: js.UndefOr[scala.Boolean] = js.undefined,
     desc: java.lang.String = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
-    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    events: reactLib.reactMod.DOMAttributes[_] = null,
     height: scala.Int | scala.Double = null,
-    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labels: (/* point */ js.Any, /* index */ scala.Double, /* points */ js.Array[_]) => java.lang.String = null,
     onActivated: (/* points */ js.Array[_], /* props */ VictoryVoronoiContainerProps) => scala.Unit = null,
     onDeactivated: (/* points */ js.Array[_], /* props */ VictoryVoronoiContainerProps) => scala.Unit = null,
     radius: scala.Int | scala.Double = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null,
     voronoiBlacklist: js.Array[java.lang.String] = null,
     voronoiDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,

@@ -59,8 +59,5 @@ object StatusNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.statusMod.StatusNs.STATUS with scala.Double] = js.native
   }
   
-  type OPT = nodegitLib.statusMod.StatusNs.OPT
-  type SHOW = nodegitLib.statusMod.StatusNs.SHOW
-  type STATUS = nodegitLib.statusMod.StatusNs.STATUS
 }
 

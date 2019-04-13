@@ -9,32 +9,27 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Constructor function for a Converter */
-  var Converter: showdownLib.showdownMod.ShowdownNs.ConverterStatic = js.native
+  var Converter: ConverterStatic = js.native
   /**
     * Showdown helper
     */
-  var helper: showdownLib.showdownMod.ShowdownNs.Helper = js.native
+  var helper: Helper = js.native
   /** 
     * Registered extensions
     *
     * @prarm name
     * @param extenstion
     */
-  def extension(
-    name: java.lang.String,
-    extension: js.Function0[
-      js.Array[showdownLib.showdownMod.ShowdownNs.ShowdownExtension] | showdownLib.showdownMod.ShowdownNs.ShowdownExtension
-    ]
-  ): scala.Unit = js.native
-  def extension(name: java.lang.String, extension: showdownLib.showdownMod.ShowdownNs.ShowdownExtension): scala.Unit = js.native
+  def extension(name: java.lang.String, extension: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): scala.Unit = js.native
+  def extension(name: java.lang.String, extension: ShowdownExtension): scala.Unit = js.native
   /**
     * @return all extensions.
     */
-  def getAllExtensions(): org.scalablytyped.runtime.StringDictionary[js.Array[showdownLib.showdownMod.ShowdownNs.ShowdownExtension]] = js.native
+  def getAllExtensions(): org.scalablytyped.runtime.StringDictionary[js.Array[ShowdownExtension]] = js.native
   /**
     * Retrieve the default options.
     */
-  def getDefaultOptions(): showdownLib.showdownMod.ShowdownNs.ShowdownOptions = js.native
+  def getDefaultOptions(): ShowdownOptions = js.native
   /**
     * Retrieve previous set global option.
     * @param optionKey
@@ -43,7 +38,7 @@ object ^ extends js.Object {
   /**
     * Retrieve previous set global options.
     */
-  def getOptions(): showdownLib.showdownMod.ShowdownNs.ShowdownOptions = js.native
+  def getOptions(): ShowdownOptions = js.native
   /**
     * Remove an extension.
     *

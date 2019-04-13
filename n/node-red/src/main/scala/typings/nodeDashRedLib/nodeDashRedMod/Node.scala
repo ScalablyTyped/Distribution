@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Node
-  extends nodeLib.eventsMod.namespaced
+  extends nodeLib.eventsMod.^
      with NodeProperties {
   /* InferMemberOverrides */
   override def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native

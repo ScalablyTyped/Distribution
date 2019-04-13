@@ -17,9 +17,7 @@ class Formik[Values] protected ()
   var didMount: scala.Boolean = js.native
   var fields: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.Component[_, js.Object, _]] = js.native
   var hbCache: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ js.Any, scala.Unit]] = js.native
-  var hcCache: org.scalablytyped.runtime.StringDictionary[
-    js.Function1[/* e */ js.Any | reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit]
-  ] = js.native
+  var hcCache: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ js.Any | reactLib.reactMod.ChangeEvent[_], scala.Unit]] = js.native
   var initialValues: Values = js.native
   var validator: js.Any = js.native
   @JSName("componentDidMount")
@@ -33,13 +31,13 @@ class Formik[Values] protected ()
   def getFormikBag(): formikLib.Anon_Callback[Values] = js.native
   def getFormikComputedProps(): formikLib.Anon_Dirty[Values] = js.native
   def getFormikContext(): formikLib.distTypesMod.FormikContext[_] = js.native
-  def handleBlur(eventOrPath: java.lang.String): scala.Unit | (js.Function1[/* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[_]], scala.Unit]) = js.native
-  def handleBlur(eventOrPath: reactLib.reactMod.ReactNs.FocusEvent[_]): scala.Unit | (js.Function1[/* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[_]], scala.Unit]) = js.native
+  def handleBlur(eventOrPath: java.lang.String): scala.Unit | (js.Function1[/* e */ js.UndefOr[reactLib.reactMod.FocusEvent[_]], scala.Unit]) = js.native
+  def handleBlur(eventOrPath: reactLib.reactMod.FocusEvent[_]): scala.Unit | (js.Function1[/* e */ js.UndefOr[reactLib.reactMod.FocusEvent[_]], scala.Unit]) = js.native
   def handleChange(eventOrPath: java.lang.String): scala.Unit | (js.Function1[/* eventOrValue */ js.Any, scala.Unit]) = js.native
-  def handleChange(eventOrPath: reactLib.reactMod.ReactNs.ChangeEvent[_]): scala.Unit | (js.Function1[/* eventOrValue */ js.Any, scala.Unit]) = js.native
+  def handleChange(eventOrPath: reactLib.reactMod.ChangeEvent[_]): scala.Unit | (js.Function1[/* eventOrValue */ js.Any, scala.Unit]) = js.native
   def handleReset(): scala.Unit = js.native
   def handleSubmit(): scala.Unit = js.native
-  def handleSubmit(e: reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLFormElement]): scala.Unit = js.native
+  def handleSubmit(e: reactLib.reactMod.FormEvent[stdLib.HTMLFormElement]): scala.Unit = js.native
   def registerField(name: java.lang.String, Comp: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
   def resetForm(): scala.Unit = js.native
   def resetForm(nextValues: Values): scala.Unit = js.native

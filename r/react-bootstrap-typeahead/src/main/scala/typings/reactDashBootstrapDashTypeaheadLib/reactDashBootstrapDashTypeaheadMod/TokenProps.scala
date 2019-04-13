@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TokenProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.div] {
+  extends reactLib.reactMod.HTMLProps[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.div] {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var onRemove: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
@@ -14,7 +14,7 @@ trait TokenProps
 object TokenProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.div] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.div] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     onRemove: () => scala.Unit = null
   ): TokenProps = {

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class PinpointSMSVoice ()
   extends awsDashSdkLib.awsDashSdkMod.PinpointSMSVoice {
-  def this(options: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsPinpointsmsvoiceMod.ClientConfiguration) = this()
 }
 

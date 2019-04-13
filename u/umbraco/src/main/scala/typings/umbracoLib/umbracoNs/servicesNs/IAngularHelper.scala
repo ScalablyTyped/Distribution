@@ -23,7 +23,7 @@ trait IAngularHelper extends js.Object {
     * @description
     * Returns the current form object applied to the scope or null if one is not found
     */
-  def getCurrentForm(scope: angularLib.angularMod.angularNs.IScope): js.Any
+  def getCurrentForm(scope: angularLib.angularMod.IScope): js.Any
   /**
     * @ngdoc function
     * @name getNullForm
@@ -37,7 +37,7 @@ trait IAngularHelper extends js.Object {
     *
     * @param {string} formName The form name to assign
     */
-  def getNullForm(formName: java.lang.String): angularLib.angularMod.angularNs.IFormController
+  def getNullForm(formName: java.lang.String): angularLib.angularMod.IFormController
   /**
     * @ngdoc function
     * @name validateHasForm
@@ -48,7 +48,7 @@ trait IAngularHelper extends js.Object {
     * This will validate that the current scope has an assigned form object, if it doesn't an exception is thrown, if
     * it does we return the form object.
     */
-  def getRequiredCurrentForm(scope: angularLib.angularMod.angularNs.IScope): js.Object
+  def getRequiredCurrentForm(scope: angularLib.angularMod.IScope): js.Object
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#rejectedPromise
@@ -71,17 +71,17 @@ trait IAngularHelper extends js.Object {
     * @description
     * This checks if a digest/apply is already occuring, if not it will force an apply call
     */
-  def safeApply(scope: angularLib.angularMod.angularNs.IScope, fn: js.Function): scala.Unit
+  def safeApply(scope: angularLib.angularMod.IScope, fn: js.Function): scala.Unit
 }
 
 object IAngularHelper {
   @scala.inline
   def apply(
-    getCurrentForm: angularLib.angularMod.angularNs.IScope => js.Any,
-    getNullForm: java.lang.String => angularLib.angularMod.angularNs.IFormController,
-    getRequiredCurrentForm: angularLib.angularMod.angularNs.IScope => js.Object,
+    getCurrentForm: angularLib.angularMod.IScope => js.Any,
+    getNullForm: java.lang.String => angularLib.angularMod.IFormController,
+    getRequiredCurrentForm: angularLib.angularMod.IScope => js.Object,
     rejectedPromise: js.Object => scala.Unit,
-    safeApply: (angularLib.angularMod.angularNs.IScope, js.Function) => scala.Unit
+    safeApply: (angularLib.angularMod.IScope, js.Function) => scala.Unit
   ): IAngularHelper = {
     val __obj = js.Dynamic.literal(getCurrentForm = js.Any.fromFunction1(getCurrentForm), getNullForm = js.Any.fromFunction1(getNullForm), getRequiredCurrentForm = js.Any.fromFunction1(getRequiredCurrentForm), rejectedPromise = js.Any.fromFunction1(rejectedPromise), safeApply = js.Any.fromFunction2(safeApply))
   

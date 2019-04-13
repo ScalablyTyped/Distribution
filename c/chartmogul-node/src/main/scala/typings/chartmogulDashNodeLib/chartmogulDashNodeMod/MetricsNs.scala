@@ -28,6 +28,7 @@ object MetricsNs extends js.Object {
   }
   
   trait CustomerChurnRate extends js.Object {
+    var `customer-churn-rate`: scala.Double
     var date: java.lang.String
   }
   
@@ -44,10 +45,16 @@ object MetricsNs extends js.Object {
   trait MRR extends js.Object {
     var date: java.lang.String
     var mrr: scala.Double
+    var `mrr-churn`: scala.Double
+    var `mrr-contraction`: scala.Double
+    var `mrr-expansion`: scala.Double
+    var `mrr-new-business`: scala.Double
+    var `mrr-reactivation`: scala.Double
   }
   
   trait MRRChurnRate extends js.Object {
     var date: java.lang.String
+    var `mrr-churn-rate`: scala.Double
   }
   
   trait Params extends ParamsNoInterval {
@@ -55,8 +62,10 @@ object MetricsNs extends js.Object {
   }
   
   trait ParamsNoInterval extends js.Object {
+    var `end-date`: java.lang.String
     var geo: js.UndefOr[java.lang.String] = js.undefined
     var plans: js.UndefOr[java.lang.String] = js.undefined
+    var `start-date`: java.lang.String
   }
   
   def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): js.Promise[All] = js.native
@@ -72,7 +81,11 @@ object MetricsNs extends js.Object {
   @js.native
   object CustomerNs extends js.Object {
     trait MetricsActivity extends js.Object {
+      var `activity-arr`: scala.Double
+      var `activity-mrr`: scala.Double
+      var `activity-mrr-movement`: scala.Double
       var currency: java.lang.String
+      var `currency-sign`: java.lang.String
       var date: java.lang.String
       var description: java.lang.String
       var id: scala.Double
@@ -81,12 +94,17 @@ object MetricsNs extends js.Object {
     
     trait MetricsSubscription extends js.Object {
       var arr: scala.Double
+      var `billing-cycle`: java.lang.String
+      var `billing-cycle-count`: scala.Double
       var currency: java.lang.String
+      var `currency-sign`: java.lang.String
+      var `end-date`: java.lang.String
       var external_id: java.lang.String
       var id: scala.Double
       var mrr: scala.Double
       var plan: java.lang.String
       var quantity: scala.Double
+      var `start-date`: java.lang.String
       var status: java.lang.String
     }
     

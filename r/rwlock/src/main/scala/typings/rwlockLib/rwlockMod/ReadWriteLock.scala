@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ReadWriteLock
-  extends ReadWriteGeneric[rwlockLib.rwlockMod.ReadWriteLockNs.Callback] {
-  var async: ReadWriteGeneric[rwlockLib.rwlockMod.ReadWriteLockNs.AsyncCallback] = js.native
+trait ReadWriteLock extends ReadWriteGeneric[Callback] {
+  var async: ReadWriteGeneric[AsyncCallback] = js.native
 }
 

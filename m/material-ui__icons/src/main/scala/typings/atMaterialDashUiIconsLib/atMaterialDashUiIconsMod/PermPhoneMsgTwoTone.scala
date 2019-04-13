@@ -16,9 +16,9 @@ class PermPhoneMsgTwoTone protected ()
 @JSImport("@material-ui/icons", "PermPhoneMsgTwoTone")
 @js.native
 class PermPhoneMsgTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

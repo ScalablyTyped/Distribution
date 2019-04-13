@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait ErrorLoggerOptionsWithTransports
   extends BaseErrorLoggerOptions
      with ErrorLoggerOptions {
-  var transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.namespaced]
+  var transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.^]
 }
 
 object ErrorLoggerOptionsWithTransports {
   @scala.inline
   def apply(
-    transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.namespaced],
+    transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.^],
     baseMeta: js.Object = null,
     dynamicMeta: DynamicMetaFunction = null,
     level: java.lang.String | DynamicLevelFunction = null,

@@ -72,7 +72,7 @@ trait ITooltipTriggerProps extends js.Object {
   /**
     * Trigger
     */
-  def children(arg: IChildrenArg): reactLib.reactMod.ReactNs.ReactNode
+  def children(arg: IChildrenArg): reactLib.reactMod.ReactNode
   /**
     * Called when the visibility of the tooltip changes
     * @default no-op
@@ -81,13 +81,13 @@ trait ITooltipTriggerProps extends js.Object {
   /**
     * Tooltip
     */
-  def tooltip(arg: ITooltipArg): reactLib.reactMod.ReactNs.ReactNode
+  def tooltip(arg: ITooltipArg): reactLib.reactMod.ReactNode
 }
 
 object ITooltipTriggerProps {
   @scala.inline
   def apply(
-    children: IChildrenArg => reactLib.reactMod.ReactNs.ReactNode,
+    children: IChildrenArg => reactLib.reactMod.ReactNode,
     closeOnOutOfBoundaries: scala.Boolean,
     defaultTooltipShown: scala.Boolean,
     delayHide: scala.Double,
@@ -96,7 +96,7 @@ object ITooltipTriggerProps {
     onVisibilityChange: scala.Boolean => scala.Unit,
     placement: popperDotJsLib.popperDotJsMod.PopperNs.Placement,
     portalContainer: stdLib.HTMLElement,
-    tooltip: ITooltipArg => reactLib.reactMod.ReactNs.ReactNode,
+    tooltip: ITooltipArg => reactLib.reactMod.ReactNode,
     trigger: reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.none | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.click | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.`right-click` | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.hover,
     usePortal: scala.Boolean,
     getTooltipRef: reactDashPopperLib.RefHandler = null,

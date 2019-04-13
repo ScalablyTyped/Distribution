@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait ProgressProps
   extends antdDashMobileLib.libProgressPropsTypeMod.ProgressPropsType {
-  var barStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var barStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ProgressProps {
   @scala.inline
   def apply(
     appearTransition: js.UndefOr[scala.Boolean] = js.undefined,
-    barStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    barStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     percent: scala.Int | scala.Double = null,
     position: antdDashMobileLib.antdDashMobileLibStrings.fixed | antdDashMobileLib.antdDashMobileLibStrings.normal = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     unfilled: js.UndefOr[scala.Boolean] = js.undefined
   ): ProgressProps = {
     val __obj = js.Dynamic.literal()

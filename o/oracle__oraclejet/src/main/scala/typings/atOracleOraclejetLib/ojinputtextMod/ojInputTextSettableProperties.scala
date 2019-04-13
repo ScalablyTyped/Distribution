@@ -26,7 +26,7 @@ object ojInputTextSettableProperties {
     helpHints: atOracleOraclejetLib.Anon_Definition,
     labelHint: java.lang.String,
     list: java.lang.String,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     placeholder: java.lang.String,
     rawValue: js.Any,
     readonly: scala.Boolean,

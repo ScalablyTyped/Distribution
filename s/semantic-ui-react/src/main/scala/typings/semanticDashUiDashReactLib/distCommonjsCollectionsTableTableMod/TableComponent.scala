@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TableComponent
-  extends reactLib.reactMod.ReactNs.FunctionComponent[TableProps] {
-  var Body: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.FunctionComponent[TableProps] {
+  var Body: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsTableTableBodyMod.TableBodyProps
   ] = js.native
-  var Cell: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Cell: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsTableTableCellMod.TableCellProps
   ] = js.native
-  var Footer: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Footer: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsTableTableFooterMod.TableFooterProps
   ] = js.native
-  var Header: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Header: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsTableTableHeaderMod.TableHeaderProps
   ] = js.native
-  var HeaderCell: reactLib.reactMod.ReactNs.StatelessComponent[
+  var HeaderCell: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsCollectionsTableTableHeaderCellMod.TableHeaderCellProps
   ] = js.native
-  var Row: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps] = js.native
+  var Row: reactLib.reactMod.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps] = js.native
 }
 

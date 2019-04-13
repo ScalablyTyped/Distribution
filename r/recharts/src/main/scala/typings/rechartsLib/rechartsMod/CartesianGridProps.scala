@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
   var chartWidth: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var horizontal: js.UndefOr[
-    js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean
+    js.Object | reactLib.reactMod.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean
   ] = js.undefined
   var horizontalCoordinatesGenerator: js.UndefOr[CoordinatesGenerator] = js.undefined
   var horizontalFill: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var horizontalPoints: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var offset: js.UndefOr[js.Object] = js.undefined
   var vertical: js.UndefOr[
-    js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean
+    js.Object | reactLib.reactMod.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean
   ] = js.undefined
   var verticalCoordinatesGenerator: js.UndefOr[CoordinatesGenerator] = js.undefined
   var verticalFill: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -35,12 +35,12 @@ object CartesianGridProps {
     chartHeight: scala.Int | scala.Double = null,
     chartWidth: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
-    horizontal: js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean = null,
+    horizontal: js.Object | reactLib.reactMod.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean = null,
     horizontalCoordinatesGenerator: CoordinatesGenerator = null,
     horizontalFill: js.Array[java.lang.String] = null,
     horizontalPoints: js.Array[scala.Double] = null,
     offset: js.Object = null,
-    vertical: js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean = null,
+    vertical: js.Object | reactLib.reactMod.ReactElement[_] | (ContentRenderer[LineProps with CartesianGridProps]) | scala.Boolean = null,
     verticalCoordinatesGenerator: CoordinatesGenerator = null,
     verticalFill: js.Array[java.lang.String] = null,
     verticalPoints: js.Array[scala.Double] = null,

@@ -15,6 +15,15 @@ import scala.scalajs.js.annotation._
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.clickCreatingTool, which you can modify.
   */
-class ClickCreatingTool ()
-  extends goLib.goMod.goNs.ClickCreatingTool
+class ClickCreatingTool () extends Tool {
+  /**Gets or sets a data object that will be copied and added to the diagram's model each time this tool executes. The value must be an Object or null.*/
+  var archetypeNodeData: js.Any = js.native
+  /**Gets or sets whether a double click rather than a single-click is required to insert a new Part at the mouse-up point.*/
+  var isDoubleClick: scala.Boolean = js.native
+  /**
+    * Create a node by adding a copy of the .archetypeNodeData object to the diagram's model, assign its Part.location to be the given point, and select the new part.
+    * @param {Point} loc a Point in document coordinates.
+    */
+  def insertPart(loc: Point): Part = js.native
+}
 

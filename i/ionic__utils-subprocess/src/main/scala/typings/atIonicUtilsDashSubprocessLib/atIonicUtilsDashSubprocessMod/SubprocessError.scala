@@ -19,6 +19,8 @@ class SubprocessError protected ()
   override var message: java.lang.String = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native
+  @JSName("name")
+  val name_SubprocessError: atIonicUtilsDashSubprocessLib.atIonicUtilsDashSubprocessLibStrings.SubprocessError = js.native
   var output: js.UndefOr[java.lang.String] = js.native
   var signal: js.UndefOr[java.lang.String] = js.native
   @JSName("stack")

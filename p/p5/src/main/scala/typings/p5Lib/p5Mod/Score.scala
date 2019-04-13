@@ -5,54 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("p5", "Score")
-@js.native
-/**
-  *   A Score consists of a series of Parts. The parts
-  *   will be played back in order. For example, you
-  *   could have an A part, a B part, and a C part, and
-  *   play them back in this order new p5.Score(a, a, b,
-  *   a, c)
-  *
-  *   @param [parts] One or multiple parts, to be played
-  *   in sequence.
-  */
-class Score ()
-  extends p5Lib.p5Mod.p5Ns.Score {
-  def this(parts: Part) = this()
+trait Score extends js.Object {
   /**
     *   Loop playback of the score.
     */
-  /* CompleteClass */
-  override def loop(): scala.Unit = js.native
+  def loop(): scala.Unit
   /**
     *   Stop looping playback of the score. If it is
     *   currently playing, this will go into effect after
     *   the current round of playback completes.
     */
-  /* CompleteClass */
-  override def noLoop(): scala.Unit = js.native
+  def noLoop(): scala.Unit
   /**
     *   Pause playback of the score.
     */
-  /* CompleteClass */
-  override def pause(): scala.Unit = js.native
+  def pause(): scala.Unit
   /**
     *   Set the tempo for all parts in the score
     *   @param BPM Beats Per Minute
     *   @param rampTime Seconds from now
     */
-  /* CompleteClass */
-  override def setBPM(BPM: scala.Double, rampTime: scala.Double): scala.Unit = js.native
+  def setBPM(BPM: scala.Double, rampTime: scala.Double): scala.Unit
   /**
     *   Start playback of the score.
     */
-  /* CompleteClass */
-  override def start(): scala.Unit = js.native
+  def start(): scala.Unit
   /**
     *   Stop playback of the score.
     */
-  /* CompleteClass */
-  override def stop(): scala.Unit = js.native
+  def stop(): scala.Unit
+}
+
+object Score {
+  @scala.inline
+  def apply(
+    loop: () => scala.Unit,
+    noLoop: () => scala.Unit,
+    pause: () => scala.Unit,
+    setBPM: (scala.Double, scala.Double) => scala.Unit,
+    start: () => scala.Unit,
+    stop: () => scala.Unit
+  ): Score = {
+    val __obj = js.Dynamic.literal(loop = js.Any.fromFunction0(loop), noLoop = js.Any.fromFunction0(noLoop), pause = js.Any.fromFunction0(pause), setBPM = js.Any.fromFunction2(setBPM), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
+  
+    __obj.asInstanceOf[Score]
+  }
 }
 

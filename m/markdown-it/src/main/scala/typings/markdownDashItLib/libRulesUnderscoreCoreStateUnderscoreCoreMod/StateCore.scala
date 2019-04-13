@@ -14,7 +14,7 @@ trait StateCore
   var md: markdownDashItLib.libMod.MarkdownIt
   /** The markdown source code that is being parsed. */
   var src: java.lang.String
-  var tokens: js.Array[markdownDashItLib.libTokenMod.namespaced]
+  var tokens: js.Array[markdownDashItLib.libTokenMod.^]
 }
 
 object StateCore {
@@ -24,7 +24,7 @@ object StateCore {
     level: scala.Double,
     md: markdownDashItLib.libMod.MarkdownIt,
     src: java.lang.String,
-    tokens: js.Array[markdownDashItLib.libTokenMod.namespaced],
+    tokens: js.Array[markdownDashItLib.libTokenMod.^],
     StringDictionary: /** Return any for a yet untyped property */
   /* undocumented */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): StateCore = {

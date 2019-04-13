@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Route53 ()
-  extends awsDashSdkLib.clientsRoute53Mod.namespaced {
-  def this(options: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsRoute53Mod.^ {
+  def this(options: awsDashSdkLib.clientsRoute53Mod.ClientConfiguration) = this()
 }
 

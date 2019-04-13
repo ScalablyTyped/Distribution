@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollapseProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[Collapse] {
+  extends reactLib.reactMod.HTMLProps[Collapse] {
   @JSName("children")
-  var children_CollapseProps: reactLib.reactMod.ReactNs.ReactNode
+  var children_CollapseProps: reactLib.reactMod.ReactNode
   var fixedHeight: js.UndefOr[scala.Double] = js.undefined
    // react-motion doesn't export the config interface
   var forceInitialAnimation: js.UndefOr[scala.Boolean] = js.undefined
@@ -26,9 +26,9 @@ trait CollapseProps
 object CollapseProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     isOpened: scala.Boolean,
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[Collapse] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[Collapse] = null,
     fixedHeight: scala.Int | scala.Double = null,
     forceInitialAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     hasNestedCollapse: js.UndefOr[scala.Boolean] = js.undefined,
@@ -36,7 +36,7 @@ object CollapseProps {
     onRender: /* hasCurrentFromTo */ reactDashCollapseLib.Anon_Current => scala.Unit = null,
     onRest: () => scala.Unit = null,
     springConfig: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: reactDashCollapseLib.Anon_Collapse = null
   ): CollapseProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isOpened = isOpened)

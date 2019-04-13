@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CloudHSM ()
-  extends awsDashSdkLib.clientsCloudhsmMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCloudhsmMod.^ {
+  def this(options: awsDashSdkLib.clientsCloudhsmMod.ClientConfiguration) = this()
 }
 

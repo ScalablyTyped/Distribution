@@ -17,3 +17,8 @@ class VaultNamedValueStorageOperations ()
   override def SetNamedValues(NamedValueType: MFNamedValueType, Namespace: java.lang.String, NamedValues: mfilesLib.INamedValues): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultNamedValueStorageOperations")
+@js.native
+object VaultNamedValueStorageOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultNamedValueStorageOperations]
+

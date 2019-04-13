@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-toggled", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[ReactToggledProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[ReactToggledProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: ReactToggledProps) = this()
   def this(props: ReactToggledProps, context: js.Any) = this()
 }

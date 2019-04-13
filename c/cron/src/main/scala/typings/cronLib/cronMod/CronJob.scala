@@ -26,7 +26,7 @@ class CronJob protected () extends js.Object {
     * @param unrefTimeout If you have code that keeps the event loop running and want to stop the node process when that finishes regardless of the state of your cronjob, you can do so making use of this parameter. This is off by default and cron will run as if it needs to control the event loop. For more information take a look at [timers#timers_timeout_unref](https://nodejs.org/api/timers.html#timers_timeout_unref) from the NodeJS docs.
     */
   def this(cronTime: java.lang.String, onTick: CronCommand, onComplete: js.UndefOr[CronCommand], start: js.UndefOr[scala.Boolean], timeZone: js.UndefOr[java.lang.String], context: js.UndefOr[js.Any], runOnInit: js.UndefOr[scala.Boolean], utcOffset: js.UndefOr[scala.Double | java.lang.String], unrefTimeout: js.UndefOr[scala.Boolean]) = this()
-  def this(cronTime: momentLib.momentMod.momentNs.Moment, onTick: CronCommand, onComplete: js.UndefOr[CronCommand], start: js.UndefOr[scala.Boolean], timeZone: js.UndefOr[java.lang.String], context: js.UndefOr[js.Any], runOnInit: js.UndefOr[scala.Boolean], utcOffset: js.UndefOr[scala.Double | java.lang.String], unrefTimeout: js.UndefOr[scala.Boolean]) = this()
+  def this(cronTime: momentLib.momentMod.Moment, onTick: CronCommand, onComplete: js.UndefOr[CronCommand], start: js.UndefOr[scala.Boolean], timeZone: js.UndefOr[java.lang.String], context: js.UndefOr[js.Any], runOnInit: js.UndefOr[scala.Boolean], utcOffset: js.UndefOr[scala.Double | java.lang.String], unrefTimeout: js.UndefOr[scala.Boolean]) = this()
   def this(cronTime: stdLib.Date, onTick: CronCommand, onComplete: js.UndefOr[CronCommand], start: js.UndefOr[scala.Boolean], timeZone: js.UndefOr[java.lang.String], context: js.UndefOr[js.Any], runOnInit: js.UndefOr[scala.Boolean], utcOffset: js.UndefOr[scala.Double | java.lang.String], unrefTimeout: js.UndefOr[scala.Boolean]) = this()
   /**
     * Function using to fire ```onTick```, default set to an inner private function. Overwrite this only if you have a really good reason to do so.
@@ -48,16 +48,16 @@ class CronJob protected () extends js.Object {
   /**
     * Tells you when a ```CronTime``` will be run.
     */
-  def nextDate(): momentLib.momentMod.momentNs.Moment = js.native
-  def nextDates(): momentLib.momentMod.momentNs.Moment = js.native
-  def nextDates(i: scala.Double): momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = js.native
+  def nextDate(): momentLib.momentMod.Moment = js.native
   /**
     * Tells you when a ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
     * @returns A `Moment` when the cronTime passed in the constructor is a `Date` or a `Moment` and an array of `Moment` when the cronTime is a string
     */
+  def nextDates(): momentLib.momentMod.Moment | js.Array[momentLib.momentMod.Moment] = js.native
+  def nextDates(i: scala.Double): momentLib.momentMod.Moment | js.Array[momentLib.momentMod.Moment] = js.native
   @JSName("nextDates")
-  def `nextDates_<union>`(): momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = js.native
+  def nextDates_Moment(): momentLib.momentMod.Moment = js.native
   /**
     * Change the time for the ```CronJob```.
     * @param time Target time.

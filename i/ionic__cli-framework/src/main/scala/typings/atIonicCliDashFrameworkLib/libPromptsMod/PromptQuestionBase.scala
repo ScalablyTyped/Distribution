@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PromptQuestionBase
-  extends inquirerLib.inquirerMod.inquirerNs.Question[inquirerLib.inquirerMod.inquirerNs.Answers] {
+  extends inquirerLib.inquirerMod.Question[inquirerLib.inquirerMod.Answers] {
   /**
     * Default value to use if nothing is entered.
     */
@@ -38,12 +38,9 @@ object PromptQuestionBase {
   def apply(
     message: java.lang.String,
     `type`: PromptType,
-    choices: js.Array[inquirerLib.inquirerMod.inquirerNs.ChoiceType] | (js.Function1[
-      inquirerLib.inquirerMod.inquirerNs.Answers, 
-      js.Array[inquirerLib.inquirerMod.inquirerNs.ChoiceType]
-    ]) | (js.Function1[
-      inquirerLib.inquirerMod.inquirerNs.Answers, 
-      js.Promise[js.Array[inquirerLib.inquirerMod.inquirerNs.ChoiceType]]
+    choices: js.Array[inquirerLib.inquirerMod.ChoiceType] | (js.Function1[inquirerLib.inquirerMod.Answers, js.Array[inquirerLib.inquirerMod.ChoiceType]]) | (js.Function1[
+      inquirerLib.inquirerMod.Answers, 
+      js.Promise[js.Array[inquirerLib.inquirerMod.ChoiceType]]
     ]) = null,
     default: PromptValue = null,
     fallback: PromptValue = null,
@@ -55,8 +52,8 @@ object PromptQuestionBase {
     prefix: java.lang.String = null,
     suffix: java.lang.String = null,
     transformer: /* input */ java.lang.String => java.lang.String = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[inquirerLib.inquirerMod.inquirerNs.Answers]) => scala.Boolean | java.lang.String | (js.Promise[scala.Boolean | java.lang.String]) = null,
-    when: scala.Boolean | (js.Function1[inquirerLib.inquirerMod.inquirerNs.Answers, scala.Boolean]) | (js.Function1[inquirerLib.inquirerMod.inquirerNs.Answers, js.Promise[scala.Boolean]]) = null
+    validate: (/* input */ js.Any, /* answers */ js.UndefOr[inquirerLib.inquirerMod.Answers]) => scala.Boolean | java.lang.String | (js.Promise[scala.Boolean | java.lang.String]) = null,
+    when: scala.Boolean | (js.Function1[inquirerLib.inquirerMod.Answers, scala.Boolean]) | (js.Function1[inquirerLib.inquirerMod.Answers, js.Promise[scala.Boolean]]) = null
   ): PromptQuestionBase = {
     val __obj = js.Dynamic.literal(message = message)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait Envelope extends js.Object {
   /**
     * Telemetry data item.
     */
-  var data: applicationinsightsLib.outDeclarationsContractsGeneratedBaseMod.namespaced
+  var data: applicationinsightsLib.outDeclarationsContractsGeneratedBaseMod.^
   /**
     * The application's instrumentation key. The key is typically represented as a GUID, but there are cases when it is not a guid. No code should rely on iKey being a GUID. Instrumentation key is case insensitive.
     */
@@ -46,7 +46,7 @@ trait Envelope extends js.Object {
 object Envelope {
   @scala.inline
   def apply(
-    data: applicationinsightsLib.outDeclarationsContractsGeneratedBaseMod.namespaced,
+    data: applicationinsightsLib.outDeclarationsContractsGeneratedBaseMod.^,
     iKey: java.lang.String,
     name: java.lang.String,
     sampleRate: scala.Double,

@@ -16,9 +16,9 @@ class BluetoothConnectedRounded protected ()
 @JSImport("@material-ui/icons", "BluetoothConnectedRounded")
 @js.native
 class BluetoothConnectedRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

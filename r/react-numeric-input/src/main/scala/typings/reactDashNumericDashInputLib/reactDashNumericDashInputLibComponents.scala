@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNumericDashInputLibComponents {
   @scala.inline
-  def ReactDashNumericDashInput: reactLib.reactMod.ReactNs.ComponentType[
-    reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputNs.NumericInputProps
-  ] = js.constructorOf[reactDashNumericDashInputLib.reactDashNumericDashInputMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputNs.NumericInputProps]]
+  def ReactDashNumericDashInput: reactLib.reactMod.ComponentType[reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputProps] = js.constructorOf[reactDashNumericDashInputLib.reactDashNumericDashInputMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputProps]]
   @scala.inline
-  def NumericInputProps: reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputNs.NumericInputProps.type = reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputNs.NumericInputProps
-  type NumericInputProps = reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputNs.NumericInputProps
+  def NumericInputProps: reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputProps.type = reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputProps
+  type NumericInputProps = reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInputProps
 }
 

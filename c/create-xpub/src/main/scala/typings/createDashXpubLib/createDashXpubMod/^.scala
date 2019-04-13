@@ -25,6 +25,6 @@ object ^ extends js.Object {
     *
     * @returns A Base58 encoded extended public key.
     */
-  def apply(options: createDashXpubLib.createDashXpubMod.createXpubNs.Options): java.lang.String = js.native
+  def apply(options: Options): java.lang.String = js.native
 }
 

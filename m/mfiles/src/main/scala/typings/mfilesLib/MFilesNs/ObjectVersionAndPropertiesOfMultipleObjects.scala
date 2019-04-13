@@ -21,3 +21,8 @@ class ObjectVersionAndPropertiesOfMultipleObjects ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ObjectVersionAndPropertiesOfMultipleObjects")
+@js.native
+object ObjectVersionAndPropertiesOfMultipleObjects
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectVersionAndPropertiesOfMultipleObjects]
+

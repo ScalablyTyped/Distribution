@@ -10,52 +10,43 @@ import scala.scalajs.js.annotation._
 /*
   A Filter to find documents with a geo_shapes matching a specific shape.
   */
-class GeoShapeFilter ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter {
+class GeoShapeFilter () extends Filter {
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def cache(trueFalse: scala.Boolean): GeoShapeFilter = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def cacheKey(key: java.lang.String): GeoShapeFilter = js.native
   /*
     Sets the field to filter against.
     */
-  /* CompleteClass */
-  override def field(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def field(f: java.lang.String): GeoShapeFilter = js.native
   /*
     Sets the indexed shape.  Use this if you already have shape definitions
     already indexed.
     */
-  /* CompleteClass */
-  override def indexedShape(indexedShape: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def indexedShape(indexedShape: java.lang.String): GeoShapeFilter = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def name(name: java.lang.String): GeoShapeFilter = js.native
   /*
     Sets the shape relation type.  A relationship between a Query Shape
     and indexed Shapes that will be used to determine if a Document
     should be matched or not.  Valid values are:  intersects, disjoint,
     and within.
     */
-  /* CompleteClass */
-  override def relation(indexedShape: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def relation(indexedShape: java.lang.String): GeoShapeFilter = js.native
   /*
     Sets the shape
     */
-  /* CompleteClass */
-  override def shape(shape: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def shape(shape: java.lang.String): GeoShapeFilter = js.native
   /*
     Sets the spatial strategy.
     Valid values are:
@@ -67,12 +58,10 @@ class GeoShapeFilter ()
     indexed Point shapes.
     This is an advanced setting, use with care.
     */
-  /* CompleteClass */
-  override def strategy(strategy: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def strategy(strategy: java.lang.String): GeoShapeFilter = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoShapeFilter = js.native
+  def toJSON(): GeoShapeFilter = js.native
 }
 

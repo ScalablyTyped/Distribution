@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SecurityHub ()
   extends awsDashSdkLib.clientsAllMod.SecurityHub {
-  def this(options: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSecurityhubMod.ClientConfiguration) = this()
 }
 

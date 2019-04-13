@@ -10,13 +10,13 @@ trait ModulesInHierachicDirectoriesPlugin extends js.Object {
   var source: java.lang.String
   var target: java.lang.String
   @JSName("apply")
-  def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
+  def apply(resolver: enhancedDashResolveLib.libResolverMod.^): scala.Unit
 }
 
 object ModulesInHierachicDirectoriesPlugin {
   @scala.inline
   def apply(
-    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
+    apply: enhancedDashResolveLib.libResolverMod.^ => scala.Unit,
     directories: js.Array[java.lang.String],
     source: java.lang.String,
     target: java.lang.String

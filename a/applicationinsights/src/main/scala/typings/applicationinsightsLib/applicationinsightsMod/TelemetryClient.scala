@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights", "TelemetryClient")
 @js.native
 class TelemetryClient ()
-  extends applicationinsightsLib.outLibraryNodeClientMod.namespaced
+  extends applicationinsightsLib.outLibraryNodeClientMod.^
 

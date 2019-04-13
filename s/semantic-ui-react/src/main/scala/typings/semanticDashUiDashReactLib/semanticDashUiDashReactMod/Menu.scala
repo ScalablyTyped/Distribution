@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react", "Menu")
 @js.native
 class Menu protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMod.MenuProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMod.MenuProps) = this()

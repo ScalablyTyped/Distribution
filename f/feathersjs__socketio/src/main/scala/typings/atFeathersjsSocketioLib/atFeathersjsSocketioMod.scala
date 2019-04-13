@@ -9,22 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 object atFeathersjsSocketioMod extends js.Object {
   def default(): js.Function0[scala.Unit] = js.native
-  def default(callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, scala.Unit]): js.Function0[scala.Unit] = js.native
+  def default(callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.Server, scala.Unit]): js.Function0[scala.Unit] = js.native
   def default(options: scala.Double): js.Function0[scala.Unit] = js.native
   def default(
     options: scala.Double,
-    callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, scala.Unit]
+    callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.Server, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
-  def default(options: socketDotIoLib.socketDotIoMod.SocketIONs.ServerOptions): js.Function0[scala.Unit] = js.native
+  def default(options: socketDotIoLib.socketDotIoMod.ServerOptions): js.Function0[scala.Unit] = js.native
   def default(
-    options: socketDotIoLib.socketDotIoMod.SocketIONs.ServerOptions,
-    callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, scala.Unit]
+    options: socketDotIoLib.socketDotIoMod.ServerOptions,
+    callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.Server, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
-  def default(port: scala.Double, options: socketDotIoLib.socketDotIoMod.SocketIONs.ServerOptions): js.Function0[scala.Unit] = js.native
+  def default(port: scala.Double, options: socketDotIoLib.socketDotIoMod.ServerOptions): js.Function0[scala.Unit] = js.native
   def default(
     port: scala.Double,
-    options: socketDotIoLib.socketDotIoMod.SocketIONs.ServerOptions,
-    callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, scala.Unit]
+    options: socketDotIoLib.socketDotIoMod.ServerOptions,
+    callback: js.Function1[/* io */ socketDotIoLib.socketDotIoMod.Server, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
 }
 

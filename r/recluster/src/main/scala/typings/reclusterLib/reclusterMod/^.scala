@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("recluster", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(file: java.lang.String): reclusterLib.reclusterMod.reclusterNs.Balancer = js.native
-  def apply(file: java.lang.String, options: reclusterLib.reclusterMod.reclusterNs.BalancerOptions): reclusterLib.reclusterMod.reclusterNs.Balancer = js.native
+  def apply(file: java.lang.String): Balancer = js.native
+  def apply(file: java.lang.String, options: BalancerOptions): Balancer = js.native
 }
 

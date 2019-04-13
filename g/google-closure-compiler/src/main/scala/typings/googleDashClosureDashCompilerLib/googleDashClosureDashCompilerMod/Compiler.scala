@@ -31,3 +31,20 @@ class compiler protected () extends Compiler {
   def this(opts: js.Array[java.lang.String], extraCommandArgs: js.Array[java.lang.String]) = this()
 }
 
+@JSImport("google-closure-compiler", "compiler")
+@js.native
+object compiler
+  extends org.scalablytyped.runtime.Instantiable2[
+      (/* opts */ js.Array[java.lang.String]) | (/* opts */ googleDashClosureDashCompilerLib.CompileOptions), 
+      /* extraCommandArgs */ js.Array[java.lang.String], 
+      Compiler
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* opts */ js.Array[java.lang.String]) | (/* opts */ googleDashClosureDashCompilerLib.CompileOptions), 
+      Compiler
+    ] {
+  var COMPILER_PATH: java.lang.String = js.native
+  var CONTRIB_PATH: java.lang.String = js.native
+  var JAR_PATH: java.lang.String = js.native
+}
+

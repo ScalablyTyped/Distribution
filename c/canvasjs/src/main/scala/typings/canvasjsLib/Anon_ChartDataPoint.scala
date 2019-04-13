@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ChartDataPoint extends js.Object {
-  var chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart
-  var dataPoint: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataPoint
-  var dataSeries: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataSeriesOptions
+  var chart: canvasjsLib.canvasjsMod.Chart
+  var dataPoint: canvasjsLib.canvasjsMod.ChartDataPoint
+  var dataSeries: canvasjsLib.canvasjsMod.ChartDataSeriesOptions
   var index: js.UndefOr[scala.Double] = js.undefined
   var pencent: js.UndefOr[scala.Double] = js.undefined
   var total: js.UndefOr[scala.Double] = js.undefined
@@ -17,9 +17,9 @@ trait Anon_ChartDataPoint extends js.Object {
 object Anon_ChartDataPoint {
   @scala.inline
   def apply(
-    chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart,
-    dataPoint: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataPoint,
-    dataSeries: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataSeriesOptions,
+    chart: canvasjsLib.canvasjsMod.Chart,
+    dataPoint: canvasjsLib.canvasjsMod.ChartDataPoint,
+    dataSeries: canvasjsLib.canvasjsMod.ChartDataSeriesOptions,
     index: scala.Int | scala.Double = null,
     pencent: scala.Int | scala.Double = null,
     total: scala.Int | scala.Double = null

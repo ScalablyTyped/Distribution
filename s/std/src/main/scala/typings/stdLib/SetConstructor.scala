@@ -12,7 +12,7 @@ trait SetConstructor
       (/* values */ js.Array[js.Object]) | (/* iterable */ Iterable[js.Object]), 
       Set[js.Object]
     ] {
-  @JSName(org.scalablytyped.runtime.Symbol.species)
+  @JSName(scala.scalajs.js.Symbol.species)
   val species: SetConstructor = js.native
 }
 

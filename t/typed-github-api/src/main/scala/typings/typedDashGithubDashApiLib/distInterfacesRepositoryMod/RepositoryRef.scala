@@ -38,14 +38,14 @@ trait RepositoryRef extends js.Object {
     start: java.lang.String,
     pathIncluded: java.lang.String,
     author: java.lang.String,
-    since: momentLib.momentMod.momentNs.Moment
+    since: momentLib.momentMod.Moment
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   def loadCommitsAsync(
     start: java.lang.String,
     pathIncluded: java.lang.String,
     author: java.lang.String,
-    since: momentLib.momentMod.momentNs.Moment,
-    until: momentLib.momentMod.momentNs.Moment
+    since: momentLib.momentMod.Moment,
+    until: momentLib.momentMod.Moment
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   /**
     * Loads issues for this repository.
@@ -80,7 +80,7 @@ trait RepositoryRef extends js.Object {
       typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.created | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.updated | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.comments
     ],
     ascending: js.UndefOr[scala.Boolean],
-    updatedSince: js.UndefOr[momentLib.momentMod.momentNs.Moment]
+    updatedSince: js.UndefOr[momentLib.momentMod.Moment]
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]] = js.native
   /**
     * Loads pull requests for this repository.

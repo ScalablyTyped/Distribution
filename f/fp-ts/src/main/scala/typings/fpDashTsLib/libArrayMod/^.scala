@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Array", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Array */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Array = js.native
   val array: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libUnfoldableMod.Unfoldable1[URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[URI, scala.Double]) with fpDashTsLib.libAlternativeMod.Alternative1[URI] with fpDashTsLib.libPlusMod.Plus1[URI] with fpDashTsLib.libExtendMod.Extend1[URI] with fpDashTsLib.libCompactableMod.Compactable1[URI] with (fpDashTsLib.libFilterableWithIndexMod.FilterableWithIndex1[URI, scala.Double]) with fpDashTsLib.libWitherableMod.Witherable1[URI] with (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[URI, scala.Double]) with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[URI, scala.Double]) = js.native
   val empty: fpDashTsLib.libArrayMod.Global.Array[scala.Nothing] = js.native
   def catOptions[A](as: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libOptionMod.Option[A]]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native

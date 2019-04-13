@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Kinesis ()
-  extends awsDashSdkLib.clientsKinesisMod.namespaced {
-  def this(options: awsDashSdkLib.clientsKinesisMod.KinesisNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsKinesisMod.^ {
+  def this(options: awsDashSdkLib.clientsKinesisMod.ClientConfiguration) = this()
 }
 

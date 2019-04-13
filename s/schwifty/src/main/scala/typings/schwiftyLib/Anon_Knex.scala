@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Knex extends js.Object {
-  var knex: knexLib.knexMod.Knex | knexLib.knexMod.KnexNs.Config
+  var knex: knexLib.knexMod.Knex | knexLib.knexMod.Config
   var migrationsDir: java.lang.String
   var models: js.Array[schwiftyLib.schwiftyMod.ModelClass]
 }
@@ -14,7 +14,7 @@ trait Anon_Knex extends js.Object {
 object Anon_Knex {
   @scala.inline
   def apply(
-    knex: knexLib.knexMod.Knex | knexLib.knexMod.KnexNs.Config,
+    knex: knexLib.knexMod.Knex | knexLib.knexMod.Config,
     migrationsDir: java.lang.String,
     models: js.Array[schwiftyLib.schwiftyMod.ModelClass]
   ): Anon_Knex = {

@@ -9,13 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(input: java.lang.String): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
-  def apply(
-    input: java.lang.String,
-    options: parseDashColumnsLib.parseDashColumnsMod.parseColumnsNs.BaseOptions
-  ): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
-  def apply[T](
-    input: java.lang.String,
-    options: parseDashColumnsLib.parseDashColumnsMod.parseColumnsNs.Options[T]
-  ): js.Array[org.scalablytyped.runtime.StringDictionary[T]] = js.native
+  def apply(input: java.lang.String, options: BaseOptions): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def apply[T](input: java.lang.String, options: Options[T]): js.Array[org.scalablytyped.runtime.StringDictionary[T]] = js.native
 }
 

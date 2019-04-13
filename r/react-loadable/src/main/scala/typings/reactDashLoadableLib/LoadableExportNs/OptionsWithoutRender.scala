@@ -14,7 +14,7 @@ trait OptionsWithoutRender[Props]
     * Resulting React component receives all the props passed to the generated component.
     */
   def loader(): js.Promise[
-    reactLib.reactMod.ReactNs.ComponentType[Props] | reactDashLoadableLib.Anon_Default[Props]
+    reactLib.reactMod.ComponentType[Props] | reactDashLoadableLib.Anon_Default[Props]
   ]
 }
 
@@ -22,9 +22,9 @@ object OptionsWithoutRender {
   @scala.inline
   def apply[Props](
     loader: () => js.Promise[
-      reactLib.reactMod.ReactNs.ComponentType[Props] | reactDashLoadableLib.Anon_Default[Props]
+      reactLib.reactMod.ComponentType[Props] | reactDashLoadableLib.Anon_Default[Props]
     ],
-    loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
+    loading: reactLib.reactMod.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
     delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
     modules: js.Array[java.lang.String] = null,
     timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,

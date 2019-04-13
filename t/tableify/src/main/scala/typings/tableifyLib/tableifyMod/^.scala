@@ -16,6 +16,6 @@ object ^ extends js.Object {
     columns: js.Array[java.lang.String] | tableifyLib.tableifyLibNumbers.`false`,
     parents: js.Array[_]
   ): java.lang.String = js.native
-  def defaults(config: tableifyLib.tableifyMod.tableifyNs.Config): tableifyLib.Anon_Columns = js.native
+  def defaults(config: Config): tableifyLib.Anon_Columns = js.native
 }
 

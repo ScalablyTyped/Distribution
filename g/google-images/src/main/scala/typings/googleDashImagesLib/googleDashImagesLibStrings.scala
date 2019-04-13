@@ -8,109 +8,109 @@ import scala.scalajs.js.annotation._
 object googleDashImagesLibStrings {
   @js.native
   sealed trait black
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait blue
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait brown
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait clipart
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageType
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageType
   
   @js.native
   sealed trait color
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchColorType
+    extends googleDashImagesLib.googleDashImagesMod.SearchColorType
   
   @js.native
   sealed trait face
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageType
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageType
   
   @js.native
   sealed trait gray
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchColorType
-       with googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchColorType
+       with googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait green
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait high
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchSafe
+    extends googleDashImagesLib.googleDashImagesMod.SearchSafe
   
   @js.native
   sealed trait huge
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageSize
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageSize
   
   @js.native
   sealed trait icon
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageSize
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageSize
   
   @js.native
   sealed trait large
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageSize
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageSize
   
   @js.native
   sealed trait lineart
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageType
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageType
   
   @js.native
   sealed trait medium
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageSize
-       with googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchSafe
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageSize
+       with googleDashImagesLib.googleDashImagesMod.SearchSafe
   
   @js.native
   sealed trait mono
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchColorType
+    extends googleDashImagesLib.googleDashImagesMod.SearchColorType
   
   @js.native
   sealed trait news
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageType
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageType
   
   @js.native
   sealed trait off
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchSafe
+    extends googleDashImagesLib.googleDashImagesMod.SearchSafe
   
   @js.native
   sealed trait photo
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageType
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageType
   
   @js.native
   sealed trait pink
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait purple
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait small
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageSize
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageSize
   
   @js.native
   sealed trait teal
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait white
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @js.native
   sealed trait xlarge
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageSize
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageSize
   
   @js.native
   sealed trait xxlarge
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchImageSize
+    extends googleDashImagesLib.googleDashImagesMod.SearchImageSize
   
   @js.native
   sealed trait yellow
-    extends googleDashImagesLib.googleDashImagesMod.GoogleImagesNs.SearchDominantColor
+    extends googleDashImagesLib.googleDashImagesMod.SearchDominantColor
   
   @scala.inline
   def black: black = "black".asInstanceOf[black]

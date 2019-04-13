@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("pi-spi", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def initialize(device: java.lang.String): piDashSpiLib.piDashSpiMod.underscoreUnderscorePIUnderscoreSPINs.SPI = js.native
+  def initialize(device: java.lang.String): SPI = js.native
 }
 

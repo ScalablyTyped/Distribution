@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_Event, scala.Unit]] = js.undefined
@@ -18,7 +18,7 @@ trait LinkProps extends js.Object {
 object LinkProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     href: java.lang.String = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: /* args */ gestaltLib.Anon_Event => scala.Unit = null,

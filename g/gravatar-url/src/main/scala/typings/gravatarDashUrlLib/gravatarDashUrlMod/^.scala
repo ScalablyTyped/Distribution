@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(email: java.lang.String): java.lang.String = js.native
-  def apply(email: java.lang.String, options: gravatarDashUrlLib.gravatarDashUrlMod.GravatarUrlNs.Options): java.lang.String = js.native
+  def apply(email: java.lang.String, options: Options): java.lang.String = js.native
 }
 

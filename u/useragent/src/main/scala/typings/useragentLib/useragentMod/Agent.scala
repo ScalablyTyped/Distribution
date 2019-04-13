@@ -15,41 +15,30 @@ import scala.scalajs.js.annotation._
   * @param patch Patch version of the browser
   * @param source The actual user agent string
   */
-class Agent ()
-  extends useragentLib.useragentMod.UseragentNs.Agent {
+class Agent () extends js.Object {
   def this(family: java.lang.String) = this()
   def this(family: java.lang.String, major: java.lang.String) = this()
   def this(family: java.lang.String, major: java.lang.String, minor: java.lang.String) = this()
   def this(family: java.lang.String, major: java.lang.String, minor: java.lang.String, patch: java.lang.String) = this()
   def this(family: java.lang.String, major: java.lang.String, minor: java.lang.String, patch: java.lang.String, source: java.lang.String) = this()
-  /* CompleteClass */
-  override var device: useragentLib.useragentMod.UseragentNs.Device = js.native
-  /* CompleteClass */
-  override var family: java.lang.String = js.native
-  /* CompleteClass */
-  override var major: java.lang.String = js.native
-  /* CompleteClass */
-  override var minor: java.lang.String = js.native
-  /* CompleteClass */
-  override var os: useragentLib.useragentMod.UseragentNs.OperatingSystem = js.native
-  /* CompleteClass */
-  override var patch: java.lang.String = js.native
-  /* CompleteClass */
-  override var source: java.lang.String = js.native
+  var device: Device = js.native
+  var family: java.lang.String = js.native
+  var major: java.lang.String = js.native
+  var minor: java.lang.String = js.native
+  var os: OperatingSystem = js.native
+  var patch: java.lang.String = js.native
+  var source: java.lang.String = js.native
   /**
     * Generates a string output of the parsed user agent.
     */
-  /* CompleteClass */
-  override def toAgent(): java.lang.String = js.native
+  def toAgent(): java.lang.String = js.native
   /**
     * The representation of a parsed Operating System.
     */
-  /* CompleteClass */
-  override def toJSON(): useragentLib.Anon_DeviceFamily = js.native
+  def toJSON(): useragentLib.Anon_Device = js.native
   /**
     * Outputs a compiled veersion number of the user agent.
     */
-  /* CompleteClass */
-  override def toVersion(): java.lang.String = js.native
+  def toVersion(): java.lang.String = js.native
 }
 

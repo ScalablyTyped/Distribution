@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/fn/array/keys", JSImport.Namespace)
 @js.native
-object fnArrayKeysMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayArrayLikeIterableIterator]
+object fnArrayKeysMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[scala.Double] = js.native
+}
 

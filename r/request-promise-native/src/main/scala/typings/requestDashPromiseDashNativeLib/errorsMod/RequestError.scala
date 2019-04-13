@@ -9,14 +9,14 @@ trait RequestError
   extends stdLib.Error {
   var cause: js.Any
   var error: js.Any
-  var options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options
-  var response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse
+  var options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options
+  var response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse
 }
 
 @JSImport("request-promise-native/errors", "RequestError")
 @js.native
 class RequestErrorCls protected () extends RequestError {
-  def this(cause: js.Any, options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options, response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse) = this()
+  def this(cause: js.Any, options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options, response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse) = this()
   /* CompleteClass */
   override var cause: js.Any = js.native
   /* CompleteClass */
@@ -26,9 +26,9 @@ class RequestErrorCls protected () extends RequestError {
   /* CompleteClass */
   override var name: java.lang.String = js.native
   /* CompleteClass */
-  override var options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options = js.native
+  override var options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options = js.native
   /* CompleteClass */
-  override var response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse = js.native
+  override var response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse = js.native
 }
 
 object RequestError {
@@ -38,8 +38,8 @@ object RequestError {
     error: js.Any,
     message: java.lang.String,
     name: java.lang.String,
-    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options,
-    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse,
+    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options,
+    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse,
     stack: java.lang.String = null
   ): RequestError = {
     val __obj = js.Dynamic.literal(cause = cause, error = error, message = message, name = name, options = options.asInstanceOf[js.Any], response = response)

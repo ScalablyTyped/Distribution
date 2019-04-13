@@ -39,3 +39,8 @@ class ScheduledJob ()
   override def SetOptimizeVaultJob(OptimizeVaultJob: mfilesLib.IOptimizeVaultJob): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ScheduledJob")
+@js.native
+object ScheduledJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IScheduledJob]
+

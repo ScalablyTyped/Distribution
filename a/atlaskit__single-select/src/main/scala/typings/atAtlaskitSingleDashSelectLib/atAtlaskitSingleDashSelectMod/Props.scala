@@ -22,7 +22,7 @@ trait Props extends js.Object {
   /** id property to be passed down to the html select component. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** message to show on the dialog when isInvalid is true */
-  var invalidMessage: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var invalidMessage: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Sets whether the component should be open on mount. */
   var isDefaultOpen: js.UndefOr[scala.Boolean] = js.undefined
   /** Sets whether the select is selectable. Changes hover state. */
@@ -88,7 +88,7 @@ object Props {
     droplistShouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined,
     hasAutocomplete: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
-    invalidMessage: reactLib.reactMod.ReactNs.ReactNode = null,
+    invalidMessage: reactLib.reactMod.ReactNode = null,
     isDefaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isFirstChild: js.UndefOr[scala.Boolean] = js.undefined,

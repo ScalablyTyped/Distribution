@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IFileInputProps
-  extends reactLib.reactMod.ReactNs.LabelHTMLAttributes[stdLib.HTMLLabelElement] {
+  extends reactLib.reactMod.LabelHTMLAttributes[stdLib.HTMLLabelElement] {
   /**
     * Whether the file input is non-interactive.
     * Setting this to `true` will automatically disable the child input too.
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
     * `type` will be ignored, because the input _must_ be `type="file"`.
     * Pass `onChange` here to be notified when the user selects a file.
     */
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement]] = js.undefined
+  var inputProps: js.UndefOr[reactLib.reactMod.HTMLProps[stdLib.HTMLInputElement]] = js.undefined
   /**
     * Whether the file input should appear with large styling.
     */
@@ -43,26 +43,26 @@ import scala.scalajs.js.annotation._
     * __Note:__ The top-level `onChange` prop is passed to the wrapping
     * `<label>` rather than the `<input>`, which may not be what you expect.
     */
-  var onInputChange: js.UndefOr[reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement]] = js.undefined
+  var onInputChange: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement]] = js.undefined
   /**
     * The text to display.
     * @default "Choose file..."
     */
-  var text: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var text: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object IFileInputProps {
   @scala.inline
   def apply(
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
-    LabelHTMLAttributes: reactLib.reactMod.ReactNs.LabelHTMLAttributes[stdLib.HTMLLabelElement] = null,
+    LabelHTMLAttributes: reactLib.reactMod.LabelHTMLAttributes[stdLib.HTMLLabelElement] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
     hasSelection: js.UndefOr[scala.Boolean] = js.undefined,
-    inputProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement] = null,
+    inputProps: reactLib.reactMod.HTMLProps[stdLib.HTMLInputElement] = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
-    onInputChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement] = null,
-    text: reactLib.reactMod.ReactNs.ReactNode = null
+    onInputChange: reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] = null,
+    text: reactLib.reactMod.ReactNode = null
   ): IFileInputProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IProps)

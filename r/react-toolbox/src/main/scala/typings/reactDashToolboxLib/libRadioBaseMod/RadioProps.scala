@@ -18,7 +18,7 @@ trait RadioProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Callback invoked on mouse down.
     */
@@ -33,7 +33,7 @@ object RadioProps {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     onMouseDown: js.Function = null
   ): RadioProps = {
     val __obj = js.Dynamic.literal()

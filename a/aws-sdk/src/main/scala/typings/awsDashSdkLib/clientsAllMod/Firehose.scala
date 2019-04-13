@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Firehose ()
-  extends awsDashSdkLib.clientsFirehoseMod.namespaced {
-  def this(options: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsFirehoseMod.^ {
+  def this(options: awsDashSdkLib.clientsFirehoseMod.ClientConfiguration) = this()
 }
 

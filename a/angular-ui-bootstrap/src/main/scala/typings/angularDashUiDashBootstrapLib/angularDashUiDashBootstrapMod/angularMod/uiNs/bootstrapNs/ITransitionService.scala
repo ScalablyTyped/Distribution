@@ -30,11 +30,11 @@ trait ITransitionService extends js.Object {
     *
     * @return A promise that is resolved when the transition finishes.
     */
-  def apply(element: angularLib.angularMod.angularNs.IAugmentedJQuery, trigger: js.Any): angularLib.angularMod.angularNs.IPromise[angularLib.angularMod.angularNs.IAugmentedJQuery] = js.native
+  def apply(element: angularLib.angularMod.IAugmentedJQuery, trigger: js.Any): angularLib.angularMod.IPromise[angularLib.angularMod.IAugmentedJQuery] = js.native
   def apply(
-    element: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    element: angularLib.angularMod.IAugmentedJQuery,
     trigger: js.Any,
     options: ITransitionServiceOptions
-  ): angularLib.angularMod.angularNs.IPromise[angularLib.angularMod.angularNs.IAugmentedJQuery] = js.native
+  ): angularLib.angularMod.IPromise[angularLib.angularMod.IAugmentedJQuery] = js.native
 }
 

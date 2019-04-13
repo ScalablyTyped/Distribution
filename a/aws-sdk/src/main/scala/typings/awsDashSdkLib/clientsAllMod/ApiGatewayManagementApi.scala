@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ApiGatewayManagementApi ()
-  extends awsDashSdkLib.clientsApigatewaymanagementapiMod.namespaced {
-  def this(options: awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsApigatewaymanagementapiMod.^ {
+  def this(options: awsDashSdkLib.clientsApigatewaymanagementapiMod.ClientConfiguration) = this()
 }
 

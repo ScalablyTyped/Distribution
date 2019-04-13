@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("active-win", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): js.Promise[activeDashWinLib.activeDashWinMod.activeWinNs.Result] = js.native
-  def sync(): activeDashWinLib.activeDashWinMod.activeWinNs.Result = js.native
+  def apply(): js.Promise[Result] = js.native
+  def sync(): Result = js.native
 }
 

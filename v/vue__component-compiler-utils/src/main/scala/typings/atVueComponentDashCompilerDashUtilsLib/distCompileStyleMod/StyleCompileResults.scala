@@ -9,7 +9,7 @@ trait StyleCompileResults extends js.Object {
   var code: java.lang.String
   var errors: js.Array[java.lang.String]
   var map: js.Any | scala.Unit
-  var rawResult: postcssLib.postcssMod.postcssNs.LazyResult | scala.Unit
+  var rawResult: postcssLib.postcssMod.LazyResult | scala.Unit
 }
 
 object StyleCompileResults {
@@ -18,7 +18,7 @@ object StyleCompileResults {
     code: java.lang.String,
     errors: js.Array[java.lang.String],
     map: js.Any | scala.Unit,
-    rawResult: postcssLib.postcssMod.postcssNs.LazyResult | scala.Unit
+    rawResult: postcssLib.postcssMod.LazyResult | scala.Unit
   ): StyleCompileResults = {
     val __obj = js.Dynamic.literal(code = code, errors = errors, map = map.asInstanceOf[js.Any], rawResult = rawResult.asInstanceOf[js.Any])
   

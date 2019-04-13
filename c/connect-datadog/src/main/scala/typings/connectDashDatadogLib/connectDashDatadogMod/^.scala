@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("connect-datadog", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(options: connectDashDatadogLib.connectDashDatadogMod.FactoryNs.Options): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
+  def apply(options: Options): expressLib.expressMod.RequestHandler = js.native
 }
 

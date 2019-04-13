@@ -23,12 +23,27 @@ class PluralRulesCls () extends PluralRules {
   override def select(n: scala.Double): java.lang.String = js.native
 }
 
-object PluralRules {
-  @scala.inline
-  def apply(resolvedOptions: () => ResolvedPluralRulesOptions, select: scala.Double => java.lang.String): PluralRules = {
-    val __obj = js.Dynamic.literal(resolvedOptions = js.Any.fromFunction0(resolvedOptions), select = js.Any.fromFunction1(select))
-  
-    __obj.asInstanceOf[PluralRules]
-  }
+@JSGlobal("Intl.PluralRules")
+@js.native
+object PluralRules
+  extends org.scalablytyped.runtime.Instantiable0[PluralRules]
+     with org.scalablytyped.runtime.Instantiable2[
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      /* options */ PluralRulesOptions, 
+      PluralRules
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      PluralRules
+    ] {
+  def apply(): stdLib.IntlNs.PluralRules = js.native
+  def apply(locales: java.lang.String): stdLib.IntlNs.PluralRules = js.native
+  def apply(locales: java.lang.String, options: stdLib.IntlNs.PluralRulesOptions): stdLib.IntlNs.PluralRules = js.native
+  def apply(locales: js.Array[java.lang.String]): stdLib.IntlNs.PluralRules = js.native
+  def apply(locales: js.Array[java.lang.String], options: stdLib.IntlNs.PluralRulesOptions): stdLib.IntlNs.PluralRules = js.native
+  def supportedLocalesOf(locales: java.lang.String): js.Array[java.lang.String] = js.native
+  def supportedLocalesOf(locales: java.lang.String, options: stdLib.IntlNs.PluralRulesOptions): js.Array[java.lang.String] = js.native
+  def supportedLocalesOf(locales: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  def supportedLocalesOf(locales: js.Array[java.lang.String], options: stdLib.IntlNs.PluralRulesOptions): js.Array[java.lang.String] = js.native
 }
 

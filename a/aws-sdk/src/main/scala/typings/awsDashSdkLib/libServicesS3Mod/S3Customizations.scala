@@ -12,12 +12,12 @@ class S3Customizations ()
   /**
     * Get the form fields and target URL for direct POST uploading.
     */
-  def createPresignedPost(params: awsDashSdkLib.clientsS3Mod.S3Ns.PresignedPostNs.Params): awsDashSdkLib.clientsS3Mod.PresignedPost = js.native
+  def createPresignedPost(params: awsDashSdkLib.libS3PresignedUnderscorePostMod.PresignedPostNs.Params): awsDashSdkLib.clientsS3Mod.PresignedPost = js.native
   /**
     * Get the form fields and target URL for direct POST uploading.
     */
   def createPresignedPost(
-    params: awsDashSdkLib.clientsS3Mod.S3Ns.PresignedPostNs.Params,
+    params: awsDashSdkLib.libS3PresignedUnderscorePostMod.PresignedPostNs.Params,
     callback: js.Function2[
       /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.clientsS3Mod.PresignedPost, 
@@ -43,9 +43,9 @@ class S3Customizations ()
     * is the only operation for which the SDK can retry requests with stream
     * bodies.
     */
-  def upload(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest): awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUpload = js.native
+  def upload(params: awsDashSdkLib.clientsS3Mod.PutObjectRequest): awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUpload = js.native
   def upload(
-    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest,
+    params: awsDashSdkLib.clientsS3Mod.PutObjectRequest,
     callback: js.Function2[
       /* err */ stdLib.Error, 
       /* data */ awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.SendData, 
@@ -53,11 +53,11 @@ class S3Customizations ()
     ]
   ): awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUpload = js.native
   def upload(
-    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest,
+    params: awsDashSdkLib.clientsS3Mod.PutObjectRequest,
     options: awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.ManagedUploadOptions
   ): awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUpload = js.native
   def upload(
-    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest,
+    params: awsDashSdkLib.clientsS3Mod.PutObjectRequest,
     options: awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.ManagedUploadOptions,
     callback: js.Function2[
       /* err */ stdLib.Error, 

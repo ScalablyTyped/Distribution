@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Amplify ()
-  extends awsDashSdkLib.clientsAmplifyMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAmplifyMod.AmplifyNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAmplifyMod.^ {
+  def this(options: awsDashSdkLib.clientsAmplifyMod.ClientConfiguration) = this()
 }
 

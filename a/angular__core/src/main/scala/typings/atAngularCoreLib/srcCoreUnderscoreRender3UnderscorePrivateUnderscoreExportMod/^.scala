@@ -41,9 +41,8 @@ object ^ extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
-  val ɵSWITCH_IVY_ENABLED__POST_R3__ : /* true */ scala.Boolean = js.native
+  val ɵSWITCH_IVY_ENABLED__POST_R3__ : atAngularCoreLib.atAngularCoreLibNumbers.`true` = js.native
   val ɵSWITCH_RENDERER2_FACTORY__POST_R3__ : js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
-  val ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__ : atAngularCoreLib.Anon_ElementRefToken = js.native
   val ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__ : js.Function2[
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
@@ -73,11 +72,7 @@ object ^ extends js.Object {
   ] = js.native
   def ɵSWITCH_INJECTOR_FACTORY__POST_R3__(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
   def ɵaddPlayer(
-    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance,
-    player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player
-  ): scala.Unit = js.native
-  def ɵaddPlayer(
-    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance,
+    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance | atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance,
     player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player
   ): scala.Unit = js.native
   def ɵaddPlayer(ref: stdLib.HTMLElement, player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player): scala.Unit = js.native
@@ -556,8 +551,9 @@ object ^ extends js.Object {
   def ɵgetInheritedFactory[T](`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], T] = js.native
   def ɵgetLContext(target: js.Any): atAngularCoreLib.srcRender3InterfacesContextMod.LContext | scala.Null = js.native
   def ɵgetModuleFactory__POST_R3__(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
-  def ɵgetPlayers(ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
-  def ɵgetPlayers(ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
+  def ɵgetPlayers(
+    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance | atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance
+  ): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
   def ɵgetPlayers(ref: stdLib.HTMLElement): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
   def ɵi18n(index: scala.Double, message: java.lang.String): scala.Unit = js.native
   def ɵi18n(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native

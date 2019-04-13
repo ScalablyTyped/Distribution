@@ -10,11 +10,11 @@ trait ResultPropsType extends js.Object {
   var buttonType: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.primary | antdDashMobileLib.antdDashMobileLibStrings.ghost
   ] = js.undefined
-  var img: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var img: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var imgUrl: js.UndefOr[java.lang.String] = js.undefined
-  var message: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var message: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onButtonClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object ResultPropsType {
@@ -22,11 +22,11 @@ object ResultPropsType {
   def apply(
     buttonText: java.lang.String = null,
     buttonType: antdDashMobileLib.antdDashMobileLibStrings.primary | antdDashMobileLib.antdDashMobileLibStrings.ghost = null,
-    img: reactLib.reactMod.ReactNs.ReactNode = null,
+    img: reactLib.reactMod.ReactNode = null,
     imgUrl: java.lang.String = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
+    message: reactLib.reactMod.ReactNode = null,
     onButtonClick: () => scala.Unit = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): ResultPropsType = {
     val __obj = js.Dynamic.literal()
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)

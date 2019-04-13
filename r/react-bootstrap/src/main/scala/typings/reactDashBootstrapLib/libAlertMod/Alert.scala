@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Alert
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libAlertMod.AlertNs.AlertProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[AlertProps, js.Object, js.Any]
 

@@ -15,15 +15,15 @@ object SearchCategoryProps {
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     name: java.lang.String = null,
-    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactElement[_] = null,
     results: js.Array[
-      reactLib.reactMod.ReactNs.ComponentClass[
+      reactLib.reactMod.ComponentClass[
         semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-        reactLib.reactMod.ReactNs.ComponentState
+        reactLib.reactMod.ComponentState
       ]
     ] = null
   ): SearchCategoryProps = {

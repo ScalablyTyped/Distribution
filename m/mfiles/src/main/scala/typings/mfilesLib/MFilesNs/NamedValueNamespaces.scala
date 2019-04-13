@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class NamedValueNamespaces ()
   extends mfilesLib.INamedValueNamespaces
 
+@JSGlobal("MFiles.NamedValueNamespaces")
+@js.native
+object NamedValueNamespaces
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.INamedValueNamespaces]
+

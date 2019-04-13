@@ -25,6 +25,6 @@ object jsPlumbUtilNs extends js.Object {
   def removeWithFunction(list: js.Array[_], fn: js.Function1[/* obj */ js.Any, scala.Boolean]): scala.Double = js.native
   def suggest(list: js.Array[_], item: js.Any): scala.Boolean = js.native
   def suggest(list: js.Array[_], item: js.Any, insertAtHead: scala.Boolean): scala.Boolean = js.native
-  def uuid(): jsplumbLib.jsplumbMod.jsPlumbNs.UUID = js.native
+  def uuid(): jsplumbLib.jsplumbMod.UUID = js.native
 }
 

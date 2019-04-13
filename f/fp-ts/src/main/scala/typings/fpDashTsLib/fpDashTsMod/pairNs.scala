@@ -14,7 +14,7 @@ object pairNs extends js.Object {
     def this(fst: A, snd: A) = this()
   }
   
-  val URI: /* Pair */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Pair = js.native
   val pair: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libPairMod.URI] = js.native
   def getMonoid[A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libPairMod.Pair[A]] = js.native
   def getOrd[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[fpDashTsLib.libPairMod.Pair[A]] = js.native

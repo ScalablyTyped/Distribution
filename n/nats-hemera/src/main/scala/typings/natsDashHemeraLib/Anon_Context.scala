@@ -16,16 +16,16 @@ trait Anon_Context extends js.Object {
     */
   def createError(
     `type`: java.lang.String,
-    context: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Context,
-    state: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.State,
-    options: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ValidationOptions
-  ): natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Err
+    context: natsDashHemeraLib.natsDashHemeraMod.Context,
+    state: natsDashHemeraLib.natsDashHemeraMod.State,
+    options: natsDashHemeraLib.natsDashHemeraMod.ValidationOptions
+  ): natsDashHemeraLib.natsDashHemeraMod.Err
 }
 
 object Anon_Context {
   @scala.inline
   def apply(
-    createError: (java.lang.String, natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Context, natsDashHemeraLib.natsDashHemeraMod.HemeraNs.State, natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ValidationOptions) => natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Err
+    createError: (java.lang.String, natsDashHemeraLib.natsDashHemeraMod.Context, natsDashHemeraLib.natsDashHemeraMod.State, natsDashHemeraLib.natsDashHemeraMod.ValidationOptions) => natsDashHemeraLib.natsDashHemeraMod.Err
   ): Anon_Context = {
     val __obj = js.Dynamic.literal(createError = js.Any.fromFunction4(createError))
   

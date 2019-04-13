@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WritableStreamBufferOptions
-  extends nodeLib.streamMod.internalNs.WritableOptions {
+  extends nodeLib.streamMod.WritableOptions {
   var incrementAmount: js.UndefOr[scala.Double] = js.undefined
   var initialSize: js.UndefOr[scala.Double] = js.undefined
 }
@@ -18,14 +18,14 @@ object WritableStreamBufferOptions {
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
     defaultEncoding: java.lang.String = null,
     destroy: js.ThisFunction2[
-      /* this */ nodeLib.streamMod.internalNs.Writable, 
+      /* this */ nodeLib.streamMod.Writable, 
       /* error */ nodeLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
     emitClose: js.UndefOr[scala.Boolean] = js.undefined,
     `final`: js.ThisFunction1[
-      /* this */ nodeLib.streamMod.internalNs.Writable, 
+      /* this */ nodeLib.streamMod.Writable, 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
@@ -34,14 +34,14 @@ object WritableStreamBufferOptions {
     initialSize: scala.Int | scala.Double = null,
     objectMode: js.UndefOr[scala.Boolean] = js.undefined,
     write: js.ThisFunction3[
-      /* this */ nodeLib.streamMod.internalNs.Writable, 
+      /* this */ nodeLib.streamMod.Writable, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     writev: js.ThisFunction2[
-      /* this */ nodeLib.streamMod.internalNs.Writable, 
+      /* this */ nodeLib.streamMod.Writable, 
       /* chunks */ js.Array[nodeLib.Anon_Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit

@@ -15,7 +15,7 @@ object MessageProps {
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     as: js.Any = null,
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
@@ -32,7 +32,7 @@ object MessageProps {
       semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps
     ] = null,
     negative: js.UndefOr[scala.Boolean] = js.undefined,
-    onDismiss: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ MessageProps) => scala.Unit = null,
+    onDismiss: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ MessageProps) => scala.Unit = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
     size: MessageSizeProp = null,
     success: js.UndefOr[scala.Boolean] = js.undefined,

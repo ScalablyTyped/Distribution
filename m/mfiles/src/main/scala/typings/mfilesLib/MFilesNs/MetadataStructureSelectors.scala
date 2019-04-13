@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class MetadataStructureSelectors ()
   extends mfilesLib.IMetadataStructureSelectors
 
+@JSGlobal("MFiles.MetadataStructureSelectors")
+@js.native
+object MetadataStructureSelectors
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMetadataStructureSelectors]
+

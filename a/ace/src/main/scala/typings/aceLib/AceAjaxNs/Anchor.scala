@@ -84,19 +84,14 @@ class AnchorCls protected () extends Anchor {
   override def setPosition(row: scala.Double, column: scala.Double, noClip: scala.Boolean): scala.Unit = js.native
 }
 
-object Anchor {
-  @scala.inline
-  def apply(
-    detach: () => scala.Unit,
-    getDocument: () => Document,
-    getPosition: () => Position,
-    on: (java.lang.String, js.Function1[/* e */ js.Any, _]) => scala.Unit,
-    onChange: js.Any => scala.Unit,
-    setPosition: (scala.Double, scala.Double, scala.Boolean) => scala.Unit
-  ): Anchor = {
-    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), getDocument = js.Any.fromFunction0(getDocument), getPosition = js.Any.fromFunction0(getPosition), on = js.Any.fromFunction2(on), onChange = js.Any.fromFunction1(onChange), setPosition = js.Any.fromFunction3(setPosition))
-  
-    __obj.asInstanceOf[Anchor]
-  }
-}
+@JSGlobal("AceAjax.Anchor")
+@js.native
+object Anchor
+  extends /**
+  * Creates a new `Anchor` and associates it with a document.
+  * @param doc The document to associate with the anchor
+  * @param row The starting row position
+  * @param column The starting column position
+  **/
+org.scalablytyped.runtime.Instantiable3[/* doc */ Document, /* row */ scala.Double, /* column */ scala.Double, Anchor]
 

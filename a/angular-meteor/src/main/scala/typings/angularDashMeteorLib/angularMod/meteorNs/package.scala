@@ -12,6 +12,6 @@ package object meteorNs {
   type AngularMeteorCollection[T] = AngularMeteorCollection2[T, T]
   type ILoginWithExternalService = js.Function1[
     /* options */ meteorLib.MeteorNs.LoginWithExternalServiceOptions, 
-    angularLib.angularMod.angularNs.IPromise[scala.Unit]
+    angularLib.angularMod.IPromise[scala.Unit]
   ]
 }

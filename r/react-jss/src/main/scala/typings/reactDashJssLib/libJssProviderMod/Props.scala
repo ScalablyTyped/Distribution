@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var classNamePrefix: js.UndefOr[java.lang.String] = js.undefined
   var disableStylesGeneration: js.UndefOr[scala.Boolean] = js.undefined
   var generateClassName: js.UndefOr[jssLib.jssMod.GenerateClassName[_]] = js.undefined
@@ -17,7 +17,7 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     classNamePrefix: java.lang.String = null,
     disableStylesGeneration: js.UndefOr[scala.Boolean] = js.undefined,
     generateClassName: jssLib.jssMod.GenerateClassName[_] = null,

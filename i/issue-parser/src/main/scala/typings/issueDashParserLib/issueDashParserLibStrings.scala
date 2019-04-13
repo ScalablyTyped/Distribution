@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 object issueDashParserLibStrings {
   @js.native
   sealed trait bitbucket
-    extends issueDashParserLib.issueDashParserMod.issueParserNs.Options
+    extends issueDashParserLib.issueDashParserMod.Options
   
   @js.native
   sealed trait github
-    extends issueDashParserLib.issueDashParserMod.issueParserNs.Options
+    extends issueDashParserLib.issueDashParserMod.Options
   
   @js.native
   sealed trait gitlab
-    extends issueDashParserLib.issueDashParserMod.issueParserNs.Options
+    extends issueDashParserLib.issueDashParserMod.Options
   
   @js.native
   sealed trait waffle
-    extends issueDashParserLib.issueDashParserMod.issueParserNs.Options
+    extends issueDashParserLib.issueDashParserMod.Options
   
   @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]

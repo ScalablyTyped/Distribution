@@ -10,13 +10,13 @@ trait ValidatorFormProps extends js.Object {
   var debounceTime: js.UndefOr[scala.Double] = js.undefined
   var instantValidate: js.UndefOr[scala.Boolean] = js.undefined
   var onError: js.UndefOr[js.Function1[/* errors */ js.Array[_], scala.Unit]] = js.undefined
-  def onSubmit(event: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.Element]): scala.Unit
+  def onSubmit(event: reactLib.reactMod.FormEventHandler[reactLib.Element]): scala.Unit
 }
 
 object ValidatorFormProps {
   @scala.inline
   def apply(
-    onSubmit: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.Element] => scala.Unit,
+    onSubmit: reactLib.reactMod.FormEventHandler[reactLib.Element] => scala.Unit,
     className: java.lang.String = null,
     debounceTime: scala.Int | scala.Double = null,
     instantValidate: js.UndefOr[scala.Boolean] = js.undefined,

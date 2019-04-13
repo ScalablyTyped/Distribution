@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object gulpDashMinifyDashCssMod extends js.Object {
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(options: cleanDashCssLib.cleanDashCssMod.CleanCSSNs.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(options: cleanDashCssLib.cleanDashCssMod.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

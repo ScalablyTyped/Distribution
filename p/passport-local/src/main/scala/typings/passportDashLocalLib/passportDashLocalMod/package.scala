@@ -18,7 +18,7 @@ package object passportDashLocalMod {
     scala.Unit
   ]
   type VerifyFunctionWithRequest = js.Function4[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* username */ java.lang.String, 
     /* password */ java.lang.String, 
     /* done */ js.Function3[

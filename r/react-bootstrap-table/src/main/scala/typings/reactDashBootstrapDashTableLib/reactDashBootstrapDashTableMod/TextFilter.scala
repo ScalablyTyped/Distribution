@@ -25,7 +25,7 @@ trait TextFilter extends _Filter {
   /**
   	 * CSS Style to use for the select filter.
   	 */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Filter type must be 'TextFilter'.
   	 */
@@ -40,7 +40,7 @@ object TextFilter {
     defaultValue: java.lang.String = null,
     delay: scala.Int | scala.Double = null,
     placeholder: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TextFilter = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)

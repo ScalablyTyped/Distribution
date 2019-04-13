@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FastListFactory
-  extends org.scalablytyped.runtime.Instantiable0[fastDashListLib.fastDashListMod.FastListNs.List[js.Object]] {
-  def apply[T](): fastDashListLib.fastDashListMod.FastListNs.List[T] = js.native
+  extends org.scalablytyped.runtime.Instantiable0[List[js.Object]] {
+  def apply[T](): List[T] = js.native
 }
 

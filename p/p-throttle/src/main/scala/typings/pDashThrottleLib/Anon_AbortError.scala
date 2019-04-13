@@ -28,6 +28,6 @@ trait Anon_AbortError extends js.Object {
     fn: js.Function1[/* arguments */ Arguments, js.Thenable[Return] | Return],
     limit: scala.Double,
     interval: scala.Double
-  ): pDashThrottleLib.pDashThrottleMod.pThrottleNs.ThrottledFunction[Arguments, Return] = js.native
+  ): pDashThrottleLib.pDashThrottleMod.ThrottledFunction[Arguments, Return] = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DialogAction extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var ref: js.UndefOr[java.lang.String] = js.undefined
   var text: java.lang.String
 }
@@ -17,7 +17,7 @@ object DialogAction {
   def apply(
     text: java.lang.String,
     id: java.lang.String = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     ref: java.lang.String = null
   ): DialogAction = {
     val __obj = js.Dynamic.literal(text = text)

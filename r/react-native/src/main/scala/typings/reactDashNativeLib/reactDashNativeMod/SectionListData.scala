@@ -13,7 +13,7 @@ object SectionListData {
   @scala.inline
   def apply[ItemT](
     data: js.Array[ItemT],
-    ItemSeparatorComponent: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    ItemSeparatorComponent: reactLib.reactMod.ComponentType[_] = null,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     key: java.lang.String = null,
     keyExtractor: (ItemT, /* index */ scala.Double) => java.lang.String = null,

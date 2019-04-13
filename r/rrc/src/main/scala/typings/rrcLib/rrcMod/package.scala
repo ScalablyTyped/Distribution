@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rrcMod {
-  type ComponentConstructor[Props] = reactLib.reactMod.ReactNs.ComponentType[Props]
+  type ComponentConstructor[Props] = reactLib.reactMod.ComponentType[Props]
   type GetKeyFunction[Params] = js.Function3[
     /* match */ reactDashRouterLib.reactDashRouterMod.`match`[Params], 
     /* route */ RouteConfiguration, 

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 package object libFormFormMod {
   type ComponentDecorator = js.Function1[
-    /* component */ (reactLib.reactMod.ReactNs.ComponentClass[FormComponentProps[js.Any], reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[FormComponentProps[js.Any]], 
-    reactLib.reactMod.ReactNs.ComponentClass[
+    /* component */ (reactLib.reactMod.ComponentClass[FormComponentProps[js.Any], reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[FormComponentProps[js.Any]], 
+    reactLib.reactMod.ComponentClass[
       RcBaseFormProps with (antdLib.libUnderscoreUtilTypeMod.Omit[FormComponentProps[_], java.lang.String]), 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ]
   type FormCreateOptionMessagesCallback = js.Function1[/* repeated */ js.Any, java.lang.String]

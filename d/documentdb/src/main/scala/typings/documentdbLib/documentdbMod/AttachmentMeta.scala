@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AttachmentMeta
-  extends AbstractMeta
-     with Attachment
+  extends Attachment
+     with AbstractMeta
 
 object AttachmentMeta {
   @scala.inline

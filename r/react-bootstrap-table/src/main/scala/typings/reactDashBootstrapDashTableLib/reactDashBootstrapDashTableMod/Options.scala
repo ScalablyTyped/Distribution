@@ -74,9 +74,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * Give a btnGroup in options props and btnGroup only accept a function and a JSX returned value is necessary.
   	 * This lets you customize just the left-hand-side of the toolbar if desired.
   	 */
-  var btnGroup: js.UndefOr[
-    js.Function1[/* props */ ButtonGroupProps, reactLib.reactMod.ReactNs.ReactElement[_]]
-  ] = js.undefined
+  var btnGroup: js.UndefOr[js.Function1[/* props */ ButtonGroupProps, reactLib.reactMod.ReactElement[_]]] = js.undefined
   /**
   	 * Only work on enable search. If true, there will be a button beside the search input field
   	 * that will empty the field when clicked.
@@ -91,11 +89,8 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var clearSearchBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit], 
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -125,11 +120,8 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var deleteBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit], 
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -188,11 +180,8 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var exportCSVBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit], 
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -248,11 +237,8 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var insertBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit], 
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -272,7 +258,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
       /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* ignoreEditable */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -288,7 +274,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
       /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* ignoreEditable */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]]
+      reactLib.reactMod.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]]
     ]
   ] = js.undefined
   /**
@@ -304,7 +290,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     js.Function2[
       /* closeModal */ js.Function0[scala.Unit], 
       /* save */ js.Function0[scala.Unit], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -320,7 +306,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     js.Function2[
       /* closeModal */ js.Function0[scala.Unit], 
       /* save */ js.Function0[scala.Unit], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -368,7 +354,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   /**
   	 * Change the text displayed on the table if data is empty.
   	 */
-  var noDataText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var noDataText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
   	 * Assign a callback function which will be called when a row is added. This function
   	 * takes three arguments:
@@ -425,7 +411,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     js.Function3[
       /* rowKey */ scala.Double | java.lang.String, 
       /* isExpand */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -470,7 +456,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* row */ TRow, 
       /* columnIndex */ scala.Double, 
       /* rowIndex */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -483,7 +469,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   var onRowDoubleClick: js.UndefOr[
     js.Function2[
       /* row */ TRow, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -496,7 +482,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   var onRowMouseOut: js.UndefOr[
     js.Function2[
       /* row */ TRow, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -509,7 +495,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   var onRowMouseOver: js.UndefOr[
     js.Function2[
       /* row */ TRow, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -567,7 +553,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * pagination list.
   	 */
   var paginationPanel: js.UndefOr[
-    js.Function1[/* props */ PaginationPanelProps, reactLib.reactMod.ReactNs.ReactElement[_]]
+    js.Function1[/* props */ PaginationPanelProps, reactLib.reactMod.ReactElement[_]]
   ] = js.undefined
   /**
   	 * Location for the pagination panel to be displayed. Options are 'top' (above the table), 'bottom'
@@ -587,7 +573,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* start */ scala.Double, 
       /* to */ scala.Double, 
       /* total */ scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement[_]
     ])
   ] = js.undefined
   /**
@@ -627,7 +613,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   var searchField: js.UndefOr[
     js.Function1[
       /* props */ SearchFieldProps, 
-      reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with SearchFieldInterface]
+      reactLib.reactMod.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with SearchFieldInterface]
     ]
   ] = js.undefined
   /**
@@ -640,9 +626,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 *   `clearBtnClick`: the callback function to use when the clear search button is clicked
   	 *   `search`: the callback function for triggering the search, which takes the search text as an input.
   	 */
-  var searchPanel: js.UndefOr[
-    js.Function1[/* props */ SearchPanelProps, reactLib.reactMod.ReactNs.ReactElement[_]]
-  ] = js.undefined
+  var searchPanel: js.UndefOr[js.Function1[/* props */ SearchPanelProps, reactLib.reactMod.ReactElement[_]]] = js.undefined
   /**
   	 * It's available to custom select only toggle button by configuring showSelectedOnlyBtn in options props.
   	 * showSelectedOnlyBtn only accept a function and a JSX returned value is necessary.
@@ -653,12 +637,9 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var showSelectedOnlyBtn: js.UndefOr[
     js.Function2[
-      /* onClick */ js.Function1[
-        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-        scala.Unit
-      ], 
+      /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit], 
       /* showSelected */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -669,7 +650,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * Function to customize the sizePerPage dropdown.
   	 */
   var sizePerPageDropDown: js.UndefOr[
-    js.Function1[/* props */ SizePerPageFunctionProps, reactLib.reactMod.ReactNs.ReactElement[_]]
+    js.Function1[/* props */ SizePerPageFunctionProps, reactLib.reactMod.ReactElement[_]]
   ] = js.undefined
   /**
   	 * You can change the dropdown list for size per page if you enable pagination.
@@ -697,9 +678,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * After v3.0.0, you can custom all the components in the ToolBar also itself too.
   	 * Give a toolBar in options props and toolBar only accept a function and a JSX returned value is necessary.
   	 */
-  var toolBar: js.UndefOr[
-    js.Function1[/* props */ ToolBarProps, reactLib.reactMod.ReactNs.ReactElement[_]]
-  ] = js.undefined
+  var toolBar: js.UndefOr[js.Function1[/* props */ ToolBarProps, reactLib.reactMod.ReactElement[_]]] = js.undefined
   /**
   	 * Flag to indicate whether there should be buttons for First and Last page.
   	 */
@@ -720,20 +699,14 @@ object Options {
     afterTableComplete: () => scala.Unit = null,
     alwaysShowAllBtns: js.UndefOr[scala.Boolean] = js.undefined,
     beforeShowError: (/* type */ EditValidatorType, /* msg */ java.lang.String, /* title */ java.lang.String) => scala.Boolean | scala.Unit = null,
-    btnGroup: /* props */ ButtonGroupProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    btnGroup: /* props */ ButtonGroupProps => reactLib.reactMod.ReactElement[_] = null,
     clearSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    clearSearchBtn: /* onClick */ js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    clearSearchBtn: /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit] => reactLib.reactMod.ReactElement[_] = null,
     closeText: java.lang.String = null,
     defaultSearch: java.lang.String = null,
     defaultSortName: java.lang.String = null,
     defaultSortOrder: SortOrder = null,
-    deleteBtn: /* onClick */ js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    deleteBtn: /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit] => reactLib.reactMod.ReactElement[_] = null,
     deleteText: java.lang.String = null,
     expandAll: js.UndefOr[scala.Boolean] = js.undefined,
     expandBodyClass: java.lang.String | (js.Function3[
@@ -746,10 +719,7 @@ object Options {
     expandParentClass: java.lang.String | (js.Function2[/* row */ TRow, /* rowIndex */ scala.Double, java.lang.String]) = null,
     expandRowBgColor: java.lang.String = null,
     expanding: js.Array[scala.Double | java.lang.String] = null,
-    exportCSVBtn: /* onClick */ js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    exportCSVBtn: /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit] => reactLib.reactMod.ReactElement[_] = null,
     exportCSVSeparator: java.lang.String = null,
     exportCSVText: java.lang.String = null,
     firstPage: js.Any = null,
@@ -758,15 +728,12 @@ object Options {
     hidePageListOnlyOnePage: js.UndefOr[scala.Boolean] = js.undefined,
     hideSizePerPage: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreEditable: js.UndefOr[scala.Boolean] = js.undefined,
-    insertBtn: /* onClick */ js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    insertBtn: /* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit] => reactLib.reactMod.ReactElement[_] = null,
     insertFailIndicator: java.lang.String = null,
-    insertModal: (/* onModalClose */ js.Function0[scala.Unit], /* onSave */ js.Function1[/* row */ TRow, scala.Unit], /* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], /* ignoreEditable */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    insertModalBody: (/* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], /* ignoreEditable */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]] = null,
-    insertModalFooter: (/* closeModal */ js.Function0[scala.Unit], /* save */ js.Function0[scala.Unit]) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    insertModalHeader: (/* closeModal */ js.Function0[scala.Unit], /* save */ js.Function0[scala.Unit]) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    insertModal: (/* onModalClose */ js.Function0[scala.Unit], /* onSave */ js.Function1[/* row */ TRow, scala.Unit], /* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], /* ignoreEditable */ scala.Boolean) => reactLib.reactMod.ReactElement[_] = null,
+    insertModalBody: (/* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], /* ignoreEditable */ scala.Boolean) => reactLib.reactMod.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]] = null,
+    insertModalFooter: (/* closeModal */ js.Function0[scala.Unit], /* save */ js.Function0[scala.Unit]) => reactLib.reactMod.ReactElement[_] = null,
+    insertModalHeader: (/* closeModal */ js.Function0[scala.Unit], /* save */ js.Function0[scala.Unit]) => reactLib.reactMod.ReactElement[_] = null,
     insertText: java.lang.String = null,
     isValidKey: /* key */ scala.Double | java.lang.String => java.lang.String | scala.Unit = null,
     keepSizePerPageState: js.UndefOr[scala.Boolean] = js.undefined,
@@ -775,20 +742,20 @@ object Options {
     nextPage: js.Any = null,
     nextPageTitle: java.lang.String = null,
     noAutoBOM: js.UndefOr[scala.Boolean] = js.undefined,
-    noDataText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    noDataText: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     onAddRow: (/* row */ TRow, /* colInfo */ js.Array[ColumnDescription[TRow]], /* errorCallback */ js.Function1[/* message */ java.lang.String, scala.Unit]) => java.lang.String | scala.Boolean = null,
     onCellEdit: (/* row */ TRow, /* fieldName */ java.lang.String, /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any) => /* import warning: ImportType.apply Failed type conversion: TRow[string & keyof TRow] */ js.Any = null,
     onDeleteRow: (/* rowKeys */ js.Array[scala.Double | java.lang.String], /* rows */ js.Array[TRow]) => scala.Unit = null,
-    onExpand: (/* rowKey */ scala.Double | java.lang.String, /* isExpand */ scala.Boolean, /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onExpand: (/* rowKey */ scala.Double | java.lang.String, /* isExpand */ scala.Boolean, /* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
     onExportToCSV: () => js.Array[TRow] = null,
     onFilterChange: /* filterObject */ FilterData[_] => scala.Unit = null,
     onMouseEnter: () => scala.Unit = null,
     onMouseLeave: () => scala.Unit = null,
     onPageChange: (/* page */ scala.Double, /* sizePerPage */ scala.Double) => scala.Unit = null,
-    onRowClick: (/* row */ TRow, /* columnIndex */ scala.Double, /* rowIndex */ scala.Double, /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onRowDoubleClick: (/* row */ TRow, /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onRowMouseOut: (/* row */ TRow, /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onRowMouseOver: (/* row */ TRow, /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onRowClick: (/* row */ TRow, /* columnIndex */ scala.Double, /* rowIndex */ scala.Double, /* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onRowDoubleClick: (/* row */ TRow, /* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onRowMouseOut: (/* row */ TRow, /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onRowMouseOver: (/* row */ TRow, /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
     onSearchChange: (/* searchText */ java.lang.String, /* colInfos */ js.Array[ColumnDescription[TRow]], /* multiColumnSearch */ scala.Boolean) => scala.Unit = null,
     onSizePerPageList: /* sizePerPage */ scala.Double => scala.Unit = null,
     onSortChange: (js.Function2[/* sortName */ java.lang.String, /* sortOrder */ SortOrder, scala.Unit]) | (js.Function2[
@@ -799,13 +766,13 @@ object Options {
     onlyOneExpanding: js.UndefOr[scala.Boolean] = js.undefined,
     page: scala.Int | scala.Double = null,
     pageStartIndex: scala.Int | scala.Double = null,
-    paginationPanel: /* props */ PaginationPanelProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    paginationPanel: /* props */ PaginationPanelProps => reactLib.reactMod.ReactElement[_] = null,
     paginationPosition: PaginationPostion = null,
     paginationShowsTotal: scala.Boolean | (js.Function3[
       /* start */ scala.Double, 
       /* to */ scala.Double, 
       /* total */ scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement[_]
     ]) = null,
     paginationSize: scala.Int | scala.Double = null,
     prePage: js.Any = null,
@@ -813,19 +780,16 @@ object Options {
     printToolBar: js.UndefOr[scala.Boolean] = js.undefined,
     saveText: java.lang.String = null,
     searchDelayTime: scala.Int | scala.Double = null,
-    searchField: /* props */ SearchFieldProps => reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with SearchFieldInterface] = null,
-    searchPanel: /* props */ SearchPanelProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    showSelectedOnlyBtn: (/* onClick */ js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ], /* showSelected */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    searchField: /* props */ SearchFieldProps => reactLib.reactMod.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with SearchFieldInterface] = null,
+    searchPanel: /* props */ SearchPanelProps => reactLib.reactMod.ReactElement[_] = null,
+    showSelectedOnlyBtn: (/* onClick */ js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit], /* showSelected */ scala.Boolean) => reactLib.reactMod.ReactElement[_] = null,
     sizePerPage: scala.Int | scala.Double = null,
-    sizePerPageDropDown: /* props */ SizePerPageFunctionProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    sizePerPageDropDown: /* props */ SizePerPageFunctionProps => reactLib.reactMod.ReactElement[_] = null,
     sizePerPageList: SizePerPageList = null,
     sortIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     sortName: java.lang.String = null,
     sortOrder: SortOrder | js.Array[SortOrder] = null,
-    toolBar: /* props */ ToolBarProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    toolBar: /* props */ ToolBarProps => reactLib.reactMod.ReactElement[_] = null,
     withFirstAndLast: js.UndefOr[scala.Boolean] = js.undefined,
     withoutNoDataText: js.UndefOr[scala.Boolean] = js.undefined
   ): Options[TRow] = {

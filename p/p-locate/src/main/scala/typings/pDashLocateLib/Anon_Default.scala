@@ -35,7 +35,7 @@ trait Anon_Default extends js.Object {
   def apply[ValueType](
     input: stdLib.Iterable[js.Thenable[ValueType] | ValueType],
     tester: js.Function1[/* element */ ValueType, js.Thenable[scala.Boolean] | scala.Boolean],
-    options: pDashLocateLib.pDashLocateMod.pLocateNs.Options
+    options: pDashLocateLib.pDashLocateMod.Options
   ): js.Promise[js.UndefOr[ValueType]] = js.native
 }
 

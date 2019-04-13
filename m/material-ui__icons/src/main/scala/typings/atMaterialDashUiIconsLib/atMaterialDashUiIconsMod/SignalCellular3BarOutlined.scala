@@ -16,9 +16,9 @@ class SignalCellular3BarOutlined protected ()
 @JSImport("@material-ui/icons", "SignalCellular3BarOutlined")
 @js.native
 class SignalCellular3BarOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

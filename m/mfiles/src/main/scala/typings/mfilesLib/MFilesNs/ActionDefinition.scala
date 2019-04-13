@@ -19,3 +19,8 @@ class ActionDefinition ()
   override def Clone(): mfilesLib.IActionDefinition = js.native
 }
 
+@JSGlobal("MFiles.ActionDefinition")
+@js.native
+object ActionDefinition
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IActionDefinition]
+

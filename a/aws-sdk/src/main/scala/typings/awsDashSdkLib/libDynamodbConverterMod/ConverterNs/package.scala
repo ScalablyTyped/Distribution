@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ConverterNs {
-  type ConverterOptions = awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs.ConverterOptions
+  type ConverterOptions = awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ConverterOptions
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ActivityButton ()
   extends reactLib.reactMod.Component[
-      ActivityButtonProps with reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLButtonElement], 
+      ActivityButtonProps with reactLib.reactMod.HTMLAttributes[stdLib.HTMLButtonElement], 
       js.Object, 
       js.Any
     ]

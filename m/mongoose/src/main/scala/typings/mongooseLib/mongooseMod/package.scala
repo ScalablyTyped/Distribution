@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object mongooseMod {
   type CastError = mongooseLib.mongooseMod.ErrorNs.CastError
+  type ClientSession = mongodbLib.mongodbMod.ClientSession
   type HookAsyncCallback[T] = js.ThisFunction3[
     /* this */ T, 
     /* next */ HookNextFunction, 
@@ -44,4 +45,9 @@ package object mongooseMod {
     * for instance findOneAndUpdate.
     */
   type Query[T] = DocumentQuery[T, js.Any, js.Object]
+  /*
+    * Intellisense for Schema definitions
+    */
+  type SchemaDefinition = org.scalablytyped.runtime.StringDictionary[SchemaTypeOpts[js.Any] | Schema[js.Any] | SchemaType]
+  type TagSet = org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }

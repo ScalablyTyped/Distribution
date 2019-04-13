@@ -9,76 +9,52 @@ import scala.scalajs.js.annotation._
 trait PI
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_PI: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsPiMod.PINs.ClientConfiguration = js.native
+  var config_PI: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * For a specific time period, retrieve the top N dimension keys for a metric.
     */
-  def describeDimensionKeys(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDimensionKeys(): awsDashSdkLib.libRequestMod.Request[DescribeDimensionKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDimensionKeys(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysResponse, 
+      /* data */ DescribeDimensionKeysResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDimensionKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * For a specific time period, retrieve the top N dimension keys for a metric.
     */
-  def describeDimensionKeys(params: awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDimensionKeys(params: DescribeDimensionKeysRequest): awsDashSdkLib.libRequestMod.Request[DescribeDimensionKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDimensionKeys(
-    params: awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysRequest,
+    params: DescribeDimensionKeysRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysResponse, 
+      /* data */ DescribeDimensionKeysResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.DescribeDimensionKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDimensionKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve Performance Insights metrics for a set of data sources, over a time period. You can provide specific dimension groups and dimensions, and provide aggregation and filtering criteria for each group.
     */
-  def getResourceMetrics(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getResourceMetrics(): awsDashSdkLib.libRequestMod.Request[GetResourceMetricsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getResourceMetrics(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsResponse, 
+      /* data */ GetResourceMetricsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetResourceMetricsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve Performance Insights metrics for a set of data sources, over a time period. You can provide specific dimension groups and dimensions, and provide aggregation and filtering criteria for each group.
     */
-  def getResourceMetrics(params: awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getResourceMetrics(params: GetResourceMetricsRequest): awsDashSdkLib.libRequestMod.Request[GetResourceMetricsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getResourceMetrics(
-    params: awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsRequest,
+    params: GetResourceMetricsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsResponse, 
+      /* data */ GetResourceMetricsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPiMod.PINs.GetResourceMetricsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetResourceMetricsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

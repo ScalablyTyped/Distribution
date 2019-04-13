@@ -7,15 +7,6 @@ import scala.scalajs.js.annotation._
 
 object rsvpLibStrings {
   @js.native
-  sealed trait Anon_Arg1 extends js.Object
-  
-  @js.native
-  sealed trait Anon_Label extends js.Object
-  
-  @js.native
-  sealed trait Anon_LabelObject extends js.Object
-  
-  @js.native
   sealed trait Promise extends js.Object
   
   @js.native
@@ -42,12 +33,6 @@ object rsvpLibStrings {
   @js.native
   sealed trait rejected extends js.Object
   
-  @scala.inline
-  def Anon_Arg1: Anon_Arg1 = "Anon_Arg1".asInstanceOf[Anon_Arg1]
-  @scala.inline
-  def Anon_Label: Anon_Label = "Anon_Label".asInstanceOf[Anon_Label]
-  @scala.inline
-  def Anon_LabelObject: Anon_LabelObject = "Anon_LabelObject".asInstanceOf[Anon_LabelObject]
   @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline

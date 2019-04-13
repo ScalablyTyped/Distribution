@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "Envelope")
 @js.native
 class Envelope ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedEnvelopeMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedEnvelopeMod.^
 

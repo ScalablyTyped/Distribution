@@ -13,12 +13,12 @@ trait ascii2mathml extends js.Object {
     * @param options Options
     */
   def apply(asciimath: java.lang.String): java.lang.String = js.native
-  def apply(asciimath: java.lang.String, options: ascii2mathmlLib.ascii2mathmlMod.A2MMLNs.Options): java.lang.String = js.native
+  def apply(asciimath: java.lang.String, options: Options): java.lang.String = js.native
   /**
     * Generates a function with default options set to convert
     * ASCIIMath expression to MathML markup.
     * @param options Options
     */
-  def apply(options: ascii2mathmlLib.ascii2mathmlMod.A2MMLNs.Options): ascii2mathml = js.native
+  def apply(options: Options): ascii2mathml = js.native
 }
 

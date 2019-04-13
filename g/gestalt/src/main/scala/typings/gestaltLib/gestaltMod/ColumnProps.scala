@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColumnProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var lgSpan: js.UndefOr[UnsignedUpTo12] = js.undefined
   var mdSpan: js.UndefOr[UnsignedUpTo12] = js.undefined
   var smSpan: js.UndefOr[UnsignedUpTo12] = js.undefined
@@ -17,7 +17,7 @@ object ColumnProps {
   @scala.inline
   def apply(
     span: UnsignedUpTo12,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     lgSpan: UnsignedUpTo12 = null,
     mdSpan: UnsignedUpTo12 = null,
     smSpan: UnsignedUpTo12 = null

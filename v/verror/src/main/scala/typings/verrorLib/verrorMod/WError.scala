@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("verror", "WError")
 @js.native
-class WError ()
-  extends verrorLib.verrorMod.VErrorNs.WError {
+class WError () extends VError {
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class ObjIDs ()
   extends mfilesLib.IObjIDs
 
+@JSGlobal("MFiles.ObjIDs")
+@js.native
+object ObjIDs
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjIDs]
+

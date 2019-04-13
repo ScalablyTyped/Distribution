@@ -68,7 +68,13 @@ object builderDashUtilDashRuntimeLibStrings {
   sealed trait https extends js.Object
   
   @js.native
+  sealed trait installerDOTexe extends js.Object
+  
+  @js.native
   sealed trait latin1 extends js.Object
+  
+  @js.native
+  sealed trait packageDOT7z extends js.Object
   
   @js.native
   sealed trait prerelease extends js.Object
@@ -129,7 +135,11 @@ object builderDashUtilDashRuntimeLibStrings {
   @scala.inline
   def https: https = "https".asInstanceOf[https]
   @scala.inline
+  def installerDOTexe: installerDOTexe = "installer.exe".asInstanceOf[installerDOTexe]
+  @scala.inline
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  @scala.inline
+  def packageDOT7z: packageDOT7z = "package.7z".asInstanceOf[packageDOT7z]
   @scala.inline
   def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
   @scala.inline

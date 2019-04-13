@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mapbox-gl", "AttributionControl")
 @js.native
-class AttributionControl ()
-  extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.AttributionControl {
+class AttributionControl () extends Control {
   def this(options: mapboxDashGlLib.Anon_Compact) = this()
 }
 

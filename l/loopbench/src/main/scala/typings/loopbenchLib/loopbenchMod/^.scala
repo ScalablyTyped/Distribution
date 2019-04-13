@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * Creates a new instance of loopbench.
     */
-  def apply(): loopbenchLib.loopbenchMod.loopbenchNs.LoopBench = js.native
-  def apply(options: loopbenchLib.loopbenchMod.loopbenchNs.Options): loopbenchLib.loopbenchMod.loopbenchNs.LoopBench = js.native
+  def apply(): LoopBench = js.native
+  def apply(options: Options): LoopBench = js.native
 }
 

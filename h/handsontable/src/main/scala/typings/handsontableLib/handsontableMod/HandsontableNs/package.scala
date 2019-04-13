@@ -21,6 +21,11 @@ package object HandsontableNs {
     */
   type CellValue = js.Any
   /**
+    * A row object, one of the two ways to supply data to the table, the alternative being an array of values.
+    * Row objects can have any data assigned to them, not just column data, and can define a `__children` array for nested rows.
+    */
+  type RowObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+  /**
     * A single row of source data, which can be represented as an array of values, or an object with key/value pairs.
     */
   type SourceRowData = RowObject | js.Array[CellValue]

@@ -21,10 +21,28 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("avoscloud-sdk", "ACL")
 @js.native
-class ACL ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ACL {
+class ACL () extends BaseObject {
   def this(arg1: js.Any) = this()
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  var permissionsById: js.Any = js.native
+  def getPublicReadAccess(): scala.Boolean = js.native
+  def getPublicWriteAccess(): scala.Boolean = js.native
+  def getReadAccess(userId: User): scala.Boolean = js.native
+  def getReadAccess(userId: java.lang.String): scala.Boolean = js.native
+  def getRoleReadAccess(role: Role): scala.Boolean = js.native
+  def getRoleReadAccess(role: java.lang.String): scala.Boolean = js.native
+  def getRoleWriteAccess(role: Role): scala.Boolean = js.native
+  def getRoleWriteAccess(role: java.lang.String): scala.Boolean = js.native
+  def getWriteAccess(userId: User): scala.Boolean = js.native
+  def getWriteAccess(userId: java.lang.String): scala.Boolean = js.native
+  def setPublicReadAccess(allowed: scala.Boolean): scala.Unit = js.native
+  def setPublicWriteAccess(allowed: scala.Boolean): scala.Unit = js.native
+  def setReadAccess(userId: User, allowed: scala.Boolean): scala.Unit = js.native
+  def setReadAccess(userId: java.lang.String, allowed: scala.Boolean): scala.Unit = js.native
+  def setRoleReadAccess(role: Role, allowed: scala.Boolean): scala.Unit = js.native
+  def setRoleReadAccess(role: java.lang.String, allowed: scala.Boolean): scala.Unit = js.native
+  def setRoleWriteAccess(role: Role, allowed: scala.Boolean): scala.Unit = js.native
+  def setRoleWriteAccess(role: java.lang.String, allowed: scala.Boolean): scala.Unit = js.native
+  def setWriteAccess(userId: User, allowed: scala.Boolean): scala.Unit = js.native
+  def setWriteAccess(userId: java.lang.String, allowed: scala.Boolean): scala.Unit = js.native
 }
 

@@ -9,6 +9,7 @@ package object typesHelpersMod {
   type ActionMethod = js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]
   type Computed = js.Function0[js.Any]
   type CustomVue = vueLib.typesVueMod.Vue with Dictionary[_]
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type FunctionMapper[F, R] = js.Function1[
     /* map */ Dictionary[
       js.ThisFunction2[/* this */ CustomVue, /* fn */ F, /* repeated */ js.Any, js.Any]

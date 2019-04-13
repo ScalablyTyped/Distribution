@@ -11,3 +11,10 @@ import scala.scalajs.js.annotation._
 */
 trait SwitchInputTypes extends js.Object
 
+@JSImport("react-foundation/enums", "SwitchInputTypes")
+@js.native
+object SwitchInputTypes extends js.Object {
+  var CHECKBOX: reactDashFoundationLib.enumsMod.SwitchInputTypes = js.native
+  var RADIO: reactDashFoundationLib.enumsMod.SwitchInputTypes = js.native
+}
+

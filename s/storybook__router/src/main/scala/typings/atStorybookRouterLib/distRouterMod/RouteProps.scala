@@ -9,13 +9,13 @@ trait RouteProps extends js.Object {
   var hideOnly: scala.Boolean
   var path: java.lang.String
   var startsWith: scala.Boolean
-  def children(renderData: RenderData): reactLib.reactMod.ReactNs.ReactNode
+  def children(renderData: RenderData): reactLib.reactMod.ReactNode
 }
 
 object RouteProps {
   @scala.inline
   def apply(
-    children: RenderData => reactLib.reactMod.ReactNs.ReactNode,
+    children: RenderData => reactLib.reactMod.ReactNode,
     hideOnly: scala.Boolean,
     path: java.lang.String,
     startsWith: scala.Boolean

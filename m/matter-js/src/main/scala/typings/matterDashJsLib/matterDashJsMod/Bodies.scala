@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Bodies")
 @js.native
-class Bodies ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Bodies
+class Bodies () extends js.Object
 
 /* static members */
 @JSImport("matter-js", "Bodies")
@@ -26,20 +25,20 @@ object Bodies extends js.Object {
     * @param {number} [maxSides]
     * @return {body} A new circle body
     */
-  def circle(x: scala.Double, y: scala.Double, radius: scala.Double): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  def circle(x: scala.Double, y: scala.Double, radius: scala.Double): matterDashJsLib.matterDashJsMod.Body = js.native
   def circle(
     x: scala.Double,
     y: scala.Double,
     radius: scala.Double,
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IBodyDefinition
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+    options: matterDashJsLib.matterDashJsMod.IBodyDefinition
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   def circle(
     x: scala.Double,
     y: scala.Double,
     radius: scala.Double,
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IBodyDefinition,
+    options: matterDashJsLib.matterDashJsMod.IBodyDefinition,
     maxSides: scala.Double
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices).
     * If the vertices are convex, they will pass through as supplied.
@@ -63,38 +62,38 @@ object Bodies extends js.Object {
   def fromVertices(
     x: scala.Double,
     y: scala.Double,
-    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]]
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.Vector]]
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   def fromVertices(
     x: scala.Double,
     y: scala.Double,
-    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]],
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IBodyDefinition
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.Vector]],
+    options: matterDashJsLib.matterDashJsMod.IBodyDefinition
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   def fromVertices(
     x: scala.Double,
     y: scala.Double,
-    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]],
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IBodyDefinition,
+    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.Vector]],
+    options: matterDashJsLib.matterDashJsMod.IBodyDefinition,
     flagInternal: scala.Boolean
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   def fromVertices(
     x: scala.Double,
     y: scala.Double,
-    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]],
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IBodyDefinition,
+    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.Vector]],
+    options: matterDashJsLib.matterDashJsMod.IBodyDefinition,
     flagInternal: scala.Boolean,
     removeCollinear: scala.Double
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   def fromVertices(
     x: scala.Double,
     y: scala.Double,
-    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]],
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IBodyDefinition,
+    vertexSets: js.Array[js.Array[matterDashJsLib.matterDashJsMod.Vector]],
+    options: matterDashJsLib.matterDashJsMod.IBodyDefinition,
     flagInternal: scala.Boolean,
     removeCollinear: scala.Double,
     minimumArea: scala.Double
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   /**
     * Creates a new rigid body model with a regular polygon hull with the given number of sides.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -107,14 +106,14 @@ object Bodies extends js.Object {
     * @param {object} [options]
     * @return {body} A new regular polygon body
     */
-  def polygon(x: scala.Double, y: scala.Double, sides: scala.Double, radius: scala.Double): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  def polygon(x: scala.Double, y: scala.Double, sides: scala.Double, radius: scala.Double): matterDashJsLib.matterDashJsMod.Body = js.native
   def polygon(
     x: scala.Double,
     y: scala.Double,
     sides: scala.Double,
     radius: scala.Double,
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IChamferableBodyDefinition
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+    options: matterDashJsLib.matterDashJsMod.IChamferableBodyDefinition
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   /**
     * Creates a new rigid body model with a rectangle hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -127,14 +126,14 @@ object Bodies extends js.Object {
     * @param {object} [options]
     * @return {body} A new rectangle body
     */
-  def rectangle(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  def rectangle(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): matterDashJsLib.matterDashJsMod.Body = js.native
   def rectangle(
     x: scala.Double,
     y: scala.Double,
     width: scala.Double,
     height: scala.Double,
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IChamferableBodyDefinition
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+    options: matterDashJsLib.matterDashJsMod.IChamferableBodyDefinition
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
   /**
     * Creates a new rigid body model with a trapezoid hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -148,14 +147,14 @@ object Bodies extends js.Object {
     * @param {object} [options]
     * @return {body} A new trapezoid body
     */
-  def trapezoid(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double, slope: scala.Double): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  def trapezoid(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double, slope: scala.Double): matterDashJsLib.matterDashJsMod.Body = js.native
   def trapezoid(
     x: scala.Double,
     y: scala.Double,
     width: scala.Double,
     height: scala.Double,
     slope: scala.Double,
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IChamferableBodyDefinition
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+    options: matterDashJsLib.matterDashJsMod.IChamferableBodyDefinition
+  ): matterDashJsLib.matterDashJsMod.Body = js.native
 }
 

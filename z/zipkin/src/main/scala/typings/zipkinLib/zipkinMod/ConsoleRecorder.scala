@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("zipkin", "ConsoleRecorder")
 @js.native
-class ConsoleRecorder ()
-  extends zipkinLib.zipkinMod.zipkinNs.ConsoleRecorder {
+class ConsoleRecorder () extends Recorder {
   def this(logger: js.Function1[/* message */ java.lang.String, scala.Unit]) = this()
   /* CompleteClass */
-  override def record(rec: zipkinLib.zipkinMod.zipkinNs.Record): scala.Unit = js.native
+  override def record(rec: Record): scala.Unit = js.native
 }
 

@@ -26,11 +26,11 @@ object GithubPickerProps {
   def apply(
     color: reactDashColorLib.reactDashColorMod.Color = null,
     colors: js.Array[java.lang.String] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[GithubPicker] = null,
+    ref: reactLib.reactMod.LegacyRef[GithubPicker] = null,
     triangle: reactDashColorLib.reactDashColorLibStrings.hide | reactDashColorLib.reactDashColorLibStrings.`top-left` | reactDashColorLib.reactDashColorLibStrings.`top-right` = null,
     width: java.lang.String = null
   ): GithubPickerProps = {

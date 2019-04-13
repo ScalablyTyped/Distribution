@@ -6,33 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'title'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardHeaderProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'title'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardHeaderProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[CardHeaderClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[CardHeaderProps]] = js.undefined
+  var action: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var avatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[CardHeaderProps]] = js.undefined
   var disableTypography: js.UndefOr[scala.Boolean] = js.undefined
-  var subheader: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var subheader: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var subheaderTypographyProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var titleTypographyProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]] = js.undefined
 }
 
 object CardHeaderProps {
   @scala.inline
   def apply(
-    action: reactLib.reactMod.ReactNs.ReactNode = null,
-    avatar: reactLib.reactMod.ReactNs.ReactNode = null,
+    action: reactLib.reactMod.ReactNode = null,
+    avatar: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardHeaderClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[CardHeaderProps] = null,
+    component: reactLib.reactMod.ReactType[CardHeaderProps] = null,
     disableTypography: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    subheader: reactLib.reactMod.ReactNs.ReactNode = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    subheader: reactLib.reactMod.ReactNode = null,
     subheaderTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     titleTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null
   ): CardHeaderProps = {
     val __obj = js.Dynamic.literal()

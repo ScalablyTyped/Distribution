@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ImportExport ()
   extends awsDashSdkLib.clientsAllMod.ImportExport {
-  def this(options: awsDashSdkLib.clientsImportexportMod.ImportExportNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsImportexportMod.ClientConfiguration) = this()
 }
 

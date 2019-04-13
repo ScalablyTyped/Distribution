@@ -14,11 +14,11 @@ object nodemailerLibStrings {
   
   @js.native
   sealed trait DELAY
-    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
+    extends nodemailerLib.libSmtpDashConnectionMod.DSNOption
   
   @js.native
   sealed trait FAILURE
-    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
+    extends nodemailerLib.libSmtpDashConnectionMod.DSNOption
   
   @js.native
   sealed trait Full extends js.Object
@@ -34,7 +34,7 @@ object nodemailerLibStrings {
   
   @js.native
   sealed trait NEVER
-    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
+    extends nodemailerLib.libSmtpDashConnectionMod.DSNOption
   
   @js.native
   sealed trait OAUTH2 extends js.Object
@@ -47,7 +47,7 @@ object nodemailerLibStrings {
   
   @js.native
   sealed trait SUCCESS
-    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
+    extends nodemailerLib.libSmtpDashConnectionMod.DSNOption
   
   @js.native
   sealed trait XOAUTH2 extends js.Object
@@ -57,7 +57,7 @@ object nodemailerLibStrings {
   
   @js.native
   sealed trait base64
-    extends nodemailerLib.libMailerMod.MailNs.TextEncoding
+    extends nodemailerLib.libMailerMod.TextEncoding
   
   @js.native
   sealed trait connect extends js.Object
@@ -122,7 +122,7 @@ object nodemailerLibStrings {
   
   @js.native
   sealed trait `quoted-printable`
-    extends nodemailerLib.libMailerMod.MailNs.TextEncoding
+    extends nodemailerLib.libMailerMod.TextEncoding
   
   @js.native
   sealed trait token extends js.Object

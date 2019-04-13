@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class APIGateway ()
   extends awsDashSdkLib.clientsAllMod.APIGateway {
-  def this(options: awsDashSdkLib.clientsApigatewayMod.APIGatewayNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsApigatewayMod.ClientConfiguration) = this()
 }
 

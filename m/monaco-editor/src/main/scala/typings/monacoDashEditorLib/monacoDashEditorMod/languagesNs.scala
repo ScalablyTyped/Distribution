@@ -1529,9 +1529,6 @@ object languagesNs extends js.Object {
   @JSName("html")
   @js.native
   object htmlNs extends js.Object {
-    trait CompletionConfiguration
-      extends /* provider */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
-    
     trait HTMLFormatConfiguration extends js.Object {
       val contentUnformatted: java.lang.String
       val endWithNewline: scala.Boolean
@@ -1569,6 +1566,7 @@ object languagesNs extends js.Object {
     var handlebarDefaults: LanguageServiceDefaults = js.native
     var htmlDefaults: LanguageServiceDefaults = js.native
     var razorDefaults: LanguageServiceDefaults = js.native
+    type CompletionConfiguration = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   }
   
   @JSName("json")
@@ -1730,9 +1728,6 @@ object languagesNs extends js.Object {
         */
       def setMaximumWorkerIdleTime(value: scala.Double): scala.Unit = js.native
     }
-    
-    trait MapLike[T]
-      extends /* index */ org.scalablytyped.runtime.StringDictionary[T]
     
     @js.native
     sealed trait ModuleKind extends js.Object
@@ -1913,6 +1908,7 @@ object languagesNs extends js.Object {
     type CompilerOptionsValue = js.UndefOr[
         java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double]) | js.Array[java.lang.String] | MapLike[js.Array[java.lang.String]] | scala.Null
       ]
+    type MapLike[T] = org.scalablytyped.runtime.StringDictionary[T]
   }
   
   type CharacterPair = js.Tuple2[java.lang.String, java.lang.String]

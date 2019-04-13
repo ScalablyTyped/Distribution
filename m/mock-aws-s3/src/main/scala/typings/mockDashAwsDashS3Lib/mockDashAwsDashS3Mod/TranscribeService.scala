@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class TranscribeService ()
   extends awsDashSdkLib.awsDashSdkMod.TranscribeService {
-  def this(options: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsTranscribeserviceMod.ClientConfiguration) = this()
 }
 

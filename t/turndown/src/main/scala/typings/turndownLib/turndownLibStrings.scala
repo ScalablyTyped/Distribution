@@ -29,247 +29,247 @@ object turndownLibStrings {
   
   @js.native
   sealed trait a
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait abbr
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait address
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait applet
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait area
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait article
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait aside
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait atx extends js.Object
   
   @js.native
   sealed trait audio
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait b
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait base
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait basefont
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait bdi
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait bdo
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait blockquote
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait body
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait br
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait button
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait canvas
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait caption
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait cite
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait code
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait col
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait colgroup
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait collapsed extends js.Object
   
   @js.native
   sealed trait data
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait datalist
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait dd
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait del
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait details
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait dfn
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait dialog
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait dir
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait div
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait dl
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait dt
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait em
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait embed
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait fenced extends js.Object
   
   @js.native
   sealed trait fieldset
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait figcaption
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait figure
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait font
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait footer
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait form
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait frame
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait frameset
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait full extends js.Object
   
   @js.native
   sealed trait h1
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait h2
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait h3
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait h4
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait h5
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait h6
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait head
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait header
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait hgroup
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait hr
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait html
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait i
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait iframe
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait img
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait indented extends js.Object
@@ -279,146 +279,146 @@ object turndownLibStrings {
   
   @js.native
   sealed trait input
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait ins
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait kbd
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait label
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait legend
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait li
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait link
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait main
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait map
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait mark
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait marquee
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait menu
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait meta
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait meter
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait nav
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait noscript
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait `object`
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait ol
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait optgroup
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait option
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait output
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait p
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait param
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait picture
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait pre
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait progress
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait q
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait referenced extends js.Object
   
   @js.native
   sealed trait rp
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait rt
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait ruby
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait s
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait samp
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait script
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait section
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait select
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait setext extends js.Object
@@ -428,107 +428,107 @@ object turndownLibStrings {
   
   @js.native
   sealed trait slot
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait small
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait source
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait span
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait strong
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait style
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait sub
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait summary
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait sup
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait table
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait tbody
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait td
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait template
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait textarea
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait tfoot
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait th
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait thead
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait time
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait title
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait tr
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait track
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait u
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait ul
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait `var`
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait video
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait wbr
-    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+    extends turndownLib.turndownMod.TagName
   
   @js.native
   sealed trait `~~~` extends js.Object

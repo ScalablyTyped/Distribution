@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "ScriptFilter")
 @js.native
-class ScriptFilter protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter {
+class ScriptFilter protected () extends Filter {
   /*
     A filter allowing to define scripts as filters.
     */
@@ -16,43 +15,35 @@ class ScriptFilter protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter = js.native
+  def cache(trueFalse: scala.Boolean): ScriptFilter = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter = js.native
+  def cacheKey(key: java.lang.String): ScriptFilter = js.native
   /*
     Sets the script language.
     */
-  /* CompleteClass */
-  override def lang(lang: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter = js.native
+  def lang(lang: java.lang.String): ScriptFilter = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter = js.native
+  def name(name: java.lang.String): ScriptFilter = js.native
   /*
     Sets parameters that will be applied to the script.  Overwrites
     any existing params.
     */
-  /* CompleteClass */
-  override def params(p: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter = js.native
+  def params(p: js.Object): ScriptFilter = js.native
   /*
     Sets the script.
     */
-  /* CompleteClass */
-  override def script(s: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter = js.native
+  def script(s: java.lang.String): ScriptFilter = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ScriptFilter = js.native
+  def toJSON(): ScriptFilter = js.native
 }
 

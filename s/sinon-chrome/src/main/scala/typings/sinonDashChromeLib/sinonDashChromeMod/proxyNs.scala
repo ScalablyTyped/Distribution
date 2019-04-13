@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sinon-chrome", "proxy")
 @js.native
 object proxyNs extends js.Object {
-  var onProxyError: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var settings: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting = js.native
+  var onProxyError: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var settings: sinonDashChromeLib.sinonDashChromeMod.typesNs.StubbedChromeSetting = js.native
 }
 

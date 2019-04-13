@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OperationObject
-  extends openapiDashTypesLib.openapiDashTypesMod.OpenAPINs.Operation
-     with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with openapiDashTypesLib.openapiDashTypesMod.OpenAPINs.Operation {
   var consumes: js.UndefOr[MimeTypes] = js.undefined
   var deprecated: js.UndefOr[scala.Boolean] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

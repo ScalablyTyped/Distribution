@@ -15,3 +15,8 @@ class VersionComments ()
   override def Item(Index: scala.Double): mfilesLib.IVersionComment = js.native
 }
 
+@JSGlobal("MFiles.VersionComments")
+@js.native
+object VersionComments
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVersionComments]
+

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Router ()
   extends reactLib.reactMod.Component[
-      RouterProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement], 
+      RouterProps with reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement], 
       js.Object, 
       js.Any
     ]

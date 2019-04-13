@@ -16,15 +16,12 @@ object webpackDashStreamMod extends js.Object {
     * @param callback - A callback with the webpack stats and error objects.
     */
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(config: webpackLib.webpackMod.webpackNs.Configuration): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(config: webpackLib.webpackMod.Configuration): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(config: webpackLib.webpackMod.Configuration, wp: webpackDashStreamLib.Anon_BannerPlugin): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def apply(
-    config: webpackLib.webpackMod.webpackNs.Configuration,
-    wp: webpackDashStreamLib.Anon_BannerPluginCompilation
-  ): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(
-    config: webpackLib.webpackMod.webpackNs.Configuration,
-    wp: webpackDashStreamLib.Anon_BannerPluginCompilation,
-    callback: webpackLib.webpackMod.webpackNs.CompilerNs.Handler
+    config: webpackLib.webpackMod.Configuration,
+    wp: webpackDashStreamLib.Anon_BannerPlugin,
+    callback: webpackLib.webpackMod.CompilerNs.Handler
   ): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

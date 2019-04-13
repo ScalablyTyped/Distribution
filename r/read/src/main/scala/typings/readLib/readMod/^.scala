@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    options: readLib.readMod.ReadNs.Options,
+    options: Options,
     callback: js.Function3[/* error */ js.Any, /* result */ java.lang.String, /* isDefault */ scala.Boolean, _]
   ): scala.Unit = js.native
 }

@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object consoleDashLogDashLevelLibStrings {
   @js.native
   sealed trait debug
-    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames
+    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.LogLevelNames
   
   @js.native
   sealed trait error
-    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames
+    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.LogLevelNames
   
   @js.native
   sealed trait fatal
-    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames
+    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.LogLevelNames
   
   @js.native
   sealed trait info
-    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames
+    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.LogLevelNames
   
   @js.native
   sealed trait trace
-    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames
+    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.LogLevelNames
   
   @js.native
   sealed trait warn
-    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames
+    extends consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.LogLevelNames
   
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]

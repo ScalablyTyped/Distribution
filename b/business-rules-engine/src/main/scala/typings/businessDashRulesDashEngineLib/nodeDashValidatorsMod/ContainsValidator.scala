@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class ContainsValidator protected ()
   extends businessDashRulesDashEngineLib.businessDashRulesDashEngineMod.IAsyncPropertyValidator {
-  def this(Options: qLib.qMod.QNs.Promise[js.Array[_]]) = this()
-  var Options: qLib.qMod.QNs.Promise[js.Array[_]] = js.native
+  def this(Options: qLib.qMod.Promise[js.Array[_]]) = this()
+  var Options: qLib.qMod.Promise[js.Array[_]] = js.native
   /* CompleteClass */
   override var isAsync: scala.Boolean = js.native
   @JSName("tagName")
   var tagName_ContainsValidator: java.lang.String = js.native
-  def isAcceptable(s: java.lang.String): qLib.qMod.QNs.Promise[scala.Boolean] = js.native
+  def isAcceptable(s: java.lang.String): qLib.qMod.Promise[scala.Boolean] = js.native
   /* CompleteClass */
-  override def isAcceptable(s: js.Any): qLib.qMod.QNs.Promise[scala.Boolean] = js.native
+  override def isAcceptable(s: js.Any): qLib.qMod.Promise[scala.Boolean] = js.native
 }
 

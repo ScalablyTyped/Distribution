@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait DrawerWebProps extends DrawerProps {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var docked: js.UndefOr[scala.Boolean] = js.undefined
-  var dragHandleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dragHandleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var dragToggleDistance: js.UndefOr[scala.Double] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var sidebarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var sidebarStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var touch: js.UndefOr[scala.Boolean] = js.undefined
   var transitions: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -23,18 +23,18 @@ object DrawerWebProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
     docked: js.UndefOr[scala.Boolean] = js.undefined,
-    dragHandleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dragHandleStyle: reactLib.reactMod.CSSProperties = null,
     dragToggleDistance: scala.Int | scala.Double = null,
     onOpenChange: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     position: antdDashMobileLib.antdDashMobileLibStrings.left | antdDashMobileLib.antdDashMobileLibStrings.right | antdDashMobileLib.antdDashMobileLibStrings.top | antdDashMobileLib.antdDashMobileLibStrings.bottom = null,
     prefixCls: java.lang.String = null,
-    sidebar: reactLib.reactMod.ReactNs.ReactNode = null,
-    sidebarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    sidebar: reactLib.reactMod.ReactNode = null,
+    sidebarStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     touch: js.UndefOr[scala.Boolean] = js.undefined,
     transitions: js.UndefOr[scala.Boolean] = js.undefined
   ): DrawerWebProps = {

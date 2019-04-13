@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataGridProps
-  extends reactLib.reactMod.ReactNs.Props[DataGrid] {
+  extends reactLib.reactMod.Props[DataGrid] {
   /**
     * Array - an array of columns that are going to be rendered in the
     * grid.
@@ -125,7 +125,7 @@ trait DataGridProps
     * is expected to return a style object.
     */
   var rowStyle: js.UndefOr[
-    reactLib.reactMod.ReactNs.CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, reactLib.reactMod.ReactNs.CSSProperties])
+    reactLib.reactMod.CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, reactLib.reactMod.CSSProperties])
   ] = js.undefined
   /**
     * The current selection.
@@ -139,7 +139,7 @@ trait DataGridProps
     * Array - an array with sorting information.
     */
   var sortInfo: js.UndefOr[js.Array[SortInfo]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Boolean - show a column menu to show/hide columns.
     */
@@ -152,13 +152,13 @@ object DataGridProps {
     columns: js.Array[Column],
     dataSource: js.Array[_] | java.lang.String | (js.Function1[/* query */ reactDashDatagridLib.Anon_PageSize, js.Promise[js.Array[_]]]),
     idProperty: java.lang.String,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     dataSourceCount: scala.Int | scala.Double = null,
     defaultPage: scala.Int | scala.Double = null,
     defaultPageSize: scala.Int | scala.Double = null,
     emptyText: java.lang.String = null,
     groupBy: js.Array[_] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     liveFilter: js.UndefOr[scala.Boolean] = js.undefined,
     loadMaskOverHeader: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
@@ -174,13 +174,13 @@ object DataGridProps {
     pageSize: scala.Int | scala.Double = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
     paginationToolbarProps: PaginationToolbarProps = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[DataGrid] = null,
+    ref: reactLib.reactMod.LegacyRef[DataGrid] = null,
     rowHeight: scala.Int | scala.Double = null,
-    rowStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, reactLib.reactMod.ReactNs.CSSProperties]) = null,
+    rowStyle: reactLib.reactMod.CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, reactLib.reactMod.CSSProperties]) = null,
     selected: js.Object = null,
     showCellBorders: scala.Boolean | java.lang.String = null,
     sortInfo: js.Array[SortInfo] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     withColumnMenu: js.UndefOr[scala.Boolean] = js.undefined
   ): DataGridProps = {
     val __obj = js.Dynamic.literal(columns = columns, dataSource = dataSource.asInstanceOf[js.Any], idProperty = idProperty)

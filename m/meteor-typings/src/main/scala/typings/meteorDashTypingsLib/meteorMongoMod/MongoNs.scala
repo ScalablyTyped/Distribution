@@ -154,9 +154,6 @@ object MongoNs extends js.Object {
   trait CursorStatic
     extends org.scalablytyped.runtime.Instantiable0[Cursor[js.Object]]
   
-  trait FieldSpecifier
-    extends /* id */ org.scalablytyped.runtime.StringDictionary[stdLib.Number]
-  
   trait Modifier extends js.Object
   
   trait ObjectID extends js.Object
@@ -226,5 +223,6 @@ object MongoNs extends js.Object {
   var Collection: CollectionStatic = js.native
   var Cursor: CursorStatic = js.native
   var ObjectID: ObjectIDStatic = js.native
+  type FieldSpecifier = org.scalablytyped.runtime.StringDictionary[stdLib.Number]
 }
 

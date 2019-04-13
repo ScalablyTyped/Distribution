@@ -1,0 +1,21 @@
+package typings
+package undertakerLib.undertakerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TreeResult extends js.Object {
+  var label: undertakerLib.undertakerLibStrings.Tasks
+  var nodes: js.Array[Node]
+}
+
+object TreeResult {
+  @scala.inline
+  def apply(label: undertakerLib.undertakerLibStrings.Tasks, nodes: js.Array[Node]): TreeResult = {
+    val __obj = js.Dynamic.literal(label = label, nodes = nodes)
+  
+    __obj.asInstanceOf[TreeResult]
+  }
+}
+

@@ -9,252 +9,168 @@ import scala.scalajs.js.annotation._
 trait IoTAnalytics
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_IoTAnalytics: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ClientConfiguration = js.native
+  var config_IoTAnalytics: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Sends messages to a channel.
     */
-  def batchPutMessage(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchPutMessage(): awsDashSdkLib.libRequestMod.Request[BatchPutMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchPutMessage(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageResponse, 
+      /* data */ BatchPutMessageResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchPutMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sends messages to a channel.
     */
-  def batchPutMessage(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchPutMessage(params: BatchPutMessageRequest): awsDashSdkLib.libRequestMod.Request[BatchPutMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchPutMessage(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageRequest,
+    params: BatchPutMessageRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageResponse, 
+      /* data */ BatchPutMessageResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.BatchPutMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchPutMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels the reprocessing of data through the pipeline.
     */
-  def cancelPipelineReprocessing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelPipelineReprocessing(): awsDashSdkLib.libRequestMod.Request[CancelPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelPipelineReprocessing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingResponse, 
+      /* data */ CancelPipelineReprocessingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CancelPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels the reprocessing of data through the pipeline.
     */
-  def cancelPipelineReprocessing(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelPipelineReprocessing(params: CancelPipelineReprocessingRequest): awsDashSdkLib.libRequestMod.Request[CancelPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelPipelineReprocessing(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingRequest,
+    params: CancelPipelineReprocessingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingResponse, 
+      /* data */ CancelPipelineReprocessingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CancelPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CancelPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a channel. A channel collects data from an MQTT topic and archives the raw, unprocessed messages before publishing the data to a pipeline.
     */
-  def createChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createChannel(): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelResponse, 
+      /* data */ CreateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a channel. A channel collects data from an MQTT topic and archives the raw, unprocessed messages before publishing the data to a pipeline.
     */
-  def createChannel(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createChannel(params: CreateChannelRequest): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createChannel(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelRequest,
+    params: CreateChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelResponse, 
+      /* data */ CreateChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a data set. A data set stores data retrieved from a data store by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application). This operation creates the skeleton of a data set. The data set can be populated manually by calling "CreateDatasetContent" or automatically according to a "trigger" you specify.
     */
-  def createDataset(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDataset(): awsDashSdkLib.libRequestMod.Request[CreateDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDataset(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetResponse, 
+      /* data */ CreateDatasetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a data set. A data set stores data retrieved from a data store by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application). This operation creates the skeleton of a data set. The data set can be populated manually by calling "CreateDatasetContent" or automatically according to a "trigger" you specify.
     */
-  def createDataset(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDataset(params: CreateDatasetRequest): awsDashSdkLib.libRequestMod.Request[CreateDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDataset(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetRequest,
+    params: CreateDatasetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetResponse, 
+      /* data */ CreateDatasetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates the content of a data set by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application).
     */
-  def createDatasetContent(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDatasetContent(): awsDashSdkLib.libRequestMod.Request[CreateDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDatasetContent(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 
+      /* data */ CreateDatasetContentResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates the content of a data set by applying a "queryAction" (a SQL query) or a "containerAction" (executing a containerized application).
     */
-  def createDatasetContent(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDatasetContent(params: CreateDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[CreateDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDatasetContent(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentRequest,
+    params: CreateDatasetContentRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 
+      /* data */ CreateDatasetContentResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a data store, which is a repository for messages.
     */
-  def createDatastore(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDatastore(): awsDashSdkLib.libRequestMod.Request[CreateDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDatastore(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreResponse, 
+      /* data */ CreateDatastoreResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a data store, which is a repository for messages.
     */
-  def createDatastore(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDatastore(params: CreateDatastoreRequest): awsDashSdkLib.libRequestMod.Request[CreateDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDatastore(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreRequest,
+    params: CreateDatastoreRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreResponse, 
+      /* data */ CreateDatastoreResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreateDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
-  def createPipeline(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPipeline(): awsDashSdkLib.libRequestMod.Request[CreatePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPipeline(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
+      /* data */ CreatePipelineResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
-  def createPipeline(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPipeline(params: CreatePipelineRequest): awsDashSdkLib.libRequestMod.Request[CreatePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPipeline(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineRequest,
+    params: CreatePipelineRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
+      /* data */ CreatePipelineResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified channel.
     */
@@ -265,9 +181,9 @@ trait IoTAnalytics
   /**
     * Deletes the specified channel.
     */
-  def deleteChannel(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteChannelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteChannel(params: DeleteChannelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteChannel(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteChannelRequest,
+    params: DeleteChannelRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -280,9 +196,9 @@ trait IoTAnalytics
   /**
     * Deletes the specified data set. You do not have to delete the content of the data set before you perform this operation.
     */
-  def deleteDataset(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteDatasetRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteDataset(params: DeleteDatasetRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDataset(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteDatasetRequest,
+    params: DeleteDatasetRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -295,9 +211,9 @@ trait IoTAnalytics
   /**
     * Deletes the content of the specified data set.
     */
-  def deleteDatasetContent(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteDatasetContent(params: DeleteDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDatasetContent(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteDatasetContentRequest,
+    params: DeleteDatasetContentRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -310,9 +226,9 @@ trait IoTAnalytics
   /**
     * Deletes the specified data store.
     */
-  def deleteDatastore(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteDatastoreRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteDatastore(params: DeleteDatastoreRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDatastore(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeleteDatastoreRequest,
+    params: DeleteDatastoreRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -325,431 +241,287 @@ trait IoTAnalytics
   /**
     * Deletes the specified pipeline.
     */
-  def deletePipeline(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeletePipelineRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePipeline(params: DeletePipelineRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePipeline(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DeletePipelineRequest,
+    params: DeletePipelineRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a channel.
     */
-  def describeChannel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeChannel(): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeChannel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelResponse, 
+      /* data */ DescribeChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a channel.
     */
-  def describeChannel(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeChannel(params: DescribeChannelRequest): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeChannel(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelRequest,
+    params: DescribeChannelRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelResponse, 
+      /* data */ DescribeChannelResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeChannelResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a data set.
     */
-  def describeDataset(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDataset(): awsDashSdkLib.libRequestMod.Request[DescribeDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDataset(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetResponse, 
+      /* data */ DescribeDatasetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a data set.
     */
-  def describeDataset(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDataset(params: DescribeDatasetRequest): awsDashSdkLib.libRequestMod.Request[DescribeDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDataset(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetRequest,
+    params: DescribeDatasetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetResponse, 
+      /* data */ DescribeDatasetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatasetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDatasetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a data store.
     */
-  def describeDatastore(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDatastore(): awsDashSdkLib.libRequestMod.Request[DescribeDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDatastore(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreResponse, 
+      /* data */ DescribeDatastoreResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a data store.
     */
-  def describeDatastore(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDatastore(params: DescribeDatastoreRequest): awsDashSdkLib.libRequestMod.Request[DescribeDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDatastore(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreRequest,
+    params: DescribeDatastoreRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreResponse, 
+      /* data */ DescribeDatastoreResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeDatastoreResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the current settings of the AWS IoT Analytics logging options.
     */
-  def describeLoggingOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeLoggingOptions(): awsDashSdkLib.libRequestMod.Request[DescribeLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeLoggingOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsResponse, 
+      /* data */ DescribeLoggingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the current settings of the AWS IoT Analytics logging options.
     */
-  def describeLoggingOptions(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeLoggingOptions(params: DescribeLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeLoggingOptions(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsRequest,
+    params: DescribeLoggingOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsResponse, 
+      /* data */ DescribeLoggingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribeLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a pipeline.
     */
-  def describePipeline(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePipeline(): awsDashSdkLib.libRequestMod.Request[DescribePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePipeline(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineResponse, 
+      /* data */ DescribePipelineResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about a pipeline.
     */
-  def describePipeline(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePipeline(params: DescribePipelineRequest): awsDashSdkLib.libRequestMod.Request[DescribePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePipeline(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineRequest,
+    params: DescribePipelineRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineResponse, 
+      /* data */ DescribePipelineResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.DescribePipelineResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the contents of a data set as pre-signed URIs.
     */
-  def getDatasetContent(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDatasetContent(): awsDashSdkLib.libRequestMod.Request[GetDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDatasetContent(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentResponse, 
+      /* data */ GetDatasetContentResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the contents of a data set as pre-signed URIs.
     */
-  def getDatasetContent(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDatasetContent(params: GetDatasetContentRequest): awsDashSdkLib.libRequestMod.Request[GetDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDatasetContent(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentRequest,
+    params: GetDatasetContentRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentResponse, 
+      /* data */ GetDatasetContentResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.GetDatasetContentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDatasetContentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of channels.
     */
-  def listChannels(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listChannels(): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listChannels(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsResponse, 
+      /* data */ ListChannelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of channels.
     */
-  def listChannels(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listChannels(params: ListChannelsRequest): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listChannels(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsRequest,
+    params: ListChannelsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsResponse, 
+      /* data */ ListChannelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListChannelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListChannelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists information about data set contents that have been created.
     */
-  def listDatasetContents(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDatasetContents(): awsDashSdkLib.libRequestMod.Request[ListDatasetContentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDatasetContents(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsResponse, 
+      /* data */ ListDatasetContentsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDatasetContentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists information about data set contents that have been created.
     */
-  def listDatasetContents(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDatasetContents(params: ListDatasetContentsRequest): awsDashSdkLib.libRequestMod.Request[ListDatasetContentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDatasetContents(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsRequest,
+    params: ListDatasetContentsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsResponse, 
+      /* data */ ListDatasetContentsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetContentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDatasetContentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about data sets.
     */
-  def listDatasets(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDatasets(): awsDashSdkLib.libRequestMod.Request[ListDatasetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDatasets(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsResponse, 
+      /* data */ ListDatasetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDatasetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves information about data sets.
     */
-  def listDatasets(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDatasets(params: ListDatasetsRequest): awsDashSdkLib.libRequestMod.Request[ListDatasetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDatasets(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsRequest,
+    params: ListDatasetsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsResponse, 
+      /* data */ ListDatasetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatasetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDatasetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of data stores.
     */
-  def listDatastores(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDatastores(): awsDashSdkLib.libRequestMod.Request[ListDatastoresResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDatastores(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresResponse, 
+      /* data */ ListDatastoresResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDatastoresResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of data stores.
     */
-  def listDatastores(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDatastores(params: ListDatastoresRequest): awsDashSdkLib.libRequestMod.Request[ListDatastoresResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDatastores(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresRequest,
+    params: ListDatastoresRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresResponse, 
+      /* data */ ListDatastoresResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListDatastoresResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDatastoresResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of pipelines.
     */
-  def listPipelines(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPipelines(): awsDashSdkLib.libRequestMod.Request[ListPipelinesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPipelines(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesResponse, 
+      /* data */ ListPipelinesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPipelinesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of pipelines.
     */
-  def listPipelines(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPipelines(params: ListPipelinesRequest): awsDashSdkLib.libRequestMod.Request[ListPipelinesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPipelines(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesRequest,
+    params: ListPipelinesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesResponse, 
+      /* data */ ListPipelinesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListPipelinesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPipelinesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the tags (metadata) which you have assigned to the resource.
     */
-  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the tags (metadata) which you have assigned to the resource.
     */
-  def listTagsForResource(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceRequest,
+    params: ListTagsForResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets or updates the AWS IoT Analytics logging options. Note that if you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy) it takes up to 5 minutes for that change to take effect. 
     */
@@ -760,186 +532,126 @@ trait IoTAnalytics
   /**
     * Sets or updates the AWS IoT Analytics logging options. Note that if you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy) it takes up to 5 minutes for that change to take effect. 
     */
-  def putLoggingOptions(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.PutLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putLoggingOptions(params: PutLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putLoggingOptions(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.PutLoggingOptionsRequest,
+    params: PutLoggingOptionsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Simulates the results of running a pipeline activity on a message payload.
     */
-  def runPipelineActivity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def runPipelineActivity(): awsDashSdkLib.libRequestMod.Request[RunPipelineActivityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def runPipelineActivity(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityResponse, 
+      /* data */ RunPipelineActivityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RunPipelineActivityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Simulates the results of running a pipeline activity on a message payload.
     */
-  def runPipelineActivity(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def runPipelineActivity(params: RunPipelineActivityRequest): awsDashSdkLib.libRequestMod.Request[RunPipelineActivityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def runPipelineActivity(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityRequest,
+    params: RunPipelineActivityRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityResponse, 
+      /* data */ RunPipelineActivityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.RunPipelineActivityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RunPipelineActivityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a sample of messages from the specified channel ingested during the specified timeframe. Up to 10 messages can be retrieved.
     */
-  def sampleChannelData(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sampleChannelData(): awsDashSdkLib.libRequestMod.Request[SampleChannelDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sampleChannelData(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataResponse, 
+      /* data */ SampleChannelDataResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SampleChannelDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a sample of messages from the specified channel ingested during the specified timeframe. Up to 10 messages can be retrieved.
     */
-  def sampleChannelData(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sampleChannelData(params: SampleChannelDataRequest): awsDashSdkLib.libRequestMod.Request[SampleChannelDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sampleChannelData(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataRequest,
+    params: SampleChannelDataRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataResponse, 
+      /* data */ SampleChannelDataResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.SampleChannelDataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SampleChannelDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts the reprocessing of raw message data through the pipeline.
     */
-  def startPipelineReprocessing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startPipelineReprocessing(): awsDashSdkLib.libRequestMod.Request[StartPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startPipelineReprocessing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingResponse, 
+      /* data */ StartPipelineReprocessingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts the reprocessing of raw message data through the pipeline.
     */
-  def startPipelineReprocessing(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startPipelineReprocessing(params: StartPipelineReprocessingRequest): awsDashSdkLib.libRequestMod.Request[StartPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startPipelineReprocessing(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingRequest,
+    params: StartPipelineReprocessingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingResponse, 
+      /* data */ StartPipelineReprocessingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.StartPipelineReprocessingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartPipelineReprocessingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
     */
-  def tagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceResponse, 
+      /* data */ TagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
     */
-  def tagResource(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceRequest,
+    params: TagResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceResponse, 
+      /* data */ TagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the given tags (metadata) from the resource.
     */
-  def untagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceResponse, 
+      /* data */ UntagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the given tags (metadata) from the resource.
     */
-  def untagResource(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceRequest,
+    params: UntagResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceResponse, 
+      /* data */ UntagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the settings of a channel.
     */
@@ -950,9 +662,9 @@ trait IoTAnalytics
   /**
     * Updates the settings of a channel.
     */
-  def updateChannel(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdateChannelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateChannel(params: UpdateChannelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateChannel(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdateChannelRequest,
+    params: UpdateChannelRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -965,9 +677,9 @@ trait IoTAnalytics
   /**
     * Updates the settings of a data set.
     */
-  def updateDataset(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdateDatasetRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateDataset(params: UpdateDatasetRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDataset(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdateDatasetRequest,
+    params: UpdateDatasetRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -980,9 +692,9 @@ trait IoTAnalytics
   /**
     * Updates the settings of a data store.
     */
-  def updateDatastore(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdateDatastoreRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateDatastore(params: UpdateDatastoreRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDatastore(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdateDatastoreRequest,
+    params: UpdateDatastoreRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -995,9 +707,9 @@ trait IoTAnalytics
   /**
     * Updates the settings of a pipeline. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
-  def updatePipeline(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdatePipelineRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updatePipeline(params: UpdatePipelineRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePipeline(
-    params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdatePipelineRequest,
+    params: UpdatePipelineRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }

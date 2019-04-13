@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/clients/cloudfront", "Signer")
 @js.native
 class Signer protected ()
-  extends awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.Signer {
+  extends awsDashSdkLib.libCloudfrontSignerMod.Signer {
   /**
     * A signer object can be used to generate signed URLs and cookies for granting access to content on restricted CloudFront distributions.
     * 

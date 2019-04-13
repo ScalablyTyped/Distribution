@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NativeSelectInputProps extends js.Object {
-  var IconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var IconComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var inputRef: js.UndefOr[
     js.Function1[/* ref */ stdLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_Node, scala.Unit]
@@ -14,8 +14,8 @@ trait NativeSelectInputProps extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLSelectElement], 
-      /* child */ reactLib.reactMod.ReactNs.ReactNode, 
+      /* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLSelectElement], 
+      /* child */ reactLib.reactMod.ReactNode, 
       scala.Unit
     ]
   ] = js.undefined
@@ -30,11 +30,11 @@ trait NativeSelectInputProps extends js.Object {
 object NativeSelectInputProps {
   @scala.inline
   def apply(
-    IconComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    IconComponent: reactLib.reactMod.ReactType[_] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     inputRef: /* ref */ stdLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_Node => scala.Unit = null,
     name: java.lang.String = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLSelectElement], /* child */ reactLib.reactMod.ReactNs.ReactNode) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLSelectElement], /* child */ reactLib.reactMod.ReactNode) => scala.Unit = null,
     value: (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): NativeSelectInputProps = {

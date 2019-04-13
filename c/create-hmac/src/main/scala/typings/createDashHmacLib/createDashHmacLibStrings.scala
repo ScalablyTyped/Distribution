@@ -8,39 +8,39 @@ import scala.scalajs.js.annotation._
 object createDashHmacLibStrings {
   @js.native
   sealed trait md5
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait ripemd160
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait rmd160
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait sha
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait sha1
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait sha224
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait sha256
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait sha384
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @js.native
   sealed trait sha512
-    extends createDashHmacLib.createDashHmacMod.createHmacNs.Algorithm
+    extends createDashHmacLib.createDashHmacMod.Algorithm
   
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]

@@ -72,7 +72,7 @@ object SliderProps {
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     onChange: js.Function = null,
@@ -102,7 +102,7 @@ object SliderProps {
     pinned: js.UndefOr[scala.Boolean] = js.undefined,
     snaps: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: SliderTheme = null,
     value: scala.Int | scala.Double = null
   ): SliderProps = {

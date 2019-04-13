@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object RadioGroupNs {
   type RadioGroupProps = (reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.Omit[
-    reactLib.reactMod.ReactNs.HTMLProps[_], 
+    reactLib.reactMod.HTMLProps[_], 
     reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.onChange
   ]) with reactDashRadioDashGroupLib.Anon_Component
 }

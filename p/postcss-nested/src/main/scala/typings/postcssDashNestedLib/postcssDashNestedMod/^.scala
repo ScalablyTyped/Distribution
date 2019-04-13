@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("postcss-nested", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[postcssDashNestedLib.postcssDashNestedMod.nestedNs.Nested]
+  extends org.scalablytyped.runtime.TopLevel[Nested]
 

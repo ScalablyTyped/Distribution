@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class VaultPropertyDefOperations ()
   extends mfilesLib.IVaultPropertyDefOperations
 
+@JSGlobal("MFiles.VaultPropertyDefOperations")
+@js.native
+object VaultPropertyDefOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultPropertyDefOperations]
+

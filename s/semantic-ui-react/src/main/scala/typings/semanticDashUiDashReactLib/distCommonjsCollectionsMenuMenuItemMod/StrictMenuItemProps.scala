@@ -11,7 +11,7 @@ trait StrictMenuItemProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Additional colors can be specified. */
@@ -45,7 +45,7 @@ trait StrictMenuItemProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ MenuItemProps, 
       scala.Unit
     ]
@@ -61,7 +61,7 @@ object StrictMenuItemProps {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
@@ -72,7 +72,7 @@ object StrictMenuItemProps {
     index: scala.Int | scala.Double = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ MenuItemProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ MenuItemProps) => scala.Unit = null,
     position: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null
   ): StrictMenuItemProps = {
     val __obj = js.Dynamic.literal()

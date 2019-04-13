@@ -12,10 +12,6 @@ object ^ extends js.Object {
     * Get packages by a npm user.
     * @param username User to fetch packages from.
     */
-  def apply(username: java.lang.String): js.Promise[
-    js.Array[
-      npmDashUserDashPackagesLib.npmDashUserDashPackagesMod.npmUserPackagesNs.PackageData
-    ]
-  ] = js.native
+  def apply(username: java.lang.String): js.Promise[js.Array[PackageData]] = js.native
 }
 

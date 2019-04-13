@@ -12,7 +12,7 @@ trait ZoomableGlobeProps extends js.Object {
   var onMoveEnd: js.UndefOr[js.Function1[/* newCenter */ Point, scala.Unit]] = js.undefined
   var onMoveStart: js.UndefOr[js.Function1[/* currentCenter */ Point, scala.Unit]] = js.undefined
   var sensitivity: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
@@ -26,7 +26,7 @@ object ZoomableGlobeProps {
     onMoveEnd: /* newCenter */ Point => scala.Unit = null,
     onMoveStart: /* currentCenter */ Point => scala.Unit = null,
     sensitivity: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     width: scala.Int | scala.Double = null,
     zoom: scala.Int | scala.Double = null
   ): ZoomableGlobeProps = {

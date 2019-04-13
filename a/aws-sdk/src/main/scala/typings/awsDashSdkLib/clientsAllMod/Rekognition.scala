@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Rekognition ()
-  extends awsDashSdkLib.clientsRekognitionMod.namespaced {
-  def this(options: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsRekognitionMod.^ {
+  def this(options: awsDashSdkLib.clientsRekognitionMod.ClientConfiguration) = this()
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("slack-winston", "Slack")
 @js.native
 class Slack ()
-  extends winstonDashTransportLib.winstonDashTransportMod.namespaced {
+  extends winstonDashTransportLib.winstonDashTransportMod.^ {
   def this(options: SlackTransportOptions) = this()
 }
 

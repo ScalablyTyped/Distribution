@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/fn/array/pop", JSImport.Namespace)
 @js.native
-object fnArrayPopMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayArrayLikeT]
+object fnArrayPopMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T]): T = js.native
+}
 

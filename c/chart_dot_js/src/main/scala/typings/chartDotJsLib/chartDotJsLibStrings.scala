@@ -14,7 +14,7 @@ object chartDotJsLibStrings {
   
   @js.native
   sealed trait bar
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait before extends js.Object
@@ -24,102 +24,102 @@ object chartDotJsLibStrings {
   
   @js.native
   sealed trait bottom
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PositionType
+    extends chartDotJsLib.chartDotJsMod.PositionType
   
   @js.native
   sealed trait bubble
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait butt extends js.Object
   
   @js.native
   sealed trait category
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ScaleType
+    extends chartDotJsLib.chartDotJsMod.ScaleType
   
   @js.native
   sealed trait circle
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait cross
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait crossRot
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait dash
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait data extends js.Object
   
   @js.native
   sealed trait dataset
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait day
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
   sealed trait doughnut
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait flex extends js.Object
   
   @js.native
   sealed trait horizontalBar
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait hour
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait index
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait label
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait labels extends js.Object
   
   @js.native
   sealed trait left
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PositionType
+    extends chartDotJsLib.chartDotJsMod.PositionType
   
   @js.native
   sealed trait line
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
-       with chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.ChartType
+       with chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait linear
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ScaleType
+    extends chartDotJsLib.chartDotJsMod.ScaleType
   
   @js.native
   sealed trait logarithmic
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ScaleType
+    extends chartDotJsLib.chartDotJsMod.ScaleType
   
   @js.native
   sealed trait middle extends js.Object
   
   @js.native
   sealed trait millisecond
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait minute
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait miter extends js.Object
@@ -129,108 +129,108 @@ object chartDotJsLibStrings {
   
   @js.native
   sealed trait month
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait nearest
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait pie
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait point
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait polarArea
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait quarter
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait radar
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait radialLinear
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ScaleType
+    extends chartDotJsLib.chartDotJsMod.ScaleType
   
   @js.native
   sealed trait rect
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait rectRot
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait rectRounded
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait right
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PositionType
+    extends chartDotJsLib.chartDotJsMod.PositionType
   
   @js.native
   sealed trait round extends js.Object
   
   @js.native
   sealed trait scatter
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ChartType
+    extends chartDotJsLib.chartDotJsMod.ChartType
   
   @js.native
   sealed trait second
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait series extends js.Object
   
   @js.native
   sealed trait single
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait square extends js.Object
   
   @js.native
   sealed trait star
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait time
-    extends chartDotJsLib.chartDotJsMod.ChartNs.ScaleType
+    extends chartDotJsLib.chartDotJsMod.ScaleType
   
   @js.native
   sealed trait top
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PositionType
+    extends chartDotJsLib.chartDotJsMod.PositionType
   
   @js.native
   sealed trait triangle
-    extends chartDotJsLib.chartDotJsMod.ChartNs.PointStyle
+    extends chartDotJsLib.chartDotJsMod.PointStyle
   
   @js.native
   sealed trait week
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait x
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait `x-axis`
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait y
-    extends chartDotJsLib.chartDotJsMod.ChartNs.InteractionMode
+    extends chartDotJsLib.chartDotJsMod.InteractionMode
   
   @js.native
   sealed trait year
-    extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
+    extends chartDotJsLib.chartDotJsMod.TimeUnit
   
   @js.native
   sealed trait zero extends js.Object

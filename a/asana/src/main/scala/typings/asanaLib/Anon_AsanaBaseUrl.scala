@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AsanaBaseUrl extends js.Object {
-  var _cachedVersionInfo: asanaLib.asanaMod.asanaNs.resourcesNs.VersionInfo
+  var _cachedVersionInfo: asanaLib.asanaMod.resourcesNs.VersionInfo
   var asanaBaseUrl: java.lang.String
   var authenticator: Anon_ApiKey
   var requestTimeout: scala.Double
@@ -16,7 +16,7 @@ trait Anon_AsanaBaseUrl extends js.Object {
 object Anon_AsanaBaseUrl {
   @scala.inline
   def apply(
-    _cachedVersionInfo: asanaLib.asanaMod.asanaNs.resourcesNs.VersionInfo,
+    _cachedVersionInfo: asanaLib.asanaMod.resourcesNs.VersionInfo,
     asanaBaseUrl: java.lang.String,
     authenticator: Anon_ApiKey,
     requestTimeout: scala.Double,

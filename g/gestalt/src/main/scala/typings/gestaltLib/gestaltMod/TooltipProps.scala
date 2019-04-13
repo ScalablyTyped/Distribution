@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TooltipProps extends js.Object {
   var anchor: js.Any
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var idealDirection: js.UndefOr[
     gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left
   ] = js.undefined
@@ -23,7 +23,7 @@ object TooltipProps {
   def apply(
     anchor: js.Any,
     onDismiss: () => scala.Unit,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     idealDirection: gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left = null,
     positionRelativeToAnchor: js.UndefOr[scala.Boolean] = js.undefined,
     size: gestaltLib.gestaltLibStrings.xs | gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg | gestaltLib.gestaltLibStrings.xl = null

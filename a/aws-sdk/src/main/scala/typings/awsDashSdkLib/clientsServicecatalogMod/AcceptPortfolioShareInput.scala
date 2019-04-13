@@ -1,0 +1,36 @@
+package typings
+package awsDashSdkLib.clientsServicecatalogMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AcceptPortfolioShareInput extends js.Object {
+  /**
+    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    */
+  var AcceptLanguage: js.UndefOr[AcceptLanguage] = js.undefined
+  /**
+    * The portfolio identifier.
+    */
+  var PortfolioId: Id
+  /**
+    * The type of shared portfolios to accept. The default is to accept imported portfolios.    AWS_ORGANIZATIONS - Accept portfolios shared by the master account of your organization.    IMPORTED - Accept imported portfolios.    AWS_SERVICECATALOG - Not supported. (Throws ResourceNotFoundException.)   For example, aws servicecatalog accept-portfolio-share --portfolio-id "port-2qwzkwxt3y5fk" --portfolio-share-type AWS_ORGANIZATIONS 
+    */
+  var PortfolioShareType: js.UndefOr[PortfolioShareType] = js.undefined
+}
+
+object AcceptPortfolioShareInput {
+  @scala.inline
+  def apply(
+    PortfolioId: Id,
+    AcceptLanguage: AcceptLanguage = null,
+    PortfolioShareType: PortfolioShareType = null
+  ): AcceptPortfolioShareInput = {
+    val __obj = js.Dynamic.literal(PortfolioId = PortfolioId)
+    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
+    if (PortfolioShareType != null) __obj.updateDynamic("PortfolioShareType")(PortfolioShareType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AcceptPortfolioShareInput]
+  }
+}
+

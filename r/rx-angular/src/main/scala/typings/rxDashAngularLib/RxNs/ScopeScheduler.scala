@@ -12,7 +12,7 @@ trait ScopeScheduler
 @JSGlobal("Rx.ScopeScheduler")
 @js.native
 class ScopeSchedulerCls protected () extends ScopeScheduler {
-  def this($scope: angularLib.angularMod.angularNs.IScope) = this()
+  def this($scope: angularLib.angularMod.IScope) = this()
   /* CompleteClass */
   override def `catch`(handler: js.Function1[/* exception */ js.Any, scala.Boolean]): rxDashCoreLib.RxNs.IScheduler = js.native
   /* CompleteClass */

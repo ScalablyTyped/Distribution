@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageLoaderProps
-  extends reactLib.reactMod.ReactNs.Props[ImageLoader] {
+  extends reactLib.reactMod.Props[ImageLoader] {
   /** An optional class name for the wrapper component. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** An optional object containing props for the underlying img component. */
@@ -16,29 +16,29 @@ trait ImageLoaderProps
   /** An optional handler for the load event. */
   var onLoad: js.UndefOr[js.Function1[/* event */ js.Any, scala.Unit]] = js.undefined
   /** An optional function that returns a React element to be shown while the image loads. */
-  var preloader: js.UndefOr[js.Function1[/* params */ js.Any, reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var preloader: js.UndefOr[js.Function1[/* params */ js.Any, reactLib.reactMod.ReactElement[_]]] = js.undefined
   /** The URL of the image to be loaded. */
   var src: java.lang.String
   /** An optional object containing styles for the wrapper component. */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** A function that takes a props argument and returns a React element to be used as the wrapper component. Defaults to React.DOM.span. */
-  var wrapper: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var wrapper: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactElement[_]]] = js.undefined
 }
 
 object ImageLoaderProps {
   @scala.inline
   def apply(
     src: java.lang.String,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     imgProps: js.Any = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onError: /* event */ js.Any => scala.Unit = null,
     onLoad: /* event */ js.Any => scala.Unit = null,
-    preloader: /* params */ js.Any => reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ImageLoader] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    wrapper: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactElement[_] = null
+    preloader: /* params */ js.Any => reactLib.reactMod.ReactElement[_] = null,
+    ref: reactLib.reactMod.LegacyRef[ImageLoader] = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    wrapper: /* props */ js.Any => reactLib.reactMod.ReactElement[_] = null
   ): ImageLoaderProps = {
     val __obj = js.Dynamic.literal(src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

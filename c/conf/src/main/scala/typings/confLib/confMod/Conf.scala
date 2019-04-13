@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Conf[T]
   extends stdLib.Iterable[js.Tuple2[java.lang.String, T]] {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator_Conf: js.Function0[stdLib.IterableIterator[js.Tuple2[java.lang.String, T]]] = js.native
   val path: java.lang.String = js.native
   val size: scala.Double = js.native

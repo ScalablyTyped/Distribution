@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "ResponsiveEmbed")
 @js.native
 class ResponsiveEmbed ()
-  extends reactDashBootstrapLib.libResponsiveEmbedMod.namespaced
+  extends reactDashBootstrapLib.libResponsiveEmbedMod.^
 

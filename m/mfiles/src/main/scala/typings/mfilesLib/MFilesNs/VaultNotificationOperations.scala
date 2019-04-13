@@ -20,3 +20,8 @@ class VaultNotificationOperations ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultNotificationOperations")
+@js.native
+object VaultNotificationOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultNotificationOperations]
+

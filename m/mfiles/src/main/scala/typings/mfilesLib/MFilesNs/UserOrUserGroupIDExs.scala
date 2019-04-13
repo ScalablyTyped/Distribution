@@ -25,3 +25,8 @@ class UserOrUserGroupIDExs ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.UserOrUserGroupIDExs")
+@js.native
+object UserOrUserGroupIDExs
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserOrUserGroupIDExs]
+

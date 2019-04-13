@@ -17,7 +17,7 @@ object ^ extends js.Object {
     * }
     * @returns {Function} prompt function
     */
-  def apply(): promptDashSyncLib.promptDashSyncMod.PromptSyncNs.Prompt = js.native
-  def apply(config: promptDashSyncLib.promptDashSyncMod.PromptSyncNs.Config): promptDashSyncLib.promptDashSyncMod.PromptSyncNs.Prompt = js.native
+  def apply(): Prompt = js.native
+  def apply(config: Config): Prompt = js.native
 }
 

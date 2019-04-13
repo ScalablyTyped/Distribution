@@ -15,7 +15,7 @@ trait Table[T]
   var CheckboxPropsCache: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.native
   var components: antdLib.libTableInterfaceMod.TableComponents = js.native
-  var row: reactLib.reactMod.ReactNs.ComponentType[_] = js.native
+  var row: reactLib.reactMod.ComponentType[_] = js.native
   var store: antdLib.libTableCreateStoreMod.Store = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MTable(nextProps: antdLib.libTableInterfaceMod.TableProps[T]): scala.Unit = js.native
@@ -76,9 +76,9 @@ trait Table[T]
   def onRow(prefixCls: java.lang.String, record: T, index: scala.Double): js.Any = js.native
   def prepareParamsArguments(state: js.Any): antdLib.libTableInterfaceMod.PrepareParamsArgumentsReturn[T] = js.native
   def recursiveSort(data: js.Array[T], sorterFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]): js.Array[T] = js.native
-  def renderColumnTitle(): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def renderColumnTitle(title: js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNs.ReactNode]): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def renderColumnTitle(title: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def renderColumnTitle(): reactLib.reactMod.ReactNode = js.native
+  def renderColumnTitle(title: js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNode]): reactLib.reactMod.ReactNode = js.native
+  def renderColumnTitle(title: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactNode = js.native
   def renderColumnsDropdown(
     prefixCls: java.lang.String,
     dropdownPrefixCls: java.lang.String,
@@ -110,10 +110,7 @@ trait Table[T]
   ] = js.native
   def renderTable(
     prefixCls: java.lang.String,
-    renderEmpty: js.Function1[
-      /* componentName */ js.UndefOr[java.lang.String], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ],
+    renderEmpty: js.Function1[/* componentName */ js.UndefOr[java.lang.String], reactLib.reactMod.ReactNode],
     dropdownPrefixCls: java.lang.String,
     contextLocale: antdLib.libTableInterfaceMod.TableLocale
   ): reactLib.reactMod.Global.JSXNs.Element = js.native

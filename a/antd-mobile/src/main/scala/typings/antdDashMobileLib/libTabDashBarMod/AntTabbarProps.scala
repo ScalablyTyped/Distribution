@@ -10,7 +10,7 @@ trait AntTabbarProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var noRenderContent: js.UndefOr[scala.Boolean] = js.undefined
-  var placeholder: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var placeholder: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var prerenderingSiblingsNumber: js.UndefOr[scala.Double] = js.undefined
 }
@@ -23,7 +23,7 @@ object AntTabbarProps {
     className: java.lang.String = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     noRenderContent: js.UndefOr[scala.Boolean] = js.undefined,
-    placeholder: reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     prerenderingSiblingsNumber: scala.Int | scala.Double = null,
     swipeable: js.UndefOr[scala.Boolean] = js.undefined,

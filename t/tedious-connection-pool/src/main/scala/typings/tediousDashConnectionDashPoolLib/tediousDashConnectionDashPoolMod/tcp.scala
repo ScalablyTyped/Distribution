@@ -15,9 +15,7 @@ trait tcp
     * acquires a connection from the pool
     * @param callback invoked when the connection is retrieved and ready
     */
-  def acquire(
-    callback: tediousDashConnectionDashPoolLib.tediousDashConnectionDashPoolMod.tcpNs.ConnectionCallback
-  ): scala.Unit = js.native
+  def acquire(callback: ConnectionCallback): scala.Unit = js.native
   /**
     * closes opened connections
     */

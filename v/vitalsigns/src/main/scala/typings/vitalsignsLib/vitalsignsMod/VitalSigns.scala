@@ -14,7 +14,8 @@ trait VitalSigns extends js.Object {
     * Gets a request handler.
     * @type {RequestHandler}
     */
-  var express: expressLib.expressMod.eNs.RequestHandler = js.native
+  @JSName("express")
+  var express_Original: expressLib.expressMod.RequestHandler = js.native
   /**
     * Pushes a health constraint onto this instance's constraint array.
     * Health constraints define scenarios in which VitalSigns will consider the application to be in an unhealthy state.
@@ -25,6 +26,15 @@ trait VitalSigns extends js.Object {
     * Destroys this VitalSigns instance.
     */
   def destroy(): scala.Unit = js.native
+  /**
+    * Gets a request handler.
+    * @type {RequestHandler}
+    */
+  def express(
+    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
+    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response,
+    next: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.NextFunction
+  ): js.Any = js.native
   /**
     * Retrieves an array of human-readable messages that define the specific health constraints that failed when running the last health check.
     * @returns {Array<string>} An array of failure messages.

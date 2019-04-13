@@ -7,161 +7,161 @@ import scala.scalajs.js.annotation._
 
 object antdDashMobileLibComponents {
   @scala.inline
-  def Accordion: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libAccordionMod.AccordionProps] = js.constructorOf[antdDashMobileLib.libAccordionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libAccordionMod.AccordionProps]]
+  def Accordion: reactLib.reactMod.ComponentType[antdDashMobileLib.libAccordionMod.AccordionProps] = js.constructorOf[antdDashMobileLib.libAccordionMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libAccordionMod.AccordionProps]]
   @scala.inline
-  def ActivityDashIndicator: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps] = js.constructorOf[antdDashMobileLib.libActivityDashIndicatorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps]]
+  def ActivityDashIndicator: reactLib.reactMod.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps] = js.constructorOf[antdDashMobileLib.libActivityDashIndicatorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps]]
   @scala.inline
-  def ActivityIndicator: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.ActivityIndicator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps]]
+  def ActivityIndicator: reactLib.reactMod.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.ActivityIndicator].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libActivityDashIndicatorMod.ActivityIndicatorProps]]
   @scala.inline
-  def Badge: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libBadgeMod.BadgeProps] = js.constructorOf[antdDashMobileLib.libBadgeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libBadgeMod.BadgeProps]]
+  def Badge: reactLib.reactMod.ComponentType[antdDashMobileLib.libBadgeMod.BadgeProps] = js.constructorOf[antdDashMobileLib.libBadgeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libBadgeMod.BadgeProps]]
   @scala.inline
-  def Brief: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListListItemMod.BriefProps] = js.constructorOf[antdDashMobileLib.libListListItemMod.Brief].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListListItemMod.BriefProps]]
+  def Brief: reactLib.reactMod.ComponentType[antdDashMobileLib.libListListItemMod.BriefProps] = js.constructorOf[antdDashMobileLib.libListListItemMod.Brief].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libListListItemMod.BriefProps]]
   @scala.inline
-  def Button: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libButtonMod.ButtonProps] = js.constructorOf[antdDashMobileLib.libButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libButtonMod.ButtonProps]]
+  def Button: reactLib.reactMod.ComponentType[antdDashMobileLib.libButtonMod.ButtonProps] = js.constructorOf[antdDashMobileLib.libButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libButtonMod.ButtonProps]]
   @scala.inline
-  def Calendar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCalendarPropsTypeMod.CalendarProps] = js.constructorOf[antdDashMobileLib.libCalendarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCalendarPropsTypeMod.CalendarProps]]
+  def Calendar: reactLib.reactMod.ComponentType[antdDashMobileLib.libCalendarPropsTypeMod.CalendarProps] = js.constructorOf[antdDashMobileLib.libCalendarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libCalendarPropsTypeMod.CalendarProps]]
   @scala.inline
-  def Card: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardMod.CardProps] = js.constructorOf[antdDashMobileLib.libCardMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardMod.CardProps]]
+  def Card: reactLib.reactMod.ComponentType[antdDashMobileLib.libCardMod.CardProps] = js.constructorOf[antdDashMobileLib.libCardMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libCardMod.CardProps]]
   @scala.inline
-  def CardBody: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardCardBodyMod.CardBodyProps] = js.constructorOf[antdDashMobileLib.libCardCardBodyMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardCardBodyMod.CardBodyProps]]
+  def CardBody: reactLib.reactMod.ComponentType[antdDashMobileLib.libCardCardBodyMod.CardBodyProps] = js.constructorOf[antdDashMobileLib.libCardCardBodyMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libCardCardBodyMod.CardBodyProps]]
   @scala.inline
-  def CardFooter: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardCardFooterMod.CardFooterProps] = js.constructorOf[antdDashMobileLib.libCardCardFooterMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardCardFooterMod.CardFooterProps]]
+  def CardFooter: reactLib.reactMod.ComponentType[antdDashMobileLib.libCardCardFooterMod.CardFooterProps] = js.constructorOf[antdDashMobileLib.libCardCardFooterMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libCardCardFooterMod.CardFooterProps]]
   @scala.inline
-  def CardHeader: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardCardHeaderMod.CardHeaderProps] = js.constructorOf[antdDashMobileLib.libCardCardHeaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCardCardHeaderMod.CardHeaderProps]]
+  def CardHeader: reactLib.reactMod.ComponentType[antdDashMobileLib.libCardCardHeaderMod.CardHeaderProps] = js.constructorOf[antdDashMobileLib.libCardCardHeaderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libCardCardHeaderMod.CardHeaderProps]]
   @scala.inline
-  def Carousel: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCarouselMod.CarouselProps] = js.constructorOf[antdDashMobileLib.libCarouselMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCarouselMod.CarouselProps]]
+  def Carousel: reactLib.reactMod.ComponentType[antdDashMobileLib.libCarouselMod.CarouselProps] = js.constructorOf[antdDashMobileLib.libCarouselMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libCarouselMod.CarouselProps]]
   @scala.inline
-  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[antdDashMobileLib.libCheckboxMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libCheckboxCheckboxMod.CheckboxProps]]
+  def Checkbox: reactLib.reactMod.ComponentType[antdDashMobileLib.libCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[antdDashMobileLib.libCheckboxMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libCheckboxCheckboxMod.CheckboxProps]]
   @scala.inline
-  def CustomInput: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemCustomInputMod.NumberInputProps] = js.constructorOf[antdDashMobileLib.libInputDashItemCustomInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemCustomInputMod.NumberInputProps]]
+  def CustomInput: reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemCustomInputMod.NumberInputProps] = js.constructorOf[antdDashMobileLib.libInputDashItemCustomInputMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemCustomInputMod.NumberInputProps]]
   @scala.inline
-  def CustomKeyboard: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[antdDashMobileLib.libInputDashItemCustomKeyboardMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def CustomKeyboard: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[antdDashMobileLib.libInputDashItemCustomKeyboardMod.default].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def DateDashPicker: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType] = js.constructorOf[antdDashMobileLib.libDateDashPickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType]]
+  def DateDashPicker: reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType] = js.constructorOf[antdDashMobileLib.libDateDashPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType]]
   @scala.inline
-  def DateDashPickerDashView: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps] = js.constructorOf[antdDashMobileLib.libDateDashPickerDashViewMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps]]
+  def DateDashPickerDashView: reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps] = js.constructorOf[antdDashMobileLib.libDateDashPickerDashViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps]]
   @scala.inline
-  def DatePicker: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.DatePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType]]
+  def DatePicker: reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.DatePicker].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerMod.PropsType]]
   @scala.inline
-  def DatePickerView: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.DatePickerView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps]]
+  def DatePickerView: reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.DatePickerView].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libDateDashPickerDashViewPropsTypeMod.DatePickerProps]]
   @scala.inline
-  def DefaultTabBar: reactLib.reactMod.ReactNs.ComponentType[rmcDashTabsLib.libDefaultTabBarMod.PropsType] = js.constructorOf[antdDashMobileLib.libTabsMod.DefaultTabBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rmcDashTabsLib.libDefaultTabBarMod.PropsType]]
+  def DefaultTabBar: reactLib.reactMod.ComponentType[rmcDashTabsLib.libDefaultTabBarMod.PropsType] = js.constructorOf[antdDashMobileLib.libTabsMod.DefaultTabBar].asInstanceOf[reactLib.reactMod.ComponentType[rmcDashTabsLib.libDefaultTabBarMod.PropsType]]
   @scala.inline
-  def Drawer: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDrawerPropsTypeMod.DrawerWebProps] = js.constructorOf[antdDashMobileLib.libDrawerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libDrawerPropsTypeMod.DrawerWebProps]]
+  def Drawer: reactLib.reactMod.ComponentType[antdDashMobileLib.libDrawerPropsTypeMod.DrawerWebProps] = js.constructorOf[antdDashMobileLib.libDrawerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libDrawerPropsTypeMod.DrawerWebProps]]
   @scala.inline
-  def Flex: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libFlexFlexMod.FlexProps] = js.constructorOf[antdDashMobileLib.libFlexMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libFlexFlexMod.FlexProps]]
+  def Flex: reactLib.reactMod.ComponentType[antdDashMobileLib.libFlexFlexMod.FlexProps] = js.constructorOf[antdDashMobileLib.libFlexMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libFlexFlexMod.FlexProps]]
   @scala.inline
-  def Grid: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libGridMod.GridProps] = js.constructorOf[antdDashMobileLib.libGridMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libGridMod.GridProps]]
+  def Grid: reactLib.reactMod.ComponentType[antdDashMobileLib.libGridMod.GridProps] = js.constructorOf[antdDashMobileLib.libGridMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libGridMod.GridProps]]
   @scala.inline
-  def Icon: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libIconMod.IconProps] = js.constructorOf[antdDashMobileLib.libIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libIconMod.IconProps]]
+  def Icon: reactLib.reactMod.ComponentType[antdDashMobileLib.libIconMod.IconProps] = js.constructorOf[antdDashMobileLib.libIconMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libIconMod.IconProps]]
   @scala.inline
-  def ImageDashPicker: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes] = js.constructorOf[antdDashMobileLib.libImageDashPickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes]]
+  def ImageDashPicker: reactLib.reactMod.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes] = js.constructorOf[antdDashMobileLib.libImageDashPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes]]
   @scala.inline
-  def ImagePicker: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.ImagePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes]]
+  def ImagePicker: reactLib.reactMod.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.ImagePicker].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libImageDashPickerMod.ImagePickerPropTypes]]
   @scala.inline
-  def Indexed: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListDashViewIndexedMod.MIndexedListProps] = js.constructorOf[antdDashMobileLib.libListDashViewIndexedMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListDashViewIndexedMod.MIndexedListProps]]
+  def Indexed: reactLib.reactMod.ComponentType[antdDashMobileLib.libListDashViewIndexedMod.MIndexedListProps] = js.constructorOf[antdDashMobileLib.libListDashViewIndexedMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libListDashViewIndexedMod.MIndexedListProps]]
   @scala.inline
-  def Input: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemInputMod.InputProps] = js.constructorOf[antdDashMobileLib.libInputDashItemInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemInputMod.InputProps]]
+  def Input: reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemInputMod.InputProps] = js.constructorOf[antdDashMobileLib.libInputDashItemInputMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemInputMod.InputProps]]
   @scala.inline
-  def InputDashItem: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps] = js.constructorOf[antdDashMobileLib.libInputDashItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps]]
+  def InputDashItem: reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps] = js.constructorOf[antdDashMobileLib.libInputDashItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps]]
   @scala.inline
-  def InputItem: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.InputItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps]]
+  def InputItem: reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.InputItem].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemMod.InputItemProps]]
   @scala.inline
-  def Item: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPopoverItemMod.PopoverItemProps] = js.constructorOf[antdDashMobileLib.libPopoverItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPopoverItemMod.PopoverItemProps]]
+  def Item: reactLib.reactMod.ComponentType[antdDashMobileLib.libPopoverItemMod.PopoverItemProps] = js.constructorOf[antdDashMobileLib.libPopoverItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libPopoverItemMod.PopoverItemProps]]
   @scala.inline
-  def KeyboardItem: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemCustomKeyboardMod.KeyboardItemProps] = js.constructorOf[antdDashMobileLib.libInputDashItemCustomKeyboardMod.KeyboardItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libInputDashItemCustomKeyboardMod.KeyboardItemProps]]
+  def KeyboardItem: reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemCustomKeyboardMod.KeyboardItemProps] = js.constructorOf[antdDashMobileLib.libInputDashItemCustomKeyboardMod.KeyboardItem].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libInputDashItemCustomKeyboardMod.KeyboardItemProps]]
   @scala.inline
-  def List: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListMod.ListProps] = js.constructorOf[antdDashMobileLib.libListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListMod.ListProps]]
+  def List: reactLib.reactMod.ComponentType[antdDashMobileLib.libListMod.ListProps] = js.constructorOf[antdDashMobileLib.libListMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libListMod.ListProps]]
   @scala.inline
-  def ListDashView: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps] = js.constructorOf[antdDashMobileLib.libListDashViewMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps]]
+  def ListDashView: reactLib.reactMod.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps] = js.constructorOf[antdDashMobileLib.libListDashViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps]]
   @scala.inline
-  def ListItem: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListListItemMod.ListItemProps] = js.constructorOf[antdDashMobileLib.libListListItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListListItemMod.ListItemProps]]
+  def ListItem: reactLib.reactMod.ComponentType[antdDashMobileLib.libListListItemMod.ListItemProps] = js.constructorOf[antdDashMobileLib.libListListItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libListListItemMod.ListItemProps]]
   @scala.inline
-  def ListView: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.ListView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps]]
+  def ListView: reactLib.reactMod.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.ListView].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libListDashViewMod.ListViewProps]]
   @scala.inline
-  def LocaleDashProvider: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdDashMobileLib.libLocaleDashProviderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps]]
+  def LocaleDashProvider: reactLib.reactMod.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdDashMobileLib.libLocaleDashProviderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps]]
   @scala.inline
-  def LocaleProvider: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.LocaleProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps]]
+  def LocaleProvider: reactLib.reactMod.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.LocaleProvider].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libLocaleDashProviderLocaleDashProviderMod.LocaleProviderProps]]
   @scala.inline
-  def Marquee: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNoticeDashBarMarqueeMod.MarqueeProps] = js.constructorOf[antdDashMobileLib.libNoticeDashBarMarqueeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNoticeDashBarMarqueeMod.MarqueeProps]]
+  def Marquee: reactLib.reactMod.ComponentType[antdDashMobileLib.libNoticeDashBarMarqueeMod.MarqueeProps] = js.constructorOf[antdDashMobileLib.libNoticeDashBarMarqueeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libNoticeDashBarMarqueeMod.MarqueeProps]]
   @scala.inline
-  def Menu: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libMenuPropsTypeMod.MenuProps] = js.constructorOf[antdDashMobileLib.libMenuMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libMenuPropsTypeMod.MenuProps]]
+  def Menu: reactLib.reactMod.ComponentType[antdDashMobileLib.libMenuPropsTypeMod.MenuProps] = js.constructorOf[antdDashMobileLib.libMenuMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libMenuPropsTypeMod.MenuProps]]
   @scala.inline
-  def Modal: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libModalModalMod.ModalProps] = js.constructorOf[antdDashMobileLib.libModalMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libModalModalMod.ModalProps]]
+  def Modal: reactLib.reactMod.ComponentType[antdDashMobileLib.libModalModalMod.ModalProps] = js.constructorOf[antdDashMobileLib.libModalMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libModalModalMod.ModalProps]]
   @scala.inline
-  def NavBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.NavBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps]]
+  def NavBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.NavBar].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps]]
   @scala.inline
-  def NavDashBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps] = js.constructorOf[antdDashMobileLib.libNavDashBarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps]]
+  def NavDashBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps] = js.constructorOf[antdDashMobileLib.libNavDashBarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libNavDashBarPropsTypeMod.NavBarProps]]
   @scala.inline
-  def NoticeBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.NoticeBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps]]
+  def NoticeBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.NoticeBar].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps]]
   @scala.inline
-  def NoticeDashBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps] = js.constructorOf[antdDashMobileLib.libNoticeDashBarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps]]
+  def NoticeDashBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps] = js.constructorOf[antdDashMobileLib.libNoticeDashBarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libNoticeDashBarMod.NoticeWebProps]]
   @scala.inline
-  def Pagination: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPaginationMod.PaginationProps] = js.constructorOf[antdDashMobileLib.libPaginationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPaginationMod.PaginationProps]]
+  def Pagination: reactLib.reactMod.ComponentType[antdDashMobileLib.libPaginationMod.PaginationProps] = js.constructorOf[antdDashMobileLib.libPaginationMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libPaginationMod.PaginationProps]]
   @scala.inline
-  def Picker: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPickerAbstractPickerMod.AbstractPickerProps] = js.constructorOf[antdDashMobileLib.libPickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPickerAbstractPickerMod.AbstractPickerProps]]
+  def Picker: reactLib.reactMod.ComponentType[antdDashMobileLib.libPickerAbstractPickerMod.AbstractPickerProps] = js.constructorOf[antdDashMobileLib.libPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libPickerAbstractPickerMod.AbstractPickerProps]]
   @scala.inline
-  def PickerDashView: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView] = js.constructorOf[antdDashMobileLib.libPickerDashViewMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView]]
+  def PickerDashView: reactLib.reactMod.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView] = js.constructorOf[antdDashMobileLib.libPickerDashViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView]]
   @scala.inline
-  def PickerView: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView] = js.constructorOf[antdDashMobileLib.libPickerDashViewPickerViewMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView]]
+  def PickerView: reactLib.reactMod.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView] = js.constructorOf[antdDashMobileLib.libPickerDashViewPickerViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libPickerDashViewPickerViewMod.IPickerView]]
   @scala.inline
-  def Popover: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPopoverMod.PopOverPropsType] = js.constructorOf[antdDashMobileLib.libPopoverMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libPopoverMod.PopOverPropsType]]
+  def Popover: reactLib.reactMod.ComponentType[antdDashMobileLib.libPopoverMod.PopOverPropsType] = js.constructorOf[antdDashMobileLib.libPopoverMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libPopoverMod.PopOverPropsType]]
   @scala.inline
-  def Progress: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libProgressMod.ProgressProps] = js.constructorOf[antdDashMobileLib.libProgressMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libProgressMod.ProgressProps]]
+  def Progress: reactLib.reactMod.ComponentType[antdDashMobileLib.libProgressMod.ProgressProps] = js.constructorOf[antdDashMobileLib.libProgressMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libProgressMod.ProgressProps]]
   @scala.inline
-  def PullDashToDashRefresh: reactLib.reactMod.ReactNs.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType] = js.constructorOf[antdDashMobileLib.libPullDashToDashRefreshMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType]]
+  def PullDashToDashRefresh: reactLib.reactMod.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType] = js.constructorOf[antdDashMobileLib.libPullDashToDashRefreshMod.default].asInstanceOf[reactLib.reactMod.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType]]
   @scala.inline
-  def PullToRefresh: reactLib.reactMod.ReactNs.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.PullToRefresh].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType]]
+  def PullToRefresh: reactLib.reactMod.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.PullToRefresh].asInstanceOf[reactLib.reactMod.ComponentType[rmcDashPullDashToDashRefreshLib.libPropsTypeMod.PropsType]]
   @scala.inline
-  def Radio: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libRadioRadioMod.RadioProps] = js.constructorOf[antdDashMobileLib.libRadioMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libRadioRadioMod.RadioProps]]
+  def Radio: reactLib.reactMod.ComponentType[antdDashMobileLib.libRadioRadioMod.RadioProps] = js.constructorOf[antdDashMobileLib.libRadioMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libRadioRadioMod.RadioProps]]
   @scala.inline
-  def Range: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libRangeMod.RangeProps] = js.constructorOf[antdDashMobileLib.libRangeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libRangeMod.RangeProps]]
+  def Range: reactLib.reactMod.ComponentType[antdDashMobileLib.libRangeMod.RangeProps] = js.constructorOf[antdDashMobileLib.libRangeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libRangeMod.RangeProps]]
   @scala.inline
-  def Result: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libResultMod.ResultProps] = js.constructorOf[antdDashMobileLib.libResultMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libResultMod.ResultProps]]
+  def Result: reactLib.reactMod.ComponentType[antdDashMobileLib.libResultMod.ResultProps] = js.constructorOf[antdDashMobileLib.libResultMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libResultMod.ResultProps]]
   @scala.inline
-  def SearchBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.SearchBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps]]
+  def SearchBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.SearchBar].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps]]
   @scala.inline
-  def SearchDashBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps] = js.constructorOf[antdDashMobileLib.libSearchDashBarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps]]
+  def SearchDashBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps] = js.constructorOf[antdDashMobileLib.libSearchDashBarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSearchDashBarMod.SearchBarProps]]
   @scala.inline
-  def SegmentedControl: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.SegmentedControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps]]
+  def SegmentedControl: reactLib.reactMod.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.SegmentedControl].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps]]
   @scala.inline
-  def SegmentedDashControl: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps] = js.constructorOf[antdDashMobileLib.libSegmentedDashControlMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps]]
+  def SegmentedDashControl: reactLib.reactMod.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps] = js.constructorOf[antdDashMobileLib.libSegmentedDashControlMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSegmentedDashControlMod.SegmentedControlProps]]
   @scala.inline
-  def Slider: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSliderMod.SliderProps] = js.constructorOf[antdDashMobileLib.libSliderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSliderMod.SliderProps]]
+  def Slider: reactLib.reactMod.ComponentType[antdDashMobileLib.libSliderMod.SliderProps] = js.constructorOf[antdDashMobileLib.libSliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSliderMod.SliderProps]]
   @scala.inline
-  def Stepper: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libStepperMod.StepProps] = js.constructorOf[antdDashMobileLib.libStepperMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libStepperMod.StepProps]]
+  def Stepper: reactLib.reactMod.ComponentType[antdDashMobileLib.libStepperMod.StepProps] = js.constructorOf[antdDashMobileLib.libStepperMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libStepperMod.StepProps]]
   @scala.inline
-  def Steps: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libStepsMod.StepsProps] = js.constructorOf[antdDashMobileLib.libStepsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libStepsMod.StepsProps]]
+  def Steps: reactLib.reactMod.ComponentType[antdDashMobileLib.libStepsMod.StepsProps] = js.constructorOf[antdDashMobileLib.libStepsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libStepsMod.StepsProps]]
   @scala.inline
-  def SwipeAction: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.SwipeAction].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps]]
+  def SwipeAction: reactLib.reactMod.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.SwipeAction].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps]]
   @scala.inline
-  def SwipeDashAction: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps] = js.constructorOf[antdDashMobileLib.libSwipeDashActionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps]]
+  def SwipeDashAction: reactLib.reactMod.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps] = js.constructorOf[antdDashMobileLib.libSwipeDashActionMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSwipeDashActionMod.SwipeActionProps]]
   @scala.inline
-  def Switch: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSwitchMod.SwitchProps] = js.constructorOf[antdDashMobileLib.libSwitchMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libSwitchMod.SwitchProps]]
+  def Switch: reactLib.reactMod.ComponentType[antdDashMobileLib.libSwitchMod.SwitchProps] = js.constructorOf[antdDashMobileLib.libSwitchMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libSwitchMod.SwitchProps]]
   @scala.inline
-  def TabBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.TabBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps]]
+  def TabBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.TabBar].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps]]
   @scala.inline
-  def TabDashBar: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps] = js.constructorOf[antdDashMobileLib.libTabDashBarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps]]
+  def TabDashBar: reactLib.reactMod.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps] = js.constructorOf[antdDashMobileLib.libTabDashBarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libTabDashBarMod.AntTabbarProps]]
   @scala.inline
-  def Tabs: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTabsPropsTypeMod.TabsProps] = js.constructorOf[antdDashMobileLib.libTabsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTabsPropsTypeMod.TabsProps]]
+  def Tabs: reactLib.reactMod.ComponentType[antdDashMobileLib.libTabsPropsTypeMod.TabsProps] = js.constructorOf[antdDashMobileLib.libTabsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libTabsPropsTypeMod.TabsProps]]
   @scala.inline
-  def Tag: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTagMod.TagProps] = js.constructorOf[antdDashMobileLib.libTagMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTagMod.TagProps]]
+  def Tag: reactLib.reactMod.ComponentType[antdDashMobileLib.libTagMod.TagProps] = js.constructorOf[antdDashMobileLib.libTagMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libTagMod.TagProps]]
   @scala.inline
-  def Text: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLSpanElement]] = js.constructorOf[antdDashMobileLib.libTextMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLSpanElement]]]
+  def Text: reactLib.reactMod.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLSpanElement]] = js.constructorOf[antdDashMobileLib.libTextMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLSpanElement]]]
   @scala.inline
-  def TextareaDashItem: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps] = js.constructorOf[antdDashMobileLib.libTextareaDashItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps]]
+  def TextareaDashItem: reactLib.reactMod.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps] = js.constructorOf[antdDashMobileLib.libTextareaDashItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps]]
   @scala.inline
-  def TextareaItem: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.TextareaItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps]]
+  def TextareaItem: reactLib.reactMod.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.TextareaItem].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libTextareaDashItemMod.TextareaItemProps]]
   @scala.inline
-  def View: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLDivElement]] = js.constructorOf[antdDashMobileLib.libViewMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLDivElement]]]
+  def View: reactLib.reactMod.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLDivElement]] = js.constructorOf[antdDashMobileLib.libViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libViewMod.ViewProps[stdLib.HTMLDivElement]]]
   @scala.inline
-  def WhiteDashSpace: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps] = js.constructorOf[antdDashMobileLib.libWhiteDashSpaceMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps]]
+  def WhiteDashSpace: reactLib.reactMod.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps] = js.constructorOf[antdDashMobileLib.libWhiteDashSpaceMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps]]
   @scala.inline
-  def WhiteSpace: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.WhiteSpace].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps]]
+  def WhiteSpace: reactLib.reactMod.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.WhiteSpace].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libWhiteDashSpaceMod.WhiteSpaceProps]]
   @scala.inline
-  def WingBlank: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.WingBlank].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps]]
+  def WingBlank: reactLib.reactMod.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps] = js.constructorOf[antdDashMobileLib.antdDashMobileMod.WingBlank].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps]]
   @scala.inline
-  def WingDashBlank: reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps] = js.constructorOf[antdDashMobileLib.libWingDashBlankMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps]]
+  def WingDashBlank: reactLib.reactMod.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps] = js.constructorOf[antdDashMobileLib.libWingDashBlankMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdDashMobileLib.libWingDashBlankMod.WingBlankProps]]
   @scala.inline
   def AbstractPickerProps: antdDashMobileLib.libPickerAbstractPickerMod.AbstractPickerProps.type = antdDashMobileLib.libPickerAbstractPickerMod.AbstractPickerProps
   type AbstractPickerProps = antdDashMobileLib.libPickerAbstractPickerMod.AbstractPickerProps

@@ -17,77 +17,71 @@ object ^ extends js.Object {
   def createTestAccount(
     callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* testAccount */ TestAccount, scala.Unit]
   ): scala.Unit = js.native
-  def createTransport(): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: java.lang.String): nodemailerLib.libMailerMod.namespaced = js.native
+  def createTransport(): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: java.lang.String): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: java.lang.String, defaults: nodemailerLib.libSmtpDashTransportMod.Options): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libJsonDashTransportMod.Options): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: java.lang.String,
-    defaults: nodemailerLib.libSmtpDashTransportMod.SMTPTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libJsonDashTransportMod.JSONTransportNs.Options): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libJsonDashTransportMod.Options,
+    defaults: nodemailerLib.libJsonDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libJsonDashTransportMod.^): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libJsonDashTransportMod.JSONTransportNs.Options,
-    defaults: nodemailerLib.libJsonDashTransportMod.JSONTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libJsonDashTransportMod.namespaced): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libJsonDashTransportMod.^,
+    defaults: nodemailerLib.libJsonDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSendmailDashTransportMod.Options): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libJsonDashTransportMod.namespaced,
-    defaults: nodemailerLib.libJsonDashTransportMod.JSONTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.Options): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libSendmailDashTransportMod.Options,
+    defaults: nodemailerLib.libSendmailDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSendmailDashTransportMod.^): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.Options,
-    defaults: nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSendmailDashTransportMod.namespaced): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libSendmailDashTransportMod.^,
+    defaults: nodemailerLib.libSendmailDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSesDashTransportMod.Options): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSendmailDashTransportMod.namespaced,
-    defaults: nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSesDashTransportMod.SESTransportNs.Options): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libSesDashTransportMod.Options,
+    defaults: nodemailerLib.libSesDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSesDashTransportMod.^): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSesDashTransportMod.SESTransportNs.Options,
-    defaults: nodemailerLib.libSesDashTransportMod.SESTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSesDashTransportMod.namespaced): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libSesDashTransportMod.^,
+    defaults: nodemailerLib.libSesDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSmtpDashPoolMod.Options): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSesDashTransportMod.namespaced,
-    defaults: nodemailerLib.libSesDashTransportMod.SESTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSmtpDashPoolMod.SMTPPoolNs.Options): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libSmtpDashPoolMod.Options,
+    defaults: nodemailerLib.libSmtpDashPoolMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSmtpDashPoolMod.^): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSmtpDashPoolMod.^, defaults: nodemailerLib.libSmtpDashPoolMod.Options): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSmtpDashTransportMod.Options): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSmtpDashPoolMod.SMTPPoolNs.Options,
-    defaults: nodemailerLib.libSmtpDashPoolMod.SMTPPoolNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSmtpDashPoolMod.namespaced): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libSmtpDashTransportMod.Options,
+    defaults: nodemailerLib.libSmtpDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libSmtpDashTransportMod.^): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSmtpDashPoolMod.namespaced,
-    defaults: nodemailerLib.libSmtpDashPoolMod.SMTPPoolNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSmtpDashTransportMod.SMTPTransportNs.Options): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libSmtpDashTransportMod.^,
+    defaults: nodemailerLib.libSmtpDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libStreamDashTransportMod.Options): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSmtpDashTransportMod.SMTPTransportNs.Options,
-    defaults: nodemailerLib.libSmtpDashTransportMod.SMTPTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libSmtpDashTransportMod.namespaced): nodemailerLib.libMailerMod.namespaced = js.native
+    transport: nodemailerLib.libStreamDashTransportMod.Options,
+    defaults: nodemailerLib.libStreamDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: nodemailerLib.libStreamDashTransportMod.^): nodemailerLib.libMailerMod.^ = js.native
   def createTransport(
-    transport: nodemailerLib.libSmtpDashTransportMod.namespaced,
-    defaults: nodemailerLib.libSmtpDashTransportMod.SMTPTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libStreamDashTransportMod.StreamTransportNs.Options): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(
-    transport: nodemailerLib.libStreamDashTransportMod.StreamTransportNs.Options,
-    defaults: nodemailerLib.libStreamDashTransportMod.StreamTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: nodemailerLib.libStreamDashTransportMod.namespaced): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(
-    transport: nodemailerLib.libStreamDashTransportMod.namespaced,
-    defaults: nodemailerLib.libStreamDashTransportMod.StreamTransportNs.Options
-  ): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: Transport): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: TransportOptions): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: TransportOptions, defaults: TransportOptions): nodemailerLib.libMailerMod.namespaced = js.native
-  def createTransport(transport: Transport, defaults: TransportOptions): nodemailerLib.libMailerMod.namespaced = js.native
-  def getTestMessageUrl(info: nodemailerLib.libSesDashTransportMod.SESTransportNs.SentMessageInfo): java.lang.String | nodemailerLib.nodemailerLibNumbers.`false` = js.native
-  def getTestMessageUrl(info: nodemailerLib.libSmtpDashTransportMod.SMTPTransportNs.SentMessageInfo): java.lang.String | nodemailerLib.nodemailerLibNumbers.`false` = js.native
+    transport: nodemailerLib.libStreamDashTransportMod.^,
+    defaults: nodemailerLib.libStreamDashTransportMod.Options
+  ): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: Transport): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: TransportOptions): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: TransportOptions, defaults: TransportOptions): nodemailerLib.libMailerMod.^ = js.native
+  def createTransport(transport: Transport, defaults: TransportOptions): nodemailerLib.libMailerMod.^ = js.native
+  def getTestMessageUrl(info: nodemailerLib.libSesDashTransportMod.SentMessageInfo): java.lang.String | nodemailerLib.nodemailerLibNumbers.`false` = js.native
+  def getTestMessageUrl(info: nodemailerLib.libSmtpDashTransportMod.SentMessageInfo): java.lang.String | nodemailerLib.nodemailerLibNumbers.`false` = js.native
 }
 

@@ -35,7 +35,7 @@ trait LRUCache[K, V] extends js.Object {
   /**
     * Return an array of the cache entries ready for serialization and usage with `destinationCache.load(arr)`.
     */
-  def dump(): js.Array[lruDashCacheLib.lruDashCacheMod.LRUCacheNs.Entry[K, V]] = js.native
+  def dump(): js.Array[Entry[K, V]] = js.native
   /**
     * Just like `Array.prototype.forEach`. Iterates over all the keys in the cache,
     * in order of recent-ness. (Ie, more recently used items are iterated over first.)
@@ -73,7 +73,7 @@ trait LRUCache[K, V] extends js.Object {
     *
     * @param cacheEntries Obtained from `sourceCache.dump()`
     */
-  def load(cacheEntries: js.Array[lruDashCacheLib.lruDashCacheMod.LRUCacheNs.Entry[K, V]]): scala.Unit = js.native
+  def load(cacheEntries: js.Array[Entry[K, V]]): scala.Unit = js.native
   /**
     * Returns the key value (or `undefined` if not found) without updating
     * the "recently used"-ness of the key.

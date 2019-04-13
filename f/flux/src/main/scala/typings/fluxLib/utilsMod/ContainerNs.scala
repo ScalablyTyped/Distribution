@@ -14,11 +14,11 @@ object ContainerNs extends js.Object {
     options: fluxLib.libFluxContainerMod.RealOptions
   ): fluxLib.libFluxContainerMod.Component[TProps, _, _] = js.native
   def createFunctional[TProps, TState](
-    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactNs.ReactElement[TState]],
+    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactElement[TState]],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 
-      js.Array[fluxLib.libFluxStoreMod.namespaced[_]]
+      js.Array[fluxLib.libFluxStoreMod.^[_]]
     ],
     calculateState: js.Function3[
       /* prevState */ js.UndefOr[TState], 
@@ -28,11 +28,11 @@ object ContainerNs extends js.Object {
     ]
   ): fluxLib.libFluxContainerMod.Component[TProps, TState, _] = js.native
   def createFunctional[TProps, TState](
-    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactNs.ReactElement[TState]],
+    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactElement[TState]],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 
-      js.Array[fluxLib.libFluxStoreMod.namespaced[_]]
+      js.Array[fluxLib.libFluxStoreMod.^[_]]
     ],
     calculateState: js.Function3[
       /* prevState */ js.UndefOr[TState], 

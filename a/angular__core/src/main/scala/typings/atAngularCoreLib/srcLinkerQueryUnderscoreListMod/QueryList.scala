@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class QueryList[T] () extends js.Object {
   var _results: js.Any = js.native
   val changes: rxjsLib.rxjsMod.Observable[_] = js.native
-  val dirty: /* true */ scala.Boolean = js.native
+  val dirty: atAngularCoreLib.atAngularCoreLibNumbers.`true` = js.native
   val first: T = js.native
   val last: T = js.native
   val length: scala.Double = js.native

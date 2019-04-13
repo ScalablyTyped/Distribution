@@ -7,16 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "GeometryInstanceAttribute")
 @js.native
-class GeometryInstanceAttribute protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.GeometryInstanceAttribute {
+class GeometryInstanceAttribute protected () extends js.Object {
   def this(options: cesiumLib.Anon_ComponentDatatypeComponentsPerAttribute) = this()
-  /* CompleteClass */
-  override var componentDatatype: cesiumLib.cesiumMod.CesiumNs.ComponentDatatype = js.native
-  /* CompleteClass */
-  override var componentsPerAttribute: scala.Double = js.native
-  /* CompleteClass */
-  override var normalize: scala.Boolean = js.native
-  /* CompleteClass */
-  override var value: js.Array[scala.Double] = js.native
+  var componentDatatype: ComponentDatatype = js.native
+  var componentsPerAttribute: scala.Double = js.native
+  var normalize: scala.Boolean = js.native
+  var value: js.Array[scala.Double] = js.native
 }
 

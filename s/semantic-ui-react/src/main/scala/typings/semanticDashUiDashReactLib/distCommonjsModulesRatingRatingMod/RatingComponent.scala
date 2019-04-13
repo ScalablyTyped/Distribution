@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RatingComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[RatingProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Icon: reactLib.reactMod.ReactNs.ComponentClass[
+  extends reactLib.reactMod.ComponentClass[RatingProps, reactLib.reactMod.ComponentState] {
+  var Icon: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsModulesRatingRatingIconMod.RatingIconProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

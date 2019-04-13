@@ -13,9 +13,9 @@ trait HolidayModifier extends js.Object {
   def add(holidays: HolidaysMapping, specifics: js.Any): HolidayModifier = js.native
   def extendParser(
     parserFunc: js.Function2[
-      /* m */ momentLib.momentMod.momentNs.Moment, 
+      /* m */ momentLib.momentMod.Moment, 
       /* date */ java.lang.String, 
-      momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | scala.Unit
+      momentLib.momentMod.Moment | js.Array[momentLib.momentMod.Moment] | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | scala.Unit
     ]
   ): HolidayModifier = js.native
   def load(locales: java.lang.String): HolidayModifier = js.native

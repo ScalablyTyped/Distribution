@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("highcharts/js/highcharts", JSImport.Namespace)
 @js.native
 object jsHighchartsMod
-  extends org.scalablytyped.runtime.TopLevel[highchartsLib.highchartsMod.HighchartsNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[highchartsLib.highchartsMod.Static]
 

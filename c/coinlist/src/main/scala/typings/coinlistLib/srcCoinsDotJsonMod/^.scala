@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("coinlist/src/coins.json", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[js.Array[coinlistLib.srcCoinsDotJsonMod.coinsNs.Coin]]
+  extends org.scalablytyped.runtime.TopLevel[js.Array[Coin]]
 

@@ -7,6 +7,25 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/library/fn/array/find", JSImport.Namespace)
 @js.native
-object libraryFnArrayFindMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayIndex]
+object libraryFnArrayFindMod extends js.Object {
+  def apply[T](
+    array: stdLib.ArrayLike[T],
+    predicate: js.Function3[
+      /* value */ T, 
+      /* index */ scala.Double, 
+      /* obj */ coreDashJsLib.Array[T], 
+      scala.Boolean
+    ]
+  ): T = js.native
+  def apply[T](
+    array: stdLib.ArrayLike[T],
+    predicate: js.Function3[
+      /* value */ T, 
+      /* index */ scala.Double, 
+      /* obj */ coreDashJsLib.Array[T], 
+      scala.Boolean
+    ],
+    thisArg: js.Any
+  ): T = js.native
+}
 

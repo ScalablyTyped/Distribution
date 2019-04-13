@@ -19,3 +19,8 @@ class StatesAdmin ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.StatesAdmin")
+@js.native
+object StatesAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStatesAdmin]
+

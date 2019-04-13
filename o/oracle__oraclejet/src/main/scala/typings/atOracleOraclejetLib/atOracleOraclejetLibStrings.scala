@@ -594,7 +594,7 @@ object atOracleOraclejetLibStrings {
   
   @js.native
   sealed trait confirmation
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_TYPE
   
   @js.native
   sealed trait connected extends js.Object
@@ -955,7 +955,7 @@ object atOracleOraclejetLibStrings {
   @js.native
   sealed trait error
     extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
-       with atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
+       with atOracleOraclejetLib.ojmessagingMod.SEVERITY_TYPE
   
   @js.native
   sealed trait errored
@@ -1000,7 +1000,7 @@ object atOracleOraclejetLibStrings {
   
   @js.native
   sealed trait fatal
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_TYPE
   
   @js.native
   sealed trait filterOnOpen extends js.Object
@@ -1370,7 +1370,7 @@ object atOracleOraclejetLibStrings {
   
   @js.native
   sealed trait info
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_TYPE
   
   @js.native
   sealed trait inherit extends js.Object
@@ -3604,7 +3604,7 @@ object atOracleOraclejetLibStrings {
   
   @js.native
   sealed trait warning
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_TYPE
   
   @js.native
   sealed trait weeks extends js.Object

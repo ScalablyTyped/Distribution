@@ -30,6 +30,10 @@ package object ProcessFlowNs {
     */
   type ProcessCallbackDelegate = js.Function1[/* status */ java.lang.String, scala.Unit]
   /**
+    * Represents a key-value pair, where the key is the Process Flow's ID, and the value is the name thereof.
+    */
+  type ProcessDictionary = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  /**
     * Called when process set status method has completed.
     * @param status The new status of the process instance: active, aborted, or finished
     */

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var activeStep: js.UndefOr[scala.Double] = js.undefined
   var alternativeLabel: js.UndefOr[scala.Boolean] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactNode
-  var connector: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: reactLib.reactMod.ReactNode
+  var connector: js.UndefOr[reactLib.reactMod.ReactElement[_] | reactLib.reactMod.ReactNode] = js.undefined
   var nonLinear: js.UndefOr[scala.Boolean] = js.undefined
   var orientation: js.UndefOr[Orientation] = js.undefined
 }
@@ -20,16 +20,16 @@ import scala.scalajs.js.annotation._
 object StepperProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     activeStep: scala.Int | scala.Double = null,
     alternativeLabel: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepperClasskey]] = null,
-    connector: reactLib.reactMod.ReactNs.ReactElement[_] | reactLib.reactMod.ReactNs.ReactNode = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    connector: reactLib.reactMod.ReactElement[_] | reactLib.reactMod.ReactNode = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     nonLinear: js.UndefOr[scala.Boolean] = js.undefined,
     orientation: Orientation = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): StepperProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (activeStep != null) __obj.updateDynamic("activeStep")(activeStep.asInstanceOf[js.Any])

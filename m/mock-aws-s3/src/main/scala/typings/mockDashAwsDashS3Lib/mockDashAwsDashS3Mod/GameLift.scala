@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class GameLift ()
   extends awsDashSdkLib.awsDashSdkMod.GameLift {
-  def this(options: awsDashSdkLib.clientsGameliftMod.GameLiftNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsGameliftMod.ClientConfiguration) = this()
 }
 

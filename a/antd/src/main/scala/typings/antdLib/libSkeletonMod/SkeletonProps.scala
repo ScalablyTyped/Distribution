@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SkeletonProps extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var avatar: js.UndefOr[antdLib.libSkeletonAvatarMod.SkeletonAvatarProps | scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   var paragraph: js.UndefOr[antdLib.libSkeletonParagraphMod.SkeletonParagraphProps | scala.Boolean] = js.undefined
@@ -21,7 +21,7 @@ object SkeletonProps {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     avatar: antdLib.libSkeletonAvatarMod.SkeletonAvatarProps | scala.Boolean = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     paragraph: antdLib.libSkeletonParagraphMod.SkeletonParagraphProps | scala.Boolean = null,

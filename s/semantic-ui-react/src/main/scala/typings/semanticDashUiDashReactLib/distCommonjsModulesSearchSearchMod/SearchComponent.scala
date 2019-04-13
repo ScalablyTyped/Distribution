@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SearchComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[SearchProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Category: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.ComponentClass[SearchProps, reactLib.reactMod.ComponentState] {
+  var Category: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps
   ] = js.native
-  var Result: reactLib.reactMod.ReactNs.ComponentClass[
+  var Result: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  var Results: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Results: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultsMod.SearchResultsProps
   ] = js.native
 }

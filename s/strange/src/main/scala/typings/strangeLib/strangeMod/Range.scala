@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Range[T /* <: strangeLib.strangeMod.RangeNs.Endpoint */] extends js.Object {
+trait Range[T /* <: Endpoint */] extends js.Object {
   /**
     * Range's beginning, or left endpoint.
     */
@@ -28,7 +28,7 @@ trait Range[T /* <: strangeLib.strangeMod.RangeNs.Endpoint */] extends js.Object
     * new Range(1, 5).bounds // => "[]"
     * new Range(1, 5, "[)").bounds // => "[)"
     */
-  var bounds: strangeLib.strangeMod.RangeNs.Bounds = js.native
+  var bounds: Bounds = js.native
   /**
     * Range's end, or right endpoint.
     */

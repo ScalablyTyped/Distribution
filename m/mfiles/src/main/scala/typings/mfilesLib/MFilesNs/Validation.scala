@@ -17,3 +17,8 @@ class Validation ()
   override def Clone(): mfilesLib.IValidation = js.native
 }
 
+@JSGlobal("MFiles.Validation")
+@js.native
+object Validation
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IValidation]
+

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def isSafeInteger(n: scala.Double): scala.Boolean = js.native
-  def middleware(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
-  def middleware(opts: koaDashBouncerLib.koaDashBouncerMod.KoaBouncerNs.MiddlewareOption): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def middleware(): koaLib.koaMod.Middleware[_, js.Object] = js.native
+  def middleware(opts: MiddlewareOption): koaLib.koaMod.Middleware[_, js.Object] = js.native
 }
 

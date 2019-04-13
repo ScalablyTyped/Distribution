@@ -14,22 +14,22 @@ object objectionLibStrings {
   
   @js.native
   sealed trait InvalidGraph
-    extends objectionLib.objectionMod.ObjectionNs.ValidationErrorType
+    extends objectionLib.objectionMod.ValidationErrorType
   
   @js.native
   sealed trait ModelValidation
-    extends objectionLib.objectionMod.ObjectionNs.ValidationErrorType
+    extends objectionLib.objectionMod.ValidationErrorType
   
   @js.native
   sealed trait PartialUpdate extends js.Object
   
   @js.native
   sealed trait RelationExpression
-    extends objectionLib.objectionMod.ObjectionNs.ValidationErrorType
+    extends objectionLib.objectionMod.ValidationErrorType
   
   @js.native
   sealed trait UnallowedRelation
-    extends objectionLib.objectionMod.ObjectionNs.ValidationErrorType
+    extends objectionLib.objectionMod.ValidationErrorType
   
   @scala.inline
   def DeepPartialGraphModel: DeepPartialGraphModel = "DeepPartialGraphModel".asInstanceOf[DeepPartialGraphModel]

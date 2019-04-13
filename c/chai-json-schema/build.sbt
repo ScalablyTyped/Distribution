@@ -1,13 +1,12 @@
 organization := "org.scalablytyped"
 name := "chai-json-schema"
-version := "1.4-dt-20190212Z-2d8b92"
+version := "1.4-dt-20190212Z-b89520"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "tv4" % "1.2.5-dt-20190322Z-fbf7d2")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
+  "org.scalablytyped" %%% "tv4" % "1.2.5-dt-20190322Z-a60248")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

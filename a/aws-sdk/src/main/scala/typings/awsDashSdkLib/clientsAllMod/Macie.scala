@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Macie ()
-  extends awsDashSdkLib.clientsMacieMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMacieMod.MacieNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMacieMod.^ {
+  def this(options: awsDashSdkLib.clientsMacieMod.ClientConfiguration) = this()
 }
 

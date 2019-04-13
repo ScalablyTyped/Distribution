@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Anon_Name
-  extends org.scalablytyped.runtime.Instantiable1[
-      (/* rule */ js.Function1[/* str */ java.lang.String, js.Object]) | (/* rule */ hexoDashUtilLib.hexoDashUtilMod.Pattern[js.Object]) | (/* rule */ stdLib.RegExp) | (/* rule */ java.lang.String), 
-      hexoDashUtilLib.hexoDashUtilMod.Pattern[js.Object] | (hexoDashUtilLib.hexoDashUtilMod.Pattern[stdLib.RegExpMatchArray | scala.Null]) | (hexoDashUtilLib.hexoDashUtilMod.Pattern[Anon_0 with js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]])
-    ]
+trait Anon_Name extends js.Object {
+  var segments: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String | stdLib.RegExp]] = js.undefined
+}
+
+object Anon_Name {
+  @scala.inline
+  def apply(segments: org.scalablytyped.runtime.StringDictionary[java.lang.String | stdLib.RegExp] = null): Anon_Name = {
+    val __obj = js.Dynamic.literal()
+    if (segments != null) __obj.updateDynamic("segments")(segments)
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
 

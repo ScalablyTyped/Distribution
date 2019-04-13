@@ -7,17 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "LocalBaseBlock")
 @js.native
-class LocalBaseBlock ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalBaseBlock {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalBaseBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+class LocalBaseBlock () extends js.Object {
+  def this(params: LocalBaseBlockParams) = this()
+  var blockLength: scala.Double = js.native
+  var error: java.lang.String = js.native
+  var valueBeforeDecode: stdLib.ArrayBuffer = js.native
+  var warnings: js.Array[java.lang.String] = js.native
   /**
     * Convertion for the block to JSON object
     * 
@@ -25,8 +20,7 @@ class LocalBaseBlock ()
     * 
     * @memberOf LocalBaseBlock
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  def toJSON(): JsonLocalBaseBlock = js.native
 }
 
 /* static members */

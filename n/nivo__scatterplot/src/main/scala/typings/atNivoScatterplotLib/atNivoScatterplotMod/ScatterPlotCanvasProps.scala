@@ -31,7 +31,7 @@ object ScatterPlotCanvasProps {
     symbolShape: atNivoScatterplotLib.atNivoScatterplotLibStrings.circle | atNivoScatterplotLib.atNivoScatterplotLibStrings.square = null,
     symbolSize: scala.Double | ScatterPlotSizeGetter = null,
     theme: atNivoCoreLib.atNivoCoreMod.Theme = null,
-    tooltip: /* data */ ScatterPlotDatum => reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltip: /* data */ ScatterPlotDatum => reactLib.reactMod.ReactNode = null,
     tooltipFormat: TooltipFormatter = null,
     useMesh: js.UndefOr[scala.Boolean] = js.undefined,
     xScale: atNivoScalesLib.atNivoScalesMod.Scale = null,

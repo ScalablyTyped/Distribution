@@ -33,7 +33,5 @@ object PhoneNumberUtilNs extends js.Object {
       ] = js.native
   }
   
-  type MatchType = googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.MatchType
-  type ValidationResult = googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtilNs.ValidationResult
 }
 

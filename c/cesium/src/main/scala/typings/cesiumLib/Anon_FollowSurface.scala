@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FollowSurface extends js.Object {
-  var followSurface: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var granularity: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MaterialProperty] = js.undefined
-  var positions: js.UndefOr[js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3]] = js.undefined
-  var show: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var followSurface: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var granularity: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.MaterialProperty] = js.undefined
+  var positions: js.UndefOr[js.Array[cesiumLib.cesiumMod.Cartesian3]] = js.undefined
+  var show: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Anon_FollowSurface {
   @scala.inline
   def apply(
-    followSurface: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    granularity: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    material: cesiumLib.cesiumMod.CesiumNs.MaterialProperty = null,
-    positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3] = null,
-    show: cesiumLib.cesiumMod.CesiumNs.Property = null,
+    followSurface: cesiumLib.cesiumMod.Property = null,
+    granularity: cesiumLib.cesiumMod.Property = null,
+    material: cesiumLib.cesiumMod.MaterialProperty = null,
+    positions: js.Array[cesiumLib.cesiumMod.Cartesian3] = null,
+    show: cesiumLib.cesiumMod.Property = null,
     width: scala.Int | scala.Double = null
   ): Anon_FollowSurface = {
     val __obj = js.Dynamic.literal()

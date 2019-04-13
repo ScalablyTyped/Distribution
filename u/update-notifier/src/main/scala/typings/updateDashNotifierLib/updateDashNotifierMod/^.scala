@@ -7,8 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("update-notifier", JSImport.Namespace)
 @js.native
+class ^ () extends UpdateNotifier {
+  def this(settings: Settings) = this()
+}
+
+@JSImport("update-notifier", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
-  def apply(): updateDashNotifierLib.updateDashNotifierMod.UpdateNotifierNs.UpdateNotifier = js.native
-  def apply(settings: updateDashNotifierLib.updateDashNotifierMod.UpdateNotifierNs.Settings): updateDashNotifierLib.updateDashNotifierMod.UpdateNotifierNs.UpdateNotifier = js.native
+  def apply(): UpdateNotifier = js.native
+  def apply(settings: Settings): UpdateNotifier = js.native
 }
 

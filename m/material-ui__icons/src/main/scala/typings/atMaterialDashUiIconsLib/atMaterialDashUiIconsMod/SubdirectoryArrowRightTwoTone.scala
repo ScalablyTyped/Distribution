@@ -16,9 +16,9 @@ class SubdirectoryArrowRightTwoTone protected ()
 @JSImport("@material-ui/icons", "SubdirectoryArrowRightTwoTone")
 @js.native
 class SubdirectoryArrowRightTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

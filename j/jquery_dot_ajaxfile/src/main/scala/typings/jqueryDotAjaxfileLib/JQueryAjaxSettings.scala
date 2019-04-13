@@ -35,9 +35,7 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of string/regular-expression pairs that determine how jQuery will parse the response, given its content type. (version added: 1.5)
     */
-  var contents: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
-  ] = js.undefined
+  var contents: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
     * This object will be made the context of all Ajax-related callbacks. By default, the context is an object that represents the ajax settings used in the call ($.ajaxSettings merged with the settings passed to $.ajax).
     */
@@ -45,9 +43,7 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object containing dataType-to-dataType converters. Each converter's value is a function that returns the transformed value of the response. (version added: 1.5)
     */
-  var converters: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
-  ] = js.undefined
+  var converters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
     * If you wish to force a crossDomain request (such as JSONP) on the same domain, set the value of crossDomain to true. This allows, for example, server-side redirection to another domain. (version added: 1.5)
     */
@@ -82,9 +78,7 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of additional header key/value pairs to send along with requests using the XMLHttpRequest transport. The header X-Requested-With: XMLHttpRequest is always added, but its default XMLHttpRequest value can be changed here. Values in the headers setting can also be overwritten from within the beforeSend function. (version added: 1.5)
     */
-  var headers: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
-  ] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
     * Allow the request to be successful only if the response has changed since the last request. This is done by checking the Last-Modified header. Default value is false, ignoring the header. In jQuery 1.4 this technique also checks the 'etag' specified by the server to catch unmodified data.
     */
@@ -124,9 +118,7 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of numeric HTTP codes and functions to be called when the response has the corresponding code. f the request is successful, the status code functions take the same parameters as the success callback; if it results in an error (including 3xx redirect), they take the same parameters as the error callback. (version added: 1.5)
     */
-  var statusCode: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
-  ] = js.undefined
+  var statusCode: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
     * A function to be called if the request succeeds. The function gets passed three arguments: The data returned from the server, formatted according to the dataType parameter; a string describing the status; and the jqXHR (in jQuery 1.4.x, XMLHttpRequest) object. As of jQuery 1.5, the success setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
     */
@@ -160,9 +152,7 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of fieldName-fieldValue pairs to set on the native XHR object. For example, you can use it to set withCredentials to true for cross-domain requests if needed. In jQuery 1.5, the withCredentials property was not propagated to the native XHR and thus CORS requests requiring it would ignore this flag. For this reason, we recommend using jQuery 1.5.1+ should you require the use of it. (version added: 1.5.1)
     */
-  var xhrFields: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
-  ] = js.undefined
+  var xhrFields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
 object JQueryAjaxSettings {
@@ -174,16 +164,16 @@ object JQueryAjaxSettings {
     cache: js.UndefOr[scala.Boolean] = js.undefined,
     complete: (/* jqXHR */ JQueryXHR, /* textStatus */ java.lang.String) => _ = null,
     contentType: js.Any = null,
-    contents: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    contents: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     context: js.Any = null,
-    converters: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    converters: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
     data: js.Any = null,
     dataFilter: (/* data */ js.Any, /* ty */ js.Any) => _ = null,
     dataType: java.lang.String = null,
     error: (/* jqXHR */ JQueryXHR, /* textStatus */ java.lang.String, /* errorThrown */ java.lang.String) => _ = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
-    headers: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     ifModified: js.UndefOr[scala.Boolean] = js.undefined,
     isLocal: js.UndefOr[scala.Boolean] = js.undefined,
     jsonp: js.Any = null,
@@ -193,7 +183,7 @@ object JQueryAjaxSettings {
     password: java.lang.String = null,
     processData: js.UndefOr[scala.Boolean] = js.undefined,
     scriptCharset: java.lang.String = null,
-    statusCode: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    statusCode: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     success: (/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR) => _ = null,
     timeout: scala.Int | scala.Double = null,
     traditional: js.UndefOr[scala.Boolean] = js.undefined,
@@ -201,7 +191,7 @@ object JQueryAjaxSettings {
     url: java.lang.String = null,
     username: java.lang.String = null,
     xhr: js.Any = null,
-    xhrFields: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null
+    xhrFields: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): JQueryAjaxSettings = {
     val __obj = js.Dynamic.literal()
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)

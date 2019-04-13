@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DestroyItemOptions extends js.Object {
-  var ConditionExpression: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionExpression] = js.undefined
-  var ConditionalOperator: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionalOperator] = js.undefined
-  var Expected: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ExpectedAttributeMap] = js.undefined
-  var ExpressionAttributeNames: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ExpressionAttributeNameMap] = js.undefined
+  var ConditionExpression: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ConditionExpression] = js.undefined
+  var ConditionalOperator: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ConditionalOperator] = js.undefined
+  var Expected: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ExpectedAttributeMap] = js.undefined
+  var ExpressionAttributeNames: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ExpressionAttributeNameMap] = js.undefined
   var ExpressionAttributeValues: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var ReturnConsumedCapacity: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnConsumedCapacity] = js.undefined
-  var ReturnItemCollectionMetrics: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnItemCollectionMetrics] = js.undefined
-  var ReturnValues: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnValue] = js.undefined
+  var ReturnConsumedCapacity: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ReturnConsumedCapacity] = js.undefined
+  var ReturnItemCollectionMetrics: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ReturnItemCollectionMetrics] = js.undefined
+  var ReturnValues: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.ReturnValue] = js.undefined
 }
 
 object DestroyItemOptions {
   @scala.inline
   def apply(
-    ConditionExpression: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionExpression = null,
-    ConditionalOperator: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionalOperator = null,
-    Expected: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ExpectedAttributeMap = null,
-    ExpressionAttributeNames: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ExpressionAttributeNameMap = null,
+    ConditionExpression: awsDashSdkLib.clientsDynamodbMod.ConditionExpression = null,
+    ConditionalOperator: awsDashSdkLib.clientsDynamodbMod.ConditionalOperator = null,
+    Expected: awsDashSdkLib.clientsDynamodbMod.ExpectedAttributeMap = null,
+    ExpressionAttributeNames: awsDashSdkLib.clientsDynamodbMod.ExpressionAttributeNameMap = null,
     ExpressionAttributeValues: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    ReturnConsumedCapacity: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnConsumedCapacity = null,
-    ReturnItemCollectionMetrics: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnItemCollectionMetrics = null,
-    ReturnValues: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnValue = null
+    ReturnConsumedCapacity: awsDashSdkLib.clientsDynamodbMod.ReturnConsumedCapacity = null,
+    ReturnItemCollectionMetrics: awsDashSdkLib.clientsDynamodbMod.ReturnItemCollectionMetrics = null,
+    ReturnValues: awsDashSdkLib.clientsDynamodbMod.ReturnValue = null
   ): DestroyItemOptions = {
     val __obj = js.Dynamic.literal()
     if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)

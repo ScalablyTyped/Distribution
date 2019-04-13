@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MarketplaceEntitlementService ()
-  extends awsDashSdkLib.clientsMarketplaceentitlementserviceMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMarketplaceentitlementserviceMod.^ {
+  def this(options: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.ClientConfiguration) = this()
 }
 

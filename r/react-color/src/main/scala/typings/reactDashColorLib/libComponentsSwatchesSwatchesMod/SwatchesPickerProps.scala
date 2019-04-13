@@ -25,11 +25,11 @@ object SwatchesPickerProps {
     color: reactDashColorLib.reactDashColorMod.Color = null,
     colors: js.Array[js.Array[java.lang.String]] = null,
     height: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[SwatchesPicker] = null,
+    ref: reactLib.reactMod.LegacyRef[SwatchesPicker] = null,
     width: scala.Int | scala.Double = null
   ): SwatchesPickerProps = {
     val __obj = js.Dynamic.literal()

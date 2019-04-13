@@ -12,9 +12,12 @@ trait strings
 
 object strings {
   @scala.inline
-  def apply(ARIA_SELECTED: atMaterialTabLib.atMaterialTabLibStrings.`aria-selected`): strings = {
+  def apply(
+    ARIA_SELECTED: atMaterialTabLib.atMaterialTabLibStrings.`aria-selected`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): strings = {
     val __obj = js.Dynamic.literal(ARIA_SELECTED = ARIA_SELECTED)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

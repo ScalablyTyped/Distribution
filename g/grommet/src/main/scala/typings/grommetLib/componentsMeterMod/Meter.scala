@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Meter", "Meter")
 @js.native
 class Meter protected ()
-  extends reactLib.reactMod.ReactNs.Component[MeterProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[MeterProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: MeterProps) = this()
   def this(props: MeterProps, context: js.Any) = this()
 }

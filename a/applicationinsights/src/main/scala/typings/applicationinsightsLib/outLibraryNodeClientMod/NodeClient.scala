@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NodeClient
-  extends applicationinsightsLib.outLibraryTelemetryClientMod.namespaced {
+  extends applicationinsightsLib.outLibraryTelemetryClientMod.^ {
   /**
     * Log DependencyTelemetry from outgoing HTTP request. This method will instrument the outgoing request and append
     * the specified headers and will log the telemetry when outgoing request is complete

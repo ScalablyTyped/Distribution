@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Kafka ()
   extends awsDashSdkLib.clientsAllMod.Kafka {
-  def this(options: awsDashSdkLib.clientsKafkaMod.KafkaNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsKafkaMod.ClientConfiguration) = this()
 }
 

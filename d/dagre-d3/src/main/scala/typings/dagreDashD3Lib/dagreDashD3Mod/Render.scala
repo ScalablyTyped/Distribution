@@ -50,3 +50,8 @@ trait Render extends js.Object {
 @js.native
 class render () extends Render
 
+@JSImport("dagre-d3", "render")
+@js.native
+object render
+  extends org.scalablytyped.runtime.Instantiable0[Render]
+

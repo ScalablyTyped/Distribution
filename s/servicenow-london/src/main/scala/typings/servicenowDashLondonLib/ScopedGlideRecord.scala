@@ -23,7 +23,7 @@ org.scalablytyped.runtime.Instantiable1[/* tableName */ java.lang.String, Scoped
   val sys_mod_count: scala.Double with ScopedGlideElement = js.native
   val sys_updated_by: java.lang.String with ScopedGlideElement = js.native
   val sys_updated_on: GlideDateTime with ScopedGlideElement = js.native
-  var variables: /* import warning: ImportType.apply Failed type conversion: {[name: string] : any, [name: string] : any} */ js.Any = js.native
+  var variables: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
     * Moves to the next record in the GlideRecord. Provides the same functionality as next(), it is
     * intended to be used in cases where the GlideRecord has a column named next.

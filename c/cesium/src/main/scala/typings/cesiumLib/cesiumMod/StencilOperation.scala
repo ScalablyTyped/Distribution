@@ -5,18 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait StencilOperation extends js.Object
+
 @JSImport("cesium", "StencilOperation")
 @js.native
 object StencilOperation extends js.Object {
-  val DECREMENT: cesiumLib.cesiumMod.CesiumNs.StencilOperation.DECREMENT with java.lang.String = js.native
-  val DECREMENT_WRAP: cesiumLib.cesiumMod.CesiumNs.StencilOperation.DECREMENT_WRAP with java.lang.String = js.native
-  val INCREMENT: cesiumLib.cesiumMod.CesiumNs.StencilOperation.INCREMENT with java.lang.String = js.native
-  val INCREMENT_WRAP: cesiumLib.cesiumMod.CesiumNs.StencilOperation.INCREMENT_WRAP with java.lang.String = js.native
-  val INVERT: cesiumLib.cesiumMod.CesiumNs.StencilOperation.INVERT with java.lang.String = js.native
-  val KEEP: cesiumLib.cesiumMod.CesiumNs.StencilOperation.KEEP with java.lang.String = js.native
-  val REPLACE: cesiumLib.cesiumMod.CesiumNs.StencilOperation.REPLACE with java.lang.String = js.native
-  val ZERO: cesiumLib.cesiumMod.CesiumNs.StencilOperation.ZERO with java.lang.String = js.native
+  @js.native
+  sealed trait DECREMENT
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  @js.native
+  sealed trait DECREMENT_WRAP
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  @js.native
+  sealed trait INCREMENT
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  @js.native
+  sealed trait INCREMENT_WRAP
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  @js.native
+  sealed trait INVERT
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  @js.native
+  sealed trait KEEP
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  @js.native
+  sealed trait REPLACE
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  @js.native
+  sealed trait ZERO
+    extends cesiumLib.cesiumMod.StencilOperation
+  
+  val DECREMENT: DECREMENT with java.lang.String = js.native
+  val DECREMENT_WRAP: DECREMENT_WRAP with java.lang.String = js.native
+  val INCREMENT: INCREMENT with java.lang.String = js.native
+  val INCREMENT_WRAP: INCREMENT_WRAP with java.lang.String = js.native
+  val INVERT: INVERT with java.lang.String = js.native
+  val KEEP: KEEP with java.lang.String = js.native
+  val REPLACE: REPLACE with java.lang.String = js.native
+  val ZERO: ZERO with java.lang.String = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.CesiumNs.StencilOperation with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.StencilOperation with java.lang.String] = js.native
 }
 

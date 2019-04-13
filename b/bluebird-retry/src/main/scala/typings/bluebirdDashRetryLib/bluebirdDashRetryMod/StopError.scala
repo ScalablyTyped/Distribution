@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bluebird-retry", "StopError")
 @js.native
 class StopError ()
-  extends bluebirdDashRetryLib.bluebirdDashRetryMod.retryNs.StopError {
+  extends stdLib.Error {
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

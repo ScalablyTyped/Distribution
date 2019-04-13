@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "Data")
 @js.native
 class Data[TDomain] ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedDataMod.namespaced[TDomain]
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedDataMod.^[TDomain]
 

@@ -42,7 +42,7 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
     */
   var onClose: js.UndefOr[
     js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
+      /* event */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -87,7 +87,7 @@ object IOverlayableProps {
     canEscapeKeyClose: js.UndefOr[scala.Boolean] = js.undefined,
     enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClose: /* event */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
     onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,

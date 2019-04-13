@@ -59,9 +59,5 @@ object SubmoduleNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.submoduleMod.SubmoduleNs.UPDATE with scala.Double] = js.native
   }
   
-  type IGNORE = nodegitLib.submoduleMod.SubmoduleNs.IGNORE
-  type RECURSE = nodegitLib.submoduleMod.SubmoduleNs.RECURSE
-  type STATUS = nodegitLib.submoduleMod.SubmoduleNs.STATUS
-  type UPDATE = nodegitLib.submoduleMod.SubmoduleNs.UPDATE
 }
 

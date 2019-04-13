@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IKeepAliveProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
-  def http(value: angularLib.angularMod.angularNs.IRequestConfig): scala.Unit = js.native
+  extends angularLib.angularMod.IServiceProvider {
+  def http(value: angularLib.angularMod.IRequestConfig): scala.Unit = js.native
   /**
     * If configured, options will be used to issue a request using $http.
     * If the value is null, no HTTP request will be issued.

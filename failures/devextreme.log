@@ -2,79 +2,79 @@
 [debug] PhaseRunner.scala:82 Success [id => devextreme, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => devextreme, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/bundles/dx.all.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, bundles, dx.all))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/bundles/dx.all.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, bundles, dx.all))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, bundles, dx.all)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/events.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, events))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/events.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, events))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, events)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/localization.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, localization))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/localization.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, localization))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, localization)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, utils)) [id => devextreme, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:204 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
-[info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(trigger)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(trigger) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(triggerHandler)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(triggerHandler) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.loadMessages [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.formatMessage [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.formatNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.parseNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.formatDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.parseDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
-[warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof DevExpress.localization.locale [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileGetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileGetter) / TsTypeQuery())] 
-[info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileSetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileSetter) / TsTypeQuery())] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxAutocomplete))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxButton))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxButtonGroup))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxCalendar))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxCheckBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxColorBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxDeferRendering))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxFileUploader))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxLoadIndicator))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxLoadPanel))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxLookup))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMenu))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMultiView))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMultiViewItem))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxNavBar))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxNumberBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPanorama))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivot))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPopup))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxProgressBar))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxRecurrenceEditor))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxResizable))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxResponsiveBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSelectBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSlider))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSwitch))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTabs))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTabPanel))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTagBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTextArea))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTextBox))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxToast))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxToolbar))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTooltipOptions))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTooltip))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTrackBar))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxValidationGroupOptions))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxValidationSummary))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(HierarchicalCollectionWidget))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSliderBase))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxPieChart))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxPolarChart))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxCircularGauge))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxLinearGauge))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(pieChartSeriesObject))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(polarChartSeriesObject))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(polarPointObject))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseSparkline))] 
-[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxBullet))] 
+[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
+[info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(trigger)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(trigger) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(triggerHandler)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(triggerHandler) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof DevExpress.localization.loadMessages [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(loadMessages) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof DevExpress.localization.formatMessage [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatMessage) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof DevExpress.localization.formatNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatNumber) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof DevExpress.localization.parseNumber [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseNumber) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof DevExpress.localization.formatDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(formatDate) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof DevExpress.localization.parseDate [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(parseDate) / TsTypeQuery())] 
+[warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof DevExpress.localization.locale [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/localization) / TsExport() / TsExporteeTree() / TsDeclVar(locale) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileGetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileGetter) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(data), TsIdentSimple(utils), TsIdentSimple(compileSetter)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/utils) / TsExport() / TsExporteeTree() / TsDeclVar(compileSetter) / TsTypeQuery())] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxAutocomplete))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxButton))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxButtonGroup))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxCalendar))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxCheckBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxColorBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxDeferRendering))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxFileUploader))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxLoadIndicator))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxLoadPanel))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxLookup))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMenu))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMultiView))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMultiViewItem))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxNavBar))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxNumberBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPanorama))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivot))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPopup))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxProgressBar))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxRecurrenceEditor))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxResizable))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxResponsiveBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSelectBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSlider))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSwitch))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTabs))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTabPanel))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTagBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTextArea))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTextBox))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxToast))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxToolbar))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTooltipOptions))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTooltip))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxTrackBar))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxValidationGroupOptions))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxValidationSummary))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(HierarchicalCollectionWidget))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSliderBase))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxPieChart))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxPolarChart))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxCircularGauge))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxLinearGauge))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(pieChartSeriesObject))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(polarChartSeriesObject))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(polarPointObject))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(BaseSparkline))] 
+[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(viz) / TsDeclInterface(dxBullet))] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Window) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclClass(DevicesObject) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Device) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclClass(DOMComponent) / TsMemberFunction(defaultOptions) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Compile) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(default) / TsDeclClass(ui) / TsMemberFunction(setTemplateEngine) / TsFunSig() / TsFunParam() / TsTypeObject())] 
@@ -412,30 +412,30 @@
 	at com.olvind.tso.ts.DeriveNonConflictingName$.go$1(DeriveNonConflictingName.scala:57)
 	at com.olvind.tso.ts.DeriveNonConflictingName$.apply(DeriveNonConflictingName.scala:67)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$ConflictHandlingStore.addInterface(ExtractInterfaces.scala:23)
-	at com.olvind.tso.ts.transforms.ExtractInterfaces$LiftTypeObjects.leaveTsType(ExtractInterfaces.scala:73)
-	at com.olvind.tso.ts.transforms.ExtractInterfaces$LiftTypeObjects.leaveTsType(ExtractInterfaces.scala:42)
-	at com.olvind.tso.ts.TreeTransformation.visitTsType(TreeTransformation.scala:541)
-	at com.olvind.tso.ts.TreeTransformation.visitTsType$(TreeTransformation.scala:540)
+	at com.olvind.tso.ts.transforms.ExtractInterfaces$LiftTypeObjects.leaveTsType(ExtractInterfaces.scala:72)
+	at com.olvind.tso.ts.transforms.ExtractInterfaces$LiftTypeObjects.leaveTsType(ExtractInterfaces.scala:57)
+	at com.olvind.tso.ts.TreeTransformation.visitTsType(TreeTransformation.scala:536)
+	at com.olvind.tso.ts.TreeTransformation.visitTsType$(TreeTransformation.scala:535)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsType(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunParam$1(TreeTransformation.scala:235)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunParam$1(TreeTransformation.scala:230)
 	at scala.Option.map(Option.scala:163)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam(TreeTransformation.scala:235)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam$(TreeTransformation.scala:230)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam(TreeTransformation.scala:230)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunParam$(TreeTransformation.scala:225)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsFunParam(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunSig$2(TreeTransformation.scala:243)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsFunSig$2(TreeTransformation.scala:238)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.immutable.List.foreach(List.scala:392)
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig(TreeTransformation.scala:243)
-	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig$(TreeTransformation.scala:238)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig(TreeTransformation.scala:238)
+	at com.olvind.tso.ts.TreeTransformation.visitTsFunSig$(TreeTransformation.scala:233)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsFunSig(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction(TreeTransformation.scala:298)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction$(TreeTransformation.scala:293)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction(TreeTransformation.scala:293)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMemberFunction$(TreeTransformation.scala:288)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsMemberFunction(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMember(TreeTransformation.scala:565)
-	at com.olvind.tso.ts.TreeTransformation.visitTsMember$(TreeTransformation.scala:561)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMember(TreeTransformation.scala:560)
+	at com.olvind.tso.ts.TreeTransformation.visitTsMember$(TreeTransformation.scala:556)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsMember(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclInterface$3(TreeTransformation.scala:138)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
@@ -451,14 +451,14 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclInterface(TreeTransformation.scala:138)
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclInterface$(TreeTransformation.scala:128)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclInterface(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl(TreeTransformation.scala:502)
-	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl$(TreeTransformation.scala:492)
+	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl(TreeTransformation.scala:497)
+	at com.olvind.tso.ts.TreeTransformation.visitTsNamedDecl$(TreeTransformation.scala:487)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsNamedDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDecl(TreeTransformation.scala:486)
-	at com.olvind.tso.ts.TreeTransformation.visitTsDecl$(TreeTransformation.scala:484)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDecl(TreeTransformation.scala:481)
+	at com.olvind.tso.ts.TreeTransformation.visitTsDecl$(TreeTransformation.scala:479)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:517)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:514)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:512)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:509)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclNamespace$1(TreeTransformation.scala:168)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
@@ -474,11 +474,11 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace(TreeTransformation.scala:168)
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace$(TreeTransformation.scala:163)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclNamespace(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:511)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:505)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:506)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:500)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainer(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:516)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:514)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:511)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:509)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclNamespace$1(TreeTransformation.scala:168)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
@@ -494,11 +494,11 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace(TreeTransformation.scala:168)
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclNamespace$(TreeTransformation.scala:163)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclNamespace(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:511)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:505)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:506)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:500)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainer(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:516)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:514)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:511)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:509)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsDeclModule$1(TreeTransformation.scala:148)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
@@ -514,13 +514,13 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclModule(TreeTransformation.scala:148)
 	at com.olvind.tso.ts.TreeTransformation.visitTsDeclModule$(TreeTransformation.scala:143)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsDeclModule(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:510)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:505)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer(TreeTransformation.scala:505)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainer$(TreeTransformation.scala:500)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainer(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:516)
-	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:514)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl(TreeTransformation.scala:511)
+	at com.olvind.tso.ts.TreeTransformation.visitTsContainerOrDecl$(TreeTransformation.scala:509)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsContainerOrDecl(TreeTransformations.scala:4)
-	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsParsedFile$1(TreeTransformation.scala:333)
+	at com.olvind.tso.ts.TreeTransformation.$anonfun$visitTsParsedFile$1(TreeTransformation.scala:328)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -531,21 +531,21 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile(TreeTransformation.scala:333)
-	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:329)
+	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile(TreeTransformation.scala:328)
+	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:324)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$.apply(ExtractInterfaces.scala:11)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$46(Phase1ReadTypescript.scala:192)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$52(Phase1ReadTypescript.scala:205)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$47(Phase1ReadTypescript.scala:197)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$53(Phase1ReadTypescript.scala:210)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$30(Phase1ReadTypescript.scala:205)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$30(Phase1ReadTypescript.scala:210)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
-	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:150)
-	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:17)
+	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:153)
+	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:16)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:76)
 	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:76)
@@ -580,7 +580,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:208)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:211)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:116)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:113)
 	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:66)

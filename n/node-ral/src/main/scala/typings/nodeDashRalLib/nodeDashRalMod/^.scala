@@ -11,15 +11,15 @@ object ^ extends js.Object {
   val Config: nodeDashRalLib.nodeDashRalMod.Config = js.native
   val Logger: LoggerFactory = js.native
   def Middleware(): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* resp */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* resp */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ] = js.native
   def Middleware(options: Service): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* resp */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* resp */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ] = js.native
   def RAL(serviceName: java.lang.String): nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner = js.native

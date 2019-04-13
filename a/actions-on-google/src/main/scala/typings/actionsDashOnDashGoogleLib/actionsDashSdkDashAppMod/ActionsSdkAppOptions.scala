@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait ActionsSdkAppOptions extends js.Object {
   /** Express HTTP request object. */
-  var request: expressLib.expressMod.eNs.Request
+  var request: expressLib.expressMod.Request
   /** Express HTTP response object. */
-  var response: expressLib.expressMod.eNs.Response
+  var response: expressLib.expressMod.Response
   /** Function callback when session starts. */
   var sessionStarted: js.UndefOr[js.Function0[_]] = js.undefined
 }
@@ -17,8 +17,8 @@ trait ActionsSdkAppOptions extends js.Object {
 object ActionsSdkAppOptions {
   @scala.inline
   def apply(
-    request: expressLib.expressMod.eNs.Request,
-    response: expressLib.expressMod.eNs.Response,
+    request: expressLib.expressMod.Request,
+    response: expressLib.expressMod.Response,
     sessionStarted: () => _ = null
   ): ActionsSdkAppOptions = {
     val __obj = js.Dynamic.literal(request = request, response = response)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IExtensionScope
-  extends angularLib.angularMod.angularNs.IRootScopeService {
+  extends angularLib.angularMod.IRootScopeService {
   var component: IExtensionComponent = js.native
 }
 

@@ -16,7 +16,7 @@ object ^ extends js.Object {
     /** An array of arrays containing strings, numbers, or other printable values. */
   rows: js.Array[js.Array[js.Object]],
     /** A configuration object to customize table output. */
-  options: textDashTableLib.textDashTableMod.tableNs.Options
+  options: Options
   ): java.lang.String = js.native
 }
 

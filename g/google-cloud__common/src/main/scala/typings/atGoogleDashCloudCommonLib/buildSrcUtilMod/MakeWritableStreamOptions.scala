@@ -18,9 +18,9 @@ trait MakeWritableStreamOptions extends js.Object {
   /**
     * Request object, in the format of a standard Node.js http.request() object.
     */
-  var request: js.UndefOr[requestLib.requestMod.requestNs.Options] = js.undefined
+  var request: js.UndefOr[requestLib.requestMod.Options] = js.undefined
   def makeAuthenticatedRequest(
-    reqOpts: requestLib.requestMod.requestNs.OptionsWithUri,
+    reqOpts: requestLib.requestMod.OptionsWithUri,
     fnobj: atGoogleDashCloudCommonLib.Anon_AuthenticatedReqOpts
   ): scala.Unit
 }
@@ -28,10 +28,10 @@ trait MakeWritableStreamOptions extends js.Object {
 object MakeWritableStreamOptions {
   @scala.inline
   def apply(
-    makeAuthenticatedRequest: (requestLib.requestMod.requestNs.OptionsWithUri, atGoogleDashCloudCommonLib.Anon_AuthenticatedReqOpts) => scala.Unit,
+    makeAuthenticatedRequest: (requestLib.requestMod.OptionsWithUri, atGoogleDashCloudCommonLib.Anon_AuthenticatedReqOpts) => scala.Unit,
     connection: js.Object = null,
     metadata: atGoogleDashCloudCommonLib.Anon_ContentType = null,
-    request: requestLib.requestMod.requestNs.Options = null
+    request: requestLib.requestMod.Options = null
   ): MakeWritableStreamOptions = {
     val __obj = js.Dynamic.literal(makeAuthenticatedRequest = js.Any.fromFunction2(makeAuthenticatedRequest))
     if (connection != null) __obj.updateDynamic("connection")(connection)

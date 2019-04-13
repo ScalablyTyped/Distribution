@@ -23,7 +23,7 @@ class ObservableSet[T] ()
     js.Array[mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[ISetWillChange[js.Any]]]
   ] = js.native
   var name: java.lang.String = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   var toStringTag_ObservableSet: mobxLib.mobxLibStrings.Set = js.native
   def delete(value: js.Any): scala.Boolean = js.native
   def enhancer(newV: js.Any): js.Any = js.native

@@ -85,12 +85,13 @@ object AudioNs extends js.Object {
     var ios: expoLib.Anon_AudioQuality
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - expoLib.Anon_CanRecord
-    - expoLib.Anon_CanRecordDurationMillis
-    - expoLib.Anon_CanRecordDurationMillisFalse
-  */
-  trait RecordingStatus extends js.Object
+  @js.native
+  trait RecordingStatus extends js.Object {
+    var canRecord: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.native
+    var durationMillis: js.UndefOr[scala.Double] = js.native
+    var isDoneRecording: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.native
+    var isRecording: js.UndefOr[scala.Boolean] = js.native
+  }
   
   /** This class represents a sound corresponding to an Asset or URL. */
   @js.native

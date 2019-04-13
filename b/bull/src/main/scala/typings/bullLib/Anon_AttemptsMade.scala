@@ -11,9 +11,9 @@ trait Anon_AttemptsMade[T] extends js.Object {
   var delay: scala.Double
   var failedReason: js.Any
   var finishedOn: scala.Double | scala.Null
-  var id: bullLib.bullMod.BullNs.JobId
+  var id: bullLib.bullMod.JobId
   var name: java.lang.String
-  var opts: bullLib.bullMod.BullNs.JobOptions
+  var opts: bullLib.bullMod.JobOptions
   var processedOn: scala.Double | scala.Null
   var progress: scala.Double
   var returnvalue: js.Any
@@ -28,9 +28,9 @@ object Anon_AttemptsMade {
     data: T,
     delay: scala.Double,
     failedReason: js.Any,
-    id: bullLib.bullMod.BullNs.JobId,
+    id: bullLib.bullMod.JobId,
     name: java.lang.String,
-    opts: bullLib.bullMod.BullNs.JobOptions,
+    opts: bullLib.bullMod.JobOptions,
     progress: scala.Double,
     returnvalue: js.Any,
     timestamp: scala.Double,

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object inquirerDashNpmDashNameMod extends js.Object {
   def apply(
-    name: java.lang.String | inquirerLib.inquirerMod.inquirerNs.Question[inquirerLib.inquirerMod.inquirerNs.Answers],
-    inquirer: inquirerLib.inquirerMod.inquirerNs.Inquirer
+    name: java.lang.String | inquirerLib.inquirerMod.Question[inquirerLib.inquirerMod.Answers],
+    inquirer: inquirerLib.inquirerMod.Inquirer
   ): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
 }
 

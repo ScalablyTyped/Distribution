@@ -217,3 +217,12 @@ class SelectionCls protected () extends Selection {
   def this(session: IEditSession) = this()
 }
 
+@JSGlobal("AceAjax.Selection")
+@js.native
+object Selection
+  extends /**
+  * Creates a new `Selection` object.
+  * @param session The session to use
+  **/
+org.scalablytyped.runtime.Instantiable1[/* session */ IEditSession, Selection]
+

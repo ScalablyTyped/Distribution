@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemType extends js.Object {
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
-  var elemBefore: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var elemBefore: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var filterValues: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var isDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
@@ -23,9 +23,9 @@ trait ItemType extends js.Object {
 object ItemType {
   @scala.inline
   def apply(
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
     description: java.lang.String = null,
-    elemBefore: reactLib.reactMod.ReactNs.ReactNode = null,
+    elemBefore: reactLib.reactMod.ReactNode = null,
     filterValues: js.Array[java.lang.String] = null,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isSelected: js.UndefOr[scala.Boolean] = js.undefined,

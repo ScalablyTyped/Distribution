@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto", "PKey")
 @js.native
 class PKey ()
-  extends fibjsLib.cryptoMod.cryptoNs.PKey
+  extends fibjsLib.Class_PKey
 

@@ -29,3 +29,8 @@ class LicenseStatus ()
   override def ClearLicenseCode(): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.LicenseStatus")
+@js.native
+object LicenseStatus
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ILicenseStatus]
+

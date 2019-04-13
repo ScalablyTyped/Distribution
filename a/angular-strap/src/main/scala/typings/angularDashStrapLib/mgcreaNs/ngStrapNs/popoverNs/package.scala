@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object popoverNs {
   type IPopoverService = js.Function2[
-    /* element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+    /* element */ angularLib.angularMod.IAugmentedJQuery, 
     /* config */ js.UndefOr[IPopoverOptions], 
     IPopover
   ]

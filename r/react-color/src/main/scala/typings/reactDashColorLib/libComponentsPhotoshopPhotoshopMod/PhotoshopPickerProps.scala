@@ -17,12 +17,12 @@ object PhotoshopPickerProps {
   def apply(
     color: reactDashColorLib.reactDashColorMod.Color = null,
     header: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onAccept: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onCancel: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[PhotoshopPicker] = null
+    ref: reactLib.reactMod.LegacyRef[PhotoshopPicker] = null
   ): PhotoshopPickerProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

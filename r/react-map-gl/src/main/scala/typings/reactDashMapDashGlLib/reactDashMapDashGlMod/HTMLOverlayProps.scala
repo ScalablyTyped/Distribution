@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HTMLOverlayProps extends BaseControlProps {
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   def redraw(opts: HTMLRedrawOptions): scala.Unit
 }
 
@@ -18,7 +18,7 @@ object HTMLOverlayProps {
     captureDoubleClick: js.UndefOr[scala.Boolean] = js.undefined,
     captureDrag: js.UndefOr[scala.Boolean] = js.undefined,
     captureScroll: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): HTMLOverlayProps = {
     val __obj = js.Dynamic.literal(redraw = js.Any.fromFunction1(redraw))
     if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick)

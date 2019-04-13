@@ -12,8 +12,8 @@ trait MetaData extends js.Object {
   var _model: Model
   var _start: js.UndefOr[js.Any] = js.undefined
   var _view: Model
-  var _xScale: chartDotJsLib.chartDotJsMod.ChartNs.ChartScales
-  var _yScale: chartDotJsLib.chartDotJsMod.ChartNs.ChartScales
+  var _xScale: ChartScales
+  var _yScale: ChartScales
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -25,8 +25,8 @@ object MetaData {
     _index: scala.Double,
     _model: Model,
     _view: Model,
-    _xScale: chartDotJsLib.chartDotJsMod.ChartNs.ChartScales,
-    _yScale: chartDotJsLib.chartDotJsMod.ChartNs.ChartScales,
+    _xScale: ChartScales,
+    _yScale: ChartScales,
     _start: js.Any = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined
   ): MetaData = {

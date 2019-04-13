@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Query")
 @js.native
-class Query ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Query
+class Query () extends js.Object
 
 /* static members */
 @JSImport("matter-js", "Query")
@@ -22,9 +21,9 @@ object Query extends js.Object {
     * @return {body[]} The bodies matching the query
     */
   def point(
-    bodies: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body],
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
-  ): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body] = js.native
+    bodies: js.Array[matterDashJsLib.matterDashJsMod.Body],
+    point: matterDashJsLib.matterDashJsMod.Vector
+  ): js.Array[matterDashJsLib.matterDashJsMod.Body] = js.native
   /**
     * Casts a ray segment against a set of bodies and returns all collisions, ray width is optional. Intersection points are not provided.
     * @method ray
@@ -35,14 +34,14 @@ object Query extends js.Object {
     * @return {object[]} Collisions
     */
   def ray(
-    bodies: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body],
-    startPoint: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
-    endPoint: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    bodies: js.Array[matterDashJsLib.matterDashJsMod.Body],
+    startPoint: matterDashJsLib.matterDashJsMod.Vector,
+    endPoint: matterDashJsLib.matterDashJsMod.Vector
   ): js.Array[_] = js.native
   def ray(
-    bodies: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body],
-    startPoint: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
-    endPoint: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
+    bodies: js.Array[matterDashJsLib.matterDashJsMod.Body],
+    startPoint: matterDashJsLib.matterDashJsMod.Vector,
+    endPoint: matterDashJsLib.matterDashJsMod.Vector,
     rayWidth: scala.Double
   ): js.Array[_] = js.native
   /**
@@ -54,13 +53,13 @@ object Query extends js.Object {
     * @return {body[]} The bodies matching the query
     */
   def region(
-    bodies: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body],
-    bounds: matterDashJsLib.matterDashJsMod.MatterNs.Bounds
-  ): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body] = js.native
+    bodies: js.Array[matterDashJsLib.matterDashJsMod.Body],
+    bounds: matterDashJsLib.matterDashJsMod.Bounds
+  ): js.Array[matterDashJsLib.matterDashJsMod.Body] = js.native
   def region(
-    bodies: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body],
-    bounds: matterDashJsLib.matterDashJsMod.MatterNs.Bounds,
+    bodies: js.Array[matterDashJsLib.matterDashJsMod.Body],
+    bounds: matterDashJsLib.matterDashJsMod.Bounds,
     outside: scala.Boolean
-  ): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body] = js.native
+  ): js.Array[matterDashJsLib.matterDashJsMod.Body] = js.native
 }
 

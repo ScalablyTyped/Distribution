@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AddonStore () extends js.Object {
   def addPanel(name: js.Any, panel: js.Any): scala.Unit = js.native
-  def getChannel(): atStorybookChannelsLib.atStorybookChannelsMod.namespaced = js.native
+  def getChannel(): atStorybookChannelsLib.atStorybookChannelsMod.^ = js.native
   def getDatabase(): js.Any = js.native
   def getPanels(): js.Any = js.native
   def getPreview(): js.Any = js.native

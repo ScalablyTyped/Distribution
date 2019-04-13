@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Context extends js.Object {
-  var session: koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaSessionNs.Session | scala.Null
+  var session: koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.Session | scala.Null
   var sessionSave: scala.Boolean | scala.Null
   def regenerateSession(): stdLib.Generator
 }
@@ -15,7 +15,7 @@ object Context {
   @scala.inline
   def apply(
     regenerateSession: () => stdLib.Generator,
-    session: koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaSessionNs.Session = null,
+    session: koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.Session = null,
     sessionSave: js.UndefOr[scala.Boolean] = js.undefined
   ): Context = {
     val __obj = js.Dynamic.literal(regenerateSession = js.Any.fromFunction0(regenerateSession))

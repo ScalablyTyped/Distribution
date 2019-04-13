@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TupleConverter ()
   extends typedocLib.distLibConverterComponentsMod.TypeConverter[
-      typescriptLib.typescriptMod.tsNs.TypeReference, 
-      typescriptLib.typescriptMod.tsNs.TupleTypeNode
+      typescriptLib.typescriptMod.TypeReference, 
+      typescriptLib.typescriptMod.TupleTypeNode
     ]
 

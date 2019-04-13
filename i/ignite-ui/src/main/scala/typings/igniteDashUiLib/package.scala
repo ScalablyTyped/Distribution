@@ -255,16 +255,64 @@ package object igniteDashUiLib {
   type HideEvent = js.Function2[/* event */ stdLib.Event, /* ui */ HideEventUIParam, scala.Unit]
   type HideTooltipEvent = js.Function2[/* event */ stdLib.Event, /* ui */ HideTooltipEventUIParam, scala.Unit]
   type HidingEvent = js.Function2[/* event */ stdLib.Event, /* ui */ HidingEventUIParam, scala.Unit]
+  type HierarchicalDataSourceSettingsFiltering = /**
+  	 * Option for HierarchicalDataSourceSettingsFiltering
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type HierarchicalDataSourceSettingsPaging = /**
+  	 * Option for HierarchicalDataSourceSettingsPaging
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type HierarchicalDataSourceSettingsSchema = /**
+  	 * Option for HierarchicalDataSourceSettingsSchema
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type HierarchicalDataSourceSettingsSorting = /**
+  	 * Option for HierarchicalDataSourceSettingsSorting
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
   type HoleDimensionsChangedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ HoleDimensionsChangedEventUIParam, scala.Unit]
   type HoverChangeEvent = js.Function2[/* event */ stdLib.Event, /* ui */ HoverChangeEventUIParam, scala.Unit]
   type HyperlinkExecutingEvent = js.Function2[/* event */ stdLib.Event, /* ui */ HyperlinkExecutingEventUIParam, scala.Unit]
   type IgComboSelectionChangedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ IgComboSelectionChangedEventUIParam, scala.Unit]
+  type IgEditorFilter = /**
+  	 * Option for igEditorFilter
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
   type IgFocusEvent = js.Function2[/* event */ stdLib.Event, /* ui */ IgFocusEventUIParam, scala.Unit]
+  type IgGridFilteringColumnSettingDefaultExpressions = /**
+  	 * Option for IgGridFilteringColumnSettingDefaultExpressions
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type IgPivotGridGridOptionsFeatures = /**
+  	 * Option for IgPivotGridGridOptionsFeatures
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type IgPivotViewPivotGridOptionsGridOptionsFeatures = /**
+  	 * Option for IgPivotViewPivotGridOptionsGridOptionsFeatures
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type IgSpreadsheetBrushes = /**
+  	 * Option for IgSpreadsheetBrushes
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
   type IgSpreadsheetSelectionChangedEvent = js.Function2[
     /* event */ stdLib.Event, 
     /* ui */ IgSpreadsheetSelectionChangedEventUIParam, 
     scala.Unit
   ]
+  type IgTemplatingRegExp = /**
+  	 * Option for IgTemplatingRegExp
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type IgTreeBindingsBindings = /**
+  	 * Option for IgTreeBindingsBindings
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
+  type IgTreeGridRestSettings = /**
+  	 * Option for IgTreeGridRestSettings
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
   type IgTreeSelectionChangedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ IgTreeSelectionChangedEventUIParam, scala.Unit]
   type InternalResizedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ InternalResizedEventUIParam, scala.Unit]
   type InternalResizingEvent = js.Function2[/* event */ stdLib.Event, /* ui */ InternalResizingEventUIParam, scala.Unit]
@@ -471,6 +519,10 @@ package object igniteDashUiLib {
   type SelectedItemsChangedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ SelectedItemsChangedEventUIParam, scala.Unit]
   type SelectedItemsChangingEvent = js.Function2[/* event */ stdLib.Event, /* ui */ SelectedItemsChangingEventUIParam, scala.Unit]
   type SelectionChangingEvent = js.Function2[/* event */ stdLib.Event, /* ui */ SelectionChangingEventUIParam, scala.Unit]
+  type SelectionCollectionSettingsSubscribers = /**
+  	 * Option for SelectionCollectionSettingsSubscribers
+  	 */
+  org.scalablytyped.runtime.StringDictionary[js.Any]
   type SeriesAddedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ SeriesAddedEventUIParam, scala.Unit]
   type SeriesCursorMouseMoveEvent = js.Function2[/* event */ stdLib.Event, /* ui */ SeriesCursorMouseMoveEventUIParam, scala.Unit]
   type SeriesMouseEnterEvent = js.Function2[/* event */ stdLib.Event, /* ui */ SeriesMouseEnterEventUIParam, scala.Unit]

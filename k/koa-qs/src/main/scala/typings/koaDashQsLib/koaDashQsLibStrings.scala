@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object koaDashQsLibStrings {
   @js.native
   sealed trait extended
-    extends koaDashQsLib.koaDashQsMod.koaQsNs.ParseMode
+    extends koaDashQsLib.koaDashQsMod.ParseMode
   
   @js.native
   sealed trait first
-    extends koaDashQsLib.koaDashQsMod.koaQsNs.ParseMode
+    extends koaDashQsLib.koaDashQsMod.ParseMode
   
   @js.native
   sealed trait strict
-    extends koaDashQsLib.koaDashQsMod.koaQsNs.ParseMode
+    extends koaDashQsLib.koaDashQsMod.ParseMode
   
   @scala.inline
   def extended: extended = "extended".asInstanceOf[extended]

@@ -18,13 +18,13 @@ object ^ extends js.Object {
     /* callback */ js.Function1[/* err */ js.Any, scala.Unit], 
     _
   ] = js.native
-  def apply(fn: responseDashTimeLib.responseDashTimeMod.responseTimeNs.ResponseTimeFunction): js.Function3[
+  def apply(fn: ResponseTimeFunction): js.Function3[
     /* request */ nodeLib.httpMod.IncomingMessage, 
     /* response */ nodeLib.httpMod.ServerResponse, 
     /* callback */ js.Function1[/* err */ js.Any, scala.Unit], 
     _
   ] = js.native
-  def apply(options: responseDashTimeLib.responseDashTimeMod.responseTimeNs.ResponseTimeOptions): js.Function3[
+  def apply(options: ResponseTimeOptions): js.Function3[
     /* request */ nodeLib.httpMod.IncomingMessage, 
     /* response */ nodeLib.httpMod.ServerResponse, 
     /* callback */ js.Function1[/* err */ js.Any, scala.Unit], 

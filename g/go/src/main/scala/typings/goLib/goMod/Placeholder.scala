@@ -16,6 +16,8 @@ import scala.scalajs.js.annotation._
 /**
   * The only common initialize of a Placeholder is to set its .padding.
   */
-class Placeholder ()
-  extends goLib.goMod.goNs.Placeholder
+class Placeholder () extends GraphObject {
+  /**Gets or sets the padding as a Margin (or number for a uniform Margin) around the members of the Group or around the Adornment.adornedObject GraphObject.*/
+  var padding: MarginLike = js.native
+}
 

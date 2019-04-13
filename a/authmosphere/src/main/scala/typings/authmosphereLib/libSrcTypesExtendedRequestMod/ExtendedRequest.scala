@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ExtendedRequest
-  extends expressLib.expressMod.eNs.Request {
+  extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request {
   @JSName("$$tokeninfo")
   var $$tokeninfo: js.UndefOr[authmosphereLib.Anon_Scope] = js.native
 }

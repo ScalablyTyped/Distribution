@@ -16,6 +16,7 @@ package object slateMod {
   type Node = _Node | Document[org.scalablytyped.runtime.StringDictionary[js.Any]]
   type Path = immutableLib.immutableMod.List[scala.Double] | java.lang.String | scala.Double
   type QueryFunc = js.Function2[/* editor */ Editor, /* repeated */ js.Any, js.Any]
+  type RulesByNodeType = org.scalablytyped.runtime.StringDictionary[Rules]
   type resetMemoization = js.Function0[scala.Unit]
   type useMemoization = js.Function0[scala.Unit]
 }

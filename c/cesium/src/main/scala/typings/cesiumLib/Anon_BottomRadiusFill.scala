@@ -6,33 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BottomRadiusFill extends js.Object {
-  var bottomRadius: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var fill: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var length: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MaterialProperty] = js.undefined
-  var numberOfVerticalLines: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outline: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outlineWidth: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var show: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var slices: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var topRadius: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var bottomRadius: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var fill: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var length: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.MaterialProperty] = js.undefined
+  var numberOfVerticalLines: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outline: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outlineWidth: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var show: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var slices: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var topRadius: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
 }
 
 object Anon_BottomRadiusFill {
   @scala.inline
   def apply(
-    bottomRadius: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    fill: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    length: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    material: cesiumLib.cesiumMod.CesiumNs.MaterialProperty = null,
-    numberOfVerticalLines: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outline: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outlineColor: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outlineWidth: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    show: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    slices: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    topRadius: cesiumLib.cesiumMod.CesiumNs.Property = null
+    bottomRadius: cesiumLib.cesiumMod.Property = null,
+    fill: cesiumLib.cesiumMod.Property = null,
+    length: cesiumLib.cesiumMod.Property = null,
+    material: cesiumLib.cesiumMod.MaterialProperty = null,
+    numberOfVerticalLines: cesiumLib.cesiumMod.Property = null,
+    outline: cesiumLib.cesiumMod.Property = null,
+    outlineColor: cesiumLib.cesiumMod.Property = null,
+    outlineWidth: cesiumLib.cesiumMod.Property = null,
+    show: cesiumLib.cesiumMod.Property = null,
+    slices: cesiumLib.cesiumMod.Property = null,
+    topRadius: cesiumLib.cesiumMod.Property = null
   ): Anon_BottomRadiusFill = {
     val __obj = js.Dynamic.literal()
     if (bottomRadius != null) __obj.updateDynamic("bottomRadius")(bottomRadius)

@@ -10,14 +10,14 @@ trait TabsContainerProps
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var activeTabIndex: js.UndefOr[scala.Double] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[reactDashMdLib.libTabsTabsMod.TabsProps]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactElement[reactDashMdLib.libTabsTabsMod.TabsProps]] = js.undefined
   var colored: js.UndefOr[scala.Boolean] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var defaultTabIndex: js.UndefOr[scala.Double] = js.undefined
   var fixed: js.UndefOr[scala.Boolean] = js.undefined
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var headerComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
-  var headerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var headerComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var headerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var headerZDepth: js.UndefOr[scala.Double] = js.undefined
   var labelAndIcon: js.UndefOr[scala.Boolean] = js.undefined
   var onTabChange: js.UndefOr[
@@ -25,20 +25,20 @@ trait TabsContainerProps
       /* activeTabIndex */ scala.Double, 
       /* tabId */ reactDashMdLib.libMod.IdPropType, 
       /* tabControlsId */ scala.Double | java.lang.String, 
-      /* tabChildren */ reactLib.reactMod.ReactNs.ReactNode, 
+      /* tabChildren */ reactLib.reactMod.ReactNode, 
       /* event */ stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined
   var panelClassName: js.UndefOr[java.lang.String] = js.undefined
-  var panelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
-  var panelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var panelComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var panelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var slideClassName: js.UndefOr[java.lang.String] = js.undefined
-  var slideStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var slideStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var swipeableViewsClassName: js.UndefOr[java.lang.String] = js.undefined
   var swipeableViewsProps: js.UndefOr[js.Object] = js.undefined
-  var swipeableViewsStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var toolbar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var swipeableViewsStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var toolbar: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
 }
 
 object TabsContainerProps {
@@ -47,52 +47,52 @@ object TabsContainerProps {
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     activeTabIndex: scala.Int | scala.Double = null,
-    children: reactLib.reactMod.ReactNs.ReactElement[reactDashMdLib.libTabsTabsMod.TabsProps] = null,
+    children: reactLib.reactMod.ReactElement[reactDashMdLib.libTabsTabsMod.TabsProps] = null,
     className: java.lang.String = null,
     colored: js.UndefOr[scala.Boolean] = js.undefined,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    component: reactLib.reactMod.ReactType[_] = null,
     defaultTabIndex: scala.Int | scala.Double = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     headerClassName: java.lang.String = null,
-    headerComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    headerComponent: reactLib.reactMod.ReactType[_] = null,
+    headerStyle: reactLib.reactMod.CSSProperties = null,
     headerZDepth: scala.Int | scala.Double = null,
     labelAndIcon: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTabChange: (/* activeTabIndex */ scala.Double, /* tabId */ reactDashMdLib.libMod.IdPropType, /* tabControlsId */ scala.Double | java.lang.String, /* tabChildren */ reactLib.reactMod.ReactNs.ReactNode, /* event */ stdLib.Event) => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTabChange: (/* activeTabIndex */ scala.Double, /* tabId */ reactDashMdLib.libMod.IdPropType, /* tabControlsId */ scala.Double | java.lang.String, /* tabChildren */ reactLib.reactMod.ReactNode, /* event */ stdLib.Event) => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     panelClassName: java.lang.String = null,
-    panelComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    panelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    panelComponent: reactLib.reactMod.ReactType[_] = null,
+    panelStyle: reactLib.reactMod.CSSProperties = null,
     slideClassName: java.lang.String = null,
-    slideStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    slideStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     swipeableViewsClassName: java.lang.String = null,
     swipeableViewsProps: js.Object = null,
-    swipeableViewsStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    toolbar: reactLib.reactMod.ReactNs.ReactElement[_] = null
+    swipeableViewsStyle: reactLib.reactMod.CSSProperties = null,
+    toolbar: reactLib.reactMod.ReactElement[_] = null
   ): TabsContainerProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

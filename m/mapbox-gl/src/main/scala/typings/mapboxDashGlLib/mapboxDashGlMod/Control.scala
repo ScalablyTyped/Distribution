@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mapbox-gl", "Control")
 @js.native
-class Control ()
-  extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Control
+class Control () extends Evented
 

@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor/defaultRequest", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[
-      restLib.restMod.restNs.Interceptor[restLib.interceptorDefaultRequestMod.defaultRequestNs.Config]
-    ]
+  extends org.scalablytyped.runtime.TopLevel[restLib.restMod.Interceptor[Config]]
 

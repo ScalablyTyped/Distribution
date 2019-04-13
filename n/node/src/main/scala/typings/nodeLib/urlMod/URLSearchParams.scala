@@ -14,7 +14,7 @@ class URLSearchParams ()
   def this(init: nodeLib.Iterable[js.Tuple2[java.lang.String, java.lang.String]]) = this()
   def this(init: URLSearchParams) = this()
   def this(init: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]]) = this()
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[nodeLib.IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def delete(name: java.lang.String): scala.Unit = js.native

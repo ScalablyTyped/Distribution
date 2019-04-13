@@ -10,46 +10,38 @@ trait Props extends js.Object {
   var dateInputPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var dateRender: js.UndefOr[
     js.Function2[
-      /* current */ momentLib.momentMod.momentNs.Moment, 
-      /* value */ momentLib.momentMod.momentNs.Moment, 
-      reactLib.reactMod.ReactNs.ReactNode
+      /* current */ momentLib.momentMod.Moment, 
+      /* value */ momentLib.momentMod.Moment, 
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
-  var defaultValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var defaultValue: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
   var disabledDate: js.UndefOr[
-    js.Function1[/* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], scala.Boolean]
+    js.Function1[/* current */ js.UndefOr[momentLib.momentMod.Moment], scala.Boolean]
   ] = js.undefined
-  var disabledTime: js.UndefOr[
-    js.Function1[/* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment], js.Object]
-  ] = js.undefined
+  var disabledTime: js.UndefOr[js.Function1[/* current */ js.UndefOr[momentLib.momentMod.Moment], js.Object]] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
   var mode: js.UndefOr[Mode] = js.undefined
-  var onChange: js.UndefOr[
-    js.Function1[/* date */ momentLib.momentMod.momentNs.Moment | scala.Null, scala.Unit]
-  ] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.Moment | scala.Null, scala.Unit]] = js.undefined
   var onClear: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOk: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPanelChange: js.UndefOr[
-    js.Function2[
-      /* date */ momentLib.momentMod.momentNs.Moment | scala.Null, 
-      /* mode */ Mode, 
-      scala.Unit
-    ]
+    js.Function2[/* date */ momentLib.momentMod.Moment | scala.Null, /* mode */ Mode, scala.Unit]
   ] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.Moment, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var renderFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var renderSidebar: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var selectedValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var renderFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
+  var renderSidebar: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
+  var selectedValue: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
   var showDateInput: js.UndefOr[scala.Boolean] = js.undefined
   var showOk: js.UndefOr[scala.Boolean] = js.undefined
   var showToday: js.UndefOr[scala.Boolean] = js.undefined
   var showWeekNumber: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var timePicker: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var value: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var timePicker: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var value: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
 }
 
 object Props {
@@ -57,30 +49,30 @@ object Props {
   def apply(
     className: java.lang.String = null,
     dateInputPlaceholder: java.lang.String = null,
-    dateRender: (/* current */ momentLib.momentMod.momentNs.Moment, /* value */ momentLib.momentMod.momentNs.Moment) => reactLib.reactMod.ReactNs.ReactNode = null,
-    defaultValue: momentLib.momentMod.momentNs.Moment = null,
-    disabledDate: /* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment] => scala.Boolean = null,
-    disabledTime: /* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment] => js.Object = null,
+    dateRender: (/* current */ momentLib.momentMod.Moment, /* value */ momentLib.momentMod.Moment) => reactLib.reactMod.ReactNode = null,
+    defaultValue: momentLib.momentMod.Moment = null,
+    disabledDate: /* current */ js.UndefOr[momentLib.momentMod.Moment] => scala.Boolean = null,
+    disabledTime: /* current */ js.UndefOr[momentLib.momentMod.Moment] => js.Object = null,
     format: java.lang.String = null,
     locale: js.Object = null,
     mode: Mode = null,
-    onChange: /* date */ momentLib.momentMod.momentNs.Moment | scala.Null => scala.Unit = null,
+    onChange: /* date */ momentLib.momentMod.Moment | scala.Null => scala.Unit = null,
     onClear: () => scala.Unit = null,
     onKeyDown: () => scala.Unit = null,
     onOk: () => scala.Unit = null,
-    onPanelChange: (/* date */ momentLib.momentMod.momentNs.Moment | scala.Null, /* mode */ Mode) => scala.Unit = null,
-    onSelect: /* date */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    onPanelChange: (/* date */ momentLib.momentMod.Moment | scala.Null, /* mode */ Mode) => scala.Unit = null,
+    onSelect: /* date */ momentLib.momentMod.Moment => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    renderFooter: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderSidebar: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    selectedValue: momentLib.momentMod.momentNs.Moment = null,
+    renderFooter: () => reactLib.reactMod.ReactNode = null,
+    renderSidebar: () => reactLib.reactMod.ReactNode = null,
+    selectedValue: momentLib.momentMod.Moment = null,
     showDateInput: js.UndefOr[scala.Boolean] = js.undefined,
     showOk: js.UndefOr[scala.Boolean] = js.undefined,
     showToday: js.UndefOr[scala.Boolean] = js.undefined,
     showWeekNumber: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    timePicker: reactLib.reactMod.ReactNs.ReactNode = null,
-    value: momentLib.momentMod.momentNs.Moment = null
+    style: reactLib.reactMod.CSSProperties = null,
+    timePicker: reactLib.reactMod.ReactNode = null,
+    value: momentLib.momentMod.Moment = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backgrid", "StringCell")
 @js.native
-class StringCell ()
-  extends backgridLib.backgridMod.BackgridNs.StringCell
+class StringCell () extends Cell
 

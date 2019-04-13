@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SwipeableViewsProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] {
   var animateHeight: js.UndefOr[scala.Boolean] = js.undefined
   var animateTransitions: js.UndefOr[scala.Boolean] = js.undefined
   var axis: js.UndefOr[AxisType] = js.undefined
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /*
     * This is the config used to disable lazy loading, if true it will render all the views in first rendering.
     */
@@ -25,7 +25,7 @@ trait SwipeableViewsProps
   var onTransitionEnd_SwipeableViewsProps: js.UndefOr[OnTransitionEndCallback] = js.undefined
   var resistance: js.UndefOr[scala.Boolean] = js.undefined
   var slideClassName: js.UndefOr[java.lang.String] = js.undefined
-  var slideStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var slideStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var springConfig: js.UndefOr[SpringConfig] = js.undefined
   var threshold: js.UndefOr[scala.Double] = js.undefined
 }
@@ -33,11 +33,11 @@ trait SwipeableViewsProps
 object SwipeableViewsProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] = null,
     animateHeight: js.UndefOr[scala.Boolean] = js.undefined,
     animateTransitions: js.UndefOr[scala.Boolean] = js.undefined,
     axis: AxisType = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     disableLazyLoading: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     enableMouseEvents: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,9 +49,9 @@ object SwipeableViewsProps {
     onTransitionEnd: OnTransitionEndCallback = null,
     resistance: js.UndefOr[scala.Boolean] = js.undefined,
     slideClassName: java.lang.String = null,
-    slideStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    slideStyle: reactLib.reactMod.CSSProperties = null,
     springConfig: SpringConfig = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     threshold: scala.Int | scala.Double = null
   ): SwipeableViewsProps = {
     val __obj = js.Dynamic.literal()

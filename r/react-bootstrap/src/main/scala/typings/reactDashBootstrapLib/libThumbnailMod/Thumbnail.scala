@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Thumbnail
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libThumbnailMod.ThumbnailNs.ThumbnailProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[ThumbnailProps, js.Object, js.Any]
 

@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-csv-as-json/Parser", "make")
 @js.native
 object makeNs extends js.Object {
-  val Constructor: streamDashCsvDashAsDashJsonLib.Anon_Make with (org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ streamDashCsvDashAsDashJsonLib.parserMod.ParserNs.ParserOptions], 
+  val Constructor: org.scalablytyped.runtime.Instantiable1[
+    /* options */ js.UndefOr[/* options */ streamDashCsvDashAsDashJsonLib.parserMod.ParserOptions], 
     streamDashCsvDashAsDashJsonLib.parserMod.Parser
-  ]) = js.native
+  ] = js.native
+  type Constructor = streamDashCsvDashAsDashJsonLib.parserMod.Parser
 }
 

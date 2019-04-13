@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - reactDashFoundationLib.utilsMod.GeneralPropTypes because var conflicts: className. Inlined showFor, showOnlyFor, hideFor, hideOnlyFor, isHidden, isInvisible, showForLandscape, showForPortrait, showForSr, showOnFocus, isClearfix, float */ trait MenuIconProps
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
+  extends reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
   var float: js.UndefOr[reactDashFoundationLib.enumsMod.FloatTypes] = js.undefined
   var hideFor: js.UndefOr[
     reactDashFoundationLib.reactDashFoundationLibStrings.medium | reactDashFoundationLib.reactDashFoundationLibStrings.large
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
 object MenuIconProps {
   @scala.inline
   def apply(
-    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
+    ButtonHTMLAttributes: reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
     GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null
   ): MenuIconProps = {
     val __obj = js.Dynamic.literal()

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Plots: StaticPlots = js.native
-  val d3: plotlyDotJsLib.Anon_A = js.native
   def addFrames(root: Root, frames: js.Array[stdLib.Partial[Frame]]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: js.Array[Data]): js.Promise[PlotlyHTMLElement] = js.native
   def addTraces(root: Root, traces: js.Array[Data], newIndices: js.Array[scala.Double]): js.Promise[PlotlyHTMLElement] = js.native

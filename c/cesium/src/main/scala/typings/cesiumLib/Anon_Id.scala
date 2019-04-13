@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Id extends js.Object {
   var id: js.UndefOr[js.Any] = js.undefined
   var length: js.UndefOr[scala.Double] = js.undefined
-  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
+  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
@@ -18,7 +18,7 @@ object Anon_Id {
   def apply(
     id: js.Any = null,
     length: scala.Int | scala.Double = null,
-    modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
+    modelMatrix: cesiumLib.cesiumMod.Matrix4 = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): Anon_Id = {

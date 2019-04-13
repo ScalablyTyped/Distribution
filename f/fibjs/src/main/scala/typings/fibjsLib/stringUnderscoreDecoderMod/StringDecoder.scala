@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("string_decoder", "StringDecoder")
 @js.native
 class StringDecoder ()
-  extends fibjsLib.stringUnderscoreDecoderMod.stringUnderscoreDecoderNs.StringDecoder
+  extends fibjsLib.Class_StringDecoder
 

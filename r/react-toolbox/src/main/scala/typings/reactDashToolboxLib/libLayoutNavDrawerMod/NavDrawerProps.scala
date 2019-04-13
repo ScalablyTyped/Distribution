@@ -33,7 +33,7 @@ object NavDrawerProps {
   @scala.inline
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     clipped: js.UndefOr[scala.Boolean] = js.undefined,
     insideTree: js.UndefOr[scala.Boolean] = js.undefined,
     onOverlayClick: js.Function = null,

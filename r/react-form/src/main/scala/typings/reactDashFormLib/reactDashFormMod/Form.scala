@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Form ()
   extends reactLib.reactMod.Component[FormProps with reactDashFormLib.Anon_Children, js.Object, js.Any]
-     with reactLib.reactMod.ReactNs.ChildContextProvider[FormContext] {
+     with reactLib.reactMod.ChildContextProvider[FormContext] {
   @JSName("componentWillMount")
   def componentWillMount_MForm(): scala.Unit = js.native
   @JSName("componentWillReceiveProps")

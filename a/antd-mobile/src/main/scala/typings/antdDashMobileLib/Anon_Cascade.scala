@@ -13,7 +13,7 @@ trait Anon_Cascade extends js.Object {
   var prefixCls: java.lang.String
   var title: java.lang.String
   var triggerType: java.lang.String
-  def format(values: js.Array[reactLib.reactMod.ReactNs.ReactNode]): java.lang.String | js.Array[reactLib.reactMod.ReactNs.ReactNode]
+  def format(values: js.Array[reactLib.reactMod.ReactNode]): java.lang.String | js.Array[reactLib.reactMod.ReactNode]
 }
 
 object Anon_Cascade {
@@ -21,7 +21,7 @@ object Anon_Cascade {
   def apply(
     cascade: scala.Boolean,
     cols: scala.Double,
-    format: js.Array[reactLib.reactMod.ReactNs.ReactNode] => java.lang.String | js.Array[reactLib.reactMod.ReactNs.ReactNode],
+    format: js.Array[reactLib.reactMod.ReactNode] => java.lang.String | js.Array[reactLib.reactMod.ReactNode],
     pickerPrefixCls: java.lang.String,
     popupPrefixCls: java.lang.String,
     prefixCls: java.lang.String,

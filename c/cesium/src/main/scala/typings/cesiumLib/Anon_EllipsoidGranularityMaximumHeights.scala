@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EllipsoidGranularityMaximumHeights extends js.Object {
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var granularity: js.UndefOr[scala.Double] = js.undefined
   var maximumHeights: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var minimumHeights: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3]
+  var positions: js.Array[cesiumLib.cesiumMod.Cartesian3]
 }
 
 object Anon_EllipsoidGranularityMaximumHeights {
   @scala.inline
   def apply(
-    positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    positions: js.Array[cesiumLib.cesiumMod.Cartesian3],
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     granularity: scala.Int | scala.Double = null,
     maximumHeights: js.Array[scala.Double] = null,
     minimumHeights: js.Array[scala.Double] = null

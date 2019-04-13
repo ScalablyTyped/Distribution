@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "SwipeableDrawer")
 @js.native
 class SwipeableDrawer protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps) = this()

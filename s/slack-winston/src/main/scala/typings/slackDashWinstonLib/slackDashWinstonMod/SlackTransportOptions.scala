@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SlackTransportOptions
-  extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
+  extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamOptions {
   var channel: java.lang.String
   var domain: java.lang.String
   var icon_emoji: js.UndefOr[java.lang.String] = js.undefined

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class StorageGateway ()
-  extends awsDashSdkLib.clientsStoragegatewayMod.namespaced {
-  def this(options: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsStoragegatewayMod.^ {
+  def this(options: awsDashSdkLib.clientsStoragegatewayMod.ClientConfiguration) = this()
 }
 

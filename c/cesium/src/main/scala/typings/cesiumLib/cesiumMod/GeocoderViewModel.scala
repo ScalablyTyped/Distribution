@@ -7,24 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "GeocoderViewModel")
 @js.native
-class GeocoderViewModel protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.GeocoderViewModel {
+class GeocoderViewModel protected () extends js.Object {
   def this(options: cesiumLib.Anon_FlightDuration) = this()
-  /* CompleteClass */
-  override var complete: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
-  /* CompleteClass */
-  override var flightDuration: scala.Double = js.native
-  /* CompleteClass */
-  override var isSearchInProgress: scala.Boolean = js.native
-  /* CompleteClass */
-  override var key: java.lang.String = js.native
-  /* CompleteClass */
-  override var scene: cesiumLib.cesiumMod.CesiumNs.Scene = js.native
-  /* CompleteClass */
-  override var search: cesiumLib.cesiumMod.CesiumNs.Command = js.native
-  /* CompleteClass */
-  override var searchText: java.lang.String = js.native
-  /* CompleteClass */
-  override var url: java.lang.String = js.native
+  var complete: Event[js.Array[_]] = js.native
+  var flightDuration: scala.Double = js.native
+  var isSearchInProgress: scala.Boolean = js.native
+  var key: java.lang.String = js.native
+  var scene: Scene = js.native
+  var search: Command = js.native
+  var searchText: java.lang.String = js.native
+  var url: java.lang.String = js.native
 }
 

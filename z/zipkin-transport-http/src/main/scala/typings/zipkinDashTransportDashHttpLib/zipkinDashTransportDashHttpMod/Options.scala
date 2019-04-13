@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var endpoint: java.lang.String
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var httpInterval: js.UndefOr[scala.Double] = js.undefined
-  var jsonEncoder: js.UndefOr[zipkinLib.zipkinMod.zipkinNs.JsonEncoder] = js.undefined
+  var jsonEncoder: js.UndefOr[zipkinLib.zipkinMod.JsonEncoder] = js.undefined
 }
 
 object Options {
@@ -18,7 +18,7 @@ object Options {
     endpoint: java.lang.String,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     httpInterval: scala.Int | scala.Double = null,
-    jsonEncoder: zipkinLib.zipkinMod.zipkinNs.JsonEncoder = null
+    jsonEncoder: zipkinLib.zipkinMod.JsonEncoder = null
   ): Options = {
     val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (headers != null) __obj.updateDynamic("headers")(headers)

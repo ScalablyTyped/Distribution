@@ -16,9 +16,9 @@ class CenterFocusStrongRounded protected ()
 @JSImport("@material-ui/icons", "CenterFocusStrongRounded")
 @js.native
 class CenterFocusStrongRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

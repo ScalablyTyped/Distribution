@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object StylusNs {
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type Middleware = js.Function3[
     /* req */ js.Any, 
     /* res */ js.Any, 

@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 object zxcvbnLibNumbers {
   @js.native
   sealed trait `0`
-    extends zxcvbnLib.zxcvbnMod.zxcvbnNs.ZXCVBNScore
+    extends zxcvbnLib.zxcvbnMod.ZXCVBNScore
   
   @js.native
   sealed trait `1`
-    extends zxcvbnLib.zxcvbnMod.zxcvbnNs.ZXCVBNScore
+    extends zxcvbnLib.zxcvbnMod.ZXCVBNScore
   
   @js.native
   sealed trait `2`
-    extends zxcvbnLib.zxcvbnMod.zxcvbnNs.ZXCVBNScore
+    extends zxcvbnLib.zxcvbnMod.ZXCVBNScore
   
   @js.native
   sealed trait `3`
-    extends zxcvbnLib.zxcvbnMod.zxcvbnNs.ZXCVBNScore
+    extends zxcvbnLib.zxcvbnMod.ZXCVBNScore
   
   @js.native
   sealed trait `4`
-    extends zxcvbnLib.zxcvbnMod.zxcvbnNs.ZXCVBNScore
+    extends zxcvbnLib.zxcvbnMod.ZXCVBNScore
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

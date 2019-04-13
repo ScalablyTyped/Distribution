@@ -11,6 +11,6 @@ object ^ extends js.Object {
   /**
     * To create a slider, call noUiSlider.create() with an element and your options.
     */
-  def create(target: stdLib.HTMLElement, options: nouisliderLib.nouisliderMod.noUiSliderNs.Options): nouisliderLib.nouisliderMod.noUiSliderNs.noUiSlider = js.native
+  def create(target: stdLib.HTMLElement, options: Options): noUiSlider = js.native
 }
 

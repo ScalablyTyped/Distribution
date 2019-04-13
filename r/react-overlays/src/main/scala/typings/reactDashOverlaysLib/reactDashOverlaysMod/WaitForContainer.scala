@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-overlays", "WaitForContainer")
 @js.native
 class WaitForContainer ()
-  extends reactDashOverlaysLib.libWaitForContainerMod.namespaced
+  extends reactDashOverlaysLib.libWaitForContainerMod.^
 

@@ -14,7 +14,7 @@ class ColumnHeaderCell ()
 @JSImport("@blueprintjs/table", "ColumnHeaderCell")
 @js.native
 object ColumnHeaderCell extends js.Object {
-  var contextTypes: reactLib.reactMod.ReactNs.ValidationMap[atBlueprintjsTableLib.libEsmCommonContextMod.IColumnInteractionBarContextTypes] = js.native
+  var contextTypes: reactLib.reactMod.ValidationMap[atBlueprintjsTableLib.libEsmCommonContextMod.IColumnInteractionBarContextTypes] = js.native
   var defaultProps: atBlueprintjsTableLib.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps = js.native
   /**
     * This method determines if a `MouseEvent` was triggered on a target that

@@ -12,7 +12,7 @@ trait Anon_Check extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var row: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_Check {
@@ -24,7 +24,7 @@ object Anon_Check {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     row: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_Check = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(check)) __obj.updateDynamic("check")(check)

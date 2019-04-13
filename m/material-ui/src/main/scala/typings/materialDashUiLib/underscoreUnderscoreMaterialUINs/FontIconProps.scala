@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactLib.reactMod.ReactNs.Props because var conflicts: children. Inlined key, ref */ trait FontIconProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] {
+- reactLib.reactMod.Props because var conflicts: children. Inlined key, ref */ trait FontIconProps
+  extends reactLib.reactMod.HTMLAttributes[js.Object] {
   var hoverColor: js.UndefOr[java.lang.String] = js.undefined
-  var key: js.UndefOr[reactLib.reactMod.ReactNs.Key] = js.undefined
-  var ref: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[FontIcon]] = js.undefined
+  var key: js.UndefOr[reactLib.reactMod.Key] = js.undefined
+  var ref: js.UndefOr[reactLib.reactMod.LegacyRef[FontIcon]] = js.undefined
 }
 
 object FontIconProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] = null,
-    Props: reactLib.reactMod.ReactNs.Props[FontIcon] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[js.Object] = null,
+    Props: reactLib.reactMod.Props[FontIcon] = null,
     color: java.lang.String = null,
     hoverColor: java.lang.String = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): FontIconProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

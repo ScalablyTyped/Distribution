@@ -26,10 +26,7 @@ trait ButtonProps extends js.Object {
   	 * Function to be called to activate the normal onClick functionality for this button.
   	 */
   var onClick: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit]
   ] = js.undefined
 }
 
@@ -40,7 +37,7 @@ object ButtonProps {
     btnGlyphicon: java.lang.String = null,
     btnText: java.lang.String = null,
     className: java.lang.String = null,
-    onClick: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null
+    onClick: /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
     if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual)

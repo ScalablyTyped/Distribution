@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "EventData")
 @js.native
 class EventData ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedEventDataMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedEventDataMod.^
 

@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NavDropdown
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libNavDropdownMod.NavDropdownNs.NavDropdownProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[NavDropdownProps, js.Object, js.Any]
 

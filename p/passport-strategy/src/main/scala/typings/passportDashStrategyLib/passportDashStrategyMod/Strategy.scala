@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("passport-strategy", "Strategy")
 @js.native
 class Strategy ()
-  extends passportLib.passportMod.passportNs.Strategy {
+  extends passportLib.passportMod.Strategy {
   /**
     * Performs authentication for the request.
     * Note: Virtual function - re-implement in the strategy.
     * @param req The request to authenticate.
     * @param options Options passed to the strategy.
     */
-  def authenticate(req: expressLib.expressMod.eNs.Request): scala.Unit = js.native
-  def authenticate(req: expressLib.expressMod.eNs.Request, options: js.Any): scala.Unit = js.native
+  def authenticate(req: expressLib.expressMod.Request): scala.Unit = js.native
+  def authenticate(req: expressLib.expressMod.Request, options: js.Any): scala.Unit = js.native
   /**
     * Internal error while performing authentication.
     *

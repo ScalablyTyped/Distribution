@@ -15,7 +15,7 @@ trait SCBroker
   var debugPort: scala.Double = js.native
   var id: scala.Double = js.native
   var instanceId: scala.Double = js.native
-  var options: scDashBrokerLib.scbrokerMod.SCBrokerNs.SCBrokerOptions = js.native
+  var options: SCBrokerOptions = js.native
   var subscriptions: Subscriptions = js.native
   val `type`: scDashBrokerLib.scDashBrokerLibStrings.broker = js.native
   def exec(

@@ -16,9 +16,9 @@ class BookmarkBorderTwoTone protected ()
 @JSImport("@material-ui/icons", "BookmarkBorderTwoTone")
 @js.native
 class BookmarkBorderTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

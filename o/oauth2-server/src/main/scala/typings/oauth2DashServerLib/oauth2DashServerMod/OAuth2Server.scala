@@ -13,56 +13,25 @@ trait OAuth2Server extends js.Object {
   /**
     * Authenticates a request.
     */
-  def authenticate(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token] = js.native
-  def authenticate(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response,
-    options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthenticateOptions
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token] = js.native
-  def authenticate(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response,
-    options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthenticateOptions,
-    callback: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Callback[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token]
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token] = js.native
+  def authenticate(request: Request, response: Response): js.Promise[Token] = js.native
+  def authenticate(request: Request, response: Response, options: AuthenticateOptions): js.Promise[Token] = js.native
+  def authenticate(request: Request, response: Response, options: AuthenticateOptions, callback: Callback[Token]): js.Promise[Token] = js.native
   /**
     * Authorizes a token request.
     */
+  def authorize(request: Request, response: Response): js.Promise[AuthorizationCode] = js.native
+  def authorize(request: Request, response: Response, options: AuthorizeOptions): js.Promise[AuthorizationCode] = js.native
   def authorize(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthorizationCode] = js.native
-  def authorize(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response,
-    options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthorizeOptions
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthorizationCode] = js.native
-  def authorize(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response,
-    options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthorizeOptions,
-    callback: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Callback[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthorizationCode]
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AuthorizationCode] = js.native
+    request: Request,
+    response: Response,
+    options: AuthorizeOptions,
+    callback: Callback[AuthorizationCode]
+  ): js.Promise[AuthorizationCode] = js.native
   /**
     * Retrieves a new token for an authorized token request.
     */
-  def token(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token] = js.native
-  def token(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response,
-    options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.TokenOptions
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token] = js.native
-  def token(
-    request: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request,
-    response: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response,
-    options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.TokenOptions,
-    callback: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Callback[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token]
-  ): js.Promise[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Token] = js.native
+  def token(request: Request, response: Response): js.Promise[Token] = js.native
+  def token(request: Request, response: Response, options: TokenOptions): js.Promise[Token] = js.native
+  def token(request: Request, response: Response, options: TokenOptions, callback: Callback[Token]): js.Promise[Token] = js.native
 }
 

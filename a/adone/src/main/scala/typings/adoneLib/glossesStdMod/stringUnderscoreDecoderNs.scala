@@ -20,6 +20,13 @@ object stringUnderscoreDecoderNs extends js.Object {
     def this(encoding: java.lang.String) = this()
   }
   
-  val StringDecoder: nodeLib.Anon_EncodingNodeStringDecoder = js.native
+  @js.native
+  object StringDecoder
+    extends org.scalablytyped.runtime.Instantiable0[nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder]
+       with org.scalablytyped.runtime.Instantiable1[
+          /* encoding */ java.lang.String, 
+          nodeLib.stringUnderscoreDecoderMod.NodeStringDecoder
+        ]
+  
 }
 

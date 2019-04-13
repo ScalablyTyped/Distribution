@@ -12,9 +12,9 @@ trait AsyncTypeaheadProps[T /* <: TypeaheadModel */] extends TypeaheadProps[T] {
   @JSName("isLoading")
   var isLoading_AsyncTypeaheadProps: scala.Boolean
   /* Message displayed in the menu when there is no user input. */
-  var promptText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var promptText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /* Message to display in the menu while the request is pending. */
-  var searchText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var searchText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /* Whether or not the component should cache query results. */
   var useCache: js.UndefOr[scala.Boolean] = js.undefined
   /* Callback to perform when the search is executed. */
@@ -76,11 +76,11 @@ object AsyncTypeaheadProps {
     paginationText: java.lang.String = null,
     placeholder: java.lang.String = null,
     positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
-    promptText: reactLib.reactMod.ReactNs.ReactNode = null,
-    renderMenu: (/* results */ js.Array[TypeaheadResult[T]], /* menuProps */ js.Any) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderMenuItemChildren: (/* option */ TypeaheadResult[T], /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderToken: (T, /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
-    searchText: reactLib.reactMod.ReactNs.ReactNode = null,
+    promptText: reactLib.reactMod.ReactNode = null,
+    renderMenu: (/* results */ js.Array[TypeaheadResult[T]], /* menuProps */ js.Any) => reactLib.reactMod.ReactNode = null,
+    renderMenuItemChildren: (/* option */ TypeaheadResult[T], /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
+    renderToken: (T, /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
+    searchText: reactLib.reactMod.ReactNode = null,
     selectHintOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.Array[T] = null,
     useCache: js.UndefOr[scala.Boolean] = js.undefined

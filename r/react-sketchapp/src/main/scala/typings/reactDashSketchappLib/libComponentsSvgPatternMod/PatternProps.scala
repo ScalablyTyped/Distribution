@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PatternProps extends js.Object {
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var patternContentUnits: js.UndefOr[
     reactDashSketchappLib.reactDashSketchappLibStrings.userSpaceOnUse | reactDashSketchappLib.reactDashSketchappLibStrings.objectBoundingBox
   ] = js.undefined
@@ -25,7 +23,7 @@ trait PatternProps extends js.Object {
 object PatternProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     patternContentUnits: reactDashSketchappLib.reactDashSketchappLibStrings.userSpaceOnUse | reactDashSketchappLib.reactDashSketchappLibStrings.objectBoundingBox = null,
     patternTransform: java.lang.String = null,
     patternUnits: reactDashSketchappLib.reactDashSketchappLibStrings.userSpaceOnUse | reactDashSketchappLib.reactDashSketchappLibStrings.objectBoundingBox = null,

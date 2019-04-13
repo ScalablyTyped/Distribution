@@ -14,9 +14,9 @@ class Promise[T] ()
 @JSImport("leanengine", "Promise")
 @js.native
 object Promise extends js.Object {
-  def as[U](resolvedValue: U): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[U] = js.native
-  def error[U](error: U): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[U] = js.native
+  def as[U](resolvedValue: U): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[U] = js.native
+  def error[U](error: U): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[U] = js.native
   def is(possiblePromise: js.Any): scala.Boolean = js.native
-  def when(promises: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[_]]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[_] = js.native
+  def when(promises: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[_]]): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[_] = js.native
 }
 

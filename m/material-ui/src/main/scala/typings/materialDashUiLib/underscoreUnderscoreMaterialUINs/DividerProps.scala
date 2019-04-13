@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait DividerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var inset: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object DividerProps {
@@ -16,7 +16,7 @@ object DividerProps {
   def apply(
     className: java.lang.String = null,
     inset: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): DividerProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

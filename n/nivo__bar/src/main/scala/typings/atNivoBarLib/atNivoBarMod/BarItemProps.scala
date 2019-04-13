@@ -28,13 +28,13 @@ trait BarItemProps extends js.Object {
   def hideTooltip(): scala.Unit = js.native
   def onClick(
     datum: BarExtendedDatum,
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
   ): scala.Unit = js.native
   def showTooltip(
-    tooltip: reactLib.reactMod.ReactNs.ReactNode,
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
+    tooltip: reactLib.reactMod.ReactNode,
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
   ): scala.Unit = js.native
-  def tooltip(props: reactLib.reactMod.ReactNs.PropsWithChildren[BarExtendedDatum]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def tooltip(props: reactLib.reactMod.ReactNs.PropsWithChildren[BarExtendedDatum], context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def tooltip(props: reactLib.reactMod.PropsWithChildren[BarExtendedDatum]): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def tooltip(props: reactLib.reactMod.PropsWithChildren[BarExtendedDatum], context: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

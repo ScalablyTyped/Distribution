@@ -37,7 +37,7 @@ trait InfiniteLoaderProps
     * The specified :onRowsRendered function should be passed through to the child's :onRowsRendered property.
     * The :registerChild callback should be set as the virtualized component's :ref.
     */
-  def children(props: InfiniteLoaderChildProps): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: InfiniteLoaderChildProps): reactLib.reactMod.ReactNode
   /**
     * Function responsible for tracking the loaded state of each row.
     * It should implement the following signature: ({ index: number }): boolean
@@ -56,7 +56,7 @@ trait InfiniteLoaderProps
 object InfiniteLoaderProps {
   @scala.inline
   def apply(
-    children: InfiniteLoaderChildProps => reactLib.reactMod.ReactNs.ReactNode,
+    children: InfiniteLoaderChildProps => reactLib.reactMod.ReactNode,
     isRowLoaded: reactDashVirtualizedLib.reactDashVirtualizedMod.Index => scala.Boolean,
     loadMoreRows: reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange => js.Promise[_],
     StringDictionary: /**

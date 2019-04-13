@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("coroutine", "Worker")
 @js.native
 class Worker ()
-  extends fibjsLib.coroutineMod.coroutineNs.Worker
+  extends fibjsLib.Class_Worker
 

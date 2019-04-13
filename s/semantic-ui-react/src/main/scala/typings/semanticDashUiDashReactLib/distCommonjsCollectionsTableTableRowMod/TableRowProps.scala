@@ -19,7 +19,7 @@ object TableRowProps {
     cells: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[
       semanticDashUiDashReactLib.distCommonjsCollectionsTableTableCellMod.TableCellProps
     ] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,

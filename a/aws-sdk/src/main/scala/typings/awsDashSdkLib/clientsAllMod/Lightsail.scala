@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Lightsail ()
-  extends awsDashSdkLib.clientsLightsailMod.namespaced {
-  def this(options: awsDashSdkLib.clientsLightsailMod.LightsailNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsLightsailMod.^ {
+  def this(options: awsDashSdkLib.clientsLightsailMod.ClientConfiguration) = this()
 }
 

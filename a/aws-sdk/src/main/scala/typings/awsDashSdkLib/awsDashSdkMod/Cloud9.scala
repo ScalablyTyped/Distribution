@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Cloud9 ()
   extends awsDashSdkLib.clientsAllMod.Cloud9 {
-  def this(options: awsDashSdkLib.clientsCloud9Mod.Cloud9Ns.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloud9Mod.ClientConfiguration) = this()
 }
 

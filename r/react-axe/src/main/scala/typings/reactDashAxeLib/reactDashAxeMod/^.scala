@@ -13,7 +13,7 @@ object ^ extends js.Object {
     react: reactDashAxeLib.Anon_A,
     reactDOM: reactDashAxeLib.Anon_AB,
     timeout: scala.Double,
-    config: reactDashAxeLib.reactDashAxeMod.axeNs.ReactAxeConfig
+    config: ReactAxeConfig
   ): scala.Unit = js.native
 }
 

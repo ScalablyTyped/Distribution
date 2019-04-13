@@ -132,11 +132,11 @@ trait DateTimePickerProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.KeyboardEvent[_], scala.Unit]] = js.undefined
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.KeyboardEvent[_], scala.Unit]] = js.undefined
   /**
     * This handler fires when an item has been selected from the list or calendar. It fires
     * before the onChange handler, and fires regardless of whether the value has actually
@@ -174,7 +174,7 @@ trait DateTimePickerProps
     * The provided component will be used instead of the default SlideDownTransition for fully customizable animations.
     * The transition component is also injected with a dropUp prop indicating the direction it should open.
     */
-  var popupTransition: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var popupTransition: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * The amount of minutes between each entry in the time list.
     */
@@ -187,7 +187,7 @@ trait DateTimePickerProps
   /**
     * A customize the rendering of times but providing a custom component.
     */
-  var timeComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var timeComponent: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * A string format used by the time dropdown to render times.
     */
@@ -207,7 +207,7 @@ object DateTimePickerProps {
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     calendar: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     containerClassName: java.lang.String = null,
     culture: java.lang.String = null,
     currentDate: stdLib.Date = null,
@@ -226,7 +226,7 @@ object DateTimePickerProps {
     initialView: reactDashWidgetsLib.reactDashWidgetsLibStrings.month | reactDashWidgetsLib.reactDashWidgetsLibStrings.year | reactDashWidgetsLib.reactDashWidgetsLibStrings.decade | reactDashWidgetsLib.reactDashWidgetsLibStrings.century = null,
     inputProps: js.Object = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     max: stdLib.Date = null,
     messages: DateTimePickerMessages = null,
     min: stdLib.Date = null,
@@ -235,19 +235,19 @@ object DateTimePickerProps {
     onChange: (/* date */ js.UndefOr[stdLib.Date], /* dateStr */ js.UndefOr[java.lang.String]) => scala.Unit = null,
     onCurrentDateChange: /* date */ js.UndefOr[stdLib.Date] => scala.Unit = null,
     onFocus: () => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit = null,
-    onKeyPress: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[_] => scala.Unit = null,
+    onKeyPress: /* event */ reactLib.reactMod.KeyboardEvent[_] => scala.Unit = null,
     onSelect: /* date */ js.UndefOr[stdLib.Date] => scala.Unit = null,
     onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: reactDashWidgetsLib.reactDashWidgetsLibNumbers.`false` | reactDashWidgetsLib.reactDashWidgetsLibStrings.date | reactDashWidgetsLib.reactDashWidgetsLibStrings.time = null,
     parse: (js.Function1[/* str */ java.lang.String, stdLib.Date]) | js.Array[java.lang.String] | java.lang.String = null,
     placeholder: java.lang.String = null,
-    popupTransition: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    popupTransition: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[DateTimePickerClass] = null,
+    ref: reactLib.reactMod.LegacyRef[DateTimePickerClass] = null,
     step: scala.Double | scala.Boolean = null,
     time: js.UndefOr[scala.Boolean] = js.undefined,
-    timeComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    timeComponent: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     timeFormat: java.lang.String = null,
     timeIcon: reactLib.reactMod.Global.JSXNs.Element = null,
     value: stdLib.Date = null

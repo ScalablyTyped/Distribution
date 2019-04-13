@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject] */] protected () extends js.Object {
   def this(_config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent]) = this()
-  def this(_config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent], options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent]) = this()
-  def this(_config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent], options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent], /**
+  def this(_config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent], options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]]) = this()
+  def this(_config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent], options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]], /**
     * The initial extended state
     */
   context: stdLib.Readonly[TContext]) = this()
@@ -23,9 +23,9 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     */
   var activities: js.Array[xstateLib.libTypesMod.ActivityDefinition[TContext, TEvent]] = js.native
   /**
-    * All delayed transitions from the config.
+    * The delayed transitions.
     */
-  val after: js.Array[xstateLib.libTypesMod.DelayedTransitionDefinition[TContext, TEvent]] = js.native
+  var after: js.Array[xstateLib.libTypesMod.DelayedTransitionDefinition[TContext, TEvent]] = js.native
   /**
     * The raw config used to create the machine.
     */
@@ -44,10 +44,6 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * The well-structured state node definition.
     */
   val definition: xstateLib.libTypesMod.StateNodeDefinition[TContext, TStateSchema, TEvent] = js.native
-  /**
-    * The array of all delayed transitions.
-    */
-  val delays: js.Array[xstateLib.libTypesMod.Delay] = js.native
   /**
     * The string delimiter for serializing the path to a string. The default is "."
     */
@@ -68,7 +64,10 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   var formatTransition: js.Any = js.native
   var formatTransitions: js.Any = js.native
   var getActions: js.Any = js.native
-  var getActivities: js.Any = js.native
+  /**
+    * All delayed transitions from the config.
+    */
+  var getDelayedTransitions: js.Any = js.native
   var getResolvedPath: js.Any = js.native
   var getStateTree: js.Any = js.native
   /**
@@ -168,8 +167,6 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * The string path from the root machine node to this node.
     */
   var path: js.Array[java.lang.String] = js.native
-  var resolveAction: js.Any = js.native
-  var resolveActivity: js.Any = js.native
   /**
     * Resolves to the historical value(s) of the parent state node,
     * represented by state nodes.
@@ -193,6 +190,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * default state value to transition to if no history value exists yet.
     */
   val target: js.UndefOr[xstateLib.libTypesMod.StateValue] = js.native
+  var toGuard: js.Any = js.native
   /**
     * Whether the state node is "transient". A state node is considered transient if it has
     * an immediate transition from a "null event" (empty string), taken upon entering the state node.
@@ -219,6 +217,10 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     *  - `'final'` - final state node
     */
   var `type`: xstateLib.libTypesMod.StateTypes = js.native
+  /**
+    * The machine's own version.
+    */
+  var version: js.UndefOr[java.lang.String] = js.native
   /**
     * Retrieves state nodes from a relative path to this state node.
     *
@@ -405,8 +407,8 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * @param options Options (actions, guards, activities, services) to recursively merge with the existing options.
     * @param context Custom context (will override predefined context)
     */
-  def withConfig(options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent]): StateNode[TContext, TStateSchema, TEvent] = js.native
-  def withConfig(options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent], context: TContext): StateNode[TContext, TStateSchema, TEvent] = js.native
+  def withConfig(options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]]): StateNode[TContext, TStateSchema, TEvent] = js.native
+  def withConfig(options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]], context: TContext): StateNode[TContext, TStateSchema, TEvent] = js.native
   /**
     * Clones this state machine with custom context.
     *

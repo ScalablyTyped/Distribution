@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-svg", "Polyline")
 @js.native
 class Polyline protected ()
-  extends reactLib.reactMod.ReactNs.Component[PolylineProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[PolylineProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: PolylineProps) = this()
   def this(props: PolylineProps, context: js.Any) = this()
 }

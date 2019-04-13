@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class EMR ()
   extends awsDashSdkLib.awsDashSdkMod.EMR {
-  def this(options: awsDashSdkLib.clientsEmrMod.EMRNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsEmrMod.ClientConfiguration) = this()
 }
 

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("net", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val AF_INET: /* 2 */ scala.Double = js.native
-  val AF_INET6: /* 10 */ scala.Double = js.native
-  val SOCK_DGRAM: /* 2 */ scala.Double = js.native
-  val SOCK_STREAM: /* 1 */ scala.Double = js.native
+  val AF_INET: fibjsLib.fibjsLibNumbers.`2` = js.native
+  val AF_INET6: fibjsLib.fibjsLibNumbers.`10` = js.native
+  val SOCK_DGRAM: fibjsLib.fibjsLibNumbers.`2` = js.native
+  val SOCK_STREAM: fibjsLib.fibjsLibNumbers.`1` = js.native
   def backend(): java.lang.String = js.native
   def connect(url: java.lang.String): fibjsLib.Class_Stream = js.native
   def connect(url: java.lang.String, timeout: scala.Double): fibjsLib.Class_Stream = js.native

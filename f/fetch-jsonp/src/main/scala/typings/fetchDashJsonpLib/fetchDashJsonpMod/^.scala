@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(url: stdLib.RequestInfo): js.Promise[stdLib.Response] = js.native
-  def apply(url: stdLib.RequestInfo, options: fetchDashJsonpLib.fetchDashJsonpMod.fetchJsonpNs.Options): js.Promise[stdLib.Response] = js.native
+  def apply(url: stdLib.RequestInfo, options: Options): js.Promise[stdLib.Response] = js.native
 }
 

@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
   */
 trait SocketioP2PStatic extends js.Object {
   var decoder: js.Any
-  var defaultOps: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.DefaultOps
+  var defaultOps: DefaultOps
   var numConnectedClients: scala.Double
-  var opts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.P2POptions
-  var peerOpts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.PeerOpts
+  var opts: P2POptions
+  var peerOpts: PeerOpts
   var socket: js.Any
   var usePeerConnection: scala.Boolean
   var useSockets: scala.Boolean
@@ -38,13 +38,13 @@ object SocketioP2PStatic {
     binarySlice: (js.Array[_], scala.Double, js.Function0[scala.Unit]) => scala.Unit,
     cb: () => scala.Unit,
     decoder: js.Any,
-    defaultOps: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.DefaultOps,
+    defaultOps: DefaultOps,
     disconnect: () => scala.Unit,
     emit: (js.Any, js.Any) => scala.Unit,
     numConnectedClients: scala.Double,
     on: (java.lang.String, js.Function1[/* data */ js.Any, scala.Unit]) => scala.Unit,
-    opts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.P2POptions,
-    peerOpts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.PeerOpts,
+    opts: P2POptions,
+    peerOpts: PeerOpts,
     setupPeerEvents: js.Any => scala.Unit,
     socket: js.Any,
     upgrade: () => scala.Unit,

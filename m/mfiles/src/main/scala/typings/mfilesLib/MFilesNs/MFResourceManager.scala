@@ -17,3 +17,8 @@ class MFResourceManager ()
   override def LoadResourceString(LanguageID: scala.Double, ResourceID: scala.Double): java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.MFResourceManager")
+@js.native
+object MFResourceManager
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMFResourceManager]
+

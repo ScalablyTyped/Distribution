@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ConfigProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   def disableWorker(): scala.Unit = js.native
   def setCmapDir(dir: java.lang.String): scala.Unit = js.native
   def setImageDir(dir: java.lang.String): scala.Unit = js.native

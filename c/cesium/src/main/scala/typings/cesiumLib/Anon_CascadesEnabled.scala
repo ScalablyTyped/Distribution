@@ -10,7 +10,7 @@ trait Anon_CascadesEnabled extends js.Object {
   var darkness: js.UndefOr[scala.Double] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   var isPointLight: js.UndefOr[scala.Boolean] = js.undefined
-  var lightCamera: cesiumLib.cesiumMod.CesiumNs.Camera
+  var lightCamera: cesiumLib.cesiumMod.Camera
   var maximumDistance: js.UndefOr[scala.Double] = js.undefined
   var normalOffset: js.UndefOr[scala.Boolean] = js.undefined
   var numberOfCascades: js.UndefOr[scala.Double] = js.undefined
@@ -22,7 +22,7 @@ trait Anon_CascadesEnabled extends js.Object {
 object Anon_CascadesEnabled {
   @scala.inline
   def apply(
-    lightCamera: cesiumLib.cesiumMod.CesiumNs.Camera,
+    lightCamera: cesiumLib.cesiumMod.Camera,
     cascadesEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     darkness: scala.Int | scala.Double = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,

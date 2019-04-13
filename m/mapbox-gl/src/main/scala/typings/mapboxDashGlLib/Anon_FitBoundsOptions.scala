@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FitBoundsOptions extends js.Object {
-  var fitBoundsOptions: js.UndefOr[mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.FitBoundsOptions] = js.undefined
-  var positionOptions: js.UndefOr[mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.PositionOptions] = js.undefined
+  var fitBoundsOptions: js.UndefOr[mapboxDashGlLib.mapboxDashGlMod.FitBoundsOptions] = js.undefined
+  var positionOptions: js.UndefOr[mapboxDashGlLib.mapboxDashGlMod.PositionOptions] = js.undefined
   var showUserLocation: js.UndefOr[scala.Boolean] = js.undefined
   var trackUserLocation: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -15,8 +15,8 @@ trait Anon_FitBoundsOptions extends js.Object {
 object Anon_FitBoundsOptions {
   @scala.inline
   def apply(
-    fitBoundsOptions: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.FitBoundsOptions = null,
-    positionOptions: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.PositionOptions = null,
+    fitBoundsOptions: mapboxDashGlLib.mapboxDashGlMod.FitBoundsOptions = null,
+    positionOptions: mapboxDashGlLib.mapboxDashGlMod.PositionOptions = null,
     showUserLocation: js.UndefOr[scala.Boolean] = js.undefined,
     trackUserLocation: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_FitBoundsOptions = {

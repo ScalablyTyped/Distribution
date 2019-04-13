@@ -32,3 +32,8 @@ class ServerManagementOperations ()
   override def SetEventHandlers(EventHandlers: mfilesLib.IEventHandlers): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ServerManagementOperations")
+@js.native
+object ServerManagementOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IServerManagementOperations]
+

@@ -10,17 +10,17 @@ trait Isotope extends js.Object {
     * Adds item elements to the Isotope instance. addItems does not lay out items like appended, prepended, or insert.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def addItems(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def addItems(elements: Elements): scala.Unit
   /**
     * Adds and lays out newly appended item elements to the end of the layout.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def appended(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def appended(elements: Elements): scala.Unit
   /**
     * Filters, sorts, and lays out items. arrange is the principle method of Isotope. It is the default method with jQuery .isotope(). Pass in options to apply filtering and sorting.
     * @param options All options are optional, but itemSelector is recommended. Layout modes have their own separate options.
     */
-  def arrange(options: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.IsotopeOptions): scala.Unit
+  def arrange(options: IsotopeOptions): scala.Unit
   /**
     * Removes the Isotope functionality completely. destroy will return the element back to its pre-initialized state.
     */
@@ -37,12 +37,12 @@ trait Isotope extends js.Object {
     * Hide items.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def hideItemElements(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def hideItemElements(elements: Elements): scala.Unit
   /**
     * Appends elements into container element, adds elements as items, and arranges items with filtering and sorting.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def insert(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def insert(elements: Elements): scala.Unit
   /**
     * Lays out all item elements. layout is useful when an item has changed size, and all items need to be laid out again. layout does not apply filtering or sorting.
     */
@@ -57,7 +57,7 @@ trait Isotope extends js.Object {
     * Adds and lays out newly prepended item elements at the beginning of layout.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def prepended(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def prepended(elements: Elements): scala.Unit
   /**
     * Recollects all item elements.
     * For frameworks like Angular and React, reloadItems may be useful to apply changes to the DOM to Isotope.
@@ -67,12 +67,12 @@ trait Isotope extends js.Object {
     * Removes elements from the Isotope instance and DOM.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def remove(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def remove(elements: Elements): scala.Unit
   /**
     * Reveals hidden items.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def revealItemElements(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def revealItemElements(elements: Elements): scala.Unit
   /**
     * Shuffles items in a random order.
     */
@@ -82,40 +82,40 @@ trait Isotope extends js.Object {
     * Stamping is only supported by some layout modes: masonry, packery and masonryhorizontal.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def stamp(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def stamp(elements: Elements): scala.Unit
   /**
     * Un-stamps elements in the layout, so that Isotope will no longer layout item elements around them.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def unstamp(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def unstamp(elements: Elements): scala.Unit
   /**
     * Updates sort data
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
     */
-  def updateSortData(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
+  def updateSortData(elements: Elements): scala.Unit
 }
 
 object Isotope {
   @scala.inline
   def apply(
-    addItems: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
-    appended: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
-    arrange: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.IsotopeOptions => scala.Unit,
+    addItems: Elements => scala.Unit,
+    appended: Elements => scala.Unit,
+    arrange: IsotopeOptions => scala.Unit,
     destroy: () => scala.Unit,
     getFilteredItemElements: () => js.Array[stdLib.Element],
     getItemElements: () => js.Array[stdLib.Element],
-    hideItemElements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
-    insert: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    hideItemElements: Elements => scala.Unit,
+    insert: Elements => scala.Unit,
     layout: () => scala.Unit,
     layoutItems: (js.Array[stdLib.HTMLElement], scala.Boolean) => scala.Unit,
-    prepended: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    prepended: Elements => scala.Unit,
     reloadItems: () => scala.Unit,
-    remove: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
-    revealItemElements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
+    remove: Elements => scala.Unit,
+    revealItemElements: Elements => scala.Unit,
     shuffle: () => scala.Unit,
-    stamp: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
-    unstamp: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit,
-    updateSortData: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements => scala.Unit
+    stamp: Elements => scala.Unit,
+    unstamp: Elements => scala.Unit,
+    updateSortData: Elements => scala.Unit
   ): Isotope = {
     val __obj = js.Dynamic.literal(addItems = js.Any.fromFunction1(addItems), appended = js.Any.fromFunction1(appended), arrange = js.Any.fromFunction1(arrange), destroy = js.Any.fromFunction0(destroy), getFilteredItemElements = js.Any.fromFunction0(getFilteredItemElements), getItemElements = js.Any.fromFunction0(getItemElements), hideItemElements = js.Any.fromFunction1(hideItemElements), insert = js.Any.fromFunction1(insert), layout = js.Any.fromFunction0(layout), layoutItems = js.Any.fromFunction2(layoutItems), prepended = js.Any.fromFunction1(prepended), reloadItems = js.Any.fromFunction0(reloadItems), remove = js.Any.fromFunction1(remove), revealItemElements = js.Any.fromFunction1(revealItemElements), shuffle = js.Any.fromFunction0(shuffle), stamp = js.Any.fromFunction1(stamp), unstamp = js.Any.fromFunction1(unstamp), updateSortData = js.Any.fromFunction1(updateSortData))
   

@@ -12,7 +12,7 @@ trait IDialogPropTypes extends js.Object {
   var children: js.UndefOr[js.Any] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
-  var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   var maskAnimation: js.UndefOr[js.Any] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
@@ -23,7 +23,7 @@ trait IDialogPropTypes extends js.Object {
   var onClose: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   var wrapClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -41,7 +41,7 @@ object IDialogPropTypes {
     children: js.Any = null,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
-    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: reactLib.reactMod.ReactNode = null,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskAnimation: js.Any = null,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -52,7 +52,7 @@ object IDialogPropTypes {
     onClose: /* e */ js.Any => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: js.Object = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionName: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     wrapClassName: java.lang.String = null,

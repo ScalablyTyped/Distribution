@@ -18,7 +18,6 @@ object ^ extends js.Object {
   val TWEEN: TweenLib = js.native
   val components: ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]] = js.native
   val geometries: ObjectMap[GeometryDescriptor[Geometry[js.Any]]] = js.native
-  val primitives: aframeLib.Anon_GetMeshMixin = js.native
   val registerComponent: js.Function2[
     /* name */ java.lang.String, 
     /* component */ ComponentDefinition[js.Object], 

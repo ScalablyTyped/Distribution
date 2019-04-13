@@ -17,3 +17,8 @@ class LoginAccountPersonalInformation ()
   override val FullName: java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.LoginAccountPersonalInformation")
+@js.native
+object LoginAccountPersonalInformation
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ILoginAccountPersonalInformation]
+

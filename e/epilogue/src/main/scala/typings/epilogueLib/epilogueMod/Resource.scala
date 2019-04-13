@@ -11,7 +11,7 @@ class Resource protected () extends js.Object {
   def this(options: ResourceOptions) = this()
   var actions: js.Array[java.lang.String] = js.native
   @JSName("app")
-  var app_Original: expressLib.expressMod.eNs.Express = js.native
+  var app_Original: expressLib.expressMod.Express = js.native
   var associationOptions: ResourceAssociationOptions = js.native
   var attributes: js.Array[java.lang.String] = js.native
   var controllers: Controllers = js.native
@@ -23,7 +23,7 @@ class Resource protected () extends js.Object {
   var readOnlyAttributes: js.Array[java.lang.String] = js.native
   var reloadInstances: scala.Boolean = js.native
   var search: ResourceSearchOption = js.native
-  var sequelize: sequelizeLib.sequelizeMod.sequelizeNs.Sequelize = js.native
+  var sequelize: sequelizeLib.sequelizeMod.Sequelize = js.native
   var sort: ResourceSortOption = js.native
   var updateMethod: java.lang.String = js.native
   /**

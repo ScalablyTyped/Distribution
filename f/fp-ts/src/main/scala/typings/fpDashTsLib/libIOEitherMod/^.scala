@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/IOEither", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* IOEither */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.IOEither = js.native
   val ioEither: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] = js.native
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): IOEither[L, A] = js.native
   def fromLeft[L, A](l: L): IOEither[L, A] = js.native

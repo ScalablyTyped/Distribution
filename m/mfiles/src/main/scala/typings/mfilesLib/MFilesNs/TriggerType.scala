@@ -31,3 +31,8 @@ class TriggerType ()
   override def SetWeekly(WeeklyTrigger: mfilesLib.IWeeklyTrigger): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.TriggerType")
+@js.native
+object TriggerType
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITriggerType]
+

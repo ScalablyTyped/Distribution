@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "ModalHeader")
 @js.native
 class ModalHeader ()
-  extends reactDashBootstrapLib.libModalHeaderMod.namespaced
+  extends reactDashBootstrapLib.libModalHeaderMod.^
 

@@ -23,14 +23,14 @@ object CountdownProps {
     groupSeparator: java.lang.String = null,
     onFinish: () => scala.Unit = null,
     precision: scala.Int | scala.Double = null,
-    prefix: reactLib.reactMod.ReactNs.ReactNode = null,
+    prefix: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suffix: reactLib.reactMod.ReactNs.ReactNode = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    suffix: reactLib.reactMod.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     value: antdLib.libStatisticUtilsMod.countdownValueType = null,
-    valueRender: /* node */ reactLib.reactMod.ReactNs.ReactNode => reactLib.reactMod.ReactNs.ReactNode = null,
-    valueStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    valueRender: /* node */ reactLib.reactMod.ReactNode => reactLib.reactMod.ReactNode = null,
+    valueStyle: reactLib.reactMod.CSSProperties = null
   ): CountdownProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

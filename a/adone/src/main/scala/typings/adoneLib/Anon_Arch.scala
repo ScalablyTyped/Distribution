@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Arch extends js.Object {
   val EOL: java.lang.String = js.native
-  val constants: nodeLib.Anon_Errno = js.native
+  val constants: Anon_Errno = js.native
   def arch(): java.lang.String = js.native
   def cpus(): js.Array[nodeLib.osMod.CpuInfo] = js.native
   def endianness(): adoneLib.adoneLibStrings.BE | adoneLib.adoneLibStrings.LE = js.native

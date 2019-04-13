@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/SVGIcons", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val SVGIcon: reactLib.reactMod.ReactNs.ComponentClass[
+  val SVGIcon: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
+  val default: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

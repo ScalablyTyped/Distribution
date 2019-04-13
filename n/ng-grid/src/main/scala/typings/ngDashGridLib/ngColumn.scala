@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ngColumn protected ()
   extends ngDashGridLib.ngGridNs.IColumn {
-  def this(config: ngDashGridLib.ngGridNs.IGridOptions, $scope: ngDashGridLib.ngGridNs.IGridScope, grid: ngDashGridLib.ngGridNs.IGridInstance, domUtilityService: ngDashGridLib.ngGridNs.serviceNs.IDomUtilityService, $templateCache: angularLib.angularMod.angularNs.ITemplateCacheService, $utils: js.Any) = this()
+  def this(config: ngDashGridLib.ngGridNs.IGridOptions, $scope: ngDashGridLib.ngGridNs.IGridScope, grid: ngDashGridLib.ngGridNs.IGridInstance, domUtilityService: ngDashGridLib.ngGridNs.serviceNs.IDomUtilityService, $templateCache: angularLib.angularMod.ITemplateCacheService, $utils: js.Any) = this()
   /* CompleteClass */
   override var aggLabelFilter: js.Any = js.native
   /* CompleteClass */

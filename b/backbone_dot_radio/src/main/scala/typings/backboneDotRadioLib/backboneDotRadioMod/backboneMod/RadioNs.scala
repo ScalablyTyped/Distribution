@@ -9,12 +9,35 @@ import scala.scalajs.js.annotation._
 @js.native
 object RadioNs extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests because Inheritance from two classes. Inlined request, reply, reply, reply, reply, replyOnce, replyOnce, replyOnce, replyOnce, stopReplying, stopReplying, stopReplying, stopReplying */ @js.native
+  - backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests because Inheritance from two classes. Inlined request, reply, reply, reply, reply, replyOnce, replyOnce, replyOnce, replyOnce, stopReplying, stopReplying, stopReplying, stopReplying- backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Commands because Inheritance from two classes. Inlined command, comply, comply, comply, comply, complyOnce, complyOnce, complyOnce, complyOnce, stopComplying, stopComplying, stopComplying, stopComplying */ @js.native
   class Channel ()
-    extends Commands
-       with backboneLib.backboneMod.BackboneNs.EventsMixin
-       with backboneLib.backboneMod.BackboneNs.Events {
+    extends backboneLib.backboneMod.EventsMixin
+       with backboneLib.backboneMod.Events {
     var channelName: java.lang.String = js.native
+    // Radio.Commands
+    def command(commandName: java.lang.String, args: js.Any*): scala.Unit = js.native
+    def comply(commandName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Commands = js.native
+    def comply(
+      commandName: java.lang.String,
+      callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+      context: js.Any
+    ): Commands = js.native
+    def comply(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]]): Commands = js.native
+    def comply(
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+      context: js.Any
+    ): Commands = js.native
+    def complyOnce(commandName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Commands = js.native
+    def complyOnce(
+      commandName: java.lang.String,
+      callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+      context: js.Any
+    ): Commands = js.native
+    def complyOnce(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]]): Commands = js.native
+    def complyOnce(
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+      context: js.Any
+    ): Commands = js.native
     /**
       * Faulty overgeneralization of Backbone.Events.on, for historical
       * reasons.
@@ -39,6 +62,14 @@ object RadioNs extends js.Object {
     // Radio.Requests
     def request(requestName: java.lang.String, args: js.Any*): js.Any = js.native
     def reset(): Channel = js.native
+    def stopComplying(): Commands = js.native
+    def stopComplying(commandName: java.lang.String): Commands = js.native
+    def stopComplying(commandName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Commands = js.native
+    def stopComplying(
+      commandName: java.lang.String,
+      callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+      context: js.Any
+    ): Commands = js.native
     def stopReplying(): Requests = js.native
     def stopReplying(commandName: java.lang.String): Requests = js.native
     def stopReplying(commandName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): Requests = js.native

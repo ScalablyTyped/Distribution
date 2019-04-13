@@ -7,28 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait ConfigureReadmeConfig extends js.Object {
   var DocPreview: js.UndefOr[
-    js.Function1[
-      /* props */ storybookDashReadmeLib.Anon_Children, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function1[/* props */ storybookDashReadmeLib.Anon_Children, reactLib.reactMod.ReactNode]
   ] = js.undefined
   var FooterPreview: js.UndefOr[
-    js.Function1[
-      /* props */ storybookDashReadmeLib.Anon_Children, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function1[/* props */ storybookDashReadmeLib.Anon_Children, reactLib.reactMod.ReactNode]
   ] = js.undefined
   var HeaderPreview: js.UndefOr[
-    js.Function1[
-      /* props */ storybookDashReadmeLib.Anon_Children, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function1[/* props */ storybookDashReadmeLib.Anon_Children, reactLib.reactMod.ReactNode]
   ] = js.undefined
   var StoryPreview: js.UndefOr[
-    js.Function1[
-      /* props */ storybookDashReadmeLib.Anon_Children, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function1[/* props */ storybookDashReadmeLib.Anon_Children, reactLib.reactMod.ReactNode]
   ] = js.undefined
   var footer: js.UndefOr[java.lang.String] = js.undefined
   var header: js.UndefOr[java.lang.String] = js.undefined
@@ -37,10 +25,10 @@ trait ConfigureReadmeConfig extends js.Object {
 object ConfigureReadmeConfig {
   @scala.inline
   def apply(
-    DocPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNs.ReactNode = null,
-    FooterPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNs.ReactNode = null,
-    HeaderPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNs.ReactNode = null,
-    StoryPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNs.ReactNode = null,
+    DocPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNode = null,
+    FooterPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNode = null,
+    HeaderPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNode = null,
+    StoryPreview: /* props */ storybookDashReadmeLib.Anon_Children => reactLib.reactMod.ReactNode = null,
     footer: java.lang.String = null,
     header: java.lang.String = null
   ): ConfigureReadmeConfig = {

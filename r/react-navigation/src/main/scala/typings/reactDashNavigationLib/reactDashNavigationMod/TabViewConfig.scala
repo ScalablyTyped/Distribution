@@ -9,7 +9,7 @@ trait TabViewConfig extends js.Object {
   var animationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  var tabBarComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tabBarComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var tabBarOptions: js.UndefOr[reactDashNavigationLib.Anon_ActiveBackgroundColorActiveTintColor] = js.undefined
   var tabBarPosition: js.UndefOr[
     reactDashNavigationLib.reactDashNavigationLibStrings.top | reactDashNavigationLib.reactDashNavigationLibStrings.bottom
@@ -22,7 +22,7 @@ object TabViewConfig {
     animationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    tabBarComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tabBarComponent: reactLib.reactMod.ReactType[_] = null,
     tabBarOptions: reactDashNavigationLib.Anon_ActiveBackgroundColorActiveTintColor = null,
     tabBarPosition: reactDashNavigationLib.reactDashNavigationLibStrings.top | reactDashNavigationLib.reactDashNavigationLibStrings.bottom = null
   ): TabViewConfig = {

@@ -8,18 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("sharp", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val bool: sharpLib.sharpMod.sharpNs.BoolEnum = js.native
-  val fit: sharpLib.sharpMod.sharpNs.FitEnum = js.native
+  val bool: BoolEnum = js.native
+  val fit: FitEnum = js.native
   /** Object containing nested boolean values representing the available input and output formats/methods. */
-  val format: sharpLib.sharpMod.sharpNs.FormatEnum = js.native
+  val format: FormatEnum = js.native
   //#endregion
-  val gravity: sharpLib.sharpMod.sharpNs.GravityEnum = js.native
-  val kernel: sharpLib.sharpMod.sharpNs.KernelEnum = js.native
+  val gravity: GravityEnum = js.native
+  val kernel: KernelEnum = js.native
   /** An EventEmitter that emits a change event when a task is either queued, waiting for libuv to provide a worker thread, complete */
   val queue: nodeLib.NodeJSNs.EventEmitter = js.native
-  val strategy: sharpLib.sharpMod.sharpNs.StrategyEnum = js.native
-  /** An Object containing the version numbers of libvips and its dependencies. */
-  val versions: sharpLib.Anon_Cairo = js.native
+  val strategy: StrategyEnum = js.native
   //#region Constructor functions
   /**
     * Creates a sharp instance from an image
@@ -28,10 +26,10 @@ object ^ extends js.Object {
     * @throws {Error} Invalid parameters
     * @returns A sharp instance that can be used to chain operations
     */
-  def apply(): sharpLib.sharpMod.sharpNs.Sharp = js.native
-  def apply(input: java.lang.String | nodeLib.Buffer): sharpLib.sharpMod.sharpNs.Sharp = js.native
-  def apply(input: java.lang.String | nodeLib.Buffer, options: sharpLib.sharpMod.sharpNs.SharpOptions): sharpLib.sharpMod.sharpNs.Sharp = js.native
-  def apply(options: sharpLib.sharpMod.sharpNs.SharpOptions): sharpLib.sharpMod.sharpNs.Sharp = js.native
+  def apply(): Sharp = js.native
+  def apply(input: java.lang.String | nodeLib.Buffer): Sharp = js.native
+  def apply(input: java.lang.String | nodeLib.Buffer, options: SharpOptions): Sharp = js.native
+  def apply(options: SharpOptions): Sharp = js.native
   //#endregion
   //#region Utility functions
   /**
@@ -41,9 +39,9 @@ object ^ extends js.Object {
     * @param options Object with the following attributes, or Boolean where true uses default cache settings and false removes all caching (optional, default true)
     * @returns The cache results.
     */
-  def cache(): sharpLib.sharpMod.sharpNs.CacheResult = js.native
-  def cache(options: scala.Boolean): sharpLib.sharpMod.sharpNs.CacheResult = js.native
-  def cache(options: sharpLib.sharpMod.sharpNs.CacheOptions): sharpLib.sharpMod.sharpNs.CacheResult = js.native
+  def cache(): CacheResult = js.native
+  def cache(options: scala.Boolean): CacheResult = js.native
+  def cache(options: CacheOptions): CacheResult = js.native
   /**
     * Gets or sets the number of threads libvips' should create to process each image.
     * The default value is the number of CPU cores. A value of 0 will reset to this default.
@@ -57,7 +55,7 @@ object ^ extends js.Object {
     * Provides access to internal task counters.
     * @returns Object containing task counters
     */
-  def counters(): sharpLib.sharpMod.sharpNs.SharpCounters = js.native
+  def counters(): SharpCounters = js.native
   /**
     * Get and set use of SIMD vector unit instructions. Requires libvips to have been compiled with liborc support.
     * Improves the performance of resize, blur and sharpen operations by taking advantage of the SIMD vector unit of the CPU, e.g. Intel SSE and ARM NEON.

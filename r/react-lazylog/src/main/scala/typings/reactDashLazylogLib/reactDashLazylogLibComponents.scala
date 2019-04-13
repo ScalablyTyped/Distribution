@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object reactDashLazylogLibComponents {
   @scala.inline
-  def LazyLog: reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLazyLogMod.LazyLogProps] = js.constructorOf[reactDashLazylogLib.buildLazyLogMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLazyLogMod.LazyLogProps]]
+  def LazyLog: reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLazyLogMod.LazyLogProps] = js.constructorOf[reactDashLazylogLib.buildLazyLogMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLazyLogMod.LazyLogProps]]
   @scala.inline
-  def Line: reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLineMod.LineProps] = js.constructorOf[reactDashLazylogLib.buildLineMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLineMod.LineProps]]
+  def Line: reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLineMod.LineProps] = js.constructorOf[reactDashLazylogLib.buildLineMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLineMod.LineProps]]
   @scala.inline
-  def LineContent: reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLineContentMod.LineContentProps] = js.constructorOf[reactDashLazylogLib.buildLineContentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLineContentMod.LineContentProps]]
+  def LineContent: reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLineContentMod.LineContentProps] = js.constructorOf[reactDashLazylogLib.buildLineContentMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLineContentMod.LineContentProps]]
   @scala.inline
-  def LineNumber: reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLineNumberMod.LineNumberProps] = js.constructorOf[reactDashLazylogLib.buildLineNumberMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLineNumberMod.LineNumberProps]]
+  def LineNumber: reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLineNumberMod.LineNumberProps] = js.constructorOf[reactDashLazylogLib.buildLineNumberMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLineNumberMod.LineNumberProps]]
   @scala.inline
-  def LinePart: reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLinePartMod.LinePartProps] = js.constructorOf[reactDashLazylogLib.buildLinePartMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildLinePartMod.LinePartProps]]
+  def LinePart: reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLinePartMod.LinePartProps] = js.constructorOf[reactDashLazylogLib.buildLinePartMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLazylogLib.buildLinePartMod.LinePartProps]]
   @scala.inline
-  def Loading: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[reactDashLazylogLib.buildLoadingMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  def Loading: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[reactDashLazylogLib.buildLoadingMod.default].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def ScrollFollow: reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildScrollFollowMod.ScrollFollowProps] = js.constructorOf[reactDashLazylogLib.buildScrollFollowMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashLazylogLib.buildScrollFollowMod.ScrollFollowProps]]
+  def ScrollFollow: reactLib.reactMod.ComponentType[reactDashLazylogLib.buildScrollFollowMod.ScrollFollowProps] = js.constructorOf[reactDashLazylogLib.buildScrollFollowMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLazylogLib.buildScrollFollowMod.ScrollFollowProps]]
   @scala.inline
   def LazyLogProps: reactDashLazylogLib.buildLazyLogMod.LazyLogProps.type = reactDashLazylogLib.buildLazyLogMod.LazyLogProps
   type LazyLogProps = reactDashLazylogLib.buildLazyLogMod.LazyLogProps

@@ -18,7 +18,7 @@ object distUtilsMod extends js.Object {
   def getIn(obj: js.Any, key: js.Array[java.lang.String], `def`: js.Any, p: scala.Double): js.Any = js.native
   def isEmptyChildren(children: js.Any): scala.Boolean = js.native
   def isFunction(obj: js.Any): /* is std.Function */ scala.Boolean = js.native
-  def isInputEvent(value: js.Any): /* is react.react.React.SyntheticEvent<any, react.Event> */ scala.Boolean = js.native
+  def isInputEvent(value: js.Any): /* is react.react.SyntheticEvent<any, react.Event> */ scala.Boolean = js.native
   def isInteger(obj: js.Any): scala.Boolean = js.native
   def isNaN(obj: js.Any): scala.Boolean = js.native
   def isObject(obj: js.Any): scala.Boolean = js.native

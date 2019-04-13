@@ -7,23 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "GregorianDate")
 @js.native
-class GregorianDate ()
-  extends cesiumLib.cesiumMod.CesiumNs.GregorianDate {
-  /* CompleteClass */
-  override var day: scala.Double = js.native
-  /* CompleteClass */
-  override var hour: scala.Double = js.native
-  /* CompleteClass */
-  override var isLeapSecond: scala.Boolean = js.native
-  /* CompleteClass */
-  override var millisecond: scala.Double = js.native
-  /* CompleteClass */
-  override var minute: scala.Double = js.native
-  /* CompleteClass */
-  override var month: scala.Double = js.native
-  /* CompleteClass */
-  override var second: scala.Double = js.native
-  /* CompleteClass */
-  override var year: scala.Double = js.native
+class GregorianDate () extends js.Object {
+  var day: scala.Double = js.native
+  var hour: scala.Double = js.native
+  var isLeapSecond: scala.Boolean = js.native
+  var millisecond: scala.Double = js.native
+  var minute: scala.Double = js.native
+  var month: scala.Double = js.native
+  var second: scala.Double = js.native
+  var year: scala.Double = js.native
 }
 

@@ -21,7 +21,7 @@ org.scalablytyped.runtime.Instantiable1[
       ], 
       js.Promise[js.Object]
     ] {
-  @JSName(org.scalablytyped.runtime.Symbol.species)
+  @JSName(scala.scalajs.js.Symbol.species)
   val species: PromiseConstructor = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises

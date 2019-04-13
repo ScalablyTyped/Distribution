@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation._
 
 trait CardHeaderProps extends js.Object {
   var actAsExpander: js.UndefOr[scala.Boolean] = js.undefined
-  var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var avatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var closeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var closeIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var openIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var openIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var subtitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var subtitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var subtitleColor: js.UndefOr[java.lang.String] = js.undefined
-  var subtitleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var textStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var subtitleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var textStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var titleColor: js.UndefOr[java.lang.String] = js.undefined
-  var titleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var titleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CardHeaderProps {
   @scala.inline
   def apply(
     actAsExpander: js.UndefOr[scala.Boolean] = js.undefined,
-    avatar: reactLib.reactMod.ReactNs.ReactNode = null,
+    avatar: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    closeIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    closeIcon: reactLib.reactMod.ReactNode = null,
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    openIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
+    openIcon: reactLib.reactMod.ReactNode = null,
     showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    subtitle: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    subtitle: reactLib.reactMod.ReactNode = null,
     subtitleColor: java.lang.String = null,
-    subtitleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    textStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    subtitleStyle: reactLib.reactMod.CSSProperties = null,
+    textStyle: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     titleColor: java.lang.String = null,
-    titleStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    titleStyle: reactLib.reactMod.CSSProperties = null
   ): CardHeaderProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)

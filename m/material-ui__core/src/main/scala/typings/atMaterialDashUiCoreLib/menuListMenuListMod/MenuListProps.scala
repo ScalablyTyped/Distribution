@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[MenuListClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var disableListWrap: js.UndefOr[scala.Boolean] = js.undefined
-  var onKeyDown: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.reactMod.ReactNs.KeyboardEvent[_]]
-  ] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.ReactEventHandler[reactLib.reactMod.KeyboardEvent[_]]] = js.undefined
 }
 
 object MenuListProps {
@@ -21,9 +19,9 @@ object MenuListProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MenuListClassKey]] = null,
     disableListWrap: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.reactMod.ReactNs.KeyboardEvent[_]] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    onKeyDown: reactLib.reactMod.ReactEventHandler[reactLib.reactMod.KeyboardEvent[_]] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): MenuListProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

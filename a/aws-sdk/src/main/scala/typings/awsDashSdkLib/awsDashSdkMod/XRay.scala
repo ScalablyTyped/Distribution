@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class XRay ()
   extends awsDashSdkLib.clientsAllMod.XRay {
-  def this(options: awsDashSdkLib.clientsXrayMod.XRayNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsXrayMod.ClientConfiguration) = this()
 }
 

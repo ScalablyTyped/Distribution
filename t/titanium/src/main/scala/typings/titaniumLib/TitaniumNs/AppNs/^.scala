@@ -102,6 +102,10 @@ object ^ extends js.Object {
   		 */
   val sessionId: java.lang.String = js.native
   /**
+  		 * Indicates whether or not the user interaction shoud be tracked.
+  		 */
+  var trackUserInteraction: scala.Boolean = js.native
+  /**
   		 * Application URL, from `tiapp.xml`.
   		 */
   val url: java.lang.String = js.native

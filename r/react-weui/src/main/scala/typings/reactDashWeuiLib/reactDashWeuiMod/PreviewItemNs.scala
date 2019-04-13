@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("react-weui", "PreviewItem")
 @js.native
 object PreviewItemNs extends js.Object {
-  val defaultProps: reactDashWeuiLib.Anon_LabelValue = js.native
+  @js.native
+  object defaultProps extends js.Object {
+    var label: scala.Boolean = js.native
+    var value: scala.Boolean = js.native
+  }
+  
   @JSName("propTypes")
   @js.native
   object propTypesNs extends js.Object {

@@ -34,6 +34,21 @@ object atAngularCoreLibStrings {
   sealed trait RelativeInjectorLocationFlags extends js.Object
   
   @js.native
+  sealed trait __annotations__ extends js.Object
+  
+  @js.native
+  sealed trait __ngContext__ extends js.Object
+  
+  @js.native
+  sealed trait __parameters__ extends js.Object
+  
+  @js.native
+  sealed trait __prop__metadata__ extends js.Object
+  
+  @js.native
+  sealed trait __source extends js.Object
+  
+  @js.native
   sealed trait any extends js.Object
   
   @js.native
@@ -50,6 +65,12 @@ object atAngularCoreLibStrings {
   
   @js.native
   sealed trait element extends js.Object
+  
+  @js.native
+  sealed trait ng extends js.Object
+  
+  @js.native
+  sealed trait ngProjectAs extends js.Object
   
   @js.native
   sealed trait noop extends js.Object
@@ -85,6 +106,16 @@ object atAngularCoreLibStrings {
   @scala.inline
   def RelativeInjectorLocationFlags: RelativeInjectorLocationFlags = "RelativeInjectorLocationFlags".asInstanceOf[RelativeInjectorLocationFlags]
   @scala.inline
+  def __annotations__ : __annotations__ = "__annotations__".asInstanceOf[__annotations__]
+  @scala.inline
+  def __ngContext__ : __ngContext__ = "__ngContext__".asInstanceOf[__ngContext__]
+  @scala.inline
+  def __parameters__ : __parameters__ = "__parameters__".asInstanceOf[__parameters__]
+  @scala.inline
+  def __prop__metadata__ : __prop__metadata__ = "__prop__metadata__".asInstanceOf[__prop__metadata__]
+  @scala.inline
+  def __source: __source = "__source".asInstanceOf[__source]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
@@ -96,6 +127,10 @@ object atAngularCoreLibStrings {
   def document: document = "document".asInstanceOf[document]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
+  @scala.inline
+  def ng: ng = "ng".asInstanceOf[ng]
+  @scala.inline
+  def ngProjectAs: ngProjectAs = "ngProjectAs".asInstanceOf[ngProjectAs]
   @scala.inline
   def noop: noop = "noop".asInstanceOf[noop]
   @scala.inline

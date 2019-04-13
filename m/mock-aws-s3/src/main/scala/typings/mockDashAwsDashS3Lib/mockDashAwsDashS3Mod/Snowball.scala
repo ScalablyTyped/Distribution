@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Snowball ()
   extends awsDashSdkLib.awsDashSdkMod.Snowball {
-  def this(options: awsDashSdkLib.clientsSnowballMod.SnowballNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSnowballMod.ClientConfiguration) = this()
 }
 

@@ -19,6 +19,6 @@ trait Anon_Default extends js.Object {
   	```
   	 */
   def apply(): js.Promise[scala.Unit] = js.native
-  def apply(options: waitDashForDashLocalhostLib.waitDashForDashLocalhostMod.waitForLocalhostNs.Options): js.Promise[scala.Unit] = js.native
+  def apply(options: waitDashForDashLocalhostLib.waitDashForDashLocalhostMod.Options): js.Promise[scala.Unit] = js.native
 }
 

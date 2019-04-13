@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "ConstantProperty")
 @js.native
-class ConstantProperty ()
-  extends cesiumLib.cesiumMod.CesiumNs.ConstantProperty {
+class ConstantProperty () extends Property {
   def this(value: js.Any) = this()
+  def setValue(value: js.Any): scala.Unit = js.native
 }
 

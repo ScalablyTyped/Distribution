@@ -34,7 +34,6 @@ object ^ extends js.Object {
   val set: js.Function1[/* options */ java.lang.String, scala.Unit] = js.native
   val sort: shelljsLib.shelljsMod.SortFunction = js.native
   val tail: shelljsLib.shelljsMod.TailFunction = js.native
-  val target: shelljsLib.Anon_All = js.native
   val tempdir: js.Function0[shelljsLib.shelljsMod.ShellString] = js.native
   val touch: shelljsLib.shelljsMod.TouchFunction = js.native
   val uniq: shelljsLib.shelljsMod.UniqFunction = js.native

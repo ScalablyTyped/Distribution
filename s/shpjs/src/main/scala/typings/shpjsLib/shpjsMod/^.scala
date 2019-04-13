@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("shpjs", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[shpjsLib.shpjsMod.shpjsNs.ShpJS]
+  extends org.scalablytyped.runtime.TopLevel[ShpJS]
 

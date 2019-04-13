@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BaseButtonProps extends js.Object {
   var block: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var ghost: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
@@ -22,7 +22,7 @@ object BaseButtonProps {
   @scala.inline
   def apply(
     block: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     ghost: js.UndefOr[scala.Boolean] = js.undefined,
     icon: java.lang.String = null,

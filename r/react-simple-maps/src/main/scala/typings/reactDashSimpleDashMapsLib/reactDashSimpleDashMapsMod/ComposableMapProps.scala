@@ -13,7 +13,7 @@ trait ComposableMapProps extends js.Object {
   var projection: js.UndefOr[java.lang.String | ProjectionFunction] = js.undefined
   var projectionConfig: js.UndefOr[stdLib.Partial[ProjectionConfig]] = js.undefined
   var showCenter: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var viewBox: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
@@ -28,7 +28,7 @@ object ComposableMapProps {
     projection: java.lang.String | ProjectionFunction = null,
     projectionConfig: stdLib.Partial[ProjectionConfig] = null,
     showCenter: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     viewBox: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): ComposableMapProps = {

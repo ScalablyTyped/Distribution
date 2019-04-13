@@ -8,7 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-restify-utils/dts/constants", JSImport.Namespace)
 @js.native
 object dtsConstantsMod extends js.Object {
-  val METADATA_KEY: inversifyDashRestifyDashUtilsLib.Anon_ControllerControllerMethod = js.native
-  val TYPE: inversifyDashRestifyDashUtilsLib.Anon_Controller = js.native
+  @js.native
+  object METADATA_KEY extends js.Object {
+    var controller: java.lang.String = js.native
+    var controllerMethod: java.lang.String = js.native
+  }
+  
+  @js.native
+  object TYPE extends js.Object {
+    var Controller: js.Symbol = js.native
+  }
+  
 }
 

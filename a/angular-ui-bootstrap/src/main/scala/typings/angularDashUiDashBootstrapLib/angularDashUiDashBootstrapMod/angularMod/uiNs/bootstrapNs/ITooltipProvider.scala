@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITooltipProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   /**
     * Provide a set of defaults for certain tooltip and popover attributes.
     */

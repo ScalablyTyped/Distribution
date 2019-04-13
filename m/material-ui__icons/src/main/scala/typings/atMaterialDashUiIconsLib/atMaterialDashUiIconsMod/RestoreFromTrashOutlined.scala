@@ -16,9 +16,9 @@ class RestoreFromTrashOutlined protected ()
 @JSImport("@material-ui/icons", "RestoreFromTrashOutlined")
 @js.native
 class RestoreFromTrashOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

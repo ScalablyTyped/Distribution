@@ -9,18 +9,15 @@ import scala.scalajs.js.annotation._
 trait Generator
   extends nodeLib.eventsMod.EventEmitter {
   var appname: java.lang.String = js.native
-  var config: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Storage = js.native
+  var config: Storage = js.native
   var description: java.lang.String = js.native
   var env: yeomanDashGeneratorLib.Anon_E = js.native
-  var fs: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.MemFsEditor = js.native
+  var fs: MemFsEditor = js.native
   var options: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var resolved: java.lang.String = js.native
   // actions/user mixin
   val user: yeomanDashGeneratorLib.Anon_Git = js.native
-  def argument(
-    name: java.lang.String,
-    config: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.ArgumentConfig
-  ): this.type = js.native
+  def argument(name: java.lang.String, config: ArgumentConfig): this.type = js.native
   // actions/help mixin
   def argumentsHelp(): java.lang.String = js.native
   // actions/install mixin
@@ -70,7 +67,7 @@ trait Generator
     *
     */
   def installDependencies(): scala.Unit = js.native
-  def installDependencies(options: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.InstallOptions): scala.Unit = js.native
+  def installDependencies(options: InstallOptions): scala.Unit = js.native
   def log(): scala.Unit = js.native
   def log(message: java.lang.String): scala.Unit = js.native
   def log(message: java.lang.String, context: js.Any): scala.Unit = js.native
@@ -90,12 +87,9 @@ trait Generator
   def npmInstall(pkgs: js.Array[java.lang.String]): scala.Unit = js.native
   def npmInstall(pkgs: js.Array[java.lang.String], options: js.Object): scala.Unit = js.native
   def npmInstall(pkgs: js.Array[java.lang.String], options: js.Object, spawnOptions: js.Object): scala.Unit = js.native
-  def option(
-    name: java.lang.String,
-    config: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.OptionConfig
-  ): this.type = js.native
+  def option(name: java.lang.String, config: OptionConfig): this.type = js.native
   def optionsHelp(): java.lang.String = js.native
-  def prompt(questions: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Questions): js.Promise[yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Answers] = js.native
+  def prompt(questions: Questions): js.Promise[Answers] = js.native
   def registerTransformStream(stream: js.Array[js.Object]): this.type = js.native
   def registerTransformStream(stream: js.Object): this.type = js.native
   def rootGeneratorName(): java.lang.String = js.native

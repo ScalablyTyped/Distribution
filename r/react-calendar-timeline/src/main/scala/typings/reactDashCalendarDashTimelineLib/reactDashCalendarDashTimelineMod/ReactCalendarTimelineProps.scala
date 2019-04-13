@@ -19,7 +19,7 @@ trait ReactCalendarTimelineProps extends js.Object {
   var groupRenderer: js.UndefOr[
     js.Function1[
       /* props */ reactDashCalendarDashTimelineLib.Anon_Group, 
-      reactLib.reactMod.ReactNs.ReactElement[js.Object]
+      reactLib.reactMod.ReactElement[js.Object]
     ]
   ] = js.undefined
   var groups: js.Array[TimelineGroup]
@@ -31,7 +31,7 @@ trait ReactCalendarTimelineProps extends js.Object {
   var itemRenderer: js.UndefOr[
     js.Function1[
       /* props */ reactDashCalendarDashTimelineLib.Anon_Context, 
-      reactLib.reactMod.ReactNs.ReactElement[js.Object]
+      reactLib.reactMod.ReactElement[js.Object]
     ]
   ] = js.undefined
   var itemTouchSendsClick: js.UndefOr[scala.Boolean] = js.undefined
@@ -100,11 +100,11 @@ trait ReactCalendarTimelineProps extends js.Object {
     js.Function2[/* canvasTimeStart */ scala.Double, /* canvasTimeEnd */ scala.Double, _]
   ] = js.undefined
   var onZoom: js.UndefOr[js.Function1[/* timelineContext */ TimelineContext, _]] = js.undefined
-  var rightSidebarContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var rightSidebarContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var rightSidebarWidth: js.UndefOr[scala.Double] = js.undefined
   var selected: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var showCursorLine: js.UndefOr[scala.Boolean] = js.undefined
-  var sidebarContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var sidebarContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var sidebarWidth: js.UndefOr[scala.Double] = js.undefined
   var stackItems: js.UndefOr[scala.Boolean] = js.undefined
   var stickyHeader: js.UndefOr[scala.Boolean] = js.undefined
@@ -130,13 +130,13 @@ object ReactCalendarTimelineProps {
     defaultTimeEnd: js.Any = null,
     defaultTimeStart: js.Any = null,
     dragSnap: scala.Int | scala.Double = null,
-    groupRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Group => reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    groupRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Group => reactLib.reactMod.ReactElement[js.Object] = null,
     headerLabelFormats: TimelineHeaderLabelFormat = null,
     headerLabelGroupHeight: scala.Int | scala.Double = null,
     headerLabelHeight: scala.Int | scala.Double = null,
     headerRef: js.Any = null,
     itemHeightRatio: scala.Int | scala.Double = null,
-    itemRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Context => reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    itemRenderer: /* props */ reactDashCalendarDashTimelineLib.Anon_Context => reactLib.reactMod.ReactElement[js.Object] = null,
     itemTouchSendsClick: js.UndefOr[scala.Boolean] = js.undefined,
     keys: reactDashCalendarDashTimelineLib.Anon_GroupIdKey = null,
     lineHeight: scala.Int | scala.Double = null,
@@ -157,11 +157,11 @@ object ReactCalendarTimelineProps {
     onTimeChange: (/* visibleTimeStart */ scala.Double, /* visibleTimeEnd */ scala.Double, /* updateScrollCanvas */ js.Function2[/* start */ scala.Double, /* end */ scala.Double, scala.Unit]) => _ = null,
     onTimeInit: (/* canvasTimeStart */ scala.Double, /* canvasTimeEnd */ scala.Double) => _ = null,
     onZoom: /* timelineContext */ TimelineContext => _ = null,
-    rightSidebarContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightSidebarContent: reactLib.reactMod.ReactNode = null,
     rightSidebarWidth: scala.Int | scala.Double = null,
     selected: js.Array[scala.Double] = null,
     showCursorLine: js.UndefOr[scala.Boolean] = js.undefined,
-    sidebarContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    sidebarContent: reactLib.reactMod.ReactNode = null,
     sidebarWidth: scala.Int | scala.Double = null,
     stackItems: js.UndefOr[scala.Boolean] = js.undefined,
     stickyHeader: js.UndefOr[scala.Boolean] = js.undefined,

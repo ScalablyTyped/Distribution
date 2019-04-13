@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Pad out lines with spaces out to column `start` and then wrap until column
     * `stop`. If a word is longer than `stop - start` characters it will overflow.
     */
-  def apply(params: wordwrapLib.wordwrapMod.wordwrapNs.Options): wordwrapLib.Wrap = js.native
+  def apply(params: Options): wordwrapLib.Wrap = js.native
   /**
     * Pad out lines with spaces out to column `start` and then wrap until column
     * `stop`. If a word is longer than `stop - start` characters it will overflow.

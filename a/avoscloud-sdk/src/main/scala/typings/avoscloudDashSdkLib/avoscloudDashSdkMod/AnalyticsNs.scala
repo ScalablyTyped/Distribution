@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("avoscloud-sdk", "Analytics")
 @js.native
 object AnalyticsNs extends js.Object {
-  def track[T](name: java.lang.String, dimensions: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+  def track[T](name: java.lang.String, dimensions: js.Any): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
 }
 

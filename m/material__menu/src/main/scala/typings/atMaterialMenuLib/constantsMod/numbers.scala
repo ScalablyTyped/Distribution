@@ -31,10 +31,11 @@ object numbers {
     OFFSET_TO_MENU_HEIGHT_RATIO: atMaterialMenuLib.atMaterialMenuLibNumbers.`0DOT1`,
     SELECTED_TRIGGER_DELAY: atMaterialMenuLib.atMaterialMenuLibNumbers.`50`,
     TRANSITION_CLOSE_DURATION: atMaterialMenuLib.atMaterialMenuLibNumbers.`75`,
-    TRANSITION_OPEN_DURATION: atMaterialMenuLib.atMaterialMenuLibNumbers.`120`
+    TRANSITION_OPEN_DURATION: atMaterialMenuLib.atMaterialMenuLibNumbers.`120`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[scala.Double] = null
   ): numbers = {
     val __obj = js.Dynamic.literal(ANCHOR_TO_MENU_WIDTH_RATIO = ANCHOR_TO_MENU_WIDTH_RATIO, MARGIN_TO_EDGE = MARGIN_TO_EDGE, OFFSET_TO_MENU_HEIGHT_RATIO = OFFSET_TO_MENU_HEIGHT_RATIO, SELECTED_TRIGGER_DELAY = SELECTED_TRIGGER_DELAY, TRANSITION_CLOSE_DURATION = TRANSITION_CLOSE_DURATION, TRANSITION_OPEN_DURATION = TRANSITION_OPEN_DURATION)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

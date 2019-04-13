@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("event-emitter/all-off", JSImport.Namespace)
 @js.native
 object allDashOffMod extends js.Object {
-  def apply(emitter: eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter): scala.Unit = js.native
+  def apply(emitter: eventDashEmitterLib.eventDashEmitterMod.Emitter): scala.Unit = js.native
 }
 

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 object reactDashGatewayLibComponents {
   @scala.inline
-  def Gateway: reactLib.reactMod.ReactNs.ComponentType[reactDashGatewayLib.gatewayMod.GatewayNs.GatewayProps] = js.constructorOf[reactDashGatewayLib.gatewayMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashGatewayLib.gatewayMod.GatewayNs.GatewayProps]]
+  def Gateway: reactLib.reactMod.ComponentType[reactDashGatewayLib.gatewayMod.GatewayProps] = js.constructorOf[reactDashGatewayLib.gatewayMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashGatewayLib.gatewayMod.GatewayProps]]
   @scala.inline
-  def GatewayDest: reactLib.reactMod.ReactNs.ComponentType[reactDashGatewayLib.gatewayDestMod.GatewayDestNs.GatewayDestProps] = js.constructorOf[reactDashGatewayLib.gatewayDestMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashGatewayLib.gatewayDestMod.GatewayDestNs.GatewayDestProps]]
+  def GatewayDest: reactLib.reactMod.ComponentType[reactDashGatewayLib.gatewayDestMod.GatewayDestProps] = js.constructorOf[reactDashGatewayLib.gatewayDestMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashGatewayLib.gatewayDestMod.GatewayDestProps]]
   @scala.inline
-  def GatewayProvider: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[reactDashGatewayLib.gatewayProviderMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  def GatewayProvider: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[reactDashGatewayLib.gatewayProviderMod.^].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def GatewayDestProps: reactDashGatewayLib.gatewayDestMod.GatewayDestNs.GatewayDestProps.type = reactDashGatewayLib.gatewayDestMod.GatewayDestNs.GatewayDestProps
-  type GatewayDestProps = reactDashGatewayLib.gatewayDestMod.GatewayDestNs.GatewayDestProps
+  def GatewayDestProps: reactDashGatewayLib.gatewayDestMod.GatewayDestProps.type = reactDashGatewayLib.gatewayDestMod.GatewayDestProps
+  type GatewayDestProps = reactDashGatewayLib.gatewayDestMod.GatewayDestProps
   @scala.inline
-  def GatewayProps: reactDashGatewayLib.gatewayMod.GatewayNs.GatewayProps.type = reactDashGatewayLib.gatewayMod.GatewayNs.GatewayProps
-  type GatewayProps = reactDashGatewayLib.gatewayMod.GatewayNs.GatewayProps
+  def GatewayProps: reactDashGatewayLib.gatewayMod.GatewayProps.type = reactDashGatewayLib.gatewayMod.GatewayProps
+  type GatewayProps = reactDashGatewayLib.gatewayMod.GatewayProps
   type Object = js.Object
 }
 

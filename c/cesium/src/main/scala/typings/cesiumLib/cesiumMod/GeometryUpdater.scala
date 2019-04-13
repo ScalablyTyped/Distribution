@@ -7,55 +7,29 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "GeometryUpdater")
 @js.native
-class GeometryUpdater protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.GeometryUpdater {
+class GeometryUpdater protected () extends js.Object {
   def this(options: cesiumLib.Anon_Entity) = this()
-  /* CompleteClass */
-  override val classificationTypeProperty: cesiumLib.cesiumMod.CesiumNs.Property = js.native
-  /* CompleteClass */
-  override val entity: cesiumLib.cesiumMod.CesiumNs.Entity = js.native
-  /* CompleteClass */
-  override val fillEnabled: scala.Boolean = js.native
-  /* CompleteClass */
-  override val fillMaterialProperty: cesiumLib.cesiumMod.CesiumNs.MaterialProperty = js.native
-  /* CompleteClass */
-  override val geometryChanged: scala.Boolean = js.native
-  /* CompleteClass */
-  override val hasConstantFill: scala.Boolean = js.native
-  /* CompleteClass */
-  override val hasConstantOutline: scala.Boolean = js.native
-  /* CompleteClass */
-  override val id: java.lang.String = js.native
-  /* CompleteClass */
-  override val isClosed: scala.Boolean = js.native
-  /* CompleteClass */
-  override val isDynamic: scala.Boolean = js.native
-  /* CompleteClass */
-  override val outlineColorProperty: cesiumLib.cesiumMod.CesiumNs.Property = js.native
-  /* CompleteClass */
-  override val outlineEnabled: scala.Boolean = js.native
-  /* CompleteClass */
-  override val outlineWidth: scala.Double = js.native
-  /* CompleteClass */
-  override val readonlydistanceDisplayConditionProperty: cesiumLib.cesiumMod.CesiumNs.Property = js.native
-  /* CompleteClass */
-  override val shadowsProperty: cesiumLib.cesiumMod.CesiumNs.Property = js.native
-  /* CompleteClass */
-  override def createDynamicUpdater(
-    primitives: cesiumLib.cesiumMod.CesiumNs.PrimitiveCollection,
-    groundPrimitives: cesiumLib.cesiumMod.CesiumNs.PrimitiveCollection
-  ): cesiumLib.cesiumMod.CesiumNs.DynamicGeometryUpdater = js.native
-  /* CompleteClass */
-  override def createFillGeometryInstance(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): cesiumLib.cesiumMod.CesiumNs.GeometryInstance = js.native
-  /* CompleteClass */
-  override def createOutlineGeometryInstance(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): cesiumLib.cesiumMod.CesiumNs.GeometryInstance = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
-  /* CompleteClass */
-  override def isFilled(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): scala.Boolean = js.native
-  /* CompleteClass */
-  override def isOutlineVisible(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): scala.Boolean = js.native
+  val classificationTypeProperty: Property = js.native
+  val entity: Entity = js.native
+  val fillEnabled: scala.Boolean = js.native
+  val fillMaterialProperty: MaterialProperty = js.native
+  val geometryChanged: scala.Boolean = js.native
+  val hasConstantFill: scala.Boolean = js.native
+  val hasConstantOutline: scala.Boolean = js.native
+  val id: java.lang.String = js.native
+  val isClosed: scala.Boolean = js.native
+  val isDynamic: scala.Boolean = js.native
+  val outlineColorProperty: Property = js.native
+  val outlineEnabled: scala.Boolean = js.native
+  val outlineWidth: scala.Double = js.native
+  val readonlydistanceDisplayConditionProperty: Property = js.native
+  val shadowsProperty: Property = js.native
+  def createDynamicUpdater(primitives: PrimitiveCollection, groundPrimitives: PrimitiveCollection): DynamicGeometryUpdater = js.native
+  def createFillGeometryInstance(time: JulianDate): GeometryInstance = js.native
+  def createOutlineGeometryInstance(time: JulianDate): GeometryInstance = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
+  def isFilled(time: JulianDate): scala.Boolean = js.native
+  def isOutlineVisible(time: JulianDate): scala.Boolean = js.native
 }
 

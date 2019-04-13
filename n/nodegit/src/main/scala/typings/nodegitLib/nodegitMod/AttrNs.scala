@@ -18,6 +18,5 @@ object AttrNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.attrMod.AttrNs.STATES with scala.Double] = js.native
   }
   
-  type STATES = nodegitLib.attrMod.AttrNs.STATES
 }
 

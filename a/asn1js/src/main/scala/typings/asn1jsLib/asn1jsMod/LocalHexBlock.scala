@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "LocalHexBlock")
 @js.native
-class LocalHexBlock protected ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalHexBlock {
+class LocalHexBlock protected () extends ILocalHexBlock {
   def this(params: js.Any) = this()
 }
 

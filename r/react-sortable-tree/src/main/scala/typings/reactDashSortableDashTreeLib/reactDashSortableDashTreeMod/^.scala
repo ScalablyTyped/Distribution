@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-sortable-tree", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val SortableTreeWithoutDndContext: reactLib.reactMod.ReactNs.ComponentClass[ReactSortableTreeProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[ReactSortableTreeProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val SortableTreeWithoutDndContext: reactLib.reactMod.ComponentClass[ReactSortableTreeProps, reactLib.reactMod.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[ReactSortableTreeProps, reactLib.reactMod.ComponentState] = js.native
   def addNodeUnderParent(data: FullTree with reactDashSortableDashTreeLib.Anon_AddAsFirstChild): FullTree with TreeIndex = js.native
   def changeNodeAtPath(data: FullTree with TreePath with reactDashSortableDashTreeLib.Anon_GetNodeKeyIgnoreCollapsed): js.Array[TreeItem] = js.native
   def defaultGetNodeKey(data: TreeIndex): scala.Double = js.native

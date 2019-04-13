@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Index
   extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("$scope")
-  var $scope: angularLib.angularMod.angularNs.IScope
+  var $scope: angularLib.angularMod.IScope
   @JSName("$template")
   var $template: java.lang.String
 }
@@ -16,7 +16,7 @@ trait Anon_Index
 object Anon_Index {
   @scala.inline
   def apply(
-    $scope: angularLib.angularMod.angularNs.IScope,
+    $scope: angularLib.angularMod.IScope,
     $template: java.lang.String,
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Index = {

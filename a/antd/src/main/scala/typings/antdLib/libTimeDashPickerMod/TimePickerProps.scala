@@ -10,12 +10,10 @@ trait TimePickerProps extends js.Object {
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var clearText: js.UndefOr[java.lang.String] = js.undefined
-  var defaultOpenValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
-  var defaultValue: js.UndefOr[
-    momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment]
-  ] = js.undefined
+  var defaultOpenValue: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
+  var defaultValue: js.UndefOr[momentLib.momentMod.Moment | js.Array[momentLib.momentMod.Moment]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var disabledHours: js.UndefOr[js.Function0[js.Array[scala.Double]]] = js.undefined
   var disabledMinutes: js.UndefOr[js.Function1[/* selectedHour */ scala.Double, js.Array[scala.Double]]] = js.undefined
@@ -38,26 +36,22 @@ trait TimePickerProps extends js.Object {
     js.Function1[/* ampm */ antdLib.antdLibStrings.AM | antdLib.antdLibStrings.PM, scala.Unit]
   ] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[
-      /* time */ momentLib.momentMod.momentNs.Moment, 
-      /* timeString */ java.lang.String, 
-      scala.Unit
-    ]
+    js.Function2[/* time */ momentLib.momentMod.Moment, /* timeString */ java.lang.String, scala.Unit]
   ] = js.undefined
   var onOpenChange: js.UndefOr[js.Function1[/* open */ scala.Boolean, scala.Unit]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var popupClassName: js.UndefOr[java.lang.String] = js.undefined
-  var popupStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var popupStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var secondStep: js.UndefOr[scala.Double] = js.undefined
   var size: js.UndefOr[
     antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var use12Hours: js.UndefOr[scala.Boolean] = js.undefined
-  var value: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var value: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
 }
 
 object TimePickerProps {
@@ -67,10 +61,10 @@ object TimePickerProps {
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    clearIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    clearIcon: reactLib.reactMod.ReactNode = null,
     clearText: java.lang.String = null,
-    defaultOpenValue: momentLib.momentMod.momentNs.Moment = null,
-    defaultValue: momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = null,
+    defaultOpenValue: momentLib.momentMod.Moment = null,
+    defaultValue: momentLib.momentMod.Moment | js.Array[momentLib.momentMod.Moment] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     disabledHours: () => js.Array[scala.Double] = null,
     disabledMinutes: /* selectedHour */ scala.Double => js.Array[scala.Double] = null,
@@ -84,19 +78,19 @@ object TimePickerProps {
     locale: TimePickerLocale = null,
     minuteStep: scala.Int | scala.Double = null,
     onAmPmChange: /* ampm */ antdLib.antdLibStrings.AM | antdLib.antdLibStrings.PM => scala.Unit = null,
-    onChange: (/* time */ momentLib.momentMod.momentNs.Moment, /* timeString */ java.lang.String) => scala.Unit = null,
+    onChange: (/* time */ momentLib.momentMod.Moment, /* timeString */ java.lang.String) => scala.Unit = null,
     onOpenChange: /* open */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
     popupClassName: java.lang.String = null,
-    popupStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    popupStyle: reactLib.reactMod.CSSProperties = null,
     prefixCls: java.lang.String = null,
     secondStep: scala.Int | scala.Double = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    suffixIcon: reactLib.reactMod.ReactNode = null,
     use12Hours: js.UndefOr[scala.Boolean] = js.undefined,
-    value: momentLib.momentMod.momentNs.Moment = null
+    value: momentLib.momentMod.Moment = null
   ): TimePickerProps = {
     val __obj = js.Dynamic.literal()
     if (addon != null) __obj.updateDynamic("addon")(addon)

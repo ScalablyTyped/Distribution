@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class KinesisVideoArchivedMedia ()
   extends awsDashSdkLib.awsDashSdkMod.KinesisVideoArchivedMedia {
-  def this(options: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.ClientConfiguration) = this()
 }
 

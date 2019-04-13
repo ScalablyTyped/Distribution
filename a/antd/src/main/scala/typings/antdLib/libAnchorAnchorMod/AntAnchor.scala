@@ -9,7 +9,7 @@ trait AntAnchor extends js.Object {
   var activeLink: java.lang.String | scala.Null
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* link */ antdLib.Anon_Href, 
       scala.Unit
     ]
@@ -26,7 +26,7 @@ object AntAnchor {
     scrollTo: java.lang.String => scala.Unit,
     unregisterLink: java.lang.String => scala.Unit,
     activeLink: java.lang.String = null,
-    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* link */ antdLib.Anon_Href) => scala.Unit = null
+    onClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* link */ antdLib.Anon_Href) => scala.Unit = null
   ): AntAnchor = {
     val __obj = js.Dynamic.literal(registerLink = js.Any.fromFunction1(registerLink), scrollTo = js.Any.fromFunction1(scrollTo), unregisterLink = js.Any.fromFunction1(unregisterLink))
     if (activeLink != null) __obj.updateDynamic("activeLink")(activeLink)

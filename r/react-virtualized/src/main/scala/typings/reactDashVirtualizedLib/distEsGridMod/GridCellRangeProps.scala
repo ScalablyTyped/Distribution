@@ -22,10 +22,10 @@ trait GridCellRangeProps extends js.Object {
   var rowStopIndex: scala.Double = js.native
   var scrollLeft: scala.Double = js.native
   var scrollTop: scala.Double = js.native
-  var styleCache: reactDashVirtualizedLib.reactDashVirtualizedMod.Map[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var styleCache: reactDashVirtualizedLib.reactDashVirtualizedMod.Map[reactLib.reactMod.CSSProperties] = js.native
   var verticalOffsetAdjustment: scala.Double = js.native
   var visibleColumnIndices: VisibleCellRange = js.native
   var visibleRowIndices: VisibleCellRange = js.native
-  def cellRenderer(props: GridCellProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def cellRenderer(props: GridCellProps): reactLib.reactMod.ReactNode = js.native
 }
 

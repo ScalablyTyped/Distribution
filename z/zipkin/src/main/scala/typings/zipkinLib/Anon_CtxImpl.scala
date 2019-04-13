@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CtxImpl extends js.Object {
-  var ctxImpl: zipkinLib.zipkinMod.zipkinNs.Context[zipkinLib.zipkinMod.zipkinNs.TraceId]
-  var localEndpoint: js.UndefOr[zipkinLib.zipkinMod.zipkinNs.modelNs.Endpoint] = js.undefined
+  var ctxImpl: zipkinLib.zipkinMod.Context[zipkinLib.zipkinMod.TraceId]
+  var localEndpoint: js.UndefOr[zipkinLib.zipkinMod.modelNs.Endpoint] = js.undefined
   var localServiceName: js.UndefOr[java.lang.String] = js.undefined
   var log: js.UndefOr[stdLib.Console] = js.undefined
-  var recorder: zipkinLib.zipkinMod.zipkinNs.Recorder
-  var sampler: js.UndefOr[zipkinLib.zipkinMod.zipkinNs.samplerNs.Sampler] = js.undefined
+  var recorder: zipkinLib.zipkinMod.Recorder
+  var sampler: js.UndefOr[zipkinLib.zipkinMod.samplerNs.Sampler] = js.undefined
   var traceId128Bit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Anon_CtxImpl {
   @scala.inline
   def apply(
-    ctxImpl: zipkinLib.zipkinMod.zipkinNs.Context[zipkinLib.zipkinMod.zipkinNs.TraceId],
-    recorder: zipkinLib.zipkinMod.zipkinNs.Recorder,
-    localEndpoint: zipkinLib.zipkinMod.zipkinNs.modelNs.Endpoint = null,
+    ctxImpl: zipkinLib.zipkinMod.Context[zipkinLib.zipkinMod.TraceId],
+    recorder: zipkinLib.zipkinMod.Recorder,
+    localEndpoint: zipkinLib.zipkinMod.modelNs.Endpoint = null,
     localServiceName: java.lang.String = null,
     log: stdLib.Console = null,
-    sampler: zipkinLib.zipkinMod.zipkinNs.samplerNs.Sampler = null,
+    sampler: zipkinLib.zipkinMod.samplerNs.Sampler = null,
     traceId128Bit: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CtxImpl = {
     val __obj = js.Dynamic.literal(ctxImpl = ctxImpl, recorder = recorder)

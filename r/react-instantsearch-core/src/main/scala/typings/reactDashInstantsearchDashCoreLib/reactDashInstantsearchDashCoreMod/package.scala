@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 package object reactDashInstantsearchDashCoreMod {
   type AllSearchResults[TDoc] = org.scalablytyped.runtime.StringDictionary[SearchResults[TDoc]] with SearchResults[TDoc]
-  type ConnectedComponentClass[TProps, TProvidedProps, TExposedProps] = reactLib.reactMod.ReactNs.ComponentClass[
+  type BasicDoc = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type ConnectedComponentClass[TProps, TProvidedProps, TExposedProps] = reactLib.reactMod.ComponentClass[
     (reactDashInstantsearchDashCoreLib.Omit[TProps, TProvidedProps]) with TExposedProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ]
   type ConnectorProvided[TProvided] = reactDashInstantsearchDashCoreLib.Anon_Args with TProvided
   type HighlightProps[TDoc] = HighlightProvided[TDoc] with HighlightPassedThru[TDoc]
@@ -17,6 +18,5 @@ package object reactDashInstantsearchDashCoreMod {
   {[ K in keyof TDoc ]:? react-instantsearch-core.HighlightResultField<TDoc[K]>}
     */ reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreLibStrings.HighlightResult with TDoc
   type Hit[TDoc] = TDoc with reactDashInstantsearchDashCoreLib.Anon_HighlightResult[TDoc]
-  type Refinement = reactDashInstantsearchDashCoreLib.Anon_Attribute with (reactDashInstantsearchDashCoreLib.Anon_CurrentRefinement | reactDashInstantsearchDashCoreLib.Anon_CurrentRefinementItems)
   type RefinementValue = js.Function1[/* searchState */ SearchState, SearchState]
 }

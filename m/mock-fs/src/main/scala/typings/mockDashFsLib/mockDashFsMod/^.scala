@@ -9,20 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): scala.Unit = js.native
-  def apply(config: mockDashFsLib.mockDashFsMod.mockNs.Config): scala.Unit = js.native
-  def apply(
-    config: mockDashFsLib.mockDashFsMod.mockNs.Config,
-    options: mockDashFsLib.mockDashFsMod.mockNs.Options
-  ): scala.Unit = js.native
-  def directory(config: mockDashFsLib.mockDashFsMod.mockNs.DirectoryConfig): mockDashFsLib.mockDashFsMod.mockNs.Directory = js.native
-  def file(config: mockDashFsLib.mockDashFsMod.mockNs.FileConfig): mockDashFsLib.mockDashFsMod.mockNs.File = js.native
+  def apply(config: Config): scala.Unit = js.native
+  def apply(config: Config, options: Options): scala.Unit = js.native
+  def directory(config: DirectoryConfig): Directory = js.native
+  def file(config: FileConfig): File = js.native
   def fs(): mockDashFsLib.Anon_AccessAccessSync = js.native
-  def fs(config: mockDashFsLib.mockDashFsMod.mockNs.Config): mockDashFsLib.Anon_AccessAccessSync = js.native
-  def fs(
-    config: mockDashFsLib.mockDashFsMod.mockNs.Config,
-    options: mockDashFsLib.mockDashFsMod.mockNs.Options
-  ): mockDashFsLib.Anon_AccessAccessSync = js.native
+  def fs(config: Config): mockDashFsLib.Anon_AccessAccessSync = js.native
+  def fs(config: Config, options: Options): mockDashFsLib.Anon_AccessAccessSync = js.native
   def restore(): scala.Unit = js.native
-  def symlink(config: mockDashFsLib.mockDashFsMod.mockNs.SymlinkConfig): mockDashFsLib.mockDashFsMod.mockNs.Symlink = js.native
+  def symlink(config: SymlinkConfig): Symlink = js.native
 }
 

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SMS ()
   extends awsDashSdkLib.clientsAllMod.SMS {
-  def this(options: awsDashSdkLib.clientsSmsMod.SMSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSmsMod.ClientConfiguration) = this()
 }
 

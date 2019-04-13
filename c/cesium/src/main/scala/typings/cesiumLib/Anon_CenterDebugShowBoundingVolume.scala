@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CenterDebugShowBoundingVolume extends js.Object {
-  var center: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian3] = js.undefined
+  var center: js.UndefOr[cesiumLib.cesiumMod.Cartesian3] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[js.Any] = js.undefined
-  var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Material] = js.undefined
-  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
-  var radii: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian3] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.Material] = js.undefined
+  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
+  var radii: js.UndefOr[cesiumLib.cesiumMod.Cartesian3] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Anon_CenterDebugShowBoundingVolume {
   @scala.inline
   def apply(
-    center: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null,
+    center: cesiumLib.cesiumMod.Cartesian3 = null,
     debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined,
     id: js.Any = null,
-    material: cesiumLib.cesiumMod.CesiumNs.Material = null,
-    modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
-    radii: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null,
+    material: cesiumLib.cesiumMod.Material = null,
+    modelMatrix: cesiumLib.cesiumMod.Matrix4 = null,
+    radii: cesiumLib.cesiumMod.Cartesian3 = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CenterDebugShowBoundingVolume = {
     val __obj = js.Dynamic.literal()

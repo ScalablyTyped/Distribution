@@ -25,6 +25,7 @@ package object hapiMod {
     /* tags */ org.scalablytyped.runtime.StringDictionary[hapiLib.hapiLibNumbers.`true`], 
     scala.Unit
   ]
+  type RequestQuery = org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   type ResponseEventHandler = js.Function1[/* request */ Request, scala.Unit]
   type ResponseValue = java.lang.String | js.Object
   type RouteCompressionEncoderSettings = js.Object
@@ -36,7 +37,6 @@ package object hapiMod {
   */
   type RouteOptionsAccessObject = _RouteOptionsAccessObject | (RouteOptionsAccessScopeObject with RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = hapiLib.hapiLibNumbers.`false` | java.lang.String | js.Array[java.lang.String]
-  type RouteOptionsCache = hapiLib.Anon_Default with (hapiLib.Anon_ExpiresAt | hapiLib.Anon_ExpiresAtExpiresIn | hapiLib.Anon_ExpiresAtExpiresInUndefined)
   type RouteOptionsPreAllOptions = RouteOptionsPreObject | js.Array[RouteOptionsPreObject] | hapiLib.hapiMod.LifecycleNs.Method
   type RouteOptionsPreArray = js.Array[RouteOptionsPreAllOptions]
   type RouteOptionsResponseSchema = scala.Boolean | ValidationObject | joiLib.joiMod.Schema | (js.Function2[

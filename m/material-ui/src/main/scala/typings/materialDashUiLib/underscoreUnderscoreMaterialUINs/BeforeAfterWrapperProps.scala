@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait BeforeAfterWrapperProps extends js.Object {
   var afterElementType: js.UndefOr[java.lang.String] = js.undefined
-  var afterStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var afterStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var beforeElementType: js.UndefOr[java.lang.String] = js.undefined
-  var beforeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var beforeStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var elementType: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object BeforeAfterWrapperProps {
   @scala.inline
   def apply(
     afterElementType: java.lang.String = null,
-    afterStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    afterStyle: reactLib.reactMod.CSSProperties = null,
     beforeElementType: java.lang.String = null,
-    beforeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    beforeStyle: reactLib.reactMod.CSSProperties = null,
     elementType: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): BeforeAfterWrapperProps = {
     val __obj = js.Dynamic.literal()
     if (afterElementType != null) __obj.updateDynamic("afterElementType")(afterElementType)

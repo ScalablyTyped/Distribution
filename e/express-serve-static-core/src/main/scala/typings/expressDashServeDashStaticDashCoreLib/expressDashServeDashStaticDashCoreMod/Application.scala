@@ -104,6 +104,10 @@ trait Application
   def apply(req: Request, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
   def apply(req: nodeLib.httpMod.IncomingMessage, res: Response): js.Any = js.native
   def apply(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
+  /* InferMemberOverrides */
+  override def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   /**
     * Special-cased "all" method, applying the given route `path`,
     * middleware, and callback to _every_ HTTP method.
@@ -197,6 +201,10 @@ trait Application
     *    // => false
     */
   def disabled(setting: java.lang.String): scala.Boolean = js.native
+  /* InferMemberOverrides */
+  override def emit(event: java.lang.String, args: js.Any*): scala.Boolean = js.native
+  /* InferMemberOverrides */
+  override def emit(event: js.Symbol, args: js.Any*): scala.Boolean = js.native
   /** Enable `setting`. */
   def enable(setting: java.lang.String): Application = js.native
   /**
@@ -239,9 +247,13 @@ trait Application
     * work seamlessly within Express.
     */
   def engine(ext: java.lang.String, fn: js.Function): Application = js.native
+  /* InferMemberOverrides */
+  override def eventNames(): js.Array[java.lang.String | js.Symbol] = js.native
   def get(name: java.lang.String): js.Any = js.native
   def get(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def get(path: PathParams, subApplication: Application): this.type = js.native
+  /* InferMemberOverrides */
+  override def getMaxListeners(): scala.Double = js.native
   def head(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def head(path: PathParams, subApplication: Application): this.type = js.native
   /**
@@ -279,6 +291,14 @@ trait Application
   def listen(port: scala.Double, hostname: java.lang.String, backlog: scala.Double): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double, hostname: java.lang.String, backlog: scala.Double, callback: js.Function): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double, hostname: java.lang.String, callback: js.Function): nodeLib.httpMod.Server = js.native
+  /* InferMemberOverrides */
+  override def listenerCount(`type`: java.lang.String): scala.Double = js.native
+  /* InferMemberOverrides */
+  override def listenerCount(`type`: js.Symbol): scala.Double = js.native
+  /* InferMemberOverrides */
+  override def listeners(event: java.lang.String): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   def lock(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def lock(path: PathParams, subApplication: Application): this.type = js.native
   def `m-search`(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
@@ -293,6 +313,18 @@ trait Application
   def move(path: PathParams, subApplication: Application): this.type = js.native
   def notify(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def notify(path: PathParams, subApplication: Application): this.type = js.native
+  /* InferMemberOverrides */
+  override def off(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def on(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def options(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def options(path: PathParams, subApplication: Application): this.type = js.native
   /**
@@ -346,6 +378,15 @@ trait Application
   def path(): java.lang.String = js.native
   def post(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def post(path: PathParams, subApplication: Application): this.type = js.native
+  // Added in Node 6...
+  /* InferMemberOverrides */
+  override def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def propfind(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def propfind(path: PathParams, subApplication: Application): this.type = js.native
   def proppatch(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
@@ -354,6 +395,20 @@ trait Application
   def purge(path: PathParams, subApplication: Application): this.type = js.native
   def put(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def put(path: PathParams, subApplication: Application): this.type = js.native
+  /* InferMemberOverrides */
+  override def rawListeners(event: java.lang.String): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  override def removeAllListeners(): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeAllListeners(event: java.lang.String): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeAllListeners(event: js.Symbol): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   /**
     * Render the given view `name` name with `options`
     * and a callback accepting an error and the
@@ -394,6 +449,8 @@ trait Application
     * Mounted servers inherit their parent server's settings.
     */
   def set(setting: java.lang.String, `val`: js.Any): Application = js.native
+  /* InferMemberOverrides */
+  override def setMaxListeners(n: scala.Double): this.type = js.native
   def subscribe(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def subscribe(path: PathParams, subApplication: Application): this.type = js.native
   def trace(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native

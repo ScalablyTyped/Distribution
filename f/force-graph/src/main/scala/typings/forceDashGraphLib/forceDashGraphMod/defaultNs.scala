@@ -21,6 +21,5 @@ object defaultNs extends js.Object {
       ] = js.native
   }
   
-  type LinkCurvatureType = forceDashGraphLib.forceDashGraphMod.ForceGraphNs.LinkCurvatureType
 }
 

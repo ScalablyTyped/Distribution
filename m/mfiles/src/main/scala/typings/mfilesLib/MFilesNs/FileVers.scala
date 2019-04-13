@@ -21,3 +21,8 @@ class FileVers ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.FileVers")
+@js.native
+object FileVers
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFileVers]
+

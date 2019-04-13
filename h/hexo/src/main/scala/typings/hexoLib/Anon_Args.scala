@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Args extends js.Object {
-  val args: minimistLib.minimistMod.minimistNs.ParsedArgs
+  val args: minimistLib.minimistMod.ParsedArgs
   val debug: scala.Boolean
   val env: java.lang.String
   val init: scala.Boolean
@@ -18,7 +18,7 @@ trait Anon_Args extends js.Object {
 object Anon_Args {
   @scala.inline
   def apply(
-    args: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    args: minimistLib.minimistMod.ParsedArgs,
     debug: scala.Boolean,
     env: java.lang.String,
     init: scala.Boolean,

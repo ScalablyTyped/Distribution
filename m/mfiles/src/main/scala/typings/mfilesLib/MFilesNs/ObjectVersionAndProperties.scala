@@ -21,3 +21,8 @@ class ObjectVersionAndProperties ()
   override def Clone(): mfilesLib.IObjectVersionAndProperties = js.native
 }
 
+@JSGlobal("MFiles.ObjectVersionAndProperties")
+@js.native
+object ObjectVersionAndProperties
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectVersionAndProperties]
+

@@ -23,11 +23,11 @@ trait IFormGroupProps
     * `Classes.FORM_HELPER_TEXT` and displayed beneath `children`.
     * Helper text color is determined by the `intent`.
     */
-  var helperText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var helperText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Whether to render the label and children on a single line. */
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   /** Label of this form group. */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * `id` attribute of the labelable form element that this `FormGroup` controls,
     * used as `<label for>` attribute.
@@ -36,9 +36,9 @@ trait IFormGroupProps
   /**
     * Optional secondary text that appears after the label.
     */
-  var labelInfo: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var labelInfo: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** CSS properties to apply to the root element. */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object IFormGroupProps {
@@ -47,13 +47,13 @@ object IFormGroupProps {
     className: java.lang.String = null,
     contentClassName: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    helperText: reactLib.reactMod.ReactNs.ReactNode = null,
+    helperText: reactLib.reactMod.ReactNode = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     labelFor: java.lang.String = null,
-    labelInfo: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    labelInfo: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): IFormGroupProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

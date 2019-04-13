@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait S3Storage extends js.Object {
-  def apply(): multerLib.multerMod.multerNs.StorageEngine = js.native
-  def apply(options: Options): multerLib.multerMod.multerNs.StorageEngine = js.native
+  def apply(): multerLib.multerMod.StorageEngine = js.native
+  def apply(options: Options): multerLib.multerMod.StorageEngine = js.native
   def AUTO_CONTENT_TYPE(
     req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request,
     file: multerLib.multerMod.Global.ExpressNs.MulterNs.File,

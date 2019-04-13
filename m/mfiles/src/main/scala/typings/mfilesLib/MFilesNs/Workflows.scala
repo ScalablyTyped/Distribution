@@ -15,3 +15,8 @@ class Workflows ()
   override def Item(Index: scala.Double): mfilesLib.IWorkflow = js.native
 }
 
+@JSGlobal("MFiles.Workflows")
+@js.native
+object Workflows
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IWorkflows]
+

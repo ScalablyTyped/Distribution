@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Checkbox", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps] = js.native
+  val default: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps] = js.native
 }
 

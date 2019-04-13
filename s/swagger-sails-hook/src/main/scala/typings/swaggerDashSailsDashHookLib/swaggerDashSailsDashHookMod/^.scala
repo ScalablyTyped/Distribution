@@ -13,6 +13,6 @@ object ^ extends js.Object {
     * @param sails - reference to the running sails instance
     * @returns SailsHook - `swagger-sails-hook` object implementing the Sails' hook specification.
     */
-  def apply(sails: js.Any): swaggerDashSailsDashHookLib.swaggerDashSailsDashHookMod.SwaggerHookNs.SailsHook = js.native
+  def apply(sails: js.Any): SailsHook = js.native
 }
 

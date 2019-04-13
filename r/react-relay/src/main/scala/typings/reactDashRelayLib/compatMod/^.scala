@@ -14,28 +14,28 @@ object ^ extends js.Object {
     config: relayDashRuntimeLib.relayDashRuntimeMod.OptimisticMutationConfig
   ): relayDashRuntimeLib.relayDashRuntimeMod.Disposable = js.native
   def commitMutation(environment: CompatEnvironment, config: relayDashRuntimeLib.relayDashRuntimeMod.MutationConfig[_]): relayDashRuntimeLib.relayDashRuntimeMod.Disposable = js.native
-  def createFragmentContainer[T](Component: reactLib.reactMod.ReactNs.ComponentType[T], fragmentSpec: GeneratedNodeMap): ReactFragmentComponent[T] = js.native
+  def createFragmentContainer[T](Component: reactLib.reactMod.ComponentType[T], fragmentSpec: GeneratedNodeMap): ReactFragmentComponent[T] = js.native
   def createFragmentContainer[T](
-    Component: reactLib.reactMod.ReactNs.ComponentType[T],
+    Component: reactLib.reactMod.ComponentType[T],
     fragmentSpec: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   ): ReactFragmentComponent[T] = js.native
   def createPaginationContainer[T](
-    Component: reactLib.reactMod.ReactNs.ComponentType[T],
+    Component: reactLib.reactMod.ComponentType[T],
     fragmentSpec: GeneratedNodeMap,
     connectionConfig: reactDashRelayLib.reactDashRelayMod.ConnectionConfig[T]
   ): ReactFragmentComponent[T] = js.native
   def createPaginationContainer[T](
-    Component: reactLib.reactMod.ReactNs.ComponentType[T],
+    Component: reactLib.reactMod.ComponentType[T],
     fragmentSpec: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode,
     connectionConfig: reactDashRelayLib.reactDashRelayMod.ConnectionConfig[T]
   ): ReactFragmentComponent[T] = js.native
   def createRefetchContainer[T](
-    Component: reactLib.reactMod.ReactNs.ComponentType[T],
+    Component: reactLib.reactMod.ComponentType[T],
     fragmentSpec: GeneratedNodeMap,
     taggedNode: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   ): ReactFragmentComponent[T] = js.native
   def createRefetchContainer[T](
-    Component: reactLib.reactMod.ReactNs.ComponentType[T],
+    Component: reactLib.reactMod.ComponentType[T],
     fragmentSpec: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode,
     taggedNode: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   ): ReactFragmentComponent[T] = js.native

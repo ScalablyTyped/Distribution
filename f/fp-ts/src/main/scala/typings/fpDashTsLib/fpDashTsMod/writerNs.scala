@@ -14,7 +14,7 @@ object writerNs extends js.Object {
     def this(run: js.Function0[js.Tuple2[A, W]]) = this()
   }
   
-  val URI: /* Writer */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Writer = js.native
   val writer: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libWriterMod.URI] = js.native
   def censor[W, A](fa: fpDashTsLib.libWriterMod.Writer[W, A], f: js.Function1[/* w */ W, W]): fpDashTsLib.libWriterMod.Writer[W, A] = js.native
   def getMonad[W](M: fpDashTsLib.libMonoidMod.Monoid[W]): fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Writer, W] = js.native

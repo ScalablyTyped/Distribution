@@ -29,11 +29,23 @@ trait FileStream
   def read(buffer: titaniumLib.TitaniumNs.Buffer): scala.Double = js.native
   def read(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double): scala.Double = js.native
   def read(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def read(
+    buffer: titaniumLib.TitaniumNs.Buffer,
+    offset: scala.Double,
+    length: scala.Double,
+    resultsCallback: js.Function1[/* param0 */ titaniumLib.ReadCallbackArgs, _]
+  ): scala.Double = js.native
   /**
   			 * Writes data from a buffer to this stream.
   			 */
   def write(buffer: titaniumLib.TitaniumNs.Buffer): scala.Double = js.native
   def write(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double): scala.Double = js.native
   def write(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def write(
+    buffer: titaniumLib.TitaniumNs.Buffer,
+    offset: scala.Double,
+    length: scala.Double,
+    resultsCallback: js.Function1[/* param0 */ titaniumLib.WriteCallbackArgs, _]
+  ): scala.Double = js.native
 }
 

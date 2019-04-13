@@ -105,7 +105,7 @@ trait DeviceOptions
     * additional options to the underlying WebSocket object;
     * these options are documented here.
     */
-  var websocketOptions: js.UndefOr[wsLib.wsMod.WebSocketNs.ClientOptions] = js.undefined
+  var websocketOptions: js.UndefOr[wsLib.wsMod.ClientOptions] = js.undefined
 }
 
 object DeviceOptions {
@@ -155,7 +155,7 @@ object DeviceOptions {
     sessionToken: java.lang.String = null,
     transformWsUrl: (/* url */ java.lang.String, /* options */ mqttLib.typesLibClientDashOptionsMod.IClientOptions, /* client */ mqttLib.typesLibClientMod.MqttClient) => java.lang.String = null,
     username: java.lang.String = null,
-    websocketOptions: wsLib.wsMod.WebSocketNs.ClientOptions = null,
+    websocketOptions: wsLib.wsMod.ClientOptions = null,
     will: mqttLib.Anon_Payload = null,
     wsOptions: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): DeviceOptions = {

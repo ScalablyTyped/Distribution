@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Navbar
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libNavbarMod.NavbarNs.NavbarProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[NavbarProps, js.Object, js.Any]
 

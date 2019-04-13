@@ -10,19 +10,19 @@ trait Anon_Animation extends js.Object {
     * Animation for the marker as it moves between values. Set to false to disable animation.
     * @default {duration: 50}
     */
-  var animation: js.UndefOr[scala.Boolean | highchartsLib.highchartsMod.HighchartsNs.Animation] = js.undefined
+  var animation: js.UndefOr[scala.Boolean | highchartsLib.highchartsMod.Animation] = js.undefined
   /**
     * The color of the marker.
     * @default 'gray'
     */
-  var color: js.UndefOr[java.lang.String | highchartsLib.highchartsMod.HighchartsNs.Gradient] = js.undefined
+  var color: js.UndefOr[java.lang.String | highchartsLib.highchartsMod.Gradient] = js.undefined
 }
 
 object Anon_Animation {
   @scala.inline
   def apply(
-    animation: scala.Boolean | highchartsLib.highchartsMod.HighchartsNs.Animation = null,
-    color: java.lang.String | highchartsLib.highchartsMod.HighchartsNs.Gradient = null
+    animation: scala.Boolean | highchartsLib.highchartsMod.Animation = null,
+    color: java.lang.String | highchartsLib.highchartsMod.Gradient = null
   ): Anon_Animation = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])

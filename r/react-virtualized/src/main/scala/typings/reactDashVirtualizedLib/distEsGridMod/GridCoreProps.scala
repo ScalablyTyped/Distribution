@@ -57,7 +57,7 @@ trait GridCoreProps
   /** ARIA role for the cell-container.  */
   var containerRole: js.UndefOr[java.lang.String] = js.undefined
   /** Optional inline style applied to inner cell-container */
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * If CellMeasurer is used to measure this Grid's children, this should be a pointer to its CellMeasurerCache.
     * A shared CellMeasurerCache reference enables Grid and CellMeasurer to share measurement data.
@@ -93,7 +93,7 @@ trait GridCoreProps
   /**
     * Optional renderer to be used in place of rows when either :rowCount or :columnCount is 0.
     */
-  var noContentRenderer: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var noContentRenderer: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   /**
     * Callback invoked whenever the scroll offset changes within the inner scrollable region.
     * This callback can be used to sync scrolling between lists, tables, or grids.
@@ -166,7 +166,7 @@ trait GridCoreProps
   /** Wait this amount of time after the last scroll event before resetting Grid `pointer-events`. */
   var scrollingResetTimeInterval: js.UndefOr[scala.Double] = js.undefined
   /** Optional inline style */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** Tab index for focus */
   var tabIndex: js.UndefOr[scala.Double | scala.Null] = js.undefined
   /**
@@ -199,14 +199,14 @@ object GridCoreProps {
     className: java.lang.String = null,
     containerProps: js.Object = null,
     containerRole: java.lang.String = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     deferredMeasurementCache: reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCache = null,
     estimatedColumnSize: scala.Int | scala.Double = null,
     estimatedRowSize: scala.Int | scala.Double = null,
     getScrollbarSize: () => scala.Double = null,
     id: java.lang.String = null,
     isScrolling: js.UndefOr[scala.Boolean] = js.undefined,
-    noContentRenderer: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    noContentRenderer: () => reactLib.reactMod.ReactNode = null,
     onScroll: /* params */ ScrollParams => _ = null,
     onScrollbarPresenceChange: /* params */ ScrollbarPresenceParams => _ = null,
     onSectionRendered: /* params */ SectionRenderedParams => _ = null,
@@ -220,7 +220,7 @@ object GridCoreProps {
     scrollToRow: scala.Int | scala.Double = null,
     scrollTop: scala.Int | scala.Double = null,
     scrollingResetTimeInterval: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null
   ): GridCoreProps = {
     val __obj = js.Dynamic.literal(height = height, rowCount = rowCount, rowHeight = rowHeight.asInstanceOf[js.Any], width = width)

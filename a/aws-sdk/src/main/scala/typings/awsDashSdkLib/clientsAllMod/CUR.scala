@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CUR ()
-  extends awsDashSdkLib.clientsCurMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCurMod.CURNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCurMod.^ {
+  def this(options: awsDashSdkLib.clientsCurMod.ClientConfiguration) = this()
 }
 

@@ -13,7 +13,7 @@ trait BriefProps
 object BriefProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: antdDashMobileDashRnLib.Anon_BriefBriefText = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined

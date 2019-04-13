@@ -14,29 +14,29 @@ trait TabsProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* activeKey */ java.lang.String, scala.Unit]] = js.undefined
   var onEdit: js.UndefOr[
     js.Function2[
-      /* targetKey */ java.lang.String | (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), 
+      /* targetKey */ java.lang.String | (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), 
       /* action */ js.Any, 
       scala.Unit
     ]
   ] = js.undefined
-  var onNextClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
-  var onPrevClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
+  var onNextClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onPrevClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var onTabClick: js.UndefOr[js.Function] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var renderTabBar: js.UndefOr[
     js.Function2[
       /* props */ TabsProps, 
-      /* DefaultTabBar */ reactLib.reactMod.ReactNs.ReactNode, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      /* DefaultTabBar */ reactLib.reactMod.ReactNode, 
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   var size: js.UndefOr[
     antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tabBarExtraContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | scala.Null] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tabBarExtraContent: js.UndefOr[reactLib.reactMod.ReactNode | scala.Null] = js.undefined
   var tabBarGutter: js.UndefOr[scala.Double] = js.undefined
-  var tabBarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tabBarStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabPosition: js.UndefOr[TabsPosition] = js.undefined
   var `type`: js.UndefOr[TabsType] = js.undefined
 }
@@ -50,17 +50,17 @@ object TabsProps {
     defaultActiveKey: java.lang.String = null,
     hideAdd: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: /* activeKey */ java.lang.String => scala.Unit = null,
-    onEdit: (/* targetKey */ java.lang.String | (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), /* action */ js.Any) => scala.Unit = null,
-    onNextClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
-    onPrevClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    onEdit: (/* targetKey */ java.lang.String | (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]), /* action */ js.Any) => scala.Unit = null,
+    onNextClick: reactLib.reactMod.MouseEventHandler[_] = null,
+    onPrevClick: reactLib.reactMod.MouseEventHandler[_] = null,
     onTabClick: js.Function = null,
     prefixCls: java.lang.String = null,
-    renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ reactLib.reactMod.ReactNs.ReactNode) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ reactLib.reactMod.ReactNode) => reactLib.reactMod.ReactElement[_] = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tabBarExtraContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    tabBarExtraContent: reactLib.reactMod.ReactNode = null,
     tabBarGutter: scala.Int | scala.Double = null,
-    tabBarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tabBarStyle: reactLib.reactMod.CSSProperties = null,
     tabPosition: TabsPosition = null,
     `type`: TabsType = null
   ): TabsProps = {

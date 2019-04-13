@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "SafeAnchor")
 @js.native
 class SafeAnchor ()
-  extends reactDashBootstrapLib.libSafeAnchorMod.namespaced
+  extends reactDashBootstrapLib.libSafeAnchorMod.^
 

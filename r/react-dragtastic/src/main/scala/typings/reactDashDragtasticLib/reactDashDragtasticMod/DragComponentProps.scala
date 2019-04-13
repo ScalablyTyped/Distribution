@@ -17,13 +17,13 @@ trait DragComponentProps extends js.Object {
     * For example, you may pass ['type', 'data'] to only rerender if these keys change.
     */
   var subscribeTo: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
-  def children(arg: State with reactDashDragtasticLib.Anon_IsOverAccepted): reactLib.reactMod.ReactNs.ReactNode
+  def children(arg: State with reactDashDragtasticLib.Anon_IsOverAccepted): reactLib.reactMod.ReactNode
 }
 
 object DragComponentProps {
   @scala.inline
   def apply(
-    children: State with reactDashDragtasticLib.Anon_IsOverAccepted => reactLib.reactMod.ReactNs.ReactNode,
+    children: State with reactDashDragtasticLib.Anon_IsOverAccepted => reactLib.reactMod.ReactNode,
     alwaysRender: js.UndefOr[scala.Boolean] = js.undefined,
     `for`: Id = null,
     onDrag: () => scala.Unit = null,

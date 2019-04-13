@@ -39,3 +39,8 @@ class ObjTypeAdmin ()
   override def Clone(): mfilesLib.IObjectTypeAdmin = js.native
 }
 
+@JSGlobal("MFiles.ObjTypeAdmin")
+@js.native
+object ObjTypeAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectTypeAdmin]
+

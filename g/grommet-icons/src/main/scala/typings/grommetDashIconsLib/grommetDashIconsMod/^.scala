@@ -560,6 +560,5 @@ object ^ extends js.Object {
   val Youtube: grommetDashIconsLib.iconsMod.Icon = js.native
   val ZoomIn: grommetDashIconsLib.iconsMod.Icon = js.native
   val ZoomOut: grommetDashIconsLib.iconsMod.Icon = js.native
-  val base: grommetDashIconsLib.Anon_Global = js.native
 }
 

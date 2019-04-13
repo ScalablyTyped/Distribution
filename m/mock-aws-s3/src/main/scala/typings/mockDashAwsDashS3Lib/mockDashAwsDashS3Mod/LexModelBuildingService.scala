@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class LexModelBuildingService ()
   extends awsDashSdkLib.awsDashSdkMod.LexModelBuildingService {
-  def this(options: awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsLexmodelbuildingserviceMod.ClientConfiguration) = this()
 }
 

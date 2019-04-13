@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait GrowlMessage extends js.Object {
   var closable: js.UndefOr[scala.Boolean] = js.undefined
-  var detail: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var detail: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var life: js.UndefOr[scala.Double] = js.undefined
   var severity: js.UndefOr[
     primereactLib.primereactLibStrings.success | primereactLib.primereactLibStrings.info | primereactLib.primereactLibStrings.warn | primereactLib.primereactLibStrings.error
   ] = js.undefined
   var sticky: js.UndefOr[scala.Boolean] = js.undefined
-  var summary: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var summary: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object GrowlMessage {
   @scala.inline
   def apply(
     closable: js.UndefOr[scala.Boolean] = js.undefined,
-    detail: reactLib.reactMod.ReactNs.ReactNode = null,
+    detail: reactLib.reactMod.ReactNode = null,
     life: scala.Int | scala.Double = null,
     severity: primereactLib.primereactLibStrings.success | primereactLib.primereactLibStrings.info | primereactLib.primereactLibStrings.warn | primereactLib.primereactLibStrings.error = null,
     sticky: js.UndefOr[scala.Boolean] = js.undefined,
-    summary: reactLib.reactMod.ReactNs.ReactNode = null
+    summary: reactLib.reactMod.ReactNode = null
   ): GrowlMessage = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)

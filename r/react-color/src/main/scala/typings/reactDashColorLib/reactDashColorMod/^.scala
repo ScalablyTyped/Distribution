@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def CustomPicker[A](
-    component: reactLib.reactMod.ReactNs.ComponentClass[
+    component: reactLib.reactMod.ComponentClass[
       A with reactDashColorLib.libComponentsCommonColorWrapMod.InjectedColorProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
-  ): reactLib.reactMod.ReactNs.ComponentClass[
+  ): reactLib.reactMod.ComponentClass[
     A with reactDashColorLib.libComponentsCommonColorWrapMod.ExportedColorProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
   def CustomPicker[A](
-    component: reactLib.reactMod.ReactNs.StatelessComponent[A with reactDashColorLib.libComponentsCommonColorWrapMod.InjectedColorProps]
-  ): reactLib.reactMod.ReactNs.ComponentClass[
+    component: reactLib.reactMod.StatelessComponent[A with reactDashColorLib.libComponentsCommonColorWrapMod.InjectedColorProps]
+  ): reactLib.reactMod.ComponentClass[
     A with reactDashColorLib.libComponentsCommonColorWrapMod.ExportedColorProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

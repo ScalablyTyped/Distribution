@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class KinesisVideoArchivedMedia ()
-  extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.namespaced {
-  def this(options: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.^ {
+  def this(options: awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.ClientConfiguration) = this()
 }
 

@@ -16,9 +16,9 @@ class AirlineSeatLegroomExtraTwoTone protected ()
 @JSImport("@material-ui/icons", "AirlineSeatLegroomExtraTwoTone")
 @js.native
 class AirlineSeatLegroomExtraTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

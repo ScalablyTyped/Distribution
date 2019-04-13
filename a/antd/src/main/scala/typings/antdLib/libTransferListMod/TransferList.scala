@@ -17,7 +17,7 @@ trait TransferList
   def componentWillUnmount_MTransferList(): scala.Unit = js.native
   def getCheckStatus(filteredDataSource: js.Array[antdLib.libTransferMod.TransferItem]): antdLib.antdLibStrings.all | antdLib.antdLibStrings.none | antdLib.antdLibStrings.part = js.native
   def handleClear(): scala.Unit = js.native
-  def handleFilter(e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def handleFilter(e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   def handleSelect(selectedItem: antdLib.libTransferMod.TransferItem): scala.Unit = js.native
   def matchFilter(text: java.lang.String, item: antdLib.libTransferMod.TransferItem): scala.Boolean = js.native
   def renderItem(item: antdLib.libTransferMod.TransferItem): antdLib.Anon_RenderedEl = js.native

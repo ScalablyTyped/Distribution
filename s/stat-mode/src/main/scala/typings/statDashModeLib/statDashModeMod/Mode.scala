@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Mode extends js.Object {
-  var group: statDashModeLib.statDashModeMod.ModeNs.Permissions = js.native
-  var others: statDashModeLib.statDashModeMod.ModeNs.Permissions = js.native
-  var owner: statDashModeLib.statDashModeMod.ModeNs.Permissions = js.native
+  var group: Permissions = js.native
+  var others: Permissions = js.native
+  var owner: Permissions = js.native
   var setgid: scala.Boolean = js.native
   var setuid: scala.Boolean = js.native
   var sticky: scala.Boolean = js.native

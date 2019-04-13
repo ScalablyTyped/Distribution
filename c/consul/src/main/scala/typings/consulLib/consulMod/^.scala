@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("consul", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[consulLib.consulMod.ConsulNs.ConsulStatic]
+  extends org.scalablytyped.runtime.TopLevel[ConsulStatic]
 

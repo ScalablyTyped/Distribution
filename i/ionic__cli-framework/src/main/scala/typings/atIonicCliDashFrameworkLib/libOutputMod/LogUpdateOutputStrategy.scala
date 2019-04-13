@@ -13,7 +13,7 @@ class LogUpdateOutputStrategy protected ()
   def this(hasLogUpdateStreamColors: LogUpdateOutputStrategyOptions) = this()
   val colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   @JSName("logUpdate")
-  val logUpdate_Original: atIonicCliDashFrameworkLib.Anon_LogUpdate with logDashUpdateLib.logDashUpdateMod.logUpdateNs.LogUpdate with logDashUpdateLib.Anon_CreateDefault = js.native
+  val logUpdate_Original: logDashUpdateLib.logDashUpdateMod.LogUpdate with logDashUpdateLib.Anon_CreateDefault = js.native
   /* CompleteClass */
   override val stream: nodeLib.NodeJSNs.WritableStream = js.native
   /* CompleteClass */

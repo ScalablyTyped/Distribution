@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AdazzleReactDataGridPlugins.Data")
 @js.native
 object DataNs extends js.Object {
-  val Selectors: reactDashDataDashGridLib.Anon_GetRows = js.native
+  @js.native
+  object Selectors extends js.Object {
+    def getRows(state: js.Object): js.Array[js.Object] = js.native
+    def getSelectedRowsByKey(state: js.Object): js.Array[js.Object] = js.native
+  }
+  
 }
 

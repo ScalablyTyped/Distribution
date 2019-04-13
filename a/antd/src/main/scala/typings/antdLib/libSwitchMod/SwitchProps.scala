@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SwitchProps extends js.Object {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined
-  var checkedChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var checkedChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -17,8 +17,8 @@ trait SwitchProps extends js.Object {
   var onClick: js.UndefOr[js.Function2[/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent, _]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var unCheckedChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var unCheckedChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object SwitchProps {
@@ -26,7 +26,7 @@ object SwitchProps {
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    checkedChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    checkedChildren: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -35,8 +35,8 @@ object SwitchProps {
     onClick: (/* checked */ scala.Boolean, /* event */ stdLib.MouseEvent) => _ = null,
     prefixCls: java.lang.String = null,
     size: antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    unCheckedChildren: reactLib.reactMod.ReactNs.ReactNode = null
+    style: reactLib.reactMod.CSSProperties = null,
+    unCheckedChildren: reactLib.reactMod.ReactNode = null
   ): SwitchProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)

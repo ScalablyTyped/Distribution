@@ -108,7 +108,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onFinish: js.UndefOr[
     js.Function2[
-      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
+      /* childElement */ reactLib.reactMod.ReactElement[_], 
       /* domNode */ stdLib.HTMLElement, 
       scala.Unit
     ]
@@ -128,7 +128,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onFinishAll: js.UndefOr[
     js.Function2[
-      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      /* childElements */ js.Array[reactLib.reactMod.ReactElement[_]], 
       /* domNodes */ js.Array[stdLib.HTMLElement], 
       scala.Unit
     ]
@@ -144,7 +144,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onStart: js.UndefOr[
     js.Function2[
-      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
+      /* childElement */ reactLib.reactMod.ReactElement[_], 
       /* domNode */ stdLib.HTMLElement, 
       scala.Unit
     ]
@@ -165,7 +165,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onStartAll: js.UndefOr[
     js.Function2[
-      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      /* childElements */ js.Array[reactLib.reactMod.ReactElement[_]], 
       /* domNodes */ js.Array[stdLib.HTMLElement], 
       scala.Unit
     ]
@@ -232,10 +232,10 @@ object FlipMoveProps {
     getPosition: /* node */ stdLib.HTMLElement => stdLib.ClientRect = null,
     leaveAnimation: AnimationProp = null,
     maintainContainerHeight: js.UndefOr[scala.Boolean] = js.undefined,
-    onFinish: (/* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], /* domNode */ stdLib.HTMLElement) => scala.Unit = null,
-    onFinishAll: (/* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], /* domNodes */ js.Array[stdLib.HTMLElement]) => scala.Unit = null,
-    onStart: (/* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], /* domNode */ stdLib.HTMLElement) => scala.Unit = null,
-    onStartAll: (/* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], /* domNodes */ js.Array[stdLib.HTMLElement]) => scala.Unit = null,
+    onFinish: (/* childElement */ reactLib.reactMod.ReactElement[_], /* domNode */ stdLib.HTMLElement) => scala.Unit = null,
+    onFinishAll: (/* childElements */ js.Array[reactLib.reactMod.ReactElement[_]], /* domNodes */ js.Array[stdLib.HTMLElement]) => scala.Unit = null,
+    onStart: (/* childElement */ reactLib.reactMod.ReactElement[_], /* domNode */ stdLib.HTMLElement) => scala.Unit = null,
+    onStartAll: (/* childElements */ js.Array[reactLib.reactMod.ReactElement[_]], /* domNodes */ js.Array[stdLib.HTMLElement]) => scala.Unit = null,
     staggerDelayBy: scala.Double | java.lang.String = null,
     staggerDurationBy: scala.Double | java.lang.String = null,
     style: Styles = null,

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): scala.Unit = js.native
-  def apply(options: svg4everybodyLib.svg4everybodyMod.svg4everybodyNs.Svg4everybodyOpts): scala.Unit = js.native
+  def apply(options: Svg4everybodyOpts): scala.Unit = js.native
 }
 

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
      with reactDashMdLib.libTooltipsInjectTooltipMod.InjectedTooltipProps
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var fixed: js.UndefOr[scala.Boolean] = js.undefined
   var fixedPosition: js.UndefOr[FixedPositions] = js.undefined
   var flat: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,13 +22,13 @@ import scala.scalajs.js.annotation._
   var href: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[scala.Boolean] = js.undefined
   var iconBefore: js.UndefOr[scala.Boolean] = js.undefined
-  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var iconEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var iconEl: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var mini: js.UndefOr[scala.Boolean] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined
   var raised: js.UndefOr[scala.Boolean] = js.undefined
@@ -44,9 +44,9 @@ object ButtonProps {
   def apply(
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    component: reactLib.reactMod.ReactType[_] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     disabledInteractions: js.Array[reactDashMdLib.libInksInjectInkMod.InteractionTypes] = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
@@ -58,57 +58,57 @@ object ButtonProps {
     href: java.lang.String = null,
     icon: js.UndefOr[scala.Boolean] = js.undefined,
     iconBefore: js.UndefOr[scala.Boolean] = js.undefined,
-    iconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    iconChildren: reactLib.reactMod.ReactNode = null,
     iconClassName: java.lang.String = null,
-    iconEl: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    iconEl: reactLib.reactMod.ReactElement[_] = null,
     inkClassName: java.lang.String = null,
     inkContainerClassName: java.lang.String = null,
-    inkContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inkContainerStyle: reactLib.reactMod.CSSProperties = null,
     inkDisabled: js.UndefOr[scala.Boolean] = js.undefined,
-    inkStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inkStyle: reactLib.reactMod.CSSProperties = null,
     inkTransitionEnterTimeout: scala.Int | scala.Double = null,
     inkTransitionLeaveTimeout: scala.Int | scala.Double = null,
     inkTransitionOverlay: scala.Int | scala.Double = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     mini: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     raised: js.UndefOr[scala.Boolean] = js.undefined,
     secondary: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     svg: js.UndefOr[scala.Boolean] = js.undefined,
     swapTheming: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Int | scala.Double = null,
     tooltipClassName: java.lang.String = null,
     tooltipContainerClassName: java.lang.String = null,
-    tooltipContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltipContainerStyle: reactLib.reactMod.CSSProperties = null,
     tooltipDelay: scala.Int | scala.Double = null,
-    tooltipLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltipLabel: reactLib.reactMod.ReactNode = null,
     tooltipPosition: reactDashMdLib.libTooltipsInjectTooltipMod.Positions = null,
-    tooltipStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltipStyle: reactLib.reactMod.CSSProperties = null,
     tooltipTransitionEnterTimeout: scala.Int | scala.Double = null,
     tooltipTransitionLeaveTimeout: scala.Int | scala.Double = null,
     `type`: ButtonTypes = null,

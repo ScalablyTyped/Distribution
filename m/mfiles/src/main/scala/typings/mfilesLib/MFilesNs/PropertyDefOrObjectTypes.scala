@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class PropertyDefOrObjectTypes ()
   extends mfilesLib.IPropertyDefOrObjectTypes
 
+@JSGlobal("MFiles.PropertyDefOrObjectTypes")
+@js.native
+object PropertyDefOrObjectTypes
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyDefOrObjectTypes]
+

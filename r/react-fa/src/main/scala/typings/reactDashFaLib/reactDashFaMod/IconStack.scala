@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-fa", "IconStack")
 @js.native
 class IconStackCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[IconStackProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[IconStackProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: IconStackProps) = this()
   def this(props: IconStackProps, context: js.Any) = this()
 }

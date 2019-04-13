@@ -12,15 +12,15 @@ trait Anon_CallbackCreateDelete extends js.Object {
     * @param options The create options
     * @returns Promise The webhook id results
     */
-  def create(options: sparkpostLib.sparkpostMod.SparkPostNs.RelayWebhook): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Id] = js.native
+  def create(options: sparkpostLib.sparkpostMod.RelayWebhook): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Id] = js.native
   /**
     * Create a relay webhook by providing a relay webhooks object as the POST request body.
     * @param options The create options
     * @param callback The request callback with webhook id results
     */
   def create(
-    options: sparkpostLib.sparkpostMod.SparkPostNs.RelayWebhook,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Id]
+    options: sparkpostLib.sparkpostMod.RelayWebhook,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Id]
   ): scala.Unit = js.native
   /**
     * Delete a relay webhook by specifying the webhook ID in the URI path.
@@ -33,16 +33,13 @@ trait Anon_CallbackCreateDelete extends js.Object {
     * @param relayWebhookId The webhook id
     * @param callback The request callback
     */
-  def delete(
-    relayWebhookId: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[scala.Unit]
-  ): scala.Unit = js.native
+  def delete(relayWebhookId: java.lang.String, callback: sparkpostLib.sparkpostMod.Callback[scala.Unit]): scala.Unit = js.native
   /**
     * Delete a relay webhook by specifying the webhook ID in the URI path.
     * @param relayWebhookId The webhook id
     * @returns Promise The RelayWebhook results
     */
-  def get(relayWebhookId: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.RelayWebhook] = js.native
+  def get(relayWebhookId: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.RelayWebhook] = js.native
   /**
     * Delete a relay webhook by specifying the webhook ID in the URI path.
     * @param relayWebhookId The webhook id
@@ -50,26 +47,26 @@ trait Anon_CallbackCreateDelete extends js.Object {
     */
   def get(
     relayWebhookId: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.RelayWebhook]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.RelayWebhook]
   ): scala.Unit = js.native
   /**
     * List all your relay webhooks.
     * @returns Promise The RelayWebhook results array
     */
-  def list(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.RelayWebhook]] = js.native
+  def list(): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.RelayWebhook]] = js.native
   /**
     * List all your relay webhooks.
     * @param callback The request callback with RelayWebhook results array
     */
   def list(
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.RelayWebhook]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.RelayWebhook]]
   ): scala.Unit = js.native
   /**
     * Update a relay webhook by specifying the webhook ID in the URI path.
     * @param options The update options
     * @returns Promise The webhook id results
     */
-  def update(id: java.lang.String, options: sparkpostLib.sparkpostMod.SparkPostNs.UpdateRelayWebhook): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Id] = js.native
+  def update(id: java.lang.String, options: sparkpostLib.sparkpostMod.UpdateRelayWebhook): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Id] = js.native
   /**
     * Update a relay webhook by specifying the webhook ID in the URI path.
     * @param options The update options
@@ -77,8 +74,8 @@ trait Anon_CallbackCreateDelete extends js.Object {
     */
   def update(
     id: java.lang.String,
-    options: sparkpostLib.sparkpostMod.SparkPostNs.UpdateRelayWebhook,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Id]
+    options: sparkpostLib.sparkpostMod.UpdateRelayWebhook,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Id]
   ): scala.Unit = js.native
 }
 

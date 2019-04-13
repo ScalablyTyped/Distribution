@@ -11,7 +11,7 @@ trait ProgressProps extends js.Object {
     js.Function2[
       /* percent */ js.UndefOr[scala.Double], 
       /* successPercent */ js.UndefOr[scala.Double], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var gapDegree: js.UndefOr[scala.Double] = js.undefined
@@ -28,7 +28,7 @@ trait ProgressProps extends js.Object {
   var strokeColor: js.UndefOr[java.lang.String | ProgressGradient] = js.undefined
   var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var successPercent: js.UndefOr[scala.Double] = js.undefined
   var trailColor: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[ProgressType] = js.undefined
@@ -39,7 +39,7 @@ object ProgressProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    format: (/* percent */ js.UndefOr[scala.Double], /* successPercent */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    format: (/* percent */ js.UndefOr[scala.Double], /* successPercent */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactNode = null,
     gapDegree: scala.Int | scala.Double = null,
     gapPosition: antdLib.antdLibStrings.top | antdLib.antdLibStrings.bottom | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     percent: scala.Int | scala.Double = null,
@@ -50,7 +50,7 @@ object ProgressProps {
     strokeColor: java.lang.String | ProgressGradient = null,
     strokeLinecap: java.lang.String = null,
     strokeWidth: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     successPercent: scala.Int | scala.Double = null,
     trailColor: java.lang.String = null,
     `type`: ProgressType = null,

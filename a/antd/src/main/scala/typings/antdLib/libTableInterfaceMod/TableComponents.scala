@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TableComponents extends js.Object {
   var body: js.UndefOr[antdLib.Anon_Cell] = js.undefined
   var header: js.UndefOr[antdLib.Anon_Cell] = js.undefined
-  var table: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var table: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object TableComponents {
@@ -16,7 +16,7 @@ object TableComponents {
   def apply(
     body: antdLib.Anon_Cell = null,
     header: antdLib.Anon_Cell = null,
-    table: reactLib.reactMod.ReactNs.ReactType[_] = null
+    table: reactLib.reactMod.ReactType[_] = null
   ): TableComponents = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body)

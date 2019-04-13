@@ -14,21 +14,21 @@ trait IApp extends js.Object {
     * @param qStateName - Mandatory. Alternate state name.
     * @return - A promise of a Qlik engine reply.
     */
-  def addAlternateState(qStateName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def addAlternateState(qStateName: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Steps back in the list of selections.
     * @return - A promise of a Qlik engine reply.
     */
-  def back(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def back(): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Clears all selections in all fields of the current Qlik Sense app.
     * @param [lockedAlso] - Optional. Alternate state name. Default: false Introduced in version 2.1.
     * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
     * @return - A promise of a Qlik engine reply.
     */
-  def clearAll(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def clearAll(lockedAlso: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def clearAll(lockedAlso: scala.Boolean, state: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def clearAll(): angularLib.angularMod.IPromise[_] = js.native
+  def clearAll(lockedAlso: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
+  def clearAll(lockedAlso: scala.Boolean, state: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Closes a Qlik Sense app. Also closes the WebSocket and clears out client side data.
     */
@@ -39,8 +39,8 @@ trait IApp extends js.Object {
     * @param [callback] - Optional. Callback method. Parameter will contain a qHyperCube.
     * @return - A promise of an object model.
     */
-  def createCube(qHyperCubeDef: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def createCube(qHyperCubeDef: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def createCube(qHyperCubeDef: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def createCube(qHyperCubeDef: js.Any, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Creates a generic object and registers a callback to receive the data. The generic object can contain the following:
     *       # qHyperCubeDef
@@ -54,17 +54,17 @@ trait IApp extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of an object model.
     */
-  def createGenericObject(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def createGenericObject(`def`: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def createGenericObject(`def`: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def createGenericObject(): angularLib.angularMod.IPromise[_] = js.native
+  def createGenericObject(`def`: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def createGenericObject(`def`: js.Any, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Defines a list of field values and registers a callback to receive the data.
     * @param qListObjectDef - List definition.
     * @param [callback] - Optional. Callback method. Parameter will contain a qListObject.
     * @return - A promise of an object model.
     */
-  def createList(qListObjectDef: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def createList(qListObjectDef: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def createList(qListObjectDef: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def createList(qListObjectDef: js.Any, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Defines a hypercube for a table and is the entry point to the Table API.
     * It creates a table object that wraps the hypercube.
@@ -91,7 +91,7 @@ trait IApp extends js.Object {
     * @param id - Session object id.
     * @return - A promise of a Qlik engine reply.
     */
-  def destroySessionObject(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def destroySessionObject(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Reloads the data in a Qlik Sense app.
     * @param [qMode] - Optional. Error handling mode:
@@ -102,17 +102,17 @@ trait IApp extends js.Object {
     * @param [qDebug] - Optional. Set to true if debug breakpoints are honored. Execution of the script will be in debug mode.
     * @return - A promise of a Qlik engine reply.
     */
-  def doReload(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def doReload(qMode: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def doReload(qMode: java.lang.String, qPartial: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def doReload(qMode: java.lang.String, qPartial: scala.Boolean, qDebug: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def doReload(): angularLib.angularMod.IPromise[_] = js.native
+  def doReload(qMode: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def doReload(qMode: java.lang.String, qPartial: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
+  def doReload(qMode: java.lang.String, qPartial: scala.Boolean, qDebug: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Saves a Qlik Sense app, including all objects and data in the data model.
     * @param [qFileName] - Optional. File name of the file to save.
     * @return - A promise of a Qlik engine reply.
     */
-  def doSave(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def doSave(qFileName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def doSave(): angularLib.angularMod.IPromise[_] = js.native
+  def doSave(qFileName: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets a field reference with methods that can be used to manipulate the field.
     * @param [field] - Optional. Name of the field.
@@ -126,15 +126,15 @@ trait IApp extends js.Object {
     * Step forward in list of selections.
     * @return - A promise of a Qlik engine reply.
     */
-  def forward(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def forward(): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets a layout for this Qlik Sense app and registers a callback to receive the data.
     * Returns the dynamic properties (if any) in addition to the fixed properties.
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def getAppLayout(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getAppLayout(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getAppLayout(): angularLib.angularMod.IPromise[_] = js.native
+  def getAppLayout(callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets a list of sheets and visualizations and registers a callback to receive the data.
     * @param [field] - Optional. Type of object. One of:
@@ -152,7 +152,7 @@ trait IApp extends js.Object {
     * @param id - Object id.
     * @return - A promise of an object model.
     */
-  def getFullPropertyTree(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getFullPropertyTree(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets a list of internal Qlik Sense objects and registers a callback to receive the data.
     * @param type - Type of object:
@@ -170,8 +170,8 @@ trait IApp extends js.Object {
     * @param [callback] - Optional. Registers a callback that is executed every time data is returned.
     * @return - A promise of an object model.
     */
-  def getList(`type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getList(`type`: java.lang.String, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getList(`type`: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def getList(`type`: java.lang.String, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Retrieves a Qlik Sense object from the Qlik Sense application and inserts
     * it into a HTML element. The object fills the HTML object, so you can size
@@ -189,22 +189,22 @@ trait IApp extends js.Object {
     *                           Introduced in version 3.0.
     * @return - A promise of an object model.
     */
-  def getObject(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getObject(id: java.lang.String, elem: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getObject(id: java.lang.String, elem: java.lang.String, options: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getObject(id: java.lang.String, elem: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getObject(id: java.lang.String, elem: js.Any, options: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getObject(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def getObject(id: java.lang.String, elem: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def getObject(id: java.lang.String, elem: java.lang.String, options: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def getObject(id: java.lang.String, elem: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def getObject(id: java.lang.String, elem: js.Any, options: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets properties for a Qlik Sense object.
     * @param id - Object id.
     * @return - A promise of an object model.
     */
-  def getObjectProperties(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getObjectProperties(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets the data load script of this app.
     * @return - A promise of an qScript object.
     */
-  def getScript(): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
+  def getScript(): angularLib.angularMod.IPromise[java.lang.String] = js.native
   /**
     * Inserts a Qlik Sense snapshot into a HTML element. The snapshot fills
     * the HTML object so you can size and position the element to determine
@@ -214,9 +214,9 @@ trait IApp extends js.Object {
     * @param [elem] - Optional. HTML element or string with HTML element id.
     * @return - A promise of an object model.
     */
-  def getSnapshot(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getSnapshot(id: java.lang.String, elem: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getSnapshot(id: java.lang.String, elem: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getSnapshot(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def getSnapshot(id: java.lang.String, elem: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def getSnapshot(id: java.lang.String, elem: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Locks all selections.
     * @param [state=$] - Optional. Alternate state name.
@@ -224,14 +224,14 @@ trait IApp extends js.Object {
     * Introduced in version 2.1.
     * @return - A promise of a Qlik engine reply.
     */
-  def lockAll(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def lockAll(state: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def lockAll(): angularLib.angularMod.IPromise[_] = js.native
+  def lockAll(state: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Removes an alternate state in the app.
     * @param qStateName - Alternate state name.
     * @return - A promise of a Qlik engine reply.
     */
-  def removeAlternateState(qStateName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def removeAlternateState(qStateName: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Searches for one or more terms in the values of a Qlik Sense app.
     * @param qTerms - Terms to search for.
@@ -260,8 +260,8 @@ trait IApp extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Searches for one or more terms in the values of a Qlik Sense app.
     * @param qTerms - Terms to search for.
@@ -291,9 +291,9 @@ trait IApp extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def searchResults(qTerms: js.Array[_], qPage: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def searchResults(qTerms: js.Array[_], qPage: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Returns suggestions of words from the values entered in the search. Acts as a helper for the searchAssociations method.
     * @param qTerms - Terms to search for.
@@ -303,9 +303,9 @@ trait IApp extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def searchSuggest(qTerms: js.Array[_]): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def searchSuggest(qTerms: js.Array[_], qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def searchSuggest(qTerms: js.Array[_], qOptions: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def searchSuggest(qTerms: js.Array[_]): angularLib.angularMod.IPromise[_] = js.native
+  def searchSuggest(qTerms: js.Array[_], qOptions: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def searchSuggest(qTerms: js.Array[_], qOptions: js.Any, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Makes a selection based on searchAssociation results.
     * @param qMatchIx - Index to search result.
@@ -315,9 +315,9 @@ trait IApp extends js.Object {
     * @param [qSoftLock] - Optional. This parameter was deprecated in version 2.0 and is ignored in newer versions. Use the qOtions.qContext parameter instead.
     * @return - A promise of a Qlik engine reply.
     */
-  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_]): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_], qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_], qOptions: js.Any, qSoftLock: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_]): angularLib.angularMod.IPromise[_] = js.native
+  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_], qOptions: js.Any): angularLib.angularMod.IPromise[_] = js.native
+  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_], qOptions: js.Any, qSoftLock: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Sets the data load script of this app. Also validates the script syntax and returns the syntax errors if errors exist.
     * @param [state] - Optional. Sets the state. Default is $.
@@ -329,12 +329,12 @@ trait IApp extends js.Object {
     * @param [script] - The script content.
     * @return - A promise of an empty object or a list of syntax errors depending on the validation result.
     */
-  def setScript(script: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def setScript(script: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Unlocks all selections that has previously been locked.
     * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
     */
-  def unlockAll(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def unlockAll(state: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def unlockAll(): angularLib.angularMod.IPromise[_] = js.native
+  def unlockAll(state: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
 }
 

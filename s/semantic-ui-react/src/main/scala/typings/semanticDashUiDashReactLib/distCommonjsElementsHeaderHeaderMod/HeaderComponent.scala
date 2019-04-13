@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HeaderComponent
-  extends reactLib.reactMod.ReactNs.FunctionComponent[HeaderProps] {
-  var Content: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.FunctionComponent[HeaderProps] {
+  var Content: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderContentMod.HeaderContentProps
   ] = js.native
-  var Subheader: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Subheader: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderSubheaderMod.HeaderSubheaderProps
   ] = js.native
 }

@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(path: java.lang.String): scala.Null | java.lang.String = js.native
-  def apply(
-    path: java.lang.String,
-    options: findDashProjectDashRootLib.findDashProjectDashRootMod.findProjectRootNs.Options
-  ): scala.Null | java.lang.String = js.native
+  def apply(path: java.lang.String, options: Options): scala.Null | java.lang.String = js.native
 }
 

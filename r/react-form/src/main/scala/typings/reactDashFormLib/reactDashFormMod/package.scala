@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashFormMod {
   type FormError = js.UndefOr[java.lang.String]
+  type FormErrors = org.scalablytyped.runtime.StringDictionary[FormError]
   type FormValue = js.Any
   type FormValues = Nested[FormValue]
   type NestedErrors = Nested[FormErrors]

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 object feedmeLibStrings {
   @js.native
   sealed trait atom
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait close extends js.Object
@@ -27,38 +27,38 @@ object feedmeLibStrings {
   
   @js.native
   sealed trait json
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait pipe extends js.Object
   
   @js.native
   sealed trait `rss 0DOT90`
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait `rss 0DOT91`
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait `rss 0DOT92`
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait `rss 0DOT93`
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait `rss 0DOT94`
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait `rss 1DOT0`
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait `rss 2DOT0`
-    extends feedmeLib.feedmeMod.FeedMeNs.Type
+    extends feedmeLib.feedmeMod.Type
   
   @js.native
   sealed trait `type` extends js.Object

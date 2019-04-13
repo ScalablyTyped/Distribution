@@ -7,26 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "Appearance")
 @js.native
-class Appearance ()
-  extends cesiumLib.cesiumMod.CesiumNs.Appearance {
+class Appearance () extends js.Object {
   def this(options: cesiumLib.Anon_Closed) = this()
-  /* CompleteClass */
-  override val closed: scala.Boolean = js.native
-  /* CompleteClass */
-  override val fragmentShaderSource: java.lang.String = js.native
-  /* CompleteClass */
-  override var material: cesiumLib.cesiumMod.CesiumNs.Material = js.native
-  /* CompleteClass */
-  override val renderState: js.Any = js.native
-  /* CompleteClass */
-  override var translucent: scala.Boolean = js.native
-  /* CompleteClass */
-  override val vertexShaderSource: java.lang.String = js.native
-  /* CompleteClass */
-  override def getFragmentShaderSource(): java.lang.String = js.native
-  /* CompleteClass */
-  override def getRenderState(): js.Any = js.native
-  /* CompleteClass */
-  override def isTranslucent(): scala.Boolean = js.native
+  val closed: scala.Boolean = js.native
+  val fragmentShaderSource: java.lang.String = js.native
+  var material: Material = js.native
+  val renderState: js.Any = js.native
+  var translucent: scala.Boolean = js.native
+  val vertexShaderSource: java.lang.String = js.native
+  def getFragmentShaderSource(): java.lang.String = js.native
+  def getRenderState(): js.Any = js.native
+  def isTranslucent(): scala.Boolean = js.native
 }
 

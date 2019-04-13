@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends org.scalablytyped.runtime.TopLevel[
-      fastifyLib.fastifyMod.fastifyNs.Plugin[
+      fastifyLib.fastifyMod.Plugin[
         nodeLib.httpMod.Server, 
         nodeLib.httpMod.IncomingMessage, 
         nodeLib.httpMod.ServerResponse, 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("rosie", JSImport.Namespace)
 @js.native
-object ^
-  extends org.scalablytyped.runtime.TopLevel[rosieLib.Anon_Factory]
+object ^ extends js.Object {
+  var Factory: IFactoryStatic = js.native
+}
 

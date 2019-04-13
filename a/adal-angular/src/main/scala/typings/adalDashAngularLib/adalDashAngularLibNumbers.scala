@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 object adalDashAngularLibNumbers {
   @js.native
   sealed trait `0`
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.LoggingLevel
+    extends adalDashAngularLib.adalDashAngularMod.LoggingLevel
   
   @js.native
   sealed trait `1`
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.LoggingLevel
+    extends adalDashAngularLib.adalDashAngularMod.LoggingLevel
   
   @js.native
   sealed trait `2`
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.LoggingLevel
+    extends adalDashAngularLib.adalDashAngularMod.LoggingLevel
   
   @js.native
   sealed trait `3`
-    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.LoggingLevel
+    extends adalDashAngularLib.adalDashAngularMod.LoggingLevel
   
   @js.native
   sealed trait `483` extends js.Object

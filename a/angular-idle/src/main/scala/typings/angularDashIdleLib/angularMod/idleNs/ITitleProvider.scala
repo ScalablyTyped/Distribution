@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Used to configure the Title service.
   */
 trait ITitleProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   /**
     * Enables or disables the Title functionality.
     *

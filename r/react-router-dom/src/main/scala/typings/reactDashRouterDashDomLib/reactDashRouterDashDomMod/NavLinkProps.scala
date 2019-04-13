@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NavLinkProps extends LinkProps {
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
-  var activeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var activeStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var exact: js.UndefOr[scala.Boolean] = js.undefined
   var isActive: js.UndefOr[
     js.Function2[
@@ -25,7 +25,7 @@ object NavLinkProps {
   def apply(
     LinkProps: LinkProps = null,
     activeClassName: java.lang.String = null,
-    activeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeStyle: reactLib.reactMod.CSSProperties = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     isActive: (/* match */ reactDashRouterLib.reactDashRouterMod.`match`[_], /* location */ historyLib.historyMod.Location[historyLib.historyMod.LocationState]) => scala.Boolean = null,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,

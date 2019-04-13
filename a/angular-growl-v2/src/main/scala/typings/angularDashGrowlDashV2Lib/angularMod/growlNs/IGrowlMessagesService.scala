@@ -35,11 +35,11 @@ trait IGrowlMessagesService extends js.Object {
     * @param referenceId
     * @param limitMessages
     */
-  def initDirective(referenceId: scala.Double, limitMessages: scala.Double): angularLib.angularMod.angularNs.IDirective[
-    angularLib.angularMod.angularNs.IScope, 
+  def initDirective(referenceId: scala.Double, limitMessages: scala.Double): angularLib.angularMod.IDirective[
+    angularLib.angularMod.IScope, 
     angularLib.JQLite, 
-    angularLib.angularMod.angularNs.IAttributes, 
-    angularLib.angularMod.angularNs.IController
+    angularLib.angularMod.IAttributes, 
+    angularLib.angularMod.IController
   ] = js.native
 }
 

@@ -20,9 +20,7 @@ trait IDynamicTableColDef extends js.Object {
     * At the creation of the `NgTableParams` this field will be called and the result then assigned
     * to the `data` field of this column.
     */
-  var filterData: js.UndefOr[
-    DynamicTableColField[angularLib.angularMod.angularNs.IPromise[SelectData] | SelectData]
-  ] = js.undefined
+  var filterData: js.UndefOr[DynamicTableColField[angularLib.angularMod.IPromise[SelectData] | SelectData]] = js.undefined
   /**
     * The name of the data row field that will be used to group on, or false when this column
     * does not support grouping
@@ -61,7 +59,7 @@ object IDynamicTableColDef {
   def apply(
     `class`: DynamicTableColField[java.lang.String] = null,
     filter: DynamicTableColField[IFilterTemplateDefMap] = null,
-    filterData: DynamicTableColField[angularLib.angularMod.angularNs.IPromise[SelectData] | SelectData] = null,
+    filterData: DynamicTableColField[angularLib.angularMod.IPromise[SelectData] | SelectData] = null,
     groupable: DynamicTableColField[java.lang.String | scala.Boolean] = null,
     headerTemplateURL: DynamicTableColField[java.lang.String | scala.Boolean] = null,
     headerTitle: DynamicTableColField[java.lang.String] = null,

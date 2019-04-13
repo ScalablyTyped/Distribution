@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SNS ()
   extends awsDashSdkLib.clientsAllMod.SNS {
-  def this(options: awsDashSdkLib.clientsSnsMod.SNSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSnsMod.ClientConfiguration) = this()
 }
 

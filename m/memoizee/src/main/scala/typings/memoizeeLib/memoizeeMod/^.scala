@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // tslint:disable-next-line ban-types
-  def apply[F /* <: js.Function */](f: F): F with memoizeeLib.memoizeeMod.memoizeeNs.Memoized[F] = js.native
-  def apply[F /* <: js.Function */](f: F, options: memoizeeLib.memoizeeMod.memoizeeNs.Options): F with memoizeeLib.memoizeeMod.memoizeeNs.Memoized[F] = js.native
+  def apply[F /* <: js.Function */](f: F): F with Memoized[F] = js.native
+  def apply[F /* <: js.Function */](f: F, options: Options): F with Memoized[F] = js.native
 }
 

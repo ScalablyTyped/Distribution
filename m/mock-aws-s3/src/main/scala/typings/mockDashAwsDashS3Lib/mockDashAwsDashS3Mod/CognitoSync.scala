@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CognitoSync ()
   extends awsDashSdkLib.awsDashSdkMod.CognitoSync {
-  def this(options: awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCognitosyncMod.ClientConfiguration) = this()
 }
 

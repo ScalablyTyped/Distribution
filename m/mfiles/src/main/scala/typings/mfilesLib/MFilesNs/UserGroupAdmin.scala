@@ -21,3 +21,8 @@ class UserGroupAdmin ()
   override def CloneFrom(UserGroupAdmin: mfilesLib.IUserGroupAdmin): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.UserGroupAdmin")
+@js.native
+object UserGroupAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserGroupAdmin]
+

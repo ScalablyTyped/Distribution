@@ -11,4 +11,5 @@ package object gulpDashHtmlDashReplaceMod {
     /* options */ js.UndefOr[Options], 
     nodeLib.NodeJSNs.ReadWriteStream
   ]
+  type Tasks = org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | AdvancedTask]
 }

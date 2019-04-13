@@ -14,8 +14,8 @@ object TextAreaProps {
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     as: js.Any = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
-    onInput: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
+    onInput: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], /* data */ TextAreaProps) => scala.Unit = null,
     rows: scala.Double | java.lang.String = null,
     value: scala.Double | java.lang.String = null
   ): TextAreaProps = {

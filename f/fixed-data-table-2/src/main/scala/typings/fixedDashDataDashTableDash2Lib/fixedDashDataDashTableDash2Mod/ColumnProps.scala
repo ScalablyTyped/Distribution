@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColumnProps
-  extends reactLib.reactMod.ReactNs.ClassAttributes[Column] {
+  extends reactLib.reactMod.ClassAttributes[Column] {
   /**
     * The horizontal alignment of the table cell content.
     */
@@ -167,11 +167,11 @@ object ColumnProps {
     header: ElementOrFunc[ColumnHeaderProps] = null,
     isReorderable: js.UndefOr[scala.Boolean] = js.undefined,
     isResizable: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     maxWidth: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
     pureRendering: js.UndefOr[scala.Boolean] = js.undefined,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Column] = null
+    ref: reactLib.reactMod.LegacyRef[Column] = null
   ): ColumnProps = {
     val __obj = js.Dynamic.literal(width = width)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])

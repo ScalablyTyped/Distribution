@@ -265,9 +265,6 @@ object editorNs extends js.Object {
     val originalStartColumn: scala.Double
   }
   
-  trait ICodeActionsOnSaveOptions
-    extends /* kind */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
-  
   @js.native
   trait ICodeEditor extends IEditor {
     /**
@@ -596,9 +593,6 @@ object editorNs extends js.Object {
   trait IColorizerOptions extends js.Object {
     var tabSize: js.UndefOr[scala.Double] = js.undefined
   }
-  
-  trait IColors
-    extends /* colorId */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
   trait ICommand extends js.Object {
     /**
@@ -1714,9 +1708,6 @@ object editorNs extends js.Object {
       */
     var wrappingIndent: js.UndefOr[java.lang.String] = js.undefined
   }
-  
-  trait IEditorOverrideServices
-    extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
   trait IEditorParameterHintOptions extends js.Object {
     /**
@@ -2971,7 +2962,6 @@ object editorNs extends js.Object {
   @js.native
   sealed trait WrappingIndent extends js.Object
   
-  val EditorType: monacoDashEditorLib.Anon_ICodeEditor = js.native
   def colorize(text: java.lang.String, languageId: java.lang.String, options: IColorizerOptions): js.Promise[java.lang.String] = js.native
   def colorizeElement(domNode: stdLib.HTMLElement, options: IColorizerElementOptions): js.Promise[scala.Unit] = js.native
   def colorizeModelLine(model: ITextModel, lineNumber: scala.Double): java.lang.String = js.native
@@ -3131,6 +3121,12 @@ object editorNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[
         monacoDashEditorLib.monacoDashEditorMod.editorNs.DefaultEndOfLine with scala.Double
       ] = js.native
+  }
+  
+  @js.native
+  object EditorType extends js.Object {
+    var ICodeEditor: java.lang.String = js.native
+    var IDiffEditor: java.lang.String = js.native
   }
   
   @js.native
@@ -3652,11 +3648,14 @@ object editorNs extends js.Object {
       ] = js.native
   }
   
+  type ICodeActionsOnSaveOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+  type IColors = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type ICommandHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
   type ICursorStateComputer = js.Function1[
     /* inverseEditOperations */ js.Array[IIdentifiedSingleEditOperation], 
     js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection] | scala.Null
   ]
+  type IEditorOverrideServices = org.scalablytyped.runtime.StringDictionary[js.Any]
   type IModel = ITextModel
   type IReadOnlyModel = ITextModel
 }

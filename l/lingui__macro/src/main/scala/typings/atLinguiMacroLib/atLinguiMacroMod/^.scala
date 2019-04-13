@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("@lingui/macro", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DateFormat: reactLib.reactMod.ReactNs.ComponentClass[
+  val DateFormat: reactLib.reactMod.ComponentClass[
     atLinguiMacroLib.createFormatMod.FormatPropsWithoutI18n[stdLib.Date, stdLib.IntlNs.DateTimeFormatOptions], 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val NumberFormat: reactLib.reactMod.ReactNs.ComponentClass[
+  val NumberFormat: reactLib.reactMod.ComponentClass[
     atLinguiMacroLib.createFormatMod.FormatPropsWithoutI18n[scala.Double, stdLib.IntlNs.NumberFormatOptions], 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
   def date(value: stdLib.Date): atLinguiCoreLib.i18nMod.MessageDescriptor = js.native
   def date(value: stdLib.Date, format: stdLib.IntlNs.DateTimeFormatOptions): atLinguiCoreLib.i18nMod.MessageDescriptor = js.native

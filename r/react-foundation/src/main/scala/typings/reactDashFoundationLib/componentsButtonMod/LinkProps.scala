@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactLib.reactMod.ReactNs.AnchorHTMLAttributes because var conflicts: className. Inlined download, href, hrefLang, media, referrerPolicy, rel, target, `type` */ trait LinkProps extends ButtonPropsCommon {
+- reactLib.reactMod.AnchorHTMLAttributes because var conflicts: className. Inlined download, href, hrefLang, media, referrerPolicy, rel, target, `type` */ trait LinkProps extends ButtonPropsCommon {
   var color: js.UndefOr[reactDashFoundationLib.enumsMod.ButtonColors] = js.undefined
   var download: js.UndefOr[js.Any] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 object LinkProps {
   @scala.inline
   def apply(
-    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
+    AnchorHTMLAttributes: reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement] = null,
     ButtonPropsCommon: ButtonPropsCommon = null,
     color: reactDashFoundationLib.enumsMod.ButtonColors = null
   ): LinkProps = {

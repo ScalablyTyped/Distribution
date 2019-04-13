@@ -19,6 +19,12 @@ object atFirebaseDatabaseLibStrings {
   sealed trait ` child_removed` extends js.Object
   
   @js.native
+  sealed trait `[MAX_NAME]` extends js.Object
+  
+  @js.native
+  sealed trait `[MIN_NAME]` extends js.Object
+  
+  @js.native
   sealed trait value extends js.Object
   
   @scala.inline
@@ -29,6 +35,10 @@ object atFirebaseDatabaseLibStrings {
   def ` child_moved`: ` child_moved` = " child_moved".asInstanceOf[` child_moved`]
   @scala.inline
   def ` child_removed`: ` child_removed` = " child_removed".asInstanceOf[` child_removed`]
+  @scala.inline
+  def `[MAX_NAME]`: `[MAX_NAME]` = "[MAX_NAME]".asInstanceOf[`[MAX_NAME]`]
+  @scala.inline
+  def `[MIN_NAME]`: `[MIN_NAME]` = "[MIN_NAME]".asInstanceOf[`[MIN_NAME]`]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
 }

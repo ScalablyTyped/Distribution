@@ -19,7 +19,7 @@ trait SnackbarProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Text to display in the content.
     */
@@ -49,9 +49,9 @@ object SnackbarProps {
   def apply(
     action: java.lang.String = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     label: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -76,7 +76,7 @@ object SnackbarProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: SnackbarTheme = null,
     timeout: scala.Int | scala.Double = null,
     `type`: reactDashToolboxLib.reactDashToolboxLibStrings.accept | reactDashToolboxLib.reactDashToolboxLibStrings.cancel | reactDashToolboxLib.reactDashToolboxLibStrings.warning = null

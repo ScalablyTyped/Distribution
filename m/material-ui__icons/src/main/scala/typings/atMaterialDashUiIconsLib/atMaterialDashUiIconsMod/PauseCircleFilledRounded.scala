@@ -16,9 +16,9 @@ class PauseCircleFilledRounded protected ()
 @JSImport("@material-ui/icons", "PauseCircleFilledRounded")
 @js.native
 class PauseCircleFilledRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

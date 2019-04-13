@@ -7,14 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WrappedFormUtils[V] extends js.Object {
-  def getFieldDecorator[T /* <: js.Object */](id: java.lang.String): js.Function1[
-    /* node */ reactLib.reactMod.ReactNs.ReactNode, 
-    reactLib.reactMod.ReactNs.ReactNode
-  ] = js.native
-  def getFieldDecorator[T /* <: js.Object */](id: java.lang.String, options: GetFieldDecoratorOptions): js.Function1[
-    /* node */ reactLib.reactMod.ReactNs.ReactNode, 
-    reactLib.reactMod.ReactNs.ReactNode
-  ] = js.native
+  def getFieldDecorator[T /* <: js.Object */](id: java.lang.String): js.Function1[/* node */ reactLib.reactMod.ReactNode, reactLib.reactMod.ReactNode] = js.native
+  def getFieldDecorator[T /* <: js.Object */](id: java.lang.String, options: GetFieldDecoratorOptions): js.Function1[/* node */ reactLib.reactMod.ReactNode, reactLib.reactMod.ReactNode] = js.native
   /** 获取某个输入控件的 Error */
   def getFieldError(name: java.lang.String): js.Array[js.Object] = js.native
   /** 获取一个输入控件的值 */

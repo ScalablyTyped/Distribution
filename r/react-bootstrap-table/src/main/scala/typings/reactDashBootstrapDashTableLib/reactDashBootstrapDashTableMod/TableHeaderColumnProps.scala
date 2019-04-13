@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableHeaderColumnProps
-  extends reactLib.reactMod.ReactNs.Props[TableHeaderColumn] {
+  extends reactLib.reactMod.Props[TableHeaderColumn] {
   /**
   	 * It only work for enabling insertRow and be assign on rowKey column. If true, the value of rowkey will be
   	 * generated automatically after a row insertion. If a function given, you can customize the value by yourself and
@@ -23,7 +23,7 @@ trait TableHeaderColumnProps
     js.Function2[
       /* direction */ SortOrder | scala.Null, 
       /* fieldName */ java.lang.String, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -129,7 +129,7 @@ trait TableHeaderColumnProps
       /* row */ js.Any, 
       /* formatExtraData */ js.Any, 
       /* rowIndex */ scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -297,18 +297,18 @@ trait TableHeaderColumnProps
   	 *   `columnIndex`: Index number for the current column that the cell is in.
   	 */
   var tdStyle: js.UndefOr[
-    reactLib.reactMod.ReactNs.CSSProperties | (js.Function4[
+    reactLib.reactMod.CSSProperties | (js.Function4[
       /* cell */ js.Any, 
       /* row */ js.Any, 
       /* rowIndex */ scala.Double, 
       /* columnIndex */ scala.Double, 
-      reactLib.reactMod.ReactNs.CSSProperties
+      reactLib.reactMod.CSSProperties
     ])
   ] = js.undefined
   /**
   	 * Allow you to add your custom style object on TH element.
   	 */
-  var thStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var thStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Set the column width, including the units. e.g. '10%' or '150px'
   	 */
@@ -319,8 +319,8 @@ object TableHeaderColumnProps {
   @scala.inline
   def apply(
     autoValue: scala.Boolean | js.Function0[_] = null,
-    caretRender: (/* direction */ SortOrder | scala.Null, /* fieldName */ java.lang.String) => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    caretRender: (/* direction */ SortOrder | scala.Null, /* fieldName */ java.lang.String) => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String | (js.Function4[
       /* cell */ js.Any, 
       /* row */ js.Any, 
@@ -351,7 +351,7 @@ object TableHeaderColumnProps {
     customInsertEditor: reactDashBootstrapDashTableLib.Anon_Attr = null,
     dataAlign: DataAlignType = null,
     dataField: java.lang.String = null,
-    dataFormat: (/* cell */ js.Any, /* row */ js.Any, /* formatExtraData */ js.Any, /* rowIndex */ scala.Double) => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    dataFormat: (/* cell */ js.Any, /* row */ js.Any, /* formatExtraData */ js.Any, /* rowIndex */ scala.Double) => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     dataSort: js.UndefOr[scala.Boolean] = js.undefined,
     defaultASC: js.UndefOr[scala.Boolean] = js.undefined,
     editColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String]) = null,
@@ -376,8 +376,8 @@ object TableHeaderColumnProps {
     hiddenOnInsert: js.UndefOr[scala.Boolean] = js.undefined,
     invalidEditColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String]) = null,
     isKey: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[TableHeaderColumn] = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[TableHeaderColumn] = null,
     row: scala.Int | scala.Double = null,
     rowSpan: scala.Int | scala.Double = null,
     searchable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -385,14 +385,14 @@ object TableHeaderColumnProps {
     sortFuncExtraData: js.Any = null,
     sortHeaderColumnClassName: java.lang.String | (js.Function2[/* order */ SortOrder, /* dataField */ java.lang.String, java.lang.String]) = null,
     tdAttr: CustomAttrs = null,
-    tdStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function4[
+    tdStyle: reactLib.reactMod.CSSProperties | (js.Function4[
       /* cell */ js.Any, 
       /* row */ js.Any, 
       /* rowIndex */ scala.Double, 
       /* columnIndex */ scala.Double, 
-      reactLib.reactMod.ReactNs.CSSProperties
+      reactLib.reactMod.CSSProperties
     ]) = null,
-    thStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    thStyle: reactLib.reactMod.CSSProperties = null,
     width: java.lang.String = null
   ): TableHeaderColumnProps = {
     val __obj = js.Dynamic.literal()

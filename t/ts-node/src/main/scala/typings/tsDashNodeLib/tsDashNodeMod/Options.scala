@@ -19,7 +19,7 @@ trait Options extends js.Object {
   var readFile: js.UndefOr[js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]]] = js.undefined
   var skipIgnore: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   var skipProject: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
-  var transformers: js.UndefOr[typescriptLib.typescriptMod.tsNs.CustomTransformers] = js.undefined
+  var transformers: js.UndefOr[typescriptLib.typescriptMod.CustomTransformers] = js.undefined
   var transpileOnly: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   var typeCheck: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
 }
@@ -40,7 +40,7 @@ object Options {
     readFile: /* path */ java.lang.String => js.UndefOr[java.lang.String] = null,
     skipIgnore: js.UndefOr[scala.Boolean] = js.undefined,
     skipProject: js.UndefOr[scala.Boolean] = js.undefined,
-    transformers: typescriptLib.typescriptMod.tsNs.CustomTransformers = null,
+    transformers: typescriptLib.typescriptMod.CustomTransformers = null,
     transpileOnly: js.UndefOr[scala.Boolean] = js.undefined,
     typeCheck: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {

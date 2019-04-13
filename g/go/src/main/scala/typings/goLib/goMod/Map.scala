@@ -17,80 +17,108 @@ import scala.scalajs.js.annotation._
   * @param {string=} keytype if supplied, this must be one of: 'number' or 'string' for the key type.
   * @param {string=} valtype if supplied, this must be one of: 'number', 'string', 'boolean', or 'function' for the value type.
   */
-class Map[K, V] ()
-  extends goLib.goMod.goNs.Map[K, V] {
+class Map[K, V] () extends Iterator[KeyValuePair[K, V]] {
   def this(keytype: java.lang.String) = this()
   /**
     * This creates a Map that may check the types of the keys and/or values.
     * @param {function(...)} keytype if supplied, this must be a class function/constructor.
     * @param {function(...)} valtype if supplied, this must be a class function/constructor.
     */
-  def this(keytype: goLib.goMod.goNs.Constructor, valtype: goLib.goMod.goNs.Constructor) = this()
+  def this(keytype: Constructor, valtype: Constructor) = this()
   /**
     * This creates a Map that may check the types of the keys and/or values.
     * @param {function(...)} keytype if supplied, this must be a class function/constructor.
     * @param {string} valtype if supplied, this must be one of: 'number', 'string', 'boolean', or 'function' for the value type.
     */
-  def this(keytype: goLib.goMod.goNs.Constructor, valtype: java.lang.String) = this()
+  def this(keytype: Constructor, valtype: java.lang.String) = this()
   /**
     * This creates a Map that may check the types of the keys and/or values.
     * @param {string=} keytype if supplied, this must be one of: 'number' or 'string' for the key type.
     * @param {function(...)} valtype if supplied, this must be a class function/constructor.
     */
-  def this(keytype: java.lang.String, valtype: goLib.goMod.goNs.Constructor) = this()
+  def this(keytype: java.lang.String, valtype: Constructor) = this()
   def this(keytype: java.lang.String, valtype: java.lang.String) = this()
-  /*This is an interface and thus does not have a constructor.*/
-  /**This read-only property returns the total number of items in the iterated collection.*/
-  /* CompleteClass */
-  override var count: scala.Double = js.native
-  /*This is an interface and thus does not have a constructor.*/
-  /**Gets an Iterator that can iterate over the items in the collection.*/
-  /* CompleteClass */
-  override var iterator: goLib.goMod.goNs.Iterator[goLib.goMod.goNs.KeyValuePair[K, V]] = js.native
-  /**This read-only property returns the current index to the item in the collection, assuming .next has just returned true.*/
-  /* CompleteClass */
-  override var key: js.Any = js.native
-  /**This read-only property returns the current item in the collection, assuming .next has just returned true.*/
-  /* CompleteClass */
-  override var value: goLib.goMod.goNs.KeyValuePair[K, V] = js.native
+  /**Gets an object that you can use for iterating over the keys in the Map.*/
+  var iteratorKeys: Iterator[K] = js.native
+  /**Gets an object that you can use for iterating over the values of the Map.*/
+  var iteratorValues: Iterator[V] = js.native
+  /**This read-only property returns the number of associations in the Map. ES6-like synonym for count.*/
+  var size: scala.Double = js.native
   /**
-    * This is true if all invocations of the given predicate on items in the collection are true.
-    * @param {(x: T) => boolean} pred
+    * Adds a key-value association to the Map, or replaces the value associated with the key if the key was already present in the map.
+    * @param {*} key
+    * @param {*} val
     */
-  /* CompleteClass */
-  override def all(pred: js.Function1[goLib.goMod.goNs.KeyValuePair[K, V], scala.Boolean]): scala.Boolean = js.native
+  def add(key: K, `val`: V): scala.Boolean = js.native
   /**
-    * This is true if any invocation of the given predicate on items in the collection is true.
-    * @param {(x: T) => boolean} pred
+    * Adds all of the key-value pairs of another Map to this Map.
+    * @param {Iterable.<KeyValuePair.<K,V>>|Array} coll
     */
-  /* CompleteClass */
-  override def any(pred: js.Function1[goLib.goMod.goNs.KeyValuePair[K, V], scala.Boolean]): scala.Boolean = js.native
+  def addAll(coll: Iterable[KeyValuePair[K, V]]): Map[K, V] = js.native
+  def addAll(coll: js.Array[KeyValuePair[K, V]]): Map[K, V] = js.native
   /**
-    * Call the given function on each item in the collection.
-    * @param {(x: T) => void} func
+    * Clears the Map, removing all key-value associations.
     */
-  /* CompleteClass */
-  override def each(func: js.Function1[goLib.goMod.goNs.KeyValuePair[K, V], scala.Unit]): scala.Unit = js.native
+  def clear(): scala.Unit = js.native
   /**
-    * Call the given predicate on each item in the collection and for each item that it returns true, present the item in an iterator.
-    * @param {function(T):boolean} pred This function must not have any side-effects.
+    * Produce a new Map that includes the key-value pairs of this Map and then adds the pairs of the given Iterator.
+    * Unlike Iterator.concat, this returns a Map, not an Iterator.
+    * @param {Iterable.<KeyValuePair<K,V>>} it An Iterable
     */
-  /* CompleteClass */
-  override def filter(pred: js.Function1[goLib.goMod.goNs.KeyValuePair[K, V], scala.Boolean]): goLib.goMod.goNs.Iterator[goLib.goMod.goNs.KeyValuePair[K, V]] = js.native
+  def concat[W](it: Iterable[KeyValuePair[K, W]]): Map[K, V | W] = js.native
   /**
-    * Return the first item in the collection, or null if there is none.
+    * Returns whether the given key is in this Map.
+    * @param {*} key
     */
-  /* CompleteClass */
-  override def first(): goLib.goMod.goNs.KeyValuePair[K, V] = js.native
+  def contains(key: K): scala.Boolean = js.native
   /**
-    * Call this method to advance the iterator to the next item in the collection.
+    * Makes a shallow copy of this Map.
     */
-  /* CompleteClass */
-  override def next(): scala.Boolean = js.native
+  def copy(): Map[K, V] = js.native
   /**
-    * Start this iterator all over again.
+    * Removes a key (if found) from the Map. ES6-like synonym for remove.
+    * @param {*} key
     */
-  /* CompleteClass */
-  override def reset(): scala.Unit = js.native
+  def delete(key: K): scala.Boolean = js.native
+  /**
+    * Returns the value associated with a key. ES6-like synonym for getValue.
+    * @param {*} key
+    */
+  def get(key: K): V = js.native
+  /**
+    * Returns the value associated with a key.
+    * @param {*} key
+    */
+  def getValue(key: K): V = js.native
+  /**
+    * Returns whether the given key is in this Map. ES6-like synonym for contains.
+    * @param {*} key
+    */
+  def has(key: K): scala.Boolean = js.native
+  /**
+    * Call the given function on each key-value pair in the collection and associate the key with the result of the function in a new Map.
+    * Unlike Iterator.map, this returns a Map, not an Iterator.
+    * @param {function(KeyValuePair<K,V>)} func This function must not modify the collection.
+    */
+  def map[S](func: js.Function1[/* x */ KeyValuePair[K, V], S]): Map[K, S] = js.native
+  /**
+    * Removes a key (if found) from the Map.
+    * @param {*} key
+    */
+  def remove(key: K): scala.Boolean = js.native
+  /**
+    * Adds a key-value association to the Map, or replaces the value associated with the key if the key was already present in the map. ES6-like synonym for add.
+    * @param {*} key
+    * @param {*} val
+    */
+  def set(key: K, `val`: V): scala.Boolean = js.native
+  /**
+    * Produces a JavaScript Array of key/value pair objects from the contents of this Map.
+    */
+  def toArray(): js.Array[KeyValuePair[K, V]] = js.native
+  /**
+    * Produces a Set that provides a read-only view onto the keys of this Map.
+    */
+  def toKeySet(): Set[K] = js.native
 }
 

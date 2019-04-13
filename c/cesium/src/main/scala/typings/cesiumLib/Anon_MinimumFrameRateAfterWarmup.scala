@@ -10,14 +10,14 @@ trait Anon_MinimumFrameRateAfterWarmup extends js.Object {
   var minimumFrameRateDuringWarmup: js.UndefOr[scala.Double] = js.undefined
   var quietPeriod: js.UndefOr[scala.Double] = js.undefined
   var samplingWindow: js.UndefOr[scala.Double] = js.undefined
-  var scene: cesiumLib.cesiumMod.CesiumNs.Scene
+  var scene: cesiumLib.cesiumMod.Scene
   var warmupPeriod: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Anon_MinimumFrameRateAfterWarmup {
   @scala.inline
   def apply(
-    scene: cesiumLib.cesiumMod.CesiumNs.Scene,
+    scene: cesiumLib.cesiumMod.Scene,
     minimumFrameRateAfterWarmup: scala.Int | scala.Double = null,
     minimumFrameRateDuringWarmup: scala.Int | scala.Double = null,
     quietPeriod: scala.Int | scala.Double = null,

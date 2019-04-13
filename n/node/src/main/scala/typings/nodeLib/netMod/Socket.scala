@@ -73,6 +73,14 @@ class Socket ()
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_timeout(event: nodeLib.nodeLibStrings.timeout): scala.Boolean = js.native
+  def end(buffer: java.lang.String): scala.Unit = js.native
+  def end(buffer: java.lang.String, cb: js.Function0[scala.Unit]): scala.Unit = js.native
+  def end(buffer: nodeLib.Buffer): scala.Unit = js.native
+  def end(buffer: nodeLib.Buffer, cb: js.Function0[scala.Unit]): scala.Unit = js.native
+  def end(buffer: stdLib.Uint8Array): scala.Unit = js.native
+  def end(buffer: stdLib.Uint8Array, cb: js.Function0[scala.Unit]): scala.Unit = js.native
+  def end(str: java.lang.String, encoding: java.lang.String): scala.Unit = js.native
+  def end(str: java.lang.String, encoding: java.lang.String, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(str: nodeLib.Buffer, encoding: java.lang.String): scala.Unit = js.native
   def end(str: nodeLib.Buffer, encoding: java.lang.String, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(str: stdLib.Uint8Array, encoding: java.lang.String): scala.Unit = js.native
@@ -167,6 +175,19 @@ class Socket ()
   def setTimeout(timeout: scala.Double): this.type = js.native
   def setTimeout(timeout: scala.Double, callback: js.Function0[scala.Unit]): this.type = js.native
   def unref(): scala.Unit = js.native
+  def write(buffer: java.lang.String): scala.Boolean = js.native
+  def write(buffer: java.lang.String, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Boolean = js.native
+  // Extended base methods
+  def write(buffer: nodeLib.Buffer): scala.Boolean = js.native
+  def write(buffer: nodeLib.Buffer, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Boolean = js.native
+  def write(buffer: stdLib.Uint8Array): scala.Boolean = js.native
+  def write(buffer: stdLib.Uint8Array, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Boolean = js.native
+  def write(str: java.lang.String, encoding: java.lang.String): scala.Boolean = js.native
+  def write(
+    str: java.lang.String,
+    encoding: java.lang.String,
+    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+  ): scala.Boolean = js.native
   def write(str: nodeLib.Buffer, encoding: java.lang.String): scala.Boolean = js.native
   def write(
     str: nodeLib.Buffer,

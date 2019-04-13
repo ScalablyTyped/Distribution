@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object fromRenderPropsMod extends js.Object {
   def default[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: reactLib.reactMod.ReactNs.ComponentType[_],
+    RenderPropsComponent: reactLib.reactMod.ComponentType[_],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
   ): recomposeLib.recomposeMod.ComponentEnhancer[TInner with TOutter, TOutter] = js.native
   def default[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: reactLib.reactMod.ReactNs.ComponentType[_],
+    RenderPropsComponent: reactLib.reactMod.ComponentType[_],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: java.lang.String
   ): recomposeLib.recomposeMod.ComponentEnhancer[TInner with TOutter, TOutter] = js.native

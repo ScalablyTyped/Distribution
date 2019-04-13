@@ -35,7 +35,7 @@ object TableRowProps {
   def apply(
     className: java.lang.String = null,
     idx: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -61,7 +61,7 @@ object TableRowProps {
     onTouchStart: js.Function = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: TableRowTheme = null
   ): TableRowProps = {
     val __obj = js.Dynamic.literal()

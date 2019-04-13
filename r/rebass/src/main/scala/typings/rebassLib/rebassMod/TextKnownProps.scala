@@ -17,11 +17,11 @@ object TextKnownProps {
   @scala.inline
   def apply(
     alignSelf: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null,
-    as: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    as: reactLib.reactMod.ReactType[_] = null,
     bg: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
     css: styledDashComponentsLib.styledDashComponentsMod.CSSObject = null,
     flex: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
@@ -32,7 +32,7 @@ object TextKnownProps {
       csstypeLib.csstypeMod.FontSizeProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     fontWeight: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.FontWeightProperty] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     letterSpacing: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.LetterSpacingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -112,7 +112,7 @@ object TextKnownProps {
     py: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null,
+    ref: reactLib.reactMod.LegacyRef[js.Any] = null,
     textAlign: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.TextAlignProperty] = null,
     width: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.WidthProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object qrcodeDotReactLibComponents {
   @scala.inline
-  def QrcodeDotReact: reactLib.reactMod.ReactNs.ComponentType[qrcodeDotReactLib.qrcodeDotReactMod.qrcodeNs.QRCodeProps] = js.constructorOf[qrcodeDotReactLib.qrcodeDotReactMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[qrcodeDotReactLib.qrcodeDotReactMod.qrcodeNs.QRCodeProps]]
+  def QrcodeDotReact: reactLib.reactMod.ComponentType[qrcodeDotReactLib.qrcodeDotReactMod.QRCodeProps] = js.constructorOf[qrcodeDotReactLib.qrcodeDotReactMod.^].asInstanceOf[reactLib.reactMod.ComponentType[qrcodeDotReactLib.qrcodeDotReactMod.QRCodeProps]]
   @scala.inline
-  def QRCodeProps: qrcodeDotReactLib.qrcodeDotReactMod.qrcodeNs.QRCodeProps.type = qrcodeDotReactLib.qrcodeDotReactMod.qrcodeNs.QRCodeProps
-  type QRCodeProps = qrcodeDotReactLib.qrcodeDotReactMod.qrcodeNs.QRCodeProps
+  def QRCodeProps: qrcodeDotReactLib.qrcodeDotReactMod.QRCodeProps.type = qrcodeDotReactLib.qrcodeDotReactMod.QRCodeProps
+  type QRCodeProps = qrcodeDotReactLib.qrcodeDotReactMod.QRCodeProps
 }
 

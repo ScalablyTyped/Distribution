@@ -17,37 +17,33 @@ trait SCServer
   val MIDDLEWARE_SUBSCRIBE: socketclusterDashServerLib.socketclusterDashServerLibStrings.subscribe = js.native
   var auth: scDashAuthLib.scDashAuthMod.SCAuthEngine = js.native
   var brokerEngine: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.Client = js.native
-  var clients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.namespaced] = js.native
+  var clients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.^] = js.native
   var clientsCount: scala.Double = js.native
-  var codec: socketclusterDashServerLib.scserverMod.SCServerNs.SCCodecEngine = js.native
+  var codec: SCCodecEngine = js.native
   var exchange: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.SCExchange = js.native
-  var options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions = js.native
-  var pendingClients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.namespaced] = js.native
+  var options: SCServerOptions = js.native
+  var pendingClients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.^] = js.native
   var pendingClientsCount: scala.Double = js.native
   @JSName("addMiddleware")
   def addMiddleware_authenticate(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.authenticate,
     middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.AuthenticateRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextAuthenticateMiddlewareFunction, 
+      /* req */ AuthenticateRequest, 
+      /* next */ nextAuthenticateMiddlewareFunction, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   @JSName("addMiddleware")
   def addMiddleware_emit(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.emit,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.EmitRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ EmitRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   @JSName("addMiddleware")
   def addMiddleware_handshakeSC(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.handshakeSC,
     middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.HandshakeSCRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextHandshakeSCMiddlewareFunction, 
+      /* req */ HandshakeSCRequest, 
+      /* next */ nextHandshakeSCMiddlewareFunction, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -56,66 +52,54 @@ trait SCServer
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.handshakeWS,
     middlewareFn: js.Function2[
       /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
+      /* next */ nextMiddlewareFunction, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   @JSName("addMiddleware")
   def addMiddleware_publishIn(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.publishIn,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.PublishInRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ PublishInRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   @JSName("addMiddleware")
   def addMiddleware_publishOut(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.publishOut,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.PublishOutRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ PublishOutRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   @JSName("addMiddleware")
   def addMiddleware_subscribe(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.subscribe,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.SubscribeRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ SubscribeRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   def close(): scala.Unit = js.native
   def close(cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
   def generateId(): java.lang.String = js.native
   def getPath(): java.lang.String = js.native
-  def isAuthTokenExpired(token: socketclusterDashServerLib.scserverMod.SCServerNs.AuthToken): scala.Boolean = js.native
+  def isAuthTokenExpired(token: AuthToken): scala.Boolean = js.native
   @JSName("on")
   def on_badSocketAuthToken(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.badSocketAuthToken,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.badSocketAuthTokenListenerFunction
+    listener: badSocketAuthTokenListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_closure(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.closure,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.disconnectionListenerFunction
+    listener: disconnectionListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_connection(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.connection,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.connectionListenerFunction
+    listener: connectionListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_connectionAbort(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.connectionAbort,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.disconnectionListenerFunction
+    listener: disconnectionListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_disconnection(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.disconnection,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.disconnectionListenerFunction
+    listener: disconnectionListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_error(
@@ -125,7 +109,7 @@ trait SCServer
   @JSName("on")
   def on_handshake(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.handshake,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.handshakeListenerFunction
+    listener: handshakeListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_ready(
@@ -135,12 +119,12 @@ trait SCServer
   @JSName("on")
   def on_subscription(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.subscription,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.subscriptionListenerFunction
+    listener: subscriptionListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_unsubscription(
     event: socketclusterDashServerLib.socketclusterDashServerLibStrings.unsubscription,
-    listener: socketclusterDashServerLib.scserverMod.SCServerNs.unsubscriptionListenerFunction
+    listener: unsubscriptionListenerFunction
   ): this.type = js.native
   @JSName("on")
   def on_warning(
@@ -151,26 +135,22 @@ trait SCServer
   def removeMiddleware_authenticate(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.authenticate,
     middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.AuthenticateRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextAuthenticateMiddlewareFunction, 
+      /* req */ AuthenticateRequest, 
+      /* next */ nextAuthenticateMiddlewareFunction, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   @JSName("removeMiddleware")
   def removeMiddleware_emit(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.emit,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.EmitRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ EmitRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   @JSName("removeMiddleware")
   def removeMiddleware_handshakeSC(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.handshakeSC,
     middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.HandshakeSCRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextHandshakeSCMiddlewareFunction, 
+      /* req */ HandshakeSCRequest, 
+      /* next */ nextHandshakeSCMiddlewareFunction, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -179,45 +159,30 @@ trait SCServer
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.handshakeWS,
     middlewareFn: js.Function2[
       /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
+      /* next */ nextMiddlewareFunction, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   @JSName("removeMiddleware")
   def removeMiddleware_publishIn(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.publishIn,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.PublishInRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ PublishInRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   @JSName("removeMiddleware")
   def removeMiddleware_publishOut(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.publishOut,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.PublishOutRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ PublishOutRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   @JSName("removeMiddleware")
   def removeMiddleware_subscribe(
     `type`: socketclusterDashServerLib.socketclusterDashServerLibStrings.subscribe,
-    middlewareFn: js.Function2[
-      /* req */ socketclusterDashServerLib.scserverMod.SCServerNs.SubscribeRequest, 
-      /* next */ socketclusterDashServerLib.scserverMod.SCServerNs.nextMiddlewareFunction, 
-      scala.Unit
-    ]
+    middlewareFn: js.Function2[/* req */ SubscribeRequest, /* next */ nextMiddlewareFunction, scala.Unit]
   ): scala.Unit = js.native
   def setAuthEngine(authEngine: scDashAuthLib.scDashAuthMod.SCAuthEngine): scala.Unit = js.native
-  def setCodecEngine(codecEngine: socketclusterDashServerLib.scserverMod.SCServerNs.SCCodecEngine): scala.Unit = js.native
-  def verifyHandshake(
-    info: socketclusterDashServerLib.scserverMod.SCServerNs.VerifyHandshakeInfo,
-    cb: socketclusterDashServerLib.scserverMod.SCServerNs.verifyHandshakeFunction
-  ): scala.Unit = js.native
+  def setCodecEngine(codecEngine: SCCodecEngine): scala.Unit = js.native
+  def verifyHandshake(info: VerifyHandshakeInfo, cb: verifyHandshakeFunction): scala.Unit = js.native
   def verifyInboundEvent(
-    socket: socketclusterDashServerLib.scserversocketMod.namespaced,
+    socket: socketclusterDashServerLib.scserversocketMod.^,
     eventName: java.lang.String,
     eventData: js.Any,
     cb: js.Function3[
@@ -228,14 +193,14 @@ trait SCServer
     ]
   ): scala.Unit = js.native
   def verifyOutboundEvent(
-    socket: socketclusterDashServerLib.scserversocketMod.namespaced,
+    socket: socketclusterDashServerLib.scserversocketMod.^,
     eventName: java.lang.String,
     eventData: js.Any,
     options: js.Object,
     cb: js.Function2[/* err */ stdLib.Error | scala.Null, /* eventData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def verifyOutboundEvent(
-    socket: socketclusterDashServerLib.scserversocketMod.namespaced,
+    socket: socketclusterDashServerLib.scserversocketMod.^,
     eventName: java.lang.String,
     eventData: js.Any,
     options: scala.Null,

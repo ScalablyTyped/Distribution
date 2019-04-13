@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PersistGateProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var loading: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var loading: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onBeforeLift: js.UndefOr[js.Function] = js.undefined
   var persistor: reduxDashPersistLib.esTypesMod.Persistor
 }
@@ -16,8 +16,8 @@ object PersistGateProps {
   @scala.inline
   def apply(
     persistor: reduxDashPersistLib.esTypesMod.Persistor,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    loading: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
+    loading: reactLib.reactMod.ReactNode = null,
     onBeforeLift: js.Function = null
   ): PersistGateProps = {
     val __obj = js.Dynamic.literal(persistor = persistor)

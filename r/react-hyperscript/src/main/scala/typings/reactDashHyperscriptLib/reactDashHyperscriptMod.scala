@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashHyperscriptMod extends js.Object {
   def apply(
-    componentOrTag: (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[js.Object] | java.lang.String
-  ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+    componentOrTag: (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[js.Object] | java.lang.String
+  ): reactLib.reactMod.ReactElement[_] = js.native
   def apply(
-    componentOrTag: (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[js.Object] | java.lang.String,
+    componentOrTag: (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[js.Object] | java.lang.String,
     children: js.Array[reactDashHyperscriptLib.Element] | reactDashHyperscriptLib.Element
-  ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement[_] = js.native
   def apply[P /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
-    componentOrTag: (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[P] | java.lang.String,
+    componentOrTag: (reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[P] | java.lang.String,
     properties: P
-  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement[P] = js.native
   def apply[P /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
-    componentOrTag: (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[P] | java.lang.String,
+    componentOrTag: (reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[P] | java.lang.String,
     properties: P,
     children: js.Array[reactDashHyperscriptLib.Element] | reactDashHyperscriptLib.Element
-  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
+  ): reactLib.reactMod.ReactElement[P] = js.native
 }
 

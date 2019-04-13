@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Context protected ()
   extends typedocLib.distLibConverterContextMod.Context {
-  def this(converter: typedocLib.distLibConverterConverterMod.Converter, fileNames: js.Array[java.lang.String], checker: typescriptLib.typescriptMod.tsNs.TypeChecker, program: typescriptLib.typescriptMod.tsNs.Program) = this()
+  def this(converter: typedocLib.distLibConverterConverterMod.Converter, fileNames: js.Array[java.lang.String], checker: typescriptLib.typescriptMod.TypeChecker, program: typescriptLib.typescriptMod.Program) = this()
 }
 

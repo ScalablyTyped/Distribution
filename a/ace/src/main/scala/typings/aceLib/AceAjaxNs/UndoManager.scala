@@ -54,3 +54,11 @@ trait UndoManager extends js.Object {
   **/
 class UndoManagerCls () extends UndoManager
 
+@JSGlobal("AceAjax.UndoManager")
+@js.native
+object UndoManager
+  extends /**
+  * Resets the current undo state and creates a new `UndoManager`.
+  **/
+org.scalablytyped.runtime.Instantiable0[UndoManager]
+

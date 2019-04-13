@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("hexo-util", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Pattern: hexoDashUtilLib.Anon_Name = js.native
   def camelCaseKeys(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def escapeDiacritic(str: java.lang.String): java.lang.String = js.native
   def escapeHTML(str: java.lang.String): java.lang.String = js.native

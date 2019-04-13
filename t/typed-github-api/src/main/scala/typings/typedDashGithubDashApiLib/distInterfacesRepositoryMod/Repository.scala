@@ -10,7 +10,7 @@ trait Repository extends RepositoryRef {
   var allowMergeCommit: scala.Boolean = js.native
   var allowRebasemerge: scala.Boolean = js.native
   var allowSquashMerge: scala.Boolean = js.native
-  var created: momentLib.momentMod.momentNs.Moment = js.native
+  var created: momentLib.momentMod.Moment = js.native
   var defaultBranch: java.lang.String = js.native
   var description: java.lang.String = js.native
   var forksCount: scala.Double = js.native
@@ -30,12 +30,12 @@ trait Repository extends RepositoryRef {
   @JSName("owner")
   var owner_Repository: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = js.native
   var permissions: typedDashGithubDashApiLib.Anon_Admin = js.native
-  var pushed: momentLib.momentMod.momentNs.Moment = js.native
+  var pushed: momentLib.momentMod.Moment = js.native
   var size: scala.Double = js.native
   var starGazersCount: scala.Double = js.native
   var subscribersCount: scala.Double = js.native
   var topics: js.Array[java.lang.String] = js.native
-  var updated: momentLib.momentMod.momentNs.Moment = js.native
+  var updated: momentLib.momentMod.Moment = js.native
   var watchersCount: scala.Double = js.native
 }
 

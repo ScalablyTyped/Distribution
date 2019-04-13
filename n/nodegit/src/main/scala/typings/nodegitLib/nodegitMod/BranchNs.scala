@@ -17,6 +17,5 @@ object BranchNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.branchMod.BranchNs.BRANCH with scala.Double] = js.native
   }
   
-  type BRANCH = nodegitLib.branchMod.BranchNs.BRANCH
 }
 

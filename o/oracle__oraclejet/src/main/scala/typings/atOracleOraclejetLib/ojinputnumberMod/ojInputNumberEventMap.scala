@@ -108,7 +108,7 @@ object ojInputNumberEventMap {
     loadstart: stdLib.Event,
     lostpointercapture: stdLib.PointerEvent,
     maxChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double | scala.Null],
-    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]],
+    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]],
     minChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double | scala.Null],
     mousedown: stdLib.MouseEvent,
     mouseenter: stdLib.MouseEvent,

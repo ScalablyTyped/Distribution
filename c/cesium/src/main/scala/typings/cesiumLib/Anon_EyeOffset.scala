@@ -6,39 +6,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EyeOffset extends js.Object {
-  var eyeOffset: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var fillColor: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined
+  var eyeOffset: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var fillColor: js.UndefOr[cesiumLib.cesiumMod.Color] = js.undefined
   var font: js.UndefOr[java.lang.String] = js.undefined
-  var horizontalOrigin: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined
+  var horizontalOrigin: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.Color] = js.undefined
   var outlineWidth: js.UndefOr[scala.Double] = js.undefined
-  var pixelOffset: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var pixelOffsetScaleByDistance: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var scale: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var show: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var style: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var text: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var translucencyByDistance: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var verticalOrigin: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var pixelOffset: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var pixelOffsetScaleByDistance: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var scale: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var show: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var style: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var text: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var translucencyByDistance: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var verticalOrigin: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
 }
 
 object Anon_EyeOffset {
   @scala.inline
   def apply(
-    eyeOffset: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    fillColor: cesiumLib.cesiumMod.CesiumNs.Color = null,
+    eyeOffset: cesiumLib.cesiumMod.Property = null,
+    fillColor: cesiumLib.cesiumMod.Color = null,
     font: java.lang.String = null,
-    horizontalOrigin: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outlineColor: cesiumLib.cesiumMod.CesiumNs.Color = null,
+    horizontalOrigin: cesiumLib.cesiumMod.Property = null,
+    outlineColor: cesiumLib.cesiumMod.Color = null,
     outlineWidth: scala.Int | scala.Double = null,
-    pixelOffset: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    pixelOffsetScaleByDistance: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    scale: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    show: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    style: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    text: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    translucencyByDistance: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    verticalOrigin: cesiumLib.cesiumMod.CesiumNs.Property = null
+    pixelOffset: cesiumLib.cesiumMod.Property = null,
+    pixelOffsetScaleByDistance: cesiumLib.cesiumMod.Property = null,
+    scale: cesiumLib.cesiumMod.Property = null,
+    show: cesiumLib.cesiumMod.Property = null,
+    style: cesiumLib.cesiumMod.Property = null,
+    text: cesiumLib.cesiumMod.Property = null,
+    translucencyByDistance: cesiumLib.cesiumMod.Property = null,
+    verticalOrigin: cesiumLib.cesiumMod.Property = null
   ): Anon_EyeOffset = {
     val __obj = js.Dynamic.literal()
     if (eyeOffset != null) __obj.updateDynamic("eyeOffset")(eyeOffset)

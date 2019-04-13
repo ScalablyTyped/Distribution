@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* res */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* res */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ] = js.native
   def apply(options: MongoSanitizeOptions): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* res */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* res */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ] = js.native
   def has(payload: js.Any): scala.Boolean = js.native

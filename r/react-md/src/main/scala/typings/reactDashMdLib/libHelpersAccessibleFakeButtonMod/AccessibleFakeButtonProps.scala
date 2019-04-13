@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait AccessibleFakeButtonProps
   extends // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var noFocusOutline: js.UndefOr[scala.Boolean] = js.undefined
   var onTabFocus: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
@@ -23,8 +23,8 @@ object AccessibleFakeButtonProps {
   def apply(
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    children: reactLib.reactMod.ReactNode = null,
+    component: reactLib.reactMod.ReactType[_] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     noFocusOutline: js.UndefOr[scala.Boolean] = js.undefined,
     onTabFocus: /* event */ stdLib.Event => scala.Unit = null,

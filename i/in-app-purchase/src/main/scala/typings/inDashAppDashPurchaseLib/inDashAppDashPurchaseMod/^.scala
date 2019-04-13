@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("in-app-purchase", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val AMAZON: /* amazon */ java.lang.String = js.native
-  val APPLE: /* apple */ java.lang.String = js.native
-  val GOOGLE: /* google */ java.lang.String = js.native
-  val ROKU: /* roku */ java.lang.String = js.native
-  val UNITY: /* unity */ java.lang.String = js.native
-  val WINDOWS: /* windows */ java.lang.String = js.native
+  val AMAZON: inDashAppDashPurchaseLib.inDashAppDashPurchaseLibStrings.amazon = js.native
+  val APPLE: inDashAppDashPurchaseLib.inDashAppDashPurchaseLibStrings.apple = js.native
+  val GOOGLE: inDashAppDashPurchaseLib.inDashAppDashPurchaseLibStrings.google = js.native
+  val ROKU: inDashAppDashPurchaseLib.inDashAppDashPurchaseLibStrings.roku = js.native
+  val UNITY: inDashAppDashPurchaseLib.inDashAppDashPurchaseLibStrings.unity = js.native
+  val WINDOWS: inDashAppDashPurchaseLib.inDashAppDashPurchaseLibStrings.windows = js.native
   def config(params: Config): scala.Unit = js.native
   def getPurchaseData(): js.Array[PurchasedItem] | scala.Null = js.native
   def getPurchaseData(purchaseData: ValidationResponse): js.Array[PurchasedItem] | scala.Null = js.native

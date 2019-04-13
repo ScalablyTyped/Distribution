@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Search", "default")
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       semanticDashUiDashReactLib.distCommonjsModulesSearchSearchMod.SearchProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: semanticDashUiDashReactLib.distCommonjsModulesSearchSearchMod.SearchProps) = this()

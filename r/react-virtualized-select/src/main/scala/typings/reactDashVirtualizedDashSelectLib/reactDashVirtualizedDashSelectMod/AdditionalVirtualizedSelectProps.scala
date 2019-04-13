@@ -15,7 +15,7 @@ trait AdditionalVirtualizedSelectProps[TValue] extends js.Object {
     ]
   ] = js.undefined
   var selectComponent: js.UndefOr[
-    (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object AdditionalVirtualizedSelectProps {
     maxHeight: scala.Int | scala.Double = null,
     optionHeight: scala.Int | scala.Double = null,
     optionRenderer: /* options */ VirtualizedOptionRenderOptions[TValue] => reactLib.reactMod.Global.JSXNs.Element = null,
-    selectComponent: (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null
+    selectComponent: (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null
   ): AdditionalVirtualizedSelectProps[TValue] = {
     val __obj = js.Dynamic.literal()
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])

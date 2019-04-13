@@ -13,5 +13,5 @@ package object appMod {
   ]
   type AppComponentContext = NextAppContext[nextDashServerLib.routerMod.DefaultQuery]
   type AppComponentProps = AppProps[nextDashServerLib.routerMod.DefaultQuery]
-  type AppComponentType[P, IP, C] = nextLib.nextMod.nextNs.NextComponentType[P with AppProps[nextDashServerLib.routerMod.DefaultQuery], IP, C]
+  type AppComponentType[P, IP, C] = nextLib.nextMod.NextComponentType[P with AppProps[nextDashServerLib.routerMod.DefaultQuery], IP, C]
 }

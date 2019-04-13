@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_RadiiSlicePartitions extends js.Object {
-  var radii: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian3] = js.undefined
+  var radii: js.UndefOr[cesiumLib.cesiumMod.Cartesian3] = js.undefined
   var slicePartitions: js.UndefOr[scala.Double] = js.undefined
   var stackPartitions: js.UndefOr[scala.Double] = js.undefined
   var subdivisions: js.UndefOr[scala.Double] = js.undefined
@@ -15,7 +15,7 @@ trait Anon_RadiiSlicePartitions extends js.Object {
 object Anon_RadiiSlicePartitions {
   @scala.inline
   def apply(
-    radii: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null,
+    radii: cesiumLib.cesiumMod.Cartesian3 = null,
     slicePartitions: scala.Int | scala.Double = null,
     stackPartitions: scala.Int | scala.Double = null,
     subdivisions: scala.Int | scala.Double = null

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait TimeLineItemProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var dot: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var dot: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var pending: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TimeLineItemProps {
@@ -19,10 +19,10 @@ object TimeLineItemProps {
   def apply(
     className: java.lang.String = null,
     color: java.lang.String = null,
-    dot: reactLib.reactMod.ReactNs.ReactNode = null,
+    dot: reactLib.reactMod.ReactNode = null,
     pending: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TimeLineItemProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

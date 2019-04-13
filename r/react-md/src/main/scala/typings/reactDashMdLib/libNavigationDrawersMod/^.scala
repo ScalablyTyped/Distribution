@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/NavigationDrawers", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CloseButton: reactLib.reactMod.ReactNs.ComponentClass[
+  val CloseButton: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libNavigationDrawersCloseButtonMod.CloseButtonProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val JumpToContentLink: reactLib.reactMod.ReactNs.ComponentClass[
+  val JumpToContentLink: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.JumpToContentLinkProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
   val NavigationDrawer: reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerComponent = js.native
   val default: reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerComponent = js.native

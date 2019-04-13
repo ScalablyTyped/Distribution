@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_ErrorMsg[T] extends js.Object {
   var errorMsg: java.lang.String = js.native
   @JSName("success")
-  var success_Original: angularLib.angularMod.angularNs.IHttpPromiseCallback[T] = js.native
+  var success_Original: angularLib.angularMod.IHttpPromiseCallback[T] = js.native
   def success(
     data: T,
     status: scala.Double,
-    headers: angularLib.angularMod.angularNs.IHttpHeadersGetter,
-    config: angularLib.angularMod.angularNs.IRequestConfig
+    headers: angularLib.angularMod.IHttpHeadersGetter,
+    config: angularLib.angularMod.IRequestConfig
   ): scala.Unit = js.native
 }
 

@@ -31,10 +31,10 @@ trait Carousel
   def componentWillUnmount_MCarousel(): scala.Unit = js.native
   def formatChildren(children: js.Any): js.Array[reactLib.reactMod.Global.JSXNs.Element] = js.native
   def getDecoratorStyles(position: js.Any): rmcDashNukaDashCarouselLib.Anon_Left | rmcDashNukaDashCarouselLib.Anon_LeftMsTransform | rmcDashNukaDashCarouselLib.Anon_Position | rmcDashNukaDashCarouselLib.Anon_LeftMsTransformPosition | rmcDashNukaDashCarouselLib.Anon_LeftMsTransformPositionTop | rmcDashNukaDashCarouselLib.Anon_MsTransform | rmcDashNukaDashCarouselLib.Anon_Bottom | rmcDashNukaDashCarouselLib.Anon_BottomPosition | rmcDashNukaDashCarouselLib.Anon_BottomPositionRight = js.native
-  def getFrameStyles(): reactLib.reactMod.ReactNs.CSSProperties = js.native
-  def getListStyles(): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def getFrameStyles(): reactLib.reactMod.CSSProperties = js.native
+  def getListStyles(): reactLib.reactMod.CSSProperties = js.native
   def getMouseEvents(): rmcDashNukaDashCarouselLib.Anon_EOnMouseDown | scala.Null = js.native
-  def getSlideStyles(index: js.Any, positionValue: js.Any): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def getSlideStyles(index: js.Any, positionValue: js.Any): reactLib.reactMod.CSSProperties = js.native
   def getSlideTargetPosition(index: js.Any, positionValue: js.Any): scala.Double = js.native
   def getSliderStyles(): rmcDashNukaDashCarouselLib.Anon_BoxSizing = js.native
   def getStyleTagStyles(): java.lang.String = js.native

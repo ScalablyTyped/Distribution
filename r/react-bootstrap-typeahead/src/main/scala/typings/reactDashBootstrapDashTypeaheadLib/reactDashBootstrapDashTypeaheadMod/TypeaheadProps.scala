@@ -123,7 +123,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
     js.Function2[
       /* results */ js.Array[TypeaheadResult[T]], 
       /* menuProps */ js.Any, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /* Provides a hook for customized rendering of menu item contents. */
@@ -132,7 +132,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
       /* option */ TypeaheadResult[T], 
       /* props */ TypeaheadMenuProps[T], 
       /* index */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /* Provides a hook for customized rendering of tokens when multiple selections are enabled. */
@@ -141,7 +141,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
       /* selectedItem */ T, 
       /* props */ TypeaheadMenuProps[T], 
       /* index */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /* Allows selecting the hinted result by pressing enter. */
@@ -203,9 +203,9 @@ object TypeaheadProps {
     paginationText: java.lang.String = null,
     placeholder: java.lang.String = null,
     positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
-    renderMenu: (/* results */ js.Array[TypeaheadResult[T]], /* menuProps */ js.Any) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderMenuItemChildren: (/* option */ TypeaheadResult[T], /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderToken: (/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderMenu: (/* results */ js.Array[TypeaheadResult[T]], /* menuProps */ js.Any) => reactLib.reactMod.ReactNode = null,
+    renderMenuItemChildren: (/* option */ TypeaheadResult[T], /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
+    renderToken: (/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
     selectHintOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.Array[T] = null
   ): TypeaheadProps[T] = {

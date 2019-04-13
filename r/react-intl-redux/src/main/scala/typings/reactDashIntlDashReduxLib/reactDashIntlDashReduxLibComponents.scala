@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashIntlDashReduxLibComponents {
   @scala.inline
-  def IntlProvider: reactLib.reactMod.ReactNs.ComponentType[reactDashIntlLib.ReactIntlNs.IntlProviderNs.Props] = js.constructorOf[reactDashIntlDashReduxLib.reactDashIntlDashReduxMod.IntlProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashIntlLib.ReactIntlNs.IntlProviderNs.Props]]
+  def IntlProvider: reactLib.reactMod.ComponentType[reactDashIntlLib.ReactIntlNs.IntlProviderNs.Props] = js.constructorOf[reactDashIntlDashReduxLib.reactDashIntlDashReduxMod.IntlProvider].asInstanceOf[reactLib.reactMod.ComponentType[reactDashIntlLib.ReactIntlNs.IntlProviderNs.Props]]
   @scala.inline
-  def Provider[A /* <: reduxLib.reduxMod.Action[_] */]: reactLib.reactMod.ReactNs.ComponentType[reactDashReduxLib.reactDashReduxMod.ProviderProps[A]] = js.constructorOf[reactDashIntlDashReduxLib.reactDashIntlDashReduxMod.Provider[A]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashReduxLib.reactDashReduxMod.ProviderProps[A]]]
+  def Provider[A /* <: reduxLib.reduxMod.Action[_] */]: reactLib.reactMod.ComponentType[reactDashReduxLib.reactDashReduxMod.ProviderProps[A]] = js.constructorOf[reactDashIntlDashReduxLib.reactDashIntlDashReduxMod.Provider[A]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashReduxLib.reactDashReduxMod.ProviderProps[A]]]
   @scala.inline
   def Props: reactDashIntlLib.ReactIntlNs.IntlProviderNs.Props.type = reactDashIntlLib.ReactIntlNs.IntlProviderNs.Props
   type Props = reactDashIntlLib.ReactIntlNs.IntlProviderNs.Props

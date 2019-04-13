@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-redux", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CALL_HISTORY_METHOD: /* @@router/CALL_HISTORY_METHOD */ java.lang.String = js.native
-  val LOCATION_CHANGE: /* @@router/LOCATION_CHANGE */ java.lang.String = js.native
-  val routerActions: reactDashRouterDashReduxLib.Anon_Go = js.native
+  val CALL_HISTORY_METHOD: reactDashRouterDashReduxLib.reactDashRouterDashReduxLibStrings.`@@router/CALL_HISTORY_METHOD` = js.native
+  val LOCATION_CHANGE: reactDashRouterDashReduxLib.reactDashRouterDashReduxLibStrings.`@@router/LOCATION_CHANGE` = js.native
   val routerReducer: reduxLib.reduxMod.Reducer[RouterState, reduxLib.reduxMod.AnyAction] = js.native
   def createMatchSelector(path: java.lang.String): js.Function1[
     /* state */ reactDashRouterDashReduxLib.Anon_Router, 

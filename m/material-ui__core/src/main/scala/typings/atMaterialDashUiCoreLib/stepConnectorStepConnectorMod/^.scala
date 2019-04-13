@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/StepConnector/StepConnector", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[StepConnectorProps] = js.native
+  val default: reactLib.reactMod.ComponentType[StepConnectorProps] = js.native
 }
 

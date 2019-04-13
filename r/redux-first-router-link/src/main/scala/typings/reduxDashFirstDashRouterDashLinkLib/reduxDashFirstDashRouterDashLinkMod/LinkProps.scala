@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] {
   var down: js.UndefOr[scala.Boolean] = js.undefined
   var redirect: js.UndefOr[scala.Boolean] = js.undefined
   var replace: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,7 +20,7 @@ object LinkProps {
   @scala.inline
   def apply(
     to: To,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     down: js.UndefOr[scala.Boolean] = js.undefined,
     redirect: js.UndefOr[scala.Boolean] = js.undefined,
     replace: js.UndefOr[scala.Boolean] = js.undefined,

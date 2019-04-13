@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SketchMSUserDocument extends SketchMSUserData {
+trait SketchMSUserDocument extends js.Object {
   var document: Anon_PageListCollapsed
 }
 

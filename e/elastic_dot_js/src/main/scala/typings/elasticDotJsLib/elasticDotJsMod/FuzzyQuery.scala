@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "FuzzyQuery")
 @js.native
-class FuzzyQuery protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery {
+class FuzzyQuery protected () extends Query {
   /*
     Constructs a query where each documents returned are “like” provided text
     */
@@ -16,34 +15,28 @@ class FuzzyQuery protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost value of the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def boost(boost: scala.Double): FuzzyQuery = js.native
   /*
     The field to run the query against.
     */
-  /* CompleteClass */
-  override def field(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def field(f: java.lang.String): FuzzyQuery = js.native
   /*
     The maximum number of query terms that will be included in any
     generated query. Defaults to 50.
     */
-  /* CompleteClass */
-  override def maxExpansions(max: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def maxExpansions(max: scala.Double): FuzzyQuery = js.native
   /*
     The minimum similarity of the term variants. Defaults to 0.5.
     */
-  /* CompleteClass */
-  override def minSimilarity(min: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def minSimilarity(min: scala.Double): FuzzyQuery = js.native
   /*
     Length of required common prefix on variant terms. Defaults to 0.
     */
-  /* CompleteClass */
-  override def prefixLength(len: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def prefixLength(len: scala.Double): FuzzyQuery = js.native
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -63,23 +56,19 @@ class FuzzyQuery protected ()
     Default is constant_score_auto.
     This is an advanced option, use with care.
     */
-  /* CompleteClass */
-  override def rewrite(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def rewrite(m: java.lang.String): FuzzyQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
   /*
     Set to false to use classic Levenshtein edit distance.
     */
-  /* CompleteClass */
-  override def transpositions(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def transpositions(trueFalse: scala.Boolean): FuzzyQuery = js.native
   /*
     The query text to fuzzify.
     */
-  /* CompleteClass */
-  override def value(s: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyQuery = js.native
+  def value(s: java.lang.String): FuzzyQuery = js.native
 }
 

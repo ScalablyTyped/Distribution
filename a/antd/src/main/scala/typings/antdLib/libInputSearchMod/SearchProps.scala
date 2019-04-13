@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait SearchProps
   extends antdLib.libInputInputMod.InputProps {
-  var enterButton: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var enterButton: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNode] = js.undefined
   var inputPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var onSearch: js.UndefOr[
     js.Function2[
       /* value */ java.lang.String, 
       /* event */ js.UndefOr[
-        (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement]
+        (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement]
       ], 
       _
     ]
@@ -23,19 +23,19 @@ trait SearchProps
 object SearchProps {
   @scala.inline
   def apply(
-    addonAfter: reactLib.reactMod.ReactNs.ReactNode = null,
-    addonBefore: reactLib.reactMod.ReactNs.ReactNode = null,
+    addonAfter: reactLib.reactMod.ReactNode = null,
+    addonBefore: reactLib.reactMod.ReactNode = null,
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
-    enterButton: scala.Boolean | reactLib.reactMod.ReactNs.ReactNode = null,
+    enterButton: scala.Boolean | reactLib.reactMod.ReactNode = null,
     inputPrefixCls: java.lang.String = null,
-    onPressEnter: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLInputElement] = null,
+    onPressEnter: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLInputElement] = null,
     onSearch: (/* value */ java.lang.String, /* event */ js.UndefOr[
-      (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement]
+      (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement]
     ]) => _ = null,
-    prefix: reactLib.reactMod.ReactNs.ReactNode = null,
+    prefix: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     size: /* import warning: ImportType.apply Failed type conversion: ['small', 'default', 'large'][number] */ js.Any = null,
-    suffix: reactLib.reactMod.ReactNs.ReactNode = null
+    suffix: reactLib.reactMod.ReactNode = null
   ): SearchProps = {
     val __obj = js.Dynamic.literal()
     if (addonAfter != null) __obj.updateDynamic("addonAfter")(addonAfter.asInstanceOf[js.Any])

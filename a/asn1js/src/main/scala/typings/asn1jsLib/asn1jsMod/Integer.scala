@@ -7,25 +7,28 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "Integer")
 @js.native
-class Integer ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.Integer {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.IntegerParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+class Integer () extends BaseBlock[LocalIntegerValueBlock] {
+  def this(params: IntegerParams) = this()
   /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * Convert current Integer value from DER to BER format
+    * @returns {Integer}
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  def convertFromDER(): Integer = js.native
+  /**
+    * Convert current Integer value from BER into DER format
+    * 
+    * @returns {Integer}
+    */
+  def convertToDER(): Integer = js.native
+  /**
+    * Compare two Integer object, or Integer and ArrayBuffer objects
+    * 
+    * @param {(Integer | ArrayBuffer)} otherValue
+    * @returns {boolean}
+    * 
+    * @memberOf Integer
+    */
+  def isEqual(otherValue: Integer): scala.Boolean = js.native
+  def isEqual(otherValue: stdLib.ArrayBuffer): scala.Boolean = js.native
 }
 

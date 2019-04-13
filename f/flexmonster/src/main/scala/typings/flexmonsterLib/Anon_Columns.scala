@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Columns extends js.Object {
-  var columns: js.UndefOr[js.Array[flexmonsterLib.flexmonsterMod.FlexmonsterNs.ColumnSize]] = js.undefined
-  var rows: js.UndefOr[js.Array[flexmonsterLib.flexmonsterMod.FlexmonsterNs.RowSize]] = js.undefined
+  var columns: js.UndefOr[js.Array[flexmonsterLib.flexmonsterMod.ColumnSize]] = js.undefined
+  var rows: js.UndefOr[js.Array[flexmonsterLib.flexmonsterMod.RowSize]] = js.undefined
 }
 
 object Anon_Columns {
   @scala.inline
   def apply(
-    columns: js.Array[flexmonsterLib.flexmonsterMod.FlexmonsterNs.ColumnSize] = null,
-    rows: js.Array[flexmonsterLib.flexmonsterMod.FlexmonsterNs.RowSize] = null
+    columns: js.Array[flexmonsterLib.flexmonsterMod.ColumnSize] = null,
+    rows: js.Array[flexmonsterLib.flexmonsterMod.RowSize] = null
   ): Anon_Columns = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns)

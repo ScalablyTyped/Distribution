@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MediaPackage ()
-  extends awsDashSdkLib.clientsMediapackageMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMediapackageMod.^ {
+  def this(options: awsDashSdkLib.clientsMediapackageMod.ClientConfiguration) = this()
 }
 

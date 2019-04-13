@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def injectStripe[P /* <: js.Object */](
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[
+    WrappedComponent: reactLib.reactMod.ComponentType[
       P with reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.InjectedStripeProps
     ]
-  ): reactLib.reactMod.ReactNs.ComponentType[P] = js.native
+  ): reactLib.reactMod.ComponentType[P] = js.native
   def injectStripe[P /* <: js.Object */](
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[
+    WrappedComponent: reactLib.reactMod.ComponentType[
       P with reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.InjectedStripeProps
     ],
     componentOptions: reactDashStripeDashElementsLib.reactDashStripeDashElementsMod.ReactStripeElementsNs.InjectOptions
-  ): reactLib.reactMod.ReactNs.ComponentType[P] = js.native
+  ): reactLib.reactMod.ComponentType[P] = js.native
 }
 

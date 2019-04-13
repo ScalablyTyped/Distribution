@@ -14,11 +14,7 @@ object ^ extends js.Object {
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
   var STATES: js.Any = js.native
-  /* Extracted nested Instantiables into classes in SchemaTypesNs */
-  var SchemaTypes: mongooseLib.Anon_Array = js.native
   var connection: Connection = js.native
-  /* Extracted nested Instantiables into classes in mongoNs */
-  var mongo: mongooseLib.Anon_AggregationCursor = js.native
   var version: java.lang.String = js.native
   def connect(uris: java.lang.String): js.Promise[Mongoose] = js.native
   def connect(

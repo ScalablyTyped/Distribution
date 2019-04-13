@@ -17,15 +17,15 @@ object evaporateLibStrings {
   
   @js.native
   sealed trait allowS3ExistenceOptimization
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait awsRegion
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait awsSignatureVersion
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait aws_key extends js.Object
@@ -38,41 +38,41 @@ object evaporateLibStrings {
   
   @js.native
   sealed trait cloudfront
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait computeContentMd5
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait cryptoHexEncodedHash256
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait cryptoMd5Method
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait customAuthMethod extends js.Object
   
   @js.native
   sealed trait encodeFilename
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait evaporateChanged
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait localTimeOffset extends js.Object
   
   @js.native
   sealed trait logging
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait maxConcurrentParts
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait maxFileSize extends js.Object
@@ -85,7 +85,7 @@ object evaporateLibStrings {
   
   @js.native
   sealed trait onlyRetryForSameFileName
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait partSize extends js.Object
@@ -125,7 +125,7 @@ object evaporateLibStrings {
   
   @js.native
   sealed trait timeUrl
-    extends evaporateLib.evaporateMod.EvaporateNs.ImmutableOptionKeys
+    extends evaporateLib.evaporateMod.ImmutableOptionKeys
   
   @js.native
   sealed trait xhrWithCredentials extends js.Object

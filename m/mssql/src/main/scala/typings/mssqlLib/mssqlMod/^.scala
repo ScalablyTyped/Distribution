@@ -21,7 +21,6 @@ object ^ extends js.Object {
   var Float: ISqlTypeFactoryWithNoParams = js.native
   var Geography: ISqlTypeFactoryWithNoParams = js.native
   var Geometry: ISqlTypeFactoryWithNoParams = js.native
-  var ISOLATION_LEVEL: mssqlLib.Anon_READCOMMITTED = js.native
   var Image: ISqlTypeFactoryWithNoParams = js.native
   var Int: ISqlTypeFactoryWithNoParams = js.native
   var MAX: scala.Double = js.native
@@ -36,7 +35,6 @@ object ^ extends js.Object {
   var SmallInt: ISqlTypeFactoryWithNoParams = js.native
   var SmallMoney: ISqlTypeFactoryWithNoParams = js.native
   var TVP: ISqlTypeFactoryWithTvpType = js.native
-  var TYPES: mssqlLib.Anon_BigInt = js.native
   var Text: ISqlTypeFactoryWithNoParams = js.native
   var Time: ISqlTypeFactoryWithScale = js.native
   var TinyInt: ISqlTypeFactoryWithNoParams = js.native

@@ -11,4 +11,5 @@ package object redomMod {
   type RedomQuery = java.lang.String | RedomElement
   type RedomQueryArgument = RedomQueryArgumentValue | js.Array[RedomQueryArgumentValue]
   type RedomQueryArgumentValue = RedomElement | java.lang.String | scala.Double | org.scalablytyped.runtime.StringDictionary[js.Any] | RedomMiddleware
+  type RouterDictionary = org.scalablytyped.runtime.StringDictionary[RedomComponentConstructor]
 }

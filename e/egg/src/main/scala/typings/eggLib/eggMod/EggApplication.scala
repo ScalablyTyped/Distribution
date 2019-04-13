@@ -13,7 +13,7 @@ class EggApplication ()
   /**
     * export context base classes, let framework can impl sub class and over context extend easily.
     */
-  var ContextCookies: org.scalablytyped.runtime.Instantiable0[eggDashCookiesLib.eggDashCookiesMod.namespaced] with eggLib.Anon_EggCookies = js.native
+  var ContextCookies: org.scalablytyped.runtime.Instantiable0[eggDashCookiesLib.eggDashCookiesMod.^] = js.native
   var ContextHttpClient: EggContextHttpClientConstructor = js.native
   var ContextLogger: org.scalablytyped.runtime.Instantiable2[
     /* ctx */ js.Any, 

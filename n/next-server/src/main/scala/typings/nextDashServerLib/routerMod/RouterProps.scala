@@ -28,7 +28,7 @@ trait RouterProps[Q] extends js.Object {
   // core method fields
   def back(): scala.Unit = js.native
   def beforePopState(cb: PopStateCallback): scala.Boolean = js.native
-  def prefetch(url: java.lang.String): js.Promise[reactLib.reactMod.ReactNs.ComponentType[_]] = js.native
+  def prefetch(url: java.lang.String): js.Promise[reactLib.reactMod.ComponentType[_]] = js.native
   def push(url: java.lang.String): js.Promise[scala.Boolean] = js.native
   def push(url: java.lang.String, as: java.lang.String): js.Promise[scala.Boolean] = js.native
   def push(url: java.lang.String, as: java.lang.String, options: EventChangeOptions): js.Promise[scala.Boolean] = js.native

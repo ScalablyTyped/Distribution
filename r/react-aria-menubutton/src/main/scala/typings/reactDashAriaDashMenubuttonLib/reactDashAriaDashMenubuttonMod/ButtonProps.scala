@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ButtonProps[T /* <: stdLib.HTMLElement */]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLAttributes[T] {
   /**
   	 * If true, the element is disabled
   	 * (aria-disabled='true', not in tab order, clicking has no effect).
@@ -23,7 +23,7 @@ trait ButtonProps[T /* <: stdLib.HTMLElement */]
 object ButtonProps {
   @scala.inline
   def apply[T /* <: stdLib.HTMLElement */](
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[T] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
   ): ButtonProps[T] = {

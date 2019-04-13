@@ -9,6 +9,7 @@ package object compatMod {
   type CompatEnvironment = relayDashRuntimeLib.relayDashRuntimeMod.Environment | RelayClassicEnvironment
   type ConcreteFragmentDefinition = js.Object
   type ConcreteOperationDefinition = js.Object
+  type GeneratedNodeMap = org.scalablytyped.runtime.StringDictionary[relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode]
   type RelayClassicEnvironment = reactDashRelayLib.classicMod.RelayEnvironmentInterface
   type RelayPaginationProp = reactDashRelayLib.reactDashRelayMod.RelayPaginationProp with RelayProp
   type RelayRefetchProp = reactDashRelayLib.reactDashRelayMod.RelayRefetchProp with RelayProp

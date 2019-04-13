@@ -62,7 +62,7 @@ trait Route extends js.Object {
   var outlet: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The path to match against, a URL string that uses router matching notation.
-    * Can include wild-card characters (*).   [where is that defined?]
+    * Can be a wild card (`**`) that matches any URL (see Usage Notes below).
     * Default is "/" (the root path).
     */
   var path: js.UndefOr[java.lang.String] = js.undefined
@@ -73,6 +73,7 @@ trait Route extends js.Object {
     * By default, the router checks URL elements from the left to see if the URL
     * matches a given  path, and stops when there is a match. For example,
     * '/team/11/user' matches 'team/:id'.
+    *
     * The path-match strategy 'full' matches against the entire URL.
     * It is important to do this when redirecting empty-path routes.
     * Otherwise, because an empty path is a prefix of any URL,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GriddleStyleConfig extends js.Object {
   var classNames: js.UndefOr[GriddleStyleElements[java.lang.String]] = js.undefined
   var icons: js.UndefOr[GriddleStyleElements[GriddleStyleIcons]] = js.undefined
-  var styles: js.UndefOr[GriddleStyleElements[reactLib.reactMod.ReactNs.CSSProperties]] = js.undefined
+  var styles: js.UndefOr[GriddleStyleElements[reactLib.reactMod.CSSProperties]] = js.undefined
 }
 
 object GriddleStyleConfig {
@@ -16,7 +16,7 @@ object GriddleStyleConfig {
   def apply(
     classNames: GriddleStyleElements[java.lang.String] = null,
     icons: GriddleStyleElements[GriddleStyleIcons] = null,
-    styles: GriddleStyleElements[reactLib.reactMod.ReactNs.CSSProperties] = null
+    styles: GriddleStyleElements[reactLib.reactMod.CSSProperties] = null
   ): GriddleStyleConfig = {
     val __obj = js.Dynamic.literal()
     if (classNames != null) __obj.updateDynamic("classNames")(classNames)

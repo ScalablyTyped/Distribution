@@ -14,8 +14,8 @@ class AutoComplete ()
 @JSImport("antd", "AutoComplete")
 @js.native
 object AutoComplete extends js.Object {
-  var OptGroup: reactLib.reactMod.ReactNs.ClassicComponentClass[antdLib.libSelectMod.OptGroupProps] = js.native
-  var Option: reactLib.reactMod.ReactNs.ClassicComponentClass[antdLib.libSelectMod.OptionProps] = js.native
+  var OptGroup: reactLib.reactMod.ClassicComponentClass[antdLib.libSelectMod.OptGroupProps] = js.native
+  var Option: reactLib.reactMod.ClassicComponentClass[antdLib.libSelectMod.OptionProps] = js.native
   var defaultProps: antdLib.Anon_ChoiceTransitionName = js.native
 }
 

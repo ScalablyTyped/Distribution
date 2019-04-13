@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProgramAwareRuleWalker protected ()
   extends tslintLib.libLanguageWalkerProgramAwareRuleWalkerMod.ProgramAwareRuleWalker {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions, program: typescriptLib.typescriptMod.tsNs.Program) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions, program: typescriptLib.typescriptMod.Program) = this()
 }
 

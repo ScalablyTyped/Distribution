@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Axes
-  extends atEgjsComponentLib.atEgjsComponentMod.namespaced {
+  extends atEgjsComponentLib.atEgjsComponentMod.^ {
   var _am: atEgjsAxesLib.animationManagerMod.AnimationManager = js.native
   var _axm: atEgjsAxesLib.axisManagerMod.AxisManager = js.native
   var _em: atEgjsAxesLib.eventManagerMod.EventManager = js.native

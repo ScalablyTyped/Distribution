@@ -12,7 +12,7 @@ object StrictTableFooterProps {
   @scala.inline
   def apply(
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined

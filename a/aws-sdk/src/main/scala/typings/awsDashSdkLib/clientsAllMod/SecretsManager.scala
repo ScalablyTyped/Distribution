@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class SecretsManager ()
-  extends awsDashSdkLib.clientsSecretsmanagerMod.namespaced {
-  def this(options: awsDashSdkLib.clientsSecretsmanagerMod.SecretsManagerNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsSecretsmanagerMod.^ {
+  def this(options: awsDashSdkLib.clientsSecretsmanagerMod.ClientConfiguration) = this()
 }
 

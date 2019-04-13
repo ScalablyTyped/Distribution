@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object dekuLib {
   type Dispatch = js.Function1[/* action */ js.Any, js.Any]
   type Render = js.Function2[
-    /* vnode */ dekuLib.dekuMod.dekuNs.VirtualElement, 
+    /* vnode */ dekuLib.dekuMod.VirtualElement, 
     /* context */ js.UndefOr[js.Any], 
     scala.Unit
   ]
@@ -16,6 +16,6 @@ package object dekuLib {
     */
   type Thunk = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Component */ js.Any) | (js.Function1[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model */ /* model */ js.Any, 
-    dekuLib.dekuMod.dekuNs.VirtualElement
+    dekuLib.dekuMod.VirtualElement
   ])
 }

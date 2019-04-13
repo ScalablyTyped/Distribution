@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object jsonDashPatchDashGenLibStrings {
   @js.native
   sealed trait add
-    extends jsonDashPatchDashGenLib.jsonDashPatchDashGenMod.diffNs.PatchOperation
+    extends jsonDashPatchDashGenLib.jsonDashPatchDashGenMod.PatchOperation
   
   @js.native
   sealed trait remove
-    extends jsonDashPatchDashGenLib.jsonDashPatchDashGenMod.diffNs.PatchOperation
+    extends jsonDashPatchDashGenLib.jsonDashPatchDashGenMod.PatchOperation
   
   @js.native
   sealed trait replace
-    extends jsonDashPatchDashGenLib.jsonDashPatchDashGenMod.diffNs.PatchOperation
+    extends jsonDashPatchDashGenLib.jsonDashPatchDashGenMod.PatchOperation
   
   @scala.inline
   def add: add = "add".asInstanceOf[add]

@@ -22,16 +22,10 @@ class CertificateCls () extends Certificate {
   override def verifySpkac(spkac: Binary): scala.Boolean = js.native
 }
 
-object Certificate {
-  @scala.inline
-  def apply(
-    exportChallenge: BinaryLike => nodeLib.Buffer,
-    exportPublicKey: BinaryLike => nodeLib.Buffer,
-    verifySpkac: Binary => scala.Boolean
-  ): Certificate = {
-    val __obj = js.Dynamic.literal(exportChallenge = js.Any.fromFunction1(exportChallenge), exportPublicKey = js.Any.fromFunction1(exportPublicKey), verifySpkac = js.Any.fromFunction1(verifySpkac))
-  
-    __obj.asInstanceOf[Certificate]
-  }
+@JSImport("crypto", "Certificate")
+@js.native
+object Certificate
+  extends org.scalablytyped.runtime.Instantiable0[Certificate] {
+  def apply(): nodeLib.cryptoMod.Certificate = js.native
 }
 

@@ -31,7 +31,7 @@ trait Anon_Arguments extends js.Object {
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType](fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = js.native
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, CacheKeyType](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]],
-    memoizeOptions: pDashMemoizeLib.pDashMemoizeMod.pMemoizeNs.Options[ArgumentsType, CacheKeyType, ReturnType]
+    memoizeOptions: pDashMemoizeLib.pDashMemoizeMod.Options[ArgumentsType, CacheKeyType, ReturnType]
   ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = js.native
   /**
   	Clear all cached data of a memoized function.

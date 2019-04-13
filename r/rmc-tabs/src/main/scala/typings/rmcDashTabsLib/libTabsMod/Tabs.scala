@@ -33,7 +33,7 @@ class Tabs protected ()
     getSubElements: js.Function2[
       /* defaultPrefix */ js.UndefOr[java.lang.String], 
       /* allPrefix */ js.UndefOr[java.lang.String], 
-      org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]
+      org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNode]
     ]
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setContentLayout(div: stdLib.HTMLDivElement): scala.Unit = js.native

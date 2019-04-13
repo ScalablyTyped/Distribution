@@ -21,7 +21,7 @@ package object passportDashSamlMod {
     scala.Unit
   ]
   type VerifyWithRequest = js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* profile */ Profile, 
     /* done */ VerifiedCallback, 
     scala.Unit

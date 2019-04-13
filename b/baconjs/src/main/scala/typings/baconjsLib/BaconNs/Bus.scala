@@ -55,3 +55,14 @@ trait Bus[E, A] extends EventStream[E, A] {
   */
 class BusCls[E, A] () extends Bus[E, A]
 
+@JSGlobal("Bacon.Bus")
+@js.native
+object Bus
+  extends /**
+  * @constructor
+  * @constructs Bacon.Bus
+  * @description Returns a new [Bus]{@link Bacon.Bus}.
+  * @returns {Bus<E, A>}
+  */
+org.scalablytyped.runtime.Instantiable0[Bus[js.Object, js.Object]]
+

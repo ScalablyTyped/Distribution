@@ -5,51 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("p5", "PeakDetect")
 @js.native
-/**
-  *   PeakDetect works in conjunction with p5.FFT to
-  *   look for onsets in some or all of the frequency
-  *   spectrum.   To use p5.PeakDetect, call update in
-  *   the draw loop and pass in a p5.FFT object.
-  *
-  *
-  *   You can listen for a specific part of the
-  *   frequency spectrum by setting the range between
-  *   freq1 and freq2.
-  *
-  *   threshold is the threshold for detecting a peak,
-  *   scaled between 0 and 1. It is logarithmic, so 0.1
-  *   is half as loud as 1.0.
-  *
-  *
-  *   The update method is meant to be run in the draw
-  *   loop, and frames determines how many loops must
-  *   pass before another peak can be detected. For
-  *   example, if the frameRate() = 60, you could detect
-  *   the beat of a 120 beat-per-minute song with this
-  *   equation:  framesPerPeak = 60 / (estimatedBPM / 60
-  *   );
-  *
-  *
-  *   Based on example contribtued by @b2renger, and a
-  *   simple beat detection explanation by a
-  *   href="http://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/"
-  *   target="_blank"Felix Turner.
-  *
-  *   @param [freq1] lowFrequency - defaults to 20Hz
-  *   @param [freq2] highFrequency - defaults to 20000
-  *   Hz
-  *   @param [threshold] Threshold for detecting a beat
-  *   between 0 and 1 scaled logarithmically where 0.1
-  *   is 1/2 the loudness of 1.0. Defaults to 0.35.
-  *   @param [framesPerPeak] Defaults to 20.
-  */
-class PeakDetect ()
-  extends p5Lib.p5Mod.p5Ns.PeakDetect {
-  def this(freq1: scala.Double) = this()
-  def this(freq1: scala.Double, freq2: scala.Double) = this()
-  def this(freq1: scala.Double, freq2: scala.Double, threshold: scala.Double) = this()
-  def this(freq1: scala.Double, freq2: scala.Double, threshold: scala.Double, framesPerPeak: scala.Double) = this()
+trait PeakDetect extends js.Object {
+  /**
+    *   onPeak accepts two arguments: a function to call
+    *   when a peak is detected. The value of the peak,
+    *   between 0.0 and 1.0, is passed to the callback.
+    *   @param callback Name of a function that will be
+    *   called when a peak is detected.
+    *   @param [val] Optional value to pass into the
+    *   function when a peak is detected.
+    */
+  def onPeak(callback: js.Function1[/* repeated */ js.Any, _]): scala.Unit = js.native
+  def onPeak(callback: js.Function1[/* repeated */ js.Any, _], `val`: js.Object): scala.Unit = js.native
+  /**
+    *   The update method is run in the draw loop. Accepts
+    *   an FFT object. You must call .analyze() on the FFT
+    *   object prior to updating the peakDetect because it
+    *   relies on a completed FFT analysis.
+    *   @param fftObject A p5.FFT object
+    */
+  def update(fftObject: FFT): scala.Unit = js.native
 }
 

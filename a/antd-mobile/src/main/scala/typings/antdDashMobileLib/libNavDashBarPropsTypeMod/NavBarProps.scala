@@ -6,28 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavBarProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] {
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] {
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var leftContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var mode: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.dark | antdDashMobileLib.antdDashMobileLibStrings.light
   ] = js.undefined
-  var onLeftClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
+  var onLeftClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var rightContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var rightContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object NavBarProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] = null,
     className: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    leftContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
+    leftContent: reactLib.reactMod.ReactNode = null,
     mode: antdDashMobileLib.antdDashMobileLibStrings.dark | antdDashMobileLib.antdDashMobileLibStrings.light = null,
-    onLeftClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
+    onLeftClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] = null,
     prefixCls: java.lang.String = null,
-    rightContent: reactLib.reactMod.ReactNs.ReactNode = null
+    rightContent: reactLib.reactMod.ReactNode = null
   ): NavBarProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)

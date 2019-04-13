@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cypress/types/bluebird", "TimeoutError")
 @js.native
 class TimeoutError ()
-  extends cypressLib.typesBluebirdMod.BluebirdNs.TimeoutError {
+  extends stdLib.Error {
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

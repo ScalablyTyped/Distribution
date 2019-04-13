@@ -13,9 +13,9 @@ abstract class BaseMiddleware () extends js.Object {
     serviceIdentifier: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.ServiceIdentifier<T> */ js.Any
   ): js.Any = js.native
   def handler(
-    req: expressLib.expressMod.eNs.Request,
-    res: expressLib.expressMod.eNs.Response,
-    next: expressLib.expressMod.eNs.NextFunction
+    req: expressLib.expressMod.Request,
+    res: expressLib.expressMod.Response,
+    next: expressLib.expressMod.NextFunction
   ): scala.Unit = js.native
 }
 

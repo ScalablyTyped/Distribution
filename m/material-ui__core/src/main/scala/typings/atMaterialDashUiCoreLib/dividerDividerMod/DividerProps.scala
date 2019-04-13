@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLHRElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLHRElement>[P]} */ trait DividerProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLHRElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLHRElement>[P]} */ trait DividerProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[DividerClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var absolute: js.UndefOr[scala.Boolean] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[DividerProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[DividerProps]] = js.undefined
   var inset: js.UndefOr[scala.Boolean] = js.undefined
   var light: js.UndefOr[scala.Boolean] = js.undefined
   var variant: js.UndefOr[
@@ -24,11 +24,11 @@ object DividerProps {
     absolute: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[DividerClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[DividerProps] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    component: reactLib.reactMod.ReactType[DividerProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     inset: js.UndefOr[scala.Boolean] = js.undefined,
     light: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inset | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.middle = null
   ): DividerProps = {
     val __obj = js.Dynamic.literal()

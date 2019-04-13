@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class DeviceFarm ()
-  extends awsDashSdkLib.clientsDevicefarmMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDevicefarmMod.^ {
+  def this(options: awsDashSdkLib.clientsDevicefarmMod.ClientConfiguration) = this()
 }
 

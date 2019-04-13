@@ -17,7 +17,7 @@ object MenuDividerProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -40,7 +40,7 @@ object MenuDividerProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: MenuDividerTheme = null
   ): MenuDividerProps = {
     val __obj = js.Dynamic.literal()

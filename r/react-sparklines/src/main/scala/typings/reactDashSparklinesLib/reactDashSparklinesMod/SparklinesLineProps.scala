@@ -15,7 +15,7 @@ trait SparklinesLineProps extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SparklinesLineProps {
@@ -23,7 +23,7 @@ object SparklinesLineProps {
   def apply(
     color: java.lang.String = null,
     onMouseMove: (/* event */ reactDashSparklinesLib.reactDashSparklinesLibStrings.enter | reactDashSparklinesLib.reactDashSparklinesLibStrings.click, /* value */ scala.Double, /* point */ Point) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): SparklinesLineProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)

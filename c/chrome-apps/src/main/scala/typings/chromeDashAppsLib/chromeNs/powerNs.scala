@@ -18,12 +18,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.power")
 @js.native
 object powerNs extends js.Object {
-  /**
-    * @enum
-    * @property SYSTEM - Prevent the system from sleeping in response to user inactivity.
-    * @property DISPLAY - Prevent the display from being turned off or dimmed or the system from sleeping in response to user inactivity.
-    */
-  val Level: chromeDashAppsLib.Anon_DISPLAY = js.native
   /** Releases a request previously made via requestKeepAwake(). */
   def releaseKeepAwake(): scala.Unit = js.native
   /**
@@ -42,5 +36,16 @@ object powerNs extends js.Object {
       ]
     ]
   ): scala.Unit = js.native
+  /**
+    * @enum
+    * @property SYSTEM - Prevent the system from sleeping in response to user inactivity.
+    * @property DISPLAY - Prevent the display from being turned off or dimmed or the system from sleeping in response to user inactivity.
+    */
+  @js.native
+  object Level extends js.Object {
+    var DISPLAY: chromeDashAppsLib.chromeDashAppsLibStrings.display = js.native
+    var SYSTEM: chromeDashAppsLib.chromeDashAppsLibStrings.system = js.native
+  }
+  
 }
 

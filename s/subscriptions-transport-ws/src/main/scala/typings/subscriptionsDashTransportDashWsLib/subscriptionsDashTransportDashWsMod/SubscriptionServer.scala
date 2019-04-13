@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SubscriptionServer protected ()
   extends subscriptionsDashTransportDashWsLib.distServerMod.SubscriptionServer {
   def this(options: subscriptionsDashTransportDashWsLib.distServerMod.ServerOptions, socketOptionsOrServer: wsLib.wsMod.Server) = this()
-  def this(options: subscriptionsDashTransportDashWsLib.distServerMod.ServerOptions, socketOptionsOrServer: wsLib.wsMod.WebSocketNs.ServerOptions) = this()
+  def this(options: subscriptionsDashTransportDashWsLib.distServerMod.ServerOptions, socketOptionsOrServer: wsLib.wsMod.ServerOptions) = this()
 }
 
 /* static members */
@@ -23,7 +23,7 @@ object SubscriptionServer extends js.Object {
   ): subscriptionsDashTransportDashWsLib.distServerMod.SubscriptionServer = js.native
   def create(
     options: subscriptionsDashTransportDashWsLib.distServerMod.ServerOptions,
-    socketOptionsOrServer: wsLib.wsMod.WebSocketNs.ServerOptions
+    socketOptionsOrServer: wsLib.wsMod.ServerOptions
   ): subscriptionsDashTransportDashWsLib.distServerMod.SubscriptionServer = js.native
 }
 

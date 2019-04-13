@@ -20,6 +20,14 @@ package object MakerJsNs {
     */
   type ICollectionKeyComparer[K] = js.Function2[/* a */ K, /* b */ K, scala.Boolean]
   /**
+    * A map of measurements.
+    */
+  type IMeasureMap = org.scalablytyped.runtime.StringDictionary[IMeasure]
+  /**
+    * Model objects by id.
+    */
+  type IModelMap = org.scalablytyped.runtime.StringDictionary[IModel]
+  /**
     * Callback signature for model.walkPaths().
     */
   type IModelPathCallback = js.Function3[
@@ -28,6 +36,43 @@ package object MakerJsNs {
     /* pathContext */ IPath, 
     scala.Unit
   ]
+  /**
+    * A map of functions which accept a path as a parameter.
+    */
+  type IPathFunctionMap = /**
+    * Key is the type of a path, value is a function which accepts a path object as its parameter.
+    */
+  org.scalablytyped.runtime.StringDictionary[js.Function1[/* pathValue */ IPath, scala.Unit]]
+  /**
+    * Path objects by id.
+    */
+  type IPathMap = org.scalablytyped.runtime.StringDictionary[IPath]
+  /**
+    * A map of functions which accept a path and an origin point as parameters.
+    */
+  type IPathOriginFunctionMap = /**
+    * Key is the type of a path, value is a function which accepts a path object a point object as its parameters.
+    */
+  org.scalablytyped.runtime.StringDictionary[
+    js.Function4[
+      /* id */ java.lang.String, 
+      /* pathValue */ IPath, 
+      /* origin */ IPoint, 
+      /* layer */ java.lang.String, 
+      scala.Unit
+    ]
+  ]
+  /**
+    * An x-y point in a two-dimensional space.
+    * Implemented as an array with 2 elements. The first element is x, the second element is y.
+    *
+    * Examples:
+    * ```
+    * var p: IPoint = [0, 0];   //typescript
+    * var p = [0, 0];   //javascript
+    * ```
+    */
+  type IPoint = org.scalablytyped.runtime.NumberDictionary[scala.Double]
   /**
     * Callback signature for model.walk().
     */

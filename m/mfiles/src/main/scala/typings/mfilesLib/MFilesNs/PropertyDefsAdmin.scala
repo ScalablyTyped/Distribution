@@ -15,3 +15,8 @@ class PropertyDefsAdmin ()
   override def Item(Index: scala.Double): mfilesLib.IPropertyDefAdmin = js.native
 }
 
+@JSGlobal("MFiles.PropertyDefsAdmin")
+@js.native
+object PropertyDefsAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyDefsAdmin]
+

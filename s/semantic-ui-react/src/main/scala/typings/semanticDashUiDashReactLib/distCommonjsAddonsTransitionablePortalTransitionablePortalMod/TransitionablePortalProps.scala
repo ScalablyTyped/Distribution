@@ -12,7 +12,7 @@ trait TransitionablePortalProps
 object TransitionablePortalProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     onClose: (/* nothing */ scala.Null, /* data */ semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.PortalProps with TransitionablePortalState) => scala.Unit = null,
     onHide: (/* nothing */ scala.Null, /* data */ semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionEventData with TransitionablePortalState) => scala.Unit = null,

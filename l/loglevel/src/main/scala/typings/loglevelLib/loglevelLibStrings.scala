@@ -8,51 +8,51 @@ import scala.scalajs.js.annotation._
 object loglevelLibStrings {
   @js.native
   sealed trait DEBUG
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait ERROR
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait INFO
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait SILENT
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait TRACE
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait WARN
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait debug
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait error
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait info
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait silent
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait trace
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @js.native
   sealed trait warn
-    extends loglevelLib.loglevelMod.logNs.LogLevelDesc
+    extends loglevelLib.loglevelMod.LogLevelDesc
   
   @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]

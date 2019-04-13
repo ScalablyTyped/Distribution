@@ -11,219 +11,219 @@ object apostropheLibStrings {
   
   @js.native
   sealed trait `apostrophe-admin-bar`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-any-page-manager`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-areas`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-assets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-attachments`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-browser-utils`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-caches`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-custom-pages`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-db`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-doc-type-manager`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-docs`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-email`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-express`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-files`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-files-widgets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-global`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-groups`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-html-widgets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-i18n`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-images`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-images-widgets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-jobs`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-launder`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-locks`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-login`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-migrations`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-modal`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-module`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-notifications`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-oembed`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-pager`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-pages`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-permissions`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-pieces`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-pieces-pages`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-pieces-widgets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-polymorphic-manager`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-push`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-rich-text-widgets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-schemas`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-search`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-service-bridge`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-soft-redirects`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-tags`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-tasks`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-templates`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-ui`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-urls`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-users`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-utils`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-versions`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-video-fields`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-video-widgets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait `apostrophe-widgets`
-    extends apostropheLib.apostropheMod.apostropheNs.AposCoreModules
+    extends apostropheLib.apostropheMod.AposCoreModules
   
   @js.native
   sealed trait user extends js.Object

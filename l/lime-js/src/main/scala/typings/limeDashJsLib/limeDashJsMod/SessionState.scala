@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("lime-js", "SessionState")
 @js.native
-class SessionState ()
-  extends limeDashJsLib.limeDashJsMod.LimeNs.SessionState
+class SessionState () extends js.Object
 
 /* static members */
 @JSImport("lime-js", "SessionState")

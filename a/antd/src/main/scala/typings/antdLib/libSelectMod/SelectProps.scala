@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait SelectProps[T] extends AbstractSelectProps {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var defaultValue: js.UndefOr[T] = js.undefined
   var firstActiveValue: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var getInputElement: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var getInputElement: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[_]]] = js.undefined
   var labelInValue: js.UndefOr[scala.Boolean] = js.undefined
   var maxTagCount: js.UndefOr[scala.Double] = js.undefined
   var maxTagPlaceholder: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* omittedValues */ js.Array[T], reactLib.reactMod.ReactNs.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* omittedValues */ js.Array[T], reactLib.reactMod.ReactNode])
   ] = js.undefined
-  var menuItemSelectedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var menuItemSelectedIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var mode: js.UndefOr[
     antdLib.antdLibStrings.default | antdLib.antdLibStrings.multiple | antdLib.antdLibStrings.tags | antdLib.antdLibStrings.combobox | java.lang.String
   ] = js.undefined
@@ -24,38 +24,33 @@ trait SelectProps[T] extends AbstractSelectProps {
   var onChange: js.UndefOr[
     js.Function2[
       /* value */ T, 
-      /* option */ reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      /* option */ reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]], 
       scala.Unit
     ]
   ] = js.undefined
   var onDeselect: js.UndefOr[js.Function1[/* value */ T, _]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onInputKeyDown: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement], scala.Unit]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       _
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       _
     ]
   ] = js.undefined
-  var onPopupScroll: js.UndefOr[reactLib.reactMod.ReactNs.UIEventHandler[stdLib.HTMLDivElement]] = js.undefined
-  var onSelect: js.UndefOr[
-    js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactNs.ReactElement[_], _]
-  ] = js.undefined
+  var onPopupScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactElement[_], _]] = js.undefined
   var optionFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined
-  var removeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var removeIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var tokenSeparators: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var value: js.UndefOr[T] = js.undefined
 }
@@ -68,55 +63,55 @@ object SelectProps {
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     choiceTransitionName: java.lang.String = null,
     className: java.lang.String = null,
-    clearIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    clearIcon: reactLib.reactMod.ReactNode = null,
     defaultActiveFirstOption: js.UndefOr[scala.Boolean] = js.undefined,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     defaultValue: T = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropdownClassName: java.lang.String = null,
     dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    dropdownMenuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNs.ReactNode = null,
-    dropdownStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
+    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNode = null,
+    dropdownStyle: reactLib.reactMod.CSSProperties = null,
     filterOption: scala.Boolean | (js.Function2[
       /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactNs.ReactElement[OptionProps], 
+      /* option */ reactLib.reactMod.ReactElement[OptionProps], 
       _
     ]) = null,
     firstActiveValue: java.lang.String | js.Array[java.lang.String] = null,
-    getInputElement: () => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    getInputElement: () => reactLib.reactMod.ReactElement[_] = null,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.Element] => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     labelInValue: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     maxTagCount: scala.Int | scala.Double = null,
-    maxTagPlaceholder: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* omittedValues */ js.Array[T], reactLib.reactMod.ReactNs.ReactNode]) = null,
-    menuItemSelectedIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    maxTagPlaceholder: reactLib.reactMod.ReactNode | (js.Function1[/* omittedValues */ js.Array[T], reactLib.reactMod.ReactNode]) = null,
+    menuItemSelectedIcon: reactLib.reactMod.ReactNode = null,
     mode: antdLib.antdLibStrings.default | antdLib.antdLibStrings.multiple | antdLib.antdLibStrings.tags | antdLib.antdLibStrings.combobox | java.lang.String = null,
-    notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    notFoundContent: reactLib.reactMod.ReactNode = null,
     onBlur: /* value */ T => scala.Unit = null,
-    onChange: (/* value */ T, /* option */ reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]) => scala.Unit = null,
+    onChange: (/* value */ T, /* option */ reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]]) => scala.Unit = null,
     onDeselect: /* value */ T => _ = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
     onFocus: () => scala.Unit = null,
-    onInputKeyDown: /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
-    onMouseEnter: /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
-    onMouseLeave: /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
-    onPopupScroll: reactLib.reactMod.ReactNs.UIEventHandler[stdLib.HTMLDivElement] = null,
+    onInputKeyDown: /* e */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
+    onMouseEnter: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
+    onMouseLeave: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
+    onPopupScroll: reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement] = null,
     onSearch: /* value */ java.lang.String => _ = null,
-    onSelect: (/* value */ T, /* option */ reactLib.reactMod.ReactNs.ReactElement[_]) => _ = null,
+    onSelect: (/* value */ T, /* option */ reactLib.reactMod.ReactElement[_]) => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     optionFilterProp: java.lang.String = null,
     optionLabelProp: java.lang.String = null,
-    placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: java.lang.String | reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
-    removeIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    removeIcon: reactLib.reactMod.ReactNode = null,
     showAction: java.lang.String | js.Array[java.lang.String] = null,
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
     size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    suffixIcon: reactLib.reactMod.ReactNode = null,
     tabIndex: scala.Int | scala.Double = null,
     tokenSeparators: js.Array[java.lang.String] = null,
     transitionName: java.lang.String = null,

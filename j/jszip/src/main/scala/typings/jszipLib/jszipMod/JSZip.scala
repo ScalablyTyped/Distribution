@@ -19,13 +19,9 @@ trait JSZip
   */
 org.scalablytyped.runtime.Instantiable0[JSZip]
      with org.scalablytyped.runtime.Instantiable1[/* data */ jszipLib.InputFileFormat, JSZip]
-     with org.scalablytyped.runtime.Instantiable2[
-      /* data */ jszipLib.InputFileFormat, 
-      /* options */ jszipLib.jszipMod.JSZipNs.JSZipLoadOptions, 
-      JSZip
-    ] {
+     with org.scalablytyped.runtime.Instantiable2[/* data */ jszipLib.InputFileFormat, /* options */ JSZipLoadOptions, JSZip] {
   var external: jszipLib.Anon_Promise = js.native
-  var files: org.scalablytyped.runtime.StringDictionary[jszipLib.jszipMod.JSZipNs.JSZipObject] = js.native
+  var files: org.scalablytyped.runtime.StringDictionary[JSZipObject] = js.native
   var support: JSZipSupport = js.native
   var version: java.lang.String = js.native
   def apply(): JSZip = js.native
@@ -35,14 +31,14 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     * @param Path relative path to file
     * @return File matching path, null if no file found
     */
-  def file(path: java.lang.String): jszipLib.jszipMod.JSZipNs.JSZipObject = js.native
+  def file(path: java.lang.String): JSZipObject = js.native
   /**
     * Get files matching a RegExp from archive
     *
     * @param path RegExp to match
     * @return Return all matching files or an empty array
     */
-  def file(path: stdLib.RegExp): js.Array[jszipLib.jszipMod.JSZipNs.JSZipObject] = js.native
+  def file(path: stdLib.RegExp): js.Array[JSZipObject] = js.native
   /**
     * Add a file to the archive
     *
@@ -51,35 +47,31 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     * @param options Optional information about the file
     * @return JSZip object
     */
-  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](
+  def file[T /* <: InputType */](
     path: java.lang.String,
     data: /* import warning: ImportType.apply Failed type conversion: jszip.jszip.InputByType[T] */ js.Any
   ): this.type = js.native
-  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](
+  def file[T /* <: InputType */](
     path: java.lang.String,
     data: /* import warning: ImportType.apply Failed type conversion: jszip.jszip.InputByType[T] */ js.Any,
-    options: jszipLib.jszipMod.JSZipNs.JSZipFileOptions
+    options: JSZipFileOptions
   ): this.type = js.native
-  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](
+  def file[T /* <: InputType */](
     path: java.lang.String,
     data: js.Promise[
       /* import warning: ImportType.apply Failed type conversion: jszip.jszip.InputByType[T] */ js.Any
     ]
   ): this.type = js.native
-  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](
+  def file[T /* <: InputType */](
     path: java.lang.String,
     data: js.Promise[
       /* import warning: ImportType.apply Failed type conversion: jszip.jszip.InputByType[T] */ js.Any
     ],
-    options: jszipLib.jszipMod.JSZipNs.JSZipFileOptions
+    options: JSZipFileOptions
   ): this.type = js.native
-  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](
-    path: java.lang.String,
-    data: scala.Null,
-    options: jszipLib.jszipMod.JSZipNs.JSZipFileOptions with jszipLib.Anon_Dir
-  ): this.type = js.native
+  def file[T /* <: InputType */](path: java.lang.String, data: scala.Null, options: JSZipFileOptions with jszipLib.Anon_Dir): this.type = js.native
   @JSName("file")
-  def `file_TInputType<this>`[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](path: java.lang.String): this.type = js.native
+  def `file_TInputType<this>`[T /* <: InputType */](path: java.lang.String): this.type = js.native
   /**
     * Get all files which match the given filter function
     *
@@ -87,12 +79,8 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     * @return Array of matched elements
     */
   def filter(
-    predicate: js.Function2[
-      /* relativePath */ java.lang.String, 
-      /* file */ jszipLib.jszipMod.JSZipNs.JSZipObject, 
-      scala.Boolean
-    ]
-  ): js.Array[jszipLib.jszipMod.JSZipNs.JSZipObject] = js.native
+    predicate: js.Function2[/* relativePath */ java.lang.String, /* file */ JSZipObject, scala.Boolean]
+  ): js.Array[JSZipObject] = js.native
   /**
     * Returns an new JSZip instance with the given folder as root
     *
@@ -106,19 +94,13 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     * @param name RegExp to match
     * @return New array of JSZipFile objects which match the RegExp
     */
-  def folder(name: stdLib.RegExp): js.Array[jszipLib.jszipMod.JSZipNs.JSZipObject] = js.native
+  def folder(name: stdLib.RegExp): js.Array[JSZipObject] = js.native
   /**
     * Call a callback function for each entry at this folder level.
     *
     * @param callback function
     */
-  def forEach(
-    callback: js.Function2[
-      /* relativePath */ java.lang.String, 
-      /* file */ jszipLib.jszipMod.JSZipNs.JSZipObject, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def forEach(callback: js.Function2[/* relativePath */ java.lang.String, /* file */ JSZipObject, scala.Unit]): scala.Unit = js.native
   /**
     * Generates a new archive asynchronously
     *
@@ -126,13 +108,13 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     * @param onUpdate The optional function called on each internal update with the metadata.
     * @return The serialized archive
     */
-  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](): js.Promise[
+  def generateAsync[T /* <: OutputType */](): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
   ] = js.native
-  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[T]): js.Promise[
+  def generateAsync[T /* <: OutputType */](options: JSZipGeneratorOptions[T]): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
   ] = js.native
-  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[T], onUpdate: jszipLib.OnUpdateCallback): js.Promise[
+  def generateAsync[T /* <: OutputType */](options: JSZipGeneratorOptions[T], onUpdate: jszipLib.OnUpdateCallback): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
   ] = js.native
   /**
@@ -144,10 +126,10 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     */
   def generateNodeStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("generateNodeStream")
-  def generateNodeStream_nodebuffer(options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[jszipLib.jszipLibStrings.nodebuffer]): nodeLib.NodeJSNs.ReadableStream = js.native
+  def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[jszipLib.jszipLibStrings.nodebuffer]): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("generateNodeStream")
   def generateNodeStream_nodebuffer(
-    options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[jszipLib.jszipLibStrings.nodebuffer],
+    options: JSZipGeneratorOptions[jszipLib.jszipLibStrings.nodebuffer],
     onUpdate: jszipLib.OnUpdateCallback
   ): nodeLib.NodeJSNs.ReadableStream = js.native
   /**
@@ -158,7 +140,7 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     * @return Returns promise
     */
   def loadAsync(data: jszipLib.InputFileFormat): js.Promise[JSZip] = js.native
-  def loadAsync(data: jszipLib.InputFileFormat, options: jszipLib.jszipMod.JSZipNs.JSZipLoadOptions): js.Promise[JSZip] = js.native
+  def loadAsync(data: jszipLib.InputFileFormat, options: JSZipLoadOptions): js.Promise[JSZip] = js.native
   /**
     * Removes the file or folder from the archive
     *

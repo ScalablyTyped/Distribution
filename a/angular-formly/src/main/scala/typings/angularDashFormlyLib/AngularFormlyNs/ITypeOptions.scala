@@ -21,11 +21,11 @@ trait ITypeOptions extends js.Object {
   var defaultOptions: js.UndefOr[IFieldConfigurationObject | js.Function] = js.undefined
   var `extends`: js.UndefOr[java.lang.String] = js.undefined
   var link: js.UndefOr[
-    angularLib.angularMod.angularNs.IDirectiveLinkFn[
-      angularLib.angularMod.angularNs.IScope, 
+    angularLib.angularMod.IDirectiveLinkFn[
+      angularLib.angularMod.IScope, 
       angularLib.JQLite, 
-      angularLib.angularMod.angularNs.IAttributes, 
-      angularLib.angularMod.angularNs.IController
+      angularLib.angularMod.IAttributes, 
+      angularLib.angularMod.IController
     ]
   ] = js.undefined
   var name: java.lang.String
@@ -48,11 +48,11 @@ object ITypeOptions {
     data: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     defaultOptions: IFieldConfigurationObject | js.Function = null,
     `extends`: java.lang.String = null,
-    link: angularLib.angularMod.angularNs.IDirectiveLinkFn[
-      angularLib.angularMod.angularNs.IScope, 
+    link: angularLib.angularMod.IDirectiveLinkFn[
+      angularLib.angularMod.IScope, 
       angularLib.JQLite, 
-      angularLib.angularMod.angularNs.IAttributes, 
-      angularLib.angularMod.angularNs.IController
+      angularLib.angularMod.IAttributes, 
+      angularLib.angularMod.IController
     ] = null,
     overwriteOk: js.UndefOr[scala.Boolean] = js.undefined,
     template: js.Function | java.lang.String = null,

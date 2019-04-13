@@ -20,7 +20,7 @@ trait $RefParser extends js.Object {
     * See https://github.com/BigstickCarpet/json-schema-ref-parser/blob/master/docs/ref-parser.md#refs
     */
   @JSName("$refs")
-  var $refs: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs = js.native
+  var $refs: $Refs = js.native
   /**
     * The `schema` property is the parsed/bundled/dereferenced JSON Schema object. This is the same value that is passed to the callback function (or Promise) when calling the parse, bundle, or dereference methods.
     *
@@ -39,13 +39,10 @@ trait $RefParser extends js.Object {
     * @param callback (optional) A callback that will receive the bundled schema object
     */
   def bundle(schema: java.lang.String): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def bundle(schema: java.lang.String, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def bundle(
     schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def bundle(
-    schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -53,13 +50,10 @@ trait $RefParser extends js.Object {
     ]
   ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def bundle(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def bundle(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def bundle(
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def bundle(
-    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -67,13 +61,10 @@ trait $RefParser extends js.Object {
     ]
   ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def dereference(path: java.lang.String): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def dereference(path: java.lang.String, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def dereference(
     path: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def dereference(
-    path: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -92,15 +83,11 @@ trait $RefParser extends js.Object {
     * @param callback (optional) A callback that will receive the dereferenced schema object
     */
   def dereference(path: java.lang.String, schema: java.lang.String): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def dereference(path: java.lang.String, schema: java.lang.String, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def dereference(
     path: java.lang.String,
     schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def dereference(
-    path: java.lang.String,
-    schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -108,15 +95,11 @@ trait $RefParser extends js.Object {
     ]
   ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def dereference(path: java.lang.String, schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def dereference(path: java.lang.String, schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def dereference(
     path: java.lang.String,
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def dereference(
-    path: java.lang.String,
-    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -124,13 +107,10 @@ trait $RefParser extends js.Object {
     ]
   ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def dereference(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def dereference(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def dereference(
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def dereference(
-    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -149,13 +129,10 @@ trait $RefParser extends js.Object {
     * @param callback (optional) A callback that will receive the parsed schema object, or an error
     */
   def parse(schema: java.lang.String): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def parse(schema: java.lang.String, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def parse(
     schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def parse(
-    schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -163,13 +140,10 @@ trait $RefParser extends js.Object {
     ]
   ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def parse(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  def parse(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4, options: Options): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
   def parse(
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
-  def parse(
-    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
+    options: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* schema */ jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | scala.Null, 
@@ -187,45 +161,19 @@ trait $RefParser extends js.Object {
     * @param options (optional)
     * @param callback (optional) A callback that will receive a `$Refs` object
     */
-  def resolve(schema: java.lang.String): js.Promise[
-    jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs
-  ] = js.native
+  def resolve(schema: java.lang.String): js.Promise[$Refs] = js.native
+  def resolve(schema: java.lang.String, options: Options): js.Promise[$Refs] = js.native
   def resolve(
     schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[
-    jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs
-  ] = js.native
-  def resolve(
-    schema: java.lang.String,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
-    callback: js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* $refs */ jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs | scala.Null, 
-      _
-    ]
-  ): js.Promise[
-    jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs
-  ] = js.native
-  def resolve(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4): js.Promise[
-    jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs
-  ] = js.native
+    options: Options,
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* $refs */ $Refs | scala.Null, _]
+  ): js.Promise[$Refs] = js.native
+  def resolve(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4): js.Promise[$Refs] = js.native
+  def resolve(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4, options: Options): js.Promise[$Refs] = js.native
   def resolve(
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options
-  ): js.Promise[
-    jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs
-  ] = js.native
-  def resolve(
-    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4,
-    options: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.Options,
-    callback: js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* $refs */ jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs | scala.Null, 
-      _
-    ]
-  ): js.Promise[
-    jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.$Refs
-  ] = js.native
+    options: Options,
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* $refs */ $Refs | scala.Null, _]
+  ): js.Promise[$Refs] = js.native
 }
 

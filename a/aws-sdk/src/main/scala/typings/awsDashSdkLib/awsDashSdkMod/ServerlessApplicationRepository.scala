@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ServerlessApplicationRepository ()
   extends awsDashSdkLib.clientsAllMod.ServerlessApplicationRepository {
-  def this(options: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ClientConfiguration) = this()
 }
 

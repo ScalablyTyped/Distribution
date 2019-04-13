@@ -9,21 +9,55 @@ import scala.scalajs.js.annotation._
 @js.native
 object PlayerNs extends js.Object {
   @js.native
+  sealed trait EventTypes extends js.Object
+  
+  @js.native
   object EventTypes extends js.Object {
-    val DEQUE: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.DEQUE with java.lang.String = js.native
-    val ENQUEUE: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.ENQUEUE with java.lang.String = js.native
-    val ERROR: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.ERROR with java.lang.String = js.native
-    val LOG: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.LOG with java.lang.String = js.native
-    val PAUSE: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.PAUSE with java.lang.String = js.native
-    val PLAY: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.PLAY with java.lang.String = js.native
-    val REPLAY: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.REPLAY with java.lang.String = js.native
-    val STOP: alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes.STOP with java.lang.String = js.native
+    @js.native
+    sealed trait DEQUE
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    @js.native
+    sealed trait ENQUEUE
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    @js.native
+    sealed trait ERROR
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    @js.native
+    sealed trait LOG
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    @js.native
+    sealed trait PAUSE
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    @js.native
+    sealed trait PLAY
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    @js.native
+    sealed trait REPLAY
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    @js.native
+    sealed trait STOP
+      extends alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes
+    
+    val DEQUE: DEQUE with java.lang.String = js.native
+    val ENQUEUE: ENQUEUE with java.lang.String = js.native
+    val ERROR: ERROR with java.lang.String = js.native
+    val LOG: LOG with java.lang.String = js.native
+    val PAUSE: PAUSE with java.lang.String = js.native
+    val PLAY: PLAY with java.lang.String = js.native
+    val REPLAY: REPLAY with java.lang.String = js.native
+    val STOP: STOP with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
-        alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes with java.lang.String
+        alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.PlayerNs.EventTypes with java.lang.String
       ] = js.native
   }
   
-  type EventTypes = alexaDashVoiceDashServiceLib.alexaDashVoiceDashServiceMod.AVSNs.PlayerNs.EventTypes
 }
 

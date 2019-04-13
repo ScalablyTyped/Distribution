@@ -11,7 +11,7 @@ trait ReactTestInstance extends js.Object {
   var instance: js.Any = js.native
   var parent: scala.Null | ReactTestInstance = js.native
   var props: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  var `type`: reactLib.reactMod.ReactNs.ReactType[_] = js.native
+  var `type`: reactLib.reactMod.ReactType[_] = js.native
   def find(predicate: js.Function1[/* node */ this.type, scala.Boolean]): ReactTestInstance = js.native
   def findAll(predicate: js.Function1[/* node */ this.type, scala.Boolean]): js.Array[ReactTestInstance] = js.native
   def findAll(
@@ -23,9 +23,9 @@ trait ReactTestInstance extends js.Object {
     props: org.scalablytyped.runtime.StringDictionary[js.Any],
     options: reactDashTestDashRendererLib.Anon_Deep
   ): js.Array[ReactTestInstance] = js.native
-  def findAllByType(`type`: reactLib.reactMod.ReactNs.ReactType[_]): js.Array[ReactTestInstance] = js.native
-  def findAllByType(`type`: reactLib.reactMod.ReactNs.ReactType[_], options: reactDashTestDashRendererLib.Anon_Deep): js.Array[ReactTestInstance] = js.native
+  def findAllByType(`type`: reactLib.reactMod.ReactType[_]): js.Array[ReactTestInstance] = js.native
+  def findAllByType(`type`: reactLib.reactMod.ReactType[_], options: reactDashTestDashRendererLib.Anon_Deep): js.Array[ReactTestInstance] = js.native
   def findByProps(props: org.scalablytyped.runtime.StringDictionary[js.Any]): ReactTestInstance = js.native
-  def findByType(`type`: reactLib.reactMod.ReactNs.ReactType[_]): ReactTestInstance = js.native
+  def findByType(`type`: reactLib.reactMod.ReactType[_]): ReactTestInstance = js.native
 }
 

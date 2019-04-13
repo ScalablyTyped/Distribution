@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/DataTables", "DropdownMenuColumn")
 @js.native
 class DropdownMenuColumn protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libDataTablesDropdownMenuColumnMod.DropdownMenuColumnProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libDataTablesDropdownMenuColumnMod.DropdownMenuColumnProps) = this()

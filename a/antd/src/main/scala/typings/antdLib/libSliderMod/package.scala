@@ -9,7 +9,8 @@ package object libSliderMod {
   type HandleGeneratorFn = js.Function2[
     /* tooltipPrefixCls */ java.lang.String, 
     /* info */ HandleGeneratorInfo, 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any]
+    reactLib.reactMod.ReactElement[js.Any]
   ]
+  type SliderMarks = org.scalablytyped.runtime.NumberDictionary[reactLib.reactMod.ReactNode | antdLib.Anon_Label]
   type SliderValue = scala.Double | (js.Tuple2[scala.Double, scala.Double])
 }

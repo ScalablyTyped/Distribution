@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def authenticate(options: authOptions, verify: verifyFunc): js.Function2[
-    /* socket */ socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 
+    /* socket */ socketDotIoLib.socketDotIoMod.Socket, 
     /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], 
     scala.Unit
   ] = js.native

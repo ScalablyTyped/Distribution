@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChangeEvent[T]
-  extends reactLib.reactMod.ReactNs.ChangeEvent[T]
+  extends reactLib.reactMod.ChangeEvent[T]
 
 object ChangeEvent {
   @scala.inline

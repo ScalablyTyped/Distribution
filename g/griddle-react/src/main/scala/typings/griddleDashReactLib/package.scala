@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object griddleDashReactLib {
-  type GriddleComponent[T] = (reactLib.reactMod.ReactNs.ComponentClass[T, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[T]
+  type GriddleComponent[T] = (reactLib.reactMod.ComponentClass[T, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[T]
   type Listener = js.Function3[
     /* prevState */ js.Any, 
     /* nextState */ js.Any, 

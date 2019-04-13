@@ -11,4 +11,6 @@ package object fancyboxLib {
     FancyBoxInteractionTypes
   ]
   type FancyBoxInteractions = FancyBoxInteractionTypes | FancyBoxInteractionMethod
+  type FancyBoxInternationalizationOptions = org.scalablytyped.runtime.StringDictionary[FancyBoxInternationalizatioObject]
+  type FancyBoxPlainObject = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Function0[scala.Unit]]
 }

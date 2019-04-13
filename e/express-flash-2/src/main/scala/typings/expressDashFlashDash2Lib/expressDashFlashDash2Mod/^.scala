@@ -11,6 +11,6 @@ object ^ extends js.Object {
   /**
     * Expose `flash()` function on responses.
     */
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
 }
 

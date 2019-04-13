@@ -10,7 +10,7 @@ trait IMenuDividerProps
   /** This component does not support children. */
   var children: js.UndefOr[scala.Nothing] = js.undefined
   /** Optional header title. */
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object IMenuDividerProps {
@@ -18,7 +18,7 @@ object IMenuDividerProps {
   def apply(
     children: js.UndefOr[scala.Nothing] = js.undefined,
     className: java.lang.String = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): IMenuDividerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(children)) __obj.updateDynamic("children")(children)

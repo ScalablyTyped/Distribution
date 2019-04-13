@@ -16,15 +16,13 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Principal")
 @js.native
-class Principal protected ()
-  extends loopbackLib.loopbackMod.lNs.Principal {
+class Principal protected () extends js.Object {
   def this(`type`: java.lang.String, id: js.Any, name: java.lang.String) = this()
   /**
     * Compare if two principals are equal
     * Returns true if argument principal is equal to this principal.
     * @param {any} p The other principa
     */
-  /* CompleteClass */
-  override def equals(p: js.Any): scala.Unit = js.native
+  def equals(p: js.Any): scala.Unit = js.native
 }
 

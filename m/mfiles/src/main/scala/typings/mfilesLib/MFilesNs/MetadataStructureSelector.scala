@@ -27,3 +27,8 @@ class MetadataStructureSelector ()
   override def Clone(): mfilesLib.IMetadataStructureSelector = js.native
 }
 
+@JSGlobal("MFiles.MetadataStructureSelector")
+@js.native
+object MetadataStructureSelector
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMetadataStructureSelector]
+

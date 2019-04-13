@@ -23,3 +23,8 @@ class VaultConnections ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultConnections")
+@js.native
+object VaultConnections
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultConnections]
+

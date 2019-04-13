@@ -31,7 +31,7 @@ object InputItemProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     labelNumber: scala.Int | scala.Double = null,
     labelPosition: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.left | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.top = null,
     last: js.UndefOr[scala.Boolean] = js.undefined,

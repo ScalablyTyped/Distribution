@@ -38,7 +38,7 @@ class LinkedList[T] () extends js.Object {
   /**
     * Returns an iterator over the list elements
     */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[stdLib.IterableIterator[T]] = js.native
   /**
     * Current length of the list

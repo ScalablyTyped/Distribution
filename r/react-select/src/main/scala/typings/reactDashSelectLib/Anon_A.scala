@@ -15,6 +15,6 @@ trait Anon_A extends js.Object {
   def cx(a: java.lang.String, b: reactDashSelectLib.libTypesMod.ClassNamesState, c: java.lang.String): java.lang.String | scala.Unit = js.native
   def cx(a: scala.Null, b: reactDashSelectLib.libTypesMod.ClassNamesState, c: java.lang.String): java.lang.String | scala.Unit = js.native
   /** Reference to the internal element */
-  def innerRef(element: reactLib.reactMod.ReactNs.Ref[_]): scala.Unit = js.native
+  def innerRef(element: reactLib.reactMod.Ref[_]): scala.Unit = js.native
 }
 

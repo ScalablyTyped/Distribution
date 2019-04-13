@@ -12,9 +12,6 @@ class Collection[T] ()
      with Emitter {
   def this(options: atCkeditorCkeditor5DashUtilsLib.Anon_IdProperty[T]) = this()
   var first: T | scala.Null = js.native
-  /* CompleteClass */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
   var last: T | scala.Null = js.native
   var length: scala.Double = js.native
   def add(item: T): this.type = js.native

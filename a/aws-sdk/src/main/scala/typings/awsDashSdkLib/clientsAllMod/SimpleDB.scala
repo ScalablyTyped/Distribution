@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class SimpleDB ()
-  extends awsDashSdkLib.clientsSimpledbMod.namespaced {
-  def this(options: awsDashSdkLib.clientsSimpledbMod.SimpleDBNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsSimpledbMod.^ {
+  def this(options: awsDashSdkLib.clientsSimpledbMod.ClientConfiguration) = this()
 }
 

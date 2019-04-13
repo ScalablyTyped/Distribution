@@ -19,3 +19,8 @@ class PropertyDefOrObjectType ()
   override def GetAsExpression(): mfilesLib.IExpression = js.native
 }
 
+@JSGlobal("MFiles.PropertyDefOrObjectType")
+@js.native
+object PropertyDefOrObjectType
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyDefOrObjectType]
+

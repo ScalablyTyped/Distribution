@@ -28,7 +28,7 @@ class ObservableValue[T] protected ()
     js.Array[mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[IValueWillChange[T]]]
   ] = js.native
   var prepareNewValue: js.Any = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toPrimitive)
+  @JSName(scala.scalajs.js.Symbol.toPrimitive)
   var toPrimitive: js.Function0[T] = js.native
   var value: js.Any = js.native
   def enhancer(newValue: T, oldValue: T, name: java.lang.String): T = js.native

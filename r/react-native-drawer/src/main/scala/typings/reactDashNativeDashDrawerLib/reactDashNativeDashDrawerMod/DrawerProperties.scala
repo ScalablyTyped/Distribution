@@ -39,7 +39,7 @@ trait DrawerProperties extends js.Object {
   /**
     * Menu component
     */
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true the drawer can not be opened and will not respond to pans
     */
@@ -150,7 +150,7 @@ object DrawerProperties {
     acceptTap: js.UndefOr[scala.Boolean] = js.undefined,
     captureGestures: scala.Boolean | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.open | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.closed = null,
     closedDrawerOffset: js.Function0[scala.Double] | scala.Double = null,
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     elevation: scala.Int | scala.Double = null,
     initializeOpen: scala.Int | scala.Double = null,

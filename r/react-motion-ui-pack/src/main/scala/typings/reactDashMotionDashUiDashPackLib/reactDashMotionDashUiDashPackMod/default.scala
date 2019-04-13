@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-motion-ui-pack", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.TransitionNs.TransitionProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.TransitionNs.TransitionProps) = this()

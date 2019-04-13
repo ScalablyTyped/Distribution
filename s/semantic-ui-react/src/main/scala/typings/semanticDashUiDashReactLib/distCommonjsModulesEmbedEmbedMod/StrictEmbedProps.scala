@@ -19,7 +19,7 @@ trait StrictEmbedProps extends js.Object {
   /** Whether to show networks branded UI like title cards, or after video calls to action. */
   var brandedUI: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Specifies a default chrome color with Vimeo or YouTube. */
@@ -48,7 +48,7 @@ trait StrictEmbedProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ EmbedProps, 
       scala.Unit
     ]
@@ -71,7 +71,7 @@ object StrictEmbedProps {
     aspectRatio: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`4:3` | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`16:9` | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`21:9` = null,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
     brandedUI: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
@@ -80,7 +80,7 @@ object StrictEmbedProps {
     icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     id: java.lang.String = null,
     iframe: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlIframeProps] = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ EmbedProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ EmbedProps) => scala.Unit = null,
     placeholder: java.lang.String = null,
     source: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.youtube | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vimeo = null,
     url: java.lang.String = null

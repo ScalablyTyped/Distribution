@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DirectConnect ()
   extends awsDashSdkLib.clientsAllMod.DirectConnect {
-  def this(options: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDirectconnectMod.ClientConfiguration) = this()
 }
 

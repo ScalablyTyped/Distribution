@@ -14,8 +14,8 @@ trait LineCustomLayerProps extends js.Object {
   var yScale_Original: atNivoScalesLib.atNivoScalesMod.ScaleFunc = js.native
   def hideTooltip(): scala.Unit = js.native
   def showTooltip(
-    tooltip: reactLib.reactMod.ReactNs.ReactNode,
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]
+    tooltip: reactLib.reactMod.ReactNode,
+    event: reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]
   ): scala.Unit = js.native
   def xScale(value: java.lang.String): scala.Double = js.native
   def xScale(value: scala.Double): scala.Double = js.native

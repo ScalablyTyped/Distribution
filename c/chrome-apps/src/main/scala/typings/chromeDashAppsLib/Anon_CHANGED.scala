@@ -6,19 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CHANGED extends js.Object {
-  var CHANGED: chromeDashAppsLib.chromeDashAppsLibStrings.changed
-  var CREATED: chromeDashAppsLib.chromeDashAppsLibStrings.created
-  var REMOVED: chromeDashAppsLib.chromeDashAppsLibStrings.removed
+  var CHANGED: chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED
+  var DELETED: chromeDashAppsLib.chromeDashAppsLibStrings.DELETED
 }
 
 object Anon_CHANGED {
   @scala.inline
   def apply(
-    CHANGED: chromeDashAppsLib.chromeDashAppsLibStrings.changed,
-    CREATED: chromeDashAppsLib.chromeDashAppsLibStrings.created,
-    REMOVED: chromeDashAppsLib.chromeDashAppsLibStrings.removed
+    CHANGED: chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED,
+    DELETED: chromeDashAppsLib.chromeDashAppsLibStrings.DELETED
   ): Anon_CHANGED = {
-    val __obj = js.Dynamic.literal(CHANGED = CHANGED, CREATED = CREATED, REMOVED = REMOVED)
+    val __obj = js.Dynamic.literal(CHANGED = CHANGED, DELETED = DELETED)
   
     __obj.asInstanceOf[Anon_CHANGED]
   }

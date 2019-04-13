@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 object rcDashSelectLibComponents {
   @scala.inline
-  def OptGroup: reactLib.reactMod.ReactNs.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptGroupProps] = js.constructorOf[rcDashSelectLib.rcDashSelectMod.OptGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptGroupProps]]
+  def OptGroup: reactLib.reactMod.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptGroupProps] = js.constructorOf[rcDashSelectLib.rcDashSelectMod.OptGroup].asInstanceOf[reactLib.reactMod.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptGroupProps]]
   @scala.inline
-  def Option: reactLib.reactMod.ReactNs.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptionProps] = js.constructorOf[rcDashSelectLib.rcDashSelectMod.Option].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptionProps]]
+  def Option: reactLib.reactMod.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptionProps] = js.constructorOf[rcDashSelectLib.rcDashSelectMod.Option].asInstanceOf[reactLib.reactMod.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptionProps]]
   @scala.inline
-  def RcDashSelect: reactLib.reactMod.ReactNs.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.SelectProps] = js.constructorOf[rcDashSelectLib.rcDashSelectMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.SelectProps]]
+  def RcDashSelect: reactLib.reactMod.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.SelectProps] = js.constructorOf[rcDashSelectLib.rcDashSelectMod.default].asInstanceOf[reactLib.reactMod.ComponentType[rcDashSelectLib.rcDashSelectMod.RcSelectNs.SelectProps]]
   @scala.inline
   def OptGroupProps: rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptGroupProps.type = rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptGroupProps
   type OptGroupProps = rcDashSelectLib.rcDashSelectMod.RcSelectNs.OptGroupProps

@@ -11,16 +11,16 @@ trait SharedTextFieldProps extends js.Object {
   var customSize: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
-  var errorText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var errorText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var floating: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var helpText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var helpText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
-  var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var inputStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var lineDirection: js.UndefOr[TextFieldLineDirections] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
@@ -29,11 +29,11 @@ trait SharedTextFieldProps extends js.Object {
   var min: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var paddedBlock: js.UndefOr[scala.Boolean] = js.undefined
-  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var passwordIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var passwordIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -43,7 +43,7 @@ trait SharedTextFieldProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var resize: js.UndefOr[reactDashMdLib.Anon_DisableShrink] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
@@ -59,16 +59,16 @@ object SharedTextFieldProps {
     customSize: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    errorText: reactLib.reactMod.ReactNs.ReactNode = null,
+    errorText: reactLib.reactMod.ReactNode = null,
     floating: js.UndefOr[scala.Boolean] = js.undefined,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    helpText: reactLib.reactMod.ReactNs.ReactNode = null,
-    inlineIndicator: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    helpText: reactLib.reactMod.ReactNode = null,
+    inlineIndicator: reactLib.reactMod.ReactElement[_] = null,
     inputClassName: java.lang.String = null,
-    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
-    leftIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    inputStyle: reactLib.reactMod.CSSProperties = null,
+    label: reactLib.reactMod.ReactNode = null,
+    leftIcon: reactLib.reactMod.ReactElement[_] = null,
     leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined,
     lineDirection: TextFieldLineDirections = null,
     max: scala.Int | scala.Double = null,
@@ -77,15 +77,15 @@ object SharedTextFieldProps {
     min: scala.Int | scala.Double = null,
     name: scala.Double | java.lang.String = null,
     paddedBlock: js.UndefOr[scala.Boolean] = js.undefined,
-    passwordIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    passwordIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    passwordIcon: reactLib.reactMod.ReactElement[_] = null,
+    passwordIconChildren: reactLib.reactMod.ReactNode = null,
     passwordIconClassName: java.lang.String = null,
     passwordInitiallyVisible: js.UndefOr[scala.Boolean] = js.undefined,
     pattern: java.lang.String = null,
     placeholder: java.lang.String = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     resize: reactDashMdLib.Anon_DisableShrink = null,
-    rightIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    rightIcon: reactLib.reactMod.ReactElement[_] = null,
     rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
     step: scala.Int | scala.Double = null,

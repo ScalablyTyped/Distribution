@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class CollectionView[TModel /* <: giraffeLib.GiraffeNs.Model */] ()
   extends giraffeLib.GiraffeNs.View[TModel] {
-  var collection: giraffeLib.GiraffeNs.Collection[TModel] = js.native
+  @JSName("collection")
+  var collection_CollectionView: giraffeLib.GiraffeNs.Collection[TModel] = js.native
   var modelView: giraffeLib.GiraffeNs.View[TModel] = js.native
   var modelViewArgs: js.Array[_] = js.native
   var modelViewEl: js.Any = js.native

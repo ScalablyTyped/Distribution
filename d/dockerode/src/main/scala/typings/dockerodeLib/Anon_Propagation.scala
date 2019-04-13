@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Propagation extends js.Object {
-  var Propagation: dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation
+  var Propagation: dockerodeLib.dockerodeMod.MountPropagation
 }
 
 object Anon_Propagation {
   @scala.inline
-  def apply(Propagation: dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation): Anon_Propagation = {
+  def apply(Propagation: dockerodeLib.dockerodeMod.MountPropagation): Anon_Propagation = {
     val __obj = js.Dynamic.literal(Propagation = Propagation)
   
     __obj.asInstanceOf[Anon_Propagation]

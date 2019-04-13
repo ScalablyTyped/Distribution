@@ -15,6 +15,7 @@ package object reduxDashFirstDashRouterMod {
   type HistoryAction = java.lang.String
   type HistoryEntries = js.Array[reduxDashFirstDashRouterLib.Anon_Pathname]
   type Listener = js.Function2[/* location */ HistoryLocation, /* action */ HistoryAction, scala.Unit]
+  type Navigators[TState] = org.scalablytyped.runtime.StringDictionary[Navigator[TState]]
   type Nullable[T] = js.UndefOr[T | scala.Null]
   type Params = js.Object
   type Payload = js.Object
@@ -26,6 +27,7 @@ package object reduxDashFirstDashRouterMod {
     /* getState */ StateGetter[TState], 
     js.Any | js.Promise[js.Any]
   ]
+  type RoutesMap[TKeys, TState] = org.scalablytyped.runtime.StringDictionary[Route[TKeys, TState]]
   type ScrollBehavior = js.Object
   type ScrollUpdater = js.Function1[/* performedByUser */ scala.Boolean, scala.Unit]
   type SelectLocationState[TKeys, TState] = js.Function1[/* state */ TState, LocationState[TKeys, TState]]

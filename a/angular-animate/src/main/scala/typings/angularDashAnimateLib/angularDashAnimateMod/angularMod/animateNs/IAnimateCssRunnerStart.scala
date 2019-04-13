@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IAnimateCssRunnerStart
-  extends angularLib.angularMod.angularNs.IPromise[scala.Unit] {
+  extends angularLib.angularMod.IPromise[scala.Unit] {
   /**
     * Allows you to add done callbacks to the running animation
     *

@@ -16,9 +16,9 @@ class SignalCellular0BarSharp protected ()
 @JSImport("@material-ui/icons", "SignalCellular0BarSharp")
 @js.native
 class SignalCellular0BarSharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

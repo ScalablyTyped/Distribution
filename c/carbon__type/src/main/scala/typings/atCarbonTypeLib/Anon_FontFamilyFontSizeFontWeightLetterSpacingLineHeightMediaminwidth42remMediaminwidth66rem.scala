@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42remMediaminwidth66rem extends js.Object {
-  var `@media (min-width: 42rem)`: Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber
-  var `@media (min-width: 66rem)`: Anon_FontFamilyFontSize
-  var `@media (min-width: 82rem)`: Anon_FontFamilyFontSize
-  var `@media (min-width: 99rem)`: Anon_FontFamilyFontSize
+  var `@media (min-width: 42rem)`: Anon_FontFamily
+  var `@media (min-width: 66rem)`: Anon_FontFamily
+  var `@media (min-width: 82rem)`: Anon_FontFamily
+  var `@media (min-width: 99rem)`: Anon_FontFamily
   var fontFamily: java.lang.String
   var fontSize: java.lang.String
   var fontWeight: scala.Double
@@ -20,10 +20,10 @@ trait Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42rem
 object Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42remMediaminwidth66rem {
   @scala.inline
   def apply(
-    `@media (min-width: 42rem)`: Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber,
-    `@media (min-width: 66rem)`: Anon_FontFamilyFontSize,
-    `@media (min-width: 82rem)`: Anon_FontFamilyFontSize,
-    `@media (min-width: 99rem)`: Anon_FontFamilyFontSize,
+    `@media (min-width: 42rem)`: Anon_FontFamily,
+    `@media (min-width: 66rem)`: Anon_FontFamily,
+    `@media (min-width: 82rem)`: Anon_FontFamily,
+    `@media (min-width: 99rem)`: Anon_FontFamily,
     fontFamily: java.lang.String,
     fontSize: java.lang.String,
     fontWeight: scala.Double,

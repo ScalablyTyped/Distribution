@@ -7,29 +7,29 @@ import scala.scalajs.js.annotation._
 
 object hedronLibComponents {
   @scala.inline
-  def BreakpointProvider: reactLib.reactMod.ReactNs.ComponentType[
-    hedronLib.hedronMod.BreakpointsProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]
-  ] = js.constructorOf[hedronLib.hedronMod.BreakpointProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  hedronLib.hedronMod.BreakpointsProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]]]
+  def BreakpointProvider: reactLib.reactMod.ComponentType[
+    hedronLib.hedronMod.BreakpointsProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]
+  ] = js.constructorOf[hedronLib.hedronMod.BreakpointProvider].asInstanceOf[reactLib.reactMod.ComponentType[
+  hedronLib.hedronMod.BreakpointsProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]]]
   @scala.inline
-  def Column: reactLib.reactMod.ReactNs.ComponentType[
-    hedronLib.hedronMod.ColumnProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]
-  ] = js.constructorOf[hedronLib.hedronMod.Column].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  hedronLib.hedronMod.ColumnProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]]]
+  def Column: reactLib.reactMod.ComponentType[
+    hedronLib.hedronMod.ColumnProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]
+  ] = js.constructorOf[hedronLib.hedronMod.Column].asInstanceOf[reactLib.reactMod.ComponentType[
+  hedronLib.hedronMod.ColumnProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]]]
   @scala.inline
-  def Hidden: reactLib.reactMod.ReactNs.ComponentType[
-    hedronLib.hedronMod.HiddenProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]
-  ] = js.constructorOf[hedronLib.hedronMod.Hidden].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  hedronLib.hedronMod.HiddenProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]]]
+  def Hidden: reactLib.reactMod.ComponentType[
+    hedronLib.hedronMod.HiddenProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]
+  ] = js.constructorOf[hedronLib.hedronMod.Hidden].asInstanceOf[reactLib.reactMod.ComponentType[
+  hedronLib.hedronMod.HiddenProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]]]
   @scala.inline
-  def Page: reactLib.reactMod.ReactNs.ComponentType[
-    hedronLib.hedronMod.PageProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]
-  ] = js.constructorOf[hedronLib.hedronMod.Page].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  hedronLib.hedronMod.PageProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]]]
+  def Page: reactLib.reactMod.ComponentType[
+    hedronLib.hedronMod.PageProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]
+  ] = js.constructorOf[hedronLib.hedronMod.Page].asInstanceOf[reactLib.reactMod.ComponentType[
+  hedronLib.hedronMod.PageProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]]]
   @scala.inline
-  def Row: reactLib.reactMod.ReactNs.ComponentType[
-    hedronLib.hedronMod.RowProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]
-  ] = js.constructorOf[hedronLib.hedronMod.Row].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  hedronLib.hedronMod.RowProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement]]]
+  def Row: reactLib.reactMod.ComponentType[
+    hedronLib.hedronMod.RowProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]
+  ] = js.constructorOf[hedronLib.hedronMod.Row].asInstanceOf[reactLib.reactMod.ComponentType[
+  hedronLib.hedronMod.RowProps with reactLib.reactMod.HTMLProps[stdLib.HTMLElement]]]
 }
 

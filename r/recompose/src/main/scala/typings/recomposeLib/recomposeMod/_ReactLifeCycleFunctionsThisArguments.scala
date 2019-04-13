@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait _ReactLifeCycleFunctionsThisArguments[TProps, TState] extends js.Object {
   var context: js.Any = js.native
   var props: TProps = js.native
-  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactInstance] = js.native
+  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactInstance] = js.native
   var state: TState = js.native
   def forceUpdate(): scala.Unit = js.native
   def forceUpdate(callBack: js.Function0[_]): scala.Unit = js.native

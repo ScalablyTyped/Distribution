@@ -31,3 +31,8 @@ class VaultCustomApplicationManagementOperations ()
   override def UninstallCustomApplication(ApplicationID: java.lang.String): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultCustomApplicationManagementOperations")
+@js.native
+object VaultCustomApplicationManagementOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultCustomApplicationManagementOperations]
+

@@ -21,13 +21,9 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply(files: java.lang.String, destination: java.lang.String): js.Promise[scala.Unit] with cpyLib.cpyMod.cpyNs.ProgressEmitter = js.native
-  def apply(files: java.lang.String, destination: java.lang.String, options: cpyLib.cpyMod.cpyNs.Options): js.Promise[scala.Unit] with cpyLib.cpyMod.cpyNs.ProgressEmitter = js.native
-  def apply(files: js.Array[java.lang.String], destination: java.lang.String): js.Promise[scala.Unit] with cpyLib.cpyMod.cpyNs.ProgressEmitter = js.native
-  def apply(
-    files: js.Array[java.lang.String],
-    destination: java.lang.String,
-    options: cpyLib.cpyMod.cpyNs.Options
-  ): js.Promise[scala.Unit] with cpyLib.cpyMod.cpyNs.ProgressEmitter = js.native
+  def apply(files: java.lang.String, destination: java.lang.String): js.Promise[scala.Unit] with cpyLib.cpyMod.ProgressEmitter = js.native
+  def apply(files: java.lang.String, destination: java.lang.String, options: cpyLib.cpyMod.Options): js.Promise[scala.Unit] with cpyLib.cpyMod.ProgressEmitter = js.native
+  def apply(files: js.Array[java.lang.String], destination: java.lang.String): js.Promise[scala.Unit] with cpyLib.cpyMod.ProgressEmitter = js.native
+  def apply(files: js.Array[java.lang.String], destination: java.lang.String, options: cpyLib.cpyMod.Options): js.Promise[scala.Unit] with cpyLib.cpyMod.ProgressEmitter = js.native
 }
 

@@ -11,3 +11,10 @@ import scala.scalajs.js.annotation._
 */
 trait Boundary extends js.Object
 
+@JSImport("@blueprintjs/core/lib/esm/common/boundary", "Boundary")
+@js.native
+object Boundary extends js.Object {
+  var END: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.end = js.native
+  var START: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.start = js.native
+}
+

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val version: java.lang.String = js.native
   def connect(): SCClientSocket = js.native
-  def connect(options: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.ClientOptions): SCClientSocket = js.native
+  def connect(options: socketclusterDashClientLib.libScclientsocketMod.ClientOptions): SCClientSocket = js.native
   def create(): SCClientSocket = js.native
-  def create(options: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.ClientOptions): SCClientSocket = js.native
+  def create(options: socketclusterDashClientLib.libScclientsocketMod.ClientOptions): SCClientSocket = js.native
   def destroy(socket: SCClientSocket): scala.Unit = js.native
 }
 

@@ -9,7 +9,7 @@ trait StrictResponsiveProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Fires callbacks immediately after mount. */
   var fireOnMount: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -29,7 +29,7 @@ trait StrictResponsiveProps extends js.Object {
     */
   var onUpdate: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ ResponsiveOnUpdateData, 
       scala.Unit
     ]
@@ -40,12 +40,12 @@ object StrictResponsiveProps {
   @scala.inline
   def apply(
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     fireOnMount: js.UndefOr[scala.Boolean] = js.undefined,
     getWidth: () => scala.Double = null,
     maxWidth: scala.Double | java.lang.String = null,
     minWidth: scala.Double | java.lang.String = null,
-    onUpdate: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ ResponsiveOnUpdateData) => scala.Unit = null
+    onUpdate: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ ResponsiveOnUpdateData) => scala.Unit = null
   ): StrictResponsiveProps = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as)

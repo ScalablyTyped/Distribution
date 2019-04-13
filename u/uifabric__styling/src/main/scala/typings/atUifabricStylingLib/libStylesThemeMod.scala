@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/styling/lib/styles/theme", JSImport.Namespace)
 @js.native
 object libStylesThemeMod extends js.Object {
-  val ThemeSettingName: /* theme */ java.lang.String = js.native
+  val ThemeSettingName: atUifabricStylingLib.atUifabricStylingLibStrings.theme = js.native
   def createTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def createTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getTheme(): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native

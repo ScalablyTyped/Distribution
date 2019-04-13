@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Actual extends js.Object {
   var AssertionError: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.assertNs.AssertionError] = js.native
-  val assertNs: js.Any = js.native
   def deepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit]): scala.Unit = js.native

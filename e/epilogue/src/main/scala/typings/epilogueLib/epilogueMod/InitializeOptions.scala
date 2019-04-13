@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InitializeOptions extends js.Object {
   @JSName("app")
-  var app_Original: expressLib.expressMod.eNs.Express = js.native
+  var app_Original: expressLib.expressMod.Express = js.native
   var base: js.UndefOr[java.lang.String] = js.native
-  var sequelize: sequelizeLib.sequelizeMod.sequelizeNs.Sequelize = js.native
+  var sequelize: sequelizeLib.sequelizeMod.Sequelize = js.native
   var updateMethod: js.UndefOr[java.lang.String] = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without

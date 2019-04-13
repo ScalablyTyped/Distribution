@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_OnKeyDown extends js.Object {
   @JSName("onKeyDown")
   var onKeyDown_Original: reactDashSelectLib.libTypesMod.KeyboardEventHandler = js.native
-  def onKeyDown(event: reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement]): scala.Unit = js.native
+  def onKeyDown(event: reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement]): scala.Unit = js.native
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("xml", "Document")
 @js.native
 class Document ()
-  extends fibjsLib.xmlMod.xmlNs.Document
+  extends fibjsLib.Class_XmlDocument
 

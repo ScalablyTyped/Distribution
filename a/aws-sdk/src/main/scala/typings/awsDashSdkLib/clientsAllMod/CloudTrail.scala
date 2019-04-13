@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CloudTrail ()
-  extends awsDashSdkLib.clientsCloudtrailMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCloudtrailMod.CloudTrailNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCloudtrailMod.^ {
+  def this(options: awsDashSdkLib.clientsCloudtrailMod.ClientConfiguration) = this()
 }
 

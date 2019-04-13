@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CodePipeline ()
   extends awsDashSdkLib.clientsAllMod.CodePipeline {
-  def this(options: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCodepipelineMod.ClientConfiguration) = this()
 }
 

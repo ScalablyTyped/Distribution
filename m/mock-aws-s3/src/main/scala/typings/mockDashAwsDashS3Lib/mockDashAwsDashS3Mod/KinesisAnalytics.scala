@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class KinesisAnalytics ()
   extends awsDashSdkLib.awsDashSdkMod.KinesisAnalytics {
-  def this(options: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsKinesisanalyticsMod.ClientConfiguration) = this()
 }
 

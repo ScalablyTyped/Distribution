@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait FieldConfig extends js.Object {
   var children: js.UndefOr[
-    (js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode
+    (js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
   ] = js.undefined
   var component: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ComponentType[FieldProps[_]] | reactLib.reactMod.ReactNs.ComponentType[scala.Unit]
+    java.lang.String | reactLib.reactMod.ComponentType[FieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit]
   ] = js.undefined
   var innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, scala.Unit]] = js.undefined
   var name: java.lang.String
-  var render: js.UndefOr[js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var render: js.UndefOr[js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNode]] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var validate: js.UndefOr[
     js.Function1[/* value */ js.Any, js.UndefOr[java.lang.String | js.Promise[scala.Unit]]]
@@ -26,10 +26,10 @@ object FieldConfig {
   @scala.inline
   def apply(
     name: java.lang.String,
-    children: (js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode = null,
-    component: java.lang.String | reactLib.reactMod.ReactNs.ComponentType[FieldProps[_]] | reactLib.reactMod.ReactNs.ComponentType[scala.Unit] = null,
+    children: (js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode = null,
+    component: java.lang.String | reactLib.reactMod.ComponentType[FieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit] = null,
     innerRef: /* instance */ js.Any => scala.Unit = null,
-    render: /* props */ FieldProps[_] => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ FieldProps[_] => reactLib.reactMod.ReactNode = null,
     `type`: java.lang.String = null,
     validate: /* value */ js.Any => js.UndefOr[java.lang.String | js.Promise[scala.Unit]] = null,
     value: js.Any = null

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "CylinderGeometry")
 @js.native
-class CylinderGeometry protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.CylinderGeometry {
+class CylinderGeometry protected () extends Packable {
   def this(options: cesiumLib.Anon_BottomRadius) = this()
 }
 
@@ -16,13 +15,13 @@ class CylinderGeometry protected ()
 @JSImport("cesium", "CylinderGeometry")
 @js.native
 object CylinderGeometry extends js.Object {
-  def createGeometry(cylinderGeometry: cesiumLib.cesiumMod.CesiumNs.CylinderGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
-  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.CylinderGeometry = js.native
-  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.CylinderGeometry = js.native
+  def createGeometry(cylinderGeometry: cesiumLib.cesiumMod.CylinderGeometry): cesiumLib.cesiumMod.Geometry = js.native
+  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CylinderGeometry = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CylinderGeometry = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.CylinderGeometry
-  ): cesiumLib.cesiumMod.CesiumNs.CylinderGeometry = js.native
+    result: cesiumLib.cesiumMod.CylinderGeometry
+  ): cesiumLib.cesiumMod.CylinderGeometry = js.native
 }
 

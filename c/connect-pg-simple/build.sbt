@@ -1,24 +1,22 @@
 organization := "org.scalablytyped"
 name := "connect-pg-simple"
-version := "4.2-dt-20180214Z-f05b24"
+version := "4.2-dt-20180214Z-090f34"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-d1ac4d",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-751003",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-6ba758",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-92341b",
-  "org.scalablytyped" %%% "express-session" % "1.15-dt-20190212Z-a2ddd8",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
-  "org.scalablytyped" %%% "moment" % "2.24.0-da0e25",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
-  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-facb12",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-f60afc",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-84d26d",
-  "org.scalablytyped" %%% "std" % "3.4-d52857")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-58078f",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-b54bcb",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-647453",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-7a04b0",
+  "org.scalablytyped" %%% "express-session" % "1.15-dt-20190212Z-5b19e6",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-b7b3da",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-a71c8a",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-6da554",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c3b9c7",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-4dbd53",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

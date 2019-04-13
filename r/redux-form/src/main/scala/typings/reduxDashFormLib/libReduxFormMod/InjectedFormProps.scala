@@ -31,7 +31,7 @@ trait InjectedFormProps[FormData, P, ErrorType] extends js.Object {
   def change(field: java.lang.String, value: js.Any): scala.Unit = js.native
   def clearAsyncError(field: java.lang.String): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
-  def handleSubmit(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit = js.native
+  def handleSubmit(event: reactLib.reactMod.SyntheticEvent[_, reactLib.Event]): scala.Unit = js.native
   def handleSubmit(submit: FormSubmitHandler[FormData, P, ErrorType]): js.Any = js.native
   def handleSubmit(
     submit: FormSubmitHandler[FormData, P, ErrorType],

@@ -40,7 +40,7 @@ trait TooltipProps extends js.Object {
   /**
     * Component to be rendered as the display container.
     */
-  var popover: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
+  var popover: js.UndefOr[reactLib.reactMod.ReactElement[js.Object]] = js.undefined
   /**
     * Flag to determine to toggle or not the tooltip on press.
     */
@@ -72,7 +72,7 @@ object TooltipProps {
     onClose: () => scala.Unit = null,
     onOpen: () => scala.Unit = null,
     pointerColor: java.lang.String = null,
-    popover: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    popover: reactLib.reactMod.ReactElement[js.Object] = null,
     toggleOnPress: () => scala.Unit = null,
     width: scala.Int | scala.Double = null,
     withOverlay: js.UndefOr[scala.Boolean] = js.undefined,

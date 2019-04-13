@@ -22,13 +22,13 @@ trait MutationProps[TData, TVariables] extends js.Object {
   ] = js.undefined
   var update: js.UndefOr[MutationUpdaterFn[TData]] = js.undefined
   var variables: js.UndefOr[TVariables] = js.undefined
-  def children(mutateFn: MutationFn[TData, TVariables], result: MutationResult[TData]): reactLib.reactMod.ReactNs.ReactNode
+  def children(mutateFn: MutationFn[TData, TVariables], result: MutationResult[TData]): reactLib.reactMod.ReactNode
 }
 
 object MutationProps {
   @scala.inline
   def apply[TData, TVariables](
-    children: (MutationFn[TData, TVariables], MutationResult[TData]) => reactLib.reactMod.ReactNs.ReactNode,
+    children: (MutationFn[TData, TVariables], MutationResult[TData]) => reactLib.reactMod.ReactNode,
     mutation: graphqlLib.languageAstMod.DocumentNode,
     awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined,
     client: apolloDashClientLib.apolloDashClientMod.default[js.Object] = null,

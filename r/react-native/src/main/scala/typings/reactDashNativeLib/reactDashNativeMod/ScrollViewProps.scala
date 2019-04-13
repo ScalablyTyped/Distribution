@@ -93,7 +93,7 @@ trait ScrollViewProps
     * A RefreshControl component, used to provide pull-to-refresh
     * functionality for the ScrollView.
     */
-  var refreshControl: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[RefreshControlProps]] = js.undefined
+  var refreshControl: js.UndefOr[reactLib.reactMod.ReactElement[RefreshControlProps]] = js.undefined
   /**
     * When false, the content does not scroll. The default value is true
     */
@@ -217,7 +217,7 @@ object ScrollViewProps {
     pagingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     pinchGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
-    refreshControl: reactLib.reactMod.ReactNs.ReactElement[RefreshControlProps] = null,
+    refreshControl: reactLib.reactMod.ReactElement[RefreshControlProps] = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,

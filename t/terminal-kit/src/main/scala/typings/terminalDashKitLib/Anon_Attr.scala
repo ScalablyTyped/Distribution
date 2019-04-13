@@ -6,20 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Attr extends js.Object {
-  var attr: scala.Double | terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes
-  var transparencyChar: java.lang.String
-  var transparencyType: scala.Double
+  var attr: terminalDashKitLib.screenBufferMod.Attributes | scala.Double
+  var char: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_Attr {
   @scala.inline
-  def apply(
-    attr: scala.Double | terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes,
-    transparencyChar: java.lang.String,
-    transparencyType: scala.Double
-  ): Anon_Attr = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar, transparencyType = transparencyType)
-  
+  def apply(attr: terminalDashKitLib.screenBufferMod.Attributes | scala.Double, char: java.lang.String = null): Anon_Attr = {
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])
+    if (char != null) __obj.updateDynamic("char")(char)
     __obj.asInstanceOf[Anon_Attr]
   }
 }

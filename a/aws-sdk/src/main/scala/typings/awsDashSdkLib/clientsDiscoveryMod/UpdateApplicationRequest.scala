@@ -1,0 +1,32 @@
+package typings
+package awsDashSdkLib.clientsDiscoveryMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UpdateApplicationRequest extends js.Object {
+  /**
+    * Configuration ID of the application to be updated.
+    */
+  var configurationId: ApplicationId
+  /**
+    * New description of the application to be updated.
+    */
+  var description: js.UndefOr[String] = js.undefined
+  /**
+    * New name of the application to be updated.
+    */
+  var name: js.UndefOr[String] = js.undefined
+}
+
+object UpdateApplicationRequest {
+  @scala.inline
+  def apply(configurationId: ApplicationId, description: String = null, name: String = null): UpdateApplicationRequest = {
+    val __obj = js.Dynamic.literal(configurationId = configurationId)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[UpdateApplicationRequest]
+  }
+}
+

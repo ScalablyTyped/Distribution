@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 package object distTypesMod {
   type ComponentDecorator[TOwnProps, TMergedProps] = js.Function1[
     /* component */ CompositeComponent[TMergedProps], 
-    reactLib.reactMod.ReactNs.ComponentClass[TOwnProps, reactLib.reactMod.ReactNs.ComponentState]
+    reactLib.reactMod.ComponentClass[TOwnProps, reactLib.reactMod.ComponentState]
   ]
-  type CompositeComponent[P] = (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[P]
+  type CompositeComponent[P] = (reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[P]
   type InferableComponentDecorator[TOwnProps] = js.Function1[/* component */ CompositeComponent[TOwnProps], CompositeComponent[TOwnProps]]
 }

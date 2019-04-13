@@ -17,7 +17,7 @@ trait StrictMenuProps extends js.Object {
   /** A menu item or menu can have no borders. */
   var borderless: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Additional colors can be specified. */
@@ -54,7 +54,7 @@ trait StrictMenuProps extends js.Object {
     */
   var onItemClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps, 
       scala.Unit
     ]
@@ -90,7 +90,7 @@ object StrictMenuProps {
     as: js.Any = null,
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top = null,
     borderless: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
@@ -101,7 +101,7 @@ object StrictMenuProps {
     icon: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.labeled = null,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     items: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps] = null,
-    onItemClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps) => scala.Unit = null,
+    onItemClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps) => scala.Unit = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
     pointing: js.UndefOr[scala.Boolean] = js.undefined,
     secondary: js.UndefOr[scala.Boolean] = js.undefined,

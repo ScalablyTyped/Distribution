@@ -15,7 +15,7 @@ object DimmerDimmableProps {
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     as: js.Any = null,
     blurring: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     dimmed: js.UndefOr[scala.Boolean] = js.undefined

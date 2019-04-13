@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation._
   *     var typedDispatcher = new flux.Dispatcher<MyCustomActionType>()
   */
 class Dispatcher[TPayload] ()
-  extends fluxLib.libDispatcherMod.namespaced[TPayload]
+  extends fluxLib.libDispatcherMod.^[TPayload]
 

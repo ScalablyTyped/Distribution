@@ -19,3 +19,8 @@ class StateTransitions ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.StateTransitions")
+@js.native
+object StateTransitions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStateTransitions]
+

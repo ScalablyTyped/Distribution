@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md", "Subheader")
 @js.native
 class Subheader protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps) = this()

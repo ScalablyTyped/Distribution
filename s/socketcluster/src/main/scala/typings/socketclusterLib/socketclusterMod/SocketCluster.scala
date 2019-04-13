@@ -32,18 +32,12 @@ trait SocketCluster
   @JSName("on")
   def on_brokerExit(
     event: socketclusterLib.socketclusterLibStrings.brokerExit,
-    listener: js.Function1[
-      /* brokerInfo */ socketclusterLib.socketclusterMod.SocketClusterNs.BrokerExitInfo, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* brokerInfo */ BrokerExitInfo, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_brokerStart(
     event: socketclusterLib.socketclusterLibStrings.brokerStart,
-    listener: js.Function1[
-      /* brokerInfo */ socketclusterLib.socketclusterMod.SocketClusterNs.BrokerStartInfo, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* brokerInfo */ BrokerStartInfo, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_fail(
@@ -75,10 +69,7 @@ trait SocketCluster
   @JSName("on")
   def on_workerExit(
     event: socketclusterLib.socketclusterLibStrings.workerExit,
-    listener: js.Function1[
-      /* workerInfo */ socketclusterLib.socketclusterMod.SocketClusterNs.WorkerExitInfo, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* workerInfo */ WorkerExitInfo, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_workerStart(

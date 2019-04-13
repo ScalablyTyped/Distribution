@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDropdownConfigNgOptions
-  extends angularLib.angularMod.angularNs.INgModelOptions
+  extends angularLib.angularMod.INgModelOptions
 
 object IDropdownConfigNgOptions {
   @scala.inline

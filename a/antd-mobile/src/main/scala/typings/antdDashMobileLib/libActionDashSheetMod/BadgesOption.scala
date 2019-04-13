@@ -21,7 +21,7 @@ object BadgesOption {
     overflowCount: scala.Int | scala.Double = null,
     prefixCls: java.lang.String = null,
     size: antdDashMobileLib.antdDashMobileLibStrings.large | antdDashMobileLib.antdDashMobileLibStrings.small = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     text: js.Any = null
   ): BadgesOption = {
     val __obj = js.Dynamic.literal(index = index)

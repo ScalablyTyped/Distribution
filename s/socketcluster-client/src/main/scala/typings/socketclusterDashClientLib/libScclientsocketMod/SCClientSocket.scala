@@ -14,23 +14,19 @@ trait SCClientSocket
   var OPEN: socketclusterDashClientLib.socketclusterDashClientLibStrings.open = js.native
   var PENDING: socketclusterDashClientLib.socketclusterDashClientLibStrings.pending = js.native
   var UNAUTHENTICATED: socketclusterDashClientLib.socketclusterDashClientLibStrings.unauthenticated = js.native
-  var authState: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.AuthStates = js.native
+  var authState: AuthStates = js.native
   var authToken: js.Object | scala.Null = js.native
   var channels: org.scalablytyped.runtime.StringDictionary[scDashChannelLib.scDashChannelMod.SCChannel] = js.native
   var id: java.lang.String = js.native
   var pendingReconnect: scala.Boolean = js.native
   var pendingReconnectTimeout: scala.Double = js.native
   var signedAuthToken: java.lang.String | scala.Null = js.native
-  var state: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.States = js.native
+  var state: States = js.native
   // Perform client-initiated authentication by providing an encrypted token string.
   def authenticate(signedAuthToken: java.lang.String): scala.Unit = js.native
   def authenticate(
     signedAuthToken: java.lang.String,
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* authStatus */ socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.AuthStatus, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ stdLib.Error, /* authStatus */ AuthStatus, scala.Unit]
   ): scala.Unit = js.native
   def channel(channelName: java.lang.String): scDashChannelLib.scDashChannelMod.SCChannel = js.native
   def channel(channelName: java.lang.String, options: scDashChannelLib.scDashChannelMod.SCChannelOptions): scDashChannelLib.scDashChannelMod.SCChannel = js.native
@@ -59,16 +55,13 @@ trait SCClientSocket
   def getAuthToken(): js.Object | scala.Null = js.native
   def getBytesReceived(): scala.Double = js.native
   def getSignedAuthToken(): java.lang.String | scala.Null = js.native
-  def getState(): socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.States = js.native
+  def getState(): States = js.native
   def isSubscribed(channelName: java.lang.String): scala.Boolean = js.native
   def isSubscribed(channelName: java.lang.String, includePending: scala.Boolean): scala.Boolean = js.native
   @JSName("on")
   def on_authStateChange(
     event: socketclusterDashClientLib.socketclusterDashClientLibStrings.authStateChange,
-    listener: js.Function1[
-      /* stateChangeData */ socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.AuthStateChangeData, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* stateChangeData */ AuthStateChangeData, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_authenticate(
@@ -84,7 +77,7 @@ trait SCClientSocket
   def on_connect(
     event: socketclusterDashClientLib.socketclusterDashClientLibStrings.connect,
     listener: js.Function2[
-      /* status */ socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.ConnectStatus, 
+      /* status */ ConnectStatus, 
       /* processSubscriptions */ js.Function0[scala.Unit], 
       scala.Unit
     ]
@@ -122,7 +115,7 @@ trait SCClientSocket
   @JSName("on")
   def on_message(
     event: socketclusterDashClientLib.socketclusterDashClientLibStrings.message,
-    listener: js.Function1[/* message */ wsLib.wsMod.WebSocketNs.Data, scala.Unit]
+    listener: js.Function1[/* message */ wsLib.wsMod.Data, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_raw(
@@ -165,10 +158,7 @@ trait SCClientSocket
   @JSName("on")
   def on_subscribeStateChange(
     event: socketclusterDashClientLib.socketclusterDashClientLibStrings.subscribeStateChange,
-    listener: js.Function1[
-      /* stateChangeData */ socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.SubscribeStateChangeData, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* stateChangeData */ SubscribeStateChangeData, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_unsubscribe(
@@ -194,14 +184,8 @@ trait SCClientSocket
   def subscriptions(includePending: scala.Boolean): js.Array[java.lang.String] = js.native
   def unsubscribe(channelName: java.lang.String): scala.Unit = js.native
   def unwatch(channelName: java.lang.String): scala.Unit = js.native
-  def unwatch(
-    channelName: java.lang.String,
-    handler: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.WatcherFunction
-  ): scala.Unit = js.native
-  def watch(
-    channelName: java.lang.String,
-    handler: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.WatcherFunction
-  ): scala.Unit = js.native
-  def watchers(channelName: java.lang.String): js.Array[socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.WatcherFunction] = js.native
+  def unwatch(channelName: java.lang.String, handler: WatcherFunction): scala.Unit = js.native
+  def watch(channelName: java.lang.String, handler: WatcherFunction): scala.Unit = js.native
+  def watchers(channelName: java.lang.String): js.Array[WatcherFunction] = js.native
 }
 

@@ -31,9 +31,33 @@ import scala.scalajs.js.annotation._
 @JSImport("avoscloud-sdk", "Collection")
 @js.native
 class Collection[T] ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Collection[T] {
-  def this(models: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object]) = this()
-  def this(models: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object], options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.Options) = this()
+  extends Events
+     with IBaseObject {
+  def this(models: js.Array[Object]) = this()
+  def this(models: js.Array[Object], options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.Options) = this()
+  var model: Object = js.native
+  var models: js.Array[Object] = js.native
+  var query: Query = js.native
+  def add(models: js.Array[_]): Collection[T] = js.native
+  def add(models: js.Array[_], options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.AddOptions): Collection[T] = js.native
+  def at(index: scala.Double): Object = js.native
+  def comparator(`object`: Object): js.Any = js.native
+  def create(model: Object): Object = js.native
+  def create(model: Object, options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.CreateOptions): Object = js.native
+  def fetch(): Promise[T] = js.native
+  def fetch(options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.FetchOptions): Promise[T] = js.native
+  def get(id: java.lang.String): Object = js.native
+  def getByCid(cid: js.Any): js.Any = js.native
+  def initialize(): scala.Unit = js.native
+  def pluck(attr: java.lang.String): js.Array[_] = js.native
+  def remove(model: js.Any): Collection[T] = js.native
+  def remove(model: js.Any, options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.RemoveOptions): Collection[T] = js.native
+  def remove(models: js.Array[_]): Collection[T] = js.native
+  def remove(models: js.Array[_], options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.RemoveOptions): Collection[T] = js.native
+  def reset(models: js.Array[_]): Collection[T] = js.native
+  def reset(models: js.Array[_], options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.ResetOptions): Collection[T] = js.native
+  def sort(): Collection[T] = js.native
+  def sort(options: avoscloudDashSdkLib.avoscloudDashSdkMod.CollectionNs.SortOptions): Collection[T] = js.native
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
 }

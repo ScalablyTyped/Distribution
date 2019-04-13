@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class FSx ()
   extends awsDashSdkLib.clientsAllMod.FSx {
-  def this(options: awsDashSdkLib.clientsFsxMod.FSxNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsFsxMod.ClientConfiguration) = this()
 }
 

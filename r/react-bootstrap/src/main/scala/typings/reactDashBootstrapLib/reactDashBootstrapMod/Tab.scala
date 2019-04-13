@@ -14,8 +14,8 @@ class Tab ()
 @JSImport("react-bootstrap", "Tab")
 @js.native
 object Tab extends js.Object {
-  var Container: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libTabContainerMod.namespaced] with reactDashBootstrapLib.Anon_TabContainer = js.native
-  var Content: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libTabContentMod.namespaced] with reactDashBootstrapLib.Anon_TabContent = js.native
-  var Pane: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libTabPaneMod.namespaced] with reactDashBootstrapLib.Anon_TabPane = js.native
+  var Container: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libTabContainerMod.^] = js.native
+  var Content: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libTabContentMod.^] = js.native
+  var Pane: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libTabPaneMod.^] = js.native
 }
 

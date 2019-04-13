@@ -14,5 +14,7 @@ package object bagpipesMod {
     - java.lang.String
   */
   type FittingType = _FittingType | java.lang.String
+  type FittingTypesMap = org.scalablytyped.runtime.StringDictionary[FittingFactory]
   type PipeDef = js.Array[js.Any] | java.lang.String | FittingDef
+  type PipeDefMap = org.scalablytyped.runtime.StringDictionary[PipeDef]
 }

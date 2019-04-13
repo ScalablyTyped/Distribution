@@ -11,9 +11,9 @@ trait TabPaneProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** 选项卡头显示文字 */
-  var tab: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var tab: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
 }
 
 object TabPaneProps {
@@ -24,8 +24,8 @@ object TabPaneProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tab: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null
+    style: reactLib.reactMod.CSSProperties = null,
+    tab: reactLib.reactMod.ReactNode | java.lang.String = null
   ): TabPaneProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

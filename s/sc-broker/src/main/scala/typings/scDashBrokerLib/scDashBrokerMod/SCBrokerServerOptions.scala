@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SCBrokerServerOptions extends js.Object {
   var brokerControllerPath: js.UndefOr[java.lang.String] = js.undefined
-  var brokerOptions: js.UndefOr[scDashBrokerLib.scbrokerMod.SCBrokerNs.SCBrokerOptions] = js.undefined
+  var brokerOptions: js.UndefOr[scDashBrokerLib.scbrokerMod.SCBrokerOptions] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var downgradeToUser: scala.Double | java.lang.String
   var expiryAccuracy: js.UndefOr[scala.Double] = js.undefined
@@ -26,7 +26,7 @@ object SCBrokerServerOptions {
   def apply(
     downgradeToUser: scala.Double | java.lang.String,
     brokerControllerPath: java.lang.String = null,
-    brokerOptions: scDashBrokerLib.scbrokerMod.SCBrokerNs.SCBrokerOptions = null,
+    brokerOptions: scDashBrokerLib.scbrokerMod.SCBrokerOptions = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     expiryAccuracy: scala.Int | scala.Double = null,
     id: java.lang.String = null,

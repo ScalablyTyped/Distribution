@@ -16,7 +16,5 @@ object ^ extends js.Object {
     * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
     */
   val Promise: officeDashJsLib.OfficeNs.IPromiseConstructor = js.native
-  /** Configuration */
-  var config: officeDashJsLib.Anon_ExtendedErrorLogging = js.native
 }
 

@@ -19,7 +19,7 @@ trait Anon_Data extends js.Object {
   @JSName("onMouseOver")
   var onMouseOver_Original: reactDashSelectLib.libTypesMod.MouseEventHandler = js.native
   var value: js.Any = js.native
-  def onClick(event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
-  def onMouseOver(event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onClick(event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onMouseOver(event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
 }
 

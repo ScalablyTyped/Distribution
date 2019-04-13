@@ -22,10 +22,7 @@ trait ShowSelectedButtonProps extends js.Object {
   	 * Function to be called to activate the normal onClick functionality for this button.
   	 */
   var onClick: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit]
   ] = js.undefined
   /**
   	 * Label for when clicking the button will toggle the table back into "show all rows" mode.
@@ -43,7 +40,7 @@ object ShowSelectedButtonProps {
     btnContextual: java.lang.String = null,
     btnGlyphicon: java.lang.String = null,
     className: java.lang.String = null,
-    onClick: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
     showAllText: java.lang.String = null,
     showOnlySelectText: java.lang.String = null
   ): ShowSelectedButtonProps = {

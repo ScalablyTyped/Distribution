@@ -16,10 +16,10 @@ trait sharedb extends js.Object {
     */
   def addProjection(name: java.lang.String, collection: java.lang.String, fields: ProjectionFields): scala.Unit = js.native
   def close(): scala.Unit = js.native
-  def close(callback: js.Function1[/* err */ js.UndefOr[sharedbLib.sharedbMod.sharedbNs.Error], _]): scala.Unit = js.native
-  def connect(): sharedbLib.sharedbMod.sharedbNs.Connection = js.native
-  def connect(connection: js.Any): sharedbLib.sharedbMod.sharedbNs.Connection = js.native
-  def connect(connection: js.Any, req: js.Any): sharedbLib.sharedbMod.sharedbNs.Connection = js.native
+  def close(callback: js.Function1[/* err */ js.UndefOr[Error], _]): scala.Unit = js.native
+  def connect(): Connection = js.native
+  def connect(connection: js.Any): Connection = js.native
+  def connect(connection: js.Any, req: js.Any): Connection = js.native
   def listen(stream: js.Any): scala.Unit = js.native
   /**
     * Registers a server middleware function.

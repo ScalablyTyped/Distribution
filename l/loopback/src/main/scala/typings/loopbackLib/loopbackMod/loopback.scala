@@ -43,28 +43,21 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "loopback")
 @js.native
-class loopback ()
-  extends loopbackLib.loopbackMod.lNs.loopback {
+class loopback () extends js.Object {
   /** Path to a default favicon shipped with LoopBack.
     * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
     */
-  /* CompleteClass */
-  override var faviconFile: java.lang.String = js.native
+  var faviconFile: java.lang.String = js.native
   /** True if running in a browser environment; false otherwise.  Static read-only property. */
-  /* CompleteClass */
-  override var isBrowser: scala.Boolean = js.native
+  var isBrowser: scala.Boolean = js.native
   /** True if running in a server environment; false otherwise.  Static read-only property. */
-  /* CompleteClass */
-  override var isServer: scala.Boolean = js.native
+  var isServer: scala.Boolean = js.native
   /** Mime */
-  /* CompleteClass */
-  override var mime: java.lang.String = js.native
+  var mime: java.lang.String = js.native
   /** The global `Registry` object. */
-  /* CompleteClass */
-  override var registry: loopbackLib.loopbackMod.lNs.Registry = js.native
+  var registry: Registry = js.native
   /** Version of LoopBack framework.  Static read-only property. */
-  /* CompleteClass */
-  override var version: java.lang.String = js.native
+  var version: java.lang.String = js.native
 }
 
 /* static members */
@@ -79,7 +72,7 @@ object loopback extends js.Object {
     * @property {any} [relations] Model relations to add/update
     * @header loopback.configureModel(ModelCtor, config
     */
-  def configureModel(ModelCtor: loopbackLib.loopbackMod.lNs.Model, config: loopbackLib.Anon_DataSource): scala.Unit = js.native
+  def configureModel(ModelCtor: loopbackLib.loopbackMod.Model, config: loopbackLib.Anon_DataSourceRelations): scala.Unit = js.native
   /**
     * Create a data source with passing the provided options to the connector
     * @param {string} name Optional name.
@@ -151,7 +144,7 @@ object loopback extends js.Object {
     * @returns {Model} The model clas
     * @header loopback.findModel(modelName
     */
-  def findModel(modelName: java.lang.String): loopbackLib.loopbackMod.lNs.Model = js.native
+  def findModel(modelName: java.lang.String): loopbackLib.loopbackMod.Model = js.native
   /**
     * Look up a model class by name from all models created by
     * `loopback.createModel()`. Throw an error when no such model exists
@@ -159,7 +152,7 @@ object loopback extends js.Object {
     * @returns {Model} The model clas
     * @header loopback.getModel(modelName
     */
-  def getModel(modelName: java.lang.String): loopbackLib.loopbackMod.lNs.Model = js.native
+  def getModel(modelName: java.lang.String): loopbackLib.loopbackMod.Model = js.native
   /**
     * Look up a model class by the base model class.
     * The method can be used by LoopBack
@@ -168,7 +161,7 @@ object loopback extends js.Object {
     * @returns {Model} The subclass if found or the base clas
     * @header loopback.getModelByType(modelType
     */
-  def getModelByType(modelType: loopbackLib.loopbackMod.lNs.Model): loopbackLib.loopbackMod.lNs.Model = js.native
+  def getModelByType(modelType: loopbackLib.loopbackMod.Model): loopbackLib.loopbackMod.Model = js.native
   /**
     * Get an in-memory data source. Use one if it already exists
     * @param {string} [name] The name of the data source.

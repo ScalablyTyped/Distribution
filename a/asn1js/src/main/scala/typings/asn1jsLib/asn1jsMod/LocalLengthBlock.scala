@@ -7,25 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "LocalLengthBlock")
 @js.native
-class LocalLengthBlock ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalLengthBlock {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalLengthBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
-  /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
-    */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+class LocalLengthBlock () extends LocalBaseBlock {
+  def this(params: LocalLengthBlockParams) = this()
+  var isIndefiniteForm: scala.Boolean = js.native
+  var length: scala.Double = js.native
+  var longFormUsed: scala.Boolean = js.native
+  def fromBER(inputBuffer: stdLib.ArrayBuffer, inputOffset: scala.Double, inputLength: scala.Double): scala.Unit = js.native
+  def toBER(): stdLib.ArrayBuffer = js.native
+  def toBER(sizeOnly: scala.Boolean): stdLib.ArrayBuffer = js.native
 }
 

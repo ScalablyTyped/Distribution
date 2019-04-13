@@ -15,7 +15,7 @@ trait RadioButtonProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the item will be displayed as disabled.
     * @default false
@@ -24,7 +24,7 @@ trait RadioButtonProps
   /**
     * Label for the radio button.
     */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Name for the input element.
     */
@@ -55,11 +55,11 @@ object RadioButtonProps {
   @scala.inline
   def apply(
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    label: reactLib.reactMod.ReactNode = null,
     name: java.lang.String = null,
     onBlur: js.Function = null,
     onChange: js.Function = null,
@@ -86,7 +86,7 @@ object RadioButtonProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: RadioButtonTheme with reactDashToolboxLib.libRadioBaseMod.RadioTheme = null,
     value: js.Any = null
   ): RadioButtonProps = {

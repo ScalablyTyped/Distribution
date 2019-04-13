@@ -38,7 +38,7 @@ object ioredisLibStrings {
   
   @js.native
   sealed trait all
-    extends ioredisLib.ioredisMod.IORedisNs.NodeRole
+    extends ioredisLib.ioredisMod.NodeRole
   
   @js.native
   sealed trait count extends js.Object
@@ -48,7 +48,7 @@ object ioredisLibStrings {
   
   @js.native
   sealed trait master
-    extends ioredisLib.ioredisMod.IORedisNs.NodeRole
+    extends ioredisLib.ioredisMod.NodeRole
   
   @js.native
   sealed trait `match` extends js.Object
@@ -58,7 +58,7 @@ object ioredisLibStrings {
   
   @js.native
   sealed trait slave
-    extends ioredisLib.ioredisMod.IORedisNs.NodeRole
+    extends ioredisLib.ioredisMod.NodeRole
   
   @js.native
   sealed trait `~` extends js.Object

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("coroutine", "Event")
 @js.native
 class Event ()
-  extends fibjsLib.coroutineMod.coroutineNs.Event
+  extends fibjsLib.Class_Event
 

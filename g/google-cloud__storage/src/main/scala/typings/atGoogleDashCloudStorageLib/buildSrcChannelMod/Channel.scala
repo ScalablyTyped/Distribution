@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 class Channel protected ()
   extends atGoogleDashCloudCommonLib.atGoogleDashCloudCommonMod.ServiceObject[js.Any] {
   def this(storage: atGoogleDashCloudStorageLib.buildSrcStorageMod.Storage, id: java.lang.String, resourceId: java.lang.String) = this()
-  def stop(): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
+  def stop(): js.Promise[requestLib.requestMod.Response] = js.native
   def stop(callback: StopCallback): scala.Unit = js.native
 }
 

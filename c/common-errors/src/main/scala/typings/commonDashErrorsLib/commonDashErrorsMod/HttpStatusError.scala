@@ -22,7 +22,7 @@ class HttpStatusError protected () extends ErrorConstructor {
     * @param message     any message
     */
   def this(status_code: scala.Double) = this()
-  def this(err: Error, req: expressLib.expressMod.eNs.Request) = this()
+  def this(err: Error, req: expressLib.expressMod.Request) = this()
   def this(status_code: scala.Double, message: java.lang.String) = this()
   /**
     * Status code for this error.

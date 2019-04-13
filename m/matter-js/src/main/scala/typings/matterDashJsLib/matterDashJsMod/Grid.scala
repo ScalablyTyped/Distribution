@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Grid")
 @js.native
-class Grid ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Grid
+class Grid () extends js.Object
 
 /* static members */
 @JSImport("matter-js", "Grid")
@@ -19,15 +18,15 @@ object Grid extends js.Object {
     * @method clear
     * @param {grid} grid
     */
-  def clear(grid: matterDashJsLib.matterDashJsMod.MatterNs.Grid): scala.Unit = js.native
+  def clear(grid: matterDashJsLib.matterDashJsMod.Grid): scala.Unit = js.native
   /**
     * Creates a new grid.
     * @method create
     * @param {} options
     * @return {grid} A new grid
     */
-  def create(): matterDashJsLib.matterDashJsMod.MatterNs.Grid = js.native
-  def create(options: matterDashJsLib.matterDashJsMod.MatterNs.IGridDefinition): matterDashJsLib.matterDashJsMod.MatterNs.Grid = js.native
+  def create(): matterDashJsLib.matterDashJsMod.Grid = js.native
+  def create(options: matterDashJsLib.matterDashJsMod.IGridDefinition): matterDashJsLib.matterDashJsMod.Grid = js.native
   /**
     * Updates the grid.
     * @method update
@@ -37,9 +36,9 @@ object Grid extends js.Object {
     * @param {boolean} forceUpdate
     */
   def update(
-    grid: matterDashJsLib.matterDashJsMod.MatterNs.Grid,
-    bodies: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body],
-    engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    grid: matterDashJsLib.matterDashJsMod.Grid,
+    bodies: js.Array[matterDashJsLib.matterDashJsMod.Body],
+    engine: matterDashJsLib.matterDashJsMod.Engine,
     forceUpdate: scala.Boolean
   ): scala.Unit = js.native
 }

@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, 'classes' | 'checkedIcon' | 'color' | 'icon'> ]: @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps[P]} */ trait SwitchProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SwitchClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default
   ] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object SwitchProps {
   @scala.inline
   def apply(
-    checkedIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    checkedIcon: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SwitchClassKey]] = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    icon: reactLib.reactMod.ReactNode = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): SwitchProps = {
     val __obj = js.Dynamic.literal()
     if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon.asInstanceOf[js.Any])

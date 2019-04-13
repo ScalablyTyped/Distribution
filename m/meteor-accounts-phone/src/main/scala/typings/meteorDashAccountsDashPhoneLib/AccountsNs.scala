@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Accounts")
 @js.native
 object AccountsNs extends js.Object {
-  var _options: meteorDashAccountsDashPhoneLib.Anon_AdminPhoneNumbers = js.native
   def createUserWithPhone(options: js.Object): scala.Unit = js.native
   def createUserWithPhone(options: js.Object, callback: js.Function): scala.Unit = js.native
   def isPhoneVerified(): scala.Boolean = js.native
@@ -25,5 +24,17 @@ object AccountsNs extends js.Object {
   ): scala.Unit = js.native
   def verifyPhone(phone: java.lang.String, code: java.lang.String, newPassword: js.Function): scala.Unit = js.native
   def verifyPhone(phone: java.lang.String, code: java.lang.String, newPassword: js.Function, callback: js.Function): scala.Unit = js.native
+  @js.native
+  object _options extends js.Object {
+    var adminPhoneNumbers: js.UndefOr[js.Array[java.lang.String]] = js.native
+    var forbidClientAccountCreation: js.UndefOr[scala.Boolean] = js.native
+    var phoneVerificationMasterCode: js.UndefOr[js.Array[java.lang.String]] = js.native
+    var sendPhoneVerificationCodeOnCreation: js.UndefOr[scala.Boolean] = js.native
+    var verificationCodeLength: js.UndefOr[scala.Double] = js.native
+    var verificationMaxRetries: js.UndefOr[scala.Double] = js.native
+    var verificationRetriesWaitTime: js.UndefOr[scala.Double] = js.native
+    var verificationWaitTime: js.UndefOr[scala.Double] = js.native
+  }
+  
 }
 

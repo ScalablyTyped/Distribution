@@ -13,7 +13,7 @@ class Collection ()
   def calculateSizeAndPositionData(): scala.Unit = js.native
   def cellRenderers(
     params: reactDashVirtualizedLib.Anon_IsScrolling with reactDashVirtualizedLib.reactDashVirtualizedMod.SizeInfo
-  ): js.Array[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  ): js.Array[reactLib.reactMod.ReactNode] = js.native
   /**
     * Returns the most recently rendered set of cell indices.
     */

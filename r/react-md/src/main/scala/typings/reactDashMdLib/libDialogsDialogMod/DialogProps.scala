@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait DialogProps
   extends reactDashMdLib.libMod.Props {
   var actions: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps | (js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps
+    reactLib.reactMod.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps | (js.Array[
+      reactLib.reactMod.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps
     ])
   ] = js.undefined
   var additionalFocusKeys: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -18,24 +18,24 @@ trait DialogProps
   var `aria-labelledby`: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var autopadContent: js.UndefOr[scala.Boolean] = js.undefined
   var autosizeContent: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var containFocus: js.UndefOr[scala.Boolean] = js.undefined
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
-  var contentComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var contentComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var contentProps: js.UndefOr[js.Object] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var focusOnMount: js.UndefOr[scala.Boolean] = js.undefined
   var footerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var footerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var footerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var fullPage: js.UndefOr[scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var id: reactDashMdLib.libMod.IdPropType
   var initialFocus: js.UndefOr[java.lang.String] = js.undefined
   var paddedContent: js.UndefOr[scala.Boolean] = js.undefined
   var stackedActions: js.UndefOr[scala.Boolean] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var titleClassName: js.UndefOr[java.lang.String] = js.undefined
-  var titleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var titleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
@@ -43,8 +43,8 @@ object DialogProps {
   @scala.inline
   def apply(
     id: reactDashMdLib.libMod.IdPropType,
-    actions: reactLib.reactMod.ReactNs.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps | (js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps
+    actions: reactLib.reactMod.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps | (js.Array[
+      reactLib.reactMod.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps
     ]) = null,
     additionalFocusKeys: js.Array[scala.Double] = null,
     `aria-describedby`: reactDashMdLib.libMod.IdPropType = null,
@@ -52,49 +52,49 @@ object DialogProps {
     `aria-labelledby`: reactDashMdLib.libMod.IdPropType = null,
     autopadContent: js.UndefOr[scala.Boolean] = js.undefined,
     autosizeContent: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     containFocus: js.UndefOr[scala.Boolean] = js.undefined,
     contentClassName: java.lang.String = null,
-    contentComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    contentComponent: reactLib.reactMod.ReactType[_] = null,
     contentProps: js.Object = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
     focusOnMount: js.UndefOr[scala.Boolean] = js.undefined,
     footerClassName: java.lang.String = null,
-    footerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    footerStyle: reactLib.reactMod.CSSProperties = null,
     fullPage: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Double | java.lang.String = null,
     initialFocus: java.lang.String = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     paddedContent: js.UndefOr[scala.Boolean] = js.undefined,
     stackedActions: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     titleClassName: java.lang.String = null,
-    titleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    titleStyle: reactLib.reactMod.CSSProperties = null,
     width: scala.Double | java.lang.String = null
   ): DialogProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])

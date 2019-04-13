@@ -9,7 +9,7 @@ package object angularDashFileDashUploadMod {
   type AsyncFilter = js.Function3[
     /* item */ stdLib.File | FileLikeObject, 
     /* options */ js.UndefOr[js.Object], 
-    /* deferred */ angularLib.angularMod.angularNs.IDeferred[js.Any], 
+    /* deferred */ angularLib.angularMod.IDeferred[js.Any], 
     scala.Unit
   ]
   type SyncFilter = js.Function2[

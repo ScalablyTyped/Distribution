@@ -20,6 +20,7 @@ package object wxNs {
   // #endregion
   // #region Compontent组件
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
+  type DefaultMethods[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (stdLib.Record[java.lang.String, js.Any])
   type FormEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.form, weixinDashAppLib.Anon_Name]
   /**
@@ -27,6 +28,10 @@ package object wxNs {
   	 * @version 1.5.0
   	 */
   type InputEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.input, weixinDashAppLib.Anon_Cursor]
+  /**
+  	 * https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/observer.html
+  	 */
+  type ObserversDefs[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type Prop[T] = js.Function0[T] | weixinDashAppLib.Anon_Args[T]
   type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
   /**
@@ -46,6 +51,10 @@ package object wxNs {
   {[ K in keyof T ]: weixin-app.wx.PropValidator<T[K]>}
     */ weixinDashAppLib.weixinDashAppLibStrings.RecordPropsDefinition with T
   type RemoveSavedFileOptions = GetSavedFileInfoOptions
+  // #endregion
+  // #region 网络API列表
+  // 发起请求
+  type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   // #endregion
   // #region App里的onLaunch、onShow回调参数
   /* Rewritten from type alias, can be one of: 

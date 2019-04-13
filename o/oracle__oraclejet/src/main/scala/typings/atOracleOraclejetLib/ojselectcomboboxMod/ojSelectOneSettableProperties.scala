@@ -36,7 +36,7 @@ object ojSelectOneSettableProperties {
     help: atOracleOraclejetLib.Anon_Instruction,
     helpHints: atOracleOraclejetLib.Anon_Definition,
     labelHint: java.lang.String,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     minimumResultsForSearch: scala.Double,
     optionsKeys: atOracleOraclejetLib.Anon_ChildKeysChildrenLabelValue,
     pickerAttributes: atOracleOraclejetLib.Anon_Class,

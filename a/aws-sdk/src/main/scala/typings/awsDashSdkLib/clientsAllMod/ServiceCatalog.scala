@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ServiceCatalog ()
-  extends awsDashSdkLib.clientsServicecatalogMod.namespaced {
-  def this(options: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsServicecatalogMod.^ {
+  def this(options: awsDashSdkLib.clientsServicecatalogMod.ClientConfiguration) = this()
 }
 

@@ -16,9 +16,9 @@ class Rotate90DegreesCcwRounded protected ()
 @JSImport("@material-ui/icons", "Rotate90DegreesCcwRounded")
 @js.native
 class Rotate90DegreesCcwRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

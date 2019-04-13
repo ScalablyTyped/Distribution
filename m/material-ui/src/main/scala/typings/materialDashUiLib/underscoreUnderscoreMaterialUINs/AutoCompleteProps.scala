@@ -9,9 +9,9 @@ trait AutoCompleteProps[DataItem] extends TextFieldProps {
   var anchorOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
   var animated: js.UndefOr[scala.Boolean] = js.undefined
   var animation: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[
+    reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.undefined
   var dataSource: js.Array[DataItem]
@@ -25,11 +25,11 @@ trait AutoCompleteProps[DataItem] extends TextFieldProps {
       scala.Boolean
     ]
   ] = js.undefined
-  var listStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var listStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var maxSearchResults: js.UndefOr[scala.Double] = js.undefined
   var menuCloseDelay: js.UndefOr[scala.Double] = js.undefined
   var menuProps: js.UndefOr[js.Any] = js.undefined
-  var menuStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var menuStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var onNewRequest: js.UndefOr[js.Function2[/* chosenRequest */ DataItem, /* index */ scala.Double, scala.Unit]] = js.undefined
   var onUpdateInput: js.UndefOr[
     js.Function2[/* searchText */ java.lang.String, /* dataSource */ js.Array[DataItem], scala.Unit]
@@ -39,7 +39,7 @@ trait AutoCompleteProps[DataItem] extends TextFieldProps {
   var popoverProps: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverProps] = js.undefined
   var searchText: js.UndefOr[java.lang.String] = js.undefined
   var targetOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
-  var textFieldStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var textFieldStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object AutoCompleteProps {
@@ -48,9 +48,9 @@ object AutoCompleteProps {
     dataSource: js.Array[DataItem],
     anchorOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
-    animation: reactLib.reactMod.ReactNs.ComponentClass[
+    animation: reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ] = null,
     autoComplete: java.lang.String = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -59,36 +59,36 @@ object AutoCompleteProps {
     defaultValue: java.lang.String | scala.Double = null,
     disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    errorStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    errorText: reactLib.reactMod.ReactNs.ReactNode = null,
+    errorStyle: reactLib.reactMod.CSSProperties = null,
+    errorText: reactLib.reactMod.ReactNode = null,
     filter: (/* searchText */ java.lang.String, /* key */ java.lang.String, /* item */ DataItem) => scala.Boolean = null,
     floatingLabelFixed: js.UndefOr[scala.Boolean] = js.undefined,
-    floatingLabelFocusStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    floatingLabelShrinkStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    floatingLabelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    floatingLabelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    floatingLabelFocusStyle: reactLib.reactMod.CSSProperties = null,
+    floatingLabelShrinkStyle: reactLib.reactMod.CSSProperties = null,
+    floatingLabelStyle: reactLib.reactMod.CSSProperties = null,
+    floatingLabelText: reactLib.reactMod.ReactNode = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    hintStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    hintText: reactLib.reactMod.ReactNs.ReactNode = null,
+    hintStyle: reactLib.reactMod.CSSProperties = null,
+    hintText: reactLib.reactMod.ReactNode = null,
     id: java.lang.String = null,
-    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inputStyle: reactLib.reactMod.CSSProperties = null,
+    listStyle: reactLib.reactMod.CSSProperties = null,
     max: scala.Int | scala.Double = null,
     maxSearchResults: scala.Int | scala.Double = null,
     maxlength: java.lang.String = null,
     menuCloseDelay: scala.Int | scala.Double = null,
     menuProps: js.Any = null,
-    menuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    menuStyle: reactLib.reactMod.CSSProperties = null,
     min: scala.Int | scala.Double = null,
     minlength: java.lang.String = null,
     multiLine: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: (/* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], /* newValue */ java.lang.String) => scala.Unit = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyPress: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onChange: (/* e */ reactLib.reactMod.FormEvent[js.Object], /* newValue */ java.lang.String) => scala.Unit = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
     onNewRequest: (/* chosenRequest */ DataItem, /* index */ scala.Double) => scala.Unit = null,
     onUpdateInput: (/* searchText */ java.lang.String, /* dataSource */ js.Array[DataItem]) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
@@ -100,16 +100,16 @@ object AutoCompleteProps {
     rowsMax: scala.Int | scala.Double = null,
     searchText: java.lang.String = null,
     step: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
-    textFieldStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    textareaStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    textFieldStyle: reactLib.reactMod.CSSProperties = null,
+    textareaStyle: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null,
     `type`: java.lang.String = null,
-    underlineDisabledStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    underlineFocusStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlineDisabledStyle: reactLib.reactMod.CSSProperties = null,
+    underlineFocusStyle: reactLib.reactMod.CSSProperties = null,
     underlineShow: js.UndefOr[scala.Boolean] = js.undefined,
-    underlineStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlineStyle: reactLib.reactMod.CSSProperties = null,
     value: java.lang.String | scala.Double = null
   ): AutoCompleteProps[DataItem] = {
     val __obj = js.Dynamic.literal(dataSource = dataSource)

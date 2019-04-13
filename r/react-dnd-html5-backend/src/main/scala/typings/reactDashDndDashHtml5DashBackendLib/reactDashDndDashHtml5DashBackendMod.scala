@@ -13,9 +13,9 @@ object reactDashDndDashHtml5DashBackendMod extends js.Object {
   @JSName("NativeTypes")
   @js.native
   object NativeTypesNs extends js.Object {
-    val FILE: /* __NATIVE_FILE__ */ java.lang.String = js.native
-    val TEXT: /* __NATIVE_TEXT__ */ java.lang.String = js.native
-    val URL: /* __NATIVE_URL__ */ java.lang.String = js.native
+    val FILE: reactDashDndDashHtml5DashBackendLib.reactDashDndDashHtml5DashBackendLibStrings.__NATIVE_FILE__ = js.native
+    val TEXT: reactDashDndDashHtml5DashBackendLib.reactDashDndDashHtml5DashBackendLibStrings.__NATIVE_TEXT__ = js.native
+    val URL: reactDashDndDashHtml5DashBackendLib.reactDashDndDashHtml5DashBackendLibStrings.__NATIVE_URL__ = js.native
   }
   
 }

@@ -18,15 +18,15 @@ trait RewritingStream
   /**
     * Emits serialized comment token into the output stream.
     */
-  def emitComment(text: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.CommentToken): scala.Unit = js.native
+  def emitComment(text: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.CommentToken): scala.Unit = js.native
   /**
     * Emits serialized document type token into the output stream.
     */
-  def emitDoctype(text: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.DoctypeToken): scala.Unit = js.native
+  def emitDoctype(text: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.DoctypeToken): scala.Unit = js.native
   /**
     * Emits serialized end tag token into the output stream.
     */
-  def emitEndTag(endTag: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.EndTagToken): scala.Unit = js.native
+  def emitEndTag(endTag: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.EndTagToken): scala.Unit = js.native
   /**
     * Emits raw HTML string into the output stream.
     */
@@ -34,11 +34,11 @@ trait RewritingStream
   /**
     * Emits serialized start tag token into the output stream.
     */
-  def emitStartTag(startTag: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.StartTagToken): scala.Unit = js.native
+  def emitStartTag(startTag: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.StartTagToken): scala.Unit = js.native
   /**
     * Emits serialized text token into the output stream.
     */
-  def emitText(text: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.TextToken): scala.Unit = js.native
+  def emitText(text: parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.TextToken): scala.Unit = js.native
   /**
     * Raised when rewriter encounters a comment.
     */
@@ -46,7 +46,7 @@ trait RewritingStream
   def on_comment(
     `type`: parse5DashHtmlDashRewritingDashStreamLib.parse5DashHtmlDashRewritingDashStreamLibStrings.comment,
     callback: js.Function2[
-      /* comment */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.CommentToken, 
+      /* comment */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.CommentToken, 
       /* rawHtml */ java.lang.String, 
       scala.Unit
     ]
@@ -58,7 +58,7 @@ trait RewritingStream
   def on_doctype(
     `type`: parse5DashHtmlDashRewritingDashStreamLib.parse5DashHtmlDashRewritingDashStreamLibStrings.doctype,
     callback: js.Function2[
-      /* doctype */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.DoctypeToken, 
+      /* doctype */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.DoctypeToken, 
       /* rawHtml */ java.lang.String, 
       scala.Unit
     ]
@@ -70,7 +70,7 @@ trait RewritingStream
   def on_endTag(
     `type`: parse5DashHtmlDashRewritingDashStreamLib.parse5DashHtmlDashRewritingDashStreamLibStrings.endTag,
     callback: js.Function2[
-      /* endTag */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.EndTagToken, 
+      /* endTag */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.EndTagToken, 
       /* rawHtml */ java.lang.String, 
       scala.Unit
     ]
@@ -82,7 +82,7 @@ trait RewritingStream
   def on_startTag(
     `type`: parse5DashHtmlDashRewritingDashStreamLib.parse5DashHtmlDashRewritingDashStreamLibStrings.startTag,
     callback: js.Function2[
-      /* startTag */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.StartTagToken, 
+      /* startTag */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.StartTagToken, 
       /* rawHtml */ java.lang.String, 
       scala.Unit
     ]
@@ -94,7 +94,7 @@ trait RewritingStream
   def on_text(
     `type`: parse5DashHtmlDashRewritingDashStreamLib.parse5DashHtmlDashRewritingDashStreamLibStrings.text,
     callback: js.Function2[
-      /* text */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.TextToken, 
+      /* text */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.TextToken, 
       /* rawHtml */ java.lang.String, 
       scala.Unit
     ]

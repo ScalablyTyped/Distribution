@@ -1,0 +1,31 @@
+package typings
+package awsDashSdkLib.clientsEcsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait UpdateContainerInstancesStateRequest extends js.Object {
+  /**
+    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instance to update. If you do not specify a cluster, the default cluster is assumed.
+    */
+  var cluster: js.UndefOr[String] = js.undefined
+  /**
+    * A list of container instance IDs or full ARN entries.
+    */
+  var containerInstances: StringList
+  /**
+    * The container instance state with which to update the container instance.
+    */
+  var status: ContainerInstanceStatus
+}
+
+object UpdateContainerInstancesStateRequest {
+  @scala.inline
+  def apply(containerInstances: StringList, status: ContainerInstanceStatus, cluster: String = null): UpdateContainerInstancesStateRequest = {
+    val __obj = js.Dynamic.literal(containerInstances = containerInstances, status = status.asInstanceOf[js.Any])
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
+    __obj.asInstanceOf[UpdateContainerInstancesStateRequest]
+  }
+}
+

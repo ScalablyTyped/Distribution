@@ -60,7 +60,7 @@ trait PropsType extends js.Object {
   var renderHeader: js.UndefOr[
     js.Function1[
       /* prop */ rmcDashCalendarLib.libCalendarHeaderMod.PropsType, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /** 替换快捷选择栏，需要设置showShortcut: true */
@@ -71,7 +71,7 @@ trait PropsType extends js.Object {
         /* endDate */ js.UndefOr[stdLib.Date], 
         scala.Unit
       ], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /** 行大小，default: normal */
@@ -80,7 +80,7 @@ trait PropsType extends js.Object {
   ] = js.undefined
   /** 快捷日期选择， default: false */
   var showShortcut: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var timePickerPickerPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var timePickerPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   /** header title, default: {locale.title} */
@@ -113,15 +113,15 @@ object PropsType {
     onSelectHasDisableDate: /* date */ js.Array[stdLib.Date] => scala.Unit = null,
     pickTime: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
-    renderHeader: /* prop */ rmcDashCalendarLib.libCalendarHeaderMod.PropsType => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderHeader: /* prop */ rmcDashCalendarLib.libCalendarHeaderMod.PropsType => reactLib.reactMod.ReactNode = null,
     renderShortcut: /* select */ js.Function2[
       /* startDate */ js.UndefOr[stdLib.Date], 
       /* endDate */ js.UndefOr[stdLib.Date], 
       scala.Unit
-    ] => reactLib.reactMod.ReactNs.ReactNode = null,
+    ] => reactLib.reactMod.ReactNode = null,
     rowSize: rmcDashCalendarLib.rmcDashCalendarLibStrings.normal | rmcDashCalendarLib.rmcDashCalendarLibStrings.xl = null,
     showShortcut: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     timePickerPickerPrefixCls: java.lang.String = null,
     timePickerPrefixCls: java.lang.String = null,
     title: java.lang.String = null,

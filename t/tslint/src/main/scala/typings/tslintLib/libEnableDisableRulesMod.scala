@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libEnableDisableRulesMod extends js.Object {
   val ENABLE_DISABLE_REGEX: stdLib.RegExp = js.native
   def removeDisabledFailures(
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
+    sourceFile: typescriptLib.typescriptMod.SourceFile,
     failures: js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure]
   ): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
 }

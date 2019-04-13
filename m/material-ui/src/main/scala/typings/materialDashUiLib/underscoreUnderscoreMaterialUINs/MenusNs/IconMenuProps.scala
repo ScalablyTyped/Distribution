@@ -10,9 +10,9 @@ trait IconMenuProps extends js.Object {
   var anchorOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
   var animated: js.UndefOr[scala.Boolean] = js.undefined
   var animation: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[
+    reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.undefined
   // Other properties from <Menu/>
@@ -21,49 +21,46 @@ trait IconMenuProps extends js.Object {
   var clickCloseDelay: js.UndefOr[scala.Double] = js.undefined
   var desktop: js.UndefOr[scala.Boolean] = js.undefined
   var disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var iconButtonElement: reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.underscoreUnderscoreMaterialUINs.IconButton]
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var iconButtonElement: reactLib.reactMod.ReactElement[materialDashUiLib.underscoreUnderscoreMaterialUINs.IconButton]
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var initiallyKeyboardFocused: js.UndefOr[scala.Boolean] = js.undefined
-  var listStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var listStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var maxHeight: js.UndefOr[scala.Double] = js.undefined
-  var menuStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var menuStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], 
       /* itemValue */ js.Any | js.Array[_], 
       scala.Unit
     ]
   ] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], scala.Unit]
   ] = js.undefined
   var onItemClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], 
       /* item */ MenuItem, 
       scala.Unit
     ]
   ] = js.undefined
   var onKeyboardFocus: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
+      /* e */ reactLib.reactMod.FocusEvent[js.Object], 
       /* isKeyboardFocused */ scala.Boolean, 
       scala.Unit
     ]
   ] = js.undefined
-  var onMouseDown: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onMouseUp: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseDown: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseUp: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var onRequestChange: js.UndefOr[
     js.Function2[/* opening */ scala.Boolean, /* reason */ java.lang.String, scala.Unit]
   ] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var targetOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
   var useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[js.Any | js.Array[_]] = js.undefined
@@ -72,35 +69,35 @@ trait IconMenuProps extends js.Object {
 object IconMenuProps {
   @scala.inline
   def apply(
-    iconButtonElement: reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.underscoreUnderscoreMaterialUINs.IconButton],
+    iconButtonElement: reactLib.reactMod.ReactElement[materialDashUiLib.underscoreUnderscoreMaterialUINs.IconButton],
     anchorOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
-    animation: reactLib.reactMod.ReactNs.ComponentClass[
+    animation: reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ] = null,
     autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     clickCloseDelay: scala.Int | scala.Double = null,
     desktop: js.UndefOr[scala.Boolean] = js.undefined,
     disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
     initiallyKeyboardFocused: js.UndefOr[scala.Boolean] = js.undefined,
-    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    listStyle: reactLib.reactMod.CSSProperties = null,
     maxHeight: scala.Int | scala.Double = null,
-    menuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    menuStyle: reactLib.reactMod.CSSProperties = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* itemValue */ js.Any | js.Array[_]) => scala.Unit = null,
-    onClick: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event] => scala.Unit = null,
-    onItemClick: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* item */ MenuItem) => scala.Unit = null,
-    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
-    onMouseDown: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseUp: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    onChange: (/* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], /* itemValue */ js.Any | js.Array[_]) => scala.Unit = null,
+    onClick: /* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event] => scala.Unit = null,
+    onItemClick: (/* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], /* item */ MenuItem) => scala.Unit = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
+    onMouseDown: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseUp: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     onRequestChange: (/* opening */ scala.Boolean, /* reason */ java.lang.String) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined,
     value: js.Any | js.Array[_] = null

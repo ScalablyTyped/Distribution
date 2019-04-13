@@ -19,7 +19,7 @@ object LineProps {
     strokeColor: java.lang.String = null,
     strokeLinecap: rcDashProgressLib.rcDashProgressLibStrings.butt | rcDashProgressLib.rcDashProgressLibStrings.square | rcDashProgressLib.rcDashProgressLibStrings.round = null,
     strokeWidth: scala.Double | java.lang.String = null,
-    style: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     trailColor: java.lang.String = null,
     trailWidth: scala.Double | java.lang.String = null
   ): LineProps = {

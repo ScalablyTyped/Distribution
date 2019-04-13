@@ -11,7 +11,7 @@ trait DrawerProps extends js.Object {
   var position: js.UndefOr[
     antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.left | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.right | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.top | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.bottom
   ] = js.undefined
-  var sidebar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var sidebar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object DrawerProps {
@@ -20,7 +20,7 @@ object DrawerProps {
     onOpenChange: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     position: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.left | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.right | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.top | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.bottom = null,
-    sidebar: reactLib.reactMod.ReactNs.ReactNode = null
+    sidebar: reactLib.reactMod.ReactNode = null
   ): DrawerProps = {
     val __obj = js.Dynamic.literal()
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))

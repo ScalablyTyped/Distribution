@@ -23,3 +23,8 @@ class VaultServerDataPushOperations ()
   override def SetServerDataPushSink(ServerDataPushSink: mfilesLib.IServerDataPushSink): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultServerDataPushOperations")
+@js.native
+object VaultServerDataPushOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultServerDataPushOperations]
+

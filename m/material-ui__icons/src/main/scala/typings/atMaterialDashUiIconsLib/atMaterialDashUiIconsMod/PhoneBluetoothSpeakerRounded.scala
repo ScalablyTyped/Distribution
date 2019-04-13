@@ -16,9 +16,9 @@ class PhoneBluetoothSpeakerRounded protected ()
 @JSImport("@material-ui/icons", "PhoneBluetoothSpeakerRounded")
 @js.native
 class PhoneBluetoothSpeakerRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

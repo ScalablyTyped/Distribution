@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libObjectTypeComposerMod {
+  type ArgsMap = org.scalablytyped.runtime.StringDictionary[js.Any]
   type ComposeArgumentConfig = ComposeArgumentConfigAsObject | ComposeArgumentType | (js.Function0[ComposeArgumentConfigAsObject | ComposeArgumentType])
   type ComposeArgumentType = graphqlLib.typeDefinitionMod.GraphQLInputType | graphqlDashComposeLib.libTypeMapperMod.TypeAsString | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[js.Any] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[js.Any] | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[js.Any] | (js.Array[
     graphqlLib.typeDefinitionMod.GraphQLInputType | graphqlDashComposeLib.libTypeMapperMod.TypeAsString | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[js.Any] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[js.Any] | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[js.Any]
@@ -37,6 +38,9 @@ package object libObjectTypeComposerMod {
   type GraphQLObjectTypeExtended[TSource, TContext] = (graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) with (graphqlDashComposeLib.Anon_Description[TContext, TSource])
   type GraphqlFieldConfigExtended[TSource, TContext] = (graphqlLib.typeDefinitionMod.GraphQLFieldConfig[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]) with graphqlDashComposeLib.Anon_Projection
   type ObjectTypeComposeDefinition[TSource, TContext] = graphqlDashComposeLib.libTypeMapperMod.TypeAsString | (ComposeObjectTypeConfig[TSource, TContext]) | (graphqlLib.graphqlMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]])
+  type RelationArgsMapper[TSource, TContext, TArgs] = org.scalablytyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[js.Any] | (RelationArgsMapperFn[TSource, TContext, TArgs]) | scala.Null | scala.Unit | java.lang.String | scala.Double | js.Array[js.Any]
+  ]
   type RelationArgsMapperFn[TSource, TContext, TArgs] = js.Function4[
     /* source */ TSource, 
     /* args */ TArgs, 
@@ -46,4 +50,7 @@ package object libObjectTypeComposerMod {
   ]
   type RelationOpts[TRelationSource, TSource, TContext, TArgs] = (RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs]) | (RelationOptsWithFieldConfig[TSource, TContext, TArgs])
   type RelationOptsWithFieldConfig[TSource, TContext, TArgs] = (ComposeFieldConfigAsObject[TSource, TContext, TArgs]) with (graphqlDashComposeLib.Anon_Resolve[TSource, TContext, TArgs])
+  type RelationThunkMap[TSource, TContext] = org.scalablytyped.runtime.StringDictionary[
+    graphqlDashComposeLib.libUtilsDefinitionsMod.Thunk[RelationOpts[TSource, TContext, ArgsMap, ArgsMap]]
+  ]
 }

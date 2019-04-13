@@ -9,30 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(obj: js.Any): java.lang.String = js.native
+  def apply(obj: js.Any, serializer: EntryProcessor): java.lang.String = js.native
+  def apply(obj: js.Any, serializer: EntryProcessor, indent: java.lang.String | scala.Double): java.lang.String = js.native
   def apply(
     obj: js.Any,
-    serializer: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor
-  ): java.lang.String = js.native
-  def apply(
-    obj: js.Any,
-    serializer: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor,
-    indent: java.lang.String | scala.Double
-  ): java.lang.String = js.native
-  def apply(
-    obj: js.Any,
-    serializer: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor,
+    serializer: EntryProcessor,
     indent: java.lang.String | scala.Double,
-    decycler: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor
+    decycler: EntryProcessor
   ): java.lang.String = js.native
-  def getSerialize(): jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor = js.native
-  def getSerialize(serializer: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor): jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor = js.native
-  def getSerialize(
-    serializer: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor,
-    decycler: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor
-  ): jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor = js.native
-  def getSerialize(
-    serializer: scala.Null,
-    decycler: jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor
-  ): jsonDashStringifyDashSafeLib.jsonDashStringifyDashSafeMod.stringifyNs.EntryProcessor = js.native
+  def getSerialize(): EntryProcessor = js.native
+  def getSerialize(serializer: EntryProcessor): EntryProcessor = js.native
+  def getSerialize(serializer: EntryProcessor, decycler: EntryProcessor): EntryProcessor = js.native
+  def getSerialize(serializer: scala.Null, decycler: EntryProcessor): EntryProcessor = js.native
 }
 

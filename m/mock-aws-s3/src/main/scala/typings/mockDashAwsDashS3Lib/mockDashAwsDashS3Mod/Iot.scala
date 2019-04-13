@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Iot ()
   extends awsDashSdkLib.awsDashSdkMod.Iot {
-  def this(options: awsDashSdkLib.clientsIotMod.IotNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsIotMod.ClientConfiguration) = this()
 }
 

@@ -17,10 +17,6 @@ object ^ extends js.Object {
     * @param outputs An array of one or more output objects.
     * @returns A (hex string) P2PKH transaction output script.
     */
-  def apply(
-    outputs: js.Array[
-      buildDashOutputDashScriptLib.buildDashOutputDashScriptMod.buildOutputScriptNs.Output
-    ]
-  ): java.lang.String = js.native
+  def apply(outputs: js.Array[Output]): java.lang.String = js.native
 }
 

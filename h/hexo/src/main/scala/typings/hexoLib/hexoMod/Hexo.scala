@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Hexo
-  extends nodeLib.eventsMod.namespaced {
+  extends nodeLib.eventsMod.^ {
   val base_dir: java.lang.String = js.native
   /**
     * Site settings in `_config.yml`
@@ -20,29 +20,29 @@ trait Hexo
     * Local variables are used for template rendering, which is the `site` variable in templates.
     * https://hexo.io/api/locals
     */
-  val locals: hexoLib.hexoMod.HexoNs.Locals = js.native
+  val locals: Locals = js.native
   /**
     * Logger object
     * https://www.npmjs.com/package/bunyan
     */
-  val log: bunyanLib.bunyanMod.namespaced = js.native
+  val log: bunyanLib.bunyanMod.^ = js.native
   val plugin_dir: java.lang.String = js.native
-  val post: hexoLib.hexoMod.HexoNs.Post = js.native
+  val post: Post = js.native
   /**
     * Public folder. Where the static site will be generated
     */
   val public_dir: java.lang.String = js.native
-  val render: hexoLib.hexoMod.HexoNs.Render = js.native
-  val route: hexoLib.hexoMod.HexoNs.Router = js.native
-  val scaffold: hexoLib.hexoMod.HexoNs.Scaffold = js.native
+  val render: Render = js.native
+  val route: Router = js.native
+  val scaffold: Scaffold = js.native
   val scaffold_dir: java.lang.String = js.native
   val script_dir: java.lang.String = js.native
-  val source: hexoLib.hexoMod.HexoNs.Box = js.native
+  val source: Box = js.native
   /**
     * Source folder. Where your content is stored
     */
   val source_dir: java.lang.String = js.native
-  val theme: hexoLib.hexoMod.HexoNs.Theme = js.native
+  val theme: Theme = js.native
   val theme_dir: java.lang.String = js.native
   val theme_script_dir: java.lang.String = js.native
   /**
@@ -122,7 +122,10 @@ trait Hexo
     * Emitted after a new post has been created. This event returns the post data:
     */
   @JSName("on")
-  def on_new(ev: hexoLib.hexoLibStrings.`new`, fn: js.Function1[/* post */ hexoLib.Anon_Content, scala.Unit]): this.type = js.native
+  def on_new(
+    ev: hexoLib.hexoLibStrings.`new`,
+    fn: js.Function1[/* post */ hexoLib.Anon_ContentPath, scala.Unit]
+  ): this.type = js.native
   /**
     * Emitted after initialization finishes.
     */

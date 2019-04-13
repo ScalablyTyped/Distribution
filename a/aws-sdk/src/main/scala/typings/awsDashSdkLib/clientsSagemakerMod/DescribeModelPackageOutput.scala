@@ -1,0 +1,74 @@
+package typings
+package awsDashSdkLib.clientsSagemakerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DescribeModelPackageOutput extends js.Object {
+  /**
+    * Whether the model package is certified for listing on AWS Marketplace.
+    */
+  var CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined
+  /**
+    * A timestamp specifying when the model package was created.
+    */
+  var CreationTime: awsDashSdkLib.clientsSagemakerMod.CreationTime
+  /**
+    * Details about inference jobs that can be run with models based on this model package.
+    */
+  var InferenceSpecification: js.UndefOr[InferenceSpecification] = js.undefined
+  /**
+    * The Amazon Resource Name (ARN) of the model package.
+    */
+  var ModelPackageArn: awsDashSdkLib.clientsSagemakerMod.ModelPackageArn
+  /**
+    * A brief summary of the model package.
+    */
+  var ModelPackageDescription: js.UndefOr[EntityDescription] = js.undefined
+  /**
+    * The name of the model package being described.
+    */
+  var ModelPackageName: EntityName
+  /**
+    * The current status of the model package.
+    */
+  var ModelPackageStatus: awsDashSdkLib.clientsSagemakerMod.ModelPackageStatus
+  /**
+    * Details about the current status of the model package.
+    */
+  var ModelPackageStatusDetails: awsDashSdkLib.clientsSagemakerMod.ModelPackageStatusDetails
+  /**
+    * Details about the algorithm that was used to create the model package.
+    */
+  var SourceAlgorithmSpecification: js.UndefOr[SourceAlgorithmSpecification] = js.undefined
+  /**
+    * Configurations for one or more transform jobs that Amazon SageMaker runs to test the model package.
+    */
+  var ValidationSpecification: js.UndefOr[ModelPackageValidationSpecification] = js.undefined
+}
+
+object DescribeModelPackageOutput {
+  @scala.inline
+  def apply(
+    CreationTime: CreationTime,
+    ModelPackageArn: ModelPackageArn,
+    ModelPackageName: EntityName,
+    ModelPackageStatus: ModelPackageStatus,
+    ModelPackageStatusDetails: ModelPackageStatusDetails,
+    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
+    InferenceSpecification: InferenceSpecification = null,
+    ModelPackageDescription: EntityDescription = null,
+    SourceAlgorithmSpecification: SourceAlgorithmSpecification = null,
+    ValidationSpecification: ModelPackageValidationSpecification = null
+  ): DescribeModelPackageOutput = {
+    val __obj = js.Dynamic.literal(CreationTime = CreationTime, ModelPackageArn = ModelPackageArn, ModelPackageName = ModelPackageName, ModelPackageStatus = ModelPackageStatus.asInstanceOf[js.Any], ModelPackageStatusDetails = ModelPackageStatusDetails)
+    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace)
+    if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification)
+    if (ModelPackageDescription != null) __obj.updateDynamic("ModelPackageDescription")(ModelPackageDescription)
+    if (SourceAlgorithmSpecification != null) __obj.updateDynamic("SourceAlgorithmSpecification")(SourceAlgorithmSpecification)
+    if (ValidationSpecification != null) __obj.updateDynamic("ValidationSpecification")(ValidationSpecification)
+    __obj.asInstanceOf[DescribeModelPackageOutput]
+  }
+}
+

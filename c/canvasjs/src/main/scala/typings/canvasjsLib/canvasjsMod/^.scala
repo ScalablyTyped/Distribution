@@ -20,7 +20,7 @@ object ^ extends js.Object {
     * @param culture the name of the culture
     * @param info information used by this culture
     */
-  def addCultureInfo(culture: java.lang.String, info: canvasjsLib.canvasjsMod.CanvasJSNs.CultureInfo): scala.Unit = js.native
+  def addCultureInfo(culture: java.lang.String, info: CultureInfo): scala.Unit = js.native
   def formatDate(date: scala.Double): scala.Unit = js.native
   def formatDate(date: scala.Double, formatString: java.lang.String): scala.Unit = js.native
   def formatDate(date: scala.Double, formatString: java.lang.String, culture: java.lang.String): scala.Unit = js.native

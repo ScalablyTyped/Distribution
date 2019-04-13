@@ -27,7 +27,7 @@ object modelNs extends js.Object {
     protected def this(children: stdLib.Iterable[Node]) = this()
     val childCount: scala.Double = js.native
     val isEmpty: scala.Boolean = js.native
-    @JSName(org.scalablytyped.runtime.Symbol.iterator)
+    @JSName(scala.scalajs.js.Symbol.iterator)
     var iterator: js.Function0[stdLib.Iterator[Node]] = js.native
     val markers: stdLib.Map[java.lang.String, Range] = js.native
     val maxOffset: scala.Double = js.native
@@ -230,9 +230,6 @@ object modelNs extends js.Object {
   class NodeList ()
     extends stdLib.Iterable[Node]
        with _NodeSet {
-    /* CompleteClass */
-    @JSName(org.scalablytyped.runtime.Symbol.iterator)
-    override var iterator: js.Function0[stdLib.Iterator[Node]] = js.native
     val length: scala.Double = js.native
     val maxOffset: scala.Double = js.native
     def getNode(index: scala.Double): Node | scala.Null = js.native
@@ -302,9 +299,6 @@ object modelNs extends js.Object {
     val end: Position = js.native
     var isCollapsed: scala.Boolean = js.native
     var isFlat: scala.Boolean = js.native
-    /* CompleteClass */
-    @JSName(org.scalablytyped.runtime.Symbol.iterator)
-    override var iterator: js.Function0[stdLib.Iterator[Node]] = js.native
     var root: Element | DocumentFragment = js.native
     val start: Position = js.native
     def containsItem(item: Item): scala.Unit = js.native
@@ -440,9 +434,6 @@ object modelNs extends js.Object {
     val boundaries: Range = js.native
     val direction: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward = js.native
     val ignoreElementEnd: scala.Boolean = js.native
-    /* CompleteClass */
-    @JSName(org.scalablytyped.runtime.Symbol.iterator)
-    override var iterator: js.Function0[stdLib.Iterator[TreeWalkerValue]] = js.native
     val position: Position = js.native
     val shallow: scala.Boolean = js.native
     val singleCharacters: scala.Boolean = js.native

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var emailTemplates: meteorDashTypingsLib.EmailTemplates = js.native
-  var ui: meteorDashTypingsLib.Anon_Config = js.native
   var urls: meteorDashTypingsLib.URLS = js.native
   def addEmail(userId: java.lang.String, newEmail: java.lang.String): scala.Unit = js.native
   def addEmail(userId: java.lang.String, newEmail: java.lang.String, verified: scala.Boolean): scala.Unit = js.native

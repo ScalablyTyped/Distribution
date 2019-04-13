@@ -13,15 +13,17 @@ trait InternalTypographyProps extends TypographyProps {
 object InternalTypographyProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    `aria-label`: java.lang.String = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     component: java.lang.String = null,
     id: java.lang.String = null,
     prefixCls: java.lang.String = null,
     setContentRef: /* node */ stdLib.HTMLElement => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): InternalTypographyProps = {
     val __obj = js.Dynamic.literal()
+    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component)

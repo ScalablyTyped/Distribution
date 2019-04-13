@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDelayedRenderProps
-  extends reactLib.reactMod.ReactNs.Props[js.Object] {
+  extends reactLib.reactMod.Props[js.Object] {
   /**
     * Number of milliseconds to delay rendering children.
     */
@@ -16,10 +16,10 @@ trait IDelayedRenderProps
 object IDelayedRenderProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     delay: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Object] = null
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[js.Object] = null
   ): IDelayedRenderProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

@@ -1,27 +1,18 @@
 organization := "org.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.17-89ffd3"
+version := "1.0.17-546d79"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.11-f30531",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-add0e3",
-  "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-d72019",
-  "org.scalablytyped" %%% "eventemitter3" % "3.1.0-3c8488",
-  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-82585c",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-d9f4a2",
-  "org.scalablytyped" %%% "iterall" % "1.2.2-f97d72",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
-  "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-c653be",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-a7455c",
-  "org.scalablytyped" %%% "ts-invariant" % "0.2.1-4a4f36",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-446b32",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-20a177",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-c37980",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-abdcc5")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.11-b38978",
+  "org.scalablytyped" %%% "eventemitter3" % "3.1.0-185fa2",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-25f524",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
+  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-041bbc",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-0e4500",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-9667a6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/library/fn/array/entries", JSImport.Namespace)
 @js.native
-object libraryFnArrayEntriesMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayArrayLike]
+object libraryFnArrayEntriesMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T]): stdLib.IterableIterator[js.Tuple2[scala.Double, T]] = js.native
+}
 

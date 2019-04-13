@@ -27,4 +27,5 @@ package object atVimeoPlayerMod {
     - java.lang.String
   */
   type EventName = _EventName | java.lang.String
+  type VimeoCuePointData = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

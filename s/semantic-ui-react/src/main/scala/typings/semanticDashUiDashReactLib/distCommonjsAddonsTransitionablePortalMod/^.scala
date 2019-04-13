@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/addons/TransitionablePortal", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
+  val default: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

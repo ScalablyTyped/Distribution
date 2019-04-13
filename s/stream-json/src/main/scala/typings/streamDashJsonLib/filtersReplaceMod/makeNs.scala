@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-json/filters/Replace", "make")
 @js.native
 object makeNs extends js.Object {
-  val Constructor: streamDashJsonLib.Anon_MakeOptionsReplace with (org.scalablytyped.runtime.Instantiable1[
-    /* options */ streamDashJsonLib.filtersFilterBaseMod.FilterBaseNs.FilterOptions, 
+  val Constructor: org.scalablytyped.runtime.Instantiable1[
+    /* options */ streamDashJsonLib.filtersFilterBaseMod.FilterOptions, 
     streamDashJsonLib.filtersReplaceMod.Replace
-  ]) = js.native
+  ] = js.native
+  type Constructor = streamDashJsonLib.filtersReplaceMod.Replace
 }
 

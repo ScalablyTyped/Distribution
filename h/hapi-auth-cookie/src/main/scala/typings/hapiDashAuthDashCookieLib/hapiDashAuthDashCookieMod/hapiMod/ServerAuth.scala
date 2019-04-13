@@ -13,7 +13,7 @@ trait ServerAuth extends js.Object {
   def strategy_cookie(
     name: java.lang.String,
     scheme: hapiDashAuthDashCookieLib.hapiDashAuthDashCookieLibStrings.cookie,
-    options: hapiDashAuthDashCookieLib.hapiDashAuthDashCookieMod.hapiAuthCookieNs.Options
+    options: hapiDashAuthDashCookieLib.hapiDashAuthDashCookieMod.Options
   ): scala.Unit = js.native
 }
 

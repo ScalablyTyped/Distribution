@@ -9,8 +9,8 @@ trait TranslateProps
   extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dangerousHTML: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var value: java.lang.String
 }
 
@@ -21,8 +21,8 @@ object TranslateProps {
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     className: java.lang.String = null,
     dangerousHTML: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    style: reactLib.reactMod.CSSProperties = null,
+    tag: reactLib.reactMod.ReactType[_] = null
   ): TranslateProps = {
     val __obj = js.Dynamic.literal(value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -12,7 +12,7 @@ trait Router extends js.Object {
   val moduleConfig: atOracleOraclejetLib.Anon_LifecycleListener = js.native
   val name: java.lang.String = js.native
   @JSName("observableModuleConfig")
-  val observableModuleConfig_Original: knockoutLib.KnockoutObservable[atOracleOraclejetLib.ojrouterMod.RouterNs.ModuleConfigType] = js.native
+  val observableModuleConfig_Original: knockoutLib.KnockoutObservable[ModuleConfigType] = js.native
   val parent: js.UndefOr[Router] = js.native
   val states: js.Array[RouterState] | scala.Null = js.native
   def configure(option: js.Function1[/* id */ java.lang.String, js.UndefOr[RouterState | scala.Null]]): js.Any = js.native
@@ -32,8 +32,8 @@ trait Router extends js.Object {
   def go(stateIdPath: java.lang.String, options: atOracleOraclejetLib.Anon_HistoryUpdate): js.Promise[atOracleOraclejetLib.Anon_HasChanged] = js.native
   def go(stateIdPath: js.Array[java.lang.String]): js.Promise[atOracleOraclejetLib.Anon_HasChanged] = js.native
   def go(stateIdPath: js.Array[java.lang.String], options: atOracleOraclejetLib.Anon_HistoryUpdate): js.Promise[atOracleOraclejetLib.Anon_HasChanged] = js.native
-  def observableModuleConfig(): atOracleOraclejetLib.ojrouterMod.RouterNs.ModuleConfigType = js.native
-  def observableModuleConfig(value: atOracleOraclejetLib.ojrouterMod.RouterNs.ModuleConfigType): scala.Unit = js.native
+  def observableModuleConfig(): ModuleConfigType = js.native
+  def observableModuleConfig(value: ModuleConfigType): scala.Unit = js.native
   def retrieve(): js.Any = js.native
   def stateId(): java.lang.String = js.native
   def stateId(param0: java.lang.String): java.lang.String = js.native

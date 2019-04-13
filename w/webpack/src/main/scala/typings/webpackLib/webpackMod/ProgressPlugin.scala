@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack", "ProgressPlugin")
 @js.native
-class ProgressPlugin ()
-  extends webpackLib.webpackMod.webpackNs.ProgressPlugin {
+class ProgressPlugin () extends Plugin {
   def this(options: js.Function5[
       /* percentage */ scala.Double, 
       /* msg */ java.lang.String, 
@@ -17,11 +16,5 @@ class ProgressPlugin ()
       /* moduleName */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]) = this()
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(args: js.Any*): scala.Unit = js.native
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(compiler: webpackLib.webpackMod.webpackNs.Compiler): scala.Unit = js.native
 }
 

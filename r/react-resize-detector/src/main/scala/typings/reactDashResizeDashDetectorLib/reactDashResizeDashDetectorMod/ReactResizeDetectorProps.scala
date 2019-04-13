@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactResizeDetectorProps
-  extends reactLib.reactMod.ReactNs.Props[ReactResizeDetector] {
+  extends reactLib.reactMod.Props[ReactResizeDetector] {
   /**
     * Trigger onResize on height change.
     * Default: false
@@ -25,7 +25,9 @@ trait ReactResizeDetectorProps
     * Can be useful when you need to handle table's or paragraph's resizes.
     * Default: "div"
     */
-  var nodeType: js.UndefOr[java.lang.String] = js.undefined
+  var nodeType: js.UndefOr[
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any
+  ] = js.undefined
   /**
     * Function that will be invoked with width and height arguments.
     * Default: undefined
@@ -61,7 +63,7 @@ trait ReactResizeDetectorProps
   var refreshRate: js.UndefOr[scala.Double] = js.undefined
    // will be passed to React.createElement()
   var render: js.UndefOr[
-    js.Function1[/* props */ ReactResizeDetectorDimensions, reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* props */ ReactResizeDetectorDimensions, reactLib.reactMod.ReactNode]
   ] = js.undefined
   /**
     * Do not trigger onResize when a component mounts.
@@ -73,18 +75,18 @@ trait ReactResizeDetectorProps
 object ReactResizeDetectorProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     handleHeight: js.UndefOr[scala.Boolean] = js.undefined,
     handleWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    nodeType: java.lang.String = null,
+    key: reactLib.reactMod.Key = null,
+    nodeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any = null,
     onResize: (/* width */ scala.Double, /* height */ scala.Double) => scala.Unit = null,
     querySelector: java.lang.String = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ReactResizeDetector] = null,
+    ref: reactLib.reactMod.LegacyRef[ReactResizeDetector] = null,
     refreshMode: reactDashResizeDashDetectorLib.reactDashResizeDashDetectorLibStrings.throttle | reactDashResizeDashDetectorLib.reactDashResizeDashDetectorLibStrings.debounce = null,
     refreshOptions: reactDashResizeDashDetectorLib.Anon_Leading = null,
     refreshRate: scala.Int | scala.Double = null,
-    render: /* props */ ReactResizeDetectorDimensions => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ ReactResizeDetectorDimensions => reactLib.reactMod.ReactNode = null,
     skipOnMount: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactResizeDetectorProps = {
     val __obj = js.Dynamic.literal()

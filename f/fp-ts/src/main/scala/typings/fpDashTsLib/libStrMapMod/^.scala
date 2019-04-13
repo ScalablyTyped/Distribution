@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/StrMap", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* StrMap */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.StrMap = js.native
   val strmap: (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[URI, java.lang.String]) with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[URI, java.lang.String]) with fpDashTsLib.libCompactableMod.Compactable1[URI] with (fpDashTsLib.libFilterableWithIndexMod.FilterableWithIndex1[URI, java.lang.String]) with fpDashTsLib.libWitherableMod.Witherable1[URI] with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[URI, java.lang.String]) = js.native
   def collect[A, B](d: StrMap[A], f: js.Function2[/* k */ java.lang.String, /* a */ A, B]): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
   def elem[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* fa */ StrMap[A], scala.Boolean] = js.native

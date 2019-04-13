@@ -11,7 +11,7 @@ trait StrictCardGroupProps extends js.Object {
   /** A group of cards can center itself inside its container. */
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -37,7 +37,7 @@ object StrictCardGroupProps {
   def apply(
     as: js.Any = null,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     doubling: js.UndefOr[scala.Boolean] = js.undefined,

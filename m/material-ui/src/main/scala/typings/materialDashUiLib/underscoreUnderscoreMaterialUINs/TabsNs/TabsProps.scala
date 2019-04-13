@@ -8,23 +8,21 @@ import scala.scalajs.js.annotation._
 trait TabsProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var contentContainerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var contentContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var initialSelectedIndex: js.UndefOr[scala.Double] = js.undefined
-  var inkBarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var inkBarStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
       /* value */ js.Any, 
-      /* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], 
+      /* e */ reactLib.reactMod.FormEvent[js.Object], 
       /* tab */ Tab, 
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tabItemContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tabTemplate: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
-  var tabTemplateStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tabItemContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tabTemplate: js.UndefOr[reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]] = js.undefined
+  var tabTemplateStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -33,14 +31,14 @@ object TabsProps {
   def apply(
     className: java.lang.String = null,
     contentContainerClassName: java.lang.String = null,
-    contentContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentContainerStyle: reactLib.reactMod.CSSProperties = null,
     initialSelectedIndex: scala.Int | scala.Double = null,
-    inkBarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onChange: (/* value */ js.Any, /* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], /* tab */ Tab) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tabItemContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tabTemplate: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
-    tabTemplateStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inkBarStyle: reactLib.reactMod.CSSProperties = null,
+    onChange: (/* value */ js.Any, /* e */ reactLib.reactMod.FormEvent[js.Object], /* tab */ Tab) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    tabItemContainerStyle: reactLib.reactMod.CSSProperties = null,
+    tabTemplate: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = null,
+    tabTemplateStyle: reactLib.reactMod.CSSProperties = null,
     value: js.Any = null
   ): TabsProps = {
     val __obj = js.Dynamic.literal()

@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class ActionDefinitions ()
   extends mfilesLib.IActionDefinitions
 
+@JSGlobal("MFiles.ActionDefinitions")
+@js.native
+object ActionDefinitions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IActionDefinitions]
+

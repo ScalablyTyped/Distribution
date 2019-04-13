@@ -42,10 +42,10 @@ trait IFileService extends js.Object {
     newPath: java.lang.String,
     newFile: java.lang.String
   ): IFilePromise[cordovaDashPluginDashFileLib.FileEntry] = js.native
-  def readAsArrayBuffer(path: java.lang.String, file: java.lang.String): angularLib.angularMod.angularNs.IPromise[stdLib.ArrayBuffer] = js.native
-  def readAsBinaryString(path: java.lang.String, file: java.lang.String): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
-  def readAsDataURL(path: java.lang.String, file: java.lang.String): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
-  def readAsText(path: java.lang.String, file: java.lang.String): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
+  def readAsArrayBuffer(path: java.lang.String, file: java.lang.String): angularLib.angularMod.IPromise[stdLib.ArrayBuffer] = js.native
+  def readAsBinaryString(path: java.lang.String, file: java.lang.String): angularLib.angularMod.IPromise[java.lang.String] = js.native
+  def readAsDataURL(path: java.lang.String, file: java.lang.String): angularLib.angularMod.IPromise[java.lang.String] = js.native
+  def readAsText(path: java.lang.String, file: java.lang.String): angularLib.angularMod.IPromise[java.lang.String] = js.native
   def removeDir(path: java.lang.String, directory: java.lang.String): IFilePromise[IFileRemoveResult[cordovaDashPluginDashFileLib.DirectoryEntry]] = js.native
   def removeFile(path: java.lang.String, file: java.lang.String): IFilePromise[IFileRemoveResult[cordovaDashPluginDashFileLib.FileEntry]] = js.native
   def removeRecursively(path: java.lang.String, directory: java.lang.String): IFilePromise[IFileRemoveResult[cordovaDashPluginDashFileLib.DirectoryEntry]] = js.native

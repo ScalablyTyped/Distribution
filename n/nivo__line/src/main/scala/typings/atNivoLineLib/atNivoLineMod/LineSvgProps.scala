@@ -39,7 +39,7 @@ object LineSvgProps {
     margin: atNivoCoreLib.atNivoCoreMod.Box = null,
     markers: js.Array[atNivoCoreLib.atNivoCoreMod.CartesianMarkerProps] = null,
     theme: atNivoCoreLib.atNivoCoreMod.Theme = null,
-    tooltip: /* data */ LineSliceData => reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltip: /* data */ LineSliceData => reactLib.reactMod.ReactNode = null,
     tooltipFormat: TooltipFormatter | java.lang.String = null,
     xScale: atNivoScalesLib.atNivoScalesMod.Scale = null,
     yScale: atNivoScalesLib.atNivoScalesMod.Scale = null

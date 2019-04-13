@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IconComponentProps extends js.Object {
   /** Customize background style, e.g. fill */
-  var iconBgStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var iconBgStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Customize logo's fill color
     * @default 'white'
@@ -22,7 +22,7 @@ trait IconComponentProps extends js.Object {
 object IconComponentProps {
   @scala.inline
   def apply(
-    iconBgStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    iconBgStyle: reactLib.reactMod.CSSProperties = null,
     logoFillColor: java.lang.String = null,
     round: js.UndefOr[scala.Boolean] = js.undefined,
     size: scala.Int | scala.Double = null

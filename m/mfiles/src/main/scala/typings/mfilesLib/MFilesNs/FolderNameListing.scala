@@ -19,3 +19,8 @@ class FolderNameListing ()
   override def SortWithExpression(Expression: mfilesLib.IExpression, Locale: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.FolderNameListing")
+@js.native
+object FolderNameListing
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderNameListing]
+

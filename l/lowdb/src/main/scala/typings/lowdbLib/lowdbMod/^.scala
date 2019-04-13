@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lowdb", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[lowdbLib.lowdbMod.LowdbNs.lowdb]
+  extends org.scalablytyped.runtime.TopLevel[lowdb]
 

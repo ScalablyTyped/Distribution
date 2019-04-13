@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.DetailedHTMLProps<react.react.React.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>, 'href'> ]: react.react.React.DetailedHTMLProps<react.react.React.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>[P]} */ trait LinkProps[TState] extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>, 'href'> ]: react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>[P]} */ trait LinkProps[TState] extends js.Object {
   var getProps: js.UndefOr[js.Function1[/* props */ LinkGetProps, js.Object]] = js.undefined
   var replace: js.UndefOr[scala.Boolean] = js.undefined
   var state: js.UndefOr[TState] = js.undefined

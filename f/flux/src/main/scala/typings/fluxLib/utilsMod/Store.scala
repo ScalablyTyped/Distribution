@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @JSImport("flux/utils", "Store")
 @js.native
 abstract class Store[TPayload] protected ()
-  extends fluxLib.libFluxStoreMod.namespaced[TPayload] {
+  extends fluxLib.libFluxStoreMod.^[TPayload] {
   /**
     * Constructs and registers an instance of this store with the given dispatcher.
     */
-  def this(dispatcher: fluxLib.libDispatcherMod.namespaced[TPayload]) = this()
+  def this(dispatcher: fluxLib.libDispatcherMod.^[TPayload]) = this()
 }
 

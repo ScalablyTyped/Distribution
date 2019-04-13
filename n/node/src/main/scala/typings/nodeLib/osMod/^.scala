@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val EOL: java.lang.String = js.native
-  val constants: nodeLib.Anon_Errno = js.native
   def arch(): java.lang.String = js.native
   def cpus(): js.Array[CpuInfo] = js.native
   def endianness(): nodeLib.nodeLibStrings.BE | nodeLib.nodeLibStrings.LE = js.native

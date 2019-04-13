@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AnimationEnabled extends js.Object {
   var animationEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var configureTransition: js.UndefOr[
     reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.TransitionConfigurator
   ] = js.undefined
@@ -26,7 +26,7 @@ object Anon_AnimationEnabled {
   @scala.inline
   def apply(
     animationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     configureTransition: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.TransitionConfigurator = null,
     onSwipeEnd: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.GestureHandler = null,
     onSwipeStart: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.GestureHandler = null,

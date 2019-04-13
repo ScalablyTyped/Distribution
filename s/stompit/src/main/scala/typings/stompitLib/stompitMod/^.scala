@@ -8,34 +8,34 @@ import scala.scalajs.js.annotation._
 @JSImport("stompit", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def connect(optionsOrPath: java.lang.String): stompitLib.libClientMod.namespaced = js.native
+  def connect(optionsOrPath: java.lang.String): stompitLib.libClientMod.^ = js.native
   def connect(
     optionsOrPath: java.lang.String,
     connectionListener: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
-      /* client */ stompitLib.libClientMod.namespaced, 
+      /* client */ stompitLib.libClientMod.^, 
       scala.Unit
     ]
-  ): stompitLib.libClientMod.namespaced = js.native
-  def connect(optionsOrPath: stompitLib.libConnectMod.connectNs.ConnectOptions): stompitLib.libClientMod.namespaced = js.native
+  ): stompitLib.libClientMod.^ = js.native
+  def connect(optionsOrPath: stompitLib.libConnectMod.ConnectOptions): stompitLib.libClientMod.^ = js.native
   def connect(
-    optionsOrPath: stompitLib.libConnectMod.connectNs.ConnectOptions,
+    optionsOrPath: stompitLib.libConnectMod.ConnectOptions,
     connectionListener: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
-      /* client */ stompitLib.libClientMod.namespaced, 
+      /* client */ stompitLib.libClientMod.^, 
       scala.Unit
     ]
-  ): stompitLib.libClientMod.namespaced = js.native
-  def connect(port: scala.Double): stompitLib.libClientMod.namespaced = js.native
-  def connect(port: scala.Double, host: java.lang.String): stompitLib.libClientMod.namespaced = js.native
+  ): stompitLib.libClientMod.^ = js.native
+  def connect(port: scala.Double): stompitLib.libClientMod.^ = js.native
+  def connect(port: scala.Double, host: java.lang.String): stompitLib.libClientMod.^ = js.native
   def connect(
     port: scala.Double,
     host: java.lang.String,
     connectionListener: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
-      /* client */ stompitLib.libClientMod.namespaced, 
+      /* client */ stompitLib.libClientMod.^, 
       scala.Unit
     ]
-  ): stompitLib.libClientMod.namespaced = js.native
+  ): stompitLib.libClientMod.^ = js.native
 }
 

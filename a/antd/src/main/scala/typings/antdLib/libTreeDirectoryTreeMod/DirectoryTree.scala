@@ -14,19 +14,19 @@ trait DirectoryTree
   var state_DirectoryTree: DirectoryTreeState = js.native
   var tree: antdLib.libTreeTreeMod.default = js.native
   def expandFolderNode(
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],
     node: antdLib.libTreeTreeMod.AntTreeNode
   ): scala.Unit = js.native
   def onClick(
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],
     node: antdLib.libTreeTreeMod.AntTreeNode
   ): scala.Unit = js.native
   def onDebounceExpand(
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent],
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent],
     node: antdLib.libTreeTreeMod.AntTreeNode
   ): scala.Unit = js.native
   def onDoubleClick(
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent],
     node: antdLib.libTreeTreeMod.AntTreeNode
   ): scala.Unit = js.native
   def onExpand(expandedKeys: js.Array[java.lang.String], info: antdLib.libTreeTreeMod.AntTreeNodeExpandedEvent): scala.Unit | js.Thenable[_] = js.native

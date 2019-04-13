@@ -29,3 +29,8 @@ class OCRZoneResult ()
   override val Width: scala.Double = js.native
 }
 
+@JSGlobal("MFiles.OCRZoneResult")
+@js.native
+object OCRZoneResult
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRZoneResult]
+

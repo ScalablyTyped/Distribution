@@ -15,30 +15,30 @@ trait AbstractSelectProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var dropdownClassName: js.UndefOr[java.lang.String] = js.undefined
   var dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var dropdownMenuStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dropdownMenuStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var dropdownRender: js.UndefOr[
     js.Function2[
-      /* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], 
+      /* menu */ js.UndefOr[reactLib.reactMod.ReactNode], 
       /* props */ js.UndefOr[SelectProps[SelectValue]], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
-  var dropdownStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dropdownStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var filterOption: js.UndefOr[
     scala.Boolean | (js.Function2[
       /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactNs.ReactElement[OptionProps], 
+      /* option */ reactLib.reactMod.ReactElement[OptionProps], 
       _
     ])
   ] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ js.UndefOr[stdLib.Element], stdLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
-  var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | scala.Null] = js.undefined
+  var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNode | scala.Null] = js.undefined
   var onDropdownVisibleChange: js.UndefOr[js.Function1[/* open */ scala.Boolean, scala.Unit]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* value */ java.lang.String, _]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
-  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showAction: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var showArrow: js.UndefOr[scala.Boolean] = js.undefined
@@ -46,7 +46,7 @@ trait AbstractSelectProps extends js.Object {
   var size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -63,28 +63,28 @@ object AbstractSelectProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropdownClassName: java.lang.String = null,
     dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    dropdownMenuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNs.ReactNode = null,
-    dropdownStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dropdownMenuStyle: reactLib.reactMod.CSSProperties = null,
+    dropdownRender: (/* menu */ js.UndefOr[reactLib.reactMod.ReactNode], /* props */ js.UndefOr[SelectProps[SelectValue]]) => reactLib.reactMod.ReactNode = null,
+    dropdownStyle: reactLib.reactMod.CSSProperties = null,
     filterOption: scala.Boolean | (js.Function2[
       /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactNs.ReactElement[OptionProps], 
+      /* option */ reactLib.reactMod.ReactElement[OptionProps], 
       _
     ]) = null,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.Element] => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    notFoundContent: reactLib.reactMod.ReactNode = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
     onSearch: /* value */ java.lang.String => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: java.lang.String | reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     showAction: java.lang.String | js.Array[java.lang.String] = null,
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
     size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null
   ): AbstractSelectProps = {

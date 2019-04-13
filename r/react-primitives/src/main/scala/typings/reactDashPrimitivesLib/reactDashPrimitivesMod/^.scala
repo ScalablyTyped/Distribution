@@ -12,6 +12,6 @@ object ^ extends js.Object {
   val Easing: reactDashNativeLib.reactDashNativeMod.EasingStatic = js.native
   val PixelRatio: reactDashNativeLib.reactDashNativeMod.PixelRatioStatic = js.native
   val Platform: PlatformStatic = js.native
-  val Touchable: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.TouchableOpacityProps] = js.native
+  val Touchable: reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.TouchableOpacityProps] = js.native
 }
 

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerDialogProps extends js.Object {
   // <Container/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[stdLib.Anon_LocalesOptionsSupportedLocalesOfArray] = js.undefined
+  var DateTimeFormat: js.UndefOr[materialDashUiLib.Anon_Locales] = js.undefined
   var animation: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[
+    reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.undefined
   var autoOk: js.UndefOr[scala.Boolean] = js.undefined
-  var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var container: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.dialog | materialDashUiLib.materialDashUiLibStrings.`inline`
   ] = js.undefined
@@ -28,25 +28,25 @@ trait DatePickerDialogProps extends js.Object {
   var mode: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.portrait | materialDashUiLib.materialDashUiLibStrings.landscape
   ] = js.undefined
-  var okLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var okLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onAccept: js.UndefOr[js.Function1[/* d */ stdLib.Date, scala.Unit]] = js.undefined
   var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var shouldDisableDate: js.UndefOr[js.Function1[/* day */ stdLib.Date, scala.Boolean]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var utils: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.utils] = js.undefined
 }
 
 object DatePickerDialogProps {
   @scala.inline
   def apply(
-    DateTimeFormat: stdLib.Anon_LocalesOptionsSupportedLocalesOfArray = null,
-    animation: reactLib.reactMod.ReactNs.ComponentClass[
+    DateTimeFormat: materialDashUiLib.Anon_Locales = null,
+    animation: reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ] = null,
     autoOk: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    cancelLabel: reactLib.reactMod.ReactNode = null,
     container: materialDashUiLib.materialDashUiLibStrings.dialog | materialDashUiLib.materialDashUiLibStrings.`inline` = null,
     disableYearSelection: js.UndefOr[scala.Boolean] = js.undefined,
     firstDayOfWeek: scala.Int | scala.Double = null,
@@ -55,12 +55,12 @@ object DatePickerDialogProps {
     maxDate: stdLib.Date = null,
     minDate: stdLib.Date = null,
     mode: materialDashUiLib.materialDashUiLibStrings.portrait | materialDashUiLib.materialDashUiLibStrings.landscape = null,
-    okLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    okLabel: reactLib.reactMod.ReactNode = null,
     onAccept: /* d */ stdLib.Date => scala.Unit = null,
     onDismiss: () => scala.Unit = null,
     onShow: () => scala.Unit = null,
     shouldDisableDate: /* day */ stdLib.Date => scala.Boolean = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     utils: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.utils = null
   ): DatePickerDialogProps = {
     val __obj = js.Dynamic.literal()

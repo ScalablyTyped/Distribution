@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dom-helpers/query/scrollTop", JSImport.Namespace)
 @js.native
-object queryScrollTopMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Element]
+object queryScrollTopMod extends js.Object {
+  def apply(element: stdLib.Element): scala.Double = js.native
+  def apply(element: stdLib.Element, value: scala.Double): scala.Unit = js.native
+}
 

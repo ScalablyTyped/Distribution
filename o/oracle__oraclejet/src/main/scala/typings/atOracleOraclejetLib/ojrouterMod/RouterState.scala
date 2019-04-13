@@ -15,6 +15,7 @@ trait RouterState extends js.Object {
   var parameters: js.Object
   var title: java.lang.String | js.Function0[js.UndefOr[java.lang.String]]
   var value: js.Any
+  // constructor(id: string, options?: RouterState.ConfigOptions, router?: Router);
   def go(): js.Promise[atOracleOraclejetLib.Anon_HasChanged]
   def isCurrent(): scala.Boolean
 }

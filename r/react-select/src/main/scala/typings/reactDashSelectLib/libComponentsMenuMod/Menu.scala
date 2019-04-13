@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Menu[OptionType] ()
   extends reactLib.reactMod.Component[MenuProps[OptionType], MenuState, js.Any] {
-  def getPlacement(ref: reactLib.reactMod.ReactNs.Ref[_]): scala.Unit = js.native
+  def getPlacement(ref: reactLib.reactMod.Ref[_]): scala.Unit = js.native
   def getState(): MenuProps[OptionType] with MenuState = js.native
 }
 

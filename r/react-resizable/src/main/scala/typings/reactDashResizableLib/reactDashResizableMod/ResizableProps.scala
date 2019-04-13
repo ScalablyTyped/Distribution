@@ -16,21 +16,21 @@ trait ResizableProps extends js.Object {
   var minConstraints: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   var onResize: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       /* data */ ResizeCallbackData, 
       _
     ]
   ] = js.undefined
   var onResizeStart: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       /* data */ ResizeCallbackData, 
       _
     ]
   ] = js.undefined
   var onResizeStop: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       /* data */ ResizeCallbackData, 
       _
     ]
@@ -50,9 +50,9 @@ object ResizableProps {
     lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
     maxConstraints: js.Tuple2[scala.Double, scala.Double] = null,
     minConstraints: js.Tuple2[scala.Double, scala.Double] = null,
-    onResize: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null,
-    onResizeStart: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null,
-    onResizeStop: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null
+    onResize: (/* e */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null,
+    onResizeStart: (/* e */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null,
+    onResizeStop: (/* e */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], /* data */ ResizeCallbackData) => _ = null
   ): ResizableProps = {
     val __obj = js.Dynamic.literal(height = height, width = width)
     if (axis != null) __obj.updateDynamic("axis")(axis)

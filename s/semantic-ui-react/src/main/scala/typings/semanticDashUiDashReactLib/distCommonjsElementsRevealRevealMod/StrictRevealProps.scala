@@ -15,7 +15,7 @@ trait StrictRevealProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -32,7 +32,7 @@ object StrictRevealProps {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     animated: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fade | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`small fade`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.move | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`move right`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`move up`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`move down`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.rotate | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`rotate left`) = null,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,

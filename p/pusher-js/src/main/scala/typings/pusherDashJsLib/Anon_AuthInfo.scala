@@ -10,7 +10,7 @@ trait Anon_AuthInfo extends js.Object {
     socketId: java.lang.String,
     callback: js.Function2[
       /* errored */ scala.Boolean, 
-      /* authInfo */ js.UndefOr[pusherDashJsLib.pusherDashJsMod.pusherNs.AuthInfo], 
+      /* authInfo */ js.UndefOr[pusherDashJsLib.pusherDashJsMod.AuthInfo], 
       scala.Unit
     ]
   ): scala.Unit
@@ -21,7 +21,7 @@ object Anon_AuthInfo {
   def apply(
     authorize: (java.lang.String, js.Function2[
       /* errored */ scala.Boolean, 
-      /* authInfo */ js.UndefOr[pusherDashJsLib.pusherDashJsMod.pusherNs.AuthInfo], 
+      /* authInfo */ js.UndefOr[pusherDashJsLib.pusherDashJsMod.AuthInfo], 
       scala.Unit
     ]) => scala.Unit
   ): Anon_AuthInfo = {

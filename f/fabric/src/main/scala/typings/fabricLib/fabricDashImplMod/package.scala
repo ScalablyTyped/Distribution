@@ -14,4 +14,5 @@ package object fabricDashImplMod {
     /* d */ scala.Double, 
     scala.Double
   ]
+  type Resources = org.scalablytyped.runtime.StringDictionary[stdLib.HTMLCanvasElement]
 }

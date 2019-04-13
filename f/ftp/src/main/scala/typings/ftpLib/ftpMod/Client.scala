@@ -79,7 +79,7 @@ trait Client
     * Connects to an FTP server.
     */
   def connect(): scala.Unit = js.native
-  def connect(config: ftpLib.ftpMod.ClientNs.Options): scala.Unit = js.native
+  def connect(config: Options): scala.Unit = js.native
   /**
     * Changes the current working directory to path. callback has 2 parameters: < Error >err, < string >currentDir.
     * Note: currentDir is only given if the server replies with the path in the response text.
@@ -121,19 +121,11 @@ trait Client
     callback: js.Function2[/* error */ stdLib.Error, /* lastMod */ stdLib.Date, scala.Unit]
   ): scala.Unit = js.native
   def list(
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   def list(
     path: java.lang.String,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieves the directory listing of path.
@@ -143,34 +135,18 @@ trait Client
   def list(
     path: java.lang.String,
     useCompression: scala.Boolean,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   def list(
     useCompression: scala.Boolean,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   def listSafe(
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   def listSafe(
     path: java.lang.String,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Optional "standard" commands (RFC 959)
@@ -181,19 +157,11 @@ trait Client
   def listSafe(
     path: java.lang.String,
     useCompression: scala.Boolean,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   def listSafe(
     useCompression: scala.Boolean,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* listing */ js.Array[ftpLib.ftpMod.ClientNs.ListingElement], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* listing */ js.Array[ListingElement], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Logout the user from the server.

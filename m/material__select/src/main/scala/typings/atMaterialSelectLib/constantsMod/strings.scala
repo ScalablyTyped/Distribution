@@ -19,10 +19,11 @@ object strings {
     CHANGE_EVENT: atMaterialSelectLib.atMaterialSelectLibStrings.`MDCSelect:change`,
     LABEL_SELECTOR: atMaterialSelectLib.atMaterialSelectLibStrings.`DOTmdc-floating-label`,
     LINE_RIPPLE_SELECTOR: atMaterialSelectLib.atMaterialSelectLibStrings.`DOTmdc-line-ripple`,
-    NATIVE_CONTROL_SELECTOR: atMaterialSelectLib.atMaterialSelectLibStrings.`DOTmdc-select__native-control`
+    NATIVE_CONTROL_SELECTOR: atMaterialSelectLib.atMaterialSelectLibStrings.`DOTmdc-select__native-control`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, LABEL_SELECTOR = LABEL_SELECTOR, LINE_RIPPLE_SELECTOR = LINE_RIPPLE_SELECTOR, NATIVE_CONTROL_SELECTOR = NATIVE_CONTROL_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

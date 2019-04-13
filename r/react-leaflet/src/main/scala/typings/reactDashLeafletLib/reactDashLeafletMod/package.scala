@@ -13,7 +13,7 @@ package object reactDashLeafletMod {
     scala.Unit
   ]
   type AttributionControlProps = leafletLib.leafletMod.ControlNs.AttributionOptions with MapControlProps
-  type Children = reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode]
+  type Children = reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode]
   type LatLng = leafletLib.leafletMod.LatLng | js.Array[scala.Double] | js.Object
   type LatLngBounds = leafletLib.leafletMod.LatLngBounds | js.Array[LatLng]
   type LeafletEvents = MapEvents with MarkerEvents with TileLayerEvents with PathEvents with FeatureGroupEvents with LayersControlEvents

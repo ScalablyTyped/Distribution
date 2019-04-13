@@ -44,39 +44,101 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "User")
 @js.native
-class User ()
-  extends loopbackLib.loopbackMod.lNs.User {
-  /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
+class User () extends PersistedModel {
+  /** The property is not used by LoopBack, you are free to use it for your own purposes. */
+  var created: stdLib.Date = js.native
+  /** Must be valid email. */
+  var email: java.lang.String = js.native
+  /** Set when a user's email has been verified via `confirm()`. */
+  var emailVerified: scala.Boolean = js.native
+  /** The property is not used by LoopBack, you are free to use it for your own purposes. */
+  var lastUpdate: stdLib.Date = js.native
+  /** Hidden from remote clients. */
+  var password: java.lang.String = js.native
+  /** The namespace the user belongs to. See [Partitioning users with realms](docs.strongloop.com/display/public/LB/Partitioning+users+with+realms) for details. */
+  var realm: java.lang.String = js.native
   /**
-    * loopback 3.x Remote hooks
-    * http://loopback.io/doc/en/lb3/Remote-hooks.html
-    * @param method
-    * @param backback
+    * ettings Extends the `Model.settings` object.
+    * settings.emailVerificationRequired Require the email verification
+    * process before allowing a login.
+    * settings.ttl Default time to live (in seconds) for the `AccessToken` created by `User.login() / user.createAccessToken()`.
+    * Default is `1209600` (2 weeks)
+    * settings.maxTTL The max value a user can request a token to be alive / valid for.
+    * Default is `31556926` (1 year)
+    * settings.realmRequired Require a realm when logging in a user.
+    * settings.realmDelimiter When set a realm is required.
+    * settings.resetPasswordTokenTTL Time to live for password reset `AccessToken`. Default is `900` (15 minutes).
+    * settings.saltWorkFactor The `bcrypt` salt work factor. Default is `10`.
+    * settings.caseSensitiveEmail Enable case sensitive email.
     */
-  /* CompleteClass */
-  override def beforeRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  @JSName("settings")
+  var settings_User: loopbackLib.Anon_AclsCaseSensitiveEmail = js.native
+  /** The property is not used by LoopBack, you are free to use it for your own purposes. */
+  var status: java.lang.String = js.native
+  /** Must be unique. */
+  var username: java.lang.String = js.native
+  /** Set when `verify()` is called. */
+  var verificationToken: java.lang.String = js.native
+  /**
+    * Create access token for the logged in user. This method can be overridden to
+    * customize how access tokens are generate
+    * @param {number} ttl The requested ttl
+    * @param {any} [options] The options for access token, such as scope, appId
+    * @callback {() => void} cb The callback function
+    * @param {string|Error} err The error string or object
+    * @param {AccessToken} token The generated access token object
+    */
+  def createAccessToken(ttl: scala.Double): js.Promise[AccessToken] | scala.Unit = js.native
+  def createAccessToken(ttl: scala.Double, options: js.Any): js.Promise[AccessToken] | scala.Unit = js.native
+  def createAccessToken(
+    ttl: scala.Double,
+    options: js.Any,
+    callback: js.Function2[/* err */ java.lang.String | stdLib.Error, /* token */ AccessToken, scala.Unit]
+  ): js.Promise[AccessToken] | scala.Unit = js.native
+  /**
+    * Compare the given `password` with the users hashed password
+    * @param {string} password The plain text password
+    * @callback {() => void} callback Callback function
+    * @param {Error} err Error object
+    * @param {boolean} isMatch Returns true if the given `password` matches recor
+    */
+  def hasPassword(password: java.lang.String): js.Promise[scala.Boolean] | scala.Unit = js.native
+  def hasPassword(
+    password: java.lang.String,
+    callback: js.Function2[/* err */ stdLib.Error, /* isMatch */ scala.Boolean, scala.Unit]
+  ): js.Promise[scala.Boolean] | scala.Unit = js.native
+  /**
+    * Verify a user's identity by sending them a confirmation email
+    *  ```js
+    *   var options = {
+    *     type: 'email',
+    *     to: user.email,
+    *     template: 'verify.ejs',
+    *     redirect: '/',
+    *     tokenGenerator: function (user, cb) { cb("random-token"); }
+    *   };
+    *
+    *   user.verify(options, next);
+    * ```
+    *
+    * @options {any} options
+    * @property {string} type Must be 'email'.
+    * @property {string} to Email address to which verification email is sent.
+    * @property {string} from Sender email addresss, for example
+    *   `'noreply@myapp.com'`.
+    * @property {string} subject Subject line text.
+    * @property {string} text Text of email.
+    * @property {string} template Name of template that displays verification
+    *  page, for example, `'verify.ejs'.
+    * @property {string} redirect Page to which user will be redirected after
+    *  they verify their email, for example `'/'` for root URI.
+    * @property {() => void} generateVerificationToken A function to be used to
+    *  generate the verification token. It must accept the user object and a
+    *  callback function. This function should NOT add the token to the user
+    *  object, instead simply execute the callback with the token! User saving
+    *  and email sending will be handled in the `verify()` method
+    */
+  def verify(options: loopbackLib.Anon_FromGenerateVerificationToken): scala.Unit = js.native
 }
 
 /* static members */
@@ -125,27 +187,19 @@ object User extends js.Object {
     * @param {Error} err Error object
     * @param {AccessToken} token Access token if login is successfu
     */
-  def login(credentials: js.Any): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
-  def login(credentials: js.Any, include: java.lang.String): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+  def login(credentials: js.Any): js.Promise[loopbackLib.loopbackMod.AccessToken] | scala.Unit = js.native
+  def login(credentials: js.Any, include: java.lang.String): js.Promise[loopbackLib.loopbackMod.AccessToken] | scala.Unit = js.native
   def login(
     credentials: js.Any,
     include: java.lang.String,
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* token */ loopbackLib.loopbackMod.lNs.AccessToken, 
-      scala.Unit
-    ]
-  ): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
-  def login(credentials: js.Any, include: js.Array[java.lang.String]): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+    callback: js.Function2[/* err */ stdLib.Error, /* token */ loopbackLib.loopbackMod.AccessToken, scala.Unit]
+  ): js.Promise[loopbackLib.loopbackMod.AccessToken] | scala.Unit = js.native
+  def login(credentials: js.Any, include: js.Array[java.lang.String]): js.Promise[loopbackLib.loopbackMod.AccessToken] | scala.Unit = js.native
   def login(
     credentials: js.Any,
     include: js.Array[java.lang.String],
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* token */ loopbackLib.loopbackMod.lNs.AccessToken, 
-      scala.Unit
-    ]
-  ): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+    callback: js.Function2[/* err */ stdLib.Error, /* token */ loopbackLib.loopbackMod.AccessToken, scala.Unit]
+  ): js.Promise[loopbackLib.loopbackMod.AccessToken] | scala.Unit = js.native
   /**
     * Logout a user with the given accessToken id
     *

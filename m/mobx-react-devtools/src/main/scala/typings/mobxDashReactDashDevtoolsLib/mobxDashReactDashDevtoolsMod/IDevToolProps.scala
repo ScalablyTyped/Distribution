@@ -12,7 +12,7 @@ trait IDevToolProps extends js.Object {
   var position: js.UndefOr[
     mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.topRight | mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.bottomRight | mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.bottomLeft | mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.topLeft | mobxDashReactDashDevtoolsLib.Anon_Bottom
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object IDevToolProps {
@@ -22,7 +22,7 @@ object IDevToolProps {
     highlightTimeout: scala.Int | scala.Double = null,
     noPanel: js.UndefOr[scala.Boolean] = js.undefined,
     position: mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.topRight | mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.bottomRight | mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.bottomLeft | mobxDashReactDashDevtoolsLib.mobxDashReactDashDevtoolsLibStrings.topLeft | mobxDashReactDashDevtoolsLib.Anon_Bottom = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): IDevToolProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

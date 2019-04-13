@@ -8,35 +8,35 @@ import scala.scalajs.js.annotation._
 object mojiLibStrings {
   @js.native
   sealed trait HE
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @js.native
   sealed trait HG
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @js.native
   sealed trait HK
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @js.native
   sealed trait HS
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @js.native
   sealed trait KK
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @js.native
   sealed trait ZE
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @js.native
   sealed trait ZK
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @js.native
   sealed trait ZS
-    extends mojiLib.mojiMod.mojiNs.Mojisyu
+    extends mojiLib.mojiMod.Mojisyu
   
   @scala.inline
   def HE: HE = "HE".asInstanceOf[HE]

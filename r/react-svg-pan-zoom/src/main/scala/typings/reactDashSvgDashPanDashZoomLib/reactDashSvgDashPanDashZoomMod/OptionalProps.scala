@@ -14,7 +14,7 @@ trait OptionalProps extends js.Object {
   var className: java.lang.String
   // override default toolbar component
   // TODO: specify function type more clearly
-  var customToolbar: (reactLib.reactMod.Component[_, js.Object, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+  var customToolbar: (reactLib.reactMod.Component[_, js.Object, _]) | reactLib.reactMod.StatelessComponent[_]
   // perform PAN if the mouse is on viewer border
   var detectAutoPan: scala.Boolean
   // detect zoom operation performed trough pinch gesture or mouse scroll
@@ -56,7 +56,7 @@ object OptionalProps {
     SVGBackground: java.lang.String,
     background: java.lang.String,
     className: java.lang.String,
-    customToolbar: (reactLib.reactMod.Component[_, js.Object, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_],
+    customToolbar: (reactLib.reactMod.Component[_, js.Object, _]) | reactLib.reactMod.StatelessComponent[_],
     detectAutoPan: scala.Boolean,
     detectWheel: scala.Boolean,
     modifierKeys: js.Array[java.lang.String],

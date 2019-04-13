@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LazyLoadProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var debounce: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var offset: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var once: js.UndefOr[scala.Boolean] = js.undefined
   var overflow: js.UndefOr[scala.Boolean] = js.undefined
-  var placeholder: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var placeholder: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var resize: js.UndefOr[scala.Boolean] = js.undefined
   var scroll: js.UndefOr[scala.Boolean] = js.undefined
   var throttle: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
@@ -22,13 +22,13 @@ trait LazyLoadProps extends js.Object {
 object LazyLoadProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     debounce: scala.Double | scala.Boolean = null,
     height: scala.Double | java.lang.String = null,
     offset: scala.Double | js.Array[scala.Double] = null,
     once: js.UndefOr[scala.Boolean] = js.undefined,
     overflow: js.UndefOr[scala.Boolean] = js.undefined,
-    placeholder: reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: reactLib.reactMod.ReactNode = null,
     resize: js.UndefOr[scala.Boolean] = js.undefined,
     scroll: js.UndefOr[scala.Boolean] = js.undefined,
     throttle: scala.Double | scala.Boolean = null,

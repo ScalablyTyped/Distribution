@@ -12,15 +12,15 @@ object componentFromStreamMod extends js.Object {
   def componentFromStreamWithConfig(config: recomposeLib.recomposeMod.ObservableConfig): js.Function1[
     /* propsToReactNode */ recomposeLib.recomposeMod.mapper[
       recomposeLib.recomposeMod.Subscribable[_], 
-      recomposeLib.recomposeMod.Subscribable[reactLib.reactMod.ReactNs.ReactNode]
+      recomposeLib.recomposeMod.Subscribable[reactLib.reactMod.ReactNode]
     ], 
-    reactLib.reactMod.ReactNs.ComponentType[_]
+    reactLib.reactMod.ComponentType[_]
   ] = js.native
   def default[TProps](
     propsToReactNode: recomposeLib.recomposeMod.mapper[
       recomposeLib.recomposeMod.Subscribable[TProps], 
-      recomposeLib.recomposeMod.Subscribable[reactLib.reactMod.ReactNs.ReactNode]
+      recomposeLib.recomposeMod.Subscribable[reactLib.reactMod.ReactNode]
     ]
-  ): reactLib.reactMod.ReactNs.ComponentType[TProps] = js.native
+  ): reactLib.reactMod.ComponentType[TProps] = js.native
 }
 

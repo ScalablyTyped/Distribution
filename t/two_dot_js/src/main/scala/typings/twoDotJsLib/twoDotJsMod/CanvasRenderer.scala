@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("two.js", "CanvasRenderer")
 @js.native
-class CanvasRenderer ()
-  extends twoDotJsLib.twoDotJsMod.TwoNs.CanvasRenderer
+class CanvasRenderer () extends Renderer
 

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class LicenseManager ()
   extends awsDashSdkLib.clientsAllMod.LicenseManager {
-  def this(options: awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsLicensemanagerMod.ClientConfiguration) = this()
 }
 

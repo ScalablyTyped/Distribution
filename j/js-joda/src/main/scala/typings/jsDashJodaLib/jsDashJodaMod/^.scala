@@ -8,25 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("js-joda", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def convert(temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalDate): jsDashJodaLib.Anon_ToDate = js.native
-  def convert(temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalDateTime): jsDashJodaLib.Anon_ToDate = js.native
-  def convert(
-    temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalDateTime,
-    zone: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId
-  ): jsDashJodaLib.Anon_ToDate = js.native
-  def convert(
-    temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalDate,
-    zone: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId
-  ): jsDashJodaLib.Anon_ToDate = js.native
-  def convert(temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZonedDateTime): jsDashJodaLib.Anon_ToDate = js.native
-  def convert(
-    temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZonedDateTime,
-    zone: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId
-  ): jsDashJodaLib.Anon_ToDate = js.native
-  def nativeJs(date: js.Any): jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalAccessor = js.native
-  def nativeJs(date: js.Any, zone: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId): jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalAccessor = js.native
-  def nativeJs(date: stdLib.Date): jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalAccessor = js.native
-  def nativeJs(date: stdLib.Date, zone: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId): jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalAccessor = js.native
+  def convert(temporal: LocalDate): jsDashJodaLib.Anon_ToDate = js.native
+  def convert(temporal: LocalDateTime): jsDashJodaLib.Anon_ToDate = js.native
+  def convert(temporal: LocalDateTime, zone: ZoneId): jsDashJodaLib.Anon_ToDate = js.native
+  def convert(temporal: LocalDate, zone: ZoneId): jsDashJodaLib.Anon_ToDate = js.native
+  def convert(temporal: ZonedDateTime): jsDashJodaLib.Anon_ToDate = js.native
+  def convert(temporal: ZonedDateTime, zone: ZoneId): jsDashJodaLib.Anon_ToDate = js.native
+  def nativeJs(date: js.Any): TemporalAccessor = js.native
+  def nativeJs(date: js.Any, zone: ZoneId): TemporalAccessor = js.native
+  def nativeJs(date: stdLib.Date): TemporalAccessor = js.native
+  def nativeJs(date: stdLib.Date, zone: ZoneId): TemporalAccessor = js.native
   def use(plugin: js.Function): js.Any = js.native
 }
 

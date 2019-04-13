@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class ApolloServer protected () extends js.Object {
   def this(config: ApolloServerExpressConfig) = this()
   def applyMiddleware(hasAppPathCorsBodyParserConfigDisableHealthCheckOnHealthCheck: ServerRegistration): scala.Unit = js.native
-  def createGraphQLServerOptions(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): js.Promise[
+  def createGraphQLServerOptions(req: expressLib.expressMod.Request, res: expressLib.expressMod.Response): js.Promise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLOptions */ _
   ] = js.native
   /* protected */ def supportsSubscriptions(): scala.Boolean = js.native

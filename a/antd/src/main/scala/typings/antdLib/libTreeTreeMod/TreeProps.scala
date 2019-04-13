@@ -15,9 +15,7 @@ trait TreeProps extends js.Object {
   var checkable: js.UndefOr[scala.Boolean] = js.undefined
   /** （受控）选中复选框的树节点 */
   var checkedKeys: js.UndefOr[js.Array[java.lang.String] | antdLib.Anon_Checked] = js.undefined
-  var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** 默认选中复选框的树节点 */
   var defaultCheckedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -38,9 +36,7 @@ trait TreeProps extends js.Object {
   /** filter some AntTreeNodes as you need. it should return true */
   var filterAntTreeNode: js.UndefOr[js.Function1[/* node */ AntTreeNode, scala.Boolean]] = js.undefined
   var filterTreeNode: js.UndefOr[js.Function1[/* node */ AntTreeNode, scala.Boolean]] = js.undefined
-  var icon: js.UndefOr[
-    js.Function1[/* nodeProps */ AntdTreeNodeAttribute, reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var icon: js.UndefOr[js.Function1[/* nodeProps */ AntdTreeNodeAttribute, reactLib.reactMod.ReactNode]] = js.undefined
   /** 异步加载数据 */
   var loadData: js.UndefOr[js.Function1[/* node */ AntTreeNode, js.Thenable[_]]] = js.undefined
   var loadedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -57,7 +53,7 @@ trait TreeProps extends js.Object {
   /** 单击树节点触发 */
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* node */ AntTreeNode, 
       scala.Unit
     ]
@@ -65,7 +61,7 @@ trait TreeProps extends js.Object {
   /** 双击树节点触发 */
   var onDoubleClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* node */ AntTreeNode, 
       scala.Unit
     ]
@@ -107,8 +103,8 @@ trait TreeProps extends js.Object {
   var selectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
   var showLine: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var switcherIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var switcherIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
 }
 
 object TreeProps {
@@ -119,7 +115,7 @@ object TreeProps {
     checkStrictly: js.UndefOr[scala.Boolean] = js.undefined,
     checkable: js.UndefOr[scala.Boolean] = js.undefined,
     checkedKeys: js.Array[java.lang.String] | antdLib.Anon_Checked = null,
-    children: reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
     defaultCheckedKeys: js.Array[java.lang.String] = null,
     defaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined,
@@ -131,13 +127,13 @@ object TreeProps {
     expandedKeys: js.Array[java.lang.String] = null,
     filterAntTreeNode: /* node */ AntTreeNode => scala.Boolean = null,
     filterTreeNode: /* node */ AntTreeNode => scala.Boolean = null,
-    icon: /* nodeProps */ AntdTreeNodeAttribute => reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: /* nodeProps */ AntdTreeNodeAttribute => reactLib.reactMod.ReactNode = null,
     loadData: /* node */ AntTreeNode => js.Thenable[_] = null,
     loadedKeys: js.Array[java.lang.String] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     onCheck: (/* checkedKeys */ js.Array[java.lang.String] | antdLib.Anon_Checked, /* e */ AntTreeNodeCheckedEvent) => scala.Unit = null,
-    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ AntTreeNode) => scala.Unit = null,
-    onDoubleClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ AntTreeNode) => scala.Unit = null,
+    onClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ AntTreeNode) => scala.Unit = null,
+    onDoubleClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ AntTreeNode) => scala.Unit = null,
     onDragEnd: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDragEnter: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDragLeave: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
@@ -153,8 +149,8 @@ object TreeProps {
     selectedKeys: js.Array[java.lang.String] = null,
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
     showLine: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    switcherIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null
+    style: reactLib.reactMod.CSSProperties = null,
+    switcherIcon: reactLib.reactMod.ReactElement[_] = null
   ): TreeProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent)

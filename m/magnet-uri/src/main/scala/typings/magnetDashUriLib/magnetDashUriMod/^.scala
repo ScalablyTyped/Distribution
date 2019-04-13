@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("magnet-uri", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[magnetDashUriLib.magnetDashUriMod.MagnetUriNs.MagnetUri]
+  extends org.scalablytyped.runtime.TopLevel[MagnetUri]
 

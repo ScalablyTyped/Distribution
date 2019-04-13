@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MaskedViewIOSProps extends ViewProps {
-  var maskElement: reactLib.reactMod.ReactNs.ReactElement[_]
+  var maskElement: reactLib.reactMod.ReactElement[_]
 }
 
 object MaskedViewIOSProps {
   @scala.inline
   def apply(
-    maskElement: reactLib.reactMod.ReactNs.ReactElement[_],
+    maskElement: reactLib.reactMod.ReactElement[_],
     accessibilityActions: js.Array[java.lang.String] = null,
     accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,

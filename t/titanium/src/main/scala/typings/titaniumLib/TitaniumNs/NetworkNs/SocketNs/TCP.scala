@@ -105,6 +105,12 @@ trait TCP
   def read(buffer: titaniumLib.TitaniumNs.Buffer): scala.Double = js.native
   def read(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double): scala.Double = js.native
   def read(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def read(
+    buffer: titaniumLib.TitaniumNs.Buffer,
+    offset: scala.Double,
+    length: scala.Double,
+    resultsCallback: js.Function1[/* param0 */ titaniumLib.ReadCallbackArgs, _]
+  ): scala.Double = js.native
   /**
   				 * Sets the value of the <Titanium.Network.Socket.TCP.accepted> property.
   				 */
@@ -139,5 +145,11 @@ trait TCP
   def write(buffer: titaniumLib.TitaniumNs.Buffer): scala.Double = js.native
   def write(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double): scala.Double = js.native
   def write(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def write(
+    buffer: titaniumLib.TitaniumNs.Buffer,
+    offset: scala.Double,
+    length: scala.Double,
+    resultsCallback: js.Function1[/* param0 */ titaniumLib.WriteCallbackArgs, _]
+  ): scala.Double = js.native
 }
 

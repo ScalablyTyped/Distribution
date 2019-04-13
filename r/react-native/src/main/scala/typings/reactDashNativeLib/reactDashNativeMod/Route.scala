@@ -10,7 +10,7 @@ trait Route
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   //Commonly found properties
   var backButtonTitle: js.UndefOr[java.lang.String] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[_]] = js.undefined
   var content: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined
@@ -28,7 +28,7 @@ object Route {
     StringDictionary: //anything else
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     backButtonTitle: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    component: reactLib.reactMod.ComponentType[_] = null,
     content: java.lang.String = null,
     id: java.lang.String = null,
     index: scala.Int | scala.Double = null,

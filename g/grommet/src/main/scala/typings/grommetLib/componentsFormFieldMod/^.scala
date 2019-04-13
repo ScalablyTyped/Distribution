@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/FormField", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val FormField: reactLib.reactMod.ReactNs.ComponentClass[
-    FormFieldProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  val FormField: reactLib.reactMod.ComponentClass[
+    FormFieldProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

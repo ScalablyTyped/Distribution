@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MediaTailor ()
-  extends awsDashSdkLib.clientsMediatailorMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMediatailorMod.^ {
+  def this(options: awsDashSdkLib.clientsMediatailorMod.ClientConfiguration) = this()
 }
 

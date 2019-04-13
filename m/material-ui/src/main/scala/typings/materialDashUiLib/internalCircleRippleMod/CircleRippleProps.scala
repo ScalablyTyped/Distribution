@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CircleRippleProps
-  extends reactLib.reactMod.ReactNs.Props[CircleRipple] {
+  extends reactLib.reactMod.Props[CircleRipple] {
   var aborted: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var opacity: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CircleRippleProps {
   @scala.inline
   def apply(
     aborted: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     opacity: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[CircleRipple] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    ref: reactLib.reactMod.LegacyRef[CircleRipple] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): CircleRippleProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(aborted)) __obj.updateDynamic("aborted")(aborted)

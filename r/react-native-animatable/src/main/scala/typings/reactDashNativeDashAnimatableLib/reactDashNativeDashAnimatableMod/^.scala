@@ -20,9 +20,9 @@ object ^ extends js.Object {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any, 
     reactDashNativeLib.reactDashNativeMod.ViewStyle
   ] = js.native
-  def createAnimatableComponent[P /* <: reactDashNativeDashAnimatableLib.Anon_Style */, S](Component: reactLib.reactMod.ReactNs.ClassicComponentClass[P]): AnimatableComponent[P, S] = js.native
-  def createAnimatableComponent[P /* <: reactDashNativeDashAnimatableLib.Anon_Style */, S](Component: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]): AnimatableComponent[P, S] = js.native
-  def createAnimatableComponent[P /* <: reactDashNativeDashAnimatableLib.Anon_Style */, S](Component: reactLib.reactMod.ReactNs.StatelessComponent[P]): AnimatableComponent[P, S] = js.native
+  def createAnimatableComponent[P /* <: reactDashNativeDashAnimatableLib.Anon_Style */, S](Component: reactLib.reactMod.ClassicComponentClass[P]): AnimatableComponent[P, S] = js.native
+  def createAnimatableComponent[P /* <: reactDashNativeDashAnimatableLib.Anon_Style */, S](Component: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): AnimatableComponent[P, S] = js.native
+  def createAnimatableComponent[P /* <: reactDashNativeDashAnimatableLib.Anon_Style */, S](Component: reactLib.reactMod.StatelessComponent[P]): AnimatableComponent[P, S] = js.native
   def createAnimation(
     animation: CustomAnimation[
       reactDashNativeLib.reactDashNativeMod.TextStyle with reactDashNativeLib.reactDashNativeMod.ViewStyle with reactDashNativeLib.reactDashNativeMod.ImageStyle

@@ -27,7 +27,5 @@ object RemoteNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.remoteMod.RemoteNs.COMPLETION_TYPE with scala.Double] = js.native
   }
   
-  type AUTOTAG_OPTION = nodegitLib.remoteMod.RemoteNs.AUTOTAG_OPTION
-  type COMPLETION_TYPE = nodegitLib.remoteMod.RemoteNs.COMPLETION_TYPE
 }
 

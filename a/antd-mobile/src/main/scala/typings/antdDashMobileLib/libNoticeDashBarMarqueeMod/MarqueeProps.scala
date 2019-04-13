@@ -11,7 +11,7 @@ trait MarqueeProps extends js.Object {
   var leading: js.UndefOr[scala.Double] = js.undefined
   var loop: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var text: java.lang.String
   var trailing: js.UndefOr[scala.Double] = js.undefined
 }
@@ -25,7 +25,7 @@ object MarqueeProps {
     leading: scala.Int | scala.Double = null,
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     trailing: scala.Int | scala.Double = null
   ): MarqueeProps = {
     val __obj = js.Dynamic.literal(text = text)

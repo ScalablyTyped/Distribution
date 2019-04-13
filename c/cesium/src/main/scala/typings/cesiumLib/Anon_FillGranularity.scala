@@ -6,31 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FillGranularity extends js.Object {
-  var fill: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var granularity: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MaterialProperty] = js.undefined
-  var maximumHeights: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var minimumHeights: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outline: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outlineWidth: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var positions: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var show: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var fill: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var granularity: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.MaterialProperty] = js.undefined
+  var maximumHeights: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var minimumHeights: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outline: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outlineWidth: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var positions: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var show: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
 }
 
 object Anon_FillGranularity {
   @scala.inline
   def apply(
-    fill: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    granularity: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    material: cesiumLib.cesiumMod.CesiumNs.MaterialProperty = null,
-    maximumHeights: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    minimumHeights: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outline: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outlineColor: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outlineWidth: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    positions: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    show: cesiumLib.cesiumMod.CesiumNs.Property = null
+    fill: cesiumLib.cesiumMod.Property = null,
+    granularity: cesiumLib.cesiumMod.Property = null,
+    material: cesiumLib.cesiumMod.MaterialProperty = null,
+    maximumHeights: cesiumLib.cesiumMod.Property = null,
+    minimumHeights: cesiumLib.cesiumMod.Property = null,
+    outline: cesiumLib.cesiumMod.Property = null,
+    outlineColor: cesiumLib.cesiumMod.Property = null,
+    outlineWidth: cesiumLib.cesiumMod.Property = null,
+    positions: cesiumLib.cesiumMod.Property = null,
+    show: cesiumLib.cesiumMod.Property = null
   ): Anon_FillGranularity = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill)

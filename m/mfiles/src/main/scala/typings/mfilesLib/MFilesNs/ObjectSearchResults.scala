@@ -29,3 +29,8 @@ class ObjectSearchResults ()
   override def SortByScore(Ascending: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ObjectSearchResults")
+@js.native
+object ObjectSearchResults
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectSearchResults]
+

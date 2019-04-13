@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.SVGProps<std.SVGSVGElement>, 'classes' | never> ]: react.react.React.SVGProps<std.SVGSVGElement>[P]} */ trait SvgIconProps
+- Dropped {[ P in std.Exclude<keyof react.react.SVGProps<std.SVGSVGElement>, 'classes' | never> ]: react.react.SVGProps<std.SVGSVGElement>[P]} */ trait SvgIconProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SvgIconClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[SvgIconProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[SvgIconProps]] = js.undefined
   var fontSize: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.small | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.large
   ] = js.undefined
@@ -28,12 +28,12 @@ object SvgIconProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SvgIconClassKey]] = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error = null,
-    component: reactLib.reactMod.ReactNs.ReactType[SvgIconProps] = null,
+    component: reactLib.reactMod.ReactType[SvgIconProps] = null,
     fontSize: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.small | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.large = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     nativeColor: java.lang.String = null,
     shapeRendering: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     titleAccess: java.lang.String = null,
     viewBox: java.lang.String = null
   ): SvgIconProps = {

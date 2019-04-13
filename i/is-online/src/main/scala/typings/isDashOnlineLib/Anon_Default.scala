@@ -24,6 +24,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(): js.Promise[scala.Boolean] = js.native
-  def apply(options: isDashOnlineLib.isDashOnlineMod.isOnlineNs.Options): js.Promise[scala.Boolean] = js.native
+  def apply(options: isDashOnlineLib.isDashOnlineMod.Options): js.Promise[scala.Boolean] = js.native
 }
 

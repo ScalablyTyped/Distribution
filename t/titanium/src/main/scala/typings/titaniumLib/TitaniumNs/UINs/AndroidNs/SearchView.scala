@@ -28,6 +28,10 @@ trait SearchView
   				 */
   var accessibilityValue: java.lang.String = js.native
   /**
+  				 * Coordinate of the view about which to pivot an animation.
+  				 */
+  var anchorPoint: titaniumLib.Point = js.native
+  /**
   				 * Background color of the view, as a color name or hex triplet.
   				 */
   var backgroundColor: java.lang.String = js.native
@@ -145,7 +149,7 @@ trait SearchView
   				 */
   var left: scala.Double | java.lang.String = js.native
   /**
-  				 * Opacity of this view, from 0.0 (transparent) to 1.0 (opaque).
+  				 * Opacity of this view, from 0.0 (transparent) to 1.0 (opaque). Defaults to 1.0 (opaque).
   				 */
   var opacity: scala.Double = js.native
   /**
@@ -185,7 +189,7 @@ trait SearchView
   				 */
   val size: titaniumLib.Dimension = js.native
   /**
-  				 * Determines keyboard behavior when this view is focused.
+  				 * Determines keyboard behavior when this view is focused. Defaults to <Titanium.UI.Android.SOFT_KEYBOARD_DEFAULT_ON_FOCUS>.
   				 */
   var softKeyboardOnFocus: scala.Double = js.native
   /**
@@ -282,6 +286,10 @@ trait SearchView
   				 * Gets the value of the <Titanium.UI.Android.SearchView.accessibilityValue> property.
   				 */
   def getAccessibilityValue(): java.lang.String = js.native
+  /**
+  				 * Gets the value of the <Titanium.UI.Android.SearchView.anchorPoint> property.
+  				 */
+  def getAnchorPoint(): titaniumLib.Point = js.native
   /**
   				 * Gets the value of the <Titanium.UI.Android.SearchView.backgroundColor> property.
   				 */
@@ -539,6 +547,10 @@ trait SearchView
   				 * Sets the value of the <Titanium.UI.Android.SearchView.accessibilityValue> property.
   				 */
   def setAccessibilityValue(accessibilityValue: java.lang.String): scala.Unit = js.native
+  /**
+  				 * Sets the value of the <Titanium.UI.Android.SearchView.anchorPoint> property.
+  				 */
+  def setAnchorPoint(anchorPoint: titaniumLib.Point): scala.Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.Android.SearchView.backgroundColor> property.
   				 */

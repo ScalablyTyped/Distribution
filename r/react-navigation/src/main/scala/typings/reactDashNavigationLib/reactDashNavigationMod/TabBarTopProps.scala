@@ -18,10 +18,10 @@ trait TabBarTopProps extends js.Object {
   var showLabel: scala.Boolean
   var tabBarPosition: java.lang.String
   var upperCaseLabel: scala.Boolean
-  def getLabel(scene: TabScene): reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+  def getLabel(scene: TabScene): reactLib.reactMod.ReactNode | java.lang.String
   def getOnPress(previousScene: NavigationRoute[NavigationParams], scene: TabScene): js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit]
   def jumpToIndex(index: scala.Double): scala.Unit
-  def renderIcon(scene: TabScene): reactLib.reactMod.ReactNs.ReactElement[_]
+  def renderIcon(scene: TabScene): reactLib.reactMod.ReactElement[_]
 }
 
 object TabBarTopProps {
@@ -29,14 +29,14 @@ object TabBarTopProps {
   def apply(
     activeTintColor: java.lang.String,
     allowFontScaling: scala.Boolean,
-    getLabel: TabScene => reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
+    getLabel: TabScene => reactLib.reactMod.ReactNode | java.lang.String,
     getOnPress: (NavigationRoute[NavigationParams], TabScene) => js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit],
     inactiveTintColor: java.lang.String,
     indicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle],
     jumpToIndex: scala.Double => scala.Unit,
     navigation: NavigationScreenProp[NavigationState, NavigationParams],
     position: AnimatedValue,
-    renderIcon: TabScene => reactLib.reactMod.ReactNs.ReactElement[_],
+    renderIcon: TabScene => reactLib.reactMod.ReactElement[_],
     showIcon: scala.Boolean,
     showLabel: scala.Boolean,
     tabBarPosition: java.lang.String,

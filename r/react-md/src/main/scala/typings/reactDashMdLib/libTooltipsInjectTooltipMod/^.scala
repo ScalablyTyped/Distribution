@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Tooltips/injectTooltip", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default[ComposedProps](ComposedComponent: reactLib.reactMod.ReactNs.ComponentType[ComposedProps with TooltipProps]): (reactLib.reactMod.ReactNs.ComponentClass[ComposedProps with InjectedTooltipProps, reactLib.reactMod.ReactNs.ComponentState]) with TooltippedComponent = js.native
+  def default[ComposedProps](ComposedComponent: reactLib.reactMod.ComponentType[ComposedProps with TooltipProps]): (reactLib.reactMod.ComponentClass[ComposedProps with InjectedTooltipProps, reactLib.reactMod.ComponentState]) with TooltippedComponent = js.native
 }
 

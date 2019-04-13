@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StatisticComponent
-  extends reactLib.reactMod.ReactNs.FunctionComponent[StatisticProps] {
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.FunctionComponent[StatisticProps] {
+  var Group: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps
   ] = js.native
-  var Label: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Label: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticLabelMod.StatisticLabelProps
   ] = js.native
-  var Value: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Value: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps
   ] = js.native
 }

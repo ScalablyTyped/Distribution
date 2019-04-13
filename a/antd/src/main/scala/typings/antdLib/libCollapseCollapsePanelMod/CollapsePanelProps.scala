@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation._
 trait CollapsePanelProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
-  var header: reactLib.reactMod.ReactNs.ReactNode
+  var header: reactLib.reactMod.ReactNode
   var id: js.UndefOr[java.lang.String] = js.undefined
   var key: java.lang.String
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showArrow: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CollapsePanelProps {
   @scala.inline
   def apply(
-    header: reactLib.reactMod.ReactNs.ReactNode,
+    header: reactLib.reactMod.ReactNode,
     key: java.lang.String,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     prefixCls: java.lang.String = null,
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CollapsePanelProps = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key)
     if (className != null) __obj.updateDynamic("className")(className)

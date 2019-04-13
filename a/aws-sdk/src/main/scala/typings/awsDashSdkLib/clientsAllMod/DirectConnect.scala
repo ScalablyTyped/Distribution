@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class DirectConnect ()
-  extends awsDashSdkLib.clientsDirectconnectMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDirectconnectMod.^ {
+  def this(options: awsDashSdkLib.clientsDirectconnectMod.ClientConfiguration) = this()
 }
 

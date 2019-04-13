@@ -9,22 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class BlockConverter ()
   extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[
-      typescriptLib.typescriptMod.tsNs.SourceFile | typescriptLib.typescriptMod.tsNs.Block | typescriptLib.typescriptMod.tsNs.ModuleBlock
+      typescriptLib.typescriptMod.SourceFile | typescriptLib.typescriptMod.Block | typescriptLib.typescriptMod.ModuleBlock
     ] {
   var convertSourceFile: js.Any = js.native
   var convertStatements: js.Any = js.native
   var mode: SourceFileMode = js.native
+  def convert(context: typedocLib.distLibConverterContextMod.Context, node: typescriptLib.typescriptMod.Block): typedocLib.distLibModelsMod.Reflection = js.native
   def convert(
     context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.Block
+    node: typescriptLib.typescriptMod.ModuleBlock
   ): typedocLib.distLibModelsMod.Reflection = js.native
   def convert(
     context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.ModuleBlock
-  ): typedocLib.distLibModelsMod.Reflection = js.native
-  def convert(
-    context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.SourceFile
+    node: typescriptLib.typescriptMod.SourceFile
   ): typedocLib.distLibModelsMod.Reflection = js.native
 }
 

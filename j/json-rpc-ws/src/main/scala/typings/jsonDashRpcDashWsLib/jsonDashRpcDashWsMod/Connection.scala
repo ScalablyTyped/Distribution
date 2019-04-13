@@ -10,7 +10,7 @@ trait Connection extends js.Object {
   var id: java.lang.String = js.native
   var parent: Base[_] = js.native
   var responseHandlers: org.scalablytyped.runtime.StringDictionary[ReplyCallback[_]] = js.native
-  var socket: wsLib.wsMod.namespaced = js.native
+  var socket: wsLib.wsMod.^ = js.native
   def close(): scala.Unit = js.native
   def close(error: js.Any): scala.Unit = js.native
   def hangup(): scala.Unit = js.native

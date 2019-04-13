@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ref-union", JSImport.Namespace)
 @js.native
-object ^
-  extends org.scalablytyped.runtime.TopLevel[refDashUnionLib.Anon_Fields]
+object ^ extends js.Object {
+  def apply(): UnionType = js.native
+  def apply(fields: js.Array[_]): UnionType = js.native
+  def apply(fields: js.Object): UnionType = js.native
+}
 

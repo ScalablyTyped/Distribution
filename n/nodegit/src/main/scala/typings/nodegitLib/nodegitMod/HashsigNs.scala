@@ -18,6 +18,5 @@ object HashsigNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.hashDashSigMod.HashsigNs.OPTION with scala.Double] = js.native
   }
   
-  type OPTION = nodegitLib.hashDashSigMod.HashsigNs.OPTION
 }
 

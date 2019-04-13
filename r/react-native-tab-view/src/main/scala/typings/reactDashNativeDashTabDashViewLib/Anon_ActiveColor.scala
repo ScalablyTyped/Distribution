@@ -56,25 +56,25 @@ trait Anon_ActiveColor[T /* <: reactDashNativeDashTabDashViewLib.reactDashNative
   var renderBadge: js.UndefOr[
     js.Function1[
       /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var renderIcon: js.UndefOr[
     js.Function1[
       /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var renderIndicator: js.UndefOr[
     js.Function1[
       /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.IndicatorProps[T], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var renderLabel: js.UndefOr[
     js.Function1[
       /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -103,10 +103,10 @@ object Anon_ActiveColor {
     onTabPress: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => scala.Unit = null,
     pressColor: java.lang.String = null,
     pressOpacity: scala.Int | scala.Double = null,
-    renderBadge: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderIcon: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderIndicator: /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.IndicatorProps[T] => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderLabel: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderBadge: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNode = null,
+    renderIcon: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNode = null,
+    renderIndicator: /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.IndicatorProps[T] => reactLib.reactMod.ReactNode = null,
+    renderLabel: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNode = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,

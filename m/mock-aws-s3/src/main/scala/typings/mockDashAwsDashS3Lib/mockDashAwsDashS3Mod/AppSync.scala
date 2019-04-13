@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class AppSync ()
   extends awsDashSdkLib.awsDashSdkMod.AppSync {
-  def this(options: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAppsyncMod.ClientConfiguration) = this()
 }
 

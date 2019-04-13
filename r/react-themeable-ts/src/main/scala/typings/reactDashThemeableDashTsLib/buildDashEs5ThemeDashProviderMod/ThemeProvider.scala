@@ -16,7 +16,7 @@ class ThemeProvider ()
 @JSImport("react-themeable-ts/build-es5/theme-provider", "ThemeProvider")
 @js.native
 object ThemeProvider extends js.Object {
-  var childContextTypes: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.Validator[_]] = js.native
+  var childContextTypes: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.Validator[_]] = js.native
   var defaultProps: org.scalablytyped.runtime.StringDictionary[js.Object] = js.native
 }
 

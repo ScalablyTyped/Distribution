@@ -7,16 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("scalike", "TryBuilder1")
 @js.native
-class TryBuilder1[A, B] protected ()
-  extends scalikeLib.scalikeMod.scalikeNs.TryBuilder1[A, B] {
-  def this(oa: scalikeLib.scalikeMod.scalikeNs.Try[A], ob: scalikeLib.scalikeMod.scalikeNs.Try[B]) = this()
-  /* CompleteClass */
-  override var oa: js.Any = js.native
-  /* CompleteClass */
-  override var ob: js.Any = js.native
-  /* CompleteClass */
-  override def chain[C](oc: scalikeLib.scalikeMod.scalikeNs.Try[C]): scalikeLib.scalikeMod.scalikeNs.TryBuilder2[A, B, C] = js.native
-  /* CompleteClass */
-  override def run[C](f: js.Function2[A, B, C]): scalikeLib.scalikeMod.scalikeNs.Try[C] = js.native
+class TryBuilder1[A, B] protected () extends js.Object {
+  def this(oa: Try[A], ob: Try[B]) = this()
+  var oa: js.Any = js.native
+  var ob: js.Any = js.native
+  def chain[C](oc: Try[C]): TryBuilder2[A, B, C] = js.native
+  def run[C](f: js.Function2[/* a */ A, /* b */ B, C]): Try[C] = js.native
 }
 

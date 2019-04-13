@@ -64,7 +64,7 @@ class Fluxible () extends js.Object {
   def registerStore(
     store: org.scalablytyped.runtime.Instantiable1[
       /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
-      fluxibleLib.addonsBaseStoreMod.namespaced[js.Object]
+      fluxibleLib.addonsBaseStoreMod.^[js.Object]
     ]
   ): scala.Unit = js.native
   /**

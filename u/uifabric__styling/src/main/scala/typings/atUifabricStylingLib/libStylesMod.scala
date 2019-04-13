@@ -12,23 +12,22 @@ object libStylesMod extends js.Object {
   val AnimationVariables: atUifabricStylingLib.libInterfacesIAnimationStylesMod.IAnimationVariables = js.native
   val DefaultFontStyles: atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles = js.native
   val DefaultPalette: atUifabricStylingLib.libInterfacesIPaletteMod.IPalette = js.native
-  val HighContrastSelector: /* @media screen and (-ms-high-contrast: active) */ java.lang.String = js.native
-  val HighContrastSelectorBlack: /* @media screen and (-ms-high-contrast: white-on-black) */ java.lang.String = js.native
-  val HighContrastSelectorWhite: /* @media screen and (-ms-high-contrast: black-on-white) */ java.lang.String = js.native
-  val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_AnimationName = js.native
+  val HighContrastSelector: atUifabricStylingLib.atUifabricStylingLibStrings.`@media screen and (-ms-high-contrast: active)` = js.native
+  val HighContrastSelectorBlack: atUifabricStylingLib.atUifabricStylingLibStrings.`@media screen and (-ms-high-contrast: white-on-black)` = js.native
+  val HighContrastSelectorWhite: atUifabricStylingLib.atUifabricStylingLibStrings.`@media screen and (-ms-high-contrast: black-on-white)` = js.native
   val ScreenWidthMaxLarge: scala.Double = js.native
   val ScreenWidthMaxMedium: scala.Double = js.native
   val ScreenWidthMaxSmall: scala.Double = js.native
   val ScreenWidthMaxXLarge: scala.Double = js.native
   val ScreenWidthMaxXXLarge: scala.Double = js.native
-  val ScreenWidthMinLarge: /* 640 */ scala.Double = js.native
-  val ScreenWidthMinMedium: /* 480 */ scala.Double = js.native
-  val ScreenWidthMinSmall: /* 320 */ scala.Double = js.native
-  val ScreenWidthMinUhfMobile: /* 768 */ scala.Double = js.native
-  val ScreenWidthMinXLarge: /* 1024 */ scala.Double = js.native
-  val ScreenWidthMinXXLarge: /* 1366 */ scala.Double = js.native
-  val ScreenWidthMinXXXLarge: /* 1920 */ scala.Double = js.native
-  val ThemeSettingName: /* theme */ java.lang.String = js.native
+  val ScreenWidthMinLarge: atUifabricStylingLib.atUifabricStylingLibNumbers.`640` = js.native
+  val ScreenWidthMinMedium: atUifabricStylingLib.atUifabricStylingLibNumbers.`480` = js.native
+  val ScreenWidthMinSmall: atUifabricStylingLib.atUifabricStylingLibNumbers.`320` = js.native
+  val ScreenWidthMinUhfMobile: atUifabricStylingLib.atUifabricStylingLibNumbers.`768` = js.native
+  val ScreenWidthMinXLarge: atUifabricStylingLib.atUifabricStylingLibNumbers.`1024` = js.native
+  val ScreenWidthMinXXLarge: atUifabricStylingLib.atUifabricStylingLibNumbers.`1366` = js.native
+  val ScreenWidthMinXXXLarge: atUifabricStylingLib.atUifabricStylingLibNumbers.`1920` = js.native
+  val ThemeSettingName: atUifabricStylingLib.atUifabricStylingLibStrings.theme = js.native
   val hiddenContentStyle: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val noWrap: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val normalize: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
@@ -224,6 +223,26 @@ object libStylesMod extends js.Object {
     val medium: java.lang.String = js.native
     val small: java.lang.String = js.native
     val xSmall: java.lang.String = js.native
+  }
+  
+  @js.native
+  object PulsingBeaconAnimationStyles extends js.Object {
+    def continuousPulseAnimationDouble(
+      beaconColorOne: java.lang.String,
+      beaconColorTwo: java.lang.String,
+      innerDimension: java.lang.String,
+      outerDimension: java.lang.String,
+      borderWidth: java.lang.String
+    ): java.lang.String = js.native
+    def continuousPulseAnimationSingle(
+      beaconColorOne: java.lang.String,
+      beaconColorTwo: java.lang.String,
+      innerDimension: java.lang.String,
+      outerDimension: java.lang.String,
+      borderWidth: java.lang.String
+    ): java.lang.String = js.native
+    def createDefaultAnimation(animationName: java.lang.String): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+    def createDefaultAnimation(animationName: java.lang.String, delayLength: java.lang.String): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   }
   
   @JSName("ZIndexes")

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Athena ()
-  extends awsDashSdkLib.clientsAthenaMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAthenaMod.AthenaNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAthenaMod.^ {
+  def this(options: awsDashSdkLib.clientsAthenaMod.ClientConfiguration) = this()
 }
 

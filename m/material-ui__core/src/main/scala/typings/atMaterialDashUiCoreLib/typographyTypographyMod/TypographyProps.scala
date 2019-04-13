@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLElement>[P]} */ trait TypographyProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLElement>[P]} */ trait TypographyProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TypographyClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var align: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TypographyProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[TypographyProps]] = js.undefined
   var gutterBottom: js.UndefOr[scala.Boolean] = js.undefined
   var headlineMapping: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
@@ -35,16 +35,16 @@ object TypographyProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TypographyClassKey]] = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error = null,
-    component: reactLib.reactMod.ReactNs.ReactType[TypographyProps] = null,
+    component: reactLib.reactMod.ReactType[TypographyProps] = null,
     gutterBottom: js.UndefOr[scala.Boolean] = js.undefined,
     headlineMapping: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
     */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.TypographyProps with js.Any = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     noWrap: js.UndefOr[scala.Boolean] = js.undefined,
     paragraph: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: Style | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit = null
   ): TypographyProps = {
     val __obj = js.Dynamic.literal()

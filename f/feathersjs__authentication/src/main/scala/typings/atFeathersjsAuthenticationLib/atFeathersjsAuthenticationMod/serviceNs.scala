@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object serviceNs extends js.Object {
   @js.native
   class Service[T] protected () extends js.Object {
-    def this(app: expressLib.expressMod.eNs.Application) = this()
-    def create(data: stdLib.Partial[T], params: atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Params): js.Promise[atFeathersjsAuthenticationLib.Anon_AccessToken] = js.native
-    def remove(id: java.lang.String, params: atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Params): js.Promise[atFeathersjsAuthenticationLib.Anon_AccessToken] = js.native
-    def remove(id: scala.Null, params: atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Params): js.Promise[atFeathersjsAuthenticationLib.Anon_AccessToken] = js.native
+    def this(app: expressLib.expressMod.Application) = this()
+    def create(data: stdLib.Partial[T], params: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Params): js.Promise[atFeathersjsAuthenticationLib.Anon_AccessToken] = js.native
+    def remove(id: java.lang.String, params: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Params): js.Promise[atFeathersjsAuthenticationLib.Anon_AccessToken] = js.native
+    def remove(id: scala.Null, params: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Params): js.Promise[atFeathersjsAuthenticationLib.Anon_AccessToken] = js.native
   }
   
 }

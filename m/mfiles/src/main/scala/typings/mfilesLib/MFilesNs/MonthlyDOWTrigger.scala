@@ -17,3 +17,8 @@ class MonthlyDOWTrigger ()
   override var WhichWeek: MFTriggerWeekOfMonth = js.native
 }
 
+@JSGlobal("MFiles.MonthlyDOWTrigger")
+@js.native
+object MonthlyDOWTrigger
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMonthlyDOWTrigger]
+

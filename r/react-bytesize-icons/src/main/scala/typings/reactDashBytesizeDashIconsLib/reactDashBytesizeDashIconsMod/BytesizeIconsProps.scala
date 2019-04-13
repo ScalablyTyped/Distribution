@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BytesizeIconsProps
-  extends reactLib.reactMod.ReactNs.Props[js.Any] {
+  extends reactLib.reactMod.Props[js.Any] {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var strokeLinecap: js.UndefOr[StrokeLinecap] = js.undefined
@@ -18,11 +18,11 @@ trait BytesizeIconsProps
 object BytesizeIconsProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: java.lang.String = null,
     height: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[js.Any] = null,
     strokeLinecap: StrokeLinecap = null,
     strokeLinejoin: StrokeLinejoin = null,
     strokeWidth: java.lang.String = null,

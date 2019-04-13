@@ -18,7 +18,7 @@ trait ServerAuth extends js.Object {
     * Contains the default authentication configuration is a default strategy was set via
     * [server.auth.default()](https://github.com/hapijs/hapi/blob/master/API.md#server.auth.default()).
     */
-  val settings: atHapiHapiLib.Anon_DefaultServerAuthConfig = js.native
+  val settings: atHapiHapiLib.Anon_Default = js.native
   def default(options: ServerAuthConfig): scala.Unit = js.native
   /**
     * Sets a default strategy which is applied to every route where:

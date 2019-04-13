@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("connect-mongo", "MongoStore")
 @js.native
 class MongoStore ()
-  extends connectDashMongoLib.connectDashMongoMod.connectMongoNs.MongoStore
+  extends expressDashSessionLib.expressDashSessionMod.Store {
+  def close(): scala.Unit = js.native
+}
 

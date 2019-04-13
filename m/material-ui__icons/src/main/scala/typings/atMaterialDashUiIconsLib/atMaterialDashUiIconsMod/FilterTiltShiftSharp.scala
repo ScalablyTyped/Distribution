@@ -16,9 +16,9 @@ class FilterTiltShiftSharp protected ()
 @JSImport("@material-ui/icons", "FilterTiltShiftSharp")
 @js.native
 class FilterTiltShiftSharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

@@ -10,8 +10,8 @@ package object stylelintMod {
     /* primaryOption */ js.Any, 
     /* secondaryOptions */ js.UndefOr[js.Object], 
     js.Function2[
-      /* root */ postcssLib.postcssMod.postcssNs.Root, 
-      /* result */ postcssLib.postcssMod.postcssNs.Result, 
+      /* root */ postcssLib.postcssMod.Root, 
+      /* result */ postcssLib.postcssMod.Result, 
       scala.Unit | js.Thenable[scala.Unit]
     ]
   ]

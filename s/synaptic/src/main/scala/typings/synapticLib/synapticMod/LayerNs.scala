@@ -39,10 +39,15 @@ object LayerNs extends js.Object {
   @js.native
   sealed trait gateType extends js.Object
   
-  var connection: synapticLib.Anon_Uid = js.native
   /* static members */
   @js.native
   object LayerConnection extends js.Object {
+    def uid(): scala.Double = js.native
+  }
+  
+  @js.native
+  object connection
+    extends org.scalablytyped.runtime.Instantiable0[LayerConnection] {
     def uid(): scala.Double = js.native
   }
   

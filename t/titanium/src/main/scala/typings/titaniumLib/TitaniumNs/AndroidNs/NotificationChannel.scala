@@ -51,6 +51,10 @@ trait NotificationChannel
   			 */
   var showBadge: scala.Boolean
   /**
+  			 * A URL to the sound to play.
+  			 */
+  var sound: java.lang.String
+  /**
   			 * The vibration pattern for notifications posted to this channel.
   			 */
   var vibratePattern: js.Array[scala.Double]
@@ -94,6 +98,10 @@ trait NotificationChannel
   			 * Gets the value of the <Titanium.Android.NotificationChannel.showBadge> property.
   			 */
   def getShowBadge(): scala.Boolean
+  /**
+  			 * Gets the value of the <Titanium.Android.NotificationChannel.sound> property.
+  			 */
+  def getSound(): java.lang.String
   /**
   			 * Gets the value of the <Titanium.Android.NotificationChannel.vibratePattern> property.
   			 */
@@ -139,6 +147,10 @@ trait NotificationChannel
   			 */
   def setShowBadge(showBadge: scala.Boolean): scala.Unit
   /**
+  			 * Sets the value of the <Titanium.Android.NotificationChannel.sound> property.
+  			 */
+  def setSound(sound: java.lang.String): scala.Unit
+  /**
   			 * Sets the value of the <Titanium.Android.NotificationChannel.vibratePattern> property.
   			 */
   def setVibratePattern(vibratePattern: js.Array[scala.Double]): scala.Unit
@@ -168,6 +180,7 @@ object NotificationChannel {
     getLightColor: () => scala.Double,
     getLockscreenVisibility: () => scala.Double,
     getShowBadge: () => scala.Boolean,
+    getSound: () => java.lang.String,
     getVibratePattern: () => js.Array[scala.Double],
     groupId: java.lang.String,
     id: java.lang.String,
@@ -186,14 +199,16 @@ object NotificationChannel {
     setLightColor: scala.Double => scala.Unit,
     setLockscreenVisibility: scala.Double => scala.Unit,
     setShowBadge: scala.Boolean => scala.Unit,
+    setSound: java.lang.String => scala.Unit,
     setVibratePattern: js.Array[scala.Double] => scala.Unit,
     showBadge: scala.Boolean,
+    sound: java.lang.String,
     vibratePattern: js.Array[scala.Double],
     getLifecycleContainer: () => titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): NotificationChannel = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, bypassDnd = bypassDnd, description = description, enableLights = enableLights, enableVibration = enableVibration, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getBypassDnd = js.Any.fromFunction0(getBypassDnd), getDescription = js.Any.fromFunction0(getDescription), getEnableLights = js.Any.fromFunction0(getEnableLights), getEnableVibration = js.Any.fromFunction0(getEnableVibration), getGroupId = js.Any.fromFunction0(getGroupId), getId = js.Any.fromFunction0(getId), getImportance = js.Any.fromFunction0(getImportance), getLightColor = js.Any.fromFunction0(getLightColor), getLockscreenVisibility = js.Any.fromFunction0(getLockscreenVisibility), getShowBadge = js.Any.fromFunction0(getShowBadge), getVibratePattern = js.Any.fromFunction0(getVibratePattern), groupId = groupId, id = id, importance = importance, lightColor = lightColor, lockscreenVisibility = lockscreenVisibility, removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setBypassDnd = js.Any.fromFunction1(setBypassDnd), setDescription = js.Any.fromFunction1(setDescription), setEnableLights = js.Any.fromFunction1(setEnableLights), setEnableVibration = js.Any.fromFunction1(setEnableVibration), setGroupId = js.Any.fromFunction1(setGroupId), setId = js.Any.fromFunction1(setId), setImportance = js.Any.fromFunction1(setImportance), setLightColor = js.Any.fromFunction1(setLightColor), setLockscreenVisibility = js.Any.fromFunction1(setLockscreenVisibility), setShowBadge = js.Any.fromFunction1(setShowBadge), setVibratePattern = js.Any.fromFunction1(setVibratePattern), showBadge = showBadge, vibratePattern = vibratePattern)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, bypassDnd = bypassDnd, description = description, enableLights = enableLights, enableVibration = enableVibration, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getBypassDnd = js.Any.fromFunction0(getBypassDnd), getDescription = js.Any.fromFunction0(getDescription), getEnableLights = js.Any.fromFunction0(getEnableLights), getEnableVibration = js.Any.fromFunction0(getEnableVibration), getGroupId = js.Any.fromFunction0(getGroupId), getId = js.Any.fromFunction0(getId), getImportance = js.Any.fromFunction0(getImportance), getLightColor = js.Any.fromFunction0(getLightColor), getLockscreenVisibility = js.Any.fromFunction0(getLockscreenVisibility), getShowBadge = js.Any.fromFunction0(getShowBadge), getSound = js.Any.fromFunction0(getSound), getVibratePattern = js.Any.fromFunction0(getVibratePattern), groupId = groupId, id = id, importance = importance, lightColor = lightColor, lockscreenVisibility = lockscreenVisibility, removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setBypassDnd = js.Any.fromFunction1(setBypassDnd), setDescription = js.Any.fromFunction1(setDescription), setEnableLights = js.Any.fromFunction1(setEnableLights), setEnableVibration = js.Any.fromFunction1(setEnableVibration), setGroupId = js.Any.fromFunction1(setGroupId), setId = js.Any.fromFunction1(setId), setImportance = js.Any.fromFunction1(setImportance), setLightColor = js.Any.fromFunction1(setLightColor), setLockscreenVisibility = js.Any.fromFunction1(setLockscreenVisibility), setShowBadge = js.Any.fromFunction1(setShowBadge), setSound = js.Any.fromFunction1(setSound), setVibratePattern = js.Any.fromFunction1(setVibratePattern), showBadge = showBadge, sound = sound, vibratePattern = vibratePattern)
     if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)

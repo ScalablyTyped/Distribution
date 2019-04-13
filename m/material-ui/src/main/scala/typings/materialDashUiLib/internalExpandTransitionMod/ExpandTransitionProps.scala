@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExpandTransitionProps
-  extends reactLib.reactMod.ReactNs.Props[ExpandTransition] {
+  extends reactLib.reactMod.Props[ExpandTransition] {
   var enterDelay: js.UndefOr[scala.Double] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var transitionDelay: js.UndefOr[scala.Double] = js.undefined
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
 }
@@ -18,13 +18,13 @@ trait ExpandTransitionProps
 object ExpandTransitionProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     enterDelay: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ExpandTransition] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    ref: reactLib.reactMod.LegacyRef[ExpandTransition] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDelay: scala.Int | scala.Double = null,
     transitionDuration: scala.Int | scala.Double = null
   ): ExpandTransitionProps = {

@@ -7,63 +7,39 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "Equation")
 @js.native
-class Equation protected ()
-  extends p2Lib.p2Mod.p2Ns.Equation {
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, minForce: scala.Double) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, minForce: scala.Double, maxForce: scala.Double) = this()
-  /* CompleteClass */
-  override var G: js.Tuple2[scala.Double, scala.Double] = js.native
-  /* CompleteClass */
-  override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
-  /* CompleteClass */
-  override var bodyB: p2Lib.p2Mod.p2Ns.Body = js.native
-  /* CompleteClass */
-  override var enabled: scala.Boolean = js.native
-  /* CompleteClass */
-  override var epsilon: scala.Double = js.native
-  /* CompleteClass */
-  override var maxForce: scala.Double = js.native
-  /* CompleteClass */
-  override var minForce: scala.Double = js.native
-  /* CompleteClass */
-  override var multiplier: scala.Double = js.native
-  /* CompleteClass */
-  override var needsUpdate: scala.Boolean = js.native
-  /* CompleteClass */
-  override var relativeVelocity: scala.Double = js.native
-  /* CompleteClass */
-  override var relaxation: scala.Double = js.native
-  /* CompleteClass */
-  override var stiffness: scala.Double = js.native
-  /* CompleteClass */
-  override var timeStep: scala.Double = js.native
-  /* CompleteClass */
-  override def addToWlambda(deltalambda: scala.Double): scala.Double = js.native
-  /* CompleteClass */
-  override def computeB(a: scala.Double, b: scala.Double, h: scala.Double): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGW(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGWlambda(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGiMGt(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGiMf(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeGq(): scala.Double = js.native
-  /* CompleteClass */
-  override def computeInvC(eps: scala.Double): scala.Double = js.native
-  /* CompleteClass */
-  override def gmult(
+class Equation protected () extends js.Object {
+  def this(bodyA: Body, bodyB: Body) = this()
+  def this(bodyA: Body, bodyB: Body, minForce: scala.Double) = this()
+  def this(bodyA: Body, bodyB: Body, minForce: scala.Double, maxForce: scala.Double) = this()
+  var G: js.Tuple2[scala.Double, scala.Double] = js.native
+  var bodyA: Body = js.native
+  var bodyB: Body = js.native
+  var enabled: scala.Boolean = js.native
+  var epsilon: scala.Double = js.native
+  var maxForce: scala.Double = js.native
+  var minForce: scala.Double = js.native
+  var multiplier: scala.Double = js.native
+  var needsUpdate: scala.Boolean = js.native
+  var relativeVelocity: scala.Double = js.native
+  var relaxation: scala.Double = js.native
+  var stiffness: scala.Double = js.native
+  var timeStep: scala.Double = js.native
+  def addToWlambda(deltalambda: scala.Double): scala.Double = js.native
+  def computeB(a: scala.Double, b: scala.Double, h: scala.Double): scala.Double = js.native
+  def computeGW(): scala.Double = js.native
+  def computeGWlambda(): scala.Double = js.native
+  def computeGiMGt(): scala.Double = js.native
+  def computeGiMf(): scala.Double = js.native
+  def computeGq(): scala.Double = js.native
+  def computeInvC(eps: scala.Double): scala.Double = js.native
+  def gmult(
     G: js.Tuple2[scala.Double, scala.Double],
     vi: js.Tuple2[scala.Double, scala.Double],
     wi: js.Tuple2[scala.Double, scala.Double],
     vj: js.Tuple2[scala.Double, scala.Double],
     wj: js.Tuple2[scala.Double, scala.Double]
   ): scala.Double = js.native
-  /* CompleteClass */
-  override def update(): scala.Unit = js.native
+  def update(): scala.Unit = js.native
 }
 
 /* static members */

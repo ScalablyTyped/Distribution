@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libLanguageUtilsMod {
-  type FilterCallback = js.Function1[/* node */ typescriptLib.typescriptMod.tsNs.Node, scala.Boolean]
+  type FilterCallback = js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean]
   type ForEachCommentCallback = js.Function3[
     /* fullText */ java.lang.String, 
-    /* kind */ typescriptLib.typescriptMod.tsNs.SyntaxKind, 
+    /* kind */ typescriptLib.typescriptMod.SyntaxKind, 
     /* pos */ TokenPosition, 
     scala.Unit
   ]
   type ForEachTokenCallback = js.Function4[
     /* fullText */ java.lang.String, 
-    /* kind */ typescriptLib.typescriptMod.tsNs.SyntaxKind, 
+    /* kind */ typescriptLib.typescriptMod.SyntaxKind, 
     /* pos */ TokenPosition, 
-    /* parent */ typescriptLib.typescriptMod.tsNs.Node, 
+    /* parent */ typescriptLib.typescriptMod.Node, 
     scala.Unit
   ]
 }

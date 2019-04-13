@@ -9,1161 +9,757 @@ import scala.scalajs.js.annotation._
 trait AppSync
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_AppSync: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ClientConfiguration = js.native
+  var config_AppSync: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Creates a unique key that you can distribute to clients who are executing your API.
     */
-  def createApiKey(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createApiKey(): awsDashSdkLib.libRequestMod.Request[CreateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createApiKey(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyResponse, 
+      /* data */ CreateApiKeyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a unique key that you can distribute to clients who are executing your API.
     */
-  def createApiKey(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createApiKey(params: CreateApiKeyRequest): awsDashSdkLib.libRequestMod.Request[CreateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createApiKey(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyRequest,
+    params: CreateApiKeyRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyResponse, 
+      /* data */ CreateApiKeyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a DataSource object.
     */
-  def createDataSource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDataSource(): awsDashSdkLib.libRequestMod.Request[CreateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDataSource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceResponse, 
+      /* data */ CreateDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a DataSource object.
     */
-  def createDataSource(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDataSource(params: CreateDataSourceRequest): awsDashSdkLib.libRequestMod.Request[CreateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDataSource(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceRequest,
+    params: CreateDataSourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceResponse, 
+      /* data */ CreateDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
     */
-  def createFunction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createFunction(): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createFunction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionResponse, 
+      /* data */ CreateFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
     */
-  def createFunction(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createFunction(params: CreateFunctionRequest): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createFunction(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionRequest,
+    params: CreateFunctionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionResponse, 
+      /* data */ CreateFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a GraphqlApi object.
     */
-  def createGraphqlApi(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createGraphqlApi(): awsDashSdkLib.libRequestMod.Request[CreateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createGraphqlApi(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiResponse, 
+      /* data */ CreateGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a GraphqlApi object.
     */
-  def createGraphqlApi(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createGraphqlApi(params: CreateGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[CreateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createGraphqlApi(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiRequest,
+    params: CreateGraphqlApiRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiResponse, 
+      /* data */ CreateGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand and converts the data source's responses into GraphQL.
     */
-  def createResolver(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createResolver(): awsDashSdkLib.libRequestMod.Request[CreateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createResolver(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverResponse, 
+      /* data */ CreateResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand and converts the data source's responses into GraphQL.
     */
-  def createResolver(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createResolver(params: CreateResolverRequest): awsDashSdkLib.libRequestMod.Request[CreateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createResolver(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverRequest,
+    params: CreateResolverRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverResponse, 
+      /* data */ CreateResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Type object.
     */
-  def createType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createType(): awsDashSdkLib.libRequestMod.Request[CreateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeResponse, 
+      /* data */ CreateTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Type object.
     */
-  def createType(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createType(params: CreateTypeRequest): awsDashSdkLib.libRequestMod.Request[CreateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createType(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeRequest,
+    params: CreateTypeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeResponse, 
+      /* data */ CreateTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.CreateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an API key.
     */
-  def deleteApiKey(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteApiKey(): awsDashSdkLib.libRequestMod.Request[DeleteApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApiKey(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyResponse, 
+      /* data */ DeleteApiKeyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an API key.
     */
-  def deleteApiKey(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteApiKey(params: DeleteApiKeyRequest): awsDashSdkLib.libRequestMod.Request[DeleteApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApiKey(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyRequest,
+    params: DeleteApiKeyRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyResponse, 
+      /* data */ DeleteApiKeyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a DataSource object.
     */
-  def deleteDataSource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDataSource(): awsDashSdkLib.libRequestMod.Request[DeleteDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDataSource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceResponse, 
+      /* data */ DeleteDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a DataSource object.
     */
-  def deleteDataSource(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDataSource(params: DeleteDataSourceRequest): awsDashSdkLib.libRequestMod.Request[DeleteDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDataSource(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceRequest,
+    params: DeleteDataSourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceResponse, 
+      /* data */ DeleteDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Function.
     */
-  def deleteFunction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFunction(): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFunction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionResponse, 
+      /* data */ DeleteFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Function.
     */
-  def deleteFunction(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFunction(params: DeleteFunctionRequest): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFunction(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionRequest,
+    params: DeleteFunctionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionResponse, 
+      /* data */ DeleteFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a GraphqlApi object.
     */
-  def deleteGraphqlApi(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteGraphqlApi(): awsDashSdkLib.libRequestMod.Request[DeleteGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteGraphqlApi(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiResponse, 
+      /* data */ DeleteGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a GraphqlApi object.
     */
-  def deleteGraphqlApi(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteGraphqlApi(params: DeleteGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[DeleteGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteGraphqlApi(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiRequest,
+    params: DeleteGraphqlApiRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiResponse, 
+      /* data */ DeleteGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Resolver object.
     */
-  def deleteResolver(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteResolver(): awsDashSdkLib.libRequestMod.Request[DeleteResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteResolver(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverResponse, 
+      /* data */ DeleteResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Resolver object.
     */
-  def deleteResolver(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteResolver(params: DeleteResolverRequest): awsDashSdkLib.libRequestMod.Request[DeleteResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteResolver(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverRequest,
+    params: DeleteResolverRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverResponse, 
+      /* data */ DeleteResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Type object.
     */
-  def deleteType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteType(): awsDashSdkLib.libRequestMod.Request[DeleteTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeResponse, 
+      /* data */ DeleteTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Type object.
     */
-  def deleteType(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteType(params: DeleteTypeRequest): awsDashSdkLib.libRequestMod.Request[DeleteTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteType(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeRequest,
+    params: DeleteTypeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeResponse, 
+      /* data */ DeleteTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.DeleteTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a DataSource object.
     */
-  def getDataSource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDataSource(): awsDashSdkLib.libRequestMod.Request[GetDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDataSource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceResponse, 
+      /* data */ GetDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a DataSource object.
     */
-  def getDataSource(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDataSource(params: GetDataSourceRequest): awsDashSdkLib.libRequestMod.Request[GetDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDataSource(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceRequest,
+    params: GetDataSourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceResponse, 
+      /* data */ GetDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get a Function.
     */
-  def getFunction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFunction(): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFunction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionResponse, 
+      /* data */ GetFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get a Function.
     */
-  def getFunction(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFunction(params: GetFunctionRequest): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFunction(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionRequest,
+    params: GetFunctionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionResponse, 
+      /* data */ GetFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a GraphqlApi object.
     */
-  def getGraphqlApi(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getGraphqlApi(): awsDashSdkLib.libRequestMod.Request[GetGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getGraphqlApi(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiResponse, 
+      /* data */ GetGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a GraphqlApi object.
     */
-  def getGraphqlApi(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getGraphqlApi(params: GetGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[GetGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getGraphqlApi(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiRequest,
+    params: GetGraphqlApiRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiResponse, 
+      /* data */ GetGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the introspection schema for a GraphQL API.
     */
-  def getIntrospectionSchema(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getIntrospectionSchema(): awsDashSdkLib.libRequestMod.Request[GetIntrospectionSchemaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getIntrospectionSchema(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaResponse, 
+      /* data */ GetIntrospectionSchemaResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetIntrospectionSchemaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the introspection schema for a GraphQL API.
     */
-  def getIntrospectionSchema(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getIntrospectionSchema(params: GetIntrospectionSchemaRequest): awsDashSdkLib.libRequestMod.Request[GetIntrospectionSchemaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getIntrospectionSchema(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaRequest,
+    params: GetIntrospectionSchemaRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaResponse, 
+      /* data */ GetIntrospectionSchemaResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetIntrospectionSchemaResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetIntrospectionSchemaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a Resolver object.
     */
-  def getResolver(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getResolver(): awsDashSdkLib.libRequestMod.Request[GetResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getResolver(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverResponse, 
+      /* data */ GetResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a Resolver object.
     */
-  def getResolver(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getResolver(params: GetResolverRequest): awsDashSdkLib.libRequestMod.Request[GetResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getResolver(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverRequest,
+    params: GetResolverRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverResponse, 
+      /* data */ GetResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the current status of a schema creation operation.
     */
-  def getSchemaCreationStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getSchemaCreationStatus(): awsDashSdkLib.libRequestMod.Request[GetSchemaCreationStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSchemaCreationStatus(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusResponse, 
+      /* data */ GetSchemaCreationStatusResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetSchemaCreationStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the current status of a schema creation operation.
     */
-  def getSchemaCreationStatus(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getSchemaCreationStatus(params: GetSchemaCreationStatusRequest): awsDashSdkLib.libRequestMod.Request[GetSchemaCreationStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getSchemaCreationStatus(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusRequest,
+    params: GetSchemaCreationStatusRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusResponse, 
+      /* data */ GetSchemaCreationStatusResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetSchemaCreationStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetSchemaCreationStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a Type object.
     */
-  def getType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getType(): awsDashSdkLib.libRequestMod.Request[GetTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getType(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTypeResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a Type object.
     */
-  def getType(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getType(params: GetTypeRequest): awsDashSdkLib.libRequestMod.Request[GetTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getType(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.GetTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetTypeRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTypeResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the API keys for a given API.  API keys are deleted automatically sometime after they expire. However, they may still be included in the response until they have actually been deleted. You can safely call DeleteApiKey to manually delete a key before it's automatically deleted. 
     */
-  def listApiKeys(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listApiKeys(): awsDashSdkLib.libRequestMod.Request[ListApiKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listApiKeys(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysResponse, 
+      /* data */ ListApiKeysResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListApiKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the API keys for a given API.  API keys are deleted automatically sometime after they expire. However, they may still be included in the response until they have actually been deleted. You can safely call DeleteApiKey to manually delete a key before it's automatically deleted. 
     */
-  def listApiKeys(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listApiKeys(params: ListApiKeysRequest): awsDashSdkLib.libRequestMod.Request[ListApiKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listApiKeys(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysRequest,
+    params: ListApiKeysRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysResponse, 
+      /* data */ ListApiKeysResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListApiKeysResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListApiKeysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the data sources for a given API.
     */
-  def listDataSources(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDataSources(): awsDashSdkLib.libRequestMod.Request[ListDataSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDataSources(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesResponse, 
+      /* data */ ListDataSourcesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDataSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the data sources for a given API.
     */
-  def listDataSources(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDataSources(params: ListDataSourcesRequest): awsDashSdkLib.libRequestMod.Request[ListDataSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDataSources(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesRequest,
+    params: ListDataSourcesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesResponse, 
+      /* data */ ListDataSourcesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListDataSourcesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDataSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List multiple functions.
     */
-  def listFunctions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFunctions(): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFunctions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsResponse, 
+      /* data */ ListFunctionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List multiple functions.
     */
-  def listFunctions(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFunctions(params: ListFunctionsRequest): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFunctions(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsRequest,
+    params: ListFunctionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsResponse, 
+      /* data */ ListFunctionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListFunctionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists your GraphQL APIs.
     */
-  def listGraphqlApis(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listGraphqlApis(): awsDashSdkLib.libRequestMod.Request[ListGraphqlApisResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listGraphqlApis(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisResponse, 
+      /* data */ ListGraphqlApisResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListGraphqlApisResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists your GraphQL APIs.
     */
-  def listGraphqlApis(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listGraphqlApis(params: ListGraphqlApisRequest): awsDashSdkLib.libRequestMod.Request[ListGraphqlApisResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listGraphqlApis(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisRequest,
+    params: ListGraphqlApisRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisResponse, 
+      /* data */ ListGraphqlApisResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListGraphqlApisResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListGraphqlApisResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the resolvers for a given API and type.
     */
-  def listResolvers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listResolvers(): awsDashSdkLib.libRequestMod.Request[ListResolversResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listResolvers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversResponse, 
+      /* data */ ListResolversResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListResolversResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the resolvers for a given API and type.
     */
-  def listResolvers(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listResolvers(params: ListResolversRequest): awsDashSdkLib.libRequestMod.Request[ListResolversResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listResolvers(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversRequest,
+    params: ListResolversRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversResponse, 
+      /* data */ ListResolversResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListResolversResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the resolvers that are associated with a specific function.
     */
-  def listResolversByFunction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listResolversByFunction(): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listResolversByFunction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionResponse, 
+      /* data */ ListResolversByFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the resolvers that are associated with a specific function.
     */
-  def listResolversByFunction(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listResolversByFunction(params: ListResolversByFunctionRequest): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listResolversByFunction(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionRequest,
+    params: ListResolversByFunctionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionResponse, 
+      /* data */ ListResolversByFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListResolversByFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the types for a given API.
     */
-  def listTypes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTypes(): awsDashSdkLib.libRequestMod.Request[ListTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTypes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesResponse, 
+      /* data */ ListTypesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the types for a given API.
     */
-  def listTypes(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTypes(params: ListTypesRequest): awsDashSdkLib.libRequestMod.Request[ListTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTypes(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesRequest,
+    params: ListTypesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesResponse, 
+      /* data */ ListTypesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ListTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a new schema to your GraphQL API. This operation is asynchronous. Use to determine when it has completed.
     */
-  def startSchemaCreation(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startSchemaCreation(): awsDashSdkLib.libRequestMod.Request[StartSchemaCreationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startSchemaCreation(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationResponse, 
+      /* data */ StartSchemaCreationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartSchemaCreationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a new schema to your GraphQL API. This operation is asynchronous. Use to determine when it has completed.
     */
-  def startSchemaCreation(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startSchemaCreation(params: StartSchemaCreationRequest): awsDashSdkLib.libRequestMod.Request[StartSchemaCreationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startSchemaCreation(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationRequest,
+    params: StartSchemaCreationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationResponse, 
+      /* data */ StartSchemaCreationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.StartSchemaCreationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartSchemaCreationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an API key.
     */
-  def updateApiKey(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateApiKey(): awsDashSdkLib.libRequestMod.Request[UpdateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApiKey(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyResponse, 
+      /* data */ UpdateApiKeyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an API key.
     */
-  def updateApiKey(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateApiKey(params: UpdateApiKeyRequest): awsDashSdkLib.libRequestMod.Request[UpdateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApiKey(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyRequest,
+    params: UpdateApiKeyRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyResponse, 
+      /* data */ UpdateApiKeyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateApiKeyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateApiKeyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a DataSource object.
     */
-  def updateDataSource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDataSource(): awsDashSdkLib.libRequestMod.Request[UpdateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDataSource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceResponse, 
+      /* data */ UpdateDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a DataSource object.
     */
-  def updateDataSource(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDataSource(params: UpdateDataSourceRequest): awsDashSdkLib.libRequestMod.Request[UpdateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDataSource(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceRequest,
+    params: UpdateDataSourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceResponse, 
+      /* data */ UpdateDataSourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateDataSourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Function object.
     */
-  def updateFunction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFunction(): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFunction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionResponse, 
+      /* data */ UpdateFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Function object.
     */
-  def updateFunction(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFunction(params: UpdateFunctionRequest): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFunction(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionRequest,
+    params: UpdateFunctionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionResponse, 
+      /* data */ UpdateFunctionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateFunctionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a GraphqlApi object.
     */
-  def updateGraphqlApi(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateGraphqlApi(): awsDashSdkLib.libRequestMod.Request[UpdateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateGraphqlApi(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiResponse, 
+      /* data */ UpdateGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a GraphqlApi object.
     */
-  def updateGraphqlApi(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateGraphqlApi(params: UpdateGraphqlApiRequest): awsDashSdkLib.libRequestMod.Request[UpdateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateGraphqlApi(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiRequest,
+    params: UpdateGraphqlApiRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiResponse, 
+      /* data */ UpdateGraphqlApiResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateGraphqlApiResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Resolver object.
     */
-  def updateResolver(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateResolver(): awsDashSdkLib.libRequestMod.Request[UpdateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateResolver(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverResponse, 
+      /* data */ UpdateResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Resolver object.
     */
-  def updateResolver(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateResolver(params: UpdateResolverRequest): awsDashSdkLib.libRequestMod.Request[UpdateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateResolver(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverRequest,
+    params: UpdateResolverRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverResponse, 
+      /* data */ UpdateResolverResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateResolverResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateResolverResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Type object.
     */
-  def updateType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateType(): awsDashSdkLib.libRequestMod.Request[UpdateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeResponse, 
+      /* data */ UpdateTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Type object.
     */
-  def updateType(params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateType(params: UpdateTypeRequest): awsDashSdkLib.libRequestMod.Request[UpdateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateType(
-    params: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeRequest,
+    params: UpdateTypeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeResponse, 
+      /* data */ UpdateTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsAppsyncMod.AppSyncNs.UpdateTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ResponsiveContainerProps extends js.Object {
   var aspect: js.UndefOr[scala.Double] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var debounce: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -21,7 +21,7 @@ trait ResponsiveContainerProps extends js.Object {
 object ResponsiveContainerProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     aspect: scala.Int | scala.Double = null,
     className: java.lang.String | scala.Double = null,
     debounce: scala.Int | scala.Double = null,

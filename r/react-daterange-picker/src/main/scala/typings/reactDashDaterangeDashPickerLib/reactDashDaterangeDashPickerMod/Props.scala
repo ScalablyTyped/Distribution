@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props[T]
-  extends reactLib.reactMod.ReactNs.Props[T] {
+  extends reactLib.reactMod.Props[T] {
   var bemBlock: js.UndefOr[java.lang.String] = js.undefined
   var bemNamespace: js.UndefOr[java.lang.String] = js.undefined
   var dateStates: js.UndefOr[js.Array[DateState]] = js.undefined
@@ -31,7 +31,7 @@ trait Props[T]
     js.Function1[/* value */ momentDashRangeLib.momentDashRangeMod.MomentRangeExtends, scala.Unit]
   ] = js.undefined
   var paginationArrowComponent: js.UndefOr[
-    (reactLib.reactMod.ReactNs.ComponentClass[PaginationArrowProps[js.Object], reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[PaginationArrowProps[js.Object]]
+    (reactLib.reactMod.ComponentClass[PaginationArrowProps[js.Object], reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[PaginationArrowProps[js.Object]]
   ] = js.undefined
   var selectedLabel: js.UndefOr[java.lang.String] = js.undefined
   var selectionType: js.UndefOr[
@@ -41,7 +41,7 @@ trait Props[T]
   var singleDateRange: js.UndefOr[scala.Boolean] = js.undefined
   var stateDefinitions: js.UndefOr[StateDefinitions] = js.undefined
   var value: js.UndefOr[
-    momentDashRangeLib.momentDashRangeMod.MomentRangeExtends | momentDashRangeLib.momentDashRangeMod.DateRange | momentLib.momentMod.momentNs.Moment
+    momentDashRangeLib.momentDashRangeMod.MomentRangeExtends | momentDashRangeLib.momentDashRangeMod.DateRange | momentLib.momentMod.Moment
   ] = js.undefined
 }
 
@@ -50,7 +50,7 @@ object Props {
   def apply[T](
     bemBlock: java.lang.String = null,
     bemNamespace: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     dateStates: js.Array[DateState] = null,
     defaultState: java.lang.String = null,
     disableNavigation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,7 +61,7 @@ object Props {
     initialMonth: scala.Int | scala.Double = null,
     initialRange: js.Object = null,
     initialYear: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     maximumDate: stdLib.Date = null,
     minimumDate: stdLib.Date = null,
     numberOfCalendars: scala.Int | scala.Double = null,
@@ -69,14 +69,14 @@ object Props {
     onHighlightRange: /* date */ stdLib.Date => scala.Unit = null,
     onSelect: /* value */ OnSelectCallbackParam => scala.Unit = null,
     onSelectStart: /* value */ momentDashRangeLib.momentDashRangeMod.MomentRangeExtends => scala.Unit = null,
-    paginationArrowComponent: (reactLib.reactMod.ReactNs.ComponentClass[PaginationArrowProps[js.Object], reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[PaginationArrowProps[js.Object]] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[T] = null,
+    paginationArrowComponent: (reactLib.reactMod.ComponentClass[PaginationArrowProps[js.Object], reactLib.reactMod.ComponentState]) | reactLib.reactMod.SFC[PaginationArrowProps[js.Object]] = null,
+    ref: reactLib.reactMod.LegacyRef[T] = null,
     selectedLabel: java.lang.String = null,
     selectionType: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.single | reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.range = null,
     showLegend: js.UndefOr[scala.Boolean] = js.undefined,
     singleDateRange: js.UndefOr[scala.Boolean] = js.undefined,
     stateDefinitions: StateDefinitions = null,
-    value: momentDashRangeLib.momentDashRangeMod.MomentRangeExtends | momentDashRangeLib.momentDashRangeMod.DateRange | momentLib.momentMod.momentNs.Moment = null
+    value: momentDashRangeLib.momentDashRangeMod.MomentRangeExtends | momentDashRangeLib.momentDashRangeMod.DateRange | momentLib.momentMod.Moment = null
   ): Props[T] = {
     val __obj = js.Dynamic.literal()
     if (bemBlock != null) __obj.updateDynamic("bemBlock")(bemBlock)

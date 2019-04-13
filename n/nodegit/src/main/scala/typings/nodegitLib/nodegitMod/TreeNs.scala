@@ -16,6 +16,5 @@ object TreeNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.treeMod.TreeNs.WALK_MODE with scala.Double] = js.native
   }
   
-  type WALK_MODE = nodegitLib.treeMod.TreeNs.WALK_MODE
 }
 

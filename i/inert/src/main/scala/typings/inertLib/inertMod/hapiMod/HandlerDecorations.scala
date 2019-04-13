@@ -18,7 +18,7 @@ trait HandlerDecorations extends js.Object {
     * The directory handler is an object with the following options:
     * @see {@link https://github.com/hapijs/inert#the-directory-handler}
     */
-  var directory: js.UndefOr[inertLib.inertMod.inertNs.DirectoryHandlerRouteObject] = js.undefined
+  var directory: js.UndefOr[inertLib.inertMod.DirectoryHandlerRouteObject] = js.undefined
   /**
     * The file handler
     *
@@ -29,7 +29,7 @@ trait HandlerDecorations extends js.Object {
     * @see {@link https://github.com/hapijs/inert#the-file-handler}
     */
   var file: js.UndefOr[
-    java.lang.String | inertLib.inertMod.inertNs.RequestHandler[java.lang.String] | inertLib.inertMod.inertNs.FileHandlerRouteObject
+    java.lang.String | inertLib.inertMod.RequestHandler[java.lang.String] | inertLib.inertMod.FileHandlerRouteObject
   ] = js.undefined
   var files: js.UndefOr[inertLib.Anon_RelativeTo] = js.undefined
 }
@@ -37,8 +37,8 @@ trait HandlerDecorations extends js.Object {
 object HandlerDecorations {
   @scala.inline
   def apply(
-    directory: inertLib.inertMod.inertNs.DirectoryHandlerRouteObject = null,
-    file: java.lang.String | inertLib.inertMod.inertNs.RequestHandler[java.lang.String] | inertLib.inertMod.inertNs.FileHandlerRouteObject = null,
+    directory: inertLib.inertMod.DirectoryHandlerRouteObject = null,
+    file: java.lang.String | inertLib.inertMod.RequestHandler[java.lang.String] | inertLib.inertMod.FileHandlerRouteObject = null,
     files: inertLib.Anon_RelativeTo = null
   ): HandlerDecorations = {
     val __obj = js.Dynamic.literal()

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 		 */
 @js.native
 trait IDialogScope
-  extends angularLib.angularMod.angularNs.IRootScopeService {
+  extends angularLib.angularMod.IRootScopeService {
   /**
   			 * Any serializable data that you want to be stored in the controller's dialog scope.
   			 * From version 0.3.6 $scope.ngDialogData keeps references to the objects instead of copying them.

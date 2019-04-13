@@ -63,10 +63,5 @@ object EnumsNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.enumsMod.EnumsNs.INDXENTRY_FLAG with scala.Double] = js.native
   }
   
-  type CVAR = nodegitLib.enumsMod.EnumsNs.CVAR
-  type DIRECTION = nodegitLib.enumsMod.EnumsNs.DIRECTION
-  type FEATURE = nodegitLib.enumsMod.EnumsNs.FEATURE
-  type IDXENTRY_EXTENDED_FLAG = nodegitLib.enumsMod.EnumsNs.IDXENTRY_EXTENDED_FLAG
-  type INDXENTRY_FLAG = nodegitLib.enumsMod.EnumsNs.INDXENTRY_FLAG
 }
 

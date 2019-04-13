@@ -20,53 +20,53 @@ object jszipLibStrings {
   
   @js.native
   sealed trait array
-    extends jszipLib.jszipMod.JSZipNs.InputType
-       with jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.InputType
+       with jszipLib.jszipMod.OutputType
   
   @js.native
   sealed trait arraybuffer
-    extends jszipLib.jszipMod.JSZipNs.InputType
-       with jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.InputType
+       with jszipLib.jszipMod.OutputType
   
   @js.native
   sealed trait base64
-    extends jszipLib.jszipMod.JSZipNs.InputType
-       with jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.InputType
+       with jszipLib.jszipMod.OutputType
   
   @js.native
   sealed trait binarystring
-    extends jszipLib.jszipMod.JSZipNs.InputType
-       with jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.InputType
+       with jszipLib.jszipMod.OutputType
   
   @js.native
   sealed trait blob
-    extends jszipLib.jszipMod.JSZipNs.InputType
-       with jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.InputType
+       with jszipLib.jszipMod.OutputType
   
   @js.native
   sealed trait nodebuffer
-    extends jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.OutputType
   
   @js.native
   sealed trait nodestream extends js.Object
   
   @js.native
   sealed trait stream
-    extends jszipLib.jszipMod.JSZipNs.InputType
+    extends jszipLib.jszipMod.InputType
   
   @js.native
   sealed trait string
-    extends jszipLib.jszipMod.JSZipNs.InputType
+    extends jszipLib.jszipMod.InputType
   
   @js.native
   sealed trait text
-    extends jszipLib.jszipMod.JSZipNs.InputType
-       with jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.InputType
+       with jszipLib.jszipMod.OutputType
   
   @js.native
   sealed trait uint8array
-    extends jszipLib.jszipMod.JSZipNs.InputType
-       with jszipLib.jszipMod.JSZipNs.OutputType
+    extends jszipLib.jszipMod.InputType
+       with jszipLib.jszipMod.OutputType
   
   @scala.inline
   def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]

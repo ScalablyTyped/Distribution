@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
-  val OBFUSCATED_ERROR: /* An invariant failed, however the error is obfuscated because this is an production build. */ java.lang.String = js.native
+  val OBFUSCATED_ERROR: mobxLib.mobxLibStrings.`An invariant failed, however the error is obfuscated because this is an production buildDOT` = js.native
   def addHiddenFinalProp(`object`: js.Any, propName: stdLib.PropertyKey, value: js.Any): scala.Unit = js.native
   def addHiddenProp(`object`: js.Any, propName: stdLib.PropertyKey, value: js.Any): scala.Unit = js.native
   def assertPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Unit = js.native

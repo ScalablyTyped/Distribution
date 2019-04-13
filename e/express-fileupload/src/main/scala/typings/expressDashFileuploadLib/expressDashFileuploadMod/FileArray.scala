@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("express-fileupload", "FileArray")
 @js.native
 class FileArray ()
-  extends expressDashFileuploadLib.expressDashFileuploadMod.fileUploadNs.FileArray
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[UploadedFile | js.Array[UploadedFile]]
 

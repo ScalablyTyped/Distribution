@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends org.scalablytyped.runtime.TopLevel[
-      (screenfullLib.screenfullMod.screenfullNs.Screenfull with screenfullLib.Anon_DefaultFalse) | screenfullLib.screenfullLibNumbers.`false`
+      (Screenfull with screenfullLib.Anon_DefaultFalse) | screenfullLib.screenfullLibNumbers.`false`
     ]
 

@@ -14,7 +14,7 @@ object freeGroupNs extends js.Object {
     def this(value: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libEitherMod.Either[A, A]]) = this()
   }
   
-  val URI: /* FreeGroup */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.FreeGroup = js.native
   val empty: fpDashTsLib.libFreeGroupMod.FreeGroup[scala.Nothing] = js.native
   val freeGroup: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libFreeGroupMod.URI] = js.native
   def fromArray[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[

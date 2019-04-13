@@ -9,7 +9,7 @@ trait Role extends js.Object {
   var permissionNames: js.Array[java.lang.String]
   var roleName: java.lang.String
   var validationFunction: js.UndefOr[RoleValidationFunction] = js.undefined
-  def validateRole(): angularLib.angularMod.angularNs.IPromise[_]
+  def validateRole(): angularLib.angularMod.IPromise[_]
 }
 
 object Role {
@@ -17,7 +17,7 @@ object Role {
   def apply(
     permissionNames: js.Array[java.lang.String],
     roleName: java.lang.String,
-    validateRole: () => angularLib.angularMod.angularNs.IPromise[_],
+    validateRole: () => angularLib.angularMod.IPromise[_],
     validationFunction: RoleValidationFunction = null
   ): Role = {
     val __obj = js.Dynamic.literal(permissionNames = permissionNames, roleName = roleName, validateRole = js.Any.fromFunction0(validateRole))

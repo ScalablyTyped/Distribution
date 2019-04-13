@@ -19,6 +19,5 @@ object NetworkNackNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[ndnDashJsLib.networkDashNackMod.NetworkNackNs.Reason with scala.Double] = js.native
   }
   
-  type Reason = ndnDashJsLib.networkDashNackMod.NetworkNackNs.Reason
 }
 

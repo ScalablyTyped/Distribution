@@ -9,77 +9,75 @@ trait NavigationDrawerProps
   extends reactDashMdLib.libDrawersDrawerMod.SharedDrawerProps {
   var constantDrawerType: js.UndefOr[scala.Boolean] = js.undefined
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
-  var contentComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var contentComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var contentId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var contentProps: js.UndefOr[js.Object] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var desktopDrawerType: js.UndefOr[reactDashMdLib.libDrawersDrawerMod.DrawerType] = js.undefined
   var desktopMinWidth: js.UndefOr[scala.Double] = js.undefined
-  var drawerChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var drawerChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var drawerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var drawerHeader: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var drawerHeaderChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var drawerHeader: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var drawerHeaderChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var drawerId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
-  var drawerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var drawerTitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var drawerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var drawerTitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var drawerTransitionDuration: js.UndefOr[scala.Double] = js.undefined
   var drawerType: js.UndefOr[reactDashMdLib.libDrawersDrawerMod.DrawerType] = js.undefined
   var drawerZDepth: js.UndefOr[scala.Double] = js.undefined
   var extractMini: js.UndefOr[scala.Boolean] = js.undefined
-  var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var includeDrawerHeader: js.UndefOr[scala.Boolean] = js.undefined
-  var jumpLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var miniDrawerChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var jumpLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var miniDrawerChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var miniDrawerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var miniDrawerHeader: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var miniDrawerHeader: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var miniDrawerId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
-  var miniDrawerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var miniDrawerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var miniNavClassName: js.UndefOr[java.lang.String] = js.undefined
   var miniNavItemsId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
-  var miniNavStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var miniNavStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var mobileDrawerType: js.UndefOr[reactDashMdLib.libDrawersDrawerMod.MobileDrawerType] = js.undefined
   var mobileMinWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     * @deprecated
     */
   var onVisibilityToggle: js.UndefOr[js.Function2[/* visible */ scala.Boolean, /* event */ stdLib.Event, scala.Unit]] = js.undefined
-  var persistentIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var persistentIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var persistentIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var persistentIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
   var persistentIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var tabletDrawerType: js.UndefOr[reactDashMdLib.libDrawersDrawerMod.DrawerType] = js.undefined
   var tabletMinWidth: js.UndefOr[scala.Double] = js.undefined
-  var temporaryIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var temporaryIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var temporaryIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var temporaryIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
   var temporaryIconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var toolbarActions: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
-  ] = js.undefined
-  var toolbarChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var toolbarActions: js.UndefOr[reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var toolbarChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var toolbarClassName: js.UndefOr[java.lang.String] = js.undefined
   var toolbarId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var toolbarProminent: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarProminentTitle: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarSingleColor: js.UndefOr[scala.Boolean] = js.undefined
-  var toolbarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var toolbarStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var toolbarThemeType: js.UndefOr[
     reactDashMdLib.reactDashMdLibStrings.default | reactDashMdLib.reactDashMdLibStrings.colored | reactDashMdLib.reactDashMdLibStrings.themed
   ] = js.undefined
-  var toolbarTitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var toolbarTitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var toolbarTitleClassName: js.UndefOr[java.lang.String] = js.undefined
-  var toolbarTitleMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
-  var toolbarTitleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var toolbarTitleMenu: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var toolbarTitleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var toolbarZDepth: js.UndefOr[scala.Double] = js.undefined
   var transitionEnterTimeout: js.UndefOr[scala.Double] = js.undefined
   var transitionLeaveTimeout: js.UndefOr[scala.Double] = js.undefined
@@ -91,106 +89,104 @@ object NavigationDrawerProps {
   def apply(
     autoclose: js.UndefOr[scala.Boolean] = js.undefined,
     autocloseAfterInk: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     clickableDesktopOverlay: js.UndefOr[scala.Boolean] = js.undefined,
     constantDrawerType: js.UndefOr[scala.Boolean] = js.undefined,
     contentClassName: java.lang.String = null,
-    contentComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    contentComponent: reactLib.reactMod.ReactType[_] = null,
     contentId: reactDashMdLib.libMod.IdPropType = null,
     contentProps: js.Object = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
     defaultMedia: reactDashMdLib.libDrawersDrawerMod.MediaType = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     desktopDrawerType: reactDashMdLib.libDrawersDrawerMod.DrawerType = null,
     desktopMinWidth: scala.Int | scala.Double = null,
-    drawerChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    drawerChildren: reactLib.reactMod.ReactNode = null,
     drawerClassName: java.lang.String = null,
-    drawerHeader: reactLib.reactMod.ReactNs.ReactNode = null,
-    drawerHeaderChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    drawerHeader: reactLib.reactMod.ReactNode = null,
+    drawerHeaderChildren: reactLib.reactMod.ReactNode = null,
     drawerId: reactDashMdLib.libMod.IdPropType = null,
-    drawerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    drawerTitle: reactLib.reactMod.ReactNs.ReactNode = null,
+    drawerStyle: reactLib.reactMod.CSSProperties = null,
+    drawerTitle: reactLib.reactMod.ReactNode = null,
     drawerTransitionDuration: scala.Int | scala.Double = null,
     drawerType: reactDashMdLib.libDrawersDrawerMod.DrawerType = null,
     drawerZDepth: scala.Int | scala.Double = null,
     extractMini: js.UndefOr[scala.Boolean] = js.undefined,
-    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: reactLib.reactMod.ReactNode = null,
     includeDrawerHeader: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    jumpLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    jumpLabel: reactLib.reactMod.ReactNode = null,
     lastChild: js.UndefOr[scala.Boolean] = js.undefined,
-    miniDrawerChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    miniDrawerChildren: reactLib.reactMod.ReactNode = null,
     miniDrawerClassName: java.lang.String = null,
-    miniDrawerHeader: reactLib.reactMod.ReactNs.ReactNode = null,
+    miniDrawerHeader: reactLib.reactMod.ReactNode = null,
     miniDrawerId: reactDashMdLib.libMod.IdPropType = null,
-    miniDrawerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    miniDrawerStyle: reactLib.reactMod.CSSProperties = null,
     miniNavClassName: java.lang.String = null,
     miniNavItemsId: reactDashMdLib.libMod.IdPropType = null,
-    miniNavStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    miniNavStyle: reactLib.reactMod.CSSProperties = null,
     mobileDrawerType: reactDashMdLib.libDrawersDrawerMod.MobileDrawerType = null,
     mobileMinWidth: scala.Int | scala.Double = null,
     navClassName: java.lang.String = null,
-    navItems: js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[_] | reactDashMdLib.libDrawersDrawerMod.NavItem
-    ] = null,
+    navItems: js.Array[reactLib.reactMod.ReactElement[_] | reactDashMdLib.libDrawersDrawerMod.NavItem] = null,
     navItemsId: reactDashMdLib.libMod.IdPropType = null,
-    navStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    navStyle: reactLib.reactMod.CSSProperties = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
     onMediaTypeChange: (/* type */ reactDashMdLib.libDrawersDrawerMod.DrawerType, /* media */ reactDashMdLib.Anon_Desktop) => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onVisibilityChange: (/* visible */ scala.Boolean, /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onVisibilityChange: (/* visible */ scala.Boolean, /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     onVisibilityToggle: (/* visible */ scala.Boolean, /* event */ stdLib.Event) => scala.Unit = null,
     overlay: js.UndefOr[scala.Boolean] = js.undefined,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    persistentIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    persistentIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
+    persistentIcon: reactLib.reactMod.ReactElement[_] = null,
+    persistentIconChildren: reactLib.reactMod.ReactNode = null,
     persistentIconClassName: java.lang.String = null,
     portal: js.UndefOr[scala.Boolean] = js.undefined,
     position: reactDashMdLib.libDrawersDrawerMod.DrawerPosition = null,
     renderNode: js.Object = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabletDrawerType: reactDashMdLib.libDrawersDrawerMod.DrawerType = null,
     tabletMinWidth: scala.Int | scala.Double = null,
-    temporaryIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    temporaryIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    temporaryIcon: reactLib.reactMod.ReactElement[_] = null,
+    temporaryIconChildren: reactLib.reactMod.ReactNode = null,
     temporaryIconClassName: java.lang.String = null,
-    toolbarActions: reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = null,
-    toolbarChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    toolbarActions: reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]] = null,
+    toolbarChildren: reactLib.reactMod.ReactNode = null,
     toolbarClassName: java.lang.String = null,
     toolbarId: reactDashMdLib.libMod.IdPropType = null,
     toolbarProminent: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarProminentTitle: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarSingleColor: js.UndefOr[scala.Boolean] = js.undefined,
-    toolbarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    toolbarStyle: reactLib.reactMod.CSSProperties = null,
     toolbarThemeType: reactDashMdLib.reactDashMdLibStrings.default | reactDashMdLib.reactDashMdLibStrings.colored | reactDashMdLib.reactDashMdLibStrings.themed = null,
-    toolbarTitle: reactLib.reactMod.ReactNs.ReactNode = null,
+    toolbarTitle: reactLib.reactMod.ReactNode = null,
     toolbarTitleClassName: java.lang.String = null,
-    toolbarTitleMenu: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    toolbarTitleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    toolbarTitleMenu: reactLib.reactMod.ReactElement[_] = null,
+    toolbarTitleStyle: reactLib.reactMod.CSSProperties = null,
     toolbarZDepth: scala.Int | scala.Double = null,
     transitionEnterTimeout: scala.Int | scala.Double = null,
     transitionLeaveTimeout: scala.Int | scala.Double = null,

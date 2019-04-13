@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class S3Control ()
   extends awsDashSdkLib.awsDashSdkMod.S3Control {
-  def this(options: awsDashSdkLib.clientsS3controlMod.S3ControlNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsS3controlMod.ClientConfiguration) = this()
 }
 

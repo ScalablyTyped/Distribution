@@ -16,11 +16,11 @@ object MonthPickerProps {
   def apply(
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    dateRender: (/* current */ momentLib.momentMod.momentNs.Moment, /* today */ momentLib.momentMod.momentNs.Moment) => reactLib.reactMod.ReactNs.ReactNode = null,
-    defaultPickerValue: momentLib.momentMod.momentNs.Moment = null,
-    defaultValue: momentLib.momentMod.momentNs.Moment = null,
+    dateRender: (/* current */ momentLib.momentMod.Moment, /* today */ momentLib.momentMod.Moment) => reactLib.reactMod.ReactNode = null,
+    defaultPickerValue: momentLib.momentMod.Moment = null,
+    defaultValue: momentLib.momentMod.Moment = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    disabledDate: /* current */ js.UndefOr[momentLib.momentMod.momentNs.Moment] => scala.Boolean = null,
+    disabledDate: /* current */ js.UndefOr[momentLib.momentMod.Moment] => scala.Boolean = null,
     dropdownClassName: java.lang.String = null,
     format: java.lang.String | js.Array[java.lang.String] = null,
     getCalendarContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
@@ -28,17 +28,17 @@ object MonthPickerProps {
     inputPrefixCls: java.lang.String = null,
     locale: js.Any = null,
     name: java.lang.String = null,
-    onChange: (/* date */ momentLib.momentMod.momentNs.Moment, /* dateString */ java.lang.String) => scala.Unit = null,
+    onChange: (/* date */ momentLib.momentMod.Moment, /* dateString */ java.lang.String) => scala.Unit = null,
     onOpenChange: /* status */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
-    popupStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    popupStyle: reactLib.reactMod.CSSProperties = null,
     prefixCls: java.lang.String = null,
-    renderExtraFooter: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderExtraFooter: () => reactLib.reactMod.ReactNode = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
-    value: momentLib.momentMod.momentNs.Moment = null
+    style: reactLib.reactMod.CSSProperties = null,
+    suffixIcon: reactLib.reactMod.ReactNode = null,
+    value: momentLib.momentMod.Moment = null
   ): MonthPickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)

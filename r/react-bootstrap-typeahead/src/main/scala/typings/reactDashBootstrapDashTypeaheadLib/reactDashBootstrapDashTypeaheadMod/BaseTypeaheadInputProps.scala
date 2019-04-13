@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseTypeaheadInputProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[
+  extends reactLib.reactMod.InputHTMLAttributes[
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.input
     ] {
   @JSName("type")
@@ -17,7 +17,7 @@ object BaseTypeaheadInputProps {
   @scala.inline
   def apply(
     `type`: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.text,
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[
+    InputHTMLAttributes: reactLib.reactMod.InputHTMLAttributes[
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.input
     ] = null
   ): BaseTypeaheadInputProps = {

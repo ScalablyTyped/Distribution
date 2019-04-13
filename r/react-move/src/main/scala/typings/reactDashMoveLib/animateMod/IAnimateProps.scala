@@ -12,13 +12,13 @@ trait IAnimateProps extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var start: js.Any
   var update: js.UndefOr[js.Any] = js.undefined
-  def children(state: reactDashMoveLib.reactDashMoveMod.HashMap): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(state: reactDashMoveLib.reactDashMoveMod.HashMap): reactLib.reactMod.ReactElement[_]
 }
 
 object IAnimateProps {
   @scala.inline
   def apply(
-    children: reactDashMoveLib.reactDashMoveMod.HashMap => reactLib.reactMod.ReactNs.ReactElement[_],
+    children: reactDashMoveLib.reactDashMoveMod.HashMap => reactLib.reactMod.ReactElement[_],
     start: js.Any,
     enter: js.Any = null,
     interpolation: reactDashMoveLib.reactDashMoveMod.GetInterpolator = null,

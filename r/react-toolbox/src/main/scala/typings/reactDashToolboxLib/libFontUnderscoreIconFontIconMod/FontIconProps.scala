@@ -14,11 +14,11 @@ trait FontIconProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * The key string for the icon you want be displayed.
     */
-  var value: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var value: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object FontIconProps {
@@ -28,9 +28,9 @@ object FontIconProps {
     * Additional properties passed to component root.
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -53,8 +53,8 @@ object FontIconProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    value: reactLib.reactMod.ReactNs.ReactNode = null
+    style: reactLib.reactMod.CSSProperties = null,
+    value: reactLib.reactMod.ReactNode = null
   ): FontIconProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

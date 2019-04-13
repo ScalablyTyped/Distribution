@@ -25,6 +25,7 @@ package object screepsLib {
   type COLOR_RED = screepsLib.screepsLibNumbers.`1`
   type COLOR_WHITE = screepsLib.screepsLibNumbers.`10`
   type COLOR_YELLOW = screepsLib.screepsLibNumbers.`6`
+  type CPUShardLimits = org.scalablytyped.runtime.StringDictionary[scala.Double]
   // Color Constants
   type ColorConstant = COLOR_RED | COLOR_PURPLE | COLOR_BLUE | COLOR_CYAN | COLOR_GREEN | COLOR_YELLOW | COLOR_ORANGE | COLOR_BROWN | COLOR_GREY | COLOR_WHITE
   type CreepActionReturnCode = OK | ERR_NOT_OWNER | ERR_BUSY | ERR_INVALID_TARGET | ERR_NOT_IN_RANGE | ERR_NO_BODYPART | ERR_TIRED
@@ -104,6 +105,7 @@ package object screepsLib {
     /* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any, 
     scala.Boolean
   ]
+  type FilterObject = org.scalablytyped.runtime.StringDictionary[js.Any]
   type FindConstant = FIND_EXIT_TOP | FIND_EXIT_RIGHT | FIND_EXIT_BOTTOM | FIND_EXIT_LEFT | FIND_EXIT | FIND_CREEPS | FIND_MY_CREEPS | FIND_HOSTILE_CREEPS | FIND_SOURCES_ACTIVE | FIND_SOURCES | FIND_DROPPED_RESOURCES | FIND_STRUCTURES | FIND_MY_STRUCTURES | FIND_HOSTILE_STRUCTURES | FIND_FLAGS | FIND_CONSTRUCTION_SITES | FIND_MY_SPAWNS | FIND_HOSTILE_SPAWNS | FIND_MY_CONSTRUCTION_SITES | FIND_HOSTILE_CONSTRUCTION_SITES | FIND_MINERALS | FIND_NUKES | FIND_TOMBSTONES
   type HEAL = screepsLib.screepsLibStrings.heal
   type LEFT = screepsLib.screepsLibNumbers.`7`
@@ -119,12 +121,13 @@ package object screepsLib {
   type LOOK_TERRAIN = screepsLib.screepsLibStrings.terrain
   type LOOK_TOMBSTONES = screepsLib.screepsLibStrings.tombstone
   type LookAtResult[K /* <: LookConstant */] = (stdLib.Pick[LookAtTypes, K]) with Anon_Type[K]
+  type LookAtResultMatrix[K /* <: LookConstant */] = org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.NumberDictionary[js.Array[LookAtResult[K]]]]
   type LookAtResultWithPos[K /* <: LookConstant */] = LookAtResult[K] with Anon_XY
   type LookAtTypes = stdLib.Partial[AllLookAtTypes]
   // Look Constants
   type LookConstant = LOOK_CREEPS | LOOK_ENERGY | LOOK_RESOURCES | LOOK_SOURCES | LOOK_MINERALS | LOOK_STRUCTURES | LOOK_FLAGS | LOOK_CONSTRUCTION_SITES | LOOK_NUKES | LOOK_TERRAIN | LOOK_TOMBSTONES
-  type LookForAtAreaResult[T, K /* <: java.lang.String */] = Anon_TypeK[K] with screepsLib.screepsLibStrings.LookForAtAreaResult with js.Any
   type LookForAtAreaResultArray[T, K /* <: java.lang.String */] = js.Array[LookForAtAreaResultWithPos[T, K]]
+  type LookForAtAreaResultMatrix[T, K /* <: java.lang.String */] = org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.NumberDictionary[js.Array[LookForAtAreaResult[T, K]]]]
   type LookForAtAreaResultWithPos[T, K /* <: java.lang.String */] = (LookForAtAreaResult[T, K]) with Anon_XY
   type MOVE = screepsLib.screepsLibStrings.move
   type MarketResourceConstant = ResourceConstant | SUBSCRIPTION_TOKEN

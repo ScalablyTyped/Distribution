@@ -14,11 +14,11 @@ trait Anon_ClassNameBottomLeftGridClassNameBottomRightGrid extends js.Object {
   var enableFixedRowScroll: js.UndefOr[scala.Boolean] = js.undefined
   var fixedColumnCount: js.UndefOr[scala.Double] = js.undefined
   var fixedRowCount: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var styleBottomLeftGrid: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var styleBottomRightGrid: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var styleTopLeftGrid: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var styleTopRightGrid: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var styleBottomLeftGrid: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var styleBottomRightGrid: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var styleTopLeftGrid: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var styleTopRightGrid: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object Anon_ClassNameBottomLeftGridClassNameBottomRightGrid {
@@ -32,11 +32,11 @@ object Anon_ClassNameBottomLeftGridClassNameBottomRightGrid {
     enableFixedRowScroll: js.UndefOr[scala.Boolean] = js.undefined,
     fixedColumnCount: scala.Int | scala.Double = null,
     fixedRowCount: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    styleBottomLeftGrid: reactLib.reactMod.ReactNs.CSSProperties = null,
-    styleBottomRightGrid: reactLib.reactMod.ReactNs.CSSProperties = null,
-    styleTopLeftGrid: reactLib.reactMod.ReactNs.CSSProperties = null,
-    styleTopRightGrid: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null,
+    styleBottomLeftGrid: reactLib.reactMod.CSSProperties = null,
+    styleBottomRightGrid: reactLib.reactMod.CSSProperties = null,
+    styleTopLeftGrid: reactLib.reactMod.CSSProperties = null,
+    styleTopRightGrid: reactLib.reactMod.CSSProperties = null
   ): Anon_ClassNameBottomLeftGridClassNameBottomRightGrid = {
     val __obj = js.Dynamic.literal()
     if (classNameBottomLeftGrid != null) __obj.updateDynamic("classNameBottomLeftGrid")(classNameBottomLeftGrid)

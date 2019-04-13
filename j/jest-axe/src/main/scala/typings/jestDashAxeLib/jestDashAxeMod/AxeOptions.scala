@@ -9,7 +9,7 @@ trait AxeOptions extends js.Object {
   var elementRef: js.UndefOr[scala.Boolean] = js.undefined
   var iframes: js.UndefOr[scala.Boolean] = js.undefined
   var rules: js.UndefOr[js.Object] = js.undefined
-  var runOnly: js.UndefOr[axeDashCoreLib.axeDashCoreMod.axeNs.RunOnly] = js.undefined
+  var runOnly: js.UndefOr[axeDashCoreLib.axeDashCoreMod.RunOnly] = js.undefined
   var selectors: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object AxeOptions {
     elementRef: js.UndefOr[scala.Boolean] = js.undefined,
     iframes: js.UndefOr[scala.Boolean] = js.undefined,
     rules: js.Object = null,
-    runOnly: axeDashCoreLib.axeDashCoreMod.axeNs.RunOnly = null,
+    runOnly: axeDashCoreLib.axeDashCoreMod.RunOnly = null,
     selectors: js.UndefOr[scala.Boolean] = js.undefined
   ): AxeOptions = {
     val __obj = js.Dynamic.literal()

@@ -25,3 +25,8 @@ class AccessControlEntryData ()
   override def SetAllPermissions(Permission: MFPermission): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.AccessControlEntryData")
+@js.native
+object AccessControlEntryData
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlEntryData]
+

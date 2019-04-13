@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/config-provider", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ConfigConsumer: reactLib.reactMod.ReactNs.ComponentClass[
+  val ConfigConsumer: reactLib.reactMod.ComponentClass[
     createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[ConfigConsumerProps | scala.Null], 
     js.Any
   ] = js.native
   val configConsumerProps: js.Array[java.lang.String] = js.native
   def withConfigConsumer[ExportProps /* <: BasicExportProps */](config: ConsumerConfig): js.Function1[
     /* Component */ IReactComponent[_], 
-    reactLib.reactMod.ReactNs.FunctionComponent[ExportProps] with js.Any
+    reactLib.reactMod.FunctionComponent[ExportProps] with js.Any
   ] = js.native
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ImportExport ()
-  extends awsDashSdkLib.clientsImportexportMod.namespaced {
-  def this(options: awsDashSdkLib.clientsImportexportMod.ImportExportNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsImportexportMod.^ {
+  def this(options: awsDashSdkLib.clientsImportexportMod.ClientConfiguration) = this()
 }
 

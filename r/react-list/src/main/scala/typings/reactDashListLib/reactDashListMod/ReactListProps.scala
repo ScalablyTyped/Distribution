@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactListProps
-  extends reactLib.reactMod.ReactNs.Props[ReactList] {
+  extends reactLib.reactMod.Props[ReactList] {
   var axis: js.UndefOr[
     reactDashListLib.reactDashListLibStrings.x | reactDashListLib.reactDashListLibStrings.y
   ] = js.undefined
@@ -29,17 +29,17 @@ object ReactListProps {
   @scala.inline
   def apply(
     axis: reactDashListLib.reactDashListLibStrings.x | reactDashListLib.reactDashListLibStrings.y = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     initialIndex: scala.Int | scala.Double = null,
     itemRenderer: reactDashListLib.ItemRenderer = null,
     itemSizeEstimator: reactDashListLib.ItemSizeEstimator = null,
     itemSizeGetter: reactDashListLib.ItemSizeGetter = null,
     itemsRenderer: reactDashListLib.ItemsRenderer = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     length: scala.Int | scala.Double = null,
     minSize: scala.Int | scala.Double = null,
     pageSize: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ReactList] = null,
+    ref: reactLib.reactMod.LegacyRef[ReactList] = null,
     scrollParentGetter: reactDashListLib.ScrollParentGetter = null,
     threshold: scala.Int | scala.Double = null,
     `type`: java.lang.String = null,

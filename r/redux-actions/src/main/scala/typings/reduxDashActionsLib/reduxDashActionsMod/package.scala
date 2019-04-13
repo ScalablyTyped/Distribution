@@ -16,6 +16,9 @@ package object reduxDashActionsMod {
   type ActionWithMetaFunctions[Payload, Meta] = BaseActionFunctions[ActionMeta[Payload, Meta]]
   type BaseActionFunctions[TAction] = ActionFunction0[TAction] | (ActionFunction1[js.Any, TAction]) | (ActionFunction2[js.Any, js.Any, TAction]) | (ActionFunction3[js.Any, js.Any, js.Any, TAction]) | (ActionFunction4[js.Any, js.Any, js.Any, js.Any, TAction]) | ActionFunctionAny[TAction]
   type Reducer[State, Payload] = js.Function2[/* state */ State, /* action */ Action[Payload], State]
+  type ReducerMapMeta[State, Payload, Meta] = org.scalablytyped.runtime.StringDictionary[
+    (ReducerMeta[State, Payload, Meta]) | (ReducerNextThrowMeta[State, Payload, Meta])
+  ]
   /* Rewritten from type alias, can be one of: 
     - Reducer[State, Payload]
     - ReducerNextThrow[State, Payload]

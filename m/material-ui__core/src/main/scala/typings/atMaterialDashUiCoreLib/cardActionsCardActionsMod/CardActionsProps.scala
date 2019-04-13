@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardActionsProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardActionsProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[CardActionsClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var disableActionSpacing: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,8 +18,8 @@ object CardActionsProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardActionsClassKey]] = null,
     disableActionSpacing: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): CardActionsProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

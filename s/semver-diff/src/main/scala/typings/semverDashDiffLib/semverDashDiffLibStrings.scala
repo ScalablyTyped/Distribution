@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 object semverDashDiffLibStrings {
   @js.native
   sealed trait build
-    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
+    extends semverDashDiffLib.semverDashDiffMod._SemverDiffReturn
   
   @js.native
   sealed trait major
-    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
+    extends semverDashDiffLib.semverDashDiffMod._SemverDiffReturn
   
   @js.native
   sealed trait minor
-    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
+    extends semverDashDiffLib.semverDashDiffMod._SemverDiffReturn
   
   @js.native
   sealed trait patch
-    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
+    extends semverDashDiffLib.semverDashDiffMod._SemverDiffReturn
   
   @js.native
   sealed trait prerelease
-    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
+    extends semverDashDiffLib.semverDashDiffMod._SemverDiffReturn
   
   @scala.inline
   def build: build = "build".asInstanceOf[build]

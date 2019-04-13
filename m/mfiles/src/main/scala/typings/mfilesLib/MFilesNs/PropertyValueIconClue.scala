@@ -17,3 +17,8 @@ class PropertyValueIconClue ()
   override def Clone(): mfilesLib.IPropertyValueIconClue = js.native
 }
 
+@JSGlobal("MFiles.PropertyValueIconClue")
+@js.native
+object PropertyValueIconClue
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValueIconClue]
+

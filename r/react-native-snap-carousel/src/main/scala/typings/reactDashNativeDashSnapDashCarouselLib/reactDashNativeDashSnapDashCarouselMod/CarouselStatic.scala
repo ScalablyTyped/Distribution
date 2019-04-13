@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CarouselStatic[T]
-  extends reactLib.reactMod.ReactNs.ComponentClass[CarouselProps[T], reactLib.reactMod.ReactNs.ComponentState] {
+  extends reactLib.reactMod.ComponentClass[CarouselProps[T], reactLib.reactMod.ComponentState] {
   /**
     * Current active item (int, starts at 0)
     */

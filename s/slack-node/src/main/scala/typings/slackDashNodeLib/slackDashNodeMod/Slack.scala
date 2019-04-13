@@ -26,12 +26,8 @@ trait Slack extends js.Object {
   def detectEmoji(emoji: java.lang.String): slackDashNodeLib.Anon_Iconemoji = js.native
   def setWebhook(url: java.lang.String): this.type = js.native
   def webhook(
-    options: slackDashNodeLib.slackDashNodeMod.SlackNs.WebhookOptions,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* response */ slackDashNodeLib.slackDashNodeMod.SlackNs.WebhookResponse, 
-      scala.Unit
-    ]
+    options: WebhookOptions,
+    callback: js.Function2[/* err */ js.Any, /* response */ WebhookResponse, scala.Unit]
   ): scala.Unit = js.native
 }
 

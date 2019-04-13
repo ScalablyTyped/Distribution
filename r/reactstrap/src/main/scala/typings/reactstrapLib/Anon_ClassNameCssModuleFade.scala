@@ -9,9 +9,9 @@ trait Anon_ClassNameCssModuleFade extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var fade: js.UndefOr[scala.Boolean] = js.undefined
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.Ref[stdLib.HTMLElement]] = js.undefined
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var transition: js.UndefOr[reactstrapLib.libFadeMod.FadeProps[js.Object]] = js.undefined
 }
 
@@ -21,9 +21,9 @@ object Anon_ClassNameCssModuleFade {
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     fade: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement] = null,
+    innerRef: reactLib.reactMod.Ref[stdLib.HTMLElement] = null,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     transition: reactstrapLib.libFadeMod.FadeProps[js.Object] = null
   ): Anon_ClassNameCssModuleFade = {
     val __obj = js.Dynamic.literal()

@@ -7,4 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object electronDashSettingsMod {
   type JsonArray = js.Array[electronDashSettingsLib.JsonValue]
+  type JsonObject = org.scalablytyped.runtime.StringDictionary[electronDashSettingsLib.JsonValue]
 }

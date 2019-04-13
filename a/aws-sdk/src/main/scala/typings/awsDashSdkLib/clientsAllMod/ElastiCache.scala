@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ElastiCache ()
-  extends awsDashSdkLib.clientsElasticacheMod.namespaced {
-  def this(options: awsDashSdkLib.clientsElasticacheMod.ElastiCacheNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsElasticacheMod.^ {
+  def this(options: awsDashSdkLib.clientsElasticacheMod.ClientConfiguration) = this()
 }
 

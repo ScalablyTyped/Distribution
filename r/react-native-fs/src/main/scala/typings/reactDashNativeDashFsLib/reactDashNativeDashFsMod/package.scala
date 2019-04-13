@@ -9,6 +9,7 @@ package object reactDashNativeDashFsMod {
   type DownloadCallbackBegin = js.Function1[/* res */ DownloadBeginCallbackResult, scala.Unit]
   type DownloadCallbackProgress = js.Function1[/* res */ DownloadProgressCallbackResult, scala.Unit]
   type Fields = Headers
+  type Headers = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type UploadCallbackBegin = js.Function1[/* res */ UploadBeginCallbackResult, scala.Unit]
   type UploadCallbackProgress = js.Function1[/* res */ UploadProgressCallbackResult, scala.Unit]
 }

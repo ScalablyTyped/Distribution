@@ -14,7 +14,7 @@ trait IDialogOptions extends js.Object {
   var contentElement: js.UndefOr[java.lang.String | stdLib.Element] = js.undefined
    // default: true
   var controller: js.UndefOr[
-    java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor]
+    java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor]
   ] = js.undefined
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined
    // default: false
@@ -30,7 +30,7 @@ trait IDialogOptions extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onComplete: js.UndefOr[
     js.Function2[
-      /* scope */ angularLib.angularMod.angularNs.IScope, 
+      /* scope */ angularLib.angularMod.IScope, 
       /* element */ angularLib.JQuery, 
       scala.Unit
     ]
@@ -38,14 +38,14 @@ trait IDialogOptions extends js.Object {
   var onRemoving: js.UndefOr[
     js.Function2[
       /* element */ angularLib.JQuery, 
-      /* removePromise */ angularLib.angularMod.angularNs.IPromise[_], 
+      /* removePromise */ angularLib.angularMod.IPromise[_], 
       scala.Unit
     ]
   ] = js.undefined
    // default: root node
   var onShowing: js.UndefOr[
     js.Function2[
-      /* scope */ angularLib.angularMod.angularNs.IScope, 
+      /* scope */ angularLib.angularMod.IScope, 
       /* element */ angularLib.JQuery, 
       scala.Unit
     ]
@@ -56,7 +56,7 @@ trait IDialogOptions extends js.Object {
   var preserveScope: js.UndefOr[scala.Boolean] = js.undefined
    // default: false
   var resolve: js.UndefOr[ResolveObject] = js.undefined
-  var scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
+  var scope: js.UndefOr[angularLib.angularMod.IScope] = js.undefined
   var skipHide: js.UndefOr[scala.Boolean] = js.undefined
    // default: true
   var targetEvent: js.UndefOr[stdLib.MouseEvent] = js.undefined
@@ -72,7 +72,7 @@ object IDialogOptions {
     clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined,
     closeTo: js.Any = null,
     contentElement: java.lang.String | stdLib.Element = null,
-    controller: java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor] = null,
+    controller: java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor] = null,
     controllerAs: java.lang.String = null,
     disableParentScroll: js.UndefOr[scala.Boolean] = js.undefined,
     escapeToClose: js.UndefOr[scala.Boolean] = js.undefined,
@@ -81,14 +81,14 @@ object IDialogOptions {
     hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onComplete: (/* scope */ angularLib.angularMod.angularNs.IScope, /* element */ angularLib.JQuery) => scala.Unit = null,
-    onRemoving: (/* element */ angularLib.JQuery, /* removePromise */ angularLib.angularMod.angularNs.IPromise[_]) => scala.Unit = null,
-    onShowing: (/* scope */ angularLib.angularMod.angularNs.IScope, /* element */ angularLib.JQuery) => scala.Unit = null,
+    onComplete: (/* scope */ angularLib.angularMod.IScope, /* element */ angularLib.JQuery) => scala.Unit = null,
+    onRemoving: (/* element */ angularLib.JQuery, /* removePromise */ angularLib.angularMod.IPromise[_]) => scala.Unit = null,
+    onShowing: (/* scope */ angularLib.angularMod.IScope, /* element */ angularLib.JQuery) => scala.Unit = null,
     openFrom: js.Any = null,
     parent: java.lang.String | stdLib.Element | angularLib.JQuery = null,
     preserveScope: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: ResolveObject = null,
-    scope: angularLib.angularMod.angularNs.IScope = null,
+    scope: angularLib.angularMod.IScope = null,
     skipHide: js.UndefOr[scala.Boolean] = js.undefined,
     targetEvent: stdLib.MouseEvent = null,
     template: java.lang.String = null,

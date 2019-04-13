@@ -17,3 +17,8 @@ class AuthenticationResult ()
   override val VaultFinal: mfilesLib.IAuthenticationResultVaultFinal = js.native
 }
 
+@JSGlobal("MFiles.AuthenticationResult")
+@js.native
+object AuthenticationResult
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAuthenticationResult]
+

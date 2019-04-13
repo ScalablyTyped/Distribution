@@ -82,7 +82,7 @@ trait BlockUIConfig extends js.Object {
     */
   var requestFilter: js.UndefOr[
     js.Function1[
-      /* config */ angularLib.angularMod.angularNs.IRequestConfig, 
+      /* config */ angularLib.angularMod.IRequestConfig, 
       java.lang.String | scala.Boolean
     ]
   ] = js.undefined
@@ -120,7 +120,7 @@ object BlockUIConfig {
     cssClass: java.lang.String = null,
     delay: scala.Int | scala.Double = null,
     message: java.lang.String = null,
-    requestFilter: /* config */ angularLib.angularMod.angularNs.IRequestConfig => java.lang.String | scala.Boolean = null,
+    requestFilter: /* config */ angularLib.angularMod.IRequestConfig => java.lang.String | scala.Boolean = null,
     resetOnException: js.UndefOr[scala.Boolean] = js.undefined,
     template: java.lang.String = null,
     templateUrl: java.lang.String = null

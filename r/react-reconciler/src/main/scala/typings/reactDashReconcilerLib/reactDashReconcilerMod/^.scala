@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply[Type, Props, Container, Instance, TextInstance, HydratableInstance, PublicInstance, HostContext, UpdatePayload, ChildSet, TimeoutHandle, NoTimeout](
     // tslint:disable-next-line:no-unnecessary-generics
-  config: reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.HostConfig[
+  config: HostConfig[
       Type, 
       Props, 
       Container, 
@@ -24,6 +24,6 @@ object ^ extends js.Object {
       TimeoutHandle, 
       NoTimeout
     ]
-  ): reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.Reconciler[Instance, TextInstance, Container, PublicInstance] = js.native
+  ): Reconciler[Instance, TextInstance, Container, PublicInstance] = js.native
 }
 

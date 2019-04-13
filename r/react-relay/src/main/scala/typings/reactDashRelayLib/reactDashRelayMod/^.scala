@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-relay", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ReactRelayContext: reactLib.reactMod.ReactNs.Context[
+  val ReactRelayContext: reactLib.reactMod.Context[
     relayDashRuntimeLib.relayDashRuntimeMod.CRelayContext[relayDashRuntimeLib.relayDashRuntimeMod.Environment]
   ] = js.native
   val graphql: GraphqlInterface = js.native
@@ -23,28 +23,28 @@ object ^ extends js.Object {
     // tslint:disable-next-line:no-unnecessary-generics
   config: relayDashRuntimeLib.relayDashRuntimeMod.MutationConfig[T]
   ): relayDashRuntimeLib.relayDashRuntimeMod.Disposable = js.native
-  def createFragmentContainer[P](Component: reactLib.reactMod.ReactNs.ComponentType[P], fragmentSpec: GeneratedNodeMap): RelayContainer[P] = js.native
+  def createFragmentContainer[P](Component: reactLib.reactMod.ComponentType[P], fragmentSpec: GeneratedNodeMap): RelayContainer[P] = js.native
   def createFragmentContainer[P](
-    Component: reactLib.reactMod.ReactNs.ComponentType[P],
+    Component: reactLib.reactMod.ComponentType[P],
     fragmentSpec: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   ): RelayContainer[P] = js.native
   def createPaginationContainer[P](
-    Component: reactLib.reactMod.ReactNs.ComponentType[P],
+    Component: reactLib.reactMod.ComponentType[P],
     fragmentSpec: GeneratedNodeMap,
     connectionConfig: ConnectionConfig[P]
   ): RelayContainer[P] = js.native
   def createPaginationContainer[P](
-    Component: reactLib.reactMod.ReactNs.ComponentType[P],
+    Component: reactLib.reactMod.ComponentType[P],
     fragmentSpec: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode,
     connectionConfig: ConnectionConfig[P]
   ): RelayContainer[P] = js.native
   def createRefetchContainer[P](
-    Component: reactLib.reactMod.ReactNs.ComponentType[P],
+    Component: reactLib.reactMod.ComponentType[P],
     fragmentSpec: GeneratedNodeMap,
     taggedNode: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   ): RelayContainer[P] = js.native
   def createRefetchContainer[P](
-    Component: reactLib.reactMod.ReactNs.ComponentType[P],
+    Component: reactLib.reactMod.ComponentType[P],
     fragmentSpec: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode,
     taggedNode: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   ): RelayContainer[P] = js.native

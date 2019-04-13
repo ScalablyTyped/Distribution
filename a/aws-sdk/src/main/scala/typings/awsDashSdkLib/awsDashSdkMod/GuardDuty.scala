@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class GuardDuty ()
   extends awsDashSdkLib.clientsAllMod.GuardDuty {
-  def this(options: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsGuarddutyMod.ClientConfiguration) = this()
 }
 

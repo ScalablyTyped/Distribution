@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "IconToggle")
 @js.native
-class IconToggle ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.IconToggle
+class IconToggle () extends __MDLComponent[IconToggleProps]
 

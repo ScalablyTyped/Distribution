@@ -15,3 +15,8 @@ class ValueListItems ()
   override def Item(Index: scala.Double): mfilesLib.IValueListItem = js.native
 }
 
+@JSGlobal("MFiles.ValueListItems")
+@js.native
+object ValueListItems
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IValueListItems]
+

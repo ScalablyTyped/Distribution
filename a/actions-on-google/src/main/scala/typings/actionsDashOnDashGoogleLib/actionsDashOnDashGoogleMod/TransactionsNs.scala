@@ -401,27 +401,6 @@ object TransactionsNs extends js.Object {
           ] = js.native
     }
     
-    type ActionType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
-    type CardNetwork = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
-    type ConfirmationDecision = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision
-    type CustomerInfoProperties = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CustomerInfoProperties
-    type DeliveryAddressDecision = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision
-    type DeliveryAddressUserDecision = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision
-    type ItemType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
-    type LineItemType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
-    type LocationType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
-    type OrderAction = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
-    type OrderLocationType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
-    type OrderState = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
-    type OrderStateInfo = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
-    type PaymentMethodTokenizationType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType
-    type PaymentType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
-    type PriceType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
-    type ReasonType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType
-    type RejectionType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.RejectionType
-    type ResultType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
-    type TimeType = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType
-    type TransactionUserDecision = actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
   }
   
 }

@@ -9,8 +9,8 @@ trait StreamTransport
   extends nodemailerLib.nodemailerMod.Transport {
   var logger: nodemailerLib.libSharedMod.Logger
   @JSName("mailer")
-  var mailer_StreamTransport: nodemailerLib.libMailerMod.namespaced
-  var options: nodemailerLib.libStreamDashTransportMod.StreamTransportNs.Options
+  var mailer_StreamTransport: nodemailerLib.libMailerMod.^
+  var options: Options
   var winbreak: scala.Boolean
 }
 
@@ -18,14 +18,10 @@ object StreamTransport {
   @scala.inline
   def apply(
     logger: nodemailerLib.libSharedMod.Logger,
-    mailer: nodemailerLib.libMailerMod.namespaced,
+    mailer: nodemailerLib.libMailerMod.^,
     name: java.lang.String,
-    options: nodemailerLib.libStreamDashTransportMod.StreamTransportNs.Options,
-    send: (nodemailerLib.libMailerMailDashMessageMod.namespaced, js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* info */ nodemailerLib.libStreamDashTransportMod.StreamTransportNs.SentMessageInfo, 
-      scala.Unit
-    ]) => scala.Unit,
+    options: Options,
+    send: (nodemailerLib.libMailerMailDashMessageMod.^, js.Function2[/* err */ stdLib.Error | scala.Null, /* info */ SentMessageInfo, scala.Unit]) => scala.Unit,
     version: java.lang.String,
     winbreak: scala.Boolean,
     close: () => scala.Unit = null,

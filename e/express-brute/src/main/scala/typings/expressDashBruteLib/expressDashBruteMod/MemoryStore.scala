@@ -12,16 +12,14 @@ import scala.scalajs.js.annotation._
   * @constructor
   * @param {Object} options The options.
   */
-class MemoryStore ()
-  extends expressDashBruteLib.expressDashBruteMod.ExpressBruteNs.MemoryStore {
-  def this(options: expressDashBruteLib.expressDashBruteMod.ExpressBruteNs.MemoryStoreOptions) = this()
+class MemoryStore () extends js.Object {
+  def this(options: MemoryStoreOptions) = this()
   /**
     * @summary Gets key value.
     * @param {string}      key     The key name.
     * @param {Function}    callbck The callback.
     */
-  /* CompleteClass */
-  override def get(
+  def get(
     key: java.lang.String,
     callback: js.Function2[/* error */ js.Any, /* data */ js.Object, scala.Unit]
   ): scala.Unit = js.native
@@ -30,8 +28,7 @@ class MemoryStore ()
     * @param {string}      key      The name.
     * @param {Function}    callback The callback.
     */
-  /* CompleteClass */
-  override def reset(key: java.lang.String, callback: js.Function1[/* error */ js.Any, scala.Unit]): scala.Unit = js.native
+  def reset(key: java.lang.String, callback: js.Function1[/* error */ js.Any, scala.Unit]): scala.Unit = js.native
   /**
     * @summary Sets the key value.
     * @param {string}      key      The name.
@@ -39,8 +36,7 @@ class MemoryStore ()
     * @param {number}      lifetime The lifetime.
     * @param {Function}    callback The callback.
     */
-  /* CompleteClass */
-  override def set(
+  def set(
     key: java.lang.String,
     value: js.Any,
     lifetime: scala.Double,

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ECS ()
   extends awsDashSdkLib.clientsAllMod.ECS {
-  def this(options: awsDashSdkLib.clientsEcsMod.ECSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsEcsMod.ClientConfiguration) = this()
 }
 

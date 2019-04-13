@@ -10,14 +10,14 @@ trait Anon_Done extends js.Object {
   var pauseBefore: js.UndefOr[scala.Boolean] = js.undefined
   def getData(
     done: js.Function1[/* value */ js.Any, scala.Unit],
-    options: fingerprintjs2Lib.fingerprintjs2Mod.Fingerprint2Ns.Options
+    options: fingerprintjs2Lib.fingerprintjs2Mod.Options
   ): scala.Unit
 }
 
 object Anon_Done {
   @scala.inline
   def apply(
-    getData: (js.Function1[/* value */ js.Any, scala.Unit], fingerprintjs2Lib.fingerprintjs2Mod.Fingerprint2Ns.Options) => scala.Unit,
+    getData: (js.Function1[/* value */ js.Any, scala.Unit], fingerprintjs2Lib.fingerprintjs2Mod.Options) => scala.Unit,
     key: java.lang.String,
     pauseBefore: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Done = {

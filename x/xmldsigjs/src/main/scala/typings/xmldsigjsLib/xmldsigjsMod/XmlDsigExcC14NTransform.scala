@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "XmlDsigExcC14NTransform")
 @js.native
-class XmlDsigExcC14NTransform ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.XmlDsigExcC14NTransform
+class XmlDsigExcC14NTransform () extends Transform {
+  /**
+    * Gets or sets a string that contains namespace prefixes to canonicalize
+    * using the standard canonicalization algorithm.
+    */
+  var InclusiveNamespacesPrefixList: java.lang.String = js.native
+  var xmlCanonicalizer: XmlCanonicalizer = js.native
+}
 

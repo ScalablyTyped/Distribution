@@ -17,12 +17,7 @@ object ^ extends js.Object {
     * first parameter, this parameter is ignored.
     * @returns The `NpmCredentials` object or undefined if no match found.
     */
-  def apply(
-    registryUrl: java.lang.String | registryDashAuthDashTokenLib.registryDashAuthDashTokenMod.authNs.AuthOptions
-  ): registryDashAuthDashTokenLib.registryDashAuthDashTokenMod.authNs.NpmCredentials = js.native
-  def apply(
-    registryUrl: java.lang.String | registryDashAuthDashTokenLib.registryDashAuthDashTokenMod.authNs.AuthOptions,
-    options: registryDashAuthDashTokenLib.registryDashAuthDashTokenMod.authNs.AuthOptions
-  ): registryDashAuthDashTokenLib.registryDashAuthDashTokenMod.authNs.NpmCredentials = js.native
+  def apply(registryUrl: java.lang.String | AuthOptions): NpmCredentials = js.native
+  def apply(registryUrl: java.lang.String | AuthOptions, options: AuthOptions): NpmCredentials = js.native
 }
 

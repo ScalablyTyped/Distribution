@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ui-box", "Box")
 @js.native
 class BoxCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[BoxProps | uiDashBoxLib.CSSProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[BoxProps | uiDashBoxLib.CSSProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: uiDashBoxLib.CSSProps) = this()
   def this(props: BoxProps) = this()
   def this(props: uiDashBoxLib.CSSProps, context: js.Any) = this()

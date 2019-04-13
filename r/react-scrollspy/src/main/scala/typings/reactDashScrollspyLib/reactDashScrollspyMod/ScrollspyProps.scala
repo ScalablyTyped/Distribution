@@ -21,7 +21,7 @@ trait ScrollspyProps extends js.Object {
   // Class name that apply to the navigation elements that have been scrolled past
   var scrolledPastClassName: js.UndefOr[java.lang.String] = js.undefined
   // Style attribute to be passed to the generated <ul /> element
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ScrollspyProps {
@@ -34,7 +34,7 @@ object ScrollspyProps {
     onUpdate: /* item */ java.lang.String => scala.Unit = null,
     rootEl: java.lang.String = null,
     scrolledPastClassName: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): ScrollspyProps = {
     val __obj = js.Dynamic.literal(currentClassName = currentClassName, items = items)
     if (componentTag != null) __obj.updateDynamic("componentTag")(componentTag)

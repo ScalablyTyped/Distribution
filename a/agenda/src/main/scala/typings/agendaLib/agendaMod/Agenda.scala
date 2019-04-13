@@ -19,8 +19,8 @@ trait Agenda
     * @param name The name of the job.
     * @param data Data to associated with the job.
     */
-  def create[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](name: java.lang.String): agendaLib.agendaMod.AgendaNs.Job[T] = js.native
-  def create[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](name: java.lang.String, data: T): agendaLib.agendaMod.AgendaNs.Job[T] = js.native
+  def create[T /* <: JobAttributesData */](name: java.lang.String): Job[T] = js.native
+  def create[T /* <: JobAttributesData */](name: java.lang.String, data: T): Job[T] = js.native
   /**
     * Connect to the specified MongoDB server and database.
     */
@@ -59,29 +59,29 @@ trait Agenda
     * @param options The options for the job.
     * @param handler The handler to execute.
     */
-  def define[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](
+  def define[T /* <: JobAttributesData */](
     name: java.lang.String,
     handler: js.Function2[
-      /* job */ agendaLib.agendaMod.AgendaNs.Job[T], 
+      /* job */ Job[T], 
       /* done */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def define[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](
+  def define[T /* <: JobAttributesData */](
     name: java.lang.String,
-    options: agendaLib.agendaMod.AgendaNs.JobOptions,
+    options: JobOptions,
     handler: js.Function2[
-      /* job */ agendaLib.agendaMod.AgendaNs.Job[T], 
+      /* job */ Job[T], 
       /* done */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: java.lang.String, names: java.lang.String): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: java.lang.String, names: java.lang.String, data: T): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: java.lang.String, names: java.lang.String, data: T, options: js.Any): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: java.lang.String, names: js.Array[java.lang.String]): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: java.lang.String, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: java.lang.String, names: js.Array[java.lang.String], data: T, options: js.Any): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: java.lang.String, names: java.lang.String): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: java.lang.String, names: java.lang.String, data: T): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: java.lang.String, names: java.lang.String, data: T, options: js.Any): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: java.lang.String, names: js.Array[java.lang.String]): js.Promise[js.Array[Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: java.lang.String, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: java.lang.String, names: js.Array[java.lang.String], data: T, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Runs job name at the given interval. Optionally, data and options can be passed in.
     * @param interval Can be a human-readable format String, a cron format String, or a Number.
@@ -89,17 +89,17 @@ trait Agenda
     * @param data An optional argument that will be passed to the processing function under job.attrs.data.
     * @param options An optional argument that will be passed to job.repeatEvery.
     */
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: scala.Double, names: java.lang.String): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: scala.Double, names: java.lang.String, data: T): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: scala.Double, names: java.lang.String, data: T, options: js.Any): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: scala.Double, names: js.Array[java.lang.String]): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: scala.Double, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
-  def every[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](interval: scala.Double, names: js.Array[java.lang.String], data: T, options: js.Any): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: scala.Double, names: java.lang.String): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: scala.Double, names: java.lang.String, data: T): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: scala.Double, names: java.lang.String, data: T, options: js.Any): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: scala.Double, names: js.Array[java.lang.String]): js.Promise[js.Array[Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: scala.Double, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: scala.Double, names: js.Array[java.lang.String], data: T, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Find all Jobs matching `query` and pass same back in cb().
     * @param query
     */
-  def jobs[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](query: js.Any): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
+  def jobs[T /* <: JobAttributesData */](query: js.Any): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Takes a number which specifies the max number jobs that can be locked at any given moment. By default it is
     * 0 for no max.
@@ -131,8 +131,8 @@ trait Agenda
     * @param name The name of the job to run.
     * @param data An optional argument that will be passed to the processing function under job.attrs.data.
     */
-  def now[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](name: java.lang.String): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def now[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](name: java.lang.String, data: T): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
+  def now[T /* <: JobAttributesData */](name: java.lang.String): js.Promise[Job[T]] = js.native
+  def now[T /* <: JobAttributesData */](name: java.lang.String, data: T): js.Promise[Job[T]] = js.native
   /**
     * Sets the interval with which the queue is checked. A number in milliseconds or a frequency string.
     */
@@ -143,20 +143,20 @@ trait Agenda
     * to remove old jobs.
     */
   def purge(): js.Promise[scala.Double] = js.native
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: java.lang.String, names: java.lang.String): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: java.lang.String, names: java.lang.String, data: T): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: java.lang.String, names: js.Array[java.lang.String]): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: java.lang.String, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: java.lang.String, names: java.lang.String): js.Promise[Job[T]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: java.lang.String, names: java.lang.String, data: T): js.Promise[Job[T]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: java.lang.String, names: js.Array[java.lang.String]): js.Promise[js.Array[Job[T]]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: java.lang.String, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Schedules a job to run name once at a given time.
     * @param when A Date or a String such as tomorrow at 5pm.
     * @param names The name or names of the job(s) to run.
     * @param data An optional argument that will be passed to the processing function under job.attrs.data.
     */
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: stdLib.Date, names: java.lang.String): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: stdLib.Date, names: java.lang.String, data: T): js.Promise[agendaLib.agendaMod.AgendaNs.Job[T]] = js.native
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: stdLib.Date, names: js.Array[java.lang.String]): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
-  def schedule[T /* <: agendaLib.agendaMod.AgendaNs.JobAttributesData */](when: stdLib.Date, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[agendaLib.agendaMod.AgendaNs.Job[T]]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: stdLib.Date, names: java.lang.String): js.Promise[Job[T]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: stdLib.Date, names: java.lang.String, data: T): js.Promise[Job[T]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: stdLib.Date, names: js.Array[java.lang.String]): js.Promise[js.Array[Job[T]]] = js.native
+  def schedule[T /* <: JobAttributesData */](when: stdLib.Date, names: js.Array[java.lang.String], data: T): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Starts the job queue processing, checking processEvery time to see if there are new jobs.
     */

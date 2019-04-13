@@ -33,7 +33,7 @@ trait TooltipProps
   /**
     * The text (or node) used for the tooltip.
     */
-  var tooltip: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var tooltip: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Amount of time in miliseconds spent before the tooltip is visible.
     * @default 0
@@ -70,7 +70,7 @@ object TooltipProps {
     onMouseEnter: js.Function = null,
     onMouseLeave: js.Function = null,
     theme: TooltipTheme = null,
-    tooltip: reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltip: reactLib.reactMod.ReactNode = null,
     tooltipDelay: scala.Int | scala.Double = null,
     tooltipHideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     tooltipPosition: reactDashToolboxLib.reactDashToolboxLibStrings.bottom | reactDashToolboxLib.reactDashToolboxLibStrings.top | reactDashToolboxLib.reactDashToolboxLibStrings.left | reactDashToolboxLib.reactDashToolboxLibStrings.right | reactDashToolboxLib.reactDashToolboxLibStrings.horizontal | reactDashToolboxLib.reactDashToolboxLibStrings.vertical = null,

@@ -30,7 +30,7 @@ trait Subsume extends js.Object {
   	Extract your embedded data from `text`.
   	@returns an object with properties `.data` for your embedded data and `.rest` for everything else.
   	*/
-  def parse(text: java.lang.String): subsumeLib.subsumeMod.SubsumeNs.ParseResult
+  def parse(text: java.lang.String): ParseResult
 }
 
 object Subsume {
@@ -38,7 +38,7 @@ object Subsume {
   def apply(
     compose: java.lang.String => java.lang.String,
     id: java.lang.String,
-    parse: java.lang.String => subsumeLib.subsumeMod.SubsumeNs.ParseResult,
+    parse: java.lang.String => ParseResult,
     postfix: java.lang.String,
     prefix: java.lang.String,
     regex: stdLib.RegExp

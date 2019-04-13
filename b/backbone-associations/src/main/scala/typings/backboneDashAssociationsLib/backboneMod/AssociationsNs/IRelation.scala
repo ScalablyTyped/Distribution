@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IRelation extends js.Object {
   /** Determines the type of collection used. If used, the relatedModel property is ignored */
   var collectionType: js.UndefOr[
-    java.lang.String | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.Collection[js.Any]]
+    java.lang.String | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.Collection[js.Any]]
   ] = js.undefined
   /** If set to true, then the attribute will not be serialized in toJSON() calls. Defaults to false */
   var isTransient: js.UndefOr[scala.Boolean] = js.undefined
@@ -33,7 +33,7 @@ object IRelation {
     key: java.lang.String,
     relatedModel: java.lang.String | org.scalablytyped.runtime.Instantiable0[AssociatedModel],
     `type`: java.lang.String,
-    collectionType: java.lang.String | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.Collection[js.Any]] = null,
+    collectionType: java.lang.String | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.Collection[js.Any]] = null,
     isTransient: js.UndefOr[scala.Boolean] = js.undefined,
     map: /* repeated */ js.Any => _ = null,
     remoteKey: java.lang.String = null,

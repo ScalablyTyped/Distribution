@@ -17,7 +17,7 @@ trait ComboBoxProps
     * An optional ReactNode to override the spinner gif element when the busy property
     * is set to true.
     */
-  var busySpinner: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var busySpinner: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Use in conjunction with the filter prop. Filter the list without regard for case. This
     * only applies to non function values for filter
@@ -63,7 +63,7 @@ trait ComboBoxProps
     * This component is used to render each option group, when groupBy is specified. By default
     * the groupBy value will be used.
     */
-  var groupComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var groupComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * An object of props that is passed directly to the underlying input component.
     */
@@ -72,8 +72,8 @@ trait ComboBoxProps
     * This component is used to render each possible item in the Combobox. The default
     * component renders the text of the selected item (specified by textfield)
     */
-  var itemComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
-  var listComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var itemComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var listComponent: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * An object of props that is passed directly to the underlying List component.
     */
@@ -124,7 +124,7 @@ trait ComboBoxProps
     * instead of the default SlideDownTransition for fully customizable animations.
     * The transition component is also injected with a dropUp prop indicating the direction it should open.
     */
-  var popupTransition: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var popupTransition: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * When true the Combobox will suggest, or fill in, values as you type. The suggestions are
     * always "startsWith", meaning it will search from the start of the textField property
@@ -157,9 +157,9 @@ object ComboBoxProps {
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     busy: js.UndefOr[scala.Boolean] = js.undefined,
-    busySpinner: reactLib.reactMod.ReactNs.ReactNode = null,
+    busySpinner: reactLib.reactMod.ReactNode = null,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     data: js.Array[_] = null,
     defaultValue: js.Any = null,
     delay: scala.Int | scala.Double = null,
@@ -168,13 +168,13 @@ object ComboBoxProps {
     duration: scala.Int | scala.Double = null,
     filter: scala.Boolean | java.lang.String | (js.Function2[/* dataItem */ js.Any, /* searchItem */ js.Any, scala.Boolean]) = null,
     groupBy: java.lang.String | (js.Function1[/* dataItem */ js.Any, _]) = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    groupComponent: reactLib.reactMod.ReactType[_] = null,
     id: java.lang.String = null,
     inputProps: js.Object = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    itemComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    listComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    itemComponent: reactLib.reactMod.ReactType[_] = null,
+    key: reactLib.reactMod.Key = null,
+    listComponent: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     listProps: js.Object = null,
     messages: ComboBoxMessages = null,
     minLength: scala.Int | scala.Double = null,
@@ -184,9 +184,9 @@ object ComboBoxProps {
     onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
-    popupTransition: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    popupTransition: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ComboBoxClass] = null,
+    ref: reactLib.reactMod.LegacyRef[ComboBoxClass] = null,
     suggest: js.UndefOr[scala.Boolean] = js.undefined,
     textField: java.lang.String | (js.Function1[/* dataItem */ js.Any, java.lang.String]) = null,
     value: js.Any = null,

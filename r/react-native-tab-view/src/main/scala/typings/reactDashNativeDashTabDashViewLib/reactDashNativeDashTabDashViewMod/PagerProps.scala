@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PagerProps extends js.Object {
   var animationEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var configureTransition: js.UndefOr[TransitionConfigurator] = js.undefined
   var swipeDistanceThreshold: js.UndefOr[scala.Double] = js.undefined
   var swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,7 +18,7 @@ object PagerProps {
   @scala.inline
   def apply(
     animationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     configureTransition: TransitionConfigurator = null,
     swipeDistanceThreshold: scala.Int | scala.Double = null,
     swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined,

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerProps extends js.Object {
   // <TextField/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[stdLib.Anon_LocalesOptionsSupportedLocalesOfArray] = js.undefined
+  var DateTimeFormat: js.UndefOr[materialDashUiLib.Anon_Locales] = js.undefined
   var autoOk: js.UndefOr[scala.Boolean] = js.undefined
-  var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   // From <TextField />
   var className: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[
@@ -17,21 +17,21 @@ trait DatePickerProps extends js.Object {
   ] = js.undefined
   var defaultDate: js.UndefOr[stdLib.Date] = js.undefined
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
-  var dialogContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dialogContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var disableYearSelection: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var errorStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var errorText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var errorStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var errorText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var firstDayOfWeek: js.UndefOr[scala.Double] = js.undefined
-  var floatingLabelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var floatingLabelText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var floatingLabelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var floatingLabelText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var formatDate: js.UndefOr[js.Function1[/* date */ stdLib.Date, java.lang.String]] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var hideCalendarDate: js.UndefOr[scala.Boolean] = js.undefined
-  var hintStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var hintText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var hintStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var hintText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var inputStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var locale: js.UndefOr[java.lang.String] = js.undefined
   var maxDate: js.UndefOr[stdLib.Date] = js.undefined
   var minDate: js.UndefOr[stdLib.Date] = js.undefined
@@ -39,25 +39,25 @@ trait DatePickerProps extends js.Object {
     materialDashUiLib.materialDashUiLibStrings.portrait | materialDashUiLib.materialDashUiLibStrings.landscape
   ] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var okLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
+  var okLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[js.Object]] = js.undefined
   var onChange: js.UndefOr[js.Function2[/* e */ js.Any, /* date */ stdLib.Date, scala.Unit]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[js.Object]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.TouchEventHandler[js.Object]] = js.undefined
    // e is always null
   var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
-  var onKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[js.Object]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[js.Object]] = js.undefined
   var onShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
   var rowsMax: js.UndefOr[scala.Double] = js.undefined
   var shouldDisableDate: js.UndefOr[js.Function1[/* day */ stdLib.Date, scala.Boolean]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var textFieldStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var textFieldStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
-  var underlineDisabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var underlineFocusStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var underlineDisabledStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var underlineFocusStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var underlineShow: js.UndefOr[scala.Boolean] = js.undefined
-  var underlineStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var underlineStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var utils: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.utils] = js.undefined
   var value: js.UndefOr[stdLib.Date] = js.undefined
 }
@@ -65,51 +65,51 @@ trait DatePickerProps extends js.Object {
 object DatePickerProps {
   @scala.inline
   def apply(
-    DateTimeFormat: stdLib.Anon_LocalesOptionsSupportedLocalesOfArray = null,
+    DateTimeFormat: materialDashUiLib.Anon_Locales = null,
     autoOk: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    cancelLabel: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     container: materialDashUiLib.materialDashUiLibStrings.dialog | materialDashUiLib.materialDashUiLibStrings.`inline` = null,
     defaultDate: stdLib.Date = null,
     defaultValue: java.lang.String = null,
-    dialogContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dialogContainerStyle: reactLib.reactMod.CSSProperties = null,
     disableYearSelection: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    errorStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    errorText: reactLib.reactMod.ReactNs.ReactNode = null,
+    errorStyle: reactLib.reactMod.CSSProperties = null,
+    errorText: reactLib.reactMod.ReactNode = null,
     firstDayOfWeek: scala.Int | scala.Double = null,
-    floatingLabelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    floatingLabelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    floatingLabelStyle: reactLib.reactMod.CSSProperties = null,
+    floatingLabelText: reactLib.reactMod.ReactNode = null,
     formatDate: /* date */ stdLib.Date => java.lang.String = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     hideCalendarDate: js.UndefOr[scala.Boolean] = js.undefined,
-    hintStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    hintText: reactLib.reactMod.ReactNs.ReactNode = null,
+    hintStyle: reactLib.reactMod.CSSProperties = null,
+    hintText: reactLib.reactMod.ReactNode = null,
     id: java.lang.String = null,
-    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inputStyle: reactLib.reactMod.CSSProperties = null,
     locale: java.lang.String = null,
     maxDate: stdLib.Date = null,
     minDate: stdLib.Date = null,
     mode: materialDashUiLib.materialDashUiLibStrings.portrait | materialDashUiLib.materialDashUiLibStrings.landscape = null,
     name: java.lang.String = null,
-    okLabel: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
+    okLabel: reactLib.reactMod.ReactNode = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
     onChange: (/* e */ js.Any, /* date */ stdLib.Date) => scala.Unit = null,
-    onClick: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
+    onClick: reactLib.reactMod.TouchEventHandler[js.Object] = null,
     onDismiss: () => scala.Unit = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
     onShow: () => scala.Unit = null,
     rows: scala.Int | scala.Double = null,
     rowsMax: scala.Int | scala.Double = null,
     shouldDisableDate: /* day */ stdLib.Date => scala.Boolean = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    textFieldStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    textFieldStyle: reactLib.reactMod.CSSProperties = null,
     `type`: java.lang.String = null,
-    underlineDisabledStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    underlineFocusStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlineDisabledStyle: reactLib.reactMod.CSSProperties = null,
+    underlineFocusStyle: reactLib.reactMod.CSSProperties = null,
     underlineShow: js.UndefOr[scala.Boolean] = js.undefined,
-    underlineStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlineStyle: reactLib.reactMod.CSSProperties = null,
     utils: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.utils = null,
     value: stdLib.Date = null
   ): DatePickerProps = {

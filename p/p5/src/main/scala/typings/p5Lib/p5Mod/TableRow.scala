@@ -5,22 +5,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("p5", "TableRow")
 @js.native
-/**
-  *   A TableRow object represents a single row of data
-  *   values, stored in columns, from a table. A Table
-  *   Row contains both an ordered array, and an
-  *   unordered JSON object.
-  *
-  *   @param [str] optional: populate the row with a
-  *   string of values, separated by the separator
-  *   @param [separator] comma separated values (csv) by
-  *   default
-  */
-class TableRow ()
-  extends p5Lib.p5Mod.p5Ns.TableRow {
-  def this(str: java.lang.String) = this()
-  def this(str: java.lang.String, separator: java.lang.String) = this()
+trait TableRow extends js.Object {
+  /**
+    *   Retrieves a value from the TableRow's specified
+    *   column. The column may be specified by either its
+    *   ID or title.
+    *   @param column columnName (string) or ID (number)
+    */
+  def get(column: java.lang.String): java.lang.String | scala.Double = js.native
+  def get(column: scala.Double): java.lang.String | scala.Double = js.native
+  /**
+    *   Retrieves a Float value from the TableRow's
+    *   specified column. The column may be specified by
+    *   either its ID or title.
+    *   @param column columnName (string) or ID (number)
+    *   @return Float Floating point number
+    */
+  def getNum(column: java.lang.String): scala.Double = js.native
+  def getNum(column: scala.Double): scala.Double = js.native
+  /**
+    *   Retrieves an String value from the TableRow's
+    *   specified column. The column may be specified by
+    *   either its ID or title.
+    *   @param column columnName (string) or ID (number)
+    *   @return String
+    */
+  def getString(column: java.lang.String): java.lang.String = js.native
+  def getString(column: scala.Double): java.lang.String = js.native
+  /**
+    *   Stores a value in the TableRow's specified column.
+    *   The column may be specified by either its ID or
+    *   title.
+    *   @param column Column ID (Number) or Title (String)
+    *   @param value The value to be stored
+    */
+  def set(column: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  def set(column: java.lang.String, value: scala.Double): scala.Unit = js.native
+  def set(column: scala.Double, value: java.lang.String): scala.Unit = js.native
+  def set(column: scala.Double, value: scala.Double): scala.Unit = js.native
+  def setNum(column: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  /**
+    *   Stores a Float value in the TableRow's specified
+    *   column. The column may be specified by either its
+    *   ID or title.
+    *   @param column Column ID (Number) or Title (String)
+    *   @param value The value to be stored as a Float
+    */
+  def setNum(column: java.lang.String, value: scala.Double): scala.Unit = js.native
+  def setNum(column: scala.Double, value: java.lang.String): scala.Unit = js.native
+  def setNum(column: scala.Double, value: scala.Double): scala.Unit = js.native
+  /**
+    *   Stores a String value in the TableRow's specified
+    *   column. The column may be specified by either its
+    *   ID or title.
+    *   @param column Column ID (Number) or Title (String)
+    *   @param value The value to be stored as a String
+    */
+  def setString(column: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  def setString(column: java.lang.String, value: js.Object): scala.Unit = js.native
+  def setString(column: java.lang.String, value: scala.Boolean): scala.Unit = js.native
+  def setString(column: java.lang.String, value: scala.Double): scala.Unit = js.native
+  def setString(column: scala.Double, value: java.lang.String): scala.Unit = js.native
+  def setString(column: scala.Double, value: js.Object): scala.Unit = js.native
+  def setString(column: scala.Double, value: scala.Boolean): scala.Unit = js.native
+  def setString(column: scala.Double, value: scala.Double): scala.Unit = js.native
 }
 

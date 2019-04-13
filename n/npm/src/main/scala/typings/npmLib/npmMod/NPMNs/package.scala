@@ -15,6 +15,7 @@ package object NPMNs {
     scala.Unit
   ]
   type CommandFunction = js.Function2[/* args */ js.Array[java.lang.String], /* callback */ CommandCallback, scala.Unit]
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ErrorCallback = js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   type SimpleCallback[T] = js.Function2[/* err */ js.UndefOr[stdLib.Error], /* result */ js.UndefOr[T], scala.Unit]
 }

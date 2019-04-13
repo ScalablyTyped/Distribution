@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait ICascaderDataItem extends js.Object {
   var children: js.UndefOr[js.Array[ICascaderDataItem]] = js.undefined
-  var label: reactLib.reactMod.ReactNs.ReactNode
+  var label: reactLib.reactMod.ReactNode
   var value: CascaderOneValue
 }
 
 object ICascaderDataItem {
   @scala.inline
   def apply(
-    label: reactLib.reactMod.ReactNs.ReactNode,
+    label: reactLib.reactMod.ReactNode,
     value: CascaderOneValue,
     children: js.Array[ICascaderDataItem] = null
   ): ICascaderDataItem = {

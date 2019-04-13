@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SwipeActionProps
-  extends antdDashMobileLib.libSwipeDashActionPropsTypeMod.SwipeActionPropsType[reactLib.reactMod.ReactNs.CSSProperties] {
+  extends antdDashMobileLib.libSwipeDashActionPropsTypeMod.SwipeActionPropsType[reactLib.reactMod.CSSProperties] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SwipeActionProps {
@@ -18,12 +18,12 @@ object SwipeActionProps {
     autoClose: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    left: js.Array[antdDashMobileLib.Anon_ClassNameOnPress[reactLib.reactMod.ReactNs.CSSProperties]] = null,
+    left: js.Array[antdDashMobileLib.Anon_ClassNameOnPress[reactLib.reactMod.CSSProperties]] = null,
     onClose: () => scala.Unit = null,
     onOpen: () => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    right: js.Array[antdDashMobileLib.Anon_ClassNameOnPress[reactLib.reactMod.ReactNs.CSSProperties]] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    right: js.Array[antdDashMobileLib.Anon_ClassNameOnPress[reactLib.reactMod.CSSProperties]] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null
   ): SwipeActionProps = {
     val __obj = js.Dynamic.literal()

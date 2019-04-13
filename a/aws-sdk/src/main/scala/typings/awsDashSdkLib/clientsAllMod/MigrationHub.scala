@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MigrationHub ()
-  extends awsDashSdkLib.clientsMigrationhubMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMigrationhubMod.^ {
+  def this(options: awsDashSdkLib.clientsMigrationhubMod.ClientConfiguration) = this()
 }
 

@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 trait BreadcrumbItemProps extends js.Object {
   var href: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[
-    reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement | stdLib.HTMLSpanElement]
+    reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement | stdLib.HTMLSpanElement]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var separator: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var separator: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object BreadcrumbItemProps {
   @scala.inline
   def apply(
     href: java.lang.String = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement | stdLib.HTMLSpanElement] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement | stdLib.HTMLSpanElement] = null,
     prefixCls: java.lang.String = null,
-    separator: reactLib.reactMod.ReactNs.ReactNode = null
+    separator: reactLib.reactMod.ReactNode = null
   ): BreadcrumbItemProps = {
     val __obj = js.Dynamic.literal()
     if (href != null) __obj.updateDynamic("href")(href)

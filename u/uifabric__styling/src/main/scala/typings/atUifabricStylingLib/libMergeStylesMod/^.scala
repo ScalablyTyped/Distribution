@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/styling/lib/MergeStyles", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val InjectionMode: atUifabricMergeDashStylesLib.Anon_0 = js.native
   def concatStyleSets(
     styleSets: (js.UndefOr[
       atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[_] | atUifabricStylingLib.atUifabricStylingLibNumbers.`false` | scala.Null

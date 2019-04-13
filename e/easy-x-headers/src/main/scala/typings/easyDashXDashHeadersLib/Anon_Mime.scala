@@ -5,16 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Mime extends js.Object {
-  val serveStaticNs: js.Any
-}
-
-object Anon_Mime {
-  @scala.inline
-  def apply(serveStaticNs: js.Any): Anon_Mime = {
-    val __obj = js.Dynamic.literal(serveStaticNs = serveStaticNs)
-  
-    __obj.asInstanceOf[Anon_Mime]
-  }
-}
+trait Anon_Mime extends js.Object
 

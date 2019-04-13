@@ -17,5 +17,6 @@ package object sparqljsMod {
   */
   type Expression = _Expression | Term
   type Term = java.lang.String with sparqljsLib.Anon_TermBrand
+  type ValuePatternRow = org.scalablytyped.runtime.StringDictionary[Term]
   type Variable = VariableExpression | Term
 }

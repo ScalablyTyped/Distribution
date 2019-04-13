@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashScrollableDashAnchorLibComponents {
   @scala.inline
-  def ReactDashScrollableDashAnchor: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashScrollableDashAnchor: reactLib.reactMod.ComponentType[
     reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
-  ] = js.constructorOf[reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps]]
   @scala.inline
   def ScrollableAnchorProps: reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps.type = reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps

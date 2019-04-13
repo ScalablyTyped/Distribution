@@ -10,6 +10,6 @@ trait MatchProps[TParams] extends js.Object {
   @JSName("children")
   var children_Original: MatchRenderFn[TParams] = js.native
   var path: java.lang.String = js.native
-  def children(props: MatchRenderProps[TParams]): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def children(props: MatchRenderProps[TParams]): reactLib.reactMod.ReactNode = js.native
 }
 

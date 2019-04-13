@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class STS ()
   extends awsDashSdkLib.clientsAllMod.STS {
-  def this(options: awsDashSdkLib.clientsStsMod.STSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsStsMod.ClientConfiguration) = this()
 }
 

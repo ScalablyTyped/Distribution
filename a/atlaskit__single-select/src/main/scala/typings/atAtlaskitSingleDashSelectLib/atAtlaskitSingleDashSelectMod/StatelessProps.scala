@@ -36,7 +36,7 @@ object StatelessProps {
     filterValue: java.lang.String = null,
     hasAutocomplete: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
-    invalidMessage: reactLib.reactMod.ReactNs.ReactNode = null,
+    invalidMessage: reactLib.reactMod.ReactNode = null,
     isDefaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isFirstChild: js.UndefOr[scala.Boolean] = js.undefined,

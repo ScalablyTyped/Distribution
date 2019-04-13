@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheckboardProps
-  extends reactLib.reactMod.ReactNs.ClassAttributes[Checkboard] {
+  extends reactLib.reactMod.ClassAttributes[Checkboard] {
   var grey: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var white: js.UndefOr[java.lang.String] = js.undefined
@@ -16,8 +16,8 @@ object CheckboardProps {
   @scala.inline
   def apply(
     grey: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Checkboard] = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[Checkboard] = null,
     size: scala.Int | scala.Double = null,
     white: java.lang.String = null
   ): CheckboardProps = {

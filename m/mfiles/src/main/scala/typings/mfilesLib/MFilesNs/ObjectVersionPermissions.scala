@@ -19,3 +19,8 @@ class ObjectVersionPermissions ()
   override val ObjVer: mfilesLib.IObjVer = js.native
 }
 
+@JSGlobal("MFiles.ObjectVersionPermissions")
+@js.native
+object ObjectVersionPermissions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectVersionPermissions]
+

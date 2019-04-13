@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("esprima", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Syntax: esprimaLib.Anon_ArrayExpression = js.native
   val version: java.lang.String = js.native
   def parseModule(input: java.lang.String): Program = js.native
   def parseModule(input: java.lang.String, config: ParseOptions): Program = js.native

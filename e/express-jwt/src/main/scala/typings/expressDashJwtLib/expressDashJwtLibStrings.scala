@@ -11,23 +11,23 @@ object expressDashJwtLibStrings {
   
   @js.native
   sealed trait credentials_bad_format
-    extends expressDashJwtLib.expressDashJwtMod.jwtNs.ErrorCode
+    extends expressDashJwtLib.expressDashJwtMod.ErrorCode
   
   @js.native
   sealed trait credentials_bad_scheme
-    extends expressDashJwtLib.expressDashJwtMod.jwtNs.ErrorCode
+    extends expressDashJwtLib.expressDashJwtMod.ErrorCode
   
   @js.native
   sealed trait credentials_required
-    extends expressDashJwtLib.expressDashJwtMod.jwtNs.ErrorCode
+    extends expressDashJwtLib.expressDashJwtMod.ErrorCode
   
   @js.native
   sealed trait invalid_token
-    extends expressDashJwtLib.expressDashJwtMod.jwtNs.ErrorCode
+    extends expressDashJwtLib.expressDashJwtMod.ErrorCode
   
   @js.native
   sealed trait revoked_token
-    extends expressDashJwtLib.expressDashJwtMod.jwtNs.ErrorCode
+    extends expressDashJwtLib.expressDashJwtMod.ErrorCode
   
   @scala.inline
   def UnauthorizedError: UnauthorizedError = "UnauthorizedError".asInstanceOf[UnauthorizedError]

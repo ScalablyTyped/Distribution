@@ -13,9 +13,9 @@ trait Anon_Checked extends js.Object {
   var inputId: js.UndefOr[java.lang.String] = js.undefined
   var modifier: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[_], scala.Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[_], scala.Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FocusEvent[_], scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ChangeEvent[_], scala.Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.FocusEvent[_], scala.Unit]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
@@ -32,9 +32,9 @@ object Anon_Checked {
     inputId: java.lang.String = null,
     modifier: java.lang.String = null,
     name: java.lang.String = null,
-    onBlur: /* e */ reactLib.reactMod.ReactNs.FocusEvent[_] => scala.Unit = null,
-    onChange: /* e */ reactLib.reactMod.ReactNs.ChangeEvent[_] => scala.Unit = null,
-    onFocus: /* e */ reactLib.reactMod.ReactNs.FocusEvent[_] => scala.Unit = null,
+    onBlur: /* e */ reactLib.reactMod.FocusEvent[_] => scala.Unit = null,
+    onChange: /* e */ reactLib.reactMod.ChangeEvent[_] => scala.Unit = null,
+    onFocus: /* e */ reactLib.reactMod.FocusEvent[_] => scala.Unit = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,

@@ -16,7 +16,7 @@ trait Anon_ClassNameColorCssModuleDark extends js.Object {
   var light: js.UndefOr[scala.Boolean] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var sticky: js.UndefOr[java.lang.String] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ClassNameColorCssModuleDark {
@@ -32,7 +32,7 @@ object Anon_ClassNameColorCssModuleDark {
     light: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null,
     sticky: java.lang.String = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ClassNameColorCssModuleDark = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

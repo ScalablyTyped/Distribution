@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RequestWithRawBody
-  extends expressLib.expressMod.eNs.Request {
+  extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request {
   var rawBody: js.UndefOr[stdLib.Uint8Array] = js.native
 }
 

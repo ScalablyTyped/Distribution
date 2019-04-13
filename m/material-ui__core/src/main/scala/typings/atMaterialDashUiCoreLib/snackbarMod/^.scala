@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Snackbar", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps] = js.native
+  val default: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps] = js.native
 }
 

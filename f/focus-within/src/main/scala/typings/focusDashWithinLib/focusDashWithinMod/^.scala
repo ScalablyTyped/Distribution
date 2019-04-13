@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(document: stdLib.HTMLDocument): scala.Unit = js.native
-  def apply(
-    document: stdLib.HTMLDocument,
-    opts: focusDashWithinLib.focusDashWithinMod.focusWithinNs.FocusWithinOpts
-  ): scala.Unit = js.native
+  def apply(document: stdLib.HTMLDocument, opts: FocusWithinOpts): scala.Unit = js.native
 }
 

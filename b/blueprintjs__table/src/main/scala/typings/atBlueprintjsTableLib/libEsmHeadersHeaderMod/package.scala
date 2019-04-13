@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 package object libEsmHeadersHeaderMod {
   type IHeaderCellRenderer = js.Function1[
     /* index */ scala.Double, 
-    reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsTableLib.libEsmHeadersHeaderCellMod.IHeaderCellProps]
+    reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmHeadersHeaderCellMod.IHeaderCellProps]
   ]
 }

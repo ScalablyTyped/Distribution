@@ -27,9 +27,9 @@ class Leads () extends js.Object {
   ): scala.Unit = js.native
   def list(): js.Promise[ApiResponse[intercomDashClientLib.leadMod.List]] = js.native
   def list(cb: callback[ApiResponse[intercomDashClientLib.leadMod.List]]): scala.Unit = js.native
-  def listBy(params: intercomDashClientLib.Anon_EmailSegmentid): js.Promise[ApiResponse[intercomDashClientLib.leadMod.List]] = js.native
+  def listBy(params: intercomDashClientLib.Anon_Email): js.Promise[ApiResponse[intercomDashClientLib.leadMod.List]] = js.native
   def listBy(
-    params: intercomDashClientLib.Anon_EmailSegmentid,
+    params: intercomDashClientLib.Anon_Email,
     cb: callback[ApiResponse[intercomDashClientLib.leadMod.List]]
   ): scala.Unit = js.native
   def update(

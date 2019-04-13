@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp, style, tabIndex. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ trait FloatingActionButtonProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] {
+  extends reactLib.reactMod.HTMLAttributes[js.Object] {
   // <EnhancedButton/> is the element that get the 'other' properties
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
-  var containerElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var containerElement: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined
   var disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,12 +21,12 @@ import scala.scalajs.js.annotation._
   var focusRippleOpacity: js.UndefOr[scala.Double] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined
   var mini: js.UndefOr[scala.Boolean] = js.undefined
   var onKeyboardFocus: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
+      /* e */ reactLib.reactMod.FocusEvent[js.Object], 
       /* isKeyboardFocused */ scala.Boolean, 
       scala.Unit
     ]
@@ -42,23 +42,23 @@ import scala.scalajs.js.annotation._
 object FloatingActionButtonProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[js.Object] = null,
     SharedEnhancedButtonProps: SharedEnhancedButtonProps[FloatingActionButton] = null,
     backgroundColor: java.lang.String = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     disabledColor: java.lang.String = null,
     iconClassName: java.lang.String = null,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
     mini: js.UndefOr[scala.Boolean] = js.undefined,
-    onMouseDown: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseUp: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onTouchEnd: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
-    onTouchStart: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
+    onMouseDown: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseUp: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onTouchEnd: reactLib.reactMod.TouchEventHandler[js.Object] = null,
+    onTouchStart: reactLib.reactMod.TouchEventHandler[js.Object] = null,
     secondary: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     zDepth: scala.Int | scala.Double = null
   ): FloatingActionButtonProps = {
     val __obj = js.Dynamic.literal()

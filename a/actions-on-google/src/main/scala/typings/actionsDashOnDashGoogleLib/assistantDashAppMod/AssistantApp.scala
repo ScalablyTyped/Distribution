@@ -134,9 +134,9 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForConfirmation(): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForConfirmation(prompt: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForConfirmation(prompt: java.lang.String, dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForConfirmation(): expressLib.expressMod.Response | scala.Null = js.native
+  def askForConfirmation(prompt: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
+  def askForConfirmation(prompt: java.lang.String, dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks user for a timezone-agnostic date and time.
     *
@@ -180,16 +180,16 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForDateTime(): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForDateTime(initialPrompt: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForDateTime(initialPrompt: java.lang.String, datePrompt: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForDateTime(initialPrompt: java.lang.String, datePrompt: java.lang.String, timePrompt: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForDateTime(): expressLib.expressMod.Response | scala.Null = js.native
+  def askForDateTime(initialPrompt: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
+  def askForDateTime(initialPrompt: java.lang.String, datePrompt: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
+  def askForDateTime(initialPrompt: java.lang.String, datePrompt: java.lang.String, timePrompt: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
   def askForDateTime(
     initialPrompt: java.lang.String,
     datePrompt: java.lang.String,
     timePrompt: java.lang.String,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks user for delivery address.
     *
@@ -247,8 +247,8 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForDeliveryAddress(reason: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForDeliveryAddress(reason: java.lang.String, dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForDeliveryAddress(reason: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
+  def askForDeliveryAddress(reason: java.lang.String, dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Requests the user to switch to another surface during the conversation.
     * Works only for en-* locales.
@@ -300,13 +300,13 @@ class AssistantApp () extends js.Object {
     context: java.lang.String,
     notificationTitle: java.lang.String,
     capabilities: js.Array[SurfaceCapabilities]
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askForNewSurface(
     context: java.lang.String,
     notificationTitle: java.lang.String,
     capabilities: js.Array[SurfaceCapabilities],
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks the Assistant to guide the user to grant a permission. For example,
     * if you want your app to get access to the user's name, you would invoke
@@ -363,8 +363,8 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForPermission(context: java.lang.String, permission: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForPermission(context: java.lang.String, permission: java.lang.String, dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForPermission(context: java.lang.String, permission: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
+  def askForPermission(context: java.lang.String, permission: java.lang.String, dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Equivalent to {@link AssistantApp#askForPermission|askForPermission},
     * but allows you to prompt the user for more than one permission at once.
@@ -419,8 +419,8 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForPermissions(context: java.lang.String, permissions: js.Array[java.lang.String]): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForPermissions(context: java.lang.String, permissions: js.Array[java.lang.String], dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForPermissions(context: java.lang.String, permissions: js.Array[java.lang.String]): expressLib.expressMod.Response | scala.Null = js.native
+  def askForPermissions(context: java.lang.String, permissions: js.Array[java.lang.String], dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks user to provide a geo-located place, possibly using contextual information,
     * like a store near the user's location or a contact's address.
@@ -493,8 +493,8 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForPlace(requestPrompt: java.lang.String, permissionContext: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForPlace(requestPrompt: java.lang.String, permissionContext: java.lang.String, dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForPlace(requestPrompt: java.lang.String, permissionContext: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
+  def askForPlace(requestPrompt: java.lang.String, permissionContext: java.lang.String, dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Hands the user off to a web sign in flow. App sign in and OAuth credentials
     * are set in the {@link https://console.actions.google.com|Actions Console}.
@@ -531,8 +531,8 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForSignIn(): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForSignIn(dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForSignIn(): expressLib.expressMod.Response | scala.Null = js.native
+  def askForSignIn(dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks user to confirm transaction information.
     *
@@ -575,21 +575,21 @@ class AssistantApp () extends js.Object {
   def askForTransactionDecision(
     order: actionsDashOnDashGoogleLib.transactionsMod.Order,
     transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.ActionPaymentTransactionConfig
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askForTransactionDecision(
     order: actionsDashOnDashGoogleLib.transactionsMod.Order,
     transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.ActionPaymentTransactionConfig,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askForTransactionDecision(
     order: actionsDashOnDashGoogleLib.transactionsMod.Order,
     transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.GooglePaymentTransactionConfig
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askForTransactionDecision(
     order: actionsDashOnDashGoogleLib.transactionsMod.Order,
     transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.GooglePaymentTransactionConfig,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Checks whether user is in transactable state.
     *
@@ -630,17 +630,17 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForTransactionRequirements(): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForTransactionRequirements(transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.ActionPaymentTransactionConfig): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForTransactionRequirements(): expressLib.expressMod.Response | scala.Null = js.native
+  def askForTransactionRequirements(transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.ActionPaymentTransactionConfig): expressLib.expressMod.Response | scala.Null = js.native
   def askForTransactionRequirements(
     transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.ActionPaymentTransactionConfig,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForTransactionRequirements(transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.GooglePaymentTransactionConfig): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
+  def askForTransactionRequirements(transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.GooglePaymentTransactionConfig): expressLib.expressMod.Response | scala.Null = js.native
   def askForTransactionRequirements(
     transactionConfig: actionsDashOnDashGoogleLib.transactionsMod.GooglePaymentTransactionConfig,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Prompts the user for permission to send proactive updates at any time.
     *
@@ -691,21 +691,21 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  def askForUpdatePermission(intent: java.lang.String, intentArguments: js.Array[IntentArgument]): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askForUpdatePermission(intent: java.lang.String, intentArguments: js.Array[IntentArgument], dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askForUpdatePermission(intent: java.lang.String, intentArguments: js.Array[IntentArgument]): expressLib.expressMod.Response | scala.Null = js.native
+  def askForUpdatePermission(intent: java.lang.String, intentArguments: js.Array[IntentArgument], dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     destinationName: java.lang.String,
     url: java.lang.String,
     packageName: java.lang.String
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     destinationName: java.lang.String,
     url: java.lang.String,
     packageName: java.lang.String,
     reason: java.lang.String
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     destinationName: java.lang.String,
@@ -713,7 +713,7 @@ class AssistantApp () extends js.Object {
     packageName: java.lang.String,
     reason: java.lang.String,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     destinationName: java.lang.String,
@@ -721,7 +721,7 @@ class AssistantApp () extends js.Object {
     packageName: java.lang.String,
     reason: scala.Null,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Requests the user to transfer to a linked out Android app intent. Using this feature
     * requires verifying the linked app in the (Actions console)[console.actions.google.com].
@@ -791,14 +791,14 @@ class AssistantApp () extends js.Object {
     destinationName: java.lang.String,
     url: java.lang.String,
     packageName: java.lang.String
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: java.lang.String,
     destinationName: java.lang.String,
     url: java.lang.String,
     packageName: java.lang.String,
     reason: java.lang.String
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: java.lang.String,
     destinationName: java.lang.String,
@@ -806,7 +806,7 @@ class AssistantApp () extends js.Object {
     packageName: java.lang.String,
     reason: java.lang.String,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: java.lang.String,
     destinationName: java.lang.String,
@@ -814,20 +814,20 @@ class AssistantApp () extends js.Object {
     packageName: java.lang.String,
     reason: scala.Null,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: scala.Null,
     destinationName: java.lang.String,
     url: java.lang.String,
     packageName: java.lang.String
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: scala.Null,
     destinationName: java.lang.String,
     url: java.lang.String,
     packageName: java.lang.String,
     reason: java.lang.String
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: scala.Null,
     destinationName: java.lang.String,
@@ -835,7 +835,7 @@ class AssistantApp () extends js.Object {
     packageName: java.lang.String,
     reason: java.lang.String,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askToDeepLink(
     prompt: scala.Null,
     destinationName: java.lang.String,
@@ -843,7 +843,7 @@ class AssistantApp () extends js.Object {
     packageName: java.lang.String,
     reason: scala.Null,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Requests the user to register for daily updates.
     *
@@ -882,8 +882,8 @@ class AssistantApp () extends js.Object {
     * @dialogflow
     * @actionssdk
     */
-  def askToRegisterDailyUpdate(intent: java.lang.String, intentArguments: js.Array[IntentArgument]): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def askToRegisterDailyUpdate(intent: java.lang.String, intentArguments: js.Array[IntentArgument], dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askToRegisterDailyUpdate(intent: java.lang.String, intentArguments: js.Array[IntentArgument]): expressLib.expressMod.Response | scala.Null = js.native
+  def askToRegisterDailyUpdate(intent: java.lang.String, intentArguments: js.Array[IntentArgument], dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Constructs BasicCard with chainable property setters.
     *

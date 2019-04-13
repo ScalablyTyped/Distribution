@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 object reactDashMoveLibComponents {
   @scala.inline
-  def Animate: reactLib.reactMod.ReactNs.ComponentType[reactDashMoveLib.animateMod.IAnimateProps] = js.constructorOf[reactDashMoveLib.animateMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMoveLib.animateMod.IAnimateProps]]
+  def Animate: reactLib.reactMod.ComponentType[reactDashMoveLib.animateMod.IAnimateProps] = js.constructorOf[reactDashMoveLib.animateMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMoveLib.animateMod.IAnimateProps]]
   @scala.inline
-  def INodeGroup: reactLib.reactMod.ReactNs.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps] = js.constructorOf[reactDashMoveLib.nodeGroupMod.INodeGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps]]
+  def INodeGroup: reactLib.reactMod.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps] = js.constructorOf[reactDashMoveLib.nodeGroupMod.INodeGroup].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps]]
   @scala.inline
-  def NodeGroup: reactLib.reactMod.ReactNs.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps] = js.constructorOf[reactDashMoveLib.nodeGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps]]
+  def NodeGroup: reactLib.reactMod.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps] = js.constructorOf[reactDashMoveLib.nodeGroupMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMoveLib.nodeGroupMod.INodeGroupProps]]
   @scala.inline
   def IAnimateProps: reactDashMoveLib.animateMod.IAnimateProps.type = reactDashMoveLib.animateMod.IAnimateProps
   type IAnimateProps = reactDashMoveLib.animateMod.IAnimateProps

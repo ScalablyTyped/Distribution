@@ -11,13 +11,13 @@ trait CarouselProps
   var beforeChange: js.UndefOr[js.Function2[/* from */ scala.Double, /* to */ scala.Double, scala.Unit]] = js.undefined
   var cellSpacing: js.UndefOr[scala.Double] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var dotActiveStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var dotStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dotActiveStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var dotStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var easing: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var frameOverflow: js.UndefOr[IFrameOverFlow] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var slideWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var swipeSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -30,8 +30,8 @@ object CarouselProps {
     beforeChange: (/* from */ scala.Double, /* to */ scala.Double) => scala.Unit = null,
     cellSpacing: scala.Int | scala.Double = null,
     className: java.lang.String = null,
-    dotActiveStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    dotStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dotActiveStyle: reactLib.reactMod.CSSProperties = null,
+    dotStyle: reactLib.reactMod.CSSProperties = null,
     dots: js.UndefOr[scala.Boolean] = js.undefined,
     easing: () => scala.Unit = null,
     frameOverflow: IFrameOverFlow = null,
@@ -40,7 +40,7 @@ object CarouselProps {
     prefixCls: java.lang.String = null,
     selectedIndex: scala.Int | scala.Double = null,
     slideWidth: java.lang.String | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     swipeSpeed: scala.Int | scala.Double = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): CarouselProps = {

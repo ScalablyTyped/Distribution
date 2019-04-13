@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("global", "Buffer")
 @js.native
 class Buffer ()
-  extends fibjsLib.globalMod.globalNs.Buffer
+  extends fibjsLib.Class_Buffer
 

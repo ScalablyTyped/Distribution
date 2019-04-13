@@ -8,13 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack", "MultiCompiler")
 @js.native
 abstract class MultiCompiler ()
-  extends webpackLib.webpackMod.webpackNs.MultiCompiler {
+  extends tapableLib.tapableMod.Tapable
+     with ICompiler {
+  var compilers: js.Array[Compiler] = js.native
   /* CompleteClass */
-  override def run(handler: webpackLib.webpackMod.webpackNs.ICompilerNs.Handler): scala.Unit = js.native
+  override def run(handler: webpackLib.webpackMod.ICompilerNs.Handler): scala.Unit = js.native
   /* CompleteClass */
   override def watch(
-    watchOptions: webpackLib.webpackMod.webpackNs.ICompilerNs.WatchOptions,
-    handler: webpackLib.webpackMod.webpackNs.ICompilerNs.Handler
-  ): webpackLib.webpackMod.webpackNs.Watching = js.native
+    watchOptions: webpackLib.webpackMod.ICompilerNs.WatchOptions,
+    handler: webpackLib.webpackMod.ICompilerNs.Handler
+  ): Watching = js.native
 }
 

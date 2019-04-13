@@ -10,7 +10,7 @@ trait AuditLoggerOptions extends js.Object {
   /**
     * Bunyan logger
     */
-  var log: bunyanLib.bunyanMod.namespaced
+  var log: bunyanLib.bunyanMod.^
   /**
     * Ringbuffer which is written to if passed in
     */
@@ -28,7 +28,7 @@ trait AuditLoggerOptions extends js.Object {
 object AuditLoggerOptions {
   @scala.inline
   def apply(
-    log: bunyanLib.bunyanMod.namespaced,
+    log: bunyanLib.bunyanMod.^,
     body: js.UndefOr[scala.Boolean] = js.undefined,
     logBuffer: js.Any = null,
     printLog: js.UndefOr[scala.Boolean] = js.undefined,

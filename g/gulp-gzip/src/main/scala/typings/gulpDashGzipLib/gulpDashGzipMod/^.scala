@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-gzip", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[gulpDashGzipLib.gulpDashGzipMod.gzipNs.Gzip]
+  extends org.scalablytyped.runtime.TopLevel[Gzip]
 

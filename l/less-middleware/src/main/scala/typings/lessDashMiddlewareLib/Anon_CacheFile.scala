@@ -54,7 +54,7 @@ trait Anon_CacheFile extends js.Object {
     js.Function4[
       /* pathname */ java.lang.String, 
       /* css */ java.lang.String, 
-      /* req */ expressLib.expressMod.eNs.Request, 
+      /* req */ expressLib.expressMod.Request, 
       /* next */ js.Function, 
       scala.Unit
     ]
@@ -73,7 +73,7 @@ object Anon_CacheFile {
     postprocess: Anon_Css = null,
     preprocess: Anon_CssImportPaths = null,
     render: Anon_Compress = null,
-    storeCss: (/* pathname */ java.lang.String, /* css */ java.lang.String, /* req */ expressLib.expressMod.eNs.Request, /* next */ js.Function) => scala.Unit = null
+    storeCss: (/* pathname */ java.lang.String, /* css */ java.lang.String, /* req */ expressLib.expressMod.Request, /* next */ js.Function) => scala.Unit = null
   ): Anon_CacheFile = {
     val __obj = js.Dynamic.literal()
     if (cacheFile != null) __obj.updateDynamic("cacheFile")(cacheFile)

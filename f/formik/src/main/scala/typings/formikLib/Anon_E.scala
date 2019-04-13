@@ -9,7 +9,7 @@ trait Anon_E extends js.Object {
   var name: java.lang.String
   var value: js.Any
   def onBlur(e: js.Any): scala.Unit
-  def onChange(e: reactLib.reactMod.ReactNs.ChangeEvent[_]): scala.Unit
+  def onChange(e: reactLib.reactMod.ChangeEvent[_]): scala.Unit
 }
 
 object Anon_E {
@@ -17,7 +17,7 @@ object Anon_E {
   def apply(
     name: java.lang.String,
     onBlur: js.Any => scala.Unit,
-    onChange: reactLib.reactMod.ReactNs.ChangeEvent[_] => scala.Unit,
+    onChange: reactLib.reactMod.ChangeEvent[_] => scala.Unit,
     value: js.Any
   ): Anon_E = {
     val __obj = js.Dynamic.literal(name = name, onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), value = value)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RenderNodeProps extends js.Object {
   var attributes: RenderAttributes
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var editor: slateLib.slateMod.Editor
   var isFocused: scala.Boolean
   var isSelected: scala.Boolean
@@ -21,7 +21,7 @@ object RenderNodeProps {
   @scala.inline
   def apply(
     attributes: RenderAttributes,
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     editor: slateLib.slateMod.Editor,
     isFocused: scala.Boolean,
     isSelected: scala.Boolean,

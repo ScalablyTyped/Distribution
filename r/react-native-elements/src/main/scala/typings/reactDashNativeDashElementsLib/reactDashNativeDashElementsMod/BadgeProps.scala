@@ -11,9 +11,7 @@ trait BadgeProps extends js.Object {
     *
     * @default View (if onPress then TouchableOpacity)
     */
-  var Component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var Component: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Additional styling for badge (background) view component
     */
@@ -49,19 +47,19 @@ trait BadgeProps extends js.Object {
     *
     * @default null
     */
-  var value: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var value: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object BadgeProps {
   @scala.inline
   def apply(
-    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    Component: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
     badgeStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     onPress: () => scala.Unit = null,
     status: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.primary | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.success | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.warning | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.error = null,
     textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    value: reactLib.reactMod.ReactNs.ReactNode = null
+    value: reactLib.reactMod.ReactNode = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
     if (Component != null) __obj.updateDynamic("Component")(Component)

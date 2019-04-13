@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait LoggerOptionsWithWinstonInstance
   extends BaseLoggerOptions
      with LoggerOptions {
-  var winstonInstance: winstonLib.winstonMod.winstonNs.Logger
+  var winstonInstance: winstonLib.winstonMod.Logger
 }
 
 object LoggerOptionsWithWinstonInstance {
   @scala.inline
   def apply(
-    winstonInstance: winstonLib.winstonMod.winstonNs.Logger,
+    winstonInstance: winstonLib.winstonMod.Logger,
     baseMeta: js.Object = null,
     bodyBlacklist: js.Array[java.lang.String] = null,
     bodyWhitelist: js.Array[java.lang.String] = null,

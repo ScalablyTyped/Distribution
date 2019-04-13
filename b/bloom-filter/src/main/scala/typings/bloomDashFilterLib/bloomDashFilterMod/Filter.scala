@@ -19,7 +19,7 @@ trait Filter extends js.Object {
   def hash(nHashNum: scala.Double, vDataToHash: nodeLib.Buffer): scala.Double
   def insert(data: nodeLib.Buffer): scala.Unit
   def inspect(): java.lang.String
-  def toObject(): bloomDashFilterLib.bloomDashFilterMod.FilterNs.FilterOptions
+  def toObject(): FilterOptions
 }
 
 object Filter {
@@ -38,7 +38,7 @@ object Filter {
     hash: (scala.Double, nodeLib.Buffer) => scala.Double,
     insert: nodeLib.Buffer => scala.Unit,
     inspect: () => java.lang.String,
-    toObject: () => bloomDashFilterLib.bloomDashFilterMod.FilterNs.FilterOptions
+    toObject: () => FilterOptions
   ): Filter = {
     val __obj = js.Dynamic.literal(BLOOM_UPDATE_ALL = BLOOM_UPDATE_ALL, BLOOM_UPDATE_NONE = BLOOM_UPDATE_NONE, BLOOM_UPDATE_P2PUBKEY_ONLY = BLOOM_UPDATE_P2PUBKEY_ONLY, LN2 = LN2, LN2SQUARED = LN2SQUARED, MAX_BLOOM_FILTER_SIZE = MAX_BLOOM_FILTER_SIZE, MAX_HASH_FUNCS = MAX_HASH_FUNCS, MIN_HASH_FUNCS = MIN_HASH_FUNCS, clear = js.Any.fromFunction0(clear), contains = js.Any.fromFunction1(contains), hash = js.Any.fromFunction2(hash), insert = js.Any.fromFunction1(insert), inspect = js.Any.fromFunction0(inspect), toObject = js.Any.fromFunction0(toObject))
   

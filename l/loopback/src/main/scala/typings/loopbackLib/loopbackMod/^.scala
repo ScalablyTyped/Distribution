@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("loopback", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): loopbackLib.loopbackMod.lNs.LoopBackApplication = js.native
+  def apply(): LoopBackApplication = js.native
   // END OF PERSISTED MODEL
   /**
     * Serve the LoopBack favicon.
     * @header loopback.favicon(
     */
-  def favicon(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def favicon(): expressLib.expressMod.RequestHandler = js.native
   /**
     * Expose models over REST
     * For example:
@@ -24,11 +24,11 @@ object ^ extends js.Object {
     * For more information, see [Exposing models over a REST API](docs.strongloop.com/display/DOC/Exposing+models+over+a+REST+API).
     * @header loopback.rest(
     */
-  def rest(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def rest(): expressLib.expressMod.RequestHandler = js.native
   /**
     * Rewrite the url to replace current user literal with the logged in user id
     */
-  def rewriteUserLiteral(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def rewriteUserLiteral(): expressLib.expressMod.RequestHandler = js.native
   /**
     * Serve static assets of a LoopBack application
     * @param {string} root The root directory from which the static assets are to
@@ -38,8 +38,8 @@ object ^ extends js.Object {
     *   for the full list of available options.
     * @header loopback.static(root, [options])
     */
-  def static(root: java.lang.String): expressLib.expressMod.eNs.RequestHandler = js.native
-  def static(root: java.lang.String, options: js.Any): expressLib.expressMod.eNs.RequestHandler = js.native
+  def static(root: java.lang.String): expressLib.expressMod.RequestHandler = js.native
+  def static(root: java.lang.String, options: js.Any): expressLib.expressMod.RequestHandler = js.native
   /**
     * Return HTTP response with basic application status information:
     * date the application was started and uptime, in JSON format. For example:
@@ -50,7 +50,7 @@ object ^ extends js.Object {
     * }
     * ```
     */
-  def status(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def status(): expressLib.expressMod.RequestHandler = js.native
   /**
     * Check for an access token in cookies, headers, and query string parameters.
     * This function always checks for the following
@@ -82,13 +82,13 @@ object ^ extends js.Object {
     * @property {string} [currentUserLiteral] string literal for the current user.
     * @header loopback.token([options])
     */
-  def token(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def token(options: loopbackLib.Anon_Cookies): expressLib.expressMod.eNs.RequestHandler = js.native
+  def token(): expressLib.expressMod.RequestHandler = js.native
+  def token(options: loopbackLib.Anon_Cookies): expressLib.expressMod.RequestHandler = js.native
   /**
     * Convert any request not handled so far to a 404 error
     * to be handled by error-handling middleware.
     * @header loopback.urlNotFound(
     */
-  def urlNotFound(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def urlNotFound(): expressLib.expressMod.RequestHandler = js.native
 }
 

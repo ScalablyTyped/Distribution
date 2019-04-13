@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait QueryDetails
-  extends knexLib.knexMod.KnexNs.Sql {
+  extends knexLib.knexMod.Sql {
   var transacting: scala.Boolean = js.native
   def reject(error: java.lang.String): scala.Unit = js.native
   /**

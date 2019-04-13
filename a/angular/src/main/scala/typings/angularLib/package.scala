@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angularLib {
+  type JQLiteCssProperties = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | cssPropertySetter]
   type JQueryStatic = js.Function1[
     /* element */ java.lang.String | stdLib.Element | stdLib.Document | JQuery | stdLib.ArrayLike[stdLib.Element] | js.Function0[scala.Unit], 
     JQLite

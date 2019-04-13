@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends org.scalablytyped.runtime.TopLevel[
-      gotLib.gotMod.gotNs.GotFn with (stdLib.Record[
+      GotFn with (stdLib.Record[
         gotLib.gotLibStrings.get | gotLib.gotLibStrings.post | gotLib.gotLibStrings.put | gotLib.gotLibStrings.patch | gotLib.gotLibStrings.head | gotLib.gotLibStrings.delete, 
-        gotLib.gotMod.gotNs.GotFn
+        GotFn
       ]) with gotLib.Anon_CancelError
     ]
 

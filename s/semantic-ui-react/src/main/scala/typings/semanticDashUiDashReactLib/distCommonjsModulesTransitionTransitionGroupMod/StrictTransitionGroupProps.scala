@@ -13,7 +13,7 @@ trait StrictTransitionGroupProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Whether it is directional animation event or not. Use it only for custom transitions. */
   var directional: js.UndefOr[scala.Boolean] = js.undefined
   /** Duration of the CSS transition animation in milliseconds. */
@@ -27,7 +27,7 @@ object StrictTransitionGroupProps {
   def apply(
     animation: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS | java.lang.String = null,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     directional: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Double | java.lang.String | semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionPropDuration = null
   ): StrictTransitionGroupProps = {

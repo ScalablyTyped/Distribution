@@ -17,3 +17,8 @@ class TimeZoneInformation ()
   override def LoadWithCurrentTimeZone(): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.TimeZoneInformation")
+@js.native
+object TimeZoneInformation
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITimeZoneInformation]
+

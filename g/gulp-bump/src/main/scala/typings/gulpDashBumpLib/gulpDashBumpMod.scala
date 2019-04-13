@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object gulpDashBumpMod extends js.Object {
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(options: bumpDashRegexLib.bumpDashRegexMod.BumpRegexNs.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(options: bumpDashRegexLib.bumpDashRegexMod.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

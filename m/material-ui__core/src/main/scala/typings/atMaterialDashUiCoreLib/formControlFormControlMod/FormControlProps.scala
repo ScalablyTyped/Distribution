@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HtmlHTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HtmlHTMLAttributes<std.HTMLDivElement>[P]} */ trait FormControlProps
+- Dropped {[ P in std.Exclude<keyof react.react.HtmlHTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HtmlHTMLAttributes<std.HTMLDivElement>[P]} */ trait FormControlProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FormControlClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[FormControlProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[FormControlProps]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var margin: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.EventHandler[_]] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.EventHandler[_]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.EventHandler[_]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.EventHandler[_]] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var variant: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled
@@ -27,16 +27,16 @@ object FormControlProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[FormControlClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[FormControlProps] = null,
+    component: reactLib.reactMod.ReactType[FormControlProps] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     margin: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin = null,
-    onBlur: reactLib.reactMod.ReactNs.EventHandler[_] = null,
-    onFocus: reactLib.reactMod.ReactNs.EventHandler[_] = null,
+    onBlur: reactLib.reactMod.EventHandler[_] = null,
+    onFocus: reactLib.reactMod.EventHandler[_] = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): FormControlProps = {
     val __obj = js.Dynamic.literal()

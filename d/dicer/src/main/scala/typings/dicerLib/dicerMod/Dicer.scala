@@ -28,10 +28,7 @@ trait Dicer
   @JSName("addListener")
   def addListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_part(
-    event: dicerLib.dicerLibStrings.part,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
-  ): this.type = js.native
+  def addListener_part(event: dicerLib.dicerLibStrings.part, listener: js.Function1[/* stream */ PartStream, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_pipe(
     event: dicerLib.dicerLibStrings.pipe,
@@ -40,7 +37,7 @@ trait Dicer
   @JSName("addListener")
   def addListener_preamble(
     event: dicerLib.dicerLibStrings.preamble,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
+    listener: js.Function1[/* stream */ PartStream, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_trailer(
@@ -61,10 +58,7 @@ trait Dicer
   @JSName("on")
   def on_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_part(
-    event: dicerLib.dicerLibStrings.part,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
-  ): this.type = js.native
+  def on_part(event: dicerLib.dicerLibStrings.part, listener: js.Function1[/* stream */ PartStream, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_pipe(
     event: dicerLib.dicerLibStrings.pipe,
@@ -73,7 +67,7 @@ trait Dicer
   @JSName("on")
   def on_preamble(
     event: dicerLib.dicerLibStrings.preamble,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
+    listener: js.Function1[/* stream */ PartStream, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_trailer(
@@ -94,10 +88,7 @@ trait Dicer
   @JSName("once")
   def once_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_part(
-    event: dicerLib.dicerLibStrings.part,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
-  ): this.type = js.native
+  def once_part(event: dicerLib.dicerLibStrings.part, listener: js.Function1[/* stream */ PartStream, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_pipe(
     event: dicerLib.dicerLibStrings.pipe,
@@ -106,7 +97,7 @@ trait Dicer
   @JSName("once")
   def once_preamble(
     event: dicerLib.dicerLibStrings.preamble,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
+    listener: js.Function1[/* stream */ PartStream, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_trailer(
@@ -127,10 +118,7 @@ trait Dicer
   @JSName("prependListener")
   def prependListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_part(
-    event: dicerLib.dicerLibStrings.part,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
-  ): this.type = js.native
+  def prependListener_part(event: dicerLib.dicerLibStrings.part, listener: js.Function1[/* stream */ PartStream, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_pipe(
     event: dicerLib.dicerLibStrings.pipe,
@@ -139,7 +127,7 @@ trait Dicer
   @JSName("prependListener")
   def prependListener_preamble(
     event: dicerLib.dicerLibStrings.preamble,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
+    listener: js.Function1[/* stream */ PartStream, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_trailer(
@@ -160,10 +148,7 @@ trait Dicer
   @JSName("prependOnceListener")
   def prependOnceListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_part(
-    event: dicerLib.dicerLibStrings.part,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
-  ): this.type = js.native
+  def prependOnceListener_part(event: dicerLib.dicerLibStrings.part, listener: js.Function1[/* stream */ PartStream, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_pipe(
     event: dicerLib.dicerLibStrings.pipe,
@@ -172,7 +157,7 @@ trait Dicer
   @JSName("prependOnceListener")
   def prependOnceListener_preamble(
     event: dicerLib.dicerLibStrings.preamble,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
+    listener: js.Function1[/* stream */ PartStream, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_trailer(
@@ -193,10 +178,7 @@ trait Dicer
   @JSName("removeListener")
   def removeListener_finish(event: dicerLib.dicerLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_part(
-    event: dicerLib.dicerLibStrings.part,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
-  ): this.type = js.native
+  def removeListener_part(event: dicerLib.dicerLibStrings.part, listener: js.Function1[/* stream */ PartStream, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_pipe(
     event: dicerLib.dicerLibStrings.pipe,
@@ -205,7 +187,7 @@ trait Dicer
   @JSName("removeListener")
   def removeListener_preamble(
     event: dicerLib.dicerLibStrings.preamble,
-    listener: js.Function1[/* stream */ dicerLib.dicerMod.DicerNs.PartStream, scala.Unit]
+    listener: js.Function1[/* stream */ PartStream, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_trailer(

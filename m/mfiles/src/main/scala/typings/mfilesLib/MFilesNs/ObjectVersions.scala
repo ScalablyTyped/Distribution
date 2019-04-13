@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class ObjectVersions ()
   extends mfilesLib.IObjectVersions
 
+@JSGlobal("MFiles.ObjectVersions")
+@js.native
+object ObjectVersions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectVersions]
+

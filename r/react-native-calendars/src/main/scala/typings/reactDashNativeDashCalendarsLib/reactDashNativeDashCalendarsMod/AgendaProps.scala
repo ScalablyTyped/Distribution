@@ -68,7 +68,7 @@ trait AgendaProps[TItem] extends js.Object {
   /**
     *  A RefreshControl component, used to provide pull-to-refresh funtionality for the ScrollView.
     */
-  var refreshControl: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var refreshControl: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     *  Set this true while waiting for new data from a refresh.
     */
@@ -78,20 +78,16 @@ trait AgendaProps[TItem] extends js.Object {
     *  Date can be undefined if the item has not property date.
     */
   var renderDay: js.UndefOr[
-    js.Function2[
-      /* date */ js.UndefOr[DateObject], 
-      /* item */ TItem, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function2[/* date */ js.UndefOr[DateObject], /* item */ TItem, reactLib.reactMod.ReactNode]
   ] = js.undefined
   /**
     *  Specify what should be rendered instead of ActivityIndicator
     */
-  var renderEmptyData: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderEmptyData: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   /**
     *  Specify how agenda knob should look like.
     */
-  var renderKnob: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderKnob: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   /**
     *  Initially visible month. Default = Date()
     */
@@ -109,11 +105,11 @@ trait AgendaProps[TItem] extends js.Object {
   /**
     *  Specify how empty date content with no items should be rendered.
     */
-  def renderEmptyDate(): reactLib.reactMod.ReactNs.ReactNode
+  def renderEmptyDate(): reactLib.reactMod.ReactNode
   /**
     *  Specify how each item should be rendered in agenda.
     */
-  def renderItem(item: TItem, firstDayInDay: scala.Boolean): reactLib.reactMod.ReactNs.ReactNode
+  def renderItem(item: TItem, firstDayInDay: scala.Boolean): reactLib.reactMod.ReactNode
   /**
     * specify your item comparison function for increased performance
     */
@@ -123,8 +119,8 @@ trait AgendaProps[TItem] extends js.Object {
 object AgendaProps {
   @scala.inline
   def apply[TItem](
-    renderEmptyDate: () => reactLib.reactMod.ReactNs.ReactNode,
-    renderItem: (TItem, scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode,
+    renderEmptyDate: () => reactLib.reactMod.ReactNode,
+    renderItem: (TItem, scala.Boolean) => reactLib.reactMod.ReactNode,
     rowHasChanged: (TItem, TItem) => scala.Boolean,
     displayLoadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     firstDay: scala.Int | scala.Double = null,
@@ -140,11 +136,11 @@ object AgendaProps {
     onDayPress: DateCallbackHandler = null,
     onRefresh: () => scala.Unit = null,
     pastScrollRange: scala.Int | scala.Double = null,
-    refreshControl: reactLib.reactMod.ReactNs.ReactNode = null,
+    refreshControl: reactLib.reactMod.ReactNode = null,
     refreshing: js.UndefOr[scala.Boolean] = js.undefined,
-    renderDay: (/* date */ js.UndefOr[DateObject], /* item */ TItem) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderEmptyData: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderKnob: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderDay: (/* date */ js.UndefOr[DateObject], /* item */ TItem) => reactLib.reactMod.ReactNode = null,
+    renderEmptyData: () => reactLib.reactMod.ReactNode = null,
+    renderKnob: () => reactLib.reactMod.ReactNode = null,
     selected: TCalendarDate = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     theme: AgendaThemeStyle = null

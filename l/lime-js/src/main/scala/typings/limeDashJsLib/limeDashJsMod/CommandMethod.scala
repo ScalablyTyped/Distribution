@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("lime-js", "CommandMethod")
 @js.native
-class CommandMethod ()
-  extends limeDashJsLib.limeDashJsMod.LimeNs.CommandMethod
+class CommandMethod () extends js.Object
 
 /* static members */
 @JSImport("lime-js", "CommandMethod")

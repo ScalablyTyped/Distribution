@@ -58,7 +58,7 @@ object i18nNs extends js.Object {
   def createComponent(
     translator: meteorDashUniverseDashI18nLib.`meteorUniverse:i18nMod`.Translator,
     locale: java.lang.String,
-    reactjs: reactLib.reactMod.ReactNs.ReactInstance
+    reactjs: reactLib.reactMod.ReactInstance
   ): org.scalablytyped.runtime.Instantiable0[
     reactLib.reactMod.Component[
       meteorDashUniverseDashI18nLib.`meteorUniverse:i18nMod`.ReactComponentProps, 
@@ -69,7 +69,7 @@ object i18nNs extends js.Object {
   def createComponent(
     translator: meteorDashUniverseDashI18nLib.`meteorUniverse:i18nMod`.Translator,
     locale: java.lang.String,
-    reactjs: reactLib.reactMod.ReactNs.ReactInstance,
+    reactjs: reactLib.reactMod.ReactInstance,
     `type`: js.Any
   ): org.scalablytyped.runtime.Instantiable0[
     reactLib.reactMod.Component[

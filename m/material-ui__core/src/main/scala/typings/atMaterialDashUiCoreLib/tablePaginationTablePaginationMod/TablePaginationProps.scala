@@ -11,27 +11,27 @@ trait TablePaginationProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TablePaginationClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ActionsComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactType[
+    reactLib.reactMod.ReactType[
       atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
     ]
   ] = js.native
   var SelectProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]] = js.native
   var backIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.native
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TablePaginationBaseProps]] = js.native
+  var component: js.UndefOr[reactLib.reactMod.ReactType[TablePaginationBaseProps]] = js.native
   var count: scala.Double = js.native
   var labelDisplayedRows: js.UndefOr[
-    js.Function1[/* paginationInfo */ LabelDisplayedRowsArgs, reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* paginationInfo */ LabelDisplayedRowsArgs, reactLib.reactMod.ReactNode]
   ] = js.native
-  var labelRowsPerPage: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  var labelRowsPerPage: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   var nextIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.native
   var onChangeRowsPerPage: js.UndefOr[
-    reactLib.reactMod.ReactNs.ChangeEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
+    reactLib.reactMod.ChangeEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
   ] = js.native
   var page: scala.Double = js.native
   var rowsPerPage: scala.Double = js.native
   var rowsPerPageOptions: js.UndefOr[js.Array[scala.Double]] = js.native
   def onChangePage(
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent],
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent],
     page: scala.Double
   ): scala.Unit = js.native
   def onChangePage(event: scala.Null, page: scala.Double): scala.Unit = js.native

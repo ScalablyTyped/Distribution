@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(server: nodeLib.httpMod.Server | nodeLib.httpsMod.Server): scala.Unit = js.native
-  def apply(
-    server: nodeLib.httpMod.Server | nodeLib.httpsMod.Server,
-    options: httpDashGracefulDashShutdownLib.httpDashGracefulDashShutdownMod.GracefulShutdownNs.Options
-  ): scala.Unit = js.native
+  def apply(server: nodeLib.httpMod.Server | nodeLib.httpsMod.Server, options: Options): scala.Unit = js.native
 }
 

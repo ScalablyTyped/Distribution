@@ -81,3 +81,8 @@ class SessionInfo ()
   override def IsLoggedOnUserSubstituteOfUser(UserID: scala.Double): scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.SessionInfo")
+@js.native
+object SessionInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISessionInfo]
+

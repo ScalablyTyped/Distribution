@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in 'onChange' ]: @material-ui/core.@material-ui/core/NativeSelect/NativeSelectInput.NativeSelectInputProps[P]} */ trait NativeSelectProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[NativeSelectClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var IconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
-  var input: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var IconComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var input: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var value: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean
   ] = js.undefined
@@ -23,12 +23,12 @@ import scala.scalajs.js.annotation._
 object NativeSelectProps {
   @scala.inline
   def apply(
-    IconComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    IconComponent: reactLib.reactMod.ReactType[_] = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[NativeSelectClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    input: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    input: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): NativeSelectProps = {

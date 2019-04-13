@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "TimeIntervalCollectionPositionProperty")
 @js.native
-class TimeIntervalCollectionPositionProperty ()
-  extends cesiumLib.cesiumMod.CesiumNs.TimeIntervalCollectionPositionProperty {
-  def this(referenceFrame: cesiumLib.cesiumMod.CesiumNs.ReferenceFrame) = this()
+class TimeIntervalCollectionPositionProperty () extends PositionProperty {
+  def this(referenceFrame: ReferenceFrame) = this()
+  var intervals: TimeIntervalCollection = js.native
 }
 

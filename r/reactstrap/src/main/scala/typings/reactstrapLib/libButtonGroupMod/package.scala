@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libButtonGroupMod {
   type ButtonGroup[T] = reactLib.reactMod.Component[ButtonGroupProps[T], js.Object, js.Any]
-  type ButtonGroupProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_Arialabel with T
+  type ButtonGroupProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_Arialabel with T
 }

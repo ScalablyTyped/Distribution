@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object UtilsNs extends js.Object {
   @js.native
   class Collection[T] ()
-    extends twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[T]
+    extends stdLib.Array[T]
   
 }
 

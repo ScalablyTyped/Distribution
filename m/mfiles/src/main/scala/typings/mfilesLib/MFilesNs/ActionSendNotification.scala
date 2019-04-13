@@ -19,3 +19,8 @@ class ActionSendNotification ()
   override def Clone(): mfilesLib.IActionSendNotification = js.native
 }
 
+@JSGlobal("MFiles.ActionSendNotification")
+@js.native
+object ActionSendNotification
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IActionSendNotification]
+

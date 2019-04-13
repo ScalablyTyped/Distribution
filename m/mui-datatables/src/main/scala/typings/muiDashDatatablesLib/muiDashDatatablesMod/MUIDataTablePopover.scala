@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MUIDataTablePopover extends js.Object {
   var action: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var anchorEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var anchorEl: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var anchorOrigin: js.UndefOr[js.Any] = js.undefined
   var elevation: js.UndefOr[scala.Double] = js.undefined
   var onClose: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
@@ -21,7 +21,7 @@ object MUIDataTablePopover {
   @scala.inline
   def apply(
     action: /* args */ js.Any => _ = null,
-    anchorEl: reactLib.reactMod.ReactNs.ReactNode = null,
+    anchorEl: reactLib.reactMod.ReactNode = null,
     anchorOrigin: js.Any = null,
     elevation: scala.Int | scala.Double = null,
     onClose: /* args */ js.Any => _ = null,

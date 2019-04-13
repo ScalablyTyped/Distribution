@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Popover
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libPopoverMod.PopoverNs.PopoverProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[PopoverProps, js.Object, js.Any]
 

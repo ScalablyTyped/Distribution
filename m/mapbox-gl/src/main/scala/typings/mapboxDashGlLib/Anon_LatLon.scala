@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_LatLon
-  extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs._LngLatLike {
+  extends mapboxDashGlLib.mapboxDashGlMod._LngLatLike {
   var lat: scala.Double
   var lon: scala.Double
 }

@@ -20,7 +20,7 @@ trait StrictPopupProps
     ]
   ] = js.undefined
   /** Existing element the pop-up should be bound to. */
-  var context: js.UndefOr[js.Object | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLElement]] = js.undefined
+  var context: js.UndefOr[js.Object | reactLib.reactMod.RefObject[stdLib.HTMLElement]] = js.undefined
   /** A disabled popup only renders its trigger. */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** A flowing Popup has no maximum width and continues to flow to fit its content. */
@@ -56,7 +56,7 @@ trait StrictPopupProps
   @JSName("onClose")
   var onClose_StrictPopupProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PopupProps, 
       scala.Unit
     ]
@@ -78,7 +78,7 @@ trait StrictPopupProps
   @JSName("onOpen")
   var onOpen_StrictPopupProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PopupProps, 
       scala.Unit
     ]
@@ -114,7 +114,7 @@ object StrictPopupProps {
   def apply(
     as: js.Any = null,
     basic: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     closeOnDocumentClick: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
@@ -125,7 +125,7 @@ object StrictPopupProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
       semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps
     ] = null,
-    context: js.Object | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLElement] = null,
+    context: js.Object | reactLib.reactMod.RefObject[stdLib.HTMLElement] = null,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     eventPool: java.lang.String = null,
@@ -144,9 +144,9 @@ object StrictPopupProps {
     on: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus | (js.Array[
       semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus
     ]) = null,
-    onClose: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PopupProps) => scala.Unit = null,
+    onClose: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PopupProps) => scala.Unit = null,
     onMount: (/* nothing */ scala.Null, /* data */ PopupProps) => scala.Unit = null,
-    onOpen: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PopupProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PopupProps) => scala.Unit = null,
     onUnmount: (/* nothing */ scala.Null, /* data */ PopupProps) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
@@ -155,8 +155,8 @@ object StrictPopupProps {
     position: (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top right`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom right`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`right center`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`left center`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top center`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom center`) = null,
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge = null,
     style: js.Object = null,
-    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    trigger: reactLib.reactMod.ReactNode = null,
+    triggerRef: reactLib.reactMod.Ref[_] = null,
     verticalOffset: scala.Int | scala.Double = null,
     wide: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null
   ): StrictPopupProps = {

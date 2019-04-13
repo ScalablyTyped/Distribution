@@ -15,7 +15,7 @@ trait StrictListProps extends js.Object {
   /** A list can divide its items into cells. */
   var celled: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -42,7 +42,7 @@ trait StrictListProps extends js.Object {
     */
   var onItemClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsElementsListListItemMod.ListItemProps, 
       scala.Unit
     ]
@@ -68,7 +68,7 @@ object StrictListProps {
     as: js.Any = null,
     bulleted: js.UndefOr[scala.Boolean] = js.undefined,
     celled: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     divided: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,7 +77,7 @@ object StrictListProps {
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     items: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsElementsListListItemMod.ListItemProps] = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
-    onItemClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsElementsListListItemMod.ListItemProps) => scala.Unit = null,
+    onItemClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsElementsListListItemMod.ListItemProps) => scala.Unit = null,
     ordered: js.UndefOr[scala.Boolean] = js.undefined,
     relaxed: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null,
     selection: js.UndefOr[scala.Boolean] = js.undefined,

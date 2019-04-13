@@ -9,7 +9,7 @@ package object replyMod {
   type cookieType = js.Function3[
     /* name */ java.lang.String, 
     /* value */ java.lang.String, 
-    /* opts */ js.UndefOr[expressLib.expressMod.eNs.CookieOptions], 
+    /* opts */ js.UndefOr[expressLib.expressMod.CookieOptions], 
     Reply
   ]
   type downloadType = js.Function2[/* path */ java.lang.String, /* filename */ js.UndefOr[java.lang.String], js.Any]

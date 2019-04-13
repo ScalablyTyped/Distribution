@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("backgrid", "Row")
 @js.native
 class Row ()
-  extends backgridLib.backgridMod.BackgridNs.Row
+  extends backboneLib.backboneMod.View[backboneLib.backboneMod.Model]
 

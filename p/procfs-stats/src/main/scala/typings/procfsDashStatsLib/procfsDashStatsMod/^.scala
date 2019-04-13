@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("procfs-stats", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(pid: scala.Double): procfsDashStatsLib.procfsDashStatsMod.procfsNs.StatStatic = js.native
+  def apply(pid: scala.Double): StatStatic = js.native
 }
 

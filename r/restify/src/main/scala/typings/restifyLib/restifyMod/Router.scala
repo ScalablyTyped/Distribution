@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Router protected () extends js.Object {
   def this(options: RouterOptions) = this()
-  var log: js.UndefOr[bunyanLib.bunyanMod.namespaced] = js.native
+  var log: js.UndefOr[bunyanLib.bunyanMod.^] = js.native
   var name: java.lang.String = js.native
   var onceNext: scala.Boolean = js.native
   var strictNext: scala.Boolean = js.native

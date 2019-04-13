@@ -18,7 +18,7 @@ object ojSwitchSettableProperties {
     help: atOracleOraclejetLib.Anon_Instruction,
     helpHints: atOracleOraclejetLib.Anon_Definition,
     labelHint: java.lang.String,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     readonly: scala.Boolean,
     valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
     value: scala.Boolean,

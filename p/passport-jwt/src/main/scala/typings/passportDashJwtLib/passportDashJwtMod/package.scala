@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashJwtMod {
-  type JwtFromRequestFunction = js.Function1[/* req */ expressLib.expressMod.eNs.Request, java.lang.String]
+  type JwtFromRequestFunction = js.Function1[/* req */ expressLib.expressMod.Request, java.lang.String]
   type VerifiedCallback = js.Function3[
     /* error */ js.Any, 
     /* user */ js.UndefOr[js.Any], 
@@ -15,7 +15,7 @@ package object passportDashJwtMod {
   ]
   type VerifyCallback = js.Function2[/* payload */ js.Any, /* done */ VerifiedCallback, scala.Unit]
   type VerifyCallbackWithRequest = js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* payload */ js.Any, 
     /* done */ VerifiedCallback, 
     scala.Unit

@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation._
 /** Represents a UPDATE query. */
 @JSImport("massive", "Update")
 @js.native
-class Update protected ()
-  extends massiveLib.massiveMod.massiveNs.Update {
+class Update protected () extends js.Object {
   /** Represents an UPDATE query. */
-  def this(source: massiveLib.massiveMod.massiveNs.Readable, changes: massiveLib.massiveMod.massiveNs.AnyObject[_], criteria: massiveLib.massiveMod.massiveNs.AnyObject[_]) = this()
-  def this(source: massiveLib.massiveMod.massiveNs.Readable, changes: massiveLib.massiveMod.massiveNs.AnyObject[_], criteria: massiveLib.massiveMod.massiveNs.AnyObject[_], options: massiveLib.massiveMod.massiveNs.ResultProcessingOptions with massiveLib.massiveMod.massiveNs.PersistenceUpdateDocOptions) = this()
+  def this(source: Readable, changes: AnyObject[_], criteria: AnyObject[_]) = this()
+  def this(source: Readable, changes: AnyObject[_], criteria: AnyObject[_], options: ResultProcessingOptions with PersistenceUpdateDocOptions) = this()
   /** Format this object into a SQL SELECT. */
-  /* CompleteClass */
-  override def format(): java.lang.String = js.native
+  def format(): java.lang.String = js.native
 }
 

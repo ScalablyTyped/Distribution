@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "Transforms")
 @js.native
-class Transforms ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.Transforms
+class Transforms () extends XmlSignatureCollection[Transform]
 

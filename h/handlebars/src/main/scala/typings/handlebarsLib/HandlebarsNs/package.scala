@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object HandlebarsNs {
+  type HelperDeclareSpec = org.scalablytyped.runtime.StringDictionary[HelperDelegate]
   type HelperDelegate = js.Function7[
     /* context */ js.UndefOr[js.Any], 
     /* arg1 */ js.UndefOr[js.Any], 

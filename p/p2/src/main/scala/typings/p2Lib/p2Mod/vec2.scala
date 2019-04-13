@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "vec2")
 @js.native
-class vec2 ()
-  extends p2Lib.p2Mod.p2Ns.vec2
+class vec2 () extends js.Object
 
 /* static members */
 @JSImport("p2", "vec2")

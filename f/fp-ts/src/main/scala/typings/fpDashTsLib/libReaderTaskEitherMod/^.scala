@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/ReaderTaskEither", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* ReaderTaskEither */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither = js.native
   val readerTaskEither: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] with fpDashTsLib.libMonadIOMod.MonadIO3[URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[URI] = js.native
   val readerTaskEitherSeq: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] with fpDashTsLib.libMonadIOMod.MonadIO3[URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[URI] = js.native
   def ask[E, L](): ReaderTaskEither[E, L, E] = js.native

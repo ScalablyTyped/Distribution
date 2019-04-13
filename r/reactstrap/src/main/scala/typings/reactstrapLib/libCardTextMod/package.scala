@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libCardTextMod {
   type CardText[T] = reactLib.reactMod.Component[CardTextProps[T], js.Object, js.Any]
-  type CardTextProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleTag with T
+  type CardTextProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleTag with T
 }

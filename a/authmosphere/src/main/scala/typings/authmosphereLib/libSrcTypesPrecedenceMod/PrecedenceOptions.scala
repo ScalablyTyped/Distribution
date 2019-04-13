@@ -10,9 +10,9 @@ trait PrecedenceOptions extends js.Object {
   @JSName("precedenceFunction")
   var precedenceFunction_Original: PrecedenceFunction = js.native
   def precedenceFunction(
-    req: expressLib.expressMod.eNs.Request,
-    res: expressLib.expressMod.eNs.Response,
-    next: expressLib.expressMod.eNs.NextFunction
+    req: expressLib.expressMod.Request,
+    res: expressLib.expressMod.Response,
+    next: expressLib.expressMod.NextFunction
   ): js.Promise[scala.Boolean] = js.native
 }
 

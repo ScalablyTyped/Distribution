@@ -14,12 +14,8 @@ object ^ extends js.Object {
   def configureJSXRoutes(config: Config): js.Any = js.native
   def configureRoutes(config: Config): js.Any = js.native
   def markdown(strings: stdLib.TemplateStringsArray, interpolations: js.Any*): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def pageLoader(f: java.lang.String): reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.native
-  def pageLoader(
-    f: js.Function0[
-      js.Promise[catalogLib.Anon_Default | reactLib.reactMod.ReactNs.ComponentType[js.Object]]
-    ]
-  ): reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.native
+  def pageLoader(f: java.lang.String): reactLib.reactMod.ComponentType[js.Object] = js.native
+  def pageLoader(f: js.Function0[js.Promise[catalogLib.Anon_Default | reactLib.reactMod.ComponentType[js.Object]]]): reactLib.reactMod.ComponentType[js.Object] = js.native
   def render(config: Config, element: stdLib.HTMLElement): scala.Unit = js.native
 }
 

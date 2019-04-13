@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait SnackbarProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait SnackbarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SnackbarClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ClickAwayListenerProps: js.UndefOr[
@@ -18,23 +18,23 @@ import scala.scalajs.js.annotation._
     stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps]
   ] = js.undefined
   var TransitionComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
+    reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
-  var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var action: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var anchorOrigin: js.UndefOr[SnackbarOrigin] = js.undefined
   var autoHideDuration: js.UndefOr[scala.Double] = js.undefined
   var disableWindowBlurListener: js.UndefOr[scala.Boolean] = js.undefined
-  var message: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var message: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], 
       /* reason */ java.lang.String, 
       scala.Unit
     ]
   ] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var open: scala.Boolean
   var resumeHideDuration: js.UndefOr[scala.Double] = js.undefined
   var transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
@@ -48,21 +48,21 @@ object SnackbarProps {
       atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps
     ] = null,
     ContentProps: stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps] = null,
-    TransitionComponent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
+    TransitionComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
-    action: reactLib.reactMod.ReactNs.ReactNode = null,
+    action: reactLib.reactMod.ReactNode = null,
     anchorOrigin: SnackbarOrigin = null,
     autoHideDuration: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SnackbarClassKey]] = null,
     disableWindowBlurListener: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
-    onClose: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], /* reason */ java.lang.String) => scala.Unit = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    message: reactLib.reactMod.ReactNode = null,
+    onClose: (/* event */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], /* reason */ java.lang.String) => scala.Unit = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[_] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[_] = null,
     resumeHideDuration: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
   ): SnackbarProps = {
     val __obj = js.Dynamic.literal(open = open)

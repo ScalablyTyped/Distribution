@@ -15,3 +15,8 @@ class Views ()
   override def Item(Index: scala.Double): mfilesLib.IView = js.native
 }
 
+@JSGlobal("MFiles.Views")
+@js.native
+object Views
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IViews]
+

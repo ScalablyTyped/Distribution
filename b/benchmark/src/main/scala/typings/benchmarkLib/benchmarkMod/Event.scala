@@ -7,23 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("benchmark", "Event")
 @js.native
-class Event protected ()
-  extends benchmarkLib.benchmarkMod.BenchmarkNs.Event {
+class Event protected () extends js.Object {
   def this(`type`: java.lang.String) = this()
   def this(`type`: js.Object) = this()
-  /* CompleteClass */
-  override var aborted: scala.Boolean = js.native
-  /* CompleteClass */
-  override var cancelled: scala.Boolean = js.native
-  /* CompleteClass */
-  override var currentTarget: js.Object = js.native
-  /* CompleteClass */
-  override var result: js.Any = js.native
-  /* CompleteClass */
-  override var target: js.Object = js.native
-  /* CompleteClass */
-  override var timeStamp: scala.Double = js.native
-  /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  var aborted: scala.Boolean = js.native
+  var cancelled: scala.Boolean = js.native
+  var currentTarget: js.Object = js.native
+  var result: js.Any = js.native
+  var target: js.Object = js.native
+  var timeStamp: scala.Double = js.native
+  var `type`: java.lang.String = js.native
 }
 

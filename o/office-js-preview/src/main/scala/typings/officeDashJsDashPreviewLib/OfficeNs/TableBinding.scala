@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   * Represents a binding in two dimensions of rows and columns, optionally with headers.
   *
   * @remarks
-  * <table><tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
   *
   * The TableBinding object inherits the `id` property, `type` property, `getDataAsync` method, and `setDataAsync` method from the 
   * {@link Office.Binding} object.
@@ -21,46 +20,10 @@ import scala.scalajs.js.annotation._
 trait TableBinding extends Binding {
   /**
     * Gets the number of columns in the TableBinding, as an integer value.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var columnCount: scala.Double = js.native
   /**
     * True, if the table has headers; otherwise false.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var hasHeaders: scala.Boolean = js.native
   /**
@@ -80,22 +43,6 @@ trait TableBinding extends Binding {
     * strings.
     *
     * In content add-ins for Access, for performance reasons the rowCount property always returns -1.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var rowCount: scala.Double = js.native
   def addColumnsAsync(tableData: js.Array[js.Array[_]]): scala.Unit = js.native
@@ -130,22 +77,6 @@ trait TableBinding extends Binding {
     *
     * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
     * a single call to this method.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param tableData An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the table. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -188,22 +119,6 @@ trait TableBinding extends Binding {
     *
     * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
     * a single call to this method.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param rows An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the table. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -222,20 +137,6 @@ trait TableBinding extends Binding {
     *
     * @remarks
     * See {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -253,22 +154,6 @@ trait TableBinding extends Binding {
     * @remarks
     *
     * In Excel, if the table has no header row, this method will delete the table itself.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -447,20 +332,6 @@ trait TableBinding extends Binding {
     * 
     * For more details and examples, see 
     * {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | How to format tables in add-ins for Excel}.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param cellFormat An array that contains one or more JavaScript objects that specify which cells to target and the formatting to apply to them.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -478,10 +349,7 @@ trait TableBinding extends Binding {
     * Updates table formatting options on the bound table.
     *
     * @remarks
-    * <table>
-    *   <tr><td>Hosts</td><td>Excel</td></tr>
-    *   <tr><td>Requirement Sets</td><td>Not in a set</td></tr>
-    * </table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
     * 
@@ -507,20 +375,6 @@ trait TableBinding extends Binding {
     *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
     *   </tr>
     * </table>
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param tableOptions An object literal containing a list of property name-value pairs that define the table options to apply.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.

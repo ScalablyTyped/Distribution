@@ -14,7 +14,7 @@ trait Anon_AllowPicking extends js.Object {
   var gltf: js.UndefOr[js.Any] = js.undefined
   var id: js.UndefOr[js.Any] = js.undefined
   var minimumPixelSize: js.UndefOr[scala.Double] = js.undefined
-  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
+  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
   var scale: js.UndefOr[scala.Double] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -30,7 +30,7 @@ object Anon_AllowPicking {
     gltf: js.Any = null,
     id: js.Any = null,
     minimumPixelSize: scala.Int | scala.Double = null,
-    modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
+    modelMatrix: cesiumLib.cesiumMod.Matrix4 = null,
     scale: scala.Int | scala.Double = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AllowPicking = {

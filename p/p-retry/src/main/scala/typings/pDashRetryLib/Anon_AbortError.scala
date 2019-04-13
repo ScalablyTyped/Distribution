@@ -43,7 +43,7 @@ trait Anon_AbortError extends js.Object {
   def apply[T](input: js.Function1[/* attemptCount */ scala.Double, js.Thenable[T] | T]): js.Promise[T] = js.native
   def apply[T](
     input: js.Function1[/* attemptCount */ scala.Double, js.Thenable[T] | T],
-    options: pDashRetryLib.pDashRetryMod.pRetryNs.Options
+    options: pDashRetryLib.pDashRetryMod.Options
   ): js.Promise[T] = js.native
 }
 

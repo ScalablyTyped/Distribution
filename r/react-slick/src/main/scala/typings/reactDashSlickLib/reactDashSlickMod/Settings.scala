@@ -10,10 +10,7 @@ trait Settings extends js.Object {
   var adaptiveHeight: js.UndefOr[scala.Boolean] = js.undefined
   var afterChange: js.UndefOr[js.Function1[/* currentSlide */ scala.Double, scala.Unit]] = js.undefined
   var appendDots: js.UndefOr[
-    js.Function1[
-      /* dots */ reactLib.reactMod.ReactNs.ReactNode, 
-      reactLib.reactMod.Global.JSXNs.Element
-    ]
+    js.Function1[/* dots */ reactLib.reactMod.ReactNode, reactLib.reactMod.Global.JSXNs.Element]
   ] = js.undefined
   var arrows: js.UndefOr[scala.Boolean] = js.undefined
   var asNavFor: js.UndefOr[Slider] = js.undefined
@@ -73,7 +70,7 @@ object Settings {
     accessibility: js.UndefOr[scala.Boolean] = js.undefined,
     adaptiveHeight: js.UndefOr[scala.Boolean] = js.undefined,
     afterChange: /* currentSlide */ scala.Double => scala.Unit = null,
-    appendDots: /* dots */ reactLib.reactMod.ReactNs.ReactNode => reactLib.reactMod.Global.JSXNs.Element = null,
+    appendDots: /* dots */ reactLib.reactMod.ReactNode => reactLib.reactMod.Global.JSXNs.Element = null,
     arrows: js.UndefOr[scala.Boolean] = js.undefined,
     asNavFor: Slider = null,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,

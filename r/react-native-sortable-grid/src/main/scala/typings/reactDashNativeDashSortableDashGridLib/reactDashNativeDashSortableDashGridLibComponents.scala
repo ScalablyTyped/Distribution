@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSortableDashGridLibComponents {
   @scala.inline
-  def ReactDashNativeDashSortableDashGrid: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashSortableDashGrid: reactLib.reactMod.ComponentType[
     reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps
-  ] = js.constructorOf[reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps]]
   @scala.inline
   def SortableGridProps: reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps.type = reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps

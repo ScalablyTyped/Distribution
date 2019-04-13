@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class KMS ()
-  extends awsDashSdkLib.clientsKmsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsKmsMod.KMSNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsKmsMod.^ {
+  def this(options: awsDashSdkLib.clientsKmsMod.ClientConfiguration) = this()
 }
 

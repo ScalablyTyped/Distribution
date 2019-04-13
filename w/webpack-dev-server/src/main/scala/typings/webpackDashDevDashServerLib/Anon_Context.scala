@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Context extends js.Object {
   var context: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareMod.proxyNs.Filter
+    java.lang.String | js.Array[java.lang.String] | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareMod.Filter
   ] = js.undefined
   var path: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
@@ -15,7 +15,7 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(
-    context: java.lang.String | js.Array[java.lang.String] | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareMod.proxyNs.Filter = null,
+    context: java.lang.String | js.Array[java.lang.String] | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareMod.Filter = null,
     path: java.lang.String | js.Array[java.lang.String] = null
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()

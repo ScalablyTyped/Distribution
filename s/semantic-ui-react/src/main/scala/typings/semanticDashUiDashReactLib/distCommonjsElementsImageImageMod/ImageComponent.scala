@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ImageComponent
-  extends reactLib.reactMod.ReactNs.FunctionComponent[ImageProps] {
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.FunctionComponent[ImageProps] {
+  var Group: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsImageImageGroupMod.ImageGroupProps
   ] = js.native
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Iot
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_Iot: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsIotMod.IotNs.ClientConfiguration = js.native
+  var config_Iot: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Accepts a pending certificate transfer. The default state of the certificate is INACTIVE. To check for pending certificate transfers, call ListCertificates to enumerate your certificates.
     */
@@ -20,116 +20,80 @@ trait Iot
   /**
     * Accepts a pending certificate transfer. The default state of the certificate is INACTIVE. To check for pending certificate transfers, call ListCertificates to enumerate your certificates.
     */
-  def acceptCertificateTransfer(params: awsDashSdkLib.clientsIotMod.IotNs.AcceptCertificateTransferRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def acceptCertificateTransfer(params: AcceptCertificateTransferRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptCertificateTransfer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AcceptCertificateTransferRequest,
+    params: AcceptCertificateTransferRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a thing to a billing group.
     */
-  def addThingToBillingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def addThingToBillingGroup(): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addThingToBillingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+      /* data */ AddThingToBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a thing to a billing group.
     */
-  def addThingToBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def addThingToBillingGroup(params: AddThingToBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addThingToBillingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupRequest,
+    params: AddThingToBillingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+      /* data */ AddThingToBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a thing to a thing group.
     */
-  def addThingToThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def addThingToThingGroup(): awsDashSdkLib.libRequestMod.Request[AddThingToThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addThingToThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupResponse, 
+      /* data */ AddThingToThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AddThingToThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds a thing to a thing group.
     */
-  def addThingToThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def addThingToThingGroup(params: AddThingToThingGroupRequest): awsDashSdkLib.libRequestMod.Request[AddThingToThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addThingToThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupRequest,
+    params: AddThingToThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupResponse, 
+      /* data */ AddThingToThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AddThingToThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AddThingToThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates a group with a continuous job. The following criteria must be met:    The job must have been created with the targetSelection field set to "CONTINUOUS".   The job status must currently be "IN_PROGRESS".   The total number of targets associated with a job must not exceed 100.  
     */
-  def associateTargetsWithJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associateTargetsWithJob(): awsDashSdkLib.libRequestMod.Request[AssociateTargetsWithJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateTargetsWithJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobResponse, 
+      /* data */ AssociateTargetsWithJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateTargetsWithJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates a group with a continuous job. The following criteria must be met:    The job must have been created with the targetSelection field set to "CONTINUOUS".   The job status must currently be "IN_PROGRESS".   The total number of targets associated with a job must not exceed 100.  
     */
-  def associateTargetsWithJob(params: awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associateTargetsWithJob(params: AssociateTargetsWithJobRequest): awsDashSdkLib.libRequestMod.Request[AssociateTargetsWithJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateTargetsWithJob(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobRequest,
+    params: AssociateTargetsWithJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobResponse, 
+      /* data */ AssociateTargetsWithJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AssociateTargetsWithJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateTargetsWithJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Attaches a policy to the specified target.
     */
@@ -140,9 +104,9 @@ trait Iot
   /**
     * Attaches a policy to the specified target.
     */
-  def attachPolicy(params: awsDashSdkLib.clientsIotMod.IotNs.AttachPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def attachPolicy(params: AttachPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def attachPolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AttachPolicyRequest,
+    params: AttachPolicyRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -155,116 +119,80 @@ trait Iot
   /**
     * Attaches the specified policy to the specified principal (certificate or other credential).  Note: This API is deprecated. Please use AttachPolicy instead.
     */
-  def attachPrincipalPolicy(params: awsDashSdkLib.clientsIotMod.IotNs.AttachPrincipalPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def attachPrincipalPolicy(params: AttachPrincipalPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def attachPrincipalPolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AttachPrincipalPolicyRequest,
+    params: AttachPrincipalPolicyRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates a Device Defender security profile with a thing group or with this account. Each thing group or account can have up to five security profiles associated with it.
     */
-  def attachSecurityProfile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def attachSecurityProfile(): awsDashSdkLib.libRequestMod.Request[AttachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def attachSecurityProfile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileResponse, 
+      /* data */ AttachSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AttachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates a Device Defender security profile with a thing group or with this account. Each thing group or account can have up to five security profiles associated with it.
     */
-  def attachSecurityProfile(params: awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def attachSecurityProfile(params: AttachSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[AttachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def attachSecurityProfile(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileRequest,
+    params: AttachSecurityProfileRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileResponse, 
+      /* data */ AttachSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AttachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Attaches the specified principal to the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
-  def attachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def attachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[AttachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def attachThingPrincipal(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
+      /* data */ AttachThingPrincipalResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AttachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Attaches the specified principal to the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
-  def attachThingPrincipal(params: awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def attachThingPrincipal(params: AttachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[AttachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def attachThingPrincipal(
-    params: awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalRequest,
+    params: AttachThingPrincipalRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
+      /* data */ AttachThingPrincipalResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AttachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels an audit that is in progress. The audit can be either scheduled or on-demand. If the audit is not in progress, an "InvalidRequestException" occurs.
     */
-  def cancelAuditTask(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelAuditTask(): awsDashSdkLib.libRequestMod.Request[CancelAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelAuditTask(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskResponse, 
+      /* data */ CancelAuditTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CancelAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels an audit that is in progress. The audit can be either scheduled or on-demand. If the audit is not in progress, an "InvalidRequestException" occurs.
     */
-  def cancelAuditTask(params: awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelAuditTask(params: CancelAuditTaskRequest): awsDashSdkLib.libRequestMod.Request[CancelAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelAuditTask(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskRequest,
+    params: CancelAuditTaskRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskResponse, 
+      /* data */ CancelAuditTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CancelAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels a pending transfer for the specified certificate.  Note Only the transfer source account can use this operation to cancel a transfer. (Transfer destinations can use RejectCertificateTransfer instead.) After transfer, AWS IoT returns the certificate to the source account in the INACTIVE state. After the destination account has accepted the transfer, the transfer cannot be cancelled. After a certificate transfer is cancelled, the status of the certificate changes from PENDING_TRANSFER to INACTIVE.
     */
@@ -275,46 +203,34 @@ trait Iot
   /**
     * Cancels a pending transfer for the specified certificate.  Note Only the transfer source account can use this operation to cancel a transfer. (Transfer destinations can use RejectCertificateTransfer instead.) After transfer, AWS IoT returns the certificate to the source account in the INACTIVE state. After the destination account has accepted the transfer, the transfer cannot be cancelled. After a certificate transfer is cancelled, the status of the certificate changes from PENDING_TRANSFER to INACTIVE.
     */
-  def cancelCertificateTransfer(params: awsDashSdkLib.clientsIotMod.IotNs.CancelCertificateTransferRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def cancelCertificateTransfer(params: CancelCertificateTransferRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelCertificateTransfer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CancelCertificateTransferRequest,
+    params: CancelCertificateTransferRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels a job.
     */
-  def cancelJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelJob(): awsDashSdkLib.libRequestMod.Request[CancelJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CancelJobResponse, 
+      /* data */ CancelJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CancelJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels a job.
     */
-  def cancelJob(params: awsDashSdkLib.clientsIotMod.IotNs.CancelJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelJob(params: CancelJobRequest): awsDashSdkLib.libRequestMod.Request[CancelJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelJob(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CancelJobRequest,
+    params: CancelJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CancelJobResponse, 
+      /* data */ CancelJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CancelJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CancelJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels the execution of a job for a given thing.
     */
@@ -325,606 +241,402 @@ trait Iot
   /**
     * Cancels the execution of a job for a given thing.
     */
-  def cancelJobExecution(params: awsDashSdkLib.clientsIotMod.IotNs.CancelJobExecutionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def cancelJobExecution(params: CancelJobExecutionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelJobExecution(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CancelJobExecutionRequest,
+    params: CancelJobExecutionRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Clears the default authorizer.
     */
-  def clearDefaultAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def clearDefaultAuthorizer(): awsDashSdkLib.libRequestMod.Request[ClearDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def clearDefaultAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerResponse, 
+      /* data */ ClearDefaultAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ClearDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Clears the default authorizer.
     */
-  def clearDefaultAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def clearDefaultAuthorizer(params: ClearDefaultAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[ClearDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def clearDefaultAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerRequest,
+    params: ClearDefaultAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerResponse, 
+      /* data */ ClearDefaultAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ClearDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ClearDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an authorizer.
     */
-  def createAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createAuthorizer(): awsDashSdkLib.libRequestMod.Request[CreateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerResponse, 
+      /* data */ CreateAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an authorizer.
     */
-  def createAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createAuthorizer(params: CreateAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[CreateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerRequest,
+    params: CreateAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerResponse, 
+      /* data */ CreateAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a billing group.
     */
-  def createBillingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createBillingGroup(): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createBillingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+      /* data */ CreateBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a billing group.
     */
-  def createBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createBillingGroup(params: CreateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createBillingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupRequest,
+    params: CreateBillingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+      /* data */ CreateBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an X.509 certificate using the specified certificate signing request.  Note: The CSR must include a public key that is either an RSA key with a length of at least 2048 bits or an ECC key from NIST P-256 or NIST P-384 curves.   Note: Reusing the same certificate signing request (CSR) results in a distinct certificate. You can create multiple certificates in a batch by creating a directory, copying multiple .csr files into that directory, and then specifying that directory on the command line. The following commands show how to create a batch of certificates given a batch of CSRs. Assuming a set of CSRs are located inside of the directory my-csr-directory: On Linux and OS X, the command is: $ ls my-csr-directory/ | xargs -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} This command lists all of the CSRs in my-csr-directory and pipes each CSR file name to the aws iot create-certificate-from-csr AWS CLI command to create a certificate for the corresponding CSR. The aws iot create-certificate-from-csr part of the command can also be run in parallel to speed up the certificate creation process: $ ls my-csr-directory/ | xargs -P 10 -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} On Windows PowerShell, the command to create certificates for all CSRs in my-csr-directory is: &gt; ls -Name my-csr-directory | %{aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/$_} On a Windows command prompt, the command to create certificates for all CSRs in my-csr-directory is: &gt; forfiles /p my-csr-directory /c "cmd /c aws iot create-certificate-from-csr --certificate-signing-request file://@path"
     */
-  def createCertificateFromCsr(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createCertificateFromCsr(): awsDashSdkLib.libRequestMod.Request[CreateCertificateFromCsrResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCertificateFromCsr(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrResponse, 
+      /* data */ CreateCertificateFromCsrResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateCertificateFromCsrResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an X.509 certificate using the specified certificate signing request.  Note: The CSR must include a public key that is either an RSA key with a length of at least 2048 bits or an ECC key from NIST P-256 or NIST P-384 curves.   Note: Reusing the same certificate signing request (CSR) results in a distinct certificate. You can create multiple certificates in a batch by creating a directory, copying multiple .csr files into that directory, and then specifying that directory on the command line. The following commands show how to create a batch of certificates given a batch of CSRs. Assuming a set of CSRs are located inside of the directory my-csr-directory: On Linux and OS X, the command is: $ ls my-csr-directory/ | xargs -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} This command lists all of the CSRs in my-csr-directory and pipes each CSR file name to the aws iot create-certificate-from-csr AWS CLI command to create a certificate for the corresponding CSR. The aws iot create-certificate-from-csr part of the command can also be run in parallel to speed up the certificate creation process: $ ls my-csr-directory/ | xargs -P 10 -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} On Windows PowerShell, the command to create certificates for all CSRs in my-csr-directory is: &gt; ls -Name my-csr-directory | %{aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/$_} On a Windows command prompt, the command to create certificates for all CSRs in my-csr-directory is: &gt; forfiles /p my-csr-directory /c "cmd /c aws iot create-certificate-from-csr --certificate-signing-request file://@path"
     */
-  def createCertificateFromCsr(params: awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createCertificateFromCsr(params: CreateCertificateFromCsrRequest): awsDashSdkLib.libRequestMod.Request[CreateCertificateFromCsrResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCertificateFromCsr(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrRequest,
+    params: CreateCertificateFromCsrRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrResponse, 
+      /* data */ CreateCertificateFromCsrResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateCertificateFromCsrResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a dynamic thing group.
     */
-  def createDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDynamicThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
+      /* data */ CreateDynamicThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a dynamic thing group.
     */
-  def createDynamicThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDynamicThingGroup(params: CreateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDynamicThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupRequest,
+    params: CreateDynamicThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
+      /* data */ CreateDynamicThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a job.
     */
-  def createJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createJob(): awsDashSdkLib.libRequestMod.Request[CreateJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateJobResponse, 
+      /* data */ CreateJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a job.
     */
-  def createJob(params: awsDashSdkLib.clientsIotMod.IotNs.CreateJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createJob(params: CreateJobRequest): awsDashSdkLib.libRequestMod.Request[CreateJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createJob(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateJobRequest,
+    params: CreateJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateJobResponse, 
+      /* data */ CreateJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.
     */
-  def createKeysAndCertificate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createKeysAndCertificate(): awsDashSdkLib.libRequestMod.Request[CreateKeysAndCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createKeysAndCertificate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateResponse, 
+      /* data */ CreateKeysAndCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateKeysAndCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.
     */
-  def createKeysAndCertificate(params: awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createKeysAndCertificate(params: CreateKeysAndCertificateRequest): awsDashSdkLib.libRequestMod.Request[CreateKeysAndCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createKeysAndCertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateRequest,
+    params: CreateKeysAndCertificateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateResponse, 
+      /* data */ CreateKeysAndCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateKeysAndCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateKeysAndCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an AWS IoT OTAUpdate on a target group of things or groups.
     */
-  def createOTAUpdate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createOTAUpdate(): awsDashSdkLib.libRequestMod.Request[CreateOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createOTAUpdate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateResponse, 
+      /* data */ CreateOTAUpdateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an AWS IoT OTAUpdate on a target group of things or groups.
     */
-  def createOTAUpdate(params: awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createOTAUpdate(params: CreateOTAUpdateRequest): awsDashSdkLib.libRequestMod.Request[CreateOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createOTAUpdate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateRequest,
+    params: CreateOTAUpdateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateResponse, 
+      /* data */ CreateOTAUpdateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an AWS IoT policy. The created policy is the default version for the policy. This operation creates a policy version with a version identifier of 1 and sets 1 as the policy's default version.
     */
-  def createPolicy(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPolicy(): awsDashSdkLib.libRequestMod.Request[CreatePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPolicy(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyResponse, 
+      /* data */ CreatePolicyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an AWS IoT policy. The created policy is the default version for the policy. This operation creates a policy version with a version identifier of 1 and sets 1 as the policy's default version.
     */
-  def createPolicy(params: awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPolicy(params: CreatePolicyRequest): awsDashSdkLib.libRequestMod.Request[CreatePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyRequest,
+    params: CreatePolicyRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyResponse, 
+      /* data */ CreatePolicyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new version of the specified AWS IoT policy. To update a policy, create a new policy version. A managed policy can have up to five versions. If the policy has five versions, you must use DeletePolicyVersion to delete an existing version before you create a new one. Optionally, you can set the new version as the policy's default version. The default version is the operative version (that is, the version that is in effect for the certificates to which the policy is attached).
     */
-  def createPolicyVersion(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPolicyVersion(): awsDashSdkLib.libRequestMod.Request[CreatePolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPolicyVersion(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionResponse, 
+      /* data */ CreatePolicyVersionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new version of the specified AWS IoT policy. To update a policy, create a new policy version. A managed policy can have up to five versions. If the policy has five versions, you must use DeletePolicyVersion to delete an existing version before you create a new one. Optionally, you can set the new version as the policy's default version. The default version is the operative version (that is, the version that is in effect for the certificates to which the policy is attached).
     */
-  def createPolicyVersion(params: awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPolicyVersion(params: CreatePolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[CreatePolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPolicyVersion(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionRequest,
+    params: CreatePolicyVersionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionResponse, 
+      /* data */ CreatePolicyVersionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreatePolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a role alias.
     */
-  def createRoleAlias(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createRoleAlias(): awsDashSdkLib.libRequestMod.Request[CreateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createRoleAlias(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasResponse, 
+      /* data */ CreateRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a role alias.
     */
-  def createRoleAlias(params: awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createRoleAlias(params: CreateRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[CreateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createRoleAlias(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasRequest,
+    params: CreateRoleAliasRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasResponse, 
+      /* data */ CreateRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a scheduled audit that is run at a specified time interval.
     */
-  def createScheduledAudit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createScheduledAudit(): awsDashSdkLib.libRequestMod.Request[CreateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createScheduledAudit(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditResponse, 
+      /* data */ CreateScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a scheduled audit that is run at a specified time interval.
     */
-  def createScheduledAudit(params: awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createScheduledAudit(params: CreateScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[CreateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createScheduledAudit(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditRequest,
+    params: CreateScheduledAuditRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditResponse, 
+      /* data */ CreateScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Device Defender security profile.
     */
-  def createSecurityProfile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createSecurityProfile(): awsDashSdkLib.libRequestMod.Request[CreateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSecurityProfile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileResponse, 
+      /* data */ CreateSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a Device Defender security profile.
     */
-  def createSecurityProfile(params: awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createSecurityProfile(params: CreateSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[CreateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSecurityProfile(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileRequest,
+    params: CreateSecurityProfileRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileResponse, 
+      /* data */ CreateSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a stream for delivering one or more large files in chunks over MQTT. A stream transports data bytes in chunks or blocks packaged as MQTT messages from a source like S3. You can have one or more files associated with a stream. The total size of a file associated with the stream cannot exceed more than 2 MB. The stream will be created with version 0. If a stream is created with the same streamID as a stream that existed and was deleted within last 90 days, we will resurrect that old stream by incrementing the version by 1.
     */
-  def createStream(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createStream(): awsDashSdkLib.libRequestMod.Request[CreateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createStream(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateStreamResponse, 
+      /* data */ CreateStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a stream for delivering one or more large files in chunks over MQTT. A stream transports data bytes in chunks or blocks packaged as MQTT messages from a source like S3. You can have one or more files associated with a stream. The total size of a file associated with the stream cannot exceed more than 2 MB. The stream will be created with version 0. If a stream is created with the same streamID as a stream that existed and was deleted within last 90 days, we will resurrect that old stream by incrementing the version by 1.
     */
-  def createStream(params: awsDashSdkLib.clientsIotMod.IotNs.CreateStreamRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createStream(params: CreateStreamRequest): awsDashSdkLib.libRequestMod.Request[CreateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createStream(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateStreamRequest,
+    params: CreateStreamRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateStreamResponse, 
+      /* data */ CreateStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
-  def createThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThing(): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
+      /* data */ CreateThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
-  def createThing(params: awsDashSdkLib.clientsIotMod.IotNs.CreateThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThing(params: CreateThingRequest): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateThingRequest,
+    params: CreateThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
+      /* data */ CreateThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a thing group.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
-  def createThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThingGroup(): awsDashSdkLib.libRequestMod.Request[CreateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupResponse, 
+      /* data */ CreateThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a thing group.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
-  def createThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThingGroup(params: CreateThingGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupRequest,
+    params: CreateThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupResponse, 
+      /* data */ CreateThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new thing type.
     */
-  def createThingType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThingType(): awsDashSdkLib.libRequestMod.Request[CreateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThingType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeResponse, 
+      /* data */ CreateThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new thing type.
     */
-  def createThingType(params: awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThingType(params: CreateThingTypeRequest): awsDashSdkLib.libRequestMod.Request[CreateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThingType(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeRequest,
+    params: CreateThingTypeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeResponse, 
+      /* data */ CreateThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.CreateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a rule. Creating rules is an administrator-level action. Any user who has permission to create rules will be able to access data processed by the rule.
     */
@@ -935,151 +647,103 @@ trait Iot
   /**
     * Creates a rule. Creating rules is an administrator-level action. Any user who has permission to create rules will be able to access data processed by the rule.
     */
-  def createTopicRule(params: awsDashSdkLib.clientsIotMod.IotNs.CreateTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTopicRule(params: CreateTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createTopicRule(
-    params: awsDashSdkLib.clientsIotMod.IotNs.CreateTopicRuleRequest,
+    params: CreateTopicRuleRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Restores the default settings for Device Defender audits for this account. Any configuration data you entered is deleted and all audit checks are reset to disabled. 
     */
-  def deleteAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[DeleteAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAccountAuditConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationResponse, 
+      /* data */ DeleteAccountAuditConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Restores the default settings for Device Defender audits for this account. Any configuration data you entered is deleted and all audit checks are reset to disabled. 
     */
-  def deleteAccountAuditConfiguration(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAccountAuditConfiguration(params: DeleteAccountAuditConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DeleteAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAccountAuditConfiguration(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationRequest,
+    params: DeleteAccountAuditConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationResponse, 
+      /* data */ DeleteAccountAuditConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an authorizer.
     */
-  def deleteAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAuthorizer(): awsDashSdkLib.libRequestMod.Request[DeleteAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerResponse, 
+      /* data */ DeleteAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an authorizer.
     */
-  def deleteAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAuthorizer(params: DeleteAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[DeleteAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerRequest,
+    params: DeleteAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerResponse, 
+      /* data */ DeleteAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the billing group.
     */
-  def deleteBillingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteBillingGroup(): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBillingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+      /* data */ DeleteBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the billing group.
     */
-  def deleteBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteBillingGroup(params: DeleteBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBillingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupRequest,
+    params: DeleteBillingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+      /* data */ DeleteBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a registered CA certificate.
     */
-  def deleteCACertificate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteCACertificate(): awsDashSdkLib.libRequestMod.Request[DeleteCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCACertificate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateResponse, 
+      /* data */ DeleteCACertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a registered CA certificate.
     */
-  def deleteCACertificate(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteCACertificate(params: DeleteCACertificateRequest): awsDashSdkLib.libRequestMod.Request[DeleteCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCACertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateRequest,
+    params: DeleteCACertificateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateResponse, 
+      /* data */ DeleteCACertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified certificate. A certificate cannot be deleted if it has a policy attached to it or if its status is set to ACTIVE. To delete a certificate, first use the DetachPrincipalPolicy API to detach all policies. Next, use the UpdateCertificate API to set the certificate to the INACTIVE status.
     */
@@ -1090,46 +754,34 @@ trait Iot
   /**
     * Deletes the specified certificate. A certificate cannot be deleted if it has a policy attached to it or if its status is set to ACTIVE. To delete a certificate, first use the DetachPrincipalPolicy API to detach all policies. Next, use the UpdateCertificate API to set the certificate to the INACTIVE status.
     */
-  def deleteCertificate(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteCertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteCertificate(params: DeleteCertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteCertificateRequest,
+    params: DeleteCertificateRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a dynamic thing group.
     */
-  def deleteDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDynamicThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+      /* data */ DeleteDynamicThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a dynamic thing group.
     */
-  def deleteDynamicThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDynamicThingGroup(params: DeleteDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDynamicThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupRequest,
+    params: DeleteDynamicThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+      /* data */ DeleteDynamicThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a job and its related job executions. Deleting a job may take time, depending on the number of job executions created for the job and various other factors. While the job is being deleted, the status of the job will be shown as "DELETION_IN_PROGRESS". Attempting to delete or cancel a job whose status is already "DELETION_IN_PROGRESS" will result in an error. Only 10 jobs may have status "DELETION_IN_PROGRESS" at the same time, or a LimitExceededException will occur.
     */
@@ -1140,9 +792,9 @@ trait Iot
   /**
     * Deletes a job and its related job executions. Deleting a job may take time, depending on the number of job executions created for the job and various other factors. While the job is being deleted, the status of the job will be shown as "DELETION_IN_PROGRESS". Attempting to delete or cancel a job whose status is already "DELETION_IN_PROGRESS" will result in an error. Only 10 jobs may have status "DELETION_IN_PROGRESS" at the same time, or a LimitExceededException will occur.
     */
-  def deleteJob(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteJob(params: DeleteJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteJob(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteJobRequest,
+    params: DeleteJobRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -1155,46 +807,34 @@ trait Iot
   /**
     * Deletes a job execution.
     */
-  def deleteJobExecution(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteJobExecutionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteJobExecution(params: DeleteJobExecutionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteJobExecution(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteJobExecutionRequest,
+    params: DeleteJobExecutionRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an OTA update.
     */
-  def deleteOTAUpdate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteOTAUpdate(): awsDashSdkLib.libRequestMod.Request[DeleteOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteOTAUpdate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateResponse, 
+      /* data */ DeleteOTAUpdateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an OTA update.
     */
-  def deleteOTAUpdate(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteOTAUpdate(params: DeleteOTAUpdateRequest): awsDashSdkLib.libRequestMod.Request[DeleteOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteOTAUpdate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateRequest,
+    params: DeleteOTAUpdateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateResponse, 
+      /* data */ DeleteOTAUpdateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified policy. A policy cannot be deleted if it has non-default versions or it is attached to any certificate. To delete a policy, use the DeletePolicyVersion API to delete all non-default versions of the policy; use the DetachPrincipalPolicy API to detach the policy from any certificate; and then use the DeletePolicy API to delete the policy. When a policy is deleted using DeletePolicy, its default version is deleted with it.
     */
@@ -1205,9 +845,9 @@ trait Iot
   /**
     * Deletes the specified policy. A policy cannot be deleted if it has non-default versions or it is attached to any certificate. To delete a policy, use the DeletePolicyVersion API to delete all non-default versions of the policy; use the DetachPrincipalPolicy API to detach the policy from any certificate; and then use the DeletePolicy API to delete the policy. When a policy is deleted using DeletePolicy, its default version is deleted with it.
     */
-  def deletePolicy(params: awsDashSdkLib.clientsIotMod.IotNs.DeletePolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePolicy(params: DeletePolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeletePolicyRequest,
+    params: DeletePolicyRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -1220,291 +860,195 @@ trait Iot
   /**
     * Deletes the specified version of the specified policy. You cannot delete the default version of a policy using this API. To delete the default version of a policy, use DeletePolicy. To find out which version of a policy is marked as the default version, use ListPolicyVersions.
     */
-  def deletePolicyVersion(params: awsDashSdkLib.clientsIotMod.IotNs.DeletePolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePolicyVersion(params: DeletePolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePolicyVersion(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeletePolicyVersionRequest,
+    params: DeletePolicyVersionRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a CA certificate registration code.
     */
-  def deleteRegistrationCode(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteRegistrationCode(): awsDashSdkLib.libRequestMod.Request[DeleteRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteRegistrationCode(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeResponse, 
+      /* data */ DeleteRegistrationCodeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a CA certificate registration code.
     */
-  def deleteRegistrationCode(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteRegistrationCode(params: DeleteRegistrationCodeRequest): awsDashSdkLib.libRequestMod.Request[DeleteRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteRegistrationCode(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeRequest,
+    params: DeleteRegistrationCodeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeResponse, 
+      /* data */ DeleteRegistrationCodeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a role alias
     */
-  def deleteRoleAlias(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteRoleAlias(): awsDashSdkLib.libRequestMod.Request[DeleteRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteRoleAlias(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasResponse, 
+      /* data */ DeleteRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a role alias
     */
-  def deleteRoleAlias(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteRoleAlias(params: DeleteRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[DeleteRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteRoleAlias(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasRequest,
+    params: DeleteRoleAliasRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasResponse, 
+      /* data */ DeleteRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a scheduled audit.
     */
-  def deleteScheduledAudit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteScheduledAudit(): awsDashSdkLib.libRequestMod.Request[DeleteScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteScheduledAudit(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditResponse, 
+      /* data */ DeleteScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a scheduled audit.
     */
-  def deleteScheduledAudit(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteScheduledAudit(params: DeleteScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[DeleteScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteScheduledAudit(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditRequest,
+    params: DeleteScheduledAuditRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditResponse, 
+      /* data */ DeleteScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Device Defender security profile.
     */
-  def deleteSecurityProfile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteSecurityProfile(): awsDashSdkLib.libRequestMod.Request[DeleteSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteSecurityProfile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileResponse, 
+      /* data */ DeleteSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Device Defender security profile.
     */
-  def deleteSecurityProfile(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteSecurityProfile(params: DeleteSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[DeleteSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteSecurityProfile(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileRequest,
+    params: DeleteSecurityProfileRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileResponse, 
+      /* data */ DeleteSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a stream.
     */
-  def deleteStream(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteStream(): awsDashSdkLib.libRequestMod.Request[DeleteStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteStream(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamResponse, 
+      /* data */ DeleteStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a stream.
     */
-  def deleteStream(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteStream(params: DeleteStreamRequest): awsDashSdkLib.libRequestMod.Request[DeleteStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteStream(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamRequest,
+    params: DeleteStreamRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamResponse, 
+      /* data */ DeleteStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
     */
-  def deleteThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThing(): awsDashSdkLib.libRequestMod.Request[DeleteThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
+      /* data */ DeleteThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
     */
-  def deleteThing(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThing(params: DeleteThingRequest): awsDashSdkLib.libRequestMod.Request[DeleteThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingRequest,
+    params: DeleteThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
+      /* data */ DeleteThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a thing group.
     */
-  def deleteThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThingGroup(): awsDashSdkLib.libRequestMod.Request[DeleteThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupResponse, 
+      /* data */ DeleteThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a thing group.
     */
-  def deleteThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThingGroup(params: DeleteThingGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupRequest,
+    params: DeleteThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupResponse, 
+      /* data */ DeleteThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
     */
-  def deleteThingType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThingType(): awsDashSdkLib.libRequestMod.Request[DeleteThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThingType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
+      /* data */ DeleteThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
     */
-  def deleteThingType(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThingType(params: DeleteThingTypeRequest): awsDashSdkLib.libRequestMod.Request[DeleteThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThingType(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeRequest,
+    params: DeleteThingTypeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
+      /* data */ DeleteThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the rule.
     */
@@ -1515,9 +1059,9 @@ trait Iot
   /**
     * Deletes the rule.
     */
-  def deleteTopicRule(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTopicRule(params: DeleteTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTopicRule(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteTopicRuleRequest,
+    params: DeleteTopicRuleRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -1530,746 +1074,494 @@ trait Iot
   /**
     * Deletes a logging level.
     */
-  def deleteV2LoggingLevel(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteV2LoggingLevelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteV2LoggingLevel(params: DeleteV2LoggingLevelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteV2LoggingLevel(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteV2LoggingLevelRequest,
+    params: DeleteV2LoggingLevelRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deprecates a thing type. You can not associate new things with deprecated thing type.
     */
-  def deprecateThingType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deprecateThingType(): awsDashSdkLib.libRequestMod.Request[DeprecateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deprecateThingType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeResponse, 
+      /* data */ DeprecateThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeprecateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deprecates a thing type. You can not associate new things with deprecated thing type.
     */
-  def deprecateThingType(params: awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deprecateThingType(params: DeprecateThingTypeRequest): awsDashSdkLib.libRequestMod.Request[DeprecateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deprecateThingType(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeRequest,
+    params: DeprecateThingTypeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeResponse, 
+      /* data */ DeprecateThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DeprecateThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeprecateThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
     */
-  def describeAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[DescribeAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAccountAuditConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationResponse, 
+      /* data */ DescribeAccountAuditConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
     */
-  def describeAccountAuditConfiguration(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAccountAuditConfiguration(params: DescribeAccountAuditConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DescribeAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAccountAuditConfiguration(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationRequest,
+    params: DescribeAccountAuditConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationResponse, 
+      /* data */ DescribeAccountAuditConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a Device Defender audit.
     */
-  def describeAuditTask(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAuditTask(): awsDashSdkLib.libRequestMod.Request[DescribeAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAuditTask(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskResponse, 
+      /* data */ DescribeAuditTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a Device Defender audit.
     */
-  def describeAuditTask(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAuditTask(params: DescribeAuditTaskRequest): awsDashSdkLib.libRequestMod.Request[DescribeAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAuditTask(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskRequest,
+    params: DescribeAuditTaskRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskResponse, 
+      /* data */ DescribeAuditTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes an authorizer.
     */
-  def describeAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAuthorizer(): awsDashSdkLib.libRequestMod.Request[DescribeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerResponse, 
+      /* data */ DescribeAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes an authorizer.
     */
-  def describeAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAuthorizer(params: DescribeAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[DescribeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerRequest,
+    params: DescribeAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerResponse, 
+      /* data */ DescribeAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a billing group.
     */
-  def describeBillingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeBillingGroup(): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBillingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
+      /* data */ DescribeBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a billing group.
     */
-  def describeBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeBillingGroup(params: DescribeBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBillingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupRequest,
+    params: DescribeBillingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
+      /* data */ DescribeBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a registered CA certificate.
     */
-  def describeCACertificate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCACertificate(): awsDashSdkLib.libRequestMod.Request[DescribeCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCACertificate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateResponse, 
+      /* data */ DescribeCACertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a registered CA certificate.
     */
-  def describeCACertificate(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCACertificate(params: DescribeCACertificateRequest): awsDashSdkLib.libRequestMod.Request[DescribeCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCACertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateRequest,
+    params: DescribeCACertificateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateResponse, 
+      /* data */ DescribeCACertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified certificate.
     */
-  def describeCertificate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCertificate(): awsDashSdkLib.libRequestMod.Request[DescribeCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCertificate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateResponse, 
+      /* data */ DescribeCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified certificate.
     */
-  def describeCertificate(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCertificate(params: DescribeCertificateRequest): awsDashSdkLib.libRequestMod.Request[DescribeCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateRequest,
+    params: DescribeCertificateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateResponse, 
+      /* data */ DescribeCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the default authorizer.
     */
-  def describeDefaultAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDefaultAuthorizer(): awsDashSdkLib.libRequestMod.Request[DescribeDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDefaultAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerResponse, 
+      /* data */ DescribeDefaultAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the default authorizer.
     */
-  def describeDefaultAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDefaultAuthorizer(params: DescribeDefaultAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[DescribeDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDefaultAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerRequest,
+    params: DescribeDefaultAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerResponse, 
+      /* data */ DescribeDefaultAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a unique endpoint specific to the AWS account making the call.
     */
-  def describeEndpoint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeEndpoint(): awsDashSdkLib.libRequestMod.Request[DescribeEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeEndpoint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointResponse, 
+      /* data */ DescribeEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a unique endpoint specific to the AWS account making the call.
     */
-  def describeEndpoint(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeEndpoint(params: DescribeEndpointRequest): awsDashSdkLib.libRequestMod.Request[DescribeEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeEndpoint(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointRequest,
+    params: DescribeEndpointRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointResponse, 
+      /* data */ DescribeEndpointResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEndpointResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes event configurations.
     */
-  def describeEventConfigurations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeEventConfigurations(): awsDashSdkLib.libRequestMod.Request[DescribeEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeEventConfigurations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsResponse, 
+      /* data */ DescribeEventConfigurationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes event configurations.
     */
-  def describeEventConfigurations(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeEventConfigurations(params: DescribeEventConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeEventConfigurations(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsRequest,
+    params: DescribeEventConfigurationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsResponse, 
+      /* data */ DescribeEventConfigurationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a search index.
     */
-  def describeIndex(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeIndex(): awsDashSdkLib.libRequestMod.Request[DescribeIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeIndex(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexResponse, 
+      /* data */ DescribeIndexResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a search index.
     */
-  def describeIndex(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeIndex(params: DescribeIndexRequest): awsDashSdkLib.libRequestMod.Request[DescribeIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeIndex(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexRequest,
+    params: DescribeIndexRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexResponse, 
+      /* data */ DescribeIndexResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a job.
     */
-  def describeJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeJob(): awsDashSdkLib.libRequestMod.Request[DescribeJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeJobResponse, 
+      /* data */ DescribeJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a job.
     */
-  def describeJob(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeJob(params: DescribeJobRequest): awsDashSdkLib.libRequestMod.Request[DescribeJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeJob(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeJobRequest,
+    params: DescribeJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeJobResponse, 
+      /* data */ DescribeJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a job execution.
     */
-  def describeJobExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeJobExecution(): awsDashSdkLib.libRequestMod.Request[DescribeJobExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeJobExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionResponse, 
+      /* data */ DescribeJobExecutionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeJobExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a job execution.
     */
-  def describeJobExecution(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeJobExecution(params: DescribeJobExecutionRequest): awsDashSdkLib.libRequestMod.Request[DescribeJobExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeJobExecution(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionRequest,
+    params: DescribeJobExecutionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionResponse, 
+      /* data */ DescribeJobExecutionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeJobExecutionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeJobExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a role alias.
     */
-  def describeRoleAlias(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeRoleAlias(): awsDashSdkLib.libRequestMod.Request[DescribeRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeRoleAlias(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasResponse, 
+      /* data */ DescribeRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a role alias.
     */
-  def describeRoleAlias(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeRoleAlias(params: DescribeRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[DescribeRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeRoleAlias(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasRequest,
+    params: DescribeRoleAliasRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasResponse, 
+      /* data */ DescribeRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a scheduled audit.
     */
-  def describeScheduledAudit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeScheduledAudit(): awsDashSdkLib.libRequestMod.Request[DescribeScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeScheduledAudit(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditResponse, 
+      /* data */ DescribeScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a scheduled audit.
     */
-  def describeScheduledAudit(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeScheduledAudit(params: DescribeScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[DescribeScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeScheduledAudit(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditRequest,
+    params: DescribeScheduledAuditRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditResponse, 
+      /* data */ DescribeScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a Device Defender security profile.
     */
-  def describeSecurityProfile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeSecurityProfile(): awsDashSdkLib.libRequestMod.Request[DescribeSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeSecurityProfile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileResponse, 
+      /* data */ DescribeSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a Device Defender security profile.
     */
-  def describeSecurityProfile(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeSecurityProfile(params: DescribeSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[DescribeSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeSecurityProfile(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileRequest,
+    params: DescribeSecurityProfileRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileResponse, 
+      /* data */ DescribeSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a stream.
     */
-  def describeStream(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeStream(): awsDashSdkLib.libRequestMod.Request[DescribeStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeStream(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamResponse, 
+      /* data */ DescribeStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a stream.
     */
-  def describeStream(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeStream(params: DescribeStreamRequest): awsDashSdkLib.libRequestMod.Request[DescribeStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeStream(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamRequest,
+    params: DescribeStreamRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamResponse, 
+      /* data */ DescribeStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified thing.
     */
-  def describeThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThing(): awsDashSdkLib.libRequestMod.Request[DescribeThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingResponse, 
+      /* data */ DescribeThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified thing.
     */
-  def describeThing(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThing(params: DescribeThingRequest): awsDashSdkLib.libRequestMod.Request[DescribeThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRequest,
+    params: DescribeThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingResponse, 
+      /* data */ DescribeThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describe a thing group.
     */
-  def describeThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThingGroup(): awsDashSdkLib.libRequestMod.Request[DescribeThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupResponse, 
+      /* data */ DescribeThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describe a thing group.
     */
-  def describeThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThingGroup(params: DescribeThingGroupRequest): awsDashSdkLib.libRequestMod.Request[DescribeThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupRequest,
+    params: DescribeThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupResponse, 
+      /* data */ DescribeThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a bulk thing provisioning task.
     */
-  def describeThingRegistrationTask(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThingRegistrationTask(): awsDashSdkLib.libRequestMod.Request[DescribeThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThingRegistrationTask(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskResponse, 
+      /* data */ DescribeThingRegistrationTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a bulk thing provisioning task.
     */
-  def describeThingRegistrationTask(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThingRegistrationTask(params: DescribeThingRegistrationTaskRequest): awsDashSdkLib.libRequestMod.Request[DescribeThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThingRegistrationTask(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskRequest,
+    params: DescribeThingRegistrationTaskRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskResponse, 
+      /* data */ DescribeThingRegistrationTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified thing type.
     */
-  def describeThingType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThingType(): awsDashSdkLib.libRequestMod.Request[DescribeThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThingType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeResponse, 
+      /* data */ DescribeThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified thing type.
     */
-  def describeThingType(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeThingType(params: DescribeThingTypeRequest): awsDashSdkLib.libRequestMod.Request[DescribeThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeThingType(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeRequest,
+    params: DescribeThingTypeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeResponse, 
+      /* data */ DescribeThingTypeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DescribeThingTypeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Detaches a policy from the specified target.
     */
@@ -2280,9 +1572,9 @@ trait Iot
   /**
     * Detaches a policy from the specified target.
     */
-  def detachPolicy(params: awsDashSdkLib.clientsIotMod.IotNs.DetachPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def detachPolicy(params: DetachPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detachPolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DetachPolicyRequest,
+    params: DetachPolicyRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -2295,81 +1587,57 @@ trait Iot
   /**
     * Removes the specified policy from the specified certificate.  Note: This API is deprecated. Please use DetachPolicy instead.
     */
-  def detachPrincipalPolicy(params: awsDashSdkLib.clientsIotMod.IotNs.DetachPrincipalPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def detachPrincipalPolicy(params: DetachPrincipalPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detachPrincipalPolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DetachPrincipalPolicyRequest,
+    params: DetachPrincipalPolicyRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates a Device Defender security profile from a thing group or from this account.
     */
-  def detachSecurityProfile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detachSecurityProfile(): awsDashSdkLib.libRequestMod.Request[DetachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detachSecurityProfile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileResponse, 
+      /* data */ DetachSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates a Device Defender security profile from a thing group or from this account.
     */
-  def detachSecurityProfile(params: awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detachSecurityProfile(params: DetachSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[DetachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detachSecurityProfile(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileRequest,
+    params: DetachSecurityProfileRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileResponse, 
+      /* data */ DetachSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
     */
-  def detachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detachThingPrincipal(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
+      /* data */ DetachThingPrincipalResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
     */
-  def detachThingPrincipal(params: awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detachThingPrincipal(params: DetachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detachThingPrincipal(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalRequest,
+    params: DetachThingPrincipalRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
+      /* data */ DetachThingPrincipalResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disables the rule.
     */
@@ -2380,9 +1648,9 @@ trait Iot
   /**
     * Disables the rule.
     */
-  def disableTopicRule(params: awsDashSdkLib.clientsIotMod.IotNs.DisableTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disableTopicRule(params: DisableTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableTopicRule(
-    params: awsDashSdkLib.clientsIotMod.IotNs.DisableTopicRuleRequest,
+    params: DisableTopicRuleRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -2395,1901 +1663,1253 @@ trait Iot
   /**
     * Enables the rule.
     */
-  def enableTopicRule(params: awsDashSdkLib.clientsIotMod.IotNs.EnableTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def enableTopicRule(params: EnableTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableTopicRule(
-    params: awsDashSdkLib.clientsIotMod.IotNs.EnableTopicRuleRequest,
+    params: EnableTopicRuleRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a list of the policies that have an effect on the authorization behavior of the specified device when it connects to the AWS IoT device gateway.
     */
-  def getEffectivePolicies(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getEffectivePolicies(): awsDashSdkLib.libRequestMod.Request[GetEffectivePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEffectivePolicies(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesResponse, 
+      /* data */ GetEffectivePoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEffectivePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a list of the policies that have an effect on the authorization behavior of the specified device when it connects to the AWS IoT device gateway.
     */
-  def getEffectivePolicies(params: awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getEffectivePolicies(params: GetEffectivePoliciesRequest): awsDashSdkLib.libRequestMod.Request[GetEffectivePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEffectivePolicies(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesRequest,
+    params: GetEffectivePoliciesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesResponse, 
+      /* data */ GetEffectivePoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetEffectivePoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEffectivePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the search configuration.
     */
-  def getIndexingConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getIndexingConfiguration(): awsDashSdkLib.libRequestMod.Request[GetIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getIndexingConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationResponse, 
+      /* data */ GetIndexingConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the search configuration.
     */
-  def getIndexingConfiguration(params: awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getIndexingConfiguration(params: GetIndexingConfigurationRequest): awsDashSdkLib.libRequestMod.Request[GetIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getIndexingConfiguration(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationRequest,
+    params: GetIndexingConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationResponse, 
+      /* data */ GetIndexingConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a job document.
     */
-  def getJobDocument(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getJobDocument(): awsDashSdkLib.libRequestMod.Request[GetJobDocumentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getJobDocument(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentResponse, 
+      /* data */ GetJobDocumentResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetJobDocumentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a job document.
     */
-  def getJobDocument(params: awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getJobDocument(params: GetJobDocumentRequest): awsDashSdkLib.libRequestMod.Request[GetJobDocumentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getJobDocument(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentRequest,
+    params: GetJobDocumentRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentResponse, 
+      /* data */ GetJobDocumentResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetJobDocumentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetJobDocumentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the logging options. NOTE: use of this command is not recommended. Use GetV2LoggingOptions instead.
     */
-  def getLoggingOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getLoggingOptions(): awsDashSdkLib.libRequestMod.Request[GetLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getLoggingOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsResponse, 
+      /* data */ GetLoggingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the logging options. NOTE: use of this command is not recommended. Use GetV2LoggingOptions instead.
     */
-  def getLoggingOptions(params: awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getLoggingOptions(params: GetLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[GetLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getLoggingOptions(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsRequest,
+    params: GetLoggingOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsResponse, 
+      /* data */ GetLoggingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetLoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetLoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets an OTA update.
     */
-  def getOTAUpdate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getOTAUpdate(): awsDashSdkLib.libRequestMod.Request[GetOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getOTAUpdate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateResponse, 
+      /* data */ GetOTAUpdateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets an OTA update.
     */
-  def getOTAUpdate(params: awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getOTAUpdate(params: GetOTAUpdateRequest): awsDashSdkLib.libRequestMod.Request[GetOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getOTAUpdate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateRequest,
+    params: GetOTAUpdateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateResponse, 
+      /* data */ GetOTAUpdateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetOTAUpdateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetOTAUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified policy with the policy document of the default version.
     */
-  def getPolicy(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPolicy(): awsDashSdkLib.libRequestMod.Request[GetPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPolicy(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetPolicyResponse, 
+      /* data */ GetPolicyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified policy with the policy document of the default version.
     */
-  def getPolicy(params: awsDashSdkLib.clientsIotMod.IotNs.GetPolicyRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPolicy(params: GetPolicyRequest): awsDashSdkLib.libRequestMod.Request[GetPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetPolicyRequest,
+    params: GetPolicyRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetPolicyResponse, 
+      /* data */ GetPolicyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified policy version.
     */
-  def getPolicyVersion(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPolicyVersion(): awsDashSdkLib.libRequestMod.Request[GetPolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPolicyVersion(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionResponse, 
+      /* data */ GetPolicyVersionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified policy version.
     */
-  def getPolicyVersion(params: awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPolicyVersion(params: GetPolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[GetPolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPolicyVersion(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionRequest,
+    params: GetPolicyVersionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionResponse, 
+      /* data */ GetPolicyVersionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetPolicyVersionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPolicyVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a registration code used to register a CA certificate with AWS IoT.
     */
-  def getRegistrationCode(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getRegistrationCode(): awsDashSdkLib.libRequestMod.Request[GetRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getRegistrationCode(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeResponse, 
+      /* data */ GetRegistrationCodeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a registration code used to register a CA certificate with AWS IoT.
     */
-  def getRegistrationCode(params: awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getRegistrationCode(params: GetRegistrationCodeRequest): awsDashSdkLib.libRequestMod.Request[GetRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getRegistrationCode(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeRequest,
+    params: GetRegistrationCodeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeResponse, 
+      /* data */ GetRegistrationCodeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets statistics about things that match the specified query.
     */
-  def getStatistics(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getStatistics(): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getStatistics(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
+      /* data */ GetStatisticsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets statistics about things that match the specified query.
     */
-  def getStatistics(params: awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getStatistics(params: GetStatisticsRequest): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getStatistics(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsRequest,
+    params: GetStatisticsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
+      /* data */ GetStatisticsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the rule.
     */
-  def getTopicRule(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getTopicRule(): awsDashSdkLib.libRequestMod.Request[GetTopicRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getTopicRule(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleResponse, 
+      /* data */ GetTopicRuleResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetTopicRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the rule.
     */
-  def getTopicRule(params: awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getTopicRule(params: GetTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[GetTopicRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getTopicRule(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleRequest,
+    params: GetTopicRuleRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleResponse, 
+      /* data */ GetTopicRuleResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetTopicRuleResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetTopicRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the fine grained logging options.
     */
-  def getV2LoggingOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getV2LoggingOptions(): awsDashSdkLib.libRequestMod.Request[GetV2LoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getV2LoggingOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsResponse, 
+      /* data */ GetV2LoggingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetV2LoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the fine grained logging options.
     */
-  def getV2LoggingOptions(params: awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getV2LoggingOptions(params: GetV2LoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[GetV2LoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getV2LoggingOptions(
-    params: awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsRequest,
+    params: GetV2LoggingOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsResponse, 
+      /* data */ GetV2LoggingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.GetV2LoggingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetV2LoggingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the active violations for a given Device Defender security profile.
     */
-  def listActiveViolations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActiveViolations(): awsDashSdkLib.libRequestMod.Request[ListActiveViolationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActiveViolations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsResponse, 
+      /* data */ ListActiveViolationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActiveViolationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the active violations for a given Device Defender security profile.
     */
-  def listActiveViolations(params: awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActiveViolations(params: ListActiveViolationsRequest): awsDashSdkLib.libRequestMod.Request[ListActiveViolationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActiveViolations(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsRequest,
+    params: ListActiveViolationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsResponse, 
+      /* data */ ListActiveViolationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListActiveViolationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActiveViolationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the policies attached to the specified thing group.
     */
-  def listAttachedPolicies(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAttachedPolicies(): awsDashSdkLib.libRequestMod.Request[ListAttachedPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAttachedPolicies(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesResponse, 
+      /* data */ ListAttachedPoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAttachedPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the policies attached to the specified thing group.
     */
-  def listAttachedPolicies(params: awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAttachedPolicies(params: ListAttachedPoliciesRequest): awsDashSdkLib.libRequestMod.Request[ListAttachedPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAttachedPolicies(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesRequest,
+    params: ListAttachedPoliciesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesResponse, 
+      /* data */ ListAttachedPoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAttachedPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAttachedPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the findings (results) of a Device Defender audit or of the audits performed during a specified time period. (Findings are retained for 180 days.)
     */
-  def listAuditFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAuditFindings(): awsDashSdkLib.libRequestMod.Request[ListAuditFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAuditFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsResponse, 
+      /* data */ ListAuditFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAuditFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the findings (results) of a Device Defender audit or of the audits performed during a specified time period. (Findings are retained for 180 days.)
     */
-  def listAuditFindings(params: awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAuditFindings(params: ListAuditFindingsRequest): awsDashSdkLib.libRequestMod.Request[ListAuditFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAuditFindings(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsRequest,
+    params: ListAuditFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsResponse, 
+      /* data */ ListAuditFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAuditFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender audits that have been performed during a given time period.
     */
-  def listAuditTasks(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAuditTasks(): awsDashSdkLib.libRequestMod.Request[ListAuditTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAuditTasks(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksResponse, 
+      /* data */ ListAuditTasksResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAuditTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender audits that have been performed during a given time period.
     */
-  def listAuditTasks(params: awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAuditTasks(params: ListAuditTasksRequest): awsDashSdkLib.libRequestMod.Request[ListAuditTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAuditTasks(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksRequest,
+    params: ListAuditTasksRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksResponse, 
+      /* data */ ListAuditTasksResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuditTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAuditTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the authorizers registered in your account.
     */
-  def listAuthorizers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAuthorizers(): awsDashSdkLib.libRequestMod.Request[ListAuthorizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAuthorizers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersResponse, 
+      /* data */ ListAuthorizersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAuthorizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the authorizers registered in your account.
     */
-  def listAuthorizers(params: awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAuthorizers(params: ListAuthorizersRequest): awsDashSdkLib.libRequestMod.Request[ListAuthorizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAuthorizers(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersRequest,
+    params: ListAuthorizersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersResponse, 
+      /* data */ ListAuthorizersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAuthorizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the billing groups you have created.
     */
-  def listBillingGroups(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listBillingGroups(): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listBillingGroups(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
+      /* data */ ListBillingGroupsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the billing groups you have created.
     */
-  def listBillingGroups(params: awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listBillingGroups(params: ListBillingGroupsRequest): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listBillingGroups(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsRequest,
+    params: ListBillingGroupsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
+      /* data */ ListBillingGroupsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the CA certificates registered for your AWS account. The results are paginated with a default page size of 25. You can use the returned marker to retrieve additional results.
     */
-  def listCACertificates(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listCACertificates(): awsDashSdkLib.libRequestMod.Request[ListCACertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCACertificates(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesResponse, 
+      /* data */ ListCACertificatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListCACertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the CA certificates registered for your AWS account. The results are paginated with a default page size of 25. You can use the returned marker to retrieve additional results.
     */
-  def listCACertificates(params: awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listCACertificates(params: ListCACertificatesRequest): awsDashSdkLib.libRequestMod.Request[ListCACertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCACertificates(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesRequest,
+    params: ListCACertificatesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesResponse, 
+      /* data */ ListCACertificatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCACertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListCACertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the certificates registered in your AWS account. The results are paginated with a default page size of 25. You can use the returned marker to retrieve additional results.
     */
-  def listCertificates(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listCertificates(): awsDashSdkLib.libRequestMod.Request[ListCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCertificates(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesResponse, 
+      /* data */ ListCertificatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the certificates registered in your AWS account. The results are paginated with a default page size of 25. You can use the returned marker to retrieve additional results.
     */
-  def listCertificates(params: awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listCertificates(params: ListCertificatesRequest): awsDashSdkLib.libRequestMod.Request[ListCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCertificates(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesRequest,
+    params: ListCertificatesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesResponse, 
+      /* data */ ListCertificatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the device certificates signed by the specified CA certificate.
     */
-  def listCertificatesByCA(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCAResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listCertificatesByCA(): awsDashSdkLib.libRequestMod.Request[ListCertificatesByCAResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCertificatesByCA(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCAResponse, 
+      /* data */ ListCertificatesByCAResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCAResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListCertificatesByCAResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the device certificates signed by the specified CA certificate.
     */
-  def listCertificatesByCA(params: awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCARequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCAResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listCertificatesByCA(params: ListCertificatesByCARequest): awsDashSdkLib.libRequestMod.Request[ListCertificatesByCAResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCertificatesByCA(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCARequest,
+    params: ListCertificatesByCARequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCAResponse, 
+      /* data */ ListCertificatesByCAResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListCertificatesByCAResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListCertificatesByCAResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the search indices.
     */
-  def listIndices(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListIndicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listIndices(): awsDashSdkLib.libRequestMod.Request[ListIndicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listIndices(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListIndicesResponse, 
+      /* data */ ListIndicesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListIndicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListIndicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the search indices.
     */
-  def listIndices(params: awsDashSdkLib.clientsIotMod.IotNs.ListIndicesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListIndicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listIndices(params: ListIndicesRequest): awsDashSdkLib.libRequestMod.Request[ListIndicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listIndices(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListIndicesRequest,
+    params: ListIndicesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListIndicesResponse, 
+      /* data */ ListIndicesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListIndicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListIndicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the job executions for a job.
     */
-  def listJobExecutionsForJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobExecutionsForJob(): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobExecutionsForJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobResponse, 
+      /* data */ ListJobExecutionsForJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the job executions for a job.
     */
-  def listJobExecutionsForJob(params: awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobExecutionsForJob(params: ListJobExecutionsForJobRequest): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobExecutionsForJob(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobRequest,
+    params: ListJobExecutionsForJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobResponse, 
+      /* data */ ListJobExecutionsForJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the job executions for the specified thing.
     */
-  def listJobExecutionsForThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobExecutionsForThing(): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobExecutionsForThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingResponse, 
+      /* data */ ListJobExecutionsForThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the job executions for the specified thing.
     */
-  def listJobExecutionsForThing(params: awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobExecutionsForThing(params: ListJobExecutionsForThingRequest): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobExecutionsForThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingRequest,
+    params: ListJobExecutionsForThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingResponse, 
+      /* data */ ListJobExecutionsForThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobExecutionsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListJobExecutionsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists jobs.
     */
-  def listJobs(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobs(): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListJobsResponse, 
+      /* data */ ListJobsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists jobs.
     */
-  def listJobs(params: awsDashSdkLib.clientsIotMod.IotNs.ListJobsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobs(params: ListJobsRequest): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobs(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListJobsRequest,
+    params: ListJobsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListJobsResponse, 
+      /* data */ ListJobsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists OTA updates.
     */
-  def listOTAUpdates(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOTAUpdates(): awsDashSdkLib.libRequestMod.Request[ListOTAUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOTAUpdates(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesResponse, 
+      /* data */ ListOTAUpdatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOTAUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists OTA updates.
     */
-  def listOTAUpdates(params: awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOTAUpdates(params: ListOTAUpdatesRequest): awsDashSdkLib.libRequestMod.Request[ListOTAUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOTAUpdates(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesRequest,
+    params: ListOTAUpdatesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesResponse, 
+      /* data */ ListOTAUpdatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOTAUpdatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOTAUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists certificates that are being transferred but not yet accepted.
     */
-  def listOutgoingCertificates(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOutgoingCertificates(): awsDashSdkLib.libRequestMod.Request[ListOutgoingCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOutgoingCertificates(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesResponse, 
+      /* data */ ListOutgoingCertificatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOutgoingCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists certificates that are being transferred but not yet accepted.
     */
-  def listOutgoingCertificates(params: awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOutgoingCertificates(params: ListOutgoingCertificatesRequest): awsDashSdkLib.libRequestMod.Request[ListOutgoingCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOutgoingCertificates(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesRequest,
+    params: ListOutgoingCertificatesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesResponse, 
+      /* data */ ListOutgoingCertificatesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListOutgoingCertificatesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOutgoingCertificatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists your policies.
     */
-  def listPolicies(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPolicies(): awsDashSdkLib.libRequestMod.Request[ListPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPolicies(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesResponse, 
+      /* data */ ListPoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists your policies.
     */
-  def listPolicies(params: awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPolicies(params: ListPoliciesRequest): awsDashSdkLib.libRequestMod.Request[ListPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPolicies(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesRequest,
+    params: ListPoliciesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesResponse, 
+      /* data */ ListPoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the principals associated with the specified policy.  Note: This API is deprecated. Please use ListTargetsForPolicy instead.
     */
-  def listPolicyPrincipals(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPolicyPrincipals(): awsDashSdkLib.libRequestMod.Request[ListPolicyPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPolicyPrincipals(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsResponse, 
+      /* data */ ListPolicyPrincipalsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPolicyPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the principals associated with the specified policy.  Note: This API is deprecated. Please use ListTargetsForPolicy instead.
     */
-  def listPolicyPrincipals(params: awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPolicyPrincipals(params: ListPolicyPrincipalsRequest): awsDashSdkLib.libRequestMod.Request[ListPolicyPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPolicyPrincipals(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsRequest,
+    params: ListPolicyPrincipalsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsResponse, 
+      /* data */ ListPolicyPrincipalsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPolicyPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the versions of the specified policy and identifies the default version.
     */
-  def listPolicyVersions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPolicyVersions(): awsDashSdkLib.libRequestMod.Request[ListPolicyVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPolicyVersions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsResponse, 
+      /* data */ ListPolicyVersionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPolicyVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the versions of the specified policy and identifies the default version.
     */
-  def listPolicyVersions(params: awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPolicyVersions(params: ListPolicyVersionsRequest): awsDashSdkLib.libRequestMod.Request[ListPolicyVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPolicyVersions(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsRequest,
+    params: ListPolicyVersionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsResponse, 
+      /* data */ ListPolicyVersionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPolicyVersionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPolicyVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the policies attached to the specified principal. If you use an Cognito identity, the ID must be in AmazonCognito Identity format.  Note: This API is deprecated. Please use ListAttachedPolicies instead.
     */
-  def listPrincipalPolicies(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPrincipalPolicies(): awsDashSdkLib.libRequestMod.Request[ListPrincipalPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPrincipalPolicies(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesResponse, 
+      /* data */ ListPrincipalPoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPrincipalPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the policies attached to the specified principal. If you use an Cognito identity, the ID must be in AmazonCognito Identity format.  Note: This API is deprecated. Please use ListAttachedPolicies instead.
     */
-  def listPrincipalPolicies(params: awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPrincipalPolicies(params: ListPrincipalPoliciesRequest): awsDashSdkLib.libRequestMod.Request[ListPrincipalPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPrincipalPolicies(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesRequest,
+    params: ListPrincipalPoliciesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesResponse, 
+      /* data */ ListPrincipalPoliciesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalPoliciesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPrincipalPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities. 
     */
-  def listPrincipalThings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPrincipalThings(): awsDashSdkLib.libRequestMod.Request[ListPrincipalThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPrincipalThings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
+      /* data */ ListPrincipalThingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPrincipalThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities. 
     */
-  def listPrincipalThings(params: awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPrincipalThings(params: ListPrincipalThingsRequest): awsDashSdkLib.libRequestMod.Request[ListPrincipalThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPrincipalThings(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsRequest,
+    params: ListPrincipalThingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
+      /* data */ ListPrincipalThingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPrincipalThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the role aliases registered in your account.
     */
-  def listRoleAliases(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listRoleAliases(): awsDashSdkLib.libRequestMod.Request[ListRoleAliasesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listRoleAliases(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesResponse, 
+      /* data */ ListRoleAliasesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListRoleAliasesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the role aliases registered in your account.
     */
-  def listRoleAliases(params: awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listRoleAliases(params: ListRoleAliasesRequest): awsDashSdkLib.libRequestMod.Request[ListRoleAliasesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listRoleAliases(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesRequest,
+    params: ListRoleAliasesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesResponse, 
+      /* data */ ListRoleAliasesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListRoleAliasesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListRoleAliasesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all of your scheduled audits.
     */
-  def listScheduledAudits(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listScheduledAudits(): awsDashSdkLib.libRequestMod.Request[ListScheduledAuditsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listScheduledAudits(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsResponse, 
+      /* data */ ListScheduledAuditsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListScheduledAuditsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all of your scheduled audits.
     */
-  def listScheduledAudits(params: awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listScheduledAudits(params: ListScheduledAuditsRequest): awsDashSdkLib.libRequestMod.Request[ListScheduledAuditsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listScheduledAudits(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsRequest,
+    params: ListScheduledAuditsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsResponse, 
+      /* data */ ListScheduledAuditsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListScheduledAuditsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListScheduledAuditsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender security profiles you have created. You can use filters to list only those security profiles associated with a thing group or only those associated with your account.
     */
-  def listSecurityProfiles(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listSecurityProfiles(): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listSecurityProfiles(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesResponse, 
+      /* data */ ListSecurityProfilesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender security profiles you have created. You can use filters to list only those security profiles associated with a thing group or only those associated with your account.
     */
-  def listSecurityProfiles(params: awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listSecurityProfiles(params: ListSecurityProfilesRequest): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listSecurityProfiles(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesRequest,
+    params: ListSecurityProfilesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesResponse, 
+      /* data */ ListSecurityProfilesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender security profiles attached to a target (thing group).
     */
-  def listSecurityProfilesForTarget(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listSecurityProfilesForTarget(): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesForTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listSecurityProfilesForTarget(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetResponse, 
+      /* data */ ListSecurityProfilesForTargetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesForTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender security profiles attached to a target (thing group).
     */
-  def listSecurityProfilesForTarget(params: awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listSecurityProfilesForTarget(params: ListSecurityProfilesForTargetRequest): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesForTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listSecurityProfilesForTarget(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetRequest,
+    params: ListSecurityProfilesForTargetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetResponse, 
+      /* data */ ListSecurityProfilesForTargetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListSecurityProfilesForTargetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListSecurityProfilesForTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all of the streams in your AWS account.
     */
-  def listStreams(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListStreamsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listStreams(): awsDashSdkLib.libRequestMod.Request[ListStreamsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listStreams(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListStreamsResponse, 
+      /* data */ ListStreamsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListStreamsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListStreamsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all of the streams in your AWS account.
     */
-  def listStreams(params: awsDashSdkLib.clientsIotMod.IotNs.ListStreamsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListStreamsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listStreams(params: ListStreamsRequest): awsDashSdkLib.libRequestMod.Request[ListStreamsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listStreams(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListStreamsRequest,
+    params: ListStreamsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListStreamsResponse, 
+      /* data */ ListStreamsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListStreamsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListStreamsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the tags (metadata) you have assigned to the resource.
     */
-  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the tags (metadata) you have assigned to the resource.
     */
-  def listTagsForResource(params: awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceRequest,
+    params: ListTagsForResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List targets for the specified policy.
     */
-  def listTargetsForPolicy(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTargetsForPolicy(): awsDashSdkLib.libRequestMod.Request[ListTargetsForPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTargetsForPolicy(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyResponse, 
+      /* data */ ListTargetsForPolicyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTargetsForPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List targets for the specified policy.
     */
-  def listTargetsForPolicy(params: awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTargetsForPolicy(params: ListTargetsForPolicyRequest): awsDashSdkLib.libRequestMod.Request[ListTargetsForPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTargetsForPolicy(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyRequest,
+    params: ListTargetsForPolicyRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyResponse, 
+      /* data */ ListTargetsForPolicyResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForPolicyResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTargetsForPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the targets (thing groups) associated with a given Device Defender security profile.
     */
-  def listTargetsForSecurityProfile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTargetsForSecurityProfile(): awsDashSdkLib.libRequestMod.Request[ListTargetsForSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTargetsForSecurityProfile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileResponse, 
+      /* data */ ListTargetsForSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTargetsForSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the targets (thing groups) associated with a given Device Defender security profile.
     */
-  def listTargetsForSecurityProfile(params: awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTargetsForSecurityProfile(params: ListTargetsForSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[ListTargetsForSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTargetsForSecurityProfile(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileRequest,
+    params: ListTargetsForSecurityProfileRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileResponse, 
+      /* data */ ListTargetsForSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTargetsForSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTargetsForSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the thing groups in your account.
     */
-  def listThingGroups(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingGroups(): awsDashSdkLib.libRequestMod.Request[ListThingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingGroups(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsResponse, 
+      /* data */ ListThingGroupsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the thing groups in your account.
     */
-  def listThingGroups(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingGroups(params: ListThingGroupsRequest): awsDashSdkLib.libRequestMod.Request[ListThingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingGroups(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsRequest,
+    params: ListThingGroupsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsResponse, 
+      /* data */ ListThingGroupsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the thing groups to which the specified thing belongs.
     */
-  def listThingGroupsForThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingGroupsForThing(): awsDashSdkLib.libRequestMod.Request[ListThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingGroupsForThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingResponse, 
+      /* data */ ListThingGroupsForThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the thing groups to which the specified thing belongs.
     */
-  def listThingGroupsForThing(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingGroupsForThing(params: ListThingGroupsForThingRequest): awsDashSdkLib.libRequestMod.Request[ListThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingGroupsForThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingRequest,
+    params: ListThingGroupsForThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingResponse, 
+      /* data */ ListThingGroupsForThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the principals associated with the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
-  def listThingPrincipals(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingPrincipals(): awsDashSdkLib.libRequestMod.Request[ListThingPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingPrincipals(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 
+      /* data */ ListThingPrincipalsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the principals associated with the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
-  def listThingPrincipals(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingPrincipals(params: ListThingPrincipalsRequest): awsDashSdkLib.libRequestMod.Request[ListThingPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingPrincipals(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsRequest,
+    params: ListThingPrincipalsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 
+      /* data */ ListThingPrincipalsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Information about the thing registration tasks.
     */
-  def listThingRegistrationTaskReports(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingRegistrationTaskReports(): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTaskReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingRegistrationTaskReports(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsResponse, 
+      /* data */ ListThingRegistrationTaskReportsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTaskReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Information about the thing registration tasks.
     */
-  def listThingRegistrationTaskReports(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingRegistrationTaskReports(params: ListThingRegistrationTaskReportsRequest): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTaskReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingRegistrationTaskReports(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsRequest,
+    params: ListThingRegistrationTaskReportsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsResponse, 
+      /* data */ ListThingRegistrationTaskReportsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTaskReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTaskReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List bulk thing provisioning tasks.
     */
-  def listThingRegistrationTasks(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingRegistrationTasks(): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingRegistrationTasks(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksResponse, 
+      /* data */ ListThingRegistrationTasksResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List bulk thing provisioning tasks.
     */
-  def listThingRegistrationTasks(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingRegistrationTasks(params: ListThingRegistrationTasksRequest): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingRegistrationTasks(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksRequest,
+    params: ListThingRegistrationTasksRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksResponse, 
+      /* data */ ListThingRegistrationTasksResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingRegistrationTasksResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingRegistrationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the existing thing types.
     */
-  def listThingTypes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingTypes(): awsDashSdkLib.libRequestMod.Request[ListThingTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingTypes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesResponse, 
+      /* data */ ListThingTypesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the existing thing types.
     */
-  def listThingTypes(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingTypes(params: ListThingTypesRequest): awsDashSdkLib.libRequestMod.Request[ListThingTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingTypes(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesRequest,
+    params: ListThingTypesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesResponse, 
+      /* data */ ListThingTypesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingTypesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red. 
     */
-  def listThings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThings(): awsDashSdkLib.libRequestMod.Request[ListThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsResponse, 
+      /* data */ ListThingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red. 
     */
-  def listThings(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThings(params: ListThingsRequest): awsDashSdkLib.libRequestMod.Request[ListThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThings(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsRequest,
+    params: ListThingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsResponse, 
+      /* data */ ListThingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the things you have added to the given billing group.
     */
-  def listThingsInBillingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingsInBillingGroup(): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingsInBillingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+      /* data */ ListThingsInBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the things you have added to the given billing group.
     */
-  def listThingsInBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingsInBillingGroup(params: ListThingsInBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingsInBillingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupRequest,
+    params: ListThingsInBillingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+      /* data */ ListThingsInBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the things in the specified group.
     */
-  def listThingsInThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingsInThingGroup(): awsDashSdkLib.libRequestMod.Request[ListThingsInThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingsInThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupResponse, 
+      /* data */ ListThingsInThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingsInThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the things in the specified group.
     */
-  def listThingsInThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThingsInThingGroup(params: ListThingsInThingGroupRequest): awsDashSdkLib.libRequestMod.Request[ListThingsInThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThingsInThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupRequest,
+    params: ListThingsInThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupResponse, 
+      /* data */ ListThingsInThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThingsInThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the rules for the specific topic.
     */
-  def listTopicRules(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTopicRules(): awsDashSdkLib.libRequestMod.Request[ListTopicRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTopicRules(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesResponse, 
+      /* data */ ListTopicRulesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTopicRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the rules for the specific topic.
     */
-  def listTopicRules(params: awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTopicRules(params: ListTopicRulesRequest): awsDashSdkLib.libRequestMod.Request[ListTopicRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTopicRules(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesRequest,
+    params: ListTopicRulesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesResponse, 
+      /* data */ ListTopicRulesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListTopicRulesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTopicRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists logging levels.
     */
-  def listV2LoggingLevels(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listV2LoggingLevels(): awsDashSdkLib.libRequestMod.Request[ListV2LoggingLevelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listV2LoggingLevels(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsResponse, 
+      /* data */ ListV2LoggingLevelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListV2LoggingLevelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists logging levels.
     */
-  def listV2LoggingLevels(params: awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listV2LoggingLevels(params: ListV2LoggingLevelsRequest): awsDashSdkLib.libRequestMod.Request[ListV2LoggingLevelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listV2LoggingLevels(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsRequest,
+    params: ListV2LoggingLevelsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsResponse, 
+      /* data */ ListV2LoggingLevelsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListV2LoggingLevelsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListV2LoggingLevelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender security profile violations discovered during the given time period. You can use filters to limit the results to those alerts issued for a particular security profile, behavior or thing (device).
     */
-  def listViolationEvents(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listViolationEvents(): awsDashSdkLib.libRequestMod.Request[ListViolationEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listViolationEvents(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsResponse, 
+      /* data */ ListViolationEventsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListViolationEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the Device Defender security profile violations discovered during the given time period. You can use filters to limit the results to those alerts issued for a particular security profile, behavior or thing (device).
     */
-  def listViolationEvents(params: awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listViolationEvents(params: ListViolationEventsRequest): awsDashSdkLib.libRequestMod.Request[ListViolationEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listViolationEvents(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsRequest,
+    params: ListViolationEventsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsResponse, 
+      /* data */ ListViolationEventsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ListViolationEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListViolationEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Registers a CA certificate with AWS IoT. This CA certificate can then be used to sign device certificates, which can be then registered with AWS IoT. You can register up to 10 CA certificates per AWS account that have the same subject field. This enables you to have up to 10 certificate authorities sign your device certificates. If you have more than one CA certificate registered, make sure you pass the CA certificate when you register your device certificates with the RegisterCertificate API.
     */
-  def registerCACertificate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerCACertificate(): awsDashSdkLib.libRequestMod.Request[RegisterCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerCACertificate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateResponse, 
+      /* data */ RegisterCACertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Registers a CA certificate with AWS IoT. This CA certificate can then be used to sign device certificates, which can be then registered with AWS IoT. You can register up to 10 CA certificates per AWS account that have the same subject field. This enables you to have up to 10 certificate authorities sign your device certificates. If you have more than one CA certificate registered, make sure you pass the CA certificate when you register your device certificates with the RegisterCertificate API.
     */
-  def registerCACertificate(params: awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerCACertificate(params: RegisterCACertificateRequest): awsDashSdkLib.libRequestMod.Request[RegisterCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerCACertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateRequest,
+    params: RegisterCACertificateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateResponse, 
+      /* data */ RegisterCACertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCACertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Registers a device certificate with AWS IoT. If you have more than one CA certificate that has the same subject field, you must specify the CA certificate that was used to sign the device certificate being registered.
     */
-  def registerCertificate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerCertificate(): awsDashSdkLib.libRequestMod.Request[RegisterCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerCertificate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateResponse, 
+      /* data */ RegisterCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Registers a device certificate with AWS IoT. If you have more than one CA certificate that has the same subject field, you must specify the CA certificate that was used to sign the device certificate being registered.
     */
-  def registerCertificate(params: awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerCertificate(params: RegisterCertificateRequest): awsDashSdkLib.libRequestMod.Request[RegisterCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerCertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateRequest,
+    params: RegisterCertificateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateResponse, 
+      /* data */ RegisterCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provisions a thing.
     */
-  def registerThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerThing(): awsDashSdkLib.libRequestMod.Request[RegisterThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RegisterThingResponse, 
+      /* data */ RegisterThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provisions a thing.
     */
-  def registerThing(params: awsDashSdkLib.clientsIotMod.IotNs.RegisterThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerThing(params: RegisterThingRequest): awsDashSdkLib.libRequestMod.Request[RegisterThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.RegisterThingRequest,
+    params: RegisterThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RegisterThingResponse, 
+      /* data */ RegisterThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RegisterThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Rejects a pending certificate transfer. After AWS IoT rejects a certificate transfer, the certificate status changes from PENDING_TRANSFER to INACTIVE. To check for pending certificate transfers, call ListCertificates to enumerate your certificates. This operation can only be called by the transfer destination. After it is called, the certificate will be returned to the source's account in the INACTIVE state.
     */
@@ -4300,81 +2920,57 @@ trait Iot
   /**
     * Rejects a pending certificate transfer. After AWS IoT rejects a certificate transfer, the certificate status changes from PENDING_TRANSFER to INACTIVE. To check for pending certificate transfers, call ListCertificates to enumerate your certificates. This operation can only be called by the transfer destination. After it is called, the certificate will be returned to the source's account in the INACTIVE state.
     */
-  def rejectCertificateTransfer(params: awsDashSdkLib.clientsIotMod.IotNs.RejectCertificateTransferRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def rejectCertificateTransfer(params: RejectCertificateTransferRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rejectCertificateTransfer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.RejectCertificateTransferRequest,
+    params: RejectCertificateTransferRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the given thing from the billing group.
     */
-  def removeThingFromBillingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def removeThingFromBillingGroup(): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeThingFromBillingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+      /* data */ RemoveThingFromBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the given thing from the billing group.
     */
-  def removeThingFromBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def removeThingFromBillingGroup(params: RemoveThingFromBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeThingFromBillingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupRequest,
+    params: RemoveThingFromBillingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+      /* data */ RemoveThingFromBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Remove the specified thing from the specified group.
     */
-  def removeThingFromThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def removeThingFromThingGroup(): awsDashSdkLib.libRequestMod.Request[RemoveThingFromThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeThingFromThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupResponse, 
+      /* data */ RemoveThingFromThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RemoveThingFromThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Remove the specified thing from the specified group.
     */
-  def removeThingFromThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def removeThingFromThingGroup(params: RemoveThingFromThingGroupRequest): awsDashSdkLib.libRequestMod.Request[RemoveThingFromThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeThingFromThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupRequest,
+    params: RemoveThingFromThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupResponse, 
+      /* data */ RemoveThingFromThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RemoveThingFromThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces the rule. You must specify all parameters for the new rule. Creating rules is an administrator-level action. Any user who has permission to create rules will be able to access data processed by the rule.
     */
@@ -4385,81 +2981,57 @@ trait Iot
   /**
     * Replaces the rule. You must specify all parameters for the new rule. Creating rules is an administrator-level action. Any user who has permission to create rules will be able to access data processed by the rule.
     */
-  def replaceTopicRule(params: awsDashSdkLib.clientsIotMod.IotNs.ReplaceTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def replaceTopicRule(params: ReplaceTopicRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def replaceTopicRule(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ReplaceTopicRuleRequest,
+    params: ReplaceTopicRuleRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * The query search index.
     */
-  def searchIndex(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SearchIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchIndex(): awsDashSdkLib.libRequestMod.Request[SearchIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchIndex(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.SearchIndexResponse, 
+      /* data */ SearchIndexResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SearchIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * The query search index.
     */
-  def searchIndex(params: awsDashSdkLib.clientsIotMod.IotNs.SearchIndexRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SearchIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchIndex(params: SearchIndexRequest): awsDashSdkLib.libRequestMod.Request[SearchIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchIndex(
-    params: awsDashSdkLib.clientsIotMod.IotNs.SearchIndexRequest,
+    params: SearchIndexRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.SearchIndexResponse, 
+      /* data */ SearchIndexResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SearchIndexResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets the default authorizer. This will be used if a websocket connection is made without specifying an authorizer.
     */
-  def setDefaultAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def setDefaultAuthorizer(): awsDashSdkLib.libRequestMod.Request[SetDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setDefaultAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerResponse, 
+      /* data */ SetDefaultAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SetDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets the default authorizer. This will be used if a websocket connection is made without specifying an authorizer.
     */
-  def setDefaultAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def setDefaultAuthorizer(params: SetDefaultAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[SetDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setDefaultAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerRequest,
+    params: SetDefaultAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerResponse, 
+      /* data */ SetDefaultAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.SetDefaultAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SetDefaultAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets the specified version of the specified policy as the policy's default (operative) version. This action affects all certificates to which the policy is attached. To list the principals the policy is attached to, use the ListPrincipalPolicy API.
     */
@@ -4470,9 +3042,9 @@ trait Iot
   /**
     * Sets the specified version of the specified policy as the policy's default (operative) version. This action affects all certificates to which the policy is attached. To list the principals the policy is attached to, use the ListPrincipalPolicy API.
     */
-  def setDefaultPolicyVersion(params: awsDashSdkLib.clientsIotMod.IotNs.SetDefaultPolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def setDefaultPolicyVersion(params: SetDefaultPolicyVersionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setDefaultPolicyVersion(
-    params: awsDashSdkLib.clientsIotMod.IotNs.SetDefaultPolicyVersionRequest,
+    params: SetDefaultPolicyVersionRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -4485,9 +3057,9 @@ trait Iot
   /**
     * Sets the logging options. NOTE: use of this command is not recommended. Use SetV2LoggingOptions instead.
     */
-  def setLoggingOptions(params: awsDashSdkLib.clientsIotMod.IotNs.SetLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def setLoggingOptions(params: SetLoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setLoggingOptions(
-    params: awsDashSdkLib.clientsIotMod.IotNs.SetLoggingOptionsRequest,
+    params: SetLoggingOptionsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -4500,9 +3072,9 @@ trait Iot
   /**
     * Sets the logging level.
     */
-  def setV2LoggingLevel(params: awsDashSdkLib.clientsIotMod.IotNs.SetV2LoggingLevelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def setV2LoggingLevel(params: SetV2LoggingLevelRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setV2LoggingLevel(
-    params: awsDashSdkLib.clientsIotMod.IotNs.SetV2LoggingLevelRequest,
+    params: SetV2LoggingLevelRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -4515,396 +3087,264 @@ trait Iot
   /**
     * Sets the logging options for the V2 logging service.
     */
-  def setV2LoggingOptions(params: awsDashSdkLib.clientsIotMod.IotNs.SetV2LoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def setV2LoggingOptions(params: SetV2LoggingOptionsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def setV2LoggingOptions(
-    params: awsDashSdkLib.clientsIotMod.IotNs.SetV2LoggingOptionsRequest,
+    params: SetV2LoggingOptionsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts an on-demand Device Defender audit.
     */
-  def startOnDemandAuditTask(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startOnDemandAuditTask(): awsDashSdkLib.libRequestMod.Request[StartOnDemandAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startOnDemandAuditTask(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskResponse, 
+      /* data */ StartOnDemandAuditTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartOnDemandAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts an on-demand Device Defender audit.
     */
-  def startOnDemandAuditTask(params: awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startOnDemandAuditTask(params: StartOnDemandAuditTaskRequest): awsDashSdkLib.libRequestMod.Request[StartOnDemandAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startOnDemandAuditTask(
-    params: awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskRequest,
+    params: StartOnDemandAuditTaskRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskResponse, 
+      /* data */ StartOnDemandAuditTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartOnDemandAuditTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartOnDemandAuditTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a bulk thing provisioning task.
     */
-  def startThingRegistrationTask(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startThingRegistrationTask(): awsDashSdkLib.libRequestMod.Request[StartThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startThingRegistrationTask(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskResponse, 
+      /* data */ StartThingRegistrationTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a bulk thing provisioning task.
     */
-  def startThingRegistrationTask(params: awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startThingRegistrationTask(params: StartThingRegistrationTaskRequest): awsDashSdkLib.libRequestMod.Request[StartThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startThingRegistrationTask(
-    params: awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskRequest,
+    params: StartThingRegistrationTaskRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskResponse, 
+      /* data */ StartThingRegistrationTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StartThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels a bulk thing provisioning task.
     */
-  def stopThingRegistrationTask(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopThingRegistrationTask(): awsDashSdkLib.libRequestMod.Request[StopThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopThingRegistrationTask(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskResponse, 
+      /* data */ StopThingRegistrationTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Cancels a bulk thing provisioning task.
     */
-  def stopThingRegistrationTask(params: awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopThingRegistrationTask(params: StopThingRegistrationTaskRequest): awsDashSdkLib.libRequestMod.Request[StopThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopThingRegistrationTask(
-    params: awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskRequest,
+    params: StopThingRegistrationTaskRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskResponse, 
+      /* data */ StopThingRegistrationTaskResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.StopThingRegistrationTaskResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
     */
-  def tagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+      /* data */ TagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
     */
-  def tagResource(params: awsDashSdkLib.clientsIotMod.IotNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
-    params: awsDashSdkLib.clientsIotMod.IotNs.TagResourceRequest,
+    params: TagResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+      /* data */ TagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Tests if a specified principal is authorized to perform an AWS IoT action on a specified resource. Use this to test and debug the authorization behavior of devices that connect to the AWS IoT device gateway.
     */
-  def testAuthorization(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def testAuthorization(): awsDashSdkLib.libRequestMod.Request[TestAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def testAuthorization(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationResponse, 
+      /* data */ TestAuthorizationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TestAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Tests if a specified principal is authorized to perform an AWS IoT action on a specified resource. Use this to test and debug the authorization behavior of devices that connect to the AWS IoT device gateway.
     */
-  def testAuthorization(params: awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def testAuthorization(params: TestAuthorizationRequest): awsDashSdkLib.libRequestMod.Request[TestAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def testAuthorization(
-    params: awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationRequest,
+    params: TestAuthorizationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationResponse, 
+      /* data */ TestAuthorizationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestAuthorizationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TestAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Tests a custom authorization behavior by invoking a specified custom authorizer. Use this to test and debug the custom authorization behavior of devices that connect to the AWS IoT device gateway.
     */
-  def testInvokeAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def testInvokeAuthorizer(): awsDashSdkLib.libRequestMod.Request[TestInvokeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def testInvokeAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerResponse, 
+      /* data */ TestInvokeAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TestInvokeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Tests a custom authorization behavior by invoking a specified custom authorizer. Use this to test and debug the custom authorization behavior of devices that connect to the AWS IoT device gateway.
     */
-  def testInvokeAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def testInvokeAuthorizer(params: TestInvokeAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[TestInvokeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def testInvokeAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerRequest,
+    params: TestInvokeAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerResponse, 
+      /* data */ TestInvokeAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TestInvokeAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TestInvokeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Transfers the specified certificate to the specified AWS account. You can cancel the transfer until it is acknowledged by the recipient. No notification is sent to the transfer destination's account. It is up to the caller to notify the transfer target. The certificate being transferred must not be in the ACTIVE state. You can use the UpdateCertificate API to deactivate it. The certificate must not have any policies attached to it. You can use the DetachPrincipalPolicy API to detach them.
     */
-  def transferCertificate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def transferCertificate(): awsDashSdkLib.libRequestMod.Request[TransferCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def transferCertificate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateResponse, 
+      /* data */ TransferCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TransferCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Transfers the specified certificate to the specified AWS account. You can cancel the transfer until it is acknowledged by the recipient. No notification is sent to the transfer destination's account. It is up to the caller to notify the transfer target. The certificate being transferred must not be in the ACTIVE state. You can use the UpdateCertificate API to deactivate it. The certificate must not have any policies attached to it. You can use the DetachPrincipalPolicy API to detach them.
     */
-  def transferCertificate(params: awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def transferCertificate(params: TransferCertificateRequest): awsDashSdkLib.libRequestMod.Request[TransferCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def transferCertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateRequest,
+    params: TransferCertificateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateResponse, 
+      /* data */ TransferCertificateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.TransferCertificateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TransferCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the given tags (metadata) from the resource.
     */
-  def untagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+      /* data */ UntagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the given tags (metadata) from the resource.
     */
-  def untagResource(params: awsDashSdkLib.clientsIotMod.IotNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UntagResourceRequest,
+    params: UntagResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+      /* data */ UntagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Configures or reconfigures the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
     */
-  def updateAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAccountAuditConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationResponse, 
+      /* data */ UpdateAccountAuditConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Configures or reconfigures the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
     */
-  def updateAccountAuditConfiguration(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateAccountAuditConfiguration(params: UpdateAccountAuditConfigurationRequest): awsDashSdkLib.libRequestMod.Request[UpdateAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAccountAuditConfiguration(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationRequest,
+    params: UpdateAccountAuditConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationResponse, 
+      /* data */ UpdateAccountAuditConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAccountAuditConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an authorizer.
     */
-  def updateAuthorizer(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateAuthorizer(): awsDashSdkLib.libRequestMod.Request[UpdateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAuthorizer(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerResponse, 
+      /* data */ UpdateAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an authorizer.
     */
-  def updateAuthorizer(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateAuthorizer(params: UpdateAuthorizerRequest): awsDashSdkLib.libRequestMod.Request[UpdateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAuthorizer(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerRequest,
+    params: UpdateAuthorizerRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerResponse, 
+      /* data */ UpdateAuthorizerResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateAuthorizerResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates information about the billing group.
     */
-  def updateBillingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateBillingGroup(): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBillingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+      /* data */ UpdateBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates information about the billing group.
     */
-  def updateBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateBillingGroup(params: UpdateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBillingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupRequest,
+    params: UpdateBillingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+      /* data */ UpdateBillingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a registered CA certificate.
     */
@@ -4915,9 +3355,9 @@ trait Iot
   /**
     * Updates a registered CA certificate.
     */
-  def updateCACertificate(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateCACertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateCACertificate(params: UpdateCACertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateCACertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateCACertificateRequest,
+    params: UpdateCACertificateRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -4930,116 +3370,80 @@ trait Iot
   /**
     * Updates the status of the specified certificate. This operation is idempotent. Moving a certificate from the ACTIVE state (including REVOKED) will not disconnect currently connected devices, but these devices will be unable to reconnect. The ACTIVE state is required to authenticate devices connecting to AWS IoT using a certificate.
     */
-  def updateCertificate(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateCertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateCertificate(params: UpdateCertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateCertificate(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateCertificateRequest,
+    params: UpdateCertificateRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a dynamic thing group.
     */
-  def updateDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDynamicThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+      /* data */ UpdateDynamicThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a dynamic thing group.
     */
-  def updateDynamicThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDynamicThingGroup(params: UpdateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDynamicThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupRequest,
+    params: UpdateDynamicThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+      /* data */ UpdateDynamicThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the event configurations.
     */
-  def updateEventConfigurations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateEventConfigurations(): awsDashSdkLib.libRequestMod.Request[UpdateEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEventConfigurations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsResponse, 
+      /* data */ UpdateEventConfigurationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the event configurations.
     */
-  def updateEventConfigurations(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateEventConfigurations(params: UpdateEventConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[UpdateEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateEventConfigurations(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsRequest,
+    params: UpdateEventConfigurationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsResponse, 
+      /* data */ UpdateEventConfigurationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateEventConfigurationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateEventConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the search configuration.
     */
-  def updateIndexingConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateIndexingConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateIndexingConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationResponse, 
+      /* data */ UpdateIndexingConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the search configuration.
     */
-  def updateIndexingConfiguration(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateIndexingConfiguration(params: UpdateIndexingConfigurationRequest): awsDashSdkLib.libRequestMod.Request[UpdateIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateIndexingConfiguration(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationRequest,
+    params: UpdateIndexingConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationResponse, 
+      /* data */ UpdateIndexingConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates supported fields of the specified job.
     */
@@ -5050,290 +3454,194 @@ trait Iot
   /**
     * Updates supported fields of the specified job.
     */
-  def updateJob(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateJob(params: UpdateJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateJob(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateJobRequest,
+    params: UpdateJobRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a role alias.
     */
-  def updateRoleAlias(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateRoleAlias(): awsDashSdkLib.libRequestMod.Request[UpdateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateRoleAlias(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasResponse, 
+      /* data */ UpdateRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a role alias.
     */
-  def updateRoleAlias(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateRoleAlias(params: UpdateRoleAliasRequest): awsDashSdkLib.libRequestMod.Request[UpdateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateRoleAlias(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasRequest,
+    params: UpdateRoleAliasRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasResponse, 
+      /* data */ UpdateRoleAliasResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateRoleAliasResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateRoleAliasResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a scheduled audit, including what checks are performed and how often the audit takes place.
     */
-  def updateScheduledAudit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateScheduledAudit(): awsDashSdkLib.libRequestMod.Request[UpdateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateScheduledAudit(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditResponse, 
+      /* data */ UpdateScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a scheduled audit, including what checks are performed and how often the audit takes place.
     */
-  def updateScheduledAudit(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateScheduledAudit(params: UpdateScheduledAuditRequest): awsDashSdkLib.libRequestMod.Request[UpdateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateScheduledAudit(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditRequest,
+    params: UpdateScheduledAuditRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditResponse, 
+      /* data */ UpdateScheduledAuditResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateScheduledAuditResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateScheduledAuditResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Device Defender security profile.
     */
-  def updateSecurityProfile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateSecurityProfile(): awsDashSdkLib.libRequestMod.Request[UpdateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateSecurityProfile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileResponse, 
+      /* data */ UpdateSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a Device Defender security profile.
     */
-  def updateSecurityProfile(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateSecurityProfile(params: UpdateSecurityProfileRequest): awsDashSdkLib.libRequestMod.Request[UpdateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateSecurityProfile(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileRequest,
+    params: UpdateSecurityProfileRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileResponse, 
+      /* data */ UpdateSecurityProfileResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateSecurityProfileResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing stream. The stream version will be incremented by one.
     */
-  def updateStream(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateStream(): awsDashSdkLib.libRequestMod.Request[UpdateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateStream(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamResponse, 
+      /* data */ UpdateStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing stream. The stream version will be incremented by one.
     */
-  def updateStream(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateStream(params: UpdateStreamRequest): awsDashSdkLib.libRequestMod.Request[UpdateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateStream(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamRequest,
+    params: UpdateStreamRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamResponse, 
+      /* data */ UpdateStreamResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateStreamResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the data for a thing.
     */
-  def updateThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThing(): awsDashSdkLib.libRequestMod.Request[UpdateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateThingResponse, 
+      /* data */ UpdateThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the data for a thing.
     */
-  def updateThing(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThing(params: UpdateThingRequest): awsDashSdkLib.libRequestMod.Request[UpdateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateThingRequest,
+    params: UpdateThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateThingResponse, 
+      /* data */ UpdateThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update a thing group.
     */
-  def updateThingGroup(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThingGroup(): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThingGroup(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupResponse, 
+      /* data */ UpdateThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update a thing group.
     */
-  def updateThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThingGroup(params: UpdateThingGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThingGroup(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupRequest,
+    params: UpdateThingGroupRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupResponse, 
+      /* data */ UpdateThingGroupResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the groups to which the thing belongs.
     */
-  def updateThingGroupsForThing(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThingGroupsForThing(): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThingGroupsForThing(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingResponse, 
+      /* data */ UpdateThingGroupsForThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the groups to which the thing belongs.
     */
-  def updateThingGroupsForThing(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThingGroupsForThing(params: UpdateThingGroupsForThingRequest): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThingGroupsForThing(
-    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingRequest,
+    params: UpdateThingGroupsForThingRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingResponse, 
+      /* data */ UpdateThingGroupsForThingResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.UpdateThingGroupsForThingResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Validates a Device Defender security profile behaviors specification.
     */
-  def validateSecurityProfileBehaviors(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def validateSecurityProfileBehaviors(): awsDashSdkLib.libRequestMod.Request[ValidateSecurityProfileBehaviorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def validateSecurityProfileBehaviors(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsResponse, 
+      /* data */ ValidateSecurityProfileBehaviorsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ValidateSecurityProfileBehaviorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Validates a Device Defender security profile behaviors specification.
     */
-  def validateSecurityProfileBehaviors(params: awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def validateSecurityProfileBehaviors(params: ValidateSecurityProfileBehaviorsRequest): awsDashSdkLib.libRequestMod.Request[ValidateSecurityProfileBehaviorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def validateSecurityProfileBehaviors(
-    params: awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsRequest,
+    params: ValidateSecurityProfileBehaviorsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsResponse, 
+      /* data */ ValidateSecurityProfileBehaviorsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIotMod.IotNs.ValidateSecurityProfileBehaviorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ValidateSecurityProfileBehaviorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

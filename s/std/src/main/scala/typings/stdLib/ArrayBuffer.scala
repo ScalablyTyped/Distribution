@@ -20,7 +20,7 @@ trait ArrayBuffer
     * Read-only. The length of the ArrayBuffer (in bytes).
     */
   val byteLength: scala.Double = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
   /**
     * Returns a section of an ArrayBuffer.

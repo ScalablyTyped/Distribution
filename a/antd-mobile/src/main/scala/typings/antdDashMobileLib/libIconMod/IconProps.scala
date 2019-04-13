@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.SVGSVGElement>, 'size' | 'type'> ]: react.react.React.HTMLProps<std.SVGSVGElement>[P]} */ trait IconProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.SVGSVGElement>, 'size' | 'type'> ]: react.react.HTMLProps<std.SVGSVGElement>[P]} */ trait IconProps
   extends antdDashMobileLib.libIconPropsTypeMod.IconPropsType {
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
   var size: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.xxs | antdDashMobileLib.antdDashMobileLibStrings.xs | antdDashMobileLib.antdDashMobileLibStrings.sm | antdDashMobileLib.antdDashMobileLibStrings.md | antdDashMobileLib.antdDashMobileLibStrings.lg
   ] = js.undefined
@@ -19,7 +19,7 @@ object IconProps {
   def apply(
     `type`: java.lang.String,
     color: java.lang.String = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
     size: antdDashMobileLib.antdDashMobileLibStrings.xxs | antdDashMobileLib.antdDashMobileLibStrings.xs | antdDashMobileLib.antdDashMobileLibStrings.sm | antdDashMobileLib.antdDashMobileLibStrings.md | antdDashMobileLib.antdDashMobileLibStrings.lg = null
   ): IconProps = {
     val __obj = js.Dynamic.literal()

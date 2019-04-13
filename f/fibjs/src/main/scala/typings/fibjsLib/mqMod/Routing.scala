@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mq", "Routing")
 @js.native
 class Routing ()
-  extends fibjsLib.mqMod.mqNs.Routing
+  extends fibjsLib.Class_Routing
 

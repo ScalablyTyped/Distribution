@@ -16,5 +16,5 @@ package object animateNs {
     IAnimateCssRunner
   ]
   type IAnimateFactory = js.Function1[/* repeated */ js.Any, IAnimateCallbackObject]
-  type IAnimationPromise = angularLib.angularMod.angularNs.IPromise[scala.Unit]
+  type IAnimationPromise = angularLib.angularMod.IPromise[scala.Unit]
 }

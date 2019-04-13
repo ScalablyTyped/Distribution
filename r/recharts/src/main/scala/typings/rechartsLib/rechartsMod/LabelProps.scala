@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof recharts.recharts.PresentationAttributes<number, number> ]:? recharts.recharts.PresentationAttributes<number, number>[P]} */ trait LabelProps extends js.Object {
   var angle: js.UndefOr[scala.Double] = js.undefined
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactElement[_] | ContentRenderer[_]] = js.undefined
   var formatter: js.UndefOr[LabelFormatter] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined
   var position: js.UndefOr[PositionType] = js.undefined
@@ -24,9 +22,9 @@ object LabelProps {
   @scala.inline
   def apply(
     angle: scala.Int | scala.Double = null,
-    children: js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    content: reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] = null,
+    content: reactLib.reactMod.ReactElement[_] | ContentRenderer[_] = null,
     formatter: LabelFormatter = null,
     offset: scala.Int | scala.Double = null,
     position: PositionType = null,

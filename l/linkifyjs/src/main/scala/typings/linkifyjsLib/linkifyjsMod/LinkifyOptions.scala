@@ -18,7 +18,7 @@ trait LinkifyOptions extends js.Object {
     * (e.g., 'url', 'email', etc.) and returns the object.
     */
   var attributes: js.UndefOr[
-    PossiblyFuncOfHrefAndType[reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]] | scala.Null
+    PossiblyFuncOfHrefAndType[reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]] | scala.Null
   ] = js.undefined
   /**
     * className
@@ -176,7 +176,7 @@ trait LinkifyOptions extends js.Object {
 object LinkifyOptions {
   @scala.inline
   def apply(
-    attributes: PossiblyFuncOfHrefAndType[reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]] = null,
+    attributes: PossiblyFuncOfHrefAndType[reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]] = null,
     className: PossiblyByType[PossiblyFuncOfHrefAndType[js.UndefOr[java.lang.String]]] = null,
     defaultProtocol: java.lang.String = null,
     events: PossiblyFuncOfHrefAndType[org.scalablytyped.runtime.StringDictionary[EventHandler]] = null,

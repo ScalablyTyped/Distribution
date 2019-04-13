@@ -1,18 +1,16 @@
 organization := "org.scalablytyped"
 name := "yeoman-test"
-version := "2.0-dt-20190317Z-290dde"
+version := "2.0-dt-20190317Z-84a3d3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "inquirer" % "6.x-dt-20190322Z-807a70",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
-  "org.scalablytyped" %%% "rxjs" % "6.4.0-f8b93e",
-  "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-fac596",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-446b32",
-  "org.scalablytyped" %%% "yeoman-generator" % "3.1-dt-20190317Z-c66d35")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "inquirer" % "6.x-dt-20190322Z-f1775e",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "rxjs" % "6.4.0-097134",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-5aa9b9",
+  "org.scalablytyped" %%% "yeoman-generator" % "3.1-dt-20190317Z-8ac7b8")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

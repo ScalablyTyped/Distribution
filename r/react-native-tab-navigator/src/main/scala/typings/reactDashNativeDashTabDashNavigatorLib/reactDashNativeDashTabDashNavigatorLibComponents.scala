@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashTabDashNavigatorLibComponents {
   @scala.inline
-  def Item: reactLib.reactMod.ReactNs.ComponentType[
+  def Item: reactLib.reactMod.ComponentType[
     reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps
-  ] = js.constructorOf[reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.defaultNs.Item].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.defaultNs.Item].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps]]
   @scala.inline
-  def ReactDashNativeDashTabDashNavigator: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashTabDashNavigator: reactLib.reactMod.ComponentType[
     reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
-  ] = js.constructorOf[reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps]]
   @scala.inline
-  def TabNavigator: reactLib.reactMod.ReactNs.ComponentType[
+  def TabNavigator: reactLib.reactMod.ComponentType[
     reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps
-  ] = js.constructorOf[reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorProps]]
   @scala.inline
   def TabNavigatorItemProps: reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps.type = reactDashNativeDashTabDashNavigatorLib.reactDashNativeDashTabDashNavigatorMod.TabNavigatorItemProps

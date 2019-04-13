@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "OverlayTrigger")
 @js.native
 class OverlayTrigger ()
-  extends reactDashBootstrapLib.libOverlayTriggerMod.namespaced
+  extends reactDashBootstrapLib.libOverlayTriggerMod.^
 

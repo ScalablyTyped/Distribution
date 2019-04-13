@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     zipPath: java.lang.String,
-    opts: extractDashZipLib.extractDashZipMod.extractNs.Options,
+    opts: Options,
     cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
 }

@@ -10,7 +10,7 @@ trait Anon_BuildConfig extends js.Object {
   def build(name: java.lang.String): js.Promise[_] = js.native
   def build(name: java.lang.String, parameters: js.Any): js.Promise[_] = js.native
   def build(name: java.lang.String, parameters: js.Any, token: java.lang.String): js.Promise[_] = js.native
-  def build(opts: jenkinsLib.jenkinsMod.createNs.JobBuildOptions): js.Promise[_] = js.native
+  def build(opts: jenkinsLib.jenkinsMod.JobBuildOptions): js.Promise[_] = js.native
   def config(name: java.lang.String): js.Promise[_] = js.native
   def config(name: java.lang.String, xml: java.lang.String): js.Promise[_] = js.native
   def copy(name: java.lang.String, from: java.lang.String): js.Promise[scala.Unit] = js.native

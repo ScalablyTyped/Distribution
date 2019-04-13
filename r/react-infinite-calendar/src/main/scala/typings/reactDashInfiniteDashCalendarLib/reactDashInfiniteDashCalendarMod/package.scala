@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashInfiniteDashCalendarMod {
-  type CalendarClass = reactLib.reactMod.ReactNs.ComponentClass[ReactInfiniteCalendarProps, reactLib.reactMod.ReactNs.ComponentState]
+  type CalendarClass = reactLib.reactMod.ComponentClass[ReactInfiniteCalendarProps, reactLib.reactMod.ComponentState]
   type DateSelectFunction = js.Function1[/* date */ stdLib.Date, scala.Unit]
   type DateType = stdLib.Date | java.lang.String | scala.Double
   type RangedSelectFunction = js.Function1[/* rangedDate */ RangedSelection, scala.Unit]

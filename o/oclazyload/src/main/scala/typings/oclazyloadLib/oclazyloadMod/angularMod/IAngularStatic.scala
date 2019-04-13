@@ -16,15 +16,15 @@ trait IAngularStatic extends js.Object {
     * @param requires The names of modules this module depends on, and/or ocLazyLoad module configurations. If specified then new module is being created. If unspecified then the module is being retrieved for further configuration.
     * @param configFn Optional configuration function for the module.
     */
-  def module(name: java.lang.String): angularLib.angularMod.angularNs.IModule = js.native
+  def module(name: java.lang.String): angularLib.angularMod.IModule = js.native
   def module(
     name: java.lang.String,
     requires: js.Array[java.lang.String | oclazyloadLib.oclazyloadMod.IModuleConfig]
-  ): angularLib.angularMod.angularNs.IModule = js.native
+  ): angularLib.angularMod.IModule = js.native
   def module(
     name: java.lang.String,
     requires: js.Array[java.lang.String | oclazyloadLib.oclazyloadMod.IModuleConfig],
     configFn: angularLib.angularMod.Global.Function
-  ): angularLib.angularMod.angularNs.IModule = js.native
+  ): angularLib.angularMod.IModule = js.native
 }
 

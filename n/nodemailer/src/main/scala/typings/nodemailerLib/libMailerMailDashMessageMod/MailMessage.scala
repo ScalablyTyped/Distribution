@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MailMessage extends js.Object {
-  var data: nodemailerLib.libMailerMod.MailNs.Options = js.native
-  var mailer: nodemailerLib.libMailerMod.namespaced = js.native
-  var message: nodemailerLib.libMimeDashNodeMod.namespaced = js.native
+  var data: nodemailerLib.libMailerMod.Options = js.native
+  var mailer: nodemailerLib.libMailerMod.^ = js.native
+  var message: nodemailerLib.libMimeDashNodeMod.^ = js.native
   def normalize(
     callback: js.Function2[
       /* err */ js.UndefOr[stdLib.Error | scala.Null], 
-      /* data */ js.UndefOr[nodemailerLib.libMailerMod.MailNs.Options], 
+      /* data */ js.UndefOr[nodemailerLib.libMailerMod.Options], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def resolveAll(
     callback: js.Function2[
       /* err */ js.UndefOr[stdLib.Error | scala.Null], 
-      /* data */ js.UndefOr[nodemailerLib.libMailerMod.MailNs.Options], 
+      /* data */ js.UndefOr[nodemailerLib.libMailerMod.Options], 
       scala.Unit
     ]
   ): scala.Unit = js.native

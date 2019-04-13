@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+trait Advertisement
+  extends nodeLib.NodeJSNs.EventEmitter {
+  def start(): scala.Unit = js.native
+  def stop(): scala.Unit = js.native
+}
+
 @JSImport("mdns", "Advertisement")
 @js.native
-class AdvertisementCls protected ()
-  extends mdnsLib.mdnsMod.MDNSNs.Advertisement {
-  def this(serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType, port: scala.Double) = this()
-  def this(serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType, port: scala.Double, options: mdnsLib.mdnsMod.MDNSNs.AdvertisementOptions) = this()
-  def this(serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType, port: scala.Double, options: mdnsLib.mdnsMod.MDNSNs.AdvertisementOptions, callback: js.Function2[
-      /* error */ mdnsLib.mdnsMod.MDNSNs.DnsSdError, 
-      /* service */ mdnsLib.mdnsMod.MDNSNs.Service, 
-      scala.Unit
-    ]) = this()
+class AdvertisementCls protected () extends Advertisement {
+  def this(serviceType: ServiceType, port: scala.Double) = this()
+  def this(serviceType: ServiceType, port: scala.Double, options: AdvertisementOptions) = this()
+  def this(serviceType: ServiceType, port: scala.Double, options: AdvertisementOptions, callback: js.Function2[/* error */ DnsSdError, /* service */ Service, scala.Unit]) = this()
 }
 

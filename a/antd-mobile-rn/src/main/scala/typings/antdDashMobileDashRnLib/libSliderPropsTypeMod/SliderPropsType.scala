@@ -15,7 +15,7 @@ trait SliderPropsType extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit]] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
   var tipFormatter: js.UndefOr[
-    js.Function1[/* value */ js.UndefOr[java.lang.String], reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* value */ js.UndefOr[java.lang.String], reactLib.reactMod.ReactNode]
   ] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
 }
@@ -31,7 +31,7 @@ object SliderPropsType {
     onAfterChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     onChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     step: scala.Int | scala.Double = null,
-    tipFormatter: /* value */ js.UndefOr[java.lang.String] => reactLib.reactMod.ReactNs.ReactNode = null,
+    tipFormatter: /* value */ js.UndefOr[java.lang.String] => reactLib.reactMod.ReactNode = null,
     value: scala.Int | scala.Double = null
   ): SliderPropsType = {
     val __obj = js.Dynamic.literal()

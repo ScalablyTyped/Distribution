@@ -19,7 +19,7 @@ trait Anon_AltBody extends js.Object {
   var `object`: js.UndefOr[scala.Boolean] = js.undefined
   var right: js.UndefOr[scala.Boolean] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var top: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -39,7 +39,7 @@ object Anon_AltBody {
     `object`: js.UndefOr[scala.Boolean] = js.undefined,
     right: js.UndefOr[scala.Boolean] = js.undefined,
     src: java.lang.String = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     top: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AltBody = {
     val __obj = js.Dynamic.literal()

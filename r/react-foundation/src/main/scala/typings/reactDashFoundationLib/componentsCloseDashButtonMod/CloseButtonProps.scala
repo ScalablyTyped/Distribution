@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactLib.reactMod.ReactNs.ButtonHTMLAttributes because var conflicts: className. Inlined autoFocus, disabled, form, formAction, formEncType, formMethod, formNoValidate, formTarget, name, `type`, value */ trait CloseButtonProps
+- reactLib.reactMod.ButtonHTMLAttributes because var conflicts: className. Inlined autoFocus, disabled, form, formAction, formEncType, formMethod, formNoValidate, formTarget, name, `type`, value */ trait CloseButtonProps
   extends reactDashFoundationLib.utilsMod.FlexboxPropTypes {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 object CloseButtonProps {
   @scala.inline
   def apply(
-    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
+    ButtonHTMLAttributes: reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] = null,
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null
   ): CloseButtonProps = {
     val __obj = js.Dynamic.literal()

@@ -9,37 +9,37 @@ trait IGetTriggerPropsArg
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onContextMenu: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseMove: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchEnd: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -49,12 +49,12 @@ object IGetTriggerPropsArg {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
-    onContextMenu: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null
+    onClick: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
+    onContextMenu: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null
   ): IGetTriggerPropsArg = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(src: java.lang.String, dest: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
-  def apply(
-    src: java.lang.String,
-    dest: java.lang.String,
-    options: iconDashGenLib.iconDashGenMod.icongenNs.Options
-  ): js.Promise[js.Array[java.lang.String]] = js.native
+  def apply(src: java.lang.String, dest: java.lang.String, options: Options): js.Promise[js.Array[java.lang.String]] = js.native
 }
 

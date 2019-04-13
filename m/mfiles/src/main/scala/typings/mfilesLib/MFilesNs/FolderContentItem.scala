@@ -21,3 +21,8 @@ class FolderContentItem ()
   override val View: mfilesLib.IView = js.native
 }
 
+@JSGlobal("MFiles.FolderContentItem")
+@js.native
+object FolderContentItem
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderContentItem]
+

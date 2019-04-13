@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-primitives", "Touchable")
 @js.native
 class Touchable protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashNativeLib.reactDashNativeMod.TouchableOpacityProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashNativeLib.reactDashNativeMod.TouchableOpacityProps) = this()

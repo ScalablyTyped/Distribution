@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("builder-util", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val debug: debugLib.debugMod.debugNs.Debugger = js.native
-  val debug7z: debugLib.debugMod.debugNs.Debugger = js.native
+  val debug: debugLib.debugMod.Debugger = js.native
+  val debug7z: debugLib.debugMod.Debugger = js.native
   val log: builderDashUtilLib.outLogMod.Logger = js.native
   def addValue[K, T](map: stdLib.Map[K, js.Array[T]], key: K, value: T): scala.Unit = js.native
   def archFromString(name: java.lang.String): builderDashUtilLib.outArchMod.Arch = js.native

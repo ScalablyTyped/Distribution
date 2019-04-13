@@ -53,6 +53,7 @@ package object asyncMod {
   type AsyncResultObjectCallback[T, E] = js.Function2[/* err */ js.UndefOr[E], /* results */ Dictionary[js.UndefOr[T]], scala.Unit]
   type AsyncVoidFunction[E] = js.Function1[/* callback */ ErrorCallback[E], scala.Unit]
   type AsyncWorker[T, E] = js.Function2[/* task */ T, /* callback */ ErrorCallback[E], scala.Unit]
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ErrorCallback[E] = js.Function1[/* err */ js.UndefOr[E | scala.Null], scala.Unit]
   type IterableCollection[T] = js.Array[T] | stdLib.IterableIterator[T] | Dictionary[T]
 }

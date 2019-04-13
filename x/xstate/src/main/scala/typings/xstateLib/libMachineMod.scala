@@ -11,11 +11,11 @@ object libMachineMod extends js.Object {
   def Machine[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](config: xstateLib.libTypesMod.MachineConfig[TContext, TStateSchema, TEvent]): xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
   def Machine[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     config: xstateLib.libTypesMod.MachineConfig[TContext, TStateSchema, TEvent],
-    options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent]
+    options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]]
   ): xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
   def Machine[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     config: xstateLib.libTypesMod.MachineConfig[TContext, TStateSchema, TEvent],
-    options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent],
+    options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]],
     initialContext: TContext
   ): xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
 }

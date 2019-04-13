@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("klaw", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(root: java.lang.String): klawLib.klawMod.KNs.Walker = js.native
-  def apply(root: java.lang.String, options: klawLib.klawMod.KNs.Options): klawLib.klawMod.KNs.Walker = js.native
+  def apply(root: java.lang.String): Walker = js.native
+  def apply(root: java.lang.String, options: Options): Walker = js.native
 }
 

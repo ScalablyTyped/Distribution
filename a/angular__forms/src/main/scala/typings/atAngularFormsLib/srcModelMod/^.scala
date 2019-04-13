@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/forms/src/model", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DISABLED: /* DISABLED */ java.lang.String = js.native
-  val INVALID: /* INVALID */ java.lang.String = js.native
-  val PENDING: /* PENDING */ java.lang.String = js.native
-  val VALID: /* VALID */ java.lang.String = js.native
+  val DISABLED: atAngularFormsLib.atAngularFormsLibStrings.DISABLED = js.native
+  val INVALID: atAngularFormsLib.atAngularFormsLibStrings.INVALID = js.native
+  val PENDING: atAngularFormsLib.atAngularFormsLibStrings.PENDING = js.native
+  val VALID: atAngularFormsLib.atAngularFormsLibStrings.VALID = js.native
 }
 

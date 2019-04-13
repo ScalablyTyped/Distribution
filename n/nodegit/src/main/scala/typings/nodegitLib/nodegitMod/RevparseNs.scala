@@ -17,6 +17,5 @@ object RevparseNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.revDashParseMod.RevparseNs.MODE with scala.Double] = js.native
   }
   
-  type MODE = nodegitLib.revDashParseMod.RevparseNs.MODE
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("net", "Url")
 @js.native
 class Url ()
-  extends fibjsLib.netMod.netNs.Url
+  extends fibjsLib.Class_UrlObject
 

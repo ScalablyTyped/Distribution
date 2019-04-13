@@ -21,3 +21,8 @@ class ActionConvertToPDF ()
   override def Clone(): mfilesLib.IActionConvertToPDF = js.native
 }
 
+@JSGlobal("MFiles.ActionConvertToPDF")
+@js.native
+object ActionConvertToPDF
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IActionConvertToPDF]
+

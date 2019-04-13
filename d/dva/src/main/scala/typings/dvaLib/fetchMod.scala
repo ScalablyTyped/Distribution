@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dva/fetch", JSImport.Namespace)
 @js.native
-object fetchMod
-  extends org.scalablytyped.runtime.TopLevel[isomorphicDashFetchLib.Anon_Init]
+object fetchMod extends js.Object {
+  def apply(input: stdLib.RequestInfo): js.Promise[stdLib.Response] = js.native
+  def apply(input: stdLib.RequestInfo, init: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native
+}
 

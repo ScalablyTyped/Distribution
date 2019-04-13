@@ -10,7 +10,7 @@ trait AbstractCheckboxGroupProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var options: js.UndefOr[js.Array[CheckboxOptionType | java.lang.String]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object AbstractCheckboxGroupProps {
@@ -20,7 +20,7 @@ object AbstractCheckboxGroupProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     options: js.Array[CheckboxOptionType | java.lang.String] = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AbstractCheckboxGroupProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

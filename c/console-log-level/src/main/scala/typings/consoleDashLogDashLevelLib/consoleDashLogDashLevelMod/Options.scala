@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var level: js.UndefOr[
-    consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames
-  ] = js.undefined
+  var level: js.UndefOr[LogLevelNames] = js.undefined
   var prefix: js.UndefOr[java.lang.String | consoleDashLogDashLevelLib.PrefixFunction] = js.undefined
   var stderr: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -16,7 +14,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    level: consoleDashLogDashLevelLib.consoleDashLogDashLevelMod.consoleLogLevelNs.LogLevelNames = null,
+    level: LogLevelNames = null,
     prefix: java.lang.String | consoleDashLogDashLevelLib.PrefixFunction = null,
     stderr: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {

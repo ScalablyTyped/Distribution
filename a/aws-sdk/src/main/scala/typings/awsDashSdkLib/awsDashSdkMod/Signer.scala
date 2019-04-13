@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Signer ()
   extends awsDashSdkLib.clientsAllMod.Signer {
-  def this(options: awsDashSdkLib.clientsSignerMod.SignerNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSignerMod.ClientConfiguration) = this()
 }
 

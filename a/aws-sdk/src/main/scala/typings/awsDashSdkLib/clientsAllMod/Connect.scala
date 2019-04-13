@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Connect ()
-  extends awsDashSdkLib.clientsConnectMod.namespaced {
-  def this(options: awsDashSdkLib.clientsConnectMod.ConnectNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsConnectMod.^ {
+  def this(options: awsDashSdkLib.clientsConnectMod.ClientConfiguration) = this()
 }
 

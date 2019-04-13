@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DropdownComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[DropdownProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Divider: reactLib.reactMod.ReactNs.ComponentClass[
+  extends reactLib.reactMod.ComponentClass[DropdownProps, reactLib.reactMod.ComponentState] {
+  var Divider: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  var Header: reactLib.reactMod.ReactNs.ComponentClass[
+  var Header: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownHeaderMod.DropdownHeaderProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  var Item: reactLib.reactMod.ReactNs.ComponentClass[
+  var Item: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  var Menu: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Menu: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMenuMod.DropdownMenuProps
   ] = js.native
-  var SearchInput: reactLib.reactMod.ReactNs.ComponentClass[
+  var SearchInput: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownSearchInputMod.DropdownSearchInputProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

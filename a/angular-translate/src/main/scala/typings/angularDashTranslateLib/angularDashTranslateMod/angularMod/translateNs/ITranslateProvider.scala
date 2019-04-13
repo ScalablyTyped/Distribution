@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ITranslateProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   def addInterpolation(factory: js.Any): ITranslateProvider = js.native
   def cloakClassName(): java.lang.String = js.native
   def cloakClassName(name: java.lang.String): ITranslateProvider = js.native

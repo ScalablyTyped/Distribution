@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("better-queue", "Ticket")
 @js.native
 class Ticket ()
-  extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.Ticket
+  extends nodeLib.NodeJSNs.EventEmitter {
+  def on(event: TicketEvent, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+}
 

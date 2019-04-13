@@ -6,34 +6,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Background extends js.Object {
-  var background: js.UndefOr[goLib.goMod.goNs.BrushLike] = js.undefined
+  var background: js.UndefOr[goLib.goMod.BrushLike] = js.undefined
   var details: js.UndefOr[js.Any] = js.undefined
   var document: js.UndefOr[stdLib.Document] = js.undefined
-  var maxSize: js.UndefOr[goLib.goMod.goNs.Size] = js.undefined
-  var padding: js.UndefOr[goLib.goMod.goNs.MarginLike] = js.undefined
-  var parts: js.UndefOr[goLib.goMod.goNs.Iterable[goLib.goMod.goNs.Part]] = js.undefined
-  var position: js.UndefOr[goLib.goMod.goNs.Point] = js.undefined
+  var maxSize: js.UndefOr[goLib.goMod.Size] = js.undefined
+  var padding: js.UndefOr[goLib.goMod.MarginLike] = js.undefined
+  var parts: js.UndefOr[goLib.goMod.Iterable[goLib.goMod.Part]] = js.undefined
+  var position: js.UndefOr[goLib.goMod.Point] = js.undefined
   var scale: js.UndefOr[scala.Double] = js.undefined
   var showGrid: js.UndefOr[scala.Boolean] = js.undefined
   var showTemporary: js.UndefOr[scala.Boolean] = js.undefined
-  var size: js.UndefOr[goLib.goMod.goNs.Size] = js.undefined
+  var size: js.UndefOr[goLib.goMod.Size] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_Background {
   @scala.inline
   def apply(
-    background: goLib.goMod.goNs.BrushLike = null,
+    background: goLib.goMod.BrushLike = null,
     details: js.Any = null,
     document: stdLib.Document = null,
-    maxSize: goLib.goMod.goNs.Size = null,
-    padding: goLib.goMod.goNs.MarginLike = null,
-    parts: goLib.goMod.goNs.Iterable[goLib.goMod.goNs.Part] = null,
-    position: goLib.goMod.goNs.Point = null,
+    maxSize: goLib.goMod.Size = null,
+    padding: goLib.goMod.MarginLike = null,
+    parts: goLib.goMod.Iterable[goLib.goMod.Part] = null,
+    position: goLib.goMod.Point = null,
     scale: scala.Int | scala.Double = null,
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,
     showTemporary: js.UndefOr[scala.Boolean] = js.undefined,
-    size: goLib.goMod.goNs.Size = null,
+    size: goLib.goMod.Size = null,
     `type`: java.lang.String = null
   ): Anon_Background = {
     val __obj = js.Dynamic.literal()

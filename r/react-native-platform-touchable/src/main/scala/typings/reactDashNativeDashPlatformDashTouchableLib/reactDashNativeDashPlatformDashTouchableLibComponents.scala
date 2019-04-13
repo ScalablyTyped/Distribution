@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashPlatformDashTouchableLibComponents {
   @scala.inline
-  def ReactDashNativeDashPlatformDashTouchable: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashPlatformDashTouchable: reactLib.reactMod.ComponentType[
     reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps
-  ] = js.constructorOf[reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps]]
   @scala.inline
-  def Touchable: reactLib.reactMod.ReactNs.ComponentType[
+  def Touchable: reactLib.reactMod.ComponentType[
     reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps
-  ] = js.constructorOf[reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.Touchable].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.Touchable].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps]]
   @scala.inline
   def PlatformTouchableProps: reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps.type = reactDashNativeDashPlatformDashTouchableLib.reactDashNativeDashPlatformDashTouchableMod.PlatformTouchableProps

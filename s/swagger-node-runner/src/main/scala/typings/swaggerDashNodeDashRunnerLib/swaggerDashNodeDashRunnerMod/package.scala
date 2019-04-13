@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object swaggerDashNodeDashRunnerMod {
   type ExpressMiddleware = ConnectMiddleware
+  type SwaggerSecurityHandlers = org.scalablytyped.runtime.StringDictionary[SwaggerToolsSecurityHandler]
   type SwaggerToolsMiddleware = js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, js.Any]
   type SwaggerToolsSecurityHandler = js.Function4[
     /* request */ js.Any, 

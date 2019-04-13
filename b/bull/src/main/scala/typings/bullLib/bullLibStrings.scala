@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 object bullLibStrings {
   @js.native
   sealed trait active
-    extends bullLib.bullMod.BullNs.JobStatus
-       with bullLib.bullMod.BullNs.JobStatusClean
+    extends bullLib.bullMod.JobStatus
+       with bullLib.bullMod.JobStatusClean
   
   @js.native
   sealed trait bclient extends js.Object
@@ -22,13 +22,13 @@ object bullLibStrings {
   
   @js.native
   sealed trait completed
-    extends bullLib.bullMod.BullNs.JobStatus
-       with bullLib.bullMod.BullNs.JobStatusClean
+    extends bullLib.bullMod.JobStatus
+       with bullLib.bullMod.JobStatusClean
   
   @js.native
   sealed trait delayed
-    extends bullLib.bullMod.BullNs.JobStatus
-       with bullLib.bullMod.BullNs.JobStatusClean
+    extends bullLib.bullMod.JobStatus
+       with bullLib.bullMod.JobStatusClean
   
   @js.native
   sealed trait drained extends js.Object
@@ -38,8 +38,8 @@ object bullLibStrings {
   
   @js.native
   sealed trait failed
-    extends bullLib.bullMod.BullNs.JobStatus
-       with bullLib.bullMod.BullNs.JobStatusClean
+    extends bullLib.bullMod.JobStatus
+       with bullLib.bullMod.JobStatusClean
   
   @js.native
   sealed trait paused extends js.Object
@@ -61,11 +61,11 @@ object bullLibStrings {
   
   @js.native
   sealed trait wait
-    extends bullLib.bullMod.BullNs.JobStatusClean
+    extends bullLib.bullMod.JobStatusClean
   
   @js.native
   sealed trait waiting
-    extends bullLib.bullMod.BullNs.JobStatus
+    extends bullLib.bullMod.JobStatus
   
   @scala.inline
   def active: active = "active".asInstanceOf[active]

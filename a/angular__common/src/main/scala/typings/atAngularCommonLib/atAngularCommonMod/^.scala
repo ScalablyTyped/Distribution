@@ -12,10 +12,10 @@ object ^ extends js.Object {
   val DOCUMENT: atAngularCoreLib.atAngularCoreMod.InjectionToken[stdLib.Document] = js.native
   val LOCATION_INITIALIZED: atAngularCoreLib.atAngularCoreMod.InjectionToken[js.Promise[js.Any]] = js.native
   val VERSION: atAngularCoreLib.atAngularCoreMod.Version = js.native
-  val ɵPLATFORM_BROWSER_ID: /* browser */ java.lang.String = js.native
-  val ɵPLATFORM_SERVER_ID: /* server */ java.lang.String = js.native
-  val ɵPLATFORM_WORKER_APP_ID: /* browserWorkerApp */ java.lang.String = js.native
-  val ɵPLATFORM_WORKER_UI_ID: /* browserWorkerUi */ java.lang.String = js.native
+  val ɵPLATFORM_BROWSER_ID: atAngularCommonLib.atAngularCommonLibStrings.browser = js.native
+  val ɵPLATFORM_SERVER_ID: atAngularCommonLib.atAngularCommonLibStrings.server = js.native
+  val ɵPLATFORM_WORKER_APP_ID: atAngularCommonLib.atAngularCommonLibStrings.browserWorkerApp = js.native
+  val ɵPLATFORM_WORKER_UI_ID: atAngularCommonLib.atAngularCommonLibStrings.browserWorkerUi = js.native
   val ɵangular_packages_common_common_a: atAngularCoreLib.atAngularCoreMod.InjectionToken[scala.Boolean] = js.native
   val ɵangular_packages_common_common_e: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = js.native
   val ɵangular_packages_common_common_f: js.Array[

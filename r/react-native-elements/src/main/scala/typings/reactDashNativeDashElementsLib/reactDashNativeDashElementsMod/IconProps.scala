@@ -9,9 +9,7 @@ trait IconProps extends js.Object {
   /**
     * View if no onPress method is defined, TouchableHighlight if onPress method is defined	React Native component	update React Native Component
     */
-  var Component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var Component: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Color of icon
     *
@@ -94,7 +92,7 @@ object IconProps {
   @scala.inline
   def apply(
     name: java.lang.String,
-    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    Component: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
     color: java.lang.String = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,

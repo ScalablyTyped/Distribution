@@ -13,6 +13,5 @@ object ^ extends js.Object {
     /* options */ js.UndefOr[stdLib.Partial[FeathersAuthenticationLocalOptions]], 
     js.Function0[scala.Unit]
   ]) with atFeathersjsAuthenticationDashLocalLib.Anon_App = js.native
-  val defaults: atFeathersjsAuthenticationDashLocalLib.Anon_Name = js.native
 }
 

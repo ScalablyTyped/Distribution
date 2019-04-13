@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CSSNumericArray ()
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[CSSNumericValue] {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[stdLib.IterableIterator[CSSNumericValue]] = js.native
   val length: scala.Double = js.native
 }

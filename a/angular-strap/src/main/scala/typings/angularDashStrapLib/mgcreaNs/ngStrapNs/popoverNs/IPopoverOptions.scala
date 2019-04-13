@@ -19,9 +19,7 @@ trait IPopoverOptions extends js.Object {
   var onHide: js.UndefOr[js.Function1[/* popover */ IPopover, scala.Unit]] = js.undefined
   var onShow: js.UndefOr[js.Function1[/* popover */ IPopover, scala.Unit]] = js.undefined
   var placement: js.UndefOr[java.lang.String] = js.undefined
-  var target: js.UndefOr[
-    java.lang.String | angularLib.angularMod.angularNs.IAugmentedJQuery | scala.Boolean
-  ] = js.undefined
+  var target: js.UndefOr[java.lang.String | angularLib.angularMod.IAugmentedJQuery | scala.Boolean] = js.undefined
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
@@ -45,7 +43,7 @@ object IPopoverOptions {
     onHide: /* popover */ IPopover => scala.Unit = null,
     onShow: /* popover */ IPopover => scala.Unit = null,
     placement: java.lang.String = null,
-    target: java.lang.String | angularLib.angularMod.angularNs.IAugmentedJQuery | scala.Boolean = null,
+    target: java.lang.String | angularLib.angularMod.IAugmentedJQuery | scala.Boolean = null,
     template: java.lang.String = null,
     templateUrl: java.lang.String = null,
     title: java.lang.String = null,

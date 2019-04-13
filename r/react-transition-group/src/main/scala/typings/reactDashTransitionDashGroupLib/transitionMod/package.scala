@@ -51,5 +51,5 @@ package object transitionMod {
     *
     */
   type Transition = reactLib.reactMod.Component[TransitionProps, js.Object, js.Any]
-  type TransitionChildren = reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* status */ TransitionStatus, reactLib.reactMod.ReactNs.ReactNode])
+  type TransitionChildren = reactLib.reactMod.ReactNode | (js.Function1[/* status */ TransitionStatus, reactLib.reactMod.ReactNode])
 }

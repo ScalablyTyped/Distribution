@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("allure-js-commons", "Description")
 @js.native
-class Description protected ()
-  extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Description {
-  def this(value: java.lang.String, `type`: allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.TYPE) = this()
-  /* CompleteClass */
-  override def toXML(): java.lang.String = js.native
+class Description protected () extends js.Object {
+  def this(value: java.lang.String, `type`: TYPE) = this()
+  def toXML(): java.lang.String = js.native
 }
 

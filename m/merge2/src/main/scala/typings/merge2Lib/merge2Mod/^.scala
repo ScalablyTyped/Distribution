@@ -22,40 +22,35 @@ object ^ extends js.Object {
     *
     * @return         A merged duplex stream
     */
-  def apply(a: merge2Lib.Streams): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams, d: merge2Lib.Streams): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
+  def apply(a: merge2Lib.Streams): Merge2Stream = js.native
+  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams): Merge2Stream = js.native
+  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams): Merge2Stream = js.native
+  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams, d: merge2Lib.Streams): Merge2Stream = js.native
   def apply(
     a: merge2Lib.Streams,
     b: merge2Lib.Streams,
     c: merge2Lib.Streams,
     d: merge2Lib.Streams,
     e: merge2Lib.Streams
-  ): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
+  ): Merge2Stream = js.native
   def apply(
     a: merge2Lib.Streams,
     b: merge2Lib.Streams,
     c: merge2Lib.Streams,
     d: merge2Lib.Streams,
     e: merge2Lib.Streams,
-    options: merge2Lib.merge2Mod.merge2Ns.Options
-  ): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
+    options: Options
+  ): Merge2Stream = js.native
   def apply(
     a: merge2Lib.Streams,
     b: merge2Lib.Streams,
     c: merge2Lib.Streams,
     d: merge2Lib.Streams,
-    options: merge2Lib.merge2Mod.merge2Ns.Options
-  ): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
-  def apply(
-    a: merge2Lib.Streams,
-    b: merge2Lib.Streams,
-    c: merge2Lib.Streams,
-    options: merge2Lib.merge2Mod.merge2Ns.Options
-  ): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, options: merge2Lib.merge2Mod.merge2Ns.Options): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, options: merge2Lib.merge2Mod.merge2Ns.Options): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
-  def apply(args: merge2Lib.Streams*): merge2Lib.merge2Mod.merge2Ns.Merge2Stream = js.native
+    options: Options
+  ): Merge2Stream = js.native
+  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams, options: Options): Merge2Stream = js.native
+  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, options: Options): Merge2Stream = js.native
+  def apply(a: merge2Lib.Streams, options: Options): Merge2Stream = js.native
+  def apply(args: merge2Lib.Streams*): Merge2Stream = js.native
 }
 

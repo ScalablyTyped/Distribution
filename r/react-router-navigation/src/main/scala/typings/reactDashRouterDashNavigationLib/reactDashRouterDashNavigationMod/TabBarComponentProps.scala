@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabBarComponentProps extends TabBarProps {
-  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
 }
 
 object TabBarComponentProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    children: js.Array[reactLib.reactMod.ReactElement[_]] = null,
     hideTabBar: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
     tabActiveTintColor: java.lang.String = null,
     tabBarIndicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabBarPosition: reactDashRouterDashNavigationLib.reactDashRouterDashNavigationLibStrings.top | reactDashRouterDashNavigationLib.reactDashRouterDashNavigationLibStrings.bottom = null,

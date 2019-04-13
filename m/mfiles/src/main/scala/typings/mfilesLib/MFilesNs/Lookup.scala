@@ -41,3 +41,8 @@ class Lookup ()
   ): java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.Lookup")
+@js.native
+object Lookup
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ILookup]
+

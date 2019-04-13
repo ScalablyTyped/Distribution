@@ -9,7 +9,7 @@ trait TagProps
   extends antdDashMobileLib.libTagPropsTypeMod.TagPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TagProps {
@@ -24,7 +24,7 @@ object TagProps {
     prefixCls: java.lang.String = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     small: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TagProps = {
     val __obj = js.Dynamic.literal()
     if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))

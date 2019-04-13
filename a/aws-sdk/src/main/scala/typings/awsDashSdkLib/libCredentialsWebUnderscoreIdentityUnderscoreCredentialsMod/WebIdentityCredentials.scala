@@ -20,7 +20,7 @@ class WebIdentityCredentials ()
     */
   def this(options: awsDashSdkLib.libCredentialsWebUnderscoreIdentityUnderscoreCredentialsMod.WebIdentityCredentialsNs.WebIdentityCredentialsOptions) = this()
   def this(options: awsDashSdkLib.libCredentialsWebUnderscoreIdentityUnderscoreCredentialsMod.WebIdentityCredentialsNs.WebIdentityCredentialsOptions, clientConfig: awsDashSdkLib.libConfigMod.ConfigurationOptions) = this()
-  var data: awsDashSdkLib.clientsStsMod.STSNs.AssumeRoleWithWebIdentityResponse = js.native
-  var params: awsDashSdkLib.clientsStsMod.STSNs.AssumeRoleWithWebIdentityRequest = js.native
+  var data: awsDashSdkLib.clientsStsMod.AssumeRoleWithWebIdentityResponse = js.native
+  var params: awsDashSdkLib.clientsStsMod.AssumeRoleWithWebIdentityRequest = js.native
 }
 

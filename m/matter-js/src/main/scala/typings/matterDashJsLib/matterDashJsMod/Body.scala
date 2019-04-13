@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Body")
 @js.native
-class Body ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Body {
+class Body () extends js.Object {
   /**
     * A `Number` specifying the angle of the body, in radians.
     *
@@ -16,8 +15,7 @@ class Body ()
     * @type number
     * @default 0
     */
-  /* CompleteClass */
-  override var angle: scala.Double = js.native
+  var angle: scala.Double = js.native
   /**
     * A `Number` that _measures_ the current angular speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.angularVelocity`).
     *
@@ -26,8 +24,7 @@ class Body ()
     * @type number
     * @default 0
     */
-  /* CompleteClass */
-  override var angularSpeed: scala.Double = js.native
+  var angularSpeed: scala.Double = js.native
   /**
     * A `Number` that _measures_ the current angular velocity of the body after the last `Body.update`. It is read-only.
     * If you need to modify a body's angular velocity directly, you should apply a torque or simply change the body's `angle` (as the engine uses position-Verlet integration).
@@ -37,8 +34,7 @@ class Body ()
     * @type number
     * @default 0
     */
-  /* CompleteClass */
-  override var angularVelocity: scala.Double = js.native
+  var angularVelocity: scala.Double = js.native
   /**
     * A `Number` that _measures_ the area of the body's convex hull, calculated at creation by `Body.create`.
     *
@@ -46,8 +42,7 @@ class Body ()
     * @type string
     * @default
     */
-  /* CompleteClass */
-  override var area: scala.Double = js.native
+  var area: scala.Double = js.native
   /**
     * An array of unique axis vectors (edge normals) used for collision detection.
     * These are automatically calculated from the given convex hull (`vertices` array) in `Body.create`.
@@ -56,8 +51,7 @@ class Body ()
     * @property axes
     * @type vector[]
     */
-  /* CompleteClass */
-  override var axes: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
+  var axes: js.Array[Vector] = js.native
   /**
     * A `Bounds` object that defines the AABB region for the body.
     * It is automatically calculated from the given convex hull (`vertices` array) in `Body.create` and constantly updated by `Body.update` during simulation.
@@ -65,8 +59,7 @@ class Body ()
     * @property bounds
     * @type bounds
     */
-  /* CompleteClass */
-  override var bounds: matterDashJsLib.matterDashJsMod.MatterNs.Bounds = js.native
+  var bounds: Bounds = js.native
   /**
     * An `Object` that specifies the collision filtering properties of this body.
     *
@@ -92,8 +85,7 @@ class Body ()
     * @property collisionFilter
     * @type object
     */
-  /* CompleteClass */
-  override var collisionFilter: matterDashJsLib.matterDashJsMod.MatterNs.ICollisionFilter = js.native
+  var collisionFilter: ICollisionFilter = js.native
   /**
     * A `Number` that defines the density of the body, that is its mass per unit area.
     * If you pass the density via `Body.create` the `mass` property is automatically calculated for you based on the size (area) of the object.
@@ -103,8 +95,7 @@ class Body ()
     * @type number
     * @default 0.001
     */
-  /* CompleteClass */
-  override var density: scala.Double = js.native
+  var density: scala.Double = js.native
   /**
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
     *
@@ -112,8 +103,7 @@ class Body ()
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  /* CompleteClass */
-  override var force: matterDashJsLib.matterDashJsMod.MatterNs.Vector = js.native
+  var force: Vector = js.native
   /**
     * A `Number` that defines the friction of the body. The value is always positive and is in the range `(0, 1)`.
     * A value of `0` means that the body may slide indefinitely.
@@ -130,8 +120,7 @@ class Body ()
     * @type number
     * @default 0.1
     */
-  /* CompleteClass */
-  override var friction: scala.Double = js.native
+  var friction: scala.Double = js.native
   /**
     * A `Number` that defines the air friction of the body (air resistance).
     * A value of `0` means the body will never slow as it moves through space.
@@ -142,8 +131,7 @@ class Body ()
     * @type number
     * @default 0.01
     */
-  /* CompleteClass */
-  override var frictionAir: scala.Double = js.native
+  var frictionAir: scala.Double = js.native
   /**
     * A `Number` that defines the static friction of the body (in the Coulomb friction model).
     * A value of `0` means the body will never 'stick' when it is nearly stationary and only dynamic `friction` is used.
@@ -154,16 +142,14 @@ class Body ()
     * @type number
     * @default 0.5
     */
-  /* CompleteClass */
-  override var frictionStatic: scala.Double = js.native
+  var frictionStatic: scala.Double = js.native
   /**
     * An integer `Number` uniquely identifying number generated in `Body.create` by `Common.nextId`.
     *
     * @property id
     * @type number
     */
-  /* CompleteClass */
-  override var id: scala.Double = js.native
+  var id: scala.Double = js.native
   /**
     * A `Number` that defines the moment of inertia (i.e. second moment of area) of the body.
     * It is automatically calculated from the given convex hull (`vertices` array) and density in `Body.create`.
@@ -172,8 +158,7 @@ class Body ()
     * @property inertia
     * @type number
     */
-  /* CompleteClass */
-  override var inertia: scala.Double = js.native
+  var inertia: scala.Double = js.native
   /**
     * A `Number` that defines the inverse moment of inertia of the body (`1 / inertia`).
     * If you modify this value, you must also modify the `body.inertia` property.
@@ -181,8 +166,7 @@ class Body ()
     * @property inverseInertia
     * @type number
     */
-  /* CompleteClass */
-  override var inverseInertia: scala.Double = js.native
+  var inverseInertia: scala.Double = js.native
   /**
     * A `Number` that defines the inverse mass of the body (`1 / mass`).
     * If you modify this value, you must also modify the `body.mass` property.
@@ -190,8 +174,7 @@ class Body ()
     * @property inverseMass
     * @type number
     */
-  /* CompleteClass */
-  override var inverseMass: scala.Double = js.native
+  var inverseMass: scala.Double = js.native
   /**
     * A flag that indicates whether a body is a sensor. Sensor triggers collision events, but doesn't react with colliding body physically.
     *
@@ -199,8 +182,7 @@ class Body ()
     * @type boolean
     * @default false
     */
-  /* CompleteClass */
-  override var isSensor: scala.Boolean = js.native
+  var isSensor: scala.Boolean = js.native
   /**
     * A flag that indicates whether the body is considered sleeping. A sleeping body acts similar to a static body, except it is only temporary and can be awoken.
     * If you need to set a body as sleeping, you should use `Sleeping.set` as this requires more than just setting this flag.
@@ -209,8 +191,7 @@ class Body ()
     * @type boolean
     * @default false
     */
-  /* CompleteClass */
-  override var isSleeping: scala.Boolean = js.native
+  var isSleeping: scala.Boolean = js.native
   /**
     * A flag that indicates whether a body is considered static. A static body can never change position or angle and is completely fixed.
     * If you need to set a body as static after its creation, you should use `Body.setStatic` as this requires more than just setting this flag.
@@ -219,8 +200,7 @@ class Body ()
     * @type boolean
     * @default false
     */
-  /* CompleteClass */
-  override var isStatic: scala.Boolean = js.native
+  var isStatic: scala.Boolean = js.native
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
@@ -228,8 +208,7 @@ class Body ()
     * @type string
     * @default "Body"
     */
-  /* CompleteClass */
-  override var label: java.lang.String = js.native
+  var label: java.lang.String = js.native
   /**
     * A `Number` that defines the mass of the body, although it may be more appropriate to specify the `density` property instead.
     * If you modify this value, you must also modify the `body.inverseMass` property (`1 / mass`).
@@ -237,8 +216,7 @@ class Body ()
     * @property mass
     * @type number
     */
-  /* CompleteClass */
-  override var mass: scala.Double = js.native
+  var mass: scala.Double = js.native
   /**
     * A `Number` that _measures_ the amount of movement a body currently has (a combination of `speed` and `angularSpeed`). It is read-only and always positive.
     * It is used and updated by the `Matter.Sleeping` module during simulation to decide if a body has come to rest.
@@ -248,8 +226,7 @@ class Body ()
     * @type number
     * @default 0
     */
-  /* CompleteClass */
-  override var motion: scala.Double = js.native
+  var motion: scala.Double = js.native
   /**
     * A self reference if the body is _not_ a part of another body.
     * Otherwise this is a reference to the body that this is a part of.
@@ -258,8 +235,7 @@ class Body ()
     * @property parent
     * @type body
     */
-  /* CompleteClass */
-  override var parent: matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  var parent: Body = js.native
   /**
     * An array of bodies that make up this body.
     * The first body in the array must always be a self reference to the current body instance.
@@ -271,24 +247,21 @@ class Body ()
     * @property parts
     * @type body[]
     */
-  /* CompleteClass */
-  override var parts: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body] = js.native
+  var parts: js.Array[Body] = js.native
   /**
     * A `Vector` that specifies the current world-space position of the body.
     *
     * @property position
     * @type vector
     * @default { x: 0, y:      */
-  /* CompleteClass */
-  override var position: matterDashJsLib.matterDashJsMod.MatterNs.Vector = js.native
+  var position: Vector = js.native
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
     * @property render
     * @type object
     */
-  /* CompleteClass */
-  override var render: matterDashJsLib.matterDashJsMod.MatterNs.IBodyRenderOptions = js.native
+  var render: IBodyRenderOptions = js.native
   /**
     * A `Number` that defines the restitution (elasticity) of the body. The value is always positive and is in the range `(0, 1)`.
     * A value of `0` means collisions may be perfectly inelastic and no bouncing may occur.
@@ -301,8 +274,7 @@ class Body ()
     * @type number
     * @default 0
     */
-  /* CompleteClass */
-  override var restitution: scala.Double = js.native
+  var restitution: scala.Double = js.native
   /**
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
     *
@@ -310,8 +282,7 @@ class Body ()
     * @type number
     * @default 60
     */
-  /* CompleteClass */
-  override var sleepThreshold: scala.Double = js.native
+  var sleepThreshold: scala.Double = js.native
   /**
     * A `Number` that specifies a tolerance on how far a body is allowed to 'sink' or rotate into other bodies.
     * Avoid changing this value unless you understand the purpose of `slop` in physics engines.
@@ -321,8 +292,7 @@ class Body ()
     * @type number
     * @default 0.05
     */
-  /* CompleteClass */
-  override var slop: scala.Double = js.native
+  var slop: scala.Double = js.native
   /**
     * A `Number` that _measures_ the current speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.velocity`).
     *
@@ -331,8 +301,7 @@ class Body ()
     * @type number
     * @default 0
     */
-  /* CompleteClass */
-  override var speed: scala.Double = js.native
+  var speed: scala.Double = js.native
   /**
     * A `Number` that allows per-body time scaling, e.g. a force-field where bodies inside are in slow-motion, while others are at full speed.
     *
@@ -340,8 +309,7 @@ class Body ()
     * @type number
     * @default 1
     */
-  /* CompleteClass */
-  override var timeScale: scala.Double = js.native
+  var timeScale: scala.Double = js.native
   /**
     * A `Number` that specifies the torque (turning force) to apply in the current step. It is zeroed after every `Body.update`.
     *
@@ -349,8 +317,7 @@ class Body ()
     * @type number
     * @default 0
     */
-  /* CompleteClass */
-  override var torque: scala.Double = js.native
+  var torque: scala.Double = js.native
   /**
     * A `String` denoting the type of object.
     *
@@ -358,8 +325,7 @@ class Body ()
     * @type string
     * @default "body"
     */
-  /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  var `type`: java.lang.String = js.native
   /**
     * A `Vector` that _measures_ the current velocity of the body after the last `Body.update`. It is read-only.
     * If you need to modify a body's velocity directly, you should either apply a force or simply change the body's `position` (as the engine uses position-Verlet integration).
@@ -369,8 +335,7 @@ class Body ()
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  /* CompleteClass */
-  override var velocity: matterDashJsLib.matterDashJsMod.MatterNs.Vector = js.native
+  var velocity: Vector = js.native
   /**
     * An array of `Vector` objects that specify the convex hull of the rigid body.
     * These should be provided about the origin `(0, 0)`. E.g.
@@ -386,8 +351,7 @@ class Body ()
     * @property vertices
     * @type vector[]
     */
-  /* CompleteClass */
-  override var vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
+  var vertices: js.Array[Vector] = js.native
 }
 
 /* static members */
@@ -402,9 +366,9 @@ object Body extends js.Object {
     * @param {vector} force
     */
   def applyForce(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
-    position: matterDashJsLib.matterDashJsMod.MatterNs.Vector,
-    force: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    body: matterDashJsLib.matterDashJsMod.Body,
+    position: matterDashJsLib.matterDashJsMod.Vector,
+    force: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
   /**
     * Creates a new rigid body model. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -414,7 +378,7 @@ object Body extends js.Object {
     * @param {} options
     * @return {body} body
     */
-  def create(options: matterDashJsLib.matterDashJsMod.MatterNs.IBodyDefinition): matterDashJsLib.matterDashJsMod.MatterNs.Body = js.native
+  def create(options: matterDashJsLib.matterDashJsMod.IBodyDefinition): matterDashJsLib.matterDashJsMod.Body = js.native
   /**
     * Returns the next unique category bitfield (starting after the initial default category `0x0001`).
     * There are 32 available. See `body.collisionFilter` for more information.
@@ -437,7 +401,7 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} rotation
     */
-  def rotate(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, rotation: scala.Double): scala.Unit = js.native
+  def rotate(body: matterDashJsLib.matterDashJsMod.Body, rotation: scala.Double): scala.Unit = js.native
   /**
     * Scales the body, including updating physical properties (mass, area, axes, inertia), from a world-space point (default is body centre).
     * @method scale
@@ -446,12 +410,12 @@ object Body extends js.Object {
     * @param {number} scaleY
     * @param {vector} [point]
     */
-  def scale(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, scaleX: scala.Double, scaleY: scala.Double): scala.Unit = js.native
+  def scale(body: matterDashJsLib.matterDashJsMod.Body, scaleX: scala.Double, scaleY: scala.Double): scala.Unit = js.native
   def scale(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
+    body: matterDashJsLib.matterDashJsMod.Body,
     scaleX: scala.Double,
     scaleY: scala.Double,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    point: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
   /**
     * Given a property and a value (or map of), sets the property(s) on the body, using the appropriate setter functions if they exist.
@@ -461,29 +425,29 @@ object Body extends js.Object {
     * @param {} settings A property name (or map of properties and values) to set on the body.
     * @param {} value The value to set if `settings` is a single property name.
     */
-  def set(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, settings: js.Any): scala.Unit = js.native
-  def set(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, settings: js.Any, value: js.Any): scala.Unit = js.native
+  def set(body: matterDashJsLib.matterDashJsMod.Body, settings: js.Any): scala.Unit = js.native
+  def set(body: matterDashJsLib.matterDashJsMod.Body, settings: js.Any, value: js.Any): scala.Unit = js.native
   /**
     * Sets the angle of the body instantly. Angular velocity, position, force etc. are unchanged.
     * @method setAngle
     * @param {body} body
     * @param {number} angle
     */
-  def setAngle(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, angle: scala.Double): scala.Unit = js.native
+  def setAngle(body: matterDashJsLib.matterDashJsMod.Body, angle: scala.Double): scala.Unit = js.native
   /**
     * Sets the angular velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
     * @method setAngularVelocity
     * @param {body} body
     * @param {number} velocity
     */
-  def setAngularVelocity(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, velocity: scala.Double): scala.Unit = js.native
+  def setAngularVelocity(body: matterDashJsLib.matterDashJsMod.Body, velocity: scala.Double): scala.Unit = js.native
   /**
     * Sets the density of the body. Mass is automatically updated to reflect the change.
     * @method setDensity
     * @param {body} body
     * @param {number} density
     */
-  def setDensity(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, density: scala.Double): scala.Unit = js.native
+  def setDensity(body: matterDashJsLib.matterDashJsMod.Body, density: scala.Double): scala.Unit = js.native
   /**
     * Sets the moment of inertia (i.e. second moment of area) of the body of the body.
     * Inverse inertia is automatically updated to reflect the change. Mass is not changed.
@@ -491,14 +455,14 @@ object Body extends js.Object {
     * @param {body} body
     * @param {number} inertia
     */
-  def setInertia(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, interna: scala.Double): scala.Unit = js.native
+  def setInertia(body: matterDashJsLib.matterDashJsMod.Body, interna: scala.Double): scala.Unit = js.native
   /**
     * Sets the mass of the body. Inverse mass and density are automatically updated to reflect the change.
     * @method setMass
     * @param {body} body
     * @param {number} mass
     */
-  def setMass(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, mass: scala.Double): scala.Unit = js.native
+  def setMass(body: matterDashJsLib.matterDashJsMod.Body, mass: scala.Double): scala.Unit = js.native
   /**
     * Sets the parts of the `body` and updates mass, inertia and centroid.
     * Each part will have its parent set to `body`.
@@ -509,13 +473,10 @@ object Body extends js.Object {
     * @param [body] parts
     * @param {bool} [autoHull=true]
     */
+  def setParts(body: matterDashJsLib.matterDashJsMod.Body, parts: js.Array[matterDashJsLib.matterDashJsMod.Body]): scala.Unit = js.native
   def setParts(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
-    parts: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body]
-  ): scala.Unit = js.native
-  def setParts(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
-    parts: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Body],
+    body: matterDashJsLib.matterDashJsMod.Body,
+    parts: js.Array[matterDashJsLib.matterDashJsMod.Body],
     autoHull: scala.Boolean
   ): scala.Unit = js.native
   /**
@@ -524,27 +485,21 @@ object Body extends js.Object {
     * @param {body} body
     * @param {vector} position
     */
-  def setPosition(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
-    position: matterDashJsLib.matterDashJsMod.MatterNs.Vector
-  ): scala.Unit = js.native
+  def setPosition(body: matterDashJsLib.matterDashJsMod.Body, position: matterDashJsLib.matterDashJsMod.Vector): scala.Unit = js.native
   /**
     * Sets the body as static, including isStatic flag and setting mass and inertia to Infinity.
     * @method setStatic
     * @param {body} body
     * @param {bool} isStatic
     */
-  def setStatic(body: matterDashJsLib.matterDashJsMod.MatterNs.Body, isStatic: scala.Boolean): scala.Unit = js.native
+  def setStatic(body: matterDashJsLib.matterDashJsMod.Body, isStatic: scala.Boolean): scala.Unit = js.native
   /**
     * Sets the linear velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
     * @method setVelocity
     * @param {body} body
     * @param {vector} velocity
     */
-  def setVelocity(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
-    velocity: matterDashJsLib.matterDashJsMod.MatterNs.Vector
-  ): scala.Unit = js.native
+  def setVelocity(body: matterDashJsLib.matterDashJsMod.Body, velocity: matterDashJsLib.matterDashJsMod.Vector): scala.Unit = js.native
   /**
     * Sets the body's vertices and updates body properties accordingly, including inertia, area and mass (with respect to `body.density`).
     * Vertices will be automatically transformed to be orientated around their centre of mass as the origin.
@@ -558,8 +513,8 @@ object Body extends js.Object {
     * @param {vector[]} vertices
     */
   def setVertices(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
-    vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector]
+    body: matterDashJsLib.matterDashJsMod.Body,
+    vertices: js.Array[matterDashJsLib.matterDashJsMod.Vector]
   ): scala.Unit = js.native
   /**
     * Moves a body by a given vector relative to its current position, without imparting any velocity.
@@ -567,10 +522,7 @@ object Body extends js.Object {
     * @param {body} body
     * @param {vector} translation
     */
-  def translate(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
-    translation: matterDashJsLib.matterDashJsMod.MatterNs.Vector
-  ): scala.Unit = js.native
+  def translate(body: matterDashJsLib.matterDashJsMod.Body, translation: matterDashJsLib.matterDashJsMod.Vector): scala.Unit = js.native
   /**
     * Performs a simulation step for the given `body`, including updating position and angle using Verlet integration.
     * @method update
@@ -580,7 +532,7 @@ object Body extends js.Object {
     * @param {number} correction
     */
   def update(
-    body: matterDashJsLib.matterDashJsMod.MatterNs.Body,
+    body: matterDashJsLib.matterDashJsMod.Body,
     deltaTime: scala.Double,
     timeScale: scala.Double,
     correction: scala.Double

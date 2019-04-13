@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("cookie-parser", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(secret: java.lang.String | js.Array[java.lang.String]): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(
-    secret: java.lang.String | js.Array[java.lang.String],
-    options: cookieDashParserLib.cookieDashParserMod.cookieParserNs.CookieParseOptions
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
+  def apply(secret: java.lang.String | js.Array[java.lang.String]): expressLib.expressMod.RequestHandler = js.native
+  def apply(secret: java.lang.String | js.Array[java.lang.String], options: CookieParseOptions): expressLib.expressMod.RequestHandler = js.native
   def JSONCookie(jsonCookie: java.lang.String): js.UndefOr[js.Object] = js.native
   def JSONCookies[T /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */](jsonCookies: T): /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: object | undefined}

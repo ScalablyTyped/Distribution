@@ -11,3 +11,10 @@ class Line () extends ILine {
   def this(values: js.Array[scala.Double]) = this()
 }
 
+// SERIES
+@JSGlobal("Tee.Line")
+@js.native
+object Line
+  extends org.scalablytyped.runtime.Instantiable0[ILine]
+     with org.scalablytyped.runtime.Instantiable1[/* values */ js.Array[scala.Double], ILine]
+

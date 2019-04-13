@@ -29,3 +29,8 @@ class StateTransitionForClient ()
   override def GetAsTypedValue(): mfilesLib.ITypedValue = js.native
 }
 
+@JSGlobal("MFiles.StateTransitionForClient")
+@js.native
+object StateTransitionForClient
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStateTransitionForClient]
+

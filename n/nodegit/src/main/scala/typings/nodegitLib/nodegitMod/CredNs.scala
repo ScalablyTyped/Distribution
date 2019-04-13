@@ -21,6 +21,5 @@ object CredNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.credMod.CredNs.TYPE with scala.Double] = js.native
   }
   
-  type TYPE = nodegitLib.credMod.CredNs.TYPE
 }
 

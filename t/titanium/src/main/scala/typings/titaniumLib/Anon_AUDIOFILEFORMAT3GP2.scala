@@ -254,7 +254,7 @@ trait Anon_AUDIOFILEFORMAT3GP2 extends js.Object {
   /**
   		 * Android-specific media-related functionality.
   		 */
-  val AndroidNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParentGetLifecycleContainer = js.native
+  val AndroidNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParent = js.native
   /**
   		 * Constant specifying that app is authorized to use camera. This is available on iOS7 and later.
   		 */

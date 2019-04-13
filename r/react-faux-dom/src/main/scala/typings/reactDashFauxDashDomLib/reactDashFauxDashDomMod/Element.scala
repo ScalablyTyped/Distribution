@@ -33,6 +33,6 @@ class Element protected ()
   override val previousElementSibling: stdLib.Element | scala.Null = js.native
   /* CompleteClass */
   override val style: stdLib.CSSStyleDeclaration = js.native
-  def toReact(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def toReact(): reactLib.reactMod.ReactElement[_] = js.native
 }
 

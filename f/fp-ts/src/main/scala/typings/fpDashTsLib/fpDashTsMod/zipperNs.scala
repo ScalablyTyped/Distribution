@@ -14,7 +14,7 @@ object zipperNs extends js.Object {
     def this(lefts: fpDashTsLib.libArrayMod.Global.Array[A], focus: A, rights: fpDashTsLib.libArrayMod.Global.Array[A]) = this()
   }
   
-  val URI: /* Zipper */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Zipper = js.native
   val zipper: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libZipperMod.URI] = js.native
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libZipperMod.Zipper[A]] = js.native
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A], focusIndex: scala.Double): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libZipperMod.Zipper[A]] = js.native

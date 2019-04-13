@@ -10,56 +10,56 @@ trait MarkerProps extends js.Object {
   var onBlur: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGGElement], 
+      /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGGElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onFocus: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGGElement], 
+      /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGGElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseDown: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseMove: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseUp: js.UndefOr[
     js.Function2[
       /* marker */ MarkerType, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -72,14 +72,14 @@ object MarkerProps {
   @scala.inline
   def apply(
     marker: MarkerType = null,
-    onBlur: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGGElement]) => scala.Unit = null,
-    onClick: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onFocus: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGGElement]) => scala.Unit = null,
-    onMouseDown: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseEnter: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseLeave: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseMove: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseUp: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onBlur: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGGElement]) => scala.Unit = null,
+    onClick: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onFocus: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGGElement]) => scala.Unit = null,
+    onMouseDown: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseEnter: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseLeave: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseMove: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseUp: (/* marker */ MarkerType, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGGElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     preserveMarkerAspect: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashSimpleDashMapsLib.Anon_Default = null,
     tabable: js.UndefOr[scala.Boolean] = js.undefined

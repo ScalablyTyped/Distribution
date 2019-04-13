@@ -14,9 +14,9 @@ trait MentionProps extends js.Object {
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   var multiLines: js.UndefOr[scala.Boolean] = js.undefined
   var notFoundContent: js.UndefOr[js.Any] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* contentState */ js.Any, _]] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement]] = js.undefined
   var onSearchChange: js.UndefOr[js.Function2[/* value */ java.lang.String, /* trigger */ java.lang.String, _]] = js.undefined
   var onSelect: js.UndefOr[
     js.Function2[/* suggestion */ java.lang.String, /* data */ js.UndefOr[js.Any], _]
@@ -26,8 +26,8 @@ trait MentionProps extends js.Object {
   var prefix: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var suggestionStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var suggestionStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var suggestions: js.UndefOr[js.Array[_]] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -43,9 +43,9 @@ object MentionProps {
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     multiLines: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: js.Any = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLElement] = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement] = null,
     onChange: /* contentState */ js.Any => _ = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLElement] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[stdLib.HTMLElement] = null,
     onSearchChange: (/* value */ java.lang.String, /* trigger */ java.lang.String) => _ = null,
     onSelect: (/* suggestion */ java.lang.String, /* data */ js.UndefOr[js.Any]) => _ = null,
     placeholder: java.lang.String = null,
@@ -53,8 +53,8 @@ object MentionProps {
     prefix: java.lang.String | js.Array[java.lang.String] = null,
     prefixCls: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suggestionStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    suggestionStyle: reactLib.reactMod.CSSProperties = null,
     suggestions: js.Array[_] = null,
     value: js.Any = null
   ): MentionProps = {

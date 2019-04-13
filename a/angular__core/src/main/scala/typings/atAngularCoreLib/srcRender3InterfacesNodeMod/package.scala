@@ -14,5 +14,6 @@ package object srcRender3InterfacesNodeMod {
     js.Any
   ]
   type PropertyAliasValue = js.Array[scala.Double | java.lang.String]
+  type PropertyAliases = org.scalablytyped.runtime.StringDictionary[PropertyAliasValue]
   type TAttributes = js.Array[java.lang.String | AttributeMarker]
 }

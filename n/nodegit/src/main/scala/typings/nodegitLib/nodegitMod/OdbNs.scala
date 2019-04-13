@@ -17,6 +17,5 @@ object OdbNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.odbMod.OdbNs.STREAM with scala.Double] = js.native
   }
   
-  type STREAM = nodegitLib.odbMod.OdbNs.STREAM
 }
 

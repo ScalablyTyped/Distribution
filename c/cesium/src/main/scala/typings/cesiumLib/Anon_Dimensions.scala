@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Dimensions extends js.Object {
-  var dimensions: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var fill: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MaterialProperty] = js.undefined
-  var outline: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var outlineWidth: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var show: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var dimensions: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var fill: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.MaterialProperty] = js.undefined
+  var outline: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var outlineWidth: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var show: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
 }
 
 object Anon_Dimensions {
   @scala.inline
   def apply(
-    dimensions: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    fill: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    material: cesiumLib.cesiumMod.CesiumNs.MaterialProperty = null,
-    outline: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outlineColor: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    outlineWidth: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    show: cesiumLib.cesiumMod.CesiumNs.Property = null
+    dimensions: cesiumLib.cesiumMod.Property = null,
+    fill: cesiumLib.cesiumMod.Property = null,
+    material: cesiumLib.cesiumMod.MaterialProperty = null,
+    outline: cesiumLib.cesiumMod.Property = null,
+    outlineColor: cesiumLib.cesiumMod.Property = null,
+    outlineWidth: cesiumLib.cesiumMod.Property = null,
+    show: cesiumLib.cesiumMod.Property = null
   ): Anon_Dimensions = {
     val __obj = js.Dynamic.literal()
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)

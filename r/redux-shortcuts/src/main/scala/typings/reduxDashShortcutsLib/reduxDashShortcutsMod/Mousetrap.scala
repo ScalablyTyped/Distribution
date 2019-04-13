@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-shortcuts", "Mousetrap")
 @js.native
 class Mousetrap ()
-  extends mousetrapLib.mousetrapMod.namespaced {
+  extends mousetrapLib.mousetrapMod.^ {
   def this(el: stdLib.Element) = this()
 }
 

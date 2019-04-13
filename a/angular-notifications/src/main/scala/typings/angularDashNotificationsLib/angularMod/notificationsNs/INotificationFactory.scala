@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait INotificationFactory
-  extends angularLib.angularMod.angularNs.IModule {
+  extends angularLib.angularMod.IModule {
   def awesomeNotify(
     `type`: java.lang.String,
     icon: java.lang.String,

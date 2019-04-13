@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class AppMesh ()
-  extends awsDashSdkLib.clientsAppmeshMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAppmeshMod.^ {
+  def this(options: awsDashSdkLib.clientsAppmeshMod.ClientConfiguration) = this()
 }
 

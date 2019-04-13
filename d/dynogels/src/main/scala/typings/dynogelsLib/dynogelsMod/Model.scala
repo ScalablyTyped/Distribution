@@ -32,7 +32,7 @@ trait Model
   def createTable(
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.CreateTableOutput, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.CreateTableOutput, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -40,7 +40,7 @@ trait Model
     options: CreateTablesOptions,
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.CreateTableOutput, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.CreateTableOutput, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -48,7 +48,7 @@ trait Model
   def describeTable(
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DescribeTableOutput, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.DescribeTableOutput, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -78,7 +78,7 @@ trait Model
   def updateTable(
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.UpdateTableOutput, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.UpdateTableOutput, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -86,7 +86,7 @@ trait Model
     throughput: Throughput,
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.UpdateTableOutput, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.UpdateTableOutput, 
       scala.Unit
     ]
   ): scala.Unit = js.native

@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class SignaturePromptInfos ()
   extends mfilesLib.ISignaturePromptInfos
 
+@JSGlobal("MFiles.SignaturePromptInfos")
+@js.native
+object SignaturePromptInfos
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISignaturePromptInfos]
+

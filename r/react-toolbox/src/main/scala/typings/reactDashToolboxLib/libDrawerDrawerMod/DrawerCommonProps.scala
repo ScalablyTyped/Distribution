@@ -14,7 +14,7 @@ trait DrawerCommonProps extends js.Object {
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true the Drawer is rendered inside the normal tree.
     * @default false
@@ -42,7 +42,7 @@ object DrawerCommonProps {
   @scala.inline
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     insideTree: js.UndefOr[scala.Boolean] = js.undefined,
     onOverlayClick: js.Function = null,
     `type`: reactDashToolboxLib.reactDashToolboxLibStrings.left | reactDashToolboxLib.reactDashToolboxLibStrings.right = null,

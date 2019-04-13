@@ -16,9 +16,9 @@ class ClosedCaptionTwoTone protected ()
 @JSImport("@material-ui/icons", "ClosedCaptionTwoTone")
 @js.native
 class ClosedCaptionTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

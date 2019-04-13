@@ -23,12 +23,9 @@ class AgentCls () extends Agent {
   override var sockets: js.Any = js.native
 }
 
-object Agent {
-  @scala.inline
-  def apply(maxSockets: scala.Double, requests: js.Any, sockets: js.Any): Agent = {
-    val __obj = js.Dynamic.literal(maxSockets = maxSockets, requests = requests, sockets = sockets)
-  
-    __obj.asInstanceOf[Agent]
-  }
-}
+@JSImport("https", "Agent")
+@js.native
+object Agent
+  extends org.scalablytyped.runtime.Instantiable0[Agent]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ RequestOptions, Agent]
 

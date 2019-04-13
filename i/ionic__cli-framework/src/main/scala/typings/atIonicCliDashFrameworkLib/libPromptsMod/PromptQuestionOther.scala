@@ -21,12 +21,9 @@ object PromptQuestionOther {
   def apply(
     message: java.lang.String,
     `type`: PromptTypeOther,
-    choices: js.Array[inquirerLib.inquirerMod.inquirerNs.ChoiceType] | (js.Function1[
-      inquirerLib.inquirerMod.inquirerNs.Answers, 
-      js.Array[inquirerLib.inquirerMod.inquirerNs.ChoiceType]
-    ]) | (js.Function1[
-      inquirerLib.inquirerMod.inquirerNs.Answers, 
-      js.Promise[js.Array[inquirerLib.inquirerMod.inquirerNs.ChoiceType]]
+    choices: js.Array[inquirerLib.inquirerMod.ChoiceType] | (js.Function1[inquirerLib.inquirerMod.Answers, js.Array[inquirerLib.inquirerMod.ChoiceType]]) | (js.Function1[
+      inquirerLib.inquirerMod.Answers, 
+      js.Promise[js.Array[inquirerLib.inquirerMod.ChoiceType]]
     ]) = null,
     default: PromptValueOther = null,
     fallback: PromptValueOther = null,
@@ -38,8 +35,8 @@ object PromptQuestionOther {
     prefix: java.lang.String = null,
     suffix: java.lang.String = null,
     transformer: /* input */ java.lang.String => java.lang.String = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[inquirerLib.inquirerMod.inquirerNs.Answers]) => scala.Boolean | java.lang.String | (js.Promise[scala.Boolean | java.lang.String]) = null,
-    when: scala.Boolean | (js.Function1[inquirerLib.inquirerMod.inquirerNs.Answers, scala.Boolean]) | (js.Function1[inquirerLib.inquirerMod.inquirerNs.Answers, js.Promise[scala.Boolean]]) = null
+    validate: (/* input */ js.Any, /* answers */ js.UndefOr[inquirerLib.inquirerMod.Answers]) => scala.Boolean | java.lang.String | (js.Promise[scala.Boolean | java.lang.String]) = null,
+    when: scala.Boolean | (js.Function1[inquirerLib.inquirerMod.Answers, scala.Boolean]) | (js.Function1[inquirerLib.inquirerMod.Answers, js.Promise[scala.Boolean]]) = null
   ): PromptQuestionOther = {
     val __obj = js.Dynamic.literal(message = message)
     __obj.updateDynamic("type")(`type`)

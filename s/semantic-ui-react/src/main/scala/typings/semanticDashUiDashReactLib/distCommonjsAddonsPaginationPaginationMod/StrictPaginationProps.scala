@@ -48,7 +48,7 @@ trait StrictPaginationProps extends js.Object {
     */
   var onPageChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ PaginationProps, 
       scala.Unit
     ]
@@ -92,7 +92,7 @@ object StrictPaginationProps {
     nextItem: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
       semanticDashUiDashReactLib.distCommonjsAddonsPaginationPaginationItemMod.PaginationItemProps
     ] = null,
-    onPageChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ PaginationProps) => scala.Unit = null,
+    onPageChange: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], /* data */ PaginationProps) => scala.Unit = null,
     pageItem: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
       semanticDashUiDashReactLib.distCommonjsAddonsPaginationPaginationItemMod.PaginationItemProps
     ] = null,

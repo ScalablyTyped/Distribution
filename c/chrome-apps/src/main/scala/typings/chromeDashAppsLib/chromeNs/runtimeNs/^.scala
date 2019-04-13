@@ -8,12 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.runtime")
 @js.native
 object ^ extends js.Object {
-  val OnInstalledReason: chromeDashAppsLib.Anon_CHROMEUPDATE = js.native
-  val OnRestartRequiredReason: chromeDashAppsLib.Anon_APPUPDATE = js.native
-  val PlatformArch: chromeDashAppsLib.Anon_ARM = js.native
-  val PlatformNaclArch: chromeDashAppsLib.Anon_ARM = js.native
-  val PlatformOs: chromeDashAppsLib.Anon_ANDROID = js.native
-  val RequestUpdateCheckStatus: chromeDashAppsLib.Anon_NOUPDATE = js.native
   /** The ID of the app. */
   val id: java.lang.String = js.native
   /** This will be defined during an API method callback if there was an error */

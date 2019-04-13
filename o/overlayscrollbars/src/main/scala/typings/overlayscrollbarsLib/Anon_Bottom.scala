@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Bottom extends js.Object {
-  var bottom: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin] = js.undefined
-  var left: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin] = js.undefined
-  var right: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin] = js.undefined
-  var top: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin] = js.undefined
+  var bottom: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.Margin] = js.undefined
+  var left: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.Margin] = js.undefined
+  var right: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.Margin] = js.undefined
+  var top: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.Margin] = js.undefined
 }
 
 object Anon_Bottom {
   @scala.inline
   def apply(
-    bottom: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin = null,
-    left: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin = null,
-    right: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin = null,
-    top: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Margin = null
+    bottom: overlayscrollbarsLib.overlayscrollbarsMod.Margin = null,
+    left: overlayscrollbarsLib.overlayscrollbarsMod.Margin = null,
+    right: overlayscrollbarsLib.overlayscrollbarsMod.Margin = null,
+    top: overlayscrollbarsLib.overlayscrollbarsMod.Margin = null
   ): Anon_Bottom = {
     val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])

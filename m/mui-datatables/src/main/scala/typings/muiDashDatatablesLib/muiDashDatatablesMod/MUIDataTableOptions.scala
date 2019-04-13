@@ -16,7 +16,7 @@ trait MUIDataTableOptions extends js.Object {
       /* rowsPerPage */ scala.Double, 
       /* changeRowsPerPage */ js.Function0[_], 
       /* changePage */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var customSearch: js.UndefOr[
@@ -35,13 +35,13 @@ trait MUIDataTableOptions extends js.Object {
       js.Array[_]
     ]
   ] = js.undefined
-  var customToolbar: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var customToolbar: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   var customToolbarSelect: js.UndefOr[
     js.Function3[
       /* selectedRows */ muiDashDatatablesLib.Anon_Data, 
       /* displayData */ js.Array[muiDashDatatablesLib.Anon_DataDataIndex], 
       /* setSelectedRows */ js.Function1[/* rows */ js.Array[scala.Double], scala.Unit], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var download: js.UndefOr[scala.Boolean] = js.undefined
@@ -89,7 +89,7 @@ trait MUIDataTableOptions extends js.Object {
     js.Function2[
       /* rowData */ js.Array[java.lang.String], 
       /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var resizableColumns: js.UndefOr[scala.Boolean] = js.undefined
@@ -116,11 +116,11 @@ object MUIDataTableOptions {
     IsRowSelectable: /* dataIndex */ scala.Double => scala.Boolean = null,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     count: scala.Int | scala.Double = null,
-    customFooter: (/* rowCount */ scala.Double, /* page */ scala.Double, /* rowsPerPage */ scala.Double, /* changeRowsPerPage */ js.Function0[_], /* changePage */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
+    customFooter: (/* rowCount */ scala.Double, /* page */ scala.Double, /* rowsPerPage */ scala.Double, /* changeRowsPerPage */ js.Function0[_], /* changePage */ scala.Double) => reactLib.reactMod.ReactNode = null,
     customSearch: (/* searchQuery */ java.lang.String, /* currentRow */ js.Array[_], /* columns */ js.Array[_]) => scala.Boolean = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ scala.Double, /* order */ java.lang.String) => js.Array[_] = null,
-    customToolbar: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    customToolbarSelect: (/* selectedRows */ muiDashDatatablesLib.Anon_Data, /* displayData */ js.Array[muiDashDatatablesLib.Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[scala.Double], scala.Unit]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    customToolbar: () => reactLib.reactMod.ReactNode = null,
+    customToolbarSelect: (/* selectedRows */ muiDashDatatablesLib.Anon_Data, /* displayData */ js.Array[muiDashDatatablesLib.Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[scala.Double], scala.Unit]) => reactLib.reactMod.ReactNode = null,
     download: js.UndefOr[scala.Boolean] = js.undefined,
     downloadOptions: muiDashDatatablesLib.Anon_Filename = null,
     elevation: scala.Int | scala.Double = null,
@@ -142,7 +142,7 @@ object MUIDataTableOptions {
     page: scala.Int | scala.Double = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
     print: js.UndefOr[scala.Boolean] = js.undefined,
-    renderExpandableRow: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderExpandableRow: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex) => reactLib.reactMod.ReactNode = null,
     resizableColumns: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: muiDashDatatablesLib.muiDashDatatablesLibStrings.stacked | muiDashDatatablesLib.muiDashDatatablesLibStrings.scroll = null,
     rowHover: js.UndefOr[scala.Boolean] = js.undefined,

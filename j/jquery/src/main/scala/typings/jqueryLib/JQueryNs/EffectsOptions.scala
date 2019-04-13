@@ -92,6 +92,7 @@ trait EffectsOptions[TElement]
 object EffectsOptions {
   @scala.inline
   def apply[TElement](
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     always: js.ThisFunction2[
       /* this */ TElement, 
       /* animation */ Animation[TElement], 
@@ -126,6 +127,7 @@ object EffectsOptions {
     step: js.ThisFunction2[/* this */ TElement, /* now */ scala.Double, /* tween */ Tween[TElement], scala.Unit] = null
   ): EffectsOptions[TElement] = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (always != null) __obj.updateDynamic("always")(always)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (done != null) __obj.updateDynamic("done")(done)

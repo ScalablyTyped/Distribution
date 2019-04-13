@@ -21,3 +21,8 @@ class RestoreJob ()
   override var VaultProperties: mfilesLib.IVaultProperties = js.native
 }
 
+@JSGlobal("MFiles.RestoreJob")
+@js.native
+object RestoreJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IRestoreJob]
+

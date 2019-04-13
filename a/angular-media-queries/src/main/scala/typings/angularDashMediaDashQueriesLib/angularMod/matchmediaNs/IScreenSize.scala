@@ -15,7 +15,7 @@ trait IScreenSize extends js.Object {
   def on(
     list: java.lang.String,
     callback: js.Function1[/* result */ scala.Boolean, scala.Unit],
-    scope: angularLib.angularMod.angularNs.IScope
+    scope: angularLib.angularMod.IScope
   ): scala.Boolean = js.native
   // Executes the callback function on window resize with the match truthiness as the first argument.
   // Returns the current match truthiness.
@@ -24,10 +24,10 @@ trait IScreenSize extends js.Object {
   def on(
     list: js.Array[java.lang.String],
     callback: js.Function1[/* result */ scala.Boolean, scala.Unit],
-    scope: angularLib.angularMod.angularNs.IScope
+    scope: angularLib.angularMod.IScope
   ): scala.Boolean = js.native
   def onChange(
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     list: java.lang.String,
     callback: js.Function1[/* result */ scala.Boolean, scala.Unit]
   ): scala.Boolean = js.native
@@ -35,7 +35,7 @@ trait IScreenSize extends js.Object {
   // Returns the current match truthiness.
   // The 'scope' parameter is required for cleanup reasons (destroy event).
   def onChange(
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     list: js.Array[java.lang.String],
     callback: js.Function1[/* result */ scala.Boolean, scala.Unit]
   ): scala.Boolean = js.native
@@ -43,7 +43,7 @@ trait IScreenSize extends js.Object {
   def when(
     list: java.lang.String,
     callback: js.Function1[/* result */ scala.Boolean, scala.Unit],
-    scope: angularLib.angularMod.angularNs.IScope
+    scope: angularLib.angularMod.IScope
   ): scala.Boolean = js.native
   // Executes the callback only when inside of the particular screensize.
   // The 'scope' parameter is optional. If it's not passed in, '$rootScope' is used.
@@ -51,7 +51,7 @@ trait IScreenSize extends js.Object {
   def when(
     list: js.Array[java.lang.String],
     callback: js.Function1[/* result */ scala.Boolean, scala.Unit],
-    scope: angularLib.angularMod.angularNs.IScope
+    scope: angularLib.angularMod.IScope
   ): scala.Boolean = js.native
 }
 

@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("react-weui", "FlexItem")
 @js.native
 object FlexItemNs extends js.Object {
-  val defaultProps: reactDashWeuiLib.Anon_Component = js.native
+  @js.native
+  object defaultProps extends js.Object {
+    var component: java.lang.String = js.native
+  }
+  
   @JSName("propTypes")
   @js.native
   object propTypesNs extends js.Object {

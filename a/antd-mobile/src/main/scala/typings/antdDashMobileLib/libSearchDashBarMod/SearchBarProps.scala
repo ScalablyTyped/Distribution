@@ -9,7 +9,7 @@ trait SearchBarProps
   extends antdDashMobileLib.libSearchDashBarPropsTypeMod.SearchBarPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SearchBarProps {
@@ -31,7 +31,7 @@ object SearchBarProps {
     placeholder: java.lang.String = null,
     prefixCls: java.lang.String = null,
     showCancelButton: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: java.lang.String = null
   ): SearchBarProps = {
     val __obj = js.Dynamic.literal()

@@ -12,15 +12,15 @@ object DialogActionProps {
   @scala.inline
   def apply(
     accent: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     flat: js.UndefOr[scala.Boolean] = js.undefined,
     floating: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     inverse: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     label: java.lang.String = null,
     mini: js.UndefOr[scala.Boolean] = js.undefined,
     neutral: js.UndefOr[scala.Boolean] = js.undefined,
@@ -51,7 +51,7 @@ object DialogActionProps {
     raised: js.UndefOr[scala.Boolean] = js.undefined,
     ripple: js.UndefOr[scala.Boolean] = js.undefined,
     spread: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     target: java.lang.String = null,
     theme: reactDashToolboxLib.libButtonBaseMod.ButtonTheme = null,
     `type`: java.lang.String = null

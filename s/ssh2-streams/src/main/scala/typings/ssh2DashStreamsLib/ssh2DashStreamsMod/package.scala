@@ -18,4 +18,5 @@ package object ssh2DashStreamsMod {
     - nodeLib.Buffer
   */
   type GlobalRequest = _GlobalRequest | nodeLib.Buffer
+  type HostKeys = org.scalablytyped.runtime.StringDictionary[HostKey]
 }

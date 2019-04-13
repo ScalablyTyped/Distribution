@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object WebIdentityCredentialsNs {
   type ClientConfiguration = awsDashSdkLib.libConfigMod.ConfigurationOptions
-  type WebIdentityCredentialsOptions = awsDashSdkLib.clientsStsMod.STSNs.AssumeRoleWithWebIdentityRequest
+  type WebIdentityCredentialsOptions = awsDashSdkLib.clientsStsMod.AssumeRoleWithWebIdentityRequest
 }

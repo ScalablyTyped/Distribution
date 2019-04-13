@@ -22,36 +22,6 @@ trait Anon_A1
       bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Object]
     ] {
   /**
-    * A collection of errors. `AggregateError` is an array-like object, with numeric indices and a `.length` property.
-    *  It supports all generic array methods such as `.forEach` directly.
-    *
-    * `AggregateError`s are caught in `.error` handlers, even if the contained errors are not operational.
-    *
-    * `Promise.some` and `Promise.any` use `AggregateError` as rejection reason when they fail.
-    */
-  var AggregateError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.AggregateError] = js.native
-  /**
-    * Signals that an operation has been aborted or cancelled. The default reason used by `.cancel`.
-    */
-  var CancellationError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CancellationError] = js.native
-  /**
-    * returned by `Bluebird.disposer()`.
-    */
-  var Disposer: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[js.Object]] = js.native
-  /**
-    * Represents an error is an explicit promise rejection as opposed to a thrown error.
-    *  For example, if an error is errbacked by a callback API promisified through undefined or undefined
-    *  and is not a typed error, it will be converted to a `OperationalError` which has the original error in
-    *  the `.cause` property.
-    *
-    * `OperationalError`s are caught in `.error` handlers.
-    */
-  var OperationalError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.OperationalError] = js.native
-  /**
-    * Signals that an operation has timed out. Used as a custom cancellation reason in `.timeout`.
-    */
-  var TimeoutError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.TimeoutError] = js.native
-  /**
     * The version number of the library
     */
   var version: java.lang.String = js.native
@@ -109,17 +79,17 @@ trait Anon_A1
   def coroutine[T](generatorFunction: js.Function0[stdLib.IterableIterator[_]]): js.Function0[bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def coroutine[T](
     generatorFunction: js.Function0[stdLib.IterableIterator[_]],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function0[bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, stdLib.IterableIterator[_]]): js.Function1[/* a1 */ A1, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def coroutine[T, A1](
     generatorFunction: js.Function1[/* a1 */ A1, stdLib.IterableIterator[_]],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function1[/* a1 */ A1, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, stdLib.IterableIterator[_]]): js.Function2[/* a1 */ A1, /* a2 */ A2, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2](
     generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, stdLib.IterableIterator[_]],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function2[/* a1 */ A1, /* a2 */ A2, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, stdLib.IterableIterator[_]]): js.Function3[
     /* a1 */ A1, 
@@ -129,7 +99,7 @@ trait Anon_A1
   ] = js.native
   def coroutine[T, A1, A2, A3](
     generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, stdLib.IterableIterator[_]],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function3[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -147,7 +117,7 @@ trait Anon_A1
   ] = js.native
   def coroutine[T, A1, A2, A3, A4](
     generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, stdLib.IterableIterator[_]],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function4[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -181,7 +151,7 @@ trait Anon_A1
       /* a5 */ A5, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function5[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -219,7 +189,7 @@ trait Anon_A1
       /* a6 */ A6, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function6[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -261,7 +231,7 @@ trait Anon_A1
       /* a7 */ A7, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function7[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -307,7 +277,7 @@ trait Anon_A1
       /* a8 */ A8, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CoroutineOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.CoroutineOptions
   ): js.Function8[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -322,7 +292,7 @@ trait Anon_A1
   /**
     * Create a promise with undecided fate and return a `PromiseResolver` to control it. See resolution?: Promise(#promise-resolution).
     */
-  def defer[R](): bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Resolver[R] = js.native
+  def defer[R](): bluebirdDashLstLib.bluebirdDashLstMod.Resolver[R] = js.native
   def delay(ms: scala.Double): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[scala.Unit] = js.native
   /**
     * Returns a promise that will be resolved with value (or undefined) after given ms milliseconds.
@@ -371,7 +341,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       scala.Boolean | js.Thenable[scala.Boolean]
     ],
-    option: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
+    option: bluebirdDashLstLib.bluebirdDashLstMod.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
     * Filter an array, or a promise of an array, which contains a promises (or a mix of promises and values) with the given `filterer` function with the signature `(item, index, arrayLength)` where `item` is the resolved value of a respective promise in the input array. If any promise in the input array is rejected the returned promise is rejected as well.
@@ -397,7 +367,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       scala.Boolean | js.Thenable[scala.Boolean]
     ],
-    option: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
+    option: bluebirdDashLstLib.bluebirdDashLstMod.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   def fromCallback(
     resolver: js.Function1[
@@ -410,7 +380,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.FromNodeOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.FromNodeOptions
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[_] = js.native
   @JSName("fromCallback")
   def fromCallback_T[T](
@@ -425,7 +395,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.FromNodeOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.FromNodeOptions
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
   /**
     * Returns a promise that is resolved by a node style callback function.
@@ -441,7 +411,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.FromNodeOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.FromNodeOptions
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[_] = js.native
   @JSName("fromNode")
   def fromNode_T[T](
@@ -456,14 +426,8 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.FromNodeOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.FromNodeOptions
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
-  /**
-    * Returns a new independent copy of the Bluebird library.
-    *
-    * This method should be used before you use any of the methods which would otherwise alter the global Bluebird object - to avoid polluting global state.
-    */
-  def getNewLibraryCopy(): /* import warning: ImportType.apply Failed type conversion: typeof Bluebird */ js.Any = js.native
   /**
     * See if `value` is a trusted Promise.
     */
@@ -694,7 +658,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       U | js.Thenable[U]
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
+    options: bluebirdDashLstLib.bluebirdDashLstMod.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   /**
     * Map an array, or a promise of an array, which contains a promises (or a mix of promises and values) with the given `mapper` function with the signature `(item, index, arrayLength)` where `item` is the resolved value of a respective promise in the input array. If any promise in the input array is rejected the returned promise is rejected as well.
@@ -720,7 +684,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       U | js.Thenable[U]
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
+    options: bluebirdDashLstLib.bluebirdDashLstMod.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   def map[R, U](
     values: stdLib.Iterable[js.Thenable[R] | R],
@@ -739,7 +703,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       U | js.Thenable[U]
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
+    options: bluebirdDashLstLib.bluebirdDashLstMod.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   def mapSeries[R, U](
     values: js.Array[js.Thenable[R] | R],
@@ -814,12 +778,6 @@ trait Anon_A1
   @JSName("method")
   def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): js.Function1[/* arg1 */ A1, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]] = js.native
   /**
-    * This is relevant to browser environments with no module loader.
-    *
-    * Release control of the Promise namespace to whatever it was before this library was loaded. Returns a reference to the library namespace so you can attach it to something else.
-    */
-  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Bluebird */ js.Any = js.native
-  /**
     * Add handler as the handler to call when there is a possibly unhandled rejection.
     * The default handler logs the error stack to stderr or console.error in browsers.
     *
@@ -844,7 +802,7 @@ trait Anon_A1
   def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function1[/* repeated */ js.Any, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[_]] = js.native
   def promisify(
     nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyOptions
   ): js.Function1[/* repeated */ js.Any, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[_]] = js.native
   def promisify[T, A1](
     func: js.Function2[
@@ -859,7 +817,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyOptions
   ): js.Function1[/* arg1 */ A1, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2](
     func: js.Function3[
@@ -876,7 +834,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyOptions
   ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2, A3](
     func: js.Function4[
@@ -900,7 +858,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyOptions
   ): js.Function3[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -932,7 +890,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyOptions
   ): js.Function4[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -968,7 +926,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyOptions
   ): js.Function5[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -984,7 +942,7 @@ trait Anon_A1
     */
   // TODO how to model promisifyAll?
   def promisifyAll(target: js.Object): js.Object = js.native
-  def promisifyAll(target: js.Object, options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyAllOptions): js.Object = js.native
+  def promisifyAll(target: js.Object, options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyAllOptions): js.Object = js.native
   /**
     * Returns a function that will wrap the given `nodeFunction`. Instead of taking a callback, the returned function will return a promise whose fate is decided by the callback behavior of the given node function. The node function should conform to node.js convention of accepting a callback as last argument and calling that callback with error as the first argument and success value on the second argument.
     *
@@ -1005,13 +963,13 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.PromisifyOptions
+    options: bluebirdDashLstLib.bluebirdDashLstMod.PromisifyOptions
   ): js.Function0[bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T]] = js.native
    // tslint:disable-line:unified-signatures
   // object
-  def props[T](`object`: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ResolvableProps[T]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
+  def props[T](`object`: bluebirdDashLstLib.bluebirdDashLstMod.ResolvableProps[T]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
   // trusted promise for object
-  def props[T](`object`: js.Thenable[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ResolvableProps[T]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
+  def props[T](`object`: js.Thenable[bluebirdDashLstLib.bluebirdDashLstMod.ResolvableProps[T]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
    // tslint:disable-line:unified-signatures
   // map
   def props[K, V](map: stdLib.Map[K, js.Thenable[V] | V]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[stdLib.Map[K, V]] = js.native
@@ -1093,15 +1051,6 @@ trait Anon_A1
   def resolve(): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[scala.Unit] = js.native
   def resolve[R](value: R): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def resolve[R](value: js.Thenable[R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
-  /**
-    * Changes how bluebird schedules calls a-synchronously.
-    *
-    * @param scheduler Should be a function that asynchronously schedules
-    *                  the calling of the passed in function
-    */
-  def setScheduler(
-    scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit]
-  ): scala.Unit = js.native
   def some[R](values: js.Array[js.Thenable[R] | R], count: scala.Double): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
     * Initiate a competetive race between multiple promises or values (values will become immediately fulfilled promises). When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of the winners in order of resolution.
@@ -1125,18 +1074,18 @@ trait Anon_A1
     *  necessary because there is no standard interface in node for disposing resources.
     */
   def using[R, T](
-    disposer: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R],
+    disposer: bluebirdDashLstLib.bluebirdDashLstMod.Disposer[R],
     executor: js.Function1[/* transaction */ R, js.Thenable[T]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
   def using[R1, R2, T](
-    disposer: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R1],
-    disposer2: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R2],
+    disposer: bluebirdDashLstLib.bluebirdDashLstMod.Disposer[R1],
+    disposer2: bluebirdDashLstLib.bluebirdDashLstMod.Disposer[R2],
     executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
   def using[R1, R2, R3, T](
-    disposer: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R1],
-    disposer2: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R2],
-    disposer3: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R3],
+    disposer: bluebirdDashLstLib.bluebirdDashLstMod.Disposer[R1],
+    disposer2: bluebirdDashLstLib.bluebirdDashLstMod.Disposer[R2],
+    disposer3: bluebirdDashLstLib.bluebirdDashLstMod.Disposer[R3],
     executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
 }

@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageProps extends js.Object {
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var height: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp
   var href: java.lang.String
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
@@ -23,7 +21,7 @@ object ImageProps {
     height: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp,
     href: java.lang.String,
     width: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp,
-    children: js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     preserveAspectRatio: java.lang.String = null,
     x: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp = null,
     y: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp = null

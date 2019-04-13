@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_OnRefAny[T, P] extends js.Object {
   var onRef: js.UndefOr[
-    reactLib.reactMod.ReactNs.Ref[
+    reactLib.reactMod.Ref[
       reactLib.reactMod.Component[
         T with reactDashNavigationLib.reactDashNavigationMod.NavigationInjectedProps[P], 
         js.Object, 
@@ -20,7 +20,7 @@ trait Anon_OnRefAny[T, P] extends js.Object {
 object Anon_OnRefAny {
   @scala.inline
   def apply[T, P](
-    onRef: reactLib.reactMod.ReactNs.Ref[
+    onRef: reactLib.reactMod.Ref[
       reactLib.reactMod.Component[
         T with reactDashNavigationLib.reactDashNavigationMod.NavigationInjectedProps[P], 
         js.Object, 

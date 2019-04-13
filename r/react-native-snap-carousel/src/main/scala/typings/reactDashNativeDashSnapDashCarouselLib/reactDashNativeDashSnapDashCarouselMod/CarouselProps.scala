@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CarouselProps[T]
-  extends reactLib.reactMod.ReactNs.Props[reactDashNativeLib.reactDashNativeMod.ScrollViewProps] {
+  extends reactLib.reactMod.Props[reactDashNativeLib.reactDashNativeMod.ScrollViewProps] {
   // Style and animation
   /**
     * Custom animation options.
@@ -252,7 +252,7 @@ trait CarouselProps[T]
     * Function that takes an item from the `data` array and returns a React
     * Element. See `react-native`'s `FlatList`
     */
-  def renderItem(item: reactDashNativeDashSnapDashCarouselLib.Anon_Index[T]): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def renderItem(item: reactDashNativeDashSnapDashCarouselLib.Anon_Index[T], parallaxProps: AdditionalParallaxProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def renderItem(item: reactDashNativeDashSnapDashCarouselLib.Anon_Index[T]): reactLib.reactMod.ReactNode = js.native
+  def renderItem(item: reactDashNativeDashSnapDashCarouselLib.Anon_Index[T], parallaxProps: AdditionalParallaxProps): reactLib.reactMod.ReactNode = js.native
 }
 

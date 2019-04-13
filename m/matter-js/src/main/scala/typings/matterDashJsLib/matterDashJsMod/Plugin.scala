@@ -7,14 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Plugin")
 @js.native
-class Plugin ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Plugin {
-  /* CompleteClass */
-  override var name: java.lang.String = js.native
-  /* CompleteClass */
-  override var version: java.lang.String = js.native
-  /* CompleteClass */
-  override def install(): scala.Unit = js.native
+class Plugin () extends js.Object {
+  var `for`: js.UndefOr[java.lang.String] = js.native
+  var name: java.lang.String = js.native
+  var version: java.lang.String = js.native
+  def install(): scala.Unit = js.native
 }
 
 /* static members */
@@ -27,11 +24,11 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {object} A dependency graph.
     */
-  def dependencies(module: matterDashJsLib.matterDashJsMod.MatterNs.Dependency): js.UndefOr[
+  def dependencies(module: matterDashJsLib.matterDashJsMod.Dependency): js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | java.lang.String
   ] = js.native
   def dependencies(
-    module: matterDashJsLib.matterDashJsMod.MatterNs.Dependency,
+    module: matterDashJsLib.matterDashJsMod.Dependency,
     tracked: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   ): js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | java.lang.String
@@ -45,7 +42,7 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency of the format `'module-name'` or `'module-name@version'`.
     * @return {object} The dependency parsed into its components.
     */
-  def dependencyParse(dependency: matterDashJsLib.matterDashJsMod.MatterNs.Dependency): matterDashJsLib.Anon_Name = js.native
+  def dependencyParse(dependency: matterDashJsLib.matterDashJsMod.Dependency): matterDashJsLib.Anon_Name = js.native
   /**
     * Returns `true` if `plugin.for` is applicable to `module` by comparing against `module.name` and `module.version`.
     * If `plugin.for` is not specified then it is assumed to be applicable.
@@ -55,7 +52,7 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
-  def isFor(plugin: matterDashJsLib.matterDashJsMod.MatterNs.Plugin, module: matterDashJsLib.Anon_): scala.Boolean = js.native
+  def isFor(plugin: matterDashJsLib.matterDashJsMod.Plugin, module: matterDashJsLib.Anon_): scala.Boolean = js.native
   /**
     * Returns `true` if the object meets the minimum standard to be considered a plugin.
     * This means it must define the following properties:
@@ -73,7 +70,7 @@ object Plugin extends js.Object {
     * @param plugin {} The plugin to register.
     * @return {object} The plugin.
     */
-  def register(plugin: matterDashJsLib.matterDashJsMod.MatterNs.Plugin): matterDashJsLib.matterDashJsMod.MatterNs.Plugin = js.native
+  def register(plugin: matterDashJsLib.matterDashJsMod.Plugin): matterDashJsLib.matterDashJsMod.Plugin = js.native
   /**
     * Resolves a dependency to a plugin object from the registry if it exists. 
     * The `dependency` may contain a version, but only the name matters when resolving.
@@ -81,7 +78,7 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency.
     * @return {object} The plugin if resolved, otherwise `undefined`.
     */
-  def resolve(dependency: java.lang.String): js.UndefOr[matterDashJsLib.matterDashJsMod.MatterNs.Plugin] = js.native
+  def resolve(dependency: java.lang.String): js.UndefOr[matterDashJsLib.matterDashJsMod.Plugin] = js.native
   /**
     * Returns a pretty printed plugin name and version.
     * @method toString
@@ -89,7 +86,7 @@ object Plugin extends js.Object {
     * @return {string} Pretty printed plugin name and version.
     */
   def toString(plugin: java.lang.String): java.lang.String = js.native
-  def toString(plugin: matterDashJsLib.matterDashJsMod.MatterNs.Plugin): java.lang.String = js.native
+  def toString(plugin: matterDashJsLib.matterDashJsMod.Plugin): java.lang.String = js.native
   /**
     * Installs the plugins by calling `plugin.install` on each plugin specified in `plugins` if passed, otherwise `module.uses`.
     * For installing plugins on `Matter` see the convenience function `Matter.use`.
@@ -108,7 +105,7 @@ object Plugin extends js.Object {
     */
   def use(
     module: matterDashJsLib.Anon_Uses,
-    plugins: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Plugin | java.lang.String]
+    plugins: js.Array[matterDashJsLib.matterDashJsMod.Plugin | java.lang.String]
   ): scala.Unit = js.native
   /**
     * Parses a version string into its components.

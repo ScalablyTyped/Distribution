@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 package object libDateDashPickerInterfaceMod {
   type DatePickerMode = /* import warning: ImportType.apply Failed type conversion: ['time', 'date', 'month', 'year'][number] */ js.Any
   type RangePickerPresetRange = RangePickerValue | js.Function0[RangePickerValue]
-  type RangePickerValue = js.Array[js.UndefOr[scala.Nothing]] | js.Array[momentLib.momentMod.momentNs.Moment] | (js.Tuple2[js.UndefOr[scala.Nothing], momentLib.momentMod.momentNs.Moment]) | (js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment])
+  type RangePickerValue = js.Array[js.UndefOr[scala.Nothing]] | js.Array[momentLib.momentMod.Moment] | (js.Tuple2[js.UndefOr[scala.Nothing], momentLib.momentMod.Moment]) | (js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment])
 }

@@ -64,6 +64,5 @@ object defaultNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel with scala.Double] = js.native
   }
   
-  type LogLevel = mermaidLib.mermaidAPIMod.mermaidAPINs.LogLevel
 }
 

@@ -48,23 +48,17 @@ trait WebPageTest extends js.Object {
   ): scala.Unit = js.native
   def getTestInfo(id: java.lang.String, callback: webpagetestLib.Callback[_]): scala.Unit = js.native
   def getTestInfo(id: java.lang.String, options: Options, callback: webpagetestLib.Callback[_]): scala.Unit = js.native
-  def getTestResults(
-    id: java.lang.String,
-    callback: webpagetestLib.Callback[Response[webpagetestLib.webpagetestMod.WebPageTestNs.TestResult]]
-  ): scala.Unit = js.native
+  def getTestResults(id: java.lang.String, callback: webpagetestLib.Callback[Response[TestResult]]): scala.Unit = js.native
   def getTestResults(
     id: java.lang.String,
     options: Options with RequestOptions with ResultsOptions,
-    callback: webpagetestLib.Callback[Response[webpagetestLib.webpagetestMod.WebPageTestNs.TestResult]]
+    callback: webpagetestLib.Callback[Response[TestResult]]
   ): scala.Unit = js.native
-  def getTestStatus(
-    id: java.lang.String,
-    callback: webpagetestLib.Callback[Response[webpagetestLib.webpagetestMod.WebPageTestNs.TestStatus]]
-  ): scala.Unit = js.native
+  def getTestStatus(id: java.lang.String, callback: webpagetestLib.Callback[Response[TestStatus]]): scala.Unit = js.native
   def getTestStatus(
     id: java.lang.String,
     options: Options with RequestOptions,
-    callback: webpagetestLib.Callback[Response[webpagetestLib.webpagetestMod.WebPageTestNs.TestStatus]]
+    callback: webpagetestLib.Callback[Response[TestStatus]]
   ): scala.Unit = js.native
   def getTesters(callback: webpagetestLib.Callback[_]): scala.Unit = js.native
   def getTesters(options: Options with RequestOptions, callback: webpagetestLib.Callback[_]): scala.Unit = js.native

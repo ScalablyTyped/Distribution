@@ -11,11 +11,11 @@ object graspLibStrings {
   
   @js.native
   sealed trait equery
-    extends graspLib.graspMod.graspNs.QueryEngineType
+    extends graspLib.graspMod.QueryEngineType
   
   @js.native
   sealed trait squery
-    extends graspLib.graspMod.graspNs.QueryEngineType
+    extends graspLib.graspMod.QueryEngineType
   
   @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]

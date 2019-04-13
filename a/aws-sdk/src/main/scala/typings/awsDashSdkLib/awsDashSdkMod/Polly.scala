@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Polly ()
   extends awsDashSdkLib.clientsAllMod.Polly {
-  def this(options: awsDashSdkLib.clientsPollyMod.PollyNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsPollyMod.ClientConfiguration) = this()
 }
 

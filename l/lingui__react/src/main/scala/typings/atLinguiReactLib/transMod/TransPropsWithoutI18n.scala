@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait TransPropsWithoutI18n
   extends atLinguiReactLib.renderMod.RenderProps {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var components: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var components: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
   var defaults: js.UndefOr[java.lang.String] = js.undefined
   var formats: js.UndefOr[js.Object] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -18,13 +18,13 @@ trait TransPropsWithoutI18n
 object TransPropsWithoutI18n {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    components: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    components: js.Array[reactLib.reactMod.ReactElement[_]] = null,
     defaults: java.lang.String = null,
     formats: js.Object = null,
     id: java.lang.String = null,
-    render: reactLib.reactMod.ReactNs.ReactNode = null,
+    render: reactLib.reactMod.ReactNode = null,
     values: js.Object = null
   ): TransPropsWithoutI18n = {
     val __obj = js.Dynamic.literal()

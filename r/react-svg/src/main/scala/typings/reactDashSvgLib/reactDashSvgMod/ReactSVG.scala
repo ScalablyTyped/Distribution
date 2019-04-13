@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReactSVG
   extends reactLib.reactMod.Component[
-      Props with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.HTMLAttributes[reactDashSvgLib.WrapperType], 
+      Props with (reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.HTMLAttributes[reactDashSvgLib.WrapperType], 
         reactDashSvgLib.WrapperType
       ]), 
       State, 

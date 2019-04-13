@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ElasticBeanstalk ()
-  extends awsDashSdkLib.clientsElasticbeanstalkMod.namespaced {
-  def this(options: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsElasticbeanstalkMod.^ {
+  def this(options: awsDashSdkLib.clientsElasticbeanstalkMod.ClientConfiguration) = this()
 }
 

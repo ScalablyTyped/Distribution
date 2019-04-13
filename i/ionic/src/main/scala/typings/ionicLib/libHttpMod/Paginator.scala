@@ -13,8 +13,8 @@ class Paginator[T /* <: ionicLib.definitionsMod.Response[js.Array[js.Object]] */
   var client: ionicLib.definitionsMod.IClient = js.native
   @JSName("guard")
   var guard_Original: ionicLib.definitionsMod.PaginatorGuard[T] = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  var iterator_Paginator: js.Function0[Paginator[T]] = js.native
+  @JSName(scala.scalajs.js.Symbol.iterator)
+  var iterator_Paginator: js.Function0[this.type] = js.native
   var max: js.UndefOr[scala.Double] = js.native
   @JSName("reqgen")
   var reqgen_Original: ionicLib.definitionsMod.PaginatorRequestGenerator = js.native

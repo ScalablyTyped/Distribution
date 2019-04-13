@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Reader extends ForEach {
   var node: nodeLib.NodeJSNs.ReadableStream = js.native
   def close(): scala.Unit = js.native
-  def read(): qLib.qMod.QNs.Promise[nodeLib.Buffer] = js.native
-  def read(charset: java.lang.String): qLib.qMod.QNs.Promise[java.lang.String] = js.native
+  def read(): qLib.qMod.Promise[nodeLib.Buffer] = js.native
+  def read(charset: java.lang.String): qLib.qMod.Promise[java.lang.String] = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WrapperProps[T /* <: stdLib.HTMLElement */]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLAttributes[T] {
   /**
   	 * By default, it does automatically close.
   	 * If false, the menu will not automatically close when it
@@ -33,7 +33,7 @@ trait WrapperProps[T /* <: stdLib.HTMLElement */]
   var onSelection: js.UndefOr[
     js.Function2[
       /* value */ js.Any, 
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[T, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event], 
       _
     ]
   ] = js.undefined
@@ -45,12 +45,12 @@ trait WrapperProps[T /* <: stdLib.HTMLElement */]
 object WrapperProps {
   @scala.inline
   def apply[T /* <: stdLib.HTMLElement */](
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[T] = null,
     closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     onMenuToggle: /* obj */ WrapperState => _ = null,
-    onSelection: (/* value */ js.Any, /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[T, reactLib.Event]) => _ = null,
+    onSelection: (/* value */ js.Any, /* event */ reactLib.reactMod.SyntheticEvent[T, reactLib.Event]) => _ = null,
     tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
   ): WrapperProps[T] = {
     val __obj = js.Dynamic.literal()

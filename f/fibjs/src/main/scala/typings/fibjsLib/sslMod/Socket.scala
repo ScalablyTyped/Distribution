@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ssl", "Socket")
 @js.native
 class Socket ()
-  extends fibjsLib.sslMod.sslNs.Socket
+  extends fibjsLib.Class_SslSocket
 

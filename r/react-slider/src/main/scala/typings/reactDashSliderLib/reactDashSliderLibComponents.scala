@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashSliderLibComponents {
   @scala.inline
-  def ReactDashSlider: reactLib.reactMod.ReactNs.ComponentType[reactDashSliderLib.reactDashSliderMod.ReactSliderNs.ReactSliderProps] = js.constructorOf[reactDashSliderLib.reactDashSliderMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSliderLib.reactDashSliderMod.ReactSliderNs.ReactSliderProps]]
+  def ReactDashSlider: reactLib.reactMod.ComponentType[reactDashSliderLib.reactDashSliderMod.ReactSliderProps] = js.constructorOf[reactDashSliderLib.reactDashSliderMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSliderLib.reactDashSliderMod.ReactSliderProps]]
   @scala.inline
-  def ReactSliderProps: reactDashSliderLib.reactDashSliderMod.ReactSliderNs.ReactSliderProps.type = reactDashSliderLib.reactDashSliderMod.ReactSliderNs.ReactSliderProps
-  type ReactSliderProps = reactDashSliderLib.reactDashSliderMod.ReactSliderNs.ReactSliderProps
+  def ReactSliderProps: reactDashSliderLib.reactDashSliderMod.ReactSliderProps.type = reactDashSliderLib.reactDashSliderMod.ReactSliderProps
+  type ReactSliderProps = reactDashSliderLib.reactDashSliderMod.ReactSliderProps
 }
 

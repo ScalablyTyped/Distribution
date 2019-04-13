@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 object signalDashExitLibStrings {
   @js.native
   sealed trait SIGABRT
-    extends signalDashExitLib.signalDashExitMod.signalExitNs._Signal
+    extends signalDashExitLib.signalDashExitMod._Signal
   
   @js.native
   sealed trait SIGALRM
-    extends signalDashExitLib.signalDashExitMod.signalExitNs._Signal
+    extends signalDashExitLib.signalDashExitMod._Signal
   
   @js.native
   sealed trait SIGHUP
-    extends signalDashExitLib.signalDashExitMod.signalExitNs._Signal
+    extends signalDashExitLib.signalDashExitMod._Signal
   
   @js.native
   sealed trait SIGINT
-    extends signalDashExitLib.signalDashExitMod.signalExitNs._Signal
+    extends signalDashExitLib.signalDashExitMod._Signal
   
   @js.native
   sealed trait SIGTERM
-    extends signalDashExitLib.signalDashExitMod.signalExitNs._Signal
+    extends signalDashExitLib.signalDashExitMod._Signal
   
   @scala.inline
   def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]

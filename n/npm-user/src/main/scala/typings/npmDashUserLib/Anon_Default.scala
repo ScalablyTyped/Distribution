@@ -25,6 +25,6 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply(name: java.lang.String): js.Promise[npmDashUserLib.npmDashUserMod.npmUserNs.UserInfo] = js.native
+  def apply(name: java.lang.String): js.Promise[npmDashUserLib.npmDashUserMod.UserInfo] = js.native
 }
 

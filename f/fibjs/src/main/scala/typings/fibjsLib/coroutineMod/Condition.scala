@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("coroutine", "Condition")
 @js.native
 class Condition ()
-  extends fibjsLib.coroutineMod.coroutineNs.Condition
+  extends fibjsLib.Class_Condition
 

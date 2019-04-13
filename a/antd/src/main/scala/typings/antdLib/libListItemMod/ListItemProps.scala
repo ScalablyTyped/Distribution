@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListItemProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
-  var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
+  var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var grid: js.UndefOr[antdLib.libListMod.ListGridType] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -16,14 +16,14 @@ trait ListItemProps
 object ListItemProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
-    actions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    actions: js.Array[reactLib.reactMod.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     grid: antdLib.libListMod.ListGridType = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): ListItemProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

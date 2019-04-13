@@ -9,7 +9,7 @@ trait OverridableProps extends js.Object {
   /**
     * A React component or function to be used instead the default Beacon.
     */
-  var beaconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var beaconComponent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Disable closing the tooltip on ESC. Defaults to false.
     */
@@ -58,13 +58,13 @@ trait OverridableProps extends js.Object {
   /**
     * A React component or function to be used instead the default Tooltip excluding the arrow.
     */
-  var tooltipComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var tooltipComponent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object OverridableProps {
   @scala.inline
   def apply(
-    beaconComponent: reactLib.reactMod.ReactNs.ReactNode = null,
+    beaconComponent: reactLib.reactMod.ReactNode = null,
     disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
     disableOverlay: js.UndefOr[scala.Boolean] = js.undefined,
     disableOverlayClose: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,7 +77,7 @@ object OverridableProps {
     spotlightClicks: js.UndefOr[scala.Boolean] = js.undefined,
     spotlightPadding: scala.Int | scala.Double = null,
     styles: StepStyles = null,
-    tooltipComponent: reactLib.reactMod.ReactNs.ReactNode = null
+    tooltipComponent: reactLib.reactMod.ReactNode = null
   ): OverridableProps = {
     val __obj = js.Dynamic.literal()
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])

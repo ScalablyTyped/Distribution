@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 object nockLibStrings {
   @js.native
   sealed trait dryrun
-    extends nockLib.nockMod.nockNs.NockBackMode
+    extends nockLib.nockMod.NockBackMode
   
   @js.native
   sealed trait lockdown
-    extends nockLib.nockMod.nockNs.NockBackMode
+    extends nockLib.nockMod.NockBackMode
   
   @js.native
   sealed trait record
-    extends nockLib.nockMod.nockNs.NockBackMode
+    extends nockLib.nockMod.NockBackMode
   
   @js.native
   sealed trait wild
-    extends nockLib.nockMod.nockNs.NockBackMode
+    extends nockLib.nockMod.NockBackMode
   
   @scala.inline
   def dryrun: dryrun = "dryrun".asInstanceOf[dryrun]

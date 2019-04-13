@@ -94,7 +94,7 @@ object NumberPickerProps {
   @scala.inline
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     culture: java.lang.String = null,
     defaultValue: scala.Int | scala.Double = null,
     disabled: scala.Boolean | js.Array[_] = null,
@@ -102,7 +102,7 @@ object NumberPickerProps {
     id: java.lang.String = null,
     inputProps: js.Object = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     max: scala.Int | scala.Double = null,
     messages: NumberPickerMessages = null,
     min: scala.Int | scala.Double = null,
@@ -115,7 +115,7 @@ object NumberPickerProps {
     placeholder: java.lang.String = null,
     precision: scala.Int | scala.Double = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[NumberPickerClass] = null,
+    ref: reactLib.reactMod.LegacyRef[NumberPickerClass] = null,
     step: scala.Int | scala.Double = null,
     value: scala.Int | scala.Double = null
   ): NumberPickerProps = {

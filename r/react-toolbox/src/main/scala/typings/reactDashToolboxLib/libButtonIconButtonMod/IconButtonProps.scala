@@ -21,13 +21,13 @@ object IconButtonProps {
   @scala.inline
   def apply(
     accent: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     inverse: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     neutral: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -53,7 +53,7 @@ object IconButtonProps {
     onTouchStart: js.Function = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     ripple: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: IconButtonTheme = null,
     `type`: java.lang.String = null
   ): IconButtonProps = {

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* _ */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
-  var styles: js.UndefOr[antdDashMobileDashRnLib.Anon_ContainerDefaultDisabledRaw] = js.undefined
+  var styles: js.UndefOr[antdDashMobileDashRnLib.Anon_Container] = js.undefined
 }
 
 object ButtonProps {
@@ -23,7 +23,7 @@ object ButtonProps {
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: /* _ */ js.UndefOr[js.Any] => scala.Unit = null,
     size: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.large | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.small = null,
-    styles: antdDashMobileDashRnLib.Anon_ContainerDefaultDisabledRaw = null,
+    styles: antdDashMobileDashRnLib.Anon_Container = null,
     `type`: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.primary | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.warning | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.ghost = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()

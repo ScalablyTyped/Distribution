@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/converter/nodes/class", "ClassConverter")
 @js.native
 class ClassConverter ()
-  extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[typescriptLib.typescriptMod.tsNs.ClassDeclaration]
+  extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[typescriptLib.typescriptMod.ClassDeclaration]
 

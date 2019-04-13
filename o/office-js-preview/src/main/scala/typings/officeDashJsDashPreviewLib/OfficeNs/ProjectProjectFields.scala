@@ -14,20 +14,6 @@ sealed trait ProjectProjectFields extends js.Object
   * @remarks
   * 
   * A ProjectProjectFields constant can be used as a parameter of the {@link Office.Document | Document}.getProjectFieldAsync method.
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this enumeration.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-  *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
-  *  </table>
   */
 @JSGlobal("Office.ProjectProjectFields")
 @js.native

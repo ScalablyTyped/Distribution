@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("json-pointer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(`object`: js.Object): jsonDashPointerLib.jsonDashPointerMod.JSONUnderscorePointerNs.JSON_PointerWrap = js.native
+  def apply(`object`: js.Object): JSON_PointerWrap = js.native
   /**
     *  Builds a json pointer from an array of reference tokens.
     */

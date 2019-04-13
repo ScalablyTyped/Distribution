@@ -40,3 +40,21 @@ class EditSession protected () extends IEditSession {
   override def setOptions(keyValueTuples: js.Any): scala.Unit = js.native
 }
 
+@JSGlobal("AceAjax.EditSession")
+@js.native
+object EditSession
+  extends org.scalablytyped.runtime.Instantiable2[
+      (/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), 
+      (/* mode */ java.lang.String) | (/* mode */ TextMode), 
+      IEditSession
+    ]
+     with /**
+  * Sets up a new `EditSession` and associates it with the given `Document` and `TextMode`.
+  * @param text [If `text` is a `Document`, it associates the `EditSession` with it. Otherwise, a new `Document` is created, with the initial text]{: #textParam}
+  * @param mode [The inital language mode to use for the document]{: #modeParam}
+  **/
+org.scalablytyped.runtime.Instantiable1[
+      (/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), 
+      IEditSession
+    ]
+

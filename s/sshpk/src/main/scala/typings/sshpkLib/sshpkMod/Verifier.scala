@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sshpk", "Verifier")
 @js.native
-class Verifier protected ()
-  extends sshpkLib.sshpkMod.SshPKNs.Verifier {
-  def this(key: sshpkLib.sshpkMod.SshPKNs.Key, hashAlgo: java.lang.String) = this()
+class Verifier protected () extends js.Object {
+  def this(key: Key, hashAlgo: java.lang.String) = this()
+  def update(chunk: java.lang.String): scala.Unit = js.native
+  def update(chunk: nodeLib.Buffer): scala.Unit = js.native
+  def verify(signature: java.lang.String): scala.Boolean = js.native
 }
 

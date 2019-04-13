@@ -17,7 +17,7 @@ class default protected () extends JSONEditor {
 @JSImport("jsoneditor", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Ajv: ajvLib.ajvMod.ajvNs.Ajv = js.native
+  var Ajv: ajvLib.ajvMod.Ajv = js.native
   var VALID_OPTIONS: js.Array[java.lang.String] = js.native
   var VanillaPicker: js.Any = js.native
   var ace: aceLib.AceAjaxNs.Ace = js.native

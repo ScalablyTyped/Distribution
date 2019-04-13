@@ -16,9 +16,9 @@ class BatteryCharging20TwoTone protected ()
 @JSImport("@material-ui/icons", "BatteryCharging20TwoTone")
 @js.native
 class BatteryCharging20TwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

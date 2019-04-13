@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 class Transform[T] ()
   extends json2csvLib.jSON2CSVTransformMod.default[T] {
   def this(opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]) = this()
-  def this(opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T], transformOpts: nodeLib.streamMod.internalNs.TransformOptions) = this()
+  def this(opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T], transformOpts: nodeLib.streamMod.TransformOptions) = this()
 }
 

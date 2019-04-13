@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 /**
   * Provides information about the binding that raised the DataChanged event.
-  * 
-  * @remarks
-  * <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>
   */
 trait BindingDataChangedEventArgs extends js.Object {
   /**

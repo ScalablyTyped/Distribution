@@ -9,147 +9,99 @@ import scala.scalajs.js.annotation._
 trait CodePipeline
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_CodePipeline: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ClientConfiguration = js.native
+  var config_CodePipeline: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Returns information about a specified job and whether that job has been received by the job worker. Only used for custom actions.
     */
-  def acknowledgeJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acknowledgeJob(): awsDashSdkLib.libRequestMod.Request[AcknowledgeJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acknowledgeJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobOutput, 
+      /* data */ AcknowledgeJobOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcknowledgeJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a specified job and whether that job has been received by the job worker. Only used for custom actions.
     */
-  def acknowledgeJob(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acknowledgeJob(params: AcknowledgeJobInput): awsDashSdkLib.libRequestMod.Request[AcknowledgeJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acknowledgeJob(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobInput,
+    params: AcknowledgeJobInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobOutput, 
+      /* data */ AcknowledgeJobOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcknowledgeJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Confirms a job worker has received the specified job. Only used for partner actions.
     */
-  def acknowledgeThirdPartyJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acknowledgeThirdPartyJob(): awsDashSdkLib.libRequestMod.Request[AcknowledgeThirdPartyJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acknowledgeThirdPartyJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobOutput, 
+      /* data */ AcknowledgeThirdPartyJobOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcknowledgeThirdPartyJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Confirms a job worker has received the specified job. Only used for partner actions.
     */
-  def acknowledgeThirdPartyJob(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acknowledgeThirdPartyJob(params: AcknowledgeThirdPartyJobInput): awsDashSdkLib.libRequestMod.Request[AcknowledgeThirdPartyJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acknowledgeThirdPartyJob(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobInput,
+    params: AcknowledgeThirdPartyJobInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobOutput, 
+      /* data */ AcknowledgeThirdPartyJobOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.AcknowledgeThirdPartyJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcknowledgeThirdPartyJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new custom action that can be used in all pipelines associated with the AWS account. Only used for custom actions.
     */
-  def createCustomActionType(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createCustomActionType(): awsDashSdkLib.libRequestMod.Request[CreateCustomActionTypeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCustomActionType(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeOutput, 
+      /* data */ CreateCustomActionTypeOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateCustomActionTypeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new custom action that can be used in all pipelines associated with the AWS account. Only used for custom actions.
     */
-  def createCustomActionType(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createCustomActionType(params: CreateCustomActionTypeInput): awsDashSdkLib.libRequestMod.Request[CreateCustomActionTypeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCustomActionType(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeInput,
+    params: CreateCustomActionTypeInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeOutput, 
+      /* data */ CreateCustomActionTypeOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreateCustomActionTypeOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateCustomActionTypeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a pipeline.
     */
-  def createPipeline(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPipeline(): awsDashSdkLib.libRequestMod.Request[CreatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPipeline(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineOutput, 
+      /* data */ CreatePipelineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a pipeline.
     */
-  def createPipeline(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPipeline(params: CreatePipelineInput): awsDashSdkLib.libRequestMod.Request[CreatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPipeline(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineInput,
+    params: CreatePipelineInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineOutput, 
+      /* data */ CreatePipelineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.CreatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Marks a custom action as deleted. PollForJobs for the custom action will fail after the action is marked for deletion. Only used for custom actions.  To re-create a custom action after it has been deleted you must use a string in the version field that has never been used before. This string can be an incremented version number, for example. To restore a deleted custom action, use a JSON file that is identical to the deleted action, including the original string in the version field. 
     */
@@ -160,9 +112,9 @@ trait CodePipeline
   /**
     * Marks a custom action as deleted. PollForJobs for the custom action will fail after the action is marked for deletion. Only used for custom actions.  To re-create a custom action after it has been deleted you must use a string in the version field that has never been used before. This string can be an incremented version number, for example. To restore a deleted custom action, use a JSON file that is identical to the deleted action, including the original string in the version field. 
     */
-  def deleteCustomActionType(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteCustomActionTypeInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteCustomActionType(params: DeleteCustomActionTypeInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCustomActionType(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteCustomActionTypeInput,
+    params: DeleteCustomActionTypeInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -175,81 +127,57 @@ trait CodePipeline
   /**
     * Deletes the specified pipeline.
     */
-  def deletePipeline(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeletePipelineInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePipeline(params: DeletePipelineInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePipeline(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeletePipelineInput,
+    params: DeletePipelineInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a previously created webhook by name. Deleting the webhook stops AWS CodePipeline from starting a pipeline every time an external event occurs. The API will return successfully when trying to delete a webhook that is already deleted. If a deleted webhook is re-created by calling PutWebhook with the same name, it will have a different URL.
     */
-  def deleteWebhook(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteWebhook(): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteWebhook(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookOutput, 
+      /* data */ DeleteWebhookOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a previously created webhook by name. Deleting the webhook stops AWS CodePipeline from starting a pipeline every time an external event occurs. The API will return successfully when trying to delete a webhook that is already deleted. If a deleted webhook is re-created by calling PutWebhook with the same name, it will have a different URL.
     */
-  def deleteWebhook(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteWebhook(params: DeleteWebhookInput): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteWebhook(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookInput,
+    params: DeleteWebhookInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookOutput, 
+      /* data */ DeleteWebhookOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeleteWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the connection between the webhook that was created by CodePipeline and the external tool with events to be detected. Currently only supported for webhooks that target an action type of GitHub.
     */
-  def deregisterWebhookWithThirdParty(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deregisterWebhookWithThirdParty(): awsDashSdkLib.libRequestMod.Request[DeregisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deregisterWebhookWithThirdParty(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyOutput, 
+      /* data */ DeregisterWebhookWithThirdPartyOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeregisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes the connection between the webhook that was created by CodePipeline and the external tool with events to be detected. Currently only supported for webhooks that target an action type of GitHub.
     */
-  def deregisterWebhookWithThirdParty(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deregisterWebhookWithThirdParty(params: DeregisterWebhookWithThirdPartyInput): awsDashSdkLib.libRequestMod.Request[DeregisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deregisterWebhookWithThirdParty(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyInput,
+    params: DeregisterWebhookWithThirdPartyInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyOutput, 
+      /* data */ DeregisterWebhookWithThirdPartyOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DeregisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeregisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Prevents artifacts in a pipeline from transitioning to the next stage in the pipeline.
     */
@@ -260,9 +188,9 @@ trait CodePipeline
   /**
     * Prevents artifacts in a pipeline from transitioning to the next stage in the pipeline.
     */
-  def disableStageTransition(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DisableStageTransitionInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disableStageTransition(params: DisableStageTransitionInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableStageTransition(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.DisableStageTransitionInput,
+    params: DisableStageTransitionInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -275,501 +203,333 @@ trait CodePipeline
   /**
     * Enables artifacts in a pipeline to transition to a stage in a pipeline.
     */
-  def enableStageTransition(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.EnableStageTransitionInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def enableStageTransition(params: EnableStageTransitionInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableStageTransition(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.EnableStageTransitionInput,
+    params: EnableStageTransitionInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a job. Only used for custom actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
     */
-  def getJobDetails(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getJobDetails(): awsDashSdkLib.libRequestMod.Request[GetJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getJobDetails(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsOutput, 
+      /* data */ GetJobDetailsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a job. Only used for custom actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
     */
-  def getJobDetails(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getJobDetails(params: GetJobDetailsInput): awsDashSdkLib.libRequestMod.Request[GetJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getJobDetails(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsInput,
+    params: GetJobDetailsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsOutput, 
+      /* data */ GetJobDetailsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the metadata, structure, stages, and actions of a pipeline. Can be used to return the entire structure of a pipeline in JSON format, which can then be modified and used to update the pipeline structure with UpdatePipeline.
     */
-  def getPipeline(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPipeline(): awsDashSdkLib.libRequestMod.Request[GetPipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPipeline(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineOutput, 
+      /* data */ GetPipelineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the metadata, structure, stages, and actions of a pipeline. Can be used to return the entire structure of a pipeline in JSON format, which can then be modified and used to update the pipeline structure with UpdatePipeline.
     */
-  def getPipeline(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPipeline(params: GetPipelineInput): awsDashSdkLib.libRequestMod.Request[GetPipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPipeline(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineInput,
+    params: GetPipelineInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineOutput, 
+      /* data */ GetPipelineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about an execution of a pipeline, including details about artifacts, the pipeline execution ID, and the name, version, and status of the pipeline.
     */
-  def getPipelineExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPipelineExecution(): awsDashSdkLib.libRequestMod.Request[GetPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPipelineExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionOutput, 
+      /* data */ GetPipelineExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about an execution of a pipeline, including details about artifacts, the pipeline execution ID, and the name, version, and status of the pipeline.
     */
-  def getPipelineExecution(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPipelineExecution(params: GetPipelineExecutionInput): awsDashSdkLib.libRequestMod.Request[GetPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPipelineExecution(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionInput,
+    params: GetPipelineExecutionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionOutput, 
+      /* data */ GetPipelineExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the state of a pipeline, including the stages and actions.  Values returned in the revisionId and revisionUrl fields indicate the source revision information, such as the commit ID, for the current state. 
     */
-  def getPipelineState(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPipelineState(): awsDashSdkLib.libRequestMod.Request[GetPipelineStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPipelineState(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
+      /* data */ GetPipelineStateOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPipelineStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the state of a pipeline, including the stages and actions.  Values returned in the revisionId and revisionUrl fields indicate the source revision information, such as the commit ID, for the current state. 
     */
-  def getPipelineState(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPipelineState(params: GetPipelineStateInput): awsDashSdkLib.libRequestMod.Request[GetPipelineStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPipelineState(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateInput,
+    params: GetPipelineStateInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
+      /* data */ GetPipelineStateOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPipelineStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Requests the details of a job for a third party action. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
     */
-  def getThirdPartyJobDetails(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getThirdPartyJobDetails(): awsDashSdkLib.libRequestMod.Request[GetThirdPartyJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getThirdPartyJobDetails(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsOutput, 
+      /* data */ GetThirdPartyJobDetailsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetThirdPartyJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Requests the details of a job for a third party action. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
     */
-  def getThirdPartyJobDetails(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getThirdPartyJobDetails(params: GetThirdPartyJobDetailsInput): awsDashSdkLib.libRequestMod.Request[GetThirdPartyJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getThirdPartyJobDetails(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsInput,
+    params: GetThirdPartyJobDetailsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsOutput, 
+      /* data */ GetThirdPartyJobDetailsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetThirdPartyJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the action executions that have occurred in a pipeline.
     */
-  def listActionExecutions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActionExecutions(): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActionExecutions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
+      /* data */ ListActionExecutionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the action executions that have occurred in a pipeline.
     */
-  def listActionExecutions(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActionExecutions(params: ListActionExecutionsInput): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActionExecutions(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsInput,
+    params: ListActionExecutionsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
+      /* data */ ListActionExecutionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a summary of all AWS CodePipeline action types associated with your account.
     */
-  def listActionTypes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActionTypes(): awsDashSdkLib.libRequestMod.Request[ListActionTypesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActionTypes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesOutput, 
+      /* data */ ListActionTypesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActionTypesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a summary of all AWS CodePipeline action types associated with your account.
     */
-  def listActionTypes(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActionTypes(params: ListActionTypesInput): awsDashSdkLib.libRequestMod.Request[ListActionTypesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActionTypes(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesInput,
+    params: ListActionTypesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesOutput, 
+      /* data */ ListActionTypesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionTypesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActionTypesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a summary of the most recent executions for a pipeline.
     */
-  def listPipelineExecutions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPipelineExecutions(): awsDashSdkLib.libRequestMod.Request[ListPipelineExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPipelineExecutions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsOutput, 
+      /* data */ ListPipelineExecutionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPipelineExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a summary of the most recent executions for a pipeline.
     */
-  def listPipelineExecutions(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPipelineExecutions(params: ListPipelineExecutionsInput): awsDashSdkLib.libRequestMod.Request[ListPipelineExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPipelineExecutions(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsInput,
+    params: ListPipelineExecutionsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsOutput, 
+      /* data */ ListPipelineExecutionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelineExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPipelineExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a summary of all of the pipelines associated with your account.
     */
-  def listPipelines(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPipelines(): awsDashSdkLib.libRequestMod.Request[ListPipelinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPipelines(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesOutput, 
+      /* data */ ListPipelinesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPipelinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a summary of all of the pipelines associated with your account.
     */
-  def listPipelines(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPipelines(params: ListPipelinesInput): awsDashSdkLib.libRequestMod.Request[ListPipelinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPipelines(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesInput,
+    params: ListPipelinesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesOutput, 
+      /* data */ ListPipelinesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListPipelinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPipelinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a listing of all the webhooks in this region for this account. The output lists all webhooks and includes the webhook URL and ARN, as well the configuration for each webhook.
     */
-  def listWebhooks(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listWebhooks(): awsDashSdkLib.libRequestMod.Request[ListWebhooksOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listWebhooks(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksOutput, 
+      /* data */ ListWebhooksOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListWebhooksOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets a listing of all the webhooks in this region for this account. The output lists all webhooks and includes the webhook URL and ARN, as well the configuration for each webhook.
     */
-  def listWebhooks(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listWebhooks(params: ListWebhooksInput): awsDashSdkLib.libRequestMod.Request[ListWebhooksOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listWebhooks(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksInput,
+    params: ListWebhooksInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksOutput, 
+      /* data */ ListWebhooksOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListWebhooksOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListWebhooksOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about any jobs for AWS CodePipeline to act upon. PollForJobs is only valid for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
     */
-  def pollForJobs(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def pollForJobs(): awsDashSdkLib.libRequestMod.Request[PollForJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def pollForJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsOutput, 
+      /* data */ PollForJobsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PollForJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about any jobs for AWS CodePipeline to act upon. PollForJobs is only valid for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. Additionally, this API returns any secret values defined for the action. 
     */
-  def pollForJobs(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def pollForJobs(params: PollForJobsInput): awsDashSdkLib.libRequestMod.Request[PollForJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def pollForJobs(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsInput,
+    params: PollForJobsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsOutput, 
+      /* data */ PollForJobsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PollForJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Determines whether there are any third party jobs for a job worker to act on. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
     */
-  def pollForThirdPartyJobs(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def pollForThirdPartyJobs(): awsDashSdkLib.libRequestMod.Request[PollForThirdPartyJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def pollForThirdPartyJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsOutput, 
+      /* data */ PollForThirdPartyJobsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PollForThirdPartyJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Determines whether there are any third party jobs for a job worker to act on. Only used for partner actions.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
     */
-  def pollForThirdPartyJobs(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def pollForThirdPartyJobs(params: PollForThirdPartyJobsInput): awsDashSdkLib.libRequestMod.Request[PollForThirdPartyJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def pollForThirdPartyJobs(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsInput,
+    params: PollForThirdPartyJobsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsOutput, 
+      /* data */ PollForThirdPartyJobsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PollForThirdPartyJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PollForThirdPartyJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information to AWS CodePipeline about new revisions to a source.
     */
-  def putActionRevision(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putActionRevision(): awsDashSdkLib.libRequestMod.Request[PutActionRevisionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putActionRevision(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionOutput, 
+      /* data */ PutActionRevisionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutActionRevisionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information to AWS CodePipeline about new revisions to a source.
     */
-  def putActionRevision(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putActionRevision(params: PutActionRevisionInput): awsDashSdkLib.libRequestMod.Request[PutActionRevisionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putActionRevision(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionInput,
+    params: PutActionRevisionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionOutput, 
+      /* data */ PutActionRevisionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutActionRevisionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutActionRevisionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides the response to a manual approval request to AWS CodePipeline. Valid responses include Approved and Rejected.
     */
-  def putApprovalResult(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putApprovalResult(): awsDashSdkLib.libRequestMod.Request[PutApprovalResultOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putApprovalResult(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultOutput, 
+      /* data */ PutApprovalResultOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutApprovalResultOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides the response to a manual approval request to AWS CodePipeline. Valid responses include Approved and Rejected.
     */
-  def putApprovalResult(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putApprovalResult(params: PutApprovalResultInput): awsDashSdkLib.libRequestMod.Request[PutApprovalResultOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putApprovalResult(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultInput,
+    params: PutApprovalResultInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultOutput, 
+      /* data */ PutApprovalResultOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutApprovalResultOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutApprovalResultOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Represents the failure of a job as returned to the pipeline by a job worker. Only used for custom actions.
     */
@@ -780,9 +540,9 @@ trait CodePipeline
   /**
     * Represents the failure of a job as returned to the pipeline by a job worker. Only used for custom actions.
     */
-  def putJobFailureResult(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutJobFailureResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putJobFailureResult(params: PutJobFailureResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putJobFailureResult(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutJobFailureResultInput,
+    params: PutJobFailureResultInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -795,9 +555,9 @@ trait CodePipeline
   /**
     * Represents the success of a job as returned to the pipeline by a job worker. Only used for custom actions.
     */
-  def putJobSuccessResult(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutJobSuccessResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putJobSuccessResult(params: PutJobSuccessResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putJobSuccessResult(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutJobSuccessResultInput,
+    params: PutJobSuccessResultInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -810,9 +570,9 @@ trait CodePipeline
   /**
     * Represents the failure of a third party job as returned to the pipeline by a job worker. Only used for partner actions.
     */
-  def putThirdPartyJobFailureResult(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutThirdPartyJobFailureResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putThirdPartyJobFailureResult(params: PutThirdPartyJobFailureResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putThirdPartyJobFailureResult(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutThirdPartyJobFailureResultInput,
+    params: PutThirdPartyJobFailureResultInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -825,185 +585,125 @@ trait CodePipeline
   /**
     * Represents the success of a third party job as returned to the pipeline by a job worker. Only used for partner actions.
     */
-  def putThirdPartyJobSuccessResult(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutThirdPartyJobSuccessResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putThirdPartyJobSuccessResult(params: PutThirdPartyJobSuccessResultInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putThirdPartyJobSuccessResult(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutThirdPartyJobSuccessResultInput,
+    params: PutThirdPartyJobSuccessResultInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Defines a webhook and returns a unique webhook URL generated by CodePipeline. This URL can be supplied to third party source hosting providers to call every time there's a code change. When CodePipeline receives a POST request on this URL, the pipeline defined in the webhook is started as long as the POST request satisfied the authentication and filtering requirements supplied when defining the webhook. RegisterWebhookWithThirdParty and DeregisterWebhookWithThirdParty APIs can be used to automatically configure supported third parties to call the generated webhook URL.
     */
-  def putWebhook(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putWebhook(): awsDashSdkLib.libRequestMod.Request[PutWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putWebhook(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookOutput, 
+      /* data */ PutWebhookOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Defines a webhook and returns a unique webhook URL generated by CodePipeline. This URL can be supplied to third party source hosting providers to call every time there's a code change. When CodePipeline receives a POST request on this URL, the pipeline defined in the webhook is started as long as the POST request satisfied the authentication and filtering requirements supplied when defining the webhook. RegisterWebhookWithThirdParty and DeregisterWebhookWithThirdParty APIs can be used to automatically configure supported third parties to call the generated webhook URL.
     */
-  def putWebhook(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putWebhook(params: PutWebhookInput): awsDashSdkLib.libRequestMod.Request[PutWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putWebhook(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookInput,
+    params: PutWebhookInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookOutput, 
+      /* data */ PutWebhookOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.PutWebhookOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Configures a connection between the webhook that was created and the external tool with events to be detected.
     */
-  def registerWebhookWithThirdParty(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerWebhookWithThirdParty(): awsDashSdkLib.libRequestMod.Request[RegisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerWebhookWithThirdParty(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyOutput, 
+      /* data */ RegisterWebhookWithThirdPartyOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Configures a connection between the webhook that was created and the external tool with events to be detected.
     */
-  def registerWebhookWithThirdParty(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def registerWebhookWithThirdParty(params: RegisterWebhookWithThirdPartyInput): awsDashSdkLib.libRequestMod.Request[RegisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerWebhookWithThirdParty(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyInput,
+    params: RegisterWebhookWithThirdPartyInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyOutput, 
+      /* data */ RegisterWebhookWithThirdPartyOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RegisterWebhookWithThirdPartyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RegisterWebhookWithThirdPartyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Resumes the pipeline execution by retrying the last failed actions in a stage.
     */
-  def retryStageExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def retryStageExecution(): awsDashSdkLib.libRequestMod.Request[RetryStageExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def retryStageExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionOutput, 
+      /* data */ RetryStageExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RetryStageExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Resumes the pipeline execution by retrying the last failed actions in a stage.
     */
-  def retryStageExecution(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def retryStageExecution(params: RetryStageExecutionInput): awsDashSdkLib.libRequestMod.Request[RetryStageExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def retryStageExecution(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionInput,
+    params: RetryStageExecutionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionOutput, 
+      /* data */ RetryStageExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.RetryStageExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RetryStageExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts the specified pipeline. Specifically, it begins processing the latest commit to the source location specified as part of the pipeline.
     */
-  def startPipelineExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startPipelineExecution(): awsDashSdkLib.libRequestMod.Request[StartPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startPipelineExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionOutput, 
+      /* data */ StartPipelineExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts the specified pipeline. Specifically, it begins processing the latest commit to the source location specified as part of the pipeline.
     */
-  def startPipelineExecution(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startPipelineExecution(params: StartPipelineExecutionInput): awsDashSdkLib.libRequestMod.Request[StartPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startPipelineExecution(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionInput,
+    params: StartPipelineExecutionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionOutput, 
+      /* data */ StartPipelineExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.StartPipelineExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure in conjunction with UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
     */
-  def updatePipeline(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePipeline(): awsDashSdkLib.libRequestMod.Request[UpdatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePipeline(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineOutput, 
+      /* data */ UpdatePipelineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure in conjunction with UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
     */
-  def updatePipeline(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePipeline(params: UpdatePipelineInput): awsDashSdkLib.libRequestMod.Request[UpdatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePipeline(
-    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineInput,
+    params: UpdatePipelineInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineOutput, 
+      /* data */ UpdatePipelineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.UpdatePipelineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePipelineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

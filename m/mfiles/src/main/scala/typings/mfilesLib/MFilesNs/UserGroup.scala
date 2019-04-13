@@ -27,3 +27,8 @@ class UserGroup ()
   override def RemoveMember(ID: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.UserGroup")
+@js.native
+object UserGroup
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserGroup]
+

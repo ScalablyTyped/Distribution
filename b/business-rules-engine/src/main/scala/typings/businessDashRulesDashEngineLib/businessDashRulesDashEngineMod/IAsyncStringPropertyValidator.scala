@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IAsyncStringPropertyValidator extends IAsyncPropertyValidator {
-  def isAcceptable(s: java.lang.String): qLib.qMod.QNs.Promise[scala.Boolean]
+  def isAcceptable(s: java.lang.String): qLib.qMod.Promise[scala.Boolean]
 }
 
 object IAsyncStringPropertyValidator {
   @scala.inline
   def apply(
-    isAcceptable: java.lang.String => qLib.qMod.QNs.Promise[scala.Boolean],
+    isAcceptable: java.lang.String => qLib.qMod.Promise[scala.Boolean],
     isAsync: scala.Boolean,
     customMessage: IErrorCustomMessage = null,
     tagName: java.lang.String = null

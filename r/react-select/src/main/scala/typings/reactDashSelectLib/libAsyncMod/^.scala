@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val defaultProps: Props[js.Any] = js.native
-  def makeAsyncSelect(SelectComponent: reactLib.reactMod.ReactNs.ComponentType[_]): Async[_] = js.native
+  def makeAsyncSelect(SelectComponent: reactLib.reactMod.ComponentType[_]): Async[_] = js.native
 }
 

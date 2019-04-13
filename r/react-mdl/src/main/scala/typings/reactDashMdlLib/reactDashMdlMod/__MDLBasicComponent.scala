@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "__MDLBasicComponent")
 @js.native
-class __MDLBasicComponent ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.__MDLBasicComponent
+class __MDLBasicComponent () extends __MDLComponent[__MDLOtherProps]
 

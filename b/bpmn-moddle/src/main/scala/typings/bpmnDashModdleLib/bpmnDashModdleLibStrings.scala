@@ -8,746 +8,746 @@ import scala.scalajs.js.annotation._
 object bpmnDashModdleLibStrings {
   @js.native
   sealed trait All
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.MultiInstanceBehaviour
+    extends bpmnDashModdleLib.bpmnDashModdleMod.MultiInstanceBehaviour
   
   @js.native
   sealed trait Backward
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.RelationshipDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.RelationshipDirection
   
   @js.native
   sealed trait Both
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.AssociationDirection
-       with bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.RelationshipDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.AssociationDirection
+       with bpmnDashModdleLib.bpmnDashModdleMod.RelationshipDirection
   
   @js.native
   sealed trait Complex
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.MultiInstanceBehaviour
+    extends bpmnDashModdleLib.bpmnDashModdleMod.MultiInstanceBehaviour
   
   @js.native
   sealed trait Converging
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.GatewayDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.GatewayDirection
   
   @js.native
   sealed trait Diverging
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.GatewayDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.GatewayDirection
   
   @js.native
   sealed trait Exclusive
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.EventBasedGatewayType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.EventBasedGatewayType
   
   @js.native
   sealed trait Forward
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.RelationshipDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.RelationshipDirection
   
   @js.native
   sealed trait Information
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ItemKind
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ItemKind
   
   @js.native
   sealed trait Mixed
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.GatewayDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.GatewayDirection
   
   @js.native
   sealed trait MultiInstanceParallel
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ChoreographyLoopType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ChoreographyLoopType
   
   @js.native
   sealed trait MultiInstanceSequential
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ChoreographyLoopType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ChoreographyLoopType
   
   @js.native
   sealed trait None
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.AssociationDirection
-       with bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ChoreographyLoopType
-       with bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.MultiInstanceBehaviour
-       with bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ProcessType
-       with bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.RelationshipDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.AssociationDirection
+       with bpmnDashModdleLib.bpmnDashModdleMod.ChoreographyLoopType
+       with bpmnDashModdleLib.bpmnDashModdleMod.MultiInstanceBehaviour
+       with bpmnDashModdleLib.bpmnDashModdleMod.ProcessType
+       with bpmnDashModdleLib.bpmnDashModdleMod.RelationshipDirection
   
   @js.native
   sealed trait One
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.AssociationDirection
-       with bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.MultiInstanceBehaviour
+    extends bpmnDashModdleLib.bpmnDashModdleMod.AssociationDirection
+       with bpmnDashModdleLib.bpmnDashModdleMod.MultiInstanceBehaviour
   
   @js.native
   sealed trait Parallel
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.AdHocOrdering
-       with bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.EventBasedGatewayType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.AdHocOrdering
+       with bpmnDashModdleLib.bpmnDashModdleMod.EventBasedGatewayType
   
   @js.native
   sealed trait Physical
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ItemKind
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ItemKind
   
   @js.native
   sealed trait Private
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ProcessType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ProcessType
   
   @js.native
   sealed trait Public
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ProcessType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ProcessType
   
   @js.native
   sealed trait Sequential
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.AdHocOrdering
+    extends bpmnDashModdleLib.bpmnDashModdleMod.AdHocOrdering
   
   @js.native
   sealed trait Standard
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ChoreographyLoopType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ChoreographyLoopType
   
   @js.native
   sealed trait Unspecified
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.GatewayDirection
+    extends bpmnDashModdleLib.bpmnDashModdleMod.GatewayDirection
   
   @js.native
   sealed trait `bioc:ColoredEdge`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bioc:ColoredShape`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Activity`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:AdHocSubProcess`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Artifact`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Assignment`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Association`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Auditing`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:BaseElement`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:BoundaryEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:BusinessRuleTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CallActivity`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CallChoreography`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CallConversation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CallableElement`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CancelEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CatchEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Category`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CategoryValue`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Choreography`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ChoreographyActivity`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ChoreographyTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Collaboration`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CompensateEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ComplexBehaviorDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ComplexGateway`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ConditionalEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Conversation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ConversationAssociation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ConversationLink`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ConversationNode`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CorrelationKey`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CorrelationProperty`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CorrelationPropertyBinding`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CorrelationPropertyRetrievalExpression`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:CorrelationSubscription`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataAssociation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataInput`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataInputAssociation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataObject`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataObjectReference`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataOutput`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataOutputAssociation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataState`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataStore`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:DataStoreReference`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Definitions`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Documentation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:EndEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:EndPoint`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Error`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ErrorEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Escalation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:EscalationEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Event`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:EventBasedGateway`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:EventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ExclusiveGateway`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Expression`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Extension`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ExtensionAttributeDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ExtensionDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ExtensionElements`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:FlowElement`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:FlowElementsContainer`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:FlowNode`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:FormalExpression`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Gateway`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:GlobalBusinessRuleTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:GlobalChoreographyTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:GlobalConversation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:GlobalManualTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:GlobalScriptTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:GlobalTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:GlobalUserTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Group`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:HumanPerformer`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ImplicitThrowEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Import`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:InclusiveGateway`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:InputOutputBinding`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:InputOutputSpecification`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:InputSet`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:InteractionNode`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Interface`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:IntermediateCatchEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:IntermediateThrowEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ItemAwareElement`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ItemDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Lane`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:LaneSet`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:LinkEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:LoopCharacteristics`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ManualTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Message`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:MessageEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:MessageFlow`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:MessageFlowAssociation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Monitoring`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:MultiInstanceLoopCharacteristics`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Operation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:OutputSet`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ParallelGateway`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Participant`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ParticipantAssociation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ParticipantMultiplicity`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:PartnerEntity`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:PartnerRole`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Performer`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:PotentialOwner`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Process`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Property`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ReceiveTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Relationship`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Rendering`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Resource`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ResourceAssignmentExpression`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ResourceParameter`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ResourceParameterBinding`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ResourceRole`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:RootElement`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ScriptTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:SendTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:SequenceFlow`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ServiceTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Signal`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:SignalEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:StandardLoopCharacteristics`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:StartEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:SubChoreography`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:SubConversation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:SubProcess`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Task`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:TerminateEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:TextAnnotation`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:ThrowEvent`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:TimerEventDefinition`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:Transaction`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmn:UserTask`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmndi:BPMNDiagram`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmndi:BPMNEdge`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmndi:BPMNLabel`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmndi:BPMNLabelStyle`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmndi:BPMNPlane`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `bpmndi:BPMNShape`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `dc:Bounds`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `dc:Font`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `dc:Point`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `dc:Real`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `dc:boolean`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `dc:number`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `dc:string`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Diagram`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:DiagramElement`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Edge`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Extension`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Label`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:LabeledEdge`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:LabeledShape`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Node`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Plane`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Shape`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @js.native
   sealed trait `di:Style`
-    extends bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ElementType
+    extends bpmnDashModdleLib.bpmnDashModdleMod.ElementType
   
   @scala.inline
   def All: All = "All".asInstanceOf[All]

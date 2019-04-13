@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "RemoteDependencyData")
 @js.native
 class RemoteDependencyData ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedRemoteDependencyDataMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedRemoteDependencyDataMod.^
 

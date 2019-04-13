@@ -18,10 +18,6 @@ object ^ extends js.Object {
     * @param index the name of the index to query
     * @param opts
     */
-  def apply(
-    client: algoliasearchLib.algoliasearchMod.algoliasearchNs.Client,
-    index: java.lang.String,
-    opts: algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.QueryParameters
-  ): algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.AlgoliaSearchHelper = js.native
+  def apply(client: algoliasearchLib.algoliasearchMod.Client, index: java.lang.String, opts: QueryParameters): AlgoliaSearchHelper = js.native
 }
 

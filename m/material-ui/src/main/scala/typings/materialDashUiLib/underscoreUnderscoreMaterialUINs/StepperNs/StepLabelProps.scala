@@ -9,9 +9,9 @@ trait StepLabelProps extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String | scala.Double] = js.undefined
-  var iconContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String | scala.Double] = js.undefined
+  var iconContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object StepLabelProps {
@@ -20,9 +20,9 @@ object StepLabelProps {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactNs.ReactNode | java.lang.String | scala.Double = null,
-    iconContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    icon: reactLib.reactMod.ReactNode | java.lang.String | scala.Double = null,
+    iconContainerStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): StepLabelProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

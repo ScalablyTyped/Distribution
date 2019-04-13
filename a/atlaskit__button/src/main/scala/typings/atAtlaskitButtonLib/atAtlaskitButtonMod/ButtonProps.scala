@@ -15,21 +15,19 @@ trait ButtonProps extends js.Object {
   /** Pass aria-haspopup to underlying html button. */
   val ariaHaspopup: js.UndefOr[scala.Boolean] = js.undefined
   /** This button's child nodes. */
-  val children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  val children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Add a classname to the button. */
   val className: js.UndefOr[java.lang.String] = js.undefined
   /** A custom component to use instead of the default button. */
-  val component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  val component: js.UndefOr[reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]] = js.undefined
   /** Name property of a linked form that the button submits when clicked. */
   val form: js.UndefOr[java.lang.String] = js.undefined
   /** Provides a url for buttons being used as a link. */
   val href: js.UndefOr[java.lang.String] = js.undefined
   /** Places an icon within the button, after the button's text. */
-  val iconAfter: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  val iconAfter: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /** Places an icon within the button, before the button's text. */
-  val iconBefore: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  val iconBefore: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /** Provide a unique id to the button. */
   val id: js.UndefOr[java.lang.String] = js.undefined
   /** Pass a reference on to the styled component */
@@ -39,7 +37,7 @@ trait ButtonProps extends js.Object {
   /** Change the style to indicate the button is selected. */
   val isSelected: js.UndefOr[scala.Boolean] = js.undefined
   /** Handler to be called on click. */
-  val onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
+  val onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
   /** Option to fit button width to its parent width */
   val shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined
   /** Set the amount of padding in the button. */
@@ -59,18 +57,18 @@ object ButtonProps {
     ariaControls: java.lang.String = null,
     ariaExpanded: js.UndefOr[scala.Boolean] = js.undefined,
     ariaHaspopup: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
+    component: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = null,
     form: java.lang.String = null,
     href: java.lang.String = null,
-    iconAfter: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    iconBefore: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    iconAfter: reactLib.reactMod.ReactElement[_] = null,
+    iconBefore: reactLib.reactMod.ReactElement[_] = null,
     id: java.lang.String = null,
     innerRef: /* instance */ js.Any => scala.Unit = null,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isSelected: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] = null,
     shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined,
     spacing: ButtonSpacing = null,
     tabIndex: scala.Int | scala.Double = null,

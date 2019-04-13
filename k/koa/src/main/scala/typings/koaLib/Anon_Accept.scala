@@ -6,32 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Accept[StateT] extends js.Object {
-  var accept: acceptsLib.acceptsMod.acceptsNs.Accepts
+  var accept: acceptsLib.acceptsMod.Accepts
   var app: koaLib.koaMod.Application[_, js.Object]
   var cookies: cookiesLib.cookiesMod.Cookies
   var originalUrl: java.lang.String
   var req: nodeLib.httpMod.IncomingMessage
-  var request: koaLib.koaMod.ApplicationNs.Request
+  var request: koaLib.koaMod.Request
   var res: nodeLib.httpMod.ServerResponse
   /**
     * To bypass Koa's built-in response handling, you may explicitly set `ctx.respond = false;`
     */
   var respond: js.UndefOr[scala.Boolean] = js.undefined
-  var response: koaLib.koaMod.ApplicationNs.Response
+  var response: koaLib.koaMod.Response
   var state: StateT
 }
 
 object Anon_Accept {
   @scala.inline
   def apply[StateT](
-    accept: acceptsLib.acceptsMod.acceptsNs.Accepts,
+    accept: acceptsLib.acceptsMod.Accepts,
     app: koaLib.koaMod.Application[_, js.Object],
     cookies: cookiesLib.cookiesMod.Cookies,
     originalUrl: java.lang.String,
     req: nodeLib.httpMod.IncomingMessage,
-    request: koaLib.koaMod.ApplicationNs.Request,
+    request: koaLib.koaMod.Request,
     res: nodeLib.httpMod.ServerResponse,
-    response: koaLib.koaMod.ApplicationNs.Response,
+    response: koaLib.koaMod.Response,
     state: StateT,
     respond: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Accept[StateT] = {

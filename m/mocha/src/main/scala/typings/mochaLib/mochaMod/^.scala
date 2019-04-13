@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mocha", JSImport.Namespace)
 @js.native
+class ^ ()
+  extends mochaLib.Mocha {
+  def this(options: mochaLib.MochaNs.MochaOptions) = this()
+}
+
+@JSImport("mocha", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
   /**
     * Execute after running tests.

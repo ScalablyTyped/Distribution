@@ -7,13 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "Sha1")
 @js.native
-class Sha1 ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.Sha1 {
-  /* CompleteClass */
-  override var algorithm: stdLib.Algorithm = js.native
-  /* CompleteClass */
-  override var namespaceURI: java.lang.String = js.native
-  /* CompleteClass */
-  override def getAlgorithmName(): java.lang.String = js.native
+class Sha1 () extends HashAlgorithm {
+  @JSName("algorithm")
+  var algorithm_Sha1: xmldsigjsLib.Anon_Name = js.native
 }
 

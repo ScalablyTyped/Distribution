@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Tooltip", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps] = js.native
+  val default: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps] = js.native
 }
 

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object tabCaptureNs extends js.Object {
   var capture: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getCapturedTabs: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onStatusChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onStatusChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
 }
 

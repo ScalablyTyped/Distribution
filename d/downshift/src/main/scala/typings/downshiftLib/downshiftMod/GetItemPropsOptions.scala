@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetItemPropsOptions[Item]
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] {
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLElement] {
   var index: js.UndefOr[scala.Double] = js.undefined
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
   var item: Item
@@ -16,7 +16,7 @@ object GetItemPropsOptions {
   @scala.inline
   def apply[Item](
     item: Item,
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLElement] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Int | scala.Double = null,
     isSelected: js.UndefOr[scala.Boolean] = js.undefined

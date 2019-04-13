@@ -27,10 +27,10 @@ trait Random extends js.Object {
   def sample[T](population: js.Array[T], sampleSize: scala.Double): js.Array[T] = js.native
   def shuffle[T](array: js.Array[T]): js.Array[T] = js.native
   def string(): java.lang.String = js.native
-  def string(engine: randomDashJsLib.randomDashJsMod.RandomNs.Engine, length: scala.Double): java.lang.String = js.native
+  def string(engine: Engine, length: scala.Double): java.lang.String = js.native
   def string(length: scala.Double): java.lang.String = js.native
   def string(length: scala.Double, pool: java.lang.String): java.lang.String = js.native
   def uuid4(): java.lang.String = js.native
-  def uuid4(engine: randomDashJsLib.randomDashJsMod.RandomNs.Engine): java.lang.String = js.native
+  def uuid4(engine: Engine): java.lang.String = js.native
 }
 

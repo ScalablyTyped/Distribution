@@ -9,20 +9,20 @@ trait CardHeaderProps
   extends antdDashMobileLib.libCardPropsTypeMod.CardHeaderPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var thumbStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var thumbStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CardHeaderProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    thumb: reactLib.reactMod.ReactNs.ReactNode = null,
-    thumbStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    style: reactLib.reactMod.CSSProperties = null,
+    thumb: reactLib.reactMod.ReactNode = null,
+    thumbStyle: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null
   ): CardHeaderProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

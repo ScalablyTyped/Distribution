@@ -23,12 +23,12 @@ object ^ extends js.Object {
   val BackHandler: BackHandlerStatic = js.native
   val CameraRoll: CameraRollStatic = js.native
   val Clipboard: ClipboardStatic = js.native
-  val ColorPropType: reactLib.reactMod.ReactNs.Validator[java.lang.String] = js.native
+  val ColorPropType: reactLib.reactMod.Validator[java.lang.String] = js.native
   val DatePickerAndroid: DatePickerAndroidStatic = js.native
   val DeviceEventEmitter: DeviceEventEmitterStatic = js.native
   val Dimensions: reactDashNativeLib.reactDashNativeMod.Dimensions = js.native
   val Easing: EasingStatic = js.native
-  val EdgeInsetsPropType: reactLib.reactMod.ReactNs.Validator[Insets] = js.native
+  val EdgeInsetsPropType: reactLib.reactMod.Validator[Insets] = js.native
   val Geolocation: GeolocationStatic = js.native
   val I18nManager: I18nManagerStatic = js.native
   val ImageEditor: ImageEditorStatic = js.native
@@ -51,7 +51,7 @@ object ^ extends js.Object {
   val PixelRatio: PixelRatioStatic = js.native
   val Platform: PlatformStatic = js.native
   val PlatformIOS: PlatformIOSStatic = js.native
-  val PointPropType: reactLib.reactMod.ReactNs.Validator[PointPropType] = js.native
+  val PointPropType: reactLib.reactMod.Validator[PointPropType] = js.native
   val PushNotificationIOS: PushNotificationIOSStatic = js.native
   val SectionList: SectionListStatic[js.Any] = js.native
   val Settings: SettingsStatic = js.native
@@ -64,20 +64,14 @@ object ^ extends js.Object {
   val UIManager: UIManagerStatic = js.native
   val Vibration: VibrationStatic = js.native
   val VibrationIOS: VibrationIOSStatic = js.native
-  val ViewPropTypes: reactLib.reactMod.ReactNs.ValidationMap[ViewProps] = js.native
+  val ViewPropTypes: reactLib.reactMod.ValidationMap[ViewProps] = js.native
   val YellowBox: (reactLib.reactMod.Component[_, _, _]) with reactDashNativeLib.Anon_IgnoreWarnings = js.native
   def __spread(target: js.Any, sources: js.Any*): js.Any = js.native
-  def createElement[P](`type`: reactLib.reactMod.ReactNs.ReactType[_]): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
-  def createElement[P](
-    `type`: reactLib.reactMod.ReactNs.ReactType[_],
-    props: P,
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
+  def createElement[P](`type`: reactLib.reactMod.ReactType[_]): reactLib.reactMod.ReactElement[P] = js.native
+  def createElement[P](`type`: reactLib.reactMod.ReactType[_], props: P, children: reactLib.reactMod.ReactNode*): reactLib.reactMod.ReactElement[P] = js.native
   def findNodeHandle(): scala.Null | scala.Double = js.native
   def findNodeHandle(componentOrHandle: reactLib.reactMod.Component[_, _, _]): scala.Null | scala.Double = js.native
-  def findNodeHandle(
-    componentOrHandle: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]
-  ): scala.Null | scala.Double = js.native
+  def findNodeHandle(componentOrHandle: reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]): scala.Null | scala.Double = js.native
   def findNodeHandle(componentOrHandle: scala.Double): scala.Null | scala.Double = js.native
   def processColor(color: js.Any): scala.Double = js.native
   def requireNativeComponent(viewName: java.lang.String): js.Any = js.native

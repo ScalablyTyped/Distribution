@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheckboxProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var form: js.UndefOr[java.lang.String] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double] = js.undefined
@@ -20,12 +20,12 @@ trait CheckboxProps
 object CheckboxProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     form: java.lang.String = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     name: java.lang.String = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String | js.Array[java.lang.String] | scala.Double = null

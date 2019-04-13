@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-fa", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Icon: reactLib.reactMod.ReactNs.ComponentClass[IconProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val IconStack: reactLib.reactMod.ReactNs.ComponentClass[IconStackProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[IconProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val Icon: reactLib.reactMod.ComponentClass[IconProps, reactLib.reactMod.ComponentState] = js.native
+  val IconStack: reactLib.reactMod.ComponentClass[IconStackProps, reactLib.reactMod.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[IconProps, reactLib.reactMod.ComponentState] = js.native
 }
 

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("validator/lib/isLength", JSImport.Namespace)
 @js.native
-object libIsLengthMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_MaxMin]
+object libIsLengthMod extends js.Object {
+  def apply(str: java.lang.String, min: scala.Double): scala.Boolean = js.native
+  def apply(str: java.lang.String, min: scala.Double, max: scala.Double): scala.Boolean = js.native
+  def apply(str: java.lang.String, options: validatorLib.ValidatorJSNs.IsLengthOptions): scala.Boolean = js.native
+}
 

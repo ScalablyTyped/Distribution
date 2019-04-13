@@ -15,3 +15,8 @@ class ServerLicenseManagementOperations ()
   override def SetLicenseCodeAndSerialNumber(SerialNumber: java.lang.String, LicenseCode: java.lang.String): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ServerLicenseManagementOperations")
+@js.native
+object ServerLicenseManagementOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IServerLicenseManagementOperations]
+

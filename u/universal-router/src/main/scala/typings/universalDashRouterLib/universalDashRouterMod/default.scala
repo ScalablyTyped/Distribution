@@ -20,15 +20,15 @@ class default[C /* <: Context */, R] protected () extends UniversalRouter[C, R] 
 object default extends js.Object {
   @JSName("pathToRegexp")
   var pathToRegexp_Original: universalDashRouterLib.Anon_Compile = js.native
-  def pathToRegexp(path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path): stdLib.RegExp = js.native
+  def pathToRegexp(path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.Path): stdLib.RegExp = js.native
   def pathToRegexp(
-    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path,
-    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key]
+    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.Path,
+    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Key]
   ): stdLib.RegExp = js.native
   def pathToRegexp(
-    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path,
-    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key],
-    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.RegExpOptions with pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.ParseOptions
+    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.Path,
+    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Key],
+    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.RegExpOptions with pathDashToDashRegexpLib.pathDashToDashRegexpMod.ParseOptions
   ): stdLib.RegExp = js.native
 }
 

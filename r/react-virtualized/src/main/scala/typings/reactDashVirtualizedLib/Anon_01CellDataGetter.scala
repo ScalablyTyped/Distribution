@@ -16,7 +16,7 @@ trait Anon_01CellDataGetter extends js.Object {
   @JSName("headerRenderer")
   var headerRenderer_Original: reactDashVirtualizedLib.distEsTableMod.TableHeaderRenderer = js.native
   def cellDataGetter(params: reactDashVirtualizedLib.distEsTableMod.TableCellDataGetterParams): js.Any = js.native
-  def cellRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableCellProps): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def headerRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableHeaderProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def cellRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableCellProps): reactLib.reactMod.ReactNode = js.native
+  def headerRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableHeaderProps): reactLib.reactMod.ReactNode = js.native
 }
 

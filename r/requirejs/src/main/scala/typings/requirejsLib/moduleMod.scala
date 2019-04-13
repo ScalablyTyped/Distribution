@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("module", JSImport.Namespace)
 @js.native
-object moduleMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Config]
+object moduleMod extends js.Object {
+  var id: java.lang.String = js.native
+  var uri: java.lang.String = js.native
+  def config(): js.Any = js.native
+}
 

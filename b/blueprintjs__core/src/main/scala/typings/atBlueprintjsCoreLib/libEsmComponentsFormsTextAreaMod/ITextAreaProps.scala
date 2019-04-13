@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ITextAreaProps
-  extends reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
+  extends reactLib.reactMod.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps {
   /**
     * Whether the text area should take up the full width of its container.
@@ -36,7 +36,7 @@ object ITextAreaProps {
   def apply(
     IIntentProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
-    TextareaHTMLAttributes: reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement] = null,
+    TextareaHTMLAttributes: reactLib.reactMod.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement] = null,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
     growVertically: js.UndefOr[scala.Boolean] = js.undefined,
     inputRef: /* ref */ stdLib.HTMLTextAreaElement | scala.Null => _ = null,

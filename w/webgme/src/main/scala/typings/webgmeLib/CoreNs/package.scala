@@ -10,4 +10,5 @@ package object CoreNs {
   type GUID = java.lang.String
   type ObjectHash = java.lang.String
   type RelationRule = RelationRuleDetail with RelationRuleDictionary
+  type RelationRuleDictionary = org.scalablytyped.runtime.StringDictionary[RelationRuleDetail]
 }

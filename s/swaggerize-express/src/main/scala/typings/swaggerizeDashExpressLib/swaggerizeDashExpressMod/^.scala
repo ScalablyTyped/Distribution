@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("swaggerize-express", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(options: swaggerizeDashExpressLib.swaggerizeDashExpressMod.swaggerizeNs.Options): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(options: Options): expressLib.expressMod.RequestHandler = js.native
 }
 

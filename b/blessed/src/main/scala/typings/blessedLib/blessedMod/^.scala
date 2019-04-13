@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("blessed", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val colors: blessedLib.Anon_HexColor = js.native
   def bigtext(): blessedLib.blessedMod.WidgetsNs.BigTextElement = js.native
   def bigtext(options: blessedLib.blessedMod.WidgetsNs.BigTextOptions): blessedLib.blessedMod.WidgetsNs.BigTextElement = js.native
   def box(): blessedLib.blessedMod.WidgetsNs.BoxElement = js.native

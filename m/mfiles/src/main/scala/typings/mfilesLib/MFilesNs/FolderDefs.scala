@@ -21,3 +21,8 @@ class FolderDefs ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.FolderDefs")
+@js.native
+object FolderDefs
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderDefs]
+

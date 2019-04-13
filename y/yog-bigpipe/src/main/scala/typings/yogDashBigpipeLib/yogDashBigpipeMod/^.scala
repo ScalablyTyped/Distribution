@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("yog-bigpipe", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(option: BigPipeOption): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
+  def apply(option: BigPipeOption): expressLib.expressMod.RequestHandler = js.native
 }
 

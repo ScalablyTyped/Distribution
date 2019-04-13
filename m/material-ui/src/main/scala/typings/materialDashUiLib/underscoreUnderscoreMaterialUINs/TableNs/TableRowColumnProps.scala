@@ -16,7 +16,7 @@ trait TableRowColumnProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]
@@ -24,7 +24,7 @@ trait TableRowColumnProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onHover: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]
@@ -32,13 +32,13 @@ trait TableRowColumnProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onHoverExit: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]
   ] = js.undefined
   var rowSpan: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TableRowColumnProps {
@@ -49,11 +49,11 @@ object TableRowColumnProps {
     columnNumber: scala.Int | scala.Double = null,
     hoverable: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String = null,
-    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
-    onHover: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
-    onHoverExit: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
+    onClick: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
+    onHover: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
+    onHoverExit: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
     rowSpan: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TableRowColumnProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

@@ -25,10 +25,11 @@ object strings {
     LEADING_ICON_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip__icon--leading`,
     REMOVAL_EVENT: atMaterialChipsLib.atMaterialChipsLibStrings.`MDCChip:removal`,
     TRAILING_ICON_INTERACTION_EVENT: atMaterialChipsLib.atMaterialChipsLibStrings.`MDCChip:trailingIconInteraction`,
-    TRAILING_ICON_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip__icon--trailing`
+    TRAILING_ICON_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip__icon--trailing`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(CHECKMARK_SELECTOR = CHECKMARK_SELECTOR, ENTRY_ANIMATION_NAME = ENTRY_ANIMATION_NAME, INTERACTION_EVENT = INTERACTION_EVENT, LEADING_ICON_SELECTOR = LEADING_ICON_SELECTOR, REMOVAL_EVENT = REMOVAL_EVENT, TRAILING_ICON_INTERACTION_EVENT = TRAILING_ICON_INTERACTION_EVENT, TRAILING_ICON_SELECTOR = TRAILING_ICON_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

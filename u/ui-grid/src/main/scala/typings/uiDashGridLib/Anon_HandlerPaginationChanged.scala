@@ -12,15 +12,15 @@ trait Anon_HandlerPaginationChanged extends js.Object {
     * @param {paginationChangedHandler} handler Callback
     */
   def paginationChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.paginationNs.paginationChangedHandler
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.paginationNs.paginationChangedHandler
   ): scala.Unit
 }
 
 object Anon_HandlerPaginationChanged {
   @scala.inline
   def apply(
-    paginationChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.paginationNs.paginationChangedHandler) => scala.Unit
+    paginationChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.paginationNs.paginationChangedHandler) => scala.Unit
   ): Anon_HandlerPaginationChanged = {
     val __obj = js.Dynamic.literal(paginationChanged = js.Any.fromFunction2(paginationChanged))
   

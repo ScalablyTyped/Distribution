@@ -9,12 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    options: legalDashEagleLib.legalDashEagleMod.legalEagleNs.Options,
-    cb: js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* licenseSummary */ legalDashEagleLib.legalDashEagleMod.legalEagleNs.LicenseLookup, 
-      scala.Unit
-    ]
+    options: Options,
+    cb: js.Function2[/* err */ stdLib.Error | scala.Null, /* licenseSummary */ LicenseLookup, scala.Unit]
   ): scala.Unit = js.native
 }
 

@@ -20,7 +20,7 @@ object validationNs extends js.Object {
     def this(value: A) = this()
   }
   
-  val URI: /* Validation */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Validation = js.native
   val validation: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libValidationMod.URI] = js.native
   def failure[L, A](l: L): fpDashTsLib.libValidationMod.Validation[L, A] = js.native
   def fromEither[L, A](e: fpDashTsLib.libEitherMod.Either[L, A]): fpDashTsLib.libValidationMod.Validation[L, A] = js.native

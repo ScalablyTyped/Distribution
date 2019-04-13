@@ -10,13 +10,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ExceptionData
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.namespaced {
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedDomainMod.^ {
   /**
     * Exception chain - list of inner exceptions.
     */
-  var exceptions: js.Array[
-    applicationinsightsLib.outDeclarationsContractsGeneratedExceptionDetailsMod.namespaced
-  ] = js.native
+  var exceptions: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedExceptionDetailsMod.^] = js.native
   /**
     * Collection of custom measurements.
     */

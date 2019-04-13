@@ -18,15 +18,15 @@ trait Anon_HandlerSaveRow[TEntity] extends js.Object {
     * @param {saveRowHandler} handler Callback
     */
   def saveRow(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.rowEditNs.saveRowHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.rowEditNs.saveRowHandler[TEntity]
   ): scala.Unit
 }
 
 object Anon_HandlerSaveRow {
   @scala.inline
   def apply[TEntity](
-    saveRow: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.rowEditNs.saveRowHandler[TEntity]) => scala.Unit
+    saveRow: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.rowEditNs.saveRowHandler[TEntity]) => scala.Unit
   ): Anon_HandlerSaveRow[TEntity] = {
     val __obj = js.Dynamic.literal(saveRow = js.Any.fromFunction2(saveRow))
   

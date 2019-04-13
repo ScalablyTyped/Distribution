@@ -17,11 +17,11 @@ object FlexKnownProps {
   def apply(
     alignItems: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignItemsProperty] = null,
     alignSelf: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null,
-    as: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    as: reactLib.reactMod.ReactType[_] = null,
     bg: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
     css: styledDashComponentsLib.styledDashComponentsMod.CSSObject = null,
     flex: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
@@ -33,7 +33,7 @@ object FlexKnownProps {
       csstypeLib.csstypeMod.FontSizeProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     justifyContent: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.JustifyContentProperty] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     m: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -107,7 +107,7 @@ object FlexKnownProps {
     py: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null,
+    ref: reactLib.reactMod.LegacyRef[js.Any] = null,
     width: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.WidthProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null

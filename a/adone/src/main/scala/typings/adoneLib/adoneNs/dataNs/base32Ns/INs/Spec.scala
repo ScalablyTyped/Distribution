@@ -7,15 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Spec extends js.Object {
   var alphabet: java.lang.String
-  var charmap: /* import warning: ImportType.apply Failed type conversion: {[c: string] : number, [c: string] : number} */ js.Any
+  var charmap: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 
 object Spec {
   @scala.inline
-  def apply(
-    alphabet: java.lang.String,
-    charmap: /* import warning: ImportType.apply Failed type conversion: {[c: string] : number, [c: string] : number} */ js.Any
-  ): Spec = {
+  def apply(alphabet: java.lang.String, charmap: org.scalablytyped.runtime.StringDictionary[scala.Double]): Spec = {
     val __obj = js.Dynamic.literal(alphabet = alphabet, charmap = charmap)
   
     __obj.asInstanceOf[Spec]

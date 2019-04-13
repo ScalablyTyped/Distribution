@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ObjectFieldTemplateProps extends js.Object {
-  var DescriptionField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description]
-  var TitleField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id]
+  var DescriptionField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description]
+  var TitleField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id]
   var description: java.lang.String
   var formContext: js.Any
   var formData: js.Any
@@ -22,8 +22,8 @@ trait ObjectFieldTemplateProps extends js.Object {
 object ObjectFieldTemplateProps {
   @scala.inline
   def apply(
-    DescriptionField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description],
-    TitleField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id],
+    DescriptionField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description],
+    TitleField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id],
     description: java.lang.String,
     formContext: js.Any,
     formData: js.Any,

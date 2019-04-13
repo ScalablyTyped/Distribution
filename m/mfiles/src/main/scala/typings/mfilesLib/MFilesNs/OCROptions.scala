@@ -17,3 +17,8 @@ class OCROptions ()
   override def Clone(): mfilesLib.IOCROptions = js.native
 }
 
+@JSGlobal("MFiles.OCROptions")
+@js.native
+object OCROptions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCROptions]
+

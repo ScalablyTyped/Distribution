@@ -13,3 +13,9 @@ class Generator () extends SparqlGenerator {
   override def stringify(query: SparqlQuery): java.lang.String = js.native
 }
 
+@JSImport("sparqljs", "Generator")
+@js.native
+object Generator
+  extends org.scalablytyped.runtime.Instantiable0[SparqlGenerator]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ GeneratorOptions, SparqlGenerator]
+

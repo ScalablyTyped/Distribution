@@ -8,5 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("xmldsigjs", "EcdsaPublicKey")
 @js.native
 class EcdsaPublicKey ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.EcdsaPublicKey
+  extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
+  var X: stdLib.Uint8Array = js.native
+  var Y: stdLib.Uint8Array = js.native
+}
 

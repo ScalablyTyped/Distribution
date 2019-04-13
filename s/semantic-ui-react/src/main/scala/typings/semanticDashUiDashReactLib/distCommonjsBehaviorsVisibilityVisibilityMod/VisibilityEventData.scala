@@ -14,7 +14,7 @@ object VisibilityEventData {
   def apply(
     calculations: VisibilityCalculations,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     context: js.Object = null,
     continuous: js.UndefOr[scala.Boolean] = js.undefined,
     fireOnMount: js.UndefOr[scala.Boolean] = js.undefined,

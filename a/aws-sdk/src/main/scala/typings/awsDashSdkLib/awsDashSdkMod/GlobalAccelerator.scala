@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class GlobalAccelerator ()
   extends awsDashSdkLib.clientsAllMod.GlobalAccelerator {
-  def this(options: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsGlobalacceleratorMod.ClientConfiguration) = this()
 }
 

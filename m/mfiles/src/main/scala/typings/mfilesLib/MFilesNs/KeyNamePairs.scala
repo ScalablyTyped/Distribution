@@ -15,3 +15,8 @@ class KeyNamePairs ()
   override def Item(Index: scala.Double): mfilesLib.IKeyNamePair = js.native
 }
 
+@JSGlobal("MFiles.KeyNamePairs")
+@js.native
+object KeyNamePairs
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IKeyNamePairs]
+

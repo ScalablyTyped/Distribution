@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md", "Avatar")
 @js.native
 class Avatar protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libAvatarsAvatarMod.AvatarProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libAvatarsAvatarMod.AvatarProps) = this()

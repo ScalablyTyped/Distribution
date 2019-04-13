@@ -15,11 +15,11 @@ trait BriefProps
 object BriefProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties | js.Object | js.Array[js.Object] = null,
+    style: reactLib.reactMod.CSSProperties | js.Object | js.Array[js.Object] = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): BriefProps = {
     val __obj = js.Dynamic.literal()

@@ -12,8 +12,8 @@ trait Anon_Handler[TEntity] extends js.Object {
     * @param {navigateHandler} handler Callback
     */
   def navigate(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.navigateHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.cellNavNs.navigateHandler[TEntity]
   ): scala.Unit
   /**
     * viewPortKeyDown is raised when the viewPort receives a keyDown event.
@@ -23,8 +23,8 @@ trait Anon_Handler[TEntity] extends js.Object {
     * @param {viewportKeyDownHandler} handler Callback
     */
   def viewPortKeyDown(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyDownHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.cellNavNs.viewportKeyDownHandler[TEntity]
   ): scala.Unit
   /**
     * viewPortKeyPress is raised when the viewPort receives a keyPress event.
@@ -34,17 +34,17 @@ trait Anon_Handler[TEntity] extends js.Object {
     * @param {viewportKeyPressHandler} handler Callback
     */
   def viewPortKeyPress(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyPressHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.cellNavNs.viewportKeyPressHandler[TEntity]
   ): scala.Unit
 }
 
 object Anon_Handler {
   @scala.inline
   def apply[TEntity](
-    navigate: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.navigateHandler[TEntity]) => scala.Unit,
-    viewPortKeyDown: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyDownHandler[TEntity]) => scala.Unit,
-    viewPortKeyPress: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyPressHandler[TEntity]) => scala.Unit
+    navigate: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.cellNavNs.navigateHandler[TEntity]) => scala.Unit,
+    viewPortKeyDown: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.cellNavNs.viewportKeyDownHandler[TEntity]) => scala.Unit,
+    viewPortKeyPress: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.cellNavNs.viewportKeyPressHandler[TEntity]) => scala.Unit
   ): Anon_Handler[TEntity] = {
     val __obj = js.Dynamic.literal(navigate = js.Any.fromFunction2(navigate), viewPortKeyDown = js.Any.fromFunction2(viewPortKeyDown), viewPortKeyPress = js.Any.fromFunction2(viewPortKeyPress))
   

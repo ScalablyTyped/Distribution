@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ServerRegistration extends js.Object {
   @JSName("app")
-  var app_Original: expressLib.expressMod.eNs.Application = js.native
-  var bodyParserConfig: js.UndefOr[bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsJson | scala.Boolean] = js.native
-  var cors: js.UndefOr[corsLib.corsMod.eNs.CorsOptions | scala.Boolean] = js.native
+  var app_Original: expressLib.expressMod.Application = js.native
+  var bodyParserConfig: js.UndefOr[bodyDashParserLib.bodyDashParserMod.OptionsJson | scala.Boolean] = js.native
+  var cors: js.UndefOr[corsLib.corsMod.CorsOptions | scala.Boolean] = js.native
   var disableHealthCheck: js.UndefOr[scala.Boolean] = js.native
-  var onHealthCheck: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.eNs.Request, js.Promise[_]]] = js.native
+  var onHealthCheck: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.Request, js.Promise[_]]] = js.native
   var path: js.UndefOr[java.lang.String] = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without

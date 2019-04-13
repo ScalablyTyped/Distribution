@@ -7,18 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "SkyBox")
 @js.native
-class SkyBox protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.SkyBox {
+class SkyBox protected () extends js.Object {
   def this(options: cesiumLib.Anon_Show) = this()
-  /* CompleteClass */
-  override var show: scala.Boolean = js.native
-  /* CompleteClass */
-  override var sources: js.Any = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
-  /* CompleteClass */
-  override def update(): scala.Unit = js.native
+  var show: scala.Boolean = js.native
+  var sources: js.Any = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
+  def update(): scala.Unit = js.native
 }
 

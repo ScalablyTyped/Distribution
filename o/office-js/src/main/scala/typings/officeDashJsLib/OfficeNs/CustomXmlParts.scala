@@ -7,28 +7,17 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents a collection of CustomXmlPart objects.
-  *
+  * 
   * @remarks
-  * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this interface.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-  *   <tr><td><strong> Word </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
-  *  </table>
+  * **Hosts**: Word
   */
 @js.native
 trait CustomXmlParts extends js.Object {
   /**
     * Asynchronously adds a new custom XML part to a file.
+    * 
+    * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xml The XML to add to the newly created custom XML part.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -45,6 +34,9 @@ trait CustomXmlParts extends js.Object {
   ): scala.Unit = js.native
   /**
     * Asynchronously gets the specified custom XML part by its id.
+    * 
+    * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param id The GUID of the custom XML part, including opening and closing braces.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -62,6 +54,9 @@ trait CustomXmlParts extends js.Object {
   ): scala.Unit = js.native
   /**
     * Asynchronously gets the specified custom XML part(s) by its namespace.
+    * 
+    * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param ns  The namespace URI.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.

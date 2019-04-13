@@ -65,3 +65,8 @@ class VaultObjectSearchOperations ()
   ): mfilesLib.IObjectSearchResults = js.native
 }
 
+@JSGlobal("MFiles.VaultObjectSearchOperations")
+@js.native
+object VaultObjectSearchOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultObjectSearchOperations]
+

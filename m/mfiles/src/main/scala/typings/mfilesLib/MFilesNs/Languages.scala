@@ -15,3 +15,8 @@ class Languages ()
   override def Item(Index: scala.Double): mfilesLib.ILanguage = js.native
 }
 
+@JSGlobal("MFiles.Languages")
+@js.native
+object Languages
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ILanguages]
+

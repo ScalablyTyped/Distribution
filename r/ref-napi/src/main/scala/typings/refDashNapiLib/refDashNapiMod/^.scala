@@ -11,7 +11,6 @@ object ^ extends js.Object {
   var NULL: nodeLib.Buffer = js.native
   var NULL_POINTER: nodeLib.Buffer = js.native
   var endianness: java.lang.String = js.native
-  var types: refDashNapiLib.Anon_Bool = js.native
   def _attach(buffer: nodeLib.Buffer, `object`: js.Object): scala.Unit = js.native
   def _reinterpret(buffer: nodeLib.Buffer, size: scala.Double): nodeLib.Buffer = js.native
   def _reinterpret(buffer: nodeLib.Buffer, size: scala.Double, offset: scala.Double): nodeLib.Buffer = js.native

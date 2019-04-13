@@ -22,7 +22,7 @@ package object expressDashServeDashStaticDashCoreMod {
     /* name */ java.lang.String, 
     js.Any
   ]
-  type RequestRanges = rangeDashParserLib.rangeDashParserMod.RangeParserNs.Ranges
+  type RequestRanges = rangeDashParserLib.rangeDashParserMod.Ranges
   type Router = IRouter
   type Send = js.Function1[/* body */ js.UndefOr[js.Any], Response]
 }

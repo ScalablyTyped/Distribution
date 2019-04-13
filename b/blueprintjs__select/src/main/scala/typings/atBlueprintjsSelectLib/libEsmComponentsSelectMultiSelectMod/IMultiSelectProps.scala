@@ -29,6 +29,6 @@ trait IMultiSelectProps[T]
     stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.ITagInputProps] with js.Object
   ] = js.native
   /** Custom renderer to transform an item into tag content. */
-  def tagRenderer(item: T): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def tagRenderer(item: T): reactLib.reactMod.ReactNode = js.native
 }
 

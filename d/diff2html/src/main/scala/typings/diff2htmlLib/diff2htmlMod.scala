@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("diff2html", JSImport.Namespace)
 @js.native
-object diff2htmlMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Diff2Html]
+object diff2htmlMod extends js.Object {
+  var Diff2Html: diff2htmlLib.Diff2HtmlNs.Diff2Html = js.native
+}
 

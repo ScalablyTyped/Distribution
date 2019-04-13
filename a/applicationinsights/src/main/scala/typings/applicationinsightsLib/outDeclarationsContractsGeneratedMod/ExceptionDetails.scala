@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "ExceptionDetails")
 @js.native
 class ExceptionDetails ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedExceptionDetailsMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedExceptionDetailsMod.^
 

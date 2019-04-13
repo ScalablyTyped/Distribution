@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 package object styledDashComponentsMod {
   type AnyStyledComponent = (StyledComponent[js.Any, js.Any, js.Any, js.Any]) | (StyledComponent[js.Any, js.Any, js.Any, scala.Nothing])
-  type BaseThemeProviderComponent[T /* <: js.Object */, U /* <: js.Object */] = reactLib.reactMod.ReactNs.ComponentClass[ThemeProviderProps[T, U], reactLib.reactMod.ReactNs.ComponentState]
+  type BaseThemeProviderComponent[T /* <: js.Object */, U /* <: js.Object */] = reactLib.reactMod.ComponentClass[ThemeProviderProps[T, U], reactLib.reactMod.ComponentState]
   type BaseWithThemeFnInterface[T /* <: js.Object */] = js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[js.Any], 
-    reactLib.reactMod.ReactNs.ForwardRefExoticComponent[
+    /* component */ reactLib.reactMod.ComponentType[js.Any], 
+    reactLib.reactMod.ForwardRefExoticComponent[
       styledDashComponentsLib.WithOptionalTheme[
-        reactLib.reactMod.ReactNs.ComponentPropsWithRef[reactLib.reactMod.ReactNs.ComponentType[js.Any]], 
+        reactLib.reactMod.ComponentPropsWithRef[reactLib.reactMod.ComponentType[js.Any]], 
         T
       ]
     ]
@@ -21,7 +21,7 @@ package object styledDashComponentsMod {
   type CSSObject = (csstypeLib.csstypeMod.Properties[java.lang.String | scala.Double]) with styledDashComponentsLib.styledDashComponentsLibStrings.CSSObject with js.Any
   type CSSProp[T] = java.lang.String | FlattenInterpolation[ThemeProps[T]]
   type FalseyValue = js.UndefOr[scala.Null | styledDashComponentsLib.styledDashComponentsLibNumbers.`false`]
-  type GlobalStyleComponent[P, T] = reactLib.reactMod.ReactNs.ComponentClass[ThemedGlobalStyledClassProps[P, T], reactLib.reactMod.ReactNs.ComponentState]
+  type GlobalStyleComponent[P, T] = reactLib.reactMod.ComponentClass[ThemedGlobalStyledClassProps[P, T], reactLib.reactMod.ComponentState]
   /* Rewritten from type alias, can be one of: 
     - InterpolationValue
     - FlattenInterpolation[P]
@@ -34,7 +34,7 @@ package object styledDashComponentsMod {
   // I really want to avoid this if possible but it's the only way to use nesting with object styles...
   java.lang.String) with (StyledComponentBase[C, T, O, A])
   type StyledComponentInnerAttrs[C /* <: AnyStyledComponent */] = js.Any
-  type StyledComponentInnerComponent[C /* <: reactLib.reactMod.ReactNs.ComponentType[_] */] = C
+  type StyledComponentInnerComponent[C /* <: reactLib.reactMod.ComponentType[_] */] = C
   type StyledComponentInnerOtherProps[C /* <: AnyStyledComponent */] = js.Any
   type StyledComponentProps[// The Component from whose props are derived
   C /* <: java.lang.String */, // The Theme from the current context
@@ -42,12 +42,12 @@ package object styledDashComponentsMod {
   O /* <: js.Object */, // The props that are made optional by .attrs
   A /* <: java.lang.String */] = (styledDashComponentsLib.WithOptionalTheme[
     (styledDashComponentsLib.Omit[
-      (styledDashComponentsLib.ReactDefaultizedProps[C, reactLib.reactMod.ReactNs.ComponentPropsWithRef[C]]) with O, 
+      (styledDashComponentsLib.ReactDefaultizedProps[C, reactLib.reactMod.ComponentPropsWithRef[C]]) with O, 
       A
-    ]) with (stdLib.Partial[stdLib.Pick[reactLib.reactMod.ReactNs.ComponentPropsWithRef[C] with O, A]]), 
+    ]) with (stdLib.Partial[stdLib.Pick[reactLib.reactMod.ComponentPropsWithRef[C] with O, A]]), 
     T
   ]) with styledDashComponentsLib.WithChildrenIfReactComponentClass[C]
-  type StyledComponentPropsWithRef[C /* <: java.lang.String */] = reactLib.reactMod.ReactNs.ComponentPropsWithRef[C] | reactLib.reactMod.ReactNs.ComponentPropsWithRef[StyledComponentInnerComponent[C]]
+  type StyledComponentPropsWithRef[C /* <: java.lang.String */] = reactLib.reactMod.ComponentPropsWithRef[C] | reactLib.reactMod.ComponentPropsWithRef[StyledComponentInnerComponent[C]]
   type StyledFunction[C /* <: java.lang.String */] = ThemedStyledFunction[C, js.Any, js.Object, scala.Nothing]
   type StyledInterface = ThemedStyledInterface[DefaultTheme]
   type StyledProps[P] = ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[DefaultTheme]]

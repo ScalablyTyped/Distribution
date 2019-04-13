@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
 /**
   * @param {string} id A reference to a DIV by its ID as a string.
   */
-class Palette ()
-  extends goLib.goMod.goNs.Palette {
+class Palette () extends Diagram {
   /**
     * @param {HTMLDivElement} div A reference to a DIV in the DOM.
     */

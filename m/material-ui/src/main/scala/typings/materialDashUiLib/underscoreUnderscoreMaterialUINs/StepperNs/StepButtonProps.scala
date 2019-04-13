@@ -10,10 +10,10 @@ trait StepButtonProps
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String | scala.Double] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onTouchStart: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[js.Object]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String | scala.Double] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onTouchStart: js.UndefOr[reactLib.reactMod.TouchEventHandler[js.Object]] = js.undefined
 }
 
 object StepButtonProps {
@@ -22,7 +22,7 @@ object StepButtonProps {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
-    containerElement: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    containerElement: reactLib.reactMod.ReactNode | java.lang.String = null,
     disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined,
@@ -30,18 +30,18 @@ object StepButtonProps {
     focusRippleColor: java.lang.String = null,
     focusRippleOpacity: scala.Int | scala.Double = null,
     href: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode | java.lang.String | scala.Double = null,
+    icon: reactLib.reactMod.ReactNode | java.lang.String | scala.Double = null,
     keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onTouchStart: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onTouchStart: reactLib.reactMod.TouchEventHandler[js.Object] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     target: java.lang.String = null,
     touchRippleColor: java.lang.String = null,

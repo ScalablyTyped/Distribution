@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Engine")
 @js.native
-class Engine ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Engine {
+class Engine () extends js.Object {
   /**
     * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
     *
@@ -16,8 +15,7 @@ class Engine ()
     * @type grid
     * @default a Matter.Grid instance
     */
-  /* CompleteClass */
-  override var broadphase: matterDashJsLib.matterDashJsMod.MatterNs.Grid = js.native
+  var broadphase: Grid = js.native
   /**
     * An integer `Number` that specifies the number of constraint iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -27,8 +25,7 @@ class Engine ()
     * @type number
     * @default 2
     */
-  /* CompleteClass */
-  override var constraintIterations: scala.Double = js.native
+  var constraintIterations: scala.Double = js.native
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
     * Sleeping can improve stability and performance, but often at the expense of accuracy.
@@ -37,18 +34,15 @@ class Engine ()
     * @type boolean
     * @default false
     */
-  /* CompleteClass */
-  override var enableSleeping: scala.Boolean = js.native
+  var enableSleeping: scala.Boolean = js.native
   /**
     * A flag that specifies whether the engine is running or not.
     */
-  /* CompleteClass */
-  override var enabled: scala.Boolean = js.native
+  var enabled: scala.Boolean = js.native
   /**
     * Collision pair set for this `Engine`.
     */
-  /* CompleteClass */
-  override var pairs: js.Any = js.native
+  var pairs: js.Any = js.native
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -57,8 +51,7 @@ class Engine ()
     * @type number
     * @default 6
     */
-  /* CompleteClass */
-  override var positionIterations: scala.Double = js.native
+  var positionIterations: scala.Double = js.native
   /**
     * An instance of a `Render` controller. The default value is a `Matter.Render` instance created by `Engine.create`.
     * One may also develop a custom renderer module based on `Matter.Render` and pass an instance of it to `Engine.create` via `options.render`.
@@ -70,16 +63,14 @@ class Engine ()
     * @type render
     * @default a Matter.Render instance
     */
-  /* CompleteClass */
-  override var render: matterDashJsLib.matterDashJsMod.MatterNs.Render = js.native
+  var render: Render = js.native
   /**
     * An `Object` containing properties regarding the timing systems of the engine.
     *
     * @property timing
     * @type object
     */
-  /* CompleteClass */
-  override var timing: matterDashJsLib.matterDashJsMod.MatterNs.IEngineTimingOptions = js.native
+  var timing: IEngineTimingOptions = js.native
   /**
     * An integer `Number` that specifies the number of velocity iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -88,8 +79,7 @@ class Engine ()
     * @type number
     * @default 4
     */
-  /* CompleteClass */
-  override var velocityIterations: scala.Double = js.native
+  var velocityIterations: scala.Double = js.native
   /**
     * A `World` composite object that will contain all simulated bodies and constraints.
     *
@@ -97,8 +87,7 @@ class Engine ()
     * @type world
     * @default a Matter.World instance
     */
-  /* CompleteClass */
-  override var world: matterDashJsLib.matterDashJsMod.MatterNs.World = js.native
+  var world: World = js.native
 }
 
 /* static members */
@@ -110,7 +99,7 @@ object Engine extends js.Object {
     * @method clear
     * @param {engine} engine
     */
-  def clear(engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine): scala.Unit = js.native
+  def clear(engine: matterDashJsLib.matterDashJsMod.Engine): scala.Unit = js.native
   /**
     * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -130,30 +119,27 @@ object Engine extends js.Object {
     * @return {engine} engine
     * @deprecated
     */
-  def create(): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
-  def create(element: matterDashJsLib.matterDashJsMod.MatterNs.IEngineDefinition): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
+  def create(): matterDashJsLib.matterDashJsMod.Engine = js.native
+  def create(element: matterDashJsLib.matterDashJsMod.IEngineDefinition): matterDashJsLib.matterDashJsMod.Engine = js.native
   def create(
-    element: matterDashJsLib.matterDashJsMod.MatterNs.IEngineDefinition,
-    options: matterDashJsLib.matterDashJsMod.MatterNs.IEngineDefinition
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
-  def create(element: stdLib.HTMLElement): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
-  def create(element: stdLib.HTMLElement, options: matterDashJsLib.matterDashJsMod.MatterNs.IEngineDefinition): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
+    element: matterDashJsLib.matterDashJsMod.IEngineDefinition,
+    options: matterDashJsLib.matterDashJsMod.IEngineDefinition
+  ): matterDashJsLib.matterDashJsMod.Engine = js.native
+  def create(element: stdLib.HTMLElement): matterDashJsLib.matterDashJsMod.Engine = js.native
+  def create(element: stdLib.HTMLElement, options: matterDashJsLib.matterDashJsMod.IEngineDefinition): matterDashJsLib.matterDashJsMod.Engine = js.native
   /**
     * Merges two engines by keeping the configuration of `engineA` but replacing the world with the one from `engineB`.
     * @method merge
     * @param {engine} engineA
     * @param {engine} engineB
     */
-  def merge(
-    engineA: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
-    engineB: matterDashJsLib.matterDashJsMod.MatterNs.Engine
-  ): scala.Unit = js.native
+  def merge(engineA: matterDashJsLib.matterDashJsMod.Engine, engineB: matterDashJsLib.matterDashJsMod.Engine): scala.Unit = js.native
   /**
     * An alias for `Runner.run`, see `Matter.Runner` for more information.
     * @method run
     * @param {engine} engine
     */
-  def run(enige: matterDashJsLib.matterDashJsMod.MatterNs.Engine): scala.Unit = js.native
+  def run(enige: matterDashJsLib.matterDashJsMod.Engine): scala.Unit = js.native
   /**
     * Moves the simulation forward in time by `delta` ms.
     * The `correction` argument is an optional `Number` that specifies the time correction factor to apply to the update.
@@ -169,12 +155,8 @@ object Engine extends js.Object {
     * @param {number} [delta=16.666]
     * @param {number} [correction=1]
     */
-  def update(engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
-  def update(engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine, delta: scala.Double): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
-  def update(
-    engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
-    delta: scala.Double,
-    correction: scala.Double
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Engine = js.native
+  def update(engine: matterDashJsLib.matterDashJsMod.Engine): matterDashJsLib.matterDashJsMod.Engine = js.native
+  def update(engine: matterDashJsLib.matterDashJsMod.Engine, delta: scala.Double): matterDashJsLib.matterDashJsMod.Engine = js.native
+  def update(engine: matterDashJsLib.matterDashJsMod.Engine, delta: scala.Double, correction: scala.Double): matterDashJsLib.matterDashJsMod.Engine = js.native
 }
 

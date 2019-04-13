@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait IconProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[CustomIconComponentProps]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
-  var onKeyUp: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[CustomIconComponentProps]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var rotate: js.UndefOr[scala.Double] = js.undefined
   var spin: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var theme: js.UndefOr[ThemeType] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
@@ -27,14 +27,14 @@ object IconProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ComponentType[CustomIconComponentProps] = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement] = null,
+    component: reactLib.reactMod.ComponentType[CustomIconComponentProps] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement] = null,
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
     rotate: scala.Int | scala.Double = null,
     spin: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     theme: ThemeType = null,
     title: java.lang.String = null,

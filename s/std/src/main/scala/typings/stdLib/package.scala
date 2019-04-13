@@ -45,6 +45,8 @@ package object stdLib {
     */
   type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
   type DOMHighResTimeStamp = scala.Double
+  /** Used by the dataset HTML attribute to represent data for custom attributes added to elements. */
+  type DOMStringMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type DOMTimeStamp = scala.Double
   type DecodeErrorCallback = js.Function1[/* error */ DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ AudioBuffer, scala.Unit]
@@ -193,6 +195,7 @@ package object stdLib {
     js.Thenable[js.Object]
   ]
   type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit]
+  type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[PropertyDescriptor]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
   type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, scala.Double]
   type RTCAnswerOptions = RTCOfferAnswerOptions

@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY extends js.Object {
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var numberOfLevelZeroTilesX: js.UndefOr[scala.Double] = js.undefined
   var numberOfLevelZeroTilesY: js.UndefOr[scala.Double] = js.undefined
-  var rectangleNortheastInMeters: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian2] = js.undefined
-  var rectangleSouthwestInMeters: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian2] = js.undefined
+  var rectangleNortheastInMeters: js.UndefOr[cesiumLib.cesiumMod.Cartesian2] = js.undefined
+  var rectangleSouthwestInMeters: js.UndefOr[cesiumLib.cesiumMod.Cartesian2] = js.undefined
 }
 
 object Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY {
   @scala.inline
   def apply(
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     numberOfLevelZeroTilesX: scala.Int | scala.Double = null,
     numberOfLevelZeroTilesY: scala.Int | scala.Double = null,
-    rectangleNortheastInMeters: cesiumLib.cesiumMod.CesiumNs.Cartesian2 = null,
-    rectangleSouthwestInMeters: cesiumLib.cesiumMod.CesiumNs.Cartesian2 = null
+    rectangleNortheastInMeters: cesiumLib.cesiumMod.Cartesian2 = null,
+    rectangleSouthwestInMeters: cesiumLib.cesiumMod.Cartesian2 = null
   ): Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY = {
     val __obj = js.Dynamic.literal()
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)

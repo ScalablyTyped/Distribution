@@ -14,17 +14,17 @@ object PaginateRawOptions {
   def apply[T](
     raw: sequelizeDashCursorDashPaginationLib.sequelizeDashCursorDashPaginationLibNumbers.`true`,
     after: java.lang.String = null,
-    attributes: sequelizeLib.sequelizeMod.sequelizeNs.FindOptionsAttributesArray | sequelizeLib.Anon_Exclude = null,
+    attributes: sequelizeLib.sequelizeMod.FindOptionsAttributesArray | sequelizeLib.Anon_Exclude = null,
     before: java.lang.String = null,
     desc: js.UndefOr[scala.Boolean] = js.undefined,
     include: js.Array[
-      (sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _, _]) | sequelizeLib.sequelizeMod.sequelizeNs.IncludeOptions
+      (sequelizeLib.sequelizeMod.Model[_, _, _]) | sequelizeLib.sequelizeMod.IncludeOptions
     ] = null,
     limit: scala.Int | scala.Double = null,
     paginationField: java.lang.String = null,
     subQuery: js.UndefOr[scala.Boolean] = js.undefined,
-    where: sequelizeLib.sequelizeMod.sequelizeNs.WhereOptions[T] | sequelizeLib.sequelizeMod.sequelizeNs.where | sequelizeLib.sequelizeMod.sequelizeNs.fn | (js.Array[
-      sequelizeLib.sequelizeMod.sequelizeNs.col | sequelizeLib.sequelizeMod.sequelizeNs.and | sequelizeLib.sequelizeMod.sequelizeNs.or | java.lang.String
+    where: sequelizeLib.sequelizeMod.WhereOptions[T] | sequelizeLib.sequelizeMod.where | sequelizeLib.sequelizeMod.fn | (js.Array[
+      sequelizeLib.sequelizeMod.col | sequelizeLib.sequelizeMod.and | sequelizeLib.sequelizeMod.or | java.lang.String
     ]) = null
   ): PaginateRawOptions[T] = {
     val __obj = js.Dynamic.literal(raw = raw)

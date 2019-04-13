@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("go", "EnumValue")
 @js.native
-class EnumValue ()
-  extends goLib.goMod.goNs.EnumValue
+class EnumValue () extends js.Object
 

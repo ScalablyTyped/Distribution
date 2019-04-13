@@ -21,3 +21,8 @@ class OCRPages ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.OCRPages")
+@js.native
+object OCRPages
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRPages]
+

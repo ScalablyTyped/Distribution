@@ -2979,18 +2979,18 @@ object SdkNs extends js.Object {
       relatedEntities: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[
           microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityReference
         ]
-    ): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+    ): qLib.qMod.Promise[scala.Unit] = js.native
     /**
       * Creates an entity record and returns a string representation of the GUID value that is the Id of the created entity.
       * @param entity An entity instance.
       */
-    def create(entity: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity): qLib.qMod.QNs.Promise[java.lang.String] = js.native
+    def create(entity: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity): qLib.qMod.Promise[java.lang.String] = js.native
     /**
       * Deletes an entity record
       * @param entityName The LogicalName of the entity to delete.
       * @param id An ID of the record to delete.
       */
-    def del(entityName: java.lang.String, id: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+    def del(entityName: java.lang.String, id: java.lang.String): qLib.qMod.Promise[scala.Unit] = js.native
     /**
       * Removes a link between records.
       * @param entityName The logical name of the entity that is specified in the entityId parameter.
@@ -3005,12 +3005,12 @@ object SdkNs extends js.Object {
       relatedEntities: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Collection[
           microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityReference
         ]
-    ): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+    ): qLib.qMod.Promise[scala.Unit] = js.native
     /**
       * Executes a SOAP Request using the SOAPAction Execute.
       * @param request A request object.
       */
-    def execute(request: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.OrganizationRequest): qLib.qMod.QNs.Promise[
+    def execute(request: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.OrganizationRequest): qLib.qMod.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.OrganizationResponse
       ] = js.native
     /**
@@ -3023,14 +3023,14 @@ object SdkNs extends js.Object {
       entityName: java.lang.String,
       id: java.lang.String,
       columnSet: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.ColumnSet
-    ): qLib.qMod.QNs.Promise[microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity] = js.native
+    ): qLib.qMod.Promise[microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity] = js.native
     /**
       * Retrieves the results of a query
       * @param query An Sdk.Query.FetchExpression query.
       */
     def retrieveMultiple(
       query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.FetchExpression
-    ): qLib.qMod.QNs.Promise[
+    ): qLib.qMod.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityCollection
       ] = js.native
     /**
@@ -3039,7 +3039,7 @@ object SdkNs extends js.Object {
       */
     def retrieveMultiple(
       query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.QueryByAttribute
-    ): qLib.qMod.QNs.Promise[
+    ): qLib.qMod.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityCollection
       ] = js.native
     /**
@@ -3048,14 +3048,14 @@ object SdkNs extends js.Object {
       */
     def retrieveMultiple(
       query: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.QueryNs.QueryExpression
-    ): qLib.qMod.QNs.Promise[
+    ): qLib.qMod.Promise[
         microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.EntityCollection
       ] = js.native
     /**
       * Updates an entity instance.
       * @param entity An entity instance to update.
       */
-    def update(entity: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity): qLib.qMod.QNs.Promise[scala.Boolean] = js.native
+    def update(entity: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.Entity): qLib.qMod.Promise[scala.Boolean] = js.native
   }
   
   @JSName("Query")

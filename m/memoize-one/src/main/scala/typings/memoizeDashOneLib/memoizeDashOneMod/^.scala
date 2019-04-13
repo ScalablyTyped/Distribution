@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](resultFn: T): T = js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](resultFn: T, isEqual: memoizeDashOneLib.memoizeDashOneMod.memoizeOneNs.EqualityFn): T = js.native
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](resultFn: T, isEqual: EqualityFn): T = js.native
 }
 

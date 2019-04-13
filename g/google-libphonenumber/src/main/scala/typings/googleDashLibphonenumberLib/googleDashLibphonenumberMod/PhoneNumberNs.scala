@@ -20,6 +20,5 @@ object PhoneNumberNs extends js.Object {
       ] = js.native
   }
   
-  type CountryCodeSource = googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberNs.CountryCodeSource
 }
 

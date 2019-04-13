@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 trait Anon_Asynchronous extends js.Object {
   var asynchronous: js.UndefOr[scala.Boolean] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var granularity: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var id: js.UndefOr[js.Any] = js.undefined
-  var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Material] = js.undefined
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.Material] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
   var rotation: js.UndefOr[scala.Double] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var textureRotationAngle: js.UndefOr[scala.Double] = js.undefined
@@ -24,12 +24,12 @@ object Anon_Asynchronous {
   def apply(
     asynchronous: js.UndefOr[scala.Boolean] = js.undefined,
     debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     granularity: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
     id: js.Any = null,
-    material: cesiumLib.cesiumMod.CesiumNs.Material = null,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null,
+    material: cesiumLib.cesiumMod.Material = null,
+    rectangle: cesiumLib.cesiumMod.Rectangle = null,
     rotation: scala.Int | scala.Double = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     textureRotationAngle: scala.Int | scala.Double = null

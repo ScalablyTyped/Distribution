@@ -31,7 +31,7 @@ trait EdiTextProps extends js.Object {
     * A simple hint message appears at the bottom of input element.
     * Any valid element is allowed.
     */
-  var hint: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var hint: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Props to be passed to input element.
     * Any kind of valid DOM attributes are welcome
@@ -97,7 +97,7 @@ object EdiTextProps {
     editButtonClassName: java.lang.String = null,
     editButtonContent: js.Any = null,
     hideIcons: js.UndefOr[scala.Boolean] = js.undefined,
-    hint: reactLib.reactMod.ReactNs.ReactNode = null,
+    hint: reactLib.reactMod.ReactNode = null,
     inputProps: js.Object = null,
     onCancel: /* repeated */ js.Any => _ = null,
     onValidationFail: /* repeated */ java.lang.String => _ = null,

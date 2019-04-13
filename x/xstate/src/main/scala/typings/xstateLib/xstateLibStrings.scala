@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object xstateLibStrings {
   @js.native
-  sealed trait Anon_After extends js.Object
-  
-  @js.native
   sealed trait PropertyAssigner extends js.Object
   
   @js.native
@@ -26,6 +23,9 @@ object xstateLibStrings {
   
   @js.native
   sealed trait TransitionsDefinition extends js.Object
+  
+  @js.native
+  sealed trait actions extends js.Object
   
   @js.native
   sealed trait assign extends js.Object
@@ -56,8 +56,9 @@ object xstateLibStrings {
   @js.native
   sealed trait shallow extends js.Object
   
-  @scala.inline
-  def Anon_After: Anon_After = "Anon_After".asInstanceOf[Anon_After]
+  @js.native
+  sealed trait xstateDOTcond extends js.Object
+  
   @scala.inline
   def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
   @scala.inline
@@ -70,6 +71,8 @@ object xstateLibStrings {
   def TransitionsConfig: TransitionsConfig = "TransitionsConfig".asInstanceOf[TransitionsConfig]
   @scala.inline
   def TransitionsDefinition: TransitionsDefinition = "TransitionsDefinition".asInstanceOf[TransitionsDefinition]
+  @scala.inline
+  def actions: actions = "actions".asInstanceOf[actions]
   @scala.inline
   def assign: assign = "assign".asInstanceOf[assign]
   @scala.inline
@@ -86,5 +89,7 @@ object xstateLibStrings {
   def parallel: parallel = "parallel".asInstanceOf[parallel]
   @scala.inline
   def shallow: shallow = "shallow".asInstanceOf[shallow]
+  @scala.inline
+  def xstateDOTcond: xstateDOTcond = "xstate.cond".asInstanceOf[xstateDOTcond]
 }
 

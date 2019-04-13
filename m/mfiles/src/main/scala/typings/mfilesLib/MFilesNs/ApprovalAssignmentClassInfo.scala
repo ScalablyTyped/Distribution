@@ -19,3 +19,8 @@ class ApprovalAssignmentClassInfo ()
   override def Clone(): mfilesLib.IApprovalAssignmentClassInfo = js.native
 }
 
+@JSGlobal("MFiles.ApprovalAssignmentClassInfo")
+@js.native
+object ApprovalAssignmentClassInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IApprovalAssignmentClassInfo]
+

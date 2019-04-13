@@ -17,3 +17,8 @@ class OCRPage ()
   override def Clone(): mfilesLib.IOCRPage = js.native
 }
 
+@JSGlobal("MFiles.OCRPage")
+@js.native
+object OCRPage
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRPage]
+

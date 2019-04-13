@@ -19,3 +19,8 @@ class FileVer ()
   override def CloneFrom(FileVer: mfilesLib.IFileVer): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.FileVer")
+@js.native
+object FileVer
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFileVer]
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashCreditDashCardsLibComponents {
   @scala.inline
-  def ReactDashCreditDashCards: reactLib.reactMod.ReactNs.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps] = js.constructorOf[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps]]
+  def ReactDashCreditDashCards: reactLib.reactMod.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps] = js.constructorOf[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps]]
   @scala.inline
   def ReactCreditCardProps: reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps.type = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps
   type ReactCreditCardProps = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps

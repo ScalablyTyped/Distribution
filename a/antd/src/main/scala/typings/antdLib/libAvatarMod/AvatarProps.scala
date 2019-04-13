@@ -22,7 +22,7 @@ trait AvatarProps extends js.Object {
   var src: js.UndefOr[java.lang.String] = js.undefined
   /** Srcset of image avatar */
   var srcSet: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object AvatarProps {
@@ -38,7 +38,7 @@ object AvatarProps {
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | scala.Double = null,
     src: java.lang.String = null,
     srcSet: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AvatarProps = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt)

@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * @enum
-    */
-  val ClientCertificateType: chromeDashAppsLib.Anon_ECDSASIGN = js.native
-  /**
     * @description
     * Passes the key pair of *certificate* for usage with
     * platformKeys.subtleCrypto to *callback*.

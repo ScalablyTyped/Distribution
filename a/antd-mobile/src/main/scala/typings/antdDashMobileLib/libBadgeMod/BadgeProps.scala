@@ -10,7 +10,7 @@ trait BadgeProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   var hot: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object BadgeProps {
@@ -23,7 +23,7 @@ object BadgeProps {
     overflowCount: scala.Int | scala.Double = null,
     prefixCls: java.lang.String = null,
     size: antdDashMobileLib.antdDashMobileLibStrings.large | antdDashMobileLib.antdDashMobileLibStrings.small = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     text: js.Any = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()

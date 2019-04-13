@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-link-http-common", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val fallbackHttpConfig: apolloDashLinkDashHttpDashCommonLib.Anon_Headers = js.native
   def checkFetcher(
     fetcher: js.Function2[
       /* input */ js.UndefOr[java.lang.String | stdLib.Request], 

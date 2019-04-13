@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IToastScope
-  extends angularLib.angularMod.angularNs.IRootScopeService {
+  extends angularLib.angularMod.IRootScopeService {
   var message: java.lang.String = js.native
   var options: IToastConfig = js.native
   var title: java.lang.String = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("express-ws-routes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressDashWsDashRoutesLib.expressDashWsDashRoutesMod.expressWsRoutesNs.Express = js.native
+  def apply(): Express = js.native
 }
 

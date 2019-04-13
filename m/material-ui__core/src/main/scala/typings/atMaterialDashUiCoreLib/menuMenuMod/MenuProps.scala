@@ -31,8 +31,8 @@ object MenuProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MenuClassKey]] = null,
     disableAutoFocusItem: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDuration: scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal()

@@ -9,706 +9,478 @@ import scala.scalajs.js.annotation._
 trait WorkLink
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_WorkLink: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ClientConfiguration = js.native
+  var config_WorkLink: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Imports the root certificate of a certificate authority (CA) used to obtain TLS certificates used by associated websites within the company network.
     */
-  def associateWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associateWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateWebsiteCertificateAuthority(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityResponse, 
+      /* data */ AssociateWebsiteCertificateAuthorityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Imports the root certificate of a certificate authority (CA) used to obtain TLS certificates used by associated websites within the company network.
     */
-  def associateWebsiteCertificateAuthority(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associateWebsiteCertificateAuthority(params: AssociateWebsiteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateWebsiteCertificateAuthority(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityRequest,
+    params: AssociateWebsiteCertificateAuthorityRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityResponse, 
+      /* data */ AssociateWebsiteCertificateAuthorityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.AssociateWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a fleet. A fleet consists of resources and the configuration that delivers associated websites to authorized users who download and set up the Amazon WorkLink app.
     */
-  def createFleet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createFleet(): awsDashSdkLib.libRequestMod.Request[CreateFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createFleet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetResponse, 
+      /* data */ CreateFleetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a fleet. A fleet consists of resources and the configuration that delivers associated websites to authorized users who download and set up the Amazon WorkLink app.
     */
-  def createFleet(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createFleet(params: CreateFleetRequest): awsDashSdkLib.libRequestMod.Request[CreateFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createFleet(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetRequest,
+    params: CreateFleetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetResponse, 
+      /* data */ CreateFleetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.CreateFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a fleet. Prevents users from accessing previously associated websites. 
     */
-  def deleteFleet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFleet(): awsDashSdkLib.libRequestMod.Request[DeleteFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFleet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetResponse, 
+      /* data */ DeleteFleetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a fleet. Prevents users from accessing previously associated websites. 
     */
-  def deleteFleet(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFleet(params: DeleteFleetRequest): awsDashSdkLib.libRequestMod.Request[DeleteFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFleet(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetRequest,
+    params: DeleteFleetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetResponse, 
+      /* data */ DeleteFleetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DeleteFleetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFleetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the configuration for delivering audit streams to the customer account.
     */
-  def describeAuditStreamConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAuditStreamConfiguration(): awsDashSdkLib.libRequestMod.Request[DescribeAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAuditStreamConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationResponse, 
+      /* data */ DescribeAuditStreamConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the configuration for delivering audit streams to the customer account.
     */
-  def describeAuditStreamConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeAuditStreamConfiguration(params: DescribeAuditStreamConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DescribeAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAuditStreamConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationRequest,
+    params: DescribeAuditStreamConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationResponse, 
+      /* data */ DescribeAuditStreamConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the networking configuration to access the internal websites associated with the specified fleet.
     */
-  def describeCompanyNetworkConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCompanyNetworkConfiguration(): awsDashSdkLib.libRequestMod.Request[DescribeCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCompanyNetworkConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationResponse, 
+      /* data */ DescribeCompanyNetworkConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the networking configuration to access the internal websites associated with the specified fleet.
     */
-  def describeCompanyNetworkConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCompanyNetworkConfiguration(params: DescribeCompanyNetworkConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DescribeCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCompanyNetworkConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationRequest,
+    params: DescribeCompanyNetworkConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationResponse, 
+      /* data */ DescribeCompanyNetworkConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information about a user's device.
     */
-  def describeDevice(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDevice(): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDevice(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceResponse, 
+      /* data */ DescribeDeviceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information about a user's device.
     */
-  def describeDevice(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDevice(params: DescribeDeviceRequest): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDevice(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceRequest,
+    params: DescribeDeviceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceResponse, 
+      /* data */ DescribeDeviceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the device policy configuration for the specified fleet.
     */
-  def describeDevicePolicyConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDevicePolicyConfiguration(): awsDashSdkLib.libRequestMod.Request[DescribeDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDevicePolicyConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationResponse, 
+      /* data */ DescribeDevicePolicyConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the device policy configuration for the specified fleet.
     */
-  def describeDevicePolicyConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDevicePolicyConfiguration(params: DescribeDevicePolicyConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DescribeDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDevicePolicyConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationRequest,
+    params: DescribeDevicePolicyConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationResponse, 
+      /* data */ DescribeDevicePolicyConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides basic information for the specified fleet, excluding identity provider, networking, and device configuration details.
     */
-  def describeFleetMetadata(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeFleetMetadata(): awsDashSdkLib.libRequestMod.Request[DescribeFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeFleetMetadata(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataResponse, 
+      /* data */ DescribeFleetMetadataResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides basic information for the specified fleet, excluding identity provider, networking, and device configuration details.
     */
-  def describeFleetMetadata(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeFleetMetadata(params: DescribeFleetMetadataRequest): awsDashSdkLib.libRequestMod.Request[DescribeFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeFleetMetadata(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataRequest,
+    params: DescribeFleetMetadataRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataResponse, 
+      /* data */ DescribeFleetMetadataResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the identity provider configuration of the specified fleet.
     */
-  def describeIdentityProviderConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeIdentityProviderConfiguration(): awsDashSdkLib.libRequestMod.Request[DescribeIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeIdentityProviderConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationResponse, 
+      /* data */ DescribeIdentityProviderConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the identity provider configuration of the specified fleet.
     */
-  def describeIdentityProviderConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeIdentityProviderConfiguration(params: DescribeIdentityProviderConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DescribeIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeIdentityProviderConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationRequest,
+    params: DescribeIdentityProviderConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationResponse, 
+      /* data */ DescribeIdentityProviderConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information about the certificate authority.
     */
-  def describeWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[DescribeWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeWebsiteCertificateAuthority(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityResponse, 
+      /* data */ DescribeWebsiteCertificateAuthorityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information about the certificate authority.
     */
-  def describeWebsiteCertificateAuthority(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeWebsiteCertificateAuthority(params: DescribeWebsiteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[DescribeWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeWebsiteCertificateAuthority(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityRequest,
+    params: DescribeWebsiteCertificateAuthorityRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityResponse, 
+      /* data */ DescribeWebsiteCertificateAuthorityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DescribeWebsiteCertificateAuthorityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Removes a certificate authority (CA).
     */
   def disassociateWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityResponse, 
+    DisassociateWebsiteCertificateAuthorityResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def disassociateWebsiteCertificateAuthority(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityResponse, 
+      /* data */ DisassociateWebsiteCertificateAuthorityResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityResponse, 
+    DisassociateWebsiteCertificateAuthorityResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Removes a certificate authority (CA).
     */
-  def disassociateWebsiteCertificateAuthority(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityResponse, 
+  def disassociateWebsiteCertificateAuthority(params: DisassociateWebsiteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[
+    DisassociateWebsiteCertificateAuthorityResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def disassociateWebsiteCertificateAuthority(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityRequest,
+    params: DisassociateWebsiteCertificateAuthorityRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityResponse, 
+      /* data */ DisassociateWebsiteCertificateAuthorityResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.DisassociateWebsiteCertificateAuthorityResponse, 
+    DisassociateWebsiteCertificateAuthorityResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Retrieves a list of devices registered with the specified fleet.
     */
-  def listDevices(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDevices(): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDevices(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesResponse, 
+      /* data */ ListDevicesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of devices registered with the specified fleet.
     */
-  def listDevices(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDevices(params: ListDevicesRequest): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDevices(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesRequest,
+    params: ListDevicesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesResponse, 
+      /* data */ ListDevicesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of fleets for the current account and Region.
     */
-  def listFleets(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFleets(): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFleets(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsResponse, 
+      /* data */ ListFleetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of fleets for the current account and Region.
     */
-  def listFleets(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFleets(params: ListFleetsRequest): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFleets(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsRequest,
+    params: ListFleetsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsResponse, 
+      /* data */ ListFleetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListFleetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of certificate authorities added for the current account and Region.
     */
-  def listWebsiteCertificateAuthorities(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listWebsiteCertificateAuthorities(): awsDashSdkLib.libRequestMod.Request[ListWebsiteCertificateAuthoritiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listWebsiteCertificateAuthorities(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesResponse, 
+      /* data */ ListWebsiteCertificateAuthoritiesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListWebsiteCertificateAuthoritiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of certificate authorities added for the current account and Region.
     */
-  def listWebsiteCertificateAuthorities(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listWebsiteCertificateAuthorities(params: ListWebsiteCertificateAuthoritiesRequest): awsDashSdkLib.libRequestMod.Request[ListWebsiteCertificateAuthoritiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listWebsiteCertificateAuthorities(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesRequest,
+    params: ListWebsiteCertificateAuthoritiesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesResponse, 
+      /* data */ ListWebsiteCertificateAuthoritiesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ListWebsiteCertificateAuthoritiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListWebsiteCertificateAuthoritiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Signs the user out from all of their devices. The user can sign in again if they have valid credentials.
     */
-  def signOutUser(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def signOutUser(): awsDashSdkLib.libRequestMod.Request[SignOutUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def signOutUser(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserResponse, 
+      /* data */ SignOutUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SignOutUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Signs the user out from all of their devices. The user can sign in again if they have valid credentials.
     */
-  def signOutUser(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def signOutUser(params: SignOutUserRequest): awsDashSdkLib.libRequestMod.Request[SignOutUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def signOutUser(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserRequest,
+    params: SignOutUserRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserResponse, 
+      /* data */ SignOutUserResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.SignOutUserResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SignOutUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the audit stream configuration for the fleet.
     */
-  def updateAuditStreamConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateAuditStreamConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAuditStreamConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationResponse, 
+      /* data */ UpdateAuditStreamConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the audit stream configuration for the fleet.
     */
-  def updateAuditStreamConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateAuditStreamConfiguration(params: UpdateAuditStreamConfigurationRequest): awsDashSdkLib.libRequestMod.Request[UpdateAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateAuditStreamConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationRequest,
+    params: UpdateAuditStreamConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationResponse, 
+      /* data */ UpdateAuditStreamConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateAuditStreamConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAuditStreamConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the company network configuration for the fleet.
     */
-  def updateCompanyNetworkConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateCompanyNetworkConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateCompanyNetworkConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationResponse, 
+      /* data */ UpdateCompanyNetworkConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the company network configuration for the fleet.
     */
-  def updateCompanyNetworkConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateCompanyNetworkConfiguration(params: UpdateCompanyNetworkConfigurationRequest): awsDashSdkLib.libRequestMod.Request[UpdateCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateCompanyNetworkConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationRequest,
+    params: UpdateCompanyNetworkConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationResponse, 
+      /* data */ UpdateCompanyNetworkConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateCompanyNetworkConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateCompanyNetworkConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the device policy configuration for the fleet.
     */
-  def updateDevicePolicyConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDevicePolicyConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDevicePolicyConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationResponse, 
+      /* data */ UpdateDevicePolicyConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the device policy configuration for the fleet.
     */
-  def updateDevicePolicyConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDevicePolicyConfiguration(params: UpdateDevicePolicyConfigurationRequest): awsDashSdkLib.libRequestMod.Request[UpdateDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDevicePolicyConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationRequest,
+    params: UpdateDevicePolicyConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationResponse, 
+      /* data */ UpdateDevicePolicyConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateDevicePolicyConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates fleet metadata, such as DisplayName.
     */
-  def updateFleetMetadata(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFleetMetadata(): awsDashSdkLib.libRequestMod.Request[UpdateFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFleetMetadata(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataResponse, 
+      /* data */ UpdateFleetMetadataResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates fleet metadata, such as DisplayName.
     */
-  def updateFleetMetadata(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFleetMetadata(params: UpdateFleetMetadataRequest): awsDashSdkLib.libRequestMod.Request[UpdateFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFleetMetadata(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataRequest,
+    params: UpdateFleetMetadataRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataResponse, 
+      /* data */ UpdateFleetMetadataResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateFleetMetadataResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the identity provider configuration for the fleet.
     */
-  def updateIdentityProviderConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateIdentityProviderConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateIdentityProviderConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationResponse, 
+      /* data */ UpdateIdentityProviderConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the identity provider configuration for the fleet.
     */
-  def updateIdentityProviderConfiguration(params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateIdentityProviderConfiguration(params: UpdateIdentityProviderConfigurationRequest): awsDashSdkLib.libRequestMod.Request[UpdateIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateIdentityProviderConfiguration(
-    params: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationRequest,
+    params: UpdateIdentityProviderConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationResponse, 
+      /* data */ UpdateIdentityProviderConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.UpdateIdentityProviderConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateIdentityProviderConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

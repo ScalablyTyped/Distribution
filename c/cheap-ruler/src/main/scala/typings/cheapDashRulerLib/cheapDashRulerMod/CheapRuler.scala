@@ -7,57 +7,19 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cheap-ruler", "CheapRuler")
 @js.native
-class CheapRuler ()
-  extends cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.CheapRuler {
-  /* CompleteClass */
-  override def along(line: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Line, dist: scala.Double): cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point = js.native
-  /* CompleteClass */
-  override def area(polygon: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Polygon): scala.Double = js.native
-  /* CompleteClass */
-  override def bearing(
-    a: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point,
-    b: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point
-  ): scala.Double = js.native
-  /* CompleteClass */
-  override def bufferBBox(bbox: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.BBox, buffer: scala.Double): cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.BBox = js.native
-  /* CompleteClass */
-  override def bufferPoint(p: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point, buffer: scala.Double): cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.BBox = js.native
-  /* CompleteClass */
-  override def destination(
-    p: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point,
-    dist: scala.Double,
-    bearing: scala.Double
-  ): cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point = js.native
-  /* CompleteClass */
-  override def distance(
-    a: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point,
-    b: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point
-  ): scala.Double = js.native
-  /* CompleteClass */
-  override def insideBBox(
-    p: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point,
-    bbox: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.BBox
-  ): scala.Boolean = js.native
-  /* CompleteClass */
-  override def lineDistance(points: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Points): scala.Double = js.native
-  /* CompleteClass */
-  override def lineSlice(
-    start: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point,
-    stop: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point,
-    line: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Line
-  ): cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Line = js.native
-  /* CompleteClass */
-  override def lineSliceAlong(
-    start: scala.Double,
-    stop: scala.Double,
-    line: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Line
-  ): cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Line = js.native
-  /* CompleteClass */
-  override def offset(p: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point, dx: scala.Double, dy: scala.Double): cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point = js.native
-  /* CompleteClass */
-  override def pointOnLine(
-    line: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Line,
-    p: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point
-  ): cheapDashRulerLib.Anon_Index = js.native
+class CheapRuler () extends js.Object {
+  def along(line: Line, dist: scala.Double): Point = js.native
+  def area(polygon: Polygon): scala.Double = js.native
+  def bearing(a: Point, b: Point): scala.Double = js.native
+  def bufferBBox(bbox: BBox, buffer: scala.Double): BBox = js.native
+  def bufferPoint(p: Point, buffer: scala.Double): BBox = js.native
+  def destination(p: Point, dist: scala.Double, bearing: scala.Double): Point = js.native
+  def distance(a: Point, b: Point): scala.Double = js.native
+  def insideBBox(p: Point, bbox: BBox): scala.Boolean = js.native
+  def lineDistance(points: Points): scala.Double = js.native
+  def lineSlice(start: Point, stop: Point, line: Line): Line = js.native
+  def lineSliceAlong(start: scala.Double, stop: scala.Double, line: Line): Line = js.native
+  def offset(p: Point, dx: scala.Double, dy: scala.Double): Point = js.native
+  def pointOnLine(line: Line, p: Point): cheapDashRulerLib.Anon_Index = js.native
 }
 

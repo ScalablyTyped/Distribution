@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Inspector ()
   extends awsDashSdkLib.awsDashSdkMod.Inspector {
-  def this(options: awsDashSdkLib.clientsInspectorMod.InspectorNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsInspectorMod.ClientConfiguration) = this()
 }
 

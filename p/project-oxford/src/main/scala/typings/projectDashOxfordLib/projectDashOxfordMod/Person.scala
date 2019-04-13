@@ -19,13 +19,13 @@ class Person () extends js.Object {
     * @param {string} userData          - Optional. Attach user data to person's face. The maximum length is 1024.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def addFace(personGroupId: java.lang.String, personId: java.lang.String, faceId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def addFace(personGroupId: java.lang.String, personId: java.lang.String, faceId: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def addFace(
     personGroupId: java.lang.String,
     personId: java.lang.String,
     faceId: java.lang.String,
     userData: java.lang.String
-  ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Creates a new person in a specified person group for identification.
     * The number of persons has a subscription limit. Free subscription amount is 1000 persons.
@@ -42,7 +42,7 @@ class Person () extends js.Object {
     faces: js.Array[java.lang.String],
     name: java.lang.String,
     userData: java.lang.String
-  ): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.Anon_PersonId] = js.native
+  ): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.Anon_PersonId] = js.native
   /**
     * Deletes an existing person from a person group.
     *
@@ -50,7 +50,7 @@ class Person () extends js.Object {
     * @param {string} personId          - The target person to delete.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def delete(personGroupId: java.lang.String, personId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def delete(personGroupId: java.lang.String, personId: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Deletes a face from a person.
     *
@@ -59,7 +59,7 @@ class Person () extends js.Object {
     * @param {string} faceId            - The ID of the face to be deleted.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def deleteFace(personGroupId: java.lang.String, personId: java.lang.String, faceId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def deleteFace(personGroupId: java.lang.String, personId: java.lang.String, faceId: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Gets an existing person from a person group.
     *
@@ -67,7 +67,7 @@ class Person () extends js.Object {
     * @param {string} personId          - The target person to get.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def get(personGroupId: java.lang.String, personId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.PersonResponsesNs.Person] = js.native
+  def get(personGroupId: java.lang.String, personId: java.lang.String): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.PersonResponsesNs.Person] = js.native
   /**
     * Get a face for a person.
     *
@@ -76,14 +76,14 @@ class Person () extends js.Object {
     * @param {string} faceId            - The ID of the face to get.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def getFace(personGroupId: java.lang.String, personId: java.lang.String, faceId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.PersonResponsesNs.Face] = js.native
+  def getFace(personGroupId: java.lang.String, personId: java.lang.String, faceId: java.lang.String): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.PersonResponsesNs.Face] = js.native
   /**
     * Lists all persons in a person group, with the person information.
     *
     * @param {string} personGroupId     - The target person's person group.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def list(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Array[projectDashOxfordLib.projectDashOxfordMod.PersonResponsesNs.Person]] = js.native
+  def list(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.^[js.Array[projectDashOxfordLib.projectDashOxfordMod.PersonResponsesNs.Person]] = js.native
   /**
     * Updates a person's information.
     *
@@ -99,7 +99,7 @@ class Person () extends js.Object {
     faces: js.Array[java.lang.String],
     name: java.lang.String,
     userData: java.lang.String
-  ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Updates a face for a person.
     *
@@ -114,6 +114,6 @@ class Person () extends js.Object {
     personId: java.lang.String,
     faceId: java.lang.String,
     userData: java.lang.String
-  ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
 }
 

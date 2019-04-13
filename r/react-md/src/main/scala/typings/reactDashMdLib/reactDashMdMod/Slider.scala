@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md", "Slider")
 @js.native
 class Slider protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libSlidersSliderMod.SliderProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libSlidersSliderMod.SliderProps) = this()

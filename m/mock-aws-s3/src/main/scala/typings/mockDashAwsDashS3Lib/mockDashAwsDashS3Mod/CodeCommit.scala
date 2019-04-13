@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CodeCommit ()
   extends awsDashSdkLib.awsDashSdkMod.CodeCommit {
-  def this(options: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCodecommitMod.ClientConfiguration) = this()
 }
 

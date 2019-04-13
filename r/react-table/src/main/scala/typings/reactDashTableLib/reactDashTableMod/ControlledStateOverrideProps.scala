@@ -25,6 +25,6 @@ trait ControlledStateOverrideProps extends js.Object {
   /** Default: undefined */
   var sorting: scala.Double = js.native
   /** Sub component */
-  def SubComponent(rowInfo: RowInfo): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def SubComponent(rowInfo: RowInfo): reactLib.reactMod.ReactNode = js.native
 }
 

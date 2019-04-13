@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var useDefault: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -15,8 +15,8 @@ trait SelectProps
 object SelectProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    label: reactLib.reactMod.ReactNode = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     useDefault: js.UndefOr[scala.Boolean] = js.undefined
   ): SelectProps = {

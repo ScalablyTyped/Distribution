@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Duration extends js.Object {
   var duration: js.UndefOr[scala.Double] = js.undefined
   var maximumHeight: js.UndefOr[scala.Double] = js.undefined
-  var offset: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.HeadingPitchRange] = js.undefined
+  var offset: js.UndefOr[cesiumLib.cesiumMod.HeadingPitchRange] = js.undefined
 }
 
 object Anon_Duration {
@@ -16,7 +16,7 @@ object Anon_Duration {
   def apply(
     duration: scala.Int | scala.Double = null,
     maximumHeight: scala.Int | scala.Double = null,
-    offset: cesiumLib.cesiumMod.CesiumNs.HeadingPitchRange = null
+    offset: cesiumLib.cesiumMod.HeadingPitchRange = null
   ): Anon_Duration = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

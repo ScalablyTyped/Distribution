@@ -12,3 +12,11 @@ import scala.scalajs.js.annotation._
 */
 trait FloatTypes extends js.Object
 
+@JSImport("react-foundation/enums", "FloatTypes")
+@js.native
+object FloatTypes extends js.Object {
+  var CENTER: reactDashFoundationLib.enumsMod.FloatTypes = js.native
+  var LEFT: reactDashFoundationLib.enumsMod.FloatTypes = js.native
+  var RIGHT: reactDashFoundationLib.enumsMod.FloatTypes = js.native
+}
+

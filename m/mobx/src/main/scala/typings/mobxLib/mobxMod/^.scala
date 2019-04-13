@@ -11,7 +11,6 @@ object ^ extends js.Object {
   @JSName("$mobx")
   val $mobx: js.Symbol = js.native
   val action: mobxLib.libApiActionMod.IActionFactory = js.native
-  val comparer: mobxLib.Anon_A = js.native
   val computed: mobxLib.libApiComputedMod.IComputed = js.native
   val observable: mobxLib.libApiObservableMod.IObservableFactory with mobxLib.libApiObservableMod.IObservableFactories with mobxLib.Anon_Enhancer = js.native
   def _allowStateChanges[T](allowStateChanges: scala.Boolean, func: js.Function0[T]): T = js.native

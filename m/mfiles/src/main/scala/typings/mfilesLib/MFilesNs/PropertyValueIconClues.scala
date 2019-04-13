@@ -17,3 +17,8 @@ class PropertyValueIconClues ()
   override def Item(Index: scala.Double): mfilesLib.IPropertyValueIconClue = js.native
 }
 
+@JSGlobal("MFiles.PropertyValueIconClues")
+@js.native
+object PropertyValueIconClues
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValueIconClues]
+

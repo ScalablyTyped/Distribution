@@ -17,3 +17,8 @@ class DataSetExportingStatus ()
   override val LatestActivity: mfilesLib.ITimestamp = js.native
 }
 
+@JSGlobal("MFiles.DataSetExportingStatus")
+@js.native
+object DataSetExportingStatus
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IDataSetExportingStatus]
+

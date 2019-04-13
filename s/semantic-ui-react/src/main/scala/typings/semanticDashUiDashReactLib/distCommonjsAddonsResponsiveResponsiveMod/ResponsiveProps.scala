@@ -14,12 +14,12 @@ object ResponsiveProps {
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     fireOnMount: js.UndefOr[scala.Boolean] = js.undefined,
     getWidth: () => scala.Double = null,
     maxWidth: scala.Double | java.lang.String = null,
     minWidth: scala.Double | java.lang.String = null,
-    onUpdate: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ ResponsiveOnUpdateData) => scala.Unit = null
+    onUpdate: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ ResponsiveOnUpdateData) => scala.Unit = null
   ): ResponsiveProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -9,16 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * Argument to finishAuthentication indicating the result of the captive portal authentication attempt.
-    * **'unhandled':** - The extension does not handle this network or captive portal (e.g. server end-point not found or not compatible).
-    * **'succeeded':** - The extension handled this network and authenticated successfully.
-    * **'rejected':** - The extension handled this network, tried to authenticate, however was rejected by the server.
-    * **'failed':** - The extension handled this network, tried to authenticate, however failed due to an unspecified error.
-    */
-  val AuthenticationResult: chromeDashAppsLib.Anon_FAILED = js.native
-  /** Indicator for the type of network used */
-  val NetworkType: chromeDashAppsLib.Anon_WIFI = js.native
-  /**
     * This event fires everytime a captive portal is detected on a network
     * matching any of the currently registered network filters and the user
     * consents to use the extension for authentication. Network filters may be

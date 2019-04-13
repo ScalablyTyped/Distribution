@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DMS ()
   extends awsDashSdkLib.clientsAllMod.DMS {
-  def this(options: awsDashSdkLib.clientsDmsMod.DMSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDmsMod.ClientConfiguration) = this()
 }
 

@@ -38,7 +38,7 @@ trait PropsType extends js.Object {
   var prerenderingSiblingsNumber: js.UndefOr[scala.Double] = js.undefined
   /** render for TabBar */
   var renderTabBar: js.UndefOr[
-    (js.Function1[/* props */ TabBarPropsType, reactLib.reactMod.ReactNs.ReactNode]) | rmcDashTabsLib.rmcDashTabsLibNumbers.`false`
+    (js.Function1[/* props */ TabBarPropsType, reactLib.reactMod.ReactNode]) | rmcDashTabsLib.rmcDashTabsLibNumbers.`false`
   ] = js.undefined
   /** whether to switch tabs with swipe gestrue in the content | default: true */
   var swipeable: js.UndefOr[scala.Boolean] = js.undefined
@@ -53,9 +53,9 @@ trait PropsType extends js.Object {
     rmcDashTabsLib.rmcDashTabsLibStrings.top | rmcDashTabsLib.rmcDashTabsLibStrings.bottom | rmcDashTabsLib.rmcDashTabsLibStrings.left | rmcDashTabsLib.rmcDashTabsLibStrings.right
   ] = js.undefined
   /** tabBar text style */
-  var tabBarTextStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties | js.Any] = js.undefined
+  var tabBarTextStyle: js.UndefOr[reactLib.reactMod.CSSProperties | js.Any] = js.undefined
   /** tabBar underline style */
-  var tabBarUnderlineStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties | js.Any] = js.undefined
+  var tabBarUnderlineStyle: js.UndefOr[reactLib.reactMod.CSSProperties | js.Any] = js.undefined
   /** tab paging direction | default: horizontal */
   var tabDirection: js.UndefOr[
     rmcDashTabsLib.rmcDashTabsLibStrings.horizontal | rmcDashTabsLib.rmcDashTabsLibStrings.vertical
@@ -83,14 +83,14 @@ object PropsType {
     onTabClick: (/* tab */ rmcDashTabsLib.libModelsMod.ModelsNs.TabData, /* index */ scala.Double) => scala.Unit = null,
     page: scala.Double | java.lang.String = null,
     prerenderingSiblingsNumber: scala.Int | scala.Double = null,
-    renderTabBar: (js.Function1[/* props */ TabBarPropsType, reactLib.reactMod.ReactNs.ReactNode]) | rmcDashTabsLib.rmcDashTabsLibNumbers.`false` = null,
+    renderTabBar: (js.Function1[/* props */ TabBarPropsType, reactLib.reactMod.ReactNode]) | rmcDashTabsLib.rmcDashTabsLibNumbers.`false` = null,
     swipeable: js.UndefOr[scala.Boolean] = js.undefined,
     tabBarActiveTextColor: java.lang.String = null,
     tabBarBackgroundColor: java.lang.String = null,
     tabBarInactiveTextColor: java.lang.String = null,
     tabBarPosition: rmcDashTabsLib.rmcDashTabsLibStrings.top | rmcDashTabsLib.rmcDashTabsLibStrings.bottom | rmcDashTabsLib.rmcDashTabsLibStrings.left | rmcDashTabsLib.rmcDashTabsLibStrings.right = null,
-    tabBarTextStyle: reactLib.reactMod.ReactNs.CSSProperties | js.Any = null,
-    tabBarUnderlineStyle: reactLib.reactMod.ReactNs.CSSProperties | js.Any = null,
+    tabBarTextStyle: reactLib.reactMod.CSSProperties | js.Any = null,
+    tabBarUnderlineStyle: reactLib.reactMod.CSSProperties | js.Any = null,
     tabDirection: rmcDashTabsLib.rmcDashTabsLibStrings.horizontal | rmcDashTabsLib.rmcDashTabsLibStrings.vertical = null,
     useLeftInsteadTransform: js.UndefOr[scala.Boolean] = js.undefined,
     useOnPan: js.UndefOr[scala.Boolean] = js.undefined,

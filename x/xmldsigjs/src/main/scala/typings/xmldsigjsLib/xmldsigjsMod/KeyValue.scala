@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "KeyValue")
 @js.native
-class KeyValue ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.KeyValue {
-  def this(value: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.KeyInfoClause) = this()
+class KeyValue () extends KeyInfoClause {
+  def this(value: KeyInfoClause) = this()
+  var Value: KeyInfoClause = js.native
+  var value: KeyInfoClause = js.native
 }
 

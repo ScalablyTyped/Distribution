@@ -15,9 +15,9 @@ trait DropDownProps extends js.Object {
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
   var openClassName: js.UndefOr[java.lang.String] = js.undefined
-  var overlay: reactLib.reactMod.ReactNs.ReactNode | OverlayFunc
+  var overlay: reactLib.reactMod.ReactNode | OverlayFunc
   var overlayClassName: js.UndefOr[java.lang.String] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var placement: js.UndefOr[Placement] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
@@ -32,7 +32,7 @@ trait DropDownProps extends js.Object {
 object DropDownProps {
   @scala.inline
   def apply(
-    overlay: reactLib.reactMod.ReactNs.ReactNode | OverlayFunc,
+    overlay: reactLib.reactMod.ReactNode | OverlayFunc,
     align: Align = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -43,7 +43,7 @@ object DropDownProps {
     onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     placement: Placement = null,
     prefixCls: java.lang.String = null,
     transitionName: java.lang.String = null,

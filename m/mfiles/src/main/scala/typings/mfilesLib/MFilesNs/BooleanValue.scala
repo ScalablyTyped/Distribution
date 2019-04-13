@@ -15,3 +15,8 @@ class BooleanValue ()
   override def Clone(): mfilesLib.IBooleanValue = js.native
 }
 
+@JSGlobal("MFiles.BooleanValue")
+@js.native
+object BooleanValue
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IBooleanValue]
+

@@ -32,7 +32,7 @@ trait Anon_Arguments extends js.Object {
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType] | ReturnType],
     wait: scala.Double,
-    options: pDashDebounceLib.pDashDebounceMod.pDebounceNs.Options
+    options: pDashDebounceLib.pDashDebounceMod.Options
   ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = js.native
 }
 

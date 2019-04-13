@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LabelComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[LabelProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Detail: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.ComponentClass[LabelProps, reactLib.reactMod.ComponentState] {
+  var Detail: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps
   ] = js.native
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Group: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps
   ] = js.native
 }

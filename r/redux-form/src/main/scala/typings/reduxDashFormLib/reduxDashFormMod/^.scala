@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-form", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val FormName: reactLib.reactMod.ReactNs.StatelessComponent[reduxDashFormLib.libFormNameMod.FormNameProps] = js.native
+  val FormName: reactLib.reactMod.StatelessComponent[reduxDashFormLib.libFormNameMod.FormNameProps] = js.native
   val actionTypes: reduxDashFormLib.libActionTypesMod.ActionTypes = js.native
   val getFormAsyncErrors: reduxDashFormLib.libSelectorsMod.ErrorSelector[js.Object, js.Object, java.lang.String] = js.native
   val getFormError: reduxDashFormLib.libSelectorsMod.ErrorSelector[js.Object, js.Object, java.lang.String] = js.native
@@ -73,15 +73,15 @@ object ^ extends js.Object {
     getFormState: js.Function1[/* state */ State, reduxDashFormLib.libReducerMod.FormStateMap]
   ): js.Function2[/* state */ State, /* repeated */ java.lang.String, _] = js.native
   def formValues[Values, P](obj: Values): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[P with reduxDashFormLib.reduxDashFormLibStrings.formValues with js.Any], 
-    reactLib.reactMod.ReactNs.ComponentClass[
+    /* component */ reactLib.reactMod.ComponentType[P with reduxDashFormLib.reduxDashFormLibStrings.formValues with js.Any], 
+    reactLib.reactMod.ComponentClass[
       P with reduxDashFormLib.reduxDashFormLibStrings.formValues with js.Any, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.native
   def formValues[FormData, K /* <: java.lang.String */, P](names: K*): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[P with (stdLib.Pick[FormData, K])], 
-    reactLib.reactMod.ReactNs.ComponentClass[P with (stdLib.Pick[FormData, K]), reactLib.reactMod.ReactNs.ComponentState]
+    /* component */ reactLib.reactMod.ComponentType[P with (stdLib.Pick[FormData, K])], 
+    reactLib.reactMod.ComponentClass[P with (stdLib.Pick[FormData, K]), reactLib.reactMod.ComponentState]
   ] = js.native
   def initialize(form: java.lang.String, data: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
   def initialize(form: java.lang.String, data: js.Any, keepDirty: scala.Boolean): reduxDashFormLib.libActionsMod.FormAction = js.native

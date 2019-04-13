@@ -12,4 +12,5 @@ package object FlipMoveNs {
     - scala.Boolean
   */
   type AnimationProp = _AnimationProp | scala.Boolean
+  type Styles = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
 }

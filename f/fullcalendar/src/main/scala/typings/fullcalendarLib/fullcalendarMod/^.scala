@@ -8,14 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val EventDefParser: fullcalendarLib.Anon_EventInput = js.native
-  val EventSourceParser: fullcalendarLib.Anon_Calendar = js.native
-  val Promise: fullcalendarLib.Anon_Construct = js.native
   val dayIDs: js.Array[java.lang.String] = js.native
-  val internalApiVersion: /* 12 */ scala.Double = js.native
+  val internalApiVersion: fullcalendarLib.fullcalendarLibNumbers.`12` = js.native
   val moment: js.Any = js.native
   val unitsDesc: js.Array[java.lang.String] = js.native
-  val version: /* <%= version %> */ java.lang.String = js.native
+  val version: fullcalendarLib.fullcalendarLibStrings.`<%= version %>` = js.native
   def allowSelection(el: js.Any): scala.Unit = js.native
   def applyAll(functions: js.Any, thisObj: js.Any, args: js.Any): js.Any = js.native
   def attrsToStr(attrs: js.Any): java.lang.String = js.native
@@ -37,9 +34,9 @@ object ^ extends js.Object {
   def debounce(func: js.Any, wait: js.Any, immediate: scala.Boolean): js.Function0[_] = js.native
   def defineThemeSystem(themeName: js.Any, themeClass: js.Any): scala.Unit = js.native
   def defineView(viewName: js.Any, viewConfig: js.Any): scala.Unit = js.native
-  def diffByUnit(a: js.Any, b: js.Any, unit: js.Any): momentLib.momentMod.momentNs.Duration = js.native
-  def diffDay(a: js.Any, b: js.Any): momentLib.momentMod.momentNs.Duration = js.native
-  def diffDayTime(a: js.Any, b: js.Any): momentLib.momentMod.momentNs.Duration = js.native
+  def diffByUnit(a: js.Any, b: js.Any, unit: js.Any): momentLib.momentMod.Duration = js.native
+  def diffDay(a: js.Any, b: js.Any): momentLib.momentMod.Duration = js.native
+  def diffDayTime(a: js.Any, b: js.Any): momentLib.momentMod.Duration = js.native
   def diffPoints(point1: js.Any, point2: js.Any): fullcalendarLib.Anon_Left = js.native
   def disableCursor(): scala.Unit = js.native
   def distributeHeight(els: js.Any, availableHeight: js.Any, shouldRedistribute: js.Any): scala.Unit = js.native
@@ -62,7 +59,7 @@ object ^ extends js.Object {
   def getEvIsTouch(ev: js.Any): scala.Boolean = js.native
   def getEvX(ev: js.Any): js.Any = js.native
   def getEvY(ev: js.Any): js.Any = js.native
-  def getMomentLocaleData(localeCode: js.Any): momentLib.momentMod.momentNs.Locale = js.native
+  def getMomentLocaleData(localeCode: js.Any): momentLib.momentMod.Locale = js.native
   def getOuterRect(el: js.Any): fullcalendarLib.Anon_Bottom = js.native
   def getOuterRect(el: js.Any, origin: js.Any): fullcalendarLib.Anon_Bottom = js.native
   def getRectCenter(rect: js.Any): fullcalendarLib.Anon_Left = js.native
@@ -83,7 +80,7 @@ object ^ extends js.Object {
   def matchCellWidths(els: js.Any): scala.Double = js.native
   def mergeProps(propObjs: js.Any): js.Object = js.native
   def mergeProps(propObjs: js.Any, complexProps: js.Any): js.Object = js.native
-  def multiplyDuration(dur: js.Any, n: js.Any): momentLib.momentMod.momentNs.Duration = js.native
+  def multiplyDuration(dur: js.Any, n: js.Any): momentLib.momentMod.Duration = js.native
   def parseFieldSpecs(input: js.Any): js.Array[_] = js.native
   def populateInstanceComputableOptions(options: js.Any): scala.Unit = js.native
   def preventDefault(ev: js.Any): scala.Unit = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TransitionComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[TransitionProps, reactLib.reactMod.ReactNs.ComponentState] {
+  extends reactLib.reactMod.ComponentClass[TransitionProps, reactLib.reactMod.ComponentState] {
   var ENTERED: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ENTERED = js.native
   var ENTERING: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ENTERING = js.native
   var EXITED: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.EXITED = js.native

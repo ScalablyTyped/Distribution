@@ -16,7 +16,7 @@ trait DatePickerProps extends js.Object {
   var confirmBtnTestID: js.UndefOr[java.lang.String] = js.undefined
   var confirmBtnText: js.UndefOr[java.lang.String] = js.undefined
   var customStyles: js.UndefOr[DatePickerCustomStylesProps] = js.undefined
-  var date: js.UndefOr[java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment] = js.undefined
+  var date: js.UndefOr[java.lang.String | stdLib.Date | momentLib.momentMod.Moment] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
@@ -56,7 +56,7 @@ object DatePickerProps {
     confirmBtnTestID: java.lang.String = null,
     confirmBtnText: java.lang.String = null,
     customStyles: DatePickerCustomStylesProps = null,
-    date: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment = null,
+    date: java.lang.String | stdLib.Date | momentLib.momentMod.Moment = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Int | scala.Double = null,
     format: java.lang.String = null,

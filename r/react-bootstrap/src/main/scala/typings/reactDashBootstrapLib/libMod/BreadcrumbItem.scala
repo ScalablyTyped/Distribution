@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "BreadcrumbItem")
 @js.native
 class BreadcrumbItem ()
-  extends reactDashBootstrapLib.libBreadcrumbItemMod.namespaced
+  extends reactDashBootstrapLib.libBreadcrumbItemMod.^
 

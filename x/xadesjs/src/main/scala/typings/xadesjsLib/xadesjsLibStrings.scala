@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 object xadesjsLibStrings {
   @js.native
   sealed trait OIDAsURI
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.IdentifierQualifier
+    extends xadesjsLib.xadesjsMod.xmlNs.IdentifierQualifier
   
   @js.native
   sealed trait OIDAsURN
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.IdentifierQualifier
+    extends xadesjsLib.xadesjsMod.xmlNs.IdentifierQualifier
   
   @js.native
   sealed trait ber
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs._EncodingType
+    extends xadesjsLib.xadesjsMod.xmlNs._EncodingType
   
   @js.native
   sealed trait cer
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs._EncodingType
+    extends xadesjsLib.xadesjsMod.xmlNs._EncodingType
   
   @js.native
   sealed trait der
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs._EncodingType
+    extends xadesjsLib.xadesjsMod.xmlNs._EncodingType
   
   @js.native
   sealed trait per
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs._EncodingType
+    extends xadesjsLib.xadesjsMod.xmlNs._EncodingType
   
   @js.native
   sealed trait xer
-    extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs._EncodingType
+    extends xadesjsLib.xadesjsMod.xmlNs._EncodingType
   
   @scala.inline
   def OIDAsURI: OIDAsURI = "OIDAsURI".asInstanceOf[OIDAsURI]

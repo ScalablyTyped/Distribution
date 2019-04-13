@@ -25,3 +25,8 @@ class OptimizeVaultJob ()
   override def Set(GuidVault: java.lang.String, Thorough: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.OptimizeVaultJob")
+@js.native
+object OptimizeVaultJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOptimizeVaultJob]
+

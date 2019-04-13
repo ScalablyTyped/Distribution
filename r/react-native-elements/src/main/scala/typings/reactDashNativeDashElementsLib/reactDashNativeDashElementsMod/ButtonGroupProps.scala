@@ -11,7 +11,7 @@ trait ButtonGroupProps extends js.Object {
     *
     * @default TouchableHighlight
     */
-  var Component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
+  var Component: js.UndefOr[reactLib.reactMod.ComponentType[_]] = js.undefined
   /**
     * Determines what the opacity of the wrapped view should be when touch is active.
     */
@@ -147,7 +147,7 @@ object ButtonGroupProps {
     buttons: js.Array[java.lang.String] | js.Array[ElementObject],
     onPress: scala.Double => scala.Unit,
     selectedIndex: scala.Double,
-    Component: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    Component: reactLib.reactMod.ComponentType[_] = null,
     activeOpacity: scala.Int | scala.Double = null,
     buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     containerBorderRadius: scala.Int | scala.Double = null,

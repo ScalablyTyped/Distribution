@@ -19,9 +19,9 @@ trait DatePickerProps
 object DatePickerProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    dismissText: reactLib.reactMod.ReactNs.ReactNode = null,
+    dismissText: reactLib.reactMod.ReactNode = null,
     extra: java.lang.String = null,
     format: java.lang.String | (js.Function1[/* value */ stdLib.Date, java.lang.String]) = null,
     locale: antdDashMobileDashRnLib.Anon_DatePickerLocale = null,
@@ -29,13 +29,13 @@ object DatePickerProps {
     minDate: stdLib.Date = null,
     minuteStep: scala.Int | scala.Double = null,
     mode: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.datetime | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.date | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.year | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.month | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.time = null,
-    okText: reactLib.reactMod.ReactNs.ReactNode = null,
+    okText: reactLib.reactMod.ReactNode = null,
     onChange: /* value */ stdLib.Date => scala.Unit = null,
     onDismiss: () => scala.Unit = null,
     onScrollChange: (/* newValue */ js.Any, /* vals */ js.Any, /* index */ scala.Double) => scala.Unit = null,
     onValueChange: (/* vals */ js.Any, /* index */ scala.Double) => scala.Unit = null,
     styles: js.Any = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     triggerTypes: java.lang.String = null,
     value: stdLib.Date = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined

@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("flux/utils", "ReduceStore")
 @js.native
 abstract class ReduceStore[TState, TPayload] ()
-  extends fluxLib.libFluxReduceStoreMod.namespaced[TState, TPayload]
+  extends fluxLib.libFluxReduceStoreMod.^[TState, TPayload]
 

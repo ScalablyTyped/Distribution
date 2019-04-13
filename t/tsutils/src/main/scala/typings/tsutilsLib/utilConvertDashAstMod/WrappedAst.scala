@@ -18,9 +18,9 @@ object WrappedAst {
   @scala.inline
   def apply(
     children: js.Array[NodeWrap],
-    kind: typescriptLib.typescriptMod.tsNs.SyntaxKind,
+    kind: typescriptLib.typescriptMod.SyntaxKind,
     next: NodeWrap,
-    node: typescriptLib.typescriptMod.tsNs.Node,
+    node: typescriptLib.typescriptMod.Node,
     parent: js.UndefOr[scala.Nothing] = js.undefined,
     skip: js.UndefOr[scala.Nothing] = js.undefined
   ): WrappedAst = {

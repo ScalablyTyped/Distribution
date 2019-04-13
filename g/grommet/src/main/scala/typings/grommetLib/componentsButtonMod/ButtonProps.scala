@@ -22,7 +22,7 @@ trait ButtonProps extends js.Object {
   ] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String
   ] = js.undefined
@@ -50,7 +50,7 @@ object ButtonProps {
     hoverIndicator: scala.Boolean | java.lang.String | grommetLib.grommetLibStrings.background | grommetLib.Anon_Background = null,
     href: java.lang.String = null,
     icon: reactLib.reactMod.Global.JSXNs.Element = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     onClick: /* repeated */ js.Any => _ = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,

@@ -26,11 +26,11 @@ object BlockPickerProps {
   def apply(
     color: reactDashColorLib.reactDashColorMod.Color = null,
     colors: js.Array[java.lang.String] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[BlockPicker] = null,
+    ref: reactLib.reactMod.LegacyRef[BlockPicker] = null,
     triangle: reactDashColorLib.reactDashColorLibStrings.hide | reactDashColorLib.reactDashColorLibStrings.top = null,
     width: java.lang.String = null
   ): BlockPickerProps = {

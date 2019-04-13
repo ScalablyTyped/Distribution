@@ -17,10 +17,10 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def apply(path: java.lang.String, options: isexeLib.isexeMod.isExeNs.Options): js.Promise[scala.Boolean] = js.native
+  def apply(path: java.lang.String, options: Options): js.Promise[scala.Boolean] = js.native
   def apply(
     path: java.lang.String,
-    options: isexeLib.isexeMod.isExeNs.Options,
+    options: Options,
     callback: js.Function2[
       /* error */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], 
       /* isExe */ scala.Boolean, 
@@ -28,6 +28,6 @@ object ^ extends js.Object {
     ]
   ): scala.Unit = js.native
   def sync(path: java.lang.String): scala.Boolean = js.native
-  def sync(path: java.lang.String, options: isexeLib.isexeMod.isExeNs.Options): scala.Boolean = js.native
+  def sync(path: java.lang.String, options: Options): scala.Boolean = js.native
 }
 

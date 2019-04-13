@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ojColorPalette
   extends atOracleOraclejetLib.ojeditablevalueMod.editableValue[
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
+      atOracleOraclejetLib.ojcolorMod.^, 
       ojColorPaletteSettableProperties, 
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
-      atOracleOraclejetLib.ojcolorMod.namespaced
+      atOracleOraclejetLib.ojcolorMod.^, 
+      atOracleOraclejetLib.ojcolorMod.^
     ] {
   var labelDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off = js.native
   var labelledBy: java.lang.String | scala.Null = js.native

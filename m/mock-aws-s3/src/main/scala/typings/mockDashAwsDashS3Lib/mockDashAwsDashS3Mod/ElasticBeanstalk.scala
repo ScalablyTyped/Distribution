@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ElasticBeanstalk ()
   extends awsDashSdkLib.awsDashSdkMod.ElasticBeanstalk {
-  def this(options: awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsElasticbeanstalkMod.ClientConfiguration) = this()
 }
 

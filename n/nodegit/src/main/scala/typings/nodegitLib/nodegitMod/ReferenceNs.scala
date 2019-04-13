@@ -28,7 +28,5 @@ object ReferenceNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.referenceMod.ReferenceNs.TYPE with scala.Double] = js.native
   }
   
-  type NORMALIZE = nodegitLib.referenceMod.ReferenceNs.NORMALIZE
-  type TYPE = nodegitLib.referenceMod.ReferenceNs.TYPE
 }
 

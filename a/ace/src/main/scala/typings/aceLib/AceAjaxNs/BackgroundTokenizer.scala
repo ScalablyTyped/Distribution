@@ -99,21 +99,13 @@ class BackgroundTokenizerCls protected () extends BackgroundTokenizer {
   override def stop(): scala.Unit = js.native
 }
 
-object BackgroundTokenizer {
-  @scala.inline
-  def apply(
-    fireUpdateEvent: (scala.Double, scala.Double) => scala.Unit,
-    getState: scala.Double => java.lang.String,
-    getTokens: scala.Double => js.Array[TokenInfo],
-    setDocument: Document => scala.Unit,
-    setTokenizer: Tokenizer => scala.Unit,
-    start: scala.Double => scala.Unit,
-    states: js.Array[_],
-    stop: () => scala.Unit
-  ): BackgroundTokenizer = {
-    val __obj = js.Dynamic.literal(fireUpdateEvent = js.Any.fromFunction2(fireUpdateEvent), getState = js.Any.fromFunction1(getState), getTokens = js.Any.fromFunction1(getTokens), setDocument = js.Any.fromFunction1(setDocument), setTokenizer = js.Any.fromFunction1(setTokenizer), start = js.Any.fromFunction1(start), states = states, stop = js.Any.fromFunction0(stop))
-  
-    __obj.asInstanceOf[BackgroundTokenizer]
-  }
-}
+@JSGlobal("AceAjax.BackgroundTokenizer")
+@js.native
+object BackgroundTokenizer
+  extends /**
+  * Creates a new `BackgroundTokenizer` object.
+  * @param tokenizer The tokenizer to use
+  * @param editor The editor to associate with
+  **/
+org.scalablytyped.runtime.Instantiable2[/* tokenizer */ Tokenizer, /* editor */ Editor, BackgroundTokenizer]
 

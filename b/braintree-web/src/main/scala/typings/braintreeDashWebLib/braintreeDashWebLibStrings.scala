@@ -8,50 +8,50 @@ import scala.scalajs.js.annotation._
 object braintreeDashWebLibStrings {
   @js.native
   sealed trait CUSTOMER
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
+    extends braintreeDashWebLib.braintreeDashWebMod.BraintreeErrorNs.Types
   
   @js.native
   sealed trait HostedFieldsFieldDataFields extends js.Object
   
   @js.native
   sealed trait INTERNAL
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
+    extends braintreeDashWebLib.braintreeDashWebMod.BraintreeErrorNs.Types
   
   @js.native
   sealed trait MERCHANT
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
+    extends braintreeDashWebLib.braintreeDashWebMod.BraintreeErrorNs.Types
   
   @js.native
   sealed trait NETWORK
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
+    extends braintreeDashWebLib.braintreeDashWebMod.BraintreeErrorNs.Types
   
   @js.native
   sealed trait UNKNOWN
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
+    extends braintreeDashWebLib.braintreeDashWebMod.BraintreeErrorNs.Types
   
   @js.native
   sealed trait cvv
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldsHostedFieldsFieldName
+    extends braintreeDashWebLib.braintreeDashWebMod.HostedFieldsHostedFieldsFieldName
   
   @js.native
   sealed trait expirationDate
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldsHostedFieldsFieldName
+    extends braintreeDashWebLib.braintreeDashWebMod.HostedFieldsHostedFieldsFieldName
   
   @js.native
   sealed trait expirationMonth
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldsHostedFieldsFieldName
+    extends braintreeDashWebLib.braintreeDashWebMod.HostedFieldsHostedFieldsFieldName
   
   @js.native
   sealed trait expirationYear
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldsHostedFieldsFieldName
+    extends braintreeDashWebLib.braintreeDashWebMod.HostedFieldsHostedFieldsFieldName
   
   @js.native
   sealed trait number
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldsHostedFieldsFieldName
+    extends braintreeDashWebLib.braintreeDashWebMod.HostedFieldsHostedFieldsFieldName
   
   @js.native
   sealed trait postalCode
-    extends braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldsHostedFieldsFieldName
+    extends braintreeDashWebLib.braintreeDashWebMod.HostedFieldsHostedFieldsFieldName
   
   @scala.inline
   def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]

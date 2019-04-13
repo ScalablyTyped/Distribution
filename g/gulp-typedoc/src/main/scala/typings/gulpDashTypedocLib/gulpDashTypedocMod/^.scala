@@ -15,6 +15,6 @@ object ^ extends js.Object {
     * @param options Typedoc options
     * @return Empty output stream (ends when the files are written)
     */
-  def apply(options: gulpDashTypedocLib.gulpDashTypedocMod.gulpTypedocNs.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(options: Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

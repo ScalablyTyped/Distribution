@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DatePickerPropsType extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var dismissText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var dismissText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var extra: js.UndefOr[java.lang.String] = js.undefined
   var format: js.UndefOr[java.lang.String | (js.Function1[/* value */ stdLib.Date, java.lang.String])] = js.undefined
   var locale: js.UndefOr[antdDashMobileLib.Anon_DatePickerLocale] = js.undefined
@@ -18,11 +18,11 @@ trait DatePickerPropsType extends js.Object {
   var mode: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.datetime | antdDashMobileLib.antdDashMobileLibStrings.date | antdDashMobileLib.antdDashMobileLibStrings.year | antdDashMobileLib.antdDashMobileLibStrings.month | antdDashMobileLib.antdDashMobileLibStrings.time
   ] = js.undefined
-  var okText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var okText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ stdLib.Date, scala.Unit]] = js.undefined
   var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onValueChange: js.UndefOr[js.Function2[/* vals */ js.Any, /* index */ scala.Double, scala.Unit]] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var value: js.UndefOr[stdLib.Date] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -30,9 +30,9 @@ trait DatePickerPropsType extends js.Object {
 object DatePickerPropsType {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    dismissText: reactLib.reactMod.ReactNs.ReactNode = null,
+    dismissText: reactLib.reactMod.ReactNode = null,
     extra: java.lang.String = null,
     format: java.lang.String | (js.Function1[/* value */ stdLib.Date, java.lang.String]) = null,
     locale: antdDashMobileLib.Anon_DatePickerLocale = null,
@@ -40,11 +40,11 @@ object DatePickerPropsType {
     minDate: stdLib.Date = null,
     minuteStep: scala.Int | scala.Double = null,
     mode: antdDashMobileLib.antdDashMobileLibStrings.datetime | antdDashMobileLib.antdDashMobileLibStrings.date | antdDashMobileLib.antdDashMobileLibStrings.year | antdDashMobileLib.antdDashMobileLibStrings.month | antdDashMobileLib.antdDashMobileLibStrings.time = null,
-    okText: reactLib.reactMod.ReactNs.ReactNode = null,
+    okText: reactLib.reactMod.ReactNode = null,
     onChange: /* value */ stdLib.Date => scala.Unit = null,
     onDismiss: () => scala.Unit = null,
     onValueChange: (/* vals */ js.Any, /* index */ scala.Double) => scala.Unit = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     value: stdLib.Date = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): DatePickerPropsType = {

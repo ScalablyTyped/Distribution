@@ -8,30 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Options
   extends /**
-		 * Create an instance of this class.
+		 * Creates an instance of this class.
 		 *
-		 * @param [options={}]
-		 *        Object of option names and values
+		 * @param player
+		 *         The `Player` that this class should be attached to.
 		 *
-		 * @param [options.kind='']
-		 *        A valid audio track kind
-		 *
-		 * @param [options.id='vjs_track_' + Guid.newGUID()]
-		 *        A unique id for this AudioTrack.
-		 *
-		 * @param [options.label='']
-		 *        The menu label for this track.
-		 *
-		 * @param [options.language='']
-		 *        A valid two character language code.
-		 *
-		 * @param [options.enabled]
-		 *        If this track is the one that is currently playing. If this track is part of
-		 *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
+		 * @param [options]
+		 *         The key/value store of player options.
 		 */
-org.scalablytyped.runtime.Instantiable0[videoDotJsLib.videoDotJsMod.videojsNs.Track]
-     with org.scalablytyped.runtime.Instantiable1[
-      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackOptions, 
-      videoDotJsLib.videoDotJsMod.videojsNs.Track
+org.scalablytyped.runtime.Instantiable1[
+      /* player */ videoDotJsLib.videoDotJsMod.videojsNs.Player, 
+      videoDotJsLib.videoDotJsMod.videojsNs.Button
+    ]
+     with org.scalablytyped.runtime.Instantiable2[
+      /* player */ videoDotJsLib.videoDotJsMod.videojsNs.Player, 
+      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, 
+      videoDotJsLib.videoDotJsMod.videojsNs.Button
     ]
 

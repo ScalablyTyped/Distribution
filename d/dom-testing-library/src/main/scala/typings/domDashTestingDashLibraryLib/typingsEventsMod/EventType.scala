@@ -1,0 +1,82 @@
+package typings
+package domDashTestingDashLibraryLib.typingsEventsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.copy
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.cut
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.paste
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.compositionEnd
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.compositionStart
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.compositionUpdate
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.keyDown
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.keyPress
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.keyUp
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.focus
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.blur
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.focusIn
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.focusOut
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.change
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.input
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.invalid
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.submit
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.click
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.contextMenu
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.dblClick
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.drag
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.dragEnd
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.dragEnter
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.dragExit
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.dragLeave
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.dragOver
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.dragStart
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.drop
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.mouseDown
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.mouseEnter
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.mouseLeave
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.mouseMove
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.mouseOut
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.mouseOver
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.mouseUp
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.select
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.touchCancel
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.touchEnd
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.touchMove
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.touchStart
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.scroll
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.wheel
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.abort
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.canPlay
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.canPlayThrough
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.durationChange
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.emptied
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.encrypted
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.ended
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.loadedData
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.loadedMetadata
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.loadStart
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.pause
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.play
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.playing
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.progress
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.rateChange
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.seeked
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.seeking
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.stalled
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.suspend
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.timeUpdate
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.volumeChange
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.waiting
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.load
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.error
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.animationStart
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.animationEnd
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.animationIteration
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.transitionEnd
+  - domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.doubleClick
+*/
+trait EventType extends js.Object
+

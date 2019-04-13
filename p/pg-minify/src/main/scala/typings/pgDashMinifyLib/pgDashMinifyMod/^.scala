@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(sql: java.lang.String): java.lang.String = js.native
-  def apply(sql: java.lang.String, options: pgDashMinifyLib.pgDashMinifyMod.pgMinifyNs.minifyOptions): java.lang.String = js.native
+  def apply(sql: java.lang.String, options: minifyOptions): java.lang.String = js.native
 }
 

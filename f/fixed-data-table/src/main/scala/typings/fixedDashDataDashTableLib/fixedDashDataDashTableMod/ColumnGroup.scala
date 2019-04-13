@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fixed-data-table", "ColumnGroup")
 @js.native
 class ColumnGroup ()
-  extends fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnGroup
+  extends reactLib.reactMod.Component[ColumnGroupProps, js.Object, js.Any]
 

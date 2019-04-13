@@ -52,6 +52,13 @@ object rawNs extends js.Object {
   
   val defaults: pgLib.pgMod.Defaults with pgLib.pgMod.ClientConfig = js.native
   val native: pgLib.Anon_Client | scala.Null = js.native
-  val types: pgLib.Anon_ArrayParser = js.native
+  @js.native
+  object types extends js.Object {
+    val arrayParserNs: pgLib.Anon_Create = js.native
+    def getTypeParser(oid: scala.Double, format: java.lang.String): pgDashTypesLib.pgDashTypesMod.TypeParser = js.native
+    def setTypeParser(oid: scala.Double, format: java.lang.String, parseFn: pgDashTypesLib.pgDashTypesMod.TypeParser): scala.Unit = js.native
+    def setTypeParser(oid: scala.Double, parseFn: pgDashTypesLib.pgDashTypesMod.TypeParser): scala.Unit = js.native
+  }
+  
 }
 

@@ -15,3 +15,8 @@ class PropertyValuesForDisplay ()
   override def Item(Index: scala.Double): mfilesLib.IPropertyValueForDisplay = js.native
 }
 
+@JSGlobal("MFiles.PropertyValuesForDisplay")
+@js.native
+object PropertyValuesForDisplay
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValuesForDisplay]
+

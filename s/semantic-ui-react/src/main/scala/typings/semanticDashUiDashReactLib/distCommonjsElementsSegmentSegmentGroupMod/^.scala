@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/elements/Segment/SegmentGroup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[SegmentGroupProps] = js.native
+  val default: reactLib.reactMod.StatelessComponent[SegmentGroupProps] = js.native
 }
 

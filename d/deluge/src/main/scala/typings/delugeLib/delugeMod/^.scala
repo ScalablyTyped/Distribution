@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("deluge", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(deluge_url: java.lang.String, password: java.lang.String): delugeLib.delugeMod.delugeNs.Deluge = js.native
+  def apply(deluge_url: java.lang.String, password: java.lang.String): Deluge = js.native
 }
 

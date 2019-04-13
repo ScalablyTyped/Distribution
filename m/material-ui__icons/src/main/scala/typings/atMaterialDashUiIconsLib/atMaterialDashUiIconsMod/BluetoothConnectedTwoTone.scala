@@ -16,9 +16,9 @@ class BluetoothConnectedTwoTone protected ()
 @JSImport("@material-ui/icons", "BluetoothConnectedTwoTone")
 @js.native
 class BluetoothConnectedTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

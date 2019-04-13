@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mq", "Chain")
 @js.native
 class Chain ()
-  extends fibjsLib.mqMod.mqNs.Chain
+  extends fibjsLib.Class_Chain
 

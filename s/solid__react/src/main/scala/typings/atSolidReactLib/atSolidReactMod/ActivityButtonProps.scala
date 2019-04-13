@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ActivityButtonProps extends js.Object {
   var activateLabel: js.UndefOr[
-    java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNs.ReactNode])
+    java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var activateText: js.UndefOr[java.lang.String] = js.undefined
   var deactivateLabel: js.UndefOr[
-    java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNs.ReactNode])
+    java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var deactivateText: js.UndefOr[java.lang.String] = js.undefined
   var `object`: js.UndefOr[java.lang.String] = js.undefined
@@ -21,9 +21,9 @@ trait ActivityButtonProps extends js.Object {
 object ActivityButtonProps {
   @scala.inline
   def apply(
-    activateLabel: java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNs.ReactNode]) = null,
+    activateLabel: java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNode]) = null,
     activateText: java.lang.String = null,
-    deactivateLabel: java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNs.ReactNode]) = null,
+    deactivateLabel: java.lang.String | (js.Tuple3[java.lang.String, java.lang.String, reactLib.reactMod.ReactNode]) = null,
     deactivateText: java.lang.String = null,
     `object`: java.lang.String = null,
     shortName: java.lang.String = null

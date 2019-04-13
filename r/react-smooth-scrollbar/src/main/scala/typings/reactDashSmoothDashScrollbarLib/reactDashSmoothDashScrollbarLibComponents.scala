@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashSmoothDashScrollbarLibComponents {
   @scala.inline
-  def ReactDashSmoothDashScrollbar: reactLib.reactMod.ReactNs.ComponentType[
-    reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarNs.ScrollbarProps
-  ] = js.constructorOf[reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarNs.ScrollbarProps]]
+  def ReactDashSmoothDashScrollbar: reactLib.reactMod.ComponentType[reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarProps] = js.constructorOf[reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarProps]]
   @scala.inline
-  def ScrollbarProps: reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarNs.ScrollbarProps.type = reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarNs.ScrollbarProps
-  type ScrollbarProps = reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarNs.ScrollbarProps
+  def ScrollbarProps: reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarProps.type = reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarProps
+  type ScrollbarProps = reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarProps
 }
 

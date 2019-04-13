@@ -10,8 +10,8 @@ trait LocalizeProps extends js.Object {
   var dangerousHTML: js.UndefOr[scala.Boolean] = js.undefined
   var dateFormat: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[js.Object] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var value: java.lang.String | scala.Double | js.Object
 }
 
@@ -23,8 +23,8 @@ object LocalizeProps {
     dangerousHTML: js.UndefOr[scala.Boolean] = js.undefined,
     dateFormat: java.lang.String = null,
     options: js.Object = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    style: reactLib.reactMod.CSSProperties = null,
+    tag: reactLib.reactMod.ReactType[_] = null
   ): LocalizeProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

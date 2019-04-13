@@ -16,9 +16,9 @@ class FilterTiltShiftTwoTone protected ()
 @JSImport("@material-ui/icons", "FilterTiltShiftTwoTone")
 @js.native
 class FilterTiltShiftTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

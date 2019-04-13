@@ -15,11 +15,11 @@ object Tab {
     key: java.lang.String,
     children: (js.Function1[
       /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) | reactLib.reactMod.ReactNs.ReactNode = null,
-    component: reactLib.reactMod.ReactNs.ComponentClass[
+      reactLib.reactMod.ReactNode
+    ]) | reactLib.reactMod.ReactNode = null,
+    component: reactLib.reactMod.ComponentClass[
       reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     hideTabBar: js.UndefOr[scala.Boolean] = js.undefined,
@@ -28,10 +28,10 @@ object Tab {
     onIndexChange: /* index */ scala.Double => scala.Unit = null,
     onReset: /* props */ TabBarProps with reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.RouteProps => scala.Unit = null,
     path: java.lang.String = null,
-    render: /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps => reactLib.reactMod.ReactNode = null,
+    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     tabActiveTintColor: java.lang.String = null,
     tabBarIndicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,

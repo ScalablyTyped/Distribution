@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Col
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libColMod.ColNs.ColProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[ColProps, js.Object, js.Any]
 

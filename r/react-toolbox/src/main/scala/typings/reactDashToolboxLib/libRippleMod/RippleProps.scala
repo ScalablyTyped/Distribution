@@ -13,7 +13,7 @@ trait RippleProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * True in case you want a centered ripple.
     * @default false
@@ -41,7 +41,7 @@ object RippleProps {
     * Additional properties passed to rippled component.
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     onRippleEnded: js.Function = null,
     spread: scala.Int | scala.Double = null,

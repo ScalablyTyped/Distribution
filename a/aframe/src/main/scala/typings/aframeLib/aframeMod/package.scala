@@ -13,6 +13,7 @@ package object aframeMod {
   {[ P in keyof T ]: aframe.aframe.SinglePropertySchema<T[P]> | T[P]}
     */ aframeLib.aframeLibStrings.MultiPropertySchema with js.Any
   type NodeDefinition[T /* <: js.Object */] = T with stdLib.Partial[ANode]
+  type ObjectMap[T] = org.scalablytyped.runtime.StringDictionary[T]
   type Schema[T /* <: js.Object */] = SinglePropertySchema[T] | MultiPropertySchema[T]
   type ShaderDefinition[T /* <: js.Object */] = T with stdLib.Partial[Shader]
   type SystemDefinition[T /* <: js.Object */] = T with stdLib.Partial[System[_]]

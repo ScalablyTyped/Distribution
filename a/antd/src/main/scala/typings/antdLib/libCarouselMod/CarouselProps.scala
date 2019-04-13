@@ -10,7 +10,7 @@ trait CarouselProps
   var effect: js.UndefOr[CarouselEffect] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var slickGoTo: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CarouselProps {
@@ -19,7 +19,7 @@ object CarouselProps {
     accessibility: js.UndefOr[scala.Boolean] = js.undefined,
     adaptiveHeight: js.UndefOr[scala.Boolean] = js.undefined,
     afterChange: /* currentSlide */ scala.Double => scala.Unit = null,
-    appendDots: /* dots */ reactLib.reactMod.ReactNs.ReactNode => reactLib.reactMod.Global.JSXNs.Element = null,
+    appendDots: /* dots */ reactLib.reactMod.ReactNode => reactLib.reactMod.Global.JSXNs.Element = null,
     arrows: js.UndefOr[scala.Boolean] = js.undefined,
     asNavFor: reactDashSlickLib.reactDashSlickMod.Slider = null,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,7 +61,7 @@ object CarouselProps {
     slidesToScroll: scala.Int | scala.Double = null,
     slidesToShow: scala.Int | scala.Double = null,
     speed: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     swipe: js.UndefOr[scala.Boolean] = js.undefined,
     swipeEvent: /* swipeDirection */ reactDashSlickLib.reactDashSlickMod.SwipeDirection => scala.Unit = null,
     swipeToSlide: js.UndefOr[scala.Boolean] = js.undefined,

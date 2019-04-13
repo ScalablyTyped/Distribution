@@ -75,7 +75,7 @@ trait VideoProperties
   var source: reactDashNativeDashVideoLib.Anon_Uri | scala.Double
   /* Native only */
   var src: js.UndefOr[js.Any] = js.undefined
-  var textTracks: js.UndefOr[js.Array[reactDashNativeDashVideoLib.Anon_ApplicationttmlxmlApplicationxsubrip]] = js.undefined
+  var textTracks: js.UndefOr[js.Array[reactDashNativeDashVideoLib.Anon_Applicationttmlxml]] = js.undefined
   var translateX: js.UndefOr[scala.Double] = js.undefined
   var translateY: js.UndefOr[scala.Double] = js.undefined
   var useTextureView: js.UndefOr[scala.Boolean] = js.undefined
@@ -181,7 +181,7 @@ object VideoProperties {
     src: js.Any = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     testID: java.lang.String = null,
-    textTracks: js.Array[reactDashNativeDashVideoLib.Anon_ApplicationttmlxmlApplicationxsubrip] = null,
+    textTracks: js.Array[reactDashNativeDashVideoLib.Anon_Applicationttmlxml] = null,
     translateX: scala.Int | scala.Double = null,
     translateY: scala.Int | scala.Double = null,
     useTextureView: js.UndefOr[scala.Boolean] = js.undefined,

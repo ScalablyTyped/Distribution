@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet", "DataTable")
 @js.native
 class DataTable protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
+  extends reactLib.reactMod.Component[
+      grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.TableHTMLAttributes[reactLib.HTMLTableElement], 
         reactLib.HTMLTableElement
       ]), 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
+  def this(props: grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TableHTMLAttributes[reactLib.HTMLTableElement], 
       reactLib.HTMLTableElement
     ])) = this()
-  def this(props: grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
+  def this(props: grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TableHTMLAttributes[reactLib.HTMLTableElement], 
       reactLib.HTMLTableElement
     ]), context: js.Any) = this()
 }

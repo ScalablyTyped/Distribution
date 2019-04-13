@@ -13,3 +13,8 @@ class MFShellDocListCtrl ()
   override def AttachToListingWindow(shellListing: js.Any): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.MFShellDocListCtrl")
+@js.native
+object MFShellDocListCtrl
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMFDocListCtrl]
+

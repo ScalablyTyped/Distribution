@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IModalScope
-  extends angularLib.angularMod.angularNs.IRootScopeService {
+  extends angularLib.angularMod.IRootScopeService {
   /**
     * Close the dialog resolving the promise to the given value. If `preventDefault` is called on the `modal.closing` event then the modal will remain open.
     *

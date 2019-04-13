@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps, 'classes' | never> ]: @material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps[P]} */ trait TableRowProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TableRowClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TableRowBaseProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[TableRowBaseProps]] = js.undefined
   var hover: js.UndefOr[scala.Boolean] = js.undefined
   var selected: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -19,11 +19,11 @@ object TableRowProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TableRowClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[TableRowBaseProps] = null,
+    component: reactLib.reactMod.ReactType[TableRowBaseProps] = null,
     hover: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TableRowProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/clients/s3", "ManagedUpload")
 @js.native
 class ManagedUpload protected ()
-  extends awsDashSdkLib.clientsS3Mod.S3Ns.ManagedUpload {
+  extends awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUpload {
   /**
     * Creates a managed upload object with a set of configuration options.
     */

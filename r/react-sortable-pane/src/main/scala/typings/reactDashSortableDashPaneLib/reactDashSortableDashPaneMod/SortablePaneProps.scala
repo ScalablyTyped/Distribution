@@ -17,7 +17,7 @@ trait SortablePaneProps extends js.Object {
   var margin: js.UndefOr[scala.Double] = js.undefined
   var onDragStart: js.UndefOr[
     js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       scala.Unit
@@ -25,7 +25,7 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onDragStop: js.UndefOr[
     js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       scala.Unit
@@ -40,7 +40,7 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onResize: js.UndefOr[
     js.Function4[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       /* data */ PaneResizeData, 
@@ -49,7 +49,7 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onResizeStart: js.UndefOr[
     js.Function3[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       scala.Unit
@@ -57,14 +57,14 @@ trait SortablePaneProps extends js.Object {
   ] = js.undefined
   var onResizeStop: js.UndefOr[
     js.Function4[
-      /* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], 
+      /* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], 
       /* id */ PaneId, 
       /* panes */ js.Array[PaneProperty], 
       /* data */ PaneResizeData, 
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -78,13 +78,13 @@ object SortablePaneProps {
     grid: js.Tuple2[scala.Double, scala.Double] = null,
     isSortable: js.UndefOr[scala.Boolean] = js.undefined,
     margin: scala.Int | scala.Double = null,
-    onDragStart: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
-    onDragStop: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
+    onDragStart: (/* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
+    onDragStop: (/* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
     onOrderChange: (/* oldPanes */ js.Array[PaneProperty], /* newPanes */ js.Array[PaneProperty]) => scala.Unit = null,
-    onResize: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty], /* data */ PaneResizeData) => scala.Unit = null,
-    onResizeStart: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
-    onResizeStop: (/* e */ (reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty], /* data */ PaneResizeData) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
+    onResize: (/* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty], /* data */ PaneResizeData) => scala.Unit = null,
+    onResizeStart: (/* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty]) => scala.Unit = null,
+    onResizeStop: (/* e */ (reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.TouchEvent[stdLib.HTMLElement], /* id */ PaneId, /* panes */ js.Array[PaneProperty], /* data */ PaneResizeData) => scala.Unit = null,
+    style: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     zIndex: scala.Int | scala.Double = null
   ): SortablePaneProps = {
     val __obj = js.Dynamic.literal()

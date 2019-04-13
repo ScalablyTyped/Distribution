@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("clean-css", JSImport.Namespace)
 @js.native
+class ^ protected () extends MinifierPromise {
+  def this(options: OptionsPromise) = this()
+}
+
+@JSImport("clean-css", JSImport.Namespace)
+@js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[cleanDashCssLib.cleanDashCssMod.CleanCSSNs.Constructor]
+  extends org.scalablytyped.runtime.TopLevel[Constructor]
 

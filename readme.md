@@ -16,7 +16,7 @@ which will be available online shortly after.
 
 ## About
 
-This is the home of Scala.js typings for **6657** Javascript libraries,
+This is the home of Scala.js typings for **6678** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               197773      9716348       881366      2422981      6412001
- Markdown              6123        64005         1225            0        62780
+ Scala               213063      9841350       929705      2372953      6538692
+ Markdown              6130        64055         1228            0        62827
  JSON                     5           29            0            0           29
  Makefile                 2           35            7            0           28
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               203904      9780423       882598      2422981      6474844
+ Total               219201      9905475       930940      2372953      6601582
 --------------------------------------------------------------------------------
 
 ```
@@ -98,7 +98,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201904120800")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201904130133")
 ```
 
 ### `build.sbt`
@@ -122,7 +122,8 @@ object D {
 ### Code away
 After that you should be good to go, and just reference things in your code
 ```scala
-  import typings.d3DashGeoLib.d3DashGeoMod.{GeoContext, GeoPath, GeoPermissibleObjects, GeoProjection}
+  import typings.stdLib.^.console
+  console.warn("Hello, World!")
 ```
 
 ## Contrib libraries
@@ -188,8 +189,8 @@ Test well.
 Users should beware though, that we currently have limited space for published artifacts at Bintray.
 This necessarily means that we'll have to cull old versions of typings to make room for new ones.
 
-We'll probably establish some kind of regime with selected LTS (Long Term Support) releases
- or something, but no promises for now.
+We'll establish some kind of regime with selected LTS (Long Term Support) releases, but the
+exact details are yet to be determined.
 
 If you choose to depend on a typing now, be prepared to do one of the following:
 - keep updating to newest version of typings (breaking old builds)
@@ -222,8 +223,9 @@ A somewhat nice way of handling this is to bundle your commonly used imports som
 ```scala
 package object myapp {
   type Avatar = typings.materialDashUiLib.avatarMod.default
-  val React = typings.reactLib.ReactDsl
+  val React = typings.reactLib.dsl
 }
+
 ```
 
 ### Whatsup with the hats?
@@ -256,6 +258,21 @@ Note that this is the "normal" container format.
 If a container doesn't introduce new types (or if a namespace is exported in a module),
 the "compact" format is used instead where everything goes into an object.
 
+Modules which are classes are also called `^`, for instance:
+```scala
+package awsDashSdkLib.clientsDynamodbMod
+
+@JSImport("aws-sdk/clients/dynamodb", JSImport.Namespace)
+@js.native
+class ^ () extends DynamoDB {
+  def this(options: ClientConfiguration) = this()
+}
+
+//usage:
+import awsDashSdkLib.clientsDynamodbMod.{^ => DynamoDb}
+new DynamoDb(ClientConfiguration(...))
+
+```
 
 ### Whatsup with those version strings?
 
@@ -633,15 +650,18 @@ Into this:
 
 ```scala
 /* Rewritten from type alias, can be one of:
-  BufferSource |
-  Blob |
-  java.lang.String
+  - BufferSource
+  - Blob
+  - java.lang.String
 */
 type BlobPart = _BlobPart | java.lang.String
 
 trait _BlobPart extends js.Object
 
+trait Blob extends _BlobPart
+
 trait BufferSource extends _BlobPart
+
 ```
 
 This mechanism also means that the fake string literals seen above can inherit from traits:

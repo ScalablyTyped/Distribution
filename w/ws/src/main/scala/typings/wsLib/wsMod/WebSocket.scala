@@ -55,10 +55,7 @@ trait WebSocket
   @JSName("addListener")
   def addListener_error(event: wsLib.wsLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_message(
-    event: wsLib.wsLibStrings.message,
-    listener: js.Function1[/* data */ wsLib.wsMod.WebSocketNs.Data, scala.Unit]
-  ): this.type = js.native
+  def addListener_message(event: wsLib.wsLibStrings.message, listener: js.Function1[/* data */ Data, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_open(event: wsLib.wsLibStrings.open, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
@@ -109,7 +106,7 @@ trait WebSocket
   @JSName("on")
   def on_message(
     event: wsLib.wsLibStrings.message,
-    listener: js.ThisFunction1[/* this */ this.type, /* data */ wsLib.wsMod.WebSocketNs.Data, scala.Unit]
+    listener: js.ThisFunction1[/* this */ this.type, /* data */ Data, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_open(event: wsLib.wsLibStrings.open, listener: js.ThisFunction0[/* this */ this.type, scala.Unit]): this.type = js.native
@@ -185,10 +182,7 @@ trait WebSocket
   @JSName("removeListener")
   def removeListener_error(event: wsLib.wsLibStrings.error, listener: js.Function1[/* err */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_message(
-    event: wsLib.wsLibStrings.message,
-    listener: js.Function1[/* data */ wsLib.wsMod.WebSocketNs.Data, scala.Unit]
-  ): this.type = js.native
+  def removeListener_message(event: wsLib.wsLibStrings.message, listener: js.Function1[/* data */ Data, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_open(event: wsLib.wsLibStrings.open, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")

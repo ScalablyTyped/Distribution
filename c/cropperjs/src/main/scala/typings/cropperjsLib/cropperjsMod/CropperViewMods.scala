@@ -5,14 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait CropperViewMods extends js.Object
+
 @JSImport("cropperjs", "CropperViewMods")
 @js.native
 object CropperViewMods extends js.Object {
-  /* 2 */ val CanvasShouldNotBeWithInTheContainer: cropperjsLib.cropperjsMod.cropperjsNs.CropperViewMods.CanvasShouldNotBeWithInTheContainer with scala.Double = js.native
-  /* 3 */ val ContainerSshouldBeWithInTheCanvas: cropperjsLib.cropperjsMod.cropperjsNs.CropperViewMods.ContainerSshouldBeWithInTheCanvas with scala.Double = js.native
-  /* 0 */ val CropBoxIsJustWithInTheContainer: cropperjsLib.cropperjsMod.cropperjsNs.CropperViewMods.CropBoxIsJustWithInTheContainer with scala.Double = js.native
-  /* 1 */ val CropBoxShouldBeWithInTheCanvas: cropperjsLib.cropperjsMod.cropperjsNs.CropperViewMods.CropBoxShouldBeWithInTheCanvas with scala.Double = js.native
+  @js.native
+  sealed trait CanvasShouldNotBeWithInTheContainer
+    extends cropperjsLib.cropperjsMod.CropperViewMods
+  
+  @js.native
+  sealed trait ContainerSshouldBeWithInTheCanvas
+    extends cropperjsLib.cropperjsMod.CropperViewMods
+  
+  @js.native
+  sealed trait CropBoxIsJustWithInTheContainer
+    extends cropperjsLib.cropperjsMod.CropperViewMods
+  
+  @js.native
+  sealed trait CropBoxShouldBeWithInTheCanvas
+    extends cropperjsLib.cropperjsMod.CropperViewMods
+  
+  /* 2 */ val CanvasShouldNotBeWithInTheContainer: CanvasShouldNotBeWithInTheContainer with scala.Double = js.native
+  /* 3 */ val ContainerSshouldBeWithInTheCanvas: ContainerSshouldBeWithInTheCanvas with scala.Double = js.native
+  /* 0 */ val CropBoxIsJustWithInTheContainer: CropBoxIsJustWithInTheContainer with scala.Double = js.native
+  /* 1 */ val CropBoxShouldBeWithInTheCanvas: CropBoxShouldBeWithInTheCanvas with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[cropperjsLib.cropperjsMod.cropperjsNs.CropperViewMods with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[cropperjsLib.cropperjsMod.CropperViewMods with scala.Double] = js.native
 }
 

@@ -15,25 +15,19 @@ trait CellMeasurerProps
   */
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cache: CellMeasurerCacheInterface
-  var children: (js.Function1[
-    /* props */ reactDashVirtualizedLib.Anon_Measure, 
-    reactLib.reactMod.ReactNs.ReactNode
-  ]) | reactLib.reactMod.ReactNs.ReactNode
+  var children: (js.Function1[/* props */ reactDashVirtualizedLib.Anon_Measure, reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
   var columnIndex: js.UndefOr[scala.Double] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined
   var parent: MeasuredCellParent
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CellMeasurerProps {
   @scala.inline
   def apply(
     cache: CellMeasurerCacheInterface,
-    children: (js.Function1[
-      /* props */ reactDashVirtualizedLib.Anon_Measure, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) | reactLib.reactMod.ReactNs.ReactNode,
+    children: (js.Function1[/* props */ reactDashVirtualizedLib.Anon_Measure, reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode,
     parent: MeasuredCellParent,
     StringDictionary: /**
     * PLEASE NOTE
@@ -46,7 +40,7 @@ object CellMeasurerProps {
     columnIndex: scala.Int | scala.Double = null,
     index: scala.Int | scala.Double = null,
     rowIndex: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CellMeasurerProps = {
     val __obj = js.Dynamic.literal(cache = cache, children = children.asInstanceOf[js.Any], parent = parent)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -11,7 +11,7 @@ trait Header
   var calenderHeaderNode: js.Any = js.native
   def getCalenderHeaderNode(node: stdLib.HTMLDivElement): scala.Unit = js.native
   def getMonthSelectElement(prefixCls: java.lang.String, month: scala.Double, months: js.Array[scala.Double]): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def getMonthsLocale(value: momentLib.momentMod.momentNs.Moment): js.Array[_] = js.native
+  def getMonthsLocale(value: momentLib.momentMod.Moment): js.Array[_] = js.native
   def getYearSelectElement(prefixCls: java.lang.String, year: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
   def onMonthChange(month: java.lang.String): scala.Unit = js.native
   def onTypeChange(e: antdLib.libRadioInterfaceMod.RadioChangeEvent): scala.Unit = js.native

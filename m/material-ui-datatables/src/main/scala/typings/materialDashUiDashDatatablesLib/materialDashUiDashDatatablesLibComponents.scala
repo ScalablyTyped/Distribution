@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object materialDashUiDashDatatablesLibComponents {
   @scala.inline
-  def MaterialDashUiDashDatatables: reactLib.reactMod.ReactNs.ComponentType[
+  def MaterialDashUiDashDatatables: reactLib.reactMod.ComponentType[
     stdLib.Partial[materialDashUiDashDatatablesLib.materialDashUiDashDatatablesMod.DataTableProps]
-  ] = js.constructorOf[materialDashUiDashDatatablesLib.materialDashUiDashDatatablesMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[materialDashUiDashDatatablesLib.materialDashUiDashDatatablesMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   stdLib.Partial[materialDashUiDashDatatablesLib.materialDashUiDashDatatablesMod.DataTableProps]]]
   type Partial[T] = stdLib.Partial[T]
 }

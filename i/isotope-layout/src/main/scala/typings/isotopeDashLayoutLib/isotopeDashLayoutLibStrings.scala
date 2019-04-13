@@ -14,22 +14,22 @@ object isotopeDashLayoutLibStrings {
   
   @js.native
   sealed trait cellsByColumn
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait cellsByRow
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait destroy extends js.Object
   
   @js.native
   sealed trait fitColumns
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait fitRows
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait getFilteredItemElements extends js.Object
@@ -42,7 +42,7 @@ object isotopeDashLayoutLibStrings {
   
   @js.native
   sealed trait horiz
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait insert extends js.Object
@@ -58,15 +58,15 @@ object isotopeDashLayoutLibStrings {
   
   @js.native
   sealed trait masonry
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait masonryHorizontal
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait packery
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @js.native
   sealed trait prepended extends js.Object
@@ -94,7 +94,7 @@ object isotopeDashLayoutLibStrings {
   
   @js.native
   sealed trait vertical
-    extends isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.LayoutModes
+    extends isotopeDashLayoutLib.isotopeDashLayoutMod.LayoutModes
   
   @scala.inline
   def addItems: addItems = "addItems".asInstanceOf[addItems]

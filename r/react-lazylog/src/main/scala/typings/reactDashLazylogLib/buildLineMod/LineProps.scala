@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait LineProps extends js.Object {
   var data: js.Array[reactDashLazylogLib.Anon_Text]
-  var formatPart: js.UndefOr[js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var formatPart: js.UndefOr[js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNode]] = js.undefined
   var highlight: js.UndefOr[scala.Boolean] = js.undefined
   var number: scala.Double
-  var onLineNumberClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
+  var onLineNumberClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
   /**
     * This is never called
     * https://github.com/mozilla-frontend-infra/react-lazylog/issues/18
@@ -18,7 +18,7 @@ trait LineProps extends js.Object {
   var onRowClick: js.UndefOr[js.Function0[_]] = js.undefined
   var rowHeight: scala.Double
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object LineProps {
@@ -27,12 +27,12 @@ object LineProps {
     data: js.Array[reactDashLazylogLib.Anon_Text],
     number: scala.Double,
     rowHeight: scala.Double,
-    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
+    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNode = null,
     highlight: js.UndefOr[scala.Boolean] = js.undefined,
-    onLineNumberClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
+    onLineNumberClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
     onRowClick: () => _ = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): LineProps = {
     val __obj = js.Dynamic.literal(data = data, number = number, rowHeight = rowHeight)
     if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))

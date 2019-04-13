@@ -97,6 +97,10 @@ object ^ extends js.Object {
   		 */
   val ATTRIBUTE_OBLIQUENESS: scala.Double = js.native
   /**
+  		 * Use with <Attribute.type> to manages the behaviour of string set.
+  		 */
+  val ATTRIBUTE_PARAGRAPH_STYLE: scala.Double = js.native
+  /**
   		 * Use with <Attribute.type> to display a shadow behind the text.
   		 */
   val ATTRIBUTE_SHADOW: scala.Double = js.native
@@ -1068,7 +1072,7 @@ object ^ extends js.Object {
   		 * Creates and returns an instance of <Titanium.UI.2DMatrix>.
   		 */
   def create2DMatrix(): Matrix2D = js.native
-  def create2DMatrix(parameters: titaniumLib.MatrixCreationDict): Matrix2D = js.native
+  def create2DMatrix(parameters: titaniumLib.Matrix2DCreationDict): Matrix2D = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.3DMatrix>.
   		 */
@@ -1150,6 +1154,21 @@ object ^ extends js.Object {
   def createMaskedImage(): MaskedImage = js.native
   def createMaskedImage(parameters: js.Any): MaskedImage = js.native
   /**
+  		 * Creates and returns an instance of <Titanium.UI.Matrix2D>.
+  		 */
+  def createMatrix2D(): Matrix2D = js.native
+  def createMatrix2D(parameters: titaniumLib.Matrix2DCreationDict): Matrix2D = js.native
+  /**
+  		 * Creates and returns an instance of <Titanium.UI.Matrix3D>.
+  		 */
+  def createMatrix3D(): Matrix3D = js.native
+  def createMatrix3D(parameters: js.Any): Matrix3D = js.native
+  /**
+  		 * Creates and returns an instance of <Titanium.UI.NavigationWindow>.
+  		 */
+  def createNavigationWindow(): NavigationWindow = js.native
+  def createNavigationWindow(parameters: js.Any): NavigationWindow = js.native
+  /**
   		 * Creates and returns an instance of <Titanium.UI.Notification>.
   		 */
   def createNotification(): Notification = js.native
@@ -1199,6 +1218,11 @@ object ^ extends js.Object {
   		 */
   def createSearchBar(): SearchBar = js.native
   def createSearchBar(parameters: js.Any): SearchBar = js.native
+  /**
+  		 * Creates and returns an instance of <Titanium.UI.ShortcutItem>.
+  		 */
+  def createShortcutItem(): ShortcutItem = js.native
+  def createShortcutItem(parameters: js.Any): ShortcutItem = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Slider>.
   		 */

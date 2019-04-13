@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ElementHeaders extends js.Object {
   var element: js.Any
   var headers: js.Any
-  var httpConfig: angularLib.angularMod.angularNs.IRequestShortcutConfig
+  var httpConfig: angularLib.angularMod.IRequestShortcutConfig
   var params: js.Any
 }
 
@@ -17,7 +17,7 @@ object Anon_ElementHeaders {
   def apply(
     element: js.Any,
     headers: js.Any,
-    httpConfig: angularLib.angularMod.angularNs.IRequestShortcutConfig,
+    httpConfig: angularLib.angularMod.IRequestShortcutConfig,
     params: js.Any
   ): Anon_ElementHeaders = {
     val __obj = js.Dynamic.literal(element = element, headers = headers, httpConfig = httpConfig, params = params)

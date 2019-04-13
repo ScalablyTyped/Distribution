@@ -13,6 +13,7 @@ package object CoreNs {
   */
   type AttachmentData = _AttachmentData | java.lang.String
   type AttachmentId = java.lang.String
+  type Attachments = org.scalablytyped.runtime.StringDictionary[Attachment]
   type Callback[R] = js.Function2[/* error */ Error | scala.Null, /* result */ R | scala.Null, scala.Unit]
   type Document[Content /* <: js.Object */] = Content with IdMeta
   type DocumentId = java.lang.String
@@ -23,5 +24,7 @@ package object CoreNs {
   type PutDocument[Content /* <: js.Object */] = PostDocument[Content] with ChangesMeta with pouchdbDashCoreLib.Anon_Id
   /** Existing doc or just object with `_id` and `_rev` */
   type RemoveDocument = IdMeta with RevisionIdMeta
+  type RevisionDiffOptions = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  type RevisionDiffResponse = org.scalablytyped.runtime.StringDictionary[RevisionDiff]
   type RevisionId = java.lang.String
 }

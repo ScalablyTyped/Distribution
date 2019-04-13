@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MTurk ()
-  extends awsDashSdkLib.clientsMturkMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMturkMod.MTurkNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMturkMod.^ {
+  def this(options: awsDashSdkLib.clientsMturkMod.ClientConfiguration) = this()
 }
 

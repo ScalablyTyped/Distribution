@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("json-rpc-ws", "Client")
 @js.native
 class Client[TConnection /* <: Connection */] protected () extends Base[TConnection] {
-  def this(WebSocket: wsLib.wsMod.namespaced) = this()
-  def this(WebSocket: wsLib.wsMod.namespaced, browser: scala.Boolean) = this()
+  def this(WebSocket: wsLib.wsMod.^) = this()
+  def this(WebSocket: wsLib.wsMod.^, browser: scala.Boolean) = this()
   /**
     * Connect to a json-rpc-ws server
     */

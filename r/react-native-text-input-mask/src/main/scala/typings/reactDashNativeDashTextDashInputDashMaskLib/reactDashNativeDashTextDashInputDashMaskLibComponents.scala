@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashTextDashInputDashMaskLibComponents {
   @scala.inline
-  def ReactDashNativeDashTextDashInputDashMask: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashTextDashInputDashMask: reactLib.reactMod.ComponentType[
     reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskMod.TextInputMaskProps
-  ] = js.constructorOf[reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskMod.TextInputMaskProps]]
   type TextInputMaskProps = reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskMod.TextInputMaskProps
 }

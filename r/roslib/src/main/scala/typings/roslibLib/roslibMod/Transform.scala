@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("roslib", "Transform")
 @js.native
-class Transform protected ()
-  extends roslibLib.roslibMod.ROSLIBNs.Transform {
+class Transform protected () extends js.Object {
   /**
     * A Transform in 3-space. Values are copied into this object.
     *
@@ -18,10 +17,8 @@ class Transform protected ()
     *   * rotation - the ROSLIB.Quaternion describing the rotation
     */
   def this(options: roslibLib.Anon_Rotation) = this()
-  /* CompleteClass */
-  override var rotation: roslibLib.roslibMod.ROSLIBNs.Quaternion = js.native
+  var rotation: Quaternion = js.native
   // getters
-  /* CompleteClass */
-  override var translation: roslibLib.roslibMod.ROSLIBNs.Vector3 = js.native
+  var translation: Vector3 = js.native
 }
 

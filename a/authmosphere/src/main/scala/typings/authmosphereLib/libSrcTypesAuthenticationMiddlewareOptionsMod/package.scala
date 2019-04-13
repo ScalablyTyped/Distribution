@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object libSrcTypesAuthenticationMiddlewareOptionsMod {
   type onNotAuthenticatedHandler = js.Function4[
-    /* request */ expressLib.expressMod.eNs.Request, 
-    /* resonse */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* request */ expressLib.expressMod.Request, 
+    /* resonse */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     /* logger */ authmosphereLib.libSrcTypesLoggerMod.Logger, 
     scala.Unit
   ]

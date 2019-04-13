@@ -16,20 +16,20 @@ trait Props extends js.Object {
   var onDragStarted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onResizerClick: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent, scala.Unit]] = js.undefined
   var onResizerDoubleClick: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent, scala.Unit]] = js.undefined
-  var pane1Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var pane2Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var paneStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var pane1Style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var pane2Style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var paneStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var primary: js.UndefOr[
     reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.first | reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.second
   ] = js.undefined
   var resizerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var resizerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var resizerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var size: js.UndefOr[Size] = js.undefined
   var split: js.UndefOr[
     reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.vertical | reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.horizontal
   ] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object Props {
@@ -45,16 +45,16 @@ object Props {
     onDragStarted: () => scala.Unit = null,
     onResizerClick: /* event */ stdLib.MouseEvent => scala.Unit = null,
     onResizerDoubleClick: /* event */ stdLib.MouseEvent => scala.Unit = null,
-    pane1Style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    pane2Style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    paneStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    pane1Style: reactLib.reactMod.CSSProperties = null,
+    pane2Style: reactLib.reactMod.CSSProperties = null,
+    paneStyle: reactLib.reactMod.CSSProperties = null,
     primary: reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.first | reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.second = null,
     resizerClassName: java.lang.String = null,
-    resizerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    resizerStyle: reactLib.reactMod.CSSProperties = null,
     size: Size = null,
     split: reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.vertical | reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.horizontal = null,
     step: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize)

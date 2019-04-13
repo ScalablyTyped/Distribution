@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Name extends js.Object {
   var name: java.lang.String
-  var ros: roslibLib.roslibMod.ROSLIBNs.Ros
+  var ros: roslibLib.roslibMod.Ros
 }
 
 object Anon_Name {
   @scala.inline
-  def apply(name: java.lang.String, ros: roslibLib.roslibMod.ROSLIBNs.Ros): Anon_Name = {
+  def apply(name: java.lang.String, ros: roslibLib.roslibMod.Ros): Anon_Name = {
     val __obj = js.Dynamic.literal(name = name, ros = ros)
   
     __obj.asInstanceOf[Anon_Name]

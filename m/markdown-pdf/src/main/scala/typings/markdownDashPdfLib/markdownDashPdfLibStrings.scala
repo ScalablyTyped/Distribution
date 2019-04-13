@@ -8,35 +8,35 @@ import scala.scalajs.js.annotation._
 object markdownDashPdfLibStrings {
   @js.native
   sealed trait A3
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperFormat
   
   @js.native
   sealed trait A4
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperFormat
   
   @js.native
   sealed trait A5
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperFormat
   
   @js.native
   sealed trait Legal
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperFormat
   
   @js.native
   sealed trait Letter
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperFormat
   
   @js.native
   sealed trait Tabloid
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperFormat
   
   @js.native
   sealed trait landscape
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperOrientation
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperOrientation
   
   @js.native
   sealed trait portait
-    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperOrientation
+    extends markdownDashPdfLib.markdownDashPdfMod.PaperOrientation
   
   @scala.inline
   def A3: A3 = "A3".asInstanceOf[A3]

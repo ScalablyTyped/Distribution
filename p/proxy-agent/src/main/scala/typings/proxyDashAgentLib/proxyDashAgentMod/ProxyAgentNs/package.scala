@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ProxyAgentNs {
-  type ProxyAgent = agentDashBaseLib.agentDashBaseMod.AgentNs.Agent
+  type ProxyAgent = agentDashBaseLib.agentDashBaseMod.Agent
 }

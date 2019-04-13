@@ -13,3 +13,8 @@ class VerifyVaultJobOutput ()
   override val Errors: mfilesLib.IStrings = js.native
 }
 
+@JSGlobal("MFiles.VerifyVaultJobOutput")
+@js.native
+object VerifyVaultJobOutput
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVerifyVaultJobOutput]
+

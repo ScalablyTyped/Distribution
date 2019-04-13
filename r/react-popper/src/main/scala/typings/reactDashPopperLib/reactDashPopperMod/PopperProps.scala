@@ -12,13 +12,13 @@ trait PopperProps extends js.Object {
   var placement: js.UndefOr[popperDotJsLib.popperDotJsMod.Placement] = js.undefined
   var positionFixed: js.UndefOr[scala.Boolean] = js.undefined
   var referenceElement: js.UndefOr[popperDotJsLib.popperDotJsMod.ReferenceObject] = js.undefined
-  def children(props: PopperChildrenProps): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: PopperChildrenProps): reactLib.reactMod.ReactNode
 }
 
 object PopperProps {
   @scala.inline
   def apply(
-    children: PopperChildrenProps => reactLib.reactMod.ReactNs.ReactNode,
+    children: PopperChildrenProps => reactLib.reactMod.ReactNode,
     eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     innerRef: reactDashPopperLib.RefHandler = null,
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,

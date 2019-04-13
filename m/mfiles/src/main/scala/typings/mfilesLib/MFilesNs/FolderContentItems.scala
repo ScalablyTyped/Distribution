@@ -17,3 +17,8 @@ class FolderContentItems ()
   override def Item(Index: scala.Double): mfilesLib.IFolderContentItem = js.native
 }
 
+@JSGlobal("MFiles.FolderContentItems")
+@js.native
+object FolderContentItems
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderContentItems]
+

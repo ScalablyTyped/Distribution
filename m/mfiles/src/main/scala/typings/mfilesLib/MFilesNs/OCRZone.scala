@@ -39,3 +39,8 @@ class OCRZone ()
   override def SetOCROptions(OCROptions: mfilesLib.IOCROptions): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.OCRZone")
+@js.native
+object OCRZone
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRZone]
+

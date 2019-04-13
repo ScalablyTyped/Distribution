@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
     stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps]
   ] = js.undefined
   var activeStep: js.UndefOr[scala.Double] = js.undefined
-  var backButton: reactLib.reactMod.ReactNs.ReactElement[_]
-  var nextButton: reactLib.reactMod.ReactNs.ReactElement[_]
+  var backButton: reactLib.reactMod.ReactElement[_]
+  var nextButton: reactLib.reactMod.ReactElement[_]
   var position: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.static
   ] = js.undefined
@@ -27,16 +27,16 @@ import scala.scalajs.js.annotation._
 object MobileStepperProps {
   @scala.inline
   def apply(
-    backButton: reactLib.reactMod.ReactNs.ReactElement[_],
-    nextButton: reactLib.reactMod.ReactNs.ReactElement[_],
+    backButton: reactLib.reactMod.ReactElement[_],
+    nextButton: reactLib.reactMod.ReactElement[_],
     steps: scala.Double,
     LinearProgressProps: stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps] = null,
     activeStep: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MobileStepperClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     position: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.static = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.text | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dots | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.progress = null
   ): MobileStepperProps = {
     val __obj = js.Dynamic.literal(backButton = backButton, nextButton = nextButton, steps = steps)

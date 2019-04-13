@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Create a new strong error middleware funciton using the given options.
     * @param options
     */
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(options: strongDashErrorDashHandlerLib.strongDashErrorDashHandlerMod.StrongErrorHandlerNs.options): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
+  def apply(options: strongDashErrorDashHandlerLib.strongDashErrorDashHandlerMod.StrongErrorHandlerNs.options): expressLib.expressMod.RequestHandler = js.native
 }
 

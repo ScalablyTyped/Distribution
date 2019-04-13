@@ -21,7 +21,7 @@ trait CommonOptions extends js.Object {
     * (this is considered a valid React component).
     */
   // NOTE: () => null is only needed until React.SFC supports components returning null
-  var loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null]
+  var loading: reactLib.reactMod.ComponentType[LoadingComponentProps] | js.Function0[scala.Null]
   /**
     * Optional array of module paths that `Loadable.Capture`'s `report` function will be applied on during
     * server-side rendering. This helps the server know which modules were imported/used during SSR.
@@ -58,7 +58,7 @@ trait CommonOptions extends js.Object {
 object CommonOptions {
   @scala.inline
   def apply(
-    loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
+    loading: reactLib.reactMod.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
     delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
     modules: js.Array[java.lang.String] = null,
     timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,

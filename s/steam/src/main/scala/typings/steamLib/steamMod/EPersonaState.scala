@@ -5,11 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait EPersonaState extends js.Object
+
 @JSImport("steam", "EPersonaState")
 @js.native
 object EPersonaState extends js.Object {
-  val Online: steamLib.steamMod.SteamNs.EPersonaState.Online with java.lang.String = js.native
+  @js.native
+  sealed trait Online
+    extends steamLib.steamMod.EPersonaState
+  
+  val Online: Online with java.lang.String = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[steamLib.steamMod.SteamNs.EPersonaState with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[steamLib.steamMod.EPersonaState with java.lang.String] = js.native
 }
 

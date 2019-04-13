@@ -13,7 +13,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     * @param options a hash of [webhook attributes]{@link https://developers.sparkpost.com/api/webhooks#header-webhooks-object-properties}
     * @returns The webhook id results
     */
-  def create(options: sparkpostLib.sparkpostMod.SparkPostNs.Webhook): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with Anon_Id] = js.native
+  def create(options: sparkpostLib.sparkpostMod.Webhook): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.WebhookLinks with Anon_Id] = js.native
   /**
     * Create a new webhook
     *
@@ -21,8 +21,8 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     * @param callback The request callback with webhook id results
     */
   def create(
-    options: sparkpostLib.sparkpostMod.SparkPostNs.Webhook,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with Anon_Id]
+    options: sparkpostLib.sparkpostMod.Webhook,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.WebhookLinks with Anon_Id]
   ): scala.Unit = js.native
   /**
     * Delete an existing webhook.
@@ -35,7 +35,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     * @param id The webhook id
     * @param callback The request callback
     */
-  def delete(id: java.lang.String, callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[scala.Unit]): scala.Unit = js.native
+  def delete(id: java.lang.String, callback: sparkpostLib.sparkpostMod.Callback[scala.Unit]): scala.Unit = js.native
   /**
     * Retrieve details about a specified webhook by its id
     *
@@ -43,9 +43,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     * @param [options] the timezone to use for the last_successful and last_failure properties
     * @returns The RelayWebhook results
     */
-  def get(id: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[
-    sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-  ] = js.native
+  def get(id: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook] = js.native
   /**
     * Retrieve details about a specified webhook by its id
     *
@@ -54,13 +52,9 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     */
   def get(
     id: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[
-      sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-    ]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook]
   ): scala.Unit = js.native
-  def get(id: java.lang.String, options: Anon_Timezone): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[
-    sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-  ] = js.native
+  def get(id: java.lang.String, options: Anon_Timezone): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook] = js.native
   /**
     * Retrieve details about a specified webhook by its id
     *
@@ -71,9 +65,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
   def get(
     id: java.lang.String,
     options: Anon_Timezone,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[
-      sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-    ]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook]
   ): scala.Unit = js.native
   /**
     * Gets recent status information about a webhook.
@@ -81,10 +73,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     * @param id The id of the webhook
     * @param callback The request callback with status results
     */
-  def getBatchStatus(
-    id: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[Anon_Attempts]]
-  ): scala.Unit = js.native
+  def getBatchStatus(id: java.lang.String, callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[Anon_Attempts]]): scala.Unit = js.native
   /**
     * Gets recent status information about a webhook.
     *
@@ -92,7 +81,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     * @param Maximum number of results to return. Defaults to 1000
     * @returns The status results
     */
-  def getBatchStatus(id: java.lang.String, options: Anon_Limit): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[Anon_Attempts]] = js.native
+  def getBatchStatus(id: java.lang.String, options: Anon_Limit): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[Anon_Attempts]] = js.native
   /**
     * Gets recent status information about a webhook.
     *
@@ -103,62 +92,56 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
   def getBatchStatus(
     id: java.lang.String,
     options: Anon_Limit,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[Anon_Attempts]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[Anon_Attempts]]
   ): scala.Unit = js.native
   /**
     * Lists descriptions of the events, event types, and event fields that could be included in a Webhooks post to your target URL.
     *
     * @returns The documentation results
     */
-  def getDocumentation(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[_] = js.native
+  def getDocumentation(): sparkpostLib.sparkpostMod.ResultsPromise[_] = js.native
   /**
     * Lists descriptions of the events, event types, and event fields that could be included in a Webhooks post to your target URL.
     * @param callback The request callback containing documentation results
     */
-  def getDocumentation(callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[_]): scala.Unit = js.native
+  def getDocumentation(callback: sparkpostLib.sparkpostMod.ResultsCallback[_]): scala.Unit = js.native
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     *
     * @param options [event types]{@link https://support.sparkpost.com/customer/portal/articles/1976204} for which to get a sample payload
     * Default: all event types returned
     */
-  def getSamples(): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def getSamples(): js.Promise[sparkpostLib.sparkpostMod.Response[_]] = js.native
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     * @param callback The request callback containing examples
     */
-  def getSamples(callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[_]): scala.Unit = js.native
-  def getSamples(options: Anon_Events): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def getSamples(callback: sparkpostLib.sparkpostMod.Callback[_]): scala.Unit = js.native
+  def getSamples(options: Anon_Events): js.Promise[sparkpostLib.sparkpostMod.Response[_]] = js.native
   /**
     * List an example of the event data that will be posted by a Webhook for the specified events.
     * @param options The optional event name
     * @param callback The request callback containing examples
     */
-  def getSamples(options: Anon_Events, callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[_]): scala.Unit = js.native
+  def getSamples(options: Anon_Events, callback: sparkpostLib.sparkpostMod.Callback[_]): scala.Unit = js.native
   /**
     * List currently existing webhooks.the timezone to use for the last_successful and last_failure properties | Default: UTC
     *
     */
-  def list(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[
-    js.Array[
-      sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-    ]
+  def list(): sparkpostLib.sparkpostMod.ResultsPromise[
+    js.Array[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook]
   ] = js.native
   /**
     * List currently existing webhooks.
     * @param callback The request callback with RelayWebhook results array
     */
   def list(
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[
-      js.Array[
-        sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-      ]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[
+      js.Array[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook]
     ]
   ): scala.Unit = js.native
-  def list(options: Anon_Timezone): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[
-    js.Array[
-      sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-    ]
+  def list(options: Anon_Timezone): sparkpostLib.sparkpostMod.ResultsPromise[
+    js.Array[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook]
   ] = js.native
   /**
     * List currently existing webhooks.
@@ -167,17 +150,15 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     */
   def list(
     options: Anon_Timezone,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[
-      js.Array[
-        sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with sparkpostLib.sparkpostMod.SparkPostNs.Webhook
-      ]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[
+      js.Array[sparkpostLib.sparkpostMod.WebhookLinks with sparkpostLib.sparkpostMod.Webhook]
     ]
   ): scala.Unit = js.native
   /**
     * Update an existing webhook
     *
     */
-  def update(id: java.lang.String, options: sparkpostLib.sparkpostMod.SparkPostNs.UpdateWebhook): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with Anon_Id] = js.native
+  def update(id: java.lang.String, options: sparkpostLib.sparkpostMod.UpdateWebhook): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.WebhookLinks with Anon_Id] = js.native
   /**
     * Update an existing webhook
     * @param id the id of the webhook to update
@@ -186,8 +167,8 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     */
   def update(
     id: java.lang.String,
-    options: sparkpostLib.sparkpostMod.SparkPostNs.UpdateWebhook,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.WebhookLinks with Anon_Id]
+    options: sparkpostLib.sparkpostMod.UpdateWebhook,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.WebhookLinks with Anon_Id]
   ): scala.Unit = js.native
   /**
     * Sends an example message event batch from the Webhook API to the target URL.
@@ -196,7 +177,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
     * @param options The message (payload) to send to the webhook consumer
     * @returns The validation results
     */
-  def validate(id: java.lang.String, options: Anon_MessageAny): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Msg] = js.native
+  def validate(id: java.lang.String, options: Anon_MessageAny): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Msg] = js.native
   /**
     * Sends an example message event batch from the Webhook API to the target URL
     *
@@ -207,7 +188,7 @@ trait Anon_CallbackCreateDeleteGetGetBatchStatus extends js.Object {
   def validate(
     id: java.lang.String,
     options: Anon_MessageAny,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Msg]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Msg]
   ): scala.Unit = js.native
 }
 

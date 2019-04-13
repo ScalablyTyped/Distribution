@@ -20,6 +20,5 @@ object BlameNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.blameMod.BlameNs.FLAG with scala.Double] = js.native
   }
   
-  type FLAG = nodegitLib.blameMod.BlameNs.FLAG
 }
 

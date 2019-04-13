@@ -24,12 +24,10 @@ object ICurrentRoute {
     reloadOnUrl: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     resolveAs: java.lang.String = null,
-    resolveRedirectTo: angularLib.angularMod.angularNs.Injectable[
+    resolveRedirectTo: angularLib.angularMod.Injectable[
       js.Function1[
         /* repeated */ _, 
-        js.UndefOr[
-          angularLib.angularMod.angularNs.IPromise[js.UndefOr[java.lang.String]] | java.lang.String
-        ]
+        js.UndefOr[angularLib.angularMod.IPromise[js.UndefOr[java.lang.String]] | java.lang.String]
       ]
     ] = null,
     template: java.lang.String | angularDashRouteLib.Anon_RouteParams = null,

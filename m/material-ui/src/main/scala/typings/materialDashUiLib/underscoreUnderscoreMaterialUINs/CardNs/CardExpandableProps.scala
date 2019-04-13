@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CardExpandableProps extends js.Object {
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
   var onExpanding: js.UndefOr[js.Function1[/* isExpanded */ scala.Boolean, scala.Unit]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CardExpandableProps {
@@ -16,7 +16,7 @@ object CardExpandableProps {
   def apply(
     expanded: js.UndefOr[scala.Boolean] = js.undefined,
     onExpanding: /* isExpanded */ scala.Boolean => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CardExpandableProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)

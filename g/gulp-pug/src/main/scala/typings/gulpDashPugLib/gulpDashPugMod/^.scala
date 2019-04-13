@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): nodeLib.streamMod.Transform = js.native
-  def apply(params: gulpDashPugLib.gulpDashPugMod.GulpPugNs.Params): nodeLib.streamMod.Transform = js.native
+  def apply(params: Params): nodeLib.streamMod.Transform = js.native
 }
 

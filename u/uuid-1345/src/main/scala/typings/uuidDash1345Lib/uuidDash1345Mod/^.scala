@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("uuid-1345", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var namespace: uuidDash1345Lib.Anon_Dns = js.native
   def check(uuid: java.lang.String): uuidDash1345Lib.Anon_Format = js.native
   def check(uuid: nodeLib.Buffer): uuidDash1345Lib.Anon_Format = js.native
   def parse(uuid: java.lang.String): nodeLib.Buffer = js.native

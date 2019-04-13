@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("parent-package-json", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): parentDashPackageDashJsonLib.parentDashPackageDashJsonMod.ParentPackageJsonNs.ParentPackage | parentDashPackageDashJsonLib.parentDashPackageDashJsonLibNumbers.`false` = js.native
-  def apply(startPath: java.lang.String): parentDashPackageDashJsonLib.parentDashPackageDashJsonMod.ParentPackageJsonNs.ParentPackage | parentDashPackageDashJsonLib.parentDashPackageDashJsonLibNumbers.`false` = js.native
-  def apply(startPath: java.lang.String, ignore: scala.Double): parentDashPackageDashJsonLib.parentDashPackageDashJsonMod.ParentPackageJsonNs.ParentPackage | parentDashPackageDashJsonLib.parentDashPackageDashJsonLibNumbers.`false` = js.native
+  def apply(): ParentPackage | parentDashPackageDashJsonLib.parentDashPackageDashJsonLibNumbers.`false` = js.native
+  def apply(startPath: java.lang.String): ParentPackage | parentDashPackageDashJsonLib.parentDashPackageDashJsonLibNumbers.`false` = js.native
+  def apply(startPath: java.lang.String, ignore: scala.Double): ParentPackage | parentDashPackageDashJsonLib.parentDashPackageDashJsonLibNumbers.`false` = js.native
 }
 

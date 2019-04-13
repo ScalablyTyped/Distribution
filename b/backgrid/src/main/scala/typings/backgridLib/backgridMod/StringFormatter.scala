@@ -7,11 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backgrid", "StringFormatter")
 @js.native
-class StringFormatter ()
-  extends backgridLib.backgridMod.BackgridNs.StringFormatter {
-  /* CompleteClass */
-  override def fromRaw(rawData: js.Any, model: backboneLib.backboneMod.Model): js.Any = js.native
-  /* CompleteClass */
-  override def toRaw(formattedData: js.Any, model: backboneLib.backboneMod.Model): js.Any = js.native
-}
+class StringFormatter () extends CellFormatter
 

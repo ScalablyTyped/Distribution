@@ -37,9 +37,9 @@ object ^ extends js.Object {
     _, 
     reactDashRouterLib.reactDashRouterMod.StaticContext, 
     historyLib.historyMod.LocationState
-  ] */](component: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentClass[
+  ] */](component: reactLib.reactMod.ComponentType[P]): reactLib.reactMod.ComponentClass[
     reactDashRouterLib.reactDashRouterMod.Omit[P, java.lang.String], 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

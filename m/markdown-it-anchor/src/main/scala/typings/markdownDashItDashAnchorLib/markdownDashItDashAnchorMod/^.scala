@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("markdown-it-anchor", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    md: markdownDashItLib.libMod.MarkdownIt,
-    opts: markdownDashItDashAnchorLib.markdownDashItDashAnchorMod.anchorNs.AnchorOptions
-  ): scala.Unit = js.native
+  def apply(md: markdownDashItLib.libMod.MarkdownIt, opts: AnchorOptions): scala.Unit = js.native
 }
 

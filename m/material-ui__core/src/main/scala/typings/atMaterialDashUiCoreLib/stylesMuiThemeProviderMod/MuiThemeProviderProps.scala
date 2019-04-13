@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MuiThemeProviderProps extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var disableStylesGeneration: js.UndefOr[scala.Boolean] = js.undefined
   var sheetsManager: js.UndefOr[
     stdLib.Map[
@@ -23,7 +23,7 @@ trait MuiThemeProviderProps extends js.Object {
 object MuiThemeProviderProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme | (js.Function1[
       /* outer */ atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme | scala.Null, 
       atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme

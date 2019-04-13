@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BrushProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Array[_]] = js.undefined
   var dataKey: js.UndefOr[DataKey] = js.undefined
@@ -28,7 +28,7 @@ trait BrushProps extends js.Object {
 object BrushProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     data: js.Array[_] = null,
     dataKey: DataKey = null,

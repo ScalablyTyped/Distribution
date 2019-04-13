@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class SharedLinkInfos ()
   extends mfilesLib.ISharedLinkInfos
 
+@JSGlobal("MFiles.SharedLinkInfos")
+@js.native
+object SharedLinkInfos
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISharedLinkInfos]
+

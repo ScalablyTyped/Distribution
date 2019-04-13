@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AutoLockScrollingProps
-  extends reactLib.reactMod.ReactNs.Props[AutoLockScrolling] {
+  extends reactLib.reactMod.Props[AutoLockScrolling] {
   var lock: scala.Boolean
 }
 
@@ -14,9 +14,9 @@ object AutoLockScrollingProps {
   @scala.inline
   def apply(
     lock: scala.Boolean,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[AutoLockScrolling] = null
+    children: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[AutoLockScrolling] = null
   ): AutoLockScrollingProps = {
     val __obj = js.Dynamic.literal(lock = lock)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

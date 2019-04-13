@@ -10,12 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def apply(filename: java.lang.String): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(
-    filename: java.lang.String,
-    options: gulpDashAngularDashTemplatecacheLib.gulpDashAngularDashTemplatecacheMod.templatecacheNs.Options
-  ): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(
-    options: gulpDashAngularDashTemplatecacheLib.gulpDashAngularDashTemplatecacheMod.templatecacheNs.Options
-  ): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(filename: java.lang.String, options: Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(options: Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

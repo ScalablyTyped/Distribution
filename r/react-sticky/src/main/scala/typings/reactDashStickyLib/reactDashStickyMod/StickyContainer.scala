@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("react-sticky", "StickyContainer")
 @js.native
 class StickyContainer protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+  extends reactLib.reactMod.Component[
+      reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement], 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]) = this()
-  def this(props: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement], context: js.Any) = this()
+  def this(props: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]) = this()
+  def this(props: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement], context: js.Any) = this()
 }
 

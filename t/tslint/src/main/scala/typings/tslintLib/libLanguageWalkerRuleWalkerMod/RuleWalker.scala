@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class RuleWalker protected ()
   extends tslintLib.libLanguageWalkerSyntaxWalkerMod.SyntaxWalker
      with tslintLib.libLanguageWalkerWalkerMod.IWalker {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
   val failures: js.Any = js.native
   val limit: js.Any = js.native
   val options: js.UndefOr[js.Any] = js.native
@@ -27,9 +27,9 @@ class RuleWalker protected ()
     fix: tslintLib.libLanguageRuleRuleMod.Fix
   ): scala.Unit = js.native
   /** Add a failure using a node's span. */
-  def addFailureAtNode(node: typescriptLib.typescriptMod.tsNs.Node, failure: java.lang.String): scala.Unit = js.native
+  def addFailureAtNode(node: typescriptLib.typescriptMod.Node, failure: java.lang.String): scala.Unit = js.native
   def addFailureAtNode(
-    node: typescriptLib.typescriptMod.tsNs.Node,
+    node: typescriptLib.typescriptMod.Node,
     failure: java.lang.String,
     fix: tslintLib.libLanguageRuleRuleMod.Fix
   ): scala.Unit = js.native
@@ -56,13 +56,13 @@ class RuleWalker protected ()
   /* CompleteClass */
   override def getFailures(): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   def getLimit(): scala.Double = js.native
-  def getLineAndCharacterOfPosition(position: scala.Double): typescriptLib.typescriptMod.tsNs.LineAndCharacter = js.native
+  def getLineAndCharacterOfPosition(position: scala.Double): typescriptLib.typescriptMod.LineAndCharacter = js.native
   def getOptions(): js.Any = js.native
   def getRuleName(): java.lang.String = js.native
   /* CompleteClass */
-  override def getSourceFile(): typescriptLib.typescriptMod.tsNs.SourceFile = js.native
+  override def getSourceFile(): typescriptLib.typescriptMod.SourceFile = js.native
   def hasOption(option: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */
-  override def walk(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): scala.Unit = js.native
+  override def walk(sourceFile: typescriptLib.typescriptMod.SourceFile): scala.Unit = js.native
 }
 

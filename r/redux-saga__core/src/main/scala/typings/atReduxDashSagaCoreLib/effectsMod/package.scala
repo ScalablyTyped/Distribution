@@ -23,6 +23,7 @@ package object effectsMod {
     atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.CANCELLED, 
     CancelledEffectDescriptor
   ]
+  type CancelledEffectDescriptor = js.Object
   type ChannelPutEffect[T] = atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.SimpleEffect[
     atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.PUT, 
     ChannelPutEffectDescriptor[T]

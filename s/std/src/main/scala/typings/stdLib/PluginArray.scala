@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PluginArray
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Plugin] {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Plugin]] = js.native
   val length: scala.Double = js.native
   def item(index: scala.Double): Plugin = js.native

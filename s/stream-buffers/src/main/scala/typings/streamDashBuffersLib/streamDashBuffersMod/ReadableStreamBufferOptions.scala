@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReadableStreamBufferOptions
-  extends nodeLib.streamMod.internalNs.ReadableOptions {
+  extends nodeLib.streamMod.ReadableOptions {
   var chunkSize: js.UndefOr[scala.Double] = js.undefined
   var frequency: js.UndefOr[scala.Double] = js.undefined
   var incrementAmount: js.UndefOr[scala.Double] = js.undefined
@@ -19,7 +19,7 @@ object ReadableStreamBufferOptions {
     autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     chunkSize: scala.Int | scala.Double = null,
     destroy: js.ThisFunction2[
-      /* this */ nodeLib.streamMod.internalNs.Readable, 
+      /* this */ nodeLib.streamMod.Readable, 
       /* error */ nodeLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
@@ -30,11 +30,7 @@ object ReadableStreamBufferOptions {
     incrementAmount: scala.Int | scala.Double = null,
     initialSize: scala.Int | scala.Double = null,
     objectMode: js.UndefOr[scala.Boolean] = js.undefined,
-    read: js.ThisFunction1[
-      /* this */ nodeLib.streamMod.internalNs.Readable, 
-      /* size */ scala.Double, 
-      scala.Unit
-    ] = null
+    read: js.ThisFunction1[/* this */ nodeLib.streamMod.Readable, /* size */ scala.Double, scala.Unit] = null
   ): ReadableStreamBufferOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 object markDotJsLibStrings {
   @js.native
   sealed trait complementary
-    extends markDotJsLib.markDotJsMod.MarkNs.MarkAccuracy
+    extends markDotJsLib.markDotJsMod.MarkAccuracy
   
   @js.native
   sealed trait disabled extends js.Object
@@ -18,11 +18,11 @@ object markDotJsLibStrings {
   
   @js.native
   sealed trait exactly
-    extends markDotJsLib.markDotJsMod.MarkNs.MarkAccuracy
+    extends markDotJsLib.markDotJsMod.MarkAccuracy
   
   @js.native
   sealed trait partially
-    extends markDotJsLib.markDotJsMod.MarkNs.MarkAccuracy
+    extends markDotJsLib.markDotJsMod.MarkAccuracy
   
   @js.native
   sealed trait withSpaces extends js.Object

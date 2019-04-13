@@ -18,29 +18,29 @@ trait Anon_ extends js.Object {
   @JSName("$gte")
   var $gte: scala.Double | java.lang.String | stdLib.Date
   @JSName("$iLike")
-  var $iLike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement
+  var $iLike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement
   @JSName("$ilike")
-  var $ilike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement
+  var $ilike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement
   @JSName("$in")
-  var $in: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.sequelizeNs.literal
+  var $in: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.literal
   @JSName("$like")
-  var $like: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement
+  var $like: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement
   @JSName("$lt")
   var $lt: scala.Double | java.lang.String | stdLib.Date
   @JSName("$lte")
   var $lte: scala.Double | java.lang.String | stdLib.Date
   @JSName("$ne")
-  var $ne: java.lang.String | scala.Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.sequelize.WhereLogic */ js.Object)
+  var $ne: java.lang.String | scala.Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereLogic */ js.Object)
   @JSName("$not")
-  var $not: scala.Boolean | java.lang.String | scala.Double | sequelizeLib.sequelizeMod.sequelizeNs.AnyWhereOptions
+  var $not: scala.Boolean | java.lang.String | scala.Double | sequelizeLib.sequelizeMod.AnyWhereOptions
   @JSName("$notBetween")
   var $notBetween: js.Tuple2[scala.Double, scala.Double]
   @JSName("$notILike")
-  var $notILike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement
+  var $notILike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement
   @JSName("$notIn")
-  var $notIn: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.sequelizeNs.literal
+  var $notIn: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.literal
   @JSName("$notLike")
-  var $notLike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement
+  var $notLike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement
   @JSName("$overlap")
   var $overlap: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String])
   var `&&`: js.Tuple2[scala.Double, scala.Double]
@@ -58,18 +58,18 @@ object Anon_ {
     $contains: js.Any,
     $gt: scala.Double | java.lang.String | stdLib.Date,
     $gte: scala.Double | java.lang.String | stdLib.Date,
-    $iLike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
-    $ilike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
-    $in: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.sequelizeNs.literal,
-    $like: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
+    $iLike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement,
+    $ilike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement,
+    $in: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.literal,
+    $like: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement,
     $lt: scala.Double | java.lang.String | stdLib.Date,
     $lte: scala.Double | java.lang.String | stdLib.Date,
-    $ne: java.lang.String | scala.Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.sequelize.WhereLogic */ js.Object),
-    $not: scala.Boolean | java.lang.String | scala.Double | sequelizeLib.sequelizeMod.sequelizeNs.AnyWhereOptions,
+    $ne: java.lang.String | scala.Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereLogic */ js.Object),
+    $not: scala.Boolean | java.lang.String | scala.Double | sequelizeLib.sequelizeMod.AnyWhereOptions,
     $notBetween: js.Tuple2[scala.Double, scala.Double],
-    $notILike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
-    $notIn: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.sequelizeNs.literal,
-    $notLike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
+    $notILike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement,
+    $notIn: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.literal,
+    $notLike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement,
     $overlap: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String]),
     `&&`: js.Tuple2[scala.Double, scala.Double],
     `..`: js.Tuple2[scala.Double, scala.Double],

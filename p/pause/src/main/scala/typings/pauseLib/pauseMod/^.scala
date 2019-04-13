@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("pause", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(stream: nodeLib.streamMod.Stream): pauseLib.pauseMod.pauseNs.Handle = js.native
+  def apply(stream: nodeLib.streamMod.Stream): Handle = js.native
 }
 

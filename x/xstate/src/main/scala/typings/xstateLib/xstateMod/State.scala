@@ -38,7 +38,9 @@ object State extends js.Object {
     * @param stateValue
     * @param context
     */
+  def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libStateMod.State[TC, TE]): xstateLib.libStateMod.State[TC, TE] = js.native
   def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libStateMod.State[TC, TE], context: TC): xstateLib.libStateMod.State[TC, TE] = js.native
+  def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libTypesMod.StateValue): xstateLib.libStateMod.State[TC, TE] = js.native
   def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libTypesMod.StateValue, context: TC): xstateLib.libStateMod.State[TC, TE] = js.native
   /**
     * Creates a new `State` instance for the given `stateValue` and `context` with no actions (side-effects).

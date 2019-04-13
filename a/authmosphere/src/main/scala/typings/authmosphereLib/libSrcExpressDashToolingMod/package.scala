@@ -29,7 +29,7 @@ package object libSrcExpressDashToolingMod {
     */
   type authenticationMiddleware = js.Function1[
     /* options */ authmosphereLib.libSrcTypesAuthenticationMiddlewareOptionsMod.AuthenticationMiddlewareOptions, 
-    expressLib.expressMod.eNs.RequestHandler
+    expressLib.expressMod.RequestHandler
   ]
   /**
     * A factory that returns a middleware that compares scopes attached to `express.Request` object with a given list (`scopes` parameter).
@@ -92,6 +92,6 @@ package object libSrcExpressDashToolingMod {
   type requireScopesMiddleware = js.Function2[
     /* scopes */ js.Array[java.lang.String], 
     /* options */ js.UndefOr[authmosphereLib.libSrcTypesScopeMiddlewareOptionsMod.ScopeMiddlewareOptions], 
-    expressLib.expressMod.eNs.RequestHandler
+    expressLib.expressMod.RequestHandler
   ]
 }

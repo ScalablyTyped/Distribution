@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseFieldsProps[P] extends js.Object {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[_]] = js.undefined
   var format: js.UndefOr[reduxDashFormLib.libFieldMod.Formatter | scala.Null] = js.undefined
   var forwardRef: js.UndefOr[scala.Boolean] = js.undefined
   var names: js.Array[java.lang.String]
@@ -20,7 +20,7 @@ object BaseFieldsProps {
   @scala.inline
   def apply[P](
     names: js.Array[java.lang.String],
-    component: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    component: reactLib.reactMod.ComponentType[_] = null,
     format: reduxDashFormLib.libFieldMod.Formatter = null,
     forwardRef: js.UndefOr[scala.Boolean] = js.undefined,
     parse: reduxDashFormLib.libFieldMod.Parser = null,

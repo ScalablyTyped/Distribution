@@ -140,6 +140,9 @@ object appDashBuilderDashLibLibStrings {
     extends appDashBuilderDashLibLib.outPlatformPackagerMod.IconFormat
   
   @js.native
+  sealed trait `iml,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,dDOTts` extends js.Object
+  
+  @js.native
   sealed trait left
     extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
@@ -339,6 +342,8 @@ object appDashBuilderDashLibLibStrings {
   def icns: icns = "icns".asInstanceOf[icns]
   @scala.inline
   def ico: ico = "ico".asInstanceOf[ico]
+  @scala.inline
+  def `iml,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,dDOTts`: `iml,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,dDOTts` = "iml,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,d.ts".asInstanceOf[`iml,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,dDOTts`]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline

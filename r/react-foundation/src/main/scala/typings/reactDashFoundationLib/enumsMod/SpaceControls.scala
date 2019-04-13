@@ -12,3 +12,11 @@ import scala.scalajs.js.annotation._
 */
 trait SpaceControls extends js.Object
 
+@JSImport("react-foundation/enums", "SpaceControls")
+@js.native
+object SpaceControls extends js.Object {
+  var AUTO: reactDashFoundationLib.enumsMod.SpaceControls = js.native
+  var GROW: reactDashFoundationLib.enumsMod.SpaceControls = js.native
+  var SHRINK: reactDashFoundationLib.enumsMod.SpaceControls = js.native
+}
+

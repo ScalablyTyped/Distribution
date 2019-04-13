@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/common/props", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DISPLAYNAME_PREFIX: /* Blueprint3 */ java.lang.String = js.native
+  val DISPLAYNAME_PREFIX: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.Blueprint3 = js.native
   def removeNonHTMLProps(props: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def removeNonHTMLProps(
     props: org.scalablytyped.runtime.StringDictionary[js.Any],

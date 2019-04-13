@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TouchableProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var fullHeight: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var mouseCursor: js.UndefOr[
@@ -24,7 +24,7 @@ object TouchableProps {
   @scala.inline
   def apply(
     onTouch: gestaltLib.Anon_EventHTMLDivElementKeyboardEvent => scala.Unit,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     fullHeight: js.UndefOr[scala.Boolean] = js.undefined,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     mouseCursor: gestaltLib.gestaltLibStrings.copy | gestaltLib.gestaltLibStrings.grab | gestaltLib.gestaltLibStrings.grabbing | gestaltLib.gestaltLibStrings.move | gestaltLib.gestaltLibStrings.noDrop | gestaltLib.gestaltLibStrings.pointer | gestaltLib.gestaltLibStrings.zoomIn | gestaltLib.gestaltLibStrings.zoomOut = null,

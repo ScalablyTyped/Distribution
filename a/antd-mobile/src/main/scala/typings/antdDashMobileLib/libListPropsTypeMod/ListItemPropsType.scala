@@ -6,38 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListItemPropsType extends js.Object {
-  var activeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var activeStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var align: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.top | antdDashMobileLib.antdDashMobileLibStrings.middle | antdDashMobileLib.antdDashMobileLibStrings.bottom
   ] = js.undefined
   var arrow: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.horizontal | antdDashMobileLib.antdDashMobileLibStrings.down | antdDashMobileLib.antdDashMobileLibStrings.up | antdDashMobileLib.antdDashMobileLibStrings.empty | antdDashMobileLib.antdDashMobileLibStrings.Empty
   ] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var multipleLine: js.UndefOr[scala.Boolean] = js.undefined
   var platform: js.UndefOr[
     antdDashMobileLib.antdDashMobileLibStrings.android | antdDashMobileLib.antdDashMobileLibStrings.ios
   ] = js.undefined
-  var thumb: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | scala.Null] = js.undefined
+  var thumb: js.UndefOr[reactLib.reactMod.ReactNode | scala.Null] = js.undefined
   var wrap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object ListItemPropsType {
   @scala.inline
   def apply(
-    activeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeStyle: reactLib.reactMod.CSSProperties = null,
     align: antdDashMobileLib.antdDashMobileLibStrings.top | antdDashMobileLib.antdDashMobileLibStrings.middle | antdDashMobileLib.antdDashMobileLibStrings.bottom = null,
     arrow: antdDashMobileLib.antdDashMobileLibStrings.horizontal | antdDashMobileLib.antdDashMobileLibStrings.down | antdDashMobileLib.antdDashMobileLibStrings.up | antdDashMobileLib.antdDashMobileLibStrings.empty | antdDashMobileLib.antdDashMobileLibStrings.Empty = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     multipleLine: js.UndefOr[scala.Boolean] = js.undefined,
     platform: antdDashMobileLib.antdDashMobileLibStrings.android | antdDashMobileLib.antdDashMobileLibStrings.ios = null,
-    thumb: reactLib.reactMod.ReactNs.ReactNode = null,
+    thumb: reactLib.reactMod.ReactNode = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): ListItemPropsType = {
     val __obj = js.Dynamic.literal()

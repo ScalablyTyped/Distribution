@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PaginationItem
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libPaginationItemMod.PaginationItemNs.PaginationItemProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[PaginationItemProps, js.Object, js.Any]
 

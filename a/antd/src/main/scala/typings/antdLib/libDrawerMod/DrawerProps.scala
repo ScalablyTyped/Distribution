@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DrawerProps extends js.Object {
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   var getContainer: js.UndefOr[java.lang.String | stdLib.HTMLElement | getContainerFunc] = js.undefined
-  var handler: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var handler: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
-  var maskStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var maskStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var onClose: js.UndefOr[js.Function1[/* e */ EventType, scala.Unit]] = js.undefined
   var placement: js.UndefOr[placementType] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var push: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var wrapClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -31,22 +31,22 @@ trait DrawerProps extends js.Object {
 object DrawerProps {
   @scala.inline
   def apply(
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     getContainer: java.lang.String | stdLib.HTMLElement | getContainerFunc = null,
-    handler: reactLib.reactMod.ReactNs.ReactNode = null,
+    handler: reactLib.reactMod.ReactNode = null,
     height: scala.Double | java.lang.String = null,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
-    maskStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    maskStyle: reactLib.reactMod.CSSProperties = null,
     onClose: /* e */ EventType => scala.Unit = null,
     placement: placementType = null,
     prefixCls: java.lang.String = null,
     push: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Double | java.lang.String = null,
     wrapClassName: java.lang.String = null,

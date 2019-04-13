@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "RegexpFilter")
 @js.native
-class RegexpFilter protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter {
+class RegexpFilter protected () extends Filter {
   /*
     Matches documents that have fields matching a regular expression.
     */
@@ -16,23 +15,19 @@ class RegexpFilter protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def cache(trueFalse: scala.Boolean): RegexpFilter = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def cacheKey(key: java.lang.String): RegexpFilter = js.native
   /*
     The field to run the filter against.
     */
-  /* CompleteClass */
-  override def field(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def field(f: java.lang.String): RegexpFilter = js.native
   /*
     The regex flags to use.  Valid flags are:
     INTERSECTION - Support for intersection notation
@@ -45,28 +40,23 @@ class RegexpFilter protected ()
     Use multiple flags by separating with a "|" character.  Example:
     INTERSECTION|COMPLEMENT|EMPTY
     */
-  /* CompleteClass */
-  override def flags(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def flags(f: java.lang.String): RegexpFilter = js.native
   /*
     The regex flags to use as a numeric value.  Advanced use only,
     it is probably better to stick with the flags option.
     */
-  /* CompleteClass */
-  override def flagsValue(v: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def flagsValue(v: java.lang.String): RegexpFilter = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def name(name: java.lang.String): RegexpFilter = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def toJSON(): RegexpFilter = js.native
   /*
     The regexp value.
     */
-  /* CompleteClass */
-  override def value(p: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpFilter = js.native
+  def value(p: java.lang.String): RegexpFilter = js.native
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait XsdElementType
   extends XsdTypeBase
-     with XsdElement
-     with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+     with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with XsdElement {
   @JSName("$lookupType")
   var $lookupType: java.lang.String
   @JSName("$lookupTypes")

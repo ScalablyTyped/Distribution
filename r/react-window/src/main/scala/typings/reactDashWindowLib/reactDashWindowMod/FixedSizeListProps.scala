@@ -15,7 +15,7 @@ trait FixedSizeListProps extends ListProps {
 object FixedSizeListProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ComponentType[ListChildComponentProps],
+    children: reactLib.reactMod.ComponentType[ListChildComponentProps],
     height: scala.Double | java.lang.String,
     itemCount: scala.Double,
     itemSize: scala.Double,
@@ -24,7 +24,7 @@ object FixedSizeListProps {
     direction: CSSDirection | Direction = null,
     initialScrollOffset: scala.Int | scala.Double = null,
     innerElementType: ReactElementType = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] = null,
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     itemKey: ListItemKeySelector = null,
@@ -32,10 +32,10 @@ object FixedSizeListProps {
     onItemsRendered: /* props */ ListOnItemsRenderedProps => _ = null,
     onScroll: /* props */ ListOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
-    outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    outerRef: reactLib.reactMod.Ref[_] = null,
     outerTagName: java.lang.String = null,
     overscanCount: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): FixedSizeListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount, itemSize = itemSize, width = width.asInstanceOf[js.Any])

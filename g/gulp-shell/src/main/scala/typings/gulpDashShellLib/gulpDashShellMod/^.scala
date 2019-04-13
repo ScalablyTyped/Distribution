@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-shell", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[gulpDashShellLib.gulpDashShellMod.shellNs.Shell]
+  extends org.scalablytyped.runtime.TopLevel[Shell]
 

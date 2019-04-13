@@ -16,7 +16,7 @@ object pathNs extends js.Object {
     * The character that separates path segments
     * @name pc.path.delimiter
     */
-  val delimiter: /* / */ java.lang.String = js.native
+  val delimiter: playcanvasLib.playcanvasLibStrings.`/` = js.native
   /**
     * @function
     * @name pc.path.getBasename

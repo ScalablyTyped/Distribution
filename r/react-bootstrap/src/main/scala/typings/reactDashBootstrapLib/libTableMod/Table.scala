@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Table
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libTableMod.TableNs.TableProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[TableProps, js.Object, js.Any]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait LinkProps extends js.Object {
   var as: js.UndefOr[java.lang.String | nextDashServerLib.routerMod.UrlLike] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement[_]
   var href: js.UndefOr[java.lang.String | nextDashServerLib.routerMod.UrlLike] = js.undefined
   var onError: js.UndefOr[js.Function1[/* error */ js.Any, scala.Unit]] = js.undefined
   var passHref: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,7 +20,7 @@ trait LinkProps extends js.Object {
 object LinkProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    children: reactLib.reactMod.ReactElement[_],
     as: java.lang.String | nextDashServerLib.routerMod.UrlLike = null,
     href: java.lang.String | nextDashServerLib.routerMod.UrlLike = null,
     onError: /* error */ js.Any => scala.Unit = null,

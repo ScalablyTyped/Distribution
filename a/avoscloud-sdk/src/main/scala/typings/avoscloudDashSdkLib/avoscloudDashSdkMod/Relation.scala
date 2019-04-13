@@ -11,26 +11,17 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("avoscloud-sdk", "Relation")
 @js.native
-class Relation ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Relation {
-  def this(parent: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object) = this()
-  def this(parent: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object, key: java.lang.String) = this()
-  /* CompleteClass */
-  override var key: java.lang.String = js.native
-  /* CompleteClass */
-  override var parent: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object = js.native
-  /* CompleteClass */
-  override var targetClassName: java.lang.String = js.native
+class Relation () extends BaseObject {
+  def this(parent: Object) = this()
+  def this(parent: Object, key: java.lang.String) = this()
+  var key: java.lang.String = js.native
+  var parent: Object = js.native
+  var targetClassName: java.lang.String = js.native
   //Adds a AV.Object or an array of AV.Objects to the relation.
-  /* CompleteClass */
-  override def add(`object`: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object): scala.Unit = js.native
+  def add(`object`: Object): scala.Unit = js.native
   // Returns a AV.Query that is limited to objects in this relation.
-  /* CompleteClass */
-  override def query(): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Query = js.native
+  def query(): Query = js.native
   // Removes a AV.Object or an array of AV.Objects from this relation.
-  /* CompleteClass */
-  override def remove(`object`: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object): scala.Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def remove(`object`: Object): scala.Unit = js.native
 }
 

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("editorconfig/src/lib/fnmatch", "Minimatch")
 @js.native
-class Minimatch protected ()
-  extends editorconfigLib.srcLibFnmatchMod.MNs.IMinimatch {
+class Minimatch protected () extends IMinimatch {
   def this(pattern: java.lang.String) = this()
-  def this(pattern: java.lang.String, options: editorconfigLib.srcLibFnmatchMod.MNs.IOptions) = this()
+  def this(pattern: java.lang.String, options: IOptions) = this()
 }
 

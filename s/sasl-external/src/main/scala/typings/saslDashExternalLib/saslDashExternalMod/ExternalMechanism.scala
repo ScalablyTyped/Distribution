@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExternalMechanism
-  extends saslmechanismsLib.saslmechanismsMod.FactoryNs.Mechanism {
+  extends saslmechanismsLib.saslmechanismsMod.Mechanism {
   var clientFirst: saslDashExternalLib.saslDashExternalLibNumbers.`true`
   @JSName("name")
   var name_ExternalMechanism: saslDashExternalLib.saslDashExternalLibStrings.EXTERNAL
-  def response(cred: saslDashExternalLib.saslDashExternalMod.ExternalMechanismNs.Credentials): java.lang.String
+  def response(cred: Credentials): java.lang.String
 }
 
 object ExternalMechanism {
@@ -19,7 +19,7 @@ object ExternalMechanism {
     challenge: java.lang.String => scala.Unit,
     clientFirst: saslDashExternalLib.saslDashExternalLibNumbers.`true`,
     name: saslDashExternalLib.saslDashExternalLibStrings.EXTERNAL,
-    response: saslDashExternalLib.saslDashExternalMod.ExternalMechanismNs.Credentials => java.lang.String
+    response: Credentials => java.lang.String
   ): ExternalMechanism = {
     val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst, name = name, response = js.Any.fromFunction1(response))
   

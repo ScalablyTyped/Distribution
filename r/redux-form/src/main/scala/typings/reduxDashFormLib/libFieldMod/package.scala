@@ -15,7 +15,7 @@ package object libFieldMod {
     scala.Unit
   ]
   type Formatter = js.Function2[/* value */ js.Any, /* name */ java.lang.String, js.Any]
-  type GenericFieldHTMLAttributes = reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] | reactLib.reactMod.ReactNs.SelectHTMLAttributes[stdLib.HTMLSelectElement] | reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
+  type GenericFieldHTMLAttributes = reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] | reactLib.reactMod.SelectHTMLAttributes[stdLib.HTMLSelectElement] | reactLib.reactMod.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
   type Normalizer = js.Function4[
     /* value */ js.Any, 
     /* previousValue */ js.UndefOr[js.Any], 

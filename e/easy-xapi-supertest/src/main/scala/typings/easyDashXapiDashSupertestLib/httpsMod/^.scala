@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("https", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Agent: easyDashXapiDashSupertestLib.Anon_Options = js.native
   var globalAgent: Agent = js.native
   def createServer(options: ServerOptions): Server = js.native
   def createServer(options: ServerOptions, requestListener: js.Function): Server = js.native

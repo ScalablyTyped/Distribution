@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-json/Stringer", "stringer")
 @js.native
 object stringerNs extends js.Object {
-  val Constructor: streamDashJsonLib.Anon_MakeOptions with (org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ streamDashJsonLib.stringerMod.StringerNs.StringerOptions], 
+  val Constructor: org.scalablytyped.runtime.Instantiable1[
+    /* options */ js.UndefOr[/* options */ streamDashJsonLib.stringerMod.StringerOptions], 
     streamDashJsonLib.stringerMod.Stringer
-  ]) = js.native
+  ] = js.native
+  type Constructor = streamDashJsonLib.stringerMod.Stringer
 }
 

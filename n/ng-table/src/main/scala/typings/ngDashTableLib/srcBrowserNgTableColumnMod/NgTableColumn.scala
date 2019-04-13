@@ -18,7 +18,7 @@ class NgTableColumn[TCol /* <: ngDashTableLib.srcBrowserPublicDashInterfacesMod.
     */
   def buildColumn(
     column: TCol,
-    defaultScope: angularLib.angularMod.angularNs.IScope,
+    defaultScope: angularLib.angularMod.IScope,
     columns: js.Array[ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef]
   ): ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef = js.native
   /* private */ def createDefaults(): js.Any = js.native

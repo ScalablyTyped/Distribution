@@ -11,49 +11,49 @@ object ^ extends js.Object {
   val hydrate: Renderer = js.native
   val render: Renderer = js.native
   val version: java.lang.String = js.native
-  def createPortal(children: reactLib.reactMod.ReactNs.ReactNode, container: stdLib.Element): reactLib.reactMod.ReactNs.ReactPortal = js.native
-  def createPortal(children: reactLib.reactMod.ReactNs.ReactNode, container: stdLib.Element, key: java.lang.String): reactLib.reactMod.ReactNs.ReactPortal = js.native
+  def createPortal(children: reactLib.reactMod.ReactNode, container: stdLib.Element): reactLib.reactMod.ReactPortal = js.native
+  def createPortal(children: reactLib.reactMod.ReactNode, container: stdLib.Element, key: java.lang.String): reactLib.reactMod.ReactPortal = js.native
   def findDOMNode(): stdLib.Element | scala.Null | stdLib.Text = js.native
-  def findDOMNode(instance: reactLib.reactMod.ReactNs.ReactInstance): stdLib.Element | scala.Null | stdLib.Text = js.native
+  def findDOMNode(instance: reactLib.reactMod.ReactInstance): stdLib.Element | scala.Null | stdLib.Text = js.native
   def unmountComponentAtNode(container: stdLib.Element): scala.Boolean = js.native
   def unstable_batchedUpdates(callback: js.Function0[_]): scala.Unit = js.native
   def unstable_batchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): scala.Unit = js.native
   def unstable_batchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): scala.Unit = js.native
   def unstable_renderSubtreeIntoContainer[T /* <: stdLib.Element */](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T],
+    element: reactLib.reactMod.DOMElement[reactLib.reactMod.DOMAttributes[T], T],
     container: stdLib.Element
   ): T = js.native
   def unstable_renderSubtreeIntoContainer[T /* <: stdLib.Element */](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T],
+    element: reactLib.reactMod.DOMElement[reactLib.reactMod.DOMAttributes[T], T],
     container: stdLib.Element,
     callback: js.Function1[/* element */ T, _]
   ): T = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.ReactElement[P],
+    element: reactLib.reactMod.ReactElement[P],
     container: stdLib.Element
-  ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
+  ): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.ReactElement[P],
+    element: reactLib.reactMod.ReactElement[P],
     container: stdLib.Element,
     callback: js.Function1[
       /* component */ js.UndefOr[
-        (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | stdLib.Element
+        (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element
       ], 
       _
     ]
-  ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
-  def unstable_renderSubtreeIntoContainer[P, T /* <: reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _] */](
+  ): (reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _]) | stdLib.Element | scala.Unit = js.native
+  def unstable_renderSubtreeIntoContainer[P, T /* <: reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _] */](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.CElement[P, T],
+    element: reactLib.reactMod.CElement[P, T],
     container: stdLib.Element
   ): T = js.native
-  def unstable_renderSubtreeIntoContainer[P, T /* <: reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _] */](
+  def unstable_renderSubtreeIntoContainer[P, T /* <: reactLib.reactMod.Component[P, reactLib.reactMod.ComponentState, _] */](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.CElement[P, T],
+    element: reactLib.reactMod.CElement[P, T],
     container: stdLib.Element,
     callback: js.Function1[/* component */ T, _]
   ): T = js.native

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def AnimatedInput(
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps]
-  ): reactLib.reactMod.ReactNs.ComponentType[AnimatedInputProps] = js.native
+    WrappedComponent: reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps]
+  ): reactLib.reactMod.ComponentType[AnimatedInputProps] = js.native
   def default(
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps]
-  ): reactLib.reactMod.ReactNs.ComponentType[AnimatedInputProps] = js.native
+    WrappedComponent: reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps]
+  ): reactLib.reactMod.ComponentType[AnimatedInputProps] = js.native
 }
 

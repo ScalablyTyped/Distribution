@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RowMouseEventHandlerParams extends js.Object {
-  var event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]
+  var event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]
   var index: scala.Double
   var rowData: js.Any
 }
@@ -14,7 +14,7 @@ trait RowMouseEventHandlerParams extends js.Object {
 object RowMouseEventHandlerParams {
   @scala.inline
   def apply(
-    event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent],
+    event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent],
     index: scala.Double,
     rowData: js.Any
   ): RowMouseEventHandlerParams = {

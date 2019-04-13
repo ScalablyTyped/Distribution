@@ -15,15 +15,15 @@ class CronTime protected () extends js.Object {
     * @param utcOffset UTC offset. Don't use both ```zone``` and ```utcOffset``` together or weird things may happen.
     */
   def this(source: java.lang.String) = this()
-  def this(source: momentLib.momentMod.momentNs.Moment) = this()
+  def this(source: momentLib.momentMod.Moment) = this()
   def this(source: stdLib.Date) = this()
   def this(source: java.lang.String, zone: java.lang.String) = this()
-  def this(source: momentLib.momentMod.momentNs.Moment, zone: java.lang.String) = this()
+  def this(source: momentLib.momentMod.Moment, zone: java.lang.String) = this()
   def this(source: stdLib.Date, zone: java.lang.String) = this()
   def this(source: java.lang.String, zone: java.lang.String, utcOffset: java.lang.String) = this()
   def this(source: java.lang.String, zone: java.lang.String, utcOffset: scala.Double) = this()
-  def this(source: momentLib.momentMod.momentNs.Moment, zone: java.lang.String, utcOffset: java.lang.String) = this()
-  def this(source: momentLib.momentMod.momentNs.Moment, zone: java.lang.String, utcOffset: scala.Double) = this()
+  def this(source: momentLib.momentMod.Moment, zone: java.lang.String, utcOffset: java.lang.String) = this()
+  def this(source: momentLib.momentMod.Moment, zone: java.lang.String, utcOffset: scala.Double) = this()
   def this(source: stdLib.Date, zone: java.lang.String, utcOffset: java.lang.String) = this()
   def this(source: stdLib.Date, zone: java.lang.String, utcOffset: scala.Double) = this()
   /**
@@ -32,15 +32,15 @@ class CronTime protected () extends js.Object {
   def getTimeout(): scala.Double = js.native
   /**
     * Tells you when ```CronTime``` will be run.
-    */
-  def sendAt(): momentLib.momentMod.momentNs.Moment = js.native
-  def sendAt(i: scala.Double): momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = js.native
-  /**
-    * Tells you when ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
     * @returns A `Moment` when the source passed in the constructor is a `Date` or a `Moment` and an array of `Moment` when the source is a string
     */
+  def sendAt(): momentLib.momentMod.Moment | js.Array[momentLib.momentMod.Moment] = js.native
+  def sendAt(i: scala.Double): momentLib.momentMod.Moment | js.Array[momentLib.momentMod.Moment] = js.native
+  /**
+    * Tells you when ```CronTime``` will be run.
+    */
   @JSName("sendAt")
-  def `sendAt_<union>`(): momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = js.native
+  def sendAt_Moment(): momentLib.momentMod.Moment = js.native
 }
 

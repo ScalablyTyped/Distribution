@@ -93,7 +93,7 @@ trait CollectionProps
   /**
     * Optional custom inline style to attach to root Collection element.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.native
   var verticalOverscanSize: js.UndefOr[scala.Double] = js.native
   /**
     * Width of Collection; this property determines the number of visible
@@ -104,7 +104,7 @@ trait CollectionProps
     * Responsible for rendering a cell given an row and column index.
     * Should implement the following interface: ({ index: number, key: string, style: object }): PropTypes.element
     */
-  def cellRenderer(params: CollectionCellRendererParams): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def cellRenderer(params: CollectionCellRendererParams): reactLib.reactMod.ReactNode = js.native
   /**
     * Callback responsible for returning size and offset/position information for a given cell (index).
     * ({ index: number }): { height: number, width: number, x: number, y: number }

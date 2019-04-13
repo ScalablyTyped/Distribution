@@ -6,13 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DrawerProps extends js.Object {
-  var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var docked: js.UndefOr[scala.Boolean] = js.undefined
-  var dragHandleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dragHandleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var dragToggleDistance: js.UndefOr[scala.Double] = js.undefined
   var enableDragHandle: js.UndefOr[scala.Boolean] = js.undefined
   var onOpenChange: js.UndefOr[
@@ -23,14 +21,14 @@ trait DrawerProps extends js.Object {
     ]
   ] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var position: js.UndefOr[
     rmcDashDrawerLib.rmcDashDrawerLibStrings.left | rmcDashDrawerLib.rmcDashDrawerLibStrings.right | rmcDashDrawerLib.rmcDashDrawerLibStrings.top | rmcDashDrawerLib.rmcDashDrawerLibStrings.bottom
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var sidebar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var sidebarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var sidebar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var sidebarStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var touch: js.UndefOr[scala.Boolean] = js.undefined
   var transitions: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -38,21 +36,21 @@ trait DrawerProps extends js.Object {
 object DrawerProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
     docked: js.UndefOr[scala.Boolean] = js.undefined,
-    dragHandleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dragHandleStyle: reactLib.reactMod.CSSProperties = null,
     dragToggleDistance: scala.Int | scala.Double = null,
     enableDragHandle: js.UndefOr[scala.Boolean] = js.undefined,
     onOpenChange: (/* open */ scala.Boolean, /* overlay */ js.UndefOr[rmcDashDrawerLib.Anon_OverlayClicked]) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     position: rmcDashDrawerLib.rmcDashDrawerLibStrings.left | rmcDashDrawerLib.rmcDashDrawerLibStrings.right | rmcDashDrawerLib.rmcDashDrawerLibStrings.top | rmcDashDrawerLib.rmcDashDrawerLibStrings.bottom = null,
     prefixCls: java.lang.String = null,
-    sidebar: reactLib.reactMod.ReactNs.ReactNode = null,
-    sidebarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    sidebar: reactLib.reactMod.ReactNode = null,
+    sidebarStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     touch: js.UndefOr[scala.Boolean] = js.undefined,
     transitions: js.UndefOr[scala.Boolean] = js.undefined
   ): DrawerProps = {

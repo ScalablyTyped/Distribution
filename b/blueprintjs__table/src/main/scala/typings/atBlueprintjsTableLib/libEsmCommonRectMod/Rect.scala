@@ -16,8 +16,8 @@ class Rect protected () extends js.Object {
   def containsX(clientX: scala.Double): scala.Boolean = js.native
   def containsY(clientY: scala.Double): scala.Boolean = js.native
   def equals(rect: Rect): scala.Boolean = js.native
-  def sizeStyle(): reactLib.reactMod.ReactNs.CSSProperties = js.native
-  def style(): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def sizeStyle(): reactLib.reactMod.CSSProperties = js.native
+  def style(): reactLib.reactMod.CSSProperties = js.native
   def subtractOrigin(anyRect: AnyRect): Rect = js.native
   def union(anyRect: AnyRect): Rect = js.native
 }
@@ -31,7 +31,7 @@ object Rect extends js.Object {
     * Returns the CSS properties representing the absolute positioning of
     * this Rect.
     */
-  def style(rect: atBlueprintjsTableLib.libEsmCommonRectMod.AnyRect): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def style(rect: atBlueprintjsTableLib.libEsmCommonRectMod.AnyRect): reactLib.reactMod.CSSProperties = js.native
   /**
     * Returns a new Rect that subtracts the origin of the second argument
     * from the first.

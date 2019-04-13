@@ -10,13 +10,19 @@ import scala.scalajs.js.annotation._
 object CompilerNs extends js.Object {
   @js.native
   class Watching protected () extends js.Object {
-    def this(compiler: webpackLib.webpackMod.webpackNs.Compiler, watchOptions: webpackLib.webpackMod.webpackNs.CompilerNs.WatchingNs.WatchOptions, handler: webpackLib.webpackMod.webpackNs.CompilerNs.WatchingNs.Handler) = this()
+    def this(compiler: webpackLib.webpackMod.Compiler, watchOptions: webpackLib.webpackMod.CompilerNs.WatchingNs.WatchOptions, handler: webpackLib.webpackMod.CompilerNs.WatchingNs.Handler) = this()
+    def close(callback: js.Function0[scala.Unit]): scala.Unit = js.native
+    def invalidate(): scala.Unit = js.native
   }
   
+  @JSName("Watching")
+  @js.native
+  object WatchingNs extends js.Object {
+    type Handler = webpackLib.webpackMod.ICompilerNs.Handler
+    type WatchOptions = webpackLib.webpackMod.ICompilerNs.WatchOptions
+  }
+  
+  type Handler = webpackLib.webpackMod.ICompilerNs.Handler
+  type WatchOptions = webpackLib.webpackMod.ICompilerNs.WatchOptions
 }
-
-/** @deprecated */
-@JSImport("webpack", "compiler")
-@js.native
-object compilerNs extends js.Object
 

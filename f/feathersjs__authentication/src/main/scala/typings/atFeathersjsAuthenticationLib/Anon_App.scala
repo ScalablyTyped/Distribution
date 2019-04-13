@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_App extends js.Object {
   var Service: org.scalablytyped.runtime.Instantiable1[
-    /* app */ expressLib.expressMod.eNs.Application, 
+    /* app */ expressLib.expressMod.Application, 
     atFeathersjsAuthenticationLib.atFeathersjsAuthenticationMod.serviceNs.Service[js.Object]
   ]
 }
@@ -16,7 +16,7 @@ object Anon_App {
   @scala.inline
   def apply(
     Service: org.scalablytyped.runtime.Instantiable1[
-      /* app */ expressLib.expressMod.eNs.Application, 
+      /* app */ expressLib.expressMod.Application, 
       atFeathersjsAuthenticationLib.atFeathersjsAuthenticationMod.serviceNs.Service[js.Object]
     ]
   ): Anon_App = {

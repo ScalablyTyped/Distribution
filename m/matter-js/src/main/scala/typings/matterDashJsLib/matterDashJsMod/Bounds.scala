@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Bounds")
 @js.native
-class Bounds ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Bounds
+class Bounds () extends js.Object
 
 /* static members */
 @JSImport("matter-js", "Bounds")
@@ -21,17 +20,14 @@ object Bounds extends js.Object {
     * @param {vector} point
     * @return {boolean} True if the bounds contain the point, otherwise false
     */
-  def contains(
-    bounds: matterDashJsLib.matterDashJsMod.MatterNs.Bounds,
-    point: matterDashJsLib.matterDashJsMod.MatterNs.Vector
-  ): scala.Boolean = js.native
+  def contains(bounds: matterDashJsLib.matterDashJsMod.Bounds, point: matterDashJsLib.matterDashJsMod.Vector): scala.Boolean = js.native
   /**
     * Creates a new axis-aligned bounding box (AABB) for the given vertices.
     * @method create
     * @param {vertices} vertices
     * @return {bounds} A new bounds object
     */
-  def create(vertices: matterDashJsLib.matterDashJsMod.MatterNs.Vertices): matterDashJsLib.matterDashJsMod.MatterNs.Bounds = js.native
+  def create(vertices: matterDashJsLib.matterDashJsMod.Vertices): matterDashJsLib.matterDashJsMod.Bounds = js.native
   /**
     * Returns true if the two bounds intersect.
     * @method overlaps
@@ -39,30 +35,21 @@ object Bounds extends js.Object {
     * @param {bounds} boundsB
     * @return {boolean} True if the bounds overlap, otherwise false
     */
-  def overlaps(
-    boundsA: matterDashJsLib.matterDashJsMod.MatterNs.Bounds,
-    boundsB: matterDashJsLib.matterDashJsMod.MatterNs.Bounds
-  ): scala.Boolean = js.native
+  def overlaps(boundsA: matterDashJsLib.matterDashJsMod.Bounds, boundsB: matterDashJsLib.matterDashJsMod.Bounds): scala.Boolean = js.native
   /**
     * Shifts the bounds to the given position.
     * @method shift
     * @param {bounds} bounds
     * @param {vector} position
     */
-  def shift(
-    bounds: matterDashJsLib.matterDashJsMod.MatterNs.Bounds,
-    position: matterDashJsLib.matterDashJsMod.MatterNs.Vector
-  ): scala.Unit = js.native
+  def shift(bounds: matterDashJsLib.matterDashJsMod.Bounds, position: matterDashJsLib.matterDashJsMod.Vector): scala.Unit = js.native
   /**
     * Translates the bounds by the given vector.
     * @method translate
     * @param {bounds} bounds
     * @param {vector} vector
     */
-  def translate(
-    bounds: matterDashJsLib.matterDashJsMod.MatterNs.Bounds,
-    vector: matterDashJsLib.matterDashJsMod.MatterNs.Vector
-  ): scala.Unit = js.native
+  def translate(bounds: matterDashJsLib.matterDashJsMod.Bounds, vector: matterDashJsLib.matterDashJsMod.Vector): scala.Unit = js.native
   /**
     * Updates bounds using the given vertices and extends the bounds given a velocity.
     * @method update
@@ -71,9 +58,9 @@ object Bounds extends js.Object {
     * @param {vector} velocity
     */
   def update(
-    bounds: matterDashJsLib.matterDashJsMod.MatterNs.Bounds,
-    vertices: matterDashJsLib.matterDashJsMod.MatterNs.Vertices,
-    velocity: matterDashJsLib.matterDashJsMod.MatterNs.Vector
+    bounds: matterDashJsLib.matterDashJsMod.Bounds,
+    vertices: matterDashJsLib.matterDashJsMod.Vertices,
+    velocity: matterDashJsLib.matterDashJsMod.Vector
   ): scala.Unit = js.native
 }
 

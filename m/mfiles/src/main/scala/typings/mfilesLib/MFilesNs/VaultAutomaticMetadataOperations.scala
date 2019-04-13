@@ -17,3 +17,8 @@ class VaultAutomaticMetadataOperations ()
   override def GetAutomaticMetadataForTemporaryFiles(IIDs: mfilesLib.IIDs): mfilesLib.IAutomaticMetadataResult = js.native
 }
 
+@JSGlobal("MFiles.VaultAutomaticMetadataOperations")
+@js.native
+object VaultAutomaticMetadataOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultAutomaticMetadataOperations]
+

@@ -53,7 +53,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def checkPermission(permission: java.lang.String, id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def checkPermission(permission: java.lang.String, id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#copy
@@ -78,7 +78,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def copy(args: js.Any*): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def copy(args: js.Any*): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#deleteById
@@ -99,7 +99,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def deleteById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def deleteById(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#emptyRecycleBin
@@ -119,7 +119,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def emptyRecycleBin(): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def emptyRecycleBin(): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getById
@@ -141,7 +141,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the content item.
     *
     */
-  def getById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getById(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getByIds
@@ -163,7 +163,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the content items array.
     *
     */
-  def getByIds(ids: js.Array[scala.Double]): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getByIds(ids: js.Array[scala.Double]): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getChildren
@@ -191,8 +191,8 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing an array of content items.
     *
     */
-  def getChildren(parentId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
-  def getChildren(parentId: scala.Double, options: umbracoLib.Anon_Filter): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getChildren(parentId: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
+  def getChildren(parentId: scala.Double, options: umbracoLib.Anon_Filter): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getNiceUrl
@@ -213,7 +213,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the url.
     *
     */
-  def getNiceUrl(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getNiceUrl(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getScaffold
@@ -246,7 +246,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the content scaffold.
     *
     */
-  def getScaffold(parentId: scala.Double, alias: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getScaffold(parentId: scala.Double, alias: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#move
@@ -270,7 +270,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def move(args: js.Any*): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def move(args: js.Any*): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#publish
@@ -299,7 +299,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the saved content item.
     *
     */
-  def publish(content: IContentResource, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def publish(content: IContentResource, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#publishByid
@@ -320,7 +320,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the published content item.
     *
     */
-  def publishById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def publishById(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#save
@@ -349,7 +349,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the saved content item.
     *
     */
-  def save(content: IContentResource, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def save(content: IContentResource, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#sendToPublish
@@ -376,7 +376,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the saved content item.
     *
     */
-  def sendToPublish(content: IContentResource, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def sendToPublish(content: IContentResource, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#sort
@@ -399,7 +399,7 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def sort(args: js.Any*): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def sort(args: js.Any*): angularLib.angularMod.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#unPublish
@@ -421,6 +421,6 @@ trait IContentResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def unPublish(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def unPublish(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise] = js.native
 }
 

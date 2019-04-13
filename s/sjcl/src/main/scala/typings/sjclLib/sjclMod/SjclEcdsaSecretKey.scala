@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sjcl", "SjclEcdsaSecretKey")
 @js.native
-class SjclEcdsaSecretKey ()
-  extends sjclLib.sjclMod.sjclNs.SjclEcdsaSecretKey {
-  /* CompleteClass */
-  override def get(): sjclLib.sjclMod.sjclNs.BitArray = js.native
+class SjclEcdsaSecretKey () extends SjclECCSecretKey {
+  def sign(hash: BitArray, paranoia: scala.Double, fakeLegacyVersion: scala.Boolean): BitArray = js.native
+  def sign(
+    hash: BitArray,
+    paranoia: scala.Double,
+    fakeLegacyVersion: scala.Boolean,
+    fixedKForTesting: BigNumber
+  ): BitArray = js.native
 }
 

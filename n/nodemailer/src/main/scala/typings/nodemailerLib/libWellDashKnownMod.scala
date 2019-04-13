@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libWellDashKnownMod extends js.Object {
   /** Resolves SMTP config for given key. Key can be a name (like 'Gmail'), alias (like 'Google Mail') or an email address (like 'test@googlemail.com'). */
-  def apply(key: java.lang.String): nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Options | nodemailerLib.nodemailerLibNumbers.`false` = js.native
+  def apply(key: java.lang.String): nodemailerLib.libSmtpDashConnectionMod.Options | nodemailerLib.nodemailerLibNumbers.`false` = js.native
 }
 

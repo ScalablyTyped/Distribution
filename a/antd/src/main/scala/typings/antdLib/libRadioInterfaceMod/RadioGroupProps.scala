@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait RadioGroupProps
   extends antdLib.libCheckboxGroupMod.AbstractCheckboxGroupProps {
   var buttonStyle: js.UndefOr[RadioGroupButtonStyle] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, scala.Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var size: js.UndefOr[
     antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small
   ] = js.undefined
@@ -25,19 +25,19 @@ object RadioGroupProps {
   @scala.inline
   def apply(
     buttonStyle: RadioGroupButtonStyle = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultValue: js.Any = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     name: java.lang.String = null,
     onChange: /* e */ RadioChangeEvent => scala.Unit = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] = null,
     options: js.Array[antdLib.libCheckboxGroupMod.CheckboxOptionType | java.lang.String] = null,
     prefixCls: java.lang.String = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: js.Any = null
   ): RadioGroupProps = {
     val __obj = js.Dynamic.literal()

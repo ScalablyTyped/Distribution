@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SecretsManager ()
   extends awsDashSdkLib.awsDashSdkMod.SecretsManager {
-  def this(options: awsDashSdkLib.clientsSecretsmanagerMod.SecretsManagerNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSecretsmanagerMod.ClientConfiguration) = this()
 }
 

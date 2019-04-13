@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait AvatarProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait AvatarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[AvatarClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var childrenClassName: js.UndefOr[java.lang.String] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[AvatarProps]] = js.undefined
-  var imgProps: js.UndefOr[reactLib.reactMod.ReactNs.HtmlHTMLAttributes[stdLib.HTMLImageElement]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[AvatarProps]] = js.undefined
+  var imgProps: js.UndefOr[reactLib.reactMod.HtmlHTMLAttributes[stdLib.HTMLImageElement]] = js.undefined
   var sizes: js.UndefOr[java.lang.String] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
   var srcSet: js.UndefOr[java.lang.String] = js.undefined
@@ -25,13 +25,13 @@ object AvatarProps {
     childrenClassName: java.lang.String = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[AvatarClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[AvatarProps] = null,
-    imgProps: reactLib.reactMod.ReactNs.HtmlHTMLAttributes[stdLib.HTMLImageElement] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    component: reactLib.reactMod.ReactType[AvatarProps] = null,
+    imgProps: reactLib.reactMod.HtmlHTMLAttributes[stdLib.HTMLImageElement] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     sizes: java.lang.String = null,
     src: java.lang.String = null,
     srcSet: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AvatarProps = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt)

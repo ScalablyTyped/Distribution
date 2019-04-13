@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val isSupported: scala.Boolean = js.native
   var miniumFontSize: scala.Double = js.native
-  def apply(
-    elements: stdLib.HTMLElement | js.Array[stdLib.HTMLElement],
-    options: wordcloudLib.wordcloudMod.WordCloudNs.Options
-  ): scala.Unit = js.native
+  def apply(elements: stdLib.HTMLElement | js.Array[stdLib.HTMLElement], options: Options): scala.Unit = js.native
 }
 

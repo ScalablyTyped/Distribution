@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var VERSION: java.lang.String = js.native
-  var americanExpress: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.AmericanExpress = js.native
-  var applePay: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.ApplePay = js.native
-  var client: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.Client = js.native
-  var dataCollector: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.DataCollector = js.native
-  var hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields = js.native
-  var paypal: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.PayPal = js.native
-  var threeDSecure: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.ThreeDSecure = js.native
-  var unionpay: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.UnionPay = js.native
-  var usBankAccount: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.USBankAccount = js.native
+  var americanExpress: AmericanExpress = js.native
+  var applePay: ApplePay = js.native
+  var client: Client = js.native
+  var dataCollector: DataCollector = js.native
+  var hostedFields: HostedFields = js.native
+  var paypal: PayPal = js.native
+  var threeDSecure: ThreeDSecure = js.native
+  var unionpay: UnionPay = js.native
+  var usBankAccount: USBankAccount = js.native
 }
 

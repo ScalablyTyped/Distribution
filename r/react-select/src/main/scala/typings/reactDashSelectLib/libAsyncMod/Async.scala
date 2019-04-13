@@ -11,7 +11,7 @@ class Async[OptionType] ()
   extends reactLib.reactMod.Component[Props[OptionType], State[OptionType], js.Any] {
   var mounted: scala.Boolean = js.native
   var optionsCache: org.scalablytyped.runtime.StringDictionary[reactDashSelectLib.libTypesMod.OptionsType[OptionType]] = js.native
-  var select: reactLib.reactMod.ReactNs.Ref[_] = js.native
+  var select: reactLib.reactMod.Ref[_] = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def handleInputChange(newValue: java.lang.String, actionMeta: reactDashSelectLib.libTypesMod.InputActionMeta): java.lang.String = js.native

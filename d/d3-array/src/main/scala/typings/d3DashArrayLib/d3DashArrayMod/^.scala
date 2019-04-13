@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-array", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val bisect: d3DashArrayLib.Anon_Array = js.native
   def ascending(): scala.Double = js.native
   def ascending(a: Primitive | js.UndefOr[scala.Nothing], b: Primitive): scala.Double = js.native
   def ascending(a: Primitive): scala.Double = js.native

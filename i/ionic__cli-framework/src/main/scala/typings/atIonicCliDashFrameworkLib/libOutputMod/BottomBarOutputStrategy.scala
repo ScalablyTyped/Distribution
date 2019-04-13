@@ -12,7 +12,7 @@ class BottomBarOutputStrategy protected ()
      with RedrawLine {
   def this(hasBottomBarInputOutputColors: BottomBarOutputStrategyOptions) = this()
   val BottomBar: inquirerLib.Anon_BottomBar = js.native
-  var bottomBar: js.UndefOr[inquirerLib.inquirerMod.inquirerNs.uiNs.BottomBar] = js.native
+  var bottomBar: js.UndefOr[inquirerLib.inquirerMod.uiNs.BottomBar] = js.native
   val colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   val rawinput: nodeLib.NodeJSNs.ReadableStream = js.native
   val rawoutput: nodeLib.NodeJSNs.WritableStream = js.native

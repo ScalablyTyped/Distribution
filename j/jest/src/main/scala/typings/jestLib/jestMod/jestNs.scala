@@ -313,9 +313,6 @@ object jestNs extends js.Object {
     def stringMatching(str: stdLib.RegExp): js.Any = js.native
   }
   
-  trait ExpectExtendMap
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[CustomMatcher]
-  
   // Environment
   trait FakeTimers extends js.Object {
     def advanceTimersByTime(msToRun: scala.Double): scala.Unit
@@ -1397,9 +1394,6 @@ object jestNs extends js.Object {
     var watchPathIgnorePatterns: js.Array[java.lang.String]
   }
   
-  trait RawCoverage
-    extends /* filePath */ org.scalablytyped.runtime.StringDictionary[RawFileCoverage]
-  
   // TestResult
   trait RawFileCoverage extends js.Object {
     var b: org.scalablytyped.runtime.NumberDictionary[scala.Double]
@@ -1800,6 +1794,7 @@ object jestNs extends js.Object {
   ]
   type EmptyFunction = js.Function0[scala.Unit]
   type Environment = $JestEnvironment
+  type ExpectExtendMap = org.scalablytyped.runtime.StringDictionary[CustomMatcher]
   type FunctionPropertyNames[T] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any) with java.lang.String
   type Glob = java.lang.String
   // Global
@@ -1843,6 +1838,7 @@ object jestNs extends js.Object {
   // Config
   type Path = java.lang.String
   type ProvidesCallback = js.Function1[/* cb */ DoneCallback, js.Any]
+  type RawCoverage = org.scalablytyped.runtime.StringDictionary[RawFileCoverage]
   type RejectedValue[T] = js.Any
   type ReporterConfig = js.Tuple2[java.lang.String, js.Object]
   type ResolvedValue[T] = js.Any | T

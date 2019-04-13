@@ -24,6 +24,10 @@ trait RedisClient
   def MULTI(): Multi = js.native
   def MULTI(args: js.Array[js.Array[java.lang.String | scala.Double | Callback[_]]]): Multi = js.native
   def addCommand(command: java.lang.String): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def add_command(command: java.lang.String): scala.Unit = js.native
   def batch(): Multi = js.native
   def batch(args: js.Array[js.Array[java.lang.String | scala.Double | Callback[_]]]): Multi = js.native
@@ -31,16 +35,40 @@ trait RedisClient
   def duplicate(): RedisClient = js.native
   def duplicate(options: ClientOpts): RedisClient = js.native
   def duplicate(options: ClientOpts, cb: Callback[RedisClient]): RedisClient = js.native
+  /* InferMemberOverrides */
+  override def emit(event: java.lang.String, args: js.Any*): scala.Boolean = js.native
+  /* InferMemberOverrides */
+  override def emit(event: js.Symbol, args: js.Any*): scala.Boolean = js.native
   /**
     * Client methods.
     */
   def end(): scala.Unit = js.native
   def end(flush: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def eventNames(): js.Array[java.lang.String | js.Symbol] = js.native
+  /* InferMemberOverrides */
+  override def getMaxListeners(): scala.Double = js.native
+  /* InferMemberOverrides */
+  override def listenerCount(`type`: java.lang.String): scala.Double = js.native
+  /* InferMemberOverrides */
+  override def listenerCount(`type`: js.Symbol): scala.Double = js.native
+  /* InferMemberOverrides */
+  override def listeners(event: java.lang.String): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   /**
     * Mark the start of a transaction block.
     */
   def multi(): Multi = js.native
   def multi(args: js.Array[js.Array[java.lang.String | scala.Double | Callback[_]]]): Multi = js.native
+  /* InferMemberOverrides */
+  override def off(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def on(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_message(
     event: redisLib.redisLibStrings.message,
@@ -91,6 +119,33 @@ trait RedisClient
     event: redisLib.redisLibStrings.unsubscribe,
     listener: js.Function2[/* channel */ java.lang.String, /* count */ scala.Double, scala.Unit]
   ): this.type = js.native
+  /* InferMemberOverrides */
+  override def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  // Added in Node 6...
+  /* InferMemberOverrides */
+  override def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def rawListeners(event: java.lang.String): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  override def removeAllListeners(): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeAllListeners(event: java.lang.String): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeAllListeners(event: js.Symbol): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def sendCommand(command: java.lang.String): scala.Boolean = js.native
   def sendCommand(command: java.lang.String, args: js.Array[_]): scala.Boolean = js.native
   def sendCommand(command: java.lang.String, args: js.Array[_], cb: Callback[_]): scala.Boolean = js.native
@@ -99,6 +154,8 @@ trait RedisClient
   def send_command(command: java.lang.String, args: js.Array[_]): scala.Boolean = js.native
   def send_command(command: java.lang.String, args: js.Array[_], cb: Callback[_]): scala.Boolean = js.native
   def send_command(command: java.lang.String, cb: Callback[_]): scala.Boolean = js.native
+  /* InferMemberOverrides */
+  override def setMaxListeners(n: scala.Double): this.type = js.native
   def uncork(): scala.Unit = js.native
   def unref(): scala.Unit = js.native
 }

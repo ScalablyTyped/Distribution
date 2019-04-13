@@ -17,29 +17,29 @@ object atOracleOraclejetLibNumbers {
   
   @js.native
   sealed trait `1`
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_LEVEL
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_LEVEL
   
   @js.native
   sealed trait `180` extends js.Object
   
   @js.native
   sealed trait `2`
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_LEVEL
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_LEVEL
   
   @js.native
   sealed trait `270` extends js.Object
   
   @js.native
   sealed trait `3`
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_LEVEL
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_LEVEL
   
   @js.native
   sealed trait `4`
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_LEVEL
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_LEVEL
   
   @js.native
   sealed trait `5`
-    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_LEVEL
+    extends atOracleOraclejetLib.ojmessagingMod.SEVERITY_LEVEL
   
   @js.native
   sealed trait `90` extends js.Object

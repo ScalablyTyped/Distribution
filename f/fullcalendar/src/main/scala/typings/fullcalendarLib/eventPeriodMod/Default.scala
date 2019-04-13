@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Default protected () extends js.Object {
   def this(start: js.Any, end: js.Any, timezone: js.Any) = this()
-  var end: momentLib.momentMod.momentNs.Moment = js.native
+  var end: momentLib.momentMod.Moment = js.native
   var eventDefsById: js.Any = js.native
   var eventDefsByUid: js.Any = js.native
   var eventInstanceGroupsById: js.Any = js.native
@@ -25,7 +25,7 @@ class Default protected () extends js.Object {
   var pendingCnt: scala.Double = js.native
   var releaseCnt: scala.Double = js.native
   var requestsByUid: js.Any = js.native
-  var start: momentLib.momentMod.momentNs.Moment = js.native
+  var start: momentLib.momentMod.Moment = js.native
   var stuntedReleaseCnt: scala.Double = js.native
   var timezone: js.Any = js.native
   @JSName("triggerWith")

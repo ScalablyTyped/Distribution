@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("survey-knockout", "JsonObjectProperty")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("survey-knockout", "JsonObjectProperty")
 @js.native
 class JsonObjectProperty protected () extends IObject {
   def this(name: java.lang.String) = this()

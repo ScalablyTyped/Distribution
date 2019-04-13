@@ -17,7 +17,6 @@ object ^ extends js.Object {
   val UnknownRecord: UnknownRecordC = js.native
   val any: AnyC = js.native
   val boolean: BooleanC = js.native
-  val dictionary: ioDashTsLib.Anon_Codomain = js.native
   val never: NeverC = js.native
   val `null`: NullC = js.native
   val nullType: NullC = js.native

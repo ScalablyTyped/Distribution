@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormProps
-  extends reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement] {
+  extends reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement] {
   /**
     * @since 3.15.0
     */
@@ -17,7 +17,7 @@ trait FormProps
   var labelCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
   var layout: js.UndefOr[FormLayout] = js.undefined
   @JSName("onSubmit")
-  var onSubmit_FormProps: js.UndefOr[reactLib.reactMod.ReactNs.FormEventHandler[_]] = js.undefined
+  var onSubmit_FormProps: js.UndefOr[reactLib.reactMod.FormEventHandler[_]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   /**
     * @since 3.14.0
@@ -28,7 +28,7 @@ trait FormProps
 object FormProps {
   @scala.inline
   def apply(
-    FormHTMLAttributes: reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement] = null,
+    FormHTMLAttributes: reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement] = null,
     className: java.lang.String = null,
     colon: js.UndefOr[scala.Boolean] = js.undefined,
     form: WrappedFormUtils[_] = null,
@@ -36,9 +36,9 @@ object FormProps {
     labelAlign: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     labelCol: antdLib.libGridColMod.ColProps = null,
     layout: FormLayout = null,
-    onSubmit: reactLib.reactMod.ReactNs.FormEventHandler[_] = null,
+    onSubmit: reactLib.reactMod.FormEventHandler[_] = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     wrapperCol: antdLib.libGridColMod.ColProps = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()

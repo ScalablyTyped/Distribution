@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class DMS ()
-  extends awsDashSdkLib.clientsDmsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDmsMod.DMSNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDmsMod.^ {
+  def this(options: awsDashSdkLib.clientsDmsMod.ClientConfiguration) = this()
 }
 

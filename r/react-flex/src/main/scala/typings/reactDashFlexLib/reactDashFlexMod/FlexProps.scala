@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FlexProps
-  extends reactLib.reactMod.ReactNs.Props[Flex]
+  extends reactLib.reactMod.Props[Flex]
      with CommonFlexProps
 
 object FlexProps {
@@ -14,14 +14,14 @@ object FlexProps {
   def apply(
     alignContent: java.lang.String = null,
     alignItems: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     column: js.UndefOr[scala.Boolean] = js.undefined,
     display: java.lang.String = null,
     flex: scala.Double | java.lang.String | scala.Boolean = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     justifyContent: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Flex] = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[Flex] = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     row: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Any = null,

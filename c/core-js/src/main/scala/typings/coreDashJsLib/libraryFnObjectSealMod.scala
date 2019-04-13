@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/library/fn/object/seal", JSImport.Namespace)
 @js.native
-object libraryFnObjectSealMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_O]
+object libraryFnObjectSealMod extends js.Object {
+  def apply[T](o: T): T = js.native
+}
 

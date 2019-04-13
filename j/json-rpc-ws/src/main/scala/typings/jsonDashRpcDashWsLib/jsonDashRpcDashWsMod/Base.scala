@@ -11,7 +11,7 @@ class Base[TConnection /* <: Connection */] () extends js.Object {
   /**
     * Connected event handler
     */
-  def connected(socket: wsLib.wsMod.namespaced): scala.Unit = js.native
+  def connected(socket: wsLib.wsMod.^): scala.Unit = js.native
   /**
     * Disconnected event handler
     */

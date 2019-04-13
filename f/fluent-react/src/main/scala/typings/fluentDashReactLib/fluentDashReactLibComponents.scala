@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object fluentDashReactLibComponents {
   @scala.inline
-  def LocalizationProvider: reactLib.reactMod.ReactNs.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizationProviderProps] = js.constructorOf[fluentDashReactLib.fluentDashReactMod.LocalizationProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizationProviderProps]]
+  def LocalizationProvider: reactLib.reactMod.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizationProviderProps] = js.constructorOf[fluentDashReactLib.fluentDashReactMod.LocalizationProvider].asInstanceOf[reactLib.reactMod.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizationProviderProps]]
   @scala.inline
-  def Localized: reactLib.reactMod.ReactNs.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizedProps] = js.constructorOf[fluentDashReactLib.fluentDashReactMod.Localized].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizedProps]]
+  def Localized: reactLib.reactMod.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizedProps] = js.constructorOf[fluentDashReactLib.fluentDashReactMod.Localized].asInstanceOf[reactLib.reactMod.ComponentType[fluentDashReactLib.fluentDashReactMod.LocalizedProps]]
   @scala.inline
   def LocalizationProviderProps: fluentDashReactLib.fluentDashReactMod.LocalizationProviderProps.type = fluentDashReactLib.fluentDashReactMod.LocalizationProviderProps
   type LocalizationProviderProps = fluentDashReactLib.fluentDashReactMod.LocalizationProviderProps

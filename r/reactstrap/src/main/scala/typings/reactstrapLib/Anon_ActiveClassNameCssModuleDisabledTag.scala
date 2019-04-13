@@ -10,7 +10,7 @@ trait Anon_ActiveClassNameCssModuleDisabledTag extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ActiveClassNameCssModuleDisabledTag {
@@ -20,7 +20,7 @@ object Anon_ActiveClassNameCssModuleDisabledTag {
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ActiveClassNameCssModuleDisabledTag = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

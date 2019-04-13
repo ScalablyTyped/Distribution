@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Redshift ()
   extends awsDashSdkLib.awsDashSdkMod.Redshift {
-  def this(options: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsRedshiftMod.ClientConfiguration) = this()
 }
 

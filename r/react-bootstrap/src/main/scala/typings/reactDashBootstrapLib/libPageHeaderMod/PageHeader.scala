@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PageHeader
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libPageHeaderMod.PageHeaderNs.PageHeaderProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[PageHeaderProps, js.Object, js.Any]
 

@@ -12,6 +12,6 @@ object ^ extends js.Object {
     * Create a new connect server.
     * @public
     */
-  def apply(): connectLib.connectMod.createServerNs.Server = js.native
+  def apply(): Server = js.native
 }
 

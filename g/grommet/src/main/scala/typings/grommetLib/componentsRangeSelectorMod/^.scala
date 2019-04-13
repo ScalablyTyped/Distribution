@@ -8,15 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/RangeSelector", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val RangeSelector: reactLib.reactMod.ReactNs.ComponentClass[
+  val RangeSelector: reactLib.reactMod.ComponentClass[
     RangeSelectorProps with (grommetLib.utilsMod.Omit[
-      reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-        reactLib.HTMLDivElement
-      ], 
+      reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement], 
       grommetLib.grommetLibStrings.color
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

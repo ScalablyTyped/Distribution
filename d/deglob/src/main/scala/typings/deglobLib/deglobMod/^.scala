@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(patterns: js.Array[java.lang.String], cb: deglobLib.Callback): scala.Unit = js.native
-  def apply(
-    patterns: js.Array[java.lang.String],
-    opts: deglobLib.deglobMod.deglobNs.Options,
-    cb: deglobLib.Callback
-  ): scala.Unit = js.native
+  def apply(patterns: js.Array[java.lang.String], opts: Options, cb: deglobLib.Callback): scala.Unit = js.native
 }
 

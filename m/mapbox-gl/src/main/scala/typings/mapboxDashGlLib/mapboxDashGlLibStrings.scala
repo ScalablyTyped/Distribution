@@ -8,58 +8,58 @@ import scala.scalajs.js.annotation._
 object mapboxDashGlLibStrings {
   @js.native
   sealed trait `!=`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `%`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `*`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `+`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `-`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `/`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `<`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `<=`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `==`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `>`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `>=`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait GET extends js.Object
   
   @js.native
   sealed trait Glyphs
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait Image
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait POST extends js.Object
@@ -69,63 +69,63 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait Source
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait SpriteImage
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait SpriteJSON
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait Style
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait Tile
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait Unknown
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+    extends mapboxDashGlLib.mapboxDashGlMod.ResourceType
   
   @js.native
   sealed trait `_backtick^_backtick`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait abs
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait acos
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait all
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait any
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait array
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait asin
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait at
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait atan
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait auto extends js.Object
@@ -138,22 +138,22 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait boolean
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait both extends js.Object
   
   @js.native
   sealed trait bottom
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait `bottom-left`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait `bottom-right`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait boxzoomcancel extends js.Object
@@ -172,18 +172,18 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait `case`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait categorical extends js.Object
   
   @js.native
   sealed trait ceil
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait center
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait circle extends js.Object
@@ -193,11 +193,11 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait collator
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait concat
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait content extends js.Object
@@ -207,7 +207,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait cos
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait data extends js.Object
@@ -220,7 +220,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait downcase
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait drag extends js.Object
@@ -233,7 +233,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait e
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait error extends js.Object
@@ -243,7 +243,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait `feature-state`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait fill extends js.Object
@@ -253,26 +253,26 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait floor
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait format
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait geojson extends js.Object
   
   @js.native
   sealed trait `geometry-type`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait get
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait has
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait hcl extends js.Object
@@ -282,7 +282,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait `heatmap-density`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait height extends js.Object
@@ -292,7 +292,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait id
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait identity extends js.Object
@@ -308,37 +308,37 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait interpolate
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `interpolate-hcl`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `interpolate-lab`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait interval extends js.Object
   
   @js.native
   sealed trait `is-supported-script`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait lab extends js.Object
   
   @js.native
   sealed trait left
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait length
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait let
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait line extends js.Object
@@ -348,33 +348,33 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait `line-progress`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait linear extends js.Object
   
   @js.native
   sealed trait literal
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait ln
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait ln2
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait load extends js.Object
   
   @js.native
   sealed trait log10
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait log2
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait lowercase extends js.Object
@@ -387,11 +387,11 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait `match`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait max
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait metadata extends js.Object
@@ -401,7 +401,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait min
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait miter extends js.Object
@@ -447,15 +447,15 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait number
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `object`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait pi
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait pitch extends js.Object
@@ -471,7 +471,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait properties
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait raster extends js.Object
@@ -490,19 +490,19 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait `resolved-locale`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait rgb
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait rgba
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait right
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait rotate extends js.Object
@@ -515,14 +515,14 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait round
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `same-origin` extends js.Object
   
   @js.native
   sealed trait sin
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait source extends js.Object
@@ -535,18 +535,18 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait sqrt
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait square extends js.Object
   
   @js.native
   sealed trait step
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait string
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait style extends js.Object
@@ -562,7 +562,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait tan
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait terrarium extends js.Object
@@ -575,31 +575,31 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait `to-boolean`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `to-color`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `to-number`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait `to-string`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait top
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait `top-left`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait `top-right`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+    extends mapboxDashGlLib.mapboxDashGlMod.Anchor
   
   @js.native
   sealed trait touchcancel extends js.Object
@@ -615,18 +615,18 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait typeof
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait upcase
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait uppercase extends js.Object
   
   @js.native
   sealed trait `var`
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait vector extends js.Object
@@ -660,7 +660,7 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait zoom
-    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
   @js.native
   sealed trait zoomend extends js.Object

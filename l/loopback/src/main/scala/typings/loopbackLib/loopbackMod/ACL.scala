@@ -33,39 +33,33 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "ACL")
 @js.native
-class ACL ()
-  extends loopbackLib.loopbackMod.lNs.ACL {
-  /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
-  /**
-    * loopback 3.x Remote hooks
-    * http://loopback.io/doc/en/lb3/Remote-hooks.html
-    * @param method
-    * @param backback
+class ACL () extends PersistedModel {
+  /** accessType Type of access being granted: one of READ, WRITE, or EXECUTE. */
+  var accesType: loopbackLib.loopbackLibStrings.READ | loopbackLib.loopbackLibStrings.WRITE | loopbackLib.loopbackLibStrings.EXECUTE = js.native
+  /** model Name of the model. */
+  var model: java.lang.String = js.native
+  /**permission Type of permission granted  One of:
+    *  - ALARM: Generate an alarm, in a system-dependent way, the access specified in the permissions component of the ACL entry.
+    *  - ALLOW: Explicitly grants access to the resource.
+    *  - AUDIT: Log, in a system-dependent way, the access specified in the permissions component of the ACL entry.
+    *  - DENY: Explicitly denies access to the resource.
     */
-  /* CompleteClass */
-  override def beforeRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  var permission: loopbackLib.loopbackLibStrings.ALARM | loopbackLib.loopbackLibStrings.ALLOW | loopbackLib.loopbackLibStrings.AUDIT | loopbackLib.loopbackLibStrings.DENY = js.native
+  /** principalId ID of the principal - such as appId, userId or roleId. */
+  var principalId: java.lang.String = js.native
+  /** principalType Type of the principal; one of: Application, Use, Role. */
+  var principalType: loopbackLib.loopbackLibStrings.Aplication | loopbackLib.loopbackLibStrings.User | loopbackLib.loopbackLibStrings.Role | java.lang.String = js.native
+  /** property Name of the property, method, scope, or relation. */
+  var property: java.lang.String = js.native
+  /** settings Extends the `Model.settings` object. */
+  @JSName("settings")
+  var settings_ACL: loopbackLib.Anon_Acls = js.native
+  /**
+    * Get matching score for the given `AccessRequest`.
+    * @param {AccessRequest} req The request
+    * @returns {number} scor
+    */
+  def score(req: AccessRequest): scala.Double = js.native
 }
 
 /* static members */
@@ -95,7 +89,7 @@ object ACL extends js.Object {
     * @param {boolean} allowed is the request allow
     */
   def checkAccessForToken(
-    token: loopbackLib.loopbackMod.lNs.AccessToken,
+    token: loopbackLib.loopbackMod.AccessToken,
     model: java.lang.String,
     modelId: js.Any,
     method: java.lang.String,
@@ -120,7 +114,7 @@ object ACL extends js.Object {
     accessType: java.lang.String,
     callback: js.Function2[
       /* err */ java.lang.String | stdLib.Error, 
-      /* result */ loopbackLib.loopbackMod.lNs.AccessRequest, 
+      /* result */ loopbackLib.loopbackMod.AccessRequest, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -130,7 +124,7 @@ object ACL extends js.Object {
     * @param {AccessRequest} req The request
     * @returns {number}
     */
-  def getMatchingScore(rule: loopbackLib.loopbackMod.lNs.ACL, req: loopbackLib.loopbackMod.lNs.AccessRequest): scala.Double = js.native
+  def getMatchingScore(rule: loopbackLib.loopbackMod.ACL, req: loopbackLib.loopbackMod.AccessRequest): scala.Double = js.native
   /**
     * Check if the given principal is mapped to the role
     * @param {string} principalType Principal type

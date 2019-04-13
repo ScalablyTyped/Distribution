@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ipcheck", JSImport.Namespace)
 @js.native
+class ^ protected () extends IPCheck {
+  def this(input: java.lang.String) = this()
+}
+
+@JSImport("ipcheck", JSImport.Namespace)
+@js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[ipcheckLib.ipcheckMod.ipcheckNs.IPCheckStatic]
+  extends org.scalablytyped.runtime.TopLevel[IPCheckStatic]
 

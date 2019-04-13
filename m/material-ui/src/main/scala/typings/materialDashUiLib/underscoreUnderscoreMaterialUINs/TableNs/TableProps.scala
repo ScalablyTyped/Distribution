@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait TableProps extends js.Object {
   var allRowsSelected: js.UndefOr[scala.Boolean] = js.undefined
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var fixedFooter: js.UndefOr[scala.Boolean] = js.undefined
   var fixedHeader: js.UndefOr[scala.Boolean] = js.undefined
-  var footerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var headerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var footerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var headerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var height: js.UndefOr[java.lang.String] = js.undefined
   var multiSelectable: js.UndefOr[scala.Boolean] = js.undefined
   var onCellClick: js.UndefOr[js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit]] = js.undefined
@@ -27,20 +27,20 @@ trait TableProps extends js.Object {
     ]
   ] = js.undefined
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var wrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var wrapperStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TableProps {
   @scala.inline
   def apply(
     allRowsSelected: js.UndefOr[scala.Boolean] = js.undefined,
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     fixedFooter: js.UndefOr[scala.Boolean] = js.undefined,
     fixedHeader: js.UndefOr[scala.Boolean] = js.undefined,
-    footerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    footerStyle: reactLib.reactMod.CSSProperties = null,
+    headerStyle: reactLib.reactMod.CSSProperties = null,
     height: java.lang.String = null,
     multiSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     onCellClick: (/* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
@@ -50,8 +50,8 @@ object TableProps {
     onRowHoverExit: /* row */ scala.Double => scala.Unit = null,
     onRowSelection: /* selectedRows */ js.Array[scala.Double] | materialDashUiLib.materialDashUiLibStrings.all => scala.Unit = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null,
+    wrapperStyle: reactLib.reactMod.CSSProperties = null
   ): TableProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allRowsSelected)) __obj.updateDynamic("allRowsSelected")(allRowsSelected)

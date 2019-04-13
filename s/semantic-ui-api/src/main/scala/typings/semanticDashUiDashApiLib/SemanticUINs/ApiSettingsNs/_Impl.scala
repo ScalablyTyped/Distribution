@@ -12,7 +12,7 @@ trait _Impl extends js.Object {
     * Named API action for query, originally specified in $.fn.settings.api
     */
   var action: java.lang.String | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`
-  var api: /* import warning: ImportType.apply Failed type conversion: {[action: string] : string, [action: string] : string} */ js.Any
+  var api: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
     * Can be set to 'local' to cache successful returned AJAX responses when using a JSON API.
     * This helps avoid server round trips when API endpoints will return the same results when accessed repeatedly.
@@ -242,7 +242,7 @@ object _Impl {
   @scala.inline
   def apply(
     action: java.lang.String | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`,
-    api: /* import warning: ImportType.apply Failed type conversion: {[action: string] : string, [action: string] : string} */ js.Any,
+    api: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     beforeSend: semanticDashUiDashApiLib.SemanticUINs.ApiSettings => js.Any,
     beforeXHR: jqueryLib.JQueryNs.jqXHR[_] => js.Any,
     cache: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.local | scala.Boolean,

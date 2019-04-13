@@ -6,17 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Json extends js.Object {
-  var json: js.UndefOr[scala.Boolean | bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsJson] = js.undefined
-  var urlencoded: js.UndefOr[
-    scala.Boolean | bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsUrlencoded
-  ] = js.undefined
+  var json: js.UndefOr[scala.Boolean | bodyDashParserLib.bodyDashParserMod.OptionsJson] = js.undefined
+  var urlencoded: js.UndefOr[scala.Boolean | bodyDashParserLib.bodyDashParserMod.OptionsUrlencoded] = js.undefined
 }
 
 object Anon_Json {
   @scala.inline
   def apply(
-    json: scala.Boolean | bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsJson = null,
-    urlencoded: scala.Boolean | bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsUrlencoded = null
+    json: scala.Boolean | bodyDashParserLib.bodyDashParserMod.OptionsJson = null,
+    urlencoded: scala.Boolean | bodyDashParserLib.bodyDashParserMod.OptionsUrlencoded = null
   ): Anon_Json = {
     val __obj = js.Dynamic.literal()
     if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])

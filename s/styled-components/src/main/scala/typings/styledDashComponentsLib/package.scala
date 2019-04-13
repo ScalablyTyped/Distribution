@@ -19,7 +19,7 @@ package object styledDashComponentsLib {
   {[ K in keyof A ]: (props : any): A[K] | A[K]}
     */ styledDashComponentsLib.styledDashComponentsLibStrings.DeprecatedAttrs with js.Any
   // abuse Pick to strip the call signature from ForwardRefExoticComponent
-  type ForwardRefExoticBase[P] = stdLib.Pick[reactLib.reactMod.ReactNs.ForwardRefExoticComponent[P], java.lang.String]
+  type ForwardRefExoticBase[P] = stdLib.Pick[reactLib.reactMod.ForwardRefExoticComponent[P], java.lang.String]
   // Helper type operators
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   // extracts React defaultProps

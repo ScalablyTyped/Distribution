@@ -15,7 +15,7 @@ trait StrictImageProps extends js.Object {
   /** An image can appear centered in a content block. */
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** An image may appear circular. */
   var circular: js.UndefOr[scala.Boolean] = js.undefined
   /** Additional classes. */
@@ -65,7 +65,7 @@ object StrictImageProps {
     avatar: js.UndefOr[scala.Boolean] = js.undefined,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     circular: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,

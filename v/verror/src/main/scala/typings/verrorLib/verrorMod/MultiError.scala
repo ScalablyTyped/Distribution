@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("verror", "MultiError")
 @js.native
-class MultiError protected ()
-  extends verrorLib.verrorMod.VErrorNs.MultiError {
+class MultiError protected () extends VError {
   def this(errors: js.Array[stdLib.Error]) = this()
   /* CompleteClass */
   override var message: java.lang.String = js.native
@@ -22,7 +21,6 @@ class MultiError protected ()
   override var name: java.lang.String = js.native
   /* CompleteClass */
   override def cause(): js.UndefOr[stdLib.Error] = js.native
-  /* CompleteClass */
-  override def errors(): js.Array[stdLib.Error] = js.native
+  def errors(): js.Array[stdLib.Error] = js.native
 }
 

@@ -46,7 +46,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: java.lang.String */] extends js.
   /**
   	 * CSS Style to use for the editor component.
   	 */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Edit field type, avaiable value is 'textarea', 'select', 'checkbox' and 'datetime'
   	 */
@@ -75,7 +75,7 @@ object Editable {
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: EditCellType = null,
     validator: (/* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* cell */ js.Any, /* row */ TRow) => scala.Boolean | java.lang.String | EditValidatorObject = null
   ): Editable[TRow, K] = {

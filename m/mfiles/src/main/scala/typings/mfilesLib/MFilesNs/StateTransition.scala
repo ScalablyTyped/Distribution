@@ -39,3 +39,8 @@ class StateTransition ()
   override def Clone(): mfilesLib.IStateTransition = js.native
 }
 
+@JSGlobal("MFiles.StateTransition")
+@js.native
+object StateTransition
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStateTransition]
+

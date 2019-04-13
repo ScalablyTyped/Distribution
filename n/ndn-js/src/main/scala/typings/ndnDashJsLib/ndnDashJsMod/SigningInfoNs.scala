@@ -19,6 +19,5 @@ object SigningInfoNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[ndnDashJsLib.keyDashChainMod.SigningInfoNs.SignerType with scala.Double] = js.native
   }
   
-  type SignerType = ndnDashJsLib.keyDashChainMod.SigningInfoNs.SignerType
 }
 

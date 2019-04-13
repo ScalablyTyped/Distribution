@@ -5,13 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait FileWatcherEventKind extends js.Object
+
 @JSImport("typescript", "FileWatcherEventKind")
 @js.native
 object FileWatcherEventKind extends js.Object {
-  /* 1 */ val Changed: typescriptLib.typescriptMod.tsNs.FileWatcherEventKind.Changed with scala.Double = js.native
-  /* 0 */ val Created: typescriptLib.typescriptMod.tsNs.FileWatcherEventKind.Created with scala.Double = js.native
-  /* 2 */ val Deleted: typescriptLib.typescriptMod.tsNs.FileWatcherEventKind.Deleted with scala.Double = js.native
+  @js.native
+  sealed trait Changed
+    extends typescriptLib.typescriptMod.FileWatcherEventKind
+  
+  @js.native
+  sealed trait Created
+    extends typescriptLib.typescriptMod.FileWatcherEventKind
+  
+  @js.native
+  sealed trait Deleted
+    extends typescriptLib.typescriptMod.FileWatcherEventKind
+  
+  /* 1 */ val Changed: Changed with scala.Double = js.native
+  /* 0 */ val Created: Created with scala.Double = js.native
+  /* 2 */ val Deleted: Deleted with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.tsNs.FileWatcherEventKind with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.FileWatcherEventKind with scala.Double] = js.native
 }
 

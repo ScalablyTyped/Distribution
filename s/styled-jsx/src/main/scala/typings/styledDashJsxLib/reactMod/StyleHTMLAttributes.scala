@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StyleHTMLAttributes[T]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLAttributes[T] {
   var global: js.UndefOr[scala.Boolean] = js.undefined
   var jsx: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -14,7 +14,7 @@ trait StyleHTMLAttributes[T]
 object StyleHTMLAttributes {
   @scala.inline
   def apply[T](
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[T] = null,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     jsx: js.UndefOr[scala.Boolean] = js.undefined
   ): StyleHTMLAttributes[T] = {

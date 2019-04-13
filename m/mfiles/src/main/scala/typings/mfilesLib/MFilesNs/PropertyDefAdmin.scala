@@ -25,3 +25,8 @@ class PropertyDefAdmin ()
   override def Clone(): mfilesLib.IPropertyDefAdmin = js.native
 }
 
+@JSGlobal("MFiles.PropertyDefAdmin")
+@js.native
+object PropertyDefAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyDefAdmin]
+

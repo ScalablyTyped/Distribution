@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "CircleGeometry")
 @js.native
-class CircleGeometry protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.CircleGeometry {
+class CircleGeometry protected () extends Packable {
   def this(options: cesiumLib.Anon_Center) = this()
 }
 
@@ -16,13 +15,13 @@ class CircleGeometry protected ()
 @JSImport("cesium", "CircleGeometry")
 @js.native
 object CircleGeometry extends js.Object {
-  def createGeometry(circleGeometry: cesiumLib.cesiumMod.CesiumNs.CircleGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
+  def createGeometry(circleGeometry: cesiumLib.cesiumMod.CircleGeometry): cesiumLib.cesiumMod.Geometry = js.native
   def unpack(array: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): js.Array[scala.Double] = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.CircleGeometry
+    result: cesiumLib.cesiumMod.CircleGeometry
   ): js.Array[scala.Double] = js.native
 }
 

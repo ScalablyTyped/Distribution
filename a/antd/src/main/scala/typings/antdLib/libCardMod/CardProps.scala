@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'title'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardProps extends js.Object {
-  var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'title'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardProps extends js.Object {
+  var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var activeTabKey: js.UndefOr[java.lang.String] = js.undefined
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var cover: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var cover: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var defaultActiveTabKey: js.UndefOr[java.lang.String] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var headStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var headStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var hoverable: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,25 +24,25 @@ import scala.scalajs.js.annotation._
   var onTabChange: js.UndefOr[js.Function1[/* key */ java.lang.String, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[CardSize] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabList: js.UndefOr[js.Array[CardTabListType]] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var `type`: js.UndefOr[CardType] = js.undefined
 }
 
 object CardProps {
   @scala.inline
   def apply(
-    actions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    actions: js.Array[reactLib.reactMod.ReactNode] = null,
     activeTabKey: java.lang.String = null,
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    cover: reactLib.reactMod.ReactNs.ReactNode = null,
+    cover: reactLib.reactMod.ReactNode = null,
     defaultActiveTabKey: java.lang.String = null,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
-    headStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    extra: reactLib.reactMod.ReactNode = null,
+    headStyle: reactLib.reactMod.CSSProperties = null,
     hoverable: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
@@ -50,9 +50,9 @@ object CardProps {
     onTabChange: /* key */ java.lang.String => scala.Unit = null,
     prefixCls: java.lang.String = null,
     size: CardSize = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabList: js.Array[CardTabListType] = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     `type`: CardType = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()

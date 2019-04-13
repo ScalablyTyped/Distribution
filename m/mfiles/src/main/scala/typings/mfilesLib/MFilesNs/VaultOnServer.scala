@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class VaultOnServer ()
   extends mfilesLib.IVaultOnServer
 
+@JSGlobal("MFiles.VaultOnServer")
+@js.native
+object VaultOnServer
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultOnServer]
+

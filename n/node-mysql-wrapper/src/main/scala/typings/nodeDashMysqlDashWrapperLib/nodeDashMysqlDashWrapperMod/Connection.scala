@@ -40,7 +40,7 @@ class Connection protected ()
     * When finish returns a promise, use it with .then(function(){});
     * @return Promise
     */
-  def clearBinaryLogs(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def clearBinaryLogs(): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Creates the MysqlConnection from the connection url or the real connection object.
     * @param {string | Mysql.Connection |  Mysql.ConnectionConfig} connection the connection url or the real connection object.
@@ -75,15 +75,15 @@ class Connection protected ()
     * @returnType {Promise}
     * @return {Promise}
     */
-  def fetchDatabaseInformation(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def fetchDatabaseInformation(): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Link the real connection with this MysqlConnection object.
     * @param {function} readyCallback when the link operation is done this callback is executed.
     * @returnType {Promise}
     * @return {Promise}
     */
-  def link(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def link(readyCallback: js.Function0[scala.Unit]): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def link(): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def link(readyCallback: js.Function0[scala.Unit]): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Call when must notify the Database events, SAVE(INSERT,UPDATE), REMOVE(DELETE).
     * @param {string} tableWhichCalled the table name which event is coming from.

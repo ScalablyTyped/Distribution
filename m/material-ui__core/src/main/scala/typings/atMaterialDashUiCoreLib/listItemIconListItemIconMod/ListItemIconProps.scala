@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait ListItemIconProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait ListItemIconProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ListItemIconClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement[_]
 }
 
 object ListItemIconProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    children: reactLib.reactMod.ReactElement[_],
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ListItemIconClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): ListItemIconProps = {
     val __obj = js.Dynamic.literal(children = children)
     if (className != null) __obj.updateDynamic("className")(className)

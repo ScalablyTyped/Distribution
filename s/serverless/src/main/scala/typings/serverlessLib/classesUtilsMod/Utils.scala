@@ -13,7 +13,7 @@ trait Utils extends js.Object {
   def findServicePath(): java.lang.String
   def generateShortId(length: scala.Double): java.lang.String
   def getVersion(): java.lang.String
-  def logStat(serverless: serverlessLib.serverlessMod.namespaced, context: java.lang.String): js.Thenable[js.Object]
+  def logStat(serverless: serverlessLib.serverlessMod.^, context: java.lang.String): js.Thenable[js.Object]
   def readFile(filePath: java.lang.String): js.Thenable[js.Object]
   def readFileSync(filePath: java.lang.String): js.Object
   def walkDirSync(dirPath: java.lang.String): js.Array[java.lang.String]
@@ -32,7 +32,7 @@ object Utils {
     findServicePath: () => java.lang.String,
     generateShortId: scala.Double => java.lang.String,
     getVersion: () => java.lang.String,
-    logStat: (serverlessLib.serverlessMod.namespaced, java.lang.String) => js.Thenable[js.Object],
+    logStat: (serverlessLib.serverlessMod.^, java.lang.String) => js.Thenable[js.Object],
     readFile: java.lang.String => js.Thenable[js.Object],
     readFileSync: java.lang.String => js.Object,
     walkDirSync: java.lang.String => js.Array[java.lang.String],

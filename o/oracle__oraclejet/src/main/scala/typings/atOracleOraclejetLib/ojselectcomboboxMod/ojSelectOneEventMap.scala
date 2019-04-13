@@ -92,7 +92,7 @@ object ojSelectOneEventMap {
     loadend: stdLib.ProgressEvent,
     loadstart: stdLib.Event,
     lostpointercapture: stdLib.PointerEvent,
-    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]],
+    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]],
     minimumResultsForSearchChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double],
     mousedown: stdLib.MouseEvent,
     mouseenter: stdLib.MouseEvent,

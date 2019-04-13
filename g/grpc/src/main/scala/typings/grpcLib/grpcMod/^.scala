@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("grpc", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val credentials: grpcLib.Anon_CertChain = js.native
   def closeClient(clientObj: Client): scala.Unit = js.native
   def getClientChannel(client: Client): Channel = js.native
   def load[T](filename: Filename): T = js.native

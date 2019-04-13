@@ -104,9 +104,6 @@ object jasmineNs extends js.Object {
     def compare[T](actual: T, expected: T, args: js.Any*): CustomMatcherResult = js.native
   }
   
-  trait CustomMatcherFactories
-    extends /* index */ org.scalablytyped.runtime.StringDictionary[CustomMatcherFactory]
-  
   trait CustomMatcherResult extends js.Object {
     var message: java.lang.String | js.Function0[java.lang.String]
     var pass: scala.Boolean
@@ -192,6 +189,7 @@ object jasmineNs extends js.Object {
   def stringMatching(value: java.lang.String): Any = js.native
   def stringMatching(value: stdLib.RegExp): Any = js.native
   type CustomEqualityTester = js.Function2[/* first */ js.Any, /* second */ js.Any, scala.Boolean]
+  type CustomMatcherFactories = org.scalablytyped.runtime.StringDictionary[CustomMatcherFactory]
   type CustomMatcherFactory = js.Function2[
     /* util */ MatchersUtil, 
     /* customEqualityTesters */ js.Array[CustomEqualityTester], 

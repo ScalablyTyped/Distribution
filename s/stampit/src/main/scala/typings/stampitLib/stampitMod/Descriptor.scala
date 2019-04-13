@@ -38,6 +38,6 @@ trait Descriptor extends js.Object {
   /** ES5 Property Descriptors applied to Stamps */
   var staticPropertyDescriptors: js.UndefOr[js.Object] = js.native
   /** Create a new stamp based on this descriptor */
-  def apply(composables: stampitLib.Composable*): stampitLib.stampitMod.stampitNs.Stamp = js.native
+  def apply(composables: stampitLib.Composable*): Stamp = js.native
 }
 

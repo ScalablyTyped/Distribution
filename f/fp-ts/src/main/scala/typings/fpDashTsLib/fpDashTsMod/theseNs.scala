@@ -26,7 +26,7 @@ object theseNs extends js.Object {
     def this(value: L) = this()
   }
   
-  val URI: /* These */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.These = js.native
   val these: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libTheseMod.URI] = js.native
   def both[L, A](l: L, a: A): fpDashTsLib.libTheseMod.These[L, A] = js.native
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): fpDashTsLib.libTheseMod.These[L, A] = js.native

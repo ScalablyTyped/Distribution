@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object distDeviceOrientationWithDeviceOrientationMod extends js.Object {
   def withDeviceOrientation[Props](
-    Component: reactLib.reactMod.ReactNs.ComponentType[
+    Component: reactLib.reactMod.ComponentType[
       Props with reactDashFnsLib.distDeviceOrientationDeviceOrientationMod.DeviceOrientationProps
     ]
-  ): reactLib.reactMod.ReactNs.ComponentType[Props] = js.native
+  ): reactLib.reactMod.ComponentType[Props] = js.native
 }
 

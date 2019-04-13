@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NodeListOf[TNode /* <: Node */] extends NodeList {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator_NodeListOf: js.Function0[IterableIterator[TNode]] = js.native
 }
 

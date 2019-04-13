@@ -16,9 +16,9 @@ class SpeakerNotesOffTwoTone protected ()
 @JSImport("@material-ui/icons", "SpeakerNotesOffTwoTone")
 @js.native
 class SpeakerNotesOffTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

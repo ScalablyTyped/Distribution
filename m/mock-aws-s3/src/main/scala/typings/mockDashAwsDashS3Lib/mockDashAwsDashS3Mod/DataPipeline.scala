@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DataPipeline ()
   extends awsDashSdkLib.awsDashSdkMod.DataPipeline {
-  def this(options: awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDatapipelineMod.ClientConfiguration) = this()
 }
 

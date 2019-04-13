@@ -12,7 +12,7 @@ trait GridCellProps extends js.Object {
   var key: java.lang.String
   var parent: reactDashVirtualizedLib.distEsCellMeasurerMod.MeasuredCellParent
   var rowIndex: scala.Double
-  var style: reactLib.reactMod.ReactNs.CSSProperties
+  var style: reactLib.reactMod.CSSProperties
 }
 
 object GridCellProps {
@@ -24,7 +24,7 @@ object GridCellProps {
     key: java.lang.String,
     parent: reactDashVirtualizedLib.distEsCellMeasurerMod.MeasuredCellParent,
     rowIndex: scala.Double,
-    style: reactLib.reactMod.ReactNs.CSSProperties
+    style: reactLib.reactMod.CSSProperties
   ): GridCellProps = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex, isScrolling = isScrolling, isVisible = isVisible, key = key, parent = parent, rowIndex = rowIndex, style = style)
   

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - eslintLib.Anon_CatchClause
-  - eslintLib.Anon_ClassName
-  - eslintLib.Anon_FunctionName
-  - eslintLib.Anon_ImplicitGlobalVariable
-  - eslintLib.Anon_ImportBinding
-  - eslintLib.Anon_Node
-  - eslintLib.Anon_NodeParent
-  - eslintLib.Anon_NodeParentType
-*/
-trait DefinitionType extends js.Object
+@js.native
+trait DefinitionType extends js.Object {
+  var node: js.UndefOr[
+    js.Any | estreeLib.estreeMod.ArrowFunctionExpression | estreeLib.estreeMod.CatchClause | estreeLib.estreeMod.ClassDeclaration | estreeLib.estreeMod.ClassExpression | estreeLib.estreeMod.FunctionDeclaration | estreeLib.estreeMod.FunctionExpression | estreeLib.estreeMod.ImportDefaultSpecifier | estreeLib.estreeMod.ImportNamespaceSpecifier | estreeLib.estreeMod.ImportSpecifier | estreeLib.estreeMod.Program | estreeLib.estreeMod.VariableDeclarator
+  ] = js.native
+  var parent: js.UndefOr[
+    estreeLib.estreeMod.ImportDeclaration | scala.Null | estreeLib.estreeMod.VariableDeclaration
+  ] = js.native
+  var `type`: js.UndefOr[
+    eslintLib.eslintLibStrings.CatchClause | eslintLib.eslintLibStrings.ClassName | eslintLib.eslintLibStrings.FunctionName | eslintLib.eslintLibStrings.ImplicitGlobalVariable | eslintLib.eslintLibStrings.ImportBinding | eslintLib.eslintLibStrings.Parameter | eslintLib.eslintLibStrings.TDZ | eslintLib.eslintLibStrings.Variable
+  ] = js.native
+}
 

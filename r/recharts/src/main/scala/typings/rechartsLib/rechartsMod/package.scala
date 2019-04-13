@@ -26,7 +26,7 @@ package object rechartsMod {
   type BBoxUpdateCallback = js.Function1[/* box */ rechartsLib.Anon_HeightWidth, scala.Unit]
   type BarChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
   type ComposedChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
-  type ContentRenderer[P] = js.Function1[/* props */ P, reactLib.reactMod.ReactNs.ReactNode]
+  type ContentRenderer[P] = js.Function1[/* props */ P, reactLib.reactMod.ReactNode]
   type CoordinatesGenerator = js.Function1[/* arg */ rechartsLib.Anon_Height, js.Array[scala.Double]]
   type DataKey = java.lang.String | scala.Double | (js.Function1[
     /* dataObject */ js.Any, 
@@ -34,7 +34,7 @@ package object rechartsMod {
   ])
   type DataPointFormatter = js.Function2[/* entry */ js.Any, /* dataKey */ DataKey, rechartsLib.Anon_ErrorVal]
   type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
-  type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, reactLib.reactMod.ReactNs.ReactNode]
+  type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, reactLib.reactMod.ReactNode]
   type LegendValueFormatter = js.Function3[
     /* value */ js.UndefOr[scala.Nothing], 
     /* entry */ js.UndefOr[LegendPayload], 
@@ -76,6 +76,6 @@ package object rechartsMod {
     /* name */ java.lang.String, 
     /* entry */ TooltipPayload, 
     /* index */ scala.Double, 
-    reactLib.reactMod.ReactNs.ReactNode
+    reactLib.reactMod.ReactNode
   ]
 }

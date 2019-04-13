@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("glob", "GlobSync")
 @js.native
-class GlobSync protected ()
-  extends globLib.globMod.GNs.IGlobBase {
+class GlobSync protected () extends IGlobBase {
   def this(pattern: java.lang.String) = this()
-  def this(pattern: java.lang.String, options: globLib.globMod.GNs.IOptions) = this()
+  def this(pattern: java.lang.String, options: IOptions) = this()
   /* CompleteClass */
   override var aborted: scala.Boolean = js.native
   /* CompleteClass */
@@ -20,9 +19,9 @@ class GlobSync protected ()
   /* CompleteClass */
   override var found: js.Array[java.lang.String] = js.native
   /* CompleteClass */
-  override var minimatch: minimatchLib.minimatchMod.MNs.IMinimatch = js.native
+  override var minimatch: minimatchLib.minimatchMod.IMinimatch = js.native
   /* CompleteClass */
-  override var options: globLib.globMod.GNs.IOptions = js.native
+  override var options: IOptions = js.native
   /* CompleteClass */
   override var realpathCache: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /* CompleteClass */

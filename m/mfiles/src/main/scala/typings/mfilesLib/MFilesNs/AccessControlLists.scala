@@ -15,3 +15,8 @@ class AccessControlLists ()
   override def Item(Index: scala.Double): mfilesLib.IAccessControlList = js.native
 }
 
+@JSGlobal("MFiles.AccessControlLists")
+@js.native
+object AccessControlLists
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlLists]
+

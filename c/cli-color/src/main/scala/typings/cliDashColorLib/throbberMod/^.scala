@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("cli-color/throbber", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(write: js.Function1[/* str */ java.lang.String, _], period: scala.Double): cliDashColorLib.throbberMod.setupThrobberNs.Throbber = js.native
+  def apply(write: js.Function1[/* str */ java.lang.String, _], period: scala.Double): Throbber = js.native
   def apply(
     write: js.Function1[/* str */ java.lang.String, _],
     period: scala.Double,
-    format: cliDashColorLib.cliDashColorMod.mNs.Format
-  ): cliDashColorLib.throbberMod.setupThrobberNs.Throbber = js.native
+    format: cliDashColorLib.cliDashColorMod.Format
+  ): Throbber = js.native
 }
 

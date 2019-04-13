@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Snackbars/SnackbarContainer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[SnackbarProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[SnackbarProps, reactLib.reactMod.ComponentState] = js.native
 }
 

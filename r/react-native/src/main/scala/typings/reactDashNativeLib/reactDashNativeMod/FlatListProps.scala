@@ -10,7 +10,7 @@ trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
   /**
     * Rendered in between each item, but not at the top or bottom
     */
-  var ItemSeparatorComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_] | scala.Null] = js.native
+  var ItemSeparatorComponent: js.UndefOr[reactLib.reactMod.ComponentType[_] | scala.Null] = js.native
   /**
     * Optional custom style for multi-item rows generated when numColumns > 1
     */

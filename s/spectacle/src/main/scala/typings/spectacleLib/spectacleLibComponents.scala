@@ -7,65 +7,65 @@ import scala.scalajs.js.annotation._
 
 object spectacleLibComponents {
   @scala.inline
-  def Anim: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.AnimProps] = js.constructorOf[spectacleLib.spectacleMod.Anim].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.AnimProps]]
+  def Anim: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.AnimProps] = js.constructorOf[spectacleLib.spectacleMod.Anim].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.AnimProps]]
   @scala.inline
-  def Appear: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.AppearProps] = js.constructorOf[spectacleLib.spectacleMod.Appear].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.AppearProps]]
+  def Appear: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.AppearProps] = js.constructorOf[spectacleLib.spectacleMod.Appear].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.AppearProps]]
   @scala.inline
-  def BlockQuote: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.BlockQuote].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def BlockQuote: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.BlockQuote].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def Cite: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Cite].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def Cite: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Cite].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def Code: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Code].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def Code: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Code].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def CodePane: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.CodePaneProps] = js.constructorOf[spectacleLib.spectacleMod.CodePane].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.CodePaneProps]]
+  def CodePane: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.CodePaneProps] = js.constructorOf[spectacleLib.spectacleMod.CodePane].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.CodePaneProps]]
   @scala.inline
-  def ComponentPlayground: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.ComponentPlaygroundProps] = js.constructorOf[spectacleLib.spectacleMod.ComponentPlayground].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.ComponentPlaygroundProps]]
+  def ComponentPlayground: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.ComponentPlaygroundProps] = js.constructorOf[spectacleLib.spectacleMod.ComponentPlayground].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.ComponentPlaygroundProps]]
   @scala.inline
-  def Deck: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.DeckProps] = js.constructorOf[spectacleLib.spectacleMod.Deck].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.DeckProps]]
+  def Deck: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.DeckProps] = js.constructorOf[spectacleLib.spectacleMod.Deck].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.DeckProps]]
   @scala.inline
-  def Fill: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.FillProps] = js.constructorOf[spectacleLib.spectacleMod.Fill].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.FillProps]]
+  def Fill: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.FillProps] = js.constructorOf[spectacleLib.spectacleMod.Fill].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.FillProps]]
   @scala.inline
-  def Fit: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.FitProps] = js.constructorOf[spectacleLib.spectacleMod.Fit].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.FitProps]]
+  def Fit: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.FitProps] = js.constructorOf[spectacleLib.spectacleMod.Fit].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.FitProps]]
   @scala.inline
-  def GoToAction: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.GoToActionProps] = js.constructorOf[spectacleLib.spectacleMod.GoToAction].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.GoToActionProps]]
+  def GoToAction: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.GoToActionProps] = js.constructorOf[spectacleLib.spectacleMod.GoToAction].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.GoToActionProps]]
   @scala.inline
-  def Heading: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.HeadingProps] = js.constructorOf[spectacleLib.spectacleMod.Heading].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.HeadingProps]]
+  def Heading: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.HeadingProps] = js.constructorOf[spectacleLib.spectacleMod.Heading].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.HeadingProps]]
   @scala.inline
-  def Image: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.ImageProps] = js.constructorOf[spectacleLib.spectacleMod.Image].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.ImageProps]]
+  def Image: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.ImageProps] = js.constructorOf[spectacleLib.spectacleMod.Image].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.ImageProps]]
   @scala.inline
-  def Layout: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.LayoutProps] = js.constructorOf[spectacleLib.spectacleMod.Layout].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.LayoutProps]]
+  def Layout: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.LayoutProps] = js.constructorOf[spectacleLib.spectacleMod.Layout].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.LayoutProps]]
   @scala.inline
-  def Link: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.LinkProps] = js.constructorOf[spectacleLib.spectacleMod.Link].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.LinkProps]]
+  def Link: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.LinkProps] = js.constructorOf[spectacleLib.spectacleMod.Link].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.LinkProps]]
   @scala.inline
-  def List: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.List].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def List: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.List].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def ListItem: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.ListItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def ListItem: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.ListItem].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def Markdown: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.MarkdownProps] = js.constructorOf[spectacleLib.spectacleMod.Markdown].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.MarkdownProps]]
+  def Markdown: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.MarkdownProps] = js.constructorOf[spectacleLib.spectacleMod.Markdown].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.MarkdownProps]]
   @scala.inline
-  def Notes: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Notes].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def Notes: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Notes].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def Quote: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Quote].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def Quote: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Quote].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def S: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.SProps] = js.constructorOf[spectacleLib.spectacleMod.S].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.SProps]]
+  def S: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.SProps] = js.constructorOf[spectacleLib.spectacleMod.S].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.SProps]]
   @scala.inline
-  def Slide: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.SlideProps] = js.constructorOf[spectacleLib.spectacleMod.Slide].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.SlideProps]]
+  def Slide: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.SlideProps] = js.constructorOf[spectacleLib.spectacleMod.Slide].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.SlideProps]]
   @scala.inline
-  def SlideSet: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.SlideSet].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def SlideSet: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.SlideSet].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def Table: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Table].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def Table: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.Table].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def TableBody: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableBody].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def TableBody: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableBody].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def TableHeader: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableHeader].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def TableHeader: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableHeader].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def TableHeaderItem: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableHeaderItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def TableHeaderItem: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableHeaderItem].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def TableItem: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def TableItem: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableItem].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def TableRow: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableRow].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.BaseProps]]
+  def TableRow: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps] = js.constructorOf[spectacleLib.spectacleMod.TableRow].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.BaseProps]]
   @scala.inline
-  def Text: reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.TextProps] = js.constructorOf[spectacleLib.spectacleMod.Text].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[spectacleLib.spectacleMod.TextProps]]
+  def Text: reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.TextProps] = js.constructorOf[spectacleLib.spectacleMod.Text].asInstanceOf[reactLib.reactMod.ComponentType[spectacleLib.spectacleMod.TextProps]]
   @scala.inline
   def AnimProps: spectacleLib.spectacleMod.AnimProps.type = spectacleLib.spectacleMod.AnimProps
   type AnimProps = spectacleLib.spectacleMod.AnimProps

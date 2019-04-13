@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class RAM ()
   extends awsDashSdkLib.clientsAllMod.RAM {
-  def this(options: awsDashSdkLib.clientsRamMod.RAMNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsRamMod.ClientConfiguration) = this()
 }
 

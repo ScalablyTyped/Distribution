@@ -12,7 +12,7 @@ trait WaveSurfer
 //   pluginName -> WaveSurferPlugin
 //   propertyNameAddedByPlugin -> any
 /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var util: wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.WaveSurferUtil = js.native
+  var util: WaveSurferUtil = js.native
   def destroy(): scala.Unit = js.native
   def empty(): scala.Unit = js.native
   def exportImage(format: java.lang.String, quality: scala.Double): java.lang.String = js.native

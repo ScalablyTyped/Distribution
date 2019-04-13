@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait RadioButtonProps extends CommonEnhancedSwitchProps[RadioButton] {
   // <EnhancedSwitch/> is element that get the 'other' properties
-  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var inputStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var labelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var onCheck: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], 
+      /* e */ reactLib.reactMod.FormEvent[js.Object], 
       /* selected */ java.lang.String, 
       scala.Unit
     ]
   ] = js.undefined
-  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined
+  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined
    // Normally an SvgIcon
   @JSName("value")
   var value_RadioButtonProps: js.UndefOr[js.Any] = js.undefined
@@ -28,14 +28,14 @@ object RadioButtonProps {
   @scala.inline
   def apply(
     CommonEnhancedSwitchProps: CommonEnhancedSwitchProps[RadioButton] = null,
-    checkedIcon: reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.Anon_Style] = null,
+    checkedIcon: reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onCheck: (/* e */ reactLib.reactMod.ReactNs.FormEvent[js.Object], /* selected */ java.lang.String) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    uncheckedIcon: reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.Anon_Style] = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
+    inputStyle: reactLib.reactMod.CSSProperties = null,
+    labelStyle: reactLib.reactMod.CSSProperties = null,
+    onCheck: (/* e */ reactLib.reactMod.FormEvent[js.Object], /* selected */ java.lang.String) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    uncheckedIcon: reactLib.reactMod.ReactElement[materialDashUiLib.Anon_Style] = null,
     value: js.Any = null
   ): RadioButtonProps = {
     val __obj = js.Dynamic.literal()

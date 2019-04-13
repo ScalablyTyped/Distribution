@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLImageElement>, keyof rebass.rebass.ImageKnownProps> ]: react.react.React.HTMLProps<std.HTMLImageElement>[P]} */ trait ImageProps extends ImageKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLImageElement>, keyof rebass.rebass.ImageKnownProps> ]: react.react.HTMLProps<std.HTMLImageElement>[P]} */ trait ImageProps extends ImageKnownProps
 
 object ImageProps {
   @scala.inline
   def apply(
     alignSelf: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null,
-    as: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    as: reactLib.reactMod.ReactType[_] = null,
     bg: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     borderRadius: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BorderRadiusProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
     css: styledDashComponentsLib.styledDashComponentsMod.CSSObject = null,
     flex: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
@@ -31,7 +31,7 @@ object ImageProps {
     height: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.HeightProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     m: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -105,7 +105,7 @@ object ImageProps {
     py: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null,
+    ref: reactLib.reactMod.LegacyRef[js.Any] = null,
     width: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.WidthProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null

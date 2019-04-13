@@ -12,17 +12,13 @@ trait Anon_AfterTransform extends js.Object {
   var writechunk: js.Any
    // TODO
   var writeencoding: java.lang.String | scala.Null
-  def afterTransform(
-    `this`: readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform,
-    er: js.Any,
-    data: js.Any
-  ): scala.Unit | scala.Boolean
+  def afterTransform(`this`: readableDashStreamLib.readableDashStreamMod.Transform, er: js.Any, data: js.Any): scala.Unit | scala.Boolean
 }
 
 object Anon_AfterTransform {
   @scala.inline
   def apply(
-    afterTransform: (readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform, js.Any, js.Any) => scala.Unit | scala.Boolean,
+    afterTransform: (readableDashStreamLib.readableDashStreamMod.Transform, js.Any, js.Any) => scala.Unit | scala.Boolean,
     needTransform: scala.Boolean,
     transforming: scala.Boolean,
     writechunk: js.Any,

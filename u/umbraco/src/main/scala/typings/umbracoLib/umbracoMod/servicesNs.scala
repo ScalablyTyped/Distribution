@@ -21,6 +21,5 @@ object servicesNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.servicesNs.NotificationType with java.lang.String] = js.native
   }
   
-  type NotificationType = umbracoLib.umbracoNs.servicesNs.NotificationType
 }
 

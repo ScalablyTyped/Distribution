@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ECR ()
-  extends awsDashSdkLib.clientsEcrMod.namespaced {
-  def this(options: awsDashSdkLib.clientsEcrMod.ECRNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsEcrMod.^ {
+  def this(options: awsDashSdkLib.clientsEcrMod.ClientConfiguration) = this()
 }
 

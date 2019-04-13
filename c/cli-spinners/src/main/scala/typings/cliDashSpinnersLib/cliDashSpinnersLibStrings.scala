@@ -8,279 +8,279 @@ import scala.scalajs.js.annotation._
 object cliDashSpinnersLibStrings {
   @js.native
   sealed trait arc
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait arrow
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait arrow2
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait arrow3
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait balloon
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait balloon2
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait bounce
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait bouncingBall
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait bouncingBar
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait boxBounce
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait boxBounce2
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait christmas
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait circle
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait circleHalves
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait circleQuarters
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait clock
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots10
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots11
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots12
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots2
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots3
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots4
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots5
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots6
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots7
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots8
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dots9
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait dqpb
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait earth
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait flip
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait grenade
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait growHorizontal
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait growVertical
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait hamburger
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait hearts
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait layer
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait line
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait line2
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait monkey
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait moon
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait noise
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait pipe
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait point
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait pong
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait runner
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait shark
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait simpleDots
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait simpleDotsScrolling
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait smiley
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait squareCorners
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait squish
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait star
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait star2
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle10
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle11
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle12
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle13
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle2
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle3
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle4
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle5
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle6
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle7
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle8
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait toggle9
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait triangle
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @js.native
   sealed trait weather
-    extends cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName
+    extends cliDashSpinnersLib.cliDashSpinnersMod.SpinnerName
   
   @scala.inline
   def arc: arc = "arc".asInstanceOf[arc]

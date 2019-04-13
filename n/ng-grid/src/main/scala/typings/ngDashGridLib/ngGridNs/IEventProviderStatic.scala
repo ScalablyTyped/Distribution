@@ -11,7 +11,7 @@ trait IEventProviderStatic
       /* grid */ IGridInstance, 
       /* $scope */ IGridScope, 
       /* domUtilityService */ ngDashGridLib.ngGridNs.serviceNs.IDomUtilityService, 
-      /* $timeout */ angularLib.angularMod.angularNs.ITimeoutService, 
+      /* $timeout */ angularLib.angularMod.ITimeoutService, 
       IEventProvider
     ]
 

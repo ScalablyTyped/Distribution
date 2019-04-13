@@ -33,7 +33,7 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def get(): js.Promise[java.lang.String] = js.native
-  def get(options: wallpaperLib.wallpaperMod.wallpaperNs.GetOptions): js.Promise[java.lang.String] = js.native
+  def get(options: wallpaperLib.wallpaperMod.GetOptions): js.Promise[java.lang.String] = js.native
   /**
   	Set a new wallpaper.
   	@param imagePath - The path to the image to set as the desktop wallpaper.
@@ -46,6 +46,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def set(imagePath: java.lang.String): js.Promise[scala.Unit] = js.native
-  def set(imagePath: java.lang.String, options: wallpaperLib.wallpaperMod.wallpaperNs.SetOptions): js.Promise[scala.Unit] = js.native
+  def set(imagePath: java.lang.String, options: wallpaperLib.wallpaperMod.SetOptions): js.Promise[scala.Unit] = js.native
 }
 

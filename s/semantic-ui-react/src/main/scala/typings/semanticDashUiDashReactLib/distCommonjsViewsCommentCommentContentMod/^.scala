@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/views/Comment/CommentContent", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[CommentContentProps] = js.native
+  val default: reactLib.reactMod.StatelessComponent[CommentContentProps] = js.native
 }
 

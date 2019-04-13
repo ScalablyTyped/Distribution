@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("requestretry", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[requestretryLib.requestretryMod.requestretryNs.RetryRequestAPI]
+  extends org.scalablytyped.runtime.TopLevel[RetryRequestAPI]
 

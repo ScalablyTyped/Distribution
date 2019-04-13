@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Support ()
   extends awsDashSdkLib.clientsAllMod.Support {
-  def this(options: awsDashSdkLib.clientsSupportMod.SupportNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSupportMod.ClientConfiguration) = this()
 }
 

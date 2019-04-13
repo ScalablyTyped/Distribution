@@ -33,7 +33,7 @@ trait Anon_BufBuffer extends js.Object {
   /**
     * YAML loaders
     */
-  val loaderNs: Anon_DocI = js.native
+  val loaderNs: Anon_Doc = js.native
   /**
     * YAML schemas
     */

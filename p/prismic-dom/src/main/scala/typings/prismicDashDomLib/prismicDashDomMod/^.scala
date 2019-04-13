@@ -11,6 +11,5 @@ object ^ extends js.Object {
   val HTMLSerializer: prismicDashDomLib.HTMLSerializer[java.lang.String] = js.native
   val Link: prismicDashDomLib.prismicDashDomMod.Link = js.native
   val RichText: prismicDashDomLib.prismicDashDomMod.RichText = js.native
-  val default: prismicDashDomLib.Anon_Link = js.native
 }
 

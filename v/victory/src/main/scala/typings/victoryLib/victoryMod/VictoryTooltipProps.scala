@@ -54,7 +54,7 @@ trait VictoryTooltipProps extends js.Object {
     * Examples: flyoutComponent={<Flyout x={50} y={50}/>}, flyoutComponent={<MyCustomFlyout/>}
     * @default <Flyout/>
     */
-  var flyoutComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var flyoutComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The style prop applies SVG style properties to the rendered flyout container. These props will be passed to the flyoutComponent.
     */
@@ -63,7 +63,7 @@ trait VictoryTooltipProps extends js.Object {
     * The groupComponent prop takes a component instance which will be used to create group elements for use within container elements. This prop defaults to a <g> tag.
     * @default groupComponent={<g/>}
     */
-  var groupComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var groupComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The height prop defines the height of the tooltip flyout. This prop may be given as a positive number or a function of datum.
     * If this prop is not set, height will be determined based on an approximate text size calculated from the text and style props provided to VictoryTooltip.
@@ -87,7 +87,7 @@ trait VictoryTooltipProps extends js.Object {
     * Examples: labelComponent={<VictoryLabel dy={20}/>}, labelComponent={<MyCustomLabel/>}
     * @default <VictoryLabel/>
     */
-  var labelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var labelComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The orientation prop determines which side of the (x, y) coordinate the tooltip should be rendered on.
     * This prop can be given as “top”, “bottom”, “left”, “right”, or as a function of datum that returns one of these values.
@@ -111,7 +111,7 @@ trait VictoryTooltipProps extends js.Object {
   /**
     * The style prop applies CSS properties to the rendered `<text>` element.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * The text prop defines the text VictoryTooltip will render. The text prop may be given as a string, number, or function of datum.
     * When VictoryLabel is used as the labelComponent, strings may include newline characters, which VictoryLabel will split in to separate <tspan/> elements.
@@ -149,18 +149,18 @@ object VictoryTooltipProps {
     dx: StringOrNumberOrCallback = null,
     dy: StringOrNumberOrCallback = null,
     events: js.Object = null,
-    flyoutComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    flyoutComponent: reactLib.reactMod.ReactElement[_] = null,
     flyoutStyle: VictoryStyleObject = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: NumberOrCallback = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Double | java.lang.String = null,
-    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement[_] = null,
     orientation: OrientationTypes = null,
     pointerLength: NumberOrCallback = null,
     pointerWidth: NumberOrCallback = null,
     renderInPortal: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     text: StringOrNumberOrCallback | js.Array[java.lang.String] | js.Array[scala.Double] = null,
     theme: VictoryThemeDefinition = null,
     width: NumberOrCallback = null,

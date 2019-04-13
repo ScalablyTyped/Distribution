@@ -12,12 +12,9 @@ abstract class OptionallyTypedRule ()
      with tslintLib.libLanguageRuleRuleMod.ITypedRule {
   /* CompleteClass */
   @JSName("apply")
-  override def apply(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
+  override def apply(sourceFile: typescriptLib.typescriptMod.SourceFile): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* CompleteClass */
-  override def applyWithProgram(
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
-    program: typescriptLib.typescriptMod.tsNs.Program
-  ): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
+  override def applyWithProgram(sourceFile: typescriptLib.typescriptMod.SourceFile, program: typescriptLib.typescriptMod.Program): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* CompleteClass */
   override def applyWithWalker(walker: tslintLib.libLanguageWalkerWalkerMod.IWalker): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* CompleteClass */

@@ -17,3 +17,8 @@ class AccessControlListComponentKey ()
   override def Clone(): mfilesLib.IAccessControlListComponentKey = js.native
 }
 
+@JSGlobal("MFiles.AccessControlListComponentKey")
+@js.native
+object AccessControlListComponentKey
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlListComponentKey]
+

@@ -16,10 +16,10 @@ object ChromePickerProps {
   def apply(
     color: reactDashColorLib.reactDashColorMod.Color = null,
     disableAlpha: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ChromePicker] = null,
+    ref: reactLib.reactMod.LegacyRef[ChromePicker] = null,
     styles: ChromePickerStyles = null
   ): ChromePickerProps = {
     val __obj = js.Dynamic.literal()

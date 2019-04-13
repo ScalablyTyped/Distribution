@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait FastFieldConfig[T] extends js.Object {
   var children: js.UndefOr[
-    (js.Function1[/* props */ FastFieldProps[_], reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode
+    (js.Function1[/* props */ FastFieldProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ComponentType[FastFieldProps[_]] | reactLib.reactMod.ReactNs.ComponentType[scala.Unit]
+    java.lang.String | reactLib.reactMod.ComponentType[FastFieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit]
   ] = js.undefined
   var innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, scala.Unit]] = js.undefined
   var name: java.lang.String
-  var render: js.UndefOr[js.Function1[/* props */ FastFieldProps[_], reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var render: js.UndefOr[js.Function1[/* props */ FastFieldProps[_], reactLib.reactMod.ReactNode]] = js.undefined
   var shouldUpdate: js.UndefOr[
     js.Function2[
       /* nextProps */ T with formikLib.distTypesMod.GenericFieldHTMLAttributes with formikLib.Anon_Formik, 
@@ -34,11 +34,11 @@ object FastFieldConfig {
   @scala.inline
   def apply[T](
     name: java.lang.String,
-    children: (js.Function1[/* props */ FastFieldProps[_], reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode = null,
+    children: (js.Function1[/* props */ FastFieldProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    component: java.lang.String | reactLib.reactMod.ReactNs.ComponentType[FastFieldProps[_]] | reactLib.reactMod.ReactNs.ComponentType[scala.Unit] = null,
+    component: java.lang.String | reactLib.reactMod.ComponentType[FastFieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit] = null,
     innerRef: /* instance */ js.Any => scala.Unit = null,
-    render: /* props */ FastFieldProps[_] => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ FastFieldProps[_] => reactLib.reactMod.ReactNode = null,
     shouldUpdate: (/* nextProps */ T with formikLib.distTypesMod.GenericFieldHTMLAttributes with formikLib.Anon_Formik, /* props */ js.Object) => scala.Boolean = null,
     `type`: java.lang.String = null,
     validate: /* value */ js.Any => js.UndefOr[java.lang.String | js.Promise[scala.Unit]] = null,

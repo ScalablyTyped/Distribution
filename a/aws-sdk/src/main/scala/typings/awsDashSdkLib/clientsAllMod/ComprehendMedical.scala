@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ComprehendMedical ()
-  extends awsDashSdkLib.clientsComprehendmedicalMod.namespaced {
-  def this(options: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsComprehendmedicalMod.^ {
+  def this(options: awsDashSdkLib.clientsComprehendmedicalMod.ClientConfiguration) = this()
 }
 

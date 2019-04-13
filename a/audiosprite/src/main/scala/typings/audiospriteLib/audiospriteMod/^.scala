@@ -10,20 +10,12 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     files: js.Array[java.lang.String],
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* obj */ audiospriteLib.audiospriteMod.audiospriteNs.Result, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* obj */ Result, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     files: js.Array[java.lang.String],
-    option: audiospriteLib.audiospriteMod.audiospriteNs.Option,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* obj */ audiospriteLib.audiospriteMod.audiospriteNs.Result, 
-      scala.Unit
-    ]
+    option: Option,
+    callback: js.Function2[/* error */ stdLib.Error, /* obj */ Result, scala.Unit]
   ): scala.Unit = js.native
 }
 

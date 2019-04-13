@@ -12,8 +12,12 @@ trait PutOptions
 
 object PutOptions {
   @scala.inline
-  def apply(sync: js.UndefOr[scala.Boolean] = js.undefined): PutOptions = {
+  def apply(
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    sync: js.UndefOr[scala.Boolean] = js.undefined
+  ): PutOptions = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
     __obj.asInstanceOf[PutOptions]
   }

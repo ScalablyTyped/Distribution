@@ -17,5 +17,35 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("backbone", "EventsMixin")
 @js.native
-abstract class EventsMixin () extends js.Object
+abstract class EventsMixin () extends js.Object {
+  def bind(eventMap: EventMap): this.type = js.native
+  def bind(eventMap: EventMap, context: js.Any): this.type = js.native
+  def bind(eventName: java.lang.String, callback: EventHandler): this.type = js.native
+  def bind(eventName: java.lang.String, callback: EventHandler, context: js.Any): this.type = js.native
+  def listenTo(`object`: js.Any, eventMap: EventMap): this.type = js.native
+  def listenTo(`object`: js.Any, events: java.lang.String, callback: EventHandler): this.type = js.native
+  def listenToOnce(`object`: js.Any, eventMap: EventMap): this.type = js.native
+  def listenToOnce(`object`: js.Any, events: java.lang.String, callback: EventHandler): this.type = js.native
+  def off(): this.type = js.native
+  def off(eventName: java.lang.String): this.type = js.native
+  def off(eventName: java.lang.String, callback: EventHandler): this.type = js.native
+  def off(eventName: java.lang.String, callback: EventHandler, context: js.Any): this.type = js.native
+  def on(eventMap: EventMap): this.type = js.native
+  def on(eventMap: EventMap, context: js.Any): this.type = js.native
+  def on(eventName: java.lang.String, callback: EventHandler): this.type = js.native
+  def on(eventName: java.lang.String, callback: EventHandler, context: js.Any): this.type = js.native
+  def once(eventMap: EventMap): this.type = js.native
+  def once(eventMap: EventMap, context: js.Any): this.type = js.native
+  def once(events: java.lang.String, callback: EventHandler): this.type = js.native
+  def once(events: java.lang.String, callback: EventHandler, context: js.Any): this.type = js.native
+  def stopListening(): this.type = js.native
+  def stopListening(`object`: js.Any): this.type = js.native
+  def stopListening(`object`: js.Any, events: java.lang.String): this.type = js.native
+  def stopListening(`object`: js.Any, events: java.lang.String, callback: EventHandler): this.type = js.native
+  def trigger(eventName: java.lang.String, args: js.Any*): this.type = js.native
+  def unbind(): this.type = js.native
+  def unbind(eventName: java.lang.String): this.type = js.native
+  def unbind(eventName: java.lang.String, callback: EventHandler): this.type = js.native
+  def unbind(eventName: java.lang.String, callback: EventHandler, context: js.Any): this.type = js.native
+}
 

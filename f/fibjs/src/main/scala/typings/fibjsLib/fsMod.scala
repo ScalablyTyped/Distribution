@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 @JSImport("fs", JSImport.Namespace)
 @js.native
 object fsMod extends js.Object {
-  val SEEK_CUR: /* 1 */ scala.Double = js.native
-  val SEEK_END: /* 2 */ scala.Double = js.native
-  val SEEK_SET: /* 0 */ scala.Double = js.native
+  val SEEK_CUR: fibjsLib.fibjsLibNumbers.`1` = js.native
+  val SEEK_END: fibjsLib.fibjsLibNumbers.`2` = js.native
+  val SEEK_SET: fibjsLib.fibjsLibNumbers.`0` = js.native
   val constants: js.Object = js.native
   def access(path: java.lang.String): scala.Unit = js.native
   def access(path: java.lang.String, mode: scala.Double): scala.Unit = js.native

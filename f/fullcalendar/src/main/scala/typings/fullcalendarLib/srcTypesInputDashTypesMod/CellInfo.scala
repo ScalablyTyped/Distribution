@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CellInfo extends js.Object {
-  var date: momentLib.momentMod.momentNs.Moment
+  var date: momentLib.momentMod.Moment
   var dayEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery
   var hiddenSegs: js.Array[EventSegment]
   var moreEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery
@@ -16,7 +16,7 @@ trait CellInfo extends js.Object {
 object CellInfo {
   @scala.inline
   def apply(
-    date: momentLib.momentMod.momentNs.Moment,
+    date: momentLib.momentMod.Moment,
     dayEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery,
     hiddenSegs: js.Array[EventSegment],
     moreEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery,

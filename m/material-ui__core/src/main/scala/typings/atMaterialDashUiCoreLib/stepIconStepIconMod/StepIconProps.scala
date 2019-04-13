@@ -6,26 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait StepIconProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait StepIconProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepIconClasskey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: reactLib.reactMod.ReactNs.ReactNode
+  var icon: reactLib.reactMod.ReactNode
 }
 
 object StepIconProps {
   @scala.inline
   def apply(
-    icon: reactLib.reactMod.ReactNs.ReactNode,
+    icon: reactLib.reactMod.ReactNode,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepIconClasskey]] = null,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): StepIconProps = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

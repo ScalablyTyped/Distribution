@@ -635,9 +635,7 @@ object RNFirebaseNs extends js.Object {
       def `val`(): js.Any
     }
     
-    trait Object[ConfigSnapshot]
-      extends /* key */ org.scalablytyped.runtime.StringDictionary[ConfigSnapshot]
-    
+    type Object[ConfigSnapshot] = org.scalablytyped.runtime.StringDictionary[ConfigSnapshot]
   }
   
   @JSName("crashlytics")
@@ -1730,14 +1728,12 @@ object RNFirebaseNs extends js.Object {
       val details: js.UndefOr[js.Any] = js.undefined
     }
     
-    trait HttpsErrorCode
-      extends /* name */ org.scalablytyped.runtime.StringDictionary[FunctionsErrorCode]
-    
     /**
       * An HttpsCallable is a reference to a "callable" http trigger in
       * Google Cloud Functions.
       */
     type HttpsCallable[Params, Result] = (js.Function1[/* data */ Params, js.Promise[HttpsCallableResult[Result]]]) | js.Function0[js.Promise[HttpsCallableResult[Result]]]
+    type HttpsErrorCode = org.scalablytyped.runtime.StringDictionary[FunctionsErrorCode]
   }
   
   @JSName("iid")

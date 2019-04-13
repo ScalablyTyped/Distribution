@@ -27,7 +27,7 @@ trait WPAPI
     * @param credentials An authentication credentials object
     */
   def auth(): WPAPI = js.native
-  def auth(credentials: wpapiLib.wpapiMod.WPAPINs.Credentials): WPAPI = js.native
+  def auth(credentials: Credentials): WPAPI = js.native
   /**
     * Deduce request methods from a provided API root JSON response object's
     * routes dictionary, and assign those methods to the current instance. If
@@ -40,13 +40,13 @@ trait WPAPI
     * root API endpoint of a WP site, which should be a dictionary of route
     * definition objects keyed by the route's regex pattern
     */
-  def bootstrap(routes: wpapiLib.wpapiMod.WPAPINs.Routes): WPAPI = js.native
+  def bootstrap(routes: Routes): WPAPI = js.native
   /** Start a request against /categories endpoint */
-  def categories(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def categories(): WPRequest = js.native
   /** Start a request against /comments endpoints */
-  def comments(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def comments(): WPRequest = js.native
   /** Start a request against /media endpoints */
-  def media(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def media(): WPRequest = js.native
   /**
     * Access API endpoint handlers from a particular API namespace object
     *
@@ -54,9 +54,9 @@ trait WPAPI
     */
   def namespace(namespace: java.lang.String): WPAPI = js.native
   /** Start a request against /pages endpoints */
-  def pages(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def pages(): WPRequest = js.native
   /** Start a request against /posts endpoints */
-  def posts(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def posts(): WPRequest = js.native
   /**
     * Create and return a handler for an arbitrary WP REST API endpoint.
     *
@@ -64,12 +64,8 @@ trait WPAPI
     * @param restBase A REST route string, e.g. '/author/(?P\d+)'
     * @param options An (optional) options object
     */
-  def registerRoute(namespace: java.lang.String, restBase: java.lang.String): wpapiLib.wpapiMod.WPAPINs.WPRequestFactory = js.native
-  def registerRoute(
-    namespace: java.lang.String,
-    restBase: java.lang.String,
-    options: wpapiLib.wpapiMod.WPAPINs.RegisterRouteOptions
-  ): wpapiLib.wpapiMod.WPAPINs.WPRequestFactory = js.native
+  def registerRoute(namespace: java.lang.String, restBase: java.lang.String): WPRequestFactory = js.native
+  def registerRoute(namespace: java.lang.String, restBase: java.lang.String, options: RegisterRouteOptions): WPRequestFactory = js.native
   /**
     * Generate a query against an arbitrary path on the current endpoint. This
     * is useful for requesting resources at custom WP-API endpoints, such as
@@ -77,8 +73,8 @@ trait WPAPI
     *
     * @param relativePath An endpoint-relative path to which to bind the request
     */
-  def root(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
-  def root(relativePath: java.lang.String): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def root(): WPRequest = js.native
+  def root(relativePath: java.lang.String): WPRequest = js.native
   /**
     * Set the default headers to use for all HTTP requests created from this
     * WPAPI site instance. Accepts a header name and its associated value as
@@ -86,9 +82,9 @@ trait WPAPI
     *
     * @param headers
     */
-  def setHeaders(headers: wpapiLib.wpapiMod.WPAPINs.HTTPHeaders): WPAPI = js.native
+  def setHeaders(headers: HTTPHeaders): WPAPI = js.native
   /** Start a request against /settings endpoints */
-  def settings(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def settings(): WPRequest = js.native
   /**
     * Convenience method for making a new WPAPI instance
     *
@@ -97,13 +93,13 @@ trait WPAPI
     * root API endpoint of a WP site, which should be a dictionary of route
     * definition objects keyed by the route's regex pattern
     */
-  def site(endpoint: java.lang.String, routes: wpapiLib.wpapiMod.WPAPINs.Routes): WPAPI = js.native
+  def site(endpoint: java.lang.String, routes: Routes): WPAPI = js.native
   /** Start a request against /statuses endpoints */
-  def statuses(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def statuses(): WPRequest = js.native
   /** Start a request against /tags endpoints */
-  def tags(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def tags(): WPRequest = js.native
   /** Start a request against /taxonomies endpoints */
-  def taxonomies(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def taxonomies(): WPRequest = js.native
   /**
     * Set custom transport methods to use when making HTTP requests against the
     * API.
@@ -120,9 +116,9 @@ trait WPAPI
     *
     * @param transport A dictionary of HTTP transport methods
     */
-  def transport(transport: wpapiLib.wpapiMod.WPAPINs.Transport): WPAPI = js.native
+  def transport(transport: Transport): WPAPI = js.native
   /** Start a request against /types endpoints */
-  def types(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def types(): WPRequest = js.native
   /**
     * Generate a request against a completely arbitrary endpoint, with no
     * assumptions about or mutation of path, filtering, or query parameters.
@@ -131,8 +127,8 @@ trait WPAPI
     *
     * @param url The URL to request
     */
-  def url(url: java.lang.String): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def url(url: java.lang.String): WPRequest = js.native
   /** Start a request against /users endpoints */
-  def users(): wpapiLib.wpapiMod.WPAPINs.WPRequest = js.native
+  def users(): WPRequest = js.native
 }
 

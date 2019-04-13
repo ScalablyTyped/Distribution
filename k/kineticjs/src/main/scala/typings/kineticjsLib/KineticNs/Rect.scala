@@ -11,3 +11,8 @@ class Rect protected () extends IRect {
   def this(config: RectConfig) = this()
 }
 
+@JSGlobal("Kinetic.Rect")
+@js.native
+object Rect
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ RectConfig, IRect]
+

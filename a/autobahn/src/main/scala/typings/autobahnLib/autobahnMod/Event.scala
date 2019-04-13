@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("autobahn", "Event")
 @js.native
-class Event ()
-  extends autobahnLib.autobahnMod.autobahnNs.Event {
+class Event () extends IEvent {
   def this(publication: scala.Double) = this()
   def this(publication: scala.Double, publisher: java.lang.String) = this()
   def this(publication: scala.Double, publisher: java.lang.String, topic: java.lang.String) = this()

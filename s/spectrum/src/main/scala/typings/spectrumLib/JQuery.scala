@@ -15,7 +15,7 @@ trait JQuery extends js.Object {
     events: spectrumLib.spectrumLibStrings.dragstartDOTspectrum,
     handler: js.Function2[
       /* eventObject */ jqueryLib.JQueryEventObject, 
-      /* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, 
+      /* color */ tinycolor2Lib.tinycolor2Mod.Instance, 
       _
     ]
   ): JQuery = js.native
@@ -27,7 +27,7 @@ trait JQuery extends js.Object {
     events: spectrumLib.spectrumLibStrings.dragstopDOTspectrum,
     handler: js.Function2[
       /* eventObject */ jqueryLib.JQueryEventObject, 
-      /* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, 
+      /* color */ tinycolor2Lib.tinycolor2Mod.Instance, 
       _
     ]
   ): JQuery = js.native
@@ -70,7 +70,7 @@ trait JQuery extends js.Object {
     * Gets the current value from the colorpicker.
     */
   @JSName("spectrum")
-  def spectrum_get(methodName: spectrumLib.spectrumLibStrings.get): tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance = js.native
+  def spectrum_get(methodName: spectrumLib.spectrumLibStrings.get): tinycolor2Lib.tinycolor2Mod.Instance = js.native
   /**
     * Hides the colorpicker.
     */

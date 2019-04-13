@@ -23,6 +23,6 @@ trait Anon_Default extends js.Object {
   	//=> 1.7453186
   	```
   	*/
-  def apply(): timeDashSpanLib.timeDashSpanMod.timeSpanNs.TimeEndFunction = js.native
+  def apply(): timeDashSpanLib.timeDashSpanMod.TimeEndFunction = js.native
 }
 

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-radio-group", "Radio")
 @js.native
 class Radio protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.RadioNs.RadioProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.RadioNs.RadioProps) = this()

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stack-mapper", "StackMapper")
 @js.native
-class StackMapper ()
-  extends stackDashMapperLib.stackDashMapperMod.stackMapperNs.StackMapper {
+class StackMapper () extends js.Object {
   /**
     * Maps the trace statements of the given error stack and replaces locations
     * referencing code in the generated file with the locations inside the original files.
@@ -21,7 +20,6 @@ class StackMapper ()
     *    - line: origial line in that filename of the trace
     *    - column: origial column on that line of the trace
     */
-  /* CompleteClass */
-  override def map(stack: js.Array[stackDashMapperLib.stackDashMapperMod.stackMapperNs.Callsite]): js.Array[stackDashMapperLib.stackDashMapperMod.stackMapperNs.Callsite] = js.native
+  def map(stack: js.Array[Callsite]): js.Array[Callsite] = js.native
 }
 

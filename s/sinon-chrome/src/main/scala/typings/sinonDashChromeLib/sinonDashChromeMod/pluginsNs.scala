@@ -9,16 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object pluginsNs extends js.Object {
   @js.native
-  class CookiePlugin ()
-    extends sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.pluginsNs.CookiePlugin {
+  class CookiePlugin () extends js.Object {
     def this(state: js.Array[chromeLib.chromeNs.cookiesNs.Cookie]) = this()
   }
   
   @js.native
-  class I18nPlugin ()
-    extends sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.pluginsNs.I18nPlugin {
-    def this(translations: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.pluginsNs.Translations) = this()
+  class I18nPlugin () extends js.Object {
+    def this(translations: Translations) = this()
   }
   
+  type Translations = org.scalablytyped.runtime.StringDictionary[sinonDashChromeLib.Anon_Description]
 }
 

@@ -24,28 +24,28 @@ object UtilsNs extends js.Object {
   def deepCompareKeys(objA: js.Any, objB: js.Any): scala.Boolean = js.native
   def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[java.lang.String]): scala.Boolean = js.native
   def elementIsOrContains(element: stdLib.HTMLElement, testElement: stdLib.HTMLElement): scala.Boolean = js.native
-  def ensureElement(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def ensureElement(): reactLib.reactMod.ReactElement[_] = js.native
   def ensureElement(
-    child: reactLib.reactMod.ReactNs.ReactNode | js.UndefOr[scala.Nothing],
+    child: reactLib.reactMod.ReactNode | js.UndefOr[scala.Nothing],
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def ensureElement(child: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement[_] = js.native
+  def ensureElement(child: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactElement[_] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[java.lang.String]): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDisplayName(ComponentClass: atBlueprintjsCoreLib.libEsmCommonUtilsMod.INamed): java.lang.String = js.native
-  def getDisplayName(ComponentClass: reactLib.reactMod.ReactNs.ComponentType[js.Object]): java.lang.String = js.native
+  def getDisplayName(ComponentClass: reactLib.reactMod.ComponentType[js.Object]): java.lang.String = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
   def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
-  def isElementOfType[P](element: js.Any, ComponentType: reactLib.reactMod.ReactNs.ComponentType[P]): /* is react.react.React.ReactElement<P> */ scala.Boolean = js.native
+  def isElementOfType[P](element: js.Any, ComponentType: reactLib.reactMod.ComponentType[P]): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
   def isNodeEnv(env: java.lang.String): scala.Boolean = js.native
-  def isReactElement[T](child: reactLib.reactMod.ReactNs.ReactNode): /* is react.react.React.ReactElement<T> */ scala.Boolean = js.native
+  def isReactElement[T](child: reactLib.reactMod.ReactNode): /* is react.react.ReactElement<T> */ scala.Boolean = js.native
   def isReactNodeEmpty(): scala.Boolean = js.native
-  def isReactNodeEmpty(node: reactLib.reactMod.ReactNs.ReactNode): scala.Boolean = js.native
-  def isReactNodeEmpty(node: reactLib.reactMod.ReactNs.ReactNode, skipArray: scala.Boolean): scala.Boolean = js.native
+  def isReactNodeEmpty(node: reactLib.reactMod.ReactNode): scala.Boolean = js.native
+  def isReactNodeEmpty(node: reactLib.reactMod.ReactNode, skipArray: scala.Boolean): scala.Boolean = js.native
   def safeInvoke[R](): js.UndefOr[R] = js.native
   def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = js.native
   def safeInvoke[A, R](func: js.Function1[/* arg1 */ A, R], arg1: A): js.UndefOr[R] = js.native
@@ -114,24 +114,18 @@ object UtilsNs extends js.Object {
   def throttleEvent(target: stdLib.EventTarget, eventName: java.lang.String, newEventName: java.lang.String): js.Function1[/* event */ stdLib.Event, scala.Unit] = js.native
   def throttleReactEventCallback(
     callback: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], 
       /* repeated */ js.Any, 
       _
     ]
-  ): js.Function1[
-    /* event2 */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
-    scala.Unit
-  ] = js.native
+  ): js.Function1[/* event2 */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], scala.Unit] = js.native
   def throttleReactEventCallback(
     callback: js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], 
       /* repeated */ js.Any, 
       _
     ],
     options: atBlueprintjsCoreLib.libEsmCommonUtilsMod.IThrottledReactEventOptions
-  ): js.Function1[
-    /* event2 */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
-    scala.Unit
-  ] = js.native
+  ): js.Function1[/* event2 */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], scala.Unit] = js.native
 }
 

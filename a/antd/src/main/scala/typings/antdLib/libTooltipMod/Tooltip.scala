@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Tooltip
   extends reactLib.reactMod.Component[TooltipProps, js.Any, js.Any] {
   var tooltip: js.Any = js.native
-  def getDisabledCompatibleChildren(element: reactLib.reactMod.ReactNs.ReactElement[_]): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def getDisabledCompatibleChildren(element: reactLib.reactMod.ReactElement[_]): reactLib.reactMod.Global.JSXNs.Element = js.native
   def getPlacements(): js.Any = js.native
   def getPopupDomNode(): js.Any = js.native
   def isNoTitle(): scala.Boolean = js.native

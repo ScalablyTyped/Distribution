@@ -15,3 +15,8 @@ class XMLSearchResult ()
   override val SearchResult: java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.XMLSearchResult")
+@js.native
+object XMLSearchResult
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IXMLSearchResult]
+

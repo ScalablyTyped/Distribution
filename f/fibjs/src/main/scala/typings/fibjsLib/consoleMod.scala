@@ -13,16 +13,16 @@ import scala.scalajs.js.annotation._
 @JSImport("console", JSImport.Namespace)
 @js.native
 object consoleMod extends js.Object {
-  val ALERT: /* 1 */ scala.Double = js.native
-  val CRIT: /* 2 */ scala.Double = js.native
-  val DEBUG: /* 7 */ scala.Double = js.native
-  val ERROR: /* 3 */ scala.Double = js.native
-  val FATAL: /* 0 */ scala.Double = js.native
-  val INFO: /* 6 */ scala.Double = js.native
-  val NOTICE: /* 5 */ scala.Double = js.native
-  val NOTSET: /* 10 */ scala.Double = js.native
-  val PRINT: /* 9 */ scala.Double = js.native
-  val WARN: /* 4 */ scala.Double = js.native
+  val ALERT: fibjsLib.fibjsLibNumbers.`1` = js.native
+  val CRIT: fibjsLib.fibjsLibNumbers.`2` = js.native
+  val DEBUG: fibjsLib.fibjsLibNumbers.`7` = js.native
+  val ERROR: fibjsLib.fibjsLibNumbers.`3` = js.native
+  val FATAL: fibjsLib.fibjsLibNumbers.`0` = js.native
+  val INFO: fibjsLib.fibjsLibNumbers.`6` = js.native
+  val NOTICE: fibjsLib.fibjsLibNumbers.`5` = js.native
+  val NOTSET: fibjsLib.fibjsLibNumbers.`10` = js.native
+  val PRINT: fibjsLib.fibjsLibNumbers.`9` = js.native
+  val WARN: fibjsLib.fibjsLibNumbers.`4` = js.native
   val height: scala.Double = js.native
   val loglevel: scala.Double = js.native
   val width: scala.Double = js.native

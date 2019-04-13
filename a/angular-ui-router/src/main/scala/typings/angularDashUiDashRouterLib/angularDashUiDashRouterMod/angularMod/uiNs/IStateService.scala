@@ -14,7 +14,7 @@ trait IStateService extends js.Object {
   /** A param object, e.g. {sectionId: section.id)}, that you'd like to test against the current active state. */
   var params: IStateParamsService = js.native
   /** Currently pending transition. A promise that'll resolve or reject. */
-  var transition: angularLib.angularMod.angularNs.IPromise[js.Object] = js.native
+  var transition: angularLib.angularMod.IPromise[js.Object] = js.native
   def get(): js.Array[IState] = js.native
   def get(state: IState): IState = js.native
   def get(state: IState, context: IState): IState = js.native
@@ -22,9 +22,9 @@ trait IStateService extends js.Object {
   def get(state: java.lang.String): IState = js.native
   def get(state: java.lang.String, context: IState): IState = js.native
   def get(state: java.lang.String, context: java.lang.String): IState = js.native
-  def go(to: IState): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def go(to: IState, params: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def go(to: IState, params: js.Object, options: IStateOptions): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def go(to: IState): angularLib.angularMod.IPromise[_] = js.native
+  def go(to: IState, params: js.Object): angularLib.angularMod.IPromise[_] = js.native
+  def go(to: IState, params: js.Object, options: IStateOptions): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Convenience method for transitioning to a new state. $state.go calls $state.transitionTo internally but automatically sets options to { location: true, inherit: true, relative: $state.$current, notify: true }. This allows you to easily use an absolute or relative to path and specify only the parameters you'd like to update (while letting unspecified parameters inherit from the currently active ancestor states).
     *
@@ -39,9 +39,9 @@ trait IStateService extends js.Object {
     *
     * @param options Options object.
     */
-  def go(to: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def go(to: java.lang.String, params: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def go(to: java.lang.String, params: js.Object, options: IStateOptions): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def go(to: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def go(to: java.lang.String, params: js.Object): angularLib.angularMod.IPromise[_] = js.native
+  def go(to: java.lang.String, params: js.Object, options: IStateOptions): angularLib.angularMod.IPromise[_] = js.native
   def href(state: IState): java.lang.String = js.native
   def href(state: IState, params: js.Object): java.lang.String = js.native
   def href(state: IState, params: js.Object, options: IHrefOptions): java.lang.String = js.native
@@ -55,16 +55,16 @@ trait IStateService extends js.Object {
   def is(state: IState, params: js.Object): scala.Boolean = js.native
   def is(state: java.lang.String): scala.Boolean = js.native
   def is(state: java.lang.String, params: js.Object): scala.Boolean = js.native
-  def reload(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def reload(reloadState: IState): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def reload(reloadState: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: IState): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: IState, params: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: IState, params: js.Object, options: IStateOptions): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: IState, params: js.Object, updateLocation: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: java.lang.String, params: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: java.lang.String, params: js.Object, options: IStateOptions): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def transitionTo(state: java.lang.String, params: js.Object, updateLocation: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def reload(): angularLib.angularMod.IPromise[_] = js.native
+  def reload(reloadState: IState): angularLib.angularMod.IPromise[_] = js.native
+  def reload(reloadState: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: IState): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: IState, params: js.Object): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: IState, params: js.Object, options: IStateOptions): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: IState, params: js.Object, updateLocation: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: java.lang.String, params: js.Object): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: java.lang.String, params: js.Object, options: IStateOptions): angularLib.angularMod.IPromise[_] = js.native
+  def transitionTo(state: java.lang.String, params: js.Object, updateLocation: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
 }
 

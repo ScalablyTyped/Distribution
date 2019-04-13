@@ -21,6 +21,7 @@ package object libTransitionInterfaceMod {
     atUirouterCoreLib.libStateStateObjectMod.StateObject, 
     atUirouterCoreLib.libTransitionTransitionMod.Transition
   ]
+  type RegisteredHooks = org.scalablytyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libTransitionHookRegistryMod.RegisteredHook]]
   type TransitionCreateHookFn = js.Function1[
     /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
     scala.Unit

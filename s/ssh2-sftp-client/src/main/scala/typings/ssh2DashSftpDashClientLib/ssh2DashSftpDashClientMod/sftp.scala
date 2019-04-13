@@ -28,7 +28,7 @@ trait sftp extends js.Object {
   def get(remoteFilePath: java.lang.String): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native
   def get(remoteFilePath: java.lang.String, useCompression: scala.Boolean): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native
   def get(remoteFilePath: java.lang.String, useCompression: scala.Boolean, encoding: java.lang.String): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native
-  def list(remoteFilePath: java.lang.String): js.Promise[js.Array[ssh2DashSftpDashClientLib.ssh2DashSftpDashClientMod.sftpNs.FileInfo]] = js.native
+  def list(remoteFilePath: java.lang.String): js.Promise[js.Array[FileInfo]] = js.native
   def mkdir(remoteFilePath: java.lang.String): js.Promise[scala.Unit] = js.native
   def mkdir(remoteFilePath: java.lang.String, recursive: scala.Boolean): js.Promise[scala.Unit] = js.native
   def on(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
@@ -63,6 +63,6 @@ trait sftp extends js.Object {
   def rename(remoteSourcePath: java.lang.String, remoteDestPath: java.lang.String): js.Promise[scala.Unit] = js.native
   def rmdir(remoteFilePath: java.lang.String): js.Promise[scala.Unit] = js.native
   def rmdir(remoteFilePath: java.lang.String, recursive: scala.Boolean): js.Promise[scala.Unit] = js.native
-  def stat(remotePath: java.lang.String): js.Promise[ssh2DashSftpDashClientLib.ssh2DashSftpDashClientMod.sftpNs.FileStats] = js.native
+  def stat(remotePath: java.lang.String): js.Promise[FileStats] = js.native
 }
 

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - atAngularCompilerLib.Anon_TagName
-  - atAngularCompilerLib.Anon_TagNameText
-*/
-trait JSDocTag extends js.Object
+@js.native
+trait JSDocTag extends js.Object {
+  var tagName: js.UndefOr[JSDocTagName | scala.Nothing | java.lang.String] = js.native
+  var text: js.UndefOr[java.lang.String] = js.native
+}
 

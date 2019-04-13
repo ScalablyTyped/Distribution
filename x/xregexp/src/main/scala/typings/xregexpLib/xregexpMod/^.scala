@@ -40,7 +40,7 @@ object ^ extends js.Object {
       /* scope */ java.lang.String, 
       java.lang.String
     ],
-    options: xregexpLib.xregexpMod.OuterXRegExpNs.TokenOpts
+    options: TokenOpts
   ): scala.Unit = js.native
   def build(pattern: java.lang.String, subs: js.Array[java.lang.String]): stdLib.RegExp = js.native
   def build(pattern: java.lang.String, subs: js.Array[java.lang.String], flags: java.lang.String): stdLib.RegExp = js.native

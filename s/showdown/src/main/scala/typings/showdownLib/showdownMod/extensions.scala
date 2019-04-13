@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("showdown", "extensions")
 @js.native
 object extensions
-  extends /* name */ org.scalablytyped.runtime.StringDictionary[showdownLib.showdownMod.ShowdownNs.ShowdownExtension]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[ShowdownExtension]
 

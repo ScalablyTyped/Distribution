@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@feathersjs/errors/not-found", JSImport.Namespace)
 @js.native
 object notDashFoundMod extends js.Object {
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
 }
 

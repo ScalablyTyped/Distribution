@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props
-  extends daterangepickerLib.daterangepickerMod.daterangepickerNs.Options {
+  extends daterangepickerLib.daterangepickerMod.Options {
   var containerClass: js.UndefOr[java.lang.String] = js.undefined
-  var containerStyles: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyles: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var onApply: js.UndefOr[EventHandler] = js.undefined
   var onCancel: js.UndefOr[EventHandler] = js.undefined
   var onEvent: js.UndefOr[EventHandler] = js.undefined
@@ -28,17 +28,17 @@ object Props {
     buttonClasses: js.Array[java.lang.String] = null,
     cancelButtonClasses: java.lang.String = null,
     containerClass: java.lang.String = null,
-    containerStyles: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyles: reactLib.reactMod.CSSProperties = null,
     drops: daterangepickerLib.daterangepickerLibStrings.down | daterangepickerLib.daterangepickerLibStrings.up = null,
-    endDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString = null,
-    isCustomDate: /* date */ daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString => js.UndefOr[java.lang.String | js.Array[java.lang.String]] = null,
-    isInvalidDate: (/* startDate */ daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString, /* endDate */ js.UndefOr[daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString]) => scala.Boolean = null,
+    endDate: daterangepickerLib.daterangepickerMod.DateOrString = null,
+    isCustomDate: /* date */ daterangepickerLib.daterangepickerMod.DateOrString => js.UndefOr[java.lang.String | js.Array[java.lang.String]] = null,
+    isInvalidDate: (/* startDate */ daterangepickerLib.daterangepickerMod.DateOrString, /* endDate */ js.UndefOr[daterangepickerLib.daterangepickerMod.DateOrString]) => scala.Boolean = null,
     linkedCalendars: js.UndefOr[scala.Boolean] = js.undefined,
-    locale: daterangepickerLib.daterangepickerMod.daterangepickerNs.Locale = null,
-    maxDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString = null,
-    maxSpan: momentLib.momentMod.momentNs.MomentInput | momentLib.momentMod.momentNs.Duration = null,
+    locale: daterangepickerLib.daterangepickerMod.Locale = null,
+    maxDate: daterangepickerLib.daterangepickerMod.DateOrString = null,
+    maxSpan: momentLib.momentMod.MomentInput | momentLib.momentMod.Duration = null,
     maxYear: scala.Int | scala.Double = null,
-    minDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString = null,
+    minDate: daterangepickerLib.daterangepickerMod.DateOrString = null,
     minYear: scala.Int | scala.Double = null,
     onApply: EventHandler = null,
     onCancel: EventHandler = null,
@@ -51,8 +51,8 @@ object Props {
     parentEl: java.lang.String = null,
     ranges: org.scalablytyped.runtime.StringDictionary[
       js.Tuple2[
-        daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString, 
-        daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString
+        daterangepickerLib.daterangepickerMod.DateOrString, 
+        daterangepickerLib.daterangepickerMod.DateOrString
       ]
     ] = null,
     showCustomRangeLabel: js.UndefOr[scala.Boolean] = js.undefined,
@@ -60,7 +60,7 @@ object Props {
     showISOWeekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     showWeekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     singleDatePicker: js.UndefOr[scala.Boolean] = js.undefined,
-    startDate: daterangepickerLib.daterangepickerMod.daterangepickerNs.DateOrString = null,
+    startDate: daterangepickerLib.daterangepickerMod.DateOrString = null,
     timePicker: js.UndefOr[scala.Boolean] = js.undefined,
     timePicker24Hour: js.UndefOr[scala.Boolean] = js.undefined,
     timePickerIncrement: scala.Int | scala.Double = null,

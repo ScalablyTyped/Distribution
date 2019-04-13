@@ -34,7 +34,7 @@ class GitHubApi protected ()
       typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.created | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.updated | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.comments
     ],
     ascending: js.UndefOr[scala.Boolean],
-    updatedSince: js.UndefOr[momentLib.momentMod.momentNs.Moment]
+    updatedSince: js.UndefOr[momentLib.momentMod.Moment]
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]] = js.native
   def loadMyOrganizationsAsync(): js.Promise[js.Array[typedDashGithubDashApiLib.distOrganizationMod.OrganizationSummaryClass]] = js.native
   def loadMyRepositoriesAsync(

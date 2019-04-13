@@ -19,12 +19,12 @@ trait KarmaWebpackMiddlewareOptions extends js.Object {
   var publicPath: js.UndefOr[java.lang.String] = js.undefined
   var quiet: js.UndefOr[scala.Boolean] = js.undefined
   var reporter: js.UndefOr[
-    webpackDashDevDashMiddlewareLib.webpackDashDevDashMiddlewareMod.WebpackDevMiddlewareNs.Reporter | scala.Null
+    webpackDashDevDashMiddlewareLib.webpackDashDevDashMiddlewareMod.Reporter | scala.Null
   ] = js.undefined
   var serverSideRender: js.UndefOr[scala.Boolean] = js.undefined
-  var stats: js.UndefOr[webpackLib.webpackMod.webpackNs.OptionsNs.Stats] = js.undefined
+  var stats: js.UndefOr[webpackLib.webpackMod.OptionsNs.Stats] = js.undefined
   var warn: js.UndefOr[Logger] = js.undefined
-  var watchOptions: js.UndefOr[webpackLib.webpackMod.webpackNs.OptionsNs.WatchOptions] = js.undefined
+  var watchOptions: js.UndefOr[webpackLib.webpackMod.OptionsNs.WatchOptions] = js.undefined
 }
 
 object KarmaWebpackMiddlewareOptions {
@@ -39,11 +39,11 @@ object KarmaWebpackMiddlewareOptions {
     noInfo: js.UndefOr[scala.Boolean] = js.undefined,
     publicPath: java.lang.String = null,
     quiet: js.UndefOr[scala.Boolean] = js.undefined,
-    reporter: webpackDashDevDashMiddlewareLib.webpackDashDevDashMiddlewareMod.WebpackDevMiddlewareNs.Reporter = null,
+    reporter: webpackDashDevDashMiddlewareLib.webpackDashDevDashMiddlewareMod.Reporter = null,
     serverSideRender: js.UndefOr[scala.Boolean] = js.undefined,
-    stats: webpackLib.webpackMod.webpackNs.OptionsNs.Stats = null,
+    stats: webpackLib.webpackMod.OptionsNs.Stats = null,
     warn: Logger = null,
-    watchOptions: webpackLib.webpackMod.webpackNs.OptionsNs.WatchOptions = null
+    watchOptions: webpackLib.webpackMod.OptionsNs.WatchOptions = null
   ): KarmaWebpackMiddlewareOptions = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error)

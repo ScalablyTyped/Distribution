@@ -13,7 +13,7 @@ trait TabBarItemProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var selected: js.UndefOr[scala.Boolean] = js.undefined
   var selectedIcon: js.UndefOr[TabIcon] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var title: java.lang.String
 }
 
@@ -28,7 +28,7 @@ object TabBarItemProps {
     prefixCls: java.lang.String = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     selectedIcon: TabIcon = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TabBarItemProps = {
     val __obj = js.Dynamic.literal(title = title)
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])

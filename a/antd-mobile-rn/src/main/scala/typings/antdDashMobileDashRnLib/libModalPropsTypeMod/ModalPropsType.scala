@@ -17,7 +17,7 @@ trait ModalPropsType[T] extends js.Object {
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var operation: js.UndefOr[scala.Boolean] = js.undefined
   var popup: js.UndefOr[scala.Boolean] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var transparent: js.UndefOr[scala.Boolean] = js.undefined
   var visible: scala.Boolean
 }
@@ -37,7 +37,7 @@ object ModalPropsType {
     onClose: () => scala.Unit = null,
     operation: js.UndefOr[scala.Boolean] = js.undefined,
     popup: js.UndefOr[scala.Boolean] = js.undefined,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined
   ): ModalPropsType[T] = {
     val __obj = js.Dynamic.literal(visible = visible)

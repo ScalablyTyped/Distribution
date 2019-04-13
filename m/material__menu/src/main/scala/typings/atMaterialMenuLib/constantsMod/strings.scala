@@ -19,10 +19,11 @@ object strings {
     ARIA_DISABLED_ATTR: atMaterialMenuLib.atMaterialMenuLibStrings.`aria-disabled`,
     CANCEL_EVENT: atMaterialMenuLib.atMaterialMenuLibStrings.`MDCMenu:cancel`,
     ITEMS_SELECTOR: atMaterialMenuLib.atMaterialMenuLibStrings.`DOTmdc-menu__items`,
-    SELECTED_EVENT: atMaterialMenuLib.atMaterialMenuLibStrings.`MDCMenu:selected`
+    SELECTED_EVENT: atMaterialMenuLib.atMaterialMenuLibStrings.`MDCMenu:selected`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(ARIA_DISABLED_ATTR = ARIA_DISABLED_ATTR, CANCEL_EVENT = CANCEL_EVENT, ITEMS_SELECTOR = ITEMS_SELECTOR, SELECTED_EVENT = SELECTED_EVENT)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

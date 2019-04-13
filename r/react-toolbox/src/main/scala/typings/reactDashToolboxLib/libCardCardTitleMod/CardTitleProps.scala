@@ -10,15 +10,15 @@ trait CardTitleProps
   /**
     * A string URL or Element to specify an avatar in the left side of the title.
     */
-  var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var avatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Text used for the sub header of the card.
     */
-  var subtitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var subtitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Classnames object defining the component style.
     */
@@ -26,16 +26,16 @@ trait CardTitleProps
   /**
     * Text used for the title of the card.
     */
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object CardTitleProps {
   @scala.inline
   def apply(
-    avatar: reactLib.reactMod.ReactNs.ReactNode = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    avatar: reactLib.reactMod.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -58,10 +58,10 @@ object CardTitleProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    subtitle: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    subtitle: reactLib.reactMod.ReactNode = null,
     theme: CardTitleTheme = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): CardTitleProps = {
     val __obj = js.Dynamic.literal()
     if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])

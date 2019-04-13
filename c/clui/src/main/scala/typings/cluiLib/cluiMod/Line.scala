@@ -23,7 +23,7 @@ class Line () extends js.Object {
   def column(
     text: java.lang.String,
     width: scala.Double,
-    styles: js.Array[cliDashColorLib.cliDashColorMod.mNs.Format]
+    styles: js.Array[cliDashColorLib.cliDashColorMod.Format]
   ): Line = js.native
   /**
     * Return the contents of this line as a string

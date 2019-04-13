@@ -16,9 +16,9 @@ class VerticalAlignTopOutlined protected ()
 @JSImport("@material-ui/icons", "VerticalAlignTopOutlined")
 @js.native
 class VerticalAlignTopOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

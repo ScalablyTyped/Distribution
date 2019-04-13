@@ -20,11 +20,11 @@ trait TabBarBottomProps extends js.Object {
   var showLabel: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
   var tabStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
-  def getLabel(scene: TabScene): reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+  def getLabel(scene: TabScene): reactLib.reactMod.ReactNode | java.lang.String
   def getOnPress(previousScene: NavigationRoute[NavigationParams], scene: TabScene): js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit]
   def getTestIDProps(scene: TabScene): js.Function1[/* scene */ TabScene, _]
   def jumpToIndex(index: scala.Double): scala.Unit
-  def renderIcon(scene: TabScene): reactLib.reactMod.ReactNs.ReactNode
+  def renderIcon(scene: TabScene): reactLib.reactMod.ReactNode
 }
 
 object TabBarBottomProps {
@@ -33,7 +33,7 @@ object TabBarBottomProps {
     activeBackgroundColor: java.lang.String,
     activeTintColor: java.lang.String,
     allowFontScaling: scala.Boolean,
-    getLabel: TabScene => reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
+    getLabel: TabScene => reactLib.reactMod.ReactNode | java.lang.String,
     getOnPress: (NavigationRoute[NavigationParams], TabScene) => js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit],
     getTestIDProps: TabScene => js.Function1[/* scene */ TabScene, _],
     inactiveBackgroundColor: java.lang.String,
@@ -41,7 +41,7 @@ object TabBarBottomProps {
     jumpToIndex: scala.Double => scala.Unit,
     navigation: NavigationScreenProp[NavigationState, NavigationParams],
     position: AnimatedValue,
-    renderIcon: TabScene => reactLib.reactMod.ReactNs.ReactNode,
+    renderIcon: TabScene => reactLib.reactMod.ReactNode,
     adaptive: js.UndefOr[scala.Boolean] = js.undefined,
     animateStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null,

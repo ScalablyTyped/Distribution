@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Bluebird[R]
   extends stdLib.PromiseLike[R]
-     with cypressLib.typesBluebirdMod.BluebirdNs.Inspection[R] {
+     with Inspection[R] {
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
@@ -22,7 +22,7 @@ trait Bluebird[R]
   def asCallback(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], scala.Unit]): this.type = js.native
   def asCallback(
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], scala.Unit],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.SpreadOption
+    options: SpreadOption
   ): this.type = js.native
   def asCallback(sink: js.Any*): this.type = js.native
   /**
@@ -1214,7 +1214,7 @@ trait Bluebird[R]
     */
   def disposer(
     disposeFn: js.Function2[/* arg */ R, /* promise */ Bluebird[R], scala.Unit | js.Thenable[scala.Unit]]
-  ): cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R] = js.native
+  ): Disposer[R] = js.native
   /**
     * Like `.then()`, but any unhandled rejection that ends up here will be thrown as an error.
     */
@@ -1258,7 +1258,7 @@ trait Bluebird[R]
       /* arrayLength */ scala.Double, 
       scala.Boolean | js.Thenable[scala.Boolean]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.ConcurrencyOption
+    options: ConcurrencyOption
   ): Bluebird[js.Array[U]] = js.native
   /**
     * Pass a handler that will be called regardless of this promise's fate. Returns a new promise chained from this promise.
@@ -1302,7 +1302,7 @@ trait Bluebird[R]
       /* arrayLength */ scala.Double, 
       U | js.Thenable[U]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.ConcurrencyOption
+    options: ConcurrencyOption
   ): Bluebird[js.Array[U]] = js.native
   /**
     * Same as calling ``Bluebird.mapSeries(thisPromise, iterator)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
@@ -1326,10 +1326,10 @@ trait Bluebird[R]
   def nodeify(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], scala.Unit]): this.type = js.native
   def nodeify(
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], scala.Unit],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.SpreadOption
+    options: SpreadOption
   ): this.type = js.native
   def nodeify(sink: js.Any*): this.type = js.native
-  def props[T](`this`: js.Thenable[cypressLib.typesBluebirdMod.BluebirdNs.ResolvableProps[T]]): Bluebird[T] = js.native
+  def props[T](`this`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = js.native
   /**
     * Same as calling `Promise.props(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
@@ -1367,7 +1367,7 @@ trait Bluebird[R]
     * Synchronously inspect the state of this `promise`. The `PromiseInspection` will represent the state of
     * the promise as snapshotted at the time of calling `.reflect()`.
     */
-  def reflect(): Bluebird[cypressLib.typesBluebirdMod.BluebirdNs.Inspection[R]] = js.native
+  def reflect(): Bluebird[Inspection[R]] = js.native
   /**
     * Convenience method for:
     *

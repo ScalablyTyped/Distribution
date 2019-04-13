@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/dom", JSImport.Namespace)
 @js.native
 object libDomMod extends js.Object {
-  val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
+  val DATA_PORTAL_ATTRIBUTE: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-portal-element` = js.native
   def elementContains(): scala.Boolean = js.native
   def elementContains(parent: scala.Null, child: scala.Null, allowVirtualParents: scala.Boolean): scala.Boolean = js.native
   def elementContains(parent: scala.Null, child: stdLib.HTMLElement): scala.Boolean = js.native

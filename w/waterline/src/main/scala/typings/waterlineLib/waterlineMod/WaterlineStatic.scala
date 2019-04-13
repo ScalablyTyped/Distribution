@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WaterlineStatic
-  extends org.scalablytyped.runtime.Instantiable0[waterlineLib.waterlineMod.WaterlineNs.Waterline] {
+  extends org.scalablytyped.runtime.Instantiable0[Waterline] {
   var Collection: waterlineLib.Anon_Extend = js.native
 }
 

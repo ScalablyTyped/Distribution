@@ -24,9 +24,9 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(patterns: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
-  def apply(patterns: java.lang.String, options: delLib.delMod.delNs.Options): js.Promise[js.Array[java.lang.String]] = js.native
+  def apply(patterns: java.lang.String, options: delLib.delMod.Options): js.Promise[js.Array[java.lang.String]] = js.native
   def apply(patterns: js.Array[java.lang.String]): js.Promise[js.Array[java.lang.String]] = js.native
-  def apply(patterns: js.Array[java.lang.String], options: delLib.delMod.delNs.Options): js.Promise[js.Array[java.lang.String]] = js.native
+  def apply(patterns: js.Array[java.lang.String], options: delLib.delMod.Options): js.Promise[js.Array[java.lang.String]] = js.native
   /**
   	Synchronously delete files and folders using glob patterns.
   	@param patterns - See supported minimatch [patterns](https://github.com/isaacs/minimatch#usage).
@@ -36,8 +36,8 @@ trait Anon_Default extends js.Object {
   	@returns An array of deleted paths.
   	*/
   def sync(patterns: java.lang.String): js.Array[java.lang.String] = js.native
-  def sync(patterns: java.lang.String, options: delLib.delMod.delNs.Options): js.Array[java.lang.String] = js.native
+  def sync(patterns: java.lang.String, options: delLib.delMod.Options): js.Array[java.lang.String] = js.native
   def sync(patterns: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def sync(patterns: js.Array[java.lang.String], options: delLib.delMod.delNs.Options): js.Array[java.lang.String] = js.native
+  def sync(patterns: js.Array[java.lang.String], options: delLib.delMod.Options): js.Array[java.lang.String] = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Nightmare extends js.Object {
-  val cookies: nightmareLib.nightmareMod.NightmareNs.Cookies = js.native
+  val cookies: Cookies = js.native
   // Settings
   def authentication(user: java.lang.String, password: java.lang.String): Nightmare = js.native
   def back(): Nightmare = js.native
@@ -84,7 +84,7 @@ trait Nightmare extends js.Object {
     event: nightmareLib.nightmareLibStrings.error,
     cb: js.Function2[
       /* msg */ java.lang.String, 
-      /* trace */ js.UndefOr[js.Array[nightmareLib.nightmareMod.NightmareNs.IStackTrace]], 
+      /* trace */ js.UndefOr[js.Array[IStackTrace]], 
       scala.Unit
     ]
   ): Nightmare = js.native
@@ -120,24 +120,17 @@ trait Nightmare extends js.Object {
   @JSName("on")
   def on_resourceError(
     event: nightmareLib.nightmareLibStrings.resourceError,
-    cb: js.Function1[
-      /* resourceError */ nightmareLib.nightmareMod.NightmareNs.IResourceError, 
-      scala.Unit
-    ]
+    cb: js.Function1[/* resourceError */ IResourceError, scala.Unit]
   ): Nightmare = js.native
   @JSName("on")
   def on_resourceReceived(
     event: nightmareLib.nightmareLibStrings.resourceReceived,
-    cb: js.Function1[/* response */ nightmareLib.nightmareMod.NightmareNs.IResponse, scala.Unit]
+    cb: js.Function1[/* response */ IResponse, scala.Unit]
   ): Nightmare = js.native
   @JSName("on")
   def on_resourceRequested(
     event: nightmareLib.nightmareLibStrings.resourceRequested,
-    cb: js.Function2[
-      /* requestData */ nightmareLib.nightmareMod.NightmareNs.IRequest, 
-      /* networkRequest */ nightmareLib.nightmareMod.NightmareNs.INetwordRequest, 
-      scala.Unit
-    ]
+    cb: js.Function2[/* requestData */ IRequest, /* networkRequest */ INetwordRequest, scala.Unit]
   ): Nightmare = js.native
   @JSName("on")
   def on_timeout(
@@ -175,7 +168,7 @@ trait Nightmare extends js.Object {
     event: nightmareLib.nightmareLibStrings.error,
     cb: js.Function2[
       /* msg */ java.lang.String, 
-      /* trace */ js.UndefOr[js.Array[nightmareLib.nightmareMod.NightmareNs.IStackTrace]], 
+      /* trace */ js.UndefOr[js.Array[IStackTrace]], 
       scala.Unit
     ]
   ): Nightmare = js.native
@@ -211,24 +204,17 @@ trait Nightmare extends js.Object {
   @JSName("once")
   def once_resourceError(
     event: nightmareLib.nightmareLibStrings.resourceError,
-    cb: js.Function1[
-      /* resourceError */ nightmareLib.nightmareMod.NightmareNs.IResourceError, 
-      scala.Unit
-    ]
+    cb: js.Function1[/* resourceError */ IResourceError, scala.Unit]
   ): Nightmare = js.native
   @JSName("once")
   def once_resourceReceived(
     event: nightmareLib.nightmareLibStrings.resourceReceived,
-    cb: js.Function1[/* response */ nightmareLib.nightmareMod.NightmareNs.IResponse, scala.Unit]
+    cb: js.Function1[/* response */ IResponse, scala.Unit]
   ): Nightmare = js.native
   @JSName("once")
   def once_resourceRequested(
     event: nightmareLib.nightmareLibStrings.resourceRequested,
-    cb: js.Function2[
-      /* requestData */ nightmareLib.nightmareMod.NightmareNs.IRequest, 
-      /* networkRequest */ nightmareLib.nightmareMod.NightmareNs.INetwordRequest, 
-      scala.Unit
-    ]
+    cb: js.Function2[/* requestData */ IRequest, /* networkRequest */ INetwordRequest, scala.Unit]
   ): Nightmare = js.native
   @JSName("once")
   def once_timeout(
@@ -271,7 +257,7 @@ trait Nightmare extends js.Object {
     event: nightmareLib.nightmareLibStrings.error,
     cb: js.Function2[
       /* msg */ java.lang.String, 
-      /* trace */ js.UndefOr[js.Array[nightmareLib.nightmareMod.NightmareNs.IStackTrace]], 
+      /* trace */ js.UndefOr[js.Array[IStackTrace]], 
       scala.Unit
     ]
   ): Nightmare = js.native
@@ -307,24 +293,17 @@ trait Nightmare extends js.Object {
   @JSName("removeListener")
   def removeListener_resourceError(
     event: nightmareLib.nightmareLibStrings.resourceError,
-    cb: js.Function1[
-      /* resourceError */ nightmareLib.nightmareMod.NightmareNs.IResourceError, 
-      scala.Unit
-    ]
+    cb: js.Function1[/* resourceError */ IResourceError, scala.Unit]
   ): Nightmare = js.native
   @JSName("removeListener")
   def removeListener_resourceReceived(
     event: nightmareLib.nightmareLibStrings.resourceReceived,
-    cb: js.Function1[/* response */ nightmareLib.nightmareMod.NightmareNs.IResponse, scala.Unit]
+    cb: js.Function1[/* response */ IResponse, scala.Unit]
   ): Nightmare = js.native
   @JSName("removeListener")
   def removeListener_resourceRequested(
     event: nightmareLib.nightmareLibStrings.resourceRequested,
-    cb: js.Function2[
-      /* requestData */ nightmareLib.nightmareMod.NightmareNs.IRequest, 
-      /* networkRequest */ nightmareLib.nightmareMod.NightmareNs.INetwordRequest, 
-      scala.Unit
-    ]
+    cb: js.Function2[/* requestData */ IRequest, /* networkRequest */ INetwordRequest, scala.Unit]
   ): Nightmare = js.native
   @JSName("removeListener")
   def removeListener_timeout(

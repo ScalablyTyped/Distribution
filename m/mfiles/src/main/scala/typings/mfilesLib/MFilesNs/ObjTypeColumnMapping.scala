@@ -27,3 +27,8 @@ class ObjTypeColumnMapping ()
   override def Clone(): mfilesLib.IObjectTypeColumnMapping = js.native
 }
 
+@JSGlobal("MFiles.ObjTypeColumnMapping")
+@js.native
+object ObjTypeColumnMapping
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectTypeColumnMapping]
+

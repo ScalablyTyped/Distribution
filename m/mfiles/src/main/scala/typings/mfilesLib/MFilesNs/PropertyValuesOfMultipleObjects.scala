@@ -17,3 +17,8 @@ class PropertyValuesOfMultipleObjects ()
   override def Item(Index: scala.Double): mfilesLib.IPropertyValues = js.native
 }
 
+@JSGlobal("MFiles.PropertyValuesOfMultipleObjects")
+@js.native
+object PropertyValuesOfMultipleObjects
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValuesOfMultipleObjects]
+

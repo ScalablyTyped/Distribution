@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StrictDropdownProps extends js.Object {
   /** Label prefixed to an option added by a user. */
-  var additionLabel: js.UndefOr[scala.Double | java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var additionLabel: js.UndefOr[scala.Double | java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   /** Position of the `Add: ...` option in the dropdown list ('top' or 'bottom'). */
   var additionPosition: js.UndefOr[
     semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom
@@ -24,7 +24,7 @@ trait StrictDropdownProps extends js.Object {
   /** Format the Dropdown to appear as a button. */
   var button: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Using the clearable setting will let users remove their selection from a dropdown. */
@@ -66,7 +66,7 @@ trait StrictDropdownProps extends js.Object {
   /** A dropdown can take the full width of its parent */
   var fluid: js.UndefOr[scala.Boolean] = js.undefined
   /** A dropdown menu can contain a header. */
-  var header: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var header: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Shorthand for Icon. */
   var icon: js.UndefOr[js.Any] = js.undefined
   /** A dropdown can be formatted to appear inline in other content. */
@@ -84,7 +84,7 @@ trait StrictDropdownProps extends js.Object {
   /** A selection dropdown can allow multiple selections. */
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   /** Message to display when there are no results. */
-  var noResultsMessage: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var noResultsMessage: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Called when a user adds a new item. Use this to update the options list.
     *
@@ -93,7 +93,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onAddItem: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
+      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -106,7 +106,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
+      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -119,7 +119,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -132,7 +132,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
+      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -145,7 +145,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -158,7 +158,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onFocus: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -171,7 +171,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onLabelClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps, 
       scala.Unit
     ]
@@ -184,7 +184,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -197,7 +197,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onOpen: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -210,7 +210,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onSearchChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownOnSearchChangeData, 
       scala.Unit
     ]
@@ -284,7 +284,7 @@ trait StrictDropdownProps extends js.Object {
   /** The text displayed in the dropdown, usually for the active item. */
   var text: js.UndefOr[java.lang.String] = js.undefined
   /** Custom element to trigger the menu to become visible. Takes place of 'text'. */
-  var trigger: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var trigger: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Controls whether the dropdown will open upward. */
   var upward: js.UndefOr[scala.Boolean] = js.undefined
   /** Current value or value array if multiple. Creates a controlled component. */
@@ -301,13 +301,13 @@ trait StrictDropdownProps extends js.Object {
 object StrictDropdownProps {
   @scala.inline
   def apply(
-    additionLabel: scala.Double | java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    additionLabel: scala.Double | java.lang.String | reactLib.reactMod.ReactNode = null,
     additionPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom = null,
     allowAdditions: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
     basic: js.UndefOr[scala.Boolean] = js.undefined,
     button: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     clearable: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
@@ -324,7 +324,7 @@ object StrictDropdownProps {
     error: js.UndefOr[scala.Boolean] = js.undefined,
     floating: js.UndefOr[scala.Boolean] = js.undefined,
     fluid: js.UndefOr[scala.Boolean] = js.undefined,
-    header: reactLib.reactMod.ReactNs.ReactNode = null,
+    header: reactLib.reactMod.ReactNode = null,
     icon: js.Any = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     item: js.UndefOr[scala.Boolean] = js.undefined,
@@ -333,17 +333,17 @@ object StrictDropdownProps {
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     minCharacters: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    noResultsMessage: reactLib.reactMod.ReactNs.ReactNode = null,
-    onAddItem: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* data */ DropdownProps) => scala.Unit = null,
-    onBlur: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* data */ DropdownProps) => scala.Unit = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* data */ DropdownProps) => scala.Unit = null,
-    onClose: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
-    onFocus: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
-    onLabelClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps) => scala.Unit = null,
-    onMouseDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ DropdownProps) => scala.Unit = null,
-    onOpen: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
-    onSearchChange: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownOnSearchChangeData) => scala.Unit = null,
+    noResultsMessage: reactLib.reactMod.ReactNode = null,
+    onAddItem: (/* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], /* data */ DropdownProps) => scala.Unit = null,
+    onBlur: (/* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], /* data */ DropdownProps) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], /* data */ DropdownProps) => scala.Unit = null,
+    onClose: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
+    onFocus: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
+    onLabelClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps) => scala.Unit = null,
+    onMouseDown: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ DropdownProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownProps) => scala.Unit = null,
+    onSearchChange: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ DropdownOnSearchChangeData) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     options: js.Array[
@@ -371,7 +371,7 @@ object StrictDropdownProps {
     simple: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Double | java.lang.String = null,
     text: java.lang.String = null,
-    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
+    trigger: reactLib.reactMod.ReactNode = null,
     upward: js.UndefOr[scala.Boolean] = js.undefined,
     value: scala.Boolean | scala.Double | java.lang.String | (js.Array[scala.Boolean | scala.Double | java.lang.String]) = null,
     wrapSelection: js.UndefOr[scala.Boolean] = js.undefined

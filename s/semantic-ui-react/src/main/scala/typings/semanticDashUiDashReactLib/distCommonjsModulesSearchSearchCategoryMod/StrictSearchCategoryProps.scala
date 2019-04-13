@@ -11,7 +11,7 @@ trait StrictSearchCategoryProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -24,15 +24,13 @@ trait StrictSearchCategoryProps extends js.Object {
     * @param {object} props - The SearchCategory props object.
     * @returns {*} - Renderable category contents.
     */
-  var renderer: js.UndefOr[
-    js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactNs.ReactElement[_]]
-  ] = js.undefined
+  var renderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactElement[_]]] = js.undefined
   /** Array of Search.Result props. */
   var results: js.UndefOr[
     js.Array[
-      reactLib.reactMod.ReactNs.ComponentClass[
+      reactLib.reactMod.ComponentClass[
         semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-        reactLib.reactMod.ReactNs.ComponentState
+        reactLib.reactMod.ComponentState
       ]
     ]
   ] = js.undefined
@@ -43,15 +41,15 @@ object StrictSearchCategoryProps {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     name: java.lang.String = null,
-    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    renderer: /* props */ SearchCategoryProps => reactLib.reactMod.ReactElement[_] = null,
     results: js.Array[
-      reactLib.reactMod.ReactNs.ComponentClass[
+      reactLib.reactMod.ComponentClass[
         semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-        reactLib.reactMod.ReactNs.ComponentState
+        reactLib.reactMod.ComponentState
       ]
     ] = null
   ): StrictSearchCategoryProps = {

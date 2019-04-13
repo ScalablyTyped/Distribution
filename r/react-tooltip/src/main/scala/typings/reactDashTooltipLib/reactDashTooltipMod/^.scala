@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-tooltip", JSImport.Namespace)
 @js.native
+class ^ () extends ReactTooltip
+
+@JSImport("react-tooltip", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
   /**
     * Hide the tooltip manually, the target is optional, if no target passed in, all existing tooltips will be hidden

@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 object windowsDash1251LibStrings {
   @js.native
   sealed trait fatal
-    extends windowsDash1251Lib.windowsDash1251Mod.windows1251Ns.DecoderMode
-       with windowsDash1251Lib.windowsDash1251Mod.windows1251Ns.EncoderMode
+    extends windowsDash1251Lib.windowsDash1251Mod.DecoderMode
+       with windowsDash1251Lib.windowsDash1251Mod.EncoderMode
   
   @js.native
   sealed trait html
-    extends windowsDash1251Lib.windowsDash1251Mod.windows1251Ns.EncoderMode
+    extends windowsDash1251Lib.windowsDash1251Mod.EncoderMode
   
   @js.native
   sealed trait replacement
-    extends windowsDash1251Lib.windowsDash1251Mod.windows1251Ns.DecoderMode
+    extends windowsDash1251Lib.windowsDash1251Mod.DecoderMode
   
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]

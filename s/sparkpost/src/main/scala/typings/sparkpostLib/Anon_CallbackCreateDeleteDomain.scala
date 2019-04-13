@@ -13,15 +13,15 @@ trait Anon_CallbackCreateDeleteDomain extends js.Object {
     * @param options The create options
     * @returns Promise The basic info results
     */
-  def create(options: sparkpostLib.sparkpostMod.SparkPostNs.CreateSendingDomain): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Domain] = js.native
+  def create(options: sparkpostLib.sparkpostMod.CreateSendingDomain): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Domain] = js.native
   /**
     * Create a sending domain by providing a sending domain object as the POST request body.
     * @param options The create options
     * @param callback The request callback with basic info results
     */
   def create(
-    options: sparkpostLib.sparkpostMod.SparkPostNs.CreateSendingDomain,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Domain]
+    options: sparkpostLib.sparkpostMod.CreateSendingDomain,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Domain]
   ): scala.Unit = js.native
   /**
     * Delete an existing sending domain.
@@ -35,14 +35,14 @@ trait Anon_CallbackCreateDeleteDomain extends js.Object {
     * @param domain The domain
     * @param callback The request callback
     */
-  def delete(domain: java.lang.String, callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[scala.Unit]): scala.Unit = js.native
+  def delete(domain: java.lang.String, callback: sparkpostLib.sparkpostMod.Callback[scala.Unit]): scala.Unit = js.native
   /**
     * Retrieve a sending domain by specifying its domain name in the URI path. The response includes details about its DKIM key configuration.
     *
     * @param domain The domain
     * @returns Promise The SendingDomain results
     */
-  def get(domain: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.SendingDomain] = js.native
+  def get(domain: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.SendingDomain] = js.native
   /**
     * Retrieve a sending domain by specifying its domain name in the URI path. The response includes details about its DKIM key configuration.
     * @param domain The domain
@@ -50,20 +50,20 @@ trait Anon_CallbackCreateDeleteDomain extends js.Object {
     */
   def get(
     domain: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.SendingDomain]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.SendingDomain]
   ): scala.Unit = js.native
   /**
     * List an overview of all sending domains in the system.
     *
     * @returns The SendingDomain results array
     */
-  def list(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SendingDomain]] = js.native
+  def list(): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SendingDomain]] = js.native
   /**
     * List an overview of all sending domains in the system.
     * @param callback The request callback with SendingDomain results array
     */
   def list(
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.SendingDomain]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SendingDomain]]
   ): scala.Unit = js.native
   /**
     * Update the attributes of an existing sending domain by specifying its domain name in the URI path and use a sending domain object as the PUT request body.
@@ -72,7 +72,7 @@ trait Anon_CallbackCreateDeleteDomain extends js.Object {
     * @param updateOpts The update options
     * @returns Promise The basic info results
     */
-  def update(domain: java.lang.String, updateOpts: sparkpostLib.sparkpostMod.SparkPostNs.UpdateSendingDomain): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Domain] = js.native
+  def update(domain: java.lang.String, updateOpts: sparkpostLib.sparkpostMod.UpdateSendingDomain): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Domain] = js.native
   /**
     * Update the attributes of an existing sending domain by specifying its domain name in the URI path and use a sending domain object as the PUT request body.
     * @param domain The domain
@@ -81,8 +81,8 @@ trait Anon_CallbackCreateDeleteDomain extends js.Object {
     */
   def update(
     domain: java.lang.String,
-    updateOpts: sparkpostLib.sparkpostMod.SparkPostNs.UpdateSendingDomain,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Domain]
+    updateOpts: sparkpostLib.sparkpostMod.UpdateSendingDomain,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Domain]
   ): scala.Unit = js.native
   /**
     * Verify a Sending Domain
@@ -91,7 +91,7 @@ trait Anon_CallbackCreateDeleteDomain extends js.Object {
     * @param options a hash of [verify attributes]{@link https://developers.sparkpost.com/api/sending-domains#header-verify-attributes}
     * @returns Promise The verify results
     */
-  def verify(domain: java.lang.String, options: sparkpostLib.sparkpostMod.SparkPostNs.VerifyOptions): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.VerifyResults] = js.native
+  def verify(domain: java.lang.String, options: sparkpostLib.sparkpostMod.VerifyOptions): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.VerifyResults] = js.native
   /**
     * Verify a Sending Domain
     * @param domain The domain
@@ -100,8 +100,8 @@ trait Anon_CallbackCreateDeleteDomain extends js.Object {
     */
   def verify(
     domain: java.lang.String,
-    options: sparkpostLib.sparkpostMod.SparkPostNs.VerifyOptions,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.VerifyResults]
+    options: sparkpostLib.sparkpostMod.VerifyOptions,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.VerifyResults]
   ): scala.Unit = js.native
 }
 

@@ -17,7 +17,7 @@ trait NavigationContainerProps[S, O] extends js.Object {
     ]
   ] = js.undefined
   var persistenceKey: js.UndefOr[java.lang.String | scala.Null] = js.undefined
-  var renderLoadingExperimental: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[js.Object]] = js.undefined
+  var renderLoadingExperimental: js.UndefOr[reactLib.reactMod.ComponentType[js.Object]] = js.undefined
   var screenProps: js.UndefOr[js.Any] = js.undefined
   var style: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
@@ -32,7 +32,7 @@ object NavigationContainerProps {
     navigationOptions: O = null,
     onNavigationStateChange: (/* prevNavigationState */ NavigationState, /* nextNavigationState */ NavigationState, /* action */ NavigationAction) => js.UndefOr[scala.Unit | scala.Null] = null,
     persistenceKey: java.lang.String = null,
-    renderLoadingExperimental: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    renderLoadingExperimental: reactLib.reactMod.ComponentType[js.Object] = null,
     screenProps: js.Any = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     uriPrefix: java.lang.String | stdLib.RegExp = null

@@ -12,7 +12,7 @@ trait ProviderProps[A /* <: reduxLib.reduxMod.Action[_] */] extends js.Object {
     * Provider. Initial value doesn't matter, as it is overwritten with the internal state of Provider.
     */
   var context: js.UndefOr[
-    reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]]
+    reactLib.reactMod.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]]
   ] = js.undefined
   /**
     * The single Redux store in your application.
@@ -24,7 +24,7 @@ object ProviderProps {
   @scala.inline
   def apply[A /* <: reduxLib.reduxMod.Action[_] */](
     store: reduxLib.reduxMod.Store[_, A],
-    context: reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null
+    context: reactLib.reactMod.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null
   ): ProviderProps[A] = {
     val __obj = js.Dynamic.literal(store = store)
     if (context != null) __obj.updateDynamic("context")(context)

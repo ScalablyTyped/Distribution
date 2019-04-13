@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Default extends js.Object {
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: java.lang.String
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: java.lang.String,
-    filter: pDashEventLib.pDashEventMod.pEventNs.FilterFunction[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    filter: pDashEventLib.pDashEventMod.FilterFunction[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   /**
   	Promisify an event by waiting for it to be emitted.
   	@param emitter - Event emitter object. Should have either a `.on()`/`.addListener()`/`.addEventListener()` and `.off()`/`.removeListener()`/`.removeEventListener()` method, like the [Node.js `EventEmitter`](https://nodejs.org/api/events.html) and [DOM events](https://developer.mozilla.org/en-US/docs/Web/Events).
@@ -44,61 +44,58 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: java.lang.String,
-    options: pDashEventLib.pDashEventMod.pEventNs.MultiArgumentsOptions[EmittedType]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    options: pDashEventLib.pDashEventMod.MultiArgumentsOptions[EmittedType]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: java.lang.String,
-    options: pDashEventLib.pDashEventMod.pEventNs.Options[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    options: pDashEventLib.pDashEventMod.Options[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[java.lang.String | js.Symbol]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[java.lang.String | js.Symbol],
-    filter: pDashEventLib.pDashEventMod.pEventNs.FilterFunction[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    filter: pDashEventLib.pDashEventMod.FilterFunction[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: js.Array[java.lang.String | js.Symbol],
-    options: pDashEventLib.pDashEventMod.pEventNs.MultiArgumentsOptions[EmittedType]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    options: pDashEventLib.pDashEventMod.MultiArgumentsOptions[EmittedType]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[java.lang.String | js.Symbol],
-    options: pDashEventLib.pDashEventMod.pEventNs.Options[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    options: pDashEventLib.pDashEventMod.Options[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
+  def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]], event: js.Symbol): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
-    event: js.Symbol
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
-  def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
-    filter: pDashEventLib.pDashEventMod.pEventNs.FilterFunction[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    filter: pDashEventLib.pDashEventMod.FilterFunction[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: js.Symbol,
-    options: pDashEventLib.pDashEventMod.pEventNs.MultiArgumentsOptions[EmittedType]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    options: pDashEventLib.pDashEventMod.MultiArgumentsOptions[EmittedType]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def apply[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
-    options: pDashEventLib.pDashEventMod.pEventNs.Options[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[EmittedType] = js.native
+    options: pDashEventLib.pDashEventMod.Options[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: java.lang.String
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: java.lang.String,
-    filter: pDashEventLib.pDashEventMod.pEventNs.FilterFunction[js.Array[EmittedType]]
+    filter: pDashEventLib.pDashEventMod.FilterFunction[js.Array[EmittedType]]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   /**
   	@returns An [async iterator](http://2ality.com/2016/10/asynchronous-iteration.html) that lets you asynchronously iterate over events of `event` emitted from `emitter`. The iterator ends when `emitter` emits an event matching any of the events defined in `resolutionEvents`, or rejects if `emitter` emits any of the events defined in the `rejectionEvents` option.
@@ -117,85 +114,82 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: java.lang.String,
-    options: pDashEventLib.pDashEventMod.pEventNs.IteratorMultiArgumentsOptions[EmittedType]
+    options: pDashEventLib.pDashEventMod.IteratorMultiArgumentsOptions[EmittedType]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: java.lang.String,
-    options: pDashEventLib.pDashEventMod.pEventNs.IteratorOptions[js.Array[EmittedType]]
+    options: pDashEventLib.pDashEventMod.IteratorOptions[js.Array[EmittedType]]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[java.lang.String | js.Symbol]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[java.lang.String | js.Symbol],
-    filter: pDashEventLib.pDashEventMod.pEventNs.FilterFunction[js.Array[EmittedType]]
+    filter: pDashEventLib.pDashEventMod.FilterFunction[js.Array[EmittedType]]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: js.Array[java.lang.String | js.Symbol],
-    options: pDashEventLib.pDashEventMod.pEventNs.IteratorMultiArgumentsOptions[EmittedType]
+    options: pDashEventLib.pDashEventMod.IteratorMultiArgumentsOptions[EmittedType]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[java.lang.String | js.Symbol],
-    options: pDashEventLib.pDashEventMod.pEventNs.IteratorOptions[js.Array[EmittedType]]
+    options: pDashEventLib.pDashEventMod.IteratorOptions[js.Array[EmittedType]]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
+  def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]], event: js.Symbol): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
-    event: js.Symbol
-  ): stdLib.AsyncIterableIterator[EmittedType] = js.native
-  def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
-    filter: pDashEventLib.pDashEventMod.pEventNs.FilterFunction[js.Array[EmittedType]]
+    filter: pDashEventLib.pDashEventMod.FilterFunction[js.Array[EmittedType]]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: js.Symbol,
-    options: pDashEventLib.pDashEventMod.pEventNs.IteratorMultiArgumentsOptions[EmittedType]
+    options: pDashEventLib.pDashEventMod.IteratorMultiArgumentsOptions[EmittedType]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   def iterator[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
-    options: pDashEventLib.pDashEventMod.pEventNs.IteratorOptions[js.Array[EmittedType]]
+    options: pDashEventLib.pDashEventMod.IteratorOptions[js.Array[EmittedType]]
   ): stdLib.AsyncIterableIterator[EmittedType] = js.native
   /**
   	Wait for multiple event emissions. Returns an array.
   	*/
   def multiple[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: java.lang.String,
-    options: pDashEventLib.pDashEventMod.pEventNs.MultipleMultiArgumentsOptions[EmittedType]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[js.Array[EmittedType]] = js.native
+    options: pDashEventLib.pDashEventMod.MultipleMultiArgumentsOptions[EmittedType]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[js.Array[EmittedType]] = js.native
   def multiple[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: java.lang.String,
-    options: pDashEventLib.pDashEventMod.pEventNs.MultipleOptions[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[js.Array[EmittedType]] = js.native
+    options: pDashEventLib.pDashEventMod.MultipleOptions[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[js.Array[EmittedType]] = js.native
   def multiple[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: js.Array[java.lang.String | js.Symbol],
-    options: pDashEventLib.pDashEventMod.pEventNs.MultipleMultiArgumentsOptions[EmittedType]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[js.Array[EmittedType]] = js.native
+    options: pDashEventLib.pDashEventMod.MultipleMultiArgumentsOptions[EmittedType]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[js.Array[EmittedType]] = js.native
   def multiple[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[java.lang.String | js.Symbol],
-    options: pDashEventLib.pDashEventMod.pEventNs.MultipleOptions[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[js.Array[EmittedType]] = js.native
+    options: pDashEventLib.pDashEventMod.MultipleOptions[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[js.Array[EmittedType]] = js.native
   def multiple[EventName /* <: java.lang.String | js.Symbol */, EmittedType /* <: js.Array[_] */](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, EmittedType],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, EmittedType],
     event: js.Symbol,
-    options: pDashEventLib.pDashEventMod.pEventNs.MultipleMultiArgumentsOptions[EmittedType]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[js.Array[EmittedType]] = js.native
+    options: pDashEventLib.pDashEventMod.MultipleMultiArgumentsOptions[EmittedType]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[js.Array[EmittedType]] = js.native
   def multiple[EventName /* <: java.lang.String | js.Symbol */, EmittedType](
-    emitter: pDashEventLib.pDashEventMod.pEventNs.Emitter[EventName, js.Array[EmittedType]],
+    emitter: pDashEventLib.pDashEventMod.Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
-    options: pDashEventLib.pDashEventMod.pEventNs.MultipleOptions[js.Array[EmittedType]]
-  ): pDashEventLib.pDashEventMod.pEventNs.CancelablePromise[js.Array[EmittedType]] = js.native
+    options: pDashEventLib.pDashEventMod.MultipleOptions[js.Array[EmittedType]]
+  ): pDashEventLib.pDashEventMod.CancelablePromise[js.Array[EmittedType]] = js.native
 }
 

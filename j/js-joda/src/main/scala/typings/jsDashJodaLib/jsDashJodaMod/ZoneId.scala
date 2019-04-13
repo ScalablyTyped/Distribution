@@ -7,28 +7,23 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ZoneId")
 @js.native
-abstract class ZoneId ()
-  extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId {
-  /* CompleteClass */
-  override def equals(other: js.Any): scala.Boolean = js.native
-  /* CompleteClass */
-  override def id(): java.lang.String = js.native
-  /* CompleteClass */
-  override def normalized(): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId = js.native
-  /* CompleteClass */
-  override def rules(): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneRules = js.native
+abstract class ZoneId () extends js.Object {
+  def equals(other: js.Any): scala.Boolean = js.native
+  def id(): java.lang.String = js.native
+  def normalized(): ZoneId = js.native
+  def rules(): ZoneRules = js.native
 }
 
 /* static members */
 @JSImport("js-joda", "ZoneId")
 @js.native
 object ZoneId extends js.Object {
-  var SYSTEM: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId = js.native
-  var UTC: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId = js.native
-  def from(temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalAccessor): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId = js.native
+  var SYSTEM: jsDashJodaLib.jsDashJodaMod.ZoneId = js.native
+  var UTC: jsDashJodaLib.jsDashJodaMod.ZoneId = js.native
+  def from(temporal: jsDashJodaLib.jsDashJodaMod.TemporalAccessor): jsDashJodaLib.jsDashJodaMod.ZoneId = js.native
   def getAvailableZoneIds(): js.Array[java.lang.String] = js.native
-  def of(zoneId: java.lang.String): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId = js.native
-  def ofOffset(prefix: java.lang.String, offset: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneOffset): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId = js.native
-  def systemDefault(): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId = js.native
+  def of(zoneId: java.lang.String): jsDashJodaLib.jsDashJodaMod.ZoneId = js.native
+  def ofOffset(prefix: java.lang.String, offset: jsDashJodaLib.jsDashJodaMod.ZoneOffset): jsDashJodaLib.jsDashJodaMod.ZoneId = js.native
+  def systemDefault(): jsDashJodaLib.jsDashJodaMod.ZoneId = js.native
 }
 

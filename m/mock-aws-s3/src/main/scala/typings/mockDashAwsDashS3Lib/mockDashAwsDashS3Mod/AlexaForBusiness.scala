@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class AlexaForBusiness ()
   extends awsDashSdkLib.awsDashSdkMod.AlexaForBusiness {
-  def this(options: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAlexaforbusinessMod.ClientConfiguration) = this()
 }
 

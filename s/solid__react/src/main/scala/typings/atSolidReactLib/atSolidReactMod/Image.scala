@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Image ()
   extends reactLib.reactMod.Component[
-      atSolidReactLib.Anon_DefaultSrc with reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLImageElement], 
+      atSolidReactLib.Anon_DefaultSrc with reactLib.reactMod.HTMLAttributes[stdLib.HTMLImageElement], 
       js.Object, 
       js.Any
     ]

@@ -5,18 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+trait BestFirstFinder extends AStarFinder
+
 @JSImport("pathfinding", "BestFirstFinder")
 @js.native
-class BestFirstFinderCls ()
-  extends pathfindingLib.pathfindingMod.PathfindingNs.BestFirstFinder {
-  def this(opt: pathfindingLib.pathfindingMod.PathfindingNs.JumpPointFinderOptions) = this()
+class BestFirstFinderCls () extends BestFirstFinder {
+  def this(opt: JumpPointFinderOptions) = this()
   /* CompleteClass */
-  override def findPath(
-    startX: scala.Double,
-    startY: scala.Double,
-    endX: scala.Double,
-    endY: scala.Double,
-    matrix: pathfindingLib.pathfindingMod.PathfindingNs.Grid
-  ): js.Array[js.Array[scala.Double]] = js.native
+  override def findPath(startX: scala.Double, startY: scala.Double, endX: scala.Double, endY: scala.Double, matrix: Grid): js.Array[js.Array[scala.Double]] = js.native
 }
 

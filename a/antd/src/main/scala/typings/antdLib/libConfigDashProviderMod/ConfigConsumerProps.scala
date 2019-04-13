@@ -17,7 +17,7 @@ trait ConfigConsumerProps extends js.Object {
   var rootPrefixCls: js.UndefOr[java.lang.String] = js.native
   def getPrefixCls(suffixCls: java.lang.String): java.lang.String = js.native
   def getPrefixCls(suffixCls: java.lang.String, customizePrefixCls: java.lang.String): java.lang.String = js.native
-  def renderEmpty(): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def renderEmpty(componentName: java.lang.String): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def renderEmpty(): reactLib.reactMod.ReactNode = js.native
+  def renderEmpty(componentName: java.lang.String): reactLib.reactMod.ReactNode = js.native
 }
 

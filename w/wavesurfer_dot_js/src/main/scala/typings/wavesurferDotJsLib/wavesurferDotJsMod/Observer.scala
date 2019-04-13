@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Observer extends js.Object {
   def fireEvent(eventName: java.lang.String, args: js.Any*): scala.Unit
-  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor
-  def once(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor
+  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): ListenerDescriptor
+  def once(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): ListenerDescriptor
   def un(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit
   def unAll(): scala.Unit
 }
@@ -17,8 +17,8 @@ object Observer {
   @scala.inline
   def apply(
     fireEvent: (java.lang.String, /* repeated */ js.Any) => scala.Unit,
-    on: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor,
-    once: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.ListenerDescriptor,
+    on: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => ListenerDescriptor,
+    once: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => ListenerDescriptor,
     un: (java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit]) => scala.Unit,
     unAll: () => scala.Unit
   ): Observer = {

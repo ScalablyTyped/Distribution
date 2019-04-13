@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemProps
-  extends reactLib.reactMod.ReactNs.Props[Flex]
+  extends reactLib.reactMod.Props[Flex]
      with CommonFlexProps {
   /**
     * A value for the flex-basis css property. Valid values are: `0` (and `'none'`, which is the same),
@@ -30,7 +30,7 @@ object ItemProps {
   def apply(
     alignContent: java.lang.String = null,
     alignItems: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     column: js.UndefOr[scala.Boolean] = js.undefined,
     display: java.lang.String = null,
     flex: scala.Double | java.lang.String | scala.Boolean = null,
@@ -39,8 +39,8 @@ object ItemProps {
     flexShrink: scala.Double | java.lang.String = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     justifyContent: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Flex] = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[Flex] = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     row: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Any = null,

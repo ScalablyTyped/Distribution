@@ -190,7 +190,7 @@ class Table protected ()
 object Table extends js.Object {
   var SHALLOW_COMPARE_PROP_KEYS_BLACKLIST: js.Any = js.native
   var SHALLOW_COMPARE_STATE_KEYS_BLACKLIST: js.Any = js.native
-  var childContextTypes: reactLib.reactMod.ReactNs.ValidationMap[atBlueprintjsTableLib.libEsmCommonContextMod.IColumnInteractionBarContextTypes] = js.native
+  var childContextTypes: reactLib.reactMod.ValidationMap[atBlueprintjsTableLib.libEsmCommonContextMod.IColumnInteractionBarContextTypes] = js.native
   var defaultProps: atBlueprintjsTableLib.libEsmTableMod.ITableProps = js.native
   var displayName: java.lang.String = js.native
   var resizeRowsByApproximateHeightDefaults: js.Any = js.native

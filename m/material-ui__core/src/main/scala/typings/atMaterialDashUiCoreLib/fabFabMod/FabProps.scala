@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FabClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[FabProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[FabProps]] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disableRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,14 +32,14 @@ object FabProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[FabClassKey]] = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
-    component: reactLib.reactMod.ReactNs.ReactType[FabProps] = null,
+    component: reactLib.reactMod.ReactType[FabProps] = null,
     disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disableRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     size: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.small | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.medium | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.large = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.submit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.reset | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.button = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.round | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.extended = null
   ): FabProps = {

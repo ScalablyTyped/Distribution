@@ -42,3 +42,23 @@ class FunctionCls protected () extends Function {
   override def set(buffer: nodeLib.Buffer, offset: scala.Double, value: js.Any): scala.Unit = js.native
 }
 
+@JSImport("ffi-napi", "Function")
+@js.native
+object Function
+  extends org.scalablytyped.runtime.Instantiable2[
+      (/* retType */ java.lang.String) | (/* retType */ refDashNapiLib.refDashNapiMod.Type), 
+      /* argTypes */ js.Array[js.Any], 
+      Function
+    ]
+     with org.scalablytyped.runtime.Instantiable3[
+      (/* retType */ java.lang.String) | (/* retType */ refDashNapiLib.refDashNapiMod.Type), 
+      /* argTypes */ js.Array[js.Any], 
+      /* abi */ scala.Double, 
+      Function
+    ] {
+  def apply(retType: java.lang.String, argTypes: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
+  def apply(retType: java.lang.String, argTypes: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
+  def apply(retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
+  def apply(retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
+}
+

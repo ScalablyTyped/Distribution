@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DataMethod[TPayload] extends js.Object {
   var data: TPayload
-  var method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+  var method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   var path: java.lang.String
   var regex: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -16,7 +16,7 @@ object Anon_DataMethod {
   @scala.inline
   def apply[TPayload](
     data: TPayload,
-    method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method,
+    method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method,
     path: java.lang.String,
     regex: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DataMethod[TPayload] = {

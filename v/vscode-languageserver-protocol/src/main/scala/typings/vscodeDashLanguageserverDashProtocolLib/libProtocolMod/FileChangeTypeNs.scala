@@ -11,14 +11,14 @@ object FileChangeTypeNs extends js.Object {
   /**
     * The file got changed.
     */
-  val Changed: /* 2 */ scala.Double = js.native
+  val Changed: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`2` = js.native
   /**
     * The file got created.
     */
-  val Created: /* 1 */ scala.Double = js.native
+  val Created: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`1` = js.native
   /**
     * The file got deleted.
     */
-  val Deleted: /* 3 */ scala.Double = js.native
+  val Deleted: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`3` = js.native
 }
 

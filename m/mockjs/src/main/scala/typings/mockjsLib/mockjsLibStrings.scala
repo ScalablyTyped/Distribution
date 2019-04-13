@@ -8,107 +8,107 @@ import scala.scalajs.js.annotation._
 object mockjsLibStrings {
   @js.native
   sealed trait cid
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait day
-    extends mockjsLib.mockjsMod.mockjsNs.RandomDateUtilString
+    extends mockjsLib.mockjsMod.RandomDateUtilString
   
   @js.native
   sealed trait ftp
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait gif
-    extends mockjsLib.mockjsMod.mockjsNs.RandomImageFormatString
+    extends mockjsLib.mockjsMod.RandomImageFormatString
   
   @js.native
   sealed trait gopher
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait hour
-    extends mockjsLib.mockjsMod.mockjsNs.RandomDateUtilString
+    extends mockjsLib.mockjsMod.RandomDateUtilString
   
   @js.native
   sealed trait http
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait jpg
-    extends mockjsLib.mockjsMod.mockjsNs.RandomImageFormatString
+    extends mockjsLib.mockjsMod.RandomImageFormatString
   
   @js.native
   sealed trait lower extends js.Object
   
   @js.native
   sealed trait mailto
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait mid
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait minute
-    extends mockjsLib.mockjsMod.mockjsNs.RandomDateUtilString
+    extends mockjsLib.mockjsMod.RandomDateUtilString
   
   @js.native
   sealed trait month
-    extends mockjsLib.mockjsMod.mockjsNs.RandomDateUtilString
+    extends mockjsLib.mockjsMod.RandomDateUtilString
   
   @js.native
   sealed trait news
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait nntp
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait number extends js.Object
   
   @js.native
   sealed trait png
-    extends mockjsLib.mockjsMod.mockjsNs.RandomImageFormatString
+    extends mockjsLib.mockjsMod.RandomImageFormatString
   
   @js.native
   sealed trait prospero
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait rlogin
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait second
-    extends mockjsLib.mockjsMod.mockjsNs.RandomDateUtilString
+    extends mockjsLib.mockjsMod.RandomDateUtilString
   
   @js.native
   sealed trait symbol extends js.Object
   
   @js.native
   sealed trait telnet
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait tn3270
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait upper extends js.Object
   
   @js.native
   sealed trait wais
-    extends mockjsLib.mockjsMod.mockjsNs.RandomWebProtocal
+    extends mockjsLib.mockjsMod.RandomWebProtocal
   
   @js.native
   sealed trait week
-    extends mockjsLib.mockjsMod.mockjsNs.RandomDateUtilString
+    extends mockjsLib.mockjsMod.RandomDateUtilString
   
   @js.native
   sealed trait year
-    extends mockjsLib.mockjsMod.mockjsNs.RandomDateUtilString
+    extends mockjsLib.mockjsMod.RandomDateUtilString
   
   @scala.inline
   def cid: cid = "cid".asInstanceOf[cid]

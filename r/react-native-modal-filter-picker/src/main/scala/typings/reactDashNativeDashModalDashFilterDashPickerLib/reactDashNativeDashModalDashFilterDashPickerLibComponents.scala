@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashModalDashFilterDashPickerLibComponents {
   @scala.inline
-  def ReactDashNativeDashModalDashFilterDashPicker[T /* <: reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerOption */]: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashModalDashFilterDashPicker[T /* <: reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerOption */]: reactLib.reactMod.ComponentType[
     reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps[T]
-  ] = js.constructorOf[reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.default[T]].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps[T]]]
   @scala.inline
   def ModalFilterPickerProps: reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps.type = reactDashNativeDashModalDashFilterDashPickerLib.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps

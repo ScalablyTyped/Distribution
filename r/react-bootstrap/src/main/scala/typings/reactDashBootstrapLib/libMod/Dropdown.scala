@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Dropdown")
 @js.native
 class Dropdown ()
-  extends reactDashBootstrapLib.libDropdownMod.namespaced
+  extends reactDashBootstrapLib.libDropdownMod.^
 
 /* static members */
 @JSImport("react-bootstrap/lib", "Dropdown")
 @js.native
 object Dropdown extends js.Object {
-  var Menu: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownMenuMod.namespaced] with reactDashBootstrapLib.Anon_DropdownMenu = js.native
-  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownToggleMod.namespaced] with reactDashBootstrapLib.Anon_DropdownToggle = js.native
+  var Menu: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownMenuMod.^] = js.native
+  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownToggleMod.^] = js.native
 }
 

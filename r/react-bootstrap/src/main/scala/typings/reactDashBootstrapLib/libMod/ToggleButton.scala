@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "ToggleButton")
 @js.native
 class ToggleButton ()
-  extends reactDashBootstrapLib.libToggleButtonMod.namespaced
+  extends reactDashBootstrapLib.libToggleButtonMod.^
 

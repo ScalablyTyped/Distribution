@@ -22,7 +22,7 @@ trait Anon_Catch extends js.Object {
   	```
   	*/
   def apply[ValueType](): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
-  def apply[ValueType](logger: pDashLogLib.pDashLogMod.pLogNs.Logger): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
+  def apply[ValueType](logger: pDashLogLib.pDashLogMod.Logger): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
   /**
   	Log the error of a promise. Use this in a `.catch()` method.
   	@param logger - The logger to use. Any return value or exception is ignored. Default: `console.log`.
@@ -41,6 +41,6 @@ trait Anon_Catch extends js.Object {
   	```
   	*/
   def `catch`(): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = js.native
-  def `catch`(logger: pDashLogLib.pDashLogMod.pLogNs.Logger): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = js.native
+  def `catch`(logger: pDashLogLib.pDashLogMod.Logger): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = js.native
 }
 

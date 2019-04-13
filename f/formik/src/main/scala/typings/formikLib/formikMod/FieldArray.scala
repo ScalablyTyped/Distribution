@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("formik", "FieldArray")
 @js.native
 class FieldArray protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       formikLib.distFieldArrayMod.FieldArrayConfig, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: formikLib.distFieldArrayMod.FieldArrayConfig) = this()

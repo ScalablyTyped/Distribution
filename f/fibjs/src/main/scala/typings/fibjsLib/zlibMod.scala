@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @JSImport("zlib", JSImport.Namespace)
 @js.native
 object zlibMod extends js.Object {
-  val BEST_COMPRESSION: /* 9 */ scala.Double = js.native
-  val BEST_SPEED: /* 1 */ scala.Double = js.native
-  val DEFAULT_COMPRESSION: /* -1 */ scala.Double = js.native
-  val NO_COMPRESSION: /* 0 */ scala.Double = js.native
+  val BEST_COMPRESSION: fibjsLib.fibjsLibNumbers.`9` = js.native
+  val BEST_SPEED: fibjsLib.fibjsLibNumbers.`1` = js.native
+  val DEFAULT_COMPRESSION: fibjsLib.fibjsLibNumbers.`-1` = js.native
+  val NO_COMPRESSION: fibjsLib.fibjsLibNumbers.`0` = js.native
   def createDeflate(to: fibjsLib.Class_Stream): fibjsLib.Class_Stream = js.native
   def createDeflateRaw(to: fibjsLib.Class_Stream): fibjsLib.Class_Stream = js.native
   def createGunzip(to: fibjsLib.Class_Stream): fibjsLib.Class_Stream = js.native

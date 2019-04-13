@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait InputProps[T] extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
-  var textInputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[T]] = js.undefined
+  var textInputRef: js.UndefOr[reactLib.reactMod.Ref[T]] = js.undefined
   var wrapperStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
@@ -17,7 +17,7 @@ object InputProps {
   @scala.inline
   def apply[T](
     label: java.lang.String = null,
-    textInputRef: reactLib.reactMod.ReactNs.Ref[T] = null,
+    textInputRef: reactLib.reactMod.Ref[T] = null,
     wrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): InputProps[T] = {
     val __obj = js.Dynamic.literal()

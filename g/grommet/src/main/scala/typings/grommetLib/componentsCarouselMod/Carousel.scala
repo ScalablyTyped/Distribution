@@ -8,21 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Carousel", "Carousel")
 @js.native
 class Carousel protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      CarouselProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-        reactLib.HTMLDivElement
-      ]), 
-      reactLib.reactMod.ReactNs.ComponentState, 
+  extends reactLib.reactMod.Component[
+      CarouselProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: CarouselProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ])) = this()
-  def this(props: CarouselProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), context: js.Any) = this()
+  def this(props: CarouselProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])) = this()
+  def this(props: CarouselProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), context: js.Any) = this()
 }
 

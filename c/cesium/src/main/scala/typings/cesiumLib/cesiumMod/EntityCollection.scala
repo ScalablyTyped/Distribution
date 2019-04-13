@@ -7,40 +7,24 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "EntityCollection")
 @js.native
-class EntityCollection protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.EntityCollection {
-  def this(owner: cesiumLib.cesiumMod.CesiumNs.CompositeEntityCollection) = this()
-  def this(owner: cesiumLib.cesiumMod.CesiumNs.DataSource) = this()
-  /* CompleteClass */
-  override val collectionChanged: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
-  /* CompleteClass */
-  override val id: java.lang.String = js.native
-  /* CompleteClass */
-  override val owner: cesiumLib.cesiumMod.CesiumNs.DataSource | cesiumLib.cesiumMod.CesiumNs.CompositeEntityCollection = js.native
-  /* CompleteClass */
-  override var show: scala.Boolean = js.native
-  /* CompleteClass */
-  override val values: js.Array[cesiumLib.cesiumMod.CesiumNs.Entity] = js.native
-  /* CompleteClass */
-  override def add(entity: cesiumLib.cesiumMod.CesiumNs.Entity): cesiumLib.cesiumMod.CesiumNs.Entity = js.native
-  /* CompleteClass */
-  override def computeAvailability(): cesiumLib.cesiumMod.CesiumNs.TimeInterval = js.native
-  /* CompleteClass */
-  override def contains(entity: cesiumLib.cesiumMod.CesiumNs.Entity): scala.Boolean = js.native
-  /* CompleteClass */
-  override def getById(id: java.lang.String): cesiumLib.cesiumMod.CesiumNs.Entity = js.native
-  /* CompleteClass */
-  override def getOrCreateEntity(id: java.lang.String): cesiumLib.cesiumMod.CesiumNs.Entity = js.native
-  /* CompleteClass */
-  override def remove(entity: cesiumLib.cesiumMod.CesiumNs.Entity): scala.Boolean = js.native
-  /* CompleteClass */
-  override def removeAll(): scala.Unit = js.native
-  /* CompleteClass */
-  override def removeById(id: java.lang.String): scala.Boolean = js.native
-  /* CompleteClass */
-  override def resumeEvents(): scala.Unit = js.native
-  /* CompleteClass */
-  override def suspendEvents(): scala.Unit = js.native
+class EntityCollection protected () extends js.Object {
+  def this(owner: CompositeEntityCollection) = this()
+  def this(owner: DataSource) = this()
+  val collectionChanged: Event[js.Array[_]] = js.native
+  val id: java.lang.String = js.native
+  val owner: DataSource | CompositeEntityCollection = js.native
+  var show: scala.Boolean = js.native
+  val values: js.Array[Entity] = js.native
+  def add(entity: Entity): Entity = js.native
+  def computeAvailability(): TimeInterval = js.native
+  def contains(entity: Entity): scala.Boolean = js.native
+  def getById(id: java.lang.String): Entity = js.native
+  def getOrCreateEntity(id: java.lang.String): Entity = js.native
+  def remove(entity: Entity): scala.Boolean = js.native
+  def removeAll(): scala.Unit = js.native
+  def removeById(id: java.lang.String): scala.Boolean = js.native
+  def resumeEvents(): scala.Unit = js.native
+  def suspendEvents(): scala.Unit = js.native
 }
 
 /* static members */
@@ -48,10 +32,10 @@ class EntityCollection protected ()
 @js.native
 object EntityCollection extends js.Object {
   def collectionChangedEventCallback(
-    collection: cesiumLib.cesiumMod.CesiumNs.EntityCollection,
-    added: js.Array[cesiumLib.cesiumMod.CesiumNs.Entity],
-    removed: js.Array[cesiumLib.cesiumMod.CesiumNs.Entity],
-    changed: js.Array[cesiumLib.cesiumMod.CesiumNs.Entity]
+    collection: cesiumLib.cesiumMod.EntityCollection,
+    added: js.Array[cesiumLib.cesiumMod.Entity],
+    removed: js.Array[cesiumLib.cesiumMod.Entity],
+    changed: js.Array[cesiumLib.cesiumMod.Entity]
   ): scala.Unit = js.native
 }
 

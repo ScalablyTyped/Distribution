@@ -65,13 +65,10 @@ class ForwardList[T] ()
     * @hidden
     */
   var end_ : js.Any = js.native
-  /* CompleteClass */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
   /**
     * @inheritDoc
     */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator_ForwardList: js.Function0[stdLib.IterableIterator[T]] = js.native
   /**
     * @hidden

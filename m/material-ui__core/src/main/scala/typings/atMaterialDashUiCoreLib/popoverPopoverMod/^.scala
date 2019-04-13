@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Popover/Popover", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[PopoverProps] = js.native
+  val default: reactLib.reactMod.ComponentType[PopoverProps] = js.native
 }
 

@@ -26,7 +26,7 @@ trait QueryOptions extends js.Object {
   var routingKey: js.UndefOr[nodeLib.Buffer | js.Array[nodeLib.Buffer]] = js.undefined
   var routingNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var serialConsistency: js.UndefOr[scala.Double] = js.undefined
-  var timestamp: js.UndefOr[scala.Double | longLib.longMod.namespaced] = js.undefined
+  var timestamp: js.UndefOr[scala.Double | longLib.longMod.^ ] = js.undefined
   var traceQuery: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -53,7 +53,7 @@ object QueryOptions {
     routingKey: nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
     routingNames: js.Array[java.lang.String] = null,
     serialConsistency: scala.Int | scala.Double = null,
-    timestamp: scala.Double | longLib.longMod.namespaced = null,
+    timestamp: scala.Double | longLib.longMod.^  = null,
     traceQuery: js.UndefOr[scala.Boolean] = js.undefined
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()

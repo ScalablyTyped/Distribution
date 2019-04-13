@@ -23,11 +23,11 @@ trait GeocodedAddress extends js.Object {
   	 */
   var country: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Country code. On iOS, use `country_code`.
+  	 * Country code.
   	 */
   var countryCode: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Country code. Same as `country_code`.
+  	 * Country code. To be replaced by `countryCode`.
   	 */
   var country_code: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -37,13 +37,13 @@ trait GeocodedAddress extends js.Object {
   /**
   	 * Latitude of the geocoded point.
   	 */
-  var latitude: js.UndefOr[java.lang.String] = js.undefined
+  var latitude: js.UndefOr[scala.Double] = js.undefined
   /**
   	 * Longitude of the geocoded point.
   	 */
-  var longitude: js.UndefOr[java.lang.String] = js.undefined
+  var longitude: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * Postal code. On iOS, use `zipcode`.
+  	 * Postal code
   	 */
   var postalCode: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait GeocodedAddress extends js.Object {
   	 */
   var street1: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Postal code. On Android, use `postalCode`.
+  	 * Postal code. To be replaced by `postalCode`
   	 */
   var zipcode: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -77,8 +77,8 @@ object GeocodedAddress {
     countryCode: java.lang.String = null,
     country_code: java.lang.String = null,
     displayAddress: java.lang.String = null,
-    latitude: java.lang.String = null,
-    longitude: java.lang.String = null,
+    latitude: scala.Int | scala.Double = null,
+    longitude: scala.Int | scala.Double = null,
     postalCode: java.lang.String = null,
     region1: java.lang.String = null,
     region2: java.lang.String = null,
@@ -93,8 +93,8 @@ object GeocodedAddress {
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
     if (country_code != null) __obj.updateDynamic("country_code")(country_code)
     if (displayAddress != null) __obj.updateDynamic("displayAddress")(displayAddress)
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude)
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude)
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
     if (region1 != null) __obj.updateDynamic("region1")(region1)
     if (region2 != null) __obj.updateDynamic("region2")(region2)

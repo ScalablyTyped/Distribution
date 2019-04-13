@@ -21,16 +21,16 @@ class ActionsSdkApp protected ()
     * @actionssdk
     */
   def this(options: ActionsSdkAppOptions) = this()
-  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.Response | scala.Null = js.native
   def ask(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
+  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.Response | scala.Null = js.native
   def ask(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks to collect user's input; all user's queries need to be sent to the app.
     * {@link https://developers.google.com/actions/policies/general-policies#user_experience|
@@ -77,26 +77,26 @@ class ActionsSdkApp protected ()
     * @return The response that is sent to Assistant to ask user to provide input.
     * @actionssdk
     */
-  def ask(inputPrompt: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def ask(inputPrompt: js.Object, dialogState: js.Object): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def ask(inputPrompt: js.Object): expressLib.expressMod.Response | scala.Null = js.native
+  def ask(inputPrompt: js.Object, dialogState: js.Object): expressLib.expressMod.Response | scala.Null = js.native
   def askWithCarousel(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithCarousel(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithCarousel(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithCarousel(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks to collect user's input with a carousel.
     *
@@ -138,30 +138,30 @@ class ActionsSdkApp protected ()
     * @return The response that is sent to Assistant to ask user to provide input.
     * @actionssdk
     */
-  def askWithCarousel(inputPrompt: js.Object, carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askWithCarousel(inputPrompt: js.Object, carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel): expressLib.expressMod.Response | scala.Null = js.native
   def askWithCarousel(
     inputPrompt: js.Object,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithList(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithList(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithList(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithList(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks to collect user's input with a list.
     *
@@ -202,12 +202,12 @@ class ActionsSdkApp protected ()
     * @return The response that is sent to Assistant to ask user to provide input.
     * @actionssdk
     */
-  def askWithList(inputPrompt: js.Object, list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askWithList(inputPrompt: js.Object, list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List): expressLib.expressMod.Response | scala.Null = js.native
   def askWithList(
     inputPrompt: js.Object,
     list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List,
     dialogState: js.Object
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Builds the {@link https://developers.google.com/actions/reference/conversation#InputPrompt|InputPrompt object}
     *     from initial prompt and no-input prompts.
@@ -412,8 +412,8 @@ class ActionsSdkApp protected ()
     * @actionssdk
     */
   def isRequestFromGoogle(projectId: java.lang.String): js.Promise[js.Object] = js.native
-  def tell(textToSpeech: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def tell(textToSpeech: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def tell(textToSpeech: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.Response | scala.Null = js.native
+  def tell(textToSpeech: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Tells Assistant to render the speech response and close the mic.
     *
@@ -456,6 +456,6 @@ class ActionsSdkApp protected ()
     * @return The HTTP response that is sent back to Assistant.
     * @actionssdk
     */
-  def tell(textToSpeech: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def tell(textToSpeech: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
 }
 

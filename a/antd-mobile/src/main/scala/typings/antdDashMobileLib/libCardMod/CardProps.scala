@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CardProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]
      with antdDashMobileLib.libCardPropsTypeMod.CardPropsType {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -15,7 +15,7 @@ object CardProps {
   @scala.inline
   def apply(
     CardPropsType: antdDashMobileLib.libCardPropsTypeMod.CardPropsType = null,
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] = null,
     prefixCls: java.lang.String = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()

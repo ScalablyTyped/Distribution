@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SiderProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
   var breakpoint: js.UndefOr[
     antdLib.antdLibStrings.xs | antdLib.antdLibStrings.sm | antdLib.antdLibStrings.md | antdLib.antdLibStrings.lg | antdLib.antdLibStrings.xl | antdLib.antdLibStrings.xxl
   ] = js.undefined
@@ -19,14 +19,14 @@ trait SiderProps
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var reverseArrow: js.UndefOr[scala.Boolean] = js.undefined
   var theme: js.UndefOr[SiderTheme] = js.undefined
-  var trigger: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var trigger: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
 object SiderProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     breakpoint: antdLib.antdLibStrings.xs | antdLib.antdLibStrings.sm | antdLib.antdLibStrings.md | antdLib.antdLibStrings.lg | antdLib.antdLibStrings.xl | antdLib.antdLibStrings.xxl = null,
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
     collapsedWidth: scala.Double | java.lang.String = null,
@@ -37,7 +37,7 @@ object SiderProps {
     prefixCls: java.lang.String = null,
     reverseArrow: js.UndefOr[scala.Boolean] = js.undefined,
     theme: SiderTheme = null,
-    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
+    trigger: reactLib.reactMod.ReactNode = null,
     width: scala.Double | java.lang.String = null
   ): SiderProps = {
     val __obj = js.Dynamic.literal()

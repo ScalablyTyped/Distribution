@@ -1,0 +1,23 @@
+package typings
+package awsDashSdkLib.clientsGuarddutyMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetMasterAccountRequest extends js.Object {
+  /**
+    * The unique ID of the detector of the GuardDuty member account.
+    */
+  var DetectorId: __string
+}
+
+object GetMasterAccountRequest {
+  @scala.inline
+  def apply(DetectorId: __string): GetMasterAccountRequest = {
+    val __obj = js.Dynamic.literal(DetectorId = DetectorId)
+  
+    __obj.asInstanceOf[GetMasterAccountRequest]
+  }
+}
+

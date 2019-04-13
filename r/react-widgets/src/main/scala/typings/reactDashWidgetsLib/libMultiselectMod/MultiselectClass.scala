@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MultiselectClass
-  extends reactLib.reactMod.ReactNs.ComponentClass[MultiselectProps, reactLib.reactMod.ReactNs.ComponentState]
+  extends reactLib.reactMod.ComponentClass[MultiselectProps, reactLib.reactMod.ComponentState]
 

@@ -13,7 +13,7 @@ trait IBookmark extends js.Object {
     * @return - A promise of a Qlik engine reply.
     */
   @JSName("apply")
-  def apply(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def apply(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Creates a bookmark based on the current selection.
     * @param title - Bookmark title.
@@ -21,13 +21,13 @@ trait IBookmark extends js.Object {
     * @param [sheetId] - Optional. Bookmark sheet id. Introduced in version 2.2.
     * @return - A promise of a Qlik engine reply.
     */
-  def create(title: java.lang.String, description: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def create(title: java.lang.String, description: java.lang.String, sheetId: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def create(title: java.lang.String, description: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def create(title: java.lang.String, description: java.lang.String, sheetId: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Removes a bookmark.
     * @param id - Bookmark id.
     * @return - A promise of a Qlik engine reply.
     */
-  def remove(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def remove(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
 }
 

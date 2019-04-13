@@ -17,3 +17,8 @@ class Language ()
   override var Name: java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.Language")
+@js.native
+object Language
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ILanguage]
+

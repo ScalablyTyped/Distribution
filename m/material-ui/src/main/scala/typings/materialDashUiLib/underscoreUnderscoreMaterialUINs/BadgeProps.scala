@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BadgeProps extends js.Object {
-  var badgeContent: reactLib.reactMod.ReactNs.ReactNode
-  var badgeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var badgeContent: reactLib.reactMod.ReactNode
+  var badgeStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined
   var secondary: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object BadgeProps {
   @scala.inline
   def apply(
-    badgeContent: reactLib.reactMod.ReactNs.ReactNode,
-    badgeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    badgeContent: reactLib.reactMod.ReactNode,
+    badgeStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     secondary: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal(badgeContent = badgeContent.asInstanceOf[js.Any])
     if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle)

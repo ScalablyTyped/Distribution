@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MigrationHub ()
   extends awsDashSdkLib.clientsAllMod.MigrationHub {
-  def this(options: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMigrationhubMod.ClientConfiguration) = this()
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * The current context exists as a property of Office. It is accessed using `Office.context`.
   *
   * @remarks 
-  * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word </td></tr></table>
+  * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
   */     
 trait Context extends js.Object {
   /**
@@ -23,24 +23,13 @@ trait Context extends js.Object {
     * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
     * 
     * @remarks
+    * **Hosts**: Excel, Word
+    * 
+    * `commerceAllowed` is only supported on Office for iPad.
+    * 
     * The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running on 
     * the Windows desktop or for Office Online in the browser do allow such links. If you want the UI of your add-in to provide a link to an 
     * external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                        </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Excel </strong></td><td> Y               </td></tr>
-    *   <tr><td><strong> Word  </strong></td><td> Y               </td></tr>
-    *  </table>
     */
   var commerceAllowed: scala.Boolean
   /**
@@ -59,7 +48,7 @@ trait Context extends js.Object {
     * 
     * For more information about Office host application and server requirements, see 
     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
+    *  
     * *Supported hosts, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
@@ -112,26 +101,6 @@ trait Context extends js.Object {
   var displayLanguage: java.lang.String
   /**
     * Gets an object that represents the document the content or task pane add-in is interacting with.
-    * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *  </table>
     */
   var document: Document
   /**
@@ -156,10 +125,9 @@ trait Context extends js.Object {
     * [Api set: Mailbox 1.0]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var mailbox: Mailbox
   /**
@@ -183,10 +151,9 @@ trait Context extends js.Object {
     * [Api set: Mailbox 1.0]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var roamingSettings: RoamingSettings
   /**
@@ -194,24 +161,12 @@ trait Context extends js.Object {
     * True if the add-in is running on a touch device, such as an iPad; false otherwise.
     * 
     * @remarks
+    * **Hosts**: Excel, PowerPoint, Word
+    * 
+    * `touchEnabled` is only supported on Office for iPad.
+    * 
     * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and 
     * size and spacing of elements in your add-in's UI to accommodate touch interactions.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y               </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y               </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y               </td></tr>
-    *  </table>
     */
   var touchEnabled: scala.Boolean
   /**

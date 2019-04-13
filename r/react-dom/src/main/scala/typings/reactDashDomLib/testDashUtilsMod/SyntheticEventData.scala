@@ -35,7 +35,7 @@ trait SyntheticEventData extends OptionalEventProperties {
   var shiftKey: js.UndefOr[scala.Boolean] = js.undefined
   var targetTouches: js.UndefOr[stdLib.TouchList] = js.undefined
   var touches: js.UndefOr[stdLib.TouchList] = js.undefined
-  var view: js.UndefOr[reactLib.reactMod.ReactNs.AbstractView] = js.undefined
+  var view: js.UndefOr[reactLib.reactMod.AbstractView] = js.undefined
   var which: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -83,7 +83,7 @@ object SyntheticEventData {
     timeStamp: stdLib.Date = null,
     touches: stdLib.TouchList = null,
     `type`: java.lang.String = null,
-    view: reactLib.reactMod.ReactNs.AbstractView = null,
+    view: reactLib.reactMod.AbstractView = null,
     which: scala.Int | scala.Double = null
   ): SyntheticEventData = {
     val __obj = js.Dynamic.literal()

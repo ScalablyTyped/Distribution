@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class PI ()
-  extends awsDashSdkLib.clientsPiMod.namespaced {
-  def this(options: awsDashSdkLib.clientsPiMod.PINs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsPiMod.^ {
+  def this(options: awsDashSdkLib.clientsPiMod.ClientConfiguration) = this()
 }
 

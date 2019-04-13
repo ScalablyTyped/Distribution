@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BoundingSphere extends js.Object {
-  var boundingSphere: cesiumLib.cesiumMod.CesiumNs.BoundingSphere
+  var boundingSphere: cesiumLib.cesiumMod.BoundingSphere
   var childTileMask: js.UndefOr[scala.Double] = js.undefined
   var createdByUpsampling: js.UndefOr[scala.Boolean] = js.undefined
   var eastIndices: js.Array[scala.Double]
   var eastSkirtHeight: scala.Double
   var encodedNormals: js.UndefOr[stdLib.Uint8Array] = js.undefined
-  var horizonOcclusionPoint: cesiumLib.cesiumMod.CesiumNs.Cartesian3
+  var horizonOcclusionPoint: cesiumLib.cesiumMod.Cartesian3
   var indices: stdLib.Uint16Array | stdLib.Uint32Array
   var maximumHeight: scala.Double
   var minimumHeight: scala.Double
@@ -29,10 +29,10 @@ trait Anon_BoundingSphere extends js.Object {
 object Anon_BoundingSphere {
   @scala.inline
   def apply(
-    boundingSphere: cesiumLib.cesiumMod.CesiumNs.BoundingSphere,
+    boundingSphere: cesiumLib.cesiumMod.BoundingSphere,
     eastIndices: js.Array[scala.Double],
     eastSkirtHeight: scala.Double,
-    horizonOcclusionPoint: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
+    horizonOcclusionPoint: cesiumLib.cesiumMod.Cartesian3,
     indices: stdLib.Uint16Array | stdLib.Uint32Array,
     maximumHeight: scala.Double,
     minimumHeight: scala.Double,

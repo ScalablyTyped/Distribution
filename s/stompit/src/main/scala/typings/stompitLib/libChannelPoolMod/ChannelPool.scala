@@ -9,7 +9,7 @@ trait ChannelPool extends js.Object {
   def channel(
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
-      /* channel */ stompitLib.libChannelMod.namespaced, 
+      /* channel */ stompitLib.libChannelMod.^, 
       scala.Unit
     ]
   ): scala.Unit
@@ -21,7 +21,7 @@ object ChannelPool {
   def apply(
     channel: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
-      /* channel */ stompitLib.libChannelMod.namespaced, 
+      /* channel */ stompitLib.libChannelMod.^, 
       scala.Unit
     ] => scala.Unit,
     close: () => scala.Unit

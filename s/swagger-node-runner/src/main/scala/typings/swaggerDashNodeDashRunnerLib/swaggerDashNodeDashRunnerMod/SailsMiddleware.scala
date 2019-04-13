@@ -10,7 +10,7 @@ trait SailsMiddleware extends Middleware {
   def chain(): js.Function3[
     /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
     /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ]
 }
@@ -21,7 +21,7 @@ object SailsMiddleware {
     chain: () => js.Function3[
       /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
       /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response, 
-      /* next */ expressLib.expressMod.eNs.NextFunction, 
+      /* next */ expressLib.expressMod.NextFunction, 
       scala.Unit
     ],
     runner: Runner

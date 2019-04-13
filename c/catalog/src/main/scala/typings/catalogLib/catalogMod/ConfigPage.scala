@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigPage extends ConfigPageOrGroup {
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[js.Object]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ComponentType[js.Object]] = js.undefined
   var hideFromMenu: js.UndefOr[scala.Boolean] = js.undefined
   var imports: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var path: java.lang.String
@@ -20,7 +20,7 @@ object ConfigPage {
   def apply(
     path: java.lang.String,
     title: java.lang.String,
-    content: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    content: reactLib.reactMod.ComponentType[js.Object] = null,
     hideFromMenu: js.UndefOr[scala.Boolean] = js.undefined,
     imports: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     scripts: js.Array[java.lang.String] = null,

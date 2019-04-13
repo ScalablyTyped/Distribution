@@ -11,7 +11,7 @@ trait FeathersAuthenticationJWTOptions extends js.Object {
     * A Verifier class. Defaults to the built-in one but can be a custom one. See below for details.
     */
   var Verifier: org.scalablytyped.runtime.Instantiable2[
-    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[js.Any], 
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any], 
     /* options */ js.Any, 
     Verifier
   ] = js.native
@@ -47,6 +47,6 @@ trait FeathersAuthenticationJWTOptions extends js.Object {
   /**
     * a passport-jwt option determining where to parse the JWT
     */
-  def jwtFromRequest(req: expressLib.expressMod.eNs.Request): java.lang.String | scala.Null = js.native
+  def jwtFromRequest(req: expressLib.expressMod.Request): java.lang.String | scala.Null = js.native
 }
 

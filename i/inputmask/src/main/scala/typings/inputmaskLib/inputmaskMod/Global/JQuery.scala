@@ -12,7 +12,7 @@ trait JQuery extends js.Object {
     *
     * @param opts Mask options.
     */
-  def inputmask(): inputmaskLib.inputmaskMod.InputmaskNs.Instance = js.native
+  def inputmask(): inputmaskLib.inputmaskMod.Instance = js.native
    // tslint:disable-line:unified-signatures
   /**
     * Creates a new Inputmask instance.
@@ -20,9 +20,9 @@ trait JQuery extends js.Object {
     * @param maskOrAlias A mask pattern or a reference to a predefined alias.
     * @param opts Mask options.
     */
-  def inputmask(maskOrAlias: java.lang.String): inputmaskLib.inputmaskMod.InputmaskNs.Instance = js.native
-  def inputmask(maskOrAlias: java.lang.String, opts: inputmaskLib.inputmaskMod.InputmaskNs.Options): inputmaskLib.inputmaskMod.InputmaskNs.Instance = js.native
-  def inputmask(opts: inputmaskLib.inputmaskMod.InputmaskNs.Options): inputmaskLib.inputmaskMod.InputmaskNs.Instance = js.native
+  def inputmask(maskOrAlias: java.lang.String): inputmaskLib.inputmaskMod.Instance = js.native
+  def inputmask(maskOrAlias: java.lang.String, opts: inputmaskLib.inputmaskMod.Options): inputmaskLib.inputmaskMod.Instance = js.native
+  def inputmask(opts: inputmaskLib.inputmaskMod.Options): inputmaskLib.inputmaskMod.Instance = js.native
   /**
     * Return the default (empty) mask value.
     */
@@ -69,16 +69,13 @@ trait JQuery extends js.Object {
     * argument.
     */
   @JSName("inputmask")
-  def inputmask_option(
-    method: inputmaskLib.inputmaskLibStrings.option,
-    opts: inputmaskLib.inputmaskMod.InputmaskNs.Options
-  ): inputmaskLib.inputmaskMod.InputmaskNs.Instance = js.native
+  def inputmask_option(method: inputmaskLib.inputmaskLibStrings.option, opts: inputmaskLib.inputmaskMod.Options): inputmaskLib.inputmaskMod.Instance = js.native
   @JSName("inputmask")
   def inputmask_option(
     method: inputmaskLib.inputmaskLibStrings.option,
-    opts: inputmaskLib.inputmaskMod.InputmaskNs.Options,
+    opts: inputmaskLib.inputmaskMod.Options,
     noremask: scala.Boolean
-  ): inputmaskLib.inputmaskMod.InputmaskNs.Instance = js.native
+  ): inputmaskLib.inputmaskMod.Instance = js.native
   /**
     * Remove the inputmask.
     */

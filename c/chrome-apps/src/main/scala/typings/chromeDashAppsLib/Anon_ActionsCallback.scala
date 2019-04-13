@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ActionsCallback extends js.Object {
   /** Type of a change detected on the observed directory. */
-  val ChangeType: Anon_CHANGEDDELETED = js.native
+  val ChangeType: Anon_CHANGED = js.native
   /**
     * List of common actions. 'SHARE' is for sharing files with others.
     * 'SAVE_FOR_OFFLINE' for pinning (saving for offline access).

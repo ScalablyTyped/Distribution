@@ -14,27 +14,10 @@ sealed trait EventType extends js.Object
   * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
   * `Office.EventType.ViewSelectionChanged` event types.
   * 
-  * <table><tr><td>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
-  *
   * @remarks
   * 
-  * **Support details**
+  * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Access, Excel, Word.
   * 
-  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this enumeration.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-  *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-  *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-  *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-  *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-  *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
-  *  </table>
   */
 @JSGlobal("Office.EventType")
 @js.native
@@ -42,19 +25,8 @@ object EventType extends js.Object {
   /**
     * A Document.ActiveViewChanged event was raised.
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *  </table>
+    * @remarks 
+    * **Hosts**: PowerPoint
     */
   @js.native
   sealed trait ActiveViewChanged
@@ -85,23 +57,8 @@ object EventType extends js.Object {
     * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
     * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *  </table>
+    * @remarks 
+    * **Hosts**: Access, Excel, Word
     */
   @js.native
   sealed trait BindingDataChanged
@@ -111,23 +68,8 @@ object EventType extends js.Object {
     * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use 
     * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *  </table>
+    * @remarks 
+    * **Hosts**: Access, Excel, Word 
     */
   @js.native
   sealed trait BindingSelectionChanged
@@ -150,20 +92,8 @@ object EventType extends js.Object {
   /**
     * Triggers when a document-level selection happens.
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this enumeration.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Excel </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-    *  </table>
+    * @remarks 
+    * **Hosts**: Excel, Word
     */
   @js.native
   sealed trait DocumentSelectionChanged
@@ -247,22 +177,8 @@ object EventType extends js.Object {
   /**
     * A Settings.settingsChanged event was raised.
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *  </table>
+    * @remarks 
+    * **Hosts**: Access, Excel, PowerPoint, Word
     */
   @js.native
   sealed trait SettingsChanged

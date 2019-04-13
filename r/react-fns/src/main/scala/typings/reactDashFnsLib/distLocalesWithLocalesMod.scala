@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLocalesWithLocalesMod extends js.Object {
   def withLocales[Props](
-    Component: reactLib.reactMod.ReactNs.ComponentType[Props with reactDashFnsLib.distLocalesLocalesMod.LocalesProps]
-  ): reactLib.reactMod.ReactNs.ComponentType[Props] = js.native
+    Component: reactLib.reactMod.ComponentType[Props with reactDashFnsLib.distLocalesLocalesMod.LocalesProps]
+  ): reactLib.reactMod.ComponentType[Props] = js.native
 }
 

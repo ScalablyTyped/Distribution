@@ -18,13 +18,13 @@ object ResultNativeProps {
   def apply(
     buttonText: java.lang.String = null,
     buttonType: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.primary | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.ghost = null,
-    img: reactLib.reactMod.ReactNs.ReactNode = null,
+    img: reactLib.reactMod.ReactNode = null,
     imgUrl: java.lang.String = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
+    message: reactLib.reactMod.ReactNode = null,
     onButtonClick: () => scala.Unit = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: antdDashMobileDashRnLib.libResultStyleIndexDotNativeMod.IResultStyle = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): ResultNativeProps = {
     val __obj = js.Dynamic.literal()
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)

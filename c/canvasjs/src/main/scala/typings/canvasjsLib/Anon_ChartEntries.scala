@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ChartEntries extends js.Object {
-  var chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart
+  var chart: canvasjsLib.canvasjsMod.Chart
   var entries: js.Array[Anon_DataPoint]
   var toolTip: this.type
 }
@@ -14,7 +14,7 @@ trait Anon_ChartEntries extends js.Object {
 object Anon_ChartEntries {
   @scala.inline
   def apply(
-    chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart,
+    chart: canvasjsLib.canvasjsMod.Chart,
     entries: js.Array[Anon_DataPoint],
     toolTip: Anon_ChartEntries
   ): Anon_ChartEntries = {

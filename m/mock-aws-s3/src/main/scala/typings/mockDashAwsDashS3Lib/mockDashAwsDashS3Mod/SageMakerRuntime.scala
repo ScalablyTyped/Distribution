@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SageMakerRuntime ()
   extends awsDashSdkLib.awsDashSdkMod.SageMakerRuntime {
-  def this(options: awsDashSdkLib.clientsSagemakerruntimeMod.SageMakerRuntimeNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSagemakerruntimeMod.ClientConfiguration) = this()
 }
 

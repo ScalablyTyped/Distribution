@@ -11,11 +11,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("go", "Iterable")
 @js.native
-class Iterable[T] ()
-  extends goLib.goMod.goNs.Iterable[T] {
+class Iterable[T] () extends js.Object {
   /*This is an interface and thus does not have a constructor.*/
   /**Gets an Iterator that can iterate over the items in the collection.*/
-  /* CompleteClass */
-  override var iterator: goLib.goMod.goNs.Iterator[T] = js.native
+  var iterator: Iterator[T] = js.native
 }
 

@@ -16,9 +16,9 @@ class SentimentVerySatisfiedTwoTone protected ()
 @JSImport("@material-ui/icons", "SentimentVerySatisfiedTwoTone")
 @js.native
 class SentimentVerySatisfiedTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

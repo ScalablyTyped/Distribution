@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudWatch ()
   extends awsDashSdkLib.awsDashSdkMod.CloudWatch {
-  def this(options: awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloudwatchMod.ClientConfiguration) = this()
 }
 

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait TypeScriptError
   extends stdLib.Error {
-  var diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic
+  var diagnostic: typescriptLib.typescriptMod.Diagnostic
   var endPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Character] = js.undefined
   var file: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined
   var fullFilename: js.UndefOr[java.lang.String] = js.undefined
   var relativeFilename: js.UndefOr[java.lang.String] = js.undefined
   var startPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Character] = js.undefined
-  var tsFile: js.UndefOr[typescriptLib.typescriptMod.tsNs.SourceFile] = js.undefined
+  var tsFile: js.UndefOr[typescriptLib.typescriptMod.SourceFile] = js.undefined
 }
 
 object TypeScriptError {
   @scala.inline
   def apply(
-    diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic,
+    diagnostic: typescriptLib.typescriptMod.Diagnostic,
     message: java.lang.String,
     name: java.lang.String,
     endPosition: gulpDashTypescriptLib.Anon_Character = null,
@@ -28,7 +28,7 @@ object TypeScriptError {
     relativeFilename: java.lang.String = null,
     stack: java.lang.String = null,
     startPosition: gulpDashTypescriptLib.Anon_Character = null,
-    tsFile: typescriptLib.typescriptMod.tsNs.SourceFile = null
+    tsFile: typescriptLib.typescriptMod.SourceFile = null
   ): TypeScriptError = {
     val __obj = js.Dynamic.literal(diagnostic = diagnostic, message = message, name = name)
     if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition)

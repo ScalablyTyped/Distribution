@@ -16,6 +16,28 @@ import scala.scalajs.js.annotation._
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.rotatingTool, which you can modify.
   */
-class RotatingTool ()
-  extends goLib.goMod.goNs.RotatingTool
+class RotatingTool () extends Tool {
+  /**This read-only property returns the GraphObject that is being rotated.*/
+  var adornedObject: GraphObject = js.native
+  /**Gets or sets a small GraphObject that is copied as a rotation handle for the selected part.*/
+  var handle: GraphObject = js.native
+  /**Gets or sets a small GraphObject that is copied as a rotation handle for the selected part.*/
+  var handleArchetype: GraphObject = js.native
+  /**This read-only property returns the angle that was the original value of the GraphObject.angle of the GraphObject that is being rotated.*/
+  var originalAngle: scala.Double = js.native
+  /**Gets or sets the the closeness to a desired angle at which the angle is "snapped to".*/
+  var snapAngleEpsilon: scala.Double = js.native
+  /**Gets or sets the preferred angles for the selected object.*/
+  var snapAngleMultiple: scala.Double = js.native
+  /**
+    * Compute the new angle given a point.
+    * @param{Point} newPoint
+    */
+  def computeRotate(newPoint: Point): scala.Double = js.native
+  /**
+    * Change the angle of the selected part's Part.rotateObject.
+    * @param {number} newangle
+    */
+  def rotate(newangle: scala.Double): scala.Unit = js.native
+}
 

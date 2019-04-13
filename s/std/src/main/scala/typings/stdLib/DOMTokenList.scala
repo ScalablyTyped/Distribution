@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DOMTokenList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
   /**
     * Returns the number of tokens.

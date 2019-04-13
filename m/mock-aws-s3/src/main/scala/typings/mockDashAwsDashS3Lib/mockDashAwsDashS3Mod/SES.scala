@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SES ()
   extends awsDashSdkLib.awsDashSdkMod.SES {
-  def this(options: awsDashSdkLib.clientsSesMod.SESNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSesMod.ClientConfiguration) = this()
 }
 

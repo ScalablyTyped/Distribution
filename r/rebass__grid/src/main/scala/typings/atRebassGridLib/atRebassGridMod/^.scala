@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@rebass/grid", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Box: reactLib.reactMod.ReactNs.FunctionComponent[BoxProps] = js.native
-  val Flex: reactLib.reactMod.ReactNs.FunctionComponent[FlexProps] = js.native
+  val Box: reactLib.reactMod.FunctionComponent[BoxProps] = js.native
+  val Flex: reactLib.reactMod.FunctionComponent[FlexProps] = js.native
 }
 

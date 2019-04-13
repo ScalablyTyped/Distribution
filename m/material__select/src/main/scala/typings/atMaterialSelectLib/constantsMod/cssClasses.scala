@@ -17,10 +17,11 @@ object cssClasses {
   def apply(
     BOX: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select--box`,
     DISABLED: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select--disabled`,
-    ROOT: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select`
+    ROOT: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(BOX = BOX, DISABLED = DISABLED, ROOT = ROOT)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MiniMatchOptions
-  extends minimatchLib.minimatchMod.MNs.IOptions {
+  extends minimatchLib.minimatchMod.IOptions {
   var cwd: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -9,15 +9,15 @@ trait HTMLViewProps extends js.Object {
   /*
     * The component used for rendering HTML element nodes
     */
-  var NodeComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[js.Object]] = js.undefined
+  var NodeComponent: js.UndefOr[reactLib.reactMod.ComponentType[js.Object]] = js.undefined
   /*
     * The root wrapper component
     */
-  var RootComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[js.Object]] = js.undefined
+  var RootComponent: js.UndefOr[reactLib.reactMod.ComponentType[js.Object]] = js.undefined
   /*
     * The component used for rendering text element nodes
     */
-  var TextComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[js.Object]] = js.undefined
+  var TextComponent: js.UndefOr[reactLib.reactMod.ComponentType[js.Object]] = js.undefined
   /**
     *  When explicitly false, effectively sets paragraphBreak and lineBreak to null
     */
@@ -63,12 +63,8 @@ trait HTMLViewProps extends js.Object {
       /* index */ scala.Double, 
       /* siblings */ HTMLViewNode, 
       /* parent */ HTMLViewNode, 
-      /* defaultRenderer */ js.Function2[
-        /* node */ HTMLViewNode, 
-        /* parent */ HTMLViewNode, 
-        reactLib.reactMod.ReactNs.ReactNode
-      ], 
-      reactLib.reactMod.ReactNs.ReactNode
+      /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, reactLib.reactMod.ReactNode], 
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /*
@@ -100,9 +96,9 @@ object HTMLViewProps {
   @scala.inline
   def apply(
     value: java.lang.String,
-    NodeComponent: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
-    RootComponent: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
-    TextComponent: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    NodeComponent: reactLib.reactMod.ComponentType[js.Object] = null,
+    RootComponent: reactLib.reactMod.ComponentType[js.Object] = null,
+    TextComponent: reactLib.reactMod.ComponentType[js.Object] = null,
     addLineBreaks: js.UndefOr[scala.Boolean] = js.undefined,
     bullet: java.lang.String = null,
     lineBreak: java.lang.String = null,
@@ -110,11 +106,7 @@ object HTMLViewProps {
     onLinkLongPress: /* url */ java.lang.String => scala.Unit = null,
     onLinkPress: /* url */ java.lang.String => scala.Unit = null,
     paragraphBreak: java.lang.String = null,
-    renderNode: (/* node */ HTMLViewNode, /* index */ scala.Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[
-      /* node */ HTMLViewNode, 
-      /* parent */ HTMLViewNode, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderNode: (/* node */ HTMLViewNode, /* index */ scala.Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, reactLib.reactMod.ReactNode]) => reactLib.reactMod.ReactNode = null,
     rootComponentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any = null,
     stylesheet: org.scalablytyped.runtime.StringDictionary[
       reactDashNativeLib.reactDashNativeMod.StyleProp[

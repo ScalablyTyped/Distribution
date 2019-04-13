@@ -11,7 +11,7 @@ trait File extends js.Object {
   var fileNameOriginal: java.lang.String
   var gulp: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined
   var kind: FileKind
-  var ts: js.UndefOr[typescriptLib.typescriptMod.tsNs.SourceFile] = js.undefined
+  var ts: js.UndefOr[typescriptLib.typescriptMod.SourceFile] = js.undefined
 }
 
 object File {
@@ -22,7 +22,7 @@ object File {
     fileNameOriginal: java.lang.String,
     kind: FileKind,
     gulp: gulpDashTypescriptLib.releaseTypesMod.VinylFile = null,
-    ts: typescriptLib.typescriptMod.tsNs.SourceFile = null
+    ts: typescriptLib.typescriptMod.SourceFile = null
   ): File = {
     val __obj = js.Dynamic.literal(content = content, fileNameNormalized = fileNameNormalized, fileNameOriginal = fileNameOriginal, kind = kind)
     if (gulp != null) __obj.updateDynamic("gulp")(gulp)

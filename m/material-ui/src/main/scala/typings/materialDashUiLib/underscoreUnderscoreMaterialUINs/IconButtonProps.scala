@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp, style, tabIndex. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ trait IconButtonProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] {
+  extends reactLib.reactMod.HTMLAttributes[js.Object] {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
-  var containerElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var containerElement: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined
   var disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var focusRippleColor: js.UndefOr[java.lang.String] = js.undefined
   var focusRippleOpacity: js.UndefOr[scala.Double] = js.undefined
-  var hoveredStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var hoveredStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined
   var onKeyboardFocus: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
+      /* e */ reactLib.reactMod.FocusEvent[js.Object], 
       /* isKeyboardFocused */ scala.Boolean, 
       scala.Unit
     ]
   ] = js.undefined
   var target: js.UndefOr[java.lang.String] = js.undefined
-  var tooltip: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var tooltip: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   var tooltipPosition: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter] = js.undefined
-  var tooltipStyles: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tooltipStyles: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var touch: js.UndefOr[scala.Boolean] = js.undefined
   var touchRippleColor: js.UndefOr[java.lang.String] = js.undefined
   var touchRippleOpacity: js.UndefOr[scala.Double] = js.undefined
@@ -41,24 +41,24 @@ import scala.scalajs.js.annotation._
 object IconButtonProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[js.Object] = null,
     SharedEnhancedButtonProps: SharedEnhancedButtonProps[IconButton] = null,
     className: java.lang.String = null,
     disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    hoveredStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    hoveredStyle: reactLib.reactMod.CSSProperties = null,
     iconClassName: java.lang.String = null,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseOut: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tooltip: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseOut: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    tooltip: reactLib.reactMod.ReactNode | java.lang.String = null,
     tooltipPosition: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter = null,
-    tooltipStyles: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltipStyles: reactLib.reactMod.CSSProperties = null,
     touch: js.UndefOr[scala.Boolean] = js.undefined
   ): IconButtonProps = {
     val __obj = js.Dynamic.literal()

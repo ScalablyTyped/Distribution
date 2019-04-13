@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @JSImport("zip", JSImport.Namespace)
 @js.native
 object zipMod extends js.Object {
-  val ZIP_DEFLATED: /* 1 */ scala.Double = js.native
-  val ZIP_STORED: /* 0 */ scala.Double = js.native
+  val ZIP_DEFLATED: fibjsLib.fibjsLibNumbers.`1` = js.native
+  val ZIP_STORED: fibjsLib.fibjsLibNumbers.`0` = js.native
   def isZipFile(filename: java.lang.String): scala.Boolean = js.native
   def open(data: fibjsLib.Class_Buffer): fibjsLib.Class_ZipFile = js.native
   def open(data: fibjsLib.Class_Buffer, mod: java.lang.String): fibjsLib.Class_ZipFile = js.native

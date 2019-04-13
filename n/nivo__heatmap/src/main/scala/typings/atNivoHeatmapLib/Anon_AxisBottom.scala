@@ -15,7 +15,7 @@ trait Anon_AxisBottom extends js.Object {
   var cellHoverOpacity: scala.Double
   var cellHoverOthersOpacity: scala.Double
   var cellOpacity: scala.Double
-  var cellShape: atNivoHeatmapLib.atNivoHeatmapLibStrings.rect | atNivoHeatmapLib.atNivoHeatmapLibStrings.circle | reactLib.reactMod.ReactNs.StatelessComponent[_]
+  var cellShape: atNivoHeatmapLib.atNivoHeatmapLibStrings.rect | atNivoHeatmapLib.atNivoHeatmapLibStrings.circle | reactLib.reactMod.StatelessComponent[_]
   var enableGridX: scala.Boolean
   var enableGridY: scala.Boolean
   var enableLabels: scala.Boolean
@@ -42,7 +42,7 @@ object Anon_AxisBottom {
     cellHoverOpacity: scala.Double,
     cellHoverOthersOpacity: scala.Double,
     cellOpacity: scala.Double,
-    cellShape: atNivoHeatmapLib.atNivoHeatmapLibStrings.rect | atNivoHeatmapLib.atNivoHeatmapLibStrings.circle | reactLib.reactMod.ReactNs.StatelessComponent[_],
+    cellShape: atNivoHeatmapLib.atNivoHeatmapLibStrings.rect | atNivoHeatmapLib.atNivoHeatmapLibStrings.circle | reactLib.reactMod.StatelessComponent[_],
     enableGridX: scala.Boolean,
     enableGridY: scala.Boolean,
     enableLabels: scala.Boolean,

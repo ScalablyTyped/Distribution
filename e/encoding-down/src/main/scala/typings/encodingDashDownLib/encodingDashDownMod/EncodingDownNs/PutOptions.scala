@@ -12,10 +12,12 @@ trait PutOptions
 object PutOptions {
   @scala.inline
   def apply(
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     keyEncoding: java.lang.String | levelDashCodecLib.levelDashCodecMod.CodecEncoder = null,
     valueEncoding: java.lang.String | levelDashCodecLib.levelDashCodecMod.CodecEncoder = null
   ): PutOptions = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (keyEncoding != null) __obj.updateDynamic("keyEncoding")(keyEncoding.asInstanceOf[js.Any])
     if (valueEncoding != null) __obj.updateDynamic("valueEncoding")(valueEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutOptions]

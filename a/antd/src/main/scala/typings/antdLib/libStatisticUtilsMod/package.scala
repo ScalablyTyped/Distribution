@@ -13,12 +13,12 @@ package object libStatisticUtilsMod {
     - js.Function2[
   / * value * / valueType, 
   / * config * / js.UndefOr[FormatConfig], 
-  reactLib.reactMod.ReactNs.ReactNode]
+  reactLib.reactMod.ReactNode]
   */
   type Formatter = _Formatter | (js.Function2[
     /* value */ valueType, 
     /* config */ js.UndefOr[FormatConfig], 
-    reactLib.reactMod.ReactNs.ReactNode
+    reactLib.reactMod.ReactNode
   ])
   type countdownValueType = valueType | java.lang.String
   type valueType = scala.Double | java.lang.String

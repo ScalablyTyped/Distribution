@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactHolderProp
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[ReactHolder] {
+  extends reactLib.reactMod.HTMLAttributes[ReactHolder] {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var bg: js.UndefOr[java.lang.String] = js.undefined
   var fg: js.UndefOr[java.lang.String] = js.undefined
@@ -29,7 +29,7 @@ object ReactHolderProp {
     height: java.lang.String | scala.Double,
     updateOnResize: scala.Boolean,
     width: java.lang.String | scala.Double,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[ReactHolder] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[ReactHolder] = null,
     align: java.lang.String = null,
     bg: java.lang.String = null,
     fg: java.lang.String = null,

@@ -12,14 +12,14 @@ trait ThemeProps extends ThemeTreeProps {
 object ThemeProps {
   @scala.inline
   def apply(
-    innerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerStyle: reactLib.reactMod.CSSProperties = null,
     nodeContentRenderer: NodeRenderer = null,
     placeholderRenderer: PlaceholderRenderer = null,
     reactVirtualizedListProps: stdLib.Partial[reactDashVirtualizedLib.distEsListMod.ListProps] = null,
     rowHeight: (js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Double]) | scala.Double = null,
     scaffoldBlockPxWidth: scala.Int | scala.Double = null,
     slideRegionSize: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     treeNodeRenderer: TreeRenderer = null
   ): ThemeProps = {
     val __obj = js.Dynamic.literal()

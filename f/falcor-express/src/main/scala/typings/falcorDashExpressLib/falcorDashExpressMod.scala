@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object falcorDashExpressMod extends js.Object {
   def dataSourceRoute(
     getDataSource: js.Function2[
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
+      /* req */ expressLib.expressMod.Request, 
+      /* res */ expressLib.expressMod.Response, 
       falcorLib.falcorMod.DataSource
     ]
-  ): expressLib.expressMod.eNs.Handler = js.native
+  ): expressLib.expressMod.Handler = js.native
 }
 

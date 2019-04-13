@@ -15,7 +15,7 @@ class Tree ()
 @js.native
 object Tree extends js.Object {
   var DirectoryTree: antdLib.Anon_DefaultPropsGetDerivedStateFromProps = js.native
-  var TreeNode: reactLib.reactMod.ReactNs.ComponentClass[antdLib.libTreeTreeMod.AntTreeNodeProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  var TreeNode: reactLib.reactMod.ComponentClass[antdLib.libTreeTreeMod.AntTreeNodeProps, reactLib.reactMod.ComponentState] = js.native
   var defaultProps: antdLib.Anon_BlockNode = js.native
 }
 

@@ -20,7 +20,7 @@ trait IAsideOptions extends js.Object {
   var onHide: js.UndefOr[js.Function1[/* aside */ IAside, scala.Unit]] = js.undefined
   var onShow: js.UndefOr[js.Function1[/* aside */ IAside, scala.Unit]] = js.undefined
   var placement: js.UndefOr[java.lang.String] = js.undefined
-  var scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
+  var scope: js.UndefOr[angularLib.angularMod.IScope] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -44,7 +44,7 @@ object IAsideOptions {
     onHide: /* aside */ IAside => scala.Unit = null,
     onShow: /* aside */ IAside => scala.Unit = null,
     placement: java.lang.String = null,
-    scope: angularLib.angularMod.angularNs.IScope = null,
+    scope: angularLib.angularMod.IScope = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     template: java.lang.String = null,
     templateUrl: java.lang.String = null,

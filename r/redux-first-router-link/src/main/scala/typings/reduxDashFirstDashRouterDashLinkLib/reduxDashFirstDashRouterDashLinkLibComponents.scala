@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object reduxDashFirstDashRouterDashLinkLibComponents {
   @scala.inline
-  def NavLink: reactLib.reactMod.ReactNs.ComponentType[
+  def NavLink: reactLib.reactMod.ComponentType[
     reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.NavLinkProps
-  ] = js.constructorOf[reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.NavLink].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.NavLink].asInstanceOf[reactLib.reactMod.ComponentType[
   reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.NavLinkProps]]
   @scala.inline
-  def ReduxDashFirstDashRouterDashLink: reactLib.reactMod.ReactNs.ComponentType[
+  def ReduxDashFirstDashRouterDashLink: reactLib.reactMod.ComponentType[
     reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.LinkProps
-  ] = js.constructorOf[reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.LinkProps]]
   @scala.inline
   def LinkProps: reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.LinkProps.type = reduxDashFirstDashRouterDashLinkLib.reduxDashFirstDashRouterDashLinkMod.LinkProps

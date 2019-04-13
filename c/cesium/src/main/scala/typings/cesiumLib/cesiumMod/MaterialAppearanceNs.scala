@@ -9,16 +9,28 @@ import scala.scalajs.js.annotation._
 @js.native
 object MaterialAppearanceNs extends js.Object {
   @js.native
+  sealed trait MaterialSupport extends js.Object
+  
+  @js.native
   object MaterialSupport extends js.Object {
-    val ALL: cesiumLib.cesiumMod.CesiumNs.MaterialAppearanceNs.MaterialSupport.ALL with java.lang.String = js.native
-    val BASIC: cesiumLib.cesiumMod.CesiumNs.MaterialAppearanceNs.MaterialSupport.BASIC with java.lang.String = js.native
-    val TEXTURED: cesiumLib.cesiumMod.CesiumNs.MaterialAppearanceNs.MaterialSupport.TEXTURED with java.lang.String = js.native
+    @js.native
+    sealed trait ALL
+      extends cesiumLib.cesiumMod.MaterialAppearanceNs.MaterialSupport
+    
+    @js.native
+    sealed trait BASIC
+      extends cesiumLib.cesiumMod.MaterialAppearanceNs.MaterialSupport
+    
+    @js.native
+    sealed trait TEXTURED
+      extends cesiumLib.cesiumMod.MaterialAppearanceNs.MaterialSupport
+    
+    val ALL: ALL with java.lang.String = js.native
+    val BASIC: BASIC with java.lang.String = js.native
+    val TEXTURED: TEXTURED with java.lang.String = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[
-        cesiumLib.cesiumMod.CesiumNs.MaterialAppearanceNs.MaterialSupport with java.lang.String
-      ] = js.native
+    def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.MaterialAppearanceNs.MaterialSupport with java.lang.String] = js.native
   }
   
-  type MaterialSupport = cesiumLib.cesiumMod.CesiumNs.MaterialAppearanceNs.MaterialSupport
 }
 

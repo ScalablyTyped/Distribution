@@ -22,11 +22,11 @@ trait Phonon extends js.Object {
     textOk: java.lang.String
   ): PhononDialogComponent = js.native
   def autocomplete(input: java.lang.String): js.Any = js.native
-  def autocomplete(input: java.lang.String, o: awesompleteLib.awesompleteMod.AwesompleteNs.Options): js.Any = js.native
+  def autocomplete(input: java.lang.String, o: awesompleteLib.awesompleteMod.Options): js.Any = js.native
   def autocomplete(input: phononLib.Element): js.Any = js.native
-  def autocomplete(input: phononLib.Element, o: awesompleteLib.awesompleteMod.AwesompleteNs.Options): js.Any = js.native
+  def autocomplete(input: phononLib.Element, o: awesompleteLib.awesompleteMod.Options): js.Any = js.native
   def autocomplete(input: stdLib.HTMLElement): js.Any = js.native
-  def autocomplete(input: stdLib.HTMLElement, o: awesompleteLib.awesompleteMod.AwesompleteNs.Options): js.Any = js.native
+  def autocomplete(input: stdLib.HTMLElement, o: awesompleteLib.awesompleteMod.Options): js.Any = js.native
   def confirm(text: java.lang.String): PhononDialogComponent = js.native
   def confirm(text: java.lang.String, title: java.lang.String): PhononDialogComponent = js.native
   def confirm(text: java.lang.String, title: java.lang.String, cancelable: scala.Boolean): PhononDialogComponent = js.native

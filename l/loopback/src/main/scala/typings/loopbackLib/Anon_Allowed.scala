@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Allowed
-  extends org.scalablytyped.runtime.Instantiable1[/* data */ js.Any, loopbackLib.loopbackMod.lNs.Model] {
+  extends org.scalablytyped.runtime.Instantiable1[/* data */ js.Any, loopbackLib.loopbackMod.Model] {
   /** Data source to which the model is connected, if any. */
   var dataSource: js.Any = js.native
   /** The name of the model. */
@@ -25,7 +25,7 @@ trait Anon_Allowed
     * @param {boolean} allowed True if the request is allowed; false otherwise
     */
   def checkAccess(
-    token: loopbackLib.loopbackMod.lNs.AccessToken,
+    token: loopbackLib.loopbackMod.AccessToken,
     modelId: js.Any,
     sharedMethod: js.Any,
     ctx: js.Any,
@@ -53,11 +53,7 @@ trait Anon_Allowed
     * @end
     */
   def getApp(
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* app */ loopbackLib.loopbackMod.lNs.Application, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ stdLib.Error, /* app */ loopbackLib.loopbackMod.Application, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Enabled deeply-nested queries of related models via REST API
@@ -111,7 +107,7 @@ trait Anon_Allowed
     * @param {RemoteMethodOptions} options The remoting options.
     * See [Remote methods - Options](docs.strongloop.com/display/LB/Remote+methods#Remotemethods-Options)
     */
-  def remoteMethod(name: java.lang.String, options: loopbackLib.loopbackMod.lNs.RemoteMethodOptions): scala.Unit = js.native
+  def remoteMethod(name: java.lang.String, options: loopbackLib.loopbackMod.RemoteMethodOptions): scala.Unit = js.native
   /**
     * The `loopback.Model.extend()` method calls this when you create a model that extends another model.
     * Add any setup or configuration code you want executed when the model is created.

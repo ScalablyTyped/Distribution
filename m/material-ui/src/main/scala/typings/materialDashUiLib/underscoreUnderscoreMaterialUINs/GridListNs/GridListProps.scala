@@ -9,7 +9,7 @@ trait GridListProps extends js.Object {
   var cellHeight: js.UndefOr[scala.Double | materialDashUiLib.materialDashUiLibStrings.auto] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
   var padding: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object GridListProps {
@@ -18,7 +18,7 @@ object GridListProps {
     cellHeight: scala.Double | materialDashUiLib.materialDashUiLibStrings.auto = null,
     cols: scala.Int | scala.Double = null,
     padding: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): GridListProps = {
     val __obj = js.Dynamic.literal()
     if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])

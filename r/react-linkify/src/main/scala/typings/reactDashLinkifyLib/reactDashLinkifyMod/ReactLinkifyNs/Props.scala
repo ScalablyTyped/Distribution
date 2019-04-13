@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   /**
     * Custom anchor tag creator
     * Default to using exisint <a> tag with the provided href={decoratedHref}, key={key}
@@ -17,7 +17,7 @@ trait Props extends js.Object {
       /* decoratedHref */ java.lang.String, 
       /* decoratedText */ java.lang.String, 
       /* key */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /**
@@ -40,8 +40,8 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
-    componentDecorator: (/* decoratedHref */ java.lang.String, /* decoratedText */ java.lang.String, /* key */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode,
+    componentDecorator: (/* decoratedHref */ java.lang.String, /* decoratedText */ java.lang.String, /* key */ scala.Double) => reactLib.reactMod.ReactNode = null,
     hrefDecorator: /* urlHref */ java.lang.String => java.lang.String = null,
     matchDecorator: /* text */ java.lang.String => js.Array[MatchInfo] | scala.Null = null,
     textDecorator: /* urlText */ java.lang.String => java.lang.String = null

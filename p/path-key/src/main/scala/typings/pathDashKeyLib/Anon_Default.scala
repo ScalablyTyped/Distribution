@@ -19,6 +19,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(): java.lang.String = js.native
-  def apply(options: pathDashKeyLib.pathDashKeyMod.pathKeyNs.Options): java.lang.String = js.native
+  def apply(options: pathDashKeyLib.pathDashKeyMod.Options): java.lang.String = js.native
 }
 

@@ -34,40 +34,87 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("avoscloud-sdk", "Object")
 @js.native
-class Object ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object {
+class Object () extends BaseObject {
   def this(attributes: js.Array[java.lang.String]) = this()
   def this(className: java.lang.String) = this()
   def this(attributes: js.Array[java.lang.String], options: js.Any) = this()
   def this(className: java.lang.String, options: js.Any) = this()
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  var attributes: js.Any = js.native
+  var changed: scala.Boolean = js.native
+  var cid: java.lang.String = js.native
+  var className: java.lang.String = js.native
+  var createdAt: js.Any = js.native
+  var id: js.Any = js.native
+  var updatedAt: js.Any = js.native
+  def add(attr: java.lang.String, item: js.Any): Object = js.native
+  def addUnique(attr: java.lang.String, item: js.Any): js.Any = js.native
+  def change(options: js.Any): Object = js.native
+  def changedAttributes(diff: js.Any): scala.Boolean = js.native
+  def clear(options: js.Any): js.Any = js.native
+  def destroy[T](): Promise[T] = js.native
+  def destroy[T](options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.DestroyOptions): Promise[T] = js.native
+  def dirty(attr: java.lang.String): scala.Boolean = js.native
+  def dirtyKeys(): js.Array[java.lang.String] = js.native
+  def escape(attr: java.lang.String): java.lang.String = js.native
+  def existed(): scala.Boolean = js.native
+  def fetch[T](): Promise[T] = js.native
+  def fetch[T](options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.FetchOptions): Promise[T] = js.native
+  def get(attr: java.lang.String): js.Any = js.native
+  def getACL(): ACL = js.native
+  def getObjectId(): java.lang.String = js.native
+  def has(attr: java.lang.String): scala.Boolean = js.native
+  def hasChanged(attr: java.lang.String): scala.Boolean = js.native
+  def increment(attr: java.lang.String): js.Any = js.native
+  def increment(attr: java.lang.String, amount: scala.Double): js.Any = js.native
+  def initialize(): scala.Unit = js.native
+  def isValid(): scala.Boolean = js.native
+  def op(attr: java.lang.String): js.Any = js.native
+  def previous(attr: java.lang.String): js.Any = js.native
+  def previousAttributes(): js.Any = js.native
+  def relation(attr: java.lang.String): Relation = js.native
+  def remove(attr: java.lang.String, item: js.Any): js.Any = js.native
+  def save[T](): Promise[T] = js.native
+  def save[T](options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.SaveOptions): Promise[T] = js.native
+  def save[T](options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.SaveOptions, arg2: js.Any): Promise[T] = js.native
+  def save[T](options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.SaveOptions, arg2: js.Any, arg3: js.Any): Promise[T] = js.native
+  def set(key: java.lang.String, value: js.Any): scala.Boolean = js.native
+  def set(
+    key: java.lang.String,
+    value: js.Any,
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.SetOptions
+  ): scala.Boolean = js.native
+  def setACL(acl: ACL): scala.Boolean = js.native
+  def setACL(acl: ACL, options: SuccessFailureOptions): scala.Boolean = js.native
+  def unset(attr: java.lang.String): js.Any = js.native
+  def unset(attr: java.lang.String, options: js.Any): js.Any = js.native
+  def validate(attrs: js.Any): scala.Boolean = js.native
+  def validate(attrs: js.Any, options: SuccessFailureOptions): scala.Boolean = js.native
 }
 
 /* static members */
 @JSImport("avoscloud-sdk", "Object")
 @js.native
 object Object extends js.Object {
-  def destroyAll[T](list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+  def destroyAll[T](list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def destroyAll[T](
-    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ObjectNs.DestroyAllOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.Object],
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.DestroyAllOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def extend(className: java.lang.String): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
   def fetchAll[T](
-    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.Object],
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.SuccessFailureOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def fetchAllIfNeeded[T](
-    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
-  def saveAll[T](list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.Object],
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.SuccessFailureOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
+  def saveAll[T](list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
   def saveAll[T](
-    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
-    options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ObjectNs.SaveAllOptions
-  ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.Object],
+    options: avoscloudDashSdkLib.avoscloudDashSdkMod.ObjectNs.SaveAllOptions
+  ): avoscloudDashSdkLib.avoscloudDashSdkMod.Promise[T] = js.native
 }
 

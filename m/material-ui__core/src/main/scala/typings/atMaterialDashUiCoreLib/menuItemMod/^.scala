@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/MenuItem", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps] = js.native
+  val default: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps] = js.native
 }
 

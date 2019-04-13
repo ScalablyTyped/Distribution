@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DeviceFarm ()
   extends awsDashSdkLib.awsDashSdkMod.DeviceFarm {
-  def this(options: awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDevicefarmMod.ClientConfiguration) = this()
 }
 

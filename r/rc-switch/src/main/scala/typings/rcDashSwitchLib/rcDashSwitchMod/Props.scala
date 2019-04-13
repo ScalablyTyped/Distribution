@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation._
 trait Props extends js.Object {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined
-  var checkedChildren: reactLib.reactMod.ReactNs.ReactNode
+  var checkedChildren: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var loadingIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var loadingIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* checked */ scala.Boolean, scala.Unit]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* checked */ scala.Boolean, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
-  var unCheckedChildren: reactLib.reactMod.ReactNs.ReactNode
+  var unCheckedChildren: reactLib.reactMod.ReactNode
 }
 
 object Props {
   @scala.inline
   def apply(
-    checkedChildren: reactLib.reactMod.ReactNs.ReactNode,
-    unCheckedChildren: reactLib.reactMod.ReactNs.ReactNode,
+    checkedChildren: reactLib.reactMod.ReactNode,
+    unCheckedChildren: reactLib.reactMod.ReactNode,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    loadingIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    loadingIcon: reactLib.reactMod.ReactNode = null,
     onChange: /* checked */ scala.Boolean => scala.Unit = null,
     onClick: /* checked */ scala.Boolean => scala.Unit = null,
     prefixCls: java.lang.String = null,

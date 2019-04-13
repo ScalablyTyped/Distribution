@@ -7,27 +7,24 @@ import scala.scalajs.js.annotation._
 
 object fixedDashDataDashTableLibComponents {
   @scala.inline
-  def Cell: reactLib.reactMod.ReactNs.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.CellProps] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.Cell].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.CellProps]]
+  def Cell: reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.CellProps] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.Cell].asInstanceOf[reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.CellProps]]
   @scala.inline
-  def Column: reactLib.reactMod.ReactNs.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnProps] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.Column].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnProps]]
+  def Column: reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnProps] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.Column].asInstanceOf[reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnProps]]
   @scala.inline
-  def ColumnGroup: reactLib.reactMod.ReactNs.ComponentType[
-    fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnGroupProps
-  ] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnGroupProps]]
+  def ColumnGroup: reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnGroupProps] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnGroup].asInstanceOf[reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnGroupProps]]
   @scala.inline
-  def Table: reactLib.reactMod.ReactNs.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.TableProps] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.Table].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.TableProps]]
+  def Table: reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.TableProps] = js.constructorOf[fixedDashDataDashTableLib.fixedDashDataDashTableMod.Table].asInstanceOf[reactLib.reactMod.ComponentType[fixedDashDataDashTableLib.fixedDashDataDashTableMod.TableProps]]
   @scala.inline
-  def CellProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.CellProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.CellProps
-  type CellProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.CellProps
+  def CellProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.CellProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.CellProps
+  type CellProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.CellProps
   @scala.inline
-  def ColumnGroupProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnGroupProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnGroupProps
-  type ColumnGroupProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnGroupProps
+  def ColumnGroupProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnGroupProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnGroupProps
+  type ColumnGroupProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnGroupProps
   @scala.inline
-  def ColumnProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnProps
-  type ColumnProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.ColumnProps
+  def ColumnProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnProps
+  type ColumnProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.ColumnProps
   @scala.inline
-  def TableProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.TableProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.TableProps
-  type TableProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.FixedDataTableNs.TableProps
+  def TableProps: fixedDashDataDashTableLib.fixedDashDataDashTableMod.TableProps.type = fixedDashDataDashTableLib.fixedDashDataDashTableMod.TableProps
+  type TableProps = fixedDashDataDashTableLib.fixedDashDataDashTableMod.TableProps
 }
 

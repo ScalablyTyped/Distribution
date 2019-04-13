@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 /** Type corresponding to items stored in $WebSocket#sendQueue instance. */
 trait IWebSocketQueueItem extends js.Object {
-  var defered: angularLib.angularMod.angularNs.IPromise[scala.Unit]
+  var defered: angularLib.angularMod.IPromise[scala.Unit]
   var message: js.Any
 }
 
 object IWebSocketQueueItem {
   @scala.inline
-  def apply(defered: angularLib.angularMod.angularNs.IPromise[scala.Unit], message: js.Any): IWebSocketQueueItem = {
+  def apply(defered: angularLib.angularMod.IPromise[scala.Unit], message: js.Any): IWebSocketQueueItem = {
     val __obj = js.Dynamic.literal(defered = defered, message = message)
   
     __obj.asInstanceOf[IWebSocketQueueItem]

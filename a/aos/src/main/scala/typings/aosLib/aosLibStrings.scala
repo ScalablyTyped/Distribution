@@ -8,115 +8,115 @@ import scala.scalajs.js.annotation._
 object aosLibStrings {
   @js.native
   sealed trait `aos:in`
-    extends aosLib.aosMod.AosNs.AosEventType
+    extends aosLib.aosMod.AosEventType
   
   @js.native
   sealed trait `aos:out`
-    extends aosLib.aosMod.AosNs.AosEventType
+    extends aosLib.aosMod.AosEventType
   
   @js.native
   sealed trait `bottom-bottom`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait `bottom-center`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait `bottom-top`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait `center-bottom`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait `center-center`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait `center-top`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait ease
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-back`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-cubic`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-out`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-out-back`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-out-cubic`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-out-quad`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-out-quart`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-out-sine`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-quad`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-quart`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-in-sine`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-out`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-out-back`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-out-cubic`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-out-quad`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-out-quart`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait `ease-out-sine`
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait linear
-    extends aosLib.aosMod.AosNs.easingOptions
+    extends aosLib.aosMod.easingOptions
   
   @js.native
   sealed trait mobile extends js.Object
@@ -129,15 +129,15 @@ object aosLibStrings {
   
   @js.native
   sealed trait `top-bottom`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait `top-center`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @js.native
   sealed trait `top-top`
-    extends aosLib.aosMod.AosNs.anchorPlacementOptions
+    extends aosLib.aosMod.anchorPlacementOptions
   
   @scala.inline
   def `aos:in`: `aos:in` = "aos:in".asInstanceOf[`aos:in`]

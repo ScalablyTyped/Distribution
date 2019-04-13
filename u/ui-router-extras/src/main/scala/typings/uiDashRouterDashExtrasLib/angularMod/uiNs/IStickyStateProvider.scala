@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Sticky state provider
   */
 trait IStickyStateProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   def debugMode(): scala.Boolean
   def enableDebug(enabled: scala.Boolean): scala.Boolean
   def registerStickyState(state: IStickyState): scala.Unit

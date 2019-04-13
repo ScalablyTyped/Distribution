@@ -19,7 +19,7 @@ object TabProps {
     grid: js.Any = null,
     menu: js.Any = null,
     menuPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
-    onTabChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ TabProps) => scala.Unit = null,
+    onTabChange: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ TabProps) => scala.Unit = null,
     panes: js.Array[semanticDashUiDashReactLib.Anon_MenuItem] = null,
     renderActiveOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): TabProps = {

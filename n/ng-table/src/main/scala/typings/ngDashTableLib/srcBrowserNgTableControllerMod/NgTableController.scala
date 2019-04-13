@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ng-table/src/browser/ngTableController", "NgTableController")
 @js.native
 class NgTableController[TParams, TCol /* <: ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef | ngDashTableLib.srcBrowserPublicDashInterfacesMod.IDynamicTableColDef */] protected () extends js.Object {
-  def this($scope: ITableScope[TParams], $timeout: angularLib.angularMod.angularNs.ITimeoutService, $parse: angularLib.angularMod.angularNs.IParseService, $compile: angularLib.angularMod.angularNs.ICompileService, $attrs: angularLib.angularMod.angularNs.IAttributes with ngDashTableLib.srcBrowserPublicDashInterfacesMod.ITableInputAttributes, $element: angularLib.angularMod.angularNs.IAugmentedJQuery, $document: angularLib.angularMod.angularNs.IDocumentService, ngTableColumn: ngDashTableLib.srcBrowserNgTableColumnMod.NgTableColumn[TCol], ngTableEventsChannel: ngDashTableLib.srcCoreMod.NgTableEventsChannel) = this()
+  def this($scope: ITableScope[TParams], $timeout: angularLib.angularMod.ITimeoutService, $parse: angularLib.angularMod.IParseService, $compile: angularLib.angularMod.ICompileService, $attrs: angularLib.angularMod.IAttributes with ngDashTableLib.srcBrowserPublicDashInterfacesMod.ITableInputAttributes, $element: angularLib.angularMod.IAugmentedJQuery, $document: angularLib.angularMod.IDocumentService, ngTableColumn: ngDashTableLib.srcBrowserNgTableColumnMod.NgTableColumn[TCol], ngTableEventsChannel: ngDashTableLib.srcCoreMod.NgTableEventsChannel) = this()
   @JSName("$attrs")
   var $attrs: js.Any = js.native
   @JSName("$compile")

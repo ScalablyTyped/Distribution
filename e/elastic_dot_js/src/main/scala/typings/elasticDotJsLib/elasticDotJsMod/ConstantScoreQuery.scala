@@ -11,43 +11,35 @@ import scala.scalajs.js.annotation._
   Constructs a query where each documents returned by the internal
   query or filter have a constant score equal to the boost factor.
   */
-class ConstantScoreQuery ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.ConstantScoreQuery {
+class ConstantScoreQuery () extends Query {
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost value for documents matching the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ConstantScoreQuery = js.native
+  def boost(boost: scala.Double): ConstantScoreQuery = js.native
   /*
     Enables caching of the filter.
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ConstantScoreQuery = js.native
+  def cache(trueFalse: scala.Boolean): ConstantScoreQuery = js.native
   /*
     Set the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(k: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ConstantScoreQuery = js.native
+  def cacheKey(k: java.lang.String): ConstantScoreQuery = js.native
   /*
     Adds the filter to apply a constant score to.
     */
-  /* CompleteClass */
-  override def filter(oFilter: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ConstantScoreQuery = js.native
+  def filter(oFilter: js.Object): ConstantScoreQuery = js.native
   /*
     Adds the query to apply a constant score to.
     */
-  /* CompleteClass */
-  override def query(oQuery: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.ConstantScoreQuery = js.native
+  def query(oQuery: js.Object): ConstantScoreQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
 }
 

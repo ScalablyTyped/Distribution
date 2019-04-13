@@ -26,7 +26,7 @@ trait ScatterPlotProps extends js.Object {
   ] = js.undefined
   var symbolSize: js.UndefOr[scala.Double | ScatterPlotSizeGetter] = js.undefined
   var theme: js.UndefOr[atNivoCoreLib.atNivoCoreMod.Theme] = js.undefined
-  var tooltip: js.UndefOr[js.Function1[/* data */ ScatterPlotDatum, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var tooltip: js.UndefOr[js.Function1[/* data */ ScatterPlotDatum, reactLib.reactMod.ReactNode]] = js.undefined
   var tooltipFormat: js.UndefOr[TooltipFormatter] = js.undefined
   var useMesh: js.UndefOr[scala.Boolean] = js.undefined
   var xScale: js.UndefOr[atNivoScalesLib.atNivoScalesMod.Scale] = js.undefined
@@ -54,7 +54,7 @@ object ScatterPlotProps {
     symbolShape: atNivoScatterplotLib.atNivoScatterplotLibStrings.circle | atNivoScatterplotLib.atNivoScatterplotLibStrings.square = null,
     symbolSize: scala.Double | ScatterPlotSizeGetter = null,
     theme: atNivoCoreLib.atNivoCoreMod.Theme = null,
-    tooltip: /* data */ ScatterPlotDatum => reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltip: /* data */ ScatterPlotDatum => reactLib.reactMod.ReactNode = null,
     tooltipFormat: TooltipFormatter = null,
     useMesh: js.UndefOr[scala.Boolean] = js.undefined,
     xScale: atNivoScalesLib.atNivoScalesMod.Scale = null,

@@ -25,6 +25,9 @@ object typedocLibStrings {
   sealed trait intrinsic extends js.Object
   
   @js.native
+  sealed trait keyof extends js.Object
+  
+  @js.native
   sealed trait number extends js.Object
   
   @js.native
@@ -72,6 +75,8 @@ object typedocLibStrings {
   def intersection: intersection = "intersection".asInstanceOf[intersection]
   @scala.inline
   def intrinsic: intrinsic = "intrinsic".asInstanceOf[intrinsic]
+  @scala.inline
+  def keyof: keyof = "keyof".asInstanceOf[keyof]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline

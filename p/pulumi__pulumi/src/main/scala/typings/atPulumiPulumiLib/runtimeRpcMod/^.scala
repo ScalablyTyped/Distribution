@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/pulumi/runtime/rpc", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val specialArchiveSig: /* 0def7320c3a5731c473e5ecbe6d01bc7 */ java.lang.String = js.native
-  val specialAssetSig: /* c44067f5952c0a294b673a41bacd8c17 */ java.lang.String = js.native
-  val specialSecretSig: /* 1b47061264138c4ac30d75fd1eb44270 */ java.lang.String = js.native
-  val specialSigKey: /* 4dabf18193072939515e22adb298388d */ java.lang.String = js.native
-  val unknownValue: /* 04da6b54-80e4-46f7-96ec-b56ff0331ba9 */ java.lang.String = js.native
+  val specialArchiveSig: atPulumiPulumiLib.atPulumiPulumiLibStrings.`0def7320c3a5731c473e5ecbe6d01bc7` = js.native
+  val specialAssetSig: atPulumiPulumiLib.atPulumiPulumiLibStrings.c44067f5952c0a294b673a41bacd8c17 = js.native
+  val specialSecretSig: atPulumiPulumiLib.atPulumiPulumiLibStrings.`1b47061264138c4ac30d75fd1eb44270` = js.native
+  val specialSigKey: atPulumiPulumiLib.atPulumiPulumiLibStrings.`4dabf18193072939515e22adb298388d` = js.native
+  val unknownValue: atPulumiPulumiLib.atPulumiPulumiLibStrings.`04da6b54-80e4-46f7-96ec-b56ff0331ba9` = js.native
   def deserializeProperties(outputsStruct: js.Any): js.Any = js.native
   def deserializeProperty(prop: js.Any): js.Any = js.native
   def resolveProperties(

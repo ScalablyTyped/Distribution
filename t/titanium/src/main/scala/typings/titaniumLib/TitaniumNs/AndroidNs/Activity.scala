@@ -16,7 +16,7 @@ trait Activity
   			 */
   val actionBar: ActionBar = js.native
   /**
-  			 * The `Intent` that was used to start this Activity.
+  			 * The last `Intent` received by this activity.
   			 */
   val intent: Intent = js.native
   /**

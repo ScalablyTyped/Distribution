@@ -6,22 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HTMLTransitionGroupProps[T]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLAttributes[T] {
   var childFactory: js.UndefOr[
-    js.Function1[
-      /* child */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ]
+    js.Function1[/* child */ reactLib.reactMod.ReactElement[_], reactLib.reactMod.ReactElement[_]]
   ] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object HTMLTransitionGroupProps {
   @scala.inline
   def apply[T](
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
-    childFactory: /* child */ reactLib.reactMod.ReactNs.ReactElement[_] => reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[T] = null,
+    childFactory: /* child */ reactLib.reactMod.ReactElement[_] => reactLib.reactMod.ReactElement[_] = null,
+    component: reactLib.reactMod.ReactType[_] = null
   ): HTMLTransitionGroupProps[T] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Zipper", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Zipper */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Zipper = js.native
   val zipper: fpDashTsLib.libApplicativeMod.Applicative1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] = js.native
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[Zipper[A]] = js.native
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A], focusIndex: scala.Double): fpDashTsLib.libOptionMod.Option[Zipper[A]] = js.native

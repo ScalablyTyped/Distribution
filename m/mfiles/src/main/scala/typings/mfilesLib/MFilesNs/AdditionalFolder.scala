@@ -19,3 +19,8 @@ class AdditionalFolder ()
   override def Clone(): mfilesLib.IAdditionalFolder = js.native
 }
 
+@JSGlobal("MFiles.AdditionalFolder")
+@js.native
+object AdditionalFolder
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAdditionalFolder]
+

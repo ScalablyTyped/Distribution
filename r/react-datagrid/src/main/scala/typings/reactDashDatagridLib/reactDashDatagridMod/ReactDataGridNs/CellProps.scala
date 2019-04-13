@@ -21,7 +21,7 @@ trait CellProps extends js.Object {
   /**
     * a style for the cell
     */
-  var style: reactLib.reactMod.ReactNs.CSSProperties
+  var style: reactLib.reactMod.CSSProperties
 }
 
 object CellProps {
@@ -30,7 +30,7 @@ object CellProps {
     className: java.lang.String,
     index: scala.Double,
     rowIndex: scala.Double,
-    style: reactLib.reactMod.ReactNs.CSSProperties
+    style: reactLib.reactMod.CSSProperties
   ): CellProps = {
     val __obj = js.Dynamic.literal(className = className, index = index, rowIndex = rowIndex, style = style)
   

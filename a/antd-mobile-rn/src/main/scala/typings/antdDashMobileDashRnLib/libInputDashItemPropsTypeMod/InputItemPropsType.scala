@@ -11,7 +11,7 @@ trait InputItemPropsType extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var editable: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var labelNumber: js.UndefOr[scala.Double] = js.undefined
   var labelPosition: js.UndefOr[
     antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.left | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.top
@@ -43,7 +43,7 @@ object InputItemPropsType {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     labelNumber: scala.Int | scala.Double = null,
     labelPosition: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.left | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.top = null,
     locale: js.Object = null,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ClampToGroundEllipsoid extends js.Object {
   var clampToGround: js.UndefOr[scala.Boolean] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var sourceUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -15,7 +15,7 @@ object Anon_ClampToGroundEllipsoid {
   @scala.inline
   def apply(
     clampToGround: js.UndefOr[scala.Boolean] = js.undefined,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     sourceUri: java.lang.String = null
   ): Anon_ClampToGroundEllipsoid = {
     val __obj = js.Dynamic.literal()

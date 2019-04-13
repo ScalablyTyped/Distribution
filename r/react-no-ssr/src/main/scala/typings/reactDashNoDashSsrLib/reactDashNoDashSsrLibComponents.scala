@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashNoDashSsrLibComponents {
   @scala.inline
-  def ReactDashNoDashSsr: reactLib.reactMod.ReactNs.ComponentType[Anon_OnSSR] = js.constructorOf[reactDashNoDashSsrLib.reactDashNoDashSsrMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNoDashSsrLib.Anon_OnSSR]]
+  def ReactDashNoDashSsr: reactLib.reactMod.ComponentType[Anon_OnSSR] = js.constructorOf[reactDashNoDashSsrLib.reactDashNoDashSsrMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNoDashSsrLib.Anon_OnSSR]]
   @scala.inline
   def Anon_OnSSR: reactDashNoDashSsrLib.Anon_OnSSR.type = reactDashNoDashSsrLib.Anon_OnSSR
   type Anon_OnSSR = reactDashNoDashSsrLib.Anon_OnSSR

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-svg", "Use")
 @js.native
 class Use protected ()
-  extends reactLib.reactMod.ReactNs.Component[UseProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[UseProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: UseProps) = this()
   def this(props: UseProps, context: js.Any) = this()
 }

@@ -10,7 +10,7 @@ trait Config extends js.Object {
   var baseURL: java.lang.String
   var cancelToken: adoneLib.adoneNs.netNs.httpNs.clientNs.CancelToken
   var data: Data
-  var formData: /* import warning: ImportType.apply Failed type conversion: {[formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>} */ js.Any
+  var formData: org.scalablytyped.runtime.StringDictionary[FormValue | js.Array[FormValue]]
   var headers: RequestHeaders
   var httpAgent: js.Object
   var httpsAgent: js.Object
@@ -42,7 +42,7 @@ object Config {
     baseURL: java.lang.String,
     cancelToken: adoneLib.adoneNs.netNs.httpNs.clientNs.CancelToken,
     data: Data,
-    formData: /* import warning: ImportType.apply Failed type conversion: {[formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>} */ js.Any,
+    formData: org.scalablytyped.runtime.StringDictionary[FormValue | js.Array[FormValue]],
     headers: RequestHeaders,
     httpAgent: js.Object,
     httpsAgent: js.Object,

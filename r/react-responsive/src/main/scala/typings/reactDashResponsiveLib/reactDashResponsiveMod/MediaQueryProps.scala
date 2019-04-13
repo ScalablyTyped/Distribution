@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait MediaQueryProps extends MediaQueryAllQueryable {
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* matches */ scala.Boolean, reactLib.reactMod.ReactNs.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* matches */ scala.Boolean, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.SFC[_] | (reactLib.reactMod.ReactNs.ClassType[_, _, _]) | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState])
+    java.lang.String | reactLib.reactMod.SFC[_] | (reactLib.reactMod.ClassType[_, _, _]) | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState])
   ] = js.undefined
   var onBeforeChange: js.UndefOr[js.Function1[/* matches */ scala.Boolean, scala.Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* matches */ scala.Boolean, scala.Unit]] = js.undefined
   var query: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var values: js.UndefOr[stdLib.Partial[MediaQueryMatchers]] = js.undefined
 }
 
@@ -27,11 +27,11 @@ object MediaQueryProps {
     aspectRatio: java.lang.String = null,
     aural: js.UndefOr[scala.Boolean] = js.undefined,
     braille: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* matches */ scala.Boolean, reactLib.reactMod.ReactNs.ReactNode]) = null,
+    children: reactLib.reactMod.ReactNode | (js.Function1[/* matches */ scala.Boolean, reactLib.reactMod.ReactNode]) = null,
     className: java.lang.String = null,
     color: js.UndefOr[scala.Boolean] = js.undefined,
     colorIndex: js.UndefOr[scala.Boolean] = js.undefined,
-    component: java.lang.String | reactLib.reactMod.ReactNs.SFC[_] | (reactLib.reactMod.ReactNs.ClassType[_, _, _]) | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) = null,
+    component: java.lang.String | reactLib.reactMod.SFC[_] | (reactLib.reactMod.ClassType[_, _, _]) | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) = null,
     deviceAspectRatio: java.lang.String = null,
     deviceHeight: scala.Double | java.lang.String = null,
     deviceWidth: scala.Double | java.lang.String = null,
@@ -69,7 +69,7 @@ object MediaQueryProps {
     resolution: scala.Double | java.lang.String = null,
     scan: reactDashResponsiveLib.reactDashResponsiveLibStrings.progressive | reactDashResponsiveLib.reactDashResponsiveLibStrings.interlace = null,
     screen: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tty: js.UndefOr[scala.Boolean] = js.undefined,
     tv: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: MediaQueryType = null,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Tree", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Tree */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Tree = js.native
   val tree: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] = js.native
   def drawForest(forest: fpDashTsLib.libArrayMod.Global.Array[Tree[java.lang.String]]): java.lang.String = js.native
   def drawTree(tree: Tree[java.lang.String]): java.lang.String = js.native

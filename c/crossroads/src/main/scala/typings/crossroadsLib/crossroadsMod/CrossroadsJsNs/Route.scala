@@ -11,7 +11,7 @@ trait Route extends js.Object {
     * If crossroads should try to match this Route even after matching another Route.
     */
   var greedy: scala.Boolean = js.native
-  var matched: signalsLib.signalsMod.signalsNs.Signal[_] = js.native
+  var matched: signalsLib.signalsMod.Signal[_] = js.native
   /**
     * Object used to configure parameters/segments validation rules.
     */
@@ -19,7 +19,7 @@ trait Route extends js.Object {
   /**
     * Signal dispatched every time a request "leaves" the route.
     */
-  var switched: signalsLib.signalsMod.signalsNs.Signal[_] = js.native
+  var switched: signalsLib.signalsMod.Signal[_] = js.native
   /**
     * Add a listener to the signal.
     *
@@ -27,9 +27,9 @@ trait Route extends js.Object {
     * @param listenercontext Context on which listener will be executed (object that should represent the `this` variable inside listener function).
     * @param priority The priority level of the event listener. Listeners with higher priority will be executed before listeners with lower priority. Listeners with same priority level will be executed at the same order as they were added. (default = 0)
     */
-  def add(listener: js.Function): signalsLib.signalsMod.signalsNs.SignalBinding[_] = js.native
-  def add(listener: js.Function, listenerContext: js.Any): signalsLib.signalsMod.signalsNs.SignalBinding[_] = js.native
-  def add(listener: js.Function, listenerContext: js.Any, priority: stdLib.Number): signalsLib.signalsMod.signalsNs.SignalBinding[_] = js.native
+  def add(listener: js.Function): signalsLib.signalsMod.SignalBinding[_] = js.native
+  def add(listener: js.Function, listenerContext: js.Any): signalsLib.signalsMod.SignalBinding[_] = js.native
+  def add(listener: js.Function, listenerContext: js.Any, priority: stdLib.Number): signalsLib.signalsMod.SignalBinding[_] = js.native
   /**
     * Remove route from crossroads and destroy it, releasing memory.
     */

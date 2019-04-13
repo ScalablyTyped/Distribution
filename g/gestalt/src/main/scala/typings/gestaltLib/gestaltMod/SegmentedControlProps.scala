@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SegmentedControlProps extends js.Object {
-  var items: js.Array[reactLib.reactMod.ReactNs.ReactNode]
+  var items: js.Array[reactLib.reactMod.ReactNode]
   var selectedItemIndex: scala.Double
   var size: js.UndefOr[gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg] = js.undefined
   def onChange(args: gestaltLib.Anon_ActiveIndex): scala.Unit
@@ -15,7 +15,7 @@ trait SegmentedControlProps extends js.Object {
 object SegmentedControlProps {
   @scala.inline
   def apply(
-    items: js.Array[reactLib.reactMod.ReactNs.ReactNode],
+    items: js.Array[reactLib.reactMod.ReactNode],
     onChange: gestaltLib.Anon_ActiveIndex => scala.Unit,
     selectedItemIndex: scala.Double,
     size: gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null

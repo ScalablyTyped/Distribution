@@ -16,9 +16,9 @@ class AccountBalanceWalletOutlined protected ()
 @JSImport("@material-ui/icons", "AccountBalanceWalletOutlined")
 @js.native
 class AccountBalanceWalletOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

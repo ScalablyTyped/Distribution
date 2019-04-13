@@ -67,7 +67,7 @@ import scala.scalajs.js.annotation._
     js.Function2[
       /* option */ OptionType, 
       /* labelMeta */ FormatOptionLabelMeta[OptionType], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /* Resolves option data to a string to be displayed as the label by components */
@@ -168,14 +168,14 @@ import scala.scalajs.js.annotation._
   /* Fired when the user scrolls to the bottom of the menu */
   var onMenuScrollToBottom: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   /* Fired when the user scrolls to the top of the menu */
   var onMenuScrollToTop: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -227,7 +227,7 @@ object Props {
     escapeClearsValue: js.UndefOr[scala.Boolean] = js.undefined,
     filterOption: (/* option */ reactDashSelectLib.libFiltersMod.Option, /* rawInput */ java.lang.String) => scala.Boolean = null,
     formatGroupLabel: reactDashSelectLib.libBuiltinsMod.formatGroupLabel[OptionType] = null,
-    formatOptionLabel: (/* option */ OptionType, /* labelMeta */ FormatOptionLabelMeta[OptionType]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    formatOptionLabel: (/* option */ OptionType, /* labelMeta */ FormatOptionLabelMeta[OptionType]) => reactLib.reactMod.ReactNode = null,
     getOptionLabel: reactDashSelectLib.libBuiltinsMod.getOptionLabel[OptionType] = null,
     getOptionValue: reactDashSelectLib.libBuiltinsMod.getOptionValue[OptionType] = null,
     hideSelectedOptions: js.UndefOr[scala.Boolean] = js.undefined,
@@ -261,8 +261,8 @@ object Props {
     onKeyDown: reactDashSelectLib.libTypesMod.KeyboardEventHandler = null,
     onMenuClose: () => scala.Unit = null,
     onMenuOpen: () => scala.Unit = null,
-    onMenuScrollToBottom: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => scala.Unit = null,
-    onMenuScrollToTop: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => scala.Unit = null,
+    onMenuScrollToBottom: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => scala.Unit = null,
+    onMenuScrollToTop: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event] => scala.Unit = null,
     openMenuOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     openMenuOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     options: reactDashSelectLib.libTypesMod.GroupedOptionsType[OptionType] | reactDashSelectLib.libTypesMod.OptionsType[OptionType] = null,

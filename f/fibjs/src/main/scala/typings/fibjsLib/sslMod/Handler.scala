@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ssl", "Handler")
 @js.native
 class Handler ()
-  extends fibjsLib.sslMod.sslNs.Handler
+  extends fibjsLib.Class_SslHandler
 

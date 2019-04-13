@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object promiseDashMemoizeLibStrings {
   @js.native
   sealed trait json
-    extends promiseDashMemoizeLib.promiseDashMemoizeMod.promiseMemoizeNs._KeyResolver
+    extends promiseDashMemoizeLib.promiseDashMemoizeMod._KeyResolver
   
   @js.native
   sealed trait simple
-    extends promiseDashMemoizeLib.promiseDashMemoizeMod.promiseMemoizeNs._KeyResolver
+    extends promiseDashMemoizeLib.promiseDashMemoizeMod._KeyResolver
   
   @scala.inline
   def json: json = "json".asInstanceOf[json]

@@ -22,7 +22,7 @@ trait TextAreaItemPropsType extends js.Object {
   var onFocus: js.UndefOr[TextAreaEventHandle] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -45,7 +45,7 @@ object TextAreaItemPropsType {
     onFocus: TextAreaEventHandle = null,
     placeholder: java.lang.String = null,
     rows: scala.Int | scala.Double = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     value: java.lang.String = null
   ): TextAreaItemPropsType = {
     val __obj = js.Dynamic.literal()

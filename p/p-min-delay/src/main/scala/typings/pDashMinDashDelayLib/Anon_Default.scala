@@ -24,7 +24,7 @@ trait Anon_Default extends js.Object {
   def apply[ValueType](
     promise: js.Thenable[ValueType],
     minimumDelay: scala.Double,
-    options: pDashMinDashDelayLib.pDashMinDashDelayMod.pMinDelayNs.Options
+    options: pDashMinDashDelayLib.pDashMinDashDelayMod.Options
   ): js.Promise[ValueType] = js.native
 }
 

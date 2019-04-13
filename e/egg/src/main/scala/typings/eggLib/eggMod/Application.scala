@@ -15,7 +15,7 @@ class Application () extends EggApplication {
     */
   var locals: IApplicationLocals = js.native
   @JSName("middleware")
-  var middleware_Application: (js.Array[koaLib.koaMod.ApplicationNs.Middleware[_, js.Object]]) with IMiddleware = js.native
+  var middleware_Application: (js.Array[koaLib.koaMod.Middleware[_, js.Object]]) with IMiddleware = js.native
   /**
     * HTTP delete method
     */

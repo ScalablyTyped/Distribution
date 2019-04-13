@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait RangeProps
   extends antdDashMobileLib.libRangePropsTypeMod.RangePropsType {
-  var handleStyle: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.CSSProperties]] = js.undefined
+  var handleStyle: js.UndefOr[js.Array[reactLib.reactMod.CSSProperties]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var railStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var trackStyle: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.CSSProperties]] = js.undefined
+  var railStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var trackStyle: js.UndefOr[js.Array[reactLib.reactMod.CSSProperties]] = js.undefined
 }
 
 object RangeProps {
@@ -18,16 +18,16 @@ object RangeProps {
   def apply(
     defaultValue: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    handleStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] = null,
+    handleStyle: js.Array[reactLib.reactMod.CSSProperties] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     onAfterChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     onChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    railStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    railStyle: reactLib.reactMod.CSSProperties = null,
     step: scala.Int | scala.Double = null,
-    tipFormatter: /* value */ js.UndefOr[scala.Double] => reactLib.reactMod.ReactNs.ReactNode = null,
-    trackStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] = null,
+    tipFormatter: /* value */ js.UndefOr[scala.Double] => reactLib.reactMod.ReactNode = null,
+    trackStyle: js.Array[reactLib.reactMod.CSSProperties] = null,
     value: scala.Int | scala.Double = null
   ): RangeProps = {
     val __obj = js.Dynamic.literal()

@@ -41,7 +41,7 @@ trait Column extends js.Object {
     * Object - if you want cells in this column to be have a custom
     * style.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * String - one of 'left', 'right', 'center'.
     */
@@ -52,7 +52,7 @@ trait Column extends js.Object {
     * or anything that React can render, so you can customize it as you
     * please.
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * Boolean - controlled (which means you have to manually set column
     * visibility when it changes, by using onColumnVisibilityChange).
@@ -71,9 +71,9 @@ object Column {
     flex: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
     render: (/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps) => _ = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     textAlign: java.lang.String = null,
-    title: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    title: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): Column = {

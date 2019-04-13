@@ -6,25 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ErrorMessageProps extends js.Object {
-  var children: js.UndefOr[
-    js.Function1[/* errorMessage */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var children: js.UndefOr[js.Function1[/* errorMessage */ java.lang.String, reactLib.reactMod.ReactNode]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var component: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ComponentType[js.Object]] = js.undefined
+  var component: js.UndefOr[java.lang.String | reactLib.reactMod.ComponentType[js.Object]] = js.undefined
   var name: java.lang.String
-  var render: js.UndefOr[
-    js.Function1[/* errorMessage */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var render: js.UndefOr[js.Function1[/* errorMessage */ java.lang.String, reactLib.reactMod.ReactNode]] = js.undefined
 }
 
 object ErrorMessageProps {
   @scala.inline
   def apply(
     name: java.lang.String,
-    children: /* errorMessage */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
+    children: /* errorMessage */ java.lang.String => reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    component: java.lang.String | reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
-    render: /* errorMessage */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null
+    component: java.lang.String | reactLib.reactMod.ComponentType[js.Object] = null,
+    render: /* errorMessage */ java.lang.String => reactLib.reactMod.ReactNode = null
   ): ErrorMessageProps = {
     val __obj = js.Dynamic.literal(name = name)
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))

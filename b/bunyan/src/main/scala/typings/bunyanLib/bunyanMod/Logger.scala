@@ -10,8 +10,8 @@ trait Logger
   extends nodeLib.eventsMod.EventEmitter {
   var fields: js.Any = js.native
   var src: scala.Boolean = js.native
-  def addSerializers(serializers: bunyanLib.bunyanMod.LoggerNs.Serializers): scala.Unit = js.native
-  def addStream(stream: bunyanLib.bunyanMod.LoggerNs.Stream): scala.Unit = js.native
+  def addSerializers(serializers: Serializers): scala.Unit = js.native
+  def addStream(stream: Stream): scala.Unit = js.native
   def child(options: js.Object): Logger = js.native
   def child(options: js.Object, simple: scala.Boolean): Logger = js.native
   /**
@@ -115,12 +115,12 @@ trait Logger
     */
   def info(obj: js.Object, params: js.Any*): scala.Unit = js.native
   def level(): scala.Double = js.native
-  def level(value: bunyanLib.bunyanMod.LoggerNs.LogLevel): scala.Unit = js.native
+  def level(value: LogLevel): scala.Unit = js.native
   def levels(): js.Array[scala.Double] = js.native
   def levels(name: java.lang.String): scala.Double = js.native
-  def levels(name: java.lang.String, value: bunyanLib.bunyanMod.LoggerNs.LogLevel): scala.Unit = js.native
+  def levels(name: java.lang.String, value: LogLevel): scala.Unit = js.native
   def levels(name: scala.Double): scala.Double = js.native
-  def levels(name: scala.Double, value: bunyanLib.bunyanMod.LoggerNs.LogLevel): scala.Unit = js.native
+  def levels(name: scala.Double, value: LogLevel): scala.Unit = js.native
   def reopenFileStreams(): scala.Unit = js.native
   /**
     * Returns a boolean: is the `trace` level enabled?

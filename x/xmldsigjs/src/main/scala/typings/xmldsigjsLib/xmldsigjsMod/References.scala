@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "References")
 @js.native
-class References ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.References
+class References () extends XmlSignatureCollection[Reference]
 

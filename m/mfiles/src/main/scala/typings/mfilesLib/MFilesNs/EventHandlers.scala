@@ -23,3 +23,8 @@ class EventHandlers ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.EventHandlers")
+@js.native
+object EventHandlers
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IEventHandlers]
+

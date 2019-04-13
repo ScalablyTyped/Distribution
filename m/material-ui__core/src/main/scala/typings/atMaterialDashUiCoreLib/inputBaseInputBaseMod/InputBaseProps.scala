@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait InputBaseProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait InputBaseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[InputBaseClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
@@ -15,13 +15,13 @@ import scala.scalajs.js.annotation._
     (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
   ] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var endAdornment: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var endAdornment: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var inputComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[InputBaseComponentProps]] = js.undefined
+  var inputComponent: js.UndefOr[reactLib.reactMod.ReactType[InputBaseComponentProps]] = js.undefined
   var inputProps: js.UndefOr[InputBaseComponentProps] = js.undefined
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_]] = js.undefined
+  var inputRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
   var margin: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none
   ] = js.undefined
@@ -36,27 +36,24 @@ import scala.scalajs.js.annotation._
     * So these can just be inherited from the native `<div>`.
     */
   var onChange: js.UndefOr[
-    reactLib.reactMod.ReactNs.ChangeEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
+    reactLib.reactMod.ChangeEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
   ] = js.undefined
   var onFilled: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onKeyDown: js.UndefOr[
-    reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
+    reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
   ] = js.undefined
   var onKeyUp: js.UndefOr[
-    reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
+    reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement]
   ] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var renderPrefix: js.UndefOr[
-    js.Function1[
-      /* state */ atMaterialDashUiCoreLib.Anon_Dense, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function1[/* state */ atMaterialDashUiCoreLib.Anon_Dense, reactLib.reactMod.ReactNode]
   ] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var rowsMax: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var startAdornment: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var startAdornment: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
@@ -72,29 +69,29 @@ object InputBaseProps {
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[InputBaseClassKey]] = null,
     defaultValue: (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    endAdornment: reactLib.reactMod.ReactNs.ReactNode = null,
+    endAdornment: reactLib.reactMod.ReactNode = null,
     error: js.UndefOr[scala.Boolean] = js.undefined,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    inputComponent: reactLib.reactMod.ReactNs.ReactType[InputBaseComponentProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    inputComponent: reactLib.reactMod.ReactType[InputBaseComponentProps] = null,
     inputProps: InputBaseComponentProps = null,
-    inputRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    inputRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     margin: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: reactLib.reactMod.ReactNs.ChangeEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement] = null,
+    onChange: reactLib.reactMod.ChangeEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement] = null,
     onFilled: () => scala.Unit = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement | stdLib.HTMLInputElement] = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    renderPrefix: /* state */ atMaterialDashUiCoreLib.Anon_Dense => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderPrefix: /* state */ atMaterialDashUiCoreLib.Anon_Dense => reactLib.reactMod.ReactNode = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     rows: java.lang.String | scala.Double = null,
     rowsMax: java.lang.String | scala.Double = null,
-    startAdornment: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    startAdornment: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: java.lang.String = null,
     value: (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object = null
   ): InputBaseProps = {

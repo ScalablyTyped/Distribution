@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object atReachRouterMod {
   type AnchorProps = Omit[
-    reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
+    reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
       stdLib.HTMLAnchorElement
     ], 
     atReachRouterLib.atReachRouterLibStrings.href
@@ -16,8 +16,8 @@ package object atReachRouterMod {
   type HistoryListener = js.Function1[/* parameter */ HistoryListenerParameter, scala.Unit]
   type HistoryLocation = WindowLocation with atReachRouterLib.Anon_State
   type HistoryUnsubscribe = js.Function0[scala.Unit]
-  type LocationProviderRenderFn = js.Function1[/* context */ LocationContext, reactLib.reactMod.ReactNs.ReactNode]
-  type MatchRenderFn[TParams] = js.Function1[/* props */ MatchRenderProps[TParams], reactLib.reactMod.ReactNs.ReactNode]
+  type LocationProviderRenderFn = js.Function1[/* context */ LocationContext, reactLib.reactMod.ReactNode]
+  type MatchRenderFn[TParams] = js.Function1[/* props */ MatchRenderProps[TParams], reactLib.reactMod.ReactNode]
   type NavigateFn = js.Function2[
     /* to */ java.lang.String, 
     /* options */ js.UndefOr[NavigateOptions[js.Object]], 

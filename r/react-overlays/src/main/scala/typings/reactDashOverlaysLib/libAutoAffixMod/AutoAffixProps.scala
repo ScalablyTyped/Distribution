@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AutoAffixProps
-  extends reactDashOverlaysLib.libAffixMod.AffixNs.AffixProps {
+  extends reactDashOverlaysLib.libAffixMod.AffixProps {
   /**
     * Automatically set width when affixed
     */
@@ -15,20 +15,18 @@ trait AutoAffixProps
     * The logical container node or component for determining offset from bottom
     * of viewport, or a function that returns it
     */
-  var container: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance]
-  ] = js.undefined
+  var container: js.UndefOr[reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance]] = js.undefined
 }
 
 object AutoAffixProps {
   @scala.inline
   def apply(
     affixClassName: java.lang.String = null,
-    affixStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    affixStyle: reactLib.reactMod.CSSProperties = null,
     autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
     bottomClassName: java.lang.String = null,
-    bottomStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
+    bottomStyle: reactLib.reactMod.CSSProperties = null,
+    container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,
     offsetBottom: scala.Int | scala.Double = null,
     offsetTop: scala.Int | scala.Double = null,
     onAffix: () => scala.Unit = null,
@@ -38,7 +36,7 @@ object AutoAffixProps {
     onAffixedBottom: () => scala.Unit = null,
     onAffixedTop: () => scala.Unit = null,
     topClassName: java.lang.String = null,
-    topStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    topStyle: reactLib.reactMod.CSSProperties = null,
     viewportOffsetTop: scala.Int | scala.Double = null
   ): AutoAffixProps = {
     val __obj = js.Dynamic.literal()

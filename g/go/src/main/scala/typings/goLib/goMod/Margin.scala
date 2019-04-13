@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
 /**
   * If zero arguments are supplied, zero is used for all four sides.
   */
-class Margin ()
-  extends goLib.goMod.goNs.Margin {
+class Margin () extends js.Object {
   /**
     * If one argument is supplied, that number is used for all four sides.
     * @param {number} m the margin for all four sides.
@@ -42,22 +41,17 @@ class Margin ()
     */
   def this(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double) = this()
   /**Gets or sets the bottom value of this margin.*/
-  /* CompleteClass */
-  override var bottom: scala.Double = js.native
+  var bottom: scala.Double = js.native
   /**Gets or sets the left value of this margin.*/
-  /* CompleteClass */
-  override var left: scala.Double = js.native
+  var left: scala.Double = js.native
   /**Gets or sets the right value of this margin.*/
-  /* CompleteClass */
-  override var right: scala.Double = js.native
+  var right: scala.Double = js.native
   /**Gets or sets the top value of this margin.*/
-  /* CompleteClass */
-  override var top: scala.Double = js.native
+  var top: scala.Double = js.native
   /**
     * Create a copy of this Margin, with the same values.
     */
-  /* CompleteClass */
-  override def copy(): goLib.goMod.goNs.Margin = js.native
+  def copy(): Margin = js.native
   /**
     * Indicates whether the given margin is equal to this Margin.
     * @param {number} t top.
@@ -65,34 +59,28 @@ class Margin ()
     * @param {number} b bottom.
     * @param {number} l left.
     */
-  /* CompleteClass */
-  override def equalTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): scala.Boolean = js.native
+  def equalTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): scala.Boolean = js.native
   /**
     * Indicates whether the given Margin is equal to this Margin.
     * @param {Margin} m The Margin to compare to this Margin.
     */
-  /* CompleteClass */
-  override def equals(m: goLib.goMod.goNs.Margin): scala.Boolean = js.native
-  /* CompleteClass */
-  override def equalsApprox(m: goLib.goMod.goNs.Margin): scala.Boolean = js.native
+  def equals(m: Margin): scala.Boolean = js.native
+  def equalsApprox(m: Margin): scala.Boolean = js.native
   /**
     * True if this Margin has values that are real numbers and not infinity.
     */
-  /* CompleteClass */
-  override def isReal(): scala.Boolean = js.native
+  def isReal(): scala.Boolean = js.native
   /**
     * Modify this Margin so that its Top, Right, Bottom, and Left values are the same as the given Margin.
     * @param {Margin} m the Margin whose values are to be copied
     */
-  /* CompleteClass */
-  override def set(m: goLib.goMod.goNs.Margin): goLib.goMod.goNs.Margin = js.native
+  def set(m: Margin): Margin = js.native
   /**
     * Modify this Size with new Width and Height values.
     * @param {number} w the width.
     * @param {number} h the height.
     */
-  /* CompleteClass */
-  override def setTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): goLib.goMod.goNs.Margin = js.native
+  def setTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): Margin = js.native
 }
 
 /* static members */
@@ -103,11 +91,11 @@ object Margin extends js.Object {
     * This static function can be used to read in a Margin from a string that was produced by Margin.stringify.
     * @param {string} str
     */
-  def parse(str: java.lang.String): goLib.goMod.goNs.Margin = js.native
+  def parse(str: java.lang.String): goLib.goMod.Margin = js.native
   /**
     * This static function can be used to write out a Margin as a string that can be read by Margin.parse.
     * @param {Margin} val
     */
-  def stringify(`val`: goLib.goMod.goNs.Margin): java.lang.String = js.native
+  def stringify(`val`: goLib.goMod.Margin): java.lang.String = js.native
 }
 

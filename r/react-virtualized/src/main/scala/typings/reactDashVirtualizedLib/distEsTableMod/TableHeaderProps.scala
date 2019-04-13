@@ -9,7 +9,7 @@ trait TableHeaderProps extends js.Object {
   var columnData: js.UndefOr[js.Any] = js.undefined
   var dataKey: java.lang.String
   var disableSort: js.UndefOr[scala.Boolean] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var sortBy: js.UndefOr[java.lang.String] = js.undefined
   var sortDirection: js.UndefOr[SortDirectionType] = js.undefined
 }
@@ -20,7 +20,7 @@ object TableHeaderProps {
     dataKey: java.lang.String,
     columnData: js.Any = null,
     disableSort: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     sortBy: java.lang.String = null,
     sortDirection: SortDirectionType = null
   ): TableHeaderProps = {

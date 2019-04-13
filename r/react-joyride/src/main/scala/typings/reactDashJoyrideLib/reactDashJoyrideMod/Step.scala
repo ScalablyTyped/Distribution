@@ -9,7 +9,7 @@ trait Step extends OverridableProps {
   /**
     * The tooltip's body.
     */
-  var content: reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+  var content: reactLib.reactMod.ReactNode | java.lang.String
   /**
     * Don't show the Beacon before the tooltip. Defaults to false.
     */
@@ -48,15 +48,15 @@ trait Step extends OverridableProps {
   /**
     * The tooltip's title.
     */
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
 }
 
 object Step {
   @scala.inline
   def apply(
-    content: reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
+    content: reactLib.reactMod.ReactNode | java.lang.String,
     target: stdLib.HTMLElement | java.lang.String,
-    beaconComponent: reactLib.reactMod.ReactNs.ReactNode = null,
+    beaconComponent: reactLib.reactMod.ReactNode = null,
     disableBeacon: js.UndefOr[scala.Boolean] = js.undefined,
     disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
     disableOverlay: js.UndefOr[scala.Boolean] = js.undefined,
@@ -75,8 +75,8 @@ object Step {
     spotlightClicks: js.UndefOr[scala.Boolean] = js.undefined,
     spotlightPadding: scala.Int | scala.Double = null,
     styles: StepStyles = null,
-    title: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
-    tooltipComponent: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode | java.lang.String = null,
+    tooltipComponent: reactLib.reactMod.ReactNode = null
   ): Step = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])

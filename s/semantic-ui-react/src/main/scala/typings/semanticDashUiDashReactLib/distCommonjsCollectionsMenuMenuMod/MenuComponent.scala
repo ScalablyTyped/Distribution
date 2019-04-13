@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MenuComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[MenuProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Header: reactLib.reactMod.ReactNs.ComponentClass[
+  extends reactLib.reactMod.ComponentClass[MenuProps, reactLib.reactMod.ComponentState] {
+  var Header: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  var Item: reactLib.reactMod.ReactNs.ComponentClass[
+  var Item: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  var Menu: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps] = js.native
+  var Menu: reactLib.reactMod.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps] = js.native
 }
 

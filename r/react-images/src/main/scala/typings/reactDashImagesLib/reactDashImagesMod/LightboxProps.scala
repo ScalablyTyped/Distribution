@@ -21,7 +21,7 @@ trait LightboxProps extends js.Object {
   /**
     * An array of elements to display as custom controls on the top of lightbox. Default value: undefined
     */
-  var customControls: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactHTMLElement[_]]] = js.undefined
+  var customControls: js.UndefOr[js.Array[reactLib.reactMod.ReactHTMLElement[_]]] = js.undefined
   /**
     * Supports keyboard input - esc, arrow left, and arrow right. Default value: true
     */
@@ -47,7 +47,7 @@ trait LightboxProps extends js.Object {
     */
   var onClickImage: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLImageElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLImageElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -90,7 +90,7 @@ trait LightboxProps extends js.Object {
   /**
     * Spinner component.
     */
-  var spinner: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var spinner: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[_]]] = js.undefined
   /**
     *  Color of spinner. Default value: 'white'
     */
@@ -117,12 +117,12 @@ object LightboxProps {
     backdropClosesModal: js.UndefOr[scala.Boolean] = js.undefined,
     closeButtonTitle: java.lang.String = null,
     currentImage: scala.Int | scala.Double = null,
-    customControls: js.Array[reactLib.reactMod.ReactNs.ReactHTMLElement[_]] = null,
+    customControls: js.Array[reactLib.reactMod.ReactHTMLElement[_]] = null,
     enableKeyboardInput: js.UndefOr[scala.Boolean] = js.undefined,
     imageCountSeparator: java.lang.String = null,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     leftArrowTitle: java.lang.String = null,
-    onClickImage: /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLImageElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClickImage: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLImageElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     onClickNext: () => scala.Unit = null,
     onClickPrev: () => scala.Unit = null,
     onClickThumbnail: /* index */ scala.Double => scala.Unit = null,
@@ -132,7 +132,7 @@ object LightboxProps {
     showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
     showImageCount: js.UndefOr[scala.Boolean] = js.undefined,
     showThumbnails: js.UndefOr[scala.Boolean] = js.undefined,
-    spinner: () => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    spinner: () => reactLib.reactMod.ReactElement[_] = null,
     spinnerColor: java.lang.String = null,
     spinnerSize: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null

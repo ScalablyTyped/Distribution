@@ -8,18 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/web/immediate", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Array: coreDashJsLib.Anon_A = js.native
-  val Date: coreDashJsLib.Anon_Date = js.native
   val Dict: coreDashJsLib.DictConstructor = js.native
-  val Function: coreDashJsLib.Anon_ArgArray = js.native
   val Map: stdLib.MapConstructor = js.native
-  val Math: coreDashJsLib.Anon_AcoshAsinh = js.native
-  val Number: coreDashJsLib.Anon_Acosh = js.native
-  val Object: coreDashJsLib.Anon_Assign = js.native
   val Promise: stdLib.PromiseConstructor = js.native
-  val RegExp: coreDashJsLib.Anon_Escape = js.native
   val Set: stdLib.SetConstructor = js.native
-  val String: coreDashJsLib.Anon_At = js.native
   val WeakMap: stdLib.WeakMapConstructor = js.native
   val WeakSet: stdLib.WeakSetConstructor = js.native
   val `_`: scala.Boolean = js.native

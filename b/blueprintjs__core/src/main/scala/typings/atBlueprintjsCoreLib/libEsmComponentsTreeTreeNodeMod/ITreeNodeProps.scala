@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITreeNodeProps[T] extends ITreeNode[T] {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var contentRef: js.UndefOr[
     js.Function2[/* node */ TreeNode[T], /* element */ stdLib.HTMLDivElement | scala.Null, scala.Unit]
   ] = js.undefined
@@ -15,49 +15,49 @@ trait ITreeNodeProps[T] extends ITreeNode[T] {
   var onClick: js.UndefOr[
     js.Function2[
       /* node */ TreeNode[T], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onCollapse: js.UndefOr[
     js.Function2[
       /* node */ TreeNode[T], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onContextMenu: js.UndefOr[
     js.Function2[
       /* node */ TreeNode[T], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onDoubleClick: js.UndefOr[
     js.Function2[
       /* node */ TreeNode[T], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onExpand: js.UndefOr[
     js.Function2[
       /* node */ TreeNode[T], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
     js.Function2[
       /* node */ TreeNode[T], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function2[
       /* node */ TreeNode[T], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -72,7 +72,7 @@ object ITreeNodeProps {
     label: java.lang.String | reactLib.reactMod.Global.JSXNs.Element,
     path: js.Array[scala.Double],
     childNodes: js.Array[ITreeNode[T]] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     contentRef: (/* node */ TreeNode[T], /* element */ stdLib.HTMLDivElement | scala.Null) => scala.Unit = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -82,13 +82,13 @@ object ITreeNodeProps {
     isSelected: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String | scala.Double = null,
     nodeData: T = null,
-    onClick: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onCollapse: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onContextMenu: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onDoubleClick: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onExpand: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseEnter: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseLeave: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onClick: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onCollapse: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onContextMenu: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onDoubleClick: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onExpand: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLSpanElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseEnter: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseLeave: (/* node */ TreeNode[T], /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     secondaryLabel: java.lang.String | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null
   ): ITreeNodeProps[T] = {
     val __obj = js.Dynamic.literal(depth = depth, id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path)

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ChildrenProps extends js.Object {
   @JSName("children")
-  var children_Original: reactLib.reactMod.ReactNs.Validator[
+  var children_Original: reactLib.reactMod.Validator[
     js.Function1[
       /* props */ reactDashVirtualizedLib.distEsScrollSyncMod.ScrollSyncChildProps, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.native
   def children(

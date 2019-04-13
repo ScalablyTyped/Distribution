@@ -21,6 +21,5 @@ object PathspecNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.pathDashSpecMod.PathspecNs.FLAG with scala.Double] = js.native
   }
   
-  type FLAG = nodegitLib.pathDashSpecMod.PathspecNs.FLAG
 }
 

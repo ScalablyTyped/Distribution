@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArgsProps extends js.Object {
-  var content: reactLib.reactMod.ReactNs.ReactNode
+  var content: reactLib.reactMod.ReactNode
   var duration: scala.Double | scala.Null
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var `type`: NoticeType
 }
@@ -16,10 +16,10 @@ trait ArgsProps extends js.Object {
 object ArgsProps {
   @scala.inline
   def apply(
-    content: reactLib.reactMod.ReactNs.ReactNode,
+    content: reactLib.reactMod.ReactNode,
     `type`: NoticeType,
     duration: scala.Int | scala.Double = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     onClose: () => scala.Unit = null
   ): ArgsProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])

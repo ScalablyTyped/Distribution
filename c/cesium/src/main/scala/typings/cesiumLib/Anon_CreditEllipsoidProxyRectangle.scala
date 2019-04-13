@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CreditEllipsoidProxyRectangle extends js.Object {
-  var credit: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var credit: js.UndefOr[cesiumLib.cesiumMod.Credit | java.lang.String] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var proxy: js.UndefOr[js.Any] = js.undefined
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
   var url: java.lang.String
 }
 
@@ -17,10 +17,10 @@ object Anon_CreditEllipsoidProxyRectangle {
   @scala.inline
   def apply(
     url: java.lang.String,
-    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    credit: cesiumLib.cesiumMod.Credit | java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     proxy: js.Any = null,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null
+    rectangle: cesiumLib.cesiumMod.Rectangle = null
   ): Anon_CreditEllipsoidProxyRectangle = {
     val __obj = js.Dynamic.literal(url = url)
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])

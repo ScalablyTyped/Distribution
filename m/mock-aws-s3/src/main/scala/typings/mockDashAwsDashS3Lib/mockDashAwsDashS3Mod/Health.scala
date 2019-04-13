@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Health ()
   extends awsDashSdkLib.awsDashSdkMod.Health {
-  def this(options: awsDashSdkLib.clientsHealthMod.HealthNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsHealthMod.ClientConfiguration) = this()
 }
 

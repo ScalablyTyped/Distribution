@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object testingbotDashApiLibStrings {
   @js.native
   sealed trait rc
-    extends testingbotDashApiLib.testingbotDashApiMod.TestingBotNs.BrowserType
+    extends testingbotDashApiLib.testingbotDashApiMod.BrowserType
   
   @js.native
   sealed trait webdriver
-    extends testingbotDashApiLib.testingbotDashApiMod.TestingBotNs.BrowserType
+    extends testingbotDashApiLib.testingbotDashApiMod.BrowserType
   
   @scala.inline
   def rc: rc = "rc".asInstanceOf[rc]

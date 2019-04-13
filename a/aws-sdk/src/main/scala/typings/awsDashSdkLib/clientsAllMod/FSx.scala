@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class FSx ()
-  extends awsDashSdkLib.clientsFsxMod.namespaced {
-  def this(options: awsDashSdkLib.clientsFsxMod.FSxNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsFsxMod.^ {
+  def this(options: awsDashSdkLib.clientsFsxMod.ClientConfiguration) = this()
 }
 

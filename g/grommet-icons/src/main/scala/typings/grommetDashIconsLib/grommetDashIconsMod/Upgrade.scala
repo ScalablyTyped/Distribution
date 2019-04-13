@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet-icons", "Upgrade")
 @js.native
 class Upgrade protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      grommetDashIconsLib.iconsMod.IconProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+  extends reactLib.reactMod.Component[
+      grommetDashIconsLib.iconsMod.IconProps with reactLib.reactMod.SVGProps[reactLib.SVGSVGElement], 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: grommetDashIconsLib.iconsMod.IconProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement]) = this()
-  def this(props: grommetDashIconsLib.iconsMod.IconProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], context: js.Any) = this()
+  def this(props: grommetDashIconsLib.iconsMod.IconProps with reactLib.reactMod.SVGProps[reactLib.SVGSVGElement]) = this()
+  def this(props: grommetDashIconsLib.iconsMod.IconProps with reactLib.reactMod.SVGProps[reactLib.SVGSVGElement], context: js.Any) = this()
 }
 

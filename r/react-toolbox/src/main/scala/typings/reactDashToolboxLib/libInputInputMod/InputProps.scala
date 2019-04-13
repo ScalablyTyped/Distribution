@@ -10,7 +10,7 @@ trait InputProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, component will be disabled.
     * @default false
@@ -19,7 +19,7 @@ trait InputProps
   /**
     * Give an error node to display under the field.
     */
-  var error: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var error: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Indicates if the label is floating in the input field or not.
     * @default true
@@ -28,15 +28,15 @@ trait InputProps
   /**
     * The text string to use for hint text element.
     */
-  var hint: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var hint: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Name of an icon to use as a label for the input.
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * The text string to use for the floating label element.
     */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Specifies the maximum number of characters allowed in the component
     */
@@ -101,15 +101,15 @@ trait InputProps
 object InputProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    error: reactLib.reactMod.ReactNs.ReactNode = null,
+    error: reactLib.reactMod.ReactNode = null,
     floating: js.UndefOr[scala.Boolean] = js.undefined,
-    hint: reactLib.reactMod.ReactNs.ReactNode = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    hint: reactLib.reactMod.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    label: reactLib.reactMod.ReactNode = null,
     maxLength: scala.Int | scala.Double = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
@@ -143,7 +143,7 @@ object InputProps {
     onTouchStart: js.Function = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: InputTheme = null,
     `type`: java.lang.String = null,
     value: js.Any = null

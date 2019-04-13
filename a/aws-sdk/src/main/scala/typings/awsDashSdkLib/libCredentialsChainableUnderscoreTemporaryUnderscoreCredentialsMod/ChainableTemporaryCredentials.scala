@@ -17,6 +17,6 @@ class ChainableTemporaryCredentials ()
   /**
     * The STS service instance used to get and refresh temporary credentials from AWS STS.
     */
-  val service: awsDashSdkLib.clientsStsMod.namespaced = js.native
+  val service: awsDashSdkLib.clientsStsMod.^ = js.native
 }
 

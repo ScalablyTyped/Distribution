@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jsreport-core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): jsreportDashCoreLib.jsreportDashCoreMod.JsReportNs.Reporter = js.native
-  def apply(config: stdLib.Partial[jsreportDashCoreLib.jsreportDashCoreMod.JsReportNs.Configuration]): jsreportDashCoreLib.jsreportDashCoreMod.JsReportNs.Reporter = js.native
+  def apply(): Reporter = js.native
+  def apply(config: stdLib.Partial[Configuration]): Reporter = js.native
 }
 

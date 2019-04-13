@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ViewOptions[TModel /* <: backboneLib.backboneMod.Model */]
-  extends backboneLib.backboneMod.BackboneNs.ViewOptions[TModel]
+  extends backboneLib.backboneMod.ViewOptions[TModel]
      with ViewMixinOptions {
   /**
     * The events attribute binds DOM events to actions to perform on the
@@ -43,7 +43,7 @@ object ViewOptions {
     childViewEvents: EventsHash = null,
     childViewTriggers: EventsHash = null,
     className: java.lang.String = null,
-    collection: backboneLib.backboneMod.BackboneNs.Collection[_] = null,
+    collection: backboneLib.backboneMod.Collection[_] = null,
     collectionEvents: EventsHash = null,
     el: js.Any = null,
     events: EventsHash = null,

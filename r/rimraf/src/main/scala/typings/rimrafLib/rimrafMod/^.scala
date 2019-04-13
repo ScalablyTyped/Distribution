@@ -13,12 +13,12 @@ object ^ extends js.Object {
   def apply(path: java.lang.String, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def apply(
     path: java.lang.String,
-    options: rimrafLib.rimrafMod.rimrafNs.Options,
+    options: Options,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def __promisify__(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def __promisify__(path: java.lang.String, options: rimrafLib.rimrafMod.rimrafNs.Options): js.Promise[scala.Unit] = js.native
+  def __promisify__(path: java.lang.String, options: Options): js.Promise[scala.Unit] = js.native
   def sync(path: java.lang.String): scala.Unit = js.native
-  def sync(path: java.lang.String, options: rimrafLib.rimrafMod.rimrafNs.Options): scala.Unit = js.native
+  def sync(path: java.lang.String, options: Options): scala.Unit = js.native
 }
 

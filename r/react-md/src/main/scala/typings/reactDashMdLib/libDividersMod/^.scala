@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Dividers", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Divider: reactLib.reactMod.ReactNs.ComponentClass[
+  val Divider: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libDividersDividerMod.DividerProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
+  val default: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libDividersDividerMod.DividerProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

@@ -13,11 +13,11 @@ trait IPromise[T] extends js.Object {
     * @param errorCallback Callback for error, the same as for then
     */
   def spread[TResult](
-    successCallback: js.Function1[/* repeated */ js.Any, angularLib.angularMod.angularNs.IPromise[TResult] | TResult]
-  ): angularLib.angularMod.angularNs.IPromise[TResult] = js.native
+    successCallback: js.Function1[/* repeated */ js.Any, angularLib.angularMod.IPromise[TResult] | TResult]
+  ): angularLib.angularMod.IPromise[TResult] = js.native
   def spread[TResult](
-    successCallback: js.Function1[/* repeated */ js.Any, angularLib.angularMod.angularNs.IPromise[TResult] | TResult],
+    successCallback: js.Function1[/* repeated */ js.Any, angularLib.angularMod.IPromise[TResult] | TResult],
     errorCallback: js.Function1[/* reason */ js.Any, _]
-  ): angularLib.angularMod.angularNs.IPromise[TResult] = js.native
+  ): angularLib.angularMod.IPromise[TResult] = js.native
 }
 

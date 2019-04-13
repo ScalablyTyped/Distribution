@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object atNivoScatterplotMod {
   type ScatterPlotMouseHandler = js.Function2[
     /* data */ ScatterPlotDatum, 
-    /* event */ reactLib.reactMod.ReactNs.MouseEvent[js.Any, reactLib.NativeMouseEvent], 
+    /* event */ reactLib.reactMod.MouseEvent[js.Any, reactLib.NativeMouseEvent], 
     scala.Unit
   ]
   type ScatterPlotSizeGetter = js.Function1[/* data */ ScatterPlotDatum, scala.Double]

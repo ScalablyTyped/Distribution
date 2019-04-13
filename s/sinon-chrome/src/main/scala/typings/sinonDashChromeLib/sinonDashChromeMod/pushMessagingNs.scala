@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object pushMessagingNs extends js.Object {
   var getChannelId: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onMessage: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onMessage: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
 }
 

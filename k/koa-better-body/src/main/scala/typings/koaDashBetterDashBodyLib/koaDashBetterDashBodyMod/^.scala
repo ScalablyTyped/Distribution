@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-better-body", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): koaDashBetterDashBodyLib.koaDashBetterDashBodyMod.KoaBetterBodyNs.Body = js.native
-  def apply(options: koaDashBetterDashBodyLib.koaDashBetterDashBodyMod.KoaBetterBodyNs.Options): koaDashBetterDashBodyLib.koaDashBetterDashBodyMod.KoaBetterBodyNs.Body = js.native
+  def apply(): Body = js.native
+  def apply(options: Options): Body = js.native
 }
 

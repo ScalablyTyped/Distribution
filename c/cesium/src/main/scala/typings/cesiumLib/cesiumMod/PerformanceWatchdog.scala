@@ -7,16 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "PerformanceWatchdog")
 @js.native
-class PerformanceWatchdog ()
-  extends cesiumLib.cesiumMod.CesiumNs.PerformanceWatchdog {
+class PerformanceWatchdog () extends js.Object {
   def this(options: cesiumLib.Anon_ContainerLowFrameRateMessage) = this()
-  /* CompleteClass */
-  override var container: stdLib.Element = js.native
-  /* CompleteClass */
-  override var viewModel: cesiumLib.cesiumMod.CesiumNs.PerformanceWatchdogViewModel = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
+  var container: stdLib.Element = js.native
+  var viewModel: PerformanceWatchdogViewModel = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
 }
 

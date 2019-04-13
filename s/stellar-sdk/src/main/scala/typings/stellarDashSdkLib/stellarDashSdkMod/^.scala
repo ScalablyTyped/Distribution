@@ -12,11 +12,11 @@ object ^ extends js.Object {
   val AuthRequiredFlag: stellarDashSdkLib.stellarDashSdkLibNumbers.`1` = js.native
   val AuthRevocableFlag: stellarDashSdkLib.stellarDashSdkLibNumbers.`2` = js.native
   val FastSigning: scala.Boolean = js.native
-  val MemoHash: /* hash */ java.lang.String = js.native
-  val MemoID: /* id */ java.lang.String = js.native
-  val MemoNone: /* none */ java.lang.String = js.native
-  val MemoReturn: /* return */ java.lang.String = js.native
-  val MemoText: /* text */ java.lang.String = js.native
+  val MemoHash: stellarDashSdkLib.stellarDashSdkLibStrings.hash = js.native
+  val MemoID: stellarDashSdkLib.stellarDashSdkLibStrings.id = js.native
+  val MemoNone: stellarDashSdkLib.stellarDashSdkLibStrings.none = js.native
+  val MemoReturn: stellarDashSdkLib.stellarDashSdkLibStrings.`return` = js.native
+  val MemoText: stellarDashSdkLib.stellarDashSdkLibStrings.text = js.native
   def hash(data: nodeLib.Buffer): nodeLib.Buffer = js.native
   def sign(data: nodeLib.Buffer, rawSecret: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature = js.native
   def verify(

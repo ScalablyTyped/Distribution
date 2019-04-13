@@ -17,26 +17,22 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "AccessRequest")
 @js.native
-class AccessRequest protected ()
-  extends loopbackLib.loopbackMod.lNs.AccessRequest {
+class AccessRequest protected () extends js.Object {
   def this(model: java.lang.String, property: java.lang.String, accessType: java.lang.String, permission: java.lang.String) = this()
   /**
     * Does the given `ACL` apply to this `AccessRequest`
     * @param {ACL} acl
     */
-  /* CompleteClass */
-  override def exactlyMatches(acl: loopbackLib.loopbackMod.lNs.ACL): scala.Unit = js.native
+  def exactlyMatches(acl: ACL): scala.Unit = js.native
   /**
     * Is the request for access allowed
     * @returns {boolean}
     */
-  /* CompleteClass */
-  override def isAllowed(): scala.Boolean = js.native
+  def isAllowed(): scala.Boolean = js.native
   /**
     * Does the request contain any wildcards
     * @returns {boolean}
     */
-  /* CompleteClass */
-  override def isWildcard(): scala.Boolean = js.native
+  def isWildcard(): scala.Boolean = js.native
 }
 

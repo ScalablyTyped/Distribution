@@ -104,7 +104,7 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   val ACTION_GTALK_SERVICE_CONNECTED: java.lang.String = js.native
   /**
-  		 * GTalk connections has been disconnected.
+  		 * GTalk connection has been disconnected.
   		 */
   val ACTION_GTALK_SERVICE_DISCONNECTED: java.lang.String = js.native
   /**
@@ -140,7 +140,7 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   val ACTION_MEDIA_BUTTON: java.lang.String = js.native
   /**
-  		 * External media is present and being disk-checked
+  		 * External media is present and being disk-checked.
   		 */
   val ACTION_MEDIA_CHECKING: java.lang.String = js.native
   /**
@@ -716,11 +716,11 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   val IMPORTANCE_UNSPECIFIED: scala.Double = js.native
   /**
-  		 * Standard Action Bar navigation mode
+  		 * Standard Action Bar navigation mode.
   		 */
   val NAVIGATION_MODE_STANDARD: scala.Double = js.native
   /**
-  		 * Action Bar tab navigation mode
+  		 * Action Bar tab navigation mode.
   		 */
   val NAVIGATION_MODE_TABS: scala.Double = js.native
   /**
@@ -744,7 +744,7 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   val PENDING_INTENT_MAX_VALUE: scala.Double = js.native
   /**
-  		 * Default priority if it does no fit into another priority category.
+  		 * Default priority if it does not fit into another priority category.
   		 */
   val PRIORITY_DEFAULT: scala.Double = js.native
   /**
@@ -944,7 +944,7 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   var bubbleParent: scala.Boolean = js.native
   /**
-  		 * Activity of the active context.
+  		 * References the top-most window's activity.
   		 */
   val currentActivity: titaniumLib.TitaniumNs.AndroidNs.Activity = js.native
   /**
@@ -955,6 +955,10 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 * The Window or TabGroup whose Activity lifecycle should be triggered on the proxy.
   		 */
   var lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = js.native
+  /**
+  		 * The first activity launched by the application.
+  		 */
+  val rootActivity: titaniumLib.TitaniumNs.AndroidNs.Activity = js.native
   /**
   		 * Adds the specified callback as an event listener for the named event.
   		 */
@@ -1061,7 +1065,7 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   def isServiceRunning(intent: titaniumLib.TitaniumNs.AndroidNs.Intent): scala.Boolean = js.native
   /**
-  		 * Registers broadcast receiver for the given actions
+  		 * Registers broadcast receiver for the given actions.
   		 */
   def registerBroadcastReceiver(
     broadcastReceiver: titaniumLib.TitaniumNs.AndroidNs.BroadcastReceiver,
@@ -1108,7 +1112,7 @@ trait Anon_ACTIONAIRPLANEMODECHANGED extends js.Object {
   		 */
   def stopService(intent: titaniumLib.TitaniumNs.AndroidNs.Intent): scala.Unit = js.native
   /**
-  		 * Unregisters a broadcast receiver
+  		 * Unregisters a broadcast receiver.
   		 */
   def unregisterBroadcastReceiver(broadcastReceiver: titaniumLib.TitaniumNs.AndroidNs.BroadcastReceiver): scala.Unit = js.native
 }

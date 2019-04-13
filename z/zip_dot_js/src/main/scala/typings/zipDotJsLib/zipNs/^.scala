@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var useWebWorkers: scala.Boolean = js.native
-  var workerScripts: zipDotJsLib.Anon_Deflater = js.native
   var workerScriptsPath: java.lang.String = js.native
   def createReader(reader: Reader, callback: js.Function1[/* zipReader */ ZipReader, scala.Unit]): scala.Unit = js.native
   def createReader(

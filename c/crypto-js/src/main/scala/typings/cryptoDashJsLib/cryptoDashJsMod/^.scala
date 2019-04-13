@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto-js", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Hashes]
+  extends org.scalablytyped.runtime.TopLevel[Hashes]
 

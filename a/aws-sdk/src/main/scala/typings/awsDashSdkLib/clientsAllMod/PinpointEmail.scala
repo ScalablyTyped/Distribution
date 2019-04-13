@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class PinpointEmail ()
-  extends awsDashSdkLib.clientsPinpointemailMod.namespaced {
-  def this(options: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsPinpointemailMod.^ {
+  def this(options: awsDashSdkLib.clientsPinpointemailMod.ClientConfiguration) = this()
 }
 

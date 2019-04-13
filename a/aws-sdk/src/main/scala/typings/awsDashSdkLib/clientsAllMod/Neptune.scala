@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Neptune ()
-  extends awsDashSdkLib.clientsNeptuneMod.namespaced {
-  def this(options: awsDashSdkLib.clientsNeptuneMod.NeptuneNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsNeptuneMod.^ {
+  def this(options: awsDashSdkLib.clientsNeptuneMod.ClientConfiguration) = this()
 }
 

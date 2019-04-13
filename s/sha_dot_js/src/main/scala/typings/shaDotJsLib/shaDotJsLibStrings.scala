@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object shaDotJsLibStrings {
   @js.native
   sealed trait sha
-    extends shaDotJsLib.shaDotJsMod.SHANs.Algorithm
+    extends shaDotJsLib.shaDotJsMod.Algorithm
   
   @js.native
   sealed trait sha1
-    extends shaDotJsLib.shaDotJsMod.SHANs.Algorithm
+    extends shaDotJsLib.shaDotJsMod.Algorithm
   
   @js.native
   sealed trait sha224
-    extends shaDotJsLib.shaDotJsMod.SHANs.Algorithm
+    extends shaDotJsLib.shaDotJsMod.Algorithm
   
   @js.native
   sealed trait sha256
-    extends shaDotJsLib.shaDotJsMod.SHANs.Algorithm
+    extends shaDotJsLib.shaDotJsMod.Algorithm
   
   @js.native
   sealed trait sha384
-    extends shaDotJsLib.shaDotJsMod.SHANs.Algorithm
+    extends shaDotJsLib.shaDotJsMod.Algorithm
   
   @js.native
   sealed trait sha512
-    extends shaDotJsLib.shaDotJsMod.SHANs.Algorithm
+    extends shaDotJsLib.shaDotJsMod.Algorithm
   
   @scala.inline
   def sha: sha = "sha".asInstanceOf[sha]

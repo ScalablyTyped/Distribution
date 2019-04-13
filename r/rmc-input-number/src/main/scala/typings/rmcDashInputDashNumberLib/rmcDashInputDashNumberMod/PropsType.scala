@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 trait PropsType
   extends rmcDashInputDashNumberLib.libBaseMod.PropsType {
   var className: js.UndefOr[js.Any] = js.undefined
-  var downHandler: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var downHandler: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var focusOnUpDown: js.UndefOr[scala.Boolean] = js.undefined
   var formatter: js.UndefOr[js.Function1[/* v */ js.Any, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
-  var upHandler: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var upHandler: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object PropsType {
@@ -23,7 +23,7 @@ object PropsType {
     className: js.Any = null,
     defaultValue: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    downHandler: reactLib.reactMod.ReactNs.ReactNode = null,
+    downHandler: reactLib.reactMod.ReactNode = null,
     focusOnUpDown: js.UndefOr[scala.Boolean] = js.undefined,
     formatter: /* v */ js.Any => scala.Unit = null,
     max: scala.Int | scala.Double = null,
@@ -38,7 +38,7 @@ object PropsType {
     step: java.lang.String | scala.Double = null,
     style: js.Any = null,
     tabIndex: scala.Int | scala.Double = null,
-    upHandler: reactLib.reactMod.ReactNs.ReactNode = null,
+    upHandler: reactLib.reactMod.ReactNode = null,
     value: scala.Int | scala.Double = null
   ): PropsType = {
     val __obj = js.Dynamic.literal()

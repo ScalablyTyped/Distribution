@@ -35,3 +35,8 @@ class ArchiveOldVersionsJob ()
   override def Clone(): mfilesLib.IArchiveOldVersionsJob = js.native
 }
 
+@JSGlobal("MFiles.ArchiveOldVersionsJob")
+@js.native
+object ArchiveOldVersionsJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IArchiveOldVersionsJob]
+

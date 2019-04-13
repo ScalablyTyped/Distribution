@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/converter/nodes/export", "ExportConverter")
 @js.native
 class ExportConverter ()
-  extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[typescriptLib.typescriptMod.tsNs.ExportAssignment]
+  extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[typescriptLib.typescriptMod.ExportAssignment]
 

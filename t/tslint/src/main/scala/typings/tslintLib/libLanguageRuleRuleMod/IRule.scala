@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IRule extends js.Object {
   @JSName("apply")
-  def apply(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): js.Array[RuleFailure]
+  def apply(sourceFile: typescriptLib.typescriptMod.SourceFile): js.Array[RuleFailure]
   def applyWithWalker(walker: tslintLib.libLanguageWalkerWalkerMod.IWalker): js.Array[RuleFailure]
   def getOptions(): IOptions
   def isEnabled(): scala.Boolean
@@ -16,7 +16,7 @@ trait IRule extends js.Object {
 object IRule {
   @scala.inline
   def apply(
-    apply: typescriptLib.typescriptMod.tsNs.SourceFile => js.Array[RuleFailure],
+    apply: typescriptLib.typescriptMod.SourceFile => js.Array[RuleFailure],
     applyWithWalker: tslintLib.libLanguageWalkerWalkerMod.IWalker => js.Array[RuleFailure],
     getOptions: () => IOptions,
     isEnabled: () => scala.Boolean

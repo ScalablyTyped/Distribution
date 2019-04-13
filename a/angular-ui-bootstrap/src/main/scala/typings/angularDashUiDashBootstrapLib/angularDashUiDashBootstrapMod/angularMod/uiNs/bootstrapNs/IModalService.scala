@@ -9,7 +9,7 @@ trait IModalService extends js.Object {
   /**
     * @returns {IPromise}
     */
-  def getPromiseChain(): angularLib.angularMod.angularNs.IPromise[_]
+  def getPromiseChain(): angularLib.angularMod.IPromise[_]
   /**
     * @param {IModalSettings} options
     * @returns {IModalInstanceService}
@@ -20,7 +20,7 @@ trait IModalService extends js.Object {
 object IModalService {
   @scala.inline
   def apply(
-    getPromiseChain: () => angularLib.angularMod.angularNs.IPromise[_],
+    getPromiseChain: () => angularLib.angularMod.IPromise[_],
     open: IModalSettings => IModalInstanceService
   ): IModalService = {
     val __obj = js.Dynamic.literal(getPromiseChain = js.Any.fromFunction0(getPromiseChain), open = js.Any.fromFunction1(open))

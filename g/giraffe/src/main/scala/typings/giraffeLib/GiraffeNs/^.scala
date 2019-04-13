@@ -16,31 +16,23 @@ object ^ extends js.Object {
   def bindAppEvents(instance: GiraffeObject): GiraffeObject = js.native
   def bindDataEvents(instance: GiraffeObject): GiraffeObject = js.native
   def bindEvent(
-    context: backboneLib.backboneMod.BackboneNs.Events,
-    target: backboneLib.backboneMod.BackboneNs.Events,
+    context: backboneLib.backboneMod.Events,
+    target: backboneLib.backboneMod.Events,
     event: js.Any,
     callback: js.Function
   ): js.Any = js.native
-  def bindEventMap(
-    context: backboneLib.backboneMod.BackboneNs.Events,
-    target: backboneLib.backboneMod.BackboneNs.Events,
-    eventMap: js.Any
-  ): js.Any = js.native
+  def bindEventMap(context: backboneLib.backboneMod.Events, target: backboneLib.backboneMod.Events, eventMap: js.Any): js.Any = js.native
   def configure(instance: js.Any): js.Any = js.native
   def configure(instance: js.Any, options: js.Any): js.Any = js.native
   def dispose(instance: GiraffeObject, args: js.Any*): GiraffeObject = js.native
   def disposeThis(args: js.Any*): GiraffeObject = js.native
   def unbindEvent(
-    context: backboneLib.backboneMod.BackboneNs.Events,
-    target: backboneLib.backboneMod.BackboneNs.Events,
+    context: backboneLib.backboneMod.Events,
+    target: backboneLib.backboneMod.Events,
     event: js.Any,
     callback: js.Function
   ): js.Any = js.native
-  def unbindEventMap(
-    context: backboneLib.backboneMod.BackboneNs.Events,
-    target: backboneLib.backboneMod.BackboneNs.Events,
-    eventMap: js.Any
-  ): js.Any = js.native
+  def unbindEventMap(context: backboneLib.backboneMod.Events, target: backboneLib.backboneMod.Events, eventMap: js.Any): js.Any = js.native
   def wrapFn(obj: js.Any, name: java.lang.String, before: js.Function, after: js.Function): js.Any = js.native
 }
 

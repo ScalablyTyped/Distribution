@@ -27,7 +27,7 @@ trait Server
     java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer])
   ] = js.native
   /** bunyan instance. */
-  var log: bunyanLib.bunyanMod.namespaced = js.native
+  var log: bunyanLib.bunyanMod.^ = js.native
   /** Name of the server. */
   var name: java.lang.String = js.native
   /** Prevents calling next multiple times */

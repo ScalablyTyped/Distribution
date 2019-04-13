@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("adone/glosses/std", "module")
 @js.native
 class module protected ()
-  extends nodeLib.moduleMod.namespaced {
+  extends nodeLib.moduleMod.^ {
   def this(id: java.lang.String) = this()
   def this(id: java.lang.String, parent: nodeLib.NodeJSNs.Module) = this()
 }

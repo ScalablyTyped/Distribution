@@ -12,7 +12,7 @@ object ^ extends js.Object {
   def apply[T](sentry: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Sentry */ js.Any): reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
   def apply[T](
     sentry: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Sentry */ js.Any,
-    options: reduxDashSentryDashMiddlewareLib.reduxDashSentryDashMiddlewareMod.createSentryMiddlewareNs.Options[T]
+    options: Options[T]
   ): reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
 }
 

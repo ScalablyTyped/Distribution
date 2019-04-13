@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_LockOnDrag extends js.Object {
   var lockOnDrag: js.UndefOr[scala.Boolean] = js.undefined
   var modifier: js.UndefOr[java.lang.String] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var tapBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var tappable: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -18,7 +18,7 @@ object Anon_LockOnDrag {
   def apply(
     lockOnDrag: js.UndefOr[scala.Boolean] = js.undefined,
     modifier: java.lang.String = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
     tapBackgroundColor: java.lang.String = null,
     tappable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_LockOnDrag = {

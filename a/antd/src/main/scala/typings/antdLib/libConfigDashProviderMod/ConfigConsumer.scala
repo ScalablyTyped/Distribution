@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/config-provider", "ConfigConsumer")
 @js.native
 class ConfigConsumer protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[ConfigConsumerProps | scala.Null], 
       js.Any, 
       js.Any

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val domRendererFactory3: RendererFactory3 = js.native
-  val unusedValueExportToPlacateAjd: /* 1 */ scala.Double = js.native
+  val unusedValueExportToPlacateAjd: atAngularCoreLib.atAngularCoreLibNumbers.`1` = js.native
   def isProceduralRenderer(renderer: ObjectOrientedRenderer3): /* is @angular/core.@angular/core/src/render3/interfaces/renderer.ProceduralRenderer3 */ scala.Boolean = js.native
   def isProceduralRenderer(renderer: ProceduralRenderer3): /* is @angular/core.@angular/core/src/render3/interfaces/renderer.ProceduralRenderer3 */ scala.Boolean = js.native
 }

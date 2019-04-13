@@ -32,7 +32,7 @@ trait DataTableProps extends js.Object {
   /** If the header should be fixed */
   var fixedHeader: scala.Boolean
   /** React Style object applied to footer toolbar */
-  var footerToolbarStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var footerToolbarStyle: reactLib.reactMod.CSSProperties
   /** 'default' or 'filter', filter mode shows a search box to reduce visible rows */
   var headerToolbarMode: materialDashUiDashDatatablesLib.materialDashUiDashDatatablesLibStrings.default | materialDashUiDashDatatablesLib.materialDashUiDashDatatablesLibStrings.filter | java.lang.String
   /** The hight of the table */
@@ -59,22 +59,22 @@ trait DataTableProps extends js.Object {
   /** To display striped rows in the table */
   var stripedRows: scala.Boolean
   /** React style object for the tbody tag */
-  var tableBodyStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var tableBodyStyle: reactLib.reactMod.CSSProperties
   /** React style object for the th/td tag */
-  var tableHeaderColumnStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var tableHeaderColumnStyle: reactLib.reactMod.CSSProperties
   /** React style object for the th tag */
-  var tableHeaderStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var tableHeaderStyle: reactLib.reactMod.CSSProperties
   /** React style object for the tr/td tag */
-  var tableRowColumnStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var tableRowColumnStyle: reactLib.reactMod.CSSProperties
   /** React style object for the tr tag */
-  var tableRowStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var tableRowStyle: reactLib.reactMod.CSSProperties
   /** React style object for the table tag */
-  var tableStyle: reactLib.reactMod.ReactNs.CSSProperties
-  var tableWrapperStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var tableStyle: reactLib.reactMod.CSSProperties
+  var tableWrapperStyle: reactLib.reactMod.CSSProperties
   /** Table title */
   var title: java.lang.String
   /** React Style object for the title */
-  var titleStyle: reactLib.reactMod.ReactNs.CSSProperties
+  var titleStyle: reactLib.reactMod.CSSProperties
   var toolbarIconRight: js.Any
   /** Callback when the cell is clicked. This callback is only active when selectable is false. */
   def onCellClick(rowIndex: scala.Double, columnIndex: scala.Double, row: js.Any, columnValue: js.Any, event: js.Any): scala.Unit
@@ -103,7 +103,7 @@ object DataTableProps {
     filterValue: java.lang.String,
     fixedFooter: scala.Boolean,
     fixedHeader: scala.Boolean,
-    footerToolbarStyle: reactLib.reactMod.ReactNs.CSSProperties,
+    footerToolbarStyle: reactLib.reactMod.CSSProperties,
     headerToolbarMode: materialDashUiDashDatatablesLib.materialDashUiDashDatatablesLibStrings.default | materialDashUiDashDatatablesLib.materialDashUiDashDatatablesLibStrings.filter | java.lang.String,
     height: js.Any,
     multiSelectable: scala.Boolean,
@@ -128,15 +128,15 @@ object DataTableProps {
     showRowSizeControls: scala.Boolean,
     stripedRows: scala.Boolean,
     summaryLabelTemplate: (scala.Double, scala.Double, scala.Double) => js.Any,
-    tableBodyStyle: reactLib.reactMod.ReactNs.CSSProperties,
-    tableHeaderColumnStyle: reactLib.reactMod.ReactNs.CSSProperties,
-    tableHeaderStyle: reactLib.reactMod.ReactNs.CSSProperties,
-    tableRowColumnStyle: reactLib.reactMod.ReactNs.CSSProperties,
-    tableRowStyle: reactLib.reactMod.ReactNs.CSSProperties,
-    tableStyle: reactLib.reactMod.ReactNs.CSSProperties,
-    tableWrapperStyle: reactLib.reactMod.ReactNs.CSSProperties,
+    tableBodyStyle: reactLib.reactMod.CSSProperties,
+    tableHeaderColumnStyle: reactLib.reactMod.CSSProperties,
+    tableHeaderStyle: reactLib.reactMod.CSSProperties,
+    tableRowColumnStyle: reactLib.reactMod.CSSProperties,
+    tableRowStyle: reactLib.reactMod.CSSProperties,
+    tableStyle: reactLib.reactMod.CSSProperties,
+    tableWrapperStyle: reactLib.reactMod.CSSProperties,
     title: java.lang.String,
-    titleStyle: reactLib.reactMod.ReactNs.CSSProperties,
+    titleStyle: reactLib.reactMod.CSSProperties,
     toolbarIconRight: js.Any
   ): DataTableProps = {
     val __obj = js.Dynamic.literal(columns = columns, count = count, data = data, deselectOnClickaway = deselectOnClickaway, enableSelectAll = enableSelectAll, filterHintText = filterHintText, filterValue = filterValue, fixedFooter = fixedFooter, fixedHeader = fixedHeader, footerToolbarStyle = footerToolbarStyle, headerToolbarMode = headerToolbarMode.asInstanceOf[js.Any], height = height, multiSelectable = multiSelectable, onCellClick = js.Any.fromFunction5(onCellClick), onCellDoubleClick = js.Any.fromFunction5(onCellDoubleClick), onFilterValueChange = js.Any.fromFunction1(onFilterValueChange), onNextPageClick = js.Any.fromFunction1(onNextPageClick), onPreviousPageClick = js.Any.fromFunction1(onPreviousPageClick), onRowSelection = js.Any.fromFunction1(onRowSelection), onRowSizeChange = js.Any.fromFunction2(onRowSizeChange), onSortOrderChange = js.Any.fromFunction2(onSortOrderChange), page = page, rowSize = rowSize, rowSizeLabel = rowSizeLabel, rowSizeList = rowSizeList, selectable = selectable, showCheckboxes = showCheckboxes, showFooterToolbar = showFooterToolbar, showHeaderToolbar = showHeaderToolbar, showHeaderToolbarFilterIcon = showHeaderToolbarFilterIcon, showRowHover = showRowHover, showRowSizeControls = showRowSizeControls, stripedRows = stripedRows, summaryLabelTemplate = js.Any.fromFunction3(summaryLabelTemplate), tableBodyStyle = tableBodyStyle, tableHeaderColumnStyle = tableHeaderColumnStyle, tableHeaderStyle = tableHeaderStyle, tableRowColumnStyle = tableRowColumnStyle, tableRowStyle = tableRowStyle, tableStyle = tableStyle, tableWrapperStyle = tableWrapperStyle, title = title, titleStyle = titleStyle, toolbarIconRight = toolbarIconRight)

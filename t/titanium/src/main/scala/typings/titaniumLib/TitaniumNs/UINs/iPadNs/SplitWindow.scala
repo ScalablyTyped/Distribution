@@ -117,8 +117,7 @@ trait SplitWindow
   				 */
   var extendEdges: js.Array[scala.Double] = js.native
   /**
-  				 * Specifies whether the content (subviews) of the window  will render inside the safe-area or not.
-  				 * Only used in iOS 11.0 and later.
+  				 * Specifies whether the screen insets/notches are allowed to overlap the window's content or not.
   				 */
   var extendSafeArea: scala.Boolean = js.native
   /**
@@ -207,9 +206,9 @@ trait SplitWindow
   				 */
   var navTintColor: java.lang.String = js.native
   /**
-  				 * The <Titanium.UI.iOS.NavigationWindow> instance hosting this window.
+  				 * The <Titanium.UI.NavigationWindow> instance hosting this window.
   				 */
-  val navigationWindow: titaniumLib.TitaniumNs.UINs.iOSNs.NavigationWindow = js.native
+  val navigationWindow: titaniumLib.TitaniumNs.UINs.NavigationWindow = js.native
   /**
   				 * The opacity from 0.0-1.0.
   				 */
@@ -225,6 +224,7 @@ trait SplitWindow
   var orientationModes: js.Array[scala.Double] = js.native
   /**
   				 * Background color of the wrapper view when this view is used as either <Titanium.UI.ListView.pullView> or <Titanium.UI.TableView.headerPullView>.
+  				 * Defaults to `undefined`. Results in a light grey background color on the wrapper view.
   				 */
   var pullBackgroundColor: java.lang.String = js.native
   /**
@@ -243,6 +243,10 @@ trait SplitWindow
   				 * An Array of views to show in the right nav bar area.
   				 */
   var rightNavButtons: js.Array[titaniumLib.TitaniumNs.UINs.View] = js.native
+  /**
+  				 * The padding needed to safely display content without it being overlapped by the screen insets and notches.
+  				 */
+  val safeAreaPadding: titaniumLib.Dimension = js.native
   /**
   				 * Shadow image for the navigation bar, specified as a URL to a local image..
   				 */
@@ -569,7 +573,7 @@ trait SplitWindow
   /**
   				 * Gets the value of the <Titanium.UI.iPad.SplitWindow.navigationWindow> property.
   				 */
-  def getNavigationWindow(): titaniumLib.TitaniumNs.UINs.iOSNs.NavigationWindow = js.native
+  def getNavigationWindow(): titaniumLib.TitaniumNs.UINs.NavigationWindow = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iPad.SplitWindow.opacity> property.
   				 */
@@ -602,6 +606,10 @@ trait SplitWindow
   				 * Gets the value of the <Titanium.UI.iPad.SplitWindow.rightNavButtons> property.
   				 */
   def getRightNavButtons(): js.Array[titaniumLib.TitaniumNs.UINs.View] = js.native
+  /**
+  				 * Gets the value of the <Titanium.UI.iPad.SplitWindow.safeAreaPadding> property.
+  				 */
+  def getSafeAreaPadding(): titaniumLib.Dimension = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iPad.SplitWindow.shadowImage> property.
   				 */
@@ -1024,9 +1032,6 @@ trait SplitWindow
   def setTitlepromptid(titlepromptid: java.lang.String): scala.Unit = js.native
   /**
   				 * Sets the array of items to show in the window's toolbar.
-  				 */
-  /**
-  				 * Sets the value of the <Titanium.UI.iPad.SplitWindow.toolbar> property.
   				 */
   def setToolbar(items: js.Array[_]): scala.Unit = js.native
   def setToolbar(items: js.Array[_], params: titaniumLib.windowToolbarParam): scala.Unit = js.native

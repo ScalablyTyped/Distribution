@@ -15,7 +15,7 @@ class default protected () extends Button {
 @JSImport("antd/lib/button/button", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Group: reactLib.reactMod.ReactNs.SFC[antdLib.libButtonButtonDashGroupMod.ButtonGroupProps] = js.native
+  var Group: reactLib.reactMod.SFC[antdLib.libButtonButtonDashGroupMod.ButtonGroupProps] = js.native
   var __ANT_BUTTON: scala.Boolean = js.native
   var defaultProps: antdLib.Anon_Block = js.native
   var propTypes: antdLib.Anon_ArgsBlock = js.native

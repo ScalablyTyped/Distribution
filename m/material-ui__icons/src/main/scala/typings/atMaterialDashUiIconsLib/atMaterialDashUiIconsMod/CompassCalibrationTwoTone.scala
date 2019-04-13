@@ -16,9 +16,9 @@ class CompassCalibrationTwoTone protected ()
 @JSImport("@material-ui/icons", "CompassCalibrationTwoTone")
 @js.native
 class CompassCalibrationTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

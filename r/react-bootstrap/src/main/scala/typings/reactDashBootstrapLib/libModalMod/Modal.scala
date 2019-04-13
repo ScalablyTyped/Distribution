@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Modal
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libModalMod.ModalNs.ModalProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[ModalProps, js.Object, js.Any]
 

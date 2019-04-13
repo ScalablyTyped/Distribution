@@ -10,7 +10,7 @@ trait AppBarProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Determine if the bar should have position fixed or relative.
     * @default false
@@ -24,7 +24,7 @@ trait AppBarProps
   /**
     * If it exists it is used as the AppBar left icon
     */
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Called when the left icon is clicked
     */
@@ -36,7 +36,7 @@ trait AppBarProps
   /**
     * If it exists it is used as the AppBar right icon
     */
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Whether AppBar should be hidden during scroll.
     * @default false
@@ -55,12 +55,12 @@ trait AppBarProps
 object AppBarProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     flat: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    leftIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    leftIcon: reactLib.reactMod.ReactNode = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -85,9 +85,9 @@ object AppBarProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    rightIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightIcon: reactLib.reactMod.ReactNode = null,
     scrollHide: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: AppBarTheme = null,
     title: java.lang.String = null
   ): AppBarProps = {

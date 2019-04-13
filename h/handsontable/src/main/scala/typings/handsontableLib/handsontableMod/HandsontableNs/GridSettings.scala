@@ -85,7 +85,7 @@ trait GridSettings
     RowObject | js.Array[CellValue] | (js.Function1[/* row */ scala.Double, RowObject | js.Array[CellValue]])
   ] = js.undefined
   var dateFormat: js.UndefOr[java.lang.String] = js.undefined
-  var datePickerConfig: js.UndefOr[pikadayLib.pikadayMod.PikadayNs.PikadayOptions] = js.undefined
+  var datePickerConfig: js.UndefOr[pikadayLib.pikadayMod.PikadayOptions] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var defaultDate: js.UndefOr[java.lang.String] = js.undefined
   var disableVisualSelection: js.UndefOr[
@@ -308,7 +308,7 @@ object GridSettings {
     data: js.Array[js.Array[CellValue]] | js.Array[RowObject] = null,
     dataSchema: RowObject | js.Array[CellValue] | (js.Function1[/* row */ scala.Double, RowObject | js.Array[CellValue]]) = null,
     dateFormat: java.lang.String = null,
-    datePickerConfig: pikadayLib.pikadayMod.PikadayNs.PikadayOptions = null,
+    datePickerConfig: pikadayLib.pikadayMod.PikadayOptions = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     defaultDate: java.lang.String = null,
     disableVisualSelection: scala.Boolean | handsontableLib.handsontableLibStrings.current | handsontableLib.handsontableLibStrings.area | handsontableLib.handsontableLibStrings.header | (js.Array[

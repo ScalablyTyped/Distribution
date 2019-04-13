@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/pure", JSImport.Namespace)
 @js.native
 object pureMod extends js.Object {
-  def default[TProps](component: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactLib.reactMod.ReactNs.ComponentType[TProps] = js.native
+  def default[TProps](component: reactLib.reactMod.ComponentType[TProps]): reactLib.reactMod.ComponentType[TProps] = js.native
 }
 

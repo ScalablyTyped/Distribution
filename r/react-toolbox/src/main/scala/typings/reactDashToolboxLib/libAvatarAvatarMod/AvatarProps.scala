@@ -14,7 +14,7 @@ trait AvatarProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Set to true if your image is not squared so it will be used as a cover for the element.
     * @default false
@@ -23,11 +23,11 @@ trait AvatarProps
   /**
     * A key to identify an Icon from Material Design Icons or a custom Icon Element.
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * An image source or an image element.
     */
-  var image: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var image: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Classnames object defining the component style.
     */
@@ -45,12 +45,12 @@ object AvatarProps {
     * Additional properties for component root element.
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     cover: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    image: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    icon: reactLib.reactMod.ReactNode = null,
+    image: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -73,7 +73,7 @@ object AvatarProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: AvatarTheme = null,
     title: java.lang.String = null
   ): AvatarProps = {

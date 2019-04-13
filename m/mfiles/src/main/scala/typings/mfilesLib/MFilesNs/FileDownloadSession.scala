@@ -17,3 +17,8 @@ class FileDownloadSession ()
   override val FileSize32: scala.Double = js.native
 }
 
+@JSGlobal("MFiles.FileDownloadSession")
+@js.native
+object FileDownloadSession
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFileDownloadSession]
+

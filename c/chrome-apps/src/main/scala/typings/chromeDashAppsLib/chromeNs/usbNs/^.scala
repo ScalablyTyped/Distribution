@@ -8,16 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.usb")
 @js.native
 object ^ extends js.Object {
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  val Direction: chromeDashAppsLib.Anon_IN = js.native
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  val Recipient: chromeDashAppsLib.Anon_DEVICE = js.native
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  val RequestType: chromeDashAppsLib.Anon_CLASS = js.native
-  val SynchronizationType: chromeDashAppsLib.Anon_ADAPTIVE = js.native
-  /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  val TransferType: chromeDashAppsLib.Anon_BULK = js.native
-  val UsageType: chromeDashAppsLib.Anon_DATA = js.native
   /**
     * Event generated when a device is added to the system.
     * Events are only broadcast to apps that have permission to access the device.

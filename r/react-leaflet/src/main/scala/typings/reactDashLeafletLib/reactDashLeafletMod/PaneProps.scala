@@ -11,7 +11,7 @@ trait PaneProps extends js.Object {
   var leaflet: js.UndefOr[LeafletContext] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var pane: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object PaneProps {
@@ -22,7 +22,7 @@ object PaneProps {
     leaflet: LeafletContext = null,
     name: java.lang.String = null,
     pane: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): PaneProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "HeaderRow")
 @js.native
-class HeaderRow ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.HeaderRow
+class HeaderRow () extends __MDLComponent[HeaderRowProps]
 

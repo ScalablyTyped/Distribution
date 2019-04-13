@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TabComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[TabProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Pane: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps] = js.native
+  extends reactLib.reactMod.ComponentClass[TabProps, reactLib.reactMod.ComponentState] {
+  var Pane: reactLib.reactMod.StatelessComponent[semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps] = js.native
 }
 

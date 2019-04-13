@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableRowSelection[T] extends js.Object {
-  var columnTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var columnTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var columnWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var fixed: js.UndefOr[scala.Boolean] = js.undefined
   var getCheckboxProps: js.UndefOr[js.Function1[/* record */ T, js.Object]] = js.undefined
@@ -50,7 +50,7 @@ trait TableRowSelection[T] extends js.Object {
 object TableRowSelection {
   @scala.inline
   def apply[T](
-    columnTitle: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    columnTitle: java.lang.String | reactLib.reactMod.ReactNode = null,
     columnWidth: java.lang.String | scala.Double = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     getCheckboxProps: /* record */ T => js.Object = null,

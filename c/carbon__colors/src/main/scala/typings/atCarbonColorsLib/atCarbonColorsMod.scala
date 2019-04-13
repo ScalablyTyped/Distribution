@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object atCarbonColorsMod extends js.Object {
   val black: java.lang.String = js.native
   val black100: java.lang.String = js.native
-  val blue: atCarbonColorsLib.Anon_10 = js.native
   val blue10: java.lang.String = js.native
   val blue100: java.lang.String = js.native
   val blue20: java.lang.String = js.native
@@ -21,8 +20,6 @@ object atCarbonColorsMod extends js.Object {
   val blue70: java.lang.String = js.native
   val blue80: java.lang.String = js.native
   val blue90: java.lang.String = js.native
-  val colors: atCarbonColorsLib.Anon_Black = js.native
-  val coolGray: atCarbonColorsLib.Anon_10 = js.native
   val coolGray10: java.lang.String = js.native
   val coolGray100: java.lang.String = js.native
   val coolGray20: java.lang.String = js.native
@@ -33,7 +30,6 @@ object atCarbonColorsMod extends js.Object {
   val coolGray70: java.lang.String = js.native
   val coolGray80: java.lang.String = js.native
   val coolGray90: java.lang.String = js.native
-  val cyan: atCarbonColorsLib.Anon_10 = js.native
   val cyan10: java.lang.String = js.native
   val cyan100: java.lang.String = js.native
   val cyan20: java.lang.String = js.native
@@ -44,7 +40,6 @@ object atCarbonColorsMod extends js.Object {
   val cyan70: java.lang.String = js.native
   val cyan80: java.lang.String = js.native
   val cyan90: java.lang.String = js.native
-  val gray: atCarbonColorsLib.Anon_10 = js.native
   val gray10: java.lang.String = js.native
   val gray100: java.lang.String = js.native
   val gray20: java.lang.String = js.native
@@ -55,7 +50,6 @@ object atCarbonColorsMod extends js.Object {
   val gray70: java.lang.String = js.native
   val gray80: java.lang.String = js.native
   val gray90: java.lang.String = js.native
-  val green: atCarbonColorsLib.Anon_10 = js.native
   val green10: java.lang.String = js.native
   val green100: java.lang.String = js.native
   val green20: java.lang.String = js.native
@@ -66,7 +60,6 @@ object atCarbonColorsMod extends js.Object {
   val green70: java.lang.String = js.native
   val green80: java.lang.String = js.native
   val green90: java.lang.String = js.native
-  val magenta: atCarbonColorsLib.Anon_10 = js.native
   val magenta10: java.lang.String = js.native
   val magenta100: java.lang.String = js.native
   val magenta20: java.lang.String = js.native
@@ -79,7 +72,6 @@ object atCarbonColorsMod extends js.Object {
   val magenta90: java.lang.String = js.native
   val orange: java.lang.String = js.native
   val orange40: java.lang.String = js.native
-  val purple: atCarbonColorsLib.Anon_10 = js.native
   val purple10: java.lang.String = js.native
   val purple100: java.lang.String = js.native
   val purple20: java.lang.String = js.native
@@ -90,7 +82,6 @@ object atCarbonColorsMod extends js.Object {
   val purple70: java.lang.String = js.native
   val purple80: java.lang.String = js.native
   val purple90: java.lang.String = js.native
-  val red: atCarbonColorsLib.Anon_10 = js.native
   val red10: java.lang.String = js.native
   val red100: java.lang.String = js.native
   val red20: java.lang.String = js.native
@@ -101,7 +92,6 @@ object atCarbonColorsMod extends js.Object {
   val red70: java.lang.String = js.native
   val red80: java.lang.String = js.native
   val red90: java.lang.String = js.native
-  val teal: atCarbonColorsLib.Anon_10 = js.native
   val teal10: java.lang.String = js.native
   val teal100: java.lang.String = js.native
   val teal20: java.lang.String = js.native
@@ -112,7 +102,6 @@ object atCarbonColorsMod extends js.Object {
   val teal70: java.lang.String = js.native
   val teal80: java.lang.String = js.native
   val teal90: java.lang.String = js.native
-  val warmGray: atCarbonColorsLib.Anon_10 = js.native
   val warmGray10: java.lang.String = js.native
   val warmGray100: java.lang.String = js.native
   val warmGray20: java.lang.String = js.native
@@ -128,5 +117,163 @@ object atCarbonColorsMod extends js.Object {
   val yellow: java.lang.String = js.native
   val yellow20: java.lang.String = js.native
   def rgba(hexcode: java.lang.String, opacity: scala.Double): java.lang.String = js.native
+  @js.native
+  object blue extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object colors extends js.Object {
+    var black: atCarbonColorsLib.Anon_100 = js.native
+    var blue: atCarbonColorsLib.Anon_10 = js.native
+    var coolGray: atCarbonColorsLib.Anon_10 = js.native
+    var cyan: atCarbonColorsLib.Anon_10 = js.native
+    var gray: atCarbonColorsLib.Anon_10 = js.native
+    var green: atCarbonColorsLib.Anon_10 = js.native
+    var magenta: atCarbonColorsLib.Anon_10 = js.native
+    var orange: atCarbonColorsLib.Anon_40 = js.native
+    var purple: atCarbonColorsLib.Anon_10 = js.native
+    var red: atCarbonColorsLib.Anon_10 = js.native
+    var teal: atCarbonColorsLib.Anon_10 = js.native
+    var warmGray: atCarbonColorsLib.Anon_10 = js.native
+    var white: atCarbonColorsLib.Anon_0 = js.native
+    var yellow: atCarbonColorsLib.Anon_20 = js.native
+  }
+  
+  @js.native
+  object coolGray extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object cyan extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object gray extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object green extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object magenta extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object purple extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object red extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object teal extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
+  @js.native
+  object warmGray extends js.Object {
+    var `10`: java.lang.String = js.native
+    var `100`: java.lang.String = js.native
+    var `20`: java.lang.String = js.native
+    var `30`: java.lang.String = js.native
+    var `40`: java.lang.String = js.native
+    var `50`: java.lang.String = js.native
+    var `60`: java.lang.String = js.native
+    var `70`: java.lang.String = js.native
+    var `80`: java.lang.String = js.native
+    var `90`: java.lang.String = js.native
+  }
+  
 }
 

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait ojColorPaletteSettableProperties
   extends atOracleOraclejetLib.ojeditablevalueMod.editableValueSettableProperties[
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
-      atOracleOraclejetLib.ojcolorMod.namespaced
+      atOracleOraclejetLib.ojcolorMod.^, 
+      atOracleOraclejetLib.ojcolorMod.^, 
+      atOracleOraclejetLib.ojcolorMod.^
     ] {
   var labelDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off
   var labelledBy: java.lang.String | scala.Null
@@ -30,12 +30,12 @@ object ojColorPaletteSettableProperties {
     labelDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
     labelHint: java.lang.String,
     layout: atOracleOraclejetLib.atOracleOraclejetLibStrings.grid | atOracleOraclejetLib.atOracleOraclejetLibStrings.list,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     palette: js.Array[atOracleOraclejetLib.Anon_ColorLabel],
     swatchSize: atOracleOraclejetLib.atOracleOraclejetLibStrings.xs | atOracleOraclejetLib.atOracleOraclejetLibStrings.sm | atOracleOraclejetLib.atOracleOraclejetLibStrings.lg,
     translations: atOracleOraclejetLib.Anon_LabelNone,
     valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
-    value: atOracleOraclejetLib.ojcolorMod.namespaced,
+    value: atOracleOraclejetLib.ojcolorMod.^,
     describedBy: java.lang.String = null,
     labelledBy: java.lang.String = null
   ): ojColorPaletteSettableProperties = {

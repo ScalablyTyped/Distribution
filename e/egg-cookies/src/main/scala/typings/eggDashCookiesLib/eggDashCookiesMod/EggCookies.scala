@@ -14,7 +14,7 @@ trait EggCookies extends js.Object {
     * @returns The cookie's value according to the specific name.
     */
   def get(name: java.lang.String): java.lang.String = js.native
-  def get(name: java.lang.String, opts: eggDashCookiesLib.eggDashCookiesMod.EggCookiesNs.CookieGetOptions): java.lang.String = js.native
+  def get(name: java.lang.String, opts: CookieGetOptions): java.lang.String = js.native
   /**
     * Set the Egg's cookies by name with optional options.
     * @param name The Egg cookie's unique name.
@@ -24,10 +24,6 @@ trait EggCookies extends js.Object {
     */
   def set(name: java.lang.String): this.type = js.native
   def set(name: java.lang.String, value: java.lang.String): this.type = js.native
-  def set(
-    name: java.lang.String,
-    value: java.lang.String,
-    opts: eggDashCookiesLib.eggDashCookiesMod.EggCookiesNs.CookieSetOptions
-  ): this.type = js.native
+  def set(name: java.lang.String, value: java.lang.String, opts: CookieSetOptions): this.type = js.native
 }
 

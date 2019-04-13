@@ -16,15 +16,15 @@ object PasswordProps {
   @scala.inline
   def apply(
     action: java.lang.String = null,
-    addonAfter: reactLib.reactMod.ReactNs.ReactNode = null,
-    addonBefore: reactLib.reactMod.ReactNs.ReactNode = null,
+    addonAfter: reactLib.reactMod.ReactNode = null,
+    addonBefore: reactLib.reactMod.ReactNode = null,
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     inputPrefixCls: java.lang.String = null,
-    onPressEnter: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLInputElement] = null,
-    prefix: reactLib.reactMod.ReactNs.ReactNode = null,
+    onPressEnter: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLInputElement] = null,
+    prefix: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     size: /* import warning: ImportType.apply Failed type conversion: ['small', 'default', 'large'][number] */ js.Any = null,
-    suffix: reactLib.reactMod.ReactNs.ReactNode = null,
+    suffix: reactLib.reactMod.ReactNode = null,
     visibilityToggle: js.UndefOr[scala.Boolean] = js.undefined
   ): PasswordProps = {
     val __obj = js.Dynamic.literal()

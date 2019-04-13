@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait BottomNavigationItemProps
   extends materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps[BottomNavigationItem] {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object BottomNavigationItemProps {
@@ -17,23 +17,23 @@ object BottomNavigationItemProps {
   def apply(
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    containerElement: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    containerElement: reactLib.reactMod.ReactNode | java.lang.String = null,
     disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined,
     focusRippleColor: java.lang.String = null,
     focusRippleOpacity: scala.Int | scala.Double = null,
     href: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    label: reactLib.reactMod.ReactNode = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     target: java.lang.String = null,
     touchRippleColor: java.lang.String = null,

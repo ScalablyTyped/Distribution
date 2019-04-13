@@ -27,15 +27,15 @@ trait OptionsWithRender[Props, Exports /* <: js.Object */]
     * });
     * ```
     */
-  def render(loaded: Exports, props: Props): reactLib.reactMod.ReactNs.ReactNode
+  def render(loaded: Exports, props: Props): reactLib.reactMod.ReactNode
 }
 
 object OptionsWithRender {
   @scala.inline
   def apply[Props, Exports /* <: js.Object */](
     loader: () => js.Promise[Exports],
-    loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
-    render: (Exports, Props) => reactLib.reactMod.ReactNs.ReactNode,
+    loading: reactLib.reactMod.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
+    render: (Exports, Props) => reactLib.reactMod.ReactNode,
     delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
     modules: js.Array[java.lang.String] = null,
     timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,

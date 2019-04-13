@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("amplify", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[amplifyLib.amplifyMod.amplifyNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[Static]
 

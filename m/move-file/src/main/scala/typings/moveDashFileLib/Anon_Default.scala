@@ -25,7 +25,7 @@ trait Anon_Default extends js.Object {
   def apply(
     source: java.lang.String,
     destination: java.lang.String,
-    options: moveDashFileLib.moveDashFileMod.moveFileNs.Options
+    options: moveDashFileLib.moveDashFileMod.Options
   ): js.Promise[scala.Unit] = js.native
   /**
   	Move a file synchronously.
@@ -36,7 +36,7 @@ trait Anon_Default extends js.Object {
   def sync(
     source: java.lang.String,
     destination: java.lang.String,
-    options: moveDashFileLib.moveDashFileMod.moveFileNs.Options
+    options: moveDashFileLib.moveDashFileMod.Options
   ): scala.Unit = js.native
 }
 

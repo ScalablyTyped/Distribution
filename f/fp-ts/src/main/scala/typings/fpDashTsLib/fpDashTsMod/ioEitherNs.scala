@@ -14,7 +14,7 @@ object ioEitherNs extends js.Object {
     def this(value: fpDashTsLib.libIOMod.IO[fpDashTsLib.libEitherMod.Either[L, A]]) = this()
   }
   
-  val URI: /* IOEither */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.IOEither = js.native
   val ioEither: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libIOEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libIOEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libIOEitherMod.URI] = js.native
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
   def fromLeft[L, A](l: L): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native

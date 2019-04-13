@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudHSMV2 ()
   extends awsDashSdkLib.awsDashSdkMod.CloudHSMV2 {
-  def this(options: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloudhsmv2Mod.ClientConfiguration) = this()
 }
 

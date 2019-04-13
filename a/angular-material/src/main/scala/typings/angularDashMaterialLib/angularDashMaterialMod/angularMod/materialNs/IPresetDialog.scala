@@ -19,9 +19,7 @@ trait IPresetDialog[T] extends js.Object {
   def closeTo(to: stdLib.Element): T = js.native
    // default: true
   def controller(): T = js.native
-  def controller(
-    controller: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor]
-  ): T = js.native
+  def controller(controller: angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor]): T = js.native
   def controller(controller: java.lang.String): T = js.native
   def controllerAs(): T = js.native
   def controllerAs(controllerAs: java.lang.String): T = js.native
@@ -57,7 +55,7 @@ trait IPresetDialog[T] extends js.Object {
   def resolve(): T = js.native
   def resolve(resolve: ResolveObject): T = js.native
   def scope(): T = js.native
-  def scope(scope: angularLib.angularMod.angularNs.IScope): T = js.native
+  def scope(scope: angularLib.angularMod.IScope): T = js.native
   def targetEvent(): T = js.native
   def targetEvent(targetEvent: stdLib.MouseEvent): T = js.native
   def template(): T = js.native

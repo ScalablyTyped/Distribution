@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("gcp-metadata", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val BASE_PATH: /* /computeMetadata/v1 */ java.lang.String = js.native
+  val BASE_PATH: gcpDashMetadataLib.gcpDashMetadataLibStrings.`/computeMetadata/v1` = js.native
   val BASE_URL: java.lang.String = js.native
-  val HEADERS: stdLib.Readonly[
-    /* import warning: ImportType.apply Failed type conversion: {[HEADER_NAME] : string} */ js.Any
-  ] = js.native
-  val HEADER_NAME: /* Metadata-Flavor */ java.lang.String = js.native
-  val HEADER_VALUE: /* Google */ java.lang.String = js.native
-  val HOST_ADDRESS: /* http://metadata.google.internal. */ java.lang.String = js.native
+  val HEADERS: stdLib.Readonly[gcpDashMetadataLib.Anon_HEADERNAME] = js.native
+  val HEADER_NAME: gcpDashMetadataLib.gcpDashMetadataLibStrings.`Metadata-Flavor` = js.native
+  val HEADER_VALUE: gcpDashMetadataLib.gcpDashMetadataLibStrings.Google = js.native
+  val HOST_ADDRESS: gcpDashMetadataLib.gcpDashMetadataLibStrings.`http://metadataDOTgoogleDOTinternalDOT` = js.native
   def instance[T](): js.Promise[T] = js.native
   def instance[T](options: Options): js.Promise[T] = js.native
   def instance[T](options: java.lang.String): js.Promise[T] = js.native

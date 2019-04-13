@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ng-table/src/core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ngTableCoreModule: angularLib.angularMod.angularNs.IModule = js.native
+  val ngTableCoreModule: angularLib.angularMod.IModule = js.native
 }
 

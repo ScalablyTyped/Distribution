@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/converter/nodes/variable-statement", "VariableStatementConverter")
 @js.native
 class VariableStatementConverter ()
-  extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[typescriptLib.typescriptMod.tsNs.VariableStatement] {
+  extends typedocLib.distLibConverterComponentsMod.ConverterNodeComponent[typescriptLib.typescriptMod.VariableStatement] {
   def convertBindingPattern(
     context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.BindingPattern
+    node: typescriptLib.typescriptMod.BindingPattern
   ): scala.Unit = js.native
 }
 

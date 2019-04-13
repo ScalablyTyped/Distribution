@@ -12,7 +12,6 @@ object ^ extends js.Object {
   val APIResource: js.Any = js.native
   val CLI: js.Any = js.native
   val mime: js.Any = js.native
-  val my: nodalLib.Anon_Bootstrapper = js.native
   val require: nodeLib.NodeRequire = js.native
 }
 

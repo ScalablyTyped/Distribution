@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ResourceGroupsTaggingAPI ()
-  extends awsDashSdkLib.clientsResourcegroupstaggingapiMod.namespaced {
-  def this(options: awsDashSdkLib.clientsResourcegroupstaggingapiMod.ResourceGroupsTaggingAPINs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsResourcegroupstaggingapiMod.^ {
+  def this(options: awsDashSdkLib.clientsResourcegroupstaggingapiMod.ClientConfiguration) = this()
 }
 

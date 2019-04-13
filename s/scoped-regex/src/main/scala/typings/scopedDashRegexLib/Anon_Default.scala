@@ -20,6 +20,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(): stdLib.RegExp = js.native
-  def apply(options: scopedDashRegexLib.scopedDashRegexMod.scopedRegexNs.Options): stdLib.RegExp = js.native
+  def apply(options: scopedDashRegexLib.scopedDashRegexMod.Options): stdLib.RegExp = js.native
 }
 

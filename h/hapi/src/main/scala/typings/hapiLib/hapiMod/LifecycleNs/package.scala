@@ -55,5 +55,5 @@ package object LifecycleNs {
     * For more info please [See docs](https://github.com/hapijs/hapi/blob/master/API.md#lifecycle-methods)
     */
   type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
-  type ReturnValueTypes = scala.Null | java.lang.String | scala.Double | scala.Boolean | nodeLib.Buffer | stdLib.Error | boomLib.boomMod.namespaced[js.Any] | nodeLib.streamMod.Stream | js.Object | js.Array[js.Object] | js.Symbol | hapiLib.hapiMod.ResponseToolkit
+  type ReturnValueTypes = scala.Null | java.lang.String | scala.Double | scala.Boolean | nodeLib.Buffer | stdLib.Error | boomLib.boomMod.^[js.Any] | nodeLib.streamMod.Stream | js.Object | js.Array[js.Object] | js.Symbol | hapiLib.hapiMod.ResponseToolkit
 }

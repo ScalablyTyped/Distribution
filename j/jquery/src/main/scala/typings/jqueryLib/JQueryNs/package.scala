@@ -17,6 +17,8 @@ package object JQueryNs {
   // #region CSS hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
   type CSSHook[TElement] = stdLib.Partial[_CSSHook[TElement]] with ((stdLib.Pick[_CSSHook[TElement], jqueryLib.jqueryLibStrings.get]) | (stdLib.Pick[_CSSHook[TElement], jqueryLib.jqueryLibStrings.set]))
+  type CSSHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
+  org.scalablytyped.runtime.StringDictionary[CSSHook[stdLib.HTMLElement]]
   // #endregion
   // region Callbacks
   // #region Callbacks
@@ -36,10 +38,17 @@ package object JQueryNs {
   // region Easing
   // #region Easing
   type EasingMethod = js.Function1[/* percent */ scala.Double, scala.Double]
+  type Easings = org.scalablytyped.runtime.StringDictionary[EasingMethod]
   type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, TriggeredEvent[TCurrentTarget, TData, js.Any, js.Any]]
   // Extra parameters can be passed from trigger()
   type EventHandlerBase[TContext, T] = js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ js.Any, js.Any]
   type Node = stdLib.Element | stdLib.Text | stdLib.Comment | stdLib.DocumentFragment
+  /**
+    * The PlainObject type is a JavaScript object containing zero or more key-value pairs. The plain object is, in other words, an Object object. It is designated "plain" in jQuery documentation to distinguish it from other kinds of JavaScript objects: for example, null, user-defined arrays, and host objects such as document, all of which have a typeof value of "object."
+    *
+    * **Note**: The type declaration of PlainObject is imprecise. It includes host objects and user-defined arrays which do not match jQuery's definition.
+    */
+  type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
   /**
     * This object provides a subset of the methods of the Deferred object (then, done, fail, always, pipe, progress, state and promise) to prevent users from changing the state of the Deferred.
     * @see \`{@link https://api.jquery.com/Types/#Promise }\`
@@ -72,13 +81,7 @@ package object JQueryNs {
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tween-hooks }\`
     * @since 1.8
     */
-  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - jqueryLib.Anon_Get[TElement]
-    - jqueryLib.Anon_Set[TElement]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type PropHook[TElement] = _PropHook[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  type PropHooks = org.scalablytyped.runtime.StringDictionary[PropHook[Node]]
   // #endregion
   // region Queue
   // #region Queue
@@ -89,42 +92,7 @@ package object JQueryNs {
     * A selector is used in jQuery to select DOM elements from a DOM document. That document is, in most cases, the DOM document present in all browsers, but can also be an XML document received via Ajax.
     */
   type Selector = java.lang.String
-  // region Special event hooks
-  // #region Special event hooks
-  /**
-    * The jQuery special event hooks are a set of per-event-name functions and properties that allow code to control the behavior of event processing within jQuery. The mechanism is similar to `fixHooks` in that the special event information is stored in `jQuery.event.special.NAME`, where `NAME` is the name of the special event. Event names are case sensitive.
-    *
-    * As with `fixHooks`, the special event hooks design assumes it will be very rare that two unrelated pieces of code want to process the same event name. Special event authors who need to modify events with existing hooks will need to take precautions to avoid introducing unwanted side-effects by clobbering those hooks.
-    * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
-    */
-  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - jqueryLib.Anon_NoBubble
-    - jqueryLib.Anon_BindType
-    - jqueryLib.Anon_DelegateType
-    - jqueryLib.Anon_Data[TTarget, TData]
-    - jqueryLib.Anon_False[TTarget]
-    - jqueryLib.Anon_Add[TTarget, TData]
-    - jqueryLib.Anon_HandleObj[TTarget, TData]
-    - jqueryLib.Anon_DataEvent[TTarget, TData]
-    - jqueryLib.Anon_DataDefault[TTarget, TData]
-    - jqueryLib.Anon_DataEventHandle[TTarget, TData]
-    - jqueryLib.Anon_Event[TTarget]
-    - jqueryLib.Anon_EventPostDispatch[TTarget]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type SpecialEventHook[TTarget, TData] = (_SpecialEventHook[TTarget, TData]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  // #endregion
-  // region Speed
-  // #region Speed
-  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - jqueryLib.Anon_Duration
-    - jqueryLib.Anon_Easing
-    - jqueryLib.Anon_Complete[TElement]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type SpeedSettings[TElement] = _SpeedSettings[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  type SpecialEventHooks = org.scalablytyped.runtime.StringDictionary[SpecialEventHook[stdLib.EventTarget, js.Any]]
   // #endregion
   // region Deferred
   // #region Deferred
@@ -148,16 +116,8 @@ package object JQueryNs {
     /* import warning: ImportType.apply Failed type conversion: jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget>[TType] */ js.Any
   ]
   type TypeOrArray[T] = T | js.Array[T]
-  // #endregion
-  // region Val hooks
-  // #region Val hooks
-  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  /* Rewritten from type alias, can be one of: 
-    - jqueryLib.Anon_Elem[TElement]
-    - jqueryLib.Anon_ElemSet[TElement]
-    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
-  */
-  type ValHook[TElement] = _ValHook[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  type ValHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
+  org.scalablytyped.runtime.StringDictionary[ValHook[stdLib.HTMLElement]]
   // #endregion
   type _Falsy = js.UndefOr[
     jqueryLib.jqueryLibNumbers.`false` | scala.Null | jqueryLib.jqueryLibNumbers.`0` | jqueryLib.jqueryLibStrings.Empty | stdLib.HTMLAllCollection

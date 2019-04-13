@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "MatchQuery")
 @js.native
-class MatchQuery protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery {
+class MatchQuery protected () extends Query {
   /*
     A Query that appects text, analyzes it, generates internal query based
     on the MatchQuery type.
@@ -17,30 +16,25 @@ class MatchQuery protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the analyzer name used to analyze the Query object.
     */
-  /* CompleteClass */
-  override def analyzer(analyzer: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def analyzer(analyzer: java.lang.String): MatchQuery = js.native
   /*
     Sets the boost value for documents matching the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: stdLib.Number): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def boost(boost: stdLib.Number): MatchQuery = js.native
   /*
     Sets the maximum threshold/frequency to be considered a low
     frequency term in a CommonTermsQuery.
     Set to a value between 0 and 1.
     */
-  /* CompleteClass */
-  override def cutoffFrequency(freq: stdLib.Number): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def cutoffFrequency(freq: stdLib.Number): MatchQuery = js.native
   /*
     Sets the fuzziness value for the Query.
     */
-  /* CompleteClass */
-  override def fuzziness(fuzz: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def fuzziness(fuzz: scala.Double): MatchQuery = js.native
   /*
     Sets fuzzy rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -60,45 +54,37 @@ class MatchQuery protected ()
     Default is constant_score_auto.
     This is an advanced option, use with care.
     */
-  /* CompleteClass */
-  override def fuzzyRewrite(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def fuzzyRewrite(m: java.lang.String): MatchQuery = js.native
   /*
     Set to false to use classic Levenshtein edit distance in the
     fuzzy query.
     */
-  /* CompleteClass */
-  override def fuzzyTranspositions(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def fuzzyTranspositions(trueFalse: scala.Boolean): MatchQuery = js.native
   /*
     Enables lenient parsing of the query string.
     */
-  /* CompleteClass */
-  override def lenient(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def lenient(trueFalse: scala.Boolean): MatchQuery = js.native
   /*
     Sets the max expansions of a fuzzy MatchQuery.
     */
-  /* CompleteClass */
-  override def maxExpansions(e: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def maxExpansions(e: scala.Double): MatchQuery = js.native
   /*
     Sets a percent value controlling how many "should" clauses in the
     resulting Query should match.
     */
-  /* CompleteClass */
-  override def minimumShouldMatch(minMatch: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def minimumShouldMatch(minMatch: scala.Double): MatchQuery = js.native
   /*
     Sets default operator of the Query.  Default: or.
     */
-  /* CompleteClass */
-  override def operator(op: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def operator(op: java.lang.String): MatchQuery = js.native
   /*
     Sets the prefix length for a fuzzy prefix MatchQuery.
     */
-  /* CompleteClass */
-  override def prefixLength(l: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def prefixLength(l: scala.Double): MatchQuery = js.native
   /*
     Sets the query string for the Query.
     */
-  /* CompleteClass */
-  override def query(qstr: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def query(qstr: java.lang.String): MatchQuery = js.native
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -118,31 +104,26 @@ class MatchQuery protected ()
     Default is constant_score_auto.
     This is an advanced option, use with care.
     */
-  /* CompleteClass */
-  override def rewrite(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def rewrite(m: java.lang.String): MatchQuery = js.native
   /*
     Sets the default slop for phrases. If zero, then exact phrase matches
     are required.  Default: 0.
     */
-  /* CompleteClass */
-  override def slop(slop: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def slop(slop: scala.Double): MatchQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
   /*
     Sets the type of the MatchQuery.  Valid values are
     boolean, phrase, and phrase_prefix.
     */
-  /* CompleteClass */
-  override def `type`(`type`: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def `type`(`type`: java.lang.String): MatchQuery = js.native
   /*
     Sets what happens when no terms match.  Valid values are
     "all" or "none".
     */
-  /* CompleteClass */
-  override def zeroTermsQuery(q: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchQuery = js.native
+  def zeroTermsQuery(q: java.lang.String): MatchQuery = js.native
 }
 

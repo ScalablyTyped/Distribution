@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OperationFunction
-  extends expressLib.expressMod.eNs.RequestHandler
+  extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler
      with Operation {
   var apiDoc: js.UndefOr[expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.OperationObject] = js.native
   /* InferMemberOverrides */

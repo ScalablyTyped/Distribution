@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("app-builder-lib", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DEFAULT_TARGET: /* default */ java.lang.String = js.native
-  val DIR_TARGET: /* dir */ java.lang.String = js.native
+  val DEFAULT_TARGET: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.default = js.native
+  val DIR_TARGET: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.dir = js.native
   def archFromString(name: java.lang.String): builderDashUtilLib.outArchMod.Arch = js.native
   def build(
     options: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions with electronDashPublishLib.electronDashPublishMod.PublishOptions

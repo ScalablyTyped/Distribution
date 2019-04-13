@@ -35,10 +35,11 @@ object strings {
     STEP_DATA_ATTR: atMaterialSliderLib.atMaterialSliderLibStrings.`data-step`,
     THUMB_CONTAINER_SELECTOR: atMaterialSliderLib.atMaterialSliderLibStrings.`DOTmdc-slider__thumb-container`,
     TRACK_MARKER_CONTAINER_SELECTOR: atMaterialSliderLib.atMaterialSliderLibStrings.`DOTmdc-slider__track-marker-container`,
-    TRACK_SELECTOR: atMaterialSliderLib.atMaterialSliderLibStrings.`DOTmdc-slider__track`
+    TRACK_SELECTOR: atMaterialSliderLib.atMaterialSliderLibStrings.`DOTmdc-slider__track`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(ARIA_DISABLED = ARIA_DISABLED, ARIA_VALUEMAX = ARIA_VALUEMAX, ARIA_VALUEMIN = ARIA_VALUEMIN, ARIA_VALUENOW = ARIA_VALUENOW, CHANGE_EVENT = CHANGE_EVENT, INPUT_EVENT = INPUT_EVENT, LAST_TRACK_MARKER_SELECTOR = LAST_TRACK_MARKER_SELECTOR, PIN_VALUE_MARKER_SELECTOR = PIN_VALUE_MARKER_SELECTOR, STEP_DATA_ATTR = STEP_DATA_ATTR, THUMB_CONTAINER_SELECTOR = THUMB_CONTAINER_SELECTOR, TRACK_MARKER_CONTAINER_SELECTOR = TRACK_MARKER_CONTAINER_SELECTOR, TRACK_SELECTOR = TRACK_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

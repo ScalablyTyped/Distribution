@@ -21,7 +21,6 @@ object settingsNs extends js.Object {
   var PRECISION: java.lang.String = js.native
   var PRECISION_FRAGMENT: java.lang.String = js.native
   var PRECISION_VERTEX: java.lang.String = js.native
-  val RENDER_OPTIONS: pixiDotJsLib.Anon_Antialias = js.native
   var RESOLUTION: scala.Double = js.native
   var RETINA_PREFIX: stdLib.RegExp = js.native
   var SCALE_MODE: scala.Double = js.native
@@ -31,5 +30,21 @@ object settingsNs extends js.Object {
   var TRANSFORM_MODE: scala.Double = js.native
   var UPLOADS_PER_FRAME: scala.Double = js.native
   var WRAP_MODE: scala.Double = js.native
+  @js.native
+  object RENDER_OPTIONS extends js.Object {
+    var antialias: scala.Boolean = js.native
+    var autoResize: scala.Boolean = js.native
+    var backgroundColor: scala.Double = js.native
+    var clearBeforeRender: scala.Boolean = js.native
+    var forceFXAA: scala.Boolean = js.native
+    var height: scala.Double = js.native
+    var legacy: scala.Boolean = js.native
+    var preserveDrawingBuffer: scala.Boolean = js.native
+    var roundPixels: scala.Boolean = js.native
+    var transparent: scala.Boolean = js.native
+    var view: stdLib.HTMLCanvasElement | scala.Null = js.native
+    var width: scala.Double = js.native
+  }
+  
 }
 

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DefaultFalse extends js.Object {
   // TODO: remove this in the next major version
-  var default: (screenfullLib.screenfullMod.screenfullNs.Screenfull with Anon_Default) | screenfullLib.screenfullLibNumbers.`false`
+  var default: (screenfullLib.screenfullMod.Screenfull with Anon_Default) | screenfullLib.screenfullLibNumbers.`false`
 }
 
 object Anon_DefaultFalse {
   @scala.inline
   def apply(
-    default: (screenfullLib.screenfullMod.screenfullNs.Screenfull with Anon_Default) | screenfullLib.screenfullLibNumbers.`false`
+    default: (screenfullLib.screenfullMod.Screenfull with Anon_Default) | screenfullLib.screenfullLibNumbers.`false`
   ): Anon_DefaultFalse = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
   

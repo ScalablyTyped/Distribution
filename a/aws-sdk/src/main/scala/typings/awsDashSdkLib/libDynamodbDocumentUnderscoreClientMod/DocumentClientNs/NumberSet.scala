@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NumberSet
-  extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs.DynamoDbSet
-     with DynamoDbSet {
+trait NumberSet extends DynamoDbSet {
   var `type`: awsDashSdkLib.awsDashSdkLibStrings.Number
   var values: js.Array[scala.Double]
 }

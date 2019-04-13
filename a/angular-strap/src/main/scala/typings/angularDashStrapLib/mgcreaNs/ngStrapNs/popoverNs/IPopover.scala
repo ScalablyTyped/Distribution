@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IPopover extends js.Object {
   @JSName("$promise")
-  var $promise: angularLib.angularMod.angularNs.IPromise[scala.Unit]
+  var $promise: angularLib.angularMod.IPromise[scala.Unit]
   def hide(): scala.Unit
   def show(): scala.Unit
   def toggle(): scala.Unit
@@ -16,7 +16,7 @@ trait IPopover extends js.Object {
 object IPopover {
   @scala.inline
   def apply(
-    $promise: angularLib.angularMod.angularNs.IPromise[scala.Unit],
+    $promise: angularLib.angularMod.IPromise[scala.Unit],
     hide: () => scala.Unit,
     show: () => scala.Unit,
     toggle: () => scala.Unit

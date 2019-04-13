@@ -10,7 +10,6 @@ trait Anon_FontFamilyFontSize extends js.Object {
   var fontSize: java.lang.String
   var fontWeight: scala.Double
   var letterSpacing: scala.Double
-  var lineHeight: java.lang.String
 }
 
 object Anon_FontFamilyFontSize {
@@ -19,10 +18,9 @@ object Anon_FontFamilyFontSize {
     fontFamily: java.lang.String,
     fontSize: java.lang.String,
     fontWeight: scala.Double,
-    letterSpacing: scala.Double,
-    lineHeight: java.lang.String
+    letterSpacing: scala.Double
   ): Anon_FontFamilyFontSize = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing, lineHeight = lineHeight)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing)
   
     __obj.asInstanceOf[Anon_FontFamilyFontSize]
   }

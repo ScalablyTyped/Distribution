@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class IoT1ClickDevicesService ()
-  extends awsDashSdkLib.clientsIot1clickdevicesserviceMod.namespaced {
-  def this(options: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsIot1clickdevicesserviceMod.^ {
+  def this(options: awsDashSdkLib.clientsIot1clickdevicesserviceMod.ClientConfiguration) = this()
 }
 

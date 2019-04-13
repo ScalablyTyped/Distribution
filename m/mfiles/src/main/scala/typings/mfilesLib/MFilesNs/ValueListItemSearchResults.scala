@@ -23,3 +23,8 @@ class ValueListItemSearchResults ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ValueListItemSearchResults")
+@js.native
+object ValueListItemSearchResults
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IValueListItemSearchResults]
+

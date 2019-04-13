@@ -35,7 +35,7 @@ trait LineProps
   var margin: js.UndefOr[atNivoCoreLib.atNivoCoreMod.Box] = js.undefined
   var markers: js.UndefOr[js.Array[atNivoCoreLib.atNivoCoreMod.CartesianMarkerProps]] = js.undefined
   var theme: js.UndefOr[atNivoCoreLib.atNivoCoreMod.Theme] = js.undefined
-  var tooltip: js.UndefOr[js.Function1[/* data */ LineSliceData, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var tooltip: js.UndefOr[js.Function1[/* data */ LineSliceData, reactLib.reactMod.ReactNode]] = js.undefined
   var tooltipFormat: js.UndefOr[TooltipFormatter | java.lang.String] = js.undefined
   var xScale: js.UndefOr[atNivoScalesLib.atNivoScalesMod.Scale] = js.undefined
   var yScale: js.UndefOr[atNivoScalesLib.atNivoScalesMod.Scale] = js.undefined
@@ -72,7 +72,7 @@ object LineProps {
     margin: atNivoCoreLib.atNivoCoreMod.Box = null,
     markers: js.Array[atNivoCoreLib.atNivoCoreMod.CartesianMarkerProps] = null,
     theme: atNivoCoreLib.atNivoCoreMod.Theme = null,
-    tooltip: /* data */ LineSliceData => reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltip: /* data */ LineSliceData => reactLib.reactMod.ReactNode = null,
     tooltipFormat: TooltipFormatter | java.lang.String = null,
     xScale: atNivoScalesLib.atNivoScalesMod.Scale = null,
     yScale: atNivoScalesLib.atNivoScalesMod.Scale = null

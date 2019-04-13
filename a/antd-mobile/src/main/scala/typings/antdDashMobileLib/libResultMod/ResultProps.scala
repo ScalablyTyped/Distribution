@@ -9,7 +9,7 @@ trait ResultProps
   extends antdDashMobileLib.libResultPropsTypeMod.ResultPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ResultProps {
@@ -18,13 +18,13 @@ object ResultProps {
     buttonText: java.lang.String = null,
     buttonType: antdDashMobileLib.antdDashMobileLibStrings.primary | antdDashMobileLib.antdDashMobileLibStrings.ghost = null,
     className: java.lang.String = null,
-    img: reactLib.reactMod.ReactNs.ReactNode = null,
+    img: reactLib.reactMod.ReactNode = null,
     imgUrl: java.lang.String = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
+    message: reactLib.reactMod.ReactNode = null,
     onButtonClick: () => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null
   ): ResultProps = {
     val __obj = js.Dynamic.literal()
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)

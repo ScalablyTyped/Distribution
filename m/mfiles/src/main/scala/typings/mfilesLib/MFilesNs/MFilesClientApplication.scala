@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class MFilesClientApplication ()
   extends mfilesLib.IMFilesClientApplication
 
+@JSGlobal("MFiles.MFilesClientApplication")
+@js.native
+object MFilesClientApplication
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IMFilesClientApplication]
+

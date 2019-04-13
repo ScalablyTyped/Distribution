@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object promiseDashSftpMod {
-  type ERROR_CODES = promiseDashSftpLib.promiseDashSftpMod.PromiseSftpNs.ERROR_CODES
-  type STATUSES = promiseDashSftpLib.promiseDashSftpMod.PromiseSftpNs.STATUSES
+  /**
+    * Options for SftpPromise#connect()
+    */
+  type Options = ssh2Lib.ssh2Mod.ConnectConfig with promiseDashSftpLib.Anon_AutoReconnect
 }

@@ -8,21 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("xstate", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val actions: xstateLib.Anon_After = js.native
   def Machine[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](config: xstateLib.libTypesMod.MachineConfig[TContext, TStateSchema, TEvent]): xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
   def Machine[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     config: xstateLib.libTypesMod.MachineConfig[TContext, TStateSchema, TEvent],
-    options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent]
+    options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]]
   ): xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
   def Machine[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     config: xstateLib.libTypesMod.MachineConfig[TContext, TStateSchema, TEvent],
-    options: xstateLib.libTypesMod.MachineOptions[TContext, TEvent],
+    options: stdLib.Partial[xstateLib.libTypesMod.MachineOptions[TContext, TEvent]],
     initialContext: TContext
   ): xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
   def assign[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     assignment: stdLib.Partial[
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof TContext ]: (extState : TContext, event : TEvent): TContext[K] | TContext[K]}
+  {[ K in keyof TContext ]: (context : TContext, event : TEvent): TContext[K] | TContext[K]}
     */ xstateLib.xstateLibStrings.assign with js.Any
     ]
   ): xstateLib.libTypesMod.AssignAction[TContext, TEvent] = js.native
@@ -30,7 +29,7 @@ object ^ extends js.Object {
   def interpret[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent]): xstateLib.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
   def interpret[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent],
-    options: stdLib.Partial[xstateLib.libInterpreterMod.InterpreterOptions]
+    options: stdLib.Partial[xstateLib.libTypesMod.InterpreterOptions]
   ): xstateLib.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
   def mapState(stateMap: org.scalablytyped.runtime.StringDictionary[js.Any], stateId: java.lang.String): js.Any = js.native
   def matchState[T, TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](

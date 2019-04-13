@@ -10,7 +10,7 @@ trait TabsProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Disable the animation below the active tab.
     * @default false
@@ -51,14 +51,14 @@ trait TabsProps
 object TabsProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disableAnimatedBottomBorder: js.UndefOr[scala.Boolean] = js.undefined,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     hideMode: reactDashToolboxLib.reactDashToolboxLibStrings.display | reactDashToolboxLib.reactDashToolboxLibStrings.unmounted = null,
     index: scala.Int | scala.Double = null,
     inverse: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: js.Function = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -82,7 +82,7 @@ object TabsProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: TabsTheme = null
   ): TabsProps = {
     val __obj = js.Dynamic.literal()

@@ -13,9 +13,7 @@ trait RangePropsType extends js.Object {
   var onAfterChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit]] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
-  var tipFormatter: js.UndefOr[
-    js.Function1[/* value */ js.UndefOr[scala.Double], reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var tipFormatter: js.UndefOr[js.Function1[/* value */ js.UndefOr[scala.Double], reactLib.reactMod.ReactNode]] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -29,7 +27,7 @@ object RangePropsType {
     onAfterChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     onChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     step: scala.Int | scala.Double = null,
-    tipFormatter: /* value */ js.UndefOr[scala.Double] => reactLib.reactMod.ReactNs.ReactNode = null,
+    tipFormatter: /* value */ js.UndefOr[scala.Double] => reactLib.reactMod.ReactNode = null,
     value: scala.Int | scala.Double = null
   ): RangePropsType = {
     val __obj = js.Dynamic.literal()

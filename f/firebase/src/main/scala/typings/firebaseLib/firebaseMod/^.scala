@@ -15,7 +15,7 @@ object ^ extends js.Object {
   /**
     * A (read-only) array of all initialized apps.
     */
-  var apps: js.Array[firebaseLib.firebaseMod.firebaseNs.appNs.App] = js.native
+  var apps: js.Array[firebaseLib.firebaseMod.appNs.App] = js.native
   /**
     * Retrieves a Firebase {@link firebase.app.App app} instance.
     *
@@ -43,8 +43,8 @@ object ^ extends js.Object {
     * @return The app corresponding to the provided app name.
     *   If no app name is provided, the default app is returned.
     */
-  def app(): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
-  def app(name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def app(): firebaseLib.firebaseMod.appNs.App = js.native
+  def app(name: java.lang.String): firebaseLib.firebaseMod.appNs.App = js.native
   /**
     * Gets the {@link firebase.auth.Auth `Auth`} service for the default app or a
     * given app.
@@ -68,8 +68,8 @@ object ^ extends js.Object {
     * ```
     * @param app
     */
-  def auth(): firebaseLib.firebaseMod.firebaseNs.authNs.Auth = js.native
-  def auth(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.authNs.Auth = js.native
+  def auth(): firebaseLib.firebaseMod.authNs.Auth = js.native
+  def auth(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.authNs.Auth = js.native
   /**
     * Gets the {@link firebase.database.Database `Database`} service for the
     * default app or a given app.
@@ -101,12 +101,12 @@ object ^ extends js.Object {
     * @return The default Database service if no app
     *   is provided or the Database service associated with the provided app.
     */
-  def database(): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
-  def database(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
-  def firestore(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
-  def firestore(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
-  def functions(): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
-  def functions(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
+  def database(): firebaseLib.firebaseMod.databaseNs.Database = js.native
+  def database(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.databaseNs.Database = js.native
+  def firestore(): firebaseLib.firebaseMod.firestoreNs.Firestore = js.native
+  def firestore(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.firestoreNs.Firestore = js.native
+  def functions(): firebaseLib.firebaseMod.functionsNs.Functions = js.native
+  def functions(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.functionsNs.Functions = js.native
   /**
     * Creates and initializes a Firebase {@link firebase.app.App app} instance.
     *
@@ -149,8 +149,8 @@ object ^ extends js.Object {
     *
     * @return {!firebase.app.App} The initialized app.
     */
-  def initializeApp(options: js.Object): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
-  def initializeApp(options: js.Object, name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def initializeApp(options: js.Object): firebaseLib.firebaseMod.appNs.App = js.native
+  def initializeApp(options: js.Object, name: java.lang.String): firebaseLib.firebaseMod.appNs.App = js.native
   /**
     * Gets the {@link firebase.messaging.Messaging `Messaging`} service for the
     * default app or a given app.
@@ -181,8 +181,8 @@ object ^ extends js.Object {
     * @param app The app to create a Messaging service for.
     *     If not passed, uses the default app.
     */
-  def messaging(): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
-  def messaging(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
+  def messaging(): firebaseLib.firebaseMod.messagingNs.Messaging = js.native
+  def messaging(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.messagingNs.Messaging = js.native
   /**
     * Gets the {@link firebase.storage.Storage `Storage`} service for the default
     * app or a given app.
@@ -208,7 +208,7 @@ object ^ extends js.Object {
     * @param app The app to create a storage service for.
     *     If not passed, uses the default app.
     */
-  def storage(): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native
-  def storage(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native
+  def storage(): firebaseLib.firebaseMod.storageNs.Storage = js.native
+  def storage(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.storageNs.Storage = js.native
 }
 

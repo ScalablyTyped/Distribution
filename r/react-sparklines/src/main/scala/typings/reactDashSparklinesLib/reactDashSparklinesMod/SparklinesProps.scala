@@ -13,7 +13,7 @@ trait SparklinesProps extends js.Object {
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var svgHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var svgWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
@@ -29,7 +29,7 @@ object SparklinesProps {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     preserveAspectRatio: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     svgHeight: scala.Double | java.lang.String = null,
     svgWidth: scala.Double | java.lang.String = null,
     width: scala.Int | scala.Double = null

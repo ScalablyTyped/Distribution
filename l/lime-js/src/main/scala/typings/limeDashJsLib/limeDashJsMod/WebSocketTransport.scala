@@ -7,15 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("lime-js", "WebSocketTransport")
 @js.native
-class WebSocketTransport ()
-  extends limeDashJsLib.limeDashJsMod.LimeNs.WebSocketTransport {
+class WebSocketTransport () extends Transport {
   def this(traceEnabled: scala.Boolean) = this()
   /* CompleteClass */
   override var compression: java.lang.String = js.native
   /* CompleteClass */
   override var encryption: java.lang.String = js.native
-  /* CompleteClass */
-  override var webSocket: stdLib.WebSocket = js.native
+  var webSocket: stdLib.WebSocket = js.native
   /* CompleteClass */
   override def close(): scala.Unit = js.native
   /* CompleteClass */
@@ -25,7 +23,7 @@ class WebSocketTransport ()
   /* CompleteClass */
   override def onClose(): scala.Unit = js.native
   /* CompleteClass */
-  override def onEnvelope(envelope: limeDashJsLib.limeDashJsMod.LimeNs.Envelope): js.Any = js.native
+  override def onEnvelope(envelope: Envelope): js.Any = js.native
   /* CompleteClass */
   override def onError(error: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
@@ -33,7 +31,7 @@ class WebSocketTransport ()
   /* CompleteClass */
   override def open(uri: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def send(envelope: limeDashJsLib.limeDashJsMod.LimeNs.Envelope): scala.Unit = js.native
+  override def send(envelope: Envelope): scala.Unit = js.native
   /* CompleteClass */
   override def setCompression(compression: java.lang.String): scala.Unit = js.native
   /* CompleteClass */

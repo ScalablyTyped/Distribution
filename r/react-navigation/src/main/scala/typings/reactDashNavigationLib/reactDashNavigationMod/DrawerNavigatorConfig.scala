@@ -19,7 +19,7 @@ object DrawerNavigatorConfig {
   def apply(
     backBehavior: reactDashNavigationLib.reactDashNavigationLibStrings.none | reactDashNavigationLib.reactDashNavigationLibStrings.initialRoute = null,
     containerConfig: js.Any = null,
-    contentComponent: reactLib.reactMod.ReactNs.ComponentType[DrawerItemsProps] = null,
+    contentComponent: reactLib.reactMod.ComponentType[DrawerItemsProps] = null,
     contentOptions: reactDashNavigationLib.Anon_ActiveBackgroundColor = null,
     defaultNavigationOptions: NavigationScreenConfig[NavigationScreenOptions] = null,
     drawerBackgroundColor: java.lang.String = null,

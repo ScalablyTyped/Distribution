@@ -14,13 +14,13 @@ trait KeyboardNavigation extends js.Object {
   	 * Return a style object which will be applied on the navigating cell.
   	 */
   var customStyle: js.UndefOr[
-    js.Function2[/* cell */ js.Any, /* row */ js.Any, reactLib.reactMod.ReactNs.CSSProperties]
+    js.Function2[/* cell */ js.Any, /* row */ js.Any, reactLib.reactMod.CSSProperties]
   ] = js.undefined
   /**
   	 * Return a style object which will be applied on the both of navigating and editing cell.
   	 */
   var customStyleOnEditCell: js.UndefOr[
-    js.Function2[/* cell */ js.Any, /* row */ js.Any, reactLib.reactMod.ReactNs.CSSProperties]
+    js.Function2[/* cell */ js.Any, /* row */ js.Any, reactLib.reactMod.CSSProperties]
   ] = js.undefined
   /**
   	 * When set to true, pressing ENTER will begin to edit the cell if cellEdit is also enabled.
@@ -40,8 +40,8 @@ object KeyboardNavigation {
   @scala.inline
   def apply(
     clickToNav: js.UndefOr[scala.Boolean] = js.undefined,
-    customStyle: (/* cell */ js.Any, /* row */ js.Any) => reactLib.reactMod.ReactNs.CSSProperties = null,
-    customStyleOnEditCell: (/* cell */ js.Any, /* row */ js.Any) => reactLib.reactMod.ReactNs.CSSProperties = null,
+    customStyle: (/* cell */ js.Any, /* row */ js.Any) => reactLib.reactMod.CSSProperties = null,
+    customStyleOnEditCell: (/* cell */ js.Any, /* row */ js.Any) => reactLib.reactMod.CSSProperties = null,
     enterToEdit: js.UndefOr[scala.Boolean] = js.undefined,
     enterToExpand: js.UndefOr[scala.Boolean] = js.undefined,
     enterToSelect: js.UndefOr[scala.Boolean] = js.undefined

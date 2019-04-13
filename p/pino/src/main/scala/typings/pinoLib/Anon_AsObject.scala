@@ -17,14 +17,14 @@ trait Anon_AsObject extends js.Object {
     * have methods that correspond to the levels. When a message is logged at a given level, the corresponding
     * method is called. If a method isn't present, the logging falls back to using the `console`.
     */
-  var write: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn | Anon_Debug] = js.undefined
+  var write: js.UndefOr[pinoLib.pinoMod.WriteFn | Anon_Debug] = js.undefined
 }
 
 object Anon_AsObject {
   @scala.inline
   def apply(
     asObject: js.UndefOr[scala.Boolean] = js.undefined,
-    write: pinoLib.pinoMod.PNs.WriteFn | Anon_Debug = null
+    write: pinoLib.pinoMod.WriteFn | Anon_Debug = null
   ): Anon_AsObject = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(asObject)) __obj.updateDynamic("asObject")(asObject)

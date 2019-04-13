@@ -14,9 +14,9 @@ object TypeaheadMenuProps {
     id: java.lang.String,
     className: java.lang.String = null,
     emptyLabel: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLUListElement] = null,
+    innerRef: reactLib.reactMod.LegacyRef[stdLib.HTMLUListElement] = null,
     maxHeight: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     text: java.lang.String = null
   ): TypeaheadMenuProps[T] = {
     val __obj = js.Dynamic.literal(id = id)

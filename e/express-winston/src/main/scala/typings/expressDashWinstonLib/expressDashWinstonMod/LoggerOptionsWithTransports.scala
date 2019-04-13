@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait LoggerOptionsWithTransports
   extends BaseLoggerOptions
      with LoggerOptions {
-  var transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.namespaced]
+  var transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.^]
 }
 
 object LoggerOptionsWithTransports {
   @scala.inline
   def apply(
-    transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.namespaced],
+    transports: js.Array[winstonDashTransportLib.winstonDashTransportMod.^],
     baseMeta: js.Object = null,
     bodyBlacklist: js.Array[java.lang.String] = null,
     bodyWhitelist: js.Array[java.lang.String] = null,

@@ -11,7 +11,7 @@ trait StepperProps extends js.Object {
   var orientation: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.horizontal | materialDashUiLib.materialDashUiLibStrings.vertical
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object StepperProps {
@@ -20,7 +20,7 @@ object StepperProps {
     activeStep: scala.Int | scala.Double = null,
     linear: js.UndefOr[scala.Boolean] = js.undefined,
     orientation: materialDashUiLib.materialDashUiLibStrings.horizontal | materialDashUiLib.materialDashUiLibStrings.vertical = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): StepperProps = {
     val __obj = js.Dynamic.literal()
     if (activeStep != null) __obj.updateDynamic("activeStep")(activeStep.asInstanceOf[js.Any])

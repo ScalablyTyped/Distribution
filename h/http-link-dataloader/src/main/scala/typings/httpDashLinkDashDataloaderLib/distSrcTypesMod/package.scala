@@ -7,4 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object distSrcTypesMod {
   type HttpOptions = Options with httpDashLinkDashDataloaderLib.Anon_Uri
+  type Variables = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

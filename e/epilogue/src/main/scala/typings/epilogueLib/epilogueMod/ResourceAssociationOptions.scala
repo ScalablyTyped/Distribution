@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResourceAssociationOptions
-  extends sequelizeLib.sequelizeMod.sequelizeNs.AssociationOptions {
+  extends sequelizeLib.sequelizeMod.AssociationOptions {
   var removeForeignKeys: scala.Boolean
 }
 
@@ -16,7 +16,7 @@ object ResourceAssociationOptions {
     removeForeignKeys: scala.Boolean,
     as: java.lang.String | sequelizeLib.Anon_Plural = null,
     constraints: js.UndefOr[scala.Boolean] = js.undefined,
-    foreignKey: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.AssociationForeignKeyOptions = null,
+    foreignKey: java.lang.String | sequelizeLib.sequelizeMod.AssociationForeignKeyOptions = null,
     foreignKeyConstraint: js.UndefOr[scala.Boolean] = js.undefined,
     hooks: js.UndefOr[scala.Boolean] = js.undefined,
     onDelete: java.lang.String = null,

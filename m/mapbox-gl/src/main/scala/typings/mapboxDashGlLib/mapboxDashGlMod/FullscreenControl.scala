@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mapbox-gl", "FullscreenControl")
 @js.native
-class FullscreenControl ()
-  extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.FullscreenControl
+class FullscreenControl () extends Control
 

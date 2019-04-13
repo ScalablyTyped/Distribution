@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Tooltip
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libTooltipMod.TooltipNs.TooltipProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[TooltipProps, js.Object, js.Any]
 

@@ -27,4 +27,5 @@ package object auth0DashLockLib {
     /* url */ java.lang.String, 
     scala.Unit
   ]
+  type Auth0LockThemeButtonOptions = org.scalablytyped.runtime.StringDictionary[Auth0LockThemeButton]
 }

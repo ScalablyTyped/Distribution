@@ -23,3 +23,8 @@ class VaultsOnServer ()
   override def Item(Index: scala.Double): mfilesLib.IVaultOnServer = js.native
 }
 
+@JSGlobal("MFiles.VaultsOnServer")
+@js.native
+object VaultsOnServer
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultsOnServer]
+

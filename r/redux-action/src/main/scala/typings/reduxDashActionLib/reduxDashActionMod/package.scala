@@ -17,6 +17,7 @@ package object reduxDashActionMod {
     /* action */ js.UndefOr[BaseAction], 
     State
   ]
+  type ReducerHandlers[State] = org.scalablytyped.runtime.StringDictionary[ReducerHandler[State]]
   type ThunkAction[Payload] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[js.Any], 
     /* getState */ js.Function0[js.Any], 

@@ -16,8 +16,8 @@ object middlewareNs extends js.Object {
   def crashProtector(
     errorHandler: js.Function3[
       /* err */ commonDashErrorsLib.commonDashErrorsMod.Error, 
-      /* req */ expressLib.expressMod.eNs.Request, 
-      /* res */ expressLib.expressMod.eNs.Response, 
+      /* req */ expressLib.expressMod.Request, 
+      /* res */ expressLib.expressMod.Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -27,9 +27,9 @@ object middlewareNs extends js.Object {
     */
   def errorHandler(
     err: commonDashErrorsLib.commonDashErrorsMod.Error,
-    req: expressLib.expressMod.eNs.Request,
-    res: expressLib.expressMod.eNs.Response,
-    next: expressLib.expressMod.eNs.NextFunction
+    req: expressLib.expressMod.Request,
+    res: expressLib.expressMod.Response,
+    next: expressLib.expressMod.NextFunction
   ): scala.Unit = js.native
 }
 

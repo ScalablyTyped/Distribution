@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArrayConverter ()
   extends typedocLib.distLibConverterComponentsMod.TypeConverter[
-      typescriptLib.typescriptMod.tsNs.TypeReference, 
-      typescriptLib.typescriptMod.tsNs.ArrayTypeNode
+      typescriptLib.typescriptMod.TypeReference, 
+      typescriptLib.typescriptMod.ArrayTypeNode
     ]
 

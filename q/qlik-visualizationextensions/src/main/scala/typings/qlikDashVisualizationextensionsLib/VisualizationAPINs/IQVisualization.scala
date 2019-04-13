@@ -16,7 +16,7 @@ trait IQVisualization extends js.Object {
     * Closes a visualization and releases the session object.
     * @return - A promise.
     */
-  def close(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def close(): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Tells the visualization it has been resized and should re-paint.
     */

@@ -5,12 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait IndexKind extends js.Object
+
 @JSImport("typescript", "IndexKind")
 @js.native
 object IndexKind extends js.Object {
-  /* 1 */ val Number: typescriptLib.typescriptMod.tsNs.IndexKind.Number with scala.Double = js.native
-  /* 0 */ val String: typescriptLib.typescriptMod.tsNs.IndexKind.String with scala.Double = js.native
+  @js.native
+  sealed trait Number
+    extends typescriptLib.typescriptMod.IndexKind
+  
+  @js.native
+  sealed trait String
+    extends typescriptLib.typescriptMod.IndexKind
+  
+  /* 1 */ val Number: Number with scala.Double = js.native
+  /* 0 */ val String: String with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.tsNs.IndexKind with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.IndexKind with scala.Double] = js.native
 }
 

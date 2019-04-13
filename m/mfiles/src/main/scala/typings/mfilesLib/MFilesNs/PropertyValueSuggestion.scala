@@ -19,3 +19,8 @@ class PropertyValueSuggestion ()
   override def Clone(): mfilesLib.IPropertyValueSuggestion = js.native
 }
 
+@JSGlobal("MFiles.PropertyValueSuggestion")
+@js.native
+object PropertyValueSuggestion
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValueSuggestion]
+

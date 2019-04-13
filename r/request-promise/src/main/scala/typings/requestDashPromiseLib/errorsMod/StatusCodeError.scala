@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait StatusCodeError
   extends stdLib.Error {
   var error: js.Any
-  var options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options
+  var options: requestDashPromiseLib.requestDashPromiseMod.Options
   var response: nodeLib.httpMod.IncomingMessage
   var statusCode: scala.Double
 }
@@ -16,7 +16,7 @@ trait StatusCodeError
 @JSImport("request-promise/errors", "StatusCodeError")
 @js.native
 class StatusCodeErrorCls protected () extends StatusCodeError {
-  def this(statusCode: scala.Double, body: js.Any, options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options, response: nodeLib.httpMod.IncomingMessage) = this()
+  def this(statusCode: scala.Double, body: js.Any, options: requestDashPromiseLib.requestDashPromiseMod.Options, response: nodeLib.httpMod.IncomingMessage) = this()
   /* CompleteClass */
   override var error: js.Any = js.native
   /* CompleteClass */
@@ -24,7 +24,7 @@ class StatusCodeErrorCls protected () extends StatusCodeError {
   /* CompleteClass */
   override var name: java.lang.String = js.native
   /* CompleteClass */
-  override var options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options = js.native
+  override var options: requestDashPromiseLib.requestDashPromiseMod.Options = js.native
   /* CompleteClass */
   override var response: nodeLib.httpMod.IncomingMessage = js.native
   /* CompleteClass */
@@ -37,7 +37,7 @@ object StatusCodeError {
     error: js.Any,
     message: java.lang.String,
     name: java.lang.String,
-    options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options,
+    options: requestDashPromiseLib.requestDashPromiseMod.Options,
     response: nodeLib.httpMod.IncomingMessage,
     statusCode: scala.Double,
     stack: java.lang.String = null

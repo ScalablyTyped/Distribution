@@ -17,7 +17,7 @@ trait AffixProps extends js.Object {
   /** 固定状态改变时触发的回调函数 */
   var onChange: js.UndefOr[js.Function1[/* affixed */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** 设置 Affix 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 */
   var target: js.UndefOr[js.Function0[stdLib.Window | stdLib.HTMLElement | scala.Null]] = js.undefined
 }
@@ -31,7 +31,7 @@ object AffixProps {
     offsetTop: scala.Int | scala.Double = null,
     onChange: /* affixed */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     target: () => stdLib.Window | stdLib.HTMLElement | scala.Null = null
   ): AffixProps = {
     val __obj = js.Dynamic.literal()

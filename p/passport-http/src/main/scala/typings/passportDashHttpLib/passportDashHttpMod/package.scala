@@ -13,7 +13,7 @@ package object passportDashHttpMod {
     js.Any
   ]
   type BasicVerifyFunctionWithRequest = js.Function4[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* username */ java.lang.String, 
     /* password */ java.lang.String, 
     /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], scala.Unit], 

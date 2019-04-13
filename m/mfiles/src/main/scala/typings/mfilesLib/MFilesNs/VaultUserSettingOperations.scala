@@ -21,3 +21,8 @@ class VaultUserSettingOperations ()
   override def SetSubstituteUsers(UserOrUserGroupIDs: mfilesLib.IUserOrUserGroupIDs): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultUserSettingOperations")
+@js.native
+object VaultUserSettingOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultUserSettingOperations]
+

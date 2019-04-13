@@ -58,3 +58,11 @@ class DebugElementCls protected ()
   override def triggerEventHandler(eventName: java.lang.String, eventObj: js.Any): scala.Unit = js.native
 }
 
+@JSImport("@angular/core", "DebugElement")
+@js.native
+object DebugElement
+  extends org.scalablytyped.runtime.Instantiable1[
+      /* args (repeated) */ js.Any, 
+      atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement
+    ]
+

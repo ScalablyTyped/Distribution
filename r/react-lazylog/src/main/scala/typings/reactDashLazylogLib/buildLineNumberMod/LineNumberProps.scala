@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait LineNumberProps extends js.Object {
   var highlight: js.UndefOr[scala.Boolean] = js.undefined
   var number: scala.Double
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object LineNumberProps {
@@ -17,8 +17,8 @@ object LineNumberProps {
   def apply(
     number: scala.Double,
     highlight: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): LineNumberProps = {
     val __obj = js.Dynamic.literal(number = number)
     if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)

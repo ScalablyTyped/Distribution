@@ -8,39 +8,39 @@ import scala.scalajs.js.annotation._
 object ravenDashJsLibStrings {
   @js.native
   sealed trait critical
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @js.native
   sealed trait debug
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @js.native
   sealed trait error
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @js.native
   sealed trait http
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.BreadcrumbType
+    extends ravenDashJsLib.ravenDashJsMod.BreadcrumbType
   
   @js.native
   sealed trait info
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @js.native
   sealed trait log
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @js.native
   sealed trait navigation
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.BreadcrumbType
+    extends ravenDashJsLib.ravenDashJsMod.BreadcrumbType
   
   @js.native
   sealed trait warn
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @js.native
   sealed trait warning
-    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @scala.inline
   def critical: critical = "critical".asInstanceOf[critical]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AnimationEnabledChildren extends js.Object {
   var animationEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -15,7 +15,7 @@ object Anon_AnimationEnabledChildren {
   @scala.inline
   def apply(
     animationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AnimationEnabledChildren = {
     val __obj = js.Dynamic.literal()

@@ -25,4 +25,15 @@ package object libSchemaComposerMod {
     - graphqlLib.typeDefinitionMod.GraphQLNamedType
   */
   type AnyType[TContext] = _AnyType[TContext] | (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[js.Any, TContext]) | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[js.Any, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[js.Any, TContext]) | graphqlLib.typeDefinitionMod.GraphQLNamedType
+  type GraphQLToolsResolveMethods[TContext] = org.scalablytyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
+      js.Function4[
+        /* source */ js.Any, 
+        /* args */ js.Object, 
+        /* context */ TContext, 
+        /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
+        js.Any
+      ]
+    ]
+  ]
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RingBuffer protected ()
   extends bunyanLib.bunyanMod.RingBuffer {
-  def this(options: bunyanLib.bunyanMod.LoggerNs.RingBufferOptions) = this()
+  def this(options: bunyanLib.bunyanMod.RingBufferOptions) = this()
 }
 

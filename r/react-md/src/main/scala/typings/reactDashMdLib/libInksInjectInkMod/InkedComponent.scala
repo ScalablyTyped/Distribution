@@ -11,6 +11,6 @@ trait InkedComponent extends js.Object {
   def createInk(pageX: scala.Double): scala.Unit = js.native
   def createInk(pageX: scala.Double, pageY: scala.Double): scala.Unit = js.native
   def focus(): scala.Unit = js.native
-  def getComposedComponent(): reactLib.reactMod.ReactNs.ReactInstance = js.native
+  def getComposedComponent(): reactLib.reactMod.ReactInstance = js.native
 }
 

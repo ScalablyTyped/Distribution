@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "FilterAggregation")
 @js.native
-class FilterAggregation protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterAggregation {
+class FilterAggregation protected () extends Aggregation {
   /*
     Defines a single bucket of all the documents that match a given filter.
     */
@@ -16,33 +15,28 @@ class FilterAggregation protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Add a nested aggregation.  This method can be called multiple times
     in order to set multiple nested aggregations what will be executed
     at the same time as the parent aggregation.  Alias for the
     aggregation method.
     */
-  /* CompleteClass */
-  override def agg(agg: elasticDotJsLib.elasticDotJsMod.elasticjsNs.Aggregation): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterAggregation = js.native
+  def agg(agg: Aggregation): FilterAggregation = js.native
   /*
     Add a nested aggregation.  This method can be called multiple times
     in order to set multiple nested aggregations what will be executed
     at the same time as the parent aggregation.
     */
-  /* CompleteClass */
-  override def aggregation(agg: elasticDotJsLib.elasticDotJsMod.elasticjsNs.Aggregation): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterAggregation = js.native
+  def aggregation(agg: Aggregation): FilterAggregation = js.native
   /*
     Sets the filter to be used for this aggregation.
     */
-  /* CompleteClass */
-  override def filter(oFilter: elasticDotJsLib.elasticDotJsMod.elasticjsNs.Filter): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterAggregation = js.native
+  def filter(oFilter: Filter): FilterAggregation = js.native
   /*
     Retrieves the internal agg object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
 }
 

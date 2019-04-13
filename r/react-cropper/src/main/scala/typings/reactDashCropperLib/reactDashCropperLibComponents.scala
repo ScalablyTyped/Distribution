@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashCropperLibComponents {
   @scala.inline
-  def ReactDashCropper: reactLib.reactMod.ReactNs.ComponentType[ReactCropperProps] = js.constructorOf[reactDashCropperLib.reactDashCropperMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashCropperLib.ReactCropperProps]]
+  def ReactDashCropper: reactLib.reactMod.ComponentType[ReactCropperProps] = js.constructorOf[reactDashCropperLib.reactDashCropperMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCropperLib.ReactCropperProps]]
   type ReactCropperProps = reactDashCropperLib.ReactCropperProps
 }
 

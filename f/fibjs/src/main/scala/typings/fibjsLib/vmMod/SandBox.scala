@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("vm", "SandBox")
 @js.native
 class SandBox ()
-  extends fibjsLib.vmMod.vmNs.SandBox
+  extends fibjsLib.Class_SandBox
 

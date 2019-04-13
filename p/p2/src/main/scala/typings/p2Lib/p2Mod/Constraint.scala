@@ -7,26 +7,17 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "Constraint")
 @js.native
-class Constraint protected ()
-  extends p2Lib.p2Mod.p2Ns.Constraint {
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double, options: p2Lib.p2Mod.p2Ns.ConstraintOptions) = this()
-  /* CompleteClass */
-  override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
-  /* CompleteClass */
-  override var bodyB: p2Lib.p2Mod.p2Ns.Body = js.native
-  /* CompleteClass */
-  override var collideConnected: scala.Boolean = js.native
-  /* CompleteClass */
-  override var equeations: js.Array[p2Lib.p2Mod.p2Ns.Equation] = js.native
-  /* CompleteClass */
-  override var `type`: scala.Double = js.native
-  /* CompleteClass */
-  override def setRelaxation(relaxation: scala.Double): scala.Unit = js.native
-  /* CompleteClass */
-  override def setStiffness(stiffness: scala.Double): scala.Unit = js.native
-  /* CompleteClass */
-  override def update(): scala.Unit = js.native
+class Constraint protected () extends js.Object {
+  def this(bodyA: Body, bodyB: Body, `type`: scala.Double) = this()
+  def this(bodyA: Body, bodyB: Body, `type`: scala.Double, options: ConstraintOptions) = this()
+  var bodyA: Body = js.native
+  var bodyB: Body = js.native
+  var collideConnected: scala.Boolean = js.native
+  var equeations: js.Array[Equation] = js.native
+  var `type`: scala.Double = js.native
+  def setRelaxation(relaxation: scala.Double): scala.Unit = js.native
+  def setStiffness(stiffness: scala.Double): scala.Unit = js.native
+  def update(): scala.Unit = js.native
 }
 
 /* static members */

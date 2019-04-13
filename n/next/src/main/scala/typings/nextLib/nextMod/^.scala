@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("next", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): nextLib.nextMod.nextNs.DevServer = js.native
-  def apply(options: nextLib.nextMod.nextNs.ServerOptions with nextLib.Anon_Dev): nextLib.nextMod.nextNs.DevServer = js.native
+  def apply(): Server = js.native
+  def apply(options: ServerOptions): Server = js.native
 }
 

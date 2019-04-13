@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormButton", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[FormButtonProps] = js.native
+  val default: reactLib.reactMod.StatelessComponent[FormButtonProps] = js.native
 }
 

@@ -21,9 +21,9 @@ object AppBarProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[AppBarClassKey]] = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     position: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fixed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.absolute | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sticky | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.static | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.relative = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AppBarProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

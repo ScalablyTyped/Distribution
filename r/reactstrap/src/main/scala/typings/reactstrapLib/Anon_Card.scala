@@ -15,7 +15,7 @@ trait Anon_Card extends js.Object {
   var navbar: js.UndefOr[scala.Boolean] = js.undefined
   var pills: js.UndefOr[scala.Boolean] = js.undefined
   var tabs: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var vertical: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
@@ -31,7 +31,7 @@ object Anon_Card {
     navbar: js.UndefOr[scala.Boolean] = js.undefined,
     pills: js.UndefOr[scala.Boolean] = js.undefined,
     tabs: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     vertical: scala.Boolean | java.lang.String = null
   ): Anon_Card = {
     val __obj = js.Dynamic.literal()

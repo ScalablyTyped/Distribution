@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Convert: xmlDashCoreLib.xmlDashCoreMod.Convert = js.native
-  val Select: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.SelectNodes = js.native
+  val Select: xmlDashCoreLib.xmlDashCoreMod.SelectNodes = js.native
   def Parse(xmlString: java.lang.String): stdLib.Document = js.native
 }
 

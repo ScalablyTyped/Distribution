@@ -10,14 +10,8 @@ trait PlotParams extends js.Object {
     * applied to the <div> into which the plot is rendered
     */
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var config: js.UndefOr[
-    stdLib.Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Config */ _
-    ]
-  ] = js.undefined
-  var data: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Data */ _
-  ]
+  var config: js.UndefOr[stdLib.Partial[plotlyDotJsLib.plotlyDotJsMod.Config]] = js.undefined
+  var data: js.Array[plotlyDotJsLib.plotlyDotJsMod.Data]
   /**
     * Assign the graph div to window.gd for debugging
     */
@@ -27,17 +21,13 @@ trait PlotParams extends js.Object {
     */
   var divId: js.UndefOr[java.lang.String] = js.undefined
   var frames: js.UndefOr[js.Array[Frame]] = js.undefined
-  var layout: stdLib.Partial[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Layout */ _
-  ]
+  var layout: stdLib.Partial[plotlyDotJsLib.plotlyDotJsMod.Layout]
   var onAfterExport: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onAfterPlot: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onAnimated: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onAnimatingFrame: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.FrameAnimationEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.FrameAnimationEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -46,25 +36,19 @@ trait PlotParams extends js.Object {
   var onBeforeExport: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onButtonClicked: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ButtonClickEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ButtonClickEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onClickAnnotation: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ClickAnnotationEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ClickAnnotationEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -78,9 +62,7 @@ trait PlotParams extends js.Object {
   var onFramework: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onHover: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -98,17 +80,13 @@ trait PlotParams extends js.Object {
   ] = js.undefined
   var onLegendClick: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent], 
       scala.Boolean
     ]
   ] = js.undefined
   var onLegendDoubleClick: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent], 
       scala.Boolean
     ]
   ] = js.undefined
@@ -127,57 +105,43 @@ trait PlotParams extends js.Object {
   var onRedraw: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onRelayout: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRelayoutEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRelayoutEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onRestyle: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRestyleEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRestyleEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onSelected: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onSelecting: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onSliderChange: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderChangeEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderChangeEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onSliderEnd: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderEndEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderEndEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onSliderStart: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderStartEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderStartEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -185,9 +149,7 @@ trait PlotParams extends js.Object {
   var onTransitioning: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onUnhover: js.UndefOr[
     js.Function1[
-      /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-      ], 
+      /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -210,7 +172,7 @@ trait PlotParams extends js.Object {
   /**
     * used to style the <div> into which the plot is rendered
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * When true, adds a call to Plotly.Plot.resize() as a window.resize event handler
     */
@@ -220,82 +182,46 @@ trait PlotParams extends js.Object {
 object PlotParams {
   @scala.inline
   def apply(
-    data: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Data */ _
-    ],
-    layout: stdLib.Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Layout */ _
-    ],
+    data: js.Array[plotlyDotJsLib.plotlyDotJsMod.Data],
+    layout: stdLib.Partial[plotlyDotJsLib.plotlyDotJsMod.Layout],
     className: java.lang.String = null,
-    config: stdLib.Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Config */ _
-    ] = null,
+    config: stdLib.Partial[plotlyDotJsLib.plotlyDotJsMod.Config] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     divId: java.lang.String = null,
     frames: js.Array[Frame] = null,
     onAfterExport: () => scala.Unit = null,
     onAfterPlot: () => scala.Unit = null,
     onAnimated: () => scala.Unit = null,
-    onAnimatingFrame: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.FrameAnimationEvent */ _
-    ] => scala.Unit = null,
+    onAnimatingFrame: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.FrameAnimationEvent] => scala.Unit = null,
     onAnimationInterrupted: () => scala.Unit = null,
     onAutoSize: () => scala.Unit = null,
     onBeforeExport: () => scala.Unit = null,
-    onButtonClicked: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ButtonClickEvent */ _
-    ] => scala.Unit = null,
-    onClick: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-    ] => scala.Unit = null,
-    onClickAnnotation: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ClickAnnotationEvent */ _
-    ] => scala.Unit = null,
+    onButtonClicked: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ButtonClickEvent] => scala.Unit = null,
+    onClick: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent] => scala.Unit = null,
+    onClickAnnotation: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.ClickAnnotationEvent] => scala.Unit = null,
     onDeselect: () => scala.Unit = null,
     onDoubleClick: () => scala.Unit = null,
     onError: /* err */ stdLib.Readonly[stdLib.Error] => scala.Unit = null,
     onFramework: () => scala.Unit = null,
-    onHover: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-    ] => scala.Unit = null,
+    onHover: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent] => scala.Unit = null,
     onInitialized: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
-    onLegendClick: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
-    ] => scala.Boolean = null,
-    onLegendDoubleClick: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
-    ] => scala.Boolean = null,
+    onLegendClick: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent] => scala.Boolean = null,
+    onLegendDoubleClick: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.LegendClickEvent] => scala.Boolean = null,
     onPurge: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
     onRedraw: () => scala.Unit = null,
-    onRelayout: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRelayoutEvent */ _
-    ] => scala.Unit = null,
-    onRestyle: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRestyleEvent */ _
-    ] => scala.Unit = null,
-    onSelected: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
-    ] => scala.Unit = null,
-    onSelecting: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
-    ] => scala.Unit = null,
-    onSliderChange: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderChangeEvent */ _
-    ] => scala.Unit = null,
-    onSliderEnd: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderEndEvent */ _
-    ] => scala.Unit = null,
-    onSliderStart: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderStartEvent */ _
-    ] => scala.Unit = null,
+    onRelayout: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRelayoutEvent] => scala.Unit = null,
+    onRestyle: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotRestyleEvent] => scala.Unit = null,
+    onSelected: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent] => scala.Unit = null,
+    onSelecting: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotSelectionEvent] => scala.Unit = null,
+    onSliderChange: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderChangeEvent] => scala.Unit = null,
+    onSliderEnd: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderEndEvent] => scala.Unit = null,
+    onSliderStart: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.SliderStartEvent] => scala.Unit = null,
     onTransitionInterrupted: () => scala.Unit = null,
     onTransitioning: () => scala.Unit = null,
-    onUnhover: /* event */ stdLib.Readonly[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
-    ] => scala.Unit = null,
+    onUnhover: /* event */ stdLib.Readonly[plotlyDotJsLib.plotlyDotJsMod.PlotMouseEvent] => scala.Unit = null,
     onUpdate: (/* figure */ stdLib.Readonly[Figure], /* graphDiv */ stdLib.Readonly[stdLib.HTMLElement]) => scala.Unit = null,
     revision: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     useResizeHandler: js.UndefOr[scala.Boolean] = js.undefined
   ): PlotParams = {
     val __obj = js.Dynamic.literal(data = data, layout = layout)

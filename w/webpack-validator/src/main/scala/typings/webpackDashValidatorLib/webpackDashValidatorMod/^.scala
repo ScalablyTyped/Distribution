@@ -11,10 +11,10 @@ object ^ extends js.Object {
   /**
     * Validate your webpack configs with joi
     */
-  def apply(config: webpackLib.webpackMod.webpackNs.Configuration): webpackLib.webpackMod.webpackNs.Configuration = js.native
+  def apply(config: webpackLib.webpackMod.Configuration): webpackLib.webpackMod.Configuration = js.native
   /**
     * Validate your webpack configs with joi
     */
-  def apply(config: webpackLib.webpackMod.webpackNs.Configuration, options: ValidationOptions): webpackLib.webpackMod.webpackNs.Configuration = js.native
+  def apply(config: webpackLib.webpackMod.Configuration, options: ValidationOptions): webpackLib.webpackMod.Configuration = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Lists/ListItemControl", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[ListItemControlProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[ListItemControlProps, reactLib.reactMod.ComponentState] = js.native
 }
 

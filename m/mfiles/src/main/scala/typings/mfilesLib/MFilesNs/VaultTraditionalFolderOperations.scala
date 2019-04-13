@@ -13,3 +13,8 @@ class VaultTraditionalFolderOperations ()
   override def GetTraditionalFolderContents(Folder: scala.Double): mfilesLib.ITraditionalFolderContents = js.native
 }
 
+@JSGlobal("MFiles.VaultTraditionalFolderOperations")
+@js.native
+object VaultTraditionalFolderOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultTraditionalFolderOperations]
+

@@ -1,0 +1,76 @@
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibraryScoped(jest,Some(types)) [id => @jest/types, phase => typescript, file => ../types/build/Config.d.ts] 
+[debug] PhaseRunner.scala:82 Success [id => @jest/types, phase => typescript] 
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibraryScoped(jest,Some(types)) [id => @jest/types, phase => typescript, file => ../types/build/Global.d.ts] 
+[debug] PhaseRunner.scala:82 Success [id => @jest/types, phase => typescript] 
+[debug] PhaseRunner.scala:82 Success [id => @jest/types, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jest/types/build/Config.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jest/types),TsIdentLibraryScoped(jest,Some(types))),TsIdentModule(Some(jest),List(types, build, Config))) [id => @jest/types, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jest),List(types, build, Config)) [id => @jest/types, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jest/types/build/Global.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jest/types),TsIdentLibraryScoped(jest,Some(types))),TsIdentModule(Some(jest),List(types, build, Global))) [id => @jest/types, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jest),List(types, build, Global)) [id => @jest/types, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@jest/types/build/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@jest/types),TsIdentLibraryScoped(jest,Some(types))),TsIdentModule(Some(jest),List(types))) [id => @jest/types, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(jest),List(types)) [id => @jest/types, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibraryScoped(jest,Some(types)) [id => @jest/types, phase => typescript] 
+[info ] UnionTypesFromKeyOf.scala:11 Expanded keyof TsQIdent(List(TsIdentLibraryScoped(jest,Some(types)), TsIdentModule(Some(jest),List(types, build, Global)), TsIdentSimple(Global), TsIdentNamespace(NodeJS), TsIdentSimple(Global))) [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Config) / TsDeclInterface(ProjectConfig) / TsMemberProperty(extraGlobals) / TsTypeRef() / TsTypeKeyOf())] 
+[info ] PreferTypeAlias.scala:67 Simplified to function type alias [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(ItConcurrentBase))] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Global) [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Config) / TsDeclInterface(DefaultOptions) / TsMemberProperty(coverageThreshold) / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Color) [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Config) / TsDeclTypeAlias(DisplayName) / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Global) [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Config) / TsDeclInterface(InitialOptions) / TsMemberProperty(coverageThreshold) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Config) [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Config) / TsDeclInterface(GlobalConfig) / TsMemberProperty(watchPlugins) / TsTypeUnion() / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_All) [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Config) / TsDeclTypeAlias(Argv) / TsTypeRef() / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Concurrent) [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global) / TsMemberProperty(fit) / TsTypeIntersect() / TsTypeObject())] 
+[info ] ExpandCallables.scala:48 Expanded it into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded test into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded fit into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded xit into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded xtest into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded describe into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded xdescribe into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded fdescribe into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsGlobal() / TsDeclNamespace(NodeJS) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded it into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded test into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded fit into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded xit into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded xtest into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded describe into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded xdescribe into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded fdescribe into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Global))] 
+[info ] ExpandCallables.scala:48 Expanded only into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(ItConcurrentExtended))] 
+[info ] ExpandCallables.scala:48 Expanded skip into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(ItConcurrentExtended))] 
+[info ] ExpandCallables.scala:48 Expanded each into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(ItBase))] 
+[info ] ExpandCallables.scala:48 Expanded each into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(DescribeBase))] 
+[info ] ExpandCallables.scala:48 Expanded only into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(It))] 
+[info ] ExpandCallables.scala:48 Expanded skip into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(It))] 
+[info ] ExpandCallables.scala:48 Expanded only into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Describe))] 
+[info ] ExpandCallables.scala:48 Expanded skip into 1 methods [id => @jest/types, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@jest/types/build/Global) / TsDeclInterface(Describe))] 
+[debug] PhaseRunner.scala:82 Success [id => @jest/types, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:40 Processing @jest/types [id => @jest/types, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Success [id => @jest/types, phase => scala.js] 
+[error] unknown file:-1 Error while emitting Global.scala
+assertion failed: 
+  Java member module without member class: package NodeJSNs - List(package NodeJSNs)
+     while compiling: /home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/src/main/scala/typings/atJestTypesLib/buildGlobalMod/Global.scala
+        during phase: jvm
+     library version: version 2.12.8
+    compiler version: version 2.12.8
+  reconstructed args: -classpath /home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.27/scalajs-library_2.12-0.6.27.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.12/0.9.6/scalajs-dom_sjs0.6_2.12-0.9.6.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.27/scalajs-library_2.12-0.6.27.jar:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/com/olvind/scalablytyped-runtime_sjs0.6_2.12/2.0.0/scalablytyped-runtime_sjs0.6_2.12-2.0.0.jar:/home/tso/.ivy2/local/org.scalablytyped/istanbul-lib-coverage_sjs0.6_2.12/2.0-dt-20190311Z-e069e9/jars/istanbul-lib-coverage_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/yargs_sjs0.6_2.12/13.0-dt-20190407Z-c23bde/jars/yargs_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/yargs-parser_sjs0.6_2.12/13.0-dt-20190407Z-e98c41/jars/yargs-parser_sjs0.6_2.12.jar:/home/tso/.ivy2/local/org.scalablytyped/std_sjs0.6_2.12/3.4-6f75bc/jars/std_sjs0.6_2.12.jar -bootclasspath /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.jar -Xplugin:/home/tso/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.12.8/0.6.27/scalajs-compiler_2.12.8-0.6.27.jar -P:scalajs:sjsDefinedByDefault
+
+  last tree to typer: TypeTree(trait Dynamic)
+       tree position: line 17 of /home/tso/tmp/tso-cache/ScalablyTyped/j/jest__types/src/main/scala/typings/atJestTypesLib/buildGlobalMod/Jasmine.scala
+            tree tpe: scalajs.js.Dynamic
+              symbol: (sealed abstract) trait Dynamic in package js
+   symbol definition: sealed abstract trait Dynamic extends Any with Dynamic (a ClassSymbol)
+      symbol package: scala.scalajs.js
+       symbol owners: trait Dynamic
+           call site: constructor package in package buildGlobalMod in package buildGlobalMod
+
+== Source file context for tree position ==
+
+    14   @scala.inline
+    15   def apply(addMatchers: js.Function, _DEFAULT_TIMEOUT_INTERVAL: scala.Int | scala.Double = null): Jasmine = {
+    16     val __obj = js.Dynamic.literal(addMatchers = addMatchers)
+    17     if (_DEFAULT_TIMEOUT_INTERVAL != null) __obj.updateDynamic("_DEFAULT_TIMEOUT_INTERVAL")(_DEFAULT_TIMEOUT_INTERVAL.asInstanceOf[js.Any])
+    18     __obj.asInstanceOf[Jasmine]
+    19   }
+    20 },  [id => @jest/types, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [@jest/types => Compilation failed] [id => @jest/types, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [@jest/types => Compilation failed] [id => @jest/types, phase => publish] 

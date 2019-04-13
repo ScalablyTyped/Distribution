@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Badge")
 @js.native
-class Badge ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Badge
+class Badge () extends __MDLComponent[BadgeProps]
 

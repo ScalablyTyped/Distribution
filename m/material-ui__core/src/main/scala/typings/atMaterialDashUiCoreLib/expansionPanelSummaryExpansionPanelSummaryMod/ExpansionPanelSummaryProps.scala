@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var IconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var expandIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var expandIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
+  var onChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[js.Object]] = js.undefined
 }
 
 object ExpansionPanelSummaryProps {
@@ -25,11 +25,11 @@ object ExpansionPanelSummaryProps {
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ExpansionPanelSummaryClassKey]
     ] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    expandIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    expandIcon: reactLib.reactMod.ReactNode = null,
     expanded: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    onChange: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    onChange: reactLib.reactMod.ReactEventHandler[js.Object] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): ExpansionPanelSummaryProps = {
     val __obj = js.Dynamic.literal()
     if (IconButtonProps != null) __obj.updateDynamic("IconButtonProps")(IconButtonProps)

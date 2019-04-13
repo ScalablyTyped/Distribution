@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Name extends js.Object {
-  var name: typescriptLib.typescriptMod.tsNs.Identifier
-  var parent: typescriptLib.typescriptMod.tsNs.ConstructorDeclaration
+  var name: typescriptLib.typescriptMod.Identifier
+  var parent: typescriptLib.typescriptMod.ConstructorDeclaration
 }
 
 object Anon_Name {
   @scala.inline
   def apply(
-    name: typescriptLib.typescriptMod.tsNs.Identifier,
-    parent: typescriptLib.typescriptMod.tsNs.ConstructorDeclaration
+    name: typescriptLib.typescriptMod.Identifier,
+    parent: typescriptLib.typescriptMod.ConstructorDeclaration
   ): Anon_Name = {
     val __obj = js.Dynamic.literal(name = name, parent = parent)
   

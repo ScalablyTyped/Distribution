@@ -53,25 +53,25 @@ trait GlobuleStatic extends js.Object {
   def isMatch(
     patterns: java.lang.String,
     filepaths: java.lang.String,
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): scala.Boolean = js.native
   def isMatch(patterns: java.lang.String, filepaths: js.Array[java.lang.String]): scala.Boolean = js.native
   def isMatch(
     patterns: java.lang.String,
     filepaths: js.Array[java.lang.String],
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): scala.Boolean = js.native
   def isMatch(patterns: js.Array[java.lang.String], filepaths: java.lang.String): scala.Boolean = js.native
   def isMatch(
     patterns: js.Array[java.lang.String],
     filepaths: java.lang.String,
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): scala.Boolean = js.native
   def isMatch(patterns: js.Array[java.lang.String], filepaths: js.Array[java.lang.String]): scala.Boolean = js.native
   def isMatch(
     patterns: js.Array[java.lang.String],
     filepaths: js.Array[java.lang.String],
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): scala.Boolean = js.native
   /**
     * Given a set of source file paths, returns an array of src-dest file mapping objects
@@ -113,25 +113,25 @@ trait GlobuleStatic extends js.Object {
   def `match`(
     patterns: java.lang.String,
     filepaths: java.lang.String,
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): js.Array[java.lang.String] = js.native
   def `match`(patterns: java.lang.String, filepaths: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def `match`(
     patterns: java.lang.String,
     filepaths: js.Array[java.lang.String],
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): js.Array[java.lang.String] = js.native
   def `match`(patterns: js.Array[java.lang.String], filepaths: java.lang.String): js.Array[java.lang.String] = js.native
   def `match`(
     patterns: js.Array[java.lang.String],
     filepaths: java.lang.String,
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): js.Array[java.lang.String] = js.native
   def `match`(patterns: js.Array[java.lang.String], filepaths: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def `match`(
     patterns: js.Array[java.lang.String],
     filepaths: js.Array[java.lang.String],
-    options: minimatchLib.minimatchMod.MNs.IOptions
+    options: minimatchLib.minimatchMod.IOptions
   ): js.Array[java.lang.String] = js.native
 }
 

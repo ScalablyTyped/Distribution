@@ -17,13 +17,13 @@ trait IAsAsyncOptions[TProps] extends js.Object {
   /**
     * Callback which returns a promise resolving an object which exports the component.
     */
-  def load(): js.Promise[reactLib.reactMod.ReactNs.ReactType[TProps]]
+  def load(): js.Promise[reactLib.reactMod.ReactType[TProps]]
 }
 
 object IAsAsyncOptions {
   @scala.inline
   def apply[TProps](
-    load: () => js.Promise[reactLib.reactMod.ReactNs.ReactType[TProps]],
+    load: () => js.Promise[reactLib.reactMod.ReactType[TProps]],
     onError: /* error */ stdLib.Error => scala.Unit = null,
     onLoad: () => scala.Unit = null
   ): IAsAsyncOptions[TProps] = {

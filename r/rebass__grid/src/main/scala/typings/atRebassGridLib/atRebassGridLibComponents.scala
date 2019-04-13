@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atRebassGridLibComponents {
   @scala.inline
-  def Box: reactLib.reactMod.ReactNs.ComponentType[atRebassGridLib.atRebassGridMod.BoxProps] = atRebassGridLib.emotionMod.Box.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atRebassGridLib.atRebassGridMod.BoxProps]]
+  def Box: reactLib.reactMod.ComponentType[atRebassGridLib.atRebassGridMod.BoxProps] = atRebassGridLib.emotionMod.Box.asInstanceOf[reactLib.reactMod.ComponentType[atRebassGridLib.atRebassGridMod.BoxProps]]
   @scala.inline
-  def Flex: reactLib.reactMod.ReactNs.ComponentType[atRebassGridLib.atRebassGridMod.FlexProps] = atRebassGridLib.emotionMod.Flex.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atRebassGridLib.atRebassGridMod.FlexProps]]
+  def Flex: reactLib.reactMod.ComponentType[atRebassGridLib.atRebassGridMod.FlexProps] = atRebassGridLib.emotionMod.Flex.asInstanceOf[reactLib.reactMod.ComponentType[atRebassGridLib.atRebassGridMod.FlexProps]]
   @scala.inline
   def BoxProps: atRebassGridLib.atRebassGridMod.BoxProps.type = atRebassGridLib.atRebassGridMod.BoxProps
   type BoxProps = atRebassGridLib.atRebassGridMod.BoxProps

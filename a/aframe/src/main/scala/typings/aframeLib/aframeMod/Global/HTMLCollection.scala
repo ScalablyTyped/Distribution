@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HTMLCollection
   extends stdLib.HTMLCollectionBase {
   /**
@@ -12,24 +13,6 @@ trait HTMLCollection
   		 */
   def namedItem(name: java.lang.String): stdLib.Element | (aframeLib.aframeMod.Entity[
     aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
-  ]) | scala.Null
-}
-
-object HTMLCollection {
-  @scala.inline
-  def apply(
-    item: scala.Double => stdLib.Element | (aframeLib.aframeMod.Entity[
-      aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
-    ]),
-    iterator: () => stdLib.IterableIterator[stdLib.Element],
-    length: scala.Double,
-    namedItem: java.lang.String => stdLib.Element | (aframeLib.aframeMod.Entity[
-      aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
-    ]) | scala.Null
-  ): HTMLCollection = {
-    val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), iterator = js.Any.fromFunction0(iterator), length = length, namedItem = js.Any.fromFunction1(namedItem))
-  
-    __obj.asInstanceOf[HTMLCollection]
-  }
+  ]) | scala.Null = js.native
 }
 

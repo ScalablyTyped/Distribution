@@ -32,3 +32,8 @@ class AccessControlEntryContainer ()
   override def Remove(AccessControlEntryKey: mfilesLib.IAccessControlEntryKey): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.AccessControlEntryContainer")
+@js.native
+object AccessControlEntryContainer
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlEntryContainer]
+

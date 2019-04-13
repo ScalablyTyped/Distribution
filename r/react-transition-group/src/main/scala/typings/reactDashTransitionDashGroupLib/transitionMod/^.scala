@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("react-transition-group/Transition", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ENTERED: /* entered */ java.lang.String = js.native
-  val ENTERING: /* entering */ java.lang.String = js.native
-  val EXITED: /* exited */ java.lang.String = js.native
-  val EXITING: /* exiting */ java.lang.String = js.native
-  val UNMOUNTED: /* unmounted */ java.lang.String = js.native
+  val ENTERED: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.entered = js.native
+  val ENTERING: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.entering = js.native
+  val EXITED: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.exited = js.native
+  val EXITING: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.exiting = js.native
+  val UNMOUNTED: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.unmounted = js.native
 }
 

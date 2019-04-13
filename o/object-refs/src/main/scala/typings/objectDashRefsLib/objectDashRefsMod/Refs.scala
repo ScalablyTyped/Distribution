@@ -13,21 +13,13 @@ trait Refs extends js.Object {
     * @param {string|Refs.AttributeDescriptor} property
     */
   def bind(target: js.Any, property: java.lang.String): scala.Unit = js.native
-  def bind(target: js.Any, property: objectDashRefsLib.objectDashRefsMod.RefsNs.AttributeDescriptor): scala.Unit = js.native
+  def bind(target: js.Any, property: AttributeDescriptor): scala.Unit = js.native
   def ensureBound(target: js.Any, property: java.lang.String): scala.Unit = js.native
-  def ensureBound(target: js.Any, property: objectDashRefsLib.objectDashRefsMod.RefsNs.AttributeDescriptor): scala.Unit = js.native
-  def ensureRefsCollection(target: js.Any, property: objectDashRefsLib.objectDashRefsMod.RefsNs.AttributeDescriptor): js.Any = js.native
+  def ensureBound(target: js.Any, property: AttributeDescriptor): scala.Unit = js.native
+  def ensureRefsCollection(target: js.Any, property: AttributeDescriptor): js.Any = js.native
   def set(target: js.Any, property: java.lang.String, value: js.Any): scala.Unit = js.native
-  def set(
-    target: js.Any,
-    property: objectDashRefsLib.objectDashRefsMod.RefsNs.AttributeDescriptor,
-    value: js.Any
-  ): scala.Unit = js.native
+  def set(target: js.Any, property: AttributeDescriptor, value: js.Any): scala.Unit = js.native
   def unset(target: js.Any, property: java.lang.String, value: js.Any): scala.Unit = js.native
-  def unset(
-    target: js.Any,
-    property: objectDashRefsLib.objectDashRefsMod.RefsNs.AttributeDescriptor,
-    value: js.Any
-  ): scala.Unit = js.native
+  def unset(target: js.Any, property: AttributeDescriptor, value: js.Any): scala.Unit = js.native
 }
 

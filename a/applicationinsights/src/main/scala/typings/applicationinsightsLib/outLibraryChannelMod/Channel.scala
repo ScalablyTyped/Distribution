@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Channel extends js.Object {
   var _buffer: js.Array[java.lang.String] = js.native
   var _lastSend: scala.Double = js.native
-  var _sender: applicationinsightsLib.outLibrarySenderMod.namespaced = js.native
+  var _sender: applicationinsightsLib.outLibrarySenderMod.^ = js.native
   var _timeoutHandle: js.Any = js.native
   /* protected */ def _getBatchIntervalMs(): scala.Double = js.native
   /* protected */ def _getBatchSize(): scala.Double = js.native

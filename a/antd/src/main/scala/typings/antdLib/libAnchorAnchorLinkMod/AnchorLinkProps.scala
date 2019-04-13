@@ -10,14 +10,14 @@ trait AnchorLinkProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var href: java.lang.String
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var title: reactLib.reactMod.ReactNs.ReactNode
+  var title: reactLib.reactMod.ReactNode
 }
 
 object AnchorLinkProps {
   @scala.inline
   def apply(
     href: java.lang.String,
-    title: reactLib.reactMod.ReactNs.ReactNode,
+    title: reactLib.reactMod.ReactNode,
     children: js.Any = null,
     className: java.lang.String = null,
     prefixCls: java.lang.String = null

@@ -24,7 +24,7 @@ trait IColumnDef extends js.Object {
     * to the `data` field of this column.
     */
   @JSName("filterData")
-  var filterData_Original: IColumnField[angularLib.angularMod.angularNs.IPromise[SelectData] | SelectData] = js.native
+  var filterData_Original: IColumnField[angularLib.angularMod.IPromise[SelectData] | SelectData] = js.native
   /**
     * The definition of 0 or more html filter templates that should be rendered for this column in
     * the table header
@@ -106,14 +106,14 @@ trait IColumnDef extends js.Object {
     * At the creation of the `NgTableParams` this field will be called and the result then assigned
     * to the `data` field of this column.
     */
-  def filterData(): angularLib.angularMod.angularNs.IPromise[SelectData] | SelectData = js.native
-  def filterData(context: ColumnFieldContext): angularLib.angularMod.angularNs.IPromise[SelectData] | SelectData = js.native
+  def filterData(): angularLib.angularMod.IPromise[SelectData] | SelectData = js.native
+  def filterData(context: ColumnFieldContext): angularLib.angularMod.IPromise[SelectData] | SelectData = js.native
   /**
     * Supplies the `ISelectOption`s that can be used in a html filter template for this colums.
     * At the creation of the `NgTableParams` this field will be called and the result then assigned
     * to the `data` field of this column.
     */
-  def filterData(value: angularLib.angularMod.angularNs.IPromise[SelectData]): scala.Unit = js.native
+  def filterData(value: angularLib.angularMod.IPromise[SelectData]): scala.Unit = js.native
   def filterData(value: SelectData): scala.Unit = js.native
   /**
     * The name of the data row field that will be used to group on, or false when this column

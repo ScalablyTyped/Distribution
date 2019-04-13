@@ -34,9 +34,9 @@ trait SearchBar
   def focus(): scala.Unit = js.native
   def onBlur(): scala.Unit = js.native
   def onCancel(): scala.Unit = js.native
-  def onChange(e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def onChange(e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   def onClear(): scala.Unit = js.native
   def onFocus(): scala.Unit = js.native
-  def onSubmit(e: reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLFormElement]): scala.Unit = js.native
+  def onSubmit(e: reactLib.reactMod.FormEvent[stdLib.HTMLFormElement]): scala.Unit = js.native
 }
 

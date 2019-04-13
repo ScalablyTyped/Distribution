@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class ReadableMock protected ()
   extends nodeLib.streamMod.Readable {
   def this(source: js.Array[_]) = this()
-  def this(source: js.Array[_], opts: nodeLib.streamMod.internalNs.ReadableOptions) = this()
+  def this(source: js.Array[_], opts: nodeLib.streamMod.ReadableOptions) = this()
 }
 

@@ -33,3 +33,8 @@ class DataFunctionCall ()
   override def SetDataYearAndMonth(): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.DataFunctionCall")
+@js.native
+object DataFunctionCall
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IDataFunctionCall]
+

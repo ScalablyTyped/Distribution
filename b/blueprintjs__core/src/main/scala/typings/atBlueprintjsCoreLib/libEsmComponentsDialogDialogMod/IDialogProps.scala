@@ -32,12 +32,12 @@ trait IDialogProps
     * CSS styles to apply to the dialog.
     * @default {}
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Title of the dialog. If provided, an element with `Classes.DIALOG_HEADER`
     * will be rendered inside the dialog before any children elements.
     */
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Name of the transition for internal `CSSTransition`. Providing your own
     * name here will require defining new CSS transition properties.
@@ -51,7 +51,7 @@ object IDialogProps {
     isOpen: scala.Boolean,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     backdropClassName: java.lang.String = null,
-    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
+    backdropProps: reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] = null,
     canEscapeKeyClose: js.UndefOr[scala.Boolean] = js.undefined,
     canOutsideClickClose: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
@@ -60,15 +60,15 @@ object IDialogProps {
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     isCloseButtonShown: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClose: /* event */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
     onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     portalClassName: java.lang.String = null,
     portalContainer: stdLib.HTMLElement = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionDuration: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined

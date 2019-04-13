@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @JSImport("uuid", JSImport.Namespace)
 @js.native
 object uuidMod extends js.Object {
-  val DNS: /* 0 */ scala.Double = js.native
-  val OID: /* 2 */ scala.Double = js.native
-  val URL: /* 1 */ scala.Double = js.native
-  val X509: /* 3 */ scala.Double = js.native
+  val DNS: fibjsLib.fibjsLibNumbers.`0` = js.native
+  val OID: fibjsLib.fibjsLibNumbers.`2` = js.native
+  val URL: fibjsLib.fibjsLibNumbers.`1` = js.native
+  val X509: fibjsLib.fibjsLibNumbers.`3` = js.native
   val hostID: scala.Double = js.native
   def md5(ns: scala.Double, name: java.lang.String): fibjsLib.Class_Buffer = js.native
   def node(): fibjsLib.Class_Buffer = js.native

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait SliderProps
   extends antdDashMobileLib.libSliderPropsTypeMod.SliderPropsType {
   var dots: js.UndefOr[scala.Boolean] = js.undefined
-  var handleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var handleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var included: js.UndefOr[scala.Boolean] = js.undefined
   var marks: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
-  var maximumTrackStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var minimumTrackStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var maximumTrackStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var minimumTrackStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var railStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var trackStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var railStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var trackStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SliderProps {
@@ -25,20 +25,20 @@ object SliderProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dots: js.UndefOr[scala.Boolean] = js.undefined,
     handle: js.Any = null,
-    handleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    handleStyle: reactLib.reactMod.CSSProperties = null,
     included: js.UndefOr[scala.Boolean] = js.undefined,
     marks: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
     max: scala.Int | scala.Double = null,
-    maximumTrackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    maximumTrackStyle: reactLib.reactMod.CSSProperties = null,
     min: scala.Int | scala.Double = null,
-    minimumTrackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    minimumTrackStyle: reactLib.reactMod.CSSProperties = null,
     onAfterChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     onChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    railStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    railStyle: reactLib.reactMod.CSSProperties = null,
     step: scala.Int | scala.Double = null,
-    tipFormatter: /* value */ js.UndefOr[java.lang.String] => reactLib.reactMod.ReactNs.ReactNode = null,
-    trackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tipFormatter: /* value */ js.UndefOr[java.lang.String] => reactLib.reactMod.ReactNode = null,
+    trackStyle: reactLib.reactMod.CSSProperties = null,
     value: scala.Int | scala.Double = null
   ): SliderProps = {
     val __obj = js.Dynamic.literal()

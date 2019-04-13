@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object reactDashMapDashGlLibComponents {
   @scala.inline
-  def BaseControl[T /* <: reactDashMapDashGlLib.reactDashMapDashGlMod.BaseControlProps */]: reactLib.reactMod.ReactNs.ComponentType[T] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.BaseControl[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[T]]
+  def BaseControl[T /* <: reactDashMapDashGlLib.reactDashMapDashGlMod.BaseControlProps */]: reactLib.reactMod.ComponentType[T] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.BaseControl[T]].asInstanceOf[reactLib.reactMod.ComponentType[T]]
   @scala.inline
-  def CanvasOverlay: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlay].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlayProps]]
+  def CanvasOverlay: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlay].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlayProps]]
   @scala.inline
-  def DraggableControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps]]
+  def DraggableControl: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControl].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps]]
   @scala.inline
-  def FullscreenControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps]]
+  def FullscreenControl: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControl].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps]]
   @scala.inline
-  def GeolocateControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps]]
+  def GeolocateControl: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControl].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps]]
   @scala.inline
-  def HTMLOverlay: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlay].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps]]
+  def HTMLOverlay: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlay].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps]]
   @scala.inline
-  def InteractiveMap: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMap].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps]]
+  def InteractiveMap: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMap].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps]]
   @scala.inline
-  def Marker: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.MarkerProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.Marker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.MarkerProps]]
+  def Marker: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.MarkerProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.Marker].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.MarkerProps]]
   @scala.inline
-  def NavigationControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.NavigationControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.NavigationControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.NavigationControlProps]]
+  def NavigationControl: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.NavigationControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.NavigationControl].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.NavigationControlProps]]
   @scala.inline
-  def Popup: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.PopupProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.Popup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.PopupProps]]
+  def Popup: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.PopupProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.Popup].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.PopupProps]]
   @scala.inline
-  def ReactDashMapDashGl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps]]
+  def ReactDashMapDashGl: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps]]
   @scala.inline
-  def SVGOverlay: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.SVGOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.SVGOverlay].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.SVGOverlayProps]]
+  def SVGOverlay: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.SVGOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.SVGOverlay].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.SVGOverlayProps]]
   @scala.inline
-  def StaticMap: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.StaticMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.StaticMap].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.StaticMapProps]]
+  def StaticMap: reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.StaticMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.StaticMap].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.StaticMapProps]]
   @scala.inline
   def CanvasOverlayProps: reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlayProps.type = reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlayProps
   type CanvasOverlayProps = reactDashMapDashGlLib.reactDashMapDashGlMod.CanvasOverlayProps

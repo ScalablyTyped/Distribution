@@ -12,28 +12,25 @@ trait NavigationStackScreenOptions extends js.Object {
   var gestureResponseDistance: js.UndefOr[reactDashNavigationLib.Anon_Horizontal] = js.undefined
   var gesturesEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var header: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[/* headerProps */ HeaderProps, reactLib.reactMod.ReactNs.ReactElement[_]]) | scala.Null
+    reactLib.reactMod.ReactElement[_] | (js.Function1[/* headerProps */ HeaderProps, reactLib.reactMod.ReactElement[_]]) | scala.Null
   ] = js.undefined
-  var headerBackImage: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var headerBackImage: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var headerBackTitle: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var headerBackTitleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
-  var headerBackground: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var headerBackground: js.UndefOr[reactLib.reactMod.ReactNode | reactLib.reactMod.ReactType[_]] = js.undefined
   var headerForceInset: js.UndefOr[HeaderForceInset] = js.undefined
   var headerLeft: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
-      /* backButtonProps */ HeaderBackButtonProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ]) | scala.Null
+    reactLib.reactMod.ReactElement[_] | (js.Function1[/* backButtonProps */ HeaderBackButtonProps, reactLib.reactMod.ReactElement[_]]) | scala.Null
   ] = js.undefined
   var headerPressColorAndroid: js.UndefOr[java.lang.String] = js.undefined
-  var headerRight: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null] = js.undefined
+  var headerRight: js.UndefOr[reactLib.reactMod.ReactElement[_] | scala.Null] = js.undefined
   var headerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   var headerTintColor: js.UndefOr[java.lang.String] = js.undefined
-  var headerTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var headerTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   var headerTitleAllowFontScaling: js.UndefOr[scala.Boolean] = js.undefined
   var headerTitleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
@@ -49,21 +46,18 @@ object NavigationStackScreenOptions {
     gestureDirection: reactDashNavigationLib.reactDashNavigationLibStrings.default | reactDashNavigationLib.reactDashNavigationLibStrings.inverted = null,
     gestureResponseDistance: reactDashNavigationLib.Anon_Horizontal = null,
     gesturesEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    header: reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[/* headerProps */ HeaderProps, reactLib.reactMod.ReactNs.ReactElement[_]]) = null,
-    headerBackImage: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    header: reactLib.reactMod.ReactElement[_] | (js.Function1[/* headerProps */ HeaderProps, reactLib.reactMod.ReactElement[_]]) = null,
+    headerBackImage: reactLib.reactMod.ReactElement[_] = null,
     headerBackTitle: java.lang.String = null,
     headerBackTitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    headerBackground: reactLib.reactMod.ReactNs.ReactNode | reactLib.reactMod.ReactNs.ReactType[_] = null,
+    headerBackground: reactLib.reactMod.ReactNode | reactLib.reactMod.ReactType[_] = null,
     headerForceInset: HeaderForceInset = null,
-    headerLeft: reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
-      /* backButtonProps */ HeaderBackButtonProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ]) = null,
+    headerLeft: reactLib.reactMod.ReactElement[_] | (js.Function1[/* backButtonProps */ HeaderBackButtonProps, reactLib.reactMod.ReactElement[_]]) = null,
     headerPressColorAndroid: java.lang.String = null,
-    headerRight: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    headerRight: reactLib.reactMod.ReactElement[_] = null,
     headerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     headerTintColor: java.lang.String = null,
-    headerTitle: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    headerTitle: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     headerTitleAllowFontScaling: js.UndefOr[scala.Boolean] = js.undefined,
     headerTitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     headerTransparent: js.UndefOr[scala.Boolean] = js.undefined,

@@ -51,6 +51,6 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply[ValueType](promise: js.Thenable[ValueType]): js.Promise[pDashReflectLib.pDashReflectMod.pReflectNs.PromiseResult[ValueType]] = js.native
+  def apply[ValueType](promise: js.Thenable[ValueType]): js.Promise[pDashReflectLib.pDashReflectMod.PromiseResult[ValueType]] = js.native
 }
 

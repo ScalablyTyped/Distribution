@@ -19,12 +19,12 @@ trait CardHeaderProps
 object CardHeaderProps {
   @scala.inline
   def apply(
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: js.Any = null,
-    thumb: reactLib.reactMod.ReactNs.ReactNode = null,
+    thumb: reactLib.reactMod.ReactNode = null,
     thumbStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ImageStyle] = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode = null
   ): CardHeaderProps = {
     val __obj = js.Dynamic.literal()
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])

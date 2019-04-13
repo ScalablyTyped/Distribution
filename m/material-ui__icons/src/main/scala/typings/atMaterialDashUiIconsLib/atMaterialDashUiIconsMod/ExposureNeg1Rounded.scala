@@ -16,9 +16,9 @@ class ExposureNeg1Rounded protected ()
 @JSImport("@material-ui/icons", "ExposureNeg1Rounded")
 @js.native
 class ExposureNeg1RoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

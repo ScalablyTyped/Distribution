@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextAreaProps
-  extends reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement] {
+  extends reactLib.reactMod.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement] {
   var autosize: js.UndefOr[scala.Boolean | AutoSizeType] = js.undefined
-  var onPressEnter: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLTextAreaElement]] = js.undefined
+  var onPressEnter: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object TextAreaProps {
   @scala.inline
   def apply(
-    TextareaHTMLAttributes: reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement] = null,
+    TextareaHTMLAttributes: reactLib.reactMod.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement] = null,
     autosize: scala.Boolean | AutoSizeType = null,
-    onPressEnter: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLTextAreaElement] = null,
+    onPressEnter: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLTextAreaElement] = null,
     prefixCls: java.lang.String = null
   ): TextAreaProps = {
     val __obj = js.Dynamic.literal()

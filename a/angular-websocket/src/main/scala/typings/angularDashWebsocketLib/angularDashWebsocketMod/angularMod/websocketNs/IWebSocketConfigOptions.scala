@@ -16,7 +16,7 @@ trait IWebSocketConfigOptions extends js.Object {
   var maxTimeout: js.UndefOr[scala.Double] = js.undefined
   var reconnectIfNotNormalClose: js.UndefOr[scala.Boolean] = js.undefined
   var rootScopeFailOver: js.UndefOr[scala.Boolean] = js.undefined
-  var scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
+  var scope: js.UndefOr[angularLib.angularMod.IScope] = js.undefined
   var useApplyAsync: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object IWebSocketConfigOptions {
     maxTimeout: scala.Int | scala.Double = null,
     reconnectIfNotNormalClose: js.UndefOr[scala.Boolean] = js.undefined,
     rootScopeFailOver: js.UndefOr[scala.Boolean] = js.undefined,
-    scope: angularLib.angularMod.angularNs.IScope = null,
+    scope: angularLib.angularMod.IScope = null,
     useApplyAsync: js.UndefOr[scala.Boolean] = js.undefined
   ): IWebSocketConfigOptions = {
     val __obj = js.Dynamic.literal()

@@ -43,7 +43,7 @@ object reactDashSketchappLibStrings {
     extends reactDashSketchappLib.libComponentsSvgPropsMod.FontWeight
   
   @js.native
-  sealed trait Anon_1 extends js.Object
+  sealed trait StyleSheet extends js.Object
   
   @js.native
   sealed trait absolute extends js.Object
@@ -390,7 +390,7 @@ object reactDashSketchappLibStrings {
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
   @scala.inline
-  def Anon_1: Anon_1 = "Anon_1".asInstanceOf[Anon_1]
+  def StyleSheet: StyleSheet = "StyleSheet".asInstanceOf[StyleSheet]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline

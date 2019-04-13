@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps, 
       scala.Unit
     ]
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
     */
   var onInput: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], 
       /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps, 
       scala.Unit
     ]
@@ -44,7 +44,7 @@ object StrictFormTextAreaProps {
   @scala.inline
   def apply(
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     control: js.Any = null,
@@ -52,8 +52,8 @@ object StrictFormTextAreaProps {
     error: js.UndefOr[scala.Boolean] = js.undefined,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
-    onInput: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
+    onInput: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
     required: js.Any = null,
     rows: scala.Double | java.lang.String = null,
     `type`: java.lang.String = null,

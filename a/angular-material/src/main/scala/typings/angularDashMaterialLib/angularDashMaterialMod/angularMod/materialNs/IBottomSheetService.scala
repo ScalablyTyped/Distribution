@@ -11,6 +11,6 @@ trait IBottomSheetService extends js.Object {
   def cancel(response: js.Any): scala.Unit = js.native
   def hide(): scala.Unit = js.native
   def hide(response: js.Any): scala.Unit = js.native
-  def show(options: IBottomSheetOptions): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def show(options: IBottomSheetOptions): angularLib.angularMod.IPromise[_] = js.native
 }
 

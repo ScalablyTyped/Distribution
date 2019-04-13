@@ -11,3 +11,8 @@ class Ellipse protected () extends IEllipse {
   def this(config: CircleConfig) = this()
 }
 
+@JSGlobal("Kinetic.Ellipse")
+@js.native
+object Ellipse
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ CircleConfig, IEllipse]
+

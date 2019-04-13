@@ -1,6 +1,6 @@
 [debug] PhaseRunner.scala:82 Success [id => dhtmlxgantt, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt),TsIdentLibrarySimple(dhtmlxgantt)),TsIdentModule(None,List(dhtmlxgantt))) [id => dhtmlxgantt, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:204 Processing TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt),TsIdentLibrarySimple(dhtmlxgantt)),TsIdentModule(None,List(dhtmlxgantt))) [id => dhtmlxgantt, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => dhtmlxgantt, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing dhtmlxgantt [id => dhtmlxgantt, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => dhtmlxgantt, phase => scala.js] 

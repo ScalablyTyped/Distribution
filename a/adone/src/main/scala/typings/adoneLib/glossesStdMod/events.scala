@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("adone/glosses/std", "events")
 @js.native
 class events ()
-  extends nodeLib.eventsMod.namespaced
+  extends nodeLib.eventsMod.^
 

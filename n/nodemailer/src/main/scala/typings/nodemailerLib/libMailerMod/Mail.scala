@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 trait Mail
   extends nodeLib.eventsMod.EventEmitter {
   /** Usage: typeof transporter.MailMessage */
-  var MailMessage: nodemailerLib.libMailerMailDashMessageMod.namespaced = js.native
-  var dkim: nodemailerLib.libDkimMod.namespaced = js.native
+  var MailMessage: nodemailerLib.libMailerMailDashMessageMod.^ = js.native
+  var dkim: nodemailerLib.libDkimMod.^ = js.native
   var logger: nodemailerLib.libSharedMod.Logger = js.native
   var meta: stdLib.Map[java.lang.String, _] = js.native
-  var options: nodemailerLib.libMailerMod.MailNs.Options = js.native
+  var options: Options = js.native
   var transporter: nodemailerLib.nodemailerMod.Transport = js.native
   @JSName("addListener")
   def addListener_error(
@@ -26,7 +26,7 @@ trait Mail
   @JSName("addListener")
   def addListener_token(
     event: nodemailerLib.nodemailerLibStrings.token,
-    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
+    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.Token, scala.Unit]
   ): this.type = js.native
   /** Closes all connections in the pool. If there is a message being sent, the connection is closed later */
   def close(): scala.Unit = js.native
@@ -35,10 +35,7 @@ trait Mail
   @JSName("emit")
   def emit_idle(event: nodemailerLib.nodemailerLibStrings.idle): scala.Boolean = js.native
   @JSName("emit")
-  def emit_token(
-    event: nodemailerLib.nodemailerLibStrings.token,
-    token: nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token
-  ): scala.Boolean = js.native
+  def emit_token(event: nodemailerLib.nodemailerLibStrings.token, token: nodemailerLib.libXoauth2Mod.Token): scala.Boolean = js.native
   def get(key: java.lang.String): js.Any = js.native
   def getVersionString(): java.lang.String = js.native
   @JSName("get")
@@ -122,9 +119,7 @@ trait Mail
   /** Returns true if there are free slots in the queue */
   def isIdle(): scala.Boolean = js.native
   @JSName("listeners")
-  def listeners_end(event: nodemailerLib.nodemailerLibStrings.end): js.Array[
-    js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
-  ] = js.native
+  def listeners_end(event: nodemailerLib.nodemailerLibStrings.end): js.Array[js.Function1[/* token */ nodemailerLib.libXoauth2Mod.Token, scala.Unit]] = js.native
   @JSName("listeners")
   def listeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[js.Function1[/* err */ stdLib.Error, scala.Unit]] = js.native
   @JSName("listeners")
@@ -139,7 +134,7 @@ trait Mail
   @JSName("on")
   def on_token(
     event: nodemailerLib.nodemailerLibStrings.token,
-    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
+    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.Token, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_error(
@@ -151,12 +146,12 @@ trait Mail
   @JSName("once")
   def once_token(
     event: nodemailerLib.nodemailerLibStrings.token,
-    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
+    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.Token, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_end(
     event: nodemailerLib.nodemailerLibStrings.end,
-    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
+    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.Token, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(
@@ -168,7 +163,7 @@ trait Mail
   @JSName("prependOnceListener")
   def prependOnceListener_end(
     event: nodemailerLib.nodemailerLibStrings.end,
-    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
+    listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.Token, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(
@@ -177,10 +172,10 @@ trait Mail
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
-  def sendMail(mailOptions: nodemailerLib.libMailerMod.MailNs.Options): js.Promise[nodemailerLib.nodemailerMod.SentMessageInfo] = js.native
+  def sendMail(mailOptions: Options): js.Promise[nodemailerLib.nodemailerMod.SentMessageInfo] = js.native
   /** Sends an email using the preselected transport object */
   def sendMail(
-    mailOptions: nodemailerLib.libMailerMod.MailNs.Options,
+    mailOptions: Options,
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       /* info */ nodemailerLib.nodemailerMod.SentMessageInfo, 
@@ -289,7 +284,7 @@ trait Mail
   ): stdLib.Map[java.lang.String, _] = js.native
   /** Sets up proxy handler for a Nodemailer object */
   def setupProxy(proxyUrl: java.lang.String): scala.Unit = js.native
-  def use(step: java.lang.String, plugin: nodemailerLib.libMailerMod.MailNs.PluginFunction): this.type = js.native
+  def use(step: java.lang.String, plugin: PluginFunction): this.type = js.native
   def verify(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SMTP configuration */
   def verify(

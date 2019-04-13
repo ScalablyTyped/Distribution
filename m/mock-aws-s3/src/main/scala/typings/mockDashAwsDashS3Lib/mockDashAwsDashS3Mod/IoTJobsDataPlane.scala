@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class IoTJobsDataPlane ()
   extends awsDashSdkLib.awsDashSdkMod.IoTJobsDataPlane {
-  def this(options: awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsIotjobsdataplaneMod.ClientConfiguration) = this()
 }
 

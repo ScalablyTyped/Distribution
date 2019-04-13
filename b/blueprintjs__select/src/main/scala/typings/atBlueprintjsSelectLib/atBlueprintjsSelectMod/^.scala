@@ -45,15 +45,15 @@ object ^ extends js.Object {
   def isCreateNewItem[T](): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
   def isCreateNewItem[T](item: T): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
   def isCreateNewItem[T](item: atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
-  def renderFilteredItems(props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_]): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def renderFilteredItems(props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_]): reactLib.reactMod.ReactNode = js.native
   def renderFilteredItems(
     props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_],
-    noResults: reactLib.reactMod.ReactNs.ReactNode
-  ): reactLib.reactMod.ReactNs.ReactNode = js.native
+    noResults: reactLib.reactMod.ReactNode
+  ): reactLib.reactMod.ReactNode = js.native
   def renderFilteredItems(
     props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_],
-    noResults: reactLib.reactMod.ReactNs.ReactNode,
-    initialContent: reactLib.reactMod.ReactNs.ReactNode
-  ): reactLib.reactMod.ReactNs.ReactNode = js.native
+    noResults: reactLib.reactMod.ReactNode,
+    initialContent: reactLib.reactMod.ReactNode
+  ): reactLib.reactMod.ReactNode = js.native
 }
 

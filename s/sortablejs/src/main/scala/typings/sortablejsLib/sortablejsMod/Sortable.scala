@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Sortable extends js.Object {
   var el: stdLib.HTMLElement = js.native
-  var options: sortablejsLib.sortablejsMod.SortableNs.Options = js.native
+  var options: Options = js.native
   /**
     * For each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.
     * @param element an HTMLElement or selector string.
@@ -182,7 +182,7 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_ghostClass(name: sortablejsLib.sortablejsLibStrings.ghostClass, value: java.lang.String): scala.Unit = js.native
   @JSName("option")
-  def option_group(name: sortablejsLib.sortablejsLibStrings.group): java.lang.String | sortablejsLib.sortablejsMod.SortableNs.GroupOptions = js.native
+  def option_group(name: sortablejsLib.sortablejsLibStrings.group): java.lang.String | GroupOptions = js.native
   /**
     * Options getter/setter
     * @param name a Sortable.Options property.
@@ -191,10 +191,7 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_group(name: sortablejsLib.sortablejsLibStrings.group, value: java.lang.String): scala.Unit = js.native
   @JSName("option")
-  def option_group(
-    name: sortablejsLib.sortablejsLibStrings.group,
-    value: sortablejsLib.sortablejsMod.SortableNs.GroupOptions
-  ): scala.Unit = js.native
+  def option_group(name: sortablejsLib.sortablejsLibStrings.group, value: GroupOptions): scala.Unit = js.native
   @JSName("option")
   def option_handle(name: sortablejsLib.sortablejsLibStrings.handle): java.lang.String = js.native
   /**

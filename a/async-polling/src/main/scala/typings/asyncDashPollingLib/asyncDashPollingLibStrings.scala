@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 object asyncDashPollingLibStrings {
   @js.native
   sealed trait end
-    extends asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName
+    extends asyncDashPollingLib.asyncDashPollingMod.EventName
   
   @js.native
   sealed trait error
-    extends asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName
+    extends asyncDashPollingLib.asyncDashPollingMod.EventName
   
   @js.native
   sealed trait result
-    extends asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName
+    extends asyncDashPollingLib.asyncDashPollingMod.EventName
   
   @js.native
   sealed trait run
-    extends asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName
+    extends asyncDashPollingLib.asyncDashPollingMod.EventName
   
   @js.native
   sealed trait schedule
-    extends asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName
+    extends asyncDashPollingLib.asyncDashPollingMod.EventName
   
   @js.native
   sealed trait start
-    extends asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName
+    extends asyncDashPollingLib.asyncDashPollingMod.EventName
   
   @js.native
   sealed trait stop
-    extends asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName
+    extends asyncDashPollingLib.asyncDashPollingMod.EventName
   
   @scala.inline
   def end: end = "end".asInstanceOf[end]

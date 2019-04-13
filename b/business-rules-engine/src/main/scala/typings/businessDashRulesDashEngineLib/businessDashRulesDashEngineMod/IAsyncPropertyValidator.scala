@@ -9,13 +9,13 @@ trait IAsyncPropertyValidator extends js.Object {
   var customMessage: js.UndefOr[IErrorCustomMessage] = js.undefined
   var isAsync: scala.Boolean
   var tagName: js.UndefOr[java.lang.String] = js.undefined
-  def isAcceptable(s: js.Any): qLib.qMod.QNs.Promise[scala.Boolean]
+  def isAcceptable(s: js.Any): qLib.qMod.Promise[scala.Boolean]
 }
 
 object IAsyncPropertyValidator {
   @scala.inline
   def apply(
-    isAcceptable: js.Any => qLib.qMod.QNs.Promise[scala.Boolean],
+    isAcceptable: js.Any => qLib.qMod.Promise[scala.Boolean],
     isAsync: scala.Boolean,
     customMessage: IErrorCustomMessage = null,
     tagName: java.lang.String = null

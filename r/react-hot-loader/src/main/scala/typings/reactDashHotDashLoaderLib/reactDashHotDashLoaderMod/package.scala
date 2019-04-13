@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashHotDashLoaderMod {
-  type ReactComponent[TProps] = (reactLib.reactMod.ReactNs.ComponentClass[TProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[TProps]
+  type ExtractProps[TComponent] = js.Object
+  type ReactComponent[TProps] = (reactLib.reactMod.ComponentClass[TProps, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[TProps]
 }

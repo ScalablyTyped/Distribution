@@ -28,7 +28,7 @@ trait IMeteorService extends js.Object {
     * @param scope - The AngularJS scope you use the autorun on.
     * @param fn - The function that will re-run every time a reactive variable changes inside it.
     */
-  def autorun(scope: angularLib.angularMod.angularNs.IScope, fn: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  def autorun(scope: angularLib.angularMod.IScope, fn: angularLib.angularMod.Global.Function): scala.Unit = js.native
   /**
     * A service service which wraps up Meteor.methods with AngularJS promises.
     *
@@ -37,14 +37,14 @@ trait IMeteorService extends js.Object {
     *
     * @return The promise solves successfully with the return value of the method or return reject with the error from the method.
     */
-  def call[T](name: java.lang.String, methodArguments: js.Any*): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def call[T](name: java.lang.String, methodArguments: js.Any*): angularLib.angularMod.IPromise[T] = js.native
   /**
     * Change the current user's password. Must be logged in.
     *
     * @param oldPassword - The user's current password. This is not sent in plain text over the wire.
     * @param newPassword - A new password for the user. This is not sent in plain text over the wire.
     */
-  def changePassword(oldPassword: java.lang.String, newPassword: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def changePassword(oldPassword: java.lang.String, newPassword: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
   def collection[T](collection: ReactiveResult): AngularMeteorCollection[T] = js.native
   def collection[T](collection: ReactiveResult, autoClientSave: scala.Boolean): AngularMeteorCollection[T] = js.native
   def collection[T](collection: angularLib.angularMod.Global.Function): AngularMeteorCollection[T] = js.native
@@ -98,13 +98,13 @@ trait IMeteorService extends js.Object {
     * @param options.password - The user's password. This is not sent in plain text over the wire.
     * @param options.profile - The user's profile, typically including the name field.
     */
-  def createUser(options: angularDashMeteorLib.Anon_EmailPassword): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def createUser(options: angularDashMeteorLib.Anon_EmailPassword): angularLib.angularMod.IPromise[scala.Unit] = js.native
   /**
     * Request a forgot password email.
     *
     * @param options.email - The email address to send a password reset link.
     */
-  def forgotPassword(options: angularDashMeteorLib.Anon_Email): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def forgotPassword(options: angularDashMeteorLib.Anon_Email): angularLib.angularMod.IPromise[scala.Unit] = js.native
   /**
     * @param collectionName - The name of the collection you want to get back
     */
@@ -122,30 +122,30 @@ trait IMeteorService extends js.Object {
     *
     * @return The promise solved successfully when the picture is taken with the data as a parameter or rejected with an error as a parameter in case of error.
     */
-  def getPicture(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getPicture(options: angularDashMeteorLib.Anon_Height): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def loginWithFacebook(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithGithub(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithGoogle(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithMeetup(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithPassword(user: angularDashMeteorLib.Anon_Email, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithPassword(user: angularDashMeteorLib.Anon_Id, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithPassword(user: angularDashMeteorLib.Anon_Username, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def getPicture(): angularLib.angularMod.IPromise[_] = js.native
+  def getPicture(options: angularDashMeteorLib.Anon_Height): angularLib.angularMod.IPromise[_] = js.native
+  def loginWithFacebook(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithGithub(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithGoogle(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithMeetup(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithPassword(user: angularDashMeteorLib.Anon_Email, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithPassword(user: angularDashMeteorLib.Anon_Id, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithPassword(user: angularDashMeteorLib.Anon_Username, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
   /**
     * Log the user in with a password.
     *
     * @param user - Either a string interpreted as a username or an email; or an object with a single key: email, username or id.
     * @param password - The user's password.
     */
-  def loginWithPassword(user: java.lang.String, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithTwitter(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithWeibo(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def loginWithPassword(user: java.lang.String, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithTwitter(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
+  def loginWithWeibo(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
   /**
     * Log the user out.
     *
     * @return Resolves with no arguments on success, or reject with a Error argument on failure.
     */
-  def logout(): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def logout(): angularLib.angularMod.IPromise[scala.Unit] = js.native
   /**
     * Log out other clients logged in as the current user, but does not log out the client that calls this function.
     * For example, when called in a user's browser, connections in that browser remain logged in,
@@ -153,7 +153,7 @@ trait IMeteorService extends js.Object {
     *
     * @return Resolves with no arguments on success, or reject with a Error argument on failure.
     */
-  def logoutOtherClients(): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def logoutOtherClients(): angularLib.angularMod.IPromise[scala.Unit] = js.native
   def `object`[T](collection: meteorLib.MongoNs.Collection[T], selector: java.lang.String): AngularMeteorObject[T] = js.native
   def `object`[T](
     collection: meteorLib.MongoNs.Collection[T],
@@ -189,7 +189,7 @@ trait IMeteorService extends js.Object {
     * You can catch the rejected promise and redirect the unauthenticated user to a different page, such as the login page.
     * See the “Authentication with Routers” section of our tutorial for more information and a full example.
     */
-  def requireUser(): angularLib.angularMod.angularNs.IPromise[meteorLib.MeteorNs.User] = js.native
+  def requireUser(): angularLib.angularMod.IPromise[meteorLib.MeteorNs.User] = js.native
   /**
     * Resolves the promise successfully if a user is authenticated and the validatorFn returns true; rejects otherwise.
     * This is useful in cases where you want to require a route to have an authenticated user and do extra validation like the user's role or group.
@@ -200,14 +200,14 @@ trait IMeteorService extends js.Object {
     * If it returns a string, the promise will be rejected using said string as the reason.
     * Any other return (false, null, undefined) will be rejected with the default "FORBIDDEN" reason.
     */
-  def requireValidUser(validatorFn: js.Function1[/* user */ meteorLib.MeteorNs.User, scala.Boolean | java.lang.String]): angularLib.angularMod.angularNs.IPromise[meteorLib.MeteorNs.User] = js.native
+  def requireValidUser(validatorFn: js.Function1[/* user */ meteorLib.MeteorNs.User, scala.Boolean | java.lang.String]): angularLib.angularMod.IPromise[meteorLib.MeteorNs.User] = js.native
   /**
     * Reset the password for a user using a token received in email. Logs the user in afterwards.
     *
     * @param token - The token retrieved from the reset password URL.
     * @param newPassword - A new password for the user. This is not sent in plain text over the wire.
     */
-  def resetPassword(token: java.lang.String, newPassword: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def resetPassword(token: java.lang.String, newPassword: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
   // <- $meteorCamera END
   /**
     * A service that binds a scope variable to a Meteor Session variable.
@@ -224,13 +224,13 @@ trait IMeteorService extends js.Object {
     *
     * @return The promise solved successfully when subscription is ready. The success promise holds the subscription handle.
     */
-  def subscribe(name: java.lang.String, publisherArguments: js.Any*): angularLib.angularMod.angularNs.IPromise[meteorLib.MeteorNs.SubscriptionHandle] = js.native
+  def subscribe(name: java.lang.String, publisherArguments: js.Any*): angularLib.angularMod.IPromise[meteorLib.MeteorNs.SubscriptionHandle] = js.native
   /**
     * Marks the user's email address as verified. Logs the user in afterwards.
     *
     * @param token - The token retrieved from the reset password URL.
     */
-  def verifyEmail(token: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def verifyEmail(token: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
   // User Authentication BEGIN ->
   /**
     * Returns a promise fulfilled with the currentUser when the user subscription is ready.
@@ -238,6 +238,6 @@ trait IMeteorService extends js.Object {
     * If there is no logged in user, it will return null.
     * See the “Authentication with Routers” section of our tutorial for more information and a full example.
     */
-  def waitForUser(): angularLib.angularMod.angularNs.IPromise[meteorLib.MeteorNs.User] = js.native
+  def waitForUser(): angularLib.angularMod.IPromise[meteorLib.MeteorNs.User] = js.native
 }
 

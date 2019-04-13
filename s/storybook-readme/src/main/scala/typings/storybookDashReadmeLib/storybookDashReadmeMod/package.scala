@@ -15,5 +15,5 @@ package object storybookDashReadmeMod {
   type MakeDecoratorResult = js.Function1[/* repeated */ js.Any, js.Any]
   type Readme = java.lang.String | js.Array[java.lang.String]
   type RenderFunction = js.Function0[Renderable | js.Array[Renderable]]
-  type Renderable = reactLib.reactMod.ReactNs.ComponentType[js.Object] | reactLib.reactMod.Global.JSXNs.Element
+  type Renderable = reactLib.reactMod.ComponentType[js.Object] | reactLib.reactMod.Global.JSXNs.Element
 }

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Macie ()
   extends awsDashSdkLib.awsDashSdkMod.Macie {
-  def this(options: awsDashSdkLib.clientsMacieMod.MacieNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMacieMod.ClientConfiguration) = this()
 }
 

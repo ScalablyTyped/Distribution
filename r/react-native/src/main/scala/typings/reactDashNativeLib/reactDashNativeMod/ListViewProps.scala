@@ -67,7 +67,7 @@ trait ListViewProps extends ScrollViewProps {
     * in StaticContainer or other mechanism as appropriate.  Footer is always
     * at the bottom of the list, and header at the top, on every render pass.
     */
-  var renderFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.native
+  var renderFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[_]]] = js.native
   /**
     * () => renderable
     *
@@ -76,16 +76,13 @@ trait ListViewProps extends ScrollViewProps {
     * in StaticContainer or other mechanism as appropriate.  Footer is always
     * at the bottom of the list, and header at the top, on every render pass.
     */
-  var renderHeader: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.native
+  var renderHeader: js.UndefOr[js.Function0[reactLib.reactMod.ReactElement[_]]] = js.native
   /**
     * A function that returns the scrollable component in which the list rows are rendered.
     * Defaults to returning a ScrollView with the given props.
     */
   var renderScrollComponent: js.UndefOr[
-    js.Function1[
-      /* props */ ScrollViewProps, 
-      reactLib.reactMod.ReactNs.ReactElement[ScrollViewProps]
-    ]
+    js.Function1[/* props */ ScrollViewProps, reactLib.reactMod.ReactElement[ScrollViewProps]]
   ] = js.native
   /**
     * (sectionData, sectionID) => renderable
@@ -100,7 +97,7 @@ trait ListViewProps extends ScrollViewProps {
     js.Function2[
       /* sectionData */ js.Any, 
       /* sectionId */ java.lang.String | scala.Double, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.native
   /**
@@ -114,7 +111,7 @@ trait ListViewProps extends ScrollViewProps {
       /* sectionID */ java.lang.String | scala.Double, 
       /* rowID */ java.lang.String | scala.Double, 
       /* adjacentRowHighlighted */ js.UndefOr[scala.Boolean], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.native
   /**
@@ -137,13 +134,13 @@ trait ListViewProps extends ScrollViewProps {
     * is exactly what was put into the data source, but it's also possible to
     * provide custom extractors.
     */
-  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: java.lang.String): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: java.lang.String, highlightRow: scala.Boolean): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: scala.Double): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: scala.Double, highlightRow: scala.Boolean): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: java.lang.String): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: java.lang.String, highlightRow: scala.Boolean): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: scala.Double): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: scala.Double, highlightRow: scala.Boolean): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: java.lang.String): reactLib.reactMod.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: java.lang.String, highlightRow: scala.Boolean): reactLib.reactMod.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: scala.Double): reactLib.reactMod.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: java.lang.String, rowID: scala.Double, highlightRow: scala.Boolean): reactLib.reactMod.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: java.lang.String): reactLib.reactMod.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: java.lang.String, highlightRow: scala.Boolean): reactLib.reactMod.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: scala.Double): reactLib.reactMod.ReactElement[_] = js.native
+  def renderRow(rowData: js.Any, sectionID: scala.Double, rowID: scala.Double, highlightRow: scala.Boolean): reactLib.reactMod.ReactElement[_] = js.native
 }
 

@@ -10,6 +10,7 @@ package object srcDirectivesValidatorsMod {
     /* control */ atAngularFormsLib.srcModelMod.AbstractControl, 
     (js.Promise[ValidationErrors | scala.Null]) | (rxjsLib.rxjsMod.Observable[ValidationErrors | scala.Null])
   ]
+  type ValidationErrors = org.scalablytyped.runtime.StringDictionary[js.Any]
   type ValidatorFn = js.Function1[
     /* control */ atAngularFormsLib.srcModelMod.AbstractControl, 
     ValidationErrors | scala.Null

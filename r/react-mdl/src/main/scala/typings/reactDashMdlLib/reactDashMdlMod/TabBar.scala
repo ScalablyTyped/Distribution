@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "TabBar")
 @js.native
-class TabBar ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.TabBar
+class TabBar () extends __MDLComponent[TabBarProps]
 

@@ -7,24 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "EntityCluster")
 @js.native
-class EntityCluster ()
-  extends cesiumLib.cesiumMod.CesiumNs.EntityCluster {
+class EntityCluster () extends js.Object {
   def this(options: cesiumLib.Anon_ClusterBillboards) = this()
-  /* CompleteClass */
-  override var clusterBillboards: scala.Boolean = js.native
-  /* CompleteClass */
-  override var clusterEvent: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
-  /* CompleteClass */
-  override var clusterLabels: scala.Boolean = js.native
-  /* CompleteClass */
-  override var clusterPoints: scala.Boolean = js.native
-  /* CompleteClass */
-  override var enabled: scala.Boolean = js.native
-  /* CompleteClass */
-  override var minimumClusterSize: scala.Double = js.native
-  /* CompleteClass */
-  override var pixelRange: scala.Double = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
+  var clusterBillboards: scala.Boolean = js.native
+  var clusterEvent: Event[js.Array[_]] = js.native
+  var clusterLabels: scala.Boolean = js.native
+  var clusterPoints: scala.Boolean = js.native
+  var enabled: scala.Boolean = js.native
+  var minimumClusterSize: scala.Double = js.native
+  var pixelRange: scala.Double = js.native
+  def destroy(): scala.Unit = js.native
 }
 

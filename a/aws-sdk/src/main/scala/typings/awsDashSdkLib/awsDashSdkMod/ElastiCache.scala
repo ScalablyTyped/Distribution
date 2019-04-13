@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ElastiCache ()
   extends awsDashSdkLib.clientsAllMod.ElastiCache {
-  def this(options: awsDashSdkLib.clientsElasticacheMod.ElastiCacheNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsElasticacheMod.ClientConfiguration) = this()
 }
 

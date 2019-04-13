@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object streamersStreamObjectMod {
-  type StreamObject = streamDashJsonLib.streamersStreamBaseMod.namespaced
+  type StreamObject = streamDashJsonLib.streamersStreamBaseMod.^
 }

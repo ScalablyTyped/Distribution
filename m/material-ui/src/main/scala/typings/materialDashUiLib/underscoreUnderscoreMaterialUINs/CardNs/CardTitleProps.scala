@@ -9,13 +9,13 @@ trait CardTitleProps extends js.Object {
   var actAsExpander: js.UndefOr[scala.Boolean] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined
   var showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var subtitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var subtitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var subtitleColor: js.UndefOr[java.lang.String] = js.undefined
-  var subtitleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var subtitleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var titleColor: js.UndefOr[java.lang.String] = js.undefined
-  var titleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var titleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CardTitleProps {
@@ -24,13 +24,13 @@ object CardTitleProps {
     actAsExpander: js.UndefOr[scala.Boolean] = js.undefined,
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
     showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    subtitle: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    subtitle: reactLib.reactMod.ReactNode = null,
     subtitleColor: java.lang.String = null,
-    subtitleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    subtitleStyle: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     titleColor: java.lang.String = null,
-    titleStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    titleStyle: reactLib.reactMod.CSSProperties = null
   ): CardTitleProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)

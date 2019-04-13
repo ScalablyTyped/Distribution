@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Service extends js.Object {
-  var custom: serverlessLib.classesServiceMod.ServiceNs.Custom
+  var custom: Custom
   var provider: serverlessLib.Anon_CompiledCloudFormationTemplate
-  def getAllEventsInFunction(functionName: java.lang.String): js.Array[serverlessLib.serverlessMod.ServerlessNs.Event]
+  def getAllEventsInFunction(functionName: java.lang.String): js.Array[serverlessLib.serverlessMod.Event]
   def getAllFunctions(): js.Array[java.lang.String]
   def getAllFunctionsNames(): js.Array[java.lang.String]
-  def getEventInFunction(eventName: java.lang.String, functionName: java.lang.String): serverlessLib.serverlessMod.ServerlessNs.Event
-  def getFunction(functionName: java.lang.String): serverlessLib.serverlessMod.ServerlessNs.FunctionDefinition
+  def getEventInFunction(eventName: java.lang.String, functionName: java.lang.String): serverlessLib.serverlessMod.Event
+  def getFunction(functionName: java.lang.String): serverlessLib.serverlessMod.FunctionDefinition
   def getServiceName(): java.lang.String
   def load(rawOptions: js.Object): js.Promise[_]
   def mergeResourceArrays(): scala.Unit
@@ -24,12 +24,12 @@ trait Service extends js.Object {
 object Service {
   @scala.inline
   def apply(
-    custom: serverlessLib.classesServiceMod.ServiceNs.Custom,
-    getAllEventsInFunction: java.lang.String => js.Array[serverlessLib.serverlessMod.ServerlessNs.Event],
+    custom: Custom,
+    getAllEventsInFunction: java.lang.String => js.Array[serverlessLib.serverlessMod.Event],
     getAllFunctions: () => js.Array[java.lang.String],
     getAllFunctionsNames: () => js.Array[java.lang.String],
-    getEventInFunction: (java.lang.String, java.lang.String) => serverlessLib.serverlessMod.ServerlessNs.Event,
-    getFunction: java.lang.String => serverlessLib.serverlessMod.ServerlessNs.FunctionDefinition,
+    getEventInFunction: (java.lang.String, java.lang.String) => serverlessLib.serverlessMod.Event,
+    getFunction: java.lang.String => serverlessLib.serverlessMod.FunctionDefinition,
     getServiceName: () => java.lang.String,
     load: js.Object => js.Promise[_],
     mergeResourceArrays: () => scala.Unit,

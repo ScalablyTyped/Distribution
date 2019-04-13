@@ -23,3 +23,8 @@ class Workflow ()
   override def GetAsTypedValue(): mfilesLib.ITypedValue = js.native
 }
 
+@JSGlobal("MFiles.Workflow")
+@js.native
+object Workflow
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IWorkflow]
+

@@ -17,12 +17,7 @@ trait Memcached
     key: java.lang.String,
     value: js.Any,
     lifetime: scala.Double,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* result */ scala.Boolean, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Add the given value string to the value of an existing item.
@@ -32,12 +27,7 @@ trait Memcached
   def append(
     key: java.lang.String,
     value: js.Any,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* result */ scala.Boolean, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Inspect cache, see examples for a detailed explanation.
@@ -48,7 +38,7 @@ trait Memcached
     number: scala.Double,
     cb: js.Function2[
       /* err */ js.Any, 
-      /* cachedump */ memcachedLib.memcachedMod.MemcachedNs.CacheDumpData | js.Array[memcachedLib.memcachedMod.MemcachedNs.CacheDumpData], 
+      /* cachedump */ CacheDumpData | js.Array[CacheDumpData], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -62,12 +52,7 @@ trait Memcached
     value: js.Any,
     cas: java.lang.String,
     lifetime: scala.Double,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* result */ scala.Boolean, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Decrement a given key.
@@ -78,7 +63,7 @@ trait Memcached
     key: java.lang.String,
     amount: scala.Double,
     cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
+      /* this */ CommandData, 
       /* err */ js.Any, 
       /* result */ scala.Boolean | scala.Double, 
       scala.Unit
@@ -90,12 +75,7 @@ trait Memcached
     */
   def del(
     key: java.lang.String,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* result */ scala.Boolean, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Closes all active memcached connections.
@@ -118,12 +98,7 @@ trait Memcached
     */
   def get(
     key: java.lang.String,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* data */ js.Any, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieves a bunch of values from multiple keys.
@@ -144,12 +119,7 @@ trait Memcached
     */
   def gets(
     key: java.lang.String,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* data */ memcachedLib.Anon_Cas, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* data */ memcachedLib.Anon_Cas, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Increment a given key.
@@ -160,7 +130,7 @@ trait Memcached
     key: java.lang.String,
     amount: scala.Double,
     cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
+      /* this */ CommandData, 
       /* err */ js.Any, 
       /* result */ scala.Boolean | scala.Double, 
       scala.Unit
@@ -169,20 +139,11 @@ trait Memcached
   /**
     * Retrieves stats items information.
     */
-  def items(
-    cb: js.Function2[
-      /* err */ js.Any, 
-      /* stats */ js.Array[memcachedLib.memcachedMod.MemcachedNs.StatusData], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def items(cb: js.Function2[/* err */ js.Any, /* stats */ js.Array[StatusData], scala.Unit]): scala.Unit = js.native
   /**
     * Register event listener
     */
-  def on(
-    event: memcachedLib.memcachedMod.MemcachedNs.EventNames,
-    cb: js.Function1[/* err */ memcachedLib.memcachedMod.MemcachedNs.IssueData, scala.Unit]
-  ): this.type = js.native
+  def on(event: EventNames, cb: js.Function1[/* err */ IssueData, scala.Unit]): this.type = js.native
   /**
     * Add the given value string to the value of an existing item.
     * @param key The key
@@ -191,12 +152,7 @@ trait Memcached
   def prepend(
     key: java.lang.String,
     value: js.Any,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* result */ scala.Boolean, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Replaces the value in memcached.
@@ -207,12 +163,7 @@ trait Memcached
     key: java.lang.String,
     value: js.Any,
     lifetime: scala.Double,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* result */ scala.Boolean, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Stores a new value in Memcached.
@@ -224,43 +175,20 @@ trait Memcached
     key: java.lang.String,
     value: js.Any,
     lifetime: scala.Double,
-    cb: js.ThisFunction2[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      /* result */ scala.Boolean, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ CommandData, /* err */ js.Any, /* result */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieves your stats settings.
     */
-  def settings(
-    cb: js.Function2[
-      /* err */ js.Any, 
-      /* settings */ js.Array[memcachedLib.memcachedMod.MemcachedNs.StatusData], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def settings(cb: js.Function2[/* err */ js.Any, /* settings */ js.Array[StatusData], scala.Unit]): scala.Unit = js.native
   /**
     * Retrieves stats slabs information.
     */
-  def slabs(
-    cb: js.Function2[
-      /* err */ js.Any, 
-      /* stats */ js.Array[memcachedLib.memcachedMod.MemcachedNs.StatusData], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def slabs(cb: js.Function2[/* err */ js.Any, /* stats */ js.Array[StatusData], scala.Unit]): scala.Unit = js.native
   /**
     * Retrieves stats from your memcached server.
     */
-  def stats(
-    cb: js.Function2[
-      /* err */ js.Any, 
-      /* stats */ js.Array[memcachedLib.memcachedMod.MemcachedNs.StatusData], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def stats(cb: js.Function2[/* err */ js.Any, /* stats */ js.Array[StatusData], scala.Unit]): scala.Unit = js.native
   /**
     * Touches the given key.
     * @param key The key
@@ -269,21 +197,11 @@ trait Memcached
   def touch(
     key: java.lang.String,
     lifetime: scala.Double,
-    cb: js.ThisFunction1[
-      /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
-      /* err */ js.Any, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction1[/* this */ CommandData, /* err */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Retrieves the version number of your server.
     */
-  def version(
-    cb: js.Function2[
-      /* err */ js.Any, 
-      /* version */ js.Array[memcachedLib.memcachedMod.MemcachedNs.VersionData], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def version(cb: js.Function2[/* err */ js.Any, /* version */ js.Array[VersionData], scala.Unit]): scala.Unit = js.native
 }
 

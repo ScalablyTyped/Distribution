@@ -13,27 +13,6 @@ object ^ extends js.Object {
     */
   var environment: java.lang.String = js.native
   /**
-    * Enumeration of environment types.
-    */
-  var environmentTypes: makerDotJsLib.Anon_BrowserUI = js.native
-  /**
-    * String-based enumeration of all paths types.
-    *
-    * Examples: use pathType instead of string literal when creating a circle.
-    * ```
-    * var circle: IPathCircle = { type: pathType.Circle, origin: [0, 0], radius: 7 };   //typescript
-    * var circle = { type: pathType.Circle, origin: [0, 0], radius: 7 };   //javascript
-    * ```
-    */
-  var pathType: makerDotJsLib.Anon_Arc = js.native
-  /**
-    * String-based enumeration of unit types: imperial, metric or otherwise.
-    * A model may specify the unit system it is using, if any. When importing a model, it may have different units.
-    * Unit conversion function is makerjs.units.conversionScale().
-    * Important: If you add to this, you must also add a corresponding conversion ratio in the unit.ts file!
-    */
-  var unitType: makerDotJsLib.Anon_Centimeter = js.native
-  /**
     * Version info
     */
   var version: java.lang.String = js.native

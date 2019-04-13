@@ -16,6 +16,7 @@ package object n3Mod {
     scala.Unit
   ]
   type PrefixedToIri = js.Function1[/* suffix */ java.lang.String, rdfDashJsLib.rdfDashJsMod.NamedNode]
+  type Prefixes[I] = org.scalablytyped.runtime.StringDictionary[I]
   type QuadCallback[Q /* <: BaseQuad */] = js.Function1[/* result */ Q, scala.Unit]
   type QuadPredicate[Q /* <: BaseQuad */] = js.Function1[/* result */ Q, scala.Boolean]
 }

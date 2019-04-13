@@ -14,4 +14,5 @@ package object libTypesMod {
       xhrDashMockLib.libMockResponseMod.default | js.Promise[js.UndefOr[xhrDashMockLib.libMockResponseMod.default]]
     ]
   ]
+  type MockHeaders = org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }

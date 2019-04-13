@@ -6,36 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArgsProps extends js.Object {
-  var btn: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var btn: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var description: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var description: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var duration: js.UndefOr[scala.Double | scala.Null] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
-  var message: reactLib.reactMod.ReactNs.ReactNode
+  var message: reactLib.reactMod.ReactNode
   var onClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var placement: js.UndefOr[NotificationPlacement] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   val `type`: js.UndefOr[IconType] = js.undefined
 }
 
 object ArgsProps {
   @scala.inline
   def apply(
-    message: reactLib.reactMod.ReactNs.ReactNode,
-    btn: reactLib.reactMod.ReactNs.ReactNode = null,
+    message: reactLib.reactMod.ReactNode,
+    btn: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    description: reactLib.reactMod.ReactNs.ReactNode = null,
+    description: reactLib.reactMod.ReactNode = null,
     duration: scala.Int | scala.Double = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     key: java.lang.String = null,
     onClick: () => scala.Unit = null,
     onClose: () => scala.Unit = null,
     placement: NotificationPlacement = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: IconType = null
   ): ArgsProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])

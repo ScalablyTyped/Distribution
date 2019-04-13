@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("digibyte", "Script")
 @js.native
 object ScriptNs extends js.Object {
-  val types: digibyteLib.Anon_DATAOUT = js.native
   def buildDataOut(data: java.lang.String): digibyteLib.digibyteMod.Script = js.native
   def buildDataOut(data: java.lang.String, encoding: java.lang.String): digibyteLib.digibyteMod.Script = js.native
   def buildDataOut(data: nodeLib.Buffer): digibyteLib.digibyteMod.Script = js.native
@@ -41,5 +40,10 @@ object ScriptNs extends js.Object {
   def empty(): digibyteLib.digibyteMod.Script = js.native
   def fromAddress(address: digibyteLib.digibyteMod.Address): digibyteLib.digibyteMod.Script = js.native
   def fromAddress(address: java.lang.String): digibyteLib.digibyteMod.Script = js.native
+  @js.native
+  object types extends js.Object {
+    var DATA_OUT: java.lang.String = js.native
+  }
+  
 }
 

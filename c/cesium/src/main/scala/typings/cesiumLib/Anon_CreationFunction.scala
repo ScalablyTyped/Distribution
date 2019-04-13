@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CreationFunction extends js.Object {
-  var creationFunction: cesiumLib.cesiumMod.CesiumNs.ProviderViewModelNs.CreationFunction | cesiumLib.cesiumMod.CesiumNs.Command
+  var creationFunction: cesiumLib.cesiumMod.ProviderViewModelNs.CreationFunction | cesiumLib.cesiumMod.Command
   var iconUrl: java.lang.String
   var name: java.lang.String
   var tooltip: java.lang.String
@@ -15,7 +15,7 @@ trait Anon_CreationFunction extends js.Object {
 object Anon_CreationFunction {
   @scala.inline
   def apply(
-    creationFunction: cesiumLib.cesiumMod.CesiumNs.ProviderViewModelNs.CreationFunction | cesiumLib.cesiumMod.CesiumNs.Command,
+    creationFunction: cesiumLib.cesiumMod.ProviderViewModelNs.CreationFunction | cesiumLib.cesiumMod.Command,
     iconUrl: java.lang.String,
     name: java.lang.String,
     tooltip: java.lang.String

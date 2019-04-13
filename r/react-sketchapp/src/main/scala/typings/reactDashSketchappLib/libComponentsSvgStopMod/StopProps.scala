@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StopProps extends js.Object {
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var stopColor: js.UndefOr[java.lang.String] = js.undefined
   var stopOpacity: js.UndefOr[reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp] = js.undefined
 }
@@ -16,7 +14,7 @@ trait StopProps extends js.Object {
 object StopProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     stopColor: java.lang.String = null,
     stopOpacity: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp = null
   ): StopProps = {

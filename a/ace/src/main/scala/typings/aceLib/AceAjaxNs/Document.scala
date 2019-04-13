@@ -398,42 +398,13 @@ class DocumentCls () extends Document {
   override def setValue(text: java.lang.String): scala.Unit = js.native
 }
 
-object Document {
-  @scala.inline
-  def apply(
-    applyDeltas: js.Array[Delta] => scala.Unit,
-    createAnchor: (scala.Double, scala.Double) => scala.Unit,
-    getAllLines: () => js.Array[java.lang.String],
-    getLength: () => scala.Double,
-    getLine: scala.Double => java.lang.String,
-    getLines: (scala.Double, scala.Double) => js.Array[java.lang.String],
-    getNewLineCharacter: () => java.lang.String,
-    getNewLineMode: () => java.lang.String,
-    getTextRange: Range => java.lang.String,
-    getValue: () => java.lang.String,
-    indexToPosition: (scala.Double, scala.Double) => Position,
-    insert: (Position, java.lang.String) => js.Any,
-    insertFullLines: (scala.Double, js.Array[java.lang.String]) => js.Any,
-    insertInLine: (js.Any, java.lang.String) => js.Any,
-    insertLines: (scala.Double, js.Array[java.lang.String]) => js.Any,
-    insertMergedLines: (scala.Double, js.Array[java.lang.String]) => js.Any,
-    insertNewLine: Position => js.Any,
-    isNewLine: java.lang.String => scala.Boolean,
-    on: (java.lang.String, js.Function1[/* e */ js.Any, _]) => scala.Unit,
-    positionToIndex: (Position, scala.Double) => scala.Double,
-    remove: Range => js.Any,
-    removeFullLines: (scala.Double, scala.Double) => js.Array[java.lang.String],
-    removeInLine: (scala.Double, scala.Double, scala.Double) => js.Any,
-    removeLines: (scala.Double, scala.Double) => js.Array[java.lang.String],
-    removeNewLine: scala.Double => scala.Unit,
-    replace: (Range, java.lang.String) => js.Any,
-    revertDeltas: js.Array[Delta] => scala.Unit,
-    setNewLineMode: java.lang.String => scala.Unit,
-    setValue: java.lang.String => scala.Unit
-  ): Document = {
-    val __obj = js.Dynamic.literal(applyDeltas = js.Any.fromFunction1(applyDeltas), createAnchor = js.Any.fromFunction2(createAnchor), getAllLines = js.Any.fromFunction0(getAllLines), getLength = js.Any.fromFunction0(getLength), getLine = js.Any.fromFunction1(getLine), getLines = js.Any.fromFunction2(getLines), getNewLineCharacter = js.Any.fromFunction0(getNewLineCharacter), getNewLineMode = js.Any.fromFunction0(getNewLineMode), getTextRange = js.Any.fromFunction1(getTextRange), getValue = js.Any.fromFunction0(getValue), indexToPosition = js.Any.fromFunction2(indexToPosition), insert = js.Any.fromFunction2(insert), insertFullLines = js.Any.fromFunction2(insertFullLines), insertInLine = js.Any.fromFunction2(insertInLine), insertLines = js.Any.fromFunction2(insertLines), insertMergedLines = js.Any.fromFunction2(insertMergedLines), insertNewLine = js.Any.fromFunction1(insertNewLine), isNewLine = js.Any.fromFunction1(isNewLine), on = js.Any.fromFunction2(on), positionToIndex = js.Any.fromFunction2(positionToIndex), remove = js.Any.fromFunction1(remove), removeFullLines = js.Any.fromFunction2(removeFullLines), removeInLine = js.Any.fromFunction3(removeInLine), removeLines = js.Any.fromFunction2(removeLines), removeNewLine = js.Any.fromFunction1(removeNewLine), replace = js.Any.fromFunction2(replace), revertDeltas = js.Any.fromFunction1(revertDeltas), setNewLineMode = js.Any.fromFunction1(setNewLineMode), setValue = js.Any.fromFunction1(setValue))
-  
-    __obj.asInstanceOf[Document]
-  }
-}
+@JSGlobal("AceAjax.Document")
+@js.native
+object Document
+  extends /**
+  * Creates a new `Document`. If `text` is included, the `Document` contains those strings; otherwise, it's empty.
+  * @param text The starting text
+  **/
+org.scalablytyped.runtime.Instantiable0[Document]
+     with org.scalablytyped.runtime.Instantiable1[(/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), Document]
 

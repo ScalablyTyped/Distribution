@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-scale", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val scaleImplicit: d3DashScaleLib.Anon_Implicit = js.native
   def scaleBand(): ScaleBand[java.lang.String] = js.native
   @JSName("scaleBand")
   def scaleBand_DomainAnon_ToString[Domain /* <: d3DashScaleLib.Anon_ToString */](): ScaleBand[Domain] = js.native

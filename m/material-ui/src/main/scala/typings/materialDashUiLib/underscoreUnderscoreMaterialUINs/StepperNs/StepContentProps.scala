@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait StepContentProps extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var last: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object StepContentProps {
@@ -16,7 +16,7 @@ object StepContentProps {
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
     last: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): StepContentProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

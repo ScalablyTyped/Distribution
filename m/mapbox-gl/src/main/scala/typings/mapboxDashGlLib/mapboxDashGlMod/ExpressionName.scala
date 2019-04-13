@@ -1,0 +1,83 @@
+package typings
+package mapboxDashGlLib.mapboxDashGlMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - mapboxDashGlLib.mapboxDashGlLibStrings.array
+  - mapboxDashGlLib.mapboxDashGlLibStrings.boolean
+  - mapboxDashGlLib.mapboxDashGlLibStrings.collator
+  - mapboxDashGlLib.mapboxDashGlLibStrings.format
+  - mapboxDashGlLib.mapboxDashGlLibStrings.literal
+  - mapboxDashGlLib.mapboxDashGlLibStrings.number
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`object`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.string
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`to-boolean`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`to-color`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`to-number`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`to-string`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.typeof
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`feature-state`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`geometry-type`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.id
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`line-progress`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.properties
+  - mapboxDashGlLib.mapboxDashGlLibStrings.at
+  - mapboxDashGlLib.mapboxDashGlLibStrings.get
+  - mapboxDashGlLib.mapboxDashGlLibStrings.has
+  - mapboxDashGlLib.mapboxDashGlLibStrings.length
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`!=`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`<`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`<=`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`==`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`>`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`>=`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.all
+  - mapboxDashGlLib.mapboxDashGlLibStrings.any
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`case`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`match`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.interpolate
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`interpolate-hcl`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`interpolate-lab`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.step
+  - mapboxDashGlLib.mapboxDashGlLibStrings.let
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`var`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.concat
+  - mapboxDashGlLib.mapboxDashGlLibStrings.downcase
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`is-supported-script`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`resolved-locale`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.upcase
+  - mapboxDashGlLib.mapboxDashGlLibStrings.rgb
+  - mapboxDashGlLib.mapboxDashGlLibStrings.rgba
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`-`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`*`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`/`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`%`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`_backtick^_backtick`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`+`
+  - mapboxDashGlLib.mapboxDashGlLibStrings.abs
+  - mapboxDashGlLib.mapboxDashGlLibStrings.acos
+  - mapboxDashGlLib.mapboxDashGlLibStrings.asin
+  - mapboxDashGlLib.mapboxDashGlLibStrings.atan
+  - mapboxDashGlLib.mapboxDashGlLibStrings.ceil
+  - mapboxDashGlLib.mapboxDashGlLibStrings.cos
+  - mapboxDashGlLib.mapboxDashGlLibStrings.e
+  - mapboxDashGlLib.mapboxDashGlLibStrings.floor
+  - mapboxDashGlLib.mapboxDashGlLibStrings.ln
+  - mapboxDashGlLib.mapboxDashGlLibStrings.ln2
+  - mapboxDashGlLib.mapboxDashGlLibStrings.log10
+  - mapboxDashGlLib.mapboxDashGlLibStrings.log2
+  - mapboxDashGlLib.mapboxDashGlLibStrings.max
+  - mapboxDashGlLib.mapboxDashGlLibStrings.min
+  - mapboxDashGlLib.mapboxDashGlLibStrings.pi
+  - mapboxDashGlLib.mapboxDashGlLibStrings.round
+  - mapboxDashGlLib.mapboxDashGlLibStrings.sin
+  - mapboxDashGlLib.mapboxDashGlLibStrings.sqrt
+  - mapboxDashGlLib.mapboxDashGlLibStrings.tan
+  - mapboxDashGlLib.mapboxDashGlLibStrings.zoom
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`heatmap-density`
+*/
+trait ExpressionName extends js.Object
+

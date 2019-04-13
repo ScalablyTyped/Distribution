@@ -21,9 +21,9 @@ class ChunkExtractor protected () extends js.Object {
   /**
   	 * Get "prefetch" and "preload" links as an array of React `<link>` elements
   	 */
-  def getLinkElements(): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
-  def getLinkElements(attr: AttrFn): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
-  def getLinkElements(attr: js.Object): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
+  def getLinkElements(): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
+  def getLinkElements(attr: AttrFn): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
+  def getLinkElements(attr: js.Object): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
   /**
   	 * Get "prefetch" and "preload" links as a string of `<link>` tags
   	 */
@@ -33,9 +33,9 @@ class ChunkExtractor protected () extends js.Object {
   /**
   	 * Get scripts as an array of React `<script>` elements.
   	 */
-  def getScriptElements(): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
-  def getScriptElements(attr: AttrFn): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
-  def getScriptElements(attr: js.Object): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
+  def getScriptElements(): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
+  def getScriptElements(attr: AttrFn): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
+  def getScriptElements(attr: js.Object): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
   /**
   	 * Get scripts as a string of `<script>` tags
   	 */
@@ -45,9 +45,9 @@ class ChunkExtractor protected () extends js.Object {
   /**
   	 * Get style links as an array of React `<link>` elements
   	 */
-  def getStyleElements(): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
-  def getStyleElements(attr: AttrFn): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
-  def getStyleElements(attr: js.Object): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
+  def getStyleElements(): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
+  def getStyleElements(attr: AttrFn): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
+  def getStyleElements(attr: js.Object): js.Array[reactLib.reactMod.ReactElement[js.Object]] = js.native
   /**
   	 * Get style links as a string of `<link>` tags
   	 */

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BootstrapTableProps
-  extends reactLib.reactMod.ReactNs.Props[BootstrapTable] {
+  extends reactLib.reactMod.Props[BootstrapTable] {
   /**
   	 * Automatically collapses open rows when doing a sort/filter/search action if those options have been specified.
   	 * Is an object with three possible fields: sort, filter, search. Each field is a flag to specify whether that
@@ -20,7 +20,7 @@ trait BootstrapTableProps
   /**
   	 * Add css styles to the react-bs-container-body class.
   	 */
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Become a borderless table by setting bordered to false, default is true.
   	 */
@@ -46,7 +46,7 @@ trait BootstrapTableProps
   	 * Add css styles to the react-bs-table-container class.
   	 * For example: containerStyle={ { background: '#00ff00' } }
   	 */
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Set CSV filename (e.g. items.csv). Default is spreadsheet.csv
   	 */
@@ -77,7 +77,7 @@ trait BootstrapTableProps
   	 * the expand row functionality on table.
   	 */
   var expandComponent: js.UndefOr[
-    js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]]
+    js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactElement[_]]
   ] = js.undefined
   /**
   	 * Tell react-bootstrap-table which rows are able to expand. This prop accepts
@@ -111,7 +111,7 @@ trait BootstrapTableProps
   /**
   	 * Add css styles to the react-bs-container-header class.
   	 */
-  var headerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var headerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Use height to set the height of table, default is 100%. The string needs to have a unit, e.g. 'px', '%'.
   	 */
@@ -230,7 +230,7 @@ trait BootstrapTableProps
   /**
   	 * Add css styles to the react-bs-table class.
   	 */
-  var tableStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tableStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Assign the class name of row(tr). This attribute accept a string or function and function is a better way to do more customization.
   	 * If a string given, means the value will be presented as the row class.
@@ -247,11 +247,7 @@ trait BootstrapTableProps
   	 * Set a style to be used for the table rows. Example: https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/style/tr-style-table.js
   	 */
   var trStyle: js.UndefOr[
-    reactLib.reactMod.ReactNs.CSSProperties | (js.Function2[
-      /* rowData */ js.Any, 
-      /* rowIndex */ scala.Double, 
-      reactLib.reactMod.ReactNs.CSSProperties
-    ])
+    reactLib.reactMod.CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ scala.Double, reactLib.reactMod.CSSProperties])
   ] = js.undefined
   /**
   	 * Bootstrap version to use, values include '3' or '4'. Defaults to '3'.
@@ -270,31 +266,31 @@ object BootstrapTableProps {
     data: js.Array[js.Object],
     autoCollapse: reactDashBootstrapDashTableLib.Anon_Filter = null,
     bodyContainerClass: java.lang.String = null,
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
     cellEdit: CellEdit[_] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     columnFilter: js.UndefOr[scala.Boolean] = js.undefined,
     condensed: js.UndefOr[scala.Boolean] = js.undefined,
     containerClass: java.lang.String = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     csvFileName: java.lang.String | js.Function0[java.lang.String] = null,
     deleteRow: js.UndefOr[scala.Boolean] = js.undefined,
     excludeCSVHeader: js.UndefOr[scala.Boolean] = js.undefined,
     expandColumnOptions: ExpandColumnOptions = null,
-    expandComponent: /* row */ js.Any => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    expandComponent: /* row */ js.Any => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     expandableRow: /* row */ js.Any => scala.Boolean = null,
     exportCSV: js.UndefOr[scala.Boolean] = js.undefined,
     fetchInfo: FetchInfo = null,
     footer: js.UndefOr[scala.Boolean] = js.undefined,
     footerData: js.Array[js.Array[FooterData]] = null,
     headerContainerClass: java.lang.String = null,
-    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    headerStyle: reactLib.reactMod.CSSProperties = null,
     height: java.lang.String = null,
     hover: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreSinglePage: js.UndefOr[scala.Boolean] = js.undefined,
     insertRow: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     keyBoardNav: scala.Boolean | KeyboardNavigation = null,
     keyField: java.lang.String = null,
     maxHeight: java.lang.String = null,
@@ -302,7 +298,7 @@ object BootstrapTableProps {
     multiColumnSort: scala.Int | scala.Double = null,
     options: Options[_] = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[BootstrapTable] = null,
+    ref: reactLib.reactMod.LegacyRef[BootstrapTable] = null,
     remote: scala.Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec]) = null,
     renderAlert: js.UndefOr[scala.Boolean] = js.undefined,
     scrollTop: scala.Double | ScrollPosition = null,
@@ -315,13 +311,9 @@ object BootstrapTableProps {
     tableContainerClass: java.lang.String = null,
     tableFooterClass: java.lang.String = null,
     tableHeaderClass: java.lang.String = null,
-    tableStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tableStyle: reactLib.reactMod.CSSProperties = null,
     trClassName: java.lang.String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ scala.Double, java.lang.String]) = null,
-    trStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function2[
-      /* rowData */ js.Any, 
-      /* rowIndex */ scala.Double, 
-      reactLib.reactMod.ReactNs.CSSProperties
-    ]) = null,
+    trStyle: reactLib.reactMod.CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ scala.Double, reactLib.reactMod.CSSProperties]) = null,
     version: BootstrapVersion = null,
     withoutTabIndex: js.UndefOr[scala.Boolean] = js.undefined
   ): BootstrapTableProps = {

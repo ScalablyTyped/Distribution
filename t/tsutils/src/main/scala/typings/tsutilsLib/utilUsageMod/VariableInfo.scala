@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VariableInfo extends js.Object {
-  var declarations: js.Array[typescriptLib.typescriptMod.tsNs.Identifier]
+  var declarations: js.Array[typescriptLib.typescriptMod.Identifier]
   var domain: DeclarationDomain
   var exported: scala.Boolean
   var inGlobalScope: scala.Boolean
@@ -16,7 +16,7 @@ trait VariableInfo extends js.Object {
 object VariableInfo {
   @scala.inline
   def apply(
-    declarations: js.Array[typescriptLib.typescriptMod.tsNs.Identifier],
+    declarations: js.Array[typescriptLib.typescriptMod.Identifier],
     domain: DeclarationDomain,
     exported: scala.Boolean,
     inGlobalScope: scala.Boolean,

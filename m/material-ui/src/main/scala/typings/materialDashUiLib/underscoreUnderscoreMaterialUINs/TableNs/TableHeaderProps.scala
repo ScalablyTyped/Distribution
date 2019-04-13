@@ -14,7 +14,7 @@ trait TableHeaderProps extends js.Object {
   var onSelectAll: js.UndefOr[js.Function1[/* checked */ scala.Boolean, scala.Unit]] = js.undefined
   /** @deprecated Instead, use event handler on Table */
   var selectAllSelected: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TableHeaderProps {
@@ -26,7 +26,7 @@ object TableHeaderProps {
     enableSelectAll: js.UndefOr[scala.Boolean] = js.undefined,
     onSelectAll: /* checked */ scala.Boolean => scala.Unit = null,
     selectAllSelected: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TableHeaderProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(adjustForCheckbox)) __obj.updateDynamic("adjustForCheckbox")(adjustForCheckbox)

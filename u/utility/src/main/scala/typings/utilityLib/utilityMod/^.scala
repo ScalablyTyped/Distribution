@@ -21,7 +21,6 @@ object ^ extends js.Object {
   val MAX_SAFE_INTEGER_STR: java.lang.String = js.native
   val MAX_SAFE_INTEGER_STR_LENGTH: scala.Double = js.native
   val MIN_SAFE_INTEGER: scala.Double = js.native
-  val UNSTABLE_METHOD: utilityLib.Anon_Args = js.native
   /**
     * `moment().format('YYYY-MM-DD')` format date string.
     *
@@ -32,14 +31,14 @@ object ^ extends js.Object {
   def YYYYMMDD(d: stdLib.Date): java.lang.String = js.native
   def YYYYMMDD(d: stdLib.Date, sep: java.lang.String): java.lang.String = js.native
   def YYYYMMDDHHmmss(d: java.lang.String): java.lang.String = js.native
-  def YYYYMMDDHHmmss(d: java.lang.String, options: utilityLib.utilityMod.utilityNs.IYYYYMMDDHHmmssStaticOptions): java.lang.String = js.native
+  def YYYYMMDDHHmmss(d: java.lang.String, options: IYYYYMMDDHHmmssStaticOptions): java.lang.String = js.native
   /**
     * `moment().format('YYYY-MM-DD HH:mm:ss')` format date string.
     *
     * @return {String}
     */
   def YYYYMMDDHHmmss(d: stdLib.Date): java.lang.String = js.native
-  def YYYYMMDDHHmmss(d: stdLib.Date, options: utilityLib.utilityMod.utilityNs.IYYYYMMDDHHmmssStaticOptions): java.lang.String = js.native
+  def YYYYMMDDHHmmss(d: stdLib.Date, options: IYYYYMMDDHHmmssStaticOptions): java.lang.String = js.native
   /**
     * Access log format date. format: `moment().format('DD/MMM/YYYY:HH:mm:ss ZZ')`
     *
@@ -52,7 +51,7 @@ object ^ extends js.Object {
     * @return {Array}
     */
   def argumentsToArray(args: js.Any*): js.Array[_] = js.native
-  def assign(target: utilityLib.utilityMod.utilityNs.ObjStatic, objects: js.Array[_]): utilityLib.utilityMod.utilityNs.ObjStatic = js.native
+  def assign(target: ObjStatic, objects: js.Array[_]): ObjStatic = js.native
   /**
     * ------------------0_0--------------------------
     * @description Defines For Object Methods
@@ -65,10 +64,7 @@ object ^ extends js.Object {
     * @param {Object | Array} objects - object assign from
     * @return {Object} - return target object
     */
-  def assign(
-    target: utilityLib.utilityMod.utilityNs.ObjStatic,
-    objects: utilityLib.utilityMod.utilityNs.ObjStatic
-  ): utilityLib.utilityMod.utilityNs.ObjStatic = js.native
+  def assign(target: ObjStatic, objects: ObjStatic): ObjStatic = js.native
   /**
     * Base64 string decode.
     *
@@ -103,8 +99,8 @@ object ^ extends js.Object {
     *  - {Number} YYYYMMDD, 20130401
     *  - {Number} H, 0, 1, 9, 12, 23
     */
-  def datestruct(): utilityLib.utilityMod.utilityNs.IDateStructStaticReturns = js.native
-  def datestruct(now: stdLib.Date): utilityLib.utilityMod.utilityNs.IDateStructStaticReturns = js.native
+  def datestruct(): IDateStructStaticReturns = js.native
+  def datestruct(now: stdLib.Date): IDateStructStaticReturns = js.native
   /**
     * Safe decodeURIComponent, won't throw any error.
     * If `decodeURIComponent` error happen, just return the original value.
@@ -119,7 +115,7 @@ object ^ extends js.Object {
     * @param {...String} keys
     * @return {Object}
     */
-  def dig(obj: utilityLib.utilityMod.utilityNs.ObjStatic, args: js.Any*): js.Any = js.native
+  def dig(obj: ObjStatic, args: js.Any*): js.Any = js.native
   /**
     * Safe encodeURIComponent, won't throw any error.
     * If `encodeURIComponent` error happen, just return the original value.
@@ -142,8 +138,8 @@ object ^ extends js.Object {
     * @public
     */
   def escape(test: java.lang.String): java.lang.String = js.native
-  def getOwnEnumerables(obj: utilityLib.utilityMod.utilityNs.ObjStatic): js.Array[java.lang.String] = js.native
-  def getOwnEnumerables(obj: utilityLib.utilityMod.utilityNs.ObjStatic, ignoreNull: scala.Boolean): js.Array[java.lang.String] = js.native
+  def getOwnEnumerables(obj: ObjStatic): js.Array[java.lang.String] = js.native
+  def getOwnEnumerables(obj: ObjStatic, ignoreNull: scala.Boolean): js.Array[java.lang.String] = js.native
   /**
     * Get a function parameter's names.
     *
@@ -153,7 +149,7 @@ object ^ extends js.Object {
     */
   def getParamNames(func: js.Function1[/* repeated */ js.Any, _]): js.Array[java.lang.String] = js.native
   def getParamNames(func: js.Function1[/* repeated */ js.Any, _], cache: scala.Boolean): js.Array[java.lang.String] = js.native
-  def has(obj: utilityLib.utilityMod.utilityNs.ObjStatic, prop: java.lang.String): scala.Boolean = js.native
+  def has(obj: ObjStatic, prop: java.lang.String): scala.Boolean = js.native
   def hash(
     method: utilityLib.utilityLibStrings.md5,
     s: java.lang.String,
@@ -290,8 +286,8 @@ object ^ extends js.Object {
     * @param {Object} [obj] - init object, optional
     * @return {Object}
     */
-  def map(): utilityLib.utilityMod.utilityNs.ObjStatic = js.native
-  def map(obj: utilityLib.utilityMod.utilityNs.ObjStatic): utilityLib.utilityMod.utilityNs.ObjStatic = js.native
+  def map(): ObjStatic = js.native
+  def map(obj: ObjStatic): ObjStatic = js.native
   /**
     * md5 hash
     *
@@ -347,7 +343,7 @@ object ^ extends js.Object {
   def randomString(length: scala.Double, charSet: java.lang.String): java.lang.String = js.native
   def randomString(length: scala.Double, charSet: js.Array[java.lang.String]): java.lang.String = js.native
   def readJSON(filepath: java.lang.String): js.Promise[_] = js.native
-  def readJSONSync(filepath: java.lang.String): utilityLib.utilityMod.utilityNs.ObjStatic = js.native
+  def readJSONSync(filepath: java.lang.String): ObjStatic = js.native
   /**
     * Replace string
     *
@@ -367,9 +363,9 @@ object ^ extends js.Object {
     * @param  {String|Function} replacement - can be `function(char)`
     * @return {Object}
     */
-  def replaceInvalidHttpHeaderChar(`val`: java.lang.String): utilityLib.utilityMod.utilityNs.IReplaceInvalidHttpHeaderCharReturns = js.native
-  def replaceInvalidHttpHeaderChar(`val`: java.lang.String, replacement: java.lang.String): utilityLib.utilityMod.utilityNs.IReplaceInvalidHttpHeaderCharReturns = js.native
-  def replaceInvalidHttpHeaderChar(`val`: java.lang.String, replacement: js.Function1[/* repeated */ js.Any, _]): utilityLib.utilityMod.utilityNs.IReplaceInvalidHttpHeaderCharReturns = js.native
+  def replaceInvalidHttpHeaderChar(`val`: java.lang.String): IReplaceInvalidHttpHeaderCharReturns = js.native
+  def replaceInvalidHttpHeaderChar(`val`: java.lang.String, replacement: java.lang.String): IReplaceInvalidHttpHeaderCharReturns = js.native
+  def replaceInvalidHttpHeaderChar(`val`: java.lang.String, replacement: js.Function1[/* repeated */ js.Any, _]): IReplaceInvalidHttpHeaderCharReturns = js.native
   /**
     * -------------------0_0---------------------
     * @description Defines For Polyfill Methods
@@ -434,7 +430,7 @@ object ^ extends js.Object {
     * always optimized
     */
   def splitAlwaysOptimized(args: js.Any*): js.Array[java.lang.String] = js.native
-  def strictJSONParse(str: java.lang.String): utilityLib.utilityMod.utilityNs.ObjStatic = js.native
+  def strictJSONParse(str: java.lang.String): ObjStatic = js.native
   /**
     * Get Unix's timestamp in seconds.
     * @return {Number}
@@ -457,31 +453,15 @@ object ^ extends js.Object {
     * @return {String}
     * @public
     */
-  def unescape(html: java.lang.String): java.lang.String | utilityLib.utilityMod.utilityNs.ObjStatic = js.native
-  def unescape(html: java.lang.String, `type`: java.lang.String): java.lang.String | utilityLib.utilityMod.utilityNs.ObjStatic = js.native
+  def unescape(html: java.lang.String): java.lang.String | ObjStatic = js.native
+  def unescape(html: java.lang.String, `type`: java.lang.String): java.lang.String | ObjStatic = js.native
   def writeJSON(filepath: java.lang.String, str: java.lang.String): js.Promise[_] = js.native
-  def writeJSON(
-    filepath: java.lang.String,
-    str: java.lang.String,
-    options: utilityLib.utilityMod.utilityNs.IJSONStaticOptions
-  ): js.Promise[_] = js.native
-  def writeJSON(filepath: java.lang.String, str: utilityLib.utilityMod.utilityNs.ObjStatic): js.Promise[_] = js.native
-  def writeJSON(
-    filepath: java.lang.String,
-    str: utilityLib.utilityMod.utilityNs.ObjStatic,
-    options: utilityLib.utilityMod.utilityNs.IJSONStaticOptions
-  ): js.Promise[_] = js.native
+  def writeJSON(filepath: java.lang.String, str: java.lang.String, options: IJSONStaticOptions): js.Promise[_] = js.native
+  def writeJSON(filepath: java.lang.String, str: ObjStatic): js.Promise[_] = js.native
+  def writeJSON(filepath: java.lang.String, str: ObjStatic, options: IJSONStaticOptions): js.Promise[_] = js.native
   def writeJSONSync(filepath: java.lang.String, str: java.lang.String): scala.Unit = js.native
-  def writeJSONSync(
-    filepath: java.lang.String,
-    str: java.lang.String,
-    options: utilityLib.utilityMod.utilityNs.IJSONStaticOptions
-  ): scala.Unit = js.native
-  def writeJSONSync(filepath: java.lang.String, str: utilityLib.utilityMod.utilityNs.ObjStatic): scala.Unit = js.native
-  def writeJSONSync(
-    filepath: java.lang.String,
-    str: utilityLib.utilityMod.utilityNs.ObjStatic,
-    options: utilityLib.utilityMod.utilityNs.IJSONStaticOptions
-  ): scala.Unit = js.native
+  def writeJSONSync(filepath: java.lang.String, str: java.lang.String, options: IJSONStaticOptions): scala.Unit = js.native
+  def writeJSONSync(filepath: java.lang.String, str: ObjStatic): scala.Unit = js.native
+  def writeJSONSync(filepath: java.lang.String, str: ObjStatic, options: IJSONStaticOptions): scala.Unit = js.native
 }
 

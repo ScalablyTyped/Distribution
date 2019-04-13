@@ -71,13 +71,13 @@ trait DropdownListProps
     * This component is used to render each option group, when groupBy is specified. By default
     * the groupBy value will be used.
     */
-  var groupComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var groupComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * This component is used to render each possible item in the DropdownList. The default
     * component renders the text of the selected item (specified by textfield)
     */
-  var itemComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
-  var listComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var itemComponent: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
+  var listComponent: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * An object of props that is passed directly to the underlying List component.
     */
@@ -165,7 +165,7 @@ trait DropdownListProps
     * This component is used to render the selected value of the DropdownList. The default
     * component renders the text of the selected item (specified by textfield)
     */
-  var valueComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var valueComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * A dataItem field name for uniquely identifying items in the data list. A valueField is
     * required when the value prop is not itself a dataItem. A valueField is useful when
@@ -183,7 +183,7 @@ object DropdownListProps {
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     busy: js.UndefOr[scala.Boolean] = js.undefined,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     containerClassName: java.lang.String = null,
     data: js.Array[_] = null,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
@@ -194,12 +194,12 @@ object DropdownListProps {
     duration: scala.Int | scala.Double = null,
     filter: reactDashWidgetsLib.reactDashWidgetsLibNumbers.`false` | reactDashWidgetsLib.reactDashWidgetsLibStrings.startsWith | reactDashWidgetsLib.reactDashWidgetsLibStrings.endsWith | reactDashWidgetsLib.reactDashWidgetsLibStrings.contains | (js.Function2[/* dataItem */ js.Any, /* str */ java.lang.String, scala.Boolean]) = null,
     groupBy: java.lang.String | (js.Function1[/* dataItem */ js.Any, _]) = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    groupComponent: reactLib.reactMod.ReactType[_] = null,
     id: java.lang.String = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    itemComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    listComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    itemComponent: reactLib.reactMod.ReactType[_] | java.lang.String = null,
+    key: reactLib.reactMod.Key = null,
+    listComponent: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     listProps: js.Object = null,
     messages: DropdownListMessages = null,
     minLength: scala.Int | scala.Double = null,
@@ -215,11 +215,11 @@ object DropdownListProps {
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[DropdownListClass] = null,
+    ref: reactLib.reactMod.LegacyRef[DropdownListClass] = null,
     searchTerm: java.lang.String = null,
     textField: java.lang.String | (js.Function1[/* dataItem */ js.Any, java.lang.String]) = null,
     value: js.Any = null,
-    valueComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    valueComponent: reactLib.reactMod.ReactType[_] = null,
     valueField: java.lang.String = null
   ): DropdownListProps = {
     val __obj = js.Dynamic.literal()

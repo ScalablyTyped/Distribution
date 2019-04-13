@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Function1[/* err */ js.Any, scala.Unit] = js.native
-  def apply(
-    req: nodeLib.httpMod.IncomingMessage,
-    res: nodeLib.httpMod.ServerResponse,
-    options: finalhandlerLib.finalhandlerMod.finalHandlerNs.Options
-  ): js.Function1[/* err */ js.Any, scala.Unit] = js.native
+  def apply(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse, options: Options): js.Function1[/* err */ js.Any, scala.Unit] = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("marko/express", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): markoLib.expressMod.mNs.Application = js.native
+  def apply(): Application = js.native
 }
 

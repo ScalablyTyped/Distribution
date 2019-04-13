@@ -11,5 +11,5 @@ package object distEsListMod {
     reactDashVirtualizedLib.distEsGridMod.GridCellProps, 
     stdLib.Exclude[java.lang.String, reactDashVirtualizedLib.reactDashVirtualizedLibStrings.rowIndex]
   ]) with reactDashVirtualizedLib.Anon_Index
-  type ListRowRenderer = js.Function1[/* props */ ListRowProps, reactLib.reactMod.ReactNs.ReactNode]
+  type ListRowRenderer = js.Function1[/* props */ ListRowProps, reactLib.reactMod.ReactNode]
 }

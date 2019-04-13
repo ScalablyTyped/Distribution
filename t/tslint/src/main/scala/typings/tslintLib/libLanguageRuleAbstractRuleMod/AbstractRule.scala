@@ -16,18 +16,18 @@ abstract class AbstractRule protected ()
   val ruleSeverity: tslintLib.libLanguageRuleRuleMod.RuleSeverity = js.native
   /* CompleteClass */
   @JSName("apply")
-  override def apply(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
+  override def apply(sourceFile: typescriptLib.typescriptMod.SourceFile): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* protected */ def applyWithFunction(
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
+    sourceFile: typescriptLib.typescriptMod.SourceFile,
     walkFn: js.Function1[/* ctx */ tslintLib.libLanguageWalkerMod.WalkContext[scala.Unit], scala.Unit]
   ): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* protected */ def applyWithFunction[T](
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
+    sourceFile: typescriptLib.typescriptMod.SourceFile,
     walkFn: js.Function1[/* ctx */ tslintLib.libLanguageWalkerMod.WalkContext[T], scala.Unit],
     options: NoInfer[T]
   ): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* protected */ def applyWithFunction[T, U](
-    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
+    sourceFile: typescriptLib.typescriptMod.SourceFile,
     walkFn: js.Function2[
       /* ctx */ tslintLib.libLanguageWalkerMod.WalkContext[T], 
       /* programOrChecker */ U, 

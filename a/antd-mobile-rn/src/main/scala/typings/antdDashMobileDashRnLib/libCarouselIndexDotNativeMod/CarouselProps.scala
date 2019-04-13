@@ -31,7 +31,7 @@ trait CarouselProps
       scala.Unit
     ]
   ] = js.undefined
-  var pagination: js.UndefOr[js.Function1[/* props */ PaginationProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var pagination: js.UndefOr[js.Function1[/* props */ PaginationProps, reactLib.reactMod.ReactNode]] = js.undefined
   var style: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
@@ -52,7 +52,7 @@ object CarouselProps {
     initialSlideWidth: scala.Int | scala.Double = null,
     onMomentumScrollEnd: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ CarouselState, /* carousel */ Carousel) => scala.Unit = null,
     onScrollBeginDrag: (/* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent], /* state */ CarouselState, /* carousel */ Carousel) => scala.Unit = null,
-    pagination: /* props */ PaginationProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    pagination: /* props */ PaginationProps => reactLib.reactMod.ReactNode = null,
     selectedIndex: scala.Int | scala.Double = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: js.Any = null,

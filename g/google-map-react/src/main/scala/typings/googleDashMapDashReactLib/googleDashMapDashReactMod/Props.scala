@@ -84,7 +84,7 @@ object Props {
     zoom: scala.Int | scala.Double = null
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (bootstrapURLKeys != null) __obj.updateDynamic("bootstrapURLKeys")(bootstrapURLKeys.asInstanceOf[js.Any])
+    if (bootstrapURLKeys != null) __obj.updateDynamic("bootstrapURLKeys")(bootstrapURLKeys)
     if (center != null) __obj.updateDynamic("center")(center)
     if (!js.isUndefined(debounced)) __obj.updateDynamic("debounced")(debounced)
     if (defaultCenter != null) __obj.updateDynamic("defaultCenter")(defaultCenter)

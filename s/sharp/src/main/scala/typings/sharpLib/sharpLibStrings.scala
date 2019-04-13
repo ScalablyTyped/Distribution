@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation._
 object sharpLibStrings {
   @js.native
   sealed trait add
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait and extends js.Object
   
   @js.native
   sealed trait atop
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait clear
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait `colour-burn`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait `colour-dodge`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait contain extends js.Object
@@ -40,49 +40,49 @@ object sharpLibStrings {
   
   @js.native
   sealed trait darken
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait dest
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait `dest-atop`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait `dest-in`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait `dest-out`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait `dest-over`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait difference
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait eor extends js.Object
   
   @js.native
   sealed trait exclusion
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait fill extends js.Object
   
   @js.native
   sealed trait `hard-light`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait in
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait inside extends js.Object
@@ -95,14 +95,14 @@ object sharpLibStrings {
   
   @js.native
   sealed trait lighten
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait mitchell extends js.Object
   
   @js.native
   sealed trait multiply
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait nearest extends js.Object
@@ -112,38 +112,38 @@ object sharpLibStrings {
   
   @js.native
   sealed trait out
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait outside extends js.Object
   
   @js.native
   sealed trait over
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait overlay
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait saturate
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait screen
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait `soft-light`
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait source
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @js.native
   sealed trait xor
-    extends sharpLib.sharpMod.sharpNs.Blend
+    extends sharpLib.sharpMod.Blend
   
   @scala.inline
   def add: add = "add".asInstanceOf[add]

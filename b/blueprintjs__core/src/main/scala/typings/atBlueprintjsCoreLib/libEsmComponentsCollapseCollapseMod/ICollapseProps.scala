@@ -12,7 +12,7 @@ trait ICollapseProps
     * Useful when rendering a `Collapse` inside a `<table>`, for instance.
     * @default "div"
     */
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * Whether the component is open or closed.
     * @default false
@@ -38,7 +38,7 @@ object ICollapseProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    component: reactLib.reactMod.ReactType[_] = null,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
     keepChildrenMounted: js.UndefOr[scala.Boolean] = js.undefined,
     transitionDuration: scala.Int | scala.Double = null

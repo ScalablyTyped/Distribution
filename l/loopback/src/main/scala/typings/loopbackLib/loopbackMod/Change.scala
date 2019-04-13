@@ -24,39 +24,69 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Change")
 @js.native
-class Change ()
-  extends loopbackLib.loopbackMod.lNs.Change {
-  /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
+class Change () extends PersistedModel {
+  var checkpoint: scala.Double = js.native
+  /** Hash of the modelName and ID. */
+  var id: java.lang.String = js.native
+  /** Model ID. */
+  var modelId: java.lang.String = js.native
+  /** Model name. */
+  var modelName: java.lang.String = js.native
+  var prev: java.lang.String = js.native
+  /** The current model revision. */
+  var rev: java.lang.String = js.native
   /**
-    * loopback 3.x Remote hooks
-    * http://loopback.io/doc/en/lb3/Remote-hooks.html
-    * @param method
-    * @param backback
+    * settings Extends the `Model.settings` object.
+    * settings.hashAlgorithm Algorithm used to create cryptographic hash, used as argument
+    * to [crypto.createHash](nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm).Default is sha1.
+    * settings.ignoreErrors By default, when changes are rectified, an error will throw an exception.
+    * However, if this setting is true, then errors will not throw exceptions.
     */
-  /* CompleteClass */
-  override def beforeRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  @JSName("settings")
+  var settings_Change: loopbackLib.Anon_AclsHashAlgorithm = js.native
+  /**
+    * Does this change conflict with the given change.
+    * @param  {Change} change
+    * @return {boolean
+    */
+  def conflictsWith(change: Change): scala.Unit = js.native
+  /**
+    * Get a change's current revision based on current data.
+    * @callback  {() => void} callback
+    * @param {Error} err
+    * @param {string} rev The current revisio
+    */
+  def currentRevision(callback: js.Function2[/* err */ stdLib.Error, /* rev */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  /**
+    * Compare two changes.
+    * @param  {Change} change
+    */
+  def equals(change: Change): scala.Unit = js.native
+  /**
+    * Get the `Model` class for `change.modelName`.
+    */
+  def getModelCtor(): scala.Unit = js.native
+  /**
+    * Determine if the change is based on the given change.
+    * @param  {Change} change
+    * @return {boolean
+    */
+  def isBasedOn(change: Change): scala.Unit = js.native
+  /**
+    * Update (or create) the change with the current revision
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {Change} chang
+    */
+  def rectify(callback: js.Function2[/* err */ stdLib.Error, /* change */ this.type, scala.Unit]): scala.Unit = js.native
+  /**
+    * Get a change's type. Returns one of
+    * - `Change.UPDATE`
+    * - `Change.CREATE`
+    * - `Change.DELETE`
+    * - `Change.UNKNOWN
+    */
+  def `type`(): scala.Unit = js.native
 }
 
 /* static members */
@@ -68,7 +98,7 @@ object Change extends js.Object {
     * @param  {Change} a
     * @param  {Change} b
     */
-  def bothDeleted(a: loopbackLib.loopbackMod.lNs.Change, b: loopbackLib.loopbackMod.lNs.Change): scala.Unit = js.native
+  def bothDeleted(a: loopbackLib.loopbackMod.Change, b: loopbackLib.loopbackMod.Change): scala.Unit = js.native
   /**
     * Determine the differences for a given model since a given checkpoint.
     *

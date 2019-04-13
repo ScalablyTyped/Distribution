@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CheckboxOptionType extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var label: reactLib.reactMod.ReactNs.ReactNode
+  var label: reactLib.reactMod.ReactNode
   var onChange: js.UndefOr[
     js.Function1[/* e */ antdLib.libCheckboxCheckboxMod.CheckboxChangeEvent, scala.Unit]
   ] = js.undefined
@@ -17,7 +17,7 @@ trait CheckboxOptionType extends js.Object {
 object CheckboxOptionType {
   @scala.inline
   def apply(
-    label: reactLib.reactMod.ReactNs.ReactNode,
+    label: reactLib.reactMod.ReactNode,
     value: CheckboxValueType,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: /* e */ antdLib.libCheckboxCheckboxMod.CheckboxChangeEvent => scala.Unit = null

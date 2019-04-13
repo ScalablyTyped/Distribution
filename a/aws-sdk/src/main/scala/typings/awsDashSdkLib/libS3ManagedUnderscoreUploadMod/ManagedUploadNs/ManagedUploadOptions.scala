@@ -15,7 +15,7 @@ trait ManagedUploadOptions extends js.Object {
     * A map of parameters to pass to the upload requests.
     * The "Body" parameter is required to be specified either on the service or in the params option.
     */
-  var params: js.UndefOr[awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest] = js.undefined
+  var params: js.UndefOr[awsDashSdkLib.clientsS3Mod.PutObjectRequest] = js.undefined
   /**
     * Default: 5 mb
     * The size in bytes for each individual part to be uploaded. Adjust the part size to ensure the number of parts does not exceed maxTotalParts. See minPartSize for the minimum allowed part size.
@@ -30,22 +30,22 @@ trait ManagedUploadOptions extends js.Object {
     * An optional S3 service object to use for requests.
     * This object might have bound parameters used by the uploader.
     */
-  var service: js.UndefOr[awsDashSdkLib.clientsS3Mod.namespaced] = js.undefined
+  var service: js.UndefOr[awsDashSdkLib.clientsS3Mod.^] = js.undefined
   /**
     * The tags to apply to the object.
     */
-  var tags: js.UndefOr[js.Array[awsDashSdkLib.clientsS3Mod.S3Ns.Tag]] = js.undefined
+  var tags: js.UndefOr[js.Array[awsDashSdkLib.clientsS3Mod.Tag]] = js.undefined
 }
 
 object ManagedUploadOptions {
   @scala.inline
   def apply(
     leavePartsOnError: js.UndefOr[scala.Boolean] = js.undefined,
-    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest = null,
+    params: awsDashSdkLib.clientsS3Mod.PutObjectRequest = null,
     partSize: scala.Int | scala.Double = null,
     queueSize: scala.Int | scala.Double = null,
-    service: awsDashSdkLib.clientsS3Mod.namespaced = null,
-    tags: js.Array[awsDashSdkLib.clientsS3Mod.S3Ns.Tag] = null
+    service: awsDashSdkLib.clientsS3Mod.^ = null,
+    tags: js.Array[awsDashSdkLib.clientsS3Mod.Tag] = null
   ): ManagedUploadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(leavePartsOnError)) __obj.updateDynamic("leavePartsOnError")(leavePartsOnError)

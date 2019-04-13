@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Snowball ()
-  extends awsDashSdkLib.clientsSnowballMod.namespaced {
-  def this(options: awsDashSdkLib.clientsSnowballMod.SnowballNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsSnowballMod.^ {
+  def this(options: awsDashSdkLib.clientsSnowballMod.ClientConfiguration) = this()
 }
 

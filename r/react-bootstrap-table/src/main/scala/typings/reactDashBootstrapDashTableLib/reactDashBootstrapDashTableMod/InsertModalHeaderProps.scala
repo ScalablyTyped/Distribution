@@ -10,7 +10,7 @@ trait InsertModalHeaderProps extends js.Object {
   	 * Callback function to call prior to closing the Insert Modal window.
   	 */
   var beforeClose: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], scala.Unit]
+    js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event], scala.Unit]
   ] = js.undefined
   /**
   	 * Header class name.
@@ -37,7 +37,7 @@ trait InsertModalHeaderProps extends js.Object {
 object InsertModalHeaderProps {
   @scala.inline
   def apply(
-    beforeClose: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event] => scala.Unit = null,
+    beforeClose: /* e */ reactLib.reactMod.SyntheticEvent[_, reactLib.Event] => scala.Unit = null,
     className: java.lang.String = null,
     hideClose: js.UndefOr[scala.Boolean] = js.undefined,
     onModalClose: /* closeModal */ js.Function0[scala.Unit] => scala.Unit = null,

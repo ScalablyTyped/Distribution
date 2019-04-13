@@ -21,12 +21,12 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply(source: java.lang.String, destination: java.lang.String): js.Promise[scala.Unit] with cpDashFileLib.cpDashFileMod.cpFileNs.ProgressEmitter = js.native
+  def apply(source: java.lang.String, destination: java.lang.String): js.Promise[scala.Unit] with cpDashFileLib.cpDashFileMod.ProgressEmitter = js.native
   def apply(
     source: java.lang.String,
     destination: java.lang.String,
-    options: cpDashFileLib.cpDashFileMod.cpFileNs.Options
-  ): js.Promise[scala.Unit] with cpDashFileLib.cpDashFileMod.cpFileNs.ProgressEmitter = js.native
+    options: cpDashFileLib.cpDashFileMod.Options
+  ): js.Promise[scala.Unit] with cpDashFileLib.cpDashFileMod.ProgressEmitter = js.native
   /**
   	Copy a file synchronously.
   	@param source - File you want to copy.
@@ -36,7 +36,7 @@ trait Anon_Default extends js.Object {
   def sync(
     source: java.lang.String,
     destination: java.lang.String,
-    options: cpDashFileLib.cpDashFileMod.cpFileNs.Options
+    options: cpDashFileLib.cpDashFileMod.Options
   ): scala.Unit = js.native
 }
 

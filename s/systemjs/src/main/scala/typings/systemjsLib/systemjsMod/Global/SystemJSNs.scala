@@ -13,7 +13,7 @@ object SystemJSNs extends js.Object {
     */
   @js.native
   class constructor ()
-    extends systemjsLib.systemjsMod.SystemJSLoaderNs.System
+    extends systemjsLib.systemjsMod.System
   
 }
 

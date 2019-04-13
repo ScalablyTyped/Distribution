@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ButtonToolbar
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libButtonToolbarMod.ButtonToolbarNs.ButtonToolbarProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[ButtonToolbarProps, js.Object, js.Any]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("io", "MemoryStream")
 @js.native
 class MemoryStream ()
-  extends fibjsLib.ioMod.ioNs.MemoryStream
+  extends fibjsLib.Class_MemoryStream
 

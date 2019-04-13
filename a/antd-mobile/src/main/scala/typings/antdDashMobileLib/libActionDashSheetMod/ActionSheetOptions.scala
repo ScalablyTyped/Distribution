@@ -11,8 +11,8 @@ trait ActionSheetOptions extends js.Object {
   var destructiveButtonIndex: js.UndefOr[scala.Double] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
-  var message: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var message: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -24,8 +24,8 @@ object ActionSheetOptions {
     destructiveButtonIndex: scala.Int | scala.Double = null,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
     maskTransitionName: java.lang.String = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    message: reactLib.reactMod.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionName: java.lang.String = null
   ): ActionSheetOptions = {
     val __obj = js.Dynamic.literal()

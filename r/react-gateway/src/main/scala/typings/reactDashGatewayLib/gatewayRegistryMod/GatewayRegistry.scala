@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait GatewayRegistry extends js.Object {
   var _children: org.scalablytyped.runtime.StringDictionary[
-    js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]]
+    js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNode]]
   ]
   var _containers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[(reactLib.reactMod.Component[js.Object, js.Object, _]) | scala.Null]]
   var _currentId: scala.Double
   def _renderContainer(name: java.lang.String): scala.Unit
-  def addChild(name: java.lang.String, gatewayId: java.lang.String, child: reactLib.reactMod.ReactNs.ReactNode): scala.Unit
+  def addChild(name: java.lang.String, gatewayId: java.lang.String, child: reactLib.reactMod.ReactNode): scala.Unit
   def addContainer(name: java.lang.String, container: reactLib.reactMod.Component[js.Object, js.Object, _]): scala.Unit
   def clearChild(name: java.lang.String, gatewayId: java.lang.String): scala.Unit
-  def register(name: java.lang.String, child: reactLib.reactMod.ReactNs.ReactNode): java.lang.String
+  def register(name: java.lang.String, child: reactLib.reactMod.ReactNode): java.lang.String
   def removeContainer(name: java.lang.String): scala.Unit
   def unregister(name: java.lang.String, gatewayId: java.lang.String): scala.Unit
 }
@@ -24,15 +24,15 @@ object GatewayRegistry {
   @scala.inline
   def apply(
     _children: org.scalablytyped.runtime.StringDictionary[
-      js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]]
+      js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNode]]
     ],
     _containers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[(reactLib.reactMod.Component[js.Object, js.Object, _]) | scala.Null]],
     _currentId: scala.Double,
     _renderContainer: java.lang.String => scala.Unit,
-    addChild: (java.lang.String, java.lang.String, reactLib.reactMod.ReactNs.ReactNode) => scala.Unit,
+    addChild: (java.lang.String, java.lang.String, reactLib.reactMod.ReactNode) => scala.Unit,
     addContainer: (java.lang.String, reactLib.reactMod.Component[js.Object, js.Object, _]) => scala.Unit,
     clearChild: (java.lang.String, java.lang.String) => scala.Unit,
-    register: (java.lang.String, reactLib.reactMod.ReactNs.ReactNode) => java.lang.String,
+    register: (java.lang.String, reactLib.reactMod.ReactNode) => java.lang.String,
     removeContainer: java.lang.String => scala.Unit,
     unregister: (java.lang.String, java.lang.String) => scala.Unit
   ): GatewayRegistry = {

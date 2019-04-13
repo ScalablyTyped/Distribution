@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("js-quantities", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[jsDashQuantitiesLib.jsDashQuantitiesMod.QtyNs.Type]
+  extends org.scalablytyped.runtime.TopLevel[Type]
 

@@ -16,9 +16,9 @@ class ExposurePlus2Rounded protected ()
 @JSImport("@material-ui/icons", "ExposurePlus2Rounded")
 @js.native
 class ExposurePlus2RoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

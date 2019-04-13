@@ -9,9 +9,7 @@ trait CheckBoxProps extends js.Object {
   /**
     *  Specify React Native component for main button
     */
-  var Component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var Component: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Aligns checkbox to center
     *
@@ -35,7 +33,7 @@ trait CheckBoxProps extends js.Object {
     *
     * @default 'check-square-o'
     */
-  var checkedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
+  var checkedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
   /**
     * Specify a custom checked message
     */
@@ -100,7 +98,7 @@ trait CheckBoxProps extends js.Object {
   /**
     * Title of checkbox
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
   /**
     * Additional props for the title
     */
@@ -119,7 +117,7 @@ trait CheckBoxProps extends js.Object {
     *
     * @default 'square-o'
     */
-  var uncheckedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
+  var uncheckedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
   /**
     * Style of container that wraps the check box and text
     */
@@ -132,10 +130,10 @@ object CheckBoxProps {
   @scala.inline
   def apply(
     checked: scala.Boolean,
-    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    Component: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
     center: js.UndefOr[scala.Boolean] = js.undefined,
     checkedColor: java.lang.String = null,
-    checkedIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    checkedIcon: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
     checkedTitle: java.lang.String = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     fontFamily: java.lang.String = null,
@@ -148,12 +146,12 @@ object CheckBoxProps {
     right: js.UndefOr[scala.Boolean] = js.undefined,
     size: scala.Int | scala.Double = null,
     textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    title: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    title: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
     titleProps: stdLib.Partial[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ _
     ] = null,
     uncheckedColor: java.lang.String = null,
-    uncheckedIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    uncheckedIcon: java.lang.String | reactLib.reactMod.ReactElement[js.Object] = null,
     wrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): CheckBoxProps = {
     val __obj = js.Dynamic.literal(checked = checked)

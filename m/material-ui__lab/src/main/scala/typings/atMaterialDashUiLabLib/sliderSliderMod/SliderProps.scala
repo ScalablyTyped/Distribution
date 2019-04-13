@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait SliderProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait SliderProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SliderClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,19 +14,15 @@ import scala.scalajs.js.annotation._
   var min: js.UndefOr[scala.Double] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
+      /* event */ reactLib.reactMod.ChangeEvent[js.Object], 
       /* value */ scala.Double, 
       scala.Unit
     ]
   ] = js.undefined
-  var onDragEnd: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit]
-  ] = js.undefined
-  var onDragStart: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit]
-  ] = js.undefined
+  var onDragEnd: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.ChangeEvent[js.Object], scala.Unit]] = js.undefined
+  var onDragStart: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.ChangeEvent[js.Object], scala.Unit]] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
-  var thumb: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var thumb: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
   var valueReducer: js.UndefOr[ValueReducer] = js.undefined
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,15 +34,15 @@ object SliderProps {
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SliderClassKey]] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* value */ scala.Double) => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ scala.Double) => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.ChangeEvent[js.Object] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.ChangeEvent[js.Object] => scala.Unit = null,
     step: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    thumb: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    thumb: reactLib.reactMod.ReactElement[_] = null,
     value: scala.Int | scala.Double = null,
     valueReducer: ValueReducer = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined

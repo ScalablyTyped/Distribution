@@ -17,7 +17,7 @@ trait Carousel
   def componentDidMount_MCarousel(): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MCarousel(): scala.Unit = js.native
-  def getChildrenCount(children: reactLib.reactMod.ReactNs.ReactNode): scala.Double = js.native
+  def getChildrenCount(children: reactLib.reactMod.ReactNode): scala.Double = js.native
   def loopJump(): scala.Unit = js.native
   def onChildLayout(e: reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent): scala.Unit = js.native
   def onLayout(e: reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent): scala.Unit = js.native
@@ -31,7 +31,7 @@ trait Carousel
     e: reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.NativeScrollEvent]
   ): scala.Unit = js.native
   def paging(offsetY: scala.Double): scala.Unit = js.native
-  def renderContent(pages: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderContent(pages: reactLib.reactMod.ReactNode): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderDots(index: scala.Double): js.UndefOr[js.Object | scala.Null] = js.native
   def scrollNextPage(): scala.Unit = js.native
   def updateIndex(offset: CarouselOffset): scala.Unit = js.native

@@ -15,17 +15,17 @@ trait ColumnProps[T] extends js.Object {
   var dataIndex: js.UndefOr[java.lang.String] = js.undefined
   var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
   var filterDropdown: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* props */ js.Object, reactLib.reactMod.ReactNs.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* props */ js.Object, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var filterDropdownVisible: js.UndefOr[scala.Boolean] = js.undefined
   var filterIcon: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* filtered */ scala.Boolean, reactLib.reactMod.ReactNs.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* filtered */ scala.Boolean, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var filterMultiple: js.UndefOr[scala.Boolean] = js.undefined
   var filteredValue: js.UndefOr[js.Array[_]] = js.undefined
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var fixed: js.UndefOr[scala.Boolean | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
-  var key: js.UndefOr[reactLib.reactMod.ReactNs.Key] = js.undefined
+  var key: js.UndefOr[reactLib.reactMod.Key] = js.undefined
   var onCell: js.UndefOr[js.Function2[/* record */ T, /* rowIndex */ scala.Double, _]] = js.undefined
   var onCellClick: js.UndefOr[js.Function2[/* record */ T, /* event */ js.Any, scala.Unit]] = js.undefined
   var onFilter: js.UndefOr[js.Function2[/* value */ js.Any, /* record */ T, scala.Boolean]] = js.undefined
@@ -36,14 +36,14 @@ trait ColumnProps[T] extends js.Object {
       /* text */ js.Any, 
       /* record */ T, 
       /* index */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var sortOrder: js.UndefOr[SortOrder | scala.Boolean] = js.undefined
   var sorter: js.UndefOr[scala.Boolean | CompareFn[T]] = js.undefined
   var title: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNs.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
@@ -57,24 +57,24 @@ object ColumnProps {
     colSpan: scala.Int | scala.Double = null,
     dataIndex: java.lang.String = null,
     defaultSortOrder: SortOrder = null,
-    filterDropdown: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* props */ js.Object, reactLib.reactMod.ReactNs.ReactNode]) = null,
+    filterDropdown: reactLib.reactMod.ReactNode | (js.Function1[/* props */ js.Object, reactLib.reactMod.ReactNode]) = null,
     filterDropdownVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    filterIcon: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* filtered */ scala.Boolean, reactLib.reactMod.ReactNs.ReactNode]) = null,
+    filterIcon: reactLib.reactMod.ReactNode | (js.Function1[/* filtered */ scala.Boolean, reactLib.reactMod.ReactNode]) = null,
     filterMultiple: js.UndefOr[scala.Boolean] = js.undefined,
     filteredValue: js.Array[_] = null,
     filters: js.Array[ColumnFilterItem] = null,
     fixed: scala.Boolean | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onCell: (/* record */ T, /* rowIndex */ scala.Double) => _ = null,
     onCellClick: (/* record */ T, /* event */ js.Any) => scala.Unit = null,
     onFilter: (/* value */ js.Any, /* record */ T) => scala.Boolean = null,
     onFilterDropdownVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     onHeaderCell: /* props */ ColumnProps[T] => _ = null,
-    render: (/* text */ js.Any, /* record */ T, /* index */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: (/* text */ js.Any, /* record */ T, /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder | scala.Boolean = null,
     sorter: scala.Boolean | CompareFn[T] = null,
-    title: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNs.ReactNode]) = null,
+    title: reactLib.reactMod.ReactNode | (js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNode]) = null,
     width: java.lang.String | scala.Double = null
   ): ColumnProps[T] = {
     val __obj = js.Dynamic.literal()

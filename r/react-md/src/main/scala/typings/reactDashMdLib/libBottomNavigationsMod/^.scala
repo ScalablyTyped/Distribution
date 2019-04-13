@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/BottomNavigations", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val BottomNavigation: reactLib.reactMod.ReactNs.ComponentClass[
+  val BottomNavigation: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
+  val default: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

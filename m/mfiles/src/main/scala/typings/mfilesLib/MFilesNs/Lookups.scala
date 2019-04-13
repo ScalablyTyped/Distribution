@@ -27,3 +27,8 @@ class Lookups ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.Lookups")
+@js.native
+object Lookups
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ILookups]
+

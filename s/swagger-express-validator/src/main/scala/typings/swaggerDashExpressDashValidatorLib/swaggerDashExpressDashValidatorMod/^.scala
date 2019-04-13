@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("swagger-express-validator", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    options: swaggerDashExpressDashValidatorLib.swaggerDashExpressDashValidatorMod.SwaggerExpressValidatorNs.Options
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
-  def validator(
-    options: swaggerDashExpressDashValidatorLib.swaggerDashExpressDashValidatorMod.SwaggerExpressValidatorNs.Options
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(options: Options): expressLib.expressMod.RequestHandler = js.native
+  def validator(options: Options): expressLib.expressMod.RequestHandler = js.native
 }
 

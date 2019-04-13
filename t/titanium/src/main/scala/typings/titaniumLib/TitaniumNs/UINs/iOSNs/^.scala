@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
+  			 * Allow the navigation to continue.
+  			 */
+  val ACTION_POLICY_ALLOW: scala.Double = js.native
+  /**
+  			 * Cancel the navigation.
+  			 */
+  val ACTION_POLICY_CANCEL: scala.Double = js.native
+  /**
   			 * Use with [AdView.adSize](Titanium.UI.iOS.AdView.adSize) to specify a banner ad size
   			 * appropriate for landscape orientations.
   			 */
@@ -177,6 +185,22 @@ object ^ extends js.Object {
   			 */
   val ATTRIBUTE_WRITING_DIRECTION_RIGHT_TO_LEFT: scala.Double = js.native
   /**
+  			 * All media types require a user gesture to begin playing.
+  			 */
+  val AUDIOVISUAL_MEDIA_TYPE_ALL: scala.Double = js.native
+  /**
+  			 * Media types containing audio require a user gesture to begin playing.
+  			 */
+  val AUDIOVISUAL_MEDIA_TYPE_AUDIO: scala.Double = js.native
+  /**
+  			 * No media types require a user gesture to begin playing.
+  			 */
+  val AUDIOVISUAL_MEDIA_TYPE_NONE: scala.Double = js.native
+  /**
+  			 * Media types containing video require a user gesture to begin playing.
+  			 */
+  val AUDIOVISUAL_MEDIA_TYPE_VIDEO: scala.Double = js.native
+  /**
   			 * Converts strings formatted as addresses into clickable links.
   			 */
   val AUTODETECT_ADDRESS: scala.Double = js.native
@@ -333,6 +357,26 @@ object ^ extends js.Object {
   			 */
   val BLUR_EFFECT_STYLE_REGULAR: scala.Double = js.native
   /**
+  			 * Specifies that the data for the URL load should be loaded from the originating source.
+  			 * No existing cache data should be used to satisfy a URL load request.
+  			 */
+  val CACHE_POLICY_RELOAD_IGNORING_LOCAL_CACHE_DATA: scala.Double = js.native
+  /**
+  			 * Specifies that the existing cache data should be used to satisfy a request,
+  			 * regardless of its age or expiration date.
+  			 */
+  val CACHE_POLICY_RETURN_CACHE_DATA_DONT_LOAD: scala.Double = js.native
+  /**
+  			 * Specifies that the existing cached data should be used to satisfy the request,
+  			 * regardless of its age or expiration date.
+  			 */
+  val CACHE_POLICY_RETURN_CACHE_DATA_ELSE_LOAD: scala.Double = js.native
+  /**
+  			 * Specifies that the caching logic defined in the protocol implementation, if any,
+  			 * is used for a particular URL load request.
+  			 */
+  val CACHE_POLICY_USE_PROTOCOL_CACHE_POLICY: scala.Double = js.native
+  /**
   			 * Use with <Titanium.UI.View.clipMode> to specify clipping behavior.
   			 */
   val CLIP_MODE_DEFAULT: scala.Double = js.native
@@ -358,6 +402,23 @@ object ^ extends js.Object {
   			 * Use with <Titanium.UI.iOS.CollisionBehavior.collisionMode> to specify collisions with items only.
   			 */
   val COLLISION_MODE_ITEM: scala.Double = js.native
+  /**
+  			 * Credential should be stored only for this session.
+  			 */
+  val CREDENTIAL_PERSISTENCE_FOR_SESSION: scala.Double = js.native
+  /**
+  			 * Credential should not be stored.
+  			 */
+  val CREDENTIAL_PERSISTENCE_NONE: scala.Double = js.native
+  /**
+  			 * Credential should be stored in the keychain.
+  			 */
+  val CREDENTIAL_PERSISTENCE_PERMANENT: scala.Double = js.native
+  /**
+  			 * Credential should be stored permanently in the keychain, and in addition should be
+  			 * distributed to other devices based on the owning AppleID.
+  			 */
+  val CREDENTIAL_PERSISTENCE_SYNCHRONIZABLE: scala.Double = js.native
   /**
   			 * The heavy impact style used as the `style` argument when creating a <Titanium.UI.iOS.FeedbackGenerator> with the
   			 * type <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_IMPACT>.
@@ -397,6 +458,14 @@ object ^ extends js.Object {
   			 * The feedback type to be used when specifying a selection in <Titanium.UI.iOS.FeedbackGenerator>.
   			 */
   val FEEDBACK_GENERATOR_TYPE_SELECTION: scala.Double = js.native
+  /**
+  			 * Inject the script after the document finishes loading, but before other subresources finish loading.
+  			 */
+  val INJECTION_TIME_DOCUMENT_END: scala.Double = js.native
+  /**
+  			 * Inject the script after the document element is created, but before any other content is loaded.
+  			 */
+  val INJECTION_TIME_DOCUMENT_START: scala.Double = js.native
   /**
   			 * Use with <Titanium.UI.ScrollView.keyboardDismissMode> to control keyboard dismiss mode.
   			 */
@@ -558,6 +627,14 @@ object ^ extends js.Object {
   			 * Use with <Titanium.UI.SearchBar.style> to change the search bar style.
   			 */
   val SEARCH_BAR_STYLE_PROMINENT: scala.Double = js.native
+  /**
+  			 * Selection endpoints can be placed at any character boundary.
+  			 */
+  val SELECTION_GRANULARITY_CHARACTER: scala.Double = js.native
+  /**
+  			 * Selection granularity varies automatically depending on the selection.
+  			 */
+  val SELECTION_GRANULARITY_DYNAMIC: scala.Double = js.native
   /**
   			 * Number that represents the icon used for the application shortcut
   			 */
@@ -735,11 +812,6 @@ object ^ extends js.Object {
   			 */
   def applyProperties(props: js.Any): scala.Unit = js.native
   /**
-  			 * Creates and returns an instance of <Titanium.UI.iOS.3DMatrix>.
-  			 */
-  def create3DMatrix(): Matrix3D = js.native
-  def create3DMatrix(parameters: js.Any): Matrix3D = js.native
-  /**
   			 * Creates and returns an instance of <Titanium.UI.iOS.AdView>.
   			 */
   def createAdView(): AdView = js.native
@@ -871,7 +943,7 @@ object ^ extends js.Object {
   def createToolbar(parameters: js.Any): Toolbar = js.native
   /**
   			 * Creates a transition animation when opening or closing windows in a
-  			 * <Titanium.UI.iOS.NavigationWindow> or <Titanium.UI.Tab>.
+  			 * <Titanium.UI.NavigationWindow> or <Titanium.UI.Tab>.
   			 */
   def createTransitionAnimation(transition: titaniumLib.transitionAnimationParam): titaniumLib.TitaniumNs.Proxy = js.native
   /**
@@ -879,6 +951,21 @@ object ^ extends js.Object {
   			 */
   def createViewAttachmentBehavior(): ViewAttachmentBehavior = js.native
   def createViewAttachmentBehavior(parameters: js.Any): ViewAttachmentBehavior = js.native
+  /**
+  			 * Creates and returns an instance of <Titanium.UI.iOS.WebViewConfiguration>.
+  			 */
+  def createWebViewConfiguration(): WebViewConfiguration = js.native
+  def createWebViewConfiguration(parameters: js.Any): WebViewConfiguration = js.native
+  /**
+  			 * Creates and returns an instance of <Titanium.UI.iOS.WebViewDecisionHandler>.
+  			 */
+  def createWebViewDecisionHandler(): WebViewDecisionHandler = js.native
+  def createWebViewDecisionHandler(parameters: js.Any): WebViewDecisionHandler = js.native
+  /**
+  			 * Creates and returns an instance of <Titanium.UI.iOS.WebViewProcessPool>.
+  			 */
+  def createWebViewProcessPool(): WebViewProcessPool = js.native
+  def createWebViewProcessPool(parameters: js.Any): WebViewProcessPool = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */

@@ -10,13 +10,13 @@ trait DS extends js.Object {
   def bindAll[T](
     resourceName: java.lang.String,
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     expr: java.lang.String
   ): js.Function = js.native
   def bindAll[T](
     resourceName: java.lang.String,
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     expr: java.lang.String,
     cb: js.Function2[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
@@ -29,13 +29,13 @@ trait DS extends js.Object {
   def bindOne[T](
     resourceName: java.lang.String,
     id: java.lang.String,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     expr: java.lang.String
   ): js.Function = js.native
   def bindOne[T](
     resourceName: java.lang.String,
     id: java.lang.String,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     expr: java.lang.String,
     cb: js.Function2[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
@@ -46,13 +46,13 @@ trait DS extends js.Object {
   def bindOne[T](
     resourceName: java.lang.String,
     id: scala.Double,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     expr: java.lang.String
   ): js.Function = js.native
   def bindOne[T](
     resourceName: java.lang.String,
     id: scala.Double,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     expr: java.lang.String,
     cb: js.Function2[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 

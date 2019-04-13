@@ -14,13 +14,13 @@ trait SharedButtonProps extends js.Object {
   var href: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[scala.Boolean] = js.undefined
   var iconBefore: js.UndefOr[scala.Boolean] = js.undefined
-  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var iconEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var iconEl: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var mini: js.UndefOr[scala.Boolean] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined
   var raised: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,10 +42,10 @@ object SharedButtonProps {
     href: java.lang.String = null,
     icon: js.UndefOr[scala.Boolean] = js.undefined,
     iconBefore: js.UndefOr[scala.Boolean] = js.undefined,
-    iconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    iconChildren: reactLib.reactMod.ReactNode = null,
     iconClassName: java.lang.String = null,
-    iconEl: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    iconEl: reactLib.reactMod.ReactElement[_] = null,
+    label: reactLib.reactMod.ReactNode = null,
     mini: js.UndefOr[scala.Boolean] = js.undefined,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     raised: js.UndefOr[scala.Boolean] = js.undefined,

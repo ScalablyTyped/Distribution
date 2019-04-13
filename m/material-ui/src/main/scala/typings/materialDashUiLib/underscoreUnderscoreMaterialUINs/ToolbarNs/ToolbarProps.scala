@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ToolbarProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var noGutter: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ToolbarProps {
@@ -16,7 +16,7 @@ object ToolbarProps {
   def apply(
     className: java.lang.String = null,
     noGutter: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): ToolbarProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

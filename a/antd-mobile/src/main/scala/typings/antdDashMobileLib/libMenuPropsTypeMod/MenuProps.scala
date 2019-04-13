@@ -21,7 +21,7 @@ trait MenuProps extends js.Object {
   var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var radioPrefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subMenuPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[ValueType] = js.undefined
 }
@@ -42,7 +42,7 @@ object MenuProps {
     onOk: /* value */ js.UndefOr[ValueType] => scala.Unit = null,
     prefixCls: java.lang.String = null,
     radioPrefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     subMenuPrefixCls: java.lang.String = null,
     value: ValueType = null
   ): MenuProps = {

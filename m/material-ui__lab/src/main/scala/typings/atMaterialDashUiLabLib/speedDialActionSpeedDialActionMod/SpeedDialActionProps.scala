@@ -16,18 +16,18 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined
-  var icon: reactLib.reactMod.ReactNs.ReactNode
+  var icon: reactLib.reactMod.ReactNode
   var tooltipOpen: js.UndefOr[scala.Boolean] = js.undefined
   var tooltipPlacement: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`bottom-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`bottom-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.bottom | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`left-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`left-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.left | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`right-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`right-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.right | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`top-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`top-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.top
   ] = js.undefined
-  var tooltipTitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var tooltipTitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object SpeedDialActionProps {
   @scala.inline
   def apply(
-    icon: reactLib.reactMod.ReactNs.ReactNode,
+    icon: reactLib.reactMod.ReactNode,
     ButtonProps: stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps] = null,
     TooltipClasses: stdLib.Partial[
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey]
@@ -37,11 +37,11 @@ object SpeedDialActionProps {
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SpeedDialActionClassKey]
     ] = null,
     delay: scala.Int | scala.Double = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tooltipOpen: js.UndefOr[scala.Boolean] = js.undefined,
     tooltipPlacement: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`bottom-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`bottom-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.bottom | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`left-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`left-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.left | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`right-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`right-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.right | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`top-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`top-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.top = null,
-    tooltipTitle: reactLib.reactMod.ReactNs.ReactNode = null
+    tooltipTitle: reactLib.reactMod.ReactNode = null
   ): SpeedDialActionProps = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)

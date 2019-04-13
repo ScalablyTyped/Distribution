@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/fn/array/join", JSImport.Namespace)
 @js.native
-object fnArrayJoinMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArraySeparator]
+object fnArrayJoinMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T]): java.lang.String = js.native
+  def apply[T](array: stdLib.ArrayLike[T], separator: java.lang.String): java.lang.String = js.native
+}
 

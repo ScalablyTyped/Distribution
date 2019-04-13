@@ -5,9 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - stylelintLib.Anon_Actual
-  - stylelintLib.Anon_ActualOptional
-*/
-trait ValidateOptionsAssertion extends js.Object
+@js.native
+trait ValidateOptionsAssertion extends js.Object {
+  var actual: js.UndefOr[js.Any] = js.native
+  var optional: js.UndefOr[
+    stylelintLib.stylelintLibNumbers.`false` | stylelintLib.stylelintLibNumbers.`true`
+  ] = js.native
+  var possible: js.UndefOr[js.Any] = js.native
+}
 

@@ -63,10 +63,10 @@ object IButtonProps {
     large: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     minimal: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     rightIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     small: js.UndefOr[scala.Boolean] = js.undefined,
-    text: reactLib.reactMod.ReactNs.ReactNode = null,
+    text: reactLib.reactMod.ReactNode = null,
     `type`: java.lang.String = null
   ): IButtonProps = {
     val __obj = js.Dynamic.literal()

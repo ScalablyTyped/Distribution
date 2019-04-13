@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Lightsail ()
   extends awsDashSdkLib.awsDashSdkMod.Lightsail {
-  def this(options: awsDashSdkLib.clientsLightsailMod.LightsailNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsLightsailMod.ClientConfiguration) = this()
 }
 

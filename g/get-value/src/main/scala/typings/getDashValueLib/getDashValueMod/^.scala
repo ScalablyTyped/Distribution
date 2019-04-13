@@ -9,11 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(obj: js.Object, key: java.lang.String | js.Array[java.lang.String]): js.Any = js.native
-  def apply(
-    obj: js.Object,
-    key: java.lang.String | js.Array[java.lang.String],
-    options: getDashValueLib.getDashValueMod.getNs.Options
-  ): js.Any = js.native
+  def apply(obj: js.Object, key: java.lang.String | js.Array[java.lang.String], options: Options): js.Any = js.native
   def apply[T](obj: T): T = js.native
 }
 

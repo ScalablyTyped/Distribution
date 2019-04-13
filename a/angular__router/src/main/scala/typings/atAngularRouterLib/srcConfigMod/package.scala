@@ -6,10 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcConfigMod {
+  type Data = org.scalablytyped.runtime.StringDictionary[js.Any]
   type LoadChildren = java.lang.String | LoadChildrenCallback
   type LoadChildrenCallback = js.Function0[
     atAngularCoreLib.srcTypeMod.Type[js.Any] | atAngularCoreLib.atAngularCoreMod.NgModuleFactory[js.Any] | js.Promise[atAngularCoreLib.srcTypeMod.Type[js.Any]] | rxjsLib.rxjsMod.Observable[atAngularCoreLib.srcTypeMod.Type[js.Any]]
   ]
+  type ResolveData = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Routes = js.Array[Route]
   /* Rewritten from type alias, can be one of: 
     - atAngularRouterLib.atAngularRouterLibStrings.pathParamsChange

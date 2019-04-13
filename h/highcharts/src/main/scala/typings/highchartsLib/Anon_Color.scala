@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Color extends js.Object {
-  var color: js.UndefOr[java.lang.String | highchartsLib.highchartsMod.HighchartsNs.Gradient] = js.undefined
+  var color: js.UndefOr[java.lang.String | highchartsLib.highchartsMod.Gradient] = js.undefined
   var offsetX: js.UndefOr[scala.Double] = js.undefined
   var offsetY: js.UndefOr[scala.Double] = js.undefined
   var opacity: js.UndefOr[scala.Double] = js.undefined
@@ -16,7 +16,7 @@ trait Anon_Color extends js.Object {
 object Anon_Color {
   @scala.inline
   def apply(
-    color: java.lang.String | highchartsLib.highchartsMod.HighchartsNs.Gradient = null,
+    color: java.lang.String | highchartsLib.highchartsMod.Gradient = null,
     offsetX: scala.Int | scala.Double = null,
     offsetY: scala.Int | scala.Double = null,
     opacity: scala.Int | scala.Double = null,

@@ -29,7 +29,7 @@ trait INodeGroupProps extends js.Object {
       reactDashMoveLib.reactDashMoveMod.HashMap | js.Array[reactDashMoveLib.reactDashMoveMod.HashMap]
     ]
   ] = js.undefined
-  def children(nodes: js.Array[_]): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(nodes: js.Array[_]): reactLib.reactMod.ReactElement[_]
   def keyAccessor(data: js.Any, index: scala.Double): java.lang.String | scala.Double
   def start(data: js.Any, index: scala.Double): reactDashMoveLib.reactDashMoveMod.HashMap
 }
@@ -37,7 +37,7 @@ trait INodeGroupProps extends js.Object {
 object INodeGroupProps {
   @scala.inline
   def apply(
-    children: js.Array[_] => reactLib.reactMod.ReactNs.ReactElement[_],
+    children: js.Array[_] => reactLib.reactMod.ReactElement[_],
     data: js.Array[_],
     keyAccessor: (js.Any, scala.Double) => java.lang.String | scala.Double,
     start: (js.Any, scala.Double) => reactDashMoveLib.reactDashMoveMod.HashMap,

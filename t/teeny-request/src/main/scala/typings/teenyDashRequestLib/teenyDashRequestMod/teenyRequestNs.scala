@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object teenyRequestNs extends js.Object {
   var defaults: js.Function1[
-    /* defaults */ requestLib.requestMod.requestNs.OptionalUriUrl, 
+    /* defaults */ requestLib.requestMod.OptionalUriUrl, 
     js.Function2[
-      /* reqOpts */ requestLib.requestMod.requestNs.Options, 
-      /* callback */ js.UndefOr[requestLib.requestMod.requestNs.RequestCallback], 
-      scala.Unit | requestLib.requestMod.requestNs.Request
+      /* reqOpts */ requestLib.requestMod.Options, 
+      /* callback */ js.UndefOr[requestLib.requestMod.RequestCallback], 
+      scala.Unit | requestLib.requestMod.Request
     ]
   ] = js.native
 }

@@ -26,12 +26,8 @@ trait ILockerService extends js.Object {
     * @param  {String}  key     The key in storage to bind to
     * @param  {Mixed}   def     The default value to initially bind
     */
-  def bind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String): ILockerService = js.native
-  def bind(
-    scope: angularLib.angularMod.angularNs.IScope,
-    property: java.lang.String,
-    defaultPropertyValue: js.Any
-  ): ILockerService = js.native
+  def bind(scope: angularLib.angularMod.IScope, property: java.lang.String): ILockerService = js.native
+  def bind(scope: angularLib.angularMod.IScope, property: java.lang.String, defaultPropertyValue: js.Any): ILockerService = js.native
   /**
     * Remove all items set within the current namespace/driver
     */
@@ -150,6 +146,6 @@ trait ILockerService extends js.Object {
     * @param  {Object}  $scope  The angular $scope object
     * @param  {String}  key     The key to remove from bindings
     */
-  def unbind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String): ILockerService = js.native
+  def unbind(scope: angularLib.angularMod.IScope, property: java.lang.String): ILockerService = js.native
 }
 

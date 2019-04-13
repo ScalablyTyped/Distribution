@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[T /* <: js.Thenable[scala.Unit] */](from: java.lang.String, to: java.lang.String): T = js.native
-  def apply[T /* <: js.Thenable[scala.Unit] */](
-    from: java.lang.String,
-    to: java.lang.String,
-    opts: moveDashConcurrentlyLib.moveDashConcurrentlyMod.moveNs.Options[T]
-  ): T = js.native
+  def apply[T /* <: js.Thenable[scala.Unit] */](from: java.lang.String, to: java.lang.String, opts: Options[T]): T = js.native
 }
 

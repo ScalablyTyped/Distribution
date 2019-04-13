@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ICalendarCell extends js.Object {
   var badgeTotal: scala.Double
-  var date: momentLib.momentMod.momentNs.Moment
+  var date: momentLib.momentMod.Moment
   var events: js.Array[IEvent]
   var inMonth: scala.Boolean
   var isFuture: scala.Boolean
@@ -21,7 +21,7 @@ object ICalendarCell {
   @scala.inline
   def apply(
     badgeTotal: scala.Double,
-    date: momentLib.momentMod.momentNs.Moment,
+    date: momentLib.momentMod.Moment,
     events: js.Array[IEvent],
     inMonth: scala.Boolean,
     isFuture: scala.Boolean,

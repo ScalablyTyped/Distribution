@@ -22,7 +22,7 @@ trait ShowSearchType extends js.Object {
       /* path */ js.Array[CascaderOptionType], 
       /* prefixCls */ js.UndefOr[java.lang.String], 
       /* names */ FilledFieldNamesType, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var sort: js.UndefOr[
@@ -42,7 +42,7 @@ object ShowSearchType {
     filter: (/* inputValue */ java.lang.String, /* path */ js.Array[CascaderOptionType], /* names */ FilledFieldNamesType) => scala.Boolean = null,
     limit: scala.Double | antdLib.antdLibNumbers.`false` = null,
     matchInputWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    render: (/* inputValue */ java.lang.String, /* path */ js.Array[CascaderOptionType], /* prefixCls */ js.UndefOr[java.lang.String], /* names */ FilledFieldNamesType) => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: (/* inputValue */ java.lang.String, /* path */ js.Array[CascaderOptionType], /* prefixCls */ js.UndefOr[java.lang.String], /* names */ FilledFieldNamesType) => reactLib.reactMod.ReactNode = null,
     sort: (/* a */ js.Array[CascaderOptionType], /* b */ js.Array[CascaderOptionType], /* inputValue */ java.lang.String, /* names */ FilledFieldNamesType) => scala.Double = null
   ): ShowSearchType = {
     val __obj = js.Dynamic.literal()

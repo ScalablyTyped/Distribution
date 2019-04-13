@@ -14,14 +14,14 @@ object autobahnLibStrings {
   
   @js.native
   sealed trait longpoll
-    extends autobahnLib.autobahnMod.autobahnNs.DefaultTransportType
+    extends autobahnLib.autobahnMod.DefaultTransportType
   
   @js.native
   sealed trait random extends js.Object
   
   @js.native
   sealed trait rawsocket
-    extends autobahnLib.autobahnMod.autobahnNs.DefaultTransportType
+    extends autobahnLib.autobahnMod.DefaultTransportType
   
   @js.native
   sealed trait roundrobin extends js.Object
@@ -31,7 +31,7 @@ object autobahnLibStrings {
   
   @js.native
   sealed trait websocket
-    extends autobahnLib.autobahnMod.autobahnNs.DefaultTransportType
+    extends autobahnLib.autobahnMod.DefaultTransportType
   
   @scala.inline
   def first: first = "first".asInstanceOf[first]

@@ -17,3 +17,8 @@ class ObjectVersionWorkflowState ()
   override var Workflow: mfilesLib.IPropertyValue = js.native
 }
 
+@JSGlobal("MFiles.ObjectVersionWorkflowState")
+@js.native
+object ObjectVersionWorkflowState
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectVersionWorkflowState]
+

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/animations/public_api", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val AUTO_STYLE: /* * */ java.lang.String = js.native
-  val ɵPRE_STYLE: /* ! */ java.lang.String = js.native
+  val AUTO_STYLE: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` = js.native
+  val ɵPRE_STYLE: atAngularAnimationsLib.atAngularAnimationsLibStrings.`!` = js.native
   def animate(timings: java.lang.String): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationAnimateMetadata = js.native
   def animate(
     timings: java.lang.String,

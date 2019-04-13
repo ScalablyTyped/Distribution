@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DynamoDB ()
   extends awsDashSdkLib.awsDashSdkMod.DynamoDB {
-  def this(options: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDynamodbMod.ClientConfiguration) = this()
 }
 

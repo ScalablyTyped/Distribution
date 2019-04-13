@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class WAF ()
-  extends awsDashSdkLib.clientsWafMod.namespaced {
-  def this(options: awsDashSdkLib.clientsWafMod.WAFNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsWafMod.^ {
+  def this(options: awsDashSdkLib.clientsWafMod.ClientConfiguration) = this()
 }
 

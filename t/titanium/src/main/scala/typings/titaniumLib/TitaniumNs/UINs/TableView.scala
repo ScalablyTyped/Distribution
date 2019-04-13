@@ -464,10 +464,6 @@ trait TableView extends View {
   			 */
   def setData(data: js.Any, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.TableView.data> property.
-  			 */
-  def setData(data: js.Array[TableViewRow | TableViewSection]): scala.Unit = js.native
-  /**
   			 * Sets the value of the <Titanium.UI.TableView.dimBackgroundForSearch> property.
   			 */
   def setDimBackgroundForSearch(dimBackgroundForSearch: scala.Boolean): scala.Unit = js.native

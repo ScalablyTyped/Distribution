@@ -76,7 +76,5 @@ object ErrorNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.errorMod.ErrorNs.ERROR with scala.Double] = js.native
   }
   
-  type CODE = nodegitLib.errorMod.ErrorNs.CODE
-  type ERROR = nodegitLib.errorMod.ErrorNs.ERROR
 }
 

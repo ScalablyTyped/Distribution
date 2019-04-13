@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("website-scraper", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[websiteDashScraperLib.websiteDashScraperMod.websiteScraperNs.scrape]
+  extends org.scalablytyped.runtime.TopLevel[scrape]
 

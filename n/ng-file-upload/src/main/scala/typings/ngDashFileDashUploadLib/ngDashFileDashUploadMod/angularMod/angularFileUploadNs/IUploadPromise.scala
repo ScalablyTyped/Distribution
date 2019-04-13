@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IUploadPromise[T]
-  extends angularLib.angularMod.angularNs.IPromise[angularLib.angularMod.angularNs.IHttpResponse[T]] {
+  extends angularLib.angularMod.IPromise[angularLib.angularMod.IHttpResponse[T]] {
   /**
     * Cancel/abort the upload in progress.
     *
@@ -21,6 +21,6 @@ trait IUploadPromise[T]
     * @param  {IHttpPromiseCallback<T>}
     * @return {IUploadPromise<T>}
     */
-  def xhr(callback: angularLib.angularMod.angularNs.IHttpPromiseCallback[T]): IUploadPromise[T] = js.native
+  def xhr(callback: angularLib.angularMod.IHttpPromiseCallback[T]): IUploadPromise[T] = js.native
 }
 

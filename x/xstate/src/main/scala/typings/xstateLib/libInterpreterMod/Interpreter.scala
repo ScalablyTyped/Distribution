@@ -15,8 +15,9 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
     * @param options Interpreter options
     */
   def this(machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent]) = this()
-  def this(machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent], options: stdLib.Partial[InterpreterOptions]) = this()
+  def this(machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent], options: stdLib.Partial[xstateLib.libTypesMod.InterpreterOptions]) = this()
   var attachDev: js.Any = js.native
+  var batch: js.Any = js.native
   var cancel: js.Any = js.native
   var children: js.Any = js.native
   /**
@@ -29,9 +30,7 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
   var devTools: js.UndefOr[js.Any] = js.native
   var doneListeners: js.Any = js.native
   var eventListeners: js.Any = js.native
-  var eventQueue: js.Any = js.native
   var exec: js.Any = js.native
-  var flushEventQueue: js.Any = js.native
   var forward: js.Any = js.native
   var forwardTo: js.Any = js.native
   var id: java.lang.String = js.native
@@ -43,10 +42,13 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
   var listeners: js.Any = js.native
   var logger: js.Any = js.native
   var machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
-  var options: InterpreterOptions = js.native
+  var options: stdLib.Readonly[xstateLib.libTypesMod.InterpreterOptions] = js.native
   var parent: js.UndefOr[Interpreter[_, _, xstateLib.libTypesMod.EventObject]] = js.native
+  var reportUnhandledExceptionOnInvocation: js.Any = js.native
+  var scheduler: js.Any = js.native
   var sendListeners: js.Any = js.native
   var spawn: js.Any = js.native
+  var spawnActivity: js.Any = js.native
   var spawnCallback: js.Any = js.native
   var spawnEffect: js.Any = js.native
   var spawnPromise: js.Any = js.native
@@ -67,6 +69,10 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
     * Alias for Interpreter.prototype.start
     */
   def init(): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def init(initialState: java.lang.String): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def init(
+    initialState: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_xstate/lib/types.StateValueMap */ js.Any
+  ): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def init(initialState: xstateLib.libStateMod.State[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   /**
     * Returns the next state given the interpreter's current state and the event.
@@ -108,12 +114,19 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
   def onStop(listener: Listener): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def onTransition(listener: StateListener[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   /**
-    * Sends an event to the running interpreter to trigger a transition,
-    * and returns the immediate next state.
+    * Sends an event to the running interpreter to trigger a transition.
     *
-    * @param event The event to send
+    * An array of events (batched) can be sent as well, which will send all
+    * batched events to the running interpreter. The listeners will be
+    * notified only **once** when all events are processed.
+    *
+    * @param event The event(s) to send
     */
-  def send(event: xstateLib.libTypesMod.OmniEvent[TEvent]): xstateLib.libStateMod.State[TContext, TEvent] = js.native
+  def send(event: xstateLib.libTypesMod.SingleOrArray[xstateLib.libTypesMod.OmniEvent[TEvent]]): xstateLib.libStateMod.State[TContext, TEvent] = js.native
+  def send(
+    event: xstateLib.libTypesMod.SingleOrArray[xstateLib.libTypesMod.OmniEvent[TEvent]],
+    payload: (stdLib.Record[java.lang.String, _]) with xstateLib.Anon_TypeUndefined
+  ): xstateLib.libStateMod.State[TContext, TEvent] = js.native
   def sendTo(event: xstateLib.libTypesMod.OmniEventObject[TEvent], to: java.lang.String): scala.Unit = js.native
   /**
     * Returns a send function bound to this interpreter instance.
@@ -127,6 +140,7 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema
     */
   def start(): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def start(initialState: xstateLib.libStateMod.State[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def start(initialState: xstateLib.libTypesMod.StateValue): Interpreter[TContext, TStateSchema, TEvent] = js.native
   /**
     * Stops the interpreter and unsubscribe all listeners.
     *
@@ -145,13 +159,13 @@ object Interpreter extends js.Object {
     * - `clock` uses the global `setTimeout` and `clearTimeout` functions
     * - `logger` uses the global `console.log()` method
     */
-  var defaultOptions: xstateLib.libInterpreterMod.InterpreterOptions = js.native
+  var defaultOptions: xstateLib.libTypesMod.InterpreterOptions = js.native
   @JSName("interpret")
   var interpret_Original: xstateLib.Anon_Machine = js.native
   def interpret[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent]): xstateLib.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
   def interpret[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema */, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     machine: xstateLib.libTypesMod.StateMachine[TContext, TStateSchema, TEvent],
-    options: stdLib.Partial[xstateLib.libInterpreterMod.InterpreterOptions]
+    options: stdLib.Partial[xstateLib.libTypesMod.InterpreterOptions]
   ): xstateLib.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
 }
 

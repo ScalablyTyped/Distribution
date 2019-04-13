@@ -10,35 +10,34 @@ import scala.scalajs.js.annotation._
 object parsersNs extends js.Object {
   @js.native
   class ByteLength protected ()
-    extends serialportLib.serialportMod.SerialPortNs.parsersNs.ByteLength {
+    extends nodeLib.streamMod.Transform {
     def this(options: serialportLib.Anon_Length) = this()
   }
   
   @js.native
   class CCTalk ()
-    extends serialportLib.serialportMod.SerialPortNs.parsersNs.CCTalk
+    extends nodeLib.streamMod.Transform
   
   @js.native
   class Delimiter protected ()
-    extends serialportLib.serialportMod.SerialPortNs.parsersNs.Delimiter {
+    extends nodeLib.streamMod.Transform {
     def this(options: serialportLib.Anon_Delimiter) = this()
   }
   
   @js.native
-  class Readline protected ()
-    extends serialportLib.serialportMod.SerialPortNs.parsersNs.Readline {
+  class Readline protected () extends Delimiter {
     def this(options: serialportLib.Anon_Ascii) = this()
   }
   
   @js.native
   class Ready protected ()
-    extends serialportLib.serialportMod.SerialPortNs.parsersNs.Ready {
+    extends nodeLib.streamMod.Transform {
     def this(options: serialportLib.Anon_DelimiterArray) = this()
   }
   
   @js.native
   class Regex protected ()
-    extends serialportLib.serialportMod.SerialPortNs.parsersNs.Regex {
+    extends nodeLib.streamMod.Transform {
     def this(options: serialportLib.Anon_Regex) = this()
   }
   

@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object withMobileDialogMod extends js.Object {
   def default[P](): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[
+    /* component */ reactLib.reactMod.ComponentType[
       P with atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.InjectedProps with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
     ], 
-    reactLib.reactMod.ReactNs.ComponentType[P with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]]
+    reactLib.reactMod.ComponentType[P with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]]
   ] = js.native
   def default[P](options: atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.WithMobileDialogOptions): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[
+    /* component */ reactLib.reactMod.ComponentType[
       P with atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.InjectedProps with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
     ], 
-    reactLib.reactMod.ReactNs.ComponentType[P with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]]
+    reactLib.reactMod.ComponentType[P with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]]
   ] = js.native
 }
 

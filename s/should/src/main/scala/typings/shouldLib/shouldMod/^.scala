@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("should", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val not: shouldLib.shouldMod.shouldNs.ShouldAssertExt = js.native
-  def apply(obj: js.Any): shouldLib.shouldMod.shouldNs.Assertion = js.native
+  val not: ShouldAssertExt = js.native
+  def apply(obj: js.Any): Assertion = js.native
   def deepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def doesNotThrow(block: js.Function): scala.Unit = js.native

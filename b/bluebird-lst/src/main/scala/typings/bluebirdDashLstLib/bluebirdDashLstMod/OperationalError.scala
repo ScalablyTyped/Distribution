@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bluebird-lst", "OperationalError")
 @js.native
 class OperationalError ()
-  extends bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.OperationalError {
+  extends stdLib.Error {
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

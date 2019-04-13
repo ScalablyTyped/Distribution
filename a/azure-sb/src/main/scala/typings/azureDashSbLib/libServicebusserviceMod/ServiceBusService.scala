@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ServiceBusService
-  extends azureDashSbLib.libServicebusservicebaseMod.namespaced {
+  extends azureDashSbLib.libServicebusservicebaseMod.^ {
   /*
     * NotificationHub functions
     */

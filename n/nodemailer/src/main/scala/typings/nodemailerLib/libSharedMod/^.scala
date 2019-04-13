@@ -20,7 +20,7 @@ object ^ extends js.Object {
     options: org.scalablytyped.runtime.StringDictionary[js.Any],
     defaults: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Logger = js.native
-  def parseConnectionUrl(url: java.lang.String): nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Options = js.native
+  def parseConnectionUrl(url: java.lang.String): nodemailerLib.libSmtpDashConnectionMod.Options = js.native
   def resolveContent(data: js.Array[_], key: java.lang.String): js.Promise[nodeLib.Buffer | java.lang.String] = js.native
   def resolveContent(
     data: js.Array[_],

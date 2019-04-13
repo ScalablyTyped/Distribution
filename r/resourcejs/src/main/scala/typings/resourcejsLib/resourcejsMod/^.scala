@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    app: expressLib.expressMod.eNs.Application,
+    app: expressLib.expressMod.Application,
     route: java.lang.String,
     modelName: java.lang.String,
     model: mongooseLib.mongooseMod.Model[mongooseLib.mongooseMod.Document, js.Object]
-  ): resourcejsLib.resourcejsMod.resourcejsNs.ResourceEndpoint = js.native
+  ): ResourceEndpoint = js.native
 }
 

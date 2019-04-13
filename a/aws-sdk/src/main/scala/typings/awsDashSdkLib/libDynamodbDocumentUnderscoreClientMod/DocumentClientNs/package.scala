@@ -14,8 +14,10 @@ package object DocumentClientNs {
   */
   type AttributeAction = _AttributeAction | java.lang.String
   type AttributeDefinitions = js.Array[AttributeDefinition]
+  type AttributeMap = org.scalablytyped.runtime.StringDictionary[AttributeValue]
   type AttributeName = java.lang.String
   type AttributeNameList = js.Array[AttributeName]
+  type AttributeUpdates = org.scalablytyped.runtime.StringDictionary[AttributeValueUpdate]
   type AttributeValue = js.Any
   type AttributeValueList = js.Array[AttributeValue]
   type AutoScalingPolicyDescriptionList = js.Array[AutoScalingPolicyDescription]
@@ -50,6 +52,9 @@ package object DocumentClientNs {
   */
   type BackupTypeFilter = _BackupTypeFilter | java.lang.String
   type BackupsInputLimit = scala.Double
+  type BatchGetRequestMap = org.scalablytyped.runtime.StringDictionary[KeysAndAttributes]
+  type BatchGetResponseMap = org.scalablytyped.runtime.StringDictionary[ItemList]
+  type BatchWriteItemRequestMap = org.scalablytyped.runtime.StringDictionary[WriteRequests]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.PROVISIONED
     - awsDashSdkLib.awsDashSdkLibStrings.PAY_PER_REQUEST
@@ -96,8 +101,12 @@ package object DocumentClientNs {
   type ContinuousBackupsStatus = _ContinuousBackupsStatus | java.lang.String
   type Double = scala.Double
   type Endpoints = js.Array[Endpoint]
+  type ExpectedAttributeMap = org.scalablytyped.runtime.StringDictionary[ExpectedAttributeValue]
+  type ExpressionAttributeNameMap = org.scalablytyped.runtime.StringDictionary[AttributeName]
   type ExpressionAttributeNameVariable = java.lang.String
+  type ExpressionAttributeValueMap = org.scalablytyped.runtime.StringDictionary[AttributeValue]
   type ExpressionAttributeValueVariable = java.lang.String
+  type FilterConditionMap = org.scalablytyped.runtime.StringDictionary[Condition]
   type GlobalSecondaryIndexDescriptionList = js.Array[GlobalSecondaryIndexDescription]
   type GlobalSecondaryIndexList = js.Array[GlobalSecondaryIndex]
   type GlobalSecondaryIndexUpdateList = js.Array[GlobalSecondaryIndexUpdate]
@@ -124,7 +133,9 @@ package object DocumentClientNs {
   type IndexStatus = _IndexStatus | java.lang.String
   type Integer = scala.Double
   type IntegerObject = scala.Double
+  type ItemCollectionKeyAttributeMap = org.scalablytyped.runtime.StringDictionary[AttributeValue]
   type ItemCollectionMetricsMultiple = js.Array[ItemCollectionMetrics]
+  type ItemCollectionMetricsPerTable = org.scalablytyped.runtime.StringDictionary[ItemCollectionMetricsMultiple]
   type ItemCollectionSizeEstimateBound = scala.Double
   type ItemCollectionSizeEstimateRange = js.Array[ItemCollectionSizeEstimateBound]
   type ItemCount = scala.Double
@@ -132,6 +143,8 @@ package object DocumentClientNs {
   type ItemResponseList = js.Array[ItemResponse]
   type KMSMasterKeyArn = java.lang.String
   type KMSMasterKeyId = java.lang.String
+  type Key = org.scalablytyped.runtime.StringDictionary[AttributeValue]
+  type KeyConditions = org.scalablytyped.runtime.StringDictionary[Condition]
   type KeyExpression = java.lang.String
   type KeyList = js.Array[Key]
   type KeySchema = js.Array[KeySchemaElement]
@@ -148,6 +161,7 @@ package object DocumentClientNs {
   type LocalSecondaryIndexList = js.Array[LocalSecondaryIndex]
   type LocalSecondaryIndexes = js.Array[LocalSecondaryIndexInfo]
   type Long = scala.Double
+  type MapAttributeValue = org.scalablytyped.runtime.StringDictionary[AttributeValue]
   type NextTokenString = java.lang.String
   type NonKeyAttributeName = java.lang.String
   type NonKeyAttributeNameList = js.Array[NonKeyAttributeName]
@@ -171,6 +185,7 @@ package object DocumentClientNs {
     - java.lang.String
   */
   type ProjectionType = _ProjectionType | java.lang.String
+  type PutItemInputAttributeMap = org.scalablytyped.runtime.StringDictionary[AttributeValue]
   type RegionName = java.lang.String
   type ReplicaDescriptionList = js.Array[ReplicaDescription]
   type ReplicaGlobalSecondaryIndexSettingsDescriptionList = js.Array[ReplicaGlobalSecondaryIndexSettingsDescription]
@@ -242,6 +257,7 @@ package object DocumentClientNs {
   type ScalarAttributeType = _ScalarAttributeType | java.lang.String
   type ScanSegment = scala.Double
   type ScanTotalSegments = scala.Double
+  type SecondaryIndexesCapacityMap = org.scalablytyped.runtime.StringDictionary[Capacity]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ALL_ATTRIBUTES
     - awsDashSdkLib.awsDashSdkLibStrings.ALL_PROJECTED_ATTRIBUTES

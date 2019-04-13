@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CreditEllipsoid extends js.Object {
-  var credit: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
-  var proxy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Proxy] = js.undefined
+  var credit: js.UndefOr[cesiumLib.cesiumMod.Credit | java.lang.String] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
+  var proxy: js.UndefOr[cesiumLib.cesiumMod.Proxy] = js.undefined
   var requestVertexNormals: js.UndefOr[scala.Boolean] = js.undefined
   var requestWaterMask: js.UndefOr[scala.Boolean] = js.undefined
   var url: java.lang.String
@@ -18,9 +18,9 @@ object Anon_CreditEllipsoid {
   @scala.inline
   def apply(
     url: java.lang.String,
-    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
-    proxy: cesiumLib.cesiumMod.CesiumNs.Proxy = null,
+    credit: cesiumLib.cesiumMod.Credit | java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
+    proxy: cesiumLib.cesiumMod.Proxy = null,
     requestVertexNormals: js.UndefOr[scala.Boolean] = js.undefined,
     requestWaterMask: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CreditEllipsoid = {

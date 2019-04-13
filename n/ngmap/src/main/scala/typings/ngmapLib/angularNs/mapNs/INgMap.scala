@@ -27,15 +27,15 @@ trait INgMap extends js.Object {
   		 * @param  {PositionOptions}                      options optional
   		 * @return {angular.IPromise<google.maps.LatLng>}         Latitude ang longitude of the address
   		 */
-  def getGeoLocation(address: java.lang.String): angularLib.angularMod.angularNs.IPromise[googlemapsLib.googleNs.mapsNs.LatLng] = js.native
-  def getGeoLocation(address: java.lang.String, options: stdLib.PositionOptions): angularLib.angularMod.angularNs.IPromise[googlemapsLib.googleNs.mapsNs.LatLng] = js.native
+  def getGeoLocation(address: java.lang.String): angularLib.angularMod.IPromise[googlemapsLib.googleNs.mapsNs.LatLng] = js.native
+  def getGeoLocation(address: java.lang.String, options: stdLib.PositionOptions): angularLib.angularMod.IPromise[googlemapsLib.googleNs.mapsNs.LatLng] = js.native
   /**
     	 * Get map from the pool of all shown maps.
     	 * @param  {IGetMapOptions}                    options optional
     	 * @return {angular.IPromise<google.maps.Map>}         promise
     	 */
-  def getMap(): angularLib.angularMod.angularNs.IPromise[googlemapsLib.googleNs.mapsNs.Map] = js.native
-  def getMap(options: IGetMapOptions): angularLib.angularMod.angularNs.IPromise[googlemapsLib.googleNs.mapsNs.Map] = js.native
+  def getMap(): angularLib.angularMod.IPromise[googlemapsLib.googleNs.mapsNs.Map] = js.native
+  def getMap(options: IGetMapOptions): angularLib.angularMod.IPromise[googlemapsLib.googleNs.mapsNs.Map] = js.native
   /**
     * Initialize map from mapId or the current first shown map
     * @param  {string}          mapId id of the map. default 0

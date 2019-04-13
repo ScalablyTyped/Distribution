@@ -23,12 +23,12 @@ trait IDashboardResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the user array.
     *
     */
-  def getDashboard(section: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getDashboard(section: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise]
 }
 
 object IDashboardResource {
   @scala.inline
-  def apply(getDashboard: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise]): IDashboardResource = {
+  def apply(getDashboard: java.lang.String => angularLib.angularMod.IPromise[IResourcePromise]): IDashboardResource = {
     val __obj = js.Dynamic.literal(getDashboard = js.Any.fromFunction1(getDashboard))
   
     __obj.asInstanceOf[IDashboardResource]

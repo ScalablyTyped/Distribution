@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait telebot extends js.Object {
   def answerCallbackQuery(callback_query_id: java.lang.String): scala.Boolean = js.native
   def answerCallbackQuery(callback_query_id: java.lang.String, opt: telebotLib.Anon_CacheTime): scala.Boolean = js.native
-  def answerList(id: java.lang.String): telebotLib.telebotMod.telebotNs.AnswerList = js.native
-  def answerList(id: java.lang.String, opt: js.Any): telebotLib.telebotMod.telebotNs.AnswerList = js.native
+  def answerList(id: java.lang.String): AnswerList = js.native
+  def answerList(id: java.lang.String, opt: js.Any): AnswerList = js.native
   def answerPreCheckoutQuery(pre_checkout_query_id: java.lang.String, ok: scala.Boolean): scala.Boolean = js.native
   def answerPreCheckoutQuery(
     pre_checkout_query_id: java.lang.String,
@@ -105,20 +105,20 @@ trait telebot extends js.Object {
   def kickChatMember(chat_id: scala.Double, user_id: scala.Double): scala.Boolean = js.native
   def leaveChat(chat_id: java.lang.String): scala.Boolean = js.native
   def leaveChat(chat_id: scala.Double): scala.Boolean = js.native
-  def mod(names: java.lang.String, fn: telebotLib.telebotMod.telebotNs.genericCb): js.Any = js.native
-  def mod(names: js.Array[java.lang.String], fn: telebotLib.telebotMod.telebotNs.genericCb): js.Any = js.native
+  def mod(names: java.lang.String, fn: genericCb): js.Any = js.native
+  def mod(names: js.Array[java.lang.String], fn: genericCb): js.Any = js.native
   def modRun(name: java.lang.String, data: js.Any): js.Any = js.native
-  def on(types: java.lang.String, fn: telebotLib.telebotMod.telebotNs.genericCb): scala.Boolean = js.native
-  def on(types: java.lang.String, fn: telebotLib.telebotMod.telebotNs.genericCb, opt: js.Any): scala.Boolean = js.native
-  def on(types: js.Array[java.lang.String], fn: telebotLib.telebotMod.telebotNs.genericCb): scala.Boolean = js.native
-  def on(types: js.Array[java.lang.String], fn: telebotLib.telebotMod.telebotNs.genericCb, opt: js.Any): scala.Boolean = js.native
-  def on(types: stdLib.RegExp, fn: telebotLib.telebotMod.telebotNs.genericCb): scala.Boolean = js.native
-  def on(types: stdLib.RegExp, fn: telebotLib.telebotMod.telebotNs.genericCb, opt: js.Any): scala.Boolean = js.native
-  def plug(module: telebotLib.telebotMod.telebotNs.module): scala.Unit = js.native
+  def on(types: java.lang.String, fn: genericCb): scala.Boolean = js.native
+  def on(types: java.lang.String, fn: genericCb, opt: js.Any): scala.Boolean = js.native
+  def on(types: js.Array[java.lang.String], fn: genericCb): scala.Boolean = js.native
+  def on(types: js.Array[java.lang.String], fn: genericCb, opt: js.Any): scala.Boolean = js.native
+  def on(types: stdLib.RegExp, fn: genericCb): scala.Boolean = js.native
+  def on(types: stdLib.RegExp, fn: genericCb, opt: js.Any): scala.Boolean = js.native
+  def plug(module: module): scala.Unit = js.native
   def properties(form: js.Any, opt: js.Any): js.Any = js.native
   def receiveUpdates(updateList: js.Array[_]): js.Promise[_] = js.native
-  def removeEvent(`type`: java.lang.String, fn: telebotLib.telebotMod.telebotNs.genericCb): scala.Boolean = js.native
-  def removeMod(name: java.lang.String, fn: telebotLib.telebotMod.telebotNs.genericCb): scala.Boolean = js.native
+  def removeEvent(`type`: java.lang.String, fn: genericCb): scala.Boolean = js.native
+  def removeMod(name: java.lang.String, fn: genericCb): scala.Boolean = js.native
   def request(url: java.lang.String, form: js.Any, data: js.Any): js.Promise[_] = js.native
   def sendAction(chat_id: java.lang.String, action: java.lang.String): scala.Boolean = js.native
   def sendAction(chat_id: scala.Double, action: java.lang.String): scala.Boolean = js.native
@@ -369,6 +369,6 @@ trait telebot extends js.Object {
   def stop(message: java.lang.String): scala.Unit = js.native
   def unbanChatMember(chat_id: java.lang.String, user_id: scala.Double): scala.Boolean = js.native
   def unbanChatMember(chat_id: scala.Double, user_id: scala.Double): scala.Boolean = js.native
-  def use(module: telebotLib.telebotMod.telebotNs.module): scala.Unit = js.native
+  def use(module: module): scala.Unit = js.native
 }
 

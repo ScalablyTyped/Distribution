@@ -18,7 +18,7 @@ trait Pikaday extends js.Object {
     * @param options full/partial configuration options.
     * @returns extended configurations.
     */
-  def config(options: pikadayDashTimeLib.pikadayDashTimeMod.PikadayNs.PikadayOptions): pikadayDashTimeLib.pikadayDashTimeMod.PikadayNs.PikadayOptions = js.native
+  def config(options: PikadayOptions): PikadayOptions = js.native
   /**
     * Hide the picker and remove all event listeners - no going back!
     */
@@ -36,7 +36,7 @@ trait Pikaday extends js.Object {
     * Returns a Moment.js object for the selected date (Moment must be
     * loaded before Pikaday).
     */
-  def getMoment(): momentLib.momentMod.momentNs.Moment = js.native
+  def getMoment(): momentLib.momentMod.Moment = js.native
   /**
     * Change the current view to see a specific date.
     */

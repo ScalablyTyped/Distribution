@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   var role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.Empty
   var selected: js.Array[T]
   def onRemove(e: stdLib.Event): scala.Unit
-  def renderToken(selectedItem: T, props: TypeaheadMenuProps[T], index: scala.Double): reactLib.reactMod.ReactNs.ReactNode
+  def renderToken(selectedItem: T, props: TypeaheadMenuProps[T], index: scala.Double): reactLib.reactMod.ReactNode
 }
 
 object InputContainerPropsMultiple {
@@ -21,7 +21,7 @@ object InputContainerPropsMultiple {
     inputClassName: java.lang.String,
     labelKey: TypeaheadLabelKey[T],
     onRemove: stdLib.Event => scala.Unit,
-    renderToken: (T, TypeaheadMenuProps[T], scala.Double) => reactLib.reactMod.ReactNs.ReactNode,
+    renderToken: (T, TypeaheadMenuProps[T], scala.Double) => reactLib.reactMod.ReactNode,
     role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.Empty,
     selected: js.Array[T]
   ): InputContainerPropsMultiple[T] = {

@@ -141,7 +141,7 @@ trait TextField extends View {
   /**
   			 * Sets the padding of this text field.
   			 */
-  var padding: titaniumLib.TextFieldPadding = js.native
+  var padding: titaniumLib.ViewPadding = js.native
   /**
   			 * Left padding of this text field.
   			 */
@@ -334,7 +334,7 @@ trait TextField extends View {
   /**
   			 * Gets the value of the <Titanium.UI.TextField.padding> property.
   			 */
-  def getPadding(): titaniumLib.TextFieldPadding = js.native
+  def getPadding(): titaniumLib.ViewPadding = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TextField.paddingLeft> property.
   			 */
@@ -526,7 +526,7 @@ trait TextField extends View {
   /**
   			 * Sets the value of the <Titanium.UI.TextField.padding> property.
   			 */
-  def setPadding(padding: titaniumLib.TextFieldPadding): scala.Unit = js.native
+  def setPadding(padding: titaniumLib.ViewPadding): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.TextField.paddingLeft> property.
   			 */

@@ -23,18 +23,18 @@ object yargsLibStrings {
   
   @js.native
   sealed trait boolean
-    extends yargsLib.yargsMod.yargsNs.PositionalOptionsType
+    extends yargsLib.yargsMod.PositionalOptionsType
   
   @js.native
   sealed trait count extends js.Object
   
   @js.native
   sealed trait number
-    extends yargsLib.yargsMod.yargsNs.PositionalOptionsType
+    extends yargsLib.yargsMod.PositionalOptionsType
   
   @js.native
   sealed trait string
-    extends yargsLib.yargsMod.yargsNs.PositionalOptionsType
+    extends yargsLib.yargsMod.PositionalOptionsType
   
   @scala.inline
   def Argv: Argv = "Argv".asInstanceOf[Argv]

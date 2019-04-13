@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "ArcGisImageServerTerrainProvider")
 @js.native
-class ArcGisImageServerTerrainProvider protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.ArcGisImageServerTerrainProvider {
+class ArcGisImageServerTerrainProvider protected () extends TerrainProvider {
   def this(options: cesiumLib.Anon_Credit) = this()
 }
 

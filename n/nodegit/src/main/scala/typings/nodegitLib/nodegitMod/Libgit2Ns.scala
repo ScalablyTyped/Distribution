@@ -27,6 +27,5 @@ object Libgit2Ns extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.libDashGit2Mod.Libgit2Ns.OPT with scala.Double] = js.native
   }
   
-  type OPT = nodegitLib.libDashGit2Mod.Libgit2Ns.OPT
 }
 

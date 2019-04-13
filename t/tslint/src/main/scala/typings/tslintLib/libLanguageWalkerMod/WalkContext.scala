@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WalkContext[T] protected ()
   extends tslintLib.libLanguageWalkerWalkContextMod.WalkContext[T] {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, ruleName: java.lang.String, options: T) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, ruleName: java.lang.String, options: T) = this()
 }
 

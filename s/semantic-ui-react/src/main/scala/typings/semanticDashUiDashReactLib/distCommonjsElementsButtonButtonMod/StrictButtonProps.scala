@@ -21,7 +21,7 @@ trait StrictButtonProps extends js.Object {
   /** A basic button is less pronounced. */
   var basic: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** A button can be circular. */
   var circular: js.UndefOr[scala.Boolean] = js.undefined
   /** Additional classes. */
@@ -65,7 +65,7 @@ trait StrictButtonProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
       /* data */ ButtonProps, 
       scala.Unit
     ]
@@ -94,7 +94,7 @@ object StrictButtonProps {
     as: js.Any = null,
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom = null,
     basic: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     circular: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.facebook | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`google plus`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vk | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.twitter | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.linkedin | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.instagram | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.youtube = null,
@@ -109,7 +109,7 @@ object StrictButtonProps {
     labelPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     negative: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], /* data */ ButtonProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLButtonElement, reactLib.NativeMouseEvent], /* data */ ButtonProps) => scala.Unit = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null,

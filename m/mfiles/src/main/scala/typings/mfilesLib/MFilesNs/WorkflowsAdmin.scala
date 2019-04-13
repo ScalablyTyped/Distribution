@@ -19,3 +19,8 @@ class WorkflowsAdmin ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.WorkflowsAdmin")
+@js.native
+object WorkflowsAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IWorkflowsAdmin]
+

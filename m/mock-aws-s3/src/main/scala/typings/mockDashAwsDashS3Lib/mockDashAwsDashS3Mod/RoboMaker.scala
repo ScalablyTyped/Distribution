@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class RoboMaker ()
   extends awsDashSdkLib.awsDashSdkMod.RoboMaker {
-  def this(options: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsRobomakerMod.ClientConfiguration) = this()
 }
 

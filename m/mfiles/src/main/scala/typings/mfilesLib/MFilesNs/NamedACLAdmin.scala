@@ -19,3 +19,8 @@ class NamedACLAdmin ()
   override def Clone(): mfilesLib.INamedACLAdmin = js.native
 }
 
+@JSGlobal("MFiles.NamedACLAdmin")
+@js.native
+object NamedACLAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.INamedACLAdmin]
+

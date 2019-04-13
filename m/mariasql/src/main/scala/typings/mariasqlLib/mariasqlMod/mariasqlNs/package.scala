@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mariasqlNs {
+  type Dictionary = org.scalablytyped.runtime.StringDictionary[js.Any]
   type MariaCallBackBoolean = js.Function1[/* result */ scala.Boolean, scala.Unit]
   type MariaCallBackError = js.Function1[/* error */ stdLib.Error, scala.Unit]
   type MariaCallBackInfo = js.Function1[/* result */ MariaInfo, scala.Unit]

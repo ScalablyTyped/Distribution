@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TableSortLabelClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var IconComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps]
+    reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps]
   ] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var direction: js.UndefOr[
@@ -22,14 +22,14 @@ import scala.scalajs.js.annotation._
 object TableSortLabelProps {
   @scala.inline
   def apply(
-    IconComponent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = null,
+    IconComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TableSortLabelClassKey]] = null,
     direction: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.asc | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.desc = null,
     hideSortIcon: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): TableSortLabelProps = {
     val __obj = js.Dynamic.literal()
     if (IconComponent != null) __obj.updateDynamic("IconComponent")(IconComponent.asInstanceOf[js.Any])

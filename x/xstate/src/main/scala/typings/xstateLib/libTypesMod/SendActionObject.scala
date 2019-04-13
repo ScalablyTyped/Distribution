@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SendActionObject[TContext, TEvent /* <: EventObject */] extends SendAction[TContext, TEvent] {
   @JSName("delay")
-  var delay_SendActionObject: js.UndefOr[scala.Double] = js.undefined
+  var delay_SendActionObject: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   @JSName("event")
   var event_SendActionObject: TEvent
 }
@@ -18,7 +18,7 @@ object SendActionObject {
     event: TEvent,
     id: java.lang.String | scala.Double,
     `type`: java.lang.String,
-    delay: scala.Int | scala.Double = null,
+    delay: scala.Double | java.lang.String = null,
     exec: ActionFunction[TContext, TEvent] = null,
     to: java.lang.String = null
   ): SendActionObject[TContext, TEvent] = {

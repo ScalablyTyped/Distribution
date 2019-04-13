@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/views/Item/ItemGroup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[ItemGroupProps] = js.native
+  val default: reactLib.reactMod.StatelessComponent[ItemGroupProps] = js.native
 }
 

@@ -12,7 +12,7 @@ object ^ extends js.Object {
   /**
     * @description Default page loader that load page template
     */
-  var defaultPageLoader: onsenuiLib.onsenuiMod.onsNs.PageLoader = js.native
+  var defaultPageLoader: PageLoader = js.native
   /**
     * @description Create a alert dialog instance from a template.
     * @return Promise object that resolves to the alert dialog component object.

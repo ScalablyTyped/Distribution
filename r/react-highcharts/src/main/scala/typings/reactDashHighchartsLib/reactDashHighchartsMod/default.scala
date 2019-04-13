@@ -16,6 +16,6 @@ class default () extends ReactHighcharts
 @JSImport("react-highcharts", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Highcharts: highchartsLib.highchartsMod.HighchartsNs.Static = js.native
+  var Highcharts: highchartsLib.highchartsMod.Static = js.native
 }
 

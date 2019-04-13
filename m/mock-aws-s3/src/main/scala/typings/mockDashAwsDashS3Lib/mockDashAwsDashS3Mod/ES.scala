@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ES ()
   extends awsDashSdkLib.awsDashSdkMod.ES {
-  def this(options: awsDashSdkLib.clientsEsMod.ESNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsEsMod.ClientConfiguration) = this()
 }
 

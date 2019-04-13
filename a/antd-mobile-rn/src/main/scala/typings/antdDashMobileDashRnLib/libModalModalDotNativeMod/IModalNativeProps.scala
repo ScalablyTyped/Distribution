@@ -36,7 +36,7 @@ object IModalNativeProps {
     popup: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: antdDashMobileDashRnLib.libModalStyleIndexDotNativeMod.IModalStyle = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined
   ): IModalNativeProps = {
     val __obj = js.Dynamic.literal(visible = visible)

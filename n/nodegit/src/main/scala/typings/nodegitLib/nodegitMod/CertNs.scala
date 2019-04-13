@@ -26,7 +26,5 @@ object CertNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.certMod.CertNs.TYPE with scala.Double] = js.native
   }
   
-  type SSH = nodegitLib.certMod.CertNs.SSH
-  type TYPE = nodegitLib.certMod.CertNs.TYPE
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ILocalStorageServiceProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   /**
     * If localStorage is not supported, the library will default to cookies instead. This behavior can be disabled
     * @param shouldDefault default: true

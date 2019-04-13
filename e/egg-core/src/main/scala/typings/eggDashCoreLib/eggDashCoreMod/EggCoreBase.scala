@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EggCoreBase[Config]
-  extends koaLib.koaMod.namespaced[js.Any, js.Object] {
+  extends koaLib.koaMod.^[js.Any, js.Object] {
   /**
     * The current directory of application
     * @member {String}
@@ -27,7 +27,7 @@ trait EggCoreBase[Config]
     * @since 1.0.0
     */
   @JSName("deprecate")
-  var deprecate_Original: depdLib.depdMod.depdNs.Deprecate = js.native
+  var deprecate_Original: depdLib.depdMod.Deprecate = js.native
   /**
     * The loader instance, the default class is {@link EggLoader}.
     * If you want define

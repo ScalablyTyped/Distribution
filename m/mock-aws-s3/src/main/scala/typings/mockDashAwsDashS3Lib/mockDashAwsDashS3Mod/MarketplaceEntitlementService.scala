@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MarketplaceEntitlementService ()
   extends awsDashSdkLib.awsDashSdkMod.MarketplaceEntitlementService {
-  def this(options: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.ClientConfiguration) = this()
 }
 

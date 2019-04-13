@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation._
 
 trait CommentProps extends js.Object {
   /** List of action items rendered below the comment content */
-  var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   /** The element to display as the comment author. */
-  var author: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var author: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** The element to display as the comment avatar - generally an antd Avatar */
-  var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var avatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Nested comments should be provided as children of the Comment */
   var children: js.UndefOr[js.Any] = js.undefined
   /** className of comment */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** The main content of the comment */
-  var content: reactLib.reactMod.ReactNs.ReactNode
+  var content: reactLib.reactMod.ReactNode
   /** A datetime element containing the time to be displayed */
-  var datetime: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var datetime: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Comment prefix defaults to '.ant-comment' */
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   /** Additional style for the comment */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CommentProps {
   @scala.inline
   def apply(
-    content: reactLib.reactMod.ReactNs.ReactNode,
-    actions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
-    author: reactLib.reactMod.ReactNs.ReactNode = null,
-    avatar: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNode,
+    actions: js.Array[reactLib.reactMod.ReactNode] = null,
+    author: reactLib.reactMod.ReactNode = null,
+    avatar: reactLib.reactMod.ReactNode = null,
     children: js.Any = null,
     className: java.lang.String = null,
-    datetime: reactLib.reactMod.ReactNs.ReactNode = null,
+    datetime: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CommentProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (actions != null) __obj.updateDynamic("actions")(actions)

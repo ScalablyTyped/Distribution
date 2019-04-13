@@ -8,49 +8,49 @@ import scala.scalajs.js.annotation._
 object croppieLibStrings {
   @js.native
   sealed trait base64
-    extends croppieLib.croppieMod.CroppieNs.Type
+    extends croppieLib.croppieMod.Type
   
   @js.native
   sealed trait blob
-    extends croppieLib.croppieMod.CroppieNs.Type
+    extends croppieLib.croppieMod.Type
   
   @js.native
   sealed trait canvas
-    extends croppieLib.croppieMod.CroppieNs.Type
+    extends croppieLib.croppieMod.Type
   
   @js.native
   sealed trait circle
-    extends croppieLib.croppieMod.CroppieNs.CropType
+    extends croppieLib.croppieMod.CropType
   
   @js.native
   sealed trait html
-    extends croppieLib.croppieMod.CroppieNs.Type
+    extends croppieLib.croppieMod.Type
   
   @js.native
   sealed trait jpeg
-    extends croppieLib.croppieMod.CroppieNs.Format
+    extends croppieLib.croppieMod.Format
   
   @js.native
   sealed trait original extends js.Object
   
   @js.native
   sealed trait png
-    extends croppieLib.croppieMod.CroppieNs.Format
+    extends croppieLib.croppieMod.Format
   
   @js.native
   sealed trait rawcanvas
-    extends croppieLib.croppieMod.CroppieNs.Type
+    extends croppieLib.croppieMod.Type
   
   @js.native
   sealed trait square
-    extends croppieLib.croppieMod.CroppieNs.CropType
+    extends croppieLib.croppieMod.CropType
   
   @js.native
   sealed trait viewport extends js.Object
   
   @js.native
   sealed trait webp
-    extends croppieLib.croppieMod.CroppieNs.Format
+    extends croppieLib.croppieMod.Format
   
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]

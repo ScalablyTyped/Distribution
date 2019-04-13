@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Free", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Free */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Free = js.native
   def foldFree[M](M: fpDashTsLib.libMonadMod.Monad[M]): js.Function2[
     /* nt */ js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[_, _], fpDashTsLib.libHKTMod.HKT[M, _]], 
     /* fa */ Free[_, _], 

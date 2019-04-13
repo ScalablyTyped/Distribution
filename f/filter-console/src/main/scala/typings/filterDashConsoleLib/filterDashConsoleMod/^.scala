@@ -27,7 +27,7 @@ object ^ extends js.Object {
     excludePatterns: js.Array[
       java.lang.String | stdLib.RegExp | (js.Function1[/* output */ java.lang.String, scala.Boolean])
     ],
-    options: filterDashConsoleLib.filterDashConsoleMod.filterConsoleNs.Options
+    options: Options
   ): js.Function0[scala.Unit] = js.native
 }
 

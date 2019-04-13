@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Key
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LanguageOptions] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[natsDashHemeraLib.natsDashHemeraMod.LanguageOptions] {
   var key: js.UndefOr[java.lang.String] = js.undefined
   var messages: js.UndefOr[Anon_WrapArrays] = js.undefined
   var root: js.UndefOr[java.lang.String] = js.undefined
@@ -15,7 +15,7 @@ trait Anon_Key
 object Anon_Key {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LanguageOptions] = null,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[natsDashHemeraLib.natsDashHemeraMod.LanguageOptions] = null,
     key: java.lang.String = null,
     messages: Anon_WrapArrays = null,
     root: java.lang.String = null

@@ -13,14 +13,14 @@ trait PresignerOptions extends js.Object {
   /**
     * An optional pre-configured instance of the AWS.Polly service object to use for requests. The object may bound parameters used by the presigner.
     */
-  var service: js.UndefOr[awsDashSdkLib.clientsPollyMod.namespaced] = js.undefined
+  var service: js.UndefOr[awsDashSdkLib.clientsPollyMod.^] = js.undefined
 }
 
 object PresignerOptions {
   @scala.inline
   def apply(
     params: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    service: awsDashSdkLib.clientsPollyMod.namespaced = null
+    service: awsDashSdkLib.clientsPollyMod.^ = null
   ): PresignerOptions = {
     val __obj = js.Dynamic.literal()
     if (params != null) __obj.updateDynamic("params")(params)

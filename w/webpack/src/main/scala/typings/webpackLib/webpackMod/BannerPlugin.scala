@@ -10,15 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("webpack", "BannerPlugin")
 @js.native
-class BannerPlugin protected ()
-  extends webpackLib.webpackMod.webpackNs.BannerPlugin {
+class BannerPlugin protected () extends Plugin {
   def this(options: java.lang.String) = this()
-  def this(options: webpackLib.webpackMod.webpackNs.BannerPluginNs.Options) = this()
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(args: js.Any*): scala.Unit = js.native
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(compiler: webpackLib.webpackMod.webpackNs.Compiler): scala.Unit = js.native
+  def this(options: webpackLib.webpackMod.BannerPluginNs.Options) = this()
 }
 

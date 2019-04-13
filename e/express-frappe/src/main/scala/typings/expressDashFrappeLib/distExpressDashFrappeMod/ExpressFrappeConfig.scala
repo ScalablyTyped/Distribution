@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ExpressFrappeConfig extends js.Object {
   var bodyParser: js.UndefOr[scala.Boolean | expressDashFrappeLib.Anon_Json] = js.undefined
-  var cors: js.UndefOr[scala.Boolean | corsLib.corsMod.eNs.CorsOptions] = js.undefined
-  var errorHandler: js.UndefOr[expressLib.expressMod.eNs.ErrorRequestHandler] = js.undefined
+  var cors: js.UndefOr[scala.Boolean | corsLib.corsMod.CorsOptions] = js.undefined
+  var errorHandler: js.UndefOr[expressLib.expressMod.ErrorRequestHandler] = js.undefined
   var io: js.UndefOr[ExpressFrappeSocketIOConfig] = js.undefined
-  var middleware: js.UndefOr[js.Array[expressLib.expressMod.eNs.RequestHandler]] = js.undefined
+  var middleware: js.UndefOr[js.Array[expressLib.expressMod.RequestHandler]] = js.undefined
   var morgan: js.UndefOr[scala.Boolean] = js.undefined
   var routes: js.UndefOr[
     js.Array[expressDashRoutersLib.distExpressDashRoutersMod.RouteConfig] | expressDashRoutersLib.distExpressDashRoutersMod.RouteConfigAlternative
@@ -22,10 +22,10 @@ object ExpressFrappeConfig {
   @scala.inline
   def apply(
     bodyParser: scala.Boolean | expressDashFrappeLib.Anon_Json = null,
-    cors: scala.Boolean | corsLib.corsMod.eNs.CorsOptions = null,
-    errorHandler: expressLib.expressMod.eNs.ErrorRequestHandler = null,
+    cors: scala.Boolean | corsLib.corsMod.CorsOptions = null,
+    errorHandler: expressLib.expressMod.ErrorRequestHandler = null,
     io: ExpressFrappeSocketIOConfig = null,
-    middleware: js.Array[expressLib.expressMod.eNs.RequestHandler] = null,
+    middleware: js.Array[expressLib.expressMod.RequestHandler] = null,
     morgan: js.UndefOr[scala.Boolean] = js.undefined,
     routes: js.Array[expressDashRoutersLib.distExpressDashRoutersMod.RouteConfig] | expressDashRoutersLib.distExpressDashRoutersMod.RouteConfigAlternative = null,
     static: java.lang.String | expressDashFrappeLib.Anon_Options = null

@@ -128,8 +128,6 @@ object ^ extends js.Object {
   val ReinhardToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
   val RepeatWrapping: threeLib.srcConstantsMod.Wrapping = js.native
   val ReverseSubtractEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
-  var ShaderChunk: threeLib.Anon_Alphamapfragment = js.native
-  var ShaderLib: threeLib.Anon_Basic = js.native
   val ShortType: threeLib.srcConstantsMod.TextureDataType = js.native
   val SmoothShading: threeLib.srcConstantsMod.Shading = js.native
   val SphericalReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
@@ -144,7 +142,6 @@ object ^ extends js.Object {
   val TrianglesDrawMode: threeLib.srcConstantsMod.TrianglesDrawModes = js.native
   val UVMapping: threeLib.srcConstantsMod.Mapping = js.native
   val Uncharted2ToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
-  var UniformsLib: threeLib.Anon_Aomap = js.native
   val UnsignedByteType: threeLib.srcConstantsMod.TextureDataType = js.native
   val UnsignedInt248Type: threeLib.srcConstantsMod.PixelType = js.native
   val UnsignedIntType: threeLib.srcConstantsMod.TextureDataType = js.native

@@ -8,79 +8,79 @@ import scala.scalajs.js.annotation._
 object opentokLibStrings {
   @js.native
   sealed trait always
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveMode
+    extends opentokLib.opentokMod.ArchiveMode
   
   @js.native
   sealed trait available
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
+    extends opentokLib.opentokMod.ArchiveStatus
   
   @js.native
   sealed trait bestFit extends js.Object
   
   @js.native
   sealed trait composed
-    extends opentokLib.opentokMod.OpenTokNs.OutputMode
+    extends opentokLib.opentokMod.OutputMode
   
   @js.native
   sealed trait custom extends js.Object
   
   @js.native
   sealed trait expired
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
+    extends opentokLib.opentokMod.ArchiveStatus
   
   @js.native
   sealed trait failed
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
+    extends opentokLib.opentokMod.ArchiveStatus
   
   @js.native
   sealed trait horizontalPresentation extends js.Object
   
   @js.native
   sealed trait individual
-    extends opentokLib.opentokMod.OpenTokNs.OutputMode
+    extends opentokLib.opentokMod.OutputMode
   
   @js.native
   sealed trait manual
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveMode
+    extends opentokLib.opentokMod.ArchiveMode
   
   @js.native
   sealed trait moderator
-    extends opentokLib.opentokMod.OpenTokNs.Role
+    extends opentokLib.opentokMod.Role
   
   @js.native
   sealed trait paused
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
+    extends opentokLib.opentokMod.ArchiveStatus
   
   @js.native
   sealed trait pip extends js.Object
   
   @js.native
   sealed trait publisher
-    extends opentokLib.opentokMod.OpenTokNs.Role
+    extends opentokLib.opentokMod.Role
   
   @js.native
   sealed trait relayed
-    extends opentokLib.opentokMod.OpenTokNs.MediaMode
+    extends opentokLib.opentokMod.MediaMode
   
   @js.native
   sealed trait routed
-    extends opentokLib.opentokMod.OpenTokNs.MediaMode
+    extends opentokLib.opentokMod.MediaMode
   
   @js.native
   sealed trait started
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
+    extends opentokLib.opentokMod.ArchiveStatus
   
   @js.native
   sealed trait stopped
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
+    extends opentokLib.opentokMod.ArchiveStatus
   
   @js.native
   sealed trait subscriber
-    extends opentokLib.opentokMod.OpenTokNs.Role
+    extends opentokLib.opentokMod.Role
   
   @js.native
   sealed trait uploaded
-    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
+    extends opentokLib.opentokMod.ArchiveStatus
   
   @js.native
   sealed trait verticalPresentation extends js.Object

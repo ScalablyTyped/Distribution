@@ -35,11 +35,11 @@ trait Anon_Default extends js.Object {
   	*/
   def apply[ValueType, ReducedValueType](
     input: stdLib.Iterable[js.Thenable[ValueType] | ValueType],
-    reducer: pDashReduceLib.pDashReduceMod.pReduceNs.ReducerFunction[ValueType, ReducedValueType]
+    reducer: pDashReduceLib.pDashReduceMod.ReducerFunction[ValueType, ReducedValueType]
   ): js.Promise[ReducedValueType] = js.native
   def apply[ValueType, ReducedValueType](
     input: stdLib.Iterable[js.Thenable[ValueType] | ValueType],
-    reducer: pDashReduceLib.pDashReduceMod.pReduceNs.ReducerFunction[ValueType, ReducedValueType],
+    reducer: pDashReduceLib.pDashReduceMod.ReducerFunction[ValueType, ReducedValueType],
     initialValue: ReducedValueType
   ): js.Promise[ReducedValueType] = js.native
 }

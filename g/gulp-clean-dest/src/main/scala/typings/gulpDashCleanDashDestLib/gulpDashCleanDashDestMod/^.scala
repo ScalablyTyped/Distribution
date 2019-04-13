@@ -14,9 +14,6 @@ object ^ extends js.Object {
     * @param options Options for the cleaning process
     */
   def apply(destination: java.lang.String): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(
-    destination: java.lang.String,
-    options: gulpDashCleanDashDestLib.gulpDashCleanDashDestMod.gulpCleanDestNs.Options
-  ): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(destination: java.lang.String, options: Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

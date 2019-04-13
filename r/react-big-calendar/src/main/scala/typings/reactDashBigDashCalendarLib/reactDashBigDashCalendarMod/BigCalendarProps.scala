@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
-  extends reactLib.reactMod.ReactNs.Props[BigCalendar[TEvent, TResource]] {
+  extends reactLib.reactMod.Props[BigCalendar[TEvent, TResource]] {
   var allDayAccessor: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var components: js.UndefOr[Components[TEvent]] = js.undefined
@@ -16,7 +16,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var defaultDate: js.UndefOr[stdLib.Date] = js.undefined
   var defaultView: js.UndefOr[View] = js.undefined
   var drilldownView: js.UndefOr[View | scala.Null] = js.undefined
-  var elementProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
+  var elementProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
   var endAccessor: js.UndefOr[java.lang.String] = js.undefined
   var eventPropGetter: js.UndefOr[EventPropGetter[TEvent]] = js.undefined
   var events: js.UndefOr[js.Array[TEvent]] = js.undefined
@@ -39,7 +39,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onDoubleClickEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -56,7 +56,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onSelectEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -96,7 +96,7 @@ object BigCalendarProps {
   def apply[TEvent /* <: Event */, TResource /* <: js.Object */](
     localizer: DateLocalizer,
     allDayAccessor: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     components: Components[TEvent] = null,
     culture: java.lang.String = null,
@@ -105,30 +105,30 @@ object BigCalendarProps {
     defaultDate: stdLib.Date = null,
     defaultView: View = null,
     drilldownView: View = null,
-    elementProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
+    elementProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     endAccessor: java.lang.String = null,
     eventPropGetter: EventPropGetter[TEvent] = null,
     events: js.Array[TEvent] = null,
     formats: Formats = null,
     getDrilldownView: (/* targetDate */ stdLib.Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => scala.Unit = null,
     getNow: () => stdLib.Date = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     length: scala.Int | scala.Double = null,
     longPressThreshold: scala.Int | scala.Double = null,
     max: stringOrDate = null,
     messages: Messages = null,
     min: stringOrDate = null,
-    onDoubleClickEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
+    onDoubleClickEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
     onDrillDown: (/* date */ stdLib.Date, /* view */ View) => scala.Unit = null,
     onNavigate: (/* newDate */ stdLib.Date, /* view */ View, /* action */ Navigate) => scala.Unit = null,
     onRangeChange: /* range */ js.Array[stdLib.Date | reactDashBigDashCalendarLib.Anon_EndStart] => scala.Unit = null,
-    onSelectEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
+    onSelectEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
     onSelectSlot: /* slotInfo */ reactDashBigDashCalendarLib.Anon_Action => scala.Unit = null,
     onSelecting: /* range */ reactDashBigDashCalendarLib.Anon_EndStart => js.UndefOr[scala.Boolean | scala.Null] = null,
     onView: /* view */ View => scala.Unit = null,
     popup: js.UndefOr[scala.Boolean] = js.undefined,
     popupOffset: scala.Double | reactDashBigDashCalendarLib.Anon_X = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[BigCalendar[TEvent, TResource]] = null,
+    ref: reactLib.reactMod.LegacyRef[BigCalendar[TEvent, TResource]] = null,
     resourceAccessor: java.lang.String = null,
     resourceIdAccessor: java.lang.String = null,
     resourceTitleAccessor: java.lang.String = null,

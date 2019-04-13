@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof any ]:? any[P]} */ trait TransProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var components: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var components: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined
   var defaults: js.UndefOr[java.lang.String] = js.undefined
-  var i18n: js.UndefOr[i18nextLib.i18nextMod.i18nextNs.i18n] = js.undefined
+  var i18n: js.UndefOr[i18nextLib.i18nextMod.i18n] = js.undefined
   var i18nKey: js.UndefOr[java.lang.String] = js.undefined
   var ns: js.UndefOr[Namespace] = js.undefined
-  var parent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var parent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var tOptions: js.UndefOr[js.Object] = js.undefined
   var values: js.UndefOr[js.Object] = js.undefined
 }
@@ -22,14 +22,14 @@ import scala.scalajs.js.annotation._
 object TransProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    components: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode = null,
+    components: js.Array[reactLib.reactMod.ReactNode] = null,
     count: scala.Int | scala.Double = null,
     defaults: java.lang.String = null,
-    i18n: i18nextLib.i18nextMod.i18nextNs.i18n = null,
+    i18n: i18nextLib.i18nextMod.i18n = null,
     i18nKey: java.lang.String = null,
     ns: Namespace = null,
-    parent: reactLib.reactMod.ReactNs.ReactNode = null,
+    parent: reactLib.reactMod.ReactNode = null,
     tOptions: js.Object = null,
     values: js.Object = null
   ): TransProps = {

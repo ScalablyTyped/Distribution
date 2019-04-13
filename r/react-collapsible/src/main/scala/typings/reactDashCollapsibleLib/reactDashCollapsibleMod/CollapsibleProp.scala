@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CollapsibleProp extends js.Object {
   var accordionPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var children: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var classParentString: js.UndefOr[java.lang.String] = js.undefined
   var contentInnerClassName: js.UndefOr[java.lang.String] = js.undefined
   var contentOuterClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -28,23 +28,21 @@ trait CollapsibleProp extends js.Object {
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var transitionCloseTime: js.UndefOr[scala.Double] = js.undefined
   var transitionTime: js.UndefOr[scala.Double] = js.undefined
-  var trigger: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var trigger: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var triggerClassName: js.UndefOr[java.lang.String] = js.undefined
   var triggerDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var triggerOpenedClassName: js.UndefOr[java.lang.String] = js.undefined
-  var triggerSibling: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | java.lang.String | js.Function0[scala.Unit]
-  ] = js.undefined
+  var triggerSibling: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String | js.Function0[scala.Unit]] = js.undefined
   var triggerStyle: js.UndefOr[js.Object] = js.undefined
   var triggerTagName: js.UndefOr[java.lang.String] = js.undefined
-  var triggerWhenOpen: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var triggerWhenOpen: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object CollapsibleProp {
   @scala.inline
   def apply(
     accordionPosition: java.lang.String | scala.Double = null,
-    children: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    children: java.lang.String | reactLib.reactMod.ReactNode = null,
     classParentString: java.lang.String = null,
     contentInnerClassName: java.lang.String = null,
     contentOuterClassName: java.lang.String = null,
@@ -61,14 +59,14 @@ object CollapsibleProp {
     tabIndex: scala.Int | scala.Double = null,
     transitionCloseTime: scala.Int | scala.Double = null,
     transitionTime: scala.Int | scala.Double = null,
-    trigger: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    trigger: java.lang.String | reactLib.reactMod.ReactNode = null,
     triggerClassName: java.lang.String = null,
     triggerDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     triggerOpenedClassName: java.lang.String = null,
-    triggerSibling: reactLib.reactMod.ReactNs.ReactNode | java.lang.String | js.Function0[scala.Unit] = null,
+    triggerSibling: reactLib.reactMod.ReactNode | java.lang.String | js.Function0[scala.Unit] = null,
     triggerStyle: js.Object = null,
     triggerTagName: java.lang.String = null,
-    triggerWhenOpen: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null
+    triggerWhenOpen: java.lang.String | reactLib.reactMod.ReactNode = null
   ): CollapsibleProp = {
     val __obj = js.Dynamic.literal()
     if (accordionPosition != null) __obj.updateDynamic("accordionPosition")(accordionPosition.asInstanceOf[js.Any])

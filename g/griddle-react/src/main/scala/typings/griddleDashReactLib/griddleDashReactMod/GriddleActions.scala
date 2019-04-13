@@ -17,6 +17,7 @@ trait GriddleActions
 object GriddleActions {
   @scala.inline
   def apply(
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.UndefOr[reduxLib.reduxMod.ActionCreator[js.Any]]] = null,
     onGetPage: /* pageNumber */ scala.Double => scala.Unit = null,
     onNext: () => scala.Unit = null,
     onPrevious: () => scala.Unit = null,
@@ -24,6 +25,7 @@ object GriddleActions {
     setFilter: /* filter */ GriddleFilter => scala.Unit = null
   ): GriddleActions = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onGetPage != null) __obj.updateDynamic("onGetPage")(js.Any.fromFunction1(onGetPage))
     if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
     if (onPrevious != null) __obj.updateDynamic("onPrevious")(js.Any.fromFunction0(onPrevious))

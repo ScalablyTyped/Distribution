@@ -19,4 +19,5 @@ package object sanctuaryMod {
   type Ord[A] = Setoid[A]
   type Plus[A] = Alt[A]
   type Profunctor[B, C] = Functor[C]
+  type StrMap[A] = org.scalablytyped.runtime.StringDictionary[A]
 }

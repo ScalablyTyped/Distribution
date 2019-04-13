@@ -8,68 +8,68 @@ import scala.scalajs.js.annotation._
 object betterDashQueueLibStrings {
   @js.native
   sealed trait accept
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.TicketEvent
+    extends betterDashQueueLib.betterDashQueueMod.TicketEvent
   
   @js.native
   sealed trait batch_failed
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait batch_finish
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait batch_progress
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait error
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
-       with betterDashQueueLib.betterDashQueueMod.BetterQueueNs.TicketEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
+       with betterDashQueueLib.betterDashQueueMod.TicketEvent
   
   @js.native
   sealed trait failed
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.TicketEvent
+    extends betterDashQueueLib.betterDashQueueMod.TicketEvent
   
   @js.native
   sealed trait finish
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.TicketEvent
+    extends betterDashQueueLib.betterDashQueueMod.TicketEvent
   
   @js.native
   sealed trait progress
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.TicketEvent
+    extends betterDashQueueLib.betterDashQueueMod.TicketEvent
   
   @js.native
   sealed trait queued
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.TicketEvent
+    extends betterDashQueueLib.betterDashQueueMod.TicketEvent
   
   @js.native
   sealed trait started
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.TicketEvent
+    extends betterDashQueueLib.betterDashQueueMod.TicketEvent
   
   @js.native
   sealed trait task_accepted
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait task_failed
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait task_finish
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait task_progress
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait task_queued
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
   sealed trait task_started
-    extends betterDashQueueLib.betterDashQueueMod.BetterQueueNs.QueueEvent
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @scala.inline
   def accept: accept = "accept".asInstanceOf[accept]

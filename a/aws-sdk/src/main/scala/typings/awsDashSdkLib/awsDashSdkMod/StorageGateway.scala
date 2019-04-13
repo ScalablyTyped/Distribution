@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class StorageGateway ()
   extends awsDashSdkLib.clientsAllMod.StorageGateway {
-  def this(options: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsStoragegatewayMod.ClientConfiguration) = this()
 }
 

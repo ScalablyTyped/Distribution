@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class EC2 ()
   extends awsDashSdkLib.awsDashSdkMod.EC2 {
-  def this(options: awsDashSdkLib.clientsEc2Mod.EC2Ns.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsEc2Mod.ClientConfiguration) = this()
 }
 

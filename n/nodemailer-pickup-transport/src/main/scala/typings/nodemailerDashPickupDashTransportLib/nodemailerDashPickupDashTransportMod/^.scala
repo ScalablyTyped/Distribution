@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("nodemailer-pickup-transport", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    options: nodemailerDashPickupDashTransportLib.nodemailerDashPickupDashTransportMod.PickupTransportNs.Options
-  ): nodemailerLib.nodemailerMod.Transport = js.native
+  def apply(options: Options): nodemailerLib.nodemailerMod.Transport = js.native
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "ModalFooter")
 @js.native
 class ModalFooter ()
-  extends reactDashBootstrapLib.libModalFooterMod.namespaced
+  extends reactDashBootstrapLib.libModalFooterMod.^
 

@@ -25,3 +25,8 @@ class FolderListingColumn ()
   override def Clone(): mfilesLib.IFolderListingColumn = js.native
 }
 
+@JSGlobal("MFiles.FolderListingColumn")
+@js.native
+object FolderListingColumn
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderListingColumn]
+

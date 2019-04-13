@@ -20,6 +20,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(url: java.lang.String): java.lang.String = js.native
-  def apply(url: java.lang.String, options: normalizeDashUrlLib.normalizeDashUrlMod.normalizeUrlNs.Options): java.lang.String = js.native
+  def apply(url: java.lang.String, options: normalizeDashUrlLib.normalizeDashUrlMod.Options): java.lang.String = js.native
 }
 

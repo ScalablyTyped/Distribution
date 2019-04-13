@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StateInline
-  extends markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced {
+  extends markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.^ {
   /**
     * Stores `{ start: end }` pairs. Useful for backtrack
     * optimization of pairs parse (emphasis, strikes).
     */
   var cache: org.scalablytyped.runtime.NumberDictionary[scala.Double] = js.native
   /** Emphasis-like delimiters */
-  var delimiters: js.Array[markdownDashItLib.libMod.MarkdownItNs.Delimiter] = js.native
+  var delimiters: js.Array[markdownDashItLib.libMod.Delimiter] = js.native
   var pending: java.lang.String = js.native
   var pendingLevel: scala.Double = js.native
   /** Index of the first character of this token. */
@@ -25,9 +25,9 @@ trait StateInline
     * Push new token to "stream".
     * If pending text exists, flush it as text token.
     */
-  def push(`type`: java.lang.String, tag: java.lang.String, nesting: scala.Double): markdownDashItLib.libTokenMod.namespaced = js.native
+  def push(`type`: java.lang.String, tag: java.lang.String, nesting: scala.Double): markdownDashItLib.libTokenMod.^ = js.native
   /** Flush pending text */
-  def pushPending(): markdownDashItLib.libTokenMod.namespaced = js.native
+  def pushPending(): markdownDashItLib.libTokenMod.^ = js.native
   /**
     * Scan a sequence of emphasis-like markers and determine whether
     * it can start an emphasis sequence or end an emphasis sequence.

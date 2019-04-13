@@ -17,12 +17,7 @@ trait SumoLogger extends js.Object {
     * Set the configuration for sending logs. Options are listed in the next section.
     * In the Node.js module, configuration options are sent when instantiating the object.
     */
-  var config: js.UndefOr[
-    js.Function1[
-      /* options */ sumoDashLoggerLib.sumoDashLoggerMod.SumoLoggerNs.SumoLoggerOptions, 
-      scala.Unit
-    ]
-  ] = js.native
+  var config: js.UndefOr[js.Function1[/* options */ SumoLoggerOptions, scala.Unit]] = js.native
   /**
     * Empty the current queue of logs
     */
@@ -41,10 +36,7 @@ trait SumoLogger extends js.Object {
     * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
     */
   def log(message: java.lang.String): scala.Unit = js.native
-  def log(
-    message: java.lang.String,
-    options: sumoDashLoggerLib.sumoDashLoggerMod.SumoLoggerNs.PerMessageOptions
-  ): scala.Unit = js.native
+  def log(message: java.lang.String, options: PerMessageOptions): scala.Unit = js.native
   /**
     * Set a log message to be sent.
     * All logs are sent as JSON objects.
@@ -52,7 +44,7 @@ trait SumoLogger extends js.Object {
     * If you call the function with a JSON object, each field in the object is included as a separate field.
     * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
     */
-  def log[T /* <: js.Object */](event: stdLib.Partial[sumoDashLoggerLib.sumoDashLoggerMod.SumoLoggerNs.PerMessageOptions] with T): scala.Unit = js.native
+  def log[T /* <: js.Object */](event: stdLib.Partial[PerMessageOptions] with T): scala.Unit = js.native
   /**
     * Start sending batched logs at the preconfigured interval
     */

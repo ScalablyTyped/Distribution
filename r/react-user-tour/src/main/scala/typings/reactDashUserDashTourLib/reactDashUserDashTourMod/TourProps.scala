@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TourProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Any] {
+  extends reactLib.reactMod.HTMLAttributes[js.Any] {
   /**
     A boolean value representing whether or not the tour should currently be displayed
     */
@@ -103,7 +103,7 @@ object TourProps {
     onNext: js.Function,
     step: scala.Double,
     steps: js.Array[TourStep],
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Any] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[js.Any] = null,
     arrow: js.Any = null,
     arrowColor: java.lang.String = null,
     arrowSize: scala.Int | scala.Double = null,

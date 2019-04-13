@@ -21,3 +21,8 @@ class ObjectTypeTargetsForBrowsing ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ObjectTypeTargetsForBrowsing")
+@js.native
+object ObjectTypeTargetsForBrowsing
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectTypeTargetsForBrowsing]
+

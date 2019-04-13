@@ -1,14 +1,13 @@
 organization := "org.scalablytyped"
 name := "i18next-ko"
-version := "3.0-dt-20181017Z-edb120"
+version := "3.0-dt-20181017Z-61c8a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "i18next" % "12.1-dt-20181126Z-c08371",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190322Z-5d9cf1",
-  "org.scalablytyped" %%% "std" % "3.4-d52857")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "i18next" % "12.1-dt-20181126Z-aaef30",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190412Z-2a6c06",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -29,3 +29,8 @@ class FolderUIState ()
   override var ShowRightPaneBar: scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.FolderUIState")
+@js.native
+object FolderUIState
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderUIState]
+

@@ -102,12 +102,12 @@ class TemplateFactory ()
     * @return {string} The template as a string: "<component-name input1='::$resolve.foo'></component-name>".
     */
   def makeComponentTemplate(
-    uiView: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    uiView: angularLib.angularMod.IAugmentedJQuery,
     context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext,
     component: java.lang.String
   ): java.lang.String = js.native
   def makeComponentTemplate(
-    uiView: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    uiView: angularLib.angularMod.IAugmentedJQuery,
     context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext,
     component: java.lang.String,
     bindings: js.Any

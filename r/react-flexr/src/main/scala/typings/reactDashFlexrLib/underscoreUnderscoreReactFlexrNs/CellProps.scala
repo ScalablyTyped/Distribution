@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CellProps
-  extends reactLib.reactMod.ReactNs.Props[Cell] {
+  extends reactLib.reactMod.Props[Cell] {
   /**
     * Vertical Align This Cell: top, center, bottom
     */
@@ -51,15 +51,15 @@ object CellProps {
   @scala.inline
   def apply(
     align: reactDashFlexrLib.reactDashFlexrLibStrings.top | reactDashFlexrLib.reactDashFlexrLibStrings.center | reactDashFlexrLib.reactDashFlexrLibStrings.bottom = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     desk: java.lang.String | scala.Double = null,
     flex: js.UndefOr[scala.Boolean] = js.undefined,
     gutter: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     lap: java.lang.String | scala.Double = null,
     palm: java.lang.String | scala.Double = null,
     portable: java.lang.String | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Cell] = null,
+    ref: reactLib.reactMod.LegacyRef[Cell] = null,
     size: java.lang.String | scala.Double = null
   ): CellProps = {
     val __obj = js.Dynamic.literal()

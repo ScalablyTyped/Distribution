@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class StateTransitionsForClient ()
   extends mfilesLib.IStateTransitionsForClient
 
+@JSGlobal("MFiles.StateTransitionsForClient")
+@js.native
+object StateTransitionsForClient
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStateTransitionsForClient]
+

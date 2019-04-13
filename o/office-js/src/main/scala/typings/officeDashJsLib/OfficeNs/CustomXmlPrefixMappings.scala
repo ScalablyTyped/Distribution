@@ -7,24 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents a collection of CustomXmlPart objects.
-  *
+  * 
   * @remarks
-  *
-  * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this interface.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-  *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-  *  </table>
+  * **Hosts**: Word
   */
 @js.native
 trait CustomXmlPrefixMappings extends js.Object {
@@ -32,6 +17,9 @@ trait CustomXmlPrefixMappings extends js.Object {
     * Asynchronously adds a prefix to namespace mapping to use when querying an item.
     *
     * @remarks
+    * 
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * 
     * If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     *
     * @param prefix Specifies the prefix to add to the prefix mapping list. Required.
@@ -56,7 +44,9 @@ trait CustomXmlPrefixMappings extends js.Object {
     * Asynchronously gets the namespace mapped to the specified prefix.
     *
     * @remarks
-    *
+    * 
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * 
     * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one 
     * added or used by the data store internally, in which case it will return an error.
     *
@@ -80,7 +70,9 @@ trait CustomXmlPrefixMappings extends js.Object {
     * Asynchronously gets the prefix for the specified namespace.
     *
     * @remarks
-    *
+    * 
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * 
     * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in 
     * the namespace manager, the method returns the first prefix that matches the supplied namespace.
     *

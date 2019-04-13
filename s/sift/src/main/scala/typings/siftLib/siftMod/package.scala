@@ -18,6 +18,7 @@ package object siftMod {
     scala.Boolean
   ]
   type KeyOrValue[T /* <: SupportedTypes */] = T with (/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any)
+  type PluginDefinition[T] = org.scalablytyped.runtime.StringDictionary[js.Function2[/* a */ T, /* b */ T, scala.Boolean | scala.Double]]
   type PluginFunction[T] = js.Function1[/* sift */ Sift, PluginDefinition[T]]
   type SiftQuery[T /* <: SupportedTypes */] = ExternalQuery[T] with InternalQuery[T]
   type SupportedTypes = js.Array[

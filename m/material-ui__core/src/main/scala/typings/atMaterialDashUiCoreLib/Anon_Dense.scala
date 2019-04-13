@@ -14,7 +14,7 @@ trait Anon_Dense extends js.Object {
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.normal
   ] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
-  var startAdornment: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var startAdornment: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object Anon_Dense {
@@ -26,7 +26,7 @@ object Anon_Dense {
     focused: js.UndefOr[scala.Boolean] = js.undefined,
     margin: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.normal = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
-    startAdornment: reactLib.reactMod.ReactNs.ReactNode = null
+    startAdornment: reactLib.reactMod.ReactNode = null
   ): Anon_Dense = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

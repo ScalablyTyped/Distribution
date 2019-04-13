@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pretty-error", "ParsedError")
 @js.native
-class ParsedError protected ()
-  extends prettyDashErrorLib.prettyDashErrorMod.PrettyErrorNs.ParsedError {
+class ParsedError protected () extends js.Object {
   def this(error: stdLib.Error) = this()
 }
 

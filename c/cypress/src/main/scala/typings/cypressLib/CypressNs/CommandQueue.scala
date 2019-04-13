@@ -21,10 +21,11 @@ object CommandQueue {
     create: () => CommandQueue,
     get: () => js.Any,
     logs: js.Any => js.Any,
-    toJSON: () => js.Array[java.lang.String]
+    toJSON: () => js.Array[java.lang.String],
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): CommandQueue = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), create = js.Any.fromFunction0(create), get = js.Any.fromFunction0(get), logs = js.Any.fromFunction1(logs), toJSON = js.Any.fromFunction0(toJSON))
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CommandQueue]
   }
 }

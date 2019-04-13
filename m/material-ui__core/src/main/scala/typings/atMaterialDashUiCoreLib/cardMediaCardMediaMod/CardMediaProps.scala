@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardMediaProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardMediaProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[CardMediaClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[CardMediaProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[CardMediaProps]] = js.undefined
   var image: js.UndefOr[java.lang.String] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -19,11 +19,11 @@ object CardMediaProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardMediaClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[CardMediaProps] = null,
+    component: reactLib.reactMod.ReactType[CardMediaProps] = null,
     image: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     src: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CardMediaProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

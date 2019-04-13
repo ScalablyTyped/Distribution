@@ -20,6 +20,5 @@ object TreeEntryNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE with scala.Double] = js.native
   }
   
-  type FILEMODE = nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE
 }
 

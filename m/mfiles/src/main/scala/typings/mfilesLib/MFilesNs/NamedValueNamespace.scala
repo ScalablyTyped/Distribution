@@ -17,3 +17,8 @@ class NamedValueNamespace ()
   override def Clone(): mfilesLib.INamedValueNamespace = js.native
 }
 
+@JSGlobal("MFiles.NamedValueNamespace")
+@js.native
+object NamedValueNamespace
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.INamedValueNamespace]
+

@@ -40,7 +40,6 @@ object ^ extends js.Object {
   val italic: Style = js.native
   val magenta: Style = js.native
   val magentaBright: Style = js.native
-  val options: coloretteLib.Anon_Enabled = js.native
   val red: Style = js.native
   val redBright: Style = js.native
   val reset: Style = js.native

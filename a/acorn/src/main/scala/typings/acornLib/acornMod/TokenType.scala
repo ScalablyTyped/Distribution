@@ -7,29 +7,18 @@ import scala.scalajs.js.annotation._
 
 @JSImport("acorn", "TokenType")
 @js.native
-class TokenType protected ()
-  extends acornLib.acornMod.acornNs.TokenType {
+class TokenType protected () extends js.Object {
   def this(label: java.lang.String) = this()
-  def this(label: java.lang.String, conf: acornLib.acornMod.acornNs.TokeTypeConfig) = this()
-  /* CompleteClass */
-  override var beforeExpr: scala.Boolean = js.native
-  /* CompleteClass */
-  override var binop: scala.Double = js.native
-  /* CompleteClass */
-  override var isAssign: scala.Boolean = js.native
-  /* CompleteClass */
-  override var isLoop: scala.Boolean = js.native
-  /* CompleteClass */
-  override var keyword: java.lang.String = js.native
-  /* CompleteClass */
-  override var label: java.lang.String = js.native
-  /* CompleteClass */
-  override var postfix: scala.Boolean = js.native
-  /* CompleteClass */
-  override var prefix: scala.Boolean = js.native
-  /* CompleteClass */
-  override var startsExpr: scala.Boolean = js.native
-  /* CompleteClass */
-  override def updateContext(prevType: acornLib.acornMod.acornNs.TokenType): scala.Unit = js.native
+  def this(label: java.lang.String, conf: TokeTypeConfig) = this()
+  var beforeExpr: scala.Boolean = js.native
+  var binop: scala.Double = js.native
+  var isAssign: scala.Boolean = js.native
+  var isLoop: scala.Boolean = js.native
+  var keyword: java.lang.String = js.native
+  var label: java.lang.String = js.native
+  var postfix: scala.Boolean = js.native
+  var prefix: scala.Boolean = js.native
+  var startsExpr: scala.Boolean = js.native
+  def updateContext(prevType: TokenType): scala.Unit = js.native
 }
 

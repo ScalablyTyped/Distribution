@@ -96,6 +96,5 @@ object CloudNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[parseLib.ParseNs.CloudNs.ReadPreferenceOption with java.lang.String] = js.native
   }
   
-  type ReadPreferenceOption = parseLib.ParseNs.CloudNs.ReadPreferenceOption
 }
 

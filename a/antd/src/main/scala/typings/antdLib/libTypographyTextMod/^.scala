@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/typography/Text", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.SFC[TextProps] = js.native
+  val default: reactLib.reactMod.SFC[TextProps] = js.native
 }
 

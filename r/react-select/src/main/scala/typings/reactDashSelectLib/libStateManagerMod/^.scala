@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select/lib/stateManager", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(SelectComponent: reactLib.reactMod.ReactNs.ComponentType[_]): StateManager[_] = js.native
-  def manageState(SelectComponent: reactLib.reactMod.ReactNs.ComponentType[_]): StateManager[_] = js.native
+  def default(SelectComponent: reactLib.reactMod.ComponentType[_]): StateManager[_] = js.native
+  def manageState(SelectComponent: reactLib.reactMod.ComponentType[_]): StateManager[_] = js.native
 }
 

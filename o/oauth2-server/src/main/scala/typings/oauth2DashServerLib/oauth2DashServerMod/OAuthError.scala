@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("oauth2-server", "OAuthError")
 @js.native
 class OAuthError protected ()
-  extends oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.OAuthError {
+  extends stdLib.Error {
   def this(messageOrError: java.lang.String) = this()
   def this(messageOrError: stdLib.Error) = this()
   def this(messageOrError: java.lang.String, properties: js.Object) = this()
@@ -16,8 +16,7 @@ class OAuthError protected ()
   /**
     * The HTTP error code.
     */
-  /* CompleteClass */
-  override var code: scala.Double = js.native
+  var code: scala.Double = js.native
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

@@ -15,22 +15,22 @@ class Presigner () extends js.Object {
   /**
     * Generate a signed URL.
     */
-  def getSynthesizeSpeechUrl(params: awsDashSdkLib.clientsPollyMod.PollyNs.SynthesizeSpeechInput): java.lang.String = js.native
+  def getSynthesizeSpeechUrl(params: awsDashSdkLib.clientsPollyMod.SynthesizeSpeechInput): java.lang.String = js.native
   /**
     * Generate a signed URL.
     */
   def getSynthesizeSpeechUrl(
-    params: awsDashSdkLib.clientsPollyMod.PollyNs.SynthesizeSpeechInput,
+    params: awsDashSdkLib.clientsPollyMod.SynthesizeSpeechInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Generate a signed URL.
     */
   def getSynthesizeSpeechUrl(
-    params: awsDashSdkLib.clientsPollyMod.PollyNs.SynthesizeSpeechInput,
+    params: awsDashSdkLib.clientsPollyMod.SynthesizeSpeechInput,
     error: scala.Double,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def getSynthesizeSpeechUrl(params: awsDashSdkLib.clientsPollyMod.PollyNs.SynthesizeSpeechInput, expires: scala.Double): java.lang.String = js.native
+  def getSynthesizeSpeechUrl(params: awsDashSdkLib.clientsPollyMod.SynthesizeSpeechInput, expires: scala.Double): java.lang.String = js.native
 }
 

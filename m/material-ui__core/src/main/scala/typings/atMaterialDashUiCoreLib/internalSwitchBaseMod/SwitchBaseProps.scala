@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation._
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-  var checkedIcon: reactLib.reactMod.ReactNs.ReactNode
+  var checkedIcon: reactLib.reactMod.ReactNode
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disableRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: reactLib.reactMod.ReactNs.ReactNode
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement]] = js.undefined
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
+  var icon: reactLib.reactMod.ReactNode
+  var inputProps: js.UndefOr[reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement], 
       /* checked */ scala.Boolean, 
       scala.Unit
     ]
@@ -35,8 +35,8 @@ import scala.scalajs.js.annotation._
 object SwitchBaseProps {
   @scala.inline
   def apply(
-    checkedIcon: reactLib.reactMod.ReactNs.ReactNode,
-    icon: reactLib.reactMod.ReactNs.ReactNode,
+    checkedIcon: reactLib.reactMod.ReactNode,
+    icon: reactLib.reactMod.ReactNode,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     checked: scala.Boolean | java.lang.String = null,
     className: java.lang.String = null,
@@ -44,14 +44,14 @@ object SwitchBaseProps {
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disableRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    inputProps: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
-    inputRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    inputProps: reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.Ref[_] = null,
     name: java.lang.String = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], /* checked */ scala.Boolean) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement], /* checked */ scala.Boolean) => scala.Unit = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     value: java.lang.String | scala.Double | scala.Boolean = null
   ): SwitchBaseProps = {

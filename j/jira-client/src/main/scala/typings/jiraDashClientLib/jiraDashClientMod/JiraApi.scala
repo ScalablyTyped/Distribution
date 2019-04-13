@@ -52,7 +52,7 @@ trait JiraApi extends js.Object {
   ): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def deleteWebhook(webhookID: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def deleteWorklog(issueId: java.lang.String, worklogId: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
-  /* private */ def doRequest(requestOptions: requestLib.requestMod.requestNs.CoreOptions): js.Promise[requestLib.requestMod.requestNs.RequestResponse] = js.native
+  /* private */ def doRequest(requestOptions: requestLib.requestMod.CoreOptions): js.Promise[requestLib.requestMod.RequestResponse] = js.native
   def findIssue(issueNumber: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def findIssue(issueNumber: java.lang.String, expand: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def findIssue(issueNumber: java.lang.String, expand: java.lang.String, fields: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native

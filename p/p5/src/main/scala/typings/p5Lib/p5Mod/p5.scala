@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
-trait p5
-  extends p5Lib.p5Mod.p5Ns.p5InstanceExtensions {
+trait p5 extends p5InstanceExtensions {
   /**
     *   Called directly after setup(), the draw() function
     *   continuously executes the lines of code contained

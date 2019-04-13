@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AllowEmpty extends js.Object {
   var allowEmpty: scala.Boolean
   var referers: js.Array[java.lang.String]
-  var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
+  var res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse
 }
 
 object Anon_AllowEmpty {
@@ -16,7 +16,7 @@ object Anon_AllowEmpty {
   def apply(
     allowEmpty: scala.Boolean,
     referers: js.Array[java.lang.String],
-    res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
+    res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse
   ): Anon_AllowEmpty = {
     val __obj = js.Dynamic.literal(allowEmpty = allowEmpty, referers = referers, res = res)
   

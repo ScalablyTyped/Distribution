@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object googleDashMapsDashReactLibComponents {
   @scala.inline
-  def Circle: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Circle].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def Circle: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Circle].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def HeatMap: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.HeatMap].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def HeatMap: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.HeatMap].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def InfoWindow: reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindowProps] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindow].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindowProps]]
+  def InfoWindow: reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindowProps] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindow].asInstanceOf[reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindowProps]]
   @scala.inline
-  def Map: reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MapProps] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Map].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MapProps]]
+  def Map: reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MapProps] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Map].asInstanceOf[reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MapProps]]
   @scala.inline
-  def Marker: reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MarkerProps] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Marker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MarkerProps]]
+  def Marker: reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MarkerProps] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Marker].asInstanceOf[reactLib.reactMod.ComponentType[googleDashMapsDashReactLib.googleDashMapsDashReactMod.MarkerProps]]
   @scala.inline
-  def Polygon: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Polygon].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def Polygon: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Polygon].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def Polyline: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Polyline].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def Polyline: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[googleDashMapsDashReactLib.googleDashMapsDashReactMod.Polyline].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
   def InfoWindowProps: googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindowProps.type = googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindowProps
   type InfoWindowProps = googleDashMapsDashReactLib.googleDashMapsDashReactMod.InfoWindowProps

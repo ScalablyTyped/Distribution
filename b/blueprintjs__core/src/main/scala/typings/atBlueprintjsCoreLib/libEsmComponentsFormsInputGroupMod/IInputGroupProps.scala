@@ -54,7 +54,7 @@ object IInputGroupProps {
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     leftIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
-    onChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLElement] = null,
+    onChange: reactLib.reactMod.FormEventHandler[stdLib.HTMLElement] = null,
     placeholder: java.lang.String = null,
     rightElement: reactLib.reactMod.Global.JSXNs.Element = null,
     round: js.UndefOr[scala.Boolean] = js.undefined,

@@ -25,3 +25,13 @@ object WebContents extends js.Object {
   def getFocusedWebContents(): electronLib.ElectronNs.WebContents = js.native
 }
 
+@JSImport("electron", "webContents")
+@js.native
+object webContents
+  extends org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.WebContents] {
+  // Docs: http://electronjs.org/docs/api/web-contents
+  def fromId(id: scala.Double): electronLib.ElectronNs.WebContents = js.native
+  def getAllWebContents(): js.Array[electronLib.ElectronNs.WebContents] = js.native
+  def getFocusedWebContents(): electronLib.ElectronNs.WebContents = js.native
+}
+

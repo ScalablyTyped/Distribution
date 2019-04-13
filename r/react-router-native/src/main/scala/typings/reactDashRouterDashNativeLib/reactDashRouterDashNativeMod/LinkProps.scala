@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait LinkProps
   extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[_]] = js.undefined
   var replace: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
   var to: historyLib.historyMod.LocationDescriptor[historyLib.historyMod.LocationState]
@@ -18,7 +18,7 @@ object LinkProps {
   def apply(
     to: historyLib.historyMod.LocationDescriptor[historyLib.historyMod.LocationState],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    component: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    component: reactLib.reactMod.ComponentType[_] = null,
     replace: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Any = null
   ): LinkProps = {

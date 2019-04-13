@@ -9,294 +9,190 @@ import scala.scalajs.js.annotation._
 trait PinpointSMSVoice
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_PinpointSMSVoice: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ClientConfiguration = js.native
+  var config_PinpointSMSVoice: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Create a new configuration set. After you create the configuration set, you can add one or more event destinations to it.
     */
-  def createConfigurationSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfigurationSet(): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetResponse, 
+      /* data */ CreateConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new configuration set. After you create the configuration set, you can add one or more event destinations to it.
     */
-  def createConfigurationSet(params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfigurationSet(params: CreateConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSet(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetRequest,
+    params: CreateConfigurationSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetResponse, 
+      /* data */ CreateConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new event destination in a configuration set.
     */
-  def createConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSetEventDestination(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationResponse, 
+      /* data */ CreateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new event destination in a configuration set.
     */
+  def createConfigurationSetEventDestination(params: CreateConfigurationSetEventDestinationRequest): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def createConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationRequest,
+    params: CreateConfigurationSetEventDestinationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationResponse, 
+      /* data */ CreateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing configuration set.
     */
-  def deleteConfigurationSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConfigurationSet(): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetResponse, 
+      /* data */ DeleteConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing configuration set.
     */
-  def deleteConfigurationSet(params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConfigurationSet(params: DeleteConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSet(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetRequest,
+    params: DeleteConfigurationSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetResponse, 
+      /* data */ DeleteConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an event destination in a configuration set.
     */
-  def deleteConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSetEventDestination(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationResponse, 
+      /* data */ DeleteConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an event destination in a configuration set.
     */
+  def deleteConfigurationSetEventDestination(params: DeleteConfigurationSetEventDestinationRequest): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def deleteConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationRequest,
+    params: DeleteConfigurationSetEventDestinationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationResponse, 
+      /* data */ DeleteConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Obtain information about an event destination, including the types of events it reports, the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
     */
-  def getConfigurationSetEventDestinations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getConfigurationSetEventDestinations(): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConfigurationSetEventDestinations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsResponse, 
+      /* data */ GetConfigurationSetEventDestinationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Obtain information about an event destination, including the types of events it reports, the Amazon Resource Name (ARN) of the destination, and the name of the event destination.
     */
+  def getConfigurationSetEventDestinations(params: GetConfigurationSetEventDestinationsRequest): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConfigurationSetEventDestinations(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def getConfigurationSetEventDestinations(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsRequest,
+    params: GetConfigurationSetEventDestinationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsResponse, 
+      /* data */ GetConfigurationSetEventDestinationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
     */
-  def listConfigurationSets(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurationSets(): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurationSets(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+      /* data */ ListConfigurationSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
     */
-  def listConfigurationSets(params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurationSets(params: ListConfigurationSetsRequest): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurationSets(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsRequest,
+    params: ListConfigurationSetsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+      /* data */ ListConfigurationSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new voice message and send it to a recipient's phone number.
     */
-  def sendVoiceMessage(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendVoiceMessage(): awsDashSdkLib.libRequestMod.Request[SendVoiceMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendVoiceMessage(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageResponse, 
+      /* data */ SendVoiceMessageResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendVoiceMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new voice message and send it to a recipient's phone number.
     */
-  def sendVoiceMessage(params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendVoiceMessage(params: SendVoiceMessageRequest): awsDashSdkLib.libRequestMod.Request[SendVoiceMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendVoiceMessage(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageRequest,
+    params: SendVoiceMessageRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageResponse, 
+      /* data */ SendVoiceMessageResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.SendVoiceMessageResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendVoiceMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update an event destination in a configuration set. An event destination is a location that you publish information about your voice calls to. For example, you can log an event to an Amazon CloudWatch destination when a call fails.
     */
-  def updateConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConfigurationSetEventDestination(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationResponse, 
+      /* data */ UpdateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update an event destination in a configuration set. An event destination is a location that you publish information about your voice calls to. For example, you can log an event to an Amazon CloudWatch destination when a call fails.
     */
+  def updateConfigurationSetEventDestination(params: UpdateConfigurationSetEventDestinationRequest): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def updateConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationRequest,
+    params: UpdateConfigurationSetEventDestinationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationResponse, 
+      /* data */ UpdateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

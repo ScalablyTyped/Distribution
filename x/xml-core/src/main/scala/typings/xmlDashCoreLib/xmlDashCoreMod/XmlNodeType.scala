@@ -5,28 +5,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait XmlNodeType extends js.Object
+
 @JSImport("xml-core", "XmlNodeType")
 @js.native
 object XmlNodeType extends js.Object {
-  /* 2 */ val Attribute: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Attribute with scala.Double = js.native
-  /* 4 */ val CDATA: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.CDATA with scala.Double = js.native
-  /* 8 */ val Comment: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Comment with scala.Double = js.native
-  /* 9 */ val Document: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Document with scala.Double = js.native
-  /* 11 */ val DocumentFragment: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.DocumentFragment with scala.Double = js.native
-  /* 10 */ val DocumentType: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.DocumentType with scala.Double = js.native
-  /* 1 */ val Element: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Element with scala.Double = js.native
-  /* 15 */ val EndElement: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.EndElement with scala.Double = js.native
-  /* 16 */ val EndEntity: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.EndEntity with scala.Double = js.native
-  /* 6 */ val Entity: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Entity with scala.Double = js.native
-  /* 5 */ val EntityReference: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.EntityReference with scala.Double = js.native
-  /* 0 */ val None: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.None with scala.Double = js.native
-  /* 12 */ val Notation: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Notation with scala.Double = js.native
-  /* 7 */ val ProcessingInstruction: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.ProcessingInstruction with scala.Double = js.native
-  /* 14 */ val SignificantWhitespace: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.SignificantWhitespace with scala.Double = js.native
-  /* 3 */ val Text: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Text with scala.Double = js.native
-  /* 13 */ val Whitespace: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.Whitespace with scala.Double = js.native
-  /* 17 */ val XmlDeclaration: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType.XmlDeclaration with scala.Double = js.native
+  @js.native
+  sealed trait Attribute
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait CDATA
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait Comment
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait Document
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait DocumentFragment
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait DocumentType
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait Element
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait EndElement
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait EndEntity
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait Entity
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait EntityReference
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait None
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait Notation
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait ProcessingInstruction
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait SignificantWhitespace
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait Text
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait Whitespace
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  @js.native
+  sealed trait XmlDeclaration
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlNodeType
+  
+  /* 2 */ val Attribute: Attribute with scala.Double = js.native
+  /* 4 */ val CDATA: CDATA with scala.Double = js.native
+  /* 8 */ val Comment: Comment with scala.Double = js.native
+  /* 9 */ val Document: Document with scala.Double = js.native
+  /* 11 */ val DocumentFragment: DocumentFragment with scala.Double = js.native
+  /* 10 */ val DocumentType: DocumentType with scala.Double = js.native
+  /* 1 */ val Element: Element with scala.Double = js.native
+  /* 15 */ val EndElement: EndElement with scala.Double = js.native
+  /* 16 */ val EndEntity: EndEntity with scala.Double = js.native
+  /* 6 */ val Entity: Entity with scala.Double = js.native
+  /* 5 */ val EntityReference: EntityReference with scala.Double = js.native
+  /* 0 */ val None: None with scala.Double = js.native
+  /* 12 */ val Notation: Notation with scala.Double = js.native
+  /* 7 */ val ProcessingInstruction: ProcessingInstruction with scala.Double = js.native
+  /* 14 */ val SignificantWhitespace: SignificantWhitespace with scala.Double = js.native
+  /* 3 */ val Text: Text with scala.Double = js.native
+  /* 13 */ val Whitespace: Whitespace with scala.Double = js.native
+  /* 17 */ val XmlDeclaration: XmlDeclaration with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlNodeType with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[xmlDashCoreLib.xmlDashCoreMod.XmlNodeType with scala.Double] = js.native
 }
 

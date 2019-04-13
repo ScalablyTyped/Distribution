@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(originalAssert: js.Any, formatter: js.Any): js.Any = js.native
-  def apply(originalAssert: js.Any, formatter: js.Any, options: empowerLib.empowerMod.empowerNs.Options): js.Any = js.native
+  def apply(originalAssert: js.Any, formatter: js.Any, options: Options): js.Any = js.native
 }
 

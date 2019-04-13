@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(obj: org.scalablytyped.runtime.StringDictionary[stdLib.PropertyDescriptor]): stdLib.PropertyDescriptorMap = js.native
-  def apply(
-    obj: org.scalablytyped.runtime.StringDictionary[stdLib.PropertyDescriptor],
-    options: dLib.autoDashBindMod.autoBindNs.Options
-  ): stdLib.PropertyDescriptorMap = js.native
+  def apply(obj: org.scalablytyped.runtime.StringDictionary[stdLib.PropertyDescriptor], options: Options): stdLib.PropertyDescriptorMap = js.native
 }
 

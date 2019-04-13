@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-priority-queue", "BinaryHeapStrategy")
 @js.native
-class BinaryHeapStrategy[T] ()
-  extends jsDashPriorityDashQueueLib.jsDashPriorityDashQueueMod.PriorityQueueNs.BinaryHeapStrategy[T] {
+class BinaryHeapStrategy[T] () extends AbstractPriorityQueue[T] {
   /**
     * Returns the number of elements in the queue
     */

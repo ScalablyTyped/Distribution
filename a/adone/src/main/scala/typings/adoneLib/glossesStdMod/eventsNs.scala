@@ -12,15 +12,15 @@ object eventsNs extends js.Object {
   class EventEmitter ()
     extends nodeLib.eventsMod.EventEmitter
   
-  def once(emitter: nodeLib.eventsMod.internalNs.EventEmitter, event: java.lang.String): js.Promise[_] = js.native
-  def once(emitter: nodeLib.eventsMod.internalNs.EventEmitter, event: js.Symbol): js.Promise[_] = js.native
+  def once(emitter: nodeLib.eventsMod.EventEmitter, event: java.lang.String): js.Promise[_] = js.native
+  def once(emitter: nodeLib.eventsMod.EventEmitter, event: js.Symbol): js.Promise[_] = js.native
   /* static members */
   @js.native
   object EventEmitter extends js.Object {
     var defaultMaxListeners: scala.Double = js.native
     /** @deprecated since v4.0.0 */
-    def listenerCount(emitter: nodeLib.eventsMod.internalNs.EventEmitter, event: java.lang.String): scala.Double = js.native
-    def listenerCount(emitter: nodeLib.eventsMod.internalNs.EventEmitter, event: js.Symbol): scala.Double = js.native
+    def listenerCount(emitter: nodeLib.eventsMod.EventEmitter, event: java.lang.String): scala.Double = js.native
+    def listenerCount(emitter: nodeLib.eventsMod.EventEmitter, event: js.Symbol): scala.Double = js.native
   }
   
 }

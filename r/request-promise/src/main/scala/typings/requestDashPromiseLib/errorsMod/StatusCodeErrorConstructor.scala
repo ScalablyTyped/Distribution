@@ -11,14 +11,14 @@ trait StatusCodeErrorConstructor
      with org.scalablytyped.runtime.Instantiable4[
       /* statusCode */ scala.Double, 
       /* body */ js.Any, 
-      /* options */ requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options, 
+      /* options */ requestDashPromiseLib.requestDashPromiseMod.Options, 
       /* response */ nodeLib.httpMod.IncomingMessage, 
       StatusCodeError
     ] {
   def apply(
     statusCode: scala.Double,
     body: js.Any,
-    options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options,
+    options: requestDashPromiseLib.requestDashPromiseMod.Options,
     response: nodeLib.httpMod.IncomingMessage
   ): StatusCodeError = js.native
 }

@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * Compress middleware for Koa
     */
-  def apply(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
-  def apply(options: koaDashCompressLib.koaDashCompressMod.koaCompressNs.CompressOptions): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def apply(): koaLib.koaMod.Middleware[_, js.Object] = js.native
+  def apply(options: CompressOptions): koaLib.koaMod.Middleware[_, js.Object] = js.native
 }
 

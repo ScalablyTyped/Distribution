@@ -8,41 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("i2c-bus/async", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val all: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val allLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val allSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val any: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val anyLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val anySeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val concatSeries: i2cDashBusLib.Anon_ArrCallbackIteratorArray = js.native
-  val detectSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val eachOf: i2cDashBusLib.Anon_Callback = js.native
-  val eachOfLimit: i2cDashBusLib.Anon_CallbackIterator = js.native
-  val eachOfSeries: i2cDashBusLib.Anon_Callback = js.native
-  val eachSeries: i2cDashBusLib.Anon_Arr = js.native
-  val everySeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val filterSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val find: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val findLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIterator = js.native
-  val findSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val foldl: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
-  val foldr: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
-  val forEach: i2cDashBusLib.Anon_Arr = js.native
-  val forEachLimit: i2cDashBusLib.Anon_ArrCallback = js.native
-  val forEachOfSeries: i2cDashBusLib.Anon_Callback = js.native
-  val forEachSeries: i2cDashBusLib.Anon_Arr = js.native
-  val inject: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
-  val mapSeries: i2cDashBusLib.Anon_ArrCallbackIterator = js.native
-  val mapValuesSeries: i2cDashBusLib.Anon_CallbackIteratee = js.native
-  val reduceRight: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
-  val reject: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val rejectLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimit = js.native
-  val rejectSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val select: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val selectLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimit = js.native
-  val selectSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
   val setImmediate: js.Function2[/* callback */ js.Function, /* repeated */ js.Any, scala.Unit] = js.native
-  val someSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   @JSName("apply")
   def apply[E](fn: js.Function, args: js.Any*): AsyncFunction[_, E] = js.native
   def applyEach(fns: js.Array[js.Function], argsAndCallback: js.Any*): scala.Unit = js.native

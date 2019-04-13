@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object withContextMod extends js.Object {
   def default[TContext, TProps](
-    childContextTypes: reactLib.reactMod.ReactNs.ValidationMap[TContext],
+    childContextTypes: reactLib.reactMod.ValidationMap[TContext],
     getChildContext: recomposeLib.recomposeMod.mapper[TProps, _]
   ): recomposeLib.recomposeMod.InferableComponentEnhancer[js.Object] = js.native
 }

@@ -89,3 +89,8 @@ class ObjectVersion ()
   override def GetNameForFileSystemEx(IncludeID: scala.Boolean, UseOriginalID: scala.Boolean): java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.ObjectVersion")
+@js.native
+object ObjectVersion
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectVersion]
+

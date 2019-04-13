@@ -11,9 +11,9 @@ trait ngStomp extends js.Object {
   var off: js.Any = js.native
   var sock: js.Any = js.native
   var stomp: js.Any = js.native
-  def connect(endpoint: java.lang.String): angularLib.angularMod.angularNs.IHttpPromise[_] = js.native
-  def connect(endpoint: java.lang.String, headers: ngDashStompLib.ngStompNs.Headers): angularLib.angularMod.angularNs.IHttpPromise[_] = js.native
-  def disconnect(callback: js.Function0[scala.Unit]): angularLib.angularMod.angularNs.IHttpPromise[_] = js.native
+  def connect(endpoint: java.lang.String): angularLib.angularMod.IHttpPromise[_] = js.native
+  def connect(endpoint: java.lang.String, headers: ngDashStompLib.ngStompNs.Headers): angularLib.angularMod.IHttpPromise[_] = js.native
+  def disconnect(callback: js.Function0[scala.Unit]): angularLib.angularMod.IHttpPromise[_] = js.native
   def send(destination: java.lang.String, body: js.Any, headers: ngDashStompLib.ngStompNs.Headers): js.Any = js.native
   def setDebug(callback: js.Function): scala.Unit = js.native
   def subscribe(

@@ -8,64 +8,64 @@ import scala.scalajs.js.annotation._
 object keycloakDashJsLibStrings {
   @js.native
   sealed trait `check-sso`
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakOnLoad
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakOnLoad
   
   @js.native
   sealed trait code
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseType
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakResponseType
   
   @js.native
   sealed trait `code id_token token`
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseType
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakResponseType
   
   @js.native
   sealed trait cordova
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs._KeycloakAdapterName
+    extends keycloakDashJsLib.keycloakDashJsMod._KeycloakAdapterName
   
   @js.native
   sealed trait `cordova-native`
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs._KeycloakAdapterName
+    extends keycloakDashJsLib.keycloakDashJsMod._KeycloakAdapterName
   
   @js.native
   sealed trait default
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs._KeycloakAdapterName
+    extends keycloakDashJsLib.keycloakDashJsMod._KeycloakAdapterName
   
   @js.native
   sealed trait fragment
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseMode
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakResponseMode
   
   @js.native
   sealed trait hybrid
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakFlow
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakFlow
   
   @js.native
   sealed trait `id_token token`
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseType
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakResponseType
   
   @js.native
   sealed trait `implicit`
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakFlow
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakFlow
   
   @js.native
   sealed trait login extends js.Object
   
   @js.native
   sealed trait `login-required`
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakOnLoad
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakOnLoad
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
   sealed trait query
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseMode
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakResponseMode
   
   @js.native
   sealed trait register extends js.Object
   
   @js.native
   sealed trait standard
-    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakFlow
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakFlow
   
   @scala.inline
   def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]

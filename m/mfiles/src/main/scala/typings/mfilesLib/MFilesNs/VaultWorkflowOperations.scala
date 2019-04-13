@@ -53,3 +53,8 @@ class VaultWorkflowOperations ()
   override def UpdateWorkflowAdmin(Workflow: mfilesLib.IWorkflowAdmin): mfilesLib.IWorkflowAdmin = js.native
 }
 
+@JSGlobal("MFiles.VaultWorkflowOperations")
+@js.native
+object VaultWorkflowOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultWorkflowOperations]
+

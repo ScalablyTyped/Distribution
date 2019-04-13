@@ -21,16 +21,16 @@ class DialogflowApp protected ()
     * @dialogflow
     */
   def this(options: DialogflowAppOptions) = this()
-  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.Response | scala.Null = js.native
   def ask(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     noInputs: js.Array[java.lang.String]
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
+  def ask(inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.Response | scala.Null = js.native
   def ask(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     noInputs: js.Array[java.lang.String]
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks to collect the user's input.
     * {@link https://developers.google.com/actions/policies/general-policies#user_experience|The guidelines when prompting the user for a response must be followed at all times}.
@@ -65,16 +65,16 @@ class DialogflowApp protected ()
     * @return HTTP response.
     * @dialogflow
     */
-  def ask(inputPrompt: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def ask(inputPrompt: java.lang.String, noInputs: js.Array[java.lang.String]): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def ask(inputPrompt: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
+  def ask(inputPrompt: java.lang.String, noInputs: js.Array[java.lang.String]): expressLib.expressMod.Response | scala.Null = js.native
   def askWithCarousel(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithCarousel(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks to collect the user's input with a carousel.
     *
@@ -119,15 +119,15 @@ class DialogflowApp protected ()
   def askWithCarousel(
     inputPrompt: java.lang.String,
     carousel: actionsDashOnDashGoogleLib.responseDashBuilderMod.Carousel
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithList(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse,
     list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   def askWithList(
     inputPrompt: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse,
     list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List
-  ): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  ): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Asks to collect the user's input with a list.
     *
@@ -168,7 +168,7 @@ class DialogflowApp protected ()
     * @return HTTP response.
     * @dialogflow
     */
-  def askWithList(inputPrompt: java.lang.String, list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def askWithList(inputPrompt: java.lang.String, list: actionsDashOnDashGoogleLib.responseDashBuilderMod.List): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Get the argument value by name from the current intent. If the argument
     * is included in originalRequest, and is not a text argument, the entire
@@ -525,8 +525,8 @@ class DialogflowApp protected ()
   def setContext(name: java.lang.String): js.UndefOr[scala.Null] = js.native
   def setContext(name: java.lang.String, lifespan: scala.Double): js.UndefOr[scala.Null] = js.native
   def setContext(name: java.lang.String, lifespan: scala.Double, parameters: js.Any): js.UndefOr[scala.Null] = js.native
-  def tell(speechResponse: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
-  def tell(speechResponse: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def tell(speechResponse: actionsDashOnDashGoogleLib.responseDashBuilderMod.RichResponse): expressLib.expressMod.Response | scala.Null = js.native
+  def tell(speechResponse: actionsDashOnDashGoogleLib.responseDashBuilderMod.SimpleResponse): expressLib.expressMod.Response | scala.Null = js.native
   /**
     * Tells the Assistant to render the speech response and close the mic.
     *
@@ -554,6 +554,6 @@ class DialogflowApp protected ()
     * @return The response that is sent back to Assistant.
     * @dialogflow
     */
-  def tell(speechResponse: java.lang.String): expressLib.expressMod.eNs.Response | scala.Null = js.native
+  def tell(speechResponse: java.lang.String): expressLib.expressMod.Response | scala.Null = js.native
 }
 

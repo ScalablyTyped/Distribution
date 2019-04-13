@@ -9,29 +9,29 @@ import scala.scalajs.js.annotation._
 trait CacheableRequest
   extends org.scalablytyped.runtime.Instantiable2[
       /* requestFn */ cacheableDashRequestLib.RequestFn, 
-      (/* storageAdapter */ cacheableDashRequestLib.cacheableDashRequestMod.CacheableRequestNs.StorageAdapter) | (/* storageAdapter */ java.lang.String), 
+      (/* storageAdapter */ StorageAdapter) | (/* storageAdapter */ java.lang.String), 
       js.Function2[
-        /* opts */ java.lang.String | nodeLib.urlMod.URL | (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Options), 
+        /* opts */ java.lang.String | nodeLib.urlMod.URL | (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.Options), 
         /* cb */ js.UndefOr[
           js.Function1[
-            /* response */ nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.namespaced, 
+            /* response */ nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.^ , 
             scala.Unit
           ]
         ], 
-        cacheableDashRequestLib.cacheableDashRequestMod.CacheableRequestNs.Emitter
+        Emitter
       ]
     ]
      with org.scalablytyped.runtime.Instantiable1[
       /* requestFn */ cacheableDashRequestLib.RequestFn, 
       js.Function2[
-        /* opts */ java.lang.String | nodeLib.urlMod.URL | (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Options), 
+        /* opts */ java.lang.String | nodeLib.urlMod.URL | (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.Options), 
         /* cb */ js.UndefOr[
           js.Function1[
-            /* response */ nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.namespaced, 
+            /* response */ nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.^ , 
             scala.Unit
           ]
         ], 
-        cacheableDashRequestLib.cacheableDashRequestMod.CacheableRequestNs.Emitter
+        Emitter
       ]
     ] {
   var CacheError: org.scalablytyped.runtime.Instantiable1[/* error */ stdLib.Error, CacheErrorCls] = js.native

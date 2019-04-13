@@ -21,7 +21,7 @@ trait ParseConfig extends js.Object {
   var download: js.UndefOr[scala.Boolean] = js.undefined
            // default: false
   var dynamicTyping: js.UndefOr[
-    scala.Boolean | (/* import warning: ImportType.apply Failed type conversion: {[headerName: string] : boolean, [columnNumber: number] : boolean} */ js.Any) | (js.Function1[/* field */ java.lang.String | scala.Double, scala.Boolean])
+    scala.Boolean | (org.scalablytyped.runtime.StringDictionary[scala.Boolean] with org.scalablytyped.runtime.NumberDictionary[scala.Boolean]) | (js.Function1[/* field */ java.lang.String | scala.Double, scala.Boolean])
   ] = js.undefined
                 // default: 0
   var encoding: js.UndefOr[java.lang.String] = js.undefined
@@ -65,7 +65,7 @@ object ParseConfig {
     complete: (/* results */ ParseResult, /* file */ js.UndefOr[stdLib.File]) => scala.Unit = null,
     delimiter: java.lang.String = null,
     download: js.UndefOr[scala.Boolean] = js.undefined,
-    dynamicTyping: scala.Boolean | (/* import warning: ImportType.apply Failed type conversion: {[headerName: string] : boolean, [columnNumber: number] : boolean} */ js.Any) | (js.Function1[/* field */ java.lang.String | scala.Double, scala.Boolean]) = null,
+    dynamicTyping: scala.Boolean | (org.scalablytyped.runtime.StringDictionary[scala.Boolean] with org.scalablytyped.runtime.NumberDictionary[scala.Boolean]) | (js.Function1[/* field */ java.lang.String | scala.Double, scala.Boolean]) = null,
     encoding: java.lang.String = null,
     error: (/* error */ ParseError, /* file */ js.UndefOr[stdLib.File]) => scala.Unit = null,
     fastMode: js.UndefOr[scala.Boolean] = js.undefined,

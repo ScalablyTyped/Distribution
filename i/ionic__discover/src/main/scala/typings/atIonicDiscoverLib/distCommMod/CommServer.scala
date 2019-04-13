@@ -16,7 +16,7 @@ class CommServer protected ()
     * Port of communication server.
     */
   port: scala.Double) = this()
-  val clients: stdLib.Set[wsLib.wsMod.namespaced] = js.native
+  val clients: stdLib.Set[wsLib.wsMod.^] = js.native
   /**
     * Unique identifier of the publisher.
     */

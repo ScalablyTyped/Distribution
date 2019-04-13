@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomLayout
-  extends Layout
-     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with Layout {
   var `type`: java.lang.String
 }
 

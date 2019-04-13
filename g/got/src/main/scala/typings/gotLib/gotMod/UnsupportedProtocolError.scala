@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UnsupportedProtocolError
   extends StdError
-     with gotLib.gotMod.gotNs.GotError {
+     with GotError {
   @JSName("name")
   var name_UnsupportedProtocolError: gotLib.gotLibStrings.UnsupportedProtocolError
 }

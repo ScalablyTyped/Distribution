@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object bunyanLibStrings {
   @js.native
   sealed trait debug
-    extends bunyanLib.bunyanMod.LoggerNs.LogLevelString
+    extends bunyanLib.bunyanMod.LogLevelString
   
   @js.native
   sealed trait error
-    extends bunyanLib.bunyanMod.LoggerNs.LogLevelString
+    extends bunyanLib.bunyanMod.LogLevelString
   
   @js.native
   sealed trait fatal
-    extends bunyanLib.bunyanMod.LoggerNs.LogLevelString
+    extends bunyanLib.bunyanMod.LogLevelString
   
   @js.native
   sealed trait info
-    extends bunyanLib.bunyanMod.LoggerNs.LogLevelString
+    extends bunyanLib.bunyanMod.LogLevelString
   
   @js.native
   sealed trait trace
-    extends bunyanLib.bunyanMod.LoggerNs.LogLevelString
+    extends bunyanLib.bunyanMod.LogLevelString
   
   @js.native
   sealed trait warn
-    extends bunyanLib.bunyanMod.LoggerNs.LogLevelString
+    extends bunyanLib.bunyanMod.LogLevelString
   
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]

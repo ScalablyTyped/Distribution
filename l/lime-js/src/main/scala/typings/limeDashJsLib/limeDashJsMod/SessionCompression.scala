@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("lime-js", "SessionCompression")
 @js.native
-class SessionCompression ()
-  extends limeDashJsLib.limeDashJsMod.LimeNs.SessionCompression
+class SessionCompression () extends js.Object
 
 /* static members */
 @JSImport("lime-js", "SessionCompression")

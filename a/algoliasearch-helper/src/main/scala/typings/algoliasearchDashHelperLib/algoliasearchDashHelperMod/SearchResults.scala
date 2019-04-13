@@ -7,55 +7,41 @@ import scala.scalajs.js.annotation._
 
 @JSImport("algoliasearch-helper", "SearchResults")
 @js.native
-class SearchResults protected ()
-  extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResults {
-  def this(state: algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParameters, results: js.Array[_]) = this()
-  /* CompleteClass */
-  override var _rawResults: js.Any = js.native
-  /* CompleteClass */
-  override var _state: algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParameters = js.native
+class SearchResults protected () extends js.Object {
+  def this(state: SearchParameters, results: js.Array[_]) = this()
+  var _rawResults: js.Any = js.native
+  var _state: SearchParameters = js.native
   /**
     * The position if the position was guessed by IP.
     * @example "48.8637,2.3615",
     */
-  /* CompleteClass */
-  override var aroundLatLng: java.lang.String = js.native
+  var aroundLatLng: java.lang.String = js.native
   /**
     * The radius computed by Algolia.
     * @example "126792922",
     */
-  /* CompleteClass */
-  override var automaticRadius: java.lang.String = js.native
+  var automaticRadius: java.lang.String = js.native
   /**
     * disjunctive facets results
     */
-  /* CompleteClass */
-  override var disjunctiveFacets: js.Array[
-    algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResultsNs.Facet
-  ] = js.native
+  var disjunctiveFacets: js.Array[algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchResultsNs.Facet] = js.native
   /**
     * True if the counts of the facets is exhaustive
     */
-  /* CompleteClass */
-  override var exhaustiveFacetsCount: scala.Boolean = js.native
+  var exhaustiveFacetsCount: scala.Boolean = js.native
   /**
     * True if the number of hits is exhaustive
     */
-  /* CompleteClass */
-  override var exhaustiveNbHits: scala.Boolean = js.native
+  var exhaustiveNbHits: scala.Boolean = js.native
   /**
     * other facets results
     */
-  /* CompleteClass */
-  override var facets: js.Array[
-    algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResultsNs.Facet
-  ] = js.native
+  var facets: js.Array[algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchResultsNs.Facet] = js.native
   /**
     * disjunctive facets results
     */
-  /* CompleteClass */
-  override var hierarchicalFacets: js.Array[
-    algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResultsNs.HierarchicalFacet
+  var hierarchicalFacets: js.Array[
+    algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchResultsNs.HierarchicalFacet
   ] = js.native
   /**
     * all the records that match the search parameters. Each record is
@@ -64,93 +50,77 @@ class SearchResults protected ()
     *  - `value` : the value of the facet highlighted (html)
     *  - `matchLevel`: full, partial or none depending on how the query terms match
     */
-  /* CompleteClass */
-  override var hits: js.Array[_] = js.native
+  var hits: js.Array[_] = js.native
   /**
     * number of hits per page requested
     */
-  /* CompleteClass */
-  override var hitsPerPage: scala.Double = js.native
+  var hitsPerPage: scala.Double = js.native
   /**
     * index where the results come from
     */
-  /* CompleteClass */
-  override var index: java.lang.String = js.native
+  var index: java.lang.String = js.native
   /**
     * total number of hits of this query on the index
     */
-  /* CompleteClass */
-  override var nbHits: scala.Double = js.native
+  var nbHits: scala.Double = js.native
   /**
     * total number of pages with respect to the number of hits per page and the total number of hits
     */
-  /* CompleteClass */
-  override var nbPages: scala.Double = js.native
+  var nbPages: scala.Double = js.native
   /**
     * current page
     */
-  /* CompleteClass */
-  override var page: scala.Double = js.native
+  var page: scala.Double = js.native
   /**
     * The query as parsed by the engine given all the rules.
     */
-  /* CompleteClass */
-  override var parsedQuery: java.lang.String = js.native
+  var parsedQuery: java.lang.String = js.native
   /**
     * sum of the processing time of all the queries
     */
-  /* CompleteClass */
-  override var processingTimeMS: scala.Double = js.native
+  var processingTimeMS: scala.Double = js.native
   /**
     * query used to generate the results
     */
-  /* CompleteClass */
-  override var query: java.lang.String = js.native
+  var query: java.lang.String = js.native
   /**
     * queryID is the unique identifier of the query used to generate the current search results.
     * This value is only available if the `clickAnalytics` search parameter is set to `true`.
     */
-  /* CompleteClass */
-  override var queryID: java.lang.String = js.native
+  var queryID: java.lang.String = js.native
   /**
     * String identifying the server used to serve this request.
     * @example "c7-use-2.algolia.net",
     */
-  /* CompleteClass */
-  override var serverUsed: java.lang.String = js.native
+  var serverUsed: java.lang.String = js.native
   /**
     * Boolean that indicates if the computation of the counts did time out.
     * @deprecated
     */
-  /* CompleteClass */
-  override var timeoutCounts: scala.Boolean = js.native
+  var timeoutCounts: scala.Boolean = js.native
   /**
     * Boolean that indicates if the computation of the hits did time out.
     * @deprecated
     */
-  /* CompleteClass */
-  override var timeoutHits: scala.Boolean = js.native
+  var timeoutHits: scala.Boolean = js.native
   /**
     * Contains the userData if they are set by a [query rule](https://www.algolia.com/doc/guides/query-rules/query-rules-overview/).
     */
-  /* CompleteClass */
-  override var userData: js.Array[_] = js.native
+  var userData: js.Array[_] = js.native
   /**
     * Get a facet object with its name
     * @deprecated
     * @param name name of the faceted attribute
     * @return  the facet object
     */
-  /* CompleteClass */
-  override def getFacetByName(name: java.lang.String): algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResultsNs.Facet = js.native
+  def getFacetByName(name: java.lang.String): algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchResultsNs.Facet = js.native
   /**
     * Returns the facet stats if attribute is defined and the facet contains some.
     * Otherwise returns undefined.
     * @param attribute name of the faceted attribute
     * @return The stats of the facet
     */
-  /* CompleteClass */
-  override def getFacetStats(attribute: java.lang.String): js.Any = js.native
+  def getFacetStats(attribute: java.lang.String): js.Any = js.native
   /**
     * Get a the list of values for a given facet attribute. Those values are sorted
     * refinement first, descending count (bigger value on top), and name ascending
@@ -196,10 +166,7 @@ class SearchResults protected ()
     *   });
     * });
     */
-  /* CompleteClass */
-  override def getFacetValues(attribute: java.lang.String, opts: js.Any): (js.Array[
-    algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResultsNs.FacetValue
-  ]) | algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResultsNs.HierarchicalFacet = js.native
+  def getFacetValues(attribute: java.lang.String, opts: js.Any): js.Array[algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchResultsNs.FacetValue] | algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchResultsNs.HierarchicalFacet = js.native
   /**
     * Returns all refinements for all filters + tags. It also provides
     * additional information: count and exhausistivity for each filter.
@@ -209,9 +176,6 @@ class SearchResults protected ()
     *
     * @return all the refinements
     */
-  /* CompleteClass */
-  override def getRefinements(): js.Array[
-    algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchResultsNs.Refinement
-  ] = js.native
+  def getRefinements(): js.Array[algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchResultsNs.Refinement] = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Divider/Divider", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[DividerProps] = js.native
+  val default: reactLib.reactMod.ComponentType[DividerProps] = js.native
 }
 

@@ -176,11 +176,7 @@ object ResponsesNs extends js.Object {
           ] = js.native
     }
     
-    type ImageType = actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.ImageType
-    type Status = actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Status
-    type Type = actionsDashOnDashGoogleLib.responseDashBuilderMod.MediaValuesNs.Type
   }
   
-  type ImageDisplays = actionsDashOnDashGoogleLib.responseDashBuilderMod.ImageDisplays
 }
 

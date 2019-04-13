@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CrowdClient
-  extends atlassianDashCrowdDashClientLib.apiMod.namespaced {
+  extends atlassianDashCrowdDashClientLib.apiMod.^ {
   var authentication: atlassianDashCrowdDashClientLib.Anon_Authenticate = js.native
   var config: atlassianDashCrowdDashClientLib.Anon_Cookie = js.native
   var group: atlassianDashCrowdDashClientLib.Anon_AttributesChildren = js.native

@@ -12,7 +12,7 @@ trait Anon_Alt extends js.Object {
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var height: js.UndefOr[java.lang.String] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var top: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -26,7 +26,7 @@ object Anon_Alt {
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     height: java.lang.String = null,
     src: java.lang.String = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     top: js.UndefOr[scala.Boolean] = js.undefined,
     width: java.lang.String = null
   ): Anon_Alt = {

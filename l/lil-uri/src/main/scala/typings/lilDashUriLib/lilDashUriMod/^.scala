@@ -13,7 +13,7 @@ object ^ extends js.Object {
     *
     * @param the URI string to parse.
     */
-  def apply(): lilDashUriLib.lilDashUriMod.uriNs.URI = js.native
-  def apply(uri: java.lang.String): lilDashUriLib.lilDashUriMod.uriNs.URI = js.native
+  def apply(): URI = js.native
+  def apply(uri: java.lang.String): URI = js.native
 }
 

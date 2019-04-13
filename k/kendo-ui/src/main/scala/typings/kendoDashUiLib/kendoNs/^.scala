@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var history: History = js.native
-  var keys: kendoDashUiLib.Anon_BACKSPACE = js.native
   var ns: java.lang.String = js.native
-  var support: kendoDashUiLib.Anon_Browser = js.native
   var version: java.lang.String = js.native
   def alert(text: java.lang.String): scala.Unit = js.native
   def antiForgeryTokens(): js.Any = js.native

@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("browser-resolve", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var sync: js.Function2[
-    /* id */ java.lang.String, 
-    /* opts */ js.UndefOr[browserDashResolveLib.browserDashResolveMod.browserResolveNs.SyncOpts], 
-    java.lang.String
-  ] = js.native
+  var sync: js.Function2[/* id */ java.lang.String, /* opts */ js.UndefOr[SyncOpts], java.lang.String] = js.native
   /**
     * Resolve a module path and call cb(err, path [, pkg])
     *
@@ -27,10 +23,6 @@ object ^ extends js.Object {
     * @param options Options to use for resolving, optional.
     * @param callback
     */
-  def apply(
-    id: java.lang.String,
-    opts: browserDashResolveLib.browserDashResolveMod.browserResolveNs.AsyncOpts,
-    cb: browserDashResolveLib.resolveCallback
-  ): scala.Unit = js.native
+  def apply(id: java.lang.String, opts: AsyncOpts, cb: browserDashResolveLib.resolveCallback): scala.Unit = js.native
 }
 

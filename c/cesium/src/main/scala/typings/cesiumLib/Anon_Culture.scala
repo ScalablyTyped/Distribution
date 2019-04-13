@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Culture extends js.Object {
   var culture: js.UndefOr[java.lang.String] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var mapStyle: js.UndefOr[java.lang.String] = js.undefined
-  var proxy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Proxy] = js.undefined
-  var tileDiscardPolicy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.TileDiscardPolicy] = js.undefined
+  var proxy: js.UndefOr[cesiumLib.cesiumMod.Proxy] = js.undefined
+  var tileDiscardPolicy: js.UndefOr[cesiumLib.cesiumMod.TileDiscardPolicy] = js.undefined
   var tileProtocol: js.UndefOr[java.lang.String] = js.undefined
   var url: java.lang.String
 }
@@ -21,11 +21,11 @@ object Anon_Culture {
   def apply(
     url: java.lang.String,
     culture: java.lang.String = null,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     key: java.lang.String = null,
     mapStyle: java.lang.String = null,
-    proxy: cesiumLib.cesiumMod.CesiumNs.Proxy = null,
-    tileDiscardPolicy: cesiumLib.cesiumMod.CesiumNs.TileDiscardPolicy = null,
+    proxy: cesiumLib.cesiumMod.Proxy = null,
+    tileDiscardPolicy: cesiumLib.cesiumMod.TileDiscardPolicy = null,
     tileProtocol: java.lang.String = null
   ): Anon_Culture = {
     val __obj = js.Dynamic.literal(url = url)

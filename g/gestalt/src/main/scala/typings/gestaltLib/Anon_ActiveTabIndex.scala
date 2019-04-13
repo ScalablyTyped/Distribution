@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ActiveTabIndex extends js.Object {
   var activeTabIndex: scala.Double
-  var event: reactLib.reactMod.ReactNs.SyntheticEvent[
-    reactLib.reactMod.ReactNs.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
+  var event: reactLib.reactMod.SyntheticEvent[
+    reactLib.reactMod.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
     reactLib.Event
   ]
 }
@@ -17,8 +17,8 @@ object Anon_ActiveTabIndex {
   @scala.inline
   def apply(
     activeTabIndex: scala.Double,
-    event: reactLib.reactMod.ReactNs.SyntheticEvent[
-      reactLib.reactMod.ReactNs.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
+    event: reactLib.reactMod.SyntheticEvent[
+      reactLib.reactMod.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
       reactLib.Event
     ]
   ): Anon_ActiveTabIndex = {

@@ -18,12 +18,9 @@ trait List[T]
   def isSomethingAfterLastItem(): scala.Boolean = js.native
   def renderEmpty(
     prefixCls: java.lang.String,
-    renderEmpty: js.Function1[
-      /* componentName */ js.UndefOr[java.lang.String], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    renderEmpty: js.Function1[/* componentName */ js.UndefOr[java.lang.String], reactLib.reactMod.ReactNode]
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderItem(item: js.Any, index: scala.Double): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def renderItem(item: js.Any, index: scala.Double): reactLib.reactMod.ReactNode = js.native
   def renderList(hasGetPrefixClsRenderEmpty: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def triggerPaginationEvent(eventName: java.lang.String): js.Function2[/* page */ scala.Double, /* pageSize */ scala.Double, scala.Unit] = js.native
 }

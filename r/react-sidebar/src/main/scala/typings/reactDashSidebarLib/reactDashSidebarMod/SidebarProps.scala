@@ -19,7 +19,7 @@ trait SidebarProps extends js.Object {
   var rootClassName: js.UndefOr[java.lang.String] = js.undefined
   var rootId: js.UndefOr[java.lang.String] = js.undefined
   var shadow: js.UndefOr[scala.Boolean] = js.undefined
-  var sidebar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var sidebar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var sidebarClassName: js.UndefOr[java.lang.String] = js.undefined
   var sidebarId: js.UndefOr[java.lang.String] = js.undefined
   var styles: js.UndefOr[SidebarStyles] = js.undefined
@@ -44,7 +44,7 @@ object SidebarProps {
     rootClassName: java.lang.String = null,
     rootId: java.lang.String = null,
     shadow: js.UndefOr[scala.Boolean] = js.undefined,
-    sidebar: reactLib.reactMod.ReactNs.ReactNode = null,
+    sidebar: reactLib.reactMod.ReactNode = null,
     sidebarClassName: java.lang.String = null,
     sidebarId: java.lang.String = null,
     styles: SidebarStyles = null,

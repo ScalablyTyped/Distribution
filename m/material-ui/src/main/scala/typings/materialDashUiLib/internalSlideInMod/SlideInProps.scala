@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SlideInProps
-  extends reactLib.reactMod.ReactNs.Props[SlideIn] {
-  var childStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  extends reactLib.reactMod.Props[SlideIn] {
+  var childStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var direction: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.direction] = js.undefined
   var enterDelay: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SlideInProps {
   @scala.inline
   def apply(
-    childStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    childStyle: reactLib.reactMod.CSSProperties = null,
+    children: reactLib.reactMod.ReactNode = null,
     direction: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.direction = null,
     enterDelay: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[SlideIn] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[SlideIn] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): SlideInProps = {
     val __obj = js.Dynamic.literal()
     if (childStyle != null) __obj.updateDynamic("childStyle")(childStyle)

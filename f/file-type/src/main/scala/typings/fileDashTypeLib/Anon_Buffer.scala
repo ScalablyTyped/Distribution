@@ -35,9 +35,9 @@ trait Anon_Buffer extends js.Object {
   	});
   	```
   	*/
-  def apply(buffer: nodeLib.Buffer): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
-  def apply(buffer: stdLib.ArrayBuffer): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
-  def apply(buffer: stdLib.Uint8Array): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
+  def apply(buffer: nodeLib.Buffer): fileDashTypeLib.fileDashTypeMod.FileTypeResult | scala.Null = js.native
+  def apply(buffer: stdLib.ArrayBuffer): fileDashTypeLib.fileDashTypeMod.FileTypeResult | scala.Null = js.native
+  def apply(buffer: stdLib.Uint8Array): fileDashTypeLib.fileDashTypeMod.FileTypeResult | scala.Null = js.native
   /**
   	Detect the file type of a readable stream.
   	@param readableStream - A readable stream containing a file to examine, see: [`stream.Readable`](https://nodejs.org/api/stream.html#stream_class_stream_readable).
@@ -58,6 +58,6 @@ trait Anon_Buffer extends js.Object {
   	})();
   	```
   	*/
-  def stream(readableStream: nodeLib.streamMod.Readable): js.Promise[fileDashTypeLib.fileDashTypeMod.fileTypeNs.ReadableStreamWithFileType] = js.native
+  def stream(readableStream: nodeLib.streamMod.Readable): js.Promise[fileDashTypeLib.fileDashTypeMod.ReadableStreamWithFileType] = js.native
 }
 

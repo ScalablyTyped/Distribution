@@ -24,7 +24,7 @@ trait IDesktopNotificationService extends js.Object {
     * This method returns a $q promise, if the user allowed the notification the successCallback will be executed,
     * errorCallback will be executed otherwise
     */
-  def requestPermission(): angularLib.angularMod.angularNs.IPromise[stdLib.NotificationPermission] = js.native
+  def requestPermission(): angularLib.angularMod.IPromise[stdLib.NotificationPermission] = js.native
   /**
     * This method will display the notification using the parameter values.
     * See all available options here at https://developer.mozilla.org/en-US/docs/Web/API/notification#Instance_properties

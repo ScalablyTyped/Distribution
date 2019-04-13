@@ -9,8 +9,8 @@ trait Anon_ClassNameCssModuleHref extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLAnchorElement]] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.Ref[stdLib.HTMLAnchorElement]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ClassNameCssModuleHref {
@@ -19,8 +19,8 @@ object Anon_ClassNameCssModuleHref {
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     href: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLAnchorElement] = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    innerRef: reactLib.reactMod.Ref[stdLib.HTMLAnchorElement] = null,
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ClassNameCssModuleHref = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

@@ -12,7 +12,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * If a cursorComponent is not supplied, a new Line component will be rendered.
     * @default cursorComponent={<Line/>}
     */
-  var cursorComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var cursorComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * When the cursorDimension prop is set, the cursor will be a line to inspect the given dimension (either "x" or "y").
     * When this prop is not specified, the cursor will be a 2-dimensional crosshair.
@@ -35,7 +35,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * active, text. If cursorLabelComponent is omitted, a new VictoryLabel will be created with the props described above.
     * @default cursorLabelComponent={<VictoryLabel/>}
     */
-  var cursorLabelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var cursorLabelComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The cursorLabelOffset prop determines the pixel offset of the cursor label
     * from the cursor point. This prop should be an Object with x and y properties, or a
@@ -69,19 +69,19 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
 object VictoryCursorContainerProps {
   @scala.inline
   def apply(
-    cursorComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    cursorComponent: reactLib.reactMod.ReactElement[_] = null,
     cursorDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,
     cursorLabel: /* point */ CursorData => scala.Unit = null,
-    cursorLabelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    cursorLabelComponent: reactLib.reactMod.ReactElement[_] = null,
     cursorLabelOffset: scala.Double | CursorData = null,
     defaultCursorValue: scala.Double | CursorData = null,
     desc: java.lang.String = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
-    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    events: reactLib.reactMod.DOMAttributes[_] = null,
     height: scala.Int | scala.Double = null,
     onCursorChange: (/* value */ CursorData, /* props */ VictoryCursorContainerProps) => scala.Unit = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): VictoryCursorContainerProps = {

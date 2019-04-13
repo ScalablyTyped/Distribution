@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("yar", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[yarLib.yarMod.yarNs.YarOptions]]
+  extends org.scalablytyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[YarOptions]]
 

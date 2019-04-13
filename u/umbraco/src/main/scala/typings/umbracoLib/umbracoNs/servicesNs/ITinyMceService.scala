@@ -35,7 +35,7 @@ trait ITinyMceService extends js.Object {
     * @param {Object} editor the TinyMCE editor instance
     * @param {Object} $scope the current controller scope
     */
-  def createInsertEmbeddedMedia(editor: js.Object, $scope: angularLib.angularMod.angularNs.IScope): scala.Unit
+  def createInsertEmbeddedMedia(editor: js.Object, $scope: angularLib.angularMod.IScope): scala.Unit
   /**
     * @ngdoc method
     * @name umbraco.services.tinyMceService#createUmbracoMacro
@@ -47,7 +47,7 @@ trait ITinyMceService extends js.Object {
     * @param {Object} editor the TinyMCE editor instance
     * @param {Object} $scope the current controller scope
     */
-  def createInsertMacro(editor: js.Object, $scope: angularLib.angularMod.angularNs.IScope): scala.Unit
+  def createInsertMacro(editor: js.Object, $scope: angularLib.angularMod.IScope): scala.Unit
   /**
     * @ngdoc method
     * @name umbraco.services.tinyMceService#createMediaPicker
@@ -76,8 +76,8 @@ object ITinyMceService {
   @scala.inline
   def apply(
     configuration: () => js.Array[ITinyMcePlugin],
-    createInsertEmbeddedMedia: (js.Object, angularLib.angularMod.angularNs.IScope) => scala.Unit,
-    createInsertMacro: (js.Object, angularLib.angularMod.angularNs.IScope) => scala.Unit,
+    createInsertEmbeddedMedia: (js.Object, angularLib.angularMod.IScope) => scala.Unit,
+    createInsertMacro: (js.Object, angularLib.angularMod.IScope) => scala.Unit,
     createMediaPicker: js.Object => scala.Unit,
     defaultPrevalues: () => IConfiguration
   ): ITinyMceService = {

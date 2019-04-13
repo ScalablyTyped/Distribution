@@ -10,8 +10,8 @@ trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] e
   var ServerStyleSheet: org.scalablytyped.runtime.Instantiable0[ServerStyleSheet] = js.native
   var StyleSheetManager: org.scalablytyped.runtime.Instantiable0[StyleSheetManager] = js.native
   @JSName("ThemeConsumer")
-  var ThemeConsumer_Original: reactLib.reactMod.ReactNs.Consumer[T] = js.native
-  var ThemeContext: reactLib.reactMod.ReactNs.Context[T] = js.native
+  var ThemeConsumer_Original: reactLib.reactMod.Consumer[T] = js.native
+  var ThemeContext: reactLib.reactMod.Context[T] = js.native
   var ThemeProvider: ThemeProviderComponent[T, U] = js.native
   @JSName("css")
   var css_Original: ThemedCssFunction[T] = js.native
@@ -28,7 +28,7 @@ trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] e
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def ThemeConsumer(props: reactLib.reactMod.ReactNs.ConsumerProps[T]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def ThemeConsumer(props: reactLib.reactMod.ConsumerProps[T]): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def createGlobalStyle[P /* <: js.Object */](first: stdLib.TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, T]])*): GlobalStyleComponent[P, T] = js.native
   def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, T]])*): GlobalStyleComponent[P, T] = js.native
   def createGlobalStyle[P /* <: js.Object */](
@@ -137,13 +137,13 @@ trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] e
   // unfortunately keyframes can't interpolate props from the theme
   def keyframes(strings: stdLib.TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes = js.native
   def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes = js.native
-  def withTheme[C /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](
+  def withTheme[C /* <: reactLib.reactMod.ComponentType[_] */](
     // this check is roundabout because the extends clause above would
   // not allow any component that accepts _more_ than theme as a prop
   component: C
-  ): reactLib.reactMod.ReactNs.ForwardRefExoticComponent[
+  ): reactLib.reactMod.ForwardRefExoticComponent[
     styledDashComponentsLib.WithOptionalTheme[
-      reactLib.reactMod.ReactNs.ComponentPropsWithRef[C], 
+      reactLib.reactMod.ComponentPropsWithRef[C], 
       styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
     ]
   ] = js.native

@@ -22,7 +22,7 @@ trait StrictRatingIconProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ RatingIconProps, 
       scala.Unit
     ]
@@ -35,7 +35,7 @@ trait StrictRatingIconProps extends js.Object {
     */
   var onKeyUp: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ RatingIconProps, 
       scala.Unit
     ]
@@ -48,7 +48,7 @@ trait StrictRatingIconProps extends js.Object {
     */
   var onMouseEnter: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ RatingIconProps, 
       scala.Unit
     ]
@@ -64,9 +64,9 @@ object StrictRatingIconProps {
     as: js.Any = null,
     className: java.lang.String = null,
     index: scala.Int | scala.Double = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
-    onKeyUp: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
-    onMouseEnter: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
+    onKeyUp: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
+    onMouseEnter: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ RatingIconProps) => scala.Unit = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined
   ): StrictRatingIconProps = {
     val __obj = js.Dynamic.literal()

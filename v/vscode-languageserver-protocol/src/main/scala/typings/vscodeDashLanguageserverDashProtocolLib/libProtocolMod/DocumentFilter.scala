@@ -5,10 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - vscodeDashLanguageserverDashProtocolLib.Anon_Language
-  - vscodeDashLanguageserverDashProtocolLib.Anon_LanguagePattern
-  - vscodeDashLanguageserverDashProtocolLib.Anon_LanguagePatternScheme
-*/
-trait DocumentFilter extends js.Object
+@js.native
+trait DocumentFilter extends js.Object {
+  /** A language id, like `typescript`. */
+  var language: js.UndefOr[java.lang.String] = js.native
+  /** A glob pattern, like `*.{ts,js}`. */
+  var pattern: js.UndefOr[java.lang.String] = js.native
+  /** A Uri [scheme](#Uri.scheme), like `file` or `untitled`. */
+  var scheme: js.UndefOr[java.lang.String] = js.native
+}
 

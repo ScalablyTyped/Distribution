@@ -14,13 +14,13 @@ trait QueryProps[TData, TVariables]
   ] = js.undefined
   var query: graphqlLib.languageAstMod.DocumentNode
   var skip: js.UndefOr[scala.Boolean] = js.undefined
-  def children(result: QueryResult[TData, TVariables]): reactLib.reactMod.ReactNs.ReactNode
+  def children(result: QueryResult[TData, TVariables]): reactLib.reactMod.ReactNode
 }
 
 object QueryProps {
   @scala.inline
   def apply[TData, TVariables](
-    children: QueryResult[TData, TVariables] => reactLib.reactMod.ReactNs.ReactNode,
+    children: QueryResult[TData, TVariables] => reactLib.reactMod.ReactNode,
     query: graphqlLib.languageAstMod.DocumentNode,
     client: apolloDashClientLib.apolloDashClientMod.default[_] = null,
     context: reactDashApolloLib.typesMod.Context = null,

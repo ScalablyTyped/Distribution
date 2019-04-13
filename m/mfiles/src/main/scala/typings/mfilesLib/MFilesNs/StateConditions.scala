@@ -21,3 +21,8 @@ class StateConditions ()
   override def Clone(): mfilesLib.IStateConditions = js.native
 }
 
+@JSGlobal("MFiles.StateConditions")
+@js.native
+object StateConditions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStateConditions]
+

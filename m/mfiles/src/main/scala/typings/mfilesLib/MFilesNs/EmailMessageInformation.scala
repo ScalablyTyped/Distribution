@@ -35,3 +35,8 @@ class EmailMessageInformation ()
   override def CloneFrom(EmailMessageInformation: mfilesLib.IEmailMessageInformation): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.EmailMessageInformation")
+@js.native
+object EmailMessageInformation
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IEmailMessageInformation]
+

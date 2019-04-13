@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class AppMesh ()
   extends awsDashSdkLib.awsDashSdkMod.AppMesh {
-  def this(options: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAppmeshMod.ClientConfiguration) = this()
 }
 

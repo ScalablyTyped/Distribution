@@ -8,72 +8,72 @@ import scala.scalajs.js.annotation._
 object cliDashTable2LibStrings {
   @js.native
   sealed trait bottom
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
-       with cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.VerticalAlignment
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
+       with cliDashTable2Lib.cliDashTable2Mod.VerticalAlignment
   
   @js.native
   sealed trait `bottom-left`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait `bottom-mid`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait `bottom-right`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait center
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.HorizontalAlignment
-       with cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.VerticalAlignment
+    extends cliDashTable2Lib.cliDashTable2Mod.HorizontalAlignment
+       with cliDashTable2Lib.cliDashTable2Mod.VerticalAlignment
   
   @js.native
   sealed trait left
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
-       with cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.HorizontalAlignment
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
+       with cliDashTable2Lib.cliDashTable2Mod.HorizontalAlignment
   
   @js.native
   sealed trait `left-mid`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait mid
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait `mid-mid`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait middle
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait right
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
-       with cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.HorizontalAlignment
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
+       with cliDashTable2Lib.cliDashTable2Mod.HorizontalAlignment
   
   @js.native
   sealed trait `right-mid`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait top
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
-       with cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.VerticalAlignment
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
+       with cliDashTable2Lib.cliDashTable2Mod.VerticalAlignment
   
   @js.native
   sealed trait `top-left`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait `top-mid`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @js.native
   sealed trait `top-right`
-    extends cliDashTable2Lib.cliDashTable2Mod.CliTable2Ns.CharName
+    extends cliDashTable2Lib.cliDashTable2Mod.CharName
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

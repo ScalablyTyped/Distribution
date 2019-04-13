@@ -13,22 +13,19 @@ class StaticMap ()
   def queryRenderedFeatures(): js.Array[
     geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.GeometryObject, geojsonLib.geojsonMod.GeoJsonProperties]
   ] = js.native
-  def queryRenderedFeatures(geometry: js.Array[mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.PointLike]): js.Array[
+  def queryRenderedFeatures(geometry: js.Array[mapboxDashGlLib.mapboxDashGlMod.PointLike]): js.Array[
     geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.GeometryObject, geojsonLib.geojsonMod.GeoJsonProperties]
   ] = js.native
   def queryRenderedFeatures(
-    geometry: js.Array[mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.PointLike],
+    geometry: js.Array[mapboxDashGlLib.mapboxDashGlMod.PointLike],
     parameters: QueryRenderedFeaturesParams
   ): js.Array[
     geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.GeometryObject, geojsonLib.geojsonMod.GeoJsonProperties]
   ] = js.native
-  def queryRenderedFeatures(geometry: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.PointLike): js.Array[
+  def queryRenderedFeatures(geometry: mapboxDashGlLib.mapboxDashGlMod.PointLike): js.Array[
     geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.GeometryObject, geojsonLib.geojsonMod.GeoJsonProperties]
   ] = js.native
-  def queryRenderedFeatures(
-    geometry: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.PointLike,
-    parameters: QueryRenderedFeaturesParams
-  ): js.Array[
+  def queryRenderedFeatures(geometry: mapboxDashGlLib.mapboxDashGlMod.PointLike, parameters: QueryRenderedFeaturesParams): js.Array[
     geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.GeometryObject, geojsonLib.geojsonMod.GeoJsonProperties]
   ] = js.native
 }

@@ -30,6 +30,7 @@ package object swanNs {
   // #endregion
   // #region Compontent组件
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
+  type DefaultMethods[V] = org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (stdLib.Record[java.lang.String, js.Any])
   type ExtendedComponent[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) with (Component[Data, Props])
   type FormEvent = BuiltInEvent[baiduDashAppLib.baiduDashAppLibStrings.form, baiduDashAppLib.Anon_NameValue]
@@ -44,6 +45,10 @@ package object swanNs {
   type RecordPropsDefinition[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: baidu-app.swan.PropValidator<T[K]>}
     */ baiduDashAppLib.baiduDashAppLibStrings.RecordPropsDefinition with T
+  // #endregion
+  // #region 网络API列表
+  // 发起请求
+  type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type ScrollEvent = BuiltInEvent[baiduDashAppLib.baiduDashAppLibStrings.scroll, js.Object]
   type TapEvent = TouchEvent[baiduDashAppLib.baiduDashAppLibStrings.tap]
   type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])

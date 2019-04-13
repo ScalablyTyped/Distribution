@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EditableInputProps
-  extends reactLib.reactMod.ReactNs.ClassAttributes[EditableInput] {
+  extends reactLib.reactMod.ClassAttributes[EditableInput] {
   var color: js.UndefOr[reactDashColorLib.reactDashColorMod.Color] = js.undefined
   var dragLabel: js.UndefOr[java.lang.String] = js.undefined
   var dragMax: js.UndefOr[java.lang.String] = js.undefined
@@ -22,10 +22,10 @@ object EditableInputProps {
     color: reactDashColorLib.reactDashColorMod.Color = null,
     dragLabel: java.lang.String = null,
     dragMax: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     label: java.lang.String = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[EditableInput] = null,
+    ref: reactLib.reactMod.LegacyRef[EditableInput] = null,
     style: EditableInputStyles = null,
     value: js.Any = null
   ): EditableInputProps = {

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScrollableTabViewProperties
-  extends reactLib.reactMod.ReactNs.Props[ScrollableTabView] {
+  extends reactLib.reactMod.Props[ScrollableTabView] {
   /**
     * props that are applied to root ScrollView/ViewPagerAndroid.
     * Note that overriding defaults set by the library may break functionality; see the source for details.
@@ -98,16 +98,16 @@ trait ScrollableTabViewProperties
 object ScrollableTabViewProperties {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     contentProps: reactDashNativeLib.reactDashNativeMod.ScrollViewProps = null,
     initialPage: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     locked: js.UndefOr[scala.Boolean] = js.undefined,
     onChangeTab: /* value */ ChangeTabProperties => scala.Unit = null,
     onScroll: /* value */ scala.Double => scala.Unit = null,
     page: scala.Int | scala.Double = null,
     prerenderingSiblingsNumber: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ScrollableTabView] = null,
+    ref: reactLib.reactMod.LegacyRef[ScrollableTabView] = null,
     renderTabBar: (js.Function1[/* props */ TabBarProps[js.Object], reactLib.reactMod.Global.JSXNs.Element]) | reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewLibNumbers.`false` = null,
     scrollWithoutAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,

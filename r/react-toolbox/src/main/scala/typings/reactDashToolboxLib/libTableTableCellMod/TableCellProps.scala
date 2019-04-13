@@ -44,7 +44,7 @@ object TableCellProps {
   def apply(
     className: java.lang.String = null,
     column: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     numeric: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -70,7 +70,7 @@ object TableCellProps {
     onTouchStart: js.Function = null,
     row: scala.Int | scala.Double = null,
     sorted: reactDashToolboxLib.reactDashToolboxLibStrings.asc | reactDashToolboxLib.reactDashToolboxLibStrings.desc = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tagName: reactDashToolboxLib.reactDashToolboxLibStrings.td | reactDashToolboxLib.reactDashToolboxLibStrings.th = null,
     theme: TableCellTheme = null
   ): TableCellProps = {

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Event[TTarget, TEventKey] extends js.Object {
-  def apply(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): victoryLib.victoryMod.EventCallbackInterface[TTarget, TEventKey] = js.native
+  def apply(event: reactLib.reactMod.SyntheticEvent[_, reactLib.Event]): victoryLib.victoryMod.EventCallbackInterface[TTarget, TEventKey] = js.native
 }
 

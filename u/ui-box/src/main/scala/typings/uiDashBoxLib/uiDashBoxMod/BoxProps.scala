@@ -21,7 +21,7 @@ trait BoxProps
     * Callback that gets passed a ref to inner DOM node (or component if the is prop is set to a
     * React component type).
     */
-  var innerRef: js.UndefOr[js.Function1[/* node */ reactLib.reactMod.ReactNs.ReactNode, _]] = js.undefined
+  var innerRef: js.UndefOr[js.Function1[/* node */ reactLib.reactMod.ReactNode, _]] = js.undefined
   /**
     * Lets you change the underlying element type.
     * You can pass either a string to change the DOM element type, or a React component type to
@@ -47,7 +47,7 @@ object BoxProps {
     boxSizing: uiDashBoxLib.UIBoxProp = null,
     className: java.lang.String = null,
     clearfix: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: /* node */ reactLib.reactMod.ReactNs.ReactNode => _ = null,
+    innerRef: /* node */ reactLib.reactMod.ReactNode => _ = null,
     is: uiDashBoxLib.UIBoxIsProp = null,
     marginX: uiDashBoxLib.UIBoxProp = null,
     marginY: uiDashBoxLib.UIBoxProp = null,

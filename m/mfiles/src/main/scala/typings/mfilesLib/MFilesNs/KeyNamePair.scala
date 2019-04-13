@@ -17,3 +17,8 @@ class KeyNamePair ()
   override def Clone(): mfilesLib.IKeyNamePair = js.native
 }
 
+@JSGlobal("MFiles.KeyNamePair")
+@js.native
+object KeyNamePair
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IKeyNamePair]
+

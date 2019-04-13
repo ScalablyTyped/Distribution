@@ -9,16 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): nodeLib.streamMod.Transform = js.native
-  def apply(mapper: split2Lib.split2Mod.splitNs.Mapper): nodeLib.streamMod.Transform = js.native
-  def apply(mapper: split2Lib.split2Mod.splitNs.Mapper, options: split2Lib.split2Mod.splitNs.Options): nodeLib.streamMod.Transform = js.native
+  def apply(mapper: Mapper): nodeLib.streamMod.Transform = js.native
+  def apply(mapper: Mapper, options: Options): nodeLib.streamMod.Transform = js.native
   def apply(matcher: Matcher): nodeLib.streamMod.Transform = js.native
-  def apply(matcher: Matcher, mapper: split2Lib.split2Mod.splitNs.Mapper): nodeLib.streamMod.Transform = js.native
-  def apply(
-    matcher: Matcher,
-    mapper: split2Lib.split2Mod.splitNs.Mapper,
-    options: split2Lib.split2Mod.splitNs.Options
-  ): nodeLib.streamMod.Transform = js.native
-  def apply(matcher: Matcher, options: split2Lib.split2Mod.splitNs.Options): nodeLib.streamMod.Transform = js.native
-  def apply(options: split2Lib.split2Mod.splitNs.Options): nodeLib.streamMod.Transform = js.native
+  def apply(matcher: Matcher, mapper: Mapper): nodeLib.streamMod.Transform = js.native
+  def apply(matcher: Matcher, mapper: Mapper, options: Options): nodeLib.streamMod.Transform = js.native
+  def apply(matcher: Matcher, options: Options): nodeLib.streamMod.Transform = js.native
+  def apply(options: Options): nodeLib.streamMod.Transform = js.native
 }
 

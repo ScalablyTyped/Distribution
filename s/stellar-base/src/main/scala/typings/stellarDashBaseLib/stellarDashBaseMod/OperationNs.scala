@@ -56,10 +56,6 @@ object OperationNs extends js.Object {
     var selling: stellarDashBaseLib.stellarDashBaseMod.Asset
   }
   
-  trait Inflation
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.Inflation]
-       with stellarDashBaseLib.stellarDashBaseMod._Operation
-  
   trait ManageData
     extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.ManageData]
        with stellarDashBaseLib.stellarDashBaseMod._Operation {
@@ -122,5 +118,6 @@ object OperationNs extends js.Object {
   def pathPayment(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.PathPayment): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
   def payment(options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.Payment): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
   def setOptions[T /* <: stellarDashBaseLib.stellarDashBaseMod.SignerOptions */](options: stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.SetOptions[T]): stellarDashBaseLib.stellarDashBaseMod.Operation = js.native
+  type Inflation = BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.Inflation]
 }
 

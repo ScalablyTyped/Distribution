@@ -14,7 +14,7 @@ class Card ()
 @JSImport("antd", "Card")
 @js.native
 object Card extends js.Object {
-  var Grid: reactLib.reactMod.ReactNs.SFC[antdLib.libCardGridMod.CardGridProps] = js.native
-  var Meta: reactLib.reactMod.ReactNs.SFC[antdLib.libCardMetaMod.CardMetaProps] = js.native
+  var Grid: reactLib.reactMod.SFC[antdLib.libCardGridMod.CardGridProps] = js.native
+  var Meta: reactLib.reactMod.SFC[antdLib.libCardMetaMod.CardMetaProps] = js.native
 }
 

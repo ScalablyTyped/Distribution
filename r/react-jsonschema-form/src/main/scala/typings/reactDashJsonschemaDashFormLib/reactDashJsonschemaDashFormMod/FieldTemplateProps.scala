@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FieldTemplateProps extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement[_]
   var classNames: java.lang.String
-  var description: reactLib.reactMod.ReactNs.ReactElement[_]
+  var description: reactLib.reactMod.ReactElement[_]
   var disabled: scala.Boolean
   var displayLabel: scala.Boolean
-  var errors: reactLib.reactMod.ReactNs.ReactElement[_]
+  var errors: reactLib.reactMod.ReactElement[_]
   var fields: js.Array[Field]
   var formContext: js.Any
-  var help: reactLib.reactMod.ReactNs.ReactElement[_]
+  var help: reactLib.reactMod.ReactElement[_]
   var hidden: scala.Boolean
   var id: java.lang.String
   var label: java.lang.String
@@ -30,15 +30,15 @@ trait FieldTemplateProps extends js.Object {
 object FieldTemplateProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    children: reactLib.reactMod.ReactElement[_],
     classNames: java.lang.String,
-    description: reactLib.reactMod.ReactNs.ReactElement[_],
+    description: reactLib.reactMod.ReactElement[_],
     disabled: scala.Boolean,
     displayLabel: scala.Boolean,
-    errors: reactLib.reactMod.ReactNs.ReactElement[_],
+    errors: reactLib.reactMod.ReactElement[_],
     fields: js.Array[Field],
     formContext: js.Any,
-    help: reactLib.reactMod.ReactNs.ReactElement[_],
+    help: reactLib.reactMod.ReactElement[_],
     hidden: scala.Boolean,
     id: java.lang.String,
     label: java.lang.String,

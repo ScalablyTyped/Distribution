@@ -24,22 +24,14 @@ class LanguageDetector () extends js.Object {
     */
   def addDetector(detector: i18nextCustomDetection): scala.Unit = js.native
   // NOTE: add documentation
-  def cacheUserLanguage(
-    req: expressLib.expressMod.eNs.Request,
-    res: expressLib.expressMod.eNs.Response,
-    detectionOrder: js.Any
-  ): scala.Unit = js.native
+  def cacheUserLanguage(req: expressLib.expressMod.Request, res: expressLib.expressMod.Response, detectionOrder: js.Any): scala.Unit = js.native
   /**
     * @summary Detects the language.
     * @param {Request}         req             The HTTP request.
     * @param {Response}        res             The HTTP response.
     * @param {detectionOrder}  detectionOrder  The detection order.
     */
-  def detect(
-    req: expressLib.expressMod.eNs.Request,
-    res: expressLib.expressMod.eNs.Response,
-    detectionOrder: js.Any
-  ): scala.Unit = js.native
+  def detect(req: expressLib.expressMod.Request, res: expressLib.expressMod.Response, detectionOrder: js.Any): scala.Unit = js.native
   /**
     * @summary Initializes class.
     * @param {any}     services    The services.

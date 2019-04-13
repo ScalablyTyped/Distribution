@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DataTablesNs {
+  //#endregion "language-settings"
+  //#endregion "Settings"
+  //#region "SettingsLegacy"
+  type ArrayStringNode = org.scalablytyped.runtime.StringDictionary[stdLib.Node]
   type CookieCallbackLegacy = js.Function5[
     /* name */ java.lang.String, 
     /* data */ js.Any, 

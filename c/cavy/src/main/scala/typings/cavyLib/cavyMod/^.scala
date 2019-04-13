@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cavy", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def hook[T /* <: js.Object */](
-    component: reactLib.reactMod.ReactNs.ComponentClass[WithTestHook[T], reactLib.reactMod.ReactNs.ComponentState]
-  ): reactLib.reactMod.ReactNs.ComponentClass[T, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def hook[T /* <: js.Object */](component: reactLib.reactMod.ComponentClass[WithTestHook[T], reactLib.reactMod.ComponentState]): reactLib.reactMod.ComponentClass[T, reactLib.reactMod.ComponentState] = js.native
 }
 

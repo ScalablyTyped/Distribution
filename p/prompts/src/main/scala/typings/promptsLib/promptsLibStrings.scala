@@ -11,43 +11,43 @@ object promptsLibStrings {
   
   @js.native
   sealed trait autocomplete
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait confirm
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait invisible
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait list
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait multiselect
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait number
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait password
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait select
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait text
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @js.native
   sealed trait toggle
-    extends promptsLib.promptsMod.promptsNs.PromptType
+    extends promptsLib.promptsMod.PromptType
   
   @scala.inline
   def Answers: Answers = "Answers".asInstanceOf[Answers]

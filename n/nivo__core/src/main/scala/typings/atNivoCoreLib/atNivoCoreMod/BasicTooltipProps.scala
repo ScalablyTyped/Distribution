@@ -11,8 +11,8 @@ trait BasicTooltipProps extends js.Object {
   var format: js.UndefOr[
     js.Function1[/* value */ scala.Double | java.lang.String, scala.Double | java.lang.String]
   ] = js.undefined
-  var id: reactLib.reactMod.ReactNs.ReactNode
-  var renderContent: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var id: reactLib.reactMod.ReactNode
+  var renderContent: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   var theme: stdLib.Pick[Theme, atNivoCoreLib.atNivoCoreLibStrings.tooltip]
   var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
@@ -21,11 +21,11 @@ object BasicTooltipProps {
   @scala.inline
   def apply(
     color: java.lang.String,
-    id: reactLib.reactMod.ReactNs.ReactNode,
+    id: reactLib.reactMod.ReactNode,
     theme: stdLib.Pick[Theme, atNivoCoreLib.atNivoCoreLibStrings.tooltip],
     enableChip: js.UndefOr[scala.Boolean] = js.undefined,
     format: /* value */ scala.Double | java.lang.String => scala.Double | java.lang.String = null,
-    renderContent: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderContent: () => reactLib.reactMod.ReactNode = null,
     value: java.lang.String | scala.Double = null
   ): BasicTooltipProps = {
     val __obj = js.Dynamic.literal(color = color, id = id.asInstanceOf[js.Any], theme = theme)

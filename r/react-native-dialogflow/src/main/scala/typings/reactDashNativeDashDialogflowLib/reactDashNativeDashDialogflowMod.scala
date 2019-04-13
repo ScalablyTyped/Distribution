@@ -11,7 +11,7 @@ object reactDashNativeDashDialogflowMod extends js.Object {
   @JSName("Dialogflow")
   @js.native
   object DialogflowNs extends js.Object {
-    val LANG_CHINESE_CHINA: /* zh-CN */ java.lang.String = js.native
+    val LANG_CHINESE_CHINA: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.`zh-CN` = js.native
     val LANG_CHINESE_HONGKONG: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.`zh-HK` = js.native
     val LANG_CHINESE_TAIWAN: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.`zh-TW` = js.native
     val LANG_DUTCH: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.nl = js.native
@@ -60,7 +60,7 @@ object reactDashNativeDashDialogflowMod extends js.Object {
   @JSName("Dialogflow_V2")
   @js.native
   object DialogflowUnderscoreV2Ns extends js.Object {
-    val LANG_CHINESE_CHINA: /* zh-CN */ java.lang.String = js.native
+    val LANG_CHINESE_CHINA: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.`zh-CN` = js.native
     val LANG_CHINESE_HONGKONG: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.`zh-HK` = js.native
     val LANG_CHINESE_TAIWAN: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.`zh-TW` = js.native
     val LANG_DUTCH: reactDashNativeDashDialogflowLib.reactDashNativeDashDialogflowLibStrings.nl = js.native

@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor/timeout", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[
-      restLib.restMod.restNs.Interceptor[restLib.interceptorTimeoutMod.timeoutNs.Config]
-    ]
+  extends org.scalablytyped.runtime.TopLevel[restLib.restMod.Interceptor[Config]]
 

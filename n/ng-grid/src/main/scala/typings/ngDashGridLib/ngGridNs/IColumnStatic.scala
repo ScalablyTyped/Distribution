@@ -12,7 +12,7 @@ trait IColumnStatic
       /* $scope */ IGridScope, 
       /* grid */ IGridInstance, 
       /* domUtilityService */ ngDashGridLib.ngGridNs.serviceNs.IDomUtilityService, 
-      /* $templateCache */ angularLib.angularMod.angularNs.ITemplateCacheService, 
+      /* $templateCache */ angularLib.angularMod.ITemplateCacheService, 
       /* $utils */ js.Any, 
       IColumn
     ]

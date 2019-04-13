@@ -24,7 +24,7 @@ object SliderProps {
     onAfterChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     onChange: /* value */ js.UndefOr[scala.Double] => scala.Unit = null,
     step: scala.Int | scala.Double = null,
-    tipFormatter: /* value */ js.UndefOr[java.lang.String] => reactLib.reactMod.ReactNs.ReactNode = null,
+    tipFormatter: /* value */ js.UndefOr[java.lang.String] => reactLib.reactMod.ReactNode = null,
     value: scala.Int | scala.Double = null
   ): SliderProps = {
     val __obj = js.Dynamic.literal()

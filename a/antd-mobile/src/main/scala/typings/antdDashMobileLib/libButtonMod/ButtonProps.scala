@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 trait ButtonProps
   extends antdDashMobileLib.libButtonPropsTypeMod.ButtonPropsType {
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
-  var activeStyle: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var activeStyle: js.UndefOr[scala.Boolean | reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ButtonProps {
   @scala.inline
   def apply(
     activeClassName: java.lang.String = null,
-    activeStyle: scala.Boolean | reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeStyle: scala.Boolean | reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
     size: antdDashMobileLib.antdDashMobileLibStrings.large | antdDashMobileLib.antdDashMobileLibStrings.small = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: antdDashMobileLib.antdDashMobileLibStrings.primary | antdDashMobileLib.antdDashMobileLibStrings.warning | antdDashMobileLib.antdDashMobileLibStrings.ghost = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()

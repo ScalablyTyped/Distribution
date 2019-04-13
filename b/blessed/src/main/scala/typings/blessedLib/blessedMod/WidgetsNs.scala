@@ -1415,6 +1415,10 @@ object WidgetsNs extends js.Object {
       * Type of the node (e.g. box).
       */
     var `type`: java.lang.String = js.native
+    /* InferMemberOverrides */
+    override def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
     /**
       * Append a node to this node's children.
       */
@@ -1427,12 +1431,18 @@ object WidgetsNs extends js.Object {
       * Remove node from its parent.
       */
     def detach(): scala.Unit = js.native
+    /* InferMemberOverrides */
+    override def emit(event: java.lang.String, args: js.Any*): scala.Boolean = js.native
+    /* InferMemberOverrides */
+    override def emit(event: js.Symbol, args: js.Any*): scala.Boolean = js.native
     def emitAncestors(): scala.Unit = js.native
     /**
       * Emit event for element, and recursively emit same event for all descendants.
       */
     def emitDescendants(): scala.Unit = js.native
     def emitDescendants(`type`: java.lang.String, args: js.Any*): scala.Unit = js.native
+    /* InferMemberOverrides */
+    override def eventNames(): js.Array[java.lang.String | js.Symbol] = js.native
     def forAncestors(iter: js.Function1[/* node */ this.type, scala.Unit], s: js.Any): scala.Unit = js.native
     def forDescendants(iter: js.Function1[/* node */ this.type, scala.Unit], s: js.Any): scala.Unit = js.native
     def free(): scala.Unit = js.native
@@ -1440,6 +1450,8 @@ object WidgetsNs extends js.Object {
       * Get user property with a potential default value.
       */
     def get[T](name: java.lang.String, `def`: T): T = js.native
+    /* InferMemberOverrides */
+    override def getMaxListeners(): scala.Double = js.native
     def hasAncestor(target: Node): scala.Boolean = js.native
     def hasDescendant(target: Node): scala.Unit = js.native
     /**
@@ -1454,19 +1466,64 @@ object WidgetsNs extends js.Object {
       * Insert a node to this node's children before the reference node.
       */
     def insertBefore(node: Node, refNode: Node): scala.Unit = js.native
+    /* InferMemberOverrides */
+    override def listenerCount(`type`: java.lang.String): scala.Double = js.native
+    /* InferMemberOverrides */
+    override def listenerCount(`type`: js.Symbol): scala.Double = js.native
+    /* InferMemberOverrides */
+    override def listeners(event: java.lang.String): js.Array[js.Function] = js.native
+    /* InferMemberOverrides */
+    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+    /* InferMemberOverrides */
+    override def off(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
     def on(event: NodeEventType, callback: js.Function1[/* arg */ this.type, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def on(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
     /**
       * Prepend a node to this node's children.
       */
     def prepend(node: Node): scala.Unit = js.native
+    // Added in Node 6...
+    /* InferMemberOverrides */
+    override def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def rawListeners(event: java.lang.String): js.Array[js.Function] = js.native
+    /* InferMemberOverrides */
+    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
     /**
       * Remove child node from node.
       */
     def remove(node: Node): scala.Unit = js.native
+    /* InferMemberOverrides */
+    override def removeAllListeners(): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeAllListeners(event: java.lang.String): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeAllListeners(event: js.Symbol): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
     /**
       * Set user property to value.
       */
     def set(name: java.lang.String, value: js.Any): scala.Unit = js.native
+    /* InferMemberOverrides */
+    override def setMaxListeners(n: scala.Double): this.type = js.native
   }
   
   trait NodeChildProcessExecOptions extends js.Object {

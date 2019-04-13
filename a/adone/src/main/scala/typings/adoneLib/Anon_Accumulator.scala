@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Accumulator
   extends org.scalablytyped.runtime.Instantiable1[/* fn */ js.Function, adoneLib.benchmarkMod.Benchmark] {
-  var options: benchmarkLib.benchmarkMod.BenchmarkNs.Options = js.native
-  var platform: benchmarkLib.benchmarkMod.BenchmarkNs.Platform = js.native
-  var support: benchmarkLib.benchmarkMod.BenchmarkNs.Support = js.native
+  var options: benchmarkLib.benchmarkMod.Options = js.native
+  var platform: benchmarkLib.benchmarkMod.Platform = js.native
+  var support: benchmarkLib.benchmarkMod.Support = js.native
   var version: java.lang.String = js.native
   def deepClone[T](value: T): T = js.native
   def each(obj: js.Array[_], callback: js.Function): scala.Unit = js.native

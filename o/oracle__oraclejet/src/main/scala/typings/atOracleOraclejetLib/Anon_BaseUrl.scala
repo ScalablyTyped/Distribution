@@ -9,7 +9,7 @@ trait Anon_BaseUrl extends js.Object {
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
   var rootInstanceName: js.UndefOr[java.lang.String] = js.undefined
   var urlAdapter: js.UndefOr[
-    atOracleOraclejetLib.ojrouterMod.RouterNs.urlPathAdapter | atOracleOraclejetLib.ojrouterMod.RouterNs.urlParamAdapter
+    atOracleOraclejetLib.ojrouterMod.urlPathAdapter | atOracleOraclejetLib.ojrouterMod.urlParamAdapter
   ] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object Anon_BaseUrl {
   def apply(
     baseUrl: java.lang.String = null,
     rootInstanceName: java.lang.String = null,
-    urlAdapter: atOracleOraclejetLib.ojrouterMod.RouterNs.urlPathAdapter | atOracleOraclejetLib.ojrouterMod.RouterNs.urlParamAdapter = null
+    urlAdapter: atOracleOraclejetLib.ojrouterMod.urlPathAdapter | atOracleOraclejetLib.ojrouterMod.urlParamAdapter = null
   ): Anon_BaseUrl = {
     val __obj = js.Dynamic.literal()
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)

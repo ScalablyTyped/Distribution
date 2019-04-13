@@ -15,17 +15,9 @@ trait Cache[K, V] extends js.Object {
   def reset(): scala.Unit = js.native
   def set(key: K, value: V): scala.Boolean = js.native
   def set(key: K, value: V, options: java.lang.String): scala.Boolean = js.native
-  def set(
-    key: K,
-    value: V,
-    options: staleDashLruDashCacheLib.staleDashLruDashCacheMod.CacheNs.SetOptions[K, V]
-  ): scala.Boolean = js.native
+  def set(key: K, value: V, options: SetOptions[K, V]): scala.Boolean = js.native
   def size(): scala.Double = js.native
   def values(): js.Array[V] = js.native
-  def wrap(
-    key: K,
-    revalidate: staleDashLruDashCacheLib.staleDashLruDashCacheMod.CacheNs.RevalidationCallback[K, V],
-    callback: staleDashLruDashCacheLib.staleDashLruDashCacheMod.CacheNs.OptionsCallback[K, V]
-  ): scala.Unit = js.native
+  def wrap(key: K, revalidate: RevalidationCallback[K, V], callback: OptionsCallback[K, V]): scala.Unit = js.native
 }
 

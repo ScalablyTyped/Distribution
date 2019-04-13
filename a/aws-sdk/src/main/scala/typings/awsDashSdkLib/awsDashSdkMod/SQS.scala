@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class SQS ()
   extends awsDashSdkLib.clientsAllMod.SQS {
-  def this(options: awsDashSdkLib.clientsSqsMod.SQSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsSqsMod.ClientConfiguration) = this()
 }
 

@@ -40,8 +40,5 @@ object StashNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.stashMod.StashNs.FLAGS with scala.Double] = js.native
   }
   
-  type APPLY_FLAGS = nodegitLib.stashMod.StashNs.APPLY_FLAGS
-  type APPLY_PROGRESS = nodegitLib.stashMod.StashNs.APPLY_PROGRESS
-  type FLAGS = nodegitLib.stashMod.StashNs.FLAGS
 }
 

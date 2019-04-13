@@ -21,7 +21,7 @@ class Output protected () extends js.Object {
   var streamJs: nodeLib.streamMod.Readable = js.native
   var writeDtsAsync: js.Any = js.native
   var writeJsAsync: js.Any = js.native
-  def diagnostic(info: typescriptLib.typescriptMod.tsNs.Diagnostic): scala.Unit = js.native
+  def diagnostic(info: typescriptLib.typescriptMod.Diagnostic): scala.Unit = js.native
   def error(error: gulpDashTypescriptLib.releaseReporterMod.TypeScriptError): scala.Unit = js.native
   def finish(result: gulpDashTypescriptLib.releaseReporterMod.CompilationResult): scala.Unit = js.native
   def writeDts(

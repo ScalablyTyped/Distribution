@@ -17,8 +17,8 @@ object ListProps {
   @scala.inline
   def apply(
     children: antdDashMobileDashRnLib.antdDashMobileDashRnLibNumbers.`false` | reactLib.reactMod.Global.JSXNs.Element | js.Array[reactLib.reactMod.Global.JSXNs.Element] = null,
-    renderFooter: js.Function0[reactLib.reactMod.ReactNs.ReactType[_]] | java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
-    renderHeader: js.Function0[reactLib.reactMod.ReactNs.ReactType[_]] | java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
+    renderFooter: js.Function0[reactLib.reactMod.ReactType[_]] | java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
+    renderHeader: js.Function0[reactLib.reactMod.ReactType[_]] | java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: antdDashMobileDashRnLib.Anon_ArrowArrowV = null
   ): ListProps = {

@@ -7,52 +7,29 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents an XML node in a tree in a document.
-  *
+  * 
   * @remarks
-  * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this interface.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-  *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-  *  </table>
+  * **Hosts**: Word
   */
 @js.native
 trait CustomXmlNode extends js.Object {
   /**
     * Gets the base name of the node without the namespace prefix, if one exists.
-    *
-    * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     */
   var baseName: java.lang.String = js.native
   /**
     * Retrieves the string GUID of the CustomXMLPart.
-    *
-    * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     */
   var namespaceUri: java.lang.String = js.native
   /**
     * Gets the type of the CustomXMLNode.
-    *
-    * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     */
   var nodeType: java.lang.String = js.native
   /**
     * Gets the node value.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -69,7 +46,7 @@ trait CustomXmlNode extends js.Object {
     * Gets the nodes associated with the XPath expression.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xPath The XPath expression that specifies the nodes to get. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -91,7 +68,7 @@ trait CustomXmlNode extends js.Object {
     * Gets the text of an XML node in a custom XML part.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -108,7 +85,7 @@ trait CustomXmlNode extends js.Object {
     * Gets the node's XML.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -125,7 +102,7 @@ trait CustomXmlNode extends js.Object {
     * Sets the node value.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param value The value to be set on the node
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -143,10 +120,7 @@ trait CustomXmlNode extends js.Object {
     * Asynchronously sets the text of an XML node in a custom XML part.
     *
     * @remarks
-    * <table>
-    *   <tr><td>Hosts</td><td>Word</td></tr>
-    *   <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr>
-    * </table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param text Required. The text value of the XML node.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -164,7 +138,7 @@ trait CustomXmlNode extends js.Object {
     * Sets the node XML.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xml The XML to be set on the node
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.

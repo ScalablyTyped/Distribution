@@ -54,7 +54,7 @@ trait IAlertProps
     */
   var onCancel: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -66,7 +66,7 @@ trait IAlertProps
   var onClose: js.UndefOr[
     js.Function2[
       /* confirmed */ scala.Boolean, 
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -77,7 +77,7 @@ trait IAlertProps
     */
   var onConfirm: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -90,7 +90,7 @@ trait IAlertProps
   /**
     * CSS styles to apply to the alert.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
     * This is used by React `CSSTransition` to know when a transition completes and must match
@@ -112,15 +112,15 @@ object IAlertProps {
     confirmButtonText: java.lang.String = null,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
-    onCancel: /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
-    onClose: (/* confirmed */ scala.Boolean, /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
+    onCancel: /* evt */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onClose: (/* confirmed */ scala.Boolean, /* evt */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]]) => scala.Unit = null,
     onClosed: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onClosing: /* node */ stdLib.HTMLElement => scala.Unit = null,
-    onConfirm: /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
+    onConfirm: /* evt */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]] => scala.Unit = null,
     onOpened: /* node */ stdLib.HTMLElement => scala.Unit = null,
     onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     portalContainer: stdLib.HTMLElement = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDuration: scala.Int | scala.Double = null
   ): IAlertProps = {
     val __obj = js.Dynamic.literal(isOpen = isOpen)

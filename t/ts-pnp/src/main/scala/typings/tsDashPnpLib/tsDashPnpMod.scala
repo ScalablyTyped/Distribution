@@ -11,13 +11,13 @@ object tsDashPnpMod extends js.Object {
   def resolveModuleName(
     moduleName: java.lang.String,
     containingFile: java.lang.String,
-    options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
-    moduleResolutionHost: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    moduleResolutionHost: typescriptLib.typescriptMod.ModuleResolutionHost,
     realResolveModuleName: js.Function4[
       /* moduleName */ java.lang.String, 
       /* containingFile */ java.lang.String, 
-      /* options */ typescriptLib.typescriptMod.tsNs.CompilerOptions, 
-      /* moduleResolutionHost */ typescriptLib.typescriptMod.tsNs.ModuleResolutionHost, 
+      /* options */ typescriptLib.typescriptMod.CompilerOptions, 
+      /* moduleResolutionHost */ typescriptLib.typescriptMod.ModuleResolutionHost, 
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ts.ResolvedModuleNameWithFallbackLocations */ _
     ]
   ): js.Any = js.native

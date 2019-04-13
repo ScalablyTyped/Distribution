@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def cloneFragment(
-    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event],
+    event: reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event],
     editor: slateLib.slateMod.Editor
   ): scala.Unit = js.native
   def cloneFragment(
-    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event],
+    event: reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event],
     editor: slateLib.slateMod.Editor,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
@@ -27,14 +27,14 @@ object ^ extends js.Object {
   def findRange(selection: slateLib.slateMod.Range, editor: slateLib.slateMod.Editor): slateLib.slateMod.Range = js.native
   def findRange(selection: stdLib.Selection, editor: slateLib.slateMod.Editor): slateLib.slateMod.Range = js.native
   def getEventRange(
-    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event],
+    event: reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event],
     editor: slateLib.slateMod.Editor
   ): slateLib.slateMod.Range = js.native
   def getEventRange(event: stdLib.Event, editor: slateLib.slateMod.Editor): slateLib.slateMod.Range = js.native
-  def getEventTransfer(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): slateDashReactLib.Anon_NodeType = js.native
+  def getEventTransfer(event: reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event]): slateDashReactLib.Anon_NodeType = js.native
   def getEventTransfer(event: stdLib.Event): slateDashReactLib.Anon_NodeType = js.native
   def setEventTransfer(
-    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event],
+    event: reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event],
     `type`: SlateType,
     data: js.Any
   ): scala.Unit = js.native

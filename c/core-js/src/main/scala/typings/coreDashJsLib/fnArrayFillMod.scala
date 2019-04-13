@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/fn/array/fill", JSImport.Namespace)
 @js.native
-object fnArrayFillMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayEndStart]
+object fnArrayFillMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T], value: T): coreDashJsLib.Array[T] = js.native
+  def apply[T](array: stdLib.ArrayLike[T], value: T, start: scala.Double): coreDashJsLib.Array[T] = js.native
+  def apply[T](array: stdLib.ArrayLike[T], value: T, start: scala.Double, end: scala.Double): coreDashJsLib.Array[T] = js.native
+}
 

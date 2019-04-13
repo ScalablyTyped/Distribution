@@ -14,3 +14,13 @@ import scala.scalajs.js.annotation._
 */
 trait LabelColors extends js.Object
 
+@JSImport("react-foundation/enums", "LabelColors")
+@js.native
+object LabelColors extends js.Object {
+  var ALERT: reactDashFoundationLib.enumsMod.BadgeColors = js.native
+  var INFO: reactDashFoundationLib.enumsMod.BadgeColors = js.native
+  var SECONDARY: reactDashFoundationLib.enumsMod.BadgeColors = js.native
+  var SUCCESS: reactDashFoundationLib.enumsMod.BadgeColors = js.native
+  var WARNING: reactDashFoundationLib.enumsMod.BadgeColors = js.native
+}
+

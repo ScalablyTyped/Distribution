@@ -6,16 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_From extends js.Object {
-  var from: codemirrorLib.codemirrorMod.CodeMirrorNs.Position
-  var to: codemirrorLib.codemirrorMod.CodeMirrorNs.Position
+  var from: codemirrorLib.codemirrorMod.Position
+  var to: codemirrorLib.codemirrorMod.Position
 }
 
 object Anon_From {
   @scala.inline
-  def apply(
-    from: codemirrorLib.codemirrorMod.CodeMirrorNs.Position,
-    to: codemirrorLib.codemirrorMod.CodeMirrorNs.Position
-  ): Anon_From = {
+  def apply(from: codemirrorLib.codemirrorMod.Position, to: codemirrorLib.codemirrorMod.Position): Anon_From = {
     val __obj = js.Dynamic.literal(from = from, to = to)
   
     __obj.asInstanceOf[Anon_From]

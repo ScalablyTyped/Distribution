@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Writer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Writer */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Writer = js.native
   val writer: fpDashTsLib.libFunctorMod.Functor2[URI] = js.native
   def censor[W, A](fa: Writer[W, A], f: js.Function1[/* w */ W, W]): Writer[W, A] = js.native
   def getMonad[W](M: fpDashTsLib.libMonoidMod.Monoid[W]): fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Writer, W] = js.native

@@ -30,29 +30,29 @@ trait cropperjs extends js.Object {
   /**
     * Output the canvas (image wrapper) position and size data.
     */
-  def getCanvasData(): cropperjsLib.cropperjsMod.cropperjsNs.CanvasData with cropperjsLib.Anon_NaturalHeight = js.native
+  def getCanvasData(): CanvasData with cropperjsLib.Anon_NaturalHeight = js.native
   /**
     * Output the container size data.
     */
-  def getContainerData(): cropperjsLib.cropperjsMod.cropperjsNs.ContainerData = js.native
+  def getContainerData(): ContainerData = js.native
   /**
     * Output the crop box position and size data.
     */
-  def getCropBoxData(): cropperjsLib.cropperjsMod.cropperjsNs.CropBoxData = js.native
+  def getCropBoxData(): CropBoxData = js.native
   /**
     * Get a canvas drawn the cropped image.
     */
   def getCroppedCanvas(): stdLib.HTMLCanvasElement = js.native
-  def getCroppedCanvas(options: cropperjsLib.cropperjsMod.cropperjsNs.CroppedCanvasOptions): stdLib.HTMLCanvasElement = js.native
+  def getCroppedCanvas(options: CroppedCanvasOptions): stdLib.HTMLCanvasElement = js.native
   /**
     * Output the cropped area position and size data (base on the original image).
     */
-  def getData(): cropperjsLib.cropperjsMod.cropperjsNs.Data = js.native
-  def getData(rounded: scala.Boolean): cropperjsLib.cropperjsMod.cropperjsNs.Data = js.native
+  def getData(): Data = js.native
+  def getData(rounded: scala.Boolean): Data = js.native
   /**
     * Output the image position, size and other related data.
     */
-  def getImageData(): cropperjsLib.cropperjsMod.cropperjsNs.ImageData = js.native
+  def getImageData(): ImageData = js.native
   /**
     * Move the canvas (image wrapper) with relative offsets.
     * @param offsetX Moving size (px) in the horizontal direction.
@@ -112,15 +112,15 @@ trait cropperjs extends js.Object {
   /**
     * Change the canvas (image wrapper) position and size with new data.
     */
-  def setCanvasData(data: stdLib.Partial[cropperjsLib.cropperjsMod.cropperjsNs.CanvasData]): scala.Unit = js.native
+  def setCanvasData(data: stdLib.Partial[CanvasData]): scala.Unit = js.native
   /**
     * Change the crop box position and size with new data.
     */
-  def setCropBoxData(data: stdLib.Partial[cropperjsLib.cropperjsMod.cropperjsNs.CropBoxData]): scala.Unit = js.native
+  def setCropBoxData(data: stdLib.Partial[CropBoxData]): scala.Unit = js.native
   /**
     * Change the cropped area position and size with new data (base on the original image).
     */
-  def setData(data: stdLib.Partial[cropperjsLib.cropperjsMod.cropperjsNs.Data]): scala.Unit = js.native
+  def setData(data: stdLib.Partial[Data]): scala.Unit = js.native
   /**
     * Change the drag mode.
     */

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Async extends js.Object {
   var async: js.UndefOr[scala.Boolean] = js.undefined
-  var transport: js.UndefOr[atStorybookChannelsLib.atStorybookChannelsMod.ChannelNs.Transport] = js.undefined
+  var transport: js.UndefOr[atStorybookChannelsLib.atStorybookChannelsMod.Transport] = js.undefined
 }
 
 object Anon_Async {
   @scala.inline
   def apply(
     async: js.UndefOr[scala.Boolean] = js.undefined,
-    transport: atStorybookChannelsLib.atStorybookChannelsMod.ChannelNs.Transport = null
+    transport: atStorybookChannelsLib.atStorybookChannelsMod.Transport = null
   ): Anon_Async = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)

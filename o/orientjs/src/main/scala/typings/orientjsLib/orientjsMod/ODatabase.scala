@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("orientjs", "ODatabase")
 @js.native
-class ODatabase ()
-  extends orientjsLib.orientjsMod.orientjsNs.ODatabase {
+class ODatabase () extends Db {
   def this(config: orientjsLib.Anon_Host) = this()
 }
 

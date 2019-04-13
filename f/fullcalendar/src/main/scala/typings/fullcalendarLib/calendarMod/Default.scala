@@ -12,9 +12,9 @@ class Default protected () extends js.Object {
   var businessHourGenerator: fullcalendarLib.businessHourGeneratorMod.default = js.native
   var constraints: fullcalendarLib.constraintsMod.default = js.native
   var contentEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery = js.native
-  var currentDate: momentLib.momentMod.momentNs.Moment = js.native
-  var defaultAllDayEventDuration: momentLib.momentMod.momentNs.Duration = js.native
-  var defaultTimedEventDuration: momentLib.momentMod.momentNs.Duration = js.native
+  var currentDate: momentLib.momentMod.Moment = js.native
+  var defaultAllDayEventDuration: momentLib.momentMod.Duration = js.native
+  var defaultTimedEventDuration: momentLib.momentMod.Duration = js.native
   var el: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery = js.native
   var eventManager: fullcalendarLib.eventManagerMod.default = js.native
   var footer: fullcalendarLib.toolbarMod.default = js.native
@@ -49,7 +49,7 @@ class Default protected () extends js.Object {
   var windowResizeProxy: js.Any = js.native
   def _calcSize(): scala.Unit = js.native
   def addEventSource(sourceInput: fullcalendarLib.srcTypesInputDashTypesMod.EventSourceInput): scala.Unit = js.native
-  def applyTimezone(date: momentLib.momentMod.momentNs.Moment): momentLib.momentMod.momentNs.Moment = js.native
+  def applyTimezone(date: momentLib.momentMod.Moment): momentLib.momentMod.Moment = js.native
   def bindViewHandlers(view: js.Any): scala.Unit = js.native
   def buildSelectFootprint(zonedStartInput: fullcalendarLib.srcTypesInputDashTypesMod.MomentInput): fullcalendarLib.componentFootprintMod.default = js.native
   def buildSelectFootprint(
@@ -70,19 +70,19 @@ class Default protected () extends js.Object {
   def footprintToDateProfile(componentFootprint: js.Any, ignoreEnd: scala.Boolean): fullcalendarLib.eventDateProfileMod.default = js.native
   def forceFreezeContentHeight(): scala.Unit = js.native
   def freezeContentHeight(): scala.Unit = js.native
-  def getDate(): momentLib.momentMod.momentNs.Moment = js.native
-  def getDefaultEventEnd(allDay: scala.Boolean, zonedStart: momentLib.momentMod.momentNs.Moment): momentLib.momentMod.momentNs.Moment = js.native
-  def getEventEnd(event: js.Any): momentLib.momentMod.momentNs.Moment = js.native
+  def getDate(): momentLib.momentMod.Moment = js.native
+  def getDefaultEventEnd(allDay: scala.Boolean, zonedStart: momentLib.momentMod.Moment): momentLib.momentMod.Moment = js.native
+  def getEventEnd(event: js.Any): momentLib.momentMod.Moment = js.native
   def getEventSourceById(id: js.Any): fullcalendarLib.eventSourceMod.default = js.native
   def getEventSources(): fullcalendarLib.eventSourceMod.default = js.native
   def getIsAmbigTimezone(): scala.Boolean = js.native
-  def getNow(): momentLib.momentMod.momentNs.Moment = js.native
+  def getNow(): momentLib.momentMod.Moment = js.native
   def getSuggestedViewHeight(): scala.Double = js.native
   def getView(): fullcalendarLib.viewMod.default = js.native
   def gotoDate(zonedDateInput: js.Any): scala.Unit = js.native
   def hasHandlers(`type`: js.Any): js.Any = js.native
   def hasPublicHandlers(name: java.lang.String): scala.Boolean = js.native
-  def humanizeDuration(duration: momentLib.momentMod.momentNs.Duration): java.lang.String = js.native
+  def humanizeDuration(duration: momentLib.momentMod.Duration): java.lang.String = js.native
   def incrementDate(delta: js.Any): scala.Unit = js.native
   def initCurrentDate(): scala.Unit = js.native
   def initEventManager(): scala.Unit = js.native
@@ -95,9 +95,9 @@ class Default protected () extends js.Object {
   def listenTo(other: js.Any, arg: js.Any): js.Any = js.native
   def listenTo(other: js.Any, arg: js.Any, callback: js.Any): js.Any = js.native
   def localizeMoment(mom: js.Any): scala.Unit = js.native
-  def moment(args: js.Any*): momentLib.momentMod.momentNs.Moment = js.native
-  def msToMoment(ms: scala.Double, forceAllDay: scala.Boolean): momentLib.momentMod.momentNs.Moment = js.native
-  def msToUtcMoment(ms: scala.Double, forceAllDay: scala.Boolean): momentLib.momentMod.momentNs.Moment = js.native
+  def moment(args: js.Any*): momentLib.momentMod.Moment = js.native
+  def msToMoment(ms: scala.Double, forceAllDay: scala.Boolean): momentLib.momentMod.Moment = js.native
+  def msToUtcMoment(ms: scala.Double, forceAllDay: scala.Boolean): momentLib.momentMod.Moment = js.native
   def next(): scala.Unit = js.native
   def nextYear(): scala.Unit = js.native
   def off(types: js.Any, handler: js.Any): js.Any = js.native
@@ -133,7 +133,7 @@ class Default protected () extends js.Object {
   def renderHeader(): scala.Unit = js.native
   def renderView(): scala.Unit = js.native
   def renderView(viewType: java.lang.String): scala.Unit = js.native
-  def requestEvents(start: momentLib.momentMod.momentNs.Moment, end: momentLib.momentMod.momentNs.Moment): js.Any = js.native
+  def requestEvents(start: momentLib.momentMod.Moment, end: momentLib.momentMod.Moment): js.Any = js.native
   def rerenderEvents(): scala.Unit = js.native
   def select(zonedStartInput: fullcalendarLib.srcTypesInputDashTypesMod.MomentInput): scala.Unit = js.native
   def select(
@@ -155,8 +155,8 @@ class Default protected () extends js.Object {
   def updateViewSize(): scala.Boolean = js.native
   def updateViewSize(isResize: scala.Boolean): scala.Boolean = js.native
   def windowResize(ev: jqueryLib.JQueryEventObject): scala.Unit = js.native
-  def zoomTo(newDate: momentLib.momentMod.momentNs.Moment): scala.Unit = js.native
-  def zoomTo(newDate: momentLib.momentMod.momentNs.Moment, viewType: java.lang.String): scala.Unit = js.native
+  def zoomTo(newDate: momentLib.momentMod.Moment): scala.Unit = js.native
+  def zoomTo(newDate: momentLib.momentMod.Moment, viewType: java.lang.String): scala.Unit = js.native
 }
 
 @JSImport("fullcalendar/Calendar", JSImport.Default)

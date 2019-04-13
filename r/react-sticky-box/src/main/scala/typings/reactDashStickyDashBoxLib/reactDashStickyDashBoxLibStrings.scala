@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object reactDashStickyDashBoxLibStrings {
   @js.native
   sealed trait relative
-    extends reactDashStickyDashBoxLib.reactDashStickyDashBoxMod.ReactStickyBoxNs.StickyBoxMode
+    extends reactDashStickyDashBoxLib.reactDashStickyDashBoxMod.StickyBoxMode
   
   @js.native
   sealed trait stickyBottom
-    extends reactDashStickyDashBoxLib.reactDashStickyDashBoxMod.ReactStickyBoxNs.StickyBoxMode
+    extends reactDashStickyDashBoxLib.reactDashStickyDashBoxMod.StickyBoxMode
   
   @js.native
   sealed trait stickyTop
-    extends reactDashStickyDashBoxLib.reactDashStickyDashBoxMod.ReactStickyBoxNs.StickyBoxMode
+    extends reactDashStickyDashBoxLib.reactDashStickyDashBoxMod.StickyBoxMode
   
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]

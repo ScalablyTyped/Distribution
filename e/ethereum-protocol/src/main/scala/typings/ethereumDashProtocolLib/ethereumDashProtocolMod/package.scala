@@ -9,6 +9,7 @@ package object ethereumDashProtocolMod {
   type BlockParam = BlockParamLiteral | scala.Double
   type ContractAbi = js.Array[AbiDefinition]
   type ContractEventArg = java.lang.String | bignumberDotJsLib.bignumberDotJsMod.default | scala.Double | scala.Boolean
+  type DecodedLogArgs = org.scalablytyped.runtime.StringDictionary[ContractEventArg]
   type JSONRPCErrorCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
     /* result */ js.UndefOr[JSONRPCResponsePayload], 

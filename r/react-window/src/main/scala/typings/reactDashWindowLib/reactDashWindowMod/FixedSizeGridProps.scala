@@ -19,7 +19,7 @@ trait FixedSizeGridProps extends GridProps {
 object FixedSizeGridProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ComponentType[GridChildComponentProps],
+    children: reactLib.reactMod.ComponentType[GridChildComponentProps],
     columnCount: scala.Double,
     columnWidth: scala.Double,
     height: scala.Double,
@@ -31,19 +31,19 @@ object FixedSizeGridProps {
     initialScrollLeft: scala.Int | scala.Double = null,
     initialScrollTop: scala.Int | scala.Double = null,
     innerElementType: ReactElementType = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] = null,
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     itemKey: GridItemKeySelector = null,
     onItemsRendered: /* props */ GridOnItemsRenderedProps => _ = null,
     onScroll: /* props */ GridOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
-    outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    outerRef: reactLib.reactMod.Ref[_] = null,
     outerTagName: java.lang.String = null,
     overscanColumnsCount: scala.Int | scala.Double = null,
     overscanCount: scala.Int | scala.Double = null,
     overscanRowsCount: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): FixedSizeGridProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, columnWidth = columnWidth, height = height, rowCount = rowCount, rowHeight = rowHeight, width = width)

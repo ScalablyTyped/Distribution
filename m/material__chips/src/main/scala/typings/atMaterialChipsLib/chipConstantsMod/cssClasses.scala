@@ -27,10 +27,11 @@ object cssClasses {
     LEADING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--leading`,
     SELECTED: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip--selected`,
     TEXT: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__text`,
-    TRAILING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--trailing`
+    TRAILING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--trailing`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(CHECKMARK = CHECKMARK, CHIP = CHIP, CHIP_EXIT = CHIP_EXIT, HIDDEN_LEADING_ICON = HIDDEN_LEADING_ICON, LEADING_ICON = LEADING_ICON, SELECTED = SELECTED, TEXT = TEXT, TRAILING_ICON = TRAILING_ICON)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

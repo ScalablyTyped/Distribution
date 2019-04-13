@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/fn/array/splice", JSImport.Namespace)
 @js.native
-object fnArraySpliceMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayDeleteCount]
+object fnArraySpliceMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T], start: scala.Double): coreDashJsLib.Array[T] = js.native
+  def apply[T](array: stdLib.ArrayLike[T], start: scala.Double, deleteCount: scala.Double, items: T*): coreDashJsLib.Array[T] = js.native
+}
 

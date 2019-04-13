@@ -40,7 +40,7 @@ trait Anon_AddEventListenerAddress extends js.Object {
   		 */
   val architecture: java.lang.String = js.native
   /**
-  		 * System's unused memory, measured in megabytes on iOS and bytes on Android.
+  		 * System's unused memory, measured in bytes.
   		 */
   val availableMemory: scala.Double = js.native
   /**
@@ -121,13 +121,21 @@ trait Anon_AddEventListenerAddress extends js.Object {
   		 */
   val ostype: java.lang.String = js.native
   /**
-  		 * Number of processing cores.
+  		 * Number of logical processing cores.
   		 */
   val processorCount: scala.Double = js.native
   /**
   		 * Short name of the JavaScript runtime in use.
   		 */
   val runtime: java.lang.String = js.native
+  /**
+  		 * System's total memory, measured in bytes.
+  		 */
+  val totalMemory: scala.Double = js.native
+  /**
+  		 * System uptime since last boot in seconds.
+  		 */
+  val uptime: scala.Double = js.native
   /**
   		 * System name, if set. On iOS, this can be found in Settings > General > About > Name.
   		 */
@@ -148,6 +156,10 @@ trait Anon_AddEventListenerAddress extends js.Object {
   		 * Returns whether the system is configured with a default application to handle the URL's protocol.
   		 */
   def canOpenURL(url: java.lang.String): scala.Boolean = js.native
+  /**
+  		 * Returns an array of basic cpu information for all logical processors
+  		 */
+  def cpus(): js.Array[CPU] = js.native
   /**
   		 * Creates a globally-unique identifier.
   		 */
@@ -252,6 +264,14 @@ trait Anon_AddEventListenerAddress extends js.Object {
   		 * Gets the value of the <Titanium.Platform.runtime> property.
   		 */
   def getRuntime(): java.lang.String = js.native
+  /**
+  		 * Gets the value of the <Titanium.Platform.totalMemory> property.
+  		 */
+  def getTotalMemory(): scala.Double = js.native
+  /**
+  		 * Gets the value of the <Titanium.Platform.uptime> property.
+  		 */
+  def getUptime(): scala.Double = js.native
   /**
   		 * Gets the value of the <Titanium.Platform.username> property.
   		 */

@@ -16,5 +16,6 @@ package object ldapjsMod {
     /* result */ js.UndefOr[js.Any], 
     scala.Unit
   ]
-  type SearchCallBack = js.Function2[/* error */ Error, /* result */ nodeLib.eventsMod.EventEmitter, scala.Unit]
+  type SearchCallBack = js.Function2[/* error */ Error | scala.Null, /* result */ SearchCallbackResponse, scala.Unit]
+  type SearchReference = js.Any
 }

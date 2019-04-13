@@ -32,6 +32,6 @@ trait Styles extends js.Object {
   var singleValue: js.UndefOr[styleFn] = js.native
   @JSName("valueContainer")
   var valueContainer_Original: styleFn = js.native
-  def valueContainer(base: reactLib.reactMod.ReactNs.CSSProperties, state: js.Any): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def valueContainer(base: reactLib.reactMod.CSSProperties, state: js.Any): reactLib.reactMod.CSSProperties = js.native
 }
 

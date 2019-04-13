@@ -12,7 +12,7 @@ class Strategy protected () extends js.Object {
   def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
   def this(options: StrategyOptions, verify: VerifyFunction) = this()
   var name: java.lang.String = js.native
-  def authenticate(req: expressLib.expressMod.eNs.Request): scala.Unit = js.native
-  def authenticate(req: expressLib.expressMod.eNs.Request, options: js.Object): scala.Unit = js.native
+  def authenticate(req: expressLib.expressMod.Request): scala.Unit = js.native
+  def authenticate(req: expressLib.expressMod.Request, options: js.Object): scala.Unit = js.native
 }
 

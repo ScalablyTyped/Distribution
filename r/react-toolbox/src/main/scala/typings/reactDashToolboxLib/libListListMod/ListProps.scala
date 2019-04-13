@@ -10,7 +10,7 @@ trait ListProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, each element in the list will have a ripple effect on click
     * @default false
@@ -30,9 +30,9 @@ trait ListProps
 object ListProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -57,7 +57,7 @@ object ListProps {
     onTouchStart: js.Function = null,
     ripple: js.UndefOr[scala.Boolean] = js.undefined,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ListTheme = null
   ): ListProps = {
     val __obj = js.Dynamic.literal()

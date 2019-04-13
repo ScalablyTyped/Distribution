@@ -93,7 +93,7 @@ trait IWebSocket extends js.Object {
     *
     * @param data data to send, if this is an object, it will be stringified before sending
     */
-  def send(data: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def send(data: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def send(data: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def send(data: js.Object): angularLib.angularMod.IPromise[_] = js.native
 }
 

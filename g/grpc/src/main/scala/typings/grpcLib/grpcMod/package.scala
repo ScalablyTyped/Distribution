@@ -21,10 +21,12 @@ package object grpcMod {
   type MetadataListener = js.Function2[/* metadata */ Metadata, /* next */ js.Function, scala.Unit]
   type MetadataRequester = js.Function3[/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function, scala.Unit]
   type MetadataValue = java.lang.String | nodeLib.Buffer
+  type PackageDefinition = org.scalablytyped.runtime.StringDictionary[ServiceDefinition[js.Any] | ProtobufTypeDefinition]
   type ServiceDefinition[ImplementationType] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ I in keyof ImplementationType ]: grpc.grpc.MethodDefinition<any, any>}
     */ grpcLib.grpcLibStrings.ServiceDefinition with js.Any
   type StatusListener = js.Function2[/* status */ StatusObject, /* next */ js.Function, scala.Unit]
+  type UntypedServiceImplementation = org.scalablytyped.runtime.StringDictionary[handleCall[js.Any, js.Any]]
   /**
     * A deserialization function
     * @param data The byte sequence to deserialize

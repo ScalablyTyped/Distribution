@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait DrawerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var containerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var disableSwipeToOpen: js.UndefOr[scala.Boolean] = js.undefined
   var docked: js.UndefOr[scala.Boolean] = js.undefined
   var onRequestChange: js.UndefOr[
@@ -17,8 +17,8 @@ trait DrawerProps extends js.Object {
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var openSecondary: js.UndefOr[scala.Boolean] = js.undefined
   var overlayClassName: js.UndefOr[java.lang.String] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var swipeAreaWidth: js.UndefOr[scala.Double] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var zDepth: js.UndefOr[scala.Double] = js.undefined
@@ -29,15 +29,15 @@ object DrawerProps {
   def apply(
     className: java.lang.String = null,
     containerClassName: java.lang.String = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     disableSwipeToOpen: js.UndefOr[scala.Boolean] = js.undefined,
     docked: js.UndefOr[scala.Boolean] = js.undefined,
     onRequestChange: (/* opening */ scala.Boolean, /* reason */ java.lang.String) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openSecondary: js.UndefOr[scala.Boolean] = js.undefined,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     swipeAreaWidth: scala.Int | scala.Double = null,
     width: scala.Double | java.lang.String = null,
     zDepth: scala.Int | scala.Double = null

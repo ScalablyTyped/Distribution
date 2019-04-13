@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "EllipseGeometry")
 @js.native
-class EllipseGeometry protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.EllipseGeometry {
+class EllipseGeometry protected () extends Packable {
   def this(options: cesiumLib.Anon_CenterEllipsoidExtrudedHeight) = this()
 }
 
@@ -16,13 +15,13 @@ class EllipseGeometry protected ()
 @JSImport("cesium", "EllipseGeometry")
 @js.native
 object EllipseGeometry extends js.Object {
-  def createGeometry(ellipseGeometry: cesiumLib.cesiumMod.CesiumNs.EllipseGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
-  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.EllipseGeometry = js.native
-  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.EllipseGeometry = js.native
+  def createGeometry(ellipseGeometry: cesiumLib.cesiumMod.EllipseGeometry): cesiumLib.cesiumMod.Geometry = js.native
+  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.EllipseGeometry = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.EllipseGeometry = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.EllipseGeometry
-  ): cesiumLib.cesiumMod.CesiumNs.EllipseGeometry = js.native
+    result: cesiumLib.cesiumMod.EllipseGeometry
+  ): cesiumLib.cesiumMod.EllipseGeometry = js.native
 }
 

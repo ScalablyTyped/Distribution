@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Config extends js.Object {
-  var config: cosmiconfigLib.cosmiconfigMod.cosmiconfigNs.Config
+  var config: cosmiconfigLib.cosmiconfigMod.Config
   var filepath: java.lang.String
   var isEmpty: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -14,7 +14,7 @@ trait Anon_Config extends js.Object {
 object Anon_Config {
   @scala.inline
   def apply(
-    config: cosmiconfigLib.cosmiconfigMod.cosmiconfigNs.Config,
+    config: cosmiconfigLib.cosmiconfigMod.Config,
     filepath: java.lang.String,
     isEmpty: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Config = {

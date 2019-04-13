@@ -25,3 +25,8 @@ class IDRange ()
   override def SetIDs_32bit(MinID: java.lang.String, MaxID: java.lang.String): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.IDRange")
+@js.native
+object IDRange
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IIDRange]
+

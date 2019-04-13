@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("animejs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val running: js.Array[animejsLib.animejsMod.animeNs.AnimeInstance] = js.native
+  val running: js.Array[AnimeInstance] = js.native
   // Helpers
   val speed: scala.Double = js.native
-  def apply(params: animejsLib.animejsMod.animeNs.AnimeParams): animejsLib.animejsMod.animeNs.AnimeInstance = js.native
+  def apply(params: AnimeParams): AnimeInstance = js.native
   def bezier(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): js.Function1[/* t */ scala.Double, scala.Double] = js.native
   def getValue(targets: animejsLib.AnimeTarget, prop: java.lang.String): java.lang.String | scala.Double = js.native
   def path(): js.Function1[/* prop */ java.lang.String, animejsLib.Anon_El] = js.native
@@ -29,8 +29,8 @@ object ^ extends js.Object {
   def setDashoffset(el: stdLib.HTMLElement): scala.Double = js.native
   def setDashoffset(el: stdLib.SVGElement): scala.Double = js.native
   // Timeline
-  def timeline(): animejsLib.animejsMod.animeNs.AnimeTimelineInstance = js.native
-  def timeline(params: animejsLib.animejsMod.animeNs.AnimeInstanceParams): animejsLib.animejsMod.animeNs.AnimeTimelineInstance = js.native
-  def timeline(params: js.Array[animejsLib.animejsMod.animeNs.AnimeInstance]): animejsLib.animejsMod.animeNs.AnimeTimelineInstance = js.native
+  def timeline(): AnimeTimelineInstance = js.native
+  def timeline(params: AnimeInstanceParams): AnimeTimelineInstance = js.native
+  def timeline(params: js.Array[AnimeInstance]): AnimeTimelineInstance = js.native
 }
 

@@ -13,6 +13,7 @@ package object dvaMod {
     scala.Unit
   ]
   type EffectWithType = js.Tuple2[Effect, dvaLib.Anon_Type]
+  type EffectsMapObject = org.scalablytyped.runtime.StringDictionary[Effect | EffectWithType]
   type ReducerEnhancer = js.Function1[
     /* reducer */ reduxLib.reduxMod.Reducer[js.Any, reduxLib.reduxMod.AnyAction], 
     scala.Unit
@@ -26,5 +27,6 @@ package object dvaMod {
     reactLib.reactMod.Global.JSXNs.Element | js.Object
   ]
   type Subscription = js.Function2[/* api */ SubscriptionAPI, /* done */ js.Function, scala.Unit]
+  type SubscriptionsMapObject = org.scalablytyped.runtime.StringDictionary[Subscription]
   type onActionFunc = js.Function1[/* api */ reduxLib.reduxMod.MiddlewareAPI[js.Any, js.Any], scala.Unit]
 }

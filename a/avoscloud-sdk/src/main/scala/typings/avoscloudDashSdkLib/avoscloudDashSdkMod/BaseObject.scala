@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("avoscloud-sdk", "BaseObject")
 @js.native
-class BaseObject ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.BaseObject {
+class BaseObject () extends IBaseObject {
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
 }

@@ -25,3 +25,8 @@ class BackupJob ()
   override def Clone(): mfilesLib.IBackupJob = js.native
 }
 
+@JSGlobal("MFiles.BackupJob")
+@js.native
+object BackupJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IBackupJob]
+

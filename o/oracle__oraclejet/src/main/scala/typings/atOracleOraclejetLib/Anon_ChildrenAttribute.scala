@@ -12,9 +12,7 @@ trait Anon_ChildrenAttribute[D] extends js.Object {
   var keyAttributesScope: js.UndefOr[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.global | atOracleOraclejetLib.atOracleOraclejetLibStrings.siblings
   ] = js.undefined
-  var sortComparators: js.UndefOr[
-    atOracleOraclejetLib.ojarraydataproviderMod.ArrayDataProviderNs.SortComparators[D]
-  ] = js.undefined
+  var sortComparators: js.UndefOr[atOracleOraclejetLib.ojarraydataproviderMod.SortComparators[D]] = js.undefined
 }
 
 object Anon_ChildrenAttribute {
@@ -24,7 +22,7 @@ object Anon_ChildrenAttribute {
     implicitSort: js.Array[atOracleOraclejetLib.ojdataproviderMod.SortCriterion[D]] = null,
     keyAttributes: java.lang.String | js.Array[java.lang.String] = null,
     keyAttributesScope: atOracleOraclejetLib.atOracleOraclejetLibStrings.global | atOracleOraclejetLib.atOracleOraclejetLibStrings.siblings = null,
-    sortComparators: atOracleOraclejetLib.ojarraydataproviderMod.ArrayDataProviderNs.SortComparators[D] = null
+    sortComparators: atOracleOraclejetLib.ojarraydataproviderMod.SortComparators[D] = null
   ): Anon_ChildrenAttribute[D] = {
     val __obj = js.Dynamic.literal()
     if (childrenAttribute != null) __obj.updateDynamic("childrenAttribute")(childrenAttribute)

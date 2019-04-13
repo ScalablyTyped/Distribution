@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val AssignerProtocol: kafkajsLib.kafkajsMod.AssignerProtocolNs.AssignerProtocolStatic = js.native
-  val PartitionAssigners: kafkajsLib.Anon_RoundRobin = js.native
 }
 

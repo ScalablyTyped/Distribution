@@ -7,4 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libConfigurationMod {
   type RawRuleConfig = js.UndefOr[scala.Null | scala.Boolean | js.Array[js.Any] | tslintLib.Anon_Default]
+  type RawRulesConfig = org.scalablytyped.runtime.StringDictionary[RawRuleConfig]
 }

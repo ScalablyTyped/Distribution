@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("signals", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[signalsLib.signalsMod.signalsNs.SignalWrapper[js.Any]]
+  extends org.scalablytyped.runtime.TopLevel[SignalWrapper[js.Any]]
 

@@ -192,8 +192,5 @@ object SyncNs extends js.Object {
     def requestPasswordReset(server: java.lang.String, email: java.lang.String): js.Promise[scala.Unit] = js.native
   }
   
-  type ConnectionState = realmLib.RealmNs.SyncNs.ConnectionState
-  type SessionStopPolicy = realmLib.RealmNs.SyncNs.SessionStopPolicy
-  type SubscriptionState = realmLib.RealmNs.SyncNs.SubscriptionState
 }
 

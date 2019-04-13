@@ -25,10 +25,11 @@ object strings {
     TRANSITION_STATE_CHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.checked,
     TRANSITION_STATE_INDETERMINATE: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.indeterminate,
     TRANSITION_STATE_INIT: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.init,
-    TRANSITION_STATE_UNCHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.unchecked
+    TRANSITION_STATE_UNCHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.unchecked,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(ARIA_CHECKED_ATTR = ARIA_CHECKED_ATTR, ARIA_CHECKED_INDETERMINATE_VALUE = ARIA_CHECKED_INDETERMINATE_VALUE, NATIVE_CONTROL_SELECTOR = NATIVE_CONTROL_SELECTOR, TRANSITION_STATE_CHECKED = TRANSITION_STATE_CHECKED, TRANSITION_STATE_INDETERMINATE = TRANSITION_STATE_INDETERMINATE, TRANSITION_STATE_INIT = TRANSITION_STATE_INIT, TRANSITION_STATE_UNCHECKED = TRANSITION_STATE_UNCHECKED)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

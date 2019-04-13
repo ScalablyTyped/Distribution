@@ -12,9 +12,9 @@ trait PortalInnerProps
 object PortalInnerProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] = null,
     mountNode: js.Any = null,
     onMount: (/* nothing */ scala.Null, /* data */ PortalInnerProps) => scala.Unit = null,
     onUnmount: (/* nothing */ scala.Null, /* data */ PortalInnerProps) => scala.Unit = null

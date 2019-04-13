@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "NavbarBrand")
 @js.native
 class NavbarBrand ()
-  extends reactDashBootstrapLib.libNavbarBrandMod.namespaced
+  extends reactDashBootstrapLib.libNavbarBrandMod.^
 

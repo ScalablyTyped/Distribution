@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof {}, 'classes' | never> ]: {}[P]} */ trait GridListTileBarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridListTileBarClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var actionIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var actionIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var actionPosition: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right
   ] = js.undefined
-  var subtitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var subtitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var titlePosition: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom
   ] = js.undefined
@@ -23,16 +23,16 @@ import scala.scalajs.js.annotation._
 object GridListTileBarProps {
   @scala.inline
   def apply(
-    actionIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    actionIcon: reactLib.reactMod.ReactNode = null,
     actionPosition: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridListTileBarClassKey]
     ] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    subtitle: reactLib.reactMod.ReactNs.ReactNode = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    subtitle: reactLib.reactMod.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     titlePosition: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom = null
   ): GridListTileBarProps = {
     val __obj = js.Dynamic.literal()

@@ -32,14 +32,14 @@ trait IVisualization extends js.Object {
     * @param [options] - Optional. Options to set.
     * @return - A promise of a QVisualization.
     */
-  def create(`type`: VisualizationType): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def create(`type`: VisualizationType, cols: js.Array[_]): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def create(`type`: VisualizationType, cols: js.Array[_], options: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def create(`type`: VisualizationType): angularLib.angularMod.IPromise[_] = js.native
+  def create(`type`: VisualizationType, cols: js.Array[_]): angularLib.angularMod.IPromise[_] = js.native
+  def create(`type`: VisualizationType, cols: js.Array[_], options: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets an existing visualization.
     * @param id - Id for an existing visualization.
     * @return - A promise of a QVisualization.
     */
-  def get(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def get(id: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
 }
 

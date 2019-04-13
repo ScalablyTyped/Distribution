@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModalProps
   extends reactDashOverlaysLib.reactDashOverlaysMod.TransitionCallbacks
-     with reactDashOverlaysLib.libPortalMod.PortalNs.PortalProps {
+     with reactDashOverlaysLib.libPortalMod.PortalProps {
   /**
     * When `true` The modal will automatically shift focus to itself when it opens, and
     * replace it to the last focused element when it closes. This also
@@ -26,7 +26,7 @@ trait ModalProps
     * to control animations for the backdrop components.
     */
   var backdropTransition: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
+    reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -49,7 +49,7 @@ trait ModalProps
     * A ModalManager instance used to track and manage the state of open
     * Modals. Useful when customizing how modals interact within a container
     */
-  var manager: js.UndefOr[reactDashOverlaysLib.libModalManagerMod.namespaced] = js.undefined
+  var manager: js.UndefOr[reactDashOverlaysLib.libModalManagerMod.^] = js.undefined
   /**
     * A callback fired when the backdrop, if specified, is clicked.
     */
@@ -77,7 +77,7 @@ trait ModalProps
     *  renderBackdrop={props => <MyBackdrop {...props} />}
     * ```
     */
-  var renderBackdrop: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderBackdrop: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   /**
     * A function that returns the dialog component. Useful for custom
     * rendering. **Note:** the component should make sure to apply the provided ref.
@@ -86,7 +86,7 @@ trait ModalProps
     *  renderDialog={props => <MyDialog {...props} />}
     * ```
     */
-  var renderDialog: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderDialog: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   /**
     * When `true` The modal will restore focus to previously focused element once
     * modal is hidden
@@ -101,7 +101,7 @@ trait ModalProps
     * to control animations for the dialog component.
     */
   var transition: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
+    reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
   ] = js.undefined
 }
 
@@ -110,13 +110,13 @@ object ModalProps {
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     backdrop: scala.Boolean | reactDashOverlaysLib.reactDashOverlaysLibStrings.static = null,
-    backdropTransition: reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null,
+    backdropTransition: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null,
     className: java.lang.String = null,
-    container: reactLib.reactMod.ReactNs.ReactNode | js.Function = null,
+    container: reactLib.reactMod.ReactNode | js.Function = null,
     containerClassName: java.lang.String = null,
     enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
-    manager: reactDashOverlaysLib.libModalManagerMod.namespaced = null,
+    manager: reactDashOverlaysLib.libModalManagerMod.^ = null,
     onBackdropClick: js.Function = null,
     onEnter: /* node */ stdLib.HTMLElement => _ = null,
     onEntered: /* node */ stdLib.HTMLElement => _ = null,
@@ -128,11 +128,11 @@ object ModalProps {
     onHide: js.Function = null,
     onRendered: js.Function = null,
     onShow: js.Function = null,
-    renderBackdrop: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderDialog: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderBackdrop: /* props */ js.Any => reactLib.reactMod.ReactNode = null,
+    renderDialog: /* props */ js.Any => reactLib.reactMod.ReactNode = null,
     restoreFocus: js.UndefOr[scala.Boolean] = js.undefined,
     show: js.UndefOr[scala.Boolean] = js.undefined,
-    transition: reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null
+    transition: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)

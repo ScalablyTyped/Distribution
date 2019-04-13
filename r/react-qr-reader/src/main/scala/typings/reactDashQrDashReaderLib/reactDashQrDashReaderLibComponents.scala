@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashQrDashReaderLibComponents {
   @scala.inline
-  def ReactDashQrDashReader: reactLib.reactMod.ReactNs.ComponentType[reactDashQrDashReaderLib.reactDashQrDashReaderMod.QrReaderNs.props] = js.constructorOf[reactDashQrDashReaderLib.reactDashQrDashReaderMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashQrDashReaderLib.reactDashQrDashReaderMod.QrReaderNs.props]]
-  type props = reactDashQrDashReaderLib.reactDashQrDashReaderMod.QrReaderNs.props
+  def ReactDashQrDashReader: reactLib.reactMod.ComponentType[reactDashQrDashReaderLib.reactDashQrDashReaderMod.props] = js.constructorOf[reactDashQrDashReaderLib.reactDashQrDashReaderMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashQrDashReaderLib.reactDashQrDashReaderMod.props]]
+  type props = reactDashQrDashReaderLib.reactDashQrDashReaderMod.props
 }
 

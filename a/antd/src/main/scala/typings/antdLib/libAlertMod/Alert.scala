@@ -11,7 +11,7 @@ trait Alert
   @JSName("state")
   var state_Alert: AlertState = js.native
   def animationEnd(): scala.Unit = js.native
-  def handleClose(e: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, stdLib.MouseEvent]): scala.Unit = js.native
+  def handleClose(e: reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, stdLib.MouseEvent]): scala.Unit = js.native
   def renderAlert(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
 }
 

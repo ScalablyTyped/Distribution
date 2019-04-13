@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Connection protected () extends js.Object {
   def this(ws: stdLib.WebSocket) = this()
-  def this(ws: wsLib.wsMod.namespaced) = this()
+  def this(ws: wsLib.wsMod.^) = this()
   def createFetchQuery(
     collectionName: java.lang.String,
     query: java.lang.String,

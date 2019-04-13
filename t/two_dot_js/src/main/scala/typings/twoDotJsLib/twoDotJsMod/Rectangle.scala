@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("two.js", "Rectangle")
 @js.native
-class Rectangle protected ()
-  extends twoDotJsLib.twoDotJsMod.TwoNs.Rectangle {
+class Rectangle protected () extends Path {
   def this(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double) = this()
 }
 

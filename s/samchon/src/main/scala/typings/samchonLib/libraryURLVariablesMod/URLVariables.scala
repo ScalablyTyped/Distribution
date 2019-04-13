@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class URLVariables ()
-  extends urlDashVariablesLib.urlDashVariablesMod.namespaced {
+  extends urlDashVariablesLib.urlDashVariablesMod.^ {
   /**
     * Construct from a URL-encoded string.
     *

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HydratedParseArgsOptions
-  extends minimistLib.minimistMod.minimistNs.Opts {
+  extends minimistLib.minimistMod.Opts {
   @JSName("alias")
   var alias_HydratedParseArgsOptions: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   @JSName("boolean")

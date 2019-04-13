@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class PI ()
   extends awsDashSdkLib.awsDashSdkMod.PI {
-  def this(options: awsDashSdkLib.clientsPiMod.PINs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsPiMod.ClientConfiguration) = this()
 }
 

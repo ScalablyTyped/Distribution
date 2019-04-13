@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ServerlessApplicationRepository ()
-  extends awsDashSdkLib.clientsServerlessapplicationrepositoryMod.namespaced {
-  def this(options: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsServerlessapplicationrepositoryMod.^ {
+  def this(options: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ClientConfiguration) = this()
 }
 

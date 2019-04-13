@@ -48,39 +48,59 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Application")
 @js.native
-class Application ()
-  extends loopbackLib.loopbackMod.lNs.Application {
-  /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
+class Application () extends PersistedModel {
+  var anonymousAllowed: scala.Boolean = js.native
+  var authenticationEnabled: scala.Boolean = js.native
+  var authenticationSchemes: js.Array[java.lang.String] = js.native
+  /** The OAuth 2.0 code/token callback URL. */
+  var callBackUrl: js.Array[java.lang.String] = js.native
+  /** Date Application object was created.  Default: current date. */
+  var created: stdLib.Date = js.native
+  /** Text description */
+  var description: java.lang.String = js.native
+  /** E-mail address */
+  var email: java.lang.String = js.native
+  /** Whether the e-mail is verified. */
+  var emailVerified: java.lang.String = js.native
+  /** string Icon image URL. */
+  var icon: java.lang.String = js.native
+  /** Generated ID. */
+  var id: java.lang.String = js.native
+  /** modified Date Application object was modified.  Default: current date. */
+  var modified: stdLib.Date = js.native
+  /** Name; required. */
+  var name: java.lang.String = js.native
+  /** User ID of the developer who registers the application. */
+  var owner: java.lang.String = js.native
   /**
-    * loopback 3.x Remote hooks
-    * http://loopback.io/doc/en/lb3/Remote-hooks.html
-    * @param method
-    * @param backback
+    * pushSettings.apns APNS configuration, see the options
+    *   below and also
+    *   github.com/argon/node-apn/blob/master/doc/apn.markdown
+    *  pushSettings.apns.production Whether to use production Apple Push Notification Service (APNS) servers to send push notifications.
+    * If true, uses `gateway.push.apple.com:2195` and `feedback.push.apple.com:2196`.
+    * If false, uses `gateway.sandbox.push.apple.com:2195` and `feedback.sandbox.push.apple.com:2196`
+    *  pushSettings.apns.certData The certificate data loaded from the cert.pem file (APNS).
+    *  pushSettings.apns.keyData The key data loaded from the key.pem file (APNS).
+    *  pushSettings.apns.pushOptions.gateway (APNS).
+    *  pushSettings.apns.pushOptions.port (APNS).
+    *  pushSettings.apns.feedbackOptions.gateway  (APNS).
+    *  pushSettings.apns.feedbackOptions.port (APNS).
+    *  pushSettings.apns.feedbackOptions.batchFeedback (APNS).
+    *  pushSettings.apns.feedbackOptions.interval (APNS).
+    *  pushSettings.gcm.serverApiKey: Google Cloud Messaging API key.
     */
-  /* CompleteClass */
-  override def beforeRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  var pushSetings: loopbackLib.Anon_Apns = js.native
+  /** Status of the application; Either `production`, `sandbox` (default), or `disabled`. */
+  var status: java.lang.String = js.native
+  /** OAuth 2.0  application URL. */
+  var url: java.lang.String = js.native
+  /**
+    * Reset keys for a given application by the appId
+    * @param {Any} appId
+    * @callback {() => void} callback
+    * @param {Error} err
+    */
+  def resetKeys(appId: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 
 /* static members */

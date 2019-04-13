@@ -7,25 +7,23 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "UniversalString")
 @js.native
-class UniversalString ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.UniversalString {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.UniversalStringParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+class UniversalString () extends BaseBlock[LocalUniversalStringValueBlock] {
+  def this(params: UniversalStringParams) = this()
   /**
-    * Convertion for the block to JSON object
+    * Function converting ArrayBuffer into ASN.1 internal string
     * 
-    * @returns {JsonLocalBaseBlock}
+    * @param {ArrayBuffer} inputBuffer ASN.1 BER encoded array
     * 
-    * @memberOf LocalBaseBlock
+    * @memberOf UniversalString
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  def fromBuffer(inputBuffer: stdLib.ArrayBuffer): scala.Unit = js.native
+  /**
+    * Function converting JavaScript string into ASN.1 internal class
+    * 
+    * @param {string} inputString ASN.1 BER encoded array
+    * 
+    * @memberOf UniversalString
+    */
+  def fromString(inputString: java.lang.String): scala.Unit = js.native
 }
 

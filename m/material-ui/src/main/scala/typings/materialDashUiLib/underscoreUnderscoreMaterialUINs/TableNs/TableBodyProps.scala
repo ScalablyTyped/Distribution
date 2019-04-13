@@ -32,7 +32,7 @@ trait TableBodyProps extends js.Object {
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
   var showRowHover: js.UndefOr[scala.Boolean] = js.undefined
   var stripedRows: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TableBodyProps {
@@ -53,7 +53,7 @@ object TableBodyProps {
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     showRowHover: js.UndefOr[scala.Boolean] = js.undefined,
     stripedRows: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TableBodyProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allRowsSelected)) __obj.updateDynamic("allRowsSelected")(allRowsSelected)

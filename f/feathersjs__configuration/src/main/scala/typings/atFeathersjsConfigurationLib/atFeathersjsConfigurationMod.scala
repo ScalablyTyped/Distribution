@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object atFeathersjsConfigurationMod extends js.Object {
   def default(): js.Function1[
-    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[_], 
-    atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[_]
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], 
+    atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_]
   ] = js.native
 }
 

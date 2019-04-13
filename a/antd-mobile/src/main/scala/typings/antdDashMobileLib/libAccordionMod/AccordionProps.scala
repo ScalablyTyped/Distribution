@@ -11,7 +11,7 @@ trait AccordionProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   var openAnimation: js.UndefOr[js.Any] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object AccordionProps {
@@ -24,7 +24,7 @@ object AccordionProps {
     onChange: /* x */ js.Any => scala.Unit = null,
     openAnimation: js.Any = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AccordionProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(accordion)) __obj.updateDynamic("accordion")(accordion)

@@ -17,10 +17,10 @@ trait MentionProps extends js.Object {
     js.Function5[
       /* suggestion */ SuggestionDataItem, 
       /* search */ java.lang.String, 
-      /* highlightedDisplay */ reactLib.reactMod.ReactNs.ReactNode, 
+      /* highlightedDisplay */ reactLib.reactMod.ReactNode, 
       /* index */ scala.Double, 
       /* focused */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
@@ -37,7 +37,7 @@ object MentionProps {
     className: java.lang.String = null,
     isLoading: js.UndefOr[scala.Boolean] = js.undefined,
     onAdd: (/* id */ java.lang.String | scala.Double, /* display */ java.lang.String) => scala.Unit = null,
-    renderSuggestion: (/* suggestion */ SuggestionDataItem, /* search */ java.lang.String, /* highlightedDisplay */ reactLib.reactMod.ReactNs.ReactNode, /* index */ scala.Double, /* focused */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderSuggestion: (/* suggestion */ SuggestionDataItem, /* search */ java.lang.String, /* highlightedDisplay */ reactLib.reactMod.ReactNode, /* index */ scala.Double, /* focused */ scala.Boolean) => reactLib.reactMod.ReactNode = null,
     style: js.Any = null,
     `type`: java.lang.String = null
   ): MentionProps = {

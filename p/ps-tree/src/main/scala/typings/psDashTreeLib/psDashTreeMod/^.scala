@@ -10,11 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     pid: scala.Double,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* children */ js.Array[psDashTreeLib.psDashTreeMod.psUnderscoreTreeNs.PS], 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ stdLib.Error, /* children */ js.Array[PS], scala.Unit]
   ): scala.Unit = js.native
 }
 

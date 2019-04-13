@@ -9,778 +9,512 @@ import scala.scalajs.js.annotation._
 trait StepFunctions
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_StepFunctions: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ClientConfiguration = js.native
+  var config_StepFunctions: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def createActivity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createActivity(): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createActivity(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
+      /* data */ CreateActivityOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def createActivity(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createActivity(params: CreateActivityInput): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createActivity(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityInput,
+    params: CreateActivityInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
+      /* data */ CreateActivityOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def createStateMachine(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createStateMachine(): awsDashSdkLib.libRequestMod.Request[CreateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createStateMachine(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 
+      /* data */ CreateStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def createStateMachine(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createStateMachine(params: CreateStateMachineInput): awsDashSdkLib.libRequestMod.Request[CreateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createStateMachine(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineInput,
+    params: CreateStateMachineInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 
+      /* data */ CreateStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an activity.
     */
-  def deleteActivity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteActivity(): awsDashSdkLib.libRequestMod.Request[DeleteActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteActivity(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityOutput, 
+      /* data */ DeleteActivityOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an activity.
     */
-  def deleteActivity(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteActivity(params: DeleteActivityInput): awsDashSdkLib.libRequestMod.Request[DeleteActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteActivity(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityInput,
+    params: DeleteActivityInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityOutput, 
+      /* data */ DeleteActivityOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a state machine. This is an asynchronous operation: It sets the state machine's status to DELETING and begins the deletion process. Each state machine execution is deleted the next time it makes a state transition.  The state machine itself is deleted after all executions are completed or deleted. 
     */
-  def deleteStateMachine(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteStateMachine(): awsDashSdkLib.libRequestMod.Request[DeleteStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteStateMachine(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineOutput, 
+      /* data */ DeleteStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a state machine. This is an asynchronous operation: It sets the state machine's status to DELETING and begins the deletion process. Each state machine execution is deleted the next time it makes a state transition.  The state machine itself is deleted after all executions are completed or deleted. 
     */
-  def deleteStateMachine(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteStateMachine(params: DeleteStateMachineInput): awsDashSdkLib.libRequestMod.Request[DeleteStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteStateMachine(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineInput,
+    params: DeleteStateMachineInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineOutput, 
+      /* data */ DeleteStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DeleteStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def describeActivity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeActivity(): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeActivity(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
+      /* data */ DescribeActivityOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def describeActivity(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeActivity(params: DescribeActivityInput): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeActivity(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityInput,
+    params: DescribeActivityInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
+      /* data */ DescribeActivityOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def describeExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeExecution(): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
+      /* data */ DescribeExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def describeExecution(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeExecution(params: DescribeExecutionInput): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeExecution(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionInput,
+    params: DescribeExecutionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
+      /* data */ DescribeExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def describeStateMachine(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeStateMachine(): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeStateMachine(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
+      /* data */ DescribeStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def describeStateMachine(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeStateMachine(params: DescribeStateMachineInput): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeStateMachine(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineInput,
+    params: DescribeStateMachineInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
+      /* data */ DescribeStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def describeStateMachineForExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeStateMachineForExecution(): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeStateMachineForExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionOutput, 
+      /* data */ DescribeStateMachineForExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
+  def describeStateMachineForExecution(params: DescribeStateMachineForExecutionInput): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeStateMachineForExecution(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def describeStateMachineForExecution(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionInput,
+    params: DescribeStateMachineForExecutionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionOutput, 
+      /* data */ DescribeStateMachineForExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
     */
-  def getActivityTask(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getActivityTask(): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getActivityTask(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
+      /* data */ GetActivityTaskOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
     */
-  def getActivityTask(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getActivityTask(params: GetActivityTaskInput): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getActivityTask(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskInput,
+    params: GetActivityTaskInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
+      /* data */ GetActivityTaskOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
     */
-  def getExecutionHistory(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getExecutionHistory(): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getExecutionHistory(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
+      /* data */ GetExecutionHistoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
     */
-  def getExecutionHistory(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getExecutionHistory(params: GetExecutionHistoryInput): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getExecutionHistory(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryInput,
+    params: GetExecutionHistoryInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
+      /* data */ GetExecutionHistoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def listActivities(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActivities(): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActivities(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
+      /* data */ ListActivitiesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def listActivities(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listActivities(params: ListActivitiesInput): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listActivities(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesInput,
+    params: ListActivitiesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
+      /* data */ ListActivitiesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def listExecutions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listExecutions(): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listExecutions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
+      /* data */ ListExecutionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def listExecutions(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listExecutions(params: ListExecutionsInput): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listExecutions(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsInput,
+    params: ListExecutionsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
+      /* data */ ListExecutionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def listStateMachines(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listStateMachines(): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listStateMachines(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
+      /* data */ ListStateMachinesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
-  def listStateMachines(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listStateMachines(params: ListStateMachinesInput): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listStateMachines(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesInput,
+    params: ListStateMachinesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
+      /* data */ ListStateMachinesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List tags for a given resource.
     */
-  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceOutput, 
+      /* data */ ListTagsForResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List tags for a given resource.
     */
-  def listTagsForResource(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(params: ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceInput,
+    params: ListTagsForResourceInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceOutput, 
+      /* data */ ListTagsForResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListTagsForResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to report that the task identified by the taskToken failed.
     */
-  def sendTaskFailure(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendTaskFailure(): awsDashSdkLib.libRequestMod.Request[SendTaskFailureOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendTaskFailure(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureOutput, 
+      /* data */ SendTaskFailureOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendTaskFailureOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to report that the task identified by the taskToken failed.
     */
-  def sendTaskFailure(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendTaskFailure(params: SendTaskFailureInput): awsDashSdkLib.libRequestMod.Request[SendTaskFailureOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendTaskFailure(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureInput,
+    params: SendTaskFailureInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureOutput, 
+      /* data */ SendTaskFailureOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskFailureOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendTaskFailureOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to report to the service that the task represented by the specified taskToken is still making progress. This action resets the Heartbeat clock. The Heartbeat threshold is specified in the state machine's Amazon States Language definition. This action does not in itself create an event in the execution history. However, if the task times out, the execution history contains an ActivityTimedOut event.  The Timeout of a task, defined in the state machine's Amazon States Language definition, is its maximum allowed duration, regardless of the number of SendTaskHeartbeat requests received.   This operation is only useful for long-lived tasks to report the liveliness of the task. 
     */
-  def sendTaskHeartbeat(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendTaskHeartbeat(): awsDashSdkLib.libRequestMod.Request[SendTaskHeartbeatOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendTaskHeartbeat(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatOutput, 
+      /* data */ SendTaskHeartbeatOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendTaskHeartbeatOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to report to the service that the task represented by the specified taskToken is still making progress. This action resets the Heartbeat clock. The Heartbeat threshold is specified in the state machine's Amazon States Language definition. This action does not in itself create an event in the execution history. However, if the task times out, the execution history contains an ActivityTimedOut event.  The Timeout of a task, defined in the state machine's Amazon States Language definition, is its maximum allowed duration, regardless of the number of SendTaskHeartbeat requests received.   This operation is only useful for long-lived tasks to report the liveliness of the task. 
     */
-  def sendTaskHeartbeat(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendTaskHeartbeat(params: SendTaskHeartbeatInput): awsDashSdkLib.libRequestMod.Request[SendTaskHeartbeatOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendTaskHeartbeat(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatInput,
+    params: SendTaskHeartbeatInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatOutput, 
+      /* data */ SendTaskHeartbeatOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskHeartbeatOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendTaskHeartbeatOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to report that the task identified by the taskToken completed successfully.
     */
-  def sendTaskSuccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendTaskSuccess(): awsDashSdkLib.libRequestMod.Request[SendTaskSuccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendTaskSuccess(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessOutput, 
+      /* data */ SendTaskSuccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendTaskSuccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used by workers to report that the task identified by the taskToken completed successfully.
     */
-  def sendTaskSuccess(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendTaskSuccess(params: SendTaskSuccessInput): awsDashSdkLib.libRequestMod.Request[SendTaskSuccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendTaskSuccess(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessInput,
+    params: SendTaskSuccessInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessOutput, 
+      /* data */ SendTaskSuccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.SendTaskSuccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendTaskSuccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
     */
-  def startExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startExecution(): awsDashSdkLib.libRequestMod.Request[StartExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
+      /* data */ StartExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
     */
-  def startExecution(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startExecution(params: StartExecutionInput): awsDashSdkLib.libRequestMod.Request[StartExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startExecution(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionInput,
+    params: StartExecutionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
+      /* data */ StartExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops an execution.
     */
-  def stopExecution(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopExecution(): awsDashSdkLib.libRequestMod.Request[StopExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopExecution(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionOutput, 
+      /* data */ StopExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops an execution.
     */
-  def stopExecution(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopExecution(params: StopExecutionInput): awsDashSdkLib.libRequestMod.Request[StopExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopExecution(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionInput,
+    params: StopExecutionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionOutput, 
+      /* data */ StopExecutionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StopExecutionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Add a tag to a Step Functions resource.
     */
-  def tagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceOutput, 
+      /* data */ TagResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Add a tag to a Step Functions resource.
     */
-  def tagResource(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceInput,
+    params: TagResourceInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceOutput, 
+      /* data */ TagResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.TagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Remove a tag from a Step Functions resource
     */
-  def untagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceOutput, 
+      /* data */ UntagResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Remove a tag from a Step Functions resource
     */
-  def untagResource(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(params: UntagResourceInput): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceInput,
+    params: UntagResourceInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceOutput, 
+      /* data */ UntagResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UntagResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
     */
-  def updateStateMachine(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateStateMachine(): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateStateMachine(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
+      /* data */ UpdateStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
     */
-  def updateStateMachine(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateStateMachine(params: UpdateStateMachineInput): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateStateMachine(
-    params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineInput,
+    params: UpdateStateMachineInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
+      /* data */ UpdateStateMachineOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

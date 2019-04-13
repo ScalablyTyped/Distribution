@@ -29,7 +29,7 @@ trait Anon_Count extends js.Object {
   def apply[ValueType](
     count: scala.Double,
     mapper: js.Function1[/* index */ scala.Double, ValueType | js.Thenable[ValueType]],
-    options: pDashTimesLib.pDashTimesMod.pTimesNs.Options
+    options: pDashTimesLib.pDashTimesMod.Options
   ): js.Promise[js.Array[ValueType]] = js.native
 }
 

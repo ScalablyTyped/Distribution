@@ -11,14 +11,14 @@ trait Config extends js.Object {
   var port: scala.Double
   var root: java.lang.String
   var xHeaderDefaults: js.UndefOr[js.Object] = js.undefined
-  def mount(app: expressLib.expressMod.eNs.Application): scala.Unit
+  def mount(app: expressLib.expressMod.Application): scala.Unit
 }
 
 object Config {
   @scala.inline
   def apply(
     log: easyDashXapiLib.Anon_Level,
-    mount: expressLib.expressMod.eNs.Application => scala.Unit,
+    mount: expressLib.expressMod.Application => scala.Unit,
     name: java.lang.String,
     port: scala.Double,
     root: java.lang.String,

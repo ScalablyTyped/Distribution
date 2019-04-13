@@ -11,7 +11,7 @@ package object plotlyDotJsMod {
   type Data = stdLib.Partial[PlotData]
   type DataTransform = stdLib.Partial[Transform]
   type Datum = java.lang.String | scala.Double | stdLib.Date | scala.Null
-  type ErrorBar = stdLib.Partial[ErrorOptions] with (plotlyDotJsLib.Anon_Constant | plotlyDotJsLib.Anon_Array)
+  type ErrorBar = stdLib.Partial[ErrorOptions] with (plotlyDotJsLib.Anon_Constant | plotlyDotJsLib.Anon_ArrayArrayminus)
   type PlotRestyleEvent = js.Tuple2[js.Any, js.Array[scala.Double]]
   type PlotSelectedData = stdLib.Partial[PlotDatum]
   type Root = java.lang.String | stdLib.HTMLElement

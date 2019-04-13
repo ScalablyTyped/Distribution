@@ -13,8 +13,8 @@ class Server[TConnection /* <: Connection */] () extends Base[TConnection] {
     * Start the server
     */
   def start(): scala.Unit = js.native
-  def start(options: wsLib.wsMod.WebSocketNs.ServerOptions): scala.Unit = js.native
-  def start(options: wsLib.wsMod.WebSocketNs.ServerOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def start(options: wsLib.wsMod.ServerOptions): scala.Unit = js.native
+  def start(options: wsLib.wsMod.ServerOptions, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Stop the server
     */

@@ -11,8 +11,6 @@ object ^ extends js.Object {
   /**
     * Returns a URL string.
     */
-  def apply(
-    options: newDashGithubDashReleaseDashUrlLib.newDashGithubDashReleaseDashUrlMod.newGithubReleaseUrlNs.Options
-  ): java.lang.String = js.native
+  def apply(options: Options): java.lang.String = js.native
 }
 

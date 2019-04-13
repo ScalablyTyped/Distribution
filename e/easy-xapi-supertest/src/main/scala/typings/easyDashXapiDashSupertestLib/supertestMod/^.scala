@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("supertest", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(app: js.Any): easyDashXapiDashSupertestLib.supertestMod.supertestNs.SuperTest = js.native
-  def agent(): easyDashXapiDashSupertestLib.supertestMod.supertestNs.SuperTest = js.native
-  def agent(app: js.Any): easyDashXapiDashSupertestLib.supertestMod.supertestNs.SuperTest = js.native
+  def apply(app: js.Any): SuperTest = js.native
+  def agent(): SuperTest = js.native
+  def agent(app: js.Any): SuperTest = js.native
 }
 

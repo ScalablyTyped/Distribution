@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ACM ()
-  extends awsDashSdkLib.clientsAcmMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAcmMod.ACMNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAcmMod.^ {
+  def this(options: awsDashSdkLib.clientsAcmMod.ClientConfiguration) = this()
 }
 

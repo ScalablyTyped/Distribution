@@ -59,3 +59,9 @@ class ToolTip () extends IToolTip {
   override def resize(): scala.Unit = js.native
 }
 
+@JSGlobal("Tee.ToolTip")
+@js.native
+object ToolTip
+  extends org.scalablytyped.runtime.Instantiable0[IToolTip]
+     with org.scalablytyped.runtime.Instantiable1[/* chart */ Chart, IToolTip]
+

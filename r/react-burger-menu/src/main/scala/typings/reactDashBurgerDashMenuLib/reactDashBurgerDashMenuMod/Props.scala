@@ -19,7 +19,7 @@ trait Props extends js.Object {
     reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false`
   ] = js.undefined
   var customOnKeyDown: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element], scala.Unit]
+    js.Function1[/* event */ reactLib.reactMod.KeyboardEvent[reactLib.Element], scala.Unit]
   ] = js.undefined
   var disableAutoFocus: js.UndefOr[java.lang.String] = js.undefined
   var disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined
@@ -56,7 +56,7 @@ object Props {
     crossClassName: java.lang.String = null,
     customBurgerIcon: reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false` = null,
     customCrossIcon: reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false` = null,
-    customOnKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element] => scala.Unit = null,
+    customOnKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[reactLib.Element] => scala.Unit = null,
     disableAutoFocus: java.lang.String = null,
     disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
     disableOverlayClick: js.UndefOr[scala.Boolean] = js.undefined,

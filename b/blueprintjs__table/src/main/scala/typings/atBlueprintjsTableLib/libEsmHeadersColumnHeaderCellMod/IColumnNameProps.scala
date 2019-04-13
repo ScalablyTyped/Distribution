@@ -27,7 +27,7 @@ trait IColumnNameProps extends js.Object {
     js.Function2[
       /* name */ java.lang.String, 
       /* index */ js.UndefOr[scala.Double], 
-      reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps]
+      reactLib.reactMod.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps]
     ]
   ] = js.undefined
 }
@@ -36,7 +36,7 @@ object IColumnNameProps {
   @scala.inline
   def apply(
     name: java.lang.String = null,
-    nameRenderer: (/* name */ java.lang.String, /* index */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps] = null
+    nameRenderer: (/* name */ java.lang.String, /* index */ js.UndefOr[scala.Double]) => reactLib.reactMod.ReactElement[atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps] = null
   ): IColumnNameProps = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name)

@@ -6,17 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PopperProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
   var anchorEl: js.UndefOr[
     scala.Null | stdLib.HTMLElement | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement])
   ] = js.undefined
   @JSName("children")
-  var children_PopperProps: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[
-    /* props */ atMaterialDashUiCoreLib.Anon_Placement, 
-    reactLib.reactMod.ReactNs.ReactNode
-  ])
+  var children_PopperProps: reactLib.reactMod.ReactNode | (js.Function1[/* props */ atMaterialDashUiCoreLib.Anon_Placement, reactLib.reactMod.ReactNode])
   var container: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] | scala.Null
+    reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] | scala.Null
   ] = js.undefined
   var disablePortal: js.UndefOr[scala.Boolean] = js.undefined
   var keepMounted: js.UndefOr[scala.Boolean] = js.undefined
@@ -30,14 +27,11 @@ trait PopperProps
 object PopperProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[
-      /* props */ atMaterialDashUiCoreLib.Anon_Placement, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]),
+    children: reactLib.reactMod.ReactNode | (js.Function1[/* props */ atMaterialDashUiCoreLib.Anon_Placement, reactLib.reactMod.ReactNode]),
     open: scala.Boolean,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     anchorEl: stdLib.HTMLElement | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[/* element */ stdLib.HTMLElement, stdLib.HTMLElement]) = null,
-    container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
+    container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,
     disablePortal: js.UndefOr[scala.Boolean] = js.undefined,
     keepMounted: js.UndefOr[scala.Boolean] = js.undefined,
     modifiers: js.Object = null,

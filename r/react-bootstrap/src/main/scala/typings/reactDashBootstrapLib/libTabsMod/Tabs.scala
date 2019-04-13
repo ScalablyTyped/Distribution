@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Tabs
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libTabsMod.TabsNs.TabsProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[TabsProps, js.Object, js.Any]
 

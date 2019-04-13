@@ -65,7 +65,7 @@ trait MultiselectProps
     * This component is used to render each option group, when groupBy is specified. By default
     * the groupBy value will be used.
     */
-  var groupComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var groupComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * An object of props that is passed directly to the underlying input component.
     */
@@ -74,11 +74,11 @@ trait MultiselectProps
     * This component is used to render each possible item in the list. The default component
     * renders the text of the selected item (specified by textfield).
     */
-  var itemComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var itemComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * @default List
     */
-  var listComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var listComponent: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * An object of props that is passed directly to the underlying List component.
     */
@@ -154,7 +154,7 @@ trait MultiselectProps
     * The provided component will be used instead of the default SlideDownTransition for fully customizable animations.
     * The transition component is also injected with a dropUp prop indicating the direction it should open.
     */
-  var popupTransition: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var popupTransition: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * The string value of the current search being typed into the Multiselect. When unset
     * (undefined) the Multiselect will handle the filtering internally. The defaultSearchTerm
@@ -165,7 +165,7 @@ trait MultiselectProps
     * This component is used to render each selected item. The default component renders the
     * text of the selected item (specified by textfield).
     */
-  var tagComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String] = js.undefined
+  var tagComponent: js.UndefOr[reactLib.reactMod.ReactType[_] | java.lang.String] = js.undefined
   /**
     * Specify which data item field to display in the Multiselect and selected item. The
     * textField prop may also also used as to find an item in the list as you type. Providing
@@ -194,7 +194,7 @@ object MultiselectProps {
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     busy: js.UndefOr[scala.Boolean] = js.undefined,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     containerClassName: java.lang.String = null,
     data: js.Array[_] = null,
     defaultValue: js.Array[_] = null,
@@ -203,13 +203,13 @@ object MultiselectProps {
     duration: scala.Int | scala.Double = null,
     filter: reactDashWidgetsLib.reactDashWidgetsLibNumbers.`false` | reactDashWidgetsLib.reactDashWidgetsLibStrings.startsWith | reactDashWidgetsLib.reactDashWidgetsLibStrings.endsWith | reactDashWidgetsLib.reactDashWidgetsLibStrings.contains | (js.Function2[/* dataItem */ js.Any, /* searchTerm */ java.lang.String, scala.Boolean]) = null,
     groupBy: java.lang.String | (js.Function1[/* dataItem */ js.Any, _]) = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    groupComponent: reactLib.reactMod.ReactType[_] = null,
     id: java.lang.String = null,
     inputProps: js.Object = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    itemComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    listComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    itemComponent: reactLib.reactMod.ReactType[_] = null,
+    key: reactLib.reactMod.Key = null,
+    listComponent: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     listProps: js.Object = null,
     messages: MultiselectMessages = null,
     minLength: scala.Int | scala.Double = null,
@@ -220,11 +220,11 @@ object MultiselectProps {
     onToggle: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
-    popupTransition: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    popupTransition: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[MultiselectClass] = null,
+    ref: reactLib.reactMod.LegacyRef[MultiselectClass] = null,
     searchTerm: java.lang.String = null,
-    tagComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    tagComponent: reactLib.reactMod.ReactType[_] | java.lang.String = null,
     textField: java.lang.String | (js.Function1[/* dataItem */ js.Any, java.lang.String]) = null,
     value: js.Array[_] = null,
     valueField: java.lang.String = null

@@ -17,7 +17,7 @@ trait Request extends js.Object {
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestrendertemplate-context-options-callback}
     */
   @JSName("render")
-  var render_Original: atHapiVisionLib.atHapiVisionMod.visionNs.RenderMethod = js.native
+  var render_Original: atHapiVisionLib.atHapiVisionMod.RenderMethod = js.native
   /**
     * request.render() works the same way as server.render() but is for use inside of request handlers.
     * server.render() does not work inside request handlers when called via request.server.render() if the view manager was created by a plugin.
@@ -32,7 +32,7 @@ trait Request extends js.Object {
   def render(
     template: java.lang.String,
     context: js.Any,
-    options: atHapiVisionLib.atHapiVisionMod.visionNs.ServerViewsConfiguration
+    options: atHapiVisionLib.atHapiVisionMod.ServerViewsConfiguration
   ): js.Promise[java.lang.String] = js.native
 }
 

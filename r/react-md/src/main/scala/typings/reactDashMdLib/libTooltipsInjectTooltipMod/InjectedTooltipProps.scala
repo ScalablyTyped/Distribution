@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 trait InjectedTooltipProps extends js.Object {
   var tooltipClassName: js.UndefOr[java.lang.String] = js.undefined
   var tooltipContainerClassName: js.UndefOr[java.lang.String] = js.undefined
-  var tooltipContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tooltipContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tooltipDelay: js.UndefOr[scala.Double] = js.undefined
-  var tooltipLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var tooltipLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var tooltipPosition: js.UndefOr[Positions] = js.undefined
-  var tooltipStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tooltipStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tooltipTransitionEnterTimeout: js.UndefOr[scala.Double] = js.undefined
   var tooltipTransitionLeaveTimeout: js.UndefOr[scala.Double] = js.undefined
 }
@@ -22,11 +22,11 @@ object InjectedTooltipProps {
   def apply(
     tooltipClassName: java.lang.String = null,
     tooltipContainerClassName: java.lang.String = null,
-    tooltipContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltipContainerStyle: reactLib.reactMod.CSSProperties = null,
     tooltipDelay: scala.Int | scala.Double = null,
-    tooltipLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltipLabel: reactLib.reactMod.ReactNode = null,
     tooltipPosition: Positions = null,
-    tooltipStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltipStyle: reactLib.reactMod.CSSProperties = null,
     tooltipTransitionEnterTimeout: scala.Int | scala.Double = null,
     tooltipTransitionLeaveTimeout: scala.Int | scala.Double = null
   ): InjectedTooltipProps = {

@@ -1,0 +1,55 @@
+package typings
+package awsDashSdkLib.clientsAutoscalingMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DescribeScheduledActionsType extends js.Object {
+  /**
+    * The name of the Auto Scaling group.
+    */
+  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
+  /**
+    * The latest scheduled start time to return. If scheduled action names are provided, this parameter is ignored.
+    */
+  var EndTime: js.UndefOr[TimestampType] = js.undefined
+  /**
+    * The maximum number of items to return with this call. The default value is 50 and the maximum value is 100.
+    */
+  var MaxRecords: js.UndefOr[MaxRecords] = js.undefined
+  /**
+    * The token for the next set of items to return. (You received this token from a previous call.)
+    */
+  var NextToken: js.UndefOr[XmlString] = js.undefined
+  /**
+    * The names of one or more scheduled actions. You can specify up to 50 actions. If you omit this parameter, all scheduled actions are described. If you specify an unknown scheduled action, it is ignored with no error.
+    */
+  var ScheduledActionNames: js.UndefOr[ScheduledActionNames] = js.undefined
+  /**
+    * The earliest scheduled start time to return. If scheduled action names are provided, this parameter is ignored.
+    */
+  var StartTime: js.UndefOr[TimestampType] = js.undefined
+}
+
+object DescribeScheduledActionsType {
+  @scala.inline
+  def apply(
+    AutoScalingGroupName: ResourceName = null,
+    EndTime: TimestampType = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
+    NextToken: XmlString = null,
+    ScheduledActionNames: ScheduledActionNames = null,
+    StartTime: TimestampType = null
+  ): DescribeScheduledActionsType = {
+    val __obj = js.Dynamic.literal()
+    if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName)
+    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (ScheduledActionNames != null) __obj.updateDynamic("ScheduledActionNames")(ScheduledActionNames)
+    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
+    __obj.asInstanceOf[DescribeScheduledActionsType]
+  }
+}
+

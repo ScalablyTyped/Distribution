@@ -5,24 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ClassName[H /* <: reactLib.reactMod.ReactNs.HTMLAttributes[_] */] extends js.Object {
+trait Anon_ClassName[H /* <: reactLib.reactMod.HTMLAttributes[_] */] extends js.Object {
   var className: java.lang.String
   var disabled: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['loading'] */ js.Any
   var onClick: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['onClick'] */ js.Any
   var tabIndex: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['tabIndex'] */ js.Any
-  def onKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit
-  def onKeyUp(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit
+  def onKeyDown(e: reactLib.reactMod.KeyboardEvent[_]): scala.Unit
+  def onKeyUp(e: reactLib.reactMod.KeyboardEvent[_]): scala.Unit
   def ref(ref: stdLib.HTMLElement): scala.Unit
 }
 
 object Anon_ClassName {
   @scala.inline
-  def apply[H /* <: reactLib.reactMod.ReactNs.HTMLAttributes[_] */](
+  def apply[H /* <: reactLib.reactMod.HTMLAttributes[_] */](
     className: java.lang.String,
     disabled: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['loading'] */ js.Any,
     onClick: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['onClick'] */ js.Any,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit,
+    onKeyDown: reactLib.reactMod.KeyboardEvent[_] => scala.Unit,
+    onKeyUp: reactLib.reactMod.KeyboardEvent[_] => scala.Unit,
     ref: stdLib.HTMLElement => scala.Unit,
     tabIndex: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['tabIndex'] */ js.Any
   ): Anon_ClassName[H] = {

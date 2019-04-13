@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait ServiceIntentOptions extends js.Object {
   /**
-  	 * One of the `START_` constants from <Titanium.Android> to specify the "stickiness" of the Service when Android shuts down the host application.
+  	 * One of the `START_*` constants from <Titanium.Android> to specify the "stickiness" of the Service when Android shuts down the host application.
   	 */
   var startMode: js.UndefOr[scala.Double] = js.undefined
   /**

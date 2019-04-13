@@ -18,6 +18,6 @@ object syntaxDashErrorMod extends js.Object {
     */
   def apply(src: js.Any): js.UndefOr[stdLib.SyntaxError with syntaxDashErrorLib.Anon_Annotated] = js.native
   def apply(src: js.Any, file: java.lang.String): js.UndefOr[stdLib.SyntaxError with syntaxDashErrorLib.Anon_Annotated] = js.native
-  def apply(src: js.Any, file: java.lang.String, opts: acornLib.acornMod.acornNs.Options): js.UndefOr[stdLib.SyntaxError with syntaxDashErrorLib.Anon_Annotated] = js.native
+  def apply(src: js.Any, file: java.lang.String, opts: acornLib.acornMod.Options): js.UndefOr[stdLib.SyntaxError with syntaxDashErrorLib.Anon_Annotated] = js.native
 }
 

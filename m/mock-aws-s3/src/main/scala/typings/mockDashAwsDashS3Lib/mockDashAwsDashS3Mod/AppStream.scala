@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class AppStream ()
   extends awsDashSdkLib.awsDashSdkMod.AppStream {
-  def this(options: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAppstreamMod.ClientConfiguration) = this()
 }
 

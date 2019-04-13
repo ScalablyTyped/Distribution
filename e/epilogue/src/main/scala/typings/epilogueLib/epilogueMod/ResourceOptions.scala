@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ResourceOptions extends js.Object {
   var actions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var associations: js.UndefOr[sequelizeLib.sequelizeMod.sequelizeNs.AssociationOptions] = js.undefined
+  var associations: js.UndefOr[sequelizeLib.sequelizeMod.AssociationOptions] = js.undefined
   var endpoints: js.Array[java.lang.String]
   var excludeAttributes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var include: js.UndefOr[js.Array[epilogueLib.Anon_Model | java.lang.String]] = js.undefined
@@ -26,7 +26,7 @@ object ResourceOptions {
     endpoints: js.Array[java.lang.String],
     model: js.Any,
     actions: js.Array[java.lang.String] = null,
-    associations: sequelizeLib.sequelizeMod.sequelizeNs.AssociationOptions = null,
+    associations: sequelizeLib.sequelizeMod.AssociationOptions = null,
     excludeAttributes: js.Array[java.lang.String] = null,
     include: js.Array[epilogueLib.Anon_Model | java.lang.String] = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,

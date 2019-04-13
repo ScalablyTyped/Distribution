@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("asn1js", "LocalOctetStringValueBlock")
 @js.native
 class LocalOctetStringValueBlock ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalOctetStringValueBlock {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalOctetStringValueBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+  extends LocalConstructedValueBlock
+     with ILocalHexBlock {
+  def this(params: LocalOctetStringValueBlockParams) = this()
+  var isConstructed: scala.Boolean = js.native
+  /* InferMemberOverrides */
+  override def fromBER(inputBuffer: stdLib.ArrayBuffer, inputOffset: scala.Double, inputLength: scala.Double): scala.Unit with scala.Double = js.native
+  /* InferMemberOverrides */
+  override def toBER(): stdLib.ArrayBuffer = js.native
+  /* InferMemberOverrides */
+  override def toBER(sizeOnly: scala.Boolean): stdLib.ArrayBuffer = js.native
   /**
     * Convertion for the block to JSON object
     * 
@@ -25,7 +25,7 @@ class LocalOctetStringValueBlock ()
     * 
     * @memberOf LocalBaseBlock
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  /* InferMemberOverrides */
+  override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
 }
 

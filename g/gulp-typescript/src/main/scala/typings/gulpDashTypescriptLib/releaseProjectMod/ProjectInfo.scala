@@ -9,9 +9,9 @@ trait ProjectInfo extends js.Object {
   var compiler: gulpDashTypescriptLib.releaseCompilerMod.ICompiler
   var directory: java.lang.String
   var input: gulpDashTypescriptLib.releaseInputMod.FileCache
-  var options: typescriptLib.typescriptMod.tsNs.CompilerOptions
+  var options: typescriptLib.typescriptMod.CompilerOptions
   var output: gulpDashTypescriptLib.releaseOutputMod.Output
-  var projectReferences: js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference]
+  var projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
   var reporter: gulpDashTypescriptLib.releaseReporterMod.Reporter
   var singleOutput: scala.Boolean
   var typescript: gulpDashTypescriptLib.Anon_08
@@ -23,9 +23,9 @@ object ProjectInfo {
     compiler: gulpDashTypescriptLib.releaseCompilerMod.ICompiler,
     directory: java.lang.String,
     input: gulpDashTypescriptLib.releaseInputMod.FileCache,
-    options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    options: typescriptLib.typescriptMod.CompilerOptions,
     output: gulpDashTypescriptLib.releaseOutputMod.Output,
-    projectReferences: js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference],
+    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference],
     reporter: gulpDashTypescriptLib.releaseReporterMod.Reporter,
     singleOutput: scala.Boolean,
     typescript: gulpDashTypescriptLib.Anon_08

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("msgpack5", "Encoder")
 @js.native
-class Encoder ()
-  extends msgpack5Lib.msgpack5Mod.msgpack5Ns.Encoder
+class Encoder () extends Base
 

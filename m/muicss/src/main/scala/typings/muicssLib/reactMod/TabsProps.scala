@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabsProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
   var defaultSelectedIndex: js.UndefOr[scala.Double] = js.undefined
   var justified: js.UndefOr[scala.Boolean] = js.undefined
   var selectedIndex: js.UndefOr[scala.Double] = js.undefined
@@ -15,7 +15,7 @@ trait TabsProps
 object TabsProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     defaultSelectedIndex: scala.Int | scala.Double = null,
     justified: js.UndefOr[scala.Boolean] = js.undefined,
     selectedIndex: scala.Int | scala.Double = null

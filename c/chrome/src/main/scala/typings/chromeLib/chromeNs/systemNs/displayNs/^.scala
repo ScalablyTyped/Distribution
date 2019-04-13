@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.system.display")
 @js.native
 object ^ extends js.Object {
-  val DisplayPosition: chromeLib.Anon_BOTTOM = js.native
-  val MirrorMode: chromeLib.Anon_MIXED = js.native
   val onDisplayChanged: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]] = js.native
   def clearTouchCalibration(id: java.lang.String): scala.Unit = js.native
   def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): scala.Unit = js.native

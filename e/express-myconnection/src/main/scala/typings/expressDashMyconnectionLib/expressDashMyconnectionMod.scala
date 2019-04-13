@@ -12,6 +12,6 @@ object expressDashMyconnectionMod extends js.Object {
     mysqlInstance: expressDashMyconnectionLib.Anon_Config,
     dbConfig: mysqlLib.mysqlMod.ConnectionConfig,
     strategy: java.lang.String
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
+  ): expressLib.expressMod.RequestHandler = js.native
 }
 

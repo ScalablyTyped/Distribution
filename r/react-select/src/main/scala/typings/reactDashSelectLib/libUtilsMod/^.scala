@@ -61,7 +61,7 @@ object ^ extends js.Object {
   def cleanValue[OptionType](value: reactDashSelectLib.libTypesMod.ValueType[OptionType]): reactDashSelectLib.libTypesMod.OptionsType[OptionType] = js.native
   def emptyString(): java.lang.String = js.native
   def getBoundingClientObj(element: stdLib.HTMLElement): reactDashSelectLib.Anon_Bottom = js.native
-  def getScrollParent(element: reactLib.reactMod.ReactNs.Ref[_]): stdLib.Element = js.native
+  def getScrollParent(element: reactLib.reactMod.Ref[_]): stdLib.Element = js.native
   def getScrollTop(el: stdLib.Element): scala.Double = js.native
   def handleInputChange(inputValue: java.lang.String, actionMeta: reactDashSelectLib.libTypesMod.InputActionMeta): java.lang.String = js.native
   def handleInputChange(

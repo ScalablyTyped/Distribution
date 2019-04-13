@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ICalloutProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps {
   /**
     * Name of a Blueprint UI icon (or an icon element) to render on the left side.
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 object ICalloutProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     IIntentProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,

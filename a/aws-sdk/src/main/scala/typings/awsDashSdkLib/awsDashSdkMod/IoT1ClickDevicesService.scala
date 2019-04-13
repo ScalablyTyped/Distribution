@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class IoT1ClickDevicesService ()
   extends awsDashSdkLib.clientsAllMod.IoT1ClickDevicesService {
-  def this(options: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsIot1clickdevicesserviceMod.ClientConfiguration) = this()
 }
 

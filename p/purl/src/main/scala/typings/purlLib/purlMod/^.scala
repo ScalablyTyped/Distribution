@@ -11,12 +11,12 @@ object ^ extends js.Object {
   /**
     * Parse the current page URL
     */
-  def apply(): purlLib.purlMod.purlNs.Url = js.native
+  def apply(): Url = js.native
   /**
     * Pass in a URI as a string and parse that
     *
     * @param someUrl the url to be parsed
     */
-  def apply(someUrl: java.lang.String): purlLib.purlMod.purlNs.Url = js.native
+  def apply(someUrl: java.lang.String): Url = js.native
 }
 

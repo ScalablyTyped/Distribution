@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashReduxDashI18nLibComponents {
   @scala.inline
-  def Localize: reactLib.reactMod.ReactNs.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.LocalizeProps] = js.constructorOf[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.Localize].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.LocalizeProps]]
+  def Localize: reactLib.reactMod.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.LocalizeProps] = js.constructorOf[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.Localize].asInstanceOf[reactLib.reactMod.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.LocalizeProps]]
   @scala.inline
-  def Translate: reactLib.reactMod.ReactNs.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.TranslateProps] = js.constructorOf[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.Translate].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.TranslateProps]]
+  def Translate: reactLib.reactMod.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.TranslateProps] = js.constructorOf[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.Translate].asInstanceOf[reactLib.reactMod.ComponentType[reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.TranslateProps]]
   @scala.inline
   def LocalizeProps: reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.LocalizeProps.type = reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.LocalizeProps
   type LocalizeProps = reactDashReduxDashI18nLib.reactDashReduxDashI18nMod.LocalizeProps

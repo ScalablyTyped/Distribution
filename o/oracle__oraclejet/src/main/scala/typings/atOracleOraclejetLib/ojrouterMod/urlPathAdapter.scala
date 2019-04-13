@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line no-unnecessary-class
 @JSImport("@oracle/oraclejet/ojrouter", "urlPathAdapter")
 @js.native
-class urlPathAdapter ()
-  extends atOracleOraclejetLib.ojrouterMod.RouterNs.urlPathAdapter
+class urlPathAdapter () extends js.Object
 

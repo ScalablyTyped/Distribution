@@ -15,7 +15,7 @@ trait SchemaSpec[N /* <: java.lang.String */, M /* <: java.lang.String */] exten
   var marks: js.UndefOr[
     (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
-    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[MarkSpec] | scala.Null
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.^[MarkSpec] | scala.Null
   ] = js.undefined
   /**
     * The node types in this schema. Maps names to
@@ -27,7 +27,7 @@ trait SchemaSpec[N /* <: java.lang.String */, M /* <: java.lang.String */] exten
     */
   var nodes: (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[NodeSpec]
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.^[NodeSpec]
   /**
     * The name of the default top-level node for the schema. Defaults
     * to `"doc"`.
@@ -40,10 +40,10 @@ object SchemaSpec {
   def apply[N /* <: java.lang.String */, M /* <: java.lang.String */](
     nodes: (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[NodeSpec],
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.^[NodeSpec],
     marks: (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
-    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[MarkSpec] = null,
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.^[MarkSpec] = null,
     topNode: java.lang.String = null
   ): SchemaSpec[N, M] = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])

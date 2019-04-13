@@ -6,37 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PageHeaderProps extends js.Object {
-  var backIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var backIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var breadcrumb: js.UndefOr[antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onBack: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var subTitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var subTitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var tags: js.UndefOr[js.Array[antdLib.libTagMod.default]] = js.undefined
-  var title: reactLib.reactMod.ReactNs.ReactNode
+  var title: reactLib.reactMod.ReactNode
 }
 
 object PageHeaderProps {
   @scala.inline
   def apply(
-    title: reactLib.reactMod.ReactNs.ReactNode,
-    backIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode,
+    backIcon: reactLib.reactMod.ReactNode = null,
     breadcrumb: antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps = null,
     className: java.lang.String = null,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
-    footer: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBack: /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    extra: reactLib.reactMod.ReactNode = null,
+    footer: reactLib.reactMod.ReactNode = null,
+    onBack: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    subTitle: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    subTitle: reactLib.reactMod.ReactNode = null,
     tags: js.Array[antdLib.libTagMod.default] = null
   ): PageHeaderProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])

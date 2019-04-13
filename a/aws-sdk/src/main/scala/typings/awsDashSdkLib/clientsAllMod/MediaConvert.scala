@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MediaConvert ()
-  extends awsDashSdkLib.clientsMediaconvertMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMediaconvertMod.^ {
+  def this(options: awsDashSdkLib.clientsMediaconvertMod.ClientConfiguration) = this()
 }
 

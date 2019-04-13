@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Svg")
 @js.native
-class Svg ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Svg
+class Svg () extends js.Object
 
 /* static members */
 @JSImport("matter-js", "Svg")
@@ -24,6 +23,6 @@ object Svg extends js.Object {
     * @param {Number} [sampleLength=15]
     * @return {Vector[]} points
     */
-  def pathToVertices(path: stdLib.SVGPathElement, sampleLength: scala.Double): js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
+  def pathToVertices(path: stdLib.SVGPathElement, sampleLength: scala.Double): js.Array[matterDashJsLib.matterDashJsMod.Vector] = js.native
 }
 

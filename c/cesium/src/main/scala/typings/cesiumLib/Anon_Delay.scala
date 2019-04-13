@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Delay extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
-  var loop: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ModelAnimationLoop] = js.undefined
+  var loop: js.UndefOr[cesiumLib.cesiumMod.ModelAnimationLoop] = js.undefined
   var name: java.lang.String
   var removeOnStop: js.UndefOr[scala.Boolean] = js.undefined
   var reverse: js.UndefOr[scala.Boolean] = js.undefined
   var speedup: js.UndefOr[scala.Double] = js.undefined
-  var startTime: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.JulianDate] = js.undefined
-  var stopTime: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.JulianDate] = js.undefined
+  var startTime: js.UndefOr[cesiumLib.cesiumMod.JulianDate] = js.undefined
+  var stopTime: js.UndefOr[cesiumLib.cesiumMod.JulianDate] = js.undefined
 }
 
 object Anon_Delay {
@@ -21,12 +21,12 @@ object Anon_Delay {
   def apply(
     name: java.lang.String,
     delay: scala.Int | scala.Double = null,
-    loop: cesiumLib.cesiumMod.CesiumNs.ModelAnimationLoop = null,
+    loop: cesiumLib.cesiumMod.ModelAnimationLoop = null,
     removeOnStop: js.UndefOr[scala.Boolean] = js.undefined,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     speedup: scala.Int | scala.Double = null,
-    startTime: cesiumLib.cesiumMod.CesiumNs.JulianDate = null,
-    stopTime: cesiumLib.cesiumMod.CesiumNs.JulianDate = null
+    startTime: cesiumLib.cesiumMod.JulianDate = null,
+    stopTime: cesiumLib.cesiumMod.JulianDate = null
   ): Anon_Delay = {
     val __obj = js.Dynamic.literal(name = name)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

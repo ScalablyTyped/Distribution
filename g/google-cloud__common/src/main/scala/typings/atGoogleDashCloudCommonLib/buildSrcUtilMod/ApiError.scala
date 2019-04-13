@@ -17,7 +17,7 @@ class ApiError protected ()
   override var message: java.lang.String = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native
-  var response: js.UndefOr[requestLib.requestMod.requestNs.Response] = js.native
+  var response: js.UndefOr[requestLib.requestMod.Response] = js.native
 }
 
 /* static members */

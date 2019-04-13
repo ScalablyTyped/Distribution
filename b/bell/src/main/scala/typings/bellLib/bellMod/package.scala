@@ -22,4 +22,5 @@ package object bellMod {
     /* request */ hapiLib.hapiMod.Request, 
     js.Thenable[hapiLib.hapiMod.AuthCredentials] | hapiLib.hapiMod.AuthCredentials
   ]
+  type StringLikeMap = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
 }

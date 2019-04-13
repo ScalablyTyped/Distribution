@@ -28,3 +28,8 @@ class SearchConditionEx ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.SearchConditionEx")
+@js.native
+object SearchConditionEx
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISearchConditionEx]
+

@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ResponsiveEmbed
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libResponsiveEmbedMod.ResponsiveEmbedNs.ResponsiveEmbedProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[ResponsiveEmbedProps, js.Object, js.Any]
 

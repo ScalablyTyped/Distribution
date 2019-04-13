@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_FormApiAny extends js.Object {
   @JSName("formApi")
-  var formApi_Original: reactLib.reactMod.ReactNs.Validator[_] = js.native
+  var formApi_Original: reactLib.reactMod.Validator[_] = js.native
   def formApi(
     props: js.Object,
     propName: java.lang.String,

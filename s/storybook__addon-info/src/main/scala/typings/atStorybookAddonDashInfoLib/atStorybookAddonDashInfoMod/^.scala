@@ -13,7 +13,7 @@ object ^ extends js.Object {
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
     js.Function1[
       /* context */ js.UndefOr[js.Object], 
-      reactLib.reactMod.ReactNs.ReactElement[WrapStoryProps]
+      reactLib.reactMod.ReactElement[WrapStoryProps]
     ]
   ] = js.native
   def withInfo(
@@ -24,14 +24,14 @@ object ^ extends js.Object {
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
     js.Function1[
       /* context */ js.UndefOr[js.Object], 
-      reactLib.reactMod.ReactNs.ReactElement[WrapStoryProps]
+      reactLib.reactMod.ReactElement[WrapStoryProps]
     ]
   ] = js.native
   def withInfo(textOrOptions: java.lang.String): js.Function1[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
     js.Function1[
       /* context */ js.UndefOr[js.Object], 
-      reactLib.reactMod.ReactNs.ReactElement[WrapStoryProps]
+      reactLib.reactMod.ReactElement[WrapStoryProps]
     ]
   ] = js.native
 }

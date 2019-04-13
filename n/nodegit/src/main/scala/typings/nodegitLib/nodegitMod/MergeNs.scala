@@ -60,10 +60,5 @@ object MergeNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.mergeMod.MergeNs.TREE_FLAG with scala.Double] = js.native
   }
   
-  type ANALYSIS = nodegitLib.mergeMod.MergeNs.ANALYSIS
-  type FILE_FAVOR = nodegitLib.mergeMod.MergeNs.FILE_FAVOR
-  type FILE_FLAGS = nodegitLib.mergeMod.MergeNs.FILE_FLAGS
-  type PREFERENCE = nodegitLib.mergeMod.MergeNs.PREFERENCE
-  type TREE_FLAG = nodegitLib.mergeMod.MergeNs.TREE_FLAG
 }
 

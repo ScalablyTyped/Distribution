@@ -33,8 +33,8 @@ trait IQFieldValue extends js.Object {
     * @param [softlock] - Optional. If true, locked selections can be overridden.
     * @return - A promise.
     */
-  def select(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def select(toggle: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def select(toggle: scala.Boolean, softlock: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def select(): angularLib.angularMod.IPromise[_] = js.native
+  def select(toggle: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
+  def select(toggle: scala.Boolean, softlock: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
 }
 

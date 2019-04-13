@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class WorkSpaces ()
   extends awsDashSdkLib.clientsAllMod.WorkSpaces {
-  def this(options: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsWorkspacesMod.ClientConfiguration) = this()
 }
 

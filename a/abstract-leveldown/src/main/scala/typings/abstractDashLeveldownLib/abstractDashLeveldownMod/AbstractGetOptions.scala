@@ -11,8 +11,12 @@ trait AbstractGetOptions extends AbstractOptions {
 
 object AbstractGetOptions {
   @scala.inline
-  def apply(asBuffer: js.UndefOr[scala.Boolean] = js.undefined): AbstractGetOptions = {
+  def apply(
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    asBuffer: js.UndefOr[scala.Boolean] = js.undefined
+  ): AbstractGetOptions = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer)
     __obj.asInstanceOf[AbstractGetOptions]
   }

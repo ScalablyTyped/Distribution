@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait ojColorSpectrumEventMap
   extends atOracleOraclejetLib.ojeditablevalueMod.editableValueEventMap[
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
+      atOracleOraclejetLib.ojcolorMod.^, 
       ojColorSpectrumSettableProperties, 
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
-      atOracleOraclejetLib.ojcolorMod.namespaced
+      atOracleOraclejetLib.ojcolorMod.^, 
+      atOracleOraclejetLib.ojcolorMod.^
     ] {
   var labelledByChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null]
   @JSName("ojAnimateEnd")
   var ojAnimateEnd_ojColorSpectrumEventMap: atOracleOraclejetLib.ojcolorspectrumMod.ojColorSpectrumNs.ojAnimateEnd
   @JSName("ojAnimateStart")
   var ojAnimateStart_ojColorSpectrumEventMap: atOracleOraclejetLib.ojcolorspectrumMod.ojColorSpectrumNs.ojAnimateStart
-  var transientValueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.namespaced]
+  var transientValueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.^]
 }
 
 object ojColorSpectrumEventMap {
@@ -75,7 +75,7 @@ object ojColorSpectrumEventMap {
     loadend: stdLib.ProgressEvent,
     loadstart: stdLib.Event,
     lostpointercapture: stdLib.PointerEvent,
-    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]],
+    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]],
     mousedown: stdLib.MouseEvent,
     mouseenter: stdLib.MouseEvent,
     mouseleave: stdLib.MouseEvent,
@@ -117,7 +117,7 @@ object ojColorSpectrumEventMap {
     touchend: stdLib.TouchEvent,
     touchmove: stdLib.TouchEvent,
     touchstart: stdLib.TouchEvent,
-    transientValueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.namespaced],
+    transientValueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.^],
     transitioncancel: stdLib.TransitionEvent,
     transitionend: stdLib.TransitionEvent,
     transitionrun: stdLib.TransitionEvent,
@@ -126,7 +126,7 @@ object ojColorSpectrumEventMap {
     validChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown
     ],
-    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.namespaced],
+    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.^],
     volumechange: stdLib.Event,
     waiting: stdLib.Event,
     wheel: stdLib.WheelEvent

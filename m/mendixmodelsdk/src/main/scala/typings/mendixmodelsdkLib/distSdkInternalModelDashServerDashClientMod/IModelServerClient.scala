@@ -117,7 +117,7 @@ trait IModelServerClient extends js.Object {
   /**
     * Returns an EventSource instance that will emit events that occur on the working copy.
     */
-  def getModelEventSource(workingCopyId: java.lang.String, lastFetchedEventId: scala.Double): eventsourceLib.eventsourceMod.namespaced = js.native
+  def getModelEventSource(workingCopyId: java.lang.String, lastFetchedEventId: scala.Double): eventsourceLib.eventsourceMod.^ = js.native
   def getMyWorkingCopies(
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[
       js.Array[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy]

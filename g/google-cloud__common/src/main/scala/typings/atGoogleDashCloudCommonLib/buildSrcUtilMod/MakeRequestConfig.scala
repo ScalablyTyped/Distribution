@@ -19,7 +19,7 @@ trait MakeRequestConfig extends js.Object {
   var maxRetries: js.UndefOr[scala.Double] = js.undefined
   var retries: js.UndefOr[scala.Double] = js.undefined
   var shouldRetryFn: js.UndefOr[
-    js.Function1[/* response */ js.UndefOr[requestLib.requestMod.requestNs.Response], scala.Boolean]
+    js.Function1[/* response */ js.UndefOr[requestLib.requestMod.Response], scala.Boolean]
   ] = js.undefined
   var stream: js.UndefOr[Duplexify] = js.undefined
 }
@@ -30,7 +30,7 @@ object MakeRequestConfig {
     autoRetry: js.UndefOr[scala.Boolean] = js.undefined,
     maxRetries: scala.Int | scala.Double = null,
     retries: scala.Int | scala.Double = null,
-    shouldRetryFn: /* response */ js.UndefOr[requestLib.requestMod.requestNs.Response] => scala.Boolean = null,
+    shouldRetryFn: /* response */ js.UndefOr[requestLib.requestMod.Response] => scala.Boolean = null,
     stream: Duplexify = null
   ): MakeRequestConfig = {
     val __obj = js.Dynamic.literal()

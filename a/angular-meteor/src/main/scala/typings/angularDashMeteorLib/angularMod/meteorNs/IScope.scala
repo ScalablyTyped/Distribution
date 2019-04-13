@@ -44,6 +44,6 @@ trait IScope extends IRootScopeService {
     *
     * @return The promise solved successfully when subscription is ready. The success promise holds the subscription handle.
     */
-  def subscribe(name: java.lang.String, publisherArguments: js.Any*): angularLib.angularMod.angularNs.IPromise[meteorLib.MeteorNs.SubscriptionHandle] = js.native
+  def subscribe(name: java.lang.String, publisherArguments: js.Any*): angularLib.angularMod.IPromise[meteorLib.MeteorNs.SubscriptionHandle] = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts", "array")
 @js.native
 object arrayNs extends js.Object {
-  val URI: /* Array */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Array = js.native
   val array: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.libArrayMod.URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) with fpDashTsLib.libAlternativeMod.Alternative1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libPlusMod.Plus1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libExtendMod.Extend1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libArrayMod.URI] with (fpDashTsLib.libFilterableWithIndexMod.FilterableWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libArrayMod.URI] with (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) = js.native
   val empty: fpDashTsLib.libArrayMod.Global.Array[scala.Nothing] = js.native
   def catOptions[A](as: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libOptionMod.Option[A]]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
@@ -224,16 +224,5 @@ object arrayNs extends js.Object {
     fb: fpDashTsLib.libArrayMod.Global.Array[B],
     f: js.Function2[/* a */ A, /* b */ B, C]
   ): fpDashTsLib.libArrayMod.Global.Array[C] = js.native
-  @js.native
-  object Global extends js.Object {
-    trait Array[T] extends js.Object {
-      /** phantom property added by `fp-ts` */
-      var _A: T
-      /** phantom property added by `fp-ts` */
-      var _URI: fpDashTsLib.libArrayMod.URI
-    }
-    
-  }
-  
 }
 

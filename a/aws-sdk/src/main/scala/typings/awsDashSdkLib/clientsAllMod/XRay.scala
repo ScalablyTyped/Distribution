@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class XRay ()
-  extends awsDashSdkLib.clientsXrayMod.namespaced {
-  def this(options: awsDashSdkLib.clientsXrayMod.XRayNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsXrayMod.^ {
+  def this(options: awsDashSdkLib.clientsXrayMod.ClientConfiguration) = this()
 }
 

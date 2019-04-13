@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IControlGroupProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
   /**
     * Whether the control group should take up the full width of its container.
     * @default false
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 object IControlGroupProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
     vertical: js.UndefOr[scala.Boolean] = js.undefined

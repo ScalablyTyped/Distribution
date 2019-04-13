@@ -47,7 +47,7 @@ trait gettextCatalog extends js.Object {
   /** Get the correct pluralized (but untranslated) string for the value of n. */
   def getStringForm(string: java.lang.String, n: scala.Double): java.lang.String = js.native
   /** Load a set of translation strings from a given URL.This should be a JSON catalog generated with grunt-angular-gettext. More details https://angular-gettext.rocketeer.be/dev-guide/lazy-loading/ */
-  def loadRemote(url: java.lang.String): angularLib.angularMod.angularNs.IHttpPromise[_] = js.native
+  def loadRemote(url: java.lang.String): angularLib.angularMod.IHttpPromise[_] = js.native
   ///////////////
   /// Methods ///
   ///////////////

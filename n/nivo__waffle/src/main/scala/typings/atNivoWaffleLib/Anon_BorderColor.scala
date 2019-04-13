@@ -16,11 +16,11 @@ trait Anon_BorderColor extends js.Object {
   var margin: atNivoCoreLib.atNivoCoreMod.Box
   var padding: scala.Double
   var theme: atNivoCoreLib.atNivoCoreMod.Theme
-  var tooltip: reactLib.reactMod.ReactNs.StatelessComponent[atNivoWaffleLib.atNivoWaffleMod.WaffleTooltipData]
+  var tooltip: reactLib.reactMod.StatelessComponent[atNivoWaffleLib.atNivoWaffleMod.WaffleTooltipData]
   var tooltipFormat: java.lang.String | atNivoWaffleLib.atNivoWaffleMod.ValueFormatter
   def onClick(
     datum: atNivoWaffleLib.atNivoWaffleMod.WaffleDatum,
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
+    event: reactLib.reactMod.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
   ): scala.Unit
 }
 
@@ -35,10 +35,10 @@ object Anon_BorderColor {
     fillDirection: atNivoWaffleLib.atNivoWaffleMod.WaffleFillDirection,
     isInteractive: scala.Boolean,
     margin: atNivoCoreLib.atNivoCoreMod.Box,
-    onClick: (atNivoWaffleLib.atNivoWaffleMod.WaffleDatum, reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]) => scala.Unit,
+    onClick: (atNivoWaffleLib.atNivoWaffleMod.WaffleDatum, reactLib.reactMod.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]) => scala.Unit,
     padding: scala.Double,
     theme: atNivoCoreLib.atNivoCoreMod.Theme,
-    tooltip: reactLib.reactMod.ReactNs.StatelessComponent[atNivoWaffleLib.atNivoWaffleMod.WaffleTooltipData],
+    tooltip: reactLib.reactMod.StatelessComponent[atNivoWaffleLib.atNivoWaffleMod.WaffleTooltipData],
     tooltipFormat: java.lang.String | atNivoWaffleLib.atNivoWaffleMod.ValueFormatter
   ): Anon_BorderColor = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth, emptyColor = emptyColor, emptyOpacity = emptyOpacity, enableLabels = enableLabels, fillDirection = fillDirection, isInteractive = isInteractive, margin = margin, onClick = js.Any.fromFunction2(onClick), padding = padding, theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any])

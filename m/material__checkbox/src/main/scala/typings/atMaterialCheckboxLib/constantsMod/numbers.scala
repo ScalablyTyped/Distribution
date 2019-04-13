@@ -12,9 +12,12 @@ trait numbers
 
 object numbers {
   @scala.inline
-  def apply(ANIM_END_LATCH_MS: atMaterialCheckboxLib.atMaterialCheckboxLibNumbers.`250`): numbers = {
+  def apply(
+    ANIM_END_LATCH_MS: atMaterialCheckboxLib.atMaterialCheckboxLibNumbers.`250`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[scala.Double] = null
+  ): numbers = {
     val __obj = js.Dynamic.literal(ANIM_END_LATCH_MS = ANIM_END_LATCH_MS)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

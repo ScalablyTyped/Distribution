@@ -10,13 +10,13 @@ trait NavigationDescriptor[Params] extends js.Object {
   var navigation: NavigationScreenProp[_, NavigationParams]
   var options: NavigationScreenOptions
   var state: NavigationLeafRoute[Params] | NavigationStateRoute[Params]
-  def getComponent(): reactLib.reactMod.ReactNs.ComponentType[js.Object]
+  def getComponent(): reactLib.reactMod.ComponentType[js.Object]
 }
 
 object NavigationDescriptor {
   @scala.inline
   def apply[Params](
-    getComponent: () => reactLib.reactMod.ReactNs.ComponentType[js.Object],
+    getComponent: () => reactLib.reactMod.ComponentType[js.Object],
     key: java.lang.String,
     navigation: NavigationScreenProp[_, NavigationParams],
     options: NavigationScreenOptions,

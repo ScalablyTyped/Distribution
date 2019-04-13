@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps & react.react.React.LiHTMLAttributes<std.HTMLElement>, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps & react.react.React.LiHTMLAttributes<std.HTMLElement>[P]} */ trait ListItemProps
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<std.HTMLElement>, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<std.HTMLElement>[P]} */ trait ListItemProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ListItemClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ContainerComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactType[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]]
+    reactLib.reactMod.ReactType[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]]
   ] = js.undefined
-  var ContainerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
+  var ContainerProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   var alignItems: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`flex-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center
   ] = js.undefined
   var button: js.UndefOr[scala.Boolean] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ListItemProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[ListItemProps]] = js.undefined
   var dense: js.UndefOr[scala.Boolean] = js.undefined
   var disableGutters: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,21 +29,21 @@ import scala.scalajs.js.annotation._
 object ListItemProps {
   @scala.inline
   def apply(
-    ContainerComponent: reactLib.reactMod.ReactNs.ReactType[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = null,
-    ContainerProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    ContainerComponent: reactLib.reactMod.ReactType[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]] = null,
+    ContainerProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     alignItems: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`flex-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center = null,
     button: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ListItemClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[ListItemProps] = null,
+    component: reactLib.reactMod.ReactType[ListItemProps] = null,
     dense: js.UndefOr[scala.Boolean] = js.undefined,
     disableGutters: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     divider: js.UndefOr[scala.Boolean] = js.undefined,
     focusVisibleClassName: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): ListItemProps = {
     val __obj = js.Dynamic.literal()
     if (ContainerComponent != null) __obj.updateDynamic("ContainerComponent")(ContainerComponent.asInstanceOf[js.Any])

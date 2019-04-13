@@ -7,70 +7,62 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_A extends js.Object {
-  def apply(`type`: rehypeDashReactLib.rehypeDashReactLibStrings.input): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[
-    reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  def apply(`type`: rehypeDashReactLib.rehypeDashReactLibStrings.input): reactLib.reactMod.DetailedReactHTMLElement[
+    reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
     reactLib.HTMLInputElement
   ] = js.native
   def apply(
     `type`: rehypeDashReactLib.rehypeDashReactLibStrings.input,
-    props: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] with (reactLib.reactMod.ReactNs.ClassAttributes[reactLib.HTMLInputElement] | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[
-    reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+    props: reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement] with (reactLib.reactMod.ClassAttributes[reactLib.HTMLInputElement] | scala.Null),
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.DetailedReactHTMLElement[
+    reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
     reactLib.HTMLInputElement
   ] = js.native
-  def apply[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
+  def apply[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactElement[P] = js.native
   def apply[P /* <: js.Object */](
     `type`: java.lang.String,
-    props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
+    props: reactLib.reactMod.Attributes with (P | scala.Null),
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.ReactElement[P] = js.native
   def apply[P /* <: js.Object */](
-    `type`: reactLib.reactMod.ReactNs.ClassType[
+    `type`: reactLib.reactMod.ClassType[
       P, 
-      reactLib.reactMod.ReactNs.ClassicComponent[P, reactLib.reactMod.ReactNs.ComponentState], 
-      reactLib.reactMod.ReactNs.ClassicComponentClass[P]
+      reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState], 
+      reactLib.reactMod.ClassicComponentClass[P]
     ]
-  ): reactLib.reactMod.ReactNs.CElement[
-    P, 
-    reactLib.reactMod.ReactNs.ClassicComponent[P, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.native
+  ): reactLib.reactMod.CElement[P, reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState]] = js.native
   def apply[P /* <: js.Object */](
-    `type`: reactLib.reactMod.ReactNs.ClassType[
+    `type`: reactLib.reactMod.ClassType[
       P, 
-      reactLib.reactMod.ReactNs.ClassicComponent[P, reactLib.reactMod.ReactNs.ComponentState], 
-      reactLib.reactMod.ReactNs.ClassicComponentClass[P]
+      reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState], 
+      reactLib.reactMod.ClassicComponentClass[P]
     ],
-    props: (reactLib.reactMod.ReactNs.ClassAttributes[
-      reactLib.reactMod.ReactNs.ClassicComponent[P, reactLib.reactMod.ReactNs.ComponentState]
-    ]) with (P | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.CElement[
-    P, 
-    reactLib.reactMod.ReactNs.ClassicComponent[P, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.native
-  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
+    props: (reactLib.reactMod.ClassAttributes[reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState]]) with (P | scala.Null),
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.CElement[P, reactLib.reactMod.ClassicComponent[P, reactLib.reactMod.ComponentState]] = js.native
+  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]): reactLib.reactMod.ReactElement[P] = js.native
   def apply[P /* <: js.Object */](
-    `type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState],
-    props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
-  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.FunctionComponent[P]): reactLib.reactMod.ReactNs.FunctionComponentElement[P] = js.native
+    `type`: reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState],
+    props: reactLib.reactMod.Attributes with (P | scala.Null),
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.ReactElement[P] = js.native
+  def apply[P /* <: js.Object */](`type`: reactLib.reactMod.FunctionComponent[P]): reactLib.reactMod.ReactElement[P] = js.native
   def apply[P /* <: js.Object */](
-    `type`: reactLib.reactMod.ReactNs.FunctionComponent[P],
-    props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.FunctionComponentElement[P] = js.native
-  def apply[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[T] */, T /* <: reactLib.Element */](
+    `type`: reactLib.reactMod.FunctionComponent[P],
+    props: reactLib.reactMod.Attributes with (P | scala.Null),
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.ReactElement[P] = js.native
+  def apply[P /* <: reactLib.reactMod.DOMAttributes[T] */, T /* <: reactLib.Element */](
     `type`: java.lang.String,
-    props: reactLib.reactMod.ReactNs.ClassAttributes[T] with (P | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.DOMElement[P, T] = js.native
-  def apply[P /* <: reactLib.reactMod.ReactNs.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[P, T] = js.native
-  def apply[P /* <: reactLib.reactMod.ReactNs.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
+    props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.DOMElement[P, T] = js.native
+  def apply[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native
+  def apply[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
     `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any,
-    props: reactLib.reactMod.ReactNs.ClassAttributes[T] with (P | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[P, T] = js.native
+    props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native
 }
 

@@ -76,7 +76,7 @@ trait Options extends js.Object {
     * Options for stats.toJson() method.
     * For example you can exclude sources of your modules from stats file with "source: false" option.
     */
-  var statsOptions: js.UndefOr[scala.Null | webpackLib.webpackMod.webpackNs.StatsNs.ToJsonOptionsObject] = js.undefined
+  var statsOptions: js.UndefOr[scala.Null | webpackLib.webpackMod.StatsNs.ToJsonOptionsObject] = js.undefined
 }
 
 object Options {
@@ -92,7 +92,7 @@ object Options {
     openAnalyzer: js.UndefOr[scala.Boolean] = js.undefined,
     reportFilename: java.lang.String = null,
     statsFilename: java.lang.String = null,
-    statsOptions: webpackLib.webpackMod.webpackNs.StatsNs.ToJsonOptionsObject = null
+    statsOptions: webpackLib.webpackMod.StatsNs.ToJsonOptionsObject = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (analyzerHost != null) __obj.updateDynamic("analyzerHost")(analyzerHost)

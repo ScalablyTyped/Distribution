@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("lodash-es/date", JSImport.Namespace)
 @js.native
 object dateMod extends js.Object {
-  val default: lodashDashEsLib.Anon_Now = js.native
+  @js.native
+  object default extends js.Object {
+    var now: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof now */ js.Any = js.native
+  }
+  
 }
 

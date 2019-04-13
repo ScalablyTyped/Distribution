@@ -17,10 +17,11 @@ object cssClasses {
   def apply(
     CLOSED_CLASS: atMaterialLinearDashProgressLib.atMaterialLinearDashProgressLibStrings.`mdc-linear-progress--closed`,
     INDETERMINATE_CLASS: atMaterialLinearDashProgressLib.atMaterialLinearDashProgressLibStrings.`mdc-linear-progress--indeterminate`,
-    REVERSED_CLASS: atMaterialLinearDashProgressLib.atMaterialLinearDashProgressLibStrings.`mdc-linear-progress--reversed`
+    REVERSED_CLASS: atMaterialLinearDashProgressLib.atMaterialLinearDashProgressLibStrings.`mdc-linear-progress--reversed`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(CLOSED_CLASS = CLOSED_CLASS, INDETERMINATE_CLASS = INDETERMINATE_CLASS, REVERSED_CLASS = REVERSED_CLASS)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

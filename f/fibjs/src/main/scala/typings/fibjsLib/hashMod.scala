@@ -13,15 +13,15 @@ import scala.scalajs.js.annotation._
 @JSImport("hash", JSImport.Namespace)
 @js.native
 object hashMod extends js.Object {
-  val MD2: /* 1 */ scala.Double = js.native
-  val MD4: /* 2 */ scala.Double = js.native
-  val MD5: /* 3 */ scala.Double = js.native
-  val RIPEMD160: /* 9 */ scala.Double = js.native
-  val SHA1: /* 4 */ scala.Double = js.native
-  val SHA224: /* 5 */ scala.Double = js.native
-  val SHA256: /* 6 */ scala.Double = js.native
-  val SHA384: /* 7 */ scala.Double = js.native
-  val SHA512: /* 8 */ scala.Double = js.native
+  val MD2: fibjsLib.fibjsLibNumbers.`1` = js.native
+  val MD4: fibjsLib.fibjsLibNumbers.`2` = js.native
+  val MD5: fibjsLib.fibjsLibNumbers.`3` = js.native
+  val RIPEMD160: fibjsLib.fibjsLibNumbers.`9` = js.native
+  val SHA1: fibjsLib.fibjsLibNumbers.`4` = js.native
+  val SHA224: fibjsLib.fibjsLibNumbers.`5` = js.native
+  val SHA256: fibjsLib.fibjsLibNumbers.`6` = js.native
+  val SHA384: fibjsLib.fibjsLibNumbers.`7` = js.native
+  val SHA512: fibjsLib.fibjsLibNumbers.`8` = js.native
   def digest(algo: scala.Double): fibjsLib.Class_Digest = js.native
   def digest(algo: scala.Double, data: fibjsLib.Class_Buffer): fibjsLib.Class_Digest = js.native
   def hmac(algo: scala.Double, key: fibjsLib.Class_Buffer): fibjsLib.Class_Digest = js.native

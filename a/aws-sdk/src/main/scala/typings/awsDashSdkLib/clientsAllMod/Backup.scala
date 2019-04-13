@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Backup ()
-  extends awsDashSdkLib.clientsBackupMod.namespaced {
-  def this(options: awsDashSdkLib.clientsBackupMod.BackupNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsBackupMod.^ {
+  def this(options: awsDashSdkLib.clientsBackupMod.ClientConfiguration) = this()
 }
 

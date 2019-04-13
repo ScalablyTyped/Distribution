@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IntlConfig extends js.Object {
   @JSName("defaultFormats")
-  var defaultFormats_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  var defaultFormats_Original: reactLib.reactMod.Requireable[_] = js.native
   @JSName("defaultLocale")
-  var defaultLocale_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  var defaultLocale_Original: reactLib.reactMod.Requireable[_] = js.native
   @JSName("formats")
-  var formats_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  var formats_Original: reactLib.reactMod.Requireable[_] = js.native
   @JSName("locale")
-  var locale_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  var locale_Original: reactLib.reactMod.Requireable[_] = js.native
   @JSName("messages")
-  var messages_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  var messages_Original: reactLib.reactMod.Requireable[_] = js.native
   @JSName("onError")
-  var onError_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  var onError_Original: reactLib.reactMod.Requireable[_] = js.native
   def defaultFormats(
     props: js.Object,
     propName: java.lang.String,

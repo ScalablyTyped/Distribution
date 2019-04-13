@@ -49,6 +49,9 @@ object reactDashNativeDashDialogflowLibStrings {
   sealed trait uk extends js.Object
   
   @js.native
+  sealed trait `zh-CN` extends js.Object
+  
+  @js.native
   sealed trait `zh-HK` extends js.Object
   
   @js.native
@@ -82,6 +85,8 @@ object reactDashNativeDashDialogflowLibStrings {
   def ru: ru = "ru".asInstanceOf[ru]
   @scala.inline
   def uk: uk = "uk".asInstanceOf[uk]
+  @scala.inline
+  def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
   @scala.inline
   def `zh-HK`: `zh-HK` = "zh-HK".asInstanceOf[`zh-HK`]
   @scala.inline

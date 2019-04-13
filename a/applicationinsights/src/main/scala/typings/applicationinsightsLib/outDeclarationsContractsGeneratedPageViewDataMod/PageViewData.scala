@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait PageViewData
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedEventDataMod.namespaced {
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedEventDataMod.^ {
   /**
     * Request duration in format: DD.HH:MM:SS.MMMMMM. For a page view (PageViewData), this is the duration. For a page view with performance information (PageViewPerfData), this is the page load time. Must be less than 1000 days.
     */

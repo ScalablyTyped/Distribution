@@ -46,8 +46,5 @@ object resourcesNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[umbracoLib.umbracoNs.resourcesNs.OrderItemsBy with java.lang.String] = js.native
   }
   
-  type Direction = umbracoLib.umbracoNs.resourcesNs.Direction
-  type LogType = umbracoLib.umbracoNs.resourcesNs.LogType
-  type OrderItemsBy = umbracoLib.umbracoNs.resourcesNs.OrderItemsBy
 }
 

@@ -19,3 +19,8 @@ class TypedValues ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.TypedValues")
+@js.native
+object TypedValues
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITypedValues]
+

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Dimmer/DimmerDimmable", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[DimmerDimmableProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[DimmerDimmableProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: DimmerDimmableProps) = this()
   def this(props: DimmerDimmableProps, context: js.Any) = this()
 }

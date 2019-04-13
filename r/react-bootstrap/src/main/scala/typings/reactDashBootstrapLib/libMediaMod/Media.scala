@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Media
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libMediaMod.MediaNs.MediaProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[MediaProps, js.Object, js.Any]
 

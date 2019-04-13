@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
+      /* event */ reactLib.reactMod.ChangeEvent[js.Object], 
       /* value */ java.lang.String, 
       scala.Unit
     ]
@@ -25,10 +25,10 @@ object RadioGroupProps {
   def apply(
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[RadioGroupClassKey]] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     name: java.lang.String = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* value */ java.lang.String) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ java.lang.String) => scala.Unit = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: java.lang.String = null
   ): RadioGroupProps = {
     val __obj = js.Dynamic.literal()

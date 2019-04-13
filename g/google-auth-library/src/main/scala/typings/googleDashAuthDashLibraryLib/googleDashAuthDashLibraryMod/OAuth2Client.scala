@@ -53,7 +53,7 @@ object OAuth2Client extends js.Object {
     * The base endpoint for token retrieval.
     */
   val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
-  val GOOGLE_TOKEN_INFO_URL: /* https://oauth2.googleapis.com/tokeninfo */ java.lang.String = js.native
+  val GOOGLE_TOKEN_INFO_URL: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryLibStrings.`https://oauth2DOTgoogleapisDOTcom/tokeninfo` = js.native
   /**
     * The allowed oauth token issuers.
     */

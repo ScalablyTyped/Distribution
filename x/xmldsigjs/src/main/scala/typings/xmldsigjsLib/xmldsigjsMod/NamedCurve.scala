@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("xmldsigjs", "NamedCurve")
 @js.native
 class NamedCurve ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.NamedCurve
+  extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
+  var Uri: java.lang.String = js.native
+}
 

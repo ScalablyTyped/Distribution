@@ -29,7 +29,7 @@ class Server ()
   /**
     * Force a refresh of the file list
     */
-  def refreshFiles(): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def refreshFiles(): bluebirdLib.bluebirdMod.^[_] = js.native
   /**
     * Start the server
     */

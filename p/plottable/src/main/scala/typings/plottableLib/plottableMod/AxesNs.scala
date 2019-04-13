@@ -57,9 +57,6 @@ object AxesNs extends js.Object {
     def this(scale: plottableLib.buildSrcScalesMod.Time, orientation: plottableLib.buildSrcAxesTimeAxisMod.TimeAxisOrientation, useUTC: scala.Boolean) = this()
   }
   
-  val TierLabelPosition: plottableLib.Anon_Between = js.native
-  val TimeAxisOrientation: plottableLib.Anon_BottomTop = js.native
-  val TimeInterval: plottableLib.Anon_Day = js.native
   /* static members */
   @js.native
   object Category extends js.Object {
@@ -67,6 +64,12 @@ object AxesNs extends js.Object {
       * How many pixels to give labels at minimum before downsampling takes effect.
       */
     var _MINIMUM_WIDTH_PER_LABEL_PX: js.Any = js.native
+  }
+  
+  @js.native
+  object TierLabelPosition extends js.Object {
+    var between: plottableLib.plottableLibStrings.between = js.native
+    var center: plottableLib.plottableLibStrings.center = js.native
   }
   
   /* static members */
@@ -79,6 +82,23 @@ object AxesNs extends js.Object {
     var _DEFAULT_TIME_AXIS_CONFIGURATIONS: js.Any = js.native
     var _LONG_DATE: js.Any = js.native
     var _SORTED_TIME_INTERVAL_INDEX: js.Any = js.native
+  }
+  
+  @js.native
+  object TimeAxisOrientation extends js.Object {
+    var bottom: plottableLib.plottableLibStrings.bottom = js.native
+    var top: plottableLib.plottableLibStrings.top = js.native
+  }
+  
+  @js.native
+  object TimeInterval extends js.Object {
+    var day: plottableLib.plottableLibStrings.day = js.native
+    var hour: plottableLib.plottableLibStrings.hour = js.native
+    var minute: plottableLib.plottableLibStrings.minute = js.native
+    var month: plottableLib.plottableLibStrings.month = js.native
+    var second: plottableLib.plottableLibStrings.second = js.native
+    var week: plottableLib.plottableLibStrings.week = js.native
+    var year: plottableLib.plottableLibStrings.year = js.native
   }
   
 }

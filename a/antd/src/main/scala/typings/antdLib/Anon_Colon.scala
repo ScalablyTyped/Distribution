@@ -9,7 +9,7 @@ trait Anon_Colon extends js.Object {
   var colon: scala.Boolean
   var hideRequiredMark: scala.Boolean
   var layout: antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical
-  def onSubmit(e: reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLFormElement]): scala.Unit
+  def onSubmit(e: reactLib.reactMod.FormEvent[stdLib.HTMLFormElement]): scala.Unit
 }
 
 object Anon_Colon {
@@ -18,7 +18,7 @@ object Anon_Colon {
     colon: scala.Boolean,
     hideRequiredMark: scala.Boolean,
     layout: antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical,
-    onSubmit: reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLFormElement] => scala.Unit
+    onSubmit: reactLib.reactMod.FormEvent[stdLib.HTMLFormElement] => scala.Unit
   ): Anon_Colon = {
     val __obj = js.Dynamic.literal(colon = colon, hideRequiredMark = hideRequiredMark, layout = layout.asInstanceOf[js.Any], onSubmit = js.Any.fromFunction1(onSubmit))
   

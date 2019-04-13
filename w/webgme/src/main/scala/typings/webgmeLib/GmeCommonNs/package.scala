@@ -18,6 +18,7 @@ package object GmeCommonNs {
   type ContentString = java.lang.String
   type CrosscutsInfo = Registry
   type DataObject = webgmeLib.CoreNs.Node
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ErrorOnlyCallback = js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   type ErrorStr = java.lang.String
   type ISO8601 = java.lang.String
@@ -31,6 +32,7 @@ package object GmeCommonNs {
     */
   type LoadObject = webgmeLib.GmeStorageNs.CommitObject | webgmeLib.CoreNs.DataObject
   type MemberId = Path
+  type Metadata = org.scalablytyped.runtime.StringDictionary[js.Any]
   type MetadataHash = java.lang.String
   type Name = java.lang.String
   type NodeId = java.lang.String

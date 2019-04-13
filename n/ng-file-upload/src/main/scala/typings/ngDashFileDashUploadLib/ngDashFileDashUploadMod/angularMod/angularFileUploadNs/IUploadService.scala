@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IUploadService extends js.Object {
-  def base64DataUrl(files: js.Array[stdLib.File]): angularLib.angularMod.angularNs.IPromise[js.Array[java.lang.String] | java.lang.String] = js.native
+  def base64DataUrl(files: js.Array[stdLib.File]): angularLib.angularMod.IPromise[js.Array[java.lang.String] | java.lang.String] = js.native
   /**
     * Convert a single file or array of files to a single or array of
     * base64 data url representation of the file(s).
@@ -16,7 +16,7 @@ trait IUploadService extends js.Object {
     * @param  {Array<File>}
     * @return {angular.IPromise}
     */
-  def base64DataUrl(files: stdLib.File): angularLib.angularMod.angularNs.IPromise[js.Array[java.lang.String] | java.lang.String] = js.native
+  def base64DataUrl(files: stdLib.File): angularLib.angularMod.IPromise[js.Array[java.lang.String] | java.lang.String] = js.native
   /**
     * Convert the file to blob url object or base64 data url based on boolean disallowObjectUrl value
     *
@@ -24,8 +24,8 @@ trait IUploadService extends js.Object {
     * @param  {boolean} [disallowObjectUrl]
     * @return {angular.IPromise<string>}
     */
-  def dataUrl(file: stdLib.File): angularLib.angularMod.angularNs.IPromise[stdLib.Blob | java.lang.String] = js.native
-  def dataUrl(file: stdLib.File, disallowObjectUrl: scala.Boolean): angularLib.angularMod.angularNs.IPromise[stdLib.Blob | java.lang.String] = js.native
+  def dataUrl(file: stdLib.File): angularLib.angularMod.IPromise[stdLib.Blob | java.lang.String] = js.native
+  def dataUrl(file: stdLib.File, disallowObjectUrl: scala.Boolean): angularLib.angularMod.IPromise[stdLib.Blob | java.lang.String] = js.native
   /**
     * Alternative way of uploading, send the file binary with the file's content-type.
     * Could be used to upload files to CouchDB, imgur, etc... html5 FileReader is needed.
@@ -34,14 +34,14 @@ trait IUploadService extends js.Object {
     * @param {IRequestConfig} config
     * @return {angular.IPromise<ImageDimensions>}
     */
-  def http[T](config: angularLib.angularMod.angularNs.IRequestConfig): IUploadPromise[T] = js.native
+  def http[T](config: angularLib.angularMod.IRequestConfig): IUploadPromise[T] = js.native
   /**
     * Get image file dimensions
     *
     * @param  {File} file
     * @return {angular.IPromise<ImageDimensions>}
     */
-  def imageDimensions(file: stdLib.File): angularLib.angularMod.angularNs.IPromise[ImageDimensions] = js.native
+  def imageDimensions(file: stdLib.File): angularLib.angularMod.IPromise[ImageDimensions] = js.native
   /**
     * Returns boolean showing if image resize is supported by this browser
     *
@@ -95,7 +95,7 @@ trait IUploadService extends js.Object {
     * @param  {boolean} [centerCrop]
     * @return {angular.IPromise<string>}
     */
-  def resize(file: stdLib.File, options: FileResizeOptions): angularLib.angularMod.angularNs.IPromise[stdLib.File] = js.native
+  def resize(file: stdLib.File, options: FileResizeOptions): angularLib.angularMod.IPromise[stdLib.File] = js.native
   /**
     * Set the default values for ngf-select and ngf-drop directives
     *

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("autobahn", "Error")
 @js.native
-class Error ()
-  extends autobahnLib.autobahnMod.autobahnNs.Error {
+class Error () extends IError {
   def this(error: java.lang.String) = this()
   def this(error: java.lang.String, args: js.Array[_]) = this()
   def this(error: java.lang.String, args: js.Array[_], kwargs: js.Any) = this()

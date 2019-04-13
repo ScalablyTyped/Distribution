@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "AvailabilityData")
 @js.native
 class AvailabilityData ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedAvailabilityDataMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedAvailabilityDataMod.^
 

@@ -11,7 +11,7 @@ object streamNs extends js.Object {
   def stat(root: java.lang.String): nodeLib.NodeJSNs.ReadableStream = js.native
   def stat(
     root: java.lang.String,
-    options: atMrmlncReaddirDashEnhancedLib.atMrmlncReaddirDashEnhancedMod.reNs.Options
+    options: atMrmlncReaddirDashEnhancedLib.atMrmlncReaddirDashEnhancedMod.Options
   ): nodeLib.NodeJSNs.ReadableStream = js.native
 }
 

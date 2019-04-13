@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def extract(): nodeLib.streamMod.Writable = js.native
-  def extract(opts: nodeLib.streamMod.internalNs.WritableOptions): nodeLib.streamMod.Writable = js.native
+  def extract(opts: nodeLib.streamMod.WritableOptions): nodeLib.streamMod.Writable = js.native
   def pack(): Pack = js.native
-  def pack(opts: nodeLib.streamMod.internalNs.ReadableOptions): Pack = js.native
+  def pack(opts: nodeLib.streamMod.ReadableOptions): Pack = js.native
 }
 

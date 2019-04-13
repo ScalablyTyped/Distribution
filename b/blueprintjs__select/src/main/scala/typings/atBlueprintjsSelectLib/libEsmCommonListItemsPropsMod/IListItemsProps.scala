@@ -34,7 +34,7 @@ trait IListItemsProps[T]
     js.Function3[
       /* query */ java.lang.String, 
       /* active */ scala.Boolean, 
-      /* handleClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
+      /* handleClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], 
       js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]
     ]
   ] = js.native
@@ -45,7 +45,7 @@ trait IListItemsProps[T]
     *
     * This prop is ignored if a custom `itemListRenderer` is supplied.
     */
-  var initialContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | scala.Null] = js.native
+  var initialContent: js.UndefOr[reactLib.reactMod.ReactNode | scala.Null] = js.native
   /**
     * Determine if the given item is disabled. Provide a callback function, or
     * simply provide the name of a boolean property on the item that exposes
@@ -115,7 +115,7 @@ trait IListItemsProps[T]
     *
     * This prop is ignored if a custom `itemListRenderer` is supplied.
     */
-  var noResults: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  var noResults: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   /**
     * Invoked when user interaction should change the active item: arrow keys
     * move it up/down in the list, selecting an item makes it active, and
@@ -144,7 +144,7 @@ trait IListItemsProps[T]
   var onQueryChange: js.UndefOr[
     js.Function2[
       /* query */ java.lang.String, 
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]], 
+      /* event */ js.UndefOr[reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]], 
       scala.Unit
     ]
   ] = js.native
@@ -186,6 +186,6 @@ trait IListItemsProps[T]
     * typically by clicking or pressing `enter` key.
     */
   def onItemSelect(item: T): scala.Unit = js.native
-  def onItemSelect(item: T, event: reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]): scala.Unit = js.native
+  def onItemSelect(item: T, event: reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]): scala.Unit = js.native
 }
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OverlayProps
-  extends reactLib.reactMod.ReactNs.Props[Overlay] {
+  extends reactLib.reactMod.Props[Overlay] {
   var autoLockScrolling: js.UndefOr[scala.Boolean] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var transitionEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -17,10 +17,10 @@ object OverlayProps {
   @scala.inline
   def apply(
     autoLockScrolling: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Overlay] = null,
+    children: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    ref: reactLib.reactMod.LegacyRef[Overlay] = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     transitionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayProps = {

@@ -14,7 +14,7 @@ object nonEmptyArrayNs extends js.Object {
     def this(head: A, tail: fpDashTsLib.libArrayMod.Global.Array[A]) = this()
   }
   
-  val URI: /* NonEmptyArray */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.NonEmptyArray = js.native
   val nonEmptyArray: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libNonEmptyArrayMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libNonEmptyArrayMod.URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[fpDashTsLib.libNonEmptyArrayMod.URI, scala.Double]) with (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[fpDashTsLib.libNonEmptyArrayMod.URI, scala.Double]) with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.libNonEmptyArrayMod.URI, scala.Double]) = js.native
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]] = js.native
   def getSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]] = js.native

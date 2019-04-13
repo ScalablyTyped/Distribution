@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object algoliasearchDashHelperLibStrings {
   @js.native
   sealed trait `!=`
-    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParametersNs.Operator
+    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.Operator
   
   @js.native
   sealed trait `<`
-    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParametersNs.Operator
+    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.Operator
   
   @js.native
   sealed trait `<=`
-    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParametersNs.Operator
+    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.Operator
   
   @js.native
   sealed trait `=`
-    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParametersNs.Operator
+    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.Operator
   
   @js.native
   sealed trait `>`
-    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParametersNs.Operator
+    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.Operator
   
   @js.native
   sealed trait `>=`
-    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.algoliasearchHelperNs.SearchParametersNs.Operator
+    extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.Operator
   
   @js.native
   sealed trait OperatorList extends js.Object

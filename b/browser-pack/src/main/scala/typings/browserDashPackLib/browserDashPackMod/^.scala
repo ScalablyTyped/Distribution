@@ -11,6 +11,6 @@ object ^ extends js.Object {
   /** pack node-style source files from a json stream into a browser bundle
     */
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(opts: browserDashPackLib.browserDashPackMod.browserPackNs.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(opts: Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

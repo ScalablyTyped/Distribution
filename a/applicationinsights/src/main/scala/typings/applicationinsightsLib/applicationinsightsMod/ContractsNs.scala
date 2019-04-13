@@ -142,7 +142,6 @@ object ContractsNs extends js.Object {
           ] = js.native
     }
     
-    type DataPointType = applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType
   }
   
   /* static members */
@@ -181,7 +180,6 @@ object ContractsNs extends js.Object {
           ] = js.native
     }
     
-    type SeverityLevel = applicationinsightsLib.outDeclarationsContractsGeneratedSeverityLevelMod.SeverityLevel
   }
   
   @js.native
@@ -204,8 +202,5 @@ object ContractsNs extends js.Object {
           applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues
         ]
   
-  type DataPointType = applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType
-  type SeverityLevel = applicationinsightsLib.outDeclarationsContractsGeneratedSeverityLevelMod.SeverityLevel
-  type TelemetryType = applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType
 }
 

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SegmentComponent
-  extends reactLib.reactMod.ReactNs.FunctionComponent[SegmentProps] {
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.FunctionComponent[SegmentProps] {
+  var Group: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentGroupMod.SegmentGroupProps
   ] = js.native
   @JSName("Inline")
   var Inline_Original: semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentInlineMod.SegmentInlineComponent = js.native
   def Inline(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+    props: reactLib.reactMod.PropsWithChildren[
       semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentInlineMod.SegmentInlineProps
     ]
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def Inline(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+    props: reactLib.reactMod.PropsWithChildren[
       semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentInlineMod.SegmentInlineProps
     ],
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

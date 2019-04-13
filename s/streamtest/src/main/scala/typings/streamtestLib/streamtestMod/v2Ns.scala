@@ -58,7 +58,7 @@ object v2Ns extends js.Object {
     * @returns A new readable stream
     */
   def readable(): nodeLib.streamMod.Readable = js.native
-  def readable(options: nodeLib.streamMod.internalNs.ReadableOptions): nodeLib.streamMod.Readable = js.native
+  def readable(options: nodeLib.streamMod.ReadableOptions): nodeLib.streamMod.Readable = js.native
   /**
     * Write chunks to a stream synchronously and emit an error when done
     * @param stream The stream to write to
@@ -124,6 +124,6 @@ object v2Ns extends js.Object {
     * @returns A new writable stream
     */
   def writable(): nodeLib.streamMod.Writable = js.native
-  def writable(options: nodeLib.streamMod.internalNs.WritableOptions): nodeLib.streamMod.Writable = js.native
+  def writable(options: nodeLib.streamMod.WritableOptions): nodeLib.streamMod.Writable = js.native
 }
 

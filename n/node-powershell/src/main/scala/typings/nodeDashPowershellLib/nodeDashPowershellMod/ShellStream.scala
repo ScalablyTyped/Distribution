@@ -1,0 +1,26 @@
+package typings
+package nodeDashPowershellLib.nodeDashPowershellMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ShellStream extends js.Object {
+  var err: nodeLib.NodeJSNs.ReadableStream
+  var stdin: nodeLib.NodeJSNs.WritableStream
+  var stdout: nodeLib.NodeJSNs.ReadableStream
+}
+
+object ShellStream {
+  @scala.inline
+  def apply(
+    err: nodeLib.NodeJSNs.ReadableStream,
+    stdin: nodeLib.NodeJSNs.WritableStream,
+    stdout: nodeLib.NodeJSNs.ReadableStream
+  ): ShellStream = {
+    val __obj = js.Dynamic.literal(err = err, stdin = stdin, stdout = stdout)
+  
+    __obj.asInstanceOf[ShellStream]
+  }
+}
+

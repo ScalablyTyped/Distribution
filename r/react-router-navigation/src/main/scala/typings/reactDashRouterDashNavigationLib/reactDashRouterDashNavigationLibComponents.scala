@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 
 object reactDashRouterDashNavigationLibComponents {
   @scala.inline
-  def BottomNavigation: reactLib.reactMod.ReactNs.ComponentType[
+  def BottomNavigation: reactLib.reactMod.ComponentType[
     reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.BottomNavigationProps
-  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.BottomNavigation].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.BottomNavigation].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.BottomNavigationProps]]
   @scala.inline
-  def NavBar: reactLib.reactMod.ReactNs.ComponentType[
+  def NavBar: reactLib.reactMod.ComponentType[
     reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.CardSubViewProps
-  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.NavBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.NavBar].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.CardSubViewProps]]
   @scala.inline
-  def Navigation: reactLib.reactMod.ReactNs.ComponentType[
+  def Navigation: reactLib.reactMod.ComponentType[
     reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.NavigationComponentProps
-  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.Navigation].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.Navigation].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.NavigationComponentProps]]
   @scala.inline
-  def Tabs: reactLib.reactMod.ReactNs.ComponentType[
+  def Tabs: reactLib.reactMod.ComponentType[
     reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.TabBarComponentProps
-  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.Tabs].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.Tabs].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.TabBarComponentProps]]
   @scala.inline
   def BottomNavigationProps: reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.BottomNavigationProps.type = reactDashRouterDashNavigationLib.reactDashRouterDashNavigationMod.BottomNavigationProps

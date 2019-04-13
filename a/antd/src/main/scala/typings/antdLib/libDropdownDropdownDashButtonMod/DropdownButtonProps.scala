@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation._
   var htmlType: js.UndefOr[antdLib.libButtonButtonMod.ButtonHTMLType] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
   var openClassName: js.UndefOr[java.lang.String] = js.undefined
-  var overlay: reactLib.reactMod.ReactNs.ReactNode | antdLib.libDropdownDropdownMod.OverlayFunc
+  var overlay: reactLib.reactMod.ReactNode | antdLib.libDropdownDropdownMod.OverlayFunc
   var overlayClassName: js.UndefOr[java.lang.String] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var placement: js.UndefOr[antdLib.libDropdownDropdownMod.Placement] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var trigger: js.UndefOr[
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
 object DropdownButtonProps {
   @scala.inline
   def apply(
-    overlay: reactLib.reactMod.ReactNs.ReactNode | antdLib.libDropdownDropdownMod.OverlayFunc,
+    overlay: reactLib.reactMod.ReactNode | antdLib.libDropdownDropdownMod.OverlayFunc,
     align: antdLib.libDropdownDropdownMod.Align = null,
     children: js.Any = null,
     className: java.lang.String = null,
@@ -48,15 +48,15 @@ object DropdownButtonProps {
     htmlType: antdLib.libButtonButtonMod.ButtonHTMLType = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] = null,
     onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     placement: antdLib.libDropdownDropdownMod.Placement = null,
     prefixCls: java.lang.String = null,
     size: antdLib.libButtonButtonMod.ButtonSize = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionName: java.lang.String = null,
     trigger: js.Array[
       antdLib.antdLibStrings.click | antdLib.antdLibStrings.hover | antdLib.antdLibStrings.contextMenu

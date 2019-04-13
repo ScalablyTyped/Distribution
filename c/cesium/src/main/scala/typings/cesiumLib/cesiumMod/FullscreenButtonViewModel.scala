@@ -7,23 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "FullscreenButtonViewModel")
 @js.native
-class FullscreenButtonViewModel ()
-  extends cesiumLib.cesiumMod.CesiumNs.FullscreenButtonViewModel {
+class FullscreenButtonViewModel () extends js.Object {
   def this(fullscreenElement: java.lang.String) = this()
   def this(fullscreenElement: stdLib.Element) = this()
-  /* CompleteClass */
-  override var command: cesiumLib.cesiumMod.CesiumNs.Command = js.native
-  /* CompleteClass */
-  override var fullscreenElement: stdLib.Element = js.native
-  /* CompleteClass */
-  override var isFullscreen: scala.Boolean = js.native
-  /* CompleteClass */
-  override var isFullscreenEnabled: scala.Boolean = js.native
-  /* CompleteClass */
-  override var tooltip: java.lang.String = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
+  var command: Command = js.native
+  var fullscreenElement: stdLib.Element = js.native
+  var isFullscreen: scala.Boolean = js.native
+  var isFullscreenEnabled: scala.Boolean = js.native
+  var tooltip: java.lang.String = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
 }
 

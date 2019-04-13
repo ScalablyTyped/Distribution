@@ -12,7 +12,7 @@ trait SpinProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[SpinSize] = js.undefined
   var spinning: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tip: js.UndefOr[java.lang.String] = js.undefined
   var wrapperClassName: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -26,7 +26,7 @@ object SpinProps {
     prefixCls: java.lang.String = null,
     size: SpinSize = null,
     spinning: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tip: java.lang.String = null,
     wrapperClassName: java.lang.String = null
   ): SpinProps = {

@@ -23,14 +23,14 @@ trait Moment extends js.Object {
     options: twixLib.twixMod.TwixParseAndFormatOptions
   ): twixLib.twixMod.Twix = js.native
   def twix(date: js.Array[scala.Double], options: twixLib.twixMod.TwixParseAndFormatOptions): twixLib.twixMod.Twix = js.native
-  def twix(date: momentLib.momentMod.momentNs.MomentInput): twixLib.twixMod.Twix = js.native
-  def twix(date: momentLib.momentMod.momentNs.MomentInput, allDay: scala.Boolean): twixLib.twixMod.Twix = js.native
+  def twix(date: momentLib.momentMod.MomentInput): twixLib.twixMod.Twix = js.native
+  def twix(date: momentLib.momentMod.MomentInput, allDay: scala.Boolean): twixLib.twixMod.Twix = js.native
   def twix(
-    date: momentLib.momentMod.momentNs.MomentInput,
+    date: momentLib.momentMod.MomentInput,
     format: java.lang.String,
     options: twixLib.twixMod.TwixParseAndFormatOptions
   ): twixLib.twixMod.Twix = js.native
-  def twix(date: momentLib.momentMod.momentNs.MomentInput, options: twixLib.twixMod.TwixParseAndFormatOptions): twixLib.twixMod.Twix = js.native
+  def twix(date: momentLib.momentMod.MomentInput, options: twixLib.twixMod.TwixParseAndFormatOptions): twixLib.twixMod.Twix = js.native
   def twix(date: scala.Double): twixLib.twixMod.Twix = js.native
   def twix(date: scala.Double, allDay: scala.Boolean): twixLib.twixMod.Twix = js.native
   def twix(date: scala.Double, format: java.lang.String, options: twixLib.twixMod.TwixParseAndFormatOptions): twixLib.twixMod.Twix = js.native

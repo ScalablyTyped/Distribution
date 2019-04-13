@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * @description default options that is used for "require-directory" module
     */
-  val defaults: requireDashDirectoryLib.requireDashDirectoryMod.requireDirectoryNs.RequireDirectoryOptions[js.Any, js.Any] = js.native
+  val defaults: RequireDirectoryOptions[js.Any, js.Any] = js.native
   /**
     * @description function for requiring directory content as hash of modules
     * @param m module for which has will be created
@@ -19,15 +19,12 @@ object ^ extends js.Object {
     * @param options object with options for require-directory call
     * @returns hash of modules in specified directory
     */
-  def apply[T, U](m: nodeLib.NodeModule): requireDashDirectoryLib.requireDashDirectoryMod.requireDirectoryNs.RequireDirectoryResult[U] = js.native
+  def apply[T, U](m: nodeLib.NodeModule): RequireDirectoryResult[U] = js.native
+  def apply[T, U](m: nodeLib.NodeModule, path: java.lang.String | (RequireDirectoryOptions[T, U])): RequireDirectoryResult[U] = js.native
   def apply[T, U](
     m: nodeLib.NodeModule,
-    path: java.lang.String | (requireDashDirectoryLib.requireDashDirectoryMod.requireDirectoryNs.RequireDirectoryOptions[T, U])
-  ): requireDashDirectoryLib.requireDashDirectoryMod.requireDirectoryNs.RequireDirectoryResult[U] = js.native
-  def apply[T, U](
-    m: nodeLib.NodeModule,
-    path: java.lang.String | (requireDashDirectoryLib.requireDashDirectoryMod.requireDirectoryNs.RequireDirectoryOptions[T, U]),
-    options: requireDashDirectoryLib.requireDashDirectoryMod.requireDirectoryNs.RequireDirectoryOptions[T, U]
-  ): requireDashDirectoryLib.requireDashDirectoryMod.requireDirectoryNs.RequireDirectoryResult[U] = js.native
+    path: java.lang.String | (RequireDirectoryOptions[T, U]),
+    options: RequireDirectoryOptions[T, U]
+  ): RequireDirectoryResult[U] = js.native
 }
 

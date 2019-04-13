@@ -10,9 +10,7 @@ trait Anon_IdAttribute[D] extends js.Object {
   var implicitSort: js.UndefOr[js.Array[atOracleOraclejetLib.ojdataproviderMod.SortCriterion[D]]] = js.undefined
   var keyAttributes: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var keys: js.UndefOr[js.Array[_] | js.Function0[js.Array[_]]] = js.undefined
-  var sortComparators: js.UndefOr[
-    atOracleOraclejetLib.ojarraydataproviderMod.ArrayDataProviderNs.SortComparators[D]
-  ] = js.undefined
+  var sortComparators: js.UndefOr[atOracleOraclejetLib.ojarraydataproviderMod.SortComparators[D]] = js.undefined
 }
 
 object Anon_IdAttribute {
@@ -22,7 +20,7 @@ object Anon_IdAttribute {
     implicitSort: js.Array[atOracleOraclejetLib.ojdataproviderMod.SortCriterion[D]] = null,
     keyAttributes: java.lang.String | js.Array[java.lang.String] = null,
     keys: js.Array[_] | js.Function0[js.Array[_]] = null,
-    sortComparators: atOracleOraclejetLib.ojarraydataproviderMod.ArrayDataProviderNs.SortComparators[D] = null
+    sortComparators: atOracleOraclejetLib.ojarraydataproviderMod.SortComparators[D] = null
   ): Anon_IdAttribute[D] = {
     val __obj = js.Dynamic.literal()
     if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])

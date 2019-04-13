@@ -23,3 +23,8 @@ class AccessControlEntry ()
   override def Clone(): mfilesLib.IAccessControlEntry = js.native
 }
 
+@JSGlobal("MFiles.AccessControlEntry")
+@js.native
+object AccessControlEntry
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlEntry]
+

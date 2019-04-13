@@ -13,8 +13,8 @@ trait PropsType extends js.Object {
   var indicator: Indicator
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var refreshing: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  def getScrollContainer(): reactLib.reactMod.ReactNs.ReactNode
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  def getScrollContainer(): reactLib.reactMod.ReactNode
   def onRefresh(): scala.Unit
 }
 
@@ -24,13 +24,13 @@ object PropsType {
     damping: scala.Double,
     direction: rmcDashPullDashToDashRefreshLib.rmcDashPullDashToDashRefreshLibStrings.down | rmcDashPullDashToDashRefreshLib.rmcDashPullDashToDashRefreshLibStrings.up,
     distanceToRefresh: scala.Double,
-    getScrollContainer: () => reactLib.reactMod.ReactNs.ReactNode,
+    getScrollContainer: () => reactLib.reactMod.ReactNode,
     indicator: Indicator,
     onRefresh: () => scala.Unit,
     className: java.lang.String = null,
     prefixCls: java.lang.String = null,
     refreshing: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): PropsType = {
     val __obj = js.Dynamic.literal(damping = damping, direction = direction.asInstanceOf[js.Any], distanceToRefresh = distanceToRefresh, getScrollContainer = js.Any.fromFunction0(getScrollContainer), indicator = indicator, onRefresh = js.Any.fromFunction0(onRefresh))
     if (className != null) __obj.updateDynamic("className")(className)

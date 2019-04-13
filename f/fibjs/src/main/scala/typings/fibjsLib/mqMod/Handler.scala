@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mq", "Handler")
 @js.native
 class Handler ()
-  extends fibjsLib.mqMod.mqNs.Handler
+  extends fibjsLib.Class_Handler
 

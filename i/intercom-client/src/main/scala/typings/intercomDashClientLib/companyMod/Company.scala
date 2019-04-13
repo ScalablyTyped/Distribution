@@ -14,7 +14,7 @@ trait Company extends js.Object {
   var industry: js.UndefOr[java.lang.String] = js.undefined
   var monthly_spend: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var plan: js.UndefOr[java.lang.String | intercomDashClientLib.Anon_IdName] = js.undefined
+  var plan: js.UndefOr[java.lang.String | intercomDashClientLib.Anon_Id] = js.undefined
   var remote_created_at: js.UndefOr[scala.Double] = js.undefined
   var session_count: js.UndefOr[scala.Double] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
@@ -37,7 +37,7 @@ object Company {
     industry: java.lang.String = null,
     monthly_spend: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    plan: java.lang.String | intercomDashClientLib.Anon_IdName = null,
+    plan: java.lang.String | intercomDashClientLib.Anon_Id = null,
     remote_created_at: scala.Int | scala.Double = null,
     session_count: scala.Int | scala.Double = null,
     size: scala.Int | scala.Double = null,

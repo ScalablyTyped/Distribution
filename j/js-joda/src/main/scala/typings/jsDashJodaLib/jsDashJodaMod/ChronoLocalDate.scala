@@ -7,13 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ChronoLocalDate")
 @js.native
-abstract class ChronoLocalDate ()
-  extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ChronoLocalDate {
-  /* CompleteClass */
-  override def get(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): scala.Double = js.native
-  /* CompleteClass */
-  override def query(query: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalQuery): js.Any = js.native
-  /* CompleteClass */
-  override def range(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ValueRange = js.native
+abstract class ChronoLocalDate () extends Temporal {
+  def adjustInto(temporal: TemporalAdjuster): this.type = js.native
+  def format(formatter: DateTimeFormatter): java.lang.String = js.native
+  def isSupported(fieldOrUnit: TemporalField): scala.Boolean = js.native
+  def isSupported(fieldOrUnit: TemporalUnit): scala.Boolean = js.native
 }
 

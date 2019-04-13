@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FocusRippleProps
-  extends reactLib.reactMod.ReactNs.Props[FocusRipple] {
+  extends reactLib.reactMod.Props[FocusRipple] {
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var innerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var innerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var opacity: js.UndefOr[scala.Double] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object FocusRippleProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: java.lang.String = null,
-    innerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    innerStyle: reactLib.reactMod.CSSProperties = null,
+    key: reactLib.reactMod.Key = null,
     opacity: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[FocusRipple] = null,
+    ref: reactLib.reactMod.LegacyRef[FocusRipple] = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): FocusRippleProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

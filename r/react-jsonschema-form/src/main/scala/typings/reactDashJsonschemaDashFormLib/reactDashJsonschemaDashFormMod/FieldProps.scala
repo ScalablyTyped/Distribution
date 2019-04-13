@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FieldProps[T]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement]
      with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autofocus: scala.Boolean = js.native
   var disabled: scala.Boolean = js.native

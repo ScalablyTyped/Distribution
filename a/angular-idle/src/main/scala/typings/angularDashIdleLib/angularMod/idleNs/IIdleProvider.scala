@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IIdleProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   def autoResume(enabled: java.lang.String): scala.Unit = js.native
   /**
     * When true or idle, user activity will automatically interrupt the warning countdown

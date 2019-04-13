@@ -10,23 +10,19 @@ import scala.scalajs.js.annotation._
 /*
   A query that returns all documents.
   */
-class MatchAllQuery ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchAllQuery {
+class MatchAllQuery () extends Query {
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost value for documents matching the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.MatchAllQuery = js.native
+  def boost(boost: scala.Double): MatchAllQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ListGroup
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libListGroupMod.ListGroupNs.ListGroupProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[ListGroupProps, js.Object, js.Any]
 

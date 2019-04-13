@@ -13,4 +13,5 @@ package object SourceCodeNs {
     scala.Boolean
   ]
   type ParserServices = js.Any
+  type VisitorKeys = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 }

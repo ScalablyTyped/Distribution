@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableProps[T] extends js.Object {
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var childrenColumnName: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var columns: js.UndefOr[js.Array[ColumnProps[T]]] = js.undefined
@@ -17,9 +17,7 @@ trait TableProps[T] extends js.Object {
   var defaultExpandAllRows: js.UndefOr[scala.Boolean] = js.undefined
   var defaultExpandedRowKeys: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
   var dropdownPrefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var expandIcon: js.UndefOr[
-    js.Function1[/* props */ ExpandIconProps[T], reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var expandIcon: js.UndefOr[js.Function1[/* props */ ExpandIconProps[T], reactLib.reactMod.ReactNode]] = js.undefined
   var expandIconAsCell: js.UndefOr[scala.Boolean] = js.undefined
   var expandIconColumnIndex: js.UndefOr[scala.Double] = js.undefined
   var expandRowByClick: js.UndefOr[scala.Boolean] = js.undefined
@@ -30,11 +28,11 @@ trait TableProps[T] extends js.Object {
       /* index */ scala.Double, 
       /* indent */ scala.Double, 
       /* expanded */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var footer: js.UndefOr[
-    js.Function1[/* currentPageData */ js.Array[js.Object], reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* currentPageData */ js.Array[js.Object], reactLib.reactMod.ReactNode]
   ] = js.undefined
   var indentSize: js.UndefOr[scala.Double] = js.undefined
   var loading: js.UndefOr[scala.Boolean | antdLib.libSpinMod.SpinProps] = js.undefined
@@ -75,9 +73,9 @@ trait TableProps[T] extends js.Object {
   var showHeader: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[TableSize] = js.undefined
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var title: js.UndefOr[
-    js.Function1[/* currentPageData */ js.Array[js.Object], reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* currentPageData */ js.Array[js.Object], reactLib.reactMod.ReactNode]
   ] = js.undefined
   var useFixedHeader: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -85,9 +83,9 @@ trait TableProps[T] extends js.Object {
 object TableProps {
   @scala.inline
   def apply[T](
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     childrenColumnName: java.lang.String = null,
     className: java.lang.String = null,
     columns: js.Array[ColumnProps[T]] = null,
@@ -96,13 +94,13 @@ object TableProps {
     defaultExpandAllRows: js.UndefOr[scala.Boolean] = js.undefined,
     defaultExpandedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
     dropdownPrefixCls: java.lang.String = null,
-    expandIcon: /* props */ ExpandIconProps[T] => reactLib.reactMod.ReactNs.ReactNode = null,
+    expandIcon: /* props */ ExpandIconProps[T] => reactLib.reactMod.ReactNode = null,
     expandIconAsCell: js.UndefOr[scala.Boolean] = js.undefined,
     expandIconColumnIndex: scala.Int | scala.Double = null,
     expandRowByClick: js.UndefOr[scala.Boolean] = js.undefined,
     expandedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
-    expandedRowRender: (/* record */ T, /* index */ scala.Double, /* indent */ scala.Double, /* expanded */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
-    footer: /* currentPageData */ js.Array[js.Object] => reactLib.reactMod.ReactNs.ReactNode = null,
+    expandedRowRender: (/* record */ T, /* index */ scala.Double, /* indent */ scala.Double, /* expanded */ scala.Boolean) => reactLib.reactMod.ReactNode = null,
+    footer: /* currentPageData */ js.Array[js.Object] => reactLib.reactMod.ReactNode = null,
     indentSize: scala.Int | scala.Double = null,
     loading: scala.Boolean | antdLib.libSpinMod.SpinProps = null,
     locale: TableLocale = null,
@@ -121,8 +119,8 @@ object TableProps {
     showHeader: js.UndefOr[scala.Boolean] = js.undefined,
     size: TableSize = null,
     sortDirections: js.Array[SortOrder] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: /* currentPageData */ js.Array[js.Object] => reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: /* currentPageData */ js.Array[js.Object] => reactLib.reactMod.ReactNode = null,
     useFixedHeader: js.UndefOr[scala.Boolean] = js.undefined
   ): TableProps[T] = {
     val __obj = js.Dynamic.literal()

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLDivElement>, 'variant'> ]: react.react.React.HTMLProps<std.HTMLDivElement>[P]} */ trait CardProps extends CardKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, 'variant'> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait CardProps extends CardKnownProps
 
 object CardProps {
   @scala.inline
   def apply(
     alignSelf: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null,
-    as: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    as: reactLib.reactMod.ReactType[_] = null,
     backgroundImage: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.BackgroundImageProperty] = null,
     backgroundPosition: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BackgroundPositionProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
@@ -48,7 +48,7 @@ object CardProps {
       csstypeLib.csstypeMod.BorderWidthProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     boxShadow: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.BoxShadowProperty | scala.Double] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
     css: styledDashComponentsLib.styledDashComponentsMod.CSSObject = null,
     flex: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
@@ -57,7 +57,7 @@ object CardProps {
     fontSize: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.FontSizeProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     m: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.MarginProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -132,7 +132,7 @@ object CardProps {
     py: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null,
+    ref: reactLib.reactMod.LegacyRef[js.Any] = null,
     variant: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[java.lang.String] = null,
     width: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.WidthProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]

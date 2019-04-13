@@ -14,7 +14,7 @@ trait ListItemTextProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Whether list item text should have 'primary' look.
     * @default
@@ -33,9 +33,9 @@ object ListItemTextProps {
     * Additional properties passed to root container.
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -59,7 +59,7 @@ object ListItemTextProps {
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ListItemTextTheme = null
   ): ListItemTextProps = {
     val __obj = js.Dynamic.literal()

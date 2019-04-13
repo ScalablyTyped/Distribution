@@ -12,6 +12,7 @@ package object jsDashNaclMod {
   type Message = stdLib.Uint8Array
   type MessageWithSignature = stdLib.Uint8Array
   type NaclCallback = js.Function1[/* nacl */ Nacl, scala.Unit]
+  type NaclOpts = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Nonce = stdLib.Uint8Array
   type Signature = stdLib.Uint8Array
   type SignerPublicKey = stdLib.Uint8Array

@@ -15,10 +15,10 @@ object managementNs extends js.Object {
   var getPermissionWarningsById: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getPermissionWarningsByManifest: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var launchApp: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onDisabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onInstalled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onUninstalled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onDisabled: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onEnabled: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onInstalled: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onUninstalled: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
   var setEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var setLaunchType: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var uninstall: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native

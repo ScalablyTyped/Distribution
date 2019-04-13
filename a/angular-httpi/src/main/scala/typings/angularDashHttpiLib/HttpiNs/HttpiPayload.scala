@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HttpiPayload
-  extends angularLib.angularMod.angularNs.IRequestShortcutConfig {
+  extends angularLib.angularMod.IRequestShortcutConfig {
   @JSName("data")
   var data_HttpiPayload: js.UndefOr[js.Object] = js.undefined
   var keepTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,16 +21,16 @@ object HttpiPayload {
   def apply(
     cache: js.Any = null,
     data: js.Object = null,
-    headers: angularLib.angularMod.angularNs.IHttpRequestConfigHeaders = null,
+    headers: angularLib.angularMod.IHttpRequestConfigHeaders = null,
     jsonpCallbackParam: java.lang.String = null,
     keepTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
     method: java.lang.String = null,
     paramSerializer: java.lang.String | (js.Function1[/* obj */ js.Any, java.lang.String]) = null,
     params: js.Object = null,
     responseType: java.lang.String = null,
-    timeout: scala.Double | angularLib.angularMod.angularNs.IPromise[_] = null,
-    transformRequest: angularLib.angularMod.angularNs.IHttpRequestTransformer | js.Array[angularLib.angularMod.angularNs.IHttpRequestTransformer] = null,
-    transformResponse: angularLib.angularMod.angularNs.IHttpResponseTransformer | js.Array[angularLib.angularMod.angularNs.IHttpResponseTransformer] = null,
+    timeout: scala.Double | angularLib.angularMod.IPromise[_] = null,
+    transformRequest: angularLib.angularMod.IHttpRequestTransformer | js.Array[angularLib.angularMod.IHttpRequestTransformer] = null,
+    transformResponse: angularLib.angularMod.IHttpResponseTransformer | js.Array[angularLib.angularMod.IHttpResponseTransformer] = null,
     url: java.lang.String = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
     xsrfCookieName: java.lang.String = null,

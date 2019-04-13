@@ -5,9 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - Anon_Sheet
-  - Anon_SheetTarget
-*/
-trait StyleSheetManagerProps extends js.Object
+@js.native
+trait StyleSheetManagerProps extends js.Object {
+  var sheet: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerStyleSheet */ js.UndefOr[
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerStyleSheet */ js.Any) | scala.Nothing
+  ] = js.native
+  var target: js.UndefOr[stdLib.HTMLElement | scala.Nothing] = js.native
+}
 

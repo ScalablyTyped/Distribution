@@ -23,70 +23,143 @@ trait FlexboxPropTypes extends GeneralPropTypes {
   var selfAlignY: js.UndefOr[reactDashFoundationLib.enumsMod.VerticalAlignments] = js.undefined
 }
 
-object FlexboxPropTypes {
-  @scala.inline
-  def apply(
-    alignX: reactDashFoundationLib.enumsMod.HorizontalAlignments = null,
-    alignY: reactDashFoundationLib.enumsMod.VerticalAlignments = null,
-    centerAlign: js.UndefOr[scala.Boolean] = js.undefined,
-    className: java.lang.String = null,
-    flexChild: reactDashFoundationLib.enumsMod.SpaceControls = null,
-    flexContainer: js.UndefOr[scala.Boolean] = js.undefined,
-    flexDirCol: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
-    flexDirColRev: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
-    flexDirRow: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
-    flexDirRowRev: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
-    flexOrder: scala.Int | scala.Double = null,
-    flexOrderLarge: scala.Int | scala.Double = null,
-    flexOrderMedium: scala.Int | scala.Double = null,
-    flexOrderSmall: scala.Int | scala.Double = null,
-    float: reactDashFoundationLib.enumsMod.FloatTypes = null,
-    hideFor: reactDashFoundationLib.reactDashFoundationLibStrings.medium | reactDashFoundationLib.reactDashFoundationLibStrings.large = null,
-    hideOnlyFor: reactDashFoundationLib.enumsMod.Breakpoints = null,
-    isClearfix: js.UndefOr[scala.Boolean] = js.undefined,
-    isHidden: js.UndefOr[scala.Boolean] = js.undefined,
-    isInvisible: js.UndefOr[scala.Boolean] = js.undefined,
-    noDefaultClassName: java.lang.String = null,
-    selfAlignX: reactDashFoundationLib.enumsMod.HorizontalAlignments = null,
-    selfAlignY: reactDashFoundationLib.enumsMod.VerticalAlignments = null,
-    showFor: reactDashFoundationLib.enumsMod.Breakpoints = null,
-    showForLandscape: js.UndefOr[scala.Boolean] = js.undefined,
-    showForPortrait: js.UndefOr[scala.Boolean] = js.undefined,
-    showForSr: js.UndefOr[scala.Boolean] = js.undefined,
-    showOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    showOnlyFor: reactDashFoundationLib.enumsMod.Breakpoints = null
-  ): FlexboxPropTypes = {
-    val __obj = js.Dynamic.literal()
-    if (alignX != null) __obj.updateDynamic("alignX")(alignX)
-    if (alignY != null) __obj.updateDynamic("alignY")(alignY)
-    if (!js.isUndefined(centerAlign)) __obj.updateDynamic("centerAlign")(centerAlign)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (flexChild != null) __obj.updateDynamic("flexChild")(flexChild)
-    if (!js.isUndefined(flexContainer)) __obj.updateDynamic("flexContainer")(flexContainer)
-    if (flexDirCol != null) __obj.updateDynamic("flexDirCol")(flexDirCol)
-    if (flexDirColRev != null) __obj.updateDynamic("flexDirColRev")(flexDirColRev)
-    if (flexDirRow != null) __obj.updateDynamic("flexDirRow")(flexDirRow)
-    if (flexDirRowRev != null) __obj.updateDynamic("flexDirRowRev")(flexDirRowRev)
-    if (flexOrder != null) __obj.updateDynamic("flexOrder")(flexOrder.asInstanceOf[js.Any])
-    if (flexOrderLarge != null) __obj.updateDynamic("flexOrderLarge")(flexOrderLarge.asInstanceOf[js.Any])
-    if (flexOrderMedium != null) __obj.updateDynamic("flexOrderMedium")(flexOrderMedium.asInstanceOf[js.Any])
-    if (flexOrderSmall != null) __obj.updateDynamic("flexOrderSmall")(flexOrderSmall.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float)
-    if (hideFor != null) __obj.updateDynamic("hideFor")(hideFor.asInstanceOf[js.Any])
-    if (hideOnlyFor != null) __obj.updateDynamic("hideOnlyFor")(hideOnlyFor)
-    if (!js.isUndefined(isClearfix)) __obj.updateDynamic("isClearfix")(isClearfix)
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
-    if (!js.isUndefined(isInvisible)) __obj.updateDynamic("isInvisible")(isInvisible)
-    if (noDefaultClassName != null) __obj.updateDynamic("noDefaultClassName")(noDefaultClassName)
-    if (selfAlignX != null) __obj.updateDynamic("selfAlignX")(selfAlignX)
-    if (selfAlignY != null) __obj.updateDynamic("selfAlignY")(selfAlignY)
-    if (showFor != null) __obj.updateDynamic("showFor")(showFor)
-    if (!js.isUndefined(showForLandscape)) __obj.updateDynamic("showForLandscape")(showForLandscape)
-    if (!js.isUndefined(showForPortrait)) __obj.updateDynamic("showForPortrait")(showForPortrait)
-    if (!js.isUndefined(showForSr)) __obj.updateDynamic("showForSr")(showForSr)
-    if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus)
-    if (showOnlyFor != null) __obj.updateDynamic("showOnlyFor")(showOnlyFor)
-    __obj.asInstanceOf[FlexboxPropTypes]
-  }
+@JSImport("react-foundation/utils", "FlexboxPropTypes")
+@js.native
+object FlexboxPropTypes extends js.Object {
+  @JSName("alignX")
+  var alignX_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("alignY")
+  var alignY_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("centerAlign")
+  var centerAlign_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexChild")
+  var flexChild_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexContainer")
+  var flexContainer_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirColRev")
+  var flexDirColRev_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirCol")
+  var flexDirCol_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirRowRev")
+  var flexDirRowRev_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexDirRow")
+  var flexDirRow_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrderLarge")
+  var flexOrderLarge_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrderMedium")
+  var flexOrderMedium_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrderSmall")
+  var flexOrderSmall_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("flexOrder")
+  var flexOrder_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("selfAlignX")
+  var selfAlignX_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("selfAlignY")
+  var selfAlignY_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  def alignX(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def alignY(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def centerAlign(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexChild(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexContainer(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirCol(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirColRev(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirRow(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexDirRowRev(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrder(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrderLarge(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrderMedium(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def flexOrderSmall(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def selfAlignX(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def selfAlignY(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
 }
 

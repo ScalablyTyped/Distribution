@@ -11,11 +11,11 @@ class Sockend protected () extends Component {
   /**
     * Exposes APIs directly to front-end. Make sure to use namespaces.
     */
-  def this(io: socketDotIoLib.socketDotIoMod.SocketIONs.Server, /**
+  def this(io: socketDotIoLib.socketDotIoMod.Server, /**
     * Configuration which controls the data being advertised for auto-discovery.
     */
   advertisement: SockendAdvertisement) = this()
-  def this(io: socketDotIoLib.socketDotIoMod.SocketIONs.Server, /**
+  def this(io: socketDotIoLib.socketDotIoMod.Server, /**
     * Configuration which controls the data being advertised for auto-discovery.
     */
   advertisement: SockendAdvertisement, /**

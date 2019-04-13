@@ -19,7 +19,7 @@ trait QueryRendererProps[T /* <: relayDashRuntimeLib.relayDashRuntimeMod.Operati
     readyState: ReadyState[
       /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
     ]
-  ): reactLib.reactMod.ReactNs.ReactNode
+  ): reactLib.reactMod.ReactNode
 }
 
 object QueryRendererProps {
@@ -28,7 +28,7 @@ object QueryRendererProps {
     environment: relayDashRuntimeLib.relayDashRuntimeMod.Environment,
     render_response: ReadyState[
       /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
-    ] => reactLib.reactMod.ReactNs.ReactNode,
+    ] => reactLib.reactMod.ReactNode,
     variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any,
     cacheConfig: relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig = null,
     dataFrom: reactDashRelayLib.reactDashRelayLibStrings.NETWORK_ONLY | reactDashRelayLib.reactDashRelayLibStrings.STORE_THEN_NETWORK = null,

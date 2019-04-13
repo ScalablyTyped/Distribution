@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MasonryProps extends js.Object {
   var columnWidth: js.UndefOr[scala.Double] = js.undefined
-  var comp: reactLib.reactMod.ReactNs.ComponentType[js.Object]
+  var comp: reactLib.reactMod.ComponentType[js.Object]
   var flexible: js.UndefOr[scala.Boolean] = js.undefined
   var gutterWidth: js.UndefOr[scala.Double] = js.undefined
   var items: js.Array[_]
@@ -24,7 +24,7 @@ trait MasonryProps extends js.Object {
 object MasonryProps {
   @scala.inline
   def apply(
-    comp: reactLib.reactMod.ReactNs.ComponentType[js.Object],
+    comp: reactLib.reactMod.ComponentType[js.Object],
     items: js.Array[_],
     columnWidth: scala.Int | scala.Double = null,
     flexible: js.UndefOr[scala.Boolean] = js.undefined,

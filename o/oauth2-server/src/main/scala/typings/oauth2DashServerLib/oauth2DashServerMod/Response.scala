@@ -14,27 +14,26 @@ import scala.scalajs.js.annotation._
   * Instantiates Response using the supplied options.
   *
   */
-class Response ()
-  extends oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Response {
-  def this(options: expressLib.expressMod.eNs.Response) = this()
+class Response () extends js.Object {
+  def this(options: expressLib.expressMod.Response) = this()
   def this(options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  var body: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+  var status: js.UndefOr[scala.Double] = js.native
   /**
     * Returns the specified HTTP header field. The match is case-insensitive.
     *
     */
-  /* CompleteClass */
-  override def get(field: java.lang.String): js.UndefOr[_] = js.native
+  def get(field: java.lang.String): js.UndefOr[_] = js.native
   /**
     * Redirects to the specified URL using 302 Found.
     *
     */
-  /* CompleteClass */
-  override def redirect(url: java.lang.String): scala.Unit = js.native
+  def redirect(url: java.lang.String): scala.Unit = js.native
   /**
     * Sets the specified HTTP header field. The match is case-insensitive.
     *
     */
-  /* CompleteClass */
-  override def set(field: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  def set(field: java.lang.String, value: java.lang.String): scala.Unit = js.native
 }
 

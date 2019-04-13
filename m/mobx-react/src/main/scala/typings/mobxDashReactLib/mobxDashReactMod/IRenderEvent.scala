@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IRenderEvent extends js.Object {
-  var component: reactLib.reactMod.ReactNs.ReactElement[_]
+  var component: reactLib.reactMod.ReactElement[_]
   var event: mobxDashReactLib.mobxDashReactLibStrings.render | mobxDashReactLib.mobxDashReactLibStrings.destroy
   // Component instance
   var node: js.Any
@@ -17,7 +17,7 @@ trait IRenderEvent extends js.Object {
 object IRenderEvent {
   @scala.inline
   def apply(
-    component: reactLib.reactMod.ReactNs.ReactElement[_],
+    component: reactLib.reactMod.ReactElement[_],
     event: mobxDashReactLib.mobxDashReactLibStrings.render | mobxDashReactLib.mobxDashReactLibStrings.destroy,
     node: js.Any,
     renderTime: scala.Int | scala.Double = null,

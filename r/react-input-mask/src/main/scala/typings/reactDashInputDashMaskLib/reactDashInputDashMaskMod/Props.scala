@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] {
+  extends reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] {
   /**
     * Show mask even in empty input without focus.
     */
@@ -38,7 +38,7 @@ trait Props
   /**
     * Use inputRef instead of ref if you need input node to manage focus, selection, etc.
     */
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[reactLib.reactMod.Ref[stdLib.HTMLInputElement]] = js.undefined
   /**
     * Mask string. Format characters are:
     * * `9`: `0-9`
@@ -59,11 +59,11 @@ object Props {
   @scala.inline
   def apply(
     mask: java.lang.String,
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
+    InputHTMLAttributes: reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     alwaysShowMask: js.UndefOr[scala.Boolean] = js.undefined,
     beforeMaskedValueChange: (/* newState */ InputState, /* oldState */ InputState, /* userInput */ java.lang.String, /* maskOptions */ MaskOptions) => InputState = null,
     formatChars: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    inputRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.Ref[stdLib.HTMLInputElement] = null,
     maskChar: java.lang.String = null
   ): Props = {
     val __obj = js.Dynamic.literal(mask = mask)

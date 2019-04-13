@@ -17,10 +17,10 @@ object fontSettingsNs extends js.Object {
   var getFont: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getFontList: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getMinimumFontSize: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onDefaultFixedFontSizeChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onDefaultFontSizeChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onFontChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onMinimumFontSizeChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onDefaultFixedFontSizeChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onDefaultFontSizeChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onFontChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onMinimumFontSizeChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
   var setDefaultFixedFontSize: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var setDefaultFontSize: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var setFont: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native

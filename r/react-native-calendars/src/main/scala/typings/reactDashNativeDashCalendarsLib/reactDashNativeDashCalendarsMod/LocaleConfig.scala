@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 //Constructors
 //------------
 class LocaleConfig ()
-  extends xdateLib.xdateMod.namespaced {
+  extends xdateLib.xdateMod.^ {
   /**
     * constructor
     * @param {string} [dateString] - formatted date string

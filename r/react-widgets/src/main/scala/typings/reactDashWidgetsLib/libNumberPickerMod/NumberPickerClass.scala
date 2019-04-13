@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NumberPickerClass
-  extends reactLib.reactMod.ReactNs.ComponentClass[NumberPickerProps, reactLib.reactMod.ReactNs.ComponentState]
+  extends reactLib.reactMod.ComponentClass[NumberPickerProps, reactLib.reactMod.ComponentState]
 

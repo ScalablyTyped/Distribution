@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sc-framework-health-check", JSImport.Namespace)
 @js.native
 object scDashFrameworkDashHealthDashCheckMod extends js.Object {
-  def attach(worker: socketclusterLib.scworkerMod.namespaced, expressApp: expressLib.expressMod.eNs.Express): scala.Unit = js.native
+  def attach(worker: socketclusterLib.scworkerMod.^, expressApp: expressLib.expressMod.Express): scala.Unit = js.native
 }
 

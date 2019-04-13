@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("react-weui", "PopupHeader")
 @js.native
 object PopupHeaderNs extends js.Object {
-  val defaultProps: reactDashWeuiLib.Anon_Left = js.native
+  @js.native
+  object defaultProps extends js.Object {
+    var left: java.lang.String = js.native
+    var right: java.lang.String = js.native
+  }
+  
   @JSName("propTypes")
   @js.native
   object propTypesNs extends js.Object {

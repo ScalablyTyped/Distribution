@@ -11,7 +11,7 @@ object ^ extends js.Object {
   var cache: Cache = js.native
   var delimiter: java.lang.String = js.native
   var localsName: java.lang.String = js.native
-  val name: /* ejs */ java.lang.String = js.native
+  val name: ejsLib.ejsLibStrings.ejs = js.native
   def clearCache(): scala.Unit = js.native
   def compile(template: java.lang.String): TemplateFunction | AsyncTemplateFunction = js.native
   def compile(template: java.lang.String, opts: Options): TemplateFunction | AsyncTemplateFunction = js.native

@@ -18,7 +18,7 @@ object DirectoryTreeProps {
     checkStrictly: js.UndefOr[scala.Boolean] = js.undefined,
     checkable: js.UndefOr[scala.Boolean] = js.undefined,
     checkedKeys: js.Array[java.lang.String] | antdLib.Anon_Checked = null,
-    children: reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
     defaultCheckedKeys: js.Array[java.lang.String] = null,
     defaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined,
@@ -31,13 +31,13 @@ object DirectoryTreeProps {
     expandedKeys: js.Array[java.lang.String] = null,
     filterAntTreeNode: /* node */ antdLib.libTreeTreeMod.AntTreeNode => scala.Boolean = null,
     filterTreeNode: /* node */ antdLib.libTreeTreeMod.AntTreeNode => scala.Boolean = null,
-    icon: /* nodeProps */ antdLib.libTreeTreeMod.AntdTreeNodeAttribute => reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: /* nodeProps */ antdLib.libTreeTreeMod.AntdTreeNodeAttribute => reactLib.reactMod.ReactNode = null,
     loadData: /* node */ antdLib.libTreeTreeMod.AntTreeNode => js.Thenable[_] = null,
     loadedKeys: js.Array[java.lang.String] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     onCheck: (/* checkedKeys */ js.Array[java.lang.String] | antdLib.Anon_Checked, /* e */ antdLib.libTreeTreeMod.AntTreeNodeCheckedEvent) => scala.Unit = null,
-    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ antdLib.libTreeTreeMod.AntTreeNode) => scala.Unit = null,
-    onDoubleClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ antdLib.libTreeTreeMod.AntTreeNode) => scala.Unit = null,
+    onClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ antdLib.libTreeTreeMod.AntTreeNode) => scala.Unit = null,
+    onDoubleClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ antdLib.libTreeTreeMod.AntTreeNode) => scala.Unit = null,
     onDragEnd: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onDragEnter: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onDragLeave: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
@@ -53,8 +53,8 @@ object DirectoryTreeProps {
     selectedKeys: js.Array[java.lang.String] = null,
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
     showLine: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    switcherIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null
+    style: reactLib.reactMod.CSSProperties = null,
+    switcherIcon: reactLib.reactMod.ReactElement[_] = null
   ): DirectoryTreeProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent)

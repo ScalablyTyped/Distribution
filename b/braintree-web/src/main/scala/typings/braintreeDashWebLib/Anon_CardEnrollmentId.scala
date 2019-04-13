@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_CardEnrollmentId extends js.Object {
   var card: js.Any
   var enrollmentId: java.lang.String
-  var hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields
+  var hostedFields: braintreeDashWebLib.braintreeDashWebMod.HostedFields
   var smsCode: java.lang.String
 }
 
@@ -17,7 +17,7 @@ object Anon_CardEnrollmentId {
   def apply(
     card: js.Any,
     enrollmentId: java.lang.String,
-    hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields,
+    hostedFields: braintreeDashWebLib.braintreeDashWebMod.HostedFields,
     smsCode: java.lang.String
   ): Anon_CardEnrollmentId = {
     val __obj = js.Dynamic.literal(card = card, enrollmentId = enrollmentId, hostedFields = hostedFields, smsCode = smsCode)

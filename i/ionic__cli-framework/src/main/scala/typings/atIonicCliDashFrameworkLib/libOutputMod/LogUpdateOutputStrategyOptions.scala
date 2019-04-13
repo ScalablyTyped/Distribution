@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LogUpdateOutputStrategyOptions extends js.Object {
   @JSName("LogUpdate")
-  val LogUpdate_Original: atIonicCliDashFrameworkLib.Anon_LogUpdate with logDashUpdateLib.logDashUpdateMod.logUpdateNs.LogUpdate with logDashUpdateLib.Anon_CreateDefault = js.native
+  val LogUpdate_Original: logDashUpdateLib.logDashUpdateMod.LogUpdate with logDashUpdateLib.Anon_CreateDefault = js.native
   val colors: js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.Colors] = js.native
   val stream: js.UndefOr[nodeLib.NodeJSNs.WritableStream] = js.native
   /**

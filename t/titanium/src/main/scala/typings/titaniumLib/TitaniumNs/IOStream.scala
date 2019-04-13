@@ -29,11 +29,23 @@ trait IOStream extends Proxy {
   def read(buffer: Buffer): scala.Double = js.native
   def read(buffer: Buffer, offset: scala.Double): scala.Double = js.native
   def read(buffer: Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def read(
+    buffer: Buffer,
+    offset: scala.Double,
+    length: scala.Double,
+    resultsCallback: js.Function1[/* param0 */ titaniumLib.ReadCallbackArgs, _]
+  ): scala.Double = js.native
   /**
   		 * Writes data from a buffer to this stream.
   		 */
   def write(buffer: Buffer): scala.Double = js.native
   def write(buffer: Buffer, offset: scala.Double): scala.Double = js.native
   def write(buffer: Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
+  def write(
+    buffer: Buffer,
+    offset: scala.Double,
+    length: scala.Double,
+    resultsCallback: js.Function1[/* param0 */ titaniumLib.WriteCallbackArgs, _]
+  ): scala.Double = js.native
 }
 

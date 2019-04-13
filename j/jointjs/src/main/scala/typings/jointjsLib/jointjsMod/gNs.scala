@@ -509,9 +509,6 @@ object gNs extends js.Object {
   */
   trait SegmentType extends js.Object
   
-  trait SegmentTypes
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[Segment]
-  
   trait SubdivisionsOpt extends PrecisionOpt {
     var subdivisions: js.UndefOr[js.Array[Curve]] = js.undefined
   }
@@ -688,5 +685,6 @@ object gNs extends js.Object {
     ): scala.Double = js.native
   }
   
+  type SegmentTypes = org.scalablytyped.runtime.StringDictionary[Segment]
 }
 

@@ -15,13 +15,13 @@ trait PreviewProps extends js.Object {
     *               your component's style property and is used for positioning.
     * @returns The JSX element to display for the drag preview.
     */
-  def generator(`type`: java.lang.String, item: js.Any, style: reactLib.reactMod.ReactNs.CSSProperties): reactLib.reactMod.Global.JSXNs.Element
+  def generator(`type`: java.lang.String, item: js.Any, style: reactLib.reactMod.CSSProperties): reactLib.reactMod.Global.JSXNs.Element
 }
 
 object PreviewProps {
   @scala.inline
   def apply(
-    generator: (java.lang.String, js.Any, reactLib.reactMod.ReactNs.CSSProperties) => reactLib.reactMod.Global.JSXNs.Element
+    generator: (java.lang.String, js.Any, reactLib.reactMod.CSSProperties) => reactLib.reactMod.Global.JSXNs.Element
   ): PreviewProps = {
     val __obj = js.Dynamic.literal(generator = js.Any.fromFunction3(generator))
   

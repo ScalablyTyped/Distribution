@@ -16,9 +16,9 @@ class DirectionsRailwaySharp protected ()
 @JSImport("@material-ui/icons", "DirectionsRailwaySharp")
 @js.native
 class DirectionsRailwaySharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

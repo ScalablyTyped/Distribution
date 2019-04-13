@@ -6,54 +6,54 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ClockContextOptions extends js.Object {
-  var clock: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Clock] = js.undefined
+  var clock: js.UndefOr[cesiumLib.cesiumMod.Clock] = js.undefined
   var contextOptions: js.UndefOr[js.Any] = js.undefined
   var creditContainer: js.UndefOr[stdLib.Element | java.lang.String] = js.undefined
   var creditViewport: js.UndefOr[stdLib.Element | java.lang.String] = js.undefined
-  var globe: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Globe] = js.undefined
-  var imageryProvider: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ImageryProvider] = js.undefined
-  var mapMode2D: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MapMode2D] = js.undefined
-  var mapProjection: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MapProjection] = js.undefined
+  var globe: js.UndefOr[cesiumLib.cesiumMod.Globe] = js.undefined
+  var imageryProvider: js.UndefOr[cesiumLib.cesiumMod.ImageryProvider] = js.undefined
+  var mapMode2D: js.UndefOr[cesiumLib.cesiumMod.MapMode2D] = js.undefined
+  var mapProjection: js.UndefOr[cesiumLib.cesiumMod.MapProjection] = js.undefined
   var maximumRenderTimeChange: js.UndefOr[scala.Double] = js.undefined
   var orderIndependentTranslucency: js.UndefOr[scala.Boolean] = js.undefined
   var requestRenderMode: js.UndefOr[scala.Boolean] = js.undefined
   var scene3DOnly: js.UndefOr[scala.Boolean] = js.undefined
-  var sceneMode: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.SceneMode] = js.undefined
+  var sceneMode: js.UndefOr[cesiumLib.cesiumMod.SceneMode] = js.undefined
   var shadows: js.UndefOr[scala.Boolean] = js.undefined
   var showRenderLoopErrors: js.UndefOr[scala.Boolean] = js.undefined
-  var skyAtmosphere: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.SkyAtmosphere] = js.undefined
-  var skyBox: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.SkyBox] = js.undefined
+  var skyAtmosphere: js.UndefOr[cesiumLib.cesiumMod.SkyAtmosphere] = js.undefined
+  var skyBox: js.UndefOr[cesiumLib.cesiumMod.SkyBox] = js.undefined
   var targetFrameRate: js.UndefOr[scala.Double] = js.undefined
   var terrainExaggeration: js.UndefOr[scala.Double] = js.undefined
-  var terrainProvider: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.TerrainProvider] = js.undefined
-  var terrainShadows: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ShadowMode] = js.undefined
+  var terrainProvider: js.UndefOr[cesiumLib.cesiumMod.TerrainProvider] = js.undefined
+  var terrainShadows: js.UndefOr[cesiumLib.cesiumMod.ShadowMode] = js.undefined
   var useDefaultRenderLoop: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Anon_ClockContextOptions {
   @scala.inline
   def apply(
-    clock: cesiumLib.cesiumMod.CesiumNs.Clock = null,
+    clock: cesiumLib.cesiumMod.Clock = null,
     contextOptions: js.Any = null,
     creditContainer: stdLib.Element | java.lang.String = null,
     creditViewport: stdLib.Element | java.lang.String = null,
-    globe: cesiumLib.cesiumMod.CesiumNs.Globe = null,
-    imageryProvider: cesiumLib.cesiumMod.CesiumNs.ImageryProvider = null,
-    mapMode2D: cesiumLib.cesiumMod.CesiumNs.MapMode2D = null,
-    mapProjection: cesiumLib.cesiumMod.CesiumNs.MapProjection = null,
+    globe: cesiumLib.cesiumMod.Globe = null,
+    imageryProvider: cesiumLib.cesiumMod.ImageryProvider = null,
+    mapMode2D: cesiumLib.cesiumMod.MapMode2D = null,
+    mapProjection: cesiumLib.cesiumMod.MapProjection = null,
     maximumRenderTimeChange: scala.Int | scala.Double = null,
     orderIndependentTranslucency: js.UndefOr[scala.Boolean] = js.undefined,
     requestRenderMode: js.UndefOr[scala.Boolean] = js.undefined,
     scene3DOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    sceneMode: cesiumLib.cesiumMod.CesiumNs.SceneMode = null,
+    sceneMode: cesiumLib.cesiumMod.SceneMode = null,
     shadows: js.UndefOr[scala.Boolean] = js.undefined,
     showRenderLoopErrors: js.UndefOr[scala.Boolean] = js.undefined,
-    skyAtmosphere: cesiumLib.cesiumMod.CesiumNs.SkyAtmosphere = null,
-    skyBox: cesiumLib.cesiumMod.CesiumNs.SkyBox = null,
+    skyAtmosphere: cesiumLib.cesiumMod.SkyAtmosphere = null,
+    skyBox: cesiumLib.cesiumMod.SkyBox = null,
     targetFrameRate: scala.Int | scala.Double = null,
     terrainExaggeration: scala.Int | scala.Double = null,
-    terrainProvider: cesiumLib.cesiumMod.CesiumNs.TerrainProvider = null,
-    terrainShadows: cesiumLib.cesiumMod.CesiumNs.ShadowMode = null,
+    terrainProvider: cesiumLib.cesiumMod.TerrainProvider = null,
+    terrainShadows: cesiumLib.cesiumMod.ShadowMode = null,
     useDefaultRenderLoop: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ClockContextOptions = {
     val __obj = js.Dynamic.literal()

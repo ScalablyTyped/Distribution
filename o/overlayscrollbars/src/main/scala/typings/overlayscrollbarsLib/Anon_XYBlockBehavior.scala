@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_XYBlockBehavior extends js.Object {
-  var x: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior] = js.undefined
-  var y: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior] = js.undefined
+  var x: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior] = js.undefined
+  var y: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior] = js.undefined
 }
 
 object Anon_XYBlockBehavior {
   @scala.inline
   def apply(
-    x: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior = null,
-    y: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior = null
+    x: overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior = null,
+    y: overlayscrollbarsLib.overlayscrollbarsMod.BlockBehavior = null
   ): Anon_XYBlockBehavior = {
     val __obj = js.Dynamic.literal()
     if (x != null) __obj.updateDynamic("x")(x)

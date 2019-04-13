@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ServiceDiscovery ()
   extends awsDashSdkLib.clientsAllMod.ServiceDiscovery {
-  def this(options: awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsServicediscoveryMod.ClientConfiguration) = this()
 }
 

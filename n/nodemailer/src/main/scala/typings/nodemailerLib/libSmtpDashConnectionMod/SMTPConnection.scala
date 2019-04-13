@@ -20,7 +20,7 @@ trait SMTPConnection
   var lastServerResponse: java.lang.String | nodemailerLib.nodemailerLibNumbers.`false` = js.native
   var logger: nodemailerLib.libSharedMod.Logger = js.native
   var name: java.lang.String = js.native
-  var options: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Options = js.native
+  var options: Options = js.native
   var port: scala.Double = js.native
   /** Defines if the current connection is secure or not. If not, STARTTLS can be used if available */
   var secure: scala.Boolean = js.native
@@ -35,20 +35,12 @@ trait SMTPConnection
   @JSName("addListener")
   def addListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* err */ SMTPError, scala.Unit]
   ): this.type = js.native
   /** Closes the connection to the server */
   def close(): scala.Unit = js.native
   /** Creates a connection to a SMTP server and sets up connection listener */
-  def connect(
-    callback: js.Function1[
-      /* err */ js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def connect(callback: js.Function1[/* err */ js.UndefOr[SMTPError], scala.Unit]): scala.Unit = js.native
   @JSName("emit")
   def emit_connect(event: nodemailerLib.nodemailerLibStrings.connect): scala.Boolean = js.native
   @JSName("emit")
@@ -66,34 +58,14 @@ trait SMTPConnection
   @JSName("listeners")
   def listeners_end(event: nodemailerLib.nodemailerLibStrings.end): js.Array[js.Function0[scala.Unit]] = js.native
   @JSName("listeners")
-  def listeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[
-    js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
-  ] = js.native
+  def listeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[js.Function1[/* err */ SMTPError, scala.Unit]] = js.native
   /** Authenticate user */
   def login(
-    auth: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.AuthenticationCredentials,
-    callback: js.Function1[
-      /* err */ js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError], 
-      scala.Unit
-    ]
+    auth: AuthenticationCredentials,
+    callback: js.Function1[/* err */ js.UndefOr[SMTPError], scala.Unit]
   ): scala.Unit = js.native
-  def login(
-    auth: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.AuthenticationOAuth2,
-    callback: js.Function1[
-      /* err */ js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def login(
-    auth: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Credentials,
-    callback: js.Function1[
-      /* err */ js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def login(auth: AuthenticationOAuth2, callback: js.Function1[/* err */ js.UndefOr[SMTPError], scala.Unit]): scala.Unit = js.native
+  def login(auth: Credentials, callback: js.Function1[/* err */ js.UndefOr[SMTPError], scala.Unit]): scala.Unit = js.native
   @JSName("off")
   def off_connect(event: nodemailerLib.nodemailerLibStrings.connect, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("off")
@@ -101,10 +73,7 @@ trait SMTPConnection
   @JSName("off")
   def off_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* err */ SMTPError, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_connect(event: nodemailerLib.nodemailerLibStrings.connect, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -113,10 +82,7 @@ trait SMTPConnection
   @JSName("on")
   def on_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* err */ SMTPError, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_connect(event: nodemailerLib.nodemailerLibStrings.connect, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -125,10 +91,7 @@ trait SMTPConnection
   @JSName("once")
   def once_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* err */ SMTPError, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_connect(event: nodemailerLib.nodemailerLibStrings.connect, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -137,10 +100,7 @@ trait SMTPConnection
   @JSName("prependListener")
   def prependListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* err */ SMTPError, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_connect(event: nodemailerLib.nodemailerLibStrings.connect, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -149,10 +109,7 @@ trait SMTPConnection
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* err */ SMTPError, scala.Unit]
   ): this.type = js.native
   /** Sends QUIT */
   def quit(): scala.Unit = js.native
@@ -161,12 +118,7 @@ trait SMTPConnection
   @JSName("rawListeners")
   def rawListeners_end(event: nodemailerLib.nodemailerLibStrings.end): js.Array[js.Function0[scala.Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[
-    js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
-  ] = js.native
+  def rawListeners_error(event: nodemailerLib.nodemailerLibStrings.error): js.Array[js.Function1[/* err */ SMTPError, scala.Unit]] = js.native
   @JSName("removeAllListener")
   def removeAllListener_connect(event: nodemailerLib.nodemailerLibStrings.connect): this.type = js.native
   @JSName("removeAllListener")
@@ -180,45 +132,25 @@ trait SMTPConnection
   @JSName("removeListener")
   def removeListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
-    listener: js.Function1[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* err */ SMTPError, scala.Unit]
   ): this.type = js.native
   /** Resets connection state */
-  def reset(
-    callback: js.Function1[
-      /* err */ js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def reset(callback: js.Function1[/* err */ js.UndefOr[SMTPError], scala.Unit]): scala.Unit = js.native
   /** Sends a message */
   def send(
-    envelope: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Envelope,
+    envelope: Envelope,
     message: java.lang.String,
-    callback: js.Function2[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError | scala.Null, 
-      /* info */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SentMessageInfo, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ SMTPError | scala.Null, /* info */ SentMessageInfo, scala.Unit]
   ): scala.Unit = js.native
   def send(
-    envelope: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Envelope,
+    envelope: Envelope,
     message: nodeLib.Buffer,
-    callback: js.Function2[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError | scala.Null, 
-      /* info */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SentMessageInfo, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ SMTPError | scala.Null, /* info */ SentMessageInfo, scala.Unit]
   ): scala.Unit = js.native
   def send(
-    envelope: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Envelope,
+    envelope: Envelope,
     message: nodeLib.streamMod.Readable,
-    callback: js.Function2[
-      /* err */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SMTPError | scala.Null, 
-      /* info */ nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.SentMessageInfo, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ SMTPError | scala.Null, /* info */ SentMessageInfo, scala.Unit]
   ): scala.Unit = js.native
 }
 

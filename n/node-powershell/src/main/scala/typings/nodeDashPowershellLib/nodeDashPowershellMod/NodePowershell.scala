@@ -14,7 +14,7 @@ trait NodePowershell extends js.Object {
   /**
     * An object containing the sdtio (in,out,err) [stream.Readable] of the PowerShell Instance.
     */
-  var streams: nodeDashPowershellLib.nodeDashPowershellMod.NodePowershellNs.ShellStream = js.native
+  var streams: ShellStream = js.native
   /**
     * Adds a command to the end of the pipeline of the shell object.
     * @param {string} required - PowerShell command - PowerShell script

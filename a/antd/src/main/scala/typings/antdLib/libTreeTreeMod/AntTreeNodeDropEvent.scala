@@ -12,8 +12,8 @@ trait AntTreeNodeDropEvent extends js.Object {
   var dropPosition: scala.Double = js.native
   var dropToGap: js.UndefOr[scala.Boolean] = js.native
   @JSName("event")
-  var event_Original: reactLib.reactMod.ReactNs.MouseEventHandler[_] = js.native
+  var event_Original: reactLib.reactMod.MouseEventHandler[_] = js.native
   var node: AntTreeNode = js.native
-  def event(event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def event(event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]): scala.Unit = js.native
 }
 

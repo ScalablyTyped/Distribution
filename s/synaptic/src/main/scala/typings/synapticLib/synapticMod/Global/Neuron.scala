@@ -13,3 +13,13 @@ import scala.scalajs.js.annotation._
 class Neuron ()
   extends synapticLib.synapticMod.Neuron
 
+@JSGlobal("Neuron")
+@js.native
+object Neuron
+  extends org.scalablytyped.runtime.Instantiable0[synapticLib.synapticMod.Neuron] {
+  var Connection: synapticLib.Anon_From = js.native
+  val squashNs: synapticLib.Anon_HLIM = js.native
+  def quantity(): synapticLib.Anon_Connections = js.native
+  def uid(): scala.Double = js.native
+}
+

@@ -38,7 +38,7 @@ trait Datetimepicker extends js.Object {
   /**
     * Returns the component's model current date, a moment object or null if not set.
     */
-  def date(): momentLib.momentMod.momentNs.Moment = js.native
+  def date(): momentLib.momentMod.Moment = js.native
   /**
     * Takes string, Date, moment, null parameter and sets the components model current moment to it.
     * Passing a null value unsets the components model current moment.
@@ -83,7 +83,7 @@ trait Datetimepicker extends js.Object {
   /**
     * Returns a moment with the options.defaultDate option configuration or false if not set.
     */
-  def defaultDate(): momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
+  def defaultDate(): momentLib.momentMod.Moment | scala.Boolean = js.native
   /**
     * Will set the picker's inital date.
     * If a boolean:false value is passed the options.defaultDate parameter is cleared.
@@ -271,7 +271,7 @@ trait Datetimepicker extends js.Object {
   /**
     * Returns the currently set moment of the options.maxDate or false if not set.
     */
-  def maxDate(): momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
+  def maxDate(): momentLib.momentMod.Moment | scala.Boolean = js.native
   /**
     * Takes a parameter and disallows the user to select a moment that is after that moment.
     * If a boolean:false value is passed options.maxDate is cleared and there is no restriction to the maximum moment the user can select.
@@ -289,7 +289,7 @@ trait Datetimepicker extends js.Object {
   /**
     * Returns the currently set moment of the options.minDate or false if not set.
     */
-  def minDate(): momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
+  def minDate(): momentLib.momentMod.Moment | scala.Boolean = js.native
   /**
     * Takes a parameter and disallows the user to select a moment that is before that moment.
     * If a boolean:false value is passed the options.minDate parameter is cleared and there is no restriction to the miminum moment the user can select.
@@ -432,7 +432,7 @@ trait Datetimepicker extends js.Object {
   /**
     * Returns the options.viewDate option.
     */
-  def viewDate(): momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
+  def viewDate(): momentLib.momentMod.Moment | scala.Boolean = js.native
   /**
     * This will change the viewDate without changing or setting the selected date.
     */

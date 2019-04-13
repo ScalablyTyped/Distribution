@@ -109,11 +109,7 @@ trait Command
     */
   def command(name: java.lang.String): Command = js.native
   def command(name: java.lang.String, desc: java.lang.String): Command = js.native
-  def command(
-    name: java.lang.String,
-    desc: java.lang.String,
-    opts: commanderLib.commanderMod.commanderNs.CommandOptions
-  ): Command = js.native
+  def command(name: java.lang.String, desc: java.lang.String, opts: commanderLib.commanderMod.CommandOptions): Command = js.native
   def description(): java.lang.String = js.native
   /**
     * Set the description to `str`.
@@ -243,7 +239,7 @@ trait Command
     * @param {string[]} argv
     * @returns {ParseOptionsResult}
     */
-  def parseOptions(argv: js.Array[java.lang.String]): commanderLib.commanderMod.commanderNs.ParseOptionsResult = js.native
+  def parseOptions(argv: js.Array[java.lang.String]): commanderLib.commanderMod.ParseOptionsResult = js.native
   def usage(): java.lang.String = js.native
   /**
     * Set or get the command usage.

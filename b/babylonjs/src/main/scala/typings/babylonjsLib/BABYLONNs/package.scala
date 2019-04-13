@@ -22,6 +22,16 @@ package object BABYLONNs {
     scala.Unit
   ]
   /**
+    * Represents a map of input types to input instance or input index to input instance.
+    */
+  type CameraInputsMap[TCamera /* <: Camera */] = (/**
+    * Accessor to the input by input type.
+    */
+  org.scalablytyped.runtime.StringDictionary[ICameraInput[TCamera]]) with (/**
+    * Accessor to the input by input index.
+    */
+  org.scalablytyped.runtime.NumberDictionary[ICameraInput[TCamera]])
+  /**
     * Strong typing of a Camera related stage step action
     */
   type CameraStageAction = js.Function1[/* camera */ Camera, scala.Unit]
@@ -35,6 +45,13 @@ package object BABYLONNs {
   type EvaluateSubMeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* subMesh */ SubMesh, scala.Unit]
   /** Alias type for number array or Float32Array */
   type FloatArray = js.Array[scala.Double] | stdLib.Float32Array
+  /**
+    * Interface used by SceneLoader plugins to define supported file extensions
+    */
+  type ISceneLoaderPluginExtensions = /**
+    * Defines the list of supported extensions
+    */
+  org.scalablytyped.runtime.StringDictionary[babylonjsLib.Anon_IsBinary]
   /** Alias type for number array or Float32Array or Int32Array or Uint32Array or Uint16Array */
   type IndicesArray = js.Array[scala.Double] | stdLib.Int32Array | stdLib.Uint32Array | stdLib.Uint16Array
   /**

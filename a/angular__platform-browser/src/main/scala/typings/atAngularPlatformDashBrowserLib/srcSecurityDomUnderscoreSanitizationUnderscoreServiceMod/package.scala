@@ -11,5 +11,4 @@ package object srcSecurityDomUnderscoreSanitizationUnderscoreServiceMod {
   type SafeScript = SafeValue
   type SafeStyle = SafeValue
   type SafeUrl = SafeValue
-  type SecurityContext = atAngularCoreLib.srcSanitizationSecurityMod.SecurityContext
 }

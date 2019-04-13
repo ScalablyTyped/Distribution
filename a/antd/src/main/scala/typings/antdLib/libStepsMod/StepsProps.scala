@@ -18,7 +18,7 @@ trait StepsProps extends js.Object {
   var status: js.UndefOr[
     antdLib.antdLibStrings.wait | antdLib.antdLibStrings.process | antdLib.antdLibStrings.finish | antdLib.antdLibStrings.error
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object StepsProps {
@@ -34,7 +34,7 @@ object StepsProps {
     progressDot: scala.Boolean | js.Function = null,
     size: antdLib.antdLibStrings.default | antdLib.antdLibStrings.small = null,
     status: antdLib.antdLibStrings.wait | antdLib.antdLibStrings.process | antdLib.antdLibStrings.finish | antdLib.antdLibStrings.error = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): StepsProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

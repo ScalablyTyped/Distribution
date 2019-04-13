@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ClassPropertiesExtendOptions
-  extends org.scalablytyped.runtime.Instantiable0[
-      backboneLib.backboneMod.BackboneNs.View[backboneLib.backboneMod.BackboneNs.Model]
-    ]
+  extends org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.Model]]
      with org.scalablytyped.runtime.Instantiable1[
-      /* options */ backboneLib.backboneMod.BackboneNs.ViewOptions[
+      /* options */ backboneLib.backboneMod.ViewOptions[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
       ], 
-      backboneLib.backboneMod.BackboneNs.View[backboneLib.backboneMod.BackboneNs.Model]
+      backboneLib.backboneMod.View[backboneLib.backboneMod.Model]
     ] {
   /**
     * Do not use, prefer TypeScript's extend functionality.

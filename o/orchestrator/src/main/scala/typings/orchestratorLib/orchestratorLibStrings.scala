@@ -14,18 +14,18 @@ object orchestratorLibStrings {
   
   @js.native
   sealed trait err
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @js.native
   sealed trait promise extends js.Object
   
   @js.native
   sealed trait start
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @js.native
   sealed trait stop
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @js.native
   sealed trait stream extends js.Object
@@ -35,23 +35,23 @@ object orchestratorLibStrings {
   
   @js.native
   sealed trait task_err
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @js.native
   sealed trait task_not_found
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @js.native
   sealed trait task_recursion
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @js.native
   sealed trait task_start
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @js.native
   sealed trait task_stop
-    extends orchestratorLib.orchestratorMod.OrchestratorNs.EventNames
+    extends orchestratorLib.orchestratorMod.EventNames
   
   @scala.inline
   def callback: callback = "callback".asInstanceOf[callback]

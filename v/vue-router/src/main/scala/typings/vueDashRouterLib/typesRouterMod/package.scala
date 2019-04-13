@@ -19,6 +19,7 @@ package object typesRouterMod {
     vueLib.typesOptionsMod.DefaultComputed, 
     vueLib.typesOptionsMod.DefaultProps
   ])
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ErrorHandler = js.Function1[/* err */ stdLib.Error, scala.Unit]
   type NavigationGuard[V /* <: vueLib.typesVueMod.Vue */] = js.Function3[
     /* to */ Route, 

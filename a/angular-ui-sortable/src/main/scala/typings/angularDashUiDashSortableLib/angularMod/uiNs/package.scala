@@ -9,7 +9,7 @@ package object uiNs {
   type SortableEvent[T] = js.Function2[/* event */ angularLib.JQueryEventObject, /* ui */ UISortableUIParams[T], scala.Unit]
   type SortableHelperFunctionOption = js.Function2[
     /* event */ angularLib.JQueryEventObject, 
-    /* ui */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+    /* ui */ angularLib.angularMod.IAugmentedJQuery, 
     angularLib.JQuery
   ]
 }

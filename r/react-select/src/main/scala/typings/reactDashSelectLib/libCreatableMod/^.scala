@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val defaultProps: Props[js.Any] = js.native
-  def makeCreatableSelect(SelectComponent: reactLib.reactMod.ReactNs.ComponentType[_]): Creatable[_] = js.native
+  def makeCreatableSelect(SelectComponent: reactLib.reactMod.ComponentType[_]): Creatable[_] = js.native
 }
 

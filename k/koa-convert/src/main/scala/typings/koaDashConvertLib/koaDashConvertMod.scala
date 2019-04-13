@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object koaDashConvertMod extends js.Object {
   def apply(
     mw: js.Function2[
-      /* context */ koaLib.koaMod.ApplicationNs.Context, 
+      /* context */ koaLib.koaMod.Context, 
       /* next */ js.Function0[js.Promise[_]], 
       stdLib.Generator
     ]
-  ): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  ): koaLib.koaMod.Middleware[_, js.Object] = js.native
 }
 

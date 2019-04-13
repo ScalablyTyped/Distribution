@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Parser: streamDashJsonLib.ParserType = js.native
-  def apply(): streamDashJsonLib.parserMod.namespaced = js.native
-  def apply(options: streamDashJsonLib.parserMod.ParserNs.ParserOptions): streamDashJsonLib.parserMod.namespaced = js.native
-  def parser(): streamDashJsonLib.streamDashJsonMod.makeNs.Parser = js.native
-  def parser(options: streamDashJsonLib.parserMod.ParserNs.ParserOptions): streamDashJsonLib.streamDashJsonMod.makeNs.Parser = js.native
+  def apply(): Parser = js.native
+  def apply(options: streamDashJsonLib.parserMod.ParserOptions): Parser = js.native
+  def parser(): Parser = js.native
+  def parser(options: streamDashJsonLib.parserMod.ParserOptions): Parser = js.native
 }
 

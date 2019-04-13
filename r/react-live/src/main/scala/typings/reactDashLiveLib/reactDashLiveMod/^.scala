@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("react-live", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Editor: reactLib.reactMod.ReactNs.ComponentClass[EditorProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val LiveEditor: reactLib.reactMod.ReactNs.ComponentClass[LiveEditorProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val LiveError: reactLib.reactMod.ReactNs.ComponentClass[reactDashLiveLib.DivProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val LivePreview: reactLib.reactMod.ReactNs.ComponentClass[reactDashLiveLib.DivProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val LiveProvider: reactLib.reactMod.ReactNs.ComponentClass[LiveProviderProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def withLive[P](wrappedComponent: reactDashLiveLib.Component[P]): reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val Editor: reactLib.reactMod.ComponentClass[EditorProps, reactLib.reactMod.ComponentState] = js.native
+  val LiveEditor: reactLib.reactMod.ComponentClass[LiveEditorProps, reactLib.reactMod.ComponentState] = js.native
+  val LiveError: reactLib.reactMod.ComponentClass[reactDashLiveLib.DivProps, reactLib.reactMod.ComponentState] = js.native
+  val LivePreview: reactLib.reactMod.ComponentClass[reactDashLiveLib.DivProps, reactLib.reactMod.ComponentState] = js.native
+  val LiveProvider: reactLib.reactMod.ComponentClass[LiveProviderProps, reactLib.reactMod.ComponentState] = js.native
+  def withLive[P](wrappedComponent: reactDashLiveLib.Component[P]): reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState] = js.native
 }
 

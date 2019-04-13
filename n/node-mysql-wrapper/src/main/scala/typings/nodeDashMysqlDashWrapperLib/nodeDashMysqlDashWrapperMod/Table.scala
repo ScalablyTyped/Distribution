@@ -64,22 +64,22 @@ class Table[T] protected () extends js.Object {
   /**
     *
     */
-  def find(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.namespaced[js.Array[T]] = js.native
+  def find(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.^[js.Array[T]] = js.native
    // only criteria
-  def find(criteriaRawJsObject: js.Any, callback: js.Function1[/* _results */ js.Array[T], _]): bluebirdLib.bluebirdMod.namespaced[js.Array[T]] = js.native
-  def findAll(): bluebirdLib.bluebirdMod.namespaced[js.Array[T]] = js.native
+  def find(criteriaRawJsObject: js.Any, callback: js.Function1[/* _results */ js.Array[T], _]): bluebirdLib.bluebirdMod.^[js.Array[T]] = js.native
+  def findAll(): bluebirdLib.bluebirdMod.^[js.Array[T]] = js.native
    // only criteria and promise
-  def findAll(tableRules: nodeDashMysqlDashWrapperLib.RawRules): bluebirdLib.bluebirdMod.namespaced[js.Array[T]] = js.native
+  def findAll(tableRules: nodeDashMysqlDashWrapperLib.RawRules): bluebirdLib.bluebirdMod.^[js.Array[T]] = js.native
   def findAll(
     tableRules: nodeDashMysqlDashWrapperLib.RawRules,
     callback: js.Function1[/* _results */ js.Array[T], _]
-  ): bluebirdLib.bluebirdMod.namespaced[js.Array[T]] = js.native
-  def findById(id: java.lang.String): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def findById(id: java.lang.String, callback: js.Function1[/* result */ T, _]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def findById(id: scala.Double): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def findById(id: scala.Double, callback: js.Function1[/* result */ T, _]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def findSingle(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def findSingle(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ T, _]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
+  ): bluebirdLib.bluebirdMod.^[js.Array[T]] = js.native
+  def findById(id: java.lang.String): bluebirdLib.bluebirdMod.^[T] = js.native
+  def findById(id: java.lang.String, callback: js.Function1[/* result */ T, _]): bluebirdLib.bluebirdMod.^[T] = js.native
+  def findById(id: scala.Double): bluebirdLib.bluebirdMod.^[T] = js.native
+  def findById(id: scala.Double, callback: js.Function1[/* result */ T, _]): bluebirdLib.bluebirdMod.^[T] = js.native
+  def findSingle(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.^[T] = js.native
+  def findSingle(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ T, _]): bluebirdLib.bluebirdMod.^[T] = js.native
   /**
     * Returns the primary key's value from an object.
     * @param {any} jsObject the object which you want to find and return the value of the primary key.
@@ -130,20 +130,20 @@ class Table[T] protected () extends js.Object {
   def remove(
     criteriaOrID: java.lang.String,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
-  ): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  ): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
   def remove(
     criteriaOrID: js.Any,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
-  ): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  ): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
   def remove(
     criteriaOrID: scala.Double,
     callback: js.Function1[/* _result */ nodeDashMysqlDashWrapperLib.DeleteAnswer, _]
-  ): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  ): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
    // ID without callback
    // criteria obj without callback
-  def remove(criteriaRawObject: js.Any): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
-  def remove(id: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
-  def remove(id: scala.Double): bluebirdLib.bluebirdMod.namespaced[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  def remove(criteriaRawObject: js.Any): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  def remove(id: java.lang.String): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
+  def remove(id: scala.Double): bluebirdLib.bluebirdMod.^[nodeDashMysqlDashWrapperLib.DeleteAnswer] = js.native
   /**
     * Converts and returns an object from this form: { aProperty:'dsda', otherProperty:something, anyPropertyName:true } to { a_property:..., other_property...,any_property_name...}
     * @param {any} row the raw row object.
@@ -151,7 +151,7 @@ class Table[T] protected () extends js.Object {
     * @return {any}
     */
   def rowFromObject(obj: js.Any): js.Any = js.native
-  def save(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def save(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ js.Any, _]): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def save(criteriaRawJsObject: js.Any): bluebirdLib.bluebirdMod.^[_] = js.native
+  def save(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ js.Any, _]): bluebirdLib.bluebirdMod.^[_] = js.native
 }
 

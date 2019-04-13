@@ -9,7 +9,7 @@ trait Anon_Container extends js.Object {
   var container: stdLib.Element | java.lang.String
   var flightDuration: js.UndefOr[scala.Double] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
-  var scene: cesiumLib.cesiumMod.CesiumNs.Scene
+  var scene: cesiumLib.cesiumMod.Scene
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -17,7 +17,7 @@ object Anon_Container {
   @scala.inline
   def apply(
     container: stdLib.Element | java.lang.String,
-    scene: cesiumLib.cesiumMod.CesiumNs.Scene,
+    scene: cesiumLib.cesiumMod.Scene,
     flightDuration: scala.Int | scala.Double = null,
     key: java.lang.String = null,
     url: java.lang.String = null

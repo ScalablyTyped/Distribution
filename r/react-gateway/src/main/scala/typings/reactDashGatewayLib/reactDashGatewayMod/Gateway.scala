@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-gateway", "Gateway")
 @js.native
 class Gateway ()
-  extends reactDashGatewayLib.gatewayMod.namespaced
+  extends reactDashGatewayLib.gatewayMod.^
 

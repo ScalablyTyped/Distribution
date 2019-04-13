@@ -9,7 +9,7 @@ trait CascaderOptionType
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var children: js.UndefOr[js.Array[CascaderOptionType]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object CascaderOptionType {
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     children: js.Array[CascaderOptionType] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     value: java.lang.String = null
   ): CascaderOptionType = {
     val __obj = js.Dynamic.literal()

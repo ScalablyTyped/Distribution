@@ -13,14 +13,14 @@ trait Anon_Ariaactivedescendant extends js.Object {
   var autoComplete: reactDashPlacesDashAutocompleteLib.reactDashPlacesDashAutocompleteLibStrings.off = js.native
   var disabled: scala.Boolean = js.native
   @JSName("onBlur")
-  var onBlur_Original: reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.Element] = js.native
+  var onBlur_Original: reactLib.reactMod.FocusEventHandler[reactLib.Element] = js.native
   @JSName("onKeyDown")
-  var onKeyDown_Original: reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.Element] = js.native
+  var onKeyDown_Original: reactLib.reactMod.KeyboardEventHandler[reactLib.Element] = js.native
   var role: reactDashPlacesDashAutocompleteLib.reactDashPlacesDashAutocompleteLibStrings.combobox = js.native
   var `type`: reactDashPlacesDashAutocompleteLib.reactDashPlacesDashAutocompleteLibStrings.text = js.native
   var value: js.UndefOr[java.lang.String] = js.native
-  def onBlur(event: reactLib.reactMod.ReactNs.FocusEvent[reactLib.Element]): scala.Unit = js.native
+  def onBlur(event: reactLib.reactMod.FocusEvent[reactLib.Element]): scala.Unit = js.native
   def onChange(ev: Anon_Target): scala.Unit = js.native
-  def onKeyDown(event: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element]): scala.Unit = js.native
+  def onKeyDown(event: reactLib.reactMod.KeyboardEvent[reactLib.Element]): scala.Unit = js.native
 }
 

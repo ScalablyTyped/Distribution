@@ -8,55 +8,55 @@ import scala.scalajs.js.annotation._
 object flickityLibStrings {
   @js.native
   sealed trait bgLazyLoad
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait cellSelect
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait dragEnd
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait dragMove
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait dragStart
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait lazyLoad
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait pointerDown
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait pointerMove
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait pointerUp
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait scroll
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait select
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait settle
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @js.native
   sealed trait staticClick
-    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
+    extends flickityLib.flickityMod.FlickityEvents
   
   @scala.inline
   def bgLazyLoad: bgLazyLoad = "bgLazyLoad".asInstanceOf[bgLazyLoad]

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ExtraInfo extends js.Object {
-  var extraInfo: js.UndefOr[hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2Mod.hapiAuthJwt2Ns.ExtraInfo] = js.undefined
+  var extraInfo: js.UndefOr[hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2Mod.ExtraInfo] = js.undefined
   var isValid: scala.Boolean
   var key: java.lang.String
 }
@@ -16,7 +16,7 @@ object Anon_ExtraInfo {
   def apply(
     isValid: scala.Boolean,
     key: java.lang.String,
-    extraInfo: hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2Mod.hapiAuthJwt2Ns.ExtraInfo = null
+    extraInfo: hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2Mod.ExtraInfo = null
   ): Anon_ExtraInfo = {
     val __obj = js.Dynamic.literal(isValid = isValid, key = key)
     if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo)

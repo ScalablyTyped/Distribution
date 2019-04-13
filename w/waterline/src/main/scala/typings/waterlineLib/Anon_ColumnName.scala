@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ColumnName[T] extends js.Object {
   var columnName: js.UndefOr[java.lang.String] = js.undefined
-  var defaultsTo: js.UndefOr[T | waterlineLib.waterlineMod.WaterlineNs.DefaultsToFn[T]] = js.undefined
+  var defaultsTo: js.UndefOr[T | waterlineLib.waterlineMod.DefaultsToFn[T]] = js.undefined
   var enum: js.UndefOr[js.Array[T]] = js.undefined
   var index: js.UndefOr[scala.Boolean] = js.undefined
   var primaryKey: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,7 +21,7 @@ object Anon_ColumnName {
   @scala.inline
   def apply[T](
     columnName: java.lang.String = null,
-    defaultsTo: T | waterlineLib.waterlineMod.WaterlineNs.DefaultsToFn[T] = null,
+    defaultsTo: T | waterlineLib.waterlineMod.DefaultsToFn[T] = null,
     enum: js.Array[T] = null,
     index: js.UndefOr[scala.Boolean] = js.undefined,
     primaryKey: js.UndefOr[scala.Boolean] = js.undefined,

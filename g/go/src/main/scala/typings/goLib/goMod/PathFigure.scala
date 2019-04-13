@@ -22,40 +22,31 @@ import scala.scalajs.js.annotation._
   * @param {boolean=} filled optional: whether the figure is filled (default is true).
   * @param {boolean=} shadowed optional: whether the figure may be drawn with a shadow (default is true).
   */
-class PathFigure ()
-  extends goLib.goMod.goNs.PathFigure {
+class PathFigure () extends js.Object {
   def this(sx: scala.Double) = this()
   def this(sx: scala.Double, sy: scala.Double) = this()
   def this(sx: scala.Double, sy: scala.Double, filled: scala.Boolean) = this()
   def this(sx: scala.Double, sy: scala.Double, filled: scala.Boolean, shadowed: scala.Boolean) = this()
   /**Gets or sets whether this PathFigure is drawn filled.*/
-  /* CompleteClass */
-  override var isFilled: scala.Boolean = js.native
+  var isFilled: scala.Boolean = js.native
   /**Gets or sets whether this PathFigure will render a shadow if one is defined.*/
-  /* CompleteClass */
-  override var isShadowed: scala.Boolean = js.native
+  var isShadowed: scala.Boolean = js.native
   /**Gets or sets the List of PathSegments that define this PathFigure.*/
-  /* CompleteClass */
-  override var segments: goLib.goMod.goNs.List[goLib.goMod.goNs.PathSegment] = js.native
+  var segments: List[PathSegment] = js.native
   /**Gets or sets the starting point X coordinate of the PathFigure.*/
-  /* CompleteClass */
-  override var startX: scala.Double = js.native
+  var startX: scala.Double = js.native
   /**Gets or sets the starting point Y coordinate of the PathFigure.*/
-  /* CompleteClass */
-  override var startY: scala.Double = js.native
+  var startY: scala.Double = js.native
   /**
     * Add a PathSegment to the segments list.
     * @param {PathSegment} segment a newly allocated unshared PathSegment that will become owned by this PathFigure
     * @return {PathFigure} this
     */
-  /* CompleteClass */
-  override def add(segment: goLib.goMod.goNs.PathSegment): goLib.goMod.goNs.PathFigure = js.native
+  def add(segment: PathSegment): PathFigure = js.native
   /**
     * Create a copy of this PathFigure, with the same values and segments.
     */
-  /* CompleteClass */
-  override def copy(): goLib.goMod.goNs.PathFigure = js.native
-  /* CompleteClass */
-  override def equalsApprox(f: goLib.goMod.goNs.PathFigure): scala.Boolean = js.native
+  def copy(): PathFigure = js.native
+  def equalsApprox(f: PathFigure): scala.Boolean = js.native
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 // as a return type seems to be not useful. E.g. it requires type assertions in `beforeEach(inject(...))`.
 @js.native
 trait IInjectStatic extends js.Object {
-  def apply(fns: (angularLib.angularMod.angularNs.Injectable[js.Function1[/* repeated */ _, scala.Unit]])*): js.Any = js.native
+  def apply(fns: (angularLib.angularMod.Injectable[js.Function1[/* repeated */ _, scala.Unit]])*): js.Any = js.native
    // void | (() => void);
   def strictDi(): js.Any = js.native
   def strictDi(`val`: scala.Boolean): js.Any = js.native

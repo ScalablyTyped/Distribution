@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ReadonlyArray[T]
   extends /* n */ org.scalablytyped.runtime.NumberDictionary[T] {
   /** Iterator of values in the array. */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[T]] = js.native
   /**
     * Gets the length of the array. This is a number one higher than the highest element defined in an array.

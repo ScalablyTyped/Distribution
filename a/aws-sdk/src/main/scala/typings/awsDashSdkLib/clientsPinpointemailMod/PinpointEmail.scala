@@ -9,1438 +9,926 @@ import scala.scalajs.js.annotation._
 trait PinpointEmail
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_PinpointEmail: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ClientConfiguration = js.native
+  var config_PinpointEmail: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Create a configuration set. Configuration sets are groups of rules that you can apply to the emails you send using Amazon Pinpoint. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email. 
     */
-  def createConfigurationSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfigurationSet(): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetResponse, 
+      /* data */ CreateConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a configuration set. Configuration sets are groups of rules that you can apply to the emails you send using Amazon Pinpoint. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email. 
     */
-  def createConfigurationSet(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfigurationSet(params: CreateConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSet(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetRequest,
+    params: CreateConfigurationSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetResponse, 
+      /* data */ CreateConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create an event destination. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage. A single configuration set can include more than one event destination.
     */
-  def createConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSetEventDestination(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationResponse, 
+      /* data */ CreateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create an event destination. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage. A single configuration set can include more than one event destination.
     */
+  def createConfigurationSetEventDestination(params: CreateConfigurationSetEventDestinationRequest): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def createConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationRequest,
+    params: CreateConfigurationSetEventDestinationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationResponse, 
+      /* data */ CreateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new pool of dedicated IP addresses. A pool can include one or more dedicated IP addresses that are associated with your Amazon Pinpoint account. You can associate a pool with a configuration set. When you send an email that uses that configuration set, Amazon Pinpoint sends it using only the IP addresses in the associated pool.
     */
-  def createDedicatedIpPool(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDedicatedIpPool(): awsDashSdkLib.libRequestMod.Request[CreateDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDedicatedIpPool(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolResponse, 
+      /* data */ CreateDedicatedIpPoolResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new pool of dedicated IP addresses. A pool can include one or more dedicated IP addresses that are associated with your Amazon Pinpoint account. You can associate a pool with a configuration set. When you send an email that uses that configuration set, Amazon Pinpoint sends it using only the IP addresses in the associated pool.
     */
-  def createDedicatedIpPool(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDedicatedIpPool(params: CreateDedicatedIpPoolRequest): awsDashSdkLib.libRequestMod.Request[CreateDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDedicatedIpPool(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolRequest,
+    params: CreateDedicatedIpPoolRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolResponse, 
+      /* data */ CreateDedicatedIpPoolResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
     */
-  def createDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDeliverabilityTestReport(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+      /* data */ CreateDeliverabilityTestReportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
     */
+  def createDeliverabilityTestReport(params: CreateDeliverabilityTestReportRequest): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDeliverabilityTestReport(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def createDeliverabilityTestReport(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportRequest,
+    params: CreateDeliverabilityTestReportRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+      /* data */ CreateDeliverabilityTestReportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Verifies an email identity for use with Amazon Pinpoint. In Amazon Pinpoint, an identity is an email address or domain that you use when you send email. Before you can use an identity to send email with Amazon Pinpoint, you first have to verify it. By verifying an address, you demonstrate that you're the owner of the address, and that you've given Amazon Pinpoint permission to send email from the address. When you verify an email address, Amazon Pinpoint sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain, this operation provides a set of DKIM tokens, which you can convert into CNAME tokens. You add these CNAME tokens to the DNS configuration for your domain. Your domain is verified when Amazon Pinpoint detects these records in the DNS configuration for your domain. It usually takes around 72 hours to complete the domain verification process.
     */
-  def createEmailIdentity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createEmailIdentity(): awsDashSdkLib.libRequestMod.Request[CreateEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createEmailIdentity(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityResponse, 
+      /* data */ CreateEmailIdentityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Verifies an email identity for use with Amazon Pinpoint. In Amazon Pinpoint, an identity is an email address or domain that you use when you send email. Before you can use an identity to send email with Amazon Pinpoint, you first have to verify it. By verifying an address, you demonstrate that you're the owner of the address, and that you've given Amazon Pinpoint permission to send email from the address. When you verify an email address, Amazon Pinpoint sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain, this operation provides a set of DKIM tokens, which you can convert into CNAME tokens. You add these CNAME tokens to the DNS configuration for your domain. Your domain is verified when Amazon Pinpoint detects these records in the DNS configuration for your domain. It usually takes around 72 hours to complete the domain verification process.
     */
-  def createEmailIdentity(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createEmailIdentity(params: CreateEmailIdentityRequest): awsDashSdkLib.libRequestMod.Request[CreateEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createEmailIdentity(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityRequest,
+    params: CreateEmailIdentityRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityResponse, 
+      /* data */ CreateEmailIdentityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an existing configuration set. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
     */
-  def deleteConfigurationSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConfigurationSet(): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetResponse, 
+      /* data */ DeleteConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an existing configuration set. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
     */
-  def deleteConfigurationSet(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConfigurationSet(params: DeleteConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSet(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetRequest,
+    params: DeleteConfigurationSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetResponse, 
+      /* data */ DeleteConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an event destination. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
     */
-  def deleteConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSetEventDestination(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationResponse, 
+      /* data */ DeleteConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete an event destination. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
     */
+  def deleteConfigurationSetEventDestination(params: DeleteConfigurationSetEventDestinationRequest): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def deleteConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationRequest,
+    params: DeleteConfigurationSetEventDestinationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationResponse, 
+      /* data */ DeleteConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete a dedicated IP pool.
     */
-  def deleteDedicatedIpPool(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDedicatedIpPool(): awsDashSdkLib.libRequestMod.Request[DeleteDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDedicatedIpPool(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolResponse, 
+      /* data */ DeleteDedicatedIpPoolResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Delete a dedicated IP pool.
     */
-  def deleteDedicatedIpPool(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDedicatedIpPool(params: DeleteDedicatedIpPoolRequest): awsDashSdkLib.libRequestMod.Request[DeleteDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDedicatedIpPool(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolRequest,
+    params: DeleteDedicatedIpPoolRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolResponse, 
+      /* data */ DeleteDedicatedIpPoolResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteDedicatedIpPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an email identity that you previously verified for use with Amazon Pinpoint. An identity can be either an email address or a domain name.
     */
-  def deleteEmailIdentity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteEmailIdentity(): awsDashSdkLib.libRequestMod.Request[DeleteEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEmailIdentity(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityResponse, 
+      /* data */ DeleteEmailIdentityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an email identity that you previously verified for use with Amazon Pinpoint. An identity can be either an email address or a domain name.
     */
-  def deleteEmailIdentity(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteEmailIdentity(params: DeleteEmailIdentityRequest): awsDashSdkLib.libRequestMod.Request[DeleteEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteEmailIdentity(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityRequest,
+    params: DeleteEmailIdentityRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityResponse, 
+      /* data */ DeleteEmailIdentityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.DeleteEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Obtain information about the email-sending status and capabilities of your Amazon Pinpoint account in the current AWS Region.
     */
-  def getAccount(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getAccount(): awsDashSdkLib.libRequestMod.Request[GetAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAccount(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountResponse, 
+      /* data */ GetAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Obtain information about the email-sending status and capabilities of your Amazon Pinpoint account in the current AWS Region.
     */
-  def getAccount(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getAccount(params: GetAccountRequest): awsDashSdkLib.libRequestMod.Request[GetAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAccount(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountRequest,
+    params: GetAccountRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountResponse, 
+      /* data */ GetAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
     */
-  def getBlacklistReports(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getBlacklistReports(): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBlacklistReports(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+      /* data */ GetBlacklistReportsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
     */
-  def getBlacklistReports(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getBlacklistReports(params: GetBlacklistReportsRequest): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBlacklistReports(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsRequest,
+    params: GetBlacklistReportsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+      /* data */ GetBlacklistReportsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get information about an existing configuration set, including the dedicated IP pool that it's associated with, whether or not it's enabled for sending email, and more. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
     */
-  def getConfigurationSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getConfigurationSet(): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConfigurationSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetResponse, 
+      /* data */ GetConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get information about an existing configuration set, including the dedicated IP pool that it's associated with, whether or not it's enabled for sending email, and more. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
     */
-  def getConfigurationSet(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getConfigurationSet(params: GetConfigurationSetRequest): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConfigurationSet(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetRequest,
+    params: GetConfigurationSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetResponse, 
+      /* data */ GetConfigurationSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve a list of event destinations that are associated with a configuration set. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
     */
-  def getConfigurationSetEventDestinations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getConfigurationSetEventDestinations(): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConfigurationSetEventDestinations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsResponse, 
+      /* data */ GetConfigurationSetEventDestinationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve a list of event destinations that are associated with a configuration set. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
     */
+  def getConfigurationSetEventDestinations(params: GetConfigurationSetEventDestinationsRequest): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConfigurationSetEventDestinations(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def getConfigurationSetEventDestinations(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsRequest,
+    params: GetConfigurationSetEventDestinationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsResponse, 
+      /* data */ GetConfigurationSetEventDestinationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetConfigurationSetEventDestinationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get information about a dedicated IP address, including the name of the dedicated IP pool that it's associated with, as well information about the automatic warm-up process for the address.
     */
-  def getDedicatedIp(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDedicatedIp(): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDedicatedIp(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpResponse, 
+      /* data */ GetDedicatedIpResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get information about a dedicated IP address, including the name of the dedicated IP pool that it's associated with, as well information about the automatic warm-up process for the address.
     */
-  def getDedicatedIp(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDedicatedIp(params: GetDedicatedIpRequest): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDedicatedIp(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpRequest,
+    params: GetDedicatedIpRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpResponse, 
+      /* data */ GetDedicatedIpResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the dedicated IP addresses that are associated with your Amazon Pinpoint account.
     */
-  def getDedicatedIps(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDedicatedIps(): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDedicatedIps(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsResponse, 
+      /* data */ GetDedicatedIpsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List the dedicated IP addresses that are associated with your Amazon Pinpoint account.
     */
-  def getDedicatedIps(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDedicatedIps(params: GetDedicatedIpsRequest): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDedicatedIps(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsRequest,
+    params: GetDedicatedIpsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsResponse, 
+      /* data */ GetDedicatedIpsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDedicatedIpsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
     */
-  def getDeliverabilityDashboardOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDeliverabilityDashboardOptions(): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeliverabilityDashboardOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+      /* data */ GetDeliverabilityDashboardOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
     */
+  def getDeliverabilityDashboardOptions(params: GetDeliverabilityDashboardOptionsRequest): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeliverabilityDashboardOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def getDeliverabilityDashboardOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsRequest,
+    params: GetDeliverabilityDashboardOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+      /* data */ GetDeliverabilityDashboardOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve the results of a predictive inbox placement test.
     */
-  def getDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeliverabilityTestReport(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+      /* data */ GetDeliverabilityTestReportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve the results of a predictive inbox placement test.
     */
-  def getDeliverabilityTestReport(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDeliverabilityTestReport(params: GetDeliverabilityTestReportRequest): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeliverabilityTestReport(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportRequest,
+    params: GetDeliverabilityTestReportRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+      /* data */ GetDeliverabilityTestReportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve inbox placement and engagement rates for the domains that you use to send email.
     */
-  def getDomainStatisticsReport(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDomainStatisticsReport(): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDomainStatisticsReport(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+      /* data */ GetDomainStatisticsReportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve inbox placement and engagement rates for the domains that you use to send email.
     */
-  def getDomainStatisticsReport(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDomainStatisticsReport(params: GetDomainStatisticsReportRequest): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDomainStatisticsReport(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportRequest,
+    params: GetDomainStatisticsReportRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+      /* data */ GetDomainStatisticsReportResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information about a specific identity associated with your Amazon Pinpoint account, including the identity's verification status, its DKIM authentication status, and its custom Mail-From settings.
     */
-  def getEmailIdentity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getEmailIdentity(): awsDashSdkLib.libRequestMod.Request[GetEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEmailIdentity(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityResponse, 
+      /* data */ GetEmailIdentityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides information about a specific identity associated with your Amazon Pinpoint account, including the identity's verification status, its DKIM authentication status, and its custom Mail-From settings.
     */
-  def getEmailIdentity(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getEmailIdentity(params: GetEmailIdentityRequest): awsDashSdkLib.libRequestMod.Request[GetEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEmailIdentity(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityRequest,
+    params: GetEmailIdentityRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityResponse, 
+      /* data */ GetEmailIdentityResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetEmailIdentityResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List all of the configuration sets associated with your Amazon Pinpoint account in the current region. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
     */
-  def listConfigurationSets(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurationSets(): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurationSets(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsResponse, 
+      /* data */ ListConfigurationSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List all of the configuration sets associated with your Amazon Pinpoint account in the current region. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
     */
-  def listConfigurationSets(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConfigurationSets(params: ListConfigurationSetsRequest): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConfigurationSets(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsRequest,
+    params: ListConfigurationSetsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsResponse, 
+      /* data */ ListConfigurationSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListConfigurationSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List all of the dedicated IP pools that exist in your Amazon Pinpoint account in the current AWS Region.
     */
-  def listDedicatedIpPools(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDedicatedIpPools(): awsDashSdkLib.libRequestMod.Request[ListDedicatedIpPoolsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDedicatedIpPools(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsResponse, 
+      /* data */ ListDedicatedIpPoolsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDedicatedIpPoolsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * List all of the dedicated IP pools that exist in your Amazon Pinpoint account in the current AWS Region.
     */
-  def listDedicatedIpPools(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDedicatedIpPools(params: ListDedicatedIpPoolsRequest): awsDashSdkLib.libRequestMod.Request[ListDedicatedIpPoolsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDedicatedIpPools(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsRequest,
+    params: ListDedicatedIpPoolsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsResponse, 
+      /* data */ ListDedicatedIpPoolsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDedicatedIpPoolsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
     */
-  def listDeliverabilityTestReports(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDeliverabilityTestReports(): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDeliverabilityTestReports(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
+      /* data */ ListDeliverabilityTestReportsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
     */
-  def listDeliverabilityTestReports(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDeliverabilityTestReports(params: ListDeliverabilityTestReportsRequest): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDeliverabilityTestReports(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsRequest,
+    params: ListDeliverabilityTestReportsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
+      /* data */ ListDeliverabilityTestReportsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all of the email identities that are associated with your Amazon Pinpoint account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't.
     */
-  def listEmailIdentities(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listEmailIdentities(): awsDashSdkLib.libRequestMod.Request[ListEmailIdentitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listEmailIdentities(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesResponse, 
+      /* data */ ListEmailIdentitiesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListEmailIdentitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of all of the email identities that are associated with your Amazon Pinpoint account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't.
     */
-  def listEmailIdentities(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listEmailIdentities(params: ListEmailIdentitiesRequest): awsDashSdkLib.libRequestMod.Request[ListEmailIdentitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listEmailIdentities(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesRequest,
+    params: ListEmailIdentitiesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesResponse, 
+      /* data */ ListEmailIdentitiesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListEmailIdentitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListEmailIdentitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve a list of the tags (keys and values) that are associated with a specific resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
-  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve a list of the tags (keys and values) that are associated with a specific resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
-  def listTagsForResource(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceRequest,
+    params: ListTagsForResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable the automatic warm-up feature for dedicated IP addresses.
     */
-  def putAccountDedicatedIpWarmupAttributes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putAccountDedicatedIpWarmupAttributes(): awsDashSdkLib.libRequestMod.Request[PutAccountDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountDedicatedIpWarmupAttributes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesResponse, 
+      /* data */ PutAccountDedicatedIpWarmupAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAccountDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable the automatic warm-up feature for dedicated IP addresses.
     */
+  def putAccountDedicatedIpWarmupAttributes(params: PutAccountDedicatedIpWarmupAttributesRequest): awsDashSdkLib.libRequestMod.Request[PutAccountDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountDedicatedIpWarmupAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putAccountDedicatedIpWarmupAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesRequest,
+    params: PutAccountDedicatedIpWarmupAttributesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesResponse, 
+      /* data */ PutAccountDedicatedIpWarmupAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAccountDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable the ability of your account to send email.
     */
-  def putAccountSendingAttributes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putAccountSendingAttributes(): awsDashSdkLib.libRequestMod.Request[PutAccountSendingAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountSendingAttributes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesResponse, 
+      /* data */ PutAccountSendingAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAccountSendingAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable the ability of your account to send email.
     */
-  def putAccountSendingAttributes(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putAccountSendingAttributes(params: PutAccountSendingAttributesRequest): awsDashSdkLib.libRequestMod.Request[PutAccountSendingAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountSendingAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesRequest,
+    params: PutAccountSendingAttributesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesResponse, 
+      /* data */ PutAccountSendingAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutAccountSendingAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAccountSendingAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associate a configuration set with a dedicated IP pool. You can use dedicated IP pools to create groups of dedicated IP addresses for sending specific types of email.
     */
-  def putConfigurationSetDeliveryOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putConfigurationSetDeliveryOptions(): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetDeliveryOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetDeliveryOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsResponse, 
+      /* data */ PutConfigurationSetDeliveryOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetDeliveryOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associate a configuration set with a dedicated IP pool. You can use dedicated IP pools to create groups of dedicated IP addresses for sending specific types of email.
     */
+  def putConfigurationSetDeliveryOptions(params: PutConfigurationSetDeliveryOptionsRequest): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetDeliveryOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetDeliveryOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putConfigurationSetDeliveryOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsRequest,
+    params: PutConfigurationSetDeliveryOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsResponse, 
+      /* data */ PutConfigurationSetDeliveryOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetDeliveryOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetDeliveryOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable collection of reputation metrics for emails that you send using a particular configuration set in a specific AWS Region.
     */
-  def putConfigurationSetReputationOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putConfigurationSetReputationOptions(): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetReputationOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetReputationOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsResponse, 
+      /* data */ PutConfigurationSetReputationOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetReputationOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable collection of reputation metrics for emails that you send using a particular configuration set in a specific AWS Region.
     */
+  def putConfigurationSetReputationOptions(params: PutConfigurationSetReputationOptionsRequest): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetReputationOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetReputationOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putConfigurationSetReputationOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsRequest,
+    params: PutConfigurationSetReputationOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsResponse, 
+      /* data */ PutConfigurationSetReputationOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetReputationOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetReputationOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable email sending for messages that use a particular configuration set in a specific AWS Region.
     */
-  def putConfigurationSetSendingOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putConfigurationSetSendingOptions(): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetSendingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetSendingOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsResponse, 
+      /* data */ PutConfigurationSetSendingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetSendingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable email sending for messages that use a particular configuration set in a specific AWS Region.
     */
+  def putConfigurationSetSendingOptions(params: PutConfigurationSetSendingOptionsRequest): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetSendingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetSendingOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putConfigurationSetSendingOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsRequest,
+    params: PutConfigurationSetSendingOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsResponse, 
+      /* data */ PutConfigurationSetSendingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetSendingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetSendingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Specify a custom domain to use for open and click tracking elements in email that you send using Amazon Pinpoint.
     */
-  def putConfigurationSetTrackingOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putConfigurationSetTrackingOptions(): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetTrackingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetTrackingOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsResponse, 
+      /* data */ PutConfigurationSetTrackingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetTrackingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Specify a custom domain to use for open and click tracking elements in email that you send using Amazon Pinpoint.
     */
+  def putConfigurationSetTrackingOptions(params: PutConfigurationSetTrackingOptionsRequest): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetTrackingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putConfigurationSetTrackingOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putConfigurationSetTrackingOptions(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsRequest,
+    params: PutConfigurationSetTrackingOptionsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsResponse, 
+      /* data */ PutConfigurationSetTrackingOptionsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutConfigurationSetTrackingOptionsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutConfigurationSetTrackingOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Move a dedicated IP address to an existing dedicated IP pool.  The dedicated IP address that you specify must already exist, and must be associated with your Amazon Pinpoint account.  The dedicated IP pool you specify must already exist. You can create a new pool by using the CreateDedicatedIpPool operation. 
     */
-  def putDedicatedIpInPool(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putDedicatedIpInPool(): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpInPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDedicatedIpInPool(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolResponse, 
+      /* data */ PutDedicatedIpInPoolResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpInPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Move a dedicated IP address to an existing dedicated IP pool.  The dedicated IP address that you specify must already exist, and must be associated with your Amazon Pinpoint account.  The dedicated IP pool you specify must already exist. You can create a new pool by using the CreateDedicatedIpPool operation. 
     */
-  def putDedicatedIpInPool(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putDedicatedIpInPool(params: PutDedicatedIpInPoolRequest): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpInPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDedicatedIpInPool(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolRequest,
+    params: PutDedicatedIpInPoolRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolResponse, 
+      /* data */ PutDedicatedIpInPoolResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpInPoolResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpInPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * 
     */
-  def putDedicatedIpWarmupAttributes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putDedicatedIpWarmupAttributes(): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDedicatedIpWarmupAttributes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesResponse, 
+      /* data */ PutDedicatedIpWarmupAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * 
     */
+  def putDedicatedIpWarmupAttributes(params: PutDedicatedIpWarmupAttributesRequest): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDedicatedIpWarmupAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putDedicatedIpWarmupAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesRequest,
+    params: PutDedicatedIpWarmupAttributesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesResponse, 
+      /* data */ PutDedicatedIpWarmupAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
     */
-  def putDeliverabilityDashboardOption(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putDeliverabilityDashboardOption(): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDeliverabilityDashboardOption(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
+      /* data */ PutDeliverabilityDashboardOptionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
     */
+  def putDeliverabilityDashboardOption(params: PutDeliverabilityDashboardOptionRequest): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDeliverabilityDashboardOption(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putDeliverabilityDashboardOption(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionRequest,
+    params: PutDeliverabilityDashboardOptionRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
+      /* data */ PutDeliverabilityDashboardOptionResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used to enable or disable DKIM authentication for an email identity.
     */
-  def putEmailIdentityDkimAttributes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putEmailIdentityDkimAttributes(): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityDkimAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEmailIdentityDkimAttributes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesResponse, 
+      /* data */ PutEmailIdentityDkimAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityDkimAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used to enable or disable DKIM authentication for an email identity.
     */
+  def putEmailIdentityDkimAttributes(params: PutEmailIdentityDkimAttributesRequest): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityDkimAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEmailIdentityDkimAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putEmailIdentityDkimAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesRequest,
+    params: PutEmailIdentityDkimAttributesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesResponse, 
+      /* data */ PutEmailIdentityDkimAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityDkimAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityDkimAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used to enable or disable feedback forwarding for an identity. This setting determines what happens when an identity is used to send an email that results in a bounce or complaint event. When you enable feedback forwarding, Amazon Pinpoint sends you email notifications when bounce or complaint events occur. Amazon Pinpoint sends this notification to the address that you specified in the Return-Path header of the original email. When you disable feedback forwarding, Amazon Pinpoint sends notifications through other mechanisms, such as by notifying an Amazon SNS topic. You're required to have a method of tracking bounces and complaints. If you haven't set up another mechanism for receiving bounce or complaint notifications, Amazon Pinpoint sends an email notification when these events occur (even if this setting is disabled).
     */
-  def putEmailIdentityFeedbackAttributes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putEmailIdentityFeedbackAttributes(): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityFeedbackAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEmailIdentityFeedbackAttributes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesResponse, 
+      /* data */ PutEmailIdentityFeedbackAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityFeedbackAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used to enable or disable feedback forwarding for an identity. This setting determines what happens when an identity is used to send an email that results in a bounce or complaint event. When you enable feedback forwarding, Amazon Pinpoint sends you email notifications when bounce or complaint events occur. Amazon Pinpoint sends this notification to the address that you specified in the Return-Path header of the original email. When you disable feedback forwarding, Amazon Pinpoint sends notifications through other mechanisms, such as by notifying an Amazon SNS topic. You're required to have a method of tracking bounces and complaints. If you haven't set up another mechanism for receiving bounce or complaint notifications, Amazon Pinpoint sends an email notification when these events occur (even if this setting is disabled).
     */
+  def putEmailIdentityFeedbackAttributes(params: PutEmailIdentityFeedbackAttributesRequest): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityFeedbackAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEmailIdentityFeedbackAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putEmailIdentityFeedbackAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesRequest,
+    params: PutEmailIdentityFeedbackAttributesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesResponse, 
+      /* data */ PutEmailIdentityFeedbackAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityFeedbackAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityFeedbackAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used to enable or disable the custom Mail-From domain configuration for an email identity.
     */
-  def putEmailIdentityMailFromAttributes(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putEmailIdentityMailFromAttributes(): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityMailFromAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEmailIdentityMailFromAttributes(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesResponse, 
+      /* data */ PutEmailIdentityMailFromAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityMailFromAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Used to enable or disable the custom Mail-From domain configuration for an email identity.
     */
+  def putEmailIdentityMailFromAttributes(params: PutEmailIdentityMailFromAttributesRequest): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityMailFromAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putEmailIdentityMailFromAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def putEmailIdentityMailFromAttributes(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesRequest,
+    params: PutEmailIdentityMailFromAttributesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesResponse, 
+      /* data */ PutEmailIdentityMailFromAttributesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutEmailIdentityMailFromAttributesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityMailFromAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sends an email message. You can use the Amazon Pinpoint Email API to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon Pinpoint assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.  
     */
-  def sendEmail(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendEmail(): awsDashSdkLib.libRequestMod.Request[SendEmailResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendEmail(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailResponse, 
+      /* data */ SendEmailResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendEmailResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sends an email message. You can use the Amazon Pinpoint Email API to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon Pinpoint assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.  
     */
-  def sendEmail(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def sendEmail(params: SendEmailRequest): awsDashSdkLib.libRequestMod.Request[SendEmailResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendEmail(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailRequest,
+    params: SendEmailRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailResponse, 
+      /* data */ SendEmailResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.SendEmailResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SendEmailResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Add one or more tags (keys and values) to one or more specified resources. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
-  def tagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceResponse, 
+      /* data */ TagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Add one or more tags (keys and values) to one or more specified resources. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
-  def tagResource(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceRequest,
+    params: TagResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceResponse, 
+      /* data */ TagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.TagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Remove one or more tags (keys and values) from a specified resource.
     */
-  def untagResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceResponse, 
+      /* data */ UntagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Remove one or more tags (keys and values) from a specified resource.
     */
-  def untagResource(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceRequest,
+    params: UntagResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceResponse, 
+      /* data */ UntagResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UntagResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update the configuration of an event destination for a configuration set. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
     */
-  def updateConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConfigurationSetEventDestination(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationResponse, 
+      /* data */ UpdateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Update the configuration of an event destination for a configuration set. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
     */
+  def updateConfigurationSetEventDestination(params: UpdateConfigurationSetEventDestinationRequest): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def updateConfigurationSetEventDestination(
-    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationRequest,
+    params: UpdateConfigurationSetEventDestinationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationResponse, 
+      /* data */ UpdateConfigurationSetEventDestinationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.UpdateConfigurationSetEventDestinationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

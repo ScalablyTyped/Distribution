@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object unifyMod extends js.Object {
   def apply(
-    emitter1: eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter,
-    emitter2: eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter
-  ): eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter = js.native
+    emitter1: eventDashEmitterLib.eventDashEmitterMod.Emitter,
+    emitter2: eventDashEmitterLib.eventDashEmitterMod.Emitter
+  ): eventDashEmitterLib.eventDashEmitterMod.Emitter = js.native
 }
 

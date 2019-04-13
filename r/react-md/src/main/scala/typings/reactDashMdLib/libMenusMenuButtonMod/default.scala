@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Menus/MenuButton", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[MenuButtonProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[MenuButtonProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: MenuButtonProps) = this()
   def this(props: MenuButtonProps, context: js.Any) = this()
 }

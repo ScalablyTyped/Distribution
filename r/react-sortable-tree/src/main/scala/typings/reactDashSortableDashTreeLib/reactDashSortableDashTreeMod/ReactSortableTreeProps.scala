@@ -52,7 +52,7 @@ object ReactSortableTreeProps {
     dndType: java.lang.String = null,
     generateNodeProps: /* data */ ExtendedNodeData => org.scalablytyped.runtime.StringDictionary[_] = null,
     getNodeKey: /* data */ TreeNode with TreeIndex => java.lang.String | scala.Double = null,
-    innerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerStyle: reactLib.reactMod.CSSProperties = null,
     isVirtualized: js.UndefOr[scala.Boolean] = js.undefined,
     maxDepth: scala.Int | scala.Double = null,
     nodeContentRenderer: NodeRenderer = null,
@@ -71,7 +71,7 @@ object ReactSortableTreeProps {
     searchQuery: java.lang.String | js.Any = null,
     shouldCopyOnOutsideDrop: scala.Boolean | (js.Function1[/* data */ ShouldCopyData, scala.Boolean]) = null,
     slideRegionSize: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ThemeProps = null
   ): ReactSortableTreeProps = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), treeData = treeData)

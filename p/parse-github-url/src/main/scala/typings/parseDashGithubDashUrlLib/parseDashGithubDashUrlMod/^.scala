@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("parse-github-url", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(url: java.lang.String): parseDashGithubDashUrlLib.parseDashGithubDashUrlMod.ghNs.Result | scala.Null = js.native
+  def apply(url: java.lang.String): Result | scala.Null = js.native
 }
 

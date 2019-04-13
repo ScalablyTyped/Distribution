@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RootContainerProps
-  extends reactLib.reactMod.ReactNs.Props[RootContainer] {
+  extends reactLib.reactMod.Props[RootContainer] {
   var Component: RelayContainerClass[_]
   var renderFailure: js.UndefOr[
     js.Function2[
@@ -25,9 +25,9 @@ object RootContainerProps {
   def apply(
     Component: RelayContainerClass[_],
     route: Route,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[RootContainer] = null,
+    children: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[RootContainer] = null,
     renderFailure: (/* error */ stdLib.Error, /* retry */ js.Function1[/* repeated */ js.Any, _]) => reactLib.reactMod.Global.JSXNs.Element = null,
     renderFetched: /* data */ js.Any => reactLib.reactMod.Global.JSXNs.Element = null,
     renderLoading: () => reactLib.reactMod.Global.JSXNs.Element = null

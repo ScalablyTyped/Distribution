@@ -12,8 +12,8 @@ trait Anon_AggregationChanged[TEntity] extends js.Object {
     * @param {aggregationChangedHandler} handler Callback method
     */
   def aggregationChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.aggregationChangedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.groupingNs.aggregationChangedHandler[TEntity]
   ): scala.Unit
   /**
     * raised whenever the grouped columns change
@@ -21,16 +21,16 @@ trait Anon_AggregationChanged[TEntity] extends js.Object {
     * @param {groupingChangedHandler} handler Callback method
     */
   def groupingChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.groupingChangedHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.groupingNs.groupingChangedHandler[TEntity]
   ): scala.Unit
 }
 
 object Anon_AggregationChanged {
   @scala.inline
   def apply[TEntity](
-    aggregationChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.aggregationChangedHandler[TEntity]) => scala.Unit,
-    groupingChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.groupingNs.groupingChangedHandler[TEntity]) => scala.Unit
+    aggregationChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.groupingNs.aggregationChangedHandler[TEntity]) => scala.Unit,
+    groupingChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.groupingNs.groupingChangedHandler[TEntity]) => scala.Unit
   ): Anon_AggregationChanged[TEntity] = {
     val __obj = js.Dynamic.literal(aggregationChanged = js.Any.fromFunction2(aggregationChanged), groupingChanged = js.Any.fromFunction2(groupingChanged))
   

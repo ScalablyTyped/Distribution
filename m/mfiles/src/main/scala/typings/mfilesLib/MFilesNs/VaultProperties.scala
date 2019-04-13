@@ -35,3 +35,8 @@ class VaultProperties ()
   override def Clone(): mfilesLib.IVaultProperties = js.native
 }
 
+@JSGlobal("MFiles.VaultProperties")
+@js.native
+object VaultProperties
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultProperties]
+

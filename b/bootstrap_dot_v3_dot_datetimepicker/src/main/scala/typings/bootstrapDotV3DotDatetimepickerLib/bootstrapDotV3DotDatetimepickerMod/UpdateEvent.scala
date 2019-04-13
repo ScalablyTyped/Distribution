@@ -11,6 +11,6 @@ trait UpdateEvent
   /** Change type as a momentjs format token. e.g. yyyy on year change */
   var change: java.lang.String = js.native
   /** New viewDate. */
-  var viewDate: momentLib.momentMod.momentNs.Moment = js.native
+  var viewDate: momentLib.momentMod.Moment = js.native
 }
 

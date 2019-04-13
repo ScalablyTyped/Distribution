@@ -30,7 +30,7 @@ class ObservableMap[K, V] ()
     js.Array[mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[IMapWillChange[K, V]]]
   ] = js.native
   var name: java.lang.String = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   var toStringTag_ObservableMap: mobxLib.mobxLibStrings.Map = js.native
   def enhancer(newValue: V, oldValue: V, name: java.lang.String): V = js.native
   def enhancer(newValue: V, oldValue: js.UndefOr[scala.Nothing], name: java.lang.String): V = js.native

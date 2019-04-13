@@ -11,7 +11,7 @@ object reactDashDraggableDashListLibComponents {
     stdLib.Partial[reactDashDraggableDashListLib.reactDashDraggableDashListMod.TemplateProps[I, C]], 
     js.Object, 
     _
-  ] */]: reactLib.reactMod.ReactNs.ComponentType[reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]] = js.constructorOf[reactDashDraggableDashListLib.reactDashDraggableDashListMod.default[I, C, T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]]]
+  ] */]: reactLib.reactMod.ComponentType[reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]] = js.constructorOf[reactDashDraggableDashListLib.reactDashDraggableDashListMod.default[I, C, T]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]]]
   @scala.inline
   def Props: reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props.type = reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props
   type Props[I, C, T] = reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]

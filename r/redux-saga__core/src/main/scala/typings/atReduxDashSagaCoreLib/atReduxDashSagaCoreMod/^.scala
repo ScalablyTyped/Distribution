@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val CANCEL: java.lang.String = js.native
   val END: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.END = js.native
-  val buffers: atReduxDashSagaCoreLib.Anon_Dropping = js.native
   def channel[T](): atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Channel[T] = js.native
   def channel[T](buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[T]): atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Channel[T] = js.native
   def default[C /* <: js.Object */](): SagaMiddleware[C] = js.native

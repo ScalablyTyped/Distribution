@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("formik", "Form")
 @js.native
 class Form protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       stdLib.Pick[
-        reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement], 
+        reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement], 
         /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
       ], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: stdLib.Pick[
-      reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement], 
+      reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement], 
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
     ]) = this()
   def this(props: stdLib.Pick[
-      reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement], 
+      reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement], 
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
     ], context: js.Any) = this()
 }

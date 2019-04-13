@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Tabs")
 @js.native
 class Tabs ()
-  extends reactDashBootstrapLib.libTabsMod.namespaced
+  extends reactDashBootstrapLib.libTabsMod.^
 

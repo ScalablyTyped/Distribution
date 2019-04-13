@@ -31,7 +31,7 @@ class FaceAPI () extends js.Object {
     * @param  {boolean} options.analyzesHeadPose       - Analyze headpose?
     * @return {Promise}                                - Promise resolving with the resulting JSON
     */
-  def detect(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Detect): bluebirdLib.bluebirdMod.namespaced[js.Array[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Detect]] = js.native
+  def detect(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Detect): bluebirdLib.bluebirdMod.^[js.Array[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Detect]] = js.native
   /**
     * Divides candidate faces into groups based on face similarity using faceIds.
     * The output is one or more disjointed face groups and a MessyGroup.
@@ -46,7 +46,7 @@ class FaceAPI () extends js.Object {
     * @param  {string[]} faces     - Array of faceIds to use
     * @return {Promise}            - Promise resolving with the resulting JSON
     */
-  def grouping(faces: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Grouping] = js.native
+  def grouping(faces: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Grouping] = js.native
   /**
     * Identifies persons from a person group by one or more input faces.
     * To recognize which person a face belongs to, Face Identification needs a person group
@@ -61,14 +61,14 @@ class FaceAPI () extends js.Object {
   def identify(
     faceIDs: js.Array[java.lang.String],
     options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Identify
-  ): bluebirdLib.bluebirdMod.namespaced[js.Array[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Identify]] = js.native
+  ): bluebirdLib.bluebirdMod.^[js.Array[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Identify]] = js.native
   /**
     * Detect similar faces using faceIds (as returned from the detect API)
     * @param  {string} sourceFace          - String of faceId for the source face
     * @param  {string[]} candidateFaces    - Array of faceIds to use as candidates
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def similar(sourceFaceId: java.lang.String, candidateFacesIds: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Similar] = js.native
+  def similar(sourceFaceId: java.lang.String, candidateFacesIds: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Similar] = js.native
   /**
     * Analyzes two faces and determine whether they are from the same person.
     * Verification works well for frontal and near-frontal faces.
@@ -76,6 +76,6 @@ class FaceAPI () extends js.Object {
     * @param  {string[]} faces     - Array containing two faceIds to use
     * @return {Promise}            - Promise resolving with the resulting JSON
     */
-  def verify(faces: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Verify] = js.native
+  def verify(faces: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.FaceResponsesNs.Verify] = js.native
 }
 

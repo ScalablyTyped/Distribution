@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 object charmLibStrings {
   @js.native
   sealed trait black
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @js.native
   sealed trait blink extends js.Object
   
   @js.native
   sealed trait blue
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @js.native
   sealed trait bright extends js.Object
@@ -25,7 +25,7 @@ object charmLibStrings {
   
   @js.native
   sealed trait cyan
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @js.native
   sealed trait dim extends js.Object
@@ -38,7 +38,7 @@ object charmLibStrings {
   
   @js.native
   sealed trait green
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @js.native
   sealed trait hidden extends js.Object
@@ -48,11 +48,11 @@ object charmLibStrings {
   
   @js.native
   sealed trait magenta
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @js.native
   sealed trait red
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @js.native
   sealed trait reset extends js.Object
@@ -74,11 +74,11 @@ object charmLibStrings {
   
   @js.native
   sealed trait white
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @js.native
   sealed trait yellow
-    extends charmLib.charmMod.charmNs.CharmColorName
+    extends charmLib.charmMod.CharmColorName
   
   @scala.inline
   def black: black = "black".asInstanceOf[black]

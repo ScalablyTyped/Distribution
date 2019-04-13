@@ -13,6 +13,6 @@ object ^ extends js.Object {
     * @param gpio      an unsigned integer specifying the GPIO number
     * @param type      11 to initialize for reading a DHT11, 22 for DHT22/AM2302
     */
-  def apply(gpio: scala.Double, `type`: scala.Double): pigpioDashDhtLib.pigpioDashDhtMod.dhtNs.Dht = js.native
+  def apply(gpio: scala.Double, `type`: scala.Double): Dht = js.native
 }
 

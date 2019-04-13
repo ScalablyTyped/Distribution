@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 object reactDashDatesLibNumbers {
   @js.native
   sealed trait `0`
-    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DayOfWeekShape
+    extends reactDashDatesLib.reactDashDatesMod.DayOfWeekShape
   
   @js.native
   sealed trait `1`
-    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DayOfWeekShape
+    extends reactDashDatesLib.reactDashDatesMod.DayOfWeekShape
   
   @js.native
   sealed trait `2`
-    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DayOfWeekShape
+    extends reactDashDatesLib.reactDashDatesMod.DayOfWeekShape
   
   @js.native
   sealed trait `3`
-    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DayOfWeekShape
+    extends reactDashDatesLib.reactDashDatesMod.DayOfWeekShape
   
   @js.native
   sealed trait `4`
-    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DayOfWeekShape
+    extends reactDashDatesLib.reactDashDatesMod.DayOfWeekShape
   
   @js.native
   sealed trait `5`
-    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DayOfWeekShape
+    extends reactDashDatesLib.reactDashDatesMod.DayOfWeekShape
   
   @js.native
   sealed trait `6`
-    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.DayOfWeekShape
+    extends reactDashDatesLib.reactDashDatesMod.DayOfWeekShape
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

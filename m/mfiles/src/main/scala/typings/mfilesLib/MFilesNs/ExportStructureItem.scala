@@ -19,3 +19,8 @@ class ExportStructureItem ()
   override def Clone(): mfilesLib.IExportStructureItem = js.native
 }
 
+@JSGlobal("MFiles.ExportStructureItem")
+@js.native
+object ExportStructureItem
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IExportStructureItem]
+

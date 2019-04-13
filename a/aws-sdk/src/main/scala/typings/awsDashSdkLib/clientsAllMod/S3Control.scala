@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class S3Control ()
-  extends awsDashSdkLib.clientsS3controlMod.namespaced {
-  def this(options: awsDashSdkLib.clientsS3controlMod.S3ControlNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsS3controlMod.^ {
+  def this(options: awsDashSdkLib.clientsS3controlMod.ClientConfiguration) = this()
 }
 

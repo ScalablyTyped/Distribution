@@ -11,11 +11,11 @@ trait IdyllDocumentProps extends js.Object {
     * If provided, this will be used insteaed of
     * the markup
     */
-  var ast: js.UndefOr[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST] = js.undefined
+  var ast: js.UndefOr[idyllDashCompilerLib.idyllDashCompilerMod.AST] = js.undefined
   /**
     * Compiler option for Idyll compiler when compiling markup
     */
-  var compilerOptions: js.UndefOr[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Options] = js.undefined
+  var compilerOptions: js.UndefOr[idyllDashCompilerLib.idyllDashCompilerMod.Options] = js.undefined
   /**
     * Components to be rendered with
     */
@@ -28,7 +28,7 @@ trait IdyllDocumentProps extends js.Object {
   /**
     * The React component rendered when an error occurs
     */
-  var errorComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[idyllDashDocumentLib.Anon_Children]] = js.undefined
+  var errorComponent: js.UndefOr[reactLib.reactMod.ReactType[idyllDashDocumentLib.Anon_Children]] = js.undefined
   var initialState: js.UndefOr[js.Any] = js.undefined
   /**
     * The layout for idyll document
@@ -54,11 +54,11 @@ object IdyllDocumentProps {
   @scala.inline
   def apply(
     components: js.Any,
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = null,
-    compilerOptions: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Options = null,
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST = null,
+    compilerOptions: idyllDashCompilerLib.idyllDashCompilerMod.Options = null,
     context: /* context */ js.Any => scala.Unit = null,
     datasets: js.Object = null,
-    errorComponent: reactLib.reactMod.ReactNs.ReactType[idyllDashDocumentLib.Anon_Children] = null,
+    errorComponent: reactLib.reactMod.ReactType[idyllDashDocumentLib.Anon_Children] = null,
     initialState: js.Any = null,
     layout: java.lang.String = null,
     markup: java.lang.String = null,

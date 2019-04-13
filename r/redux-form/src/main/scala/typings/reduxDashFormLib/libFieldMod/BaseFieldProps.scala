@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof redux-form.redux-form/lib/Field.CommonFieldProps ]:? redux-form.redux-form/lib/Field.CommonFieldProps[P]} */ trait BaseFieldProps[P] extends js.Object {
   var component: js.UndefOr[
-    (reactLib.reactMod.ReactNs.ComponentType[WrappedFieldProps with P]) | reduxDashFormLib.reduxDashFormLibStrings.input | reduxDashFormLib.reduxDashFormLibStrings.select | reduxDashFormLib.reduxDashFormLibStrings.textarea
+    (reactLib.reactMod.ComponentType[WrappedFieldProps with P]) | reduxDashFormLib.reduxDashFormLibStrings.input | reduxDashFormLib.reduxDashFormLibStrings.select | reduxDashFormLib.reduxDashFormLibStrings.textarea
   ] = js.undefined
   var format: js.UndefOr[Formatter | scala.Null] = js.undefined
   var forwardRef: js.UndefOr[scala.Boolean] = js.undefined
@@ -25,7 +25,7 @@ object BaseFieldProps {
   @scala.inline
   def apply[P](
     name: java.lang.String,
-    component: (reactLib.reactMod.ReactNs.ComponentType[WrappedFieldProps with P]) | reduxDashFormLib.reduxDashFormLibStrings.input | reduxDashFormLib.reduxDashFormLibStrings.select | reduxDashFormLib.reduxDashFormLibStrings.textarea = null,
+    component: (reactLib.reactMod.ComponentType[WrappedFieldProps with P]) | reduxDashFormLib.reduxDashFormLibStrings.input | reduxDashFormLib.reduxDashFormLibStrings.select | reduxDashFormLib.reduxDashFormLibStrings.textarea = null,
     format: Formatter = null,
     forwardRef: js.UndefOr[scala.Boolean] = js.undefined,
     immutableProps: js.Array[java.lang.String] = null,

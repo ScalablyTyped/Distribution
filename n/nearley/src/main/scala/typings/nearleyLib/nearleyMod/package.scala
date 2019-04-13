@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nearleyMod {
+  type LexerState = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Postprocessor = js.Function3[
     /* data */ js.Array[js.Any], 
     /* reference */ scala.Double, 

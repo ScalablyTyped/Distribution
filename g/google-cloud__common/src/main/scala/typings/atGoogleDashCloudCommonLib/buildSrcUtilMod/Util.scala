@@ -26,11 +26,11 @@ class Util () extends js.Object {
     */
   def getUserAgentFromPackageJson(packageJson: PackageJson): java.lang.String = js.native
   def handleResp(): scala.Unit = js.native
-  def handleResp(err: scala.Null, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
-  def handleResp(err: scala.Null, resp: requestLib.requestMod.requestNs.Response, body: ResponseBody): scala.Unit = js.native
+  def handleResp(err: scala.Null, resp: requestLib.requestMod.Response): scala.Unit = js.native
+  def handleResp(err: scala.Null, resp: requestLib.requestMod.Response, body: ResponseBody): scala.Unit = js.native
   def handleResp(
     err: scala.Null,
-    resp: requestLib.requestMod.requestNs.Response,
+    resp: requestLib.requestMod.Response,
     body: ResponseBody,
     callback: BodyResponseCallback
   ): scala.Unit = js.native
@@ -45,11 +45,11 @@ class Util () extends js.Object {
     * @param {function} callback - The callback function.
     */
   def handleResp(err: stdLib.Error): scala.Unit = js.native
-  def handleResp(err: stdLib.Error, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
-  def handleResp(err: stdLib.Error, resp: requestLib.requestMod.requestNs.Response, body: ResponseBody): scala.Unit = js.native
+  def handleResp(err: stdLib.Error, resp: requestLib.requestMod.Response): scala.Unit = js.native
+  def handleResp(err: stdLib.Error, resp: requestLib.requestMod.Response, body: ResponseBody): scala.Unit = js.native
   def handleResp(
     err: stdLib.Error,
-    resp: requestLib.requestMod.requestNs.Response,
+    resp: requestLib.requestMod.Response,
     body: ResponseBody,
     callback: BodyResponseCallback
   ): scala.Unit = js.native
@@ -142,7 +142,7 @@ class Util () extends js.Object {
     * @param {?error} parsedHttpRespMessage.err - An error detected.
     * @param {object} parsedHttpRespMessage.resp - The original response object.
     */
-  def parseHttpRespMessage(httpRespMessage: requestLib.requestMod.requestNs.Response): ParsedHttpRespMessage = js.native
+  def parseHttpRespMessage(httpRespMessage: requestLib.requestMod.Response): ParsedHttpRespMessage = js.native
   /**
     * Returns true if the API request should be retried, given the error that was
     * given the first time the request was attempted. This is used for rate limit

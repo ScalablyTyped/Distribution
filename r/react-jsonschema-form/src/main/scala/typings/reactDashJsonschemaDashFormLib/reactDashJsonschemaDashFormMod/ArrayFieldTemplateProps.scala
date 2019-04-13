@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayFieldTemplateProps extends js.Object {
-  var DescriptionField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description]
-  var TitleField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id]
+  var DescriptionField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description]
+  var TitleField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id]
   var canAdd: scala.Boolean
   var className: java.lang.String
   var disabled: scala.Boolean
@@ -26,8 +26,8 @@ trait ArrayFieldTemplateProps extends js.Object {
 object ArrayFieldTemplateProps {
   @scala.inline
   def apply(
-    DescriptionField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description],
-    TitleField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id],
+    DescriptionField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description],
+    TitleField: reactLib.reactMod.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id],
     canAdd: scala.Boolean,
     className: java.lang.String,
     disabled: scala.Boolean,

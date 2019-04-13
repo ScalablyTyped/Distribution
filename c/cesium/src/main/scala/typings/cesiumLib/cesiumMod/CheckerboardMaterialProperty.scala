@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "CheckerboardMaterialProperty")
 @js.native
-class CheckerboardMaterialProperty ()
-  extends cesiumLib.cesiumMod.CesiumNs.CheckerboardMaterialProperty {
+class CheckerboardMaterialProperty () extends MaterialProperty {
   def this(options: cesiumLib.Anon_EvenColor) = this()
+  var evenColor: Color = js.native
+  var oddColor: Color = js.native
+  var repeat: Property = js.native
 }
 

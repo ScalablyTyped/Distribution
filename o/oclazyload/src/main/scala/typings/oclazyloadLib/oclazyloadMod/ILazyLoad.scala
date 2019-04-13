@@ -20,8 +20,8 @@ trait ILazyLoad extends js.Object {
     * Injects a module with the associated name into Angular. Useful for manual injection when loading through RequireJS, SystemJS, etc. Useful in
     * conjunction with the toggleWatch() method.
     */
-  def inject(moduleName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def inject(moduleName: js.Array[java.lang.String]): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def inject(moduleName: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def inject(moduleName: js.Array[java.lang.String]): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Checks if a module name, or list of modules names, has been previously loaded into Angular.
     */
@@ -33,14 +33,14 @@ trait ILazyLoad extends js.Object {
     * @param module The name of a predefined module config object, or a module config object, or an array of either
     * @param config Options to be used when loading the modules
     */
-  def load(module: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def load(module: java.lang.String, config: IOptionsConfig): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def load(module: js.Array[java.lang.String | ITypedModuleConfig | IModuleConfig]): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def load(module: js.Array[java.lang.String | ITypedModuleConfig | IModuleConfig], config: IOptionsConfig): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def load(module: IModuleConfig): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def load(module: IModuleConfig, config: IOptionsConfig): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def load(module: ITypedModuleConfig): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def load(module: ITypedModuleConfig, config: IOptionsConfig): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def load(module: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def load(module: java.lang.String, config: IOptionsConfig): angularLib.angularMod.IPromise[_] = js.native
+  def load(module: js.Array[java.lang.String | ITypedModuleConfig | IModuleConfig]): angularLib.angularMod.IPromise[_] = js.native
+  def load(module: js.Array[java.lang.String | ITypedModuleConfig | IModuleConfig], config: IOptionsConfig): angularLib.angularMod.IPromise[_] = js.native
+  def load(module: IModuleConfig): angularLib.angularMod.IPromise[_] = js.native
+  def load(module: IModuleConfig, config: IOptionsConfig): angularLib.angularMod.IPromise[_] = js.native
+  def load(module: ITypedModuleConfig): angularLib.angularMod.IPromise[_] = js.native
+  def load(module: ITypedModuleConfig, config: IOptionsConfig): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Defines a module config object.
     * @param config The module config object

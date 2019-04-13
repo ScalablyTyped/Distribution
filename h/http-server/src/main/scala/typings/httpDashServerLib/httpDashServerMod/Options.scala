@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var autoIndex: js.UndefOr[scala.Boolean | httpDashServerLib.httpDashServerLibStrings.`false`] = js.undefined
-  var before: js.UndefOr[js.Array[connectLib.connectMod.createServerNs.HandleFunction]] = js.undefined
+  var before: js.UndefOr[js.Array[connectLib.connectMod.HandleFunction]] = js.undefined
   var cache: js.UndefOr[scala.Double] = js.undefined
   var contentType: js.UndefOr[java.lang.String] = js.undefined
   var cors: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,7 +36,7 @@ object Options {
   @scala.inline
   def apply(
     autoIndex: scala.Boolean | httpDashServerLib.httpDashServerLibStrings.`false` = null,
-    before: js.Array[connectLib.connectMod.createServerNs.HandleFunction] = null,
+    before: js.Array[connectLib.connectMod.HandleFunction] = null,
     cache: scala.Int | scala.Double = null,
     contentType: java.lang.String = null,
     cors: js.UndefOr[scala.Boolean] = js.undefined,

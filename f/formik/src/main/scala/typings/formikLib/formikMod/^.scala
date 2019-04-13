@@ -8,23 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("formik", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ErrorMessage: reactLib.reactMod.ReactNs.ComponentType[formikLib.distErrorMessageMod.ErrorMessageProps] = js.native
-  val FastField: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.native
-  val Field: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.native
-  val FieldArray: reactLib.reactMod.ReactNs.ComponentType[formikLib.distFieldArrayMod.FieldArrayConfig] = js.native
-  val Form: reactLib.reactMod.ReactNs.ComponentType[
+  val ErrorMessage: reactLib.reactMod.ComponentType[formikLib.distErrorMessageMod.ErrorMessageProps] = js.native
+  val FastField: reactLib.reactMod.ComponentType[js.Any] = js.native
+  val Field: reactLib.reactMod.ComponentType[js.Any] = js.native
+  val FieldArray: reactLib.reactMod.ComponentType[formikLib.distFieldArrayMod.FieldArrayConfig] = js.native
+  val Form: reactLib.reactMod.ComponentType[
     stdLib.Pick[
-      reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement], 
+      reactLib.reactMod.FormHTMLAttributes[stdLib.HTMLFormElement], 
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
     ]
   ] = js.native
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(FormikConsumer) */ val FormikProvider: reactLib.reactMod.ReactNs.ComponentClass[
+  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(FormikConsumer) */ val FormikProvider: reactLib.reactMod.ComponentClass[
     createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]], 
     js.Any
   ] = js.native
-  def connect[OuterProps, Values](
-    Comp: reactLib.reactMod.ReactNs.ComponentType[OuterProps with formikLib.Anon_FormikFormikContext[Values]]
-  ): reactLib.reactMod.ReactNs.ComponentType[OuterProps] = js.native
+  def connect[OuterProps, Values](Comp: reactLib.reactMod.ComponentType[OuterProps with formikLib.Anon_FormikFormikContext[Values]]): reactLib.reactMod.ComponentType[OuterProps] = js.native
   def getActiveElement(): stdLib.Element | scala.Null = js.native
   def getActiveElement(doc: stdLib.Document): stdLib.Element | scala.Null = js.native
   def getIn(obj: js.Any, key: java.lang.String): js.Any = js.native
@@ -36,7 +34,7 @@ object ^ extends js.Object {
   def insert(array: js.Array[_], index: scala.Double, value: js.Any): js.Array[_] = js.native
   def isEmptyChildren(children: js.Any): scala.Boolean = js.native
   def isFunction(obj: js.Any): /* is std.Function */ scala.Boolean = js.native
-  def isInputEvent(value: js.Any): /* is react.react.React.SyntheticEvent<any, react.Event> */ scala.Boolean = js.native
+  def isInputEvent(value: js.Any): /* is react.react.SyntheticEvent<any, react.Event> */ scala.Boolean = js.native
   def isInteger(obj: js.Any): scala.Boolean = js.native
   def isNaN(obj: js.Any): scala.Boolean = js.native
   def isObject(obj: js.Any): scala.Boolean = js.native

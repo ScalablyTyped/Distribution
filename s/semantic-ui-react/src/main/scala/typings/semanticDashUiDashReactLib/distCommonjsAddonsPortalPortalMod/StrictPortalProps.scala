@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StrictPortalProps extends js.Object {
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Controls whether or not the portal should close on a click outside. */
   var closeOnDocumentClick: js.UndefOr[scala.Boolean] = js.undefined
   /** Controls whether or not the portal should close when escape is pressed is displayed. */
@@ -42,7 +42,7 @@ trait StrictPortalProps extends js.Object {
     */
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PortalProps, 
       scala.Unit
     ]
@@ -62,7 +62,7 @@ trait StrictPortalProps extends js.Object {
     */
   var onOpen: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PortalProps, 
       scala.Unit
     ]
@@ -83,15 +83,15 @@ trait StrictPortalProps extends js.Object {
   /** Controls whether or not the portal should open when mousing over the trigger. */
   var openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined
   /** Element to be rendered in-place where the portal is defined. */
-  var trigger: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var trigger: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Called with a ref to the trigger node. */
-  var triggerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
+  var triggerRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
 }
 
 object StrictPortalProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     closeOnDocumentClick: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnPortalMouseLeave: js.UndefOr[scala.Boolean] = js.undefined,
@@ -103,16 +103,16 @@ object StrictPortalProps {
     mountNode: js.Any = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onClose: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
+    onClose: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
     onMount: (/* nothing */ scala.Null, /* data */ PortalProps) => scala.Unit = null,
-    onOpen: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
     onUnmount: (/* nothing */ scala.Null, /* data */ PortalProps) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined,
-    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null
+    trigger: reactLib.reactMod.ReactNode = null,
+    triggerRef: reactLib.reactMod.Ref[_] = null
   ): StrictPortalProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

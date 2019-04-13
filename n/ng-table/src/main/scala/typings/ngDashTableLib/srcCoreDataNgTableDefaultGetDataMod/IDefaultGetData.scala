@@ -22,7 +22,7 @@ trait IDefaultGetData[T] extends js.Object {
   /**
     * Returns a reference to the function that this service will use to sort data rows
     */
-  def getOrderByFn(): angularLib.angularMod.angularNs.IFilterOrderBy = js.native
-  def getOrderByFn(params: ngDashTableLib.srcCoreNgTableParamsMod.NgTableParams[T]): angularLib.angularMod.angularNs.IFilterOrderBy = js.native
+  def getOrderByFn(): angularLib.angularMod.IFilterOrderBy = js.native
+  def getOrderByFn(params: ngDashTableLib.srcCoreNgTableParamsMod.NgTableParams[T]): angularLib.angularMod.IFilterOrderBy = js.native
 }
 

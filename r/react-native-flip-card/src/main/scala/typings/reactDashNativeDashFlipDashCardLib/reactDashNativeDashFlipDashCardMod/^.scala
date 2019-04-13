@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-flip-card", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Back: reactLib.reactMod.ReactNs.ComponentClass[BackProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val Face: reactLib.reactMod.ReactNs.ComponentClass[FaceProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val Back: reactLib.reactMod.ComponentClass[BackProps, reactLib.reactMod.ComponentState] = js.native
+  val Face: reactLib.reactMod.ComponentClass[FaceProps, reactLib.reactMod.ComponentState] = js.native
 }
 

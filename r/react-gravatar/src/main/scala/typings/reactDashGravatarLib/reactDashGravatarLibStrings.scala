@@ -8,47 +8,47 @@ import scala.scalajs.js.annotation._
 object reactDashGravatarLibStrings {
   @js.native
   sealed trait `404`
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
+    extends reactDashGravatarLib.reactDashGravatarMod.DefaultImage
   
   @js.native
   sealed trait blank
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
+    extends reactDashGravatarLib.reactDashGravatarMod.DefaultImage
   
   @js.native
   sealed trait g
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
+    extends reactDashGravatarLib.reactDashGravatarMod.Rating
   
   @js.native
   sealed trait identicon
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
+    extends reactDashGravatarLib.reactDashGravatarMod.DefaultImage
   
   @js.native
   sealed trait mm
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
+    extends reactDashGravatarLib.reactDashGravatarMod.DefaultImage
   
   @js.native
   sealed trait monsterid
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
+    extends reactDashGravatarLib.reactDashGravatarMod.DefaultImage
   
   @js.native
   sealed trait pg
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
+    extends reactDashGravatarLib.reactDashGravatarMod.Rating
   
   @js.native
   sealed trait r
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
+    extends reactDashGravatarLib.reactDashGravatarMod.Rating
   
   @js.native
   sealed trait retro
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
+    extends reactDashGravatarLib.reactDashGravatarMod.DefaultImage
   
   @js.native
   sealed trait wavatar
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
+    extends reactDashGravatarLib.reactDashGravatarMod.DefaultImage
   
   @js.native
   sealed trait x
-    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
+    extends reactDashGravatarLib.reactDashGravatarMod.Rating
   
   @scala.inline
   def `404`: `404` = "404".asInstanceOf[`404`]

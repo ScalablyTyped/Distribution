@@ -21,3 +21,8 @@ class ObjectFileAndObjVerOfMultipleFiles ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ObjectFileAndObjVerOfMultipleFiles")
+@js.native
+object ObjectFileAndObjVerOfMultipleFiles
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectFileAndObjVerOfMultipleFiles]
+

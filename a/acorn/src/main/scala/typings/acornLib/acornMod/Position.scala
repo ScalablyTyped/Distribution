@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("acorn", "Position")
 @js.native
 class Position protected ()
-  extends acornLib.acornMod.acornNs.Position {
+  extends estreeLib.estreeMod.Position {
   def this(line: scala.Double, col: scala.Double) = this()
   /** >= 0 */
   /* CompleteClass */
@@ -16,7 +16,6 @@ class Position protected ()
   /** >= 1 */
   /* CompleteClass */
   override var line: scala.Double = js.native
-  /* CompleteClass */
-  override def offset(n: scala.Double): acornLib.acornMod.acornNs.Position = js.native
+  def offset(n: scala.Double): Position = js.native
 }
 

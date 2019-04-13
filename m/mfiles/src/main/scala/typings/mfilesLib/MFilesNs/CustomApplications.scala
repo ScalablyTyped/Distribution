@@ -17,3 +17,8 @@ class CustomApplications ()
   override def Item(Index: scala.Double): mfilesLib.ICustomApplication = js.native
 }
 
+@JSGlobal("MFiles.CustomApplications")
+@js.native
+object CustomApplications
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ICustomApplications]
+

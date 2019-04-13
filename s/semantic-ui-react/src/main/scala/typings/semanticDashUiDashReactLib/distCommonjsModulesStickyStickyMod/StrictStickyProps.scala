@@ -13,11 +13,11 @@ trait StrictStickyProps extends js.Object {
   /** Offset in pixels from the bottom of the screen when fixing element to viewport. */
   var bottomOffset: js.UndefOr[scala.Double] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Context which sticky element should stick to. */
-  var context: js.UndefOr[js.Object | reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement]] = js.undefined
+  var context: js.UndefOr[js.Object | reactLib.reactMod.Ref[stdLib.HTMLElement]] = js.undefined
   /** Offset in pixels from the top of the screen when fixing element to viewport. */
   var offset: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onBottom: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -41,7 +41,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onStick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -54,7 +54,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onTop: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -67,7 +67,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onUnstick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -75,7 +75,7 @@ trait StrictStickyProps extends js.Object {
   /** Whether element should be "pushed" by the viewport, attaching to the bottom of the screen when scrolling up. */
   var pushing: js.UndefOr[scala.Boolean] = js.undefined
   /** Context which sticky should attach onscroll events. */
-  var scrollContext: js.UndefOr[js.Object | reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement]] = js.undefined
+  var scrollContext: js.UndefOr[js.Object | reactLib.reactMod.Ref[stdLib.HTMLElement]] = js.undefined
   /** Custom style for sticky element. */
   var styleElement: js.UndefOr[js.Object] = js.undefined
 }
@@ -86,16 +86,16 @@ object StrictStickyProps {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
     bottomOffset: scala.Int | scala.Double = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    context: js.Object | reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement] = null,
+    context: js.Object | reactLib.reactMod.Ref[stdLib.HTMLElement] = null,
     offset: scala.Int | scala.Double = null,
-    onBottom: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
-    onStick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
-    onTop: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
-    onUnstick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onBottom: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onStick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onTop: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onUnstick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
     pushing: js.UndefOr[scala.Boolean] = js.undefined,
-    scrollContext: js.Object | reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement] = null,
+    scrollContext: js.Object | reactLib.reactMod.Ref[stdLib.HTMLElement] = null,
     styleElement: js.Object = null
   ): StrictStickyProps = {
     val __obj = js.Dynamic.literal()

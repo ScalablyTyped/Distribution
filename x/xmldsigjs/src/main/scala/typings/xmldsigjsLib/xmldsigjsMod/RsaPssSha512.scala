@@ -7,14 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "RsaPssSha512")
 @js.native
-class RsaPssSha512 ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.RsaPssSha512 {
+class RsaPssSha512 () extends RsaPssBase {
   def this(saltLength: scala.Double) = this()
-  /* CompleteClass */
-  override var algorithm: stdLib.Algorithm = js.native
-  /* CompleteClass */
-  override var namespaceURI: java.lang.String = js.native
-  /* CompleteClass */
-  override def getAlgorithmName(): java.lang.String = js.native
 }
 

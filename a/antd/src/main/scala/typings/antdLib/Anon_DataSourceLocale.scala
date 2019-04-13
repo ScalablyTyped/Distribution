@@ -11,6 +11,6 @@ trait Anon_DataSourceLocale extends js.Object {
   @JSName("render")
   var render_Original: antdLib.libTransferMod.TransferRender = js.native
   var showSearch: scala.Boolean = js.native
-  def render(record: antdLib.libTransferMod.TransferItem): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def render(record: antdLib.libTransferMod.TransferItem): reactLib.reactMod.ReactNode = js.native
 }
 

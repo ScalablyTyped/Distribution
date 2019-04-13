@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IObservableArray[T]
-  extends IObservable
-     with stdLib.Array[T] {
+  extends stdLib.Array[T]
+     with IObservable {
   def clear(): js.Array[T] = js.native
   def find(
     predicate: js.Function3[/* item */ T, /* index */ scala.Double, /* array */ IObservableArray[T], scala.Boolean],

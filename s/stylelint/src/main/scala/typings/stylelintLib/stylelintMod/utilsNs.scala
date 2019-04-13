@@ -15,7 +15,7 @@ object utilsNs extends js.Object {
   def report(violation: stylelintLib.Anon_Index): scala.Unit = js.native
   def ruleMessages[T /* <: org.scalablytyped.runtime.StringDictionary[stylelintLib.stylelintMod.RuleMessageValue] */](ruleName: java.lang.String, messages: T): T = js.native
   def validateOptions(
-    result: postcssLib.postcssMod.postcssNs.Result,
+    result: postcssLib.postcssMod.Result,
     ruleName: java.lang.String,
     options: stylelintLib.stylelintMod.ValidateOptionsAssertion*
   ): scala.Boolean = js.native

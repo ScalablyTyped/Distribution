@@ -16,6 +16,6 @@ class Collapse ()
   // get transition styles
   def getTransition(state: TransitionState): js.Any = js.native
   // width must be calculated; cannot transition from `undefined` to `number`
-  def getWidth(ref: reactLib.reactMod.ReactNs.Ref[_]): scala.Unit = js.native
+  def getWidth(ref: reactLib.reactMod.Ref[_]): scala.Unit = js.native
 }
 

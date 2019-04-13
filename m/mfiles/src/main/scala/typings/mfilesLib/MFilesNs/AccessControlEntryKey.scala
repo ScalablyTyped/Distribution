@@ -29,3 +29,8 @@ class AccessControlEntryKey ()
   override def SetUserOrGroupID(UserOrGroupID: scala.Double, IsGroup: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.AccessControlEntryKey")
+@js.native
+object AccessControlEntryKey
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAccessControlEntryKey]
+

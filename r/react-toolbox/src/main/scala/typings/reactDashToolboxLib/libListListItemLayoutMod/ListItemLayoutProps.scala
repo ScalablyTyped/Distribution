@@ -10,7 +10,7 @@ trait ListItemLayoutProps
   /**
     * A string URL to specify an avatar in the left side of the item.
     */
-  var avatar: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var avatar: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * Main text of the item.
     */
@@ -18,7 +18,7 @@ trait ListItemLayoutProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the item is displayed as disabled and it's not clickable.
     * @default false
@@ -27,15 +27,15 @@ trait ListItemLayoutProps
   /**
     * Layout content.
     */
-  var itemContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactChild] = js.undefined
+  var itemContent: js.UndefOr[reactLib.reactMod.ReactChild] = js.undefined
   /**
     * A list of elements that are placed on the left side of the item and after the avatar attribute.
     */
-  var leftActions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var leftActions: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   /**
     * A string key of a font icon or element to display an icon in the left side of the item.
     */
-  var leftIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var leftIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * Secondary text to display under the caption.
     */
@@ -43,11 +43,11 @@ trait ListItemLayoutProps
   /**
     * A list of elements that are placed on the right side of the item and after the rightIcon attribute.
     */
-  var rightActions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var rightActions: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   /**
     * The same as the leftIcon but in this case the icon is displayed in the right side.
     */
-  var rightIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var rightIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * If true, the elements in the list will display a hover effect and a pointer cursor. Inherited from the parent.
     * @default false
@@ -68,15 +68,15 @@ trait ListItemLayoutProps
 object ListItemLayoutProps {
   @scala.inline
   def apply(
-    avatar: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    avatar: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     caption: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    itemContent: reactLib.reactMod.ReactNs.ReactChild = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    leftActions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
-    leftIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    itemContent: reactLib.reactMod.ReactChild = null,
+    key: reactLib.reactMod.Key = null,
+    leftActions: js.Array[reactLib.reactMod.ReactNode] = null,
+    leftIcon: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     legend: java.lang.String = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -100,10 +100,10 @@ object ListItemLayoutProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    rightActions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
-    rightIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    rightActions: js.Array[reactLib.reactMod.ReactNode] = null,
+    rightIcon: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ListItemLayoutTheme with reactDashToolboxLib.libListListItemContentMod.ListItemContentTheme with reactDashToolboxLib.libListListItemActionsMod.ListItemActionsTheme = null,
     to: java.lang.String = null
   ): ListItemLayoutProps = {

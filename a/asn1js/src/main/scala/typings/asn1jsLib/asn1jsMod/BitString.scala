@@ -7,25 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "BitString")
 @js.native
-class BitString ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.BitString {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalBitStringValueBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+class BitString () extends BaseBlock[LocalBitStringValueBlock] {
+  def this(params: LocalBitStringValueBlockParams) = this()
   /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * Checking that two BITSTRINGs are equal
+    * @param {BitString} bitString
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  def isEqual(bitString: BitString): scala.Boolean = js.native
 }
 

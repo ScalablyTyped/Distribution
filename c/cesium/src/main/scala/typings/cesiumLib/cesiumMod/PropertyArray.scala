@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "PropertyArray")
 @js.native
-class PropertyArray ()
-  extends cesiumLib.cesiumMod.CesiumNs.PropertyArray {
-  def this(value: js.Array[cesiumLib.cesiumMod.CesiumNs.Property]) = this()
+class PropertyArray () extends Property {
+  def this(value: js.Array[Property]) = this()
+  def getValue(): js.Array[_] = js.native
+  def getValue(time: JulianDate, result: js.Array[_]): js.Array[_] = js.native
+  def setValue(value: js.Array[Property]): scala.Unit = js.native
 }
 

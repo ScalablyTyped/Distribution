@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object inputmaskLibStrings {
   @js.native
   sealed trait decimal
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @js.native
   sealed trait email
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @js.native
   sealed trait getemptymask extends js.Object
@@ -25,7 +25,7 @@ object inputmaskLibStrings {
   
   @js.native
   sealed trait ignore
-    extends inputmaskLib.inputmaskMod.InputmaskNs.PositionCaretOnClick
+    extends inputmaskLib.inputmaskMod.PositionCaretOnClick
   
   @js.native
   sealed trait isComplete extends js.Object
@@ -35,71 +35,71 @@ object inputmaskLibStrings {
   
   @js.native
   sealed trait lower
-    extends inputmaskLib.inputmaskMod.InputmaskNs.Casing
+    extends inputmaskLib.inputmaskMod.Casing
   
   @js.native
   sealed trait lvp
-    extends inputmaskLib.inputmaskMod.InputmaskNs.PositionCaretOnClick
+    extends inputmaskLib.inputmaskMod.PositionCaretOnClick
   
   @js.native
   sealed trait none
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
-       with inputmaskLib.inputmaskMod.InputmaskNs.PositionCaretOnClick
+    extends inputmaskLib.inputmaskMod.InputMode
+       with inputmaskLib.inputmaskMod.PositionCaretOnClick
   
   @js.native
   sealed trait number extends js.Object
   
   @js.native
   sealed trait numeric
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @js.native
   sealed trait option extends js.Object
   
   @js.native
   sealed trait radixFocus
-    extends inputmaskLib.inputmaskMod.InputmaskNs.PositionCaretOnClick
+    extends inputmaskLib.inputmaskMod.PositionCaretOnClick
   
   @js.native
   sealed trait remove extends js.Object
   
   @js.native
   sealed trait search
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @js.native
   sealed trait select
-    extends inputmaskLib.inputmaskMod.InputmaskNs.PositionCaretOnClick
+    extends inputmaskLib.inputmaskMod.PositionCaretOnClick
   
   @js.native
   sealed trait setValue extends js.Object
   
   @js.native
   sealed trait tel
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @js.native
   sealed trait text
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @js.native
   sealed trait title
-    extends inputmaskLib.inputmaskMod.InputmaskNs.Casing
+    extends inputmaskLib.inputmaskMod.Casing
   
   @js.native
   sealed trait unmaskedvalue extends js.Object
   
   @js.native
   sealed trait upper
-    extends inputmaskLib.inputmaskMod.InputmaskNs.Casing
+    extends inputmaskLib.inputmaskMod.Casing
   
   @js.native
   sealed trait url
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @js.native
   sealed trait verbatim
-    extends inputmaskLib.inputmaskMod.InputmaskNs.InputMode
+    extends inputmaskLib.inputmaskMod.InputMode
   
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]

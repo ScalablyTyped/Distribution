@@ -15,3 +15,8 @@ class ValueListItemSearchResultsWithPermissions ()
   override val ValueListItemSearchResults: mfilesLib.IValueListItemSearchResults = js.native
 }
 
+@JSGlobal("MFiles.ValueListItemSearchResultsWithPermissions")
+@js.native
+object ValueListItemSearchResultsWithPermissions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IValueListItemSearchResultsWithPermissions]
+

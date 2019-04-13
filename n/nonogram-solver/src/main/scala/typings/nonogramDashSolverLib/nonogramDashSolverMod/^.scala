@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("nonogram-solver", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(filename: java.lang.String): nonogramDashSolverLib.nonogramDashSolverMod.solveNs.Result = js.native
+  def apply(filename: java.lang.String): Result = js.native
 }
 

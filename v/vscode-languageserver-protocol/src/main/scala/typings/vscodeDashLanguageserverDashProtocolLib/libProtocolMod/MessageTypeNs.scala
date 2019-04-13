@@ -11,18 +11,18 @@ object MessageTypeNs extends js.Object {
   /**
     * An error message.
     */
-  val Error: /* 1 */ scala.Double = js.native
+  val Error: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`1` = js.native
   /**
     * An information message.
     */
-  val Info: /* 3 */ scala.Double = js.native
+  val Info: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`3` = js.native
   /**
     * A log message.
     */
-  val Log: /* 4 */ scala.Double = js.native
+  val Log: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`4` = js.native
   /**
     * A warning message.
     */
-  val Warning: /* 2 */ scala.Double = js.native
+  val Warning: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibNumbers.`2` = js.native
 }
 

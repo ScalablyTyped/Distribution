@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object coreNs {
   type BodyData = nodeLib.Buffer | KeyValue | nodeLib.NodeJSNs.ReadableStream | java.lang.String | scala.Null
+  type Cookies = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type KeyValue = org.scalablytyped.runtime.StringDictionary[js.Any]
   type NeedleCallback = js.Function3[
     /* error */ stdLib.Error | scala.Null, 
     /* response */ NeedleResponse, 

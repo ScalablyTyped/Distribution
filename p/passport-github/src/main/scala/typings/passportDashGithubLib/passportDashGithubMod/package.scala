@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object passportDashGithubMod {
   type OAuth2StrategyOptionsWithoutRequiredURLs = stdLib.Pick[
-    passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs._StrategyOptionsBase, 
+    passportDashOauth2Lib.passportDashOauth2Mod._StrategyOptionsBase, 
     stdLib.Exclude[
-      java.lang.String, 
+      passportDashGithubLib.passportDashGithubLibStrings.authorizationURL | passportDashGithubLib.passportDashGithubLibStrings.tokenURL | passportDashGithubLib.passportDashGithubLibStrings.clientID | passportDashGithubLib.passportDashGithubLibStrings.clientSecret | passportDashGithubLib.passportDashGithubLibStrings.callbackURL | passportDashGithubLib.passportDashGithubLibStrings.customHeaders | passportDashGithubLib.passportDashGithubLibStrings.scope | passportDashGithubLib.passportDashGithubLibStrings.scopeSeparator | passportDashGithubLib.passportDashGithubLibStrings.sessionKey | passportDashGithubLib.passportDashGithubLibStrings.store | passportDashGithubLib.passportDashGithubLibStrings.state, 
       passportDashGithubLib.passportDashGithubLibStrings.authorizationURL | passportDashGithubLib.passportDashGithubLibStrings.tokenURL
     ]
   ]

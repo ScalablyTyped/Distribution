@@ -18,7 +18,7 @@ object ApplyContext {
     collection: java.lang.String,
     id: java.lang.String,
     index: java.lang.String,
-    op: sharedbLib.sharedbMod.sharedbNs.Op,
+    op: sharedbLib.sharedbMod.Op,
     ops: js.Array[sharedbLib.libSharedbMod.Op],
     options: js.Any,
     retries: scala.Double,

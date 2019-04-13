@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactCodeMirrorProps
-  extends reactLib.reactMod.ReactNs.Props[ReactCodeMirror] {
+  extends reactLib.reactMod.Props[ReactCodeMirror] {
   /** Automatically focuses the editor when it is mounted (default false) */
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   /** Automatically persist changes to underlying textarea (default false) */
@@ -17,8 +17,8 @@ trait ReactCodeMirrorProps
   var codeMirrorInstance: js.UndefOr[
     js.Function2[
       /* host */ js.Any, 
-      /* options */ js.UndefOr[codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration], 
-      codemirrorLib.codemirrorMod.CodeMirrorNs.Editor
+      /* options */ js.UndefOr[codemirrorLib.codemirrorMod.EditorConfiguration], 
+      codemirrorLib.codemirrorMod.Editor
     ]
   ] = js.undefined
   /** Provides the default (not changed tracked) value to the editor */
@@ -29,22 +29,18 @@ trait ReactCodeMirrorProps
   var onChange: js.UndefOr[
     js.Function2[
       /* newValue */ java.lang.String, 
-      /* change */ codemirrorLib.codemirrorMod.CodeMirrorNs.EditorChange, 
+      /* change */ codemirrorLib.codemirrorMod.EditorChange, 
       _
     ]
   ] = js.undefined
   /** Called when the cursor is moved */
-  var onCursorActivity: js.UndefOr[
-    js.Function1[/* codemirror */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, _]
-  ] = js.undefined
+  var onCursorActivity: js.UndefOr[js.Function1[/* codemirror */ codemirrorLib.codemirrorMod.Editor, _]] = js.undefined
   /** Called when the editor is focused or loses focus */
   var onFocusChange: js.UndefOr[js.Function1[/* focused */ scala.Boolean, _]] = js.undefined
   /** Called when the editor is scrolled */
-  var onScroll: js.UndefOr[
-    js.Function1[/* scrollInfo */ codemirrorLib.codemirrorMod.CodeMirrorNs.ScrollInfo, _]
-  ] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* scrollInfo */ codemirrorLib.codemirrorMod.ScrollInfo, _]] = js.undefined
   /** Options passed to the CodeMirror instance */
-  var options: js.UndefOr[codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration] = js.undefined
+  var options: js.UndefOr[codemirrorLib.codemirrorMod.EditorConfiguration] = js.undefined
   /** (DEPRECATED), use `name` */
   var path: js.UndefOr[java.lang.String] = js.undefined
   /** Preserve previous scroll position after updating value */
@@ -58,20 +54,20 @@ object ReactCodeMirrorProps {
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     autoSave: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    codeMirrorInstance: (/* host */ js.Any, /* options */ js.UndefOr[codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration]) => codemirrorLib.codemirrorMod.CodeMirrorNs.Editor = null,
+    codeMirrorInstance: (/* host */ js.Any, /* options */ js.UndefOr[codemirrorLib.codemirrorMod.EditorConfiguration]) => codemirrorLib.codemirrorMod.Editor = null,
     defaultValue: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     name: java.lang.String = null,
-    onChange: (/* newValue */ java.lang.String, /* change */ codemirrorLib.codemirrorMod.CodeMirrorNs.EditorChange) => _ = null,
-    onCursorActivity: /* codemirror */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor => _ = null,
+    onChange: (/* newValue */ java.lang.String, /* change */ codemirrorLib.codemirrorMod.EditorChange) => _ = null,
+    onCursorActivity: /* codemirror */ codemirrorLib.codemirrorMod.Editor => _ = null,
     onFocusChange: /* focused */ scala.Boolean => _ = null,
-    onScroll: /* scrollInfo */ codemirrorLib.codemirrorMod.CodeMirrorNs.ScrollInfo => _ = null,
-    options: codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration = null,
+    onScroll: /* scrollInfo */ codemirrorLib.codemirrorMod.ScrollInfo => _ = null,
+    options: codemirrorLib.codemirrorMod.EditorConfiguration = null,
     path: java.lang.String = null,
     preserveScrollPosition: js.UndefOr[scala.Boolean] = js.undefined,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ReactCodeMirror] = null,
+    ref: reactLib.reactMod.LegacyRef[ReactCodeMirror] = null,
     value: java.lang.String = null
   ): ReactCodeMirrorProps = {
     val __obj = js.Dynamic.literal()

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // Module
-  def apply(
-    Options: axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.InterceptorOptions
-  ): axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.TokenProvider = js.native
-  def tokenCache(
-    getToken: js.Promise[java.lang.String],
-    options: axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.TokenCacheOptions
-  ): axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.TokenCache = js.native
+  def apply(Options: InterceptorOptions): TokenProvider = js.native
+  def tokenCache(getToken: js.Promise[java.lang.String], options: TokenCacheOptions): TokenCache = js.native
 }
 

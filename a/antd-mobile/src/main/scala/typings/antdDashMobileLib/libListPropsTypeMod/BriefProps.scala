@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BriefProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties | js.Object | js.Array[js.Object]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties | js.Object | js.Array[js.Object]] = js.undefined
   var wrap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object BriefProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties | js.Object | js.Array[js.Object] = null,
+    children: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties | js.Object | js.Array[js.Object] = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): BriefProps = {
     val __obj = js.Dynamic.literal()

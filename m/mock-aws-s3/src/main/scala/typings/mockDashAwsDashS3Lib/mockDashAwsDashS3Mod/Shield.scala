@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Shield ()
   extends awsDashSdkLib.awsDashSdkMod.Shield {
-  def this(options: awsDashSdkLib.clientsShieldMod.ShieldNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsShieldMod.ClientConfiguration) = this()
 }
 

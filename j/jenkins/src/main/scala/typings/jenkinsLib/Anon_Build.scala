@@ -23,7 +23,7 @@ trait Anon_Build extends js.Object {
     callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def build(
-    name: jenkinsLib.jenkinsMod.createNs.JobBuildOptions,
+    name: jenkinsLib.jenkinsMod.JobBuildOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def config(

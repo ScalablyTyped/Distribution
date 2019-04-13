@@ -37,3 +37,8 @@ class VaultManagementOperations ()
   override def WaitAsyncJob(JobID: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultManagementOperations")
+@js.native
+object VaultManagementOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultManagementOperations]
+

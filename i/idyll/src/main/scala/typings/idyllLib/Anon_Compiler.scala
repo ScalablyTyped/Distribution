@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Compiler extends js.Object {
-  var compiler: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Options
+  var compiler: idyllDashCompilerLib.idyllDashCompilerMod.Options
   var components: js.Any
   var transform: js.Array[_]
 }
@@ -14,7 +14,7 @@ trait Anon_Compiler extends js.Object {
 object Anon_Compiler {
   @scala.inline
   def apply(
-    compiler: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Options,
+    compiler: idyllDashCompilerLib.idyllDashCompilerMod.Options,
     components: js.Any,
     transform: js.Array[_]
   ): Anon_Compiler = {

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ngCommand.Command")
 @js.native
 class Command protected () extends ICommand {
-  def this($scope: angularLib.angularMod.angularNs.IScope, execute: js.Function0[angularLib.angularMod.angularNs.IPromise[_]]) = this()
-  def this($scope: angularLib.angularMod.angularNs.IScope, execute: js.Function0[angularLib.angularMod.angularNs.IPromise[_]], canExecute: js.Function0[scala.Boolean]) = this()
+  def this($scope: angularLib.angularMod.IScope, execute: js.Function0[angularLib.angularMod.IPromise[_]]) = this()
+  def this($scope: angularLib.angularMod.IScope, execute: js.Function0[angularLib.angularMod.IPromise[_]], canExecute: js.Function0[scala.Boolean]) = this()
   /**
   		* Determines whether the command can execute or not.
   		*/
@@ -24,7 +24,7 @@ class Command protected () extends ICommand {
   		* Executes the command function.
   		*/
   /* CompleteClass */
-  override def execute(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  override def execute(): angularLib.angularMod.IPromise[_] = js.native
 }
 
 /* static members */

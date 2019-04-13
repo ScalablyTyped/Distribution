@@ -13,7 +13,7 @@ trait ClusterState extends js.Object {
   /**
     * Nested attribute containing `certificate-authority-data` for your cluster.
     */
-  val certificateAuthority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataInputString]] = js.undefined
+  val certificateAuthority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataInput]] = js.undefined
   val createdAt: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The endpoint for your Kubernetes API server.
@@ -47,7 +47,7 @@ object ClusterState {
   @scala.inline
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    certificateAuthority: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataInputString] = null,
+    certificateAuthority: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataInput] = null,
     createdAt: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object libClientMod {
   type DidChangeConfigurationSignature = js.Function1[/* sections */ js.UndefOr[js.Array[java.lang.String]], scala.Unit]
-  type FoldingRangeKind = vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind
   type HandleDiagnosticsSignature = js.Function2[
     /* uri */ vscodeLib.vscodeMod.Uri, 
     /* diagnostics */ js.Array[vscodeLib.vscodeMod.Diagnostic], 
@@ -137,7 +136,5 @@ package object libClientMod {
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
     vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.DocumentLink]
   ]
-  type Trace = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Trace
-  type TraceFormat = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceFormat
   type WorkspaceMiddleware = _WorkspaceMiddleware with vscodeDashLanguageclientLib.libConfigurationMod.ConfigurationWorkspaceMiddleware with vscodeDashLanguageclientLib.libWorkspaceFoldersMod.WorkspaceFolderWorkspaceMiddleware
 }

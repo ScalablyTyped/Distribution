@@ -9,9 +9,11 @@ package object MongoNs {
   type ArraysOrEach[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? meteor.Mongo.OnlyArrays<T[P]> | {  $each  :T[P]}}
     */ meteorLib.meteorLibStrings.ArraysOrEach with js.Any
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ElementsOf[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]>}
     */ meteorLib.meteorLibStrings.ElementsOf with T
+  type FieldSpecifier = org.scalablytyped.runtime.StringDictionary[stdLib.Number]
   type Flatten[T] = T | (/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any)
   type Modifier[T] = T | meteorLib.Anon_0[T]
   type OnlyArrays[T] = T

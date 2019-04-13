@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class RuleFailure protected ()
   extends tslintLib.libLanguageRuleRuleMod.RuleFailure {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String) = this()
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: js.Array[tslintLib.libLanguageRuleRuleMod.Replacement]) = this()
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: tslintLib.libLanguageRuleRuleMod.Replacement) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: js.Array[tslintLib.libLanguageRuleRuleMod.Replacement]) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: tslintLib.libLanguageRuleRuleMod.Replacement) = this()
 }
 
 /* static members */

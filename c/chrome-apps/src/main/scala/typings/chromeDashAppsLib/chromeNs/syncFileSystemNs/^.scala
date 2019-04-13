@@ -8,33 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.syncFileSystem")
 @js.native
 object ^ extends js.Object {
-  val ConflictResolutionPolicy: chromeDashAppsLib.Anon_LASTWRITEWIN = js.native
-  /**
-    * @enum
-    * 'synced'
-    *  - Not conflicting and has no pending local changes.
-    * 'pending'
-    *  - Has one or more pending local changes that haven't been synchronized.
-    * 'conflicting'
-    *  - File conflicts with remote version and must be resolved manually.
-    */
-  val FileStatus: chromeDashAppsLib.Anon_CONFLICTING = js.native
-  /**
-    * @enum
-    * 'initializing'
-    *  - The sync service is being initialized (e.g. restoring data from the database, checking connectivity and authenticating to the service etc).
-    * 'running'
-    *  - The sync service is up and running.
-    * 'authentication_required'
-    *  - The sync service is not synchronizing files because the remote service needs to be authenticated by the user to proceed.
-    * 'temporary_unavailable'
-    *  - The sync service is not synchronizing files because the remote service is (temporarily) unavailable due to some recoverable errors, e.g. network is offline, the remote service is down or not reachable etc. More details should be given by |description| parameter in OnServiceInfoUpdated (which could contain service-specific details).
-    * 'disabled'
-    *  - The sync service is disabled and the content will never sync. (E.g. this could happen when the user has no account on the remote service or the sync service has had an unrecoverable error.)
-    */
-  val ServiceStatus: chromeDashAppsLib.Anon_AUTHENTICATIONREQUIRED = js.native
-  val SyncAction: chromeDashAppsLib.Anon_ADDED = js.native
-  val SyncDirection: chromeDashAppsLib.Anon_LOCALTOREMOTE = js.native
   /** Fired when a file has been updated by the background sync service. */
   val onFileStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* detail */ FileStatusChangedDetail, scala.Unit]] = js.native
   /**

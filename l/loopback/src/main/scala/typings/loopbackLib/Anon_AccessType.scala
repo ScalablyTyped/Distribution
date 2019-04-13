@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AccessType extends js.Object {
   var accessType: java.lang.String
   var id: js.Any
-  var model: java.lang.String | loopbackLib.loopbackMod.lNs.Model
+  var model: java.lang.String | loopbackLib.loopbackMod.Model
   var principals: js.Array[_]
   var property: java.lang.String
 }
@@ -18,7 +18,7 @@ object Anon_AccessType {
   def apply(
     accessType: java.lang.String,
     id: js.Any,
-    model: java.lang.String | loopbackLib.loopbackMod.lNs.Model,
+    model: java.lang.String | loopbackLib.loopbackMod.Model,
     principals: js.Array[_],
     property: java.lang.String
   ): Anon_AccessType = {

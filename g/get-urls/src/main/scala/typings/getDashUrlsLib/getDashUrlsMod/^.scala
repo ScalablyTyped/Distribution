@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(text: java.lang.String): stdLib.Set[java.lang.String] = js.native
-  def apply(text: java.lang.String, options: getDashUrlsLib.getDashUrlsMod.getUrlsNs.Options): stdLib.Set[java.lang.String] = js.native
+  def apply(text: java.lang.String, options: Options): stdLib.Set[java.lang.String] = js.native
 }
 

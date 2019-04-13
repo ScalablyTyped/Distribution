@@ -9,7 +9,7 @@ trait Anon_Duplex extends js.Object {
   var Duplex: nodeLib.streamMod.Duplex
   var PassThrough: nodeLib.streamMod.PassThrough
   var Readable: nodeLib.streamMod.Readable
-  var Stream: nodeLib.streamMod.namespaced
+  var Stream: nodeLib.streamMod.^
   var Transform: nodeLib.streamMod.Transform
   var Writable: nodeLib.streamMod.Writable
 }
@@ -20,7 +20,7 @@ object Anon_Duplex {
     Duplex: nodeLib.streamMod.Duplex,
     PassThrough: nodeLib.streamMod.PassThrough,
     Readable: nodeLib.streamMod.Readable,
-    Stream: nodeLib.streamMod.namespaced,
+    Stream: nodeLib.streamMod.^,
     Transform: nodeLib.streamMod.Transform,
     Writable: nodeLib.streamMod.Writable
   ): Anon_Duplex = {

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/SwipeableDrawer/SwipeableDrawer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[SwipeableDrawerProps] = js.native
+  val default: reactLib.reactMod.ComponentType[SwipeableDrawerProps] = js.native
 }
 

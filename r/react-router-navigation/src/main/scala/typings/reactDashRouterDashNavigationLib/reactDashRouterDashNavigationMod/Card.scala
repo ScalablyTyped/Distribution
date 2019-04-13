@@ -19,22 +19,22 @@ object Card {
     backButtonTitle: java.lang.String = null,
     children: (js.Function1[
       /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) | reactLib.reactMod.ReactNs.ReactNode = null,
-    component: reactLib.reactMod.ReactNs.ComponentClass[
+      reactLib.reactMod.ReactNode
+    ]) | reactLib.reactMod.ReactNode = null,
+    component: reactLib.reactMod.ComponentClass[
       reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     hideBackButton: js.UndefOr[scala.Boolean] = js.undefined,
     hideNavBar: js.UndefOr[scala.Boolean] = js.undefined,
     navBarStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     path: java.lang.String = null,
-    render: /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps => reactLib.reactMod.ReactNode = null,
+    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null

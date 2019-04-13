@@ -9,11 +9,11 @@ trait AvatarProps extends js.Object {
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object AvatarProps {
@@ -22,11 +22,11 @@ object AvatarProps {
     backgroundColor: java.lang.String = null,
     className: java.lang.String = null,
     color: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    icon: reactLib.reactMod.ReactElement[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     size: scala.Int | scala.Double = null,
     src: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AvatarProps = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)

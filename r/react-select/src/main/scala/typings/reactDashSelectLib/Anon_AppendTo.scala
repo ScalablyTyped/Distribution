@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AppendTo extends js.Object {
   var appendTo: stdLib.HTMLElement
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
    // ideally Menu<MenuProps>
   var controlElement: stdLib.HTMLElement
   var menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement
@@ -18,7 +18,7 @@ object Anon_AppendTo {
   @scala.inline
   def apply(
     appendTo: stdLib.HTMLElement,
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     controlElement: stdLib.HTMLElement,
     menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement,
     menuPosition: reactDashSelectLib.libTypesMod.MenuPosition

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libJumbotronMod {
   type Jumbotron[T] = reactLib.reactMod.Component[JumbotronProps[T], js.Object, js.Any]
-  type JumbotronProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleFluid with T
+  type JumbotronProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleFluid with T
 }

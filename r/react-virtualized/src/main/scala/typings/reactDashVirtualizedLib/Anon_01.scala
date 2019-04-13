@@ -27,9 +27,9 @@ trait Anon_01 extends js.Object {
   var scrollToRow: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`-1` = js.native
   var scrollingResetTimeInterval: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`150` = js.native
   var tabIndex: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0` = js.native
-  def cellRangeRenderer(params: reactDashVirtualizedLib.distEsGridMod.GridCellRangeProps): js.Array[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  def cellRangeRenderer(params: reactDashVirtualizedLib.distEsGridMod.GridCellRangeProps): js.Array[reactLib.reactMod.ReactNode] = js.native
   def getScrollbarSize(): scala.Double = js.native
-  def noContentRenderer(): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def noContentRenderer(): reactLib.reactMod.ReactNode = js.native
   def onScroll(): scala.Unit = js.native
   def onScrollbarPresenceChange(): scala.Unit = js.native
   def onSectionRendered(): scala.Unit = js.native

@@ -14,7 +14,7 @@ trait Anon_Append extends js.Object {
     * Hashing method or custom function.
     */
   var method: js.UndefOr[
-    postcssDashUrlLib.postcssDashUrlLibStrings.xxhash32 | postcssDashUrlLib.postcssDashUrlLibStrings.xxhash64 | postcssDashUrlLib.postcssDashUrlMod.urlNs.CustomHashFunction
+    postcssDashUrlLib.postcssDashUrlLibStrings.xxhash32 | postcssDashUrlLib.postcssDashUrlLibStrings.xxhash64 | postcssDashUrlLib.postcssDashUrlMod.CustomHashFunction
   ] = js.undefined
   /**
     * Shrink hast to certain length.
@@ -26,7 +26,7 @@ object Anon_Append {
   @scala.inline
   def apply(
     append: js.UndefOr[scala.Boolean] = js.undefined,
-    method: postcssDashUrlLib.postcssDashUrlLibStrings.xxhash32 | postcssDashUrlLib.postcssDashUrlLibStrings.xxhash64 | postcssDashUrlLib.postcssDashUrlMod.urlNs.CustomHashFunction = null,
+    method: postcssDashUrlLib.postcssDashUrlLibStrings.xxhash32 | postcssDashUrlLib.postcssDashUrlLibStrings.xxhash64 | postcssDashUrlLib.postcssDashUrlMod.CustomHashFunction = null,
     shrink: scala.Int | scala.Double = null
   ): Anon_Append = {
     val __obj = js.Dynamic.literal()

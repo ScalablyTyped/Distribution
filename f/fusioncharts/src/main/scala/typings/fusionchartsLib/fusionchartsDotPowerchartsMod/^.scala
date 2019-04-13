@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fusioncharts/fusioncharts.powercharts", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(H: fusionchartsLib.fusionchartsMod.FusionChartsNs.FusionChartStatic): fusionchartsLib.fusionchartsMod.FusionChartsNs.FusionChartStatic = js.native
+  def apply(H: fusionchartsLib.fusionchartsMod.FusionChartStatic): fusionchartsLib.fusionchartsMod.FusionChartStatic = js.native
 }
 

@@ -26,11 +26,11 @@ trait MenuProps extends js.Object {
   var openAnimation: js.UndefOr[java.lang.String | js.Object] = js.undefined
   var openKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var openTransitionName: js.UndefOr[java.lang.String | js.Object] = js.undefined
-  var overflowedIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var overflowedIndicator: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
   var selectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subMenuCloseDelay: js.UndefOr[scala.Double] = js.undefined
   var subMenuOpenDelay: js.UndefOr[scala.Double] = js.undefined
   var theme: js.UndefOr[MenuTheme] = js.undefined
@@ -57,11 +57,11 @@ object MenuProps {
     openAnimation: java.lang.String | js.Object = null,
     openKeys: js.Array[java.lang.String] = null,
     openTransitionName: java.lang.String | js.Object = null,
-    overflowedIndicator: reactLib.reactMod.ReactNs.ReactNode = null,
+    overflowedIndicator: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selectedKeys: js.Array[java.lang.String] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     subMenuCloseDelay: scala.Int | scala.Double = null,
     subMenuOpenDelay: scala.Int | scala.Double = null,
     theme: MenuTheme = null

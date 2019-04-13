@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_IndexNameParams extends js.Object {
   var indexName: java.lang.String
-  var params: algoliasearchLib.algoliasearchMod.algoliasearchNs.SearchForFacetValuesNs.Parameters
+  var params: algoliasearchLib.algoliasearchMod.SearchForFacetValuesNs.Parameters
 }
 
 object Anon_IndexNameParams {
   @scala.inline
   def apply(
     indexName: java.lang.String,
-    params: algoliasearchLib.algoliasearchMod.algoliasearchNs.SearchForFacetValuesNs.Parameters
+    params: algoliasearchLib.algoliasearchMod.SearchForFacetValuesNs.Parameters
   ): Anon_IndexNameParams = {
     val __obj = js.Dynamic.literal(indexName = indexName, params = params)
   

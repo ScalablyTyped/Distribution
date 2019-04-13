@@ -22,7 +22,7 @@ package object reactDashNativeMod {
   type BackPressEventName = reactDashNativeLib.reactDashNativeLibStrings.hardwareBackPress
   type CameraRoll = CameraRollStatic
   type Clipboard = ClipboardStatic
-  type ComponentProvider = js.Function0[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  type ComponentProvider = js.Function0[reactLib.reactMod.ComponentType[js.Any]]
   type DatePickerAndroid = DatePickerAndroidStatic
   type DatePickerIOSComponent = reactLib.reactMod.Component[DatePickerIOSProps, js.Object, js.Any]
   type DrawerLayoutAndroidComponent = reactLib.reactMod.Component[DrawerLayoutAndroidProps, js.Object, js.Any]
@@ -59,7 +59,7 @@ package object reactDashNativeMod {
   type LinkingIOS = LinkingIOSStatic
   type ListRenderItem[ItemT] = js.Function1[
     /* info */ ListRenderItemInfo[ItemT], 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactElement[js.Any] | scala.Null
   ]
   type ListViewComponent = reactLib.reactMod.Component[ListViewProps, js.Object, js.Any]
   /**
@@ -97,7 +97,12 @@ package object reactDashNativeMod {
   type NativeComponent = NativeMethodsMixinStatic
   type NativeEventEmitter = EventEmitter
   type NativeMethodsMixin = NativeMethodsMixinStatic
-  type NativeSyntheticEvent[T] = reactLib.reactMod.ReactNs.BaseSyntheticEvent[T, reactDashNativeLib.NodeHandle, reactDashNativeLib.NodeHandle]
+  /**
+    * Interface for NativeModules which allows to augment NativeModules with type informations.
+    * See react-native-sensor-manager for example.
+    */
+  type NativeModulesStatic = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type NativeSyntheticEvent[T] = reactLib.reactMod.BaseSyntheticEvent[T, reactDashNativeLib.NodeHandle, reactDashNativeLib.NodeHandle]
   type NetInfo = NetInfoStatic
   type PanResponder = PanResponderStatic
   type PermissionsAndroid = PermissionsAndroidStatic
@@ -151,7 +156,7 @@ package object reactDashNativeMod {
   type SectionList[ItemT] = SectionListStatic[ItemT]
   type SectionListRenderItem[ItemT] = js.Function1[
     /* info */ SectionListRenderItemInfo[ItemT], 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactElement[js.Any] | scala.Null
   ]
   /**
     * Use `SegmentedControlIOS` to render a UISegmentedControl iOS.

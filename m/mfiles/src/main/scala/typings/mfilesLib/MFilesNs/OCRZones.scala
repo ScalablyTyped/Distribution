@@ -21,3 +21,8 @@ class OCRZones ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.OCRZones")
+@js.native
+object OCRZones
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRZones]
+

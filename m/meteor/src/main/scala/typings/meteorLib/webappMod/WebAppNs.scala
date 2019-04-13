@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/webapp", "WebApp")
 @js.native
 object WebAppNs extends js.Object {
-  var connectApp: connectLib.connectMod.createServerNs.Server = js.native
-  var connectHandlers: connectLib.connectMod.createServerNs.Server = js.native
+  var connectApp: connectLib.connectMod.Server = js.native
+  var connectHandlers: connectLib.connectMod.Server = js.native
   var defaultArch: java.lang.String = js.native
   var httpServer: nodeLib.httpMod.Server = js.native
-  var rawConnectHandlers: connectLib.connectMod.createServerNs.Server = js.native
+  var rawConnectHandlers: connectLib.connectMod.Server = js.native
   def onListening(callback: js.Function): scala.Unit = js.native
   def suppressConnectErrors(): scala.Unit = js.native
   @js.native

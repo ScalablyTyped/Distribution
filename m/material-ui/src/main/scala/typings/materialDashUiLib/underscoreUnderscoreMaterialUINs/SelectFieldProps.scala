@@ -12,41 +12,41 @@ trait SelectFieldProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var dropDownMenuProps: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.MenusNs.DropDownMenuProps] = js.undefined
-  var errorStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var errorText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var errorStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var errorText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var floatingLabelFixed: js.UndefOr[scala.Boolean] = js.undefined
-  var floatingLabelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var floatingLabelText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var floatingLabelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var floatingLabelText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var hintStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var hintText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var hintStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var hintText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var listStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var labelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var listStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var maxHeight: js.UndefOr[scala.Double] = js.undefined
-  var menuItemStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var menuItemStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var menuStyle: js.UndefOr[js.Any] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[js.Object]] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], 
       /* index */ scala.Double, 
       /* menuItemValue */ js.Any, 
       scala.Unit
     ]
   ] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[js.Object]] = js.undefined
   var openImmediately: js.UndefOr[scala.Boolean] = js.undefined
-  var selectFieldRoot: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var selectedMenuItemStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var selectionRenderer: js.UndefOr[js.Function1[/* value */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var underlineDisabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var underlineFocusStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var underlineStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var selectFieldRoot: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var selectedMenuItemStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var selectionRenderer: js.UndefOr[js.Function1[/* value */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var underlineDisabledStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var underlineFocusStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var underlineStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -57,34 +57,34 @@ object SelectFieldProps {
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropDownMenuProps: materialDashUiLib.underscoreUnderscoreMaterialUINs.MenusNs.DropDownMenuProps = null,
-    errorStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    errorText: reactLib.reactMod.ReactNs.ReactNode = null,
+    errorStyle: reactLib.reactMod.CSSProperties = null,
+    errorText: reactLib.reactMod.ReactNode = null,
     floatingLabelFixed: js.UndefOr[scala.Boolean] = js.undefined,
-    floatingLabelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    floatingLabelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    floatingLabelStyle: reactLib.reactMod.CSSProperties = null,
+    floatingLabelText: reactLib.reactMod.ReactNode = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    hintStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    hintText: reactLib.reactMod.ReactNs.ReactNode = null,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    hintStyle: reactLib.reactMod.CSSProperties = null,
+    hintText: reactLib.reactMod.ReactNode = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
     id: java.lang.String = null,
-    labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    labelStyle: reactLib.reactMod.CSSProperties = null,
+    listStyle: reactLib.reactMod.CSSProperties = null,
     maxHeight: scala.Int | scala.Double = null,
-    menuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    menuItemStyle: reactLib.reactMod.CSSProperties = null,
     menuStyle: js.Any = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onChange: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* index */ scala.Double, /* menuItemValue */ js.Any) => scala.Unit = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onChange: (/* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], /* index */ scala.Double, /* menuItemValue */ js.Any) => scala.Unit = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
     openImmediately: js.UndefOr[scala.Boolean] = js.undefined,
-    selectFieldRoot: reactLib.reactMod.ReactNs.CSSProperties = null,
-    selectedMenuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    selectionRenderer: /* value */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    underlineDisabledStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    underlineFocusStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    underlineStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    selectFieldRoot: reactLib.reactMod.CSSProperties = null,
+    selectedMenuItemStyle: reactLib.reactMod.CSSProperties = null,
+    selectionRenderer: /* value */ js.Any => reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    underlineDisabledStyle: reactLib.reactMod.CSSProperties = null,
+    underlineFocusStyle: reactLib.reactMod.CSSProperties = null,
+    underlineStyle: reactLib.reactMod.CSSProperties = null,
     value: js.Any = null
   ): SelectFieldProps = {
     val __obj = js.Dynamic.literal()

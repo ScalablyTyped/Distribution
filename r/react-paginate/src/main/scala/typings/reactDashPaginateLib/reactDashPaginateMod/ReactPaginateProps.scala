@@ -21,7 +21,7 @@ trait ReactPaginateProps extends js.Object {
   /**
     * Label for ellipsis.
     */
-  var breakLabel: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var breakLabel: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   /**
     * The classname on tag `a` of the ellipsis element.
     */
@@ -65,7 +65,7 @@ trait ReactPaginateProps extends js.Object {
   /**
     * Label for the `next` button.
     */
-  var nextLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var nextLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * The classname on tag `a` of the `next` button.
     */
@@ -97,7 +97,7 @@ trait ReactPaginateProps extends js.Object {
   /**
     * Label for the `previous` button.
     */
-  var previousLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var previousLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * The classname on tag `a` of the `previous` button.
     */
@@ -113,7 +113,7 @@ object ReactPaginateProps {
     activeClassName: java.lang.String = null,
     activeLinkClassName: java.lang.String = null,
     breakClassName: java.lang.String = null,
-    breakLabel: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    breakLabel: java.lang.String | reactLib.reactMod.ReactNode = null,
     breakLinkClassName: java.lang.String = null,
     containerClassName: java.lang.String = null,
     disableInitialCallback: js.UndefOr[scala.Boolean] = js.undefined,
@@ -123,13 +123,13 @@ object ReactPaginateProps {
     hrefBuilder: /* pageIndex */ scala.Double => scala.Unit = null,
     initialPage: scala.Int | scala.Double = null,
     nextClassName: java.lang.String = null,
-    nextLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    nextLabel: reactLib.reactMod.ReactNode = null,
     nextLinkClassName: java.lang.String = null,
     onPageChange: /* selectedItem */ reactDashPaginateLib.Anon_Selected => scala.Unit = null,
     pageClassName: java.lang.String = null,
     pageLinkClassName: java.lang.String = null,
     previousClassName: java.lang.String = null,
-    previousLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    previousLabel: reactLib.reactMod.ReactNode = null,
     previousLinkClassName: java.lang.String = null
   ): ReactPaginateProps = {
     val __obj = js.Dynamic.literal(marginPagesDisplayed = marginPagesDisplayed, pageCount = pageCount, pageRangeDisplayed = pageRangeDisplayed)

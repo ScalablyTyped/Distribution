@@ -26,9 +26,57 @@ object coreNs extends js.Object {
     def this(config: js.Object, view: js.Any, resources: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetCollection, parent: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component) = this()
   }
   
-  val Component: atFrctlFractalLib.Anon_Config = js.native
-  val Doc: atFrctlFractalLib.Anon_ConfigContent = js.native
-  val Variant: atFrctlFractalLib.Anon_ConfigCreate = js.native
+  @js.native
+  object Component
+    extends org.scalablytyped.runtime.Instantiable4[
+          /* config */ js.Object, 
+          /* files */ atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.filesNs.FileCollection, 
+          /* resources */ atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetCollection, 
+          /* parent */ atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.Entity, 
+          atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component
+        ] {
+    def create(
+      config: js.Object,
+      files: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.filesNs.FileCollection,
+      resources: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetCollection,
+      parent: atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.Entity
+    ): stdLib.IterableIterator[
+        js.Object | atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.variantsNs.VariantCollection | atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component
+      ] = js.native
+  }
+  
+  @js.native
+  object Doc
+    extends org.scalablytyped.runtime.Instantiable3[
+          /* config */ js.Any, 
+          /* content */ java.lang.String, 
+          /* parent */ atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.Entity, 
+          atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.docsNs.Doc
+        ] {
+    def create(
+      config: js.Any,
+      content: java.lang.String,
+      parent: atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.entitiesNs.Entity
+    ): atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.docsNs.Doc = js.native
+  }
+  
+  @js.native
+  object Variant
+    extends org.scalablytyped.runtime.Instantiable4[
+          /* config */ js.Object, 
+          /* view */ js.Any, 
+          /* resources */ atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetCollection, 
+          /* parent */ atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component, 
+          atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.variantsNs.Variant
+        ] {
+    def create(
+      config: js.Object,
+      view: js.Any,
+      resources: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.assetsNs.AssetCollection,
+      parent: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component
+    ): atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.variantsNs.Variant = js.native
+  }
+  
   type Component = atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.componentsNs.Component
   type Doc = atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.docsNs.Doc
   type Variant = atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.variantsNs.Variant

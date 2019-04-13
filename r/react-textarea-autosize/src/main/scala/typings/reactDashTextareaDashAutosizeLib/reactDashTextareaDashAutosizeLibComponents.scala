@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashTextareaDashAutosizeLibComponents {
   @scala.inline
-  def ReactDashTextareaDashAutosize: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashTextareaDashAutosize: reactLib.reactMod.ComponentType[
     reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps
-  ] = js.constructorOf[reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps]]
   @scala.inline
   def TextareaAutosizeProps: reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps.type = reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps

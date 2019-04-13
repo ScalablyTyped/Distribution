@@ -26,7 +26,7 @@ trait IBackend extends js.Object {
     * @param qSoftPatch - Set to True if properties should be soft, that is not persisted.
     * @return - A promise of a Qlik engine reply.
     */
-  def applyPatches(qPatches: js.Array[_], qSoftPatch: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def applyPatches(qPatches: js.Array[_], qSoftPatch: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Clears unconfirmed selections for this object.
     */
@@ -36,7 +36,7 @@ trait IBackend extends js.Object {
     * applyPatches method.
     * @return - A promise of a Qlik engine reply.
     */
-  def clearSoftPatches(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def clearSoftPatches(): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Collapse the left dimensions of a pivot table. Only works for hypercubes with
     * qMode = P which are not always fully expanded.
@@ -45,8 +45,8 @@ trait IBackend extends js.Object {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def collapseLeft(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def collapseLeft(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def collapseLeft(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.IPromise[_] = js.native
+  def collapseLeft(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Collapse the top dimensions of a pivot table. Only works for hypercubes with
     * qMode = P which are not always fully expanded.
@@ -55,8 +55,8 @@ trait IBackend extends js.Object {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def collapseTop(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def collapseTop(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def collapseTop(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.IPromise[_] = js.native
+  def collapseTop(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Loops through data rows for this object. Only rows that are available client side will be used.
     * @param callback - Function to call for each row.
@@ -73,8 +73,8 @@ trait IBackend extends js.Object {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def expandLeft(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def expandLeft(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def expandLeft(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.IPromise[_] = js.native
+  def expandLeft(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Expands the top dimensions of a pivot table. Only works for hypercubes with
     * qMode = P which are not always fully expanded.
@@ -83,14 +83,14 @@ trait IBackend extends js.Object {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def expandTop(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def expandTop(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def expandTop(qRow: scala.Double, qCol: scala.Double): angularLib.angularMod.IPromise[_] = js.native
+  def expandTop(qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Geta data from Qlik engine for this object.
     * @param qPages - An array of NxPage objects.
     * @return - A promise of qDataPages.
     */
-  def getData(qPages: js.Array[INxPage]): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getData(qPages: js.Array[INxPage]): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets a data row for this object.
     * @param rownum - The row number.
@@ -113,12 +113,12 @@ trait IBackend extends js.Object {
     * @param qPages - An array of request page objects.
     * @return - A promise of pivot data pages.
     */
-  def getPivotData(qPages: js.Array[INxPage]): angularLib.angularMod.angularNs.IPromise[js.Array[INxPage]] = js.native
+  def getPivotData(qPages: js.Array[INxPage]): angularLib.angularMod.IPromise[js.Array[INxPage]] = js.native
   /**
     * Get properties for this object.
     * @return - A promise of object properties.
     */
-  def getProperties(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getProperties(): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Get reduced data from the Qlik engine for this object. This method is intended for preserving the
     * shape of the data, not for viewing the actual data points.
@@ -137,7 +137,7 @@ trait IBackend extends js.Object {
     *        # ST to reduce the data of a stacked pivot table.
     * @return - A promise of reduced data pages.
     */
-  def getReducedData(qPages: js.Array[INxPage], qZoomFactor: scala.Double, qReductionMode: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getReducedData(qPages: js.Array[INxPage], qZoomFactor: scala.Double, qReductionMode: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Get total number of data rows for this object.
     * @return - A number.
@@ -149,7 +149,7 @@ trait IBackend extends js.Object {
     * @param qMaxNbrCells - Maximum number of cells at outer level.
     * @return - A promise of stack data pages.
     */
-  def getStackedData(qPages: js.Array[INxPage], qMaxNbrCells: scala.Double): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getStackedData(qPages: js.Array[INxPage], qMaxNbrCells: scala.Double): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Find out if there are unconfirmed selections for this object.
     * @return - True if there are unconfirmed selections.
@@ -159,7 +159,7 @@ trait IBackend extends js.Object {
     * Save this object.
     * @return - A promise. In case of success, it returns "undefined". In case of failure it returns the error.
     */
-  def save(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def save(): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Search for a term in a list object. Results in an updated layout, containing only matching records.
     * @param term - Term to search for.
@@ -184,6 +184,6 @@ trait IBackend extends js.Object {
     * @param props - The properties to set.
     * @return - A promise of a Qlik engine reply.
     */
-  def setProperties(props: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def setProperties(props: js.Any): angularLib.angularMod.IPromise[_] = js.native
 }
 

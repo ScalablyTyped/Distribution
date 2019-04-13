@@ -14,22 +14,22 @@ import scala.scalajs.js.annotation._
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var deleteKeys: js.UndefOr[scala.Double | java.lang.String | (js.Array[scala.Double | java.lang.String])] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var dropdownIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var dropdownIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
-  var errorText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var errorText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var floating: js.UndefOr[scala.Boolean] = js.undefined
   var getItemProps: js.UndefOr[js.Function1[/* data */ js.Object, js.Object]] = js.undefined
   var helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var helpText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var helpText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
-  var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var inputStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var itemLabel: js.UndefOr[java.lang.String] = js.undefined
   var itemProps: js.UndefOr[java.lang.String] = js.undefined
   var itemValue: js.UndefOr[java.lang.String] = js.undefined
   var keyboardMatchingTimeout: js.UndefOr[scala.Double] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var lineDirection: js.UndefOr[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
@@ -37,9 +37,7 @@ import scala.scalajs.js.annotation._
   var maxRows: js.UndefOr[scala.Double] = js.undefined
   var menuId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var menuItems: js.UndefOr[
-    js.Array[
-      scala.Double | java.lang.String | js.Object | reactLib.reactMod.ReactNs.ReactElement[_]
-    ]
+    js.Array[scala.Double | java.lang.String | js.Object | reactLib.reactMod.ReactElement[_]]
   ] = js.undefined
   var menuTransitionEnterTimeout: js.UndefOr[scala.Double] = js.undefined
   var menuTransitionLeaveTiemout: js.UndefOr[scala.Double] = js.undefined
@@ -50,7 +48,7 @@ import scala.scalajs.js.annotation._
     js.Function4[
       /* value */ scala.Double | java.lang.String, 
       /* selectedIndex */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ FieldDataProps, 
       scala.Unit
     ]
@@ -58,16 +56,16 @@ import scala.scalajs.js.annotation._
   var onVisibilityChange: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var paddedBlock: js.UndefOr[scala.Boolean] = js.undefined
-  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var passwordIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var passwordIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -78,7 +76,7 @@ import scala.scalajs.js.annotation._
   var position: js.UndefOr[reactDashMdLib.libHelpersLayoverMod.LayoverPositions] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var resize: js.UndefOr[reactDashMdLib.Anon_DisableShrink] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
   var simplifiedMenu: js.UndefOr[scala.Boolean] = js.undefined
@@ -86,7 +84,7 @@ import scala.scalajs.js.annotation._
   var stripActiveItem: js.UndefOr[scala.Boolean] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var toggleClassName: js.UndefOr[java.lang.String] = js.undefined
-  var toggleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var toggleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var toolbar: js.UndefOr[scala.Boolean] = js.undefined
   var transitionTime: js.UndefOr[scala.Double] = js.undefined
   var `type`: js.UndefOr[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes] = js.undefined
@@ -109,9 +107,9 @@ object SharedSelectFieldProps {
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     deleteKeys: scala.Double | java.lang.String | (js.Array[scala.Double | java.lang.String]) = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    dropdownIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    dropdownIcon: reactLib.reactMod.ReactElement[_] = null,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    errorText: reactLib.reactMod.ReactNs.ReactNode = null,
+    errorText: reactLib.reactMod.ReactNode = null,
     fillViewportHeight: js.UndefOr[scala.Boolean] = js.undefined,
     fillViewportWidth: js.UndefOr[scala.Boolean] = js.undefined,
     fixedTo: js.Object | reactDashMdLib.Anon_X = null,
@@ -119,17 +117,17 @@ object SharedSelectFieldProps {
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     getItemProps: /* data */ js.Object => js.Object = null,
     helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    helpText: reactLib.reactMod.ReactNs.ReactNode = null,
+    helpText: reactLib.reactMod.ReactNode = null,
     id: reactDashMdLib.libMod.IdPropType = null,
-    inlineIndicator: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    inlineIndicator: reactLib.reactMod.ReactElement[_] = null,
     inputClassName: java.lang.String = null,
-    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inputStyle: reactLib.reactMod.CSSProperties = null,
     itemLabel: java.lang.String = null,
     itemProps: java.lang.String = null,
     itemValue: java.lang.String = null,
     keyboardMatchingTimeout: scala.Int | scala.Double = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
-    leftIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    label: reactLib.reactMod.ReactNode = null,
+    leftIcon: reactLib.reactMod.ReactElement[_] = null,
     leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined,
     lineDirection: reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections = null,
     listClassName: java.lang.String = null,
@@ -137,15 +135,13 @@ object SharedSelectFieldProps {
     listId: reactDashMdLib.libMod.IdPropType = null,
     listInline: js.UndefOr[scala.Boolean] = js.undefined,
     listProps: js.Object = null,
-    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    listStyle: reactLib.reactMod.CSSProperties = null,
     listZDepth: scala.Int | scala.Double = null,
     max: scala.Int | scala.Double = null,
     maxLength: scala.Int | scala.Double = null,
     maxRows: scala.Int | scala.Double = null,
     menuId: reactDashMdLib.libMod.IdPropType = null,
-    menuItems: js.Array[
-      scala.Double | java.lang.String | js.Object | reactLib.reactMod.ReactNs.ReactElement[_]
-    ] = null,
+    menuItems: js.Array[scala.Double | java.lang.String | js.Object | reactLib.reactMod.ReactElement[_]] = null,
     menuTransitionEnterTimeout: scala.Int | scala.Double = null,
     menuTransitionLeaveTiemout: scala.Int | scala.Double = null,
     menuTransitionName: java.lang.String = null,
@@ -154,35 +150,35 @@ object SharedSelectFieldProps {
     minLeft: scala.Double | java.lang.String = null,
     minRight: scala.Double | java.lang.String = null,
     name: java.lang.String = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onChange: (/* value */ scala.Double | java.lang.String, /* selectedIndex */ scala.Double, /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ FieldDataProps) => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onVisibilityChange: (/* visible */ scala.Boolean, /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onChange: (/* value */ scala.Double | java.lang.String, /* selectedIndex */ scala.Double, /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ FieldDataProps) => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onVisibilityChange: (/* visible */ scala.Boolean, /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     paddedBlock: js.UndefOr[scala.Boolean] = js.undefined,
-    passwordIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    passwordIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    passwordIcon: reactLib.reactMod.ReactElement[_] = null,
+    passwordIconChildren: reactLib.reactMod.ReactNode = null,
     passwordIconClassName: java.lang.String = null,
     passwordInitiallyVisible: js.UndefOr[scala.Boolean] = js.undefined,
     pattern: java.lang.String = null,
@@ -192,17 +188,17 @@ object SharedSelectFieldProps {
     repositionOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     resize: reactDashMdLib.Anon_DisableShrink = null,
-    rightIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    rightIcon: reactLib.reactMod.ReactElement[_] = null,
     rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
     sameWidth: js.UndefOr[scala.Boolean] = js.undefined,
     simplifiedMenu: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
     stripActiveItem: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     toggleClassName: java.lang.String = null,
-    toggleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    toggleStyle: reactLib.reactMod.CSSProperties = null,
     toolbar: js.UndefOr[scala.Boolean] = js.undefined,
     transitionEnterTimeout: scala.Int | scala.Double = null,
     transitionLeaveTimeout: scala.Int | scala.Double = null,

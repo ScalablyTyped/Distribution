@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Glacier ()
   extends awsDashSdkLib.clientsAllMod.Glacier {
-  def this(options: awsDashSdkLib.clientsGlacierMod.GlacierNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsGlacierMod.ClientConfiguration) = this()
 }
 

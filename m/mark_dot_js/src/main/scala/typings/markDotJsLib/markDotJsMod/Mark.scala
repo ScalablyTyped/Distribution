@@ -15,9 +15,9 @@ trait Mark extends js.Object {
     * @param options Optional options
     */
   def mark(keyword: java.lang.String): scala.Unit = js.native
-  def mark(keyword: java.lang.String, options: markDotJsLib.markDotJsMod.MarkNs.MarkOptions): scala.Unit = js.native
+  def mark(keyword: java.lang.String, options: MarkOptions): scala.Unit = js.native
   def mark(keyword: js.Array[java.lang.String]): scala.Unit = js.native
-  def mark(keyword: js.Array[java.lang.String], options: markDotJsLib.markDotJsMod.MarkNs.MarkOptions): scala.Unit = js.native
+  def mark(keyword: js.Array[java.lang.String], options: MarkOptions): scala.Unit = js.native
   /**
     * A method to mark ranges with a start position and length. They will be applied
     * to text nodes in the specified context.
@@ -25,11 +25,8 @@ trait Mark extends js.Object {
     * Note that the start positions must be specified including whitespace characters.
     * @param options Optional options
     */
-  def markRanges(ranges: js.Array[markDotJsLib.markDotJsMod.MarkNs.Range]): scala.Unit = js.native
-  def markRanges(
-    ranges: js.Array[markDotJsLib.markDotJsMod.MarkNs.Range],
-    options: markDotJsLib.markDotJsMod.MarkNs.MarkOptions
-  ): scala.Unit = js.native
+  def markRanges(ranges: js.Array[Range]): scala.Unit = js.native
+  def markRanges(ranges: js.Array[Range], options: MarkOptions): scala.Unit = js.native
   /**
     * highlight custom regular expressions.
     * @param regexp The regular expression to be marked. Example: /Lor[^]?m/gmi.
@@ -37,12 +34,12 @@ trait Mark extends js.Object {
     * @param options Optional options
     */
   def markRegExp(regexp: stdLib.RegExp): scala.Unit = js.native
-  def markRegExp(regexp: stdLib.RegExp, options: markDotJsLib.markDotJsMod.MarkNs.MarkRegExpOptions): scala.Unit = js.native
+  def markRegExp(regexp: stdLib.RegExp, options: MarkRegExpOptions): scala.Unit = js.native
   /**
     * A method to remove highlights created by mark.js.
     * @param options Optional options
     */
   def unmark(): scala.Unit = js.native
-  def unmark(options: markDotJsLib.markDotJsMod.MarkNs.MarkOptions): scala.Unit = js.native
+  def unmark(options: MarkOptions): scala.Unit = js.native
 }
 

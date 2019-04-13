@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto", "Cipher")
 @js.native
 class Cipher ()
-  extends fibjsLib.cryptoMod.cryptoNs.Cipher
+  extends fibjsLib.Class_Cipher
 

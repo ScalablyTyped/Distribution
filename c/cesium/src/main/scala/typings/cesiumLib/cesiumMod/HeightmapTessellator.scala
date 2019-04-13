@@ -5,11 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait HeightmapTessellator extends js.Object
+
 @JSImport("cesium", "HeightmapTessellator")
 @js.native
 object HeightmapTessellator extends js.Object {
-  val DEFAULT_STRUCTURE: cesiumLib.cesiumMod.CesiumNs.HeightmapTessellator.DEFAULT_STRUCTURE with java.lang.String = js.native
+  @js.native
+  sealed trait DEFAULT_STRUCTURE
+    extends cesiumLib.cesiumMod.HeightmapTessellator
+  
+  val DEFAULT_STRUCTURE: DEFAULT_STRUCTURE with java.lang.String = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.CesiumNs.HeightmapTessellator with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.HeightmapTessellator with java.lang.String] = js.native
 }
 

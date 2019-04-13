@@ -14,7 +14,7 @@ trait FluxStore[TPayload] extends js.Object {
   var __changeEvent: java.lang.String
   var __changed: scala.Boolean
   var __className: java.lang.String
-  var __dispatcher: fluxLib.libDispatcherMod.namespaced[TPayload]
+  var __dispatcher: fluxLib.libDispatcherMod.^[TPayload]
   var __emitter: fbemitterLib.fbemitterMod.EventEmitter
   /**
     * Emit an event notifying all listeners that this store has changed.
@@ -48,7 +48,7 @@ trait FluxStore[TPayload] extends js.Object {
   /**
     * Returns the dispatcher this store is registered with.
     */
-  def getDispatcher(): fluxLib.libDispatcherMod.namespaced[TPayload]
+  def getDispatcher(): fluxLib.libDispatcherMod.^[TPayload]
   /**
     * Ask if a store has changed during the current dispatch.
     * Can only be invoked while dispatching.
@@ -63,14 +63,14 @@ object FluxStore {
     __changeEvent: java.lang.String,
     __changed: scala.Boolean,
     __className: java.lang.String,
-    __dispatcher: fluxLib.libDispatcherMod.namespaced[TPayload],
+    __dispatcher: fluxLib.libDispatcherMod.^[TPayload],
     __emitChange: () => scala.Unit,
     __emitter: fbemitterLib.fbemitterMod.EventEmitter,
     __invokeOnDispatch: TPayload => scala.Unit,
     __onDispatch: TPayload => scala.Unit,
     addListener: js.Function0[scala.Unit] => fbemitterLib.fbemitterMod.EventSubscription,
     getDispatchToken: () => java.lang.String,
-    getDispatcher: () => fluxLib.libDispatcherMod.namespaced[TPayload],
+    getDispatcher: () => fluxLib.libDispatcherMod.^[TPayload],
     hasChanged: () => scala.Boolean
   ): FluxStore[TPayload] = {
     val __obj = js.Dynamic.literal(__changeEvent = __changeEvent, __changed = __changed, __className = __className, __dispatcher = __dispatcher, __emitChange = js.Any.fromFunction0(__emitChange), __emitter = __emitter, __invokeOnDispatch = js.Any.fromFunction1(__invokeOnDispatch), __onDispatch = js.Any.fromFunction1(__onDispatch), addListener = js.Any.fromFunction1(addListener), getDispatchToken = js.Any.fromFunction0(getDispatchToken), getDispatcher = js.Any.fromFunction0(getDispatcher), hasChanged = js.Any.fromFunction0(hasChanged))

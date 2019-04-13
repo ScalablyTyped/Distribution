@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Loader protected ()
   extends hlsDotJsLib.hlsDotJsMod.Loader {
-  def this(config: hlsDotJsLib.hlsDotJsMod.HlsNs.LoaderConfig) = this()
+  def this(config: hlsDotJsLib.hlsDotJsMod.LoaderConfig) = this()
 }
 

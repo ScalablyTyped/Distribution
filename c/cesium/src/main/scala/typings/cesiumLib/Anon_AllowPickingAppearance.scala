@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AllowPickingAppearance extends js.Object {
   var allowPicking: js.UndefOr[scala.Boolean] = js.undefined
-  var appearance: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Appearance] = js.undefined
+  var appearance: js.UndefOr[cesiumLib.cesiumMod.Appearance] = js.undefined
   var asynchronous: js.UndefOr[scala.Boolean] = js.undefined
   var compressVertices: js.UndefOr[scala.Boolean] = js.undefined
   var cull: js.UndefOr[scala.Boolean] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined
-  var geometryInstances: js.UndefOr[js.Array[_] | cesiumLib.cesiumMod.CesiumNs.GeometryInstance] = js.undefined
+  var geometryInstances: js.UndefOr[js.Array[_] | cesiumLib.cesiumMod.GeometryInstance] = js.undefined
   var interleave: js.UndefOr[scala.Boolean] = js.undefined
-  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
+  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
   var releaseGeometryInstances: js.UndefOr[scala.Boolean] = js.undefined
-  var shadows: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ShadowMode] = js.undefined
+  var shadows: js.UndefOr[cesiumLib.cesiumMod.ShadowMode] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var vertexCacheOptimize: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -25,16 +25,16 @@ object Anon_AllowPickingAppearance {
   @scala.inline
   def apply(
     allowPicking: js.UndefOr[scala.Boolean] = js.undefined,
-    appearance: cesiumLib.cesiumMod.CesiumNs.Appearance = null,
+    appearance: cesiumLib.cesiumMod.Appearance = null,
     asynchronous: js.UndefOr[scala.Boolean] = js.undefined,
     compressVertices: js.UndefOr[scala.Boolean] = js.undefined,
     cull: js.UndefOr[scala.Boolean] = js.undefined,
     debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined,
-    geometryInstances: js.Array[_] | cesiumLib.cesiumMod.CesiumNs.GeometryInstance = null,
+    geometryInstances: js.Array[_] | cesiumLib.cesiumMod.GeometryInstance = null,
     interleave: js.UndefOr[scala.Boolean] = js.undefined,
-    modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
+    modelMatrix: cesiumLib.cesiumMod.Matrix4 = null,
     releaseGeometryInstances: js.UndefOr[scala.Boolean] = js.undefined,
-    shadows: cesiumLib.cesiumMod.CesiumNs.ShadowMode = null,
+    shadows: cesiumLib.cesiumMod.ShadowMode = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     vertexCacheOptimize: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AllowPickingAppearance = {

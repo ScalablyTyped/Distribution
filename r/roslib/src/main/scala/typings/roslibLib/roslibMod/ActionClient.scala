@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("roslib", "ActionClient")
 @js.native
-class ActionClient protected ()
-  extends roslibLib.roslibMod.ROSLIBNs.ActionClient {
+class ActionClient protected () extends js.Object {
   /**
   		 * An actionlib action client.
   		 *
@@ -29,7 +28,6 @@ class ActionClient protected ()
   /**
   		 * Cancel all goals associated with this ActionClient.
   		 */
-  /* CompleteClass */
-  override def cancel(): scala.Unit = js.native
+  def cancel(): scala.Unit = js.native
 }
 

@@ -14,7 +14,7 @@ trait FlexProps
   var onClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object FlexProps {
@@ -22,7 +22,7 @@ object FlexProps {
   def apply(
     align: antdDashMobileLib.antdDashMobileLibStrings.start | antdDashMobileLib.antdDashMobileLibStrings.center | antdDashMobileLib.antdDashMobileLibStrings.end | antdDashMobileLib.antdDashMobileLibStrings.baseline | antdDashMobileLib.antdDashMobileLibStrings.stretch = null,
     alignContent: antdDashMobileLib.antdDashMobileLibStrings.start | antdDashMobileLib.antdDashMobileLibStrings.end | antdDashMobileLib.antdDashMobileLibStrings.center | antdDashMobileLib.antdDashMobileLibStrings.between | antdDashMobileLib.antdDashMobileLibStrings.around | antdDashMobileLib.antdDashMobileLibStrings.stretch = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     direction: antdDashMobileLib.antdDashMobileLibStrings.row | antdDashMobileLib.antdDashMobileLibStrings.`row-reverse` | antdDashMobileLib.antdDashMobileLibStrings.column | antdDashMobileLib.antdDashMobileLibStrings.`column-reverse` = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -30,7 +30,7 @@ object FlexProps {
     onClick: () => scala.Unit = null,
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     wrap: antdDashMobileLib.antdDashMobileLibStrings.nowrap | antdDashMobileLib.antdDashMobileLibStrings.wrap | antdDashMobileLib.antdDashMobileLibStrings.`wrap-reverse` = null
   ): FlexProps = {
     val __obj = js.Dynamic.literal()

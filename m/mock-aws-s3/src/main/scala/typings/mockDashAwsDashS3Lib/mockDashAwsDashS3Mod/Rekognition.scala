@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Rekognition ()
   extends awsDashSdkLib.awsDashSdkMod.Rekognition {
-  def this(options: awsDashSdkLib.clientsRekognitionMod.RekognitionNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsRekognitionMod.ClientConfiguration) = this()
 }
 

@@ -44,7 +44,7 @@ object ojInputDateSettableProperties {
     helpHints: atOracleOraclejetLib.Anon_Definition,
     keyboardEdit: atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled,
     labelHint: java.lang.String,
-    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^],
     pickerAttributes: atOracleOraclejetLib.Anon_Class,
     placeholder: java.lang.String,
     rawValue: java.lang.String,

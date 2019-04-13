@@ -9,7 +9,7 @@ trait SegmentedControlProps
   extends antdDashMobileLib.libSegmentedDashControlPropsTypeMod.SegmentedControlPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SegmentedControlProps {
@@ -21,7 +21,7 @@ object SegmentedControlProps {
     onValueChange: /* value */ java.lang.String => scala.Unit = null,
     prefixCls: java.lang.String = null,
     selectedIndex: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tintColor: java.lang.String = null,
     values: js.Array[java.lang.String] = null
   ): SegmentedControlProps = {

@@ -10,31 +10,19 @@ import scala.scalajs.js.annotation._
   * which button was clicked and to signal the host that it has completed its processing.
   * 
   * @remarks
+  * See {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
   * 
-  * <table>
-  *   <tr><td>Add-in type</td><td>Content, task pane, Outlook</td></tr>
-  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-  * </table>
+  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
 trait Event extends js.Object {
   /**
     * Information about the control that triggered calling this function.
     * 
-    * **Support details**
+    * @remarks
     * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Outlook </strong></td><td> Y (Mailbox 1.3)            </td><td>                            </td><td>                 </td></tr>
-    *  </table>
+    * This property is only supported in Outlook in {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
     */
   var source: Source = js.native
   /**
@@ -51,27 +39,10 @@ trait Event extends js.Object {
     *
     * @remarks
     * 
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop                                                                                  </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                                                                                                           </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y (Since Mailbox 1.3: without `options` parameter;<br>Mailbox Preview: adds support for `options` parameter)</td><td>                            </td><td>                 </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                                                                                                           </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                                                                                                           </td><td> Y                          </td><td> Y               </td></tr>
-    *  </table>
+    * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter)
     * 
     * @param options Optional. An object literal that contains one or more of the following properties.
     *        allowEvent: A boolean value. When the completed method is used to signal completion of an event handler, 

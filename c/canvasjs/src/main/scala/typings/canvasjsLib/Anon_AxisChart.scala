@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AxisChart extends js.Object {
-  var axis: canvasjsLib.canvasjsMod.CanvasJSNs.ChartAxisYOptions
-  var chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart
+  var axis: canvasjsLib.canvasjsMod.ChartAxisYOptions
+  var chart: canvasjsLib.canvasjsMod.Chart
   var label: java.lang.String
   var value: scala.Double
 }
@@ -15,8 +15,8 @@ trait Anon_AxisChart extends js.Object {
 object Anon_AxisChart {
   @scala.inline
   def apply(
-    axis: canvasjsLib.canvasjsMod.CanvasJSNs.ChartAxisYOptions,
-    chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart,
+    axis: canvasjsLib.canvasjsMod.ChartAxisYOptions,
+    chart: canvasjsLib.canvasjsMod.Chart,
     label: java.lang.String,
     value: scala.Double
   ): Anon_AxisChart = {

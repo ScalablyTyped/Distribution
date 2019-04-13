@@ -9,7 +9,7 @@ trait Anon_AddonTypeAppend extends js.Object {
   var addonType: reactstrapLib.reactstrapLibStrings.prepend | reactstrapLib.reactstrapLibStrings.append
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_AddonTypeAppend {
@@ -18,7 +18,7 @@ object Anon_AddonTypeAppend {
     addonType: reactstrapLib.reactstrapLibStrings.prepend | reactstrapLib.reactstrapLibStrings.append,
     className: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_AddonTypeAppend = {
     val __obj = js.Dynamic.literal(addonType = addonType.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

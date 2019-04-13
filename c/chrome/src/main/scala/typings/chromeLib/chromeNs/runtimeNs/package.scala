@@ -15,6 +15,7 @@ package object runtimeNs {
       scala.Unit
     ]
   ]
+  type ManifestIcons = org.scalablytyped.runtime.NumberDictionary[java.lang.String]
   type PortDisconnectEvent = chromeLib.chromeNs.eventsNs.Event[js.Function1[/* port */ Port, scala.Unit]]
   type PortMessageEvent = chromeLib.chromeNs.eventsNs.Event[js.Function2[/* message */ js.Any, /* port */ Port, scala.Unit]]
   type RuntimeEvent = chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]

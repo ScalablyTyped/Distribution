@@ -38,7 +38,7 @@ trait UISortableProperties[T] extends js.Object {
   /**
     * Holds the ui-sortable element that the dragged item originated from.
     */
-  var source: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var source: angularLib.angularMod.IAugmentedJQuery
   /**
     * Holds the array that is specified by the `ng-model` of the [`source`](#source) ui-sortable element.
     */
@@ -70,7 +70,7 @@ object UISortableProperties {
     isCustomHelperUsed: () => scala.Boolean,
     model: T,
     received: scala.Boolean,
-    source: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    source: angularLib.angularMod.IAugmentedJQuery,
     sourceModel: js.Array[T],
     moved: T = null
   ): UISortableProperties[T] = {

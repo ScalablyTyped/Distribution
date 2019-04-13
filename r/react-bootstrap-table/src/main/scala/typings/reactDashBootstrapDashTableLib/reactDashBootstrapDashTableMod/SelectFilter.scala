@@ -25,7 +25,7 @@ trait SelectFilter extends _Filter {
   /**
   	 * CSS Style to use for the select filter.
   	 */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
   	 * Filter type must be 'SelectFilter'
   	 */
@@ -44,7 +44,7 @@ object SelectFilter {
     condition: FilterCondition = null,
     defaultValue: java.lang.String | scala.Double | scala.Boolean = null,
     selectText: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     withoutEmptyOption: js.UndefOr[scala.Boolean] = js.undefined
   ): SelectFilter = {
     val __obj = js.Dynamic.literal(options = options)

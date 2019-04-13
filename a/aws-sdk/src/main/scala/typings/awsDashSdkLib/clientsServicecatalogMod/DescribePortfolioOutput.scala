@@ -1,0 +1,33 @@
+package typings
+package awsDashSdkLib.clientsServicecatalogMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DescribePortfolioOutput extends js.Object {
+  /**
+    * Information about the portfolio.
+    */
+  var PortfolioDetail: js.UndefOr[PortfolioDetail] = js.undefined
+  /**
+    * Information about the TagOptions associated with the portfolio.
+    */
+  var TagOptions: js.UndefOr[TagOptionDetails] = js.undefined
+  /**
+    * Information about the tags associated with the portfolio.
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
+}
+
+object DescribePortfolioOutput {
+  @scala.inline
+  def apply(PortfolioDetail: PortfolioDetail = null, TagOptions: TagOptionDetails = null, Tags: Tags = null): DescribePortfolioOutput = {
+    val __obj = js.Dynamic.literal()
+    if (PortfolioDetail != null) __obj.updateDynamic("PortfolioDetail")(PortfolioDetail)
+    if (TagOptions != null) __obj.updateDynamic("TagOptions")(TagOptions)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    __obj.asInstanceOf[DescribePortfolioOutput]
+  }
+}
+

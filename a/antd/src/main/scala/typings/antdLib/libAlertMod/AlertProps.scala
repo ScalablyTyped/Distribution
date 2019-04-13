@@ -13,19 +13,19 @@ trait AlertProps extends js.Object {
   /** Whether Alert can be closed */
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   /** Close text to show */
-  var closeText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var closeText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional content of Alert */
-  var description: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var description: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var iconType: js.UndefOr[java.lang.String] = js.undefined
   /** Content of Alert */
-  var message: reactLib.reactMod.ReactNs.ReactNode
+  var message: reactLib.reactMod.ReactNode
   /** Callback when close Alert */
-  var onClose: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
+  var onClose: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   /** Whether to show icon */
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Type of Alert styles, options:`success`, `info`, `warning`, `error`
     */
@@ -37,19 +37,19 @@ trait AlertProps extends js.Object {
 object AlertProps {
   @scala.inline
   def apply(
-    message: reactLib.reactMod.ReactNs.ReactNode,
+    message: reactLib.reactMod.ReactNode,
     afterClose: () => scala.Unit = null,
     banner: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
-    closeText: reactLib.reactMod.ReactNs.ReactNode = null,
-    description: reactLib.reactMod.ReactNs.ReactNode = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    closeText: reactLib.reactMod.ReactNode = null,
+    description: reactLib.reactMod.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     iconType: java.lang.String = null,
-    onClose: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
+    onClose: reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement] = null,
     prefixCls: java.lang.String = null,
     showIcon: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: antdLib.antdLibStrings.success | antdLib.antdLibStrings.info | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.error = null
   ): AlertProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])

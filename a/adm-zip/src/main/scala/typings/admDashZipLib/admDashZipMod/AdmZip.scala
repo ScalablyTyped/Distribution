@@ -51,7 +51,7 @@ trait AdmZip extends js.Object {
     * @param comment Content of the comment.
     */
   def addZipComment(comment: java.lang.String): scala.Unit = js.native
-  def addZipEntryComment(entry: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry, comment: java.lang.String): scala.Unit = js.native
+  def addZipEntryComment(entry: IZipEntry, comment: java.lang.String): scala.Unit = js.native
   /**
     * Adds a comment to a specified file or `IZipEntry`. The zip must be rewritten after
     * adding the comment.
@@ -60,7 +60,7 @@ trait AdmZip extends js.Object {
     * @param comment The comment to add to the entry.
     */
   def addZipEntryComment(entry: java.lang.String, comment: java.lang.String): scala.Unit = js.native
-  def deleteFile(entry: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry): scala.Unit = js.native
+  def deleteFile(entry: IZipEntry): scala.Unit = js.native
   /**
     * Remove the entry from the file or the entry and all its nested directories
     * and files if the given entry is a directory.
@@ -89,14 +89,10 @@ trait AdmZip extends js.Object {
     overwrite: scala.Boolean,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def extractEntryTo(entryPath: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry, targetPath: java.lang.String): scala.Boolean = js.native
+  def extractEntryTo(entryPath: IZipEntry, targetPath: java.lang.String): scala.Boolean = js.native
+  def extractEntryTo(entryPath: IZipEntry, targetPath: java.lang.String, maintainEntryPath: scala.Boolean): scala.Boolean = js.native
   def extractEntryTo(
-    entryPath: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry,
-    targetPath: java.lang.String,
-    maintainEntryPath: scala.Boolean
-  ): scala.Boolean = js.native
-  def extractEntryTo(
-    entryPath: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry,
+    entryPath: IZipEntry,
     targetPath: java.lang.String,
     maintainEntryPath: scala.Boolean,
     overwrite: scala.Boolean
@@ -125,26 +121,26 @@ trait AdmZip extends js.Object {
     * Returns an array of `IZipEntry` objects representing the files and folders
     * inside the archive.
     */
-  def getEntries(): js.Array[admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry] = js.native
+  def getEntries(): js.Array[IZipEntry] = js.native
   /**
     * Returns a `IZipEntry` object representing the file or folder specified by `name`.
     * @param name Name of the file or folder to retrieve.
     * @return The entry corresponding to the `name`.
     */
-  def getEntry(name: java.lang.String): admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry = js.native
+  def getEntry(name: java.lang.String): IZipEntry = js.native
   /**
     * @return The zip comment.
     */
   def getZipComment(): java.lang.String = js.native
-  def getZipEntryComment(entry: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry): java.lang.String = js.native
+  def getZipEntryComment(entry: IZipEntry): java.lang.String = js.native
   /**
     * Returns the comment of the specified entry.
     * @param entry The full path of the entry or a `IZipEntry` object.
     * @return The comment of the specified entry.
     */
   def getZipEntryComment(entry: java.lang.String): java.lang.String = js.native
-  def readAsText(fileName: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry): java.lang.String = js.native
-  def readAsText(fileName: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry, encoding: java.lang.String): java.lang.String = js.native
+  def readAsText(fileName: IZipEntry): java.lang.String = js.native
+  def readAsText(fileName: IZipEntry, encoding: java.lang.String): java.lang.String = js.native
   /**
     * Extracts the given entry from the archive and returns the content as
     * plain text in the given encoding.
@@ -153,12 +149,9 @@ trait AdmZip extends js.Object {
     */
   def readAsText(fileName: java.lang.String): java.lang.String = js.native
   def readAsText(fileName: java.lang.String, encoding: java.lang.String): java.lang.String = js.native
+  def readAsTextAsync(fileName: IZipEntry, callback: js.Function1[/* data */ java.lang.String, _]): scala.Unit = js.native
   def readAsTextAsync(
-    fileName: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry,
-    callback: js.Function1[/* data */ java.lang.String, _]
-  ): scala.Unit = js.native
-  def readAsTextAsync(
-    fileName: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry,
+    fileName: IZipEntry,
     callback: js.Function1[/* data */ java.lang.String, _],
     encoding: java.lang.String
   ): scala.Unit = js.native
@@ -174,7 +167,7 @@ trait AdmZip extends js.Object {
     callback: js.Function1[/* data */ java.lang.String, _],
     encoding: java.lang.String
   ): scala.Unit = js.native
-  def readFile(entry: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry): nodeLib.Buffer | scala.Null = js.native
+  def readFile(entry: IZipEntry): nodeLib.Buffer | scala.Null = js.native
   /**
     * Extracts the given entry from the archive and returns the content.
     * @param entry The full path of the entry or a `IZipEntry` object.
@@ -182,7 +175,7 @@ trait AdmZip extends js.Object {
     */
   def readFile(entry: java.lang.String): nodeLib.Buffer | scala.Null = js.native
   def readFileAsync(
-    entry: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry,
+    entry: IZipEntry,
     callback: js.Function2[/* data */ nodeLib.Buffer | scala.Null, /* err */ java.lang.String, _]
   ): scala.Unit = js.native
   /**
@@ -198,7 +191,7 @@ trait AdmZip extends js.Object {
     * Returns the content of the entire zip file.
     */
   def toBuffer(): nodeLib.Buffer = js.native
-  def updateFile(entry: admDashZipLib.admDashZipMod.AdmZipNs.IZipEntry, content: nodeLib.Buffer): scala.Unit = js.native
+  def updateFile(entry: IZipEntry, content: nodeLib.Buffer): scala.Unit = js.native
   /**
     * Updates the content of an existing entry inside the archive. The zip
     * must be rewritten after updating the content.

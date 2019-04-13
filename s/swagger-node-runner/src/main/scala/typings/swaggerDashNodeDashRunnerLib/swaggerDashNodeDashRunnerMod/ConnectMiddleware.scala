@@ -9,7 +9,7 @@ trait ConnectMiddleware extends Middleware {
   def middleware(): js.Function3[
     /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
     /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ]
   /** Register this Middleware with `app`  */
@@ -24,7 +24,7 @@ object ConnectMiddleware {
     middleware: () => js.Function3[
       /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
       /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response, 
-      /* next */ expressLib.expressMod.eNs.NextFunction, 
+      /* next */ expressLib.expressMod.NextFunction, 
       scala.Unit
     ],
     register: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Application => scala.Unit,

@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(path: nodeLib.fsMod.PathLike): js.Any = js.native
-  def apply(
-    path: nodeLib.fsMod.PathLike,
-    options: stdLib.Partial[configDashYamlLib.configDashYamlMod.YamlNs.Options]
-  ): js.Any = js.native
+  def apply(path: nodeLib.fsMod.PathLike, options: stdLib.Partial[Options]): js.Any = js.native
 }
 

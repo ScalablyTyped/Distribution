@@ -13,6 +13,6 @@ object bunyanDashBlackholeMod extends js.Object {
     * @param name name of the blackhole Logger
     * @return A bunyan logger .
     */
-  def apply(name: java.lang.String): bunyanLib.bunyanMod.namespaced = js.native
+  def apply(name: java.lang.String): bunyanLib.bunyanMod.^ = js.native
 }
 

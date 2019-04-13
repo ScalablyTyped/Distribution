@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ElasticTranscoder ()
   extends awsDashSdkLib.clientsAllMod.ElasticTranscoder {
-  def this(options: awsDashSdkLib.clientsElastictranscoderMod.ElasticTranscoderNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsElastictranscoderMod.ClientConfiguration) = this()
 }
 

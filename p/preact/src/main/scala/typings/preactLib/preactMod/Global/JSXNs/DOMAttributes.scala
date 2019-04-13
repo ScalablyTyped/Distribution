@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DOMAttributes
-  extends preactLib.preactMod.preactNs.PreactDOMAttributes {
+  extends preactLib.preactMod.PreactDOMAttributes {
   // Media Events
   var onAbort: js.UndefOr[GenericEventHandler] = js.undefined
   var onAbortCapture: js.UndefOr[GenericEventHandler] = js.undefined
@@ -183,7 +183,7 @@ trait DOMAttributes
 object DOMAttributes {
   @scala.inline
   def apply(
-    children: preactLib.preactMod.preactNs.ComponentChildren = null,
+    children: preactLib.preactMod.ComponentChildren = null,
     dangerouslySetInnerHTML: preactLib.Anon_Html = null,
     onAbort: GenericEventHandler = null,
     onAbortCapture: GenericEventHandler = null,

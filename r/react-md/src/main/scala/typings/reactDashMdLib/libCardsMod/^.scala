@@ -8,19 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Cards", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Card: reactLib.reactMod.ReactNs.ComponentClass[reactDashMdLib.libCardsCardMod.CardProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val CardActions: reactLib.reactMod.ReactNs.ComponentClass[
+  val Card: reactLib.reactMod.ComponentClass[reactDashMdLib.libCardsCardMod.CardProps, reactLib.reactMod.ComponentState] = js.native
+  val CardActions: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libCardsCardActionsMod.CardActionsProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val CardText: reactLib.reactMod.ReactNs.ComponentClass[
-    reactDashMdLib.libCardsCardTextMod.CardTextProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
-  val CardTitle: reactLib.reactMod.ReactNs.ComponentClass[
+  val CardText: reactLib.reactMod.ComponentClass[reactDashMdLib.libCardsCardTextMod.CardTextProps, reactLib.reactMod.ComponentState] = js.native
+  val CardTitle: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libCardsCardTitleMod.CardTitleProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[reactDashMdLib.libCardsCardMod.CardProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[reactDashMdLib.libCardsCardMod.CardProps, reactLib.reactMod.ComponentState] = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("glob-base", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): globDashBaseLib.globDashBaseMod.globbaseNs.GlobBaseResult = js.native
-  def apply(basePath: java.lang.String): globDashBaseLib.globDashBaseMod.globbaseNs.GlobBaseResult = js.native
+  def apply(): GlobBaseResult = js.native
+  def apply(basePath: java.lang.String): GlobBaseResult = js.native
 }
 

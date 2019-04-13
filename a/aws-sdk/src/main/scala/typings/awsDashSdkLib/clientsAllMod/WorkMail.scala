@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class WorkMail ()
-  extends awsDashSdkLib.clientsWorkmailMod.namespaced {
-  def this(options: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsWorkmailMod.^ {
+  def this(options: awsDashSdkLib.clientsWorkmailMod.ClientConfiguration) = this()
 }
 

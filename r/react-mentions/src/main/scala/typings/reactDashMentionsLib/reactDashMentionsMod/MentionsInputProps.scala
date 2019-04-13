@@ -10,16 +10,16 @@ trait MentionsInputProps extends js.Object {
     * If set to `true` spaces will not interrupt matching suggestions
     */
   var allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[MentionProps]]
+  var children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]]
   var className: js.UndefOr[java.lang.String] = js.undefined
   var displayTransform: js.UndefOr[DisplayTransformFunc] = js.undefined
   var inputRef: js.UndefOr[
-    reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLInputElement]
+    reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.RefObject[stdLib.HTMLInputElement]
   ] = js.undefined
   var markup: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement], 
       /* clickedSuggestion */ scala.Boolean, 
       scala.Unit
     ]
@@ -27,12 +27,12 @@ trait MentionsInputProps extends js.Object {
   var onChange: js.UndefOr[OnChangeHandlerFunc] = js.undefined
   var onKeyDown: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onSelect: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.UIEvent[reactLib.Element], scala.Unit]
+    js.Function1[/* event */ reactLib.reactMod.UIEvent[reactLib.Element], scala.Unit]
   ] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var regex: js.UndefOr[stdLib.RegExp] = js.undefined
@@ -49,16 +49,16 @@ trait MentionsInputProps extends js.Object {
 object MentionsInputProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[MentionProps]],
+    children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]],
     allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     displayTransform: DisplayTransformFunc = null,
-    inputRef: reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.RefObject[stdLib.HTMLInputElement] = null,
     markup: java.lang.String = null,
-    onBlur: (/* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLTextAreaElement], /* clickedSuggestion */ scala.Boolean) => scala.Unit = null,
+    onBlur: (/* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement], /* clickedSuggestion */ scala.Boolean) => scala.Unit = null,
     onChange: OnChangeHandlerFunc = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
-    onSelect: /* event */ reactLib.reactMod.ReactNs.UIEvent[reactLib.Element] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
+    onSelect: /* event */ reactLib.reactMod.UIEvent[reactLib.Element] => scala.Unit = null,
     placeholder: java.lang.String = null,
     regex: stdLib.RegExp = null,
     singleLine: js.UndefOr[scala.Boolean] = js.undefined,

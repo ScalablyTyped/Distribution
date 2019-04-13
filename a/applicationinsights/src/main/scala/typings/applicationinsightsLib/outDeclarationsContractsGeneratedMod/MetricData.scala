@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "MetricData")
 @js.native
 class MetricData ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedMetricDataMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedMetricDataMod.^
 

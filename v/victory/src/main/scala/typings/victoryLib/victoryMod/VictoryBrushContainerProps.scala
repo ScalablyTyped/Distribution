@@ -26,7 +26,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * width, height, and style. When this prop is not specified, a <rect/> will be rendered.
     * @default brushComponent={<rect/>}
     */
-  var brushComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var brushComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * When the brushDimension prop is set, brushing will only be specific to the to
     * the given dimension (either "x" or "y"), and the entire domain of the other
@@ -49,7 +49,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * should be given as an object of SVG style attributes.
     * @default "brushStyle={{ stroke: "transparent", fill: "black", fillOpacity: 0.1 }}"
     */
-  var brushStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var brushStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * The defaultBrushArea prop specifies how the container will behave when a
     * region outside the active brush is clicked without selecting a new area. When the
@@ -71,7 +71,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * specified, a <rect/> will be rendered.
     * @default handleComponent={<rect/>}
     */
-  var handleComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var handleComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The handleStyle adds custom styles to the handleComponents. This prop should be given as an object of SVG style attributes.
     *
@@ -81,7 +81,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * rendered. Handles are automatically styled with cursors appropriate to their orientation.
     * @default "handleStyle={{ stroke: 'transparent', fill: 'transparent' }}"
     */
-  var handleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var handleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * The optional onBrushDomainChange prop accepts an function to be called on
     * each update to the highlighted domain. The function accepts the parameters of
@@ -98,20 +98,20 @@ object VictoryBrushContainerProps {
   def apply(
     allowDrag: js.UndefOr[scala.Boolean] = js.undefined,
     allowResize: js.UndefOr[scala.Boolean] = js.undefined,
-    brushComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    brushComponent: reactLib.reactMod.ReactElement[_] = null,
     brushDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,
     brushDomain: DomainPropType = null,
-    brushStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    brushStyle: reactLib.reactMod.CSSProperties = null,
     defaultBrushArea: victoryLib.victoryLibStrings.all | victoryLib.victoryLibStrings.none | victoryLib.victoryLibStrings.disable = null,
     desc: java.lang.String = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
-    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
-    handleComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    handleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    events: reactLib.reactMod.DOMAttributes[_] = null,
+    handleComponent: reactLib.reactMod.ReactElement[_] = null,
+    handleStyle: reactLib.reactMod.CSSProperties = null,
     height: scala.Int | scala.Double = null,
     onBrushDomainChange: (/* domain */ DomainPropType, /* props */ VictoryBrushContainerProps) => scala.Unit = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): VictoryBrushContainerProps = {

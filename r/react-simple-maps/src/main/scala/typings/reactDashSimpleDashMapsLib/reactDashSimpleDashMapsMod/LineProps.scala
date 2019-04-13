@@ -13,56 +13,56 @@ trait LineProps extends js.Object {
   var onBlur: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement], 
+      /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onFocus: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement], 
+      /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseDown: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseMove: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseUp: js.UndefOr[
     js.Function2[
       /* line */ Line, 
-      /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
+      /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -76,14 +76,14 @@ object LineProps {
   def apply(
     buildPath: (/* start */ Point, /* end */ Point, /* line */ Line) => java.lang.String = null,
     line: Line = null,
-    onBlur: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
-    onClick: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onFocus: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
-    onMouseDown: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseEnter: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseLeave: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseMove: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onMouseUp: (/* line */ Line, /* evt */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onBlur: (/* line */ Line, /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
+    onClick: (/* line */ Line, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onFocus: (/* line */ Line, /* evt */ reactLib.reactMod.FocusEvent[stdLib.SVGPathElement]) => scala.Unit = null,
+    onMouseDown: (/* line */ Line, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseEnter: (/* line */ Line, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseLeave: (/* line */ Line, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseMove: (/* line */ Line, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onMouseUp: (/* line */ Line, /* evt */ reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     preserveMarkerAspect: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashSimpleDashMapsLib.Anon_Default = null,
     tabable: js.UndefOr[scala.Boolean] = js.undefined

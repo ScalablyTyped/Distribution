@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Snackbar")
 @js.native
-class Snackbar ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Snackbar
+class Snackbar () extends __MDLComponent[SnackbarProps]
 

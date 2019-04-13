@@ -26,7 +26,7 @@ trait PopoverProps
 object PopoverProps {
   @scala.inline
   def apply(
-    overlay: reactLib.reactMod.ReactNs.ReactNode,
+    overlay: reactLib.reactMod.ReactNode,
     contextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,

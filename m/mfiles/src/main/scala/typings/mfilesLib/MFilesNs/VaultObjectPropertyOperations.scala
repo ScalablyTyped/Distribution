@@ -132,3 +132,8 @@ class VaultObjectPropertyOperations ()
   ): mfilesLib.IObjectVersionAndProperties = js.native
 }
 
+@JSGlobal("MFiles.VaultObjectPropertyOperations")
+@js.native
+object VaultObjectPropertyOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultObjectPropertyOperations]
+

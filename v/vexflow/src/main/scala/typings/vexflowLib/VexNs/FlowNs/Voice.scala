@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.Voice")
 @js.native
 class Voice protected () extends js.Object {
-  def this(time: vexflowLib.Anon_BeatvalueNumbeats) = this()
+  def this(time: vexflowLib.Anon_Beatvalue) = this()
   def addTickable(tickable: Tickable): Voice = js.native
   def addTickables(tickables: js.Array[Tickable]): Voice = js.native
   def draw(context: vexflowLib.VexNs.IRenderContext): scala.Unit = js.native

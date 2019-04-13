@@ -42,11 +42,15 @@ object FileSystemNs extends js.Object {
   */
   trait EncodingType extends js.Object
   
-  /* Rewritten from type alias, can be one of: 
-    - expoLib.Anon_Exists
-    - expoLib.Anon_ExistsFalse
-  */
-  trait FileInfo extends js.Object
+  @js.native
+  trait FileInfo extends js.Object {
+    var exists: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.native
+    var isDirectory: js.UndefOr[scala.Boolean | expoLib.expoLibNumbers.`false`] = js.native
+    var md5: js.UndefOr[expoLib.expoMod.Md5] = js.native
+    var modificationTime: js.UndefOr[scala.Double] = js.native
+    var size: js.UndefOr[scala.Double] = js.native
+    var uri: js.UndefOr[java.lang.String] = js.native
+  }
   
   trait PauseResult extends js.Object {
     var fileUri: java.lang.String

@@ -20,7 +20,7 @@ trait JQuery extends js.Object {
     * Filters, sorts, and lays out items. Pass in options to apply filtering and sorting.
     * @param options All options are optional, but itemSelector is recommended. Layout modes have their own separate options.
     */
-  def isotope(options: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.IsotopeOptions): JQuery = js.native
+  def isotope(options: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeOptions): JQuery = js.native
   /**
     * Adds item elements to the Isotope instance. addItems does not lay out items like appended, prepended, or insert.
     * @param elements Element, jQuery Object, NodeList, or Array of Elements
@@ -28,7 +28,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_addItems(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.addItems,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Adds and lays out newly appended item elements to the end of the layout.
@@ -37,7 +37,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_appended(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.appended,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Removes the Isotope functionality completely. destroy will return the element back to its pre-initialized state.
@@ -61,7 +61,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_hideItemElements(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.hideItemElements,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Appends elements into container element, adds elements as items, and arranges items with filtering and sorting.
@@ -70,7 +70,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_insert(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.insert,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Lays out all item elements. layout is useful when an item has changed size, and all items need to be laid out again. layout does not apply filtering or sorting.
@@ -95,7 +95,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_prepended(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.prepended,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Recollects all item elements.
@@ -110,7 +110,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_remove(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.remove,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Reveals hidden items.
@@ -119,7 +119,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_revealItemElements(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.revealItemElements,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Shuffles items in a random order.
@@ -134,7 +134,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_stamp(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.stamp,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Un-stamps elements in the layout, so that Isotope will no longer layout item elements around them.
@@ -143,7 +143,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_unstamp(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.unstamp,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
   /**
     * Updates sort data
@@ -152,7 +152,7 @@ trait JQuery extends js.Object {
   @JSName("isotope")
   def isotope_updateSortData(
     methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.updateSortData,
-    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements
+    elements: isotopeDashLayoutLib.isotopeDashLayoutMod.Elements
   ): JQuery = js.native
 }
 

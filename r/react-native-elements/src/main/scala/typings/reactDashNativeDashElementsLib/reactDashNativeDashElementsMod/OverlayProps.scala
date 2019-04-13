@@ -18,7 +18,7 @@ trait OverlayProps
   /**
     * Content of the overlay
     */
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement[_]
   /**
     * Style for the overlay container
     */
@@ -74,7 +74,7 @@ trait OverlayProps
 object OverlayProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    children: reactLib.reactMod.ReactElement[_],
     isVisible: scala.Boolean,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     animationType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.slide | reactDashNativeLib.reactDashNativeLibStrings.fade = null,

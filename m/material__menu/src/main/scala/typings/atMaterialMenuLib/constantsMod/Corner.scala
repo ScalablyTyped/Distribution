@@ -27,10 +27,11 @@ object Corner {
     TOP_END: atMaterialMenuLib.atMaterialMenuLibNumbers.`12`,
     TOP_LEFT: atMaterialMenuLib.atMaterialMenuLibNumbers.`0`,
     TOP_RIGHT: atMaterialMenuLib.atMaterialMenuLibNumbers.`4`,
-    TOP_START: atMaterialMenuLib.atMaterialMenuLibNumbers.`8`
+    TOP_START: atMaterialMenuLib.atMaterialMenuLibNumbers.`8`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[scala.Double] = null
   ): Corner = {
     val __obj = js.Dynamic.literal(BOTTOM_END = BOTTOM_END, BOTTOM_LEFT = BOTTOM_LEFT, BOTTOM_RIGHT = BOTTOM_RIGHT, BOTTOM_START = BOTTOM_START, TOP_END = TOP_END, TOP_LEFT = TOP_LEFT, TOP_RIGHT = TOP_RIGHT, TOP_START = TOP_START)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Corner]
   }
 }

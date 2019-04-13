@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MockReq extends js.Object {
   @JSName("acceptsCharsets")
-  var acceptsCharsets_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var acceptsCharsets_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("acceptsEncodings")
-  var acceptsEncodings_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var acceptsEncodings_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("acceptsLanguages")
-  var acceptsLanguages_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var acceptsLanguages_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("accepts")
-  var accepts_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var accepts_Original: sinonLib.sinonMod.SinonStub = js.native
   var body: js.Object = js.native
   @JSName("flash")
-  var flash_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var flash_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("get")
-  var get_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var get_Original: sinonLib.sinonMod.SinonStub = js.native
   @JSName("is")
-  var is_Original: sinonLib.sinonMod.SinonNs.SinonStub = js.native
+  var is_Original: sinonLib.sinonMod.SinonStub = js.native
   var params: js.Object = js.native
   var query: js.Object = js.native
   var session: js.Object = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/typography/Paragraph", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.SFC[ParagraphProps] = js.native
+  val default: reactLib.reactMod.SFC[ParagraphProps] = js.native
 }
 

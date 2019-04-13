@@ -14,7 +14,7 @@ trait IDomUtilityService extends js.Object {
   var numberOfGrids: scala.Double
   def AssignGridContainers(
     $scope: ngDashGridLib.ngGridNs.IGridScope,
-    rootel: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    rootel: angularLib.angularMod.IAugmentedJQuery,
     grid: ngDashGridLib.ngGridNs.IGridInstance
   ): scala.Unit
   def BuildStyles(
@@ -37,7 +37,7 @@ trait IDomUtilityService extends js.Object {
 object IDomUtilityService {
   @scala.inline
   def apply(
-    AssignGridContainers: (ngDashGridLib.ngGridNs.IGridScope, angularLib.angularMod.angularNs.IAugmentedJQuery, ngDashGridLib.ngGridNs.IGridInstance) => scala.Unit,
+    AssignGridContainers: (ngDashGridLib.ngGridNs.IGridScope, angularLib.angularMod.IAugmentedJQuery, ngDashGridLib.ngGridNs.IGridInstance) => scala.Unit,
     BuildStyles: (ngDashGridLib.ngGridNs.IGridScope, ngDashGridLib.ngGridNs.IGridInstance, scala.Boolean) => scala.Unit,
     LetterW: scala.Double,
     RebuildGrid: (ngDashGridLib.ngGridNs.IGridScope, ngDashGridLib.ngGridNs.IGridInstance) => scala.Unit,

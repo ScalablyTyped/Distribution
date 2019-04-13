@@ -30,7 +30,7 @@ trait NodeRendererProps extends js.Object {
   var path: reactDashSortableDashTreeLib.NumberOrStringArray = js.native
   var scaffoldBlockPxWidth: scala.Double = js.native
   var startDrag: js.Any = js.native
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.native
   var subtitle: js.UndefOr[js.Function1[/* data */ NodeData, reactLib.reactMod.Global.JSXNs.Element]] = js.native
   var swapDepth: js.UndefOr[scala.Double] = js.native
   var swapFrom: js.UndefOr[scala.Double] = js.native
@@ -39,15 +39,15 @@ trait NodeRendererProps extends js.Object {
   var toggleChildrenVisibility: js.UndefOr[js.Function1[/* data */ NodeData, scala.Unit]] = js.native
   var treeId: java.lang.String = js.native
   var treeIndex: scala.Double = js.native
-  def connectDragPreview(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def connectDragPreview(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def connectDragPreview(
     elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement,
     options: reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def connectDragSource(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def connectDragSource(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def connectDragSource(
     elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement,
     options: reactDashDndLib.libCjsInterfacesOptionsMod.DragSourceOptions
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

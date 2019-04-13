@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Validation", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Validation */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Validation = js.native
   val validation: fpDashTsLib.libFunctorMod.Functor2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[URI] = js.native
   def failure[L, A](l: L): Validation[L, A] = js.native
   def fromEither[L, A](e: fpDashTsLib.libEitherMod.Either[L, A]): Validation[L, A] = js.native

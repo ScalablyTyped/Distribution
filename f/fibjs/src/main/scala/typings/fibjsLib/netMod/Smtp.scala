@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("net", "Smtp")
 @js.native
 class Smtp ()
-  extends fibjsLib.netMod.netNs.Smtp
+  extends fibjsLib.Class_Smtp
 

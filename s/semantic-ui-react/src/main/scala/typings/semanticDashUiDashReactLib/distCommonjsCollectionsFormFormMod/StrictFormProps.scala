@@ -11,7 +11,7 @@ trait StrictFormProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Automatically show any error Message children. */
@@ -23,7 +23,7 @@ trait StrictFormProps extends js.Object {
   /** The HTML form submit handler. */
   var onSubmit: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLFormElement], 
+      /* event */ reactLib.reactMod.FormEvent[stdLib.HTMLFormElement], 
       /* data */ FormProps, 
       scala.Unit
     ]
@@ -47,12 +47,12 @@ object StrictFormProps {
   def apply(
     action: java.lang.String = null,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     error: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onSubmit: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLFormElement], /* data */ FormProps) => scala.Unit = null,
+    onSubmit: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLFormElement], /* data */ FormProps) => scala.Unit = null,
     reply: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     success: js.UndefOr[scala.Boolean] = js.undefined,

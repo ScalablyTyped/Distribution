@@ -9,6 +9,7 @@ package object griddleDashReactMod {
   type ColumnRenderProperties = griddleDashReactLib.griddleDashReactMod.componentsNs.ColumnDefinitionProps
   type Griddle[T] = reactLib.reactMod.Component[GriddleProps[T], js.Any, js.Any]
   type GriddleFilter = java.lang.String | RowFilter | (PropertyBag[java.lang.String | RowFilter])
+  type PropertyBag[T] = org.scalablytyped.runtime.StringDictionary[T]
   type RowFilter = js.Function3[
     /* row */ js.Any, 
     /* index */ scala.Double, 

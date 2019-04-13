@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("builder-util-runtime", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CURRENT_APP_INSTALLER_FILE_NAME: /* installer.exe */ java.lang.String = js.native
-  val CURRENT_APP_PACKAGE_FILE_NAME: /* package.7z */ java.lang.String = js.native
+  val CURRENT_APP_INSTALLER_FILE_NAME: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.installerDOTexe = js.native
+  val CURRENT_APP_PACKAGE_FILE_NAME: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.packageDOT7z = js.native
   def asArray[T](): js.Array[T] = js.native
   def asArray[T](v: T): js.Array[T] = js.native
   def asArray[T](v: js.Array[T]): js.Array[T] = js.native

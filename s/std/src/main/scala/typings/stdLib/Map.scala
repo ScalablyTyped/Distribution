@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Map[K, V] extends js.Object {
   /** Returns an iterable of entries in the map. */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
   val size: scala.Double = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
   def clear(): scala.Unit = js.native
   def delete(key: K): scala.Boolean = js.native
@@ -40,11 +40,7 @@ trait Map[K, V] extends js.Object {
 @JSGlobal("Map")
 @js.native
 class MapCls[K, V] () extends Map[K, V] {
-  def this(entries: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify readonly */ _
-    ]) = this()
-  def this(iterable: Iterable[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify readonly */ _
-    ]) = this()
+  def this(entries: js.Array[js.Tuple2[K, V]]) = this()
+  def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
 }
 

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashFlipDashCardLibComponents {
   @scala.inline
-  def Back: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps] = js.constructorOf[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.Back].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps]]
+  def Back: reactLib.reactMod.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps] = js.constructorOf[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.Back].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps]]
   @scala.inline
-  def Face: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FaceProps] = js.constructorOf[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.Face].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FaceProps]]
+  def Face: reactLib.reactMod.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FaceProps] = js.constructorOf[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.Face].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FaceProps]]
   @scala.inline
-  def ReactDashNativeDashFlipDashCard: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashFlipDashCard: reactLib.reactMod.ComponentType[
     reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FlipCardProps
-  ] = js.constructorOf[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.FlipCardProps]]
   @scala.inline
   def BackProps: reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps.type = reactDashNativeDashFlipDashCardLib.reactDashNativeDashFlipDashCardMod.BackProps

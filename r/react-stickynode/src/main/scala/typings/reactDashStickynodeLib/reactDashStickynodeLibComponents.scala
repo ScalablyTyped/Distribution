@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashStickynodeLibComponents {
   @scala.inline
-  def ReactDashStickynode: reactLib.reactMod.ReactNs.ComponentType[reactDashStickynodeLib.reactDashStickynodeMod.StickyNs.Props] = js.constructorOf[reactDashStickynodeLib.reactDashStickynodeMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashStickynodeLib.reactDashStickynodeMod.StickyNs.Props]]
+  def ReactDashStickynode: reactLib.reactMod.ComponentType[reactDashStickynodeLib.reactDashStickynodeMod.Props] = js.constructorOf[reactDashStickynodeLib.reactDashStickynodeMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashStickynodeLib.reactDashStickynodeMod.Props]]
   @scala.inline
-  def Props: reactDashStickynodeLib.reactDashStickynodeMod.StickyNs.Props.type = reactDashStickynodeLib.reactDashStickynodeMod.StickyNs.Props
-  type Props = reactDashStickynodeLib.reactDashStickynodeMod.StickyNs.Props
+  def Props: reactDashStickynodeLib.reactDashStickynodeMod.Props.type = reactDashStickynodeLib.reactDashStickynodeMod.Props
+  type Props = reactDashStickynodeLib.reactDashStickynodeMod.Props
 }
 

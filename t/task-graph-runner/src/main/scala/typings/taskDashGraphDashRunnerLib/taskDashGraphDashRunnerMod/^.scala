@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("task-graph-runner", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[Item, Result](opts: taskDashGraphDashRunnerLib.taskDashGraphDashRunnerMod.taskGraphRunnerNs.Opts[Item, Result]): js.Promise[
-    taskDashGraphDashRunnerLib.taskDashGraphDashRunnerMod.taskGraphRunnerNs.Results[Item, Result]
-  ] = js.native
+  def apply[Item, Result](opts: Opts[Item, Result]): js.Promise[Results[Item, Result]] = js.native
 }
 

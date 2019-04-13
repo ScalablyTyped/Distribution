@@ -11,7 +11,7 @@ trait StrictAdvertisementProps extends js.Object {
   /** Center the advertisement. */
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -28,7 +28,7 @@ object StrictAdvertisementProps {
     unit: (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`medium rectangle`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`large rectangle`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`vertical rectangle`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`small rectangle`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`mobile banner`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.banner | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`vertical banner`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top banner`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`half banner`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.button | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`square button`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`small button`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.skyscraper | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`wide skyscraper`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.leaderboard | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`large leaderboard`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`mobile leaderboard`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.billboard | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.panorama | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.netboard | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`half page`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.square | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`small square`),
     as: js.Any = null,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     test: scala.Boolean | java.lang.String | scala.Double = null

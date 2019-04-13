@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 /**
   * Provides information about the settings that raised the settingsChanged event.
   * 
-  * @remarks
-  * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
-  * 
   * To add an event handler for the settingsChanged event, use the addHandlerAsync method of the 
   * {@link Office.Settings} object.
   * 
@@ -25,21 +22,6 @@ import scala.scalajs.js.annotation._
   * is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet 
   * that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). 
   * Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this interface.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-  *   <tr><td><strong> Excel </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-  *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-  *  </table>
   */
 trait SettingsChangedEventArgs extends js.Object {
   /**

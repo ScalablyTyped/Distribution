@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Drawer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps] = js.native
+  val default: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps] = js.native
 }
 

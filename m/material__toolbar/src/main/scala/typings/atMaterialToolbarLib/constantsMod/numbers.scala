@@ -21,10 +21,11 @@ object numbers {
     MIN_TITLE_SIZE: atMaterialToolbarLib.atMaterialToolbarLibNumbers.`1DOT25`,
     TOOLBAR_MOBILE_BREAKPOINT: atMaterialToolbarLib.atMaterialToolbarLibNumbers.`600`,
     TOOLBAR_ROW_HEIGHT: atMaterialToolbarLib.atMaterialToolbarLibNumbers.`64`,
-    TOOLBAR_ROW_MOBILE_HEIGHT: atMaterialToolbarLib.atMaterialToolbarLibNumbers.`56`
+    TOOLBAR_ROW_MOBILE_HEIGHT: atMaterialToolbarLib.atMaterialToolbarLibNumbers.`56`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[scala.Double] = null
   ): numbers = {
     val __obj = js.Dynamic.literal(MAX_TITLE_SIZE = MAX_TITLE_SIZE, MIN_TITLE_SIZE = MIN_TITLE_SIZE, TOOLBAR_MOBILE_BREAKPOINT = TOOLBAR_MOBILE_BREAKPOINT, TOOLBAR_ROW_HEIGHT = TOOLBAR_ROW_HEIGHT, TOOLBAR_ROW_MOBILE_HEIGHT = TOOLBAR_ROW_MOBILE_HEIGHT)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

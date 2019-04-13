@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Badge")
 @js.native
 class Badge ()
-  extends reactDashBootstrapLib.libBadgeMod.namespaced
+  extends reactDashBootstrapLib.libBadgeMod.^
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class DynamoDB ()
-  extends awsDashSdkLib.clientsDynamodbMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDynamodbMod.^ {
+  def this(options: awsDashSdkLib.clientsDynamodbMod.ClientConfiguration) = this()
 }
 

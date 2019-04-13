@@ -11,6 +11,6 @@ trait ReactCodeMirror
   /** Focuses the CodeMirror instance. */
   def focus(): scala.Unit = js.native
   /** Returns the CodeMirror instance, if available. */
-  def getCodeMirror(): codemirrorLib.codemirrorMod.CodeMirrorNs.Editor = js.native
+  def getCodeMirror(): codemirrorLib.codemirrorMod.Editor = js.native
 }
 

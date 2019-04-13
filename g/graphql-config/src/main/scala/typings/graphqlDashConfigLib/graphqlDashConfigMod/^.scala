@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-config", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val GRAPHQL_CONFIG_NAME: /* .graphqlconfig */ java.lang.String = js.native
-  val GRAPHQL_CONFIG_YAML_NAME: /* .graphqlconfig.yaml */ java.lang.String = js.native
+  val GRAPHQL_CONFIG_NAME: graphqlDashConfigLib.graphqlDashConfigLibStrings.DOTgraphqlconfig = js.native
+  val GRAPHQL_CONFIG_YAML_NAME: graphqlDashConfigLib.graphqlDashConfigLibStrings.DOTgraphqlconfigDOTyaml = js.native
   def findGraphQLConfigFile(filePath: java.lang.String): java.lang.String = js.native
   def getGraphQLConfig(): graphqlDashConfigLib.libGraphQLConfigMod.GraphQLConfig = js.native
   def getGraphQLConfig(rootDir: java.lang.String): graphqlDashConfigLib.libGraphQLConfigMod.GraphQLConfig = js.native

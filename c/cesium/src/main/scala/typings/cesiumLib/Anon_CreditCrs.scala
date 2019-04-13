@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CreditCrs extends js.Object {
-  var credit: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String] = js.undefined
+  var credit: js.UndefOr[cesiumLib.cesiumMod.Credit | java.lang.String] = js.undefined
   var crs: js.UndefOr[java.lang.String] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var enablePickFeatures: js.UndefOr[scala.Boolean] = js.undefined
-  var getFeatureInfoFormats: js.UndefOr[js.Array[cesiumLib.cesiumMod.CesiumNs.GetFeatureInfoFormat]] = js.undefined
+  var getFeatureInfoFormats: js.UndefOr[js.Array[cesiumLib.cesiumMod.GetFeatureInfoFormat]] = js.undefined
   var getFeatureInfoParameters: js.UndefOr[js.Any] = js.undefined
   var layers: java.lang.String
   var maximumLevel: js.UndefOr[scala.Double] = js.undefined
   var minimumLevel: js.UndefOr[scala.Double] = js.undefined
   var parameters: js.UndefOr[js.Any] = js.undefined
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
   var srs: js.UndefOr[java.lang.String] = js.undefined
   var subdomains: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var tileHeight: js.UndefOr[scala.Double] = js.undefined
   var tileWidth: js.UndefOr[scala.Double] = js.undefined
-  var tilingScheme: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.TilingScheme] = js.undefined
+  var tilingScheme: js.UndefOr[cesiumLib.cesiumMod.TilingScheme] = js.undefined
   var url: java.lang.String
 }
 
@@ -30,21 +30,21 @@ object Anon_CreditCrs {
   def apply(
     layers: java.lang.String,
     url: java.lang.String,
-    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
+    credit: cesiumLib.cesiumMod.Credit | java.lang.String = null,
     crs: java.lang.String = null,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     enablePickFeatures: js.UndefOr[scala.Boolean] = js.undefined,
-    getFeatureInfoFormats: js.Array[cesiumLib.cesiumMod.CesiumNs.GetFeatureInfoFormat] = null,
+    getFeatureInfoFormats: js.Array[cesiumLib.cesiumMod.GetFeatureInfoFormat] = null,
     getFeatureInfoParameters: js.Any = null,
     maximumLevel: scala.Int | scala.Double = null,
     minimumLevel: scala.Int | scala.Double = null,
     parameters: js.Any = null,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null,
+    rectangle: cesiumLib.cesiumMod.Rectangle = null,
     srs: java.lang.String = null,
     subdomains: java.lang.String | js.Array[java.lang.String] = null,
     tileHeight: scala.Int | scala.Double = null,
     tileWidth: scala.Int | scala.Double = null,
-    tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null
+    tilingScheme: cesiumLib.cesiumMod.TilingScheme = null
   ): Anon_CreditCrs = {
     val __obj = js.Dynamic.literal(layers = layers, url = url)
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])

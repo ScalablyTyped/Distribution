@@ -17,3 +17,8 @@ class ObjectTypeTargetForBrowsing ()
   override def Clone(): mfilesLib.IObjectTypeTargetForBrowsing = js.native
 }
 
+@JSGlobal("MFiles.ObjectTypeTargetForBrowsing")
+@js.native
+object ObjectTypeTargetForBrowsing
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectTypeTargetForBrowsing]
+

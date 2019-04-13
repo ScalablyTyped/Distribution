@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Checkbox")
 @js.native
-class Checkbox ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Checkbox
+class Checkbox () extends __MDLComponent[CheckboxProps]
 

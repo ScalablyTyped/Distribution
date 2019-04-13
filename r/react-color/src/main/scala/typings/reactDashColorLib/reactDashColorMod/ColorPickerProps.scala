@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColorPickerProps[A]
-  extends reactLib.reactMod.ReactNs.ClassAttributes[A] {
+  extends reactLib.reactMod.ClassAttributes[A] {
   var color: js.UndefOr[Color] = js.undefined
   var onChange: js.UndefOr[ColorChangeHandler] = js.undefined
   var onChangeComplete: js.UndefOr[ColorChangeHandler] = js.undefined
@@ -16,10 +16,10 @@ object ColorPickerProps {
   @scala.inline
   def apply[A](
     color: Color = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: ColorChangeHandler = null,
     onChangeComplete: ColorChangeHandler = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[A] = null
+    ref: reactLib.reactMod.LegacyRef[A] = null
   ): ColorPickerProps[A] = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

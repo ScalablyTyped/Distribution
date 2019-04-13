@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object seleniumDashWebdriverMod {
-  type Button = seleniumDashWebdriverLib.libInputMod.Button
+  type IWebElementId = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - seleniumDashWebdriverLib.libByMod.By
     - js.Function
     - seleniumDashWebdriverLib.libByMod.ByHash
   */
   type Locator = _Locator | js.Function
-  type Origin = seleniumDashWebdriverLib.libInputMod.Origin
 }

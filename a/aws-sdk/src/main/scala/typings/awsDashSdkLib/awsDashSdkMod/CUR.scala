@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CUR ()
   extends awsDashSdkLib.clientsAllMod.CUR {
-  def this(options: awsDashSdkLib.clientsCurMod.CURNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCurMod.ClientConfiguration) = this()
 }
 

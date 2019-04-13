@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("react-overlays", "Dropdown")
 @js.native
 class Dropdown ()
-  extends reactDashOverlaysLib.libDropdownMod.namespaced
+  extends reactDashOverlaysLib.libDropdownMod.^
 
 /* static members */
 @JSImport("react-overlays", "Dropdown")
 @js.native
 object Dropdown extends js.Object {
-  var Menu: org.scalablytyped.runtime.Instantiable0[reactDashOverlaysLib.libDropdownMenuMod.namespaced] with reactDashOverlaysLib.Anon_DropdownMenu = js.native
-  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashOverlaysLib.libDropdownToggleMod.namespaced] with reactDashOverlaysLib.Anon_DropdownToggle = js.native
+  var Menu: org.scalablytyped.runtime.Instantiable0[reactDashOverlaysLib.libDropdownMenuMod.^] = js.native
+  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashOverlaysLib.libDropdownToggleMod.^] = js.native
 }
 

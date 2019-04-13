@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("nvd3", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[nvd3Lib.nvd3Mod.nvNs.Nvd3Static]
+  extends org.scalablytyped.runtime.TopLevel[Nvd3Static]
 

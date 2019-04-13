@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Switch")
 @js.native
-class Switch ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Switch
+class Switch () extends __MDLComponent[SwitchProps]
 

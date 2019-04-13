@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object utilControlDashFlowMod {
-  type ControlFlowStatement = typescriptLib.typescriptMod.tsNs.BreakStatement | typescriptLib.typescriptMod.tsNs.ContinueStatement | typescriptLib.typescriptMod.tsNs.ReturnStatement | typescriptLib.typescriptMod.tsNs.ThrowStatement
+  type ControlFlowStatement = typescriptLib.typescriptMod.BreakStatement | typescriptLib.typescriptMod.ContinueStatement | typescriptLib.typescriptMod.ReturnStatement | typescriptLib.typescriptMod.ThrowStatement
 }

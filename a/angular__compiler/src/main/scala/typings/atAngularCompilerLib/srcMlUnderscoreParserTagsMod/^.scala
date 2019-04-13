@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/ml_parser/tags", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val NGSP_UNICODE: /* \\uE500 */ java.lang.String = js.native
+  val NGSP_UNICODE: atAngularCompilerLib.atAngularCompilerLibStrings.BACKSLASHuE500 = js.native
   def getNsPrefix(): scala.Null = js.native
   def getNsPrefix(fullName: java.lang.String): java.lang.String = js.native
   def isNgContainer(tagName: java.lang.String): scala.Boolean = js.native

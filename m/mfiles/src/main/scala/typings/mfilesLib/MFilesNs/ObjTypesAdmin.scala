@@ -15,3 +15,8 @@ class ObjTypesAdmin ()
   override def Item(Index: scala.Double): mfilesLib.IObjectTypeAdmin = js.native
 }
 
+@JSGlobal("MFiles.ObjTypesAdmin")
+@js.native
+object ObjTypesAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectTypesAdmin]
+

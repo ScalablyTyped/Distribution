@@ -25,6 +25,6 @@ object ^ extends js.Object {
   val TableToolbar: reactLib.reactMod.Component[MUIDataTableToolbar, js.Object, js.Any] = js.native
   val TableToolbarSelect: reactLib.reactMod.Component[MUIDataTableToolbarSelect, js.Object, js.Any] = js.native
   val TableViewCol: reactLib.reactMod.Component[MUIDataTableViewCol, js.Object, js.Any] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentType[MUIDataTableProps] = js.native
+  val default: reactLib.reactMod.ComponentType[MUIDataTableProps] = js.native
 }
 

@@ -31,10 +31,11 @@ object cssClasses {
     CHECKED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--checked`,
     DISABLED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--disabled`,
     INDETERMINATE: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--indeterminate`,
-    UPGRADED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--upgraded`
+    UPGRADED: atMaterialCheckboxLib.atMaterialCheckboxLibStrings.`mdc-checkbox--upgraded`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(ANIM_CHECKED_INDETERMINATE = ANIM_CHECKED_INDETERMINATE, ANIM_CHECKED_UNCHECKED = ANIM_CHECKED_UNCHECKED, ANIM_INDETERMINATE_CHECKED = ANIM_INDETERMINATE_CHECKED, ANIM_INDETERMINATE_UNCHECKED = ANIM_INDETERMINATE_UNCHECKED, ANIM_UNCHECKED_CHECKED = ANIM_UNCHECKED_CHECKED, ANIM_UNCHECKED_INDETERMINATE = ANIM_UNCHECKED_INDETERMINATE, CHECKED = CHECKED, DISABLED = DISABLED, INDETERMINATE = INDETERMINATE, UPGRADED = UPGRADED)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

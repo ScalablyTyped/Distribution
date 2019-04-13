@@ -59,7 +59,7 @@ object Options {
     areOwnPropsEqual: (/* nextOwnProps */ TOwnProps, /* prevOwnProps */ TOwnProps) => scala.Boolean = null,
     areStatePropsEqual: (/* nextStateProps */ TStateProps, /* prevStateProps */ TStateProps) => scala.Boolean = null,
     areStatesEqual: (/* nextState */ State, /* prevState */ State) => scala.Boolean = null,
-    context: reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null,
+    context: reactLib.reactMod.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null,
     forwardRef: js.UndefOr[scala.Boolean] = js.undefined,
     getDisplayName: /* componentName */ java.lang.String => java.lang.String = null,
     methodName: java.lang.String = null,

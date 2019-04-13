@@ -49,3 +49,8 @@ class View ()
   override def CloneFrom(View: mfilesLib.IView): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.View")
+@js.native
+object View
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IView]
+

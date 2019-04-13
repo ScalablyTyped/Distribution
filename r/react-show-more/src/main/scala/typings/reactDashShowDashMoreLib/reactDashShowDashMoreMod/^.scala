@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-show-more", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ClassicComponentClass[ReactShowMoreProps] = js.native
+  val default: reactLib.reactMod.ClassicComponentClass[ReactShowMoreProps] = js.native
 }
 

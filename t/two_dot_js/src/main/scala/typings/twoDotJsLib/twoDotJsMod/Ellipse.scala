@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("two.js", "Ellipse")
 @js.native
-class Ellipse protected ()
-  extends twoDotJsLib.twoDotJsMod.TwoNs.Ellipse {
+class Ellipse protected () extends Path {
   def this(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double) = this()
 }
 

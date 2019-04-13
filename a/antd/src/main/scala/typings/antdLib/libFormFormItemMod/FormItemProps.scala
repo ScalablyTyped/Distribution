@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 trait FormItemProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var colon: js.UndefOr[scala.Boolean] = js.undefined
-  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var hasFeedback: js.UndefOr[scala.Boolean] = js.undefined
-  var help: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var help: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var labelAlign: js.UndefOr[antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
   var labelCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var validateStatus: /* import warning: ImportType.apply Failed type conversion: ['success', 'warning', 'error', 'validating', ''][number] */ js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: ['success', 'warning', 'error', 'validating', ''][number] */ js.Any
   ] = js.undefined
@@ -29,16 +29,16 @@ object FormItemProps {
   def apply(
     className: java.lang.String = null,
     colon: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     hasFeedback: js.UndefOr[scala.Boolean] = js.undefined,
-    help: reactLib.reactMod.ReactNs.ReactNode = null,
+    help: reactLib.reactMod.ReactNode = null,
     id: java.lang.String = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     labelAlign: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     labelCol: antdLib.libGridColMod.ColProps = null,
     prefixCls: java.lang.String = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     validateStatus: /* import warning: ImportType.apply Failed type conversion: ['success', 'warning', 'error', 'validating', ''][number] */ js.Any = null,
     wrapperCol: antdLib.libGridColMod.ColProps = null
   ): FormItemProps = {

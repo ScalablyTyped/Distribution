@@ -26,6 +26,7 @@ package object NodeJSNs {
     /* listener */ js.Function1[/* repeated */ js.Any, scala.Unit], 
     scala.Unit
   ]
+  type ProcessEnv = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type RejectionHandledListener = js.Function1[/* promise */ js.Promise[js.Any], scala.Unit]
   type RemoveListenerListener = js.Function2[
     /* type */ java.lang.String | js.Symbol, 

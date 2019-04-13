@@ -16,9 +16,9 @@ class LocalGroceryStoreOutlined protected ()
 @JSImport("@material-ui/icons", "LocalGroceryStoreOutlined")
 @js.native
 class LocalGroceryStoreOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

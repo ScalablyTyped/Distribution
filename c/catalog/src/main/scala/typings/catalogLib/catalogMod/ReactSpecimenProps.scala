@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactSpecimenProps extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+  var children: reactLib.reactMod.ReactNode | java.lang.String
   var dark: js.UndefOr[scala.Boolean] = js.undefined
   var frame: js.UndefOr[scala.Boolean] = js.undefined
   var light: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,7 +21,7 @@ trait ReactSpecimenProps extends js.Object {
 object ReactSpecimenProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
+    children: reactLib.reactMod.ReactNode | java.lang.String,
     dark: js.UndefOr[scala.Boolean] = js.undefined,
     frame: js.UndefOr[scala.Boolean] = js.undefined,
     light: js.UndefOr[scala.Boolean] = js.undefined,

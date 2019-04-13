@@ -27,9 +27,9 @@ trait IRoot extends js.Object {
     * @param [body] - Optional. Body of the post.
     * @return - A promise of a Qlik engine reply.
     */
-  def callRepository(path: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def callRepository(path: java.lang.String, method: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def callRepository(path: java.lang.String, method: java.lang.String, body: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def callRepository(path: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def callRepository(path: java.lang.String, method: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
+  def callRepository(path: java.lang.String, method: java.lang.String, body: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets a reference to the current app. Use the currApp method in an extension to get a reference to the app currently displayed.
     * @param [reference] - Optional. Reference to extension object. Introduced in version 1.1.
@@ -58,8 +58,8 @@ trait IRoot extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def getExtensionList(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getExtensionList(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getExtensionList(): angularLib.angularMod.IPromise[_] = js.native
+  def getExtensionList(callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Opens a WebSocekt connection to the Qlik engine for global methods.
     * @param [config] - Optional. Parameters:

@@ -7,10 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio", "MonitorClient")
 @js.native
-class MonitorClient ()
-  extends twilioLib.twilioMod.twilioNs.MonitorClient {
+class MonitorClient () extends Client {
   def this(sid: java.lang.String) = this()
   def this(sid: java.lang.String, tkn: java.lang.String) = this()
-  def this(sid: java.lang.String, tkn: java.lang.String, options: twilioLib.twilioMod.twilioNs.ClientOptions) = this()
+  def this(sid: java.lang.String, tkn: java.lang.String, options: ClientOptions) = this()
+  var alerts: AlertResource = js.native
+  var events: EventResource = js.native
 }
 

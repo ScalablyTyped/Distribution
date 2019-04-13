@@ -44,7 +44,7 @@ trait SwaggerUiExpress extends js.Object {
     *
     * @returns Express handlers that process requests and return files for Swagger UI.
     */
-  def serve(): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
+  def serve(): js.Array[expressLib.expressMod.RequestHandler] = js.native
   /**
     * Returns handlers for serving Swagger UI files.
     * This includes custom initialization js file and static files of Swagger UI.
@@ -54,9 +54,9 @@ trait SwaggerUiExpress extends js.Object {
     * @param opts options to pass to Swagger UI.
     * @returns Express handlers that process requests and return files for Swagger UI.
     */
-  def serveFiles(): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
-  def serveFiles(swaggerDoc: JsonObject): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
-  def serveFiles(swaggerDoc: JsonObject, opts: SwaggerUiOptions): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
+  def serveFiles(): js.Array[expressLib.expressMod.RequestHandler] = js.native
+  def serveFiles(swaggerDoc: JsonObject): js.Array[expressLib.expressMod.RequestHandler] = js.native
+  def serveFiles(swaggerDoc: JsonObject, opts: SwaggerUiOptions): js.Array[expressLib.expressMod.RequestHandler] = js.native
   /**
     * Returns handlers for serving Swagger UI files.
     * This includes custom initialization js file and static files of Swagger UI.
@@ -65,7 +65,7 @@ trait SwaggerUiExpress extends js.Object {
     * @param options options object that is passed to the express.static middleware.
     * @returns Express handlers that process requests and return files for Swagger UI.
     */
-  def serveWithOptions(options: serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions): js.Array[expressLib.expressMod.eNs.RequestHandler] = js.native
+  def serveWithOptions(options: serveDashStaticLib.serveDashStaticMod.ServeStaticOptions): js.Array[expressLib.expressMod.RequestHandler] = js.native
   /**
     * Creates a middleware function that returns the pre-generated html file for the Swagger UI page.
     *
@@ -96,6 +96,6 @@ trait SwaggerUiExpress extends js.Object {
     customeSiteTitle: js.UndefOr[
       java.lang.String | swaggerDashUiDashExpressLib.swaggerDashUiDashExpressLibNumbers.`false` | scala.Null
     ]
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
+  ): expressLib.expressMod.RequestHandler = js.native
 }
 

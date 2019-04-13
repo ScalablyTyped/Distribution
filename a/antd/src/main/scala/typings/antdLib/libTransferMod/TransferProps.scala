@@ -9,7 +9,7 @@ trait TransferProps extends js.Object {
   var body: js.UndefOr[
     js.Function1[
       /* props */ antdLib.libTransferListMod.TransferListProps, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -19,13 +19,13 @@ trait TransferProps extends js.Object {
   var footer: js.UndefOr[
     js.Function1[
       /* props */ antdLib.libTransferListMod.TransferListProps, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var `lazy`: js.UndefOr[js.Object | scala.Boolean] = js.undefined
-  var listStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var listStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
-  var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
       /* targetKeys */ js.Array[java.lang.String], 
@@ -37,7 +37,7 @@ trait TransferProps extends js.Object {
   var onScroll: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -47,7 +47,7 @@ trait TransferProps extends js.Object {
   var onSearchChange: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], 
+      /* e */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -58,7 +58,7 @@ trait TransferProps extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var operationStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var operationStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var operations: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var render: js.UndefOr[TransferRender] = js.undefined
@@ -66,7 +66,7 @@ trait TransferProps extends js.Object {
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var selectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var showSearch: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var targetKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var titles: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
@@ -75,21 +75,21 @@ object TransferProps {
   @scala.inline
   def apply(
     dataSource: js.Array[TransferItem],
-    body: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    body: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     filterOption: (/* inputValue */ js.Any, /* item */ js.Any) => scala.Boolean = null,
-    footer: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNode = null,
     `lazy`: js.Object | scala.Boolean = null,
-    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    listStyle: reactLib.reactMod.CSSProperties = null,
     locale: js.Object = null,
-    notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    notFoundContent: reactLib.reactMod.ReactNode = null,
     onChange: (/* targetKeys */ js.Array[java.lang.String], /* direction */ java.lang.String, /* moveKeys */ js.Any) => scala.Unit = null,
-    onScroll: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event]) => scala.Unit = null,
+    onScroll: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event]) => scala.Unit = null,
     onSearch: (/* direction */ TransferDirection, /* value */ java.lang.String) => scala.Unit = null,
-    onSearchChange: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]) => scala.Unit = null,
+    onSearchChange: (/* direction */ TransferDirection, /* e */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]) => scala.Unit = null,
     onSelectChange: (/* sourceSelectedKeys */ js.Array[java.lang.String], /* targetSelectedKeys */ js.Array[java.lang.String]) => scala.Unit = null,
-    operationStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    operationStyle: reactLib.reactMod.CSSProperties = null,
     operations: js.Array[java.lang.String] = null,
     prefixCls: java.lang.String = null,
     render: TransferRender = null,
@@ -97,7 +97,7 @@ object TransferProps {
     searchPlaceholder: java.lang.String = null,
     selectedKeys: js.Array[java.lang.String] = null,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     targetKeys: js.Array[java.lang.String] = null,
     titles: js.Array[java.lang.String] = null
   ): TransferProps = {

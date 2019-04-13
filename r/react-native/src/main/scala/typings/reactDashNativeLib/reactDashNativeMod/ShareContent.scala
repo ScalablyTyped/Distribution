@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - reactDashNativeLib.Anon_Message
-  - reactDashNativeLib.Anon_Title
-*/
-trait ShareContent extends js.Object
+@js.native
+trait ShareContent extends js.Object {
+  var message: js.UndefOr[java.lang.String] = js.native
+  var title: js.UndefOr[java.lang.String] = js.native
+  var url: js.UndefOr[java.lang.String] = js.native
+}
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object fluxibleDashRouterLibComponents {
   @scala.inline
-  def NavLink: reactLib.reactMod.ReactNs.ComponentType[fluxibleDashRouterLib.fluxibleDashRouterMod.NavLinkProps] = js.constructorOf[fluxibleDashRouterLib.fluxibleDashRouterMod.NavLink].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[fluxibleDashRouterLib.fluxibleDashRouterMod.NavLinkProps]]
+  def NavLink: reactLib.reactMod.ComponentType[fluxibleDashRouterLib.fluxibleDashRouterMod.NavLinkProps] = js.constructorOf[fluxibleDashRouterLib.fluxibleDashRouterMod.NavLink].asInstanceOf[reactLib.reactMod.ComponentType[fluxibleDashRouterLib.fluxibleDashRouterMod.NavLinkProps]]
   type NavLinkProps = fluxibleDashRouterLib.fluxibleDashRouterMod.NavLinkProps
 }
 

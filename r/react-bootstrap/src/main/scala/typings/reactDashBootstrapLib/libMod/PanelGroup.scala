@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "PanelGroup")
 @js.native
 class PanelGroup ()
-  extends reactDashBootstrapLib.libPanelGroupMod.namespaced
+  extends reactDashBootstrapLib.libPanelGroupMod.^
 

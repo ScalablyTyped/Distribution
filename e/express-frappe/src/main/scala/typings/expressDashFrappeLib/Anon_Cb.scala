@@ -8,24 +8,18 @@ import scala.scalajs.js.annotation._
 trait Anon_Cb
   extends /* eventHandler */ org.scalablytyped.runtime.StringDictionary[
       js.Function4[
-        /* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, 
-        /* socket */ socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 
+        /* io */ socketDotIoLib.socketDotIoMod.Server, 
+        /* socket */ socketDotIoLib.socketDotIoMod.Socket, 
         /* data */ js.Any, 
         /* cb */ js.Function, 
         scala.Unit
       ]
     ] {
-  def onConnect(
-    io: socketDotIoLib.socketDotIoMod.SocketIONs.Server,
-    socket: socketDotIoLib.socketDotIoMod.SocketIONs.Socket
-  ): scala.Unit
-  def onDisconnect(
-    io: socketDotIoLib.socketDotIoMod.SocketIONs.Server,
-    socket: socketDotIoLib.socketDotIoMod.SocketIONs.Socket
-  ): scala.Unit
+  def onConnect(io: socketDotIoLib.socketDotIoMod.Server, socket: socketDotIoLib.socketDotIoMod.Socket): scala.Unit
+  def onDisconnect(io: socketDotIoLib.socketDotIoMod.Server, socket: socketDotIoLib.socketDotIoMod.Socket): scala.Unit
   def use(
-    io: socketDotIoLib.socketDotIoMod.SocketIONs.Server,
-    socket: socketDotIoLib.socketDotIoMod.SocketIONs.Socket,
+    io: socketDotIoLib.socketDotIoMod.Server,
+    socket: socketDotIoLib.socketDotIoMod.Socket,
     next: js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
   ): scala.Unit
 }
@@ -33,13 +27,13 @@ trait Anon_Cb
 object Anon_Cb {
   @scala.inline
   def apply(
-    onConnect: (socketDotIoLib.socketDotIoMod.SocketIONs.Server, socketDotIoLib.socketDotIoMod.SocketIONs.Socket) => scala.Unit,
-    onDisconnect: (socketDotIoLib.socketDotIoMod.SocketIONs.Server, socketDotIoLib.socketDotIoMod.SocketIONs.Socket) => scala.Unit,
-    use: (socketDotIoLib.socketDotIoMod.SocketIONs.Server, socketDotIoLib.socketDotIoMod.SocketIONs.Socket, js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]) => scala.Unit,
+    onConnect: (socketDotIoLib.socketDotIoMod.Server, socketDotIoLib.socketDotIoMod.Socket) => scala.Unit,
+    onDisconnect: (socketDotIoLib.socketDotIoMod.Server, socketDotIoLib.socketDotIoMod.Socket) => scala.Unit,
+    use: (socketDotIoLib.socketDotIoMod.Server, socketDotIoLib.socketDotIoMod.Socket, js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]) => scala.Unit,
     StringDictionary: /* eventHandler */ org.scalablytyped.runtime.StringDictionary[
       js.Function4[
-        /* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, 
-        /* socket */ socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 
+        /* io */ socketDotIoLib.socketDotIoMod.Server, 
+        /* socket */ socketDotIoLib.socketDotIoMod.Socket, 
         /* data */ js.Any, 
         /* cb */ js.Function, 
         scala.Unit

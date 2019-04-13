@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("mapbox-gl", "CanvasSource")
 @js.native
 class CanvasSource ()
-  extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.CanvasSource {
+  extends CanvasSourceRaw
+     with AnySourceImpl {
   /* CompleteClass */
   override var canvas: java.lang.String | stdLib.HTMLCanvasElement = js.native
   /* CompleteClass */
@@ -18,13 +19,9 @@ class CanvasSource ()
   /* CompleteClass */
   @JSName("type")
   override var type_CanvasSourceRaw: mapboxDashGlLib.mapboxDashGlLibStrings.canvas = js.native
-  /* CompleteClass */
-  override def getCanvas(): stdLib.HTMLCanvasElement = js.native
-  /* CompleteClass */
-  override def pause(): scala.Unit = js.native
-  /* CompleteClass */
-  override def play(): scala.Unit = js.native
-  /* CompleteClass */
-  override def setCoordinates(coordinates: js.Array[js.Array[scala.Double]]): this.type = js.native
+  def getCanvas(): stdLib.HTMLCanvasElement = js.native
+  def pause(): scala.Unit = js.native
+  def play(): scala.Unit = js.native
+  def setCoordinates(coordinates: js.Array[js.Array[scala.Double]]): this.type = js.native
 }
 

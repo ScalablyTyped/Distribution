@@ -19,11 +19,11 @@ trait IScrollAdapter extends js.Object {
     * a reference to the DOM element currently in the topmost visible position.
     */
   @JSName("topVisibleElement")
-  var topVisibleElement_Original: angularLib.angularMod.angularNs.IAugmentedJQueryStatic = js.native
+  var topVisibleElement_Original: angularLib.angularMod.IAugmentedJQueryStatic = js.native
   /**
     * a reference to the scope created for the item currently in the topmost visible position.
     */
-  var topVisibleScope: angularLib.angularMod.angularNs.IRepeatScope = js.native
+  var topVisibleScope: angularLib.angularMod.IRepeatScope = js.native
   /**
     * Adds new items after the last item in the buffer
     *
@@ -53,9 +53,7 @@ trait IScrollAdapter extends js.Object {
     * unaffected, unless some updates were made to the item in the updater function. This can be thought of as
     * in place update.
     */
-  def applyUpdates(
-    updater: js.Function2[/* item */ js.Any, /* scope */ angularLib.angularMod.angularNs.IRepeatScope, _]
-  ): scala.Unit = js.native
+  def applyUpdates(updater: js.Function2[/* item */ js.Any, /* scope */ angularLib.angularMod.IRepeatScope, _]): scala.Unit = js.native
   /**
     * Adds new items before the first item in the buffer
     *

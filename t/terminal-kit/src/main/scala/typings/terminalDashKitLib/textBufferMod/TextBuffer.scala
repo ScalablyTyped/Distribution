@@ -14,9 +14,9 @@ trait TextBuffer extends js.Object {
   def delete(): scala.Unit = js.native
   def delete(n: scala.Double): scala.Unit = js.native
   def draw(): scala.Unit = js.native
-  def draw(options: terminalDashKitLib.screenBufferMod.ScreenBufferNs.DrawOptions): scala.Unit = js.native
+  def draw(options: terminalDashKitLib.screenBufferMod.DrawOptions): scala.Unit = js.native
   def drawCursor(): scala.Unit = js.native
-  def drawCursor(options: terminalDashKitLib.Anon_DstNamespaced): scala.Unit = js.native
+  def drawCursor(options: terminalDashKitLib.Anon_Dst_1506794770): scala.Unit = js.native
   def getContentSize(): terminalDashKitLib.Anon_Height = js.native
   def getHidden(): scala.Boolean = js.native
   def getMisc(): js.Any = js.native
@@ -24,7 +24,7 @@ trait TextBuffer extends js.Object {
   def getText(): java.lang.String = js.native
   def insert(text: java.lang.String): scala.Unit = js.native
   def insert(text: java.lang.String, attr: scala.Double): scala.Unit = js.native
-  def insert(text: java.lang.String, attr: terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes): scala.Unit = js.native
+  def insert(text: java.lang.String, attr: terminalDashKitLib.screenBufferMod.Attributes): scala.Unit = js.native
   def iterate(
     options: terminalDashKitLib.Anon_FinalCall,
     callback: js.Function1[/* cellData */ terminalDashKitLib.Anon_AttrMisc, scala.Unit]
@@ -47,23 +47,16 @@ trait TextBuffer extends js.Object {
   def newLine(): scala.Unit = js.native
   def save(filepath: java.lang.String, callback: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native
   def setAttrAt(attr: scala.Double, x: scala.Double, y: scala.Double): scala.Unit = js.native
-  def setAttrAt(
-    attr: terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes,
-    x: scala.Double,
-    y: scala.Double
-  ): scala.Unit = js.native
+  def setAttrAt(attr: terminalDashKitLib.screenBufferMod.Attributes, x: scala.Double, y: scala.Double): scala.Unit = js.native
   def setAttrCodeAt(attr: scala.Double, x: scala.Double, y: scala.Double): scala.Unit = js.native
   def setAttrCodeRegion(attr: scala.Double): scala.Unit = js.native
-  def setAttrCodeRegion(attr: scala.Double, region: terminalDashKitLib.rectMod.RectNs.Region): scala.Unit = js.native
+  def setAttrCodeRegion(attr: scala.Double, region: terminalDashKitLib.rectMod.Region): scala.Unit = js.native
   def setAttrRegion(attr: scala.Double): scala.Unit = js.native
-  def setAttrRegion(attr: scala.Double, region: terminalDashKitLib.rectMod.RectNs.Region): scala.Unit = js.native
-  def setAttrRegion(attr: terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes): scala.Unit = js.native
-  def setAttrRegion(
-    attr: terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes,
-    region: terminalDashKitLib.rectMod.RectNs.Region
-  ): scala.Unit = js.native
+  def setAttrRegion(attr: scala.Double, region: terminalDashKitLib.rectMod.Region): scala.Unit = js.native
+  def setAttrRegion(attr: terminalDashKitLib.screenBufferMod.Attributes): scala.Unit = js.native
+  def setAttrRegion(attr: terminalDashKitLib.screenBufferMod.Attributes, region: terminalDashKitLib.rectMod.Region): scala.Unit = js.native
   def setEmptyCellAttr(attr: scala.Double): scala.Unit = js.native
-  def setEmptyCellAttr(attr: terminalDashKitLib.screenBufferMod.ScreenBufferNs.Attributes): scala.Unit = js.native
+  def setEmptyCellAttr(attr: terminalDashKitLib.screenBufferMod.Attributes): scala.Unit = js.native
   def setHidden(state: scala.Boolean): scala.Unit = js.native
   def setText(text: java.lang.String): scala.Unit = js.native
 }

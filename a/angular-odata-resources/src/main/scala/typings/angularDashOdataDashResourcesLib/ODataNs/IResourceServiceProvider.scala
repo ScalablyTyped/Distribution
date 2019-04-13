@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 // IResourceServiceProvider used to configure global settings
 trait IResourceServiceProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   var defaults: IResourceOptions
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap-typeahead", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ClearButton: reactLib.reactMod.ReactNs.FunctionComponent[ClearButtonProps] = js.native
-  val Loader: reactLib.reactMod.ReactNs.FunctionComponent[LoaderProps] = js.native
+  val ClearButton: reactLib.reactMod.FunctionComponent[ClearButtonProps] = js.native
+  val Loader: reactLib.reactMod.FunctionComponent[LoaderProps] = js.native
 }
 

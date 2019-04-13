@@ -9,7 +9,7 @@ trait Anon_Headers extends js.Object {
   var headers: js.UndefOr[js.Object] = js.undefined
   var interceptedAnonymousRequest: js.UndefOr[scala.Boolean] = js.undefined
   var interceptedRequest: js.UndefOr[scala.Boolean] = js.undefined
-  var method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+  var method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   var params: js.UndefOr[js.Object] = js.undefined
   var path: java.lang.String
   var queryString: js.UndefOr[js.Object] = js.undefined
@@ -19,7 +19,7 @@ trait Anon_Headers extends js.Object {
 object Anon_Headers {
   @scala.inline
   def apply(
-    method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method,
+    method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method,
     path: java.lang.String,
     headers: js.Object = null,
     interceptedAnonymousRequest: js.UndefOr[scala.Boolean] = js.undefined,

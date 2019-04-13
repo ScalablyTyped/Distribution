@@ -33,3 +33,8 @@ class VaultEventLogOperations ()
   override def SetLoggingEnabled(Enabled: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultEventLogOperations")
+@js.native
+object VaultEventLogOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultEventLogOperations]
+

@@ -47,7 +47,7 @@ trait IHeaderCellProps
   /**
     * CSS styles for the top level element.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object IHeaderCellProps {
@@ -61,7 +61,7 @@ object IHeaderCellProps {
     name: java.lang.String = null,
     reorderHandle: reactLib.reactMod.Global.JSXNs.Element = null,
     resizeHandle: atBlueprintjsTableLib.libEsmInteractionsResizeHandleMod.ResizeHandle = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): IHeaderCellProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

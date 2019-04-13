@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("loadware", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[F /* <: loadwareLib.AnyFunction */](loadable: loadwareLib.loadwareMod.loadwareNs.Loadable[F]*): js.Array[F] = js.native
+  def apply[F /* <: loadwareLib.AnyFunction */](loadable: Loadable[F]*): js.Array[F] = js.native
 }
 

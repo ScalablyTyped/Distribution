@@ -34,6 +34,7 @@ trait Matchs extends js.Object {
   var versionNumber: js.UndefOr[scala.Double] = js.native
   var webkit: js.UndefOr[scala.Boolean] = js.native
   var win: js.UndefOr[scala.Boolean] = js.native
+  var `windows phone`: js.UndefOr[scala.Boolean] = js.native
   def uaMatch(): Matchs = js.native
   def uaMatch(ua: java.lang.String): Matchs = js.native
 }

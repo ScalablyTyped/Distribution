@@ -17,6 +17,5 @@ object FetchNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.fetchMod.FetchNs.PRUNE with scala.Double] = js.native
   }
   
-  type PRUNE = nodegitLib.fetchMod.FetchNs.PRUNE
 }
 

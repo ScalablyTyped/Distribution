@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RestifyHttpErrorOptions
-  extends verrorLib.verrorMod.VErrorNs.Options {
+  extends verrorLib.verrorMod.Options {
   var code: js.UndefOr[java.lang.String] = js.undefined
   var context: js.UndefOr[js.Any] = js.undefined
   var message: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ object RestifyHttpErrorOptions {
     code: java.lang.String = null,
     constructorOpt: /* repeated */ js.Any => scala.Unit = null,
     context: js.Any = null,
-    info: verrorLib.verrorMod.VErrorNs.Info = null,
+    info: verrorLib.verrorMod.Info = null,
     message: java.lang.String = null,
     name: java.lang.String = null,
     statusCode: scala.Int | scala.Double = null,

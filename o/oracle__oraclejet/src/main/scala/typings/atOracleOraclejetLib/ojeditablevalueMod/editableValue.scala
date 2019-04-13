@@ -14,7 +14,7 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
   var help: atOracleOraclejetLib.Anon_Instruction = js.native
   var helpHints: atOracleOraclejetLib.Anon_Definition = js.native
   var labelHint: java.lang.String = js.native
-  var messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced] = js.native
+  var messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.^] = js.native
   var onDescribedByChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
     _
@@ -40,7 +40,7 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
     _
   ]) | scala.Null = js.native
   var onMessagesCustomChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]], 
     _
   ]) | scala.Null = js.native
   var onOjAnimateEnd: (js.Function1[
@@ -200,7 +200,7 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesCustomChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]], 
       _
     ]
   ): scala.Unit = js.native
@@ -209,7 +209,7 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesCustomChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]], 
       _
     ],
     useCapture: scala.Boolean
@@ -284,7 +284,7 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
   @JSName("getProperty")
   def getProperty_labelHint(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelHint): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_messagesCustom(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesCustom): js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced] = js.native
+  def getProperty_messagesCustom(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesCustom): js.Array[atOracleOraclejetLib.ojmessagingMod.^] = js.native
   @JSName("getProperty")
   def getProperty_valid(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid): atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown = js.native
   @JSName("getProperty")
@@ -329,7 +329,7 @@ trait editableValue[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, S
   @JSName("setProperty")
   def setProperty_messagesCustom(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesCustom,
-    value: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]
+    value: js.Array[atOracleOraclejetLib.ojmessagingMod.^]
   ): scala.Unit = js.native
   @JSName("setProperty")
   def setProperty_valid(

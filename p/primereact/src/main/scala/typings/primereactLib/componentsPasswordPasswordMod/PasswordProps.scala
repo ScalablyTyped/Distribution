@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PasswordProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement]
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLInputElement]
      with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var feedback: js.UndefOr[scala.Boolean] = js.undefined
   var mediumLabel: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ trait PasswordProps
 object PasswordProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLInputElement] = null,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     feedback: js.UndefOr[scala.Boolean] = js.undefined,
     mediumLabel: java.lang.String = null,

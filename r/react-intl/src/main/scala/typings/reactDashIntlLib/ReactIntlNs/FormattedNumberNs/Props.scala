@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Props extends PropsBase {
   var children: js.UndefOr[
-    js.Function1[/* formattedNumber */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]
+    js.Function1[/* formattedNumber */ java.lang.String, reactLib.reactMod.ReactNode]
   ] = js.undefined
   var value: scala.Double
 }
@@ -16,7 +16,7 @@ object Props {
   @scala.inline
   def apply(
     value: scala.Double,
-    children: /* formattedNumber */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
+    children: /* formattedNumber */ java.lang.String => reactLib.reactMod.ReactNode = null,
     currency: java.lang.String = null,
     currencyDisplay: java.lang.String = null,
     format: java.lang.String = null,

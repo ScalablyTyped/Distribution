@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DuplexifyOptions
-  extends nodeLib.streamMod.internalNs.DuplexOptions {
+  extends nodeLib.streamMod.DuplexOptions {
   var end: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -18,13 +18,13 @@ object DuplexifyOptions {
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
     defaultEncoding: java.lang.String = null,
     destroy: js.ThisFunction2[
-      /* this */ nodeLib.streamMod.internalNs.Readable, 
+      /* this */ nodeLib.streamMod.Readable, 
       /* error */ nodeLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
     destroy_DuplexOptions: js.ThisFunction2[
-      /* this */ nodeLib.streamMod.internalNs.Duplex, 
+      /* this */ nodeLib.streamMod.Duplex, 
       /* error */ nodeLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
@@ -33,29 +33,25 @@ object DuplexifyOptions {
     encoding: java.lang.String = null,
     end: js.UndefOr[scala.Boolean] = js.undefined,
     `final`: js.ThisFunction1[
-      (/* this */ nodeLib.streamMod.internalNs.Duplex) | (/* this */ nodeLib.streamMod.internalNs.Writable), 
+      (/* this */ nodeLib.streamMod.Duplex) | (/* this */ nodeLib.streamMod.Writable), 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     highWaterMark: scala.Int | scala.Double = null,
     objectMode: js.UndefOr[scala.Boolean] = js.undefined,
-    read: js.ThisFunction1[
-      /* this */ nodeLib.streamMod.internalNs.Readable, 
-      /* size */ scala.Double, 
-      scala.Unit
-    ] = null,
-    read_DuplexOptions: js.ThisFunction1[/* this */ nodeLib.streamMod.internalNs.Duplex, /* size */ scala.Double, scala.Unit] = null,
+    read: js.ThisFunction1[/* this */ nodeLib.streamMod.Readable, /* size */ scala.Double, scala.Unit] = null,
+    read_DuplexOptions: js.ThisFunction1[/* this */ nodeLib.streamMod.Duplex, /* size */ scala.Double, scala.Unit] = null,
     readableObjectMode: js.UndefOr[scala.Boolean] = js.undefined,
     writableObjectMode: js.UndefOr[scala.Boolean] = js.undefined,
     write: js.ThisFunction3[
-      (/* this */ nodeLib.streamMod.internalNs.Duplex) | (/* this */ nodeLib.streamMod.internalNs.Writable), 
+      (/* this */ nodeLib.streamMod.Duplex) | (/* this */ nodeLib.streamMod.Writable), 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     writev: js.ThisFunction2[
-      (/* this */ nodeLib.streamMod.internalNs.Duplex) | (/* this */ nodeLib.streamMod.internalNs.Writable), 
+      (/* this */ nodeLib.streamMod.Duplex) | (/* this */ nodeLib.streamMod.Writable), 
       /* chunks */ js.Array[nodeLib.Anon_Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit

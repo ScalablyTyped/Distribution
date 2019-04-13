@@ -10,7 +10,7 @@ trait Anon_AppId extends js.Object {
   var appId: java.lang.String
   var debug: js.UndefOr[scala.Boolean] = js.undefined
    // 必填，签名，见附录1
-  var jsApiList: jweixinLib.jweixinMod.wxNs.jsApiList
+  var jsApiList: jweixinLib.jweixinMod.jsApiList
    // 必填，生成签名的时间戳
   var nonceStr: java.lang.String
    // 必填，生成签名的随机串
@@ -23,7 +23,7 @@ object Anon_AppId {
   @scala.inline
   def apply(
     appId: java.lang.String,
-    jsApiList: jweixinLib.jweixinMod.wxNs.jsApiList,
+    jsApiList: jweixinLib.jweixinMod.jsApiList,
     nonceStr: java.lang.String,
     signature: java.lang.String,
     timestamp: scala.Double,

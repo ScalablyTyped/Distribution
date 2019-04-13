@@ -45,7 +45,7 @@ object Props {
   @scala.inline
   def apply(
     steps: js.Array[Step],
-    beaconComponent: reactLib.reactMod.ReactNs.ReactNode = null,
+    beaconComponent: reactLib.reactMod.ReactNode = null,
     callback: /* data */ State => _ = null,
     continuous: js.UndefOr[scala.Boolean] = js.undefined,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
@@ -65,7 +65,7 @@ object Props {
     spotlightPadding: scala.Int | scala.Double = null,
     stepIndex: scala.Int | scala.Double = null,
     styles: StepStyles = null,
-    tooltipComponent: reactLib.reactMod.ReactNs.ReactNode = null
+    tooltipComponent: reactLib.reactMod.ReactNode = null
   ): Props = {
     val __obj = js.Dynamic.literal(steps = steps)
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])

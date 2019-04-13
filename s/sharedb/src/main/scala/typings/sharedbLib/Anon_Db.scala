@@ -9,7 +9,7 @@ trait Anon_Db extends js.Object {
   var db: js.UndefOr[js.Any] = js.undefined
   var disableDocAction: js.UndefOr[scala.Boolean] = js.undefined
   var disableSpaceDelimitedActions: js.UndefOr[scala.Boolean] = js.undefined
-  var pubsub: js.UndefOr[sharedbLib.sharedbMod.sharedbNs.PubSub] = js.undefined
+  var pubsub: js.UndefOr[sharedbLib.sharedbMod.PubSub] = js.undefined
 }
 
 object Anon_Db {
@@ -18,7 +18,7 @@ object Anon_Db {
     db: js.Any = null,
     disableDocAction: js.UndefOr[scala.Boolean] = js.undefined,
     disableSpaceDelimitedActions: js.UndefOr[scala.Boolean] = js.undefined,
-    pubsub: sharedbLib.sharedbMod.sharedbNs.PubSub = null
+    pubsub: sharedbLib.sharedbMod.PubSub = null
   ): Anon_Db = {
     val __obj = js.Dynamic.literal()
     if (db != null) __obj.updateDynamic("db")(db)

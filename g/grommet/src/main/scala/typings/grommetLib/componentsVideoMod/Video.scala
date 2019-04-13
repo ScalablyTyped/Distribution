@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Video", "Video")
 @js.native
 class Video protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      VideoProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+  extends reactLib.reactMod.Component[
+      VideoProps with (reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
         reactLib.HTMLVideoElement
       ]), 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: VideoProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+  def this(props: VideoProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
     ])) = this()
-  def this(props: VideoProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+  def this(props: VideoProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
     ]), context: js.Any) = this()
 }

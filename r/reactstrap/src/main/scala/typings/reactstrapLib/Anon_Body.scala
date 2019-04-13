@@ -12,8 +12,8 @@ trait Anon_Body extends js.Object {
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var inverse: js.UndefOr[scala.Boolean] = js.undefined
   var outline: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_Body {
@@ -25,8 +25,8 @@ object Anon_Body {
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     inverse: js.UndefOr[scala.Boolean] = js.undefined,
     outline: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    style: reactLib.reactMod.CSSProperties = null,
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_Body = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(body)) __obj.updateDynamic("body")(body)

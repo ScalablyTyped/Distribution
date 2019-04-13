@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/fn/array/slice", JSImport.Namespace)
 @js.native
-object fnArraySliceMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayEndStartArrayLike]
+object fnArraySliceMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T]): coreDashJsLib.Array[T] = js.native
+  def apply[T](array: stdLib.ArrayLike[T], start: scala.Double): coreDashJsLib.Array[T] = js.native
+  def apply[T](array: stdLib.ArrayLike[T], start: scala.Double, end: scala.Double): coreDashJsLib.Array[T] = js.native
+}
 

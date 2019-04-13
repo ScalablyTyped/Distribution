@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(filename: java.lang.String): nodeLib.NodeJSNs.ReadStream = js.native
-  def apply(filename: java.lang.String, options: gulpDashZipLib.gulpDashZipMod.GulpZipNs.GulpZipOptions): nodeLib.NodeJSNs.ReadStream = js.native
+  def apply(filename: java.lang.String, options: GulpZipOptions): nodeLib.NodeJSNs.ReadStream = js.native
 }
 

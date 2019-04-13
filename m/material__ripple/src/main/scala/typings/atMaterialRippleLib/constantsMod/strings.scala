@@ -23,10 +23,11 @@ object strings {
     VAR_FG_TRANSLATE_END: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-fg-translate-end`,
     VAR_FG_TRANSLATE_START: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-fg-translate-start`,
     VAR_LEFT: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-left`,
-    VAR_TOP: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-top`
+    VAR_TOP: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-top`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(VAR_FG_SCALE = VAR_FG_SCALE, VAR_FG_SIZE = VAR_FG_SIZE, VAR_FG_TRANSLATE_END = VAR_FG_TRANSLATE_END, VAR_FG_TRANSLATE_START = VAR_FG_TRANSLATE_START, VAR_LEFT = VAR_LEFT, VAR_TOP = VAR_TOP)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

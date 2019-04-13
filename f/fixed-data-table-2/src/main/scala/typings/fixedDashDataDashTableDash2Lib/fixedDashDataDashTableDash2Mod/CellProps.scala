@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CellProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[Cell] {
+  extends reactLib.reactMod.HTMLAttributes[Cell] {
   /**
     * Optional prop that if specified on the `Column` will be passed to the
     * cell. It can be used to uniquely identify which column is the cell is in.
@@ -34,7 +34,7 @@ trait CellProps
 object CellProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[Cell] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[Cell] = null,
     columnKey: java.lang.String | scala.Double = null,
     height: scala.Int | scala.Double = null,
     rowIndex: scala.Int | scala.Double = null,

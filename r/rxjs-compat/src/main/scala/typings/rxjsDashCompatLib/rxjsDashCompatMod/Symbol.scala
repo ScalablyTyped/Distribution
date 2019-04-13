@@ -20,13 +20,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("rxjs-compat", "Symbol")
 @js.native
-object Symbol
-  extends rxjsDashCompatLib.Anon_Iterator {
-  /* CompleteClass */
-  override var iterator: js.Symbol = js.native
-  /* CompleteClass */
-  override var observable: java.lang.String | js.Symbol = js.native
-  /* CompleteClass */
-  override var rxSubscriber: java.lang.String | js.Symbol = js.native
+object Symbol extends js.Object {
+  var iterator: js.Symbol = js.native
+  var observable: java.lang.String | js.Symbol = js.native
+  var rxSubscriber: java.lang.String | js.Symbol = js.native
 }
 

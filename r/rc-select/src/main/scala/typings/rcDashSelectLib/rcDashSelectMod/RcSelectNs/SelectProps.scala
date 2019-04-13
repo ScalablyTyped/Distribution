@@ -25,7 +25,7 @@ trait SelectProps extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var labelInValue: js.UndefOr[scala.Boolean] = js.undefined
   var maxTagCount: js.UndefOr[scala.Double] = js.undefined
-  var maxTagPlaceholder: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | js.Function] = js.undefined
+  var maxTagPlaceholder: js.UndefOr[reactLib.reactMod.ReactNode | js.Function] = js.undefined
   var maxTagTextLength: js.UndefOr[scala.Double] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var notFoundContent: js.UndefOr[java.lang.String] = js.undefined
@@ -41,7 +41,7 @@ trait SelectProps extends js.Object {
   var onSelect: js.UndefOr[js.Function2[/* value */ java.lang.String, /* ontion */ Option, scala.Unit]] = js.undefined
   var optionFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined
-  var placeholder: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var placeholder: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showAction: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var showArrow: js.UndefOr[scala.Boolean] = js.undefined
@@ -74,7 +74,7 @@ object SelectProps {
     id: java.lang.String = null,
     labelInValue: js.UndefOr[scala.Boolean] = js.undefined,
     maxTagCount: scala.Int | scala.Double = null,
-    maxTagPlaceholder: reactLib.reactMod.ReactNs.ReactNode | js.Function = null,
+    maxTagPlaceholder: reactLib.reactMod.ReactNode | js.Function = null,
     maxTagTextLength: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: java.lang.String = null,
@@ -88,7 +88,7 @@ object SelectProps {
     onSelect: (/* value */ java.lang.String, /* ontion */ Option) => scala.Unit = null,
     optionFilterProp: java.lang.String = null,
     optionLabelProp: java.lang.String = null,
-    placeholder: reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     showAction: js.Array[java.lang.String] = null,
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,

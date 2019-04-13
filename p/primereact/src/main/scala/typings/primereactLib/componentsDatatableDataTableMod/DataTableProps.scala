@@ -69,18 +69,10 @@ trait DataTableProps extends js.Object {
     js.Function1[/* data */ js.Any, js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]]
   ] = js.undefined
   var rowGroupFooterTemplate: js.UndefOr[
-    js.Function2[
-      /* data */ js.Any, 
-      /* index */ scala.Double, 
-      js.UndefOr[reactLib.reactMod.ReactNs.ReactNode]
-    ]
+    js.Function2[/* data */ js.Any, /* index */ scala.Double, js.UndefOr[reactLib.reactMod.ReactNode]]
   ] = js.undefined
   var rowGroupHeaderTemplate: js.UndefOr[
-    js.Function2[
-      /* data */ js.Any, 
-      /* index */ scala.Double, 
-      js.UndefOr[reactLib.reactMod.ReactNs.ReactNode]
-    ]
+    js.Function2[/* data */ js.Any, /* index */ scala.Double, js.UndefOr[reactLib.reactMod.ReactNode]]
   ] = js.undefined
   var rowGroupMode: js.UndefOr[java.lang.String] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
@@ -167,8 +159,8 @@ object DataTableProps {
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     rowClassName: /* rowData */ js.Any => js.Object = null,
     rowExpansionTemplate: /* data */ js.Any => js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = null,
-    rowGroupFooterTemplate: (/* data */ js.Any, /* index */ scala.Double) => js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = null,
-    rowGroupHeaderTemplate: (/* data */ js.Any, /* index */ scala.Double) => js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = null,
+    rowGroupFooterTemplate: (/* data */ js.Any, /* index */ scala.Double) => js.UndefOr[reactLib.reactMod.ReactNode] = null,
+    rowGroupHeaderTemplate: (/* data */ js.Any, /* index */ scala.Double) => js.UndefOr[reactLib.reactMod.ReactNode] = null,
     rowGroupMode: java.lang.String = null,
     rows: scala.Int | scala.Double = null,
     rowsPerPageOptions: js.Array[scala.Double] = null,

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcAuthOauth2clientMod {
+  type Certificates = org.scalablytyped.runtime.StringDictionary[
+    java.lang.String | googleDashAuthDashLibraryLib.buildSrcCryptoCryptoMod.JwkCertificate
+  ]
   type GetAccessTokenCallback = js.Function3[
     /* err */ gaxiosLib.gaxiosMod.GaxiosError[js.Any] | scala.Null, 
     /* token */ js.UndefOr[java.lang.String | scala.Null], 
@@ -24,6 +27,7 @@ package object buildSrcAuthOauth2clientMod {
     /* res */ js.UndefOr[gaxiosLib.buildSrcCommonMod.GaxiosResponse[js.Any] | scala.Null], 
     scala.Unit
   ]
+  type Headers = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type RefreshAccessTokenCallback = js.Function3[
     /* err */ gaxiosLib.gaxiosMod.GaxiosError[js.Any] | scala.Null, 
     /* credentials */ js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials | scala.Null], 

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Runner")
 @js.native
-class Runner ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Runner {
+class Runner () extends js.Object {
   /**
     * A `Number` that specifies the time step between updates in milliseconds.
     * If `engine.timing.isFixed` is set to `true`, then `delta` is fixed.
@@ -18,8 +17,7 @@ class Runner ()
     * @type number
     * @default 1000 / 60
     */
-  /* CompleteClass */
-  override var delta: scala.Double = js.native
+  var delta: scala.Double = js.native
   /**
     * A flag that specifies whether the runner is running or not.
     *
@@ -27,8 +25,7 @@ class Runner ()
     * @type boolean
     * @default true
     */
-  /* CompleteClass */
-  override var enabled: scala.Boolean = js.native
+  var enabled: scala.Boolean = js.native
   /**
     * A `Boolean` that specifies if the runner should use a fixed timestep (otherwise it is variable).
     * If timing is fixed, then the apparent simulation speed will change depending on the frame rate (but behaviour will be deterministic).
@@ -38,8 +35,7 @@ class Runner ()
     * @type boolean
     * @default false
     */
-  /* CompleteClass */
-  override var isFixed: scala.Boolean = js.native
+  var isFixed: scala.Boolean = js.native
 }
 
 /* static members */
@@ -51,39 +47,33 @@ object Runner extends js.Object {
     * @method create
     * @param {} options
     */
-  def create(options: matterDashJsLib.matterDashJsMod.MatterNs.IRunnerOptions): matterDashJsLib.matterDashJsMod.MatterNs.Runner = js.native
+  def create(options: matterDashJsLib.matterDashJsMod.IRunnerOptions): matterDashJsLib.matterDashJsMod.Runner = js.native
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
-  def run(engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine): matterDashJsLib.matterDashJsMod.MatterNs.Runner = js.native
+  def run(engine: matterDashJsLib.matterDashJsMod.Engine): matterDashJsLib.matterDashJsMod.Runner = js.native
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
-  def run(
-    runner: matterDashJsLib.matterDashJsMod.MatterNs.Runner,
-    engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Runner = js.native
+  def run(runner: matterDashJsLib.matterDashJsMod.Runner, engine: matterDashJsLib.matterDashJsMod.Engine): matterDashJsLib.matterDashJsMod.Runner = js.native
   /**
     * Alias for `Runner.run`.
     * @method start
     * @param {runner} runner
     * @param {engine} engine
     */
-  def start(
-    runner: matterDashJsLib.matterDashJsMod.MatterNs.Runner,
-    engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine
-  ): scala.Unit = js.native
+  def start(runner: matterDashJsLib.matterDashJsMod.Runner, engine: matterDashJsLib.matterDashJsMod.Engine): scala.Unit = js.native
   /**
     * Ends execution of `Runner.run` on the given `runner`, by canceling the animation frame request event loop.
     * If you wish to only temporarily pause the engine, see `engine.enabled` instead.
     * @method stop
     * @param {runner} runner
     */
-  def stop(runner: matterDashJsLib.matterDashJsMod.MatterNs.Runner): scala.Unit = js.native
+  def stop(runner: matterDashJsLib.matterDashJsMod.Runner): scala.Unit = js.native
   /**
     * A game loop utility that updates the engine and renderer by one step (a 'tick').
     * Features delta smoothing, time correction and fixed or dynamic timing.
@@ -95,8 +85,8 @@ object Runner extends js.Object {
     * @param {number} time
     */
   def tick(
-    runner: matterDashJsLib.matterDashJsMod.MatterNs.Runner,
-    engine: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    runner: matterDashJsLib.matterDashJsMod.Runner,
+    engine: matterDashJsLib.matterDashJsMod.Engine,
     time: scala.Double
   ): scala.Unit = js.native
 }

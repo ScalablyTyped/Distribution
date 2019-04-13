@@ -13,12 +13,12 @@ trait SliderProps
   var discreteInkTransitionTime: js.UndefOr[scala.Double] = js.undefined
   var discreteTicks: js.UndefOr[scala.Double] = js.undefined
   var discreteValueClassName: js.UndefOr[java.lang.String] = js.undefined
-  var discreteValueStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var discreteValueStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var editable: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var inputWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var onChange: js.UndefOr[js.Function2[/* value */ scala.Double, /* event */ stdLib.Event, scala.Unit]] = js.undefined
@@ -30,15 +30,15 @@ trait SliderProps
       scala.Unit
     ]
   ] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
   var thumbClassName: js.UndefOr[java.lang.String] = js.undefined
-  var thumbStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var thumbStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tickWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var trackClassName: js.UndefOr[java.lang.String] = js.undefined
   var trackFillClassName: js.UndefOr[java.lang.String] = js.undefined
-  var trackFillStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var trackStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var trackFillStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var trackStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
   var valuePrecision: js.UndefOr[scala.Double] = js.undefined
 }
@@ -53,50 +53,50 @@ object SliderProps {
     discreteInkTransitionTime: scala.Int | scala.Double = null,
     discreteTicks: scala.Int | scala.Double = null,
     discreteValueClassName: java.lang.String = null,
-    discreteValueStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    discreteValueStyle: reactLib.reactMod.CSSProperties = null,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     id: reactDashMdLib.libMod.IdPropType = null,
     inputWidth: scala.Double | java.lang.String = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
-    leftIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    label: reactLib.reactMod.ReactNode = null,
+    leftIcon: reactLib.reactMod.ReactElement[_] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
     onChange: (/* value */ scala.Double, /* event */ stdLib.Event) => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
     onDragChange: (/* dragPercentage */ scala.Double, /* value */ scala.Double, /* event */ stdLib.Event) => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    rightIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    rightIcon: reactLib.reactMod.ReactElement[_] = null,
     step: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     thumbClassName: java.lang.String = null,
-    thumbStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    thumbStyle: reactLib.reactMod.CSSProperties = null,
     tickWidth: scala.Double | java.lang.String = null,
     trackClassName: java.lang.String = null,
     trackFillClassName: java.lang.String = null,
-    trackFillStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    trackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    trackFillStyle: reactLib.reactMod.CSSProperties = null,
+    trackStyle: reactLib.reactMod.CSSProperties = null,
     value: scala.Int | scala.Double = null,
     valuePrecision: scala.Int | scala.Double = null
   ): SliderProps = {

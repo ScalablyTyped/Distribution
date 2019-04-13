@@ -34,7 +34,7 @@ trait ClearBladeInt extends js.Object {
   def parseQuery(query: Query): java.lang.String = js.native
   def parseQuery(query: QueryObj): java.lang.String = js.native
   def registerUser(email: java.lang.String, password: java.lang.String, callback: CbCallback): scala.Unit = js.native
-  def request(options: RequestOptions, callback: requestLib.requestMod.requestNs.RequestCallback): scala.Unit = js.native
+  def request(options: RequestOptions, callback: requestLib.requestMod.RequestCallback): scala.Unit = js.native
   def sendPush(
     users: js.Array[java.lang.String],
     payload: js.Object,

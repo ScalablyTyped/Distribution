@@ -27,8 +27,8 @@ object NgTableParams extends js.Object {
   var ngTableEventsChannel: js.Any = js.native
   var ngTableSettings: js.Any = js.native
   def init(
-    $q: angularLib.angularMod.angularNs.IQService,
-    $log: angularLib.angularMod.angularNs.ILogService,
+    $q: angularLib.angularMod.IQService,
+    $log: angularLib.angularMod.ILogService,
     ngTableDefaults: ngDashTableLib.srcCoreNgTableDefaultsMod.IDefaults,
     ngTableEventsChannel: ngDashTableLib.srcCoreNgTableEventsChannelMod.NgTableEventsChannel,
     ngTableSettings: ngDashTableLib.srcCoreNgTableSettingsMod.NgTableSettings

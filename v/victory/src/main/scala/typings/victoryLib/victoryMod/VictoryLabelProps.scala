@@ -43,7 +43,7 @@ trait VictoryLabelProps extends js.Object {
     * The events prop attaches arbitrary event handlers to the label component.
     * Event handlers are currently only called with their corresponding events.
     */
-  var events: js.UndefOr[reactLib.reactMod.ReactNs.DOMAttributes[_]] = js.undefined
+  var events: js.UndefOr[reactLib.reactMod.DOMAttributes[_]] = js.undefined
   /**
     * The labelPlacement prop is used to specify the placement of labels relative to the data point they represent.
     * This prop may be given as “vertical”, “parallel” or “perpendicular”. This props is particularly useful in polar
@@ -81,7 +81,7 @@ trait VictoryLabelProps extends js.Object {
   /**
     * The style prop applies CSS properties to the rendered `<text>` element.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * The text prop defines the text VictoryLabel will render. The text prop may be given as a string, number, a function of datum,
     * or an array of any of these. Strings may include newline characters, which VictoryLabel will split into separate
@@ -121,13 +121,13 @@ object VictoryLabelProps {
     datum: js.Object = null,
     dx: StringOrNumberOrCallback = null,
     dy: StringOrNumberOrCallback = null,
-    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    events: reactLib.reactMod.DOMAttributes[_] = null,
     labelPlacement: victoryLib.victoryLibStrings.parallel | victoryLib.victoryLibStrings.perpendicular | victoryLib.victoryLibStrings.vertical = null,
     lineHeight: StringOrNumberOrCallback = null,
     origin: victoryLib.Anon_X = null,
     polar: js.UndefOr[scala.Boolean] = js.undefined,
     renderInPortal: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     text: js.Array[java.lang.String] | StringOrNumberOrCallback = null,
     textAnchor: TextAnchorType | victoryLib.Anon_TextAnchorType = null,
     transform: java.lang.String | js.Object | victoryLib.Anon_String = null,

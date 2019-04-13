@@ -9,9 +9,7 @@ trait CategoricalChartWrapper[L] extends js.Object {
   var barCategoryGap: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var barGap: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var barSize: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var data: js.UndefOr[js.Array[js.Object]] = js.undefined
@@ -39,7 +37,7 @@ object CategoricalChartWrapper {
     barCategoryGap: scala.Double | java.lang.String = null,
     barGap: scala.Double | java.lang.String = null,
     barSize: scala.Double | java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     data: js.Array[js.Object] = null,

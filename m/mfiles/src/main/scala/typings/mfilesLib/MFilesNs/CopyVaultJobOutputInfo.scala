@@ -13,3 +13,8 @@ class CopyVaultJobOutputInfo ()
   override val VaultProperties: mfilesLib.IVaultProperties = js.native
 }
 
+@JSGlobal("MFiles.CopyVaultJobOutputInfo")
+@js.native
+object CopyVaultJobOutputInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ICopyVaultJobOutputInfo]
+

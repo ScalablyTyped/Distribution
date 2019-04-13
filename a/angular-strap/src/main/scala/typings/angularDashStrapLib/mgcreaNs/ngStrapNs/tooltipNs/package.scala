@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object tooltipNs {
   type ITooltipService = js.Function2[
-    /* element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+    /* element */ angularLib.angularMod.IAugmentedJQuery, 
     /* config */ js.UndefOr[ITooltipOptions], 
     ITooltip
   ]

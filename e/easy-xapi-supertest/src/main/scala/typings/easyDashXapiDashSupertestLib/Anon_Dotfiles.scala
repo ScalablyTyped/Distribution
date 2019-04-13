@@ -52,7 +52,7 @@ trait Anon_Dotfiles extends js.Object {
     */
   var setHeaders: js.UndefOr[
     js.Function3[
-      /* res */ easyDashXapiDashSupertestLib.expressMod.eNs.Response, 
+      /* res */ easyDashXapiDashSupertestLib.expressMod.Response, 
       /* path */ java.lang.String, 
       /* stat */ js.Any, 
       _
@@ -70,7 +70,7 @@ object Anon_Dotfiles {
     lastModified: js.UndefOr[scala.Boolean] = js.undefined,
     maxAge: scala.Int | scala.Double = null,
     redirect: js.UndefOr[scala.Boolean] = js.undefined,
-    setHeaders: (/* res */ easyDashXapiDashSupertestLib.expressMod.eNs.Response, /* path */ java.lang.String, /* stat */ js.Any) => _ = null
+    setHeaders: (/* res */ easyDashXapiDashSupertestLib.expressMod.Response, /* path */ java.lang.String, /* stat */ js.Any) => _ = null
   ): Anon_Dotfiles = {
     val __obj = js.Dynamic.literal()
     if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles)

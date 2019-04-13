@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("flushable", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(onComplete: flushableLib.flushableMod.flushableNs.FlushableOnCompleteHandler, delay: scala.Double): flushableLib.flushableMod.flushableNs.FlushableOperation = js.native
+  def apply(onComplete: FlushableOnCompleteHandler, delay: scala.Double): FlushableOperation = js.native
 }
 

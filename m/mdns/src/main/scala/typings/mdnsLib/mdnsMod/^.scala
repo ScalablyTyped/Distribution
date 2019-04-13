@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // --- Statics & Classes ---
-  var Advertisement: mdnsLib.mdnsMod.MDNSNs.AdvertisementCreatable = js.native
-  var Browser: mdnsLib.mdnsMod.MDNSNs.BrowserStatic = js.native
-  var ServiceType: mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
+  var Advertisement: AdvertisementCreatable = js.native
+  var Browser: BrowserStatic = js.native
+  var ServiceType: mdnsLib.mdnsMod.ServiceType = js.native
   // -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- --------------------
   //Constants from dns_sd.h (C-Code of Bonjour -> see https://developer.apple.com/library/mac/documentation/Networking/Reference/DNSServiceDiscovery_CRef/Reference/reference.html)
   var _DNS_SD_H: scala.Double = js.native
@@ -150,60 +150,40 @@ object ^ extends js.Object {
   var kDNSServiceType_UNSPEC: scala.Double = js.native
   var kDNSServiceType_WKS: scala.Double = js.native
   var kDNSServiceType_X25: scala.Double = js.native
-  var rst: mdnsLib.mdnsMod.MDNSNs.DefaultResolverSequenceTasks = js.native
-  def browseThemAll(options: mdnsLib.mdnsMod.MDNSNs.BrowserOptions): mdnsLib.mdnsMod.MDNSNs.Browser = js.native
-  def createAdvertisement(serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType, port: scala.Double): mdnsLib.mdnsMod.MDNSNs.Advertisement = js.native
+  var rst: DefaultResolverSequenceTasks = js.native
+  def browseThemAll(options: BrowserOptions): Browser = js.native
+  def createAdvertisement(serviceType: ServiceType, port: scala.Double): Advertisement = js.native
+  def createAdvertisement(serviceType: ServiceType, port: scala.Double, options: AdvertisementOptions): Advertisement = js.native
   def createAdvertisement(
-    serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType,
+    serviceType: ServiceType,
     port: scala.Double,
-    options: mdnsLib.mdnsMod.MDNSNs.AdvertisementOptions
-  ): mdnsLib.mdnsMod.MDNSNs.Advertisement = js.native
-  def createAdvertisement(
-    serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType,
-    port: scala.Double,
-    options: mdnsLib.mdnsMod.MDNSNs.AdvertisementOptions,
-    callback: js.Function2[
-      /* error */ mdnsLib.mdnsMod.MDNSNs.DnsSdError, 
-      /* service */ mdnsLib.mdnsMod.MDNSNs.Service, 
-      scala.Unit
-    ]
-  ): mdnsLib.mdnsMod.MDNSNs.Advertisement = js.native
-  def createBrowser(serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType): mdnsLib.mdnsMod.MDNSNs.Browser = js.native
-  def createBrowser(serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType, options: mdnsLib.mdnsMod.MDNSNs.BrowserOptions): mdnsLib.mdnsMod.MDNSNs.Browser = js.native
+    options: AdvertisementOptions,
+    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, scala.Unit]
+  ): Advertisement = js.native
+  def createBrowser(serviceType: ServiceType): Browser = js.native
+  def createBrowser(serviceType: ServiceType, options: BrowserOptions): Browser = js.native
   def loopbackInterface(): js.Any = js.native
-  def makeServiceType(name: java.lang.String, protocol: java.lang.String, subtypes: java.lang.String*): mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
-  def makeServiceType(serviceTypeIdentifier: java.lang.String): mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
-  def makeServiceType(serviceTypeIdentifier: js.Array[java.lang.String]): mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
-  def makeServiceType(serviceTypeIdentifier: mdnsLib.Anon_Name): mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
-  def makeServiceType(serviceType: mdnsLib.mdnsMod.MDNSNs.ServiceType): mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
-  def resolve(service: mdnsLib.mdnsMod.MDNSNs.Service): scala.Unit = js.native
+  def makeServiceType(name: java.lang.String, protocol: java.lang.String, subtypes: java.lang.String*): ServiceType = js.native
+  def makeServiceType(serviceTypeIdentifier: java.lang.String): ServiceType = js.native
+  def makeServiceType(serviceTypeIdentifier: js.Array[java.lang.String]): ServiceType = js.native
+  def makeServiceType(serviceTypeIdentifier: mdnsLib.Anon_Name): ServiceType = js.native
+  def makeServiceType(serviceType: ServiceType): ServiceType = js.native
+  def resolve(service: Service): scala.Unit = js.native
   def resolve(
-    service: mdnsLib.mdnsMod.MDNSNs.Service,
+    service: Service,
     sequence: js.Array[
-      js.Function2[
-        /* service */ mdnsLib.mdnsMod.MDNSNs.Service, 
-        /* next */ js.Function0[scala.Unit], 
-        scala.Boolean
-      ]
+      js.Function2[/* service */ Service, /* next */ js.Function0[scala.Unit], scala.Boolean]
     ]
   ): scala.Unit = js.native
   def resolve(
-    service: mdnsLib.mdnsMod.MDNSNs.Service,
+    service: Service,
     sequence: js.Array[
-      js.Function2[
-        /* service */ mdnsLib.mdnsMod.MDNSNs.Service, 
-        /* next */ js.Function0[scala.Unit], 
-        scala.Boolean
-      ]
+      js.Function2[/* service */ Service, /* next */ js.Function0[scala.Unit], scala.Boolean]
     ],
-    callback: js.Function2[
-      /* error */ mdnsLib.mdnsMod.MDNSNs.DnsSdError, 
-      /* service */ mdnsLib.mdnsMod.MDNSNs.Service, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, scala.Unit]
   ): scala.Unit = js.native
   // static functions
-  def tcp(name: java.lang.String, subtypes: java.lang.String*): mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
-  def udp(name: java.lang.String, subtypes: java.lang.String*): mdnsLib.mdnsMod.MDNSNs.ServiceType = js.native
+  def tcp(name: java.lang.String, subtypes: java.lang.String*): ServiceType = js.native
+  def udp(name: java.lang.String, subtypes: java.lang.String*): ServiceType = js.native
 }
 

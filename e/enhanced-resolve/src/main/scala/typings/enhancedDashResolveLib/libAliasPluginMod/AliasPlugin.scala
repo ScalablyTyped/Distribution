@@ -9,21 +9,21 @@ trait AliasPlugin extends js.Object {
   var alias: java.lang.String
   var name: java.lang.String
   var onlyModule: scala.Boolean
-  var options: enhancedDashResolveLib.enhancedDashResolveMod.ResolveNs.ResolverFactoryNs.AliasItem
+  var options: enhancedDashResolveLib.enhancedDashResolveMod.ResolverFactoryNs.AliasItem
   var source: java.lang.String
   var target: java.lang.String
   @JSName("apply")
-  def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
+  def apply(resolver: enhancedDashResolveLib.libResolverMod.^): scala.Unit
 }
 
 object AliasPlugin {
   @scala.inline
   def apply(
     alias: java.lang.String,
-    apply: enhancedDashResolveLib.libResolverMod.namespaced => scala.Unit,
+    apply: enhancedDashResolveLib.libResolverMod.^ => scala.Unit,
     name: java.lang.String,
     onlyModule: scala.Boolean,
-    options: enhancedDashResolveLib.enhancedDashResolveMod.ResolveNs.ResolverFactoryNs.AliasItem,
+    options: enhancedDashResolveLib.enhancedDashResolveMod.ResolverFactoryNs.AliasItem,
     source: java.lang.String,
     target: java.lang.String
   ): AliasPlugin = {

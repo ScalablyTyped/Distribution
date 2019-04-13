@@ -20,6 +20,5 @@ object ConfigNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.configMod.ConfigNs.LEVEL with scala.Double] = js.native
   }
   
-  type LEVEL = nodegitLib.configMod.ConfigNs.LEVEL
 }
 

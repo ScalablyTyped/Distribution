@@ -7,26 +7,17 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "EllipsoidGeodesic")
 @js.native
-class EllipsoidGeodesic ()
-  extends cesiumLib.cesiumMod.CesiumNs.EllipsoidGeodesic {
-  def this(start: cesiumLib.cesiumMod.CesiumNs.Cartographic) = this()
-  def this(start: cesiumLib.cesiumMod.CesiumNs.Cartographic, end: cesiumLib.cesiumMod.CesiumNs.Cartographic) = this()
-  def this(start: cesiumLib.cesiumMod.CesiumNs.Cartographic, end: cesiumLib.cesiumMod.CesiumNs.Cartographic, ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid) = this()
-  /* CompleteClass */
-  override var end: cesiumLib.cesiumMod.CesiumNs.Cartographic = js.native
-  /* CompleteClass */
-  override var endHeading: scala.Double = js.native
-  /* CompleteClass */
-  override var start: cesiumLib.cesiumMod.CesiumNs.Cartographic = js.native
-  /* CompleteClass */
-  override var startHeading: scala.Double = js.native
-  /* CompleteClass */
-  override var surfaceDistance: scala.Double = js.native
-  /* CompleteClass */
-  override def interpolateUsingFraction(fraction: scala.Double): cesiumLib.cesiumMod.CesiumNs.Cartographic = js.native
-  /* CompleteClass */
-  override def interpolateUsingSurfaceDistance(distance: scala.Double): cesiumLib.cesiumMod.CesiumNs.Cartographic = js.native
-  /* CompleteClass */
-  override def setEndPoints(start: cesiumLib.cesiumMod.CesiumNs.Cartographic, end: cesiumLib.cesiumMod.CesiumNs.Cartographic): scala.Unit = js.native
+class EllipsoidGeodesic () extends js.Object {
+  def this(start: Cartographic) = this()
+  def this(start: Cartographic, end: Cartographic) = this()
+  def this(start: Cartographic, end: Cartographic, ellipsoid: Ellipsoid) = this()
+  var end: Cartographic = js.native
+  var endHeading: scala.Double = js.native
+  var start: Cartographic = js.native
+  var startHeading: scala.Double = js.native
+  var surfaceDistance: scala.Double = js.native
+  def interpolateUsingFraction(fraction: scala.Double): Cartographic = js.native
+  def interpolateUsingSurfaceDistance(distance: scala.Double): Cartographic = js.native
+  def setEndPoints(start: Cartographic, end: Cartographic): scala.Unit = js.native
 }
 

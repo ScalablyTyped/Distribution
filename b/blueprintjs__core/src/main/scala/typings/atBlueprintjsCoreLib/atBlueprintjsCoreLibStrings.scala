@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsCoreLibStrings {
   @js.native
+  sealed trait Blueprint3 extends js.Object
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -686,6 +689,8 @@ object atBlueprintjsCoreLibStrings {
   @js.native
   sealed trait webview extends js.Object
   
+  @scala.inline
+  def Blueprint3: Blueprint3 = "Blueprint3".asInstanceOf[Blueprint3]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Import aliases from package.json
     */
   def apply(): scala.Unit = js.native
-  def apply(options: java.lang.String | moduleDashAliasLib.moduleDashAliasMod.initNs.Options): scala.Unit = js.native
+  def apply(options: java.lang.String | Options): scala.Unit = js.native
   /**
     * Register a single alias
     */

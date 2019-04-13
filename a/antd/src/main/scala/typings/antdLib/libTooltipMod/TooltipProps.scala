@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TooltipProps extends AbstractTooltipProps {
-  var overlay: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | RenderFunction] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | RenderFunction] = js.undefined
+  var overlay: js.UndefOr[reactLib.reactMod.ReactNode | RenderFunction] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode | RenderFunction] = js.undefined
 }
 
 object TooltipProps {
@@ -17,7 +17,7 @@ object TooltipProps {
     arrowPointAtCenter: js.UndefOr[scala.Boolean] = js.undefined,
     autoAdjustOverflow: scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow = null,
     builtinPlacements: js.Object = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
@@ -25,13 +25,13 @@ object TooltipProps {
     mouseLeaveDelay: scala.Int | scala.Double = null,
     onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     openClassName: java.lang.String = null,
-    overlay: reactLib.reactMod.ReactNs.ReactNode | RenderFunction = null,
+    overlay: reactLib.reactMod.ReactNode | RenderFunction = null,
     overlayClassName: java.lang.String = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     placement: TooltipPlacement = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode | RenderFunction = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode | RenderFunction = null,
     transitionName: java.lang.String = null,
     trigger: TooltipTrigger = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined

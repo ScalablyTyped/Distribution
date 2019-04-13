@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 
 object minimistDashOptionsLibStrings {
   @js.native
-  sealed trait Options extends js.Object
-  
-  @js.native
   sealed trait boolean
-    extends minimistDashOptionsLib.minimistDashOptionsMod.buildNs.Type
+    extends minimistDashOptionsLib.minimistDashOptionsMod.Type
   
   @js.native
   sealed trait string
-    extends minimistDashOptionsLib.minimistDashOptionsMod.buildNs.Type
+    extends minimistDashOptionsLib.minimistDashOptionsMod.Type
   
-  @scala.inline
-  def Options: Options = "Options".asInstanceOf[Options]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline

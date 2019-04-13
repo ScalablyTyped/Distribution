@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("exif", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(path: java.lang.String, callback: exifLib.exifMod.ExifNs.ExifCallback): scala.Unit = js.native
+  def apply(path: java.lang.String, callback: ExifCallback): scala.Unit = js.native
 }
 

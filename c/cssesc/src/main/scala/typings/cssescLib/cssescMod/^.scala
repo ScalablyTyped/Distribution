@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("cssesc", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val options: cssescLib.cssescMod.cssescNs.Options = js.native
+  val options: Options = js.native
   val version: java.lang.String = js.native
   def apply(string: java.lang.String): java.lang.String = js.native
-  def apply(
-    string: java.lang.String,
-    options: stdLib.Readonly[stdLib.Partial[cssescLib.cssescMod.cssescNs.Options]]
-  ): java.lang.String = js.native
+  def apply(string: java.lang.String, options: stdLib.Readonly[stdLib.Partial[Options]]): java.lang.String = js.native
 }
 

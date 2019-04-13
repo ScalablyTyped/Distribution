@@ -25,6 +25,7 @@ package object interfacesNs {
   type Factory[T] = js.Function1[/* repeated */ js.Any, (js.Function1[/* repeated */ js.Any, T]) | T]
   type FactoryCreator[T] = js.Function1[/* context */ Context, Factory[T]]
   type IsBound = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], scala.Boolean]
+  type MetadataMap = org.scalablytyped.runtime.StringDictionary[js.Array[Metadata]]
   type Middleware = js.Function1[/* next */ Next, Next]
   type Next = js.Function1[/* args */ NextArgs, js.Any | js.Array[js.Any]]
   type Provider[T] = js.Function1[
@@ -33,6 +34,7 @@ package object interfacesNs {
   ]
   type ProviderCreator[T] = js.Function1[/* context */ Context, Provider[T]]
   type Rebind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], BindingToSyntax[js.Any]]
+  type ReflectResult = org.scalablytyped.runtime.StringDictionary[js.Array[Metadata]]
   type RequestScope = (stdLib.Map[js.Any, js.Any]) | scala.Null
   type ResolveRequestHandler = js.Function1[/* request */ Request, js.Any]
   /* Rewritten from type alias, can be one of: 

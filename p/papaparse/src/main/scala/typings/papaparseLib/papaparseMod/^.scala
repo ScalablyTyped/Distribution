@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val BAD_DELIMETERS: js.Array[java.lang.String] = js.native
   var DefaultDelimiter: java.lang.String = js.native
   var LocalChunkSize: java.lang.String = js.native
-  val NODE_STREAM_INPUT: /* 1 */ scala.Double = js.native
+  val NODE_STREAM_INPUT: papaparseLib.papaparseLibNumbers.`1` = js.native
   val RECORD_SEP: java.lang.String = js.native
   var RemoteChunkSize: java.lang.String = js.native
   var SCRIPT_PATH: java.lang.String = js.native

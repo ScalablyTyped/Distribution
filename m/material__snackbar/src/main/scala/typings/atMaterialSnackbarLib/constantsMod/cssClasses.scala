@@ -25,10 +25,11 @@ object cssClasses {
     ACTIVE: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar--active`,
     MULTILINE: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar--multiline`,
     ROOT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar`,
-    TEXT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__text`
+    TEXT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__text`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(ACTION_BUTTON = ACTION_BUTTON, ACTION_ON_BOTTOM = ACTION_ON_BOTTOM, ACTION_WRAPPER = ACTION_WRAPPER, ACTIVE = ACTIVE, MULTILINE = MULTILINE, ROOT = ROOT, TEXT = TEXT)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

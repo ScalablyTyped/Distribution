@@ -14,7 +14,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onCellClick: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       /* column */ scala.Double, 
       scala.Unit
@@ -23,7 +23,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onCellHover: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       /* column */ scala.Double, 
       scala.Unit
@@ -32,7 +32,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onCellHoverExit: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       /* column */ scala.Double, 
       scala.Unit
@@ -41,7 +41,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onRowClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       scala.Unit
     ]
@@ -49,7 +49,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onRowHover: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       scala.Unit
     ]
@@ -57,7 +57,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onRowHoverExit: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       scala.Unit
     ]
@@ -66,7 +66,7 @@ trait TableRowProps extends js.Object {
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
   var selected: js.UndefOr[scala.Boolean] = js.undefined
   var striped: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TableRowProps {
@@ -76,17 +76,17 @@ object TableRowProps {
     displayBorder: js.UndefOr[scala.Boolean] = js.undefined,
     hoverable: js.UndefOr[scala.Boolean] = js.undefined,
     hovered: js.UndefOr[scala.Boolean] = js.undefined,
-    onCellClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
-    onCellHover: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
-    onCellHoverExit: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
-    onRowClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
-    onRowHover: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
-    onRowHoverExit: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
+    onCellClick: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHover: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onCellHoverExit: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double, /* column */ scala.Double) => scala.Unit = null,
+    onRowClick: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
+    onRowHover: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
+    onRowHoverExit: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* row */ scala.Double) => scala.Unit = null,
     rowNumber: scala.Int | scala.Double = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     striped: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TableRowProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

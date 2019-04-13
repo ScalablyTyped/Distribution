@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AutoHide extends js.Object {
-  var autoHide: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior] = js.undefined
+  var autoHide: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.AutoHideBehavior] = js.undefined
   var autoHideDelay: js.UndefOr[scala.Double] = js.undefined
   var clickScrolling: js.UndefOr[scala.Boolean] = js.undefined
   var dragScrolling: js.UndefOr[scala.Boolean] = js.undefined
   var touchSupport: js.UndefOr[scala.Boolean] = js.undefined
-  var visibility: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior] = js.undefined
+  var visibility: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.VisibilityBehavior] = js.undefined
 }
 
 object Anon_AutoHide {
   @scala.inline
   def apply(
-    autoHide: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior = null,
+    autoHide: overlayscrollbarsLib.overlayscrollbarsMod.AutoHideBehavior = null,
     autoHideDelay: scala.Int | scala.Double = null,
     clickScrolling: js.UndefOr[scala.Boolean] = js.undefined,
     dragScrolling: js.UndefOr[scala.Boolean] = js.undefined,
     touchSupport: js.UndefOr[scala.Boolean] = js.undefined,
-    visibility: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior = null
+    visibility: overlayscrollbarsLib.overlayscrollbarsMod.VisibilityBehavior = null
   ): Anon_AutoHide = {
     val __obj = js.Dynamic.literal()
     if (autoHide != null) __obj.updateDynamic("autoHide")(autoHide)

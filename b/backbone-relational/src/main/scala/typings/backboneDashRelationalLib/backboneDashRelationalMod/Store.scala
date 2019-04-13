@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Store ()
   extends backboneLib.backboneMod.EventsMixin
-     with backboneLib.backboneMod.BackboneNs.Events {
+     with backboneLib.backboneMod.Events {
   def addModelScope(scope: js.Any): scala.Unit = js.native
   def addOrphanRelation(relation: js.Any): scala.Unit = js.native
   def addReverseRelation(relation: js.Any): scala.Unit = js.native

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md", "Drawer")
 @js.native
 class Drawer protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libDrawersDrawerMod.DrawerProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libDrawersDrawerMod.DrawerProps) = this()

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class WorkLink ()
   extends awsDashSdkLib.awsDashSdkMod.WorkLink {
-  def this(options: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsWorklinkMod.ClientConfiguration) = this()
 }
 

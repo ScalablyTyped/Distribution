@@ -15,11 +15,7 @@ trait DatePickerProps
   var calendarWeekdayClassName: js.UndefOr[java.lang.String] = js.undefined
   var calendarWeekdayFormat: js.UndefOr[reactDashMdLib.libPickersMod.NSL] = js.undefined
   var dateRenderer: js.UndefOr[
-    js.Function2[
-      /* date */ stdLib.Date, 
-      /* day */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
-    ]
+    js.Function2[/* date */ stdLib.Date, /* day */ scala.Double, reactLib.reactMod.ReactElement[_]]
   ] = js.undefined
   var defaultCalendarDate: js.UndefOr[java.lang.String | stdLib.Date] = js.undefined
   var defaultCalendarMode: js.UndefOr[
@@ -38,11 +34,11 @@ trait DatePickerProps
   var initialCalendarDate: js.UndefOr[java.lang.String | stdLib.Date] = js.undefined
   var maxDate: js.UndefOr[stdLib.Date] = js.undefined
   var minDate: js.UndefOr[stdLib.Date] = js.undefined
-  var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var nextIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var nextIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var nextIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -58,11 +54,11 @@ trait DatePickerProps
   var onNextMonth: js.UndefOr[js.Function1[/* firstDayInMonth */ stdLib.Date, scala.Unit]] = js.undefined
   var onPreviousMonth: js.UndefOr[js.Function1[/* firstDayInMonth */ stdLib.Date, scala.Unit]] = js.undefined
   var onYearSelected: js.UndefOr[js.Function1[/* firstDayInYear */ stdLib.Date, scala.Unit]] = js.undefined
-  var previousIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var previousIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var previousIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var previousIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -98,7 +94,7 @@ object DatePickerProps {
     className: java.lang.String = null,
     closeOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
     customSize: java.lang.String = null,
-    dateRenderer: (/* date */ stdLib.Date, /* day */ scala.Double) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    dateRenderer: (/* date */ stdLib.Date, /* day */ scala.Double) => reactLib.reactMod.ReactElement[_] = null,
     defaultCalendarDate: java.lang.String | stdLib.Date = null,
     defaultCalendarMode: reactDashMdLib.reactDashMdLibStrings.calendar | reactDashMdLib.reactDashMdLibStrings.year = null,
     defaultValue: java.lang.String | stdLib.Date = null,
@@ -108,23 +104,23 @@ object DatePickerProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     displayMode: reactDashMdLib.reactDashMdLibStrings.landscape | reactDashMdLib.reactDashMdLibStrings.portrait = null,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    errorText: reactLib.reactMod.ReactNs.ReactNode = null,
+    errorText: reactLib.reactMod.ReactNode = null,
     firstDayOfWeek: reactDashMdLib.reactDashMdLibNumbers.`0` | reactDashMdLib.reactDashMdLibNumbers.`1` | reactDashMdLib.reactDashMdLibNumbers.`2` | reactDashMdLib.reactDashMdLibNumbers.`3` | reactDashMdLib.reactDashMdLibNumbers.`4` | reactDashMdLib.reactDashMdLibNumbers.`5` | reactDashMdLib.reactDashMdLibNumbers.`6` = null,
     floating: js.UndefOr[scala.Boolean] = js.undefined,
     formatOptions: reactDashMdLib.libPickersMod.IntlFormat = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     getDateClassName: (/* date */ stdLib.Date, /* day */ scala.Double) => java.lang.String = null,
     helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    helpText: reactLib.reactMod.ReactNs.ReactNode = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    helpText: reactLib.reactMod.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     initialCalendarDate: java.lang.String | stdLib.Date = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
-    inlineIndicator: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    inlineIndicator: reactLib.reactMod.ReactElement[_] = null,
     inputClassName: java.lang.String = null,
-    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    inputStyle: reactLib.reactMod.CSSProperties = null,
+    label: reactLib.reactMod.ReactNode = null,
     lastChild: js.UndefOr[scala.Boolean] = js.undefined,
-    leftIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    leftIcon: reactLib.reactMod.ReactElement[_] = null,
     leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined,
     lineDirection: reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections = null,
     locales: reactDashMdLib.libPickersMod.Locales = null,
@@ -135,43 +131,43 @@ object DatePickerProps {
     min: scala.Int | scala.Double = null,
     minDate: stdLib.Date = null,
     name: scala.Double | java.lang.String = null,
-    nextIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    nextIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    nextIcon: reactLib.reactMod.ReactElement[_] = null,
+    nextIconChildren: reactLib.reactMod.ReactNode = null,
     nextIconClassName: java.lang.String = null,
     okLabel: java.lang.String = null,
     okPrimary: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
     onChange: (/* formattedDate */ java.lang.String, /* date */ stdLib.Date, /* event */ stdLib.Event) => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     onNextMonth: /* firstDayInMonth */ stdLib.Date => scala.Unit = null,
     onPreviousMonth: /* firstDayInMonth */ stdLib.Date => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     onVisibilityChange: (/* visible */ scala.Boolean, /* event */ stdLib.Event) => scala.Unit = null,
     onYearSelected: /* firstDayInYear */ stdLib.Date => scala.Unit = null,
     paddedBlock: js.UndefOr[scala.Boolean] = js.undefined,
-    passwordIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    passwordIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    passwordIcon: reactLib.reactMod.ReactElement[_] = null,
+    passwordIconChildren: reactLib.reactMod.ReactNode = null,
     passwordIconClassName: java.lang.String = null,
     passwordInitiallyVisible: js.UndefOr[scala.Boolean] = js.undefined,
     pattern: java.lang.String = null,
@@ -179,24 +175,24 @@ object DatePickerProps {
     pickerContentClassName: java.lang.String = null,
     pickerFooterClassName: java.lang.String = null,
     pickerHeaderClassName: java.lang.String = null,
-    pickerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    pickerStyle: reactLib.reactMod.CSSProperties = null,
     placeholder: java.lang.String = null,
     portal: js.UndefOr[scala.Boolean] = js.undefined,
-    previousIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    previousIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    previousIcon: reactLib.reactMod.ReactElement[_] = null,
+    previousIconChildren: reactLib.reactMod.ReactNode = null,
     previousIconClassName: java.lang.String = null,
     renderNode: js.Object = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
     resize: reactDashMdLib.Anon_DisableShrink = null,
-    rightIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    rightIcon: reactLib.reactMod.ReactElement[_] = null,
     rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined,
     rows: scala.Int | scala.Double = null,
     showAllDays: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     textFieldClassName: java.lang.String = null,
-    textFieldStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    textFieldStyle: reactLib.reactMod.CSSProperties = null,
     timeZone: java.lang.String = null,
     `type`: reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes = null,
     value: java.lang.String | stdLib.Date = null,

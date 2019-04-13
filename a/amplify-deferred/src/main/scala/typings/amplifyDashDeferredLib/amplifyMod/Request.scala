@@ -24,6 +24,6 @@ trait Request extends js.Object {
     *   success (optional): Function to invoke on success.
     *   error (optional): Function to invoke on error.
     */
-  def apply(settings: amplifyLib.amplifyMod.amplifyNs.RequestSettings): jqueryLib.JQueryPromise[_] = js.native
+  def apply(settings: amplifyLib.amplifyMod.RequestSettings): jqueryLib.JQueryPromise[_] = js.native
 }
 

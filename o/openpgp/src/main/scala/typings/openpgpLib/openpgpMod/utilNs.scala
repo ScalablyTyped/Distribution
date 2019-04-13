@@ -36,6 +36,7 @@ object utilNs extends js.Object {
     * @param url If true, output is URL-safe
     * @returns Base-64 encoded string
     */
+  def Uint8Array_to_b64(bytes: stdLib.Uint8Array): java.lang.String = js.native
   def Uint8Array_to_b64(bytes: stdLib.Uint8Array, url: scala.Boolean): java.lang.String = js.native
   /**
     * Convert an array of 8-bit integers to a hex string
@@ -95,7 +96,7 @@ object utilNs extends js.Object {
   /**
     * Format user id for internal use.
     */
-  def formatUserId(): scala.Unit = js.native
+  def formatUserId(id: openpgpLib.Anon_Comment): java.lang.String = js.native
   /**
     * Get native Node.js Buffer constructor. This should be used since
     * Buffer is not available under browserify.
@@ -156,7 +157,7 @@ object utilNs extends js.Object {
   /**
     * Parse user id.
     */
-  def parseUserId(): scala.Unit = js.native
+  def parseUserId(userId: java.lang.String): openpgpLib.Anon_Comment = js.native
   /**
     * Helper function to print a debug message. Debug
     * messages are only printed if

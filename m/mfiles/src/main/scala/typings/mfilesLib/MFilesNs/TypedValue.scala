@@ -62,3 +62,8 @@ class TypedValue ()
   override def Unserialize(Bytes: js.Array[scala.Double], ReadFromOldSerializingFormat: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.TypedValue")
+@js.native
+object TypedValue
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITypedValue]
+

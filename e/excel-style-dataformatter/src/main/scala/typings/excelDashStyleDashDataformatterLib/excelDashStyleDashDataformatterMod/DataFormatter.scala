@@ -11,18 +11,14 @@ trait DataFormatter extends js.Object {
   	 * Defines locales
   	 * @param  locales
   	 */
-  def defineLocales(
-    locales: js.Array[
-      excelDashStyleDashDataformatterLib.excelDashStyleDashDataformatterMod.DataFormatterNs.LocalesOptions
-    ]
-  ): scala.Unit = js.native
+  def defineLocales(locales: js.Array[LocalesOptions]): scala.Unit = js.native
   /**
   	 * Format a value
   	 * @param value
   	 * @param type value type
   	 * @param format format preset
   	 */
-  def format(value: js.Any, `type`: java.lang.String, format: java.lang.String): excelDashStyleDashDataformatterLib.excelDashStyleDashDataformatterMod.DataFormatterNs.FormatResult = js.native
+  def format(value: js.Any, `type`: java.lang.String, format: java.lang.String): FormatResult = js.native
   /**
   	 * Sets locale
   	 * If locale doesn't exist, sets default

@@ -31,8 +31,8 @@ class PgDriver protected ()
     optionsOrCb: CreateDatabaseOptions,
     callback: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
   ): scala.Unit = js.native
-  def createDatabaseAsync(dbName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def createDatabaseAsync(dbName: java.lang.String, options: CreateDatabaseOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def createDatabaseAsync(dbName: java.lang.String): bluebirdLib.bluebirdMod.^[_] = js.native
+  def createDatabaseAsync(dbName: java.lang.String, options: CreateDatabaseOptions): bluebirdLib.bluebirdMod.^[_] = js.native
   def createSequence(
     sqName: java.lang.String,
     optionsOrCb: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
@@ -48,8 +48,8 @@ class PgDriver protected ()
     optionsOrCb: CreateSequenceOptions,
     callback: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
   ): scala.Unit = js.native
-  def createSequenceAsync(sqName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def createSequenceAsync(sqName: java.lang.String, options: CreateSequenceOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def createSequenceAsync(sqName: java.lang.String): bluebirdLib.bluebirdMod.^[_] = js.native
+  def createSequenceAsync(sqName: java.lang.String, options: CreateSequenceOptions): bluebirdLib.bluebirdMod.^[_] = js.native
   def dropDatabase(
     dbName: java.lang.String,
     optionsOrCb: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
@@ -65,8 +65,8 @@ class PgDriver protected ()
     optionsOrCb: DropDatabaseOptions,
     callback: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
   ): scala.Unit = js.native
-  def dropDatabaseAsync(dbName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def dropDatabaseAsync(dbName: java.lang.String, options: DropDatabaseOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def dropDatabaseAsync(dbName: java.lang.String): bluebirdLib.bluebirdMod.^[_] = js.native
+  def dropDatabaseAsync(dbName: java.lang.String, options: DropDatabaseOptions): bluebirdLib.bluebirdMod.^[_] = js.native
   def dropSequence(
     dbName: java.lang.String,
     optionsOrCb: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
@@ -82,8 +82,8 @@ class PgDriver protected ()
     optionsOrCb: DropSequenceOptions,
     callback: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
   ): scala.Unit = js.native
-  def dropSequenceAsync(dbName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def dropSequenceAsync(dbName: java.lang.String, options: DropSequenceOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def dropSequenceAsync(dbName: java.lang.String): bluebirdLib.bluebirdMod.^[_] = js.native
+  def dropSequenceAsync(dbName: java.lang.String, options: DropSequenceOptions): bluebirdLib.bluebirdMod.^[_] = js.native
   def switchDatabase(
     options: SwitchDatabaseOptions,
     callback: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
@@ -92,7 +92,7 @@ class PgDriver protected ()
     options: java.lang.String,
     callback: dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction
   ): scala.Unit = js.native
-  def switchDatabaseAsync(options: SwitchDatabaseOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def switchDatabaseAsync(options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def switchDatabaseAsync(options: SwitchDatabaseOptions): bluebirdLib.bluebirdMod.^[_] = js.native
+  def switchDatabaseAsync(options: java.lang.String): bluebirdLib.bluebirdMod.^[_] = js.native
 }
 

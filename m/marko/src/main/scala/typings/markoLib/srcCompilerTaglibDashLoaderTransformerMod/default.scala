@@ -19,7 +19,7 @@ class default () extends Transformer {
   /* CompleteClass */
   override var properties: js.Any = js.native
   /* CompleteClass */
-  override var tag: markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced | scala.Null = js.native
+  override var tag: markoLib.srcCompilerTaglibDashLoaderTagMod.^  | scala.Null = js.native
   /* CompleteClass */
   override var taglibId: java.lang.String = js.native
   /* CompleteClass */

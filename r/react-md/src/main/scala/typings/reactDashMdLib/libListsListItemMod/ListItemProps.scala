@@ -13,32 +13,32 @@ import scala.scalajs.js.annotation._
   var actionButtonIcon: js.UndefOr[java.lang.String] = js.undefined
   var actionButtonOnClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var actionButtonPrimary: js.UndefOr[scala.Boolean] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var activeBoxClassName: js.UndefOr[java.lang.String] = js.undefined
-  var activeBoxStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var activeBoxStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
   var animateNestedItems: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-posinset`: js.UndefOr[scala.Double] = js.undefined
   var `aria-setsize`: js.UndefOr[scala.Double] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * @deprecated
     */
   var defaultOpen: js.UndefOr[scala.Boolean] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
-  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var expanderIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var expanderIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -49,126 +49,126 @@ import scala.scalajs.js.annotation._
     * @deprecated
     */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
-  var itemComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var itemComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var itemProps: js.UndefOr[js.Object] = js.undefined
   var itemRef: js.UndefOr[
-    js.Function1[/* ref */ reactLib.reactMod.ReactNs.ReactHTMLElement[_] | scala.Null, scala.Null]
+    js.Function1[/* ref */ reactLib.reactMod.ReactHTMLElement[_] | scala.Null, scala.Null]
   ] = js.undefined
-  var leftAvatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var leftAvatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var leftNodeClassName: js.UndefOr[java.lang.String] = js.undefined
-  var leftNodeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var nestedItems: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var leftNodeStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var nestedItems: js.UndefOr[js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var nestedListClassName: js.UndefOr[java.lang.String] = js.undefined
   var nestedListHeightRestricted: js.UndefOr[scala.Boolean] = js.undefined
-  var nestedListStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var primaryText: reactLib.reactMod.ReactNs.ReactNode | js.UndefOr[reactLib.reactMod.ReactNs.ReactNode]
+  var nestedListStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var primaryText: reactLib.reactMod.ReactNode | js.UndefOr[reactLib.reactMod.ReactNode]
   var primaryTextClassName: js.UndefOr[java.lang.String] = js.undefined
-  var primaryTextStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var primaryTextStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var renderChildrenOutside: js.UndefOr[scala.Boolean] = js.undefined
-  var rightAvatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var rightAvatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var rightNodeClassName: js.UndefOr[java.lang.String] = js.undefined
-  var rightNodeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var secondaryText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var rightNodeStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var secondaryText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var secondaryTextClassName: js.UndefOr[java.lang.String] = js.undefined
-  var secondaryTextStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var secondaryTextStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var threeLines: js.UndefOr[scala.Boolean] = js.undefined
   var tileClassName: js.UndefOr[java.lang.String] = js.undefined
-  var tileStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tileStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object ListItemProps {
   @scala.inline
   def apply(
-    primaryText: reactLib.reactMod.ReactNs.ReactNode,
+    primaryText: reactLib.reactMod.ReactNode,
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     actionButtonIcon: java.lang.String = null,
-    actionButtonOnClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    actionButtonOnClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     actionButtonPrimary: js.UndefOr[scala.Boolean] = js.undefined,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     activeBoxClassName: java.lang.String = null,
-    activeBoxStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeBoxStyle: reactLib.reactMod.CSSProperties = null,
     activeClassName: java.lang.String = null,
     animateNestedItems: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-posinset`: scala.Int | scala.Double = null,
     `aria-setsize`: scala.Int | scala.Double = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    component: reactLib.reactMod.ReactType[_] = null,
     contentClassName: java.lang.String = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     disabledInteractions: js.Array[reactDashMdLib.libInksInjectInkMod.InteractionTypes] = null,
-    expanderIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    expanderIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    expanderIcon: reactLib.reactMod.ReactElement[_] = null,
+    expanderIconChildren: reactLib.reactMod.ReactNode = null,
     expanderIconClassName: java.lang.String = null,
     expanderLeft: js.UndefOr[scala.Boolean] = js.undefined,
     inkClassName: java.lang.String = null,
     inkContainerClassName: java.lang.String = null,
-    inkContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inkContainerStyle: reactLib.reactMod.CSSProperties = null,
     inkDisabled: js.UndefOr[scala.Boolean] = js.undefined,
-    inkStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inkStyle: reactLib.reactMod.CSSProperties = null,
     inkTransitionEnterTimeout: scala.Int | scala.Double = null,
     inkTransitionLeaveTimeout: scala.Int | scala.Double = null,
     inkTransitionOverlay: scala.Int | scala.Double = null,
     inset: js.UndefOr[scala.Boolean] = js.undefined,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
-    itemComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    itemComponent: reactLib.reactMod.ReactType[_] = null,
     itemProps: js.Object = null,
-    itemRef: /* ref */ reactLib.reactMod.ReactNs.ReactHTMLElement[_] | scala.Null => scala.Null = null,
-    leftAvatar: reactLib.reactMod.ReactNs.ReactNode = null,
-    leftIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    itemRef: /* ref */ reactLib.reactMod.ReactHTMLElement[_] | scala.Null => scala.Null = null,
+    leftAvatar: reactLib.reactMod.ReactNode = null,
+    leftIcon: reactLib.reactMod.ReactNode = null,
     leftNodeClassName: java.lang.String = null,
-    leftNodeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    nestedItems: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    leftNodeStyle: reactLib.reactMod.CSSProperties = null,
+    nestedItems: js.Array[reactLib.reactMod.ReactNode] = null,
     nestedListClassName: java.lang.String = null,
     nestedListHeightRestricted: js.UndefOr[scala.Boolean] = js.undefined,
-    nestedListStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    nestedListStyle: reactLib.reactMod.CSSProperties = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     primaryTextClassName: java.lang.String = null,
-    primaryTextStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    primaryTextStyle: reactLib.reactMod.CSSProperties = null,
     renderChildrenOutside: js.UndefOr[scala.Boolean] = js.undefined,
-    rightAvatar: reactLib.reactMod.ReactNs.ReactNode = null,
-    rightIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightAvatar: reactLib.reactMod.ReactNode = null,
+    rightIcon: reactLib.reactMod.ReactNode = null,
     rightNodeClassName: java.lang.String = null,
-    rightNodeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    secondaryText: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightNodeStyle: reactLib.reactMod.CSSProperties = null,
+    secondaryText: reactLib.reactMod.ReactNode = null,
     secondaryTextClassName: java.lang.String = null,
-    secondaryTextStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    secondaryTextStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     threeLines: js.UndefOr[scala.Boolean] = js.undefined,
     tileClassName: java.lang.String = null,
-    tileStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tileStyle: reactLib.reactMod.CSSProperties = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     waitForInkTransition: js.UndefOr[scala.Boolean] = js.undefined
   ): ListItemProps = {

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("create-hash", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(algo: createDashHashLib.createDashHashMod.createHashNs.Algorithm): nodeLib.cryptoMod.Hash = js.native
+  def apply(algo: Algorithm): nodeLib.cryptoMod.Hash = js.native
 }
 

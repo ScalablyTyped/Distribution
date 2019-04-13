@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** The MediaKeyStatusMap interface of the EncryptedMediaExtensions API is a read-only map of media key statuses by key IDs. */
 @js.native
 trait MediaKeyStatusMap extends js.Object {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[BufferSource, MediaKeyStatus]]] = js.native
   val size: scala.Double = js.native
   def entries(): IterableIterator[js.Tuple2[BufferSource, MediaKeyStatus]] = js.native

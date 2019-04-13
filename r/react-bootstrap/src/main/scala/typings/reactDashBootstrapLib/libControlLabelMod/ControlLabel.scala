@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ControlLabel
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libControlLabelMod.ControlLabelNs.ControlLabelProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[ControlLabelProps, js.Object, js.Any]
 

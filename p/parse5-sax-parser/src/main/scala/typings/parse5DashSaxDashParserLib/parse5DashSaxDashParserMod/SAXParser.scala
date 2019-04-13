@@ -46,10 +46,7 @@ trait SAXParser
   @JSName("on")
   def on_comment(
     event: parse5DashSaxDashParserLib.parse5DashSaxDashParserLibStrings.comment,
-    listener: js.Function1[
-      /* comment */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.CommentToken, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* comment */ CommentToken, scala.Unit]
   ): this.type = js.native
   /**
     * Raised when parser encounters a [document type declaration](https://en.wikipedia.org/wiki/Document_type_declaration).
@@ -59,10 +56,7 @@ trait SAXParser
   @JSName("on")
   def on_doctype(
     event: parse5DashSaxDashParserLib.parse5DashSaxDashParserLibStrings.doctype,
-    listener: js.Function1[
-      /* doctype */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.DoctypeToken, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* doctype */ DoctypeToken, scala.Unit]
   ): this.type = js.native
   /**
     * Raised when parser encounters an end tag.
@@ -72,10 +66,7 @@ trait SAXParser
   @JSName("on")
   def on_endTag(
     event: parse5DashSaxDashParserLib.parse5DashSaxDashParserLibStrings.endTag,
-    listener: js.Function1[
-      /* endTag */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.EndTagToken, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* endTag */ EndTagToken, scala.Unit]
   ): this.type = js.native
   /**
     * Raised when the parser encounters a start tag.
@@ -85,10 +76,7 @@ trait SAXParser
   @JSName("on")
   def on_startTag(
     event: parse5DashSaxDashParserLib.parse5DashSaxDashParserLibStrings.startTag,
-    listener: js.Function1[
-      /* startTag */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.StartTagToken, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* startTag */ StartTagToken, scala.Unit]
   ): this.type = js.native
   /**
     * Raised when parser encounters text content.
@@ -98,10 +86,7 @@ trait SAXParser
   @JSName("on")
   def on_text(
     event: parse5DashSaxDashParserLib.parse5DashSaxDashParserLibStrings.text,
-    listener: js.Function1[
-      /* text */ parse5DashSaxDashParserLib.parse5DashSaxDashParserMod.SAXParserNs.TextToken, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* text */ TextToken, scala.Unit]
   ): this.type = js.native
   /**
     * Stops parsing. Useful if you want the parser to stop consuming CPU time once you've obtained the desired info

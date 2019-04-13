@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cypress/types/lodash", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[cypressLib.typesLodashMod.underscoreNs.LoDashStatic]
+  extends org.scalablytyped.runtime.TopLevel[LoDashStatic]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-svg", "Symbol")
 @js.native
 class Symbol protected ()
-  extends reactLib.reactMod.ReactNs.Component[SymbolProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[SymbolProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: SymbolProps) = this()
   def this(props: SymbolProps, context: js.Any) = this()
 }
@@ -16,5 +16,5 @@ class Symbol protected ()
 @JSImport("react-native-svg", "Symbol")
 @js.native
 object Symbol
-  extends reactLib.reactMod.ReactNs.ComponentClass[SymbolProps, reactLib.reactMod.ReactNs.ComponentState]
+  extends reactLib.reactMod.ComponentClass[SymbolProps, reactLib.reactMod.ComponentState]
 

@@ -7,24 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "LocalPrimitiveValueBlock")
 @js.native
-class LocalPrimitiveValueBlock ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalPrimitiveValueBlock {
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
-  /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
-    */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+class LocalPrimitiveValueBlock () extends LocalValueBlock {
+  var isHexOnly: scala.Boolean = js.native
+  var valueHex: stdLib.ArrayBuffer = js.native
 }
 

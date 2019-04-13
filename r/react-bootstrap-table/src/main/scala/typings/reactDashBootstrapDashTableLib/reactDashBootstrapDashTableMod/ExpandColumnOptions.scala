@@ -21,7 +21,7 @@ trait ExpandColumnOptions extends js.Object {
   var expandColumnComponent: js.UndefOr[
     js.Function1[
       /* props */ ExpandColumnComponentProps, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait ExpandColumnOptions extends js.Object {
   var expandedColumnHeaderComponent: js.UndefOr[
     js.Function1[
       /* props */ ExpandedColumnHeaderProps, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
 }
@@ -44,9 +44,9 @@ object ExpandColumnOptions {
   def apply(
     columnWidth: scala.Double | java.lang.String = null,
     expandColumnBeforeSelectColumn: js.UndefOr[scala.Boolean] = js.undefined,
-    expandColumnComponent: /* props */ ExpandColumnComponentProps => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    expandColumnComponent: /* props */ ExpandColumnComponentProps => java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     expandColumnVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    expandedColumnHeaderComponent: /* props */ ExpandedColumnHeaderProps => java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null
+    expandedColumnHeaderComponent: /* props */ ExpandedColumnHeaderProps => java.lang.String | reactLib.reactMod.ReactElement[_] = null
   ): ExpandColumnOptions = {
     val __obj = js.Dynamic.literal()
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])

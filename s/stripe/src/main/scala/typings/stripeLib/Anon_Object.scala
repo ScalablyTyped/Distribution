@@ -11,13 +11,13 @@ trait Anon_Object extends js.Object {
     * invoice.created event will have a full invoice object as the value of
     * the object key.
     */
-  var `object`: stripeLib.stripeMod.StripeNs.IObject
+  var `object`: stripeLib.stripeMod.IObject
   var previous_attributes: js.UndefOr[js.Object] = js.undefined
 }
 
 object Anon_Object {
   @scala.inline
-  def apply(`object`: stripeLib.stripeMod.StripeNs.IObject, previous_attributes: js.Object = null): Anon_Object = {
+  def apply(`object`: stripeLib.stripeMod.IObject, previous_attributes: js.Object = null): Anon_Object = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`)
     if (previous_attributes != null) __obj.updateDynamic("previous_attributes")(previous_attributes)

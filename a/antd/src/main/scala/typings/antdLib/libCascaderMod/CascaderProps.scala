@@ -21,7 +21,7 @@ trait CascaderProps extends js.Object {
     js.Function2[
       /* label */ js.Array[java.lang.String], 
       /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /** 次级菜单的展开方式，可选 'click' 和 'hover' */
@@ -37,7 +37,7 @@ trait CascaderProps extends js.Object {
   var loadData: js.UndefOr[
     js.Function1[/* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], scala.Unit]
   ] = js.undefined
-  var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** 选择完成后的回调 */
   var onChange: js.UndefOr[
     js.Function2[
@@ -62,8 +62,8 @@ trait CascaderProps extends js.Object {
   /** 输入框大小，可选 `large` `default` `small` */
   var size: js.UndefOr[java.lang.String] = js.undefined
   /** 自定义样式 */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** 指定选中项 */
   var value: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
@@ -77,14 +77,14 @@ object CascaderProps {
     className: java.lang.String = null,
     defaultValue: js.Array[java.lang.String] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    displayRender: (/* label */ js.Array[java.lang.String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => reactLib.reactMod.ReactNs.ReactNode = null,
+    displayRender: (/* label */ js.Array[java.lang.String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => reactLib.reactMod.ReactNode = null,
     expandTrigger: CascaderExpandTrigger = null,
     fieldNames: FieldNamesType = null,
     filedNames: FieldNamesType = null,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     inputPrefixCls: java.lang.String = null,
     loadData: /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]] => scala.Unit = null,
-    notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    notFoundContent: reactLib.reactMod.ReactNode = null,
     onChange: (/* value */ js.Array[java.lang.String], /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]]) => scala.Unit = null,
     onPopupVisibleChange: /* popupVisible */ scala.Boolean => scala.Unit = null,
     placeholder: java.lang.String = null,
@@ -94,8 +94,8 @@ object CascaderProps {
     prefixCls: java.lang.String = null,
     showSearch: scala.Boolean | ShowSearchType = null,
     size: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    suffixIcon: reactLib.reactMod.ReactNode = null,
     value: js.Array[java.lang.String] = null
   ): CascaderProps = {
     val __obj = js.Dynamic.literal(options = options)

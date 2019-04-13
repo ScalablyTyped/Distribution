@@ -7,12 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio", "ConversationsGrant")
 @js.native
-class ConversationsGrant ()
-  extends twilioLib.twilioMod.twilioNs.ConversationsGrant {
-  def this(options: twilioLib.twilioMod.twilioNs.ConversationsGrantOptions) = this()
+class ConversationsGrant () extends Grant {
+  def this(options: ConversationsGrantOptions) = this()
+  var configurationProfileSid: java.lang.String = js.native
   /* CompleteClass */
-  override var configurationProfileSid: java.lang.String = js.native
-  /* CompleteClass */
-  override def toPayload(): twilioLib.twilioMod.twilioNs.GrantPayload = js.native
+  override def toPayload(): GrantPayload = js.native
 }
 

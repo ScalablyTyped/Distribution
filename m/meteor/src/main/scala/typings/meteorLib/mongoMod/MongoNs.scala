@@ -195,9 +195,6 @@ object MongoNs extends js.Object {
   trait CursorStatic
     extends org.scalablytyped.runtime.Instantiable0[Cursor[js.Object]]
   
-  trait Dictionary[T]
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[T]
-  
   @js.native
   trait FieldExpression[T] extends js.Object {
     @JSName("$all")
@@ -213,15 +210,13 @@ object MongoNs extends js.Object {
     @JSName("$comment")
     var $comment: js.UndefOr[java.lang.String] = js.native
     @JSName("$elemMatch")
-    var $elemMatch: js.UndefOr[Query[T]] = js.native
+    var $elemMatch: js.UndefOr[FieldExpression[T] | Query[T]] = js.native
     @JSName("$eq")
     var $eq: js.UndefOr[T] = js.native
     @JSName("$exists")
     var $exists: js.UndefOr[scala.Boolean] = js.native
     @JSName("$expr")
-    var $expr: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.UndefOr[
-        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.Object
-      ] = js.native
+    var $expr: js.UndefOr[FieldExpression[T]] = js.native
     @JSName("$geoIntersects")
     var $geoIntersects: js.UndefOr[js.Any] = js.native
     @JSName("$geoWithin")
@@ -249,9 +244,7 @@ object MongoNs extends js.Object {
     @JSName("$nin")
     var $nin: js.UndefOr[js.Array[T]] = js.native
     @JSName("$not")
-    var $not: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.UndefOr[
-        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.Object
-      ] = js.native
+    var $not: js.UndefOr[FieldExpression[T]] = js.native
     @JSName("$options")
     var $options: js.UndefOr[java.lang.String] = js.native
     @JSName("$regex")
@@ -265,9 +258,6 @@ object MongoNs extends js.Object {
     @JSName("$where")
     var $where: js.UndefOr[java.lang.String | js.Function] = js.native
   }
-  
-  trait FieldSpecifier
-    extends /* id */ org.scalablytyped.runtime.StringDictionary[stdLib.Number]
   
   trait ObjectID extends js.Object {
     def equals(otherID: ObjectID): scala.Boolean
@@ -371,9 +361,11 @@ object MongoNs extends js.Object {
   type ArraysOrEach[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]> | {  $each  :T[P]}}
     */ meteorLib.meteorLibStrings.ArraysOrEach with js.Any
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
   type ElementsOf[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]>}
     */ meteorLib.meteorLibStrings.ElementsOf with T
+  type FieldSpecifier = org.scalablytyped.runtime.StringDictionary[stdLib.Number]
   type Flatten[T] = T | (/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any)
   type Modifier[T] = T | meteorLib.Anon_01[T]
   type OnlyArrays[T] = T

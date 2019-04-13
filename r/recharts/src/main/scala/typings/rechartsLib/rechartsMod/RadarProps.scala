@@ -10,38 +10,38 @@ import scala.scalajs.js.annotation._
   extends EventAttributes
      with Animatable {
   var activeDot: js.UndefOr[
-    js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | scala.Boolean
+    js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | scala.Boolean
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dataKey: DataKey
   var dot: js.UndefOr[
-    js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[DotProps] | scala.Boolean
+    js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[DotProps] | scala.Boolean
   ] = js.undefined
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   var label: js.UndefOr[
-    js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | scala.Boolean
+    js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | scala.Boolean
   ] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var points: js.UndefOr[js.Array[RadarPoint]] = js.undefined
-  var shape: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[RadarProps]] = js.undefined
+  var shape: js.UndefOr[reactLib.reactMod.ReactElement[_] | ContentRenderer[RadarProps]] = js.undefined
 }
 
 object RadarProps {
   @scala.inline
   def apply(
     dataKey: DataKey,
-    activeDot: js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | scala.Boolean = null,
+    activeDot: js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | scala.Boolean = null,
     animationBegin: scala.Int | scala.Double = null,
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: AnimationEasingType = null,
     animationId: scala.Int | scala.Double = null,
     className: java.lang.String = null,
-    dot: js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[DotProps] | scala.Boolean = null,
+    dot: js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[DotProps] | scala.Boolean = null,
     hide: js.UndefOr[scala.Boolean] = js.undefined,
     isAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
-    label: js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | scala.Boolean = null,
+    label: js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] | scala.Boolean = null,
     legendType: LegendType = null,
     onAnimationEnd: RechartsFunction = null,
     onAnimationStart: RechartsFunction = null,
@@ -58,7 +58,7 @@ object RadarProps {
     onTouchMove: RechartsFunction = null,
     onTouchStart: RechartsFunction = null,
     points: js.Array[RadarPoint] = null,
-    shape: reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[RadarProps] = null
+    shape: reactLib.reactMod.ReactElement[_] | ContentRenderer[RadarProps] = null
   ): RadarProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (activeDot != null) __obj.updateDynamic("activeDot")(activeDot.asInstanceOf[js.Any])

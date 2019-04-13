@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object libBuiltinsMod {
   type formatGroupLabel[OptionType] = js.Function1[
     /* group */ reactDashSelectLib.libTypesMod.GroupType[OptionType], 
-    reactLib.reactMod.ReactNs.ReactNode
+    reactLib.reactMod.ReactNode
   ]
   type getOptionLabel[OptionType] = js.Function1[/* option */ OptionType, java.lang.String]
   type getOptionValue[OptionType] = js.Function1[/* option */ OptionType, java.lang.String]

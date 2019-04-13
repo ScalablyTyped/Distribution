@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NotificationHubService extends js.Object {
-  var apns: azureDashSbLib.libApnsserviceMod.namespaced = js.native
-  var gcm: azureDashSbLib.libGcmserviceMod.namespaced = js.native
+  var apns: azureDashSbLib.libApnsserviceMod.^ = js.native
+  var gcm: azureDashSbLib.libGcmserviceMod.^ = js.native
   var hubName: java.lang.String = js.native
-  var mpns: azureDashSbLib.libMpnserviceMod.namespaced = js.native
-  var wns: azureDashSbLib.libWnsserviceMod.namespaced = js.native
+  var mpns: azureDashSbLib.libMpnserviceMod.^ = js.native
+  var wns: azureDashSbLib.libWnsserviceMod.^ = js.native
   def createOrUpdateInstallation(
     installation: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.NotificationHubInstallation,
     callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Callback */ js.Any

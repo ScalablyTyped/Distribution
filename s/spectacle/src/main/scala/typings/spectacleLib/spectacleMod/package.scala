@@ -12,4 +12,5 @@ package object spectacleMod {
     */
   type CSSProperties = csstypeLib.csstypeMod.Properties[java.lang.String | scala.Double]
   type FitProps = FillProps
+  type Theme = org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]
 }

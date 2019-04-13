@@ -23,10 +23,7 @@ object ^ extends js.Object {
     * updated to contain the previous foo AND the bar that was just returned. Only
     * returning bar will not delete foo.
     */
-  def apply(stores: js.Array[fluxLib.libFluxStoreMod.namespaced[_]]): js.Any = js.native
-  def apply(
-    stores: js.Array[fluxLib.libFluxStoreMod.namespaced[_]],
-    options: fluxLib.libFluxMixinLegacyMod.FluxMixinLegacyNs.Options
-  ): js.Any = js.native
+  def apply(stores: js.Array[fluxLib.libFluxStoreMod.^[_]]): js.Any = js.native
+  def apply(stores: js.Array[fluxLib.libFluxStoreMod.^[_]], options: Options): js.Any = js.native
 }
 

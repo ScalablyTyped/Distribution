@@ -11,7 +11,7 @@ object Global extends js.Object {
   @JSName("NW")
   @js.native
   object NWNs extends js.Object {
-    val Dom: nwmatcherLib.nwmatcherMod.nwmatcherNs.Matcher = js.native
+    val Dom: nwmatcherLib.nwmatcherMod.Matcher = js.native
   }
   
 }

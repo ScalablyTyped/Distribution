@@ -6,41 +6,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ExtrudedHeight extends js.Object {
-  var extrudedHeight: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var extrudedHeight: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
   var fill: js.UndefOr[scala.Boolean] = js.undefined
-  var granularity: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var height: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var material: js.UndefOr[
-    cesiumLib.cesiumMod.CesiumNs.MaterialProperty | cesiumLib.cesiumMod.CesiumNs.Color
-  ] = js.undefined
-  var numberOfVerticalLines: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var granularity: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var height: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var material: js.UndefOr[cesiumLib.cesiumMod.MaterialProperty | cesiumLib.cesiumMod.Color] = js.undefined
+  var numberOfVerticalLines: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
   var outline: js.UndefOr[scala.Boolean] = js.undefined
-  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined
+  var outlineColor: js.UndefOr[cesiumLib.cesiumMod.Color] = js.undefined
   var outlineWidth: js.UndefOr[scala.Double] = js.undefined
-  var rotation: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var rotation: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
   var semiMajorAxis: js.UndefOr[scala.Double] = js.undefined
   var semiMinorAxis: js.UndefOr[scala.Double] = js.undefined
-  var show: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var stRotation: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var show: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var stRotation: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
 }
 
 object Anon_ExtrudedHeight {
   @scala.inline
   def apply(
-    extrudedHeight: cesiumLib.cesiumMod.CesiumNs.Property = null,
+    extrudedHeight: cesiumLib.cesiumMod.Property = null,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
-    granularity: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    height: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    material: cesiumLib.cesiumMod.CesiumNs.MaterialProperty | cesiumLib.cesiumMod.CesiumNs.Color = null,
-    numberOfVerticalLines: cesiumLib.cesiumMod.CesiumNs.Property = null,
+    granularity: cesiumLib.cesiumMod.Property = null,
+    height: cesiumLib.cesiumMod.Property = null,
+    material: cesiumLib.cesiumMod.MaterialProperty | cesiumLib.cesiumMod.Color = null,
+    numberOfVerticalLines: cesiumLib.cesiumMod.Property = null,
     outline: js.UndefOr[scala.Boolean] = js.undefined,
-    outlineColor: cesiumLib.cesiumMod.CesiumNs.Color = null,
+    outlineColor: cesiumLib.cesiumMod.Color = null,
     outlineWidth: scala.Int | scala.Double = null,
-    rotation: cesiumLib.cesiumMod.CesiumNs.Property = null,
+    rotation: cesiumLib.cesiumMod.Property = null,
     semiMajorAxis: scala.Int | scala.Double = null,
     semiMinorAxis: scala.Int | scala.Double = null,
-    show: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    stRotation: cesiumLib.cesiumMod.CesiumNs.Property = null
+    show: cesiumLib.cesiumMod.Property = null,
+    stRotation: cesiumLib.cesiumMod.Property = null
   ): Anon_ExtrudedHeight = {
     val __obj = js.Dynamic.literal()
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight)

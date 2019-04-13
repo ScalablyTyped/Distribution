@@ -27,3 +27,8 @@ class PropertyValueForDisplay ()
   override def Clone(): mfilesLib.IPropertyValueForDisplay = js.native
 }
 
+@JSGlobal("MFiles.PropertyValueForDisplay")
+@js.native
+object PropertyValueForDisplay
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValueForDisplay]
+

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Search/SearchResult", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentClass[SearchResultProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[SearchResultProps, reactLib.reactMod.ComponentState] = js.native
 }
 

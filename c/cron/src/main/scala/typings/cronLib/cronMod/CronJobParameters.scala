@@ -13,7 +13,7 @@ trait CronJobParameters extends js.Object {
   /**
     * The time to fire off your job. This can be in the form of cron syntax or a JS ```Date``` object.
     */
-  var cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment
+  var cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.Moment
   /**
     * A function that will fire when the job is stopped with ```job.stop()```, and may also be called by ```onTick``` at the end of each run.
     */
@@ -47,7 +47,7 @@ trait CronJobParameters extends js.Object {
 object CronJobParameters {
   @scala.inline
   def apply(
-    cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment,
+    cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.Moment,
     onTick: CronCommand,
     context: js.Any = null,
     onComplete: CronCommand = null,

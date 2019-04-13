@@ -78,7 +78,7 @@ class Grid protected () extends js.Object {
     * Returns the `Rect` bounds of entire grid
     */
   def getRect(): atBlueprintjsTableLib.libEsmCommonRectMod.Rect = js.native
-  def getRegionStyle(region: atBlueprintjsTableLib.libEsmRegionsMod.IRegion): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def getRegionStyle(region: atBlueprintjsTableLib.libEsmRegionsMod.IRegion): reactLib.reactMod.CSSProperties = js.native
   /**
     * Returns the start and end indices of rows that intersect with the given
     * `Rect` argument.

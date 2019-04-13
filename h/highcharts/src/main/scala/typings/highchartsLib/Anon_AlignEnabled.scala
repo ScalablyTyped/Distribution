@@ -41,7 +41,7 @@ trait Anon_AlignEnabled extends js.Object {
     * @default { "color": "#000000", "fontSize": "11px", "fontWeight": "bold", "textShadow": "0 0 6px contrast, 00 3px contrast" }
     * @since 2.1.5
     */
-  var style: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.CSSObject] = js.undefined
+  var style: js.UndefOr[highchartsLib.highchartsMod.CSSObject] = js.undefined
   /**
     * The text alignment for the label.
     * While align determines where the texts anchor point is placed with regards to the stack, textAlign determines how the text is aligned against its anchor point.
@@ -84,7 +84,7 @@ object Anon_AlignEnabled {
     format: java.lang.String = null,
     formatter: js.Function = null,
     rotation: scala.Int | scala.Double = null,
-    style: highchartsLib.highchartsMod.HighchartsNs.CSSObject = null,
+    style: highchartsLib.highchartsMod.CSSObject = null,
     textAlign: java.lang.String = null,
     useHTML: js.UndefOr[scala.Boolean] = js.undefined,
     verticalAlign: java.lang.String = null,

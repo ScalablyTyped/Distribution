@@ -29,7 +29,7 @@ trait Hls extends js.Object {
   /**
     *  hls.js config
     */
-  var config: hlsDotJsLib.hlsDotJsMod.HlsNs.Config = js.native
+  var config: Config = js.native
   /**
     * get: return current playback quality level
     * set:  trigger an immediate quality level switch to new quality level
@@ -47,7 +47,7 @@ trait Hls extends js.Object {
   /**
     * return array of available quality levels
     */
-  val levels: js.Array[hlsDotJsLib.hlsDotJsMod.HlsNs.Level] = js.native
+  val levels: js.Array[Level] = js.native
   /**
     * position of live sync point (ie edge of live position minus safety delay defined by hls.config.liveSyncDuration)
     */
@@ -132,7 +132,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACKS_UPDATED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACKS_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTracksUpdatedData, 
+      /* data */ audioTracksUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -140,7 +140,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_LOADED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackLoadedData, 
+      /* data */ audioTrackLoadedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -148,7 +148,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_LOADING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackLoadingData, 
+      /* data */ audioTrackLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -156,7 +156,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackSwitchedData, 
+      /* data */ audioTrackSwitchedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -164,41 +164,29 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackSwitchingData, 
+      /* data */ audioTrackSwitchingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_APPENDED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_APPENDED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferAppendedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_APPENDED, /* data */ bufferAppendedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_APPENDING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_BUFFER_APPENDING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferAppendingData, 
+      /* data */ bufferAppendingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_CODECS,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_CODECS, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferCodecsData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CODECS, /* data */ bufferCodecsData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_CREATED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_CREATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferCreatedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CREATED, /* data */ bufferCreatedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_EOS,
@@ -206,19 +194,11 @@ trait Hls extends js.Object {
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_FLUSHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_FLUSHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferFlushedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHED, /* data */ bufferFlushedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_FLUSHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_FLUSHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferFlushingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHING, /* data */ bufferFlushingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_BUFFER_RESET,
@@ -230,73 +210,45 @@ trait Hls extends js.Object {
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_ERROR,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_ERROR, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.errorData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_ERROR, /* data */ errorData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fpsDropLevelCappingData, 
+      /* data */ fpsDropLevelCappingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FPS_DROP,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FPS_DROP, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fpsDropData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FPS_DROP, /* data */ fpsDropData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_BUFFERED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_BUFFERED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragBufferedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_BUFFERED, /* data */ fragBufferedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_CHANGED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_CHANGED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragChangedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_CHANGED, /* data */ fragChangedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_DECRYPTED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_DECRYPTED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragDecryptedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_DECRYPTED, /* data */ fragDecryptedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADED, /* data */ fragLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADING, /* data */ fragLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadEmergencyAbortedData, 
+      /* data */ fragLoadEmergencyAbortedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -304,31 +256,23 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_FRAG_LOAD_PROGRESS,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_LOAD_PROGRESS, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadProgressData, 
+      /* data */ fragLoadProgressData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_PARSED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSED, /* data */ fragParsedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_PARSING_DATA,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_DATA, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSING_DATA, /* data */ fragParsingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingInitSegmentData, 
+      /* data */ fragParsingInitSegmentData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -336,7 +280,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_FRAG_PARSING_METADATA,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_PARSING_METADATA, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingMetadata, 
+      /* data */ fragParsingMetadata, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -344,124 +288,76 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_FRAG_PARSING_USERDATA,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_PARSING_USERDATA, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingUserData, 
+      /* data */ fragParsingUserData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_INIT_PTS_FOUND,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_INIT_PTS_FOUND, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.initPtsFoundData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_INIT_PTS_FOUND, /* data */ initPtsFoundData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_KEY_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_KEY_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.keyLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADED, /* data */ keyLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_KEY_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_KEY_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.keyLoadingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADING, /* data */ keyLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_LEVEL_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADED, /* data */ levelLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_LEVEL_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelLoadingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADING, /* data */ levelLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_LEVEL_PTS_UPDATED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_LEVEL_PTS_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelPtsUpdatedData, 
+      /* data */ levelPtsUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_LEVEL_SWITCHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_SWITCHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelSwitchedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHED, /* data */ levelSwitchedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_LEVEL_SWITCHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_SWITCHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelSwitchingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHING, /* data */ levelSwitchingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_LEVEL_UPDATED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelUpdatedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_UPDATED, /* data */ levelUpdatedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_MANIFEST_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MANIFEST_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.manifestLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_LOADED, /* data */ manifestLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_MANIFEST_LOADING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_MANIFEST_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.manifestLoadingData, 
+      /* data */ manifestLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_MANIFEST_PARSED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MANIFEST_PARSED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.manifestParsedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_PARSED, /* data */ manifestParsedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_MEDIA_ATTACHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MEDIA_ATTACHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.mediaAttachedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHED, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   /**
     * hls.js event listener
     */
   def on(
     event: hlsDotJsLib.K_MEDIA_ATTACHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MEDIA_ATTACHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.mediaAttachedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHING, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_MEDIA_DETACHED,
@@ -475,7 +371,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_STREAM_STATE_TRANSITION,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_STREAM_STATE_TRANSITION, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.streamStateTransitionData, 
+      /* data */ streamStateTransitionData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -483,7 +379,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleFragProcessedData, 
+      /* data */ subtitleFragProcessedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -491,7 +387,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTracksUpdatedData, 
+      /* data */ subtitleTracksUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -499,7 +395,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTrackLoadedData, 
+      /* data */ subtitleTrackLoadedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -507,7 +403,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTrackLoadingData, 
+      /* data */ subtitleTrackLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -515,7 +411,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTrackSwitchData, 
+      /* data */ subtitleTrackSwitchData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -523,7 +419,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACKS_UPDATED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACKS_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTracksUpdatedData, 
+      /* data */ audioTracksUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -531,7 +427,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_LOADED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackLoadedData, 
+      /* data */ audioTrackLoadedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -539,7 +435,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_LOADING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackLoadingData, 
+      /* data */ audioTrackLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -547,7 +443,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackSwitchedData, 
+      /* data */ audioTrackSwitchedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -555,41 +451,29 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.audioTrackSwitchingData, 
+      /* data */ audioTrackSwitchingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_APPENDED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_APPENDED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferAppendedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_APPENDED, /* data */ bufferAppendedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_APPENDING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_BUFFER_APPENDING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferAppendingData, 
+      /* data */ bufferAppendingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_CODECS,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_CODECS, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferCodecsData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CODECS, /* data */ bufferCodecsData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_CREATED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_CREATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferCreatedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CREATED, /* data */ bufferCreatedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_EOS,
@@ -597,19 +481,11 @@ trait Hls extends js.Object {
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_FLUSHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_FLUSHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferFlushedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHED, /* data */ bufferFlushedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_FLUSHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_FLUSHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.bufferFlushingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHING, /* data */ bufferFlushingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_BUFFER_RESET,
@@ -621,73 +497,45 @@ trait Hls extends js.Object {
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_ERROR,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_ERROR, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.errorData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_ERROR, /* data */ errorData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fpsDropLevelCappingData, 
+      /* data */ fpsDropLevelCappingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FPS_DROP,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FPS_DROP, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fpsDropData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FPS_DROP, /* data */ fpsDropData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_BUFFERED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_BUFFERED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragBufferedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_BUFFERED, /* data */ fragBufferedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_CHANGED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_CHANGED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragChangedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_CHANGED, /* data */ fragChangedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_DECRYPTED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_DECRYPTED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragDecryptedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_DECRYPTED, /* data */ fragDecryptedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADED, /* data */ fragLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADING, /* data */ fragLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadEmergencyAbortedData, 
+      /* data */ fragLoadEmergencyAbortedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -695,31 +543,23 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_FRAG_LOAD_PROGRESS,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_LOAD_PROGRESS, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragLoadProgressData, 
+      /* data */ fragLoadProgressData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_PARSED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSED, /* data */ fragParsedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_PARSING_DATA,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_DATA, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSING_DATA, /* data */ fragParsingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingInitSegmentData, 
+      /* data */ fragParsingInitSegmentData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -727,7 +567,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_FRAG_PARSING_METADATA,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_PARSING_METADATA, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingMetadata, 
+      /* data */ fragParsingMetadata, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -735,124 +575,76 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_FRAG_PARSING_USERDATA,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_FRAG_PARSING_USERDATA, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.fragParsingUserData, 
+      /* data */ fragParsingUserData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_INIT_PTS_FOUND,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_INIT_PTS_FOUND, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.initPtsFoundData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_INIT_PTS_FOUND, /* data */ initPtsFoundData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_KEY_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_KEY_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.keyLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADED, /* data */ keyLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_KEY_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_KEY_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.keyLoadingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADING, /* data */ keyLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_LEVEL_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADED, /* data */ levelLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_LEVEL_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelLoadingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADING, /* data */ levelLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_LEVEL_PTS_UPDATED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_LEVEL_PTS_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelPtsUpdatedData, 
+      /* data */ levelPtsUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_LEVEL_SWITCHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_SWITCHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelSwitchedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHED, /* data */ levelSwitchedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_LEVEL_SWITCHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_SWITCHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelSwitchingData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHING, /* data */ levelSwitchingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_LEVEL_UPDATED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.levelUpdatedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_UPDATED, /* data */ levelUpdatedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_MANIFEST_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MANIFEST_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.manifestLoadedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_LOADED, /* data */ manifestLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_MANIFEST_LOADING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_MANIFEST_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.manifestLoadingData, 
+      /* data */ manifestLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_MANIFEST_PARSED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MANIFEST_PARSED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.manifestParsedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_PARSED, /* data */ manifestParsedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_MEDIA_ATTACHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MEDIA_ATTACHED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.mediaAttachedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHED, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   /**
     * hls.js single event listener
     */
   def once(
     event: hlsDotJsLib.K_MEDIA_ATTACHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MEDIA_ATTACHING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.mediaAttachedData, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHING, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
     event: hlsDotJsLib.K_MEDIA_DETACHED,
@@ -866,7 +658,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_STREAM_STATE_TRANSITION,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_STREAM_STATE_TRANSITION, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.streamStateTransitionData, 
+      /* data */ streamStateTransitionData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -874,7 +666,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleFragProcessedData, 
+      /* data */ subtitleFragProcessedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -882,7 +674,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTracksUpdatedData, 
+      /* data */ subtitleTracksUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -890,7 +682,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADED,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADED, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTrackLoadedData, 
+      /* data */ subtitleTrackLoadedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -898,7 +690,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADING,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADING, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTrackLoadingData, 
+      /* data */ subtitleTrackLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -906,7 +698,7 @@ trait Hls extends js.Object {
     event: hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH,
     callback: js.Function2[
       /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH, 
-      /* data */ hlsDotJsLib.hlsDotJsMod.HlsNs.subtitleTrackSwitchData, 
+      /* data */ subtitleTrackSwitchData, 
       scala.Unit
     ]
   ): scala.Unit = js.native

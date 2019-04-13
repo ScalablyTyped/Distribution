@@ -31,13 +31,13 @@ trait ColumnSizerProps
     * The :registerChild should be passed to the Grid's :ref property.
     * The :adjustedWidth property is optional; it reflects the lesser of the overall width or the width of all columns.
     */
-  def children(props: SizedColumnProps): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: SizedColumnProps): reactLib.reactMod.ReactNode
 }
 
 object ColumnSizerProps {
   @scala.inline
   def apply(
-    children: SizedColumnProps => reactLib.reactMod.ReactNs.ReactNode,
+    children: SizedColumnProps => reactLib.reactMod.ReactNode,
     width: scala.Double,
     StringDictionary: /**
     * PLEASE NOTE

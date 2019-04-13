@@ -15,6 +15,6 @@ trait UpdateEventObject
   /**
     * New viewDate.
     */
-  var viewDate: momentLib.momentMod.momentNs.Moment = js.native
+  var viewDate: momentLib.momentMod.Moment = js.native
 }
 

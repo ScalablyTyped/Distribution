@@ -8,51 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.vpnProvider")
 @js.native
 object ^ extends js.Object {
-  /**
-    * The enum is used by the platform to notify the client of the VPN session status.
-    *
-    * **'connected'**
-    * VPN configuration connected.
-    * **'disconnected'**
-    * VPN configuration disconnected.
-    * **'error'**
-    * An error occurred in VPN connection, for example a timeout. A description
-    * of the error is given as the error argument to *onPlatformMessage*.
-    * **'linkDown'**
-    * The default physical network connection is down.
-    * **'linkUp'**
-    * The default physical network connection is back up.
-    * **'linkChanged'**
-    * The default physical network connection changed, e.g. wifi->mobile.
-    * **'suspend'**
-    * The OS is preparing to suspend, so the VPN should drop its connection.
-    * The extension is not guaranteed to receive this event prior to suspending.
-    * **'resume'**
-    * The OS has resumed and the user has logged back in, so the VPN should try to reconnect.
-    * @enum
-    */
-  val PlatformMessage: chromeDashAppsLib.Anon_CONNECTEDConnected = js.native
-  /**
-    * The enum is used by the platform to indicate the event that triggered *onUIEvent*
-    *
-    * **'showAddDialog'**
-    * Request the VPN client to show add configuration dialog to the user.
-    * **'showConfigureDialog'**
-    * Request the VPN client to show configuration settings dialog to the user.
-    * @enum
-    */
-  val UIEvent: chromeDashAppsLib.Anon_SHOWADDDIALOG = js.native
-  /**
-    * The enum is used by the VPN client to inform the platform of its current state.
-    * This helps provide meaningful messages to the user.
-    *
-    * **'connected'**
-    * VPN connection was successful.
-    * **'failure'**
-    * VPN connection failed.
-    * @enum
-    */
-  val VpnConnectionState: chromeDashAppsLib.Anon_CONNECTEDConnectedFAILURE = js.native
   /** Triggered when a configuration is created by the platform for the extension. */
   val onConfigCreated: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
@@ -71,7 +26,7 @@ object ^ extends js.Object {
     js.Function3[
       /* id */ java.lang.String, 
       /* message */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_CONNECTEDConnected, 
+        chromeDashAppsLib.Anon_CONNECTEDConnectedDISCONNECTED, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
@@ -124,7 +79,7 @@ object ^ extends js.Object {
     */
   def notifyConnectionStateChanged(
     state: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_CONNECTEDConnectedFAILURE, 
+      chromeDashAppsLib.Anon_CONNECTEDConnected, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
@@ -134,7 +89,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def notifyConnectionStateChanged(
     state: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_CONNECTEDConnectedFAILURE, 
+      chromeDashAppsLib.Anon_CONNECTEDConnected, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 

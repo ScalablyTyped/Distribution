@@ -14,7 +14,8 @@ trait TextProps
 object TextProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    `aria-label`: java.lang.String = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     code: js.UndefOr[scala.Boolean] = js.undefined,
     copyable: scala.Boolean | antdLib.libTypographyBaseMod.CopyConfig = null,
@@ -26,11 +27,12 @@ object TextProps {
     mark: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
     strong: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     `type`: antdLib.libTypographyBaseMod.BaseType = null,
     underline: js.UndefOr[scala.Boolean] = js.undefined
   ): TextProps = {
     val __obj = js.Dynamic.literal()
+    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(code)) __obj.updateDynamic("code")(code)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("raspi-led", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val OFF: /* 0 */ scala.Double = js.native
-  val ON: /* 1 */ scala.Double = js.native
+  val OFF: raspiDashLedLib.raspiDashLedLibNumbers.`0` = js.native
+  val ON: raspiDashLedLib.raspiDashLedLibNumbers.`1` = js.native
 }
 

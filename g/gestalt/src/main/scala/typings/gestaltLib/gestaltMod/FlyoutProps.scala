@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FlyoutProps extends js.Object {
-  var anchor: reactLib.reactMod.ReactNs.RefObject[_]
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var anchor: reactLib.reactMod.RefObject[_]
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var color: js.UndefOr[
     gestaltLib.gestaltLibStrings.blue | gestaltLib.gestaltLibStrings.orange | gestaltLib.gestaltLibStrings.white
   ] = js.undefined
@@ -24,9 +24,9 @@ trait FlyoutProps extends js.Object {
 object FlyoutProps {
   @scala.inline
   def apply(
-    anchor: reactLib.reactMod.ReactNs.RefObject[_],
+    anchor: reactLib.reactMod.RefObject[_],
     onDismiss: () => scala.Unit,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     color: gestaltLib.gestaltLibStrings.blue | gestaltLib.gestaltLibStrings.orange | gestaltLib.gestaltLibStrings.white = null,
     idealDirection: gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left = null,
     positionRelativeToAnchor: js.UndefOr[scala.Boolean] = js.undefined,

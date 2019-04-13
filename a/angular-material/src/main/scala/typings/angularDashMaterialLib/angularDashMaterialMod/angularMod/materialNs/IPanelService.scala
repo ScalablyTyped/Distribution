@@ -15,7 +15,7 @@ trait IPanelService extends js.Object {
   def create(opt_config: IPanelConfig): IPanelRef
   def newPanelAnimation(): IPanelAnimation
   def newPanelPosition(): IPanelPosition
-  def open(opt_config: IPanelConfig): angularLib.angularMod.angularNs.IPromise[IPanelRef]
+  def open(opt_config: IPanelConfig): angularLib.angularMod.IPromise[IPanelRef]
 }
 
 object IPanelService {
@@ -28,7 +28,7 @@ object IPanelService {
     interceptorTypes: angularDashMaterialLib.Anon_CLOSE,
     newPanelAnimation: () => IPanelAnimation,
     newPanelPosition: () => IPanelPosition,
-    open: IPanelConfig => angularLib.angularMod.angularNs.IPromise[IPanelRef],
+    open: IPanelConfig => angularLib.angularMod.IPromise[IPanelRef],
     xPosition: angularDashMaterialLib.Anon_ALIGNEND,
     yPosition: angularDashMaterialLib.Anon_ABOVE
   ): IPanelService = {

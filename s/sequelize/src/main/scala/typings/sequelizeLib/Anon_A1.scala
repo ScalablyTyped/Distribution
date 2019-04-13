@@ -19,7 +19,7 @@ trait Anon_A1
         /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]], 
         scala.Unit
       ], 
-      bluebirdLib.bluebirdMod.namespaced[js.Object]
+      bluebirdLib.bluebirdMod.^[js.Object]
     ] {
   /**
     * A collection of errors. `AggregateError` is an array-like object, with numeric indices and a `.length` property.
@@ -30,7 +30,6 @@ trait Anon_A1
     * `Promise.some` and `Promise.any` use `AggregateError` as rejection reason when they fail.
     */
   var AggregateError: org.scalablytyped.runtime.Instantiable0[bluebirdLib.bluebirdMod.AggregateError] = js.native
-  val BluebirdNs: js.Any = js.native
   /**
     * Signals that an operation has been aborted or cancelled. The default reason used by `.cancel`.
     */
@@ -127,29 +126,29 @@ trait Anon_A1
   def coroutine[T](generatorFunction: js.Function0[stdLib.IterableIterator[_]]): js.Function0[bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T](
     generatorFunction: js.Function0[stdLib.IterableIterator[_]],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function0[bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, stdLib.IterableIterator[_]]): js.Function1[/* a1 */ A1, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1](
     generatorFunction: js.Function1[/* a1 */ A1, stdLib.IterableIterator[_]],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function1[/* a1 */ A1, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, stdLib.IterableIterator[_]]): js.Function2[/* a1 */ A1, /* a2 */ A2, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2](
     generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, stdLib.IterableIterator[_]],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function2[/* a1 */ A1, /* a2 */ A2, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, stdLib.IterableIterator[_]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3](
     generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, stdLib.IterableIterator[_]],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4](
     generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, stdLib.IterableIterator[_]]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4](
     generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, stdLib.IterableIterator[_]],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4, A5](
     generatorFunction: js.Function5[
@@ -177,7 +176,7 @@ trait Anon_A1
       /* a5 */ A5, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function5[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -215,7 +214,7 @@ trait Anon_A1
       /* a6 */ A6, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function6[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -257,7 +256,7 @@ trait Anon_A1
       /* a7 */ A7, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function7[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -303,7 +302,7 @@ trait Anon_A1
       /* a8 */ A8, 
       stdLib.IterableIterator[_]
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
+    options: bluebirdLib.bluebirdMod.CoroutineOptions
   ): js.Function8[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -320,7 +319,7 @@ trait Anon_A1
     * Create a promise with undecided fate and return a `PromiseResolver` to control it. See resolution?: Promise(#promise-resolution).
     * @see http://bluebirdjs.com/docs/deprecated-apis.html#promise-resolution
     */
-  def defer[R](): bluebirdLib.bluebirdMod.BluebirdNs.Resolver[R] = js.native
+  def defer[R](): bluebirdLib.bluebirdMod.Resolver[R] = js.native
   def delay(ms: scala.Double): bluebirdLib.bluebirdMod.Bluebird[scala.Unit] = js.native
   /**
     * Returns a promise that will be resolved with value (or undefined) after given ms milliseconds.
@@ -358,7 +357,7 @@ trait Anon_A1
   def filter[R](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     filterer: bluebirdLib.IterateFunction[R, scala.Boolean],
-    option: bluebirdLib.bluebirdMod.BluebirdNs.ConcurrencyOption
+    option: bluebirdLib.bluebirdMod.ConcurrencyOption
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   def fromCallback[T](
     resolver: js.Function1[
@@ -371,7 +370,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.FromNodeOptions
+    options: bluebirdLib.bluebirdMod.FromNodeOptions
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /**
     * Returns a promise that is resolved by a node style callback function.
@@ -387,7 +386,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.FromNodeOptions
+    options: bluebirdLib.bluebirdMod.FromNodeOptions
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /**
     * Returns a new independent copy of the Bluebird library.
@@ -470,7 +469,7 @@ trait Anon_A1
   def map[R, U](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     mapper: bluebirdLib.IterateFunction[R, U],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.ConcurrencyOption
+    options: bluebirdLib.bluebirdMod.ConcurrencyOption
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[U]] = js.native
   /**
     * Given an Iterable(arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix of promises and values),
@@ -555,7 +554,7 @@ trait Anon_A1
   def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Bluebird[_]] = js.native
   def promisify(
     nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
+    options: bluebirdLib.bluebirdMod.PromisifyOptions
   ): js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Bluebird[_]] = js.native
   def promisify[T, A1](
     func: js.Function2[
@@ -570,7 +569,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
+    options: bluebirdLib.bluebirdMod.PromisifyOptions
   ): js.Function1[/* arg1 */ A1, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2](
     func: js.Function3[
@@ -587,7 +586,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
+    options: bluebirdLib.bluebirdMod.PromisifyOptions
   ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2, A3](
     func: js.Function4[
@@ -606,7 +605,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
+    options: bluebirdLib.bluebirdMod.PromisifyOptions
   ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2, A3, A4](
     func: js.Function5[
@@ -633,7 +632,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
+    options: bluebirdLib.bluebirdMod.PromisifyOptions
   ): js.Function4[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -669,7 +668,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
+    options: bluebirdLib.bluebirdMod.PromisifyOptions
   ): js.Function5[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -688,7 +687,7 @@ trait Anon_A1
     */
   // TODO how to model promisifyAll?
   def promisifyAll[T /* <: js.Object */](target: T): T = js.native
-  def promisifyAll[T /* <: js.Object */](target: T, options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyAllOptions[T]): T = js.native
+  def promisifyAll[T /* <: js.Object */](target: T, options: bluebirdLib.bluebirdMod.PromisifyAllOptions[T]): T = js.native
   /**
     * Returns a function that will wrap the given `nodeFunction`.
     *
@@ -713,13 +712,13 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
+    options: bluebirdLib.bluebirdMod.PromisifyOptions
   ): js.Function0[bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
    // tslint:disable-line:unified-signatures
   // object
-  def props[T](`object`: bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def props[T](`object`: bluebirdLib.bluebirdMod.ResolvableProps[T]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   // trusted promise for object
-  def props[T](`object`: js.Thenable[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def props[T](`object`: js.Thenable[bluebirdLib.bluebirdMod.ResolvableProps[T]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /**
     * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
     *
@@ -818,18 +817,18 @@ trait Anon_A1
     *  necessary because there is no standard interface in node for disposing resources.
     */
   def using[R, T](
-    disposer: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R],
+    disposer: bluebirdLib.bluebirdMod.Disposer[R],
     executor: js.Function1[/* transaction */ R, js.Thenable[T]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def using[R1, R2, T](
-    disposer: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R1],
-    disposer2: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R2],
+    disposer: bluebirdLib.bluebirdMod.Disposer[R1],
+    disposer2: bluebirdLib.bluebirdMod.Disposer[R2],
     executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def using[R1, R2, R3, T](
-    disposer: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R1],
-    disposer2: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R2],
-    disposer3: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R3],
+    disposer: bluebirdLib.bluebirdMod.Disposer[R1],
+    disposer2: bluebirdLib.bluebirdMod.Disposer[R2],
+    disposer3: bluebirdLib.bluebirdMod.Disposer[R3],
     executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
 }

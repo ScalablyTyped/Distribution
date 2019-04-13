@@ -12,11 +12,11 @@ class Users ()
   def this(namespace: java.lang.String) = this()
   var namespace: java.lang.String = js.native
   var users: js.Array[User] = js.native
-  def add(socket: socketDotIoLib.socketDotIoMod.SocketIONs.Socket): User = js.native
-  def create(socket: socketDotIoLib.socketDotIoMod.SocketIONs.Socket): User = js.native
+  def add(socket: socketDotIoLib.socketDotIoMod.Socket): User = js.native
+  def create(socket: socketDotIoLib.socketDotIoMod.Socket): User = js.native
   def emitAll(args: js.Any*): scala.Unit = js.native
   def from(room: java.lang.String): js.Array[User] = js.native
-  def get(socket: socketDotIoLib.socketDotIoMod.SocketIONs.Socket): User = js.native
+  def get(socket: socketDotIoLib.socketDotIoMod.Socket): User = js.native
   def getById(id: java.lang.String): User = js.native
   def getById(id: scala.Double): User = js.native
   def in(room: java.lang.String): js.Array[User] = js.native

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class ElasticTranscoder ()
-  extends awsDashSdkLib.clientsElastictranscoderMod.namespaced {
-  def this(options: awsDashSdkLib.clientsElastictranscoderMod.ElasticTranscoderNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsElastictranscoderMod.^ {
+  def this(options: awsDashSdkLib.clientsElastictranscoderMod.ClientConfiguration) = this()
 }
 

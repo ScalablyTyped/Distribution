@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgTableEventsChannel protected ()
   extends ngDashTableLib.srcCoreMod.NgTableEventsChannel {
-  def this($rootScope: angularLib.angularMod.angularNs.IRootScopeService) = this()
+  def this($rootScope: angularLib.angularMod.IRootScopeService) = this()
 }
 
 /* static members */

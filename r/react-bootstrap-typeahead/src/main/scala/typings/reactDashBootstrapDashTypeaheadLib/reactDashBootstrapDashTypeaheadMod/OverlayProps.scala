@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in 'align' | 'dropup' | 'flip' | 'onMenuHide' | 'onMenuShow' | 'onMenuToggle' ]: react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<any>[P]} */ trait OverlayProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var container: stdLib.HTMLElement
   var referenceElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
@@ -18,7 +18,7 @@ object OverlayProps {
   @scala.inline
   def apply(
     container: stdLib.HTMLElement,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     referenceElement: stdLib.HTMLElement = null,
     show: js.UndefOr[scala.Boolean] = js.undefined

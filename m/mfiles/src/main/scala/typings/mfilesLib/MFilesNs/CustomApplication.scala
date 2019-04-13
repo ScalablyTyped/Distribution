@@ -35,3 +35,8 @@ class CustomApplication ()
   override def Clone(): mfilesLib.ICustomApplication = js.native
 }
 
+@JSGlobal("MFiles.CustomApplication")
+@js.native
+object CustomApplication
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ICustomApplication]
+

@@ -20,12 +20,8 @@ class ChangeCls protected () extends Change {
   override var operation: java.lang.String = js.native
 }
 
-object Change {
-  @scala.inline
-  def apply(modification: org.scalablytyped.runtime.StringDictionary[js.Any], operation: java.lang.String): Change = {
-    val __obj = js.Dynamic.literal(modification = modification, operation = operation)
-  
-    __obj.asInstanceOf[Change]
-  }
-}
+@JSImport("ldapjs", "Change")
+@js.native
+object Change
+  extends org.scalablytyped.runtime.Instantiable1[/* change */ Change, Change]
 

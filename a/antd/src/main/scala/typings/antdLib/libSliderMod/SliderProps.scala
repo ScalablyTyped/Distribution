@@ -20,9 +20,9 @@ trait SliderProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var range: js.UndefOr[scala.Boolean] = js.undefined
   var step: js.UndefOr[scala.Double | scala.Null] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tipFormatter: js.UndefOr[
-    scala.Null | (js.Function1[/* value */ scala.Double, reactLib.reactMod.ReactNs.ReactNode])
+    scala.Null | (js.Function1[/* value */ scala.Double, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var tooltipPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var tooltipVisible: js.UndefOr[scala.Boolean] = js.undefined
@@ -47,8 +47,8 @@ object SliderProps {
     prefixCls: java.lang.String = null,
     range: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tipFormatter: /* value */ scala.Double => reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    tipFormatter: /* value */ scala.Double => reactLib.reactMod.ReactNode = null,
     tooltipPrefixCls: java.lang.String = null,
     tooltipVisible: js.UndefOr[scala.Boolean] = js.undefined,
     value: SliderValue = null,

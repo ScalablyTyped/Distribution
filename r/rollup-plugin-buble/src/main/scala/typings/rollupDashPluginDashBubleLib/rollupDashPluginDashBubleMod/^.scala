@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): rollupLib.rollupMod.Plugin = js.native
-  def apply(options: rollupDashPluginDashBubleLib.rollupDashPluginDashBubleMod.bubleNs.Options): rollupLib.rollupMod.Plugin = js.native
+  def apply(options: Options): rollupLib.rollupMod.Plugin = js.native
 }
 

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait ReferenceProps extends js.Object {
   var innerRef: js.UndefOr[reactDashPopperLib.RefHandler] = js.undefined
-  def children(props: ReferenceChildrenProps): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: ReferenceChildrenProps): reactLib.reactMod.ReactNode
 }
 
 object ReferenceProps {
   @scala.inline
   def apply(
-    children: ReferenceChildrenProps => reactLib.reactMod.ReactNs.ReactNode,
+    children: ReferenceChildrenProps => reactLib.reactMod.ReactNode,
     innerRef: reactDashPopperLib.RefHandler = null
   ): ReferenceProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))

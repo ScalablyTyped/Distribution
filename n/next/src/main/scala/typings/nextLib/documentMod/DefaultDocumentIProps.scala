@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DefaultDocumentIProps extends RenderPageResponse {
-  var styles: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var styles: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object DefaultDocumentIProps {
   @scala.inline
   def apply(
-    head: reactLib.reactMod.ReactNs.ReactNode = null,
+    head: reactLib.reactMod.ReactNode = null,
     html: java.lang.String = null,
-    styles: reactLib.reactMod.ReactNs.ReactNode = null
+    styles: reactLib.reactMod.ReactNode = null
   ): DefaultDocumentIProps = {
     val __obj = js.Dynamic.literal()
     if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])

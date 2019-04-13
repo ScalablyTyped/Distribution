@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "Fab")
 @js.native
 class Fab protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      atMaterialDashUiCoreLib.fabFabMod.FabProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
-      js.Any
-    ] {
+  extends reactLib.reactMod.Component[atMaterialDashUiCoreLib.fabFabMod.FabProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: atMaterialDashUiCoreLib.fabFabMod.FabProps) = this()
   def this(props: atMaterialDashUiCoreLib.fabFabMod.FabProps, context: js.Any) = this()
 }

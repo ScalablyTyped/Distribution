@@ -34,7 +34,7 @@ trait IColumnHeaderProps
     * 2. A `<ColumnHeaderCell>` using the `name` prop from the `<Column>`
     * 3. A `<ColumnHeaderCell>` with a `name` generated from `Utils.toBase26Alpha`
     */
-  def cellRenderer(columnIndex: scala.Double): reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsTableLib.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps] = js.native
+  def cellRenderer(columnIndex: scala.Double): reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps] = js.native
   /**
     * A callback invoked when user is done resizing the column
     */

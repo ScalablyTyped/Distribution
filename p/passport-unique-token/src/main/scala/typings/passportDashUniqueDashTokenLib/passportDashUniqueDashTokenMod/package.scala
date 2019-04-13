@@ -17,7 +17,7 @@ package object passportDashUniqueDashTokenMod {
     scala.Unit
   ]
   type VerifyFunctionWithRequest = js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* token */ java.lang.String, 
     /* done */ js.Function3[
       /* error */ js.Any, 

@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ColorsLevelsSyslogConfigSetColors extends js.Object {
-  var colors: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetColors
-  var levels: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetLevels
+  var colors: winstonLib.libWinstonConfigMod.SyslogConfigSetColors
+  var levels: winstonLib.libWinstonConfigMod.SyslogConfigSetLevels
 }
 
 object Anon_ColorsLevelsSyslogConfigSetColors {
   @scala.inline
   def apply(
-    colors: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetColors,
-    levels: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetLevels
+    colors: winstonLib.libWinstonConfigMod.SyslogConfigSetColors,
+    levels: winstonLib.libWinstonConfigMod.SyslogConfigSetLevels
   ): Anon_ColorsLevelsSyslogConfigSetColors = {
     val __obj = js.Dynamic.literal(colors = colors, levels = levels)
   

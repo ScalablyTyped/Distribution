@@ -8,35 +8,35 @@ import scala.scalajs.js.annotation._
 object creditDashCardDashTypeLibStrings {
   @js.native
   sealed trait `american-express`
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @js.native
   sealed trait `diners-club`
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @js.native
   sealed trait discover
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @js.native
   sealed trait jcb
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @js.native
   sealed trait maestro
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @js.native
   sealed trait mastercard
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @js.native
   sealed trait unionpay
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @js.native
   sealed trait visa
-    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CardBrand
+    extends creditDashCardDashTypeLib.creditDashCardDashTypeMod.CardBrand
   
   @scala.inline
   def `american-express`: `american-express` = "american-express".asInstanceOf[`american-express`]

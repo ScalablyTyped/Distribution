@@ -11,7 +11,7 @@ object serveDashFaviconMod extends js.Object {
   /**
     * Node.js middleware for serving a favicon.
     */
-  def apply(path: java.lang.String): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(path: java.lang.String, options: serveDashFaviconLib.Anon_MaxAge): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(path: java.lang.String): expressLib.expressMod.RequestHandler = js.native
+  def apply(path: java.lang.String, options: serveDashFaviconLib.Anon_MaxAge): expressLib.expressMod.RequestHandler = js.native
 }
 

@@ -13,7 +13,7 @@ object ^ extends js.Object {
     * @param {Configuration} [jsonConfig] A JSON configuration.
     * @return {LoggerOptions} A logger options.
     */
-  def apply(): bunyanLib.bunyanMod.LoggerNs.LoggerOptions = js.native
-  def apply(jsonConfig: Configuration): bunyanLib.bunyanMod.LoggerNs.LoggerOptions = js.native
+  def apply(): bunyanLib.bunyanMod.LoggerOptions = js.native
+  def apply(jsonConfig: Configuration): bunyanLib.bunyanMod.LoggerOptions = js.native
 }
 

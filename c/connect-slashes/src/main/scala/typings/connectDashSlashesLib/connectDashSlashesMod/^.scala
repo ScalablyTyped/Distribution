@@ -11,11 +11,8 @@ object ^ extends js.Object {
   /**
     * @see https://github.com/avinoamr/connect-slashes#usage
     */
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(addTrailingSlashes: scala.Boolean): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(
-    addTrailingSlashes: scala.Boolean,
-    options: connectDashSlashesLib.connectDashSlashesMod.slashesNs.Options
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
+  def apply(addTrailingSlashes: scala.Boolean): expressLib.expressMod.RequestHandler = js.native
+  def apply(addTrailingSlashes: scala.Boolean, options: Options): expressLib.expressMod.RequestHandler = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 package object libEsmHeadersRowHeaderMod {
   type IRowHeaderRenderer = js.Function1[
     /* rowIndex */ scala.Double, 
-    reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsTableLib.libEsmHeadersRowHeaderCellMod.IRowHeaderCellProps]
+    reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmHeadersRowHeaderCellMod.IRowHeaderCellProps]
   ]
 }

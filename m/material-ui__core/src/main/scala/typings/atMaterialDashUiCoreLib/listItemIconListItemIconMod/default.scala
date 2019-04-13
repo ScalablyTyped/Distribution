@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/ListItemIcon/ListItemIcon", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[ListItemIconProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[ListItemIconProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: ListItemIconProps) = this()
   def this(props: ListItemIconProps, context: js.Any) = this()
 }

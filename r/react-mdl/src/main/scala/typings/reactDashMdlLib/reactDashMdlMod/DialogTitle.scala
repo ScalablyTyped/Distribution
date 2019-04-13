@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "DialogTitle")
 @js.native
-class DialogTitle ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.DialogTitle
+class DialogTitle () extends __MDLComponent[DialogTitleProps]
 

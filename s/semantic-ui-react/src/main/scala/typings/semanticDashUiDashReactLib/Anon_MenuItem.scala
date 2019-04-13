@@ -10,7 +10,7 @@ trait Anon_MenuItem extends js.Object {
   var pane: js.UndefOr[
     semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps]
   ] = js.undefined
-  var render: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var render: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
 }
 
 object Anon_MenuItem {
@@ -18,7 +18,7 @@ object Anon_MenuItem {
   def apply(
     menuItem: js.Any = null,
     pane: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps] = null,
-    render: () => reactLib.reactMod.ReactNs.ReactNode = null
+    render: () => reactLib.reactMod.ReactNode = null
   ): Anon_MenuItem = {
     val __obj = js.Dynamic.literal()
     if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem)

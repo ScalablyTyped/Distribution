@@ -15,3 +15,8 @@ class OCRPageResult ()
   override val PageNum: scala.Double = js.native
 }
 
+@JSGlobal("MFiles.OCRPageResult")
+@js.native
+object OCRPageResult
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRPageResult]
+

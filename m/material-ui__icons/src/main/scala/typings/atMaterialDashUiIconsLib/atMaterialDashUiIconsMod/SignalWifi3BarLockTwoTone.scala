@@ -16,9 +16,9 @@ class SignalWifi3BarLockTwoTone protected ()
 @JSImport("@material-ui/icons", "SignalWifi3BarLockTwoTone")
 @js.native
 class SignalWifi3BarLockTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

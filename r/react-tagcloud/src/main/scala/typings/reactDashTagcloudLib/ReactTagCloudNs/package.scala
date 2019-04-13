@@ -13,5 +13,5 @@ package object ReactTagCloudNs {
     /* handlers */ js.Any, 
     js.Any
   ]
-  type TagCloudClass = reactLib.reactMod.ReactNs.ComponentClass[TagCloudProps, reactLib.reactMod.ReactNs.ComponentState]
+  type TagCloudClass = reactLib.reactMod.ComponentClass[TagCloudProps, reactLib.reactMod.ComponentState]
 }

@@ -15,8 +15,6 @@ class PageableCollection[TModel /* <: backboneLib.backboneMod.Model */] ()
   var mode: java.lang.String = js.native
   var queryParams: PageableQueryParams = js.native
   var state: PageableState = js.native
-  def fetch(): jqueryLib.JQueryXHR = js.native
-  def fetch(options: backboneLib.backboneMod.BackboneNs.CollectionFetchOptions): jqueryLib.JQueryXHR = js.native
   def getFirstPage(): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
   def getFirstPage(options: PageableGetPageOptions): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
   def getLastPage(): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
@@ -42,7 +40,7 @@ class PageableCollection[TModel /* <: backboneLib.backboneMod.Model */] ()
   def parseState(resp: js.Any, queryParams: PageableQueryParams, state: PageableState): PageableState = js.native
   def parseState(resp: js.Any, queryParams: PageableQueryParams, state: PageableState, options: js.Any): PageableState = js.native
   def setPageSize(pageSize: scala.Double): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
-  def setPageSize(pageSize: scala.Double, options: backboneLib.backboneMod.BackboneNs.CollectionFetchOptions): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
+  def setPageSize(pageSize: scala.Double, options: backboneLib.backboneMod.CollectionFetchOptions): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
   def setSorting(sortKey: java.lang.String): PageableCollection[TModel] = js.native
   def setSorting(sortKey: java.lang.String, order: scala.Double): PageableCollection[TModel] = js.native
   def setSorting(sortKey: java.lang.String, order: scala.Double, options: PageableSetSortingOptions[TModel]): PageableCollection[TModel] = js.native

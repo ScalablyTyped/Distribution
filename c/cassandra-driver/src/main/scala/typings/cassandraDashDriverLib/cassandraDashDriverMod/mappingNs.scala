@@ -273,7 +273,7 @@ object mappingNs extends js.Object {
   
   @js.native
   trait Result extends js.Object {
-    @JSName(org.scalablytyped.runtime.Symbol.iterator)
+    @JSName(scala.scalajs.js.Symbol.iterator)
     var iterator: js.Function0[stdLib.Iterator[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
     def first(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     def forEach(

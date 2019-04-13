@@ -8,55 +8,55 @@ import scala.scalajs.js.annotation._
 object urlDashParseLibStrings {
   @js.native
   sealed trait auth
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait hash
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait host
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait hostname
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait href
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait origin
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait password
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait pathname
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait port
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait protocol
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait query
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait slashes
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @js.native
   sealed trait username
-    extends urlDashParseLib.urlDashParseMod.URLParseNs.URLPart
+    extends urlDashParseLib.urlDashParseMod.URLPart
   
   @scala.inline
   def auth: auth = "auth".asInstanceOf[auth]

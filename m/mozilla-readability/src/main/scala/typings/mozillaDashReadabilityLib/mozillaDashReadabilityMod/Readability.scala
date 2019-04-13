@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Readability extends js.Object {
   def isProbablyReaderable(): scala.Boolean = js.native
   def isProbablyReaderable(helperIsVisible: js.Function1[/* node */ js.Any, scala.Boolean]): scala.Boolean = js.native
-  def parse(): mozillaDashReadabilityLib.mozillaDashReadabilityMod.ReadabilityNs.ParseResult = js.native
+  def parse(): ParseResult = js.native
 }
 

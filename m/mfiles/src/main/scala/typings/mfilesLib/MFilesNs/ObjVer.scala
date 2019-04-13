@@ -33,3 +33,8 @@ class ObjVer ()
   override def Unserialize(Bytes: js.Array[scala.Double]): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ObjVer")
+@js.native
+object ObjVer
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjVer]
+

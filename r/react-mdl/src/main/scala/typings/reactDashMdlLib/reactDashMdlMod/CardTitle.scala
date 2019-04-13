@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "CardTitle")
 @js.native
-class CardTitle ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.CardTitle
+class CardTitle () extends __MDLComponent[CardTitleProps]
 

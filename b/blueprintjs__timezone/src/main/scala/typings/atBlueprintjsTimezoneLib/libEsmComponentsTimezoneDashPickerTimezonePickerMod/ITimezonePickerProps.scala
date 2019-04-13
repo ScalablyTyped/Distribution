@@ -72,7 +72,7 @@ trait ITimezonePickerProps
 object ITimezonePickerProps {
   @scala.inline
   def apply(
-    onChange: js.Function1[java.lang.String, scala.Unit],
+    onChange: java.lang.String => scala.Unit,
     buttonProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps] = null,
     className: java.lang.String = null,
     date: stdLib.Date = null,
@@ -84,7 +84,7 @@ object ITimezonePickerProps {
     value: java.lang.String = null,
     valueDisplayFormat: atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat = null
   ): ITimezonePickerProps = {
-    val __obj = js.Dynamic.literal(onChange = onChange)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (date != null) __obj.updateDynamic("date")(date)

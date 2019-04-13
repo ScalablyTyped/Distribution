@@ -30,7 +30,7 @@ trait Anon_CallbackCreateConfig extends js.Object {
     * The OS has resumed and the user has logged back in, so the VPN should try to reconnect.
     * @enum
     */
-  val PlatformMessage: Anon_CONNECTEDConnected = js.native
+  val PlatformMessage: Anon_CONNECTEDConnectedDISCONNECTED = js.native
   /**
     * The enum is used by the platform to indicate the event that triggered *onUIEvent*
     *
@@ -51,7 +51,7 @@ trait Anon_CallbackCreateConfig extends js.Object {
     * VPN connection failed.
     * @enum
     */
-  val VpnConnectionState: Anon_CONNECTEDConnectedFAILURE = js.native
+  val VpnConnectionState: Anon_CONNECTEDConnected = js.native
   /** Triggered when a configuration is created by the platform for the extension. */
   val onConfigCreated: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[

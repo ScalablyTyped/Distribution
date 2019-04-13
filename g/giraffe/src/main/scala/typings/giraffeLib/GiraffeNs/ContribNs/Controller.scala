@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Controller ()
   extends backboneLib.backboneMod.EventsMixin
      with giraffeLib.GiraffeNs.GiraffeObject
-     with backboneLib.backboneMod.BackboneNs.Events {
+     with backboneLib.backboneMod.Events {
   /* CompleteClass */
   override var app: giraffeLib.GiraffeNs.App = js.native
   /**

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DirectoryService ()
   extends awsDashSdkLib.awsDashSdkMod.DirectoryService {
-  def this(options: awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDirectoryserviceMod.ClientConfiguration) = this()
 }
 

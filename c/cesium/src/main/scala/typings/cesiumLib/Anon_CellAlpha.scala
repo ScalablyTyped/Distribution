@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CellAlpha extends js.Object {
-  var cellAlpha: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var color: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var lineCount: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var lineOffset: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
-  var lineThickness: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
+  var cellAlpha: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var color: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var lineCount: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var lineOffset: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
+  var lineThickness: js.UndefOr[cesiumLib.cesiumMod.Property] = js.undefined
 }
 
 object Anon_CellAlpha {
   @scala.inline
   def apply(
-    cellAlpha: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    color: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    lineCount: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    lineOffset: cesiumLib.cesiumMod.CesiumNs.Property = null,
-    lineThickness: cesiumLib.cesiumMod.CesiumNs.Property = null
+    cellAlpha: cesiumLib.cesiumMod.Property = null,
+    color: cesiumLib.cesiumMod.Property = null,
+    lineCount: cesiumLib.cesiumMod.Property = null,
+    lineOffset: cesiumLib.cesiumMod.Property = null,
+    lineThickness: cesiumLib.cesiumMod.Property = null
   ): Anon_CellAlpha = {
     val __obj = js.Dynamic.literal()
     if (cellAlpha != null) __obj.updateDynamic("cellAlpha")(cellAlpha)

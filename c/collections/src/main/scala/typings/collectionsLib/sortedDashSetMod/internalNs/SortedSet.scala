@@ -11,6 +11,7 @@ trait SortedSet[T] extends AbstractSet {
   def clear(): scala.Unit = js.native
   def constructClone(): SortedSet[T] = js.native
   def constructClone(values: js.Array[T]): SortedSet[T] = js.native
+  def delete(value: T): scala.Boolean = js.native
   def find(value: T): js.UndefOr[Node[T]] = js.native
   def findGreatest(): js.UndefOr[Node[T]] = js.native
   def findGreatest(n: Node[T]): js.UndefOr[Node[T]] = js.native

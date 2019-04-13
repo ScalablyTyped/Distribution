@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-svg-sprite", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[gulpDashSvgDashSpriteLib.gulpDashSvgDashSpriteMod.svgSpriteNs.SvgSprite]
+  extends org.scalablytyped.runtime.TopLevel[SvgSprite]
 

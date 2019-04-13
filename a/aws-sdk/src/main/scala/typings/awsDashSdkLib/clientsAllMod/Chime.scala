@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Chime ()
-  extends awsDashSdkLib.clientsChimeMod.namespaced {
-  def this(options: awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsChimeMod.^ {
+  def this(options: awsDashSdkLib.clientsChimeMod.ClientConfiguration) = this()
 }
 

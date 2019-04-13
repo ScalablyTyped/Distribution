@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "FormGroup")
 @js.native
 class FormGroup ()
-  extends reactDashBootstrapLib.libFormGroupMod.namespaced
+  extends reactDashBootstrapLib.libFormGroupMod.^
 

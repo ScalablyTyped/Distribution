@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object reactDashImageDashFallbackMod {
   type ReactImageFallback = reactLib.reactMod.Component[
-    ReactImageFallbackProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ImgHTMLAttributes[stdLib.HTMLImageElement], 
+    ReactImageFallbackProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ImgHTMLAttributes[stdLib.HTMLImageElement], 
       stdLib.HTMLImageElement
     ]), 
     js.Any, 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/FontIcons/FontIcon", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[FontIconProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[FontIconProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: FontIconProps) = this()
   def this(props: FontIconProps, context: js.Any) = this()
 }

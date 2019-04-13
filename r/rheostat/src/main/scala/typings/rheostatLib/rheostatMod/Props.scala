@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 trait Props extends Events {
   var algorithm: js.UndefOr[Algorithm] = js.undefined
   var autoAdjustVerticalPosition: js.UndefOr[scala.Boolean] = js.undefined
-  var background: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var background: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var handle: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var handle: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var orientation: js.UndefOr[Orientation] = js.undefined
-  var pitComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var pitComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var pitPoints: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var progressBar: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var progressBar: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var snap: js.UndefOr[scala.Boolean] = js.undefined
   var snapPoints: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var values: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -28,11 +28,11 @@ object Props {
   def apply(
     algorithm: Algorithm = null,
     autoAdjustVerticalPosition: js.UndefOr[scala.Boolean] = js.undefined,
-    background: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    background: reactLib.reactMod.ReactType[_] = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     getNextHandlePosition: (/* handleIdx */ scala.Double, /* percentPosition */ scala.Double) => scala.Double = null,
-    handle: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    handle: reactLib.reactMod.ReactType[_] = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     onChange: /* publicState */ PublicState => _ = null,
@@ -43,9 +43,9 @@ object Props {
     onSliderDragStart: () => _ = null,
     onValuesUpdated: /* publicState */ PublicState => _ = null,
     orientation: Orientation = null,
-    pitComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    pitComponent: reactLib.reactMod.ReactType[_] = null,
     pitPoints: js.Array[scala.Double] = null,
-    progressBar: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    progressBar: reactLib.reactMod.ReactType[_] = null,
     snap: js.UndefOr[scala.Boolean] = js.undefined,
     snapPoints: js.Array[scala.Double] = null,
     values: js.Array[scala.Double] = null

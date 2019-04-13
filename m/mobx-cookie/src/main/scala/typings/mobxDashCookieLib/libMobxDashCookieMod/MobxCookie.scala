@@ -21,6 +21,6 @@ trait MobxCookie extends js.Object {
   def get(): js.UndefOr[java.lang.String] = js.native
   def remove(): scala.Unit = js.native
   def set(value: java.lang.String): scala.Unit = js.native
-  def set(value: java.lang.String, options: jsDashCookieLib.jsDashCookieMod.CookiesNs.CookieAttributes): scala.Unit = js.native
+  def set(value: java.lang.String, options: jsDashCookieLib.jsDashCookieMod.CookieAttributes): scala.Unit = js.native
 }
 

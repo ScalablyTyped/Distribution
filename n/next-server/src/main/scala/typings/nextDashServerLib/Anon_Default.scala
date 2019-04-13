@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Default[P] extends js.Object {
-  var default: reactLib.reactMod.ReactNs.ComponentType[P]
+  var default: reactLib.reactMod.ComponentType[P]
 }
 
 object Anon_Default {
   @scala.inline
-  def apply[P](default: reactLib.reactMod.ReactNs.ComponentType[P]): Anon_Default[P] = {
+  def apply[P](default: reactLib.reactMod.ComponentType[P]): Anon_Default[P] = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Default[P]]

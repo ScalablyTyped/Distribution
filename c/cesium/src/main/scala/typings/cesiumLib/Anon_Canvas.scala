@@ -10,8 +10,8 @@ trait Anon_Canvas extends js.Object {
   var contextOptions: js.UndefOr[js.Any] = js.undefined
   var creditContainer: js.UndefOr[stdLib.Element] = js.undefined
   var creditViewport: js.UndefOr[stdLib.Element] = js.undefined
-  var mapMode2D: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MapMode2D] = js.undefined
-  var mapProjection: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MapProjection] = js.undefined
+  var mapMode2D: js.UndefOr[cesiumLib.cesiumMod.MapMode2D] = js.undefined
+  var mapProjection: js.UndefOr[cesiumLib.cesiumMod.MapProjection] = js.undefined
   var maximumRenderTimeChange: js.UndefOr[scala.Double] = js.undefined
   var orderIndependentTranslucency: js.UndefOr[scala.Boolean] = js.undefined
   var requestRenderMode: js.UndefOr[scala.Boolean] = js.undefined
@@ -27,8 +27,8 @@ object Anon_Canvas {
     contextOptions: js.Any = null,
     creditContainer: stdLib.Element = null,
     creditViewport: stdLib.Element = null,
-    mapMode2D: cesiumLib.cesiumMod.CesiumNs.MapMode2D = null,
-    mapProjection: cesiumLib.cesiumMod.CesiumNs.MapProjection = null,
+    mapMode2D: cesiumLib.cesiumMod.MapMode2D = null,
+    mapProjection: cesiumLib.cesiumMod.MapProjection = null,
     maximumRenderTimeChange: scala.Int | scala.Double = null,
     orderIndependentTranslucency: js.UndefOr[scala.Boolean] = js.undefined,
     requestRenderMode: js.UndefOr[scala.Boolean] = js.undefined,

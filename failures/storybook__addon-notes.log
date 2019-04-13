@@ -1,7 +1,0 @@
-[debug] PhaseRunner.scala:82 Success [id => @storybook/addon-notes, phase => typescript] 
-[debug] PhaseRunner.scala:82 Success [id => @storybook/addon-notes, phase => typescript] 
-[warn ] PhaseRunner.scala:68 Failed because of, [@storybook/core-events => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@storybook/core-events/dist/index.d.ts): Parse error at 23.40 boolean literal expected] [id => @storybook/addon-notes, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [@storybook/core-events => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@storybook/core-events/dist/index.d.ts): Parse error at 23.40 boolean literal expected] [id => @storybook/addon-notes, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [@storybook/core-events => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@storybook/core-events/dist/index.d.ts): Parse error at 23.40 boolean literal expected] [id => @storybook/addon-notes, phase => scala.js] 
-[error] PhaseRunner.scala:86 Failure, [@storybook/core-events => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@storybook/core-events/dist/index.d.ts): Parse error at 23.40 boolean literal expected] [id => @storybook/addon-notes, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [@storybook/core-events => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@storybook/core-events/dist/index.d.ts): Parse error at 23.40 boolean literal expected] [id => @storybook/addon-notes, phase => publish] 

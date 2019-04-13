@@ -25,3 +25,8 @@ class SearchCondition ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.SearchCondition")
+@js.native
+object SearchCondition
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISearchCondition]
+

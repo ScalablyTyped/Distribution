@@ -12,6 +12,6 @@ object ^ extends js.Object {
     suites: js.Array[mochaLib.MochaNs.Suite],
     context: mochaLib.MochaNs.MochaGlobals,
     mocha: mochaLib.Mocha
-  ): mochaLib.libInterfacesCommonMod.commonNs.CommonFunctions = js.native
+  ): CommonFunctions = js.native
 }
 

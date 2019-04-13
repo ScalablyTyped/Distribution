@@ -29,3 +29,8 @@ class UserOrUserGroupIDEx ()
   override def SetWorkflowStatePseudoUser(WorkflowState: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.UserOrUserGroupIDEx")
+@js.native
+object UserOrUserGroupIDEx
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserOrUserGroupIDEx]
+

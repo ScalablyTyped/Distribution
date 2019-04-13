@@ -14,7 +14,7 @@ object constNs extends js.Object {
     def this(value: L) = this()
   }
   
-  val URI: /* Const */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Const = js.native
   val const_ : fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libConstMod.URI] with fpDashTsLib.libContravariantMod.Contravariant2[fpDashTsLib.libConstMod.URI] = js.native
   def getApplicative[L](M: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Const, L] = js.native
   def getApply[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libApplyMod.Apply2C[fpDashTsLib.fpDashTsLibStrings.Const, L] = js.native

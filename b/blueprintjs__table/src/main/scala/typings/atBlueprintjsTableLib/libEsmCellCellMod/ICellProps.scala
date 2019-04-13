@@ -33,21 +33,21 @@ trait ICellProps
   /**
     * Callback invoked when the cell is focused and a key is pressed down.
     */
-  var onKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
   /**
     * Callback invoked when a character-key is pressed.
     */
-  var onKeyPress: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
   /**
     * Callback invoked when the cell is focused and a key is released.
     */
-  var onKeyUp: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement]] = js.undefined
   /**
     * The row index of the cell. If provided, this will be passed as an argument to any callbacks
     * when they are invoked.
     */
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Allows for setting a tab index on the cell, so the cell can be browser-focusable.
     */
@@ -80,11 +80,11 @@ object ICellProps {
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement] = null,
-    onKeyPress: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[stdLib.HTMLElement] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLElement] = null,
     rowIndex: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     tooltip: java.lang.String = null,
     truncated: js.UndefOr[scala.Boolean] = js.undefined,

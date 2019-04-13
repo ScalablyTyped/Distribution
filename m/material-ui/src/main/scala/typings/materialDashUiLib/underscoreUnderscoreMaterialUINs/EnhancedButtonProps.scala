@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps because var conflicts: onBlur, onClick, onFocus, onKeyDown, onKeyUp, style, tabIndex. Inlined centerRipple, disableFocusRipple, disableKeyboardFocus, disableTouchRipple, focusRippleColor, focusRippleOpacity, href, keyboardFocused, onKeyboardFocus, target, touchRippleColor, touchRippleOpacity, `type`, containerElement */ trait EnhancedButtonProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] {
+  extends reactLib.reactMod.HTMLAttributes[js.Object] {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
   // container element, <button/>, or <span/>(if disabled link) is the element that get the 'other' properties
-  var containerElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var containerElement: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined
   var disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   var keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined
   var onKeyboardFocus: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
+      /* e */ reactLib.reactMod.FocusEvent[js.Object], 
       /* isKeyboardFocused */ scala.Boolean, 
       scala.Unit
     ]
@@ -35,9 +35,9 @@ import scala.scalajs.js.annotation._
 object EnhancedButtonProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[js.Object] = null,
     SharedEnhancedButtonProps: SharedEnhancedButtonProps[EnhancedButton] = null,
-    containerElement: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    containerElement: reactLib.reactMod.ReactNode | java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): EnhancedButtonProps = {
     val __obj = js.Dynamic.literal()

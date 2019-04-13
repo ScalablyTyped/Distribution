@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Transfer ()
   extends awsDashSdkLib.awsDashSdkMod.Transfer {
-  def this(options: awsDashSdkLib.clientsTransferMod.TransferNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsTransferMod.ClientConfiguration) = this()
 }
 

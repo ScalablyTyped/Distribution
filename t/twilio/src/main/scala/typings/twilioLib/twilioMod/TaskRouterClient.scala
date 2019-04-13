@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio", "TaskRouterClient")
 @js.native
-class TaskRouterClient ()
-  extends twilioLib.twilioMod.twilioNs.TaskRouterClient {
+class TaskRouterClient () extends Client {
   def this(sid: java.lang.String) = this()
   def this(sid: java.lang.String, tkn: java.lang.String) = this()
   def this(sid: java.lang.String, tkn: java.lang.String, workspaceSid: java.lang.String) = this()
-  def this(sid: java.lang.String, tkn: java.lang.String, workspaceSid: java.lang.String, options: twilioLib.twilioMod.twilioNs.ClientOptions) = this()
+  def this(sid: java.lang.String, tkn: java.lang.String, workspaceSid: java.lang.String, options: ClientOptions) = this()
+  var workspace: WorkspaceResource = js.native
+  var workspaces: WorkspaceResource = js.native
 }
 

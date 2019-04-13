@@ -11,3 +11,10 @@ import scala.scalajs.js.annotation._
 */
 trait GutterTypes extends js.Object
 
+@JSImport("react-foundation/enums", "GutterTypes")
+@js.native
+object GutterTypes extends js.Object {
+  var MARGIN: reactDashFoundationLib.enumsMod.GutterTypes = js.native
+  var PADDING: reactDashFoundationLib.enumsMod.GutterTypes = js.native
+}
+

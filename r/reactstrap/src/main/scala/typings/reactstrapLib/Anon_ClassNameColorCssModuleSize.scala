@@ -10,7 +10,7 @@ trait Anon_ClassNameColorCssModuleSize extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var size: js.UndefOr[js.Any] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -21,7 +21,7 @@ object Anon_ClassNameColorCssModuleSize {
     color: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     size: js.Any = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     `type`: java.lang.String = null
   ): Anon_ClassNameColorCssModuleSize = {
     val __obj = js.Dynamic.literal()

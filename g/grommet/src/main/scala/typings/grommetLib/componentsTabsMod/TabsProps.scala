@@ -11,7 +11,7 @@ trait TabsProps extends js.Object {
   var alignSelf: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch
   ] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var flex: js.UndefOr[
     grommetLib.grommetLibStrings.grow | grommetLib.grommetLibStrings.shrink | scala.Boolean
   ] = js.undefined
@@ -29,7 +29,7 @@ trait TabsProps extends js.Object {
 object TabsProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     a11yTitle: java.lang.String = null,
     activeIndex: scala.Int | scala.Double = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,

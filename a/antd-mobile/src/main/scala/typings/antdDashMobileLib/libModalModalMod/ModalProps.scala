@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModalProps
-  extends antdDashMobileLib.libModalPropsTypeMod.ModalPropsType[reactLib.reactMod.ReactNs.CSSProperties] {
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  extends antdDashMobileLib.libModalPropsTypeMod.ModalPropsType[reactLib.reactMod.CSSProperties] {
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
   var platform: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var wrapClassName: js.UndefOr[java.lang.String] = js.undefined
-  var wrapProps: js.UndefOr[stdLib.Partial[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]]] = js.undefined
+  var wrapProps: js.UndefOr[stdLib.Partial[reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]]] = js.undefined
 }
 
 object ModalProps {
@@ -25,12 +25,10 @@ object ModalProps {
     animateAppear: js.UndefOr[scala.Boolean] = js.undefined,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     animationType: js.Any = null,
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
-    footer: js.Array[
-      antdDashMobileLib.libModalPropsTypeMod.Action[reactLib.reactMod.ReactNs.CSSProperties]
-    ] = null,
+    footer: js.Array[antdDashMobileLib.libModalPropsTypeMod.Action[reactLib.reactMod.CSSProperties]] = null,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
     maskTransitionName: java.lang.String = null,
     onAnimationEnd: /* visible */ scala.Boolean => scala.Unit = null,
@@ -39,12 +37,12 @@ object ModalProps {
     platform: java.lang.String = null,
     popup: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionName: java.lang.String = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
     wrapClassName: java.lang.String = null,
-    wrapProps: stdLib.Partial[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]] = null
+    wrapProps: stdLib.Partial[reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]] = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal(visible = visible)
     if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear)

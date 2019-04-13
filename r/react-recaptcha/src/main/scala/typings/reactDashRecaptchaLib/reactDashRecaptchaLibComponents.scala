@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashRecaptchaLibComponents {
   @scala.inline
-  def ReactDashRecaptcha: reactLib.reactMod.ReactNs.ComponentType[reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaNs.RecaptchaProps] = js.constructorOf[reactDashRecaptchaLib.reactDashRecaptchaMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaNs.RecaptchaProps]]
+  def ReactDashRecaptcha: reactLib.reactMod.ComponentType[reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaProps] = js.constructorOf[reactDashRecaptchaLib.reactDashRecaptchaMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaProps]]
   @scala.inline
-  def RecaptchaProps: reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaNs.RecaptchaProps.type = reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaNs.RecaptchaProps
-  type RecaptchaProps = reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaNs.RecaptchaProps
+  def RecaptchaProps: reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaProps.type = reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaProps
+  type RecaptchaProps = reactDashRecaptchaLib.reactDashRecaptchaMod.RecaptchaProps
 }
 

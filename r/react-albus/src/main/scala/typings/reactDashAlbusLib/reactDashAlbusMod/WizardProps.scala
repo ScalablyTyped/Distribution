@@ -9,7 +9,7 @@ trait WizardProps extends js.Object {
   var basename: js.UndefOr[java.lang.String] = js.undefined
   var history: js.UndefOr[historyLib.historyMod.History[historyLib.historyMod.LocationState]] = js.undefined
   var onNext: js.UndefOr[js.Function1[/* wizard */ WizardContext, scala.Unit]] = js.undefined
-  var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, reactLib.reactMod.ReactNode]] = js.undefined
 }
 
 object WizardProps {
@@ -18,7 +18,7 @@ object WizardProps {
     basename: java.lang.String = null,
     history: historyLib.historyMod.History[historyLib.historyMod.LocationState] = null,
     onNext: /* wizard */ WizardContext => scala.Unit = null,
-    render: /* wizard */ WizardContext => reactLib.reactMod.ReactNs.ReactNode = null
+    render: /* wizard */ WizardContext => reactLib.reactMod.ReactNode = null
   ): WizardProps = {
     val __obj = js.Dynamic.literal()
     if (basename != null) __obj.updateDynamic("basename")(basename)

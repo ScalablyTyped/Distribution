@@ -9,12 +9,10 @@ trait HeaderProps extends js.Object {
   var fullscreen: js.UndefOr[scala.Boolean] = js.undefined
   var locale: js.UndefOr[js.Any] = js.undefined
   var onTypeChange: js.UndefOr[js.Function1[/* type */ java.lang.String, scala.Unit]] = js.undefined
-  var onValueChange: js.UndefOr[js.Function1[/* value */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined
+  var onValueChange: js.UndefOr[js.Function1[/* value */ momentLib.momentMod.Moment, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
-  var validRange: js.UndefOr[
-    js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment]
-  ] = js.undefined
+  var validRange: js.UndefOr[js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment]] = js.undefined
   var value: js.Any
   var yearSelectOffset: js.UndefOr[scala.Double] = js.undefined
   var yearSelectTotal: js.UndefOr[scala.Double] = js.undefined
@@ -27,10 +25,10 @@ object HeaderProps {
     fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
     locale: js.Any = null,
     onTypeChange: /* type */ java.lang.String => scala.Unit = null,
-    onValueChange: /* value */ momentLib.momentMod.momentNs.Moment => scala.Unit = null,
+    onValueChange: /* value */ momentLib.momentMod.Moment => scala.Unit = null,
     prefixCls: java.lang.String = null,
     `type`: java.lang.String = null,
-    validRange: js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment] = null,
+    validRange: js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment] = null,
     yearSelectOffset: scala.Int | scala.Double = null,
     yearSelectTotal: scala.Int | scala.Double = null
   ): HeaderProps = {

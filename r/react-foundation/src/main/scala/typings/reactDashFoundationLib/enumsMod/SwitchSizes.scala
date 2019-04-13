@@ -12,3 +12,11 @@ import scala.scalajs.js.annotation._
 */
 trait SwitchSizes extends js.Object
 
+@JSImport("react-foundation/enums", "SwitchSizes")
+@js.native
+object SwitchSizes extends js.Object {
+  var LARGE: reactDashFoundationLib.enumsMod.ButtonSizes = js.native
+  var SMALL: reactDashFoundationLib.enumsMod.ButtonSizes = js.native
+  var TINY: reactDashFoundationLib.enumsMod.ButtonSizes = js.native
+}
+

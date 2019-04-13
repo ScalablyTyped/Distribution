@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "RuntimeError")
 @js.native
-class RuntimeError ()
-  extends cesiumLib.cesiumMod.CesiumNs.RuntimeError {
+class RuntimeError () extends js.Object {
   def this(message: java.lang.String) = this()
-  /* CompleteClass */
-  override var message: java.lang.String = js.native
-  /* CompleteClass */
-  override var name: java.lang.String = js.native
-  /* CompleteClass */
-  override var stack: java.lang.String = js.native
+  var message: java.lang.String = js.native
+  var name: java.lang.String = js.native
+  var stack: java.lang.String = js.native
 }
 

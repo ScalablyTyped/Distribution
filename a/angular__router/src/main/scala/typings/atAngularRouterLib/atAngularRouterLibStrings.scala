@@ -87,6 +87,9 @@ object atAngularRouterLibStrings {
     extends atAngularRouterLib.srcConfigMod.QueryParamsHandling
   
   @js.native
+  sealed trait primary extends js.Object
+  
+  @js.native
   sealed trait reload extends js.Object
   
   @js.native
@@ -134,6 +137,8 @@ object atAngularRouterLibStrings {
   def popstate: popstate = "popstate".asInstanceOf[popstate]
   @scala.inline
   def preserve: preserve = "preserve".asInstanceOf[preserve]
+  @scala.inline
+  def primary: primary = "primary".asInstanceOf[primary]
   @scala.inline
   def reload: reload = "reload".asInstanceOf[reload]
   @scala.inline

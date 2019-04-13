@@ -22,20 +22,10 @@ object ^ extends js.Object {
     * should be run in parallel. If omitted, the concurrency defaults to 1.
     * If negative - no parallel and delay between worker functions (concurrency -1,000 sets 1 second delay)
     */
+  def apply(worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, scala.Unit]): TressStatic = js.native
   def apply(
-    worker: js.Function2[
-      /* job */ tressLib.tressMod.tressNs.TressJobData, 
-      /* done */ tressLib.tressMod.tressNs.TressWorkerDoneCallback, 
-      scala.Unit
-    ]
-  ): tressLib.tressMod.tressNs.TressStatic = js.native
-  def apply(
-    worker: js.Function2[
-      /* job */ tressLib.tressMod.tressNs.TressJobData, 
-      /* done */ tressLib.tressMod.tressNs.TressWorkerDoneCallback, 
-      scala.Unit
-    ],
+    worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, scala.Unit],
     concurrency: scala.Double
-  ): tressLib.tressMod.tressNs.TressStatic = js.native
+  ): TressStatic = js.native
 }
 

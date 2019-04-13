@@ -9,14 +9,14 @@ trait GoogleErrorBody extends js.Object {
   var code: scala.Double
   var errors: js.UndefOr[js.Array[GoogleInnerError]] = js.undefined
   var message: js.UndefOr[java.lang.String] = js.undefined
-  var response: requestLib.requestMod.requestNs.Response
+  var response: requestLib.requestMod.Response
 }
 
 object GoogleErrorBody {
   @scala.inline
   def apply(
     code: scala.Double,
-    response: requestLib.requestMod.requestNs.Response,
+    response: requestLib.requestMod.Response,
     errors: js.Array[GoogleInnerError] = null,
     message: java.lang.String = null
   ): GoogleErrorBody = {

@@ -42,7 +42,7 @@ trait StarRatingComponentProps extends js.Object {
       /* nextValue */ scala.Double, 
       /* prevValue */ scala.Double, 
       /* name */ java.lang.String, 
-      reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+      reactLib.reactMod.ReactNode | java.lang.String
     ]
   ] = js.undefined
   /** render method for the half-star icon */
@@ -51,7 +51,7 @@ trait StarRatingComponentProps extends js.Object {
       /* nextValue */ scala.Double, 
       /* prevValue */ scala.Double, 
       /* name */ java.lang.String, 
-      reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+      reactLib.reactMod.ReactNode | java.lang.String
     ]
   ] = js.undefined
   /** color of selected icons */
@@ -72,8 +72,8 @@ object StarRatingComponentProps {
     onStarClick: (/* nextValue */ scala.Double, /* prevValue */ scala.Double, /* name */ java.lang.String) => scala.Unit = null,
     onStarHover: (/* nextValue */ scala.Double, /* prevValue */ scala.Double, /* name */ java.lang.String) => scala.Unit = null,
     onStarHoverOut: (/* nextValue */ scala.Double, /* prevValue */ scala.Double, /* name */ java.lang.String) => scala.Unit = null,
-    renderStarIcon: (/* nextValue */ scala.Double, /* prevValue */ scala.Double, /* name */ java.lang.String) => reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
-    renderStarIconHalf: (/* nextValue */ scala.Double, /* prevValue */ scala.Double, /* name */ java.lang.String) => reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    renderStarIcon: (/* nextValue */ scala.Double, /* prevValue */ scala.Double, /* name */ java.lang.String) => reactLib.reactMod.ReactNode | java.lang.String = null,
+    renderStarIconHalf: (/* nextValue */ scala.Double, /* prevValue */ scala.Double, /* name */ java.lang.String) => reactLib.reactMod.ReactNode | java.lang.String = null,
     starColor: java.lang.String = null,
     starCount: scala.Int | scala.Double = null
   ): StarRatingComponentProps = {

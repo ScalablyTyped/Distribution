@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigationComponentProps extends NavigationProps {
-  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
 }
 
 object NavigationComponentProps {
@@ -15,17 +15,17 @@ object NavigationComponentProps {
     backButtonTintColor: java.lang.String = null,
     backButtonTitle: java.lang.String = null,
     cardStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    children: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    children: js.Array[reactLib.reactMod.ReactElement[_]] = null,
     configureTransition: (/* transitionProps */ reactDashNavigationLib.reactDashNavigationMod.NavigationTransitionProps, /* prevTransitionProps */ js.UndefOr[reactDashNavigationLib.reactDashNavigationMod.NavigationTransitionProps]) => reactDashNavigationLib.reactDashNavigationMod.NavigationTransitionSpec = null,
     hideBackButton: js.UndefOr[scala.Boolean] = js.undefined,
     hideNavBar: js.UndefOr[scala.Boolean] = js.undefined,
     navBarStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     onTransitionEnd: /* repeated */ js.Any => scala.Unit = null,
     onTransitionStart: /* repeated */ js.Any => scala.Unit = null,
-    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
     title: java.lang.String = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null
   ): NavigationComponentProps = {

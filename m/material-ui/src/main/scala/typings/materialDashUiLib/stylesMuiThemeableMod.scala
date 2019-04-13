@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object stylesMuiThemeableMod extends js.Object {
   def default(): js.Function1[
-    /* component */ (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme], 
-    (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme]
+    /* component */ (reactLib.reactMod.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[materialDashUiLib.Anon_MuiTheme], 
+    (reactLib.reactMod.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[materialDashUiLib.Anon_MuiTheme]
   ] = js.native
   def muiThemeable(): js.Function1[
-    /* component */ (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme], 
-    (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme]
+    /* component */ (reactLib.reactMod.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[materialDashUiLib.Anon_MuiTheme], 
+    (reactLib.reactMod.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[materialDashUiLib.Anon_MuiTheme]
   ] = js.native
 }
 

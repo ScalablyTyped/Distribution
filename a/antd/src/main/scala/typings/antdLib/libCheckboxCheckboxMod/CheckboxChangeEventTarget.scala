@@ -14,20 +14,20 @@ object CheckboxChangeEventTarget {
   @scala.inline
   def apply(
     checked: scala.Boolean,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     onChange: CheckboxChangeEvent => scala.Unit = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[_] = null,
-    onKeyPress: reactLib.reactMod.ReactNs.KeyboardEventHandler[_] = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[_] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[_] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[_] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[_] = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     value: js.Any = null
   ): CheckboxChangeEventTarget = {

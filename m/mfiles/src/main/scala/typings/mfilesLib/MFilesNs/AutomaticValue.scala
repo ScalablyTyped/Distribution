@@ -23,3 +23,8 @@ class AutomaticValue ()
   override def Clone(): mfilesLib.IAutomaticValue = js.native
 }
 
+@JSGlobal("MFiles.AutomaticValue")
+@js.native
+object AutomaticValue
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAutomaticValue]
+

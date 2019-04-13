@@ -29,7 +29,7 @@ class FluxibleContext () extends js.Object {
   /**
     * Getter for store from dispatcher
     */
-  def getStore[T /* <: fluxibleLib.addonsBaseStoreMod.namespaced[js.Object] */](store: fluxibleLib.Anon_Dispatcher[T]): T = js.native
+  def getStore[T /* <: fluxibleLib.addonsBaseStoreMod.^[js.Object] */](store: fluxibleLib.Anon_Dispatcher[T]): T = js.native
   /**
     * Returns the context for stores
     * @return Store context information

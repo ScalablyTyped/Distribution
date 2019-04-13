@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactLib.reactMod.ReactNs.Props because var conflicts: children. Inlined key, ref */ trait PaperProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] {
+- reactLib.reactMod.Props because var conflicts: children. Inlined key, ref */ trait PaperProps
+  extends reactLib.reactMod.HTMLAttributes[js.Object] {
   var circle: js.UndefOr[scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var key: js.UndefOr[reactLib.reactMod.ReactNs.Key] = js.undefined
-  var ref: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[Paper]] = js.undefined
+  var key: js.UndefOr[reactLib.reactMod.Key] = js.undefined
+  var ref: js.UndefOr[reactLib.reactMod.LegacyRef[Paper]] = js.undefined
   var rounded: js.UndefOr[scala.Boolean] = js.undefined
   var transitionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -21,12 +21,12 @@ import scala.scalajs.js.annotation._
 object PaperProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] = null,
-    Props: reactLib.reactMod.ReactNs.Props[Paper] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[js.Object] = null,
+    Props: reactLib.reactMod.Props[Paper] = null,
     circle: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Double | java.lang.String = null,
     rounded: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Double | java.lang.String = null,
     zDepth: scala.Int | scala.Double = null

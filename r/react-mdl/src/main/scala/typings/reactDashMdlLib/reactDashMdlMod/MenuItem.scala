@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "MenuItem")
 @js.native
-class MenuItem ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.MenuItem
+class MenuItem () extends __MDLBasicComponent
 

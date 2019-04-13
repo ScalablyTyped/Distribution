@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLInputElement>, 'onChange' | 'onFocus' | 'onBlur' | 'value' | 'defaultValue' | 'type' | 'title'> ]: react.react.React.HTMLProps<std.HTMLInputElement>[P]} */ trait TextareaItemProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLInputElement>, 'onChange' | 'onFocus' | 'onBlur' | 'value' | 'defaultValue' | 'type' | 'title'> ]: react.react.HTMLProps<std.HTMLInputElement>[P]} */ trait TextareaItemProps
   extends antdDashMobileLib.libTextareaDashItemPropsTypeMod.TextAreaItemPropsType {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var prefixListCls: js.UndefOr[java.lang.String] = js.undefined
@@ -33,7 +33,7 @@ object TextareaItemProps {
     prefixCls: java.lang.String = null,
     prefixListCls: java.lang.String = null,
     rows: scala.Int | scala.Double = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     value: java.lang.String = null
   ): TextareaItemProps = {
     val __obj = js.Dynamic.literal()

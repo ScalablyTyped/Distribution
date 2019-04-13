@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object nodeDashGeocoderLibStrings {
   @js.native
   sealed trait agol
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait datasciencetoolkit
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait freegeoip
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait geocodio
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait google
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait here
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait http extends js.Object
@@ -38,54 +38,54 @@ object nodeDashGeocoderLibStrings {
   
   @js.native
   sealed trait locationiq
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait mapquest
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait nominatimmapquest
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait opencage
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait opendatafrance
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait openmapquest
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait openstreetmap
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait pickpoint
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait request extends js.Object
   
   @js.native
   sealed trait smartyStreet
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait teleport
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait tomtom
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @js.native
   sealed trait yandex
-    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.Providers
   
   @scala.inline
   def agol: agol = "agol".asInstanceOf[agol]

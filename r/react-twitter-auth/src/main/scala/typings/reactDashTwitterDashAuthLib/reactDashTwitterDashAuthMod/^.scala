@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-twitter-auth", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var default: reactLib.reactMod.ReactNs.StatelessComponent[TwitterLoginProps] = js.native
+  var default: reactLib.reactMod.StatelessComponent[TwitterLoginProps] = js.native
 }
 

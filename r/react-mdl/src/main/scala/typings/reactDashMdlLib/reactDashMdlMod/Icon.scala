@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Icon")
 @js.native
-class Icon ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Icon
+class Icon () extends __MDLComponent[IconProps]
 

@@ -10,7 +10,7 @@ trait Transaction extends js.Object {
   var expiresIn: stdLib.Date | scala.Double
   var state: java.lang.String
   def commit(callback: neo4jLib.DoneCallback): scala.Unit
-  def cypher(options: CypherOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.requestNs.Request
+  def cypher(options: CypherOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.Request
   def renew(callback: neo4jLib.DoneCallback): scala.Unit
   def rollback(callback: neo4jLib.DoneCallback): scala.Unit
 }
@@ -19,7 +19,7 @@ object Transaction {
   @scala.inline
   def apply(
     commit: neo4jLib.DoneCallback => scala.Unit,
-    cypher: (CypherOptions, neo4jLib.ResultCallback) => requestLib.requestMod.requestNs.Request,
+    cypher: (CypherOptions, neo4jLib.ResultCallback) => requestLib.requestMod.Request,
     expiresAt: stdLib.Date,
     expiresIn: stdLib.Date | scala.Double,
     renew: neo4jLib.DoneCallback => scala.Unit,

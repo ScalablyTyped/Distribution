@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait QueryContext extends BaseContext {
   var channel: java.lang.String
   var collection: java.lang.String
-  var db: sharedbLib.sharedbMod.sharedbNs.DB | scala.Null
+  var db: sharedbLib.sharedbMod.DB | scala.Null
   var fields: js.UndefOr[sharedbLib.sharedbMod.ProjectionFields]
   var index: java.lang.String
   var options: sharedbLib.libSharedbMod.JSONObject
@@ -28,7 +28,7 @@ object QueryContext {
     index: java.lang.String,
     options: sharedbLib.libSharedbMod.JSONObject,
     query: sharedbLib.libSharedbMod.JSONObject,
-    db: sharedbLib.sharedbMod.sharedbNs.DB = null,
+    db: sharedbLib.sharedbMod.DB = null,
     fields: sharedbLib.sharedbMod.ProjectionFields = null,
     projection: sharedbLib.sharedbMod.Projection = null,
     snapshotProjection: sharedbLib.sharedbMod.Projection = null

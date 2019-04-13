@@ -14,6 +14,7 @@ package object restfulDotJsMod {
     /* url */ java.lang.String, 
     FullRequestInterceptorReturnValue
   ]
+  type Headers = org.scalablytyped.runtime.StringDictionary[js.Any]
   type RequestInterceptor = js.Function4[
     /* data */ js.Any, 
     /* headers */ Headers, 

@@ -11,7 +11,7 @@ trait ListProps extends CommonProps {
     *
     * If useIsScrolling is enabled for the list, the component also receives an additional isScrolling boolean prop.
     */
-  var children: reactLib.reactMod.ReactNs.ComponentType[ListChildComponentProps]
+  var children: reactLib.reactMod.ComponentType[ListChildComponentProps]
   /**
     * Determines the direction of text and horizontal scrolling.
     *
@@ -89,7 +89,7 @@ trait ListProps extends CommonProps {
 object ListProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ComponentType[ListChildComponentProps],
+    children: reactLib.reactMod.ComponentType[ListChildComponentProps],
     height: scala.Double | java.lang.String,
     itemCount: scala.Double,
     width: scala.Double | java.lang.String,
@@ -97,7 +97,7 @@ object ListProps {
     direction: CSSDirection | Direction = null,
     initialScrollOffset: scala.Int | scala.Double = null,
     innerElementType: ReactElementType = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] = null,
     innerTagName: java.lang.String = null,
     itemData: js.Any = null,
     itemKey: ListItemKeySelector = null,
@@ -105,10 +105,10 @@ object ListProps {
     onItemsRendered: /* props */ ListOnItemsRenderedProps => _ = null,
     onScroll: /* props */ ListOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
-    outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    outerRef: reactLib.reactMod.Ref[_] = null,
     outerTagName: java.lang.String = null,
     overscanCount: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): ListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount, width = width.asInstanceOf[js.Any])

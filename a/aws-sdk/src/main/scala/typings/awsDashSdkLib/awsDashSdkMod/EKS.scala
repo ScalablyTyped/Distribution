@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class EKS ()
   extends awsDashSdkLib.clientsAllMod.EKS {
-  def this(options: awsDashSdkLib.clientsEksMod.EKSNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsEksMod.ClientConfiguration) = this()
 }
 

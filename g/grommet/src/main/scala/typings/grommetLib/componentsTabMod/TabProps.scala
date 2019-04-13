@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait TabProps extends js.Object {
   var plain: js.UndefOr[scala.Boolean] = js.undefined
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object TabProps {
   @scala.inline
   def apply(
     plain: js.UndefOr[scala.Boolean] = js.undefined,
-    title: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null
+    title: java.lang.String | reactLib.reactMod.ReactNode = null
   ): TabProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)

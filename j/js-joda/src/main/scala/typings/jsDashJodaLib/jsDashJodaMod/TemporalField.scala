@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "TemporalField")
 @js.native
-abstract class TemporalField ()
-  extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField
+abstract class TemporalField () extends js.Object
 

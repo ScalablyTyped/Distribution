@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("dav", "ns")
 @js.native
 object nsNs extends js.Object {
-  val CALDAV: /* urn:ietf:params:xml:ns:caldav */ java.lang.String = js.native
-  val CALDAV_APPLE: /* http://apple.com/ns/ical/ */ java.lang.String = js.native
-  val CALENDAR_SERVER: /* http://calendarserver.org/ns/ */ java.lang.String = js.native
-  val CARDDAV: /* urn:ietf:params:xml:ns:carddav */ java.lang.String = js.native
-  val DAV: /* DAV: */ java.lang.String = js.native
+  val CALDAV: davLib.davLibStrings.`urn:ietf:params:xml:ns:caldav` = js.native
+  val CALDAV_APPLE: davLib.davLibStrings.`http://appleDOTcom/ns/ical/` = js.native
+  val CALENDAR_SERVER: davLib.davLibStrings.`http://calendarserverDOTorg/ns/` = js.native
+  val CARDDAV: davLib.davLibStrings.`urn:ietf:params:xml:ns:carddav` = js.native
+  val DAV: davLib.davLibStrings.`DAV:` = js.native
 }
 

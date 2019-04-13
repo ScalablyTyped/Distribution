@@ -16,9 +16,6 @@ trait InsertModuleGlobals extends js.Object {
     * will output the file with a closure around the contents as necessary to define extra builtins.
     */
   def apply(file: java.lang.String): nodeLib.streamMod.Transform = js.native
-  def apply(
-    file: java.lang.String,
-    opts: insertDashModuleDashGlobalsLib.insertDashModuleDashGlobalsMod.InsertModuleGlobalsNs.Options
-  ): nodeLib.streamMod.Transform = js.native
+  def apply(file: java.lang.String, opts: Options): nodeLib.streamMod.Transform = js.native
 }
 

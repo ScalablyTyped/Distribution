@@ -18,26 +18,26 @@ class PersonGroup () extends js.Object {
     * @param  {string} userData            - User-provided data attached to the group. The size limit is 16KB.
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def create(personGroupId: java.lang.String, name: java.lang.String, userData: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def create(personGroupId: java.lang.String, name: java.lang.String, userData: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Deletes an existing person group.
     *
     * @param  {string} personGroupId       - Name of person group to delete
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def delete(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def delete(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**
     * Gets an existing person group.
     *
     * @param  {string} personGroupId       - Name of person group to get
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def get(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.PersonGroupResponsesNs.PersonGroup] = js.native
+  def get(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.PersonGroupResponsesNs.PersonGroup] = js.native
   /**
     * Lists all person groups in the current subscription.
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def list(): bluebirdLib.bluebirdMod.namespaced[
+  def list(): bluebirdLib.bluebirdMod.^[
     js.Array[projectDashOxfordLib.projectDashOxfordMod.PersonGroupResponsesNs.PersonGroup]
   ] = js.native
   /**
@@ -49,7 +49,7 @@ class PersonGroup () extends js.Object {
     * @param  {string} personGroupId       - Name of person group to get
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def trainingStart(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.PersonGroupResponsesNs.TrainingStatus] = js.native
+  def trainingStart(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.PersonGroupResponsesNs.TrainingStatus] = js.native
   /**
     * Retrieves the training status of a person group. Training is triggered by the Train PersonGroup API.
     * The training will process for a while on the server side. This API can query whether the training
@@ -58,7 +58,7 @@ class PersonGroup () extends js.Object {
     * @param  {string} personGroupId       - Name of person group to get
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def trainingStatus(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.PersonGroupResponsesNs.TrainingStatus] = js.native
+  def trainingStatus(personGroupId: java.lang.String): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.PersonGroupResponsesNs.TrainingStatus] = js.native
   /**
     * Updates an existing person group's display name and userData.
     *
@@ -67,6 +67,6 @@ class PersonGroup () extends js.Object {
     * @param  {string} userData            - User-provided data attached to the group. The size limit is 16KB.
     * @return {Promise}                    - Promise resolving with the resulting JSON
     */
-  def update(personGroupId: java.lang.String, name: java.lang.String, userData: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def update(personGroupId: java.lang.String, name: java.lang.String, userData: java.lang.String): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
 }
 

@@ -9,16 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * The types of errors that can be presented to the user through the requestPin function.
-    * @enum
-    */
-  val PinRequestErrorType: chromeDashAppsLib.Anon_INVALIDPIN = js.native
-  /**
-    * The type of code being requested by the extension with requestPin function.
-    * @enum
-    */
-  val PinRequestType: chromeDashAppsLib.Anon_PIN = js.native
-  /**
     * This event fires every time the browser requests the current list of
     * certificates provided by this app. The app must call *reportCallback*
     * exactly once with the current list of certificates.

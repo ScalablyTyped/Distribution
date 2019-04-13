@@ -31,3 +31,8 @@ class FileClass ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.FileClass")
+@js.native
+object FileClass
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFileClass]
+

@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libStylesMod {
-  type GetStyles = js.Function2[/* a */ java.lang.String, /* b */ Props, reactLib.reactMod.ReactNs.CSSProperties]
+  type GetStyles = js.Function2[/* a */ java.lang.String, /* b */ Props, reactLib.reactMod.CSSProperties]
+  type Props = org.scalablytyped.runtime.StringDictionary[js.Any]
   type StylesConfig = stdLib.Partial[Styles]
   type styleFn = js.Function2[
-    /* base */ reactLib.reactMod.ReactNs.CSSProperties, 
+    /* base */ reactLib.reactMod.CSSProperties, 
     /* state */ js.Any, 
-    reactLib.reactMod.ReactNs.CSSProperties
+    reactLib.reactMod.CSSProperties
   ]
 }

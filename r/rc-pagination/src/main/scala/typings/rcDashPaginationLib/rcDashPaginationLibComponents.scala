@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object rcDashPaginationLibComponents {
   @scala.inline
-  def RcDashPagination: reactLib.reactMod.ReactNs.ComponentType[rcDashPaginationLib.rcDashPaginationMod.PaginationProps] = js.constructorOf[rcDashPaginationLib.rcDashPaginationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rcDashPaginationLib.rcDashPaginationMod.PaginationProps]]
+  def RcDashPagination: reactLib.reactMod.ComponentType[rcDashPaginationLib.rcDashPaginationMod.PaginationProps] = js.constructorOf[rcDashPaginationLib.rcDashPaginationMod.default].asInstanceOf[reactLib.reactMod.ComponentType[rcDashPaginationLib.rcDashPaginationMod.PaginationProps]]
   @scala.inline
   def PaginationProps: rcDashPaginationLib.rcDashPaginationMod.PaginationProps.type = rcDashPaginationLib.rcDashPaginationMod.PaginationProps
   type PaginationProps = rcDashPaginationLib.rcDashPaginationMod.PaginationProps

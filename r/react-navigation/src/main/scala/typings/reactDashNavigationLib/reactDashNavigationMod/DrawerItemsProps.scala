@@ -33,20 +33,20 @@ trait DrawerItemsProps extends js.Object {
   ] = js.undefined
   var navigation: NavigationScreenProp[DrawerNavigationState, NavigationParams]
   var screenProps: js.UndefOr[js.Any] = js.undefined
-  def getLabel(scene: DrawerScene): reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+  def getLabel(scene: DrawerScene): reactLib.reactMod.ReactNode | java.lang.String
   def onItemPress(info: DrawerItem): scala.Unit
-  def renderIcon(scene: DrawerScene): reactLib.reactMod.ReactNs.ReactNode
+  def renderIcon(scene: DrawerScene): reactLib.reactMod.ReactNode
 }
 
 object DrawerItemsProps {
   @scala.inline
   def apply(
     drawerPosition: reactDashNavigationLib.reactDashNavigationLibStrings.left | reactDashNavigationLib.reactDashNavigationLibStrings.right,
-    getLabel: DrawerScene => reactLib.reactMod.ReactNs.ReactNode | java.lang.String,
+    getLabel: DrawerScene => reactLib.reactMod.ReactNode | java.lang.String,
     items: js.Array[NavigationRoute[NavigationParams]],
     navigation: NavigationScreenProp[DrawerNavigationState, NavigationParams],
     onItemPress: DrawerItem => scala.Unit,
-    renderIcon: DrawerScene => reactLib.reactMod.ReactNs.ReactNode,
+    renderIcon: DrawerScene => reactLib.reactMod.ReactNode,
     activeBackgroundColor: java.lang.String = null,
     activeItemKey: java.lang.String = null,
     activeLabelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,

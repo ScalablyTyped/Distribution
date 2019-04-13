@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/State", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* State */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.State = js.native
   val state: fpDashTsLib.libMonadMod.Monad2[URI] = js.native
   def get[S](): State[S, S] = js.native
   def gets[S, A](f: js.Function1[/* s */ S, A]): State[S, A] = js.native

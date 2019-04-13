@@ -15,3 +15,8 @@ class SignaturePromptInfoSelectable ()
   override def Clone(): mfilesLib.ISignaturePromptInfoSelectable = js.native
 }
 
+@JSGlobal("MFiles.SignaturePromptInfoSelectable")
+@js.native
+object SignaturePromptInfoSelectable
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISignaturePromptInfoSelectable]
+

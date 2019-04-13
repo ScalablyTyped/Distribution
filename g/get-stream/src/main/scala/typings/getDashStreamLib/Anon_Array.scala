@@ -42,11 +42,11 @@ trait Anon_Array extends js.Object {
   def apply(stream: nodeLib.streamMod.Stream): js.Promise[java.lang.String] = js.native
   def apply(
     stream: nodeLib.streamMod.Stream,
-    options: getDashStreamLib.getDashStreamMod.getStreamNs.OptionsWithEncoding[nodeLib.BufferEncoding]
+    options: getDashStreamLib.getDashStreamMod.OptionsWithEncoding[nodeLib.BufferEncoding]
   ): js.Promise[java.lang.String] = js.native
   def array(
     stream: nodeLib.streamMod.Stream,
-    options: getDashStreamLib.getDashStreamMod.getStreamNs.OptionsWithEncoding[nodeLib.BufferEncoding]
+    options: getDashStreamLib.getDashStreamMod.OptionsWithEncoding[nodeLib.BufferEncoding]
   ): js.Promise[js.Array[java.lang.String]] = js.native
   /**
   	Get the `stream` as an array of values.
@@ -56,11 +56,11 @@ trait Anon_Array extends js.Object {
   	- When `encoding` is set to anything else, it collects an array of strings. `maxBuffer` refers to the summed character lengths of every string in the array.
   	*/
   def array[StreamObjectModeType](stream: nodeLib.streamMod.Stream): js.Promise[js.Array[StreamObjectModeType]] = js.native
-  def array[StreamObjectModeType](stream: nodeLib.streamMod.Stream, options: getDashStreamLib.getDashStreamMod.getStreamNs.Options): js.Promise[js.Array[StreamObjectModeType]] = js.native
+  def array[StreamObjectModeType](stream: nodeLib.streamMod.Stream, options: getDashStreamLib.getDashStreamMod.Options): js.Promise[js.Array[StreamObjectModeType]] = js.native
   @JSName("array")
   def array_buffer(
     stream: nodeLib.streamMod.Stream,
-    options: getDashStreamLib.getDashStreamMod.getStreamNs.OptionsWithEncoding[getDashStreamLib.getDashStreamLibStrings.buffer]
+    options: getDashStreamLib.getDashStreamMod.OptionsWithEncoding[getDashStreamLib.getDashStreamLibStrings.buffer]
   ): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   /**
   	Get the `stream` as a buffer.
@@ -69,7 +69,7 @@ trait Anon_Array extends js.Object {
   def buffer(stream: nodeLib.streamMod.Stream): js.Promise[nodeLib.Buffer] = js.native
   def buffer(
     stream: nodeLib.streamMod.Stream,
-    options: getDashStreamLib.getDashStreamMod.getStreamNs.OptionsWithEncoding[nodeLib.BufferEncoding]
+    options: getDashStreamLib.getDashStreamMod.OptionsWithEncoding[nodeLib.BufferEncoding]
   ): js.Promise[nodeLib.Buffer] = js.native
 }
 

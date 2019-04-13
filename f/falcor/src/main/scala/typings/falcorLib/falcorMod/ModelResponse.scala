@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModelResponse[T] protected () extends Observable[T] {
   def this(observable: Observable[T]) = this()
-  def progressively(): ModelResponse[
-    falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONEnvelope[T]
-  ] = js.native
+  def progressively(): ModelResponse[falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.JSONEnvelope[T]] = js.native
   def `then`(): Thenable[_] = js.native
   def `then`(onFulfilled: js.Function1[/* value */ T, _ | Thenable[_]]): Thenable[_] = js.native
   def `then`(

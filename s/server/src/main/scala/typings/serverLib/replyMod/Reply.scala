@@ -28,7 +28,7 @@ trait Reply extends js.Object {
   @JSName("type")
   var type_Original: typeType = js.native
   def cookie(name: java.lang.String, value: java.lang.String): Reply = js.native
-  def cookie(name: java.lang.String, value: java.lang.String, opts: expressLib.expressMod.eNs.CookieOptions): Reply = js.native
+  def cookie(name: java.lang.String, value: java.lang.String, opts: expressLib.expressMod.CookieOptions): Reply = js.native
   def download(path: java.lang.String): js.Any = js.native
   def download(path: java.lang.String, filename: java.lang.String): js.Any = js.native
   def header(field: java.lang.String): Reply = js.native

@@ -63,3 +63,8 @@ class ObjType ()
   override def IsAddingAllowedForUser(SessionInfo: mfilesLib.ISessionInfo): scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.ObjType")
+@js.native
+object ObjType
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectType]
+

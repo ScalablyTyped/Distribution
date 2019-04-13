@@ -10,12 +10,12 @@ trait Validator extends js.Object {
   /**
     * Returns an Error object for the most recent failed validation, or null if the validation was successful.
     */
-  def getLastError(): zDashSchemaLib.zDashSchemaMod.ValidatorNs.SchemaError = js.native
+  def getLastError(): SchemaError = js.native
   /**
     * Returns the error details for the most recent validation, or undefined if the validation was successful.
     * This is the same list as the SchemaError.details property.
     */
-  def getLastErrors(): js.Array[zDashSchemaLib.zDashSchemaMod.ValidatorNs.SchemaErrorDetail] = js.native
+  def getLastErrors(): js.Array[SchemaErrorDetail] = js.native
   /**
     * @param json - either a JSON string or a parsed JSON object
     * @param schema - the JSON object representing the schema

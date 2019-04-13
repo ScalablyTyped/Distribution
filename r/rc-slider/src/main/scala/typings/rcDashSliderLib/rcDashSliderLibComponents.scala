@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 object rcDashSliderLibComponents {
   @scala.inline
-  def Handle: reactLib.reactMod.ReactNs.ComponentType[rcDashSliderLib.rcDashSliderMod.HandleProps] = js.constructorOf[rcDashSliderLib.rcDashSliderMod.Handle].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rcDashSliderLib.rcDashSliderMod.HandleProps]]
+  def Handle: reactLib.reactMod.ComponentType[rcDashSliderLib.rcDashSliderMod.HandleProps] = js.constructorOf[rcDashSliderLib.rcDashSliderMod.Handle].asInstanceOf[reactLib.reactMod.ComponentType[rcDashSliderLib.rcDashSliderMod.HandleProps]]
   @scala.inline
-  def Range: reactLib.reactMod.ReactNs.ComponentType[rcDashSliderLib.rcDashSliderMod.RangeProps] = js.constructorOf[rcDashSliderLib.rcDashSliderMod.Range].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rcDashSliderLib.rcDashSliderMod.RangeProps]]
+  def Range: reactLib.reactMod.ComponentType[rcDashSliderLib.rcDashSliderMod.RangeProps] = js.constructorOf[rcDashSliderLib.rcDashSliderMod.Range].asInstanceOf[reactLib.reactMod.ComponentType[rcDashSliderLib.rcDashSliderMod.RangeProps]]
   @scala.inline
-  def RcDashSlider: reactLib.reactMod.ReactNs.ComponentType[rcDashSliderLib.rcDashSliderMod.SliderProps] = js.constructorOf[rcDashSliderLib.rcDashSliderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rcDashSliderLib.rcDashSliderMod.SliderProps]]
+  def RcDashSlider: reactLib.reactMod.ComponentType[rcDashSliderLib.rcDashSliderMod.SliderProps] = js.constructorOf[rcDashSliderLib.rcDashSliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[rcDashSliderLib.rcDashSliderMod.SliderProps]]
   @scala.inline
   def HandleProps: rcDashSliderLib.rcDashSliderMod.HandleProps.type = rcDashSliderLib.rcDashSliderMod.HandleProps
   type HandleProps = rcDashSliderLib.rcDashSliderMod.HandleProps

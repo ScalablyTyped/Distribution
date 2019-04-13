@@ -35,7 +35,7 @@ trait IAuthResource extends js.Object {
     * @returns {Promise} resourcePromise object
     *
     */
-  def getCurrentUser(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getCurrentUser(): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.authResource#getRemainingTimeoutSeconds
@@ -54,7 +54,7 @@ trait IAuthResource extends js.Object {
     * @returns {Promise} resourcePromise object
     *
     */
-  def getRemainingTimeoutSeconds(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getRemainingTimeoutSeconds(): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.authResource#isAuthenticated
@@ -73,7 +73,7 @@ trait IAuthResource extends js.Object {
     * @returns {Promise} resourcePromise object
     *
     */
-  def isAuthenticated(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def isAuthenticated(): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.authResource#performLogin
@@ -94,7 +94,7 @@ trait IAuthResource extends js.Object {
     * @returns {Promise} resourcePromise object
     *
     */
-  def performLogin(username: java.lang.String, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def performLogin(username: java.lang.String, password: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.authResource#performLogout
@@ -113,17 +113,17 @@ trait IAuthResource extends js.Object {
     * @returns {Promise} resourcePromise object
     *
     */
-  def performLogout(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def performLogout(): angularLib.angularMod.IPromise[IResourcePromise]
 }
 
 object IAuthResource {
   @scala.inline
   def apply(
-    getCurrentUser: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getRemainingTimeoutSeconds: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    isAuthenticated: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    performLogin: (java.lang.String, java.lang.String) => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    performLogout: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    getCurrentUser: () => angularLib.angularMod.IPromise[IResourcePromise],
+    getRemainingTimeoutSeconds: () => angularLib.angularMod.IPromise[IResourcePromise],
+    isAuthenticated: () => angularLib.angularMod.IPromise[IResourcePromise],
+    performLogin: (java.lang.String, java.lang.String) => angularLib.angularMod.IPromise[IResourcePromise],
+    performLogout: () => angularLib.angularMod.IPromise[IResourcePromise]
   ): IAuthResource = {
     val __obj = js.Dynamic.literal(getCurrentUser = js.Any.fromFunction0(getCurrentUser), getRemainingTimeoutSeconds = js.Any.fromFunction0(getRemainingTimeoutSeconds), isAuthenticated = js.Any.fromFunction0(isAuthenticated), performLogin = js.Any.fromFunction2(performLogin), performLogout = js.Any.fromFunction0(performLogout))
   

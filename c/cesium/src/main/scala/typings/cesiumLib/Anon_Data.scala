@@ -9,8 +9,8 @@ trait Anon_Data extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   var isStartIncluded: js.UndefOr[scala.Boolean] = js.undefined
   var isStopIncluded: js.UndefOr[scala.Boolean] = js.undefined
-  var start: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.JulianDate] = js.undefined
-  var stop: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.JulianDate] = js.undefined
+  var start: js.UndefOr[cesiumLib.cesiumMod.JulianDate] = js.undefined
+  var stop: js.UndefOr[cesiumLib.cesiumMod.JulianDate] = js.undefined
 }
 
 object Anon_Data {
@@ -19,8 +19,8 @@ object Anon_Data {
     data: js.Any = null,
     isStartIncluded: js.UndefOr[scala.Boolean] = js.undefined,
     isStopIncluded: js.UndefOr[scala.Boolean] = js.undefined,
-    start: cesiumLib.cesiumMod.CesiumNs.JulianDate = null,
-    stop: cesiumLib.cesiumMod.CesiumNs.JulianDate = null
+    start: cesiumLib.cesiumMod.JulianDate = null,
+    stop: cesiumLib.cesiumMod.JulianDate = null
   ): Anon_Data = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)

@@ -11,10 +11,10 @@ trait ChangeEventObject
   /**
     * Date the picker changed to. Type: moment object (clone)
     */
-  var date: momentLib.momentMod.momentNs.Moment = js.native
+  var date: momentLib.momentMod.Moment = js.native
   /**
     * Previous date. Type: moment object (clone) or false in the event of a null
     */
-  var oldDate: momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
+  var oldDate: momentLib.momentMod.Moment | scala.Boolean = js.native
 }
 

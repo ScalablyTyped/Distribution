@@ -121,7 +121,7 @@ trait Request
     * override with a different response.
     * In case of an aborted request the status code will be set to `disconnectStatusCode`.
     */
-  var response: ResponseObject | boomLib.boomMod.namespaced[_] = js.native
+  var response: ResponseObject | boomLib.boomMod.^[_] = js.native
   /**
     * The request route information object and method
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestroute)

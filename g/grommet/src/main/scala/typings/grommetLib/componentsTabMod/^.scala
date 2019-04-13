@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Tab", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Tab: reactLib.reactMod.ReactNs.ComponentClass[
-    TabProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+  val Tab: reactLib.reactMod.ComponentClass[
+    TabProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

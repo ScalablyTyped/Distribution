@@ -5,28 +5,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("p5", "Signal")
 @js.native
-/**
-  *   p5.Signal is a constant audio-rate signal used by
-  *   p5.Oscillator and p5.Envelope for modulation math.
-  *   This is necessary because Web Audio is processed
-  *   on a seprate clock. For example, the p5 draw loop
-  *   runs about 60 times per second. But the audio
-  *   clock must process samples 44100 times per second.
-  *   If we want to add a value to each of those
-  *   samples, we can't do it in the draw loop, but we
-  *   can do it by adding a constant-rate audio
-  *   signal.</p.
-  *
-  *   This class mostly functions behind the scenes in
-  *   p5.sound, and returns a Tone.Signal from the
-  *   Tone.js library by Yotam Mann. If you want to work
-  *   directly with audio signals for modular synthesis,
-  *   check out tone.js.
-  *
-  *   @return A Signal object from the Tone.js library
-  */
-class Signal ()
-  extends p5Lib.p5Mod.p5Ns.Signal
+trait Signal extends js.Object {
+  /**
+    *   Add a constant value to this audio signal, and
+    *   return the resulting audio signal. Does not change
+    *   the value of the original signal, instead it
+    *   returns a new p5.SignalAdd.
+    *   @return object
+    */
+  def add(number: scala.Double): Signal = js.native
+  /**
+    *   Fade to value, for smooth transitions
+    *   @param value Value to set this signal
+    *   @param [secondsFromNow] Length of fade, in seconds
+    *   from now
+    */
+  def fade(value: scala.Double): scala.Unit = js.native
+  def fade(value: scala.Double, secondsFromNow: scala.Double): scala.Unit = js.native
+  /**
+    *   Multiply this signal by a constant value, and
+    *   return the resulting audio signal. Does not change
+    *   the value of the original signal, instead it
+    *   returns a new p5.SignalMult.
+    *   @param number to multiply
+    *   @return object
+    */
+  def mult(number: scala.Double): Signal = js.native
+  /**
+    *   Scale this signal value to a given range, and
+    *   return the result as an audio signal. Does not
+    *   change the value of the original signal, instead
+    *   it returns a new p5.SignalScale.
+    *   @param number to multiply
+    *   @param inMin input range minumum
+    *   @param inMax input range maximum
+    *   @param outMin input range minumum
+    *   @param outMax input range maximum
+    *   @return object
+    */
+  def scale(
+    number: scala.Double,
+    inMin: scala.Double,
+    inMax: scala.Double,
+    outMin: scala.Double,
+    outMax: scala.Double
+  ): Signal = js.native
+  /**
+    *   Connect a p5.sound object or Web Audio node to
+    *   this p5.Signal so that its amplitude values can be
+    *   scaled.
+    */
+  def setInput(input: js.Object): scala.Unit = js.native
+}
 

@@ -25,7 +25,7 @@ package object stellarDashBaseMod {
     - stellarDashBaseLib.stellarDashBaseMod.OperationNs.ManageData
     - stellarDashBaseLib.stellarDashBaseMod.OperationNs.BumpSequence
   */
-  type Operation = _Operation | stellarDashBaseLib.stellarDashBaseMod.OperationNs.SetOptions[SignerOptions]
+  type Operation = _Operation | stellarDashBaseLib.stellarDashBaseMod.OperationNs.SetOptions[SignerOptions] | stellarDashBaseLib.stellarDashBaseMod.OperationNs.Inflation
   /* Rewritten from type alias, can be one of: 
     - stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.CreateAccount
     - stellarDashBaseLib.stellarDashBaseMod.OperationOptionsNs.Payment

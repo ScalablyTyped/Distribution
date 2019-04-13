@@ -29,7 +29,7 @@ trait ToastContainerProps extends ToastAndToastContainerOptions {
   /**
     * Add optional inline style to the container.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Add optional classes to the toast.
     */
@@ -53,7 +53,7 @@ object ToastContainerProps {
     position: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-left` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-left` = null,
     progressClassName: java.lang.String = null,
     rtl: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     toastClassName: java.lang.String = null,
     transition: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = null
   ): ToastContainerProps = {

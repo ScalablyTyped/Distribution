@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/AccordionContent", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.StatelessComponent[AccordionContentProps] = js.native
+  val default: reactLib.reactMod.StatelessComponent[AccordionContentProps] = js.native
 }
 

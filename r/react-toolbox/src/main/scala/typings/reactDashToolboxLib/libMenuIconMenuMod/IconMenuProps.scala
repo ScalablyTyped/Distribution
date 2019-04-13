@@ -15,12 +15,12 @@ trait IconMenuProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Icon font key string or Element to display the opener icon.
     * @default more_vert
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the icon will show a ripple when is clicked.
     * @default true
@@ -74,12 +74,12 @@ object IconMenuProps {
   @scala.inline
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     iconRipple: js.UndefOr[scala.Boolean] = js.undefined,
     inverse: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     menuRipple: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -109,7 +109,7 @@ object IconMenuProps {
     position: reactDashToolboxLib.reactDashToolboxLibStrings.auto | reactDashToolboxLib.reactDashToolboxLibStrings.static | reactDashToolboxLib.reactDashToolboxLibStrings.topLeft | reactDashToolboxLib.reactDashToolboxLibStrings.topRight | reactDashToolboxLib.reactDashToolboxLibStrings.bottomLeft | reactDashToolboxLib.reactDashToolboxLibStrings.bottomRight = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.Any = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: IconMenuTheme = null
   ): IconMenuProps = {
     val __obj = js.Dynamic.literal()

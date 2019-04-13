@@ -11,7 +11,7 @@ object ^ extends js.Object {
   /**
     * Streaming stringifier
     */
-  def apply(): csvDashStringifyLib.csvDashStringifyMod.stringifyNs.Stringifier = js.native
+  def apply(): Stringifier = js.native
   def apply(
     input: js.Array[js.Array[_]] | js.Array[js.Object],
     callback: js.Function2[/* error */ js.UndefOr[stdLib.Error], /* output */ java.lang.String, scala.Unit]
@@ -21,9 +21,9 @@ object ^ extends js.Object {
     */
   def apply(
     input: js.Array[js.Array[_]] | js.Array[js.Object],
-    opts: csvDashStringifyLib.csvDashStringifyMod.stringifyNs.StringifyOpts,
+    opts: StringifyOpts,
     callback: js.Function2[/* error */ js.UndefOr[stdLib.Error], /* output */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def apply(opts: csvDashStringifyLib.csvDashStringifyMod.stringifyNs.StringifyOpts): csvDashStringifyLib.csvDashStringifyMod.stringifyNs.Stringifier = js.native
+  def apply(opts: StringifyOpts): Stringifier = js.native
 }
 

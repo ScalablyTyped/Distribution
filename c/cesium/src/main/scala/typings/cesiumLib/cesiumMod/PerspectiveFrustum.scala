@@ -7,28 +7,19 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "PerspectiveFrustum")
 @js.native
-class PerspectiveFrustum ()
-  extends cesiumLib.cesiumMod.CesiumNs.PerspectiveFrustum {
+class PerspectiveFrustum () extends Frustum {
   def this(options: cesiumLib.Anon_AspectRatioFar) = this()
-  /* CompleteClass */
-  override var far: scala.Double = js.native
-  /* CompleteClass */
-  override var near: scala.Double = js.native
-  /* CompleteClass */
-  override val projectionMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = js.native
-  /* CompleteClass */
-  override def computeCullingVolume(
-    position: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
-    direction: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
-    up: cesiumLib.cesiumMod.CesiumNs.Cartesian3
-  ): cesiumLib.cesiumMod.CesiumNs.CullingVolume = js.native
-  /* CompleteClass */
-  override def getPixelDimensions(
-    drawingBufferWidth: scala.Double,
-    drawingBufferHeight: scala.Double,
-    distance: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.Cartesian2
-  ): cesiumLib.cesiumMod.CesiumNs.Cartesian2 = js.native
+  var aspectRatio: scala.Double = js.native
+  var fov: scala.Double = js.native
+  val fovy: scala.Double = js.native
+  val infiniteProjectionMatrix: Matrix4 = js.native
+  var xOffset: scala.Double = js.native
+  var yOffset: scala.Double = js.native
+  def clone(result: PerspectiveFrustum): PerspectiveFrustum = js.native
+  def equals(): scala.Boolean = js.native
+  def equals(other: PerspectiveFrustum): scala.Boolean = js.native
+  def pack(value: PerspectiveFrustum, array: js.Array[scala.Double], startingIndex: scala.Double): js.Array[scala.Double] = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double, result: PerspectiveFrustum): PerspectiveFrustum = js.native
 }
 
 /* static members */

@@ -17,3 +17,8 @@ class UserOrUserGroupID ()
   override def Clone(): mfilesLib.IUserOrUserGroupID = js.native
 }
 
+@JSGlobal("MFiles.UserOrUserGroupID")
+@js.native
+object UserOrUserGroupID
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserOrUserGroupID]
+

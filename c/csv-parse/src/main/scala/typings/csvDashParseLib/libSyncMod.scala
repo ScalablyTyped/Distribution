@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libSyncMod extends js.Object {
   def apply(input: java.lang.String): js.Any = js.native
-  def apply(input: java.lang.String, options: csvDashParseLib.csvDashParseMod.parseNs.Options): js.Any = js.native
+  def apply(input: java.lang.String, options: csvDashParseLib.csvDashParseMod.Options): js.Any = js.native
 }
 

@@ -9,15 +9,15 @@ trait BaseListItemProps extends js.Object {
   var `aria-posinset`: js.UndefOr[scala.Double] = js.undefined
   var `aria-setsize`: js.UndefOr[scala.Double] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var leftAvatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var primaryText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var rightAvatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var secondaryText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var leftAvatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var primaryText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var rightAvatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var secondaryText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var threeLines: js.UndefOr[scala.Boolean] = js.undefined
   var tileClassName: js.UndefOr[java.lang.String] = js.undefined
-  var tileStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tileStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object BaseListItemProps {
@@ -26,15 +26,15 @@ object BaseListItemProps {
     `aria-posinset`: scala.Int | scala.Double = null,
     `aria-setsize`: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    leftAvatar: reactLib.reactMod.ReactNs.ReactNode = null,
-    leftIcon: reactLib.reactMod.ReactNs.ReactNode = null,
-    primaryText: reactLib.reactMod.ReactNs.ReactNode = null,
-    rightAvatar: reactLib.reactMod.ReactNs.ReactNode = null,
-    rightIcon: reactLib.reactMod.ReactNs.ReactNode = null,
-    secondaryText: reactLib.reactMod.ReactNs.ReactNode = null,
+    leftAvatar: reactLib.reactMod.ReactNode = null,
+    leftIcon: reactLib.reactMod.ReactNode = null,
+    primaryText: reactLib.reactMod.ReactNode = null,
+    rightAvatar: reactLib.reactMod.ReactNode = null,
+    rightIcon: reactLib.reactMod.ReactNode = null,
+    secondaryText: reactLib.reactMod.ReactNode = null,
     threeLines: js.UndefOr[scala.Boolean] = js.undefined,
     tileClassName: java.lang.String = null,
-    tileStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    tileStyle: reactLib.reactMod.CSSProperties = null
   ): BaseListItemProps = {
     val __obj = js.Dynamic.literal()
     if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])

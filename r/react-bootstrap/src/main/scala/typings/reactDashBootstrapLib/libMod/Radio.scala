@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Radio")
 @js.native
 class Radio ()
-  extends reactDashBootstrapLib.libRadioMod.namespaced
+  extends reactDashBootstrapLib.libRadioMod.^
 

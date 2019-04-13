@@ -40,7 +40,7 @@ trait ModalProps extends js.Object {
     * Default is null
     *
     */
-  var backdropContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var backdropContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Opacity of the backdrop
     *
@@ -166,7 +166,7 @@ object ModalProps {
     backButtonClose: js.UndefOr[scala.Boolean] = js.undefined,
     backdrop: js.UndefOr[scala.Boolean] = js.undefined,
     backdropColor: java.lang.String = null,
-    backdropContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    backdropContent: reactLib.reactMod.ReactNode = null,
     backdropOpacity: scala.Int | scala.Double = null,
     backdropPressToClose: js.UndefOr[scala.Boolean] = js.undefined,
     coverScreen: js.UndefOr[scala.Boolean] = js.undefined,

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cwise-parser", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[T](func: js.Function2[/* a */ scala.Double, /* repeated */ T, _]): cwiseDashParserLib.cwiseDashParserMod.cwiseUnderscoreParserNs.CompiledRoutine = js.native
+  def apply[T](func: js.Function2[/* a */ scala.Double, /* repeated */ T, _]): CompiledRoutine = js.native
 }
 

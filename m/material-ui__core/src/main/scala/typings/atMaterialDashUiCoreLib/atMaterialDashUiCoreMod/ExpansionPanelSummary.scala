@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "ExpansionPanelSummary")
 @js.native
 class ExpansionPanelSummary protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps) = this()

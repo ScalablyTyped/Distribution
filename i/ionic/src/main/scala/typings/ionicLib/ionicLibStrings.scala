@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object ionicLibStrings {
   @js.native
+  sealed trait `0DOT0DOT0DOT0` extends js.Object
+  
+  @js.native
   sealed trait DELETE
     extends ionicLib.definitionsMod.HttpMethod
   
@@ -29,6 +32,9 @@ object ionicLibStrings {
   @js.native
   sealed trait ERR_MULTI_MISSING_ID
     extends ionicLib.libProjectMod.ProjectDetailsErrorCode
+  
+  @js.native
+  sealed trait Exception extends js.Object
   
   @js.native
   sealed trait GET
@@ -62,6 +68,15 @@ object ionicLibStrings {
     extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
+  sealed trait UNKNOWN_CONTENT_TYPE extends js.Object
+  
+  @js.native
+  sealed trait UNKNOWN_RESPONSE_FORMAT extends js.Object
+  
+  @js.native
+  sealed trait Yarn extends js.Object
+  
+  @js.native
   sealed trait android
     extends ionicLib.definitionsMod.KnownPlatform
   
@@ -71,6 +86,9 @@ object ionicLibStrings {
   
   @js.native
   sealed trait app extends js.Object
+  
+  @js.native
+  sealed trait `application/json` extends js.Object
   
   @js.native
   sealed trait bare
@@ -155,6 +173,15 @@ object ionicLibStrings {
     extends ionicLib.definitionsMod.ProjectType
   
   @js.native
+  sealed trait `ionic:build` extends js.Object
+  
+  @js.native
+  sealed trait `ionic:serve` extends js.Object
+  
+  @js.native
+  sealed trait ionicDOTconfigDOTjson extends js.Object
+  
+  @js.native
   sealed trait ios
     extends ionicLib.definitionsMod.KnownPlatform
   
@@ -174,6 +201,9 @@ object ionicLibStrings {
   @js.native
   sealed trait npm
     extends ionicLib.definitionsMod.NpmClient
+  
+  @js.native
+  sealed trait `npm CLI` extends js.Object
   
   @js.native
   sealed trait portrait extends js.Object
@@ -235,6 +265,8 @@ object ionicLibStrings {
     extends ionicLib.definitionsMod.NpmClient
   
   @scala.inline
+  def `0DOT0DOT0DOT0`: `0DOT0DOT0DOT0` = "0.0.0.0".asInstanceOf[`0DOT0DOT0DOT0`]
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
   def ERR_INVALID_PROJECT_FILE: ERR_INVALID_PROJECT_FILE = "ERR_INVALID_PROJECT_FILE".asInstanceOf[ERR_INVALID_PROJECT_FILE]
@@ -246,6 +278,8 @@ object ionicLibStrings {
   def ERR_MULTI_MISSING_CONFIG: ERR_MULTI_MISSING_CONFIG = "ERR_MULTI_MISSING_CONFIG".asInstanceOf[ERR_MULTI_MISSING_CONFIG]
   @scala.inline
   def ERR_MULTI_MISSING_ID: ERR_MULTI_MISSING_ID = "ERR_MULTI_MISSING_ID".asInstanceOf[ERR_MULTI_MISSING_ID]
+  @scala.inline
+  def Exception: Exception = "Exception".asInstanceOf[Exception]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
@@ -263,11 +297,19 @@ object ionicLibStrings {
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
+  def UNKNOWN_CONTENT_TYPE: UNKNOWN_CONTENT_TYPE = "UNKNOWN_CONTENT_TYPE".asInstanceOf[UNKNOWN_CONTENT_TYPE]
+  @scala.inline
+  def UNKNOWN_RESPONSE_FORMAT: UNKNOWN_RESPONSE_FORMAT = "UNKNOWN_RESPONSE_FORMAT".asInstanceOf[UNKNOWN_RESPONSE_FORMAT]
+  @scala.inline
+  def Yarn: Yarn = "Yarn".asInstanceOf[Yarn]
+  @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
   def angular: angular = "angular".asInstanceOf[angular]
   @scala.inline
   def app: app = "app".asInstanceOf[app]
+  @scala.inline
+  def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
   @scala.inline
   def bare: bare = "bare".asInstanceOf[bare]
   @scala.inline
@@ -311,6 +353,12 @@ object ionicLibStrings {
   @scala.inline
   def ionic1: ionic1 = "ionic1".asInstanceOf[ionic1]
   @scala.inline
+  def `ionic:build`: `ionic:build` = "ionic:build".asInstanceOf[`ionic:build`]
+  @scala.inline
+  def `ionic:serve`: `ionic:serve` = "ionic:serve".asInstanceOf[`ionic:serve`]
+  @scala.inline
+  def ionicDOTconfigDOTjson: ionicDOTconfigDOTjson = "ionic.config.json".asInstanceOf[ionicDOTconfigDOTjson]
+  @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
@@ -322,6 +370,8 @@ object ionicLibStrings {
   def multiapp: multiapp = "multiapp".asInstanceOf[multiapp]
   @scala.inline
   def npm: npm = "npm".asInstanceOf[npm]
+  @scala.inline
+  def `npm CLI`: `npm CLI` = "npm CLI".asInstanceOf[`npm CLI`]
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   @scala.inline

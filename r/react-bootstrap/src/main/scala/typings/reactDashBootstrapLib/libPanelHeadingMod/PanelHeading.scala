@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PanelHeading
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libPanelHeadingMod.PanelHeadingNs.PanelHeadingProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[PanelHeadingProps, js.Object, js.Any]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("net", "TcpServer")
 @js.native
 class TcpServer ()
-  extends fibjsLib.netMod.netNs.TcpServer
+  extends fibjsLib.Class_TcpServer
 

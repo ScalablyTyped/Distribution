@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Task", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Task */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Task = js.native
   val task: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[URI] = js.native
   val taskSeq: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[URI] = js.native
   def delay[A](millis: scala.Double, a: A): Task[A] = js.native

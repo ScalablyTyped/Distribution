@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class DAX ()
-  extends awsDashSdkLib.clientsDaxMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDaxMod.DAXNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDaxMod.^ {
+  def this(options: awsDashSdkLib.clientsDaxMod.ClientConfiguration) = this()
 }
 

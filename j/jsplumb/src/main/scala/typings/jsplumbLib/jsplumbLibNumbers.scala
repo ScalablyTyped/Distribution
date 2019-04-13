@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object jsplumbLibNumbers {
   @js.native
   sealed trait `-1`
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorOrientationHint
+    extends jsplumbLib.jsplumbMod.AnchorOrientationHint
   
   @js.native
   sealed trait `0`
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorOrientationHint
+    extends jsplumbLib.jsplumbMod.AnchorOrientationHint
   
   @js.native
   sealed trait `1`
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorOrientationHint
+    extends jsplumbLib.jsplumbMod.AnchorOrientationHint
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

@@ -23,3 +23,8 @@ class State ()
   override def GetAsTypedValue(): mfilesLib.ITypedValue = js.native
 }
 
+@JSGlobal("MFiles.State")
+@js.native
+object State
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IState]
+

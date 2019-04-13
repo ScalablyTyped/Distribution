@@ -117,9 +117,6 @@ object pkiNs extends js.Object {
     var publicKey: PublicKey
   }
   
-  trait oids
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  
   var oids: nodeDashForgeLib.nodeDashForgeMod.pkiNs.oids = js.native
   def certificateFromAsn1(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): Certificate = js.native
   def certificateFromAsn1(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1, computeHash: scala.Boolean): Certificate = js.native
@@ -191,11 +188,11 @@ object pkiNs extends js.Object {
     @JSName("constants")
     @js.native
     object constantsNs extends js.Object {
-      val HASH_BYTE_LENGTH: /* 64 */ scala.Double = js.native
-      val PRIVATE_KEY_BYTE_LENGTH: /* 64 */ scala.Double = js.native
-      val PUBLIC_KEY_BYTE_LENGTH: /* 32 */ scala.Double = js.native
-      val SEED_BYTE_LENGTH: /* 32 */ scala.Double = js.native
-      val SIGN_BYTE_LENGTH: /* 64 */ scala.Double = js.native
+      val HASH_BYTE_LENGTH: nodeDashForgeLib.nodeDashForgeLibNumbers.`64` = js.native
+      val PRIVATE_KEY_BYTE_LENGTH: nodeDashForgeLib.nodeDashForgeLibNumbers.`64` = js.native
+      val PUBLIC_KEY_BYTE_LENGTH: nodeDashForgeLib.nodeDashForgeLibNumbers.`32` = js.native
+      val SEED_BYTE_LENGTH: nodeDashForgeLib.nodeDashForgeLibNumbers.`32` = js.native
+      val SIGN_BYTE_LENGTH: nodeDashForgeLib.nodeDashForgeLibNumbers.`64` = js.native
     }
     
     type Key = stdLib.ArrayBuffer
@@ -293,5 +290,6 @@ object pkiNs extends js.Object {
   type PEM = java.lang.String
   type PrivateKey = nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs.PrivateKey | nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.Key
   type PublicKey = nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs.PublicKey | nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.Key
+  type oids = org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

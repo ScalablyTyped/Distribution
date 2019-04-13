@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("create-react-class", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[P, S](spec: reactLib.reactMod.ReactNs.ComponentSpec[P, S]): reactLib.reactMod.ReactNs.ClassicComponentClass[P] = js.native
+  def apply[P, S](spec: reactLib.reactMod.ComponentSpec[P, S]): reactLib.reactMod.ClassicComponentClass[P] = js.native
 }
 

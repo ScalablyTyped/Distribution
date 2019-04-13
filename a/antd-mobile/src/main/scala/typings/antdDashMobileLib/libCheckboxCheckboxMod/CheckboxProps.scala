@@ -10,7 +10,7 @@ trait CheckboxProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var wrapLabel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object CheckboxProps {
     name: java.lang.String = null,
     onChange: /* params */ antdDashMobileLib.libCheckboxPropsTypeMod.OnChangeParams => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     wrapLabel: js.UndefOr[scala.Boolean] = js.undefined
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()

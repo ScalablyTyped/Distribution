@@ -22,7 +22,7 @@ object OptionsWithEndpoints {
       onionooLib.onionooLibStrings.summary | onionooLib.onionooLibStrings.details | onionooLib.onionooLibStrings.bandwidth | onionooLib.onionooLibStrings.weights | onionooLib.onionooLibStrings.clients | onionooLib.onionooLibStrings.uptime
     ],
     baseUrl: java.lang.String = null,
-    cache: gotLib.gotMod.gotNs.Cache | onionooLib.onionooLibNumbers.`false` = null
+    cache: gotLib.gotMod.Cache | onionooLib.onionooLibNumbers.`false` = null
   ): OptionsWithEndpoints = {
     val __obj = js.Dynamic.literal(endpoints = endpoints)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)

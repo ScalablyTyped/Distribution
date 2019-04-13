@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinearGradientProps extends js.Object {
-  var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode] = js.undefined
   var gradientUnits: js.UndefOr[
     reactDashSketchappLib.reactDashSketchappLibStrings.objectBoundingBox | reactDashSketchappLib.reactDashSketchappLibStrings.userSpaceOnUse
   ] = js.undefined
@@ -26,7 +24,7 @@ object LinearGradientProps {
     x2: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp,
     y1: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp,
     y2: reactDashSketchappLib.libComponentsSvgPropsMod.NumberProp,
-    children: js.Array[reactLib.reactMod.ReactNs.ReactChild] | reactLib.reactMod.ReactNs.ReactChild = null,
+    children: js.Array[reactLib.reactMod.ReactNode] | reactLib.reactMod.ReactNode = null,
     gradientUnits: reactDashSketchappLib.reactDashSketchappLibStrings.objectBoundingBox | reactDashSketchappLib.reactDashSketchappLibStrings.userSpaceOnUse = null,
     id: java.lang.String = null
   ): LinearGradientProps = {

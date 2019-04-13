@@ -16,7 +16,7 @@ object ^ extends js.Object {
   var requestWhitelist: js.Array[java.lang.String] = js.native
   var responseWhitelist: js.Array[java.lang.String] = js.native
   def defaultSkip(): scala.Boolean = js.native
-  def errorLogger(options: ErrorLoggerOptions): expressLib.expressMod.eNs.ErrorRequestHandler = js.native
-  def logger(options: LoggerOptions): expressLib.expressMod.eNs.Handler = js.native
+  def errorLogger(options: ErrorLoggerOptions): expressLib.expressMod.ErrorRequestHandler = js.native
+  def logger(options: LoggerOptions): expressLib.expressMod.Handler = js.native
 }
 

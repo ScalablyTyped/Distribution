@@ -21,7 +21,7 @@ object ^ extends js.Object {
     * @return {string} Returns a string formatted according format using the given date or the current local time.
     */
   def apply(format: java.lang.String, date: stdLib.Date): java.lang.String = js.native
-  def localize(locale: strftimeLib.strftimeMod.strftimeNs.Locale): strftimeFunction = js.native
+  def localize(locale: Locale): strftimeFunction = js.native
   def timezone(offset: java.lang.String): strftimeFunction = js.native
   def timezone(offset: scala.Double): strftimeFunction = js.native
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Shield ()
-  extends awsDashSdkLib.clientsShieldMod.namespaced {
-  def this(options: awsDashSdkLib.clientsShieldMod.ShieldNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsShieldMod.^ {
+  def this(options: awsDashSdkLib.clientsShieldMod.ClientConfiguration) = this()
 }
 

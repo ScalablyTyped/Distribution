@@ -12,7 +12,7 @@ trait GatsbyLinkProps[TState]
   var innerRef: js.UndefOr[js.Function] = js.undefined
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -29,7 +29,7 @@ object GatsbyLinkProps {
     activeStyle: js.Object = null,
     getProps: /* props */ atReachRouterLib.atReachRouterMod.LinkGetProps => js.Object = null,
     innerRef: js.Function = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLAnchorElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     partiallyActive: js.UndefOr[scala.Boolean] = js.undefined,
     replace: js.UndefOr[scala.Boolean] = js.undefined,
     state: TState = null

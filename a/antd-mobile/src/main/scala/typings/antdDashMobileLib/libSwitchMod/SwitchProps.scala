@@ -10,7 +10,7 @@ trait SwitchProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   var platform: js.UndefOr[java.lang.String] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SwitchProps {
@@ -25,7 +25,7 @@ object SwitchProps {
     onClick: /* checked */ js.UndefOr[scala.Boolean] => scala.Unit = null,
     platform: java.lang.String = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): SwitchProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)

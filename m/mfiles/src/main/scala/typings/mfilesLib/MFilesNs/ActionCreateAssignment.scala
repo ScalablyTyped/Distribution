@@ -25,3 +25,8 @@ class ActionCreateAssignment ()
   override def Clone(): mfilesLib.IActionCreateAssignment = js.native
 }
 
+@JSGlobal("MFiles.ActionCreateAssignment")
+@js.native
+object ActionCreateAssignment
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IActionCreateAssignment]
+

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "WallGeometry")
 @js.native
-class WallGeometry protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.WallGeometry {
+class WallGeometry protected () extends Packable {
   def this(options: cesiumLib.Anon_EllipsoidGranularity) = this()
 }
 
@@ -16,26 +15,26 @@ class WallGeometry protected ()
 @JSImport("cesium", "WallGeometry")
 @js.native
 object WallGeometry extends js.Object {
-  def createGeometry(wallGeometry: cesiumLib.cesiumMod.CesiumNs.WallGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
-  def fromConstantHeights(positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3]): cesiumLib.cesiumMod.CesiumNs.WallGeometry = js.native
-  def fromConstantHeights(positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3], maximumHeight: scala.Double): cesiumLib.cesiumMod.CesiumNs.WallGeometry = js.native
+  def createGeometry(wallGeometry: cesiumLib.cesiumMod.WallGeometry): cesiumLib.cesiumMod.Geometry = js.native
+  def fromConstantHeights(positions: js.Array[cesiumLib.cesiumMod.Cartesian3]): cesiumLib.cesiumMod.WallGeometry = js.native
+  def fromConstantHeights(positions: js.Array[cesiumLib.cesiumMod.Cartesian3], maximumHeight: scala.Double): cesiumLib.cesiumMod.WallGeometry = js.native
   def fromConstantHeights(
-    positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
+    positions: js.Array[cesiumLib.cesiumMod.Cartesian3],
     maximumHeight: scala.Double,
     minimumHeight: scala.Double
-  ): cesiumLib.cesiumMod.CesiumNs.WallGeometry = js.native
+  ): cesiumLib.cesiumMod.WallGeometry = js.native
   def fromConstantHeights(
-    positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
+    positions: js.Array[cesiumLib.cesiumMod.Cartesian3],
     maximumHeight: scala.Double,
     minimumHeight: scala.Double,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid
-  ): cesiumLib.cesiumMod.CesiumNs.WallGeometry = js.native
-  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.WallGeometry = js.native
-  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.WallGeometry = js.native
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid
+  ): cesiumLib.cesiumMod.WallGeometry = js.native
+  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.WallGeometry = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.WallGeometry = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.WallGeometry
-  ): cesiumLib.cesiumMod.CesiumNs.WallGeometry = js.native
+    result: cesiumLib.cesiumMod.WallGeometry
+  ): cesiumLib.cesiumMod.WallGeometry = js.native
 }
 

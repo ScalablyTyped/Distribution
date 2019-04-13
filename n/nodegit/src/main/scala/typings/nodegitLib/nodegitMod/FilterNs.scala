@@ -26,7 +26,5 @@ object FilterNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.filterMod.FilterNs.MODE with scala.Double] = js.native
   }
   
-  type FLAG = nodegitLib.filterMod.FilterNs.FLAG
-  type MODE = nodegitLib.filterMod.FilterNs.MODE
 }
 

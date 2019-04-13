@@ -23,7 +23,7 @@ trait FastifyRequest[HttpRequest] extends js.Object {
   var type_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
   @JSName("types")
   var types_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
-  def accepts(): acceptsLib.acceptsMod.acceptsNs.Accepts = js.native
+  def accepts(): acceptsLib.acceptsMod.Accepts = js.native
   def charset(): js.Array[java.lang.String] = js.native
   def charset(charsets: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
   def charset(charsets: js.Array[java.lang.String]): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native

@@ -11,6 +11,6 @@ object Global extends js.Object {
   var assert: chaiLib.ChaiNs.AssertStatic = js.native
   var expect: chaiLib.ChaiNs.ExpectStatic = js.native
   var should: chaiLib.ChaiNs.Should = js.native
-  var sinon: sinonLib.sinonMod.SinonNs.SinonStatic = js.native
+  var sinon: sinonLib.sinonMod.SinonStatic = js.native
 }
 

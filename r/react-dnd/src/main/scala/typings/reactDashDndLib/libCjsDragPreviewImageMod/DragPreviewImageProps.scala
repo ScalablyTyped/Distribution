@@ -10,10 +10,10 @@ trait DragPreviewImageProps extends js.Object {
   @JSName("connect")
   var connect_Original: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview = js.native
   var src: java.lang.String = js.native
-  def connect(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def connect(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   def connect(
     elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement,
     options: reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

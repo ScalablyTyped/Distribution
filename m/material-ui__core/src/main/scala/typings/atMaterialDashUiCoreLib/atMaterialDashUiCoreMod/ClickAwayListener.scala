@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core", "ClickAwayListener")
 @js.native
 class ClickAwayListener protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps) = this()

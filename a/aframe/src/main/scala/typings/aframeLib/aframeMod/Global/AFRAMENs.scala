@@ -22,7 +22,6 @@ object AFRAMENs extends js.Object {
     aframeLib.aframeMod.ComponentDescriptor[aframeLib.aframeMod.Component[js.Any, aframeLib.aframeMod.System[js.Any]]]
   ] = js.native
   val geometries: aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.GeometryDescriptor[aframeLib.aframeMod.Geometry[js.Any]]] = js.native
-  val primitives: aframeLib.Anon_GetMeshMixin = js.native
   val registerComponent: js.Function2[
     /* name */ java.lang.String, 
     /* component */ aframeLib.aframeMod.ComponentDefinition[js.Object], 
@@ -1351,6 +1350,16 @@ object AFRAMENs extends js.Object {
     class Tween ()
       extends tweenDotJsLib.atTweenjsTweenDotJsMod.Tween
     
+  }
+  
+  @js.native
+  object primitives extends js.Object {
+    var primitives: aframeLib.aframeMod.ObjectMap[
+        aframeLib.aframeMod.Entity[
+          aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
+        ]
+      ] = js.native
+    def getMeshMixin(): aframeLib.Anon_DefaultComponents = js.native
   }
   
 }

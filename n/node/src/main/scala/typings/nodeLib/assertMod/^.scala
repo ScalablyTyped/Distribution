@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("assert", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /* Extracted nested Instantiables into classes in strictNs */
-  val strict: (js.Function2[
+  val strict: js.Function2[
     /* value */ js.Any, 
     /* message */ js.UndefOr[java.lang.String | nodeLib.Error], 
     scala.Unit
-  ]) with nodeLib.Anon_ActualAssertionError = js.native
+  ] = js.native
   def apply(value: js.Any): scala.Unit = js.native
   def apply(value: js.Any, message: java.lang.String | nodeLib.Error): scala.Unit = js.native
   /** @deprecated since v9.9.0 - use deepStrictEqual() instead. */

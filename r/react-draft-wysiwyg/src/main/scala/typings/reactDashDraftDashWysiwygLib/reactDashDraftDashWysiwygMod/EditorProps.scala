@@ -21,7 +21,7 @@ trait EditorProps extends js.Object {
   var editorClassName: js.UndefOr[java.lang.String] = js.undefined
   var editorRef: js.UndefOr[js.Function1[/* ref */ js.Object, scala.Unit]] = js.undefined
   var editorState: js.UndefOr[EditorState] = js.undefined
-  var editorStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var editorStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var handlePastedText: js.UndefOr[
     js.Function4[
       /* text */ java.lang.String, 
@@ -55,14 +55,14 @@ trait EditorProps extends js.Object {
   var textAlignment: js.UndefOr[java.lang.String] = js.undefined
   var toolbar: js.UndefOr[js.Object] = js.undefined
   var toolbarClassName: js.UndefOr[java.lang.String] = js.undefined
-  var toolbarCustomButtons: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]]] = js.undefined
+  var toolbarCustomButtons: js.UndefOr[js.Array[reactLib.reactMod.ReactElement[stdLib.HTMLElement]]] = js.undefined
   var toolbarHidden: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarStyle: js.UndefOr[js.Object] = js.undefined
   var uploadCallback: js.UndefOr[js.Function1[/* file */ js.Object, js.Promise[js.Object]]] = js.undefined
   var wrapperClassName: js.UndefOr[java.lang.String] = js.undefined
   var wrapperId: js.UndefOr[scala.Double] = js.undefined
-  var wrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var wrapperStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object EditorProps {
@@ -83,7 +83,7 @@ object EditorProps {
     editorClassName: java.lang.String = null,
     editorRef: /* ref */ js.Object => scala.Unit = null,
     editorState: EditorState = null,
-    editorStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    editorStyle: reactLib.reactMod.CSSProperties = null,
     handlePastedText: (/* text */ java.lang.String, /* html */ java.lang.String, /* editorState */ EditorState, /* onChange */ js.Function1[/* editorState */ EditorState, scala.Unit]) => scala.Boolean = null,
     hashtag: js.Object = null,
     initialContentState: RawDraftContentState = null,
@@ -109,14 +109,14 @@ object EditorProps {
     textAlignment: java.lang.String = null,
     toolbar: js.Object = null,
     toolbarClassName: java.lang.String = null,
-    toolbarCustomButtons: js.Array[reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]] = null,
+    toolbarCustomButtons: js.Array[reactLib.reactMod.ReactElement[stdLib.HTMLElement]] = null,
     toolbarHidden: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     toolbarStyle: js.Object = null,
     uploadCallback: /* file */ js.Object => js.Promise[js.Object] = null,
     wrapperClassName: java.lang.String = null,
     wrapperId: scala.Int | scala.Double = null,
-    wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    wrapperStyle: reactLib.reactMod.CSSProperties = null
   ): EditorProps = {
     val __obj = js.Dynamic.literal()
     if (ariaActiveDescendantID != null) __obj.updateDynamic("ariaActiveDescendantID")(ariaActiveDescendantID)

@@ -14,7 +14,7 @@ object ^ extends js.Object {
     * Constant used to define the minimal number value in Babylon.js
     * @ignorenaming
     */
-  val Epsilon: /* 0.001 */ scala.Double = js.native
+  val Epsilon: babylonjsLib.babylonjsLibNumbers.`0DOT001` = js.native
   /**
     * Constant used to convert a value to gamma space
     * @ignorenaming
@@ -24,7 +24,7 @@ object ^ extends js.Object {
     * Constant used to convert a value to linear space
     * @ignorenaming
     */
-  val ToLinearSpace: /* 2.2 */ scala.Double = js.native
+  val ToLinearSpace: babylonjsLib.babylonjsLibNumbers.`2DOT2` = js.native
   /** @hidden */
   var WorkerIncluded: scala.Boolean = js.native
   /**

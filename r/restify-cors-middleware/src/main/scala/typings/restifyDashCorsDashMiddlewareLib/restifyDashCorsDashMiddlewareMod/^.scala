@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("restify-cors-middleware", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    options: restifyDashCorsDashMiddlewareLib.restifyDashCorsDashMiddlewareMod.corsMiddlewareNs.Options
-  ): restifyDashCorsDashMiddlewareLib.restifyDashCorsDashMiddlewareMod.corsMiddlewareNs.CorsMiddleware = js.native
+  def apply(options: Options): CorsMiddleware = js.native
 }
 

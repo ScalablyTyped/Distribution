@@ -7,16 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "Geocoder")
 @js.native
-class Geocoder protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.Geocoder {
+class Geocoder protected () extends js.Object {
   def this(options: cesiumLib.Anon_Container) = this()
-  /* CompleteClass */
-  override var container: stdLib.Element = js.native
-  /* CompleteClass */
-  override var viewModel: cesiumLib.cesiumMod.CesiumNs.GeocoderViewModel = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
+  var container: stdLib.Element = js.native
+  var viewModel: GeocoderViewModel = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
 }
 

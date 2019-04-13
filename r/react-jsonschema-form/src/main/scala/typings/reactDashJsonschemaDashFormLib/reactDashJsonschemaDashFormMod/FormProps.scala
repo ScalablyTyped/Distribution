@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormProps[T] extends js.Object {
-  var ArrayFieldTemplate: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[ArrayFieldTemplateProps]] = js.undefined
-  var ErrorList: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[ErrorListProps]] = js.undefined
-  var FieldTemplate: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[FieldTemplateProps]] = js.undefined
-  var ObjectFieldTemplate: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[ObjectFieldTemplateProps]] = js.undefined
+  var ArrayFieldTemplate: js.UndefOr[reactLib.reactMod.StatelessComponent[ArrayFieldTemplateProps]] = js.undefined
+  var ErrorList: js.UndefOr[reactLib.reactMod.StatelessComponent[ErrorListProps]] = js.undefined
+  var FieldTemplate: js.UndefOr[reactLib.reactMod.StatelessComponent[FieldTemplateProps]] = js.undefined
+  var ObjectFieldTemplate: js.UndefOr[reactLib.reactMod.StatelessComponent[ObjectFieldTemplateProps]] = js.undefined
   var acceptcharset: js.UndefOr[java.lang.String] = js.undefined
   var action: js.UndefOr[java.lang.String] = js.undefined
   var autocomplete: js.UndefOr[java.lang.String] = js.undefined
@@ -44,10 +44,10 @@ object FormProps {
   @scala.inline
   def apply[T](
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
-    ArrayFieldTemplate: reactLib.reactMod.ReactNs.StatelessComponent[ArrayFieldTemplateProps] = null,
-    ErrorList: reactLib.reactMod.ReactNs.StatelessComponent[ErrorListProps] = null,
-    FieldTemplate: reactLib.reactMod.ReactNs.StatelessComponent[FieldTemplateProps] = null,
-    ObjectFieldTemplate: reactLib.reactMod.ReactNs.StatelessComponent[ObjectFieldTemplateProps] = null,
+    ArrayFieldTemplate: reactLib.reactMod.StatelessComponent[ArrayFieldTemplateProps] = null,
+    ErrorList: reactLib.reactMod.StatelessComponent[ErrorListProps] = null,
+    FieldTemplate: reactLib.reactMod.StatelessComponent[FieldTemplateProps] = null,
+    ObjectFieldTemplate: reactLib.reactMod.StatelessComponent[ObjectFieldTemplateProps] = null,
     acceptcharset: java.lang.String = null,
     action: java.lang.String = null,
     autocomplete: java.lang.String = null,

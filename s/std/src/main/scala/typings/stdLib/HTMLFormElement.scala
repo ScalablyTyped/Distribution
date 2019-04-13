@@ -35,7 +35,7 @@ trait HTMLFormElement
     * Sets or retrieves the encoding type for the form.
     */
   var enctype: java.lang.String = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Element]] = js.native
   /**
     * Sets or retrieves the number of objects in a collection.

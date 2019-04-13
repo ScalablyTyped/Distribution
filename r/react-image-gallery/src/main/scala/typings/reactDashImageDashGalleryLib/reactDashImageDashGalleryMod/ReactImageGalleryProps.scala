@@ -17,34 +17,25 @@ trait ReactImageGalleryProps extends js.Object {
   var items: js.Array[ReactImageGalleryItem]
   var lazyLoad: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onImageError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactEventHandler[stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onImageLoad: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactEventHandler[stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onMouseOver: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onPause: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
   var onPlay: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
@@ -52,71 +43,58 @@ trait ReactImageGalleryProps extends js.Object {
   var onSlide: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
   var onThumbnailClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement], 
+      /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement], 
       /* index */ scala.Double, 
       scala.Unit
     ]
   ] = js.undefined
   var onThumbnailError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactEventHandler[stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchEnd: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.TouchEventHandler[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onTouchMove: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.TouchEventHandler[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var onTouchStart: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement], 
-      scala.Unit
-    ]
+    js.Function1[/* event */ reactLib.reactMod.TouchEventHandler[stdLib.HTMLDivElement], scala.Unit]
   ] = js.undefined
   var preventDefaultTouchmoveEvent: js.UndefOr[scala.Boolean] = js.undefined
-  var renderCustomControls: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderCustomControls: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   var renderFullscreenButton: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], 
       /* isFullscreen */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
-  var renderItem: js.UndefOr[
-    js.Function1[/* item */ ReactImageGalleryItem, reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var renderItem: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, reactLib.reactMod.ReactNode]] = js.undefined
   var renderLeftNav: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], 
       /* isDisabled */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var renderPlayPauseButton: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], 
       /* isPlaying */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var renderRightNav: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], 
       /* isDisabled */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
-  var renderThumbInner: js.UndefOr[
-    js.Function1[/* item */ ReactImageGalleryItem, reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var renderThumbInner: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, reactLib.reactMod.ReactNode]] = js.undefined
   var showBullets: js.UndefOr[scala.Boolean] = js.undefined
   var showFullscreenButton: js.UndefOr[scala.Boolean] = js.undefined
   var showIndex: js.UndefOr[scala.Boolean] = js.undefined
@@ -149,28 +127,28 @@ object ReactImageGalleryProps {
     indexSeparator: java.lang.String = null,
     infinite: js.UndefOr[scala.Boolean] = js.undefined,
     lazyLoad: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
-    onImageError: /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
-    onImageLoad: /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onImageError: /* event */ reactLib.reactMod.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
+    onImageLoad: /* event */ reactLib.reactMod.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
     onPause: /* currentIndex */ scala.Double => scala.Unit = null,
     onPlay: /* currentIndex */ scala.Double => scala.Unit = null,
     onScreenChange: /* fullScreenElement */ stdLib.Element => scala.Unit = null,
     onSlide: /* currentIndex */ scala.Double => scala.Unit = null,
-    onThumbnailClick: (/* event */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLAnchorElement], /* index */ scala.Double) => scala.Unit = null,
-    onThumbnailError: /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onThumbnailClick: (/* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement], /* index */ scala.Double) => scala.Unit = null,
+    onThumbnailError: /* event */ reactLib.reactMod.ReactEventHandler[stdLib.HTMLImageElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEventHandler[stdLib.HTMLDivElement] => scala.Unit = null,
     preventDefaultTouchmoveEvent: js.UndefOr[scala.Boolean] = js.undefined,
-    renderCustomControls: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderFullscreenButton: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isFullscreen */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderItem: /* item */ ReactImageGalleryItem => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderLeftNav: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isDisabled */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderPlayPauseButton: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isPlaying */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderRightNav: (/* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLElement], /* isDisabled */ scala.Boolean) => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderThumbInner: /* item */ ReactImageGalleryItem => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderCustomControls: () => reactLib.reactMod.ReactNode = null,
+    renderFullscreenButton: (/* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], /* isFullscreen */ scala.Boolean) => reactLib.reactMod.ReactNode = null,
+    renderItem: /* item */ ReactImageGalleryItem => reactLib.reactMod.ReactNode = null,
+    renderLeftNav: (/* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], /* isDisabled */ scala.Boolean) => reactLib.reactMod.ReactNode = null,
+    renderPlayPauseButton: (/* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], /* isPlaying */ scala.Boolean) => reactLib.reactMod.ReactNode = null,
+    renderRightNav: (/* onClick */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement], /* isDisabled */ scala.Boolean) => reactLib.reactMod.ReactNode = null,
+    renderThumbInner: /* item */ ReactImageGalleryItem => reactLib.reactMod.ReactNode = null,
     showBullets: js.UndefOr[scala.Boolean] = js.undefined,
     showFullscreenButton: js.UndefOr[scala.Boolean] = js.undefined,
     showIndex: js.UndefOr[scala.Boolean] = js.undefined,

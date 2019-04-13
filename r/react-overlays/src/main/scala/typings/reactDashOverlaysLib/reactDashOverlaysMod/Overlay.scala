@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-overlays", "Overlay")
 @js.native
 class Overlay ()
-  extends reactDashOverlaysLib.libOverlayMod.namespaced
+  extends reactDashOverlaysLib.libOverlayMod.^
 

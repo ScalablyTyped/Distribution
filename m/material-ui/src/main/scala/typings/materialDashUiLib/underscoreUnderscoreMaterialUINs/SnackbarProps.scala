@@ -6,31 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SnackbarProps extends js.Object {
-  var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var action: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var autoHideDuration: js.UndefOr[scala.Double] = js.undefined
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var message: reactLib.reactMod.ReactNs.ReactNode
-  var onActionClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var message: reactLib.reactMod.ReactNode
+  var onActionClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
   var onRequestClose: js.UndefOr[js.Function1[/* reason */ java.lang.String, scala.Unit]] = js.undefined
   var open: scala.Boolean
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object SnackbarProps {
   @scala.inline
   def apply(
-    message: reactLib.reactMod.ReactNs.ReactNode,
+    message: reactLib.reactMod.ReactNode,
     open: scala.Boolean,
-    action: reactLib.reactMod.ReactNs.ReactNode = null,
+    action: reactLib.reactMod.ReactNode = null,
     autoHideDuration: scala.Int | scala.Double = null,
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    onActionClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
+    onActionClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
     onRequestClose: /* reason */ java.lang.String => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): SnackbarProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], open = open)
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])

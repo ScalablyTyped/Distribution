@@ -10,7 +10,7 @@ trait StyleProps extends js.Object {
     * An object of styles, or an object of CSS rules to render. Each key of the rules object is a CSS
     * selector and the value is an object of styles. If rules is empty, the component will render nothing.
     */
-  var rules: reactLib.reactMod.ReactNs.CSSProperties | StyleRules
+  var rules: reactLib.reactMod.CSSProperties | StyleRules
   /**
     * A string that any included selectors in rules will be appended to.
     * Use to scope styles in the component to a particular element. A good use case might be to generate a unique
@@ -21,10 +21,7 @@ trait StyleProps extends js.Object {
 
 object StyleProps {
   @scala.inline
-  def apply(
-    rules: reactLib.reactMod.ReactNs.CSSProperties | StyleRules,
-    scopeSelector: java.lang.String = null
-  ): StyleProps = {
+  def apply(rules: reactLib.reactMod.CSSProperties | StyleRules, scopeSelector: java.lang.String = null): StyleProps = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     if (scopeSelector != null) __obj.updateDynamic("scopeSelector")(scopeSelector)
     __obj.asInstanceOf[StyleProps]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait JSONEditorOptions extends js.Object {
   var ace: js.UndefOr[aceLib.AceAjaxNs.Ace] = js.undefined
-  var ajv: js.UndefOr[ajvLib.ajvMod.ajvNs.Ajv] = js.undefined
+  var ajv: js.UndefOr[ajvLib.ajvMod.Ajv] = js.undefined
   var autocomplete: js.UndefOr[AutoCompleteOptions] = js.undefined
   /**
     * @default true
@@ -120,7 +120,7 @@ object JSONEditorOptions {
   @scala.inline
   def apply(
     ace: aceLib.AceAjaxNs.Ace = null,
-    ajv: ajvLib.ajvMod.ajvNs.Ajv = null,
+    ajv: ajvLib.ajvMod.Ajv = null,
     autocomplete: AutoCompleteOptions = null,
     colorPicker: js.UndefOr[scala.Boolean] = js.undefined,
     enableSort: js.UndefOr[scala.Boolean] = js.undefined,

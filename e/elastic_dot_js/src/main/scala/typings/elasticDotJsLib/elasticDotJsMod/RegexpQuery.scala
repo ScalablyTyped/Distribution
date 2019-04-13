@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "RegexpQuery")
 @js.native
-class RegexpQuery protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpQuery {
+class RegexpQuery protected () extends Query {
   /*
     Matches documents that have fields matching a regular expression.
     */
@@ -16,18 +15,15 @@ class RegexpQuery protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost value of the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpQuery = js.native
+  def boost(boost: scala.Double): RegexpQuery = js.native
   /*
     The field to run the query against.
     */
-  /* CompleteClass */
-  override def field(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpQuery = js.native
+  def field(f: java.lang.String): RegexpQuery = js.native
   /*
     The regex flags to use.  Valid flags are:
     INTERSECTION - Support for intersection notation
@@ -40,14 +36,12 @@ class RegexpQuery protected ()
     Use multiple flags by separating with a "|" character.  Example:
     INTERSECTION|COMPLEMENT|EMPTY
     */
-  /* CompleteClass */
-  override def flags(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpQuery = js.native
+  def flags(f: java.lang.String): RegexpQuery = js.native
   /*
     The regex flags to use as a numeric value.  Advanced use only,
     it is probably better to stick with the flags option.
     */
-  /* CompleteClass */
-  override def flagsValue(v: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpQuery = js.native
+  def flagsValue(v: java.lang.String): RegexpQuery = js.native
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -67,18 +61,15 @@ class RegexpQuery protected ()
     Default is constant_score_auto.
     This is an advanced option, use with care.
     */
-  /* CompleteClass */
-  override def rewrite(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpQuery = js.native
+  def rewrite(m: java.lang.String): RegexpQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
   /*
     The regexp value.
     */
-  /* CompleteClass */
-  override def value(p: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.RegexpQuery = js.native
+  def value(p: java.lang.String): RegexpQuery = js.native
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("rest-io", JSImport.Default)
 @js.native
 class default protected () extends RestIO {
-  def this(app: expressLib.expressMod.eNs.Application) = this()
-  def this(app: expressLib.expressMod.eNs.Application, config: IRestIOConfig) = this()
+  def this(app: expressLib.expressMod.Application) = this()
+  def this(app: expressLib.expressMod.Application, config: IRestIOConfig) = this()
 }
 
 /* static members */

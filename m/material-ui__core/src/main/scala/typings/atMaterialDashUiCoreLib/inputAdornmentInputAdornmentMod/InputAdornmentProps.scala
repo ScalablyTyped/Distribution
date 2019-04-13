@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait InputAdornmentProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait InputAdornmentProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[InputAdornmentClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[InputAdornmentProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[InputAdornmentProps]] = js.undefined
   var disablePointerEvents: js.UndefOr[scala.Boolean] = js.undefined
   var disableTypography: js.UndefOr[scala.Boolean] = js.undefined
   var position: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.start | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.end
@@ -24,11 +24,11 @@ object InputAdornmentProps {
     position: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.start | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.end,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[InputAdornmentClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[InputAdornmentProps] = null,
+    component: reactLib.reactMod.ReactType[InputAdornmentProps] = null,
     disablePointerEvents: js.UndefOr[scala.Boolean] = js.undefined,
     disableTypography: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): InputAdornmentProps = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])

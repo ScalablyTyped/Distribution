@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait i18nextExpressMiddleware extends js.Object {
-  def LanguageDetector(): expressLib.expressMod.eNs.Handler
-  def missingKeyHandler(): expressLib.expressMod.eNs.Handler
+  def LanguageDetector(): expressLib.expressMod.Handler
+  def missingKeyHandler(): expressLib.expressMod.Handler
 }
 
 object i18nextExpressMiddleware {
   @scala.inline
   def apply(
-    LanguageDetector: () => expressLib.expressMod.eNs.Handler,
-    missingKeyHandler: () => expressLib.expressMod.eNs.Handler
+    LanguageDetector: () => expressLib.expressMod.Handler,
+    missingKeyHandler: () => expressLib.expressMod.Handler
   ): i18nextExpressMiddleware = {
     val __obj = js.Dynamic.literal(LanguageDetector = js.Any.fromFunction0(LanguageDetector), missingKeyHandler = js.Any.fromFunction0(missingKeyHandler))
   

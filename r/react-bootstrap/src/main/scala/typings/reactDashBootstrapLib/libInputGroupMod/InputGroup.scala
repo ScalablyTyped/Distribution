@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InputGroup
-  extends reactLib.reactMod.Component[
-      reactDashBootstrapLib.libInputGroupMod.InputGroupNs.InputGroupProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[InputGroupProps, js.Object, js.Any]
 

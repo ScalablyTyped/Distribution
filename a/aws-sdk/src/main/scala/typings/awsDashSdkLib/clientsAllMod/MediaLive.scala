@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MediaLive ()
-  extends awsDashSdkLib.clientsMedialiveMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMedialiveMod.^ {
+  def this(options: awsDashSdkLib.clientsMedialiveMod.ClientConfiguration) = this()
 }
 

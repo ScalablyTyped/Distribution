@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MaskedInputProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[js.Any] {
+  extends reactLib.reactMod.InputHTMLAttributes[js.Any] {
   var formatCharacters: js.UndefOr[CharsFormatters] = js.undefined
   var mask: java.lang.String
   var placeholderChar: js.UndefOr[java.lang.String] = js.undefined
@@ -16,7 +16,7 @@ object MaskedInputProps {
   @scala.inline
   def apply(
     mask: java.lang.String,
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[js.Any] = null,
+    InputHTMLAttributes: reactLib.reactMod.InputHTMLAttributes[js.Any] = null,
     formatCharacters: CharsFormatters = null,
     placeholderChar: java.lang.String = null
   ): MaskedInputProps = {

@@ -25,10 +25,11 @@ object cssClasses {
     MODAL: atMaterialDrawerLib.atMaterialDrawerLibStrings.`mdc-drawer--modal`,
     OPEN: atMaterialDrawerLib.atMaterialDrawerLibStrings.`mdc-drawer--open`,
     OPENING: atMaterialDrawerLib.atMaterialDrawerLibStrings.`mdc-drawer--opening`,
-    ROOT: atMaterialDrawerLib.atMaterialDrawerLibStrings.`mdc-drawer`
+    ROOT: atMaterialDrawerLib.atMaterialDrawerLibStrings.`mdc-drawer`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(ANIMATE = ANIMATE, CLOSING = CLOSING, DISMISSIBLE = DISMISSIBLE, MODAL = MODAL, OPEN = OPEN, OPENING = OPENING, ROOT = ROOT)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

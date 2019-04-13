@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Drawer")
 @js.native
-class Drawer ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Drawer
+class Drawer () extends __MDLComponent[DrawerProps]
 

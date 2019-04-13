@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait RenderProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
-  var render: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var render: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object RenderProps {
@@ -16,7 +16,7 @@ object RenderProps {
   def apply(
     className: java.lang.String = null,
     description: java.lang.String = null,
-    render: reactLib.reactMod.ReactNs.ReactNode = null
+    render: reactLib.reactMod.ReactNode = null
   ): RenderProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

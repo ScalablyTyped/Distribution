@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ngEventProvider protected ()
   extends ngDashGridLib.ngGridNs.IEventProvider {
-  def this(grid: ngDashGridLib.ngGridNs.IGridInstance, $scope: ngDashGridLib.ngGridNs.IGridScope, domUtilityService: ngDashGridLib.ngGridNs.serviceNs.IDomUtilityService, $timeout: angularLib.angularMod.angularNs.ITimeoutService) = this()
+  def this(grid: ngDashGridLib.ngGridNs.IGridInstance, $scope: ngDashGridLib.ngGridNs.IGridScope, domUtilityService: ngDashGridLib.ngGridNs.serviceNs.IDomUtilityService, $timeout: angularLib.angularMod.ITimeoutService) = this()
   /* CompleteClass */
   override var colToMove: ngDashGridLib.ngGridNs.IColumn = js.native
   /* CompleteClass */

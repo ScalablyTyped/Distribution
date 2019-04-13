@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetIdInput
-  - awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetCredentialsForIdentityInput
-  - awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetOpenIdTokenInput
-  - awsDashSdkLib.clientsStsMod.STSNs.AssumeRoleWithWebIdentityRequest
+  - awsDashSdkLib.clientsCognitoidentityMod.GetIdInput
+  - awsDashSdkLib.clientsCognitoidentityMod.GetCredentialsForIdentityInput
+  - awsDashSdkLib.clientsCognitoidentityMod.GetOpenIdTokenInput
+  - awsDashSdkLib.clientsStsMod.AssumeRoleWithWebIdentityRequest
 */
 trait CognitoIdentityCredentialsInputs extends js.Object
 

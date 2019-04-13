@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class QuickSight ()
   extends awsDashSdkLib.awsDashSdkMod.QuickSight {
-  def this(options: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsQuicksightMod.ClientConfiguration) = this()
 }
 

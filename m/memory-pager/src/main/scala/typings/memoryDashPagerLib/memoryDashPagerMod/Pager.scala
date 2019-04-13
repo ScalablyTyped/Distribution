@@ -11,16 +11,13 @@ trait Pager
   * Create a new pager.
   * @param pageSize defaults to 1024.
   */
-org.scalablytyped.runtime.Instantiable0[memoryDashPagerLib.memoryDashPagerMod.PagerNs.PagerInstance]
-     with org.scalablytyped.runtime.Instantiable1[
-      /* pageSize */ scala.Double, 
-      memoryDashPagerLib.memoryDashPagerMod.PagerNs.PagerInstance
-    ] {
+org.scalablytyped.runtime.Instantiable0[PagerInstance]
+     with org.scalablytyped.runtime.Instantiable1[/* pageSize */ scala.Double, PagerInstance] {
   /**
     * Create a new pager.
     * @param pageSize defaults to 1024.
     */
-  def apply(): memoryDashPagerLib.memoryDashPagerMod.PagerNs.PagerInstance = js.native
-  def apply(pageSize: scala.Double): memoryDashPagerLib.memoryDashPagerMod.PagerNs.PagerInstance = js.native
+  def apply(): PagerInstance = js.native
+  def apply(pageSize: scala.Double): PagerInstance = js.native
 }
 

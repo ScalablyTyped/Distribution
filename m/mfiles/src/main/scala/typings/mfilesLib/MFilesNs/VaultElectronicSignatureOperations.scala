@@ -27,3 +27,8 @@ class VaultElectronicSignatureOperations ()
   override def DisconnectSignaturesEx(ObjVer: mfilesLib.IObjVer, InvalidateDisconnectedSignatures: scala.Boolean): mfilesLib.IObjectVersionAndProperties = js.native
 }
 
+@JSGlobal("MFiles.VaultElectronicSignatureOperations")
+@js.native
+object VaultElectronicSignatureOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultElectronicSignatureOperations]
+

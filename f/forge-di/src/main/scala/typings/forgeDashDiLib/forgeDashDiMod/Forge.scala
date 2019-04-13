@@ -10,12 +10,12 @@ trait Forge extends js.Object {
   /**
     * The bindings mapped to this forge instance.
     */
-  var bindings: forgeDashDiLib.forgeDashDiMod.ForgeNs.IBindingMap = js.native
+  var bindings: IBindingMap = js.native
   /**
     * Creates a new binding.
     * @param {string} name The binding name.
     */
-  def bind(name: java.lang.String): forgeDashDiLib.forgeDashDiMod.ForgeNs.IBinding = js.native
+  def bind(name: java.lang.String): IBinding = js.native
   /**
     * Creates an instance of the target type attempting to resolve any dependencies.
     * @param {T} target The target type.
@@ -41,8 +41,8 @@ trait Forge extends js.Object {
     * @param {string} name The binding name.
     * @param {string} hint The binding hint.
     */
-  def getMatchingBindings(name: java.lang.String): js.Array[forgeDashDiLib.forgeDashDiMod.ForgeNs.IBinding] = js.native
-  def getMatchingBindings(name: java.lang.String, hint: java.lang.String): js.Array[forgeDashDiLib.forgeDashDiMod.ForgeNs.IBinding] = js.native
+  def getMatchingBindings(name: java.lang.String): js.Array[IBinding] = js.native
+  def getMatchingBindings(name: java.lang.String, hint: java.lang.String): js.Array[IBinding] = js.native
   /**
     * Get a single instance of type registered under the provided name and optional hint.
     * @param {string} name The binding name.
@@ -59,28 +59,24 @@ trait Forge extends js.Object {
     * Unbinds then recreates a binding for this name.
     * @param {string} name The binding name.
     */
-  def rebind(name: java.lang.String): forgeDashDiLib.forgeDashDiMod.ForgeNs.IBinding = js.native
+  def rebind(name: java.lang.String): IBinding = js.native
   def resolve[T](name: java.lang.String): T | js.Array[T] = js.native
-  def resolve[T](name: java.lang.String, context: forgeDashDiLib.forgeDashDiMod.ForgeNs.IContext): T | js.Array[T] = js.native
+  def resolve[T](name: java.lang.String, context: IContext): T | js.Array[T] = js.native
+  def resolve[T](name: java.lang.String, context: IContext, hint: java.lang.String): T | js.Array[T] = js.native
   def resolve[T](
     name: java.lang.String,
-    context: forgeDashDiLib.forgeDashDiMod.ForgeNs.IContext,
-    hint: java.lang.String
-  ): T | js.Array[T] = js.native
-  def resolve[T](
-    name: java.lang.String,
-    context: forgeDashDiLib.forgeDashDiMod.ForgeNs.IContext,
+    context: IContext,
     hint: java.lang.String,
     all: scala.Boolean,
     args: js.Any*
   ): T | js.Array[T] = js.native
   def resolveBindings(
-    context: forgeDashDiLib.forgeDashDiMod.ForgeNs.IContext,
-    bindings: js.Array[forgeDashDiLib.forgeDashDiMod.ForgeNs.IBinding],
+    context: IContext,
+    bindings: js.Array[IBinding],
     hint: java.lang.String,
     args: js.Array[_],
     unwrap: scala.Boolean
-  ): js.Array[forgeDashDiLib.forgeDashDiMod.ForgeNs.IBinding] = js.native
+  ): js.Array[IBinding] = js.native
   /**
     * Unbinds all bindings for this name. Returns the number of bindings removed.
     * @param {string} name The binding name.

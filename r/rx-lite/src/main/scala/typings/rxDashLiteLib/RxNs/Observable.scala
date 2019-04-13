@@ -739,7 +739,7 @@ trait Observable[T] extends IObservable[T] {
     * @returns An ES6 compatible promise with the last value from the observable sequence.
     */
   def toPromise(): rxDashCoreLib.RxNs.IPromise[T] = js.native
-  def toPromise(promiseCtor: rxDashLiteLib.Anon_ReasonRejectPromiseResolvePromise[T]): rxDashCoreLib.RxNs.IPromise[T] = js.native
+  def toPromise(promiseCtor: rxDashLiteLib.Anon_ReasonRejectPromise[T]): rxDashCoreLib.RxNs.IPromise[T] = js.native
    // alias for where
   /**
     * Converts an existing observable sequence to an ES6 Compatible Promise
@@ -748,7 +748,7 @@ trait Observable[T] extends IObservable[T] {
     * @param promiseCtor The constructor of the promise.
     * @returns An ES6 compatible promise with the last value from the observable sequence.
     */
-  def toPromise[TPromise /* <: rxDashCoreLib.RxNs.IPromise[T] */](promiseCtor: rxDashLiteLib.Anon_ReasonRejectPromise[T, TPromise]): TPromise = js.native
+  def toPromise[TPromise /* <: rxDashCoreLib.RxNs.IPromise[T] */](promiseCtor: rxDashLiteLib.Anon_Reason[T, TPromise]): TPromise = js.native
   def where(
     predicate: js.Function3[/* value */ T, /* index */ scala.Double, /* source */ Observable[T], scala.Boolean]
   ): Observable[T] = js.native

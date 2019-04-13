@@ -62,6 +62,39 @@ object inversifyLibStrings {
   sealed trait Variable
     extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.TargetType
   
+  @js.native
+  sealed trait `design:paramtypes` extends js.Object
+  
+  @js.native
+  sealed trait inject extends js.Object
+  
+  @js.native
+  sealed trait `inversify:paramtypes` extends js.Object
+  
+  @js.native
+  sealed trait `inversify:tagged` extends js.Object
+  
+  @js.native
+  sealed trait `inversify:tagged_props` extends js.Object
+  
+  @js.native
+  sealed trait multi_inject extends js.Object
+  
+  @js.native
+  sealed trait name extends js.Object
+  
+  @js.native
+  sealed trait named extends js.Object
+  
+  @js.native
+  sealed trait optional extends js.Object
+  
+  @js.native
+  sealed trait post_construct extends js.Object
+  
+  @js.native
+  sealed trait unmanaged extends js.Object
+  
   @scala.inline
   def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
   @scala.inline
@@ -90,5 +123,27 @@ object inversifyLibStrings {
   def Transient: Transient = "Transient".asInstanceOf[Transient]
   @scala.inline
   def Variable: Variable = "Variable".asInstanceOf[Variable]
+  @scala.inline
+  def `design:paramtypes`: `design:paramtypes` = "design:paramtypes".asInstanceOf[`design:paramtypes`]
+  @scala.inline
+  def inject: inject = "inject".asInstanceOf[inject]
+  @scala.inline
+  def `inversify:paramtypes`: `inversify:paramtypes` = "inversify:paramtypes".asInstanceOf[`inversify:paramtypes`]
+  @scala.inline
+  def `inversify:tagged`: `inversify:tagged` = "inversify:tagged".asInstanceOf[`inversify:tagged`]
+  @scala.inline
+  def `inversify:tagged_props`: `inversify:tagged_props` = "inversify:tagged_props".asInstanceOf[`inversify:tagged_props`]
+  @scala.inline
+  def multi_inject: multi_inject = "multi_inject".asInstanceOf[multi_inject]
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  @scala.inline
+  def named: named = "named".asInstanceOf[named]
+  @scala.inline
+  def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
+  def post_construct: post_construct = "post_construct".asInstanceOf[post_construct]
+  @scala.inline
+  def unmanaged: unmanaged = "unmanaged".asInstanceOf[unmanaged]
 }
 

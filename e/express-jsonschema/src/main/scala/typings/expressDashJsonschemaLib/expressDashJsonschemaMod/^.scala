@@ -22,18 +22,18 @@ object ^ extends js.Object {
   def validate(
     schemas: org.scalablytyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4]
   ): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* res */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* res */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ] = js.native
   def validate(
     schemas: org.scalablytyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4],
     schemaDependencies: js.Array[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4]
   ): js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* res */ expressLib.expressMod.eNs.Response, 
-    /* next */ expressLib.expressMod.eNs.NextFunction, 
+    /* req */ expressLib.expressMod.Request, 
+    /* res */ expressLib.expressMod.Response, 
+    /* next */ expressLib.expressMod.NextFunction, 
     scala.Unit
   ] = js.native
 }

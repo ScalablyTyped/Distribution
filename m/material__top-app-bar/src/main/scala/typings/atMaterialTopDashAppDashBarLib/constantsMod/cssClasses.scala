@@ -21,10 +21,11 @@ object cssClasses {
     FIXED_SCROLLED_CLASS: atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarLibStrings.`mdc-top-app-bar--fixed-scrolled`,
     SHORT_CLASS: atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarLibStrings.`mdc-top-app-bar--short`,
     SHORT_COLLAPSED_CLASS: atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarLibStrings.`mdc-top-app-bar--short-collapsed`,
-    SHORT_HAS_ACTION_ITEM_CLASS: atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarLibStrings.`mdc-top-app-bar--short-has-action-item`
+    SHORT_HAS_ACTION_ITEM_CLASS: atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarLibStrings.`mdc-top-app-bar--short-has-action-item`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(FIXED_CLASS = FIXED_CLASS, FIXED_SCROLLED_CLASS = FIXED_SCROLLED_CLASS, SHORT_CLASS = SHORT_CLASS, SHORT_COLLAPSED_CLASS = SHORT_COLLAPSED_CLASS, SHORT_HAS_ACTION_ITEM_CLASS = SHORT_HAS_ACTION_ITEM_CLASS)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

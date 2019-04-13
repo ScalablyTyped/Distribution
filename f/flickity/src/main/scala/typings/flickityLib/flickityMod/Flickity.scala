@@ -74,7 +74,7 @@ trait Flickity extends js.Object {
     * @param callback callback funtion to execute when event fires
     */
   def off(
-    eventname: flickityLib.flickityMod.FlickityNs.FlickityEvents,
+    eventname: FlickityEvents,
     callback: js.Function2[
       /* event */ js.UndefOr[stdLib.Event], 
       /* cellElement */ /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
@@ -87,7 +87,7 @@ trait Flickity extends js.Object {
     * @param callback callback funtion to execute when event fires
     */
   def off(
-    eventname: flickityLib.flickityMod.FlickityNs.FlickityEvents,
+    eventname: FlickityEvents,
     callback: js.Function3[
       /* event */ js.UndefOr[stdLib.Event], 
       /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
@@ -101,7 +101,7 @@ trait Flickity extends js.Object {
     * @param callback callback funtion to execute when event fires
     */
   def off(
-    eventname: flickityLib.flickityMod.FlickityNs.FlickityEvents,
+    eventname: FlickityEvents,
     callback: js.Function4[
       /* event */ js.UndefOr[stdLib.Event], 
       /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
@@ -116,7 +116,7 @@ trait Flickity extends js.Object {
     * @param callback callback funtion to execute when event fires
     */
   def on(
-    eventname: flickityLib.flickityMod.FlickityNs.FlickityEvents,
+    eventname: FlickityEvents,
     callback: js.Function2[
       /* event */ js.UndefOr[stdLib.Event], 
       /* cellElement */ /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
@@ -129,7 +129,7 @@ trait Flickity extends js.Object {
     * @param callback callback funtion to execute when event fires
     */
   def on(
-    eventname: flickityLib.flickityMod.FlickityNs.FlickityEvents,
+    eventname: FlickityEvents,
     callback: js.Function3[
       /* event */ js.UndefOr[stdLib.Event], 
       /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
@@ -143,7 +143,7 @@ trait Flickity extends js.Object {
     * @param callback callback funtion to execute when event fires
     */
   def on(
-    eventname: flickityLib.flickityMod.FlickityNs.FlickityEvents,
+    eventname: FlickityEvents,
     callback: js.Function4[
       /* event */ js.UndefOr[stdLib.Event], 
       /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 

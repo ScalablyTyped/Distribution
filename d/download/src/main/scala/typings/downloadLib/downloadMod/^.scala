@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(url: java.lang.String): js.Promise[nodeLib.Buffer] with nodeLib.NodeJSNs.WritableStream with nodeLib.NodeJSNs.ReadableStream = js.native
   def apply(url: java.lang.String, destination: java.lang.String): js.Promise[nodeLib.Buffer] with nodeLib.NodeJSNs.WritableStream with nodeLib.NodeJSNs.ReadableStream = js.native
-  def apply(
-    url: java.lang.String,
-    destination: java.lang.String,
-    options: downloadLib.downloadMod.downloadNs.DownloadOptions
-  ): js.Promise[nodeLib.Buffer] with nodeLib.NodeJSNs.WritableStream with nodeLib.NodeJSNs.ReadableStream = js.native
+  def apply(url: java.lang.String, destination: java.lang.String, options: DownloadOptions): js.Promise[nodeLib.Buffer] with nodeLib.NodeJSNs.WritableStream with nodeLib.NodeJSNs.ReadableStream = js.native
 }
 

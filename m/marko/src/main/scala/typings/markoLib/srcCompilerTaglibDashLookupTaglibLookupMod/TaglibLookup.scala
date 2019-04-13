@@ -14,7 +14,7 @@ trait TaglibLookup extends js.Object {
     tagName: java.lang.String,
     callback: js.Function2[
       /* attrDef */ markoLib.srcCompilerTaglibDashLoaderAttributeMod.default, 
-      /* tag */ markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced, 
+      /* tag */ markoLib.srcCompilerTaglibDashLoaderTagMod.^, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -28,10 +28,7 @@ trait TaglibLookup extends js.Object {
     thisObj: js.Any
   ): scala.Unit = js.native
   def forEachTag(
-    callback: js.Function1[
-      /* tag */ markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced, 
-      scala.Unit | scala.Boolean
-    ]
+    callback: js.Function1[/* tag */ markoLib.srcCompilerTaglibDashLoaderTagMod.^, scala.Unit | scala.Boolean]
   ): scala.Unit = js.native
   def forEachTagTransformer(
     element: java.lang.String,
@@ -66,9 +63,9 @@ trait TaglibLookup extends js.Object {
   def getAttribute(element: Element, attr: java.lang.String): js.UndefOr[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
   def getAttribute(element: Element, attr: markoLib.Anon_Name): js.UndefOr[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
   def getInputFiles(): js.Array[java.lang.String] = js.native
-  def getTag(element: java.lang.String): js.UndefOr[markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced] = js.native
-  def getTag(element: Element): js.UndefOr[markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced] = js.native
-  def getTagsSorted(): js.Array[markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced] = js.native
+  def getTag(element: java.lang.String): js.UndefOr[markoLib.srcCompilerTaglibDashLoaderTagMod.^] = js.native
+  def getTag(element: Element): js.UndefOr[markoLib.srcCompilerTaglibDashLoaderTagMod.^] = js.native
+  def getTagsSorted(): js.Array[markoLib.srcCompilerTaglibDashLoaderTagMod.^] = js.native
   def hasTaglib(taglib: markoLib.srcCompilerTaglibDashLoaderTaglibMod.default): scala.Boolean = js.native
 }
 

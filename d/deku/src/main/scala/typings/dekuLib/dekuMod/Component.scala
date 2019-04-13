@@ -9,13 +9,13 @@ trait Component extends js.Object {
   var onCreate: js.UndefOr[js.Function1[/* model */ Model, _]] = js.undefined
   var onRemove: js.UndefOr[js.Function1[/* model */ Model, _]] = js.undefined
   var onUpdate: js.UndefOr[js.Function1[/* model */ Model, _]] = js.undefined
-  def render(model: Model): dekuLib.dekuMod.dekuNs.VirtualElement
+  def render(model: Model): VirtualElement
 }
 
 object Component {
   @scala.inline
   def apply(
-    render: Model => dekuLib.dekuMod.dekuNs.VirtualElement,
+    render: Model => VirtualElement,
     onCreate: /* model */ Model => _ = null,
     onRemove: /* model */ Model => _ = null,
     onUpdate: /* model */ Model => _ = null

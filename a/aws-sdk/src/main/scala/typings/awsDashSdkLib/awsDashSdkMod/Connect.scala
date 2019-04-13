@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Connect ()
   extends awsDashSdkLib.clientsAllMod.Connect {
-  def this(options: awsDashSdkLib.clientsConnectMod.ConnectNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsConnectMod.ClientConfiguration) = this()
 }
 

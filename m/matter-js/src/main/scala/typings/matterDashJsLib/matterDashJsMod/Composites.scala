@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Composites")
 @js.native
-class Composites ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Composites {
+class Composites () extends js.Object {
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @method newtonsCradle
@@ -19,14 +18,13 @@ class Composites ()
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
-  /* CompleteClass */
-  override def newtonsCradle(
+  def newtonsCradle(
     xx: scala.Double,
     yy: scala.Double,
     _number: scala.Double,
     size: scala.Double,
     length: scala.Double
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): Composite = js.native
 }
 
 /* static members */
@@ -49,7 +47,7 @@ object Composites extends js.Object {
     width: scala.Double,
     height: scala.Double,
     wheelSize: scala.Double
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Chains all bodies in the given composite together using constraints.
     * @method chain
@@ -62,13 +60,13 @@ object Composites extends js.Object {
     * @return {composite} A new composite containing objects chained together with constraints
     */
   def chain(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     xOffsetA: scala.Double,
     yOffsetA: scala.Double,
     xOffsetB: scala.Double,
     yOffsetB: scala.Double,
     options: js.Any
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
     * @method mesh
@@ -80,12 +78,12 @@ object Composites extends js.Object {
     * @return {composite} The composite containing objects meshed together with constraints
     */
   def mesh(
-    composite: matterDashJsLib.matterDashJsMod.MatterNs.Composite,
+    composite: matterDashJsLib.matterDashJsMod.Composite,
     columns: scala.Double,
     rows: scala.Double,
     crossBrace: scala.Boolean,
     options: js.Any
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -107,7 +105,7 @@ object Composites extends js.Object {
     columnGap: scala.Double,
     rowGap: scala.Double,
     callback: js.Function
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Creates a simple soft body like object.
     * @method softBody
@@ -134,7 +132,7 @@ object Composites extends js.Object {
     particleRadius: scala.Double,
     particleOptions: js.Any,
     constraintOptions: js.Any
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -156,6 +154,6 @@ object Composites extends js.Object {
     columnGap: scala.Double,
     rowGap: scala.Double,
     callback: js.Function
-  ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
+  ): matterDashJsLib.matterDashJsMod.Composite = js.native
 }
 

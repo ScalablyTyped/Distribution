@@ -12,10 +12,11 @@ package object buildSrcServiceDashObjectMod {
     /* repeated */ js.Any, 
     scala.Unit
   ]
+  type CreateOptions = js.Object
   type CreateResponse[T] = js.Array[js.Any]
   type DeleteCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
+    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
     scala.Unit
   ]
   type DeleteOptions = js.Object
@@ -27,25 +28,26 @@ package object buildSrcServiceDashObjectMod {
   type ExistsOptions = js.Object
   type GetMetadataOptions = js.Object
   type GetOrCreateOptions = GetConfig with CreateOptions
-  type GetResponse[T] = js.Tuple2[T, requestLib.requestMod.requestNs.Response]
+  type GetResponse[T] = js.Tuple2[T, requestLib.requestMod.Response]
   type InstanceResponseCallback[T] = js.Function3[
     /* err */ atGoogleDashCloudCommonLib.buildSrcUtilMod.ApiError | scala.Null, 
     /* instance */ js.UndefOr[T | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
+    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
     scala.Unit
   ]
   type Metadata = js.Any
   type MetadataCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* metadata */ js.UndefOr[Metadata], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
+    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
     scala.Unit
   ]
-  type MetadataResponse = js.Tuple2[Metadata, requestLib.requestMod.requestNs.Response]
-  type RequestResponse = js.Tuple2[Metadata, requestLib.requestMod.requestNs.Response]
+  type MetadataResponse = js.Tuple2[Metadata, requestLib.requestMod.Response]
+  type Methods = org.scalablytyped.runtime.StringDictionary[atGoogleDashCloudCommonLib.Anon_ReqOpts | scala.Boolean]
+  type RequestResponse = js.Tuple2[Metadata, requestLib.requestMod.Response]
   type ResponseCallback = js.Function2[
     /* err */ js.UndefOr[stdLib.Error | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
+    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
     scala.Unit
   ]
   type SetMetadataOptions = js.Object

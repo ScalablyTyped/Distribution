@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 trait Anon_Component
   extends // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var label: reactLib.reactMod.ReactNs.ReactNode
+  var label: reactLib.reactMod.ReactNode
 }
 
 object Anon_Component {
   @scala.inline
   def apply(
-    label: reactLib.reactMod.ReactNs.ReactNode,
+    label: reactLib.reactMod.ReactNode,
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    icon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    iconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    component: reactLib.reactMod.ReactType[_] = null,
+    icon: reactLib.reactMod.ReactElement[_] = null,
+    iconChildren: reactLib.reactMod.ReactNode = null,
     iconClassName: java.lang.String = null
   ): Anon_Component = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])

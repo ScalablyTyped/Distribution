@@ -11,7 +11,7 @@ trait Anon_Arialabel extends js.Object {
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -23,7 +23,7 @@ object Anon_Arialabel {
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     role: java.lang.String = null,
     size: java.lang.String = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Arialabel = {
     val __obj = js.Dynamic.literal()

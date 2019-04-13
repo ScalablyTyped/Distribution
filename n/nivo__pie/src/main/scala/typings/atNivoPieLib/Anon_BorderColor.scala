@@ -38,11 +38,11 @@ trait Anon_BorderColor extends js.Object {
   // border
   // styling
   var theme: atNivoCoreLib.atNivoCoreMod.Theme
-  var tooltip: reactLib.reactMod.ReactNs.StatelessComponent[atNivoPieLib.atNivoPieMod.PieDatumWithColor]
+  var tooltip: reactLib.reactMod.StatelessComponent[atNivoPieLib.atNivoPieMod.PieDatumWithColor]
   var tooltipFormat: java.lang.String | atNivoPieLib.atNivoPieMod.ValueFormatter
   def onClick(
     datum: atNivoPieLib.atNivoPieMod.PieDatum,
-    event: reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]
+    event: reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]
   ): scala.Unit
 }
 
@@ -60,7 +60,7 @@ object Anon_BorderColor {
     isInteractive: scala.Boolean,
     legends: js.Array[atNivoLegendsLib.atNivoLegendsMod.LegendProps],
     margin: atNivoCoreLib.atNivoCoreMod.Box,
-    onClick: (atNivoPieLib.atNivoPieMod.PieDatum, reactLib.reactMod.ReactNs.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit,
+    onClick: (atNivoPieLib.atNivoPieMod.PieDatum, reactLib.reactMod.MouseEvent[stdLib.SVGPathElement, reactLib.NativeMouseEvent]) => scala.Unit,
     padAngle: scala.Double,
     radialLabel: java.lang.String | atNivoPieLib.atNivoPieMod.AccessorFunc,
     radialLabelsLinkColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoPieLib.atNivoPieMod.PieDatumWithColor],
@@ -77,7 +77,7 @@ object Anon_BorderColor {
     sortByValue: scala.Boolean,
     startAngle: scala.Double,
     theme: atNivoCoreLib.atNivoCoreMod.Theme,
-    tooltip: reactLib.reactMod.ReactNs.StatelessComponent[atNivoPieLib.atNivoPieMod.PieDatumWithColor],
+    tooltip: reactLib.reactMod.StatelessComponent[atNivoPieLib.atNivoPieMod.PieDatumWithColor],
     tooltipFormat: java.lang.String | atNivoPieLib.atNivoPieMod.ValueFormatter
   ): Anon_BorderColor = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth, cornerRadius = cornerRadius, enableRadialLabels = enableRadialLabels, enableSlicesLabels = enableSlicesLabels, endAngle = endAngle, fit = fit, innerRadius = innerRadius, isInteractive = isInteractive, legends = legends, margin = margin, onClick = js.Any.fromFunction2(onClick), padAngle = padAngle, radialLabel = radialLabel.asInstanceOf[js.Any], radialLabelsLinkColor = radialLabelsLinkColor.asInstanceOf[js.Any], radialLabelsLinkDiagonalLength = radialLabelsLinkDiagonalLength, radialLabelsLinkHorizontalLength = radialLabelsLinkHorizontalLength, radialLabelsLinkOffset = radialLabelsLinkOffset, radialLabelsLinkStrokeWidth = radialLabelsLinkStrokeWidth, radialLabelsSkipAngle = radialLabelsSkipAngle, radialLabelsTextColor = radialLabelsTextColor.asInstanceOf[js.Any], radialLabelsTextXOffset = radialLabelsTextXOffset, sliceLabel = sliceLabel.asInstanceOf[js.Any], slicesLabelsSkipAngle = slicesLabelsSkipAngle, slicesLabelsTextColor = slicesLabelsTextColor.asInstanceOf[js.Any], sortByValue = sortByValue, startAngle = startAngle, theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any])

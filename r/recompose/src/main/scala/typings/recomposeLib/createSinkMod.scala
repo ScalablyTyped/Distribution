@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/createSink", JSImport.Namespace)
 @js.native
 object createSinkMod extends js.Object {
-  def default(callback: js.Function1[/* props */ js.Object, scala.Unit]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def default(callback: js.Function1[/* props */ js.Object, scala.Unit]): reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = js.native
 }
 

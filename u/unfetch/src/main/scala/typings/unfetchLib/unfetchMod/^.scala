@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("unfetch", JSImport.Namespace)
 @js.native
-object ^
-  extends org.scalablytyped.runtime.TopLevel[unfetchLib.Anon_Init]
+object ^ extends js.Object {
+  def apply(input: stdLib.RequestInfo): js.Promise[stdLib.Response] = js.native
+  def apply(input: stdLib.RequestInfo, init: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native
+}
 

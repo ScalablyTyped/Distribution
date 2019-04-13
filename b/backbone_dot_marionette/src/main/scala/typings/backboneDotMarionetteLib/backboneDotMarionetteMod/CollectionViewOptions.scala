@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TCollection /* <: backboneLib.backboneMod.Collection[TModel] */]
-  extends backboneLib.backboneMod.BackboneNs.ViewOptions[TModel]
+  extends backboneLib.backboneMod.ViewOptions[TModel]
      with ViewMixinOptions {
   /**
     * Specify a child view to use.
@@ -76,7 +76,7 @@ object CollectionViewOptions {
     childViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
     childViewTriggers: EventsHash = null,
     className: java.lang.String = null,
-    collection: backboneLib.backboneMod.BackboneNs.Collection[_] = null,
+    collection: backboneLib.backboneMod.Collection[_] = null,
     collectionEvents: EventsHash = null,
     el: js.Any = null,
     emptyView: js.Function0[backboneDotMarionetteLib.Anon_ClassProperties] | backboneDotMarionetteLib.Anon_ClassProperties = null,

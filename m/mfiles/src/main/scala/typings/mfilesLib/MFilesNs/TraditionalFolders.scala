@@ -15,3 +15,8 @@ class TraditionalFolders ()
   override def Item(Index: scala.Double): mfilesLib.ITraditionalFolder = js.native
 }
 
+@JSGlobal("MFiles.TraditionalFolders")
+@js.native
+object TraditionalFolders
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITraditionalFolders]
+

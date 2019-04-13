@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val SUPPORT_TOUCH: scala.Boolean = js.native
-  val UNIQUEKEY: /* _EGJS_AXES_INPUTTYPE_ */ java.lang.String = js.native
+  val UNIQUEKEY: atEgjsAxesLib.atEgjsAxesLibStrings._EGJS_AXES_INPUTTYPE_ = js.native
   def convertInputType(): js.Any = js.native
   def convertInputType(inputType: js.Array[java.lang.String]): js.Any = js.native
   def createHammer(element: stdLib.HTMLElement, recognizers: js.Any): js.Any = js.native

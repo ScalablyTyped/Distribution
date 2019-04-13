@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Args extends js.Object {
   var apiDoc: expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.ApiDefinition = js.native
   @JSName("app")
-  var app_Original: expressLib.expressMod.eNs.Application = js.native
+  var app_Original: expressLib.expressMod.Application = js.native
   var customFormats: CustomFormats = js.native
   var docPath: java.lang.String = js.native
   var exposeApiDocs: scala.Boolean = js.native

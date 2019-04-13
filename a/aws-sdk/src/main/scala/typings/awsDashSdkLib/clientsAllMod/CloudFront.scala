@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CloudFront ()
-  extends awsDashSdkLib.clientsCloudfrontMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCloudfrontMod.^ {
+  def this(options: awsDashSdkLib.clientsCloudfrontMod.ClientConfiguration) = this()
 }
 

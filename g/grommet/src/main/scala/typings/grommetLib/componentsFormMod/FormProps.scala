@@ -10,10 +10,7 @@ trait FormProps extends js.Object {
   var messages: js.UndefOr[grommetLib.Anon_Invalid] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onReset: js.UndefOr[
-    js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event], _]
   ] = js.undefined
   var onSubmit: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var value: js.UndefOr[js.Object] = js.undefined
@@ -25,7 +22,7 @@ object FormProps {
     errors: js.Object = null,
     messages: grommetLib.Anon_Invalid = null,
     onChange: /* repeated */ js.Any => _ = null,
-    onReset: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event] => _ = null,
+    onReset: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => _ = null,
     onSubmit: /* repeated */ js.Any => _ = null,
     value: js.Object = null
   ): FormProps = {

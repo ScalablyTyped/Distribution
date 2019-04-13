@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("gaussian", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(mean: scala.Double, variance: scala.Double): gaussianLib.gaussianMod.gaussianNs.Gaussian = js.native
+  def apply(mean: scala.Double, variance: scala.Double): Gaussian = js.native
 }
 

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashBreadcrumbsLibComponents {
   @scala.inline
-  def Breadcrumb: reactLib.reactMod.ReactNs.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbProps] = js.constructorOf[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.Breadcrumb].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbProps]]
+  def Breadcrumb: reactLib.reactMod.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbProps] = js.constructorOf[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.Breadcrumb].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbProps]]
   @scala.inline
-  def Breadcrumbs: reactLib.reactMod.ReactNs.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbsProps] = js.constructorOf[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.Breadcrumbs].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbsProps]]
+  def Breadcrumbs: reactLib.reactMod.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbsProps] = js.constructorOf[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.Breadcrumbs].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbsProps]]
   @scala.inline
   def BreadcrumbProps: reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbProps.type = reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbProps
   type BreadcrumbProps = reactDashBreadcrumbsLib.reactDashBreadcrumbsMod.BreadcrumbProps

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object reactDashMaterialDashUiDashFormDashValidatorLibComponents {
   @scala.inline
-  def TextValidator: reactLib.reactMod.ReactNs.ComponentType[
+  def TextValidator: reactLib.reactMod.ComponentType[
     reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with materialDashUiLib.underscoreUnderscoreMaterialUINs.TextFieldProps
-  ] = js.constructorOf[reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.TextValidator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.TextValidator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with materialDashUiLib.underscoreUnderscoreMaterialUINs.TextFieldProps]]
   @scala.inline
-  def ValidatorComponent: reactLib.reactMod.ReactNs.ComponentType[
+  def ValidatorComponent: reactLib.reactMod.ComponentType[
     reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with materialDashUiLib.underscoreUnderscoreMaterialUINs.TextFieldProps
-  ] = js.constructorOf[reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponent].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponent].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with materialDashUiLib.underscoreUnderscoreMaterialUINs.TextFieldProps]]
   @scala.inline
-  def ValidatorForm: reactLib.reactMod.ReactNs.ComponentType[
+  def ValidatorForm: reactLib.reactMod.ComponentType[
     reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
-  ] = js.constructorOf[reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorForm].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorForm].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps]]
   @scala.inline
   def ValidatorFormProps: reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps.type = reactDashMaterialDashUiDashFormDashValidatorLib.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps

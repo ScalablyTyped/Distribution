@@ -33,3 +33,8 @@ class SharedLinkPublicOperations ()
   override def GetSharedLinkInfo(VaultGUID: java.lang.String, AccessKey: java.lang.String, AdditionalData: mfilesLib.INamedValues): mfilesLib.ISharedFileInfo = js.native
 }
 
+@JSGlobal("MFiles.SharedLinkPublicOperations")
+@js.native
+object SharedLinkPublicOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISharedLinkPublicOperations]
+

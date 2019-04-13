@@ -9,7 +9,7 @@ trait Anon_Radius extends js.Object {
   var radius: js.UndefOr[scala.Double] = js.undefined
   var slicePartitions: js.UndefOr[scala.Double] = js.undefined
   var stackPartitions: js.UndefOr[scala.Double] = js.undefined
-  var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.VertexFormat] = js.undefined
+  var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.VertexFormat] = js.undefined
 }
 
 object Anon_Radius {
@@ -18,7 +18,7 @@ object Anon_Radius {
     radius: scala.Int | scala.Double = null,
     slicePartitions: scala.Int | scala.Double = null,
     stackPartitions: scala.Int | scala.Double = null,
-    vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
+    vertexFormat: cesiumLib.cesiumMod.VertexFormat = null
   ): Anon_Radius = {
     val __obj = js.Dynamic.literal()
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

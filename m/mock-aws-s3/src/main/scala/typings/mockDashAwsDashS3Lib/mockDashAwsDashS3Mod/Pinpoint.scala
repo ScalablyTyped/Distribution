@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Pinpoint ()
   extends awsDashSdkLib.awsDashSdkMod.Pinpoint {
-  def this(options: awsDashSdkLib.clientsPinpointMod.PinpointNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsPinpointMod.ClientConfiguration) = this()
 }
 

@@ -12,4 +12,5 @@ package object srcCoreFilteringFilterFuncMod {
     /* filterComparator */ ngDashTableLib.srcCoreFilteringFilterComparatorMod.FilterComparator[T], 
     js.Array[T]
   ]
+  type IFilterValues = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

@@ -10,7 +10,7 @@ trait ReactComponentProps extends js.Object {
   var _locale: js.UndefOr[java.lang.String] = js.undefined
   var _namespace: js.UndefOr[java.lang.String] = js.undefined
   var _props: js.UndefOr[
-    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.reactMod.Component[js.Object, js.Object, _]]
+    reactLib.reactMod.HTMLAttributes[reactLib.reactMod.Component[js.Object, js.Object, _]]
   ] = js.undefined
   var _tagType: js.UndefOr[java.lang.String] = js.undefined
   var _translateProps: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -22,7 +22,7 @@ object ReactComponentProps {
     _containerType: java.lang.String = null,
     _locale: java.lang.String = null,
     _namespace: java.lang.String = null,
-    _props: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.reactMod.Component[js.Object, js.Object, _]] = null,
+    _props: reactLib.reactMod.HTMLAttributes[reactLib.reactMod.Component[js.Object, js.Object, _]] = null,
     _tagType: java.lang.String = null,
     _translateProps: js.Array[java.lang.String] = null
   ): ReactComponentProps = {

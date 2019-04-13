@@ -8,30 +8,30 @@ import scala.scalajs.js.annotation._
 trait ListItemProps
   extends antdDashMobileLib.libListPropsTypeMod.ListItemPropsType {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ListItemProps {
   @scala.inline
   def apply(
-    activeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeStyle: reactLib.reactMod.CSSProperties = null,
     align: antdDashMobileLib.antdDashMobileLibStrings.top | antdDashMobileLib.antdDashMobileLibStrings.middle | antdDashMobileLib.antdDashMobileLibStrings.bottom = null,
     arrow: antdDashMobileLib.antdDashMobileLibStrings.horizontal | antdDashMobileLib.antdDashMobileLibStrings.down | antdDashMobileLib.antdDashMobileLibStrings.up | antdDashMobileLib.antdDashMobileLibStrings.empty | antdDashMobileLib.antdDashMobileLibStrings.Empty = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     multipleLine: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLDivElement] = null,
     platform: antdDashMobileLib.antdDashMobileLibStrings.android | antdDashMobileLib.antdDashMobileLibStrings.ios = null,
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    thumb: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    thumb: reactLib.reactMod.ReactNode = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): ListItemProps = {
     val __obj = js.Dynamic.literal()

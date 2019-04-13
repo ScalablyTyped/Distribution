@@ -19,3 +19,8 @@ class VersionComment ()
   override val VersionComment: mfilesLib.IPropertyValue = js.native
 }
 
+@JSGlobal("MFiles.VersionComment")
+@js.native
+object VersionComment
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVersionComment]
+

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/getContext", JSImport.Namespace)
 @js.native
 object getContextMod extends js.Object {
-  def default[TContext](contextTypes: reactLib.reactMod.ReactNs.ValidationMap[TContext]): recomposeLib.recomposeMod.InferableComponentEnhancer[TContext] = js.native
+  def default[TContext](contextTypes: reactLib.reactMod.ValidationMap[TContext]): recomposeLib.recomposeMod.InferableComponentEnhancer[TContext] = js.native
 }
 

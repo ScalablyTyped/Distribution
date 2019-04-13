@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object selectNs {
   type ISelectService = js.Function3[
-    /* element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+    /* element */ angularLib.angularMod.IAugmentedJQuery, 
     /* controller */ js.Any, 
     /* config */ ISelectOptions, 
     ISelect

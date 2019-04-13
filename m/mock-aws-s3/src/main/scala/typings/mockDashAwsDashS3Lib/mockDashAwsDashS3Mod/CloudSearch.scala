@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudSearch ()
   extends awsDashSdkLib.awsDashSdkMod.CloudSearch {
-  def this(options: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloudsearchMod.ClientConfiguration) = this()
 }
 

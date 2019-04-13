@@ -19,7 +19,7 @@ trait AxeBuilder extends js.Object {
     *
     * @param config   aXe Configuration spec to use in analysis.
     */
-  def configure(config: axeDashCoreLib.axeDashCoreMod.axeNs.Spec): this.type = js.native
+  def configure(config: axeDashCoreLib.axeDashCoreMod.Spec): this.type = js.native
   /**
     * Set the list of rules to skip when running an analysis
     *
@@ -46,7 +46,7 @@ trait AxeBuilder extends js.Object {
     * @remarks Will override any other configured options, including calls to `withRules` and `withTags`.
     * @see https://github.com/dequelabs/axe-core/issues/937
     */
-  def options(options: axeDashCoreLib.axeDashCoreMod.axeNs.RunOptions): this.type = js.native
+  def options(options: axeDashCoreLib.axeDashCoreMod.RunOptions): this.type = js.native
   /**
     * Limits analysis to only the specified rules.
     *
@@ -69,5 +69,15 @@ trait AxeBuilder extends js.Object {
 @js.native
 class AxeBuilderCls protected () extends AxeBuilder {
   def this(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver) = this()
+}
+
+@JSImport("axe-webdriverjs", "AxeBuilder")
+@js.native
+object AxeBuilder
+  extends org.scalablytyped.runtime.Instantiable1[
+      /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
+      AxeBuilder
+    ] {
+  def apply(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver): axeDashWebdriverjsLib.axeDashWebdriverjsMod.AxeBuilder = js.native
 }
 

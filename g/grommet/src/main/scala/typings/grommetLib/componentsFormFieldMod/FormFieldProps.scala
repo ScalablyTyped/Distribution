@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormFieldProps extends js.Object {
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
-  var error: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var help: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[_]] = js.undefined
+  var error: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
+  var help: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var htmlFor: js.UndefOr[java.lang.String] = js.undefined
-  var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var pad: js.UndefOr[scala.Boolean] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,11 +20,11 @@ trait FormFieldProps extends js.Object {
 object FormFieldProps {
   @scala.inline
   def apply(
-    component: reactLib.reactMod.ReactNs.ComponentType[_] = null,
-    error: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
-    help: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    component: reactLib.reactMod.ComponentType[_] = null,
+    error: java.lang.String | reactLib.reactMod.ReactNode = null,
+    help: java.lang.String | reactLib.reactMod.ReactNode = null,
     htmlFor: java.lang.String = null,
-    label: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    label: java.lang.String | reactLib.reactMod.ReactNode = null,
     name: java.lang.String = null,
     pad: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.UndefOr[scala.Boolean] = js.undefined,

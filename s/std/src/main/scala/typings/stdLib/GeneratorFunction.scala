@@ -20,7 +20,7 @@ org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Generator]
     * Returns the name of the function.
     */
   val name: java.lang.String = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
   /**
     * Creates a new Generator object.

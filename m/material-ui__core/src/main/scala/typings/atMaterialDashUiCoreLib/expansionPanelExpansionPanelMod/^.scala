@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/ExpansionPanel/ExpansionPanel", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[ExpansionPanelProps] = js.native
+  val default: reactLib.reactMod.ComponentType[ExpansionPanelProps] = js.native
 }
 

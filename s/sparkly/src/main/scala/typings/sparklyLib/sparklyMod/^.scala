@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(numbers: js.Array[scala.Double | sparklyLib.sparklyLibStrings.Empty]): java.lang.String = js.native
-  def apply(
-    numbers: js.Array[scala.Double | sparklyLib.sparklyLibStrings.Empty],
-    options: sparklyLib.sparklyMod.sparklyNs.Options
-  ): java.lang.String = js.native
+  def apply(numbers: js.Array[scala.Double | sparklyLib.sparklyLibStrings.Empty], options: Options): java.lang.String = js.native
 }
 

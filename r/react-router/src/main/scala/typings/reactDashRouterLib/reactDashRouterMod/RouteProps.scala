@@ -9,11 +9,11 @@ trait RouteProps extends js.Object {
   var children: js.UndefOr[
     (js.Function1[
       /* props */ RouteChildrenProps[_, historyLib.historyMod.LocationState], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) | reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
+    ]) | reactLib.reactMod.ReactNode
   ] = js.undefined
   var component: js.UndefOr[
-    (reactLib.reactMod.ReactNs.ComponentType[RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState]]) | reactLib.reactMod.ReactNs.ComponentType[_]
+    (reactLib.reactMod.ComponentType[RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState]]) | reactLib.reactMod.ComponentType[_]
   ] = js.undefined
   var exact: js.UndefOr[scala.Boolean] = js.undefined
   var location: js.UndefOr[historyLib.historyMod.Location[historyLib.historyMod.LocationState]] = js.undefined
@@ -21,7 +21,7 @@ trait RouteProps extends js.Object {
   var render: js.UndefOr[
     js.Function1[
       /* props */ RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var sensitive: js.UndefOr[scala.Boolean] = js.undefined
@@ -33,13 +33,13 @@ object RouteProps {
   def apply(
     children: (js.Function1[
       /* props */ RouteChildrenProps[_, historyLib.historyMod.LocationState], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) | reactLib.reactMod.ReactNs.ReactNode = null,
-    component: (reactLib.reactMod.ReactNs.ComponentType[RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState]]) | reactLib.reactMod.ReactNs.ComponentType[_] = null,
+      reactLib.reactMod.ReactNode
+    ]) | reactLib.reactMod.ReactNode = null,
+    component: (reactLib.reactMod.ComponentType[RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState]]) | reactLib.reactMod.ComponentType[_] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
     path: java.lang.String | js.Array[java.lang.String] = null,
-    render: /* props */ RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState] => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState] => reactLib.reactMod.ReactNode = null,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): RouteProps = {

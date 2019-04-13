@@ -20,7 +20,7 @@ trait CountUp extends js.Object {
   var error: js.UndefOr[java.lang.String] = js.native
   var frameVal: js.UndefOr[scala.Double] = js.native
   var initialized: js.UndefOr[scala.Boolean] = js.native
-  var options: js.UndefOr[countupDotJsLib.countupDotJsMod.CountUpNs.CountUpOptions] = js.native
+  var options: js.UndefOr[CountUpOptions] = js.native
   var paused: js.UndefOr[scala.Boolean] = js.native
   var rAF: js.UndefOr[scala.Double] = js.native
   var remaining: js.UndefOr[scala.Double] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RenderMarkProps extends js.Object {
   var attributes: RenderAttributes
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var editor: slateLib.slateMod.Editor
   var mark: slateLib.slateMod.Mark
   var marks: immutableLib.immutableMod.Set[slateLib.slateMod.Mark]
@@ -20,7 +20,7 @@ object RenderMarkProps {
   @scala.inline
   def apply(
     attributes: RenderAttributes,
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     editor: slateLib.slateMod.Editor,
     mark: slateLib.slateMod.Mark,
     marks: immutableLib.immutableMod.Set[slateLib.slateMod.Mark],

@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait SpeedDialProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait SpeedDialProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SpeedDialClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps]] = js.undefined
   var TransitionComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
+    reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
   ] = js.undefined
   var TransitionProps: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = js.undefined
   var ariaLabel: java.lang.String
@@ -19,10 +19,10 @@ import scala.scalajs.js.annotation._
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.up | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.down | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.left | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.right
   ] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: reactLib.reactMod.ReactNs.ReactNode
-  var onClose: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
+  var icon: reactLib.reactMod.ReactNode
+  var onClose: js.UndefOr[reactLib.reactMod.ReactEventHandler[js.Object]] = js.undefined
   var open: scala.Boolean
-  var openIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var openIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
 }
 
@@ -30,19 +30,19 @@ object SpeedDialProps {
   @scala.inline
   def apply(
     ariaLabel: java.lang.String,
-    icon: reactLib.reactMod.ReactNs.ReactNode,
+    icon: reactLib.reactMod.ReactNode,
     open: scala.Boolean,
     ButtonProps: stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps] = null,
-    TransitionComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null,
+    TransitionComponent: reactLib.reactMod.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null,
     TransitionProps: reactDashTransitionDashGroupLib.transitionMod.TransitionProps = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SpeedDialClassKey]] = null,
     direction: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.up | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.down | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.left | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.right = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    onClose: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
-    openIcon: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    onClose: reactLib.reactMod.ReactEventHandler[js.Object] = null,
+    openIcon: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null
   ): SpeedDialProps = {
     val __obj = js.Dynamic.literal(ariaLabel = ariaLabel, icon = icon.asInstanceOf[js.Any], open = open)

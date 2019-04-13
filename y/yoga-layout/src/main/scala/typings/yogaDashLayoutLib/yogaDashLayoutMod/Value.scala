@@ -6,27 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Value extends js.Object {
-  val unit: yogaDashLayoutLib.yogaDashLayoutMod.YogaNs.YogaUnit | scala.Double
+  val unit: YogaUnit | scala.Double
   val value: scala.Double
-  def fromJS(
-    expose: js.Function2[
-      /* unit */ yogaDashLayoutLib.yogaDashLayoutMod.YogaNs.YogaUnit | scala.Double, 
-      /* value */ scala.Double, 
-      _
-    ]
-  ): scala.Unit
+  def fromJS(expose: js.Function2[/* unit */ YogaUnit | scala.Double, /* value */ scala.Double, _]): scala.Unit
 }
 
 object Value {
   @scala.inline
   def apply(
-    fromJS: js.Function2[
-      /* unit */ yogaDashLayoutLib.yogaDashLayoutMod.YogaNs.YogaUnit | scala.Double, 
-      /* value */ scala.Double, 
-      _
-    ] => scala.Unit,
+    fromJS: js.Function2[/* unit */ YogaUnit | scala.Double, /* value */ scala.Double, _] => scala.Unit,
     toString: () => java.lang.String,
-    unit: yogaDashLayoutLib.yogaDashLayoutMod.YogaNs.YogaUnit | scala.Double,
+    unit: YogaUnit | scala.Double,
     value: scala.Double,
     valueOf: () => scala.Double
   ): Value = {

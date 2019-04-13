@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Option", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* Option */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Option = js.native
   val none: Option[scala.Nothing] = js.native
   val option: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libPlusMod.Plus1[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[URI] with fpDashTsLib.libAlternativeMod.Alternative1[URI] with fpDashTsLib.libExtendMod.Extend1[URI] with fpDashTsLib.libCompactableMod.Compactable1[URI] with fpDashTsLib.libFilterableMod.Filterable1[URI] with fpDashTsLib.libWitherableMod.Witherable1[URI] = js.native
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): Option[A] = js.native

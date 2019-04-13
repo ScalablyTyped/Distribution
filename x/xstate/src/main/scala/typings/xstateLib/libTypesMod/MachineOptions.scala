@@ -5,27 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MachineOptions[TContext, TEvent /* <: EventObject */] extends js.Object {
-  var actions: js.UndefOr[ActionFunctionMap[TContext, TEvent]] = js.undefined
-  var activities: js.UndefOr[stdLib.Record[java.lang.String, ActivityConfig[TContext, TEvent]]] = js.undefined
-  var guards: js.UndefOr[stdLib.Record[java.lang.String, ConditionPredicate[TContext, TEvent]]] = js.undefined
-  var services: js.UndefOr[stdLib.Record[java.lang.String, ServiceConfig[TContext]]] = js.undefined
-}
-
-object MachineOptions {
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
-    actions: ActionFunctionMap[TContext, TEvent] = null,
-    activities: stdLib.Record[java.lang.String, ActivityConfig[TContext, TEvent]] = null,
-    guards: stdLib.Record[java.lang.String, ConditionPredicate[TContext, TEvent]] = null,
-    services: stdLib.Record[java.lang.String, ServiceConfig[TContext]] = null
-  ): MachineOptions[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (activities != null) __obj.updateDynamic("activities")(activities)
-    if (guards != null) __obj.updateDynamic("guards")(guards)
-    if (services != null) __obj.updateDynamic("services")(services)
-    __obj.asInstanceOf[MachineOptions[TContext, TEvent]]
-  }
+  var actions: ActionFunctionMap[TContext, TEvent] = js.native
+  var activities: stdLib.Record[java.lang.String, ActivityConfig[TContext, TEvent]] = js.native
+  var delays: stdLib.Record[java.lang.String, DelayConfig[TContext, TEvent]] = js.native
+  var guards: stdLib.Record[java.lang.String, ConditionPredicate[TContext, TEvent]] = js.native
+  var services: stdLib.Record[java.lang.String, ServiceConfig[TContext]] = js.native
+  @JSName("updater")
+  var updater_Original: Updater[TContext, TEvent, AnyAssignAction[TContext, TEvent]] = js.native
+  def updater(
+    context: TContext,
+    event: OmniEventObject[TEvent],
+    assignActions: js.Array[AnyAssignAction[TContext, TEvent]]
+  ): TContext = js.native
 }
 

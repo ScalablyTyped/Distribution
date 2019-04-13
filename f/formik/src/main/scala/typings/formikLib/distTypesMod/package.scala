@@ -17,5 +17,6 @@ package object distTypesMod {
   type FormikTouched[Values] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Values ]:? boolean}
     */ formikLib.formikLibStrings.FormikTouched with js.Any
-  type GenericFieldHTMLAttributes = reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] | reactLib.reactMod.ReactNs.SelectHTMLAttributes[stdLib.HTMLSelectElement] | reactLib.reactMod.ReactNs.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
+  type FormikValues = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type GenericFieldHTMLAttributes = reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] | reactLib.reactMod.SelectHTMLAttributes[stdLib.HTMLSelectElement] | reactLib.reactMod.TextareaHTMLAttributes[stdLib.HTMLTextAreaElement]
 }

@@ -9,11 +9,11 @@ package object libCjsInterfacesClassApiMod {
   type ConnectDragPreview = DragElementWrapper[reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions]
   type ConnectDragSource = DragElementWrapper[reactDashDndLib.libCjsInterfacesOptionsMod.DragSourceOptions]
   type ConnectDropTarget = DragElementWrapper[js.Any]
-  type ConnectableElement = reactLib.reactMod.ReactNs.RefObject[js.Any] | reactLib.reactMod.ReactNs.ReactElement[js.Any] | stdLib.Element | scala.Null
-  type DndComponentClass[C /* <: reactLib.reactMod.ReactNs.ComponentType[_] */, P] = (reactLib.reactMod.ReactNs.ComponentClass[
+  type ConnectableElement = reactLib.reactMod.RefObject[js.Any] | reactLib.reactMod.ReactElement[js.Any] | stdLib.Element | scala.Null
+  type DndComponentClass[C /* <: reactLib.reactMod.ComponentType[_] */, P] = (reactLib.reactMod.ComponentClass[
     reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[C, P], 
-    reactLib.reactMod.ReactNs.ComponentState
-  ]) with (hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsMod.hoistNonReactStaticsNs.NonReactStatics[C, js.Object]) with reactDashDndLib.Anon_DecoratedComponent[C]
+    reactLib.reactMod.ComponentState
+  ]) with (hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsMod.NonReactStatics[C, js.Object]) with reactDashDndLib.Anon_DecoratedComponent[C]
   type DndComponentEnhancer[CollectedProps] = js.Function1[
     /* component */ js.Any, 
     DndComponentClass[js.Any, Omit[GetProps[js.Any], java.lang.String]]
@@ -21,7 +21,7 @@ package object libCjsInterfacesClassApiMod {
   type DragElementWrapper[Options] = js.Function2[
     /* elementOrNode */ ConnectableElement, 
     /* options */ js.UndefOr[Options], 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactElement[js.Any] | scala.Null
   ]
   type DragLayerCollector[TargetProps, CollectedProps] = js.Function2[
     /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragLayerMonitor, 

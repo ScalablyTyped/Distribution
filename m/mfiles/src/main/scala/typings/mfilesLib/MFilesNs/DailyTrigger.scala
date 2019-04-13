@@ -13,3 +13,8 @@ class DailyTrigger ()
   override var DaysInterval: scala.Double = js.native
 }
 
+@JSGlobal("MFiles.DailyTrigger")
+@js.native
+object DailyTrigger
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IDailyTrigger]
+

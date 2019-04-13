@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/RoutedAnchor", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val RoutedAnchor: reactLib.reactMod.ReactNs.ComponentClass[
+  val RoutedAnchor: reactLib.reactMod.ComponentClass[
     RoutedAnchorProps with (grommetLib.utilsMod.Omit[grommetLib.componentsAnchorMod.AnchorProps, grommetLib.grommetLibStrings.href]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

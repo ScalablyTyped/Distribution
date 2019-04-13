@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object reactDashFaLibComponents {
   @scala.inline
-  def Icon: reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = reactDashFaLib.reactDashFaMod.^.Icon.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
+  def Icon: reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = reactDashFaLib.reactDashFaMod.^.Icon.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
   @scala.inline
-  def IconStack: reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconStackProps] = reactDashFaLib.reactDashFaMod.^.IconStack.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconStackProps]]
+  def IconStack: reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconStackProps] = reactDashFaLib.reactDashFaMod.^.IconStack.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconStackProps]]
   @scala.inline
-  def ReactDashFa: reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = reactDashFaLib.reactDashFaMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
+  def ReactDashFa: reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = reactDashFaLib.reactDashFaMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
   @scala.inline
-  def defaultCls: reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = js.constructorOf[reactDashFaLib.reactDashFaMod.defaultCls].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
+  def defaultCls: reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = js.constructorOf[reactDashFaLib.reactDashFaMod.defaultCls].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
   @scala.inline
   def IconProps: reactDashFaLib.reactDashFaMod.IconProps.type = reactDashFaLib.reactDashFaMod.IconProps
   type IconProps = reactDashFaLib.reactDashFaMod.IconProps

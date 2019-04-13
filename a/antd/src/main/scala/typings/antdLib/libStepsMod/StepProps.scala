@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation._
 
 trait StepProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var description: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
+  var description: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var status: js.UndefOr[
     antdLib.antdLibStrings.wait | antdLib.antdLibStrings.process | antdLib.antdLibStrings.finish | antdLib.antdLibStrings.error
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object StepProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    description: reactLib.reactMod.ReactNs.ReactNode = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    description: reactLib.reactMod.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
+    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
     status: antdLib.antdLibStrings.wait | antdLib.antdLibStrings.process | antdLib.antdLibStrings.finish | antdLib.antdLibStrings.error = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null
   ): StepProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

@@ -119,7 +119,7 @@ trait TextArea extends View {
   /**
   			 * Sets the left and right padding of this TextArea. The text will always be vertically centered.
   			 */
-  var padding: titaniumLib.TextAreaPadding = js.native
+  var padding: titaniumLib.ViewPadding = js.native
   /**
   			 * Specifies the text to display on the keyboard `Return` key when this text area is focused.
   			 */
@@ -272,7 +272,7 @@ trait TextArea extends View {
   /**
   			 * Gets the value of the <Titanium.UI.TextArea.padding> property.
   			 */
-  def getPadding(): titaniumLib.TextAreaPadding = js.native
+  def getPadding(): titaniumLib.ViewPadding = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TextArea.returnKeyType> property.
   			 */
@@ -424,7 +424,7 @@ trait TextArea extends View {
   /**
   			 * Sets the value of the <Titanium.UI.TextArea.padding> property.
   			 */
-  def setPadding(padding: titaniumLib.TextAreaPadding): scala.Unit = js.native
+  def setPadding(padding: titaniumLib.ViewPadding): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.TextArea.returnKeyType> property.
   			 */

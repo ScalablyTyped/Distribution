@@ -25,13 +25,13 @@ trait ArrowKeyStepperProps
   var rowCount: scala.Double
   var scrollToColumn: js.UndefOr[scala.Double] = js.undefined
   var scrollToRow: js.UndefOr[scala.Double] = js.undefined
-  def children(props: ChildProps): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: ChildProps): reactLib.reactMod.ReactNode
 }
 
 object ArrowKeyStepperProps {
   @scala.inline
   def apply(
-    children: ChildProps => reactLib.reactMod.ReactNs.ReactNode,
+    children: ChildProps => reactLib.reactMod.ReactNode,
     columnCount: scala.Double,
     rowCount: scala.Double,
     StringDictionary: /**

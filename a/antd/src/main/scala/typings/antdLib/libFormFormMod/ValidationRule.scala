@@ -13,7 +13,7 @@ trait ValidationRule extends js.Object {
   /** validate the max length of a field */
   var max: js.UndefOr[scala.Double] = js.undefined
   /** validation error message */
-  var message: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var message: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** validate the min length of a field */
   var min: js.UndefOr[scala.Double] = js.undefined
   /** validate from a regular expression */
@@ -45,7 +45,7 @@ object ValidationRule {
     enum: java.lang.String | js.Array[java.lang.String] = null,
     len: scala.Int | scala.Double = null,
     max: scala.Int | scala.Double = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
+    message: reactLib.reactMod.ReactNode = null,
     min: scala.Int | scala.Double = null,
     pattern: stdLib.RegExp = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,

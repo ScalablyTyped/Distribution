@@ -5,49 +5,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Giraffe.View")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- giraffeLib.GiraffeNs.GiraffeObject because var conflicts: initialize. Inlined app, appEvents, dataEvents, defaultOptions, beforeInitialize, afterInitialize, dispose, beforeDispose, afterDispose */ @JSGlobal("Giraffe.View")
 @js.native
 class View[TModel /* <: Model */] ()
-  extends backboneLib.backboneMod.View[TModel]
-     with GiraffeObject {
-  /* CompleteClass */
-  override var app: App = js.native
-  @JSName("appEvents")
-  var appEvents_View: StringMap = js.native
+  extends backboneLib.backboneMod.View[TModel] {
+  @JSName("afterDispose")
+  var afterDispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
+  var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
+  var app: App = js.native
+  var appEvents: StringMap | js.UndefOr[StringMap] = js.native
+  @JSName("beforeDispose")
+  var beforeDispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
+  var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
   var children: js.Array[View[TModel]] = js.native
-  @JSName("dataEvents")
-  var dataEvents_View: StringMap = js.native
-  @JSName("defaultOptions")
-  var defaultOptions_View: DefaultOptions = js.native
+  var dataEvents: StringMap | js.UndefOr[StringMap] = js.native
+  var defaultOptions: DefaultOptions | js.UndefOr[DefaultOptions] = js.native
+  @JSName("dispose")
+  var dispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
   var documentTitle: java.lang.String = js.native
   var parent: View[TModel] = js.native
   var template: js.Any = js.native
   var ui: StringMap = js.native
   def addChild(child: View[TModel]): View[TModel] = js.native
   def addChildren(children: js.Array[View[TModel]]): View[TModel] = js.native
-  @JSName("afterDispose")
-  def afterDispose_MView(): View[TModel] = js.native
+  def afterDispose(): View[TModel] = js.native
   def afterRender(): js.Any = js.native
   def attach(view: View[TModel]): View[TModel] = js.native
   def attach(view: View[TModel], options: AttachmentOptions): View[TModel] = js.native
   def attachTo(el: js.Any): View[TModel] = js.native
   def attachTo(el: js.Any, options: AttachmentOptions): View[TModel] = js.native
-  @JSName("beforeDispose")
-  def beforeDispose_MView(): View[TModel] = js.native
+  def beforeDispose(): View[TModel] = js.native
   def beforeRender(): js.Any = js.native
   def detach(): View[TModel] = js.native
   def detach(preserve: scala.Boolean): View[TModel] = js.native
   def detachChildren(): View[TModel] = js.native
   def detachChildren(preserve: scala.Boolean): View[TModel] = js.native
-  @JSName("dispose")
-  def dispose_MView(): View[TModel] = js.native
+  def dispose(): View[TModel] = js.native
   def invoke(method: java.lang.String, args: js.Any*): js.Any = js.native
   def isAttached(el: js.Any): scala.Boolean = js.native
   def removeChild(child: View[TModel]): View[TModel] = js.native
   def removeChild(child: View[TModel], preserve: scala.Boolean): View[TModel] = js.native
   def removeChildren(): View[TModel] = js.native
   def removeChildren(preserve: scala.Boolean): View[TModel] = js.native
-  def render(): View[TModel] = js.native
   def render(options: js.Any): View[TModel] = js.native
   def serialize(): js.Any = js.native
   def setParent(parent: View[TModel]): View[TModel] = js.native

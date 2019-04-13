@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val defaultStyles: Styles = js.native
-  def mergeStyles(source: js.Any, target: js.Any): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def mergeStyles(source: js.Any, target: js.Any): reactLib.reactMod.CSSProperties = js.native
 }
 

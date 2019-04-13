@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContainerProps extends js.Object {
-  var blurComponentIOS: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var blurComponentIOS: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var buttonSeparatorStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
-  var children: js.Array[reactLib.reactMod.ReactNs.ReactNode]
+  var children: js.Array[reactLib.reactMod.ReactNode]
   var contentStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
   var footerStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
   var headerStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
@@ -21,8 +21,8 @@ trait ContainerProps extends js.Object {
 object ContainerProps {
   @scala.inline
   def apply(
-    children: js.Array[reactLib.reactMod.ReactNs.ReactNode],
-    blurComponentIOS: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: js.Array[reactLib.reactMod.ReactNode],
+    blurComponentIOS: reactLib.reactMod.ReactNode = null,
     buttonSeparatorStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     contentStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     footerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,

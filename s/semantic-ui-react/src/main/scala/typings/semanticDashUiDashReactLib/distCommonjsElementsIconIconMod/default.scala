@@ -13,6 +13,6 @@ class default () extends Icon
 @JSImport("semantic-ui-react/dist/commonjs/elements/Icon/Icon", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsIconIconGroupMod.IconGroupProps] = js.native
+  var Group: reactLib.reactMod.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsIconIconGroupMod.IconGroupProps] = js.native
 }
 

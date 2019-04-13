@@ -16,9 +16,9 @@ class BrandingWatermarkTwoTone protected ()
 @JSImport("@material-ui/icons", "BrandingWatermarkTwoTone")
 @js.native
 class BrandingWatermarkTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

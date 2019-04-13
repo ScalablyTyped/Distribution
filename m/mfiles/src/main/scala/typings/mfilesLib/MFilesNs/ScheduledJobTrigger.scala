@@ -33,3 +33,8 @@ class ScheduledJobTrigger ()
   override def Clone(): mfilesLib.IScheduledJobTrigger = js.native
 }
 
+@JSGlobal("MFiles.ScheduledJobTrigger")
+@js.native
+object ScheduledJobTrigger
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IScheduledJobTrigger]
+

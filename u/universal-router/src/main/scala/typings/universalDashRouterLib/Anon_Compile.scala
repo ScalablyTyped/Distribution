@@ -7,37 +7,30 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Compile extends js.Object {
-  val pathToRegexpNs: js.Any = js.native
-  def apply(path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path): stdLib.RegExp = js.native
+  def apply(path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.Path): stdLib.RegExp = js.native
   def apply(
-    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path,
-    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key]
+    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.Path,
+    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Key]
   ): stdLib.RegExp = js.native
   def apply(
-    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path,
-    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key],
-    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.RegExpOptions with pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.ParseOptions
+    path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.Path,
+    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Key],
+    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.RegExpOptions with pathDashToDashRegexpLib.pathDashToDashRegexpMod.ParseOptions
   ): stdLib.RegExp = js.native
-  def compile[P /* <: js.Object */](path: java.lang.String): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction[P] = js.native
-  def compile[P /* <: js.Object */](
-    path: java.lang.String,
-    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.ParseOptions
-  ): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction[P] = js.native
-  def parse(path: java.lang.String): js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token] = js.native
-  def parse(
-    path: java.lang.String,
-    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.ParseOptions
-  ): js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token] = js.native
-  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token]): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction[P] = js.native
-  def tokensToRegExp(tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token]): stdLib.RegExp = js.native
+  def compile[P /* <: js.Object */](path: java.lang.String): pathDashToDashRegexpLib.pathDashToDashRegexpMod.PathFunction[P] = js.native
+  def compile[P /* <: js.Object */](path: java.lang.String, options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.ParseOptions): pathDashToDashRegexpLib.pathDashToDashRegexpMod.PathFunction[P] = js.native
+  def parse(path: java.lang.String): js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Token] = js.native
+  def parse(path: java.lang.String, options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.ParseOptions): js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Token] = js.native
+  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Token]): pathDashToDashRegexpLib.pathDashToDashRegexpMod.PathFunction[P] = js.native
+  def tokensToRegExp(tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Token]): stdLib.RegExp = js.native
   def tokensToRegExp(
-    tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token],
-    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key]
+    tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Token],
+    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Key]
   ): stdLib.RegExp = js.native
   def tokensToRegExp(
-    tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token],
-    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key],
-    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.RegExpOptions
+    tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Token],
+    keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.Key],
+    options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.RegExpOptions
   ): stdLib.RegExp = js.native
 }
 

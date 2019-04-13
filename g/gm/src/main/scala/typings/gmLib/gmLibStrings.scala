@@ -8,903 +8,903 @@ import scala.scalajs.js.annotation._
 object gmLibStrings {
   @js.native
   sealed trait `!`
-    extends gmLib.gmMod.mNs.ResizeOption
+    extends gmLib.gmMod.ResizeOption
   
   @js.native
   sealed trait `%`
-    extends gmLib.gmMod.mNs.ResizeOption
+    extends gmLib.gmMod.ResizeOption
   
   @js.native
   sealed trait `+` extends js.Object
   
   @js.native
   sealed trait `<`
-    extends gmLib.gmMod.mNs.ResizeOption
+    extends gmLib.gmMod.ResizeOption
   
   @js.native
   sealed trait `>`
-    extends gmLib.gmMod.mNs.ResizeOption
+    extends gmLib.gmMod.ResizeOption
   
   @js.native
   sealed trait `@`
-    extends gmLib.gmMod.mNs.ResizeOption
+    extends gmLib.gmMod.ResizeOption
   
   @js.native
   sealed trait Absolute
-    extends gmLib.gmMod.mNs.IntentType
+    extends gmLib.gmMod.IntentType
   
   @js.native
   sealed trait Add
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait AddNoise
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait AdobeCustom
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait AdobeExpert
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait AdobeStandard
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait All
-    extends gmLib.gmMod.mNs.ChannelType
+    extends gmLib.gmMod.ChannelType
   
   @js.native
   sealed trait And
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait AppleRoman
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait Assign
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.HighlightStyle
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.HighlightStyle
   
   @js.native
   sealed trait Atop
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait BIG5
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait BZip
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait Background
-    extends gmLib.gmMod.mNs.DisposeMethod
+    extends gmLib.gmMod.DisposeMethod
   
   @js.native
   sealed trait Bessel
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Bilevel
-    extends gmLib.gmMod.mNs.ImageType
+    extends gmLib.gmMod.ImageType
   
   @js.native
   sealed trait Black
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Blackman
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Blue
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Blur
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Box
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Brightness
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Bumpmap
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CMYK
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Catrom
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Center
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait CharcoalDrawing
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait CineonLog
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Color
-    extends gmLib.gmMod.mNs.ListType
+    extends gmLib.gmMod.ListType
   
   @js.native
   sealed trait ColorSeparation
-    extends gmLib.gmMod.mNs.ImageType
+    extends gmLib.gmMod.ImageType
   
   @js.native
   sealed trait ColorSeparationMatte
-    extends gmLib.gmMod.mNs.ImageType
+    extends gmLib.gmMod.ImageType
   
   @js.native
   sealed trait Constant
-    extends gmLib.gmMod.mNs.VirtualPixelMethod
+    extends gmLib.gmMod.VirtualPixelMethod
   
   @js.native
   sealed trait Copy
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyBlack
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyBlue
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyCyan
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyGreen
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyMagenta
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyOpacity
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyRed
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait CopyYellow
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Cubic
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Cyan
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Delegate
-    extends gmLib.gmMod.mNs.ListType
+    extends gmLib.gmMod.ListType
   
   @js.native
   sealed trait Depth
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Despeckle
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Difference
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait DirectColor
-    extends gmLib.gmMod.mNs.VisualType
+    extends gmLib.gmMod.VisualType
   
   @js.native
   sealed trait Divide
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Dull
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait East
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait Edge
-    extends gmLib.gmMod.mNs.VirtualPixelMethod
+    extends gmLib.gmMod.VirtualPixelMethod
   
   @js.native
   sealed trait EdgeDetect
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Fax
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait Format
-    extends gmLib.gmMod.mNs.ListType
+    extends gmLib.gmMod.ListType
   
   @js.native
   sealed trait GB2312
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait GRAY
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Gamma
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Gaussian
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Gray
-    extends gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait GrayScale
-    extends gmLib.gmMod.mNs.VisualType
+    extends gmLib.gmMod.VisualType
   
   @js.native
   sealed trait Grayscale
-    extends gmLib.gmMod.mNs.ImageType
-       with gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.ImageType
+       with gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Green
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Group4
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait HSB
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait HSL
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Hamming
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Hanning
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Hermite
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Hue
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Implode
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait In
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Intensity
-    extends gmLib.gmMod.mNs.ChannelType
+    extends gmLib.gmMod.ChannelType
   
   @js.native
   sealed trait JPEG
-    extends gmLib.gmMod.mNs.CompressionType
-       with gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.CompressionType
+       with gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait LSB
-    extends gmLib.gmMod.mNs.EndianType
+    extends gmLib.gmMod.EndianType
   
   @js.native
   sealed trait LShift
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait LZMA
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait LZW
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait Lanczos
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait `Latin 2`
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait Line
-    extends gmLib.gmMod.mNs.InterlaceType
+    extends gmLib.gmMod.InterlaceType
   
   @js.native
   sealed trait Log
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Lossless
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait MSB
-    extends gmLib.gmMod.mNs.EndianType
+    extends gmLib.gmMod.EndianType
   
   @js.native
   sealed trait Magenta
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Magic
-    extends gmLib.gmMod.mNs.ListType
+    extends gmLib.gmMod.ListType
   
   @js.native
   sealed trait Matte
-    extends gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Max
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Min
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Minus
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Mirror
-    extends gmLib.gmMod.mNs.VirtualPixelMethod
+    extends gmLib.gmMod.VirtualPixelMethod
   
   @js.native
   sealed trait Mitchell
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Module
-    extends gmLib.gmMod.mNs.ListType
+    extends gmLib.gmMod.ListType
   
   @js.native
   sealed trait Multiply
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Native
-    extends gmLib.gmMod.mNs.EndianType
+    extends gmLib.gmMod.EndianType
   
   @js.native
   sealed trait Negate
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Noise-Gaussian`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Noise-Impulse`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Noise-Laplacian`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Noise-Multiplicative`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Noise-Poisson`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Noise-Random`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Noise-Uniform`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait None
-    extends gmLib.gmMod.mNs.CompressionType
-       with gmLib.gmMod.mNs.DisposeMethod
-       with gmLib.gmMod.mNs.Encoding
-       with gmLib.gmMod.mNs.InterlaceType
+    extends gmLib.gmMod.CompressionType
+       with gmLib.gmMod.DisposeMethod
+       with gmLib.gmMod.Encoding
+       with gmLib.gmMod.InterlaceType
   
   @js.native
   sealed trait North
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait NorthEast
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait NorthWest
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait OHTA
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait OilPaint
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Opacity
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Optimize
-    extends gmLib.gmMod.mNs.ImageType
+    extends gmLib.gmMod.ImageType
   
   @js.native
   sealed trait Or
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Out
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Over
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Palette
-    extends gmLib.gmMod.mNs.ImageType
+    extends gmLib.gmMod.ImageType
   
   @js.native
   sealed trait PaletteMatte
-    extends gmLib.gmMod.mNs.ImageType
+    extends gmLib.gmMod.ImageType
   
   @js.native
   sealed trait Partition
-    extends gmLib.gmMod.mNs.InterlaceType
+    extends gmLib.gmMod.InterlaceType
   
   @js.native
   sealed trait Perceptual
-    extends gmLib.gmMod.mNs.IntentType
+    extends gmLib.gmMod.IntentType
   
   @js.native
   sealed trait PixelsPerCentimeter
-    extends gmLib.gmMod.mNs.UnitType
+    extends gmLib.gmMod.UnitType
   
   @js.native
   sealed trait PixelsPerInch
-    extends gmLib.gmMod.mNs.UnitType
+    extends gmLib.gmMod.UnitType
   
   @js.native
   sealed trait Plane
-    extends gmLib.gmMod.mNs.InterlaceType
+    extends gmLib.gmMod.InterlaceType
   
   @js.native
   sealed trait Plus
-    extends gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Point
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Pow
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Previous
-    extends gmLib.gmMod.mNs.DisposeMethod
+    extends gmLib.gmMod.DisposeMethod
   
   @js.native
   sealed trait PseudoColor
-    extends gmLib.gmMod.mNs.VisualType
+    extends gmLib.gmMod.VisualType
   
   @js.native
   sealed trait Quadratic
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Quantize
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait RGB
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait RLE
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait RShift
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Raise
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Rec601Luma
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Rec601YCbCr
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Rec709Luma
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Rec709YCbCr
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Red
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait ReduceNoise
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Relative
-    extends gmLib.gmMod.mNs.IntentType
+    extends gmLib.gmMod.IntentType
   
   @js.native
   sealed trait Resource
-    extends gmLib.gmMod.mNs.ListType
+    extends gmLib.gmMod.ListType
   
   @js.native
   sealed trait Roll
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Rotate
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait SJIScode
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait Saturation
-    extends gmLib.gmMod.mNs.IntentType
-       with gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.IntentType
+       with gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Segment
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Shade
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Sharpen
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Shear
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Sinc
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait Solarize
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait South
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait SouthEast
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait SouthWest
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait Spiff
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Spread
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait StaticColor
-    extends gmLib.gmMod.mNs.VisualType
+    extends gmLib.gmMod.VisualType
   
   @js.native
   sealed trait StaticGray
-    extends gmLib.gmMod.mNs.VisualType
+    extends gmLib.gmMod.VisualType
   
   @js.native
   sealed trait Subtract
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait Swirl
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait Symbol
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait Threshold
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.HighlightStyle
-       with gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.HighlightStyle
+       with gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait `Threshold-Black`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Threshold-Black-Negate`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Threshold-White`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait `Threshold-White-Negate`
-    extends gmLib.gmMod.mNs.ChannelOperator
+    extends gmLib.gmMod.ChannelOperator
   
   @js.native
   sealed trait Tile
-    extends gmLib.gmMod.mNs.VirtualPixelMethod
+    extends gmLib.gmMod.VirtualPixelMethod
   
   @js.native
   sealed trait Tint
-    extends gmLib.gmMod.mNs.HighlightStyle
+    extends gmLib.gmMod.HighlightStyle
   
   @js.native
   sealed trait Transparent
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Triangle
-    extends gmLib.gmMod.mNs.FilterType
+    extends gmLib.gmMod.FilterType
   
   @js.native
   sealed trait TrueColor
-    extends gmLib.gmMod.mNs.ImageType
-       with gmLib.gmMod.mNs.VisualType
+    extends gmLib.gmMod.ImageType
+       with gmLib.gmMod.VisualType
   
   @js.native
   sealed trait TrueColorMatte
-    extends gmLib.gmMod.mNs.ImageType
+    extends gmLib.gmMod.ImageType
   
   @js.native
   sealed trait Type
-    extends gmLib.gmMod.mNs.ListType
+    extends gmLib.gmMod.ListType
   
   @js.native
   sealed trait Undefined
-    extends gmLib.gmMod.mNs.DisposeMethod
-       with gmLib.gmMod.mNs.UnitType
+    extends gmLib.gmMod.DisposeMethod
+       with gmLib.gmMod.UnitType
   
   @js.native
   sealed trait Unicode
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait Wansung
-    extends gmLib.gmMod.mNs.Encoding
+    extends gmLib.gmMod.Encoding
   
   @js.native
   sealed trait Wave
-    extends gmLib.gmMod.mNs.PreviewType
+    extends gmLib.gmMod.PreviewType
   
   @js.native
   sealed trait West
-    extends gmLib.gmMod.mNs.GravityDirection
+    extends gmLib.gmMod.GravityDirection
   
   @js.native
   sealed trait XOR
-    extends gmLib.gmMod.mNs.HighlightStyle
+    extends gmLib.gmMod.HighlightStyle
   
   @js.native
   sealed trait XYZ
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Xor
-    extends gmLib.gmMod.mNs.ChannelOperator
-       with gmLib.gmMod.mNs.ComposeOperator
+    extends gmLib.gmMod.ChannelOperator
+       with gmLib.gmMod.ComposeOperator
   
   @js.native
   sealed trait YCbCr
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait YIQ
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait YPbPr
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait YUV
-    extends gmLib.gmMod.mNs.ColorSpace
+    extends gmLib.gmMod.ColorSpace
   
   @js.native
   sealed trait Yellow
-    extends gmLib.gmMod.mNs.ChannelType
-       with gmLib.gmMod.mNs.NamedColor
+    extends gmLib.gmMod.ChannelType
+       with gmLib.gmMod.NamedColor
   
   @js.native
   sealed trait Zip
-    extends gmLib.gmMod.mNs.CompressionType
+    extends gmLib.gmMod.CompressionType
   
   @js.native
   sealed trait `_backtick^_backtick`
-    extends gmLib.gmMod.mNs.ResizeOption
+    extends gmLib.gmMod.ResizeOption
   
   @js.native
   sealed trait center extends js.Object
   
   @js.native
   sealed trait color
-    extends gmLib.gmMod.mNs.SetDrawProperty
+    extends gmLib.gmMod.SetDrawProperty
   
   @js.native
   sealed trait concatenate
-    extends gmLib.gmMod.mNs.OperationMode
+    extends gmLib.gmMod.OperationMode
   
   @js.native
   sealed trait default
-    extends gmLib.gmMod.mNs.VisualType
+    extends gmLib.gmMod.VisualType
   
   @js.native
   sealed trait disk
-    extends gmLib.gmMod.mNs.LimitType
+    extends gmLib.gmMod.LimitType
   
   @js.native
   sealed trait file
-    extends gmLib.gmMod.mNs.LimitType
+    extends gmLib.gmMod.LimitType
   
   @js.native
   sealed trait filltoborder
-    extends gmLib.gmMod.mNs.SetDrawMethod
+    extends gmLib.gmMod.SetDrawMethod
   
   @js.native
   sealed trait floodfill
-    extends gmLib.gmMod.mNs.SetDrawMethod
+    extends gmLib.gmMod.SetDrawMethod
   
   @js.native
   sealed trait frame
-    extends gmLib.gmMod.mNs.OperationMode
+    extends gmLib.gmMod.OperationMode
   
   @js.native
   sealed trait gaussian
-    extends gmLib.gmMod.mNs.NoiseType
+    extends gmLib.gmMod.NoiseType
   
   @js.native
   sealed trait impulse
-    extends gmLib.gmMod.mNs.NoiseType
+    extends gmLib.gmMod.NoiseType
   
   @js.native
   sealed trait laplacian
-    extends gmLib.gmMod.mNs.NoiseType
+    extends gmLib.gmMod.NoiseType
   
   @js.native
   sealed trait map
-    extends gmLib.gmMod.mNs.LimitType
+    extends gmLib.gmMod.LimitType
   
   @js.native
   sealed trait matte
-    extends gmLib.gmMod.mNs.SetDrawProperty
+    extends gmLib.gmMod.SetDrawProperty
   
   @js.native
   sealed trait memory
-    extends gmLib.gmMod.mNs.LimitType
+    extends gmLib.gmMod.LimitType
   
   @js.native
   sealed trait multiplicative
-    extends gmLib.gmMod.mNs.NoiseType
+    extends gmLib.gmMod.NoiseType
   
   @js.native
   sealed trait pixels
-    extends gmLib.gmMod.mNs.LimitType
+    extends gmLib.gmMod.LimitType
   
   @js.native
   sealed trait point
-    extends gmLib.gmMod.mNs.SetDrawMethod
+    extends gmLib.gmMod.SetDrawMethod
   
   @js.native
   sealed trait poisson
-    extends gmLib.gmMod.mNs.NoiseType
+    extends gmLib.gmMod.NoiseType
   
   @js.native
   sealed trait `private` extends js.Object
   
   @js.native
   sealed trait replace
-    extends gmLib.gmMod.mNs.SetDrawMethod
+    extends gmLib.gmMod.SetDrawMethod
   
   @js.native
   sealed trait reset
-    extends gmLib.gmMod.mNs.SetDrawMethod
+    extends gmLib.gmMod.SetDrawMethod
   
   @js.native
   sealed trait shared extends js.Object
   
   @js.native
   sealed trait threads
-    extends gmLib.gmMod.mNs.LimitType
+    extends gmLib.gmMod.LimitType
   
   @js.native
   sealed trait topleft extends js.Object
   
   @js.native
   sealed trait unframe
-    extends gmLib.gmMod.mNs.OperationMode
+    extends gmLib.gmMod.OperationMode
   
   @js.native
   sealed trait uniform
-    extends gmLib.gmMod.mNs.NoiseType
+    extends gmLib.gmMod.NoiseType
   
   @scala.inline
   def `!`: `!` = "!".asInstanceOf[`!`]

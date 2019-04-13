@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Gravatar
-  extends reactLib.reactMod.Component[reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Props, js.Object, js.Any]
+  extends reactLib.reactMod.Component[Props, js.Object, js.Any]
 

@@ -11,15 +11,12 @@ trait DragStateProps extends js.Object {
     * For example, you may pass ['type', 'data'] to only rerender if these keys change.
     */
   var subscribeTo: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
-  def children(arg: State): reactLib.reactMod.ReactNs.ReactNode
+  def children(arg: State): reactLib.reactMod.ReactNode
 }
 
 object DragStateProps {
   @scala.inline
-  def apply(
-    children: State => reactLib.reactMod.ReactNs.ReactNode,
-    subscribeTo: js.Array[java.lang.String] = null
-  ): DragStateProps = {
+  def apply(children: State => reactLib.reactMod.ReactNode, subscribeTo: js.Array[java.lang.String] = null): DragStateProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
     __obj.asInstanceOf[DragStateProps]

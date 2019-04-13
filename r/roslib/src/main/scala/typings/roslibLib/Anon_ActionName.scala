@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ActionName extends js.Object {
   var actionName: java.lang.String
-  var ros: roslibLib.roslibMod.ROSLIBNs.Ros
+  var ros: roslibLib.roslibMod.Ros
   var serverName: java.lang.String
   var timeout: scala.Double
 }
@@ -16,7 +16,7 @@ object Anon_ActionName {
   @scala.inline
   def apply(
     actionName: java.lang.String,
-    ros: roslibLib.roslibMod.ROSLIBNs.Ros,
+    ros: roslibLib.roslibMod.Ros,
     serverName: java.lang.String,
     timeout: scala.Double
   ): Anon_ActionName = {

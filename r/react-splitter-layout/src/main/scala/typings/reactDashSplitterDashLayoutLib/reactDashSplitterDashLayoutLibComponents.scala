@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashSplitterDashLayoutLibComponents {
   @scala.inline
-  def ReactDashSplitterDashLayout: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashSplitterDashLayout: reactLib.reactMod.ComponentType[
     reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps
-  ] = js.constructorOf[reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps]]
   @scala.inline
   def SplitterLayoutProps: reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps.type = reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps

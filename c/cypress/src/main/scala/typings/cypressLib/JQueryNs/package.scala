@@ -27,6 +27,13 @@ package object JQueryNs {
   ]
   type Node = stdLib.Element | stdLib.Text | stdLib.Comment | stdLib.DocumentFragment
   /**
+    * The PlainObject type is a JavaScript object containing zero or more key-value pairs. The plain
+    * object is, in other words, an Object object. It is designated "plain" in jQuery documentation to
+    * distinguish it from other kinds of JavaScript objects: for example, null, user-defined arrays, and
+    * host objects such as document, all of which have a typeof value of "object."
+    */
+  type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
+  /**
     * This object provides a subset of the methods of the Deferred object (then, done, fail, always,
     * pipe, progress, state and promise) to prevent users from changing the state of the Deferred.
     *

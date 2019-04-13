@@ -17,3 +17,8 @@ class ObjTypes ()
   override def Item(Index: scala.Double): mfilesLib.IObjectType = js.native
 }
 
+@JSGlobal("MFiles.ObjTypes")
+@js.native
+object ObjTypes
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectTypes]
+

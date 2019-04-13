@@ -15,7 +15,7 @@ object TypeaheadMulitInputWithHocProps {
     inputClassName: java.lang.String,
     labelKey: TypeaheadLabelKey[T],
     onRemove: stdLib.Event => scala.Unit,
-    renderToken: (T, TypeaheadMenuProps[T], scala.Double) => reactLib.reactMod.ReactNs.ReactNode,
+    renderToken: (T, TypeaheadMenuProps[T], scala.Double) => reactLib.reactMod.ReactNode,
     role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.Empty,
     selected: js.Array[T]
   ): TypeaheadMulitInputWithHocProps[T] = {

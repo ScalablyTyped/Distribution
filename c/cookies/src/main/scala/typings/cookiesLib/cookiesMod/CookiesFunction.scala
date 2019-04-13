@@ -22,7 +22,7 @@ trait CookiesFunction
 org.scalablytyped.runtime.Instantiable3[
       /* request */ nodeLib.httpMod.IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
-      (/* options */ js.Array[java.lang.String]) | (/* options */ keygripLib.keygripMod.Keygrip) | (/* options */ cookiesLib.cookiesMod.CookiesNs.Option), 
+      (/* options */ js.Array[java.lang.String]) | (/* options */ keygripLib.keygripMod.Keygrip) | (/* options */ Option), 
       Cookies
     ] {
   var Cookie: cookiesLib.Anon_Attrs = js.native
@@ -30,7 +30,7 @@ org.scalablytyped.runtime.Instantiable3[
   def apply(
     request: nodeLib.httpMod.IncomingMessage,
     response: nodeLib.httpMod.ServerResponse,
-    options: cookiesLib.cookiesMod.CookiesNs.Option
+    options: Option
   ): Cookies = js.native
   /**
     * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
@@ -50,9 +50,9 @@ org.scalablytyped.runtime.Instantiable3[
     response: nodeLib.httpMod.ServerResponse,
     options: keygripLib.keygripMod.Keygrip
   ): Cookies = js.native
-  def connect(keys: js.Array[java.lang.String]): connectLib.connectMod.createServerNs.NextHandleFunction = js.native
-  def connect(keys: keygripLib.keygripMod.Keygrip): connectLib.connectMod.createServerNs.NextHandleFunction = js.native
-  def express(keys: js.Array[java.lang.String]): expressLib.expressMod.eNs.Handler = js.native
-  def express(keys: keygripLib.keygripMod.Keygrip): expressLib.expressMod.eNs.Handler = js.native
+  def connect(keys: js.Array[java.lang.String]): connectLib.connectMod.NextHandleFunction = js.native
+  def connect(keys: keygripLib.keygripMod.Keygrip): connectLib.connectMod.NextHandleFunction = js.native
+  def express(keys: js.Array[java.lang.String]): expressLib.expressMod.Handler = js.native
+  def express(keys: keygripLib.keygripMod.Keygrip): expressLib.expressMod.Handler = js.native
 }
 

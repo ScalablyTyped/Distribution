@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TetherComponentProps
-  extends reactLib.reactMod.ReactNs.Props[reactDashTetherLib.reactDashTetherMod.TetherComponent]
-     with tetherLib.tetherMod.TetherNs.ITetherOptions {
+  extends reactLib.reactMod.Props[reactDashTetherLib.reactDashTetherMod.TetherComponent]
+     with tetherLib.tetherMod.ITetherOptions {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var onRepositioned: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onUpdate: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var renderElementTag: js.UndefOr[java.lang.String] = js.undefined
   var renderElementTo: js.UndefOr[java.lang.String | reactDashTetherLib.Anon_AppendChild] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TetherComponentProps {
@@ -22,23 +22,23 @@ object TetherComponentProps {
   def apply(
     attachment: java.lang.String,
     bodyElement: stdLib.HTMLElement = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classPrefix: java.lang.String = null,
     classes: org.scalablytyped.runtime.StringDictionary[scala.Boolean | java.lang.String] = null,
-    constraints: js.Array[tetherLib.tetherMod.TetherNs.ITetherConstraint] = null,
+    constraints: js.Array[tetherLib.tetherMod.ITetherConstraint] = null,
     element: stdLib.HTMLElement | java.lang.String | js.Any = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     offset: java.lang.String = null,
     onRepositioned: () => scala.Unit = null,
     onUpdate: () => scala.Unit = null,
     optimizations: js.Any = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[reactDashTetherLib.reactDashTetherMod.TetherComponent] = null,
+    ref: reactLib.reactMod.LegacyRef[reactDashTetherLib.reactDashTetherMod.TetherComponent] = null,
     renderElementTag: java.lang.String = null,
     renderElementTo: java.lang.String | reactDashTetherLib.Anon_AppendChild = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     target: stdLib.HTMLElement | java.lang.String | js.Any = null,
     targetAttachment: java.lang.String = null,
     targetModifier: java.lang.String = null,

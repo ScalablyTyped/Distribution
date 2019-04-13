@@ -14,7 +14,7 @@ object tupleNs extends js.Object {
     def this(fst: L, snd: A) = this()
   }
   
-  val URI: /* Tuple */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Tuple = js.native
   val tuple: fpDashTsLib.libSemigroupoidMod.Semigroupoid2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libComonadMod.Comonad2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libTupleMod.URI] = js.native
   def getApplicative[L](M: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Tuple, L] = js.native
   def getApply[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libApplyMod.Apply2C[fpDashTsLib.fpDashTsLibStrings.Tuple, L] = js.native

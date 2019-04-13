@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * An abstract class that represents the document the add-in is interacting with.
   *
   * @remarks
-  * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr></table>
+  * **Hosts**: Access, Excel, PowerPoint, Project, Word
   */
 @js.native
 trait Document extends js.Object {
@@ -19,139 +19,31 @@ trait Document extends js.Object {
     * @remarks
     * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current 
     * document or worksheet, use `Office.context.document` in your script.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var bindings: Bindings = js.native
   /**
     * Gets an object that represents the custom XML parts in the document.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var customXmlParts: CustomXmlParts = js.native
   /**
     * Gets the mode the document is in.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var mode: DocumentMode = js.native
   /**
     * Gets an object that represents the saved custom settings of the content or task pane add-in for the current document.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     */
   var settings: Settings = js.native
   /**
     * Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
-    *
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this property.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *  </table>
     */
   var url: java.lang.String = js.native
   /**
     * Adds an event handler for a Document object event.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param eventType For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or 
     *                  `Office.EventType.Document.ActiveViewChanged`, or the corresponding text value of this enumeration.
@@ -176,23 +68,9 @@ trait Document extends js.Object {
     * Returns the state of the current view of the presentation (edit or read).
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>ActiveView</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#activeview | ActiveView}
     *
     * Can trigger an event when the view changes.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -224,7 +102,10 @@ trait Document extends js.Object {
     * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>File</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file | File}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
     *
     * For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports getting files in slices of up 
     * to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the getFileAsync method supports getting files in slices of up to 
@@ -240,22 +121,6 @@ trait Document extends js.Object {
     * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
     *
     * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param fileType The format in which the file will be returned
     * @param options Provides options for setting the size of slices that the document will be divided into.
@@ -274,25 +139,9 @@ trait Document extends js.Object {
     * Gets file properties of the current document.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+    * **Requirement sets**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * You get the file's URL with the url property `asyncResult.value.url`.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -314,21 +163,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the highest index number in the current project's resource collection.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getMaxResourceIndexAsync(): scala.Unit = js.native
   def getMaxResourceIndexAsync(callback: js.Function1[/* result */ AsyncResult[scala.Double], scala.Unit]): scala.Unit = js.native
@@ -346,21 +180,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the highest index number in the current project's task collection.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getMaxTaskIndexAsync(): scala.Unit = js.native
   def getMaxTaskIndexAsync(callback: js.Function1[/* result */ AsyncResult[scala.Double], scala.Unit]): scala.Unit = js.native
@@ -375,22 +194,6 @@ trait Document extends js.Object {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
-    * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getProjectFieldAsync(fieldId: scala.Double): scala.Unit = js.native
   def getProjectFieldAsync(fieldId: scala.Double, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
@@ -410,21 +213,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getResourceByIndexAsync(resourceIndex: scala.Double): scala.Unit = js.native
   def getResourceByIndexAsync(
@@ -445,21 +233,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double): scala.Unit = js.native
   def getResourceFieldAsync(
@@ -478,7 +251,13 @@ trait Document extends js.Object {
     * Reads the data contained in the current selection in the document.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
     * 
     * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return 
     * the following information.
@@ -543,23 +322,6 @@ trait Document extends js.Object {
     *   </tr>
     * </table>
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
-    * 
     * @param coercionType The type of data structure to return. See the remarks section for each host's supported coercion types.
     * 
     * @param options Provides options for customizing what data is returned and how it is formatted.
@@ -583,21 +345,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getSelectedResourceAsync(): scala.Unit = js.native
   def getSelectedResourceAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
@@ -612,21 +359,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getSelectedTaskAsync(): scala.Unit = js.native
   def getSelectedTaskAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
@@ -643,21 +375,6 @@ trait Document extends js.Object {
     *                  `viewName` - The name of the view, as a ProjectViewTypes constant.
     *                  `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getSelectedViewAsync(): scala.Unit = js.native
   def getSelectedViewAsync(callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
@@ -673,21 +390,6 @@ trait Document extends js.Object {
     *                  `wssTaskId` - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is 0.
     *                  `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getTaskAsync(taskId: java.lang.String): scala.Unit = js.native
   def getTaskAsync(taskId: java.lang.String, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
@@ -707,21 +409,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the task as a string.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getTaskByIndexAsync(taskIndex: scala.Double): scala.Unit = js.native
   def getTaskByIndexAsync(
@@ -742,21 +429,6 @@ trait Document extends js.Object {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double): scala.Unit = js.native
   def getTaskFieldAsync(
@@ -779,21 +451,6 @@ trait Document extends js.Object {
     *                  `listName` - the name of the synchronized SharePoint task list.
     *                  `serverUrl` - the URL of the synchronized SharePoint task list.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def getWSSUrlAsync(): scala.Unit = js.native
   def getWSSUrlAsync(callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
@@ -803,7 +460,7 @@ trait Document extends js.Object {
     * Goes to the specified object or location in the document.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>not in a set</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * PowerPoint doesn't support the goToByIdAsync method in Master Views.
     *
@@ -817,22 +474,6 @@ trait Document extends js.Object {
     *
     * In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text bindings, moves the cursor 
     * to the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     *
     * @param id The identifier of the object or location to go to.
     * @param goToType The type of the location to go to.
@@ -870,25 +511,7 @@ trait Document extends js.Object {
     * Removes an event handler for the specified event type.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * @param eventType The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
     * @param options Provides options to determine which event handler or handlers are removed.
@@ -913,21 +536,6 @@ trait Document extends js.Object {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def setResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, fieldValue: java.lang.String): scala.Unit = js.native
   def setResourceFieldAsync(
@@ -1013,7 +621,14 @@ trait Document extends js.Object {
     * Writes the specified data into the current selection.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+    * **Requirement sets**: 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion | ImageCoercion} (when using `Office.CoercionType.Image`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}, 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`), 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
     * 
     * **Application-specific behaviors**
     * 
@@ -1147,22 +762,6 @@ trait Document extends js.Object {
     *   </tr>
     * </table>
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     * 
     * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
     * 
@@ -1233,21 +832,6 @@ trait Document extends js.Object {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     * 
-    * @remarks
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-    *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
-    *  </table>
     */
   def setTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, fieldValue: java.lang.String): scala.Unit = js.native
   def setTaskFieldAsync(

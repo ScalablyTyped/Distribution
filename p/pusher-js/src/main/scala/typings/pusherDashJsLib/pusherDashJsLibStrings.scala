@@ -14,23 +14,23 @@ object pusherDashJsLibStrings {
   
   @js.native
   sealed trait sockjs
-    extends pusherDashJsLib.pusherDashJsMod.pusherNs.Transport
+    extends pusherDashJsLib.pusherDashJsMod.Transport
   
   @js.native
   sealed trait ws
-    extends pusherDashJsLib.pusherDashJsMod.pusherNs.Transport
+    extends pusherDashJsLib.pusherDashJsMod.Transport
   
   @js.native
   sealed trait wss
-    extends pusherDashJsLib.pusherDashJsMod.pusherNs.Transport
+    extends pusherDashJsLib.pusherDashJsMod.Transport
   
   @js.native
   sealed trait xhr_polling
-    extends pusherDashJsLib.pusherDashJsMod.pusherNs.Transport
+    extends pusherDashJsLib.pusherDashJsMod.Transport
   
   @js.native
   sealed trait xhr_streaming
-    extends pusherDashJsLib.pusherDashJsMod.pusherNs.Transport
+    extends pusherDashJsLib.pusherDashJsMod.Transport
   
   @scala.inline
   def ajax: ajax = "ajax".asInstanceOf[ajax]

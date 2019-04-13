@@ -9,7 +9,7 @@ trait Anon_ClassName extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var transition: js.UndefOr[reactstrapLib.libFadeMod.FadeProps[js.Object]] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object Anon_ClassName {
     className: java.lang.String = null,
     color: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     transition: reactstrapLib.libFadeMod.FadeProps[js.Object] = null
   ): Anon_ClassName = {
     val __obj = js.Dynamic.literal()

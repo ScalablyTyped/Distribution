@@ -23,3 +23,8 @@ class SharedFileInfo ()
   override def Clone(): mfilesLib.ISharedFileInfo = js.native
 }
 
+@JSGlobal("MFiles.SharedFileInfo")
+@js.native
+object SharedFileInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISharedFileInfo]
+

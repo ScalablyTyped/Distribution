@@ -12,3 +12,11 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonSizes extends js.Object
 
+@JSImport("react-foundation/enums", "ButtonSizes")
+@js.native
+object ButtonSizes extends js.Object {
+  var LARGE: reactDashFoundationLib.enumsMod.ButtonSizes = js.native
+  var SMALL: reactDashFoundationLib.enumsMod.ButtonSizes = js.native
+  var TINY: reactDashFoundationLib.enumsMod.ButtonSizes = js.native
+}
+

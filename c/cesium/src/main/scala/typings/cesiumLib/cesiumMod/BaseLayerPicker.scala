@@ -7,16 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "BaseLayerPicker")
 @js.native
-class BaseLayerPicker protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.BaseLayerPicker {
+class BaseLayerPicker protected () extends js.Object {
   def this(container: stdLib.Element, options: cesiumLib.Anon_Globe) = this()
-  /* CompleteClass */
-  override var container: stdLib.Element = js.native
-  /* CompleteClass */
-  override var viewModel: cesiumLib.cesiumMod.CesiumNs.BaseLayerPickerViewModel = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
+  var container: stdLib.Element = js.native
+  var viewModel: BaseLayerPickerViewModel = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
 }
 

@@ -98,13 +98,13 @@ trait TableProps[D, ResolvedData]
   /** Default: {} */
   var style: js.Object = js.native
   /** The content rendered inside of a padding row */
-  def PadRowComponent(): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def PadRowComponent(): reactLib.reactMod.ReactNode = js.native
   /** Control callback for functional rendering */
   def children(
     state: FinalState[ResolvedData],
-    makeTable: js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]],
+    makeTable: js.Function0[reactLib.reactMod.ReactElement[_]],
     instance: Instance[ResolvedData]
-  ): reactLib.reactMod.ReactNs.ReactNode = js.native
+  ): reactLib.reactMod.ReactNode = js.native
   /** Default: ... */
   def defaultFilterMethod(filter: Filter, row: js.Any, column: js.Any): scala.Boolean = js.native
   /** Default: ... */

@@ -10,11 +10,11 @@ trait TransferOperationProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var leftActive: js.UndefOr[scala.Boolean] = js.undefined
   var leftArrowText: js.UndefOr[java.lang.String] = js.undefined
-  var moveToLeft: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
-  var moveToRight: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
+  var moveToLeft: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
+  var moveToRight: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
   var rightActive: js.UndefOr[scala.Boolean] = js.undefined
   var rightArrowText: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TransferOperationProps {
@@ -24,11 +24,11 @@ object TransferOperationProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     leftActive: js.UndefOr[scala.Boolean] = js.undefined,
     leftArrowText: java.lang.String = null,
-    moveToLeft: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement] = null,
-    moveToRight: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLButtonElement] = null,
+    moveToLeft: reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] = null,
+    moveToRight: reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] = null,
     rightActive: js.UndefOr[scala.Boolean] = js.undefined,
     rightArrowText: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TransferOperationProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

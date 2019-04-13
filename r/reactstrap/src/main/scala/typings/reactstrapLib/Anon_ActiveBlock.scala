@@ -12,12 +12,12 @@ trait Anon_ActiveBlock extends js.Object {
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLButtonElement]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.Ref[stdLib.HTMLButtonElement]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var outline: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[js.Any] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ActiveBlock {
@@ -29,12 +29,12 @@ object Anon_ActiveBlock {
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLButtonElement] = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    innerRef: reactLib.reactMod.Ref[stdLib.HTMLButtonElement] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
     outline: js.UndefOr[scala.Boolean] = js.undefined,
     size: js.Any = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    style: reactLib.reactMod.CSSProperties = null,
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ActiveBlock = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SanitizationChain
-  extends expressLib.expressMod.eNs.RequestHandler
+  extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler
      with Sanitizer {
   /* InferMemberOverrides */
   override def apply(

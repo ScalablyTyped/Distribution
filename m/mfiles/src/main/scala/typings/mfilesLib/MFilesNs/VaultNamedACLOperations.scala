@@ -54,3 +54,8 @@ class VaultNamedACLOperations ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultNamedACLOperations")
+@js.native
+object VaultNamedACLOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultNamedACLOperations]
+

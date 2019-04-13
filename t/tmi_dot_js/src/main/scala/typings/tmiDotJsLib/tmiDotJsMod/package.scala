@@ -22,4 +22,5 @@ package object tmiDotJsMod {
       ]
     ]
   ]) with Actions
+  type EmoteObj = org.scalablytyped.runtime.StringDictionary[js.Array[tmiDotJsLib.Anon_Code]]
 }

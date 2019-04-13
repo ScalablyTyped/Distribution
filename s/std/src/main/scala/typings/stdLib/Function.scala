@@ -20,7 +20,7 @@ trait Function extends js.Object {
     * A constructor function can control which objects are recognized as its instances by
     * 'instanceof' by overriding this method.
     */
-  @JSName(org.scalablytyped.runtime.Symbol.hasInstance)
+  @JSName(scala.scalajs.js.Symbol.hasInstance)
   var hasInstance: js.Function1[/* value */ js.Any, scala.Boolean] = js.native
   val length: scala.Double = js.native
   /**

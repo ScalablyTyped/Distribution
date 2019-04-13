@@ -21,9 +21,6 @@ object ^ extends js.Object {
     * - `event`: the string event name that fired
     * - `args`: an array of the arguments that were emitted on the event
     */
-  def apply[TEmitter /* <: nodeLib.eventsMod.EventEmitter */](
-    eventSpec: js.Array[js.Array[TEmitter | java.lang.String]],
-    listener: eeDashFirstLib.eeDashFirstMod.firstNs.Listener[TEmitter]
-  ): eeDashFirstLib.eeDashFirstMod.firstNs.Thunk[TEmitter] = js.native
+  def apply[TEmitter /* <: nodeLib.eventsMod.EventEmitter */](eventSpec: js.Array[js.Array[TEmitter | java.lang.String]], listener: Listener[TEmitter]): Thunk[TEmitter] = js.native
 }
 

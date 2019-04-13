@@ -86,16 +86,13 @@ trait ITagInputProps
     * ```
     */
   var onChange: js.UndefOr[
-    js.Function1[
-      /* values */ js.Array[reactLib.reactMod.ReactNs.ReactNode], 
-      scala.Boolean | scala.Unit
-    ]
+    js.Function1[/* values */ js.Array[reactLib.reactMod.ReactNode], scala.Boolean | scala.Unit]
   ] = js.undefined
   /**
     * Callback invoked when the value of `<input>` element is changed.
     * This is shorthand for `inputProps={{ onChange }}`.
     */
-  var onInputChange: js.UndefOr[reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement]] = js.undefined
+  var onInputChange: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement]] = js.undefined
   /**
     * Callback invoked when the user depresses a keyboard key.
     * Receives the event and the index of the active tag (or `undefined` if
@@ -103,7 +100,7 @@ trait ITagInputProps
     */
   var onKeyDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
+      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], 
       /* index */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -115,7 +112,7 @@ trait ITagInputProps
     */
   var onKeyUp: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], 
+      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], 
       /* index */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -157,7 +154,7 @@ trait ITagInputProps
     */
   var tagProps: js.UndefOr[
     atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps | (js.Function2[
-      /* value */ reactLib.reactMod.ReactNs.ReactNode, 
+      /* value */ reactLib.reactMod.ReactNode, 
       /* index */ scala.Double, 
       atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps
     ])
@@ -171,13 +168,13 @@ trait ITagInputProps
     * subtype, such as `string` or `ReactChild`, you can use that type on all your handlers
     * to simplify type logic.
     */
-  var values: js.Array[reactLib.reactMod.ReactNs.ReactNode]
+  var values: js.Array[reactLib.reactMod.ReactNode]
 }
 
 object ITagInputProps {
   @scala.inline
   def apply(
-    values: js.Array[reactLib.reactMod.ReactNs.ReactNode],
+    values: js.Array[reactLib.reactMod.ReactNode],
     addOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     addOnPaste: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
@@ -190,16 +187,16 @@ object ITagInputProps {
     large: js.UndefOr[scala.Boolean] = js.undefined,
     leftIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
     onAdd: (/* values */ js.Array[java.lang.String], /* method */ TagInputAddMethod) => scala.Boolean | scala.Unit = null,
-    onChange: /* values */ js.Array[reactLib.reactMod.ReactNs.ReactNode] => scala.Boolean | scala.Unit = null,
-    onInputChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement] = null,
-    onKeyDown: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* index */ js.UndefOr[scala.Double]) => scala.Unit = null,
-    onKeyUp: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* index */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onChange: /* values */ js.Array[reactLib.reactMod.ReactNode] => scala.Boolean | scala.Unit = null,
+    onInputChange: reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] = null,
+    onKeyDown: (/* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], /* index */ js.UndefOr[scala.Double]) => scala.Unit = null,
+    onKeyUp: (/* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement], /* index */ js.UndefOr[scala.Double]) => scala.Unit = null,
     onRemove: (/* value */ java.lang.String, /* index */ scala.Double) => scala.Unit = null,
     placeholder: java.lang.String = null,
     rightElement: reactLib.reactMod.Global.JSXNs.Element = null,
     separator: java.lang.String | stdLib.RegExp | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`false` = null,
     tagProps: atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps | (js.Function2[
-      /* value */ reactLib.reactMod.ReactNs.ReactNode, 
+      /* value */ reactLib.reactMod.ReactNode, 
       /* index */ scala.Double, 
       atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps
     ]) = null

@@ -10,18 +10,18 @@ trait PullRequest extends PullRequestRef {
   var assignees: js.Array[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary]
   var base: typedDashGithubDashApiLib.distInterfacesBranchMod.BranchSummaryWithRepository
   var body: java.lang.String
-  var closedAt: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
-  var createdAt: momentLib.momentMod.momentNs.Moment
+  var closedAt: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
+  var createdAt: momentLib.momentMod.Moment
   var createdBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary
   var head: typedDashGithubDashApiLib.distInterfacesBranchMod.BranchSummary
   var htmlUri: java.lang.String
   var id: scala.Double
   var locked: scala.Boolean
-  var mergedAt: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var mergedAt: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
   var milestone: typedDashGithubDashApiLib.distInterfacesMilestoneMod.Milestone | scala.Null
   var state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed
   var title: java.lang.String
-  var updatedAt: momentLib.momentMod.momentNs.Moment
+  var updatedAt: momentLib.momentMod.Moment
   def loadIssueAsync(): js.Promise[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]
   def loadReviewCommentsAsync(): js.Promise[js.Array[ReviewComment]]
   def loadReviewRequestsAsync(): js.Promise[ReviewRequests]
@@ -34,7 +34,7 @@ object PullRequest {
     assignees: js.Array[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary],
     base: typedDashGithubDashApiLib.distInterfacesBranchMod.BranchSummaryWithRepository,
     body: java.lang.String,
-    createdAt: momentLib.momentMod.momentNs.Moment,
+    createdAt: momentLib.momentMod.Moment,
     createdBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary,
     head: typedDashGithubDashApiLib.distInterfacesBranchMod.BranchSummary,
     htmlUri: java.lang.String,
@@ -48,10 +48,10 @@ object PullRequest {
     number: scala.Double,
     state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
     title: java.lang.String,
-    updatedAt: momentLib.momentMod.momentNs.Moment,
+    updatedAt: momentLib.momentMod.Moment,
     assignee: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = null,
-    closedAt: momentLib.momentMod.momentNs.Moment = null,
-    mergedAt: momentLib.momentMod.momentNs.Moment = null,
+    closedAt: momentLib.momentMod.Moment = null,
+    mergedAt: momentLib.momentMod.Moment = null,
     milestone: typedDashGithubDashApiLib.distInterfacesMilestoneMod.Milestone = null
   ): PullRequest = {
     val __obj = js.Dynamic.literal(assignees = assignees, base = base, body = body, createdAt = createdAt, createdBy = createdBy, head = head, htmlUri = htmlUri, id = id, loadAsync = js.Any.fromFunction0(loadAsync), loadIssueAsync = js.Any.fromFunction0(loadIssueAsync), loadReviewCommentsAsync = js.Any.fromFunction0(loadReviewCommentsAsync), loadReviewRequestsAsync = js.Any.fromFunction0(loadReviewRequestsAsync), loadReviewsAsync = js.Any.fromFunction0(loadReviewsAsync), locked = locked, number = number, state = state.asInstanceOf[js.Any], title = title, updatedAt = updatedAt)

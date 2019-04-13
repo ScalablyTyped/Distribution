@@ -7,24 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "Null")
 @js.native
-class Null ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.Null {
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
-  /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
-    */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
-}
+class Null () extends BaseBlock[LocalValueBlock]
 

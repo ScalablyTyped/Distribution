@@ -95,19 +95,20 @@ class SearchCls () extends Search {
   override def setOptions(An: js.Any): scala.Unit = js.native
 }
 
-object Search {
-  @scala.inline
-  def apply(
-    find: IEditSession => Range,
-    findAll: IEditSession => js.Array[Range],
-    getOptions: () => js.Any,
-    replace: (java.lang.String, java.lang.String) => java.lang.String,
-    set: js.Any => Search,
-    setOptions: js.Any => scala.Unit
-  ): Search = {
-    val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), getOptions = js.Any.fromFunction0(getOptions), replace = js.Any.fromFunction2(replace), set = js.Any.fromFunction1(set), setOptions = js.Any.fromFunction1(setOptions))
-  
-    __obj.asInstanceOf[Search]
-  }
-}
+@JSGlobal("AceAjax.Search")
+@js.native
+object Search
+  extends /**
+  * Creates a new `Search` object. The following search options are avaliable:
+  * - `needle`: The string or regular expression you're looking for
+  * - `backwards`: Whether to search backwards from where cursor currently is. Defaults to `false`.
+  * - `wrap`: Whether to wrap the search back to the beginning when it hits the end. Defaults to `false`.
+  * - `caseSensitive`: Whether the search ought to be case-sensitive. Defaults to `false`.
+  * - `wholeWord`: Whether the search matches only on whole words. Defaults to `false`.
+  * - `range`: The [[Range]] to search within. Set this to `null` for the whole document
+  * - `regExp`: Whether the search is a regular expression or not. Defaults to `false`.
+  * - `start`: The starting [[Range]] or cursor position to begin the search
+  * - `skipCurrent`: Whether or not to include the current line in the search. Default to `false`.
+  **/
+org.scalablytyped.runtime.Instantiable0[Search]
 

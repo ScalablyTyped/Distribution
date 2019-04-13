@@ -19,7 +19,7 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply(): js.Promise[js.Array[psDashListLib.psDashListMod.psListNs.ProcessDescriptor]] = js.native
-  def apply(options: psDashListLib.psDashListMod.psListNs.Options): js.Promise[js.Array[psDashListLib.psDashListMod.psListNs.ProcessDescriptor]] = js.native
+  def apply(): js.Promise[js.Array[psDashListLib.psDashListMod.ProcessDescriptor]] = js.native
+  def apply(options: psDashListLib.psDashListMod.Options): js.Promise[js.Array[psDashListLib.psDashListMod.ProcessDescriptor]] = js.native
 }
 

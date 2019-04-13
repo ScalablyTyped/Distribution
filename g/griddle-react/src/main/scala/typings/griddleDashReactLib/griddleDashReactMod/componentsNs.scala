@@ -16,10 +16,10 @@ object componentsNs extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var columnId: js.UndefOr[java.lang.String] = js.undefined
     var griddleKey: js.UndefOr[scala.Double] = js.undefined
-    var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
     var value: js.UndefOr[js.Any] = js.undefined
   }
   
@@ -87,7 +87,7 @@ object componentsNs extends js.Object {
     var setFilter: js.UndefOr[
         js.Function1[/* filter */ griddleDashReactLib.griddleDashReactMod.GriddleFilter, scala.Unit]
       ] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   }
   
   @js.native
@@ -116,10 +116,10 @@ object componentsNs extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var columnIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
     var griddleKey: js.UndefOr[java.lang.String] = js.undefined
-    var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   }
   
   @js.native
@@ -129,7 +129,7 @@ object componentsNs extends js.Object {
   trait SettingsProps extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var settingsComponents: js.UndefOr[js.Array[griddleDashReactLib.GriddleComponent[_]]] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   }
   
   @js.native
@@ -138,8 +138,8 @@ object componentsNs extends js.Object {
   
   trait SettingsToggleProps extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
-    var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
     var text: js.UndefOr[js.Any] = js.undefined
   }
   
@@ -153,7 +153,7 @@ object componentsNs extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var isEnabled: js.UndefOr[scala.Boolean] = js.undefined
     var isVisible: js.UndefOr[scala.Boolean] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   }
   
   @js.native
@@ -168,7 +168,7 @@ object componentsNs extends js.Object {
     var Row: js.UndefOr[js.Any] = js.undefined
     var className: js.UndefOr[java.lang.String] = js.undefined
     var rowIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   }
   
   @js.native
@@ -183,10 +183,10 @@ object componentsNs extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var columnId: js.UndefOr[scala.Double] = js.undefined
     var icon: js.UndefOr[js.Any] = js.undefined
-    var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.Element]] = js.undefined
-    var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+    var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.Element]] = js.undefined
+    var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
     var title: js.UndefOr[java.lang.String] = js.undefined
   }
   

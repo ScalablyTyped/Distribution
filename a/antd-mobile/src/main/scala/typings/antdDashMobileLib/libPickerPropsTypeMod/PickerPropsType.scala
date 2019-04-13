@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   var extra: js.UndefOr[java.lang.String] = js.undefined
   var format: js.UndefOr[
     js.Function1[
-      /* values */ js.Array[reactLib.reactMod.ReactNs.ReactNode], 
-      java.lang.String | js.Array[reactLib.reactMod.ReactNs.ReactNode]
+      /* values */ js.Array[reactLib.reactMod.ReactNode], 
+      java.lang.String | js.Array[reactLib.reactMod.ReactNode]
     ]
   ] = js.undefined
   var indicatorStyle: js.UndefOr[js.Any] = js.undefined
@@ -38,7 +38,7 @@ object PickerPropsType {
     cascade: js.UndefOr[scala.Boolean] = js.undefined,
     cols: scala.Int | scala.Double = null,
     extra: java.lang.String = null,
-    format: /* values */ js.Array[reactLib.reactMod.ReactNs.ReactNode] => java.lang.String | js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    format: /* values */ js.Array[reactLib.reactMod.ReactNode] => java.lang.String | js.Array[reactLib.reactMod.ReactNode] = null,
     indicatorStyle: js.Any = null,
     itemStyle: js.Any = null,
     onChange: /* date */ js.UndefOr[rmcDashCascaderLib.libCascaderTypesMod.CascaderValue] => scala.Unit = null,

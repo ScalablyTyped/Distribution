@@ -19,7 +19,7 @@ trait CheckboxProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the checkbox shown as disabled and cannot be modified.
     * @default false
@@ -28,7 +28,7 @@ trait CheckboxProps
   /**
     * Text label to attach next to the checkbox element.
     */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * The name of the field to set in the input checkbox.
     */
@@ -55,11 +55,11 @@ object CheckboxProps {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
+    label: reactLib.reactMod.ReactNode = null,
     name: java.lang.String = null,
     onBlur: js.Function = null,
     onChange: js.Function = null,
@@ -85,7 +85,7 @@ object CheckboxProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: CheckboxTheme = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()

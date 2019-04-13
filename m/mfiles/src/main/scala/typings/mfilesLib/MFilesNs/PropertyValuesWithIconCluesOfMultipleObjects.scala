@@ -17,3 +17,8 @@ class PropertyValuesWithIconCluesOfMultipleObjects ()
   override def Item(Index: scala.Double): mfilesLib.IPropertyValuesWithIconClues = js.native
 }
 
+@JSGlobal("MFiles.PropertyValuesWithIconCluesOfMultipleObjects")
+@js.native
+object PropertyValuesWithIconCluesOfMultipleObjects
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValuesWithIconCluesOfMultipleObjects]
+

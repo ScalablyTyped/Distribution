@@ -26,4 +26,5 @@ package object shipitDashCliMod {
     /* fn */ js.Function0[scala.Unit], 
     js.Any
   ]
+  type Tasks = org.scalablytyped.runtime.StringDictionary[Task]
 }

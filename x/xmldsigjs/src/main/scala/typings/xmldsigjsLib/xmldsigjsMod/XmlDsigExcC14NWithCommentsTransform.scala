@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "XmlDsigExcC14NWithCommentsTransform")
 @js.native
-class XmlDsigExcC14NWithCommentsTransform ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.XmlDsigExcC14NWithCommentsTransform
+class XmlDsigExcC14NWithCommentsTransform () extends XmlDsigExcC14NTransform
 

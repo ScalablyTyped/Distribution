@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Health ()
-  extends awsDashSdkLib.clientsHealthMod.namespaced {
-  def this(options: awsDashSdkLib.clientsHealthMod.HealthNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsHealthMod.^ {
+  def this(options: awsDashSdkLib.clientsHealthMod.ClientConfiguration) = this()
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FlagIconProps extends js.Object {
   var Component: js.UndefOr[java.lang.String] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * This is always appended as-is to class in the HTML.
     */
@@ -34,7 +34,7 @@ object FlagIconProps {
   def apply(
     code: java.lang.String,
     Component: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     flip: FlagIconFlip = null,
     rotate: FlagIconRotate = null,

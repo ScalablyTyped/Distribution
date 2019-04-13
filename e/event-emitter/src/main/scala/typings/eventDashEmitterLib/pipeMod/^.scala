@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    source: eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter,
-    target: eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter
-  ): eventDashEmitterLib.pipeMod.pipeNs.EmitterPipe = js.native
+    source: eventDashEmitterLib.eventDashEmitterMod.Emitter,
+    target: eventDashEmitterLib.eventDashEmitterMod.Emitter
+  ): EmitterPipe = js.native
   def apply(
-    source: eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter,
-    target: eventDashEmitterLib.eventDashEmitterMod.eeNs.Emitter,
+    source: eventDashEmitterLib.eventDashEmitterMod.Emitter,
+    target: eventDashEmitterLib.eventDashEmitterMod.Emitter,
     emitMethodName: java.lang.String | js.Symbol
-  ): eventDashEmitterLib.pipeMod.pipeNs.EmitterPipe = js.native
+  ): EmitterPipe = js.native
 }
 

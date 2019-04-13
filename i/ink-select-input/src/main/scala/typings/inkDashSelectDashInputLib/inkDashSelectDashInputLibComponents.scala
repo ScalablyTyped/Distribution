@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object inkDashSelectDashInputLibComponents {
   @scala.inline
-  def InkDashSelectDashInput: reactLib.reactMod.ReactNs.ComponentType[
+  def InkDashSelectDashInput: reactLib.reactMod.ComponentType[
     inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps[inkDashSelectDashInputLib.inkDashSelectDashInputMod.ItemOfSelectInput]
-  ] = js.constructorOf[inkDashSelectDashInputLib.inkDashSelectDashInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[inkDashSelectDashInputLib.inkDashSelectDashInputMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps[inkDashSelectDashInputLib.inkDashSelectDashInputMod.ItemOfSelectInput]]]
   @scala.inline
   def SelectInputProps: inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps.type = inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps

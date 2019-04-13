@@ -24,16 +24,12 @@ trait Mongoose extends js.Object {
   var connection: Connection = js.native
   var models: org.scalablytyped.runtime.StringDictionary[Model[_, js.Object]] = js.native
   var version: java.lang.String = js.native
-  def connect(uris: java.lang.String): js.Promise[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias mongoose.mongoose.Mongoose */ js.Object
-  ] = js.native
+  def connect(uris: java.lang.String): js.Promise[Mongoose] = js.native
   def connect(
     uris: java.lang.String,
     callback: js.Function1[/* err */ mongodbLib.mongodbMod.MongoError, scala.Unit]
   ): scala.Null = js.native
-  def connect(uris: java.lang.String, options: ConnectionOptions): js.Promise[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias mongoose.mongoose.Mongoose */ js.Object
-  ] = js.native
+  def connect(uris: java.lang.String, options: ConnectionOptions): js.Promise[Mongoose] = js.native
   def connect(
     uris: java.lang.String,
     options: ConnectionOptions,

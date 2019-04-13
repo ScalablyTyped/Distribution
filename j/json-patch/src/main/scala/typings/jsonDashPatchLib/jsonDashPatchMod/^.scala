@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("apply")
-  def apply(document: js.Any, patches: js.Array[jsonDashPatchLib.jsonDashPatchMod.jsonpatchNs.OpPatch]): js.Any = js.native
-  def compile(patches: js.Array[jsonDashPatchLib.jsonDashPatchMod.jsonpatchNs.OpPatch]): js.Function1[/* document */ js.Any, _] = js.native
+  def apply(document: js.Any, patches: js.Array[OpPatch]): js.Any = js.native
+  def compile(patches: js.Array[OpPatch]): js.Function1[/* document */ js.Any, _] = js.native
 }
 

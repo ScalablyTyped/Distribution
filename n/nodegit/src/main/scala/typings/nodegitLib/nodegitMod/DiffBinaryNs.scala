@@ -17,6 +17,5 @@ object DiffBinaryNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.diffDashBinaryMod.DiffBinaryNs.DIFF_BINARY with scala.Double] = js.native
   }
   
-  type DIFF_BINARY = nodegitLib.diffDashBinaryMod.DiffBinaryNs.DIFF_BINARY
 }
 

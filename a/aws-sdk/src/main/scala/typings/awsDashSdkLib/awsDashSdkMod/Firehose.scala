@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Firehose ()
   extends awsDashSdkLib.clientsAllMod.Firehose {
-  def this(options: awsDashSdkLib.clientsFirehoseMod.FirehoseNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsFirehoseMod.ClientConfiguration) = this()
 }
 

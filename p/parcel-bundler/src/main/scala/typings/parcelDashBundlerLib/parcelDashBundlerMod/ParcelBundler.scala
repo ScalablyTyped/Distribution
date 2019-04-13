@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ParcelBundler extends js.Object {
   def addAssetType(extension: java.lang.String, path: java.lang.String): scala.Unit = js.native
   def addPackager(`type`: java.lang.String, packager: java.lang.String): scala.Unit = js.native
-  def bundle(): js.Promise[parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle] = js.native
+  def bundle(): js.Promise[ParcelBundle] = js.native
   def middleware(): js.Function3[
     /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request, 
     /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
@@ -51,10 +51,7 @@ trait ParcelBundler extends js.Object {
   @JSName("on")
   def on_bundled(
     name: parcelDashBundlerLib.parcelDashBundlerLibStrings.bundled,
-    cb: js.Function1[
-      /* bundle */ parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle, 
-      scala.Unit
-    ]
+    cb: js.Function1[/* bundle */ ParcelBundle, scala.Unit]
   ): scala.Unit = js.native
   def serve(): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
   def serve(port: scala.Double): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
@@ -70,11 +67,7 @@ trait ParcelBundler extends js.Object {
     https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true`,
     host: java.lang.String
   ): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(port: scala.Double, https: parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.HttpsOptions): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(
-    port: scala.Double,
-    https: parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.HttpsOptions,
-    host: java.lang.String
-  ): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
+  def serve(port: scala.Double, https: HttpsOptions): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
+  def serve(port: scala.Double, https: HttpsOptions, host: java.lang.String): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
 }
 

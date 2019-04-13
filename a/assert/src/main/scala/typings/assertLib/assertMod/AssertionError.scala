@@ -8,19 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("assert", "AssertionError")
 @js.native
 class AssertionError ()
-  extends assertLib.assertMod.assertNs.AssertionError {
+  extends stdLib.Error {
   def this(options: assertLib.Anon_Actual) = this()
-  /* CompleteClass */
-  override var actual: js.Any = js.native
-  /* CompleteClass */
-  override var expected: js.Any = js.native
-  /* CompleteClass */
-  override var generatedMessage: scala.Boolean = js.native
+  var actual: js.Any = js.native
+  var expected: js.Any = js.native
+  var generatedMessage: scala.Boolean = js.native
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native
-  /* CompleteClass */
-  override var operator: java.lang.String = js.native
+  var operator: java.lang.String = js.native
 }
 

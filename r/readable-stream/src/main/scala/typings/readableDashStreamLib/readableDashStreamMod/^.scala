@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("readable-stream", JSImport.Namespace)
 @js.native
+class ^ () extends _Readable {
+  def this(options: ReadableOptions) = this()
+}
+
+@JSImport("readable-stream", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
   // if (process.env.READABLE_STREAM === 'disable' && Stream)
   var NodeBaseExport: nodeLib.streamMod.Readable with readableDashStreamLib.Anon_Duplex = js.native

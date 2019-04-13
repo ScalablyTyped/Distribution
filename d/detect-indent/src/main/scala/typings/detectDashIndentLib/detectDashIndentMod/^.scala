@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("detect-indent", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(str: java.lang.String): detectDashIndentLib.detectDashIndentMod.detectIndentNs.IndentInfo = js.native
+  def apply(str: java.lang.String): IndentInfo = js.native
 }
 

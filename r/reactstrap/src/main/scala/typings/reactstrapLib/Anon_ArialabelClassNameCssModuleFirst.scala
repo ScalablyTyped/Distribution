@@ -13,7 +13,7 @@ trait Anon_ArialabelClassNameCssModuleFirst extends js.Object {
   var last: js.UndefOr[scala.Boolean] = js.undefined
   var next: js.UndefOr[scala.Boolean] = js.undefined
   var previous: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ArialabelClassNameCssModuleFirst {
@@ -26,7 +26,7 @@ object Anon_ArialabelClassNameCssModuleFirst {
     last: js.UndefOr[scala.Boolean] = js.undefined,
     next: js.UndefOr[scala.Boolean] = js.undefined,
     previous: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ArialabelClassNameCssModuleFirst = {
     val __obj = js.Dynamic.literal()
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)

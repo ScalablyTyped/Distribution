@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Mechanism
   extends org.scalablytyped.runtime.Instantiable0[saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1Mechanism]
      with org.scalablytyped.runtime.Instantiable1[
-      /* options */ saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1MechanismNs.Options, 
+      /* options */ saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.Options, 
       saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1Mechanism
     ]
 

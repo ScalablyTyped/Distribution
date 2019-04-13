@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - xstateLib.Anon_Type
+  - xstateLib.Anon_TypeActionTypes
   - RaisedEvent[TEvent]
   - ErrorExecutionEvent
 */

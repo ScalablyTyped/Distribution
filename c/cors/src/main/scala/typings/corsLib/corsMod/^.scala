@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cors", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(options: corsLib.corsMod.eNs.CorsOptions | corsLib.corsMod.eNs.CorsOptionsDelegate): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(): expressLib.expressMod.RequestHandler = js.native
+  def apply(options: CorsOptions | CorsOptionsDelegate): expressLib.expressMod.RequestHandler = js.native
 }
 

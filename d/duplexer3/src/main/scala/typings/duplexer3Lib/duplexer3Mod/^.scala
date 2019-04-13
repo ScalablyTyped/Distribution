@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    options: duplexer3Lib.duplexer3Mod.duplexer3Ns.Options,
+    options: Options,
     writableStream: nodeLib.NodeJSNs.WritableStream,
     readableStream: nodeLib.NodeJSNs.ReadableStream
   ): nodeLib.streamMod.Duplex = js.native

@@ -17,7 +17,7 @@ trait Options extends js.Object {
   /**
     * Any additional options that should be passed through to node-resolve
     */
-  var customResolveOptions: js.UndefOr[resolveLib.resolveMod.resolveNs.AsyncOpts] = js.undefined
+  var customResolveOptions: js.UndefOr[resolveLib.resolveMod.AsyncOpts] = js.undefined
   /**
     * Not all files you want to resolve are .js files.
     * @default ['.mjs', '.js', '.json', '.node']
@@ -72,7 +72,7 @@ object Options {
   @scala.inline
   def apply(
     browser: js.UndefOr[scala.Boolean] = js.undefined,
-    customResolveOptions: resolveLib.resolveMod.resolveNs.AsyncOpts = null,
+    customResolveOptions: resolveLib.resolveMod.AsyncOpts = null,
     extensions: js.Array[java.lang.String] = null,
     jail: java.lang.String = null,
     jsnext: js.UndefOr[scala.Boolean] = js.undefined,

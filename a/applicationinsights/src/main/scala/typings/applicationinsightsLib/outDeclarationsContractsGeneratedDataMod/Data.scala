@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Data[TDomain]
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedBaseMod.namespaced {
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedBaseMod.^ {
   /**
     * Container for data item (B section).
     */

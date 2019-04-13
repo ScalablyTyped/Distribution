@@ -20,9 +20,9 @@ trait LocationProvider
   				 */
   var minUpdateTime: scala.Double
   /**
-  				 * Type of location provider: [PROVIDER_GPS](Titanium.Geolocation.PROVIDER_GPS),
-  				 * [PROVIDER_NETWORK](Titanium.Geolocation.PROVIDER_NETWORK), or
-  				 * [PROVIDER_PASSIVE](Titanium.Geolocation.PROVIDER_PASSIVE).
+  				 * Type of location provider: [PROVIDER_GPS](Titanium.Geolocation.Android.PROVIDER_GPS),
+  				 * [PROVIDER_NETWORK](Titanium.Geolocation.Android.PROVIDER_NETWORK), or
+  				 * [PROVIDER_PASSIVE](Titanium.Geolocation.Android.PROVIDER_PASSIVE).
   				 */
   var name: java.lang.String
   /**

@@ -23,22 +23,16 @@ import scala.scalajs.js.annotation._
 /**
   * The DiagramEvent class constructor produces an empty DiagramEvent.
   */
-class DiagramEvent ()
-  extends goLib.goMod.goNs.DiagramEvent {
+class DiagramEvent () extends js.Object {
   /**Gets or sets whether any default actions associated with this diagram event should be avoided or cancelled.*/
-  /* CompleteClass */
-  override var cancel: scala.Boolean = js.native
+  var cancel: scala.Boolean = js.native
   /**This read-only property returns the diagram associated with the event.*/
-  /* CompleteClass */
-  override var diagram: goLib.goMod.goNs.Diagram = js.native
+  var diagram: Diagram = js.native
   /**Gets or sets the name of the kind of diagram event that this represents.*/
-  /* CompleteClass */
-  override var name: java.lang.String = js.native
+  var name: java.lang.String = js.native
   /**Gets or sets an optional object that describes the change to the subject of the diagram event.*/
-  /* CompleteClass */
-  override var parameter: js.Any = js.native
+  var parameter: js.Any = js.native
   /**Gets or sets an optional object that is the subject of the diagram event.*/
-  /* CompleteClass */
-  override var subject: js.Any = js.native
+  var subject: js.Any = js.native
 }
 

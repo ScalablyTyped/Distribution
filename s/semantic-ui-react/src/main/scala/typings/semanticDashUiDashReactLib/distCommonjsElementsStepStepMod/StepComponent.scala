@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StepComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[StepProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Content: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.ComponentClass[StepProps, reactLib.reactMod.ComponentState] {
+  var Content: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsStepStepContentMod.StepContentProps
   ] = js.native
-  var Description: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Description: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps
   ] = js.native
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsStepStepGroupMod.StepGroupProps] = js.native
-  var Title: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps] = js.native
+  var Group: reactLib.reactMod.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsStepStepGroupMod.StepGroupProps] = js.native
+  var Title: reactLib.reactMod.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps] = js.native
 }
 

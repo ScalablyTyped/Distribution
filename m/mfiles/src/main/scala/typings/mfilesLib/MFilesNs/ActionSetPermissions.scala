@@ -17,3 +17,8 @@ class ActionSetPermissions ()
   override def Clone(): mfilesLib.IActionSetPermissions = js.native
 }
 
+@JSGlobal("MFiles.ActionSetPermissions")
+@js.native
+object ActionSetPermissions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IActionSetPermissions]
+

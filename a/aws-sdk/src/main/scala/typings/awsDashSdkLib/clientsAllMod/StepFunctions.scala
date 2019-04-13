@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class StepFunctions ()
-  extends awsDashSdkLib.clientsStepfunctionsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsStepfunctionsMod.^ {
+  def this(options: awsDashSdkLib.clientsStepfunctionsMod.ClientConfiguration) = this()
 }
 

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object atStorybookAddonDashLinksLibComponents {
   @scala.inline
-  def React: reactLib.reactMod.ReactNs.ComponentType[
-    (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
+  def React: reactLib.reactMod.ComponentType[
+    (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
       stdLib.HTMLAnchorElement
     ]) with Anon_Kind
-  ] = js.constructorOf[atStorybookAddonDashLinksLib.reactMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
+  ] = js.constructorOf[atStorybookAddonDashLinksLib.reactMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
+  (reactLib.reactMod.DetailedHTMLProps[
+    reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
     stdLib.HTMLAnchorElement
   ]) with atStorybookAddonDashLinksLib.Anon_Kind]]
 }

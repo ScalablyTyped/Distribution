@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AddPageletConfig extends js.Object {
   var id: java.lang.String
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
-  var mode: js.UndefOr[yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode] = js.undefined
+  var mode: js.UndefOr[yogDashBigpipeLib.yogDashBigpipeMod.PageletNs.mode] = js.undefined
 }
 
 object AddPageletConfig {
@@ -16,7 +16,7 @@ object AddPageletConfig {
   def apply(
     id: java.lang.String,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    mode: yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode = null
+    mode: yogDashBigpipeLib.yogDashBigpipeMod.PageletNs.mode = null
   ): AddPageletConfig = {
     val __obj = js.Dynamic.literal(id = id)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)

@@ -43,7 +43,7 @@ trait IOverflowListProps[T]
     */
   var onOverflow: js.UndefOr[js.Function1[/* overflowItems */ js.Array[T], scala.Unit]] = js.undefined
   /** CSS properties to apply to the root element. */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * HTML tag name for the container element.
     * @default "div"
@@ -59,26 +59,26 @@ trait IOverflowListProps[T]
     * Typical use cases for this prop will put overflowed items in a dropdown
     * menu or display a "+X items" label.
     */
-  def overflowRenderer(overflowItems: js.Array[T]): reactLib.reactMod.ReactNs.ReactNode
+  def overflowRenderer(overflowItems: js.Array[T]): reactLib.reactMod.ReactNode
   /**
     * Callback invoked to render each visible item.
     * Remember to set a `key` on the rendered element!
     */
-  def visibleItemRenderer(item: T, index: scala.Double): reactLib.reactMod.ReactNs.ReactChild
+  def visibleItemRenderer(item: T, index: scala.Double): reactLib.reactMod.ReactChild
 }
 
 object IOverflowListProps {
   @scala.inline
   def apply[T](
     items: js.Array[T],
-    overflowRenderer: js.Array[T] => reactLib.reactMod.ReactNs.ReactNode,
-    visibleItemRenderer: (T, scala.Double) => reactLib.reactMod.ReactNs.ReactChild,
+    overflowRenderer: js.Array[T] => reactLib.reactMod.ReactNode,
+    visibleItemRenderer: (T, scala.Double) => reactLib.reactMod.ReactChild,
     className: java.lang.String = null,
     collapseFrom: atBlueprintjsCoreLib.libEsmCommonBoundaryMod.Boundary = null,
     minVisibleItems: scala.Int | scala.Double = null,
     observeParents: js.UndefOr[scala.Boolean] = js.undefined,
     onOverflow: /* overflowItems */ js.Array[T] => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null
   ): IOverflowListProps[T] = {
     val __obj = js.Dynamic.literal(items = items, overflowRenderer = js.Any.fromFunction1(overflowRenderer), visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))

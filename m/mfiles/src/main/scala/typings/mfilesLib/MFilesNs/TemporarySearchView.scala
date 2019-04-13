@@ -17,3 +17,8 @@ class TemporarySearchView ()
   override val View: mfilesLib.IView = js.native
 }
 
+@JSGlobal("MFiles.TemporarySearchView")
+@js.native
+object TemporarySearchView
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ITemporarySearchView]
+

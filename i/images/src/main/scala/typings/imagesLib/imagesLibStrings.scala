@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object imagesLibStrings {
   @js.native
   sealed trait bmp
-    extends imagesLib.imagesMod.imagesNs.SupportType
+    extends imagesLib.imagesMod.SupportType
   
   @js.native
   sealed trait gif
-    extends imagesLib.imagesMod.imagesNs.SupportType
+    extends imagesLib.imagesMod.SupportType
   
   @js.native
   sealed trait jpg
-    extends imagesLib.imagesMod.imagesNs.SupportType
+    extends imagesLib.imagesMod.SupportType
   
   @js.native
   sealed trait png
-    extends imagesLib.imagesMod.imagesNs.SupportType
+    extends imagesLib.imagesMod.SupportType
   
   @js.native
   sealed trait raw
-    extends imagesLib.imagesMod.imagesNs.SupportType
+    extends imagesLib.imagesMod.SupportType
   
   @js.native
   sealed trait webp
-    extends imagesLib.imagesMod.imagesNs.SupportType
+    extends imagesLib.imagesMod.SupportType
   
   @scala.inline
   def bmp: bmp = "bmp".asInstanceOf[bmp]

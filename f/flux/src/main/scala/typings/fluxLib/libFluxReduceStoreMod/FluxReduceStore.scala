@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FluxReduceStore[TState, TPayload]
-  extends fluxLib.libFluxStoreMod.namespaced[TPayload] {
+  extends fluxLib.libFluxStoreMod.^[TPayload] {
   /**
     * Checks if two versions of state are the same.
     * You do not need to override this if your state is immutable.

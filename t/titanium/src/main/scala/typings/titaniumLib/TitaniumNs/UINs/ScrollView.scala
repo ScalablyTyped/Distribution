@@ -199,8 +199,8 @@ trait ScrollView extends View {
   /**
   			 * Sets the value of the [contentOffset](Titanium.UI.ScrollView.contentOffset) property.
   			 */
-  def setContentOffset(contentOffset: js.Any): scala.Unit = js.native
-  def setContentOffset(contentOffset: js.Any, animated: titaniumLib.contentOffsetOption): scala.Unit = js.native
+  def setContentOffset(contentOffsetXY: js.Any): scala.Unit = js.native
+  def setContentOffset(contentOffsetXY: js.Any, animated: titaniumLib.contentOffsetOption): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ScrollView.contentWidth> property.
   			 */

@@ -12,7 +12,7 @@ class CSSTransformValue protected ()
      with /* index */ org.scalablytyped.runtime.NumberDictionary[CSSTransformComponent] {
   def this(transforms: js.Array[CSSTransformComponent]) = this()
   val is2D: scala.Boolean = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[stdLib.IterableIterator[CSSTransformComponent]] = js.native
   val length: scala.Double = js.native
   def toMatrix(): stdLib.DOMMatrix = js.native

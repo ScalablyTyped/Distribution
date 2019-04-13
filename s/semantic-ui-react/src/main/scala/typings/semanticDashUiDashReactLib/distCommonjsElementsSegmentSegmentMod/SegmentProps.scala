@@ -16,7 +16,7 @@ object SegmentProps {
     as: js.Any = null,
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom = null,
     basic: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     circular: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     clearing: js.UndefOr[scala.Boolean] = js.undefined,

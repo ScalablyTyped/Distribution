@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   var anchor: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom
   ] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var elevation: js.UndefOr[scala.Double] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
@@ -32,13 +32,13 @@ object DrawerProps {
     PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     SlideProps: stdLib.Partial[atMaterialDashUiCoreLib.slideSlideMod.SlideProps] = null,
     anchor: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[DrawerClassKey]] = null,
     elevation: scala.Int | scala.Double = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
     transitionDuration: js.UndefOr[scala.Nothing] = js.undefined,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.permanent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.persistent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.temporary = null

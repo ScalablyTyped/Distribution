@@ -13,7 +13,7 @@ abstract class WebHook[TData /* <: WebHookData */, TApiData /* <: typedDashGithu
   def this(secret: java.lang.String, options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()
   def this(secret: js.UndefOr[scala.Nothing], options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()
   val handlers: js.Any = js.native
-  val router: expressLib.expressMod.eNs.Router = js.native
+  val router: expressLib.expressMod.Router = js.native
   var secret: js.UndefOr[js.Any] = js.native
   /* protected */ def convertData(request: WebHookData, data: TApiData): TData = js.native
   def registerAsyncHandler(handler: typescriptDashEventDashHandlerLib.distFuncMod.AsyncAction[TData]): scala.Unit = js.native

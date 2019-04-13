@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in {[ P in keyof react.react.React.InputHTMLAttributes<std.HTMLInputElement> ]: P} & {[ P in 'style' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.React.InputHTMLAttributes<std.HTMLInputElement>] ]: react.react.React.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait GeosuggestProps extends js.Object {
+- Dropped {[ P in {[ P in keyof react.react.InputHTMLAttributes<std.HTMLInputElement> ]: P} & {[ P in 'style' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.InputHTMLAttributes<std.HTMLInputElement>] ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait GeosuggestProps extends js.Object {
   var autoActivateFirstSuggest: js.UndefOr[scala.Boolean] = js.undefined
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var bounds: js.UndefOr[googlemapsLib.googleNs.mapsNs.LatLngBounds] = js.undefined

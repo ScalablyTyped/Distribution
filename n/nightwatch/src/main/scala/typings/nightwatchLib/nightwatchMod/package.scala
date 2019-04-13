@@ -17,5 +17,8 @@ package object nightwatchMod {
   ]
   type NightwatchCallbackResult = NightwatchTypedCallbackResult[js.Any]
   type NightwatchTest = js.Function1[/* browser */ NightwatchBrowser, scala.Unit]
+  type NightwatchTestFunctions = org.scalablytyped.runtime.StringDictionary[NightwatchTest]
   type NightwatchTestHook = js.Function2[/* browser */ NightwatchBrowser, /* done */ js.Function0[scala.Unit], scala.Unit]
+  type NightwatchTestSettings = org.scalablytyped.runtime.StringDictionary[NightwatchTestSettingScreenshots]
+  type NightwatchTests = NightwatchTestFunctions | NightwatchTestHooks
 }

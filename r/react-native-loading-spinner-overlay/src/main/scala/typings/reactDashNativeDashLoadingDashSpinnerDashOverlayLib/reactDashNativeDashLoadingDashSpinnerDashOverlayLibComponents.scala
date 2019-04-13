@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashLoadingDashSpinnerDashOverlayLibComponents {
   @scala.inline
-  def ReactDashNativeDashLoadingDashSpinnerDashOverlay: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashLoadingDashSpinnerDashOverlay: reactLib.reactMod.ComponentType[
     reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps
-  ] = js.constructorOf[reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps]]
   @scala.inline
   def SpinnerProps: reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps.type = reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayMod.SpinnerProps

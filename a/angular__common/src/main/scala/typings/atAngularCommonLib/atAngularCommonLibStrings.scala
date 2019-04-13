@@ -10,6 +10,15 @@ object atAngularCommonLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait browser extends js.Object
+  
+  @js.native
+  sealed trait browserWorkerApp extends js.Object
+  
+  @js.native
+  sealed trait browserWorkerUi extends js.Object
+  
+  @js.native
   sealed trait code extends js.Object
   
   @js.native
@@ -17,6 +26,9 @@ object atAngularCommonLibStrings {
   
   @js.native
   sealed trait narrow extends js.Object
+  
+  @js.native
+  sealed trait server extends js.Object
   
   @js.native
   sealed trait symbol extends js.Object
@@ -30,11 +42,19 @@ object atAngularCommonLibStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
+  @scala.inline
+  def browserWorkerApp: browserWorkerApp = "browserWorkerApp".asInstanceOf[browserWorkerApp]
+  @scala.inline
+  def browserWorkerUi: browserWorkerUi = "browserWorkerUi".asInstanceOf[browserWorkerUi]
+  @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def narrow: narrow = "narrow".asInstanceOf[narrow]
+  @scala.inline
+  def server: server = "server".asInstanceOf[server]
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline

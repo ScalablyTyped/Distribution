@@ -7,14 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack", "NormalModuleReplacementPlugin")
 @js.native
-class NormalModuleReplacementPlugin protected ()
-  extends webpackLib.webpackMod.webpackNs.NormalModuleReplacementPlugin {
+class NormalModuleReplacementPlugin protected () extends Plugin {
   def this(resourceRegExp: js.Any, newResource: js.Any) = this()
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(args: js.Any*): scala.Unit = js.native
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(compiler: webpackLib.webpackMod.webpackNs.Compiler): scala.Unit = js.native
 }
 

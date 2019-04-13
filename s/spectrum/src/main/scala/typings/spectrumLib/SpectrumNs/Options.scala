@@ -22,9 +22,7 @@ trait Options extends js.Object {
     * You can prevent the colorpicker from showing up if you return false in the beforeShow event.
     * This event is ignored on a flat colorpicker.
     */
-  var beforeShow: js.UndefOr[
-    js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit]
-  ] = js.undefined
+  var beforeShow: js.UndefOr[js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.Instance, scala.Unit]] = js.undefined
   /**
     * Sets the text on the cancel button.
     */
@@ -32,9 +30,7 @@ trait Options extends js.Object {
   /**
     * Called as the original input changes. Only happens when the input is closed or the 'Choose' button is clicked.
     */
-  var change: js.UndefOr[
-    js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit]
-  ] = js.undefined
+  var change: js.UndefOr[js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.Instance, scala.Unit]] = js.undefined
   /**
     * Sets the text on the choose button.
     */
@@ -70,9 +66,7 @@ trait Options extends js.Object {
     * Note, when any colorpicker on the page is shown it will hide any that are already open.
     * This event is ignored on a flat colorpicker.
     */
-  var hide: js.UndefOr[
-    js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit]
-  ] = js.undefined
+  var hide: js.UndefOr[js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.Instance, scala.Unit]] = js.undefined
   /**
     * Automatically hides the colorpicker after a palette color is selected.
     */
@@ -90,9 +84,7 @@ trait Options extends js.Object {
   /**
     * Called as the user moves around within the colorpicker.
     */
-  var move: js.UndefOr[
-    js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit]
-  ] = js.undefined
+  var move: js.UndefOr[js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.Instance, scala.Unit]] = js.undefined
   /**
     * Sets a palette below the colorpicker to make it convenient for users to choose from
     *  frequently or recently used colors.
@@ -116,9 +108,7 @@ trait Options extends js.Object {
     * Called after the colorpicker is opened. This is ignored on a flat colorpicker.
     * Note, when any colorpicker on the page is shown it will hide any that are already open.
     */
-  var show: js.UndefOr[
-    js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit]
-  ] = js.undefined
+  var show: js.UndefOr[js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.Instance, scala.Unit]] = js.undefined
   /**
     * Allows alpha transparency selection
     */
@@ -170,25 +160,25 @@ object Options {
   def apply(
     allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
     appendTo: js.Any = null,
-    beforeShow: /* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance => scala.Unit = null,
+    beforeShow: /* color */ tinycolor2Lib.tinycolor2Mod.Instance => scala.Unit = null,
     cancelText: java.lang.String = null,
-    change: /* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance => scala.Unit = null,
+    change: /* color */ tinycolor2Lib.tinycolor2Mod.Instance => scala.Unit = null,
     chooseText: java.lang.String = null,
     clickoutFiresChange: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     containerClassName: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     flat: js.UndefOr[scala.Boolean] = js.undefined,
-    hide: /* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance => scala.Unit = null,
+    hide: /* color */ tinycolor2Lib.tinycolor2Mod.Instance => scala.Unit = null,
     hideAfterPaletteSelect: js.UndefOr[scala.Boolean] = js.undefined,
     localStorageKey: java.lang.String = null,
     maxSelectionSize: scala.Int | scala.Double = null,
-    move: /* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance => scala.Unit = null,
+    move: /* color */ tinycolor2Lib.tinycolor2Mod.Instance => scala.Unit = null,
     palette: js.Array[js.Array[java.lang.String]] = null,
     preferredFormat: java.lang.String = null,
     replacerClassName: java.lang.String = null,
     selectionPalette: js.Array[java.lang.String] = null,
-    show: /* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance => scala.Unit = null,
+    show: /* color */ tinycolor2Lib.tinycolor2Mod.Instance => scala.Unit = null,
     showAlpha: js.UndefOr[scala.Boolean] = js.undefined,
     showButtons: js.UndefOr[scala.Boolean] = js.undefined,
     showInitial: js.UndefOr[scala.Boolean] = js.undefined,

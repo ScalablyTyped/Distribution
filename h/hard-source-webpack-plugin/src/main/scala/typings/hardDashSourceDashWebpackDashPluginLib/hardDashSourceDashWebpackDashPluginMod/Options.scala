@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var cachePrune: js.UndefOr[hardDashSourceDashWebpackDashPluginLib.Anon_MaxAge] = js.undefined
   var configHash: js.UndefOr[
     java.lang.String | (js.Function1[
-      /* webpackConfig */ js.UndefOr[webpackLib.webpackMod.webpackNs.Configuration], 
+      /* webpackConfig */ js.UndefOr[webpackLib.webpackMod.Configuration], 
       java.lang.String
     ])
   ] = js.undefined
@@ -24,7 +24,7 @@ object Options {
     cacheDirectory: java.lang.String = null,
     cachePrune: hardDashSourceDashWebpackDashPluginLib.Anon_MaxAge = null,
     configHash: java.lang.String | (js.Function1[
-      /* webpackConfig */ js.UndefOr[webpackLib.webpackMod.webpackNs.Configuration], 
+      /* webpackConfig */ js.UndefOr[webpackLib.webpackMod.Configuration], 
       java.lang.String
     ]) = null,
     environmentHash: hardDashSourceDashWebpackDashPluginLib.Anon_Directories = null,

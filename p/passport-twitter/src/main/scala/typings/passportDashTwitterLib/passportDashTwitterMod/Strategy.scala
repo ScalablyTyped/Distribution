@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("passport-twitter", "Strategy")
 @js.native
 class Strategy protected ()
-  extends passportLib.passportMod.passportNs.Strategy {
+  extends passportLib.passportMod.Strategy {
   def this(options: IStrategyOptionWithRequest, verify: js.Function5[
-      /* req */ expressLib.expressMod.eNs.Request, 
+      /* req */ expressLib.expressMod.Request, 
       /* accessToken */ java.lang.String, 
       /* refreshToken */ java.lang.String, 
       /* profile */ Profile, 
@@ -26,7 +26,7 @@ class Strategy protected ()
     ]) = this()
   @JSName("name")
   var name_Strategy: java.lang.String = js.native
-  def authenticate(req: expressLib.expressMod.eNs.Request): scala.Unit = js.native
-  def authenticate(req: expressLib.expressMod.eNs.Request, options: js.Object): scala.Unit = js.native
+  def authenticate(req: expressLib.expressMod.Request): scala.Unit = js.native
+  def authenticate(req: expressLib.expressMod.Request, options: js.Object): scala.Unit = js.native
 }
 

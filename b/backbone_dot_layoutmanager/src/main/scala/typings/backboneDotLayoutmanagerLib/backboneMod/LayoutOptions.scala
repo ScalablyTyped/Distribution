@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LayoutOptions[TModel /* <: backboneLib.backboneMod.Model */]
-  extends backboneLib.backboneMod.BackboneNs.ViewOptions[TModel] {
+  extends backboneLib.backboneMod.ViewOptions[TModel] {
   var template: js.UndefOr[java.lang.String] = js.undefined
   var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[backboneLib.backboneMod.View[TModel]]] = js.undefined
 }
@@ -16,9 +16,9 @@ object LayoutOptions {
   def apply[TModel /* <: backboneLib.backboneMod.Model */](
     attributes: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     className: java.lang.String = null,
-    collection: backboneLib.backboneMod.BackboneNs.Collection[_] = null,
+    collection: backboneLib.backboneMod.Collection[_] = null,
     el: js.Any = null,
-    events: backboneLib.backboneMod.BackboneNs.EventsHash = null,
+    events: backboneLib.backboneMod.EventsHash = null,
     id: java.lang.String = null,
     model: TModel = null,
     tagName: java.lang.String = null,

@@ -18,7 +18,7 @@ trait DropdownProps extends js.Object {
   var filterPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inputId: js.UndefOr[java.lang.String] = js.undefined
-  var itemTemplate: js.UndefOr[js.Function1[/* option */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var itemTemplate: js.UndefOr[js.Function1[/* option */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
@@ -53,7 +53,7 @@ object DropdownProps {
     filterPlaceholder: java.lang.String = null,
     id: java.lang.String = null,
     inputId: java.lang.String = null,
-    itemTemplate: /* option */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
+    itemTemplate: /* option */ js.Any => reactLib.reactMod.ReactNode = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
     onContextMenu: /* event */ stdLib.Event => scala.Unit = null,

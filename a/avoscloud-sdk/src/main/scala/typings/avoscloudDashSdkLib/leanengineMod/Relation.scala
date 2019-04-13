@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Relation ()
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.Relation {
-  def this(parent: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object) = this()
-  def this(parent: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object, key: java.lang.String) = this()
+  def this(parent: avoscloudDashSdkLib.avoscloudDashSdkMod.Object) = this()
+  def this(parent: avoscloudDashSdkLib.avoscloudDashSdkMod.Object, key: java.lang.String) = this()
 }
 

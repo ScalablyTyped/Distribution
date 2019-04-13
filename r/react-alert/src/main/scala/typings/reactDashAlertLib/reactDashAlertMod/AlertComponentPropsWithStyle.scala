@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AlertComponentPropsWithStyle extends AlertComponentProps {
-  var style: reactLib.reactMod.ReactNs.CSSProperties
+  var style: reactLib.reactMod.CSSProperties
 }
 
 object AlertComponentPropsWithStyle {
@@ -14,9 +14,9 @@ object AlertComponentPropsWithStyle {
   def apply(
     close: () => scala.Unit,
     id: java.lang.String,
-    message: reactLib.reactMod.ReactNs.ReactNode,
+    message: reactLib.reactMod.ReactNode,
     options: AlertCustomOptionsWithType,
-    style: reactLib.reactMod.ReactNs.CSSProperties
+    style: reactLib.reactMod.CSSProperties
   ): AlertComponentPropsWithStyle = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id, message = message.asInstanceOf[js.Any], options = options, style = style)
   

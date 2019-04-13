@@ -14,12 +14,12 @@ object ResponsiveOnUpdateData {
   def apply(
     width: scala.Double,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     fireOnMount: js.UndefOr[scala.Boolean] = js.undefined,
     getWidth: () => scala.Double = null,
     maxWidth: scala.Double | java.lang.String = null,
     minWidth: scala.Double | java.lang.String = null,
-    onUpdate: (/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ ResponsiveOnUpdateData) => scala.Unit = null
+    onUpdate: (/* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event], /* data */ ResponsiveOnUpdateData) => scala.Unit = null
   ): ResponsiveOnUpdateData = {
     val __obj = js.Dynamic.literal(width = width)
     if (as != null) __obj.updateDynamic("as")(as)

@@ -10,7 +10,7 @@ trait ISelectionProviderStatic
   extends org.scalablytyped.runtime.Instantiable3[
       /* grid */ IGridInstance, 
       /* $scope */ IGridScope, 
-      /* $parse */ angularLib.angularMod.angularNs.IParseService, 
+      /* $parse */ angularLib.angularMod.IParseService, 
       ISelectionProvider
     ]
 

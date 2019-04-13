@@ -27,7 +27,7 @@ object TabNavigatorConfig {
     paths: NavigationPathsConfig = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    tabBarComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tabBarComponent: reactLib.reactMod.ReactType[_] = null,
     tabBarOptions: reactDashNavigationLib.Anon_ActiveBackgroundColorActiveTintColor = null,
     tabBarPosition: reactDashNavigationLib.reactDashNavigationLibStrings.top | reactDashNavigationLib.reactDashNavigationLibStrings.bottom = null
   ): TabNavigatorConfig = {

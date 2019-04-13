@@ -5,20 +5,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait Events extends js.Object
+
 @JSImport("two.js", "Events")
 @js.native
 object Events extends js.Object {
-  val change: twoDotJsLib.twoDotJsMod.TwoNs.Events.change with java.lang.String = js.native
-  val insert: twoDotJsLib.twoDotJsMod.TwoNs.Events.insert with java.lang.String = js.native
-  val load: twoDotJsLib.twoDotJsMod.TwoNs.Events.load with java.lang.String = js.native
-  val order: twoDotJsLib.twoDotJsMod.TwoNs.Events.order with java.lang.String = js.native
-  val pause: twoDotJsLib.twoDotJsMod.TwoNs.Events.pause with java.lang.String = js.native
-  val play: twoDotJsLib.twoDotJsMod.TwoNs.Events.play with java.lang.String = js.native
-  val remove: twoDotJsLib.twoDotJsMod.TwoNs.Events.remove with java.lang.String = js.native
-  val render: twoDotJsLib.twoDotJsMod.TwoNs.Events.render with java.lang.String = js.native
-  val resize: twoDotJsLib.twoDotJsMod.TwoNs.Events.resize with java.lang.String = js.native
-  val update: twoDotJsLib.twoDotJsMod.TwoNs.Events.update with java.lang.String = js.native
+  @js.native
+  sealed trait change
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait insert
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait load
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait order
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait pause
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait play
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait remove
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait render
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait resize
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  @js.native
+  sealed trait update
+    extends twoDotJsLib.twoDotJsMod.Events
+  
+  val change: change with java.lang.String = js.native
+  val insert: insert with java.lang.String = js.native
+  val load: load with java.lang.String = js.native
+  val order: order with java.lang.String = js.native
+  val pause: pause with java.lang.String = js.native
+  val play: play with java.lang.String = js.native
+  val remove: remove with java.lang.String = js.native
+  val render: render with java.lang.String = js.native
+  val resize: resize with java.lang.String = js.native
+  val update: update with java.lang.String = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[twoDotJsLib.twoDotJsMod.TwoNs.Events with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[twoDotJsLib.twoDotJsMod.Events with java.lang.String] = js.native
 }
 

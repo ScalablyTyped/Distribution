@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Clearfix
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libClearfixMod.ClearfixNs.ClearfixProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[ClearfixProps, js.Object, js.Any]
 

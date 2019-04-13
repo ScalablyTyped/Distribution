@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait HOCProps extends js.Object {
   var cellClassName: java.lang.String
-  var cellStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var cellStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: java.lang.String
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object HOCProps {
@@ -17,8 +17,8 @@ object HOCProps {
   def apply(
     cellClassName: java.lang.String,
     className: java.lang.String,
-    cellStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    cellStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): HOCProps = {
     val __obj = js.Dynamic.literal(cellClassName = cellClassName, className = className)
     if (cellStyle != null) __obj.updateDynamic("cellStyle")(cellStyle)

@@ -17,3 +17,8 @@ class DataSets ()
   override def Item(Index: scala.Double): mfilesLib.IDataSet = js.native
 }
 
+@JSGlobal("MFiles.DataSets")
+@js.native
+object DataSets
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IDataSets]
+

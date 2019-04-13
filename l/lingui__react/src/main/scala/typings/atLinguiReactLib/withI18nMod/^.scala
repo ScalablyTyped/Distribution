@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def default(): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    reactLib.reactMod.ReactNs.ComponentClass[
+    reactLib.reactMod.ComponentClass[
       stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.native
   def default(options: withI18nOptions): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    reactLib.reactMod.ReactNs.ComponentClass[
+    reactLib.reactMod.ComponentClass[
       stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.native
 }

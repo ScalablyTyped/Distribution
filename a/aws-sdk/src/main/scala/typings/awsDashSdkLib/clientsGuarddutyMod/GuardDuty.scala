@@ -6,1479 +6,973 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait GuardDuty
-  extends awsDashSdkLib.libServiceMod.Service {
-  @JSName("config")
-  var config_GuardDuty: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ClientConfiguration = js.native
+trait GuardDuty extends Service {
+  var config: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Accepts the invitation to be monitored by a master GuardDuty account.
     */
-  def acceptInvitation(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acceptInvitation(): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptInvitation(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationResponse, 
+      /* data */ AcceptInvitationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Accepts the invitation to be monitored by a master GuardDuty account.
     */
-  def acceptInvitation(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acceptInvitation(params: AcceptInvitationRequest): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptInvitation(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationRequest,
+    params: AcceptInvitationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationResponse, 
+      /* data */ AcceptInvitationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.AcceptInvitationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcceptInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Archives Amazon GuardDuty findings specified by the list of finding IDs.
     */
-  def archiveFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def archiveFindings(): awsDashSdkLib.libRequestMod.Request[ArchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def archiveFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsResponse, 
+      /* data */ ArchiveFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ArchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Archives Amazon GuardDuty findings specified by the list of finding IDs.
     */
-  def archiveFindings(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def archiveFindings(params: ArchiveFindingsRequest): awsDashSdkLib.libRequestMod.Request[ArchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def archiveFindings(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsRequest,
+    params: ArchiveFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsResponse, 
+      /* data */ ArchiveFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ArchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ArchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a single Amazon GuardDuty detector. A detector is an object that represents the GuardDuty service. A detector must be created in order for GuardDuty to become operational.
     */
-  def createDetector(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDetector(): awsDashSdkLib.libRequestMod.Request[CreateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDetector(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorResponse, 
+      /* data */ CreateDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a single Amazon GuardDuty detector. A detector is an object that represents the GuardDuty service. A detector must be created in order for GuardDuty to become operational.
     */
-  def createDetector(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createDetector(params: CreateDetectorRequest): awsDashSdkLib.libRequestMod.Request[CreateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDetector(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorRequest,
+    params: CreateDetectorRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorResponse, 
+      /* data */ CreateDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a filter using the specified finding criteria.
     */
-  def createFilter(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createFilter(): awsDashSdkLib.libRequestMod.Request[CreateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createFilter(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterResponse, 
+      /* data */ CreateFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a filter using the specified finding criteria.
     */
-  def createFilter(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createFilter(params: CreateFilterRequest): awsDashSdkLib.libRequestMod.Request[CreateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createFilter(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterRequest,
+    params: CreateFilterRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterResponse, 
+      /* data */ CreateFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new IPSet - a list of trusted IP addresses that have been whitelisted for secure communication with AWS infrastructure and applications.
     */
-  def createIPSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createIPSet(): awsDashSdkLib.libRequestMod.Request[CreateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createIPSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetResponse, 
+      /* data */ CreateIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new IPSet - a list of trusted IP addresses that have been whitelisted for secure communication with AWS infrastructure and applications.
     */
-  def createIPSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createIPSet(params: CreateIPSetRequest): awsDashSdkLib.libRequestMod.Request[CreateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createIPSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetRequest,
+    params: CreateIPSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetResponse, 
+      /* data */ CreateIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. The current AWS account can then invite these members to manage GuardDuty in their accounts.
     */
-  def createMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createMembers(): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersResponse, 
+      /* data */ CreateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. The current AWS account can then invite these members to manage GuardDuty in their accounts.
     */
-  def createMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createMembers(params: CreateMembersRequest): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersRequest,
+    params: CreateMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersResponse, 
+      /* data */ CreateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.
     */
-  def createSampleFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createSampleFindings(): awsDashSdkLib.libRequestMod.Request[CreateSampleFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSampleFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsResponse, 
+      /* data */ CreateSampleFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateSampleFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.
     */
-  def createSampleFindings(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createSampleFindings(params: CreateSampleFindingsRequest): awsDashSdkLib.libRequestMod.Request[CreateSampleFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createSampleFindings(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsRequest,
+    params: CreateSampleFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsResponse, 
+      /* data */ CreateSampleFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateSampleFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateSampleFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets.
     */
-  def createThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[CreateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThreatIntelSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetResponse, 
+      /* data */ CreateThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets.
     */
-  def createThreatIntelSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createThreatIntelSet(params: CreateThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[CreateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createThreatIntelSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetRequest,
+    params: CreateThreatIntelSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetResponse, 
+      /* data */ CreateThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.CreateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Declines invitations sent to the current member account by AWS account specified by their account IDs.
     */
-  def declineInvitations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def declineInvitations(): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def declineInvitations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsResponse, 
+      /* data */ DeclineInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Declines invitations sent to the current member account by AWS account specified by their account IDs.
     */
-  def declineInvitations(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def declineInvitations(params: DeclineInvitationsRequest): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def declineInvitations(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsRequest,
+    params: DeclineInvitationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsResponse, 
+      /* data */ DeclineInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeclineInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeclineInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Amazon GuardDuty detector specified by the detector ID.
     */
-  def deleteDetector(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDetector(): awsDashSdkLib.libRequestMod.Request[DeleteDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDetector(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorResponse, 
+      /* data */ DeleteDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a Amazon GuardDuty detector specified by the detector ID.
     */
-  def deleteDetector(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteDetector(params: DeleteDetectorRequest): awsDashSdkLib.libRequestMod.Request[DeleteDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDetector(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorRequest,
+    params: DeleteDetectorRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorResponse, 
+      /* data */ DeleteDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the filter specified by the filter name.
     */
-  def deleteFilter(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFilter(): awsDashSdkLib.libRequestMod.Request[DeleteFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFilter(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterResponse, 
+      /* data */ DeleteFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the filter specified by the filter name.
     */
-  def deleteFilter(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFilter(params: DeleteFilterRequest): awsDashSdkLib.libRequestMod.Request[DeleteFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFilter(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterRequest,
+    params: DeleteFilterRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterResponse, 
+      /* data */ DeleteFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the IPSet specified by the IPSet ID.
     */
-  def deleteIPSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteIPSet(): awsDashSdkLib.libRequestMod.Request[DeleteIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteIPSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetResponse, 
+      /* data */ DeleteIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the IPSet specified by the IPSet ID.
     */
-  def deleteIPSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteIPSet(params: DeleteIPSetRequest): awsDashSdkLib.libRequestMod.Request[DeleteIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteIPSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetRequest,
+    params: DeleteIPSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetResponse, 
+      /* data */ DeleteIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes invitations sent to the current member account by AWS accounts specified by their account IDs.
     */
-  def deleteInvitations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInvitations(): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInvitations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsResponse, 
+      /* data */ DeleteInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes invitations sent to the current member account by AWS accounts specified by their account IDs.
     */
-  def deleteInvitations(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteInvitations(params: DeleteInvitationsRequest): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteInvitations(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsRequest,
+    params: DeleteInvitationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsResponse, 
+      /* data */ DeleteInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
-  def deleteMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteMembers(): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersResponse, 
+      /* data */ DeleteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
-  def deleteMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteMembers(params: DeleteMembersRequest): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersRequest,
+    params: DeleteMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersResponse, 
+      /* data */ DeleteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes ThreatIntelSet specified by the ThreatIntelSet ID.
     */
-  def deleteThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[DeleteThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThreatIntelSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetResponse, 
+      /* data */ DeleteThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes ThreatIntelSet specified by the ThreatIntelSet ID.
     */
-  def deleteThreatIntelSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteThreatIntelSet(params: DeleteThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[DeleteThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteThreatIntelSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetRequest,
+    params: DeleteThreatIntelSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetResponse, 
+      /* data */ DeleteThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DeleteThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the current GuardDuty member account from its master account.
     */
-  def disassociateFromMasterAccount(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateFromMasterAccount(): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateFromMasterAccount(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountResponse, 
+      /* data */ DisassociateFromMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the current GuardDuty member account from its master account.
     */
-  def disassociateFromMasterAccount(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateFromMasterAccount(params: DisassociateFromMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateFromMasterAccount(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountRequest,
+    params: DisassociateFromMasterAccountRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountResponse, 
+      /* data */ DisassociateFromMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateFromMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateFromMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
-  def disassociateMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateMembers(): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersResponse, 
+      /* data */ DisassociateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
-  def disassociateMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateMembers(params: DisassociateMembersRequest): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersRequest,
+    params: DisassociateMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersResponse, 
+      /* data */ DisassociateMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.DisassociateMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves an Amazon GuardDuty detector specified by the detectorId.
     */
-  def getDetector(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDetector(): awsDashSdkLib.libRequestMod.Request[GetDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDetector(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorResponse, 
+      /* data */ GetDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves an Amazon GuardDuty detector specified by the detectorId.
     */
-  def getDetector(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDetector(params: GetDetectorRequest): awsDashSdkLib.libRequestMod.Request[GetDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDetector(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorRequest,
+    params: GetDetectorRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorResponse, 
+      /* data */ GetDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the details of the filter specified by the filter name.
     */
-  def getFilter(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFilter(): awsDashSdkLib.libRequestMod.Request[GetFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFilter(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterResponse, 
+      /* data */ GetFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the details of the filter specified by the filter name.
     */
-  def getFilter(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFilter(params: GetFilterRequest): awsDashSdkLib.libRequestMod.Request[GetFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFilter(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterRequest,
+    params: GetFilterRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterResponse, 
+      /* data */ GetFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes Amazon GuardDuty findings specified by finding IDs.
     */
-  def getFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFindings(): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsResponse, 
+      /* data */ GetFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes Amazon GuardDuty findings specified by finding IDs.
     */
-  def getFindings(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFindings(params: GetFindingsRequest): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindings(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsRequest,
+    params: GetFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsResponse, 
+      /* data */ GetFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists Amazon GuardDuty findings' statistics for the specified detector ID.
     */
-  def getFindingsStatistics(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFindingsStatistics(): awsDashSdkLib.libRequestMod.Request[GetFindingsStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindingsStatistics(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsResponse, 
+      /* data */ GetFindingsStatisticsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFindingsStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists Amazon GuardDuty findings' statistics for the specified detector ID.
     */
-  def getFindingsStatistics(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFindingsStatistics(params: GetFindingsStatisticsRequest): awsDashSdkLib.libRequestMod.Request[GetFindingsStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFindingsStatistics(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsRequest,
+    params: GetFindingsStatisticsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsResponse, 
+      /* data */ GetFindingsStatisticsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetFindingsStatisticsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetFindingsStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the IPSet specified by the IPSet ID.
     */
-  def getIPSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getIPSet(): awsDashSdkLib.libRequestMod.Request[GetIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getIPSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetResponse, 
+      /* data */ GetIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the IPSet specified by the IPSet ID.
     */
-  def getIPSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getIPSet(params: GetIPSetRequest): awsDashSdkLib.libRequestMod.Request[GetIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getIPSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetRequest,
+    params: GetIPSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetResponse, 
+      /* data */ GetIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the count of all GuardDuty membership invitations that were sent to the current member account except the currently accepted invitation.
     */
-  def getInvitationsCount(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInvitationsCount(): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInvitationsCount(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountResponse, 
+      /* data */ GetInvitationsCountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the count of all GuardDuty membership invitations that were sent to the current member account except the currently accepted invitation.
     */
-  def getInvitationsCount(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getInvitationsCount(params: GetInvitationsCountRequest): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getInvitationsCount(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountRequest,
+    params: GetInvitationsCountRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountResponse, 
+      /* data */ GetInvitationsCountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetInvitationsCountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetInvitationsCountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides the details for the GuardDuty master account to the current GuardDuty member account.
     */
-  def getMasterAccount(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMasterAccount(): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMasterAccount(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountResponse, 
+      /* data */ GetMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provides the details for the GuardDuty master account to the current GuardDuty member account.
     */
-  def getMasterAccount(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMasterAccount(params: GetMasterAccountRequest): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMasterAccount(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountRequest,
+    params: GetMasterAccountRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountResponse, 
+      /* data */ GetMasterAccountResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMasterAccountResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMasterAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
-  def getMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMembers(): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersResponse, 
+      /* data */ GetMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
-  def getMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMembers(params: GetMembersRequest): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersRequest,
+    params: GetMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersResponse, 
+      /* data */ GetMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
     */
-  def getThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[GetThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getThreatIntelSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetResponse, 
+      /* data */ GetThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
     */
-  def getThreatIntelSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getThreatIntelSet(params: GetThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[GetThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getThreatIntelSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetRequest,
+    params: GetThreatIntelSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetResponse, 
+      /* data */ GetThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.GetThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
     */
-  def inviteMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def inviteMembers(): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def inviteMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersResponse, 
+      /* data */ InviteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
     */
-  def inviteMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def inviteMembers(params: InviteMembersRequest): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def inviteMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersRequest,
+    params: InviteMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersResponse, 
+      /* data */ InviteMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.InviteMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InviteMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists detectorIds of all the existing Amazon GuardDuty detector resources.
     */
-  def listDetectors(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDetectors(): awsDashSdkLib.libRequestMod.Request[ListDetectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDetectors(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsResponse, 
+      /* data */ ListDetectorsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDetectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists detectorIds of all the existing Amazon GuardDuty detector resources.
     */
-  def listDetectors(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDetectors(params: ListDetectorsRequest): awsDashSdkLib.libRequestMod.Request[ListDetectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDetectors(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsRequest,
+    params: ListDetectorsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsResponse, 
+      /* data */ ListDetectorsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListDetectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDetectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a paginated list of the current filters.
     */
-  def listFilters(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFilters(): awsDashSdkLib.libRequestMod.Request[ListFiltersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFilters(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersResponse, 
+      /* data */ ListFiltersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFiltersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a paginated list of the current filters.
     */
-  def listFilters(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFilters(params: ListFiltersRequest): awsDashSdkLib.libRequestMod.Request[ListFiltersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFilters(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersRequest,
+    params: ListFiltersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersResponse, 
+      /* data */ ListFiltersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFiltersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFiltersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists Amazon GuardDuty findings for the specified detector ID.
     */
-  def listFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFindings(): awsDashSdkLib.libRequestMod.Request[ListFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsResponse, 
+      /* data */ ListFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists Amazon GuardDuty findings for the specified detector ID.
     */
-  def listFindings(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listFindings(params: ListFindingsRequest): awsDashSdkLib.libRequestMod.Request[ListFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listFindings(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsRequest,
+    params: ListFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsResponse, 
+      /* data */ ListFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the IPSets of the GuardDuty service specified by the detector ID.
     */
-  def listIPSets(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listIPSets(): awsDashSdkLib.libRequestMod.Request[ListIPSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listIPSets(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsResponse, 
+      /* data */ ListIPSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListIPSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the IPSets of the GuardDuty service specified by the detector ID.
     */
-  def listIPSets(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listIPSets(params: ListIPSetsRequest): awsDashSdkLib.libRequestMod.Request[ListIPSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listIPSets(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsRequest,
+    params: ListIPSetsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsResponse, 
+      /* data */ ListIPSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListIPSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListIPSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all GuardDuty membership invitations that were sent to the current AWS account.
     */
-  def listInvitations(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInvitations(): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInvitations(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsResponse, 
+      /* data */ ListInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all GuardDuty membership invitations that were sent to the current AWS account.
     */
-  def listInvitations(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listInvitations(params: ListInvitationsRequest): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listInvitations(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsRequest,
+    params: ListInvitationsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsResponse, 
+      /* data */ ListInvitationsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListInvitationsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListInvitationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists details about all member accounts for the current GuardDuty master account.
     */
-  def listMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listMembers(): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersResponse, 
+      /* data */ ListMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists details about all member accounts for the current GuardDuty master account.
     */
-  def listMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listMembers(params: ListMembersRequest): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersRequest,
+    params: ListMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersResponse, 
+      /* data */ ListMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID.
     */
-  def listThreatIntelSets(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThreatIntelSets(): awsDashSdkLib.libRequestMod.Request[ListThreatIntelSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThreatIntelSets(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsResponse, 
+      /* data */ ListThreatIntelSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThreatIntelSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID.
     */
-  def listThreatIntelSets(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listThreatIntelSets(params: ListThreatIntelSetsRequest): awsDashSdkLib.libRequestMod.Request[ListThreatIntelSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listThreatIntelSets(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsRequest,
+    params: ListThreatIntelSetsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsResponse, 
+      /* data */ ListThreatIntelSetsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ListThreatIntelSetsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListThreatIntelSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Re-enables GuardDuty to monitor findings of the member accounts specified by the account IDs. A master GuardDuty account can run this command after disabling GuardDuty from monitoring these members' findings by running StopMonitoringMembers.
     */
-  def startMonitoringMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startMonitoringMembers(): awsDashSdkLib.libRequestMod.Request[StartMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startMonitoringMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersResponse, 
+      /* data */ StartMonitoringMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Re-enables GuardDuty to monitor findings of the member accounts specified by the account IDs. A master GuardDuty account can run this command after disabling GuardDuty from monitoring these members' findings by running StopMonitoringMembers.
     */
-  def startMonitoringMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startMonitoringMembers(params: StartMonitoringMembersRequest): awsDashSdkLib.libRequestMod.Request[StartMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startMonitoringMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersRequest,
+    params: StartMonitoringMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersResponse, 
+      /* data */ StartMonitoringMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StartMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disables GuardDuty from monitoring findings of the member accounts specified by the account IDs. After running this command, a master GuardDuty account can run StartMonitoringMembers to re-enable GuardDuty to monitor these members’ findings.
     */
-  def stopMonitoringMembers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopMonitoringMembers(): awsDashSdkLib.libRequestMod.Request[StopMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopMonitoringMembers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersResponse, 
+      /* data */ StopMonitoringMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disables GuardDuty from monitoring findings of the member accounts specified by the account IDs. After running this command, a master GuardDuty account can run StartMonitoringMembers to re-enable GuardDuty to monitor these members’ findings.
     */
-  def stopMonitoringMembers(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopMonitoringMembers(params: StopMonitoringMembersRequest): awsDashSdkLib.libRequestMod.Request[StopMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopMonitoringMembers(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersRequest,
+    params: StopMonitoringMembersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersResponse, 
+      /* data */ StopMonitoringMembersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.StopMonitoringMembersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopMonitoringMembersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Unarchives Amazon GuardDuty findings specified by the list of finding IDs.
     */
-  def unarchiveFindings(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def unarchiveFindings(): awsDashSdkLib.libRequestMod.Request[UnarchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def unarchiveFindings(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsResponse, 
+      /* data */ UnarchiveFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UnarchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Unarchives Amazon GuardDuty findings specified by the list of finding IDs.
     */
-  def unarchiveFindings(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def unarchiveFindings(params: UnarchiveFindingsRequest): awsDashSdkLib.libRequestMod.Request[UnarchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def unarchiveFindings(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsRequest,
+    params: UnarchiveFindingsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsResponse, 
+      /* data */ UnarchiveFindingsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UnarchiveFindingsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UnarchiveFindingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an Amazon GuardDuty detector specified by the detectorId.
     */
-  def updateDetector(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDetector(): awsDashSdkLib.libRequestMod.Request[UpdateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDetector(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorResponse, 
+      /* data */ UpdateDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an Amazon GuardDuty detector specified by the detectorId.
     */
-  def updateDetector(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDetector(params: UpdateDetectorRequest): awsDashSdkLib.libRequestMod.Request[UpdateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDetector(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorRequest,
+    params: UpdateDetectorRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorResponse, 
+      /* data */ UpdateDetectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateDetectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDetectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the filter specified by the filter name.
     */
-  def updateFilter(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFilter(): awsDashSdkLib.libRequestMod.Request[UpdateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFilter(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterResponse, 
+      /* data */ UpdateFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the filter specified by the filter name.
     */
-  def updateFilter(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFilter(params: UpdateFilterRequest): awsDashSdkLib.libRequestMod.Request[UpdateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFilter(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterRequest,
+    params: UpdateFilterRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterResponse, 
+      /* data */ UpdateFilterResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFilterResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFilterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Marks specified Amazon GuardDuty findings as useful or not useful.
     */
-  def updateFindingsFeedback(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFindingsFeedback(): awsDashSdkLib.libRequestMod.Request[UpdateFindingsFeedbackResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFindingsFeedback(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackResponse, 
+      /* data */ UpdateFindingsFeedbackResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFindingsFeedbackResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Marks specified Amazon GuardDuty findings as useful or not useful.
     */
-  def updateFindingsFeedback(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateFindingsFeedback(params: UpdateFindingsFeedbackRequest): awsDashSdkLib.libRequestMod.Request[UpdateFindingsFeedbackResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFindingsFeedback(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackRequest,
+    params: UpdateFindingsFeedbackRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackResponse, 
+      /* data */ UpdateFindingsFeedbackResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateFindingsFeedbackResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateFindingsFeedbackResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the IPSet specified by the IPSet ID.
     */
-  def updateIPSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateIPSet(): awsDashSdkLib.libRequestMod.Request[UpdateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateIPSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetResponse, 
+      /* data */ UpdateIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the IPSet specified by the IPSet ID.
     */
-  def updateIPSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateIPSet(params: UpdateIPSetRequest): awsDashSdkLib.libRequestMod.Request[UpdateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateIPSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetRequest,
+    params: UpdateIPSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetResponse, 
+      /* data */ UpdateIPSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateIPSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the ThreatIntelSet specified by ThreatIntelSet ID.
     */
-  def updateThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThreatIntelSet(): awsDashSdkLib.libRequestMod.Request[UpdateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThreatIntelSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetResponse, 
+      /* data */ UpdateThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the ThreatIntelSet specified by ThreatIntelSet ID.
     */
-  def updateThreatIntelSet(params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateThreatIntelSet(params: UpdateThreatIntelSetRequest): awsDashSdkLib.libRequestMod.Request[UpdateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateThreatIntelSet(
-    params: awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetRequest,
+    params: UpdateThreatIntelSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetResponse, 
+      /* data */ UpdateThreatIntelSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.UpdateThreatIntelSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateThreatIntelSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

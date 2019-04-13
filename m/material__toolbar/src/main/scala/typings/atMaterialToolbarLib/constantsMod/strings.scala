@@ -19,10 +19,11 @@ object strings {
     CHANGE_EVENT: atMaterialToolbarLib.atMaterialToolbarLibStrings.`MDCToolbar:change`,
     FIRST_ROW_SELECTOR: atMaterialToolbarLib.atMaterialToolbarLibStrings.`DOTmdc-toolbar__row:first-child`,
     ICON_SELECTOR: atMaterialToolbarLib.atMaterialToolbarLibStrings.`DOTmdc-toolbar__icon`,
-    TITLE_SELECTOR: atMaterialToolbarLib.atMaterialToolbarLibStrings.`DOTmdc-toolbar__title`
+    TITLE_SELECTOR: atMaterialToolbarLib.atMaterialToolbarLibStrings.`DOTmdc-toolbar__title`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, FIRST_ROW_SELECTOR = FIRST_ROW_SELECTOR, ICON_SELECTOR = ICON_SELECTOR, TITLE_SELECTOR = TITLE_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

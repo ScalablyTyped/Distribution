@@ -18,10 +18,20 @@ object configNs extends js.Object {
         ]) = this()
   }
   
-  var Promise: rxDashLiteLib.Anon_Reason = js.native
   /**
     * Configuration option to determine whether to use native events only
     */
   val useNativeEvents: scala.Boolean = js.native
+  @js.native
+  object Promise
+    extends org.scalablytyped.runtime.Instantiable1[
+          /* resolver */ js.Function2[
+            /* resolvePromise */ js.Function1[/* value */ js.Object, scala.Unit], 
+            /* rejectPromise */ js.Function1[/* reason */ js.Any, scala.Unit], 
+            scala.Unit
+          ], 
+          rxDashCoreLib.RxNs.IPromise[js.Object]
+        ]
+  
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ViewerTouchEvent[T] extends js.Object {
   var SVGViewer: stdLib.SVGSVGElement
   var changedPoints: js.Array[Point]
-  var originalEvent: reactLib.reactMod.ReactNs.TouchEvent[T]
+  var originalEvent: reactLib.reactMod.TouchEvent[T]
   var points: js.Array[Point]
   var scaleFactor: scala.Double
   var translationX: scala.Double
@@ -22,7 +22,7 @@ object ViewerTouchEvent {
   def apply[T](
     SVGViewer: stdLib.SVGSVGElement,
     changedPoints: js.Array[Point],
-    originalEvent: reactLib.reactMod.ReactNs.TouchEvent[T],
+    originalEvent: reactLib.reactMod.TouchEvent[T],
     points: js.Array[Point],
     preventDefault: () => scala.Unit,
     scaleFactor: scala.Double,

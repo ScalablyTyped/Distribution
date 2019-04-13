@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabContentProps extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disableInlineStyles: js.UndefOr[scala.Boolean] = js.undefined
   var `for`: java.lang.String | scala.Double
@@ -21,7 +21,7 @@ object TabContentProps {
   @scala.inline
   def apply(
     `for`: java.lang.String | scala.Double,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disableInlineStyles: js.UndefOr[scala.Boolean] = js.undefined,
     isVisible: js.UndefOr[scala.Boolean] = js.undefined,

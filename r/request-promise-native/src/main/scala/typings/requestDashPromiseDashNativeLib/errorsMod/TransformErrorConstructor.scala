@@ -10,14 +10,14 @@ trait TransformErrorConstructor
   extends stdLib.Error
      with org.scalablytyped.runtime.Instantiable3[
       /* cause */ js.Any, 
-      /* options */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options, 
-      /* response */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse, 
+      /* options */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options, 
+      /* response */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse, 
       TransformError
     ] {
   def apply(
     cause: js.Any,
-    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options,
-    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse
+    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options,
+    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse
   ): TransformError = js.native
 }
 

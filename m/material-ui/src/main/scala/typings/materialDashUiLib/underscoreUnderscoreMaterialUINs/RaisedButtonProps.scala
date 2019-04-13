@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation._
 trait RaisedButtonProps extends SharedEnhancedButtonProps[RaisedButton] {
   // <EnhancedButton/> is the element that get the 'other' properties
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
-  var buttonStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var buttonStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var disabledBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var disabledLabelColor: js.UndefOr[java.lang.String] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var labelColor: js.UndefOr[java.lang.String] = js.undefined
   var labelPosition: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.before | materialDashUiLib.materialDashUiLibStrings.after
   ] = js.undefined
-  var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var labelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var linkButton: js.UndefOr[scala.Boolean] = js.undefined
-  var onMouseDown: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onMouseUp: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
-  var onTouchEnd: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[js.Object]] = js.undefined
-  var onTouchStart: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[js.Object]] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var onMouseDown: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onMouseUp: js.UndefOr[reactLib.reactMod.MouseEventHandler[js.Object]] = js.undefined
+  var onTouchEnd: js.UndefOr[reactLib.reactMod.TouchEventHandler[js.Object]] = js.undefined
+  var onTouchStart: js.UndefOr[reactLib.reactMod.TouchEventHandler[js.Object]] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined
-  var rippleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var rippleStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var secondary: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -38,10 +38,10 @@ object RaisedButtonProps {
   @scala.inline
   def apply(
     backgroundColor: java.lang.String = null,
-    buttonStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    buttonStyle: reactLib.reactMod.CSSProperties = null,
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    containerElement: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    containerElement: reactLib.reactMod.ReactNode | java.lang.String = null,
     disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined,
     disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined,
@@ -52,30 +52,30 @@ object RaisedButtonProps {
     focusRippleOpacity: scala.Int | scala.Double = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     keyboardFocused: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     labelColor: java.lang.String = null,
     labelPosition: materialDashUiLib.materialDashUiLibStrings.before | materialDashUiLib.materialDashUiLibStrings.after = null,
-    labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    labelStyle: reactLib.reactMod.CSSProperties = null,
     linkButton: js.UndefOr[scala.Boolean] = js.undefined,
-    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
-    onKeyboardFocus: (/* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
-    onMouseDown: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onMouseUp: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
-    onTouchEnd: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
-    onTouchStart: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onBlur: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onFocus: reactLib.reactMod.FocusEventHandler[js.Object] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[js.Object] = null,
+    onKeyboardFocus: (/* e */ reactLib.reactMod.FocusEvent[js.Object], /* isKeyboardFocused */ scala.Boolean) => scala.Unit = null,
+    onMouseDown: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onMouseUp: reactLib.reactMod.MouseEventHandler[js.Object] = null,
+    onTouchEnd: reactLib.reactMod.TouchEventHandler[js.Object] = null,
+    onTouchStart: reactLib.reactMod.TouchEventHandler[js.Object] = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
     primary: js.UndefOr[scala.Boolean] = js.undefined,
-    rippleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    rippleStyle: reactLib.reactMod.CSSProperties = null,
     secondary: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     target: java.lang.String = null,
     touchRippleColor: java.lang.String = null,

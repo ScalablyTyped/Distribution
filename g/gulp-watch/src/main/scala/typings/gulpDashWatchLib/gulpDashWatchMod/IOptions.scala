@@ -68,7 +68,7 @@ object IOptions {
     stripBOM: js.UndefOr[scala.Boolean] = js.undefined,
     symlinks: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]] = null,
     sync: js.UndefOr[scala.Boolean] = js.undefined,
-    uniqueBy: globDashStreamLib.globDashStreamMod.GlobStreamNs.UniqueByStringPredicate | globDashStreamLib.globDashStreamMod.GlobStreamNs.UniqueByFunctionPredicate = null,
+    uniqueBy: globDashStreamLib.globDashStreamMod.UniqueByStringPredicate | globDashStreamLib.globDashStreamMod.UniqueByFunctionPredicate = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()

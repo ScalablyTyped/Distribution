@@ -61,6 +61,6 @@ class Database () extends js.Object {
 @JSImport("node-mysql-wrapper", "Database")
 @js.native
 object Database extends js.Object {
-  def when(_promises: bluebirdLib.bluebirdMod.namespaced[_]*): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def when(_promises: bluebirdLib.bluebirdMod.^[_]*): bluebirdLib.bluebirdMod.^[_] = js.native
 }
 

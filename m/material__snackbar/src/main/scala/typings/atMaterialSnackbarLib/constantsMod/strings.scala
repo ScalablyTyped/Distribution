@@ -21,10 +21,11 @@ object strings {
     ACTION_WRAPPER_SELECTOR: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`DOTmdc-snackbar__action-wrapper`,
     HIDE_EVENT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`MDCSnackbar:hide`,
     SHOW_EVENT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`MDCSnackbar:show`,
-    TEXT_SELECTOR: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`DOTmdc-snackbar__text`
+    TEXT_SELECTOR: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`DOTmdc-snackbar__text`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(ACTION_BUTTON_SELECTOR = ACTION_BUTTON_SELECTOR, ACTION_WRAPPER_SELECTOR = ACTION_WRAPPER_SELECTOR, HIDE_EVENT = HIDE_EVENT, SHOW_EVENT = SHOW_EVENT, TEXT_SELECTOR = TEXT_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

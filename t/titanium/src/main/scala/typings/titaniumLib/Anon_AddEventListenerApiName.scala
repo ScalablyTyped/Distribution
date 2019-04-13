@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_AddEventListenerApiName extends js.Object {
   /**
+  			 * Window flag which makes the Android system's navigation bar semi-transparent.
+  			 */
+  val FLAG_TRANSLUCENT_NAVIGATION: scala.Double = js.native
+  /**
+  			 * Window flag which makes the Android system's top status bar semi-transparent.
+  			 */
+  val FLAG_TRANSLUCENT_STATUS: scala.Double = js.native
+  /**
   			 * Raw bit controlling whether the right/bottom edge is clipped to its container, based on the gravity direction being applied.
   			 */
   val GRAVITY_AXIS_CLIP: scala.Double = js.native
@@ -303,6 +311,14 @@ trait Anon_AddEventListenerApiName extends js.Object {
   			 * Display a toggle button.
   			 */
   val SWITCH_STYLE_TOGGLEBUTTON: scala.Double = js.native
+  /**
+  			 * TabGroup style taking advantage of a bottom navigation controller for switching between tabs.
+  			 */
+  val TABS_STYLE_BOTTOM_NAVIGATION: scala.Double = js.native
+  /**
+  			 * The default TabGroup style that places the Tabs bellow the ActionBar and above the Window content.
+  			 */
+  val TABS_STYLE_DEFAULT: scala.Double = js.native
   /**
   			 * Captures layout bounds of target views before and after the scene change and animates those changes during the transition.
   			 */

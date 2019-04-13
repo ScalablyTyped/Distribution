@@ -12,7 +12,7 @@ trait AnnotationProps extends js.Object {
   var markerEnd: js.UndefOr[java.lang.String] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subject: js.UndefOr[Point] = js.undefined
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
@@ -26,7 +26,7 @@ object AnnotationProps {
     markerEnd: java.lang.String = null,
     stroke: java.lang.String = null,
     strokeWidth: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     subject: Point = null,
     zoom: scala.Int | scala.Double = null
   ): AnnotationProps = {

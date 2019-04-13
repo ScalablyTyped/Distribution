@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("two.js", "Error")
 @js.native
-class Error protected ()
-  extends twoDotJsLib.twoDotJsMod.TwoNs.Error {
+class Error protected () extends js.Object {
   def this(message: java.lang.String) = this()
-  /* CompleteClass */
-  override var message: java.lang.String = js.native
+  var message: java.lang.String = js.native
 }
 

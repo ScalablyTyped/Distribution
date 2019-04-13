@@ -12,4 +12,5 @@ package object exprDashEvalMod {
   ]) | (org.scalablytyped.runtime.StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias expr-eval.expr-eval.Value */ js.Object
   ])
+  type Values = org.scalablytyped.runtime.StringDictionary[Value]
 }

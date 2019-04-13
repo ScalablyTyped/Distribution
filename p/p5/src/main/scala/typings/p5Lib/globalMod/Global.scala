@@ -8,39 +8,39 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object Global extends js.Object {
-  val ADD: p5Lib.p5Mod.p5Ns.ADD = js.native
-  val ARROW: p5Lib.p5Mod.p5Ns.ARROW = js.native
-  val AUDIO: p5Lib.p5Mod.p5Ns.AUDIO = js.native
-  val AUTO: p5Lib.p5Mod.p5Ns.AUTO = js.native
-  val AXES: p5Lib.p5Mod.p5Ns.AXES = js.native
-  val BASELINE: p5Lib.p5Mod.p5Ns.BASELINE = js.native
-  val BEVEL: p5Lib.p5Mod.p5Ns.BEVEL = js.native
-  val BLEND: p5Lib.p5Mod.p5Ns.BLEND = js.native
-  val BLUR: p5Lib.p5Mod.p5Ns.BLUR = js.native
-  val BOLD: p5Lib.p5Mod.p5Ns.BOLD = js.native
-  val BOLDITALIC: p5Lib.p5Mod.p5Ns.BOLDITALIC = js.native
-  val BOTTOM: p5Lib.p5Mod.p5Ns.BOTTOM = js.native
-  val BURN: p5Lib.p5Mod.p5Ns.BURN = js.native
-  val CENTER: p5Lib.p5Mod.p5Ns.CENTER = js.native
-  val CHORD: p5Lib.p5Mod.p5Ns.CHORD = js.native
-  val CLOSE: p5Lib.p5Mod.p5Ns.CLOSE = js.native
-  val CORNER: p5Lib.p5Mod.p5Ns.CORNER = js.native
-  val CORNERS: p5Lib.p5Mod.p5Ns.CORNERS = js.native
-  val CROSS: p5Lib.p5Mod.p5Ns.CROSS = js.native
-  val DARKEST: p5Lib.p5Mod.p5Ns.DARKEST = js.native
+  val ADD: p5Lib.p5Mod.ADD = js.native
+  val ARROW: p5Lib.p5Mod.ARROW = js.native
+  val AUDIO: p5Lib.p5Mod.AUDIO = js.native
+  val AUTO: p5Lib.p5Mod.AUTO = js.native
+  val AXES: p5Lib.p5Mod.AXES = js.native
+  val BASELINE: p5Lib.p5Mod.BASELINE = js.native
+  val BEVEL: p5Lib.p5Mod.BEVEL = js.native
+  val BLEND: p5Lib.p5Mod.BLEND = js.native
+  val BLUR: p5Lib.p5Mod.BLUR = js.native
+  val BOLD: p5Lib.p5Mod.BOLD = js.native
+  val BOLDITALIC: p5Lib.p5Mod.BOLDITALIC = js.native
+  val BOTTOM: p5Lib.p5Mod.BOTTOM = js.native
+  val BURN: p5Lib.p5Mod.BURN = js.native
+  val CENTER: p5Lib.p5Mod.CENTER = js.native
+  val CHORD: p5Lib.p5Mod.CHORD = js.native
+  val CLOSE: p5Lib.p5Mod.CLOSE = js.native
+  val CORNER: p5Lib.p5Mod.CORNER = js.native
+  val CORNERS: p5Lib.p5Mod.CORNERS = js.native
+  val CROSS: p5Lib.p5Mod.CROSS = js.native
+  val DARKEST: p5Lib.p5Mod.DARKEST = js.native
   /**
     *   Constant to be used with angleMode() function, to
     *   set the mode which p5.js interprates and
     *   calculates angles (either DEGREES or RADIANS).
     */
-  val DEGREES: p5Lib.p5Mod.p5Ns.DEGREES = js.native
-  val DIFFERENCE: p5Lib.p5Mod.p5Ns.DIFFERENCE = js.native
-  val DILATE: p5Lib.p5Mod.p5Ns.DILATE = js.native
-  val DODGE: p5Lib.p5Mod.p5Ns.DODGE = js.native
-  val ERODE: p5Lib.p5Mod.p5Ns.ERODE = js.native
-  val EXCLUSION: p5Lib.p5Mod.p5Ns.EXCLUSION = js.native
-  val GRAY: p5Lib.p5Mod.p5Ns.GRAY = js.native
-  val GRID: p5Lib.p5Mod.p5Ns.GRID = js.native
+  val DEGREES: p5Lib.p5Mod.DEGREES = js.native
+  val DIFFERENCE: p5Lib.p5Mod.DIFFERENCE = js.native
+  val DILATE: p5Lib.p5Mod.DILATE = js.native
+  val DODGE: p5Lib.p5Mod.DODGE = js.native
+  val ERODE: p5Lib.p5Mod.ERODE = js.native
+  val EXCLUSION: p5Lib.p5Mod.EXCLUSION = js.native
+  val GRAY: p5Lib.p5Mod.GRAY = js.native
+  val GRID: p5Lib.p5Mod.GRID = js.native
   /**
     *   HALF_PI is a mathematical constant with the value
     *   1.57079632679489661923. It is half the ratio of
@@ -49,26 +49,26 @@ object Global extends js.Object {
     *   functions sin() and cos().
     */
   val HALF_PI: scala.Double = js.native
-  val HAND: p5Lib.p5Mod.p5Ns.HAND = js.native
-  val HARD_LIGHT: p5Lib.p5Mod.p5Ns.HARD_LIGHT = js.native
-  val HSB: p5Lib.p5Mod.p5Ns.HSB = js.native
-  val HSL: p5Lib.p5Mod.p5Ns.HSL = js.native
-  val INVERT: p5Lib.p5Mod.p5Ns.INVERT = js.native
-  val ITALIC: p5Lib.p5Mod.p5Ns.ITALIC = js.native
-  val LANDSCAPE: p5Lib.p5Mod.p5Ns.LANDSCAPE = js.native
-  val LEFT: p5Lib.p5Mod.p5Ns.LEFT = js.native
-  val LIGHTEST: p5Lib.p5Mod.p5Ns.LIGHTEST = js.native
-  val LINES: p5Lib.p5Mod.p5Ns.LINES = js.native
-  val LINE_LOOP: p5Lib.p5Mod.p5Ns.LINE_LOOP = js.native
-  val LINE_STRIP: p5Lib.p5Mod.p5Ns.LINE_STRIP = js.native
-  val MITER: p5Lib.p5Mod.p5Ns.MITER = js.native
-  val MOVE: p5Lib.p5Mod.p5Ns.MOVE = js.native
-  val MULTIPLY: p5Lib.p5Mod.p5Ns.MULTIPLY = js.native
-  val NORMAL: p5Lib.p5Mod.p5Ns.NORMAL = js.native
-  val OPAQUE: p5Lib.p5Mod.p5Ns.OPAQUE = js.native
-  val OPEN: p5Lib.p5Mod.p5Ns.OPEN = js.native
-  val OVERLAY: p5Lib.p5Mod.p5Ns.OVERLAY = js.native
-  val P2D: p5Lib.p5Mod.p5Ns.P2D = js.native
+  val HAND: p5Lib.p5Mod.HAND = js.native
+  val HARD_LIGHT: p5Lib.p5Mod.HARD_LIGHT = js.native
+  val HSB: p5Lib.p5Mod.HSB = js.native
+  val HSL: p5Lib.p5Mod.HSL = js.native
+  val INVERT: p5Lib.p5Mod.INVERT = js.native
+  val ITALIC: p5Lib.p5Mod.ITALIC = js.native
+  val LANDSCAPE: p5Lib.p5Mod.LANDSCAPE = js.native
+  val LEFT: p5Lib.p5Mod.LEFT = js.native
+  val LIGHTEST: p5Lib.p5Mod.LIGHTEST = js.native
+  val LINES: p5Lib.p5Mod.LINES = js.native
+  val LINE_LOOP: p5Lib.p5Mod.LINE_LOOP = js.native
+  val LINE_STRIP: p5Lib.p5Mod.LINE_STRIP = js.native
+  val MITER: p5Lib.p5Mod.MITER = js.native
+  val MOVE: p5Lib.p5Mod.MOVE = js.native
+  val MULTIPLY: p5Lib.p5Mod.MULTIPLY = js.native
+  val NORMAL: p5Lib.p5Mod.NORMAL = js.native
+  val OPAQUE: p5Lib.p5Mod.OPAQUE = js.native
+  val OPEN: p5Lib.p5Mod.OPEN = js.native
+  val OVERLAY: p5Lib.p5Mod.OVERLAY = js.native
+  val P2D: p5Lib.p5Mod.P2D = js.native
   /**
     *   PI is a mathematical constant with the value
     *   3.14159265358979323846. It is the ratio of the
@@ -77,13 +77,13 @@ object Global extends js.Object {
     *   functions sin() and cos().
     */
   val PI: scala.Double = js.native
-  val PIE: p5Lib.p5Mod.p5Ns.PIE = js.native
-  val POINTS: p5Lib.p5Mod.p5Ns.POINTS = js.native
-  val PORTRAIT: p5Lib.p5Mod.p5Ns.PORTRAIT = js.native
-  val POSTERIZE: p5Lib.p5Mod.p5Ns.POSTERIZE = js.native
-  val PROJECT: p5Lib.p5Mod.p5Ns.PROJECT = js.native
-  val QUADS: p5Lib.p5Mod.p5Ns.QUADS = js.native
-  val QUAD_STRIP: p5Lib.p5Mod.p5Ns.QUAD_STRIP = js.native
+  val PIE: p5Lib.p5Mod.PIE = js.native
+  val POINTS: p5Lib.p5Mod.POINTS = js.native
+  val PORTRAIT: p5Lib.p5Mod.PORTRAIT = js.native
+  val POSTERIZE: p5Lib.p5Mod.POSTERIZE = js.native
+  val PROJECT: p5Lib.p5Mod.PROJECT = js.native
+  val QUADS: p5Lib.p5Mod.QUADS = js.native
+  val QUAD_STRIP: p5Lib.p5Mod.QUAD_STRIP = js.native
   /**
     *   QUARTER_PI is a mathematical constant with the
     *   value 0.7853982. It is one quarter the ratio of
@@ -97,15 +97,15 @@ object Global extends js.Object {
     *   set the mode which p5.js interprates and
     *   calculates angles (either RADIANS or DEGREES).
     */
-  val RADIANS: p5Lib.p5Mod.p5Ns.RADIANS = js.native
-  val RADIUS: p5Lib.p5Mod.p5Ns.RADIUS = js.native
-  val REPLACE: p5Lib.p5Mod.p5Ns.REPLACE = js.native
-  val RGB: p5Lib.p5Mod.p5Ns.RGB = js.native
-  val RIGHT: p5Lib.p5Mod.p5Ns.RIGHT = js.native
-  val ROUND: p5Lib.p5Mod.p5Ns.ROUND = js.native
-  val SCREEN: p5Lib.p5Mod.p5Ns.SCREEN = js.native
-  val SOFT_LIGHT: p5Lib.p5Mod.p5Ns.SOFT_LIGHT = js.native
-  val SQUARE: p5Lib.p5Mod.p5Ns.SQUARE = js.native
+  val RADIANS: p5Lib.p5Mod.RADIANS = js.native
+  val RADIUS: p5Lib.p5Mod.RADIUS = js.native
+  val REPLACE: p5Lib.p5Mod.REPLACE = js.native
+  val RGB: p5Lib.p5Mod.RGB = js.native
+  val RIGHT: p5Lib.p5Mod.RIGHT = js.native
+  val ROUND: p5Lib.p5Mod.ROUND = js.native
+  val SCREEN: p5Lib.p5Mod.SCREEN = js.native
+  val SOFT_LIGHT: p5Lib.p5Mod.SOFT_LIGHT = js.native
+  val SQUARE: p5Lib.p5Mod.SQUARE = js.native
   /**
     *   TAU is an alias for TWO_PI, a mathematical
     *   constant with the value 6.28318530717958647693. It
@@ -115,12 +115,12 @@ object Global extends js.Object {
     *   and cos().
     */
   val TAU: scala.Double = js.native
-  val TEXT: p5Lib.p5Mod.p5Ns.TEXT = js.native
-  val THRESHOLD: p5Lib.p5Mod.p5Ns.THRESHOLD = js.native
-  val TOP: p5Lib.p5Mod.p5Ns.TOP = js.native
-  val TRIANGLES: p5Lib.p5Mod.p5Ns.TRIANGLES = js.native
-  val TRIANGLE_FAN: p5Lib.p5Mod.p5Ns.TRIANGLE_FAN = js.native
-  val TRIANGLE_STRIP: p5Lib.p5Mod.p5Ns.TRIANGLE_STRIP = js.native
+  val TEXT: p5Lib.p5Mod.TEXT = js.native
+  val THRESHOLD: p5Lib.p5Mod.THRESHOLD = js.native
+  val TOP: p5Lib.p5Mod.TOP = js.native
+  val TRIANGLES: p5Lib.p5Mod.TRIANGLES = js.native
+  val TRIANGLE_FAN: p5Lib.p5Mod.TRIANGLE_FAN = js.native
+  val TRIANGLE_STRIP: p5Lib.p5Mod.TRIANGLE_STRIP = js.native
   /**
     *   TWO_PI is a mathematical constant with the value
     *   6.28318530717958647693. It is twice the ratio of
@@ -129,9 +129,9 @@ object Global extends js.Object {
     *   functions sin() and cos().
     */
   val TWO_PI: scala.Double = js.native
-  val VIDEO: p5Lib.p5Mod.p5Ns.VIDEO = js.native
-  val WAIT: p5Lib.p5Mod.p5Ns.WAIT = js.native
-  val WEBGL: p5Lib.p5Mod.p5Ns.WEBGL = js.native
+  val VIDEO: p5Lib.p5Mod.VIDEO = js.native
+  val WAIT: p5Lib.p5Mod.WAIT = js.native
+  val WEBGL: p5Lib.p5Mod.WEBGL = js.native
   /**
     *   The system variable accelerationX always contains
     *   the acceleration of the device along the x axis.
@@ -157,7 +157,7 @@ object Global extends js.Object {
     *   'portrait'. If no data is available it will be set
     *   to 'undefined'. either LANDSCAPE or PORTRAIT.
     */
-  var deviceOrientation: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT = js.native
+  var deviceOrientation: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT = js.native
   /**
     *   System variable that stores the height of the
     *   screen display according to The default
@@ -230,7 +230,7 @@ object Global extends js.Object {
     *   was pressed last. Warning: different browsers may
     *   track mouseButton differently.
     */
-  var mouseButton: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT = js.native
+  var mouseButton: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT = js.native
   /**
     *   The boolean system variable mouseIsPressed is true
     *   if the mouse is pressed and false if not.
@@ -496,15 +496,15 @@ object Global extends js.Object {
     *   @param color the ambient light color
     *   @chainable
     */
-  def ambientLight(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.namespaced = js.native
+  def ambientLight(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates an ambient light with a color
     *   @param gray a gray value
     *   @param [alpha] the alpha value
     *   @chainable
     */
-  def ambientLight(gray: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ambientLight(gray: scala.Double, alpha: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def ambientLight(gray: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ambientLight(gray: scala.Double, alpha: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates an ambient light with a color
     *   @param v1 red or hue value relative to the current
@@ -516,22 +516,22 @@ object Global extends js.Object {
     *   @param [alpha] the alpha value
     *   @chainable
     */
-  def ambientLight(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ambientLight(v1: scala.Double, v2: scala.Double, v3: scala.Double, alpha: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def ambientLight(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ambientLight(v1: scala.Double, v2: scala.Double, v3: scala.Double, alpha: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates an ambient light with a color
     *   @param value a color string
     *   @chainable
     */
-  def ambientLight(value: java.lang.String): p5Lib.p5Mod.namespaced = js.native
+  def ambientLight(value: java.lang.String): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates an ambient light with a color
     *   @param values an array containing the
     *   red,green,blue & and alpha components of the color
     *   @chainable
     */
-  def ambientLight(values: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
-  def ambientMaterial(color: java.lang.String): p5Lib.p5Mod.namespaced = js.native
+  def ambientLight(values: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
+  def ambientMaterial(color: java.lang.String): p5Lib.p5Mod.^ = js.native
   /**
     *   Ambient material for geometry with a given color.
     *   You can view all possible materials in this
@@ -540,8 +540,8 @@ object Global extends js.Object {
     *   string
     *   @chainable
     */
-  def ambientMaterial(color: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
-  def ambientMaterial(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.namespaced = js.native
+  def ambientMaterial(color: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
+  def ambientMaterial(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.^ = js.native
   /**
     *   Ambient material for geometry with a given color.
     *   You can view all possible materials in this
@@ -553,16 +553,16 @@ object Global extends js.Object {
     *   @param [a] opacity
     *   @chainable
     */
-  def ambientMaterial(v1: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ambientMaterial(v1: scala.Double, v2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ambientMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ambientMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double, a: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def ambientMaterial(v1: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ambientMaterial(v1: scala.Double, v2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ambientMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ambientMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double, a: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the current mode of p5 to given mode. Default
     *   mode is RADIANS.
     *   @param mode either RADIANS or DEGREES
     */
-  def angleMode(mode: p5Lib.p5Mod.p5Ns.ANGLE_MODE): scala.Unit = js.native
+  def angleMode(mode: p5Lib.p5Mod.ANGLE_MODE): scala.Unit = js.native
   /**
     *   Adds a value to the end of an array. Extends the
     *   length of the array by one. Maps to Array.push().
@@ -602,7 +602,7 @@ object Global extends js.Object {
     d: scala.Double,
     e: scala.Double,
     f: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Draw an arc to the screen. If called with only x,
     *   y, w, h, start, and stop, the arc will be drawn
@@ -641,7 +641,7 @@ object Global extends js.Object {
     h: scala.Double,
     start: scala.Double,
     stop: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   def arc(
     x: scala.Double,
     y: scala.Double,
@@ -649,8 +649,8 @@ object Global extends js.Object {
     h: scala.Double,
     start: scala.Double,
     stop: scala.Double,
-    mode: p5Lib.p5Mod.p5Ns.ARC_MODE
-  ): p5Lib.p5Mod.namespaced = js.native
+    mode: p5Lib.p5Mod.ARC_MODE
+  ): p5Lib.p5Mod.^ = js.native
   def arc(
     x: scala.Double,
     y: scala.Double,
@@ -658,9 +658,9 @@ object Global extends js.Object {
     h: scala.Double,
     start: scala.Double,
     stop: scala.Double,
-    mode: p5Lib.p5Mod.p5Ns.ARC_MODE,
+    mode: p5Lib.p5Mod.ARC_MODE,
     detail: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Copies an array (or part of an array) to another
     *   array. The src array is copied to the dst array,
@@ -790,7 +790,7 @@ object Global extends js.Object {
     *   function
     *   @chainable
     */
-  def background(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.namespaced = js.native
+  def background(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.^ = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -827,8 +827,8 @@ object Global extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(colorstring: java.lang.String): p5Lib.p5Mod.namespaced = js.native
-  def background(colorstring: java.lang.String, a: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def background(colorstring: java.lang.String): p5Lib.p5Mod.^ = js.native
+  def background(colorstring: java.lang.String, a: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -864,8 +864,8 @@ object Global extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(gray: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def background(gray: scala.Double, a: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def background(gray: scala.Double): p5Lib.p5Mod.^ = js.native
+  def background(gray: scala.Double, a: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -902,8 +902,8 @@ object Global extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(image: p5Lib.p5Mod.Image): p5Lib.p5Mod.namespaced = js.native
-  def background(image: p5Lib.p5Mod.Image, a: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def background(image: p5Lib.p5Mod.Image): p5Lib.p5Mod.^ = js.native
+  def background(image: p5Lib.p5Mod.Image, a: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -943,8 +943,8 @@ object Global extends js.Object {
     *   current color range (default is 0-255)
     *   @chainable
     */
-  def background(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def background(v1: scala.Double, v2: scala.Double, v3: scala.Double, a: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def background(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.^ = js.native
+  def background(v1: scala.Double, v2: scala.Double, v3: scala.Double, a: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
@@ -978,7 +978,7 @@ object Global extends js.Object {
     *   red,green,blue & and alpha components of the color
     *   @chainable
     */
-  def background(values: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
+  def background(values: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
   /**
     *   Use the beginContour() and endContour() functions
     *   to create negative shapes within shapes such as
@@ -998,7 +998,7 @@ object Global extends js.Object {
     *   rect() within.
     *   @chainable
     */
-  def beginContour(): p5Lib.p5Mod.namespaced = js.native
+  def beginContour(): p5Lib.p5Mod.^ = js.native
   /**
     *   Using the beginShape() and endShape() functions
     *   allow creating more complex forms. beginShape()
@@ -1025,8 +1025,8 @@ object Global extends js.Object {
     *   TRIANGLE_FAN TRIANGLE_STRIP, QUADS, or QUAD_STRIP
     *   @chainable
     */
-  def beginShape(): p5Lib.p5Mod.namespaced = js.native
-  def beginShape(kind: p5Lib.p5Mod.p5Ns.BEGIN_KIND): p5Lib.p5Mod.namespaced = js.native
+  def beginShape(): p5Lib.p5Mod.^ = js.native
+  def beginShape(kind: p5Lib.p5Mod.BEGIN_KIND): p5Lib.p5Mod.^ = js.native
   /**
     *   Draws a cubic Bezier curve on the screen. These
     *   curves are defined by a series of anchor and
@@ -1062,7 +1062,7 @@ object Global extends js.Object {
     y3: scala.Double,
     x4: scala.Double,
     y4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Draws a cubic Bezier curve on the screen. These
     *   curves are defined by a series of anchor and
@@ -1107,7 +1107,7 @@ object Global extends js.Object {
     x4: scala.Double,
     y4: scala.Double,
     z4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the resolution at which Beziers display. The
     *   default value is 20.
@@ -1118,7 +1118,7 @@ object Global extends js.Object {
     *   @param detail resolution of the curves
     *   @chainable
     */
-  def bezierDetail(detail: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def bezierDetail(detail: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Evaluates the Bezier at position t for points a,
     *   b, c, d. The parameters a and d are the first and
@@ -1182,7 +1182,7 @@ object Global extends js.Object {
     y3: scala.Double,
     x4: scala.Double,
     y4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Specifies vertex coordinates for Bezier curves.
     *   Each call to bezierVertex() defines the position
@@ -1224,7 +1224,7 @@ object Global extends js.Object {
     x4: scala.Double,
     y4: scala.Double,
     z4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Copies a region of pixels from one image to
     *   another, using a specified blend mode to do the
@@ -1257,7 +1257,7 @@ object Global extends js.Object {
     dy: scala.Double,
     dw: scala.Double,
     dh: scala.Double,
-    blendMode: p5Lib.p5Mod.p5Ns.BLEND_MODE
+    blendMode: p5Lib.p5Mod.BLEND_MODE
   ): scala.Unit = js.native
   /**
     *   Copies a region of pixels from one image to
@@ -1289,7 +1289,7 @@ object Global extends js.Object {
     dy: scala.Double,
     dw: scala.Double,
     dh: scala.Double,
-    blendMode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT
+    blendMode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT
   ): scala.Unit = js.native
   /**
     *   Blends the pixels in the display window according
@@ -1329,7 +1329,7 @@ object Global extends js.Object {
     *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
     *   SOFT_LIGHT, DODGE, BURN, ADD or NORMAL
     */
-  def blendMode(mode: p5Lib.p5Mod.p5Ns.BLEND_MODE): scala.Unit = js.native
+  def blendMode(mode: p5Lib.p5Mod.BLEND_MODE): scala.Unit = js.native
   def blue(color: java.lang.String): scala.Double = js.native
   def blue(color: js.Array[scala.Double]): scala.Double = js.native
   /**
@@ -1367,18 +1367,18 @@ object Global extends js.Object {
     *   subdivisions in y-dimension
     *   @chainable
     */
-  def box(): p5Lib.p5Mod.namespaced = js.native
-  def box(width: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def box(width: scala.Double, Height: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def box(width: scala.Double, Height: scala.Double, depth: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def box(width: scala.Double, Height: scala.Double, depth: scala.Double, detailX: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def box(): p5Lib.p5Mod.^ = js.native
+  def box(width: scala.Double): p5Lib.p5Mod.^ = js.native
+  def box(width: scala.Double, Height: scala.Double): p5Lib.p5Mod.^ = js.native
+  def box(width: scala.Double, Height: scala.Double, depth: scala.Double): p5Lib.p5Mod.^ = js.native
+  def box(width: scala.Double, Height: scala.Double, depth: scala.Double, detailX: scala.Double): p5Lib.p5Mod.^ = js.native
   def box(
     width: scala.Double,
     Height: scala.Double,
     depth: scala.Double,
     detailX: scala.Double,
     detailY: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   def brightness(color: java.lang.String): scala.Double = js.native
   def brightness(color: js.Array[scala.Double]): scala.Double = js.native
   /**
@@ -1453,7 +1453,7 @@ object Global extends js.Object {
     upX: js.UndefOr[scala.Double],
     upY: js.UndefOr[scala.Double],
     upZ: js.UndefOr[scala.Double]
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Calculates the closest int value that is greater
     *   than or equal to the value of the parameter. Maps
@@ -1473,8 +1473,8 @@ object Global extends js.Object {
     *   fire.
     *   @chainable
     */
-  def changed(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.namespaced = js.native
-  def changed(fxn: scala.Boolean): p5Lib.p5Mod.namespaced = js.native
+  def changed(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.^ = js.native
+  def changed(fxn: scala.Boolean): p5Lib.p5Mod.^ = js.native
   /**
     *   Converts a number or string to its corresponding
     *   single-character string representation. If a
@@ -1518,7 +1518,7 @@ object Global extends js.Object {
     *   @param r radius of the circle.
     *   @chainable
     */
-  def circle(x: scala.Double, y: scala.Double, r: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def circle(x: scala.Double, y: scala.Double, r: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Clears the pixels within a buffer. This function
     *   only works on p5.Canvas objects created with the
@@ -1531,7 +1531,7 @@ object Global extends js.Object {
     *   transparent.
     *   @chainable
     */
-  def clear(): p5Lib.p5Mod.namespaced = js.native
+  def clear(): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates colors for storing in variables of the
     *   color datatype. The parameters are interpreted as
@@ -1684,8 +1684,8 @@ object Global extends js.Object {
     *   @param [max] range for all values
     *   @chainable
     */
-  def colorMode(mode: p5Lib.p5Mod.p5Ns.COLOR_MODE): p5Lib.p5Mod.namespaced = js.native
-  def colorMode(mode: p5Lib.p5Mod.p5Ns.COLOR_MODE, max: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def colorMode(mode: p5Lib.p5Mod.COLOR_MODE): p5Lib.p5Mod.^ = js.native
+  def colorMode(mode: p5Lib.p5Mod.COLOR_MODE, max: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   colorMode() changes the way p5.js interprets color
     *   data. By default, the parameters for fill(),
@@ -1712,19 +1712,14 @@ object Global extends js.Object {
     *   @param [maxA] range for the alpha
     *   @chainable
     */
+  def colorMode(mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT, max1: scala.Double, max2: scala.Double, max3: scala.Double): p5Lib.p5Mod.^ = js.native
   def colorMode(
-    mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT,
-    max1: scala.Double,
-    max2: scala.Double,
-    max3: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
-  def colorMode(
-    mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT,
+    mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT,
     max1: scala.Double,
     max2: scala.Double,
     max3: scala.Double,
     maxA: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Concatenates two arrays, maps to Array.concat().
     *   Does not modify the input arrays.
@@ -1744,18 +1739,18 @@ object Global extends js.Object {
     *   @param [cap] whether to draw the base of the cone
     *   @chainable
     */
-  def cone(): p5Lib.p5Mod.namespaced = js.native
-  def cone(radius: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def cone(radius: scala.Double, height: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def cone(radius: scala.Double, height: scala.Double, detailX: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def cone(radius: scala.Double, height: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def cone(): p5Lib.p5Mod.^ = js.native
+  def cone(radius: scala.Double): p5Lib.p5Mod.^ = js.native
+  def cone(radius: scala.Double, height: scala.Double): p5Lib.p5Mod.^ = js.native
+  def cone(radius: scala.Double, height: scala.Double, detailX: scala.Double): p5Lib.p5Mod.^ = js.native
+  def cone(radius: scala.Double, height: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.^ = js.native
   def cone(
     radius: scala.Double,
     height: scala.Double,
     detailX: scala.Double,
     detailY: scala.Double,
     cap: scala.Boolean
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Constrains a value between a minimum and maximum
     *   value.
@@ -1927,7 +1922,7 @@ object Global extends js.Object {
     *   @param [renderer] either P2D or WEBGL
     */
   def createCanvas(w: scala.Double, h: scala.Double): p5Lib.p5Mod.Renderer = js.native
-  def createCanvas(w: scala.Double, h: scala.Double, renderer: p5Lib.p5Mod.p5Ns.RENDERER): p5Lib.p5Mod.Renderer = js.native
+  def createCanvas(w: scala.Double, h: scala.Double, renderer: p5Lib.p5Mod.RENDERER): p5Lib.p5Mod.Renderer = js.native
   /**
     *   Creates a new HTML5 <video> element that contains
     *   the audio/video feed from a webcam. The element is
@@ -1957,8 +1952,8 @@ object Global extends js.Object {
   def createCapture(`type`: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.Element = js.native
   def createCapture(`type`: js.Object): p5Lib.p5Mod.Element = js.native
   def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.Element = js.native
-  def createCapture(`type`: p5Lib.p5Mod.p5Ns.TYPE): p5Lib.p5Mod.Element = js.native
-  def createCapture(`type`: p5Lib.p5Mod.p5Ns.TYPE, callback: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.Element = js.native
+  def createCapture(`type`: p5Lib.p5Mod.TYPE): p5Lib.p5Mod.Element = js.native
+  def createCapture(`type`: p5Lib.p5Mod.TYPE, callback: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.Element = js.native
   /**
     *   Creates a checkbox <input></input> element in the
     *   DOM. Calling .checked() on a checkbox returns if
@@ -2029,7 +2024,7 @@ object Global extends js.Object {
     *   @return offscreen graphics buffer
     */
   def createGraphics(w: scala.Double, h: scala.Double): p5Lib.p5Mod.Graphics = js.native
-  def createGraphics(w: scala.Double, h: scala.Double, renderer: p5Lib.p5Mod.p5Ns.RENDERER): p5Lib.p5Mod.Graphics = js.native
+  def createGraphics(w: scala.Double, h: scala.Double, renderer: p5Lib.p5Mod.RENDERER): p5Lib.p5Mod.Graphics = js.native
   /**
     *   Creates a new p5.Image (the datatype for storing
     *   images). This provides a fresh buffer of pixels to
@@ -2250,9 +2245,9 @@ object Global extends js.Object {
   def cursor(`type`: java.lang.String): scala.Unit = js.native
   def cursor(`type`: java.lang.String, x: scala.Double): scala.Unit = js.native
   def cursor(`type`: java.lang.String, x: scala.Double, y: scala.Double): scala.Unit = js.native
-  def cursor(`type`: p5Lib.p5Mod.p5Ns.CURSOR_TYPE): scala.Unit = js.native
-  def cursor(`type`: p5Lib.p5Mod.p5Ns.CURSOR_TYPE, x: scala.Double): scala.Unit = js.native
-  def cursor(`type`: p5Lib.p5Mod.p5Ns.CURSOR_TYPE, x: scala.Double, y: scala.Double): scala.Unit = js.native
+  def cursor(`type`: p5Lib.p5Mod.CURSOR_TYPE): scala.Unit = js.native
+  def cursor(`type`: p5Lib.p5Mod.CURSOR_TYPE, x: scala.Double): scala.Unit = js.native
+  def cursor(`type`: p5Lib.p5Mod.CURSOR_TYPE, x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
     *   Draws a curved line on the screen between two
     *   points, given as the middle four parameters. The
@@ -2289,7 +2284,7 @@ object Global extends js.Object {
     y3: scala.Double,
     x4: scala.Double,
     y4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Draws a curved line on the screen between two
     *   points, given as the middle four parameters. The
@@ -2336,7 +2331,7 @@ object Global extends js.Object {
     x4: scala.Double,
     y4: scala.Double,
     z4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the resolution at which curves display. The
     *   default value is 20 while the minimum value is 3.
@@ -2347,7 +2342,7 @@ object Global extends js.Object {
     *   @param resolution resolution of the curves
     *   @chainable
     */
-  def curveDetail(resolution: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def curveDetail(resolution: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Evaluates the curve at position t for points a, b,
     *   c, d. The parameter t varies between 0 and 1, a
@@ -2394,7 +2389,7 @@ object Global extends js.Object {
     *   original vertices
     *   @chainable
     */
-  def curveTightness(amount: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def curveTightness(amount: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Specifies vertex coordinates for curves. This
     *   function may only be used between beginShape() and
@@ -2437,8 +2432,8 @@ object Global extends js.Object {
     *   mode)
     *   @chainable
     */
-  def curveVertex(x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def curveVertex(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def curveVertex(x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def curveVertex(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Draw a cylinder with given radius and height
     *   @param [radius] radius of the surface
@@ -2461,7 +2456,7 @@ object Global extends js.Object {
     detailY: js.UndefOr[scala.Double],
     bottomCap: js.UndefOr[scala.Boolean],
     topCap: js.UndefOr[scala.Boolean]
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   p5.js communicates with the clock on your
     *   computer. The day() function returns the current
@@ -2552,7 +2547,7 @@ object Global extends js.Object {
     *   grid.
     *   @param mode either GRID or AXES
     */
-  def debugMode(mode: p5Lib.p5Mod.p5Ns.DEBUG_MODE): scala.Unit = js.native
+  def debugMode(mode: p5Lib.p5Mod.DEBUG_MODE): scala.Unit = js.native
   /**
     *   debugMode() helps visualize 3D space by adding a
     *   grid to indicate where the ‘ground’ is in a sketch
@@ -2609,24 +2604,24 @@ object Global extends js.Object {
     *   @param [yOff] Y axis offset from origin (0,0,0)
     *   @param [zOff] Z axis offset from origin (0,0,0)
     */
-  def debugMode(mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT): scala.Unit = js.native
-  def debugMode(mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT, gridSize: scala.Double): scala.Unit = js.native
-  def debugMode(mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT, gridSize: scala.Double, gridDivisions: scala.Double): scala.Unit = js.native
+  def debugMode(mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT): scala.Unit = js.native
+  def debugMode(mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT, gridSize: scala.Double): scala.Unit = js.native
+  def debugMode(mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT, gridSize: scala.Double, gridDivisions: scala.Double): scala.Unit = js.native
   def debugMode(
-    mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT,
+    mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT,
     gridSize: scala.Double,
     gridDivisions: scala.Double,
     xOff: scala.Double
   ): scala.Unit = js.native
   def debugMode(
-    mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT,
+    mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT,
     gridSize: scala.Double,
     gridDivisions: scala.Double,
     xOff: scala.Double,
     yOff: scala.Double
   ): scala.Unit = js.native
   def debugMode(
-    mode: p5Lib.p5Mod.p5Ns.UNKNOWN_P5_CONSTANT,
+    mode: p5Lib.p5Mod.UNKNOWN_P5_CONSTANT,
     gridSize: scala.Double,
     gridDivisions: scala.Double,
     xOff: scala.Double,
@@ -2672,8 +2667,8 @@ object Global extends js.Object {
     *   turnAxis variable to 'X', 'Y' or 'Z'.
     */
   def deviceTurned(): scala.Unit = js.native
-  def directionalLight(color: java.lang.String, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
-  def directionalLight(color: java.lang.String, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def directionalLight(color: java.lang.String, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
+  def directionalLight(color: java.lang.String, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2682,7 +2677,7 @@ object Global extends js.Object {
     *   @param position the direction of the light
     *   @chainable
     */
-  def directionalLight(color: js.Array[scala.Double], position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
+  def directionalLight(color: js.Array[scala.Double], position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2693,9 +2688,9 @@ object Global extends js.Object {
     *   @param z z axis direction
     *   @chainable
     */
-  def directionalLight(color: js.Array[scala.Double], x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def directionalLight(color: p5Lib.p5Mod.Color, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
-  def directionalLight(color: p5Lib.p5Mod.Color, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def directionalLight(color: js.Array[scala.Double], x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
+  def directionalLight(color: p5Lib.p5Mod.Color, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
+  def directionalLight(color: p5Lib.p5Mod.Color, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2706,7 +2701,7 @@ object Global extends js.Object {
     *   @param position the direction of the light
     *   @chainable
     */
-  def directionalLight(v1: scala.Double, v2: scala.Double, v3: scala.Double, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
+  def directionalLight(v1: scala.Double, v2: scala.Double, v3: scala.Double, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a directional light with a color and a
     *   direction
@@ -2726,7 +2721,7 @@ object Global extends js.Object {
     x: scala.Double,
     y: scala.Double,
     z: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Returns the pixel density of the current display
     *   the sketch is running on.
@@ -2791,8 +2786,8 @@ object Global extends js.Object {
     *   @param [h] height of the ellipse.
     *   @chainable
     */
-  def ellipse(x: scala.Double, y: scala.Double, w: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ellipse(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def ellipse(x: scala.Double, y: scala.Double, w: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ellipse(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Draws an ellipse (oval) to the screen. An ellipse
     *   with equal width and height is a circle. By
@@ -2846,7 +2841,7 @@ object Global extends js.Object {
     *   CORNERS
     *   @chainable
     */
-  def ellipseMode(mode: p5Lib.p5Mod.p5Ns.ELLIPSE_MODE): p5Lib.p5Mod.namespaced = js.native
+  def ellipseMode(mode: p5Lib.p5Mod.ELLIPSE_MODE): p5Lib.p5Mod.^ = js.native
   /**
     *   Draw an ellipsoid with given radius
     *   @param [radiusx] xradius of circle
@@ -2862,18 +2857,18 @@ object Global extends js.Object {
     *   browser.
     *   @chainable
     */
-  def ellipsoid(): p5Lib.p5Mod.namespaced = js.native
-  def ellipsoid(radiusx: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ellipsoid(radiusx: scala.Double, radiusy: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ellipsoid(radiusx: scala.Double, radiusy: scala.Double, radiusz: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def ellipsoid(radiusx: scala.Double, radiusy: scala.Double, radiusz: scala.Double, detailX: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def ellipsoid(): p5Lib.p5Mod.^ = js.native
+  def ellipsoid(radiusx: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ellipsoid(radiusx: scala.Double, radiusy: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ellipsoid(radiusx: scala.Double, radiusy: scala.Double, radiusz: scala.Double): p5Lib.p5Mod.^ = js.native
+  def ellipsoid(radiusx: scala.Double, radiusy: scala.Double, radiusz: scala.Double, detailX: scala.Double): p5Lib.p5Mod.^ = js.native
   def ellipsoid(
     radiusx: scala.Double,
     radiusy: scala.Double,
     radiusz: scala.Double,
     detailX: scala.Double,
     detailY: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Use the beginContour() and endContour() functions
     *   to create negative shapes within shapes such as
@@ -2893,7 +2888,7 @@ object Global extends js.Object {
     *   rect() within.
     *   @chainable
     */
-  def endContour(): p5Lib.p5Mod.namespaced = js.native
+  def endContour(): p5Lib.p5Mod.^ = js.native
   /**
     *   The endShape() function is the companion to
     *   beginShape() and may only be called after
@@ -2906,8 +2901,8 @@ object Global extends js.Object {
     *   @param [mode] use CLOSE to close the shape
     *   @chainable
     */
-  def endShape(): p5Lib.p5Mod.namespaced = js.native
-  def endShape(mode: p5Lib.p5Mod.p5Ns.END_MODE): p5Lib.p5Mod.namespaced = js.native
+  def endShape(): p5Lib.p5Mod.^ = js.native
+  def endShape(mode: p5Lib.p5Mod.END_MODE): p5Lib.p5Mod.^ = js.native
   /**
     *   Returns Euler's number e (2.71828...) raised to
     *   the power of the n parameter. Maps to Math.exp().
@@ -2935,7 +2930,7 @@ object Global extends js.Object {
     *   @param color the fill color
     *   @chainable
     */
-  def fill(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.namespaced = js.native
+  def fill(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all subsequent
@@ -2956,8 +2951,8 @@ object Global extends js.Object {
     *   @param gray a gray value
     *   @chainable
     */
-  def fill(gray: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def fill(gray: scala.Double, alpha: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def fill(gray: scala.Double): p5Lib.p5Mod.^ = js.native
+  def fill(gray: scala.Double, alpha: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all subsequent
@@ -2983,8 +2978,8 @@ object Global extends js.Object {
     *   current color range
     *   @chainable
     */
-  def fill(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def fill(v1: scala.Double, v2: scala.Double, v3: scala.Double, alpha: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def fill(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.^ = js.native
+  def fill(v1: scala.Double, v2: scala.Double, v3: scala.Double, alpha: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all subsequent
@@ -3005,7 +3000,7 @@ object Global extends js.Object {
     *   @param value a color string
     *   @chainable
     */
-  def fill(value: java.lang.String): p5Lib.p5Mod.namespaced = js.native
+  def fill(value: java.lang.String): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to fill shapes. For example,
     *   if you run fill(204, 102, 0), all subsequent
@@ -3027,7 +3022,7 @@ object Global extends js.Object {
     *   red,green,blue & and alpha components of the color
     *   @chainable
     */
-  def fill(values: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
+  def fill(values: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
   /**
     *   Applies a filter to the canvas.
     *
@@ -3087,8 +3082,8 @@ object Global extends js.Object {
     *   @param [filterParam] an optional parameter unique
     *   to each filter, see above
     */
-  def filter(filterType: p5Lib.p5Mod.p5Ns.FILTER_TYPE): scala.Unit = js.native
-  def filter(filterType: p5Lib.p5Mod.p5Ns.FILTER_TYPE, filterParam: scala.Double): scala.Unit = js.native
+  def filter(filterType: p5Lib.p5Mod.FILTER_TYPE): scala.Unit = js.native
+  def filter(filterType: p5Lib.p5Mod.FILTER_TYPE, filterParam: scala.Double): scala.Unit = js.native
   /**
     *   Converts a string to its floating point
     *   representation. The contents of a string must
@@ -3162,7 +3157,7 @@ object Global extends js.Object {
     *   second
     *   @chainable
     */
-  def frameRate(fps: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def frameRate(fps: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Returns the closest MIDI note value for a given
     *   frequency.
@@ -3756,7 +3751,7 @@ object Global extends js.Object {
     *   are used to set the image's width and height.
     *   @param mode either CORNER, CORNERS, or CENTER
     */
-  def imageMode(mode: p5Lib.p5Mod.p5Ns.IMAGE_MODE): scala.Unit = js.native
+  def imageMode(mode: p5Lib.p5Mod.IMAGE_MODE): scala.Unit = js.native
   /**
     *   The .input() function is called when any user
     *   input is detected with an element. The input event
@@ -3770,8 +3765,8 @@ object Global extends js.Object {
     *   will no longer fire.
     *   @chainable
     */
-  def input(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.namespaced = js.native
-  def input(fxn: scala.Boolean): p5Lib.p5Mod.namespaced = js.native
+  def input(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.^ = js.native
+  def input(fxn: scala.Boolean): p5Lib.p5Mod.^ = js.native
   /**
     *   Converts a boolean, string, or float to its
     *   integer representation. When an array of values is
@@ -3943,7 +3938,7 @@ object Global extends js.Object {
     *   @param y2 the y-coordinate of the second point
     *   @chainable
     */
-  def line(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def line(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Draws a line (a direct path between two points) to
     *   the screen. The version of line() with four
@@ -3968,7 +3963,7 @@ object Global extends js.Object {
     x2: scala.Double,
     y2: scala.Double,
     z2: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   This method is suitable for fetching files up to
     *   size of 64MB.
@@ -4931,7 +4926,7 @@ object Global extends js.Object {
     *   screen.
     *   @chainable
     */
-  def noFill(): p5Lib.p5Mod.namespaced = js.native
+  def noFill(): p5Lib.p5Mod.^ = js.native
   /**
     *   Stops p5.js from continuously executing the code
     *   within draw(). If loop() is called, the code in
@@ -4964,14 +4959,14 @@ object Global extends js.Object {
     *   smooth (antialiased) edges on your geometry.
     *   @chainable
     */
-  def noSmooth(): p5Lib.p5Mod.namespaced = js.native
+  def noSmooth(): p5Lib.p5Mod.^ = js.native
   /**
     *   Disables drawing the stroke (outline). If both
     *   noStroke() and noFill() are called, nothing will
     *   be drawn to the screen.
     *   @chainable
     */
-  def noStroke(): p5Lib.p5Mod.namespaced = js.native
+  def noStroke(): p5Lib.p5Mod.^ = js.native
   /**
     *   Removes the current fill value for displaying
     *   images and reverts to displaying images with their
@@ -5086,7 +5081,7 @@ object Global extends js.Object {
     *   possible materials in this example.
     *   @chainable
     */
-  def normalMaterial(): p5Lib.p5Mod.namespaced = js.native
+  def normalMaterial(): p5Lib.p5Mod.^ = js.native
   /**
     *   Allows movement around a 3D sketch using a mouse
     *   or trackpad. Left-clicking and dragging will
@@ -5108,9 +5103,9 @@ object Global extends js.Object {
     *   movement along Y axis
     *   @chainable
     */
-  def orbitControl(): p5Lib.p5Mod.namespaced = js.native
-  def orbitControl(sensitivityX: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def orbitControl(sensitivityX: scala.Double, sensitivityY: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def orbitControl(): p5Lib.p5Mod.^ = js.native
+  def orbitControl(sensitivityX: scala.Double): p5Lib.p5Mod.^ = js.native
+  def orbitControl(sensitivityX: scala.Double, sensitivityY: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets an orthographic projection for the camera in
     *   a 3D sketch and defines a box-shaped viewing
@@ -5140,7 +5135,7 @@ object Global extends js.Object {
     top: js.UndefOr[scala.Double],
     near: js.UndefOr[scala.Double],
     far: js.UndefOr[scala.Double]
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets a perspective projection for the camera in a
     *   3D sketch. This projection represents depth
@@ -5164,11 +5159,11 @@ object Global extends js.Object {
     *   @param [far] frustum far plane length
     *   @chainable
     */
-  def perspective(): p5Lib.p5Mod.namespaced = js.native
-  def perspective(fovy: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def perspective(fovy: scala.Double, aspect: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def perspective(fovy: scala.Double, aspect: scala.Double, near: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def perspective(fovy: scala.Double, aspect: scala.Double, near: scala.Double, far: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def perspective(): p5Lib.p5Mod.^ = js.native
+  def perspective(fovy: scala.Double): p5Lib.p5Mod.^ = js.native
+  def perspective(fovy: scala.Double, aspect: scala.Double): p5Lib.p5Mod.^ = js.native
+  def perspective(fovy: scala.Double, aspect: scala.Double, near: scala.Double): p5Lib.p5Mod.^ = js.native
+  def perspective(fovy: scala.Double, aspect: scala.Double, near: scala.Double, far: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the pixel scaling for high pixel density
     *   displays. By default pixel density is set to match
@@ -5188,7 +5183,7 @@ object Global extends js.Object {
     *   scale
     *   @chainable
     */
-  def pixelDensity(`val`: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def pixelDensity(`val`: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Draw a plane with given a width and height
     *   @param [width] width of the plane
@@ -5199,11 +5194,11 @@ object Global extends js.Object {
     *   subdivisions in y-dimension
     *   @chainable
     */
-  def plane(): p5Lib.p5Mod.namespaced = js.native
-  def plane(width: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def plane(width: scala.Double, height: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def plane(width: scala.Double, height: scala.Double, detailX: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def plane(width: scala.Double, height: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def plane(): p5Lib.p5Mod.^ = js.native
+  def plane(width: scala.Double): p5Lib.p5Mod.^ = js.native
+  def plane(width: scala.Double, height: scala.Double): p5Lib.p5Mod.^ = js.native
+  def plane(width: scala.Double, height: scala.Double, detailX: scala.Double): p5Lib.p5Mod.^ = js.native
+  def plane(width: scala.Double, height: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Draws a point, a coordinate in space at the
     *   dimension of one pixel. The first parameter is the
@@ -5215,10 +5210,10 @@ object Global extends js.Object {
     *   @param [z] the z-coordinate (for WebGL mode)
     *   @chainable
     */
-  def point(x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def point(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def pointLight(color: java.lang.String, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
-  def pointLight(color: java.lang.String, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def point(x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def point(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
+  def pointLight(color: java.lang.String, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
+  def pointLight(color: java.lang.String, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5227,7 +5222,7 @@ object Global extends js.Object {
     *   @param position the position of the light
     *   @chainable
     */
-  def pointLight(color: js.Array[scala.Double], position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
+  def pointLight(color: js.Array[scala.Double], position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5238,9 +5233,9 @@ object Global extends js.Object {
     *   @param z z axis position
     *   @chainable
     */
-  def pointLight(color: js.Array[scala.Double], x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def pointLight(color: p5Lib.p5Mod.Color, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
-  def pointLight(color: p5Lib.p5Mod.Color, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def pointLight(color: js.Array[scala.Double], x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
+  def pointLight(color: p5Lib.p5Mod.Color, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
+  def pointLight(color: p5Lib.p5Mod.Color, x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5251,7 +5246,7 @@ object Global extends js.Object {
     *   @param position the position of the light
     *   @chainable
     */
-  def pointLight(v1: scala.Double, v2: scala.Double, v3: scala.Double, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
+  def pointLight(v1: scala.Double, v2: scala.Double, v3: scala.Double, position: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
   /**
     *   Creates a point light with a color and a light
     *   position
@@ -5271,7 +5266,7 @@ object Global extends js.Object {
     x: scala.Double,
     y: scala.Double,
     z: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   The push() function saves the current drawing
     *   style settings and transformations, while pop()
@@ -5369,7 +5364,7 @@ object Global extends js.Object {
     y3: scala.Double,
     x4: scala.Double,
     y4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Draw a quad. A quad is a quadrilateral, a four
     *   sided polygon. It is similar to a rectangle, but
@@ -5405,7 +5400,7 @@ object Global extends js.Object {
     x4: scala.Double,
     y4: scala.Double,
     z4: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Specifies vertex coordinates for quadratic Bezier
     *   curves. Each call to quadraticVertex() defines the
@@ -5438,7 +5433,7 @@ object Global extends js.Object {
     x3: scala.Double,
     y3: scala.Double,
     z3: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Specifies vertex coordinates for quadratic Bezier
     *   curves. Each call to quadraticVertex() defines the
@@ -5460,7 +5455,7 @@ object Global extends js.Object {
     *   @param y3 y-coordinate for the anchor point
     *   @chainable
     */
-  def quadraticVertex(cx: scala.Double, cy: scala.Double, x3: scala.Double, y3: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def quadraticVertex(cx: scala.Double, cy: scala.Double, x3: scala.Double, y3: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Converts a degree measurement to its corresponding
     *   value in radians. Radians and degrees are two ways
@@ -5599,8 +5594,8 @@ object Global extends js.Object {
     *   y-direction (for WebGL mode)
     *   @chainable
     */
-  def rect(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def rect(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double, tl: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def rect(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): p5Lib.p5Mod.^ = js.native
+  def rect(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double, tl: scala.Double): p5Lib.p5Mod.^ = js.native
   def rect(
     x: scala.Double,
     y: scala.Double,
@@ -5608,7 +5603,7 @@ object Global extends js.Object {
     h: scala.Double,
     tl: scala.Double,
     tr: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   def rect(
     x: scala.Double,
     y: scala.Double,
@@ -5617,7 +5612,7 @@ object Global extends js.Object {
     tl: scala.Double,
     tr: scala.Double,
     br: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   def rect(
     x: scala.Double,
     y: scala.Double,
@@ -5627,7 +5622,7 @@ object Global extends js.Object {
     tr: scala.Double,
     br: scala.Double,
     bl: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Modifies the location from which rectangles are
     *   drawn by changing the way in which parameters
@@ -5662,7 +5657,7 @@ object Global extends js.Object {
     *   RADIUS
     *   @chainable
     */
-  def rectMode(mode: p5Lib.p5Mod.p5Ns.RECT_MODE): p5Lib.p5Mod.namespaced = js.native
+  def rectMode(mode: p5Lib.p5Mod.RECT_MODE): p5Lib.p5Mod.^ = js.native
   def red(color: java.lang.String): scala.Double = js.native
   def red(color: js.Array[scala.Double]): scala.Double = js.native
   /**
@@ -5710,7 +5705,7 @@ object Global extends js.Object {
     *   matrix.
     *   @chainable
     */
-  def resetMatrix(): p5Lib.p5Mod.namespaced = js.native
+  def resetMatrix(): p5Lib.p5Mod.^ = js.native
   /**
     *   Resizes the canvas to given width and height. The
     *   canvas will be cleared and draw will be called
@@ -5754,30 +5749,30 @@ object Global extends js.Object {
     *   @param [axis] (in 3d) the axis to rotate around
     *   @chainable
     */
-  def rotate(angle: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def rotate(angle: scala.Double, axis: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
-  def rotate(angle: scala.Double, axis: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
+  def rotate(angle: scala.Double): p5Lib.p5Mod.^ = js.native
+  def rotate(angle: scala.Double, axis: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
+  def rotate(angle: scala.Double, axis: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
   /**
     *   Rotates around X axis.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
     */
-  def rotateX(angle: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def rotateX(angle: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Rotates around Y axis.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
     */
-  def rotateY(angle: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def rotateY(angle: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Rotates around Z axis. Webgl mode only.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
     */
-  def rotateZ(angle: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def rotateZ(angle: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Calculates the integer closest to the n parameter.
     *   For example, round(133.8) returns the value 134.
@@ -5988,9 +5983,9 @@ object Global extends js.Object {
     */
   def saveTable(Table: p5Lib.p5Mod.Table, filename: java.lang.String): scala.Unit = js.native
   def saveTable(Table: p5Lib.p5Mod.Table, filename: java.lang.String, options: java.lang.String): scala.Unit = js.native
-  def scale(s: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
-  def scale(s: js.Array[scala.Double], y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def scale(s: js.Array[scala.Double], y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def scale(s: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
+  def scale(s: js.Array[scala.Double], y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def scale(s: js.Array[scala.Double], y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Increases or decreases the size of a shape by
     *   expanding and contracting vertices. Objects always
@@ -6014,9 +6009,9 @@ object Global extends js.Object {
     *   object
     *   @chainable
     */
-  def scale(s: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
-  def scale(s: p5Lib.p5Mod.Vector, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def scale(s: p5Lib.p5Mod.Vector, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def scale(s: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
+  def scale(s: p5Lib.p5Mod.Vector, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def scale(s: p5Lib.p5Mod.Vector, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Increases or decreases the size of a shape by
     *   expanding and contracting vertices. Objects always
@@ -6045,9 +6040,9 @@ object Global extends js.Object {
     *   z-axis (webgl only)
     *   @chainable
     */
-  def scale(s: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def scale(s: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def scale(s: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def scale(s: scala.Double): p5Lib.p5Mod.^ = js.native
+  def scale(s: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def scale(s: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   p5.js communicates with the clock on your
     *   computer. The second() function returns the
@@ -6235,8 +6230,8 @@ object Global extends js.Object {
     *   rendering shapes.
     *   @chainable
     */
-  def shader(): p5Lib.p5Mod.namespaced = js.native
-  def shader(s: p5Lib.p5Mod.Shader): p5Lib.p5Mod.namespaced = js.native
+  def shader(): p5Lib.p5Mod.^ = js.native
+  def shader(s: p5Lib.p5Mod.Shader): p5Lib.p5Mod.^ = js.native
   /**
     *   Shears a shape around the x-axis the amount
     *   specified by the angle parameter. Angles should be
@@ -6261,7 +6256,7 @@ object Global extends js.Object {
     *   or degrees, depending on current angleMode
     *   @chainable
     */
-  def shearX(angle: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def shearX(angle: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Shears a shape around the y-axis the amount
     *   specified by the angle parameter. Angles should be
@@ -6286,7 +6281,7 @@ object Global extends js.Object {
     *   or degrees, depending on current angleMode
     *   @chainable
     */
-  def shearY(angle: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def shearY(angle: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Decreases an array by one element and returns the
     *   shortened array, maps to Array.pop().
@@ -6322,7 +6317,7 @@ object Global extends js.Object {
     *   smooth (antialiased) edges on your geometry.
     *   @chainable
     */
-  def smooth(): p5Lib.p5Mod.namespaced = js.native
+  def smooth(): p5Lib.p5Mod.^ = js.native
   /**
     *   Sorts an array of numbers from smallest to
     *   largest, or puts an array of words in alphabetical
@@ -6349,7 +6344,7 @@ object Global extends js.Object {
     */
   def soundFormats(): scala.Unit = js.native
   def soundFormats(formats: java.lang.String): scala.Unit = js.native
-  def specularMaterial(color: java.lang.String): p5Lib.p5Mod.namespaced = js.native
+  def specularMaterial(color: java.lang.String): p5Lib.p5Mod.^ = js.native
   /**
     *   Specular material for geometry with a given color.
     *   You can view all possible materials in this
@@ -6357,8 +6352,8 @@ object Global extends js.Object {
     *   @param color color Array, or CSS color string
     *   @chainable
     */
-  def specularMaterial(color: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
-  def specularMaterial(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.namespaced = js.native
+  def specularMaterial(color: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
+  def specularMaterial(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.^ = js.native
   /**
     *   Specular material for geometry with a given color.
     *   You can view all possible materials in this
@@ -6370,10 +6365,10 @@ object Global extends js.Object {
     *   @param [a] opacity
     *   @chainable
     */
-  def specularMaterial(v1: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def specularMaterial(v1: scala.Double, v2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def specularMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def specularMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double, a: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def specularMaterial(v1: scala.Double): p5Lib.p5Mod.^ = js.native
+  def specularMaterial(v1: scala.Double, v2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def specularMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.^ = js.native
+  def specularMaterial(v1: scala.Double, v2: scala.Double, v3: scala.Double, a: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Draw a sphere with given radius
     *   @param [radius] radius of circle
@@ -6383,10 +6378,10 @@ object Global extends js.Object {
     *   segments the smoother geometry default is 16
     *   @chainable
     */
-  def sphere(): p5Lib.p5Mod.namespaced = js.native
-  def sphere(radius: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def sphere(radius: scala.Double, detailX: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def sphere(radius: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def sphere(): p5Lib.p5Mod.^ = js.native
+  def sphere(radius: scala.Double): p5Lib.p5Mod.^ = js.native
+  def sphere(radius: scala.Double, detailX: scala.Double): p5Lib.p5Mod.^ = js.native
+  def sphere(radius: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Inserts a value or an array of values into an
     *   existing array. The first parameter specifies the
@@ -6483,9 +6478,9 @@ object Global extends js.Object {
     *   @param [bl] optional radius of bottom-left corner.
     *   @chainable
     */
-  def square(x: scala.Double, y: scala.Double, s: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def square(x: scala.Double, y: scala.Double, s: scala.Double, tl: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def square(x: scala.Double, y: scala.Double, s: scala.Double, tl: scala.Double, tr: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def square(x: scala.Double, y: scala.Double, s: scala.Double): p5Lib.p5Mod.^ = js.native
+  def square(x: scala.Double, y: scala.Double, s: scala.Double, tl: scala.Double): p5Lib.p5Mod.^ = js.native
+  def square(x: scala.Double, y: scala.Double, s: scala.Double, tl: scala.Double, tr: scala.Double): p5Lib.p5Mod.^ = js.native
   def square(
     x: scala.Double,
     y: scala.Double,
@@ -6493,7 +6488,7 @@ object Global extends js.Object {
     tl: scala.Double,
     tr: scala.Double,
     br: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   def square(
     x: scala.Double,
     y: scala.Double,
@@ -6502,7 +6497,7 @@ object Global extends js.Object {
     tr: scala.Double,
     br: scala.Double,
     bl: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Converts a boolean, string or number to its string
     *   representation. When an array of values is passed
@@ -6534,7 +6529,7 @@ object Global extends js.Object {
     *   @param color the stroke color
     *   @chainable
     */
-  def stroke(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.namespaced = js.native
+  def stroke(color: p5Lib.p5Mod.Color): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6554,8 +6549,8 @@ object Global extends js.Object {
     *   @param gray a gray value
     *   @chainable
     */
-  def stroke(gray: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def stroke(gray: scala.Double, alpha: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def stroke(gray: scala.Double): p5Lib.p5Mod.^ = js.native
+  def stroke(gray: scala.Double, alpha: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6580,8 +6575,8 @@ object Global extends js.Object {
     *   current color range
     *   @chainable
     */
-  def stroke(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def stroke(v1: scala.Double, v2: scala.Double, v3: scala.Double, alpha: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def stroke(v1: scala.Double, v2: scala.Double, v3: scala.Double): p5Lib.p5Mod.^ = js.native
+  def stroke(v1: scala.Double, v2: scala.Double, v3: scala.Double, alpha: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6601,7 +6596,7 @@ object Global extends js.Object {
     *   @param value a color string
     *   @chainable
     */
-  def stroke(value: java.lang.String): p5Lib.p5Mod.namespaced = js.native
+  def stroke(value: java.lang.String): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the color used to draw lines and borders
     *   around shapes. This color is either specified in
@@ -6622,7 +6617,7 @@ object Global extends js.Object {
     *   red,green,blue & and alpha components of the color
     *   @chainable
     */
-  def stroke(values: js.Array[scala.Double]): p5Lib.p5Mod.namespaced = js.native
+  def stroke(values: js.Array[scala.Double]): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the style for rendering line endings. These
     *   ends are either squared, extended, or rounded,
@@ -6632,7 +6627,7 @@ object Global extends js.Object {
     *   @param cap either SQUARE, PROJECT, or ROUND
     *   @chainable
     */
-  def strokeCap(cap: p5Lib.p5Mod.p5Ns.STROKE_CAP): p5Lib.p5Mod.namespaced = js.native
+  def strokeCap(cap: p5Lib.p5Mod.STROKE_CAP): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the style of the joints which connect line
     *   segments. These joints are either mitered,
@@ -6642,7 +6637,7 @@ object Global extends js.Object {
     *   @param join either MITER, BEVEL, ROUND
     *   @chainable
     */
-  def strokeJoin(join: p5Lib.p5Mod.p5Ns.STROKE_JOIN): p5Lib.p5Mod.namespaced = js.native
+  def strokeJoin(join: p5Lib.p5Mod.STROKE_JOIN): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the width of the stroke used for lines,
     *   points, and the border around shapes. All widths
@@ -6650,7 +6645,7 @@ object Global extends js.Object {
     *   @param weight the weight (in pixels) of the stroke
     *   @chainable
     */
-  def strokeWeight(weight: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def strokeWeight(weight: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Extracts an array of elements from an existing
     *   array. The list parameter defines the array from
@@ -6717,21 +6712,21 @@ object Global extends js.Object {
     *   box, see rectMode() for more info
     *   @chainable
     */
-  def text(str: java.lang.String, x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: java.lang.String, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: java.lang.String, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: js.Array[_], x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: js.Array[_], x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: js.Array[_], x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: js.Object, x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: js.Object, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: js.Object, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: scala.Boolean, x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: scala.Boolean, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: scala.Boolean, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: scala.Double, x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: scala.Double, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def text(str: scala.Double, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def text(str: java.lang.String, x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: java.lang.String, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: java.lang.String, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: js.Array[_], x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: js.Array[_], x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: js.Array[_], x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: js.Object, x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: js.Object, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: js.Object, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: scala.Boolean, x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: scala.Boolean, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: scala.Boolean, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: scala.Double, x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: scala.Double, x: scala.Double, y: scala.Double, x2: scala.Double): p5Lib.p5Mod.^ = js.native
+  def text(str: scala.Double, x: scala.Double, y: scala.Double, x2: scala.Double, y2: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the current alignment for drawing text.
     *   Accepts two arguments: horizAlign (LEFT, CENTER,
@@ -6770,8 +6765,8 @@ object Global extends js.Object {
     *   BOTTOM, CENTER, or BASELINE
     *   @chainable
     */
-  def textAlign(horizAlign: p5Lib.p5Mod.p5Ns.HORIZ_ALIGN): p5Lib.p5Mod.namespaced = js.native
-  def textAlign(horizAlign: p5Lib.p5Mod.p5Ns.HORIZ_ALIGN, vertAlign: p5Lib.p5Mod.p5Ns.VERT_ALIGN): p5Lib.p5Mod.namespaced = js.native
+  def textAlign(horizAlign: p5Lib.p5Mod.HORIZ_ALIGN): p5Lib.p5Mod.^ = js.native
+  def textAlign(horizAlign: p5Lib.p5Mod.HORIZ_ALIGN, vertAlign: p5Lib.p5Mod.VERT_ALIGN): p5Lib.p5Mod.^ = js.native
   /**
     *   Returns the ascent of the current font at its
     *   current size. The ascent represents the distance,
@@ -6793,8 +6788,8 @@ object Global extends js.Object {
     *   @return the current font
     */
   def textFont(): js.Object = js.native
-  def textFont(font: java.lang.String): p5Lib.p5Mod.namespaced = js.native
-  def textFont(font: java.lang.String, size: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def textFont(font: java.lang.String): p5Lib.p5Mod.^ = js.native
+  def textFont(font: java.lang.String, size: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the current font that will be drawn with the
     *   text() function.  WEBGL: Only fonts loaded via
@@ -6805,8 +6800,8 @@ object Global extends js.Object {
     *   @param [size] the font size to use
     *   @chainable
     */
-  def textFont(font: js.Object): p5Lib.p5Mod.namespaced = js.native
-  def textFont(font: js.Object, size: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def textFont(font: js.Object): p5Lib.p5Mod.^ = js.native
+  def textFont(font: js.Object, size: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets/gets the spacing, in pixels, between lines of
     *   text. This setting will be used in all subsequent
@@ -6821,7 +6816,7 @@ object Global extends js.Object {
     *   between lines
     *   @chainable
     */
-  def textLeading(leading: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def textLeading(leading: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets/gets the current font size. This size will be
     *   used in all subsequent calls to the text()
@@ -6836,7 +6831,7 @@ object Global extends js.Object {
     *   pixels
     *   @chainable
     */
-  def textSize(theSize: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def textSize(theSize: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets/gets the style of the text for system fonts
     *   to NORMAL, ITALIC, BOLD or BOLDITALIC. Note: this
@@ -6855,14 +6850,14 @@ object Global extends js.Object {
     *   ITALIC, BOLD or BOLDITALIC
     *   @chainable
     */
-  def textStyle(theStyle: p5Lib.p5Mod.p5Ns.THE_STYLE): p5Lib.p5Mod.namespaced = js.native
+  def textStyle(theStyle: p5Lib.p5Mod.THE_STYLE): p5Lib.p5Mod.^ = js.native
   /**
     *   Calculates and returns the width of any character
     *   or text string.
     *   @param theText the String of characters to measure
     */
   def textWidth(theText: java.lang.String): scala.Double = js.native
-  def texture(tex: p5Lib.p5Mod.Graphics): p5Lib.p5Mod.namespaced = js.native
+  def texture(tex: p5Lib.p5Mod.Graphics): p5Lib.p5Mod.^ = js.native
   /**
     *   Texture for geometry. You can view other possible
     *   materials in this example.
@@ -6870,8 +6865,8 @@ object Global extends js.Object {
     *   texture
     *   @chainable
     */
-  def texture(tex: p5Lib.p5Mod.Image): p5Lib.p5Mod.namespaced = js.native
-  def texture(tex: p5Lib.p5Mod.MediaElement): p5Lib.p5Mod.namespaced = js.native
+  def texture(tex: p5Lib.p5Mod.Image): p5Lib.p5Mod.^ = js.native
+  def texture(tex: p5Lib.p5Mod.MediaElement): p5Lib.p5Mod.^ = js.native
   /**
     *   Sets the coordinate space for texture mapping. The
     *   default mode is IMAGE which refers to the actual
@@ -6885,7 +6880,7 @@ object Global extends js.Object {
     *   (1,1) (0,1).
     *   @param mode either IMAGE or NORMAL
     */
-  def textureMode(mode: p5Lib.p5Mod.p5Ns.TEXTURE_MODE): scala.Unit = js.native
+  def textureMode(mode: p5Lib.p5Mod.TEXTURE_MODE): scala.Unit = js.native
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made
@@ -6996,11 +6991,11 @@ object Global extends js.Object {
     *   geometry default is 16
     *   @chainable
     */
-  def torus(): p5Lib.p5Mod.namespaced = js.native
-  def torus(radius: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def torus(radius: scala.Double, tubeRadius: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def torus(radius: scala.Double, tubeRadius: scala.Double, detailX: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def torus(radius: scala.Double, tubeRadius: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def torus(): p5Lib.p5Mod.^ = js.native
+  def torus(radius: scala.Double): p5Lib.p5Mod.^ = js.native
+  def torus(radius: scala.Double, tubeRadius: scala.Double): p5Lib.p5Mod.^ = js.native
+  def torus(radius: scala.Double, tubeRadius: scala.Double, detailX: scala.Double): p5Lib.p5Mod.^ = js.native
+  def torus(radius: scala.Double, tubeRadius: scala.Double, detailX: scala.Double, detailY: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   The touchEnded() function is called every time a
     *   touch ends. If no touchEnded() function is
@@ -7059,7 +7054,7 @@ object Global extends js.Object {
     *   @param vector the vector to translate by
     *   @chainable
     */
-  def translate(vector: p5Lib.p5Mod.Vector): p5Lib.p5Mod.namespaced = js.native
+  def translate(vector: p5Lib.p5Mod.Vector): p5Lib.p5Mod.^ = js.native
   /**
     *   Specifies an amount to displace objects within the
     *   display window. The x parameter specifies
@@ -7079,8 +7074,8 @@ object Global extends js.Object {
     *   only)
     *   @chainable
     */
-  def translate(x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def translate(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def translate(x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
+  def translate(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   A triangle is a plane created by connecting three
     *   points. The first two arguments specify the first
@@ -7102,7 +7097,7 @@ object Global extends js.Object {
     y2: scala.Double,
     x3: scala.Double,
     y3: scala.Double
-  ): p5Lib.p5Mod.namespaced = js.native
+  ): p5Lib.p5Mod.^ = js.native
   /**
     *   Removes whitespace characters from the beginning
     *   and end of a String. In addition to standard
@@ -7197,7 +7192,7 @@ object Global extends js.Object {
     *   @param y y-coordinate of the vertex
     *   @chainable
     */
-  def vertex(x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def vertex(x: scala.Double, y: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   All shapes are constructed by connecting a series
     *   of vertices. vertex() is used to specify the
@@ -7211,9 +7206,9 @@ object Global extends js.Object {
     *   @param [v] the vertex's texture v-coordinate
     *   @chainable
     */
-  def vertex(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def vertex(x: scala.Double, y: scala.Double, z: scala.Double, u: scala.Double): p5Lib.p5Mod.namespaced = js.native
-  def vertex(x: scala.Double, y: scala.Double, z: scala.Double, u: scala.Double, v: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def vertex(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.^ = js.native
+  def vertex(x: scala.Double, y: scala.Double, z: scala.Double, u: scala.Double): p5Lib.p5Mod.^ = js.native
+  def vertex(x: scala.Double, y: scala.Double, z: scala.Double, u: scala.Double, v: scala.Double): p5Lib.p5Mod.^ = js.native
   /**
     *   The windowResized() function is called once every
     *   time the browser window is resized. This is a good

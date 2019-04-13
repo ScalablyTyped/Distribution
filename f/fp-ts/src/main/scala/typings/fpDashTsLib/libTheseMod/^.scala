@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/These", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* These */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.These = js.native
   val these: fpDashTsLib.libFunctorMod.Functor2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[URI] = js.native
   def both[L, A](l: L, a: A): These[L, A] = js.native
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): These[L, A] = js.native

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ELB ()
   extends awsDashSdkLib.awsDashSdkMod.ELB {
-  def this(options: awsDashSdkLib.clientsElbMod.ELBNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsElbMod.ClientConfiguration) = this()
 }
 

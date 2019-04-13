@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait Anon_CharCode extends js.Object {
   var charCode: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var close: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var close: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var closeAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined
-  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var toggle: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var wrapTag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var wrapTag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_CharCode {
@@ -22,13 +22,13 @@ object Anon_CharCode {
   def apply(
     charCode: java.lang.String | scala.Double = null,
     className: java.lang.String = null,
-    close: reactLib.reactMod.ReactNs.ReactNode = null,
+    close: reactLib.reactMod.ReactNode = null,
     closeAriaLabel: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
-    icon: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    icon: java.lang.String | reactLib.reactMod.ReactNode = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     toggle: () => scala.Unit = null,
-    wrapTag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    wrapTag: reactLib.reactMod.ReactType[_] = null
   ): Anon_CharCode = {
     val __obj = js.Dynamic.literal()
     if (charCode != null) __obj.updateDynamic("charCode")(charCode.asInstanceOf[js.Any])

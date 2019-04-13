@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Debug
-  extends /* logLevel */ org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.WriteFn] {
-  var debug: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn] = js.undefined
-  var error: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn] = js.undefined
-  var fatal: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn] = js.undefined
-  var info: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn] = js.undefined
-  var trace: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn] = js.undefined
-  var warn: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn] = js.undefined
+  extends /* logLevel */ org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.WriteFn] {
+  var debug: js.UndefOr[pinoLib.pinoMod.WriteFn] = js.undefined
+  var error: js.UndefOr[pinoLib.pinoMod.WriteFn] = js.undefined
+  var fatal: js.UndefOr[pinoLib.pinoMod.WriteFn] = js.undefined
+  var info: js.UndefOr[pinoLib.pinoMod.WriteFn] = js.undefined
+  var trace: js.UndefOr[pinoLib.pinoMod.WriteFn] = js.undefined
+  var warn: js.UndefOr[pinoLib.pinoMod.WriteFn] = js.undefined
 }
 
 object Anon_Debug {
   @scala.inline
   def apply(
-    StringDictionary: /* logLevel */ org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.WriteFn] = null,
-    debug: pinoLib.pinoMod.PNs.WriteFn = null,
-    error: pinoLib.pinoMod.PNs.WriteFn = null,
-    fatal: pinoLib.pinoMod.PNs.WriteFn = null,
-    info: pinoLib.pinoMod.PNs.WriteFn = null,
-    trace: pinoLib.pinoMod.PNs.WriteFn = null,
-    warn: pinoLib.pinoMod.PNs.WriteFn = null
+    StringDictionary: /* logLevel */ org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.WriteFn] = null,
+    debug: pinoLib.pinoMod.WriteFn = null,
+    error: pinoLib.pinoMod.WriteFn = null,
+    fatal: pinoLib.pinoMod.WriteFn = null,
+    info: pinoLib.pinoMod.WriteFn = null,
+    trace: pinoLib.pinoMod.WriteFn = null,
+    warn: pinoLib.pinoMod.WriteFn = null
   ): Anon_Debug = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

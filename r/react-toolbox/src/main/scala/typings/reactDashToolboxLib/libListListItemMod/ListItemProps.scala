@@ -10,7 +10,7 @@ trait ListItemProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the item is displayed as disabled and is not clickable.
     * @default false
@@ -36,10 +36,10 @@ trait ListItemProps
 object ListItemProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -63,7 +63,7 @@ object ListItemProps {
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
     ripple: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ListItemTheme with reactDashToolboxLib.libListListItemActionsMod.ListItemActionsTheme with reactDashToolboxLib.libListListItemContentMod.ListItemContentTheme with reactDashToolboxLib.libListListItemLayoutMod.ListItemLayoutTheme with reactDashToolboxLib.libListListItemTextMod.ListItemTextTheme = null,
     to: java.lang.String = null
   ): ListItemProps = {

@@ -11,11 +11,11 @@ trait TimelineProps extends js.Object {
     antdLib.antdLibStrings.left | antdLib.antdLibStrings.alternate | antdLib.antdLibStrings.right
   ] = js.undefined
   /** 指定最后一个幽灵节点是否存在或内容 */
-  var pending: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var pendingDot: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var pending: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var pendingDot: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var reverse: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TimelineProps {
@@ -23,11 +23,11 @@ object TimelineProps {
   def apply(
     className: java.lang.String = null,
     mode: antdLib.antdLibStrings.left | antdLib.antdLibStrings.alternate | antdLib.antdLibStrings.right = null,
-    pending: reactLib.reactMod.ReactNs.ReactNode = null,
-    pendingDot: reactLib.reactMod.ReactNs.ReactNode = null,
+    pending: reactLib.reactMod.ReactNode = null,
+    pendingDot: reactLib.reactMod.ReactNode = null,
     prefixCls: java.lang.String = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TimelineProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

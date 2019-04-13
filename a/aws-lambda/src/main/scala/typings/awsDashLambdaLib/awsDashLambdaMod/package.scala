@@ -13,12 +13,14 @@ package object awsDashLambdaMod {
   type APIGatewayProxyHandler = Handler[APIGatewayProxyEvent, APIGatewayProxyResult]
   type ArtifactLocation = S3ArtifactStore
   type AuthResponse = CustomAuthorizerResult
+  type AuthResponseContext = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Callback[TResult] = js.Function2[
     /* error */ js.UndefOr[stdLib.Error | scala.Null | java.lang.String], 
     /* result */ js.UndefOr[TResult], 
     scala.Unit
   ]
   type CloudFormationCustomResourceHandler = Handler[CloudFormationCustomResourceEvent, scala.Unit]
+  type CloudFrontHeaders = org.scalablytyped.runtime.StringDictionary[js.Array[awsDashLambdaLib.Anon_KeyValue]]
   type CloudFrontRequestCallback = Callback[CloudFrontRequestResult]
   type CloudFrontRequestHandler = Handler[CloudFrontRequestEvent, CloudFrontRequestResult]
   type CloudFrontRequestResult = js.UndefOr[scala.Null | CloudFrontResultResponse | CloudFrontRequest]
@@ -33,6 +35,8 @@ package object awsDashLambdaMod {
   type CodePipelineHandler = Handler[CodePipelineEvent, scala.Unit]
   type CognitoUserPoolEvent = CognitoUserPoolTriggerEvent
   type CognitoUserPoolTriggerHandler = Handler[CognitoUserPoolTriggerEvent, js.Any]
+  type Condition = org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+  type ConditionBlock = org.scalablytyped.runtime.StringDictionary[Condition | js.Array[Condition]]
   type CustomAuthorizerCallback = Callback[CustomAuthorizerResult]
   type CustomAuthorizerHandler = Handler[CustomAuthorizerEvent, CustomAuthorizerResult]
   type DynamoDBStreamHandler = Handler[DynamoDBStreamEvent, scala.Unit]
@@ -47,6 +51,7 @@ package object awsDashLambdaMod {
   type KinesisStreamHandler = Handler[KinesisStreamEvent, scala.Unit]
   type LexCallback = Callback[LexResult]
   type LexHandler = Handler[LexEvent, LexResult]
+  type LexSlotDetails = org.scalablytyped.runtime.StringDictionary[awsDashLambdaLib.Anon_OriginalValue]
   type PrincipalValue = (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]) | java.lang.String | js.Array[java.lang.String]
   type ProxyCallback = APIGatewayProxyCallback
   type ProxyHandler = APIGatewayProxyHandler
@@ -54,6 +59,7 @@ package object awsDashLambdaMod {
   type S3CreateEvent = S3Event
   type S3Handler = Handler[S3Event, scala.Unit]
   type SNSHandler = Handler[SNSEvent, scala.Unit]
+  type SNSMessageAttributes = org.scalablytyped.runtime.StringDictionary[SNSMessageAttribute]
   type SQSHandler = Handler[SQSEvent, scala.Unit]
   /* Rewritten from type alias, can be one of: 
     - awsDashLambdaLib.awsDashLambdaLibStrings.String
@@ -62,6 +68,7 @@ package object awsDashLambdaMod {
     - java.lang.String
   */
   type SQSMessageAttributeDataType = _SQSMessageAttributeDataType | java.lang.String
+  type SQSMessageAttributes = org.scalablytyped.runtime.StringDictionary[SQSMessageAttribute]
   type ScheduledHandler = Handler[ScheduledEvent, scala.Unit]
   type Statement = BaseStatement with StatementAction with (StatementResource | StatementPrincipal)
   type StatementPrincipal = MaybeStatementResource with (awsDashLambdaLib.Anon_Principal | awsDashLambdaLib.Anon_NotPrincipal)

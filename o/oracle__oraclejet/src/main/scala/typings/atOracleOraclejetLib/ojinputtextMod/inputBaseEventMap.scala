@@ -86,7 +86,7 @@ object inputBaseEventMap {
     loadend: stdLib.ProgressEvent,
     loadstart: stdLib.Event,
     lostpointercapture: stdLib.PointerEvent,
-    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]],
+    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]],
     mousedown: stdLib.MouseEvent,
     mouseenter: stdLib.MouseEvent,
     mouseleave: stdLib.MouseEvent,

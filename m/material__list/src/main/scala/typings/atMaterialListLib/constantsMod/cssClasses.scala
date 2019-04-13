@@ -19,10 +19,11 @@ object cssClasses {
     LIST_ITEM_ACTIVATED_CLASS: atMaterialListLib.atMaterialListLibStrings.`mdc-list-item--activated`,
     LIST_ITEM_CLASS: atMaterialListLib.atMaterialListLibStrings.`mdc-list-item`,
     LIST_ITEM_SELECTED_CLASS: atMaterialListLib.atMaterialListLibStrings.`mdc-list-item--selected`,
-    ROOT: atMaterialListLib.atMaterialListLibStrings.`mdc-list`
+    ROOT: atMaterialListLib.atMaterialListLibStrings.`mdc-list`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(LIST_ITEM_ACTIVATED_CLASS = LIST_ITEM_ACTIVATED_CLASS, LIST_ITEM_CLASS = LIST_ITEM_CLASS, LIST_ITEM_SELECTED_CLASS = LIST_ITEM_SELECTED_CLASS, ROOT = ROOT)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

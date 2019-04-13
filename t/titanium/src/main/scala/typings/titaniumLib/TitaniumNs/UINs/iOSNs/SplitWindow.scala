@@ -117,8 +117,7 @@ trait SplitWindow
   				 */
   var extendEdges: js.Array[scala.Double] = js.native
   /**
-  				 * Specifies whether the content (subviews) of the window  will render inside the safe-area or not.
-  				 * Only used in iOS 11.0 and later.
+  				 * Specifies whether the screen insets/notches are allowed to overlap the window's content or not.
   				 */
   var extendSafeArea: scala.Boolean = js.native
   /**
@@ -203,6 +202,10 @@ trait SplitWindow
   				 */
   var masterView: titaniumLib.TitaniumNs.UINs.Window = js.native
   /**
+  				 * Determines whether to show the master view or hide.
+  				 */
+  var masterViewVisible: scala.Boolean = js.native
+  /**
   				 * Indicates to open a modal window or not.
   				 */
   var modal: scala.Boolean = js.native
@@ -215,9 +218,9 @@ trait SplitWindow
   				 */
   var navTintColor: java.lang.String = js.native
   /**
-  				 * The <Titanium.UI.iOS.NavigationWindow> instance hosting this window.
+  				 * The <Titanium.UI.NavigationWindow> instance hosting this window.
   				 */
-  val navigationWindow: NavigationWindow = js.native
+  val navigationWindow: titaniumLib.TitaniumNs.UINs.NavigationWindow = js.native
   /**
   				 * The opacity from 0.0-1.0.
   				 */
@@ -241,6 +244,7 @@ trait SplitWindow
   var previewContext: PreviewContext = js.native
   /**
   				 * Background color of the wrapper view when this view is used as either <Titanium.UI.ListView.pullView> or <Titanium.UI.TableView.headerPullView>.
+  				 * Defaults to `undefined`. Results in a light grey background color on the wrapper view.
   				 */
   var pullBackgroundColor: java.lang.String = js.native
   /**
@@ -259,6 +263,10 @@ trait SplitWindow
   				 * An Array of views to show in the right nav bar area.
   				 */
   var rightNavButtons: js.Array[titaniumLib.TitaniumNs.UINs.View] = js.native
+  /**
+  				 * The padding needed to safely display content without it being overlapped by the screen insets and notches.
+  				 */
+  val safeAreaPadding: titaniumLib.Dimension = js.native
   /**
   				 * Shadow image for the navigation bar, specified as a URL to a local image..
   				 */
@@ -579,6 +587,10 @@ trait SplitWindow
   				 */
   def getMasterView(): titaniumLib.TitaniumNs.UINs.Window = js.native
   /**
+  				 * Gets the value of the <Titanium.UI.iOS.SplitWindow.masterViewVisible> property.
+  				 */
+  def getMasterViewVisible(): scala.Boolean = js.native
+  /**
   				 * Gets the value of the <Titanium.UI.iOS.SplitWindow.modal> property.
   				 */
   def getModal(): scala.Boolean = js.native
@@ -593,7 +605,7 @@ trait SplitWindow
   /**
   				 * Gets the value of the <Titanium.UI.iOS.SplitWindow.navigationWindow> property.
   				 */
-  def getNavigationWindow(): NavigationWindow = js.native
+  def getNavigationWindow(): titaniumLib.TitaniumNs.UINs.NavigationWindow = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.SplitWindow.opacity> property.
   				 */
@@ -634,6 +646,10 @@ trait SplitWindow
   				 * Gets the value of the <Titanium.UI.iOS.SplitWindow.rightNavButtons> property.
   				 */
   def getRightNavButtons(): js.Array[titaniumLib.TitaniumNs.UINs.View] = js.native
+  /**
+  				 * Gets the value of the <Titanium.UI.iOS.SplitWindow.safeAreaPadding> property.
+  				 */
+  def getSafeAreaPadding(): titaniumLib.Dimension = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.SplitWindow.shadowImage> property.
   				 */
@@ -976,6 +992,10 @@ trait SplitWindow
   				 */
   def setMasterView(masterView: titaniumLib.TitaniumNs.UINs.Window): scala.Unit = js.native
   /**
+  				 * Sets the value of the <Titanium.UI.iOS.SplitWindow.masterViewVisible> property.
+  				 */
+  def setMasterViewVisible(masterViewVisible: scala.Boolean): scala.Unit = js.native
+  /**
   				 * Sets the value of the <Titanium.UI.iOS.SplitWindow.modal> property.
   				 */
   def setModal(modal: scala.Boolean): scala.Unit = js.native
@@ -1074,9 +1094,6 @@ trait SplitWindow
   def setTitlepromptid(titlepromptid: java.lang.String): scala.Unit = js.native
   /**
   				 * Sets the array of items to show in the window's toolbar.
-  				 */
-  /**
-  				 * Sets the value of the <Titanium.UI.iOS.SplitWindow.toolbar> property.
   				 */
   def setToolbar(items: js.Array[_]): scala.Unit = js.native
   def setToolbar(items: js.Array[_], params: titaniumLib.windowToolbarParam): scala.Unit = js.native

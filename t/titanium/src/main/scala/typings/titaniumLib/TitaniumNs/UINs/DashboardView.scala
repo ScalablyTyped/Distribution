@@ -122,7 +122,7 @@ trait DashboardView
   			 */
   var left: scala.Double | java.lang.String = js.native
   /**
-  			 * Opacity of this view, from 0.0 (transparent) to 1.0 (opaque).
+  			 * Opacity of this view, from 0.0 (transparent) to 1.0 (opaque). Defaults to 1.0 (opaque).
   			 */
   var opacity: scala.Double = js.native
   /**
@@ -131,6 +131,7 @@ trait DashboardView
   var previewContext: titaniumLib.TitaniumNs.UINs.iOSNs.PreviewContext = js.native
   /**
   			 * Background color of the wrapper view when this view is used as either <Titanium.UI.ListView.pullView> or <Titanium.UI.TableView.headerPullView>.
+  			 * Defaults to `undefined`. Results in a light grey background color on the wrapper view.
   			 */
   var pullBackgroundColor: java.lang.String = js.native
   /**

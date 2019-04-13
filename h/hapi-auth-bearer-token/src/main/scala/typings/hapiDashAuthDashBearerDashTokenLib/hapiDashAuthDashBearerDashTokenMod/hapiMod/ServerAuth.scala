@@ -10,14 +10,14 @@ trait ServerAuth extends js.Object {
   def `strategy_bearer-access-token`(
     name: java.lang.String,
     scheme: hapiDashAuthDashBearerDashTokenLib.hapiDashAuthDashBearerDashTokenLibStrings.`bearer-access-token`,
-    options: hapiDashAuthDashBearerDashTokenLib.hapiDashAuthDashBearerDashTokenMod.BearerTokenNs.SchemaOptions
+    options: hapiDashAuthDashBearerDashTokenLib.hapiDashAuthDashBearerDashTokenMod.SchemaOptions
   ): scala.Unit
 }
 
 object ServerAuth {
   @scala.inline
   def apply(
-    `strategy_bearer-access-token`: (java.lang.String, hapiDashAuthDashBearerDashTokenLib.hapiDashAuthDashBearerDashTokenLibStrings.`bearer-access-token`, hapiDashAuthDashBearerDashTokenLib.hapiDashAuthDashBearerDashTokenMod.BearerTokenNs.SchemaOptions) => scala.Unit
+    `strategy_bearer-access-token`: (java.lang.String, hapiDashAuthDashBearerDashTokenLib.hapiDashAuthDashBearerDashTokenLibStrings.`bearer-access-token`, hapiDashAuthDashBearerDashTokenLib.hapiDashAuthDashBearerDashTokenMod.SchemaOptions) => scala.Unit
   ): ServerAuth = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("strategy")(js.Any.fromFunction3(`strategy_bearer-access-token`))

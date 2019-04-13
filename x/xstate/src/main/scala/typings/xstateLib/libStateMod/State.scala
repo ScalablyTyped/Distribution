@@ -36,7 +36,7 @@ class State[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */] protect
     *
     * An initial state (with no history) will return `undefined`.
     */
-  val changed: js.UndefOr[scala.Boolean] = js.native
+  var changed: js.UndefOr[scala.Boolean] = js.native
   /* CompleteClass */
   override var context: TContext = js.native
   var event: xstateLib.libTypesMod.OmniEventObject[TEvent] = js.native
@@ -81,7 +81,9 @@ object State extends js.Object {
     * @param stateValue
     * @param context
     */
+  def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libStateMod.State[TC, TE]): xstateLib.libStateMod.State[TC, TE] = js.native
   def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libStateMod.State[TC, TE], context: TC): xstateLib.libStateMod.State[TC, TE] = js.native
+  def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libTypesMod.StateValue): xstateLib.libStateMod.State[TC, TE] = js.native
   def from[TC, TE /* <: xstateLib.libTypesMod.EventObject */](stateValue: xstateLib.libTypesMod.StateValue, context: TC): xstateLib.libStateMod.State[TC, TE] = js.native
   /**
     * Creates a new `State` instance for the given `stateValue` and `context` with no actions (side-effects).

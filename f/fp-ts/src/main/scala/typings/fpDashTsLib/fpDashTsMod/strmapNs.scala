@@ -14,7 +14,7 @@ object strmapNs extends js.Object {
     def this(value: org.scalablytyped.runtime.StringDictionary[A]) = this()
   }
   
-  val URI: /* StrMap */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.StrMap = js.native
   val strmap: (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libStrMapMod.URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libStrMapMod.URI] with (fpDashTsLib.libFilterableWithIndexMod.FilterableWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libStrMapMod.URI] with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) = js.native
   def collect[A, B](d: fpDashTsLib.libStrMapMod.StrMap[A], f: js.Function2[/* k */ java.lang.String, /* a */ A, B]): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
   def elem[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libStrMapMod.StrMap[A], scala.Boolean] = js.native

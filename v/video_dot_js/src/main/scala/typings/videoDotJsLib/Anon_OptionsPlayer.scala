@@ -11,18 +11,18 @@ trait Anon_OptionsPlayer
 		 * Creates an instance of this class.
 		 *
 		 * @param player
-		 *        The `Player` that this class should be attached to.
+		 *         The `Player` that this class should be attached to.
 		 *
-		 * @param [options={}]
-		 *        The key/value store of player options.
+		 * @param [options]
+		 *         The key/value store of player options.
 		 */
 org.scalablytyped.runtime.Instantiable1[
       /* player */ videoDotJsLib.videoDotJsMod.videojsNs.Player, 
-      videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackButton
+      videoDotJsLib.videoDotJsMod.videojsNs.ClickableComponent
     ]
      with org.scalablytyped.runtime.Instantiable2[
       /* player */ videoDotJsLib.videoDotJsMod.videojsNs.Player, 
-      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions, 
-      videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackButton
+      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, 
+      videoDotJsLib.videoDotJsMod.videojsNs.ClickableComponent
     ]
 

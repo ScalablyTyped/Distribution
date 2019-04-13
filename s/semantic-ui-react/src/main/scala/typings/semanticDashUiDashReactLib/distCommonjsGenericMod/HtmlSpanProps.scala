@@ -13,7 +13,7 @@ object HtmlSpanProps {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null
+    children: reactLib.reactMod.ReactNode = null
   ): HtmlSpanProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

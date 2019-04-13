@@ -10,7 +10,7 @@ trait Anon_AngularThres extends js.Object {
   var fixedFrame: js.UndefOr[java.lang.String] = js.undefined
   var rate: js.UndefOr[scala.Double] = js.undefined
   var repubServiceName: js.UndefOr[java.lang.String] = js.undefined
-  var ros: roslibLib.roslibMod.ROSLIBNs.Ros
+  var ros: roslibLib.roslibMod.Ros
   var serverName: js.UndefOr[java.lang.String] = js.undefined
   var topicTimeout: js.UndefOr[scala.Double] = js.undefined
   var transThres: js.UndefOr[scala.Double] = js.undefined
@@ -20,7 +20,7 @@ trait Anon_AngularThres extends js.Object {
 object Anon_AngularThres {
   @scala.inline
   def apply(
-    ros: roslibLib.roslibMod.ROSLIBNs.Ros,
+    ros: roslibLib.roslibMod.Ros,
     angularThres: scala.Int | scala.Double = null,
     fixedFrame: java.lang.String = null,
     rate: scala.Int | scala.Double = null,

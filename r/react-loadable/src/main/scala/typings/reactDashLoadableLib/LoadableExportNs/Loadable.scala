@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Loadable extends js.Object {
-  var Capture: reactLib.reactMod.ReactNs.ComponentType[LoadableCaptureProps] = js.native
-  def apply[Props, Exports /* <: js.Object */](options: Options[Props, Exports]): reactLib.reactMod.ReactNs.ComponentType[Props] with LoadableComponent = js.native
-  def Map[Props, Exports /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](options: OptionsWithMap[Props, Exports]): reactLib.reactMod.ReactNs.ComponentType[Props] with LoadableComponent = js.native
+  var Capture: reactLib.reactMod.ComponentType[LoadableCaptureProps] = js.native
+  def apply[Props, Exports /* <: js.Object */](options: Options[Props, Exports]): reactLib.reactMod.ComponentType[Props] with LoadableComponent = js.native
+  def Map[Props, Exports /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](options: OptionsWithMap[Props, Exports]): reactLib.reactMod.ComponentType[Props] with LoadableComponent = js.native
   /**
     * This will call all of the LoadableComponent.preload methods recursively until they are all
     * resolved. Allowing you to preload all of your dynamic modules in environments like the server.

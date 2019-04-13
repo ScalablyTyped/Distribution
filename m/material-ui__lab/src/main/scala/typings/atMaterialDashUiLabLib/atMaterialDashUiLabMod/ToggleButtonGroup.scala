@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/lab", "ToggleButtonGroup")
 @js.native
 class ToggleButtonGroup protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps) = this()

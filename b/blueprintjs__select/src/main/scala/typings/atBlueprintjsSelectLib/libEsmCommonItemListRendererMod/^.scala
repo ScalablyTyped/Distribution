@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/select/lib/esm/common/itemListRenderer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def renderFilteredItems(props: IItemListRendererProps[_]): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def renderFilteredItems(props: IItemListRendererProps[_], noResults: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def renderFilteredItems(props: IItemListRendererProps[_]): reactLib.reactMod.ReactNode = js.native
+  def renderFilteredItems(props: IItemListRendererProps[_], noResults: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactNode = js.native
   def renderFilteredItems(
     props: IItemListRendererProps[_],
-    noResults: reactLib.reactMod.ReactNs.ReactNode,
-    initialContent: reactLib.reactMod.ReactNs.ReactNode
-  ): reactLib.reactMod.ReactNs.ReactNode = js.native
+    noResults: reactLib.reactMod.ReactNode,
+    initialContent: reactLib.reactMod.ReactNode
+  ): reactLib.reactMod.ReactNode = js.native
 }
 

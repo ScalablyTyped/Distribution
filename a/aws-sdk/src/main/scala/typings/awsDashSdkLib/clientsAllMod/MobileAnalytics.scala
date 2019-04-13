@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MobileAnalytics ()
-  extends awsDashSdkLib.clientsMobileanalyticsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMobileanalyticsMod.MobileAnalyticsNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMobileanalyticsMod.^ {
+  def this(options: awsDashSdkLib.clientsMobileanalyticsMod.ClientConfiguration) = this()
 }
 

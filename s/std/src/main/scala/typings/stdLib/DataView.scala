@@ -10,7 +10,7 @@ trait DataView extends js.Object {
   val buffer: ArrayBuffer = js.native
   val byteLength: scala.Double = js.native
   val byteOffset: scala.Double = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
   /**
     * Gets the BigInt64 value at the specified byte offset from the start of the view. There is

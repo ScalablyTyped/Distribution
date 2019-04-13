@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ClassPropertiesExtend
-  extends org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.Router]
+  extends org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.Router]
      with org.scalablytyped.runtime.Instantiable1[
-      /* options */ backboneLib.backboneMod.BackboneNs.RouterOptions, 
-      backboneLib.backboneMod.BackboneNs.Router
+      /* options */ backboneLib.backboneMod.RouterOptions, 
+      backboneLib.backboneMod.Router
     ] {
   /**
     * Do not use, prefer TypeScript's extend functionality.

@@ -12,12 +12,12 @@ trait CalendarProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var clearButtonStyleClass: js.UndefOr[java.lang.String] = js.undefined
   var dateFormat: js.UndefOr[java.lang.String] = js.undefined
-  var dateTemplate: js.UndefOr[js.Function1[/* dateMeta */ DateMetaData, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var dateTemplate: js.UndefOr[js.Function1[/* dateMeta */ DateMetaData, reactLib.reactMod.ReactNode]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var disabledDates: js.UndefOr[js.Array[stdLib.Date]] = js.undefined
   var disabledDays: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var footerTemplate: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var headerTemplate: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var footerTemplate: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
+  var headerTemplate: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   var hideOnDateTimeSelect: js.UndefOr[scala.Boolean] = js.undefined
   var hourFormat: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
@@ -81,12 +81,12 @@ object CalendarProps {
     className: java.lang.String = null,
     clearButtonStyleClass: java.lang.String = null,
     dateFormat: java.lang.String = null,
-    dateTemplate: /* dateMeta */ DateMetaData => reactLib.reactMod.ReactNs.ReactNode = null,
+    dateTemplate: /* dateMeta */ DateMetaData => reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     disabledDates: js.Array[stdLib.Date] = null,
     disabledDays: js.Array[scala.Double] = null,
-    footerTemplate: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    headerTemplate: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    footerTemplate: () => reactLib.reactMod.ReactNode = null,
+    headerTemplate: () => reactLib.reactMod.ReactNode = null,
     hideOnDateTimeSelect: js.UndefOr[scala.Boolean] = js.undefined,
     hourFormat: java.lang.String = null,
     icon: java.lang.String = null,

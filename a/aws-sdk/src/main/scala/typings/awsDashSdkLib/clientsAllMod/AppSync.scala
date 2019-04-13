@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class AppSync ()
-  extends awsDashSdkLib.clientsAppsyncMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAppsyncMod.^ {
+  def this(options: awsDashSdkLib.clientsAppsyncMod.ClientConfiguration) = this()
 }
 

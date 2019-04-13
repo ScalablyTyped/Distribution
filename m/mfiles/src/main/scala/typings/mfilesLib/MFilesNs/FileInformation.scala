@@ -19,3 +19,8 @@ class FileInformation ()
   override def ExtractFromFile(PathToFile: java.lang.String): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.FileInformation")
+@js.native
+object FileInformation
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFileInformation]
+

@@ -40,7 +40,7 @@ object Op extends js.Object {
   val `=`: `=` with java.lang.String = js.native
   val `>`: `>` with java.lang.String = js.native
   val `>=`: `>=` with java.lang.String = js.native
-  val ^ : ^ with java.lang.String = js.native
+  val ^ : ^  with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[ydnDashDbLib.ydnNs.dbNs.Op with java.lang.String] = js.native
 }

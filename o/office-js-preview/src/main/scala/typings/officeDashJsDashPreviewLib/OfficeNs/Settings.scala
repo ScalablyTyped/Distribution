@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
   * Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
   *
   * @remarks
-  * <table>
-  *   <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
-  *   <tr><td>Requirement Sets</td><td>Settings</td></tr>
-  * </table>
+  * **Hosts**: Access, Excel, PowerPoint, Word
   * 
   * The settings created by using the methods of the Settings object are saved per add-in and per document. 
   * That is, they are available only to the add-in that created them, and only from the document in which they are saved.
@@ -34,8 +31,7 @@ trait Settings extends js.Object {
     * spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
     *
     * @remarks
-    *
-    * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
@@ -66,21 +62,6 @@ trait Settings extends js.Object {
     *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
     *   </tr>
     * </table>
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *  </table>
     */
   def addHandlerAsync(eventType: EventType, handler: js.Any): scala.Unit = js.native
   def addHandlerAsync(
@@ -99,24 +80,7 @@ trait Settings extends js.Object {
     * Retrieves the specified setting.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
     *
     * @param settingName The case-sensitive name of the setting to retrieve.
     * @returns An object that has property names mapped to JSON serialized values.
@@ -126,8 +90,7 @@ trait Settings extends js.Object {
     * Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those settings held in memory.
     *
     * @remarks
-    * 
-    * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against 
     * the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user 
@@ -160,23 +123,6 @@ trait Settings extends js.Object {
     *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
     *   </tr>
     * </table>
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-    *  </table>
     *
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is an {@link Office.Settings} object with the refreshed values.
@@ -191,27 +137,10 @@ trait Settings extends js.Object {
     * call the Settings.saveAsync method.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
     * 
     * null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings property bag.
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
-    *
     * @param settingName The case-sensitive name of the setting to remove.
     */
   def remove(name: java.lang.String): scala.Unit = js.native
@@ -219,8 +148,7 @@ trait Settings extends js.Object {
     * Removes an event handler for the settingsChanged event.
     *
     * @remarks
-    *
-    * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     * 
     * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType 
     * will be removed.
@@ -230,21 +158,6 @@ trait Settings extends js.Object {
     * 
     * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the 
     * following information.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel  </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *  </table>
     *
     * @param eventType Specifies the type of event to remove. Required.
     * @param options Provides options to determine which event handler or handlers are removed.
@@ -262,6 +175,8 @@ trait Settings extends js.Object {
     * Persists the in-memory copy of the settings property bag in the document.
     * 
     * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+    * 
     * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the 
     * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are 
     * available the next time the add-in is used, use the saveAsync method.
@@ -294,23 +209,6 @@ trait Settings extends js.Object {
     *   </tr>
     * </table>
     * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
-    * 
     * @param options Provides options for saving settings.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
@@ -330,28 +228,11 @@ trait Settings extends js.Object {
     * the document.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
     * 
     * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name 
     * in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as 
     * the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in.
-    * 
-    * **Support details**
-    * 
-    * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-    * An empty cell indicates that the Office host application doesn't support this method.
-    * 
-    * For more information about Office host application and server requirements, see 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-    * 
-    * *Supported hosts, by platform*
-    *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-    *  </table>
     * 
     * @param settingName The case-sensitive name of the setting to set or create.
     * @param value Specifies the value to be stored.

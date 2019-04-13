@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "FABButton")
 @js.native
-class FABButton ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.FABButton
+class FABButton () extends __MDLComponent[FABButtonProps]
 

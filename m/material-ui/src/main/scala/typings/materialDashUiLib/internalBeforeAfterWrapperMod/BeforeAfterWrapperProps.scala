@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BeforeAfterWrapperProps
-  extends reactLib.reactMod.ReactNs.Props[BeforeAfterWrapper] {
+  extends reactLib.reactMod.Props[BeforeAfterWrapper] {
   var afterElementType: js.UndefOr[java.lang.String] = js.undefined
-  var afterStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var afterStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var beforeElementType: js.UndefOr[java.lang.String] = js.undefined
-  var beforeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var beforeStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var elementType: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object BeforeAfterWrapperProps {
   @scala.inline
   def apply(
     afterElementType: java.lang.String = null,
-    afterStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    afterStyle: reactLib.reactMod.CSSProperties = null,
     beforeElementType: java.lang.String = null,
-    beforeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    beforeStyle: reactLib.reactMod.CSSProperties = null,
+    children: reactLib.reactMod.ReactNode = null,
     elementType: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[BeforeAfterWrapper] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[BeforeAfterWrapper] = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): BeforeAfterWrapperProps = {
     val __obj = js.Dynamic.literal()
     if (afterElementType != null) __obj.updateDynamic("afterElementType")(afterElementType)

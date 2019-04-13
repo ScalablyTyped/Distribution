@@ -25,3 +25,8 @@ class Strings ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.Strings")
+@js.native
+object Strings
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IStrings]
+

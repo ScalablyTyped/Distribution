@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[_]] */](fn: T): T with promiseDashMemoizeLib.Anon_Clear = js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[_]] */](fn: T, options: promiseDashMemoizeLib.promiseDashMemoizeMod.promiseMemoizeNs.Options): T with promiseDashMemoizeLib.Anon_Clear = js.native
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[_]] */](fn: T, options: Options): T with promiseDashMemoizeLib.Anon_Clear = js.native
 }
 

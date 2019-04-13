@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-express-utils", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val TYPE: inversifyDashExpressDashUtilsLib.Anon_AuthProvider = js.native
   def all(
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*
@@ -25,7 +24,7 @@ object ^ extends js.Object {
   ): js.Array[inversifyDashExpressDashUtilsLib.Anon_ControllerMetadata] = js.native
   def getRouteInfo(
     container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Container */ js.Any
-  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_ControllerEndpoints] = js.native
+  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_Controller] = js.native
   def httpDelete(
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*

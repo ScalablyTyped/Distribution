@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait BadgeProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait BadgeProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BadgeClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var badgeContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var badgeContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var children: reactLib.reactMod.ReactNode
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[BadgeProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[BadgeProps]] = js.undefined
   var invisible: js.UndefOr[scala.Boolean] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var showZero: js.UndefOr[scala.Boolean] = js.undefined
@@ -26,17 +26,17 @@ import scala.scalajs.js.annotation._
 object BadgeProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
-    badgeContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode,
+    badgeContent: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BadgeClassKey]] = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error = null,
-    component: reactLib.reactMod.ReactNs.ReactType[BadgeProps] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    component: reactLib.reactMod.ReactType[BadgeProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     invisible: js.UndefOr[scala.Boolean] = js.undefined,
     max: scala.Int | scala.Double = null,
     showZero: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dot = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])

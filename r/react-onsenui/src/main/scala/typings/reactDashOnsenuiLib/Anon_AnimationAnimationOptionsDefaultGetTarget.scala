@@ -10,7 +10,7 @@ trait Anon_AnimationAnimationOptionsDefaultGetTarget extends js.Object {
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.none | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.default
   ] = js.undefined
   var animationOptions: js.UndefOr[reactDashOnsenuiLib.reactDashOnsenuiMod.AnimationOptions] = js.undefined
-  var getTarget: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactInstance]] = js.undefined
+  var getTarget: js.UndefOr[js.Function0[reactLib.reactMod.ReactInstance]] = js.undefined
   var isCancelable: js.UndefOr[scala.Boolean] = js.undefined
   var isDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
@@ -28,7 +28,7 @@ object Anon_AnimationAnimationOptionsDefaultGetTarget {
   def apply(
     animation: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.none | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.default = null,
     animationOptions: reactDashOnsenuiLib.reactDashOnsenuiMod.AnimationOptions = null,
-    getTarget: () => reactLib.reactMod.ReactNs.ReactInstance = null,
+    getTarget: () => reactLib.reactMod.ReactInstance = null,
     isCancelable: js.UndefOr[scala.Boolean] = js.undefined,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,

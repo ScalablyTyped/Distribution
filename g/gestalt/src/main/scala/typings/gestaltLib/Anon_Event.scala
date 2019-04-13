@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Event extends js.Object {
-  var event: reactLib.reactMod.ReactNs.SyntheticEvent[
-    reactLib.reactMod.ReactNs.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
+  var event: reactLib.reactMod.SyntheticEvent[
+    reactLib.reactMod.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
     reactLib.Event
   ]
 }
@@ -15,8 +15,8 @@ trait Anon_Event extends js.Object {
 object Anon_Event {
   @scala.inline
   def apply(
-    event: reactLib.reactMod.ReactNs.SyntheticEvent[
-      reactLib.reactMod.ReactNs.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
+    event: reactLib.reactMod.SyntheticEvent[
+      reactLib.reactMod.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent], 
       reactLib.Event
     ]
   ): Anon_Event = {

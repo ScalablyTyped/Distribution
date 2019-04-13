@@ -29,7 +29,7 @@ trait Polygon extends js.Object {
     * Returns the number of points in this polygon
     */
   val length: scala.Double = js.native
-  val points: js.Array[vec2Lib.vec2Mod.namespaced] = js.native
+  val points: js.Array[vec2Lib.vec2Mod.^] = js.native
   /**
     * Returns an object `{x:_, y:_, w:_, h:_}` representing the axis-aligned bounding box of this polygyon
     */
@@ -41,7 +41,7 @@ trait Polygon extends js.Object {
   /**
     * Returns a `Vec2` at the center of the AABB
     */
-  def center(): vec2Lib.vec2Mod.namespaced = js.native
+  def center(): vec2Lib.vec2Mod.^ = js.native
   /**
     * Removes contiguous points that are the same
     */
@@ -50,7 +50,7 @@ trait Polygon extends js.Object {
   /**
     * Finds the closest point in this polygon to `vec2`
     */
-  def closestPointTo(vec2: vec2Lib.vec2Mod.namespaced): vec2Lib.vec2Mod.namespaced = js.native
+  def closestPointTo(vec2: vec2Lib.vec2Mod.^): vec2Lib.vec2Mod.^ = js.native
   /**
     * Works with an array of vec2's,
     * an object containing a `.position` and `.radius`,
@@ -59,7 +59,7 @@ trait Polygon extends js.Object {
     * and an object populated with x,y,width,height.
     * See the tests for more info
     */
-  def contains(thing: js.Array[vec2Lib.vec2Mod.namespaced]): scala.Boolean = js.native
+  def contains(thing: js.Array[vec2Lib.vec2Mod.^]): scala.Boolean = js.native
   def contains(thing: polygonLib.Anon_H): scala.Boolean = js.native
   def contains(thing: polygonLib.Anon_Height): scala.Boolean = js.native
   def contains(thing: polygonLib.Anon_Position): scala.Boolean = js.native
@@ -67,7 +67,7 @@ trait Polygon extends js.Object {
   /**
     * Returns true if `vec2` is inside the polygon
     */
-  def containsPoint(vec2: vec2Lib.vec2Mod.namespaced): scala.Boolean = js.native
+  def containsPoint(vec2: vec2Lib.vec2Mod.^): scala.Boolean = js.native
   /**
     * Returns true if `poly` is completely contained in this polygon
     */
@@ -86,9 +86,9 @@ trait Polygon extends js.Object {
     */
   def each(
     fn: js.Function4[
-      /* prev */ vec2Lib.vec2Mod.namespaced, 
-      /* current */ vec2Lib.vec2Mod.namespaced, 
-      /* next */ vec2Lib.vec2Mod.namespaced, 
+      /* prev */ vec2Lib.vec2Mod.^, 
+      /* current */ vec2Lib.vec2Mod.^, 
+      /* next */ vec2Lib.vec2Mod.^, 
       /* idx */ scala.Double, 
       _
     ]
@@ -100,18 +100,18 @@ trait Polygon extends js.Object {
   /**
     * Insert `vec2` at the specified index
     */
-  def insert(vec2: vec2Lib.vec2Mod.namespaced, index: scala.Double): scala.Unit = js.native
+  def insert(vec2: vec2Lib.vec2Mod.^, index: scala.Double): scala.Unit = js.native
   /**
     * Return an array `[startpoint, endpoint]` representing the line at the specified `index`
     */
-  def line(index: scala.Double): js.Tuple2[vec2Lib.vec2Mod.namespaced, vec2Lib.vec2Mod.namespaced] = js.native
+  def line(index: scala.Double): js.Tuple2[vec2Lib.vec2Mod.^, vec2Lib.vec2Mod.^] = js.native
   /**
     * Iterate over the lines in this polygon
     */
   def lines(
     fn: js.Function3[
-      /* start */ vec2Lib.vec2Mod.namespaced, 
-      /* end */ vec2Lib.vec2Mod.namespaced, 
+      /* start */ vec2Lib.vec2Mod.^, 
+      /* end */ vec2Lib.vec2Mod.^, 
       /* index */ scala.Double, 
       _
     ]
@@ -123,7 +123,7 @@ trait Polygon extends js.Object {
   /**
     * Returns the point at index `idx`. note: this will wrap in both directions
     */
-  def point(idx: scala.Double): vec2Lib.vec2Mod.namespaced = js.native
+  def point(idx: scala.Double): vec2Lib.vec2Mod.^ = js.native
   /**
     * Remove self intersections from this polygon.  returns an array of polygons
     */
@@ -132,7 +132,7 @@ trait Polygon extends js.Object {
   /**
     * Remove the specified `vec2` or numeric index from this polygon
     */
-  def remove(vecOrIndex: vec2Lib.vec2Mod.namespaced): Polygon = js.native
+  def remove(vecOrIndex: vec2Lib.vec2Mod.^): Polygon = js.native
   /**
     * Rewinds the polygon in the specified direction (true === clockwise)
     */
@@ -140,13 +140,13 @@ trait Polygon extends js.Object {
   /**
     * Rotate by origin `vec2` (default `this.center()`) by radians `rads` and return a clone if `returnNew` is specified
     */
-  def rotate(rads: scala.Double, vec2: vec2Lib.vec2Mod.namespaced): Polygon = js.native
-  def rotate(rads: scala.Double, vec2: vec2Lib.vec2Mod.namespaced, returnNew: scala.Boolean): Polygon = js.native
+  def rotate(rads: scala.Double, vec2: vec2Lib.vec2Mod.^): Polygon = js.native
+  def rotate(rads: scala.Double, vec2: vec2Lib.vec2Mod.^, returnNew: scala.Boolean): Polygon = js.native
   /**
     * Scales this polygon around `origin` (default is `this.center()`) and will return a new polygon if requested with `returnNew`
     */
-  def scale(amount: scala.Double, origin: vec2Lib.vec2Mod.namespaced): Polygon = js.native
-  def scale(amount: scala.Double, origin: vec2Lib.vec2Mod.namespaced, returnNew: scala.Boolean): Polygon = js.native
+  def scale(amount: scala.Double, origin: vec2Lib.vec2Mod.^): Polygon = js.native
+  def scale(amount: scala.Double, origin: vec2Lib.vec2Mod.^, returnNew: scala.Boolean): Polygon = js.native
   /**
     * Find self-intersections and return them as a new polygon
     */
@@ -158,8 +158,8 @@ trait Polygon extends js.Object {
   /**
     * Translate by `vec2` and return a clone if `returnNew` is specified
     */
-  def translate(vec2: vec2Lib.vec2Mod.namespaced): Polygon = js.native
-  def translate(vec2: vec2Lib.vec2Mod.namespaced, returnNew: scala.Boolean): Polygon = js.native
+  def translate(vec2: vec2Lib.vec2Mod.^): Polygon = js.native
+  def translate(vec2: vec2Lib.vec2Mod.^, returnNew: scala.Boolean): Polygon = js.native
   /**
     * Returns a new polygon representing the boolean union of `this` and the incoming `polygon`
     */

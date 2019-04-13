@@ -14,10 +14,10 @@ trait Anon_Bordered extends js.Object {
   var inverse: js.UndefOr[scala.Boolean] = js.undefined
   var reflow: js.UndefOr[scala.Boolean] = js.undefined
   var responsive: js.UndefOr[scala.Boolean] = js.undefined
-  var responsiveTag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var responsiveTag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
   var striped: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_Bordered {
@@ -31,10 +31,10 @@ object Anon_Bordered {
     inverse: js.UndefOr[scala.Boolean] = js.undefined,
     reflow: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
-    responsiveTag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    responsiveTag: reactLib.reactMod.ReactType[_] = null,
     size: java.lang.String = null,
     striped: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_Bordered = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)

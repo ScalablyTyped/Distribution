@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HtmlHTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HtmlHTMLAttributes<std.HTMLDivElement>[P]} */ trait ModalProps
+- Dropped {[ P in std.Exclude<keyof react.react.HtmlHTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HtmlHTMLAttributes<std.HTMLDivElement>[P]} */ trait ModalProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ModalClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var BackdropComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
+    reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
   ] = js.undefined
   var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
   var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] | scala.Null
+    reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] | scala.Null
   ] = js.undefined
   var disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var disableBackdropClick: js.UndefOr[scala.Boolean] = js.undefined
@@ -26,9 +26,9 @@ import scala.scalajs.js.annotation._
   var hideBackdrop: js.UndefOr[scala.Boolean] = js.undefined
   var keepMounted: js.UndefOr[scala.Boolean] = js.undefined
   var manager: js.UndefOr[atMaterialDashUiCoreLib.modalModalManagerMod.ModalManager] = js.undefined
-  var onBackdropClick: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
-  var onClose: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
-  var onEscapeKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
+  var onBackdropClick: js.UndefOr[reactLib.reactMod.ReactEventHandler[js.Object]] = js.undefined
+  var onClose: js.UndefOr[reactLib.reactMod.ReactEventHandler[js.Object]] = js.undefined
+  var onEscapeKeyDown: js.UndefOr[reactLib.reactMod.ReactEventHandler[js.Object]] = js.undefined
   var onRendered: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var open: scala.Boolean
 }
@@ -37,12 +37,12 @@ object ModalProps {
   @scala.inline
   def apply(
     open: scala.Boolean,
-    BackdropComponent: reactLib.reactMod.ReactNs.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
+    BackdropComponent: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
     BackdropProps: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ModalClassKey]] = null,
     closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined,
-    container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
+    container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,
     disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disableBackdropClick: js.UndefOr[scala.Boolean] = js.undefined,
     disableEnforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -50,14 +50,14 @@ object ModalProps {
     disablePortal: js.UndefOr[scala.Boolean] = js.undefined,
     disableRestoreFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hideBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     keepMounted: js.UndefOr[scala.Boolean] = js.undefined,
     manager: atMaterialDashUiCoreLib.modalModalManagerMod.ModalManager = null,
-    onBackdropClick: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
-    onClose: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
-    onEscapeKeyDown: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
+    onBackdropClick: reactLib.reactMod.ReactEventHandler[js.Object] = null,
+    onClose: reactLib.reactMod.ReactEventHandler[js.Object] = null,
+    onEscapeKeyDown: reactLib.reactMod.ReactEventHandler[js.Object] = null,
     onRendered: () => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal(open = open)
     if (BackdropComponent != null) __obj.updateDynamic("BackdropComponent")(BackdropComponent.asInstanceOf[js.Any])

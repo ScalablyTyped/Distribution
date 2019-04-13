@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("adone.util.querystring")
 @js.native
 object ^ extends js.Object {
-  val formats: adoneLib.Anon_Default = js.native
   def escape(str: java.lang.String): java.lang.String = js.native
   def parse(str: java.lang.String): js.Any = js.native
   def parse(str: java.lang.String, options: adoneLib.adoneNs.utilNs.querystringNs.INs.ParseOptions): js.Any = js.native

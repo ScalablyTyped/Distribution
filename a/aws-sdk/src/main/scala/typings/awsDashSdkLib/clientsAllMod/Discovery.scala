@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Discovery ()
-  extends awsDashSdkLib.clientsDiscoveryMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDiscoveryMod.^ {
+  def this(options: awsDashSdkLib.clientsDiscoveryMod.ClientConfiguration) = this()
 }
 

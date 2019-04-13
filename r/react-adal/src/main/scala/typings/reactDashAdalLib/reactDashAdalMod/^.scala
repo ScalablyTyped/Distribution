@@ -18,10 +18,10 @@ object ^ extends js.Object {
   def adalGetToken(authContext: AuthenticationContext, resourceUrl: java.lang.String): js.Promise[java.lang.String | scala.Null] = js.native
   def runWithAdal(authContext: AuthenticationContext, app: js.Function0[scala.Unit], doNotLogin: scala.Boolean): scala.Unit = js.native
   def withAdalLogin(authContext: AuthenticationContext, resource: java.lang.String): js.Function3[
-    /* wrappedComponent */ (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[js.Object], 
+    /* wrappedComponent */ (reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[js.Object], 
     /* renderLoading */ js.Function0[reactLib.reactMod.Global.JSXNs.Element | scala.Null], 
     /* renderError */ js.Function1[/* error */ js.Any, reactLib.reactMod.Global.JSXNs.Element | scala.Null], 
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+    reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]
   ] = js.native
 }
 

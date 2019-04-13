@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("react-svg-pan-zoom", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val MODE_IDLE: /* idle */ java.lang.String = js.native
-  val MODE_PANNING: /* panning */ java.lang.String = js.native
-  val MODE_ZOOMING: /* zooming */ java.lang.String = js.native
-  val POSITION_BOTTOM: /* bottom */ java.lang.String = js.native
-  val POSITION_LEFT: /* left */ java.lang.String = js.native
-  val POSITION_NONE: /* none */ java.lang.String = js.native
-  val POSITION_RIGHT: /* right */ java.lang.String = js.native
-  val POSITION_TOP: /* top */ java.lang.String = js.native
-  val TOOL_AUTO: /* auto */ java.lang.String = js.native
-  val TOOL_NONE: /* none */ java.lang.String = js.native
-  val TOOL_PAN: /* pan */ java.lang.String = js.native
-  val TOOL_ZOOM_IN: /* zoom-in */ java.lang.String = js.native
-  val TOOL_ZOOM_OUT: /* zoom-out */ java.lang.String = js.native
+  val MODE_IDLE: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.idle = js.native
+  val MODE_PANNING: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.panning = js.native
+  val MODE_ZOOMING: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.zooming = js.native
+  val POSITION_BOTTOM: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.bottom = js.native
+  val POSITION_LEFT: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.left = js.native
+  val POSITION_NONE: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.none = js.native
+  val POSITION_RIGHT: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.right = js.native
+  val POSITION_TOP: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.top = js.native
+  val TOOL_AUTO: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.auto = js.native
+  val TOOL_NONE: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.none = js.native
+  val TOOL_PAN: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.pan = js.native
+  val TOOL_ZOOM_IN: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.`zoom-in` = js.native
+  val TOOL_ZOOM_OUT: reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.`zoom-out` = js.native
   def fitSelection(
     value: Value,
     selectionSVGPointX: scala.Double,

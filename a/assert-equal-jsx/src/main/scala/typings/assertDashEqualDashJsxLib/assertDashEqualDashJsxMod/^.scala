@@ -12,7 +12,7 @@ object ^ extends js.Object {
   def apply(
     actual: reactLib.reactMod.Global.JSXNs.Element,
     expected: reactLib.reactMod.Global.JSXNs.Element,
-    opts: assertDashEqualDashJsxLib.assertDashEqualDashJsxMod.assertEqualJSXNs.AsssertOptions
+    opts: AsssertOptions
   ): scala.Unit = js.native
 }
 

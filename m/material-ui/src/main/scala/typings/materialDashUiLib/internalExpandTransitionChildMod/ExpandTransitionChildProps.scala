@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExpandTransitionChildProps
-  extends reactLib.reactMod.ReactNs.Props[ExpandTransitionChild] {
+  extends reactLib.reactMod.Props[ExpandTransitionChild] {
   var enterDelay: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var transitionDelay: js.UndefOr[scala.Double] = js.undefined
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
 }
@@ -16,11 +16,11 @@ trait ExpandTransitionChildProps
 object ExpandTransitionChildProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     enterDelay: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ExpandTransitionChild] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[ExpandTransitionChild] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDelay: scala.Int | scala.Double = null,
     transitionDuration: scala.Int | scala.Double = null
   ): ExpandTransitionChildProps = {

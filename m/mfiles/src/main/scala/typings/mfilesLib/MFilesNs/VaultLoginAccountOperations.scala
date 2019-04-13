@@ -29,3 +29,8 @@ class VaultLoginAccountOperations ()
   override def UpdateLoginPassword(AccountName: java.lang.String, NewPassword: java.lang.String): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VaultLoginAccountOperations")
+@js.native
+object VaultLoginAccountOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultLoginAccountOperations]
+

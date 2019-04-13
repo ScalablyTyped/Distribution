@@ -55,3 +55,8 @@ class CopyVaultJob ()
   override def Clone(): mfilesLib.ICopyVaultJob = js.native
 }
 
+@JSGlobal("MFiles.CopyVaultJob")
+@js.native
+object CopyVaultJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ICopyVaultJob]
+

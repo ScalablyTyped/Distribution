@@ -16,15 +16,13 @@ trait CreatableProps[OptionType] extends js.Object {
   ] = js.undefined
   /* Gets the label for the "create new ..." option in the menu. Is given the
     current input value. */
-  var formatCreateLabel: js.UndefOr[
-    js.Function1[/* inputValue */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var formatCreateLabel: js.UndefOr[js.Function1[/* inputValue */ java.lang.String, reactLib.reactMod.ReactNode]] = js.undefined
   /* Returns the data for the new option when it is created. Used to display the
     value, and is passed to `onChange`. */
   var getNewOptionData: js.UndefOr[
     js.Function2[
       /* inputValue */ java.lang.String, 
-      /* optionLabel */ reactLib.reactMod.ReactNs.ReactNode, 
+      /* optionLabel */ reactLib.reactMod.ReactNode, 
       OptionType
     ]
   ] = js.undefined
@@ -49,8 +47,8 @@ object CreatableProps {
   def apply[OptionType](
     allowCreateWhileLoading: js.UndefOr[scala.Boolean] = js.undefined,
     createOptionPosition: reactDashSelectLib.reactDashSelectLibStrings.first | reactDashSelectLib.reactDashSelectLibStrings.last = null,
-    formatCreateLabel: /* inputValue */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
-    getNewOptionData: (/* inputValue */ java.lang.String, /* optionLabel */ reactLib.reactMod.ReactNs.ReactNode) => OptionType = null,
+    formatCreateLabel: /* inputValue */ java.lang.String => reactLib.reactMod.ReactNode = null,
+    getNewOptionData: (/* inputValue */ java.lang.String, /* optionLabel */ reactLib.reactMod.ReactNode) => OptionType = null,
     isValidNewOption: (/* inputValue */ java.lang.String, /* value */ reactDashSelectLib.libTypesMod.ValueType[OptionType], /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType]) => scala.Boolean = null,
     onCreateOption: /* inputValue */ java.lang.String => scala.Unit = null
   ): CreatableProps[OptionType] = {

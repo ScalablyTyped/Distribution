@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class AutoScaling ()
-  extends awsDashSdkLib.clientsAutoscalingMod.namespaced {
-  def this(options: awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsAutoscalingMod.^ {
+  def this(options: awsDashSdkLib.clientsAutoscalingMod.ClientConfiguration) = this()
 }
 

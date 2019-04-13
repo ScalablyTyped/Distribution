@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-ga", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val OutboundLink: reactLib.reactMod.ReactNs.ComponentClass[
-    OutboundLinkProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLAnchorElement], 
-    reactLib.reactMod.ReactNs.ComponentState
+  val OutboundLink: reactLib.reactMod.ComponentClass[
+    OutboundLinkProps with reactLib.reactMod.HTMLProps[stdLib.HTMLAnchorElement], 
+    reactLib.reactMod.ComponentState
   ] = js.native
   val plugin: Plugin = js.native
   val testModeAPI: TestModeAPI = js.native

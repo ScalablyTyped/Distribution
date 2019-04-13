@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait GridProps
   extends antdDashMobileLib.libGridPropsTypeMod.GridPropsType {
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
-  var activeStyle: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var activeStyle: js.UndefOr[scala.Boolean | reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var itemStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var itemStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var square: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -19,17 +19,17 @@ object GridProps {
   @scala.inline
   def apply(
     activeClassName: java.lang.String = null,
-    activeStyle: scala.Boolean | reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeStyle: scala.Boolean | reactLib.reactMod.CSSProperties = null,
     carouselMaxRow: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     columnNum: scala.Int | scala.Double = null,
     data: js.Array[js.UndefOr[antdDashMobileLib.libGridPropsTypeMod.DataItem]] = null,
     hasLine: js.UndefOr[scala.Boolean] = js.undefined,
     isCarousel: js.UndefOr[scala.Boolean] = js.undefined,
-    itemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    itemStyle: reactLib.reactMod.CSSProperties = null,
     onClick: (/* dataItem */ js.UndefOr[antdDashMobileLib.libGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    renderItem: (/* dataItem */ js.UndefOr[antdDashMobileLib.libGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    renderItem: (/* dataItem */ js.UndefOr[antdDashMobileLib.libGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactElement[_] = null,
     square: js.UndefOr[scala.Boolean] = js.undefined
   ): GridProps = {
     val __obj = js.Dynamic.literal()

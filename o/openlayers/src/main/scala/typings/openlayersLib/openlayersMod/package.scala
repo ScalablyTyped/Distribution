@@ -45,6 +45,7 @@ package object openlayersMod {
     /* proj */ openlayersLib.openlayersMod.projNs.Projection, 
     java.lang.String
   ]
+  type GlobalObject = org.scalablytyped.runtime.StringDictionary[js.Any]
   type ImageLoadFunctionType = js.Function2[/* image */ Image, /* url */ java.lang.String, scala.Unit]
   type ImageState = scala.Double
   type LoadingStrategy = js.Function2[/* extent */ Extent, /* resolution */ scala.Double, js.Array[Extent]]

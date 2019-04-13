@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HexoLogger
-  extends hexoDashBunyanLib.hexoDashBunyanMod.namespaced {
+  extends hexoDashBunyanLib.hexoDashBunyanMod.^ {
   /**
     * Returns a boolean: is the `debug` level enabled?
     *

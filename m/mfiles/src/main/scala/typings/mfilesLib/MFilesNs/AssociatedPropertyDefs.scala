@@ -21,3 +21,8 @@ class AssociatedPropertyDefs ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.AssociatedPropertyDefs")
+@js.native
+object AssociatedPropertyDefs
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAssociatedPropertyDefs]
+

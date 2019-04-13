@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Chime ()
   extends awsDashSdkLib.clientsAllMod.Chime {
-  def this(options: awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsChimeMod.ClientConfiguration) = this()
 }
 

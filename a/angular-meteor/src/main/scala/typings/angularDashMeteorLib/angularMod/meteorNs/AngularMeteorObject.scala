@@ -33,8 +33,8 @@ trait AngularMeteorObject[T] extends js.Object {
     *
     * @return Returns a promise with an error in case for an error or a number of successful docs changed in case of success.
     */
-  def save(): angularLib.angularMod.angularNs.IPromise[scala.Double] = js.native
-  def save(doc: T): angularLib.angularMod.angularNs.IPromise[scala.Double] = js.native
+  def save(): angularLib.angularMod.IPromise[scala.Double] = js.native
+  def save(doc: T): angularLib.angularMod.IPromise[scala.Double] = js.native
   /**
     * A shorten (Syntactic sugar) function for the $meteor.subscribe function.
     * Takes only one parameter and not returns a promise like $meteor.subscribe does.

@@ -19,7 +19,7 @@ trait LinkProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Sets a count number.
     */
@@ -31,7 +31,7 @@ trait LinkProps
   /**
     * An icon key string to include a FontIcon component in front of the text.
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * The text string used for the text content of the link.
     */
@@ -50,12 +50,12 @@ object LinkProps {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     count: scala.Int | scala.Double = null,
     href: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    icon: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
     label: java.lang.String = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
@@ -79,7 +79,7 @@ object LinkProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: LinkTheme = null
   ): LinkProps = {
     val __obj = js.Dynamic.literal()

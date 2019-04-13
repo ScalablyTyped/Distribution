@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MachineLearning ()
-  extends awsDashSdkLib.clientsMachinelearningMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMachinelearningMod.^ {
+  def this(options: awsDashSdkLib.clientsMachinelearningMod.ClientConfiguration) = this()
 }
 

@@ -14,13 +14,13 @@ trait Anon_Bottom[T /* <: reactDashNativeDashTabDashViewLib.reactDashNativeDashT
   var renderPager: js.UndefOr[
     js.Function1[
       /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.PagerProps, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var renderTabBar: js.UndefOr[
     js.Function1[
       /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var style: js.UndefOr[
@@ -32,7 +32,7 @@ trait Anon_Bottom[T /* <: reactDashNativeDashTabDashViewLib.reactDashNativeDashT
   def onIndexChange(index: scala.Double): scala.Unit
   def renderScene(
     props: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T]
-  ): reactLib.reactMod.ReactNs.ReactNode
+  ): reactLib.reactMod.ReactNode
 }
 
 object Anon_Bottom {
@@ -40,13 +40,13 @@ object Anon_Bottom {
   def apply[T /* <: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.RouteBase */](
     navigationState: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.NavigationState[T],
     onIndexChange: scala.Double => scala.Unit,
-    renderScene: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNs.ReactNode,
+    renderScene: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => reactLib.reactMod.ReactNode,
     canJumpToTab: /* route */ T => scala.Boolean = null,
     initialLayout: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Layout = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     onPositionChange: /* props */ Anon_Value => scala.Unit = null,
-    renderPager: /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.PagerProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabBar: /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderPager: /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.PagerProps => reactLib.reactMod.ReactNode = null,
+    renderTabBar: /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] => reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabBarPosition: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.bottom | reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.top = null
   ): Anon_Bottom[T] = {

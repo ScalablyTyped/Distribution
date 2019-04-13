@@ -20,7 +20,7 @@ object VictorySingleLabableProps {
   @scala.inline
   def apply(
     label: java.lang.String | victoryLib.Anon_DataAnyString = null,
-    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null
+    labelComponent: reactLib.reactMod.ReactElement[_] = null
   ): VictorySingleLabableProps = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

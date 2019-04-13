@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Creates a presigner object with a set of configuration options.
   */
 class Presigner ()
-  extends awsDashSdkLib.clientsPollyMod.PollyNs.Presigner {
+  extends awsDashSdkLib.libPollyPresignerMod.Presigner {
   def this(options: awsDashSdkLib.libPollyPresignerMod.PresignerNs.PresignerOptions) = this()
 }
 

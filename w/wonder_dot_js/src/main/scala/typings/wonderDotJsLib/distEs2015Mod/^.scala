@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("wonder.js/dist/es2015", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var CompileConfig: wonderDotJsLib.Anon_CloseContractTest = js.native
   val DEG_TO_RAD: scala.Double = js.native
-  var DebugConfig: wonderDotJsLib.Anon_DebugCollision = js.native
   val RAD_TO_DEG: scala.Double = js.native
   var root: js.Any = js.native
   def assert(cond: scala.Boolean): scala.Unit = js.native

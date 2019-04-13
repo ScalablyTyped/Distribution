@@ -73,6 +73,6 @@ trait Query extends js.Object {
     * @param options The options for the stream. (see readable-stream package)
     */
   def stream(): nodeLib.streamMod.Readable = js.native
-  def stream(options: nodeLib.streamMod.internalNs.ReadableOptions): nodeLib.streamMod.Readable = js.native
+  def stream(options: nodeLib.streamMod.ReadableOptions): nodeLib.streamMod.Readable = js.native
 }
 

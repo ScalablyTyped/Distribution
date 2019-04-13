@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/ExpansionPanels", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ExpansionList: reactLib.reactMod.ReactNs.ComponentClass[
+  val ExpansionList: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libExpansionPanelsExpansionListMod.ExpansionListProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val ExpansionPanel: reactLib.reactMod.ReactNs.ComponentClass[
+  val ExpansionPanel: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
+  val default: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-confirm", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def confirmable[P](component: reactLib.reactMod.ReactNs.ComponentType[ReactConfirmProps with P]): reactLib.reactMod.ReactNs.ComponentType[P] = js.native
-  def createConfirmation(component: reactLib.reactMod.ReactNs.ComponentType[_]): js.Function1[/* props */ js.Any, js.Promise[java.lang.String]] = js.native
-  def createConfirmation(component: reactLib.reactMod.ReactNs.ComponentType[_], unmountDelay: scala.Double): js.Function1[/* props */ js.Any, js.Promise[java.lang.String]] = js.native
+  def confirmable[P](component: reactLib.reactMod.ComponentType[ReactConfirmProps with P]): reactLib.reactMod.ComponentType[P] = js.native
+  def createConfirmation(component: reactLib.reactMod.ComponentType[_]): js.Function1[/* props */ js.Any, js.Promise[java.lang.String]] = js.native
+  def createConfirmation(component: reactLib.reactMod.ComponentType[_], unmountDelay: scala.Double): js.Function1[/* props */ js.Any, js.Promise[java.lang.String]] = js.native
 }
 

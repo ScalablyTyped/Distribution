@@ -610,3 +610,14 @@ class EditorCls protected () extends Editor {
   override def setOptions(keyValueTuples: js.Any): scala.Unit = js.native
 }
 
+@JSGlobal("AceAjax.Editor")
+@js.native
+object Editor
+  extends /**
+  * Creates a new `Editor` object.
+  * @param renderer Associated `VirtualRenderer` that draws everything
+  * @param session The `EditSession` to refer to
+  **/
+org.scalablytyped.runtime.Instantiable1[/* renderer */ VirtualRenderer, Editor]
+     with org.scalablytyped.runtime.Instantiable2[/* renderer */ VirtualRenderer, /* session */ IEditSession, Editor]
+

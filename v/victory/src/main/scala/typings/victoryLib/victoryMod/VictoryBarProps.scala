@@ -117,10 +117,10 @@ object VictoryBarProps {
     barRatio: scala.Int | scala.Double = null,
     barWidth: NumberOrCallback = null,
     categories: CategoryPropType = null,
-    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement[_] = null,
     cornerRadius: NumberOrCallback | victoryLib.Anon_Bottom = null,
     data: js.Array[_] = null,
-    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    dataComponent: reactLib.reactMod.ReactElement[_] = null,
     domain: DomainPropType = null,
     eventKey: StringOrNumberOrCallback = null,
     events: js.Array[
@@ -129,10 +129,10 @@ object VictoryBarProps {
         scala.Double | java.lang.String
       ]
     ] = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
-    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
     name: java.lang.String = null,
     padding: PaddingProps = null,

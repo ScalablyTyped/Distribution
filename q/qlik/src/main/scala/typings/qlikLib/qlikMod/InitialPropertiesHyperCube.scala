@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InitialPropertiesHyperCube
-  extends InitialProperties
-     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with InitialProperties {
   var qHyperCubeDef: HyperCubeDef
 }
 

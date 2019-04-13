@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashDndDashMultiDashBackendLibComponents {
   @scala.inline
-  def Preview: reactLib.reactMod.ReactNs.ComponentType[
+  def Preview: reactLib.reactMod.ComponentType[
     reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.PreviewProps
-  ] = js.constructorOf[reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Preview].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Preview].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.PreviewProps]]
   @scala.inline
   def PreviewProps: reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.PreviewProps.type = reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.PreviewProps

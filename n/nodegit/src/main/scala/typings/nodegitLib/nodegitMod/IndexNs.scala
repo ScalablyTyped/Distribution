@@ -28,7 +28,5 @@ object IndexNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.indexUnderscoreMod.IndexNs.CAP with scala.Double] = js.native
   }
   
-  type ADD_OPTION = nodegitLib.indexUnderscoreMod.IndexNs.ADD_OPTION
-  type CAP = nodegitLib.indexUnderscoreMod.IndexNs.CAP
 }
 

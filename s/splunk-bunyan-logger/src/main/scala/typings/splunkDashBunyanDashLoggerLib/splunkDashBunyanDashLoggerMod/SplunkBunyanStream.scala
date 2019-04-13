@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SplunkBunyanStream
-  extends bunyanLib.bunyanMod.LoggerNs.Stream {
+  extends bunyanLib.bunyanMod.Stream {
   @JSName("stream")
   var stream_SplunkBunyanStream: SplunkStream = js.native
   def flush(): scala.Unit = js.native

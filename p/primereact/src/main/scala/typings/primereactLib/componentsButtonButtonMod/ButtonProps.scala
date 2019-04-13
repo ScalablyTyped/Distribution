@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLButtonElement>, 'ref'> ]: react.react.React.HTMLProps<std.HTMLButtonElement>[P]} */ trait ButtonProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLButtonElement>, 'ref'> ]: react.react.HTMLProps<std.HTMLButtonElement>[P]} */ trait ButtonProps
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cornerStyleClass: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined

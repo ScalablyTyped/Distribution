@@ -35,13 +35,13 @@ trait JQuery extends js.Object {
   @JSName("fullCalendar")
   def fullCalendar_getCalendar(method: fullcalendarLib.fullcalendarLibStrings.getCalendar): fullcalendarLib.calendarMod.default = js.native
   @JSName("fullCalendar")
-  def fullCalendar_getDate(method: fullcalendarLib.fullcalendarLibStrings.getDate): momentLib.momentMod.momentNs.Moment = js.native
+  def fullCalendar_getDate(method: fullcalendarLib.fullcalendarLibStrings.getDate): momentLib.momentMod.Moment = js.native
   @JSName("fullCalendar")
   def fullCalendar_getEventSourceById(method: fullcalendarLib.fullcalendarLibStrings.getEventSourceById, id: js.Any): fullcalendarLib.eventSourceMod.default = js.native
   @JSName("fullCalendar")
   def fullCalendar_getEventSources(method: fullcalendarLib.fullcalendarLibStrings.getEventSources): fullcalendarLib.eventSourceMod.default = js.native
   @JSName("fullCalendar")
-  def fullCalendar_getNow(method: fullcalendarLib.fullcalendarLibStrings.getNow): momentLib.momentMod.momentNs.Moment = js.native
+  def fullCalendar_getNow(method: fullcalendarLib.fullcalendarLibStrings.getNow): momentLib.momentMod.Moment = js.native
   @JSName("fullCalendar")
   def fullCalendar_getView(method: fullcalendarLib.fullcalendarLibStrings.getView): fullcalendarLib.viewMod.default = js.native
   @JSName("fullCalendar")
@@ -51,7 +51,7 @@ trait JQuery extends js.Object {
   @JSName("fullCalendar")
   def fullCalendar_isValidViewType(method: fullcalendarLib.fullcalendarLibStrings.isValidViewType, viewType: java.lang.String): scala.Boolean = js.native
   @JSName("fullCalendar")
-  def fullCalendar_moment(method: fullcalendarLib.fullcalendarLibStrings.moment, args: js.Any*): momentLib.momentMod.momentNs.Moment = js.native
+  def fullCalendar_moment(method: fullcalendarLib.fullcalendarLibStrings.moment, args: js.Any*): momentLib.momentMod.Moment = js.native
   @JSName("fullCalendar")
   def fullCalendar_next(method: fullcalendarLib.fullcalendarLibStrings.next): JQuery = js.native
   @JSName("fullCalendar")
@@ -139,14 +139,11 @@ trait JQuery extends js.Object {
     eventPropsArray: js.Array[fullcalendarLib.srcTypesInputDashTypesMod.EventObjectInput]
   ): JQuery = js.native
   @JSName("fullCalendar")
-  def fullCalendar_zoomTo(
-    method: fullcalendarLib.fullcalendarLibStrings.zoomTo,
-    newDate: momentLib.momentMod.momentNs.Moment
-  ): JQuery = js.native
+  def fullCalendar_zoomTo(method: fullcalendarLib.fullcalendarLibStrings.zoomTo, newDate: momentLib.momentMod.Moment): JQuery = js.native
   @JSName("fullCalendar")
   def fullCalendar_zoomTo(
     method: fullcalendarLib.fullcalendarLibStrings.zoomTo,
-    newDate: momentLib.momentMod.momentNs.Moment,
+    newDate: momentLib.momentMod.Moment,
     viewType: java.lang.String
   ): JQuery = js.native
 }

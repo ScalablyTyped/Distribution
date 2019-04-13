@@ -13,3 +13,9 @@ class SlowBuffer protected ()
   def this(size: scala.Double) = this()
 }
 
+@JSImport("buffer", "SlowBuffer")
+@js.native
+object SlowBuffer
+  extends /** @deprecated since v6.0.0, use Buffer.allocUnsafeSlow() */
+org.scalablytyped.runtime.Instantiable1[/* size */ scala.Double, nodeLib.Buffer]
+

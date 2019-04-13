@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Budgets ()
-  extends awsDashSdkLib.clientsAllMod.Budgets {
-  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Budgets.Types.ClientConfiguration */ js.Any) = this()
+  extends awsDashSdkLib.clientsBudgetsMod.Budgets {
+  def this(options: awsDashSdkLib.clientsBudgetsMod.ClientConfiguration) = this()
 }
 

@@ -1,16 +1,12 @@
 organization := "org.scalablytyped"
 name := "agentkeepalive"
-version := "4.0.2-41a3dd"
+version := "4.0.2-82c391"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-98f533",
-  "org.scalablytyped" %%% "depd" % "1.1-dt-20181116Z-bebfa7",
-  "org.scalablytyped" %%% "humanize-ms" % "1.2-dt-20190305Z-e9bb14",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
-  "org.scalablytyped" %%% "std" % "3.4-d52857")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -18,6 +18,5 @@ object DataPointTypeNs extends js.Object {
       ] = js.native
   }
   
-  type DataPointType = applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType
 }
 

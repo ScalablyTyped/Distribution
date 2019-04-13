@@ -11,10 +11,10 @@ trait TabBarProps extends js.Object {
   var labelStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
-  var renderLabel: js.UndefOr[js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var renderTabBar: js.UndefOr[js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderLabel: js.UndefOr[js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNode]] = js.undefined
+  var renderTabBar: js.UndefOr[js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNode]] = js.undefined
   // <BottomNavigation /> only:
-  var renderTabIcon: js.UndefOr[js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderTabIcon: js.UndefOr[js.Function1[/* props */ TabSubViewProps, reactLib.reactMod.ReactNode]] = js.undefined
   var tabActiveTintColor: js.UndefOr[java.lang.String] = js.undefined
   var tabBarIndicatorStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
@@ -38,9 +38,9 @@ object TabBarProps {
     hideTabBar: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
-    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLabel: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabBar: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTabIcon: /* props */ TabSubViewProps => reactLib.reactMod.ReactNode = null,
     tabActiveTintColor: java.lang.String = null,
     tabBarIndicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabBarPosition: reactDashRouterDashNavigationLib.reactDashRouterDashNavigationLibStrings.top | reactDashRouterDashNavigationLib.reactDashRouterDashNavigationLibStrings.bottom = null,

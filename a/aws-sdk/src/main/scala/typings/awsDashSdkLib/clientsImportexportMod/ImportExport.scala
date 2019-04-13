@@ -9,216 +9,104 @@ import scala.scalajs.js.annotation._
 trait ImportExport
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_ImportExport: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsImportexportMod.ImportExportNs.ClientConfiguration = js.native
+  var config_ImportExport: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * This operation cancels a specified job. Only the job owner can cancel it. The operation fails if the job has already started or is complete.
     */
-  def cancelJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelJob(): awsDashSdkLib.libRequestMod.Request[CancelJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelJob(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ CancelJobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[CancelJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation cancels a specified job. Only the job owner can cancel it. The operation fails if the job has already started or is complete.
     */
-  def cancelJob(params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def cancelJob(params: CancelJobInput): awsDashSdkLib.libRequestMod.Request[CancelJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelJob(
-    params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CancelJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: CancelJobInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ CancelJobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[CancelJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation initiates the process of scheduling an upload or download of your data. You include in the request a manifest that describes the data transfer specifics. The response to the request includes a job ID, which you can use in other operations, a signature that you use to identify your storage device, and the address where you should ship your storage device.
     */
-  def createJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createJob(): awsDashSdkLib.libRequestMod.Request[CreateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createJob(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ CreateJobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[CreateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation initiates the process of scheduling an upload or download of your data. You include in the request a manifest that describes the data transfer specifics. The response to the request includes a job ID, which you can use in other operations, a signature that you use to identify your storage device, and the address where you should ship your storage device.
     */
-  def createJob(params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createJob(params: CreateJobInput): awsDashSdkLib.libRequestMod.Request[CreateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createJob(
-    params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.CreateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: CreateJobInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ CreateJobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[CreateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation generates a pre-paid UPS shipping label that you will use to ship your device to AWS for processing.
     */
-  def getShippingLabel(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getShippingLabel(): awsDashSdkLib.libRequestMod.Request[GetShippingLabelOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getShippingLabel(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelOutput, 
+      /* data */ GetShippingLabelOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetShippingLabelOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation generates a pre-paid UPS shipping label that you will use to ship your device to AWS for processing.
     */
-  def getShippingLabel(params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getShippingLabel(params: GetShippingLabelInput): awsDashSdkLib.libRequestMod.Request[GetShippingLabelOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getShippingLabel(
-    params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelInput,
+    params: GetShippingLabelInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelOutput, 
+      /* data */ GetShippingLabelOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetShippingLabelOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetShippingLabelOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation returns information about a job, including where the job is in the processing pipeline, the status of the results, and the signature value associated with the job. You can only return information about jobs you own.
     */
-  def getStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getStatus(): awsDashSdkLib.libRequestMod.Request[GetStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getStatus(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetStatusOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation returns information about a job, including where the job is in the processing pipeline, the status of the results, and the signature value associated with the job. You can only return information about jobs you own.
     */
-  def getStatus(params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getStatus(params: GetStatusInput): awsDashSdkLib.libRequestMod.Request[GetStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getStatus(
-    params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.GetStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetStatusInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetStatusOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation returns the jobs associated with the requester. AWS Import/Export lists the jobs in reverse chronological order based on the date of creation. For example if Job Test1 was created 2009Dec30 and Test2 was created 2010Feb05, the ListJobs operation would return Test2 followed by Test1.
     */
-  def listJobs(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobs(): awsDashSdkLib.libRequestMod.Request[ListJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobs(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ ListJobsOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[ListJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * This operation returns the jobs associated with the requester. AWS Import/Export lists the jobs in reverse chronological order based on the date of creation. For example if Job Test1 was created 2009Dec30 and Test2 was created 2010Feb05, the ListJobs operation would return Test2 followed by Test1.
     */
-  def listJobs(params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listJobs(params: ListJobsInput): awsDashSdkLib.libRequestMod.Request[ListJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobs(
-    params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.ListJobsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: ListJobsInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ ListJobsOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[ListJobsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * You use this operation to change the parameters specified in the original manifest file by supplying a new manifest file. The manifest file attached to this request replaces the original manifest file. You can only use the operation after a CreateJob request but before the data transfer starts and you can only use it on jobs you own.
     */
-  def updateJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateJob(): awsDashSdkLib.libRequestMod.Request[UpdateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateJob(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ UpdateJobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * You use this operation to change the parameters specified in the original manifest file by supplying a new manifest file. The manifest file attached to this request replaces the original manifest file. You can only use the operation after a CreateJob request but before the data transfer starts and you can only use it on jobs you own.
     */
-  def updateJob(params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateJob(params: UpdateJobInput): awsDashSdkLib.libRequestMod.Request[UpdateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateJob(
-    params: awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsImportexportMod.ImportExportNs.UpdateJobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: UpdateJobInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ UpdateJobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateJobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

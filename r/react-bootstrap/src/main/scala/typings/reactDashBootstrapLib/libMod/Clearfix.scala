@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Clearfix")
 @js.native
 class Clearfix ()
-  extends reactDashBootstrapLib.libClearfixMod.namespaced
+  extends reactDashBootstrapLib.libClearfixMod.^
 

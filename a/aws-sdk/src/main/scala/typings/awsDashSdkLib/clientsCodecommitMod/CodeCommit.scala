@@ -9,42 +9,30 @@ import scala.scalajs.js.annotation._
 trait CodeCommit
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_CodeCommit: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ClientConfiguration = js.native
+  var config_CodeCommit: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
-  def batchGetRepositories(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchGetRepositories(): awsDashSdkLib.libRequestMod.Request[BatchGetRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetRepositories(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesOutput, 
+      /* data */ BatchGetRepositoriesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchGetRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
-  def batchGetRepositories(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def batchGetRepositories(params: BatchGetRepositoriesInput): awsDashSdkLib.libRequestMod.Request[BatchGetRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetRepositories(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesInput,
+    params: BatchGetRepositoriesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesOutput, 
+      /* data */ BatchGetRepositoriesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.BatchGetRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[BatchGetRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new branch in a repository and points the branch to a commit.  Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation. 
     */
@@ -55,1131 +43,699 @@ trait CodeCommit
   /**
     * Creates a new branch in a repository and points the branch to a commit.  Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation. 
     */
-  def createBranch(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateBranchInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createBranch(params: CreateBranchInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createBranch(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateBranchInput,
+    params: CreateBranchInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a commit for a repository on the tip of a specified branch.
     */
-  def createCommit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createCommit(): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCommit(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+      /* data */ CreateCommitOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a commit for a repository on the tip of a specified branch.
     */
-  def createCommit(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createCommit(params: CreateCommitInput): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createCommit(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitInput,
+    params: CreateCommitInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+      /* data */ CreateCommitOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a pull request in the specified repository.
     */
-  def createPullRequest(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPullRequest(): awsDashSdkLib.libRequestMod.Request[CreatePullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPullRequest(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestOutput, 
+      /* data */ CreatePullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a pull request in the specified repository.
     */
-  def createPullRequest(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPullRequest(params: CreatePullRequestInput): awsDashSdkLib.libRequestMod.Request[CreatePullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPullRequest(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestInput,
+    params: CreatePullRequestInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestOutput, 
+      /* data */ CreatePullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreatePullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new, empty repository.
     */
-  def createRepository(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createRepository(): awsDashSdkLib.libRequestMod.Request[CreateRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createRepository(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryOutput, 
+      /* data */ CreateRepositoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new, empty repository.
     */
-  def createRepository(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createRepository(params: CreateRepositoryInput): awsDashSdkLib.libRequestMod.Request[CreateRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createRepository(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryInput,
+    params: CreateRepositoryInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryOutput, 
+      /* data */ CreateRepositoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a branch from a repository, unless that branch is the default branch for the repository. 
     */
-  def deleteBranch(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteBranch(): awsDashSdkLib.libRequestMod.Request[DeleteBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBranch(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchOutput, 
+      /* data */ DeleteBranchOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a branch from a repository, unless that branch is the default branch for the repository. 
     */
-  def deleteBranch(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteBranch(params: DeleteBranchInput): awsDashSdkLib.libRequestMod.Request[DeleteBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBranch(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchInput,
+    params: DeleteBranchInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchOutput, 
+      /* data */ DeleteBranchOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the content of a comment made on a change, file, or commit in a repository.
     */
-  def deleteCommentContent(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteCommentContent(): awsDashSdkLib.libRequestMod.Request[DeleteCommentContentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCommentContent(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentOutput, 
+      /* data */ DeleteCommentContentOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteCommentContentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the content of a comment made on a change, file, or commit in a repository.
     */
-  def deleteCommentContent(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteCommentContent(params: DeleteCommentContentInput): awsDashSdkLib.libRequestMod.Request[DeleteCommentContentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCommentContent(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentInput,
+    params: DeleteCommentContentInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentOutput, 
+      /* data */ DeleteCommentContentOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteCommentContentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteCommentContentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file will still exist in the commits prior to the commit that contains the deletion.
     */
-  def deleteFile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFile(): awsDashSdkLib.libRequestMod.Request[DeleteFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFile(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileOutput, 
+      /* data */ DeleteFileOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file will still exist in the commits prior to the commit that contains the deletion.
     */
-  def deleteFile(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteFile(params: DeleteFileInput): awsDashSdkLib.libRequestMod.Request[DeleteFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteFile(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileInput,
+    params: DeleteFileInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileOutput, 
+      /* data */ DeleteFileOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a repository. If a specified repository was already deleted, a null repository ID will be returned.  Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository will fail. 
     */
-  def deleteRepository(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteRepository(): awsDashSdkLib.libRequestMod.Request[DeleteRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteRepository(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryOutput, 
+      /* data */ DeleteRepositoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a repository. If a specified repository was already deleted, a null repository ID will be returned.  Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository will fail. 
     */
-  def deleteRepository(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteRepository(params: DeleteRepositoryInput): awsDashSdkLib.libRequestMod.Request[DeleteRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteRepository(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryInput,
+    params: DeleteRepositoryInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryOutput, 
+      /* data */ DeleteRepositoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DeleteRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about one or more pull request events.
     */
-  def describePullRequestEvents(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePullRequestEvents(): awsDashSdkLib.libRequestMod.Request[DescribePullRequestEventsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePullRequestEvents(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsOutput, 
+      /* data */ DescribePullRequestEventsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePullRequestEventsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about one or more pull request events.
     */
-  def describePullRequestEvents(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePullRequestEvents(params: DescribePullRequestEventsInput): awsDashSdkLib.libRequestMod.Request[DescribePullRequestEventsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePullRequestEvents(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsInput,
+    params: DescribePullRequestEventsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsOutput, 
+      /* data */ DescribePullRequestEventsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.DescribePullRequestEventsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePullRequestEventsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the base-64 encoded content of an individual blob within a repository.
     */
-  def getBlob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getBlob(): awsDashSdkLib.libRequestMod.Request[GetBlobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBlob(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetBlobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetBlobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the base-64 encoded content of an individual blob within a repository.
     */
-  def getBlob(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getBlob(params: GetBlobInput): awsDashSdkLib.libRequestMod.Request[GetBlobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBlob(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBlobOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetBlobInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetBlobOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetBlobOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a repository branch, including its name and the last commit ID.
     */
-  def getBranch(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getBranch(): awsDashSdkLib.libRequestMod.Request[GetBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBranch(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetBranchOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a repository branch, including its name and the last commit ID.
     */
-  def getBranch(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getBranch(params: GetBranchInput): awsDashSdkLib.libRequestMod.Request[GetBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getBranch(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetBranchOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetBranchInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetBranchOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the content of a comment made on a change, file, or commit in a repository.
     */
-  def getComment(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getComment(): awsDashSdkLib.libRequestMod.Request[GetCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getComment(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentOutput, 
+      /* data */ GetCommentOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the content of a comment made on a change, file, or commit in a repository.
     */
-  def getComment(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getComment(params: GetCommentInput): awsDashSdkLib.libRequestMod.Request[GetCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getComment(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentInput,
+    params: GetCommentInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentOutput, 
+      /* data */ GetCommentOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about comments made on the comparison between two commits.
     */
-  def getCommentsForComparedCommit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getCommentsForComparedCommit(): awsDashSdkLib.libRequestMod.Request[GetCommentsForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCommentsForComparedCommit(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitOutput, 
+      /* data */ GetCommentsForComparedCommitOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetCommentsForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about comments made on the comparison between two commits.
     */
-  def getCommentsForComparedCommit(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getCommentsForComparedCommit(params: GetCommentsForComparedCommitInput): awsDashSdkLib.libRequestMod.Request[GetCommentsForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCommentsForComparedCommit(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitInput,
+    params: GetCommentsForComparedCommitInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitOutput, 
+      /* data */ GetCommentsForComparedCommitOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetCommentsForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns comments made on a pull request.
     */
-  def getCommentsForPullRequest(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getCommentsForPullRequest(): awsDashSdkLib.libRequestMod.Request[GetCommentsForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCommentsForPullRequest(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestOutput, 
+      /* data */ GetCommentsForPullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetCommentsForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns comments made on a pull request.
     */
-  def getCommentsForPullRequest(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getCommentsForPullRequest(params: GetCommentsForPullRequestInput): awsDashSdkLib.libRequestMod.Request[GetCommentsForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCommentsForPullRequest(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestInput,
+    params: GetCommentsForPullRequestInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestOutput, 
+      /* data */ GetCommentsForPullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommentsForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetCommentsForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a commit, including commit message and committer information.
     */
-  def getCommit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getCommit(): awsDashSdkLib.libRequestMod.Request[GetCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCommit(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetCommitOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a commit, including commit message and committer information.
     */
-  def getCommit(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getCommit(params: GetCommitInput): awsDashSdkLib.libRequestMod.Request[GetCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getCommit(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetCommitInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetCommitOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID or other fully qualified reference). Results can be limited to a specified path.
     */
-  def getDifferences(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDifferences(): awsDashSdkLib.libRequestMod.Request[GetDifferencesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDifferences(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesOutput, 
+      /* data */ GetDifferencesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDifferencesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID or other fully qualified reference). Results can be limited to a specified path.
     */
-  def getDifferences(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDifferences(params: GetDifferencesInput): awsDashSdkLib.libRequestMod.Request[GetDifferencesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDifferences(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesInput,
+    params: GetDifferencesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesOutput, 
+      /* data */ GetDifferencesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetDifferencesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDifferencesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the base-64 encoded contents of a specified file and its metadata.
     */
-  def getFile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFile(): awsDashSdkLib.libRequestMod.Request[GetFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFile(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetFileOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the base-64 encoded contents of a specified file and its metadata.
     */
-  def getFile(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFile(params: GetFileInput): awsDashSdkLib.libRequestMod.Request[GetFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFile(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetFileInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetFileOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the contents of a specified folder in a repository.
     */
-  def getFolder(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFolder(): awsDashSdkLib.libRequestMod.Request[GetFolderOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFolder(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetFolderOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetFolderOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns the contents of a specified folder in a repository.
     */
-  def getFolder(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getFolder(params: GetFolderInput): awsDashSdkLib.libRequestMod.Request[GetFolderOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getFolder(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetFolderOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetFolderInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetFolderOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetFolderOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about merge conflicts between the before and after commit IDs for a pull request in a repository.
     */
-  def getMergeConflicts(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMergeConflicts(): awsDashSdkLib.libRequestMod.Request[GetMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMergeConflicts(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsOutput, 
+      /* data */ GetMergeConflictsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about merge conflicts between the before and after commit IDs for a pull request in a repository.
     */
-  def getMergeConflicts(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getMergeConflicts(params: GetMergeConflictsInput): awsDashSdkLib.libRequestMod.Request[GetMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMergeConflicts(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsInput,
+    params: GetMergeConflictsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsOutput, 
+      /* data */ GetMergeConflictsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetMergeConflictsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a pull request in a specified repository.
     */
-  def getPullRequest(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPullRequest(): awsDashSdkLib.libRequestMod.Request[GetPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPullRequest(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestOutput, 
+      /* data */ GetPullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a pull request in a specified repository.
     */
-  def getPullRequest(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getPullRequest(params: GetPullRequestInput): awsDashSdkLib.libRequestMod.Request[GetPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getPullRequest(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestInput,
+    params: GetPullRequestInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestOutput, 
+      /* data */ GetPullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
-  def getRepository(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getRepository(): awsDashSdkLib.libRequestMod.Request[GetRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getRepository(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryOutput, 
+      /* data */ GetRepositoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
-  def getRepository(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getRepository(params: GetRepositoryInput): awsDashSdkLib.libRequestMod.Request[GetRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getRepository(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryInput,
+    params: GetRepositoryInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryOutput, 
+      /* data */ GetRepositoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about triggers configured for a repository.
     */
-  def getRepositoryTriggers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getRepositoryTriggers(): awsDashSdkLib.libRequestMod.Request[GetRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getRepositoryTriggers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersOutput, 
+      /* data */ GetRepositoryTriggersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about triggers configured for a repository.
     */
-  def getRepositoryTriggers(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getRepositoryTriggers(params: GetRepositoryTriggersInput): awsDashSdkLib.libRequestMod.Request[GetRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getRepositoryTriggers(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersInput,
+    params: GetRepositoryTriggersInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersOutput, 
+      /* data */ GetRepositoryTriggersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.GetRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about one or more branches in a repository.
     */
-  def listBranches(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listBranches(): awsDashSdkLib.libRequestMod.Request[ListBranchesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listBranches(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesOutput, 
+      /* data */ ListBranchesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListBranchesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about one or more branches in a repository.
     */
-  def listBranches(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listBranches(params: ListBranchesInput): awsDashSdkLib.libRequestMod.Request[ListBranchesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listBranches(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesInput,
+    params: ListBranchesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesOutput, 
+      /* data */ ListBranchesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListBranchesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListBranchesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of pull requests for a specified repository. The return list can be refined by pull request status or pull request author ARN.
     */
-  def listPullRequests(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPullRequests(): awsDashSdkLib.libRequestMod.Request[ListPullRequestsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPullRequests(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsOutput, 
+      /* data */ ListPullRequestsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPullRequestsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of pull requests for a specified repository. The return list can be refined by pull request status or pull request author ARN.
     */
-  def listPullRequests(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPullRequests(params: ListPullRequestsInput): awsDashSdkLib.libRequestMod.Request[ListPullRequestsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPullRequests(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsInput,
+    params: ListPullRequestsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsOutput, 
+      /* data */ ListPullRequestsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListPullRequestsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPullRequestsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about one or more repositories.
     */
-  def listRepositories(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listRepositories(): awsDashSdkLib.libRequestMod.Request[ListRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listRepositories(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesOutput, 
+      /* data */ ListRepositoriesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about one or more repositories.
     */
-  def listRepositories(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listRepositories(params: ListRepositoriesInput): awsDashSdkLib.libRequestMod.Request[ListRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listRepositories(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesInput,
+    params: ListRepositoriesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesOutput, 
+      /* data */ ListRepositoriesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.ListRepositoriesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge option.
     */
-  def mergePullRequestByFastForward(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def mergePullRequestByFastForward(): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByFastForward(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardOutput, 
+      /* data */ MergePullRequestByFastForwardOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge option.
     */
-  def mergePullRequestByFastForward(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def mergePullRequestByFastForward(params: MergePullRequestByFastForwardInput): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByFastForward(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardInput,
+    params: MergePullRequestByFastForwardInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardOutput, 
+      /* data */ MergePullRequestByFastForwardOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.MergePullRequestByFastForwardOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Posts a comment on the comparison between two commits.
     */
-  def postCommentForComparedCommit(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def postCommentForComparedCommit(): awsDashSdkLib.libRequestMod.Request[PostCommentForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def postCommentForComparedCommit(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitOutput, 
+      /* data */ PostCommentForComparedCommitOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PostCommentForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Posts a comment on the comparison between two commits.
     */
-  def postCommentForComparedCommit(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def postCommentForComparedCommit(params: PostCommentForComparedCommitInput): awsDashSdkLib.libRequestMod.Request[PostCommentForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def postCommentForComparedCommit(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitInput,
+    params: PostCommentForComparedCommitInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitOutput, 
+      /* data */ PostCommentForComparedCommitOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForComparedCommitOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PostCommentForComparedCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Posts a comment on a pull request.
     */
-  def postCommentForPullRequest(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def postCommentForPullRequest(): awsDashSdkLib.libRequestMod.Request[PostCommentForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def postCommentForPullRequest(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestOutput, 
+      /* data */ PostCommentForPullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PostCommentForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Posts a comment on a pull request.
     */
-  def postCommentForPullRequest(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def postCommentForPullRequest(params: PostCommentForPullRequestInput): awsDashSdkLib.libRequestMod.Request[PostCommentForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def postCommentForPullRequest(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestInput,
+    params: PostCommentForPullRequestInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestOutput, 
+      /* data */ PostCommentForPullRequestOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentForPullRequestOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PostCommentForPullRequestOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Posts a comment in reply to an existing comment on a comparison between commits or a pull request.
     */
-  def postCommentReply(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def postCommentReply(): awsDashSdkLib.libRequestMod.Request[PostCommentReplyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def postCommentReply(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyOutput, 
+      /* data */ PostCommentReplyOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PostCommentReplyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Posts a comment in reply to an existing comment on a comparison between commits or a pull request.
     */
-  def postCommentReply(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def postCommentReply(params: PostCommentReplyInput): awsDashSdkLib.libRequestMod.Request[PostCommentReplyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def postCommentReply(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyInput,
+    params: PostCommentReplyInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyOutput, 
+      /* data */ PostCommentReplyOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PostCommentReplyOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PostCommentReplyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds or updates a file in a branch in an AWS CodeCommit repository, and generates a commit for the addition in the specified branch.
     */
-  def putFile(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putFile(): awsDashSdkLib.libRequestMod.Request[PutFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putFile(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ PutFileOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[PutFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds or updates a file in a branch in an AWS CodeCommit repository, and generates a commit for the addition in the specified branch.
     */
-  def putFile(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putFile(params: PutFileInput): awsDashSdkLib.libRequestMod.Request[PutFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putFile(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutFileOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: PutFileInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ PutFileOutput, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[PutFileOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces all triggers for a repository. This can be used to create or delete triggers.
     */
-  def putRepositoryTriggers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putRepositoryTriggers(): awsDashSdkLib.libRequestMod.Request[PutRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putRepositoryTriggers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersOutput, 
+      /* data */ PutRepositoryTriggersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces all triggers for a repository. This can be used to create or delete triggers.
     */
-  def putRepositoryTriggers(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putRepositoryTriggers(params: PutRepositoryTriggersInput): awsDashSdkLib.libRequestMod.Request[PutRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putRepositoryTriggers(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersInput,
+    params: PutRepositoryTriggersInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersOutput, 
+      /* data */ PutRepositoryTriggersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.PutRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test will send data from the last commit. If no data is available, sample data will be generated.
     */
-  def testRepositoryTriggers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def testRepositoryTriggers(): awsDashSdkLib.libRequestMod.Request[TestRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def testRepositoryTriggers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersOutput, 
+      /* data */ TestRepositoryTriggersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TestRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test will send data from the last commit. If no data is available, sample data will be generated.
     */
-  def testRepositoryTriggers(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def testRepositoryTriggers(params: TestRepositoryTriggersInput): awsDashSdkLib.libRequestMod.Request[TestRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def testRepositoryTriggers(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersInput,
+    params: TestRepositoryTriggersInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersOutput, 
+      /* data */ TestRepositoryTriggersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.TestRepositoryTriggersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TestRepositoryTriggersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces the contents of a comment.
     */
-  def updateComment(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateComment(): awsDashSdkLib.libRequestMod.Request[UpdateCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateComment(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentOutput, 
+      /* data */ UpdateCommentOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces the contents of a comment.
     */
-  def updateComment(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateComment(params: UpdateCommentInput): awsDashSdkLib.libRequestMod.Request[UpdateCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateComment(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentInput,
+    params: UpdateCommentInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentOutput, 
+      /* data */ UpdateCommentOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateCommentOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateCommentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets or changes the default branch name for the specified repository.  If you use this operation to change the default branch name to the current default branch name, a success message is returned even though the default branch did not change. 
     */
@@ -1190,116 +746,80 @@ trait CodeCommit
   /**
     * Sets or changes the default branch name for the specified repository.  If you use this operation to change the default branch name to the current default branch name, a success message is returned even though the default branch did not change. 
     */
-  def updateDefaultBranch(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateDefaultBranchInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateDefaultBranch(params: UpdateDefaultBranchInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDefaultBranch(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateDefaultBranchInput,
+    params: UpdateDefaultBranchInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces the contents of the description of a pull request.
     */
-  def updatePullRequestDescription(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePullRequestDescription(): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestDescriptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePullRequestDescription(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionOutput, 
+      /* data */ UpdatePullRequestDescriptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestDescriptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces the contents of the description of a pull request.
     */
-  def updatePullRequestDescription(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePullRequestDescription(params: UpdatePullRequestDescriptionInput): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestDescriptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePullRequestDescription(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionInput,
+    params: UpdatePullRequestDescriptionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionOutput, 
+      /* data */ UpdatePullRequestDescriptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestDescriptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestDescriptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the status of a pull request. 
     */
-  def updatePullRequestStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePullRequestStatus(): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePullRequestStatus(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusOutput, 
+      /* data */ UpdatePullRequestStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the status of a pull request. 
     */
-  def updatePullRequestStatus(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePullRequestStatus(params: UpdatePullRequestStatusInput): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePullRequestStatus(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusInput,
+    params: UpdatePullRequestStatusInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusOutput, 
+      /* data */ UpdatePullRequestStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces the title of a pull request.
     */
-  def updatePullRequestTitle(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePullRequestTitle(): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestTitleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePullRequestTitle(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleOutput, 
+      /* data */ UpdatePullRequestTitleOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestTitleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Replaces the title of a pull request.
     */
-  def updatePullRequestTitle(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePullRequestTitle(params: UpdatePullRequestTitleInput): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestTitleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePullRequestTitle(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleInput,
+    params: UpdatePullRequestTitleInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleOutput, 
+      /* data */ UpdatePullRequestTitleOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdatePullRequestTitleOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePullRequestTitleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Sets or changes the comment or description for a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
@@ -1310,9 +830,9 @@ trait CodeCommit
   /**
     * Sets or changes the comment or description for a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
-  def updateRepositoryDescription(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateRepositoryDescriptionInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateRepositoryDescription(params: UpdateRepositoryDescriptionInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateRepositoryDescription(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateRepositoryDescriptionInput,
+    params: UpdateRepositoryDescriptionInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -1325,9 +845,9 @@ trait CodeCommit
   /**
     * Renames a repository. The repository name must be unique across the calling AWS account. In addition, repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. The suffix ".git" is prohibited. For a full description of the limits on repository names, see Limits in the AWS CodeCommit User Guide.
     */
-  def updateRepositoryName(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateRepositoryNameInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateRepositoryName(params: UpdateRepositoryNameInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateRepositoryName(
-    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.UpdateRepositoryNameInput,
+    params: UpdateRepositoryNameInput,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }

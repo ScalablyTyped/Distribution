@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 // Document
 trait ObjectWithId
-  extends DocumentLike
-     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with DocumentLike {
   var _id: java.lang.String
 }
 

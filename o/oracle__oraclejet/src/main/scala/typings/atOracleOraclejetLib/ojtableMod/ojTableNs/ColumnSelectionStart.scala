@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
-/* Rewritten from type alias, can be one of: 
-  - atOracleOraclejetLib.Anon_StartIndex[K]
-  - atOracleOraclejetLib.Anon_StartIndexStartKey[K]
-*/
-trait ColumnSelectionStart[K] extends js.Object
+@js.native
+trait ColumnSelectionStart[K] extends js.Object {
+  var startIndex: js.UndefOr[atOracleOraclejetLib.Anon_ColumnNumber] = js.native
+  var startKey: js.UndefOr[atOracleOraclejetLib.Anon_ColumnK[K]] = js.native
+}
 

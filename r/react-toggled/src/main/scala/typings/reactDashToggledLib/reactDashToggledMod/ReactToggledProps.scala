@@ -11,13 +11,13 @@ trait ReactToggledProps extends js.Object {
   val onToggle: js.UndefOr[
     js.Function2[/* on */ scala.Boolean, /* object */ TogglerStateAndHelpers, scala.Unit]
   ] = js.undefined
-  def children(options: TogglerStateAndHelpers): reactLib.reactMod.ReactNs.ReactNode
+  def children(options: TogglerStateAndHelpers): reactLib.reactMod.ReactNode
 }
 
 object ReactToggledProps {
   @scala.inline
   def apply(
-    children: TogglerStateAndHelpers => reactLib.reactMod.ReactNs.ReactNode,
+    children: TogglerStateAndHelpers => reactLib.reactMod.ReactNode,
     defaultOn: js.UndefOr[scala.Boolean] = js.undefined,
     on: js.UndefOr[scala.Boolean] = js.undefined,
     onToggle: (/* on */ scala.Boolean, /* object */ TogglerStateAndHelpers) => scala.Unit = null

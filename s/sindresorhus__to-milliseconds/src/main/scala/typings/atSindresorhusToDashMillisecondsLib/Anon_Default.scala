@@ -26,7 +26,7 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(
-    timeDescriptor: atSindresorhusToDashMillisecondsLib.atSindresorhusToDashMillisecondsMod.toMillisecondsNs.TimeDescriptor
+    timeDescriptor: atSindresorhusToDashMillisecondsLib.atSindresorhusToDashMillisecondsMod.TimeDescriptor
   ): scala.Double = js.native
 }
 

@@ -20,11 +20,7 @@ trait Anon_CallBackCallback extends js.Object {
     ]
   ] = js.native
   var componentDidCatch: js.UndefOr[
-    js.Function2[
-      /* error */ stdLib.Error, 
-      /* errorInfo */ reactLib.reactMod.ReactNs.ErrorInfo, 
-      scala.Unit
-    ]
+    js.Function2[/* error */ stdLib.Error, /* errorInfo */ reactLib.reactMod.ErrorInfo, scala.Unit]
   ] = js.native
   var componentDidUpdate: js.UndefOr[
     js.Function3[
@@ -56,7 +52,7 @@ trait Anon_CallBackCallback extends js.Object {
   var globalHotkeysEvents: js.UndefOr[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysEventsMod.HotkeysEvents] = js.native
   var localHotkeysEvents: js.UndefOr[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysEventsMod.HotkeysEvents] = js.native
   val props: stdLib.Readonly[Anon_Children] with stdLib.Readonly[js.Object] = js.native
-  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactInstance] = js.native
+  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
       /* nextProps */ stdLib.Readonly[js.Object], 
@@ -71,8 +67,8 @@ trait Anon_CallBackCallback extends js.Object {
   def componentWillUnmount(): scala.Unit = js.native
   def forceUpdate(): scala.Unit = js.native
   def forceUpdate(callBack: js.Function0[scala.Unit]): scala.Unit = js.native
-  def render(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderHotkeys(): reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps] = js.native
+  def render(): reactLib.reactMod.ReactElement[_] = js.native
+  def renderHotkeys(): reactLib.reactMod.ReactElement[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps] = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[
       /* prevState */ stdLib.Readonly[js.Object], 

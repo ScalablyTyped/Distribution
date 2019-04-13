@@ -12,19 +12,19 @@ trait SearchBoxProps extends CommonWidgetProps {
   var loadingIndicator: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   var onChange: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event], 
       _
     ]
   ] = js.undefined
   var onReset: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event], 
       _
     ]
   ] = js.undefined
   var onSubmit: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event], 
       _
     ]
   ] = js.undefined
@@ -41,9 +41,9 @@ object SearchBoxProps {
     defaultRefinement: java.lang.String = null,
     focusShortcuts: js.Array[java.lang.String] = null,
     loadingIndicator: reactLib.reactMod.Global.JSXNs.Element = null,
-    onChange: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
-    onReset: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event] => _ = null,
-    onSubmit: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event] => _ = null,
+    onChange: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event] => _ = null,
+    onReset: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event] => _ = null,
+    onSubmit: /* event */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLFormElement, reactLib.Event] => _ = null,
     reset: reactLib.reactMod.Global.JSXNs.Element = null,
     searchAsYouType: js.UndefOr[scala.Boolean] = js.undefined,
     showLoadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object constantsMod extends js.Object {
   val ASSETS_DIRECTORY: java.lang.String = js.native
-  val PROJECT_FILE: /* ionic.config.json */ java.lang.String = js.native
+  val PROJECT_FILE: ionicLib.ionicLibStrings.ionicDOTconfigDOTjson = js.native
   val PROJECT_TYPES: js.Array[ionicLib.definitionsMod.ProjectType] = js.native
 }
 

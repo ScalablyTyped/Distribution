@@ -26,12 +26,12 @@ trait OHandler[T] extends js.Object {
   def find[T](selector: java.lang.String): OHandler[T] = js.native
   def find[T](selector: scala.Double): OHandler[T] = js.native
   def first[T](): OHandler[T] = js.native
-  def get[T](): qLib.qMod.QNs.Promise[OHandler[T]] = js.native
-  def get[T](callback: js.Function1[/* data */ T, scala.Unit]): qLib.qMod.QNs.Promise[OHandler[T]] = js.native
+  def get[T](): qLib.qMod.Promise[OHandler[T]] = js.native
+  def get[T](callback: js.Function1[/* data */ T, scala.Unit]): qLib.qMod.Promise[OHandler[T]] = js.native
   def get[T](
     callback: js.Function1[/* data */ T, scala.Unit],
     errorCallback: js.Function1[/* status */ scala.Double, scala.Unit]
-  ): qLib.qMod.QNs.Promise[OHandler[T]] = js.native
+  ): qLib.qMod.Promise[OHandler[T]] = js.native
   def include[T](column: java.lang.String, data: java.lang.String): OHandler[T] = js.native
   def inlineCount[T](): OHandler[T] = js.native
   def inlineCount[T](paramName: java.lang.String): OHandler[T] = js.native
@@ -55,12 +55,12 @@ trait OHandler[T] extends js.Object {
   def route[T](path: java.lang.String, callback: js.Function1[/* data */ T, scala.Unit]): OHandler[T] = js.native
   def routes[T](path: java.lang.String): OHandler[T] = js.native
   def routes[T](path: java.lang.String, callback: js.Function1[/* data */ T, scala.Unit]): OHandler[T] = js.native
-  def save[T](): qLib.qMod.QNs.Promise[OHandler[T]] = js.native
-  def save[T](callback: js.Function1[/* data */ T, scala.Unit]): qLib.qMod.QNs.Promise[OHandler[T]] = js.native
+  def save[T](): qLib.qMod.Promise[OHandler[T]] = js.native
+  def save[T](callback: js.Function1[/* data */ T, scala.Unit]): qLib.qMod.Promise[OHandler[T]] = js.native
   def save[T](
     callback: js.Function1[/* data */ T, scala.Unit],
     errorCallback: js.Function1[/* status */ scala.Double, scala.Unit]
-  ): qLib.qMod.QNs.Promise[OHandler[T]] = js.native
+  ): qLib.qMod.Promise[OHandler[T]] = js.native
   def search[T](columns: js.Array[java.lang.String], term: java.lang.String): OHandler[T] = js.native
   def select[T](selectStr: java.lang.String): OHandler[T] = js.native
   def skip[T](quantity: scala.Double): OHandler[T] = js.native

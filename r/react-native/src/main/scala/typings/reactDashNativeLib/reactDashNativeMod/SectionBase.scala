@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SectionBase[ItemT] extends js.Object {
-  var ItemSeparatorComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_] | scala.Null] = js.undefined
+  var ItemSeparatorComponent: js.UndefOr[reactLib.reactMod.ComponentType[_] | scala.Null] = js.undefined
   var data: js.Array[ItemT]
   var key: js.UndefOr[java.lang.String] = js.undefined
   var keyExtractor: js.UndefOr[js.Function2[/* item */ ItemT, /* index */ scala.Double, java.lang.String]] = js.undefined
@@ -17,7 +17,7 @@ object SectionBase {
   @scala.inline
   def apply[ItemT](
     data: js.Array[ItemT],
-    ItemSeparatorComponent: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    ItemSeparatorComponent: reactLib.reactMod.ComponentType[_] = null,
     key: java.lang.String = null,
     keyExtractor: (/* item */ ItemT, /* index */ scala.Double) => java.lang.String = null,
     renderItem: SectionListRenderItem[ItemT] = null

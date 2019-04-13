@@ -6,27 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Device extends js.Object {
-  var device: js.UndefOr[java.lang.String] = js.undefined
+  var device: java.lang.String
   var family: java.lang.String
   var major: java.lang.String
   var minor: java.lang.String
-  var os: js.UndefOr[java.lang.String] = js.undefined
+  var os: java.lang.String
   var patch: java.lang.String
 }
 
 object Anon_Device {
   @scala.inline
   def apply(
+    device: java.lang.String,
     family: java.lang.String,
     major: java.lang.String,
     minor: java.lang.String,
-    patch: java.lang.String,
-    device: java.lang.String = null,
-    os: java.lang.String = null
+    os: java.lang.String,
+    patch: java.lang.String
   ): Anon_Device = {
-    val __obj = js.Dynamic.literal(family = family, major = major, minor = minor, patch = patch)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (os != null) __obj.updateDynamic("os")(os)
+    val __obj = js.Dynamic.literal(device = device, family = family, major = major, minor = minor, os = os, patch = patch)
+  
     __obj.asInstanceOf[Anon_Device]
   }
 }

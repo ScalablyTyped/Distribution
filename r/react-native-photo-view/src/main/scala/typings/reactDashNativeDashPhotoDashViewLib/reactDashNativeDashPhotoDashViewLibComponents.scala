@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashPhotoDashViewLibComponents {
   @scala.inline
-  def ReactDashNativeDashPhotoDashView: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashPhotoDashView: reactLib.reactMod.ComponentType[
     reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewMod.ReactNativePhotoViewProps with reactDashNativeLib.reactDashNativeMod.ViewProps
-  ] = js.constructorOf[reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewMod.ReactNativePhotoViewProps with reactDashNativeLib.reactDashNativeMod.ViewProps]]
 }
 

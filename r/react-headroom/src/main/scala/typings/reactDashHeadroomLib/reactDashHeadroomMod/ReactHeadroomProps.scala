@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ReactHeadroomProps extends js.Object {
   var calcHeightOnResize: js.UndefOr[scala.Boolean] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disable: js.UndefOr[scala.Boolean] = js.undefined
   var disableInlineStyles: js.UndefOr[scala.Boolean] = js.undefined
@@ -17,15 +17,15 @@ trait ReactHeadroomProps extends js.Object {
   var onUnpin: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var parent: js.UndefOr[js.Function0[_]] = js.undefined
   var pinStart: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var upTolerance: js.UndefOr[scala.Double] = js.undefined
-  var wrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var wrapperStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ReactHeadroomProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     calcHeightOnResize: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -36,9 +36,9 @@ object ReactHeadroomProps {
     onUnpin: () => scala.Unit = null,
     parent: () => _ = null,
     pinStart: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     upTolerance: scala.Int | scala.Double = null,
-    wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    wrapperStyle: reactLib.reactMod.CSSProperties = null
   ): ReactHeadroomProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(calcHeightOnResize)) __obj.updateDynamic("calcHeightOnResize")(calcHeightOnResize)

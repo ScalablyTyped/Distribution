@@ -372,11 +372,9 @@ object coreNs extends js.Object {
   var defaultTransOpts: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions = js.native
   @JSName("equals")
   val equals_FcoreNs: js.Any = js.native
-  val extend: atUirouterCoreLib.Anon_Source = js.native
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
   val hostRegex: stdLib.RegExp = js.native
-  val inArray: atUirouterCoreLib.Anon_Array = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
@@ -388,9 +386,6 @@ object coreNs extends js.Object {
     org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.native
   val propEq: js.Function = js.native
-  val pushTo: atUirouterCoreLib.Anon_Arr = js.native
-  val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
-  var resolvePolicies: atUirouterCoreLib.Anon_Async = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
   val toJson: js.Any = js.native
@@ -1258,10 +1253,37 @@ object coreNs extends js.Object {
     def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext, rawViewName: java.lang.String): atUirouterCoreLib.Anon_UiViewContextAnchor = js.native
   }
   
-  type Category = atUirouterCoreLib.libCommonTraceMod.Category
-  type DefType = atUirouterCoreLib.libParamsParamMod.DefType
-  type RejectType = atUirouterCoreLib.libTransitionRejectFactoryMod.RejectType
-  type TransitionHookPhase = atUirouterCoreLib.libTransitionInterfaceMod.TransitionHookPhase
-  type TransitionHookScope = atUirouterCoreLib.libTransitionInterfaceMod.TransitionHookScope
+  @js.native
+  object extend extends js.Object {
+    def apply(target: js.Object, sources: js.Any*): js.Any = js.native
+    def apply[T, U](target: T, source: U): T with U = js.native
+    def apply[T, U, V](target: T, source1: U, source2: V): T with U with V = js.native
+    def apply[T, U, V, W](target: T, source1: U, source2: V, source3: W): T with U with V with W = js.native
+  }
+  
+  @js.native
+  object inArray extends js.Object {
+    def apply(array: js.Array[_]): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
+    def apply(array: js.Array[_], obj: js.Any): scala.Boolean = js.native
+  }
+  
+  @js.native
+  object pushTo extends js.Object {
+    def apply[T](arr: js.Array[T]): js.Function1[/* val */ T, T] = js.native
+    def apply[T](arr: js.Array[T], `val`: T): T = js.native
+  }
+  
+  @js.native
+  object removeFrom extends js.Object {
+    def apply[T](array: js.Array[T]): js.Function1[/* obj */ T, js.Array[T]] = js.native
+    def apply[T](array: js.Array[T], obj: T): js.Array[T] = js.native
+  }
+  
+  @js.native
+  object resolvePolicies extends js.Object {
+    var async: atUirouterCoreLib.Anon_NOWAIT = js.native
+    var when: atUirouterCoreLib.Anon_EAGER = js.native
+  }
+  
 }
 

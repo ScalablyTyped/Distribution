@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("traverse", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[T](obj: T): traverseLib.traverseMod.traverseNs.Traverse[T] = js.native
+  def apply[T](obj: T): Traverse[T] = js.native
   /**
     * Create a deep clone of the object.
     */
@@ -16,14 +16,7 @@ object ^ extends js.Object {
   /**
     * Execute `fn` for each node in the object but unlike `.map()`, when `this.update()` is called it updates the object in-place.
     */
-  def forEach(
-    obj: js.Any,
-    cb: js.ThisFunction1[
-      /* this */ traverseLib.traverseMod.traverseNs.TraverseContext, 
-      /* v */ js.Any, 
-      scala.Unit
-    ]
-  ): js.Any = js.native
+  def forEach(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, scala.Unit]): js.Any = js.native
   /**
     * Get the element at the array `path`.
     */
@@ -35,14 +28,7 @@ object ^ extends js.Object {
   /**
     * Execute `fn` for each node in the object and return a new object with the results of the walk. To update nodes in the result use `this.update(value)`.
     */
-  def map(
-    obj: js.Any,
-    cb: js.ThisFunction1[
-      /* this */ traverseLib.traverseMod.traverseNs.TraverseContext, 
-      /* v */ js.Any, 
-      scala.Unit
-    ]
-  ): js.Any = js.native
+  def map(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, scala.Unit]): js.Any = js.native
   /**
     * Return an `Array` of every node in the object.
     */
@@ -59,21 +45,11 @@ object ^ extends js.Object {
     */
   def reduce(
     obj: js.Any,
-    cb: js.ThisFunction2[
-      /* this */ traverseLib.traverseMod.traverseNs.TraverseContext, 
-      /* acc */ js.Any, 
-      /* v */ js.Any, 
-      scala.Unit
-    ]
+    cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, scala.Unit]
   ): js.Any = js.native
   def reduce(
     obj: js.Any,
-    cb: js.ThisFunction2[
-      /* this */ traverseLib.traverseMod.traverseNs.TraverseContext, 
-      /* acc */ js.Any, 
-      /* v */ js.Any, 
-      scala.Unit
-    ],
+    cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, scala.Unit],
     init: js.Any
   ): js.Any = js.native
   /**

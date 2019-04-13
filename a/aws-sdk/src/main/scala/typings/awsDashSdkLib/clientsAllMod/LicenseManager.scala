@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class LicenseManager ()
-  extends awsDashSdkLib.clientsLicensemanagerMod.namespaced {
-  def this(options: awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsLicensemanagerMod.^ {
+  def this(options: awsDashSdkLib.clientsLicensemanagerMod.ClientConfiguration) = this()
 }
 

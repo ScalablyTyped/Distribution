@@ -27,3 +27,8 @@ class VerifyVaultJob ()
   override def Set(GuidVault: java.lang.String, FixErrors: scala.Boolean, VerifyFileContents: scala.Boolean): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.VerifyVaultJob")
+@js.native
+object VerifyVaultJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVerifyVaultJob]
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ITableScope[T]
-  extends angularLib.angularMod.angularNs.IRootScopeService {
+  extends angularLib.angularMod.IRootScopeService {
   @JSName("$columns")
   var $columns: js.Array[ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef] = js.native
   @JSName("$data")

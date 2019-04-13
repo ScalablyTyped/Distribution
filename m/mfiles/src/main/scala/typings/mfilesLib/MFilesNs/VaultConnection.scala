@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class VaultConnection ()
   extends mfilesLib.IVaultConnection
 
+@JSGlobal("MFiles.VaultConnection")
+@js.native
+object VaultConnection
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultConnection]
+

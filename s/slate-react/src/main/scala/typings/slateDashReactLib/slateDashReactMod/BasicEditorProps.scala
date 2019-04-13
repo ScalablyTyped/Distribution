@@ -16,7 +16,7 @@ trait BasicEditorProps extends js.Object {
   var role: js.UndefOr[java.lang.String] = js.undefined
   var schema: js.UndefOr[slateLib.slateMod.SchemaProperties] = js.undefined
   var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var value: slateLib.slateMod.Value
 }
@@ -35,7 +35,7 @@ object BasicEditorProps {
     role: java.lang.String = null,
     schema: slateLib.slateMod.SchemaProperties = null,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null
   ): BasicEditorProps = {
     val __obj = js.Dynamic.literal(value = value)

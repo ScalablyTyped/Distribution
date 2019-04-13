@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("vue-loader", "VueLoaderPlugin")
 @js.native
 class VueLoaderPlugin ()
-  extends vueDashLoaderLib.vueDashLoaderMod.VueLoaderNs.VueLoaderPlugin
+  extends webpackLib.webpackMod.Plugin
 

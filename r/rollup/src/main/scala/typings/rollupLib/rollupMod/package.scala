@@ -22,6 +22,7 @@ package object rollupMod {
     (js.Promise[SourceDescription | java.lang.String | scala.Null]) | SourceDescription | java.lang.String | scala.Null
   ]
   type OptionsPaths = (stdLib.Record[java.lang.String, java.lang.String]) | (js.Function1[/* id */ java.lang.String, java.lang.String])
+  type OutputBundle = org.scalablytyped.runtime.StringDictionary[OutputAsset | OutputChunk]
   type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
   type RenderChunkHook = js.ThisFunction3[
     /* this */ PluginContext, 
@@ -60,6 +61,9 @@ package object rollupMod {
     /* options */ rollupLib.Anon_ChunkId, 
     java.lang.String | scala.Unit
   ]
+  type ResolvedIdMap = org.scalablytyped.runtime.StringDictionary[ResolvedId]
+  type SerializablePluginCache = org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, js.Any]]
+  type SerializedTimings = org.scalablytyped.runtime.StringDictionary[js.Tuple3[scala.Double, scala.Double, scala.Double]]
   type TransformChunkHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* code */ java.lang.String, 

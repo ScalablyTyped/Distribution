@@ -38,117 +38,50 @@ object ^ extends js.Object {
     url: java.lang.String,
     options: needleLib.needleMod.coreNs.NeedleOptions
   ): js.Promise[needleLib.needleMod.coreNs.NeedleResponse] = js.native
-  def defaults(options: needleLib.needleMod.needleNs.NeedleOptions): needleLib.needleMod.needleNs.NeedleOptions = js.native
+  def defaults(options: NeedleOptions): NeedleOptions = js.native
   /**
     * Issues an HTTP DELETE request.
     */
-  def deleteFunc(url: java.lang.String, data: needleLib.needleMod.needleNs.BodyData): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def deleteFunc(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def deleteFunc(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def deleteFunc(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def get(url: java.lang.String): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def get(url: java.lang.String, callback: needleLib.needleMod.needleNs.NeedleCallback): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def get(url: java.lang.String, options: needleLib.needleMod.needleNs.NeedleOptions): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def get(
-    url: java.lang.String,
-    options: needleLib.needleMod.needleNs.NeedleOptions,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def head(url: java.lang.String): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def head(url: java.lang.String, callback: needleLib.needleMod.needleNs.NeedleCallback): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def head(url: java.lang.String, options: needleLib.needleMod.needleNs.NeedleOptions): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def head(
-    url: java.lang.String,
-    options: needleLib.needleMod.needleNs.NeedleOptions,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def patch(url: java.lang.String, data: needleLib.needleMod.needleNs.BodyData): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def patch(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def patch(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def patch(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def post(url: java.lang.String, data: needleLib.needleMod.needleNs.BodyData): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def post(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def post(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def post(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def put(url: java.lang.String, data: needleLib.needleMod.needleNs.BodyData): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def put(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def put(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def put(
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
+  def delete(url: java.lang.String, data: BodyData): ReadableStream = js.native
+  def delete(url: java.lang.String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
+  def delete(url: java.lang.String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
+  def delete(url: java.lang.String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  /**
+    * Issues an HTTP DELETE request.
+    */
+  def deleteFunc(url: java.lang.String, data: BodyData): ReadableStream = js.native
+  def deleteFunc(url: java.lang.String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
+  def deleteFunc(url: java.lang.String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
+  def deleteFunc(url: java.lang.String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  def get(url: java.lang.String): ReadableStream = js.native
+  def get(url: java.lang.String, callback: NeedleCallback): ReadableStream = js.native
+  def get(url: java.lang.String, options: NeedleOptions): ReadableStream = js.native
+  def get(url: java.lang.String, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  def head(url: java.lang.String): ReadableStream = js.native
+  def head(url: java.lang.String, callback: NeedleCallback): ReadableStream = js.native
+  def head(url: java.lang.String, options: NeedleOptions): ReadableStream = js.native
+  def head(url: java.lang.String, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  def patch(url: java.lang.String, data: BodyData): ReadableStream = js.native
+  def patch(url: java.lang.String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
+  def patch(url: java.lang.String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
+  def patch(url: java.lang.String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  def post(url: java.lang.String, data: BodyData): ReadableStream = js.native
+  def post(url: java.lang.String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
+  def post(url: java.lang.String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
+  def post(url: java.lang.String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  def put(url: java.lang.String, data: BodyData): ReadableStream = js.native
+  def put(url: java.lang.String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
+  def put(url: java.lang.String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
+  def put(url: java.lang.String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  def request(method: NeedleHttpVerbs, url: java.lang.String, data: BodyData): ReadableStream = js.native
+  def request(method: NeedleHttpVerbs, url: java.lang.String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
+  def request(method: NeedleHttpVerbs, url: java.lang.String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
   def request(
-    method: needleLib.needleMod.needleNs.NeedleHttpVerbs,
+    method: NeedleHttpVerbs,
     url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def request(
-    method: needleLib.needleMod.needleNs.NeedleHttpVerbs,
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def request(
-    method: needleLib.needleMod.needleNs.NeedleHttpVerbs,
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
-  def request(
-    method: needleLib.needleMod.needleNs.NeedleHttpVerbs,
-    url: java.lang.String,
-    data: needleLib.needleMod.needleNs.BodyData,
-    options: needleLib.needleMod.needleNs.NeedleOptions,
-    callback: needleLib.needleMod.needleNs.NeedleCallback
-  ): needleLib.needleMod.needleNs.ReadableStream = js.native
+    data: BodyData,
+    options: NeedleOptions,
+    callback: NeedleCallback
+  ): ReadableStream = js.native
 }
 

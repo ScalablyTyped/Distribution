@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("util", "LruCache")
 @js.native
 class LruCache ()
-  extends fibjsLib.utilMod.utilNs.LruCache
+  extends fibjsLib.Class_LruCache
 

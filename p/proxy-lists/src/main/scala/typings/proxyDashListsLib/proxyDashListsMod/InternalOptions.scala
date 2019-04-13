@@ -15,7 +15,7 @@ object InternalOptions {
     anonymityLevels: js.Array[AnonymityLevel] = null,
     countries: js.Array[java.lang.String] = null,
     countriesBlackList: js.Array[java.lang.String] = null,
-    defaultRequestOptions: requestLib.requestMod.requestNs.CoreOptions = null,
+    defaultRequestOptions: requestLib.requestMod.CoreOptions = null,
     filterMode: proxyDashListsLib.proxyDashListsLibStrings.strict | proxyDashListsLib.proxyDashListsLibStrings.loose = null,
     ipTypes: js.Array[IPType] = null,
     protocols: js.Array[Protocol] = null,

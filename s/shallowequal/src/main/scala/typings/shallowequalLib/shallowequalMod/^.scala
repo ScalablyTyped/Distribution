@@ -9,16 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[TCtx](objA: js.Any, objB: js.Any): scala.Boolean = js.native
-  def apply[TCtx](
-    objA: js.Any,
-    objB: js.Any,
-    customizer: shallowequalLib.shallowequalMod.shallowEqualNs.Customizer[TCtx]
-  ): scala.Boolean = js.native
-  def apply[TCtx](
-    objA: js.Any,
-    objB: js.Any,
-    customizer: shallowequalLib.shallowequalMod.shallowEqualNs.Customizer[TCtx],
-    compareContext: TCtx
-  ): scala.Boolean = js.native
+  def apply[TCtx](objA: js.Any, objB: js.Any, customizer: Customizer[TCtx]): scala.Boolean = js.native
+  def apply[TCtx](objA: js.Any, objB: js.Any, customizer: Customizer[TCtx], compareContext: TCtx): scala.Boolean = js.native
 }
 

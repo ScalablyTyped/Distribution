@@ -6,26 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in 'className' | 'style' ]: react.react.React.InputHTMLAttributes<'input'>[P]} */ trait AutosizeInputProps extends js.Object {
+- Dropped {[ P in 'className' | 'style' ]: react.react.InputHTMLAttributes<'input'>[P]} */ trait AutosizeInputProps extends js.Object {
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[reactLib.reactMod.LegacyRef[stdLib.HTMLInputElement]] = js.undefined
   var inputStyle: js.UndefOr[
     stdLib.Pick[
-      reactLib.reactMod.ReactNs.CSSProperties, 
+      reactLib.reactMod.CSSProperties, 
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.boxSizing | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.width
     ]
   ] = js.undefined
-  var style: reactLib.reactMod.ReactNs.CSSProperties
+  var style: reactLib.reactMod.CSSProperties
 }
 
 object AutosizeInputProps {
   @scala.inline
   def apply(
-    style: reactLib.reactMod.ReactNs.CSSProperties,
+    style: reactLib.reactMod.CSSProperties,
     inputClassName: java.lang.String = null,
-    inputRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.LegacyRef[stdLib.HTMLInputElement] = null,
     inputStyle: stdLib.Pick[
-      reactLib.reactMod.ReactNs.CSSProperties, 
+      reactLib.reactMod.CSSProperties, 
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.boxSizing | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.width
     ] = null
   ): AutosizeInputProps = {

@@ -8,14 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("passport-github2", "Strategy")
 @js.native
 class Strategy protected ()
-  extends passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.Strategy {
-  def this(options: StrategyOptionsWithRequest, verify: passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.VerifyFunctionWithRequest) = this()
-  def this(options: StrategyOptions, verify: passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.VerifyFunction) = this()
-  @JSName("name")
-  var name_Strategy: java.lang.String = js.native
-  def authenticate(
-    req: expressLib.expressMod.eNs.Request,
-    options: passportLib.passportMod.passportNs.AuthenticateOptions
-  ): scala.Unit = js.native
+  extends passportDashOauth2Lib.passportDashOauth2Mod.Strategy {
+  def this(options: StrategyOptionsWithRequest, verify: passportDashOauth2Lib.passportDashOauth2Mod.VerifyFunctionWithRequest) = this()
+  def this(options: StrategyOptions, verify: passportDashOauth2Lib.passportDashOauth2Mod.VerifyFunction) = this()
+  def authenticate(req: expressLib.expressMod.Request, options: passportLib.passportMod.AuthenticateOptions): scala.Unit = js.native
 }
 

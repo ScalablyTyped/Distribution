@@ -11,10 +11,12 @@ package object ExtNs {
   type IAjax = senchaUnderscoreTouchLib.ExtNs.dataNs.IConnection
   type IAnim = IBase
   type IAnimationQueue = IBase
+  type IBrowser = senchaUnderscoreTouchLib.ExtNs.envNs.IBrowser
   type IComponentManager = IBase
   type IComponentMgr = IBase
   type IDate = IDateExtras
   type IDomQuery = senchaUnderscoreTouchLib.ExtNs.domNs.IQuery
+  type IFeature = senchaUnderscoreTouchLib.ExtNs.envNs.IFeature
   type IModelManager = IAbstractManager
   type IModelMgr = IAbstractManager
   type IMsg = IMessageBox

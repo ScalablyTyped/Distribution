@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MachineConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */] extends CompoundStateNodeConfig[TContext, TStateSchema, TEvent]
+trait MachineConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */] extends CompoundStateNodeConfig[TContext, TStateSchema, TEvent] {
+  /**
+    * The machine's own version.
+    */
+  var version: js.UndefOr[java.lang.String] = js.undefined
+}
 
 object MachineConfig {
   @scala.inline
@@ -15,6 +20,8 @@ object MachineConfig {
     context: TContext = null,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     delimiter: java.lang.String = null,
+    entry: SingleOrArray[Action[TContext, TEvent]] = null,
+    exit: SingleOrArray[Action[TContext, TEvent]] = null,
     history: xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep | scala.Boolean = null,
     id: java.lang.String = null,
     initial: java.lang.String = null,
@@ -30,7 +37,8 @@ object MachineConfig {
     parent: xstateLib.libStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]] = null,
     states: StatesConfig[TContext, TStateSchema, TEvent] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
-    `type`: StateTypes = null
+    `type`: StateTypes = null,
+    version: java.lang.String = null
   ): MachineConfig[TContext, TStateSchema, TEvent] = {
     val __obj = js.Dynamic.literal()
     if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
@@ -38,6 +46,8 @@ object MachineConfig {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (initial != null) __obj.updateDynamic("initial")(initial)
@@ -54,6 +64,7 @@ object MachineConfig {
     if (states != null) __obj.updateDynamic("states")(states)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[MachineConfig[TContext, TStateSchema, TEvent]]
   }
 }

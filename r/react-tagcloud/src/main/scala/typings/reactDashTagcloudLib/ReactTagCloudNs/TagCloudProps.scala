@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TagCloudProps
-  extends reactLib.reactMod.ReactNs.Props[scala.Unit] {
+  extends reactLib.reactMod.Props[scala.Unit] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var colorOptions: js.UndefOr[js.Object] = js.undefined
   var disableRandomColor: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,13 +24,13 @@ object TagCloudProps {
     maxSize: scala.Double,
     minSize: scala.Double,
     tags: js.Array[_],
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     colorOptions: js.Object = null,
     disableRandomColor: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[scala.Unit] = null,
+    ref: reactLib.reactMod.LegacyRef[scala.Unit] = null,
     renderer: js.Function = null,
     shuffle: js.UndefOr[scala.Boolean] = js.undefined
   ): TagCloudProps = {

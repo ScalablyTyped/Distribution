@@ -7,19 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-image-crop", JSImport.Namespace)
 @js.native
+class ^ () extends ReactCrop
+
+@JSImport("react-image-crop", JSImport.Namespace)
+@js.native
 object ^ extends js.Object {
-  def containCrop(
-    previousCrop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop,
-    crop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop,
-    imageAspect: scala.Double
-  ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
-  def getPixelCrop(
-    image: stdLib.HTMLImageElement,
-    percentCrop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop
-  ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
-  def makeAspectCrop(
-    crop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop,
-    imageAspect: scala.Double
-  ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
+  def containCrop(previousCrop: Crop, crop: Crop, imageAspect: scala.Double): Crop = js.native
+  def getPixelCrop(image: stdLib.HTMLImageElement, percentCrop: Crop): Crop = js.native
+  def makeAspectCrop(crop: Crop, imageAspect: scala.Double): Crop = js.native
 }
 

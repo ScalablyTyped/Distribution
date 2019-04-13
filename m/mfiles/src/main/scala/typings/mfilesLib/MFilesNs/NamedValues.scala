@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class NamedValues ()
   extends mfilesLib.INamedValues
 
+@JSGlobal("MFiles.NamedValues")
+@js.native
+object NamedValues
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.INamedValues]
+

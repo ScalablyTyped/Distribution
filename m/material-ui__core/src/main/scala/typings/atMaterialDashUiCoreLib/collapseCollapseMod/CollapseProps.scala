@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/transitions/transition.TransitionProps, 'classes' | 'timeout'> ]: @material-ui/core.@material-ui/core/transitions/transition.TransitionProps[P]} */ trait CollapseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[CollapseClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var collapsedHeight: js.UndefOr[java.lang.String] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[CollapseProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[CollapseProps]] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
   var timeout: js.UndefOr[scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
 }
@@ -19,13 +19,13 @@ import scala.scalajs.js.annotation._
 object CollapseProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CollapseClassKey]] = null,
     collapsedHeight: java.lang.String = null,
-    component: reactLib.reactMod.ReactNs.ReactType[CollapseProps] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    component: reactLib.reactMod.ReactType[CollapseProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
     timeout: scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
   ): CollapseProps = {

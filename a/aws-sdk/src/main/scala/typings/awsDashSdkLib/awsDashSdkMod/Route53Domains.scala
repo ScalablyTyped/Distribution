@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Route53Domains ()
   extends awsDashSdkLib.clientsAllMod.Route53Domains {
-  def this(options: awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsRoute53domainsMod.ClientConfiguration) = this()
 }
 

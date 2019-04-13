@@ -11,14 +11,14 @@ object ^ extends js.Object {
   var CONNECTION_EVENTS: js.Array[java.lang.String] = js.native
   var Middleware: js.Function0[
     js.Function2[
-      /* socket */ socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 
+      /* socket */ socketDotIoLib.socketDotIoMod.Socket, 
       /* next */ js.Function0[js.Any], 
       scala.Unit
     ]
   ] = js.native
   var Session: js.Function2[
-    /* app */ expressLib.expressMod.eNs.Application, 
-    /* options */ js.UndefOr[expressDashSessionLib.expressDashSessionMod.sessionNs.SessionOptions], 
+    /* app */ expressLib.expressMod.Application, 
+    /* options */ js.UndefOr[expressDashSessionLib.expressDashSessionMod.SessionOptions], 
     scala.Unit
   ] = js.native
 }

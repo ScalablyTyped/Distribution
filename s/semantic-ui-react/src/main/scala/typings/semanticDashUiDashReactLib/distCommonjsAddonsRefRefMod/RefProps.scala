@@ -13,8 +13,8 @@ object RefProps {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null
+    children: reactLib.reactMod.ReactNode = null,
+    innerRef: reactLib.reactMod.Ref[_] = null
   ): RefProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

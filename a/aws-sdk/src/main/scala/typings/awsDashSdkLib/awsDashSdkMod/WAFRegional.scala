@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class WAFRegional ()
   extends awsDashSdkLib.clientsAllMod.WAFRegional {
-  def this(options: awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsWafregionalMod.ClientConfiguration) = this()
 }
 

@@ -16,9 +16,9 @@ class SignalCellularConnectedNoInternet1BarOutlined protected ()
 @JSImport("@material-ui/icons", "SignalCellularConnectedNoInternet1BarOutlined")
 @js.native
 class SignalCellularConnectedNoInternet1BarOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Transfer ()
-  extends awsDashSdkLib.clientsTransferMod.namespaced {
-  def this(options: awsDashSdkLib.clientsTransferMod.TransferNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsTransferMod.^ {
+  def this(options: awsDashSdkLib.clientsTransferMod.ClientConfiguration) = this()
 }
 

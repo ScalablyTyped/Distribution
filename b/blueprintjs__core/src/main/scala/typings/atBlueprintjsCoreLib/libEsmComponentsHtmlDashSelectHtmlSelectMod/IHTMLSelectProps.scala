@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IHTMLSelectProps
-  extends reactLib.reactMod.ReactNs.SelectHTMLAttributes[stdLib.HTMLSelectElement]
+  extends reactLib.reactMod.SelectHTMLAttributes[stdLib.HTMLSelectElement]
      with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLSelectElement] {
   /** Whether this element should fill its container. */
   var fill: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,7 +21,7 @@ trait IHTMLSelectProps
   var multiple_IHTMLSelectProps: js.UndefOr[scala.Nothing] = js.undefined
   /** Change event handler. Use `event.currentTarget.value` to access the new value. */
   @JSName("onChange")
-  var onChange_IHTMLSelectProps: js.UndefOr[reactLib.reactMod.ReactNs.ChangeEventHandler[stdLib.HTMLSelectElement]] = js.undefined
+  var onChange_IHTMLSelectProps: js.UndefOr[reactLib.reactMod.ChangeEventHandler[stdLib.HTMLSelectElement]] = js.undefined
   /**
     * Shorthand for supplying options: an array of basic types or
     * `{ label?, value }` objects. If no `label` is supplied, `value`
@@ -41,14 +41,14 @@ object IHTMLSelectProps {
   @scala.inline
   def apply(
     IElementRefProps: atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLSelectElement] = null,
-    SelectHTMLAttributes: reactLib.reactMod.ReactNs.SelectHTMLAttributes[stdLib.HTMLSelectElement] = null,
+    SelectHTMLAttributes: reactLib.reactMod.SelectHTMLAttributes[stdLib.HTMLSelectElement] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
     iconProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsIconIconMod.IIconProps] = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     minimal: js.UndefOr[scala.Boolean] = js.undefined,
     multiple: js.UndefOr[scala.Nothing] = js.undefined,
-    onChange: reactLib.reactMod.ReactNs.ChangeEventHandler[stdLib.HTMLSelectElement] = null,
+    onChange: reactLib.reactMod.ChangeEventHandler[stdLib.HTMLSelectElement] = null,
     options: js.Array[
       java.lang.String | scala.Double | atBlueprintjsCoreLib.libEsmCommonPropsMod.IOptionProps
     ] = null,

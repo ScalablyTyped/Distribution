@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class WorkDocs ()
   extends awsDashSdkLib.clientsAllMod.WorkDocs {
-  def this(options: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsWorkdocsMod.ClientConfiguration) = this()
 }
 

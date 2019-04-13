@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("readable-stream", "Readable")
 @js.native
-class Readable ()
-  extends readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Readable {
-  def this(options: readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.ReadableOptions) = this()
+class Readable () extends _Readable {
+  def this(options: ReadableOptions) = this()
 }
 

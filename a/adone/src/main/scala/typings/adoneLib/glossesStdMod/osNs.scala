@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object osNs extends js.Object {
   val EOL: java.lang.String = js.native
-  val constants: nodeLib.Anon_Errno = js.native
   def arch(): java.lang.String = js.native
   def cpus(): js.Array[nodeLib.osMod.CpuInfo] = js.native
   def endianness(): adoneLib.adoneLibStrings.BE | adoneLib.adoneLibStrings.LE = js.native
@@ -43,5 +42,13 @@ object osNs extends js.Object {
   def userInfo(): nodeLib.osMod.UserInfo[java.lang.String] = js.native
   def userInfo(options: nodeLib.Anon_BufferEncoding): nodeLib.osMod.UserInfo[nodeLib.Buffer] = js.native
   def userInfo(options: nodeLib.Anon_EncodingString): nodeLib.osMod.UserInfo[java.lang.String] = js.native
+  @js.native
+  object constants extends js.Object {
+    var UV_UDP_REUSEADDR: scala.Double = js.native
+    var errno: nodeLib.Anon_E2BIG = js.native
+    var priority: nodeLib.Anon_PRIORITYABOVENORMAL = js.native
+    var signals: nodeLib.Anon_SIGABRT = js.native
+  }
+  
 }
 

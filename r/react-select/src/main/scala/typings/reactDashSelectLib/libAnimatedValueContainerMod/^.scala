@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def AnimatedValueContainer[OptionType](
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.ValueContainerProps[OptionType]]
-  ): reactLib.reactMod.ReactNs.ComponentType[AnimatedValueContainerProps[OptionType]] = js.native
+    WrappedComponent: reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsContainersMod.ValueContainerProps[OptionType]]
+  ): reactLib.reactMod.ComponentType[AnimatedValueContainerProps[OptionType]] = js.native
   def default[OptionType](
-    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.ValueContainerProps[OptionType]]
-  ): reactLib.reactMod.ReactNs.ComponentType[AnimatedValueContainerProps[OptionType]] = js.native
+    WrappedComponent: reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsContainersMod.ValueContainerProps[OptionType]]
+  ): reactLib.reactMod.ComponentType[AnimatedValueContainerProps[OptionType]] = js.native
 }
 

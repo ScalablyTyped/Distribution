@@ -14,8 +14,6 @@ trait Anon_Context
       /* context */ js.Any, 
       Anon_CallBack
     ] {
-  def Item(
-    _props: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_rmc-picker/lib/PickerMixin.IItemProps */ js.Any
-  ): js.Any = js.native
+  def Item(_props: rmcDashPickerLib.libPickerMixinMod.IItemProps): js.Any = js.native
 }
 

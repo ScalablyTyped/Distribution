@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DateTimePickerClass
-  extends reactLib.reactMod.ReactNs.ComponentClass[DateTimePickerProps, reactLib.reactMod.ReactNs.ComponentState]
+  extends reactLib.reactMod.ComponentClass[DateTimePickerProps, reactLib.reactMod.ComponentState]
 

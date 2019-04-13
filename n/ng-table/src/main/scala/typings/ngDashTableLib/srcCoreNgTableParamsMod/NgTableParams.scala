@@ -171,7 +171,7 @@ class NgTableParams[T] () extends js.Object {
   /**
     * Trigger a reload of the data rows
     */
-  def reload[TResult /* <: ngDashTableLib.srcCoreDataResultsMod.DataResult[T] */](): angularLib.angularMod.angularNs.IPromise[js.Array[TResult]] = js.native
+  def reload[TResult /* <: ngDashTableLib.srcCoreDataResultsMod.DataResult[T] */](): angularLib.angularMod.IPromise[js.Array[TResult]] = js.native
   def reloadPages(): scala.Unit = js.native
   /* private */ def runInterceptorPipeline(fetchedData: js.Any): js.Any = js.native
   /**
@@ -238,8 +238,8 @@ object NgTableParams extends js.Object {
   var ngTableEventsChannel: js.Any = js.native
   var ngTableSettings: js.Any = js.native
   def init(
-    $q: angularLib.angularMod.angularNs.IQService,
-    $log: angularLib.angularMod.angularNs.ILogService,
+    $q: angularLib.angularMod.IQService,
+    $log: angularLib.angularMod.ILogService,
     ngTableDefaults: ngDashTableLib.srcCoreNgTableDefaultsMod.IDefaults,
     ngTableEventsChannel: ngDashTableLib.srcCoreNgTableEventsChannelMod.NgTableEventsChannel,
     ngTableSettings: ngDashTableLib.srcCoreNgTableSettingsMod.NgTableSettings

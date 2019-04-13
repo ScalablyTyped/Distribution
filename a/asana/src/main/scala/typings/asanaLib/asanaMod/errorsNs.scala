@@ -10,128 +10,72 @@ import scala.scalajs.js.annotation._
 object errorsNs extends js.Object {
   @js.native
   class AsanaError protected ()
-    extends asanaLib.asanaMod.asanaNs.errorsNs.AsanaError {
+    extends stdLib.Error {
     /**
       * @param message
       * @return
       */
     def this(message: js.Any) = this()
-    /* CompleteClass */
-    override var code: scala.Double = js.native
+    var code: scala.Double = js.native
     /* CompleteClass */
     override var message: java.lang.String = js.native
     /* CompleteClass */
     override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
+    var value: js.Any = js.native
   }
   
   @js.native
-  class Forbidden protected ()
-    extends asanaLib.asanaMod.asanaNs.errorsNs.Forbidden {
+  class Forbidden protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
     def this(value: js.Any) = this()
-    /* CompleteClass */
-    override var code: scala.Double = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
   }
   
   @js.native
-  class InvalidRequest protected ()
-    extends asanaLib.asanaMod.asanaNs.errorsNs.InvalidRequest {
+  class InvalidRequest protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
     def this(value: js.Any) = this()
-    /* CompleteClass */
-    override var code: scala.Double = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
   }
   
   @js.native
-  class NoAuthorization protected ()
-    extends asanaLib.asanaMod.asanaNs.errorsNs.NoAuthorization {
+  class NoAuthorization protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
     def this(value: js.Any) = this()
-    /* CompleteClass */
-    override var code: scala.Double = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
   }
   
   @js.native
-  class NotFound protected ()
-    extends asanaLib.asanaMod.asanaNs.errorsNs.NotFound {
+  class NotFound protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
     def this(value: js.Any) = this()
-    /* CompleteClass */
-    override var code: scala.Double = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
   }
   
   @js.native
-  class RateLimitEnforced protected ()
-    extends asanaLib.asanaMod.asanaNs.errorsNs.RateLimitEnforced {
+  class RateLimitEnforced protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
     def this(value: js.Any) = this()
-    /* CompleteClass */
-    override var code: scala.Double = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
   }
   
   @js.native
-  class ServerError protected ()
-    extends asanaLib.asanaMod.asanaNs.errorsNs.ServerError {
+  class ServerError protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
     def this(value: js.Any) = this()
-    /* CompleteClass */
-    override var code: scala.Double = js.native
-    /* CompleteClass */
-    override var message: java.lang.String = js.native
-    /* CompleteClass */
-    override var name: java.lang.String = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
   }
   
 }

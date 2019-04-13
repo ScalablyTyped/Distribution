@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/lib/build", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val BUILD_SCRIPT: /* ionic:build */ java.lang.String = js.native
+  val BUILD_SCRIPT: ionicLib.ionicLibStrings.`ionic:build` = js.native
   val COMMON_BUILD_COMMAND_OPTIONS: js.Array[ionicLib.definitionsMod.CommandMetadataOption] = js.native
   def build(
     deps: BuildRunnerDeps,

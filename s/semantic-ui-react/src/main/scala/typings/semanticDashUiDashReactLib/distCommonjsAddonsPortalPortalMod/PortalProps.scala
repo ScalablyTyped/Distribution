@@ -13,7 +13,7 @@ object PortalProps {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     closeOnDocumentClick: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnPortalMouseLeave: js.UndefOr[scala.Boolean] = js.undefined,
@@ -25,16 +25,16 @@ object PortalProps {
     mountNode: js.Any = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
-    onClose: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
+    onClose: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
     onMount: (/* nothing */ scala.Null, /* data */ PortalProps) => scala.Unit = null,
-    onOpen: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
+    onOpen: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ PortalProps) => scala.Unit = null,
     onUnmount: (/* nothing */ scala.Null, /* data */ PortalProps) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined,
-    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null
+    trigger: reactLib.reactMod.ReactNode = null,
+    triggerRef: reactLib.reactMod.Ref[_] = null
   ): PortalProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("minimatch", "Minimatch")
 @js.native
-class Minimatch protected ()
-  extends minimatchLib.minimatchMod.MNs.IMinimatch {
+class Minimatch protected () extends IMinimatch {
   def this(pattern: java.lang.String) = this()
-  def this(pattern: java.lang.String, options: minimatchLib.minimatchMod.MNs.IOptions) = this()
+  def this(pattern: java.lang.String, options: IOptions) = this()
 }
 

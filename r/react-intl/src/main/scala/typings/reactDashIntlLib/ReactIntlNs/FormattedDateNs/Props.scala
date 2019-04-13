@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Props
   extends reactDashIntlLib.ReactIntlNs.IntlComponentNs.DateTimeFormatProps {
-  var children: js.UndefOr[
-    js.Function1[/* formattedDate */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var children: js.UndefOr[js.Function1[/* formattedDate */ java.lang.String, reactLib.reactMod.ReactNode]] = js.undefined
   var value: reactDashIntlLib.ReactIntlNs.DateSource
 }
 
@@ -17,7 +15,7 @@ object Props {
   @scala.inline
   def apply(
     value: reactDashIntlLib.ReactIntlNs.DateSource,
-    children: /* formattedDate */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
+    children: /* formattedDate */ java.lang.String => reactLib.reactMod.ReactNode = null,
     day: java.lang.String = null,
     era: java.lang.String = null,
     format: java.lang.String = null,

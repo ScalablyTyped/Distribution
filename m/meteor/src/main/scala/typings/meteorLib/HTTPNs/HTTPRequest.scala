@@ -10,12 +10,8 @@ trait HTTPRequest extends js.Object {
   var content: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
   var followRedirects: js.UndefOr[scala.Boolean] = js.undefined
-  var headers: /* import warning: ImportType.apply Failed type conversion: {[id: string] : string, [id: string] : string} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[id: string] : string, [id: string] : string} */ js.Any
-  ] = js.undefined
-  var params: /* import warning: ImportType.apply Failed type conversion: {[id: string] : string, [id: string] : string} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[id: string] : string, [id: string] : string} */ js.Any
-  ] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var query: js.UndefOr[java.lang.String] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
@@ -27,8 +23,8 @@ object HTTPRequest {
     content: java.lang.String = null,
     data: js.Any = null,
     followRedirects: js.UndefOr[scala.Boolean] = js.undefined,
-    headers: /* import warning: ImportType.apply Failed type conversion: {[id: string] : string, [id: string] : string} */ js.Any = null,
-    params: /* import warning: ImportType.apply Failed type conversion: {[id: string] : string, [id: string] : string} */ js.Any = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     query: java.lang.String = null,
     timeout: scala.Int | scala.Double = null
   ): HTTPRequest = {

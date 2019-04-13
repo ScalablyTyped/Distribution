@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LazyLogProps extends js.Object {
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var fetchOptions: js.UndefOr[stdLib.RequestInit] = js.undefined
   var follow: js.UndefOr[scala.Boolean] = js.undefined
-  var formatPart: js.UndefOr[js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var formatPart: js.UndefOr[js.Function1[/* text */ java.lang.String, reactLib.reactMod.ReactNode]] = js.undefined
   var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var highlight: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.undefined
@@ -20,7 +20,7 @@ trait LazyLogProps extends js.Object {
   var scrollToLine: js.UndefOr[scala.Double] = js.undefined
   var selectableLines: js.UndefOr[scala.Boolean] = js.undefined
   var stream: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var url: java.lang.String
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
@@ -29,10 +29,10 @@ object LazyLogProps {
   @scala.inline
   def apply(
     url: java.lang.String,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     fetchOptions: stdLib.RequestInit = null,
     follow: js.UndefOr[scala.Boolean] = js.undefined,
-    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNs.ReactNode = null,
+    formatPart: /* text */ java.lang.String => reactLib.reactMod.ReactNode = null,
     height: java.lang.String | scala.Double = null,
     highlight: scala.Double | js.Array[scala.Double] = null,
     onError: /* error */ js.Any => _ = null,
@@ -43,7 +43,7 @@ object LazyLogProps {
     scrollToLine: scala.Int | scala.Double = null,
     selectableLines: js.UndefOr[scala.Boolean] = js.undefined,
     stream: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     width: java.lang.String | scala.Double = null
   ): LazyLogProps = {
     val __obj = js.Dynamic.literal(url = url)

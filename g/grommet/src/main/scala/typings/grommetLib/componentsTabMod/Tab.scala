@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Tab", "Tab")
 @js.native
 class Tab protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      TabProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+  extends reactLib.reactMod.Component[
+      TabProps with (reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
         reactLib.HTMLButtonElement
       ]), 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: TabProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+  def this(props: TabProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ])) = this()
-  def this(props: TabProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+  def this(props: TabProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ]), context: js.Any) = this()
 }

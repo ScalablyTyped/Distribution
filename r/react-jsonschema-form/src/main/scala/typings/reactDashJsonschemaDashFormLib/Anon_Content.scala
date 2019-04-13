@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Content extends js.Object {
-  var content: reactLib.reactMod.ReactNs.ReactElement[_]
+  var content: reactLib.reactMod.ReactElement[_]
   var disabled: scala.Boolean
   var name: java.lang.String
   var readonly: scala.Boolean
@@ -15,7 +15,7 @@ trait Anon_Content extends js.Object {
 object Anon_Content {
   @scala.inline
   def apply(
-    content: reactLib.reactMod.ReactNs.ReactElement[_],
+    content: reactLib.reactMod.ReactElement[_],
     disabled: scala.Boolean,
     name: java.lang.String,
     readonly: scala.Boolean

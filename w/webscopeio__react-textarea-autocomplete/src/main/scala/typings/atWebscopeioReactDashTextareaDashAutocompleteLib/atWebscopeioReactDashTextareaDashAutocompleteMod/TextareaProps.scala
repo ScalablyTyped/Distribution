@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in @webscopeio/react-textarea-autocomplete.PickedAttributes ]: react.react.React.InputHTMLAttributes<std.HTMLTextAreaElement>[P]} */ trait TextareaProps[TItem] extends js.Object {
+- Dropped {[ P in @webscopeio/react-textarea-autocomplete.PickedAttributes ]: react.react.InputHTMLAttributes<std.HTMLTextAreaElement>[P]} */ trait TextareaProps[TItem] extends js.Object {
   /**
     * ClassNames of the textarea.
     */
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   /**
     * Styles of textarea's container.
     */
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * 	ClassNames of dropdown's wrapper.
     */
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   /**
     * Styles of dropdown's wrapper.
     */
-  var dropdownStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dropdownStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Allows you to get React ref of the underlying textarea.
     */
@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation._
   /**
     * Styles of item's wrapper.
     */
-  var itemStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var itemStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * 	ClassNames of list's wrapper.
     */
@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation._
   /**
     * Styles of list's wrapper.
     */
-  var listStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var listStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * ClassNames of loader's wrapper.
     */
@@ -59,11 +59,11 @@ import scala.scalajs.js.annotation._
   /**
     * Styles of loader's wrapper.
     */
-  var loaderStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var loaderStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Gets data props which is already fetched (and displayed) suggestion.
     */
-  var loadingComponent: reactLib.reactMod.ReactNs.SFC[js.Object]
+  var loadingComponent: reactLib.reactMod.SFC[js.Object]
   /**
     * Number of characters that user should type for trigger a suggestion.
     * @default 1
@@ -88,7 +88,7 @@ import scala.scalajs.js.annotation._
   /**
     * Styles of textarea
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Define triggers and their corresponding behavior.
     */
@@ -98,26 +98,26 @@ import scala.scalajs.js.annotation._
 object TextareaProps {
   @scala.inline
   def apply[TItem](
-    loadingComponent: reactLib.reactMod.ReactNs.SFC[js.Object],
+    loadingComponent: reactLib.reactMod.SFC[js.Object],
     trigger: TriggerType[TItem],
     className: java.lang.String = null,
     closeOnClickOutside: js.UndefOr[scala.Boolean] = js.undefined,
     containerClassName: java.lang.String = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     dropdownClassName: java.lang.String = null,
-    dropdownStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dropdownStyle: reactLib.reactMod.CSSProperties = null,
     innerRef: /* ref */ stdLib.HTMLTextAreaElement => scala.Unit = null,
     itemClassName: java.lang.String = null,
-    itemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    itemStyle: reactLib.reactMod.CSSProperties = null,
     listClassName: java.lang.String = null,
-    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    listStyle: reactLib.reactMod.CSSProperties = null,
     loaderClassName: java.lang.String = null,
-    loaderStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    loaderStyle: reactLib.reactMod.CSSProperties = null,
     minChar: scala.Int | scala.Double = null,
     movePopupAsYouType: js.UndefOr[scala.Boolean] = js.undefined,
     onCaretPositionChange: /* pos */ scala.Double => scala.Unit = null,
     scrollToItem: scala.Boolean | (js.Function2[/* container */ stdLib.HTMLDivElement, /* item */ stdLib.HTMLDivElement, scala.Unit]) = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): TextareaProps[TItem] = {
     val __obj = js.Dynamic.literal(loadingComponent = loadingComponent, trigger = trigger)
     if (className != null) __obj.updateDynamic("className")(className)

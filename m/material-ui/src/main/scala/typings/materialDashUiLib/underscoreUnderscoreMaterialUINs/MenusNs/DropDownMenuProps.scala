@@ -10,41 +10,38 @@ trait DropDownMenuProps extends js.Object {
   var anchorOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
   var animated: js.UndefOr[scala.Boolean] = js.undefined
   var animation: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[
+    reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var iconButton: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var listStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var iconButton: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var iconStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var labelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var listStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var maxHeight: js.UndefOr[scala.Double] = js.undefined
-  var menuItemStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var menuStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var menuItemStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var menuStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      /* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], 
       /* index */ scala.Double, 
       /* menuItemValue */ js.Any, 
       scala.Unit
     ]
   ] = js.undefined
   var onClose: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], scala.Unit]
   ] = js.undefined
   var openImmediately: js.UndefOr[scala.Boolean] = js.undefined
-  var selectedMenuItemStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var selectedMenuItemStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var selectionRenderer: js.UndefOr[js.Function2[/* value */ js.Any, /* menuItem */ js.Any, scala.Unit]] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var targetOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
-  var underlineStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var underlineStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -53,28 +50,28 @@ object DropDownMenuProps {
   def apply(
     anchorOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
-    animation: reactLib.reactMod.ReactNs.ComponentClass[
+    animation: reactLib.reactMod.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ] = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    iconButton: reactLib.reactMod.ReactNs.ReactNode = null,
-    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    iconButton: reactLib.reactMod.ReactNode = null,
+    iconStyle: reactLib.reactMod.CSSProperties = null,
+    labelStyle: reactLib.reactMod.CSSProperties = null,
+    listStyle: reactLib.reactMod.CSSProperties = null,
     maxHeight: scala.Int | scala.Double = null,
-    menuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    menuStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    menuItemStyle: reactLib.reactMod.CSSProperties = null,
+    menuStyle: reactLib.reactMod.CSSProperties = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: (/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], /* index */ scala.Double, /* menuItemValue */ js.Any) => scala.Unit = null,
-    onClose: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event] => scala.Unit = null,
+    onChange: (/* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event], /* index */ scala.Double, /* menuItemValue */ js.Any) => scala.Unit = null,
+    onClose: /* e */ reactLib.reactMod.SyntheticEvent[js.Object, reactLib.Event] => scala.Unit = null,
     openImmediately: js.UndefOr[scala.Boolean] = js.undefined,
-    selectedMenuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    selectedMenuItemStyle: reactLib.reactMod.CSSProperties = null,
     selectionRenderer: (/* value */ js.Any, /* menuItem */ js.Any) => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
-    underlineStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlineStyle: reactLib.reactMod.CSSProperties = null,
     value: js.Any = null
   ): DropDownMenuProps = {
     val __obj = js.Dynamic.literal()

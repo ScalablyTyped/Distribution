@@ -10,9 +10,9 @@ trait BigNum extends js.Object {
   /** Return a new BigNum with the absolute value of the instance. */
   def abs(): BigNum = js.native
   /** Return a new BigNum containing the instance value plus n. */
-  def add(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def add(n: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum with the instance value bitwise AND (&)-ed with n. */
-  def and(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def and(n: BigNumCompatible): BigNum = js.native
   /** Return the number of bits used to represent the current BigNum. */
   def bitLength(): scala.Double = js.native
   /**
@@ -20,19 +20,19 @@ trait BigNum extends js.Object {
     * 
     * Return a positive integer if > n, a negative integer if < n, and 0 if == n.
     */
-  def cmp(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): scala.Double = js.native
+  def cmp(n: BigNumCompatible): scala.Double = js.native
   /** Return a new BigNum containing the instance value integrally divided by n. */
-  def div(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def div(n: BigNumCompatible): BigNum = js.native
   /** Return a boolean: whether the instance value is equal to n (== n). */
-  def eq(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): scala.Boolean = js.native
+  def eq(n: BigNumCompatible): scala.Boolean = js.native
   /** Return the greatest common divisor of the current BigNum with n as a new BigNum. */
   def gcd(n: BigNum): BigNum = js.native
   /** Return a boolean: whether the instance value is greater than or equal to n (>= n). */
-  def ge(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): scala.Boolean = js.native
+  def ge(n: BigNumCompatible): scala.Boolean = js.native
   /** Return a boolean: whether the instance value is greater than n (> n). */
-  def gt(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): scala.Boolean = js.native
+  def gt(n: BigNumCompatible): scala.Boolean = js.native
   /** Compute the multiplicative inverse modulo m. */
-  def invertm(m: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def invertm(m: BigNumCompatible): BigNum = js.native
   /**
     * Return the Jacobi symbol (or Legendre symbol if n is prime) of the current BigNum (= a) over n.
     * Note that n must be odd and >= 3. 0 <= a < n.
@@ -41,21 +41,21 @@ trait BigNum extends js.Object {
     */
   def jacobi(n: BigNum): scala.Double = js.native
   /** Return a boolean: whether the instance value is less than or equal to n (<= n). */
-  def le(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): scala.Boolean = js.native
+  def le(n: BigNumCompatible): scala.Boolean = js.native
   /** Return a boolean: whether the instance value is less than n (< n). */
-  def lt(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): scala.Boolean = js.native
+  def lt(n: BigNumCompatible): scala.Boolean = js.native
   /** Return a new BigNum with the instance value modulo n. */
-  def mod(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def mod(n: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum containing the instance value multiplied by n. */
-  def mul(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def mul(n: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum with the negative of the instance value. */
   def neg(): BigNum = js.native
   /** Return a new BigNum with the instance value bitwise inclusive-OR (|)-ed with n. */
-  def or(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def or(n: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum with the instance value raised to the nth power. */
-  def pow(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def pow(n: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum with the instance value raised to the nth power modulo m. */
-  def powm(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible, m: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def powm(n: BigNumCompatible, m: BigNumCompatible): BigNum = js.native
   /** 
     * Return whether the BigNum is:
     *  - certainly prime (true)
@@ -68,20 +68,20 @@ trait BigNum extends js.Object {
     * Otherwise, return a random BigNum between 0 and the instance value - 1, inclusive.
     */
   def rand(): BigNum = js.native
-  def rand(upperBound: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def rand(upperBound: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum that is the 2^n multiple. Equivalent of the << operator. */
-  def shiftLeft(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def shiftLeft(n: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum of the value integer divided by 2^n. Equivalent of the >> operator. */
-  def shiftRight(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def shiftRight(n: BigNumCompatible): BigNum = js.native
   /** Return a new BigNum containing the instance value minus n. */
-  def sub(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def sub(n: BigNumCompatible): BigNum = js.native
   /**
     * Return a new Buffer with the data from the BigNum.
     * 
     * The default options are: {endian: 'big', size: 1}.
     */
   def toBuffer(): nodeLib.Buffer = js.native
-  def toBuffer(options: bignumLib.bignumMod.BigNumNs.BufferOptions): nodeLib.Buffer = js.native
+  def toBuffer(options: BufferOptions): nodeLib.Buffer = js.native
   /**
     * Turn a BigNum into a Number.
     * 
@@ -90,6 +90,6 @@ trait BigNum extends js.Object {
   def toNumber(): scala.Double = js.native
   def toString(base: scala.Double): java.lang.String = js.native
   /** Return a new BigNum with the instance value bitwise exclusive-OR (^)-ed with n. */
-  def xor(n: bignumLib.bignumMod.BigNumNs.BigNumCompatible): BigNum = js.native
+  def xor(n: BigNumCompatible): BigNum = js.native
 }
 

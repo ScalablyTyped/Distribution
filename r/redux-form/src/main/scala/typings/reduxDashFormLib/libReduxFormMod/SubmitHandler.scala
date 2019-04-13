@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SubmitHandler[FormData, P, ErrorType] extends js.Object {
-  def apply(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit = js.native
+  def apply(event: reactLib.reactMod.SyntheticEvent[_, reactLib.Event]): scala.Unit = js.native
   def apply(submit: FormSubmitHandler[FormData, P, ErrorType]): js.Any = js.native
   def apply(
     submit: FormSubmitHandler[FormData, P, ErrorType],

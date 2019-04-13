@@ -13,9 +13,9 @@ trait IDialogPropTypes extends js.Object {
   var children: js.UndefOr[js.Any] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
-  var closeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var closeIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
-  var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var getContainer: js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
@@ -28,14 +28,11 @@ trait IDialogPropTypes extends js.Object {
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
   var mousePosition: js.UndefOr[rcDashDialogLib.Anon_X] = js.undefined
   var onClose: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event], 
-      _
-    ]
+    js.Function1[/* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event], _]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
@@ -55,9 +52,9 @@ object IDialogPropTypes {
     children: js.Any = null,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
-    closeIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    closeIcon: reactLib.reactMod.ReactNode = null,
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
-    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: reactLib.reactMod.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
     getContainer: () => stdLib.HTMLElement = null,
     height: scala.Int | scala.Double = null,
@@ -69,10 +66,10 @@ object IDialogPropTypes {
     maskStyle: js.Object = null,
     maskTransitionName: java.lang.String = null,
     mousePosition: rcDashDialogLib.Anon_X = null,
-    onClose: /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event] => _ = null,
+    onClose: /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, reactLib.Event] => _ = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionName: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null,

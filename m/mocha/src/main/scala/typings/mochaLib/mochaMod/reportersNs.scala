@@ -221,12 +221,6 @@ object reportersNs extends js.Object {
       */
     var useColors: scala.Boolean = js.native
     /**
-      * Expose terminal window size
-      *
-      * @see https://mochajs.org/api/module-base#.window
-      */
-    val window: mochaLib.Anon_Width = js.native
-    /**
       * Color `str` with the given `type` (from `colors`)
       *
       * @see https://mochajs.org/api/module-base#.color
@@ -272,6 +266,16 @@ object reportersNs extends js.Object {
         * Shows the cursor
         */
       def show(): scala.Unit = js.native
+    }
+    
+    /**
+      * Expose terminal window size
+      *
+      * @see https://mochajs.org/api/module-base#.window
+      */
+    @js.native
+    object window extends js.Object {
+      var width: scala.Double = js.native
     }
     
   }

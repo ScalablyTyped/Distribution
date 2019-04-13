@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class FMS ()
-  extends awsDashSdkLib.clientsFmsMod.namespaced {
-  def this(options: awsDashSdkLib.clientsFmsMod.FMSNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsFmsMod.^ {
+  def this(options: awsDashSdkLib.clientsFmsMod.ClientConfiguration) = this()
 }
 

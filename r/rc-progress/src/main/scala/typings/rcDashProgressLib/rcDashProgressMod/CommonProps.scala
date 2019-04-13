@@ -14,9 +14,7 @@ trait CommonProps extends js.Object {
     rcDashProgressLib.rcDashProgressLibStrings.butt | rcDashProgressLib.rcDashProgressLibStrings.square | rcDashProgressLib.rcDashProgressLibStrings.round
   ] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var style: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties
-  ] = js.undefined
+  var style: js.UndefOr[js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties] = js.undefined
   var trailColor: js.UndefOr[java.lang.String] = js.undefined
   var trailWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
@@ -30,7 +28,7 @@ object CommonProps {
     strokeColor: java.lang.String = null,
     strokeLinecap: rcDashProgressLib.rcDashProgressLibStrings.butt | rcDashProgressLib.rcDashProgressLibStrings.square | rcDashProgressLib.rcDashProgressLibStrings.round = null,
     strokeWidth: scala.Double | java.lang.String = null,
-    style: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     trailColor: java.lang.String = null,
     trailWidth: scala.Double | java.lang.String = null
   ): CommonProps = {

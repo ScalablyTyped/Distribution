@@ -12,7 +12,7 @@ object ^ extends js.Object {
   def getField(content: enhancedDashResolveLib.libConcordMod.Dictionary[_], field: java.lang.String): js.Any = js.native
   def getField(content: scala.Null, field: java.lang.String): js.Any = js.native
   def loadDescriptionFile(
-    resolver: enhancedDashResolveLib.libResolverMod.namespaced,
+    resolver: enhancedDashResolveLib.libResolverMod.^,
     directory: java.lang.String,
     filenames: js.Array[java.lang.String],
     callback: js.Function2[

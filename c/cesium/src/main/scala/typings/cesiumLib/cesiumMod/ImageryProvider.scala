@@ -7,62 +7,37 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "ImageryProvider")
 @js.native
-abstract class ImageryProvider ()
-  extends cesiumLib.cesiumMod.CesiumNs.ImageryProvider {
-  /* CompleteClass */
-  override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
-  /* CompleteClass */
-  override var defaultAlpha: scala.Double = js.native
-  /* CompleteClass */
-  override var defaultBrightness: scala.Double = js.native
-  /* CompleteClass */
-  override var defaultContrast: scala.Double = js.native
-  /* CompleteClass */
-  override var defaultGamma: scala.Double = js.native
-  /* CompleteClass */
-  override var defaultHue: scala.Double = js.native
-  /* CompleteClass */
-  override var defaultMagnificationFilter: js.Any = js.native
-  /* CompleteClass */
-  override var defaultMinificationFilter: js.Any = js.native
-  /* CompleteClass */
-  override var defaultSaturation: scala.Double = js.native
-  /* CompleteClass */
-  override val errorEvent: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
-  /* CompleteClass */
-  override val hasAlphaChannel: scala.Boolean = js.native
-  /* CompleteClass */
-  override val maximumLevel: scala.Double = js.native
-  /* CompleteClass */
-  override val minimumLevel: scala.Double = js.native
-  /* CompleteClass */
-  override val proxy: cesiumLib.cesiumMod.CesiumNs.Proxy = js.native
-  /* CompleteClass */
-  override val ready: scala.Boolean = js.native
-  /* CompleteClass */
-  override val readyPromise: js.Promise[scala.Boolean] = js.native
-  /* CompleteClass */
-  override val rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = js.native
-  /* CompleteClass */
-  override val tileDiscardPolicy: cesiumLib.cesiumMod.CesiumNs.TileDiscardPolicy = js.native
-  /* CompleteClass */
-  override val tileHeight: scala.Double = js.native
-  /* CompleteClass */
-  override val tileWidth: scala.Double = js.native
-  /* CompleteClass */
-  override val tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = js.native
-  /* CompleteClass */
-  override def getTileCredits(x: scala.Double, y: scala.Double, level: scala.Double): js.Array[cesiumLib.cesiumMod.CesiumNs.Credit] = js.native
-  /* CompleteClass */
-  override def pickFeatures(
+abstract class ImageryProvider () extends js.Object {
+  var credit: Credit = js.native
+  var defaultAlpha: scala.Double = js.native
+  var defaultBrightness: scala.Double = js.native
+  var defaultContrast: scala.Double = js.native
+  var defaultGamma: scala.Double = js.native
+  var defaultHue: scala.Double = js.native
+  var defaultMagnificationFilter: js.Any = js.native
+  var defaultMinificationFilter: js.Any = js.native
+  var defaultSaturation: scala.Double = js.native
+  val errorEvent: Event[js.Array[_]] = js.native
+  val hasAlphaChannel: scala.Boolean = js.native
+  val maximumLevel: scala.Double = js.native
+  val minimumLevel: scala.Double = js.native
+  val proxy: Proxy = js.native
+  val ready: scala.Boolean = js.native
+  val readyPromise: js.Promise[scala.Boolean] = js.native
+  val rectangle: Rectangle = js.native
+  val tileDiscardPolicy: TileDiscardPolicy = js.native
+  val tileHeight: scala.Double = js.native
+  val tileWidth: scala.Double = js.native
+  val tilingScheme: TilingScheme = js.native
+  def getTileCredits(x: scala.Double, y: scala.Double, level: scala.Double): js.Array[Credit] = js.native
+  def pickFeatures(
     x: scala.Double,
     y: scala.Double,
     level: scala.Double,
     longitude: scala.Double,
     latitude: scala.Double
-  ): js.Promise[js.Array[cesiumLib.cesiumMod.CesiumNs.ImageryLayerFeatureInfo]] = js.native
-  /* CompleteClass */
-  override def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
+  ): js.Promise[js.Array[ImageryLayerFeatureInfo]] = js.native
+  def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
 }
 
 /* static members */

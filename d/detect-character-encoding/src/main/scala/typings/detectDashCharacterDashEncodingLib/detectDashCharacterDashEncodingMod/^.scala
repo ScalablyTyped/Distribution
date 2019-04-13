@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("detect-character-encoding", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(buf: nodeLib.Buffer): detectDashCharacterDashEncodingLib.detectDashCharacterDashEncodingMod.detectCharacterEncodingNs.Result | scala.Null = js.native
+  def apply(buf: nodeLib.Buffer): Result | scala.Null = js.native
 }
 

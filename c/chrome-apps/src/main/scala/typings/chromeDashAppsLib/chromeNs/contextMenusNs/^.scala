@@ -17,17 +17,6 @@ object ^ extends js.Object {
     * Any items beyond this limit will be ignored.
     */
   val ACTION_MENU_TOP_LEVEL_LIMIT: chromeDashAppsLib.chromeNs.integer = js.native
-  /**
-    * The different contexts a menu can appear in.
-    * Specifying 'all' is equivalent to the combination of all other contexts except for 'launcher'.
-    * The 'launcher' context is only supported by apps and is used to add menu items to the context menu that appears when clicking on the app icon in the launcher/taskbar/dock/etc.
-    * Different platforms might put limitations on what is actually supported in a launcher context menu.
-    **/
-  val ContextType: chromeDashAppsLib.Anon_ALL = js.native
-  /**
-    * The type of menu item.
-    **/
-  val ItemType: chromeDashAppsLib.Anon_CHECKBOX = js.native
   /** Fired when a context menu item is clicked. */
   val onClicked: MenuClickedEvent = js.native
   /**

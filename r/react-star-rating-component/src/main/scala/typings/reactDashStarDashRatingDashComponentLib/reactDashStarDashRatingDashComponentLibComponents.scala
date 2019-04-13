@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashStarDashRatingDashComponentLibComponents {
   @scala.inline
-  def ReactDashStarDashRatingDashComponent: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashStarDashRatingDashComponent: reactLib.reactMod.ComponentType[
     reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps
-  ] = js.constructorOf[reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.^].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps]]
   @scala.inline
   def StarRatingComponentProps: reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps.type = reactDashStarDashRatingDashComponentLib.reactDashStarDashRatingDashComponentMod.StarRatingComponentProps

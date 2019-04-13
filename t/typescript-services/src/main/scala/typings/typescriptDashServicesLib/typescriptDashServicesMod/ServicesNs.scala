@@ -650,10 +650,6 @@ object ServicesNs extends js.Object {
       ): scala.Double = js.native
     }
     
-    type FormattingRequestKind = typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.FormattingRequestKind
-    type RuleAction = typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RuleAction
-    type RuleFlags = typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RuleFlags
-    type RulesPosition = typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition
   }
   
   /* static members */
@@ -802,7 +798,5 @@ object ServicesNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[typescriptDashServicesLib.TypeScriptNs.ServicesNs.TokenClass with scala.Double] = js.native
   }
   
-  type EndOfLineState = typescriptDashServicesLib.TypeScriptNs.ServicesNs.EndOfLineState
-  type TokenClass = typescriptDashServicesLib.TypeScriptNs.ServicesNs.TokenClass
 }
 

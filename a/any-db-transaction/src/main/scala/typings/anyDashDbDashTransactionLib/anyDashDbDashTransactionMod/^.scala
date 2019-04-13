@@ -11,52 +11,33 @@ object ^ extends js.Object {
   /**
     * Start a transaction
     */
-  def apply(q: anyDashDbLib.anyDashDbMod.Queryable): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
-  def apply(q: anyDashDbLib.anyDashDbMod.Queryable, beginStatement: java.lang.String): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
+  def apply(q: anyDashDbLib.anyDashDbMod.Queryable): Transaction = js.native
+  def apply(q: anyDashDbLib.anyDashDbMod.Queryable, beginStatement: java.lang.String): Transaction = js.native
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
     beginStatement: java.lang.String,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
-      scala.Unit
-    ]
-  ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
+    callback: js.Function2[/* error */ stdLib.Error, /* transaction */ Transaction, scala.Unit]
+  ): Transaction = js.native
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
-      scala.Unit
-    ]
-  ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
+    callback: js.Function2[/* error */ stdLib.Error, /* transaction */ Transaction, scala.Unit]
+  ): Transaction = js.native
+  def apply(q: anyDashDbLib.anyDashDbMod.Queryable, options: TransactionOptions): Transaction = js.native
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
-    options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions
-  ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
-  def apply(
-    q: anyDashDbLib.anyDashDbMod.Queryable,
-    options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions,
+    options: TransactionOptions,
     beginStatement: java.lang.String
-  ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
+  ): Transaction = js.native
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
-    options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions,
+    options: TransactionOptions,
     beginStatement: java.lang.String,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
-      scala.Unit
-    ]
-  ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
+    callback: js.Function2[/* error */ stdLib.Error, /* transaction */ Transaction, scala.Unit]
+  ): Transaction = js.native
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
-    options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* transaction */ anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction, 
-      scala.Unit
-    ]
-  ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
+    options: TransactionOptions,
+    callback: js.Function2[/* error */ stdLib.Error, /* transaction */ Transaction, scala.Unit]
+  ): Transaction = js.native
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class DocDB ()
-  extends awsDashSdkLib.clientsDocdbMod.namespaced {
-  def this(options: awsDashSdkLib.clientsDocdbMod.DocDBNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsDocdbMod.^ {
+  def this(options: awsDashSdkLib.clientsDocdbMod.ClientConfiguration) = this()
 }
 

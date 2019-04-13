@@ -6,26 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableLocale extends js.Object {
-  var emptyText: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | js.Function0[reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
-  var filterConfirm: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var filterReset: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var emptyText: js.UndefOr[reactLib.reactMod.ReactNode | js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
+  var filterConfirm: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var filterReset: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var filterTitle: js.UndefOr[java.lang.String] = js.undefined
-  var selectAll: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var selectInvert: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var selectAll: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var selectInvert: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var sortTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object TableLocale {
   @scala.inline
   def apply(
-    emptyText: reactLib.reactMod.ReactNs.ReactNode | js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
-    filterConfirm: reactLib.reactMod.ReactNs.ReactNode = null,
-    filterReset: reactLib.reactMod.ReactNs.ReactNode = null,
+    emptyText: reactLib.reactMod.ReactNode | js.Function0[reactLib.reactMod.ReactNode] = null,
+    filterConfirm: reactLib.reactMod.ReactNode = null,
+    filterReset: reactLib.reactMod.ReactNode = null,
     filterTitle: java.lang.String = null,
-    selectAll: reactLib.reactMod.ReactNs.ReactNode = null,
-    selectInvert: reactLib.reactMod.ReactNs.ReactNode = null,
+    selectAll: reactLib.reactMod.ReactNode = null,
+    selectInvert: reactLib.reactMod.ReactNode = null,
     sortTitle: java.lang.String = null
   ): TableLocale = {
     val __obj = js.Dynamic.literal()

@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-sketchapp 0.15
+// Type definitions for react-sketchapp 0.16
 // Project: https://github.com/airbnb/react-sketchapp
 // Definitions by: Rico Kahler <https://github.com/ricokahler>
 //                 DomiR <https://github.com/DomiR>

@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_InterpolationAlgorithm extends js.Object {
-  var interpolationAlgorithm: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.InterpolationAlgorithm] = js.undefined
+  var interpolationAlgorithm: js.UndefOr[cesiumLib.cesiumMod.InterpolationAlgorithm] = js.undefined
   var interpolationDegree: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Anon_InterpolationAlgorithm {
   @scala.inline
   def apply(
-    interpolationAlgorithm: cesiumLib.cesiumMod.CesiumNs.InterpolationAlgorithm = null,
+    interpolationAlgorithm: cesiumLib.cesiumMod.InterpolationAlgorithm = null,
     interpolationDegree: scala.Int | scala.Double = null
   ): Anon_InterpolationAlgorithm = {
     val __obj = js.Dynamic.literal()

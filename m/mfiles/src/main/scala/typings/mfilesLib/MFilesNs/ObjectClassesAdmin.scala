@@ -19,3 +19,8 @@ class ObjectClassesAdmin ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ObjectClassesAdmin")
+@js.native
+object ObjectClassesAdmin
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectClassesAdmin]
+

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val DEFAULT_CONTROLS_WITHOUT_CREATION: js.Array[reactLib.reactMod.Global.JSXNs.Element] = js.native
   val DEFAULT_CONTROLS_WITH_CREATION: js.Array[reactLib.reactMod.Global.JSXNs.Element] = js.native
-  val ExpandButtonFactory: reactLib.reactMod.ReactNs.ComponentFactory[
+  val ExpandButtonFactory: reactLib.reactMod.ComponentFactory[
     reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
     reactDashMosaicDashComponentLib.libButtonsExpandButtonMod.ExpandButton[java.lang.String | scala.Double]
   ] = js.native
-  val ModernMosaicContext: reactLib.reactMod.ReactNs.Context[
+  val ModernMosaicContext: reactLib.reactMod.Context[
     reactDashMosaicDashComponentLib.libContextTypesMod.MosaicContext[java.lang.String | scala.Double]
   ] = js.native
-  val ModernMosaicWindowContext: reactLib.reactMod.ReactNs.Context[
+  val ModernMosaicWindowContext: reactLib.reactMod.Context[
     stdLib.Pick[
       reactDashMosaicDashComponentLib.libContextTypesMod.MosaicWindowContext[java.lang.String | scala.Double], 
       reactDashMosaicDashComponentLib.reactDashMosaicDashComponentLibStrings.mosaicWindowActions
@@ -26,38 +26,35 @@ object ^ extends js.Object {
   val MosaicActionsPropType: propDashTypesLib.propDashTypesMod.Validator[
     propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_Args]
   ] = js.native
-  val MosaicContext: reactDashMosaicDashComponentLib.Anon_MosaicActions = js.native
-  val MosaicDragType: reactDashMosaicDashComponentLib.Anon_WINDOW = js.native
   val MosaicWindowActionsPropType: propDashTypesLib.propDashTypesMod.Validator[
     propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_ArgsConnectDragSource]
   ] = js.native
-  val MosaicWindowContext: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
-  val RemoveButtonFactory: reactLib.reactMod.ReactNs.ComponentFactory[
+  val RemoveButtonFactory: reactLib.reactMod.ComponentFactory[
     reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
     reactDashMosaicDashComponentLib.libButtonsRemoveButtonMod.RemoveButton[java.lang.String | scala.Double]
   ] = js.native
-  val ReplaceButtonFactory: reactLib.reactMod.ReactNs.ComponentFactory[
+  val ReplaceButtonFactory: reactLib.reactMod.ComponentFactory[
     reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
     reactDashMosaicDashComponentLib.libButtonsReplaceButtonMod.ReplaceButton[java.lang.String | scala.Double]
   ] = js.native
-  val SeparatorFactory: reactLib.reactMod.ReactNs.ComponentFactory[js.Object, reactDashMosaicDashComponentLib.libButtonsSeparatorMod.Separator] = js.native
-  val SplitButtonFactory: reactLib.reactMod.ReactNs.ComponentFactory[
+  val SeparatorFactory: reactLib.reactMod.ComponentFactory[js.Object, reactDashMosaicDashComponentLib.libButtonsSeparatorMod.Separator] = js.native
+  val SplitButtonFactory: reactLib.reactMod.ComponentFactory[
     reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
     reactDashMosaicDashComponentLib.libButtonsSplitButtonMod.SplitButton[java.lang.String | scala.Double]
   ] = js.native
   def MosaicFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
-    props: reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T] with reactLib.reactMod.ReactNs.Attributes,
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement[reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T]] = js.native
+    props: reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T] with reactLib.reactMod.Attributes,
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T]] = js.native
   def MosaicWindowFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
-    props: reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindowProps[T] with reactLib.reactMod.ReactNs.Attributes,
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement[reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindowProps[T]] = js.native
-  def MosaicZeroStateFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](): reactLib.reactMod.ReactNs.ReactElement[reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T]] = js.native
+    props: reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindowProps[T] with reactLib.reactMod.Attributes,
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindowProps[T]] = js.native
+  def MosaicZeroStateFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T]] = js.native
   def MosaicZeroStateFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
-    props: reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T] with reactLib.reactMod.ReactNs.Attributes,
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement[reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T]] = js.native
+    props: reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T] with reactLib.reactMod.Attributes,
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.ReactElement[reactDashMosaicDashComponentLib.libMosaicZeroStateMod.MosaicZeroStateProps[T]] = js.native
   def buildSpecFromUpdate[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](mosaicUpdate: reactDashMosaicDashComponentLib.libTypesMod.MosaicUpdate[T]): reactDashMosaicDashComponentLib.libTypesMod.MosaicUpdateSpec[T] = js.native
   def createBalancedTreeFromLeaves[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](leaves: js.Array[reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T]]): reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T] | scala.Null = js.native
   def createBalancedTreeFromLeaves[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
@@ -67,14 +64,14 @@ object ^ extends js.Object {
   def createDefaultToolbarButton(
     title: java.lang.String,
     className: java.lang.String,
-    onClick: js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], _]
-  ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+    onClick: js.Function1[/* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], _]
+  ): reactLib.reactMod.ReactElement[_] = js.native
   def createDefaultToolbarButton(
     title: java.lang.String,
     className: java.lang.String,
-    onClick: js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], _],
+    onClick: js.Function1[/* event */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], _],
     text: java.lang.String
-  ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactElement[_] = js.native
   def createDragToUpdates[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
     root: reactDashMosaicDashComponentLib.libTypesMod.MosaicNode[T],
     sourcePath: reactDashMosaicDashComponentLib.libTypesMod.MosaicPath,

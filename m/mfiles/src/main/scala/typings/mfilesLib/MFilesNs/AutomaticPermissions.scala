@@ -25,3 +25,8 @@ class AutomaticPermissions ()
   override def SetNamedACL(NamedACL: mfilesLib.INamedACL): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.AutomaticPermissions")
+@js.native
+object AutomaticPermissions
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAutomaticPermissions]
+

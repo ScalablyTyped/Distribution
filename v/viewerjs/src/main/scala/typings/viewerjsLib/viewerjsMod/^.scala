@@ -5,6 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * JavaScript image viewer.
+  * @see {@link https://github.com/fengyuanchen/viewerjs}
+  */
+@JSImport("viewerjs", JSImport.Namespace)
+@js.native
+class ^ protected () extends Viewer {
+  def this(element: stdLib.Element) = this()
+  def this(element: stdLib.Element, options: ViewerOption) = this()
+}
+
 @JSImport("viewerjs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
@@ -15,6 +26,6 @@ object ^ extends js.Object {
   /**
     * Change the global default options.
     */
-  def setDefaults(options: viewerjsLib.viewerjsMod.ViewerNs.ViewerOption): scala.Unit = js.native
+  def setDefaults(options: ViewerOption): scala.Unit = js.native
 }
 

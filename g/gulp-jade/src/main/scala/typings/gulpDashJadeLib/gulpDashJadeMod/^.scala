@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Any = js.native
-  def apply(params: gulpDashJadeLib.gulpDashJadeMod.GulpJadeNs.Params): js.Any = js.native
+  def apply(params: Params): js.Any = js.native
 }
 

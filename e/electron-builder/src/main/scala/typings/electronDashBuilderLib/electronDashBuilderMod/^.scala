@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-builder", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DEFAULT_TARGET: /* default */ java.lang.String = js.native
-  val DIR_TARGET: /* dir */ java.lang.String = js.native
+  val DEFAULT_TARGET: electronDashBuilderLib.electronDashBuilderLibStrings.default = js.native
+  val DIR_TARGET: electronDashBuilderLib.electronDashBuilderLibStrings.dir = js.native
   def archFromString(name: java.lang.String): builderDashUtilLib.outArchMod.Arch = js.native
   def build(): js.Promise[js.Array[java.lang.String]] = js.native
   def build(rawOptions: electronDashBuilderLib.outBuilderMod.CliOptions): js.Promise[js.Array[java.lang.String]] = js.native

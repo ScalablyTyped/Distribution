@@ -8,135 +8,135 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ArialabelAutoHeight extends js.Object {
   @JSName("aria-label")
-  var `aria-label_Original`: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
+  var `aria-label_Original`: reactLib.reactMod.Requireable[java.lang.String] = js.native
   @JSName("autoHeight")
-  var autoHeight_Original: reactLib.reactMod.ReactNs.Requireable[scala.Boolean] = js.native
+  var autoHeight_Original: reactLib.reactMod.Requireable[scala.Boolean] = js.native
   @JSName("children")
-  var children_Original: reactLib.reactMod.ReactNs.Validator[reactDashVirtualizedLib.distEsTableMod.Column] = js.native
+  var children_Original: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.Column] = js.native
   @JSName("className")
-  var className_Original: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
+  var className_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
   @JSName("disableHeader")
-  var disableHeader_Original: reactLib.reactMod.ReactNs.Requireable[scala.Boolean] = js.native
+  var disableHeader_Original: reactLib.reactMod.Requireable[scala.Boolean] = js.native
   @JSName("estimatedRowSize")
-  var estimatedRowSize_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var estimatedRowSize_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("gridClassName")
-  var gridClassName_Original: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
+  var gridClassName_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
   @JSName("gridStyle")
-  var gridStyle_Original: reactLib.reactMod.ReactNs.Requireable[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var gridStyle_Original: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties] = js.native
   @JSName("headerClassName")
-  var headerClassName_Original: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
+  var headerClassName_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
   @JSName("headerHeight")
-  var headerHeight_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var headerHeight_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("headerRowRenderer")
-  var headerRowRenderer_Original: reactLib.reactMod.ReactNs.Requireable[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer] = js.native
+  var headerRowRenderer_Original: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer] = js.native
   @JSName("headerStyle")
-  var headerStyle_Original: reactLib.reactMod.ReactNs.Requireable[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var headerStyle_Original: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties] = js.native
   @JSName("height")
-  var height_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var height_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("id")
-  var id_Original: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
+  var id_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
   @JSName("noRowsRenderer")
-  var noRowsRenderer_Original: reactLib.reactMod.ReactNs.Requireable[js.Function0[reactLib.reactMod.Global.JSXNs.Element]] = js.native
+  var noRowsRenderer_Original: reactLib.reactMod.Requireable[js.Function0[reactLib.reactMod.Global.JSXNs.Element]] = js.native
   @JSName("onHeaderClick")
-  var onHeaderClick_Original: reactLib.reactMod.ReactNs.Requireable[
+  var onHeaderClick_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.HeaderMouseEventHandlerParams, 
       scala.Unit
     ]
   ] = js.native
   @JSName("onRowClick")
-  var onRowClick_Original: reactLib.reactMod.ReactNs.Requireable[
+  var onRowClick_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
   ] = js.native
   @JSName("onRowDoubleClick")
-  var onRowDoubleClick_Original: reactLib.reactMod.ReactNs.Requireable[
+  var onRowDoubleClick_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
   ] = js.native
   @JSName("onRowMouseOut")
-  var onRowMouseOut_Original: reactLib.reactMod.ReactNs.Requireable[
+  var onRowMouseOut_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
   ] = js.native
   @JSName("onRowMouseOver")
-  var onRowMouseOver_Original: reactLib.reactMod.ReactNs.Requireable[
+  var onRowMouseOver_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
   ] = js.native
   @JSName("onRowsRendered")
-  var onRowsRendered_Original: reactLib.reactMod.ReactNs.Requireable[
+  var onRowsRendered_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
   ] = js.native
   @JSName("onScroll")
-  var onScroll_Original: reactLib.reactMod.ReactNs.Requireable[
+  var onScroll_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.ScrollEventData, 
       scala.Unit
     ]
   ] = js.native
   @JSName("overscanRowCount")
-  var overscanRowCount_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var overscanRowCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("rowClassName")
-  var rowClassName_Original: reactLib.reactMod.ReactNs.Requireable[
+  var rowClassName_Original: reactLib.reactMod.Requireable[
     java.lang.String | (js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
       java.lang.String
     ])
   ] = js.native
   @JSName("rowCount")
-  var rowCount_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var rowCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("rowGetter")
-  var rowGetter_Original: reactLib.reactMod.ReactNs.Validator[
+  var rowGetter_Original: reactLib.reactMod.Validator[
     js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, _]
   ] = js.native
   @JSName("rowHeight")
-  var rowHeight_Original: reactLib.reactMod.ReactNs.Validator[
+  var rowHeight_Original: reactLib.reactMod.Validator[
     scala.Double | (js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Double])
   ] = js.native
   @JSName("rowRenderer")
-  var rowRenderer_Original: reactLib.reactMod.ReactNs.Requireable[
+  var rowRenderer_Original: reactLib.reactMod.Requireable[
     js.Function1[
       /* props */ reactDashVirtualizedLib.distEsTableMod.TableRowProps, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.native
   @JSName("rowStyle")
-  var rowStyle_Original: reactLib.reactMod.ReactNs.Validator[
-    reactLib.reactMod.ReactNs.CSSProperties | (js.Function1[
+  var rowStyle_Original: reactLib.reactMod.Validator[
+    reactLib.reactMod.CSSProperties | (js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
-      reactLib.reactMod.ReactNs.CSSProperties
+      reactLib.reactMod.CSSProperties
     ])
   ] = js.native
   @JSName("scrollToAlignment")
-  var scrollToAlignment_Original: reactLib.reactMod.ReactNs.Validator[reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment] = js.native
+  var scrollToAlignment_Original: reactLib.reactMod.Validator[reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment] = js.native
   @JSName("scrollToIndex")
-  var scrollToIndex_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var scrollToIndex_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   @JSName("scrollTop")
-  var scrollTop_Original: reactLib.reactMod.ReactNs.Requireable[scala.Double] = js.native
+  var scrollTop_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
   @JSName("sortBy")
-  var sortBy_Original: reactLib.reactMod.ReactNs.Requireable[java.lang.String] = js.native
+  var sortBy_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
   @JSName("sortDirection")
-  var sortDirection_Original: reactLib.reactMod.ReactNs.Validator[reactDashVirtualizedLib.distEsTableMod.SortDirectionType] = js.native
+  var sortDirection_Original: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.SortDirectionType] = js.native
   @JSName("sort")
-  var sort_Original: reactLib.reactMod.ReactNs.Requireable[js.Function1[/* params */ Anon_SortBy, scala.Unit]] = js.native
+  var sort_Original: reactLib.reactMod.Requireable[js.Function1[/* params */ Anon_SortBy, scala.Unit]] = js.native
   @JSName("style")
-  var style_Original: reactLib.reactMod.ReactNs.Requireable[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var style_Original: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties] = js.native
   @JSName("tabIndex")
-  var tabIndex_Original: reactLib.reactMod.ReactNs.Requireable[scala.Double] = js.native
+  var tabIndex_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
   @JSName("width")
-  var width_Original: reactLib.reactMod.ReactNs.Validator[scala.Double] = js.native
+  var width_Original: reactLib.reactMod.Validator[scala.Double] = js.native
   def `aria-label`(
     props: js.Object,
     propName: java.lang.String,

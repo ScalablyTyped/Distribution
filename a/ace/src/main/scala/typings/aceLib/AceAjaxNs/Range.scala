@@ -322,45 +322,23 @@ class RangeCls protected () extends Range {
   override def toScreenRange(session: IEditSession): Range = js.native
 }
 
-object Range {
-  @scala.inline
-  def apply(
-    clipRows: (scala.Double, scala.Double) => Range,
-    clone: () => Range,
-    collapseRows: () => Range,
-    compare: (scala.Double, scala.Double) => scala.Double,
-    compareEnd: (scala.Double, scala.Double) => scala.Double,
-    compareInside: (scala.Double, scala.Double) => scala.Double,
-    comparePoint: Range => scala.Double,
-    compareRange: Range => scala.Double,
-    compareStart: (scala.Double, scala.Double) => scala.Double,
-    contains: (scala.Double, scala.Double) => scala.Boolean,
-    containsRange: Range => scala.Boolean,
-    end: Position,
-    endColumn: scala.Double,
-    endRow: scala.Double,
-    extend: (scala.Double, scala.Double) => Range,
-    fromPoints: (Range, Range) => Range,
-    inside: (scala.Double, scala.Double) => scala.Boolean,
-    insideEnd: (scala.Double, scala.Double) => scala.Boolean,
-    insideStart: (scala.Double, scala.Double) => scala.Boolean,
-    intersects: Range => scala.Boolean,
-    isEmpty: () => scala.Boolean,
-    isEnd: (scala.Double, scala.Double) => scala.Boolean,
-    isEqual: Range => scala.Unit,
-    isMultiLine: () => scala.Boolean,
-    isStart: (scala.Double, scala.Double) => scala.Boolean,
-    setEnd: (scala.Double, scala.Double) => scala.Unit,
-    setStart: (scala.Double, scala.Double) => scala.Unit,
-    start: Position,
-    startColumn: scala.Double,
-    startRow: scala.Double,
-    toScreenRange: IEditSession => Range,
-    toString: () => scala.Unit
-  ): Range = {
-    val __obj = js.Dynamic.literal(clipRows = js.Any.fromFunction2(clipRows), clone = js.Any.fromFunction0(clone), collapseRows = js.Any.fromFunction0(collapseRows), compare = js.Any.fromFunction2(compare), compareEnd = js.Any.fromFunction2(compareEnd), compareInside = js.Any.fromFunction2(compareInside), comparePoint = js.Any.fromFunction1(comparePoint), compareRange = js.Any.fromFunction1(compareRange), compareStart = js.Any.fromFunction2(compareStart), contains = js.Any.fromFunction2(contains), containsRange = js.Any.fromFunction1(containsRange), end = end, endColumn = endColumn, endRow = endRow, extend = js.Any.fromFunction2(extend), fromPoints = js.Any.fromFunction2(fromPoints), inside = js.Any.fromFunction2(inside), insideEnd = js.Any.fromFunction2(insideEnd), insideStart = js.Any.fromFunction2(insideStart), intersects = js.Any.fromFunction1(intersects), isEmpty = js.Any.fromFunction0(isEmpty), isEnd = js.Any.fromFunction2(isEnd), isEqual = js.Any.fromFunction1(isEqual), isMultiLine = js.Any.fromFunction0(isMultiLine), isStart = js.Any.fromFunction2(isStart), setEnd = js.Any.fromFunction2(setEnd), setStart = js.Any.fromFunction2(setStart), start = start, startColumn = startColumn, startRow = startRow, toScreenRange = js.Any.fromFunction1(toScreenRange), toString = js.Any.fromFunction0(toString))
-  
-    __obj.asInstanceOf[Range]
-  }
+/**
+  * Creates a new `Range` object with the given starting and ending row and column points.
+  * @param startRow The starting row
+  * @param startColumn The starting column
+  * @param endRow The ending row
+  * @param endColumn The ending column
+  **/
+@JSGlobal("AceAjax.Range")
+@js.native
+object Range
+  extends org.scalablytyped.runtime.Instantiable4[
+      /* startRow */ scala.Double, 
+      /* startColumn */ scala.Double, 
+      /* endRow */ scala.Double, 
+      /* endColumn */ scala.Double, 
+      Range
+    ] {
+  def fromPoints(pos1: aceLib.AceAjaxNs.Position, pos2: aceLib.AceAjaxNs.Position): aceLib.AceAjaxNs.Range = js.native
 }
 

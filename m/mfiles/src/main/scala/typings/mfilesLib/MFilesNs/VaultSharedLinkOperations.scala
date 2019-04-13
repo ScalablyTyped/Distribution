@@ -21,3 +21,8 @@ class VaultSharedLinkOperations ()
   override def GetSharedLinksByObject(ObjID: mfilesLib.IObjID): mfilesLib.ISharedLinkInfos = js.native
 }
 
+@JSGlobal("MFiles.VaultSharedLinkOperations")
+@js.native
+object VaultSharedLinkOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultSharedLinkOperations]
+

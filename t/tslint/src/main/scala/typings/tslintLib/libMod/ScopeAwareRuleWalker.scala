@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ScopeAwareRuleWalker[T] protected ()
   extends tslintLib.libLanguageWalkerMod.ScopeAwareRuleWalker[T] {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
 }
 

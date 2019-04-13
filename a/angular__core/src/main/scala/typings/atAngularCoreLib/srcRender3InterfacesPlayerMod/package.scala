@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcRender3InterfacesPlayerMod {
+  type ComponentInstance = js.Object
+  type DirectiveInstance = js.Object
   type PlayerFactoryBuildFn = js.Function5[
     /* element */ stdLib.HTMLElement, 
     /* type */ BindingType, 

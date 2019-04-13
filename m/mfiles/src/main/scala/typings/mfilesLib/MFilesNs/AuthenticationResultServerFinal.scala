@@ -13,3 +13,8 @@ class AuthenticationResultServerFinal ()
   override val ServerConnection: MFServerConnection = js.native
 }
 
+@JSGlobal("MFiles.AuthenticationResultServerFinal")
+@js.native
+object AuthenticationResultServerFinal
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IAuthenticationResultServerFinal]
+

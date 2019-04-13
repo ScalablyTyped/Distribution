@@ -119,10 +119,6 @@ object PlotsNs extends js.Object {
   class Waterfall[X, Y] ()
     extends plottableLib.buildSrcPlotsMod.Waterfall[X, Y]
   
-  val BarAlignment: plottableLib.Anon_EndMiddle = js.native
-  val BarOrientation: plottableLib.Anon_Horizontal = js.native
-  val CurveName: plottableLib.Anon_Basis = js.native
-  val LabelsPosition: plottableLib.Anon_End = js.native
   @JSName("Animator")
   @js.native
   object AnimatorNs extends js.Object {
@@ -151,6 +147,44 @@ object PlotsNs extends js.Object {
       */
     var _LABEL_MARGIN_INSIDE_BAR: scala.Double = js.native
     var _SINGLE_BAR_DIMENSION_RATIO: scala.Double = js.native
+  }
+  
+  @js.native
+  object BarAlignment extends js.Object {
+    var end: plottableLib.plottableLibStrings.end = js.native
+    var middle: plottableLib.plottableLibStrings.middle = js.native
+    var start: plottableLib.plottableLibStrings.start = js.native
+  }
+  
+  @js.native
+  object BarOrientation extends js.Object {
+    var horizontal: plottableLib.plottableLibStrings.horizontal = js.native
+    var vertical: plottableLib.plottableLibStrings.vertical = js.native
+  }
+  
+  @js.native
+  object CurveName extends js.Object {
+    var basis: plottableLib.plottableLibStrings.basis = js.native
+    var basisClosed: plottableLib.plottableLibStrings.basisClosed = js.native
+    var basisOpen: plottableLib.plottableLibStrings.basisOpen = js.native
+    var bundle: plottableLib.plottableLibStrings.bundle = js.native
+    var cardinal: plottableLib.plottableLibStrings.cardinal = js.native
+    var cardinalClosed: plottableLib.plottableLibStrings.cardinalClosed = js.native
+    var cardinalOpen: plottableLib.plottableLibStrings.cardinalOpen = js.native
+    var linear: plottableLib.plottableLibStrings.linear = js.native
+    var linearClosed: plottableLib.plottableLibStrings.linearClosed = js.native
+    var monotone: plottableLib.plottableLibStrings.monotone = js.native
+    var step: plottableLib.plottableLibStrings.step = js.native
+    var stepAfter: plottableLib.plottableLibStrings.stepAfter = js.native
+    var stepBefore: plottableLib.plottableLibStrings.stepBefore = js.native
+  }
+  
+  @js.native
+  object LabelsPosition extends js.Object {
+    var end: plottableLib.plottableLibStrings.end = js.native
+    var middle: plottableLib.plottableLibStrings.middle = js.native
+    var outside: plottableLib.plottableLibStrings.outside = js.native
+    var start: plottableLib.plottableLibStrings.start = js.native
   }
   
   /* static members */

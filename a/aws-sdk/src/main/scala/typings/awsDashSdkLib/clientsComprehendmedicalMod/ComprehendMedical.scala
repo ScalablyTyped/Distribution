@@ -9,76 +9,52 @@ import scala.scalajs.js.annotation._
 trait ComprehendMedical
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_ComprehendMedical: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.ClientConfiguration = js.native
+  var config_ComprehendMedical: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     *  Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information .
     */
-  def detectEntities(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detectEntities(): awsDashSdkLib.libRequestMod.Request[DetectEntitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detectEntities(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesResponse, 
+      /* data */ DetectEntitiesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetectEntitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     *  Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information .
     */
-  def detectEntities(params: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detectEntities(params: DetectEntitiesRequest): awsDashSdkLib.libRequestMod.Request[DetectEntitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detectEntities(
-    params: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesRequest,
+    params: DetectEntitiesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesResponse, 
+      /* data */ DetectEntitiesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectEntitiesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetectEntitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     *  Inspects the clinical text for personal health information (PHI) entities and entity category, location, and confidence score on that information.
     */
-  def detectPHI(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detectPHI(): awsDashSdkLib.libRequestMod.Request[DetectPHIResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detectPHI(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIResponse, 
+      /* data */ DetectPHIResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetectPHIResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     *  Inspects the clinical text for personal health information (PHI) entities and entity category, location, and confidence score on that information.
     */
-  def detectPHI(params: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def detectPHI(params: DetectPHIRequest): awsDashSdkLib.libRequestMod.Request[DetectPHIResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def detectPHI(
-    params: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIRequest,
+    params: DetectPHIRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIResponse, 
+      /* data */ DetectPHIResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.DetectPHIResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DetectPHIResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

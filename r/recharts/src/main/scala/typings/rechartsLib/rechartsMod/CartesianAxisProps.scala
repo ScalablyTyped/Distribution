@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
   var tick: js.UndefOr[
-    scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactNs.ReactElement[_]
+    scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement[_]
   ] = js.undefined
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
   var tickLine: js.UndefOr[scala.Boolean | js.Object] = js.undefined
@@ -54,7 +54,7 @@ object CartesianAxisProps {
     onTouchStart: RechartsFunction = null,
     orientation: rechartsLib.rechartsLibStrings.top | rechartsLib.rechartsLibStrings.bottom | rechartsLib.rechartsLibStrings.left | rechartsLib.rechartsLibStrings.right = null,
     stroke: java.lang.String = null,
-    tick: scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    tick: scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactElement[_] = null,
     tickFormatter: TickFormatterFunction = null,
     tickLine: scala.Boolean | js.Object = null,
     tickSize: scala.Int | scala.Double = null,

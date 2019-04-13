@@ -9,8 +9,14 @@ trait RowMetadata[T] extends js.Object {
   /**
   		 * Metadata related to individual columns
   		 */
-  var columns: /* import warning: ImportType.apply Failed type conversion: {[index: string] : slickgrid.Slick.ColumnMetadata<T>, [index: number] : slickgrid.Slick.ColumnMetadata<T>} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[index: string] : slickgrid.Slick.ColumnMetadata<T>, [index: number] : slickgrid.Slick.ColumnMetadata<T>} */ js.Any
+  var columns: js.UndefOr[
+    (/**
+  			 * Metadata indexed by column id
+  			 */
+  org.scalablytyped.runtime.StringDictionary[ColumnMetadata[T]]) with (/**
+  			 * Metadata indexed by column index
+  			 */
+  org.scalablytyped.runtime.NumberDictionary[ColumnMetadata[T]])
   ] = js.undefined
   /**
   		 * One or more (space-separated) CSS classes to be added to the entire row.
@@ -29,7 +35,13 @@ trait RowMetadata[T] extends js.Object {
 object RowMetadata {
   @scala.inline
   def apply[T](
-    columns: /* import warning: ImportType.apply Failed type conversion: {[index: string] : slickgrid.Slick.ColumnMetadata<T>, [index: number] : slickgrid.Slick.ColumnMetadata<T>} */ js.Any = null,
+    columns: (/**
+  			 * Metadata indexed by column id
+  			 */
+  org.scalablytyped.runtime.StringDictionary[ColumnMetadata[T]]) with (/**
+  			 * Metadata indexed by column index
+  			 */
+  org.scalablytyped.runtime.NumberDictionary[ColumnMetadata[T]]) = null,
     cssClasses: java.lang.String = null,
     focusable: js.UndefOr[scala.Boolean] = js.undefined,
     selectable: js.UndefOr[scala.Boolean] = js.undefined

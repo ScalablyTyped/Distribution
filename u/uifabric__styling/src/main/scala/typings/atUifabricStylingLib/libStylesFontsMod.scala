@@ -50,17 +50,17 @@ object libStylesFontsMod extends js.Object {
   @js.native
   object LocalizedFontFamiliesNs extends js.Object {
     val Arabic: java.lang.String = js.native
-    val ChineseSimplified: /* 'Microsoft Yahei UI', Verdana, Simsun */ java.lang.String = js.native
-    val ChineseTraditional: /* 'Microsoft Jhenghei UI', Pmingliu */ java.lang.String = js.native
+    val ChineseSimplified: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteMicrosoft Yahei UI_quote, Verdana, Simsun` = js.native
+    val ChineseTraditional: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteMicrosoft Jhenghei UI_quote, Pmingliu` = js.native
     val Cyrillic: java.lang.String = js.native
     val EastEuropean: java.lang.String = js.native
     val Greek: java.lang.String = js.native
     val Hebrew: java.lang.String = js.native
-    val Hindi: /* 'Nirmala UI' */ java.lang.String = js.native
-    val Japanese: /* 'Yu Gothic UI', 'Meiryo UI', Meiryo, 'MS Pgothic', Osaka */ java.lang.String = js.native
-    val Korean: /* 'Malgun Gothic', Gulim */ java.lang.String = js.native
+    val Hindi: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteNirmala UI_quote` = js.native
+    val Japanese: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteYu Gothic UI_quote, _quoteMeiryo UI_quote, Meiryo, _quoteMS Pgothic_quote, Osaka` = js.native
+    val Korean: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteMalgun Gothic_quote, Gulim` = js.native
     val Selawik: java.lang.String = js.native
-    val Thai: /* 'Leelawadee UI Web', 'Kmer UI' */ java.lang.String = js.native
+    val Thai: atUifabricStylingLib.atUifabricStylingLibStrings.`_quoteLeelawadee UI Web_quote, _quoteKmer UI_quote` = js.native
     val Vietnamese: java.lang.String = js.native
     val WestEuropean: java.lang.String = js.native
   }
@@ -68,15 +68,15 @@ object libStylesFontsMod extends js.Object {
   @JSName("LocalizedFontNames")
   @js.native
   object LocalizedFontNamesNs extends js.Object {
-    val Arabic: /* Segoe UI Web (Arabic) */ java.lang.String = js.native
-    val Cyrillic: /* Segoe UI Web (Cyrillic) */ java.lang.String = js.native
-    val EastEuropean: /* Segoe UI Web (East European) */ java.lang.String = js.native
-    val Greek: /* Segoe UI Web (Greek) */ java.lang.String = js.native
-    val Hebrew: /* Segoe UI Web (Hebrew) */ java.lang.String = js.native
-    val Selawik: /* Selawik Web */ java.lang.String = js.native
-    val Thai: /* Leelawadee UI Web */ java.lang.String = js.native
-    val Vietnamese: /* Segoe UI Web (Vietnamese) */ java.lang.String = js.native
-    val WestEuropean: /* Segoe UI Web (West European) */ java.lang.String = js.native
+    val Arabic: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Arabic)` = js.native
+    val Cyrillic: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Cyrillic)` = js.native
+    val EastEuropean: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (East European)` = js.native
+    val Greek: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Greek)` = js.native
+    val Hebrew: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Hebrew)` = js.native
+    val Selawik: atUifabricStylingLib.atUifabricStylingLibStrings.`Selawik Web` = js.native
+    val Thai: atUifabricStylingLib.atUifabricStylingLibStrings.`Leelawadee UI Web` = js.native
+    val Vietnamese: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (Vietnamese)` = js.native
+    val WestEuropean: atUifabricStylingLib.atUifabricStylingLibStrings.`Segoe UI Web (West European)` = js.native
   }
   
 }

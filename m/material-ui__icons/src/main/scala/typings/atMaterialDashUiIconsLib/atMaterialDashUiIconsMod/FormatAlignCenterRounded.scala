@@ -16,9 +16,9 @@ class FormatAlignCenterRounded protected ()
 @JSImport("@material-ui/icons", "FormatAlignCenterRounded")
 @js.native
 class FormatAlignCenterRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

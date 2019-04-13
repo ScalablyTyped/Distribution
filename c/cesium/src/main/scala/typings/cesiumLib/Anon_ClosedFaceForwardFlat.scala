@@ -10,7 +10,7 @@ trait Anon_ClosedFaceForwardFlat extends js.Object {
   var faceForward: js.UndefOr[scala.Boolean] = js.undefined
   var flat: js.UndefOr[scala.Boolean] = js.undefined
   var fragmentShaderSource: js.UndefOr[java.lang.String] = js.undefined
-  var renderState: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.RenderState] = js.undefined
+  var renderState: js.UndefOr[cesiumLib.cesiumMod.RenderState] = js.undefined
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
   var vertexShaderSource: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -22,7 +22,7 @@ object Anon_ClosedFaceForwardFlat {
     faceForward: js.UndefOr[scala.Boolean] = js.undefined,
     flat: js.UndefOr[scala.Boolean] = js.undefined,
     fragmentShaderSource: java.lang.String = null,
-    renderState: cesiumLib.cesiumMod.CesiumNs.RenderState = null,
+    renderState: cesiumLib.cesiumMod.RenderState = null,
     translucent: js.UndefOr[scala.Boolean] = js.undefined,
     vertexShaderSource: java.lang.String = null
   ): Anon_ClosedFaceForwardFlat = {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MailParser ()
   extends nodeLib.streamMod.Transform {
-  def this(options: nodeLib.streamMod.internalNs.TransformOptions) = this()
+  def this(options: nodeLib.streamMod.TransformOptions) = this()
   @JSName("on")
   def on_data(
     event: mailparserLib.mailparserLibStrings.data,

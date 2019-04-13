@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CodeBuild ()
-  extends awsDashSdkLib.clientsCodebuildMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCodebuildMod.^ {
+  def this(options: awsDashSdkLib.clientsCodebuildMod.ClientConfiguration) = this()
 }
 

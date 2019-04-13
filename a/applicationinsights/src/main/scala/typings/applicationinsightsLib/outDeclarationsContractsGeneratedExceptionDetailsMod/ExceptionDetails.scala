@@ -28,7 +28,7 @@ trait ExceptionDetails extends js.Object {
   /**
     * List of stack frames. Either stack or parsedStack should have a value.
     */
-  var parsedStack: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedStackFrameMod.namespaced]
+  var parsedStack: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedStackFrameMod.^]
   /**
     * Text describing the stack. Either stack or parsedStack should have a value.
     */
@@ -46,7 +46,7 @@ object ExceptionDetails {
     id: scala.Double,
     message: java.lang.String,
     outerId: scala.Double,
-    parsedStack: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedStackFrameMod.namespaced],
+    parsedStack: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedStackFrameMod.^],
     stack: java.lang.String,
     typeName: java.lang.String
   ): ExceptionDetails = {

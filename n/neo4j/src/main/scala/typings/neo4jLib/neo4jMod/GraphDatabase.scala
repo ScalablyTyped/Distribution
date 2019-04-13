@@ -67,7 +67,7 @@ class GraphDatabase protected () extends js.Object {
     * @param {CypherOptions}   options     Options.
     * @param {ResultCallback}  callback    A callback.
     */
-  def cypher(options: CypherOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.requestNs.Request = js.native
+  def cypher(options: CypherOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.Request = js.native
   /**
     * Drops a constraint.
     * @param {ConstraintOptions}   options   Options.
@@ -138,6 +138,6 @@ class GraphDatabase protected () extends js.Object {
     * @param {ResultCallback}  callback    A callback.
     * @return {Request} The HTTP request.
     */
-  def http(options: HttpOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.requestNs.Request = js.native
+  def http(options: HttpOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.Request = js.native
 }
 

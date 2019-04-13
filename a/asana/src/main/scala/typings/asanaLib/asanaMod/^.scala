@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("asana", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Client: asanaLib.asanaMod.asanaNs.ClientStatic = js.native
-  var Dispatcher: asanaLib.asanaMod.asanaNs.DispatcherStatic = js.native
+  var Client: ClientStatic = js.native
+  var Dispatcher: DispatcherStatic = js.native
   var VERSION: java.lang.String = js.native
 }
 

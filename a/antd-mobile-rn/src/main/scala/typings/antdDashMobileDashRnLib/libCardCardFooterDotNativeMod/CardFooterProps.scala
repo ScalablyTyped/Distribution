@@ -16,8 +16,8 @@ trait CardFooterProps
 object CardFooterProps {
   @scala.inline
   def apply(
-    content: reactLib.reactMod.ReactNs.ReactNode = null,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: js.Any = null
   ): CardFooterProps = {

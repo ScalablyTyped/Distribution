@@ -9,12 +9,12 @@ package object buildSrcStorageMod {
   type BucketCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* bucket */ js.UndefOr[atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket | scala.Null], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
+    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
     scala.Unit
   ]
   type CreateBucketResponse = js.Tuple2[
     atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, 
-    requestLib.requestMod.requestNs.Response
+    requestLib.requestMod.Response
   ]
   type GetBucketsCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
@@ -25,8 +25,8 @@ package object buildSrcStorageMod {
   type GetServiceAccountCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* serviceAccount */ js.UndefOr[ServiceAccount], 
-    /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
+    /* apiResponse */ js.UndefOr[requestLib.requestMod.Response], 
     scala.Unit
   ]
-  type GetServiceAccountResponse = js.Tuple2[ServiceAccount, requestLib.requestMod.requestNs.Response]
+  type GetServiceAccountResponse = js.Tuple2[ServiceAccount, requestLib.requestMod.Response]
 }

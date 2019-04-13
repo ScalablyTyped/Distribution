@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object reactDashVerticalDashTimelineDashComponentLibComponents {
   @scala.inline
-  def VerticalTimeline: reactLib.reactMod.ReactNs.ComponentType[
+  def VerticalTimeline: reactLib.reactMod.ComponentType[
     reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineProps
-  ] = js.constructorOf[reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimeline].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimeline].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineProps]]
   @scala.inline
-  def VerticalTimelineElement: reactLib.reactMod.ReactNs.ComponentType[
+  def VerticalTimelineElement: reactLib.reactMod.ComponentType[
     reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps
-  ] = js.constructorOf[reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElement].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElement].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps]]
   @scala.inline
   def VerticalTimelineElementProps: reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps.type = reactDashVerticalDashTimelineDashComponentLib.reactDashVerticalDashTimelineDashComponentMod.VerticalTimelineElementProps

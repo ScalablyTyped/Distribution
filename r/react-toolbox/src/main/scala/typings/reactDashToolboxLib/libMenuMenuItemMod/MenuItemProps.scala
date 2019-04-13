@@ -14,7 +14,7 @@ trait MenuItemProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * If true, the item will be displayed as disabled and is not selectable.
     * @default false
@@ -23,7 +23,7 @@ trait MenuItemProps
   /**
     * Icon font key string or Element to display in the right side of the option.
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Transferred from the Menu component for selectable menus. Indicates if it's the current active option.
     * @default false
@@ -47,11 +47,11 @@ object MenuItemProps {
   @scala.inline
   def apply(
     caption: java.lang.String,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    icon: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -76,7 +76,7 @@ object MenuItemProps {
     onTouchStart: js.Function = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     shortcut: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: MenuItemTheme = null,
     value: js.Any = null
   ): MenuItemProps = {

@@ -18,3 +18,8 @@ class VaultExternalObjectOperations ()
   ): mfilesLib.IObjectVersionAndProperties = js.native
 }
 
+@JSGlobal("MFiles.VaultExternalObjectOperations")
+@js.native
+object VaultExternalObjectOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultExternalObjectOperations]
+

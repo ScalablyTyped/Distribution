@@ -15,7 +15,7 @@ package object libInjectSheetMod {
   type Overwrite[T, U] = (Omit[T, java.lang.String]) with U
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[
     /* component */ js.Any, 
-    reactLib.reactMod.ReactNs.ComponentType[
+    reactLib.reactMod.ComponentType[
       (Omit[
         reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[_, PropsOf[_]], 
         java.lang.String

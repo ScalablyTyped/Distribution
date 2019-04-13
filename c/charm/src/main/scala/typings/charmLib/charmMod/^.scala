@@ -16,7 +16,7 @@ object ^ extends js.Object {
     * You can also pass `process` in which case
     * `process.stdin` and `process.stdout` will be used.
     */
-  def apply(): charmLib.charmMod.charmNs.CharmInstance = js.native
-  def apply(param: charmLib.charmMod.charmNs.CharmAnyStream): charmLib.charmMod.charmNs.CharmInstance = js.native
+  def apply(): CharmInstance = js.native
+  def apply(param: CharmAnyStream): CharmInstance = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Nedb
   extends nodeLib.eventsMod.EventEmitter {
-  var persistence: nedbLib.nedbMod.NedbNs.Persistence = js.native
+  var persistence: Persistence = js.native
   @JSName("addListener")
   def addListener_compactiondone(event: nedbLib.nedbLibStrings.compactionDOTdone, listener: js.Function0[scala.Unit]): this.type = js.native
   /**
@@ -16,7 +16,7 @@ trait Nedb
     */
   def addToIndexes[T](doc: T): scala.Unit = js.native
   def addToIndexes[T](doc: js.Array[T]): scala.Unit = js.native
-  def count(query: js.Any): nedbLib.nedbMod.NedbNs.CursorCount = js.native
+  def count(query: js.Any): CursorCount = js.native
   /**
     * Count all documents matching the query
     * @param query MongoDB-style query
@@ -28,12 +28,9 @@ trait Nedb
     * We use an async API for consistency with the rest of the code
     * @param cb Optional callback, signature: err
     */
-  def ensureIndex(options: nedbLib.nedbMod.NedbNs.EnsureIndexOptions): scala.Unit = js.native
-  def ensureIndex(
-    options: nedbLib.nedbMod.NedbNs.EnsureIndexOptions,
-    cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
-  ): scala.Unit = js.native
-  def find[T](query: js.Any): nedbLib.nedbMod.NedbNs.Cursor[T] = js.native
+  def ensureIndex(options: EnsureIndexOptions): scala.Unit = js.native
+  def ensureIndex(options: EnsureIndexOptions, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def find[T](query: js.Any): Cursor[T] = js.native
   /**
     * Find all documents matching the query
     * If no callback is passed, we return the cursor so that user can limit, skip and finally exec
@@ -43,7 +40,7 @@ trait Nedb
     query: js.Any,
     callback: js.Function2[/* err */ stdLib.Error, /* documents */ js.Array[T], scala.Unit]
   ): scala.Unit = js.native
-  def find[T](query: js.Any, projection: T): nedbLib.nedbMod.NedbNs.Cursor[T] = js.native
+  def find[T](query: js.Any, projection: T): Cursor[T] = js.native
   /**
     * Find all documents matching the query
     * If no callback is passed, we return the cursor so that user can limit, skip and finally exec
@@ -122,10 +119,10 @@ trait Nedb
     *
     * @api private Use Datastore.remove which has the same signature
     */
-  def remove(query: js.Any, options: nedbLib.nedbMod.NedbNs.RemoveOptions): scala.Unit = js.native
+  def remove(query: js.Any, options: RemoveOptions): scala.Unit = js.native
   def remove(
     query: js.Any,
-    options: nedbLib.nedbMod.NedbNs.RemoveOptions,
+    options: RemoveOptions,
     cb: js.Function2[/* err */ stdLib.Error, /* n */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -158,11 +155,11 @@ trait Nedb
     * @api private Use Datastore.update which has the same signature
     */
   def update(query: js.Any, updateQuery: js.Any): scala.Unit = js.native
-  def update(query: js.Any, updateQuery: js.Any, options: nedbLib.nedbMod.NedbNs.UpdateOptions): scala.Unit = js.native
+  def update(query: js.Any, updateQuery: js.Any, options: UpdateOptions): scala.Unit = js.native
   def update(
     query: js.Any,
     updateQuery: js.Any,
-    options: nedbLib.nedbMod.NedbNs.UpdateOptions,
+    options: UpdateOptions,
     cb: js.Function3[
       /* err */ stdLib.Error, 
       /* numberOfUpdated */ scala.Double, 
@@ -173,7 +170,7 @@ trait Nedb
   def update[T](
     query: js.Any,
     updateQuery: js.Any,
-    options: nedbLib.nedbMod.NedbNs.UpdateOptions,
+    options: UpdateOptions,
     cb: js.Function4[
       /* err */ stdLib.Error, 
       /* numberOfUpdated */ scala.Double, 
@@ -205,6 +202,6 @@ trait Nedb
   @JSName("update")
   def update_T[T](query: js.Any, updateQuery: js.Any): scala.Unit = js.native
   @JSName("update")
-  def update_T[T](query: js.Any, updateQuery: js.Any, options: nedbLib.nedbMod.NedbNs.UpdateOptions): scala.Unit = js.native
+  def update_T[T](query: js.Any, updateQuery: js.Any, options: UpdateOptions): scala.Unit = js.native
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MediaConnect ()
-  extends awsDashSdkLib.clientsMediaconnectMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMediaconnectMod.^ {
+  def this(options: awsDashSdkLib.clientsMediaconnectMod.ClientConfiguration) = this()
 }
 

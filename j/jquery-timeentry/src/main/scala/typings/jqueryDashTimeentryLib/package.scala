@@ -11,4 +11,5 @@ package object jqueryDashTimeentryLib {
     /* value */ js.UndefOr[js.Any], 
     js.Any
   ]
+  type ITimeEntryLocales = org.scalablytyped.runtime.StringDictionary[ITimeEntryRegionalOptions]
 }

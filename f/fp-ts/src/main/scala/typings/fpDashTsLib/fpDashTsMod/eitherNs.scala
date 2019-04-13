@@ -20,7 +20,7 @@ object eitherNs extends js.Object {
     def this(value: A) = this()
   }
   
-  val URI: /* Either */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Either = js.native
   val either: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libExtendMod.Extend2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libChainRecMod.ChainRec2[fpDashTsLib.libEitherMod.URI] = js.native
   def fromNullable[L](defaultValue: L): js.Function1[/* a */ js.UndefOr[js.Any | scala.Null], fpDashTsLib.libEitherMod.Either[L, _]] = js.native
   def fromOption[L](defaultValue: L): js.Function1[/* fa */ fpDashTsLib.libOptionMod.Option[_], fpDashTsLib.libEitherMod.Either[L, _]] = js.native

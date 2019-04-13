@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("sshpk", "FingerprintFormatError")
 @js.native
 class FingerprintFormatError protected ()
-  extends sshpkLib.sshpkMod.SshPKNs.FingerprintFormatError {
-  def this(fp: sshpkLib.sshpkMod.SshPKNs.Fingerprint, format: java.lang.String) = this()
+  extends stdLib.Error {
+  def this(fp: Fingerprint, format: java.lang.String) = this()
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

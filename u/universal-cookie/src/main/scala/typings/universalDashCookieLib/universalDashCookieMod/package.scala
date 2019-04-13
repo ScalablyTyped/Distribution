@@ -12,4 +12,5 @@ package object universalDashCookieMod {
     /* options */ CookieOpts, 
     scala.Unit
   ]
+  type CookiesByName = org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }

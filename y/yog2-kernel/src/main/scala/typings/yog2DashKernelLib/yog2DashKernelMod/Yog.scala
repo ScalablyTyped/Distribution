@@ -11,9 +11,9 @@ trait Yog extends js.Object {
   var RAL_Original: yog2DashKernelLib.Anon_AppendExtPath = js.native
   var ROOT_PATH: java.lang.String = js.native
   @JSName("_")
-  var __Original: yog2DashKernelLib.Anon_ with lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
+  var __Original: lodashLib.lodashMod.LoDashStatic = js.native
   @JSName("app")
-  var app_Original: expressLib.expressMod.eNs.Express = js.native
+  var app_Original: expressLib.expressMod.Express = js.native
   @JSName("express")
   var express_Original: (js.Function0[
     expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Express
@@ -100,7 +100,7 @@ trait Yog extends js.Object {
     * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
     * upperFirst, value, and words.
     **/
-  def `_`[T](value: T): lodashLib.lodashMod.underscoreNs.LoDashImplicitWrapper[T] = js.native
+  def `_`[T](value: T): lodashLib.lodashMod.LoDashImplicitWrapper[T] = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
@@ -118,11 +118,8 @@ trait Yog extends js.Object {
     res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
   ): js.Any = js.native
   def app(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
-  def bootstrap(option: yog2DashKernelLib.yog2DashKernelMod.yogNs.YogBootstrapOption): scala.Unit = js.native
-  def bootstrap(
-    option: yog2DashKernelLib.yog2DashKernelMod.yogNs.YogBootstrapOption,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def bootstrap(option: YogBootstrapOption): scala.Unit = js.native
+  def bootstrap(option: YogBootstrapOption, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def express(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Express = js.native
   def ralP[T](name: java.lang.String): js.Promise[T] = js.native
   def ralP[T](name: java.lang.String, options: js.Object): js.Promise[T] = js.native

@@ -60,7 +60,7 @@ trait Server
       /* proxyReq */ nodeLib.httpMod.ClientRequest, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
-      /* options */ httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions, 
+      /* options */ ServerOptions, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -71,7 +71,7 @@ trait Server
       /* proxyReq */ nodeLib.httpMod.ClientRequest, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* socket */ nodeLib.netMod.Socket, 
-      /* options */ httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions, 
+      /* options */ ServerOptions, 
       /* head */ js.Any, 
       scala.Unit
     ]
@@ -105,15 +105,11 @@ trait Server
     * @param options - Additionnal options.
     */
   def web(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): scala.Unit = js.native
+  def web(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse, options: ServerOptions): scala.Unit = js.native
   def web(
     req: nodeLib.httpMod.IncomingMessage,
     res: nodeLib.httpMod.ServerResponse,
-    options: httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions
-  ): scala.Unit = js.native
-  def web(
-    req: nodeLib.httpMod.IncomingMessage,
-    res: nodeLib.httpMod.ServerResponse,
-    options: httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions,
+    options: ServerOptions,
     callback: httpDashProxyLib.ErrorCallback
   ): scala.Unit = js.native
   /**
@@ -124,11 +120,6 @@ trait Server
     * @param options - Additionnal options.
     */
   def ws(req: nodeLib.httpMod.IncomingMessage, socket: js.Any, head: js.Any): scala.Unit = js.native
-  def ws(
-    req: nodeLib.httpMod.IncomingMessage,
-    socket: js.Any,
-    head: js.Any,
-    options: httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions
-  ): scala.Unit = js.native
+  def ws(req: nodeLib.httpMod.IncomingMessage, socket: js.Any, head: js.Any, options: ServerOptions): scala.Unit = js.native
 }
 

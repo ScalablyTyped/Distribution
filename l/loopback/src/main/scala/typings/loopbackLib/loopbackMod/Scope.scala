@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Scope")
 @js.native
-class Scope ()
-  extends loopbackLib.loopbackMod.lNs.Scope
+class Scope () extends js.Object
 
 /* static members */
 @JSImport("loopback", "Scope")
@@ -38,7 +37,7 @@ object Scope extends js.Object {
     accessType: java.lang.String,
     callback: js.Function2[
       /* err */ java.lang.String | stdLib.Error, 
-      /* result */ loopbackLib.loopbackMod.lNs.AccessRequest, 
+      /* result */ loopbackLib.loopbackMod.AccessRequest, 
       scala.Unit
     ]
   ): scala.Unit = js.native

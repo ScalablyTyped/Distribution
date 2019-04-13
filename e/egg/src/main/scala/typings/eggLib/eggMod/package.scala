@@ -15,6 +15,11 @@ package object eggMod {
   */
   type EggEnvType = _EggEnvType | java.lang.String
   type EggHttpClient = urllibLib.urllibMod.HttpClient2
+  type EggLoader = eggDashCoreLib.eggDashCoreMod.EggLoader[
+    eggDashCoreLib.eggDashCoreMod.EggCore[eggDashCoreLib.eggDashCoreMod.PlainObject[js.Any]], 
+    js.Any
+  ]
+  type EggLoaderOptions = eggDashCoreLib.eggDashCoreMod.EggLoaderOptions
   type EggPluginItem = IEggPluginItem | scala.Boolean
   type IApplicationLocals = PlainObject[js.Any]
   type IContextLocals = PlainObject[js.Any]
@@ -24,6 +29,8 @@ package object eggMod {
   type IgnoreItem = java.lang.String | stdLib.RegExp | (js.Function1[/* ctx */ eggDashViewLib.eggMod.Context, scala.Boolean])
   type IgnoreOrMatch = IgnoreItem | js.Array[IgnoreItem]
   type LoggerLevel = eggDashLoggerLib.eggDashLoggerMod.LoggerLevel
+  // plain object
+  type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
   type PowerPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ U in keyof T ]:? T[U]}
     */ eggLib.eggLibStrings.PowerPartial with T

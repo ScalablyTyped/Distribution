@@ -10,23 +10,15 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     dir: java.lang.String,
-    cb: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* made */ mkdirpLib.mkdirpMod.mkdirpNs.Made, 
-      scala.Unit
-    ]
+    cb: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* made */ Made, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     dir: java.lang.String,
-    opts: mkdirpLib.mkdirpMod.mkdirpNs.Mode | mkdirpLib.mkdirpMod.mkdirpNs.Options,
-    cb: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* made */ mkdirpLib.mkdirpMod.mkdirpNs.Made, 
-      scala.Unit
-    ]
+    opts: Mode | Options,
+    cb: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* made */ Made, scala.Unit]
   ): scala.Unit = js.native
-  def sync(dir: java.lang.String): mkdirpLib.mkdirpMod.mkdirpNs.Made = js.native
-  def sync(dir: java.lang.String, opts: mkdirpLib.mkdirpMod.mkdirpNs.Mode): mkdirpLib.mkdirpMod.mkdirpNs.Made = js.native
-  def sync(dir: java.lang.String, opts: mkdirpLib.mkdirpMod.mkdirpNs.OptionsSync): mkdirpLib.mkdirpMod.mkdirpNs.Made = js.native
+  def sync(dir: java.lang.String): Made = js.native
+  def sync(dir: java.lang.String, opts: Mode): Made = js.native
+  def sync(dir: java.lang.String, opts: OptionsSync): Made = js.native
 }
 

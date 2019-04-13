@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Lambda extends js.Object {
-  val LambdaNs: Anon_TypesReadOnly = js.native
-  var Types: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.LambdaNs.Types] = js.native
-  val TypesNs: this.type = js.native
+  var lambda: Anon_ResourceArn
+}
+
+object Anon_Lambda {
+  @scala.inline
+  def apply(lambda: Anon_ResourceArn): Anon_Lambda = {
+    val __obj = js.Dynamic.literal(lambda = lambda)
+  
+    __obj.asInstanceOf[Anon_Lambda]
+  }
 }
 

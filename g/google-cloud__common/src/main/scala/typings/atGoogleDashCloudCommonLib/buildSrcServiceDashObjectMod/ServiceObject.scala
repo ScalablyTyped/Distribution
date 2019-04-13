@@ -59,9 +59,9 @@ class ServiceObject[T] protected ()
     * @param {?error} callback.err - An error returned while making this request.
     * @param {object} callback.apiResponse - The full API response.
     */
-  def delete(): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
+  def delete(): js.Promise[js.Array[requestLib.requestMod.Response]] = js.native
   def delete(callback: DeleteCallback): scala.Unit = js.native
-  def delete(options: DeleteOptions): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
+  def delete(options: DeleteOptions): js.Promise[js.Array[requestLib.requestMod.Response]] = js.native
   def delete(options: DeleteOptions, callback: DeleteCallback): scala.Unit = js.native
   /**
     * Check if the object exists.
@@ -124,7 +124,7 @@ class ServiceObject[T] protected ()
     * @param {object} reqOpts - Request options that are passed to `request`.
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     */
-  def requestStream(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): requestLib.requestMod.requestNs.Request = js.native
+  def requestStream(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): requestLib.requestMod.Request = js.native
   /**
     * Set the metadata for this object.
     *

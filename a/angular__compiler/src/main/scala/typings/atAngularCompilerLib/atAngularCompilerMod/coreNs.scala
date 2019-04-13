@@ -225,20 +225,5 @@ object coreNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.ViewFlags with scala.Double] = js.native
   }
   
-  type ArgumentType = atAngularCompilerLib.srcCoreMod.ArgumentType
-  type AttributeMarker = atAngularCompilerLib.srcCoreMod.AttributeMarker
-  type BindingFlags = atAngularCompilerLib.srcCoreMod.BindingFlags
-  type ChangeDetectionStrategy = atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy
-  type DepFlags = atAngularCompilerLib.srcCoreMod.DepFlags
-  type InjectFlags = atAngularCompilerLib.srcCoreMod.InjectFlags
-  type MissingTranslationStrategy = atAngularCompilerLib.srcCoreMod.MissingTranslationStrategy
-  type NodeFlags = atAngularCompilerLib.srcCoreMod.NodeFlags
-  type QueryBindingType = atAngularCompilerLib.srcCoreMod.QueryBindingType
-  type QueryValueType = atAngularCompilerLib.srcCoreMod.QueryValueType
-  type RenderFlags = atAngularCompilerLib.srcCoreMod.RenderFlags
-  type SecurityContext = atAngularCompilerLib.srcCoreMod.SecurityContext
-  type SelectorFlags = atAngularCompilerLib.srcCoreMod.SelectorFlags
-  type ViewEncapsulation = atAngularCompilerLib.srcCoreMod.ViewEncapsulation
-  type ViewFlags = atAngularCompilerLib.srcCoreMod.ViewFlags
 }
 

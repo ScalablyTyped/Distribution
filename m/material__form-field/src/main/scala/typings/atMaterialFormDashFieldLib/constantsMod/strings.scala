@@ -13,10 +13,11 @@ trait strings
 object strings {
   @scala.inline
   def apply(
-    LABEL_SELECTOR: atMaterialFormDashFieldLib.atMaterialFormDashFieldLibStrings.`DOTmdc-form-field > label`
+    LABEL_SELECTOR: atMaterialFormDashFieldLib.atMaterialFormDashFieldLibStrings.`DOTmdc-form-field > label`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): strings = {
     val __obj = js.Dynamic.literal(LABEL_SELECTOR = LABEL_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

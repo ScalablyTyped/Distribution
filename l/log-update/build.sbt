@@ -1,17 +1,12 @@
 organization := "org.scalablytyped"
 name := "log-update"
-version := "3.2.0-2faaa3"
+version := "3.2.0-322fb8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-escapes" % "4.1.0-2c89dd",
-  "org.scalablytyped" %%% "cli-cursor" % "2.1-dt-20181224Z-89d58b",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
-  "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "type-fest" % "0.3.0-45433e",
-  "org.scalablytyped" %%% "wrap-ansi" % "v3.0.0-dt-20190322Z-e3af9b")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

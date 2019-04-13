@@ -138,7 +138,7 @@ object ^ extends js.Object {
   	 * @param  {IPoolAttributes} poolAttributes Parameters to stablish the connection pool.
   	 * @returns Promise {(connection:IConnectionPool)=>any} Promise with the connection pool.
   	 */
-  def createPool(poolAttributes: oracledbLib.oracledbMod.oracledbNs.IPoolAttributes): oracledbLib.oracledbMod.oracledbNs.IPromise[oracledbLib.oracledbMod.oracledbNs.IConnectionPool] = js.native
+  def createPool(poolAttributes: IPoolAttributes): IPromise[IConnectionPool] = js.native
   /**
   	 * Creates a database managed connection pool.
   	 * @param  {IPoolAttributes} poolAttributes Parameters to stablish the connection pool.
@@ -146,36 +146,26 @@ object ^ extends js.Object {
   	 * @returns void
   	 */
   def createPool(
-    poolAttributes: oracledbLib.oracledbMod.oracledbNs.IPoolAttributes,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* connection */ oracledbLib.oracledbMod.oracledbNs.IConnectionPool, 
-      scala.Unit
-    ]
+    poolAttributes: IPoolAttributes,
+    callback: js.Function2[/* err */ js.Any, /* connection */ IConnectionPool, scala.Unit]
   ): scala.Unit = js.native
   /**
   	 * Creates a connection with the database. The pool name will be "default".
   	 * @returns  {(connection:IConnection)=>any} Promise with the connection.
   	 */
-  def getConnection(): oracledbLib.oracledbMod.oracledbNs.IPromise[oracledbLib.oracledbMod.oracledbNs.IConnection] = js.native
+  def getConnection(): IPromise[IConnection] = js.native
   /**
   	 * Creates a connection with the database - the pool alias will be "default".
   	 * @param  {(err:any,connection:IConnection)=>void} callback Callback to run when the connection gets stablished or when some error occurs.
   	 * @returns void
   	 */
-  def getConnection(
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* connection */ oracledbLib.oracledbMod.oracledbNs.IConnection, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getConnection(callback: js.Function2[/* err */ js.Any, /* connection */ IConnection, scala.Unit]): scala.Unit = js.native
   /**
   	 * Creates a connection with the database.
   	 * @param  {IConnectionAttributes} connectionAttributes Parameters to stablish the connection.
   	 * @returns  {(connection:IConnection)=>any} Promise with the connection.
   	 */
-  def getConnection(connectionAttributes: oracledbLib.oracledbMod.oracledbNs.IConnectionAttributes): oracledbLib.oracledbMod.oracledbNs.IPromise[oracledbLib.oracledbMod.oracledbNs.IConnection] = js.native
+  def getConnection(connectionAttributes: IConnectionAttributes): IPromise[IConnection] = js.native
   /**
   	 * Creates a connection with the database.
   	 * @param  {IConnectionAttributes} connectionAttributes Parameters to stablish the connection.
@@ -183,19 +173,15 @@ object ^ extends js.Object {
   	 * @returns void
   	 */
   def getConnection(
-    connectionAttributes: oracledbLib.oracledbMod.oracledbNs.IConnectionAttributes,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* connection */ oracledbLib.oracledbMod.oracledbNs.IConnection, 
-      scala.Unit
-    ]
+    connectionAttributes: IConnectionAttributes,
+    callback: js.Function2[/* err */ js.Any, /* connection */ IConnection, scala.Unit]
   ): scala.Unit = js.native
   /**
   	 * Creates a connection with the database.
   	 * @param  {string} poolAlias Poll from which the connection should be retrieved.
   	 * @returns  {(connection:IConnection)=>any} Promise with the connection.
   	 */
-  def getConnection(poolAlias: java.lang.String): oracledbLib.oracledbMod.oracledbNs.IPromise[oracledbLib.oracledbMod.oracledbNs.IConnection] = js.native
+  def getConnection(poolAlias: java.lang.String): IPromise[IConnection] = js.native
   /**
   	 * Creates a connection with the database.
   	 * @param  {string} poolAlias Poll from which the connection should be retrieved.
@@ -204,22 +190,18 @@ object ^ extends js.Object {
   	 */
   def getConnection(
     poolAlias: java.lang.String,
-    callback: js.Function2[
-      /* err */ js.Any, 
-      /* connection */ oracledbLib.oracledbMod.oracledbNs.IConnection, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ js.Any, /* connection */ IConnection, scala.Unit]
   ): scala.Unit = js.native
   /**
   	 * Retrieves a connection pool from cache. If it does not exists, an error will be thrown.
   	 * @param {string} alias The index of the cache for the pool. If none is passed, it will use the default one.
   	 * @returns The connection pool or throws an error if it was not found.
   	 */
-  def getPool(): oracledbLib.oracledbMod.oracledbNs.IConnectionPool = js.native
-  def getPool(poolAlias: java.lang.String): oracledbLib.oracledbMod.oracledbNs.IConnectionPool = js.native
+  def getPool(): IConnectionPool = js.native
+  def getPool(poolAlias: java.lang.String): IConnectionPool = js.native
   /**
   	 * Do not use this method - used internally by node-oracledb.
   	 */
-  def newLob(iLob: oracledbLib.oracledbMod.oracledbNs.ILob): oracledbLib.oracledbMod.oracledbNs.Lob = js.native
+  def newLob(iLob: ILob): Lob = js.native
 }
 

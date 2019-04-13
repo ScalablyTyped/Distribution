@@ -11,9 +11,7 @@ trait SocialIconProps extends js.Object {
     *
     * @default TouchableHighlight
     */
-  var Component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var Component: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Creates button
     *
@@ -112,7 +110,7 @@ object SocialIconProps {
   @scala.inline
   def apply(
     `type`: SocialMediaType,
-    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    Component: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
     button: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fontFamily: java.lang.String = null,

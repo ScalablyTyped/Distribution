@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("two.js", "SVGRenderer")
 @js.native
-class SVGRenderer ()
-  extends twoDotJsLib.twoDotJsMod.TwoNs.SVGRenderer
+class SVGRenderer () extends Renderer
 

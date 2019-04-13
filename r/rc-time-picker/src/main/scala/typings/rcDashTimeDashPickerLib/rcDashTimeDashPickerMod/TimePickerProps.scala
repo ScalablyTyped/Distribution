@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 trait TimePickerProps extends js.Object {
   var allowEmpty: scala.Boolean
   var className: java.lang.String
-  var clearIcon: reactLib.reactMod.ReactNs.ReactNode
+  var clearIcon: reactLib.reactMod.ReactNode
   var clearText: java.lang.String
-  var defaultOpenValue: momentLib.momentMod.momentNs.Moment
-  var defaultValue: momentLib.momentMod.momentNs.Moment
+  var defaultOpenValue: momentLib.momentMod.Moment
+  var defaultValue: momentLib.momentMod.Moment
   var disabled: scala.Boolean
   var focusOnOpen: scala.Boolean
   var format: java.lang.String
   var hideDisabledOptions: scala.Boolean
   var hourStep: scala.Double
   var id: java.lang.String
-  var inputIcon: reactLib.reactMod.ReactNs.ReactNode
+  var inputIcon: reactLib.reactMod.ReactNode
   var inputReadOnly: scala.Boolean
   var minuteStep: scala.Double
   var open: scala.Boolean
@@ -32,12 +32,12 @@ trait TimePickerProps extends js.Object {
   var showSecond: scala.Boolean
   var transitionName: java.lang.String
   var use12Hours: scala.Boolean
-  var value: momentLib.momentMod.momentNs.Moment
+  var value: momentLib.momentMod.Moment
   def addon(timepicker: TimePicker): reactLib.reactMod.Global.JSXNs.Element
   def disabledHours(): js.Array[scala.Double]
   def disabledMinutes(hour: scala.Double): js.Array[scala.Double]
   def disabledSeconds(hour: scala.Double, minute: scala.Double): js.Array[scala.Double]
-  def onChange(value: momentLib.momentMod.momentNs.Moment): scala.Unit
+  def onChange(value: momentLib.momentMod.Moment): scala.Unit
   def onClose(state: rcDashTimeDashPickerLib.Anon_Open): scala.Unit
   def onOpen(state: rcDashTimeDashPickerLib.Anon_Open): scala.Unit
 }
@@ -48,10 +48,10 @@ object TimePickerProps {
     addon: TimePicker => reactLib.reactMod.Global.JSXNs.Element,
     allowEmpty: scala.Boolean,
     className: java.lang.String,
-    clearIcon: reactLib.reactMod.ReactNs.ReactNode,
+    clearIcon: reactLib.reactMod.ReactNode,
     clearText: java.lang.String,
-    defaultOpenValue: momentLib.momentMod.momentNs.Moment,
-    defaultValue: momentLib.momentMod.momentNs.Moment,
+    defaultOpenValue: momentLib.momentMod.Moment,
+    defaultValue: momentLib.momentMod.Moment,
     disabled: scala.Boolean,
     disabledHours: () => js.Array[scala.Double],
     disabledMinutes: scala.Double => js.Array[scala.Double],
@@ -61,10 +61,10 @@ object TimePickerProps {
     hideDisabledOptions: scala.Boolean,
     hourStep: scala.Double,
     id: java.lang.String,
-    inputIcon: reactLib.reactMod.ReactNs.ReactNode,
+    inputIcon: reactLib.reactMod.ReactNode,
     inputReadOnly: scala.Boolean,
     minuteStep: scala.Double,
-    onChange: momentLib.momentMod.momentNs.Moment => scala.Unit,
+    onChange: momentLib.momentMod.Moment => scala.Unit,
     onClose: rcDashTimeDashPickerLib.Anon_Open => scala.Unit,
     onOpen: rcDashTimeDashPickerLib.Anon_Open => scala.Unit,
     open: scala.Boolean,
@@ -78,7 +78,7 @@ object TimePickerProps {
     showSecond: scala.Boolean,
     transitionName: java.lang.String,
     use12Hours: scala.Boolean,
-    value: momentLib.momentMod.momentNs.Moment
+    value: momentLib.momentMod.Moment
   ): TimePickerProps = {
     val __obj = js.Dynamic.literal(addon = js.Any.fromFunction1(addon), allowEmpty = allowEmpty, className = className, clearIcon = clearIcon.asInstanceOf[js.Any], clearText = clearText, defaultOpenValue = defaultOpenValue, defaultValue = defaultValue, disabled = disabled, disabledHours = js.Any.fromFunction0(disabledHours), disabledMinutes = js.Any.fromFunction1(disabledMinutes), disabledSeconds = js.Any.fromFunction2(disabledSeconds), focusOnOpen = focusOnOpen, format = format, hideDisabledOptions = hideDisabledOptions, hourStep = hourStep, id = id, inputIcon = inputIcon.asInstanceOf[js.Any], inputReadOnly = inputReadOnly, minuteStep = minuteStep, onChange = js.Any.fromFunction1(onChange), onClose = js.Any.fromFunction1(onClose), onOpen = js.Any.fromFunction1(onOpen), open = open, placeholder = placeholder, placement = placement, popupClassName = popupClassName, prefixCls = prefixCls, secondStep = secondStep, showHour = showHour, showMinute = showMinute, showSecond = showSecond, transitionName = transitionName, use12Hours = use12Hours, value = value)
   

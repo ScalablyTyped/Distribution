@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "ChipContact")
 @js.native
-class ChipContact ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.ChipContact
+class ChipContact () extends __MDLComponent[__MDLOtherProps]
 

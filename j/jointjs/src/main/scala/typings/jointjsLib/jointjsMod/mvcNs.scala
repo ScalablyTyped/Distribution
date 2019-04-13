@@ -14,13 +14,13 @@ object mvcNs extends js.Object {
     def this(opt: ViewOptions[T]) = this()
     var children: js.UndefOr[jointjsLib.jointjsMod.diaNs.MarkupJSON] = js.native
     var defaultTheme: java.lang.String = js.native
-    var documentEvents: js.UndefOr[backboneLib.backboneMod.BackboneNs.EventsHash] = js.native
+    var documentEvents: js.UndefOr[backboneLib.backboneMod.EventsHash] = js.native
     var requireSetThemeOverride: scala.Boolean = js.native
     var theme: java.lang.String = js.native
     var themeClassNamePrefix: java.lang.String = js.native
     def delegateDocumentEvents(): this.type = js.native
-    def delegateDocumentEvents(events: backboneLib.backboneMod.BackboneNs.EventsHash): this.type = js.native
-    def delegateDocumentEvents(events: backboneLib.backboneMod.BackboneNs.EventsHash, data: viewEventData): this.type = js.native
+    def delegateDocumentEvents(events: backboneLib.backboneMod.EventsHash): this.type = js.native
+    def delegateDocumentEvents(events: backboneLib.backboneMod.EventsHash, data: viewEventData): this.type = js.native
     def eventData(evt: jqueryLib.JQueryNs.Event): viewEventData = js.native
     def eventData(evt: jqueryLib.JQueryNs.Event, data: viewEventData): this.type = js.native
     def findAttribute(attributeName: java.lang.String, node: stdLib.Element): java.lang.String | scala.Null = js.native
@@ -37,12 +37,10 @@ object mvcNs extends js.Object {
   }
   
   trait ViewOptions[T /* <: backboneLib.backboneMod.Model */]
-    extends backboneLib.backboneMod.BackboneNs.ViewOptions[T] {
+    extends backboneLib.backboneMod.ViewOptions[T] {
     var theme: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  trait viewEventData
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
-  
+  type viewEventData = org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

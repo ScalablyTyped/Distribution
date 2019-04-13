@@ -27,10 +27,11 @@ object cssClasses {
     INVALID: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--invalid`,
     OUTLINED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--outlined`,
     ROOT: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field`,
-    UPGRADED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--upgraded`
+    UPGRADED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--upgraded`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(BOX = BOX, DENSE = DENSE, DISABLED = DISABLED, FOCUSED = FOCUSED, INVALID = INVALID, OUTLINED = OUTLINED, ROOT = ROOT, UPGRADED = UPGRADED)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

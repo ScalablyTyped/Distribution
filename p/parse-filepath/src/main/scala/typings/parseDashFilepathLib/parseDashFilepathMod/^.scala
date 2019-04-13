@@ -13,6 +13,6 @@ object ^ extends js.Object {
     *
     * @param filepath
     */
-  def apply(filepath: java.lang.String): parseDashFilepathLib.parseDashFilepathMod.parseFilepathNs.ParsedPath = js.native
+  def apply(filepath: java.lang.String): ParsedPath = js.native
 }
 

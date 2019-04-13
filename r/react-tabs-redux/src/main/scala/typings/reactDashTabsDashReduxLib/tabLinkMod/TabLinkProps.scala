@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TabLinkProps extends js.Object {
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
   var activeStyle: js.UndefOr[js.Object] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[java.lang.String] = js.undefined
   var default: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,7 +29,7 @@ object TabLinkProps {
     to: scala.Double | java.lang.String,
     activeClassName: java.lang.String = null,
     activeStyle: js.Object = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     component: java.lang.String = null,
     default: js.UndefOr[scala.Boolean] = js.undefined,

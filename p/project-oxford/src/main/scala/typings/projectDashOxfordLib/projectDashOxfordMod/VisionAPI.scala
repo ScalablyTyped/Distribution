@@ -22,7 +22,7 @@ class VisionAPI () extends js.Object {
     * @param  {boolean} options.Categories     - Image categorization; taxonomy defined in documentation.
     * @return {Promise}                        - Promise resolving with the resulting JSON
     */
-  def analyzeImage(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Analyze): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.VisionResponsesNs.Analyze] = js.native
+  def analyzeImage(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Analyze): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.VisionResponsesNs.Analyze] = js.native
   /**
     * Optical Character Recognition (OCR) detects text in an image and extracts the recognized
     * characters into a machine-usable character stream.
@@ -34,7 +34,7 @@ class VisionAPI () extends js.Object {
     * @param  {string}  options.detectOrientation  - Detect orientation of text in the image
     * @return {Promise}                            - Promise resolving with the resulting JSON
     */
-  def ocr(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Ocr): bluebirdLib.bluebirdMod.namespaced[projectDashOxfordLib.projectDashOxfordMod.VisionResponsesNs.Ocr] = js.native
+  def ocr(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Ocr): bluebirdLib.bluebirdMod.^[projectDashOxfordLib.projectDashOxfordMod.VisionResponsesNs.Ocr] = js.native
   /**
     * Generate a thumbnail image to the user-specified width and height. By default, the
     * service analyzes the image, identifies the region of interest (ROI), and generates
@@ -50,6 +50,6 @@ class VisionAPI () extends js.Object {
     * @param  {Object}  options.pipe           - We'll pipe the returned image to this object
     * @return {Promise}                        - Promise resolving with the resulting JSON
     */
-  def thumbnail(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Thumbnail): bluebirdLib.bluebirdMod.namespaced[nodeLib.streamMod.Stream] = js.native
+  def thumbnail(options: projectDashOxfordLib.projectDashOxfordMod.OptionsNs.Thumbnail): bluebirdLib.bluebirdMod.^[nodeLib.streamMod.Stream] = js.native
 }
 

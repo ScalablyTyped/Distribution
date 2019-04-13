@@ -12,4 +12,5 @@ package object JsRenderNs {
     /* helpersOrContext */ js.UndefOr[js.Any], 
     java.lang.String
   ]
+  type RenderStatic = org.scalablytyped.runtime.StringDictionary[NamedTemplate]
 }

@@ -11,9 +11,9 @@ class Tabs ()
   extends reactLib.reactMod.Component[TabBarComponentProps, reactDashRouterDashNavigationLib.Anon_Key, js.Any] {
   @JSName("props")
   var props_Tabs: TabBarComponentProps = js.native
-  def renderFooter(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def renderHeader(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def renderScene(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def renderTabBar(sceneProps: TabSubViewProps, props: TabSubViewProps): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def renderFooter(sceneProps: TabSubViewProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def renderHeader(sceneProps: TabSubViewProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def renderScene(sceneProps: TabSubViewProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def renderTabBar(sceneProps: TabSubViewProps, props: TabSubViewProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

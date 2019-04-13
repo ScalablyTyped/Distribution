@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends org.scalablytyped.runtime.TopLevel[
-      reactLib.reactMod.ReactNs.ComponentClass[ContainerProps, reactLib.reactMod.ReactNs.ComponentState]
+      reactLib.reactMod.ComponentClass[ContainerProps, reactLib.reactMod.ComponentState]
     ]
 

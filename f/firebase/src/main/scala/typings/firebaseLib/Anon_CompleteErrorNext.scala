@@ -9,10 +9,7 @@ trait Anon_CompleteErrorNext extends js.Object {
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var error: js.UndefOr[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.undefined
   var next: js.UndefOr[
-    js.Function1[
-      /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
-      scala.Unit
-    ]
+    js.Function1[/* snapshot */ firebaseLib.firebaseMod.firestoreNs.QuerySnapshot, scala.Unit]
   ] = js.undefined
 }
 
@@ -21,7 +18,7 @@ object Anon_CompleteErrorNext {
   def apply(
     complete: () => scala.Unit = null,
     error: /* error */ stdLib.Error => scala.Unit = null,
-    next: /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot => scala.Unit = null
+    next: /* snapshot */ firebaseLib.firebaseMod.firestoreNs.QuerySnapshot => scala.Unit = null
   ): Anon_CompleteErrorNext = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

@@ -20,8 +20,8 @@ object ShareActionSheetWithOptions {
     destructiveButtonIndex: scala.Int | scala.Double = null,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
     maskTransitionName: java.lang.String = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    message: reactLib.reactMod.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     transitionName: java.lang.String = null
   ): ShareActionSheetWithOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])

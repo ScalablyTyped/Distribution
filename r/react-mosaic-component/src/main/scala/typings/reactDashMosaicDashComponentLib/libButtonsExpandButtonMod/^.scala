@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-mosaic-component/lib/buttons/ExpandButton", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ExpandButtonFactory: reactLib.reactMod.ReactNs.ComponentFactory[
+  val ExpandButtonFactory: reactLib.reactMod.ComponentFactory[
     reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps, 
     ExpandButton[java.lang.String | scala.Double]
   ] = js.native

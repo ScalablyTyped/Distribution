@@ -244,6 +244,5 @@ object ComponentsNs extends js.Object {
     var TITLE_LABEL_CLASS: java.lang.String = js.native
   }
   
-  type PropertyMode = plottableLib.buildSrcComponentsSelectionBoxLayerMod.PropertyMode
 }
 

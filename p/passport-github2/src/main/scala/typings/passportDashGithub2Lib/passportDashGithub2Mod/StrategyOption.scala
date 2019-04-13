@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StrategyOption
-  extends passportLib.passportMod.passportNs.AuthenticateOptions {
+  extends passportLib.passportMod.AuthenticateOptions {
   var authorizationURL: js.UndefOr[java.lang.String] = js.undefined
   var callbackURL: java.lang.String
   var clientID: java.lang.String

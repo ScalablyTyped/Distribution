@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("raspi-serial", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DEFAULT_PORT: /* /dev/ttyAMA0 */ java.lang.String = js.native
-  val PARITY_EVEN: /* even */ java.lang.String = js.native
-  val PARITY_MARK: /* mark */ java.lang.String = js.native
-  val PARITY_NONE: /* none */ java.lang.String = js.native
-  val PARITY_ODD: /* odd */ java.lang.String = js.native
-  val PARITY_SPACE: /* space */ java.lang.String = js.native
+  val DEFAULT_PORT: raspiDashSerialLib.raspiDashSerialLibStrings.`/dev/ttyAMA0` = js.native
+  val PARITY_EVEN: raspiDashSerialLib.raspiDashSerialLibStrings.even = js.native
+  val PARITY_MARK: raspiDashSerialLib.raspiDashSerialLibStrings.mark = js.native
+  val PARITY_NONE: raspiDashSerialLib.raspiDashSerialLibStrings.none = js.native
+  val PARITY_ODD: raspiDashSerialLib.raspiDashSerialLibStrings.odd = js.native
+  val PARITY_SPACE: raspiDashSerialLib.raspiDashSerialLibStrings.space = js.native
 }
 

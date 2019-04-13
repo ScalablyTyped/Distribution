@@ -26,7 +26,7 @@ trait ISearchService extends js.Object {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching items
     */
-  def searchAll(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[_]
+  def searchAll(args: ISearchArgs): angularLib.angularMod.IPromise[_]
   /**
     * @ngdoc method
     * @name umbraco.services.searchService#searchContent
@@ -38,7 +38,7 @@ trait ISearchService extends js.Object {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching content items
     */
-  def searchContent(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[js.Array[ISearchContent]]
+  def searchContent(args: ISearchArgs): angularLib.angularMod.IPromise[js.Array[ISearchContent]]
   /**
     * @ngdoc method
     * @name umbraco.services.searchService#searchMedia
@@ -50,7 +50,7 @@ trait ISearchService extends js.Object {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching media items
     */
-  def searchMedia(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMedia]]
+  def searchMedia(args: ISearchArgs): angularLib.angularMod.IPromise[js.Array[ISearchMedia]]
   /**
     * @ngdoc method
     * @name umbraco.services.searchService#searchMembers
@@ -62,16 +62,16 @@ trait ISearchService extends js.Object {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching members
     */
-  def searchMembers(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]
+  def searchMembers(args: ISearchArgs): angularLib.angularMod.IPromise[js.Array[ISearchMember]]
 }
 
 object ISearchService {
   @scala.inline
   def apply(
-    searchAll: ISearchArgs => angularLib.angularMod.angularNs.IPromise[_],
-    searchContent: ISearchArgs => angularLib.angularMod.angularNs.IPromise[js.Array[ISearchContent]],
-    searchMedia: ISearchArgs => angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMedia]],
-    searchMembers: ISearchArgs => angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]
+    searchAll: ISearchArgs => angularLib.angularMod.IPromise[_],
+    searchContent: ISearchArgs => angularLib.angularMod.IPromise[js.Array[ISearchContent]],
+    searchMedia: ISearchArgs => angularLib.angularMod.IPromise[js.Array[ISearchMedia]],
+    searchMembers: ISearchArgs => angularLib.angularMod.IPromise[js.Array[ISearchMember]]
   ): ISearchService = {
     val __obj = js.Dynamic.literal(searchAll = js.Any.fromFunction1(searchAll), searchContent = js.Any.fromFunction1(searchContent), searchMedia = js.Any.fromFunction1(searchMedia), searchMembers = js.Any.fromFunction1(searchMembers))
   

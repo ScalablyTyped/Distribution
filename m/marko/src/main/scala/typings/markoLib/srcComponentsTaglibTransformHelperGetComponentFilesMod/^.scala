@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("marko/src/components/taglib/TransformHelper/getComponentFiles", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(filename: java.lang.String): markoLib.srcComponentsTaglibTransformHelperGetComponentFilesMod.getComponentFilesNs.ComponentFiles | scala.Null = js.native
+  def apply(filename: java.lang.String): ComponentFiles | scala.Null = js.native
 }
 

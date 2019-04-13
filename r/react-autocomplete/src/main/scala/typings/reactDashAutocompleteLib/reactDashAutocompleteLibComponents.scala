@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashAutocompleteLibComponents {
   @scala.inline
-  def ReactDashAutocomplete: reactLib.reactMod.ReactNs.ComponentType[reactDashAutocompleteLib.reactDashAutocompleteMod.AutocompleteNs.Props] = js.constructorOf[reactDashAutocompleteLib.reactDashAutocompleteMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashAutocompleteLib.reactDashAutocompleteMod.AutocompleteNs.Props]]
-  type Props = reactDashAutocompleteLib.reactDashAutocompleteMod.AutocompleteNs.Props
+  def ReactDashAutocomplete: reactLib.reactMod.ComponentType[reactDashAutocompleteLib.reactDashAutocompleteMod.Props] = js.constructorOf[reactDashAutocompleteLib.reactDashAutocompleteMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashAutocompleteLib.reactDashAutocompleteMod.Props]]
+  type Props = reactDashAutocompleteLib.reactDashAutocompleteMod.Props
 }
 

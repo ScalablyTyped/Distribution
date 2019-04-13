@@ -7,216 +7,216 @@ import scala.scalajs.js.annotation._
 
 object antdLibComponents {
   @scala.inline
-  def ActionButton: reactLib.reactMod.ReactNs.ComponentType[antdLib.libModalActionButtonMod.ActionButtonProps] = js.constructorOf[antdLib.libModalActionButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libModalActionButtonMod.ActionButtonProps]]
+  def ActionButton: reactLib.reactMod.ComponentType[antdLib.libModalActionButtonMod.ActionButtonProps] = js.constructorOf[antdLib.libModalActionButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libModalActionButtonMod.ActionButtonProps]]
   @scala.inline
-  def Affix: reactLib.reactMod.ReactNs.ComponentType[antdLib.libAffixMod.AffixProps] = js.constructorOf[antdLib.libAffixMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libAffixMod.AffixProps]]
+  def Affix: reactLib.reactMod.ComponentType[antdLib.libAffixMod.AffixProps] = js.constructorOf[antdLib.libAffixMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libAffixMod.AffixProps]]
   @scala.inline
-  def Alert: reactLib.reactMod.ReactNs.ComponentType[antdLib.libAlertMod.AlertProps] = js.constructorOf[antdLib.libAlertMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libAlertMod.AlertProps]]
+  def Alert: reactLib.reactMod.ComponentType[antdLib.libAlertMod.AlertProps] = js.constructorOf[antdLib.libAlertMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libAlertMod.AlertProps]]
   @scala.inline
-  def Anchor: reactLib.reactMod.ReactNs.ComponentType[antdLib.libAnchorAnchorMod.AnchorProps] = js.constructorOf[antdLib.libAnchorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libAnchorAnchorMod.AnchorProps]]
+  def Anchor: reactLib.reactMod.ComponentType[antdLib.libAnchorAnchorMod.AnchorProps] = js.constructorOf[antdLib.libAnchorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libAnchorAnchorMod.AnchorProps]]
   @scala.inline
-  def AnchorLink: reactLib.reactMod.ReactNs.ComponentType[antdLib.libAnchorAnchorLinkMod.AnchorLinkProps] = js.constructorOf[antdLib.libAnchorAnchorLinkMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libAnchorAnchorLinkMod.AnchorLinkProps]]
+  def AnchorLink: reactLib.reactMod.ComponentType[antdLib.libAnchorAnchorLinkMod.AnchorLinkProps] = js.constructorOf[antdLib.libAnchorAnchorLinkMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libAnchorAnchorLinkMod.AnchorLinkProps]]
   @scala.inline
-  def AutoComplete: reactLib.reactMod.ReactNs.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps] = js.constructorOf[antdLib.antdMod.AutoComplete].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps]]
+  def AutoComplete: reactLib.reactMod.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps] = js.constructorOf[antdLib.antdMod.AutoComplete].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps]]
   @scala.inline
-  def AutoDashComplete: reactLib.reactMod.ReactNs.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps] = js.constructorOf[antdLib.libAutoDashCompleteMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps]]
+  def AutoDashComplete: reactLib.reactMod.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps] = js.constructorOf[antdLib.libAutoDashCompleteMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libAutoDashCompleteMod.AutoCompleteProps]]
   @scala.inline
-  def Avatar: reactLib.reactMod.ReactNs.ComponentType[antdLib.libAvatarMod.AvatarProps] = js.constructorOf[antdLib.libAvatarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libAvatarMod.AvatarProps]]
+  def Avatar: reactLib.reactMod.ComponentType[antdLib.libAvatarMod.AvatarProps] = js.constructorOf[antdLib.libAvatarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libAvatarMod.AvatarProps]]
   @scala.inline
-  def BackDashTop: reactLib.reactMod.ReactNs.ComponentType[antdLib.libBackDashTopMod.BackTopProps] = js.constructorOf[antdLib.libBackDashTopMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libBackDashTopMod.BackTopProps]]
+  def BackDashTop: reactLib.reactMod.ComponentType[antdLib.libBackDashTopMod.BackTopProps] = js.constructorOf[antdLib.libBackDashTopMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libBackDashTopMod.BackTopProps]]
   @scala.inline
-  def BackTop: reactLib.reactMod.ReactNs.ComponentType[antdLib.libBackDashTopMod.BackTopProps] = js.constructorOf[antdLib.antdMod.BackTop].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libBackDashTopMod.BackTopProps]]
+  def BackTop: reactLib.reactMod.ComponentType[antdLib.libBackDashTopMod.BackTopProps] = js.constructorOf[antdLib.antdMod.BackTop].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libBackDashTopMod.BackTopProps]]
   @scala.inline
-  def Badge: reactLib.reactMod.ReactNs.ComponentType[antdLib.libBadgeMod.BadgeProps] = js.constructorOf[antdLib.libBadgeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libBadgeMod.BadgeProps]]
+  def Badge: reactLib.reactMod.ComponentType[antdLib.libBadgeMod.BadgeProps] = js.constructorOf[antdLib.libBadgeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libBadgeMod.BadgeProps]]
   @scala.inline
-  def Base: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyBaseMod.InternalBlockProps] = antdLib.libTypographyBaseMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyBaseMod.InternalBlockProps]]
+  def Base: reactLib.reactMod.ComponentType[antdLib.libTypographyBaseMod.InternalBlockProps] = antdLib.libTypographyBaseMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTypographyBaseMod.InternalBlockProps]]
   @scala.inline
-  def Breadcrumb: reactLib.reactMod.ReactNs.ComponentType[antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps] = js.constructorOf[antdLib.libBreadcrumbMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps]]
+  def Breadcrumb: reactLib.reactMod.ComponentType[antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps] = js.constructorOf[antdLib.libBreadcrumbMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps]]
   @scala.inline
-  def BreadcrumbItem: reactLib.reactMod.ReactNs.ComponentType[antdLib.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps] = js.constructorOf[antdLib.libBreadcrumbBreadcrumbItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps]]
+  def BreadcrumbItem: reactLib.reactMod.ComponentType[antdLib.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps] = js.constructorOf[antdLib.libBreadcrumbBreadcrumbItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps]]
   @scala.inline
-  def Button: reactLib.reactMod.ReactNs.ComponentType[antdLib.libButtonButtonMod.ButtonProps] = js.constructorOf[antdLib.libButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libButtonButtonMod.ButtonProps]]
+  def Button: reactLib.reactMod.ComponentType[antdLib.libButtonButtonMod.ButtonProps] = js.constructorOf[antdLib.libButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libButtonButtonMod.ButtonProps]]
   @scala.inline
-  def ButtonDashGroup: reactLib.reactMod.ReactNs.ComponentType[antdLib.libButtonButtonDashGroupMod.ButtonGroupProps] = antdLib.libButtonButtonDashGroupMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libButtonButtonDashGroupMod.ButtonGroupProps]]
+  def ButtonDashGroup: reactLib.reactMod.ComponentType[antdLib.libButtonButtonDashGroupMod.ButtonGroupProps] = antdLib.libButtonButtonDashGroupMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libButtonButtonDashGroupMod.ButtonGroupProps]]
   @scala.inline
-  def Calendar: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCalendarMod.CalendarProps] = js.constructorOf[antdLib.libCalendarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCalendarMod.CalendarProps]]
+  def Calendar: reactLib.reactMod.ComponentType[antdLib.libCalendarMod.CalendarProps] = js.constructorOf[antdLib.libCalendarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCalendarMod.CalendarProps]]
   @scala.inline
-  def Card: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCardMod.CardProps] = js.constructorOf[antdLib.libCardMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCardMod.CardProps]]
+  def Card: reactLib.reactMod.ComponentType[antdLib.libCardMod.CardProps] = js.constructorOf[antdLib.libCardMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCardMod.CardProps]]
   @scala.inline
-  def Carousel: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCarouselMod.CarouselProps] = js.constructorOf[antdLib.libCarouselMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCarouselMod.CarouselProps]]
+  def Carousel: reactLib.reactMod.ComponentType[antdLib.libCarouselMod.CarouselProps] = js.constructorOf[antdLib.libCarouselMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCarouselMod.CarouselProps]]
   @scala.inline
-  def Cascader: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCascaderMod.CascaderProps] = js.constructorOf[antdLib.libCascaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCascaderMod.CascaderProps]]
+  def Cascader: reactLib.reactMod.ComponentType[antdLib.libCascaderMod.CascaderProps] = js.constructorOf[antdLib.libCascaderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCascaderMod.CascaderProps]]
   @scala.inline
-  def CheckableTag: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTagCheckableTagMod.CheckableTagProps] = js.constructorOf[antdLib.libTagCheckableTagMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTagCheckableTagMod.CheckableTagProps]]
+  def CheckableTag: reactLib.reactMod.ComponentType[antdLib.libTagCheckableTagMod.CheckableTagProps] = js.constructorOf[antdLib.libTagCheckableTagMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTagCheckableTagMod.CheckableTagProps]]
   @scala.inline
-  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[antdLib.libCheckboxMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCheckboxCheckboxMod.CheckboxProps]]
+  def Checkbox: reactLib.reactMod.ComponentType[antdLib.libCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[antdLib.libCheckboxMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCheckboxCheckboxMod.CheckboxProps]]
   @scala.inline
-  def Col: reactLib.reactMod.ReactNs.ComponentType[antdLib.libGridColMod.ColProps] = js.constructorOf[antdLib.libColMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libGridColMod.ColProps]]
+  def Col: reactLib.reactMod.ComponentType[antdLib.libGridColMod.ColProps] = js.constructorOf[antdLib.libColMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libGridColMod.ColProps]]
   @scala.inline
-  def Collapse: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCollapseCollapseMod.CollapseProps] = js.constructorOf[antdLib.libCollapseMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCollapseCollapseMod.CollapseProps]]
+  def Collapse: reactLib.reactMod.ComponentType[antdLib.libCollapseCollapseMod.CollapseProps] = js.constructorOf[antdLib.libCollapseMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCollapseCollapseMod.CollapseProps]]
   @scala.inline
-  def CollapsePanel: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCollapseCollapsePanelMod.CollapsePanelProps] = js.constructorOf[antdLib.libCollapseCollapsePanelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCollapseCollapsePanelMod.CollapsePanelProps]]
+  def CollapsePanel: reactLib.reactMod.ComponentType[antdLib.libCollapseCollapsePanelMod.CollapsePanelProps] = js.constructorOf[antdLib.libCollapseCollapsePanelMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCollapseCollapsePanelMod.CollapsePanelProps]]
   @scala.inline
-  def Column[T]: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.constructorOf[antdLib.libTableColumnMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableInterfaceMod.ColumnProps[T]]]
+  def Column[T]: reactLib.reactMod.ComponentType[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.constructorOf[antdLib.libTableColumnMod.default[T]].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTableInterfaceMod.ColumnProps[T]]]
   @scala.inline
-  def ColumnGroup: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableColumnGroupMod.ColumnGroupProps] = js.constructorOf[antdLib.libTableColumnGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableColumnGroupMod.ColumnGroupProps]]
+  def ColumnGroup: reactLib.reactMod.ComponentType[antdLib.libTableColumnGroupMod.ColumnGroupProps] = js.constructorOf[antdLib.libTableColumnGroupMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTableColumnGroupMod.ColumnGroupProps]]
   @scala.inline
-  def Comment: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCommentMod.CommentProps] = js.constructorOf[antdLib.libCommentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCommentMod.CommentProps]]
+  def Comment: reactLib.reactMod.ComponentType[antdLib.libCommentMod.CommentProps] = js.constructorOf[antdLib.libCommentMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCommentMod.CommentProps]]
   @scala.inline
-  def ConfigConsumer: reactLib.reactMod.ReactNs.ComponentType[
+  def ConfigConsumer: reactLib.reactMod.ComponentType[
     createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]
-  ] = js.constructorOf[antdLib.libConfigDashProviderMod.ConfigConsumer].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[antdLib.libConfigDashProviderMod.ConfigConsumer].asInstanceOf[reactLib.reactMod.ComponentType[
   createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]]]
   @scala.inline
-  def ConfigDashProvider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps] = js.constructorOf[antdLib.libConfigDashProviderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps]]
+  def ConfigDashProvider: reactLib.reactMod.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps] = js.constructorOf[antdLib.libConfigDashProviderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps]]
   @scala.inline
-  def ConfigProvider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps] = js.constructorOf[antdLib.antdMod.ConfigProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps]]
+  def ConfigProvider: reactLib.reactMod.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps] = js.constructorOf[antdLib.antdMod.ConfigProvider].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps]]
   @scala.inline
-  def Countdown: reactLib.reactMod.ReactNs.ComponentType[antdLib.libStatisticCountdownMod.CountdownProps] = js.constructorOf[antdLib.libStatisticCountdownMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libStatisticCountdownMod.CountdownProps]]
+  def Countdown: reactLib.reactMod.ComponentType[antdLib.libStatisticCountdownMod.CountdownProps] = js.constructorOf[antdLib.libStatisticCountdownMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libStatisticCountdownMod.CountdownProps]]
   @scala.inline
-  def DateDashPicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = js.constructorOf[antdLib.libDateDashPickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
+  def DateDashPicker: reactLib.reactMod.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = js.constructorOf[antdLib.libDateDashPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
   @scala.inline
-  def DatePicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = js.constructorOf[antdLib.antdMod.DatePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
+  def DatePicker: reactLib.reactMod.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = js.constructorOf[antdLib.antdMod.DatePicker].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
   @scala.inline
-  def DirectoryTree: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps] = js.constructorOf[antdLib.libTreeDirectoryTreeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps]]
+  def DirectoryTree: reactLib.reactMod.ComponentType[antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps] = js.constructorOf[antdLib.libTreeDirectoryTreeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps]]
   @scala.inline
-  def Divider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDividerMod.DividerProps] = antdLib.libDividerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDividerMod.DividerProps]]
+  def Divider: reactLib.reactMod.ComponentType[antdLib.libDividerMod.DividerProps] = antdLib.libDividerMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libDividerMod.DividerProps]]
   @scala.inline
-  def Dragger: reactLib.reactMod.ReactNs.ComponentType[antdLib.libUploadDraggerMod.DraggerProps] = js.constructorOf[antdLib.libUploadDraggerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libUploadDraggerMod.DraggerProps]]
+  def Dragger: reactLib.reactMod.ComponentType[antdLib.libUploadDraggerMod.DraggerProps] = js.constructorOf[antdLib.libUploadDraggerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libUploadDraggerMod.DraggerProps]]
   @scala.inline
-  def Drawer: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDrawerMod.DrawerProps] = antdLib.libDrawerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDrawerMod.DrawerProps]]
+  def Drawer: reactLib.reactMod.ComponentType[antdLib.libDrawerMod.DrawerProps] = antdLib.libDrawerMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libDrawerMod.DrawerProps]]
   @scala.inline
-  def Dropdown: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDropdownDropdownMod.DropDownProps] = js.constructorOf[antdLib.libDropdownMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDropdownDropdownMod.DropDownProps]]
+  def Dropdown: reactLib.reactMod.ComponentType[antdLib.libDropdownDropdownMod.DropDownProps] = js.constructorOf[antdLib.libDropdownMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libDropdownDropdownMod.DropDownProps]]
   @scala.inline
-  def DropdownDashButton: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps] = js.constructorOf[antdLib.libDropdownDropdownDashButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps]]
+  def DropdownDashButton: reactLib.reactMod.ComponentType[antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps] = js.constructorOf[antdLib.libDropdownDropdownDashButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps]]
   @scala.inline
-  def Form: reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormMod.FormProps] = js.constructorOf[antdLib.libFormMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormMod.FormProps]]
+  def Form: reactLib.reactMod.ComponentType[antdLib.libFormFormMod.FormProps] = js.constructorOf[antdLib.libFormMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libFormFormMod.FormProps]]
   @scala.inline
-  def FormItem: reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormItemMod.FormItemProps] = js.constructorOf[antdLib.libFormFormItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormItemMod.FormItemProps]]
+  def FormItem: reactLib.reactMod.ComponentType[antdLib.libFormFormItemMod.FormItemProps] = js.constructorOf[antdLib.libFormFormItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libFormFormItemMod.FormItemProps]]
   @scala.inline
-  def Grid: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCardGridMod.CardGridProps] = antdLib.libCardGridMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCardGridMod.CardGridProps]]
+  def Grid: reactLib.reactMod.ComponentType[antdLib.libCardGridMod.CardGridProps] = antdLib.libCardGridMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCardGridMod.CardGridProps]]
   @scala.inline
-  def Group: reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputGroupMod.GroupProps] = antdLib.libInputGroupMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputGroupMod.GroupProps]]
+  def Group: reactLib.reactMod.ComponentType[antdLib.libInputGroupMod.GroupProps] = antdLib.libInputGroupMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libInputGroupMod.GroupProps]]
   @scala.inline
-  def Header: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCalendarHeaderMod.HeaderProps] = js.constructorOf[antdLib.libCalendarHeaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCalendarHeaderMod.HeaderProps]]
+  def Header: reactLib.reactMod.ComponentType[antdLib.libCalendarHeaderMod.HeaderProps] = js.constructorOf[antdLib.libCalendarHeaderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCalendarHeaderMod.HeaderProps]]
   @scala.inline
-  def Icon: reactLib.reactMod.ReactNs.ComponentType[antdLib.libIconMod.IconProps] = antdLib.libIconMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libIconMod.IconProps]]
+  def Icon: reactLib.reactMod.ComponentType[antdLib.libIconMod.IconProps] = antdLib.libIconMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libIconMod.IconProps]]
   @scala.inline
-  def Input: reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputInputMod.InputProps] = js.constructorOf[antdLib.libInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputInputMod.InputProps]]
+  def Input: reactLib.reactMod.ComponentType[antdLib.libInputInputMod.InputProps] = js.constructorOf[antdLib.libInputMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libInputInputMod.InputProps]]
   @scala.inline
-  def InputDashNumber: reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps] = js.constructorOf[antdLib.libInputDashNumberMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps]]
+  def InputDashNumber: reactLib.reactMod.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps] = js.constructorOf[antdLib.libInputDashNumberMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps]]
   @scala.inline
-  def InputNumber: reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps] = js.constructorOf[antdLib.antdMod.InputNumber].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps]]
+  def InputNumber: reactLib.reactMod.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps] = js.constructorOf[antdLib.antdMod.InputNumber].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libInputDashNumberMod.InputNumberProps]]
   @scala.inline
-  def Item: reactLib.reactMod.ReactNs.ComponentType[antdLib.libListItemMod.ListItemProps] = js.constructorOf[antdLib.libListItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libListItemMod.ListItemProps]]
+  def Item: reactLib.reactMod.ComponentType[antdLib.libListItemMod.ListItemProps] = js.constructorOf[antdLib.libListItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libListItemMod.ListItemProps]]
   @scala.inline
-  def Layout: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutLayoutMod.BasicProps] = js.constructorOf[antdLib.libLayoutMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutLayoutMod.BasicProps]]
+  def Layout: reactLib.reactMod.ComponentType[antdLib.libLayoutLayoutMod.BasicProps] = js.constructorOf[antdLib.libLayoutMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libLayoutLayoutMod.BasicProps]]
   @scala.inline
-  def List[T]: reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps[T]] = js.constructorOf[antdLib.libListMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps[T]]]
+  def List[T]: reactLib.reactMod.ComponentType[antdLib.libListMod.ListProps[T]] = js.constructorOf[antdLib.libListMod.default[T]].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libListMod.ListProps[T]]]
   @scala.inline
-  def LocaleDashProvider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdLib.libLocaleDashProviderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps]]
+  def LocaleDashProvider: reactLib.reactMod.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdLib.libLocaleDashProviderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps]]
   @scala.inline
-  def LocaleProvider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdLib.antdMod.LocaleProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps]]
+  def LocaleProvider: reactLib.reactMod.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdLib.antdMod.LocaleProvider].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps]]
   @scala.inline
-  def Mention: reactLib.reactMod.ReactNs.ComponentType[antdLib.libMentionMod.MentionProps] = js.constructorOf[antdLib.libMentionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libMentionMod.MentionProps]]
+  def Mention: reactLib.reactMod.ComponentType[antdLib.libMentionMod.MentionProps] = js.constructorOf[antdLib.libMentionMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libMentionMod.MentionProps]]
   @scala.inline
-  def Menu: reactLib.reactMod.ReactNs.ComponentType[antdLib.libMenuMod.MenuProps] = js.constructorOf[antdLib.libMenuMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libMenuMod.MenuProps]]
+  def Menu: reactLib.reactMod.ComponentType[antdLib.libMenuMod.MenuProps] = js.constructorOf[antdLib.libMenuMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libMenuMod.MenuProps]]
   @scala.inline
-  def MenuItem: reactLib.reactMod.ReactNs.ComponentType[antdLib.libMenuMenuItemMod.MenuItemProps] = js.constructorOf[antdLib.libMenuMenuItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libMenuMenuItemMod.MenuItemProps]]
+  def MenuItem: reactLib.reactMod.ComponentType[antdLib.libMenuMenuItemMod.MenuItemProps] = js.constructorOf[antdLib.libMenuMenuItemMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libMenuMenuItemMod.MenuItemProps]]
   @scala.inline
-  def Meta: reactLib.reactMod.ReactNs.ComponentType[antdLib.libCardMetaMod.CardMetaProps] = antdLib.libCardMetaMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libCardMetaMod.CardMetaProps]]
+  def Meta: reactLib.reactMod.ComponentType[antdLib.libCardMetaMod.CardMetaProps] = antdLib.libCardMetaMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCardMetaMod.CardMetaProps]]
   @scala.inline
-  def Modal: reactLib.reactMod.ReactNs.ComponentType[antdLib.libModalModalMod.ModalProps] = js.constructorOf[antdLib.libModalMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libModalModalMod.ModalProps]]
+  def Modal: reactLib.reactMod.ComponentType[antdLib.libModalModalMod.ModalProps] = js.constructorOf[antdLib.libModalMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libModalModalMod.ModalProps]]
   @scala.inline
-  def Operation: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTransferOperationMod.TransferOperationProps] = js.constructorOf[antdLib.libTransferOperationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTransferOperationMod.TransferOperationProps]]
+  def Operation: reactLib.reactMod.ComponentType[antdLib.libTransferOperationMod.TransferOperationProps] = js.constructorOf[antdLib.libTransferOperationMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTransferOperationMod.TransferOperationProps]]
   @scala.inline
-  def OptGroup: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptGroupProps] = antdLib.libSelectMod.default.OptGroup.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptGroupProps]]
+  def OptGroup: reactLib.reactMod.ComponentType[antdLib.libSelectMod.OptGroupProps] = antdLib.libSelectMod.default.OptGroup.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libSelectMod.OptGroupProps]]
   @scala.inline
-  def Option: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptionProps] = antdLib.libSelectMod.default.Option.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptionProps]]
+  def Option: reactLib.reactMod.ComponentType[antdLib.libSelectMod.OptionProps] = antdLib.libSelectMod.default.Option.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libSelectMod.OptionProps]]
   @scala.inline
-  def PageDashHeader: reactLib.reactMod.ReactNs.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps] = antdLib.libPageDashHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps]]
+  def PageDashHeader: reactLib.reactMod.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps] = antdLib.libPageDashHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps]]
   @scala.inline
-  def PageHeader: reactLib.reactMod.ReactNs.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps] = antdLib.antdMod.^.PageHeader.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps]]
+  def PageHeader: reactLib.reactMod.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps] = antdLib.antdMod.^.PageHeader.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps]]
   @scala.inline
-  def Pagination: reactLib.reactMod.ReactNs.ComponentType[antdLib.libPaginationPaginationMod.PaginationProps] = js.constructorOf[antdLib.libPaginationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libPaginationPaginationMod.PaginationProps]]
+  def Pagination: reactLib.reactMod.ComponentType[antdLib.libPaginationPaginationMod.PaginationProps] = js.constructorOf[antdLib.libPaginationMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libPaginationPaginationMod.PaginationProps]]
   @scala.inline
-  def Paragraph: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyParagraphMod.ParagraphProps] = antdLib.libTypographyParagraphMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyParagraphMod.ParagraphProps]]
+  def Paragraph: reactLib.reactMod.ComponentType[antdLib.libTypographyParagraphMod.ParagraphProps] = antdLib.libTypographyParagraphMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTypographyParagraphMod.ParagraphProps]]
   @scala.inline
-  def Password: reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputPasswordMod.PasswordProps] = js.constructorOf[antdLib.libInputPasswordMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputPasswordMod.PasswordProps]]
+  def Password: reactLib.reactMod.ComponentType[antdLib.libInputPasswordMod.PasswordProps] = js.constructorOf[antdLib.libInputPasswordMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libInputPasswordMod.PasswordProps]]
   @scala.inline
-  def Popconfirm: reactLib.reactMod.ReactNs.ComponentType[antdLib.libPopconfirmMod.PopconfirmProps] = js.constructorOf[antdLib.libPopconfirmMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libPopconfirmMod.PopconfirmProps]]
+  def Popconfirm: reactLib.reactMod.ComponentType[antdLib.libPopconfirmMod.PopconfirmProps] = js.constructorOf[antdLib.libPopconfirmMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libPopconfirmMod.PopconfirmProps]]
   @scala.inline
-  def Popover: reactLib.reactMod.ReactNs.ComponentType[antdLib.libPopoverMod.PopoverProps] = js.constructorOf[antdLib.libPopoverMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libPopoverMod.PopoverProps]]
+  def Popover: reactLib.reactMod.ComponentType[antdLib.libPopoverMod.PopoverProps] = js.constructorOf[antdLib.libPopoverMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libPopoverMod.PopoverProps]]
   @scala.inline
-  def Progress: reactLib.reactMod.ReactNs.ComponentType[antdLib.libProgressProgressMod.ProgressProps] = js.constructorOf[antdLib.libProgressMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libProgressProgressMod.ProgressProps]]
+  def Progress: reactLib.reactMod.ComponentType[antdLib.libProgressProgressMod.ProgressProps] = js.constructorOf[antdLib.libProgressMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libProgressProgressMod.ProgressProps]]
   @scala.inline
-  def Radio: reactLib.reactMod.ReactNs.ComponentType[antdLib.libRadioInterfaceMod.RadioProps] = js.constructorOf[antdLib.libRadioMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libRadioInterfaceMod.RadioProps]]
+  def Radio: reactLib.reactMod.ComponentType[antdLib.libRadioInterfaceMod.RadioProps] = js.constructorOf[antdLib.libRadioMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libRadioInterfaceMod.RadioProps]]
   @scala.inline
-  def RadioButton: reactLib.reactMod.ReactNs.ComponentType[antdLib.libRadioRadioButtonMod.RadioButtonProps] = js.constructorOf[antdLib.libRadioRadioButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libRadioRadioButtonMod.RadioButtonProps]]
+  def RadioButton: reactLib.reactMod.ComponentType[antdLib.libRadioRadioButtonMod.RadioButtonProps] = js.constructorOf[antdLib.libRadioRadioButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libRadioRadioButtonMod.RadioButtonProps]]
   @scala.inline
-  def Rate: reactLib.reactMod.ReactNs.ComponentType[antdLib.libRateMod.RateProps] = js.constructorOf[antdLib.libRateMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libRateMod.RateProps]]
+  def Rate: reactLib.reactMod.ComponentType[antdLib.libRateMod.RateProps] = js.constructorOf[antdLib.libRateMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libRateMod.RateProps]]
   @scala.inline
-  def Row: reactLib.reactMod.ReactNs.ComponentType[antdLib.libGridRowMod.RowProps] = js.constructorOf[antdLib.libRowMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libGridRowMod.RowProps]]
+  def Row: reactLib.reactMod.ComponentType[antdLib.libGridRowMod.RowProps] = js.constructorOf[antdLib.libRowMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libGridRowMod.RowProps]]
   @scala.inline
-  def ScrollNumber: reactLib.reactMod.ReactNs.ComponentType[antdLib.libBadgeScrollNumberMod.ScrollNumberProps] = js.constructorOf[antdLib.libBadgeScrollNumberMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libBadgeScrollNumberMod.ScrollNumberProps]]
+  def ScrollNumber: reactLib.reactMod.ComponentType[antdLib.libBadgeScrollNumberMod.ScrollNumberProps] = js.constructorOf[antdLib.libBadgeScrollNumberMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libBadgeScrollNumberMod.ScrollNumberProps]]
   @scala.inline
-  def Search: reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputSearchMod.SearchProps] = js.constructorOf[antdLib.libInputSearchMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputSearchMod.SearchProps]]
+  def Search: reactLib.reactMod.ComponentType[antdLib.libInputSearchMod.SearchProps] = js.constructorOf[antdLib.libInputSearchMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libInputSearchMod.SearchProps]]
   @scala.inline
-  def Select[T]: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.SelectProps[T]] = js.constructorOf[antdLib.libSelectMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.SelectProps[T]]]
+  def Select[T]: reactLib.reactMod.ComponentType[antdLib.libSelectMod.SelectProps[T]] = js.constructorOf[antdLib.libSelectMod.default[T]].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libSelectMod.SelectProps[T]]]
   @scala.inline
-  def Sider: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[antdLib.libLayoutSiderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  def Sider: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[antdLib.libLayoutSiderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def Skeleton: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSkeletonMod.SkeletonProps] = js.constructorOf[antdLib.libSkeletonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSkeletonMod.SkeletonProps]]
+  def Skeleton: reactLib.reactMod.ComponentType[antdLib.libSkeletonMod.SkeletonProps] = js.constructorOf[antdLib.libSkeletonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libSkeletonMod.SkeletonProps]]
   @scala.inline
-  def Slider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSliderMod.SliderProps] = js.constructorOf[antdLib.libSliderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSliderMod.SliderProps]]
+  def Slider: reactLib.reactMod.ComponentType[antdLib.libSliderMod.SliderProps] = js.constructorOf[antdLib.libSliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libSliderMod.SliderProps]]
   @scala.inline
-  def Spin: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSpinMod.SpinProps] = js.constructorOf[antdLib.libSpinMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSpinMod.SpinProps]]
+  def Spin: reactLib.reactMod.ComponentType[antdLib.libSpinMod.SpinProps] = js.constructorOf[antdLib.libSpinMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libSpinMod.SpinProps]]
   @scala.inline
-  def Step: reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepProps] = antdLib.libStepsMod.default.Step.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepProps]]
+  def Step: reactLib.reactMod.ComponentType[antdLib.libStepsMod.StepProps] = antdLib.libStepsMod.default.Step.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libStepsMod.StepProps]]
   @scala.inline
-  def Steps: reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepsProps] = js.constructorOf[antdLib.libStepsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepsProps]]
+  def Steps: reactLib.reactMod.ComponentType[antdLib.libStepsMod.StepsProps] = js.constructorOf[antdLib.libStepsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libStepsMod.StepsProps]]
   @scala.inline
-  def SubMenu: reactLib.reactMod.ReactNs.ComponentType[antdLib.libMenuSubMenuMod.SubMenuProps] = js.constructorOf[antdLib.libMenuSubMenuMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libMenuSubMenuMod.SubMenuProps]]
+  def SubMenu: reactLib.reactMod.ComponentType[antdLib.libMenuSubMenuMod.SubMenuProps] = js.constructorOf[antdLib.libMenuSubMenuMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libMenuSubMenuMod.SubMenuProps]]
   @scala.inline
-  def Switch: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSwitchMod.SwitchProps] = js.constructorOf[antdLib.libSwitchMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSwitchMod.SwitchProps]]
+  def Switch: reactLib.reactMod.ComponentType[antdLib.libSwitchMod.SwitchProps] = js.constructorOf[antdLib.libSwitchMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libSwitchMod.SwitchProps]]
   @scala.inline
-  def TabPane: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabPaneProps] = antdLib.libTabsMod.default.TabPane.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabPaneProps]]
+  def TabPane: reactLib.reactMod.ComponentType[antdLib.libTabsMod.TabPaneProps] = antdLib.libTabsMod.default.TabPane.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTabsMod.TabPaneProps]]
   @scala.inline
-  def Table[T]: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableInterfaceMod.TableProps[T]] = js.constructorOf[antdLib.libTableMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableInterfaceMod.TableProps[T]]]
+  def Table[T]: reactLib.reactMod.ComponentType[antdLib.libTableInterfaceMod.TableProps[T]] = js.constructorOf[antdLib.libTableMod.default[T]].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTableInterfaceMod.TableProps[T]]]
   @scala.inline
-  def Tabs: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabsProps] = js.constructorOf[antdLib.libTabsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabsProps]]
+  def Tabs: reactLib.reactMod.ComponentType[antdLib.libTabsMod.TabsProps] = js.constructorOf[antdLib.libTabsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTabsMod.TabsProps]]
   @scala.inline
-  def Tag: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTagMod.TagProps] = js.constructorOf[antdLib.libTagMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTagMod.TagProps]]
+  def Tag: reactLib.reactMod.ComponentType[antdLib.libTagMod.TagProps] = js.constructorOf[antdLib.libTagMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTagMod.TagProps]]
   @scala.inline
-  def Text: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyTextMod.TextProps] = antdLib.libTypographyTextMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyTextMod.TextProps]]
+  def Text: reactLib.reactMod.ComponentType[antdLib.libTypographyTextMod.TextProps] = antdLib.libTypographyTextMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTypographyTextMod.TextProps]]
   @scala.inline
-  def TextArea: reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputTextAreaMod.TextAreaProps] = js.constructorOf[antdLib.libInputTextAreaMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libInputTextAreaMod.TextAreaProps]]
+  def TextArea: reactLib.reactMod.ComponentType[antdLib.libInputTextAreaMod.TextAreaProps] = js.constructorOf[antdLib.libInputTextAreaMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libInputTextAreaMod.TextAreaProps]]
   @scala.inline
-  def TimeDashPicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps] = js.constructorOf[antdLib.libTimeDashPickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps]]
+  def TimeDashPicker: reactLib.reactMod.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps] = js.constructorOf[antdLib.libTimeDashPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps]]
   @scala.inline
-  def TimePicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps] = js.constructorOf[antdLib.antdMod.TimePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps]]
+  def TimePicker: reactLib.reactMod.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps] = js.constructorOf[antdLib.antdMod.TimePicker].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTimeDashPickerMod.TimePickerProps]]
   @scala.inline
-  def Timeline: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimelineTimelineMod.TimelineProps] = js.constructorOf[antdLib.libTimelineMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimelineTimelineMod.TimelineProps]]
+  def Timeline: reactLib.reactMod.ComponentType[antdLib.libTimelineTimelineMod.TimelineProps] = js.constructorOf[antdLib.libTimelineMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTimelineTimelineMod.TimelineProps]]
   @scala.inline
-  def TimelineItem: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimelineTimelineItemMod.TimeLineItemProps] = antdLib.libTimelineTimelineItemMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTimelineTimelineItemMod.TimeLineItemProps]]
+  def TimelineItem: reactLib.reactMod.ComponentType[antdLib.libTimelineTimelineItemMod.TimeLineItemProps] = antdLib.libTimelineTimelineItemMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTimelineTimelineItemMod.TimeLineItemProps]]
   @scala.inline
-  def Title: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyTitleMod.TitleProps] = antdLib.libTypographyTitleMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyTitleMod.TitleProps]]
+  def Title: reactLib.reactMod.ComponentType[antdLib.libTypographyTitleMod.TitleProps] = antdLib.libTypographyTitleMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTypographyTitleMod.TitleProps]]
   @scala.inline
-  def Tooltip: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTooltipMod.TooltipProps] = js.constructorOf[antdLib.libTooltipMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTooltipMod.TooltipProps]]
+  def Tooltip: reactLib.reactMod.ComponentType[antdLib.libTooltipMod.TooltipProps] = js.constructorOf[antdLib.libTooltipMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTooltipMod.TooltipProps]]
   @scala.inline
-  def Transfer: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTransferMod.TransferProps] = js.constructorOf[antdLib.libTransferMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTransferMod.TransferProps]]
+  def Transfer: reactLib.reactMod.ComponentType[antdLib.libTransferMod.TransferProps] = js.constructorOf[antdLib.libTransferMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTransferMod.TransferProps]]
   @scala.inline
-  def Tree: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.TreeProps] = js.constructorOf[antdLib.libTreeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.TreeProps]]
+  def Tree: reactLib.reactMod.ComponentType[antdLib.libTreeTreeMod.TreeProps] = js.constructorOf[antdLib.libTreeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTreeTreeMod.TreeProps]]
   @scala.inline
-  def TreeDashSelect: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.libTreeDashSelectMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps]]
+  def TreeDashSelect: reactLib.reactMod.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.libTreeDashSelectMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps]]
   @scala.inline
-  def TreeNode: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps] = antdLib.libTreeMod.default.TreeNode.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps]]
+  def TreeNode: reactLib.reactMod.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps] = antdLib.libTreeMod.default.TreeNode.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps]]
   @scala.inline
-  def TreeSelect: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.antdMod.TreeSelect].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps]]
+  def TreeSelect: reactLib.reactMod.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.antdMod.TreeSelect].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps]]
   @scala.inline
-  def Typography: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyTypographyMod.InternalTypographyProps] = antdLib.libTypographyTypographyMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTypographyTypographyMod.InternalTypographyProps]]
+  def Typography: reactLib.reactMod.ComponentType[antdLib.libTypographyTypographyMod.InternalTypographyProps] = antdLib.libTypographyTypographyMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libTypographyTypographyMod.InternalTypographyProps]]
   @scala.inline
-  def Upload: reactLib.reactMod.ReactNs.ComponentType[antdLib.libUploadInterfaceMod.UploadProps] = js.constructorOf[antdLib.libUploadMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libUploadInterfaceMod.UploadProps]]
+  def Upload: reactLib.reactMod.ComponentType[antdLib.libUploadInterfaceMod.UploadProps] = js.constructorOf[antdLib.libUploadMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libUploadInterfaceMod.UploadProps]]
   @scala.inline
   def ActionButtonProps: antdLib.libModalActionButtonMod.ActionButtonProps.type = antdLib.libModalActionButtonMod.ActionButtonProps
   type ActionButtonProps = antdLib.libModalActionButtonMod.ActionButtonProps

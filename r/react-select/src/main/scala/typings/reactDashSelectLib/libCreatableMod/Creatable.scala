@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Creatable[OptionType] ()
   extends reactLib.reactMod.Component[Props[OptionType], State[OptionType], js.Any] {
-  var select: reactLib.reactMod.ReactNs.Ref[_] = js.native
+  var select: reactLib.reactMod.Ref[_] = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def onChange(

@@ -11,11 +11,7 @@ object ^ extends js.Object {
   val DELETE: fastDashDiffLib.fastDashDiffLibNumbers.`-1` = js.native
   val EQUAL: fastDashDiffLib.fastDashDiffLibNumbers.`0` = js.native
   val INSERT: fastDashDiffLib.fastDashDiffLibNumbers.`1` = js.native
-  def apply(text1: java.lang.String, text2: java.lang.String): js.Array[fastDashDiffLib.fastDashDiffMod.diffNs.Diff] = js.native
-  def apply(
-    text1: java.lang.String,
-    text2: java.lang.String,
-    cursorPos: scala.Double | fastDashDiffLib.fastDashDiffMod.diffNs.CursorInfo
-  ): js.Array[fastDashDiffLib.fastDashDiffMod.diffNs.Diff] = js.native
+  def apply(text1: java.lang.String, text2: java.lang.String): js.Array[Diff] = js.native
+  def apply(text1: java.lang.String, text2: java.lang.String, cursorPos: scala.Double | CursorInfo): js.Array[Diff] = js.native
 }
 

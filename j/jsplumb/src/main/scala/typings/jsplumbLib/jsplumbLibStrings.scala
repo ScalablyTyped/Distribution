@@ -8,131 +8,131 @@ import scala.scalajs.js.annotation._
 object jsplumbLibStrings {
   @js.native
   sealed trait Arrow
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.OverlayId
+    extends jsplumbLib.jsplumbMod.OverlayId
   
   @js.native
   sealed trait Assign
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait AutoDefault
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait Bezier
-    extends jsplumbLib.jsplumbMod.jsPlumbNs._ConnectorId
+    extends jsplumbLib.jsplumbMod._ConnectorId
   
   @js.native
   sealed trait Blank
-    extends jsplumbLib.jsplumbMod.jsPlumbNs._EndpointId
+    extends jsplumbLib.jsplumbMod._EndpointId
   
   @js.native
   sealed trait Bottom
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait BottomCenter
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait BottomLeft
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait BottomRight
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait Center
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait Continuous
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait ContinuousBottom
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait ContinuousLeft
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait ContinuousRight
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait ContinuousTop
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait Custom
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.OverlayId
+    extends jsplumbLib.jsplumbMod.OverlayId
   
   @js.native
   sealed trait Dot
-    extends jsplumbLib.jsplumbMod.jsPlumbNs._EndpointId
+    extends jsplumbLib.jsplumbMod._EndpointId
   
   @js.native
   sealed trait Flowchart
-    extends jsplumbLib.jsplumbMod.jsPlumbNs._ConnectorId
+    extends jsplumbLib.jsplumbMod._ConnectorId
   
   @js.native
   sealed trait Label
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.OverlayId
+    extends jsplumbLib.jsplumbMod.OverlayId
   
   @js.native
   sealed trait Left
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait LeftMiddle
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait Perimeter
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait PlainArrow
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.OverlayId
+    extends jsplumbLib.jsplumbMod.OverlayId
   
   @js.native
   sealed trait Rectangle
-    extends jsplumbLib.jsplumbMod.jsPlumbNs._EndpointId
+    extends jsplumbLib.jsplumbMod._EndpointId
   
   @js.native
   sealed trait Right
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait RightMiddle
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait StateMachine
-    extends jsplumbLib.jsplumbMod.jsPlumbNs._ConnectorId
+    extends jsplumbLib.jsplumbMod._ConnectorId
   
   @js.native
   sealed trait Straight
-    extends jsplumbLib.jsplumbMod.jsPlumbNs._ConnectorId
+    extends jsplumbLib.jsplumbMod._ConnectorId
   
   @js.native
   sealed trait Top
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait TopCenter
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait TopLeft
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait TopRight
-    extends jsplumbLib.jsplumbMod.jsPlumbNs.AnchorId
+    extends jsplumbLib.jsplumbMod.AnchorId
   
   @js.native
   sealed trait click extends js.Object

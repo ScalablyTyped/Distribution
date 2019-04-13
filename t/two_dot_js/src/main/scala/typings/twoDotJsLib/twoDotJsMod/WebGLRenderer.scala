@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("two.js", "WebGLRenderer")
 @js.native
-class WebGLRenderer ()
-  extends twoDotJsLib.twoDotJsMod.TwoNs.WebGLRenderer
+class WebGLRenderer () extends Renderer
 

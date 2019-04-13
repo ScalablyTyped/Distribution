@@ -54,7 +54,6 @@ object incrementalDashDomMod extends js.Object {
     /* typeId */ js.UndefOr[js.Any], 
     stdLib.Element
   ] = js.native
-  var patch: incrementalDashDomLib.Anon_Data = js.native
   var patchInner: js.Function3[
     /* node */ stdLib.Element | stdLib.DocumentFragment, 
     /* fn */ js.Function1[/* data */ js.Any, scala.Unit], 
@@ -71,5 +70,13 @@ object incrementalDashDomMod extends js.Object {
   var skipNode: js.Function0[scala.Unit] = js.native
   var symbols: js.Any = js.native
   var text: js.Function1[/* value */ java.lang.String | scala.Double | scala.Boolean, stdLib.Text] = js.native
+  @js.native
+  object patch extends js.Object {
+    def apply[T](node: stdLib.DocumentFragment, fn: js.Function1[/* data */ T, scala.Unit]): stdLib.Node = js.native
+    def apply[T](node: stdLib.DocumentFragment, fn: js.Function1[/* data */ T, scala.Unit], data: T): stdLib.Node = js.native
+    def apply[T](node: stdLib.Element, fn: js.Function1[/* data */ T, scala.Unit]): stdLib.Node = js.native
+    def apply[T](node: stdLib.Element, fn: js.Function1[/* data */ T, scala.Unit], data: T): stdLib.Node = js.native
+  }
+  
 }
 

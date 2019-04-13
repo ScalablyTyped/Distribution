@@ -14,7 +14,7 @@ trait CardProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Increases the shadow depth to appear elevated.
     * @default false
@@ -33,9 +33,9 @@ object CardProps {
     * Additional properties passed to component root.
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -59,7 +59,7 @@ object CardProps {
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
     raised: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: CardTheme = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()

@@ -8,83 +8,83 @@ import scala.scalajs.js.annotation._
 object nodeDashSpriteDashGeneratorLibStrings {
   @js.native
   sealed trait all
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.CompositorFilters
   
   @js.native
   sealed trait average
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.CompositorFilters
   
   @js.native
   sealed trait canvas
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinCompositors
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinCompositors
   
   @js.native
   sealed trait css
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinStylesheetFormats
   
   @js.native
   sealed trait diagonal
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinLayouts
   
   @js.native
   sealed trait gm
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinCompositors
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinCompositors
   
   @js.native
   sealed trait horizontal
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinLayouts
   
   @js.native
   sealed trait javascript
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinStylesheetFormats
   
   @js.native
   sealed trait jimp
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinCompositors
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinCompositors
   
   @js.native
   sealed trait less
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinStylesheetFormats
   
   @js.native
   sealed trait none
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.CompositorFilters
   
   @js.native
   sealed trait packed
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinLayouts
   
   @js.native
   sealed trait paeth
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.CompositorFilters
   
   @js.native
   sealed trait `prefixed-css`
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinStylesheetFormats
   
   @js.native
   sealed trait sass
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinStylesheetFormats
   
   @js.native
   sealed trait scss
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinStylesheetFormats
   
   @js.native
   sealed trait stylus
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinStylesheetFormats
   
   @js.native
   sealed trait sub
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.CompositorFilters
   
   @js.native
   sealed trait up
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.CompositorFilters
   
   @js.native
   sealed trait vertical
-    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.BuiltinLayouts
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

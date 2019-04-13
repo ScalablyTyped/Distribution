@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemProps extends js.Object {
-  var arrowIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var arrowIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var arrowStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ImageStyle]
   ] = js.undefined
@@ -38,7 +38,7 @@ trait ItemProps extends js.Object {
   /**
     * Icon displayed on the left of the settings item
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Allows for the item to become an auth item
     */
@@ -65,7 +65,7 @@ trait ItemProps extends js.Object {
   /**
     * Right side content
     */
-  var rightSideContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var rightSideContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Right Side Style
     */
@@ -117,7 +117,7 @@ trait ItemProps extends js.Object {
 object ItemProps {
   @scala.inline
   def apply(
-    arrowIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    arrowIcon: reactLib.reactMod.ReactNode = null,
     arrowStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ImageStyle] = null,
     authPropsPW: js.Object = null,
     authPropsUser: js.Object = null,
@@ -126,14 +126,14 @@ object ItemProps {
     editableTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     hasNavArrow: js.UndefOr[scala.Boolean] = js.undefined,
     hasSwitch: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     isAuth: js.UndefOr[scala.Boolean] = js.undefined,
     itemBoxStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     itemRef: () => scala.Unit = null,
     itemWidth: scala.Int | scala.Double = null,
     onLongPress: () => scala.Unit = null,
     onPress: () => scala.Unit = null,
-    rightSideContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightSideContent: reactLib.reactMod.ReactNode = null,
     rightSideStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     switchOnValueChange: () => scala.Unit = null,
     switchProps: js.Object = null,

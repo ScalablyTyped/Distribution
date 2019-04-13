@@ -19,7 +19,7 @@ trait ITriggerProps extends js.Object {
   var maskTransitionName: js.UndefOr[java.lang.String | js.Object] = js.undefined
   var onPopupAlign: js.UndefOr[js.Function] = js.undefined
   var onPopupVisibleChange: js.UndefOr[js.Function] = js.undefined
-  var popup: reactLib.reactMod.ReactNs.ReactNode | js.Function
+  var popup: reactLib.reactMod.ReactNode | js.Function
   var popupAlign: js.UndefOr[js.Any] = js.undefined
   var popupAnimation: js.UndefOr[js.Any] = js.undefined
   var popupClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -34,7 +34,7 @@ trait ITriggerProps extends js.Object {
 object ITriggerProps {
   @scala.inline
   def apply(
-    popup: reactLib.reactMod.ReactNs.ReactNode | js.Function,
+    popup: reactLib.reactMod.ReactNode | js.Function,
     afterPopupVisibleChange: js.Function = null,
     builtinPlacements: js.Any = null,
     defaultPopupVisible: js.UndefOr[scala.Boolean] = js.undefined,

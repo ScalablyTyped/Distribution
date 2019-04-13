@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTabDashBarPropsTypeMod {
-  type TabIcon = reactLib.reactMod.ReactNs.ReactElement[js.Any] | antdDashMobileLib.Anon_Uri
+  type TabIcon = reactLib.reactMod.ReactElement[js.Any] | antdDashMobileLib.Anon_Uri
 }

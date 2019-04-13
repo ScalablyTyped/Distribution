@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-overlays", "DropdownMenu")
 @js.native
 class DropdownMenu ()
-  extends reactDashOverlaysLib.libDropdownMenuMod.namespaced
+  extends reactDashOverlaysLib.libDropdownMenuMod.^
 

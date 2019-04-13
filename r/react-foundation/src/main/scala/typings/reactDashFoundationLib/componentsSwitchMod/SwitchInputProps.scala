@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - reactDashFoundationLib.utilsMod.GeneralPropTypes because var conflicts: className. Inlined showFor, showOnlyFor, hideFor, hideOnlyFor, isHidden, isInvisible, showForLandscape, showForPortrait, showForSr, showOnFocus, isClearfix, float */ trait SwitchInputProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] {
+  extends reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] {
   var float: js.UndefOr[reactDashFoundationLib.enumsMod.FloatTypes] = js.undefined
   var hideFor: js.UndefOr[
     reactDashFoundationLib.reactDashFoundationLibStrings.medium | reactDashFoundationLib.reactDashFoundationLibStrings.large
@@ -30,7 +30,7 @@ object SwitchInputProps {
   @scala.inline
   def apply(
     GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
+    InputHTMLAttributes: reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     id: java.lang.String = null,
     `type`: reactDashFoundationLib.enumsMod.SwitchInputTypes = null
   ): SwitchInputProps = {

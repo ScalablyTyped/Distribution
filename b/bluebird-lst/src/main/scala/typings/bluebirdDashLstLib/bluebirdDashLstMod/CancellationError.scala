@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bluebird-lst", "CancellationError")
 @js.native
 class CancellationError ()
-  extends bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CancellationError {
+  extends stdLib.Error {
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

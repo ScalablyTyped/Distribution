@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TruncateProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[Truncate] {
-  var ellipsis: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  extends reactLib.reactMod.HTMLProps[Truncate] {
+  var ellipsis: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var lines: js.UndefOr[scala.Double | reactDashTruncateLib.reactDashTruncateLibNumbers.`false`] = js.undefined
   var onTruncate: js.UndefOr[js.Function1[/* isTruncated */ scala.Boolean, scala.Unit]] = js.undefined
   var trimWhitespace: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,8 +16,8 @@ trait TruncateProps
 object TruncateProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[Truncate] = null,
-    ellipsis: reactLib.reactMod.ReactNs.ReactNode = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[Truncate] = null,
+    ellipsis: reactLib.reactMod.ReactNode = null,
     lines: scala.Double | reactDashTruncateLib.reactDashTruncateLibNumbers.`false` = null,
     onTruncate: /* isTruncated */ scala.Boolean => scala.Unit = null,
     trimWhitespace: js.UndefOr[scala.Boolean] = js.undefined

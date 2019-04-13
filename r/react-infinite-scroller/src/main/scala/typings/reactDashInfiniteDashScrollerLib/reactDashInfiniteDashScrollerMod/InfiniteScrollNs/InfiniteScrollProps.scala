@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * <InfiniteScroll /> properties.
   */
 trait InfiniteScrollProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[InfiniteScroll] {
+  extends reactLib.reactMod.HTMLProps[InfiniteScroll] {
   /**
     * Name of the element that the component should render as.
     * Defaults to 'div'.
@@ -37,7 +37,7 @@ trait InfiniteScrollProps
   /**
     * Loader component for indicating "loading more".
     */
-  var loader: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var loader: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The number of the first page to load, with the default of 0, the first page is 1.
     * Defaults to 0.
@@ -69,13 +69,13 @@ object InfiniteScrollProps {
   @scala.inline
   def apply(
     loadMore: scala.Double => scala.Unit,
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[InfiniteScroll] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[InfiniteScroll] = null,
     element: java.lang.String = null,
     getScrollParent: () => stdLib.HTMLElement | scala.Null = null,
     hasMore: js.UndefOr[scala.Boolean] = js.undefined,
     initialLoad: js.UndefOr[scala.Boolean] = js.undefined,
     isReverse: js.UndefOr[scala.Boolean] = js.undefined,
-    loader: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    loader: reactLib.reactMod.ReactElement[_] = null,
     pageStart: scala.Int | scala.Double = null,
     threshold: scala.Int | scala.Double = null,
     useCapture: js.UndefOr[scala.Boolean] = js.undefined,

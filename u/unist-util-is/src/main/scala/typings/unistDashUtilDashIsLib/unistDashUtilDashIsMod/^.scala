@@ -21,23 +21,11 @@ object ^ extends js.Object {
     * @param context Context object to invoke `test` with
     * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
     */
+  def apply(test: Test | js.Array[Test], node: js.Any): scala.Boolean = js.native
+  def apply(test: Test | js.Array[Test], node: js.Any, index: scala.Double): scala.Boolean = js.native
+  def apply(test: Test | js.Array[Test], node: js.Any, index: scala.Double, parent: unistLib.unistMod.Parent): scala.Boolean = js.native
   def apply(
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
-    node: js.Any
-  ): scala.Boolean = js.native
-  def apply(
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
-    node: js.Any,
-    index: scala.Double
-  ): scala.Boolean = js.native
-  def apply(
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
-    node: js.Any,
-    index: scala.Double,
-    parent: unistLib.unistMod.Parent
-  ): scala.Boolean = js.native
-  def apply(
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
+    test: Test | js.Array[Test],
     node: js.Any,
     index: scala.Double,
     parent: unistLib.unistMod.Parent,

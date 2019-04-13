@@ -34,6 +34,6 @@ object ^ extends js.Object {
     * Make a orientdb server client in binary protocol  .
     * @param config The configuration for server connection.
     */
-  def apply(config: orientjsLib.orientjsMod.orientjsNs.ServerConfig): orientjsLib.orientjsMod.orientjsNs.Server = js.native
+  def apply(config: ServerConfig): Server = js.native
 }
 

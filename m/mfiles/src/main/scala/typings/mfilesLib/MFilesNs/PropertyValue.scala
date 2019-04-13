@@ -34,3 +34,8 @@ class PropertyValue ()
   override def GetValueAsUnlocalizedText(): java.lang.String = js.native
 }
 
+@JSGlobal("MFiles.PropertyValue")
+@js.native
+object PropertyValue
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPropertyValue]
+

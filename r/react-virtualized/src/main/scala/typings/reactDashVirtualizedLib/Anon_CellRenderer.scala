@@ -26,6 +26,6 @@ trait Anon_CellRenderer extends js.Object {
     * Responsible for rendering a cell given an row and column index.
     * Should implement the following interface: ({ columnIndex: number, rowIndex: number }): PropTypes.node
     */
-  def cellRenderer(props: reactDashVirtualizedLib.distEsGridMod.GridCellProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def cellRenderer(props: reactDashVirtualizedLib.distEsGridMod.GridCellProps): reactLib.reactMod.ReactNode = js.native
 }
 

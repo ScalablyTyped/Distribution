@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parchment/dist/src/registry", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val DATA_KEY: /* __blot */ java.lang.String = js.native
+  val DATA_KEY: parchmentLib.parchmentLibStrings.__blot = js.native
   def create(input: java.lang.String): parchmentLib.distSrcBlotAbstractBlotMod.Blot = js.native
   def create(input: java.lang.String, value: js.Any): parchmentLib.distSrcBlotAbstractBlotMod.Blot = js.native
   def create(input: Scope): parchmentLib.distSrcBlotAbstractBlotMod.Blot = js.native

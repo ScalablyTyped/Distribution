@@ -10,8 +10,14 @@ import scala.scalajs.js.annotation._
 class Query[T] ()
   extends nodeLib.streamMod.Readable
      with stdLib.Promise[T] {
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   var toStringTag_Query: jsforceLib.jsforceLibStrings.Promise = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def del(): js.Any = js.native
   def del(
     callback: js.Function2[
@@ -65,7 +71,16 @@ class Query[T] ()
   ): js.Promise[js.Array[jsforceLib.recordDashResultMod.RecordResult]] = js.native
   @JSName("destroy")
   def destroy_Unit(): scala.Unit = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def emit(event: java.lang.String, args: js.Any*): scala.Boolean = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def emit(event: js.Symbol, args: js.Any*): scala.Boolean = js.native
   def end(): Query[T] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def eventNames(): js.Array[java.lang.String | js.Symbol] = js.native
   def exec(): Query[T] = js.native
   def exec(options: ExecuteOptions): Query[T] = js.native
   def exec(
@@ -81,16 +96,85 @@ class Query[T] ()
   def explain(): js.Promise[ExplainInfo] = js.native
   def explain(callback: js.Function2[/* err */ stdLib.Error, /* info */ ExplainInfo, scala.Unit]): js.Promise[ExplainInfo] = js.native
   def filter(filter: js.Object): Query[T] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def getMaxListeners(): scala.Double = js.native
   def hint(hint: js.Object): Query[T] = js.native
   def include(include: java.lang.String): Query[T] = js.native
   def limit(value: scala.Double): Query[T] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def listenerCount(`type`: java.lang.String): scala.Double = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def listenerCount(`type`: js.Symbol): scala.Double = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def listeners(event: java.lang.String): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   def map(callback: js.Function1[/* currentValue */ js.Object, scala.Unit]): js.Promise[_] = js.native
   def maxFetch(value: scala.Double): Query[T] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def off(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def offset(value: scala.Double): Query[T] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def on(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: nodeLib.NodeJSNs.WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
+  /* InferMemberOverrides */
   override def pipe[T /* <: nodeLib.NodeJSNs.WritableStream */](destination: T, options: nodeLib.Anon_End): T = js.native
+  // Added in Node 6...
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def rawListeners(event: java.lang.String): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def removeAllListeners(): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def removeAllListeners(event: java.lang.String): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def removeAllListeners(event: js.Symbol): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def run(): Query[T] = js.native
   def run(options: ExecuteOptions): Query[T] = js.native
   def run(
@@ -101,6 +185,9 @@ class Query[T] ()
   def select(fields: java.lang.String): Query[T] = js.native
   def select(fields: js.Array[java.lang.String]): Query[T] = js.native
   def select(fields: js.Object): Query[T] = js.native
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def setMaxListeners(n: scala.Double): this.type = js.native
   def skip(value: scala.Double): Query[T] = js.native
   def sort(keyOrList: java.lang.String): Query[T] = js.native
   def sort(keyOrList: java.lang.String, direction: scala.Double): Query[T] = js.native

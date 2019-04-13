@@ -29,7 +29,12 @@ object emotionMod extends js.Object {
     /* repeated */ createDashEmotionLib.createDashEmotionMod.Interpolation, 
     java.lang.String
   ] = js.native
-  val merge: emotionLib.Anon_ClassName = js.native
   val sheet: createDashEmotionLib.createDashEmotionMod.StyleSheet = js.native
+  @js.native
+  object merge extends js.Object {
+    def apply(className: java.lang.String): java.lang.String = js.native
+    def apply(className: java.lang.String, sourceMap: java.lang.String): java.lang.String = js.native
+  }
+  
 }
 

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Textract ()
   extends awsDashSdkLib.clientsAllMod.Textract {
-  def this(options: awsDashSdkLib.clientsTextractMod.TextractNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsTextractMod.ClientConfiguration) = this()
 }
 

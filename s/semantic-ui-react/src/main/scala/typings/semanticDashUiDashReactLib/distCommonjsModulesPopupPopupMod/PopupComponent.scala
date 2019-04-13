@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PopupComponent
-  extends reactLib.reactMod.ReactNs.ComponentClass[PopupProps, reactLib.reactMod.ReactNs.ComponentState] {
-  var Content: reactLib.reactMod.ReactNs.StatelessComponent[
+  extends reactLib.reactMod.ComponentClass[PopupProps, reactLib.reactMod.ComponentState] {
+  var Content: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps
   ] = js.native
-  var Header: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Header: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
   ] = js.native
 }

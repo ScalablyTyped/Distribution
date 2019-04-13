@@ -28,7 +28,7 @@ trait InputItem
   def handleOnChange(value: java.lang.String, isMutated: scala.Boolean): scala.Unit = js.native
   def handleOnChange(value: java.lang.String, isMutated: scala.Boolean, adjustPos: js.Function): scala.Unit = js.native
   def onInputBlur(value: java.lang.String): scala.Unit = js.native
-  def onInputChange(e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def onInputChange(e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   def onInputFocus(value: java.lang.String): scala.Unit = js.native
 }
 

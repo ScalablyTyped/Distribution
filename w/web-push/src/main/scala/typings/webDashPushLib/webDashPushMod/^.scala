@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("web-push", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val supportedContentEncodings: webDashPushLib.Anon_AES128GCM = js.native
   def encrypt(
     userPublicKey: java.lang.String,
     userAuth: java.lang.String,

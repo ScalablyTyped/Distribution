@@ -14,11 +14,11 @@ trait Anon_Ariahaspopup extends js.Object {
   var `data-toggle`: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var nav: js.UndefOr[scala.Boolean] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var outline: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
   var split: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_Ariahaspopup {
@@ -32,11 +32,11 @@ object Anon_Ariahaspopup {
     `data-toggle`: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     nav: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
     outline: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     split: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_Ariahaspopup = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(`aria-haspopup`)) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`)

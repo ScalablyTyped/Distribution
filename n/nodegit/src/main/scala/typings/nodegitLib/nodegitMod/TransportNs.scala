@@ -15,6 +15,5 @@ object TransportNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.transportMod.TransportNs.FLAGS with scala.Double] = js.native
   }
   
-  type FLAGS = nodegitLib.transportMod.TransportNs.FLAGS
 }
 

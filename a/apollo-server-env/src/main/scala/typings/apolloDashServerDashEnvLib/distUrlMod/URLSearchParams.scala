@@ -10,10 +10,7 @@ import scala.scalajs.js.annotation._
 class URLSearchParams ()
   extends stdLib.Iterable[js.Tuple2[java.lang.String, java.lang.String]] {
   def this(init: URLSearchParamsInit) = this()
-  /* CompleteClass */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  override var iterator: js.Function0[stdLib.Iterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator_URLSearchParams: js.Function0[stdLib.IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def delete(name: java.lang.String): scala.Unit = js.native

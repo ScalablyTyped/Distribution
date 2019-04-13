@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MarkdownIt extends js.Object {
-  var block: markdownDashItLib.libParserUnderscoreBlockMod.namespaced = js.native
-  var core: markdownDashItLib.libParserUnderscoreCoreMod.namespaced = js.native
+  var block: markdownDashItLib.libParserUnderscoreBlockMod.^ = js.native
+  var core: markdownDashItLib.libParserUnderscoreCoreMod.^ = js.native
   var helpers: js.Any = js.native
-  var `inline`: markdownDashItLib.libParserUnderscoreInlineMod.namespaced = js.native
-  var linkify: linkifyDashItLib.linkifyDashItMod.LinkifyItNs.LinkifyIt = js.native
-  var renderer: markdownDashItLib.libRendererMod.namespaced = js.native
+  var `inline`: markdownDashItLib.libParserUnderscoreInlineMod.^ = js.native
+  var linkify: linkifyDashItLib.linkifyDashItMod.LinkifyIt = js.native
+  var renderer: markdownDashItLib.libRendererMod.^ = js.native
   var utils: markdownDashItLib.Anon_ArrayReplaceAt = js.native
   def disable(rules: java.lang.String): MarkdownIt = js.native
   def disable(rules: java.lang.String, ignoreInvalid: scala.Boolean): MarkdownIt = js.native
@@ -24,13 +24,13 @@ trait MarkdownIt extends js.Object {
   def enable(rules: js.Array[java.lang.String], ignoreInvalid: scala.Boolean): MarkdownIt = js.native
   def normalizeLink(url: java.lang.String): java.lang.String = js.native
   def normalizeLinkText(url: java.lang.String): java.lang.String = js.native
-  def parse(src: java.lang.String, env: js.Any): js.Array[markdownDashItLib.libTokenMod.namespaced] = js.native
-  def parseInline(src: java.lang.String, env: js.Any): js.Array[markdownDashItLib.libTokenMod.namespaced] = js.native
+  def parse(src: java.lang.String, env: js.Any): js.Array[markdownDashItLib.libTokenMod.^] = js.native
+  def parseInline(src: java.lang.String, env: js.Any): js.Array[markdownDashItLib.libTokenMod.^] = js.native
   def render(md: java.lang.String): java.lang.String = js.native
   def render(md: java.lang.String, env: js.Any): java.lang.String = js.native
   def renderInline(md: java.lang.String): java.lang.String = js.native
   def renderInline(md: java.lang.String, env: js.Any): java.lang.String = js.native
-  def set(options: markdownDashItLib.libMod.MarkdownItNs.Options): MarkdownIt = js.native
+  def set(options: Options): MarkdownIt = js.native
   /*
     // The following only works in 3.0
     // Since it's still not allowed to target 3.0, i'll leave the code commented out

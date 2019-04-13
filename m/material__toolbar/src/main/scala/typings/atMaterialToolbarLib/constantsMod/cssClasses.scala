@@ -25,10 +25,11 @@ object cssClasses {
     FLEXIBLE_DEFAULT_BEHAVIOR: atMaterialToolbarLib.atMaterialToolbarLibStrings.`mdc-toolbar--flexible-default-behavior`,
     FLEXIBLE_MAX: atMaterialToolbarLib.atMaterialToolbarLibStrings.`mdc-toolbar--flexible-space-maximized`,
     FLEXIBLE_MIN: atMaterialToolbarLib.atMaterialToolbarLibStrings.`mdc-toolbar--flexible-space-minimized`,
-    TOOLBAR_ROW_FLEXIBLE: atMaterialToolbarLib.atMaterialToolbarLibStrings.`mdc-toolbar--flexible`
+    TOOLBAR_ROW_FLEXIBLE: atMaterialToolbarLib.atMaterialToolbarLibStrings.`mdc-toolbar--flexible`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): cssClasses = {
     val __obj = js.Dynamic.literal(FIXED = FIXED, FIXED_AT_LAST_ROW = FIXED_AT_LAST_ROW, FIXED_LASTROW = FIXED_LASTROW, FLEXIBLE_DEFAULT_BEHAVIOR = FLEXIBLE_DEFAULT_BEHAVIOR, FLEXIBLE_MAX = FLEXIBLE_MAX, FLEXIBLE_MIN = FLEXIBLE_MIN, TOOLBAR_ROW_FLEXIBLE = TOOLBAR_ROW_FLEXIBLE)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

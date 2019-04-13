@@ -1,8 +1,8 @@
 [info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(child-process-promise) [id => child-process-promise, phase => typescript, file => ../types/child-process-promise/index.d.ts] 
 [debug] PhaseRunner.scala:82 Success [id => child-process-promise, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise),TsIdentLibrarySimple(child-process-promise)),TsIdentModule(None,List(child-process-promise))) [id => child-process-promise, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise),TsIdentLibrarySimple(child-process-promise)),TsIdentModule(None,List(child-process-promise))) [id => child-process-promise, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(child-process-promise)) [id => child-process-promise, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:204 Processing TsIdentLibrarySimple(child-process-promise) [id => child-process-promise, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(child-process-promise) [id => child-process-promise, phase => typescript] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Buffer) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Encoding) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_EncodingString) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
@@ -67,17 +67,17 @@
 	at scala.collection.immutable.List.map(List.scala:298)
 	at com.olvind.tso.scalajs.TreeTransformation.visitPackageTree(TreeTransformation.scala:121)
 	at com.olvind.tso.scalajs.TreeTransformation.visitContainerTree(TreeTransformation.scala:186)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$11(Phase2ToScalaJs.scala:53)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$16(Phase2ToScalaJs.scala:62)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$10(Phase2ToScalaJs.scala:53)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$15(Phase2ToScalaJs.scala:62)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$3(Phase2ToScalaJs.scala:61)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:61)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
 	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:30)
-	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:12)
+	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:13)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:76)
 	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:76)
@@ -105,7 +105,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:208)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:211)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:116)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:113)
 	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:66)

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScrollbarProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[Scrollbars] {
+  extends reactLib.reactMod.HTMLProps[Scrollbars] {
   var autoHeight: js.UndefOr[scala.Boolean] = js.undefined
   var autoHeightMax: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var autoHeightMin: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -18,13 +18,13 @@ trait ScrollbarProps
   var onScrollStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onScrollStop: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   @JSName("onScroll")
-  var onScroll_ScrollbarProps: js.UndefOr[reactLib.reactMod.ReactNs.UIEventHandler[_]] = js.undefined
+  var onScroll_ScrollbarProps: js.UndefOr[reactLib.reactMod.UIEventHandler[_]] = js.undefined
   var onUpdate: js.UndefOr[js.Function1[/* values */ positionValues, scala.Unit]] = js.undefined
-  var renderThumbHorizontal: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[_]] = js.undefined
-  var renderThumbVertical: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[_]] = js.undefined
-  var renderTrackHorizontal: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[_]] = js.undefined
-  var renderTrackVertical: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[_]] = js.undefined
-  var renderView: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[_]] = js.undefined
+  var renderThumbHorizontal: js.UndefOr[reactLib.reactMod.StatelessComponent[_]] = js.undefined
+  var renderThumbVertical: js.UndefOr[reactLib.reactMod.StatelessComponent[_]] = js.undefined
+  var renderTrackHorizontal: js.UndefOr[reactLib.reactMod.StatelessComponent[_]] = js.undefined
+  var renderTrackVertical: js.UndefOr[reactLib.reactMod.StatelessComponent[_]] = js.undefined
+  var renderView: js.UndefOr[reactLib.reactMod.StatelessComponent[_]] = js.undefined
   var tagName: js.UndefOr[java.lang.String] = js.undefined
   var thumbMinSize: js.UndefOr[scala.Double] = js.undefined
   var thumbSize: js.UndefOr[scala.Double] = js.undefined
@@ -34,7 +34,7 @@ trait ScrollbarProps
 object ScrollbarProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[Scrollbars] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[Scrollbars] = null,
     autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
     autoHeightMax: scala.Double | java.lang.String = null,
     autoHeightMin: scala.Double | java.lang.String = null,
@@ -42,16 +42,16 @@ object ScrollbarProps {
     autoHideDuration: scala.Int | scala.Double = null,
     autoHideTimeout: scala.Int | scala.Double = null,
     hideTracksWhenNotNeeded: js.UndefOr[scala.Boolean] = js.undefined,
-    onScroll: reactLib.reactMod.ReactNs.UIEventHandler[_] = null,
+    onScroll: reactLib.reactMod.UIEventHandler[_] = null,
     onScrollFrame: /* values */ positionValues => scala.Unit = null,
     onScrollStart: () => scala.Unit = null,
     onScrollStop: () => scala.Unit = null,
     onUpdate: /* values */ positionValues => scala.Unit = null,
-    renderThumbHorizontal: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
-    renderThumbVertical: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
-    renderTrackHorizontal: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
-    renderTrackVertical: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
-    renderView: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    renderThumbHorizontal: reactLib.reactMod.StatelessComponent[_] = null,
+    renderThumbVertical: reactLib.reactMod.StatelessComponent[_] = null,
+    renderTrackHorizontal: reactLib.reactMod.StatelessComponent[_] = null,
+    renderTrackVertical: reactLib.reactMod.StatelessComponent[_] = null,
+    renderView: reactLib.reactMod.StatelessComponent[_] = null,
     tagName: java.lang.String = null,
     thumbMinSize: scala.Int | scala.Double = null,
     thumbSize: scala.Int | scala.Double = null,

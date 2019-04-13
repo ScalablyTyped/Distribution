@@ -18,4 +18,5 @@ package object SigmaJsNs {
     /* callback */ js.Function1[/* graph */ Sigma, scala.Unit], 
     scala.Unit
   ]
+  type SVGEdgeLabels = org.scalablytyped.runtime.StringDictionary[SVGObject[Edge]]
 }

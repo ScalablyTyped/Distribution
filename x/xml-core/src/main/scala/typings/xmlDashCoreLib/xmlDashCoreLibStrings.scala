@@ -7,25 +7,35 @@ import scala.scalajs.js.annotation._
 
 object xmlDashCoreLibStrings {
   @js.native
+  sealed trait Empty extends js.Object
+  
+  @js.native
+  sealed trait `application/xml` extends js.Object
+  
+  @js.native
   sealed trait base64
-    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
+    extends xmlDashCoreLib.xmlDashCoreMod._XmlBufferEncoding
   
   @js.native
   sealed trait base64url
-    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
+    extends xmlDashCoreLib.xmlDashCoreMod._XmlBufferEncoding
   
   @js.native
   sealed trait binary
-    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
+    extends xmlDashCoreLib.xmlDashCoreMod._XmlBufferEncoding
   
   @js.native
   sealed trait hex
-    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
+    extends xmlDashCoreLib.xmlDashCoreMod._XmlBufferEncoding
   
   @js.native
   sealed trait utf8
-    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
+    extends xmlDashCoreLib.xmlDashCoreMod._XmlBufferEncoding
   
+  @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def `application/xml`: `application/xml` = "application/xml".asInstanceOf[`application/xml`]
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline

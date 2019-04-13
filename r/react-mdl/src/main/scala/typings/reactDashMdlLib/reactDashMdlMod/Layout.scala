@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Layout")
 @js.native
-class Layout ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Layout
+class Layout () extends __MDLComponent[LayoutProps]
 

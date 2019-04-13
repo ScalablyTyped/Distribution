@@ -43,3 +43,10 @@ class CursorTool () extends ICursorTool {
   override def setRender(render: java.lang.String): scala.Unit = js.native
 }
 
+// TOOLS
+@JSGlobal("Tee.CursorTool")
+@js.native
+object CursorTool
+  extends org.scalablytyped.runtime.Instantiable0[ICursorTool]
+     with org.scalablytyped.runtime.Instantiable1[/* chart */ Chart, ICursorTool]
+

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object victoryMod {
   type AnimationData = AnimationStyle | js.Array[AnimationStyle]
+  type AnimationStyle = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
   /**
     * Category prop type
     */
@@ -50,6 +51,6 @@ package object victoryMod {
   // Many victory components accept string or number or callback which returns string or number
   type StringOrNumberOrCallback = java.lang.String | scala.Double | (js.Function2[/* datum */ js.Any, /* active */ scala.Boolean, java.lang.String | scala.Double])
   type VictoryStyleObject = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof react.react.React.CSSProperties ]: victory.victory.StringOrNumberOrCallback}
+  {[ K in keyof react.react.CSSProperties ]: victory.victory.StringOrNumberOrCallback}
     */ victoryLib.victoryLibStrings.VictoryStyleObject with js.Any
 }

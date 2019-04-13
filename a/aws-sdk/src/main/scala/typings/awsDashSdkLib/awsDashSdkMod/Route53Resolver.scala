@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Route53Resolver ()
   extends awsDashSdkLib.clientsAllMod.Route53Resolver {
-  def this(options: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsRoute53resolverMod.ClientConfiguration) = this()
 }
 

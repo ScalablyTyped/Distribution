@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReactConfirmProps extends js.Object {
-  var confirmation: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  var confirmation: java.lang.String | reactLib.reactMod.ReactElement[_] = js.native
   var show: scala.Boolean = js.native
   def cancel(): scala.Unit = js.native
   def cancel(value: java.lang.String): scala.Unit = js.native

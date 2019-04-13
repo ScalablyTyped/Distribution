@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("camljs", "CamlValues")
 @js.native
-class CamlValues ()
-  extends camljsLib.camljsMod.CamlBuilderNs.CamlValues
+class CamlValues () extends js.Object
 
 /* static members */
 @JSImport("camljs", "CamlValues")

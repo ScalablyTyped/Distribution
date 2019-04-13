@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Cell")
 @js.native
-class Cell ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Cell
+class Cell () extends __MDLComponent[CellProps]
 

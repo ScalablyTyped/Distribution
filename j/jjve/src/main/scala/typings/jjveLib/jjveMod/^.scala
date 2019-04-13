@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jjve", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(jjv: jjvLib.jjvMod.jjvNs.Env): jjveLib.jjveMod.jjveNs.Env = js.native
+  def apply(jjv: jjvLib.jjvMod.Env): Env = js.native
 }
 

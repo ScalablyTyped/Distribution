@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Infinite
-  extends reactLib.reactMod.Component[
-      reactDashInfiniteLib.reactDashInfiniteMod.InfiniteNs.InfiniteProps, 
-      js.Object, 
-      js.Any
-    ]
+  extends reactLib.reactMod.Component[InfiniteProps, js.Object, js.Any]
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RotatingFileStream protected ()
   extends bunyanLib.bunyanMod.RotatingFileStream {
-  def this(options: bunyanLib.bunyanMod.LoggerNs.RotatingFileStreamOptions) = this()
+  def this(options: bunyanLib.bunyanMod.RotatingFileStreamOptions) = this()
 }
 

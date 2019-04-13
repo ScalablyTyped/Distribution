@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object FileNs extends js.Object {
   @js.native
-  class namespacedCls protected ()
-    extends vinylLib.vinylMod.namespacedCls {
+  class Class protected ()
+    extends vinylLib.vinylMod.Class {
     def this(options: vinylLib.vinylMod.ConstructorOptions with vinylLib.Anon_Contents) = this()
   }
   

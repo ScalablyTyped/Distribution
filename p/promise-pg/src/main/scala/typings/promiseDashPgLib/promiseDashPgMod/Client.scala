@@ -11,10 +11,10 @@ class Client protected () extends js.Object {
   def this(config: ClientConfig) = this()
   def this(connection: java.lang.String) = this()
   var raw: pgLib.pgMod.Client = js.native
-  def connect(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  def connect(): qLib.qMod.Promise[scala.Unit] = js.native
   def copyFrom(queryText: java.lang.String): nodeLib.streamMod.Writable = js.native
   def copyTo(queryText: java.lang.String): nodeLib.streamMod.Readable = js.native
-  def end(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  def end(): qLib.qMod.Promise[scala.Unit] = js.native
   def on(event: java.lang.String, listener: js.Function): Client = js.native
   @JSName("on")
   def on_drain(event: promiseDashPgLib.promiseDashPgLibStrings.drain, listener: js.Function0[scala.Unit]): Client = js.native
@@ -38,6 +38,6 @@ class Client protected () extends js.Object {
   def query(queryText: java.lang.String): Query = js.native
   def query(queryText: java.lang.String, values: js.Array[_]): Query = js.native
   def resumeDrain(): scala.Unit = js.native
-  def transaction(task: js.Function0[qLib.qMod.QNs.Promise[_]]): qLib.qMod.QNs.Promise[_] = js.native
+  def transaction(task: js.Function0[qLib.qMod.Promise[_]]): qLib.qMod.Promise[_] = js.native
 }
 

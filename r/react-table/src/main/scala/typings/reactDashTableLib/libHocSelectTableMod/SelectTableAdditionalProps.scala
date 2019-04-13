@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectTableAdditionalProps extends js.Object {
-  var SelectAllInputComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[SelectAllInputComponentProps]] = js.undefined
-  var SelectInputComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[SelectInputComponentProps]] = js.undefined
+  var SelectAllInputComponent: js.UndefOr[reactLib.reactMod.ComponentType[SelectAllInputComponentProps]] = js.undefined
+  var SelectInputComponent: js.UndefOr[reactLib.reactMod.ComponentType[SelectInputComponentProps]] = js.undefined
   var isSelected: js.UndefOr[js.Function1[/* key */ java.lang.String, scala.Boolean]] = js.undefined
   /**
     * Default: _id
@@ -27,8 +27,8 @@ trait SelectTableAdditionalProps extends js.Object {
 object SelectTableAdditionalProps {
   @scala.inline
   def apply(
-    SelectAllInputComponent: reactLib.reactMod.ReactNs.ComponentType[SelectAllInputComponentProps] = null,
-    SelectInputComponent: reactLib.reactMod.ReactNs.ComponentType[SelectInputComponentProps] = null,
+    SelectAllInputComponent: reactLib.reactMod.ComponentType[SelectAllInputComponentProps] = null,
+    SelectInputComponent: reactLib.reactMod.ComponentType[SelectInputComponentProps] = null,
     isSelected: /* key */ java.lang.String => scala.Boolean = null,
     keyField: java.lang.String = null,
     selectAll: js.UndefOr[scala.Boolean] = js.undefined,

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("nano", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(config: nanoLib.nanoMod.nanoNs.Configuration | java.lang.String): nanoLib.nanoMod.nanoNs.ServerScope = js.native
+  def apply(config: Configuration | java.lang.String): ServerScope = js.native
 }
 

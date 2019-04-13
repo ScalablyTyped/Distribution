@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 trait Utils extends js.Object {
   var BN: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ js.Any = js.native
   @JSName("_")
-  var __Original: underscoreLib.underscoreMod.underscoreNs.UnderscoreStatic = js.native
+  var __Original: underscoreLib.underscoreMod.UnderscoreStatic = js.native
   var unitMap: js.Any = js.native
-  def `_`[T](value: T): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
-  def `_`[T](value: js.Array[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  def `_`[T](value: T): underscoreLib.underscoreMod.Underscore[T] = js.native
+  def `_`[T](value: js.Array[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
     * @param key First argument to Underscore object functions.
     **/
-  def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.Dictionary[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
-  def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.List[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  def `_`[T](value: underscoreLib.underscoreMod.Dictionary[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
+  def `_`[T](value: underscoreLib.underscoreMod.List[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
   def asciiToHex(`val`: java.lang.String): java.lang.String = js.native
   def bytesToHex(`val`: js.Array[scala.Double]): java.lang.String = js.native
   def checkAddressChecksum(address: java.lang.String): scala.Boolean = js.native

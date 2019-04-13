@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@redux-saga/core/effects", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val effectTypes: atReduxDashSagaCoreLib.Anon_ACTIONCHANNEL = js.native
   def actionChannel(
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]]
   ): ActionChannelEffect = js.native

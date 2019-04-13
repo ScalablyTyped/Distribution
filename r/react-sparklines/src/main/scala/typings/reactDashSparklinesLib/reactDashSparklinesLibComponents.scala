@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation._
 
 object reactDashSparklinesLibComponents {
   @scala.inline
-  def Sparklines: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.Sparklines].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesProps]]
+  def Sparklines: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.Sparklines].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesProps]]
   @scala.inline
-  def SparklinesBars: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBarsProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBars].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBarsProps]]
+  def SparklinesBars: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBarsProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBars].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBarsProps]]
   @scala.inline
-  def SparklinesCurve: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesCurveProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesCurve].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesCurveProps]]
+  def SparklinesCurve: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesCurveProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesCurve].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesCurveProps]]
   @scala.inline
-  def SparklinesLine: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesLineProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesLine].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesLineProps]]
+  def SparklinesLine: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesLineProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesLine].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesLineProps]]
   @scala.inline
-  def SparklinesNormalBand: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesNormalBandProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesNormalBand].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesNormalBandProps]]
+  def SparklinesNormalBand: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesNormalBandProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesNormalBand].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesNormalBandProps]]
   @scala.inline
-  def SparklinesReferenceLine: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesReferenceLineProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesReferenceLine].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesReferenceLineProps]]
+  def SparklinesReferenceLine: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesReferenceLineProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesReferenceLine].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesReferenceLineProps]]
   @scala.inline
-  def SparklinesSpots: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesSpotsProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesSpots].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesSpotsProps]]
+  def SparklinesSpots: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesSpotsProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesSpots].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesSpotsProps]]
   @scala.inline
-  def SparklinesText: reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesTextProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesText].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesTextProps]]
+  def SparklinesText: reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesTextProps] = js.constructorOf[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesText].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSparklinesLib.reactDashSparklinesMod.SparklinesTextProps]]
   @scala.inline
   def SparklinesBarsProps: reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBarsProps.type = reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBarsProps
   type SparklinesBarsProps = reactDashSparklinesLib.reactDashSparklinesMod.SparklinesBarsProps

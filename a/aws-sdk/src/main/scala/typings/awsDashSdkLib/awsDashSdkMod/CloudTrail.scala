@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudTrail ()
   extends awsDashSdkLib.clientsAllMod.CloudTrail {
-  def this(options: awsDashSdkLib.clientsCloudtrailMod.CloudTrailNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloudtrailMod.ClientConfiguration) = this()
 }
 

@@ -11,9 +11,7 @@ trait Anon_AfterSetExtremes extends js.Object {
     * corrected for minRange.
     * The this keyword refers to the {@link AxisObject|Axis} object.
     */
-  var afterSetExtremes: js.UndefOr[
-    js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit]
-  ] = js.undefined
+  var afterSetExtremes: js.UndefOr[js.Function1[/* event */ highchartsLib.highchartsMod.AxisEvent, scala.Unit]] = js.undefined
   /**
     * Fires when the minimum and maximum is set for the axis, either by calling the .setExtremes() method or by
     * selecting an area in the chart. One parameter, event, is passed to the function. This contains common event
@@ -25,16 +23,14 @@ trait Anon_AfterSetExtremes extends js.Object {
     *
     * The this keyword refers to the {@link AxisObject|Axis} object.
     */
-  var setExtremes: js.UndefOr[
-    js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit]
-  ] = js.undefined
+  var setExtremes: js.UndefOr[js.Function1[/* event */ highchartsLib.highchartsMod.AxisEvent, scala.Unit]] = js.undefined
 }
 
 object Anon_AfterSetExtremes {
   @scala.inline
   def apply(
-    afterSetExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null,
-    setExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null
+    afterSetExtremes: /* event */ highchartsLib.highchartsMod.AxisEvent => scala.Unit = null,
+    setExtremes: /* event */ highchartsLib.highchartsMod.AxisEvent => scala.Unit = null
   ): Anon_AfterSetExtremes = {
     val __obj = js.Dynamic.literal()
     if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(js.Any.fromFunction1(afterSetExtremes))

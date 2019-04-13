@@ -20,7 +20,7 @@ trait SettingType[TItem] extends js.Object {
   /**
     * The component for rendering the item in suggestion list. It has selected and entity props provided by React Textarea Autocomplete.
     */
-  var component: reactLib.reactMod.ReactNs.SFC[ItemComponentProps[TItem]] = js.native
+  var component: reactLib.reactMod.SFC[ItemComponentProps[TItem]] = js.native
   /**
     * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
     */

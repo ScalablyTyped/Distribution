@@ -34,7 +34,7 @@ trait Anon_Default extends js.Object {
   	});
   	```
   	*/
-  def apply(input: nodeLib.Buffer): imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageTypeResult | scala.Null = js.native
-  def apply(input: stdLib.Uint8Array): imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageTypeResult | scala.Null = js.native
+  def apply(input: nodeLib.Buffer): imageDashTypeLib.imageDashTypeMod.ImageTypeResult | scala.Null = js.native
+  def apply(input: stdLib.Uint8Array): imageDashTypeLib.imageDashTypeMod.ImageTypeResult | scala.Null = js.native
 }
 

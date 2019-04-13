@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("net", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Socket: easyDashXDashHeadersLib.Anon_OptionsAnonAllowHalfOpen = js.native
   def connect(options: easyDashXDashHeadersLib.Anon_AllowHalfOpenBoolean): Socket = js.native
   def connect(options: easyDashXDashHeadersLib.Anon_AllowHalfOpenBoolean, connectionListener: js.Function): Socket = js.native
   def connect(path: java.lang.String): Socket = js.native

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSnackbarDashComponentLibComponents {
   @scala.inline
-  def ReactDashNativeDashSnackbarDashComponent: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashSnackbarDashComponent: reactLib.reactMod.ComponentType[
     reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps
-  ] = js.constructorOf[reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps]]
   @scala.inline
   def SnackbarComponentProps: reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps.type = reactDashNativeDashSnackbarDashComponentLib.reactDashNativeDashSnackbarDashComponentMod.SnackbarComponentProps

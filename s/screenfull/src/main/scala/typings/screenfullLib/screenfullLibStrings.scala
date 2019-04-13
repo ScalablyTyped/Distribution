@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object screenfullLibStrings {
   @js.native
   sealed trait change
-    extends screenfullLib.screenfullMod.screenfullNs.EventName
+    extends screenfullLib.screenfullMod.EventName
   
   @js.native
   sealed trait error
-    extends screenfullLib.screenfullMod.screenfullNs.EventName
+    extends screenfullLib.screenfullMod.EventName
   
   @scala.inline
   def change: change = "change".asInstanceOf[change]

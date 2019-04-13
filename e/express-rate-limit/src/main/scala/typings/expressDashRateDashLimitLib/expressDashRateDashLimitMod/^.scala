@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends org.scalablytyped.runtime.TopLevel[
-      org.scalablytyped.runtime.Instantiable1[
-        /* options */ expressDashRateDashLimitLib.expressDashRateDashLimitMod.RateLimitNs.Options, 
-        expressLib.expressMod.eNs.RequestHandler
-      ]
+      org.scalablytyped.runtime.Instantiable1[/* options */ Options, expressLib.expressMod.RequestHandler]
     ]
 

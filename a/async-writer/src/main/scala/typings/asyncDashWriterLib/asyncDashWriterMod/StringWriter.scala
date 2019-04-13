@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("async-writer", "StringWriter")
 @js.native
-class StringWriter protected ()
-  extends asyncDashWriterLib.asyncDashWriterMod.asyncUnderscoreWriterNs.StringWriter {
+class StringWriter protected () extends js.Object {
   def this(events: nodeLib.eventsMod.EventEmitter) = this()
-  /* CompleteClass */
-  override def end(): scala.Unit = js.native
-  /* CompleteClass */
-  override def write(what: java.lang.String): asyncDashWriterLib.asyncDashWriterMod.asyncUnderscoreWriterNs.StringWriter = js.native
+  def end(): scala.Unit = js.native
+  def write(what: java.lang.String): StringWriter = js.native
 }
 

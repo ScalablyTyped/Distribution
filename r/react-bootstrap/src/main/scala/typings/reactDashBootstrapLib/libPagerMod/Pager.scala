@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Pager
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libPagerMod.PagerNs.PagerProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[PagerProps, js.Object, js.Any]
 

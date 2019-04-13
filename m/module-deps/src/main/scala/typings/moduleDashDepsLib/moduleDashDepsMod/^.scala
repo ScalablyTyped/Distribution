@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Return an object transform stream 'd' that expects entry filenames or '{ id: ..., file: ... }' objects
     * as input and produces objects for every dependency from a recursive module traversal as output.
     */
-  def apply(): moduleDashDepsLib.moduleDashDepsMod.moduleDepsNs.ModuleDepsObject = js.native
-  def apply(opts: moduleDashDepsLib.moduleDashDepsMod.moduleDepsNs.Options): moduleDashDepsLib.moduleDashDepsMod.moduleDepsNs.ModuleDepsObject = js.native
+  def apply(): ModuleDepsObject = js.native
+  def apply(opts: Options): ModuleDepsObject = js.native
 }
 

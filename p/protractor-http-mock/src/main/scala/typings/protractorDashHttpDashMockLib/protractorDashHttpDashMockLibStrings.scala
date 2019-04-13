@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation._
 object protractorDashHttpDashMockLibStrings {
   @js.native
   sealed trait DELETE
-    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   
   @js.native
   sealed trait GET
-    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   
   @js.native
   sealed trait HEAD
-    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   
   @js.native
   sealed trait JSONP
-    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   
   @js.native
   sealed trait PATCH
-    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   
   @js.native
   sealed trait POST
-    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   
   @js.native
   sealed trait PUT
-    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.requestsNs.Method
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

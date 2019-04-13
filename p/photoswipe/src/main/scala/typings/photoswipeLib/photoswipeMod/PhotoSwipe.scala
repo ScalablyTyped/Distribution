@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Base PhotoSwipe class. Derived from http://photoswipe.com/documentation/api.html
   */
 @js.native
-trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] extends js.Object {
+trait PhotoSwipe[T /* <: Options */] extends js.Object {
   /**
     * The background element (with class .pswp__bg).
     */
@@ -21,11 +21,11 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
   /**
     * Current slide object.
     */
-  var currItem: photoswipeLib.photoswipeMod.PhotoSwipeNs.Item = js.native
+  var currItem: Item = js.native
   /**
     * The Framework. Holds utility methods.
     */
-  var framework: photoswipeLib.photoswipeMod.PhotoSwipeNs.UIFramework = js.native
+  var framework: UIFramework = js.native
   /**
     * Items in this gallery. PhotoSwipe will (almost) dynamically respond to changes in this array.
     * To add, edit, or remove slides after PhotoSwipe is opened, you just need to modify the items array.
@@ -52,7 +52,7 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
     * (3) There must be at least one slide.
     * (4) This technique is used to serve responsive images.
     */
-  var items: js.Array[photoswipeLib.photoswipeMod.PhotoSwipeNs.Item] = js.native
+  var items: js.Array[Item] = js.native
   /**
     * Options for this PhotoSwipe. This object is a copy of the options parameter passed into the constructor.
     * Some properties in options are dynamically modifiable.
@@ -61,7 +61,7 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
   /**
     * The ui instance constructed by PhotoSwipe.
     */
-  var ui: photoswipeLib.photoswipeMod.PhotoSwipeNs.UI[T] = js.native
+  var ui: UI[T] = js.native
   /**
     * Size of the current viewport.
     */
@@ -153,11 +153,7 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
   @JSName("listen")
   def listen_gettingData(
     eventName: photoswipeLib.photoswipeLibStrings.gettingData,
-    callback: js.Function2[
-      /* index */ scala.Double, 
-      /* item */ photoswipeLib.photoswipeMod.PhotoSwipeNs.Item, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* index */ scala.Double, /* item */ Item, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Called when an image is loaded.
@@ -165,11 +161,7 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
   @JSName("listen")
   def listen_imageLoadComplete(
     eventName: photoswipeLib.photoswipeLibStrings.imageLoadComplete,
-    callback: js.Function2[
-      /* index */ scala.Double, 
-      /* item */ photoswipeLib.photoswipeMod.PhotoSwipeNs.Item, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* index */ scala.Double, /* item */ Item, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Called when opening zoom in animation starting.
@@ -214,7 +206,7 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
   @JSName("listen")
   def listen_parseVerticalMargin(
     eventName: photoswipeLib.photoswipeLibStrings.parseVerticalMargin,
-    callback: js.Function1[/* item */ photoswipeLib.photoswipeMod.PhotoSwipeNs.Item, scala.Unit]
+    callback: js.Function1[/* item */ Item, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Allow to call preventDefault on down and up events.

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class KinesisVideo ()
   extends awsDashSdkLib.clientsAllMod.KinesisVideo {
-  def this(options: awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsKinesisvideoMod.ClientConfiguration) = this()
 }
 

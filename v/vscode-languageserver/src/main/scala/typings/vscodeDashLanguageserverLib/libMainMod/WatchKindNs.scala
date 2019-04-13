@@ -11,14 +11,14 @@ object WatchKindNs extends js.Object {
   /**
     * Interested in change events
     */
-  val Change: /* 2 */ scala.Double = js.native
+  val Change: vscodeDashLanguageserverLib.vscodeDashLanguageserverLibNumbers.`2` = js.native
   /**
     * Interested in create events.
     */
-  val Create: /* 1 */ scala.Double = js.native
+  val Create: vscodeDashLanguageserverLib.vscodeDashLanguageserverLibNumbers.`1` = js.native
   /**
     * Interested in delete events
     */
-  val Delete: /* 4 */ scala.Double = js.native
+  val Delete: vscodeDashLanguageserverLib.vscodeDashLanguageserverLibNumbers.`4` = js.native
 }
 

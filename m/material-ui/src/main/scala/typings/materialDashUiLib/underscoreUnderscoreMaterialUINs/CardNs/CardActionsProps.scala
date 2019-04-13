@@ -10,7 +10,7 @@ trait CardActionsProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined
   var showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CardActionsProps {
@@ -20,7 +20,7 @@ object CardActionsProps {
     className: java.lang.String = null,
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
     showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): CardActionsProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)

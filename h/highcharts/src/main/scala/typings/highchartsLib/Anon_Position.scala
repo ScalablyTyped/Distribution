@@ -11,7 +11,7 @@ trait Anon_Position extends js.Object {
     * verticalAlign.
     * @since 3.0.8
     */
-  var position: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.Position] = js.undefined
+  var position: js.UndefOr[highchartsLib.highchartsMod.Position] = js.undefined
   /**
     * What box to align the button to. Can be either 'plotBox' or 'spacingBox'.
     * @default 'plotBox'
@@ -24,15 +24,15 @@ trait Anon_Position extends js.Object {
     * attributes for the hover state are given in theme.states.hover.
     * @since 3.0.8
     */
-  var theme: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.ButtonStatesTheme] = js.undefined
+  var theme: js.UndefOr[highchartsLib.highchartsMod.ButtonStatesTheme] = js.undefined
 }
 
 object Anon_Position {
   @scala.inline
   def apply(
-    position: highchartsLib.highchartsMod.HighchartsNs.Position = null,
+    position: highchartsLib.highchartsMod.Position = null,
     relativeTo: java.lang.String = null,
-    theme: highchartsLib.highchartsMod.HighchartsNs.ButtonStatesTheme = null
+    theme: highchartsLib.highchartsMod.ButtonStatesTheme = null
   ): Anon_Position = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position)

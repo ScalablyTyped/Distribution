@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class RDSDataService ()
   extends awsDashSdkLib.awsDashSdkMod.RDSDataService {
-  def this(options: awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsRdsdataserviceMod.ClientConfiguration) = this()
 }
 

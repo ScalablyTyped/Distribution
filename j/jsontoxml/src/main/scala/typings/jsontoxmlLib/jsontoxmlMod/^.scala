@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(data: js.Any): java.lang.String = js.native
-  def apply(data: js.Any, options: jsontoxmlLib.jsontoxmlMod.jsontoxmlNs.JsonToXmlOptions): java.lang.String = js.native
+  def apply(data: js.Any, options: JsonToXmlOptions): java.lang.String = js.native
   def cdata(str: java.lang.String): java.lang.String = js.native
   def escape(str: java.lang.String): java.lang.String = js.native
 }

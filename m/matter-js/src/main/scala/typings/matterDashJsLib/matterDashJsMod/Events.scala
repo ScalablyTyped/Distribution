@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Events")
 @js.native
-class Events ()
-  extends matterDashJsLib.matterDashJsMod.MatterNs.Events
+class Events () extends js.Object
 
 /* static members */
 @JSImport("matter-js", "Events")
@@ -34,10 +33,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_afterAdd(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.afterAdd,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventComposite[matterDashJsLib.matterDashJsMod.MatterNs.Composite], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventComposite[matterDashJsLib.matterDashJsMod.Composite], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -52,10 +51,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_afterRemove(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.afterRemove,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventComposite[matterDashJsLib.matterDashJsMod.MatterNs.Composite], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventComposite[matterDashJsLib.matterDashJsMod.Composite], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -70,12 +69,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_afterRender(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.afterRender,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventTimestamped[
-        matterDashJsLib.matterDashJsMod.MatterNs.Render | matterDashJsLib.matterDashJsMod.MatterNs.Runner
-      ], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventTimestamped[matterDashJsLib.matterDashJsMod.Render | matterDashJsLib.matterDashJsMod.Runner], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -90,10 +87,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_afterTick(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.afterTick,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventTimestamped[matterDashJsLib.matterDashJsMod.MatterNs.Runner], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventTimestamped[matterDashJsLib.matterDashJsMod.Runner], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -108,10 +105,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_afterUpdate(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.afterUpdate,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventTimestamped[matterDashJsLib.matterDashJsMod.MatterNs.Engine], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventTimestamped[matterDashJsLib.matterDashJsMod.Engine], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -126,10 +123,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_beforeAdd(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.beforeAdd,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventComposite[matterDashJsLib.matterDashJsMod.MatterNs.Composite], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventComposite[matterDashJsLib.matterDashJsMod.Composite], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -144,10 +141,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_beforeRemove(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.beforeRemove,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventComposite[matterDashJsLib.matterDashJsMod.MatterNs.Composite], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventComposite[matterDashJsLib.matterDashJsMod.Composite], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -162,12 +159,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_beforeRender(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.beforeRender,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventTimestamped[
-        matterDashJsLib.matterDashJsMod.MatterNs.Render | matterDashJsLib.matterDashJsMod.MatterNs.Runner
-      ], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventTimestamped[matterDashJsLib.matterDashJsMod.Render | matterDashJsLib.matterDashJsMod.Runner], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -182,10 +177,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_beforeTick(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.beforeTick,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventTimestamped[matterDashJsLib.matterDashJsMod.MatterNs.Runner], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventTimestamped[matterDashJsLib.matterDashJsMod.Runner], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -200,10 +195,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_beforeUpdate(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.beforeUpdate,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventTimestamped[matterDashJsLib.matterDashJsMod.MatterNs.Engine], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventTimestamped[matterDashJsLib.matterDashJsMod.Engine], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -219,10 +214,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_collisionActive(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.collisionActive,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventCollision[matterDashJsLib.matterDashJsMod.MatterNs.Engine], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventCollision[matterDashJsLib.matterDashJsMod.Engine], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -238,10 +233,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_collisionEnd(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.collisionEnd,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventCollision[matterDashJsLib.matterDashJsMod.MatterNs.Engine], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventCollision[matterDashJsLib.matterDashJsMod.Engine], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -257,10 +252,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_collisionStart(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.collisionStart,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventCollision[matterDashJsLib.matterDashJsMod.MatterNs.Engine], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventCollision[matterDashJsLib.matterDashJsMod.Engine], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -272,7 +267,7 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_mousedown(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.MouseConstraint,
+    obj: matterDashJsLib.matterDashJsMod.MouseConstraint,
     name: matterDashJsLib.matterDashJsLibStrings.mousedown,
     callback: js.Function1[/* e */ js.Any, scala.Unit]
   ): scala.Unit = js.native
@@ -284,7 +279,7 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_mousemove(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.MouseConstraint,
+    obj: matterDashJsLib.matterDashJsMod.MouseConstraint,
     name: matterDashJsLib.matterDashJsLibStrings.mousemove,
     callback: js.Function1[/* e */ js.Any, scala.Unit]
   ): scala.Unit = js.native
@@ -296,7 +291,7 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_mouseup(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.MouseConstraint,
+    obj: matterDashJsLib.matterDashJsMod.MouseConstraint,
     name: matterDashJsLib.matterDashJsLibStrings.mouseup,
     callback: js.Function1[/* e */ js.Any, scala.Unit]
   ): scala.Unit = js.native
@@ -311,10 +306,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_sleepEnd(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Body,
+    obj: matterDashJsLib.matterDashJsMod.Body,
     name: matterDashJsLib.matterDashJsLibStrings.sleepEnd,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEvent[matterDashJsLib.matterDashJsMod.MatterNs.Body], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEvent[matterDashJsLib.matterDashJsMod.Body], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -329,10 +324,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_sleepStart(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Body,
+    obj: matterDashJsLib.matterDashJsMod.Body,
     name: matterDashJsLib.matterDashJsLibStrings.sleepStart,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEvent[matterDashJsLib.matterDashJsMod.MatterNs.Body], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEvent[matterDashJsLib.matterDashJsMod.Body], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -347,10 +342,10 @@ object Events extends js.Object {
     */
   @JSName("on")
   def on_tick(
-    obj: matterDashJsLib.matterDashJsMod.MatterNs.Engine,
+    obj: matterDashJsLib.matterDashJsMod.Engine,
     name: matterDashJsLib.matterDashJsLibStrings.tick,
     callback: js.Function1[
-      /* e */ matterDashJsLib.matterDashJsMod.MatterNs.IEventTimestamped[matterDashJsLib.matterDashJsMod.MatterNs.Runner], 
+      /* e */ matterDashJsLib.matterDashJsMod.IEventTimestamped[matterDashJsLib.matterDashJsMod.Runner], 
       scala.Unit
     ]
   ): scala.Unit = js.native

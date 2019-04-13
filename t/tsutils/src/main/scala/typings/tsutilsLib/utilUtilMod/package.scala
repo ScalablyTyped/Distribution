@@ -9,14 +9,14 @@ package object utilUtilMod {
   type BooleanCompilerOptions = js.Any
   type ForEachCommentCallback = js.Function2[
     /* fullText */ java.lang.String, 
-    /* comment */ typescriptLib.typescriptMod.tsNs.CommentRange, 
+    /* comment */ typescriptLib.typescriptMod.CommentRange, 
     scala.Unit
   ]
   type ForEachTokenCallback = js.Function4[
     /* fullText */ java.lang.String, 
-    /* kind */ typescriptLib.typescriptMod.tsNs.SyntaxKind, 
-    /* range */ typescriptLib.typescriptMod.tsNs.TextRange, 
-    /* parent */ typescriptLib.typescriptMod.tsNs.Node, 
+    /* kind */ typescriptLib.typescriptMod.SyntaxKind, 
+    /* range */ typescriptLib.typescriptMod.TextRange, 
+    /* parent */ typescriptLib.typescriptMod.Node, 
     scala.Unit
   ]
 }

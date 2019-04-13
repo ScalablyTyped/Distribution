@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
   var barCategoryGap: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var barGap: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var barSize: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var cx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -40,7 +38,7 @@ object PieChartProps {
     barCategoryGap: scala.Double | java.lang.String = null,
     barGap: scala.Double | java.lang.String = null,
     barSize: scala.Double | java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     cx: scala.Double | java.lang.String = null,

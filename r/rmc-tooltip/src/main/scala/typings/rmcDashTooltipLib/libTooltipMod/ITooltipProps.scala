@@ -14,7 +14,7 @@ trait ITooltipProps extends js.Object {
   var destroyTooltipOnHide: js.UndefOr[scala.Boolean] = js.undefined
   var getTooltipContainer: js.UndefOr[js.Function] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function] = js.undefined
-  var overlay: reactLib.reactMod.ReactNs.ReactNode | js.Function
+  var overlay: reactLib.reactMod.ReactNode | js.Function
   var overlayClassName: js.UndefOr[java.lang.String] = js.undefined
   var overlayStyle: js.UndefOr[js.Object] = js.undefined
   var placement: js.UndefOr[java.lang.String] = js.undefined
@@ -27,7 +27,7 @@ trait ITooltipProps extends js.Object {
 object ITooltipProps {
   @scala.inline
   def apply(
-    overlay: reactLib.reactMod.ReactNs.ReactNode | js.Function,
+    overlay: reactLib.reactMod.ReactNode | js.Function,
     afterVisibleChange: js.Function = null,
     align: js.Object = null,
     animation: js.Any = null,

@@ -11,8 +11,8 @@ trait IAbstractValidationRule[T] extends js.Object {
   var ValidationResult: IValidationResult
   var Validators: org.scalablytyped.runtime.StringDictionary[IValidator]
   def Validate(context: T): IValidationResult
-  def ValidateAll(context: T): qLib.qMod.QNs.Promise[IValidationResult]
-  def ValidateAsync(context: T): qLib.qMod.QNs.Promise[IValidationResult]
+  def ValidateAll(context: T): qLib.qMod.Promise[IValidationResult]
+  def ValidateAsync(context: T): qLib.qMod.Promise[IValidationResult]
   def ValidateProperty(context: T, propName: java.lang.String): scala.Unit
 }
 
@@ -22,8 +22,8 @@ object IAbstractValidationRule {
     Children: org.scalablytyped.runtime.StringDictionary[IAbstractValidationRule[_]],
     Rules: org.scalablytyped.runtime.StringDictionary[IPropertyValidationRule[T]],
     Validate: T => IValidationResult,
-    ValidateAll: T => qLib.qMod.QNs.Promise[IValidationResult],
-    ValidateAsync: T => qLib.qMod.QNs.Promise[IValidationResult],
+    ValidateAll: T => qLib.qMod.Promise[IValidationResult],
+    ValidateAsync: T => qLib.qMod.Promise[IValidationResult],
     ValidateProperty: (T, java.lang.String) => scala.Unit,
     ValidationResult: IValidationResult,
     Validators: org.scalablytyped.runtime.StringDictionary[IValidator]

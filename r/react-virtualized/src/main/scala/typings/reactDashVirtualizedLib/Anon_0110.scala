@@ -17,10 +17,10 @@ trait Anon_0110 extends js.Object {
   var rowRenderer_Original: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer = js.native
   var scrollToAlignment: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.auto = js.native
   var scrollToIndex: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`-1` = js.native
-  def headerRowRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableHeaderProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def headerRowRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableHeaderProps): reactLib.reactMod.ReactNode = js.native
   def noRowsRenderer(): scala.Null = js.native
   def onRowsRendered(): scala.Null = js.native
   def onScroll(): scala.Null = js.native
-  def rowRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableRowProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def rowRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableRowProps): reactLib.reactMod.ReactNode = js.native
 }
 

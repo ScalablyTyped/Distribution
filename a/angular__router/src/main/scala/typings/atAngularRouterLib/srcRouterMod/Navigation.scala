@@ -33,7 +33,7 @@ trait Navigation extends js.Object {
     * Previously successful Navigation object. Only a single previous Navigation is available,
     * therefore this previous Navigation will always have a `null` value for `previousNavigation`.
     */
-  var previousNavigation: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @angular/router.@angular/router/src/router.Navigation */ js.Object) | scala.Null
+  var previousNavigation: Navigation | scala.Null
   /**
     * Identifies the trigger of the navigation.
     *
@@ -53,7 +53,7 @@ object Navigation {
     initialUrl: java.lang.String | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree,
     trigger: atAngularRouterLib.atAngularRouterLibStrings.imperative | atAngularRouterLib.atAngularRouterLibStrings.popstate | atAngularRouterLib.atAngularRouterLibStrings.hashchange,
     finalUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = null,
-    previousNavigation: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @angular/router.@angular/router/src/router.Navigation */ js.Object = null
+    previousNavigation: Navigation = null
   ): Navigation = {
     val __obj = js.Dynamic.literal(extractedUrl = extractedUrl, extras = extras, id = id, initialUrl = initialUrl.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
     if (finalUrl != null) __obj.updateDynamic("finalUrl")(finalUrl)

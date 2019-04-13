@@ -12,7 +12,6 @@ object ^ extends js.Object {
   var DataWriterQos: EntityQos = js.native
   var TopicQos: EntityQos = js.native
   var VERSION: java.lang.String = js.native
-  var runtime: vortexDashWebDashClientLib.Anon_Runtime = js.native
   def ContentFilter(expr: java.lang.String): Policy = js.native
   def Partition(policies: java.lang.String*): Policy = js.native
   def TimeFilter(period: scala.Double): Policy = js.native

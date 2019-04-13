@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Get extends js.Object {
   @JSName("get")
-  var get_Original: typpyLib.typpyMod.TyppyNs.GetFn = js.native
+  var get_Original: typpyLib.typpyMod.GetFn = js.native
   @JSName("is")
-  var is_Original: typpyLib.typpyMod.TyppyNs.CompareFn = js.native
+  var is_Original: typpyLib.typpyMod.CompareFn = js.native
   def get(): scala.Unit = js.native
   def get(input: java.lang.String): stdLib.StringConstructor = js.native
   def get(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`false`): stdLib.StringConstructor = js.native
   def get(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.string = js.native
    // tslint:disable-line:ban-types
-  def get(input: js.Any): typpyLib.typpyMod.TyppyNs.ConstructorFn = js.native
-  def get(input: js.Any, asString: typpyLib.typpyLibNumbers.`false`): typpyLib.typpyMod.TyppyNs.ConstructorFn = js.native
+  def get(input: js.Any): typpyLib.typpyMod.ConstructorFn = js.native
+  def get(input: js.Any, asString: typpyLib.typpyLibNumbers.`false`): typpyLib.typpyMod.ConstructorFn = js.native
    // tslint:disable-line:ban-types
   def get(input: js.Any, asString: typpyLib.typpyLibNumbers.`true`): java.lang.String = js.native
   def get(input: js.Array[_]): stdLib.ArrayConstructor = js.native

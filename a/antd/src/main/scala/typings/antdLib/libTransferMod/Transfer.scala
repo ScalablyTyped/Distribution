@@ -11,10 +11,7 @@ trait Transfer
   var separatedDataSource: antdLib.Anon_LeftDataSource | scala.Null = js.native
   def getLocale(
     transferLocale: TransferLocale,
-    renderEmpty: js.Function1[
-      /* componentName */ js.UndefOr[java.lang.String], 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    renderEmpty: js.Function1[/* componentName */ js.UndefOr[java.lang.String], reactLib.reactMod.ReactNode]
   ): antdLib.Anon_ItemUnit = js.native
   def getSelectedKeysName(direction: TransferDirection): antdLib.antdLibStrings.sourceSelectedKeys | antdLib.antdLibStrings.targetSelectedKeys = js.native
   def getTitles(transferLocale: TransferLocale): js.Array[java.lang.String] = js.native
@@ -23,34 +20,28 @@ trait Transfer
   @JSName("handleClear")
   def handleClear_right(direction: antdLib.antdLibStrings.right): scala.Unit = js.native
   @JSName("handleFilter")
-  def handleFilter_left(
-    direction: antdLib.antdLibStrings.left,
-    e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]
-  ): scala.Unit = js.native
+  def handleFilter_left(direction: antdLib.antdLibStrings.left, e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   @JSName("handleFilter")
-  def handleFilter_right(
-    direction: antdLib.antdLibStrings.right,
-    e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]
-  ): scala.Unit = js.native
+  def handleFilter_right(direction: antdLib.antdLibStrings.right, e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   def handleLeftClear(): scala.Unit = js.native
-  def handleLeftFilter(e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
-  def handleLeftScroll(e: reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]): scala.Unit = js.native
+  def handleLeftFilter(e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def handleLeftScroll(e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]): scala.Unit = js.native
   def handleLeftSelect(selectedItem: TransferItem, checked: scala.Boolean): scala.Unit = js.native
   def handleLeftSelectAll(filteredDataSource: js.Array[TransferItem], checkAll: scala.Boolean): scala.Unit = js.native
   def handleRightClear(): scala.Unit = js.native
-  def handleRightFilter(e: reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
-  def handleRightScroll(e: reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]): scala.Unit = js.native
+  def handleRightFilter(e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def handleRightScroll(e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]): scala.Unit = js.native
   def handleRightSelect(selectedItem: TransferItem, checked: scala.Boolean): scala.Unit = js.native
   def handleRightSelectAll(filteredDataSource: js.Array[TransferItem], checkAll: scala.Boolean): scala.Unit = js.native
   @JSName("handleScroll")
   def handleScroll_left(
     direction: antdLib.antdLibStrings.left,
-    e: reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]
+    e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]
   ): scala.Unit = js.native
   @JSName("handleScroll")
   def handleScroll_right(
     direction: antdLib.antdLibStrings.right,
-    e: reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]
+    e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]
   ): scala.Unit = js.native
   @JSName("handleSelectAll")
   def handleSelectAll_left(

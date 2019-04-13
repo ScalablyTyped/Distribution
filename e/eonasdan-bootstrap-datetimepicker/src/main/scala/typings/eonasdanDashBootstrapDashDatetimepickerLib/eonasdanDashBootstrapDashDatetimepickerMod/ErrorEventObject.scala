@@ -11,6 +11,6 @@ trait ErrorEventObject
   /**
     * The invalid date. Type: moment object (clone)
     */
-  var date: momentLib.momentMod.momentNs.Moment = js.native
+  var date: momentLib.momentMod.Moment = js.native
 }
 

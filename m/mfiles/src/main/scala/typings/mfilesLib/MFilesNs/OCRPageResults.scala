@@ -15,3 +15,8 @@ class OCRPageResults ()
   override def Item(Index: scala.Double): mfilesLib.IOCRPageResult = js.native
 }
 
+@JSGlobal("MFiles.OCRPageResults")
+@js.native
+object OCRPageResults
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOCRPageResults]
+

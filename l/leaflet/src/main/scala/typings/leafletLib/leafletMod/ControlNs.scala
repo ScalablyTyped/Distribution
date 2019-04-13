@@ -39,9 +39,6 @@ object ControlNs extends js.Object {
     def removeLayer(layer: leafletLib.leafletMod.Layer): this.type = js.native
   }
   
-  trait LayersObject
-    extends /* name */ org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.Layer]
-  
   trait LayersOptions
     extends leafletLib.leafletMod.ControlOptions {
     var autoZIndex: js.UndefOr[scala.Boolean] = js.undefined
@@ -81,6 +78,7 @@ object ControlNs extends js.Object {
     var zoomOutTitle: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  type LayersObject = org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.Layer]
 }
 
 @JSImport("leaflet", "control")

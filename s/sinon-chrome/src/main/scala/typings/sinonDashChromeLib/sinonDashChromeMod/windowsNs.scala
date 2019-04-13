@@ -13,9 +13,9 @@ object windowsNs extends js.Object {
   var getAll: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getCurrent: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getLastFocused: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onCreated: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onFocusChanged: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onRemoved: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onCreated: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onFocusChanged: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onRemoved: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
   var remove: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var update: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
 }

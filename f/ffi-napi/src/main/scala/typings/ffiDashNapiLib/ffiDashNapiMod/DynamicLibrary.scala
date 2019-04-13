@@ -30,16 +30,15 @@ class DynamicLibraryCls () extends DynamicLibrary {
   override def get(symbol: java.lang.String): ffiDashNapiLib.Buffer = js.native
 }
 
-object DynamicLibrary {
-  @scala.inline
-  def apply(
-    close: () => scala.Double,
-    error: () => java.lang.String,
-    get: java.lang.String => ffiDashNapiLib.Buffer
-  ): DynamicLibrary = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), error = js.Any.fromFunction0(error), get = js.Any.fromFunction1(get))
-  
-    __obj.asInstanceOf[DynamicLibrary]
-  }
+@JSImport("ffi-napi", "DynamicLibrary")
+@js.native
+object DynamicLibrary
+  extends org.scalablytyped.runtime.Instantiable0[DynamicLibrary]
+     with org.scalablytyped.runtime.Instantiable1[/* path */ java.lang.String, DynamicLibrary]
+     with org.scalablytyped.runtime.Instantiable2[/* path */ java.lang.String, /* mode */ scala.Double, DynamicLibrary] {
+  var FLAGS: ffiDashNapiLib.Anon_RTLDDEFAUL = js.native
+  def apply(): ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary = js.native
+  def apply(path: java.lang.String): ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary = js.native
+  def apply(path: java.lang.String, mode: scala.Double): ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary = js.native
 }
 

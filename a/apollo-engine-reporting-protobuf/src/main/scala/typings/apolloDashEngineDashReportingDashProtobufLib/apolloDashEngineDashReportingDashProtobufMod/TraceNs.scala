@@ -167,7 +167,6 @@ object TraceNs extends js.Object {
           ] = js.native
     }
     
-    type Scope = apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.CachePolicyNs.Scope
   }
   
   /* static members */
@@ -515,7 +514,6 @@ object TraceNs extends js.Object {
       def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
     }
     
-    type Method = apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTPNs.Method
   }
   
   /* static members */

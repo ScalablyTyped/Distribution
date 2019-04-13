@@ -265,7 +265,7 @@ trait JQuery extends js.Object {
   def inheritedData(key: java.lang.String): js.Any = js.native
   def inheritedData(key: java.lang.String, value: js.Any): this.type = js.native
   def inheritedData(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
-  def injector(): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
+  def injector(): angularLib.angularMod.autoNs.IInjectorService = js.native
   /**
     * Returns the `$scope` of the element.
     *
@@ -273,7 +273,7 @@ trait JQuery extends js.Object {
     *
     * See https://docs.angularjs.org/guide/production#disabling-debug-data for more information.
     */
-  def isolateScope[T /* <: angularLib.angularMod.angularNs.IScope */](): T = js.native
+  def isolateScope[T /* <: angularLib.angularMod.IScope */](): T = js.native
   /**
     * Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
     *
@@ -610,7 +610,7 @@ trait JQuery extends js.Object {
     *
     * See https://docs.angularjs.org/guide/production#disabling-debug-data for more information.
     */
-  def scope[T /* <: angularLib.angularMod.angularNs.IScope */](): T = js.native
+  def scope[T /* <: angularLib.angularMod.IScope */](): T = js.native
   /**
     * Get the combined text contents of each element in the set of matched elements, including their descendants.
     * @see {@link https://api.jquery.com/text/#text}

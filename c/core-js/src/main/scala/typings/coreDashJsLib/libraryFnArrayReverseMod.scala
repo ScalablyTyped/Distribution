@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/library/fn/array/reverse", JSImport.Namespace)
 @js.native
-object libraryFnArrayReverseMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayArrayLikeT_162244192]
+object libraryFnArrayReverseMod extends js.Object {
+  def apply[T](array: stdLib.ArrayLike[T]): coreDashJsLib.Array[T] = js.native
+}
 

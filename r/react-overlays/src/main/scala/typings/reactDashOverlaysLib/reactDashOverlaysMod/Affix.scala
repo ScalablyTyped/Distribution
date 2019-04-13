@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-overlays", "Affix")
 @js.native
 class Affix ()
-  extends reactDashOverlaysLib.libAffixMod.namespaced
+  extends reactDashOverlaysLib.libAffixMod.^
 

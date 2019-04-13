@@ -29,3 +29,25 @@ class VariadicForeignFunctionCls protected () extends VariadicForeignFunction {
   def this(ptr: ffiLib.Buffer, ret: refLib.refMod.Type, fixedArgs: js.Array[_], abi: scala.Double) = this()
 }
 
+@JSImport("ffi", "VariadicForeignFunction")
+@js.native
+object VariadicForeignFunction
+  extends org.scalablytyped.runtime.Instantiable3[
+      /* ptr */ ffiLib.Buffer, 
+      (/* ret */ java.lang.String) | (/* ret */ refLib.refMod.Type), 
+      /* fixedArgs */ js.Array[js.Any], 
+      VariadicForeignFunction
+    ]
+     with org.scalablytyped.runtime.Instantiable4[
+      /* ptr */ ffiLib.Buffer, 
+      (/* ret */ java.lang.String) | (/* ret */ refLib.refMod.Type), 
+      /* fixedArgs */ js.Array[js.Any], 
+      /* abi */ scala.Double, 
+      VariadicForeignFunction
+    ] {
+  def apply(ptr: ffiLib.Buffer, ret: java.lang.String, fixedArgs: js.Array[_]): ffiLib.ffiMod.VariadicForeignFunction = js.native
+  def apply(ptr: ffiLib.Buffer, ret: java.lang.String, fixedArgs: js.Array[_], abi: scala.Double): ffiLib.ffiMod.VariadicForeignFunction = js.native
+  def apply(ptr: ffiLib.Buffer, ret: refLib.refMod.Type, fixedArgs: js.Array[_]): ffiLib.ffiMod.VariadicForeignFunction = js.native
+  def apply(ptr: ffiLib.Buffer, ret: refLib.refMod.Type, fixedArgs: js.Array[_], abi: scala.Double): ffiLib.ffiMod.VariadicForeignFunction = js.native
+}
+

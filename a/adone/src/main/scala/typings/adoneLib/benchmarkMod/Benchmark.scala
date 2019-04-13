@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation._
 @JSImport("adone/benchmark", "Benchmark")
 @js.native
 class Benchmark protected ()
-  extends benchmarkLib.benchmarkMod.namespaced {
+  extends benchmarkLib.benchmarkMod.^ {
   def this(fn: java.lang.String) = this()
   def this(fn: js.Function) = this()
-  def this(options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
-  def this(fn: java.lang.String, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
-  def this(fn: js.Function, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
+  def this(options: benchmarkLib.benchmarkMod.Options) = this()
+  def this(fn: java.lang.String, options: benchmarkLib.benchmarkMod.Options) = this()
+  def this(fn: js.Function, options: benchmarkLib.benchmarkMod.Options) = this()
   def this(name: java.lang.String, fn: java.lang.String) = this()
   def this(name: java.lang.String, fn: js.Function) = this()
-  def this(name: java.lang.String, fn: java.lang.String, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
-  def this(name: java.lang.String, fn: js.Function, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
+  def this(name: java.lang.String, fn: java.lang.String, options: benchmarkLib.benchmarkMod.Options) = this()
+  def this(name: java.lang.String, fn: js.Function, options: benchmarkLib.benchmarkMod.Options) = this()
 }
 
 /* static members */
 @JSImport("adone/benchmark", "Benchmark")
 @js.native
 object Benchmark extends js.Object {
-  var options: benchmarkLib.benchmarkMod.BenchmarkNs.Options = js.native
-  var platform: benchmarkLib.benchmarkMod.BenchmarkNs.Platform = js.native
-  var support: benchmarkLib.benchmarkMod.BenchmarkNs.Support = js.native
+  var options: benchmarkLib.benchmarkMod.Options = js.native
+  var platform: benchmarkLib.benchmarkMod.Platform = js.native
+  var support: benchmarkLib.benchmarkMod.Support = js.native
   var version: java.lang.String = js.native
   def deepClone[T](value: T): T = js.native
   def each(obj: js.Array[_], callback: js.Function): scala.Unit = js.native

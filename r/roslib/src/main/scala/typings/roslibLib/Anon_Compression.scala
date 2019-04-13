@@ -12,7 +12,7 @@ trait Anon_Compression extends js.Object {
   var name: java.lang.String
   var queue_length: js.UndefOr[scala.Double] = js.undefined
   var queue_size: js.UndefOr[scala.Double] = js.undefined
-  var ros: roslibLib.roslibMod.ROSLIBNs.Ros
+  var ros: roslibLib.roslibMod.Ros
   var throttle_rate: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -21,7 +21,7 @@ object Anon_Compression {
   def apply(
     messageType: java.lang.String,
     name: java.lang.String,
-    ros: roslibLib.roslibMod.ROSLIBNs.Ros,
+    ros: roslibLib.roslibMod.Ros,
     compression: java.lang.String = null,
     latch: js.UndefOr[scala.Boolean] = js.undefined,
     queue_length: scala.Int | scala.Double = null,

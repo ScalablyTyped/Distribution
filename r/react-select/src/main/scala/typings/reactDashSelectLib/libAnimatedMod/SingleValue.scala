@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select/lib/animated", "SingleValue")
 @js.native
 class SingleValue protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashSelectLib.libAnimatedSingleValueMod.AnimatedSingleValueProps[js.Any], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashSelectLib.libAnimatedSingleValueMod.AnimatedSingleValueProps[_]) = this()

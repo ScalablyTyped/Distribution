@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 object allureDashJsDashCommonsLibStrings {
   @js.native
   sealed trait broken
-    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.Status
   
   @js.native
   sealed trait failed
-    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.Status
   
   @js.native
   sealed trait passed
-    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.Status
   
   @js.native
   sealed trait pending
-    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.Status
   
   @js.native
   sealed trait skipped
-    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.Status
   
   @scala.inline
   def broken: broken = "broken".asInstanceOf[broken]

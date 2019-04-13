@@ -50,25 +50,25 @@ package object oidcDashStrategyMod {
     scala.Unit
   ])
   type VerifyOIDCFunctionWithReq = (js.Function3[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* profile */ IProfile, 
     /* done */ passportDashAzureDashAdLib.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function4[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* done */ passportDashAzureDashAdLib.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function5[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ IProfile, 
     /* done */ passportDashAzureDashAdLib.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function7[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ IProfile, 
@@ -77,7 +77,7 @@ package object oidcDashStrategyMod {
     /* done */ passportDashAzureDashAdLib.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function8[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ IProfile, 
@@ -87,7 +87,7 @@ package object oidcDashStrategyMod {
     /* done */ passportDashAzureDashAdLib.commonMod.VerifyCallback, 
     scala.Unit
   ]) | (js.Function9[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* iss */ java.lang.String, 
     /* sub */ java.lang.String, 
     /* profile */ IProfile, 

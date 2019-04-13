@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-coffeelint", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[gulpDashCoffeelintLib.gulpDashCoffeelintMod.coffeelintNs.Coffeelint]
+  extends org.scalablytyped.runtime.TopLevel[Coffeelint]
 

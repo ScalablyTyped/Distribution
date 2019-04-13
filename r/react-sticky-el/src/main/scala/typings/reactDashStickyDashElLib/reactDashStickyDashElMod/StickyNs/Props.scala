@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props[HolderProps /* <: js.Object */]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] {
+  extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] {
   /**
     * Sticky state will be triggered when the bottom of the element is
     * `bottomOffset` pixels from the bottom of the `scrollElement`.
@@ -95,7 +95,7 @@ trait Props[HolderProps /* <: js.Object */]
     * Note: You likely want to avoid messing with the following attributes in
     * your stickyStyle: `left`, `top`, and `width`.
     */
-  var stickyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var stickyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Sticky state will be triggered when the top of the element is `topOffset`
     * pixels from the top of the `scrollElement`. Positive numbers give the
@@ -118,7 +118,7 @@ trait Props[HolderProps /* <: js.Object */]
 object Props {
   @scala.inline
   def apply[HolderProps /* <: js.Object */](
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     bottomOffset: scala.Int | scala.Double = null,
     boundaryElement: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -130,7 +130,7 @@ object Props {
     positionRecheckInterval: scala.Int | scala.Double = null,
     scrollElement: java.lang.String = null,
     stickyClassName: java.lang.String = null,
-    stickyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    stickyStyle: reactLib.reactMod.CSSProperties = null,
     topOffset: scala.Int | scala.Double = null,
     wrapperCmp: java.lang.String = null
   ): Props[HolderProps] = {

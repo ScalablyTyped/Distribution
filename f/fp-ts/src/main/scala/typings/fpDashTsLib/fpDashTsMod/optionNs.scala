@@ -18,7 +18,7 @@ object optionNs extends js.Object {
     def this(value: A) = this()
   }
   
-  val URI: /* Option */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Option = js.native
   val none: fpDashTsLib.libOptionMod.Option[scala.Nothing] = js.native
   val option: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libPlusMod.Plus1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libAlternativeMod.Alternative1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libExtendMod.Extend1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libFilterableMod.Filterable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libOptionMod.URI] = js.native
   def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): fpDashTsLib.libOptionMod.Option[A] = js.native

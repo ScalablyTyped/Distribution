@@ -27,7 +27,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 * @returns a promise which resolves to an unbind method after data is set in scope
   	 */
   @JSName("$bindTo")
-  def $bindTo(scope: angularLib.angularMod.angularNs.IScope, varName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $bindTo(scope: angularLib.angularMod.IScope, varName: java.lang.String): angularLib.angularMod.IPromise[_] = js.native
   /**
   	 * Informs $firebase to stop sending events and clears memory being used
   	 * by this object (delete's its local content).
@@ -47,22 +47,22 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 * @returns a promise which resolves after initial data is downloaded from Firebase
   	 */
   @JSName("$loaded")
-  def $loaded(): angularLib.angularMod.angularNs.IPromise[AngularFireObject] = js.native
+  def $loaded(): angularLib.angularMod.IPromise[AngularFireObject] = js.native
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[
       /* x */ this.type, 
-      angularLib.angularMod.angularNs.IHttpPromise[js.Object] | angularLib.angularMod.angularNs.IPromise[js.Object] | scala.Unit
+      angularLib.angularMod.IHttpPromise[js.Object] | angularLib.angularMod.IPromise[js.Object] | scala.Unit
     ]
-  ): angularLib.angularMod.angularNs.IPromise[AngularFireObject] = js.native
+  ): angularLib.angularMod.IPromise[AngularFireObject] = js.native
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[
       /* x */ this.type, 
-      angularLib.angularMod.angularNs.IHttpPromise[js.Object] | angularLib.angularMod.angularNs.IPromise[js.Object] | scala.Unit
+      angularLib.angularMod.IHttpPromise[js.Object] | angularLib.angularMod.IPromise[js.Object] | scala.Unit
     ],
     reject: js.Function1[/* err */ js.Any, _]
-  ): angularLib.angularMod.angularNs.IPromise[AngularFireObject] = js.native
+  ): angularLib.angularMod.IPromise[AngularFireObject] = js.native
   /**
   	 * @returns {Firebase} the original Firebase instance used to create this object.
   	 */
@@ -75,7 +75,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 * @returns a promise which will resolve after the op completes
   	 */
   @JSName("$remove")
-  def $remove(): angularLib.angularMod.angularNs.IPromise[
+  def $remove(): angularLib.angularMod.IPromise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
@@ -83,7 +83,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 * @returns a promise which will resolve after the save is completed.
   	 */
   @JSName("$save")
-  def $save(): angularLib.angularMod.angularNs.IPromise[
+  def $save(): angularLib.angularMod.IPromise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**

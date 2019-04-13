@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object buildSrcCoreInterfacesMod {
   type AppliedProjector = js.Function2[/* datum */ js.Any, /* index */ scala.Double, js.Any]
+  type AttributeToAppliedProjector = org.scalablytyped.runtime.StringDictionary[AppliedProjector]
+  type AttributeToProjector = org.scalablytyped.runtime.StringDictionary[Projector]
   type IAccessor[T] = js.Function3[
     /* datum */ js.Any, 
     /* index */ scala.Double, 

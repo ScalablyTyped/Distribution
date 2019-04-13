@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CardBodyProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] {
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object CardBodyProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] = null,
     prefixCls: java.lang.String = null
   ): CardBodyProps = {
     val __obj = js.Dynamic.literal()

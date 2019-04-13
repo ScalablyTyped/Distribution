@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object idyllDashCompilerLibStrings {
   @js.native
   sealed trait expression
-    extends idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropType
+    extends idyllDashCompilerLib.idyllDashCompilerMod.PropType
   
   @js.native
   sealed trait value
-    extends idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropType
+    extends idyllDashCompilerLib.idyllDashCompilerMod.PropType
   
   @js.native
   sealed trait variable
-    extends idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropType
+    extends idyllDashCompilerLib.idyllDashCompilerMod.PropType
   
   @scala.inline
   def expression: expression = "expression".asInstanceOf[expression]

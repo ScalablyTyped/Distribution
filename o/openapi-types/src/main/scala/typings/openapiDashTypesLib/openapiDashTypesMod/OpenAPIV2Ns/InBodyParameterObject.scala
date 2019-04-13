@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InBodyParameterObject
-  extends Parameter
-     with ParameterObject {
+  extends ParameterObject
+     with Parameter {
   var schema: Schema
 }
 

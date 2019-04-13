@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Left
-  extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs._Coordinates {
-  var left: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Position] = js.undefined
-  var top: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Position] = js.undefined
+  extends overlayscrollbarsLib.overlayscrollbarsMod._Coordinates {
+  var left: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.Position] = js.undefined
+  var top: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.Position] = js.undefined
 }
 
 object Anon_Left {
   @scala.inline
   def apply(
-    left: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Position = null,
-    top: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Position = null
+    left: overlayscrollbarsLib.overlayscrollbarsMod.Position = null,
+    top: overlayscrollbarsLib.overlayscrollbarsMod.Position = null
   ): Anon_Left = {
     val __obj = js.Dynamic.literal()
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])

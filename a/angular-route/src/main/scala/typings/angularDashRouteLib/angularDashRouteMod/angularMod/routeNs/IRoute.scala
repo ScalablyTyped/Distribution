@@ -119,12 +119,10 @@ trait IRoute extends js.Object {
     * will cause the latter to be ignored.
     */
   var resolveRedirectTo: js.UndefOr[
-    angularLib.angularMod.angularNs.Injectable[
+    angularLib.angularMod.Injectable[
       js.Function1[
         /* repeated */ _, 
-        js.UndefOr[
-          angularLib.angularMod.angularNs.IPromise[js.UndefOr[java.lang.String]] | java.lang.String
-        ]
+        js.UndefOr[angularLib.angularMod.IPromise[js.UndefOr[java.lang.String]] | java.lang.String]
       ]
     ]
   ] = js.undefined
@@ -159,12 +157,10 @@ object IRoute {
     reloadOnUrl: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     resolveAs: java.lang.String = null,
-    resolveRedirectTo: angularLib.angularMod.angularNs.Injectable[
+    resolveRedirectTo: angularLib.angularMod.Injectable[
       js.Function1[
         /* repeated */ _, 
-        js.UndefOr[
-          angularLib.angularMod.angularNs.IPromise[js.UndefOr[java.lang.String]] | java.lang.String
-        ]
+        js.UndefOr[angularLib.angularMod.IPromise[js.UndefOr[java.lang.String]] | java.lang.String]
       ]
     ] = null,
     template: java.lang.String | angularDashRouteLib.Anon_RouteParams = null,

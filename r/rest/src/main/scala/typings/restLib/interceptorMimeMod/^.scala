@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor/mime", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[restLib.restMod.restNs.Interceptor[restLib.interceptorMimeMod.mimeNs.Config]]
+  extends org.scalablytyped.runtime.TopLevel[restLib.restMod.Interceptor[Config]]
 

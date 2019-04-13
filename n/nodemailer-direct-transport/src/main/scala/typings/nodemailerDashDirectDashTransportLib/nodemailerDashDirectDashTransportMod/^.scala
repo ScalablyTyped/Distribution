@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("nodemailer-direct-transport", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    options: nodemailerDashDirectDashTransportLib.nodemailerDashDirectDashTransportMod.directTransportNs.DirectOptions
-  ): nodemailerLib.nodemailerMod.Transport = js.native
+  def apply(options: DirectOptions): nodemailerLib.nodemailerMod.Transport = js.native
 }
 

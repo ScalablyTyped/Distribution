@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Athena ()
   extends awsDashSdkLib.clientsAllMod.Athena {
-  def this(options: awsDashSdkLib.clientsAthenaMod.AthenaNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAthenaMod.ClientConfiguration) = this()
 }
 

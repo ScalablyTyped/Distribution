@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cypress/types/bluebird", "OperationalError")
 @js.native
 class OperationalError ()
-  extends cypressLib.typesBluebirdMod.BluebirdNs.OperationalError {
+  extends stdLib.Error {
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */

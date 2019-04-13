@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudFront ()
   extends awsDashSdkLib.awsDashSdkMod.CloudFront {
-  def this(options: awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloudfrontMod.ClientConfiguration) = this()
 }
 

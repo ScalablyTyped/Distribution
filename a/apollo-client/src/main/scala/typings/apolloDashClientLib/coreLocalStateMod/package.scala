@@ -20,4 +20,5 @@ package object coreLocalStateMod {
     /* info */ apolloDashClientLib.Anon_Field, 
     js.Any
   ]
+  type VariableMap = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

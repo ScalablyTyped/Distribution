@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsDatetimeLibComponents {
   @scala.inline
-  def DateInput: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateInputMod.IDateInputProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDateInputMod.DateInput].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateInputMod.IDateInputProps]]
+  def DateInput: reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateInputMod.IDateInputProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDateInputMod.DateInput].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateInputMod.IDateInputProps]]
   @scala.inline
-  def DatePicker: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDatePickerMod.IDatePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDatePickerMod.DatePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDatePickerMod.IDatePickerProps]]
+  def DatePicker: reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDatePickerMod.IDatePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDatePickerMod.DatePicker].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDatePickerMod.IDatePickerProps]]
   @scala.inline
-  def DateRangeInput: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangeInputMod.IDateRangeInputProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDateRangeInputMod.DateRangeInput].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangeInputMod.IDateRangeInputProps]]
+  def DateRangeInput: reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangeInputMod.IDateRangeInputProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDateRangeInputMod.DateRangeInput].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangeInputMod.IDateRangeInputProps]]
   @scala.inline
-  def DateRangePicker: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangePickerMod.IDateRangePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.atBlueprintjsDatetimeMod.DateRangePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangePickerMod.IDateRangePickerProps]]
+  def DateRangePicker: reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangePickerMod.IDateRangePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.atBlueprintjsDatetimeMod.DateRangePicker].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateRangePickerMod.IDateRangePickerProps]]
   @scala.inline
-  def DateTimePicker: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateTimePickerMod.IDateTimePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDateTimePickerMod.DateTimePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmDateTimePickerMod.IDateTimePickerProps]]
+  def DateTimePicker: reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateTimePickerMod.IDateTimePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmDateTimePickerMod.DateTimePicker].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmDateTimePickerMod.IDateTimePickerProps]]
   @scala.inline
-  def Shortcuts: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmShortcutsMod.IShortcutsProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmShortcutsMod.Shortcuts].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmShortcutsMod.IShortcutsProps]]
+  def Shortcuts: reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmShortcutsMod.IShortcutsProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmShortcutsMod.Shortcuts].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmShortcutsMod.IShortcutsProps]]
   @scala.inline
-  def TimePicker: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmTimePickerMod.ITimePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmTimePickerMod.TimePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsDatetimeLib.libEsmTimePickerMod.ITimePickerProps]]
+  def TimePicker: reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmTimePickerMod.ITimePickerProps] = js.constructorOf[atBlueprintjsDatetimeLib.libEsmTimePickerMod.TimePicker].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsDatetimeLib.libEsmTimePickerMod.ITimePickerProps]]
   type IDateInputProps = atBlueprintjsDatetimeLib.libEsmDateInputMod.IDateInputProps
   @scala.inline
   def IDatePickerProps: atBlueprintjsDatetimeLib.libEsmDatePickerMod.IDatePickerProps.type = atBlueprintjsDatetimeLib.libEsmDatePickerMod.IDatePickerProps

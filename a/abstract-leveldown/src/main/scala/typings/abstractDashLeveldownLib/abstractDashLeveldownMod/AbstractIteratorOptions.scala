@@ -21,6 +21,7 @@ trait AbstractIteratorOptions[K] extends AbstractOptions {
 object AbstractIteratorOptions {
   @scala.inline
   def apply[K](
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     gt: K = null,
     gte: K = null,
     keyAsBuffer: js.UndefOr[scala.Boolean] = js.undefined,
@@ -33,6 +34,7 @@ object AbstractIteratorOptions {
     values: js.UndefOr[scala.Boolean] = js.undefined
   ): AbstractIteratorOptions[K] = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
     if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
     if (!js.isUndefined(keyAsBuffer)) __obj.updateDynamic("keyAsBuffer")(keyAsBuffer)

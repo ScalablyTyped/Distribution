@@ -21,3 +21,8 @@ class SetPropertiesParamsOfMultipleObjects ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.SetPropertiesParamsOfMultipleObjects")
+@js.native
+object SetPropertiesParamsOfMultipleObjects
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISetPropertiesParamsOfMultipleObjects]
+

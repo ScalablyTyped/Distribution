@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StrictTransitionablePortalProps extends js.Object {
   /** Primary content. */
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   /**
     * Called when a close event happens.
     *
@@ -71,7 +71,7 @@ trait StrictTransitionablePortalProps extends js.Object {
 object StrictTransitionablePortalProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     onClose: (/* nothing */ scala.Null, /* data */ semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.PortalProps with TransitionablePortalState) => scala.Unit = null,
     onHide: (/* nothing */ scala.Null, /* data */ semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionEventData with TransitionablePortalState) => scala.Unit = null,
     onOpen: (/* nothing */ scala.Null, /* data */ semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.PortalProps with TransitionablePortalState) => scala.Unit = null,

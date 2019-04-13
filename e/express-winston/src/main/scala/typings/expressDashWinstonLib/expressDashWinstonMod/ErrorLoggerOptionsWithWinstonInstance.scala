@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait ErrorLoggerOptionsWithWinstonInstance
   extends BaseErrorLoggerOptions
      with ErrorLoggerOptions {
-  var winstonInstance: winstonLib.winstonMod.winstonNs.Logger
+  var winstonInstance: winstonLib.winstonMod.Logger
 }
 
 object ErrorLoggerOptionsWithWinstonInstance {
   @scala.inline
   def apply(
-    winstonInstance: winstonLib.winstonMod.winstonNs.Logger,
+    winstonInstance: winstonLib.winstonMod.Logger,
     baseMeta: js.Object = null,
     dynamicMeta: DynamicMetaFunction = null,
     level: java.lang.String | DynamicLevelFunction = null,

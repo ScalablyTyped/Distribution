@@ -20,7 +20,7 @@ object freeNs extends js.Object {
     def this(value: A) = this()
   }
   
-  val URI: /* Free */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Free = js.native
   def foldFree[M](M: fpDashTsLib.libMonadMod.Monad[M]): js.Function2[
     /* nt */ js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[_, _], fpDashTsLib.libHKTMod.HKT[M, _]], 
     /* fa */ fpDashTsLib.libFreeMod.Free[_, _], 

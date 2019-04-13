@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Error protected ()
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.Error {
-  def this(code: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ErrorCode, message: java.lang.String) = this()
+  def this(code: avoscloudDashSdkLib.avoscloudDashSdkMod.ErrorCode, message: java.lang.String) = this()
 }
 

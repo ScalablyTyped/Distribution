@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Select/Select", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: reactLib.reactMod.ReactNs.ComponentType[SelectProps] = js.native
+  val default: reactLib.reactMod.ComponentType[SelectProps] = js.native
 }
 

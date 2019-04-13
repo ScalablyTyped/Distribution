@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation._
 
 object atAngularFormsLibStrings {
   @js.native
+  sealed trait DISABLED extends js.Object
+  
+  @js.native
+  sealed trait INVALID extends js.Object
+  
+  @js.native
+  sealed trait PENDING extends js.Object
+  
+  @js.native
+  sealed trait VALID extends js.Object
+  
+  @js.native
   sealed trait always extends js.Object
   
   @js.native
@@ -27,6 +39,14 @@ object atAngularFormsLibStrings {
   sealed trait submit
     extends atAngularFormsLib.srcModelMod.FormHooks
   
+  @scala.inline
+  def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
+  @scala.inline
+  def INVALID: INVALID = "INVALID".asInstanceOf[INVALID]
+  @scala.inline
+  def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  @scala.inline
+  def VALID: VALID = "VALID".asInstanceOf[VALID]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline

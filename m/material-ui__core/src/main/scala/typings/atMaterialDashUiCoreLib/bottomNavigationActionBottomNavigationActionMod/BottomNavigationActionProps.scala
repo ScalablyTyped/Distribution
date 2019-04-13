@@ -9,16 +9,12 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, 'classes' | 'onChange'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps[P]} */ trait BottomNavigationActionProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BottomNavigationActionClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
-      /* value */ js.Any, 
-      scala.Unit
-    ]
+    js.Function2[/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ js.Any, scala.Unit]
   ] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.ReactEventHandler[_]] = js.undefined
   var selected: js.UndefOr[scala.Boolean] = js.undefined
   var showLabel: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
@@ -31,14 +27,14 @@ object BottomNavigationActionProps {
     classes: stdLib.Partial[
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BottomNavigationActionClassKey]
     ] = null,
-    icon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* value */ js.Any) => scala.Unit = null,
-    onClick: reactLib.reactMod.ReactNs.ReactEventHandler[_] = null,
+    icon: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    label: reactLib.reactMod.ReactNode = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ js.Any) => scala.Unit = null,
+    onClick: reactLib.reactMod.ReactEventHandler[_] = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     showLabel: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: js.Any = null
   ): BottomNavigationActionProps = {
     val __obj = js.Dynamic.literal()

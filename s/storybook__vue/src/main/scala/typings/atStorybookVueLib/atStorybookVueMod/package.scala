@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atStorybookVueMod {
+  type Addon = org.scalablytyped.runtime.StringDictionary[
+    js.Function2[/* storyName */ java.lang.String, /* storyFn */ StoryFunction, scala.Unit]
+  ]
+  type DecoratorParameters = org.scalablytyped.runtime.StringDictionary[js.Any]
   type StoryDecorator = js.Function2[
     /* story */ js.Function0[
       vueLib.typesOptionsMod.ComponentOptions[

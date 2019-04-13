@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class LexRuntime ()
   extends awsDashSdkLib.clientsAllMod.LexRuntime {
-  def this(options: awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsLexruntimeMod.ClientConfiguration) = this()
 }
 

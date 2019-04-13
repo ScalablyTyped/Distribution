@@ -13,7 +13,7 @@ trait StrictInputProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** An Input field can show that it is disabled. */
@@ -54,7 +54,7 @@ trait StrictInputProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement], 
       /* data */ InputOnChangeData, 
       scala.Unit
     ]
@@ -77,7 +77,7 @@ object StrictInputProps {
     action: js.Any | scala.Boolean = null,
     actionPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left = null,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
@@ -90,7 +90,7 @@ object StrictInputProps {
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = null,
     labelPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`left corner`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`right corner`) = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], /* data */ InputOnChangeData) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement], /* data */ InputOnChangeData) => scala.Unit = null,
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.big | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.massive = null,
     tabIndex: scala.Double | java.lang.String = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,

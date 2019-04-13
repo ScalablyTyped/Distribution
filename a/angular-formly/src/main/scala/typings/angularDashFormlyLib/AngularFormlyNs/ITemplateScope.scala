@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 	 */
 trait ITemplateScope extends js.Object {
   //Shortcut to options.formControl
-  var fc: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController]
+  var fc: angularLib.angularMod.IFormController | js.Array[angularLib.angularMod.IFormController]
   //all the fields for the form
   var fields: IFieldArray
   //the form controller the field is in
@@ -33,7 +33,7 @@ trait ITemplateScope extends js.Object {
 object ITemplateScope {
   @scala.inline
   def apply(
-    fc: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController],
+    fc: angularLib.angularMod.IFormController | js.Array[angularLib.angularMod.IFormController],
     fields: IFieldArray,
     form: js.Any,
     formState: js.Object,

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Comprehend ()
   extends awsDashSdkLib.awsDashSdkMod.Comprehend {
-  def this(options: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsComprehendMod.ClientConfiguration) = this()
 }
 

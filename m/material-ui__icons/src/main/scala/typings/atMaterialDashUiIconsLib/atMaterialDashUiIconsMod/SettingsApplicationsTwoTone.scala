@@ -16,9 +16,9 @@ class SettingsApplicationsTwoTone protected ()
 @JSImport("@material-ui/icons", "SettingsApplicationsTwoTone")
 @js.native
 class SettingsApplicationsTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

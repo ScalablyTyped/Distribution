@@ -23,13 +23,13 @@ trait PropTypes extends js.Object {
   var searchOptions: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Bounds] = js.undefined
   var shouldFetchSuggestions: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
-  def children(opts: stdLib.Readonly[reactDashPlacesDashAutocompleteLib.Anon_GetInputProps]): reactLib.reactMod.ReactNs.ReactNode
+  def children(opts: stdLib.Readonly[reactDashPlacesDashAutocompleteLib.Anon_GetInputProps]): reactLib.reactMod.ReactNode
 }
 
 object PropTypes {
   @scala.inline
   def apply(
-    children: stdLib.Readonly[reactDashPlacesDashAutocompleteLib.Anon_GetInputProps] => reactLib.reactMod.ReactNs.ReactNode,
+    children: stdLib.Readonly[reactDashPlacesDashAutocompleteLib.Anon_GetInputProps] => reactLib.reactMod.ReactNode,
     debounce: scala.Int | scala.Double = null,
     googleCallbackName: java.lang.String = null,
     highlightFirstSuggestion: js.UndefOr[scala.Boolean] = js.undefined,

@@ -8,13 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/common", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Alignment: atBlueprintjsCoreLib.Anon_CENTER = js.native
-  val Boundary: atBlueprintjsCoreLib.Anon_END = js.native
-  val Colors: atBlueprintjsCoreLib.Anon_BLACK = js.native
-  val DISPLAYNAME_PREFIX: /* Blueprint3 */ java.lang.String = js.native
-  val Elevation: atBlueprintjsCoreLib.Anon_0 = js.native
-  val Intent: atBlueprintjsCoreLib.Anon_DANGER = js.native
-  val Position: atBlueprintjsCoreLib.Anon_BOTTOM = js.native
+  val DISPLAYNAME_PREFIX: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.Blueprint3 = js.native
   def getPositionIgnoreAngles(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.left | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.right | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.bottom | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.top = js.native
   def isPositionHorizontal(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native
   def isPositionVertical(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native

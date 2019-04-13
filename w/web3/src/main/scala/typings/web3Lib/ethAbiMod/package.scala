@@ -14,5 +14,6 @@ package object ethAbiMod {
     - java.lang.String
   */
   type ABIDataTypes = _ABIDataTypes | java.lang.String
+  type EthAbiDecodeParametersResultArray = org.scalablytyped.runtime.NumberDictionary[js.Any]
   type EthAbiDecodeParametersResultObject = EthAbiDecodeParametersResultArray with org.scalablytyped.runtime.StringDictionary[js.Any]
 }

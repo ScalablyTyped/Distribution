@@ -41,19 +41,19 @@ trait AutoSizerProps
     * Optional custom inline style to attach to root AutoSizer element.
     * This is an advanced property and is not typically necessary.
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Function responsible for rendering children.
     * This function should implement the following signature:
     * ({ height, width }) => PropTypes.element
     */
-  def children(props: Size): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: Size): reactLib.reactMod.ReactNode
 }
 
 object AutoSizerProps {
   @scala.inline
   def apply(
-    children: Size => reactLib.reactMod.ReactNs.ReactNode,
+    children: Size => reactLib.reactMod.ReactNode,
     StringDictionary: /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
@@ -69,7 +69,7 @@ object AutoSizerProps {
     disableWidth: js.UndefOr[scala.Boolean] = js.undefined,
     nonce: java.lang.String = null,
     onResize: /* info */ Size => _ = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AutoSizerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

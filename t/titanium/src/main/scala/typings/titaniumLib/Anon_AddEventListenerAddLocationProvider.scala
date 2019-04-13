@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_AddEventListenerAddLocationProvider extends js.Object {
   /**
+  			 * Specifies the GPS location provider.
+  			 */
+  val PROVIDER_GPS: java.lang.String = js.native
+  /**
+  			 * Specifies the network location provider.
+  			 */
+  val PROVIDER_NETWORK: java.lang.String = js.native
+  /**
+  			 * Specifies the passive location provider.
+  			 */
+  val PROVIDER_PASSIVE: java.lang.String = js.native
+  /**
   			 * The name of the API that this proxy corresponds to.
   			 */
   val apiName: java.lang.String = js.native

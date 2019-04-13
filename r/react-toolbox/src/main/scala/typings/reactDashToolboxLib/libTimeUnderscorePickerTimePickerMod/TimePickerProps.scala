@@ -34,7 +34,7 @@ trait TimePickerProps
   /**
     * A key to identify an Icon from Material Design Icons or a custom Icon Element.
     */
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * This class will be applied to Input component of TimePicker.
     */
@@ -97,7 +97,7 @@ object TimePickerProps {
     cancelLabel: java.lang.String = null,
     error: java.lang.String = null,
     format: reactDashToolboxLib.reactDashToolboxLibStrings.`24hr` | reactDashToolboxLib.reactDashToolboxLibStrings.ampm = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     inputClassName: java.lang.String = null,
     label: java.lang.String = null,
     okLabel: java.lang.String = null,

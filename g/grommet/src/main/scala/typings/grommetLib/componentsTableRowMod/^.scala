@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/TableRow", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val TableRow: reactLib.reactMod.ReactNs.FC[
-    TableRowProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLTableRowElement], 
+  val TableRow: reactLib.reactMod.FC[
+    TableRowProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableRowElement], 
       reactLib.HTMLTableRowElement
     ])
   ] = js.native

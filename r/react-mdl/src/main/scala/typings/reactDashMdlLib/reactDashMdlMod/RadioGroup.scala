@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "RadioGroup")
 @js.native
-class RadioGroup ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.RadioGroup
+class RadioGroup () extends __MDLComponent[RadioGroupProps]
 

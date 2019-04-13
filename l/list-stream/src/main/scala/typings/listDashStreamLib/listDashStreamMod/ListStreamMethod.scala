@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait ListStreamMethod extends js.Object {
   def apply(): ListStream = js.native
   def apply(callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Array[_], scala.Unit]): ListStream = js.native
-  def apply(options: nodeLib.streamMod.internalNs.DuplexOptions): ListStream = js.native
+  def apply(options: nodeLib.streamMod.DuplexOptions): ListStream = js.native
   def apply(
-    options: nodeLib.streamMod.internalNs.DuplexOptions,
+    options: nodeLib.streamMod.DuplexOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Array[_], scala.Unit]
   ): ListStream = js.native
 }

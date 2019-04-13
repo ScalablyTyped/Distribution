@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("formik", "FormikProvider")
 @js.native
 class FormikProvider protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]], 
       js.Any, 
       js.Any

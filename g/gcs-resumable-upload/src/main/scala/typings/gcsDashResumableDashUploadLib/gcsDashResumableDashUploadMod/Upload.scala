@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("gcs-resumable-upload", "Upload")
 @js.native
 class Upload protected ()
-  extends pumpifyLib.pumpifyMod.namespaced {
+  extends pumpifyLib.pumpifyMod.^ {
   def this(cfg: UploadConfig) = this()
   var authClient: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = js.native
   var authConfig: js.UndefOr[gcsDashResumableDashUploadLib.Anon_Scopes] = js.native
   var bucket: java.lang.String = js.native
   var bufferStream: js.UndefOr[js.Any] = js.native
-  var configStore: configstoreLib.configstoreMod.namespaced = js.native
+  var configStore: configstoreLib.configstoreMod.^ = js.native
   var contentLength: scala.Double | gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.`*` = js.native
   var continueUploading: js.Any = js.native
   var deleteConfig: js.Any = js.native

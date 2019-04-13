@@ -35,7 +35,7 @@ trait AriaModalProps extends js.Object {
   /**
     * Customize properties of the style prop that is passed to the dialog.
     */
-  var dialogStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dialogStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * By default, the Escape key exits the modal. Pass `false`, and it won't.
     */
@@ -129,7 +129,7 @@ trait AriaModalProps extends js.Object {
     * top & bottom padding to the underlay.
     * This is illustrated in the demo examples.
     */
-  var underlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var underlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * If `true`, the modal's contents will be vertically (as well as horizontally) centered.
     */
@@ -153,7 +153,7 @@ object AriaModalProps {
     applicationNode: stdLib.Node | stdLib.Element = null,
     dialogClass: java.lang.String = null,
     dialogId: java.lang.String = null,
-    dialogStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dialogStyle: reactLib.reactMod.CSSProperties = null,
     escapeExits: js.UndefOr[scala.Boolean] = js.undefined,
     focusDialog: js.UndefOr[scala.Boolean] = js.undefined,
     getApplicationNode: () => stdLib.Node | stdLib.Element = null,
@@ -166,7 +166,7 @@ object AriaModalProps {
     underlayClass: java.lang.String = null,
     underlayClickExits: js.UndefOr[scala.Boolean] = js.undefined,
     underlayColor: java.lang.String = null,
-    underlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlayStyle: reactLib.reactMod.CSSProperties = null,
     verticallyCenter: js.UndefOr[scala.Boolean] = js.undefined
   ): AriaModalProps = {
     val __obj = js.Dynamic.literal(onExit = js.Any.fromFunction0(onExit))

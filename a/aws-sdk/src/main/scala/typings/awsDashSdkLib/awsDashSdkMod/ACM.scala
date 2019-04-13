@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ACM ()
   extends awsDashSdkLib.clientsAllMod.ACM {
-  def this(options: awsDashSdkLib.clientsAcmMod.ACMNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsAcmMod.ClientConfiguration) = this()
 }
 

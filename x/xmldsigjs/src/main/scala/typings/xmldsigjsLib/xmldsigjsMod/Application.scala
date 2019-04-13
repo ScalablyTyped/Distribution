@@ -7,14 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "Application")
 @js.native
-class Application ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.Application
+class Application () extends js.Object
 
 /* static members */
 @JSImport("xmldsigjs", "Application")
 @js.native
 object Application extends js.Object {
-  val crypto: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.CryptoEx = js.native
+  val crypto: xmldsigjsLib.xmldsigjsMod.CryptoEx = js.native
   /**
     * Gets the crypto module from the Application
     */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object scrollspyNs {
   type IScrollspyService = js.Function2[
-    /* element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+    /* element */ angularLib.angularMod.IAugmentedJQuery, 
     /* options */ IScrollspyOptions, 
     IScrollspy
   ]

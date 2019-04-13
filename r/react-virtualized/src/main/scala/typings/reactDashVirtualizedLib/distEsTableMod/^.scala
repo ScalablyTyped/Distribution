@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val SortDirection: SortDirectionStatic = js.native
-  val SortIndicator: reactLib.reactMod.ReactNs.StatelessComponent[reactDashVirtualizedLib.Anon_SortDirection] = js.native
+  val SortIndicator: reactLib.reactMod.StatelessComponent[reactDashVirtualizedLib.Anon_SortDirection] = js.native
   val defaultCellDataGetter: TableCellDataGetter = js.native
   val defaultCellRenderer: TableCellRenderer = js.native
   val defaultHeaderRowRenderer: TableHeaderRowRenderer = js.native
@@ -19,6 +19,6 @@ object ^ extends js.Object {
     sortCallback: js.Function1[/* params */ reactDashVirtualizedLib.Anon_SortBy, scala.Unit],
     options: MultiSortOptions
   ): MultiSortReturn = js.native
-  def defaultHeaderRenderer(): js.Array[reactLib.reactMod.ReactNs.ReactElement[TableHeaderProps]] = js.native
+  def defaultHeaderRenderer(): js.Array[reactLib.reactMod.ReactElement[TableHeaderProps]] = js.native
 }
 

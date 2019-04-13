@@ -12,8 +12,8 @@ trait Anon_AfterCellEdit[TEntity] extends js.Object {
     * @param {afterCellEditHandler} handler Callback
     */
   def afterCellEdit(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.editNs.afterCellEditHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.editNs.afterCellEditHandler[TEntity]
   ): scala.Unit
   /**
     * raised when cell editing starts on a cell
@@ -21,8 +21,8 @@ trait Anon_AfterCellEdit[TEntity] extends js.Object {
     * @param {beginCellEditHandler} handler Callback
     */
   def beginCellEdit(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.editNs.beginCellEditHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.editNs.beginCellEditHandler[TEntity]
   ): scala.Unit
   /**
     * raised when cell editing is cancelled on a cell
@@ -30,17 +30,17 @@ trait Anon_AfterCellEdit[TEntity] extends js.Object {
     * @param {cancelCellEditHandler} handler Callback
     */
   def cancelCellEdit(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.editNs.cancelCellEditHandler[TEntity]
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.editNs.cancelCellEditHandler[TEntity]
   ): scala.Unit
 }
 
 object Anon_AfterCellEdit {
   @scala.inline
   def apply[TEntity](
-    afterCellEdit: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.editNs.afterCellEditHandler[TEntity]) => scala.Unit,
-    beginCellEdit: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.editNs.beginCellEditHandler[TEntity]) => scala.Unit,
-    cancelCellEdit: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.editNs.cancelCellEditHandler[TEntity]) => scala.Unit
+    afterCellEdit: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.editNs.afterCellEditHandler[TEntity]) => scala.Unit,
+    beginCellEdit: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.editNs.beginCellEditHandler[TEntity]) => scala.Unit,
+    cancelCellEdit: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.editNs.cancelCellEditHandler[TEntity]) => scala.Unit
   ): Anon_AfterCellEdit[TEntity] = {
     val __obj = js.Dynamic.literal(afterCellEdit = js.Any.fromFunction2(afterCellEdit), beginCellEdit = js.Any.fromFunction2(beginCellEdit), cancelCellEdit = js.Any.fromFunction2(cancelCellEdit))
   

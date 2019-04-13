@@ -20,7 +20,7 @@ trait CardMediaProps
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Sets the background color.
     */
@@ -32,7 +32,7 @@ trait CardMediaProps
   /**
     * Can be used instead of children. Accepts an element or a URL string.
     */
-  var image: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var image: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Classnames object defining the component style.
     */
@@ -47,12 +47,12 @@ object CardMediaProps {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     aspectRatio: reactDashToolboxLib.reactDashToolboxLibStrings.wide | reactDashToolboxLib.reactDashToolboxLibStrings.square = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: java.lang.String = null,
     contentOverlay: js.UndefOr[scala.Boolean] = js.undefined,
-    image: reactLib.reactMod.ReactNs.ReactNode = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    image: reactLib.reactMod.ReactNode = null,
+    key: reactLib.reactMod.Key = null,
     onClick: js.Function = null,
     onContextMenu: js.Function = null,
     onDoubleClick: js.Function = null,
@@ -75,7 +75,7 @@ object CardMediaProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: CardMediaTheme = null
   ): CardMediaProps = {
     val __obj = js.Dynamic.literal()

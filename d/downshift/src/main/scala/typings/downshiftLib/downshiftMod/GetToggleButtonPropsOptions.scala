@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetToggleButtonPropsOptions
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLButtonElement]
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLButtonElement]
 
 object GetToggleButtonPropsOptions {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLButtonElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLButtonElement] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): GetToggleButtonPropsOptions = {
     val __obj = js.Dynamic.literal()

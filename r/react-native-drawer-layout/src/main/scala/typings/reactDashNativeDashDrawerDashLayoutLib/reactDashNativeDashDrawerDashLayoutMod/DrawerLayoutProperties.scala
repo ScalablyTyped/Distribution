@@ -10,7 +10,7 @@ trait DrawerLayoutProperties
   /**
     * Child content.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Specifies the background color of the drawer. The default value is white. If you want to set
     * the opacity of the drawer, use rgba.
@@ -70,7 +70,7 @@ trait DrawerLayoutProperties
   /**
     * The navigation view that will be rendered to the side of the screen and can be pulled in.
     */
-  var renderNavigationView: reactLib.reactMod.ReactNs.ReactNode
+  var renderNavigationView: reactLib.reactMod.ReactNode
   /**
     * Make the drawer take the entire screen and draw the background of the status bar to allow it
     * to open over the status bar. It will only have an effect on API 21+.
@@ -87,7 +87,7 @@ object DrawerLayoutProperties {
   def apply(
     drawerPosition: reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutLibStrings.left | reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutLibStrings.right,
     drawerWidth: scala.Double,
-    renderNavigationView: reactLib.reactMod.ReactNs.ReactNode,
+    renderNavigationView: reactLib.reactMod.ReactNode,
     accessibilityActions: js.Array[java.lang.String] = null,
     accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
@@ -100,7 +100,7 @@ object DrawerLayoutProperties {
     accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
     drawerBackgroundColor: java.lang.String = null,
     drawerLockMode: reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutLibStrings.unlocked | reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutLibStrings.`locked-closed` | reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutLibStrings.`locked-open` = null,

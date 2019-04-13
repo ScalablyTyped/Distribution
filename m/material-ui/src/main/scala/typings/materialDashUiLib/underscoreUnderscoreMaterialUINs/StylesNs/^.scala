@@ -18,8 +18,8 @@ object ^ extends js.Object {
   var zIndex: materialDashUiLib.underscoreUnderscoreMaterialUINs.StylesNs.zIndex = js.native
   def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = js.native
   def muiThemeable(): js.Function1[
-    /* component */ (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme], 
-    (reactLib.reactMod.ReactNs.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[materialDashUiLib.Anon_MuiTheme]
+    /* component */ (reactLib.reactMod.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[materialDashUiLib.Anon_MuiTheme], 
+    (reactLib.reactMod.ComponentClass[materialDashUiLib.Anon_MuiTheme, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[materialDashUiLib.Anon_MuiTheme]
   ] = js.native
 }
 

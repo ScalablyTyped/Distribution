@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait RESTAPIRequest extends js.Object {
   val body: RESTAPIRequestBody
-  val headers: /* import warning: ImportType.apply Failed type conversion: {[paramName: string] : string, [paramName: string] : string} */ js.Any
-  val pathParams: /* import warning: ImportType.apply Failed type conversion: {[paramName: string] : string, [paramName: string] : string} */ js.Any
-  val queryParams: /* import warning: ImportType.apply Failed type conversion: {[paramName: string] : std.Array<string>, [paramName: string] : std.Array<string>} */ js.Any
+  val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  val pathParams: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  val queryParams: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   val queryString: java.lang.String
   val uri: java.lang.String
   val url: java.lang.String
@@ -23,9 +23,9 @@ object RESTAPIRequest {
     body: RESTAPIRequestBody,
     getHeader: java.lang.String => java.lang.String,
     getSupportedResponseContentTypes: () => js.Array[java.lang.String],
-    headers: /* import warning: ImportType.apply Failed type conversion: {[paramName: string] : string, [paramName: string] : string} */ js.Any,
-    pathParams: /* import warning: ImportType.apply Failed type conversion: {[paramName: string] : string, [paramName: string] : string} */ js.Any,
-    queryParams: /* import warning: ImportType.apply Failed type conversion: {[paramName: string] : std.Array<string>, [paramName: string] : std.Array<string>} */ js.Any,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    pathParams: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    queryParams: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
     queryString: java.lang.String,
     uri: java.lang.String,
     url: java.lang.String

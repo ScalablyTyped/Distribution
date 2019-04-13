@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object expressDashDomainDashMiddlewareMod extends js.Object {
   def apply(
-    req: expressLib.expressMod.eNs.Request,
-    res: expressLib.expressMod.eNs.Response,
-    next: expressLib.expressMod.eNs.NextFunction
+    req: expressLib.expressMod.Request,
+    res: expressLib.expressMod.Response,
+    next: expressLib.expressMod.NextFunction
   ): js.Any = js.native
 }
 

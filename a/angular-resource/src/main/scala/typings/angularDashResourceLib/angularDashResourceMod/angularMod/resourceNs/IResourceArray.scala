@@ -13,7 +13,7 @@ trait IResourceArray[T]
   extends stdLib.Array[T with IResource[T]] {
   /** The promise of the original server interaction that created this collection. */
   @JSName("$promise")
-  var $promise: angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
+  var $promise: angularLib.angularMod.IPromise[IResourceArray[T]] = js.native
   @JSName("$resolved")
   var $resolved: scala.Boolean = js.native
   @JSName("$cancelRequest")

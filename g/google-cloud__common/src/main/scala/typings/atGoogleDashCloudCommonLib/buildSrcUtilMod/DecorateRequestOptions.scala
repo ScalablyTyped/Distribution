@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DecorateRequestOptions
-  extends requestLib.requestMod.requestNs.CoreOptions {
+  extends requestLib.requestMod.CoreOptions {
   var autoPaginate: js.UndefOr[scala.Boolean] = js.undefined
   var autoPaginateVal: js.UndefOr[scala.Boolean] = js.undefined
   var interceptors_ : js.UndefOr[js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Interceptor]] = js.undefined
@@ -23,14 +23,14 @@ object DecorateRequestOptions {
     agent: nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent = null,
     agentClass: js.Any = null,
     agentOptions: nodeLib.httpMod.AgentOptions | nodeLib.httpsMod.AgentOptions = null,
-    auth: requestLib.requestMod.requestNs.AuthOptions = null,
+    auth: requestLib.requestMod.AuthOptions = null,
     autoPaginate: js.UndefOr[scala.Boolean] = js.undefined,
     autoPaginateVal: js.UndefOr[scala.Boolean] = js.undefined,
-    aws: requestLib.requestMod.requestNs.AWSOptions = null,
+    aws: requestLib.requestMod.AWSOptions = null,
     baseUrl: java.lang.String = null,
     body: js.Any = null,
     ca: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = null,
-    callback: requestLib.requestMod.requestNs.RequestCallback = null,
+    callback: requestLib.requestMod.RequestCallback = null,
     cert: nodeLib.Buffer = null,
     encoding: java.lang.String = null,
     family: requestLib.requestLibNumbers.`4` | requestLib.requestLibNumbers.`6` = null,
@@ -41,12 +41,12 @@ object DecorateRequestOptions {
     form: org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = null,
     formData: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     gzip: js.UndefOr[scala.Boolean] = js.undefined,
-    har: requestLib.requestMod.requestNs.HttpArchiveRequest = null,
-    hawk: requestLib.requestMod.requestNs.HawkOptions = null,
-    headers: requestLib.requestMod.requestNs.Headers = null,
+    har: requestLib.requestMod.HttpArchiveRequest = null,
+    hawk: requestLib.requestMod.HawkOptions = null,
+    headers: requestLib.requestMod.Headers = null,
     host: java.lang.String = null,
     interceptors_ : js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Interceptor] = null,
-    jar: requestLib.requestMod.requestNs.CookieJar | scala.Boolean = null,
+    jar: requestLib.requestMod.CookieJar | scala.Boolean = null,
     json: js.Any = null,
     jsonReplacer: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
     jsonReviver: (/* key */ java.lang.String, /* value */ js.Any) => _ = null,
@@ -55,8 +55,8 @@ object DecorateRequestOptions {
     maxRedirects: scala.Int | scala.Double = null,
     maxRetries: scala.Int | scala.Double = null,
     method: java.lang.String = null,
-    multipart: js.Array[requestLib.requestMod.requestNs.RequestPart] | requestLib.requestMod.requestNs.Multipart = null,
-    oauth: requestLib.requestMod.requestNs.OAuthOptions = null,
+    multipart: js.Array[requestLib.requestMod.RequestPart] | requestLib.requestMod.Multipart = null,
+    oauth: requestLib.requestMod.OAuthOptions = null,
     objectMode: js.UndefOr[scala.Boolean] = js.undefined,
     passphrase: java.lang.String = null,
     pool: js.Any = null,

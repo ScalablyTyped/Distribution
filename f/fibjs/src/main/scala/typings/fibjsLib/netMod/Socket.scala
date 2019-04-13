@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("net", "Socket")
 @js.native
 class Socket ()
-  extends fibjsLib.netMod.netNs.Socket
+  extends fibjsLib.Class_Socket
 

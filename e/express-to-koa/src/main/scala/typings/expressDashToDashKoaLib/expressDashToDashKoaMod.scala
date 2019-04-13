@@ -15,6 +15,6 @@ object expressDashToDashKoaMod extends js.Object {
       /* next */ js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ]
-  ): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  ): koaLib.koaMod.Middleware[_, js.Object] = js.native
 }
 

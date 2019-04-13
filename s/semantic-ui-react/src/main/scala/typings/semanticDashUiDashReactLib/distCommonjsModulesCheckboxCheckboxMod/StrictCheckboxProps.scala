@@ -38,7 +38,7 @@ trait StrictCheckboxProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.FormEvent[stdLib.HTMLInputElement], 
       /* data */ CheckboxProps, 
       scala.Unit
     ]
@@ -51,7 +51,7 @@ trait StrictCheckboxProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       /* data */ CheckboxProps, 
       scala.Unit
     ]
@@ -64,7 +64,7 @@ trait StrictCheckboxProps extends js.Object {
     */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       /* data */ CheckboxProps, 
       scala.Unit
     ]
@@ -77,7 +77,7 @@ trait StrictCheckboxProps extends js.Object {
     */
   var onMouseUp: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       /* data */ CheckboxProps, 
       scala.Unit
     ]
@@ -114,10 +114,10 @@ object StrictCheckboxProps {
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
     label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
     name: java.lang.String = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLInputElement], /* data */ CheckboxProps) => scala.Unit = null,
-    onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
-    onMouseDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
-    onMouseUp: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
+    onChange: (/* event */ reactLib.reactMod.FormEvent[stdLib.HTMLInputElement], /* data */ CheckboxProps) => scala.Unit = null,
+    onClick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
+    onMouseDown: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
+    onMouseUp: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent], /* data */ CheckboxProps) => scala.Unit = null,
     radio: js.UndefOr[scala.Boolean] = js.undefined,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     slider: js.UndefOr[scala.Boolean] = js.undefined,

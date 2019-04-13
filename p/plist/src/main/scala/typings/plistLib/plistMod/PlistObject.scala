@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlistObject
-  extends _PlistValue
-     with /* x */ org.scalablytyped.runtime.StringDictionary[PlistValue]
+  extends /* x */ org.scalablytyped.runtime.StringDictionary[PlistValue]
+     with _PlistValue
 
 object PlistObject {
   @scala.inline

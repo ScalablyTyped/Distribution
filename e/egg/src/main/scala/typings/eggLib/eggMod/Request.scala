@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Request
-  extends koaLib.koaMod.ApplicationNs.Request {
+  extends koaLib.koaMod.Request {
   // tslint:disable-line
   /**
     * detect if response should be json

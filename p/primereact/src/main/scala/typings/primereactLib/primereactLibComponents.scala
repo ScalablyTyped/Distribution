@@ -7,150 +7,150 @@ import scala.scalajs.js.annotation._
 
 object primereactLibComponents {
   @scala.inline
-  def Accordion: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionProps] = js.constructorOf[primereactLib.accordionMod.Accordion].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionProps]]
+  def Accordion: reactLib.reactMod.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionProps] = js.constructorOf[primereactLib.accordionMod.Accordion].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionProps]]
   @scala.inline
-  def AccordionTab: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionTabProps] = js.constructorOf[primereactLib.accordionMod.AccordionTab].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionTabProps]]
+  def AccordionTab: reactLib.reactMod.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionTabProps] = js.constructorOf[primereactLib.accordionMod.AccordionTab].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsAccordionAccordionMod.AccordionTabProps]]
   @scala.inline
-  def AutoComplete: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsAutocompleteAutoCompleteMod.AutoCompleteProps] = js.constructorOf[primereactLib.autocompleteMod.AutoComplete].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsAutocompleteAutoCompleteMod.AutoCompleteProps]]
+  def AutoComplete: reactLib.reactMod.ComponentType[primereactLib.componentsAutocompleteAutoCompleteMod.AutoCompleteProps] = js.constructorOf[primereactLib.autocompleteMod.AutoComplete].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsAutocompleteAutoCompleteMod.AutoCompleteProps]]
   @scala.inline
-  def BreadCrumb: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps] = js.constructorOf[primereactLib.breadcrumbMod.BreadCrumb].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps]]
+  def BreadCrumb: reactLib.reactMod.ComponentType[primereactLib.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps] = js.constructorOf[primereactLib.breadcrumbMod.BreadCrumb].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps]]
   @scala.inline
-  def Button: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsButtonButtonMod.ButtonProps] = js.constructorOf[primereactLib.buttonMod.Button].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsButtonButtonMod.ButtonProps]]
+  def Button: reactLib.reactMod.ComponentType[primereactLib.componentsButtonButtonMod.ButtonProps] = js.constructorOf[primereactLib.buttonMod.Button].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsButtonButtonMod.ButtonProps]]
   @scala.inline
-  def Calendar: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCalendarCalendarMod.CalendarProps] = js.constructorOf[primereactLib.calendarMod.Calendar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCalendarCalendarMod.CalendarProps]]
+  def Calendar: reactLib.reactMod.ComponentType[primereactLib.componentsCalendarCalendarMod.CalendarProps] = js.constructorOf[primereactLib.calendarMod.Calendar].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsCalendarCalendarMod.CalendarProps]]
   @scala.inline
-  def Captcha: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCaptchaCaptchaMod.CaptchaProps] = js.constructorOf[primereactLib.captchaMod.Captcha].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCaptchaCaptchaMod.CaptchaProps]]
+  def Captcha: reactLib.reactMod.ComponentType[primereactLib.componentsCaptchaCaptchaMod.CaptchaProps] = js.constructorOf[primereactLib.captchaMod.Captcha].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsCaptchaCaptchaMod.CaptchaProps]]
   @scala.inline
-  def Card: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCardCardMod.CardProps] = js.constructorOf[primereactLib.cardMod.Card].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCardCardMod.CardProps]]
+  def Card: reactLib.reactMod.ComponentType[primereactLib.componentsCardCardMod.CardProps] = js.constructorOf[primereactLib.cardMod.Card].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsCardCardMod.CardProps]]
   @scala.inline
-  def Chart: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsChartChartMod.ChartProps] = js.constructorOf[primereactLib.chartMod.Chart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsChartChartMod.ChartProps]]
+  def Chart: reactLib.reactMod.ComponentType[primereactLib.componentsChartChartMod.ChartProps] = js.constructorOf[primereactLib.chartMod.Chart].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsChartChartMod.ChartProps]]
   @scala.inline
-  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[primereactLib.checkboxMod.Checkbox].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsCheckboxCheckboxMod.CheckboxProps]]
+  def Checkbox: reactLib.reactMod.ComponentType[primereactLib.componentsCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[primereactLib.checkboxMod.Checkbox].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsCheckboxCheckboxMod.CheckboxProps]]
   @scala.inline
-  def Chips: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsChipsChipsMod.ChipsProps] = js.constructorOf[primereactLib.chipsMod.Chips].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsChipsChipsMod.ChipsProps]]
+  def Chips: reactLib.reactMod.ComponentType[primereactLib.componentsChipsChipsMod.ChipsProps] = js.constructorOf[primereactLib.chipsMod.Chips].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsChipsChipsMod.ChipsProps]]
   @scala.inline
-  def ColorPicker: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsColorpickerColorPickerMod.ColorPickerProps] = js.constructorOf[primereactLib.colorpickerMod.ColorPicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsColorpickerColorPickerMod.ColorPickerProps]]
+  def ColorPicker: reactLib.reactMod.ComponentType[primereactLib.componentsColorpickerColorPickerMod.ColorPickerProps] = js.constructorOf[primereactLib.colorpickerMod.ColorPicker].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsColorpickerColorPickerMod.ColorPickerProps]]
   @scala.inline
-  def Column: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsColumnColumnMod.ColumnProps] = js.constructorOf[primereactLib.columnMod.Column].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsColumnColumnMod.ColumnProps]]
+  def Column: reactLib.reactMod.ComponentType[primereactLib.componentsColumnColumnMod.ColumnProps] = js.constructorOf[primereactLib.columnMod.Column].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsColumnColumnMod.ColumnProps]]
   @scala.inline
-  def ColumnGroup: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsColumngroupColumnGroupMod.ColumnGroupProps] = js.constructorOf[primereactLib.columngroupMod.ColumnGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsColumngroupColumnGroupMod.ColumnGroupProps]]
+  def ColumnGroup: reactLib.reactMod.ComponentType[primereactLib.componentsColumngroupColumnGroupMod.ColumnGroupProps] = js.constructorOf[primereactLib.columngroupMod.ColumnGroup].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsColumngroupColumnGroupMod.ColumnGroupProps]]
   @scala.inline
-  def ContextMenu: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsContextmenuContextMenuMod.ContextMenuProps] = js.constructorOf[primereactLib.contextmenuMod.ContextMenu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsContextmenuContextMenuMod.ContextMenuProps]]
+  def ContextMenu: reactLib.reactMod.ComponentType[primereactLib.componentsContextmenuContextMenuMod.ContextMenuProps] = js.constructorOf[primereactLib.contextmenuMod.ContextMenu].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsContextmenuContextMenuMod.ContextMenuProps]]
   @scala.inline
-  def DataScroller: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDatascrollerDataScrollerMod.DataScrollerProps] = js.constructorOf[primereactLib.datascrollerMod.DataScroller].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDatascrollerDataScrollerMod.DataScrollerProps]]
+  def DataScroller: reactLib.reactMod.ComponentType[primereactLib.componentsDatascrollerDataScrollerMod.DataScrollerProps] = js.constructorOf[primereactLib.datascrollerMod.DataScroller].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsDatascrollerDataScrollerMod.DataScrollerProps]]
   @scala.inline
-  def DataTable: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDatatableDataTableMod.DataTableProps] = js.constructorOf[primereactLib.datatableMod.DataTable].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDatatableDataTableMod.DataTableProps]]
+  def DataTable: reactLib.reactMod.ComponentType[primereactLib.componentsDatatableDataTableMod.DataTableProps] = js.constructorOf[primereactLib.datatableMod.DataTable].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsDatatableDataTableMod.DataTableProps]]
   @scala.inline
-  def DataView: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewProps] = js.constructorOf[primereactLib.dataviewMod.DataView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewProps]]
+  def DataView: reactLib.reactMod.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewProps] = js.constructorOf[primereactLib.dataviewMod.DataView].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewProps]]
   @scala.inline
-  def DataViewLayoutOptions: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewLayoutOptionsProps] = js.constructorOf[primereactLib.dataviewMod.DataViewLayoutOptions].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewLayoutOptionsProps]]
+  def DataViewLayoutOptions: reactLib.reactMod.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewLayoutOptionsProps] = js.constructorOf[primereactLib.dataviewMod.DataViewLayoutOptions].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsDataviewDataViewMod.DataViewLayoutOptionsProps]]
   @scala.inline
-  def DeferredContent: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDeferredcontentDeferredContentMod.DeferredContentProps] = js.constructorOf[primereactLib.deferredcontentMod.DeferredContent].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDeferredcontentDeferredContentMod.DeferredContentProps]]
+  def DeferredContent: reactLib.reactMod.ComponentType[primereactLib.componentsDeferredcontentDeferredContentMod.DeferredContentProps] = js.constructorOf[primereactLib.deferredcontentMod.DeferredContent].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsDeferredcontentDeferredContentMod.DeferredContentProps]]
   @scala.inline
-  def Dialog: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDialogDialogMod.DialogProps] = js.constructorOf[primereactLib.dialogMod.Dialog].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDialogDialogMod.DialogProps]]
+  def Dialog: reactLib.reactMod.ComponentType[primereactLib.componentsDialogDialogMod.DialogProps] = js.constructorOf[primereactLib.dialogMod.Dialog].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsDialogDialogMod.DialogProps]]
   @scala.inline
-  def Dropdown: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDropdownDropdownMod.DropdownProps] = js.constructorOf[primereactLib.dropdownMod.Dropdown].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsDropdownDropdownMod.DropdownProps]]
+  def Dropdown: reactLib.reactMod.ComponentType[primereactLib.componentsDropdownDropdownMod.DropdownProps] = js.constructorOf[primereactLib.dropdownMod.Dropdown].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsDropdownDropdownMod.DropdownProps]]
   @scala.inline
-  def Editor: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsEditorEditorMod.EditorProps] = js.constructorOf[primereactLib.editorMod.Editor].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsEditorEditorMod.EditorProps]]
+  def Editor: reactLib.reactMod.ComponentType[primereactLib.componentsEditorEditorMod.EditorProps] = js.constructorOf[primereactLib.editorMod.Editor].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsEditorEditorMod.EditorProps]]
   @scala.inline
-  def Fieldset: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsFieldsetFieldsetMod.FieldsetProps] = js.constructorOf[primereactLib.fieldsetMod.Fieldset].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsFieldsetFieldsetMod.FieldsetProps]]
+  def Fieldset: reactLib.reactMod.ComponentType[primereactLib.componentsFieldsetFieldsetMod.FieldsetProps] = js.constructorOf[primereactLib.fieldsetMod.Fieldset].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsFieldsetFieldsetMod.FieldsetProps]]
   @scala.inline
-  def FileUpload: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsFileuploadFileUploadMod.FileUploadProps] = js.constructorOf[primereactLib.fileuploadMod.FileUpload].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsFileuploadFileUploadMod.FileUploadProps]]
+  def FileUpload: reactLib.reactMod.ComponentType[primereactLib.componentsFileuploadFileUploadMod.FileUploadProps] = js.constructorOf[primereactLib.fileuploadMod.FileUpload].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsFileuploadFileUploadMod.FileUploadProps]]
   @scala.inline
-  def FullCalendar: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsFullcalendarFullCalendarMod.FullCalendarProps] = js.constructorOf[primereactLib.fullcalendarMod.FullCalendar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsFullcalendarFullCalendarMod.FullCalendarProps]]
+  def FullCalendar: reactLib.reactMod.ComponentType[primereactLib.componentsFullcalendarFullCalendarMod.FullCalendarProps] = js.constructorOf[primereactLib.fullcalendarMod.FullCalendar].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsFullcalendarFullCalendarMod.FullCalendarProps]]
   @scala.inline
-  def GMap: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsGmapGMapMod.GMapProps] = js.constructorOf[primereactLib.gmapMod.GMap].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsGmapGMapMod.GMapProps]]
+  def GMap: reactLib.reactMod.ComponentType[primereactLib.componentsGmapGMapMod.GMapProps] = js.constructorOf[primereactLib.gmapMod.GMap].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsGmapGMapMod.GMapProps]]
   @scala.inline
-  def Growl: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsGrowlGrowlMod.GrowlProps] = js.constructorOf[primereactLib.growlMod.Growl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsGrowlGrowlMod.GrowlProps]]
+  def Growl: reactLib.reactMod.ComponentType[primereactLib.componentsGrowlGrowlMod.GrowlProps] = js.constructorOf[primereactLib.growlMod.Growl].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsGrowlGrowlMod.GrowlProps]]
   @scala.inline
-  def InputMask: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputmaskInputMaskMod.InputMaskProps] = js.constructorOf[primereactLib.inputmaskMod.InputMask].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputmaskInputMaskMod.InputMaskProps]]
+  def InputMask: reactLib.reactMod.ComponentType[primereactLib.componentsInputmaskInputMaskMod.InputMaskProps] = js.constructorOf[primereactLib.inputmaskMod.InputMask].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsInputmaskInputMaskMod.InputMaskProps]]
   @scala.inline
-  def InputSwitch: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputswitchInputSwitchMod.InputSwitchProps] = js.constructorOf[primereactLib.inputswitchMod.InputSwitch].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputswitchInputSwitchMod.InputSwitchProps]]
+  def InputSwitch: reactLib.reactMod.ComponentType[primereactLib.componentsInputswitchInputSwitchMod.InputSwitchProps] = js.constructorOf[primereactLib.inputswitchMod.InputSwitch].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsInputswitchInputSwitchMod.InputSwitchProps]]
   @scala.inline
-  def InputText: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputtextInputTextMod.InputTextProps] = js.constructorOf[primereactLib.inputtextMod.InputText].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputtextInputTextMod.InputTextProps]]
+  def InputText: reactLib.reactMod.ComponentType[primereactLib.componentsInputtextInputTextMod.InputTextProps] = js.constructorOf[primereactLib.inputtextMod.InputText].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsInputtextInputTextMod.InputTextProps]]
   @scala.inline
-  def InputTextarea: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputtextareaInputTextareaMod.InputTextareaProps] = js.constructorOf[primereactLib.inputtextareaMod.InputTextarea].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsInputtextareaInputTextareaMod.InputTextareaProps]]
+  def InputTextarea: reactLib.reactMod.ComponentType[primereactLib.componentsInputtextareaInputTextareaMod.InputTextareaProps] = js.constructorOf[primereactLib.inputtextareaMod.InputTextarea].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsInputtextareaInputTextareaMod.InputTextareaProps]]
   @scala.inline
-  def Lightbox: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsLightboxLightboxMod.LightboxProps] = js.constructorOf[primereactLib.lightboxMod.Lightbox].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsLightboxLightboxMod.LightboxProps]]
+  def Lightbox: reactLib.reactMod.ComponentType[primereactLib.componentsLightboxLightboxMod.LightboxProps] = js.constructorOf[primereactLib.lightboxMod.Lightbox].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsLightboxLightboxMod.LightboxProps]]
   @scala.inline
-  def ListBox: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsListboxListBoxMod.ListBoxProps] = js.constructorOf[primereactLib.listboxMod.ListBox].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsListboxListBoxMod.ListBoxProps]]
+  def ListBox: reactLib.reactMod.ComponentType[primereactLib.componentsListboxListBoxMod.ListBoxProps] = js.constructorOf[primereactLib.listboxMod.ListBox].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsListboxListBoxMod.ListBoxProps]]
   @scala.inline
-  def MegaMenu: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMegamenuMegaMenuMod.MegaMenuProps] = js.constructorOf[primereactLib.megamenuMod.MegaMenu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMegamenuMegaMenuMod.MegaMenuProps]]
+  def MegaMenu: reactLib.reactMod.ComponentType[primereactLib.componentsMegamenuMegaMenuMod.MegaMenuProps] = js.constructorOf[primereactLib.megamenuMod.MegaMenu].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsMegamenuMegaMenuMod.MegaMenuProps]]
   @scala.inline
-  def Menu: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMenuMenuMod.MenuProps] = js.constructorOf[primereactLib.menuMod.Menu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMenuMenuMod.MenuProps]]
+  def Menu: reactLib.reactMod.ComponentType[primereactLib.componentsMenuMenuMod.MenuProps] = js.constructorOf[primereactLib.menuMod.Menu].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsMenuMenuMod.MenuProps]]
   @scala.inline
-  def Menubar: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMenubarMenubarMod.MenubarProps] = js.constructorOf[primereactLib.menubarMod.Menubar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMenubarMenubarMod.MenubarProps]]
+  def Menubar: reactLib.reactMod.ComponentType[primereactLib.componentsMenubarMenubarMod.MenubarProps] = js.constructorOf[primereactLib.menubarMod.Menubar].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsMenubarMenubarMod.MenubarProps]]
   @scala.inline
-  def Message: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMessageMessageMod.MessageProps] = js.constructorOf[primereactLib.messageMod.Message].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMessageMessageMod.MessageProps]]
+  def Message: reactLib.reactMod.ComponentType[primereactLib.componentsMessageMessageMod.MessageProps] = js.constructorOf[primereactLib.messageMod.Message].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsMessageMessageMod.MessageProps]]
   @scala.inline
-  def Messages: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMessagesMessagesMod.MessagesProps] = js.constructorOf[primereactLib.messagesMod.Messages].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMessagesMessagesMod.MessagesProps]]
+  def Messages: reactLib.reactMod.ComponentType[primereactLib.componentsMessagesMessagesMod.MessagesProps] = js.constructorOf[primereactLib.messagesMod.Messages].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsMessagesMessagesMod.MessagesProps]]
   @scala.inline
-  def MultiSelect: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMultiselectMultiSelectMod.MultiSelectProps] = js.constructorOf[primereactLib.multiselectMod.MultiSelect].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsMultiselectMultiSelectMod.MultiSelectProps]]
+  def MultiSelect: reactLib.reactMod.ComponentType[primereactLib.componentsMultiselectMultiSelectMod.MultiSelectProps] = js.constructorOf[primereactLib.multiselectMod.MultiSelect].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsMultiselectMultiSelectMod.MultiSelectProps]]
   @scala.inline
-  def OrderList: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsOrderlistOrderListMod.OrderListProps] = js.constructorOf[primereactLib.orderlistMod.OrderList].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsOrderlistOrderListMod.OrderListProps]]
+  def OrderList: reactLib.reactMod.ComponentType[primereactLib.componentsOrderlistOrderListMod.OrderListProps] = js.constructorOf[primereactLib.orderlistMod.OrderList].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsOrderlistOrderListMod.OrderListProps]]
   @scala.inline
-  def OrganizationChart: reactLib.reactMod.ReactNs.ComponentType[
+  def OrganizationChart: reactLib.reactMod.ComponentType[
     primereactLib.componentsOrganizationchartOrganizationChartMod.OrganizationChartProps
-  ] = js.constructorOf[primereactLib.organizationchartMod.OrganizationChart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[primereactLib.organizationchartMod.OrganizationChart].asInstanceOf[reactLib.reactMod.ComponentType[
   primereactLib.componentsOrganizationchartOrganizationChartMod.OrganizationChartProps]]
   @scala.inline
-  def OverlayPanel: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsOverlaypanelOverlayPanelMod.OverlayPanelProps] = js.constructorOf[primereactLib.overlaypanelMod.OverlayPanel].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsOverlaypanelOverlayPanelMod.OverlayPanelProps]]
+  def OverlayPanel: reactLib.reactMod.ComponentType[primereactLib.componentsOverlaypanelOverlayPanelMod.OverlayPanelProps] = js.constructorOf[primereactLib.overlaypanelMod.OverlayPanel].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsOverlaypanelOverlayPanelMod.OverlayPanelProps]]
   @scala.inline
-  def Paginator: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPaginatorPaginatorMod.PaginatorProps] = js.constructorOf[primereactLib.paginatorMod.Paginator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPaginatorPaginatorMod.PaginatorProps]]
+  def Paginator: reactLib.reactMod.ComponentType[primereactLib.componentsPaginatorPaginatorMod.PaginatorProps] = js.constructorOf[primereactLib.paginatorMod.Paginator].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsPaginatorPaginatorMod.PaginatorProps]]
   @scala.inline
-  def Panel: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPanelPanelMod.PanelProps] = js.constructorOf[primereactLib.panelMod.Panel].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPanelPanelMod.PanelProps]]
+  def Panel: reactLib.reactMod.ComponentType[primereactLib.componentsPanelPanelMod.PanelProps] = js.constructorOf[primereactLib.panelMod.Panel].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsPanelPanelMod.PanelProps]]
   @scala.inline
-  def PanelMenu: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPanelmenuPanelMenuMod.PanelMenuProps] = js.constructorOf[primereactLib.panelmenuMod.PanelMenu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPanelmenuPanelMenuMod.PanelMenuProps]]
+  def PanelMenu: reactLib.reactMod.ComponentType[primereactLib.componentsPanelmenuPanelMenuMod.PanelMenuProps] = js.constructorOf[primereactLib.panelmenuMod.PanelMenu].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsPanelmenuPanelMenuMod.PanelMenuProps]]
   @scala.inline
-  def Password: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPasswordPasswordMod.PasswordProps] = js.constructorOf[primereactLib.passwordMod.Password].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPasswordPasswordMod.PasswordProps]]
+  def Password: reactLib.reactMod.ComponentType[primereactLib.componentsPasswordPasswordMod.PasswordProps] = js.constructorOf[primereactLib.passwordMod.Password].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsPasswordPasswordMod.PasswordProps]]
   @scala.inline
-  def PickList: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPicklistPickListMod.PickListProps] = js.constructorOf[primereactLib.picklistMod.PickList].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsPicklistPickListMod.PickListProps]]
+  def PickList: reactLib.reactMod.ComponentType[primereactLib.componentsPicklistPickListMod.PickListProps] = js.constructorOf[primereactLib.picklistMod.PickList].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsPicklistPickListMod.PickListProps]]
   @scala.inline
-  def ProgressBar: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsProgressbarProgressBarMod.ProgressBarProps] = js.constructorOf[primereactLib.progressbarMod.ProgressBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsProgressbarProgressBarMod.ProgressBarProps]]
+  def ProgressBar: reactLib.reactMod.ComponentType[primereactLib.componentsProgressbarProgressBarMod.ProgressBarProps] = js.constructorOf[primereactLib.progressbarMod.ProgressBar].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsProgressbarProgressBarMod.ProgressBarProps]]
   @scala.inline
-  def ProgressSpinner: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsProgressspinnerProgressSpinnerMod.ProgressSpinnerProps] = js.constructorOf[primereactLib.progressspinnerMod.ProgressSpinner].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsProgressspinnerProgressSpinnerMod.ProgressSpinnerProps]]
+  def ProgressSpinner: reactLib.reactMod.ComponentType[primereactLib.componentsProgressspinnerProgressSpinnerMod.ProgressSpinnerProps] = js.constructorOf[primereactLib.progressspinnerMod.ProgressSpinner].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsProgressspinnerProgressSpinnerMod.ProgressSpinnerProps]]
   @scala.inline
-  def RadioButton: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsRadiobuttonRadioButtonMod.RadioButtonProps] = js.constructorOf[primereactLib.radiobuttonMod.RadioButton].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsRadiobuttonRadioButtonMod.RadioButtonProps]]
+  def RadioButton: reactLib.reactMod.ComponentType[primereactLib.componentsRadiobuttonRadioButtonMod.RadioButtonProps] = js.constructorOf[primereactLib.radiobuttonMod.RadioButton].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsRadiobuttonRadioButtonMod.RadioButtonProps]]
   @scala.inline
-  def Rating: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsRatingRatingMod.RatingProps] = js.constructorOf[primereactLib.ratingMod.Rating].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsRatingRatingMod.RatingProps]]
+  def Rating: reactLib.reactMod.ComponentType[primereactLib.componentsRatingRatingMod.RatingProps] = js.constructorOf[primereactLib.ratingMod.Rating].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsRatingRatingMod.RatingProps]]
   @scala.inline
-  def Row: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsRowRowMod.RowProps] = js.constructorOf[primereactLib.rowMod.Row].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsRowRowMod.RowProps]]
+  def Row: reactLib.reactMod.ComponentType[primereactLib.componentsRowRowMod.RowProps] = js.constructorOf[primereactLib.rowMod.Row].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsRowRowMod.RowProps]]
   @scala.inline
-  def ScrollPanel: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsScrollpanelScrollPanelMod.ScrollPanelProps] = js.constructorOf[primereactLib.scrollpanelMod.ScrollPanel].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsScrollpanelScrollPanelMod.ScrollPanelProps]]
+  def ScrollPanel: reactLib.reactMod.ComponentType[primereactLib.componentsScrollpanelScrollPanelMod.ScrollPanelProps] = js.constructorOf[primereactLib.scrollpanelMod.ScrollPanel].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsScrollpanelScrollPanelMod.ScrollPanelProps]]
   @scala.inline
-  def SelectButton: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSelectbuttonSelectButtonMod.SelectButtonProps] = js.constructorOf[primereactLib.selectbuttonMod.SelectButton].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSelectbuttonSelectButtonMod.SelectButtonProps]]
+  def SelectButton: reactLib.reactMod.ComponentType[primereactLib.componentsSelectbuttonSelectButtonMod.SelectButtonProps] = js.constructorOf[primereactLib.selectbuttonMod.SelectButton].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsSelectbuttonSelectButtonMod.SelectButtonProps]]
   @scala.inline
-  def Sidebar: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSidebarSidebarMod.SidebarProps] = js.constructorOf[primereactLib.sidebarMod.Sidebar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSidebarSidebarMod.SidebarProps]]
+  def Sidebar: reactLib.reactMod.ComponentType[primereactLib.componentsSidebarSidebarMod.SidebarProps] = js.constructorOf[primereactLib.sidebarMod.Sidebar].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsSidebarSidebarMod.SidebarProps]]
   @scala.inline
-  def SlideMenu: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSlidemenuSlideMenuMod.SlideMenuProps] = js.constructorOf[primereactLib.slidemenuMod.SlideMenu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSlidemenuSlideMenuMod.SlideMenuProps]]
+  def SlideMenu: reactLib.reactMod.ComponentType[primereactLib.componentsSlidemenuSlideMenuMod.SlideMenuProps] = js.constructorOf[primereactLib.slidemenuMod.SlideMenu].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsSlidemenuSlideMenuMod.SlideMenuProps]]
   @scala.inline
-  def Slider: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSliderSliderMod.SliderProps] = js.constructorOf[primereactLib.sliderMod.Slider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSliderSliderMod.SliderProps]]
+  def Slider: reactLib.reactMod.ComponentType[primereactLib.componentsSliderSliderMod.SliderProps] = js.constructorOf[primereactLib.sliderMod.Slider].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsSliderSliderMod.SliderProps]]
   @scala.inline
-  def Spinner: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSpinnerSpinnerMod.SpinnerProps] = js.constructorOf[primereactLib.spinnerMod.Spinner].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSpinnerSpinnerMod.SpinnerProps]]
+  def Spinner: reactLib.reactMod.ComponentType[primereactLib.componentsSpinnerSpinnerMod.SpinnerProps] = js.constructorOf[primereactLib.spinnerMod.Spinner].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsSpinnerSpinnerMod.SpinnerProps]]
   @scala.inline
-  def SplitButton: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSplitbuttonSplitButtonMod.SplitButtonProps] = js.constructorOf[primereactLib.splitbuttonMod.SplitButton].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsSplitbuttonSplitButtonMod.SplitButtonProps]]
+  def SplitButton: reactLib.reactMod.ComponentType[primereactLib.componentsSplitbuttonSplitButtonMod.SplitButtonProps] = js.constructorOf[primereactLib.splitbuttonMod.SplitButton].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsSplitbuttonSplitButtonMod.SplitButtonProps]]
   @scala.inline
-  def Steps: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsStepsStepsMod.StepsProps] = js.constructorOf[primereactLib.stepsMod.Steps].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsStepsStepsMod.StepsProps]]
+  def Steps: reactLib.reactMod.ComponentType[primereactLib.componentsStepsStepsMod.StepsProps] = js.constructorOf[primereactLib.stepsMod.Steps].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsStepsStepsMod.StepsProps]]
   @scala.inline
-  def TabMenu: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTabmenuTabMenuMod.TabMenuProps] = js.constructorOf[primereactLib.tabmenuMod.TabMenu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTabmenuTabMenuMod.TabMenuProps]]
+  def TabMenu: reactLib.reactMod.ComponentType[primereactLib.componentsTabmenuTabMenuMod.TabMenuProps] = js.constructorOf[primereactLib.tabmenuMod.TabMenu].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsTabmenuTabMenuMod.TabMenuProps]]
   @scala.inline
-  def TabPanel: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTabviewTabViewMod.TabPanelProps] = js.constructorOf[primereactLib.tabviewMod.TabPanel].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTabviewTabViewMod.TabPanelProps]]
+  def TabPanel: reactLib.reactMod.ComponentType[primereactLib.componentsTabviewTabViewMod.TabPanelProps] = js.constructorOf[primereactLib.tabviewMod.TabPanel].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsTabviewTabViewMod.TabPanelProps]]
   @scala.inline
-  def TabView: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTabviewTabViewMod.TabViewProps] = js.constructorOf[primereactLib.tabviewMod.TabView].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTabviewTabViewMod.TabViewProps]]
+  def TabView: reactLib.reactMod.ComponentType[primereactLib.componentsTabviewTabViewMod.TabViewProps] = js.constructorOf[primereactLib.tabviewMod.TabView].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsTabviewTabViewMod.TabViewProps]]
   @scala.inline
-  def TieredMenu: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTieredmenuTieredMenuMod.TieredMenuProps] = js.constructorOf[primereactLib.tieredmenuMod.TieredMenu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTieredmenuTieredMenuMod.TieredMenuProps]]
+  def TieredMenu: reactLib.reactMod.ComponentType[primereactLib.componentsTieredmenuTieredMenuMod.TieredMenuProps] = js.constructorOf[primereactLib.tieredmenuMod.TieredMenu].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsTieredmenuTieredMenuMod.TieredMenuProps]]
   @scala.inline
-  def ToggleButton: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTogglebuttonToggleButtonMod.ToggleButtonProps] = js.constructorOf[primereactLib.togglebuttonMod.ToggleButton].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTogglebuttonToggleButtonMod.ToggleButtonProps]]
+  def ToggleButton: reactLib.reactMod.ComponentType[primereactLib.componentsTogglebuttonToggleButtonMod.ToggleButtonProps] = js.constructorOf[primereactLib.togglebuttonMod.ToggleButton].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsTogglebuttonToggleButtonMod.ToggleButtonProps]]
   @scala.inline
-  def Toolbar: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsToolbarToolbarMod.ToolbarProps] = js.constructorOf[primereactLib.toolbarMod.Toolbar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsToolbarToolbarMod.ToolbarProps]]
+  def Toolbar: reactLib.reactMod.ComponentType[primereactLib.componentsToolbarToolbarMod.ToolbarProps] = js.constructorOf[primereactLib.toolbarMod.Toolbar].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsToolbarToolbarMod.ToolbarProps]]
   @scala.inline
-  def Tree: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTreeTreeMod.TreeProps] = js.constructorOf[primereactLib.treeMod.Tree].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTreeTreeMod.TreeProps]]
+  def Tree: reactLib.reactMod.ComponentType[primereactLib.componentsTreeTreeMod.TreeProps] = js.constructorOf[primereactLib.treeMod.Tree].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsTreeTreeMod.TreeProps]]
   @scala.inline
-  def TreeTable: reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTreetableTreeTableMod.TreeTableProps] = js.constructorOf[primereactLib.treetableMod.TreeTable].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[primereactLib.componentsTreetableTreeTableMod.TreeTableProps]]
+  def TreeTable: reactLib.reactMod.ComponentType[primereactLib.componentsTreetableTreeTableMod.TreeTableProps] = js.constructorOf[primereactLib.treetableMod.TreeTable].asInstanceOf[reactLib.reactMod.ComponentType[primereactLib.componentsTreetableTreeTableMod.TreeTableProps]]
   @scala.inline
-  def TriStateCheckbox: reactLib.reactMod.ReactNs.ComponentType[
+  def TriStateCheckbox: reactLib.reactMod.ComponentType[
     primereactLib.componentsTristatecheckboxTriStateCheckboxMod.TriStateCheckboxProps
-  ] = js.constructorOf[primereactLib.tristatecheckboxMod.TriStateCheckbox].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[primereactLib.tristatecheckboxMod.TriStateCheckbox].asInstanceOf[reactLib.reactMod.ComponentType[
   primereactLib.componentsTristatecheckboxTriStateCheckboxMod.TriStateCheckboxProps]]
   @scala.inline
   def AccordionProps: primereactLib.componentsAccordionAccordionMod.AccordionProps.type = primereactLib.componentsAccordionAccordionMod.AccordionProps

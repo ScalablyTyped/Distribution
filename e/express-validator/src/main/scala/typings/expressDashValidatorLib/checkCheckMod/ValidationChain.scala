@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ValidationChain
-  extends expressLib.expressMod.eNs.RequestHandler
+  extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler
      with Validator
      with expressDashValidatorLib.filterSanitizeMod.Sanitizer {
   /* InferMemberOverrides */

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/DataTables", "EditDialogColumn")
 @js.native
 class EditDialogColumn protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashMdLib.libDataTablesEditDialogColumnMod.EditDialogColumnProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashMdLib.libDataTablesEditDialogColumnMod.EditDialogColumnProps) = this()

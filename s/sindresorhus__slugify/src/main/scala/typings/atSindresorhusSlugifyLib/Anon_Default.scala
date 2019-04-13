@@ -28,9 +28,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(input: java.lang.String): java.lang.String = js.native
-  def apply(
-    input: java.lang.String,
-    options: atSindresorhusSlugifyLib.atSindresorhusSlugifyMod.slugifyNs.Options
-  ): java.lang.String = js.native
+  def apply(input: java.lang.String, options: atSindresorhusSlugifyLib.atSindresorhusSlugifyMod.Options): java.lang.String = js.native
 }
 

@@ -9,7 +9,7 @@ trait Anon_AllowHalfOpen extends js.Object {
   var allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined
   var destroy: js.UndefOr[
     js.ThisFunction2[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* error */ stdLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
@@ -17,14 +17,14 @@ trait Anon_AllowHalfOpen extends js.Object {
   ] = js.undefined
   var `final`: js.UndefOr[
     js.ThisFunction1[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
   var read: js.UndefOr[
     js.ThisFunction1[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* size */ scala.Double, 
       scala.Unit
     ]
@@ -33,7 +33,7 @@ trait Anon_AllowHalfOpen extends js.Object {
   var writable: js.UndefOr[scala.Boolean] = js.undefined
   var write: js.UndefOr[
     js.ThisFunction3[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
@@ -42,7 +42,7 @@ trait Anon_AllowHalfOpen extends js.Object {
   ] = js.undefined
   var writev: js.UndefOr[
     js.ThisFunction2[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* chunks */ js.Array[Anon_Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
@@ -55,32 +55,32 @@ object Anon_AllowHalfOpen {
   def apply(
     allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
     destroy: js.ThisFunction2[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* error */ stdLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
     `final`: js.ThisFunction1[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     read: js.ThisFunction1[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* size */ scala.Double, 
       scala.Unit
     ] = null,
     readable: js.UndefOr[scala.Boolean] = js.undefined,
     writable: js.UndefOr[scala.Boolean] = js.undefined,
     write: js.ThisFunction3[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ] = null,
     writev: js.ThisFunction2[
-      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* this */ readableDashStreamLib.readableDashStreamMod.Duplex, 
       /* chunks */ js.Array[Anon_Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit], 
       scala.Unit

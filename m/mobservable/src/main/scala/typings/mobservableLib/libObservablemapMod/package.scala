@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 package object libObservablemapMod {
   type Entries[V] = js.Array[js.Tuple2[java.lang.String, V]]
   type IObservableMapChange[T] = mobservableLib.libInterfacesMod.IObjectChange[T, ObservableMap[T]]
+  type KeyValueMap[V] = org.scalablytyped.runtime.StringDictionary[V]
 }

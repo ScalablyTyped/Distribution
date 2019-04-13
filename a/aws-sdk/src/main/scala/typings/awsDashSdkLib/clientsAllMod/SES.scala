@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class SES ()
-  extends awsDashSdkLib.clientsSesMod.namespaced {
-  def this(options: awsDashSdkLib.clientsSesMod.SESNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsSesMod.^ {
+  def this(options: awsDashSdkLib.clientsSesMod.ClientConfiguration) = this()
 }
 

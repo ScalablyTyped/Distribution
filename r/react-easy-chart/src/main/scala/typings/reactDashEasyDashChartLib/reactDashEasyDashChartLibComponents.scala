@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 object reactDashEasyDashChartLibComponents {
   @scala.inline
-  def AreaChart: reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChartProps]]
+  def AreaChart: reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChart].asInstanceOf[reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChartProps]]
   @scala.inline
-  def BarChart: reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.BarChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.BarChart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.BarChartProps]]
+  def BarChart: reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.BarChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.BarChart].asInstanceOf[reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.BarChartProps]]
   @scala.inline
-  def Legend: reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LegendProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.Legend].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LegendProps]]
+  def Legend: reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LegendProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.Legend].asInstanceOf[reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LegendProps]]
   @scala.inline
-  def LineChart: reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LineChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LineChart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LineChartProps]]
+  def LineChart: reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LineChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LineChart].asInstanceOf[reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.LineChartProps]]
   @scala.inline
-  def PieChart: reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.PieChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.PieChart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.PieChartProps]]
+  def PieChart: reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.PieChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.PieChart].asInstanceOf[reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.PieChartProps]]
   @scala.inline
-  def ScatterplotChart: reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.ScatterplotChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.ScatterplotChart].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.ScatterplotChartProps]]
+  def ScatterplotChart: reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.ScatterplotChartProps] = js.constructorOf[reactDashEasyDashChartLib.reactDashEasyDashChartMod.ScatterplotChart].asInstanceOf[reactLib.reactMod.ComponentType[reactDashEasyDashChartLib.reactDashEasyDashChartMod.ScatterplotChartProps]]
   @scala.inline
   def AreaChartProps: reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChartProps.type = reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChartProps
   type AreaChartProps = reactDashEasyDashChartLib.reactDashEasyDashChartMod.AreaChartProps

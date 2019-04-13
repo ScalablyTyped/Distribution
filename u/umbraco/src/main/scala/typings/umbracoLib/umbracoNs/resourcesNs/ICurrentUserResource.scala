@@ -24,7 +24,7 @@ trait ICurrentUserResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the user array.
     *
     */
-  def changePassword(changePasswordArgs: js.Any): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def changePassword(changePasswordArgs: js.Any): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.currentUserResource#getMembershipProviderConfig
@@ -39,7 +39,7 @@ trait ICurrentUserResource extends js.Object {
 object ICurrentUserResource {
   @scala.inline
   def apply(
-    changePassword: js.Any => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    changePassword: js.Any => angularLib.angularMod.IPromise[IResourcePromise],
     getMembershipProviderConfig: () => js.Any
   ): ICurrentUserResource = {
     val __obj = js.Dynamic.literal(changePassword = js.Any.fromFunction1(changePassword), getMembershipProviderConfig = js.Any.fromFunction0(getMembershipProviderConfig))

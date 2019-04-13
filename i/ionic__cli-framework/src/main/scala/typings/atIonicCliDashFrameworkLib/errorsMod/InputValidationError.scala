@@ -12,5 +12,7 @@ class InputValidationError protected () extends BaseError {
   @JSName("code")
   var code_InputValidationError: java.lang.String = js.native
   var errors: js.Array[atIonicCliDashFrameworkLib.definitionsMod.ValidationError] = js.native
+  @JSName("name")
+  val name_InputValidationError: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.InputValidationError = js.native
 }
 

@@ -18,6 +18,5 @@ object CloneNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.cloneMod.CloneNs.LOCAL with scala.Double] = js.native
   }
   
-  type LOCAL = nodegitLib.cloneMod.CloneNs.LOCAL
 }
 

@@ -12,15 +12,15 @@ trait Anon_ColumnSizeChanged extends js.Object {
     * @param {columnSizeChangedHandler} handler Callback
     */
   def columnSizeChanged(
-    scope: angularLib.angularMod.angularNs.IScope,
-    handler: uiDashGridLib.uiDashGridMod.uiGridNs.resizeColumnsNs.columnSizeChangedHandler
+    scope: angularLib.angularMod.IScope,
+    handler: uiDashGridLib.uiDashGridMod.resizeColumnsNs.columnSizeChangedHandler
   ): scala.Unit
 }
 
 object Anon_ColumnSizeChanged {
   @scala.inline
   def apply(
-    columnSizeChanged: (angularLib.angularMod.angularNs.IScope, uiDashGridLib.uiDashGridMod.uiGridNs.resizeColumnsNs.columnSizeChangedHandler) => scala.Unit
+    columnSizeChanged: (angularLib.angularMod.IScope, uiDashGridLib.uiDashGridMod.resizeColumnsNs.columnSizeChangedHandler) => scala.Unit
   ): Anon_ColumnSizeChanged = {
     val __obj = js.Dynamic.literal(columnSizeChanged = js.Any.fromFunction2(columnSizeChanged))
   

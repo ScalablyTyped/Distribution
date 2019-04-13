@@ -26,7 +26,7 @@ trait OptionsInputBase extends js.Object {
   var dateIncrement: js.UndefOr[DurationInput] = js.undefined
   var dayClick: js.UndefOr[
     js.Function4[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
+      /* date */ momentLib.momentMod.Moment, 
       /* jsEvent */ stdLib.MouseEvent, 
       /* view */ fullcalendarLib.viewMod.default, 
       /* resourceObj */ js.UndefOr[js.Any], 
@@ -39,7 +39,7 @@ trait OptionsInputBase extends js.Object {
   var dayPopoverFormat: js.UndefOr[java.lang.String] = js.undefined
   var dayRender: js.UndefOr[
     js.Function2[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
+      /* date */ momentLib.momentMod.Moment, 
       /* cell */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, 
       scala.Unit
     ]
@@ -53,7 +53,7 @@ trait OptionsInputBase extends js.Object {
   var dragScroll: js.UndefOr[scala.Boolean] = js.undefined
   var drop: js.UndefOr[
     js.Function3[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
+      /* date */ momentLib.momentMod.Moment, 
       /* jsEvent */ stdLib.MouseEvent, 
       /* ui */ js.Any, 
       scala.Unit
@@ -118,7 +118,7 @@ trait OptionsInputBase extends js.Object {
   var eventDrop: js.UndefOr[
     js.Function6[
       /* event */ EventObjectInput, 
-      /* delta */ momentLib.momentMod.momentNs.Duration, 
+      /* delta */ momentLib.momentMod.Duration, 
       /* revertFunc */ js.Function, 
       /* jsEvent */ stdLib.Event, 
       /* ui */ js.Any, 
@@ -170,7 +170,7 @@ trait OptionsInputBase extends js.Object {
   var eventResize: js.UndefOr[
     js.Function6[
       /* event */ EventObjectInput, 
-      /* delta */ momentLib.momentMod.momentNs.Duration, 
+      /* delta */ momentLib.momentMod.Duration, 
       /* revertFunc */ js.Function, 
       /* jsEvent */ stdLib.Event, 
       /* ui */ js.Any, 
@@ -227,11 +227,7 @@ trait OptionsInputBase extends js.Object {
   var monthNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var monthNamesShort: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var navLinkDayClick: js.UndefOr[
-    java.lang.String | (js.Function2[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      /* jsEvent */ stdLib.Event, 
-      scala.Unit
-    ])
+    java.lang.String | (js.Function2[/* date */ momentLib.momentMod.Moment, /* jsEvent */ stdLib.Event, scala.Unit])
   ] = js.undefined
   var navLinkWeekClick: js.UndefOr[
     java.lang.String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ stdLib.Event, scala.Unit])
@@ -244,8 +240,8 @@ trait OptionsInputBase extends js.Object {
   var scrollTime: js.UndefOr[DurationInput] = js.undefined
   var select: js.UndefOr[
     js.Function5[
-      /* start */ momentLib.momentMod.momentNs.Moment, 
-      /* end */ momentLib.momentMod.momentNs.Moment, 
+      /* start */ momentLib.momentMod.Moment, 
+      /* end */ momentLib.momentMod.Moment, 
       /* jsEvent */ stdLib.MouseEvent, 
       /* view */ fullcalendarLib.viewMod.default, 
       /* resource */ js.UndefOr[js.Any], 
@@ -292,10 +288,10 @@ trait OptionsInputBase extends js.Object {
     ]
   ] = js.undefined
   var visibleRange: js.UndefOr[
-    (js.Function1[/* currentDate */ momentLib.momentMod.momentNs.Moment, RangeInput]) | RangeInput
+    (js.Function1[/* currentDate */ momentLib.momentMod.Moment, RangeInput]) | RangeInput
   ] = js.undefined
   var weekNumberCalculation: js.UndefOr[
-    fullcalendarLib.fullcalendarLibStrings.local | fullcalendarLib.fullcalendarLibStrings.ISO | (js.Function1[/* m */ momentLib.momentMod.momentNs.Moment, scala.Double])
+    fullcalendarLib.fullcalendarLibStrings.local | fullcalendarLib.fullcalendarLibStrings.ISO | (js.Function1[/* m */ momentLib.momentMod.Moment, scala.Double])
   ] = js.undefined
   var weekNumberTitle: js.UndefOr[java.lang.String] = js.undefined
   var weekNumbers: js.UndefOr[scala.Boolean] = js.undefined
@@ -324,12 +320,12 @@ object OptionsInputBase {
     customButtons: org.scalablytyped.runtime.StringDictionary[CustomButtonInput] = null,
     dateAlignment: java.lang.String = null,
     dateIncrement: DurationInput = null,
-    dayClick: (/* date */ momentLib.momentMod.momentNs.Moment, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default, /* resourceObj */ js.UndefOr[js.Any]) => scala.Unit = null,
+    dayClick: (/* date */ momentLib.momentMod.Moment, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default, /* resourceObj */ js.UndefOr[js.Any]) => scala.Unit = null,
     dayCount: scala.Int | scala.Double = null,
     dayNames: js.Array[java.lang.String] = null,
     dayNamesShort: js.Array[java.lang.String] = null,
     dayPopoverFormat: java.lang.String = null,
-    dayRender: (/* date */ momentLib.momentMod.momentNs.Moment, /* cell */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery) => scala.Unit = null,
+    dayRender: (/* date */ momentLib.momentMod.Moment, /* cell */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery) => scala.Unit = null,
     defaultDate: MomentInput = null,
     defaultView: java.lang.String = null,
     displayEventEnd: js.UndefOr[scala.Boolean] = js.undefined,
@@ -337,7 +333,7 @@ object OptionsInputBase {
     dragOpacity: scala.Int | scala.Double = null,
     dragRevertDuration: scala.Int | scala.Double = null,
     dragScroll: js.UndefOr[scala.Boolean] = js.undefined,
-    drop: (/* date */ momentLib.momentMod.momentNs.Moment, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any) => scala.Unit = null,
+    drop: (/* date */ momentLib.momentMod.Moment, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any) => scala.Unit = null,
     dropAccept: java.lang.String | (js.Function1[/* draggable */ js.Any, scala.Boolean]) = null,
     droppable: js.UndefOr[scala.Boolean] = js.undefined,
     duration: DurationInput = null,
@@ -355,7 +351,7 @@ object OptionsInputBase {
     eventDestroy: (/* event */ EventObjectInput, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventDragStart: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventDragStop: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
-    eventDrop: (/* event */ EventObjectInput, /* delta */ momentLib.momentMod.momentNs.Duration, /* revertFunc */ js.Function, /* jsEvent */ stdLib.Event, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventDrop: (/* event */ EventObjectInput, /* delta */ momentLib.momentMod.Duration, /* revertFunc */ js.Function, /* jsEvent */ stdLib.Event, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventDurationEditable: js.UndefOr[scala.Boolean] = js.undefined,
     eventLimit: scala.Boolean | scala.Double = null,
     eventLimitClick: fullcalendarLib.fullcalendarLibStrings.popover | fullcalendarLib.fullcalendarLibStrings.week | fullcalendarLib.fullcalendarLibStrings.day | java.lang.String | (js.Function2[/* cellinfo */ CellInfo, /* jsevent */ stdLib.Event, scala.Unit]) = null,
@@ -370,7 +366,7 @@ object OptionsInputBase {
     eventReceive: /* event */ EventObjectInput => scala.Unit = null,
     eventRender: (/* event */ EventObjectInput, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventRenderWait: scala.Int | scala.Double = null,
-    eventResize: (/* event */ EventObjectInput, /* delta */ momentLib.momentMod.momentNs.Duration, /* revertFunc */ js.Function, /* jsEvent */ stdLib.Event, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
+    eventResize: (/* event */ EventObjectInput, /* delta */ momentLib.momentMod.Duration, /* revertFunc */ js.Function, /* jsEvent */ stdLib.Event, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventResizeStart: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventResizeStop: (/* event */ EventObjectInput, /* jsEvent */ stdLib.MouseEvent, /* ui */ js.Any, /* view */ fullcalendarLib.viewMod.default) => scala.Unit = null,
     eventSources: js.Array[EventSourceInput] = null,
@@ -395,11 +391,7 @@ object OptionsInputBase {
     minTime: DurationInput = null,
     monthNames: js.Array[java.lang.String] = null,
     monthNamesShort: js.Array[java.lang.String] = null,
-    navLinkDayClick: java.lang.String | (js.Function2[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      /* jsEvent */ stdLib.Event, 
-      scala.Unit
-    ]) = null,
+    navLinkDayClick: java.lang.String | (js.Function2[/* date */ momentLib.momentMod.Moment, /* jsEvent */ stdLib.Event, scala.Unit]) = null,
     navLinkWeekClick: java.lang.String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ stdLib.Event, scala.Unit]) = null,
     navLinks: js.UndefOr[scala.Boolean] = js.undefined,
     nextDayThreshold: DurationInput = null,
@@ -407,7 +399,7 @@ object OptionsInputBase {
     now: MomentInput | js.Function0[MomentInput] = null,
     nowIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     scrollTime: DurationInput = null,
-    select: (/* start */ momentLib.momentMod.momentNs.Moment, /* end */ momentLib.momentMod.momentNs.Moment, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default, /* resource */ js.UndefOr[js.Any]) => scala.Unit = null,
+    select: (/* start */ momentLib.momentMod.Moment, /* end */ momentLib.momentMod.Moment, /* jsEvent */ stdLib.MouseEvent, /* view */ fullcalendarLib.viewMod.default, /* resource */ js.UndefOr[js.Any]) => scala.Unit = null,
     selectAllow: /* selectInfo */ SelectInfo => scala.Boolean = null,
     selectConstraint: ConstraintInput = null,
     selectHelper: js.UndefOr[scala.Boolean] = js.undefined,
@@ -431,8 +423,8 @@ object OptionsInputBase {
     validRange: RangeInput = null,
     viewDestroy: (/* view */ fullcalendarLib.viewMod.default, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery) => scala.Unit = null,
     viewRender: (/* view */ fullcalendarLib.viewMod.default, /* element */ fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery) => scala.Unit = null,
-    visibleRange: (js.Function1[/* currentDate */ momentLib.momentMod.momentNs.Moment, RangeInput]) | RangeInput = null,
-    weekNumberCalculation: fullcalendarLib.fullcalendarLibStrings.local | fullcalendarLib.fullcalendarLibStrings.ISO | (js.Function1[/* m */ momentLib.momentMod.momentNs.Moment, scala.Double]) = null,
+    visibleRange: (js.Function1[/* currentDate */ momentLib.momentMod.Moment, RangeInput]) | RangeInput = null,
+    weekNumberCalculation: fullcalendarLib.fullcalendarLibStrings.local | fullcalendarLib.fullcalendarLibStrings.ISO | (js.Function1[/* m */ momentLib.momentMod.Moment, scala.Double]) = null,
     weekNumberTitle: java.lang.String = null,
     weekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     weekNumbersWithinDays: js.UndefOr[scala.Boolean] = js.undefined,

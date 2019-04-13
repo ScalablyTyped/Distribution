@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Default extends js.Object {
   def apply(input: js.Any): scala.Boolean | scala.Null = js.native
-  def apply(input: js.Any, options: ynLib.ynMod.ynNs.Options): scala.Boolean | scala.Null = js.native
+  def apply(input: js.Any, options: ynLib.ynMod.Options): scala.Boolean | scala.Null = js.native
   /**
   	Parse yes/no like values.
   	The following case-insensitive values are recognized: `'y', 'yes', 'true', true, '1', 1, 'n', 'no', 'false', false, '0', 0`
@@ -31,6 +31,6 @@ trait Anon_Default extends js.Object {
   	//=> false
   	```
   	*/
-  def apply(input: js.Any, options: ynLib.ynMod.ynNs.OptionsWithDefault): scala.Boolean = js.native
+  def apply(input: js.Any, options: ynLib.ynMod.OptionsWithDefault): scala.Boolean = js.native
 }
 

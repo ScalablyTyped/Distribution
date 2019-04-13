@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-get-type", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(value: js.Any): jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType = js.native
+  def apply(value: js.Any): ValueType = js.native
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/componentFromProp", JSImport.Namespace)
 @js.native
 object componentFromPropMod extends js.Object {
-  def default(propName: java.lang.String): reactLib.reactMod.ReactNs.StatelessComponent[_] = js.native
+  def default(propName: java.lang.String): reactLib.reactMod.StatelessComponent[_] = js.native
 }
 

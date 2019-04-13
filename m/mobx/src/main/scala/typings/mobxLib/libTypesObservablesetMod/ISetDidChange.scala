@@ -5,9 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - mobxLib.Anon_AddNewValue[T]
-  - mobxLib.Anon_DeleteObject[T]
-*/
-trait ISetDidChange[T] extends js.Object
+@js.native
+trait ISetDidChange[T] extends js.Object {
+  var newValue: js.UndefOr[T] = js.native
+  var `object`: js.UndefOr[ObservableSet[T]] = js.native
+  var oldValue: js.UndefOr[T] = js.native
+  var `type`: js.UndefOr[mobxLib.mobxLibStrings.add | mobxLib.mobxLibStrings.delete] = js.native
+}
 

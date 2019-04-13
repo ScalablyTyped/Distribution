@@ -15,3 +15,8 @@ class UserAccounts ()
   override def Item(Index: scala.Double): mfilesLib.IUserAccount = js.native
 }
 
+@JSGlobal("MFiles.UserAccounts")
+@js.native
+object UserAccounts
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IUserAccounts]
+

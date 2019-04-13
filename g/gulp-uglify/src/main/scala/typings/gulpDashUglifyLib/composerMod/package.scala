@@ -9,9 +9,9 @@ package object composerMod {
   type Composer = js.Function2[
     /* uglify */ Uglify, 
     /* log */ Logger, 
-    (js.Function1[
-      /* options */ js.UndefOr[gulpDashUglifyLib.gulpDashUglifyMod.GulpUglifyNs.Options], 
+    js.Function1[
+      /* options */ js.UndefOr[gulpDashUglifyLib.gulpDashUglifyMod.Options], 
       nodeLib.NodeJSNs.ReadWriteStream
-    ]) with gulpDashUglifyLib.Anon_GulpUglify
+    ]
   ]
 }

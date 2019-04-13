@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ag-grid", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var `_`: agDashGridLib.Anon_AccentedCompare = js.native
   def Autowired(): js.Function = js.native
   def Autowired(name: java.lang.String): js.Function = js.native
   def Bean(beanName: java.lang.String): js.Function = js.native

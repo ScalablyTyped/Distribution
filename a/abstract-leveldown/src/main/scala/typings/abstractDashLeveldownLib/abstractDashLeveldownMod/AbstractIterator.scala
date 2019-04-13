@@ -29,10 +29,11 @@ object AbstractIterator {
   def apply[K, V](
     db: AbstractLevelDOWN[K, V],
     end: ErrorCallback => scala.Unit,
-    next: ErrorKeyValueCallback[K, V] => AbstractIterator[K, V]
+    next: ErrorKeyValueCallback[K, V] => AbstractIterator[K, V],
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): AbstractIterator[K, V] = {
     val __obj = js.Dynamic.literal(db = db, end = js.Any.fromFunction1(end), next = js.Any.fromFunction1(next))
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AbstractIterator[K, V]]
   }
 }

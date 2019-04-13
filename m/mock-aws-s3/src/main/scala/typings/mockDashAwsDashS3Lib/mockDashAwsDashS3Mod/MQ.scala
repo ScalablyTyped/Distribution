@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MQ ()
   extends awsDashSdkLib.awsDashSdkMod.MQ {
-  def this(options: awsDashSdkLib.clientsMqMod.MQNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMqMod.ClientConfiguration) = this()
 }
 

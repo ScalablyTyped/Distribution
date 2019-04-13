@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CreditEllipsoidFileExtensionMaximumLevel extends js.Object {
-  var credit: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var credit: js.UndefOr[cesiumLib.cesiumMod.Credit | java.lang.String] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var fileExtension: js.UndefOr[java.lang.String] = js.undefined
   var maximumLevel: js.UndefOr[scala.Double] = js.undefined
   var minimumLevel: js.UndefOr[scala.Double] = js.undefined
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_CreditEllipsoidFileExtensionMaximumLevel {
   @scala.inline
   def apply(
-    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    credit: cesiumLib.cesiumMod.Credit | java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     fileExtension: java.lang.String = null,
     maximumLevel: scala.Int | scala.Double = null,
     minimumLevel: scala.Int | scala.Double = null,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null,
+    rectangle: cesiumLib.cesiumMod.Rectangle = null,
     url: java.lang.String = null
   ): Anon_CreditEllipsoidFileExtensionMaximumLevel = {
     val __obj = js.Dynamic.literal()

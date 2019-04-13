@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DataSync ()
   extends awsDashSdkLib.awsDashSdkMod.DataSync {
-  def this(options: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDatasyncMod.ClientConfiguration) = this()
 }
 

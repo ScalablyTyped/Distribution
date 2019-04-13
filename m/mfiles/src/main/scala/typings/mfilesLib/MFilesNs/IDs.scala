@@ -25,3 +25,8 @@ class IDs ()
   override def RemoveAll(ID: scala.Double): scala.Double = js.native
 }
 
+@JSGlobal("MFiles.IDs")
+@js.native
+object IDs
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IIDs]
+

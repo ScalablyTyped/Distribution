@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select/lib/animated", "MultiValue")
 @js.native
 class MultiValue protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashSelectLib.libAnimatedMultiValueMod.AnimatedMultiValueProps[js.Any], 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashSelectLib.libAnimatedMultiValueMod.AnimatedMultiValueProps[_]) = this()

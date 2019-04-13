@@ -20,6 +20,6 @@ trait IDialogService extends js.Object {
   			 */
   def isOpen(id: java.lang.String): scala.Boolean = js.native
   def open(options: IDialogOpenOptions): IDialogOpenResult = js.native
-  def openConfirm(options: IDialogOpenConfirmOptions): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def openConfirm(options: IDialogOpenConfirmOptions): angularLib.angularMod.IPromise[_] = js.native
 }
 

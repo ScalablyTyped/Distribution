@@ -22,7 +22,7 @@ trait IToastProps
     atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /** Message to display in the body of the toast. */
-  var message: reactLib.reactMod.ReactNs.ReactNode
+  var message: reactLib.reactMod.ReactNode
   /**
     * Callback invoked when the toast is dismissed, either by the user or by the timeout.
     * The value of the argument indicates whether the toast was closed because the timeout expired.
@@ -39,7 +39,7 @@ trait IToastProps
 object IToastProps {
   @scala.inline
   def apply(
-    message: reactLib.reactMod.ReactNs.ReactNode,
+    message: reactLib.reactMod.ReactNode,
     action: atBlueprintjsCoreLib.libEsmCommonPropsMod.IActionProps with atBlueprintjsCoreLib.libEsmCommonPropsMod.ILinkProps = null,
     className: java.lang.String = null,
     icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,

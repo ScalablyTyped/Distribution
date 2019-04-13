@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/FreeGroup", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val URI: /* FreeGroup */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.FreeGroup = js.native
   val empty: FreeGroup[scala.Nothing] = js.native
   val freeGroup: fpDashTsLib.libMonadMod.Monad1[URI] = js.native
   def fromArray[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[

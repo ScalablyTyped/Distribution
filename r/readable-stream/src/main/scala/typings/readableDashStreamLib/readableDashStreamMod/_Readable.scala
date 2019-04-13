@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait _Readable
   extends nodeLib.streamMod.Readable {
   // static ReadableState: _Readable.ReadableState;
-  var _readableState: readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.ReadableState = js.native
+  var _readableState: ReadableState = js.native
   var destroyed: scala.Boolean = js.native
   def _undestroy(): scala.Unit = js.native
   def destroy(err: stdLib.Error): this.type = js.native

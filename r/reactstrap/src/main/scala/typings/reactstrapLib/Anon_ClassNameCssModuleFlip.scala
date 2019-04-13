@@ -12,7 +12,7 @@ trait Anon_ClassNameCssModuleFlip extends js.Object {
   var modifiers: js.UndefOr[popperDotJsLib.popperDotJsMod.Modifiers] = js.undefined
   var persist: js.UndefOr[scala.Boolean] = js.undefined
   var right: js.UndefOr[scala.Boolean] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ClassNameCssModuleFlip {
@@ -24,7 +24,7 @@ object Anon_ClassNameCssModuleFlip {
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
     persist: js.UndefOr[scala.Boolean] = js.undefined,
     right: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ClassNameCssModuleFlip = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

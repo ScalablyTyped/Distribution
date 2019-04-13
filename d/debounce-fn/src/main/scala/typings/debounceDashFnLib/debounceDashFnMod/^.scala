@@ -15,9 +15,6 @@ object ^ extends js.Object {
     * It comes with a `.cancel()` method to cancel any scheduled `input` function calls.
     */
   def apply[TArgs /* <: js.Array[_] */, TResult](input: js.Function1[/* args */ TArgs, TResult]): (js.Function1[/* args */ TArgs, js.UndefOr[TResult]]) with debounceDashFnLib.Anon_Cancel = js.native
-  def apply[TArgs /* <: js.Array[_] */, TResult](
-    input: js.Function1[/* args */ TArgs, TResult],
-    options: debounceDashFnLib.debounceDashFnMod.debounceNs.Options
-  ): (js.Function1[/* args */ TArgs, js.UndefOr[TResult]]) with debounceDashFnLib.Anon_Cancel = js.native
+  def apply[TArgs /* <: js.Array[_] */, TResult](input: js.Function1[/* args */ TArgs, TResult], options: Options): (js.Function1[/* args */ TArgs, js.UndefOr[TResult]]) with debounceDashFnLib.Anon_Cancel = js.native
 }
 

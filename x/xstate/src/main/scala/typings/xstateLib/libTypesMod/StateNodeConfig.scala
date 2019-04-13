@@ -32,6 +32,14 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
     */
   var delimiter: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The action(s) to be executed upon entering the state node.
+    */
+  var entry: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
+  /**
+    * The action(s) to be executed upon exiting the state node.
+    */
+  var exit: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
+  /**
     * Indicates whether the state node is a history state node, and what
     * type of history:
     * shallow, deep, true (shallow), false (none), undefined (none)
@@ -73,10 +81,14 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
   var onDone: js.UndefOr[java.lang.String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]])] = js.undefined
   /**
     * The action(s) to be executed upon entering the state node.
+    *
+    * @deprecated Use `entry` instead.
     */
   var onEntry: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
   /**
     * The action(s) to be executed upon exiting the state node.
+    *
+    * @deprecated Use `exit` instead.
     */
   var onExit: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
   /**
@@ -116,6 +128,8 @@ object StateNodeConfig {
     context: TContext = null,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     delimiter: java.lang.String = null,
+    entry: SingleOrArray[Action[TContext, TEvent]] = null,
+    exit: SingleOrArray[Action[TContext, TEvent]] = null,
     history: xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep | scala.Boolean = null,
     id: java.lang.String = null,
     initial: java.lang.String = null,
@@ -139,6 +153,8 @@ object StateNodeConfig {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (initial != null) __obj.updateDynamic("initial")(initial)

@@ -11,9 +11,7 @@ trait Anon_DisabledEModifier extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]
-      ], 
+      /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -26,9 +24,7 @@ object Anon_DisabledEModifier {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     modifier: java.lang.String = null,
     name: java.lang.String = null,
-    onClick: /* e */ js.UndefOr[
-      reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]
-    ] => scala.Unit = null,
+    onClick: /* e */ js.UndefOr[reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]] => scala.Unit = null,
     ripple: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DisabledEModifier = {
     val __obj = js.Dynamic.literal()

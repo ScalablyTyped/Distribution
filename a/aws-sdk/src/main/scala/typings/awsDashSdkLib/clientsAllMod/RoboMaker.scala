@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class RoboMaker ()
-  extends awsDashSdkLib.clientsRobomakerMod.namespaced {
-  def this(options: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsRobomakerMod.^ {
+  def this(options: awsDashSdkLib.clientsRobomakerMod.ClientConfiguration) = this()
 }
 

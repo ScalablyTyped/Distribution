@@ -26,10 +26,16 @@ object NeuronNs extends js.Object {
     def this(from: scala.Double, to: scala.Double, weight: scala.Double) = this()
   }
   
-  var connection: synapticLib.Anon_From = js.native
   /* static members */
   @js.native
   object Connection extends js.Object {
+    def uid(): scala.Double = js.native
+  }
+  
+  @js.native
+  object connection
+    extends org.scalablytyped.runtime.Instantiable2[/* from */ scala.Double, /* to */ scala.Double, Connection]
+       with org.scalablytyped.runtime.Instantiable3[/* from */ scala.Double, /* to */ scala.Double, /* weight */ scala.Double, Connection] {
     def uid(): scala.Double = js.native
   }
   

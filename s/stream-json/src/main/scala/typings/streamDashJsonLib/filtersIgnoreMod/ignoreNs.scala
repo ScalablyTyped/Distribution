@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-json/filters/Ignore", "ignore")
 @js.native
 object ignoreNs extends js.Object {
-  val Constructor: streamDashJsonLib.Anon_Ignore with (org.scalablytyped.runtime.Instantiable1[
-    /* options */ streamDashJsonLib.filtersFilterBaseMod.FilterBaseNs.FilterOptions, 
+  val Constructor: org.scalablytyped.runtime.Instantiable1[
+    /* options */ streamDashJsonLib.filtersFilterBaseMod.FilterOptions, 
     streamDashJsonLib.filtersIgnoreMod.Ignore
-  ]) = js.native
+  ] = js.native
+  type Constructor = streamDashJsonLib.filtersIgnoreMod.Ignore
 }
 

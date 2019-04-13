@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("autobahn", "Subscription")
 @js.native
-class Subscription ()
-  extends autobahnLib.autobahnMod.autobahnNs.Subscription {
+class Subscription () extends ISubscription {
   def this(topic: java.lang.String) = this()
-  def this(topic: java.lang.String, handler: autobahnLib.autobahnMod.autobahnNs.SubscribeHandler) = this()
-  def this(topic: java.lang.String, handler: autobahnLib.autobahnMod.autobahnNs.SubscribeHandler, options: autobahnLib.autobahnMod.autobahnNs.ISubscribeOptions) = this()
-  def this(topic: java.lang.String, handler: autobahnLib.autobahnMod.autobahnNs.SubscribeHandler, options: autobahnLib.autobahnMod.autobahnNs.ISubscribeOptions, session: autobahnLib.autobahnMod.autobahnNs.Session) = this()
-  def this(topic: java.lang.String, handler: autobahnLib.autobahnMod.autobahnNs.SubscribeHandler, options: autobahnLib.autobahnMod.autobahnNs.ISubscribeOptions, session: autobahnLib.autobahnMod.autobahnNs.Session, id: scala.Double) = this()
+  def this(topic: java.lang.String, handler: SubscribeHandler) = this()
+  def this(topic: java.lang.String, handler: SubscribeHandler, options: ISubscribeOptions) = this()
+  def this(topic: java.lang.String, handler: SubscribeHandler, options: ISubscribeOptions, session: Session) = this()
+  def this(topic: java.lang.String, handler: SubscribeHandler, options: ISubscribeOptions, session: Session, id: scala.Double) = this()
 }
 

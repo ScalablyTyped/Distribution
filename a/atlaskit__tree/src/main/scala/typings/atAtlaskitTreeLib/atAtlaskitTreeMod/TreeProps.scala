@@ -25,6 +25,6 @@ trait TreeProps extends js.Object {
   /** Function that will be called when a parent item needs to be expanded. */
   def onExpand(itemId: ItemId, path: Path): scala.Unit = js.native
   /** Function that will be called to render a single item. */
-  def renderItem(itemProps: RenderItemParams): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def renderItem(itemProps: RenderItemParams): reactLib.reactMod.ReactNode = js.native
 }
 

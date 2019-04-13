@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class MediaStore ()
-  extends awsDashSdkLib.clientsMediastoreMod.namespaced {
-  def this(options: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsMediastoreMod.^ {
+  def this(options: awsDashSdkLib.clientsMediastoreMod.ClientConfiguration) = this()
 }
 

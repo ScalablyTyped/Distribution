@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object libTooltipMod {
   type tooltipHOC[P] = js.Function1[
-    /* componentClass */ reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState], 
+    /* componentClass */ reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState], 
     TooltippedComponentClass[P]
   ]
 }

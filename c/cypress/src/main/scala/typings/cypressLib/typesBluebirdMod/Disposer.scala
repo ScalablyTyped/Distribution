@@ -10,6 +10,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("cypress/types/bluebird", "Disposer")
 @js.native
-class Disposer[R] ()
-  extends cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R]
+class Disposer[R] () extends js.Object
 

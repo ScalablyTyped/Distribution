@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Constructor
   extends org.scalablytyped.runtime.Instantiable1[/* n */ Value, decimalDotJsLib.decimalDotJsMod.Decimal] {
-  val Decimal: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.UndefOr[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.Object
-  ] = js.native
+  val Decimal: js.UndefOr[Constructor] = js.native
   val EUCLID: decimalDotJsLib.decimalDotJsLibNumbers.`9` = js.native
   val ROUND_CEIL: decimalDotJsLib.decimalDotJsLibNumbers.`2` = js.native
   val ROUND_DOWN: decimalDotJsLib.decimalDotJsLibNumbers.`1` = js.native
@@ -22,9 +20,7 @@ trait Constructor
   val ROUND_HALF_UP: decimalDotJsLib.decimalDotJsLibNumbers.`4` = js.native
   val ROUND_UP: decimalDotJsLib.decimalDotJsLibNumbers.`0` = js.native
   val crypto: scala.Boolean = js.native
-  val default: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.UndefOr[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.Object
-  ] = js.native
+  val default: js.UndefOr[Constructor] = js.native
   val maxE: scala.Double = js.native
   val minE: scala.Double = js.native
   val modulo: Modulo = js.native
@@ -43,8 +39,8 @@ trait Constructor
   def atanh(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def cbrt(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def ceil(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
-  def clone(`object`: Config): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.Object = js.native
-  def config(`object`: Config): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.Object = js.native
+  def clone(`object`: Config): Constructor = js.native
+  def config(`object`: Config): Constructor = js.native
   def cos(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def cosh(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def div(x: Value, y: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
@@ -61,13 +57,13 @@ trait Constructor
   def min(n: Value*): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def mod(x: Value, y: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def mul(x: Value, y: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
-  def noConflict(): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.Object = js.native
+  def noConflict(): Constructor = js.native
      // Browser only
   def pow(base: Value, exponent: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def random(): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def random(significantDigits: scala.Double): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def round(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
-  def set(`object`: Config): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias decimal.js.decimal.js.Decimal.Constructor */ js.Object = js.native
+  def set(`object`: Config): Constructor = js.native
   def sign(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def sin(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native
   def sinh(n: Value): decimalDotJsLib.decimalDotJsMod.Decimal = js.native

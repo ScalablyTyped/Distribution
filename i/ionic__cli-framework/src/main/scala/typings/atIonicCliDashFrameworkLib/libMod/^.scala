@@ -20,7 +20,6 @@ object ^ extends js.Object {
   ] = js.native
   val NO_COLORS: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   val logger: atIonicCliDashFrameworkLib.libLoggerMod.Logger = js.native
-  val parseArgs: atIonicCliDashFrameworkLib.Anon_Args = js.native
   val validators: atIonicCliDashFrameworkLib.definitionsMod.Validators = js.native
   def contains(
     values: js.Array[js.UndefOr[java.lang.String]],
@@ -34,7 +33,7 @@ object ^ extends js.Object {
   ] = js.native
   def createPrefixedFormatter(prefix: java.lang.String): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def createPrefixedFormatter(prefix: js.Function0[java.lang.String]): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
-  def createPromptChoiceSeparator(): inquirerLib.inquirerMod.inquirerNs.objectsNs.Separator = js.native
+  def createPromptChoiceSeparator(): inquirerLib.inquirerMod.objectsNs.Separator = js.native
   def createPromptModule(): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
   def createPromptModule(hasInteractiveOnFallback: atIonicCliDashFrameworkLib.libPromptsMod.CreatePromptModuleOptions): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
   def createTaggedFormatter(): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
@@ -83,15 +82,15 @@ object ^ extends js.Object {
     pargv: js.Array[java.lang.String],
     hasIncludeSeparated: atIonicCliDashFrameworkLib.Anon_IncludeSeparated
   ): js.Array[java.lang.String] = js.native
-  def unparseArgs(parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs): js.Array[java.lang.String] = js.native
+  def unparseArgs(parsedArgs: minimistLib.minimistMod.ParsedArgs): js.Array[java.lang.String] = js.native
   def unparseArgs(
-    parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    parsedArgs: minimistLib.minimistMod.ParsedArgs,
     hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: atIonicCliDashFrameworkLib.libOptionsMod.UnparseArgsOptions
   ): js.Array[java.lang.String] = js.native
   def unparseArgs(
-    parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    parsedArgs: minimistLib.minimistMod.ParsedArgs,
     hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: atIonicCliDashFrameworkLib.libOptionsMod.UnparseArgsOptions,
-    parseArgsOptions: minimistLib.minimistMod.minimistNs.Opts
+    parseArgsOptions: minimistLib.minimistMod.Opts
   ): js.Array[java.lang.String] = js.native
   def validate(
     input: java.lang.String,

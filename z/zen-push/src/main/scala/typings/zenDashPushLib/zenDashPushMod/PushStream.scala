@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PushStream[T] extends js.Object {
-  val observable: zenDashObservableLib.zenDashObservableMod.namespaced[T] = js.native
+  val observable: zenDashObservableLib.zenDashObservableMod.^[T] = js.native
   val observed: scala.Double = js.native
   def complete(): scala.Unit = js.native
   def complete(x: js.Any): scala.Unit = js.native

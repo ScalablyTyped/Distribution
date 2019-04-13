@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): scala.Boolean = js.native
   def apply(pattern: java.lang.String | js.Array[java.lang.String]): scala.Boolean = js.native
-  def apply(
-    pattern: java.lang.String | js.Array[java.lang.String],
-    options: isDashGlobLib.isDashGlobMod.isGlobNs.Options
-  ): scala.Boolean = js.native
+  def apply(pattern: java.lang.String | js.Array[java.lang.String], options: Options): scala.Boolean = js.native
 }
 

@@ -30,7 +30,7 @@ object ^ extends js.Object {
     postfix: java.lang.String
   ): java.lang.String = js.native
   def createTerminal(): terminalDashKitLib.terminalMod.Terminal = js.native
-  def createTerminal(createOptions: terminalDashKitLib.terminalMod.TerminalNs.CreateOptions): terminalDashKitLib.terminalMod.Terminal = js.native
+  def createTerminal(createOptions: terminalDashKitLib.terminalMod.CreateOptions): terminalDashKitLib.terminalMod.Terminal = js.native
   def getDetectedTerminal(
     calback: js.Function2[/* error */ js.Any, /* term */ terminalDashKitLib.terminalMod.Terminal, scala.Unit]
   ): scala.Unit = js.native

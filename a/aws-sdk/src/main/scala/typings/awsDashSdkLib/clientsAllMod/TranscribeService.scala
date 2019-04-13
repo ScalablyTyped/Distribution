@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class TranscribeService ()
-  extends awsDashSdkLib.clientsTranscribeserviceMod.namespaced {
-  def this(options: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsTranscribeserviceMod.^ {
+  def this(options: awsDashSdkLib.clientsTranscribeserviceMod.ClientConfiguration) = this()
 }
 

@@ -34,9 +34,9 @@ object ICopyCellsMenuItemProps {
   def apply(
     context: atBlueprintjsTableLib.libEsmInteractionsMenusMenuContextMod.IMenuContext,
     getCellData: (scala.Double, scala.Double) => js.Any,
-    text_IMenuItemProps: reactLib.reactMod.ReactNs.ReactNode,
+    text_IMenuItemProps: reactLib.reactMod.ReactNode,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
@@ -44,15 +44,15 @@ object ICopyCellsMenuItemProps {
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     label: java.lang.String = null,
     labelClassName: java.lang.String = null,
-    labelElement: reactLib.reactMod.ReactNs.ReactNode = null,
+    labelElement: reactLib.reactMod.ReactNode = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     onCopy: /* success */ scala.Boolean => scala.Unit = null,
     popoverProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = null,
     shouldDismissPopover: js.UndefOr[scala.Boolean] = js.undefined,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     target: java.lang.String = null,
-    text: reactLib.reactMod.ReactNs.ReactNode = null,
+    text: reactLib.reactMod.ReactNode = null,
     textClassName: java.lang.String = null
   ): ICopyCellsMenuItemProps = {
     val __obj = js.Dynamic.literal(context = context, getCellData = js.Any.fromFunction2(getCellData))

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     connect: js.Function1[
-      /* options */ js.UndefOr[expressDashSessionLib.expressDashSessionMod.sessionNs.SessionOptions], 
-      expressLib.expressMod.eNs.RequestHandler
+      /* options */ js.UndefOr[expressDashSessionLib.expressDashSessionMod.SessionOptions], 
+      expressLib.expressMod.RequestHandler
     ]
-  ): connectDashMongoLib.connectDashMongoMod.connectMongoNs.MongoStoreFactory = js.native
+  ): MongoStoreFactory = js.native
 }
 

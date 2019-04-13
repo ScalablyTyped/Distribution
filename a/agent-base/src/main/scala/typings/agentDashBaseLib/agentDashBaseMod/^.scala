@@ -12,12 +12,9 @@ object ^ extends js.Object {
     * Base `http.Agent` implementation.
     * No pooling/keep-alive is implemented by default.
     */
-  def apply(): agentDashBaseLib.agentDashBaseMod.AgentNs.Agent = js.native
-  def apply(callback: agentDashBaseLib.agentDashBaseMod.AgentNs.AgentCallback): agentDashBaseLib.agentDashBaseMod.AgentNs.Agent = js.native
-  def apply(
-    callback: agentDashBaseLib.agentDashBaseMod.AgentNs.AgentCallback,
-    opts: agentDashBaseLib.agentDashBaseMod.AgentNs.AgentOptions
-  ): agentDashBaseLib.agentDashBaseMod.AgentNs.Agent = js.native
-  def apply(opts: agentDashBaseLib.agentDashBaseMod.AgentNs.AgentOptions): agentDashBaseLib.agentDashBaseMod.AgentNs.Agent = js.native
+  def apply(): Agent = js.native
+  def apply(callback: AgentCallback): Agent = js.native
+  def apply(callback: AgentCallback, opts: AgentOptions): Agent = js.native
+  def apply(opts: AgentOptions): Agent = js.native
 }
 

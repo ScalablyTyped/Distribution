@@ -23,7 +23,7 @@ object pDashEveryMod extends js.Object {
       /* index */ scala.Double, 
       scala.Boolean | js.Thenable[scala.Boolean]
     ],
-    options: pDashMapLib.pDashMapMod.pMapNs.Options
+    options: pDashMapLib.pDashMapMod.Options
   ): js.Promise[scala.Boolean] = js.native
 }
 

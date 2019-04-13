@@ -12,7 +12,7 @@ trait ReactTestRenderer extends js.Object {
   def toJSON(): scala.Null | ReactTestRendererJSON = js.native
   def toTree(): scala.Null | ReactTestRendererTree = js.native
   def unmount(): scala.Unit = js.native
-  def unmount(nextElement: reactLib.reactMod.ReactNs.ReactElement[_]): scala.Unit = js.native
-  def update(nextElement: reactLib.reactMod.ReactNs.ReactElement[_]): scala.Unit = js.native
+  def unmount(nextElement: reactLib.reactMod.ReactElement[_]): scala.Unit = js.native
+  def update(nextElement: reactLib.reactMod.ReactElement[_]): scala.Unit = js.native
 }
 

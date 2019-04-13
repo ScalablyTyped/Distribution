@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object fullcalendarLibStrings {
   @js.native
+  sealed trait `<%= version %>` extends js.Object
+  
+  @js.native
   sealed trait ISO extends js.Object
   
   @js.native
@@ -145,6 +148,8 @@ object fullcalendarLibStrings {
   @js.native
   sealed trait zoomTo extends js.Object
   
+  @scala.inline
+  def `<%= version %>`: `<%= version %>` = "<%= version %>".asInstanceOf[`<%= version %>`]
   @scala.inline
   def ISO: ISO = "ISO".asInstanceOf[ISO]
   @scala.inline

@@ -10,8 +10,8 @@ package object ngCommandNs {
   	* Command factory which creates instances of @see ICommand.
   	*/
   type ICommandFactory = js.Function3[
-    /* $scope */ angularLib.angularMod.angularNs.IScope, 
-    /* execute */ js.Function0[angularLib.angularMod.angularNs.IPromise[js.Any]], 
+    /* $scope */ angularLib.angularMod.IScope, 
+    /* execute */ js.Function0[angularLib.angularMod.IPromise[js.Any]], 
     /* canExecute */ js.UndefOr[js.Function0[scala.Boolean]], 
     ICommand
   ]

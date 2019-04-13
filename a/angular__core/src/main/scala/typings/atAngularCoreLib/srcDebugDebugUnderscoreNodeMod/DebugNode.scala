@@ -38,21 +38,8 @@ class DebugNodeCls protected () extends DebugNode {
   override val references: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
-object DebugNode {
-  @scala.inline
-  def apply(
-    componentInstance: js.Any,
-    context: js.Any,
-    injector: atAngularCoreLib.srcDiMod.Injector,
-    listeners: js.Array[EventListener],
-    nativeNode: js.Any,
-    providerTokens: js.Array[_],
-    references: org.scalablytyped.runtime.StringDictionary[js.Any],
-    parent: DebugElement = null
-  ): DebugNode = {
-    val __obj = js.Dynamic.literal(componentInstance = componentInstance, context = context, injector = injector, listeners = listeners, nativeNode = nativeNode, providerTokens = providerTokens, references = references)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    __obj.asInstanceOf[DebugNode]
-  }
-}
+@JSImport("@angular/core/src/debug/debug_node", "DebugNode")
+@js.native
+object DebugNode
+  extends org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, DebugNode]
 

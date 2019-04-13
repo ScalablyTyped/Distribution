@@ -9,16 +9,39 @@ trait MosaicWindowContext[T /* <: reactDashMosaicDashComponentLib.libTypesMod.Mo
   var mosaicWindowActions: MosaicWindowActions
 }
 
-object MosaicWindowContext {
-  @scala.inline
-  def apply[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
-    mosaicActions: MosaicRootActions[T],
-    mosaicId: java.lang.String,
-    mosaicWindowActions: MosaicWindowActions
-  ): MosaicWindowContext[T] = {
-    val __obj = js.Dynamic.literal(mosaicActions = mosaicActions, mosaicId = mosaicId, mosaicWindowActions = mosaicWindowActions)
-  
-    __obj.asInstanceOf[MosaicWindowContext[T]]
-  }
+@JSImport("react-mosaic-component/lib/contextTypes", "MosaicWindowContext")
+@js.native
+object MosaicWindowContext extends js.Object {
+  @JSName("mosaicActions")
+  var mosaicActions_Original: propDashTypesLib.propDashTypesMod.Validator[
+    propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_Args]
+  ] = js.native
+  @JSName("mosaicId")
+  var mosaicId_Original: propDashTypesLib.propDashTypesMod.Validator[java.lang.String] = js.native
+  @JSName("mosaicWindowActions")
+  var mosaicWindowActions_Original: propDashTypesLib.propDashTypesMod.Validator[
+    propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_ArgsConnectDragSource]
+  ] = js.native
+  def mosaicActions(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def mosaicId(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def mosaicWindowActions(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
 }
 

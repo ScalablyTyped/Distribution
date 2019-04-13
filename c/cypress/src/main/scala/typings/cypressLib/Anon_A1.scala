@@ -22,36 +22,6 @@ trait Anon_A1
       cypressLib.typesBluebirdMod.Bluebird[js.Object]
     ] {
   /**
-    * A collection of errors. `AggregateError` is an array-like object, with numeric indices and a `.length` property.
-    *  It supports all generic array methods such as `.forEach` directly.
-    *
-    * `AggregateError`s are caught in `.error` handlers, even if the contained errors are not operational.
-    *
-    * `Promise.some` and `Promise.any` use `AggregateError` as rejection reason when they fail.
-    */
-  var AggregateError: org.scalablytyped.runtime.Instantiable0[cypressLib.typesBluebirdMod.BluebirdNs.AggregateError] = js.native
-  /**
-    * Signals that an operation has been aborted or cancelled. The default reason used by `.cancel`.
-    */
-  var CancellationError: org.scalablytyped.runtime.Instantiable0[cypressLib.typesBluebirdMod.BluebirdNs.CancellationError] = js.native
-  /**
-    * returned by `Bluebird.disposer()`.
-    */
-  var Disposer: org.scalablytyped.runtime.Instantiable0[cypressLib.typesBluebirdMod.BluebirdNs.Disposer[js.Object]] = js.native
-  /**
-    * Represents an error is an explicit promise rejection as opposed to a thrown error.
-    *  For example, if an error is errbacked by a callback API promisified through undefined or undefined
-    *  and is not a typed error, it will be converted to a `OperationalError` which has the original error in
-    *  the `.cause` property.
-    *
-    * `OperationalError`s are caught in `.error` handlers.
-    */
-  var OperationalError: org.scalablytyped.runtime.Instantiable0[cypressLib.typesBluebirdMod.BluebirdNs.OperationalError] = js.native
-  /**
-    * Signals that an operation has timed out. Used as a custom cancellation reason in `.timeout`.
-    */
-  var TimeoutError: org.scalablytyped.runtime.Instantiable0[cypressLib.typesBluebirdMod.BluebirdNs.TimeoutError] = js.native
-  /**
     * The version number of the library
     */
   var version: java.lang.String = js.native
@@ -116,22 +86,22 @@ trait Anon_A1
   def coroutine[T](generatorFunction: js.Function0[stdLib.IterableIterator[_]]): js.Function0[cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T](
     generatorFunction: js.Function0[stdLib.IterableIterator[_]],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function0[cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, stdLib.IterableIterator[_]]): js.Function1[/* a1 */ A1, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1](
     generatorFunction: js.Function1[/* a1 */ A1, stdLib.IterableIterator[_]],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function1[/* a1 */ A1, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, stdLib.IterableIterator[_]]): js.Function2[/* a1 */ A1, /* a2 */ A2, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2](
     generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, stdLib.IterableIterator[_]],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function2[/* a1 */ A1, /* a2 */ A2, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, stdLib.IterableIterator[_]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3](
     generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, stdLib.IterableIterator[_]],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def coroutine[T, A1, A2, A3, A4](
     generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, stdLib.IterableIterator[_]]
@@ -144,7 +114,7 @@ trait Anon_A1
   ] = js.native
   def coroutine[T, A1, A2, A3, A4](
     generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, stdLib.IterableIterator[_]],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function4[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -178,7 +148,7 @@ trait Anon_A1
       /* a5 */ A5, 
       stdLib.IterableIterator[_]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function5[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -216,7 +186,7 @@ trait Anon_A1
       /* a6 */ A6, 
       stdLib.IterableIterator[_]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function6[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -258,7 +228,7 @@ trait Anon_A1
       /* a7 */ A7, 
       stdLib.IterableIterator[_]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function7[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -304,7 +274,7 @@ trait Anon_A1
       /* a8 */ A8, 
       stdLib.IterableIterator[_]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.CoroutineOptions
+    options: cypressLib.typesBluebirdMod.CoroutineOptions
   ): js.Function8[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -319,7 +289,7 @@ trait Anon_A1
   /**
     * Create a promise with undecided fate and return a `PromiseResolver` to control it. See resolution?: Promise(#promise-resolution).
     */
-  def defer[R](): cypressLib.typesBluebirdMod.BluebirdNs.Resolver[R] = js.native
+  def defer[R](): cypressLib.typesBluebirdMod.Resolver[R] = js.native
   def delay(ms: scala.Double): cypressLib.typesBluebirdMod.Bluebird[scala.Unit] = js.native
   /**
     * Returns a promise that will be resolved with value (or undefined) after given ms milliseconds.
@@ -370,7 +340,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       scala.Boolean | js.Thenable[scala.Boolean]
     ],
-    option: cypressLib.typesBluebirdMod.BluebirdNs.ConcurrencyOption
+    option: cypressLib.typesBluebirdMod.ConcurrencyOption
   ): cypressLib.typesBluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
     * Filter an array, or a promise of an array, which contains a promises (or a mix of promises and values) with the given `filterer` function with the signature `(item, index, arrayLength)` where `item` is the resolved value of a respective promise in the input array.
@@ -397,7 +367,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       scala.Boolean | js.Thenable[scala.Boolean]
     ],
-    option: cypressLib.typesBluebirdMod.BluebirdNs.ConcurrencyOption
+    option: cypressLib.typesBluebirdMod.ConcurrencyOption
   ): cypressLib.typesBluebirdMod.Bluebird[js.Array[R]] = js.native
   def fromCallback(
     resolver: js.Function1[
@@ -410,7 +380,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.FromNodeOptions
+    options: cypressLib.typesBluebirdMod.FromNodeOptions
   ): cypressLib.typesBluebirdMod.Bluebird[_] = js.native
   @JSName("fromCallback")
   def fromCallback_T[T](
@@ -425,7 +395,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.FromNodeOptions
+    options: cypressLib.typesBluebirdMod.FromNodeOptions
   ): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
   /**
     * Returns a promise that is resolved by a node style callback function.
@@ -441,7 +411,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.FromNodeOptions
+    options: cypressLib.typesBluebirdMod.FromNodeOptions
   ): cypressLib.typesBluebirdMod.Bluebird[_] = js.native
   @JSName("fromNode")
   def fromNode_T[T](
@@ -456,14 +426,8 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.FromNodeOptions
+    options: cypressLib.typesBluebirdMod.FromNodeOptions
   ): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
-  /**
-    * Returns a new independent copy of the Bluebird library.
-    *
-    * This method should be used before you use any of the methods which would otherwise alter the global Bluebird object - to avoid polluting global state.
-    */
-  def getNewLibraryCopy(): /* import warning: ImportType.apply Failed type conversion: typeof Bluebird */ js.Any = js.native
   /**
     * See if `value` is a trusted Promise.
     */
@@ -698,7 +662,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       U | js.Thenable[U]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.ConcurrencyOption
+    options: cypressLib.typesBluebirdMod.ConcurrencyOption
   ): cypressLib.typesBluebirdMod.Bluebird[js.Array[U]] = js.native
   /**
     * Map an array, or a promise of an array, which contains a promises (or a mix of promises and values) with the given `mapper` function with the signature `(item, index, arrayLength)` where `item` is the resolved value of a respective promise in the input array.
@@ -725,7 +689,7 @@ trait Anon_A1
       /* arrayLength */ scala.Double, 
       U | js.Thenable[U]
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.ConcurrencyOption
+    options: cypressLib.typesBluebirdMod.ConcurrencyOption
   ): cypressLib.typesBluebirdMod.Bluebird[js.Array[U]] = js.native
   def mapSeries[R, U](
     values: Iterable[js.Thenable[R] | R],
@@ -789,12 +753,6 @@ trait Anon_A1
   @JSName("method")
   def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): js.Function1[/* arg1 */ A1, cypressLib.typesBluebirdMod.Bluebird[R]] = js.native
   /**
-    * This is relevant to browser environments with no module loader.
-    *
-    * Release control of the Promise namespace to whatever it was before this library was loaded. Returns a reference to the library namespace so you can attach it to something else.
-    */
-  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Bluebird */ js.Any = js.native
-  /**
     * Add handler as the handler to call when there is a possibly unhandled rejection.
     * The default handler logs the error stack to stderr or console.error in browsers.
     *
@@ -819,7 +777,7 @@ trait Anon_A1
   def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function1[/* repeated */ js.Any, cypressLib.typesBluebirdMod.Bluebird[_]] = js.native
   def promisify(
     nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyOptions
+    options: cypressLib.typesBluebirdMod.PromisifyOptions
   ): js.Function1[/* repeated */ js.Any, cypressLib.typesBluebirdMod.Bluebird[_]] = js.native
   def promisify[T, A1](
     func: js.Function2[
@@ -834,7 +792,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyOptions
+    options: cypressLib.typesBluebirdMod.PromisifyOptions
   ): js.Function1[/* arg1 */ A1, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2](
     func: js.Function3[
@@ -851,7 +809,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyOptions
+    options: cypressLib.typesBluebirdMod.PromisifyOptions
   ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2, A3](
     func: js.Function4[
@@ -870,7 +828,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyOptions
+    options: cypressLib.typesBluebirdMod.PromisifyOptions
   ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
   def promisify[T, A1, A2, A3, A4](
     func: js.Function5[
@@ -897,7 +855,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyOptions
+    options: cypressLib.typesBluebirdMod.PromisifyOptions
   ): js.Function4[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -933,7 +891,7 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyOptions
+    options: cypressLib.typesBluebirdMod.PromisifyOptions
   ): js.Function5[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -952,7 +910,7 @@ trait Anon_A1
     */
   // TODO how to model promisifyAll?
   def promisifyAll[T /* <: js.Object */](target: T): T = js.native
-  def promisifyAll[T /* <: js.Object */](target: T, options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyAllOptions[T]): T = js.native
+  def promisifyAll[T /* <: js.Object */](target: T, options: cypressLib.typesBluebirdMod.PromisifyAllOptions[T]): T = js.native
   /**
     * Returns a function that will wrap the given `nodeFunction`.
     *
@@ -977,13 +935,13 @@ trait Anon_A1
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ],
-    options: cypressLib.typesBluebirdMod.BluebirdNs.PromisifyOptions
+    options: cypressLib.typesBluebirdMod.PromisifyOptions
   ): js.Function0[cypressLib.typesBluebirdMod.Bluebird[T]] = js.native
    // tslint:disable-line:unified-signatures
   // object
-  def props[T](`object`: cypressLib.typesBluebirdMod.BluebirdNs.ResolvableProps[T]): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
+  def props[T](`object`: cypressLib.typesBluebirdMod.ResolvableProps[T]): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
   // trusted promise for object
-  def props[T](`object`: js.Thenable[cypressLib.typesBluebirdMod.BluebirdNs.ResolvableProps[T]]): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
+  def props[T](`object`: js.Thenable[cypressLib.typesBluebirdMod.ResolvableProps[T]]): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
   def props[K, V](map: cypressLib.typesLodashMod.Global.Map[K, js.Thenable[V] | V]): cypressLib.typesBluebirdMod.Bluebird[cypressLib.typesLodashMod.Global.Map[K, V]] = js.native
   /**
     * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
@@ -1067,15 +1025,6 @@ trait Anon_A1
   def resolve(): cypressLib.typesBluebirdMod.Bluebird[scala.Unit] = js.native
   def resolve[R](value: R): cypressLib.typesBluebirdMod.Bluebird[R] = js.native
   def resolve[R](value: js.Thenable[R]): cypressLib.typesBluebirdMod.Bluebird[R] = js.native
-  /**
-    * Changes how bluebird schedules calls a-synchronously.
-    *
-    * @param scheduler Should be a function that asynchronously schedules
-    *                  the calling of the passed in function
-    */
-  def setScheduler(
-    scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit]
-  ): scala.Unit = js.native
   def some[R](values: Iterable[js.Thenable[R] | R], count: scala.Double): cypressLib.typesBluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
     * Initiate a competetive race between multiple promises or values (values will become immediately fulfilled promises).
@@ -1101,18 +1050,18 @@ trait Anon_A1
     *  necessary because there is no standard interface in node for disposing resources.
     */
   def using[R, T](
-    disposer: cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R],
+    disposer: cypressLib.typesBluebirdMod.Disposer[R],
     executor: js.Function1[/* transaction */ R, js.Thenable[T]]
   ): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
   def using[R1, R2, T](
-    disposer: cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R1],
-    disposer2: cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R2],
+    disposer: cypressLib.typesBluebirdMod.Disposer[R1],
+    disposer2: cypressLib.typesBluebirdMod.Disposer[R2],
     executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
   ): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
   def using[R1, R2, R3, T](
-    disposer: cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R1],
-    disposer2: cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R2],
-    disposer3: cypressLib.typesBluebirdMod.BluebirdNs.Disposer[R3],
+    disposer: cypressLib.typesBluebirdMod.Disposer[R1],
+    disposer2: cypressLib.typesBluebirdMod.Disposer[R2],
+    disposer3: cypressLib.typesBluebirdMod.Disposer[R3],
     executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
   ): cypressLib.typesBluebirdMod.Bluebird[T] = js.native
 }

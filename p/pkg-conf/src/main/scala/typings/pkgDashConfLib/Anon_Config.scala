@@ -28,19 +28,19 @@ trait Anon_Config extends js.Object {
   	})();
   	```
   	*/
-  def apply[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config */](namespace: java.lang.String): js.Promise[ConfigType with pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config] = js.native
-  def apply[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config */](namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Options[ConfigType]): js.Promise[ConfigType with pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config] = js.native
+  def apply[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String): js.Promise[ConfigType with pkgDashConfLib.pkgDashConfMod.Config] = js.native
+  def apply[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.Options[ConfigType]): js.Promise[ConfigType with pkgDashConfLib.pkgDashConfMod.Config] = js.native
   /**
   	@param config - The `config` returned from any of the above methods.
   	@returns The filepath to the `package.json` file or `null` when not found.
   	*/
-  def filepath(config: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config): java.lang.String | scala.Null = js.native
+  def filepath(config: pkgDashConfLib.pkgDashConfMod.Config): java.lang.String | scala.Null = js.native
   /**
   	Same as `pkgConf()`, but runs synchronously.
   	@param namespace - The `package.json` namespace you want.
   	@returns Returns the config.
   	*/
-  def sync[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config */](namespace: java.lang.String): ConfigType with pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config = js.native
-  def sync[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config */](namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Options[ConfigType]): ConfigType with pkgDashConfLib.pkgDashConfMod.pkgConfNs.Config = js.native
+  def sync[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String): ConfigType with pkgDashConfLib.pkgDashConfMod.Config = js.native
+  def sync[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.Options[ConfigType]): ConfigType with pkgDashConfLib.pkgDashConfMod.Config = js.native
 }
 

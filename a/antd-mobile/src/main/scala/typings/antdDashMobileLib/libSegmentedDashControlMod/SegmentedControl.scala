@@ -11,7 +11,7 @@ trait SegmentedControl
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MSegmentedControl(nextProps: SegmentedControlProps): scala.Unit = js.native
   def onClick(
-    e: reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent],
+    e: reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent],
     index: js.Any,
     value: js.Any
   ): scala.Unit = js.native

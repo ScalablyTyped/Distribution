@@ -73,6 +73,5 @@ object flatbuffersNs extends js.Object {
     def create(low: scala.Double, high: scala.Double): flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.Long = js.native
   }
   
-  type Encoding = flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.Encoding
 }
 

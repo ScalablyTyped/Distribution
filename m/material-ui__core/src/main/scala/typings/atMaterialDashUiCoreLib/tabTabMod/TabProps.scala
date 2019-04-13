@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[atMaterialDashUiCoreLib.Anon_Checked], 
+      /* event */ reactLib.reactMod.ChangeEvent[atMaterialDashUiCoreLib.Anon_Checked], 
       /* value */ js.Any, 
       scala.Unit
     ]
   ] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.EventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.EventHandler[_]] = js.undefined
   var selected: js.UndefOr[scala.Boolean] = js.undefined
   var textColor: js.UndefOr[
     java.lang.String | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
@@ -35,13 +35,13 @@ object TabProps {
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TabClassKey]] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    icon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[atMaterialDashUiCoreLib.Anon_Checked], /* value */ js.Any) => scala.Unit = null,
-    onClick: reactLib.reactMod.ReactNs.EventHandler[_] = null,
+    icon: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    label: reactLib.reactMod.ReactNode = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[atMaterialDashUiCoreLib.Anon_Checked], /* value */ js.Any) => scala.Unit = null,
+    onClick: reactLib.reactMod.EventHandler[_] = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     textColor: java.lang.String | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit = null,
     value: js.Any = null
   ): TabProps = {

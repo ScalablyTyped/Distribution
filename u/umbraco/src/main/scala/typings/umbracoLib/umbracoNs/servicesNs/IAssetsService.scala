@@ -29,7 +29,7 @@ trait IAssetsService extends js.Object {
     * @param {Scope} scope optional scope to pass into the loader
     * @returns {Promise} Promise object which resolves when all the files has loaded
     */
-  def load(pathArray: js.Array[java.lang.String], scope: angularLib.angularMod.angularNs.IScope): angularLib.angularMod.angularNs.IPromise[_]
+  def load(pathArray: js.Array[java.lang.String], scope: angularLib.angularMod.IScope): angularLib.angularMod.IPromise[_]
   /**
     * @ngdoc method
     * @name umbraco.services.assetsService#loadCss
@@ -46,10 +46,10 @@ trait IAssetsService extends js.Object {
     */
   def loadCss(
     path: java.lang.String,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     attributes: js.Object,
     timeout: scala.Double
-  ): angularLib.angularMod.angularNs.IPromise[_]
+  ): angularLib.angularMod.IPromise[_]
   /**
     * @ngdoc method
     * @name umbraco.services.assetsService#loadJs
@@ -66,18 +66,18 @@ trait IAssetsService extends js.Object {
     */
   def loadJs(
     path: java.lang.String,
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     attributes: js.Object,
     timeout: scala.Double
-  ): angularLib.angularMod.angularNs.IPromise[_]
+  ): angularLib.angularMod.IPromise[_]
 }
 
 object IAssetsService {
   @scala.inline
   def apply(
-    load: (js.Array[java.lang.String], angularLib.angularMod.angularNs.IScope) => angularLib.angularMod.angularNs.IPromise[_],
-    loadCss: (java.lang.String, angularLib.angularMod.angularNs.IScope, js.Object, scala.Double) => angularLib.angularMod.angularNs.IPromise[_],
-    loadJs: (java.lang.String, angularLib.angularMod.angularNs.IScope, js.Object, scala.Double) => angularLib.angularMod.angularNs.IPromise[_]
+    load: (js.Array[java.lang.String], angularLib.angularMod.IScope) => angularLib.angularMod.IPromise[_],
+    loadCss: (java.lang.String, angularLib.angularMod.IScope, js.Object, scala.Double) => angularLib.angularMod.IPromise[_],
+    loadJs: (java.lang.String, angularLib.angularMod.IScope, js.Object, scala.Double) => angularLib.angularMod.IPromise[_]
   ): IAssetsService = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction2(load), loadCss = js.Any.fromFunction4(loadCss), loadJs = js.Any.fromFunction4(loadJs))
   

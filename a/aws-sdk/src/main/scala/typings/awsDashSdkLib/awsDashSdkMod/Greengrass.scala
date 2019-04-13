@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Greengrass ()
   extends awsDashSdkLib.clientsAllMod.Greengrass {
-  def this(options: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsGreengrassMod.ClientConfiguration) = this()
 }
 

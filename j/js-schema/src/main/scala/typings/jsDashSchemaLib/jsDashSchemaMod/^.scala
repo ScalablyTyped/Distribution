@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("js-schema", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(definition: js.Any): jsDashSchemaLib.jsDashSchemaMod.schemaNs.Schema = js.native
+  def apply(definition: js.Any): Schema = js.native
 }
 

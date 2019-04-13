@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StyledRadioGroup ()
   extends reactLib.reactMod.Component[StyledProps with reactDashFormLib.Anon_ChildrenProps, js.Object, js.Any]
-     with reactLib.reactMod.ReactNs.ChildContextProvider[RadioGroupContext] {
+     with reactLib.reactMod.ChildContextProvider[RadioGroupContext] {
   /* CompleteClass */
   override def getChildContext(): RadioGroupContext = js.native
 }

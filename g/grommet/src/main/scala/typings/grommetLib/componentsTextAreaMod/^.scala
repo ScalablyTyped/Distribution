@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/TextArea", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val TextArea: reactLib.reactMod.ReactNs.ComponentClass[
-    TextAreaProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
+  val TextArea: reactLib.reactMod.ComponentClass[
+    TextAreaProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
       reactLib.HTMLTextAreaElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

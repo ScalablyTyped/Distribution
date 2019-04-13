@@ -16,7 +16,7 @@ object RevealProps {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     animated: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fade | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`small fade`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.move | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`move right`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`move up`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`move down`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.rotate | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`rotate left`) = null,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,

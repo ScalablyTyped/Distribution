@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PropsType extends js.Object {
-  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var closeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var closeIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var locale: js.UndefOr[rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.Locale] = js.undefined
   var onCancel: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onClear: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -18,8 +18,8 @@ trait PropsType extends js.Object {
 object PropsType {
   @scala.inline
   def apply(
-    clearIcon: reactLib.reactMod.ReactNs.ReactNode = null,
-    closeIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    clearIcon: reactLib.reactMod.ReactNode = null,
+    closeIcon: reactLib.reactMod.ReactNode = null,
     locale: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.Locale = null,
     onCancel: () => scala.Unit = null,
     onClear: () => scala.Unit = null,

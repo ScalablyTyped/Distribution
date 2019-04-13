@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("svg-injector", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[svgDashInjectorLib.svgDashInjectorMod.SVGInjectorNs.SVGInjector]
+  extends org.scalablytyped.runtime.TopLevel[SVGInjector]
 

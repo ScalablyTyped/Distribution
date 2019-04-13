@@ -124,7 +124,6 @@ object graphqlNs extends js.Object {
   val Kind: graphqlLib.languageKindsMod._Kind = js.native
   val SchemaMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TokenKind: graphqlLib.languageLexerMod._TokenKind = js.native
-  val TypeKind: graphqlLib.Anon_ENUM = js.native
   val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val __Directive: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
@@ -333,7 +332,7 @@ object graphqlNs extends js.Object {
     kind: java.lang.String,
     isLeaving: scala.Boolean
   ): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageVisitorMod.VisitFn[_, _]] = js.native
-  def graphql[TData](args: graphqlLib.graphqlMod.GraphQLArgs): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def graphql[TData](args: graphqlLib.graphqlGraphqlMod.GraphQLArgs): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: graphqlLib.languageSourceMod.Source): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
@@ -406,7 +405,7 @@ object graphqlNs extends js.Object {
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def graphqlSync[TData](args: graphqlLib.graphqlMod.GraphQLArgs): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
+  def graphqlSync[TData](args: graphqlLib.graphqlGraphqlMod.GraphQLArgs): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
   def graphqlSync[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: graphqlLib.languageSourceMod.Source): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
   def graphqlSync[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
@@ -657,5 +656,17 @@ object graphqlNs extends js.Object {
     graphqlLib.languageAstMod.ASTKindToNode, 
     graphqlLib.languageAstMod.UnionTypeDefinitionNode | graphqlLib.languageAstMod.FragmentSpreadNode | graphqlLib.languageAstMod.OperationDefinitionNode | graphqlLib.languageAstMod.EnumTypeDefinitionNode | graphqlLib.languageAstMod.StringValueNode | graphqlLib.languageAstMod.ArgumentNode | graphqlLib.languageAstMod.BooleanValueNode | graphqlLib.languageAstMod.NameNode | graphqlLib.languageAstMod.FieldDefinitionNode | graphqlLib.languageAstMod.ObjectTypeDefinitionNode | graphqlLib.languageAstMod.EnumValueDefinitionNode | graphqlLib.languageAstMod.FloatValueNode | graphqlLib.languageAstMod.NullValueNode | graphqlLib.languageAstMod.DirectiveNode | graphqlLib.languageAstMod.VariableNode | graphqlLib.languageAstMod.ScalarTypeExtensionNode | graphqlLib.languageAstMod.IntValueNode | graphqlLib.languageAstMod.SchemaExtensionNode | graphqlLib.languageAstMod.DirectiveDefinitionNode | graphqlLib.languageAstMod.InputObjectTypeExtensionNode | graphqlLib.languageAstMod.ScalarTypeDefinitionNode | graphqlLib.languageAstMod.UnionTypeExtensionNode | graphqlLib.languageAstMod.FragmentDefinitionNode | graphqlLib.languageAstMod.SelectionSetNode | graphqlLib.languageAstMod.NamedTypeNode | graphqlLib.languageAstMod.VariableDefinitionNode | graphqlLib.languageAstMod.EnumTypeExtensionNode | graphqlLib.languageAstMod.ObjectValueNode | graphqlLib.languageAstMod.OperationTypeDefinitionNode | graphqlLib.languageAstMod.EnumValueNode | graphqlLib.languageAstMod.ObjectFieldNode | graphqlLib.languageAstMod.FieldNode | graphqlLib.languageAstMod.InputObjectTypeDefinitionNode | graphqlLib.languageAstMod.InputValueDefinitionNode | graphqlLib.languageAstMod.NonNullTypeNode | graphqlLib.languageAstMod.InlineFragmentNode | graphqlLib.languageAstMod.InterfaceTypeDefinitionNode | graphqlLib.languageAstMod.ListTypeNode | graphqlLib.languageAstMod.InterfaceTypeExtensionNode | graphqlLib.languageAstMod.ListValueNode | graphqlLib.languageAstMod.SchemaDefinitionNode | graphqlLib.languageAstMod.ObjectTypeExtensionNode | graphqlLib.languageAstMod.DocumentNode
   ] = js.native
+  @js.native
+  object TypeKind extends js.Object {
+    var ENUM: graphqlDashComposeLib.graphqlDashComposeLibStrings.ENUM = js.native
+    var INPUT_OBJECT: graphqlDashComposeLib.graphqlDashComposeLibStrings.INPUT_OBJECT = js.native
+    var INTERFACE: graphqlDashComposeLib.graphqlDashComposeLibStrings.INTERFACE = js.native
+    var LIST: graphqlDashComposeLib.graphqlDashComposeLibStrings.LIST = js.native
+    var NON_NULL: graphqlDashComposeLib.graphqlDashComposeLibStrings.NON_NULL = js.native
+    var OBJECT: graphqlDashComposeLib.graphqlDashComposeLibStrings.OBJECT = js.native
+    var SCALAR: graphqlDashComposeLib.graphqlDashComposeLibStrings.SCALAR = js.native
+    var UNION: graphqlDashComposeLib.graphqlDashComposeLibStrings.UNION = js.native
+  }
+  
 }
 

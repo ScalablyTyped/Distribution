@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object typeaheadNs {
   type ITypeaheadService = js.Function3[
-    /* element */ angularLib.angularMod.angularNs.IAugmentedJQuery, 
+    /* element */ angularLib.angularMod.IAugmentedJQuery, 
     /* controller */ js.Any, 
     /* config */ js.UndefOr[ITypeaheadOptions], 
     ITypeahead

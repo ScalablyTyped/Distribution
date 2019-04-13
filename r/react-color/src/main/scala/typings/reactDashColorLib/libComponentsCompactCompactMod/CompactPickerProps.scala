@@ -22,11 +22,11 @@ object CompactPickerProps {
   def apply(
     color: reactDashColorLib.reactDashColorMod.Color = null,
     colors: js.Array[java.lang.String] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[CompactPicker] = null
+    ref: reactLib.reactMod.LegacyRef[CompactPicker] = null
   ): CompactPickerProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

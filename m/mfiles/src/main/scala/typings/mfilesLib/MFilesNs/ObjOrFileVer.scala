@@ -19,3 +19,8 @@ class ObjOrFileVer ()
   override def IsFile(): scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.ObjOrFileVer")
+@js.native
+object ObjOrFileVer
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjOrFileVer]
+

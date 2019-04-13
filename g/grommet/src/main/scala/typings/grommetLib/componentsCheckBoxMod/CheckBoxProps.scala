@@ -10,7 +10,7 @@ trait CheckBoxProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var indeterminate: js.UndefOr[scala.Boolean] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var reverse: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,7 +24,7 @@ object CheckBoxProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     name: java.lang.String = null,
     onChange: /* repeated */ js.Any => _ = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,

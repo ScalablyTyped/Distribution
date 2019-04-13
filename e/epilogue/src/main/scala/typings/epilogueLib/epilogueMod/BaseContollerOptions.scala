@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BaseContollerOptions extends js.Object {
   @JSName("app")
-  var app_Original: expressLib.expressMod.eNs.Express = js.native
+  var app_Original: expressLib.expressMod.Express = js.native
   var endpoint: java.lang.String = js.native
   var include: js.Array[epilogueLib.Anon_Model | java.lang.String] = js.native
   var model: js.Any = js.native

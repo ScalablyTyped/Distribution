@@ -114,7 +114,7 @@ trait HotkeysProvider extends js.Object {
     * Useful if the scope is destroyed, we can automatically destroy the hotkey binding.
     * @param scope The scope to bind to
     */
-  def bindTo(scope: angularLib.angularMod.angularNs.IScope): HotkeysProviderChained = js.native
+  def bindTo(scope: angularLib.angularMod.IScope): HotkeysProviderChained = js.native
   def del(combo: Hotkey): scala.Unit = js.native
   /**
     * Removes and unbinds a hotkey

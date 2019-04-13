@@ -17,21 +17,21 @@ trait Anon_OptionsPlayerReady
 		 *        The key/value store of player options.
 		 *
 		 * @param [ready]
-		 *        The function to call when this function is ready.
+		 *        Function that gets called when the `Component` is ready.
 		 */
 org.scalablytyped.runtime.Instantiable1[
       /* player */ videoDotJsLib.videoDotJsMod.videojsNs.Player, 
-      videoDotJsLib.videoDotJsMod.videojsNs.CaptionsButton
+      videoDotJsLib.videoDotJsMod.videojsNs.Spacer
     ]
      with org.scalablytyped.runtime.Instantiable2[
       /* player */ videoDotJsLib.videoDotJsMod.videojsNs.Player, 
-      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions, 
-      videoDotJsLib.videoDotJsMod.videojsNs.CaptionsButton
+      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, 
+      videoDotJsLib.videoDotJsMod.videojsNs.Spacer
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* player */ videoDotJsLib.videoDotJsMod.videojsNs.Player, 
-      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions, 
+      /* options */ videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, 
       /* ready */ videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback, 
-      videoDotJsLib.videoDotJsMod.videojsNs.CaptionsButton
+      videoDotJsLib.videoDotJsMod.videojsNs.Spacer
     ]
 

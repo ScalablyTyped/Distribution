@@ -31,7 +31,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def deleteById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def deleteById(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise]
   def getAll(): js.Any
   /**
     * @ngdoc method
@@ -53,7 +53,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getById(id: scala.Double): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#getPreValues
@@ -75,7 +75,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getPreValues(editorAlias: java.lang.String, dataTypeId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getPreValues(editorAlias: java.lang.String, dataTypeId: scala.Double): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getScaffold
@@ -103,7 +103,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the data type scaffold.
     *
     */
-  def getScaffold(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getScaffold(): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#save
@@ -118,18 +118,18 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def save(dataType: js.Object, preValues: js.Array[_], isNew: scala.Boolean): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def save(dataType: js.Object, preValues: js.Array[_], isNew: scala.Boolean): angularLib.angularMod.IPromise[IResourcePromise]
 }
 
 object IDataTypeResource {
   @scala.inline
   def apply(
-    deleteById: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    deleteById: scala.Double => angularLib.angularMod.IPromise[IResourcePromise],
     getAll: () => js.Any,
-    getById: scala.Double => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getPreValues: (java.lang.String, scala.Double) => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getScaffold: () => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    save: (js.Object, js.Array[_], scala.Boolean) => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    getById: scala.Double => angularLib.angularMod.IPromise[IResourcePromise],
+    getPreValues: (java.lang.String, scala.Double) => angularLib.angularMod.IPromise[IResourcePromise],
+    getScaffold: () => angularLib.angularMod.IPromise[IResourcePromise],
+    save: (js.Object, js.Array[_], scala.Boolean) => angularLib.angularMod.IPromise[IResourcePromise]
   ): IDataTypeResource = {
     val __obj = js.Dynamic.literal(deleteById = js.Any.fromFunction1(deleteById), getAll = js.Any.fromFunction0(getAll), getById = js.Any.fromFunction1(getById), getPreValues = js.Any.fromFunction2(getPreValues), getScaffold = js.Any.fromFunction0(getScaffold), save = js.Any.fromFunction3(save))
   

@@ -11,9 +11,6 @@ package object documentMod {
     js.Object, 
     js.Any
   ]
-  type DocumentComponentType[P, IP, C] = nextLib.nextMod.nextNs.NextComponentType[P with DocumentProps[nextDashServerLib.routerMod.DefaultQuery], IP, C]
-  type Enhancer[E /* <: PageProps */, P /* <: js.Any */] = js.Function1[
-    /* page */ reactLib.reactMod.ReactNs.ComponentType[P], 
-    reactLib.reactMod.ReactNs.ComponentType[E]
-  ]
+  type DocumentComponentType[P, IP, C] = nextLib.nextMod.NextComponentType[P with DocumentProps[nextDashServerLib.routerMod.DefaultQuery], IP, C]
+  type Enhancer[E /* <: PageProps */, P /* <: js.Any */] = js.Function1[/* page */ reactLib.reactMod.ComponentType[P], reactLib.reactMod.ComponentType[E]]
 }

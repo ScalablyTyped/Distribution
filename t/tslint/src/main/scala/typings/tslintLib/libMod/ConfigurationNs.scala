@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("tslint/lib", "Configuration")
 @js.native
 object ConfigurationNs extends js.Object {
-  val CONFIG_FILENAME: /* tslint.json */ java.lang.String = js.native
+  val CONFIG_FILENAME: tslintLib.tslintLibStrings.tslintDOTjson = js.native
   val CONFIG_FILENAMES: js.Array[java.lang.String] = js.native
   val DEFAULT_CONFIG: tslintLib.libConfigurationMod.IConfigurationFile = js.native
   val EMPTY_CONFIG: tslintLib.libConfigurationMod.IConfigurationFile = js.native
-  val JSON_CONFIG_FILENAME: /* tslint.json */ java.lang.String = js.native
+  val JSON_CONFIG_FILENAME: tslintLib.tslintLibStrings.tslintDOTjson = js.native
   def convertRuleOptions(
     ruleConfiguration: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]]
   ): js.Array[tslintLib.libLanguageRuleRuleMod.IOptions] = js.native

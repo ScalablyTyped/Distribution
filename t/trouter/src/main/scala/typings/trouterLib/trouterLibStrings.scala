@@ -8,139 +8,139 @@ import scala.scalajs.js.annotation._
 object trouterLibStrings {
   @js.native
   sealed trait ACL
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait BIND
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait CHECKOUT
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait CONNECT
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait COPY
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait DELETE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait GET
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait HEAD
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait LINK
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait LOCK
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait `M-SEARCH`
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait MERGE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait MKACTIVITY
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait MKCALENDAR
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait MKCOL
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait MOVE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait NOTIFY
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait OPTIONS
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait PATCH
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait POST
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait PROPFIND
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait PROPPATCH
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait PURGE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait PUT
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait REBIND
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait REPORT
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait SEARCH
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait SOURCE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait SUBSCRIBE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait TRACE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait UNBIND
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait UNLINK
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait UNLOCK
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @js.native
   sealed trait UNSUBSCRIBE
-    extends trouterLib.trouterMod.TrouterNs.HTTPMethod
+    extends trouterLib.trouterMod.HTTPMethod
   
   @scala.inline
   def ACL: ACL = "ACL".asInstanceOf[ACL]

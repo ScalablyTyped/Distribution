@@ -8,48 +8,43 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Blockquote: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
+  val Blockquote: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
   ] = js.native
-  val Breadcrumb: reactLib.reactMod.ReactNs.SFC[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps] = js.native
-  val Code: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
+  val Breadcrumb: reactLib.reactMod.SFC[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps] = js.native
+  val Code: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
   ] = js.native
-  val ContextMenu: atBlueprintjsCoreLib.Anon_Hide = js.native
-  val Expander: reactLib.reactMod.ReactNs.SFC[js.Object] = js.native
-  val H1: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  val Expander: reactLib.reactMod.SFC[js.Object] = js.native
+  val H1: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
   ] = js.native
-  val H2: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  val H2: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
   ] = js.native
-  val H3: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  val H3: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
   ] = js.native
-  val H4: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  val H4: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
   ] = js.native
-  val H5: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  val H5: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
   ] = js.native
-  val H6: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  val H6: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
   ] = js.native
-  val HandleInteractionKind: atBlueprintjsCoreLib.Anon_LOCK = js.native
-  val HandleType: atBlueprintjsCoreLib.Anon_ENDEnd = js.native
-  val Label: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLLabelElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLLabelElement]
+  val Label: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLLabelElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLLabelElement]
   ] = js.native
-  val OL: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLOListElement]
+  val OL: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLOListElement]
   ] = js.native
-  val PopoverInteractionKind: atBlueprintjsCoreLib.Anon_CLICK = js.native
-  val PopoverPosition: atBlueprintjsCoreLib.Anon_AUTO = js.native
-  val Pre: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
+  val Pre: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
   ] = js.native
-  val UL: reactLib.reactMod.ReactNs.StatelessComponent[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLUListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLUListElement]
+  val UL: reactLib.reactMod.StatelessComponent[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLUListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLUListElement]
   ] = js.native
   def ContextMenuTarget[T /* <: atBlueprintjsCoreLib.libEsmCommonConstructorMod.IConstructor[
     atBlueprintjsCoreLib.libEsmComponentsContextDashMenuContextMenuTargetMod.IContextMenuTargetComponent

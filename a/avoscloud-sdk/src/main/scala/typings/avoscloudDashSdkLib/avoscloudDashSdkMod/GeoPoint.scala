@@ -30,11 +30,15 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("avoscloud-sdk", "GeoPoint")
 @js.native
-class GeoPoint ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.GeoPoint {
+class GeoPoint () extends BaseObject {
   def this(arg1: js.Any) = this()
   def this(arg1: js.Any, arg2: js.Any) = this()
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  var latitude: scala.Double = js.native
+  var longitude: scala.Double = js.native
+  def current(): GeoPoint = js.native
+  def current(options: SuccessFailureOptions): GeoPoint = js.native
+  def kilometersTo(point: GeoPoint): scala.Double = js.native
+  def milesTo(point: GeoPoint): scala.Double = js.native
+  def radiansTo(point: GeoPoint): scala.Double = js.native
 }
 

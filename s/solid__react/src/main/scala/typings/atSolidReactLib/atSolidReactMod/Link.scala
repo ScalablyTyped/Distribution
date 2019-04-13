@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Link ()
   extends reactLib.reactMod.Component[
-      atSolidReactLib.Anon_Href with reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLAnchorElement], 
+      atSolidReactLib.Anon_Href with reactLib.reactMod.HTMLAttributes[stdLib.HTMLAnchorElement], 
       js.Object, 
       js.Any
     ]

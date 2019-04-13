@@ -16,11 +16,11 @@ trait Static
       Database[js.Object]
     ] {
   @JSName("debug")
-  var debug_Original: debugLib.debugMod.debugNs.IDebug = js.native
+  var debug_Original: debugLib.debugMod.IDebug = js.native
   @JSName("fetch")
   var fetch_Original: pouchdbDashCoreLib.Fetch = js.native
   var version: java.lang.String = js.native
-  def debug(namespace: java.lang.String): debugLib.debugMod.debugNs.Debugger = js.native
+  def debug(namespace: java.lang.String): debugLib.debugMod.Debugger = js.native
   /**
     * The returned object is a constructor function that works the same as PouchDB,
     * except that whenever you invoke it (e.g. with new), the given options will be passed in by default.

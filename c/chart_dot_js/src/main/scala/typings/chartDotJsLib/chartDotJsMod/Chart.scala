@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Chart extends js.Object {
   var canvas: stdLib.HTMLCanvasElement | scala.Null = js.native
-  var chartArea: chartDotJsLib.chartDotJsMod.ChartNs.ChartArea = js.native
-  var config: chartDotJsLib.chartDotJsMod.ChartNs.ChartConfiguration = js.native
+  var chartArea: ChartArea = js.native
+  var config: ChartConfiguration = js.native
   var ctx: stdLib.CanvasRenderingContext2D | scala.Null = js.native
-  var data: chartDotJsLib.chartDotJsMod.ChartNs.ChartData = js.native
+  var data: ChartData = js.native
   def clear(): js.Object = js.native
   def destroy(): js.Object = js.native
   def generateLegend(): js.Object = js.native

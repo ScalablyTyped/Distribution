@@ -16,6 +16,5 @@ import scala.scalajs.js.annotation._
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.clickSelectingTool.
   */
-class ClickSelectingTool ()
-  extends goLib.goMod.goNs.ClickSelectingTool
+class ClickSelectingTool () extends Tool
 

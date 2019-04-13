@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "PageViewData")
 @js.native
 class PageViewData ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedPageViewDataMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedPageViewDataMod.^
 

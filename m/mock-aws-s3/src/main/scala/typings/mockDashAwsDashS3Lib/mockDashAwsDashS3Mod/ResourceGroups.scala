@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ResourceGroups ()
   extends awsDashSdkLib.awsDashSdkMod.ResourceGroups {
-  def this(options: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsResourcegroupsMod.ClientConfiguration) = this()
 }
 

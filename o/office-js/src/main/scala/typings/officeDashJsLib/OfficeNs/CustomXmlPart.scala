@@ -7,23 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents a single CustomXMLPart in an {@link Office.CustomXmlParts} collection.
-  *
+  * 
   * @remarks
-  * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-  * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this interface.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
-  *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
-  *  </table>
+  * **Hosts**: Word
   */
 @js.native
 trait CustomXmlPart extends js.Object {
@@ -43,6 +29,7 @@ trait CustomXmlPart extends js.Object {
     * Adds an event handler to the object using the specified event type.
     *
     * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
@@ -72,6 +59,9 @@ trait CustomXmlPart extends js.Object {
   ): scala.Unit = js.native
   /**
     * Deletes the Custom XML Part.
+    * 
+    * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -85,6 +75,9 @@ trait CustomXmlPart extends js.Object {
   ): scala.Unit = js.native
   /**
     * Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
+    * 
+    * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xPath An XPath expression that specifies the nodes you want returned. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -104,6 +97,9 @@ trait CustomXmlPart extends js.Object {
   ): scala.Unit = js.native
   /**
     * Asynchronously gets the XML inside this custom XML part.
+    * 
+    * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -118,6 +114,9 @@ trait CustomXmlPart extends js.Object {
   ): scala.Unit = js.native
   /**
     * Removes an event handler for the specified event type.
+    * 
+    * @remarks
+    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param eventType Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as 
     *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.

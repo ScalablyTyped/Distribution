@@ -13,7 +13,7 @@ trait StrictSidebarProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
@@ -30,7 +30,7 @@ trait StrictSidebarProps extends js.Object {
     */
   var onHidden: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -43,7 +43,7 @@ trait StrictSidebarProps extends js.Object {
     */
   var onHide: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -56,7 +56,7 @@ trait StrictSidebarProps extends js.Object {
     */
   var onShow: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -69,13 +69,13 @@ trait StrictSidebarProps extends js.Object {
     */
   var onVisible: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
   ] = js.undefined
   /** A sidebar can handle clicks on the passed element. */
-  var target: js.UndefOr[js.Object | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLElement]] = js.undefined
+  var target: js.UndefOr[js.Object | reactLib.reactMod.RefObject[stdLib.HTMLElement]] = js.undefined
   /** Controls whether or not the sidebar is visible on the page. */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   /** Sidebar width. */
@@ -89,15 +89,15 @@ object StrictSidebarProps {
   def apply(
     animation: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.overlay | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.push | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`scale down`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uncover | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`slide out`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`slide along`) = null,
     as: js.Any = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     direction: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left = null,
-    onHidden: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
-    onHide: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
-    onShow: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
-    onVisible: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
-    target: js.Object | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLElement] = null,
+    onHidden: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
+    onHide: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
+    onShow: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
+    onVisible: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
+    target: js.Object | reactLib.reactMod.RefObject[stdLib.HTMLElement] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very thin`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.thin | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.wide | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very wide`) = null
   ): StrictSidebarProps = {

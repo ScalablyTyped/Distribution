@@ -31,7 +31,7 @@ trait Anon_Arguments extends js.Object {
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType /* <: js.Any */, CacheKeyType /* <: js.Any */](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType /* <: js.Any */, CacheKeyType /* <: js.Any */](
     fn: js.Function1[/* arguments */ ArgumentsType, ReturnType],
-    options: memLib.memMod.memNs.Options[ArgumentsType, CacheKeyType, ReturnType]
+    options: memLib.memMod.Options[ArgumentsType, CacheKeyType, ReturnType]
   ): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
   /**
   	Clear all cached data of a memoized function.

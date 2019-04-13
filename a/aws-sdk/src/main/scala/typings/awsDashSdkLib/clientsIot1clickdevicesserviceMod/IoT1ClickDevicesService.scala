@@ -9,85 +9,57 @@ import scala.scalajs.js.annotation._
 trait IoT1ClickDevicesService
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_IoT1ClickDevicesService: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClientConfiguration = js.native
+  var config_IoT1ClickDevicesService: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Adds device(s) to your account (i.e., claim one or more devices) if and only if you
     received a claim code with the device(s).
     */
-  def claimDevicesByClaimCode(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def claimDevicesByClaimCode(): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def claimDevicesByClaimCode(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeResponse, 
+      /* data */ ClaimDevicesByClaimCodeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds device(s) to your account (i.e., claim one or more devices) if and only if you
     received a claim code with the device(s).
     */
+  def claimDevicesByClaimCode(params: ClaimDevicesByClaimCodeRequest): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def claimDevicesByClaimCode(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def claimDevicesByClaimCode(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeRequest,
+    params: ClaimDevicesByClaimCodeRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeResponse, 
+      /* data */ ClaimDevicesByClaimCodeResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ClaimDevicesByClaimCodeResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, returns a DescribeDeviceResponse object describing the
     details of the device.
     */
-  def describeDevice(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeDevice(): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDevice(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceResponse, 
+      /* data */ DescribeDeviceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, returns a DescribeDeviceResponse object describing the
     details of the device.
     */
+  def describeDevice(params: DescribeDeviceRequest): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDevice(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def describeDevice(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceRequest,
+    params: DescribeDeviceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceResponse, 
+      /* data */ DescribeDeviceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.DescribeDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, finalizes the claim request for the associated device.
     Claiming a device consists of initiating a claim, then publishing a device event,
@@ -95,20 +67,14 @@ trait IoT1ClickDevicesService
     be published by simply clicking the device.
     
     */
-  def finalizeDeviceClaim(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def finalizeDeviceClaim(): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def finalizeDeviceClaim(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimResponse, 
+      /* data */ FinalizeDeviceClaimResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, finalizes the claim request for the associated device.
     Claiming a device consists of initiating a claim, then publishing a device event,
@@ -116,60 +82,38 @@ trait IoT1ClickDevicesService
     be published by simply clicking the device.
     
     */
+  def finalizeDeviceClaim(params: FinalizeDeviceClaimRequest): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def finalizeDeviceClaim(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def finalizeDeviceClaim(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimRequest,
+    params: FinalizeDeviceClaimRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimResponse, 
+      /* data */ FinalizeDeviceClaimResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.FinalizeDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, returns the invokable methods associated with the device.
     */
-  def getDeviceMethods(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getDeviceMethods(): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeviceMethods(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsResponse, 
+      /* data */ GetDeviceMethodsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, returns the invokable methods associated with the device.
     */
+  def getDeviceMethods(params: GetDeviceMethodsRequest): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeviceMethods(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def getDeviceMethods(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsRequest,
+    params: GetDeviceMethodsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsResponse, 
+      /* data */ GetDeviceMethodsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.GetDeviceMethodsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, initiates a claim request for the associated device.
     Claiming a device consists of initiating a claim, then publishing a device event,
@@ -177,20 +121,14 @@ trait IoT1ClickDevicesService
     be published by simply clicking the device.
     
     */
-  def initiateDeviceClaim(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def initiateDeviceClaim(): awsDashSdkLib.libRequestMod.Request[InitiateDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def initiateDeviceClaim(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimResponse, 
+      /* data */ InitiateDeviceClaimResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InitiateDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, initiates a claim request for the associated device.
     Claiming a device consists of initiating a claim, then publishing a device event,
@@ -198,175 +136,111 @@ trait IoT1ClickDevicesService
     be published by simply clicking the device.
     
     */
+  def initiateDeviceClaim(params: InitiateDeviceClaimRequest): awsDashSdkLib.libRequestMod.Request[InitiateDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def initiateDeviceClaim(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def initiateDeviceClaim(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimRequest,
+    params: InitiateDeviceClaimRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimResponse, 
+      /* data */ InitiateDeviceClaimResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InitiateDeviceClaimResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InitiateDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, issues a request to invoke a named device method (with possible
     parameters). See the "Example POST" code snippet below.
     */
-  def invokeDeviceMethod(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def invokeDeviceMethod(): awsDashSdkLib.libRequestMod.Request[InvokeDeviceMethodResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def invokeDeviceMethod(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodResponse, 
+      /* data */ InvokeDeviceMethodResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InvokeDeviceMethodResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Given a device ID, issues a request to invoke a named device method (with possible
     parameters). See the "Example POST" code snippet below.
     */
+  def invokeDeviceMethod(params: InvokeDeviceMethodRequest): awsDashSdkLib.libRequestMod.Request[InvokeDeviceMethodResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def invokeDeviceMethod(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def invokeDeviceMethod(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodRequest,
+    params: InvokeDeviceMethodRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodResponse, 
+      /* data */ InvokeDeviceMethodResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.InvokeDeviceMethodResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[InvokeDeviceMethodResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Using a device ID, returns a DeviceEventsResponse object containing an
     array of events for the device.
     */
-  def listDeviceEvents(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDeviceEvents(): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDeviceEvents(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsResponse, 
+      /* data */ ListDeviceEventsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Using a device ID, returns a DeviceEventsResponse object containing an
     array of events for the device.
     */
+  def listDeviceEvents(params: ListDeviceEventsRequest): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDeviceEvents(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def listDeviceEvents(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsRequest,
+    params: ListDeviceEventsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsResponse, 
+      /* data */ ListDeviceEventsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDeviceEventsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the 1-Click compatible devices associated with your AWS account.
     */
-  def listDevices(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listDevices(): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDevices(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesResponse, 
+      /* data */ ListDevicesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the 1-Click compatible devices associated with your AWS account.
     */
+  def listDevices(params: ListDevicesRequest): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDevices(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def listDevices(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesRequest,
+    params: ListDevicesRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesResponse, 
+      /* data */ ListDevicesResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListDevicesResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the tags associated with the specified resource ARN.
     */
-  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the tags associated with the specified resource ARN.
     */
+  def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def listTagsForResource(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceRequest,
+    params: ListTagsForResourceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+      /* data */ ListTagsForResourceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Adds or updates the tags associated with the resource ARN. See AWS IoT 1-Click Service Limits for the maximum number of tags allowed per
     resource.
@@ -379,50 +253,34 @@ trait IoT1ClickDevicesService
     * Adds or updates the tags associated with the resource ARN. See AWS IoT 1-Click Service Limits for the maximum number of tags allowed per
     resource.
     */
+  def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.TagResourceRequest
-  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def tagResource(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.TagResourceRequest,
+    params: TagResourceRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates a device from your AWS account using its device ID.
     */
-  def unclaimDevice(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def unclaimDevice(): awsDashSdkLib.libRequestMod.Request[UnclaimDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def unclaimDevice(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceResponse, 
+      /* data */ UnclaimDeviceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UnclaimDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates a device from your AWS account using its device ID.
     */
+  def unclaimDevice(params: UnclaimDeviceRequest): awsDashSdkLib.libRequestMod.Request[UnclaimDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def unclaimDevice(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def unclaimDevice(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceRequest,
+    params: UnclaimDeviceRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceResponse, 
+      /* data */ UnclaimDeviceResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UnclaimDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Using tag keys, deletes the tags (key/value pairs) associated with the specified
     resource ARN.
@@ -435,51 +293,35 @@ trait IoT1ClickDevicesService
     * Using tag keys, deletes the tags (key/value pairs) associated with the specified
     resource ARN.
     */
+  def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UntagResourceRequest
-  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-  def untagResource(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UntagResourceRequest,
+    params: UntagResourceRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Using a Boolean value (true or false), this operation
     enables or disables the device given a device ID.
     */
-  def updateDeviceState(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateDeviceState(): awsDashSdkLib.libRequestMod.Request[UpdateDeviceStateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDeviceState(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateResponse, 
+      /* data */ UpdateDeviceStateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDeviceStateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Using a Boolean value (true or false), this operation
     enables or disables the device given a device ID.
     */
+  def updateDeviceState(params: UpdateDeviceStateRequest): awsDashSdkLib.libRequestMod.Request[UpdateDeviceStateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDeviceState(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def updateDeviceState(
-    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateRequest,
+    params: UpdateDeviceStateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateResponse, 
+      /* data */ UpdateDeviceStateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UpdateDeviceStateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDeviceStateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

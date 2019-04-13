@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class CognitoIdentity ()
-  extends awsDashSdkLib.clientsCognitoidentityMod.namespaced {
-  def this(options: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsCognitoidentityMod.^ {
+  def this(options: awsDashSdkLib.clientsCognitoidentityMod.ClientConfiguration) = this()
 }
 

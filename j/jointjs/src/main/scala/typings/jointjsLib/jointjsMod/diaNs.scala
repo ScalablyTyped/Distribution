@@ -14,7 +14,8 @@ object diaNs extends js.Object {
     def this(attributes: jointjsLib.jointjsMod.diaNs.CellNs.Attributes) = this()
     def this(attributes: jointjsLib.jointjsMod.diaNs.CellNs.Attributes, opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
     var graph: Graph = js.native
-    var id: java.lang.String | scala.Double = js.native
+    @JSName("id")
+    var id_Cell: java.lang.String | scala.Double = js.native
     def addTo(graph: Graph): this.type = js.native
     def addTo(graph: Graph, opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options): this.type = js.native
     def attr(): js.Any = js.native
@@ -277,7 +278,6 @@ object diaNs extends js.Object {
       iteratee: js.Function2[/* element */ Element, /* distance */ scala.Double, scala.Boolean],
       opt: jointjsLib.jointjsMod.diaNs.GraphNs.ConnectionOptions
     ): scala.Unit = js.native
-    def clear(): this.type = js.native
     def clear(opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def cloneCells(cells: js.Array[Cell]): org.scalablytyped.runtime.StringDictionary[Cell] = js.native
     def cloneSubgraph(cells: js.Array[Cell]): org.scalablytyped.runtime.StringDictionary[Cell] = js.native
@@ -828,12 +828,6 @@ object diaNs extends js.Object {
       var z: js.UndefOr[scala.Double] = js.undefined
     }
     
-    trait Options
-      extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
-    
-    trait Selectors
-      extends /* selector */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]]
-    
     trait TransitionOptions extends Options {
       var delay: js.UndefOr[scala.Double] = js.undefined
       var duration: js.UndefOr[scala.Double] = js.undefined
@@ -841,6 +835,8 @@ object diaNs extends js.Object {
       var valueFunction: js.UndefOr[jointjsLib.jointjsMod.utilNs.interpolateNs.InterpolateFunction[_]] = js.undefined
     }
     
+    type Options = org.scalablytyped.runtime.StringDictionary[js.Any]
+    type Selectors = org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]]
   }
   
   /* static members */
@@ -938,9 +934,7 @@ object diaNs extends js.Object {
       var breadthFirst: js.UndefOr[scala.Boolean] = js.undefined
     }
     
-    trait Options
-      extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
-    
+    type Options = org.scalablytyped.runtime.StringDictionary[js.Any]
   }
   
   /* static members */

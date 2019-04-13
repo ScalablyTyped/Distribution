@@ -9,2733 +9,1849 @@ import scala.scalajs.js.annotation._
 trait ServiceCatalog
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_ServiceCatalog: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ClientConfiguration = js.native
+  var config_ServiceCatalog: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Accepts an offer to share the specified portfolio.
     */
-  def acceptPortfolioShare(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acceptPortfolioShare(): awsDashSdkLib.libRequestMod.Request[AcceptPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptPortfolioShare(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareOutput, 
+      /* data */ AcceptPortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcceptPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Accepts an offer to share the specified portfolio.
     */
-  def acceptPortfolioShare(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def acceptPortfolioShare(params: AcceptPortfolioShareInput): awsDashSdkLib.libRequestMod.Request[AcceptPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def acceptPortfolioShare(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareInput,
+    params: AcceptPortfolioShareInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareOutput, 
+      /* data */ AcceptPortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AcceptPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AcceptPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates the specified principal ARN with the specified portfolio.
     */
-  def associatePrincipalWithPortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associatePrincipalWithPortfolio(): awsDashSdkLib.libRequestMod.Request[AssociatePrincipalWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associatePrincipalWithPortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioOutput, 
+      /* data */ AssociatePrincipalWithPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociatePrincipalWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates the specified principal ARN with the specified portfolio.
     */
+  def associatePrincipalWithPortfolio(params: AssociatePrincipalWithPortfolioInput): awsDashSdkLib.libRequestMod.Request[AssociatePrincipalWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associatePrincipalWithPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def associatePrincipalWithPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioInput,
+    params: AssociatePrincipalWithPortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioOutput, 
+      /* data */ AssociatePrincipalWithPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociatePrincipalWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociatePrincipalWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates the specified product with the specified portfolio.
     */
-  def associateProductWithPortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associateProductWithPortfolio(): awsDashSdkLib.libRequestMod.Request[AssociateProductWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateProductWithPortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioOutput, 
+      /* data */ AssociateProductWithPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateProductWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates the specified product with the specified portfolio.
     */
-  def associateProductWithPortfolio(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associateProductWithPortfolio(params: AssociateProductWithPortfolioInput): awsDashSdkLib.libRequestMod.Request[AssociateProductWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateProductWithPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioInput,
+    params: AssociateProductWithPortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioOutput, 
+      /* data */ AssociateProductWithPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateProductWithPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateProductWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates a self-service action with a provisioning artifact.
     */
   def associateServiceActionWithProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactOutput, 
+    AssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def associateServiceActionWithProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactOutput, 
+      /* data */ AssociateServiceActionWithProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactOutput, 
+    AssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Associates a self-service action with a provisioning artifact.
     */
-  def associateServiceActionWithProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactOutput, 
+  def associateServiceActionWithProvisioningArtifact(params: AssociateServiceActionWithProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
+    AssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def associateServiceActionWithProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactInput,
+    params: AssociateServiceActionWithProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactOutput, 
+      /* data */ AssociateServiceActionWithProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateServiceActionWithProvisioningArtifactOutput, 
+    AssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Associate the specified TagOption with the specified portfolio or product.
     */
-  def associateTagOptionWithResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def associateTagOptionWithResource(): awsDashSdkLib.libRequestMod.Request[AssociateTagOptionWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateTagOptionWithResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceOutput, 
+      /* data */ AssociateTagOptionWithResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateTagOptionWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associate the specified TagOption with the specified portfolio or product.
     */
+  def associateTagOptionWithResource(params: AssociateTagOptionWithResourceInput): awsDashSdkLib.libRequestMod.Request[AssociateTagOptionWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def associateTagOptionWithResource(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def associateTagOptionWithResource(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceInput,
+    params: AssociateTagOptionWithResourceInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceOutput, 
+      /* data */ AssociateTagOptionWithResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.AssociateTagOptionWithResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[AssociateTagOptionWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates multiple self-service actions with provisioning artifacts.
     */
   def batchAssociateServiceActionWithProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactOutput, 
+    BatchAssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def batchAssociateServiceActionWithProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactOutput, 
+      /* data */ BatchAssociateServiceActionWithProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactOutput, 
+    BatchAssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Associates multiple self-service actions with provisioning artifacts.
     */
-  def batchAssociateServiceActionWithProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactOutput, 
+  def batchAssociateServiceActionWithProvisioningArtifact(params: BatchAssociateServiceActionWithProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
+    BatchAssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def batchAssociateServiceActionWithProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactInput,
+    params: BatchAssociateServiceActionWithProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactOutput, 
+      /* data */ BatchAssociateServiceActionWithProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchAssociateServiceActionWithProvisioningArtifactOutput, 
+    BatchAssociateServiceActionWithProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Disassociates a batch of self-service actions from the specified provisioning artifact.
     */
   def batchDisassociateServiceActionFromProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
+    BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def batchDisassociateServiceActionFromProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
+      /* data */ BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
+    BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Disassociates a batch of self-service actions from the specified provisioning artifact.
     */
-  def batchDisassociateServiceActionFromProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
+  def batchDisassociateServiceActionFromProvisioningArtifact(params: BatchDisassociateServiceActionFromProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
+    BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def batchDisassociateServiceActionFromProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactInput,
+    params: BatchDisassociateServiceActionFromProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
+      /* data */ BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
+    BatchDisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same region or another region. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.
     */
-  def copyProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def copyProduct(): awsDashSdkLib.libRequestMod.Request[CopyProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def copyProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductOutput, 
+      /* data */ CopyProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CopyProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same region or another region. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.
     */
-  def copyProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def copyProduct(params: CopyProductInput): awsDashSdkLib.libRequestMod.Request[CopyProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def copyProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductInput,
+    params: CopyProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductOutput, 
+      /* data */ CopyProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CopyProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CopyProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a constraint.
     */
-  def createConstraint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConstraint(): awsDashSdkLib.libRequestMod.Request[CreateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConstraint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintOutput, 
+      /* data */ CreateConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a constraint.
     */
-  def createConstraint(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createConstraint(params: CreateConstraintInput): awsDashSdkLib.libRequestMod.Request[CreateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createConstraint(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintInput,
+    params: CreateConstraintInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintOutput, 
+      /* data */ CreateConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a portfolio.
     */
-  def createPortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPortfolio(): awsDashSdkLib.libRequestMod.Request[CreatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioOutput, 
+      /* data */ CreatePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a portfolio.
     */
-  def createPortfolio(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPortfolio(params: CreatePortfolioInput): awsDashSdkLib.libRequestMod.Request[CreatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioInput,
+    params: CreatePortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioOutput, 
+      /* data */ CreatePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
     */
-  def createPortfolioShare(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPortfolioShare(): awsDashSdkLib.libRequestMod.Request[CreatePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPortfolioShare(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
+      /* data */ CreatePortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
     */
-  def createPortfolioShare(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createPortfolioShare(params: CreatePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[CreatePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPortfolioShare(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareInput,
+    params: CreatePortfolioShareInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
+      /* data */ CreatePortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreatePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a product.
     */
-  def createProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createProduct(): awsDashSdkLib.libRequestMod.Request[CreateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductOutput, 
+      /* data */ CreateProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a product.
     */
-  def createProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createProduct(params: CreateProductInput): awsDashSdkLib.libRequestMod.Request[CreateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductInput,
+    params: CreateProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductOutput, 
+      /* data */ CreateProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a plan. A plan includes the list of resources to be created (when provisioning a new product) or modified (when updating a provisioned product) when the plan is executed. You can create one plan per provisioned product. To create a plan for an existing provisioned product, the product status must be AVAILBLE or TAINTED. To view the resource changes in the change set, use DescribeProvisionedProductPlan. To create or modify the provisioned product, use ExecuteProvisionedProductPlan.
     */
-  def createProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[CreateProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createProvisionedProductPlan(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanOutput, 
+      /* data */ CreateProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a plan. A plan includes the list of resources to be created (when provisioning a new product) or modified (when updating a provisioned product) when the plan is executed. You can create one plan per provisioned product. To create a plan for an existing provisioned product, the product status must be AVAILBLE or TAINTED. To view the resource changes in the change set, use DescribeProvisionedProductPlan. To create or modify the provisioned product, use ExecuteProvisionedProductPlan.
     */
-  def createProvisionedProductPlan(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createProvisionedProductPlan(params: CreateProvisionedProductPlanInput): awsDashSdkLib.libRequestMod.Request[CreateProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createProvisionedProductPlan(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanInput,
+    params: CreateProvisionedProductPlanInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanOutput, 
+      /* data */ CreateProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a provisioning artifact (also known as a version) for the specified product. You cannot create a provisioning artifact for a product that was shared with you.
     */
-  def createProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[CreateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactOutput, 
+      /* data */ CreateProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a provisioning artifact (also known as a version) for the specified product. You cannot create a provisioning artifact for a product that was shared with you.
     */
-  def createProvisioningArtifact(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createProvisioningArtifact(params: CreateProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[CreateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactInput,
+    params: CreateProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactOutput, 
+      /* data */ CreateProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a self-service action.
     */
-  def createServiceAction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createServiceAction(): awsDashSdkLib.libRequestMod.Request[CreateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createServiceAction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionOutput, 
+      /* data */ CreateServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a self-service action.
     */
-  def createServiceAction(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createServiceAction(params: CreateServiceActionInput): awsDashSdkLib.libRequestMod.Request[CreateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionInput,
+    params: CreateServiceActionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionOutput, 
+      /* data */ CreateServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a TagOption.
     */
-  def createTagOption(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createTagOption(): awsDashSdkLib.libRequestMod.Request[CreateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createTagOption(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionOutput, 
+      /* data */ CreateTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a TagOption.
     */
-  def createTagOption(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createTagOption(params: CreateTagOptionInput): awsDashSdkLib.libRequestMod.Request[CreateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createTagOption(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionInput,
+    params: CreateTagOptionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionOutput, 
+      /* data */ CreateTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified constraint.
     */
-  def deleteConstraint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConstraint(): awsDashSdkLib.libRequestMod.Request[DeleteConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConstraint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintOutput, 
+      /* data */ DeleteConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified constraint.
     */
-  def deleteConstraint(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteConstraint(params: DeleteConstraintInput): awsDashSdkLib.libRequestMod.Request[DeleteConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteConstraint(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintInput,
+    params: DeleteConstraintInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintOutput, 
+      /* data */ DeleteConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified portfolio. You cannot delete a portfolio if it was shared with you or if it has associated products, users, constraints, or shared accounts.
     */
-  def deletePortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deletePortfolio(): awsDashSdkLib.libRequestMod.Request[DeletePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioOutput, 
+      /* data */ DeletePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeletePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified portfolio. You cannot delete a portfolio if it was shared with you or if it has associated products, users, constraints, or shared accounts.
     */
-  def deletePortfolio(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deletePortfolio(params: DeletePortfolioInput): awsDashSdkLib.libRequestMod.Request[DeletePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioInput,
+    params: DeletePortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioOutput, 
+      /* data */ DeletePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeletePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
     */
-  def deletePortfolioShare(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deletePortfolioShare(): awsDashSdkLib.libRequestMod.Request[DeletePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePortfolioShare(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
+      /* data */ DeletePortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeletePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
     */
-  def deletePortfolioShare(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deletePortfolioShare(params: DeletePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[DeletePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deletePortfolioShare(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareInput,
+    params: DeletePortfolioShareInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
+      /* data */ DeletePortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeletePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio.
     */
-  def deleteProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteProduct(): awsDashSdkLib.libRequestMod.Request[DeleteProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductOutput, 
+      /* data */ DeleteProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio.
     */
-  def deleteProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteProduct(params: DeleteProductInput): awsDashSdkLib.libRequestMod.Request[DeleteProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductInput,
+    params: DeleteProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductOutput, 
+      /* data */ DeleteProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified plan.
     */
-  def deleteProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[DeleteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteProvisionedProductPlan(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanOutput, 
+      /* data */ DeleteProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified plan.
     */
-  def deleteProvisionedProductPlan(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteProvisionedProductPlan(params: DeleteProvisionedProductPlanInput): awsDashSdkLib.libRequestMod.Request[DeleteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteProvisionedProductPlan(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanInput,
+    params: DeleteProvisionedProductPlanInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanOutput, 
+      /* data */ DeleteProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified provisioning artifact (also known as a version) for the specified product. You cannot delete a provisioning artifact associated with a product that was shared with you. You cannot delete the last provisioning artifact for a product, because a product must have at least one provisioning artifact.
     */
-  def deleteProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[DeleteProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactOutput, 
+      /* data */ DeleteProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified provisioning artifact (also known as a version) for the specified product. You cannot delete a provisioning artifact associated with a product that was shared with you. You cannot delete the last provisioning artifact for a product, because a product must have at least one provisioning artifact.
     */
-  def deleteProvisioningArtifact(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteProvisioningArtifact(params: DeleteProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[DeleteProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactInput,
+    params: DeleteProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactOutput, 
+      /* data */ DeleteProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a self-service action.
     */
-  def deleteServiceAction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteServiceAction(): awsDashSdkLib.libRequestMod.Request[DeleteServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteServiceAction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionOutput, 
+      /* data */ DeleteServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a self-service action.
     */
-  def deleteServiceAction(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteServiceAction(params: DeleteServiceActionInput): awsDashSdkLib.libRequestMod.Request[DeleteServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionInput,
+    params: DeleteServiceActionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionOutput, 
+      /* data */ DeleteServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified TagOption. You cannot delete a TagOption if it is associated with a product or portfolio.
     */
-  def deleteTagOption(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteTagOption(): awsDashSdkLib.libRequestMod.Request[DeleteTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTagOption(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionOutput, 
+      /* data */ DeleteTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified TagOption. You cannot delete a TagOption if it is associated with a product or portfolio.
     */
-  def deleteTagOption(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteTagOption(params: DeleteTagOptionInput): awsDashSdkLib.libRequestMod.Request[DeleteTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTagOption(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionInput,
+    params: DeleteTagOptionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionOutput, 
+      /* data */ DeleteTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeleteTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified constraint.
     */
-  def describeConstraint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeConstraint(): awsDashSdkLib.libRequestMod.Request[DescribeConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeConstraint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintOutput, 
+      /* data */ DescribeConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified constraint.
     */
-  def describeConstraint(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeConstraint(params: DescribeConstraintInput): awsDashSdkLib.libRequestMod.Request[DescribeConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeConstraint(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintInput,
+    params: DescribeConstraintInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintOutput, 
+      /* data */ DescribeConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the status of the specified copy product operation.
     */
-  def describeCopyProductStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCopyProductStatus(): awsDashSdkLib.libRequestMod.Request[DescribeCopyProductStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCopyProductStatus(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusOutput, 
+      /* data */ DescribeCopyProductStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCopyProductStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the status of the specified copy product operation.
     */
-  def describeCopyProductStatus(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeCopyProductStatus(params: DescribeCopyProductStatusInput): awsDashSdkLib.libRequestMod.Request[DescribeCopyProductStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCopyProductStatus(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusInput,
+    params: DescribeCopyProductStatusInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusOutput, 
+      /* data */ DescribeCopyProductStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeCopyProductStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeCopyProductStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified portfolio.
     */
-  def describePortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePortfolio(): awsDashSdkLib.libRequestMod.Request[DescribePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioOutput, 
+      /* data */ DescribePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified portfolio.
     */
-  def describePortfolio(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePortfolio(params: DescribePortfolioInput): awsDashSdkLib.libRequestMod.Request[DescribePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioInput,
+    params: DescribePortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioOutput, 
+      /* data */ DescribePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
     */
-  def describePortfolioShareStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePortfolioShareStatus(): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePortfolioShareStatus(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
+      /* data */ DescribePortfolioShareStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
     */
-  def describePortfolioShareStatus(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describePortfolioShareStatus(params: DescribePortfolioShareStatusInput): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describePortfolioShareStatus(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusInput,
+    params: DescribePortfolioShareStatusInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
+      /* data */ DescribePortfolioShareStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified product.
     */
-  def describeProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProduct(): awsDashSdkLib.libRequestMod.Request[DescribeProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductOutput, 
+      /* data */ DescribeProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified product.
     */
-  def describeProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProduct(params: DescribeProductInput): awsDashSdkLib.libRequestMod.Request[DescribeProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductInput,
+    params: DescribeProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductOutput, 
+      /* data */ DescribeProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified product. This operation is run with administrator access.
     */
-  def describeProductAsAdmin(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProductAsAdmin(): awsDashSdkLib.libRequestMod.Request[DescribeProductAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProductAsAdmin(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminOutput, 
+      /* data */ DescribeProductAsAdminOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProductAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified product. This operation is run with administrator access.
     */
-  def describeProductAsAdmin(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProductAsAdmin(params: DescribeProductAsAdminInput): awsDashSdkLib.libRequestMod.Request[DescribeProductAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProductAsAdmin(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminInput,
+    params: DescribeProductAsAdminInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminOutput, 
+      /* data */ DescribeProductAsAdminOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProductAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified product.
     */
-  def describeProductView(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProductView(): awsDashSdkLib.libRequestMod.Request[DescribeProductViewOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProductView(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewOutput, 
+      /* data */ DescribeProductViewOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProductViewOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified product.
     */
-  def describeProductView(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProductView(params: DescribeProductViewInput): awsDashSdkLib.libRequestMod.Request[DescribeProductViewOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProductView(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewInput,
+    params: DescribeProductViewInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewOutput, 
+      /* data */ DescribeProductViewOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProductViewOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProductViewOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified provisioned product.
     */
-  def describeProvisionedProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProvisionedProduct(): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisionedProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductOutput, 
+      /* data */ DescribeProvisionedProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified provisioned product.
     */
-  def describeProvisionedProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProvisionedProduct(params: DescribeProvisionedProductInput): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisionedProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductInput,
+    params: DescribeProvisionedProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductOutput, 
+      /* data */ DescribeProvisionedProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the resource changes for the specified plan.
     */
-  def describeProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisionedProductPlan(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanOutput, 
+      /* data */ DescribeProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the resource changes for the specified plan.
     */
+  def describeProvisionedProductPlan(params: DescribeProvisionedProductPlanInput): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisionedProductPlan(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def describeProvisionedProductPlan(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanInput,
+    params: DescribeProvisionedProductPlanInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanOutput, 
+      /* data */ DescribeProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified provisioning artifact (also known as a version) for the specified product.
     */
-  def describeProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactOutput, 
+      /* data */ DescribeProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified provisioning artifact (also known as a version) for the specified product.
     */
-  def describeProvisioningArtifact(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProvisioningArtifact(params: DescribeProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactInput,
+    params: DescribeProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactOutput, 
+      /* data */ DescribeProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the configuration required to provision the specified product using the specified provisioning artifact. If the output contains a TagOption key with an empty list of values, there is a TagOption conflict for that key. The end user cannot take action to fix the conflict, and launch is not blocked. In subsequent calls to ProvisionProduct, do not include conflicted TagOption keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value". Tag the provisioned product with the value sc-tagoption-conflict-portfolioId-productId.
     */
-  def describeProvisioningParameters(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeProvisioningParameters(): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisioningParameters(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersOutput, 
+      /* data */ DescribeProvisioningParametersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the configuration required to provision the specified product using the specified provisioning artifact. If the output contains a TagOption key with an empty list of values, there is a TagOption conflict for that key. The end user cannot take action to fix the conflict, and launch is not blocked. In subsequent calls to ProvisionProduct, do not include conflicted TagOption keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value". Tag the provisioned product with the value sc-tagoption-conflict-portfolioId-productId.
     */
+  def describeProvisioningParameters(params: DescribeProvisioningParametersInput): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeProvisioningParameters(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def describeProvisioningParameters(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersInput,
+    params: DescribeProvisioningParametersInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersOutput, 
+      /* data */ DescribeProvisioningParametersOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeProvisioningParametersOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified request operation. Use this operation after calling a request operation (for example, ProvisionProduct, TerminateProvisionedProduct, or UpdateProvisionedProduct). 
     */
-  def describeRecord(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeRecord(): awsDashSdkLib.libRequestMod.Request[DescribeRecordOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeRecord(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordOutput, 
+      /* data */ DescribeRecordOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeRecordOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified request operation. Use this operation after calling a request operation (for example, ProvisionProduct, TerminateProvisionedProduct, or UpdateProvisionedProduct). 
     */
-  def describeRecord(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeRecord(params: DescribeRecordInput): awsDashSdkLib.libRequestMod.Request[DescribeRecordOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeRecord(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordInput,
+    params: DescribeRecordInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordOutput, 
+      /* data */ DescribeRecordOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeRecordOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeRecordOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a self-service action.
     */
-  def describeServiceAction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeServiceAction(): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeServiceAction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionOutput, 
+      /* data */ DescribeServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes a self-service action.
     */
-  def describeServiceAction(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeServiceAction(params: DescribeServiceActionInput): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionInput,
+    params: DescribeServiceActionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionOutput, 
+      /* data */ DescribeServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified TagOption.
     */
-  def describeTagOption(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeTagOption(): awsDashSdkLib.libRequestMod.Request[DescribeTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeTagOption(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionOutput, 
+      /* data */ DescribeTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the specified TagOption.
     */
-  def describeTagOption(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def describeTagOption(params: DescribeTagOptionInput): awsDashSdkLib.libRequestMod.Request[DescribeTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeTagOption(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionInput,
+    params: DescribeTagOptionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionOutput, 
+      /* data */ DescribeTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribeTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DescribeTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
     */
-  def disableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableAWSOrganizationsAccess(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
+      /* data */ DisableAWSOrganizationsAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
     */
-  def disableAWSOrganizationsAccess(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disableAWSOrganizationsAccess(params: DisableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disableAWSOrganizationsAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessInput,
+    params: DisableAWSOrganizationsAccessInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
+      /* data */ DisableAWSOrganizationsAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates a previously associated principal ARN from a specified portfolio.
     */
-  def disassociatePrincipalFromPortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociatePrincipalFromPortfolio(): awsDashSdkLib.libRequestMod.Request[DisassociatePrincipalFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociatePrincipalFromPortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioOutput, 
+      /* data */ DisassociatePrincipalFromPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociatePrincipalFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates a previously associated principal ARN from a specified portfolio.
     */
+  def disassociatePrincipalFromPortfolio(params: DisassociatePrincipalFromPortfolioInput): awsDashSdkLib.libRequestMod.Request[DisassociatePrincipalFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociatePrincipalFromPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def disassociatePrincipalFromPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioInput,
+    params: DisassociatePrincipalFromPortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioOutput, 
+      /* data */ DisassociatePrincipalFromPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociatePrincipalFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociatePrincipalFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the specified product from the specified portfolio. 
     */
-  def disassociateProductFromPortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateProductFromPortfolio(): awsDashSdkLib.libRequestMod.Request[DisassociateProductFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateProductFromPortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioOutput, 
+      /* data */ DisassociateProductFromPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateProductFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the specified product from the specified portfolio. 
     */
+  def disassociateProductFromPortfolio(params: DisassociateProductFromPortfolioInput): awsDashSdkLib.libRequestMod.Request[DisassociateProductFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateProductFromPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def disassociateProductFromPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioInput,
+    params: DisassociateProductFromPortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioOutput, 
+      /* data */ DisassociateProductFromPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateProductFromPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateProductFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the specified self-service action association from the specified provisioning artifact.
     */
   def disassociateServiceActionFromProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactOutput, 
+    DisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def disassociateServiceActionFromProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactOutput, 
+      /* data */ DisassociateServiceActionFromProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactOutput, 
+    DisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Disassociates the specified self-service action association from the specified provisioning artifact.
     */
-  def disassociateServiceActionFromProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactOutput, 
+  def disassociateServiceActionFromProvisioningArtifact(params: DisassociateServiceActionFromProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
+    DisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def disassociateServiceActionFromProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactInput,
+    params: DisassociateServiceActionFromProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactOutput, 
+      /* data */ DisassociateServiceActionFromProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateServiceActionFromProvisioningArtifactOutput, 
+    DisassociateServiceActionFromProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Disassociates the specified TagOption from the specified resource.
     */
-  def disassociateTagOptionFromResource(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateTagOptionFromResource(): awsDashSdkLib.libRequestMod.Request[DisassociateTagOptionFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateTagOptionFromResource(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceOutput, 
+      /* data */ DisassociateTagOptionFromResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateTagOptionFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the specified TagOption from the specified resource.
     */
+  def disassociateTagOptionFromResource(params: DisassociateTagOptionFromResourceInput): awsDashSdkLib.libRequestMod.Request[DisassociateTagOptionFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateTagOptionFromResource(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def disassociateTagOptionFromResource(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceInput,
+    params: DisassociateTagOptionFromResourceInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceOutput, 
+      /* data */ DisassociateTagOptionFromResourceOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisassociateTagOptionFromResourceOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateTagOptionFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
     */
-  def enableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def enableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableAWSOrganizationsAccess(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
+      /* data */ EnableAWSOrganizationsAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
     */
-  def enableAWSOrganizationsAccess(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def enableAWSOrganizationsAccess(params: EnableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableAWSOrganizationsAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessInput,
+    params: EnableAWSOrganizationsAccessInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
+      /* data */ EnableAWSOrganizationsAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provisions or modifies a product based on the resource changes for the specified plan.
     */
-  def executeProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def executeProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def executeProvisionedProductPlan(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanOutput, 
+      /* data */ ExecuteProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provisions or modifies a product based on the resource changes for the specified plan.
     */
-  def executeProvisionedProductPlan(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def executeProvisionedProductPlan(params: ExecuteProvisionedProductPlanInput): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def executeProvisionedProductPlan(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanInput,
+    params: ExecuteProvisionedProductPlanInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanOutput, 
+      /* data */ ExecuteProvisionedProductPlanOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductPlanOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Executes a self-service action against a provisioned product.
     */
-  def executeProvisionedProductServiceAction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def executeProvisionedProductServiceAction(): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def executeProvisionedProductServiceAction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionOutput, 
+      /* data */ ExecuteProvisionedProductServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Executes a self-service action against a provisioned product.
     */
+  def executeProvisionedProductServiceAction(params: ExecuteProvisionedProductServiceActionInput): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def executeProvisionedProductServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def executeProvisionedProductServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionInput,
+    params: ExecuteProvisionedProductServiceActionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionOutput, 
+      /* data */ ExecuteProvisionedProductServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
     */
-  def getAWSOrganizationsAccessStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getAWSOrganizationsAccessStatus(): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAWSOrganizationsAccessStatus(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
+      /* data */ GetAWSOrganizationsAccessStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
     */
+  def getAWSOrganizationsAccessStatus(params: GetAWSOrganizationsAccessStatusInput): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAWSOrganizationsAccessStatus(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def getAWSOrganizationsAccessStatus(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusInput,
+    params: GetAWSOrganizationsAccessStatusInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
+      /* data */ GetAWSOrganizationsAccessStatusOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all portfolios for which sharing was accepted by this account.
     */
-  def listAcceptedPortfolioShares(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAcceptedPortfolioShares(): awsDashSdkLib.libRequestMod.Request[ListAcceptedPortfolioSharesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAcceptedPortfolioShares(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesOutput, 
+      /* data */ ListAcceptedPortfolioSharesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAcceptedPortfolioSharesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all portfolios for which sharing was accepted by this account.
     */
-  def listAcceptedPortfolioShares(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listAcceptedPortfolioShares(params: ListAcceptedPortfolioSharesInput): awsDashSdkLib.libRequestMod.Request[ListAcceptedPortfolioSharesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAcceptedPortfolioShares(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesInput,
+    params: ListAcceptedPortfolioSharesInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesOutput, 
+      /* data */ ListAcceptedPortfolioSharesOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListAcceptedPortfolioSharesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAcceptedPortfolioSharesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the constraints for the specified portfolio and product.
     */
-  def listConstraintsForPortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConstraintsForPortfolio(): awsDashSdkLib.libRequestMod.Request[ListConstraintsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConstraintsForPortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioOutput, 
+      /* data */ ListConstraintsForPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConstraintsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the constraints for the specified portfolio and product.
     */
-  def listConstraintsForPortfolio(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listConstraintsForPortfolio(params: ListConstraintsForPortfolioInput): awsDashSdkLib.libRequestMod.Request[ListConstraintsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listConstraintsForPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioInput,
+    params: ListConstraintsForPortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioOutput, 
+      /* data */ ListConstraintsForPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListConstraintsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListConstraintsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the paths to the specified product. A path is how the user has access to a specified product, and is necessary when provisioning a product. A path also determines the constraints put on the product.
     */
-  def listLaunchPaths(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listLaunchPaths(): awsDashSdkLib.libRequestMod.Request[ListLaunchPathsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listLaunchPaths(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsOutput, 
+      /* data */ ListLaunchPathsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListLaunchPathsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the paths to the specified product. A path is how the user has access to a specified product, and is necessary when provisioning a product. A path also determines the constraints put on the product.
     */
-  def listLaunchPaths(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listLaunchPaths(params: ListLaunchPathsInput): awsDashSdkLib.libRequestMod.Request[ListLaunchPathsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listLaunchPaths(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsInput,
+    params: ListLaunchPathsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsOutput, 
+      /* data */ ListLaunchPathsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListLaunchPathsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
     */
-  def listOrganizationPortfolioAccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listOrganizationPortfolioAccess(): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOrganizationPortfolioAccess(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
+      /* data */ ListOrganizationPortfolioAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
     */
+  def listOrganizationPortfolioAccess(params: ListOrganizationPortfolioAccessInput): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listOrganizationPortfolioAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def listOrganizationPortfolioAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessInput,
+    params: ListOrganizationPortfolioAccessInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
+      /* data */ ListOrganizationPortfolioAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the account IDs that have access to the specified portfolio.
     */
-  def listPortfolioAccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPortfolioAccess(): awsDashSdkLib.libRequestMod.Request[ListPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPortfolioAccess(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessOutput, 
+      /* data */ ListPortfolioAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the account IDs that have access to the specified portfolio.
     */
-  def listPortfolioAccess(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPortfolioAccess(params: ListPortfolioAccessInput): awsDashSdkLib.libRequestMod.Request[ListPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPortfolioAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessInput,
+    params: ListPortfolioAccessInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessOutput, 
+      /* data */ ListPortfolioAccessOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all portfolios in the catalog.
     */
-  def listPortfolios(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPortfolios(): awsDashSdkLib.libRequestMod.Request[ListPortfoliosOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPortfolios(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosOutput, 
+      /* data */ ListPortfoliosOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPortfoliosOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all portfolios in the catalog.
     */
-  def listPortfolios(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPortfolios(params: ListPortfoliosInput): awsDashSdkLib.libRequestMod.Request[ListPortfoliosOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPortfolios(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosInput,
+    params: ListPortfoliosInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosOutput, 
+      /* data */ ListPortfoliosOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPortfoliosOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all portfolios that the specified product is associated with.
     */
-  def listPortfoliosForProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPortfoliosForProduct(): awsDashSdkLib.libRequestMod.Request[ListPortfoliosForProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPortfoliosForProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductOutput, 
+      /* data */ ListPortfoliosForProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPortfoliosForProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all portfolios that the specified product is associated with.
     */
-  def listPortfoliosForProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPortfoliosForProduct(params: ListPortfoliosForProductInput): awsDashSdkLib.libRequestMod.Request[ListPortfoliosForProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPortfoliosForProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductInput,
+    params: ListPortfoliosForProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductOutput, 
+      /* data */ ListPortfoliosForProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPortfoliosForProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPortfoliosForProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all principal ARNs associated with the specified portfolio.
     */
-  def listPrincipalsForPortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPrincipalsForPortfolio(): awsDashSdkLib.libRequestMod.Request[ListPrincipalsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPrincipalsForPortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioOutput, 
+      /* data */ ListPrincipalsForPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPrincipalsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all principal ARNs associated with the specified portfolio.
     */
-  def listPrincipalsForPortfolio(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listPrincipalsForPortfolio(params: ListPrincipalsForPortfolioInput): awsDashSdkLib.libRequestMod.Request[ListPrincipalsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listPrincipalsForPortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioInput,
+    params: ListPrincipalsForPortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioOutput, 
+      /* data */ ListPrincipalsForPortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListPrincipalsForPortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListPrincipalsForPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the plans for the specified provisioned product or all plans to which the user has access.
     */
-  def listProvisionedProductPlans(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listProvisionedProductPlans(): awsDashSdkLib.libRequestMod.Request[ListProvisionedProductPlansOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listProvisionedProductPlans(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansOutput, 
+      /* data */ ListProvisionedProductPlansOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListProvisionedProductPlansOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the plans for the specified provisioned product or all plans to which the user has access.
     */
-  def listProvisionedProductPlans(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listProvisionedProductPlans(params: ListProvisionedProductPlansInput): awsDashSdkLib.libRequestMod.Request[ListProvisionedProductPlansOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listProvisionedProductPlans(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansInput,
+    params: ListProvisionedProductPlansInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansOutput, 
+      /* data */ ListProvisionedProductPlansOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisionedProductPlansOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListProvisionedProductPlansOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all provisioning artifacts (also known as versions) for the specified product.
     */
-  def listProvisioningArtifacts(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listProvisioningArtifacts(): awsDashSdkLib.libRequestMod.Request[ListProvisioningArtifactsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listProvisioningArtifacts(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsOutput, 
+      /* data */ ListProvisioningArtifactsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListProvisioningArtifactsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all provisioning artifacts (also known as versions) for the specified product.
     */
-  def listProvisioningArtifacts(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listProvisioningArtifacts(params: ListProvisioningArtifactsInput): awsDashSdkLib.libRequestMod.Request[ListProvisioningArtifactsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listProvisioningArtifacts(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsInput,
+    params: ListProvisioningArtifactsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsOutput, 
+      /* data */ ListProvisioningArtifactsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListProvisioningArtifactsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all provisioning artifacts (also known as versions) for the specified self-service action.
     */
   def listProvisioningArtifactsForServiceAction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionOutput, 
+    ListProvisioningArtifactsForServiceActionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def listProvisioningArtifactsForServiceAction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionOutput, 
+      /* data */ ListProvisioningArtifactsForServiceActionOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionOutput, 
+    ListProvisioningArtifactsForServiceActionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Lists all provisioning artifacts (also known as versions) for the specified self-service action.
     */
-  def listProvisioningArtifactsForServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionOutput, 
+  def listProvisioningArtifactsForServiceAction(params: ListProvisioningArtifactsForServiceActionInput): awsDashSdkLib.libRequestMod.Request[
+    ListProvisioningArtifactsForServiceActionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def listProvisioningArtifactsForServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionInput,
+    params: ListProvisioningArtifactsForServiceActionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionOutput, 
+      /* data */ ListProvisioningArtifactsForServiceActionOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListProvisioningArtifactsForServiceActionOutput, 
+    ListProvisioningArtifactsForServiceActionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Lists the specified requests or all performed requests.
     */
-  def listRecordHistory(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listRecordHistory(): awsDashSdkLib.libRequestMod.Request[ListRecordHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listRecordHistory(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryOutput, 
+      /* data */ ListRecordHistoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListRecordHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the specified requests or all performed requests.
     */
-  def listRecordHistory(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listRecordHistory(params: ListRecordHistoryInput): awsDashSdkLib.libRequestMod.Request[ListRecordHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listRecordHistory(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryInput,
+    params: ListRecordHistoryInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryOutput, 
+      /* data */ ListRecordHistoryOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListRecordHistoryOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListRecordHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the resources associated with the specified TagOption.
     */
-  def listResourcesForTagOption(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listResourcesForTagOption(): awsDashSdkLib.libRequestMod.Request[ListResourcesForTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listResourcesForTagOption(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionOutput, 
+      /* data */ ListResourcesForTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListResourcesForTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the resources associated with the specified TagOption.
     */
-  def listResourcesForTagOption(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listResourcesForTagOption(params: ListResourcesForTagOptionInput): awsDashSdkLib.libRequestMod.Request[ListResourcesForTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listResourcesForTagOption(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionInput,
+    params: ListResourcesForTagOptionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionOutput, 
+      /* data */ ListResourcesForTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListResourcesForTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListResourcesForTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all self-service actions.
     */
-  def listServiceActions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listServiceActions(): awsDashSdkLib.libRequestMod.Request[ListServiceActionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listServiceActions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsOutput, 
+      /* data */ ListServiceActionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListServiceActionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all self-service actions.
     */
-  def listServiceActions(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listServiceActions(params: ListServiceActionsInput): awsDashSdkLib.libRequestMod.Request[ListServiceActionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listServiceActions(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsInput,
+    params: ListServiceActionsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsOutput, 
+      /* data */ ListServiceActionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListServiceActionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a paginated list of self-service actions associated with the specified Product ID and Provisioning Artifact ID.
     */
   def listServiceActionsForProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactOutput, 
+    ListServiceActionsForProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def listServiceActionsForProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactOutput, 
+      /* data */ ListServiceActionsForProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactOutput, 
+    ListServiceActionsForProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Returns a paginated list of self-service actions associated with the specified Product ID and Provisioning Artifact ID.
     */
-  def listServiceActionsForProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactOutput, 
+  def listServiceActionsForProvisioningArtifact(params: ListServiceActionsForProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
+    ListServiceActionsForProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def listServiceActionsForProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactInput,
+    params: ListServiceActionsForProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactOutput, 
+      /* data */ ListServiceActionsForProvisioningArtifactOutput, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListServiceActionsForProvisioningArtifactOutput, 
+    ListServiceActionsForProvisioningArtifactOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Lists the specified TagOptions or all TagOptions.
     */
-  def listTagOptions(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagOptions(): awsDashSdkLib.libRequestMod.Request[ListTagOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagOptions(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsOutput, 
+      /* data */ ListTagOptionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the specified TagOptions or all TagOptions.
     */
-  def listTagOptions(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listTagOptions(params: ListTagOptionsInput): awsDashSdkLib.libRequestMod.Request[ListTagOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagOptions(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsInput,
+    params: ListTagOptionsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsOutput, 
+      /* data */ ListTagOptionsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListTagOptionsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListTagOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provisions the specified product. A provisioned product is a resourced instance of a product. For example, provisioning a product based on a CloudFormation template launches a CloudFormation stack and its underlying resources. You can check the status of this request using DescribeRecord. If the request contains a tag key with an empty list of values, there is a tag conflict for that key. Do not include conflicted keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value".
     */
-  def provisionProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def provisionProduct(): awsDashSdkLib.libRequestMod.Request[ProvisionProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def provisionProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductOutput, 
+      /* data */ ProvisionProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ProvisionProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Provisions the specified product. A provisioned product is a resourced instance of a product. For example, provisioning a product based on a CloudFormation template launches a CloudFormation stack and its underlying resources. You can check the status of this request using DescribeRecord. If the request contains a tag key with an empty list of values, there is a tag conflict for that key. Do not include conflicted keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value".
     */
-  def provisionProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def provisionProduct(params: ProvisionProductInput): awsDashSdkLib.libRequestMod.Request[ProvisionProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def provisionProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductInput,
+    params: ProvisionProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductOutput, 
+      /* data */ ProvisionProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ProvisionProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ProvisionProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Rejects an offer to share the specified portfolio.
     */
-  def rejectPortfolioShare(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rejectPortfolioShare(): awsDashSdkLib.libRequestMod.Request[RejectPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rejectPortfolioShare(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareOutput, 
+      /* data */ RejectPortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RejectPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Rejects an offer to share the specified portfolio.
     */
-  def rejectPortfolioShare(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def rejectPortfolioShare(params: RejectPortfolioShareInput): awsDashSdkLib.libRequestMod.Request[RejectPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def rejectPortfolioShare(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareInput,
+    params: RejectPortfolioShareInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareOutput, 
+      /* data */ RejectPortfolioShareOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.RejectPortfolioShareOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[RejectPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the provisioned products that are available (not terminated). To use additional filtering, see SearchProvisionedProducts.
     */
-  def scanProvisionedProducts(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def scanProvisionedProducts(): awsDashSdkLib.libRequestMod.Request[ScanProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def scanProvisionedProducts(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsOutput, 
+      /* data */ ScanProvisionedProductsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ScanProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the provisioned products that are available (not terminated). To use additional filtering, see SearchProvisionedProducts.
     */
-  def scanProvisionedProducts(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def scanProvisionedProducts(params: ScanProvisionedProductsInput): awsDashSdkLib.libRequestMod.Request[ScanProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def scanProvisionedProducts(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsInput,
+    params: ScanProvisionedProductsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsOutput, 
+      /* data */ ScanProvisionedProductsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ScanProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ScanProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the products to which the caller has access.
     */
-  def searchProducts(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchProducts(): awsDashSdkLib.libRequestMod.Request[SearchProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchProducts(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsOutput, 
+      /* data */ SearchProductsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the products to which the caller has access.
     */
-  def searchProducts(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchProducts(params: SearchProductsInput): awsDashSdkLib.libRequestMod.Request[SearchProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchProducts(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsInput,
+    params: SearchProductsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsOutput, 
+      /* data */ SearchProductsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the products for the specified portfolio or all products.
     */
-  def searchProductsAsAdmin(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchProductsAsAdmin(): awsDashSdkLib.libRequestMod.Request[SearchProductsAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchProductsAsAdmin(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminOutput, 
+      /* data */ SearchProductsAsAdminOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchProductsAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the products for the specified portfolio or all products.
     */
-  def searchProductsAsAdmin(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchProductsAsAdmin(params: SearchProductsAsAdminInput): awsDashSdkLib.libRequestMod.Request[SearchProductsAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchProductsAsAdmin(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminInput,
+    params: SearchProductsAsAdminInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminOutput, 
+      /* data */ SearchProductsAsAdminOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProductsAsAdminOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchProductsAsAdminOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the provisioned products that meet the specified criteria.
     */
-  def searchProvisionedProducts(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchProvisionedProducts(): awsDashSdkLib.libRequestMod.Request[SearchProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchProvisionedProducts(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsOutput, 
+      /* data */ SearchProvisionedProductsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about the provisioned products that meet the specified criteria.
     */
-  def searchProvisionedProducts(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def searchProvisionedProducts(params: SearchProvisionedProductsInput): awsDashSdkLib.libRequestMod.Request[SearchProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def searchProvisionedProducts(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsInput,
+    params: SearchProvisionedProductsInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsOutput, 
+      /* data */ SearchProvisionedProductsOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.SearchProvisionedProductsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[SearchProvisionedProductsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Terminates the specified provisioned product. This operation does not delete any records associated with the provisioned product. You can check the status of this request using DescribeRecord.
     */
-  def terminateProvisionedProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def terminateProvisionedProduct(): awsDashSdkLib.libRequestMod.Request[TerminateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def terminateProvisionedProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductOutput, 
+      /* data */ TerminateProvisionedProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TerminateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Terminates the specified provisioned product. This operation does not delete any records associated with the provisioned product. You can check the status of this request using DescribeRecord.
     */
-  def terminateProvisionedProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def terminateProvisionedProduct(params: TerminateProvisionedProductInput): awsDashSdkLib.libRequestMod.Request[TerminateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def terminateProvisionedProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductInput,
+    params: TerminateProvisionedProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductOutput, 
+      /* data */ TerminateProvisionedProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.TerminateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TerminateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified constraint.
     */
-  def updateConstraint(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateConstraint(): awsDashSdkLib.libRequestMod.Request[UpdateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConstraint(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintOutput, 
+      /* data */ UpdateConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified constraint.
     */
-  def updateConstraint(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateConstraint(params: UpdateConstraintInput): awsDashSdkLib.libRequestMod.Request[UpdateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateConstraint(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintInput,
+    params: UpdateConstraintInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintOutput, 
+      /* data */ UpdateConstraintOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateConstraintOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateConstraintOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified portfolio. You cannot update a product that was shared with you.
     */
-  def updatePortfolio(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePortfolio(): awsDashSdkLib.libRequestMod.Request[UpdatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePortfolio(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioOutput, 
+      /* data */ UpdatePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified portfolio. You cannot update a product that was shared with you.
     */
-  def updatePortfolio(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updatePortfolio(params: UpdatePortfolioInput): awsDashSdkLib.libRequestMod.Request[UpdatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePortfolio(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioInput,
+    params: UpdatePortfolioInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioOutput, 
+      /* data */ UpdatePortfolioOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdatePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified product.
     */
-  def updateProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateProduct(): awsDashSdkLib.libRequestMod.Request[UpdateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductOutput, 
+      /* data */ UpdateProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified product.
     */
-  def updateProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateProduct(params: UpdateProductInput): awsDashSdkLib.libRequestMod.Request[UpdateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductInput,
+    params: UpdateProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductOutput, 
+      /* data */ UpdateProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Requests updates to the configuration of the specified provisioned product. If there are tags associated with the object, they cannot be updated or added. Depending on the specific updates requested, this operation can update with no interruption, with some interruption, or replace the provisioned product entirely. You can check the status of this request using DescribeRecord.
     */
-  def updateProvisionedProduct(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateProvisionedProduct(): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateProvisionedProduct(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductOutput, 
+      /* data */ UpdateProvisionedProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Requests updates to the configuration of the specified provisioned product. If there are tags associated with the object, they cannot be updated or added. Depending on the specific updates requested, this operation can update with no interruption, with some interruption, or replace the provisioned product entirely. You can check the status of this request using DescribeRecord.
     */
-  def updateProvisionedProduct(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateProvisionedProduct(params: UpdateProvisionedProductInput): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateProvisionedProduct(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductInput,
+    params: UpdateProvisionedProductInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductOutput, 
+      /* data */ UpdateProvisionedProductOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisionedProductOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified provisioning artifact (also known as a version) for the specified product. You cannot update a provisioning artifact for a product that was shared with you.
     */
-  def updateProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateProvisioningArtifact(): awsDashSdkLib.libRequestMod.Request[UpdateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateProvisioningArtifact(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactOutput, 
+      /* data */ UpdateProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified provisioning artifact (also known as a version) for the specified product. You cannot update a provisioning artifact for a product that was shared with you.
     */
-  def updateProvisioningArtifact(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateProvisioningArtifact(params: UpdateProvisioningArtifactInput): awsDashSdkLib.libRequestMod.Request[UpdateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateProvisioningArtifact(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactInput,
+    params: UpdateProvisioningArtifactInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactOutput, 
+      /* data */ UpdateProvisioningArtifactOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateProvisioningArtifactOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProvisioningArtifactOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a self-service action.
     */
-  def updateServiceAction(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateServiceAction(): awsDashSdkLib.libRequestMod.Request[UpdateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateServiceAction(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionOutput, 
+      /* data */ UpdateServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a self-service action.
     */
-  def updateServiceAction(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateServiceAction(params: UpdateServiceActionInput): awsDashSdkLib.libRequestMod.Request[UpdateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateServiceAction(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionInput,
+    params: UpdateServiceActionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionOutput, 
+      /* data */ UpdateServiceActionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified TagOption.
     */
-  def updateTagOption(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateTagOption(): awsDashSdkLib.libRequestMod.Request[UpdateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateTagOption(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionOutput, 
+      /* data */ UpdateTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified TagOption.
     */
-  def updateTagOption(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateTagOption(params: UpdateTagOptionInput): awsDashSdkLib.libRequestMod.Request[UpdateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateTagOption(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionInput,
+    params: UpdateTagOptionInput,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionOutput, 
+      /* data */ UpdateTagOptionOutput, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.UpdateTagOptionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

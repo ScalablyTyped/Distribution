@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ModalProps extends js.Object {
   var afterClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   /** 取消按钮文字*/
-  var cancelText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var cancelText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** 垂直居中 */
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -20,41 +20,33 @@ trait ModalProps extends js.Object {
   var confirmLoading: js.UndefOr[scala.Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   /** 底部内容*/
-  var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** 强制渲染 Modal*/
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
-  var getContainer: js.UndefOr[
-    js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, stdLib.HTMLElement]
-  ] = js.undefined
+  var getContainer: js.UndefOr[js.Function1[/* instance */ reactLib.reactMod.ReactInstance, stdLib.HTMLElement]] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   /** 点击蒙层是否允许关闭*/
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
-  var maskStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var maskStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
   var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   /** 确认按钮文字*/
-  var okText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var okText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** 确认按钮类型*/
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   /** 点击模态框右上角叉、取消按钮、Props.maskClosable 值为 true 时的遮罩层或键盘按下 Esc 时的回调*/
   var onCancel: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit]
   ] = js.undefined
   /** 点击确定回调*/
   var onOk: js.UndefOr[
-    js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
-      scala.Unit
-    ]
+    js.Function1[/* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], scala.Unit]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** 标题*/
-  var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | java.lang.String] = js.undefined
+  var title: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   /** 对话框是否可见*/
   var visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -69,30 +61,30 @@ object ModalProps {
   @scala.inline
   def apply(
     afterClose: () => scala.Unit = null,
-    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bodyStyle: reactLib.reactMod.CSSProperties = null,
     cancelButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
-    cancelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    cancelText: reactLib.reactMod.ReactNode = null,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
     confirmLoading: js.UndefOr[scala.Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
-    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: reactLib.reactMod.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getContainer: /* instance */ reactLib.reactMod.ReactNs.ReactInstance => stdLib.HTMLElement = null,
+    getContainer: /* instance */ reactLib.reactMod.ReactInstance => stdLib.HTMLElement = null,
     keyboard: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
-    maskStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    maskStyle: reactLib.reactMod.CSSProperties = null,
     maskTransitionName: java.lang.String = null,
     okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
-    okText: reactLib.reactMod.ReactNs.ReactNode = null,
+    okText: reactLib.reactMod.ReactNode = null,
     okType: antdLib.libButtonButtonMod.ButtonType = null,
-    onCancel: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onOk: /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onCancel: /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onOk: /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent] => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    title: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    style: reactLib.reactMod.CSSProperties = null,
+    title: reactLib.reactMod.ReactNode | java.lang.String = null,
     transitionName: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: java.lang.String | scala.Double = null,

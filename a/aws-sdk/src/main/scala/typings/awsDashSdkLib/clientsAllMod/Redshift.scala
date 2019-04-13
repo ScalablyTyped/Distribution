@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Redshift ()
-  extends awsDashSdkLib.clientsRedshiftMod.namespaced {
-  def this(options: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsRedshiftMod.^ {
+  def this(options: awsDashSdkLib.clientsRedshiftMod.ClientConfiguration) = this()
 }
 

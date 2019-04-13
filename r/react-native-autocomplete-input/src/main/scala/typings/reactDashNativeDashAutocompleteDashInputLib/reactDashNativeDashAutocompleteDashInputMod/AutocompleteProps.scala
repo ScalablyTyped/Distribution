@@ -72,21 +72,21 @@ import scala.scalajs.js.annotation._
   var renderTextInput: js.UndefOr[
     js.Function1[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /**
     * function
     * renderItem will be called to render the data objects which will be displayed in the result view below the text input.
     */
-  def renderItem(item: T): reactLib.reactMod.ReactNs.ReactNode
+  def renderItem(item: T): reactLib.reactMod.ReactNode
 }
 
 object AutocompleteProps {
   @scala.inline
   def apply[T](
     data: js.Array[T],
-    renderItem: T => reactLib.reactMod.ReactNs.ReactNode,
+    renderItem: T => reactLib.reactMod.ReactNode,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     hideResults: js.UndefOr[scala.Boolean] = js.undefined,
     inputContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
@@ -95,7 +95,7 @@ object AutocompleteProps {
     onShowResult: /* showResults */ scala.Boolean => scala.Unit = null,
     onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     renderSeparator: js.UndefOr[scala.Nothing] = js.undefined,
-    renderTextInput: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null
+    renderTextInput: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any => reactLib.reactMod.ReactNode = null
   ): AutocompleteProps[T] = {
     val __obj = js.Dynamic.literal(data = data, renderItem = js.Any.fromFunction1(renderItem))
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])

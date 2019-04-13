@@ -15,38 +15,33 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "RoleMapping")
 @js.native
-class RoleMapping ()
-  extends loopbackLib.loopbackMod.lNs.RoleMapping {
-  /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
+class RoleMapping () extends PersistedModel {
+  /** Description Text description. */
+  var description: java.lang.String = js.native
+  /** Generated ID. */
+  var id: java.lang.String = js.native
+  /** Name of the role. */
+  var name: java.lang.String = js.native
   /**
-    * loopback 3.x Remote hooks
-    * http://loopback.io/doc/en/lb3/Remote-hooks.html
-    * @param method
-    * @param backback
+    * Get the application principal
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {Application} application
     */
-  /* CompleteClass */
-  override def beforeRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def application(callback: js.Function2[/* err */ stdLib.Error, /* application */ Application, scala.Unit]): scala.Unit = js.native
+  /**
+    * Get the child role principal
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {User} childUser
+    */
+  def childRole(callback: js.Function2[/* err */ stdLib.Error, /* childUser */ User, scala.Unit]): scala.Unit = js.native
+  /**
+    * Get the user principal
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {User} user
+    */
+  def user(callback: js.Function2[/* err */ stdLib.Error, /* user */ User, scala.Unit]): scala.Unit = js.native
 }
 

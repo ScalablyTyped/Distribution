@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait ClusterBrokerClient
   extends nodeLib.eventsMod.EventEmitter {
   var authKey: js.UndefOr[jsonwebtokenLib.jsonwebtokenMod.Secret] = js.native
-  var broker: scDashBrokerLib.scbrokerMod.namespaced = js.native
+  var broker: scDashBrokerLib.scbrokerMod.^ = js.native
   var clientPoolSize: scala.Double = js.native
   var mapper: sccDashBrokerDashClientLib.sccDashBrokerDashClientMod.MappingEngine = js.native
   var mappingEngine: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibStrings.skeletonRendezvous | sccDashBrokerDashClientLib.sccDashBrokerDashClientLibStrings.simple | sccDashBrokerDashClientLib.sccDashBrokerDashClientMod.MappingEngine = js.native
-  var sccBrokerClientPools: js.Array[sccDashBrokerDashClientLib.clientDashPoolMod.namespaced] = js.native
+  var sccBrokerClientPools: js.Array[sccDashBrokerDashClientLib.clientDashPoolMod.^] = js.native
   var sccBrokerURIList: js.Array[java.lang.String] = js.native
   def getAllSubscriptions(): js.Array[java.lang.String] = js.native
   def mapChannelNameToBrokerURI(channelName: java.lang.String): java.lang.String = js.native
@@ -30,32 +30,23 @@ trait ClusterBrokerClient
   @JSName("on")
   def on_publish(
     event: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibStrings.publish,
-    listener: js.Function1[
-      /* data */ sccDashBrokerDashClientLib.clientDashPoolMod.ClientPoolNs.PublishData, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* data */ sccDashBrokerDashClientLib.clientDashPoolMod.PublishData, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_publishFail(
     event: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibStrings.publishFail,
-    listener: js.Function1[
-      /* data */ sccDashBrokerDashClientLib.clientDashPoolMod.ClientPoolNs.PublishData, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* data */ sccDashBrokerDashClientLib.clientDashPoolMod.PublishData, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_subscribe(
     event: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibStrings.subscribe,
-    listener: js.Function1[
-      /* data */ sccDashBrokerDashClientLib.clientDashPoolMod.ClientPoolNs.SubscribeData, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* data */ sccDashBrokerDashClientLib.clientDashPoolMod.SubscribeData, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_subscribeFail(
     event: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibStrings.subscribeFail,
     listener: js.Function1[
-      /* data */ sccDashBrokerDashClientLib.clientDashPoolMod.ClientPoolNs.SubscribeFailData, 
+      /* data */ sccDashBrokerDashClientLib.clientDashPoolMod.SubscribeFailData, 
       scala.Unit
     ]
   ): this.type = js.native

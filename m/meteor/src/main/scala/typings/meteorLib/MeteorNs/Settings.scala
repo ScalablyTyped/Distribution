@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 /** Settings **/
 trait Settings
   extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var public: /* import warning: ImportType.apply Failed type conversion: {[id: string] : any, [id: string] : any} */ js.Any
+  var public: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
 object Settings {
   @scala.inline
   def apply(
-    public: /* import warning: ImportType.apply Failed type conversion: {[id: string] : any, [id: string] : any} */ js.Any,
+    public: org.scalablytyped.runtime.StringDictionary[js.Any],
     StringDictionary: /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Settings = {
     val __obj = js.Dynamic.literal(public = public)

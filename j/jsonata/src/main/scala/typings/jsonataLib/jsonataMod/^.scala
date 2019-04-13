@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jsonata", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(str: java.lang.String): jsonataLib.jsonataMod.jsonataNs.Expression = js.native
+  def apply(str: java.lang.String): Expression = js.native
 }
 

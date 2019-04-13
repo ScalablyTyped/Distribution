@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Paper/Paper.PaperProps, 'classes' | never> ]: @material-ui/core.@material-ui/core/Paper/Paper.PaperProps[P]} */ trait SnackbarContentProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SnackbarContentClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var message: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var action: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var message: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object SnackbarContentProps {
   @scala.inline
   def apply(
-    action: reactLib.reactMod.ReactNs.ReactNode = null,
+    action: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SnackbarContentClassKey]
     ] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    message: reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    message: reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): SnackbarContentProps = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])

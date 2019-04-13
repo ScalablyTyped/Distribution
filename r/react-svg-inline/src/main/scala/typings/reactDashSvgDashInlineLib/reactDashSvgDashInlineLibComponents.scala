@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashSvgDashInlineLibComponents {
   @scala.inline
-  def ReactDashSvgDashInline: reactLib.reactMod.ReactNs.ComponentType[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.svgInlineNs.SVGInlineProps] = js.constructorOf[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.svgInlineNs.SVGInlineProps]]
+  def ReactDashSvgDashInline: reactLib.reactMod.ComponentType[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.SVGInlineProps] = js.constructorOf[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.SVGInlineProps]]
   @scala.inline
-  def SVGInlineProps: reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.svgInlineNs.SVGInlineProps.type = reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.svgInlineNs.SVGInlineProps
-  type SVGInlineProps = reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.svgInlineNs.SVGInlineProps
+  def SVGInlineProps: reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.SVGInlineProps.type = reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.SVGInlineProps
+  type SVGInlineProps = reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.SVGInlineProps
 }
 

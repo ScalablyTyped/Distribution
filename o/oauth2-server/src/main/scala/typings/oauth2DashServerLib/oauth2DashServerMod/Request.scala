@@ -14,21 +14,22 @@ import scala.scalajs.js.annotation._
   * Instantiates Request using the supplied options.
   *
   */
-class Request ()
-  extends oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.Request {
-  def this(options: expressLib.expressMod.eNs.Request) = this()
+class Request () extends js.Object {
+  def this(options: expressLib.expressMod.Request) = this()
   def this(options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  var body: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+  var method: js.UndefOr[java.lang.String] = js.native
+  var query: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   /**
     * Returns the specified HTTP header field. The match is case-insensitive.
     *
     */
-  /* CompleteClass */
-  override def get(field: java.lang.String): js.UndefOr[_] = js.native
+  def get(field: java.lang.String): js.UndefOr[_] = js.native
   /**
     * Checks if the request’s Content-Type HTTP header matches any of the given MIME types.
     *
     */
-  /* CompleteClass */
-  override def is(types: js.Array[java.lang.String]): java.lang.String | oauth2DashServerLib.oauth2DashServerLibNumbers.`false` = js.native
+  def is(types: js.Array[java.lang.String]): java.lang.String | oauth2DashServerLib.oauth2DashServerLibNumbers.`false` = js.native
 }
 

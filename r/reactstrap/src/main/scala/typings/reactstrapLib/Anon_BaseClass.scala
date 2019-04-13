@@ -13,7 +13,7 @@ trait Anon_BaseClass extends js.Object {
   var in: js.UndefOr[scala.Boolean] = js.undefined
   var onEnter: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onLeave: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var transitionAppear: js.UndefOr[scala.Boolean] = js.undefined
   var transitionAppearTimeout: js.UndefOr[scala.Double] = js.undefined
   var transitionEnter: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,7 +32,7 @@ object Anon_BaseClass {
     in: js.UndefOr[scala.Boolean] = js.undefined,
     onEnter: () => scala.Unit = null,
     onLeave: () => scala.Unit = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     transitionAppear: js.UndefOr[scala.Boolean] = js.undefined,
     transitionAppearTimeout: scala.Int | scala.Double = null,
     transitionEnter: js.UndefOr[scala.Boolean] = js.undefined,

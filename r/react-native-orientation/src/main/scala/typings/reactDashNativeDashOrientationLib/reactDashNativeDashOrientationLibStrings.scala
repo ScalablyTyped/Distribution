@@ -8,30 +8,30 @@ import scala.scalajs.js.annotation._
 object reactDashNativeDashOrientationLibStrings {
   @js.native
   sealed trait LANDSCAPE
-    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.orientation
   
   @js.native
   sealed trait `LANDSCAPE-LEFT`
-    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.specificOrientation
   
   @js.native
   sealed trait `LANDSCAPE-RIGHT`
-    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.specificOrientation
   
   @js.native
   sealed trait PORTRAIT
-    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
-       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.orientation
+       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.specificOrientation
   
   @js.native
   sealed trait PORTRAITUPSIDEDOWN
-    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
-       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.orientation
+       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.specificOrientation
   
   @js.native
   sealed trait UNKNOWN
-    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
-       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.orientation
+       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.specificOrientation
   
   @scala.inline
   def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]

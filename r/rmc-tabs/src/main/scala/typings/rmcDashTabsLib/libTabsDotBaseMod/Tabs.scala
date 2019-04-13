@@ -14,7 +14,7 @@ abstract class Tabs[P /* <: rmcDashTabsLib.libPropsTypeMod.PropsType */, S /* <:
   /** compatible for different between react and preact in `setState`. */
   var nextCurrentTab: js.Any = js.native
   var prevCurrentTab: scala.Double = js.native
-  var tabCache: org.scalablytyped.runtime.NumberDictionary[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  var tabCache: org.scalablytyped.runtime.NumberDictionary[reactLib.reactMod.ReactNode] = js.native
   @JSName("componentDidMount")
   def componentDidMount_MTabs(): scala.Unit = js.native
   @JSName("componentDidUpdate")
@@ -61,7 +61,7 @@ abstract class Tabs[P /* <: rmcDashTabsLib.libPropsTypeMod.PropsType */, S /* <:
   def getSubElements(): js.Function2[
     /* defaultPrefix */ js.UndefOr[java.lang.String], 
     /* allPrefix */ js.UndefOr[java.lang.String], 
-    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]
+    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNode]
   ] = js.native
   def getTabBarBaseProps(): rmcDashTabsLib.Anon_ActiveTab[S, P] = js.native
   def getTabIndex(props: P): scala.Double = js.native
@@ -76,7 +76,7 @@ abstract class Tabs[P /* <: rmcDashTabsLib.libPropsTypeMod.PropsType */, S /* <:
   def isTabVertical_vertical(direction: rmcDashTabsLib.rmcDashTabsLibStrings.vertical): scala.Boolean = js.native
   def renderTabBar(
     tabBarProps: js.Any,
-    DefaultTabBar: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+    DefaultTabBar: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]
   ): js.UndefOr[js.Object | scala.Null] = js.native
   def shouldRenderTab(idx: scala.Double): scala.Boolean = js.native
   def tabClickGoToTab(index: scala.Double): scala.Unit = js.native

@@ -14,7 +14,7 @@ object taskNs extends js.Object {
     def this(run: fpDashTsLib.libFunctionMod.Lazy[js.Promise[A]]) = this()
   }
   
-  val URI: /* Task */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.Task = js.native
   val task: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
   val taskSeq: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
   def delay[A](millis: scala.Double, a: A): fpDashTsLib.libTaskMod.Task[A] = js.native

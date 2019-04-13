@@ -22,7 +22,7 @@ trait Anon_AutoReconnect extends js.Object {
     js.Function2[
       /* message */ java.lang.String, 
       /* language */ java.lang.String, 
-      bluebirdLib.bluebirdMod.namespaced[java.lang.String]
+      bluebirdLib.bluebirdMod.^[java.lang.String]
     ]
   ] = js.undefined
   /** Alias for `readyTimeout` */
@@ -51,7 +51,7 @@ trait Anon_AutoReconnect extends js.Object {
       /* instructions */ java.lang.String, 
       /* instructionsLang */ java.lang.String, 
       /* prompts */ js.Array[Anon_Echo], 
-      (js.Array[java.lang.String | bluebirdLib.bluebirdMod.namespaced[java.lang.String]]) | bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]]
+      (js.Array[java.lang.String | bluebirdLib.bluebirdMod.^[java.lang.String]]) | bluebirdLib.bluebirdMod.^[js.Array[java.lang.String]]
     ]
   ] = js.undefined
   /** Alias for `username` */
@@ -62,12 +62,12 @@ object Anon_AutoReconnect {
   @scala.inline
   def apply(
     autoReconnect: js.UndefOr[scala.Boolean] = js.undefined,
-    changePassword: (/* message */ java.lang.String, /* language */ java.lang.String) => bluebirdLib.bluebirdMod.namespaced[java.lang.String] = null,
+    changePassword: (/* message */ java.lang.String, /* language */ java.lang.String) => bluebirdLib.bluebirdMod.^[java.lang.String] = null,
     connTimeout: scala.Int | scala.Double = null,
     keepalive: scala.Int | scala.Double = null,
     pasvTimeout: scala.Int | scala.Double = null,
     privateKeyFile: java.lang.String = null,
-    tryKeyboard: (/* name */ java.lang.String, /* instructions */ java.lang.String, /* instructionsLang */ java.lang.String, /* prompts */ js.Array[Anon_Echo]) => (js.Array[java.lang.String | bluebirdLib.bluebirdMod.namespaced[java.lang.String]]) | bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = null,
+    tryKeyboard: (/* name */ java.lang.String, /* instructions */ java.lang.String, /* instructionsLang */ java.lang.String, /* prompts */ js.Array[Anon_Echo]) => (js.Array[java.lang.String | bluebirdLib.bluebirdMod.^[java.lang.String]]) | bluebirdLib.bluebirdMod.^[js.Array[java.lang.String]] = null,
     user: java.lang.String = null
   ): Anon_AutoReconnect = {
     val __obj = js.Dynamic.literal()

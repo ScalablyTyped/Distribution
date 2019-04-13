@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("zipkin-transport-http", "HttpLogger")
 @js.native
 class HttpLogger protected ()
-  extends zipkinLib.zipkinMod.zipkinNs.Logger {
+  extends zipkinLib.zipkinMod.Logger {
   def this(options: Options) = this()
-  def logSpan(span: zipkinLib.zipkinMod.modelNs.Span): scala.Unit = js.native
   /* CompleteClass */
-  override def logSpan(span: zipkinLib.zipkinMod.zipkinNs.modelNs.Span): scala.Unit = js.native
+  override def logSpan(span: zipkinLib.zipkinMod.modelNs.Span): scala.Unit = js.native
 }
 

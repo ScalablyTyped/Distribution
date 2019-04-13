@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FetchProps[T] extends FetchRequestProps {
   var afterFetch: js.UndefOr[js.Function1[/* args */ FetchResponse[T], scala.Unit]] = js.undefined
-  var children: js.UndefOr[
-    js.Function1[/* renderProps */ RenderProps[T], reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var children: js.UndefOr[js.Function1[/* renderProps */ RenderProps[T], reactLib.reactMod.ReactNode]] = js.undefined
   var responseType: js.UndefOr[ResponseType] = js.undefined
   var transformData: js.UndefOr[js.Function1[/* data */ js.Any, T]] = js.undefined
 }
@@ -21,7 +19,7 @@ object FetchProps {
     afterFetch: /* args */ FetchResponse[T] => scala.Unit = null,
     body: stdLib.BodyInit = null,
     cache: stdLib.RequestCache = null,
-    children: /* renderProps */ RenderProps[T] => reactLib.reactMod.ReactNs.ReactNode = null,
+    children: /* renderProps */ RenderProps[T] => reactLib.reactMod.ReactNode = null,
     credentials: stdLib.RequestCredentials = null,
     headers: stdLib.HeadersInit = null,
     integrity: java.lang.String = null,

@@ -17,7 +17,7 @@ trait ShellConfig extends js.Object {
   /**
   	 * Passed to glob.sync() instead of the default options ({}).
   	 */
-  var globOptions: globLib.globMod.GNs.IOptions
+  var globOptions: globLib.globMod.IOptions
   /**
   	 * Suppresses all command output if true, except for echo() calls. Default is false.
   	 */
@@ -36,7 +36,7 @@ object ShellConfig {
   @scala.inline
   def apply(
     fatal: scala.Boolean,
-    globOptions: globLib.globMod.GNs.IOptions,
+    globOptions: globLib.globMod.IOptions,
     reset: () => scala.Unit,
     silent: scala.Boolean,
     verbose: scala.Boolean,

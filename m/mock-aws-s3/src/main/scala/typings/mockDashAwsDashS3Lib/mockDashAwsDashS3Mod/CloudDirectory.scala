@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudDirectory ()
   extends awsDashSdkLib.awsDashSdkMod.CloudDirectory {
-  def this(options: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsClouddirectoryMod.ClientConfiguration) = this()
 }
 

@@ -16,16 +16,16 @@ object exorcistMod extends js.Object {
     * @param [base] base path for calculating relative source paths (default: use absolute paths)
     * @param [errorOnMissing] when truthy, causes 'error' to be emitted instead of 'missing-map' if no map was found in the stream (default: falsey)
     */
-  def apply(file: java.lang.String): throughLib.throughMod.throughNs.ThroughStream = js.native
-  def apply(file: java.lang.String, url: java.lang.String): throughLib.throughMod.throughNs.ThroughStream = js.native
-  def apply(file: java.lang.String, url: java.lang.String, root: java.lang.String): throughLib.throughMod.throughNs.ThroughStream = js.native
-  def apply(file: java.lang.String, url: java.lang.String, root: java.lang.String, base: java.lang.String): throughLib.throughMod.throughNs.ThroughStream = js.native
+  def apply(file: java.lang.String): throughLib.throughMod.ThroughStream = js.native
+  def apply(file: java.lang.String, url: java.lang.String): throughLib.throughMod.ThroughStream = js.native
+  def apply(file: java.lang.String, url: java.lang.String, root: java.lang.String): throughLib.throughMod.ThroughStream = js.native
+  def apply(file: java.lang.String, url: java.lang.String, root: java.lang.String, base: java.lang.String): throughLib.throughMod.ThroughStream = js.native
   def apply(
     file: java.lang.String,
     url: java.lang.String,
     root: java.lang.String,
     base: java.lang.String,
     errorOnMissing: scala.Boolean
-  ): throughLib.throughMod.throughNs.ThroughStream = js.native
+  ): throughLib.throughMod.ThroughStream = js.native
 }
 

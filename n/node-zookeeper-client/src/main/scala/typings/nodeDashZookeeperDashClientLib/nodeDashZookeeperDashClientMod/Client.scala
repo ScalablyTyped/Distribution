@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Client
-  extends nodeLib.eventsMod.namespaced {
+  extends nodeLib.eventsMod.^ {
   def addAuthInfo(scheme: java.lang.String, auth: nodeLib.Buffer): scala.Unit = js.native
   def addListener(event: java.lang.String, cb: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IRootScopeService
-  extends angularLib.angularMod.angularNs.IRootScopeService {
+  extends angularLib.angularMod.IRootScopeService {
   /**
     * The current logged in user and it's data. it is null if the user is not logged in. A reactive data source.
     */

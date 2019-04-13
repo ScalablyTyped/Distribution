@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TypeScript")
 @js.native
 object ^ extends js.Object {
-  var DiagnosticCode: typescriptDashServicesLib.Anon_01isinaccessible = js.native
   var Environment: IEnvironment = js.native
   var LocalizedDiagnosticMessages: IIndexable[js.Any] = js.native
   var astTranslationTime: scala.Double = js.native

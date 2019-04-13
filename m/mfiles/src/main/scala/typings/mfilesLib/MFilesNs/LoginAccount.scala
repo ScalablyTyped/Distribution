@@ -43,3 +43,8 @@ class LoginAccount ()
   ): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.LoginAccount")
+@js.native
+object LoginAccount
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ILoginAccount]
+

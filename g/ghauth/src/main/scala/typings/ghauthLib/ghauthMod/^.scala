@@ -9,12 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    authOptions: ghauthLib.ghauthMod.ghauthNs.AuthOptions,
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* tokenData */ ghauthLib.ghauthMod.ghauthNs.TokenData, 
-      scala.Unit
-    ]
+    authOptions: AuthOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* tokenData */ TokenData, scala.Unit]
   ): scala.Unit = js.native
 }
 

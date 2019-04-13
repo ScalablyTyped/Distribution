@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libConfigDashProviderMod {
-  type IReactComponent[P] = reactLib.reactMod.ReactNs.StatelessComponent[P] | (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.ClassicComponentClass[P]
+  type IReactComponent[P] = reactLib.reactMod.StatelessComponent[P] | (reactLib.reactMod.ComponentClass[P, reactLib.reactMod.ComponentState]) | reactLib.reactMod.ClassicComponentClass[P]
 }

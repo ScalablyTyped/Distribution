@@ -28,7 +28,7 @@ trait Root extends js.Object {
   def compile(schema: SchemaLike): Schema = js.native
   def concat[T](schema: T): T = js.native
   def date(): DateSchema = js.native
-  def defaults(fn: DefaultsFunction): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @hapi/joi.@hapi/joi.Root */ js.Object = js.native
+  def defaults(fn: DefaultsFunction): Root = js.native
   def describe(schema: Schema): Description = js.native
   def description(desc: java.lang.String): Schema = js.native
   def disallow(value: js.Any, values: js.Any*): Schema = js.native

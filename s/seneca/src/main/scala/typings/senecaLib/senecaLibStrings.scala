@@ -8,47 +8,47 @@ import scala.scalajs.js.annotation._
 object senecaLibStrings {
   @js.native
   sealed trait all
-    extends senecaLib.senecaMod.SNSNs.LogSpec
+    extends senecaLib.senecaMod.LogSpec
   
   @js.native
   sealed trait any
-    extends senecaLib.senecaMod.SNSNs.LogSpec
+    extends senecaLib.senecaMod.LogSpec
   
   @js.native
   sealed trait `debug+`
-    extends senecaLib.senecaMod.SNSNs.LogLevel
+    extends senecaLib.senecaMod.LogLevel
   
   @js.native
   sealed trait `info+`
-    extends senecaLib.senecaMod.SNSNs.LogLevel
+    extends senecaLib.senecaMod.LogLevel
   
   @js.native
   sealed trait none
-    extends senecaLib.senecaMod.SNSNs.LogLevel
+    extends senecaLib.senecaMod.LogLevel
   
   @js.native
   sealed trait print
-    extends senecaLib.senecaMod.SNSNs.LogSpec
+    extends senecaLib.senecaMod.LogSpec
   
   @js.native
   sealed trait quiet
-    extends senecaLib.senecaMod.SNSNs.LogSpec
+    extends senecaLib.senecaMod.LogSpec
   
   @js.native
   sealed trait silent
-    extends senecaLib.senecaMod.SNSNs.LogSpec
+    extends senecaLib.senecaMod.LogSpec
   
   @js.native
   sealed trait standard
-    extends senecaLib.senecaMod.SNSNs.LogSpec
+    extends senecaLib.senecaMod.LogSpec
   
   @js.native
   sealed trait test
-    extends senecaLib.senecaMod.SNSNs.LogSpec
+    extends senecaLib.senecaMod.LogSpec
   
   @js.native
   sealed trait `warn+`
-    extends senecaLib.senecaMod.SNSNs.LogLevel
+    extends senecaLib.senecaMod.LogLevel
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

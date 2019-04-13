@@ -13,7 +13,7 @@ trait StrictMessageProps extends js.Object {
     scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top
   ] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** A message can be formatted to be different colors. */
@@ -55,7 +55,7 @@ trait StrictMessageProps extends js.Object {
     */
   var onDismiss: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ MessageProps, 
       scala.Unit
     ]
@@ -77,7 +77,7 @@ object StrictMessageProps {
   def apply(
     as: js.Any = null,
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
@@ -94,7 +94,7 @@ object StrictMessageProps {
       semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps
     ] = null,
     negative: js.UndefOr[scala.Boolean] = js.undefined,
-    onDismiss: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ MessageProps) => scala.Unit = null,
+    onDismiss: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ MessageProps) => scala.Unit = null,
     positive: js.UndefOr[scala.Boolean] = js.undefined,
     size: MessageSizeProp = null,
     success: js.UndefOr[scala.Boolean] = js.undefined,

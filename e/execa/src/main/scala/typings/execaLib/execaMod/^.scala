@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("execa", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[execaLib.execaMod.execaNs.ExecaStatic]
+  extends org.scalablytyped.runtime.TopLevel[ExecaStatic]
 

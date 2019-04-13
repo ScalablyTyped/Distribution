@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ComponentProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[js.Any]
+  extends reactLib.reactMod.HTMLProps[js.Any]
      with /**
   * 渲染编辑回调
   */
@@ -63,7 +63,7 @@ object ComponentProps {
   def apply(
     gaeaName: java.lang.String,
     gaeaUniqueKey: java.lang.String,
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[js.Any] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[js.Any] = null,
     StringDictionary: /**
     * 渲染编辑回调
     */

@@ -6,53 +6,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScrollAreaProps
-  extends reactLib.reactMod.ReactNs.Props[ScrollArea] {
+  extends reactLib.reactMod.Props[ScrollArea] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
-  var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var contentWindow: js.UndefOr[js.Any] = js.undefined
   var focusableTabIndex: js.UndefOr[scala.Double] = js.undefined
   var horizontal: js.UndefOr[scala.Boolean] = js.undefined
-  var horizontalContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var horizontalScrollbarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var horizontalContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var horizontalScrollbarStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var minScrollSize: js.UndefOr[scala.Double] = js.undefined
   var onScroll: js.UndefOr[js.Function1[/* value */ reactDashScrollbarLib.Anon_ContainerHeight, scala.Unit]] = js.undefined
   var ownerDocument: js.UndefOr[js.Any] = js.undefined
   var smoothScrolling: js.UndefOr[scala.Boolean] = js.undefined
   var speed: js.UndefOr[scala.Double] = js.undefined
   var stopScrollPropagation: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var swapWheelAxes: js.UndefOr[scala.Boolean] = js.undefined
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
-  var verticalContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var verticalScrollbarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var verticalContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var verticalScrollbarStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object ScrollAreaProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     contentClassName: java.lang.String = null,
-    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentStyle: reactLib.reactMod.CSSProperties = null,
     contentWindow: js.Any = null,
     focusableTabIndex: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
-    horizontalContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    horizontalScrollbarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    horizontalContainerStyle: reactLib.reactMod.CSSProperties = null,
+    horizontalScrollbarStyle: reactLib.reactMod.CSSProperties = null,
+    key: reactLib.reactMod.Key = null,
     minScrollSize: scala.Int | scala.Double = null,
     onScroll: /* value */ reactDashScrollbarLib.Anon_ContainerHeight => scala.Unit = null,
     ownerDocument: js.Any = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ScrollArea] = null,
+    ref: reactLib.reactMod.LegacyRef[ScrollArea] = null,
     smoothScrolling: js.UndefOr[scala.Boolean] = js.undefined,
     speed: scala.Int | scala.Double = null,
     stopScrollPropagation: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     swapWheelAxes: js.UndefOr[scala.Boolean] = js.undefined,
     vertical: js.UndefOr[scala.Boolean] = js.undefined,
-    verticalContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    verticalScrollbarStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    verticalContainerStyle: reactLib.reactMod.CSSProperties = null,
+    verticalScrollbarStyle: reactLib.reactMod.CSSProperties = null
   ): ScrollAreaProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

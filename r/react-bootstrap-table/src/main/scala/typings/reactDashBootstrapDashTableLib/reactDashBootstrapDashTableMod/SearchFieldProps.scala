@@ -17,7 +17,7 @@ trait SearchFieldProps extends js.Object {
   /**
   	 * callback funciton to call when a key is released
   	 */
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit]] = js.undefined
+  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.KeyboardEvent[_], scala.Unit]] = js.undefined
   /**
   	 * Placeholder text for the search field
   	 */
@@ -29,7 +29,7 @@ object SearchFieldProps {
   def apply(
     className: java.lang.String = null,
     defaultValue: java.lang.String = null,
-    onKeyUp: /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[_] => scala.Unit = null,
+    onKeyUp: /* e */ reactLib.reactMod.KeyboardEvent[_] => scala.Unit = null,
     placeholder: java.lang.String = null
   ): SearchFieldProps = {
     val __obj = js.Dynamic.literal()

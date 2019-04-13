@@ -9,12 +9,12 @@ trait Anon_HoverBarStates extends js.Object {
   /**
     * Options for the hovered series
     */
-  var hover: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.BarStates] = js.undefined
+  var hover: js.UndefOr[highchartsLib.highchartsMod.BarStates] = js.undefined
 }
 
 object Anon_HoverBarStates {
   @scala.inline
-  def apply(hover: highchartsLib.highchartsMod.HighchartsNs.BarStates = null): Anon_HoverBarStates = {
+  def apply(hover: highchartsLib.highchartsMod.BarStates = null): Anon_HoverBarStates = {
     val __obj = js.Dynamic.literal()
     if (hover != null) __obj.updateDynamic("hover")(hover)
     __obj.asInstanceOf[Anon_HoverBarStates]

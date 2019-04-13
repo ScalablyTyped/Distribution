@@ -38,7 +38,7 @@ trait PickerProps extends js.Object {
   var onClick: js.UndefOr[
     js.Function2[
       /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -64,7 +64,7 @@ trait PickerProps extends js.Object {
     emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
   ] = js.undefined
   var skinEmoji: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -89,7 +89,7 @@ object PickerProps {
     native: js.UndefOr[scala.Boolean] = js.undefined,
     notFound: () => reactLib.reactMod.Component[js.Object, js.Object, _] = null,
     notFoundEmoji: java.lang.String = null,
-    onClick: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onClick: (/* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     onSelect: /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData => scala.Unit = null,
     onSkinChange: /* skin */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin => scala.Unit = null,
     perLine: scala.Int | scala.Double = null,
@@ -100,7 +100,7 @@ object PickerProps {
     showSkinTones: js.UndefOr[scala.Boolean] = js.undefined,
     skin: emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin = null,
     skinEmoji: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     title: java.lang.String = null
   ): PickerProps = {
     val __obj = js.Dynamic.literal()

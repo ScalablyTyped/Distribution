@@ -16,9 +16,9 @@ class PanoramaVerticalTwoTone protected ()
 @JSImport("@material-ui/icons", "PanoramaVerticalTwoTone")
 @js.native
 class PanoramaVerticalTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

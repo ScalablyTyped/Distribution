@@ -12,3 +12,10 @@ trait Target extends js.Object {
   def apply(args: js.Any*): scala.Unit = js.native
 }
 
+@JSGlobal("target")
+@js.native
+object target
+  extends /* s */ org.scalablytyped.runtime.StringDictionary[Target] {
+  var all: js.UndefOr[shelljsLib.makeMod.Global.Target] = js.native
+}
+

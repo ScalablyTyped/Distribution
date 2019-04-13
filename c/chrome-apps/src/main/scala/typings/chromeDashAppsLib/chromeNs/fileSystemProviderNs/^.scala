@@ -8,24 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.fileSystemProvider")
 @js.native
 object ^ extends js.Object {
-  /** Type of a change detected on the observed directory. */
-  val ChangeType: chromeDashAppsLib.Anon_CHANGEDDELETED = js.native
-  /**
-    * List of common actions. 'SHARE' is for sharing files with others.
-    * 'SAVE_FOR_OFFLINE' for pinning (saving for offline access).
-    * 'OFFLINE_NOT_NECESSARY' for notifying that the file doesn't
-    * need to be stored for offline access anymore.
-    * Used by onGetActionsRequested and onExecuteActionRequested.
-    */
-  val CommonActionId: chromeDashAppsLib.Anon_OFFLINENOTNECESSARY = js.native
-  /** Mode of opening a file. Used by onOpenFileRequested. */
-  val OpenFileMode: chromeDashAppsLib.Anon_READ = js.native
-  /**
-    * Error codes used by providing extensions in response to requests
-    * as well as in case of errors when calling methods of the API.
-    * For success, 'OK' must be used.
-    * */
-  val ProviderError: chromeDashAppsLib.Anon_ABORT = js.native
   /**
     * Raised when aborting an operation with operationRequestId is requested.
     * The operation executed with operationRequestId must be immediately stopped

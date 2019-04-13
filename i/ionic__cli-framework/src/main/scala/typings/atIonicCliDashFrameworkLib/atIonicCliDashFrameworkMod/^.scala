@@ -11,10 +11,10 @@ object ^ extends js.Object {
   val CommandMapDefault: js.Symbol = js.native
   val DEFAULT_COLORS: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   val DEFAULT_LOGGER_HANDLERS: stdLib.ReadonlySet[atIonicCliDashFrameworkLib.libLoggerMod.StreamHandler] = js.native
-  val ERROR_COMMAND_NOT_FOUND: /* ERR_ICF_COMMAND_NOT_FOUND */ java.lang.String = js.native
-  val ERROR_INPUT_VALIDATION: /* ERR_ICF_INPUT_VALIDATION */ java.lang.String = js.native
-  val ERROR_IPC_MODULE_INACCESSIBLE: /* ERR_ICF_IPC_MODULE_INACCESSIBLE */ java.lang.String = js.native
-  val ERROR_IPC_UNKNOWN_PROCEDURE: /* ERR_ICF_IPC_UNKNOWN_PROCEDURE */ java.lang.String = js.native
+  val ERROR_COMMAND_NOT_FOUND: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.ERR_ICF_COMMAND_NOT_FOUND = js.native
+  val ERROR_INPUT_VALIDATION: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.ERR_ICF_INPUT_VALIDATION = js.native
+  val ERROR_IPC_MODULE_INACCESSIBLE: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.ERR_ICF_IPC_MODULE_INACCESSIBLE = js.native
+  val ERROR_IPC_UNKNOWN_PROCEDURE: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.ERR_ICF_IPC_UNKNOWN_PROCEDURE = js.native
   val EXECUTOR_OPS: atIonicCliDashFrameworkLib.libExecutorMod.ExecutorOperations = js.native
   val ICON_FAILURE: java.lang.String = js.native
   val ICON_SUCCESS: java.lang.String = js.native
@@ -24,7 +24,6 @@ object ^ extends js.Object {
   ] = js.native
   val NO_COLORS: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   val logger: atIonicCliDashFrameworkLib.libLoggerMod.Logger = js.native
-  val parseArgs: atIonicCliDashFrameworkLib.Anon_Args = js.native
   val validators: atIonicCliDashFrameworkLib.definitionsMod.Validators = js.native
   def contains(
     values: js.Array[js.UndefOr[java.lang.String]],
@@ -38,7 +37,7 @@ object ^ extends js.Object {
   ] = js.native
   def createPrefixedFormatter(prefix: java.lang.String): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def createPrefixedFormatter(prefix: js.Function0[java.lang.String]): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
-  def createPromptChoiceSeparator(): inquirerLib.inquirerMod.inquirerNs.objectsNs.Separator = js.native
+  def createPromptChoiceSeparator(): inquirerLib.inquirerMod.objectsNs.Separator = js.native
   def createPromptModule(): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
   def createPromptModule(hasInteractiveOnFallback: atIonicCliDashFrameworkLib.libPromptsMod.CreatePromptModuleOptions): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
   def createTaggedFormatter(): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
@@ -87,15 +86,15 @@ object ^ extends js.Object {
     pargv: js.Array[java.lang.String],
     hasIncludeSeparated: atIonicCliDashFrameworkLib.Anon_IncludeSeparated
   ): js.Array[java.lang.String] = js.native
-  def unparseArgs(parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs): js.Array[java.lang.String] = js.native
+  def unparseArgs(parsedArgs: minimistLib.minimistMod.ParsedArgs): js.Array[java.lang.String] = js.native
   def unparseArgs(
-    parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    parsedArgs: minimistLib.minimistMod.ParsedArgs,
     hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: atIonicCliDashFrameworkLib.libOptionsMod.UnparseArgsOptions
   ): js.Array[java.lang.String] = js.native
   def unparseArgs(
-    parsedArgs: minimistLib.minimistMod.minimistNs.ParsedArgs,
+    parsedArgs: minimistLib.minimistMod.ParsedArgs,
     hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: atIonicCliDashFrameworkLib.libOptionsMod.UnparseArgsOptions,
-    parseArgsOptions: minimistLib.minimistMod.minimistNs.Opts
+    parseArgsOptions: minimistLib.minimistMod.Opts
   ): js.Array[java.lang.String] = js.native
   def validate(
     input: java.lang.String,

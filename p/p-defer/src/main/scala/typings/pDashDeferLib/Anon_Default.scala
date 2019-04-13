@@ -23,6 +23,6 @@ trait Anon_Default extends js.Object {
   	})();
   	```
   	*/
-  def apply[ValueType](): pDashDeferLib.pDashDeferMod.pDeferNs.DeferredPromise[ValueType] = js.native
+  def apply[ValueType](): pDashDeferLib.pDashDeferMod.DeferredPromise[ValueType] = js.native
 }
 

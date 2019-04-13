@@ -62,3 +62,9 @@ org.scalablytyped.runtime.Instantiable0[Runtime] {
   def registerTopic(t: Topic): scala.Unit = js.native
 }
 
+@JSGlobal("DDS.runtime")
+@js.native
+object runtime extends js.Object {
+  var Runtime: vortexDashWebDashClientLib.DDSNs.Runtime = js.native
+}
+

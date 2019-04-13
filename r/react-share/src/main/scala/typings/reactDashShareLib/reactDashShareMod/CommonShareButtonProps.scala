@@ -9,7 +9,7 @@ trait CommonShareButtonProps extends js.Object {
   /**
     * An object to pass any additional properties, such as `aria-*` attributes.
     */
-  var additionalProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
+  var additionalProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   /**
     *  Takes a function that returns a Promise to be fulfilled before calling
     * `onClick`. If you do not return promise, `onClick` is called immediately.
@@ -21,7 +21,7 @@ trait CommonShareButtonProps extends js.Object {
     * Style when button is disabled
     * @default { opacity: 0.6 }
     */
-  var disabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.StyleHTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
+  var disabledStyle: js.UndefOr[reactLib.reactMod.StyleHTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   /**
     * Takes a function to be called after closing share dialog.
     */
@@ -38,10 +38,10 @@ object CommonShareButtonProps {
   @scala.inline
   def apply(
     url: java.lang.String,
-    additionalProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    additionalProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     beforeOnClick: () => js.Promise[scala.Unit] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    disabledStyle: reactLib.reactMod.ReactNs.StyleHTMLAttributes[stdLib.HTMLDivElement] = null,
+    disabledStyle: reactLib.reactMod.StyleHTMLAttributes[stdLib.HTMLDivElement] = null,
     onShareWindowClose: () => scala.Unit = null,
     windowHeight: scala.Int | scala.Double = null,
     windowWidth: scala.Int | scala.Double = null

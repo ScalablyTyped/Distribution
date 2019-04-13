@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
       EventAttributes with (stdLib.Partial[
         PresentationAttributes[scala.Double | java.lang.String, scala.Double | java.lang.String]
       ]) with rechartsLib.Anon_Cx
-    ]) | reactLib.reactMod.ReactNs.ReactElement[_]
+    ]) | reactLib.reactMod.ReactElement[_]
   ] = js.undefined
   var x: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var xAxis: js.UndefOr[ReferenceDotAxisConfiguration] = js.undefined
@@ -51,7 +51,7 @@ object ReferenceDotProps {
       EventAttributes with (stdLib.Partial[
         PresentationAttributes[scala.Double | java.lang.String, scala.Double | java.lang.String]
       ]) with rechartsLib.Anon_Cx
-    ]) | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    ]) | reactLib.reactMod.ReactElement[_] = null,
     x: scala.Double | java.lang.String = null,
     xAxis: ReferenceDotAxisConfiguration = null,
     xAxisId: java.lang.String | scala.Double = null,

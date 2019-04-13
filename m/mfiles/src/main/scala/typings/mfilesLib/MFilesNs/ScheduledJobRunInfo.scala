@@ -29,3 +29,8 @@ class ScheduledJobRunInfo ()
   override val StepCompletionPercent: scala.Double = js.native
 }
 
+@JSGlobal("MFiles.ScheduledJobRunInfo")
+@js.native
+object ScheduledJobRunInfo
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IScheduledJobRunInfo]
+

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScaleInProps
-  extends reactLib.reactMod.ReactNs.Props[ScaleIn] {
-  var childStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  extends reactLib.reactMod.Props[ScaleIn] {
+  var childStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var enterDelay: js.UndefOr[scala.Double] = js.undefined
   var maxScale: js.UndefOr[scala.Double] = js.undefined
   var minScale: js.UndefOr[scala.Double] = js.undefined
@@ -16,13 +16,13 @@ trait ScaleInProps
 object ScaleInProps {
   @scala.inline
   def apply(
-    childStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    childStyle: reactLib.reactMod.CSSProperties = null,
+    children: reactLib.reactMod.ReactNode = null,
     enterDelay: scala.Int | scala.Double = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ScaleIn] = null
+    ref: reactLib.reactMod.LegacyRef[ScaleIn] = null
   ): ScaleInProps = {
     val __obj = js.Dynamic.literal()
     if (childStyle != null) __obj.updateDynamic("childStyle")(childStyle)

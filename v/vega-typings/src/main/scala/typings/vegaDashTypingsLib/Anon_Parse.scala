@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Parse
-  extends vegaDashTypingsLib.typesSpecDataMod._Format {
+  extends vegaDashTypingsLib.typesSpecDataMod.Format {
   var parse: vegaDashTypingsLib.typesSpecDataMod.Parse
 }
 

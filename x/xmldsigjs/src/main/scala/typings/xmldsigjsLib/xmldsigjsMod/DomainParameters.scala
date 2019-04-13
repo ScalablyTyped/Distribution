@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("xmldsigjs", "DomainParameters")
 @js.native
 class DomainParameters ()
-  extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DomainParameters
+  extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
+  var NamedCurve: xmldsigjsLib.xmldsigjsMod.NamedCurve = js.native
+}
 

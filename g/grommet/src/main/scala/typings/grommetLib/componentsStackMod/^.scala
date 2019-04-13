@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Stack", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Stack: reactLib.reactMod.ReactNs.ComponentClass[
-    StackProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Stack: reactLib.reactMod.ComponentClass[
+    StackProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Glue ()
-  extends awsDashSdkLib.clientsGlueMod.namespaced {
-  def this(options: awsDashSdkLib.clientsGlueMod.GlueNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsGlueMod.^ {
+  def this(options: awsDashSdkLib.clientsGlueMod.ClientConfiguration) = this()
 }
 

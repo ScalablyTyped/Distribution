@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactWidgetsCommonProps[C]
-  extends reactLib.reactMod.ReactNs.Props[C] {
+  extends reactLib.reactMod.Props[C] {
   /**
     * Disable the widget, if an Array of values is passed in only those values will be disabled.
     * @default false
@@ -34,13 +34,13 @@ trait ReactWidgetsCommonProps[C]
 object ReactWidgetsCommonProps {
   @scala.inline
   def apply[C](
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     disabled: scala.Boolean | js.Array[_] = null,
     id: java.lang.String = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[C] = null
+    ref: reactLib.reactMod.LegacyRef[C] = null
   ): ReactWidgetsCommonProps[C] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

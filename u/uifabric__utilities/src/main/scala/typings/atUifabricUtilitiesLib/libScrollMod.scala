@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/scroll", JSImport.Namespace)
 @js.native
 object libScrollMod extends js.Object {
-  val DATA_IS_SCROLLABLE_ATTRIBUTE: /* data-is-scrollable */ java.lang.String = js.native
+  val DATA_IS_SCROLLABLE_ATTRIBUTE: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-is-scrollable` = js.native
   def allowScrollOnElement(element: scala.Null, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def allowScrollOnElement(element: stdLib.HTMLElement, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def disableBodyScroll(): scala.Unit = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableProps
-  extends reactLib.reactMod.ReactNs.ClassAttributes[Table] {
+  extends reactLib.reactMod.ClassAttributes[Table] {
   /**
     * The number of rows outside the viewport to prerender. Defaults to roughly
     * half of the number of visible rows.
@@ -294,7 +294,7 @@ object TableProps {
     height: scala.Int | scala.Double = null,
     isColumnReordering: js.UndefOr[scala.Boolean] = js.undefined,
     isColumnResizing: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     keyboardPageEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     keyboardScrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     maxHeight: scala.Int | scala.Double = null,
@@ -317,7 +317,7 @@ object TableProps {
     overflowX: fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.hidden | fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.auto = null,
     overflowY: fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.hidden | fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.auto = null,
     ownerHeight: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Table] = null,
+    ref: reactLib.reactMod.LegacyRef[Table] = null,
     rowClassNameGetter: /* index */ scala.Double => java.lang.String = null,
     rowExpanded: ElementOrFunc[RowProps] = null,
     rowHeightGetter: /* index */ scala.Double => scala.Double = null,

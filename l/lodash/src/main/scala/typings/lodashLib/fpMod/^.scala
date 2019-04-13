@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lodash/fp", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[lodashLib.fpMod.underscoreNs.LoDashFp]
+  extends org.scalablytyped.runtime.TopLevel[LoDashFp]
 

@@ -6,17 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait BottomNavigationProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait BottomNavigationProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BottomNavigationClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var children: reactLib.reactMod.ReactNs.ReactNode
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[BottomNavigationProps]] = js.undefined
+  var children: reactLib.reactMod.ReactNode
+  var component: js.UndefOr[reactLib.reactMod.ReactType[BottomNavigationProps]] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
-      /* value */ js.Any, 
-      scala.Unit
-    ]
+    js.Function2[/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ js.Any, scala.Unit]
   ] = js.undefined
   var showLabels: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
@@ -25,16 +21,16 @@ import scala.scalajs.js.annotation._
 object BottomNavigationProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     className: java.lang.String = null,
     classes: stdLib.Partial[
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BottomNavigationClassKey]
     ] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[BottomNavigationProps] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], /* value */ js.Any) => scala.Unit = null,
+    component: reactLib.reactMod.ReactType[BottomNavigationProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    onChange: (/* event */ reactLib.reactMod.ChangeEvent[js.Object], /* value */ js.Any) => scala.Unit = null,
     showLabels: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: js.Any = null
   ): BottomNavigationProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])

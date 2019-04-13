@@ -25,7 +25,7 @@ trait IModalOptions extends js.Object {
   var placement: js.UndefOr[java.lang.String] = js.undefined
   var prefixEvent: js.UndefOr[java.lang.String] = js.undefined
   var resolve: js.UndefOr[js.Any] = js.undefined
-  var scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
+  var scope: js.UndefOr[angularLib.angularMod.IScope] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -54,7 +54,7 @@ object IModalOptions {
     placement: java.lang.String = null,
     prefixEvent: java.lang.String = null,
     resolve: js.Any = null,
-    scope: angularLib.angularMod.angularNs.IScope = null,
+    scope: angularLib.angularMod.IScope = null,
     show: js.UndefOr[scala.Boolean] = js.undefined,
     template: java.lang.String = null,
     templateUrl: java.lang.String = null,

@@ -16,11 +16,7 @@ object ^ extends js.Object {
     /* args */ debounceDashPromiseLib.ArgumentsType[T], 
     js.Promise[stdLib.ReturnType[T]] | stdLib.ReturnType[T]
   ] = js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](
-    func: T,
-    wait: scala.Double,
-    options: debounceDashPromiseLib.debounceDashPromiseMod.debounceNs.DebounceOptions
-  ): js.Function1[
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T, wait: scala.Double, options: DebounceOptions): js.Function1[
     /* args */ debounceDashPromiseLib.ArgumentsType[T], 
     js.Promise[stdLib.ReturnType[T]] | stdLib.ReturnType[T]
   ] = js.native

@@ -14,8 +14,8 @@ object ^ extends js.Object {
   ]) = js.native
   val SourceDropConnectedInternalMosaicWindow: js.Any = js.native
   def MosaicWindowFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](
-    props: MosaicWindowProps[T] with reactLib.reactMod.ReactNs.Attributes,
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement[MosaicWindowProps[T]] = js.native
+    props: MosaicWindowProps[T] with reactLib.reactMod.Attributes,
+    children: reactLib.reactMod.ReactNode*
+  ): reactLib.reactMod.ReactElement[MosaicWindowProps[T]] = js.native
 }
 

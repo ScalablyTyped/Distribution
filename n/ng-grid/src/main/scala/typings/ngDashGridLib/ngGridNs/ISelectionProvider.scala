@@ -11,7 +11,7 @@ trait ISelectionProvider extends js.Object {
   var lastClickedRow: js.Any = js.native
   var multi: scala.Boolean = js.native
   @JSName("pKeyParser")
-  var pKeyParser_Original: angularLib.angularMod.angularNs.ICompiledExpression = js.native
+  var pKeyParser_Original: angularLib.angularMod.ICompiledExpression = js.native
   var selectedIndex: scala.Double = js.native
   var selectedItems: js.Array[_] = js.native
   def ChangeSelection(rowItem: js.Any, event: js.Any): scala.Unit = js.native

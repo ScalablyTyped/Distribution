@@ -13,40 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Role")
 @js.native
-class Role ()
-  extends loopbackLib.loopbackMod.lNs.Role {
-  /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
-  /**
-    * loopback 3.x Remote hooks
-    * http://loopback.io/doc/en/lb3/Remote-hooks.html
-    * @param method
-    * @param backback
-    */
-  /* CompleteClass */
-  override def beforeRemote(
-    method: java.lang.String,
-    callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-}
+class Role () extends PersistedModel
 
 /* static members */
 @JSImport("loopback", "Role")
@@ -110,7 +77,7 @@ object Role extends js.Object {
     role: java.lang.String,
     resolver: js.Function3[
       /* role */ java.lang.String, 
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
+      /* ctx */ loopbackLib.loopbackMod.Context, 
       /* callback */ js.UndefOr[js.Function2[/* err */ stdLib.Error, /* resolved */ scala.Boolean, scala.Unit]], 
       js.Promise[scala.Boolean] | scala.Unit
     ]

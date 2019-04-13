@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ng-table/src/core/data/ngTableDefaultGetData", "NgTableDefaultGetDataProvider")
 @js.native
 class NgTableDefaultGetDataProvider ()
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   /* CompleteClass */
   @JSName("$get")
   override var $get: js.Any = js.native
@@ -26,7 +26,7 @@ class NgTableDefaultGetDataProvider ()
   var sortingFilterName: java.lang.String = js.native
   @JSName("$get")
   def $get_MNgTableDefaultGetDataProvider(
-    $filter: angularLib.angularMod.angularNs.IFilterService,
+    $filter: angularLib.angularMod.IFilterService,
     ngTableEventsChannel: ngDashTableLib.srcCoreNgTableEventsChannelMod.NgTableEventsChannel
   ): IDefaultGetData[_] = js.native
 }

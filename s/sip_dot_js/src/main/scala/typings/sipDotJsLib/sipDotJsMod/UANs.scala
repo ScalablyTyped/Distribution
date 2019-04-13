@@ -16,6 +16,5 @@ object UANs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[sipDotJsLib.typesUaMod.UANs.DtmfType with java.lang.String] = js.native
   }
   
-  type DtmfType = sipDotJsLib.typesUaMod.UANs.DtmfType
 }
 

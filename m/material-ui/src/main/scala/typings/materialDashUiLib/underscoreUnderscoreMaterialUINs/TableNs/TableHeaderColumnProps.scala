@@ -14,15 +14,15 @@ trait TableHeaderColumnProps extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]
   ] = js.undefined
   var rowSpan: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
-  var tooltipStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tooltipStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object TableHeaderColumnProps {
@@ -32,11 +32,11 @@ object TableHeaderColumnProps {
     colSpan: scala.Int | scala.Double = null,
     columnNumber: scala.Int | scala.Double = null,
     key: java.lang.String = null,
-    onClick: (/* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
+    onClick: (/* e */ reactLib.reactMod.MouseEvent[js.Object, reactLib.NativeMouseEvent], /* column */ scala.Double) => scala.Unit = null,
     rowSpan: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tooltip: java.lang.String = null,
-    tooltipStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+    tooltipStyle: reactLib.reactMod.CSSProperties = null
   ): TableHeaderColumnProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

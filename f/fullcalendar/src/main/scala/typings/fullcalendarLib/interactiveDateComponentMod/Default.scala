@@ -31,7 +31,7 @@ abstract class Default ()
   def canStartDrag(seg: js.Any, ev: js.Any): js.Any = js.native
   def canStartResize(seg: js.Any, ev: js.Any): scala.Boolean = js.native
   def canStartSelection(seg: js.Any, ev: js.Any): js.Any = js.native
-  def diffDates(a: js.Any, b: js.Any): momentLib.momentMod.momentNs.Duration = js.native
+  def diffDates(a: js.Any, b: js.Any): momentLib.momentMod.Duration = js.native
   def endInteractions(): scala.Unit = js.native
   def isEventDefDraggable(eventDef: js.Any): js.Any = js.native
   def isEventDefGenerallyEditable(eventDef: js.Any): js.Any = js.native

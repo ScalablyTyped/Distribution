@@ -18,7 +18,7 @@ trait VideoProps extends js.Object {
   var posterSource: js.UndefOr[URISource | RequireSource] = js.undefined
   var progressUpdateIntervalMillis: js.UndefOr[scala.Double] = js.undefined
   var rate: js.UndefOr[scala.Double] = js.undefined
-  var ref: js.UndefOr[reactLib.reactMod.ReactNs.Ref[PlaybackObject]] = js.undefined
+  var ref: js.UndefOr[reactLib.reactMod.Ref[PlaybackObject]] = js.undefined
   var resizeMode: js.UndefOr[ResizeModeContain | ResizeModeCover | ResizeModeStretch] = js.undefined
   var rotation: js.UndefOr[scala.Double] = js.undefined
   var scaleX: js.UndefOr[scala.Double] = js.undefined
@@ -52,7 +52,7 @@ object VideoProps {
     posterSource: URISource | RequireSource = null,
     progressUpdateIntervalMillis: scala.Int | scala.Double = null,
     rate: scala.Int | scala.Double = null,
-    ref: reactLib.reactMod.ReactNs.Ref[PlaybackObject] = null,
+    ref: reactLib.reactMod.Ref[PlaybackObject] = null,
     resizeMode: ResizeModeContain | ResizeModeCover | ResizeModeStretch = null,
     rotation: scala.Int | scala.Double = null,
     scaleX: scala.Int | scala.Double = null,

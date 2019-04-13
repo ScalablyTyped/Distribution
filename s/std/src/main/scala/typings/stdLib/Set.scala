@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Set[T] extends js.Object {
   /** Iterates over values in the set. */
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[T]] = js.native
   val size: scala.Double = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
   def add(value: T): this.type = js.native
   def clear(): scala.Unit = js.native

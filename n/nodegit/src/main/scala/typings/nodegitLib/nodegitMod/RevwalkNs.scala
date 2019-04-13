@@ -18,6 +18,5 @@ object RevwalkNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[nodegitLib.revDashWalkMod.RevwalkNs.SORT with scala.Double] = js.native
   }
   
-  type SORT = nodegitLib.revDashWalkMod.RevwalkNs.SORT
 }
 

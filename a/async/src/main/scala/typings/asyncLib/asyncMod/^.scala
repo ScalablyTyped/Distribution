@@ -8,41 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("async", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val all: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val allLimit: asyncLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val allSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val any: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val anyLimit: asyncLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val anySeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val concatSeries: asyncLib.Anon_ArrCallbackIteratorArray = js.native
-  val detectSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val eachOf: asyncLib.Anon_Callback = js.native
-  val eachOfLimit: asyncLib.Anon_CallbackIterator = js.native
-  val eachOfSeries: asyncLib.Anon_Callback = js.native
-  val eachSeries: asyncLib.Anon_Arr = js.native
-  val everySeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
-  val filterSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val find: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val findLimit: asyncLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIterator = js.native
-  val findSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val foldl: asyncLib.Anon_ArrCallbackIteratorMemo = js.native
-  val foldr: asyncLib.Anon_ArrCallbackIteratorMemo = js.native
-  val forEach: asyncLib.Anon_Arr = js.native
-  val forEachLimit: asyncLib.Anon_ArrCallback = js.native
-  val forEachOfSeries: asyncLib.Anon_Callback = js.native
-  val forEachSeries: asyncLib.Anon_Arr = js.native
-  val inject: asyncLib.Anon_ArrCallbackIteratorMemo = js.native
-  val mapSeries: asyncLib.Anon_ArrCallbackIterator = js.native
-  val mapValuesSeries: asyncLib.Anon_CallbackIteratee = js.native
-  val reduceRight: asyncLib.Anon_ArrCallbackIteratorMemo = js.native
-  val reject: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val rejectLimit: asyncLib.Anon_ArrCallbackIteratorLimit = js.native
-  val rejectSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val select: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
-  val selectLimit: asyncLib.Anon_ArrCallbackIteratorLimit = js.native
-  val selectSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
   val setImmediate: js.Function2[/* callback */ js.Function, /* repeated */ js.Any, scala.Unit] = js.native
-  val someSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   @JSName("apply")
   def apply[E](fn: js.Function, args: js.Any*): AsyncFunction[_, E] = js.native
   def applyEach(fns: js.Array[js.Function], argsAndCallback: js.Any*): scala.Unit = js.native

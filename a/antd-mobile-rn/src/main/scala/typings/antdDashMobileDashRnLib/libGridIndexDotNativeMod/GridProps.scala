@@ -25,7 +25,7 @@ object GridProps {
     isCarousel: js.UndefOr[scala.Boolean] = js.undefined,
     itemStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     onClick: (/* dataItem */ js.UndefOr[antdDashMobileDashRnLib.libGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => scala.Unit = null,
-    renderItem: (/* dataItem */ js.UndefOr[antdDashMobileDashRnLib.libGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    renderItem: (/* dataItem */ js.UndefOr[antdDashMobileDashRnLib.libGridPropsTypeMod.DataItem], /* itemIndex */ scala.Double) => reactLib.reactMod.ReactElement[_] = null,
     styles: js.Any = null
   ): GridProps = {
     val __obj = js.Dynamic.literal()

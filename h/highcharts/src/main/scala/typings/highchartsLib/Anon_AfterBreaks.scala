@@ -17,9 +17,7 @@ trait Anon_AfterBreaks extends js.Object {
     * The this keyword refers to the {@link AxisObject|Axis} object.
     * @since 2.3
     */
-  var afterSetExtremes: js.UndefOr[
-    js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit]
-  ] = js.undefined
+  var afterSetExtremes: js.UndefOr[js.Function1[/* event */ highchartsLib.highchartsMod.AxisEvent, scala.Unit]] = js.undefined
   /**
     * An event fired when a break from this axis occurs on a point.
     * The this keyword refers to the {@link AxisObject|Axis} object.
@@ -37,18 +35,16 @@ trait Anon_AfterBreaks extends js.Object {
     * The this keyword refers to the {@link AxisObject|Axis} object.
     * @since 1.2.0
     */
-  var setExtremes: js.UndefOr[
-    js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit]
-  ] = js.undefined
+  var setExtremes: js.UndefOr[js.Function1[/* event */ highchartsLib.highchartsMod.AxisEvent, scala.Unit]] = js.undefined
 }
 
 object Anon_AfterBreaks {
   @scala.inline
   def apply(
     afterBreaks: /* event */ stdLib.Event => scala.Unit = null,
-    afterSetExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null,
+    afterSetExtremes: /* event */ highchartsLib.highchartsMod.AxisEvent => scala.Unit = null,
     pointBreak: /* event */ stdLib.Event => scala.Unit = null,
-    setExtremes: /* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent => scala.Unit = null
+    setExtremes: /* event */ highchartsLib.highchartsMod.AxisEvent => scala.Unit = null
   ): Anon_AfterBreaks = {
     val __obj = js.Dynamic.literal()
     if (afterBreaks != null) __obj.updateDynamic("afterBreaks")(js.Any.fromFunction1(afterBreaks))

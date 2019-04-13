@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ojColorPaletteEventMap
   extends atOracleOraclejetLib.ojeditablevalueMod.editableValueEventMap[
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
+      atOracleOraclejetLib.ojcolorMod.^, 
       ojColorPaletteSettableProperties, 
-      atOracleOraclejetLib.ojcolorMod.namespaced, 
-      atOracleOraclejetLib.ojcolorMod.namespaced
+      atOracleOraclejetLib.ojcolorMod.^, 
+      atOracleOraclejetLib.ojcolorMod.^
     ] {
   var labelDisplayChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off
@@ -90,7 +90,7 @@ object ojColorPaletteEventMap {
     loadend: stdLib.ProgressEvent,
     loadstart: stdLib.Event,
     lostpointercapture: stdLib.PointerEvent,
-    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]],
+    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]],
     mousedown: stdLib.MouseEvent,
     mouseenter: stdLib.MouseEvent,
     mouseleave: stdLib.MouseEvent,
@@ -144,7 +144,7 @@ object ojColorPaletteEventMap {
     validChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown
     ],
-    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.namespaced],
+    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojcolorMod.^],
     volumechange: stdLib.Event,
     waiting: stdLib.Event,
     wheel: stdLib.WheelEvent

@@ -10,6 +10,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("bluebird", "Disposer")
 @js.native
-class Disposer[R] ()
-  extends bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R]
+class Disposer[R] () extends js.Object
 

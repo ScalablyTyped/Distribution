@@ -9,7 +9,7 @@ trait CommonApiProps extends js.Object {
   /**
     * The style used for the active dots.
     */
-  var activeDotStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var activeDotStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Additional CSS class for the root DOM node
     *  @default ''
@@ -23,7 +23,7 @@ trait CommonApiProps extends js.Object {
   /**
     * The style used for the dots.
     */
-  var dotStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var dotStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * When the step value is greater than 1, you can set the dots to true if you want to render the slider with dots.
     *  @default false
@@ -32,13 +32,11 @@ trait CommonApiProps extends js.Object {
   /**
     * A handle generator which could be used to customized handle.
     */
-  var handle: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var handle: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   /**
     * The style used for handle. (both for slider(Object) and range(Array of Object), the array will be used for mutli handle follow element order)
     */
-  var handleStyle: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties
-  ] = js.undefined
+  var handleStyle: js.UndefOr[js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * If the value is true, it means a continuous value interval, otherwise, it is a independent value.
     *  @default true
@@ -63,7 +61,7 @@ trait CommonApiProps extends js.Object {
   /**
     * The style used for the track base color.
     */
-  var railStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var railStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * Value to be added or subtracted on each step the slider makes. Must be greater than zero, and max - min should be evenly divisible by the step value.
     *  @default 1
@@ -72,9 +70,7 @@ trait CommonApiProps extends js.Object {
   /**
     * The style used for the background and container. (both for slider(Object) and range(Array of Object), the array will be used for mutli handle follow element order)
     */
-  var style: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties
-  ] = js.undefined
+  var style: js.UndefOr[js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * @deprecated in version ^6.0.0. Use rc-tooltip
     * Tooltip formatter
@@ -88,9 +84,7 @@ trait CommonApiProps extends js.Object {
   /**
     * The style used for track. (both for slider(Object) and range(Array of Object), the array will be used for mutli track follow element order)
     */
-  var trackStyle: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties
-  ] = js.undefined
+  var trackStyle: js.UndefOr[js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties] = js.undefined
   /**
     * If vertical is true, the slider will be vertical.
     * @default false
@@ -101,23 +95,23 @@ trait CommonApiProps extends js.Object {
 object CommonApiProps {
   @scala.inline
   def apply(
-    activeDotStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    activeDotStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    dotStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    dotStyle: reactLib.reactMod.CSSProperties = null,
     dots: js.UndefOr[scala.Boolean] = js.undefined,
-    handle: /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
-    handleStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    handle: /* props */ js.Any => reactLib.reactMod.ReactNode = null,
+    handleStyle: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     included: js.UndefOr[scala.Boolean] = js.undefined,
     marks: Marks = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
-    railStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    railStyle: reactLib.reactMod.CSSProperties = null,
     step: scala.Int | scala.Double = null,
-    style: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     tipFormatter: /* value */ js.Any => js.UndefOr[_] = null,
     tipTransitionName: java.lang.String = null,
-    trackStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    trackStyle: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): CommonApiProps = {
     val __obj = js.Dynamic.literal()

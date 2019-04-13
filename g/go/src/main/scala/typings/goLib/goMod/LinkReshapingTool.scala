@@ -17,20 +17,53 @@ import scala.scalajs.js.annotation._
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.linkReshapingTool, which you can modify.
   */
-class LinkReshapingTool ()
-  extends goLib.goMod.goNs.LinkReshapingTool
+class LinkReshapingTool () extends Tool {
+  /**This read-only property returns the Link that is being routed manually.*/
+  var adornedLink: Link = js.native
+  /**This read-only property returns the GraphObject that is the tool handle being dragged by the user.*/
+  var handle: GraphObject = js.native
+  /**Gets or sets a small GraphObject that is copied as a reshape handle at each movable point in the selected link's route.*/
+  var handleArchetype: GraphObject = js.native
+  /**Gets or sets a small GraphObject that is copied as a resegment handle at each mid point in the selected Link's route.*/
+  var midHandleArchetype: GraphObject = js.native
+  /**This read-only property returns the Point that was the original location of the handle that is being dragged to reshape the Link.*/
+  var originalPoint: Point = js.native
+  /**This read-only property returns the List of Points that was the original route of the Link that is being reshaped.*/
+  var originalPoints: List[Point] = js.native
+  /**
+    * This is called by .doMouseMove and .doMouseUp to limit the input point before calling .reshape.
+    * @param {Point} p
+    */
+  def computeReshape(p: Point): Point = js.native
+  /**
+    * Get the permitted reshaping behavior for a particular reshape handle.
+    * @param {GraphObject} obj a reshape handle in the "LinkReshaping" Adornment.
+    */
+  def getReshapingBehavior(obj: GraphObject): EnumValue = js.native
+  /**
+    * Change the route of the .adornedLink by moving the point corresponding to the current .handle to be at the given Point.
+    * @param {Point} newPoint
+    */
+  def reshape(newPoint: Point): scala.Unit = js.native
+  /**
+    * Set the permitted reshaping behavior for a particular reshape handle.
+    * @param {GraphObject} obj a reshape handle in the "LinkReshaping" Adornment.
+    * @param {EnumValue} behavior one of LinkReshapingTool.All, .Vertical, .Horizontal, or .None
+    */
+  def setReshapingBehavior(obj: GraphObject, behavior: EnumValue): scala.Unit = js.native
+}
 
 /* static members */
 @JSImport("go", "LinkReshapingTool")
 @js.native
 object LinkReshapingTool extends js.Object {
   /**Allow dragging in any direction.*/
-  var All: goLib.goMod.goNs.EnumValue = js.native
+  var All: goLib.goMod.EnumValue = js.native
   /**Allow only horizontal (left-and-right) dragging.*/
-  var Horizontal: goLib.goMod.goNs.EnumValue = js.native
+  var Horizontal: goLib.goMod.EnumValue = js.native
   /**Disallow dragging.*/
-  var None: goLib.goMod.goNs.EnumValue = js.native
+  var None: goLib.goMod.EnumValue = js.native
   /**Allow only vertical (up-and-down) dragging.*/
-  var Vertical: goLib.goMod.goNs.EnumValue = js.native
+  var Vertical: goLib.goMod.EnumValue = js.native
 }
 

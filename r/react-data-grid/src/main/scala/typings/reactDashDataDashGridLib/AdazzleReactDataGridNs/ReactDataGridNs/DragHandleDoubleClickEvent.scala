@@ -13,7 +13,7 @@ trait DragHandleDoubleClickEvent[T] extends js.Object {
   /**
     * The double click event.
     */
-  var e: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]
+  var e: reactLib.reactMod.SyntheticEvent[_, reactLib.Event]
   /**
     * The column where the double click occurred.
     */
@@ -31,7 +31,7 @@ trait DragHandleDoubleClickEvent[T] extends js.Object {
 object DragHandleDoubleClickEvent {
   @scala.inline
   def apply[T](
-    e: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event],
+    e: reactLib.reactMod.SyntheticEvent[_, reactLib.Event],
     idx: scala.Double,
     rowData: T,
     rowIdx: scala.Double

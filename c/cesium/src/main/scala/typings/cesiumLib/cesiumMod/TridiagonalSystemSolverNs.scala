@@ -12,7 +12,7 @@ object TridiagonalSystemSolverNs extends js.Object {
     diagonal: js.Array[scala.Double],
     lower: js.Array[scala.Double],
     upper: js.Array[scala.Double],
-    right: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3]
-  ): js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3] = js.native
+    right: js.Array[cesiumLib.cesiumMod.Cartesian3]
+  ): js.Array[cesiumLib.cesiumMod.Cartesian3] = js.native
 }
 

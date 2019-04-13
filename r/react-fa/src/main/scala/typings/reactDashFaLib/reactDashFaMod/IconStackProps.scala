@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IconStackProps extends SizeOverrideHTMLProps[IconStack] {
   @JSName("children")
   var children_IconStackProps: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[IconProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[IconProps]]
+    reactLib.reactMod.ReactElement[IconProps] | js.Array[reactLib.reactMod.ReactElement[IconProps]]
   ] = js.undefined
   @JSName("size")
   var size_IconStackProps: js.UndefOr[IconSize] = js.undefined
@@ -18,7 +18,7 @@ object IconStackProps {
   @scala.inline
   def apply(
     SizeOverrideHTMLProps: SizeOverrideHTMLProps[IconStack] = null,
-    children: reactLib.reactMod.ReactNs.ReactElement[IconProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[IconProps]] = null,
+    children: reactLib.reactMod.ReactElement[IconProps] | js.Array[reactLib.reactMod.ReactElement[IconProps]] = null,
     size: IconSize = null
   ): IconStackProps = {
     val __obj = js.Dynamic.literal()

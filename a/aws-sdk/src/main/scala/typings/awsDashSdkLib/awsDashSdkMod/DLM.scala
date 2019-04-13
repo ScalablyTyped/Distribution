@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DLM ()
   extends awsDashSdkLib.clientsAllMod.DLM {
-  def this(options: awsDashSdkLib.clientsDlmMod.DLMNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDlmMod.ClientConfiguration) = this()
 }
 

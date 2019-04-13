@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/Generated", "ContextTagKeys")
 @js.native
 class ContextTagKeys ()
-  extends applicationinsightsLib.outDeclarationsContractsGeneratedContextTagKeysMod.namespaced
+  extends applicationinsightsLib.outDeclarationsContractsGeneratedContextTagKeysMod.^
 

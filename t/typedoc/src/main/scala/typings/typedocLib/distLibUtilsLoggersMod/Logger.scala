@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Logger () extends js.Object {
   var errorCount: scala.Double = js.native
-  def diagnostic(diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic): scala.Unit = js.native
-  def diagnostics(diagnostics: js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic]): scala.Unit = js.native
+  def diagnostic(diagnostic: typescriptLib.typescriptMod.Diagnostic): scala.Unit = js.native
+  def diagnostics(diagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]): scala.Unit = js.native
   def error(text: java.lang.String, args: java.lang.String*): scala.Unit = js.native
   def hasErrors(): scala.Boolean = js.native
   def log(message: java.lang.String): scala.Unit = js.native

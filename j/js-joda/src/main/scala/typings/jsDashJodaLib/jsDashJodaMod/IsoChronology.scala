@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "IsoChronology")
 @js.native
-abstract class IsoChronology protected ()
-  extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.IsoChronology {
-  /* CompleteClass */
-  override def equals(other: js.Any): scala.Boolean = js.native
-  /* CompleteClass */
-  override def resolveDate(fieldValues: js.Any, resolverStyle: js.Any): js.Any = js.native
+abstract class IsoChronology protected () extends js.Object {
+  def equals(other: js.Any): scala.Boolean = js.native
+  def resolveDate(fieldValues: js.Any, resolverStyle: js.Any): js.Any = js.native
 }
 
 /* static members */

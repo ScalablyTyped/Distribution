@@ -6,32 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AlphaBrightness extends js.Object {
-  var alpha: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined
-  var brightness: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined
-  var contrast: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined
-  var gamma: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined
-  var hue: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined
+  var alpha: js.UndefOr[scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc] = js.undefined
+  var brightness: js.UndefOr[scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc] = js.undefined
+  var contrast: js.UndefOr[scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc] = js.undefined
+  var gamma: js.UndefOr[scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc] = js.undefined
+  var hue: js.UndefOr[scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc] = js.undefined
   var maximumAnisotropy: js.UndefOr[scala.Double] = js.undefined
   var maximumTerrainLevel: js.UndefOr[scala.Double] = js.undefined
   var minimumTerrainLevel: js.UndefOr[scala.Double] = js.undefined
-  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
-  var saturation: js.UndefOr[scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.Rectangle] = js.undefined
+  var saturation: js.UndefOr[scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Anon_AlphaBrightness {
   @scala.inline
   def apply(
-    alpha: scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc = null,
-    brightness: scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc = null,
-    contrast: scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc = null,
-    gamma: scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc = null,
-    hue: scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc = null,
+    alpha: scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc = null,
+    brightness: scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc = null,
+    contrast: scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc = null,
+    gamma: scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc = null,
+    hue: scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc = null,
     maximumAnisotropy: scala.Int | scala.Double = null,
     maximumTerrainLevel: scala.Int | scala.Double = null,
     minimumTerrainLevel: scala.Int | scala.Double = null,
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null,
-    saturation: scala.Double | cesiumLib.cesiumMod.CesiumNs.ImageryLayerNs.ValueFunc = null,
+    rectangle: cesiumLib.cesiumMod.Rectangle = null,
+    saturation: scala.Double | cesiumLib.cesiumMod.ImageryLayerNs.ValueFunc = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AlphaBrightness = {
     val __obj = js.Dynamic.literal()

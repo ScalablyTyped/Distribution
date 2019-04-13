@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashTimeagoLibComponents {
   @scala.inline
-  def ReactDashTimeago: reactLib.reactMod.ReactNs.ComponentType[reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.ReactTimeagoProps] = js.constructorOf[reactDashTimeagoLib.reactDashTimeagoMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.ReactTimeagoProps]]
+  def ReactDashTimeago: reactLib.reactMod.ComponentType[reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoProps] = js.constructorOf[reactDashTimeagoLib.reactDashTimeagoMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoProps]]
   @scala.inline
-  def ReactTimeagoProps: reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.ReactTimeagoProps.type = reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.ReactTimeagoProps
-  type ReactTimeagoProps = reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.ReactTimeagoProps
+  def ReactTimeagoProps: reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoProps.type = reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoProps
+  type ReactTimeagoProps = reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoProps
 }
 

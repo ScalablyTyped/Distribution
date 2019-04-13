@@ -265,7 +265,7 @@ object policiesNs extends js.Object {
             ]
     
     trait TimestampGenerator extends js.Object {
-      def next(client: cassandraDashDriverLib.cassandraDashDriverMod.Client): scala.Null | scala.Double | longLib.longMod.namespaced
+      def next(client: cassandraDashDriverLib.cassandraDashDriverMod.Client): scala.Null | scala.Double | longLib.longMod.^ 
     }
     
     var MonotonicTimestampGenerator: MonotonicTimestampGeneratorStatic = js.native

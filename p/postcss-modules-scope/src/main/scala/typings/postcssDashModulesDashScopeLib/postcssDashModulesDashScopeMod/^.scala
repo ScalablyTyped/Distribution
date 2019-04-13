@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("postcss-modules-scope", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[postcssDashModulesDashScopeLib.postcssDashModulesDashScopeMod.scopeNs.Scope]
+  extends org.scalablytyped.runtime.TopLevel[Scope]
 

@@ -19,12 +19,12 @@ trait Gitignore extends js.Object {
   	})();
   	```
   	*/
-  def apply(): js.Promise[globbyLib.globbyMod.globbyNs.FilterFunction] = js.native
-  def apply(options: globbyLib.globbyMod.globbyNs.GitignoreOptions): js.Promise[globbyLib.globbyMod.globbyNs.FilterFunction] = js.native
+  def apply(): js.Promise[FilterFunction] = js.native
+  def apply(options: GitignoreOptions): js.Promise[FilterFunction] = js.native
   /**
   	@returns A filter function indicating whether a given path is ignored via a `.gitignore` file.
   	*/
-  def sync(): globbyLib.globbyMod.globbyNs.FilterFunction = js.native
-  def sync(options: globbyLib.globbyMod.globbyNs.GitignoreOptions): globbyLib.globbyMod.globbyNs.FilterFunction = js.native
+  def sync(): FilterFunction = js.native
+  def sync(options: GitignoreOptions): FilterFunction = js.native
 }
 

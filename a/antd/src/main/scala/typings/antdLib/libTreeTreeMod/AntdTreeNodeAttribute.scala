@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AntdTreeNodeAttribute extends js.Object {
   var checked: scala.Boolean
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var className: java.lang.String
   var disableCheckbox: scala.Boolean
   var disabled: scala.Boolean
@@ -22,14 +22,14 @@ trait AntdTreeNodeAttribute extends js.Object {
   var prefixCls: java.lang.String
   var selectable: scala.Boolean
   var selected: scala.Boolean
-  var title: reactLib.reactMod.ReactNs.ReactNode
+  var title: reactLib.reactMod.ReactNode
 }
 
 object AntdTreeNodeAttribute {
   @scala.inline
   def apply(
     checked: scala.Boolean,
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     className: java.lang.String,
     disableCheckbox: scala.Boolean,
     disabled: scala.Boolean,
@@ -44,7 +44,7 @@ object AntdTreeNodeAttribute {
     prefixCls: java.lang.String,
     selectable: scala.Boolean,
     selected: scala.Boolean,
-    title: reactLib.reactMod.ReactNs.ReactNode
+    title: reactLib.reactMod.ReactNode
   ): AntdTreeNodeAttribute = {
     val __obj = js.Dynamic.literal(checked = checked, children = children.asInstanceOf[js.Any], className = className, disableCheckbox = disableCheckbox, disabled = disabled, dragOver = dragOver, dragOverGapBottom = dragOverGapBottom, dragOverGapTop = dragOverGapTop, eventKey = eventKey, expanded = expanded, halfChecked = halfChecked, isLeaf = isLeaf, pos = pos, prefixCls = prefixCls, selectable = selectable, selected = selected, title = title.asInstanceOf[js.Any])
   

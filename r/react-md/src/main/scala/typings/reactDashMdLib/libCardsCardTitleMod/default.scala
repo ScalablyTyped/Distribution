@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/Cards/CardTitle", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[CardTitleProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[CardTitleProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: CardTitleProps) = this()
   def this(props: CardTitleProps, context: js.Any) = this()
 }

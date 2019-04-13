@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "Capsule")
 @js.native
-class Capsule ()
-  extends p2Lib.p2Mod.p2Ns.Capsule {
-  def this(options: p2Lib.p2Mod.p2Ns.CapsuleOptions) = this()
+class Capsule () extends Shape {
+  def this(options: CapsuleOptions) = this()
+  var length: scala.Double = js.native
+  var radius: scala.Double = js.native
 }
 

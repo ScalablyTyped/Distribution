@@ -10,8 +10,8 @@ trait SendmailTransport
   var args: js.Array[java.lang.String] | nodemailerLib.nodemailerLibNumbers.`false`
   var logger: nodemailerLib.libSharedMod.Logger
   @JSName("mailer")
-  var mailer_SendmailTransport: nodemailerLib.libMailerMod.namespaced
-  var options: nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.Options
+  var mailer_SendmailTransport: nodemailerLib.libMailerMod.^
+  var options: Options
   var path: java.lang.String
   var winbreak: scala.Boolean
 }
@@ -21,15 +21,11 @@ object SendmailTransport {
   def apply(
     args: js.Array[java.lang.String] | nodemailerLib.nodemailerLibNumbers.`false`,
     logger: nodemailerLib.libSharedMod.Logger,
-    mailer: nodemailerLib.libMailerMod.namespaced,
+    mailer: nodemailerLib.libMailerMod.^,
     name: java.lang.String,
-    options: nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.Options,
+    options: Options,
     path: java.lang.String,
-    send: (nodemailerLib.libMailerMailDashMessageMod.namespaced, js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* info */ nodemailerLib.libSendmailDashTransportMod.SendmailTransportNs.SentMessageInfo, 
-      scala.Unit
-    ]) => scala.Unit,
+    send: (nodemailerLib.libMailerMailDashMessageMod.^, js.Function2[/* err */ stdLib.Error | scala.Null, /* info */ SentMessageInfo, scala.Unit]) => scala.Unit,
     version: java.lang.String,
     winbreak: scala.Boolean,
     close: () => scala.Unit = null,

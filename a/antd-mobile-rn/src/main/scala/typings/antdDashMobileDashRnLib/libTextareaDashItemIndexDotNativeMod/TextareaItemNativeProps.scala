@@ -37,7 +37,7 @@ object TextareaItemNativeProps {
     placeholder: java.lang.String = null,
     rows: scala.Int | scala.Double = null,
     styles: antdDashMobileDashRnLib.libTextareaDashItemStyleIndexDotNativeMod.ITextareaItemStyle = null,
-    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    title: reactLib.reactMod.ReactNode = null,
     value: java.lang.String = null
   ): TextareaItemNativeProps = {
     val __obj = js.Dynamic.literal()

@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PopoverProps extends js.Object {
-  var anchorEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactInstance] = js.undefined
+  var anchorEl: js.UndefOr[reactLib.reactMod.ReactInstance] = js.undefined
   var anchorOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
   var animated: js.UndefOr[scala.Boolean] = js.undefined
   var animation: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[PopoverAnimationProps, reactLib.reactMod.ReactNs.ComponentState]
+    reactLib.reactMod.ComponentClass[PopoverAnimationProps, reactLib.reactMod.ComponentState]
   ] = js.undefined
   var autoCloseWhenOffScreen: js.UndefOr[scala.Boolean] = js.undefined
   var canAutoPosition: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var onRequestClose: js.UndefOr[js.Function1[/* reason */ java.lang.String, scala.Unit]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var targetOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined
   var useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined
   var zDepth: js.UndefOr[scala.Double] = js.undefined
@@ -26,16 +26,16 @@ trait PopoverProps extends js.Object {
 object PopoverProps {
   @scala.inline
   def apply(
-    anchorEl: reactLib.reactMod.ReactNs.ReactInstance = null,
+    anchorEl: reactLib.reactMod.ReactInstance = null,
     anchorOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     animated: js.UndefOr[scala.Boolean] = js.undefined,
-    animation: reactLib.reactMod.ReactNs.ComponentClass[PopoverAnimationProps, reactLib.reactMod.ReactNs.ComponentState] = null,
+    animation: reactLib.reactMod.ComponentClass[PopoverAnimationProps, reactLib.reactMod.ComponentState] = null,
     autoCloseWhenOffScreen: js.UndefOr[scala.Boolean] = js.undefined,
     canAutoPosition: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     onRequestClose: /* reason */ java.lang.String => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined,
     zDepth: scala.Int | scala.Double = null

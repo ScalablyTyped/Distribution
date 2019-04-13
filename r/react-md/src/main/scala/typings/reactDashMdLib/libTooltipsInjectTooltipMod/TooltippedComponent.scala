@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TooltippedComponent extends js.Object {
-  def getComposedComponent(): reactLib.reactMod.ReactNs.ReactInstance
+  def getComposedComponent(): reactLib.reactMod.ReactInstance
 }
 
 object TooltippedComponent {
   @scala.inline
-  def apply(getComposedComponent: () => reactLib.reactMod.ReactNs.ReactInstance): TooltippedComponent = {
+  def apply(getComposedComponent: () => reactLib.reactMod.ReactInstance): TooltippedComponent = {
     val __obj = js.Dynamic.literal(getComposedComponent = js.Any.fromFunction0(getComposedComponent))
   
     __obj.asInstanceOf[TooltippedComponent]

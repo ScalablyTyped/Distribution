@@ -20,10 +20,12 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("avoscloud-sdk", "Role")
 @js.native
-class Role protected ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Role {
-  def this(name: java.lang.String, acl: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ACL) = this()
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+class Role protected () extends Object {
+  def this(name: java.lang.String, acl: ACL) = this()
+  def getName(): java.lang.String = js.native
+  def getRoles(): Relation = js.native
+  def getUsers(): Relation = js.native
+  def setName(name: java.lang.String): js.Any = js.native
+  def setName(name: java.lang.String, options: SuccessFailureOptions): js.Any = js.native
 }
 

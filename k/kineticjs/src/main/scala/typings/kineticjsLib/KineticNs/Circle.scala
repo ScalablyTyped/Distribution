@@ -11,3 +11,8 @@ class Circle protected () extends ICircle {
   def this(config: CircleConfig) = this()
 }
 
+@JSGlobal("Kinetic.Circle")
+@js.native
+object Circle
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ CircleConfig, ICircle]
+

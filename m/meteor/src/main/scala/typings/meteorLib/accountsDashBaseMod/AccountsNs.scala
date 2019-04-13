@@ -19,7 +19,6 @@ object AccountsNs extends js.Object {
   }
   
   var emailTemplates: meteorLib.accountsDashBaseMod.EmailTemplates = js.native
-  var ui: meteorLib.Anon_Config = js.native
   var urls: meteorLib.accountsDashBaseMod.URLS = js.native
   def _hashPassword(password: java.lang.String): meteorLib.Anon_Algorithm = js.native
   def addEmail(userId: java.lang.String, newEmail: java.lang.String): scala.Unit = js.native
@@ -72,5 +71,10 @@ object AccountsNs extends js.Object {
   def validateNewUser(func: js.Function): scala.Boolean = js.native
   def verifyEmail(token: java.lang.String): scala.Unit = js.native
   def verifyEmail(token: java.lang.String, callback: js.Function): scala.Unit = js.native
+  @js.native
+  object ui extends js.Object {
+    def config(options: meteorLib.Anon_ForceApprovalPrompt): scala.Unit = js.native
+  }
+  
 }
 

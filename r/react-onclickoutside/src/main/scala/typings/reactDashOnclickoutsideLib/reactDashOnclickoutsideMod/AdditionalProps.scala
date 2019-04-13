@@ -19,7 +19,7 @@ object AdditionalProps {
     disableOnClickOutside: js.UndefOr[scala.Boolean] = js.undefined,
     eventTypes: java.lang.String | js.Array[java.lang.String] = null,
     excludeScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
-    handleClickOutside: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    handleClickOutside: reactLib.reactMod.MouseEventHandler[_] = null,
     outsideClickIgnoreClass: java.lang.String = null,
     preventDefault: js.UndefOr[scala.Boolean] = js.undefined,
     stopPropagation: js.UndefOr[scala.Boolean] = js.undefined

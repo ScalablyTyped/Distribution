@@ -25,3 +25,8 @@ class EventHandler ()
   override def GetID(): scala.Double = js.native
 }
 
+@JSGlobal("MFiles.EventHandler")
+@js.native
+object EventHandler
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IEventHandler]
+

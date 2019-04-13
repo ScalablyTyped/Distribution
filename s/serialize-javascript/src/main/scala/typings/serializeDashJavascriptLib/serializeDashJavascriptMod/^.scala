@@ -15,9 +15,6 @@ object ^ extends js.Object {
     * @returns serialized data
     */
   def apply(input: js.Any): java.lang.String = js.native
-  def apply(
-    input: js.Any,
-    options: serializeDashJavascriptLib.serializeDashJavascriptMod.serializeJavascriptNs.SerializeJSOptions
-  ): java.lang.String = js.native
+  def apply(input: js.Any, options: SerializeJSOptions): java.lang.String = js.native
 }
 

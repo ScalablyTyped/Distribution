@@ -8,21 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Stack", "Stack")
 @js.native
 class Stack protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      StackProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-        reactLib.HTMLDivElement
-      ]), 
-      reactLib.reactMod.ReactNs.ComponentState, 
+  extends reactLib.reactMod.Component[
+      StackProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: StackProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ])) = this()
-  def this(props: StackProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), context: js.Any) = this()
+  def this(props: StackProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])) = this()
+  def this(props: StackProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), context: js.Any) = this()
 }
 

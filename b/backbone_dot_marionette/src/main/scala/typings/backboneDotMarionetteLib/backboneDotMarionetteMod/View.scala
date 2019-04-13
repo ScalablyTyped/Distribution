@@ -5,113 +5,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("backbone.marionette", "View")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- backboneDotMarionetteLib.backboneDotMarionetteMod.ViewMixin because var conflicts: delegateEvents. Inlined supportsRenderLifecycle, supportsDestroyLifecycle, isDestroyed, isRendered, isAttached, getTriggers, delegateEntityEvents, undelegateEntityEvents, destroy, bindUIElements, unbindUIElements, childViewEventPrefix, triggerMethod */ @JSImport("backbone.marionette", "View")
 @js.native
 class View[TModel /* <: backboneLib.backboneMod.Model */] ()
   extends backboneLib.backboneMod.View[TModel]
-     with ViewMixin
      with RegionsMixin {
   def this(options: ViewOptions[TModel]) = this()
   /* CompleteClass */
   override var addRegion: js.Any = js.native
   /* CompleteClass */
   override var addRegions: js.Any = js.native
-  /* CompleteClass */
-  override var appendChildren: js.Any = js.native
-  /* CompleteClass */
-  override var beforeEl: js.Any = js.native
   /**
     * Behavior objects to assign to this View.
     */
   var behaviors: js.Array[Behavior] | (org.scalablytyped.runtime.StringDictionary[
     org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], Behavior]
   ]) | js.Array[backboneDotMarionetteLib.Anon_BehaviorClass] = js.native
-  /* CompleteClass */
-  override var bindEvents: js.Any = js.native
-  /* CompleteClass */
-  override var bindUIElements: js.Any = js.native
-  /* CompleteClass */
-  override var childViewEventPrefix: js.Any = js.native
+  @JSName("bindUIElements")
+  var bindUIElements_FView: js.Any = js.native
   /**
     * Customize the event prefix for events that are forwarded through the
     * collection view.
     */
-  @JSName("childViewEventPrefix")
-  var childViewEventPrefix_View: java.lang.String | backboneDotMarionetteLib.backboneDotMarionetteLibNumbers.`false` = js.native
-  /* CompleteClass */
-  override var createBuffer: js.Any = js.native
-  /* CompleteClass */
-  override var delegateEntityEvents: js.Any = js.native
-  /* CompleteClass */
-  override var delegateEvents: js.Any = js.native
-  /* CompleteClass */
-  override var destroy: js.Any = js.native
+  var childViewEventPrefix: js.Any | java.lang.String | backboneDotMarionetteLib.backboneDotMarionetteLibNumbers.`false` = js.native
+  @JSName("delegateEntityEvents")
+  var delegateEntityEvents_FView: js.Any = js.native
+  var destroy: js.Any = js.native
   /* CompleteClass */
   override var detachChildView: js.Any = js.native
   /* CompleteClass */
-  override var detachContents: js.Any = js.native
-  /* CompleteClass */
-  override var detachEl: js.Any = js.native
-  /* CompleteClass */
   override var emptyRegions: js.Any = js.native
   /* CompleteClass */
-  override var findEls: js.Any = js.native
-  /* CompleteClass */
   override var getChildView: js.Any = js.native
-  /* CompleteClass */
-  override var getOption: js.Any = js.native
   /* CompleteClass */
   override var getRegion: js.Any = js.native
   /* CompleteClass */
   override var getRegions: js.Any = js.native
-  /* CompleteClass */
-  override var getTriggers: js.Any = js.native
+  @JSName("getTriggers")
+  var getTriggers_FView: js.Any = js.native
   /* CompleteClass */
   override var hasRegion: js.Any = js.native
-  /* CompleteClass */
-  override var isAttached: js.Any = js.native
-  /* CompleteClass */
-  override var isDestroyed: js.Any = js.native
-  /* CompleteClass */
-  override var isRendered: js.Any = js.native
-  /* CompleteClass */
-  override var mergeOptions: js.Any = js.native
+  @JSName("isAttached")
+  var isAttached_FView: js.Any = js.native
+  @JSName("isDestroyed")
+  var isDestroyed_FView: js.Any = js.native
+  @JSName("isRendered")
+  var isRendered_FView: js.Any = js.native
   /**
     * Bind to events that occur on attached models.
     */
   var modelEvents: EventsHash = js.native
   /* CompleteClass */
-  override var normalizeMethods: js.Any = js.native
-  /* CompleteClass */
   override var regionClass: js.Any = js.native
-  /* CompleteClass */
-  override var removeEl: js.Any = js.native
   /* CompleteClass */
   override var removeRegion: js.Any = js.native
   /* CompleteClass */
   override var removeRegions: js.Any = js.native
   /* CompleteClass */
-  override var replaceEl: js.Any = js.native
-  /* CompleteClass */
-  override var setInnerContent: js.Any = js.native
-  /* CompleteClass */
   override var showChildView: js.Any = js.native
-  /* CompleteClass */
-  override var supportsDestroyLifecycle: js.Any = js.native
   /**
     * Internal property. (undocumented)
     */
-  @JSName("supportsDestroyLifecycle")
-  var supportsDestroyLifecycle_View: scala.Boolean = js.native
-  /* CompleteClass */
-  override var supportsRenderLifecycle: js.Any = js.native
+  var supportsDestroyLifecycle: js.Any | scala.Boolean = js.native
   /**
     * Internal property. (undocumented)
     */
-  @JSName("supportsRenderLifecycle")
-  var supportsRenderLifecycle_View: scala.Boolean = js.native
-  /* CompleteClass */
-  override var triggerMethod: js.Any = js.native
+  var supportsRenderLifecycle: js.Any | scala.Boolean = js.native
+  var triggerMethod: js.Any = js.native
   /**
     * The view triggers attribute binds DOM events to Marionette View events
     * that can be responded to at the view or parent level.
@@ -122,12 +83,10 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * throughout the view with the ui attribute.
     */
   var ui: js.Any = js.native
-  /* CompleteClass */
-  override var unbindEvents: js.Any = js.native
-  /* CompleteClass */
-  override var unbindUIElements: js.Any = js.native
-  /* CompleteClass */
-  override var undelegateEntityEvents: js.Any = js.native
+  @JSName("unbindUIElements")
+  var unbindUIElements_FView: js.Any = js.native
+  @JSName("undelegateEntityEvents")
+  var undelegateEntityEvents_FView: js.Any = js.native
   /**
     * Add a region to this View.
     */
@@ -144,8 +103,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     * @param children is jQuery.append argument: http://api.jquery.com/append/
     */
-  @JSName("appendChildren")
-  def appendChildren_MView(el: js.Any, children: js.Any): scala.Unit = js.native
+  def appendChildren(el: js.Any, children: js.Any): scala.Unit = js.native
   /**
     * Used to attached the rendered template to this View's element.
     */
@@ -156,44 +114,37 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     * @param sibling is jQuery.before argument: http://api.jquery.com/before/
     */
-  @JSName("beforeEl")
-  def beforeEl_MView(el: js.Any, sibling: js.Any): scala.Unit = js.native
+  def beforeEl(el: js.Any, sibling: js.Any): scala.Unit = js.native
   /**
     * This method is used to bind a backbone "entity" (collection/model) to
     * methods on a target object.
     */
-  @JSName("bindEvents")
-  def bindEvents_MView(entity: js.Any, bindings: js.Any): scala.Unit = js.native
+  def bindEvents(entity: js.Any, bindings: js.Any): scala.Unit = js.native
   /**
     * Bind UI elements to this view. By default this is called in the
     * render method. (undocumented)
     */
-  @JSName("bindUIElements")
-  def bindUIElements_MView(): js.Any = js.native
+  def bindUIElements(): js.Any = js.native
   /**
     * Returns a new HTML DOM node instance. The resulting node can be
     * passed into the other DOM functions.
     */
-  @JSName("createBuffer")
-  def createBuffer_MView(): stdLib.DocumentFragment = js.native
+  def createBuffer(): stdLib.DocumentFragment = js.native
   /**
     * Delegate entity events. (undocumented)
     */
-  @JSName("delegateEntityEvents")
-  def delegateEntityEvents_MView(): View[TModel] = js.native
+  def delegateEntityEvents(): View[TModel] = js.native
   /**
     * Overrides Backbone.View.delegateEvents. By default Marionette uses
     * this to add handlers for events and triggers. (undocumented)
     */
-  @JSName("delegateEvents")
-  def delegateEvents_MView(eventsArg: js.Any): View[TModel] = js.native
+  def delegateEvents(eventsArg: js.Any): View[TModel] = js.native
   /**
     * Manually destroy a view by calling the destroy method. The method
     * unbinds the UI elements, removes the view and its children from the
     * DOM and unbinds the listeners. It also triggers lifecycle events.
     */
-  @JSName("destroy")
-  def destroy_MView(args: js.Any*): View[TModel] = js.native
+  def destroy(args: js.Any*): View[TModel] = js.native
   /**
     * Detach a view from a region.
     */
@@ -204,20 +155,17 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * in the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  @JSName("detachContents")
-  def detachContents_MView(el: js.Any): scala.Unit = js.native
+  def detachContents(el: js.Any): scala.Unit = js.native
   /**
     * Detach el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  @JSName("detachEl")
-  def detachEl_MView(el: js.Any): scala.Unit = js.native
+  def detachEl(el: js.Any): scala.Unit = js.native
   /**
     * Empty all regions from this View.
     */
   @JSName("emptyRegions")
   def emptyRegions_MView(): js.Any = js.native
-  def events(): EventsHash = js.native
   /**
     * Lookup the selector string within the DOM node for context. The
     * optional context argument will come in as a DOM Node reference to run
@@ -226,8 +174,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * @param selector is a jQuery argument: https://api.jquery.com/jQuery/
     * @param context is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  @JSName("findEls")
-  def findEls_MView(selector: js.Any, context: js.Any): scala.Unit = js.native
+  def findEls(selector: js.Any, context: js.Any): scala.Unit = js.native
   /**
     * Get the view from a region.
     */
@@ -238,8 +185,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * the object's this.options, with this.options taking precedence.
     * @param optionName the name of the option to retrieve.
     */
-  @JSName("getOption")
-  def getOption_MView(optionName: java.lang.String): js.Any = js.native
+  def getOption(optionName: java.lang.String): js.Any = js.native
   /**
     * Return a region from this View.
     */
@@ -259,8 +205,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * Get the triggers that are currently attached to this view.
     * (undocumented)
     */
-  @JSName("getTriggers")
-  def getTriggers_MView(): EventsHash = js.native
+  def getTriggers(): EventsHash = js.native
   /**
     * Get handle on UI element defined in ui hash
     */
@@ -273,24 +218,20 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
   /**
     * Check if this View is attached to the DOM.
     */
-  @JSName("isAttached")
-  def isAttached_MView(): scala.Boolean = js.native
+  def isAttached(): scala.Boolean = js.native
   /**
     * Check if this View has been destroyed.
     */
-  @JSName("isDestroyed")
-  def isDestroyed_MView(): scala.Boolean = js.native
+  def isDestroyed(): scala.Boolean = js.native
   /**
     * Check if this View has been rendered.
     */
-  @JSName("isRendered")
-  def isRendered_MView(): scala.Boolean = js.native
+  def isRendered(): scala.Boolean = js.native
   /**
     * A handy function to pluck certain options and attach them directly
     * to an instance.
     */
-  @JSName("mergeOptions")
-  def mergeOptions_MView(options: js.Any, keys: js.Any): scala.Unit = js.native
+  def mergeOptions(options: js.Any, keys: js.Any): scala.Unit = js.native
   /**
     * Mix in template context methods. Looks for a templateContext
     * attribute, which can either be an object literal, or a function that
@@ -303,8 +244,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * and returns the same hash with the function names replaced with the
     * function references themselves.
     */
-  @JSName("normalizeMethods")
-  def normalizeMethods_MView[T](hash: js.Any): T = js.native
+  def normalizeMethods[T](hash: js.Any): T = js.native
   /**
     * Event that is triggered after a Region has been added.
     */
@@ -370,8 +310,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * Remove el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     */
-  @JSName("removeEl")
-  def removeEl_MView(el: js.Any): scala.Unit = js.native
+  def removeEl(el: js.Any): scala.Unit = js.native
   /**
     * Remove a region from this View.
     */
@@ -383,16 +322,9 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
   @JSName("removeRegions")
   def removeRegions_MView(): js.Any = js.native
   /**
-    * Renders the view. Given a template this method will build your HTML
-    * from that template, mixing in model information and any extra
-    * template context.
-    */
-  def render(): View[TModel] = js.native
-  /**
     * Remove oldEl from the DOM and put newEl in its place.
     */
-  @JSName("replaceEl")
-  def replaceEl_MView(newEl: stdLib.HTMLElement, oldEL: stdLib.HTMLElement): scala.Unit = js.native
+  def replaceEl(newEl: stdLib.HTMLElement, oldEL: stdLib.HTMLElement): scala.Unit = js.native
   /**
     * Method used by this.serializeData to serialize this View's collection
     * data.
@@ -410,19 +342,12 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     */
   def serializeModel(): js.Any = js.native
   /**
-    * Rebind this View to a new element. Overriding Backbone.View’s
-    * setElement to handle if an element was previously defined.
-    * (undocumented)
-    */
-  def setElement(element: js.Any): View[TModel] = js.native
-  /**
     * Replace the contents of el with the HTML string of html. Unlike other
     * DOM functions, this takes a literal string for its second argument.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
     * @param html is a jQuery.html argument: https://api.jquery.com/html/
     */
-  @JSName("setInnerContent")
-  def setInnerContent_MView(el: js.Any, html: java.lang.String): scala.Unit = js.native
+  def setInnerContent(el: js.Any, html: java.lang.String): scala.Unit = js.native
   /**
     * Used to set the renderer for this View. The rendere function is
     * passed the template and the data and is expected to return an html
@@ -442,23 +367,19 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * along to both the event and the method, with the exception of the
     * event name not being passed to the corresponding method.
     */
-  @JSName("triggerMethod")
-  def triggerMethod_MView(name: java.lang.String, args: js.Any*): js.Any = js.native
+  def triggerMethod(name: java.lang.String, args: js.Any*): js.Any = js.native
   /**
     * This method can be used to unbind callbacks from entities'
     * (collection/model) events.
     */
-  @JSName("unbindEvents")
-  def unbindEvents_MView(entity: js.Any, bindings: js.Any): scala.Unit = js.native
+  def unbindEvents(entity: js.Any, bindings: js.Any): scala.Unit = js.native
   /**
     * Bind UI elements from this view. (undocumented)
     */
-  @JSName("unbindUIElements")
-  def unbindUIElements_MView(): js.Any = js.native
+  def unbindUIElements(): js.Any = js.native
   /**
     * Undelegate entity events. (undocumented)
     */
-  @JSName("undelegateEntityEvents")
-  def undelegateEntityEvents_MView(): View[TModel] = js.native
+  def undelegateEntityEvents(): View[TModel] = js.native
 }
 

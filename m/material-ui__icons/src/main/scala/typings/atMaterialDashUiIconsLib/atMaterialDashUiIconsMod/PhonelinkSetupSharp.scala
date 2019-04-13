@@ -16,9 +16,9 @@ class PhonelinkSetupSharp protected ()
 @JSImport("@material-ui/icons", "PhonelinkSetupSharp")
 @js.native
 class PhonelinkSetupSharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

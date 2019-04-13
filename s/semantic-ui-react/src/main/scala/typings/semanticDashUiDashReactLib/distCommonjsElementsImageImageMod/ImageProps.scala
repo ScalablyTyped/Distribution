@@ -17,7 +17,7 @@ object ImageProps {
     avatar: js.UndefOr[scala.Boolean] = js.undefined,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
     centered: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     circular: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,

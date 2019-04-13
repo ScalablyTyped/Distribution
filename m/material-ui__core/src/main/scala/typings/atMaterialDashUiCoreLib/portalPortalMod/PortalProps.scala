@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PortalProps extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactElement[_]
   var container: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] | scala.Null
+    reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] | scala.Null
   ] = js.undefined
   var disablePortal: js.UndefOr[scala.Boolean] = js.undefined
   var onRendered: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -17,8 +17,8 @@ trait PortalProps extends js.Object {
 object PortalProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactElement[_],
-    container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
+    children: reactLib.reactMod.ReactElement[_],
+    container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,
     disablePortal: js.UndefOr[scala.Boolean] = js.undefined,
     onRendered: () => scala.Unit = null
   ): PortalProps = {

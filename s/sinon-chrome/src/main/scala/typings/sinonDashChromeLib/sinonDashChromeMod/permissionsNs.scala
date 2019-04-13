@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object permissionsNs extends js.Object {
   var contains: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getAll: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onAdded: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
-  var onRemoved: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onAdded: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
+  var onRemoved: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
   var remove: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var request: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
 }

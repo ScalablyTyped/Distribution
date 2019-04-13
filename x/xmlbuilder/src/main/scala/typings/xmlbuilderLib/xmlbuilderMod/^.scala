@@ -8,109 +8,91 @@ import scala.scalajs.js.annotation._
 @JSImport("xmlbuilder", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def begin(): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(nameOrObjSpec: java.lang.String): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+  def begin(): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: java.lang.String): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: java.lang.String, xmldecOrOptions: XMLCreateOptions): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions,
+    doctypeOrOptions: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions,
+    doctypeOrOptions: XMLCreateOptions,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: java.lang.String, xmldecOrOptions: XMLCreateOptions, doctypeOrOptions: XMLDtd): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions,
+    doctypeOrOptions: XMLDtd,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: java.lang.String, xmldecOrOptions: XMLDec): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: java.lang.String, xmldecOrOptions: XMLDec, doctypeOrOptions: XMLCreateOptions): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLDec,
+    doctypeOrOptions: XMLCreateOptions,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: java.lang.String, xmldecOrOptions: XMLDec, doctypeOrOptions: XMLDtd): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(nameOrObjSpec: java.lang.String, xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(
-    nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(
-    nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(
-    nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(
-    nameOrObjSpec: java.lang.String,
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object]): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLDec,
+    doctypeOrOptions: XMLDtd,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object]): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions,
+    doctypeOrOptions: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions,
+    doctypeOrOptions: XMLCreateOptions,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions,
+    doctypeOrOptions: XMLDtd
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLCreateOptions,
+    doctypeOrOptions: XMLDtd,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
+  def create(nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object], xmldecOrOptions: XMLDec): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLDec,
+    doctypeOrOptions: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLDec,
+    doctypeOrOptions: XMLCreateOptions,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLDec,
+    doctypeOrOptions: XMLDtd
+  ): XMLElementOrXMLNode = js.native
   def create(
     nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
-  def create(
-    nameOrObjSpec: org.scalablytyped.runtime.StringDictionary[js.Object],
-    xmldecOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDec,
-    doctypeOrOptions: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLDtd,
-    options: xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLCreateOptions
-  ): xmlbuilderLib.xmlbuilderMod.xmlbuilderNs.XMLElementOrXMLNode = js.native
+    xmldecOrOptions: XMLDec,
+    doctypeOrOptions: XMLDtd,
+    options: XMLCreateOptions
+  ): XMLElementOrXMLNode = js.native
 }
 

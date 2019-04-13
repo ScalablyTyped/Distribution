@@ -33,3 +33,8 @@ class ObjectClass ()
   override def Clone(): mfilesLib.IObjectClass = js.native
 }
 
+@JSGlobal("MFiles.ObjectClass")
+@js.native
+object ObjectClass
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectClass]
+

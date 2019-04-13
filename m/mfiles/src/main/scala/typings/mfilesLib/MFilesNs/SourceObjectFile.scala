@@ -19,3 +19,8 @@ class SourceObjectFile ()
   override def Clone(): mfilesLib.ISourceObjectFile = js.native
 }
 
+@JSGlobal("MFiles.SourceObjectFile")
+@js.native
+object SourceObjectFile
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISourceObjectFile]
+

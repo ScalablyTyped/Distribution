@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenKeyName
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var name: java.lang.String
 }
 
@@ -16,7 +16,7 @@ object Anon_ChildrenKeyName {
   def apply(
     name: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null
+    children: reactLib.reactMod.ReactNode = null
   ): Anon_ChildrenKeyName = {
     val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

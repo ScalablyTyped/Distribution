@@ -9,9 +9,9 @@ trait MenuProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var emptyLabel: js.UndefOr[java.lang.String] = js.undefined
   var id: java.lang.String
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLUListElement]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.LegacyRef[stdLib.HTMLUListElement]] = js.undefined
   var maxHeight: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -21,9 +21,9 @@ object MenuProps {
     id: java.lang.String,
     className: java.lang.String = null,
     emptyLabel: java.lang.String = null,
-    innerRef: reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLUListElement] = null,
+    innerRef: reactLib.reactMod.LegacyRef[stdLib.HTMLUListElement] = null,
     maxHeight: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     text: java.lang.String = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal(id = id)

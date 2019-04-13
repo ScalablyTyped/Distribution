@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProjectDetails protected () extends js.Object {
   def this(hasRootDirectoryArgsE: ProjectDetailsDeps) = this()
-  val args: minimistLib.minimistMod.minimistNs.ParsedArgs = js.native
+  val args: minimistLib.minimistMod.ParsedArgs = js.native
   val e: ProjectDeps = js.native
   val rootDirectory: java.lang.String = js.native
   /* protected */ def determineMultiApp(config: ionicLib.definitionsMod.IMultiProjectConfig): js.Promise[ProjectDetailsMultiAppResult] = js.native

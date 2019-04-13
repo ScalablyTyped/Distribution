@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IGrowlProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   /**
     * Pre-defined server error interceptor.
     */
-  var serverMessagesInterceptor: js.Array[java.lang.String | angularLib.angularMod.angularNs.IHttpInterceptorFactory] = js.native
+  var serverMessagesInterceptor: js.Array[java.lang.String | angularLib.angularMod.IHttpInterceptorFactory] = js.native
   /**
     * Set default setting for disabling close button.
     * @param disableCloseButton

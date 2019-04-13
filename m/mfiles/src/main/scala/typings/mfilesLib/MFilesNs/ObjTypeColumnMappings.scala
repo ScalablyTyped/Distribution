@@ -21,3 +21,8 @@ class ObjTypeColumnMappings ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ObjTypeColumnMappings")
+@js.native
+object ObjTypeColumnMappings
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IObjectTypeColumnMappings]
+

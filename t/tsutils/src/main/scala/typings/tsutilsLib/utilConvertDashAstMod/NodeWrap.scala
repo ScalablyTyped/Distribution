@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait NodeWrap extends js.Object {
   var children: js.Array[NodeWrap]
-  var kind: typescriptLib.typescriptMod.tsNs.SyntaxKind
+  var kind: typescriptLib.typescriptMod.SyntaxKind
   var next: js.UndefOr[NodeWrap] = js.undefined
-  var node: typescriptLib.typescriptMod.tsNs.Node
+  var node: typescriptLib.typescriptMod.Node
   var parent: js.UndefOr[NodeWrap] = js.undefined
   var skip: js.UndefOr[NodeWrap] = js.undefined
 }
@@ -18,8 +18,8 @@ object NodeWrap {
   @scala.inline
   def apply(
     children: js.Array[NodeWrap],
-    kind: typescriptLib.typescriptMod.tsNs.SyntaxKind,
-    node: typescriptLib.typescriptMod.tsNs.Node,
+    kind: typescriptLib.typescriptMod.SyntaxKind,
+    node: typescriptLib.typescriptMod.Node,
     next: NodeWrap = null,
     parent: NodeWrap = null,
     skip: NodeWrap = null

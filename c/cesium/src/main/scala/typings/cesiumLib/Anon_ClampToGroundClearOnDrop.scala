@@ -10,7 +10,7 @@ trait Anon_ClampToGroundClearOnDrop extends js.Object {
   var clearOnDrop: js.UndefOr[scala.Boolean] = js.undefined
   var dropTarget: js.UndefOr[stdLib.Element | java.lang.String] = js.undefined
   var flyToOnDrop: js.UndefOr[scala.Boolean] = js.undefined
-  var proxy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.DefaultProxy] = js.undefined
+  var proxy: js.UndefOr[cesiumLib.cesiumMod.DefaultProxy] = js.undefined
 }
 
 object Anon_ClampToGroundClearOnDrop {
@@ -20,7 +20,7 @@ object Anon_ClampToGroundClearOnDrop {
     clearOnDrop: js.UndefOr[scala.Boolean] = js.undefined,
     dropTarget: stdLib.Element | java.lang.String = null,
     flyToOnDrop: js.UndefOr[scala.Boolean] = js.undefined,
-    proxy: cesiumLib.cesiumMod.CesiumNs.DefaultProxy = null
+    proxy: cesiumLib.cesiumMod.DefaultProxy = null
   ): Anon_ClampToGroundClearOnDrop = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clampToGround)) __obj.updateDynamic("clampToGround")(clampToGround)

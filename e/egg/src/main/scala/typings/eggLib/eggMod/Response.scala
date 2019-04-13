@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Response
-  extends koaLib.koaMod.ApplicationNs.Response {
+  extends koaLib.koaMod.Response {
   // tslint:disable-line
   /**
     * read response real status code.

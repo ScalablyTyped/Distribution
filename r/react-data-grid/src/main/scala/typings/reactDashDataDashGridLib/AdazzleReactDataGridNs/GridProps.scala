@@ -24,12 +24,12 @@ trait GridProps[T] extends js.Object {
     * A context menu to disiplay when the user right-clicks a cell.
     * Consider using "react-contextmenu", included in "react-data-grid/addons".
     */
-  var contextMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var contextMenu: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * A component to display when there are no rows to render.
     */
   var emptyRowsView: js.UndefOr[
-    (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   /**
     * Enables cells to be selected when clicked.
@@ -175,7 +175,7 @@ trait GridProps[T] extends js.Object {
     * @default AdazzleReactDataGridPlugins.Editors.CheckboxEditor
     */
   var rowActionsCell: js.UndefOr[
-    (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   /**
     * Gets the data to render in each row. Required.
@@ -198,7 +198,7 @@ trait GridProps[T] extends js.Object {
     * If you want to define your own, consider extending ReactDataGrid.Row.
     */
   var rowRenderer: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   /**
     * How long to wait before rendering a new row while scrolling in milliseconds.
@@ -218,7 +218,7 @@ trait GridProps[T] extends js.Object {
     * @default react-data-grid/src/formatters/SelectAll.js
     */
   var selectAllRenderer: js.UndefOr[
-    (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_]
   ] = js.undefined
   /**
     * key of the initial sorted column
@@ -234,7 +234,7 @@ trait GridProps[T] extends js.Object {
     * A toolbar to display above the grid.
     * Consider using the toolbar included in "react-data-grid/addons".
     */
-  var toolbar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var toolbar: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
 }
 
 object GridProps {
@@ -244,8 +244,8 @@ object GridProps {
     rowsCount: scala.Double,
     cellNavigationMode: reactDashDataDashGridLib.reactDashDataDashGridLibStrings.none | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.loopOverRow | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.changeRow = null,
     columns: js.Array[Column[T]] = null,
-    contextMenu: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    emptyRowsView: (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    contextMenu: reactLib.reactMod.ReactElement[_] = null,
+    emptyRowsView: (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
     enableCellSelect: js.UndefOr[scala.Boolean] = js.undefined,
     enableDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
     enableRowSelect: scala.Boolean | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.single | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.multi = null,
@@ -270,16 +270,16 @@ object GridProps {
     onRowExpandToggle: /* props */ OnRowExpandToggle => scala.Unit = null,
     onRowSelect: /* rows */ js.Array[T] => scala.Unit = null,
     onRowUpdated: /* e */ RowUpdateEvent[T] => scala.Unit = null,
-    rowActionsCell: (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    rowActionsCell: (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
     rowHeight: scala.Int | scala.Double = null,
     rowKey: java.lang.String = null,
-    rowRenderer: reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    rowRenderer: reactLib.reactMod.ReactElement[_] | (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
     rowScrollTimeout: scala.Int | scala.Double = null,
     rowSelection: reactDashDataDashGridLib.Anon_EnableShiftSelect[T] = null,
-    selectAllRenderer: (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    selectAllRenderer: (reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState]) | reactLib.reactMod.StatelessComponent[_] = null,
     sortColumn: java.lang.String = null,
     sortDirection: reactDashDataDashGridLib.reactDashDataDashGridLibStrings.ASC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.DESC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.NONE = null,
-    toolbar: reactLib.reactMod.ReactNs.ReactElement[_] = null
+    toolbar: reactLib.reactMod.ReactElement[_] = null
   ): GridProps[T] = {
     val __obj = js.Dynamic.literal(rowGetter = rowGetter.asInstanceOf[js.Any], rowsCount = rowsCount)
     if (cellNavigationMode != null) __obj.updateDynamic("cellNavigationMode")(cellNavigationMode.asInstanceOf[js.Any])

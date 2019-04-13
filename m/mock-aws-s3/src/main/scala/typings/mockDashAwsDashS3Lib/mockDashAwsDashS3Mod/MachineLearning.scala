@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MachineLearning ()
   extends awsDashSdkLib.awsDashSdkMod.MachineLearning {
-  def this(options: awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMachinelearningMod.ClientConfiguration) = this()
 }
 

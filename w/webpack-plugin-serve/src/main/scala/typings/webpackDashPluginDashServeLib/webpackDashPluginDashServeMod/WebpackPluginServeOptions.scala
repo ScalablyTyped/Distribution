@@ -9,7 +9,7 @@ trait WebpackPluginServeOptions extends js.Object {
   var client: js.UndefOr[webpackDashPluginDashServeLib.Anon_Address] = js.undefined
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   var historyFallback: js.UndefOr[
-    scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.historyApiFallbackNs.Options
+    scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.Options
   ] = js.undefined
   var hmr: js.UndefOr[scala.Boolean] = js.undefined
   var host: js.UndefOr[java.lang.String | js.Promise[java.lang.String]] = js.undefined
@@ -20,11 +20,7 @@ trait WebpackPluginServeOptions extends js.Object {
   var liveReload: js.UndefOr[scala.Boolean] = js.undefined
   var log: js.UndefOr[webpackDashPluginDashServeLib.Anon_Debug] = js.undefined
   var middleware: js.UndefOr[
-    js.Function2[
-      /* app */ koaLib.koaMod.namespaced[_, js.Object], 
-      /* builtins */ Builtins, 
-      scala.Unit
-    ]
+    js.Function2[/* app */ koaLib.koaMod.^[_, js.Object], /* builtins */ Builtins, scala.Unit]
   ] = js.undefined
   var open: js.UndefOr[scala.Boolean | webpackDashPluginDashServeLib.Anon_App] = js.undefined
   var port: js.UndefOr[scala.Double | js.Promise[scala.Double]] = js.undefined
@@ -41,14 +37,14 @@ object WebpackPluginServeOptions {
   def apply(
     client: webpackDashPluginDashServeLib.Anon_Address = null,
     compress: js.UndefOr[scala.Boolean] = js.undefined,
-    historyFallback: scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.historyApiFallbackNs.Options = null,
+    historyFallback: scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.Options = null,
     hmr: js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String | js.Promise[java.lang.String] = null,
     http2: scala.Boolean | nodeLib.http2Mod.ServerOptions | nodeLib.http2Mod.SecureServerOptions = null,
     https: nodeLib.httpsMod.ServerOptions = null,
     liveReload: js.UndefOr[scala.Boolean] = js.undefined,
     log: webpackDashPluginDashServeLib.Anon_Debug = null,
-    middleware: (/* app */ koaLib.koaMod.namespaced[_, js.Object], /* builtins */ Builtins) => scala.Unit = null,
+    middleware: (/* app */ koaLib.koaMod.^[_, js.Object], /* builtins */ Builtins) => scala.Unit = null,
     open: scala.Boolean | webpackDashPluginDashServeLib.Anon_App = null,
     port: scala.Double | js.Promise[scala.Double] = null,
     progress: scala.Boolean | webpackDashPluginDashServeLib.webpackDashPluginDashServeLibStrings.minimal = null,

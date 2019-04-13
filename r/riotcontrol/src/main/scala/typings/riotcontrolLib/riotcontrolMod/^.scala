@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("riotcontrol", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var _stores: js.Array[riotcontrolLib.riotcontrolMod.RiotControlNs.Store] = js.native
-  def addStore(store: riotcontrolLib.riotcontrolMod.RiotControlNs.Store): scala.Unit = js.native
+  var _stores: js.Array[Store] = js.native
+  def addStore(store: Store): scala.Unit = js.native
   def off(events: java.lang.String): scala.Unit = js.native
   def off(events: java.lang.String, fn: js.Function): scala.Unit = js.native
   def on(events: java.lang.String, fn: js.Function): scala.Unit = js.native

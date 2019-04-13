@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ActiveMeasure extends js.Object {
-  var activeMeasure: js.UndefOr[flexmonsterLib.flexmonsterMod.FlexmonsterNs.MeasureObject] = js.undefined
+  var activeMeasure: js.UndefOr[flexmonsterLib.flexmonsterMod.MeasureObject] = js.undefined
   var activeTupleIndex: js.UndefOr[scala.Double] = js.undefined
   var autoRange: js.UndefOr[scala.Boolean] = js.undefined
   var labelsHierarchy: js.UndefOr[java.lang.String] = js.undefined
@@ -30,7 +30,7 @@ trait Anon_ActiveMeasure extends js.Object {
 object Anon_ActiveMeasure {
   @scala.inline
   def apply(
-    activeMeasure: flexmonsterLib.flexmonsterMod.FlexmonsterNs.MeasureObject = null,
+    activeMeasure: flexmonsterLib.flexmonsterMod.MeasureObject = null,
     activeTupleIndex: scala.Int | scala.Double = null,
     autoRange: js.UndefOr[scala.Boolean] = js.undefined,
     labelsHierarchy: java.lang.String = null,

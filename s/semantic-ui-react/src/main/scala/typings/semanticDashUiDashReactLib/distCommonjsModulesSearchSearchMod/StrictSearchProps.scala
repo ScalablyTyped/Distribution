@@ -27,7 +27,7 @@ trait StrictSearchProps extends js.Object {
   var categoryRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /** Additional classes. */
@@ -52,9 +52,9 @@ trait StrictSearchProps extends js.Object {
   /** Minimum characters to query for results. */
   var minCharacters: js.UndefOr[scala.Double] = js.undefined
   /** Additional text for "No Results" message with less emphasis. */
-  var noResultsDescription: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var noResultsDescription: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Message to display when there are no results. */
-  var noResultsMessage: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var noResultsMessage: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   // ------------------------------------
   // Callbacks
   // ------------------------------------
@@ -66,7 +66,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -79,7 +79,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onFocus: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -92,7 +92,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -105,7 +105,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onResultSelect: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ SearchResultData, 
       scala.Unit
     ]
@@ -118,7 +118,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onSearchChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -131,7 +131,7 @@ trait StrictSearchProps extends js.Object {
     */
   var onSelectionChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchResultData, 
       scala.Unit
     ]
@@ -147,7 +147,7 @@ trait StrictSearchProps extends js.Object {
   var resultRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -174,7 +174,7 @@ object StrictSearchProps {
     aligned: java.lang.String = null,
     as: js.Any = null,
     category: js.UndefOr[scala.Boolean] = js.undefined,
-    categoryRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    categoryRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps => reactLib.reactMod.ReactElement[_] = null,
     className: java.lang.String = null,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     defaultValue: java.lang.String = null,
@@ -183,16 +183,16 @@ object StrictSearchProps {
     input: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputProps] = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     minCharacters: scala.Int | scala.Double = null,
-    noResultsDescription: reactLib.reactMod.ReactNs.ReactNode = null,
-    noResultsMessage: reactLib.reactMod.ReactNs.ReactNode = null,
-    onBlur: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
-    onFocus: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
-    onMouseDown: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
-    onResultSelect: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ SearchResultData) => scala.Unit = null,
-    onSearchChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
-    onSelectionChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchResultData) => scala.Unit = null,
+    noResultsDescription: reactLib.reactMod.ReactNode = null,
+    noResultsMessage: reactLib.reactMod.ReactNode = null,
+    onBlur: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onFocus: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onMouseDown: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onResultSelect: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ SearchResultData) => scala.Unit = null,
+    onSearchChange: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchProps) => scala.Unit = null,
+    onSelectionChange: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SearchResultData) => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    resultRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps => reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    resultRenderer: /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps => reactLib.reactMod.ReactElement[_] = null,
     results: js.Array[_] | js.Object = null,
     selectFirstResult: js.UndefOr[scala.Boolean] = js.undefined,
     showNoResults: js.UndefOr[scala.Boolean] = js.undefined,

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_FieldConfiguration extends js.Object {
-  def apply(fieldConfiguration: angularDashFormlyLib.AngularFormlyNs.IFieldConfigurationObject): java.lang.String | angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
+  def apply(fieldConfiguration: angularDashFormlyLib.AngularFormlyNs.IFieldConfigurationObject): java.lang.String | angularLib.angularMod.IPromise[java.lang.String] = js.native
 }
 

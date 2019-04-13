@@ -9,986 +9,642 @@ import scala.scalajs.js.annotation._
 trait SMS
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_SMS: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsSmsMod.SMSNs.ClientConfiguration = js.native
+  var config_SMS: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * Creates an application. An application consists of one or more server groups. Each server group contain one or more servers.
     */
-  def createApp(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createApp(): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createApp(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppResponse, 
+      /* data */ CreateAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates an application. An application consists of one or more server groups. Each server group contain one or more servers.
     */
-  def createApp(params: awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createApp(params: CreateAppRequest): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createApp(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppRequest,
+    params: CreateAppRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppResponse, 
+      /* data */ CreateAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a replication job. The replication job schedules periodic replication runs to replicate your server to AWS. Each replication run creates an Amazon Machine Image (AMI).
     */
-  def createReplicationJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createReplicationJob(): awsDashSdkLib.libRequestMod.Request[CreateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createReplicationJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobResponse, 
+      /* data */ CreateReplicationJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a replication job. The replication job schedules periodic replication runs to replicate your server to AWS. Each replication run creates an Amazon Machine Image (AMI).
     */
-  def createReplicationJob(params: awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def createReplicationJob(params: CreateReplicationJobRequest): awsDashSdkLib.libRequestMod.Request[CreateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createReplicationJob(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobRequest,
+    params: CreateReplicationJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobResponse, 
+      /* data */ CreateReplicationJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.CreateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[CreateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing application. Optionally deletes the launched stack associated with the application and all AWS SMS replication jobs for servers in the application.
     */
-  def deleteApp(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteApp(): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApp(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppResponse, 
+      /* data */ DeleteAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes an existing application. Optionally deletes the launched stack associated with the application and all AWS SMS replication jobs for servers in the application.
     */
-  def deleteApp(params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteApp(params: DeleteAppRequest): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteApp(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppRequest,
+    params: DeleteAppRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppResponse, 
+      /* data */ DeleteAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes existing launch configuration for an application.
     */
-  def deleteAppLaunchConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAppLaunchConfiguration(): awsDashSdkLib.libRequestMod.Request[DeleteAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAppLaunchConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationResponse, 
+      /* data */ DeleteAppLaunchConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes existing launch configuration for an application.
     */
-  def deleteAppLaunchConfiguration(params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAppLaunchConfiguration(params: DeleteAppLaunchConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DeleteAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAppLaunchConfiguration(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationRequest,
+    params: DeleteAppLaunchConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationResponse, 
+      /* data */ DeleteAppLaunchConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes existing replication configuration for an application.
     */
-  def deleteAppReplicationConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAppReplicationConfiguration(): awsDashSdkLib.libRequestMod.Request[DeleteAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAppReplicationConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationResponse, 
+      /* data */ DeleteAppReplicationConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes existing replication configuration for an application.
     */
-  def deleteAppReplicationConfiguration(params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteAppReplicationConfiguration(params: DeleteAppReplicationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DeleteAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAppReplicationConfiguration(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationRequest,
+    params: DeleteAppReplicationConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationResponse, 
+      /* data */ DeleteAppReplicationConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified replication job. After you delete a replication job, there are no further replication runs. AWS deletes the contents of the Amazon S3 bucket used to store AWS SMS artifacts. The AMIs created by the replication runs are not deleted.
     */
-  def deleteReplicationJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteReplicationJob(): awsDashSdkLib.libRequestMod.Request[DeleteReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteReplicationJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobResponse, 
+      /* data */ DeleteReplicationJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes the specified replication job. After you delete a replication job, there are no further replication runs. AWS deletes the contents of the Amazon S3 bucket used to store AWS SMS artifacts. The AMIs created by the replication runs are not deleted.
     */
-  def deleteReplicationJob(params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteReplicationJob(params: DeleteReplicationJobRequest): awsDashSdkLib.libRequestMod.Request[DeleteReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteReplicationJob(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobRequest,
+    params: DeleteReplicationJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobResponse, 
+      /* data */ DeleteReplicationJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes all servers from your server catalog.
     */
-  def deleteServerCatalog(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteServerCatalog(): awsDashSdkLib.libRequestMod.Request[DeleteServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteServerCatalog(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogResponse, 
+      /* data */ DeleteServerCatalogResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes all servers from your server catalog.
     */
-  def deleteServerCatalog(params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def deleteServerCatalog(params: DeleteServerCatalogRequest): awsDashSdkLib.libRequestMod.Request[DeleteServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteServerCatalog(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogRequest,
+    params: DeleteServerCatalogRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogResponse, 
+      /* data */ DeleteServerCatalogResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DeleteServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DeleteServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the specified connector from AWS SMS. After you disassociate a connector, it is no longer available to support replication jobs.
     */
-  def disassociateConnector(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateConnector(): awsDashSdkLib.libRequestMod.Request[DisassociateConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateConnector(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorResponse, 
+      /* data */ DisassociateConnectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Disassociates the specified connector from AWS SMS. After you disassociate a connector, it is no longer available to support replication jobs.
     */
-  def disassociateConnector(params: awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def disassociateConnector(params: DisassociateConnectorRequest): awsDashSdkLib.libRequestMod.Request[DisassociateConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def disassociateConnector(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorRequest,
+    params: DisassociateConnectorRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorResponse, 
+      /* data */ DisassociateConnectorResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.DisassociateConnectorResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Generates a target change set for a currently launched stack and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
     */
-  def generateChangeSet(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def generateChangeSet(): awsDashSdkLib.libRequestMod.Request[GenerateChangeSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def generateChangeSet(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetResponse, 
+      /* data */ GenerateChangeSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GenerateChangeSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Generates a target change set for a currently launched stack and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
     */
-  def generateChangeSet(params: awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def generateChangeSet(params: GenerateChangeSetRequest): awsDashSdkLib.libRequestMod.Request[GenerateChangeSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def generateChangeSet(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetRequest,
+    params: GenerateChangeSetRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetResponse, 
+      /* data */ GenerateChangeSetResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateChangeSetResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GenerateChangeSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Generates an Amazon CloudFormation template based on the current launch configuration and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
     */
-  def generateTemplate(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def generateTemplate(): awsDashSdkLib.libRequestMod.Request[GenerateTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def generateTemplate(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateResponse, 
+      /* data */ GenerateTemplateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GenerateTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Generates an Amazon CloudFormation template based on the current launch configuration and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
     */
-  def generateTemplate(params: awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def generateTemplate(params: GenerateTemplateRequest): awsDashSdkLib.libRequestMod.Request[GenerateTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def generateTemplate(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateRequest,
+    params: GenerateTemplateRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateResponse, 
+      /* data */ GenerateTemplateResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GenerateTemplateResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GenerateTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve information about an application.
     */
-  def getApp(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getApp(): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApp(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetAppResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetAppResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve information about an application.
     */
-  def getApp(params: awsDashSdkLib.clientsSmsMod.SMSNs.GetAppRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getApp(params: GetAppRequest): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getApp(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GetAppRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetAppResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+    params: GetAppRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetAppResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the application launch configuration associated with an application.
     */
-  def getAppLaunchConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getAppLaunchConfiguration(): awsDashSdkLib.libRequestMod.Request[GetAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAppLaunchConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationResponse, 
+      /* data */ GetAppLaunchConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves the application launch configuration associated with an application.
     */
-  def getAppLaunchConfiguration(params: awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getAppLaunchConfiguration(params: GetAppLaunchConfigurationRequest): awsDashSdkLib.libRequestMod.Request[GetAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAppLaunchConfiguration(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationRequest,
+    params: GetAppLaunchConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationResponse, 
+      /* data */ GetAppLaunchConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves an application replication configuration associatd with an application.
     */
-  def getAppReplicationConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getAppReplicationConfiguration(): awsDashSdkLib.libRequestMod.Request[GetAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAppReplicationConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationResponse, 
+      /* data */ GetAppReplicationConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves an application replication configuration associatd with an application.
     */
-  def getAppReplicationConfiguration(params: awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getAppReplicationConfiguration(params: GetAppReplicationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[GetAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getAppReplicationConfiguration(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationRequest,
+    params: GetAppReplicationConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationResponse, 
+      /* data */ GetAppReplicationConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the connectors registered with the AWS SMS.
     */
-  def getConnectors(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getConnectors(): awsDashSdkLib.libRequestMod.Request[GetConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConnectors(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsResponse, 
+      /* data */ GetConnectorsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the connectors registered with the AWS SMS.
     */
-  def getConnectors(params: awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getConnectors(params: GetConnectorsRequest): awsDashSdkLib.libRequestMod.Request[GetConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getConnectors(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsRequest,
+    params: GetConnectorsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsResponse, 
+      /* data */ GetConnectorsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetConnectorsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the specified replication job or all of your replication jobs.
     */
-  def getReplicationJobs(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getReplicationJobs(): awsDashSdkLib.libRequestMod.Request[GetReplicationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getReplicationJobs(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsResponse, 
+      /* data */ GetReplicationJobsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetReplicationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the specified replication job or all of your replication jobs.
     */
-  def getReplicationJobs(params: awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getReplicationJobs(params: GetReplicationJobsRequest): awsDashSdkLib.libRequestMod.Request[GetReplicationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getReplicationJobs(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsRequest,
+    params: GetReplicationJobsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsResponse, 
+      /* data */ GetReplicationJobsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationJobsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetReplicationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the replication runs for the specified replication job.
     */
-  def getReplicationRuns(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getReplicationRuns(): awsDashSdkLib.libRequestMod.Request[GetReplicationRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getReplicationRuns(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsResponse, 
+      /* data */ GetReplicationRunsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetReplicationRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the replication runs for the specified replication job.
     */
-  def getReplicationRuns(params: awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getReplicationRuns(params: GetReplicationRunsRequest): awsDashSdkLib.libRequestMod.Request[GetReplicationRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getReplicationRuns(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsRequest,
+    params: GetReplicationRunsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsResponse, 
+      /* data */ GetReplicationRunsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetReplicationRunsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetReplicationRunsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the servers in your server catalog. Before you can describe your servers, you must import them using ImportServerCatalog.
     */
-  def getServers(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetServersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getServers(): awsDashSdkLib.libRequestMod.Request[GetServersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getServers(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetServersResponse, 
+      /* data */ GetServersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetServersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetServersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Describes the servers in your server catalog. Before you can describe your servers, you must import them using ImportServerCatalog.
     */
-  def getServers(params: awsDashSdkLib.clientsSmsMod.SMSNs.GetServersRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetServersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getServers(params: GetServersRequest): awsDashSdkLib.libRequestMod.Request[GetServersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getServers(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.GetServersRequest,
+    params: GetServersRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.GetServersResponse, 
+      /* data */ GetServersResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.GetServersResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetServersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gathers a complete list of on-premises servers. Connectors must be installed and monitoring all servers that you want to import. This call returns immediately, but might take additional time to retrieve all the servers.
     */
-  def importServerCatalog(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def importServerCatalog(): awsDashSdkLib.libRequestMod.Request[ImportServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def importServerCatalog(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogResponse, 
+      /* data */ ImportServerCatalogResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ImportServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gathers a complete list of on-premises servers. Connectors must be installed and monitoring all servers that you want to import. This call returns immediately, but might take additional time to retrieve all the servers.
     */
-  def importServerCatalog(params: awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def importServerCatalog(params: ImportServerCatalogRequest): awsDashSdkLib.libRequestMod.Request[ImportServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def importServerCatalog(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogRequest,
+    params: ImportServerCatalogRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogResponse, 
+      /* data */ ImportServerCatalogResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ImportServerCatalogResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ImportServerCatalogResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Launches an application stack.
     */
-  def launchApp(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def launchApp(): awsDashSdkLib.libRequestMod.Request[LaunchAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def launchApp(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppResponse, 
+      /* data */ LaunchAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[LaunchAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Launches an application stack.
     */
-  def launchApp(params: awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def launchApp(params: LaunchAppRequest): awsDashSdkLib.libRequestMod.Request[LaunchAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def launchApp(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppRequest,
+    params: LaunchAppRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppResponse, 
+      /* data */ LaunchAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.LaunchAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[LaunchAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of summaries for all applications.
     */
-  def listApps(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listApps(): awsDashSdkLib.libRequestMod.Request[ListAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listApps(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsResponse, 
+      /* data */ ListAppsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns a list of summaries for all applications.
     */
-  def listApps(params: awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def listApps(params: ListAppsRequest): awsDashSdkLib.libRequestMod.Request[ListAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listApps(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsRequest,
+    params: ListAppsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsResponse, 
+      /* data */ ListAppsResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.ListAppsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[ListAppsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a launch configuration for an application.
     */
-  def putAppLaunchConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putAppLaunchConfiguration(): awsDashSdkLib.libRequestMod.Request[PutAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAppLaunchConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationResponse, 
+      /* data */ PutAppLaunchConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a launch configuration for an application.
     */
-  def putAppLaunchConfiguration(params: awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putAppLaunchConfiguration(params: PutAppLaunchConfigurationRequest): awsDashSdkLib.libRequestMod.Request[PutAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAppLaunchConfiguration(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationRequest,
+    params: PutAppLaunchConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationResponse, 
+      /* data */ PutAppLaunchConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppLaunchConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAppLaunchConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates or updates a replication configuration for an application.
     */
-  def putAppReplicationConfiguration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putAppReplicationConfiguration(): awsDashSdkLib.libRequestMod.Request[PutAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAppReplicationConfiguration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationResponse, 
+      /* data */ PutAppReplicationConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates or updates a replication configuration for an application.
     */
-  def putAppReplicationConfiguration(params: awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def putAppReplicationConfiguration(params: PutAppReplicationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[PutAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAppReplicationConfiguration(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationRequest,
+    params: PutAppReplicationConfigurationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationResponse, 
+      /* data */ PutAppReplicationConfigurationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.PutAppReplicationConfigurationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[PutAppReplicationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts replicating an application.
     */
-  def startAppReplication(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startAppReplication(): awsDashSdkLib.libRequestMod.Request[StartAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startAppReplication(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationResponse, 
+      /* data */ StartAppReplicationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts replicating an application.
     */
-  def startAppReplication(params: awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startAppReplication(params: StartAppReplicationRequest): awsDashSdkLib.libRequestMod.Request[StartAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startAppReplication(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationRequest,
+    params: StartAppReplicationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationResponse, 
+      /* data */ StartAppReplicationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts an on-demand replication run for the specified replication job. This replication run starts immediately. This replication run is in addition to the ones already scheduled. There is a limit on the number of on-demand replications runs you can request in a 24-hour period.
     */
-  def startOnDemandReplicationRun(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startOnDemandReplicationRun(): awsDashSdkLib.libRequestMod.Request[StartOnDemandReplicationRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startOnDemandReplicationRun(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunResponse, 
+      /* data */ StartOnDemandReplicationRunResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartOnDemandReplicationRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Starts an on-demand replication run for the specified replication job. This replication run starts immediately. This replication run is in addition to the ones already scheduled. There is a limit on the number of on-demand replications runs you can request in a 24-hour period.
     */
-  def startOnDemandReplicationRun(params: awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def startOnDemandReplicationRun(params: StartOnDemandReplicationRunRequest): awsDashSdkLib.libRequestMod.Request[StartOnDemandReplicationRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startOnDemandReplicationRun(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunRequest,
+    params: StartOnDemandReplicationRunRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunResponse, 
+      /* data */ StartOnDemandReplicationRunResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StartOnDemandReplicationRunResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StartOnDemandReplicationRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops replicating an application.
     */
-  def stopAppReplication(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopAppReplication(): awsDashSdkLib.libRequestMod.Request[StopAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopAppReplication(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationResponse, 
+      /* data */ StopAppReplicationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Stops replicating an application.
     */
-  def stopAppReplication(params: awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def stopAppReplication(params: StopAppReplicationRequest): awsDashSdkLib.libRequestMod.Request[StopAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopAppReplication(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationRequest,
+    params: StopAppReplicationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationResponse, 
+      /* data */ StopAppReplicationResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.StopAppReplicationResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[StopAppReplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Terminates the stack for an application.
     */
-  def terminateApp(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def terminateApp(): awsDashSdkLib.libRequestMod.Request[TerminateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def terminateApp(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppResponse, 
+      /* data */ TerminateAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TerminateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Terminates the stack for an application.
     */
-  def terminateApp(params: awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def terminateApp(params: TerminateAppRequest): awsDashSdkLib.libRequestMod.Request[TerminateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def terminateApp(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppRequest,
+    params: TerminateAppRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppResponse, 
+      /* data */ TerminateAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.TerminateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[TerminateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an application.
     */
-  def updateApp(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateApp(): awsDashSdkLib.libRequestMod.Request[UpdateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApp(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppResponse, 
+      /* data */ UpdateAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an application.
     */
-  def updateApp(params: awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateApp(params: UpdateAppRequest): awsDashSdkLib.libRequestMod.Request[UpdateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateApp(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppRequest,
+    params: UpdateAppRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppResponse, 
+      /* data */ UpdateAppResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateAppResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateAppResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified settings for the specified replication job.
     */
-  def updateReplicationJob(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateReplicationJob(): awsDashSdkLib.libRequestMod.Request[UpdateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateReplicationJob(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobResponse, 
+      /* data */ UpdateReplicationJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified settings for the specified replication job.
     */
-  def updateReplicationJob(params: awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def updateReplicationJob(params: UpdateReplicationJobRequest): awsDashSdkLib.libRequestMod.Request[UpdateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateReplicationJob(
-    params: awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobRequest,
+    params: UpdateReplicationJobRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobResponse, 
+      /* data */ UpdateReplicationJobResponse, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsSmsMod.SMSNs.UpdateReplicationJobResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[UpdateReplicationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

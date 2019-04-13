@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mock-raf", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): mockDashRafLib.mockDashRafMod.MockRafNs.Creator = js.native
+  def apply(): Creator = js.native
 }
 

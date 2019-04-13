@@ -9,7 +9,7 @@ trait NavItem
   extends // This is really any shape, but give some *hints* about additional formatting behind the scenes
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var divider: js.UndefOr[scala.Boolean] = js.undefined
-  var primaryText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var primaryText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var subheader: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object NavItem {
     StringDictionary: // This is really any shape, but give some *hints* about additional formatting behind the scenes
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     divider: js.UndefOr[scala.Boolean] = js.undefined,
-    primaryText: reactLib.reactMod.ReactNs.ReactNode = null,
+    primaryText: reactLib.reactMod.ReactNode = null,
     subheader: js.UndefOr[scala.Boolean] = js.undefined
   ): NavItem = {
     val __obj = js.Dynamic.literal()

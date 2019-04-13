@@ -22,7 +22,7 @@ object CheckboxGroupProps {
     onChange: /* checkedValue */ js.Array[CheckboxValueType] => scala.Unit = null,
     options: js.Array[CheckboxOptionType | java.lang.String] = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: js.Array[CheckboxValueType] = null
   ): CheckboxGroupProps = {
     val __obj = js.Dynamic.literal()

@@ -10,27 +10,23 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in 'onChange' ]: @material-ui/core.@material-ui/core/Select/SelectInput.SelectInputProps[P]} */ trait SelectProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SelectClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
-  var IconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var IconComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var MenuProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]] = js.undefined
-  var SelectDisplayProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
+  var SelectDisplayProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   var autoWidth: js.UndefOr[scala.Boolean] = js.undefined
   var displayEmpty: js.UndefOr[scala.Boolean] = js.undefined
-  var input: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var input: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var native: js.UndefOr[scala.Boolean] = js.undefined
-  var onClose: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit]
-  ] = js.undefined
-  var onOpen: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit]
-  ] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.ChangeEvent[js.Object], scala.Unit]] = js.undefined
+  var onOpen: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.ChangeEvent[js.Object], scala.Unit]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var renderValue: js.UndefOr[
     js.Function1[
       /* value */ js.UndefOr[
         (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
       ], 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var value: js.UndefOr[
@@ -44,24 +40,24 @@ import scala.scalajs.js.annotation._
 object SelectProps {
   @scala.inline
   def apply(
-    IconComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    IconComponent: reactLib.reactMod.ReactType[_] = null,
     MenuProps: stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = null,
-    SelectDisplayProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement] = null,
+    SelectDisplayProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SelectClassKey]] = null,
     displayEmpty: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    input: reactLib.reactMod.ReactNs.ReactNode = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
+    input: reactLib.reactMod.ReactNode = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     native: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
-    onOpen: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object] => scala.Unit = null,
+    onClose: /* event */ reactLib.reactMod.ChangeEvent[js.Object] => scala.Unit = null,
+    onOpen: /* event */ reactLib.reactMod.ChangeEvent[js.Object] => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     renderValue: /* value */ js.UndefOr[
       (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
-    ] => reactLib.reactMod.ReactNs.ReactNode = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    ] => reactLib.reactMod.ReactNode = null,
+    style: reactLib.reactMod.CSSProperties = null,
     value: (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): SelectProps = {

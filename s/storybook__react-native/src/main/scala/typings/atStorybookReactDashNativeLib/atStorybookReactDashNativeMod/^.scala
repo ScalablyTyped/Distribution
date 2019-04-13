@@ -14,7 +14,7 @@ object ^ extends js.Object {
   def configure(fn: js.Function0[scala.Unit], module: nodeLib.NodeModule): scala.Unit = js.native
   def forceReRender(): scala.Unit = js.native
   def getStorybook(): js.Array[atStorybookReactLib.atStorybookReactMod.StoryBucket] = js.native
-  def getStorybookUI(options: StorybookUIOptions): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def getStorybookUI(options: StorybookUIOptions): reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = js.native
   def setAddon(addon: js.Object): scala.Unit = js.native
   def storiesOf(name: java.lang.String, module: nodeLib.NodeModule): atStorybookReactLib.atStorybookReactMod.Story = js.native
   @JSName("storiesOf")

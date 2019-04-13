@@ -9,7 +9,7 @@ trait DataItem
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var isLeaf: js.UndefOr[scala.Boolean] = js.undefined
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object DataItem {
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     isLeaf: js.UndefOr[scala.Boolean] = js.undefined,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     value: js.Any = null
   ): DataItem = {
     val __obj = js.Dynamic.literal()

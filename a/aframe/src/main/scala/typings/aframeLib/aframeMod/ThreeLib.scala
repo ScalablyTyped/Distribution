@@ -682,8 +682,8 @@ trait ThreeLib extends js.Object {
   ] = js.native
   var Scene: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Scene] = js.native
   val SceneUtilsNs: aframeLib.Anon_Attach = js.native
-  var ShaderChunk: threeLib.Anon_Alphamapfragment = js.native
-  var ShaderLib: threeLib.Anon_Basic = js.native
+  var ShaderChunk: aframeLib.Anon_Alphamapfragment = js.native
+  var ShaderLib: aframeLib.Anon_Basic = js.native
   var ShaderMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ShaderMaterial] = js.native
   var ShadowMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ShadowMaterial] = js.native
   var Shape: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Shape] = js.native
@@ -818,7 +818,7 @@ trait ThreeLib extends js.Object {
   ] = js.native
   val Uncharted2ToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
   var Uniform: org.scalablytyped.runtime.Instantiable1[/* value */ js.Any, threeLib.threeMod.Uniform] = js.native
-  var UniformsLib: threeLib.Anon_Aomap = js.native
+  var UniformsLib: aframeLib.Anon_Aomap = js.native
   val UniformsUtilsNs: aframeLib.Anon_Clone = js.native
   val UnsignedByteType: threeLib.srcConstantsMod.TextureDataType = js.native
   val UnsignedInt248Type: threeLib.srcConstantsMod.PixelType = js.native

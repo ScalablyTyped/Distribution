@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Query ()
   extends pgLib.pgMod.Query {
-  var promise: qLib.qMod.QNs.Promise[QueryResult] = js.native
+  var promise: qLib.qMod.Promise[QueryResult] = js.native
 }
 

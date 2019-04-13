@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val matchers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.ExpectExtendMap */ js.Any = js.native
-  def matchersWithOptions(options: ajvLib.ajvMod.ajvNs.Options): js.Any = js.native
+  def matchersWithOptions(options: ajvLib.ajvMod.Options): js.Any = js.native
 }
 

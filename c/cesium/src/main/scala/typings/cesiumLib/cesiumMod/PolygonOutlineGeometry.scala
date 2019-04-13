@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "PolygonOutlineGeometry")
 @js.native
-class PolygonOutlineGeometry protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry {
+class PolygonOutlineGeometry protected () extends Packable {
   def this(options: cesiumLib.Anon_EllipsoidExtrudedHeightGranularity) = this()
 }
 
@@ -16,15 +15,15 @@ class PolygonOutlineGeometry protected ()
 @JSImport("cesium", "PolygonOutlineGeometry")
 @js.native
 object PolygonOutlineGeometry extends js.Object {
-  def createGeometry(polygonGeometry: cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
-  def fromPositions(): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
-  def fromPositions(options: cesiumLib.Anon_EllipsoidExtrudedHeightGranularityHeight): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
-  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
-  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
+  def createGeometry(polygonGeometry: cesiumLib.cesiumMod.PolygonOutlineGeometry): cesiumLib.cesiumMod.Geometry = js.native
+  def fromPositions(): cesiumLib.cesiumMod.PolygonOutlineGeometry = js.native
+  def fromPositions(options: cesiumLib.Anon_EllipsoidExtrudedHeightGranularityHeight): cesiumLib.cesiumMod.PolygonOutlineGeometry = js.native
+  def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.PolygonOutlineGeometry = js.native
+  def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.PolygonOutlineGeometry = js.native
   def unpack(
     array: js.Array[scala.Double],
     startingIndex: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry
-  ): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
+    result: cesiumLib.cesiumMod.PolygonOutlineGeometry
+  ): cesiumLib.cesiumMod.PolygonOutlineGeometry = js.native
 }
 

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class MobileAnalytics ()
   extends awsDashSdkLib.awsDashSdkMod.MobileAnalytics {
-  def this(options: awsDashSdkLib.clientsMobileanalyticsMod.MobileAnalyticsNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsMobileanalyticsMod.ClientConfiguration) = this()
 }
 

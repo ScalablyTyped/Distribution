@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AnyDBPool
-  extends anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.DatabaseConnection {
-  def begin(): anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Transaction = js.native
+trait AnyDBPool extends DatabaseConnection {
+  def begin(): Transaction = js.native
   def close(err: stdLib.Error): scala.Unit = js.native
   def query(
     text: java.lang.String,

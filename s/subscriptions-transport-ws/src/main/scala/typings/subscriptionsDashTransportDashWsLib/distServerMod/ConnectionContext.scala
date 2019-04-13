@@ -10,7 +10,7 @@ trait ConnectionContext extends js.Object {
   var isLegacy: scala.Boolean
   var operations: org.scalablytyped.runtime.StringDictionary[ExecutionIterator]
   var request: nodeLib.httpMod.IncomingMessage
-  var socket: wsLib.wsMod.namespaced
+  var socket: wsLib.wsMod.^
 }
 
 object ConnectionContext {
@@ -19,7 +19,7 @@ object ConnectionContext {
     isLegacy: scala.Boolean,
     operations: org.scalablytyped.runtime.StringDictionary[ExecutionIterator],
     request: nodeLib.httpMod.IncomingMessage,
-    socket: wsLib.wsMod.namespaced,
+    socket: wsLib.wsMod.^,
     initPromise: js.Promise[_] = null
   ): ConnectionContext = {
     val __obj = js.Dynamic.literal(isLegacy = isLegacy, operations = operations, request = request, socket = socket)

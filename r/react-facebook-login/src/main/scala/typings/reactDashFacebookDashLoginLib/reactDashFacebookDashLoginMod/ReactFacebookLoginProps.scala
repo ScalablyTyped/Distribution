@@ -9,19 +9,19 @@ trait ReactFacebookLoginProps extends js.Object {
   var appId: java.lang.String
   var authType: js.UndefOr[java.lang.String] = js.undefined
   var autoLoad: js.UndefOr[scala.Boolean] = js.undefined
-  var buttonStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var buttonStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var cookie: js.UndefOr[scala.Boolean] = js.undefined
   var cssClass: js.UndefOr[java.lang.String] = js.undefined
   var disableMobileRedirect: js.UndefOr[scala.Boolean] = js.undefined
   var fields: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var isDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var isMobile: js.UndefOr[scala.Boolean] = js.undefined
   var language: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -50,17 +50,17 @@ object ReactFacebookLoginProps {
     callback: ReactFacebookLoginInfo => scala.Unit,
     authType: java.lang.String = null,
     autoLoad: js.UndefOr[scala.Boolean] = js.undefined,
-    buttonStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    buttonStyle: reactLib.reactMod.CSSProperties = null,
+    containerStyle: reactLib.reactMod.CSSProperties = null,
     cookie: js.UndefOr[scala.Boolean] = js.undefined,
     cssClass: java.lang.String = null,
     disableMobileRedirect: js.UndefOr[scala.Boolean] = js.undefined,
     fields: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNode = null,
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isMobile: js.UndefOr[scala.Boolean] = js.undefined,
     language: java.lang.String = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     onFailure: /* response */ ReactFacebookFailureResponse => scala.Unit = null,
     reAuthenticate: js.UndefOr[scala.Boolean] = js.undefined,
     redirectUri: java.lang.String = null,

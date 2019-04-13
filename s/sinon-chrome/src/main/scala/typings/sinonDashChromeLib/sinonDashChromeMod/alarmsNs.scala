@@ -13,6 +13,6 @@ object alarmsNs extends js.Object {
   var create: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
   var getAll: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub = js.native
-  var onAlarm: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event = js.native
+  var onAlarm: sinonDashChromeLib.sinonDashChromeMod.eventsNs.Event = js.native
 }
 

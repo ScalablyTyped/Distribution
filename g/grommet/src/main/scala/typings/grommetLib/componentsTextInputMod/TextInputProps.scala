@@ -19,7 +19,7 @@ trait TextInputProps extends js.Object {
   var onSelect: js.UndefOr[js.Function1[/* x */ grommetLib.Anon_Suggestion, scala.Unit]] = js.undefined
   var onSuggestionsClose: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSuggestionsOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var plain: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[
     grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
@@ -42,7 +42,7 @@ object TextInputProps {
     onSelect: /* x */ grommetLib.Anon_Suggestion => scala.Unit = null,
     onSuggestionsClose: /* repeated */ js.Any => _ = null,
     onSuggestionsOpen: /* repeated */ js.Any => _ = null,
-    placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: java.lang.String | reactLib.reactMod.ReactNode = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
     suggestions: js.Array[grommetLib.Anon_Label | java.lang.String] = null,

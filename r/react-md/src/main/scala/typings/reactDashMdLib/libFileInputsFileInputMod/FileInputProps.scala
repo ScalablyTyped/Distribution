@@ -15,20 +15,20 @@ trait FileInputProps
   ] = js.native
   var disabled: js.UndefOr[scala.Boolean] = js.native
   var flat: js.UndefOr[scala.Boolean] = js.native
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
+  var icon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.native
   var iconBefore: js.UndefOr[scala.Boolean] = js.native
   /**
     * @deprecated
     */
-  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   /**
     * @deprecated
     */
   var iconClassName: js.UndefOr[java.lang.String] = js.native
   var id: reactDashMdLib.libMod.IdPropType = js.native
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   var labelClassName: js.UndefOr[java.lang.String] = js.native
-  var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var labelStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.native
   var multiple: js.UndefOr[scala.Boolean] = js.native
   var name: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.native
   var primary: js.UndefOr[scala.Boolean] = js.native

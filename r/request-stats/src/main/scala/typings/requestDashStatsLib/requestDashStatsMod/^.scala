@@ -16,12 +16,12 @@ object ^ extends js.Object {
     * @param res An instance of a HTTP response.
     * @param statsCallback A callback which will be called with a stats object when the HTTP request completes.
     */
-  def apply(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): requestDashStatsLib.requestDashStatsMod.requestStatsNs.StatsEmitter = js.native
+  def apply(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): StatsEmitter = js.native
   def apply(
     req: nodeLib.httpMod.IncomingMessage,
     res: nodeLib.httpMod.ServerResponse,
-    statsCallback: requestDashStatsLib.requestDashStatsMod.requestStatsNs.StatsCallback
-  ): requestDashStatsLib.requestDashStatsMod.requestStatsNs.StatsEmitter = js.native
+    statsCallback: StatsCallback
+  ): StatsEmitter = js.native
   /**
     * Attach request-stats to a HTTP server.
     * If no callback is provided, you can later attach a listener on the "complete" event.
@@ -29,10 +29,7 @@ object ^ extends js.Object {
     * @param server Initialize request-stats with an instance a HTTP server.
     * @param statsCallback A callback which will be called for each completed HTTP request with a stats object.
     */
-  def apply(server: nodeLib.httpMod.Server | nodeLib.httpsMod.Server): requestDashStatsLib.requestDashStatsMod.requestStatsNs.StatsEmitter = js.native
-  def apply(
-    server: nodeLib.httpMod.Server | nodeLib.httpsMod.Server,
-    statsCallback: requestDashStatsLib.requestDashStatsMod.requestStatsNs.StatsCallback
-  ): requestDashStatsLib.requestDashStatsMod.requestStatsNs.StatsEmitter = js.native
+  def apply(server: nodeLib.httpMod.Server | nodeLib.httpsMod.Server): StatsEmitter = js.native
+  def apply(server: nodeLib.httpMod.Server | nodeLib.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = js.native
 }
 

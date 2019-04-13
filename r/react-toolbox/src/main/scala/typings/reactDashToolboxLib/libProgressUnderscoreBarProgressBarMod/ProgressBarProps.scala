@@ -63,7 +63,7 @@ object ProgressBarProps {
     buffer: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     mode: reactDashToolboxLib.reactDashToolboxLibStrings.determinate | reactDashToolboxLib.reactDashToolboxLibStrings.indeterminate = null,
@@ -90,7 +90,7 @@ object ProgressBarProps {
     onTouchEnd: js.Function = null,
     onTouchMove: js.Function = null,
     onTouchStart: js.Function = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: ProgressBarTheme = null,
     `type`: reactDashToolboxLib.reactDashToolboxLibStrings.linear | reactDashToolboxLib.reactDashToolboxLibStrings.circular = null,
     value: scala.Int | scala.Double = null

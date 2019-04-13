@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Checkbox
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libCheckboxMod.CheckboxNs.CheckboxProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[CheckboxProps, js.Object, js.Any]
 

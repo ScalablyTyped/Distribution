@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashPercentageDashCircleLibComponents {
   @scala.inline
-  def ReactDashNativeDashPercentageDashCircle: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashPercentageDashCircle: reactLib.reactMod.ComponentType[
     reactDashNativeDashPercentageDashCircleLib.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps
-  ] = js.constructorOf[reactDashNativeDashPercentageDashCircleLib.reactDashNativeDashPercentageDashCircleMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashPercentageDashCircleLib.reactDashNativeDashPercentageDashCircleMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashPercentageDashCircleLib.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps]]
   @scala.inline
   def PercentageCircleProps: reactDashNativeDashPercentageDashCircleLib.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps.type = reactDashNativeDashPercentageDashCircleLib.reactDashNativeDashPercentageDashCircleMod.PercentageCircleProps

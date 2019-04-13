@@ -13,6 +13,6 @@ trait Anon_AppAuthHooks extends js.Object {
   val serviceNs: Anon_App = js.native
   def default(): js.Function0[scala.Unit] = js.native
   def default(config: atFeathersjsAuthenticationLib.atFeathersjsAuthenticationMod.FeathersAuthenticationOptions): js.Function0[scala.Unit] = js.native
-  def service(options: atFeathersjsAuthenticationLib.atFeathersjsAuthenticationMod.FeathersAuthenticationOptions): js.Function1[/* app */ js.UndefOr[expressLib.expressMod.eNs.Application], scala.Unit] = js.native
+  def service(options: atFeathersjsAuthenticationLib.atFeathersjsAuthenticationMod.FeathersAuthenticationOptions): js.Function1[/* app */ js.UndefOr[expressLib.expressMod.Application], scala.Unit] = js.native
 }
 

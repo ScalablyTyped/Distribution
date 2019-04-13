@@ -7,37 +7,34 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DuplexifyConstructor
-  extends org.scalablytyped.runtime.Instantiable0[duplexifyLib.duplexifyMod.duplexifyNs.Duplexify]
-     with org.scalablytyped.runtime.Instantiable1[
-      /* writable */ nodeLib.streamMod.Writable, 
-      duplexifyLib.duplexifyMod.duplexifyNs.Duplexify
-    ]
+  extends org.scalablytyped.runtime.Instantiable0[Duplexify]
+     with org.scalablytyped.runtime.Instantiable1[/* writable */ nodeLib.streamMod.Writable, Duplexify]
      with org.scalablytyped.runtime.Instantiable2[
       /* writable */ nodeLib.streamMod.Writable, 
       /* readable */ nodeLib.streamMod.Readable, 
-      duplexifyLib.duplexifyMod.duplexifyNs.Duplexify
+      Duplexify
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* writable */ nodeLib.streamMod.Writable, 
       /* readable */ nodeLib.streamMod.Readable, 
-      /* streamOptions */ nodeLib.streamMod.internalNs.DuplexOptions, 
-      duplexifyLib.duplexifyMod.duplexifyNs.Duplexify
+      /* streamOptions */ nodeLib.streamMod.DuplexOptions, 
+      Duplexify
     ] {
-  def apply(): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
-  def apply(writable: nodeLib.streamMod.Writable): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
-  def apply(writable: nodeLib.streamMod.Writable, readable: nodeLib.streamMod.Readable): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
+  def apply(): Duplexify = js.native
+  def apply(writable: nodeLib.streamMod.Writable): Duplexify = js.native
+  def apply(writable: nodeLib.streamMod.Writable, readable: nodeLib.streamMod.Readable): Duplexify = js.native
   def apply(
     writable: nodeLib.streamMod.Writable,
     readable: nodeLib.streamMod.Readable,
-    streamOptions: nodeLib.streamMod.internalNs.DuplexOptions
-  ): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
-  def obj(): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
-  def obj(writable: nodeLib.streamMod.Writable): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
-  def obj(writable: nodeLib.streamMod.Writable, readable: nodeLib.streamMod.Readable): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
+    streamOptions: nodeLib.streamMod.DuplexOptions
+  ): Duplexify = js.native
+  def obj(): Duplexify = js.native
+  def obj(writable: nodeLib.streamMod.Writable): Duplexify = js.native
+  def obj(writable: nodeLib.streamMod.Writable, readable: nodeLib.streamMod.Readable): Duplexify = js.native
   def obj(
     writable: nodeLib.streamMod.Writable,
     readable: nodeLib.streamMod.Readable,
-    streamOptions: nodeLib.streamMod.internalNs.DuplexOptions
-  ): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
+    streamOptions: nodeLib.streamMod.DuplexOptions
+  ): Duplexify = js.native
 }
 

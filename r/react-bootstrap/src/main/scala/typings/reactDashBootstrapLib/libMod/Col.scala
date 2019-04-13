@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Col")
 @js.native
 class Col ()
-  extends reactDashBootstrapLib.libColMod.namespaced
+  extends reactDashBootstrapLib.libColMod.^
 

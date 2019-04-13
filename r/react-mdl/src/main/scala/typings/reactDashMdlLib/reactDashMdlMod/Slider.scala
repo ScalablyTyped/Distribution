@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Slider")
 @js.native
-class Slider ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Slider
+class Slider () extends __MDLComponent[SliderProps]
 

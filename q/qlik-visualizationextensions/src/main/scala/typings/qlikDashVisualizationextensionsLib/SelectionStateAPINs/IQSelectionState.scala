@@ -27,29 +27,29 @@ trait IQSelectionState extends js.Object {
     * @param lockedAlso - Use to also clear locked fields.
     * @return - A promise of a Qlik engine reply.
     */
-  def clearAll(lockedAlso: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_]
+  def clearAll(lockedAlso: scala.Boolean): angularLib.angularMod.IPromise[_]
   /**
     * Locks all selections in this state.
     * @return - A promise of a Qlik engine reply.
     */
-  def lockAll(): angularLib.angularMod.angularNs.IPromise[_]
+  def lockAll(): angularLib.angularMod.IPromise[_]
   /**
     * Unlocks all selections in this state.
     * @return - A promise of a Qlik engine reply.
     */
-  def unlockAll(): angularLib.angularMod.angularNs.IPromise[_]
+  def unlockAll(): angularLib.angularMod.IPromise[_]
 }
 
 object IQSelectionState {
   @scala.inline
   def apply(
     backCount: scala.Double,
-    clearAll: scala.Boolean => angularLib.angularMod.angularNs.IPromise[_],
+    clearAll: scala.Boolean => angularLib.angularMod.IPromise[_],
     forwardCount: scala.Double,
-    lockAll: () => angularLib.angularMod.angularNs.IPromise[_],
+    lockAll: () => angularLib.angularMod.IPromise[_],
     selections: IQFieldSelections,
     stateName: java.lang.String,
-    unlockAll: () => angularLib.angularMod.angularNs.IPromise[_]
+    unlockAll: () => angularLib.angularMod.IPromise[_]
   ): IQSelectionState = {
     val __obj = js.Dynamic.literal(backCount = backCount, clearAll = js.Any.fromFunction1(clearAll), forwardCount = forwardCount, lockAll = js.Any.fromFunction0(lockAll), selections = selections, stateName = stateName, unlockAll = js.Any.fromFunction0(unlockAll))
   

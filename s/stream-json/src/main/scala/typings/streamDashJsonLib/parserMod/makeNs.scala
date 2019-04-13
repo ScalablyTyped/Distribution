@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-json/Parser", "make")
 @js.native
 object makeNs extends js.Object {
-  val Constructor: streamDashJsonLib.Anon_Make with (org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ streamDashJsonLib.parserMod.ParserNs.ParserOptions], 
+  val Constructor: org.scalablytyped.runtime.Instantiable1[
+    /* options */ js.UndefOr[/* options */ streamDashJsonLib.parserMod.ParserOptions], 
     streamDashJsonLib.parserMod.Parser
-  ]) = js.native
+  ] = js.native
+  type Constructor = streamDashJsonLib.parserMod.Parser
 }
 

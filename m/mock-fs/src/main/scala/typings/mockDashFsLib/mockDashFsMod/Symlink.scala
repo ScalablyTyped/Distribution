@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-fs", "Symlink")
 @js.native
-class Symlink ()
-  extends mockDashFsLib.mockDashFsMod.mockNs.Symlink {
-  /* CompleteClass */
-  override var _symlink: js.Any = js.native
+class Symlink () extends js.Object {
+  var _symlink: js.Any = js.native
 }
 

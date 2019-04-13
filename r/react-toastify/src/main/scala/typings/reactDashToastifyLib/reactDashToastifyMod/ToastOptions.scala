@@ -13,15 +13,15 @@ trait ToastOptions extends ToastAndToastContainerOptions {
   /**
     * Called inside componentWillUnmount.
     */
-  var onClose: js.UndefOr[js.Function1[/* childrenProps */ reactLib.reactMod.ReactNs.Props[_], scala.Unit]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* childrenProps */ reactLib.reactMod.Props[_], scala.Unit]] = js.undefined
   /**
     * Called inside componentDidMount.
     */
-  var onOpen: js.UndefOr[js.Function1[/* childrenProps */ reactLib.reactMod.ReactNs.Props[_], scala.Unit]] = js.undefined
+  var onOpen: js.UndefOr[js.Function1[/* childrenProps */ reactLib.reactMod.Props[_], scala.Unit]] = js.undefined
   /**
     * String or React Element, only available when calling update.
     */
-  var render: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var render: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * Kind of notification.
     * @default 'default'
@@ -42,12 +42,12 @@ object ToastOptions {
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     draggablePercent: scala.Int | scala.Double = null,
     hideProgressBar: js.UndefOr[scala.Boolean] = js.undefined,
-    onClose: /* childrenProps */ reactLib.reactMod.ReactNs.Props[_] => scala.Unit = null,
-    onOpen: /* childrenProps */ reactLib.reactMod.ReactNs.Props[_] => scala.Unit = null,
+    onClose: /* childrenProps */ reactLib.reactMod.Props[_] => scala.Unit = null,
+    onOpen: /* childrenProps */ reactLib.reactMod.Props[_] => scala.Unit = null,
     pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     position: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-left` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-left` = null,
     progressClassName: java.lang.String = null,
-    render: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    render: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     transition: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = null,
     `type`: reactDashToastifyLib.reactDashToastifyLibStrings.default | reactDashToastifyLib.reactDashToastifyLibStrings.success | reactDashToastifyLib.reactDashToastifyLibStrings.info | reactDashToastifyLib.reactDashToastifyLibStrings.warning | reactDashToastifyLib.reactDashToastifyLibStrings.error = null
   ): ToastOptions = {

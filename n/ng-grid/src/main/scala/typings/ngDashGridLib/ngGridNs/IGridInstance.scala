@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait IGridInstance extends js.Object {
   @JSName("$canvas")
-  var $canvas: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $canvas: angularLib.angularMod.IAugmentedJQuery
   @JSName("$footerPanel")
-  var $footerPanel: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $footerPanel: angularLib.angularMod.IAugmentedJQuery
   @JSName("$groupPanel")
-  var $groupPanel: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $groupPanel: angularLib.angularMod.IAugmentedJQuery
   @JSName("$headerContainer")
-  var $headerContainer: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $headerContainer: angularLib.angularMod.IAugmentedJQuery
   @JSName("$headerScroller")
-  var $headerScroller: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $headerScroller: angularLib.angularMod.IAugmentedJQuery
   @JSName("$headers")
-  var $headers: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $headers: angularLib.angularMod.IAugmentedJQuery
   @JSName("$root")
-  var $root: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $root: angularLib.angularMod.IAugmentedJQuery
   @JSName("$topPanel")
-  var $topPanel: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $topPanel: angularLib.angularMod.IAugmentedJQuery
   @JSName("$viewport")
-  var $viewport: angularLib.angularMod.angularNs.IAugmentedJQuery
+  var $viewport: angularLib.angularMod.IAugmentedJQuery
   var config: IGridOptions
   var data: js.Any
   var elementDims: IElementDimension
@@ -49,9 +49,9 @@ trait IGridInstance extends js.Object {
   def configureColumnWidths(): scala.Unit
   def fixColumnIndexes(): scala.Unit
   def fixGroupIndexes(): scala.Unit
-  def getTemplate(key: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
-  def init(): angularLib.angularMod.angularNs.IPromise[_]
-  def initTemplates(): angularLib.angularMod.angularNs.IPromise[_]
+  def getTemplate(key: java.lang.String): angularLib.angularMod.IPromise[_]
+  def init(): angularLib.angularMod.IPromise[_]
+  def initTemplates(): angularLib.angularMod.IPromise[_]
   def minRowsToRender(): scala.Unit
   def refreshDomSizes(): scala.Unit
   def resizeOnData(col: IColumn): scala.Unit
@@ -64,15 +64,15 @@ trait IGridInstance extends js.Object {
 object IGridInstance {
   @scala.inline
   def apply(
-    $canvas: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $footerPanel: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $groupPanel: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $headerContainer: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $headerScroller: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $headers: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $root: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $topPanel: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    $viewport: angularLib.angularMod.angularNs.IAugmentedJQuery,
+    $canvas: angularLib.angularMod.IAugmentedJQuery,
+    $footerPanel: angularLib.angularMod.IAugmentedJQuery,
+    $groupPanel: angularLib.angularMod.IAugmentedJQuery,
+    $headerContainer: angularLib.angularMod.IAugmentedJQuery,
+    $headerScroller: angularLib.angularMod.IAugmentedJQuery,
+    $headers: angularLib.angularMod.IAugmentedJQuery,
+    $root: angularLib.angularMod.IAugmentedJQuery,
+    $topPanel: angularLib.angularMod.IAugmentedJQuery,
+    $viewport: angularLib.angularMod.IAugmentedJQuery,
     buildColumnDefsFromData: () => scala.Unit,
     buildColumns: () => scala.Unit,
     calcMaxCanvasHeight: () => scala.Unit,
@@ -86,10 +86,10 @@ object IGridInstance {
     fixColumnIndexes: () => scala.Unit,
     fixGroupIndexes: () => scala.Unit,
     footerController: js.Any,
-    getTemplate: java.lang.String => angularLib.angularMod.angularNs.IPromise[_],
+    getTemplate: java.lang.String => angularLib.angularMod.IPromise[_],
     gridId: java.lang.String,
-    init: () => angularLib.angularMod.angularNs.IPromise[_],
-    initTemplates: () => angularLib.angularMod.angularNs.IPromise[_],
+    init: () => angularLib.angularMod.IPromise[_],
+    initTemplates: () => angularLib.angularMod.IPromise[_],
     lastSortedColumns: js.Array[IColumn],
     lateBindColumns: scala.Boolean,
     maxCanvasHt: scala.Double,

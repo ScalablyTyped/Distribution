@@ -23,7 +23,7 @@ trait Anon_Condition extends js.Object {
   def apply(condition: js.Function0[js.Thenable[scala.Boolean] | scala.Boolean]): js.Promise[scala.Unit] = js.native
   def apply(
     condition: js.Function0[js.Thenable[scala.Boolean] | scala.Boolean],
-    options: pDashWaitDashForLib.pDashWaitDashForMod.pWaitForNs.Options
+    options: pDashWaitDashForLib.pDashWaitDashForMod.Options
   ): js.Promise[scala.Unit] = js.native
 }
 

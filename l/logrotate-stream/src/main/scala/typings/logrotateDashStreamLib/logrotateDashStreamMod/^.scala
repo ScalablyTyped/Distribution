@@ -12,6 +12,6 @@ object ^ extends js.Object {
     * Create a rotating log stream.
     * @returns a writable stream to a rotating log file
     */
-  def apply(opts: logrotateDashStreamLib.logrotateDashStreamMod.logrotateStreamNs.Options): nodeLib.streamMod.Writable = js.native
+  def apply(opts: Options): nodeLib.streamMod.Writable = js.native
 }
 

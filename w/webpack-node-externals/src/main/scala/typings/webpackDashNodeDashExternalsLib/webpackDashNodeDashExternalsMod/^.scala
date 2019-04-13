@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack-node-externals", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): webpackLib.webpackMod.webpackNs.ExternalsFunctionElement = js.native
-  def apply(
-    options: webpackDashNodeDashExternalsLib.webpackDashNodeDashExternalsMod.webpackNodeExternalsNs.Options
-  ): webpackLib.webpackMod.webpackNs.ExternalsFunctionElement = js.native
+  def apply(): webpackLib.webpackMod.ExternalsFunctionElement = js.native
+  def apply(options: Options): webpackLib.webpackMod.ExternalsFunctionElement = js.native
 }
 

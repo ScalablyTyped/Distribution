@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait TimelineGroup extends js.Object {
   var id: scala.Double
-  var rightTitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var title: reactLib.reactMod.ReactNs.ReactNode
+  var rightTitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var title: reactLib.reactMod.ReactNode
 }
 
 object TimelineGroup {
   @scala.inline
   def apply(
     id: scala.Double,
-    title: reactLib.reactMod.ReactNs.ReactNode,
-    rightTitle: reactLib.reactMod.ReactNs.ReactNode = null
+    title: reactLib.reactMod.ReactNode,
+    rightTitle: reactLib.reactMod.ReactNode = null
   ): TimelineGroup = {
     val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
     if (rightTitle != null) __obj.updateDynamic("rightTitle")(rightTitle.asInstanceOf[js.Any])

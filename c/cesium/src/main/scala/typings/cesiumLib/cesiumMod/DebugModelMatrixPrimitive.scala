@@ -7,22 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "DebugModelMatrixPrimitive")
 @js.native
-class DebugModelMatrixPrimitive ()
-  extends cesiumLib.cesiumMod.CesiumNs.DebugModelMatrixPrimitive {
+class DebugModelMatrixPrimitive () extends js.Object {
   def this(options: cesiumLib.Anon_Id) = this()
-  /* CompleteClass */
-  override var id: js.Any = js.native
-  /* CompleteClass */
-  override var length: scala.Double = js.native
-  /* CompleteClass */
-  override var modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = js.native
-  /* CompleteClass */
-  override var show: scala.Boolean = js.native
-  /* CompleteClass */
-  override var width: scala.Double = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
+  var id: js.Any = js.native
+  var length: scala.Double = js.native
+  var modelMatrix: Matrix4 = js.native
+  var show: scala.Boolean = js.native
+  var width: scala.Double = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
 }
 

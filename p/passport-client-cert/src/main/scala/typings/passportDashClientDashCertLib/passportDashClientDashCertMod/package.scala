@@ -15,7 +15,7 @@ package object passportDashClientDashCertMod {
   type VerifyFunction = js.Function2[/* clientCert */ PeerCertificate, /* done */ VerifyCallback, scala.Unit]
   type VerifyFunctionWithRequest = js.Function3[
     /* clientCert */ PeerCertificate, 
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* done */ VerifyCallback, 
     scala.Unit
   ]

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReferenceConverter ()
   extends typedocLib.distLibConverterComponentsMod.TypeNodeConverter[
-      typescriptLib.typescriptMod.tsNs.TypeReference, 
-      typescriptLib.typescriptMod.tsNs.TypeReferenceNode
+      typescriptLib.typescriptMod.TypeReference, 
+      typescriptLib.typescriptMod.TypeReferenceNode
     ] {
   var convertLiteral: js.Any = js.native
   def convertType(
     context: typedocLib.distLibConverterContextMod.Context,
-    `type`: typescriptLib.typescriptMod.tsNs.TypeReference
+    `type`: typescriptLib.typescriptMod.TypeReference
   ): js.UndefOr[typedocLib.distLibModelsTypesMod.Type] = js.native
   def supportsType(
     context: typedocLib.distLibConverterContextMod.Context,
-    `type`: typescriptLib.typescriptMod.tsNs.TypeReference
+    `type`: typescriptLib.typescriptMod.TypeReference
   ): scala.Boolean = js.native
 }
 

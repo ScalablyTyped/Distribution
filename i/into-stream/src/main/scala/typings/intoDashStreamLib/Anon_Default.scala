@@ -18,14 +18,14 @@ trait Anon_Default extends js.Object {
   	//=> 'unicorn'
   	```
   	*/
-  def apply(input: intoDashStreamLib.intoDashStreamMod.intoStreamNs.Input): nodeLib.streamMod.Readable = js.native
-  def apply(input: js.Promise[intoDashStreamLib.intoDashStreamMod.intoStreamNs.Input]): nodeLib.streamMod.Readable = js.native
+  def apply(input: intoDashStreamLib.intoDashStreamMod.Input): nodeLib.streamMod.Readable = js.native
+  def apply(input: js.Promise[intoDashStreamLib.intoDashStreamMod.Input]): nodeLib.streamMod.Readable = js.native
   /**
   	Convert object `input` into a stream.
   	@param input - The object input to convert to a stream.
   	@returns A [readable object stream](https://nodejs.org/api/stream.html#stream_object_mode).
   	*/
-  def `object`(input: intoDashStreamLib.intoDashStreamMod.intoStreamNs.InputObject): nodeLib.streamMod.Readable = js.native
-  def `object`(input: js.Promise[intoDashStreamLib.intoDashStreamMod.intoStreamNs.InputObject]): nodeLib.streamMod.Readable = js.native
+  def `object`(input: intoDashStreamLib.intoDashStreamMod.InputObject): nodeLib.streamMod.Readable = js.native
+  def `object`(input: js.Promise[intoDashStreamLib.intoDashStreamMod.InputObject]): nodeLib.streamMod.Readable = js.native
 }
 

@@ -7,21 +7,18 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "Ray")
 @js.native
-class Ray ()
-  extends cesiumLib.cesiumMod.CesiumNs.Ray {
-  def this(origin: cesiumLib.cesiumMod.CesiumNs.Cartesian3) = this()
-  def this(origin: cesiumLib.cesiumMod.CesiumNs.Cartesian3, direction: cesiumLib.cesiumMod.CesiumNs.Cartesian3) = this()
-  /* CompleteClass */
-  override var direction: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
-  /* CompleteClass */
-  override var origin: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
+class Ray () extends js.Object {
+  def this(origin: Cartesian3) = this()
+  def this(origin: Cartesian3, direction: Cartesian3) = this()
+  var direction: Cartesian3 = js.native
+  var origin: Cartesian3 = js.native
 }
 
 /* static members */
 @JSImport("cesium", "Ray")
 @js.native
 object Ray extends js.Object {
-  def getPoint(t: scala.Double): cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
-  def getPoint(t: scala.Double, result: cesiumLib.cesiumMod.CesiumNs.Cartesian3): cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
+  def getPoint(t: scala.Double): cesiumLib.cesiumMod.Cartesian3 = js.native
+  def getPoint(t: scala.Double, result: cesiumLib.cesiumMod.Cartesian3): cesiumLib.cesiumMod.Cartesian3 = js.native
 }
 

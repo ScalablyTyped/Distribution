@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("decorum", "BaseValidator")
 @js.native
-abstract class BaseValidator protected ()
-  extends decorumLib.decorumMod.decorumNs.BaseValidator {
-  def this(validatorKey: java.lang.String, message: decorumLib.decorumMod.decorumNs.MessageHandler[_]) = this()
+abstract class BaseValidator protected () extends js.Object {
+  def this(validatorKey: java.lang.String, message: MessageHandler[_]) = this()
   /**
     * Initializes the {BaseValidator}
     * @param validatorKey A unique "key" by which to identify this field validator i.e. length, maxlength,
@@ -21,34 +20,29 @@ abstract class BaseValidator protected ()
   /**
     * Returns true if the validator instance was passed a custom error message.
     */
-  /* CompleteClass */
-  override var hasCustomMessage: scala.Boolean = js.native
+  var hasCustomMessage: scala.Boolean = js.native
   /**
     * Gets the custom error message set on this validator.
     * @param opts Metadata about the field such as name and friendly name.
     * @returns {string} The custom error message or null if none has been set.
     */
-  /* CompleteClass */
-  override def getCustomMessage(opts: decorumLib.decorumMod.decorumNs.IMessageOpts): java.lang.String = js.native
+  def getCustomMessage(opts: IMessageOpts): java.lang.String = js.native
   /**
     * Gets the unique name for this validator.
     * @returns {string} The unique name for this validator.
     */
-  /* CompleteClass */
-  override def getKey(): java.lang.String = js.native
+  def getKey(): java.lang.String = js.native
   /**
     * [Abstract] Gets the error message to display when a field fails validation by this validator.
     * @param opts Metadata about the field such as name and friendly name.
     */
-  /* CompleteClass */
-  override def getMessage(opts: decorumLib.decorumMod.decorumNs.IMessageOpts): java.lang.String = js.native
+  def getMessage(opts: IMessageOpts): java.lang.String = js.native
   /**
     * [Abstract] Checks the passed value for validity.
     * @param value The field's proposed value.
     * @param model The rest of the model if cross-field validity checks are necessary.
     */
-  /* CompleteClass */
-  override def isValid(value: js.Any, model: js.Any): scala.Boolean = js.native
+  def isValid(value: js.Any, model: js.Any): scala.Boolean = js.native
   /**
     * Check whether this validator should process an "empty" value (i.e. null, undefined, empty string). Override
     * this in derived classes to skip validators if the field value hasn't been set. Things like email, min/max
@@ -57,7 +51,6 @@ abstract class BaseValidator protected ()
     * that they are fired for empty values. Base implementation defaults to false
     * @returns {boolean}
     */
-  /* CompleteClass */
-  override def validatesEmptyValue(): scala.Boolean = js.native
+  def validatesEmptyValue(): scala.Boolean = js.native
 }
 

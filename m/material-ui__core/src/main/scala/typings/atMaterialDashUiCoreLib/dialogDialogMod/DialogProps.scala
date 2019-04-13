@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[DialogClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var PaperComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]
+    reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]
   ] = js.undefined
   var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var TransitionComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
+    reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var fullScreen: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var maxWidth: js.UndefOr[
@@ -32,19 +32,19 @@ import scala.scalajs.js.annotation._
 object DialogProps {
   @scala.inline
   def apply(
-    PaperComponent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
+    PaperComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    TransitionComponent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
+    TransitionComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[DialogClassKey]] = null,
     fullScreen: js.UndefOr[scala.Boolean] = js.undefined,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     maxWidth: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.xs | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sm | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.md | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.lg | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.xl | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibNumbers.`false` = null,
     scroll: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.body | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paper = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
   ): DialogProps = {
     val __obj = js.Dynamic.literal()

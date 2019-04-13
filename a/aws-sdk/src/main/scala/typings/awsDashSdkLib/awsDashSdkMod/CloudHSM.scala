@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudHSM ()
   extends awsDashSdkLib.clientsAllMod.CloudHSM {
-  def this(options: awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloudhsmMod.ClientConfiguration) = this()
 }
 

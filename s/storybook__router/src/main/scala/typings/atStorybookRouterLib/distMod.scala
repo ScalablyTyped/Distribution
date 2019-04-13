@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/router/dist", JSImport.Namespace)
 @js.native
 object distMod extends js.Object {
-  val Link: atStorybookRouterLib.Anon_DisplayName = js.native
-  val Location: atStorybookRouterLib.Anon_DisplayNameHasChildren = js.native
-  val Match: atStorybookRouterLib.Anon_DisplayNameHasChildrenPathStartsWith = js.native
-  val Route: atStorybookRouterLib.Anon_DisplayNameHasPathChildrenStartsWithHideOnly = js.native
   def getMatch(current: java.lang.String, target: java.lang.String): atStorybookRouterLib.Anon_Path = js.native
   def getMatch(current: java.lang.String, target: java.lang.String, startsWith: scala.Boolean): atStorybookRouterLib.Anon_Path = js.native
   def navigate(to: java.lang.String): scala.Unit = js.native
@@ -21,5 +17,29 @@ object distMod extends js.Object {
   def storyDataFromString(path: java.lang.String): atStorybookRouterLib.distUtilsMod.StoryData = js.native
   def stringifyQuery(query: js.Object): js.Any = js.native
   def toId(kind: java.lang.String, name: java.lang.String): java.lang.String = js.native
+  @js.native
+  object Link extends js.Object {
+    var displayName: java.lang.String = js.native
+    def apply(hasToChildrenRest: atStorybookRouterLib.distRouterMod.QueryLinkProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  }
+  
+  @js.native
+  object Location extends js.Object {
+    var displayName: java.lang.String = js.native
+    def apply(hasChildren: atStorybookRouterLib.distRouterMod.QueryLocationProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  }
+  
+  @js.native
+  object Match extends js.Object {
+    var displayName: java.lang.String = js.native
+    def apply(hasChildrenPathStartsWith: atStorybookRouterLib.distRouterMod.QueryMatchProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  }
+  
+  @js.native
+  object Route extends js.Object {
+    var displayName: java.lang.String = js.native
+    def apply(hasPathChildrenStartsWithHideOnly: atStorybookRouterLib.distRouterMod.RouteProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  }
+  
 }
 

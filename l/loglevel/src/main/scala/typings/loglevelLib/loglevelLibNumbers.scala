@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 object loglevelLibNumbers {
   @js.native
   sealed trait `0`
-    extends loglevelLib.loglevelMod.logNs.LogLevelNumbers
+    extends loglevelLib.loglevelMod.LogLevelNumbers
   
   @js.native
   sealed trait `1`
-    extends loglevelLib.loglevelMod.logNs.LogLevelNumbers
+    extends loglevelLib.loglevelMod.LogLevelNumbers
   
   @js.native
   sealed trait `2`
-    extends loglevelLib.loglevelMod.logNs.LogLevelNumbers
+    extends loglevelLib.loglevelMod.LogLevelNumbers
   
   @js.native
   sealed trait `3`
-    extends loglevelLib.loglevelMod.logNs.LogLevelNumbers
+    extends loglevelLib.loglevelMod.LogLevelNumbers
   
   @js.native
   sealed trait `4`
-    extends loglevelLib.loglevelMod.logNs.LogLevelNumbers
+    extends loglevelLib.loglevelMod.LogLevelNumbers
   
   @js.native
   sealed trait `5`
-    extends loglevelLib.loglevelMod.logNs.LogLevelNumbers
+    extends loglevelLib.loglevelMod.LogLevelNumbers
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

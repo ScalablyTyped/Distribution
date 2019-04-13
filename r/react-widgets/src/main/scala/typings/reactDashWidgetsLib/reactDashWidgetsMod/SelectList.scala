@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets", "SelectList")
 @js.native
 class SelectListCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashWidgetsLib.libSelectListMod.SelectListProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashWidgetsLib.libSelectListMod.SelectListProps) = this()

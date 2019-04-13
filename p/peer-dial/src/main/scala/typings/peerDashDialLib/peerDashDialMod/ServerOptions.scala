@@ -10,7 +10,7 @@ trait ServerOptions extends js.Object {
   var corsAllowOrigins: java.lang.String | scala.Boolean = js.native
   var delegate: Delegate = js.native
   @JSName("expressApp")
-  var expressApp_Original: expressLib.expressMod.eNs.Express = js.native
+  var expressApp_Original: expressLib.expressMod.Express = js.native
   var extraHeaders: js.UndefOr[js.Object] = js.native
   var friendlyName: js.UndefOr[java.lang.String] = js.native
   var host: js.UndefOr[java.lang.String] = js.native

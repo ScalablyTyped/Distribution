@@ -2267,7 +2267,6 @@ object UINs extends js.Object {
     }
     
     var focusRoot: stdLib.HTMLElement = js.native
-    var keyCodeMap: winjsLib.Anon_Accept = js.native
     def addEventListener(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
     def dispatchEvent(`type`: java.lang.String, eventProperties: js.Any): scala.Boolean = js.native
     def findNextFocusElement(direction: java.lang.String): stdLib.HTMLElement = js.native
@@ -2309,22 +2308,35 @@ object UINs extends js.Object {
     def onfocuschanged(eventInfo: stdLib.CustomEvent[_]): scala.Unit = js.native
     def onfocuschanging(eventInfo: stdLib.CustomEvent[_]): scala.Unit = js.native
     def removeEventListener(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
+    @js.native
+    object keyCodeMap extends js.Object {
+      /**
+        * The array of keycodes that cause XYFocus to accept.
+        **/
+      var accept: js.Array[scala.Double] = js.native
+      /**
+        * The array of keycodes that cause XYFocus to cancel.
+        **/
+      var cancel: js.Array[scala.Double] = js.native
+      /**
+        * The array of keycodes that cause XYFocus to navigate down.
+        **/
+      var down: js.Array[scala.Double] = js.native
+      /**
+        * The array of keycodes that cause XYFocus to navigate left.
+        **/
+      var left: js.Array[scala.Double] = js.native
+      /**
+        * The array of keycodes that cause XYFocus to navigate right.
+        **/
+      var right: js.Array[scala.Double] = js.native
+      /**
+        * The array of keycodes that cause XYFocus to navigate up.
+        **/
+      var up: js.Array[scala.Double] = js.native
+    }
+    
   }
   
-  type AppBarIcon = winjsLib.WinJSNs.UINs.AppBarIcon
-  type CountError = winjsLib.WinJSNs.UINs.CountError
-  type CountResult = winjsLib.WinJSNs.UINs.CountResult
-  type DataSourceStatus = winjsLib.WinJSNs.UINs.DataSourceStatus
-  type EditError = winjsLib.WinJSNs.UINs.EditError
-  type FetchError = winjsLib.WinJSNs.UINs.FetchError
-  type GroupHeaderTapBehavior = winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior
-  type HeaderPosition = winjsLib.WinJSNs.UINs.HeaderPosition
-  type ListViewAnimationType = winjsLib.WinJSNs.UINs.ListViewAnimationType
-  type ObjectType = winjsLib.WinJSNs.UINs.ObjectType
-  type Orientation = winjsLib.WinJSNs.UINs.Orientation
-  type PageNavigationAnimation = winjsLib.WinJSNs.UINs.PageNavigationAnimation
-  type SelectionMode = winjsLib.WinJSNs.UINs.SelectionMode
-  type SwipeBehavior = winjsLib.WinJSNs.UINs.SwipeBehavior
-  type TapBehavior = winjsLib.WinJSNs.UINs.TapBehavior
 }
 

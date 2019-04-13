@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class OpsWorksCM ()
   extends awsDashSdkLib.awsDashSdkMod.OpsWorksCM {
-  def this(options: awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsOpsworkscmMod.ClientConfiguration) = this()
 }
 

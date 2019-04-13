@@ -77,8 +77,8 @@ trait IQHeader extends js.Object {
     * @param [inclMax] - Optional. Set to true to include maximum value.
     * @return - A promise.
     */
-  def selectRange(min: scala.Double, max: scala.Double): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def selectRange(min: scala.Double, max: scala.Double, inclMin: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def selectRange(min: scala.Double, max: scala.Double, inclMin: scala.Boolean, inclMax: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def selectRange(min: scala.Double, max: scala.Double): angularLib.angularMod.IPromise[_] = js.native
+  def selectRange(min: scala.Double, max: scala.Double, inclMin: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
+  def selectRange(min: scala.Double, max: scala.Double, inclMin: scala.Boolean, inclMax: scala.Boolean): angularLib.angularMod.IPromise[_] = js.native
 }
 

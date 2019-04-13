@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ApiGatewayManagementApi ()
   extends awsDashSdkLib.clientsAllMod.ApiGatewayManagementApi {
-  def this(options: awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsApigatewaymanagementapiMod.ClientConfiguration) = this()
 }
 

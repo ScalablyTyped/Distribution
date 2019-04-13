@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashFacebookDashLoginLibComponents {
   @scala.inline
-  def ReactDashFacebookDashLogin: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashFacebookDashLogin: reactLib.reactMod.ComponentType[
     reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps
-  ] = js.constructorOf[reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps]]
   @scala.inline
   def ReactFacebookLoginProps: reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps.type = reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps

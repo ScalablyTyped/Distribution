@@ -29,7 +29,7 @@ object archiverLibStrings {
   
   @js.native
   sealed trait tar
-    extends archiverLib.archiverMod.archiverNs.Format
+    extends archiverLib.archiverMod.Format
   
   @js.native
   sealed trait unpipe extends js.Object
@@ -39,7 +39,7 @@ object archiverLibStrings {
   
   @js.native
   sealed trait zip
-    extends archiverLib.archiverMod.archiverNs.Format
+    extends archiverLib.archiverMod.Format
   
   @scala.inline
   def close: close = "close".asInstanceOf[close]

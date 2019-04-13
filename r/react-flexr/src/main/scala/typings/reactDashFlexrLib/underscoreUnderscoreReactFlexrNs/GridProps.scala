@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridProps
-  extends reactLib.reactMod.ReactNs.Props[Grid] {
+  extends reactLib.reactMod.Props[Grid] {
   /**
     * Vertical Align Sub Cells: top, center, bottom
     */
@@ -35,12 +35,12 @@ object GridProps {
   @scala.inline
   def apply(
     align: reactDashFlexrLib.reactDashFlexrLibStrings.top | reactDashFlexrLib.reactDashFlexrLibStrings.center | reactDashFlexrLib.reactDashFlexrLibStrings.bottom = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     flexCells: js.UndefOr[scala.Boolean] = js.undefined,
     gutter: java.lang.String = null,
     hAlign: reactDashFlexrLib.reactDashFlexrLibStrings.left | reactDashFlexrLib.reactDashFlexrLibStrings.center | reactDashFlexrLib.reactDashFlexrLibStrings.right = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[Grid] = null
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[Grid] = null
   ): GridProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])

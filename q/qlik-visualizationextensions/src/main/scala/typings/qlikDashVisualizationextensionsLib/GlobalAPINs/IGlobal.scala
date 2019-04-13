@@ -11,7 +11,7 @@ trait IGlobal extends js.Object {
     * Cancels an ongoing reload. The reload of the app is stopped.
     * @return - A promise of a Qlik engine reply.
     */
-  def cancelReload(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def cancelReload(): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets a list of Qlik Sense apps that you potentially can connect to and
     * registers a callback to receive the data. Calling the getAppList method
@@ -25,15 +25,15 @@ trait IGlobal extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def getAuthenticatedUser(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getAuthenticatedUser(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getAuthenticatedUser(): angularLib.angularMod.IPromise[_] = js.native
+  def getAuthenticatedUser(callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets the product version.
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def getProductVersion(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getProductVersion(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getProductVersion(): angularLib.angularMod.IPromise[_] = js.native
+  def getProductVersion(callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets information about progress of doReload and doSave calls.
     * @param qRequestId - Request id from doReload call or 0.
@@ -42,22 +42,22 @@ trait IGlobal extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def getProgress(qRequestId: scala.Double): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getProgress(qRequestId: scala.Double, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getProgress(qRequestId: scala.Double): angularLib.angularMod.IPromise[_] = js.native
+  def getProgress(qRequestId: scala.Double, callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets the Qlik product name.
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def getQTProduct(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getQTProduct(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getQTProduct(): angularLib.angularMod.IPromise[_] = js.native
+  def getQTProduct(callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets the Qlik Sense version number.
     * @param [callback] - Optional. Callback method.
     * @return - A promise.
     */
-  def getQvVersion(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getQvVersion(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getQvVersion(): angularLib.angularMod.IPromise[_] = js.native
+  def getQvVersion(callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
   /**
     * Gets information if the user is working in personal mode
     * (returns true if Qlik Sense Desktop is used) or not
@@ -65,7 +65,7 @@ trait IGlobal extends js.Object {
     * @param [callback] - Optional. Callback method.
     * @return - A promise of a Qlik engine reply.
     */
-  def isPersonalMode(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def isPersonalMode(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def isPersonalMode(): angularLib.angularMod.IPromise[_] = js.native
+  def isPersonalMode(callback: js.Any): angularLib.angularMod.IPromise[_] = js.native
 }
 

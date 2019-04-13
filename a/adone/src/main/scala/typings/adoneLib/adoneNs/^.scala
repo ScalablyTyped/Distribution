@@ -14,9 +14,7 @@ object ^ extends js.Object {
   val ROOT_PATH: java.lang.String = js.native
   val _null: js.Symbol = js.native
   val assert: adoneLib.adoneNs.assertionNs.INs.AssertFunction = js.native
-  val async: adoneLib.Anon_Acc = js.native
   val bad: adoneLib.adoneLibStrings.bad = js.native
-  val benchmark: adoneLib.Anon_BenchmarkAnonAccumulator = js.native
   val clearImmediate: js.Function1[/* immediateId */ nodeLib.NodeJSNs.Immediate, scala.Unit] = js.native
   val clearInterval: js.Function1[/* intervalId */ nodeLib.NodeJSNs.Timeout, scala.Unit] = js.native
   val clearTimeout: js.Function1[/* timeoutId */ nodeLib.NodeJSNs.Timeout, scala.Unit] = js.native
@@ -27,7 +25,7 @@ object ^ extends js.Object {
   val datetime: adoneLib.adoneNs.INs.datetimeNs.DatetimeFunction = js.native
   val expect: adoneLib.adoneNs.assertionNs.INs.ExpectFunction = js.native
   val hrtime: nodeLib.NodeJSNs.Process = js.native
-  val lodash: lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
+  val lodash: lodashLib.lodashMod.LoDashStatic = js.native
   val ok: adoneLib.adoneLibStrings.ok = js.native
   val `package`: js.Object = js.native
   val runtime: adoneLib.adoneNs.INs.Runtime = js.native
@@ -48,8 +46,6 @@ object ^ extends js.Object {
     /* repeated */ js.Any, 
     nodeLib.NodeJSNs.Timeout
   ] = js.native
-  /* Extracted nested Instantiables into classes in stdNs */
-  val std: adoneLib.Anon_Assert = js.native
   val tag: adoneLib.adoneNs.INs.Tag = js.native
   def definePrivate(modules: js.Object, obj: js.Object): js.Object = js.native
   def falsely(): adoneLib.adoneLibNumbers.`false` = js.native

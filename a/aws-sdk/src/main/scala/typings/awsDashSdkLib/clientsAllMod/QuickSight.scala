@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class QuickSight ()
-  extends awsDashSdkLib.clientsQuicksightMod.namespaced {
-  def this(options: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsQuicksightMod.^ {
+  def this(options: awsDashSdkLib.clientsQuicksightMod.ClientConfiguration) = this()
 }
 

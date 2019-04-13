@@ -14,14 +14,11 @@ trait CachePolicy extends js.Object {
     * @example
     * cachedResponse.headers = cachePolicy.responseHeaders(cachedResponse);
     */
-  def responseHeaders(): httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers
+  def responseHeaders(): Headers
   /**
     * Use this method to update the cache after receiving a new response from the origin server.
     */
-  def revalidatedPolicy(
-    revalidationRequest: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request,
-    revalidationResponse: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Response
-  ): httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.RevalidationPolicy
+  def revalidatedPolicy(revalidationRequest: Request, revalidationResponse: Response): RevalidationPolicy
   /**
     * Returns updated, filtered set of request headers to send to the origin server to check if the cached
     * response can be reused. These headers allow the origin server to return status 304 indicating the
@@ -32,7 +29,7 @@ trait CachePolicy extends js.Object {
     * @example
     * updateRequest.headers = cachePolicy.revalidationHeaders(updateRequest);
     */
-  def revalidationHeaders(newRequest: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request): httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers
+  def revalidationHeaders(newRequest: Request): Headers
   /**
     * This is the most important method. Use this method to check whether the cached response is still fresh
     * in the context of the new request.
@@ -44,7 +41,7 @@ trait CachePolicy extends js.Object {
     * If it returns `false`, then the response may not be matching at all (e.g. it's for a different URL or method),
     * or may require to be refreshed first (see `revalidationHeaders()`).
     */
-  def satisfiesWithoutRevalidation(newRequest: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request): scala.Boolean
+  def satisfiesWithoutRevalidation(newRequest: Request): scala.Boolean
   /**
     * Returns `true` if the response can be stored in a cache.
     * If it's `false` then you MUST NOT store either the request or the response.
@@ -62,19 +59,19 @@ trait CachePolicy extends js.Object {
     * Chances are you'll want to store the `CachePolicy` object along with the cached response.
     * `obj = policy.toObject()` gives a plain JSON-serializable object.
     */
-  def toObject(): httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject
+  def toObject(): CachePolicyObject
 }
 
 object CachePolicy {
   @scala.inline
   def apply(
-    responseHeaders: () => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers,
-    revalidatedPolicy: (httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request, httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Response) => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.RevalidationPolicy,
-    revalidationHeaders: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Headers,
-    satisfiesWithoutRevalidation: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Request => scala.Boolean,
+    responseHeaders: () => Headers,
+    revalidatedPolicy: (Request, Response) => RevalidationPolicy,
+    revalidationHeaders: Request => Headers,
+    satisfiesWithoutRevalidation: Request => scala.Boolean,
     storable: () => scala.Boolean,
     timeToLive: () => scala.Double,
-    toObject: () => httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject
+    toObject: () => CachePolicyObject
   ): CachePolicy = {
     val __obj = js.Dynamic.literal(responseHeaders = js.Any.fromFunction0(responseHeaders), revalidatedPolicy = js.Any.fromFunction2(revalidatedPolicy), revalidationHeaders = js.Any.fromFunction1(revalidationHeaders), satisfiesWithoutRevalidation = js.Any.fromFunction1(satisfiesWithoutRevalidation), storable = js.Any.fromFunction0(storable), timeToLive = js.Any.fromFunction0(timeToLive), toObject = js.Any.fromFunction0(toObject))
   

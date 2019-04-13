@@ -49,7 +49,7 @@ trait AceEditorProps extends js.Object {
   var setOptions: js.UndefOr[AceOptions] = js.undefined
   var showGutter: js.UndefOr[scala.Boolean] = js.undefined
   var showPrintMargin: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabSize: js.UndefOr[scala.Double] = js.undefined
   /** For available themes see https://github.com/thlorenz/brace/tree/master/theme */
   var theme: js.UndefOr[java.lang.String] = js.undefined
@@ -97,7 +97,7 @@ object AceEditorProps {
     setOptions: AceOptions = null,
     showGutter: js.UndefOr[scala.Boolean] = js.undefined,
     showPrintMargin: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabSize: scala.Int | scala.Double = null,
     theme: java.lang.String = null,
     value: java.lang.String = null,

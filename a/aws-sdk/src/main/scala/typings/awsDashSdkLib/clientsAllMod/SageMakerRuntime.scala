@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class SageMakerRuntime ()
-  extends awsDashSdkLib.clientsSagemakerruntimeMod.namespaced {
-  def this(options: awsDashSdkLib.clientsSagemakerruntimeMod.SageMakerRuntimeNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsSagemakerruntimeMod.^ {
+  def this(options: awsDashSdkLib.clientsSagemakerruntimeMod.ClientConfiguration) = this()
 }
 

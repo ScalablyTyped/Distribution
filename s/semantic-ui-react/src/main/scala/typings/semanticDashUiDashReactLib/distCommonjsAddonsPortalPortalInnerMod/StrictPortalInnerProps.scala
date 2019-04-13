@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait StrictPortalInnerProps extends js.Object {
   /** Primary content. */
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   /** Called with a ref to the inner node. */
-  var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   /** The node where the portal should mount. */
   var mountNode: js.UndefOr[js.Any] = js.undefined
   /**
@@ -31,8 +31,8 @@ trait StrictPortalInnerProps extends js.Object {
 object StrictPortalInnerProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    children: reactLib.reactMod.ReactNode,
+    innerRef: reactLib.reactMod.Ref[_] = null,
     mountNode: js.Any = null,
     onMount: (/* nothing */ scala.Null, /* data */ PortalInnerProps) => scala.Unit = null,
     onUnmount: (/* nothing */ scala.Null, /* data */ PortalInnerProps) => scala.Unit = null

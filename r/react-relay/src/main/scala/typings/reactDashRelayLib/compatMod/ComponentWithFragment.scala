@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ComponentWithFragment[T]
-  extends reactLib.reactMod.ReactNs.ComponentClass[T, reactLib.reactMod.ReactNs.ComponentState]
+  extends reactLib.reactMod.ComponentClass[T, reactLib.reactMod.ComponentState]
      with ReactFragmentComponent[T] {
   @JSName("getFragment")
   var getFragment_Original: js.Function2[

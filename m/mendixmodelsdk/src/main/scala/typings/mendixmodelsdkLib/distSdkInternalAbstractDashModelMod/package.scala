@@ -11,4 +11,6 @@ package object distSdkInternalAbstractDashModelMod {
     /* partName */ java.lang.String, 
     mendixmodelsdkLib.distSdkInternalStructuresMod.IStructure
   ]
+  type IUnitsByTypeCache = org.scalablytyped.runtime.StringDictionary[js.Array[mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit]]
+  type IUnitsMap = org.scalablytyped.runtime.StringDictionary[mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit]
 }

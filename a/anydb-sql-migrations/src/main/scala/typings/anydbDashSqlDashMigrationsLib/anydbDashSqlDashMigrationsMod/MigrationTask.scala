@@ -12,7 +12,7 @@ trait MigrationTask extends js.Object {
   var name: java.lang.String = js.native
   @JSName("up")
   var up_Original: MigFn = js.native
-  def down(tx: anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Transaction): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def up(tx: anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Transaction): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def down(tx: anydbDashSqlLib.anydbDashSqlMod.Transaction): bluebirdLib.bluebirdMod.^[_] = js.native
+  def up(tx: anydbDashSqlLib.anydbDashSqlMod.Transaction): bluebirdLib.bluebirdMod.^[_] = js.native
 }
 

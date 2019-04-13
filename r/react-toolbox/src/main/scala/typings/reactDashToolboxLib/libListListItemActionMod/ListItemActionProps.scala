@@ -9,7 +9,7 @@ trait ListItemActionProps extends js.Object {
   /**
     * List item action.
     */
-  var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var action: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Object defining the component class name mappings.
     */
@@ -18,7 +18,7 @@ trait ListItemActionProps extends js.Object {
 
 object ListItemActionProps {
   @scala.inline
-  def apply(action: reactLib.reactMod.ReactNs.ReactNode = null, theme: ListItemActionTheme = null): ListItemActionProps = {
+  def apply(action: reactLib.reactMod.ReactNode = null, theme: ListItemActionTheme = null): ListItemActionProps = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

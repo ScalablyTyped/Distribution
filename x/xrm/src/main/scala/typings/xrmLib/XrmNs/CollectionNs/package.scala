@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 package object CollectionNs {
   /**
+    * Defines collections that are index-able by string
+    * @param Generic type parameter.
+    */
+  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
+  /**
     * Called for each item in an array
     * @param item The item.
     * @param index Zero-based index of the item array.

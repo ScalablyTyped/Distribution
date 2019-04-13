@@ -13,7 +13,7 @@ trait editableValueEventMap[V, SP /* <: editableValueSettableProperties[V, SV, R
   var helpChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_Instruction]
   var helpHintsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_Definition]
   var labelHintChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
-  var messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]]
+  var messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]]
   var ojAnimateEnd: atOracleOraclejetLib.ojeditablevalueMod.editableValueNs.ojAnimateEnd
   var ojAnimateStart: atOracleOraclejetLib.ojeditablevalueMod.editableValueNs.ojAnimateStart
   var validChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
@@ -76,7 +76,7 @@ object editableValueEventMap {
     loadend: stdLib.ProgressEvent,
     loadstart: stdLib.Event,
     lostpointercapture: stdLib.PointerEvent,
-    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced]],
+    messagesCustomChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojmessagingMod.^]],
     mousedown: stdLib.MouseEvent,
     mouseenter: stdLib.MouseEvent,
     mouseleave: stdLib.MouseEvent,

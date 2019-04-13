@@ -19,10 +19,15 @@ object CustomerNs extends js.Object {
     var address: js.UndefOr[chartmogulDashNodeLib.Anon_Addresszip] = js.undefined
     var arr: js.UndefOr[scala.Double] = js.undefined
     var attributes: js.UndefOr[Attributes] = js.undefined
+    var `billing-system-type`: js.UndefOr[java.lang.String] = js.undefined
+    var `billing-system-url`: js.UndefOr[java.lang.String] = js.undefined
+    var `chartmogul-url`: js.UndefOr[java.lang.String] = js.undefined
     var city: js.UndefOr[java.lang.String] = js.undefined
     var company: js.UndefOr[java.lang.String] = js.undefined
     var country: js.UndefOr[java.lang.String] = js.undefined
     var currency: js.UndefOr[java.lang.String] = js.undefined
+    var `currency-sign`: js.UndefOr[java.lang.String] = js.undefined
+    var `customer-since`: js.UndefOr[java.lang.String] = js.undefined
     var data_source_uuid: js.UndefOr[java.lang.String] = js.undefined
     var data_source_uuids: js.UndefOr[chartmogulDashNodeLib.commonMod.Strings] = js.undefined
     var email: js.UndefOr[java.lang.String] = js.undefined

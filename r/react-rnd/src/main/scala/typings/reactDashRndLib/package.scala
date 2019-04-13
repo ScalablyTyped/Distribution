@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashRndLib {
-  type CSSProperties = reactLib.reactMod.ReactNs.CSSProperties
+  type CSSProperties = reactLib.reactMod.CSSProperties
 }

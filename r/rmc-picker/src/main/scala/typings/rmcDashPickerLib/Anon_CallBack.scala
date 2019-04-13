@@ -35,7 +35,7 @@ trait Anon_CallBack extends js.Object {
   ] = js.native
   var context: js.Any = js.native
   var props: stdLib.Readonly[Anon_Children] with stdLib.Readonly[rmcDashPickerLib.libPickerTypesMod.IPickerProps] = js.native
-  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactInstance] = js.native
+  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
       /* nextProps */ stdLib.Readonly[rmcDashPickerLib.libPickerTypesMod.IPickerProps], 

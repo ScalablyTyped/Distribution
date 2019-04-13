@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vorpal", "Catch")
 @js.native
-class Catch ()
-  extends vorpalLib.vorpalMod.VorpalNs.Catch
+class Catch () extends Command
 

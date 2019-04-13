@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ColorsColorsPerVertex extends js.Object {
-  var colors: js.UndefOr[js.Array[cesiumLib.cesiumMod.CesiumNs.Color]] = js.undefined
+  var colors: js.UndefOr[js.Array[cesiumLib.cesiumMod.Color]] = js.undefined
   var colorsPerVertex: js.UndefOr[scala.Boolean] = js.undefined
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var followSurface: js.UndefOr[scala.Boolean] = js.undefined
   var granularity: js.UndefOr[scala.Double] = js.undefined
-  var positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3]
+  var positions: js.Array[cesiumLib.cesiumMod.Cartesian3]
 }
 
 object Anon_ColorsColorsPerVertex {
   @scala.inline
   def apply(
-    positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
-    colors: js.Array[cesiumLib.cesiumMod.CesiumNs.Color] = null,
+    positions: js.Array[cesiumLib.cesiumMod.Cartesian3],
+    colors: js.Array[cesiumLib.cesiumMod.Color] = null,
     colorsPerVertex: js.UndefOr[scala.Boolean] = js.undefined,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     followSurface: js.UndefOr[scala.Boolean] = js.undefined,
     granularity: scala.Int | scala.Double = null
   ): Anon_ColorsColorsPerVertex = {

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class DocDB ()
   extends awsDashSdkLib.awsDashSdkMod.DocDB {
-  def this(options: awsDashSdkLib.clientsDocdbMod.DocDBNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsDocdbMod.ClientConfiguration) = this()
 }
 

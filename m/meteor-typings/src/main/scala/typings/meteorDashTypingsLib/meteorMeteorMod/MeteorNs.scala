@@ -73,9 +73,6 @@ object MeteorNs extends js.Object {
     def apply(event: Event, templateInstance: meteorDashTypingsLib.BlazeNs.TemplateInstance): scala.Unit = js.native
   }
   
-  trait EventMap
-    extends /* id */ org.scalablytyped.runtime.StringDictionary[EventHandlerFunction]
-  
   trait LiveQueryHandle extends js.Object {
     def stop(): scala.Unit
   }
@@ -232,5 +229,6 @@ object MeteorNs extends js.Object {
   def userId(): java.lang.String = js.native
   def wrapAsync(func: js.Function): js.Any = js.native
   def wrapAsync(func: js.Function, context: js.Object): js.Any = js.native
+  type EventMap = org.scalablytyped.runtime.StringDictionary[EventHandlerFunction]
 }
 

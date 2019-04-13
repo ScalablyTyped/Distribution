@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation._
 @JSImport("react-md/lib/SelectionControls", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Checkbox: reactLib.reactMod.ReactNs.ComponentClass[
+  val Checkbox: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSelectionControlsCheckboxMod.CheckboxProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Radio: reactLib.reactMod.ReactNs.ComponentClass[
+  val Radio: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSelectionControlsRadioMod.RadioProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val SelectionControl: reactLib.reactMod.ReactNs.ComponentClass[
+  val SelectionControl: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val SelectionControlGroup: reactLib.reactMod.ReactNs.ComponentClass[
+  val SelectionControlGroup: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSelectionControlsSelectionControlGroupMod.SelectionControlGroupProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Switch: reactLib.reactMod.ReactNs.ComponentClass[
+  val Switch: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSelectionControlsSwitchMod.SwitchProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val default: reactLib.reactMod.ReactNs.ComponentClass[
+  val default: reactLib.reactMod.ComponentClass[
     reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("onsenui", "PageLoader")
 @js.native
-class PageLoader protected ()
-  extends onsenuiLib.onsenuiMod.onsNs.PageLoader {
+class PageLoader protected () extends js.Object {
   def this(args: js.Any*) = this()
-  /* CompleteClass */
-  override var internalLoader: js.Function = js.native
-  /* CompleteClass */
-  override def load(options: onsenuiLib.Anon_Page, done: js.Function): scala.Unit = js.native
+  var internalLoader: js.Function = js.native
+  def load(options: onsenuiLib.Anon_Page, done: js.Function): scala.Unit = js.native
 }
 

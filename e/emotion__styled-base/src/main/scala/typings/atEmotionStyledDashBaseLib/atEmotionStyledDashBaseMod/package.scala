@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atEmotionStyledDashBaseMod {
-  type CreateStyledComponentExtrinsic[Tag /* <: reactLib.reactMod.ReactNs.ComponentType[_] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[atEmotionStyledDashBaseLib.typesHelperMod.PropsOf[Tag], ExtraProps, Theme]
+  type CreateStyledComponentExtrinsic[Tag /* <: reactLib.reactMod.ComponentType[_] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[atEmotionStyledDashBaseLib.typesHelperMod.PropsOf[Tag], ExtraProps, Theme]
   type CreateStyledComponentIntrinsic[Tag /* <: java.lang.String */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
     /* import warning: ImportType.apply Failed type conversion: @emotion/styled-base.JSXInEl[Tag] */ js.Any, 
     ExtraProps, 

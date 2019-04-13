@@ -16,9 +16,9 @@ class AirplanemodeInactiveRounded protected ()
 @JSImport("@material-ui/icons", "AirplanemodeInactiveRounded")
 @js.native
 class AirplanemodeInactiveRoundedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

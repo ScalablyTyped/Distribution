@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/wrapDisplayName", JSImport.Namespace)
 @js.native
 object wrapDisplayNameMod extends js.Object {
-  def default(component: reactLib.reactMod.ReactNs.ComponentType[_], wrapperName: java.lang.String): java.lang.String = js.native
+  def default(component: reactLib.reactMod.ComponentType[_], wrapperName: java.lang.String): java.lang.String = js.native
 }
 

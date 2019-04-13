@@ -77,37 +77,32 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Model")
 @js.native
-class Model protected ()
-  extends loopbackLib.loopbackMod.lNs.Model {
+class Model protected () extends js.Object {
   def this(data: js.Any) = this()
   /** Contains additional model settings. */
-  /* CompleteClass */
-  override var settings: loopbackLib.loopbackMod.lNs.Settings = js.native
-  /* CompleteClass */
-  override def afterRemote(
+  var settings: Settings = js.native
+  def afterRemote(
     method: java.lang.String,
     callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
+      /* ctx */ Context, 
+      /* modelInstanceOrNext */ this.type | expressLib.expressMod.NextFunction, 
+      /* next */ js.UndefOr[expressLib.expressMod.NextFunction], 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /* CompleteClass */
-  override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
+  def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.NextFunction): scala.Unit = js.native
   /**
     * loopback 3.x Remote hooks
     * http://loopback.io/doc/en/lb3/Remote-hooks.html
     * @param method
     * @param backback
     */
-  /* CompleteClass */
-  override def beforeRemote(
+  def beforeRemote(
     method: java.lang.String,
     callback: js.Function3[
-      /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
-      /* modelInstanceOrNext */ this.type | expressLib.expressMod.eNs.NextFunction, 
-      /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
+      /* ctx */ Context, 
+      /* modelInstanceOrNext */ this.type | expressLib.expressMod.NextFunction, 
+      /* next */ js.UndefOr[expressLib.expressMod.NextFunction], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -134,7 +129,7 @@ object Model extends js.Object {
     * @param {boolean} allowed True if the request is allowed; false otherwise
     */
   def checkAccess(
-    token: loopbackLib.loopbackMod.lNs.AccessToken,
+    token: loopbackLib.loopbackMod.AccessToken,
     modelId: js.Any,
     sharedMethod: js.Any,
     ctx: js.Any,
@@ -162,11 +157,7 @@ object Model extends js.Object {
     * @end
     */
   def getApp(
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* app */ loopbackLib.loopbackMod.lNs.Application, 
-      scala.Unit
-    ]
+    callback: js.Function2[/* err */ stdLib.Error, /* app */ loopbackLib.loopbackMod.Application, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Enabled deeply-nested queries of related models via REST API
@@ -220,7 +211,7 @@ object Model extends js.Object {
     * @param {RemoteMethodOptions} options The remoting options.
     * See [Remote methods - Options](docs.strongloop.com/display/LB/Remote+methods#Remotemethods-Options)
     */
-  def remoteMethod(name: java.lang.String, options: loopbackLib.loopbackMod.lNs.RemoteMethodOptions): scala.Unit = js.native
+  def remoteMethod(name: java.lang.String, options: loopbackLib.loopbackMod.RemoteMethodOptions): scala.Unit = js.native
   /**
     * The `loopback.Model.extend()` method calls this when you create a model that extends another model.
     * Add any setup or configuration code you want executed when the model is created.

@@ -34,7 +34,7 @@ trait CalendarProps
     * - label: a formatted String of the date to render. To adjust the format of the label
     *          string use the dateFormat prop, listed below.
     */
-  var dayComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var dayComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * A formatter calendar days of the week, the default formats each day as a Narrow name:
     * "Mo", "Tu", etc.
@@ -145,11 +145,11 @@ object CalendarProps {
   def apply(
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     centuryFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     culture: java.lang.String = null,
     currentDate: stdLib.Date = null,
     dateFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
-    dayComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    dayComponent: reactLib.reactMod.ReactType[_] = null,
     dayFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
     decadeFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
     defaultValue: stdLib.Date = null,
@@ -162,7 +162,7 @@ object CalendarProps {
     id: java.lang.String = null,
     initialView: reactDashWidgetsLib.reactDashWidgetsLibStrings.month | reactDashWidgetsLib.reactDashWidgetsLibStrings.year | reactDashWidgetsLib.reactDashWidgetsLibStrings.decade | reactDashWidgetsLib.reactDashWidgetsLibStrings.century = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
-    key: reactLib.reactMod.ReactNs.Key = null,
+    key: reactLib.reactMod.Key = null,
     max: stdLib.Date = null,
     messages: CalendarMessages = null,
     min: stdLib.Date = null,
@@ -173,7 +173,7 @@ object CalendarProps {
     onNavigate: (/* date */ stdLib.Date, /* direction */ java.lang.String, /* view */ java.lang.String) => scala.Unit = null,
     onViewChange: () => scala.Unit = null,
     readOnly: scala.Boolean | js.Array[_] = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[CalendarClass] = null,
+    ref: reactLib.reactMod.LegacyRef[CalendarClass] = null,
     value: stdLib.Date = null,
     view: CalendarView = null,
     views: js.Array[CalendarView] = null,

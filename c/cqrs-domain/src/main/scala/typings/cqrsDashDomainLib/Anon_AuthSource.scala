@@ -15,7 +15,7 @@ trait Anon_AuthSource extends js.Object {
   var snapshotsCollectionName: js.UndefOr[java.lang.String] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
   var transactionsCollectionName: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes
+  var `type`: cqrsDashDomainLib.cqrsDashDomainMod.SupportedDBTypes
   var url: js.UndefOr[java.lang.String] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -23,7 +23,7 @@ trait Anon_AuthSource extends js.Object {
 object Anon_AuthSource {
   @scala.inline
   def apply(
-    `type`: cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes,
+    `type`: cqrsDashDomainLib.cqrsDashDomainMod.SupportedDBTypes,
     authSource: java.lang.String = null,
     dbName: java.lang.String = null,
     eventsCollectionName: java.lang.String = null,

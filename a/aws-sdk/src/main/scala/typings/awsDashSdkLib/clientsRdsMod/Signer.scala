@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * A signer object can be used to generate an auth token to a database.
   */
 class Signer ()
-  extends awsDashSdkLib.clientsRdsMod.RDSNs.Signer {
+  extends awsDashSdkLib.libRdsSignerMod.Signer {
   def this(options: awsDashSdkLib.libRdsSignerMod.SignerNs.SignerOptions) = this()
 }
 

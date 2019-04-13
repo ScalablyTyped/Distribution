@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "PrefixQuery")
 @js.native
-class PrefixQuery protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixQuery {
+class PrefixQuery protected () extends Query {
   /*
     Matches documents containing the specified un-analyzed prefix.
     */
@@ -16,18 +15,15 @@ class PrefixQuery protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost value of the Query.
     */
-  /* CompleteClass */
-  override def boost(boost: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixQuery = js.native
+  def boost(boost: scala.Double): PrefixQuery = js.native
   /*
     The field to run the query against.
     */
-  /* CompleteClass */
-  override def field(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixQuery = js.native
+  def field(f: java.lang.String): PrefixQuery = js.native
   /*
     Sets rewrite method.  Valid values are:
     constant_score_auto - tries to pick the best constant-score rewrite
@@ -47,18 +43,15 @@ class PrefixQuery protected ()
     Default is constant_score_auto.
     This is an advanced option, use with care.
     */
-  /* CompleteClass */
-  override def rewrite(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixQuery = js.native
+  def rewrite(m: java.lang.String): PrefixQuery = js.native
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
   /*
     The prefix value.
     */
-  /* CompleteClass */
-  override def value(p: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.PrefixQuery = js.native
+  def value(p: java.lang.String): PrefixQuery = js.native
 }
 

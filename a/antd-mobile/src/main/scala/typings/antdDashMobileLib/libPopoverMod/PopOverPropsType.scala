@@ -19,7 +19,7 @@ trait PopOverPropsType
 object PopOverPropsType {
   @scala.inline
   def apply(
-    overlay: reactLib.reactMod.ReactNs.ReactNode,
+    overlay: reactLib.reactMod.ReactNode,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     onSelect: (/* node */ js.Any, /* index */ js.UndefOr[scala.Double]) => scala.Unit = null,

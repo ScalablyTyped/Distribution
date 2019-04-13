@@ -16,9 +16,9 @@ class InsertDriveFileTwoTone protected ()
 @JSImport("@material-ui/icons", "InsertDriveFileTwoTone")
 @js.native
 class InsertDriveFileTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

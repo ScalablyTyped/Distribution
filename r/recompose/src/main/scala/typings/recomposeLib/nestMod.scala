@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/nest", JSImport.Namespace)
 @js.native
 object nestMod extends js.Object {
-  def default(Components: (java.lang.String | reactLib.reactMod.ReactNs.ComponentType[_])*): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def default(Components: (java.lang.String | reactLib.reactMod.ComponentType[_])*): reactLib.reactMod.ComponentClass[_, reactLib.reactMod.ComponentState] = js.native
 }
 

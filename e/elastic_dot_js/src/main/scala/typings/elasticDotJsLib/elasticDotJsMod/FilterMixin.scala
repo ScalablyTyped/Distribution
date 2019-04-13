@@ -7,32 +7,26 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "FilterMixin")
 @js.native
-class FilterMixin ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterMixin {
+class FilterMixin () extends js.Object {
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Enable or disable caching of the filter
     */
-  /* CompleteClass */
-  override def cache(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterMixin = js.native
+  def cache(trueFalse: scala.Boolean): FilterMixin = js.native
   /*
     Sets the cache key.
     */
-  /* CompleteClass */
-  override def cacheKey(key: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterMixin = js.native
+  def cacheKey(key: java.lang.String): FilterMixin = js.native
   /*
     Sets the filter name.
     */
-  /* CompleteClass */
-  override def name(name: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterMixin = js.native
+  def name(name: java.lang.String): FilterMixin = js.native
   /*
     Returns the filter object.
     */
-  /* CompleteClass */
-  override def toJSON(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.FilterMixin = js.native
+  def toJSON(): FilterMixin = js.native
 }
 

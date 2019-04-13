@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Issue extends IssueRef {
-  val age: momentLib.momentMod.momentNs.Duration
+  val age: momentLib.momentMod.Duration
   var assignee: js.UndefOr[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary] = js.undefined
   var assignees: js.Array[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary]
   var body: java.lang.String
-  var closed: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var closed: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
   var closedBy: js.UndefOr[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary] = js.undefined
   var comments: scala.Double
-  var created: momentLib.momentMod.momentNs.Moment
+  var created: momentLib.momentMod.Moment
   var createdBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary
   var htmlUri: java.lang.String
   var id: scala.Double
@@ -24,18 +24,18 @@ trait Issue extends IssueRef {
   var milestone: js.UndefOr[typedDashGithubDashApiLib.distInterfacesMilestoneMod.Milestone] = js.undefined
   var state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed
   var title: java.lang.String
-  var updated: momentLib.momentMod.momentNs.Moment
-  def wasOpen(when: momentLib.momentMod.momentNs.Moment): scala.Boolean
+  var updated: momentLib.momentMod.Moment
+  def wasOpen(when: momentLib.momentMod.Moment): scala.Boolean
 }
 
 object Issue {
   @scala.inline
   def apply(
-    age: momentLib.momentMod.momentNs.Duration,
+    age: momentLib.momentMod.Duration,
     assignees: js.Array[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary],
     body: java.lang.String,
     comments: scala.Double,
-    created: momentLib.momentMod.momentNs.Moment,
+    created: momentLib.momentMod.Moment,
     createdBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary,
     htmlUri: java.lang.String,
     id: scala.Double,
@@ -48,10 +48,10 @@ object Issue {
     number: scala.Double,
     state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
     title: java.lang.String,
-    updated: momentLib.momentMod.momentNs.Moment,
-    wasOpen: momentLib.momentMod.momentNs.Moment => scala.Boolean,
+    updated: momentLib.momentMod.Moment,
+    wasOpen: momentLib.momentMod.Moment => scala.Boolean,
     assignee: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = null,
-    closed: momentLib.momentMod.momentNs.Moment = null,
+    closed: momentLib.momentMod.Moment = null,
     closedBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = null,
     milestone: typedDashGithubDashApiLib.distInterfacesMilestoneMod.Milestone = null
   ): Issue = {

@@ -18,7 +18,7 @@ trait ContentLoaderProps extends js.Object {
   var secondaryColor: js.UndefOr[java.lang.String] = js.undefined
   var secondaryOpacity: js.UndefOr[scala.Double] = js.undefined
   var speed: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var uniquekey: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
@@ -36,7 +36,7 @@ object ContentLoaderProps {
     secondaryColor: java.lang.String = null,
     secondaryOpacity: scala.Int | scala.Double = null,
     speed: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     uniquekey: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): ContentLoaderProps = {

@@ -154,6 +154,5 @@ object RTreeNs extends js.Object {
     def valueNode[T](bounds: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds, value: T): plottableLib.buildSrcUtilsRTreeMod.RTreeNode[T] = js.native
   }
   
-  type QueryPredicateResult = plottableLib.buildSrcUtilsRTreeMod.QueryPredicateResult
 }
 

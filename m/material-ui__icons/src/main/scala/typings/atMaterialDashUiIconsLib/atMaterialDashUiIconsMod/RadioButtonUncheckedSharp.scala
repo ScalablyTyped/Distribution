@@ -16,9 +16,9 @@ class RadioButtonUncheckedSharp protected ()
 @JSImport("@material-ui/icons", "RadioButtonUncheckedSharp")
 @js.native
 class RadioButtonUncheckedSharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

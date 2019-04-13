@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>[P]} */ trait GridProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>[P]} */ trait GridProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var alignContent: js.UndefOr[GridContentAlignment] = js.undefined
   var alignItems: js.UndefOr[GridItemsAlignment] = js.undefined
   var component: js.UndefOr[
-    java.lang.String | (reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]])
+    java.lang.String | (reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]])
   ] = js.undefined
   var container: js.UndefOr[scala.Boolean] = js.undefined
   var direction: js.UndefOr[GridDirection] = js.undefined
@@ -30,14 +30,14 @@ object GridProps {
     alignItems: GridItemsAlignment = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridClassKey]] = null,
-    component: java.lang.String | (reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]]) = null,
+    component: java.lang.String | (reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]]) = null,
     container: js.UndefOr[scala.Boolean] = js.undefined,
     direction: GridDirection = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     item: js.UndefOr[scala.Boolean] = js.undefined,
     justify: GridJustification = null,
     spacing: GridSpacing = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     wrap: GridWrap = null,
     zeroMinWidth: js.UndefOr[scala.Boolean] = js.undefined
   ): GridProps = {

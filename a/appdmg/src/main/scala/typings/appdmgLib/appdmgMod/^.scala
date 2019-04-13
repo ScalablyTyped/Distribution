@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("appdmg", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): appdmgLib.appdmgMod.appdmgNs.EventEmitter = js.native
-  def apply(options: appdmgLib.appdmgMod.appdmgNs.Options): appdmgLib.appdmgMod.appdmgNs.EventEmitter = js.native
+  def apply(): EventEmitter = js.native
+  def apply(options: Options): EventEmitter = js.native
 }
 

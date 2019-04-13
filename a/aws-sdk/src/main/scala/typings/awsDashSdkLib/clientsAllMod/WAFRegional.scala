@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class WAFRegional ()
-  extends awsDashSdkLib.clientsWafregionalMod.namespaced {
-  def this(options: awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsWafregionalMod.^ {
+  def this(options: awsDashSdkLib.clientsWafregionalMod.ClientConfiguration) = this()
 }
 

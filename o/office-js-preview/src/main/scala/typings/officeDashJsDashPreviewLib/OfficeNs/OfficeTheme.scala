@@ -11,25 +11,11 @@ import scala.scalajs.js.annotation._
   * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File \> 
   * Office Account \> Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and 
   * task pane add-ins.
-  *
+  * 
   * @remarks
+  * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
   * 
-  * **Support details**
-  * 
-  * A capital Y in the following matrix indicates that these properties are supported in the corresponding Office host application. 
-  * An empty cell indicates that the Office host application doesn't support this enumeration.
-  * 
-  * For more information about Office host application and server requirements, see 
-  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-  * 
-  * *Supported hosts, by platform*
-  *  <table>
-  *   <tr><th>                             </th><th> Office for Windows desktop </th></tr>
-  *   <tr><td><strong> Excel      </strong></td><td> Y                          </td></tr>
-  *   <tr><td><strong> Outlook    </strong></td><td> Y (in preview)             </td></tr>
-  *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td></tr>
-  *   <tr><td><strong> Word       </strong></td><td> Y                          </td></tr>
-  *  </table>
+  * `OfficeTheme` is only supported on Office for Windows desktop.
   */
 trait OfficeTheme extends js.Object {
   /**

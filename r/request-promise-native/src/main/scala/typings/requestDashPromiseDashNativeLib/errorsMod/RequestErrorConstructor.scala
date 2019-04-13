@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait RequestErrorConstructor
   extends org.scalablytyped.runtime.Instantiable3[
       /* cause */ js.Any, 
-      /* options */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options, 
-      /* response */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse, 
+      /* options */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options, 
+      /* response */ requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse, 
       RequestError
     ] {
   def apply(
     cause: js.Any,
-    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.Options,
-    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse
+    options: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.Options,
+    response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.FullResponse
   ): RequestError = js.native
 }
 

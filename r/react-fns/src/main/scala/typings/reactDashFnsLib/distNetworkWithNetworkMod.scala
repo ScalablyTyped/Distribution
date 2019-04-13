@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distNetworkWithNetworkMod extends js.Object {
   def withNetwork[Props](
-    Component: reactLib.reactMod.ReactNs.ComponentType[Props with reactDashFnsLib.distNetworkNetworkMod.NetworkProps]
-  ): reactLib.reactMod.ReactNs.ComponentType[Props] = js.native
+    Component: reactLib.reactMod.ComponentType[Props with reactDashFnsLib.distNetworkNetworkMod.NetworkProps]
+  ): reactLib.reactMod.ComponentType[Props] = js.native
 }
 

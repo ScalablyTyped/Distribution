@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("doctrine", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Syntax: doctrineLib.Anon_AllLiteral = js.native
   val parseParamType: js.Function2[
     /* src */ java.lang.String, 
     /* options */ js.UndefOr[doctrineLib.Anon_Midstream], 

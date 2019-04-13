@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MenuItemProps[T /* <: stdLib.HTMLElement */]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLAttributes[T] {
   /**
   	 * The HTML tag for this element. Default: 'span'.
   	 */
@@ -28,7 +28,7 @@ trait MenuItemProps[T /* <: stdLib.HTMLElement */]
 object MenuItemProps {
   @scala.inline
   def apply[T /* <: stdLib.HTMLElement */](
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[T] = null,
     tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null,
     text: java.lang.String = null,
     value: js.Any = null

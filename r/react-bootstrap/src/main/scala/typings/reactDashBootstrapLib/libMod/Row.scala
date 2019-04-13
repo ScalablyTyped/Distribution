@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Row")
 @js.native
 class Row ()
-  extends reactDashBootstrapLib.libRowMod.namespaced
+  extends reactDashBootstrapLib.libRowMod.^
 

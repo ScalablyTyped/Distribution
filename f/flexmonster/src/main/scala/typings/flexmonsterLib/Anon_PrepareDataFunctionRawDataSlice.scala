@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_PrepareDataFunctionRawDataSlice extends js.Object {
   var prepareDataFunction: js.UndefOr[js.Function1[/* rawData */ js.Any, _]] = js.undefined
-  var slice: js.UndefOr[flexmonsterLib.flexmonsterMod.FlexmonsterNs.Slice] = js.undefined
+  var slice: js.UndefOr[flexmonsterLib.flexmonsterMod.Slice] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var valuesOnly: js.UndefOr[scala.Boolean] = js.undefined
   var withDrilldown: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,7 +18,7 @@ object Anon_PrepareDataFunctionRawDataSlice {
   @scala.inline
   def apply(
     prepareDataFunction: /* rawData */ js.Any => _ = null,
-    slice: flexmonsterLib.flexmonsterMod.FlexmonsterNs.Slice = null,
+    slice: flexmonsterLib.flexmonsterMod.Slice = null,
     `type`: java.lang.String = null,
     valuesOnly: js.UndefOr[scala.Boolean] = js.undefined,
     withDrilldown: js.UndefOr[scala.Boolean] = js.undefined,

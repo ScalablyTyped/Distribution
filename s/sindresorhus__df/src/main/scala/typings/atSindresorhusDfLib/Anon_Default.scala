@@ -12,16 +12,16 @@ trait Anon_Default extends js.Object {
   	 *
   	 * @returns A list of space info objects for each filesystem.
   	 */
-  def apply(): js.Promise[js.Array[atSindresorhusDfLib.atSindresorhusDfMod.dfNs.SpaceInfo]] = js.native
+  def apply(): js.Promise[js.Array[atSindresorhusDfLib.atSindresorhusDfMod.SpaceInfo]] = js.native
   /**
   	 * @param path - Path to a file on the filesystem to get the space info for.
   	 * @returns Space info for the filesystem the given file is part of.
   	 */
-  def file(path: java.lang.String): js.Promise[atSindresorhusDfLib.atSindresorhusDfMod.dfNs.SpaceInfo] = js.native
+  def file(path: java.lang.String): js.Promise[atSindresorhusDfLib.atSindresorhusDfMod.SpaceInfo] = js.native
   /**
   	 * @param path - Path to a filesystem device file. Example: `'/dev/disk1'`.
   	 * @returns Space info for the given filesystem.
   	 */
-  def fs(path: java.lang.String): js.Promise[atSindresorhusDfLib.atSindresorhusDfMod.dfNs.SpaceInfo] = js.native
+  def fs(path: java.lang.String): js.Promise[atSindresorhusDfLib.atSindresorhusDfMod.SpaceInfo] = js.native
 }
 

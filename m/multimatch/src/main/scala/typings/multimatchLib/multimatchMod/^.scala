@@ -21,7 +21,7 @@ object ^ extends js.Object {
   def apply(
     paths: java.lang.String | js.Array[java.lang.String],
     patterns: java.lang.String | js.Array[java.lang.String],
-    options: multimatchLib.multimatchMod.multimatchNs.MultimatchOptions
+    options: MultimatchOptions
   ): js.Array[java.lang.String] = js.native
 }
 

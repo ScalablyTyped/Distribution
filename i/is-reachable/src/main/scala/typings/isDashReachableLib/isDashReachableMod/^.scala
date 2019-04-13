@@ -27,9 +27,6 @@ object ^ extends js.Object {
     * @returns A `Promise` for a `boolean` which is `true` if any of the `targets` are reachable.
     */
   def apply(targets: java.lang.String | js.Array[java.lang.String]): js.Promise[scala.Boolean] = js.native
-  def apply(
-    targets: java.lang.String | js.Array[java.lang.String],
-    options: isDashReachableLib.isDashReachableMod.isReachableNs.Options
-  ): js.Promise[scala.Boolean] = js.native
+  def apply(targets: java.lang.String | js.Array[java.lang.String], options: Options): js.Promise[scala.Boolean] = js.native
 }
 

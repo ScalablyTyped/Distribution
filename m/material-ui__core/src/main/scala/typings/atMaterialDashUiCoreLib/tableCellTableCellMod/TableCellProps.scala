@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   var align: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.justify
   ] = js.undefined
-  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TableCellBaseProps]] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactType[TableCellBaseProps]] = js.undefined
   var numeric: js.UndefOr[scala.Boolean] = js.undefined
   var padding: js.UndefOr[Padding] = js.undefined
   var sortDirection: js.UndefOr[SortDirection] = js.undefined
@@ -27,12 +27,12 @@ object TableCellProps {
     align: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.justify = null,
     className: java.lang.String = null,
     classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TableCellClassKey]] = null,
-    component: reactLib.reactMod.ReactNs.ReactType[TableCellBaseProps] = null,
-    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    component: reactLib.reactMod.ReactType[TableCellBaseProps] = null,
+    innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     numeric: js.UndefOr[scala.Boolean] = js.undefined,
     padding: Padding = null,
     sortDirection: SortDirection = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.head | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.body | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.footer = null
   ): TableCellProps = {
     val __obj = js.Dynamic.literal()

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class LexRuntime ()
-  extends awsDashSdkLib.clientsLexruntimeMod.namespaced {
-  def this(options: awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsLexruntimeMod.^ {
+  def this(options: awsDashSdkLib.clientsLexruntimeMod.ClientConfiguration) = this()
 }
 

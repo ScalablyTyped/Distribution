@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 trait Anon_HeadersPreserveQueryParameters extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var preserveQueryParameters: js.UndefOr[scala.Boolean] = js.undefined
-  var proxy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.DefaultProxy] = js.undefined
+  var proxy: js.UndefOr[cesiumLib.cesiumMod.DefaultProxy] = js.undefined
   var queryParameters: js.UndefOr[js.Any] = js.undefined
   var request: js.UndefOr[stdLib.Request] = js.undefined
   var retryAttempts: js.UndefOr[scala.Double] = js.undefined
-  var retryCallback: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback] = js.undefined
+  var retryCallback: js.UndefOr[cesiumLib.cesiumMod.ResourceNs.RetryCallback] = js.undefined
   var templateValues: js.UndefOr[js.Any] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -22,11 +22,11 @@ object Anon_HeadersPreserveQueryParameters {
   def apply(
     headers: js.Any = null,
     preserveQueryParameters: js.UndefOr[scala.Boolean] = js.undefined,
-    proxy: cesiumLib.cesiumMod.CesiumNs.DefaultProxy = null,
+    proxy: cesiumLib.cesiumMod.DefaultProxy = null,
     queryParameters: js.Any = null,
     request: stdLib.Request = null,
     retryAttempts: scala.Int | scala.Double = null,
-    retryCallback: cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback = null,
+    retryCallback: cesiumLib.cesiumMod.ResourceNs.RetryCallback = null,
     templateValues: js.Any = null,
     url: java.lang.String = null
   ): Anon_HeadersPreserveQueryParameters = {

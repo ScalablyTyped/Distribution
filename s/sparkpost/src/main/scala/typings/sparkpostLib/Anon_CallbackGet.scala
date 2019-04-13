@@ -13,7 +13,7 @@ trait Anon_CallbackGet extends js.Object {
     * @param id The id of the transmission you want to look up
     * @returns The Transmission results
     */
-  def get(id: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.Transmission] = js.native
+  def get(id: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.Transmission] = js.native
   /**
     * Retrieve the details about a transmission by its ID
     *
@@ -22,23 +22,23 @@ trait Anon_CallbackGet extends js.Object {
     */
   def get(
     transmissionID: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.Transmission]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.Transmission]
   ): scala.Unit = js.native
   /**
     * List an overview of all transmissions in the account
     *
     * @returns The Transmission results array
     */
-  def list(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.TransmissionSummary]] = js.native
+  def list(): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.TransmissionSummary]] = js.native
   /**
     * List an overview of all transmissions in the account
     *
     * @param callback The request callback with Transmission results array
     */
   def list(
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.TransmissionSummary]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.TransmissionSummary]]
   ): scala.Unit = js.native
-  def list(options: Anon_Campaignid): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.TransmissionSummary]] = js.native
+  def list(options: Anon_Campaignid): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.TransmissionSummary]] = js.native
   /**
     * List an overview of all transmissions in the account
     *
@@ -46,7 +46,7 @@ trait Anon_CallbackGet extends js.Object {
     */
   def list(
     options: Anon_Campaignid,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.TransmissionSummary]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.TransmissionSummary]]
   ): scala.Unit = js.native
   /**
     * Sends a message by creating a new transmission
@@ -55,7 +55,7 @@ trait Anon_CallbackGet extends js.Object {
     * @param [options] specify maximum number of recipient errors returned
     * @returns The metadata and id results
     */
-  def send(transmission: sparkpostLib.sparkpostMod.SparkPostNs.CreateTransmission): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_IdTotalacceptedrecipients] = js.native
+  def send(transmission: sparkpostLib.sparkpostMod.CreateTransmission): sparkpostLib.sparkpostMod.ResultsPromise[Anon_IdTotalacceptedrecipients] = js.native
   /**
     *
     *
@@ -63,13 +63,10 @@ trait Anon_CallbackGet extends js.Object {
     * @param callback The request callback with metadata and id results
     */
   def send(
-    transmission: sparkpostLib.sparkpostMod.SparkPostNs.CreateTransmission,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_IdTotalacceptedrecipients]
+    transmission: sparkpostLib.sparkpostMod.CreateTransmission,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_IdTotalacceptedrecipients]
   ): scala.Unit = js.native
-  def send(
-    transmission: sparkpostLib.sparkpostMod.SparkPostNs.CreateTransmission,
-    options: Anon_Numrcpterrors
-  ): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_IdTotalacceptedrecipients] = js.native
+  def send(transmission: sparkpostLib.sparkpostMod.CreateTransmission, options: Anon_Numrcpterrors): sparkpostLib.sparkpostMod.ResultsPromise[Anon_IdTotalacceptedrecipients] = js.native
   /**
     * Sends a message by creating a new transmission
     *
@@ -78,9 +75,9 @@ trait Anon_CallbackGet extends js.Object {
     * @param callback The request callback with metadata and id results
     */
   def send(
-    transmission: sparkpostLib.sparkpostMod.SparkPostNs.CreateTransmission,
+    transmission: sparkpostLib.sparkpostMod.CreateTransmission,
     options: Anon_Numrcpterrors,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_IdTotalacceptedrecipients]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_IdTotalacceptedrecipients]
   ): scala.Unit = js.native
 }
 

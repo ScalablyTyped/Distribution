@@ -20,14 +20,14 @@ trait ICommand extends js.Object {
   /**
   		* Executes the command function.
   		*/
-  def execute(): angularLib.angularMod.angularNs.IPromise[_]
+  def execute(): angularLib.angularMod.IPromise[_]
 }
 
 object ICommand {
   @scala.inline
   def apply(
     canExecute: scala.Boolean,
-    execute: () => angularLib.angularMod.angularNs.IPromise[_],
+    execute: () => angularLib.angularMod.IPromise[_],
     isExecuting: scala.Boolean
   ): ICommand = {
     val __obj = js.Dynamic.literal(canExecute = canExecute, execute = js.Any.fromFunction0(execute), isExecuting = isExecuting)

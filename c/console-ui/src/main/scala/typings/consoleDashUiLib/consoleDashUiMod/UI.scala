@@ -16,9 +16,9 @@ trait UI extends js.Object {
     * Launch the prompt interface (inquiry session) with (Array of Questions || Question)
     * See [Inquirer.js#question](https://github.com/SBoudrias/Inquirer.js#question) for Question properties
     */
-  def prompt[T](questions: inquirerLib.inquirerMod.inquirerNs.Questions[T]): js.Promise[T] = js.native
+  def prompt[T](questions: inquirerLib.inquirerMod.Questions[T]): js.Promise[T] = js.native
   def prompt[T](
-    questions: inquirerLib.inquirerMod.inquirerNs.Questions[T],
+    questions: inquirerLib.inquirerMod.Questions[T],
     callback: js.Function1[/* answers */ T, scala.Unit]
   ): js.Promise[T] = js.native
   /**

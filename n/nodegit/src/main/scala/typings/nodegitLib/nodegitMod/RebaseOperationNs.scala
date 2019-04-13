@@ -22,6 +22,5 @@ object RebaseOperationNs extends js.Object {
       ] = js.native
   }
   
-  type REBASE_OPERATION = nodegitLib.rebaseDashOperationMod.RebaseOperationNs.REBASE_OPERATION
 }
 

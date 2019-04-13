@@ -26,7 +26,7 @@ trait ServerOptions extends js.Object {
   var key: js.UndefOr[
     java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer])
   ] = js.undefined
-  var log: js.UndefOr[bunyanLib.bunyanMod.namespaced] = js.undefined
+  var log: js.UndefOr[bunyanLib.bunyanMod.^] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var noWriteContinue: js.UndefOr[scala.Boolean] = js.undefined
   var onceNext: js.UndefOr[scala.Boolean] = js.undefined
@@ -57,7 +57,7 @@ object ServerOptions {
     httpsServerOptions: nodeLib.httpsMod.ServerOptions = null,
     ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
-    log: bunyanLib.bunyanMod.namespaced = null,
+    log: bunyanLib.bunyanMod.^ = null,
     name: java.lang.String = null,
     noWriteContinue: js.UndefOr[scala.Boolean] = js.undefined,
     onceNext: js.UndefOr[scala.Boolean] = js.undefined,

@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class PluginInfos ()
   extends mfilesLib.IPluginInfos
 
+@JSGlobal("MFiles.PluginInfos")
+@js.native
+object PluginInfos
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPluginInfos]
+

@@ -20,11 +20,11 @@ trait BigUint64Array
   val byteLength: scala.Double = js.native
   /** The offset in bytes of the array. */
   val byteOffset: scala.Double = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[BigInt]] = js.native
   /** The length of the array. */
   val length: scala.Double = js.native
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
   val toStringTag: stdLib.stdLibStrings.BigUint64Array = js.native
   /**
     * Returns the this object after copying a section of the array identified by start and end

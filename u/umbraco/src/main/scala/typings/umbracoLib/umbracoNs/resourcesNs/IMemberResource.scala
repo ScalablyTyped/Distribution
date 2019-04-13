@@ -31,7 +31,7 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def deleteByKey(key: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def deleteByKey(key: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.memberResource#getByKey
@@ -53,7 +53,7 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the member item.
     *
     */
-  def getByKey(key: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getByKey(key: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise]
   def getListNode(listName: java.lang.String): js.Any
   def getPagedResults(memberTypeAlias: java.lang.String, options: js.Any): js.Any
   /**
@@ -86,7 +86,7 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the member scaffold.
     *
     */
-  def getScaffold(alias: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def getScaffold(alias: java.lang.String): angularLib.angularMod.IPromise[IResourcePromise]
   /**
     * @ngdoc method
     * @name umbraco.resources.memberResource#save
@@ -115,18 +115,18 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the saved media item.
     *
     */
-  def save(member: js.Object, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+  def save(member: js.Object, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.IPromise[IResourcePromise]
 }
 
 object IMemberResource {
   @scala.inline
   def apply(
-    deleteByKey: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    getByKey: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
+    deleteByKey: java.lang.String => angularLib.angularMod.IPromise[IResourcePromise],
+    getByKey: java.lang.String => angularLib.angularMod.IPromise[IResourcePromise],
     getListNode: java.lang.String => js.Any,
     getPagedResults: (java.lang.String, js.Any) => js.Any,
-    getScaffold: java.lang.String => angularLib.angularMod.angularNs.IPromise[IResourcePromise],
-    save: (js.Object, scala.Boolean, js.Array[_]) => angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    getScaffold: java.lang.String => angularLib.angularMod.IPromise[IResourcePromise],
+    save: (js.Object, scala.Boolean, js.Array[_]) => angularLib.angularMod.IPromise[IResourcePromise]
   ): IMemberResource = {
     val __obj = js.Dynamic.literal(deleteByKey = js.Any.fromFunction1(deleteByKey), getByKey = js.Any.fromFunction1(getByKey), getListNode = js.Any.fromFunction1(getListNode), getPagedResults = js.Any.fromFunction2(getPagedResults), getScaffold = js.Any.fromFunction1(getScaffold), save = js.Any.fromFunction3(save))
   

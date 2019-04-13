@@ -14,7 +14,7 @@ trait Props extends js.Object {
   /**
     * Component to use, defaults to 'div'
     */
-  var as: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var as: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   /**
     * enables or disables autoFocusing feature.
     * If enabled - will move focus inside Lock, selecting the first or autoFocusable element
@@ -22,7 +22,7 @@ trait Props extends js.Object {
     * @default true
     */
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -57,7 +57,7 @@ trait Props extends js.Object {
   /**
     * Shards forms a scattered lock, same as `group` does, but in more "low" and controlled way
     */
-  var shards: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.RefObject[_] | stdLib.HTMLElement]] = js.undefined
+  var shards: js.UndefOr[js.Array[reactLib.reactMod.RefObject[_] | stdLib.HTMLElement]] = js.undefined
   /**
     * Controls focus lock working areas. Lock will silently ignore all the events from `not allowed` areas
     * @param activeElement
@@ -69,9 +69,9 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNs.ReactNode,
+    children: reactLib.reactMod.ReactNode,
     allowTextSelection: js.UndefOr[scala.Boolean] = js.undefined,
-    as: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    as: reactLib.reactMod.ReactType[_] = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -82,7 +82,7 @@ object Props {
     onDeactivation: /* node */ stdLib.HTMLElement => scala.Unit = null,
     persistentFocus: js.UndefOr[scala.Boolean] = js.undefined,
     returnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    shards: js.Array[reactLib.reactMod.ReactNs.RefObject[_] | stdLib.HTMLElement] = null,
+    shards: js.Array[reactLib.reactMod.RefObject[_] | stdLib.HTMLElement] = null,
     whiteList: /* activeElement */ stdLib.HTMLElement => scala.Boolean = null
   ): Props = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])

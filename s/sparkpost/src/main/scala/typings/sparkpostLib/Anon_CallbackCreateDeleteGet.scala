@@ -13,7 +13,7 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     * @param template an object of [template attributes]{@link https://developers.sparkpost.com/api/templates#header-template-attributes}
     * @returns The template id results
     */
-  def create(template: sparkpostLib.sparkpostMod.SparkPostNs.CreateTemplate): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Id] = js.native
+  def create(template: sparkpostLib.sparkpostMod.CreateTemplate): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Id] = js.native
   /**
     * Create a new template
     *
@@ -21,8 +21,8 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     * @param callback The request callback with template id results
     */
   def create(
-    template: sparkpostLib.sparkpostMod.SparkPostNs.CreateTemplate,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Id]
+    template: sparkpostLib.sparkpostMod.CreateTemplate,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Id]
   ): scala.Unit = js.native
   /**
     * Delete an existing template
@@ -36,7 +36,7 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     * @param id The template id
     * @param callback The request callback
     */
-  def delete(id: java.lang.String, callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[scala.Unit]): scala.Unit = js.native
+  def delete(id: java.lang.String, callback: sparkpostLib.sparkpostMod.Callback[scala.Unit]): scala.Unit = js.native
   /**
     * Retrieve details about a specified template by its id
     *
@@ -44,7 +44,7 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     * @param [options] specifies a draft or published template
     * @returns The Template results
     */
-  def get(id: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.Template] = js.native
+  def get(id: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.Template] = js.native
   /**
     * Retrieve details about a specified template by its id
     *
@@ -53,9 +53,9 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     */
   def get(
     id: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.Template]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.Template]
   ): scala.Unit = js.native
-  def get(id: java.lang.String, options: Anon_Draft): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.Template] = js.native
+  def get(id: java.lang.String, options: Anon_Draft): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.Template] = js.native
   /**
     * Retrieve details about a specified template by its id
     *
@@ -66,20 +66,20 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
   def get(
     id: java.lang.String,
     options: Anon_Draft,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.Template]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.Template]
   ): scala.Unit = js.native
   /**
     * List a summary of all templates.
     *
     * @returns The TemplateMeta results array
     */
-  def list(): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.TemplateMeta]] = js.native
+  def list(): sparkpostLib.sparkpostMod.ResultsPromise[js.Array[sparkpostLib.sparkpostMod.TemplateMeta]] = js.native
   /**
     * List a summary of all templates.
     * @param callback The request callback with TemplateMeta results array
     */
   def list(
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.SparkPostNs.TemplateMeta]]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[js.Array[sparkpostLib.sparkpostMod.TemplateMeta]]
   ): scala.Unit = js.native
   /**
     * Preview the most recent version of an existing template by id
@@ -87,7 +87,7 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     * @param id the id of the template you want to look up
     * @returns The webhook id results
     */
-  def preview(id: java.lang.String): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.TemplateContent] = js.native
+  def preview(id: java.lang.String): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.TemplateContent] = js.native
   /**
     * Preview the most recent version of an existing template by id
     *
@@ -96,9 +96,9 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     */
   def preview(
     id: java.lang.String,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.TemplateContent]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.TemplateContent]
   ): scala.Unit = js.native
-  def preview(id: java.lang.String, options: Anon_DraftSubstitutiondata): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[sparkpostLib.sparkpostMod.SparkPostNs.TemplateContent] = js.native
+  def preview(id: java.lang.String, options: Anon_DraftSubstitutiondata): sparkpostLib.sparkpostMod.ResultsPromise[sparkpostLib.sparkpostMod.TemplateContent] = js.native
   /**
     * Preview the most recent version of an existing template by id
     *
@@ -109,7 +109,7 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
   def preview(
     id: java.lang.String,
     options: Anon_DraftSubstitutiondata,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[sparkpostLib.sparkpostMod.SparkPostNs.TemplateContent]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[sparkpostLib.sparkpostMod.TemplateContent]
   ): scala.Unit = js.native
   /**
     * Update an existing template
@@ -119,7 +119,7 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     * @param options If true, directly overwrite the existing published template. If false, create a new draft
     * @returns The template id results
     */
-  def update(id: java.lang.String, template: sparkpostLib.sparkpostMod.SparkPostNs.UpdateTemplate): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Id] = js.native
+  def update(id: java.lang.String, template: sparkpostLib.sparkpostMod.UpdateTemplate): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Id] = js.native
   /**
     * Update an existing template
     *
@@ -129,14 +129,14 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     */
   def update(
     id: java.lang.String,
-    template: sparkpostLib.sparkpostMod.SparkPostNs.UpdateTemplate,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Id]
+    template: sparkpostLib.sparkpostMod.UpdateTemplate,
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Id]
   ): scala.Unit = js.native
   def update(
     id: java.lang.String,
-    template: sparkpostLib.sparkpostMod.SparkPostNs.UpdateTemplate,
+    template: sparkpostLib.sparkpostMod.UpdateTemplate,
     options: Anon_Updatepublished
-  ): sparkpostLib.sparkpostMod.SparkPostNs.ResultsPromise[Anon_Id] = js.native
+  ): sparkpostLib.sparkpostMod.ResultsPromise[Anon_Id] = js.native
   /**
     * Update an existing template
     *
@@ -147,9 +147,9 @@ trait Anon_CallbackCreateDeleteGet extends js.Object {
     */
   def update(
     id: java.lang.String,
-    template: sparkpostLib.sparkpostMod.SparkPostNs.UpdateTemplate,
+    template: sparkpostLib.sparkpostMod.UpdateTemplate,
     options: Anon_Updatepublished,
-    callback: sparkpostLib.sparkpostMod.SparkPostNs.ResultsCallback[Anon_Id]
+    callback: sparkpostLib.sparkpostMod.ResultsCallback[Anon_Id]
   ): scala.Unit = js.native
 }
 

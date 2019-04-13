@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GeolocateControlProps extends BaseControlProps {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var fitBoundsOptions: js.UndefOr[mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.FitBoundsOptions] = js.undefined
+  var fitBoundsOptions: js.UndefOr[mapboxDashGlLib.mapboxDashGlMod.FitBoundsOptions] = js.undefined
   var onViewStateChange: js.UndefOr[js.Function1[/* info */ ViewStateChangeInfo, scala.Unit]] = js.undefined
   var onViewportChange: js.UndefOr[js.Function1[/* viewState */ ViewState, scala.Unit]] = js.undefined
   var positionOptions: js.UndefOr[mapboxDashGlLib.mapboxDashGlMod.PositionOptions] = js.undefined
@@ -23,7 +23,7 @@ object GeolocateControlProps {
     captureDrag: js.UndefOr[scala.Boolean] = js.undefined,
     captureScroll: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    fitBoundsOptions: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.FitBoundsOptions = null,
+    fitBoundsOptions: mapboxDashGlLib.mapboxDashGlMod.FitBoundsOptions = null,
     onViewStateChange: /* info */ ViewStateChangeInfo => scala.Unit = null,
     onViewportChange: /* viewState */ ViewState => scala.Unit = null,
     positionOptions: mapboxDashGlLib.mapboxDashGlMod.PositionOptions = null,

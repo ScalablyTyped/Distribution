@@ -10,7 +10,7 @@ trait SpyProxy extends js.Object {
   var spyProxy: mochaccinoLib.mochaccinoLibNumbers.`true`
   def callFake(fake: js.Function1[/* repeated */ js.Any, _]): scala.Unit
   def callThrough(): scala.Unit
-  def getSubject(): sinonLib.sinonMod.SinonNs.SinonStub
+  def getSubject(): sinonLib.sinonMod.SinonStub
   def returnValue(obj: js.Any): scala.Unit
 }
 
@@ -20,7 +20,7 @@ object SpyProxy {
     and: SpyProxy,
     callFake: js.Function1[/* repeated */ js.Any, _] => scala.Unit,
     callThrough: () => scala.Unit,
-    getSubject: () => sinonLib.sinonMod.SinonNs.SinonStub,
+    getSubject: () => sinonLib.sinonMod.SinonStub,
     returnValue: js.Any => scala.Unit,
     spyProxy: mochaccinoLib.mochaccinoLibNumbers.`true`
   ): SpyProxy = {

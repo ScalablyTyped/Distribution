@@ -6,30 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CancelComplete extends js.Object {
-  var cancel: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCancelledCallback] = js.undefined
-  var complete: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCompleteCallback] = js.undefined
+  var cancel: js.UndefOr[cesiumLib.cesiumMod.CameraNs.FlightCancelledCallback] = js.undefined
+  var complete: js.UndefOr[cesiumLib.cesiumMod.CameraNs.FlightCompleteCallback] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
-  var easingFunction: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.EasingFunction] = js.undefined
-  var endTransform: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
+  var easingFunction: js.UndefOr[cesiumLib.cesiumMod.EasingFunction] = js.undefined
+  var endTransform: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
   var flyOverLongitude: js.UndefOr[scala.Double] = js.undefined
   var flyOverLongitudeWeight: js.UndefOr[scala.Double] = js.undefined
   var maximumHeight: js.UndefOr[scala.Double] = js.undefined
-  var offset: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.HeadingPitchRange] = js.undefined
+  var offset: js.UndefOr[cesiumLib.cesiumMod.HeadingPitchRange] = js.undefined
   var pitchAdjustHeight: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Anon_CancelComplete {
   @scala.inline
   def apply(
-    cancel: cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCancelledCallback = null,
-    complete: cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCompleteCallback = null,
+    cancel: cesiumLib.cesiumMod.CameraNs.FlightCancelledCallback = null,
+    complete: cesiumLib.cesiumMod.CameraNs.FlightCompleteCallback = null,
     duration: scala.Int | scala.Double = null,
-    easingFunction: cesiumLib.cesiumMod.CesiumNs.EasingFunction = null,
-    endTransform: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
+    easingFunction: cesiumLib.cesiumMod.EasingFunction = null,
+    endTransform: cesiumLib.cesiumMod.Matrix4 = null,
     flyOverLongitude: scala.Int | scala.Double = null,
     flyOverLongitudeWeight: scala.Int | scala.Double = null,
     maximumHeight: scala.Int | scala.Double = null,
-    offset: cesiumLib.cesiumMod.CesiumNs.HeadingPitchRange = null,
+    offset: cesiumLib.cesiumMod.HeadingPitchRange = null,
     pitchAdjustHeight: scala.Int | scala.Double = null
   ): Anon_CancelComplete = {
     val __obj = js.Dynamic.literal()

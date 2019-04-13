@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val TTY_WIDTH: scala.Double = js.native
-  val stringWidth: stringDashWidthLib.Anon_DefaultString = js.native
   def columnar(rows: js.Array[js.Array[java.lang.String]], hasHsepVsepHeaders: ColumnarOptions): java.lang.String = js.native
   def expandPath(p: java.lang.String): java.lang.String = js.native
   def generateFillSpaceStringList(list: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native

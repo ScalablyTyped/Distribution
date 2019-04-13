@@ -19,9 +19,7 @@ trait PieChartProps extends js.Object {
   var padding: js.UndefOr[scala.Double] = js.undefined
   /** Size in pixels in each dimension */
   var size: js.UndefOr[scala.Double] = js.undefined
-  var styles: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties]
-  ] = js.undefined
+  var styles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.CSSProperties]] = js.undefined
 }
 
 object PieChartProps {
@@ -36,7 +34,7 @@ object PieChartProps {
     mouseOverHandler: (/* data */ PieData, /* mouseEvent */ stdLib.MouseEvent) => _ = null,
     padding: scala.Int | scala.Double = null,
     size: scala.Int | scala.Double = null,
-    styles: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] = null
+    styles: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.CSSProperties] = null
   ): PieChartProps = {
     val __obj = js.Dynamic.literal(data = data)
     if (clickHandler != null) __obj.updateDynamic("clickHandler")(js.Any.fromFunction2(clickHandler))

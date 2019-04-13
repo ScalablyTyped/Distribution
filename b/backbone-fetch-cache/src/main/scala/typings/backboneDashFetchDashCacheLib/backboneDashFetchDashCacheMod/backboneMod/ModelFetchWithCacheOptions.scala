@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * method to get behaviour particular to Backbone Fetch Cache.
   */
 trait ModelFetchWithCacheOptions
-  extends backboneLib.backboneMod.BackboneNs.ModelFetchOptions {
+  extends backboneLib.backboneMod.ModelFetchOptions {
   /**
     * Calls to modelInstance.fetch or collectionInstance.fetch will be
     * fulfilled from the cache (if possible) when cache: true is set in

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RuleWalker protected ()
   extends tslintLib.libLanguageWalkerRuleWalkerMod.RuleWalker {
-  def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
+  def this(sourceFile: typescriptLib.typescriptMod.SourceFile, options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
 }
 

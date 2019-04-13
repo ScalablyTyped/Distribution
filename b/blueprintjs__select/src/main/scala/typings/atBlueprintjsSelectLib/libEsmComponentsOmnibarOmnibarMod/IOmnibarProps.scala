@@ -33,7 +33,7 @@ trait IOmnibarProps[T]
     */
   var onClose: js.UndefOr[
     js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
+      /* event */ js.UndefOr[reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.native

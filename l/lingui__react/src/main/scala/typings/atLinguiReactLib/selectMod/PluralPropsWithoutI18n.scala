@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation._
 
 trait PluralPropsWithoutI18n
   extends atLinguiReactLib.renderMod.RenderProps
-     with /* exact */ org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode] {
-  var few: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+     with /* exact */ org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNode] {
+  var few: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var many: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var many: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var offset: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var one: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var other: reactLib.reactMod.ReactNs.ReactNode
-  var two: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var one: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var other: reactLib.reactMod.ReactNode
+  var two: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var value: scala.Double | java.lang.String
-  var zero: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var zero: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object PluralPropsWithoutI18n {
   @scala.inline
   def apply(
-    other: reactLib.reactMod.ReactNs.ReactNode,
+    other: reactLib.reactMod.ReactNode,
     value: scala.Double | java.lang.String,
-    StringDictionary: /* exact */ org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode] = null,
+    StringDictionary: /* exact */ org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
-    few: reactLib.reactMod.ReactNs.ReactNode = null,
+    few: reactLib.reactMod.ReactNode = null,
     id: java.lang.String = null,
-    many: reactLib.reactMod.ReactNs.ReactNode = null,
+    many: reactLib.reactMod.ReactNode = null,
     offset: scala.Double | java.lang.String = null,
-    one: reactLib.reactMod.ReactNs.ReactNode = null,
-    render: reactLib.reactMod.ReactNs.ReactNode = null,
-    two: reactLib.reactMod.ReactNs.ReactNode = null,
-    zero: reactLib.reactMod.ReactNs.ReactNode = null
+    one: reactLib.reactMod.ReactNode = null,
+    render: reactLib.reactMod.ReactNode = null,
+    two: reactLib.reactMod.ReactNode = null,
+    zero: reactLib.reactMod.ReactNode = null
   ): PluralPropsWithoutI18n = {
     val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

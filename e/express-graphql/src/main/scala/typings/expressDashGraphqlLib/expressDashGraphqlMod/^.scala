@@ -12,6 +12,6 @@ object ^ extends js.Object {
     * Middleware for express; takes an options object or function as input to
     * configure behavior, and returns an express middleware.
     */
-  def apply(options: expressDashGraphqlLib.expressDashGraphqlMod.graphqlHTTPNs.Options): expressDashGraphqlLib.expressDashGraphqlMod.graphqlHTTPNs.Middleware = js.native
+  def apply(options: Options): Middleware = js.native
 }
 

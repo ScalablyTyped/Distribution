@@ -120,7 +120,7 @@ object VictoryStackProps {
     animate: AnimatePropTypeInterface = null,
     categories: CategoryPropType = null,
     colorScale: ColorScalePropType = null,
-    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement[_] = null,
     domain: DomainPropType = null,
     domainPadding: DomainPaddingPropType = null,
     eventKey: StringOrNumberOrCallback = null,
@@ -130,10 +130,10 @@ object VictoryStackProps {
         StringOrNumberOrCallback
       ]
     ] = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
-    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
     name: java.lang.String = null,
     padding: PaddingProps = null,

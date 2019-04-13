@@ -70,7 +70,7 @@ trait ClndrOptions extends js.Object {
   /**
     * Optionally, you can pass a Moment instance to use instead of the global
     */
-  var moment: js.UndefOr[momentLib.momentMod.momentNs.Moment | scala.Null] = js.undefined
+  var moment: js.UndefOr[momentLib.momentMod.Moment | scala.Null] = js.undefined
   /**
     * CLNDR can accept events lasting more than one day! just pass in the
     * multiDayEvents option and specify what the start and end fields are
@@ -108,7 +108,7 @@ trait ClndrOptions extends js.Object {
   /**
     * determines which month to start with using either a date string or a moment object.
     */
-  var startWithMonth: js.UndefOr[java.lang.String | momentLib.momentMod.momentNs.Moment] = js.undefined
+  var startWithMonth: js.UndefOr[java.lang.String | momentLib.momentMod.Moment] = js.undefined
   /**
     * the target classnames that CLNDR will look for to bind events. these are the defaults.
     */
@@ -153,13 +153,13 @@ object ClndrOptions {
     forceSixRows: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreInactiveDaysInSelection: js.UndefOr[scala.Boolean] = js.undefined,
     lengthOfTime: LengthOfTime = null,
-    moment: momentLib.momentMod.momentNs.Moment = null,
+    moment: momentLib.momentMod.Moment = null,
     multiDayEvents: MultiDayEvents = null,
     ready: () => scala.Unit = null,
     render: /* data */ RenderData => scala.Unit = null,
     selectedDate: js.Any = null,
     showAdjacentMonths: js.UndefOr[scala.Boolean] = js.undefined,
-    startWithMonth: java.lang.String | momentLib.momentMod.momentNs.Moment = null,
+    startWithMonth: java.lang.String | momentLib.momentMod.Moment = null,
     targets: Targets = null,
     template: java.lang.String = null,
     trackSelectedDate: js.UndefOr[scala.Boolean] = js.undefined,

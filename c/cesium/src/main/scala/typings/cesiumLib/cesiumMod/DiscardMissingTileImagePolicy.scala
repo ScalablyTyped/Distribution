@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "DiscardMissingTileImagePolicy")
 @js.native
-class DiscardMissingTileImagePolicy protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.DiscardMissingTileImagePolicy {
+class DiscardMissingTileImagePolicy protected () extends js.Object {
   def this(options: cesiumLib.Anon_DisableCheckIfAllPixelsAreTransparent) = this()
-  /* CompleteClass */
-  override def isReady(): scala.Boolean = js.native
-  /* CompleteClass */
-  override def shouldDiscardImage(image: stdLib.HTMLImageElement): scala.Boolean = js.native
+  def isReady(): scala.Boolean = js.native
+  def shouldDiscardImage(image: stdLib.HTMLImageElement): scala.Boolean = js.native
 }
 

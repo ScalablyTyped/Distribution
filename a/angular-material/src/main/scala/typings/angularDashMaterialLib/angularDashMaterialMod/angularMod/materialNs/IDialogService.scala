@@ -15,12 +15,12 @@ trait IDialogService
   def cancel(): scala.Unit = js.native
   def cancel(response: js.Any): scala.Unit = js.native
   def confirm(): IConfirmDialog = js.native
-  def hide(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def hide(response: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def hide(): angularLib.angularMod.IPromise[_] = js.native
+  def hide(response: js.Any): angularLib.angularMod.IPromise[_] = js.native
   def prompt(): IPromptDialog = js.native
-  def show(dialog: IAlertDialog): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def show(dialog: IConfirmDialog): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def show(dialog: IDialogOptions): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def show(dialog: IPromptDialog): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def show(dialog: IAlertDialog): angularLib.angularMod.IPromise[_] = js.native
+  def show(dialog: IConfirmDialog): angularLib.angularMod.IPromise[_] = js.native
+  def show(dialog: IDialogOptions): angularLib.angularMod.IPromise[_] = js.native
+  def show(dialog: IPromptDialog): angularLib.angularMod.IPromise[_] = js.native
 }
 

@@ -12,7 +12,7 @@ trait Anon_CssImportPaths extends js.Object {
   var importPaths: js.UndefOr[
     js.Function2[
       /* paths */ js.Array[java.lang.String], 
-      /* req */ expressLib.expressMod.eNs.Request, 
+      /* req */ expressLib.expressMod.Request, 
       js.Array[java.lang.String]
     ]
   ] = js.undefined
@@ -22,7 +22,7 @@ trait Anon_CssImportPaths extends js.Object {
   var less: js.UndefOr[
     js.Function2[
       /* css */ java.lang.String, 
-      /* req */ expressLib.expressMod.eNs.Request, 
+      /* req */ expressLib.expressMod.Request, 
       java.lang.String
     ]
   ] = js.undefined
@@ -32,7 +32,7 @@ trait Anon_CssImportPaths extends js.Object {
   var path: js.UndefOr[
     js.Function2[
       /* pathname */ java.lang.String, 
-      /* req */ expressLib.expressMod.eNs.Request, 
+      /* req */ expressLib.expressMod.Request, 
       java.lang.String
     ]
   ] = js.undefined
@@ -41,9 +41,9 @@ trait Anon_CssImportPaths extends js.Object {
 object Anon_CssImportPaths {
   @scala.inline
   def apply(
-    importPaths: (/* paths */ js.Array[java.lang.String], /* req */ expressLib.expressMod.eNs.Request) => js.Array[java.lang.String] = null,
-    less: (/* css */ java.lang.String, /* req */ expressLib.expressMod.eNs.Request) => java.lang.String = null,
-    path: (/* pathname */ java.lang.String, /* req */ expressLib.expressMod.eNs.Request) => java.lang.String = null
+    importPaths: (/* paths */ js.Array[java.lang.String], /* req */ expressLib.expressMod.Request) => js.Array[java.lang.String] = null,
+    less: (/* css */ java.lang.String, /* req */ expressLib.expressMod.Request) => java.lang.String = null,
+    path: (/* pathname */ java.lang.String, /* req */ expressLib.expressMod.Request) => java.lang.String = null
   ): Anon_CssImportPaths = {
     val __obj = js.Dynamic.literal()
     if (importPaths != null) __obj.updateDynamic("importPaths")(js.Any.fromFunction2(importPaths))

@@ -9,11 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var isCore: js.Function1[/* id */ java.lang.String, js.UndefOr[scala.Boolean]] = js.native
-  var sync: js.Function2[
-    /* id */ java.lang.String, 
-    /* opts */ js.UndefOr[resolveLib.resolveMod.resolveNs.SyncOpts], 
-    java.lang.String
-  ] = js.native
+  var sync: js.Function2[/* id */ java.lang.String, /* opts */ js.UndefOr[SyncOpts], java.lang.String] = js.native
   /**
     * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
     *
@@ -28,10 +24,6 @@ object ^ extends js.Object {
     * @param options Options to use for resolving, optional.
     * @param callback
     */
-  def apply(
-    id: java.lang.String,
-    opts: resolveLib.resolveMod.resolveNs.AsyncOpts,
-    cb: resolveLib.resolveCallback
-  ): scala.Unit = js.native
+  def apply(id: java.lang.String, opts: AsyncOpts, cb: resolveLib.resolveCallback): scala.Unit = js.native
 }
 

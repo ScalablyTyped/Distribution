@@ -9,43 +9,29 @@ import scala.scalajs.js.annotation._
 trait MarketplaceEntitlementService
   extends awsDashSdkLib.libServiceMod.Service {
   @JSName("config")
-  var config_MarketplaceEntitlementService: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.ClientConfiguration = js.native
+  var config_MarketplaceEntitlementService: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
     * GetEntitlements retrieves entitlement values for a given product. The results can be filtered based on customer identifier or product dimensions.
     */
-  def getEntitlements(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsResult, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  def getEntitlements(): awsDashSdkLib.libRequestMod.Request[GetEntitlementsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEntitlements(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsResult, 
+      /* data */ GetEntitlementsResult, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsResult, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEntitlementsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * GetEntitlements retrieves entitlement values for a given product. The results can be filtered based on customer identifier or product dimensions.
     */
+  def getEntitlements(params: GetEntitlementsRequest): awsDashSdkLib.libRequestMod.Request[GetEntitlementsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getEntitlements(
-    params: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsRequest
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsResult, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  def getEntitlements(
-    params: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsRequest,
+    params: GetEntitlementsRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsResult, 
+      /* data */ GetEntitlementsResult, 
       scala.Unit
     ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.GetEntitlementsResult, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
+  ): awsDashSdkLib.libRequestMod.Request[GetEntitlementsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

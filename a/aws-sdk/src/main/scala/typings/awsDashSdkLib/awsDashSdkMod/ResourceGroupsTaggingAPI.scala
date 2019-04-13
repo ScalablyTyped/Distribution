@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class ResourceGroupsTaggingAPI ()
   extends awsDashSdkLib.clientsAllMod.ResourceGroupsTaggingAPI {
-  def this(options: awsDashSdkLib.clientsResourcegroupstaggingapiMod.ResourceGroupsTaggingAPINs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsResourcegroupstaggingapiMod.ClientConfiguration) = this()
 }
 

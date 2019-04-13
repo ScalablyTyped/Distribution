@@ -25,8 +25,8 @@ trait TreeRendererProps extends js.Object {
   var treeId: java.lang.String = js.native
   var treeIndex: scala.Double = js.native
   // Drop target
-  def connectDropTarget(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def connectDropTarget(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement, options: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def connectDropTarget(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  def connectDropTarget(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement, options: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   // used in dndManager
   def getPrevRow(): FlatDataItem | scala.Null = js.native
 }

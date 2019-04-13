@@ -16,9 +16,9 @@ class MobileFriendlyTwoTone protected ()
 @JSImport("@material-ui/icons", "MobileFriendlyTwoTone")
 @js.native
 class MobileFriendlyTwoToneCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

@@ -11,60 +11,60 @@ object iframeDashResizerLibStrings {
   
   @js.native
   sealed trait bodyOffset
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
-       with iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
+       with iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait bodyScroll
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
-       with iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
+       with iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait child extends js.Object
   
   @js.native
   sealed trait documentElementOffset
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
-       with iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
+       with iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait documentElementScroll
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
-       with iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
+       with iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait grow
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
   
   @js.native
   sealed trait lowestElement
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
   
   @js.native
   sealed trait max
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
-       with iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
+       with iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait min
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
-       with iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
+       with iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait parent extends js.Object
   
   @js.native
   sealed trait rightMostElement
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait scroll
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @js.native
   sealed trait taggedElement
-    extends iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.HeightCalculationMethod
-       with iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.WidthCalculationMethod
+    extends iframeDashResizerLib.iframeDashResizerMod.HeightCalculationMethod
+       with iframeDashResizerLib.iframeDashResizerMod.WidthCalculationMethod
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

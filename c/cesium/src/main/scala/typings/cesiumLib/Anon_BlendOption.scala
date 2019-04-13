@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BlendOption extends js.Object {
-  var blendOption: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.BlendOption] = js.undefined
+  var blendOption: js.UndefOr[cesiumLib.cesiumMod.BlendOption] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined
-  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
-  var scene: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Scene] = js.undefined
+  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.Matrix4] = js.undefined
+  var scene: js.UndefOr[cesiumLib.cesiumMod.Scene] = js.undefined
 }
 
 object Anon_BlendOption {
   @scala.inline
   def apply(
-    blendOption: cesiumLib.cesiumMod.CesiumNs.BlendOption = null,
+    blendOption: cesiumLib.cesiumMod.BlendOption = null,
     debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined,
-    modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null,
-    scene: cesiumLib.cesiumMod.CesiumNs.Scene = null
+    modelMatrix: cesiumLib.cesiumMod.Matrix4 = null,
+    scene: cesiumLib.cesiumMod.Scene = null
   ): Anon_BlendOption = {
     val __obj = js.Dynamic.literal()
     if (blendOption != null) __obj.updateDynamic("blendOption")(blendOption)

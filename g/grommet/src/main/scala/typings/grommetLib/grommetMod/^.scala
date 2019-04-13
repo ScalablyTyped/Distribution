@@ -8,342 +8,282 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Accordion: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsAccordionMod.AccordionProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Accordion: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsAccordionMod.AccordionProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val AccordionPanel: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsAccordionPanelMod.AccordionPanelProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val AccordionPanel: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsAccordionPanelMod.AccordionPanelProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Anchor: reactLib.reactMod.ReactNs.ComponentClass[
+  val Anchor: reactLib.reactMod.ComponentClass[
     grommetLib.componentsAnchorMod.AnchorProps with (grommetLib.utilsMod.Omit[
-      reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
         reactLib.HTMLAnchorElement
       ], 
       grommetLib.grommetLibStrings.color
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val AnnounceContext: reactLib.reactMod.ReactNs.Context[grommetLib.contextsAnnounceContextMod.AnnounceValue] = js.native
-  val Box: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsBoxMod.BoxProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val AnnounceContext: reactLib.reactMod.Context[grommetLib.contextsAnnounceContextMod.AnnounceValue] = js.native
+  val Box: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsBoxMod.BoxProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Button: reactLib.reactMod.ReactNs.ComponentClass[
+  val Button: reactLib.reactMod.ComponentClass[
     grommetLib.componentsButtonMod.ButtonProps with (grommetLib.utilsMod.Omit[
-      reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
         reactLib.HTMLButtonElement
       ], 
       grommetLib.grommetLibStrings.color
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Calendar: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCalendarMod.CalendarProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Calendar: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsCalendarMod.CalendarProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Carousel: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCarouselMod.CarouselProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Carousel: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsCarouselMod.CarouselProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Chart: reactLib.reactMod.ReactNs.ComponentClass[grommetLib.componentsChartMod.ChartProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val CheckBox: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCheckBoxMod.CheckBoxProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  val Chart: reactLib.reactMod.ComponentClass[grommetLib.componentsChartMod.ChartProps, reactLib.reactMod.ComponentState] = js.native
+  val CheckBox: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsCheckBoxMod.CheckBoxProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Clock: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsClockMod.ClockProps with ((reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]) | reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Clock: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsClockMod.ClockProps with ((reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]) | reactLib.reactMod.SVGProps[reactLib.SVGSVGElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Collapsible: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsCollapsibleMod.CollapsibleProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Collapsible: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsCollapsibleMod.CollapsibleProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val DataTable: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
+  val DataTable: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsDataTableMod.DataTableProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TableHTMLAttributes[reactLib.HTMLTableElement], 
       reactLib.HTMLTableElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Diagram: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsDiagramMod.DiagramProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Diagram: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsDiagramMod.DiagramProps with reactLib.reactMod.SVGProps[reactLib.SVGSVGElement], 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Distribution: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsDistributionMod.DistributionProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Distribution: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsDistributionMod.DistributionProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Drop: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsDropMod.DropProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Drop: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsDropMod.DropProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val DropButton: reactLib.reactMod.ReactNs.ComponentClass[
+  val DropButton: reactLib.reactMod.ComponentClass[
     grommetLib.componentsDropButtonMod.DropButtonProps with grommetLib.componentsButtonMod.ButtonProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Form: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsFormMod.FormProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement], 
+  val Form: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsFormMod.FormProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.FormHTMLAttributes[reactLib.HTMLFormElement], 
       reactLib.HTMLFormElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val FormField: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsFormFieldMod.FormFieldProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  val FormField: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsFormFieldMod.FormFieldProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Grid: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsGridMod.GridProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ])
+  val Grid: reactLib.reactMod.FC[
+    grommetLib.componentsGridMod.GridProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])
   ] = js.native
-  val Grommet: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsGrommetMod.GrommetProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Grommet: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsGrommetMod.GrommetProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Heading: reactLib.reactMod.ReactNs.FC[
+  val Heading: reactLib.reactMod.FC[
     grommetLib.componentsHeadingMod.HeadingProps with (grommetLib.utilsMod.Omit[
-      reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLHeadingElement], 
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.HTMLAttributes[reactLib.HTMLHeadingElement], 
         reactLib.HTMLHeadingElement
       ], 
       grommetLib.grommetLibStrings.color
     ])
   ] = js.native
-  val Image: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsImageMod.ImageProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ImgHTMLAttributes[reactLib.HTMLImageElement], 
+  val Image: reactLib.reactMod.FC[
+    grommetLib.componentsImageMod.ImageProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ImgHTMLAttributes[reactLib.HTMLImageElement], 
       reactLib.HTMLImageElement
     ])
   ] = js.native
-  val InfiniteScroll: reactLib.reactMod.ReactNs.ComponentClass[
+  val InfiniteScroll: reactLib.reactMod.ComponentClass[
     grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Keyboard: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsKeyboardMod.KeyboardProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Keyboard: reactLib.reactMod.ComponentClass[grommetLib.componentsKeyboardMod.KeyboardProps, reactLib.reactMod.ComponentState] = js.native
+  val Layer: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsLayerMod.LayerProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Layer: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsLayerMod.LayerProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Markdown: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsMarkdownMod.MarkdownProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Markdown: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsMarkdownMod.MarkdownProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
-  val MaskedInput: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsMaskedInputMod.MaskedInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  val MaskedInput: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsMaskedInputMod.MaskedInputProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Menu: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsMenuMod.MenuProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+  val Menu: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsMenuMod.MenuProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Meter: reactLib.reactMod.ReactNs.ComponentClass[grommetLib.componentsMeterMod.MeterProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  val Paragraph: reactLib.reactMod.ReactNs.FC[
+  val Meter: reactLib.reactMod.ComponentClass[grommetLib.componentsMeterMod.MeterProps, reactLib.reactMod.ComponentState] = js.native
+  val Paragraph: reactLib.reactMod.FC[
     grommetLib.componentsParagraphMod.ParagraphProps with (grommetLib.utilsMod.Omit[
-      reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.HTMLAttributes[reactLib.HTMLParagraphElement], 
         reactLib.HTMLParagraphElement
       ], 
       grommetLib.grommetLibStrings.color
     ])
   ] = js.native
-  val RadioButton: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRadioButtonMod.RadioButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  val RadioButton: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsRadioButtonMod.RadioButtonProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val RadioButtonGroup: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val RadioButtonGroup: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val RangeInput: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRangeInputMod.RangeInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  val RangeInput: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsRangeInputMod.RangeInputProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val RangeSelector: reactLib.reactMod.ReactNs.ComponentClass[
+  val RangeSelector: reactLib.reactMod.ComponentClass[
     grommetLib.componentsRangeSelectorMod.RangeSelectorProps with (grommetLib.utilsMod.Omit[
-      reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-        reactLib.HTMLDivElement
-      ], 
+      reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement], 
       grommetLib.grommetLibStrings.color
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val ResponsiveContext: reactLib.reactMod.ReactNs.Context[grommetLib.contextsResponsiveContextMod.ResponsiveValue] = js.native
-  val RoutedAnchor: reactLib.reactMod.ReactNs.ComponentClass[
+  val ResponsiveContext: reactLib.reactMod.Context[grommetLib.contextsResponsiveContextMod.ResponsiveValue] = js.native
+  val RoutedAnchor: reactLib.reactMod.ComponentClass[
     grommetLib.componentsRoutedAnchorMod.RoutedAnchorProps with (grommetLib.utilsMod.Omit[grommetLib.componentsAnchorMod.AnchorProps, grommetLib.grommetLibStrings.href]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val RoutedButton: reactLib.reactMod.ReactNs.ComponentClass[
+  val RoutedButton: reactLib.reactMod.ComponentClass[
     grommetLib.componentsRoutedButtonMod.RoutedButtonProps with grommetLib.componentsButtonMod.ButtonProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Select: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsSelectMod.SelectProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Select: reactLib.reactMod.ComponentClass[grommetLib.componentsSelectMod.SelectProps, reactLib.reactMod.ComponentState] = js.native
+  val SkipLink: reactLib.reactMod.FC[grommetLib.componentsSkipLinkMod.SkipLinkProps] = js.native
+  val SkipLinkTarget: reactLib.reactMod.FC[grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps] = js.native
+  val SkipLinks: reactLib.reactMod.ComponentClass[grommetLib.componentsSkipLinksMod.SkipLinksProps, reactLib.reactMod.ComponentState] = js.native
+  val Stack: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsStackMod.StackProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val SkipLink: reactLib.reactMod.ReactNs.FC[grommetLib.componentsSkipLinkMod.SkipLinkProps] = js.native
-  val SkipLinkTarget: reactLib.reactMod.ReactNs.FC[grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps] = js.native
-  val SkipLinks: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsSkipLinksMod.SkipLinksProps, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
-  val Stack: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsStackMod.StackProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
-  val Tab: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsTabMod.TabProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+  val Tab: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsTabMod.TabProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Table: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTableMod.TableProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement], 
+  val Table: reactLib.reactMod.FC[
+    grommetLib.componentsTableMod.TableProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TableHTMLAttributes[reactLib.HTMLTableElement], 
       reactLib.HTMLTableElement
     ])
   ] = js.native
-  val TableBody: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTableBodyMod.TableBodyProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLTableSectionElement], 
+  val TableBody: reactLib.reactMod.FC[
+    grommetLib.componentsTableBodyMod.TableBodyProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableSectionElement], 
       reactLib.HTMLTableSectionElement
     ])
   ] = js.native
-  val TableCell: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTableCellMod.TableCellProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TdHTMLAttributes[reactLib.HTMLTableDataCellElement], 
+  val TableCell: reactLib.reactMod.FC[
+    grommetLib.componentsTableCellMod.TableCellProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TdHTMLAttributes[reactLib.HTMLTableDataCellElement], 
       reactLib.HTMLTableDataCellElement
     ])
   ] = js.native
-  val TableFooter: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTableFooterMod.TableFooterProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLTableSectionElement], 
+  val TableFooter: reactLib.reactMod.FC[
+    grommetLib.componentsTableFooterMod.TableFooterProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableSectionElement], 
       reactLib.HTMLTableSectionElement
     ])
   ] = js.native
-  val TableHeader: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTableHeaderMod.TableHeaderProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLTableSectionElement], 
+  val TableHeader: reactLib.reactMod.FC[
+    grommetLib.componentsTableHeaderMod.TableHeaderProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableSectionElement], 
       reactLib.HTMLTableSectionElement
     ])
   ] = js.native
-  val TableRow: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTableRowMod.TableRowProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLTableRowElement], 
+  val TableRow: reactLib.reactMod.FC[
+    grommetLib.componentsTableRowMod.TableRowProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableRowElement], 
       reactLib.HTMLTableRowElement
     ])
   ] = js.native
-  val Tabs: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsTabsMod.TabsProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
-    ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+  val Tabs: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsTabsMod.TabsProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val Text: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsTextMod.TextProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement], 
+  val Text: reactLib.reactMod.FC[
+    grommetLib.componentsTextMod.TextProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLSpanElement], 
       reactLib.HTMLSpanElement
     ])
   ] = js.native
-  val TextArea: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsTextAreaMod.TextAreaProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
+  val TextArea: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsTextAreaMod.TextAreaProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
       reactLib.HTMLTextAreaElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val TextInput: reactLib.reactMod.ReactNs.ComponentClass[
+  val TextInput: reactLib.reactMod.ComponentClass[
     grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.utilsMod.Omit[
-      reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+      reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
         reactLib.HTMLInputElement
       ], 
       grommetLib.grommetLibStrings.onSelect | grommetLib.grommetLibStrings.size
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
   val ThemeContext: grommetLib.contextsThemeContextMod.ThemeContextI = js.native
-  val Video: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
+  val Video: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
       reactLib.HTMLVideoElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  val WorldMap: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsWorldMapMod.WorldMapProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
-    reactLib.reactMod.ReactNs.ComponentState
+  val WorldMap: reactLib.reactMod.ComponentClass[
+    grommetLib.componentsWorldMapMod.WorldMapProps with reactLib.reactMod.SVGProps[reactLib.SVGSVGElement], 
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

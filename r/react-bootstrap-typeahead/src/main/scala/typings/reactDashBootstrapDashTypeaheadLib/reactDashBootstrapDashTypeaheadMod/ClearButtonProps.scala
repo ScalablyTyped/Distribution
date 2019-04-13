@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClearButtonProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[
+  extends reactLib.reactMod.HTMLAttributes[
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.button
     ] {
   var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
@@ -16,12 +16,12 @@ trait ClearButtonProps
 object ClearButtonProps {
   @scala.inline
   def apply(
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[
+    HTMLAttributes: reactLib.reactMod.HTMLAttributes[
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.button
     ] = null,
     bsSize: TypeaheadBsSizes = null,
     label: java.lang.String = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[
+    onClick: reactLib.reactMod.MouseEventHandler[
       reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.button
     ] = null
   ): ClearButtonProps = {

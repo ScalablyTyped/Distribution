@@ -12,9 +12,12 @@ trait strings
 
 object strings {
   @scala.inline
-  def apply(CHIP_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip`): strings = {
+  def apply(
+    CHIP_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): strings = {
     val __obj = js.Dynamic.literal(CHIP_SELECTOR = CHIP_SELECTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

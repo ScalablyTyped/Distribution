@@ -7,25 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "LocalObjectIdentifierValueBlock")
 @js.native
-class LocalObjectIdentifierValueBlock ()
-  extends asn1jsLib.asn1jsMod.Asn1jsNs.LocalObjectIdentifierValueBlock {
-  def this(params: asn1jsLib.asn1jsMod.Asn1jsNs.LocalObjectIdentifierValueBlockParams) = this()
-  /* CompleteClass */
-  override var blockLength: scala.Double = js.native
-  /* CompleteClass */
-  override var error: java.lang.String = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override var warnings: js.Array[java.lang.String] = js.native
+class LocalObjectIdentifierValueBlock () extends LocalValueBlock {
+  def this(params: LocalObjectIdentifierValueBlockParams) = this()
   /**
-    * Convertion for the block to JSON object
+    * Create "LocalObjectIdentifierValueBlock" class from string
     * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * @param {string} string Input string to convert from
+    * @returns {boolean}
     */
-  /* CompleteClass */
-  override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
+  def fromString(data: java.lang.String): scala.Boolean = js.native
 }
 

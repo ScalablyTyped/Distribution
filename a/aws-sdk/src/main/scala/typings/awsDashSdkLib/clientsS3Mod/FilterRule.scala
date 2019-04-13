@@ -1,0 +1,28 @@
+package typings
+package awsDashSdkLib.clientsS3Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FilterRule extends js.Object {
+  /**
+    * The object key name prefix or suffix identifying one or more objects to which the filtering rule applies. The maximum prefix length is 1,024 characters. Overlapping prefixes and suffixes are not supported. For more information, see Configuring Event Notifications in the Amazon Simple Storage Service Developer Guide.
+    */
+  var Name: js.UndefOr[FilterRuleName] = js.undefined
+  /**
+    * 
+    */
+  var Value: js.UndefOr[FilterRuleValue] = js.undefined
+}
+
+object FilterRule {
+  @scala.inline
+  def apply(Name: FilterRuleName = null, Value: FilterRuleValue = null): FilterRule = {
+    val __obj = js.Dynamic.literal()
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (Value != null) __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[FilterRule]
+  }
+}
+

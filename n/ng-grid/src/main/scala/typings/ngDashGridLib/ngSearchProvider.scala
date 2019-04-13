@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ngSearchProvider protected ()
   extends ngDashGridLib.ngGridNs.ISearchProvider {
-  def this($scope: ngDashGridLib.ngGridNs.IGridScope, grid: ngDashGridLib.ngGridNs.IGridInstance, $filter: angularLib.angularMod.angularNs.IFilterService) = this()
+  def this($scope: ngDashGridLib.ngGridNs.IGridScope, grid: ngDashGridLib.ngGridNs.IGridInstance, $filter: angularLib.angularMod.IFilterService) = this()
   /* CompleteClass */
   override var extFilter: scala.Boolean = js.native
   /* CompleteClass */

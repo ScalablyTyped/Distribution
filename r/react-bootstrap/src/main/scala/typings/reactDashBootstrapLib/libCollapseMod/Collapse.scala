@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Collapse
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libCollapseMod.CollapseNs.CollapseProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[CollapseProps, js.Object, js.Any]
 

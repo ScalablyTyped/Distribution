@@ -32,7 +32,7 @@ object Intersections2DNs extends js.Object {
     y2: scala.Double,
     x3: scala.Double,
     y3: scala.Double
-  ): cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
+  ): cesiumLib.cesiumMod.Cartesian3 = js.native
   def computeBarycentricCoordinates(
     x: scala.Double,
     y: scala.Double,
@@ -42,7 +42,7 @@ object Intersections2DNs extends js.Object {
     y2: scala.Double,
     x3: scala.Double,
     y3: scala.Double,
-    result: cesiumLib.cesiumMod.CesiumNs.Cartesian3
-  ): cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
+    result: cesiumLib.cesiumMod.Cartesian3
+  ): cesiumLib.cesiumMod.Cartesian3 = js.native
 }
 

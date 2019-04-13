@@ -8,20 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.notifications")
 @js.native
 object ^ extends js.Object {
-  /**
-    * @enum
-    * @property GRANTED - User has elected to show notifications from the app . This is the default at install time.
-    * @property DENIED - User has elected not to show notifications from the app.
-    */
-  val PermissionLevel: chromeDashAppsLib.Anon_DENIED = js.native
-  /**
-    * @enum
-    * @prop BASIC - icon, title, message, expandedMessage, up to two buttons.
-    * @prop IMAGE - icon, title, message, expandedMessage, image, up to two buttons.
-    * @prop LIST - icon, title, message, items, up to two buttons. Users on Mac OS X only see the first item.
-    * @prop PROGRESS - icon, title, message, progress, up to two buttons.
-    */
-  val TemplateType: chromeDashAppsLib.Anon_BASIC = js.native
   /** The user pressed a button in the notification. */
   val onButtonClicked: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[

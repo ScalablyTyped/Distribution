@@ -9,22 +9,18 @@ trait JSONTransport
   extends nodemailerLib.nodemailerMod.Transport {
   var logger: nodemailerLib.libSharedMod.Logger
   @JSName("mailer")
-  var mailer_JSONTransport: nodemailerLib.libMailerMod.namespaced
-  var options: nodemailerLib.libJsonDashTransportMod.JSONTransportNs.Options
+  var mailer_JSONTransport: nodemailerLib.libMailerMod.^
+  var options: Options
 }
 
 object JSONTransport {
   @scala.inline
   def apply(
     logger: nodemailerLib.libSharedMod.Logger,
-    mailer: nodemailerLib.libMailerMod.namespaced,
+    mailer: nodemailerLib.libMailerMod.^,
     name: java.lang.String,
-    options: nodemailerLib.libJsonDashTransportMod.JSONTransportNs.Options,
-    send: (nodemailerLib.libMailerMailDashMessageMod.namespaced, js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* info */ nodemailerLib.libJsonDashTransportMod.JSONTransportNs.SentMessageInfo, 
-      scala.Unit
-    ]) => scala.Unit,
+    options: Options,
+    send: (nodemailerLib.libMailerMailDashMessageMod.^, js.Function2[/* err */ stdLib.Error | scala.Null, /* info */ SentMessageInfo, scala.Unit]) => scala.Unit,
     version: java.lang.String,
     close: () => scala.Unit = null,
     verify: (js.Function1[

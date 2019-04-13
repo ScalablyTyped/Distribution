@@ -25,7 +25,7 @@ trait Anon_Arguments extends js.Object {
   	*/
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[
     /* arguments */ ArgumentsType, 
-    pDashTimeLib.pDashTimeMod.pTimeNs.PromiseWithTime[ReturnType]
+    pDashTimeLib.pDashTimeMod.PromiseWithTime[ReturnType]
   ] = js.native
   /**
   	Measure the time a promise takes to resolve. Logs the elapsed time.
@@ -34,7 +34,7 @@ trait Anon_Arguments extends js.Object {
   	*/
   def log[ArgumentsType /* <: js.Array[_] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[
     /* arguments */ ArgumentsType, 
-    pDashTimeLib.pDashTimeMod.pTimeNs.PromiseWithTime[ReturnType]
+    pDashTimeLib.pDashTimeMod.PromiseWithTime[ReturnType]
   ] = js.native
 }
 

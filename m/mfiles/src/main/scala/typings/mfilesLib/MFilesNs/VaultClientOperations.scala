@@ -23,3 +23,8 @@ class VaultClientOperations ()
   override def SetVaultToOnline(ParentWindow: scala.Double): MFOnlineTransitionResultFlags = js.native
 }
 
+@JSGlobal("MFiles.VaultClientOperations")
+@js.native
+object VaultClientOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultClientOperations]
+

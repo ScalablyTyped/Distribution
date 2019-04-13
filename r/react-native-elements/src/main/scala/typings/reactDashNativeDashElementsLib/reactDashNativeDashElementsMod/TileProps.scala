@@ -10,9 +10,7 @@ trait TileProps extends js.Object {
     * Specify a different component as the Image component
     * @default React Native BackgroundImage component
     */
-  var ImageComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var ImageComponent: js.UndefOr[reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState]] = js.undefined
   /**
     * Number passed to control opacity on press
     *
@@ -97,7 +95,7 @@ object TileProps {
   @scala.inline
   def apply(
     imageSrc: reactDashNativeLib.reactDashNativeMod.ImageURISource | java.lang.String | scala.Double,
-    ImageComponent: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    ImageComponent: reactLib.reactMod.ComponentClass[js.Object, reactLib.reactMod.ComponentState] = null,
     activeOpacity: scala.Int | scala.Double = null,
     caption: java.lang.String = null,
     captionStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,

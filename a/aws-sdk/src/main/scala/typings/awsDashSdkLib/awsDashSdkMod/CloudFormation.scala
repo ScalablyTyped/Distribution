@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class CloudFormation ()
   extends awsDashSdkLib.clientsAllMod.CloudFormation {
-  def this(options: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsCloudformationMod.ClientConfiguration) = this()
 }
 

@@ -37,7 +37,7 @@ trait SelectProps extends js.Object {
   var onSearch: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var options: js.Array[java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object]
-  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var plain: js.UndefOr[scala.Boolean] = js.undefined
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var selected: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
@@ -48,7 +48,7 @@ trait SelectProps extends js.Object {
     java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object | (js.Array[java.lang.String | js.Object])
   ] = js.undefined
   var valueKey: js.UndefOr[java.lang.String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
-  var valueLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var valueLabel: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
 object SelectProps {
@@ -79,14 +79,14 @@ object SelectProps {
     onOpen: /* repeated */ js.Any => _ = null,
     onSearch: /* repeated */ js.Any => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    placeholder: java.lang.String | reactLib.reactMod.ReactNode = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     searchPlaceholder: java.lang.String = null,
     selected: scala.Double | js.Array[scala.Double] = null,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
     value: java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object | (js.Array[java.lang.String | js.Object]) = null,
     valueKey: java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    valueLabel: reactLib.reactMod.ReactNs.ReactNode = null
+    valueLabel: reactLib.reactMod.ReactNode = null
   ): SelectProps = {
     val __obj = js.Dynamic.literal(options = options)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)

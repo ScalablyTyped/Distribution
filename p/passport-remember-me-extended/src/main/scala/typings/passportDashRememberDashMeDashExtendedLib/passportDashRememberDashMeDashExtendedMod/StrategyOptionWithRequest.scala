@@ -13,7 +13,7 @@ object StrategyOptionWithRequest {
   @scala.inline
   def apply(
     passReqToCallback: passportDashRememberDashMeDashExtendedLib.passportDashRememberDashMeDashExtendedLibNumbers.`true`,
-    cookie: expressLib.expressMod.eNs.CookieOptions = null,
+    cookie: expressLib.expressMod.CookieOptions = null,
     key: java.lang.String = null
   ): StrategyOptionWithRequest = {
     val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback)

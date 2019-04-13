@@ -10,7 +10,7 @@ trait Anon_ extends js.Object {
   @JSName("$")
   var $_Original: jqueryLib.JQueryStatic = js.native
   var Collection: Anon_ClassProperties = js.native
-  val Events: backboneLib.backboneMod.BackboneNs.Events = js.native
+  val Events: backboneLib.backboneMod.Events = js.native
   /**
     * Helper to avoid code repetition in type declarations.
     * Backbone.Events cannot be extended, hence a separate abstract
@@ -21,15 +21,15 @@ trait Anon_ extends js.Object {
     * class, and for actual class definitions, please see the
     * Events_* interfaces above.
     */
-  var EventsMixin: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.EventsMixin] = js.native
+  var EventsMixin: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.EventsMixin] = js.native
   var History: Anon_Started = js.native
   var Model: Anon_Attributes = js.native
-  var ModelBase: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.ModelBase] = js.native
+  var ModelBase: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.ModelBase] = js.native
   var Router: Anon_ClassPropertiesExtend = js.native
   var View: Anon_ClassPropertiesExtendOptions = js.native
   var emulateHTTP: scala.Boolean = js.native
   var emulateJSON: scala.Boolean = js.native
-  var history: backboneLib.backboneMod.BackboneNs.History = js.native
+  var history: backboneLib.backboneMod.History = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param element A DOM element to wrap in a jQuery object.
@@ -199,20 +199,17 @@ trait Anon_ extends js.Object {
   def ajax(options: jqueryLib.JQueryAjaxSettings): jqueryLib.JQueryXHR = js.native
   // Utility
   def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Backbone */ js.Any = js.native
+  def sync(method: java.lang.String, model: backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]): js.Any = js.native
   def sync(
     method: java.lang.String,
-    model: backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
-  ): js.Any = js.native
-  def sync(
-    method: java.lang.String,
-    model: backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model],
+    model: backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model],
     options: jqueryLib.JQueryAjaxSettings
   ): js.Any = js.native
   // SYNC
-  def sync(method: java.lang.String, model: backboneLib.backboneMod.BackboneNs.Model): js.Any = js.native
+  def sync(method: java.lang.String, model: backboneLib.backboneMod.Model): js.Any = js.native
   def sync(
     method: java.lang.String,
-    model: backboneLib.backboneMod.BackboneNs.Model,
+    model: backboneLib.backboneMod.Model,
     options: jqueryLib.JQueryAjaxSettings
   ): js.Any = js.native
 }

@@ -31,18 +31,14 @@ object ^ extends js.Object {
   	 * @param queryString Querystring
   	 * @param charsetParam The charset for parsing
   	 */
-  def parse(queryString: java.lang.String, charsetParam: urlencodeLib.urlencodeMod.urlencodeNs.charsetParam): js.Any = js.native
+  def parse(queryString: java.lang.String, charsetParam: charsetParam): js.Any = js.native
   /**
   	 * Stringify object
   	 * @param obj Query Object
   	 * @param charsetParam The charset for parsing
   	 */
   def stringify(obj: js.Any): java.lang.String = js.native
-  def stringify(obj: js.Any, prefix: urlencodeLib.urlencodeMod.urlencodeNs.charsetParam): java.lang.String = js.native
-  def stringify(
-    obj: js.Any,
-    prefix: urlencodeLib.urlencodeMod.urlencodeNs.charsetParam,
-    charsetParam: urlencodeLib.urlencodeMod.urlencodeNs.charsetParam
-  ): java.lang.String = js.native
+  def stringify(obj: js.Any, prefix: charsetParam): java.lang.String = js.native
+  def stringify(obj: js.Any, prefix: charsetParam, charsetParam: charsetParam): java.lang.String = js.native
 }
 

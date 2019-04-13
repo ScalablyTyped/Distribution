@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MaskedInputProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] {
+  extends reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] {
   var guide: js.UndefOr[scala.Boolean] = js.undefined
   var keepCharPositions: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[maskArray | (js.Function1[/* value */ java.lang.String, maskArray])] = js.undefined
@@ -31,7 +31,7 @@ trait MaskedInputProps
 object MaskedInputProps {
   @scala.inline
   def apply(
-    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
+    InputHTMLAttributes: reactLib.reactMod.InputHTMLAttributes[stdLib.HTMLInputElement] = null,
     guide: js.UndefOr[scala.Boolean] = js.undefined,
     keepCharPositions: js.UndefOr[scala.Boolean] = js.undefined,
     mask: maskArray | (js.Function1[/* value */ java.lang.String, maskArray]) = null,

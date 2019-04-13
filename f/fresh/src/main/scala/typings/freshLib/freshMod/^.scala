@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fresh", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(reqHeaders: freshLib.freshMod.freshNs.Headers, resHeaders: freshLib.freshMod.freshNs.Headers): scala.Boolean = js.native
+  def apply(reqHeaders: Headers, resHeaders: Headers): scala.Boolean = js.native
 }
 

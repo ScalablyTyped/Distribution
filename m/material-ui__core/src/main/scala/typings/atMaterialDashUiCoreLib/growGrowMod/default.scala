@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Grow/Grow", JSImport.Default)
 @js.native
 class default protected ()
-  extends reactLib.reactMod.ReactNs.Component[GrowProps, reactLib.reactMod.ReactNs.ComponentState, js.Any] {
+  extends reactLib.reactMod.Component[GrowProps, reactLib.reactMod.ComponentState, js.Any] {
   def this(props: GrowProps) = this()
   def this(props: GrowProps, context: js.Any) = this()
 }

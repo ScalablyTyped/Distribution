@@ -15,11 +15,11 @@ trait NavBarProps extends js.Object {
   var navBarStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
-  var renderLeftButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var renderNavBar: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderLeftButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNode]] = js.undefined
+  var renderNavBar: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNode]] = js.undefined
   // Right button
-  var renderRightButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var renderTitle: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var renderRightButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNode]] = js.undefined
+  var renderTitle: js.UndefOr[js.Function1[/* props */ CardSubViewProps, reactLib.reactMod.ReactNode]] = js.undefined
   // Title
   var title: js.UndefOr[java.lang.String] = js.undefined
   var titleStyle: js.UndefOr[
@@ -35,10 +35,10 @@ object NavBarProps {
     hideBackButton: js.UndefOr[scala.Boolean] = js.undefined,
     hideNavBar: js.UndefOr[scala.Boolean] = js.undefined,
     navBarStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderLeftButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderNavBar: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderRightButton: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
+    renderTitle: /* props */ CardSubViewProps => reactLib.reactMod.ReactNode = null,
     title: java.lang.String = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null
   ): NavBarProps = {

@@ -21,6 +21,6 @@ object ^ extends js.Object {
     *
     * @return An array of address objects
     */
-  def apply(address: java.lang.String): js.Array[nodemailerLib.libAddressparserMod.addressparserNs.Address] = js.native
+  def apply(address: java.lang.String): js.Array[Address] = js.native
 }
 

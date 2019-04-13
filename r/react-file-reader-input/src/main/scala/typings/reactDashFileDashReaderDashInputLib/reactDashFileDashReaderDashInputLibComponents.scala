@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashFileDashReaderDashInputLibComponents {
   @scala.inline
-  def ReactDashFileDashReaderDashInput: reactLib.reactMod.ReactNs.ComponentType[
-    reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Props
-  ] = js.constructorOf[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.namespaced].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Props]]
+  def ReactDashFileDashReaderDashInput: reactLib.reactMod.ComponentType[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props] = js.constructorOf[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props]]
   @scala.inline
-  def Props: reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Props.type = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Props
-  type Props = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Props
+  def Props: reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props.type = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
+  type Props = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
 }
 

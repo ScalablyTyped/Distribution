@@ -27,7 +27,7 @@ trait Slideout extends js.Object {
     * @param event The name of the event you want to emit.
     * @param data Data to pass to the listeners.
     */
-  def emit(event: slideoutLib.slideoutMod.SlideoutNs.Events, data: js.Any*): Slideout = js.native
+  def emit(event: Events, data: js.Any*): Slideout = js.native
   /**
     * Enables opening the slideout via touch events.
     */
@@ -41,7 +41,7 @@ trait Slideout extends js.Object {
     * @param event The event name.
     * @param listener A listener function to remove.
     */
-  def off(event: slideoutLib.slideoutMod.SlideoutNs.Events, listener: js.Function): Slideout = js.native
+  def off(event: Events, listener: js.Function): Slideout = js.native
   /**
     * Removes a listener from the collection for the specified event.
     * @param event The event name.
@@ -57,7 +57,7 @@ trait Slideout extends js.Object {
     * @param event The event name.
     * @param listener A listener function to add.
     */
-  def on(event: slideoutLib.slideoutMod.SlideoutNs.Events, listener: js.Function): Slideout = js.native
+  def on(event: Events, listener: js.Function): Slideout = js.native
   /**
     * Adds a listener to the collection for the specified event.
     * @param event The event name.
@@ -73,7 +73,7 @@ trait Slideout extends js.Object {
     * @param event The event name.
     * @param listener A listener function to add.
     */
-  def once(event: slideoutLib.slideoutMod.SlideoutNs.Events, listener: js.Function): Slideout = js.native
+  def once(event: Events, listener: js.Function): Slideout = js.native
   /**
     * Adds a listener to the collection for the specified event that will be called only once.
     * @param event The event name.

@@ -104,7 +104,7 @@ trait Anon_AUTHORIZATIONAUTHORIZED extends js.Object {
   		 */
   def getContactsAuthorization(): scala.Double = js.native
   /**
-  		 * Gets the group with the specified identifier. Deprecated for >= iOS9. Use <Titanium.Contacts.getGroupByIdentifier> instead.
+  		 * Gets the group with the specified identifier.
   		 */
   def getGroupByID(id: scala.Double): titaniumLib.TitaniumNs.ContactsNs.Group = js.native
   /**
@@ -121,7 +121,7 @@ trait Anon_AUTHORIZATIONAUTHORIZED extends js.Object {
   		 */
   def getPeopleWithName(name: java.lang.String): js.Array[titaniumLib.TitaniumNs.ContactsNs.Person] = js.native
   /**
-  		 * Gets the person with the specified identifier. Deprecated for >= iOS9. Use <Titanium.Contacts.getPersonByIdentifier> instead.
+  		 * Gets the person with the specified identifier.
   		 */
   def getPersonByID(id: scala.Double): titaniumLib.TitaniumNs.ContactsNs.Person = js.native
   /**

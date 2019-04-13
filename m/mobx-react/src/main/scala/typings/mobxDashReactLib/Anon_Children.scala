@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Children extends js.Object {
-  var children: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var render: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var children: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
+  var render: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
 }
 
 object Anon_Children {
   @scala.inline
   def apply(
-    children: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    render: () => reactLib.reactMod.ReactNs.ReactNode = null
+    children: () => reactLib.reactMod.ReactNode = null,
+    render: () => reactLib.reactMod.ReactNode = null
   ): Anon_Children = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction0(children))

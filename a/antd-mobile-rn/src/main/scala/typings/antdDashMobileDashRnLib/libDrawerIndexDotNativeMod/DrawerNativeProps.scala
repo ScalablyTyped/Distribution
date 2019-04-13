@@ -26,7 +26,7 @@ object DrawerNativeProps {
     onOpenChange: /* isOpen */ scala.Boolean => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     position: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.left | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.right | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.top | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.bottom = null,
-    sidebar: reactLib.reactMod.ReactNs.ReactNode = null
+    sidebar: reactLib.reactMod.ReactNode = null
   ): DrawerNativeProps = {
     val __obj = js.Dynamic.literal()
     if (drawerBackgroundColor != null) __obj.updateDynamic("drawerBackgroundColor")(drawerBackgroundColor)

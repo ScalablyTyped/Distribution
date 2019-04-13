@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TagsInputConfigurationProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   def setActiveInterpolation(
     directive: java.lang.String,
     options: ngDashTagsDashInputLib.ngDashTagsDashInputMod.IAutocompleteParams

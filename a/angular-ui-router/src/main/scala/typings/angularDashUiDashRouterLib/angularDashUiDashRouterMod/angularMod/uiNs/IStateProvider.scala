@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IStateProvider
-  extends angularLib.angularMod.angularNs.IServiceProvider {
+  extends angularLib.angularMod.IServiceProvider {
   def decorator(): js.Any = js.native
   def decorator(name: java.lang.String): js.Any = js.native
   def decorator(

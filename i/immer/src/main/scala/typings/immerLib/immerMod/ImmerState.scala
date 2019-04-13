@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImmerState[T] extends js.Object {
-  var assigned: /* import warning: ImportType.apply Failed type conversion: {[prop: string] : boolean, [index: number] : boolean} */ js.Any
+  var assigned: org.scalablytyped.runtime.StringDictionary[scala.Boolean] with org.scalablytyped.runtime.NumberDictionary[scala.Boolean]
   var base: T
   var copy: T
   var parent: js.UndefOr[ImmerState[_]] = js.undefined
@@ -15,7 +15,7 @@ trait ImmerState[T] extends js.Object {
 object ImmerState {
   @scala.inline
   def apply[T](
-    assigned: /* import warning: ImportType.apply Failed type conversion: {[prop: string] : boolean, [index: number] : boolean} */ js.Any,
+    assigned: org.scalablytyped.runtime.StringDictionary[scala.Boolean] with org.scalablytyped.runtime.NumberDictionary[scala.Boolean],
     base: T,
     copy: T,
     parent: ImmerState[_] = null

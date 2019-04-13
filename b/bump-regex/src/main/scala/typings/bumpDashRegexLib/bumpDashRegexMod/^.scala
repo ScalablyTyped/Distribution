@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("bump-regex", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(
-    opts: java.lang.String | bumpDashRegexLib.bumpDashRegexMod.BumpRegexNs.Options,
-    cb: bumpDashRegexLib.bumpDashRegexMod.BumpRegexNs.Callback
-  ): js.Any = js.native
+  def apply(opts: java.lang.String | Options, cb: Callback): js.Any = js.native
 }
 

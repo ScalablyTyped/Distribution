@@ -8,13 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("xstate/lib/actions", JSImport.Namespace)
 @js.native
 object libActionsMod extends js.Object {
-  val initEvent: xstateLib.Anon_Type = js.native
-  def after(delay: scala.Double): java.lang.String = js.native
-  def after(delay: scala.Double, id: java.lang.String): java.lang.String = js.native
+  def after(delayRef: java.lang.String): java.lang.String = js.native
+  def after(delayRef: java.lang.String, id: java.lang.String): java.lang.String = js.native
+  def after(delayRef: scala.Double): java.lang.String = js.native
+  def after(delayRef: scala.Double, id: java.lang.String): java.lang.String = js.native
   def assign[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     assignment: stdLib.Partial[
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof TContext ]: (extState : TContext, event : TEvent): TContext[K] | TContext[K]}
+  {[ K in keyof TContext ]: (context : TContext, event : TEvent): TContext[K] | TContext[K]}
     */ xstateLib.xstateLibStrings.assign with js.Any
     ]
   ): xstateLib.libTypesMod.AssignAction[TContext, TEvent] = js.native
@@ -80,6 +81,10 @@ object libActionsMod extends js.Object {
   def toActivityDefinition[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](action: java.lang.String): xstateLib.libTypesMod.ActivityDefinition[TContext, TEvent] = js.native
   def toActivityDefinition[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](action: xstateLib.libTypesMod.ActivityDefinition[TContext, TEvent]): xstateLib.libTypesMod.ActivityDefinition[TContext, TEvent] = js.native
   def toEventObject[TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.Event[TEvent]): TEvent = js.native
+  def toEventObject[TEvent /* <: xstateLib.libTypesMod.EventObject */](
+    event: xstateLib.libTypesMod.Event[TEvent],
+    payload: (stdLib.Record[java.lang.String, _]) with xstateLib.Anon_Type
+  ): TEvent = js.native
   @JSName("actionTypes")
   @js.native
   object actionTypesNs extends js.Object {
@@ -96,6 +101,11 @@ object libActionsMod extends js.Object {
     val send: xstateLib.libTypesMod.ActionTypes = js.native
     val start: xstateLib.libTypesMod.ActionTypes = js.native
     val stop: xstateLib.libTypesMod.ActionTypes = js.native
+  }
+  
+  @js.native
+  object initEvent extends js.Object {
+    var `type`: xstateLib.libTypesMod.ActionTypes = js.native
   }
   
 }

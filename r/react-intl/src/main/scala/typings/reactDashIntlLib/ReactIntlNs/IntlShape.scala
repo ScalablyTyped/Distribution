@@ -11,7 +11,7 @@ trait IntlShape
      with IntlConfig
      with IntlFormat {
   @JSName("now")
-  var now_Original: reactLib.reactMod.ReactNs.Requireable[_] = js.native
+  var now_Original: reactLib.reactMod.Requireable[_] = js.native
   def now(
     props: js.Object,
     propName: java.lang.String,

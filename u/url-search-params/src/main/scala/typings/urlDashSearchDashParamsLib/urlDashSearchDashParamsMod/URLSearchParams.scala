@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait URLSearchParams extends js.Object {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[stdLib.IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def delete(name: java.lang.String): scala.Unit = js.native

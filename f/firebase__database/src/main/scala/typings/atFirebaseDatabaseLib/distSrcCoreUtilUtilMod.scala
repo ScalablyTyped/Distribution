@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcCoreUtilUtilMod extends js.Object {
   val INTEGER_REGEXP_ : stdLib.RegExp = js.native
-  val MAX_NAME: /* [MAX_NAME] */ java.lang.String = js.native
-  val MIN_NAME: /* [MIN_NAME] */ java.lang.String = js.native
+  val MAX_NAME: atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.`[MAX_NAME]` = js.native
+  val MIN_NAME: atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.`[MIN_NAME]` = js.native
   var logger: (js.Function1[/* a */ java.lang.String, scala.Unit]) | scala.Null = js.native
   def LUIDGenerator(): scala.Double = js.native
   def ObjectToUniqueKey(obj: js.Any): java.lang.String = js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "CompositeProperty")
 @js.native
-class CompositeProperty ()
-  extends cesiumLib.cesiumMod.CesiumNs.CompositeProperty
+class CompositeProperty () extends Property {
+  var intervals: TimeIntervalCollection = js.native
+}
 

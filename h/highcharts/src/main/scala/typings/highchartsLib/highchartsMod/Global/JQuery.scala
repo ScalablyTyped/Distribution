@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JQuery extends js.Object {
-  def highcharts(): highchartsLib.highchartsMod.HighchartsNs.ChartObject = js.native
+  def highcharts(): highchartsLib.highchartsMod.ChartObject = js.native
   /**
     * Creates a new Highcharts.Chart for the current JQuery selector; usually
     * a div selected by $('#container')
@@ -15,10 +15,10 @@ trait JQuery extends js.Object {
     * @param callback Callback function used to manipulate the constructed chart instance
     * @return current {JQuery} selector the current JQuery selector
     */
-  def highcharts(options: highchartsLib.highchartsMod.HighchartsNs.Options): JQuery = js.native
+  def highcharts(options: highchartsLib.highchartsMod.Options): JQuery = js.native
   def highcharts(
-    options: highchartsLib.highchartsMod.HighchartsNs.Options,
-    callback: js.Function1[/* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject, scala.Unit]
+    options: highchartsLib.highchartsMod.Options,
+    callback: js.Function1[/* chart */ highchartsLib.highchartsMod.ChartObject, scala.Unit]
   ): JQuery = js.native
 }
 

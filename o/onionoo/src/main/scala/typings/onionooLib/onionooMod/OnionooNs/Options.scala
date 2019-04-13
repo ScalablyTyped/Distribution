@@ -15,14 +15,14 @@ trait Options extends js.Object {
     * Storage adapter instance for storing cached data.
     * @default false
     */
-  var cache: js.UndefOr[gotLib.gotMod.gotNs.Cache | onionooLib.onionooLibNumbers.`false`] = js.undefined
+  var cache: js.UndefOr[gotLib.gotMod.Cache | onionooLib.onionooLibNumbers.`false`] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
     baseUrl: java.lang.String = null,
-    cache: gotLib.gotMod.gotNs.Cache | onionooLib.onionooLibNumbers.`false` = null
+    cache: gotLib.gotMod.Cache | onionooLib.onionooLibNumbers.`false` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)

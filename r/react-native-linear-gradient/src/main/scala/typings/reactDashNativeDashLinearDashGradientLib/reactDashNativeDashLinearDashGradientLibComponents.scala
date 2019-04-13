@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashLinearDashGradientLibComponents {
   @scala.inline
-  def LinearGradient: reactLib.reactMod.ReactNs.ComponentType[
+  def LinearGradient: reactLib.reactMod.ComponentType[
     reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradientProps
-  ] = js.constructorOf[reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradient].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradient].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradientProps]]
   @scala.inline
-  def ReactDashNativeDashLinearDashGradient: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashLinearDashGradient: reactLib.reactMod.ComponentType[
     reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradientProps
-  ] = js.constructorOf[reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradientProps]]
   @scala.inline
   def LinearGradientProps: reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradientProps.type = reactDashNativeDashLinearDashGradientLib.reactDashNativeDashLinearDashGradientMod.LinearGradientProps

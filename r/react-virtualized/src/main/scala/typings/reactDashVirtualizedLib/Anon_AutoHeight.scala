@@ -64,12 +64,12 @@ trait Anon_AutoHeight extends js.Object {
   /** Vertical offset. */
   var scrollTop: js.UndefOr[scala.Double] = js.native
   /** Optional inline style */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.native
   /** Tab index for focus */
   var tabIndex: js.UndefOr[scala.Double | scala.Null] = js.native
   /** Width of list */
   var width: scala.Double = js.native
   /** Responsible for rendering a row given an index; ({ index: number }): node */
-  def rowRenderer(props: reactDashVirtualizedLib.distEsListMod.ListRowProps): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def rowRenderer(props: reactDashVirtualizedLib.distEsListMod.ListRowProps): reactLib.reactMod.ReactNode = js.native
 }
 

@@ -18,19 +18,19 @@ object stringNs extends js.Object {
     * @description All ASCII letters
     * @type String
     */
-  val ASCII_LETTERS: /* abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ */ java.lang.String = js.native
+  val ASCII_LETTERS: playcanvasLib.playcanvasLibStrings.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ = js.native
   /**
     * @name pc.string.ASCII_LOWERCASE
     * @description All lowercase letters
     * @type String
     */
-  val ASCII_LOWERCASE: /* abcdefghijklmnopqrstuvwxyz */ java.lang.String = js.native
+  val ASCII_LOWERCASE: playcanvasLib.playcanvasLibStrings.abcdefghijklmnopqrstuvwxyz = js.native
   /**
     * @name pc.string.ASCII_UPPERCASE
     * @description All uppercase letters
     * @type String
     */
-  val ASCII_UPPERCASE: /* ABCDEFGHIJKLMNOPQRSTUVWXYZ */ java.lang.String = js.native
+  val ASCII_UPPERCASE: playcanvasLib.playcanvasLibStrings.ABCDEFGHIJKLMNOPQRSTUVWXYZ = js.native
   /**
     * @function
     * @name pc.string.format

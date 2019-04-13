@@ -9,13 +9,13 @@ trait RouteProps extends js.Object {
   var children: js.UndefOr[
     (js.Function1[
       /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) | reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
+    ]) | reactLib.reactMod.ReactNode
   ] = js.undefined
   var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[
+    reactLib.reactMod.ComponentClass[
       reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ]
   ] = js.undefined
   var exact: js.UndefOr[scala.Boolean] = js.undefined
@@ -23,7 +23,7 @@ trait RouteProps extends js.Object {
   var render: js.UndefOr[
     js.Function1[
       /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var strict: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,15 +34,15 @@ object RouteProps {
   def apply(
     children: (js.Function1[
       /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]) | reactLib.reactMod.ReactNs.ReactNode = null,
-    component: reactLib.reactMod.ReactNs.ComponentClass[
+      reactLib.reactMod.ReactNode
+    ]) | reactLib.reactMod.ReactNode = null,
+    component: reactLib.reactMod.ComponentClass[
       reactDashRouterLib.reactDashRouterMod.RouterProps, 
-      reactLib.reactMod.ReactNs.ComponentState
+      reactLib.reactMod.ComponentState
     ] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     path: java.lang.String = null,
-    render: /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ reactDashRouterLib.reactDashRouterMod.RouterProps => reactLib.reactMod.ReactNode = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): RouteProps = {
     val __obj = js.Dynamic.literal()

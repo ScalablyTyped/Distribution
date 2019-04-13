@@ -18,13 +18,10 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Conflict")
 @js.native
-class Conflict protected ()
-  extends loopbackLib.loopbackMod.lNs.Conflict {
-  def this(modelId: js.Any, SourceModel: loopbackLib.loopbackMod.lNs.PersistedModel, TargetModel: loopbackLib.loopbackMod.lNs.PersistedModel) = this()
-  /* CompleteClass */
-  override var source: js.Any = js.native
-  /* CompleteClass */
-  override var target: js.Any = js.native
+class Conflict protected () extends js.Object {
+  def this(modelId: js.Any, SourceModel: PersistedModel, TargetModel: PersistedModel) = this()
+  var source: js.Any = js.native
+  var target: js.Any = js.native
   /**
     * Get the conflicting changes
     * @callback {() => void} callback
@@ -32,12 +29,11 @@ class Conflict protected ()
     * @param {Change} sourceChange
     * @param {Change} targetChang
     */
-  /* CompleteClass */
-  override def changes(
+  def changes(
     callback: js.Function3[
       /* err */ stdLib.Error, 
-      /* sourceChange */ loopbackLib.loopbackMod.lNs.Change, 
-      /* targetChange */ loopbackLib.loopbackMod.lNs.Change, 
+      /* sourceChange */ Change, 
+      /* targetChange */ Change, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -48,12 +44,11 @@ class Conflict protected ()
     * @param {PersistedModel} source
     * @param {PersistedModel} targe
     */
-  /* CompleteClass */
-  override def models(
+  def models(
     callback: js.Function3[
       /* err */ stdLib.Error, 
-      /* source */ loopbackLib.loopbackMod.lNs.PersistedModel, 
-      /* target */ loopbackLib.loopbackMod.lNs.PersistedModel, 
+      /* source */ PersistedModel, 
+      /* target */ PersistedModel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -67,8 +62,7 @@ class Conflict protected ()
     * @callback {() => void} callback
     * @param {Error} err
     */
-  /* CompleteClass */
-  override def resolve(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def resolve(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Resolve the conflict using the supplied instance data
     * @param {any} data The set of changes to apply on the model
@@ -76,22 +70,19 @@ class Conflict protected ()
     * @callback {() => void} callback
     * @param {Error} err
     */
-  /* CompleteClass */
-  override def resolveManually(data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def resolveManually(data: js.Any, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Resolve the conflict using the instance data in the source model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  /* CompleteClass */
-  override def resolveUsingSource(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def resolveUsingSource(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Resolve the conflict using the instance data in the target model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  /* CompleteClass */
-  override def resolveUsingTarget(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def resolveUsingTarget(callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   /**
     * Return a new Conflict instance with swapped Source and Target models
     * This is useful when resolving a conflict in one-way
@@ -102,8 +93,7 @@ class Conflict protected ()
     * ```
     * @returns {Conflict} A new Conflict instance
     */
-  /* CompleteClass */
-  override def swapParties(): loopbackLib.loopbackMod.lNs.Conflict = js.native
+  def swapParties(): Conflict = js.native
   /**
     * Determine the conflict type
     * Possible results ar
@@ -116,7 +106,6 @@ class Conflict protected ()
     * @param {Error} err
     * @param {string} type The conflict type
     */
-  /* CompleteClass */
-  override def `type`(callback: js.Function2[/* err */ stdLib.Error, /* type */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def `type`(callback: js.Function2[/* err */ stdLib.Error, /* type */ java.lang.String, scala.Unit]): scala.Unit = js.native
 }
 

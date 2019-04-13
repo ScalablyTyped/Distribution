@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event handlers and closing the dialog.
+  * 
+  * @remarks
+  * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
   */
 trait Dialog extends js.Object {
   /**

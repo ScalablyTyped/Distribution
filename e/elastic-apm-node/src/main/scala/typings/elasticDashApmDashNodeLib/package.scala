@@ -13,5 +13,6 @@ package object elasticDashApmDashNodeLib {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PatchOptions */ /* options */ js.Any, 
     js.Any
   ]
+  type Payload = org.scalablytyped.runtime.StringDictionary[js.Any]
   type TagValue = js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null]
 }

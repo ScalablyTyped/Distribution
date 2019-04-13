@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Content extends js.Object {
   var content: js.Any
-  var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
+  var res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse
 }
 
 object Anon_Content {
   @scala.inline
-  def apply(content: js.Any, res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse): Anon_Content = {
+  def apply(content: js.Any, res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse): Anon_Content = {
     val __obj = js.Dynamic.literal(content = content, res = res)
   
     __obj.asInstanceOf[Anon_Content]

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("convert-hrtime", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(hrtime: js.Tuple2[scala.Double, scala.Double]): convertDashHrtimeLib.convertDashHrtimeMod.convertHrtimeNs.HRTime = js.native
+  def apply(hrtime: js.Tuple2[scala.Double, scala.Double]): HRTime = js.native
 }
 

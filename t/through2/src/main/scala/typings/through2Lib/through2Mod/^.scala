@@ -9,49 +9,26 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): nodeLib.streamMod.Transform = js.native
-  def apply(opts: nodeLib.streamMod.internalNs.DuplexOptions): nodeLib.streamMod.Transform = js.native
-  def apply(
-    opts: nodeLib.streamMod.internalNs.DuplexOptions,
-    transform: through2Lib.through2Mod.through2Ns.TransformFunction
-  ): nodeLib.streamMod.Transform = js.native
-  def apply(
-    opts: nodeLib.streamMod.internalNs.DuplexOptions,
-    transform: through2Lib.through2Mod.through2Ns.TransformFunction,
-    flush: through2Lib.through2Mod.through2Ns.FlushCallback
-  ): nodeLib.streamMod.Transform = js.native
-  def apply(transform: through2Lib.through2Mod.through2Ns.TransformFunction): nodeLib.streamMod.Transform = js.native
-  def apply(
-    transform: through2Lib.through2Mod.through2Ns.TransformFunction,
-    flush: through2Lib.through2Mod.through2Ns.FlushCallback
-  ): nodeLib.streamMod.Transform = js.native
+  def apply(opts: nodeLib.streamMod.DuplexOptions): nodeLib.streamMod.Transform = js.native
+  def apply(opts: nodeLib.streamMod.DuplexOptions, transform: TransformFunction): nodeLib.streamMod.Transform = js.native
+  def apply(opts: nodeLib.streamMod.DuplexOptions, transform: TransformFunction, flush: FlushCallback): nodeLib.streamMod.Transform = js.native
+  def apply(transform: TransformFunction): nodeLib.streamMod.Transform = js.native
+  def apply(transform: TransformFunction, flush: FlushCallback): nodeLib.streamMod.Transform = js.native
   /**
   	 * Creates a constructor for a custom Transform. This is useful when you
   	 * want to use the same transform logic in multiple instances.
   	 */
-  def ctor(): through2Lib.through2Mod.through2Ns.Through2Constructor = js.native
-  def ctor(opts: nodeLib.streamMod.internalNs.DuplexOptions): through2Lib.through2Mod.through2Ns.Through2Constructor = js.native
-  def ctor(
-    opts: nodeLib.streamMod.internalNs.DuplexOptions,
-    transform: through2Lib.through2Mod.through2Ns.TransformFunction
-  ): through2Lib.through2Mod.through2Ns.Through2Constructor = js.native
-  def ctor(
-    opts: nodeLib.streamMod.internalNs.DuplexOptions,
-    transform: through2Lib.through2Mod.through2Ns.TransformFunction,
-    flush: through2Lib.through2Mod.through2Ns.FlushCallback
-  ): through2Lib.through2Mod.through2Ns.Through2Constructor = js.native
-  def ctor(transform: through2Lib.through2Mod.through2Ns.TransformFunction): through2Lib.through2Mod.through2Ns.Through2Constructor = js.native
-  def ctor(
-    transform: through2Lib.through2Mod.through2Ns.TransformFunction,
-    flush: through2Lib.through2Mod.through2Ns.FlushCallback
-  ): through2Lib.through2Mod.through2Ns.Through2Constructor = js.native
+  def ctor(): Through2Constructor = js.native
+  def ctor(opts: nodeLib.streamMod.DuplexOptions): Through2Constructor = js.native
+  def ctor(opts: nodeLib.streamMod.DuplexOptions, transform: TransformFunction): Through2Constructor = js.native
+  def ctor(opts: nodeLib.streamMod.DuplexOptions, transform: TransformFunction, flush: FlushCallback): Through2Constructor = js.native
+  def ctor(transform: TransformFunction): Through2Constructor = js.native
+  def ctor(transform: TransformFunction, flush: FlushCallback): Through2Constructor = js.native
   /**
   	 * Convenvience method for creating object streams
   	 */
   def obj(): nodeLib.streamMod.Transform = js.native
-  def obj(transform: through2Lib.through2Mod.through2Ns.TransformFunction): nodeLib.streamMod.Transform = js.native
-  def obj(
-    transform: through2Lib.through2Mod.through2Ns.TransformFunction,
-    flush: through2Lib.through2Mod.through2Ns.FlushCallback
-  ): nodeLib.streamMod.Transform = js.native
+  def obj(transform: TransformFunction): nodeLib.streamMod.Transform = js.native
+  def obj(transform: TransformFunction, flush: FlushCallback): nodeLib.streamMod.Transform = js.native
 }
 

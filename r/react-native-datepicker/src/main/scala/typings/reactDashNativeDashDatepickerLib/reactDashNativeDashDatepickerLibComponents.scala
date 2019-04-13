@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashDatepickerLibComponents {
   @scala.inline
-  def ReactDashNativeDashDatepicker: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashDatepicker: reactLib.reactMod.ComponentType[
     reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps
-  ] = js.constructorOf[reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps]]
   @scala.inline
   def DatePickerProps: reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps.type = reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps

@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Scrollbar
-  extends reactLib.reactMod.Component[
-      reactDashSmoothDashScrollbarLib.reactDashSmoothDashScrollbarMod.ScrollbarNs.ScrollbarProps, 
-      js.Object, 
-      js.Any
-    ] {
+  extends reactLib.reactMod.Component[ScrollbarProps, js.Object, js.Any] {
   /**
     * Scrollbar instance
     */

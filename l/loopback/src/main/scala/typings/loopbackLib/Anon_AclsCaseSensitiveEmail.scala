@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AclsCaseSensitiveEmail extends js.Object {
-  var acls: js.Array[loopbackLib.loopbackMod.lNs.ACL]
+  var acls: js.Array[loopbackLib.loopbackMod.ACL]
   var caseSensitiveEmail: scala.Boolean
   var emailVerificationRequired: scala.Boolean
   var http: Anon_Path
@@ -21,7 +21,7 @@ trait Anon_AclsCaseSensitiveEmail extends js.Object {
 object Anon_AclsCaseSensitiveEmail {
   @scala.inline
   def apply(
-    acls: js.Array[loopbackLib.loopbackMod.lNs.ACL],
+    acls: js.Array[loopbackLib.loopbackMod.ACL],
     caseSensitiveEmail: scala.Boolean,
     emailVerificationRequired: scala.Boolean,
     http: Anon_Path,

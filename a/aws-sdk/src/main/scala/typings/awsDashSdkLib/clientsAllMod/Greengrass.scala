@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class Greengrass ()
-  extends awsDashSdkLib.clientsGreengrassMod.namespaced {
-  def this(options: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsGreengrassMod.^ {
+  def this(options: awsDashSdkLib.clientsGreengrassMod.ClientConfiguration) = this()
 }
 

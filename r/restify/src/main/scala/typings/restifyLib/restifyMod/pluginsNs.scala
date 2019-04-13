@@ -26,7 +26,7 @@ object pluginsNs extends js.Object {
     /**
       * Bunyan logger
       */
-    var log: bunyanLib.bunyanMod.namespaced
+    var log: bunyanLib.bunyanMod.^
     /**
       * Ringbuffer which is written to if passed in
       */

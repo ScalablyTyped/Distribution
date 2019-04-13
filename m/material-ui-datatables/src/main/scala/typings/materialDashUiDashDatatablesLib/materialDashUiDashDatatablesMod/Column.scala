@@ -25,7 +25,7 @@ trait Column extends js.Object {
   /** If the column is sortable */
   var sortable: js.UndefOr[scala.Boolean] = js.undefined
   /** Style for column */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** Cell tooltip */
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -39,7 +39,7 @@ object Column {
     label: java.lang.String = null,
     render: (/* value */ js.Any, /* row */ js.Any) => _ = null,
     sortable: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tooltip: java.lang.String = null
   ): Column = {
     val __obj = js.Dynamic.literal()

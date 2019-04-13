@@ -106,7 +106,6 @@ object ^ extends js.Object {
   val OLCStringsAsUTF8: java.lang.String = js.native
   val OLCTransactions: java.lang.String = js.native
   val drivers: GDALDrivers = js.native
-  val lastError: gdalLib.Anon_Message = js.native
   val version: java.lang.String = js.native
   val wkb25DBit: scala.Double = js.native
   val wkbGeometryCollection: scala.Double = js.native

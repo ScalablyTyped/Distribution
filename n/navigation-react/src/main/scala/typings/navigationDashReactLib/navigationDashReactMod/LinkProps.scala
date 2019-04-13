@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLAnchorElement] {
+  extends reactLib.reactMod.HTMLProps[stdLib.HTMLAnchorElement] {
   /**
     * Determines the effect on browser history
     */
@@ -37,7 +37,7 @@ trait LinkProps
 object LinkProps {
   @scala.inline
   def apply(
-    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLAnchorElement] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[stdLib.HTMLAnchorElement] = null,
     historyAction: navigationDashReactLib.navigationDashReactLibStrings.add | navigationDashReactLib.navigationDashReactLibStrings.replace | navigationDashReactLib.navigationDashReactLibStrings.none = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     navigating: (/* e */ stdLib.MouseEvent, /* domId */ java.lang.String, /* link */ java.lang.String) => scala.Boolean = null,

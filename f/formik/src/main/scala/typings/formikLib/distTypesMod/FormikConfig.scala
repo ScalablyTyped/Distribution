@@ -7,19 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait FormikConfig[Values] extends FormikSharedConfig {
   var children: js.UndefOr[
-    (js.Function1[/* props */ FormikProps[Values], reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode
+    (js.Function1[/* props */ FormikProps[Values], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
   ] = js.undefined
   var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[FormikProps[Values]] | reactLib.reactMod.ReactNs.ReactNode
+    reactLib.reactMod.ComponentType[FormikProps[Values]] | reactLib.reactMod.ReactNode
   ] = js.undefined
   var initialStatus: js.UndefOr[js.Any] = js.undefined
   var initialValues: Values
   var onReset: js.UndefOr[
     js.Function2[/* values */ Values, /* formikActions */ FormikActions[Values], scala.Unit]
   ] = js.undefined
-  var render: js.UndefOr[
-    js.Function1[/* props */ FormikProps[Values], reactLib.reactMod.ReactNs.ReactNode]
-  ] = js.undefined
+  var render: js.UndefOr[js.Function1[/* props */ FormikProps[Values], reactLib.reactMod.ReactNode]] = js.undefined
   var validate: js.UndefOr[
     js.Function1[/* values */ Values, scala.Unit | js.Object | js.Promise[FormikErrors[Values]]]
   ] = js.undefined
@@ -32,13 +30,13 @@ object FormikConfig {
   def apply[Values](
     initialValues: Values,
     onSubmit: (Values, FormikActions[Values]) => scala.Unit,
-    children: (js.Function1[/* props */ FormikProps[Values], reactLib.reactMod.ReactNs.ReactNode]) | reactLib.reactMod.ReactNs.ReactNode = null,
-    component: reactLib.reactMod.ReactNs.ComponentType[FormikProps[Values]] | reactLib.reactMod.ReactNs.ReactNode = null,
+    children: (js.Function1[/* props */ FormikProps[Values], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode = null,
+    component: reactLib.reactMod.ComponentType[FormikProps[Values]] | reactLib.reactMod.ReactNode = null,
     enableReinitialize: js.UndefOr[scala.Boolean] = js.undefined,
     initialStatus: js.Any = null,
     isInitialValid: scala.Boolean | (js.Function1[/* props */ js.Object, js.UndefOr[scala.Boolean]]) = null,
     onReset: (/* values */ Values, /* formikActions */ FormikActions[Values]) => scala.Unit = null,
-    render: /* props */ FormikProps[Values] => reactLib.reactMod.ReactNs.ReactNode = null,
+    render: /* props */ FormikProps[Values] => reactLib.reactMod.ReactNode = null,
     validate: /* values */ Values => scala.Unit | js.Object | js.Promise[FormikErrors[Values]] = null,
     validateOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     validateOnChange: js.UndefOr[scala.Boolean] = js.undefined,

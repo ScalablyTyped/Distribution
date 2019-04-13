@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xml-core", "XmlCollection")
 @js.native
-class XmlCollection[I /* <: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlObject */] ()
-  extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlCollection[I] {
+class XmlCollection[I /* <: XmlObject */] ()
+  extends XmlObject
+     with ICollection[I] {
   /* CompleteClass */
   override val Count: scala.Double = js.native
+  var MaxOccurs: scala.Double = js.native
+  var MinOccurs: scala.Double = js.native
+  var items: js.Array[I] = js.native
   /* CompleteClass */
   override def Add(item: I): scala.Unit = js.native
   /* CompleteClass */
@@ -18,17 +22,17 @@ class XmlCollection[I /* <: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlObject */
   /* CompleteClass */
   override def Every(cb: js.Function3[I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean]): scala.Boolean = js.native
   /* CompleteClass */
-  override def Filter(cb: js.Function3[I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean]): xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.ICollection[I] = js.native
+  override def Filter(cb: js.Function3[I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean]): ICollection[I] = js.native
   /* CompleteClass */
   override def ForEach(cb: js.Function3[I, /* index */ scala.Double, /* array */ js.Array[I], scala.Unit]): scala.Unit = js.native
   /* CompleteClass */
   override def GetIterator(): js.Array[I] = js.native
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override def IsEmpty(): scala.Boolean = js.native
   /* CompleteClass */
   override def Item(index: scala.Double): I | scala.Null = js.native
   /* CompleteClass */
-  override def Map[U](cb: js.Function3[I, /* index */ scala.Double, /* array */ js.Array[I], U]): xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.ICollection[U] = js.native
+  override def Map[U](cb: js.Function3[I, /* index */ scala.Double, /* array */ js.Array[I], U]): ICollection[U] = js.native
   /* CompleteClass */
   override def Pop(): js.UndefOr[I] = js.native
   /* CompleteClass */
@@ -36,7 +40,7 @@ class XmlCollection[I /* <: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlObject */
   /* CompleteClass */
   override def Some(cb: js.Function3[I, /* index */ scala.Double, /* array */ js.Array[I], scala.Boolean]): scala.Boolean = js.native
   /* CompleteClass */
-  override def Sort(cb: js.Function2[I, I, scala.Double]): xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.ICollection[I] = js.native
+  override def Sort(cb: js.Function2[I, I, scala.Double]): ICollection[I] = js.native
 }
 
 /* static members */

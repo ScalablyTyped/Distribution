@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RequestError
   extends StdError
-     with gotLib.gotMod.gotNs.GotError {
+     with GotError {
   @JSName("name")
   var name_RequestError: gotLib.gotLibStrings.RequestError
 }

@@ -7,20 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("async-writer", "BufferedWriter")
 @js.native
-class BufferedWriter protected ()
-  extends asyncDashWriterLib.asyncDashWriterMod.asyncUnderscoreWriterNs.BufferedWriter {
+class BufferedWriter protected () extends js.Object {
   def this(wrappedStream: nodeLib.streamMod.Stream) = this()
-  /* CompleteClass */
-  override def clear(): scala.Unit = js.native
-  /* CompleteClass */
-  override def end(): scala.Unit = js.native
-  /* CompleteClass */
-  override def flush(): scala.Unit = js.native
-  /* CompleteClass */
-  override def on(event: java.lang.String, callback: js.Function): asyncDashWriterLib.asyncDashWriterMod.asyncUnderscoreWriterNs.BufferedWriter = js.native
-  /* CompleteClass */
-  override def once(event: java.lang.String, callback: js.Function): asyncDashWriterLib.asyncDashWriterMod.asyncUnderscoreWriterNs.BufferedWriter = js.native
-  /* CompleteClass */
-  override def write(what: java.lang.String): asyncDashWriterLib.asyncDashWriterMod.asyncUnderscoreWriterNs.BufferedWriter = js.native
+  def clear(): scala.Unit = js.native
+  def end(): scala.Unit = js.native
+  def flush(): scala.Unit = js.native
+  def on(event: java.lang.String, callback: js.Function): BufferedWriter = js.native
+  def once(event: java.lang.String, callback: js.Function): BufferedWriter = js.native
+  def write(what: java.lang.String): BufferedWriter = js.native
 }
 

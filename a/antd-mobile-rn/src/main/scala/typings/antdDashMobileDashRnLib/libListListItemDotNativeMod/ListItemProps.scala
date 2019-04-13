@@ -22,10 +22,10 @@ object ListItemProps {
     activeStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     align: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.top | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.middle | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.bottom = null,
     arrow: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.horizontal | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.down | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.up | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.empty | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.Empty = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
-    extra: reactLib.reactMod.ReactNs.ReactNode = null,
+    extra: reactLib.reactMod.ReactNode = null,
     multipleLine: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: () => scala.Unit = null,
     onPressIn: () => scala.Unit = null,
@@ -33,7 +33,7 @@ object ListItemProps {
     platform: antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.android | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.ios = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     styles: antdDashMobileDashRnLib.Anon_Arrow = null,
-    thumb: reactLib.reactMod.ReactNs.ReactNode = null,
+    thumb: reactLib.reactMod.ReactNode = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): ListItemProps = {
     val __obj = js.Dynamic.literal()

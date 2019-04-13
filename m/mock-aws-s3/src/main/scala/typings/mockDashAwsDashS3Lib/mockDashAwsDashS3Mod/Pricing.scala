@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Pricing ()
   extends awsDashSdkLib.awsDashSdkMod.Pricing {
-  def this(options: awsDashSdkLib.clientsPricingMod.PricingNs.ClientConfiguration) = this()
+  def this(options: awsDashSdkLib.clientsPricingMod.ClientConfiguration) = this()
 }
 

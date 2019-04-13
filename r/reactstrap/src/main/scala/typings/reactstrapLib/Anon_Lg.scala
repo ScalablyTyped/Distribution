@@ -9,7 +9,7 @@ trait Anon_Lg extends js.Object {
   var lg: js.UndefOr[reactstrapLib.libColMod.ColumnProps] = js.undefined
   var md: js.UndefOr[reactstrapLib.libColMod.ColumnProps] = js.undefined
   var sm: js.UndefOr[reactstrapLib.libColMod.ColumnProps] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   // custom widths
   var widths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var xl: js.UndefOr[reactstrapLib.libColMod.ColumnProps] = js.undefined
@@ -22,7 +22,7 @@ object Anon_Lg {
     lg: reactstrapLib.libColMod.ColumnProps = null,
     md: reactstrapLib.libColMod.ColumnProps = null,
     sm: reactstrapLib.libColMod.ColumnProps = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    tag: reactLib.reactMod.ReactType[_] = null,
     widths: js.Array[java.lang.String] = null,
     xl: reactstrapLib.libColMod.ColumnProps = null,
     xs: reactstrapLib.libColMod.ColumnProps = null

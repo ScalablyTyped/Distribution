@@ -14,12 +14,12 @@ class Button ()
 @JSImport("semantic-ui-react", "Button")
 @js.native
 object Button extends js.Object {
-  var Content: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Content: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps
   ] = js.native
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Group: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps
   ] = js.native
-  var Or: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = js.native
+  var Or: reactLib.reactMod.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = js.native
 }
 

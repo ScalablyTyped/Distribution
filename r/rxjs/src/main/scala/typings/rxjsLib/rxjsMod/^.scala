@@ -18,7 +18,6 @@ object ^ extends js.Object {
   val animationFrameScheduler: rxjsLib.internalSchedulerAnimationFrameSchedulerMod.AnimationFrameScheduler = js.native
   val asapScheduler: rxjsLib.internalSchedulerAsapSchedulerMod.AsapScheduler = js.native
   val asyncScheduler: rxjsLib.internalSchedulerAsyncSchedulerMod.AsyncScheduler = js.native
-  val config: rxjsLib.Anon_Promise = js.native
   val observable: java.lang.String | js.Symbol = js.native
   val queueScheduler: rxjsLib.internalSchedulerQueueSchedulerMod.QueueScheduler = js.native
   def bindCallback(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[_]] = js.native

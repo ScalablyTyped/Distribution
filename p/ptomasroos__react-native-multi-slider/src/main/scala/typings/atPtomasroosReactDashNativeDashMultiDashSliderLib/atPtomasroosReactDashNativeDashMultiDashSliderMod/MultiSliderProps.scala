@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait MultiSliderProps extends js.Object {
   var allowOverlap: js.UndefOr[scala.Boolean] = js.undefined
   var containerStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
-  var customMarker: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[MarkerProps]] = js.undefined
-  var customMarkerLeft: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[MarkerProps]] = js.undefined
-  var customMarkerRight: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[MarkerProps]] = js.undefined
+  var customMarker: js.UndefOr[reactLib.reactMod.ComponentType[MarkerProps]] = js.undefined
+  var customMarkerLeft: js.UndefOr[reactLib.reactMod.ComponentType[MarkerProps]] = js.undefined
+  var customMarkerRight: js.UndefOr[reactLib.reactMod.ComponentType[MarkerProps]] = js.undefined
   var enabledOne: js.UndefOr[scala.Boolean] = js.undefined
   var enabledTwo: js.UndefOr[scala.Boolean] = js.undefined
   var isMarkersSeparated: js.UndefOr[scala.Boolean] = js.undefined
@@ -44,9 +44,9 @@ object MultiSliderProps {
   def apply(
     allowOverlap: js.UndefOr[scala.Boolean] = js.undefined,
     containerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
-    customMarker: reactLib.reactMod.ReactNs.ComponentType[MarkerProps] = null,
-    customMarkerLeft: reactLib.reactMod.ReactNs.ComponentType[MarkerProps] = null,
-    customMarkerRight: reactLib.reactMod.ReactNs.ComponentType[MarkerProps] = null,
+    customMarker: reactLib.reactMod.ComponentType[MarkerProps] = null,
+    customMarkerLeft: reactLib.reactMod.ComponentType[MarkerProps] = null,
+    customMarkerRight: reactLib.reactMod.ComponentType[MarkerProps] = null,
     enabledOne: js.UndefOr[scala.Boolean] = js.undefined,
     enabledTwo: js.UndefOr[scala.Boolean] = js.undefined,
     isMarkersSeparated: js.UndefOr[scala.Boolean] = js.undefined,

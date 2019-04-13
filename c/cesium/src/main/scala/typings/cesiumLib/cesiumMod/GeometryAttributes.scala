@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "GeometryAttributes")
 @js.native
-class GeometryAttributes ()
-  extends cesiumLib.cesiumMod.CesiumNs.GeometryAttributes {
-  /* CompleteClass */
-  override var binormal: cesiumLib.cesiumMod.CesiumNs.GeometryAttribute = js.native
-  /* CompleteClass */
-  override var color: cesiumLib.cesiumMod.CesiumNs.GeometryAttribute = js.native
-  /* CompleteClass */
-  override var normal: cesiumLib.cesiumMod.CesiumNs.GeometryAttribute = js.native
-  /* CompleteClass */
-  override var position: cesiumLib.cesiumMod.CesiumNs.GeometryAttribute = js.native
-  /* CompleteClass */
-  override var st: cesiumLib.cesiumMod.CesiumNs.GeometryAttribute = js.native
-  /* CompleteClass */
-  override var tangent: cesiumLib.cesiumMod.CesiumNs.GeometryAttribute = js.native
+class GeometryAttributes () extends js.Object {
+  var binormal: GeometryAttribute = js.native
+  var color: GeometryAttribute = js.native
+  var normal: GeometryAttribute = js.native
+  var position: GeometryAttribute = js.native
+  var st: GeometryAttribute = js.native
+  var tangent: GeometryAttribute = js.native
 }
 

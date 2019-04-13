@@ -21,3 +21,8 @@ class ScheduledJobTriggers ()
   override def Remove(Index: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("MFiles.ScheduledJobTriggers")
+@js.native
+object ScheduledJobTriggers
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IScheduledJobTriggers]
+

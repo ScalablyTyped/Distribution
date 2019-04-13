@@ -7,76 +7,50 @@ import scala.scalajs.js.annotation._
 
 trait CalendarProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var dateCellRender: js.UndefOr[
-    js.Function1[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
-  ] = js.undefined
-  var dateFullCellRender: js.UndefOr[
-    js.Function1[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
-  ] = js.undefined
-  var defaultValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
-  var disabledDate: js.UndefOr[js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, scala.Boolean]] = js.undefined
+  var dateCellRender: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.Moment, reactLib.reactMod.ReactNode]] = js.undefined
+  var dateFullCellRender: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.Moment, reactLib.reactMod.ReactNode]] = js.undefined
+  var defaultValue: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
+  var disabledDate: js.UndefOr[js.Function1[/* current */ momentLib.momentMod.Moment, scala.Boolean]] = js.undefined
   var fullscreen: js.UndefOr[scala.Boolean] = js.undefined
   var locale: js.UndefOr[js.Any] = js.undefined
   var mode: js.UndefOr[CalendarMode] = js.undefined
-  var monthCellRender: js.UndefOr[
-    js.Function1[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
-  ] = js.undefined
-  var monthFullCellRender: js.UndefOr[
-    js.Function1[
-      /* date */ momentLib.momentMod.momentNs.Moment, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
-  ] = js.undefined
-  var onChange: js.UndefOr[
-    js.Function1[/* date */ js.UndefOr[momentLib.momentMod.momentNs.Moment], scala.Unit]
-  ] = js.undefined
+  var monthCellRender: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.Moment, reactLib.reactMod.ReactNode]] = js.undefined
+  var monthFullCellRender: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.Moment, reactLib.reactMod.ReactNode]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[momentLib.momentMod.Moment], scala.Unit]] = js.undefined
   var onPanelChange: js.UndefOr[
     js.Function2[
-      /* date */ js.UndefOr[momentLib.momentMod.momentNs.Moment], 
+      /* date */ js.UndefOr[momentLib.momentMod.Moment], 
       /* mode */ js.UndefOr[CalendarMode], 
       scala.Unit
     ]
   ] = js.undefined
-  var onSelect: js.UndefOr[
-    js.Function1[/* date */ js.UndefOr[momentLib.momentMod.momentNs.Moment], scala.Unit]
-  ] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* date */ js.UndefOr[momentLib.momentMod.Moment], scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var validRange: js.UndefOr[
-    js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment]
-  ] = js.undefined
-  var value: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var validRange: js.UndefOr[js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment]] = js.undefined
+  var value: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
 }
 
 object CalendarProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
-    dateCellRender: /* date */ momentLib.momentMod.momentNs.Moment => reactLib.reactMod.ReactNs.ReactNode = null,
-    dateFullCellRender: /* date */ momentLib.momentMod.momentNs.Moment => reactLib.reactMod.ReactNs.ReactNode = null,
-    defaultValue: momentLib.momentMod.momentNs.Moment = null,
-    disabledDate: /* current */ momentLib.momentMod.momentNs.Moment => scala.Boolean = null,
+    dateCellRender: /* date */ momentLib.momentMod.Moment => reactLib.reactMod.ReactNode = null,
+    dateFullCellRender: /* date */ momentLib.momentMod.Moment => reactLib.reactMod.ReactNode = null,
+    defaultValue: momentLib.momentMod.Moment = null,
+    disabledDate: /* current */ momentLib.momentMod.Moment => scala.Boolean = null,
     fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
     locale: js.Any = null,
     mode: CalendarMode = null,
-    monthCellRender: /* date */ momentLib.momentMod.momentNs.Moment => reactLib.reactMod.ReactNs.ReactNode = null,
-    monthFullCellRender: /* date */ momentLib.momentMod.momentNs.Moment => reactLib.reactMod.ReactNs.ReactNode = null,
-    onChange: /* date */ js.UndefOr[momentLib.momentMod.momentNs.Moment] => scala.Unit = null,
-    onPanelChange: (/* date */ js.UndefOr[momentLib.momentMod.momentNs.Moment], /* mode */ js.UndefOr[CalendarMode]) => scala.Unit = null,
-    onSelect: /* date */ js.UndefOr[momentLib.momentMod.momentNs.Moment] => scala.Unit = null,
+    monthCellRender: /* date */ momentLib.momentMod.Moment => reactLib.reactMod.ReactNode = null,
+    monthFullCellRender: /* date */ momentLib.momentMod.Moment => reactLib.reactMod.ReactNode = null,
+    onChange: /* date */ js.UndefOr[momentLib.momentMod.Moment] => scala.Unit = null,
+    onPanelChange: (/* date */ js.UndefOr[momentLib.momentMod.Moment], /* mode */ js.UndefOr[CalendarMode]) => scala.Unit = null,
+    onSelect: /* date */ js.UndefOr[momentLib.momentMod.Moment] => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    validRange: js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment] = null,
-    value: momentLib.momentMod.momentNs.Moment = null
+    style: reactLib.reactMod.CSSProperties = null,
+    validRange: js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment] = null,
+    value: momentLib.momentMod.Moment = null
   ): CalendarProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)

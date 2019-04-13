@@ -44,7 +44,7 @@ trait PaginationProps extends js.Object {
     * Optional custom active dot element that will replace the default one.
     * The element will receive a prop active set to true as well as a prop index
     */
-  var dotElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var dotElement: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Dots' style that will be merged with the default one
     */
@@ -64,7 +64,7 @@ trait PaginationProps extends js.Object {
     * Optional custom inactive dot element that will replace the default one.
     * The element will receive a prop active set to false as well as a prop index
     */
-  var inactiveDotElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var inactiveDotElement: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Value of the opacity effect applied to inactive dots
     */
@@ -89,7 +89,7 @@ trait PaginationProps extends js.Object {
       /* activeIndex */ scala.Double, 
       /* total */ scala.Double, 
       /* context */ js.Any, 
-      reactLib.reactMod.ReactNs.ReactNode
+      reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   /**
@@ -113,14 +113,14 @@ object PaginationProps {
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     dotColor: java.lang.String = null,
     dotContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    dotElement: reactLib.reactMod.ReactNs.ReactNode = null,
+    dotElement: reactLib.reactMod.ReactNode = null,
     dotStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     inactiveDotColor: java.lang.String = null,
-    inactiveDotElement: reactLib.reactMod.ReactNs.ReactNode = null,
+    inactiveDotElement: reactLib.reactMod.ReactNode = null,
     inactiveDotOpacity: scala.Int | scala.Double = null,
     inactiveDotScale: scala.Int | scala.Double = null,
     inactiveDotStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    renderDots: (/* activeIndex */ scala.Double, /* total */ scala.Double, /* context */ js.Any) => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderDots: (/* activeIndex */ scala.Double, /* total */ scala.Double, /* context */ js.Any) => reactLib.reactMod.ReactNode = null,
     tappableDots: js.UndefOr[scala.Boolean] = js.undefined,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): PaginationProps = {

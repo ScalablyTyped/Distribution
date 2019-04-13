@@ -16,9 +16,9 @@ class SignalWifi2BarLockSharp protected ()
 @JSImport("@material-ui/icons", "SignalWifi2BarLockSharp")
 @js.native
 class SignalWifi2BarLockSharpCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

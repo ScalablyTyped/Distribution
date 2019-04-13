@@ -19,3 +19,8 @@ class Impersonation ()
   override def Clone(): mfilesLib.IImpersonation = js.native
 }
 
+@JSGlobal("MFiles.Impersonation")
+@js.native
+object Impersonation
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IImpersonation]
+

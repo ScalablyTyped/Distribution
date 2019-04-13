@@ -14,7 +14,7 @@ object taskEitherNs extends js.Object {
     def this(value: fpDashTsLib.libTaskMod.Task[fpDashTsLib.libEitherMod.Either[L, A]]) = this()
   }
   
-  val URI: /* TaskEither */ java.lang.String = js.native
+  val URI: fpDashTsLib.fpDashTsLibStrings.TaskEither = js.native
   val taskEither: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[fpDashTsLib.libTaskEitherMod.URI] = js.native
   val taskEitherSeq: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[fpDashTsLib.libTaskEitherMod.URI] = js.native
   def bracket[L, A, B](

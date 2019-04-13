@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mailgun-js", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.MailgunExport]
+  extends org.scalablytyped.runtime.TopLevel[MailgunExport]
 

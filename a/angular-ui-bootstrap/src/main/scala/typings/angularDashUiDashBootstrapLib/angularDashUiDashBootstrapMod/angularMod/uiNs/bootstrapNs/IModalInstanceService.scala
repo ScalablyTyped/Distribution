@@ -10,19 +10,19 @@ trait IModalInstanceService extends js.Object {
   /**
     * A promise that is resolved when a modal is closed and the animation completes.
     */
-  var closed: angularLib.angularMod.angularNs.IPromise[_] = js.native
+  var closed: angularLib.angularMod.IPromise[_] = js.native
   /**
     * A promise that is resolved when a modal gets opened after downloading content's template and resolving all variables.
     */
-  var opened: angularLib.angularMod.angularNs.IPromise[_] = js.native
+  var opened: angularLib.angularMod.IPromise[_] = js.native
   /**
     * A promise that is resolved when a modal is rendered.
     */
-  var rendered: angularLib.angularMod.angularNs.IPromise[_] = js.native
+  var rendered: angularLib.angularMod.IPromise[_] = js.native
   /**
     * A promise that is resolved when a modal is closed and rejected when a modal is dismissed.
     */
-  var result: angularLib.angularMod.angularNs.IPromise[_] = js.native
+  var result: angularLib.angularMod.IPromise[_] = js.native
   /**
     * A method that can be used to close a modal, passing a result. If `preventDefault` is called on the `modal.closing` event then the modal will remain open.
     */

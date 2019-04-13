@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Spinner")
 @js.native
-class Spinner ()
-  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Spinner
+class Spinner () extends __MDLComponent[SpinnerProps]
 

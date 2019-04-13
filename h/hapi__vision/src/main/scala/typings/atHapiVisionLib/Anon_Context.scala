@@ -13,7 +13,7 @@ trait Anon_Context extends js.Object {
     * Cannot override isCached, partialsPath, or helpersPath which are only loaded at initialization.
     * TODO check if it can have `defaultExtension`.
     */
-  var options: js.UndefOr[atHapiVisionLib.atHapiVisionMod.visionNs.ViewHandlerOrReplyOptions] = js.undefined
+  var options: js.UndefOr[atHapiVisionLib.atHapiVisionMod.ViewHandlerOrReplyOptions] = js.undefined
   /** the template filename and path, relative to the templates path configured via the server views manager. */
   var template: java.lang.String
 }
@@ -23,7 +23,7 @@ object Anon_Context {
   def apply(
     template: java.lang.String,
     context: js.Object = null,
-    options: atHapiVisionLib.atHapiVisionMod.visionNs.ViewHandlerOrReplyOptions = null
+    options: atHapiVisionLib.atHapiVisionMod.ViewHandlerOrReplyOptions = null
   ): Anon_Context = {
     val __obj = js.Dynamic.literal(template = template)
     if (context != null) __obj.updateDynamic("context")(context)

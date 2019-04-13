@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcCoreGroupingNgTableDefaultGetGroupsMod extends js.Object {
   def ngTableDefaultGetGroups[T](
-    $q: angularLib.angularMod.angularNs.IQService,
+    $q: angularLib.angularMod.IQService,
     ngTableDefaultGetData: ngDashTableLib.srcCoreDataNgTableDefaultGetDataMod.IDefaultGetData[ngDashTableLib.srcCoreDataResultsMod.IDataRowGroup[T]]
   ): ngDashTableLib.srcCoreGroupingGetGroupMod.IGetGroupFunc[T] = js.native
 }

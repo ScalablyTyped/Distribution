@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("promise-map-limit", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[T, R](
-    iterable: stdLib.Iterable[T],
-    concurrency: scala.Double,
-    iteratee: promiseDashMapDashLimitLib.promiseDashMapDashLimitMod.promiseMapLimitNs.IIteratee[T, R]
-  ): js.Promise[js.Array[R]] = js.native
+  def apply[T, R](iterable: stdLib.Iterable[T], concurrency: scala.Double, iteratee: IIteratee[T, R]): js.Promise[js.Array[R]] = js.native
 }
 

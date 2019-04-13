@@ -13,7 +13,7 @@ trait ServerAuth extends js.Object {
   def strategy_jwt(
     name: java.lang.String,
     scheme: hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2LibStrings.jwt,
-    options: hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2Mod.hapiAuthJwt2Ns.Options
+    options: hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2Mod.Options
   ): scala.Unit = js.native
 }
 

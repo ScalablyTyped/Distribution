@@ -13,16 +13,16 @@ object ^ extends js.Object {
       /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for P */ _, 
       /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for S */ _
     ]
-  ): preactLib.preactMod.preactNs.VNode[_] = js.native
+  ): preactLib.preactMod.VNode[_] = js.native
   def default(
     Child: preactLib.preactMod.Component[
       /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for P */ _, 
       /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for S */ _
     ],
     options: preactDashI18nLib.Anon_DefinitionScope
-  ): preactLib.preactMod.preactNs.VNode[_] = js.native
+  ): preactLib.preactMod.VNode[_] = js.native
   def withText[Props, Context](mapping: js.Object): js.Function1[
-    /* Child */ preactLib.preactMod.preactNs.ComponentChild, 
+    /* Child */ preactLib.preactMod.ComponentChild, 
     org.scalablytyped.runtime.Instantiable2[
       /* props */ js.UndefOr[/* props */ Props], 
       /* context */ js.UndefOr[/* context */ Context], 

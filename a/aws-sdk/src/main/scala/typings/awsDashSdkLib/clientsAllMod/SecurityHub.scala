@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class SecurityHub ()
-  extends awsDashSdkLib.clientsSecurityhubMod.namespaced {
-  def this(options: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsSecurityhubMod.^ {
+  def this(options: awsDashSdkLib.clientsSecurityhubMod.ClientConfiguration) = this()
 }
 

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Props extends js.Object {
   var evalScripts: js.UndefOr[atTanemSvgDashInjectorLib.distTypesMod.EvalScripts] = js.undefined
-  var fallback: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
-  var loading: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var fallback: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var loading: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var onInjected: js.UndefOr[atTanemSvgDashInjectorLib.distTypesMod.Errback] = js.undefined
   var renumerateIRIElements: js.UndefOr[scala.Boolean] = js.undefined
   var src: java.lang.String
   var svgClassName: js.UndefOr[java.lang.String] = js.undefined
-  var svgStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var svgStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var wrapper: js.UndefOr[
     reactDashSvgLib.reactDashSvgLibStrings.div | reactDashSvgLib.reactDashSvgLibStrings.span
   ] = js.undefined
@@ -24,12 +24,12 @@ object Props {
   def apply(
     src: java.lang.String,
     evalScripts: atTanemSvgDashInjectorLib.distTypesMod.EvalScripts = null,
-    fallback: reactLib.reactMod.ReactNs.ReactType[_] = null,
-    loading: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    fallback: reactLib.reactMod.ReactType[_] = null,
+    loading: reactLib.reactMod.ReactType[_] = null,
     onInjected: atTanemSvgDashInjectorLib.distTypesMod.Errback = null,
     renumerateIRIElements: js.UndefOr[scala.Boolean] = js.undefined,
     svgClassName: java.lang.String = null,
-    svgStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    svgStyle: reactLib.reactMod.CSSProperties = null,
     wrapper: reactDashSvgLib.reactDashSvgLibStrings.div | reactDashSvgLib.reactDashSvgLibStrings.span = null
   ): Props = {
     val __obj = js.Dynamic.literal(src = src)

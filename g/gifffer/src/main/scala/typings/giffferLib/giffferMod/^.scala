@@ -12,6 +12,6 @@ object ^ extends js.Object {
     * @see {@link https://github.com/krasimir/gifffer#usage|Usage}
     */
   def apply(): js.Array[stdLib.HTMLButtonElement] = js.native
-  def apply(options: giffferLib.giffferMod.GiffferNs.GiffferOptions): js.Array[stdLib.HTMLButtonElement] = js.native
+  def apply(options: GiffferOptions): js.Array[stdLib.HTMLButtonElement] = js.native
 }
 

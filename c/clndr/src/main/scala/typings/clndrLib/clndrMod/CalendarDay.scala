@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CalendarDay extends js.Object {
   var classes: java.lang.String
-  var date: momentLib.momentMod.momentNs.Moment
+  var date: momentLib.momentMod.Moment
   var day: scala.Double
   var events: js.Array[_]
   var properties: CalendarDayProperties
@@ -17,7 +17,7 @@ object CalendarDay {
   @scala.inline
   def apply(
     classes: java.lang.String,
-    date: momentLib.momentMod.momentNs.Moment,
+    date: momentLib.momentMod.Moment,
     day: scala.Double,
     events: js.Array[_],
     properties: CalendarDayProperties

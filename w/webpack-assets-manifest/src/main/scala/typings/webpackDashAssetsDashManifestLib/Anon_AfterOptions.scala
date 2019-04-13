@@ -6,11 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AfterOptions extends js.Object {
-  var afterOptions: tapableLib.tapableMod.SyncHook[
-    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Options, 
-    _, 
-    _
-  ]
+  var afterOptions: tapableLib.tapableMod.SyncHook[webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.Options, _, _]
   @JSName("apply")
   var apply: tapableLib.tapableMod.SyncHook[
     webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
@@ -23,22 +19,18 @@ trait Anon_AfterOptions extends js.Object {
   		 * Refer to https://github.com/webdeveric/webpack-assets-manifest#hooks for details
   		 */
   var customize: tapableLib.tapableMod.SyncWaterfallHook[
-    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Entry, 
-    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.AnyObject, 
+    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.Entry, 
+    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.AnyObject, 
     webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest
   ]
   var done: tapableLib.tapableMod.SyncHook[
     webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
-    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.AnyObject, 
+    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.AnyObject, 
     _
   ]
-  var options: tapableLib.tapableMod.SyncWaterfallHook[
-    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Options, 
-    _, 
-    _
-  ]
+  var options: tapableLib.tapableMod.SyncWaterfallHook[webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.Options, _, _]
   var transform: tapableLib.tapableMod.SyncWaterfallHook[
-    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.AnyObject, 
+    webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.AnyObject, 
     webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
     _
   ]
@@ -47,33 +39,25 @@ trait Anon_AfterOptions extends js.Object {
 object Anon_AfterOptions {
   @scala.inline
   def apply(
-    afterOptions: tapableLib.tapableMod.SyncHook[
-      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Options, 
-      _, 
-      _
-    ],
+    afterOptions: tapableLib.tapableMod.SyncHook[webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.Options, _, _],
     apply: tapableLib.tapableMod.SyncHook[
       webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
       _, 
       _
     ],
     customize: tapableLib.tapableMod.SyncWaterfallHook[
-      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Entry, 
-      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.AnyObject, 
+      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.Entry, 
+      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.AnyObject, 
       webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest
     ],
     done: tapableLib.tapableMod.SyncHook[
       webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
-      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.AnyObject, 
+      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.AnyObject, 
       _
     ],
-    options: tapableLib.tapableMod.SyncWaterfallHook[
-      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Options, 
-      _, 
-      _
-    ],
+    options: tapableLib.tapableMod.SyncWaterfallHook[webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.Options, _, _],
     transform: tapableLib.tapableMod.SyncWaterfallHook[
-      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.AnyObject, 
+      webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.AnyObject, 
       webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
       _
     ]

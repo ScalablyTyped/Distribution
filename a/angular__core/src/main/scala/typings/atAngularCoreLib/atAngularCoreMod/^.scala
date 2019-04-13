@@ -25,8 +25,6 @@ object ^ extends js.Object {
   val Component: atAngularCoreLib.srcMetadataDirectivesMod.ComponentDecorator = js.native
   val ContentChild: atAngularCoreLib.srcMetadataDiMod.ContentChildDecorator = js.native
   val ContentChildren: atAngularCoreLib.srcMetadataDiMod.ContentChildrenDecorator = js.native
-  val DebugElement: atAngularCoreLib.Anon_Args = js.native
-  val DebugNode: atAngularCoreLib.Anon_ArgsAny = js.native
   val Directive: atAngularCoreLib.srcMetadataDirectivesMod.DirectiveDecorator = js.native
   val Host: atAngularCoreLib.srcDiMetadataMod.HostDecorator = js.native
   val HostBinding: atAngularCoreLib.srcMetadataDirectivesMod.HostBindingDecorator = js.native
@@ -53,7 +51,6 @@ object ^ extends js.Object {
   val ViewChild: atAngularCoreLib.srcMetadataDiMod.ViewChildDecorator = js.native
   val ViewChildren: atAngularCoreLib.srcMetadataDiMod.ViewChildrenDecorator = js.native
   val ɵALLOW_MULTIPLE_PLATFORMS: atAngularCoreLib.srcDiMod.InjectionToken[scala.Boolean] = js.native
-  val ɵAPP_ID_RANDOM_PROVIDER: atAngularCoreLib.Anon_Deps = js.native
   val ɵAPP_ROOT: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[scala.Boolean] = js.native
   val ɵEMPTY_ARRAY: js.Array[js.Any] = js.native
   val ɵNO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
@@ -89,9 +86,8 @@ object ^ extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
-  val ɵSWITCH_IVY_ENABLED__POST_R3__ : /* true */ scala.Boolean = js.native
+  val ɵSWITCH_IVY_ENABLED__POST_R3__ : atAngularCoreLib.atAngularCoreLibNumbers.`true` = js.native
   val ɵSWITCH_RENDERER2_FACTORY__POST_R3__ : js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
-  val ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__ : atAngularCoreLib.Anon_ElementRefToken = js.native
   val ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__ : js.Function2[
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
@@ -104,7 +100,7 @@ object ^ extends js.Object {
   val ɵdefaultKeyValueDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers = js.native
   val ɵdefaultStyleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn = js.native
   var ɵglobal: nodeLib.NodeJSNs.Global = js.native
-  val ɵivyEnabled: /* false */ scala.Boolean = js.native
+  val ɵivyEnabled: atAngularCoreLib.atAngularCoreLibNumbers.`false` = js.native
   def asNativeElements(debugEls: js.Array[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement]): js.Any = js.native
   def assertPlatform(requiredToken: js.Any): atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef = js.native
   def createInjector(defType: js.Any): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
@@ -212,11 +208,7 @@ object ^ extends js.Object {
   def ɵ_sanitizeStyle(value: java.lang.String): java.lang.String = js.native
   def ɵ_sanitizeUrl(url: java.lang.String): java.lang.String = js.native
   def ɵaddPlayer(
-    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance,
-    player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player
-  ): scala.Unit = js.native
-  def ɵaddPlayer(
-    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance,
+    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance | atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance,
     player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player
   ): scala.Unit = js.native
   def ɵaddPlayer(ref: stdLib.HTMLElement, player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player): scala.Unit = js.native
@@ -1099,8 +1091,9 @@ object ^ extends js.Object {
   def ɵgetInjectableDef[T](`type`: js.Any): atAngularCoreLib.srcDiDefsMod.InjectableDef[T] | scala.Null = js.native
   def ɵgetLContext(target: js.Any): atAngularCoreLib.srcRender3InterfacesContextMod.LContext | scala.Null = js.native
   def ɵgetModuleFactory__POST_R3__(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
-  def ɵgetPlayers(ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
-  def ɵgetPlayers(ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
+  def ɵgetPlayers(
+    ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance | atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance
+  ): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
   def ɵgetPlayers(ref: stdLib.HTMLElement): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
   def ɵi18n(index: scala.Double, message: java.lang.String): scala.Unit = js.native
   def ɵi18n(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native
@@ -1257,22 +1250,22 @@ object ^ extends js.Object {
   def ɵload[T](index: scala.Double): T = js.native
   def ɵloadQueryList[T](queryListIdx: scala.Double): atAngularCoreLib.srcLinkerMod.QueryList[T] = js.native
   def ɵlooseIdentical(a: js.Any, b: js.Any): scala.Boolean = js.native
-  def ɵmakeDecorator[T](name: java.lang.String): atAngularCoreLib.Anon_ArgsCls = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _]): atAngularCoreLib.Anon_ArgsCls = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_ArgsCls = js.native
+  def ɵmakeDecorator[T](name: java.lang.String): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _]): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
     props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit]
-  ): atAngularCoreLib.Anon_ArgsCls = js.native
+  ): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
     props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit],
     typeFn: js.Function2[/* type */ atAngularCoreLib.srcTypeMod.Type[T], /* repeated */ js.Any, scala.Unit]
-  ): atAngularCoreLib.Anon_ArgsCls = js.native
+  ): atAngularCoreLib.Anon_Args = js.native
   def ɵmarkDirty[T](component: T): scala.Unit = js.native
   def ɵmod(providers: js.Array[atAngularCoreLib.srcViewTypesMod.NgModuleProviderDef]): atAngularCoreLib.srcViewTypesMod.NgModuleDefinition = js.native
   def ɵmpd(

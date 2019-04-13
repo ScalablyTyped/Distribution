@@ -9,12 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ɵALLOW_MULTIPLE_PLATFORMS: atAngularCoreLib.srcDiMod.InjectionToken[scala.Boolean] = js.native
-  val ɵAPP_ID_RANDOM_PROVIDER: atAngularCoreLib.Anon_Deps = js.native
   val ɵAPP_ROOT: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[scala.Boolean] = js.native
   val ɵdefaultIterableDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDiffers = js.native
   val ɵdefaultKeyValueDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers = js.native
   var ɵglobal: nodeLib.NodeJSNs.Global = js.native
-  val ɵivyEnabled: /* false */ scala.Boolean = js.native
+  val ɵivyEnabled: atAngularCoreLib.atAngularCoreLibNumbers.`false` = js.native
   def ɵ_sanitizeHtml(defaultDoc: js.Any, unsafeHtmlInput: java.lang.String): java.lang.String = js.native
   def ɵ_sanitizeStyle(value: java.lang.String): java.lang.String = js.native
   def ɵ_sanitizeUrl(url: java.lang.String): java.lang.String = js.native
@@ -44,22 +43,22 @@ object ^ extends js.Object {
   def ɵisObservable(obj: rxjsLib.rxjsMod.Observable[_]): /* is rxjs.rxjs.Observable<any> */ scala.Boolean = js.native
   def ɵisPromise(obj: js.Any): /* is std.Promise<any> */ scala.Boolean = js.native
   def ɵlooseIdentical(a: js.Any, b: js.Any): scala.Boolean = js.native
-  def ɵmakeDecorator[T](name: java.lang.String): atAngularCoreLib.Anon_ArgsCls = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _]): atAngularCoreLib.Anon_ArgsCls = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_ArgsCls = js.native
+  def ɵmakeDecorator[T](name: java.lang.String): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _]): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
     props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit]
-  ): atAngularCoreLib.Anon_ArgsCls = js.native
+  ): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
     props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit],
     typeFn: js.Function2[/* type */ atAngularCoreLib.srcTypeMod.Type[T], /* repeated */ js.Any, scala.Unit]
-  ): atAngularCoreLib.Anon_ArgsCls = js.native
+  ): atAngularCoreLib.Anon_Args = js.native
   def ɵoverrideComponentView(
     comp: atAngularCoreLib.srcTypeMod.Type[_],
     componentFactory: atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_]

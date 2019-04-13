@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // Merged declaration, g is both a callable function and a namespace
-  def apply(db: js.Any, mongo: js.Any): gridfsDashStreamLib.gridfsDashStreamMod.gNs.Grid = js.native
+  def apply(db: js.Any, mongo: js.Any): Grid = js.native
 }
 

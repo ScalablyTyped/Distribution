@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("d3", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val bisect: d3DashArrayLib.Anon_Array = js.native
   val color: d3DashColorLib.d3DashColorMod.ColorFactory = js.native
   val cubehelix: d3DashColorLib.d3DashColorMod.CubehelixColorFactory = js.native
   val curveBasis: d3DashShapeLib.d3DashShapeMod.CurveFactory = js.native
@@ -58,7 +57,6 @@ object ^ extends js.Object {
   val randomNormal: d3DashRandomLib.d3DashRandomMod.RandomNormal = js.native
   val randomUniform: d3DashRandomLib.d3DashRandomMod.RandomUniform = js.native
   val rgb: d3DashColorLib.d3DashColorMod.RGBColorFactory = js.native
-  val scaleImplicit: d3DashScaleLib.Anon_Implicit = js.native
   val schemeAccent: js.Array[java.lang.String] = js.native
   val schemeBlues: js.Array[js.Array[java.lang.String]] = js.native
   val schemeBrBG: js.Array[js.Array[java.lang.String]] = js.native

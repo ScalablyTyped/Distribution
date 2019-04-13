@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ClientKount extends js.Object {
-  var client: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.Client
+  var client: braintreeDashWebLib.braintreeDashWebMod.Client
   var kount: scala.Boolean
   var paypal: scala.Boolean
 }
@@ -14,7 +14,7 @@ trait Anon_ClientKount extends js.Object {
 object Anon_ClientKount {
   @scala.inline
   def apply(
-    client: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.Client,
+    client: braintreeDashWebLib.braintreeDashWebMod.Client,
     kount: scala.Boolean,
     paypal: scala.Boolean
   ): Anon_ClientKount = {

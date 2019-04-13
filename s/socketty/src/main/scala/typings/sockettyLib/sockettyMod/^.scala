@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("socketty", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[sockettyLib.sockettyMod.sockettyNs.Socketty]
+  extends org.scalablytyped.runtime.TopLevel[Socketty]
 

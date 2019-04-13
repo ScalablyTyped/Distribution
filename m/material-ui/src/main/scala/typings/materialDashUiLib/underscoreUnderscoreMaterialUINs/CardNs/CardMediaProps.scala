@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 trait CardMediaProps extends js.Object {
   var actAsExpander: js.UndefOr[scala.Boolean] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined
-  var mediaStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var overlay: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var overlayContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var overlayContentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var mediaStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var overlay: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var overlayContainerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var overlayContentStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var overlayStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object CardMediaProps {
@@ -21,12 +21,12 @@ object CardMediaProps {
   def apply(
     actAsExpander: js.UndefOr[scala.Boolean] = js.undefined,
     expandable: js.UndefOr[scala.Boolean] = js.undefined,
-    mediaStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    overlay: reactLib.reactMod.ReactNs.ReactNode = null,
-    overlayContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    overlayContentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    mediaStyle: reactLib.reactMod.CSSProperties = null,
+    overlay: reactLib.reactMod.ReactNode = null,
+    overlayContainerStyle: reactLib.reactMod.CSSProperties = null,
+    overlayContentStyle: reactLib.reactMod.CSSProperties = null,
+    overlayStyle: reactLib.reactMod.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null
   ): CardMediaProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)

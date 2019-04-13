@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IEditableFormController
-  extends angularLib.angularMod.angularNs.IFormController {
+  extends angularLib.angularMod.IFormController {
   /**
     * Sets focus on form field specified by `name`.<br/>
     * When trying to set the focus on a form field of a new row in the editable table, the `$activate` call needs to be wrapped in a `$timeout` call so that the form is rendered before the `$activate` function is called.

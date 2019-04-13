@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("autobahn", "Invocation")
 @js.native
-class Invocation ()
-  extends autobahnLib.autobahnMod.autobahnNs.Invocation {
+class Invocation () extends IInvocation {
   def this(caller: scala.Double) = this()
   def this(caller: scala.Double, progress: scala.Boolean) = this()
   def this(caller: scala.Double, progress: scala.Boolean, procedure: java.lang.String) = this()

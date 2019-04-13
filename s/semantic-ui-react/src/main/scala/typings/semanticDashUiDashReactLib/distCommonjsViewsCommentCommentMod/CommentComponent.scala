@@ -7,30 +7,30 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CommentComponent
-  extends reactLib.reactMod.ReactNs.FunctionComponent[CommentProps] {
-  var Action: reactLib.reactMod.ReactNs.ComponentClass[
+  extends reactLib.reactMod.FunctionComponent[CommentProps] {
+  var Action: reactLib.reactMod.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionMod.CommentActionProps, 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
-  var Actions: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Actions: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionsMod.CommentActionsProps
   ] = js.native
-  var Author: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Author: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAuthorMod.CommentAuthorProps
   ] = js.native
-  var Avatar: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Avatar: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAvatarMod.CommentAvatarProps
   ] = js.native
-  var Content: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Content: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentContentMod.CommentContentProps
   ] = js.native
-  var Group: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Group: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentGroupMod.CommentGroupProps
   ] = js.native
-  var Metadata: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Metadata: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps
   ] = js.native
-  var Text: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Text: reactLib.reactMod.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps
   ] = js.native
 }

@@ -36,23 +36,20 @@ object ^ extends js.Object {
     *                 {@link dir}.
     */
   def mkdir(): js.Any = js.native
-  def mkdir(options: tempDashFsLib.tempDashFsMod.tempfsNs.options): js.Any = js.native
-  def mkdir(
-    options: tempDashFsLib.tempDashFsMod.tempfsNs.options,
-    callback: js.Function2[/* err */ js.Any, /* dir */ tempDashFsLib.tempDashFsMod.tempfsNs.dir, _]
-  ): js.Any = js.native
+  def mkdir(options: options): js.Any = js.native
+  def mkdir(options: options, callback: js.Function2[/* err */ js.Any, /* dir */ dir, _]): js.Any = js.native
   /**
     * The synchronous version of {@link mkdir}.
     *
     * @throws when an error happens.
     */
-  def mkdirSync(): tempDashFsLib.tempDashFsMod.tempfsNs.dir = js.native
-  def mkdirSync(options: tempDashFsLib.tempDashFsMod.tempfsNs.options): tempDashFsLib.tempDashFsMod.tempfsNs.dir = js.native
+  def mkdirSync(): dir = js.native
+  def mkdirSync(options: options): dir = js.native
   /**
     * Return a customized/random filename/dirname.
     */
   def name(): java.lang.String = js.native
-  def name(options: tempDashFsLib.tempDashFsMod.tempfsNs.options): java.lang.String = js.native
+  def name(options: options): java.lang.String = js.native
   /**
     * Try to open a unique tempfile asynchronously.
     *
@@ -62,19 +59,16 @@ object ^ extends js.Object {
     *                 of {@link file}.
     */
   def open(): js.Any = js.native
-  def open(callback: js.Function2[/* err */ js.Any, /* file */ tempDashFsLib.tempDashFsMod.tempfsNs.file, _]): js.Any = js.native
-  def open(options: tempDashFsLib.tempDashFsMod.tempfsNs.options): js.Any = js.native
-  def open(
-    options: tempDashFsLib.tempDashFsMod.tempfsNs.options,
-    callback: js.Function2[/* err */ js.Any, /* file */ tempDashFsLib.tempDashFsMod.tempfsNs.file, _]
-  ): js.Any = js.native
+  def open(callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
+  def open(options: options): js.Any = js.native
+  def open(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
   /**
     * The synchronous version of {@link open}.
     *
     * @throws when an error happens.
     */
-  def openSync(): tempDashFsLib.tempDashFsMod.tempfsNs.file = js.native
-  def openSync(options: tempDashFsLib.tempDashFsMod.tempfsNs.options): tempDashFsLib.tempDashFsMod.tempfsNs.file = js.native
+  def openSync(): file = js.native
+  def openSync(options: options): file = js.native
   /**
     * Use it to switch global files/directories tracking on or off.
     *

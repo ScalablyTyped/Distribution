@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExpressBusboyOptions
-  extends connectDashBusboyLib.connectDashBusboyMod.connectBusboyNs.ConnectBusboyOptions {
+  extends connectDashBusboyLib.connectDashBusboyMod.ConnectBusboyOptions {
   var allowedPath: js.UndefOr[
     java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
   ] = js.undefined

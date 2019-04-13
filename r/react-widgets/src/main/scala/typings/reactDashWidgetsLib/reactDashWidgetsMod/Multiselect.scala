@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets", "Multiselect")
 @js.native
 class MultiselectCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       reactDashWidgetsLib.libMultiselectMod.MultiselectProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: reactDashWidgetsLib.libMultiselectMod.MultiselectProps) = this()

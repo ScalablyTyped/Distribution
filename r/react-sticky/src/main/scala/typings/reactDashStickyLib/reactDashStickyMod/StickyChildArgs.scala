@@ -10,7 +10,7 @@ trait StickyChildArgs extends js.Object {
   var distanceFromBottom: scala.Double
   var distanceFromTop: scala.Double
   var isSticky: scala.Boolean
-  var style: reactLib.reactMod.ReactNs.CSSProperties
+  var style: reactLib.reactMod.CSSProperties
   var wasSticky: scala.Boolean
 }
 
@@ -21,7 +21,7 @@ object StickyChildArgs {
     distanceFromBottom: scala.Double,
     distanceFromTop: scala.Double,
     isSticky: scala.Boolean,
-    style: reactLib.reactMod.ReactNs.CSSProperties,
+    style: reactLib.reactMod.CSSProperties,
     wasSticky: scala.Boolean
   ): StickyChildArgs = {
     val __obj = js.Dynamic.literal(calculatedHeight = calculatedHeight, distanceFromBottom = distanceFromBottom, distanceFromTop = distanceFromTop, isSticky = isSticky, style = style, wasSticky = wasSticky)

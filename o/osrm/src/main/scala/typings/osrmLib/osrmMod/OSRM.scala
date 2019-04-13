@@ -17,63 +17,47 @@ trait OSRM extends js.Object {
     * matches given coordinates to the road network
     */
   def `match`(
-    options: osrmLib.osrmMod.OSRMNs.MatchOptions,
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* results */ osrmLib.osrmMod.OSRMNs.MatchResults, 
-      scala.Unit
-    ]
+    options: MatchOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ MatchResults, scala.Unit]
   ): scala.Unit = js.native
   /**
     * returns the nearest street segment for a given coordinate
     */
   def nearest(
-    options: osrmLib.osrmMod.OSRMNs.NearestOptions,
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* results */ osrmLib.osrmMod.OSRMNs.NearestResults, 
-      scala.Unit
-    ]
+    options: NearestOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ NearestResults, scala.Unit]
   ): scala.Unit = js.native
   /**
     * shortest path between given coordinates
     */
   def route(
-    options: osrmLib.osrmMod.OSRMNs.RouteOptions,
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* results */ osrmLib.osrmMod.OSRMNs.RouteResults, 
-      scala.Unit
-    ]
+    options: RouteOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ RouteResults, scala.Unit]
   ): scala.Unit = js.native
   /**
     * computes distance tables for given coordinates
     */
   def table(
-    options: osrmLib.osrmMod.OSRMNs.TableOptions,
-    callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* results */ osrmLib.osrmMod.OSRMNs.TableResults, 
-      scala.Unit
-    ]
+    options: TableOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ TableResults, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Return vector tiles containing debugging info
     */
   def tile(
-    options: osrmLib.osrmMod.OSRMNs.TileOptions,
+    options: TileOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* results */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def tile(
-    options: osrmLib.osrmMod.OSRMNs.Tile,
+    options: Tile,
     callback: js.Function2[/* err */ stdLib.Error, /* results */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Compute the shortest trip between given coordinates
     */
   def trip(
-    options: osrmLib.osrmMod.OSRMNs.TripOptions,
-    callback: js.Function2[/* err */ stdLib.Error, /* results */ osrmLib.osrmMod.OSRMNs.TripResults, scala.Unit]
+    options: TripOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* results */ TripResults, scala.Unit]
   ): scala.Unit = js.native
 }
 

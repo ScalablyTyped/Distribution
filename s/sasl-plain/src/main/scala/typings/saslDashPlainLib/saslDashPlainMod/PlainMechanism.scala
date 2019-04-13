@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlainMechanism
-  extends saslmechanismsLib.saslmechanismsMod.FactoryNs.Mechanism {
+  extends saslmechanismsLib.saslmechanismsMod.Mechanism {
   var clientFirst: saslDashPlainLib.saslDashPlainLibNumbers.`true`
   @JSName("name")
   var name_PlainMechanism: saslDashPlainLib.saslDashPlainLibStrings.PLAIN
-  def response(cred: saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials): java.lang.String
+  def response(cred: Credentials): java.lang.String
 }
 
 object PlainMechanism {
@@ -19,7 +19,7 @@ object PlainMechanism {
     challenge: java.lang.String => PlainMechanism,
     clientFirst: saslDashPlainLib.saslDashPlainLibNumbers.`true`,
     name: saslDashPlainLib.saslDashPlainLibStrings.PLAIN,
-    response: saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials => java.lang.String
+    response: Credentials => java.lang.String
   ): PlainMechanism = {
     val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst, name = name, response = js.Any.fromFunction1(response))
   

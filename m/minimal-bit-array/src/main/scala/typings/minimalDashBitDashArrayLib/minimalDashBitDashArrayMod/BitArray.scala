@@ -10,7 +10,7 @@ trait BitArray extends js.Object {
   var length: scala.Double
   def get(index: scala.Double): scala.Boolean
   def set(index: scala.Double, value: js.Any): scala.Boolean
-  def toJSON(): minimalDashBitDashArrayLib.minimalDashBitDashArrayMod.BitArrayNs.BitArrayJSON
+  def toJSON(): BitArrayJSON
 }
 
 object BitArray {
@@ -20,7 +20,7 @@ object BitArray {
     get: scala.Double => scala.Boolean,
     length: scala.Double,
     set: (scala.Double, js.Any) => scala.Boolean,
-    toJSON: () => minimalDashBitDashArrayLib.minimalDashBitDashArrayMod.BitArrayNs.BitArrayJSON
+    toJSON: () => BitArrayJSON
   ): BitArray = {
     val __obj = js.Dynamic.literal(bits = bits, get = js.Any.fromFunction1(get), length = length, set = js.Any.fromFunction2(set), toJSON = js.Any.fromFunction0(toJSON))
   

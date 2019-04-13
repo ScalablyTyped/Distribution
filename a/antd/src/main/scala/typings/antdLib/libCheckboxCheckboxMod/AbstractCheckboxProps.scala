@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait AbstractCheckboxProps[T] extends js.Object {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ T, scala.Unit]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
-  var onKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[_]] = js.undefined
-  var onKeyPress: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[_]] = js.undefined
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[_]] = js.undefined
+  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[_]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -28,19 +28,19 @@ object AbstractCheckboxProps {
   @scala.inline
   def apply[T](
     checked: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     onChange: /* e */ T => scala.Unit = null,
-    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
-    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[_] = null,
-    onKeyPress: reactLib.reactMod.ReactNs.KeyboardEventHandler[_] = null,
-    onMouseEnter: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
-    onMouseLeave: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    onClick: reactLib.reactMod.MouseEventHandler[_] = null,
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[_] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[_] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[_] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[_] = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     value: js.Any = null
   ): AbstractCheckboxProps[T] = {

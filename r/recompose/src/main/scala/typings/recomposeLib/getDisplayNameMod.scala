@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("recompose/getDisplayName", JSImport.Namespace)
 @js.native
 object getDisplayNameMod extends js.Object {
-  def default(component: reactLib.reactMod.ReactNs.ComponentType[_]): java.lang.String = js.native
+  def default(component: reactLib.reactMod.ComponentType[_]): java.lang.String = js.native
 }
 

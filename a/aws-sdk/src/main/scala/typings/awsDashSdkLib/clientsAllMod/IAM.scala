@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Constructs a service object. This object has one method for each API operation.
   */
 class IAM ()
-  extends awsDashSdkLib.clientsIamMod.namespaced {
-  def this(options: awsDashSdkLib.clientsIamMod.IAMNs.ClientConfiguration) = this()
+  extends awsDashSdkLib.clientsIamMod.^ {
+  def this(options: awsDashSdkLib.clientsIamMod.ClientConfiguration) = this()
 }
 

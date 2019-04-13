@@ -12,7 +12,7 @@ object ^ extends js.Object {
     * Check if it's the first time the process is run.
     */
   def apply(): scala.Boolean = js.native
-  def apply(options: firstDashRunLib.firstDashRunMod.firstRunNs.Options): scala.Boolean = js.native
+  def apply(options: Options): scala.Boolean = js.native
   /**
     * Clear the state.
     */

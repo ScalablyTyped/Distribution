@@ -14,14 +14,14 @@ trait MarqueeProps extends js.Object {
   var style: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
-  var text: reactLib.reactMod.ReactNs.ReactNode
+  var text: reactLib.reactMod.ReactNode
   var trailing: js.UndefOr[scala.Double] = js.undefined
 }
 
 object MarqueeProps {
   @scala.inline
   def apply(
-    text: reactLib.reactMod.ReactNs.ReactNode,
+    text: reactLib.reactMod.ReactNode,
     className: java.lang.String = null,
     fps: scala.Int | scala.Double = null,
     leading: scala.Int | scala.Double = null,

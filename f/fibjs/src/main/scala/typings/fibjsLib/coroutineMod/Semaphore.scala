@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("coroutine", "Semaphore")
 @js.native
 class Semaphore ()
-  extends fibjsLib.coroutineMod.coroutineNs.Semaphore
+  extends fibjsLib.Class_Semaphore
 

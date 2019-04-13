@@ -13,4 +13,5 @@ package object adlibMod {
     /* param */ js.UndefOr[js.Any], 
     js.Any
   ]
+  type TransformsList = org.scalablytyped.runtime.StringDictionary[TransformFunction]
 }

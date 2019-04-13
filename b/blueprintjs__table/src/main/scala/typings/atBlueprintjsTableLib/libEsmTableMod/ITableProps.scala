@@ -22,8 +22,8 @@ trait ITableProps
     * that use `IColumnProps`.
     */
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps] | (js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps]
+    reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps] | (js.Array[
+      reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps]
     ])
   ] = js.undefined
   /**
@@ -277,8 +277,8 @@ object ITableProps {
   @scala.inline
   def apply(
     bodyContextMenuRenderer: atBlueprintjsTableLib.libEsmInteractionsMenusMenuContextMod.IContextMenuRenderer = null,
-    children: reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps] | (js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps]
+    children: reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps] | (js.Array[
+      reactLib.reactMod.ReactElement[atBlueprintjsTableLib.libEsmColumnMod.IColumnProps]
     ]) = null,
     className: java.lang.String = null,
     columnWidths: js.Array[js.UndefOr[scala.Double | scala.Null]] = null,

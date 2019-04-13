@@ -15,6 +15,7 @@ package object leafletMod {
     /* tile */ js.UndefOr[stdLib.HTMLElement], 
     scala.Unit
   ]
+  type InternalTiles = org.scalablytyped.runtime.StringDictionary[leafletLib.Anon_Active]
   type LatLngBoundsExpression = LatLngBounds | LatLngBoundsLiteral
   type LatLngBoundsLiteral = js.Array[LatLngTuple]
   /* Rewritten from type alias, can be one of: 
@@ -25,6 +26,7 @@ package object leafletMod {
   type LatLngExpression = _LatLngExpression | LatLngTuple
   type LatLngTuple = js.Tuple2[scala.Double, scala.Double]
   type LeafletEventHandlerFn = js.Function1[/* event */ LeafletEvent, scala.Unit]
+  type LeafletEventHandlerFnMap = org.scalablytyped.runtime.StringDictionary[LeafletEventHandlerFn]
   type PointExpression = Point | PointTuple
   type PointTuple = js.Tuple2[scala.Double, scala.Double]
   type StyleFunction[P] = js.Function1[

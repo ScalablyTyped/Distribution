@@ -47,7 +47,5 @@ object CFBNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[cfbLib.cfbMod.CFB$StorageType with java.lang.String] = js.native
   }
   
-  type CFB$EntryType = cfbLib.cfbMod.CFB$EntryType
-  type CFB$StorageType = cfbLib.cfbMod.CFB$StorageType
 }
 

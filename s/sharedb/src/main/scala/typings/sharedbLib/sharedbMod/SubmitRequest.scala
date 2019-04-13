@@ -11,7 +11,7 @@ trait SubmitRequest extends js.Object {
   var id: java.lang.String
   var index: java.lang.String
   var maxRetries: scala.Double | scala.Null
-  var op: sharedbLib.sharedbMod.sharedbNs.Op
+  var op: Op
   var ops: js.Array[sharedbLib.libSharedbMod.Op]
   var options: js.Any
   var projection: js.UndefOr[Projection]
@@ -28,7 +28,7 @@ object SubmitRequest {
     collection: java.lang.String,
     id: java.lang.String,
     index: java.lang.String,
-    op: sharedbLib.sharedbMod.sharedbNs.Op,
+    op: Op,
     ops: js.Array[sharedbLib.libSharedbMod.Op],
     options: js.Any,
     retries: scala.Double,

@@ -14,21 +14,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Board
   extends nodeLib.NodeJSNs.EventEmitter {
-  var HIGH: firmataLib.firmataMod.BoardNs.PIN_STATE = js.native
-  var I2C_MODES: firmataLib.firmataMod.BoardNs.I2cModes = js.native
-  var LOW: firmataLib.firmataMod.BoardNs.PIN_STATE = js.native
-  var MODES: firmataLib.firmataMod.BoardNs.PinModes = js.native
-  var SERIAL_MODES: firmataLib.firmataMod.BoardNs.SerialModes = js.native
-  var SERIAL_PIN_TYPES: firmataLib.firmataMod.BoardNs.SerialPinTypes = js.native
-  var SERIAL_PORT_IDs: firmataLib.firmataMod.BoardNs.SerialPortIds = js.native
-  var STEPPER: firmataLib.firmataMod.BoardNs.StepperConstants = js.native
+  var HIGH: PIN_STATE = js.native
+  var I2C_MODES: I2cModes = js.native
+  var LOW: PIN_STATE = js.native
+  var MODES: PinModes = js.native
+  var SERIAL_MODES: SerialModes = js.native
+  var SERIAL_PIN_TYPES: SerialPinTypes = js.native
+  var SERIAL_PORT_IDs: SerialPortIds = js.native
+  var STEPPER: StepperConstants = js.native
   var analogPins: js.Array[scala.Double] = js.native
-  var firmware: firmataLib.firmataMod.BoardNs.Firmware = js.native
-  var pins: js.Array[firmataLib.firmataMod.BoardNs.Pins] = js.native
+  var firmware: Firmware = js.native
+  var pins: js.Array[Pins] = js.native
   var ports: js.Array[scala.Double] = js.native
-  var settings: firmataLib.firmataMod.BoardNs.Settings = js.native
-  var transport: serialportLib.serialportMod.namespaced = js.native
-  var version: firmataLib.firmataMod.BoardNs.Version = js.native
+  var settings: Settings = js.native
+  var transport: serialportLib.serialportMod.^ = js.native
+  var version: Version = js.native
   // TODO untested/incomplete --- TWW
   /* protected */ def _sendOneWireRequest(
     pin: scala.Double,
@@ -45,11 +45,8 @@ trait Board
   /* protected */ def _sendOneWireSearch(`type`: js.Any, event: js.Any, pin: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def analogRead(pin: scala.Double, callback: js.Function1[/* value */ scala.Double, scala.Unit]): scala.Unit = js.native
   def analogWrite(pin: scala.Double, value: scala.Double): scala.Unit = js.native
-  def digitalRead(
-    pin: scala.Double,
-    callback: js.Function1[/* val */ firmataLib.firmataMod.BoardNs.PIN_STATE, scala.Unit]
-  ): scala.Unit = js.native
-  def digitalWrite(pin: scala.Double, `val`: firmataLib.firmataMod.BoardNs.PIN_STATE): scala.Unit = js.native
+  def digitalRead(pin: scala.Double, callback: js.Function1[/* val */ PIN_STATE, scala.Unit]): scala.Unit = js.native
+  def digitalWrite(pin: scala.Double, `val`: PIN_STATE): scala.Unit = js.native
   def getSamplingInterval(): scala.Double = js.native
   def i2cConfig(options: firmataLib.Anon_Delay): scala.Unit = js.native
   // TODO untested --- TWW
@@ -86,7 +83,7 @@ trait Board
   def i2cWrite(address: scala.Double, register: scala.Double, inBytes: js.Array[scala.Double]): scala.Unit = js.native
   // TODO untested --- TWW
   def i2cWriteReg(address: scala.Double, register: scala.Double, byte: scala.Double): scala.Unit = js.native
-  def pinMode(pin: scala.Double, mode: firmataLib.firmataMod.BoardNs.PIN_MODE): scala.Unit = js.native
+  def pinMode(pin: scala.Double, mode: PIN_MODE): scala.Unit = js.native
   // TODO untested/incomplete --- TWW
   def pingRead(opts: js.Any, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def pwmWrite(pin: scala.Double, value: scala.Double): scala.Unit = js.native
@@ -94,8 +91,8 @@ trait Board
   def queryCapabilities(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def queryFirmware(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def queryPinState(pin: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def reportAnalogPin(pin: scala.Double, value: firmataLib.firmataMod.BoardNs.REPORTING): scala.Unit = js.native
-  def reportDigitalPin(pin: scala.Double, value: firmataLib.firmataMod.BoardNs.REPORTING): scala.Unit = js.native
+  def reportAnalogPin(pin: scala.Double, value: REPORTING): scala.Unit = js.native
+  def reportDigitalPin(pin: scala.Double, value: REPORTING): scala.Unit = js.native
   def reportVersion(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def reset(): scala.Unit = js.native
   // TODO untested --- TWW
@@ -150,23 +147,19 @@ trait Board
   // TODO untested --- TWW
   def sendString(str: java.lang.String): scala.Unit = js.native
   // TODO untested --- TWW
-  def serialClose(portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID): scala.Unit = js.native
+  def serialClose(portId: SERIAL_PORT_ID): scala.Unit = js.native
   // TODO untested --- TWW
   def serialConfig(options: firmataLib.Anon_Baud): scala.Unit = js.native
   // TODO untested --- TWW
-  def serialFlush(portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID): scala.Unit = js.native
+  def serialFlush(portId: SERIAL_PORT_ID): scala.Unit = js.native
   // TODO untested --- TWW
-  def serialListen(portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID): scala.Unit = js.native
+  def serialListen(portId: SERIAL_PORT_ID): scala.Unit = js.native
   // TODO untested --- TWW
-  def serialRead(
-    portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID,
-    maxBytesToRead: scala.Double,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
+  def serialRead(portId: SERIAL_PORT_ID, maxBytesToRead: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   // TODO untested --- TWW
-  def serialStop(portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID): scala.Unit = js.native
+  def serialStop(portId: SERIAL_PORT_ID): scala.Unit = js.native
   // TODO untested --- TWW
-  def serialWrite(portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID, inBytes: js.Array[scala.Double]): scala.Unit = js.native
+  def serialWrite(portId: SERIAL_PORT_ID, inBytes: js.Array[scala.Double]): scala.Unit = js.native
   def servoConfig(pin: scala.Double, min: scala.Double, max: scala.Double): scala.Unit = js.native
   def servoWrite(pin: scala.Double, value: scala.Double): scala.Unit = js.native
   def setSamplingInterval(interval: scala.Double): scala.Unit = js.native
@@ -196,14 +189,14 @@ trait Board
   ): scala.Unit = js.native
   def stepperStep(
     deviceNum: scala.Double,
-    direction: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION,
+    direction: STEPPER_DIRECTION,
     steps: scala.Double,
     speed: scala.Double,
     accel: js.Function1[/* bool */ js.UndefOr[scala.Boolean], scala.Unit]
   ): scala.Unit = js.native
   def stepperStep(
     deviceNum: scala.Double,
-    direction: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION,
+    direction: STEPPER_DIRECTION,
     steps: scala.Double,
     speed: scala.Double,
     accel: js.Function1[/* bool */ js.UndefOr[scala.Boolean], scala.Unit],
@@ -211,7 +204,7 @@ trait Board
   ): scala.Unit = js.native
   def stepperStep(
     deviceNum: scala.Double,
-    direction: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION,
+    direction: STEPPER_DIRECTION,
     steps: scala.Double,
     speed: scala.Double,
     accel: js.Function1[/* bool */ js.UndefOr[scala.Boolean], scala.Unit],
@@ -220,14 +213,14 @@ trait Board
   ): scala.Unit = js.native
   def stepperStep(
     deviceNum: scala.Double,
-    direction: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION,
+    direction: STEPPER_DIRECTION,
     steps: scala.Double,
     speed: scala.Double,
     accel: scala.Double
   ): scala.Unit = js.native
   def stepperStep(
     deviceNum: scala.Double,
-    direction: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION,
+    direction: STEPPER_DIRECTION,
     steps: scala.Double,
     speed: scala.Double,
     accel: scala.Double,
@@ -235,7 +228,7 @@ trait Board
   ): scala.Unit = js.native
   def stepperStep(
     deviceNum: scala.Double,
-    direction: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION,
+    direction: STEPPER_DIRECTION,
     steps: scala.Double,
     speed: scala.Double,
     accel: scala.Double,

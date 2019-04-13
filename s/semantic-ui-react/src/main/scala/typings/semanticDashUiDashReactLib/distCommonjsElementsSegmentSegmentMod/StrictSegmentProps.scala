@@ -15,7 +15,7 @@ trait StrictSegmentProps extends js.Object {
   /** A basic segment has no special formatting. */
   var basic: js.UndefOr[scala.Boolean] = js.undefined
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** A segment can be circular. */
   var circular: js.UndefOr[scala.Boolean] = js.undefined
   /** Additional classes. */
@@ -66,7 +66,7 @@ object StrictSegmentProps {
     as: js.Any = null,
     attached: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom = null,
     basic: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     circular: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     clearing: js.UndefOr[scala.Boolean] = js.undefined,

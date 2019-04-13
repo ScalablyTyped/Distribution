@@ -29,17 +29,17 @@ trait MimeNode extends js.Object {
   def buildHeaders(): java.lang.String = js.native
   /** Creates and appends a child node.Arguments provided are passed to MimeNode constructor */
   def createChild(contentType: java.lang.String): MimeNode = js.native
-  def createChild(contentType: java.lang.String, options: nodemailerLib.libMimeDashNodeMod.MimeNodeNs.Options): MimeNode = js.native
+  def createChild(contentType: java.lang.String, options: Options): MimeNode = js.native
   /**
     * Streams the rfc2822 message from the current node. If this is a root node,
     * mandatory header fields are set if missing (Date, Message-Id, MIME-Version)
     */
   def createReadStream(): nodeLib.streamMod.Readable = js.native
-  def createReadStream(options: nodeLib.streamMod.internalNs.ReadableOptions): nodeLib.streamMod.Readable = js.native
+  def createReadStream(options: nodeLib.streamMod.ReadableOptions): nodeLib.streamMod.Readable = js.native
   /** Generates and returns an object with parsed address fields */
-  def getAddresses(): nodemailerLib.libMimeDashNodeMod.MimeNodeNs.Addresses = js.native
+  def getAddresses(): Addresses = js.native
   /** Generates and returns SMTP envelope with the sender address and a list of recipients addresses */
-  def getEnvelope(): nodemailerLib.libMimeDashNodeMod.MimeNodeNs.Envelope = js.native
+  def getEnvelope(): Envelope = js.native
   /** Retrieves the first mathcing value of a selected key */
   def getHeader(key: java.lang.String): java.lang.String = js.native
   def getTransferEncoding(): java.lang.String = js.native
@@ -67,7 +67,7 @@ trait MimeNode extends js.Object {
   def setContent(content: nodeLib.Buffer): this.type = js.native
   def setContent(content: nodeLib.streamMod.Readable): this.type = js.native
   /** Sets envelope to be used instead of the generated one */
-  def setEnvelope(envelope: nodemailerLib.libMailerMod.MailNs.Envelope): this.type = js.native
+  def setEnvelope(envelope: nodemailerLib.libMailerMod.Envelope): this.type = js.native
   def setHeader(headers: js.Array[nodemailerLib.Anon_KeyValue]): this.type = js.native
   def setHeader(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   /**
@@ -83,7 +83,7 @@ trait MimeNode extends js.Object {
   def setRaw(raw: nodeLib.streamMod.Readable): this.type = js.native
   def stream(
     outputStream: nodeLib.streamMod.Readable,
-    options: nodeLib.streamMod.internalNs.ReadableOptions,
+    options: nodeLib.streamMod.ReadableOptions,
     done: js.Function1[/* err */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /**

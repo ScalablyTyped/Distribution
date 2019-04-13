@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- androiduixLib.androidNs.textNs.Spanned because Already inherited / * index * / org.scalablytyped.runtime.NumberDictionary[java.lang.String] */ @JSGlobal("android.text.Layout.SpannedEllipsizer")
+- androiduixLib.androidNs.textNs.Spanned because var conflicts: iterator. Inlined getSpans, getSpanStart, getSpanEnd, getSpanFlags, nextSpanTransition */ @JSGlobal("android.text.Layout.SpannedEllipsizer")
 @js.native
 class SpannedEllipsizer protected () extends Ellipsizer {
   def this(display: java.lang.String) = this()

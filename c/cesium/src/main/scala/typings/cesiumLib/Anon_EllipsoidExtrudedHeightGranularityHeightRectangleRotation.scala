@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation extends js.Object {
-  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.Ellipsoid] = js.undefined
   var extrudedHeight: js.UndefOr[scala.Double] = js.undefined
   var granularity: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
-  var rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle
+  var rectangle: cesiumLib.cesiumMod.Rectangle
   var rotation: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation {
   @scala.inline
   def apply(
-    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle,
-    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    rectangle: cesiumLib.cesiumMod.Rectangle,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid = null,
     extrudedHeight: scala.Int | scala.Double = null,
     granularity: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,

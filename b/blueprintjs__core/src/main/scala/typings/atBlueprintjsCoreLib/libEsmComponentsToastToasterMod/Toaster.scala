@@ -18,47 +18,9 @@ class Toaster ()
   /* private */ def createToastOptions(props: js.Any): js.Any = js.native
   /* private */ def createToastOptions(props: js.Any, key: js.Any): js.Any = js.native
   def dismiss(key: java.lang.String, timeoutExpired: scala.Boolean): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def forceUpdate(): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def forceUpdate(callBack: js.Function0[scala.Unit]): scala.Unit = js.native
   /* private */ def getPositionClasses(): js.Any = js.native
   /* private */ def isNewToastKey(key: js.Any): js.Any = js.native
-  /* InferMemberOverrides */
-  override def render(): reactLib.reactMod.ReactNs.ReactNode = js.native
   /* private */ def renderToast(toast: js.Any): js.Any = js.native
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](state: IToasterState): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](state: IToasterState, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  // We MUST keep setState() as a unified signature because it allows proper checking of the method return type.
-  // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
-  // Also, the ` | S` allows intellisense to not be dumbisense
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](
-    state: js.Function2[
-      /* prevState */ stdLib.Readonly[IToasterState], 
-      /* props */ stdLib.Readonly[IToasterProps], 
-      (stdLib.Pick[IToasterState, K]) | IToasterState | scala.Null
-    ]
-  ): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](
-    state: js.Function2[
-      /* prevState */ stdLib.Readonly[IToasterState], 
-      /* props */ stdLib.Readonly[IToasterProps], 
-      (stdLib.Pick[IToasterState, K]) | IToasterState | scala.Null
-    ],
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](state: scala.Null, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](state: stdLib.Pick[IToasterState, K]): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def setState[K /* <: java.lang.String */](state: stdLib.Pick[IToasterState, K], callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 
 /* static members */

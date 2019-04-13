@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation._
 
 trait MapViewAnnotation extends js.Object {
   var animateDrop: js.UndefOr[scala.Boolean] = js.undefined
-  var detailCalloutView: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var detailCalloutView: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined
   var hasLeftCallout: js.UndefOr[scala.Boolean] = js.undefined
   var hasRightCallout: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var image: js.UndefOr[ImageURISource] = js.undefined
   var latitude: scala.Double
-  var leftCalloutView: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var leftCalloutView: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var longitude: scala.Double
   var onBlur: js.UndefOr[js.Function0[_]] = js.undefined
   var onDragStateChange: js.UndefOr[js.Function0[_]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[_]] = js.undefined
   var onLeftCalloutPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onRightCalloutPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var rightCalloutView: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var rightCalloutView: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var subtitle: js.UndefOr[java.lang.String] = js.undefined
   var tintColor: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var view: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var view: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
 }
 
 object MapViewAnnotation {
@@ -34,23 +34,23 @@ object MapViewAnnotation {
     latitude: scala.Double,
     longitude: scala.Double,
     animateDrop: js.UndefOr[scala.Boolean] = js.undefined,
-    detailCalloutView: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    detailCalloutView: reactLib.reactMod.ReactElement[_] = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     hasLeftCallout: js.UndefOr[scala.Boolean] = js.undefined,
     hasRightCallout: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     image: ImageURISource = null,
-    leftCalloutView: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    leftCalloutView: reactLib.reactMod.ReactElement[_] = null,
     onBlur: () => _ = null,
     onDragStateChange: () => _ = null,
     onFocus: () => _ = null,
     onLeftCalloutPress: () => scala.Unit = null,
     onRightCalloutPress: () => scala.Unit = null,
-    rightCalloutView: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    rightCalloutView: reactLib.reactMod.ReactElement[_] = null,
     subtitle: java.lang.String = null,
     tintColor: java.lang.String = null,
     title: java.lang.String = null,
-    view: reactLib.reactMod.ReactNs.ReactElement[_] = null
+    view: reactLib.reactMod.ReactElement[_] = null
   ): MapViewAnnotation = {
     val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (!js.isUndefined(animateDrop)) __obj.updateDynamic("animateDrop")(animateDrop)

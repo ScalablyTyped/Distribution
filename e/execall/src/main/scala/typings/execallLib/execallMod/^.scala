@@ -15,6 +15,6 @@ object ^ extends js.Object {
     * @param re Regular expression to match against the `input`.
     * @returns An array of matches.
     */
-  def apply(re: stdLib.RegExp, input: java.lang.String): js.Array[execallLib.execallMod.execallNs.Match] = js.native
+  def apply(re: stdLib.RegExp, input: java.lang.String): js.Array[Match] = js.native
 }
 

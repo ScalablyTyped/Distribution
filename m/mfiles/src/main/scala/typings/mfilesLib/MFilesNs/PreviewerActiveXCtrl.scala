@@ -26,3 +26,8 @@ class PreviewerActiveXCtrl ()
   ): scala.Double = js.native
 }
 
+@JSGlobal("MFiles.PreviewerActiveXCtrl")
+@js.native
+object PreviewerActiveXCtrl
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IPreviewerActiveXCtrl]
+

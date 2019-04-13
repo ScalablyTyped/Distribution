@@ -7,13 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Attributes
-  extends org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.Model]
-     with org.scalablytyped.runtime.Instantiable1[/* attributes */ js.Any, backboneLib.backboneMod.BackboneNs.Model]
-     with org.scalablytyped.runtime.Instantiable2[
-      /* attributes */ js.Any, 
-      /* options */ js.Any, 
-      backboneLib.backboneMod.BackboneNs.Model
-    ] {
+  extends org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.Model]
+     with org.scalablytyped.runtime.Instantiable1[/* attributes */ js.Any, backboneLib.backboneMod.Model]
+     with org.scalablytyped.runtime.Instantiable2[/* attributes */ js.Any, /* options */ js.Any, backboneLib.backboneMod.Model] {
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/

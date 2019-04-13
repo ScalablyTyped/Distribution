@@ -9,11 +9,11 @@ trait ListItemContentProps extends js.Object {
   /**
     * Main text of the item.
     */
-  var caption: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var caption: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Secondary text to display under the caption.
     */
@@ -33,8 +33,8 @@ trait ListItemContentProps extends js.Object {
 object ListItemContentProps {
   @scala.inline
   def apply(
-    caption: reactLib.reactMod.ReactNs.ReactNode = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    caption: reactLib.reactMod.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     legend: java.lang.String = null,
     theme: ListItemContentTheme = null,
     `type`: reactDashToolboxLib.reactDashToolboxLibStrings.auto | reactDashToolboxLib.reactDashToolboxLibStrings.normal | reactDashToolboxLib.reactDashToolboxLibStrings.large = null

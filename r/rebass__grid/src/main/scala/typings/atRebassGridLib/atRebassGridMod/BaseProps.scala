@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseProps
-  extends reactLib.reactMod.ReactNs.Props[js.Any] {
-  var as: js.UndefOr[reactLib.reactMod.ReactNs.ElementType[_]] = js.undefined
+  extends reactLib.reactMod.Props[js.Any] {
+  var as: js.UndefOr[reactLib.reactMod.ElementType[_]] = js.undefined
   var css: js.UndefOr[styledDashComponentsLib.styledDashComponentsMod.Interpolation[_]] = js.undefined
 }
 
 object BaseProps {
   @scala.inline
   def apply(
-    as: reactLib.reactMod.ReactNs.ElementType[_] = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    as: reactLib.reactMod.ElementType[_] = null,
+    children: reactLib.reactMod.ReactNode = null,
     css: styledDashComponentsLib.styledDashComponentsMod.Interpolation[_] = null,
-    key: reactLib.reactMod.ReactNs.Key = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
+    key: reactLib.reactMod.Key = null,
+    ref: reactLib.reactMod.LegacyRef[js.Any] = null
   ): BaseProps = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])

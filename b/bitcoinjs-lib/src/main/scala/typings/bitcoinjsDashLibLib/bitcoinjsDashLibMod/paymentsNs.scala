@@ -18,10 +18,10 @@ object paymentsNs extends js.Object {
   
   def p2data(a: bitcoinjsDashLibLib.Anon_DataNetwork): bitcoinjsDashLibLib.Anon_DataOutput = js.native
   def p2data(a: bitcoinjsDashLibLib.Anon_DataNetwork, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_DataOutput = js.native
-  def p2ms(a: bitcoinjsDashLibLib.Anon_InputM): bitcoinjsDashLibLib.Anon_InputMN = js.native
-  def p2ms(a: bitcoinjsDashLibLib.Anon_InputM, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_InputMN = js.native
-  def p2pk(a: bitcoinjsDashLibLib.Anon_InputNetwork): bitcoinjsDashLibLib.Anon_InputOutputPubkey = js.native
-  def p2pk(a: bitcoinjsDashLibLib.Anon_InputNetwork, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_InputOutputPubkey = js.native
+  def p2ms(a: bitcoinjsDashLibLib.Anon_Input): bitcoinjsDashLibLib.Anon_InputM = js.native
+  def p2ms(a: bitcoinjsDashLibLib.Anon_Input, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_InputM = js.native
+  def p2pk(a: bitcoinjsDashLibLib.Anon_InputNetwork): bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  def p2pk(a: bitcoinjsDashLibLib.Anon_InputNetwork, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_InputOutput = js.native
   def p2pkh(a: bitcoinjsDashLibLib.Anon_Address): bitcoinjsDashLibLib.Anon_AddressHash = js.native
   def p2pkh(a: bitcoinjsDashLibLib.Anon_Address, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_AddressHash = js.native
   def p2sh(a: bitcoinjsDashLibLib.Anon_AddressHashInput): bitcoinjsDashLibLib.Anon_AddressHashInputOutput = js.native

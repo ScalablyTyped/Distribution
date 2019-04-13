@@ -22,7 +22,7 @@ trait VictoryLegendProps
     * text measurements, and may need to be adjusted.
     * @default <Border/>
     */
-  var borderComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var borderComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The borderPadding specifies the amount of padding that should
     * be added between the legend items and the border. This prop may be given as
@@ -134,7 +134,7 @@ trait VictoryLegendProps
     * or ignored within the custom component itself. If labelComponent is omitted,
     * a new VictoryLabel will be created with the props described above.
     */
-  var titleComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var titleComponent: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * The titleOrientation prop specifies where the a title should be rendered
     * in relation to the rest of the legend. Possible values
@@ -155,14 +155,14 @@ object VictoryLegendProps {
   @scala.inline
   def apply(
     animate: AnimatePropTypeInterface = null,
-    borderComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    borderComponent: reactLib.reactMod.ReactElement[_] = null,
     borderPadding: PaddingProps = null,
     categories: CategoryPropType = null,
     centerTitle: js.UndefOr[scala.Boolean] = js.undefined,
     colorScale: ColorScalePropType = null,
-    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    containerComponent: reactLib.reactMod.ReactElement[_] = null,
     data: js.Array[victoryLib.Anon_Name] = null,
-    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    dataComponent: reactLib.reactMod.ReactElement[_] = null,
     domain: DomainPropType = null,
     eventKey: StringOrNumberOrCallback | js.Array[java.lang.String] = null,
     events: js.Array[
@@ -172,12 +172,12 @@ object VictoryLegendProps {
       ]
     ] = null,
     externalEventMutations: js.Array[_] = null,
-    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactElement[_] = null,
     gutter: scala.Double | victoryLib.Anon_Left = null,
     height: scala.Int | scala.Double = null,
     itemsPerRow: scala.Int | scala.Double = null,
     label: java.lang.String | victoryLib.Anon_DataAnyString = null,
-    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labelComponent: reactLib.reactMod.ReactElement[_] = null,
     name: java.lang.String = null,
     orientation: victoryLib.victoryLibStrings.horizontal | victoryLib.victoryLibStrings.vertical = null,
     padding: PaddingProps = null,
@@ -188,7 +188,7 @@ object VictoryLegendProps {
     symbolSpacer: scala.Int | scala.Double = null,
     theme: VictoryThemeDefinition = null,
     title: java.lang.String | js.Array[java.lang.String] = null,
-    titleComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    titleComponent: reactLib.reactMod.ReactElement[_] = null,
     titleOrientation: OrientationTypes = null,
     width: scala.Int | scala.Double = null,
     x: scala.Int | scala.Double = null,

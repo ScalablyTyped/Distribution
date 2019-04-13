@@ -7,19 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "HomeButton")
 @js.native
-class HomeButton protected ()
-  extends cesiumLib.cesiumMod.CesiumNs.HomeButton {
-  def this(container: java.lang.String, scene: cesiumLib.cesiumMod.CesiumNs.Scene) = this()
-  def this(container: stdLib.Element, scene: cesiumLib.cesiumMod.CesiumNs.Scene) = this()
-  def this(container: java.lang.String, scene: cesiumLib.cesiumMod.CesiumNs.Scene, duration: scala.Double) = this()
-  def this(container: stdLib.Element, scene: cesiumLib.cesiumMod.CesiumNs.Scene, duration: scala.Double) = this()
-  /* CompleteClass */
-  override var container: stdLib.Element = js.native
-  /* CompleteClass */
-  override var viewModel: cesiumLib.cesiumMod.CesiumNs.HomeButtonViewModel = js.native
-  /* CompleteClass */
-  override def destroy(): scala.Unit = js.native
-  /* CompleteClass */
-  override def isDestroyed(): scala.Boolean = js.native
+class HomeButton protected () extends js.Object {
+  def this(container: java.lang.String, scene: Scene) = this()
+  def this(container: stdLib.Element, scene: Scene) = this()
+  def this(container: java.lang.String, scene: Scene, duration: scala.Double) = this()
+  def this(container: stdLib.Element, scene: Scene, duration: scala.Double) = this()
+  var container: stdLib.Element = js.native
+  var viewModel: HomeButtonViewModel = js.native
+  def destroy(): scala.Unit = js.native
+  def isDestroyed(): scala.Boolean = js.native
 }
 

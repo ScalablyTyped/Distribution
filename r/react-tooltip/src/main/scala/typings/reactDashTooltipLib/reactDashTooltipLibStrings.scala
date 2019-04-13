@@ -8,438 +8,438 @@ import scala.scalajs.js.annotation._
 object reactDashTooltipLibStrings {
   @js.native
   sealed trait MSGestureChange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSGestureDoubleTap
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSGestureEnd
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSGestureHold
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSGestureStart
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSGestureTap
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSInertiaStart
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerCancel
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerDown
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerEnter
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerLeave
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerMove
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerOut
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerOver
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait MSPointerUp
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait abort
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait afterprint
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait beforeprint
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait beforeunload
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait blur
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait bottom
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Place
+    extends reactDashTooltipLib.reactDashTooltipMod.Place
   
   @js.native
   sealed trait canplay
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait canplaythrough
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait change
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait click
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait compassneedscalibration
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait contextmenu
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait dark
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Type
+    extends reactDashTooltipLib.reactDashTooltipMod.Type
   
   @js.native
   sealed trait dblclick
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait devicelight
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait devicemotion
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait deviceorientation
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait div extends js.Object
   
   @js.native
   sealed trait drag
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait dragend
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait dragenter
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait dragleave
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait dragover
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait dragstart
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait drop
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait durationchange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait emptied
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait ended
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait error
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Type
-       with reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod.Type
+       with reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait float
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Effect
+    extends reactDashTooltipLib.reactDashTooltipMod.Effect
   
   @js.native
   sealed trait focus
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait hashchange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait info
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Type
+    extends reactDashTooltipLib.reactDashTooltipMod.Type
   
   @js.native
   sealed trait input
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait invalid
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait keydown
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait keypress
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait keyup
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait left
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Place
+    extends reactDashTooltipLib.reactDashTooltipMod.Place
   
   @js.native
   sealed trait light
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Type
+    extends reactDashTooltipLib.reactDashTooltipMod.Type
   
   @js.native
   sealed trait load
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait loadeddata
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait loadedmetadata
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait loadstart
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait message
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mousedown
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mouseenter
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mouseleave
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mousemove
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mouseout
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mouseover
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mouseup
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait mousewheel
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait offline
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait online
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait orientationchange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait pagehide
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait pageshow
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait pause
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait play
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait playing
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait popstate
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait progress
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait ratechange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait readystatechange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait reset
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait resize
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait right
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Place
+    extends reactDashTooltipLib.reactDashTooltipMod.Place
   
   @js.native
   sealed trait scroll
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait seeked
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait seeking
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait select
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait solid
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Effect
+    extends reactDashTooltipLib.reactDashTooltipMod.Effect
   
   @js.native
   sealed trait span extends js.Object
   
   @js.native
   sealed trait stalled
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait storage
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait submit
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait success
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Type
+    extends reactDashTooltipLib.reactDashTooltipMod.Type
   
   @js.native
   sealed trait suspend
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait timeupdate
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait top
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Place
+    extends reactDashTooltipLib.reactDashTooltipMod.Place
   
   @js.native
   sealed trait unload
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait volumechange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplayactivate
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplayblur
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplayconnect
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplaydeactivate
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplaydisconnect
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplayfocus
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplaypointerrestricted
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplaypointerunrestricted
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait vrdisplaypresentchange
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait waiting
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs._WindowEvents
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
   sealed trait warning
-    extends reactDashTooltipLib.reactDashTooltipMod.ReactTooltipNs.Type
+    extends reactDashTooltipLib.reactDashTooltipMod.Type
   
   @scala.inline
   def MSGestureChange: MSGestureChange = "MSGestureChange".asInstanceOf[MSGestureChange]

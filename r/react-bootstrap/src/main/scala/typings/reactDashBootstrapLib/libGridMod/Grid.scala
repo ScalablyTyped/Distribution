@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Grid
-  extends reactLib.reactMod.Component[reactDashBootstrapLib.libGridMod.GridNs.GridProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[GridProps, js.Object, js.Any]
 

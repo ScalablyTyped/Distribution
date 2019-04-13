@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap/lib", "Glyphicon")
 @js.native
 class Glyphicon ()
-  extends reactDashBootstrapLib.libGlyphiconMod.namespaced
+  extends reactDashBootstrapLib.libGlyphiconMod.^
 

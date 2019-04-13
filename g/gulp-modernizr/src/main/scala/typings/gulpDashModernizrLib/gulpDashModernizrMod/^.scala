@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): nodeLib.streamMod.Transform = js.native
   def apply(file: java.lang.String): nodeLib.streamMod.Transform = js.native
-  def apply(file: java.lang.String, parames: gulpDashModernizrLib.gulpDashModernizrMod.GulpModernizrNs.Params): nodeLib.streamMod.Transform = js.native
-  def apply(parames: gulpDashModernizrLib.gulpDashModernizrMod.GulpModernizrNs.Params): nodeLib.streamMod.Transform = js.native
+  def apply(file: java.lang.String, parames: Params): nodeLib.streamMod.Transform = js.native
+  def apply(parames: Params): nodeLib.streamMod.Transform = js.native
 }
 

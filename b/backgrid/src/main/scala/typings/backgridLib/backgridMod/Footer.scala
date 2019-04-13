@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("backgrid", "Footer")
 @js.native
 class Footer ()
-  extends backgridLib.backgridMod.BackgridNs.Footer
+  extends backboneLib.backboneMod.View[backboneLib.backboneMod.Model]
 

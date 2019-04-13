@@ -21,15 +21,15 @@ trait AutoSizerProps extends js.Object {
   /** Callback to be invoked on-resize */
   var onResize: js.UndefOr[js.Function1[/* size */ Size, scala.Unit]] = js.undefined
   /** Optional inline style */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** Function responsible for rendering children. */
-  def children(size: Size): reactLib.reactMod.ReactNs.ReactNode
+  def children(size: Size): reactLib.reactMod.ReactNode
 }
 
 object AutoSizerProps {
   @scala.inline
   def apply(
-    children: Size => reactLib.reactMod.ReactNs.ReactNode,
+    children: Size => reactLib.reactMod.ReactNode,
     className: java.lang.String = null,
     defaultHeight: scala.Int | scala.Double = null,
     defaultWidth: scala.Int | scala.Double = null,
@@ -37,7 +37,7 @@ object AutoSizerProps {
     disableWidth: js.UndefOr[scala.Boolean] = js.undefined,
     nonce: java.lang.String = null,
     onResize: /* size */ Size => scala.Unit = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): AutoSizerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className)

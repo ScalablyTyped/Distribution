@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ClampToGround extends js.Object {
   var clampToGround: js.UndefOr[scala.Boolean] = js.undefined
-  var fill: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined
-  var markerColor: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined
+  var fill: js.UndefOr[cesiumLib.cesiumMod.Color] = js.undefined
+  var markerColor: js.UndefOr[cesiumLib.cesiumMod.Color] = js.undefined
   var markerSize: js.UndefOr[scala.Double] = js.undefined
   var markerSymbol: js.UndefOr[java.lang.String] = js.undefined
   var sourceUri: js.UndefOr[java.lang.String] = js.undefined
-  var stroke: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined
+  var stroke: js.UndefOr[cesiumLib.cesiumMod.Color] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -20,12 +20,12 @@ object Anon_ClampToGround {
   @scala.inline
   def apply(
     clampToGround: js.UndefOr[scala.Boolean] = js.undefined,
-    fill: cesiumLib.cesiumMod.CesiumNs.Color = null,
-    markerColor: cesiumLib.cesiumMod.CesiumNs.Color = null,
+    fill: cesiumLib.cesiumMod.Color = null,
+    markerColor: cesiumLib.cesiumMod.Color = null,
     markerSize: scala.Int | scala.Double = null,
     markerSymbol: java.lang.String = null,
     sourceUri: java.lang.String = null,
-    stroke: cesiumLib.cesiumMod.CesiumNs.Color = null,
+    stroke: cesiumLib.cesiumMod.Color = null,
     strokeWidth: scala.Int | scala.Double = null
   ): Anon_ClampToGround = {
     val __obj = js.Dynamic.literal()

@@ -12,9 +12,12 @@ trait numbers
 
 object numbers {
   @scala.inline
-  def apply(PAGE_FACTOR: atMaterialSliderLib.atMaterialSliderLibNumbers.`4`): numbers = {
+  def apply(
+    PAGE_FACTOR: atMaterialSliderLib.atMaterialSliderLibNumbers.`4`,
+    StringDictionary: org.scalablytyped.runtime.StringDictionary[scala.Double] = null
+  ): numbers = {
     val __obj = js.Dynamic.literal(PAGE_FACTOR = PAGE_FACTOR)
-  
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

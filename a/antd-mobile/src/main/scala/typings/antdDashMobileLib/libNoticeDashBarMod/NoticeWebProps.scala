@@ -10,20 +10,20 @@ trait NoticeWebProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   var marqueeProps: js.UndefOr[antdDashMobileLib.libNoticeDashBarMarqueeMod.MarqueeProps] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
 object NoticeWebProps {
   @scala.inline
   def apply(
-    action: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    action: reactLib.reactMod.ReactElement[_] = null,
     className: java.lang.String = null,
-    icon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    icon: reactLib.reactMod.ReactElement[_] = null,
     marqueeProps: antdDashMobileLib.libNoticeDashBarMarqueeMod.MarqueeProps = null,
     mode: antdDashMobileLib.antdDashMobileLibStrings.closable | antdDashMobileLib.antdDashMobileLibStrings.link = null,
     onClick: () => scala.Unit = null,
     prefixCls: java.lang.String = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): NoticeWebProps = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action)

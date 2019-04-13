@@ -10,3 +10,8 @@ import scala.scalajs.js.annotation._
 class VaultValueListOperations ()
   extends mfilesLib.IVaultValueListOperations
 
+@JSGlobal("MFiles.VaultValueListOperations")
+@js.native
+object VaultValueListOperations
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IVaultValueListOperations]
+

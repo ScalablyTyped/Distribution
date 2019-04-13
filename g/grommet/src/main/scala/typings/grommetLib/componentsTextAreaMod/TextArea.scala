@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/TextArea", "TextArea")
 @js.native
 class TextArea protected ()
-  extends reactLib.reactMod.ReactNs.Component[
-      TextAreaProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-        reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
+  extends reactLib.reactMod.Component[
+      TextAreaProps with (reactLib.reactMod.DetailedHTMLProps[
+        reactLib.reactMod.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
         reactLib.HTMLTextAreaElement
       ]), 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: TextAreaProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
+  def this(props: TextAreaProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
       reactLib.HTMLTextAreaElement
     ])) = this()
-  def this(props: TextAreaProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
+  def this(props: TextAreaProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
       reactLib.HTMLTextAreaElement
     ]), context: js.Any) = this()
 }

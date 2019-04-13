@@ -40,10 +40,10 @@ trait IGesture extends js.Object {
   var onSwipeRight: js.UndefOr[GestureHandler] = js.undefined
   var onSwipeUp: js.UndefOr[GestureHandler] = js.undefined
   var onTap: js.UndefOr[GestureHandler] = js.undefined
-  var onTouchCancel: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
-  var onTouchEnd: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
-  var onTouchMove: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
-  var onTouchStart: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onTouchEnd: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onTouchMove: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
+  var onTouchStart: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement]] = js.undefined
 }
 
 object IGesture {
@@ -81,10 +81,10 @@ object IGesture {
     onSwipeRight: GestureHandler = null,
     onSwipeUp: GestureHandler = null,
     onTap: GestureHandler = null,
-    onTouchCancel: reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement] = null,
-    onTouchEnd: reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement] = null,
-    onTouchMove: reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement] = null,
-    onTouchStart: reactLib.reactMod.ReactNs.TouchEventHandler[stdLib.HTMLElement] = null
+    onTouchCancel: reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement] = null,
+    onTouchEnd: reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement] = null,
+    onTouchMove: reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement] = null,
+    onTouchStart: reactLib.reactMod.TouchEventHandler[stdLib.HTMLElement] = null
   ): IGesture = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])

@@ -16,7 +16,7 @@ trait IMenuItemProps
     *
     * Use `text` prop for the content of the menu item itself.
     */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Right-aligned label text content, useful for displaying hotkeys.
     *
@@ -31,7 +31,7 @@ trait IMenuItemProps
   /**
     * Right-aligned label content, useful for displaying hotkeys.
     */
-  var labelElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var labelElement: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * Whether the text should be allowed to wrap to multiple lines.
     * If `false`, text will be truncated with an ellipsis when it reaches `max-width`.
@@ -64,15 +64,15 @@ trait IMenuItemProps
   var textClassName: js.UndefOr[java.lang.String] = js.undefined
   /** Item text, required for usability. */
   @JSName("text")
-  var text_IMenuItemProps: reactLib.reactMod.ReactNs.ReactNode
+  var text_IMenuItemProps: reactLib.reactMod.ReactNode
 }
 
 object IMenuItemProps {
   @scala.inline
   def apply(
-    text: reactLib.reactMod.ReactNs.ReactNode,
+    text: reactLib.reactMod.ReactNode,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
@@ -80,9 +80,9 @@ object IMenuItemProps {
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     label: java.lang.String = null,
     labelClassName: java.lang.String = null,
-    labelElement: reactLib.reactMod.ReactNs.ReactNode = null,
+    labelElement: reactLib.reactMod.ReactNode = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     popoverProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = null,
     shouldDismissPopover: js.UndefOr[scala.Boolean] = js.undefined,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,

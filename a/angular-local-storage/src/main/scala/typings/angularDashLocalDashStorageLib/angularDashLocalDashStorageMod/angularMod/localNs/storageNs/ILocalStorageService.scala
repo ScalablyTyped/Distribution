@@ -25,16 +25,16 @@ trait ILocalStorageService extends js.Object {
     * @param value optional
     * @param key The corresponding key used in local storage
     */
-  def bind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String): angularLib.angularMod.Global.Function = js.native
-  def bind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String, value: js.Any): angularLib.angularMod.Global.Function = js.native
+  def bind(scope: angularLib.angularMod.IScope, property: java.lang.String): angularLib.angularMod.Global.Function = js.native
+  def bind(scope: angularLib.angularMod.IScope, property: java.lang.String, value: js.Any): angularLib.angularMod.Global.Function = js.native
   def bind(
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     property: java.lang.String,
     value: js.Any,
     key: java.lang.String
   ): angularLib.angularMod.Global.Function = js.native
   def bind(
-    scope: angularLib.angularMod.angularNs.IScope,
+    scope: angularLib.angularMod.IScope,
     property: java.lang.String,
     value: js.Any,
     key: java.lang.String,

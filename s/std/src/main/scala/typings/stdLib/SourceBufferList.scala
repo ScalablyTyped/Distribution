@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait SourceBufferList
   extends EventTarget
      with /* index */ org.scalablytyped.runtime.NumberDictionary[SourceBuffer] {
-  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[SourceBuffer]] = js.native
   val length: scala.Double = js.native
   var onaddsourcebuffer: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native

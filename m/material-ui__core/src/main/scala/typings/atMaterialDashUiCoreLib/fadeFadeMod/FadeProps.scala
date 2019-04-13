@@ -16,7 +16,7 @@ object FadeProps {
     appear: js.UndefOr[scala.Boolean] = js.undefined,
     enter: js.UndefOr[scala.Boolean] = js.undefined,
     exit: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null
   ): FadeProps = {
     val __obj = js.Dynamic.literal()

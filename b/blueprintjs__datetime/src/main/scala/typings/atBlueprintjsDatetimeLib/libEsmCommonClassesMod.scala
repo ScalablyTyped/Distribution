@@ -15,7 +15,7 @@ object libEsmCommonClassesMod extends js.Object {
   val DATEPICKER_CAPTION_CARET: java.lang.String = js.native
   val DATEPICKER_CAPTION_MEASURE: java.lang.String = js.native
   val DATEPICKER_CAPTION_SELECT: java.lang.String = js.native
-  val DATEPICKER_DAY: /* DayPicker-Day */ java.lang.String = js.native
+  val DATEPICKER_DAY: atBlueprintjsDatetimeLib.atBlueprintjsDatetimeLibStrings.`DayPicker-Day` = js.native
   val DATEPICKER_DAY_DISABLED: java.lang.String = js.native
   val DATEPICKER_DAY_OUTSIDE: java.lang.String = js.native
   val DATEPICKER_DAY_SELECTED: java.lang.String = js.native

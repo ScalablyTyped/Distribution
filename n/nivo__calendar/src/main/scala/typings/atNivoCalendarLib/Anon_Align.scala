@@ -22,7 +22,7 @@ trait Anon_Align extends js.Object {
   var monthBorderWidth: scala.Double
   var monthLegendOffset: scala.Double
   var theme: atNivoCoreLib.atNivoCoreMod.Theme
-  var tooltip: reactLib.reactMod.ReactNs.StatelessComponent[atNivoCalendarLib.atNivoCalendarMod.CalendarDayData]
+  var tooltip: reactLib.reactMod.StatelessComponent[atNivoCalendarLib.atNivoCalendarMod.CalendarDayData]
   var yearLegendOffset: scala.Double
   var yearSpacing: scala.Double
   def monthLegend(year: scala.Double, month: scala.Double, date: stdLib.Date): java.lang.String | scala.Double
@@ -50,7 +50,7 @@ object Anon_Align {
     monthLegend: (scala.Double, scala.Double, stdLib.Date) => java.lang.String | scala.Double,
     monthLegendOffset: scala.Double,
     theme: atNivoCoreLib.atNivoCoreMod.Theme,
-    tooltip: reactLib.reactMod.ReactNs.StatelessComponent[atNivoCalendarLib.atNivoCalendarMod.CalendarDayData],
+    tooltip: reactLib.reactMod.StatelessComponent[atNivoCalendarLib.atNivoCalendarMod.CalendarDayData],
     tooltipFormat: scala.Double => java.lang.String | scala.Double,
     yearLegend: scala.Double => java.lang.String | scala.Double,
     yearLegendOffset: scala.Double,

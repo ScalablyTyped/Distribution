@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DropdownItemProps
-  extends reactLib.reactMod.ReactNs.LiHTMLAttributes[stdLib.HTMLLIElement] {
+  extends reactLib.reactMod.LiHTMLAttributes[stdLib.HTMLLIElement] {
   var link: js.UndefOr[java.lang.String] = js.undefined
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -14,7 +14,7 @@ trait DropdownItemProps
 object DropdownItemProps {
   @scala.inline
   def apply(
-    LiHTMLAttributes: reactLib.reactMod.ReactNs.LiHTMLAttributes[stdLib.HTMLLIElement] = null,
+    LiHTMLAttributes: reactLib.reactMod.LiHTMLAttributes[stdLib.HTMLLIElement] = null,
     link: java.lang.String = null,
     target: java.lang.String = null
   ): DropdownItemProps = {

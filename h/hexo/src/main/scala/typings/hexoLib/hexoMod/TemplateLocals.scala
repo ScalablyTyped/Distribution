@@ -11,14 +11,14 @@ trait TemplateLocals extends js.Object {
     * Underscore object
     */
   @JSName("_")
-  var __Original: underscoreLib.underscoreMod.underscoreNs.UnderscoreStatic = js.native
+  var __Original: underscoreLib.underscoreMod.UnderscoreStatic = js.native
   /**
     * Site settings in `_config.yml`
     */
   var config: HexoConfig = js.native
   var env: hexoLib.Anon_Args = js.native
   var layout: java.lang.String = js.native
-  var page: hexoLib.hexoMod.HexoNs.LocalsNs.Post | hexoLib.hexoMod.HexoNs.LocalsNs.Page | hexoLib.hexoMod.HexoNs.LocalsNs.Category | hexoLib.hexoMod.HexoNs.LocalsNs.Tag | IndexPage | ArchivePage | CategoryPage | TagPage = js.native
+  var page: hexoLib.hexoMod.LocalsNs.Post | hexoLib.hexoMod.LocalsNs.Page | hexoLib.hexoMod.LocalsNs.Category | hexoLib.hexoMod.LocalsNs.Tag | IndexPage | ArchivePage | CategoryPage | TagPage = js.native
   var path: java.lang.String = js.native
   var site: js.Any = js.native
   var theme: HexoConfig = js.native
@@ -27,11 +27,11 @@ trait TemplateLocals extends js.Object {
   /**
     * Underscore object
     */
-  def `_`[T](value: T): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  def `_`[T](value: T): underscoreLib.underscoreMod.Underscore[T] = js.native
   /**
     * Underscore object
     */
-  def `_`[T](value: js.Array[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  def `_`[T](value: js.Array[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
@@ -40,10 +40,10 @@ trait TemplateLocals extends js.Object {
   /**
     * Underscore object
     */
-  def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.Dictionary[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  def `_`[T](value: underscoreLib.underscoreMod.Dictionary[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
   /**
     * Underscore object
     */
-  def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.List[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  def `_`[T](value: underscoreLib.underscoreMod.List[T]): underscoreLib.underscoreMod.Underscore[T] = js.native
 }
 

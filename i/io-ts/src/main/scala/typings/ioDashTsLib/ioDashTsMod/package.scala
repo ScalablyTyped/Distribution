@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 package object ioDashTsMod {
   type Any = Type[js.Any, js.Any, js.Any]
   type AnyC = AnyType
+  type AnyProps = org.scalablytyped.runtime.StringDictionary[Any]
   type ArrayC[C /* <: Mixed */] = ArrayType[C, js.Array[TypeOf[C]], js.Array[OutputOf[C]], js.Any]
   type BooleanC = BooleanType
   type BrandC[C /* <: Any */, B] = RefinementType[C, Branded[TypeOf[C], B], OutputOf[C], InputOf[C]]
@@ -67,6 +68,7 @@ package object ioDashTsMod {
     */ ioDashTsLib.ioDashTsLibStrings.PartialC with P, 
     js.Any
   ]
+  type Props = org.scalablytyped.runtime.StringDictionary[Mixed]
   type PropsOf[T /* <: ioDashTsLib.Anon_Props */] = /* import warning: ImportType.apply Failed type conversion: T['props'] */ js.Any
   type ReadonlyArrayC[C /* <: Mixed */] = ReadonlyArrayType[C, js.Array[TypeOf[C]], js.Array[OutputOf[C]], js.Any]
   type ReadonlyC[C /* <: Mixed */] = ReadonlyType[

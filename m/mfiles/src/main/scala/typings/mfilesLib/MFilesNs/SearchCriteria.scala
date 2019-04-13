@@ -47,3 +47,8 @@ class SearchCriteria ()
   ): mfilesLib.ISearchConditions = js.native
 }
 
+@JSGlobal("MFiles.SearchCriteria")
+@js.native
+object SearchCriteria
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.ISearchCriteria]
+

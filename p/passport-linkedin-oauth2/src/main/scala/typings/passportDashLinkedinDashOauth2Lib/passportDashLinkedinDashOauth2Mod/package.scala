@@ -19,7 +19,7 @@ package object passportDashLinkedinDashOauth2Mod {
     scala.Unit
   ]
   type VerifyFunctionWithRequest = js.Function5[
-    /* req */ expressLib.expressMod.eNs.Request, 
+    /* req */ expressLib.expressMod.Request, 
     /* accessToken */ java.lang.String, 
     /* refreshToken */ java.lang.String, 
     /* profile */ Profile, 

@@ -19,7 +19,7 @@ class Options ()
       typedocLib.distLibUtilsOptionsDeclarationMod.OptionDeclaration | typedocLib.distLibUtilsOptionsDeclarationMod.DeclarationOption
     ]
   ): scala.Unit = js.native
-  def getCompilerOptions(): typescriptLib.typescriptMod.tsNs.CompilerOptions = js.native
+  def getCompilerOptions(): typescriptLib.typescriptMod.CompilerOptions = js.native
   def getDeclaration(name: java.lang.String): js.UndefOr[typedocLib.distLibUtilsOptionsDeclarationMod.OptionDeclaration] = js.native
   def getDeclarationsByScope(scope: typedocLib.distLibUtilsOptionsDeclarationMod.ParameterScope): js.Array[typedocLib.distLibUtilsOptionsDeclarationMod.OptionDeclaration] = js.native
   def getRawValues(): js.Any = js.native

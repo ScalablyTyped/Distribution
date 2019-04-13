@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elastic.js", "BoostFactorScoreFunction")
 @js.native
-class BoostFactorScoreFunction protected ()
-  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.BoostFactorScoreFunction {
+class BoostFactorScoreFunction protected () extends ScoreFunction {
   /*
     Multiply the score by the provided boost_factor.
     */
@@ -16,23 +15,19 @@ class BoostFactorScoreFunction protected ()
   /*
     The type of ejs object.  For internal use only.
     */
-  /* CompleteClass */
-  override def _type(): java.lang.String = js.native
+  def _type(): java.lang.String = js.native
   /*
     Sets the boost factor.
     */
-  /* CompleteClass */
-  override def boost(b: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.BoostFactorScoreFunction = js.native
+  def boost(b: scala.Double): BoostFactorScoreFunction = js.native
   /*
     Adds a filter whose matching documents will have the score function applied.
     */
-  /* CompleteClass */
-  override def filter(oFilter: elasticDotJsLib.elasticDotJsMod.elasticjsNs.Filter): elasticDotJsLib.elasticDotJsMod.elasticjsNs.BoostFactorScoreFunction = js.native
+  def filter(oFilter: Filter): BoostFactorScoreFunction = js.native
   /*
     Retrieves the internal agg object. This is typically used by
     internal API functions so use with caution.
     */
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  def toJSON(): js.Any = js.native
 }
 

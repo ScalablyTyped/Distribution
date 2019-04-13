@@ -22,14 +22,14 @@ object PropsType {
     onTabClick: (/* tab */ rmcDashTabsLib.libModelsMod.ModelsNs.TabData, /* index */ scala.Double) => scala.Unit = null,
     page: scala.Int | scala.Double = null,
     prefixCls: java.lang.String = null,
-    renderTab: /* tab */ rmcDashTabsLib.libModelsMod.ModelsNs.TabData => reactLib.reactMod.ReactNs.ReactNode = null,
-    renderUnderline: /* style */ reactLib.reactMod.ReactNs.CSSProperties | js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
+    renderTab: /* tab */ rmcDashTabsLib.libModelsMod.ModelsNs.TabData => reactLib.reactMod.ReactNode = null,
+    renderUnderline: /* style */ reactLib.reactMod.CSSProperties | js.Any => reactLib.reactMod.ReactNode = null,
     tabBarActiveTextColor: java.lang.String = null,
     tabBarBackgroundColor: java.lang.String = null,
     tabBarInactiveTextColor: java.lang.String = null,
     tabBarPosition: rmcDashTabsLib.rmcDashTabsLibStrings.top | rmcDashTabsLib.rmcDashTabsLibStrings.bottom | rmcDashTabsLib.rmcDashTabsLibStrings.left | rmcDashTabsLib.rmcDashTabsLibStrings.right = null,
-    tabBarTextStyle: reactLib.reactMod.ReactNs.CSSProperties | js.Any = null,
-    tabBarUnderlineStyle: reactLib.reactMod.ReactNs.CSSProperties | js.Any = null
+    tabBarTextStyle: reactLib.reactMod.CSSProperties | js.Any = null,
+    tabBarUnderlineStyle: reactLib.reactMod.CSSProperties | js.Any = null
   ): PropsType = {
     val __obj = js.Dynamic.literal(activeTab = activeTab, animated = animated, goToTab = js.Any.fromFunction1(goToTab), instanceId = instanceId, tabs = tabs)
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction2(onTabClick))

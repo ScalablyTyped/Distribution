@@ -18,7 +18,7 @@ trait Anon_ClassNames extends js.Object {
   var onExited: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onExiting: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOpened: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var tag: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
 }
 
 object Anon_ClassNames {
@@ -36,7 +36,7 @@ object Anon_ClassNames {
     onExited: () => scala.Unit = null,
     onExiting: () => scala.Unit = null,
     onOpened: () => scala.Unit = null,
-    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+    tag: reactLib.reactMod.ReactType[_] = null
   ): Anon_ClassNames = {
     val __obj = js.Dynamic.literal()
     if (classNames != null) __obj.updateDynamic("classNames")(classNames)

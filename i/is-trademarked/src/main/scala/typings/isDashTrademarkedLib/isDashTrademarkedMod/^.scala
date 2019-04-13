@@ -9,13 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(searchTerm: java.lang.String): js.Promise[
-    isDashTrademarkedLib.isDashTrademarkedLibNumbers.`false` | js.Array[isDashTrademarkedLib.isDashTrademarkedMod.isTrademarkedNs.TrademarkedData]
+    isDashTrademarkedLib.isDashTrademarkedLibNumbers.`false` | js.Array[TrademarkedData]
   ] = js.native
-  def apply(
-    searchTerm: java.lang.String,
-    opts: isDashTrademarkedLib.isDashTrademarkedMod.isTrademarkedNs.Options
-  ): js.Promise[
-    isDashTrademarkedLib.isDashTrademarkedLibNumbers.`false` | js.Array[isDashTrademarkedLib.isDashTrademarkedMod.isTrademarkedNs.TrademarkedData]
+  def apply(searchTerm: java.lang.String, opts: Options): js.Promise[
+    isDashTrademarkedLib.isDashTrademarkedLibNumbers.`false` | js.Array[TrademarkedData]
   ] = js.native
 }
 

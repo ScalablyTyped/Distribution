@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): scala.Unit = js.native
-  def apply(options: electronDashUnhandledLib.electronDashUnhandledMod.unhandledNs.Options): scala.Unit = js.native
+  def apply(options: Options): scala.Unit = js.native
 }
 

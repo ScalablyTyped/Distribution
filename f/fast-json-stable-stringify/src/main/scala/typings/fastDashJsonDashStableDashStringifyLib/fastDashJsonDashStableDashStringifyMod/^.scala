@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(obj: js.Any): java.lang.String = js.native
-  def apply(
-    obj: js.Any,
-    options: fastDashJsonDashStableDashStringifyLib.fastDashJsonDashStableDashStringifyMod.stringifyNs.Options | fastDashJsonDashStableDashStringifyLib.fastDashJsonDashStableDashStringifyMod.stringifyNs.Comparator
-  ): java.lang.String = js.native
+  def apply(obj: js.Any, options: Options | Comparator): java.lang.String = js.native
 }
 

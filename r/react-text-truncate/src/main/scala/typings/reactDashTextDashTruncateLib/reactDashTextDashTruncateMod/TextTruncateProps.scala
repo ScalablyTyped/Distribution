@@ -14,8 +14,8 @@ trait TextTruncateProps extends js.Object {
   var onToggled: js.UndefOr[js.Function1[/* truncated */ scala.Boolean, scala.Unit]] = js.undefined
   var onTruncated: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
-  var textElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var textTruncateChild: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var textElement: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var textTruncateChild: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var truncateText: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -30,8 +30,8 @@ object TextTruncateProps {
     onToggled: /* truncated */ scala.Boolean => scala.Unit = null,
     onTruncated: () => scala.Unit = null,
     text: java.lang.String = null,
-    textElement: reactLib.reactMod.ReactNs.ReactNode = null,
-    textTruncateChild: reactLib.reactMod.ReactNs.ReactNode = null,
+    textElement: reactLib.reactMod.ReactNode = null,
+    textTruncateChild: reactLib.reactMod.ReactNode = null,
     truncateText: java.lang.String = null
   ): TextTruncateProps = {
     val __obj = js.Dynamic.literal()

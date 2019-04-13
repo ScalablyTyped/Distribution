@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/RadioButton", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val RadioButton: reactLib.reactMod.ReactNs.ComponentClass[
-    RadioButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+  val RadioButton: reactLib.reactMod.ComponentClass[
+    RadioButtonProps with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
     ]), 
-    reactLib.reactMod.ReactNs.ComponentState
+    reactLib.reactMod.ComponentState
   ] = js.native
 }
 

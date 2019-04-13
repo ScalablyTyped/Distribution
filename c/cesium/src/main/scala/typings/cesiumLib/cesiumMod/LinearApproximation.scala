@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "LinearApproximation")
 @js.native
-class LinearApproximation ()
-  extends cesiumLib.cesiumMod.CesiumNs.LinearApproximation
+class LinearApproximation () extends InterpolationAlgorithm
 

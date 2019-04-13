@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reduxDashInfiniteDashScrollLibComponents {
   @scala.inline
-  def ReduxDashInfiniteDashScroll: reactLib.reactMod.ReactNs.ComponentType[
-    reduxDashInfiniteDashScrollLib.reduxDashInfiniteDashScrollMod.InfiniteScrollerProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]
-  ] = js.constructorOf[reduxDashInfiniteDashScrollLib.reduxDashInfiniteDashScrollMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reduxDashInfiniteDashScrollLib.reduxDashInfiniteDashScrollMod.InfiniteScrollerProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]]]
+  def ReduxDashInfiniteDashScroll: reactLib.reactMod.ComponentType[
+    reduxDashInfiniteDashScrollLib.reduxDashInfiniteDashScrollMod.InfiniteScrollerProps with reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]
+  ] = js.constructorOf[reduxDashInfiniteDashScrollLib.reduxDashInfiniteDashScrollMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
+  reduxDashInfiniteDashScrollLib.reduxDashInfiniteDashScrollMod.InfiniteScrollerProps with reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]]]
 }
 

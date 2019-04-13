@@ -19,3 +19,8 @@ class OwnerPropertyDef ()
   override val IsRelationFiltering: scala.Boolean = js.native
 }
 
+@JSGlobal("MFiles.OwnerPropertyDef")
+@js.native
+object OwnerPropertyDef
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IOwnerPropertyDef]
+

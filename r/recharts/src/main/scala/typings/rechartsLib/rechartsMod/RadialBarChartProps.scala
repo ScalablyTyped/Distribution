@@ -21,7 +21,7 @@ object RadialBarChartProps {
     barCategoryGap: scala.Double | java.lang.String = null,
     barGap: scala.Double | java.lang.String = null,
     barSize: scala.Double | java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode | js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    children: reactLib.reactMod.ReactNode | js.Array[reactLib.reactMod.ReactNode] = null,
     className: java.lang.String = null,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     cx: java.lang.String | scala.Double = null,

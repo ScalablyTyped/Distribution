@@ -7,227 +7,227 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsCoreLibComponents {
   @scala.inline
-  def Alert: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.IAlertProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Alert].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.IAlertProps]]
+  def Alert: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.IAlertProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Alert].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.IAlertProps]]
   @scala.inline
-  def AnchorButton: reactLib.reactMod.ReactNs.ComponentType[
-    atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.AnchorButton].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]]]
+  def AnchorButton: reactLib.reactMod.ComponentType[
+    atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.AnchorButton].asInstanceOf[reactLib.reactMod.ComponentType[
+  atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]]]
   @scala.inline
-  def Blockquote: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Blockquote.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]]]
+  def Blockquote: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Blockquote.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]]]
   @scala.inline
-  def Breadcrumb: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Breadcrumb.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps]]
+  def Breadcrumb: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Breadcrumb.asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps]]
   @scala.inline
-  def Breadcrumbs: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbsMod.IBreadcrumbsProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Breadcrumbs].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbsMod.IBreadcrumbsProps]]
+  def Breadcrumbs: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbsMod.IBreadcrumbsProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Breadcrumbs].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbsMod.IBreadcrumbsProps]]
   @scala.inline
-  def Button: reactLib.reactMod.ReactNs.ComponentType[
-    atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement]
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Button].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.ReactNs.ButtonHTMLAttributes[stdLib.HTMLButtonElement]]]
+  def Button: reactLib.reactMod.ComponentType[
+    atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement]
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Button].asInstanceOf[reactLib.reactMod.ComponentType[
+  atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps with reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement]]]
   @scala.inline
-  def ButtonGroup: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsButtonButtonGroupMod.IButtonGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ButtonGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsButtonButtonGroupMod.IButtonGroupProps]]
+  def ButtonGroup: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsButtonButtonGroupMod.IButtonGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ButtonGroup].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsButtonButtonGroupMod.IButtonGroupProps]]
   @scala.inline
-  def Callout: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCalloutCalloutMod.ICalloutProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Callout].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCalloutCalloutMod.ICalloutProps]]
+  def Callout: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCalloutCalloutMod.ICalloutProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Callout].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCalloutCalloutMod.ICalloutProps]]
   @scala.inline
-  def Card: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCardCardMod.ICardProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Card].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCardCardMod.ICardProps]]
+  def Card: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCardCardMod.ICardProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Card].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCardCardMod.ICardProps]]
   @scala.inline
-  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ICheckboxProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Checkbox].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ICheckboxProps]]
+  def Checkbox: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ICheckboxProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Checkbox].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ICheckboxProps]]
   @scala.inline
-  def Code: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Code.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]]]
+  def Code: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Code.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]]]
   @scala.inline
-  def Collapse: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.ICollapseProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Collapse].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.ICollapseProps]]
+  def Collapse: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.ICollapseProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Collapse].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.ICollapseProps]]
   @scala.inline
-  def CollapsibleList: reactLib.reactMod.ReactNs.ComponentType[
+  def CollapsibleList: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsCollapsibleDashListCollapsibleListMod.ICollapsibleListProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.CollapsibleList].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.CollapsibleList].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsCollapsibleDashListCollapsibleListMod.ICollapsibleListProps]]
   @scala.inline
-  def ControlGroup: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlGroupMod.IControlGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ControlGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlGroupMod.IControlGroupProps]]
+  def ControlGroup: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlGroupMod.IControlGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ControlGroup].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlGroupMod.IControlGroupProps]]
   @scala.inline
-  def Dialog: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDialogDialogMod.IDialogProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Dialog].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDialogDialogMod.IDialogProps]]
+  def Dialog: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDialogDialogMod.IDialogProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Dialog].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDialogDialogMod.IDialogProps]]
   @scala.inline
-  def Divider: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDividerDividerMod.IDividerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Divider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDividerDividerMod.IDividerProps]]
+  def Divider: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDividerDividerMod.IDividerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Divider].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDividerDividerMod.IDividerProps]]
   @scala.inline
-  def Drawer: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDrawerDrawerMod.IDrawerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Drawer].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDrawerDrawerMod.IDrawerProps]]
+  def Drawer: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDrawerDrawerMod.IDrawerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Drawer].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsDrawerDrawerMod.IDrawerProps]]
   @scala.inline
-  def EditableText: reactLib.reactMod.ReactNs.ComponentType[
+  def EditableText: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.EditableText].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.EditableText].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps]]
   @scala.inline
-  def Expander: reactLib.reactMod.ReactNs.ComponentType[js.Object] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Expander.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  def Expander: reactLib.reactMod.ComponentType[js.Object] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Expander.asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def FileInput: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFileInputMod.IFileInputProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.FileInput].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFileInputMod.IFileInputProps]]
+  def FileInput: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFileInputMod.IFileInputProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.FileInput].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFileInputMod.IFileInputProps]]
   @scala.inline
-  def FormGroup: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFormGroupMod.IFormGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.FormGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFormGroupMod.IFormGroupProps]]
+  def FormGroup: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFormGroupMod.IFormGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.FormGroup].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsFormGroupMod.IFormGroupProps]]
   @scala.inline
-  def H1: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H1.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
+  def H1: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H1.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
   @scala.inline
-  def H2: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H2.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
+  def H2: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H2.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
   @scala.inline
-  def H3: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H3.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
+  def H3: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H3.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
   @scala.inline
-  def H4: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H4.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
+  def H4: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H4.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
   @scala.inline
-  def H5: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H5.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
+  def H5: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H5.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
   @scala.inline
-  def H6: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H6.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
+  def H6: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.H6.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLHeadingElement]]]
   @scala.inline
-  def HTMLSelect: reactLib.reactMod.ReactNs.ComponentType[
+  def HTMLSelect: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsHtmlDashSelectHtmlSelectMod.IHTMLSelectProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.HTMLSelect].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.HTMLSelect].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsHtmlDashSelectHtmlSelectMod.IHTMLSelectProps]]
   @scala.inline
-  def HTMLTable: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.HTMLTable].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps]]
+  def HTMLTable: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.HTMLTable].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps]]
   @scala.inline
-  def Hotkey: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Hotkey].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps]]
+  def Hotkey: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Hotkey].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps]]
   @scala.inline
-  def Hotkeys: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Hotkeys].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps]]
+  def Hotkeys: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Hotkeys].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps]]
   @scala.inline
-  def Icon: reactLib.reactMod.ReactNs.ComponentType[
-    atBlueprintjsCoreLib.libEsmComponentsIconIconMod.IIconProps with reactLib.reactMod.ReactNs.DOMAttributes[stdLib.HTMLElement]
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Icon].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  atBlueprintjsCoreLib.libEsmComponentsIconIconMod.IIconProps with reactLib.reactMod.ReactNs.DOMAttributes[stdLib.HTMLElement]]]
+  def Icon: reactLib.reactMod.ComponentType[
+    atBlueprintjsCoreLib.libEsmComponentsIconIconMod.IIconProps with reactLib.reactMod.DOMAttributes[stdLib.HTMLElement]
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Icon].asInstanceOf[reactLib.reactMod.ComponentType[
+  atBlueprintjsCoreLib.libEsmComponentsIconIconMod.IIconProps with reactLib.reactMod.DOMAttributes[stdLib.HTMLElement]]]
   @scala.inline
-  def InputGroup: reactLib.reactMod.ReactNs.ComponentType[
+  def InputGroup: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsFormsInputGroupMod.IInputGroupProps with atBlueprintjsCoreLib.libEsmCommonPropsMod.HTMLInputProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.InputGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.InputGroup].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsFormsInputGroupMod.IInputGroupProps with atBlueprintjsCoreLib.libEsmCommonPropsMod.HTMLInputProps]]
   @scala.inline
-  def KeyCombo: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysKeyComboMod.IKeyComboProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.KeyCombo].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysKeyComboMod.IKeyComboProps]]
+  def KeyCombo: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysKeyComboMod.IKeyComboProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.KeyCombo].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysKeyComboMod.IKeyComboProps]]
   @scala.inline
-  def Label: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLLabelElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLLabelElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Label.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLLabelElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLLabelElement]]]
+  def Label: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLLabelElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLLabelElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Label.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLLabelElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLLabelElement]]]
   @scala.inline
-  def Menu: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuMod.IMenuProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Menu].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuMod.IMenuProps]]
+  def Menu: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuMod.IMenuProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Menu].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuMod.IMenuProps]]
   @scala.inline
-  def MenuDivider: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuDividerMod.IMenuDividerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.MenuDivider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuDividerMod.IMenuDividerProps]]
+  def MenuDivider: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuDividerMod.IMenuDividerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.MenuDivider].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsMenuMenuDividerMod.IMenuDividerProps]]
   @scala.inline
-  def MenuItem: reactLib.reactMod.ReactNs.ComponentType[
-    atBlueprintjsCoreLib.libEsmComponentsMenuMenuItemMod.IMenuItemProps with reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.MenuItem].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  atBlueprintjsCoreLib.libEsmComponentsMenuMenuItemMod.IMenuItemProps with reactLib.reactMod.ReactNs.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]]]
+  def MenuItem: reactLib.reactMod.ComponentType[
+    atBlueprintjsCoreLib.libEsmComponentsMenuMenuItemMod.IMenuItemProps with reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.MenuItem].asInstanceOf[reactLib.reactMod.ComponentType[
+  atBlueprintjsCoreLib.libEsmComponentsMenuMenuItemMod.IMenuItemProps with reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement]]]
   @scala.inline
-  def MultiSlider: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.MultiSlider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps]]
+  def MultiSlider: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.MultiSlider].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps]]
   @scala.inline
-  def Navbar: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarMod.INavbarProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Navbar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarMod.INavbarProps]]
+  def Navbar: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarMod.INavbarProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Navbar].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarMod.INavbarProps]]
   @scala.inline
-  def NavbarDivider: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarDividerMod.INavbarDividerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NavbarDivider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarDividerMod.INavbarDividerProps]]
+  def NavbarDivider: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarDividerMod.INavbarDividerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NavbarDivider].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarDividerMod.INavbarDividerProps]]
   @scala.inline
-  def NavbarGroup: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarGroupMod.INavbarGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NavbarGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarGroupMod.INavbarGroupProps]]
+  def NavbarGroup: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarGroupMod.INavbarGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NavbarGroup].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarGroupMod.INavbarGroupProps]]
   @scala.inline
-  def NavbarHeading: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarHeadingMod.INavbarHeadingProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NavbarHeading].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarHeadingMod.INavbarHeadingProps]]
+  def NavbarHeading: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarHeadingMod.INavbarHeadingProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NavbarHeading].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarHeadingMod.INavbarHeadingProps]]
   @scala.inline
-  def NonIdealState: reactLib.reactMod.ReactNs.ComponentType[
+  def NonIdealState: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsNonDashIdealDashStateNonIdealStateMod.INonIdealStateProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NonIdealState].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NonIdealState].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsNonDashIdealDashStateNonIdealStateMod.INonIdealStateProps]]
   @scala.inline
-  def NumericInput: reactLib.reactMod.ReactNs.ComponentType[
+  def NumericInput: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmCommonPropsMod.HTMLInputProps with atBlueprintjsCoreLib.libEsmComponentsFormsNumericInputMod.INumericInputProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NumericInput].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.NumericInput].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmCommonPropsMod.HTMLInputProps with atBlueprintjsCoreLib.libEsmComponentsFormsNumericInputMod.INumericInputProps]]
   @scala.inline
-  def OL: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLOListElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.OL.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLOListElement]]]
+  def OL: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLOListElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.OL.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLOListElement]]]
   @scala.inline
-  def OverflowList[T]: reactLib.reactMod.ReactNs.ComponentType[
+  def OverflowList[T]: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsOverflowDashListOverflowListMod.IOverflowListProps[T]
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.OverflowList[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.OverflowList[T]].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsOverflowDashListOverflowListMod.IOverflowListProps[T]]]
   @scala.inline
-  def Overlay: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsOverlayOverlayMod.IOverlayProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Overlay].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsOverlayOverlayMod.IOverlayProps]]
+  def Overlay: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsOverlayOverlayMod.IOverlayProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Overlay].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsOverlayOverlayMod.IOverlayProps]]
   @scala.inline
-  def PanelStack: reactLib.reactMod.ReactNs.ComponentType[
+  def PanelStack: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelStackMod.IPanelStackProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.PanelStack].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.PanelStack].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelStackMod.IPanelStackProps]]
   @scala.inline
-  def Popover: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Popover].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps]]
+  def Popover: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Popover].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps]]
   @scala.inline
-  def Portal: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPortalPortalMod.IPortalProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Portal].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPortalPortalMod.IPortalProps]]
+  def Portal: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPortalPortalMod.IPortalProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Portal].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsPortalPortalMod.IPortalProps]]
   @scala.inline
-  def Pre: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Pre.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]]]
+  def Pre: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.Pre.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLElement]]]
   @scala.inline
-  def ProgressBar: reactLib.reactMod.ReactNs.ComponentType[
+  def ProgressBar: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsProgressDashBarProgressBarMod.IProgressBarProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ProgressBar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ProgressBar].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsProgressDashBarProgressBarMod.IProgressBarProps]]
   @scala.inline
-  def Radio: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.IRadioProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Radio].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.IRadioProps]]
+  def Radio: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.IRadioProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Radio].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.IRadioProps]]
   @scala.inline
-  def RadioGroup: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsRadioGroupMod.IRadioGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.RadioGroup].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsRadioGroupMod.IRadioGroupProps]]
+  def RadioGroup: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsRadioGroupMod.IRadioGroupProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.RadioGroup].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsRadioGroupMod.IRadioGroupProps]]
   @scala.inline
-  def RangeSlider: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderRangeSliderMod.IRangeSliderProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.RangeSlider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderRangeSliderMod.IRangeSliderProps]]
+  def RangeSlider: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderRangeSliderMod.IRangeSliderProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.RangeSlider].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderRangeSliderMod.IRangeSliderProps]]
   @scala.inline
-  def ResizeSensor: reactLib.reactMod.ReactNs.ComponentType[
+  def ResizeSensor: reactLib.reactMod.ComponentType[
     atBlueprintjsCoreLib.libEsmComponentsResizeDashSensorResizeSensorMod.IResizeSensorProps
-  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ResizeSensor].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.ResizeSensor].asInstanceOf[reactLib.reactMod.ComponentType[
   atBlueprintjsCoreLib.libEsmComponentsResizeDashSensorResizeSensorMod.IResizeSensorProps]]
   @scala.inline
-  def Slider: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderSliderMod.ISliderProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Slider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderSliderMod.ISliderProps]]
+  def Slider: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderSliderMod.ISliderProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Slider].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderSliderMod.ISliderProps]]
   @scala.inline
-  def Spinner: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSpinnerSpinnerMod.ISpinnerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Spinner].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSpinnerSpinnerMod.ISpinnerProps]]
+  def Spinner: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSpinnerSpinnerMod.ISpinnerProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Spinner].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSpinnerSpinnerMod.ISpinnerProps]]
   @scala.inline
-  def Switch: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ISwitchProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Switch].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ISwitchProps]]
+  def Switch: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ISwitchProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Switch].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.ISwitchProps]]
   @scala.inline
-  def Tab: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.ITabProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tab].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.ITabProps]]
+  def Tab: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.ITabProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tab].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.ITabProps]]
   @scala.inline
-  def Tabs: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabsMod.ITabsProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tabs].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabsMod.ITabsProps]]
+  def Tabs: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabsMod.ITabsProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tabs].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTabsTabsMod.ITabsProps]]
   @scala.inline
-  def Tag: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tag].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps]]
+  def Tag: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tag].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps]]
   @scala.inline
-  def TagInput: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.ITagInputProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.TagInput].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.ITagInputProps]]
+  def TagInput: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.ITagInputProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.TagInput].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.ITagInputProps]]
   @scala.inline
-  def Text: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTextTextMod.ITextProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Text].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTextTextMod.ITextProps]]
+  def Text: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTextTextMod.ITextProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Text].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTextTextMod.ITextProps]]
   @scala.inline
-  def TextArea: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsTextAreaMod.ITextAreaProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.TextArea].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsTextAreaMod.ITextAreaProps]]
+  def TextArea: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsTextAreaMod.ITextAreaProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.TextArea].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsFormsTextAreaMod.ITextAreaProps]]
   @scala.inline
-  def Toast: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToastMod.IToastProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Toast].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToastMod.IToastProps]]
+  def Toast: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToastMod.IToastProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Toast].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToastMod.IToastProps]]
   @scala.inline
-  def Toaster: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Toaster].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps]]
+  def Toaster: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Toaster].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps]]
   @scala.inline
-  def Tooltip: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTooltipTooltipMod.ITooltipProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tooltip].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTooltipTooltipMod.ITooltipProps]]
+  def Tooltip: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTooltipTooltipMod.ITooltipProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tooltip].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTooltipTooltipMod.ITooltipProps]]
   @scala.inline
-  def Tree[T]: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeMod.ITreeProps[T]] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tree[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeMod.ITreeProps[T]]]
+  def Tree[T]: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeMod.ITreeProps[T]] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Tree[T]].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeMod.ITreeProps[T]]]
   @scala.inline
-  def TreeNode[T]: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps[T]] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.TreeNode[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps[T]]]
+  def TreeNode[T]: reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps[T]] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.TreeNode[T]].asInstanceOf[reactLib.reactMod.ComponentType[atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps[T]]]
   @scala.inline
-  def UL: reactLib.reactMod.ReactNs.ComponentType[
-    reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLUListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLUListElement]
-  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.UL.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLUListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLUListElement]]]
+  def UL: reactLib.reactMod.ComponentType[
+    reactLib.reactMod.HTMLProps[stdLib.HTMLUListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLUListElement]
+  ] = atBlueprintjsCoreLib.libEsmComponentsMod.^.UL.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactLib.reactMod.HTMLProps[stdLib.HTMLUListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[stdLib.HTMLUListElement]]]
   @scala.inline
   def IAlertProps: atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.IAlertProps.type = atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.IAlertProps
   type IAlertProps = atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.IAlertProps

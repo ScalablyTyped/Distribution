@@ -25,13 +25,13 @@ trait DraggableProps extends js.Object {
   var subscribeTo: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
   /** A string, or array of strings, used to limit which droppable zones will accept <DragComponent/>'s attached to this draggable. */
   var `type`: js.UndefOr[Type] = js.undefined
-  def children(arg: State with reactDashDragtasticLib.Anon_Events): reactLib.reactMod.ReactNs.ReactNode
+  def children(arg: State with reactDashDragtasticLib.Anon_Events): reactLib.reactMod.ReactNode
 }
 
 object DraggableProps {
   @scala.inline
   def apply(
-    children: State with reactDashDragtasticLib.Anon_Events => reactLib.reactMod.ReactNs.ReactNode,
+    children: State with reactDashDragtasticLib.Anon_Events => reactLib.reactMod.ReactNode,
     data: js.Any = null,
     delay: scala.Int | scala.Double = null,
     id: Id = null,

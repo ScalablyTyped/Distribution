@@ -959,11 +959,6 @@ object wxNs extends js.Object {
     var urls: js.Array[java.lang.String]
   }
   
-  //  网络
-  //  发起请求
-  trait RequestHeader
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  
   trait RequestOptions extends js.Object {
     /** 接口调用结束的回调函数（调用成功、失败都会执行） */
     var complete: js.UndefOr[ResponseCallback] = js.undefined
@@ -1803,6 +1798,9 @@ object wxNs extends js.Object {
   type NoneParamCallback = js.Function0[scala.Unit]
   type OneParamCallback = js.Function1[/* data */ js.Any, scala.Unit]
   type PaymentSignType = weappDashApiLib.weappDashApiLibStrings.MD5
+  //  网络
+  //  发起请求
+  type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type ResponseCallback = js.Function1[/* res */ js.Any, scala.Unit]
   type StorageInfoCallback = js.Function1[/* res */ StorageInfoOptions, scala.Unit]
   type TempFileResponseCallback = js.Function1[/* res */ TempFileResponse, scala.Unit]

@@ -16,9 +16,9 @@ class PhotoSizeSelectSmallOutlined protected ()
 @JSImport("@material-ui/icons", "PhotoSizeSelectSmallOutlined")
 @js.native
 class PhotoSizeSelectSmallOutlinedCls protected ()
-  extends reactLib.reactMod.ReactNs.Component[
+  extends reactLib.reactMod.Component[
       atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
-      reactLib.reactMod.ReactNs.ComponentState, 
+      reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()

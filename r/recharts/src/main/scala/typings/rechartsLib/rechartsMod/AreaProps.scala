@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   extends EventAttributes
      with Animatable {
   var activeDot: js.UndefOr[
-    scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_]
+    scala.Boolean | js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[_]
   ] = js.undefined
   var baseLine: js.UndefOr[scala.Double | js.Array[_]] = js.undefined
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
@@ -18,12 +18,12 @@ import scala.scalajs.js.annotation._
   var connectNulls: js.UndefOr[scala.Boolean] = js.undefined
   var dataKey: DataKey
   var dot: js.UndefOr[
-    scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[DotProps]
+    scala.Boolean | js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[DotProps]
   ] = js.undefined
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   var isRange: js.UndefOr[scala.Boolean] = js.undefined
   var label: js.UndefOr[
-    scala.Boolean | js.Object | ContentRenderer[_] | reactLib.reactMod.ReactNs.ReactElement[_]
+    scala.Boolean | js.Object | ContentRenderer[_] | reactLib.reactMod.ReactElement[_]
   ] = js.undefined
   var layout: js.UndefOr[LayoutType] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
@@ -42,7 +42,7 @@ object AreaProps {
   @scala.inline
   def apply(
     dataKey: DataKey,
-    activeDot: scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] = null,
+    activeDot: scala.Boolean | js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[_] = null,
     animationBegin: scala.Int | scala.Double = null,
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: AnimationEasingType = null,
@@ -50,12 +50,12 @@ object AreaProps {
     baseLine: scala.Double | js.Array[_] = null,
     className: java.lang.String = null,
     connectNulls: js.UndefOr[scala.Boolean] = js.undefined,
-    dot: scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[DotProps] = null,
+    dot: scala.Boolean | js.Object | reactLib.reactMod.ReactElement[_] | ContentRenderer[DotProps] = null,
     hide: js.UndefOr[scala.Boolean] = js.undefined,
     isAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     isRange: js.UndefOr[scala.Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
-    label: scala.Boolean | js.Object | ContentRenderer[_] | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    label: scala.Boolean | js.Object | ContentRenderer[_] | reactLib.reactMod.ReactElement[_] = null,
     layout: LayoutType = null,
     legendType: LegendType = null,
     name: java.lang.String | scala.Double = null,

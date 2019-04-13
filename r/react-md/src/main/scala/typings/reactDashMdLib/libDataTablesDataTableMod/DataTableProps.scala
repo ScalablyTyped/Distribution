@@ -10,35 +10,35 @@ trait DataTableProps
   var baseId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var checkboxHeaderLabel: js.UndefOr[java.lang.String] = js.undefined
   var checkboxLabelTemplate: js.UndefOr[java.lang.String | template] = js.undefined
-  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var checkedIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var checkedIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
   var checkedIconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var defaultSelectedRows: js.UndefOr[js.Array[scala.Boolean]] = js.undefined
   var fixedDividers: js.UndefOr[scala.Boolean | reactDashMdLib.Anon_Footer] = js.undefined
   var fixedFooter: js.UndefOr[scala.Boolean] = js.undefined
   var fixedHeader: js.UndefOr[scala.Boolean] = js.undefined
   var fixedHeight: js.UndefOr[scala.Double] = js.undefined
   var fixedScrollWrapperClassName: js.UndefOr[java.lang.String] = js.undefined
-  var fixedScrollWrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var fixedScrollWrapperStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var fixedWidth: js.UndefOr[scala.Double] = js.undefined
   var fixedWrapperClassName: js.UndefOr[java.lang.String] = js.undefined
-  var fixedWrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var fixedWrapperStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var footerHeight: js.UndefOr[scala.Double] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var headerHeight: js.UndefOr[scala.Double] = js.undefined
   var indeterminate: js.UndefOr[scala.Boolean] = js.undefined
-  var indeterminateIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var indeterminateIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var indeterminateIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var indeterminateIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -48,7 +48,7 @@ trait DataTableProps
       /* rowId */ scala.Double, 
       /* checked */ scala.Boolean, 
       /* selectedCount */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -56,12 +56,12 @@ trait DataTableProps
   var responsive: js.UndefOr[scala.Boolean] = js.undefined
   var selectableRows: js.UndefOr[scala.Boolean] = js.undefined
   var tableClassName: js.UndefOr[java.lang.String] = js.undefined
-  var tableStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var tableStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
-  var uncheckedIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var uncheckedIconChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /**
     * @deprecated
     */
@@ -74,10 +74,10 @@ object DataTableProps {
     baseId: reactDashMdLib.libMod.IdPropType = null,
     checkboxHeaderLabel: java.lang.String = null,
     checkboxLabelTemplate: java.lang.String | template = null,
-    checkedIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    checkedIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    checkedIcon: reactLib.reactMod.ReactElement[_] = null,
+    checkedIconChildren: reactLib.reactMod.ReactNode = null,
     checkedIconClassName: java.lang.String = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultSelectedRows: js.Array[scala.Boolean] = null,
     fixedDividers: scala.Boolean | reactDashMdLib.Anon_Footer = null,
@@ -85,50 +85,50 @@ object DataTableProps {
     fixedHeader: js.UndefOr[scala.Boolean] = js.undefined,
     fixedHeight: scala.Int | scala.Double = null,
     fixedScrollWrapperClassName: java.lang.String = null,
-    fixedScrollWrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    fixedScrollWrapperStyle: reactLib.reactMod.CSSProperties = null,
     fixedWidth: scala.Int | scala.Double = null,
     fixedWrapperClassName: java.lang.String = null,
-    fixedWrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    fixedWrapperStyle: reactLib.reactMod.CSSProperties = null,
     footerHeight: scala.Int | scala.Double = null,
     fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
     headerHeight: scala.Int | scala.Double = null,
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
-    indeterminateIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    indeterminateIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    indeterminateIcon: reactLib.reactMod.ReactElement[_] = null,
+    indeterminateIconChildren: reactLib.reactMod.ReactNode = null,
     indeterminateIconClassName: java.lang.String = null,
-    onBlur: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onClick: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onDrag: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnd: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragEnter: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragExit: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragLeave: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragOver: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDragStart: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onDrop: /* event */ reactLib.reactMod.ReactNs.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onFocus: /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onKeyUp: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onMouseDown: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseEnter: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseLeave: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOut: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseOver: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onMouseUp: /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
-    onRowToggle: (/* rowId */ scala.Double, /* checked */ scala.Boolean, /* selectedCount */ scala.Double, /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
-    onTouchCancel: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchEnd: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
-    onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnd: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragEnter: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragExit: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragLeave: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragOver: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDragStart: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onDrop: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onFocus: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onKeyUp: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onMouseDown: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseEnter: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseLeave: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseMove: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOut: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseOver: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onMouseUp: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onRowToggle: (/* rowId */ scala.Double, /* checked */ scala.Boolean, /* selectedCount */ scala.Double, /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onTouchCancel: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchEnd: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchMove: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
+    onTouchStart: /* event */ reactLib.reactMod.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     selectableRows: js.UndefOr[scala.Boolean] = js.undefined,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.CSSProperties = null,
     tableClassName: java.lang.String = null,
-    tableStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
-    uncheckedIcon: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    uncheckedIconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
+    tableStyle: reactLib.reactMod.CSSProperties = null,
+    uncheckedIcon: reactLib.reactMod.ReactElement[_] = null,
+    uncheckedIconChildren: reactLib.reactMod.ReactNode = null,
     uncheckedIconClassName: java.lang.String = null
   ): DataTableProps = {
     val __obj = js.Dynamic.literal()

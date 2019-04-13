@@ -21,12 +21,13 @@ class PatternCls[T] protected () extends Pattern[T] {
   override def test(str: java.lang.String): scala.Boolean = js.native
 }
 
-object Pattern {
-  @scala.inline
-  def apply[T](`match`: java.lang.String => T, test: java.lang.String => scala.Boolean): Pattern[T] = {
-    val __obj = js.Dynamic.literal(test = js.Any.fromFunction1(test))
-    __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
-    __obj.asInstanceOf[Pattern[T]]
-  }
-}
+@JSImport("hexo-util", "Pattern")
+@js.native
+object Pattern
+  extends org.scalablytyped.runtime.Instantiable1[
+      (/* rule */ js.Function1[/* str */ java.lang.String, js.Object]) | (/* rule */ Pattern[js.Object]) | (/* rule */ stdLib.RegExp) | (/* rule */ java.lang.String), 
+      Pattern[js.Object] | (Pattern[stdLib.RegExpMatchArray | scala.Null]) | (Pattern[
+        hexoDashUtilLib.Anon_0 with js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]
+      ])
+    ]
 

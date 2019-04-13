@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashReadDashMoreDashTextLibComponents {
   @scala.inline
-  def ReactDashNativeDashReadDashMoreDashText: reactLib.reactMod.ReactNs.ComponentType[
+  def ReactDashNativeDashReadDashMoreDashText: reactLib.reactMod.ComponentType[
     reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps
-  ] = js.constructorOf[reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps]]
   @scala.inline
   def ReadMoreProps: reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps.type = reactDashNativeDashReadDashMoreDashTextLib.reactDashNativeDashReadDashMoreDashTextMod.ReadMoreProps

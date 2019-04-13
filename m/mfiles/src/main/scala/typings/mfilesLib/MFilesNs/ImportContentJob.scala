@@ -41,3 +41,8 @@ class ImportContentJob ()
   override def Clone(): mfilesLib.IImportContentJob = js.native
 }
 
+@JSGlobal("MFiles.ImportContentJob")
+@js.native
+object ImportContentJob
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IImportContentJob]
+

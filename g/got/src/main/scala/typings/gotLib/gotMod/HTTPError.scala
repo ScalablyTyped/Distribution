@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait HTTPError
   extends StdError
-     with gotLib.gotMod.gotNs.GotError {
+     with GotError {
   var body: nodeLib.Buffer | java.lang.String | js.Object
   var headers: nodeLib.httpMod.IncomingHttpHeaders
   @JSName("name")

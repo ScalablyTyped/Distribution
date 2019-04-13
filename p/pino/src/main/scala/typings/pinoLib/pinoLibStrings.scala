@@ -8,34 +8,34 @@ import scala.scalajs.js.annotation._
 object pinoLibStrings {
   @js.native
   sealed trait debug
-    extends pinoLib.pinoMod.PNs.Level
+    extends pinoLib.pinoMod.Level
   
   @js.native
   sealed trait error
-    extends pinoLib.pinoMod.PNs.Level
+    extends pinoLib.pinoMod.Level
   
   @js.native
   sealed trait fatal
-    extends pinoLib.pinoMod.PNs.Level
+    extends pinoLib.pinoMod.Level
   
   @js.native
   sealed trait info
-    extends pinoLib.pinoMod.PNs.Level
+    extends pinoLib.pinoMod.Level
   
   @js.native
   sealed trait `level-change` extends js.Object
   
   @js.native
   sealed trait silent
-    extends pinoLib.pinoMod.PNs.LevelWithSilent
+    extends pinoLib.pinoMod.LevelWithSilent
   
   @js.native
   sealed trait trace
-    extends pinoLib.pinoMod.PNs.Level
+    extends pinoLib.pinoMod.Level
   
   @js.native
   sealed trait warn
-    extends pinoLib.pinoMod.PNs.Level
+    extends pinoLib.pinoMod.Level
   
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]

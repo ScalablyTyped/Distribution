@@ -40,17 +40,17 @@ trait ColumnProps extends js.Object {
     */
   var headerRenderer: js.UndefOr[TableHeaderRenderer] = js.undefined
   /** Optional inline style to apply to this column's header */
-  var headerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var headerStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** Optional id to set on the column header; used for aria-describedby */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Header label for this column */
-  var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   /** Maximum width of column; this property will only be used if :flexGrow is > 0. */
   var maxWidth: js.UndefOr[scala.Double] = js.undefined
   /** Minimum width of column. */
   var minWidth: js.UndefOr[scala.Double] = js.undefined
   /** Optional inline style to apply to cell */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /** Flex basis (width) for this column; This value can grow or shrink based on :flexGrow and :flexShrink properties. */
   var width: scala.Double
 }
@@ -71,12 +71,12 @@ object ColumnProps {
     flexShrink: scala.Int | scala.Double = null,
     headerClassName: java.lang.String = null,
     headerRenderer: TableHeaderRenderer = null,
-    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    headerStyle: reactLib.reactMod.CSSProperties = null,
     id: java.lang.String = null,
-    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    label: reactLib.reactMod.ReactNode = null,
     maxWidth: scala.Int | scala.Double = null,
     minWidth: scala.Int | scala.Double = null,
-    style: reactLib.reactMod.ReactNs.CSSProperties = null
+    style: reactLib.reactMod.CSSProperties = null
   ): ColumnProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey, width = width)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)

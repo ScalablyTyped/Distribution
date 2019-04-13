@@ -14,7 +14,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: java.lang.String, defaultTheme: js.Object): js.Function1[
@@ -22,7 +22,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: java.lang.String, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
@@ -30,7 +30,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: js.Symbol): js.Function1[
@@ -38,7 +38,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: js.Symbol, defaultTheme: js.Object): js.Function1[
@@ -46,7 +46,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: js.Symbol, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
@@ -54,7 +54,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: scala.Double): js.Function1[
@@ -62,7 +62,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: scala.Double, defaultTheme: js.Object): js.Function1[
@@ -70,7 +70,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
   def themr(identifier: scala.Double, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
@@ -78,7 +78,7 @@ object ^ extends js.Object {
       /* props */ js.UndefOr[/* props */ js.Any], 
       /* context */ js.UndefOr[/* context */ js.Any], 
       reactLib.reactMod.Component[js.Any, js.Any, js.Any]
-    ]) | reactLib.reactMod.ReactNs.SFC[_], 
+    ]) | reactLib.reactMod.SFC[_], 
     ThemedComponentClass[js.Any with reactDashCssDashThemrLib.Anon_MapThemrProps[_], _]
   ] = js.native
 }

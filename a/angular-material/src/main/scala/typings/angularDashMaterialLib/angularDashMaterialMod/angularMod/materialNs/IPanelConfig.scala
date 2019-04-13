@@ -12,7 +12,7 @@ trait IPanelConfig extends js.Object {
   var bindToController: js.UndefOr[scala.Boolean] = js.undefined
   var clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined
   var controller: js.UndefOr[
-    java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor]
+    java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor]
   ] = js.undefined
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined
    // default: false
@@ -53,7 +53,7 @@ object IPanelConfig {
     attachTo: java.lang.String | angularLib.JQuery | stdLib.Element = null,
     bindToController: js.UndefOr[scala.Boolean] = js.undefined,
     clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined,
-    controller: java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor] = null,
+    controller: java.lang.String | angularLib.angularMod.Injectable[angularLib.angularMod.IControllerConstructor] = null,
     controllerAs: java.lang.String = null,
     disableParentScroll: js.UndefOr[scala.Boolean] = js.undefined,
     escapeToClose: js.UndefOr[scala.Boolean] = js.undefined,

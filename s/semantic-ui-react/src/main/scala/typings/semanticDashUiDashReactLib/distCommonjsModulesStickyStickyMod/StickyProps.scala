@@ -16,16 +16,16 @@ object StickyProps {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     as: js.Any = null,
     bottomOffset: scala.Int | scala.Double = null,
-    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    context: js.Object | reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement] = null,
+    context: js.Object | reactLib.reactMod.Ref[stdLib.HTMLElement] = null,
     offset: scala.Int | scala.Double = null,
-    onBottom: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
-    onStick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
-    onTop: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
-    onUnstick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onBottom: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onStick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onTop: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
+    onUnstick: (/* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ StickyProps) => scala.Unit = null,
     pushing: js.UndefOr[scala.Boolean] = js.undefined,
-    scrollContext: js.Object | reactLib.reactMod.ReactNs.Ref[stdLib.HTMLElement] = null,
+    scrollContext: js.Object | reactLib.reactMod.Ref[stdLib.HTMLElement] = null,
     styleElement: js.Object = null
   ): StickyProps = {
     val __obj = js.Dynamic.literal()

@@ -16,7 +16,7 @@ trait Cookies extends js.Object {
     * its value is returned. Otherwise, nothing is returned.
     */
   def get(name: java.lang.String): java.lang.String = js.native
-  def get(name: java.lang.String, opts: cookiesLib.cookiesMod.CookiesNs.GetOption): java.lang.String = js.native
+  def get(name: java.lang.String, opts: GetOption): java.lang.String = js.native
   /**
     * This sets the given cookie in the response and returns
     * the current context to allow chaining.If the value is omitted,
@@ -24,6 +24,6 @@ trait Cookies extends js.Object {
     */
   def set(name: java.lang.String): this.type = js.native
   def set(name: java.lang.String, value: java.lang.String): this.type = js.native
-  def set(name: java.lang.String, value: java.lang.String, opts: cookiesLib.cookiesMod.CookiesNs.SetOption): this.type = js.native
+  def set(name: java.lang.String, value: java.lang.String, opts: SetOption): this.type = js.native
 }
 

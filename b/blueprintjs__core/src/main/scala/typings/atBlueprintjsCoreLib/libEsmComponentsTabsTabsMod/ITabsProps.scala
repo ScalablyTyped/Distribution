@@ -37,7 +37,7 @@ trait ITabsProps
     js.Function3[
       /* newTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, 
       /* prevTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -69,7 +69,7 @@ object ITabsProps {
     className: java.lang.String = null,
     defaultSelectedTabId: atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: (/* newTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, /* prevTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, /* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
+    onChange: (/* newTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, /* prevTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]) => scala.Unit = null,
     renderActiveTabPanelOnly: js.UndefOr[scala.Boolean] = js.undefined,
     selectedTabId: atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined

@@ -21,3 +21,8 @@ class FolderListingUIState ()
   override var ViewMode: MFFolderListingViewMode = js.native
 }
 
+@JSGlobal("MFiles.FolderListingUIState")
+@js.native
+object FolderListingUIState
+  extends org.scalablytyped.runtime.Instantiable0[mfilesLib.IFolderListingUIState]
+

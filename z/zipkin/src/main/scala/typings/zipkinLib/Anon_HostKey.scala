@@ -10,14 +10,14 @@ trait Anon_HostKey extends js.Object {
   var port: scala.Double
   var serverTags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var serviceName: js.UndefOr[java.lang.String] = js.undefined
-  var tracer: zipkinLib.zipkinMod.zipkinNs.Tracer
+  var tracer: zipkinLib.zipkinMod.Tracer
 }
 
 object Anon_HostKey {
   @scala.inline
   def apply(
     port: scala.Double,
-    tracer: zipkinLib.zipkinMod.zipkinNs.Tracer,
+    tracer: zipkinLib.zipkinMod.Tracer,
     host: java.lang.String = null,
     serverTags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     serviceName: java.lang.String = null

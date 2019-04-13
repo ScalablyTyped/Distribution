@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "PolylineOutlineMaterialProperty")
 @js.native
-class PolylineOutlineMaterialProperty ()
-  extends cesiumLib.cesiumMod.CesiumNs.PolylineOutlineMaterialProperty {
+class PolylineOutlineMaterialProperty () extends MaterialProperty {
   def this(options: cesiumLib.Anon_ColorOutlineColor) = this()
+  var color: Color = js.native
+  var outlineColor: Color = js.native
+  var outlineWidth: Property = js.native
 }
 
