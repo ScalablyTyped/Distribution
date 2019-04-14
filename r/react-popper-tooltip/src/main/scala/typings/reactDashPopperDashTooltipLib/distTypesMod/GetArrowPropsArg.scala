@@ -5,21 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IGetArrowPropsArg
+trait GetArrowPropsArg
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
 }
 
-object IGetArrowPropsArg {
+object GetArrowPropsArg {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     style: reactLib.reactMod.CSSProperties = null
-  ): IGetArrowPropsArg = {
+  ): GetArrowPropsArg = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (style != null) __obj.updateDynamic("style")(style)
-    __obj.asInstanceOf[IGetArrowPropsArg]
+    __obj.asInstanceOf[GetArrowPropsArg]
   }
 }
 

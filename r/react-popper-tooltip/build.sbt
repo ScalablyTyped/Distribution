@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-popper-tooltip"
-version := "2.8.1-bc1b06"
+version := "2.8.2-bcc945"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IGetTriggerPropsArg
+trait GetTriggerPropsArg
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var onClick: js.UndefOr[
     js.Function1[
@@ -45,7 +45,7 @@ trait IGetTriggerPropsArg
   ] = js.undefined
 }
 
-object IGetTriggerPropsArg {
+object GetTriggerPropsArg {
   @scala.inline
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
@@ -55,7 +55,7 @@ object IGetTriggerPropsArg {
     onMouseLeave: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
     onMouseMove: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null,
     onTouchEnd: /* event */ reactLib.reactMod.SyntheticEvent[reactLib.Element, reactLib.Event] => scala.Unit = null
-  ): IGetTriggerPropsArg = {
+  ): GetTriggerPropsArg = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
@@ -64,7 +64,7 @@ object IGetTriggerPropsArg {
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    __obj.asInstanceOf[IGetTriggerPropsArg]
+    __obj.asInstanceOf[GetTriggerPropsArg]
   }
 }
 

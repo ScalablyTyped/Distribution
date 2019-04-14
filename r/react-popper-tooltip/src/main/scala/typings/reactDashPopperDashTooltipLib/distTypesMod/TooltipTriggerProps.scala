@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITooltipTriggerProps extends js.Object {
+trait TooltipTriggerProps extends js.Object {
   /**
     * Whether to close the tooltip when it's trigger is out of the boundary
     * @default true
@@ -72,7 +72,7 @@ trait ITooltipTriggerProps extends js.Object {
   /**
     * Trigger
     */
-  def children(arg: IChildrenArg): reactLib.reactMod.ReactNode
+  def children(arg: ChildrenArg): reactLib.reactMod.ReactNode
   /**
     * Called when the visibility of the tooltip changes
     * @default no-op
@@ -81,13 +81,13 @@ trait ITooltipTriggerProps extends js.Object {
   /**
     * Tooltip
     */
-  def tooltip(arg: ITooltipArg): reactLib.reactMod.ReactNode
+  def tooltip(arg: TooltipArg): reactLib.reactMod.ReactNode
 }
 
-object ITooltipTriggerProps {
+object TooltipTriggerProps {
   @scala.inline
   def apply(
-    children: IChildrenArg => reactLib.reactMod.ReactNode,
+    children: ChildrenArg => reactLib.reactMod.ReactNode,
     closeOnOutOfBoundaries: scala.Boolean,
     defaultTooltipShown: scala.Boolean,
     delayHide: scala.Double,
@@ -96,20 +96,20 @@ object ITooltipTriggerProps {
     onVisibilityChange: scala.Boolean => scala.Unit,
     placement: popperDotJsLib.popperDotJsMod.PopperNs.Placement,
     portalContainer: stdLib.HTMLElement,
-    tooltip: ITooltipArg => reactLib.reactMod.ReactNode,
+    tooltip: TooltipArg => reactLib.reactMod.ReactNode,
     trigger: reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.none | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.click | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.`right-click` | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.hover,
     usePortal: scala.Boolean,
     getTooltipRef: reactDashPopperLib.RefHandler = null,
     getTriggerRef: reactDashPopperLib.RefHandler = null,
     modifiers: popperDotJsLib.popperDotJsMod.PopperNs.Modifiers = null,
     tooltipShown: js.UndefOr[scala.Boolean] = js.undefined
-  ): ITooltipTriggerProps = {
+  ): TooltipTriggerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement, portalContainer = portalContainer, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal)
     if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(getTooltipRef)
     if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(getTriggerRef)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (!js.isUndefined(tooltipShown)) __obj.updateDynamic("tooltipShown")(tooltipShown)
-    __obj.asInstanceOf[ITooltipTriggerProps]
+    __obj.asInstanceOf[TooltipTriggerProps]
   }
 }
 

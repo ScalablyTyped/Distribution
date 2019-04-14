@@ -29,6 +29,7 @@ object PaginationConfig {
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
     selectPrefixCls: java.lang.String = null,
+    showLessItems: js.UndefOr[scala.Boolean] = js.undefined,
     showQuickJumper: scala.Boolean | antdLib.Anon_GoButton = null,
     showSizeChanger: js.UndefOr[scala.Boolean] = js.undefined,
     showTotal: (/* total */ scala.Double, /* range */ js.Tuple2[scala.Double, scala.Double]) => reactLib.reactMod.ReactNode = null,
@@ -53,6 +54,7 @@ object PaginationConfig {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (role != null) __obj.updateDynamic("role")(role)
     if (selectPrefixCls != null) __obj.updateDynamic("selectPrefixCls")(selectPrefixCls)
+    if (!js.isUndefined(showLessItems)) __obj.updateDynamic("showLessItems")(showLessItems)
     if (showQuickJumper != null) __obj.updateDynamic("showQuickJumper")(showQuickJumper.asInstanceOf[js.Any])
     if (!js.isUndefined(showSizeChanger)) __obj.updateDynamic("showSizeChanger")(showSizeChanger)
     if (showTotal != null) __obj.updateDynamic("showTotal")(js.Any.fromFunction2(showTotal))

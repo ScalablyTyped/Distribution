@@ -21,7 +21,7 @@ trait FormItem
   def getValidateStatus(): antdLib.antdLibStrings.error | antdLib.antdLibStrings.Empty | antdLib.antdLibStrings.success | antdLib.antdLibStrings.validating = js.native
   def isRequired(): js.Any = js.native
   def onHelpAnimEnd(_key: java.lang.String, helpShow: scala.Boolean): scala.Unit = js.native
-  def onLabelClick(e: js.Any): scala.Unit = js.native
+  def onLabelClick(): scala.Unit = js.native
   def renderChildren(prefixCls: java.lang.String): js.Array[reactLib.reactMod.Global.JSXNs.Element] = js.native
   def renderExtra(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderFormItem(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native

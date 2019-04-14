@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ITooltipProps extends js.Object {
+trait TooltipProps extends js.Object {
   var arrowProps: reactDashPopperLib.reactDashPopperMod.PopperArrowProps = js.native
   var closeOnOutOfBoundaries: scala.Boolean = js.native
   @JSName("innerRef")
@@ -26,6 +26,6 @@ trait ITooltipProps extends js.Object {
   def removeParentOutsideClickHandler(): scala.Unit = js.native
   def removeParentOutsideRightClickHandler(): scala.Unit = js.native
   def scheduleUpdate(): scala.Unit = js.native
-  def tooltip(arg: ITooltipArg): reactLib.reactMod.ReactNode = js.native
+  def tooltip(arg: TooltipArg): reactLib.reactMod.ReactNode = js.native
 }
 

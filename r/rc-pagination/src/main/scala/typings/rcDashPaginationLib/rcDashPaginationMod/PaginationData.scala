@@ -17,8 +17,8 @@ trait PaginationData extends js.Object {
   var nextIcon: reactLib.reactMod.ComponentType[js.Object] | reactLib.reactMod.ReactNode
   var pageSize: scala.Double
   var pageSizeOptions: js.Array[java.lang.String]
-  var pervIcon: reactLib.reactMod.ComponentType[js.Object] | reactLib.reactMod.ReactNode
   var prefixCls: java.lang.String
+  var prevIcon: reactLib.reactMod.ComponentType[js.Object] | reactLib.reactMod.ReactNode
   var selectComponentClass: reactLib.reactMod.ComponentType[js.Object]
   var selectPrefixCls: java.lang.String
   var showLessItems: scala.Boolean
@@ -44,8 +44,8 @@ object PaginationData {
     nextIcon: reactLib.reactMod.ComponentType[js.Object] | reactLib.reactMod.ReactNode,
     pageSize: scala.Double,
     pageSizeOptions: js.Array[java.lang.String],
-    pervIcon: reactLib.reactMod.ComponentType[js.Object] | reactLib.reactMod.ReactNode,
     prefixCls: java.lang.String,
+    prevIcon: reactLib.reactMod.ComponentType[js.Object] | reactLib.reactMod.ReactNode,
     selectComponentClass: reactLib.reactMod.ComponentType[js.Object],
     selectPrefixCls: java.lang.String,
     showLessItems: scala.Boolean,
@@ -56,7 +56,7 @@ object PaginationData {
     style: reactLib.reactMod.CSSProperties,
     total: scala.Double
   ): PaginationData = {
-    val __obj = js.Dynamic.literal(className = className, current = current, defaultCurrent = defaultCurrent, defaultPageSize = defaultPageSize, hideOnSinglePage = hideOnSinglePage, jumpNextIcon = jumpNextIcon.asInstanceOf[js.Any], jumpPrevIcon = jumpPrevIcon.asInstanceOf[js.Any], locale = locale, nextIcon = nextIcon.asInstanceOf[js.Any], pageSize = pageSize, pageSizeOptions = pageSizeOptions, pervIcon = pervIcon.asInstanceOf[js.Any], prefixCls = prefixCls, selectComponentClass = selectComponentClass.asInstanceOf[js.Any], selectPrefixCls = selectPrefixCls, showLessItems = showLessItems, showPrevNextJumpers = showPrevNextJumpers, showQuickJumper = showQuickJumper.asInstanceOf[js.Any], showSizeChanger = showSizeChanger, showTitle = showTitle, style = style, total = total)
+    val __obj = js.Dynamic.literal(className = className, current = current, defaultCurrent = defaultCurrent, defaultPageSize = defaultPageSize, hideOnSinglePage = hideOnSinglePage, jumpNextIcon = jumpNextIcon.asInstanceOf[js.Any], jumpPrevIcon = jumpPrevIcon.asInstanceOf[js.Any], locale = locale, nextIcon = nextIcon.asInstanceOf[js.Any], pageSize = pageSize, pageSizeOptions = pageSizeOptions, prefixCls = prefixCls, prevIcon = prevIcon.asInstanceOf[js.Any], selectComponentClass = selectComponentClass.asInstanceOf[js.Any], selectPrefixCls = selectPrefixCls, showLessItems = showLessItems, showPrevNextJumpers = showPrevNextJumpers, showQuickJumper = showQuickJumper.asInstanceOf[js.Any], showSizeChanger = showSizeChanger, showTitle = showTitle, style = style, total = total)
   
     __obj.asInstanceOf[PaginationData]
   }

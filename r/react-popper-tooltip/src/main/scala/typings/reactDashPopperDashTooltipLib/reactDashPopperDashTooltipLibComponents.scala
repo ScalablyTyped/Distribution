@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 object reactDashPopperDashTooltipLibComponents {
   @scala.inline
-  def ReactDashPopperDashTooltip: reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps] = js.constructorOf[reactDashPopperDashTooltipLib.reactDashPopperDashTooltipMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps]]
+  def ReactDashPopperDashTooltip: reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps] = js.constructorOf[reactDashPopperDashTooltipLib.reactDashPopperDashTooltipMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps]]
   @scala.inline
-  def TooltipTrigger: reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps] = js.constructorOf[reactDashPopperDashTooltipLib.distTooltipTriggerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps]]
+  def TooltipTrigger: reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps] = js.constructorOf[reactDashPopperDashTooltipLib.distTooltipTriggerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps]]
   @scala.inline
-  def ITooltipTriggerProps: reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps.type = reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps
-  type ITooltipTriggerProps = reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps
+  def TooltipTriggerProps: reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps.type = reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps
+  type TooltipTriggerProps = reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/skeleton/Avatar", JSImport.Default)
 @js.native
-class default () extends Title
+class default () extends SkeletonAvatar
 
 /* static members */
 @JSImport("antd/lib/skeleton/Avatar", JSImport.Default)

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TooltipTrigger
   extends reactLib.reactMod.Component[
-      reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerProps, 
-      reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerState, 
+      reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerProps, 
+      reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerState, 
       js.Any
     ] {
   var clearScheduled: js.Any = js.native
@@ -25,7 +25,7 @@ trait TooltipTrigger
   var showTimeout: js.UndefOr[js.Any] = js.native
   var showTooltip: js.Any = js.native
   @JSName("state")
-  var state_TooltipTrigger: reactDashPopperDashTooltipLib.distTypesMod.ITooltipTriggerState = js.native
+  var state_TooltipTrigger: reactDashPopperDashTooltipLib.distTypesMod.TooltipTriggerState = js.native
   var toggleTooltip: js.Any = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTooltipTrigger(): scala.Unit = js.native
