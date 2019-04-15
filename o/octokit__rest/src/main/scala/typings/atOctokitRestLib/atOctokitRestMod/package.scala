@@ -178,6 +178,7 @@ package object atOctokitRestMod {
   type ReposGetTopPathsResponse = js.Array[ReposGetTopPathsResponseItem]
   type ReposGetTopReferrersResponse = js.Array[ReposGetTopReferrersResponseItem]
   type ReposListAssetsForReleaseResponse = js.Array[ReposListAssetsForReleaseResponseItem]
+  type ReposListBranchesForHeadCommitResponse = js.Array[ReposListBranchesForHeadCommitResponseItem]
   type ReposListBranchesResponse = js.Array[ReposListBranchesResponseItem]
   type ReposListCollaboratorsResponse = js.Array[ReposListCollaboratorsResponseItem]
   type ReposListCommentsForCommitResponse = js.Array[ReposListCommentsForCommitResponseItem]
@@ -195,6 +196,7 @@ package object atOctokitRestMod {
   type ReposListPagesBuildsResponse = js.Array[ReposListPagesBuildsResponseItem]
   type ReposListProtectedBranchTeamRestrictionsResponse = js.Any
   type ReposListPublicResponse = js.Array[ReposListPublicResponseItem]
+  type ReposListPullRequestsAssociatedWithCommitResponse = js.Array[ReposListPullRequestsAssociatedWithCommitResponseItem]
   type ReposListReleasesResponse = js.Array[ReposListReleasesResponseItem]
   type ReposListStatusesForRefResponse = js.Array[ReposListStatusesForRefResponseItem]
   type ReposListTagsResponse = js.Array[ReposListTagsResponseItem]

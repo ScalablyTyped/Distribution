@@ -15,6 +15,9 @@ trait Anon_EndpointParamsPromiseReactionsCreateForIssueParams extends js.Object 
   def apply(params: atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueResponse]
   ] = js.native
+  def apply(params: atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueParamsDeprecatedNumber): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueResponse]
+  ] = js.native
   def endpoint(EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String, EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native

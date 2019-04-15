@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FluxStandardAction[Payload, Meta] extends js.Object {
+trait FluxStandardAction[Type /* <: java.lang.String */, Payload, Meta] extends _FluxStandardActionAuto[Type, Payload, Meta] {
   /**
     * The optional `error` property MAY be set to true if the action represents an error.
     * An action whose `error` is true is analogous to a rejected Promise.
@@ -30,23 +30,23 @@ trait FluxStandardAction[Payload, Meta] extends js.Object {
     * The `type` of an action identifies to the consumer the nature of the action that has occurred.
     * Two actions with the same `type` MUST be strictly equivalent (using `===`)
     */
-  var `type`: java.lang.String
+  var `type`: Type
 }
 
 object FluxStandardAction {
   @scala.inline
-  def apply[Payload, Meta](
-    `type`: java.lang.String,
+  def apply[Type /* <: java.lang.String */, Payload, Meta](
+    `type`: Type,
     error: js.UndefOr[scala.Boolean] = js.undefined,
     meta: Meta = null,
     payload: Payload = null
-  ): FluxStandardAction[Payload, Meta] = {
+  ): FluxStandardAction[Type, Payload, Meta] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FluxStandardAction[Payload, Meta]]
+    __obj.asInstanceOf[FluxStandardAction[Type, Payload, Meta]]
   }
 }
 

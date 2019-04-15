@@ -24,13 +24,24 @@ trait TeamsCreateParams extends js.Object {
     */
   var parent_team_id: js.UndefOr[scala.Double] = js.undefined
   /**
-    * **Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:  ,* \* `pull` - team members can pull, but not push to or administer newly-added repositories.  ,* \* `push` - team members can pull and push, but not administer newly-added repositories.  ,* \* `admin` - team members can pull, push and administer newly-added repositories.
+    * **Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:
+    * \* `pull` - team members can pull, but not push to or administer newly-added repositories.
+    * \* `push` - team members can pull and push, but not administer newly-added repositories.
+    * \* `admin` - team members can pull, push and administer newly-added repositories.
     */
   var permission: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.pull | atOctokitRestLib.atOctokitRestLibStrings.push | atOctokitRestLib.atOctokitRestLibStrings.admin
   ] = js.undefined
   /**
-    * The level of privacy this team should have. The options are:  ,* **For a non-nested team:**  ,* \* `secret` - only visible to organization owners and members of this team.  ,* \* `closed` - visible to all members of this organization.  ,* Default: `secret`  ,* **For a parent or child team:**  ,* \* `closed` - visible to all members of this organization.  ,* Default for child team: `closed`  ,* **Note**: You must pass the `hellcat-preview` media type to set privacy default to `closed` for child teams. **For a parent or child team:**
+    * The level of privacy this team should have. The options are:
+    * **For a non-nested team:**
+    * \* `secret` - only visible to organization owners and members of this team.
+    * \* `closed` - visible to all members of this organization.
+    * Default: `secret`
+    * **For a parent or child team:**
+    * \* `closed` - visible to all members of this organization.
+    * Default for child team: `closed`
+    * **Note**: You must pass the `hellcat-preview` media type to set privacy default to `closed` for child teams. **For a parent or child team:**
     */
   var privacy: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.secret | atOctokitRestLib.atOctokitRestLibStrings.closed

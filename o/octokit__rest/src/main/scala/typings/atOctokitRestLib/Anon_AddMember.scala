@@ -8,12 +8,28 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_AddMember extends js.Object {
   /**
-    * The "Add team member" API (described below) is deprecated.,* ,* We recommend using the [Add team membership API](https://developer.github.com/v3/teams/members/#add-or-update-team-membership) instead. It allows you to invite new organization members to your teams.,* ,* To add a user to a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with, and the user being added must already be a member of at least one other team on the same organization.,* ,* Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs).",* ,* If you attempt to add an organization to a team, you will get this:,* ,* If you attempt to add a user to a team and that user is not a member of at least one other team on the same organization, you will get this:
+    * The "Add team member" API (described below) is deprecated.
+    *
+    * We recommend using the [Add team membership API](https://developer.github.com/v3/teams/members/#add-or-update-team-membership) instead. It allows you to invite new organization members to your teams.
+    *
+    * To add a user to a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with, and the user being added must already be a member of at least one other team on the same organization.
+    *
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    *
+    * If you attempt to add an organization to a team, you will get this:
+    *
+    * If you attempt to add a user to a team and that user is not a member of at least one other team on the same organization, you will get this:
     */
   @JSName("addMember")
   var addMember_Original: Anon_EndpointParamsPromiseResponseTeamsAddMemberParams = js.native
   /**
-    * If the user is already a member of the team's organization, this endpoint will add the user to the team. To add a membership between an organization member and a team, the authenticated user must be an organization owner or a maintainer of the team.,* ,* If the user is unaffiliated with the team's organization, this endpoint will send an invitation to the user via email. This newly-created membership will be in the "pending" state until the user accepts the invitation, at which point the membership will transition to the "active" state and the user will be added as a member of the team. To add a membership between an unaffiliated user and a team, the authenticated user must be an organization owner.,* ,* If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.,* ,* If you attempt to add an organization to a team, you will get this:
+    * If the user is already a member of the team's organization, this endpoint will add the user to the team. To add a membership between an organization member and a team, the authenticated user must be an organization owner or a maintainer of the team.
+    *
+    * If the user is unaffiliated with the team's organization, this endpoint will send an invitation to the user via email. This newly-created membership will be in the "pending" state until the user accepts the invitation, at which point the membership will transition to the "active" state and the user will be added as a member of the team. To add a membership between an unaffiliated user and a team, the authenticated user must be an organization owner.
+    *
+    * If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.
+    *
+    * If you attempt to add an organization to a team, you will get this:
     */
   @JSName("addOrUpdateMembership")
   var addOrUpdateMembership_Original: Anon_EndpointParamsAnyResponsePromiseTeamsAddOrUpdateMembershipParams = js.native
@@ -23,22 +39,32 @@ trait Anon_AddMember extends js.Object {
   @JSName("addOrUpdateProject")
   var addOrUpdateProject_Original: Anon_EndpointParamsPromiseResponseTeamsAddOrUpdateProjectParams = js.native
   /**
-    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization.,* ,* If you pass the `hellcat-preview` media type, you can modify repository permissions of child teams.,* ,* Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization.
+    *
+    * If you pass the `hellcat-preview` media type, you can modify repository permissions of child teams.
+    *
+    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("addOrUpdateRepo")
   var addOrUpdateRepo_Original: Anon_EndpointParamsPromiseResponseTeamsAddOrUpdateRepoParams = js.native
   /**
-    * **Note**: If you pass the `hellcat-preview` media type, repositories inherited through a parent team will be checked.,* ,* You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
+    * **Note**: If you pass the `hellcat-preview` media type, repositories inherited through a parent team will be checked.
+    *
+    * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
   @JSName("checkManagesRepo")
   var checkManagesRepo_Original: Anon_EndpointParamsAnyResponsePromiseTeamsCheckManagesRepoParams = js.native
   /**
-    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).,* ,* This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createDiscussionComment")
   var createDiscussionComment_Original: Anon_EndpointParamsPromiseResponseTeamsCreateDiscussionCommentParams = js.native
   /**
-    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).,* ,* This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createDiscussion")
   var createDiscussion_Original: Anon_EndpointParamsPromiseResponseTeamsCreateDiscussionParams = js.native
@@ -58,7 +84,9 @@ trait Anon_AddMember extends js.Object {
   @JSName("deleteDiscussion")
   var deleteDiscussion_Original: Anon_EndpointParamsPromiseResponseTeamsDeleteDiscussionParams = js.native
   /**
-    * To delete a team, the authenticated user must be a team maintainer or an owner of the org associated with the team.,* ,* If you are an organization owner and you pass the `hellcat-preview` media type, deleting a parent team will delete all of its child teams as well.
+    * To delete a team, the authenticated user must be a team maintainer or an owner of the org associated with the team.
+    *
+    * If you are an organization owner and you pass the `hellcat-preview` media type, deleting a parent team will delete all of its child teams as well.
     */
   @JSName("delete")
   var delete_Original: Anon_EndpointParamsPromiseResponseTeamsDeleteParams = js.native
@@ -78,19 +106,27 @@ trait Anon_AddMember extends js.Object {
   @JSName("getDiscussion")
   var getDiscussion_Original: Anon_EndpointParamsPromiseResponseTeamsGetDiscussionParams = js.native
   /**
-    * The "Get team member" API (described below) is deprecated.,* ,* We recommend using the [Get team membership API](https://developer.github.com/v3/teams/members/#get-team-membership) instead. It allows you to get both active and pending memberships.,* ,* To list members in a team, the team must be visible to the authenticated user.
+    * The "Get team member" API (described below) is deprecated.
+    *
+    * We recommend using the [Get team membership API](https://developer.github.com/v3/teams/members/#get-team-membership) instead. It allows you to get both active and pending memberships.
+    *
+    * To list members in a team, the team must be visible to the authenticated user.
     */
   @JSName("getMember")
   var getMember_Original: Anon_EndpointParamsAnyResponsePromiseTeamsGetMemberParams = js.native
   /**
-    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.,* ,* To get a user's membership with a team, the team must be visible to the authenticated user.,* ,* **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create team](https://developer.github.com/v3/teams#create-team).
+    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+    *
+    * To get a user's membership with a team, the team must be visible to the authenticated user.
+    *
+    * **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create team](https://developer.github.com/v3/teams#create-team).
     */
   @JSName("getMembership")
   var getMembership_Original: Anon_EndpointParamsAnyResponsePromiseTeamsGetMembershipParams = js.native
   @JSName("get")
   var get_Original: Anon_EndpointParamsPromiseResponseTeamsGetParams = js.native
   /**
-    * At this time, the `hellcat-preview` media type is required to use this endpoint.,* ,*
+    * At this time, the `hellcat-preview` media type is required to use this endpoint.
     */
   @JSName("listChild")
   var listChild_Original: Anon_EndpointParamsAnyResponsePromiseTeamsListChildParams = js.native
@@ -132,7 +168,11 @@ trait Anon_AddMember extends js.Object {
   @JSName("list")
   var list_Original: Anon_EndpointParamsPromiseResponse = js.native
   /**
-    * The "Remove team member" API (described below) is deprecated.,* ,* We recommend using the [Remove team membership API](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.,* ,* To remove a user from a team, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. NOTE: This does not delete the user, it just removes them from the team.
+    * The "Remove team member" API (described below) is deprecated.
+    *
+    * We recommend using the [Remove team membership API](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.
+    *
+    * To remove a user from a team, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. NOTE: This does not delete the user, it just removes them from the team.
     */
   @JSName("removeMember")
   var removeMember_Original: Anon_EndpointParamsPromiseResponseTeamsRemoveMemberParams = js.native
@@ -167,12 +207,24 @@ trait Anon_AddMember extends js.Object {
   @JSName("updateDiscussion")
   var updateDiscussion_Original: Anon_EndpointParamsPromiseResponseTeamsUpdateDiscussionParams = js.native
   /**
-    * To edit a team, the authenticated user must either be an owner of the org that the team is associated with, or a maintainer of the team.,* ,* **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
+    * To edit a team, the authenticated user must either be an owner of the org that the team is associated with, or a maintainer of the team.
+    *
+    * **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
     */
   @JSName("update")
   var update_Original: Anon_EndpointParamsPromiseResponseTeamsUpdateParams = js.native
   /**
-    * The "Add team member" API (described below) is deprecated.,* ,* We recommend using the [Add team membership API](https://developer.github.com/v3/teams/members/#add-or-update-team-membership) instead. It allows you to invite new organization members to your teams.,* ,* To add a user to a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with, and the user being added must already be a member of at least one other team on the same organization.,* ,* Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs).",* ,* If you attempt to add an organization to a team, you will get this:,* ,* If you attempt to add a user to a team and that user is not a member of at least one other team on the same organization, you will get this:
+    * The "Add team member" API (described below) is deprecated.
+    *
+    * We recommend using the [Add team membership API](https://developer.github.com/v3/teams/members/#add-or-update-team-membership) instead. It allows you to invite new organization members to your teams.
+    *
+    * To add a user to a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with, and the user being added must already be a member of at least one other team on the same organization.
+    *
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    *
+    * If you attempt to add an organization to a team, you will get this:
+    *
+    * If you attempt to add a user to a team and that user is not a member of at least one other team on the same organization, you will get this:
     */
   def addMember(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsAddMemberResponse]
@@ -181,7 +233,13 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsAddMemberResponse]
   ] = js.native
   /**
-    * If the user is already a member of the team's organization, this endpoint will add the user to the team. To add a membership between an organization member and a team, the authenticated user must be an organization owner or a maintainer of the team.,* ,* If the user is unaffiliated with the team's organization, this endpoint will send an invitation to the user via email. This newly-created membership will be in the "pending" state until the user accepts the invitation, at which point the membership will transition to the "active" state and the user will be added as a member of the team. To add a membership between an unaffiliated user and a team, the authenticated user must be an organization owner.,* ,* If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.,* ,* If you attempt to add an organization to a team, you will get this:
+    * If the user is already a member of the team's organization, this endpoint will add the user to the team. To add a membership between an organization member and a team, the authenticated user must be an organization owner or a maintainer of the team.
+    *
+    * If the user is unaffiliated with the team's organization, this endpoint will send an invitation to the user via email. This newly-created membership will be in the "pending" state until the user accepts the invitation, at which point the membership will transition to the "active" state and the user will be added as a member of the team. To add a membership between an unaffiliated user and a team, the authenticated user must be an organization owner.
+    *
+    * If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.
+    *
+    * If you attempt to add an organization to a team, you will get this:
     */
   def addOrUpdateMembership(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def addOrUpdateMembership(params: atOctokitRestLib.atOctokitRestMod.TeamsAddOrUpdateMembershipParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -195,7 +253,11 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsAddOrUpdateProjectResponse]
   ] = js.native
   /**
-    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization.,* ,* If you pass the `hellcat-preview` media type, you can modify repository permissions of child teams.,* ,* Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization.
+    *
+    * If you pass the `hellcat-preview` media type, you can modify repository permissions of child teams.
+    *
+    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   def addOrUpdateRepo(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsAddOrUpdateRepoResponse]
@@ -204,7 +266,9 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsAddOrUpdateRepoResponse]
   ] = js.native
   /**
-    * **Note**: If you pass the `hellcat-preview` media type, repositories inherited through a parent team will be checked.,* ,* You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
+    * **Note**: If you pass the `hellcat-preview` media type, repositories inherited through a parent team will be checked.
+    *
+    * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
   def checkManagesRepo(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def checkManagesRepo(params: atOctokitRestLib.atOctokitRestMod.TeamsCheckManagesRepoParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -218,7 +282,9 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsCreateResponse]
   ] = js.native
   /**
-    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).,* ,* This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def createDiscussion(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsCreateDiscussionResponse]
@@ -227,7 +293,9 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsCreateDiscussionResponse]
   ] = js.native
   /**
-    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).,* ,* This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def createDiscussionComment(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsCreateDiscussionCommentResponse]
@@ -236,7 +304,9 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsCreateDiscussionCommentResponse]
   ] = js.native
   /**
-    * To delete a team, the authenticated user must be a team maintainer or an owner of the org associated with the team.,* ,* If you are an organization owner and you pass the `hellcat-preview` media type, deleting a parent team will delete all of its child teams as well.
+    * To delete a team, the authenticated user must be a team maintainer or an owner of the org associated with the team.
+    *
+    * If you are an organization owner and you pass the `hellcat-preview` media type, deleting a parent team will delete all of its child teams as well.
     */
   def delete(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsDeleteResponse]
@@ -296,12 +366,20 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsGetDiscussionCommentResponse]
   ] = js.native
   /**
-    * The "Get team member" API (described below) is deprecated.,* ,* We recommend using the [Get team membership API](https://developer.github.com/v3/teams/members/#get-team-membership) instead. It allows you to get both active and pending memberships.,* ,* To list members in a team, the team must be visible to the authenticated user.
+    * The "Get team member" API (described below) is deprecated.
+    *
+    * We recommend using the [Get team membership API](https://developer.github.com/v3/teams/members/#get-team-membership) instead. It allows you to get both active and pending memberships.
+    *
+    * To list members in a team, the team must be visible to the authenticated user.
     */
   def getMember(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getMember(params: atOctokitRestLib.atOctokitRestMod.TeamsGetMemberParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.,* ,* To get a user's membership with a team, the team must be visible to the authenticated user.,* ,* **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create team](https://developer.github.com/v3/teams#create-team).
+    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+    *
+    * To get a user's membership with a team, the team must be visible to the authenticated user.
+    *
+    * **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create team](https://developer.github.com/v3/teams#create-team).
     */
   def getMembership(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getMembership(params: atOctokitRestLib.atOctokitRestMod.TeamsGetMembershipParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -312,7 +390,7 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsListResponse]
   ] = js.native
   /**
-    * At this time, the `hellcat-preview` media type is required to use this endpoint.,* ,*
+    * At this time, the `hellcat-preview` media type is required to use this endpoint.
     */
   def listChild(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def listChild(params: atOctokitRestLib.atOctokitRestMod.TeamsListChildParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -380,7 +458,11 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsListReposResponse]
   ] = js.native
   /**
-    * The "Remove team member" API (described below) is deprecated.,* ,* We recommend using the [Remove team membership API](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.,* ,* To remove a user from a team, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. NOTE: This does not delete the user, it just removes them from the team.
+    * The "Remove team member" API (described below) is deprecated.
+    *
+    * We recommend using the [Remove team membership API](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.
+    *
+    * To remove a user from a team, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. NOTE: This does not delete the user, it just removes them from the team.
     */
   def removeMember(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsRemoveMemberResponse]
@@ -425,7 +507,9 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsReviewProjectResponse]
   ] = js.native
   /**
-    * To edit a team, the authenticated user must either be an owner of the org that the team is associated with, or a maintainer of the team.,* ,* **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
+    * To edit a team, the authenticated user must either be an owner of the org that the team is associated with, or a maintainer of the team.
+    *
+    * **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
     */
   def update(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsUpdateResponse]

@@ -20,8 +20,8 @@ trait PullsMergeParams extends js.Object {
   var merge_method: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.merge | atOctokitRestLib.atOctokitRestLibStrings.squash | atOctokitRestLib.atOctokitRestLibStrings.rebase
   ] = js.undefined
-  var number: scala.Double
   var owner: java.lang.String
+  var pull_number: scala.Double
   var repo: java.lang.String
   /**
     * SHA that pull request head must match to allow merge.
@@ -32,15 +32,15 @@ trait PullsMergeParams extends js.Object {
 object PullsMergeParams {
   @scala.inline
   def apply(
-    number: scala.Double,
     owner: java.lang.String,
+    pull_number: scala.Double,
     repo: java.lang.String,
     commit_message: java.lang.String = null,
     commit_title: java.lang.String = null,
     merge_method: atOctokitRestLib.atOctokitRestLibStrings.merge | atOctokitRestLib.atOctokitRestLibStrings.squash | atOctokitRestLib.atOctokitRestLibStrings.rebase = null,
     sha: java.lang.String = null
   ): PullsMergeParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
     if (commit_message != null) __obj.updateDynamic("commit_message")(commit_message)
     if (commit_title != null) __obj.updateDynamic("commit_title")(commit_title)
     if (merge_method != null) __obj.updateDynamic("merge_method")(merge_method.asInstanceOf[js.Any])

@@ -13,7 +13,12 @@ trait IssuesListParams extends js.Object {
     atOctokitRestLib.atOctokitRestLibStrings.asc | atOctokitRestLib.atOctokitRestLibStrings.desc
   ] = js.undefined
   /**
-    * Indicates which sorts of issues to return. Can be one of:  ,* \* `assigned`: Issues assigned to you  ,* \* `created`: Issues created by you  ,* \* `mentioned`: Issues mentioning you  ,* \* `subscribed`: Issues you're subscribed to updates for  ,* \* `all`: All issues the authenticated user can see, regardless of participation or creation
+    * Indicates which sorts of issues to return. Can be one of:
+    * \* `assigned`: Issues assigned to you
+    * \* `created`: Issues created by you
+    * \* `mentioned`: Issues mentioning you
+    * \* `subscribed`: Issues you're subscribed to updates for
+    * \* `all`: All issues the authenticated user can see, regardless of participation or creation
     */
   var filter: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.assigned | atOctokitRestLib.atOctokitRestLibStrings.created | atOctokitRestLib.atOctokitRestLibStrings.mentioned | atOctokitRestLib.atOctokitRestLibStrings.subscribed | atOctokitRestLib.atOctokitRestLibStrings.all

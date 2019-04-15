@@ -15,7 +15,9 @@ trait Anon_AddEmails extends js.Object {
   @JSName("block")
   var block_Original: Anon_EndpointParamsPromiseResponseUsersBlockParams = js.native
   /**
-    * If the user is blocked:,* ,* If the user is not blocked:
+    * If the user is blocked:
+    *
+    * If the user is not blocked:
     */
   @JSName("checkBlocked")
   var checkBlocked_Original: Anon_EndpointParamsPromiseResponseUsersCheckBlockedParams = js.native
@@ -49,22 +51,32 @@ trait Anon_AddEmails extends js.Object {
   @JSName("deletePublicKey")
   var deletePublicKey_Original: Anon_EndpointParamsPromiseResponseUsersDeletePublicKeyParams = js.native
   /**
-    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs).",* ,* Following a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    *
+    * Following a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
   @JSName("follow")
   var follow_Original: Anon_EndpointParamsPromiseResponseUsersFollowParams = js.native
   /**
-    * Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.,* ,* Lists public profile information when authenticated through OAuth without the `user` scope.
+    * Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.
+    *
+    * Lists public profile information when authenticated through OAuth without the `user` scope.
     */
   @JSName("getAuthenticated")
   var getAuthenticated_Original: Anon_EndpointParamsAnyResponseEmptyParams = js.native
   /**
-    * Provides publicly available information about someone with a GitHub account.,* ,* The `email` key in the following response is the publicly visible email address from your GitHub [profile page](https://github.com/settings/profile). When setting up your profile, you can select a primary email address to be “public” which provides an email entry for this endpoint. If you do not set a public email address for `email`, then it will have a value of `null`. You only see publicly visible email addresses when authenticated with GitHub. For more information, see [Authentication](https://developer.github.com/v3/#authentication).,* ,* The Emails API enables you to list all of your email addresses, and toggle a primary email to be visible publicly. For more information, see "[Emails API](https://developer.github.com/v3/users/emails/)".
+    * Provides publicly available information about someone with a GitHub account.
+    *
+    * The `email` key in the following response is the publicly visible email address from your GitHub [profile page](https://github.com/settings/profile). When setting up your profile, you can select a primary email address to be “public” which provides an email entry for this endpoint. If you do not set a public email address for `email`, then it will have a value of `null`. You only see publicly visible email addresses when authenticated with GitHub. For more information, see [Authentication](https://developer.github.com/v3/#authentication).
+    *
+    * The Emails API enables you to list all of your email addresses, and toggle a primary email to be visible publicly. For more information, see "[Emails API](https://developer.github.com/v3/users/emails/)".
     */
   @JSName("getByUsername")
   var getByUsername_Original: Anon_EndpointParamsPromiseResponseUsersGetByUsernameParams = js.native
   /**
-    * Provides hovercard information when authenticated through basic auth or OAuth with the `repo` scope. You can find out more about someone in relation to their pull requests, issues, repositories, and organizations.,* ,* The `subject_type` and `subject_id` parameters provide context for the person's hovercard, which returns more information than without the parameters. For example, if you wanted to find out more about `octocat` who owns the `Spoon-Knife` repository via cURL, it would look like this:
+    * Provides hovercard information when authenticated through basic auth or OAuth with the `repo` scope. You can find out more about someone in relation to their pull requests, issues, repositories, and organizations.
+    *
+    * The `subject_type` and `subject_id` parameters provide context for the person's hovercard, which returns more information than without the parameters. For example, if you wanted to find out more about `octocat` who owns the `Spoon-Knife` repository via cURL, it would look like this:
     */
   @JSName("getContextForUser")
   var getContextForUser_Original: Anon_EndpointParamsPromiseResponseUsersGetContextForUserParams = js.native
@@ -122,7 +134,9 @@ trait Anon_AddEmails extends js.Object {
   @JSName("listPublicKeys")
   var listPublicKeys_Original: Anon_EndpointParamsPromiseResponseUsersListPublicKeysParams = js.native
   /**
-    * Lists all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.,* ,* Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of users.
+    * Lists all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.
+    *
+    * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of users.
     */
   @JSName("list")
   var list_Original: Anon_EndpointParamsPromiseResponseUsersListParams = js.native
@@ -159,7 +173,9 @@ trait Anon_AddEmails extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersBlockResponse]
   ] = js.native
   /**
-    * If the user is blocked:,* ,* If the user is not blocked:
+    * If the user is blocked:
+    *
+    * If the user is not blocked:
     */
   def checkBlocked(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersCheckBlockedResponse]
@@ -217,7 +233,9 @@ trait Anon_AddEmails extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersDeletePublicKeyResponse]
   ] = js.native
   /**
-    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs).",* ,* Following a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    *
+    * Following a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
   def follow(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersFollowResponse]
@@ -226,12 +244,18 @@ trait Anon_AddEmails extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersFollowResponse]
   ] = js.native
   /**
-    * Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.,* ,* Lists public profile information when authenticated through OAuth without the `user` scope.
+    * Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.
+    *
+    * Lists public profile information when authenticated through OAuth without the `user` scope.
     */
   def getAuthenticated(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getAuthenticated(params: atOctokitRestLib.atOctokitRestMod.EmptyParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Provides publicly available information about someone with a GitHub account.,* ,* The `email` key in the following response is the publicly visible email address from your GitHub [profile page](https://github.com/settings/profile). When setting up your profile, you can select a primary email address to be “public” which provides an email entry for this endpoint. If you do not set a public email address for `email`, then it will have a value of `null`. You only see publicly visible email addresses when authenticated with GitHub. For more information, see [Authentication](https://developer.github.com/v3/#authentication).,* ,* The Emails API enables you to list all of your email addresses, and toggle a primary email to be visible publicly. For more information, see "[Emails API](https://developer.github.com/v3/users/emails/)".
+    * Provides publicly available information about someone with a GitHub account.
+    *
+    * The `email` key in the following response is the publicly visible email address from your GitHub [profile page](https://github.com/settings/profile). When setting up your profile, you can select a primary email address to be “public” which provides an email entry for this endpoint. If you do not set a public email address for `email`, then it will have a value of `null`. You only see publicly visible email addresses when authenticated with GitHub. For more information, see [Authentication](https://developer.github.com/v3/#authentication).
+    *
+    * The Emails API enables you to list all of your email addresses, and toggle a primary email to be visible publicly. For more information, see "[Emails API](https://developer.github.com/v3/users/emails/)".
     */
   def getByUsername(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersGetByUsernameResponse]
@@ -240,7 +264,9 @@ trait Anon_AddEmails extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersGetByUsernameResponse]
   ] = js.native
   /**
-    * Provides hovercard information when authenticated through basic auth or OAuth with the `repo` scope. You can find out more about someone in relation to their pull requests, issues, repositories, and organizations.,* ,* The `subject_type` and `subject_id` parameters provide context for the person's hovercard, which returns more information than without the parameters. For example, if you wanted to find out more about `octocat` who owns the `Spoon-Knife` repository via cURL, it would look like this:
+    * Provides hovercard information when authenticated through basic auth or OAuth with the `repo` scope. You can find out more about someone in relation to their pull requests, issues, repositories, and organizations.
+    *
+    * The `subject_type` and `subject_id` parameters provide context for the person's hovercard, which returns more information than without the parameters. For example, if you wanted to find out more about `octocat` who owns the `Spoon-Knife` repository via cURL, it would look like this:
     */
   def getContextForUser(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersGetContextForUserResponse]
@@ -267,7 +293,9 @@ trait Anon_AddEmails extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersGetPublicKeyResponse]
   ] = js.native
   /**
-    * Lists all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.,* ,* Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of users.
+    * Lists all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.
+    *
+    * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of users.
     */
   def list(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.UsersListResponse]

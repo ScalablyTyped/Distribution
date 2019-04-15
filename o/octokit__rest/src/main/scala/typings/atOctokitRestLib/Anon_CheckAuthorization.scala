@@ -13,7 +13,15 @@ trait Anon_CheckAuthorization extends js.Object {
   @JSName("checkAuthorization")
   var checkAuthorization_Original: Anon_EndpointParamsOauthAuthorizationsCheckAuthorizationParams = js.native
   /**
-    * If you need a small number of personal access tokens, implementing the [web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/) can be cumbersome. Instead, tokens can be created using the OAuth Authorizations API using [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication). To create personal access tokens for a particular OAuth application, you must provide its client ID and secret, found on the OAuth application settings page, linked from your [OAuth applications listing on GitHub](https://github.com/settings/developers).,* ,* If your OAuth application intends to create multiple tokens for one user, use `fingerprint` to differentiate between them.,* ,* You can also create OAuth tokens through the web UI via the [personal access tokens settings](https://github.com/settings/tokens). Read more about these tokens on the [GitHub Help site](https://help.github.com/articles/creating-an-access-token-for-command-line-use).,* ,* Organizations that enforce SAML SSO require personal access tokens to be whitelisted. Read more about whitelisting tokens on the [GitHub Help site](https://help.github.com/articles/about-identity-and-access-management-with-saml-single-sign-on).
+    * Creates OAuth tokens using [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication). If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
+    *
+    * You can use this endpoint to create multiple OAuth tokens instead of implementing the [web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/).
+    *
+    * To create tokens for a particular OAuth application using this endpoint, you must authenticate as the user you want to create an authorization for and provide the app's client ID and secret, found on your OAuth application's settings page. If your OAuth application intends to create multiple tokens for one user, use `fingerprint` to differentiate between them.
+    *
+    * You can also create tokens on GitHub from the [personal access tokens settings](https://github.com/settings/tokens) page. Read more about these tokens in [the GitHub Help documentation](https://help.github.com/articles/creating-an-access-token-for-command-line-use).
+    *
+    * Organizations that enforce SAML SSO require personal access tokens to be whitelisted. Read more about whitelisting tokens in [the GitHub Help documentation](https://help.github.com/articles/about-identity-and-access-management-with-saml-single-sign-on).
     */
   @JSName("createAuthorization")
   var createAuthorization_Original: Anon_EndpointParamsOauthAuthorizationsCreateAuthorizationParams = js.native
@@ -30,16 +38,22 @@ trait Anon_CheckAuthorization extends js.Object {
   var getGrant_Original: Anon_EndpointParamsOauthAuthorizationsGetGrantParams = js.native
   /**
     * This method will create a new authorization for the specified OAuth application, only if an authorization for that application and fingerprint do not already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. `fingerprint` is a unique string to distinguish an authorization from others created for the same client ID and user. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    *
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
     */
   @JSName("getOrCreateAuthorizationForAppAndFingerprint")
   var getOrCreateAuthorizationForAppAndFingerprint_Original: Anon_EndpointParamsAnyResponseOauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintParams = js.native
   /**
     * This method will create a new authorization for the specified OAuth application, only if an authorization for that application and fingerprint do not already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. `fingerprint` is a unique string to distinguish an authorization from others created for the same client ID and user. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    *
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
     */
   @JSName("getOrCreateAuthorizationForAppFingerprint")
   var getOrCreateAuthorizationForAppFingerprint_Original: Anon_EndpointParamsAnyResponseOauthAuthorizationsGetOrCreateAuthorizationForAppFingerprintParams = js.native
   /**
-    * This method will create a new authorization for the specified OAuth application, only if an authorization for that application doesn't already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    * Creates a new authorization for the specified OAuth application, only if an authorization for that application doesn't already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    *
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
     */
   @JSName("getOrCreateAuthorizationForApp")
   var getOrCreateAuthorizationForApp_Original: Anon_EndpointParamsAnyResponseOauthAuthorizationsGetOrCreateAuthorizationForAppParams = js.native
@@ -61,11 +75,15 @@ trait Anon_CheckAuthorization extends js.Object {
   @JSName("revokeAuthorizationForApplication")
   var revokeAuthorizationForApplication_Original: Anon_EndpointParamsOauthAuthorizationsRevokeAuthorizationForApplicationParams = js.native
   /**
-    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) for this method, where the username is the OAuth application `client_id` and the password is its `client_secret`. You must also provide a valid token as `:access_token` and the grant for the token's owner will be deleted.,* ,* Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
+    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) for this method, where the username is the OAuth application `client_id` and the password is its `client_secret`. You must also provide a valid token as `:access_token` and the grant for the token's owner will be deleted.
+    *
+    * Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
     */
   @JSName("revokeGrantForApplication")
   var revokeGrantForApplication_Original: Anon_EndpointParamsOauthAuthorizationsRevokeGrantForApplicationParams = js.native
   /**
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
+    *
     * You can only send one of these scope keys at a time.
     */
   @JSName("updateAuthorization")
@@ -80,7 +98,15 @@ trait Anon_CheckAuthorization extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.OauthAuthorizationsCheckAuthorizationResponse]
   ] = js.native
   /**
-    * If you need a small number of personal access tokens, implementing the [web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/) can be cumbersome. Instead, tokens can be created using the OAuth Authorizations API using [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication). To create personal access tokens for a particular OAuth application, you must provide its client ID and secret, found on the OAuth application settings page, linked from your [OAuth applications listing on GitHub](https://github.com/settings/developers).,* ,* If your OAuth application intends to create multiple tokens for one user, use `fingerprint` to differentiate between them.,* ,* You can also create OAuth tokens through the web UI via the [personal access tokens settings](https://github.com/settings/tokens). Read more about these tokens on the [GitHub Help site](https://help.github.com/articles/creating-an-access-token-for-command-line-use).,* ,* Organizations that enforce SAML SSO require personal access tokens to be whitelisted. Read more about whitelisting tokens on the [GitHub Help site](https://help.github.com/articles/about-identity-and-access-management-with-saml-single-sign-on).
+    * Creates OAuth tokens using [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication). If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
+    *
+    * You can use this endpoint to create multiple OAuth tokens instead of implementing the [web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/).
+    *
+    * To create tokens for a particular OAuth application using this endpoint, you must authenticate as the user you want to create an authorization for and provide the app's client ID and secret, found on your OAuth application's settings page. If your OAuth application intends to create multiple tokens for one user, use `fingerprint` to differentiate between them.
+    *
+    * You can also create tokens on GitHub from the [personal access tokens settings](https://github.com/settings/tokens) page. Read more about these tokens in [the GitHub Help documentation](https://help.github.com/articles/creating-an-access-token-for-command-line-use).
+    *
+    * Organizations that enforce SAML SSO require personal access tokens to be whitelisted. Read more about whitelisting tokens in [the GitHub Help documentation](https://help.github.com/articles/about-identity-and-access-management-with-saml-single-sign-on).
     */
   def createAuthorization(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.OauthAuthorizationsCreateAuthorizationResponse]
@@ -116,12 +142,16 @@ trait Anon_CheckAuthorization extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.OauthAuthorizationsGetGrantResponse]
   ] = js.native
   /**
-    * This method will create a new authorization for the specified OAuth application, only if an authorization for that application doesn't already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    * Creates a new authorization for the specified OAuth application, only if an authorization for that application doesn't already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    *
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
     */
   def getOrCreateAuthorizationForApp(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getOrCreateAuthorizationForApp(params: atOctokitRestLib.atOctokitRestMod.OauthAuthorizationsGetOrCreateAuthorizationForAppParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
     * This method will create a new authorization for the specified OAuth application, only if an authorization for that application and fingerprint do not already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. `fingerprint` is a unique string to distinguish an authorization from others created for the same client ID and user. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    *
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
     */
   def getOrCreateAuthorizationForAppAndFingerprint(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getOrCreateAuthorizationForAppAndFingerprint(
@@ -129,6 +159,8 @@ trait Anon_CheckAuthorization extends js.Object {
   ): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
     * This method will create a new authorization for the specified OAuth application, only if an authorization for that application and fingerprint do not already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. `fingerprint` is a unique string to distinguish an authorization from others created for the same client ID and user. It returns the user's existing authorization for the application if one is present. Otherwise, it creates and returns a new one.
+    *
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
     */
   def getOrCreateAuthorizationForAppFingerprint(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getOrCreateAuthorizationForAppFingerprint(
@@ -174,7 +206,9 @@ trait Anon_CheckAuthorization extends js.Object {
     ]
   ] = js.native
   /**
-    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) for this method, where the username is the OAuth application `client_id` and the password is its `client_secret`. You must also provide a valid token as `:access_token` and the grant for the token's owner will be deleted.,* ,* Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
+    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) for this method, where the username is the OAuth application `client_id` and the password is its `client_secret`. You must also provide a valid token as `:access_token` and the grant for the token's owner will be deleted.
+    *
+    * Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
     */
   def revokeGrantForApplication(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -187,6 +221,8 @@ trait Anon_CheckAuthorization extends js.Object {
     ]
   ] = js.native
   /**
+    * If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Woking with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
+    *
     * You can only send one of these scope keys at a time.
     */
   def updateAuthorization(): js.Promise[

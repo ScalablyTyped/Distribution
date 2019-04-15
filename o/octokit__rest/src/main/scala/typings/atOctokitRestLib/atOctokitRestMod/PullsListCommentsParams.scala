@@ -12,7 +12,6 @@ trait PullsListCommentsParams extends js.Object {
   var direction: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.asc | atOctokitRestLib.atOctokitRestLibStrings.desc
   ] = js.undefined
-  var number: scala.Double
   var owner: java.lang.String
   /**
     * Page number of the results to fetch.
@@ -22,6 +21,7 @@ trait PullsListCommentsParams extends js.Object {
     * Results per page (max 100)
     */
   var per_page: js.UndefOr[scala.Double] = js.undefined
+  var pull_number: scala.Double
   var repo: java.lang.String
   /**
     * This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Only returns comments `updated` at or after this time.
@@ -38,8 +38,8 @@ trait PullsListCommentsParams extends js.Object {
 object PullsListCommentsParams {
   @scala.inline
   def apply(
-    number: scala.Double,
     owner: java.lang.String,
+    pull_number: scala.Double,
     repo: java.lang.String,
     direction: atOctokitRestLib.atOctokitRestLibStrings.asc | atOctokitRestLib.atOctokitRestLibStrings.desc = null,
     page: scala.Int | scala.Double = null,
@@ -47,7 +47,7 @@ object PullsListCommentsParams {
     since: java.lang.String = null,
     sort: atOctokitRestLib.atOctokitRestLibStrings.created | atOctokitRestLib.atOctokitRestLibStrings.updated = null
   ): PullsListCommentsParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

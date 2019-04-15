@@ -18,8 +18,8 @@ trait PullsUpdateParams extends js.Object {
     * Indicates whether [maintainers can modify](https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/) the pull request.
     */
   var maintainer_can_modify: js.UndefOr[scala.Boolean] = js.undefined
-  var number: scala.Double
   var owner: java.lang.String
+  var pull_number: scala.Double
   var repo: java.lang.String
   /**
     * State of this Pull Request. Either `open` or `closed`.
@@ -36,8 +36,8 @@ trait PullsUpdateParams extends js.Object {
 object PullsUpdateParams {
   @scala.inline
   def apply(
-    number: scala.Double,
     owner: java.lang.String,
+    pull_number: scala.Double,
     repo: java.lang.String,
     base: java.lang.String = null,
     body: java.lang.String = null,
@@ -45,7 +45,7 @@ object PullsUpdateParams {
     state: atOctokitRestLib.atOctokitRestLibStrings.open | atOctokitRestLib.atOctokitRestLibStrings.closed = null,
     title: java.lang.String = null
   ): PullsUpdateParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
     if (base != null) __obj.updateDynamic("base")(base)
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(maintainer_can_modify)) __obj.updateDynamic("maintainer_can_modify")(maintainer_can_modify)

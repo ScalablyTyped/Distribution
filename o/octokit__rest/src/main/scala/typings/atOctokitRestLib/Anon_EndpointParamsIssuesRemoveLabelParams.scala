@@ -15,6 +15,9 @@ trait Anon_EndpointParamsIssuesRemoveLabelParams extends js.Object {
   def apply(params: atOctokitRestLib.atOctokitRestMod.IssuesRemoveLabelParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.IssuesRemoveLabelResponse]
   ] = js.native
+  def apply(params: atOctokitRestLib.atOctokitRestMod.IssuesRemoveLabelParamsDeprecatedNumber): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.IssuesRemoveLabelResponse]
+  ] = js.native
   def endpoint(EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String, EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native

@@ -11,7 +11,9 @@ trait MarkdownRenderParams extends js.Object {
     */
   var context: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The rendering mode. Can be either:  ,* \* `markdown` to render a document in plain Markdown, just like README.md files are rendered.  ,* \* `gfm` to render a document in [GitHub Flavored Markdown](https://github.github.com/gfm/), which creates links for user mentions as well as references to SHA-1 hashes, issues, and pull requests.
+    * The rendering mode. Can be either:
+    * \* `markdown` to render a document in plain Markdown, just like README.md files are rendered.
+    * \* `gfm` to render a document in [GitHub Flavored Markdown](https://github.github.com/gfm/), which creates links for user mentions as well as references to SHA-1 hashes, issues, and pull requests.
     */
   var mode: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.markdown | atOctokitRestLib.atOctokitRestLibStrings.gfm

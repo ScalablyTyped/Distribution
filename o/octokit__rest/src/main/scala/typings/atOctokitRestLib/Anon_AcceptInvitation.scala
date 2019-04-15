@@ -10,22 +10,34 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("acceptInvitation")
   var acceptInvitation_Original: Anon_EndpointParamsPromiseReposAcceptInvitationParams = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.,* ,* Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs).",* ,* The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://developer.github.com/v3/repos/invitations/).,* ,* **Rate limits**,* ,* To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    *
+    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    *
+    * The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://developer.github.com/v3/repos/invitations/).
+    *
+    * **Rate limits**
+    *
+    * To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
   @JSName("addCollaborator")
   var addCollaborator_Original: Anon_EndpointParamsAnyResponsePromiseReposAddCollaboratorParams = js.native
   /**
-    * Here's how you can create a read-only deploy key:,* ,*
+    * Here's how you can create a read-only deploy key:
     */
   @JSName("addDeployKey")
   var addDeployKey_Original: Anon_EndpointParamsPromiseReposAddDeployKeyParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("addProtectedBranchAdminEnforcement")
   var addProtectedBranchAdminEnforcement_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchAdminEnforcementParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("addProtectedBranchRequiredSignatures")
   var addProtectedBranchRequiredSignatures_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchRequiredSignaturesParams = js.native
@@ -35,22 +47,66 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("addProtectedBranchRequiredStatusChecksContexts")
   var addProtectedBranchRequiredStatusChecksContexts_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchRequiredStatusChecksContextsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.,* ,* | Type    | Description                                                                                                                         |,* | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.
+    *
+    * | Type    | Description                                                                                                                         |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   @JSName("addProtectedBranchTeamRestrictions")
   var addProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchTeamRestrictionsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Grants the specified people push access for this branch.,* ,* | Type    | Description                                                                                                            |,* | ------- | ---------------------------------------------------------------------------------------------------------------------- |,* | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Grants the specified people push access for this branch.
+    *
+    * | Type    | Description                                                                                                            |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   @JSName("addProtectedBranchUserRestrictions")
   var addProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposAddProtectedBranchUserRestrictionsParams = js.native
   /**
-    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.,* ,* If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
+    *
+    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.
     */
   @JSName("checkCollaborator")
   var checkCollaborator_Original: Anon_EndpointParamsAnyResponsePromiseReposCheckCollaboratorParams = js.native
   /**
-    * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.,* ,* The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in reverse chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.,* ,* **Working with large comparisons**,* ,* The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository) to enumerate all commits in the range.,* ,* For comparisons with extremely large diffs, you may receive an error response indicating that the diff took too long to generate. You can typically resolve this error by using a smaller commit range.,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
+    *
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in reverse chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    *
+    * **Working with large comparisons**
+    *
+    * The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository) to enumerate all commits in the range.
+    *
+    * For comparisons with extremely large diffs, you may receive an error response indicating that the diff took too long to generate. You can typically resolve this error by using a smaller commit range.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("compareCommits")
   var compareCommits_Original: Anon_EndpointParamsPromiseReposCompareCommitsParams = js.native
@@ -60,12 +116,44 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("createCommitComment")
   var createCommitComment_Original: Anon_EndpointParamsPromiseReposCreateCommitCommentParams = js.native
   /**
-    * Users with `push` access can create deployment statuses for a given deployment.,* ,* GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
+    * Users with `push` access can create deployment statuses for a given deployment.
+    *
+    * GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
     */
   @JSName("createDeploymentStatus")
   var createDeploymentStatus_Original: Anon_EndpointParamsPromiseReposCreateDeploymentStatusParams = js.native
   /**
-    * Deployments offer a few configurable parameters with sane defaults.,* ,* The `ref` parameter can be any named branch, tag, or SHA. At GitHub we often deploy branches and verify them before we merge a pull request.,* ,* The `environment` parameter allows deployments to be issued to different runtime environments. Teams often have multiple environments for verifying their applications, such as `production`, `staging`, and `qa`. This parameter makes it easier to track which environments have requested deployments. The default environment is `production`.,* ,* The `auto_merge` parameter is used to ensure that the requested ref is not behind the repository's default branch. If the ref _is_ behind the default branch for the repository, we will attempt to merge it for you. If the merge succeeds, the API will return a successful merge commit. If merge conflicts prevent the merge from succeeding, the API will return a failure response.,* ,* By default, [commit statuses](https://developer.github.com/v3/repos/statuses) for every submitted context must be in a `success` state. The `required_contexts` parameter allows you to specify a subset of contexts that must be `success`, or to specify contexts that have not yet been submitted. You are not required to use commit statuses to deploy. If you do not require any contexts or create any commit statuses, the deployment will always succeed.,* ,* The `payload` parameter is available for any extra information that a deployment system might need. It is a JSON text field that will be passed on when a deployment event is dispatched.,* ,* The `task` parameter is used by the deployment system to allow different execution paths. In the web world this might be `deploy:migrations` to run schema changes on the system. In the compiled world this could be a flag to compile an application with debugging enabled.,* ,* Users with `repo` or `repo_deployment` scopes can create a deployment for a given ref:,* ,* A simple example putting the user and room into the payload to notify back to chat networks.,* ,* A more advanced example specifying required commit statuses and bypassing auto-merging.,* ,* You will see this response when GitHub automatically merges the base branch into the topic branch instead of creating a deployment. This auto-merge happens when:,* ,* *   Auto-merge option is enabled in the repository,* *   Topic branch does not include the latest changes on the base branch, which is `master`in the response example,* *   There are no merge conflicts,* ,* If there are no new commits in the base branch, a new request to create a deployment should give a successful response.,* ,* This error happens when the `auto_merge` option is enabled and when the default branch (in this case `master`), can't be merged into the branch that's being deployed (in this case `topic-branch`), due to merge conflicts.,* ,* This error happens when the `required_contexts` parameter indicates that one or more contexts need to have a `success` status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
+    * Deployments offer a few configurable parameters with sane defaults.
+    *
+    * The `ref` parameter can be any named branch, tag, or SHA. At GitHub we often deploy branches and verify them before we merge a pull request.
+    *
+    * The `environment` parameter allows deployments to be issued to different runtime environments. Teams often have multiple environments for verifying their applications, such as `production`, `staging`, and `qa`. This parameter makes it easier to track which environments have requested deployments. The default environment is `production`.
+    *
+    * The `auto_merge` parameter is used to ensure that the requested ref is not behind the repository's default branch. If the ref _is_ behind the default branch for the repository, we will attempt to merge it for you. If the merge succeeds, the API will return a successful merge commit. If merge conflicts prevent the merge from succeeding, the API will return a failure response.
+    *
+    * By default, [commit statuses](https://developer.github.com/v3/repos/statuses) for every submitted context must be in a `success` state. The `required_contexts` parameter allows you to specify a subset of contexts that must be `success`, or to specify contexts that have not yet been submitted. You are not required to use commit statuses to deploy. If you do not require any contexts or create any commit statuses, the deployment will always succeed.
+    *
+    * The `payload` parameter is available for any extra information that a deployment system might need. It is a JSON text field that will be passed on when a deployment event is dispatched.
+    *
+    * The `task` parameter is used by the deployment system to allow different execution paths. In the web world this might be `deploy:migrations` to run schema changes on the system. In the compiled world this could be a flag to compile an application with debugging enabled.
+    *
+    * Users with `repo` or `repo_deployment` scopes can create a deployment for a given ref:
+    *
+    * A simple example putting the user and room into the payload to notify back to chat networks.
+    *
+    * A more advanced example specifying required commit statuses and bypassing auto-merging.
+    *
+    * You will see this response when GitHub automatically merges the base branch into the topic branch instead of creating a deployment. This auto-merge happens when:
+    *
+    * *   Auto-merge option is enabled in the repository
+    * *   Topic branch does not include the latest changes on the base branch, which is `master`in the response example
+    * *   There are no merge conflicts
+    *
+    * If there are no new commits in the base branch, a new request to create a deployment should give a successful response.
+    *
+    * This error happens when the `auto_merge` option is enabled and when the default branch (in this case `master`), can't be merged into the branch that's being deployed (in this case `topic-branch`), due to merge conflicts.
+    *
+    * This error happens when the `required_contexts` parameter indicates that one or more contexts need to have a `success` status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
   @JSName("createDeployment")
   var createDeployment_Original: Anon_EndpointParamsAnyResponsePromiseReposCreateDeploymentParams = js.native
@@ -75,32 +163,54 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("createFile")
   var createFile_Original: Anon_EndpointParamsPromiseReposCreateFileParams = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).,* ,* **OAuth scope requirements**,* ,* When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:,* ,* *   `public_repo` scope or `repo` scope to create a public repository,* *   `repo` scope to create a private repository
+    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    *
+    * **OAuth scope requirements**
+    *
+    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    *
+    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `repo` scope to create a private repository
     */
   @JSName("createForAuthenticatedUser")
   var createForAuthenticatedUser_Original: Anon_EndpointParamsPromiseReposCreateForAuthenticatedUserParams = js.native
   /**
-    * Create a fork for the authenticated user.,* ,* **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://github.com/contact).
+    * Create a fork for the authenticated user.
+    *
+    * **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://github.com/contact).
     */
   @JSName("createFork")
   var createFork_Original: Anon_EndpointParamsPromiseReposCreateForkParams = js.native
   /**
-    * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can share the same `config` as long as those webhooks do not have any `events` that overlap.,* ,* Here's how you can create a hook that posts payloads in JSON format:
+    * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can share the same `config` as long as those webhooks do not have any `events` that overlap.
+    *
+    * Here's how you can create a hook that posts payloads in JSON format:
     */
   @JSName("createHook")
   var createHook_Original: Anon_EndpointParamsPromiseReposCreateHookParams = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).,* ,* **OAuth scope requirements**,* ,* When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:,* ,* *   `public_repo` scope or `repo` scope to create a public repository,* *   `repo` scope to create a private repository
+    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    *
+    * **OAuth scope requirements**
+    *
+    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    *
+    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `repo` scope to create a private repository
     */
   @JSName("createInOrg")
   var createInOrg_Original: Anon_EndpointParamsPromiseReposCreateInOrgParams = js.native
   /**
-    * Users with push access to the repository can create a release.,* ,* This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * Users with push access to the repository can create a release.
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createRelease")
   var createRelease_Original: Anon_EndpointParamsPromiseReposCreateReleaseParams = js.native
   /**
-    * Users with push access in a repository can create commit statuses for a given SHA.,* ,* Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
+    * Users with push access in a repository can create commit statuses for a given SHA.
+    *
+    * Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
     */
   @JSName("createStatus")
   var createStatus_Original: Anon_EndpointParamsPromiseReposCreateStatusParams = js.native
@@ -111,7 +221,18 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("deleteDownload")
   var deleteDownload_Original: Anon_EndpointParamsPromiseReposDeleteDownloadParams = js.native
   /**
-    * Deletes a file in a repository.,* ,* The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.,* ,* You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.,* ,* Both the `author` and `committer` parameters have the same keys:,* ,* | name  | type   | description                                          |,* | ----- | ------ | ---------------------------------------------------- |,* | name  | string | The name of the author (or committer) of the commit  |,* | email | string | The email of the author (or committer) of the commit |
+    * Deletes a file in a repository.
+    *
+    * The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.
+    *
+    * You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.
+    *
+    * Both the `author` and `committer` parameters have the same keys:
+    *
+    * | name  | type   | description                                          |
+    * | ----- | ------ | ---------------------------------------------------- |
+    * | name  | string | The name of the author (or committer) of the commit  |
+    * | email | string | The email of the author (or committer) of the commit |
     */
   @JSName("deleteFile")
   var deleteFile_Original: Anon_EndpointParamsPromiseReposDeleteFileParams = js.native
@@ -127,7 +248,9 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("deleteRelease")
   var deleteRelease_Original: Anon_EndpointParamsPromiseReposDeleteReleaseParams = js.native
   /**
-    * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.,* ,* If an organization owner has configured the organization to prevent members from deleting organization-owned repositories, a member will get this response:
+    * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
+    *
+    * If an organization owner has configured the organization to prevent members from deleting organization-owned repositories, a member will get this response:
     */
   @JSName("delete")
   var delete_Original: Anon_EndpointParamsPromiseReposDeleteParams = js.native
@@ -136,7 +259,11 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("enablePagesSite")
   var enablePagesSite_Original: Anon_EndpointParamsPromiseReposEnablePagesSiteParams = js.native
   /**
-    * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.,* ,* _Note_: For private repositories, these links are temporary and expire after five minutes.,* ,* To follow redirects with curl, use the `-L` switch:,* ,*
+    * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.
+    *
+    * _Note_: For private repositories, these links are temporary and expire after five minutes.
+    *
+    * To follow redirects with curl, use the `-L` switch:
     */
   @JSName("getArchiveLink")
   var getArchiveLink_Original: Anon_EndpointParamsPromiseReposGetArchiveLinkParams = js.native
@@ -153,7 +280,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getClones")
   var getClones_Original: Anon_EndpointParamsPromiseReposGetClonesParams = js.native
   /**
-    * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.,* ,*
+    * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
     */
   @JSName("getCodeFrequencyStats")
   var getCodeFrequencyStats_Original: Anon_EndpointParamsPromiseReposGetCodeFrequencyStatsParams = js.native
@@ -163,34 +290,98 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getCollaboratorPermissionLevel")
   var getCollaboratorPermissionLevel_Original: Anon_EndpointParamsAnyResponsePromiseReposGetCollaboratorPermissionLevelParams = js.native
   /**
-    * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.,* ,* The most recent status for each context is returned, up to 100. This field [paginates](https://developer.github.com/v3/#pagination) if there are over 100 contexts.,* ,* Additionally, a combined `state` is returned. The `state` is one of:,* ,* *   **failure** if any of the contexts report as `error` or `failure`,* *   **pending** if there are no statuses or a context is `pending`,* *   **success** if the latest status for all contexts is `success`
+    * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
+    *
+    * The most recent status for each context is returned, up to 100. This field [paginates](https://developer.github.com/v3/#pagination) if there are over 100 contexts.
+    *
+    * Additionally, a combined `state` is returned. The `state` is one of:
+    *
+    * *   **failure** if any of the contexts report as `error` or `failure`
+    * *   **pending** if there are no statuses or a context is `pending`
+    * *   **success** if the latest status for all contexts is `success`
     */
   @JSName("getCombinedStatusForRef")
   var getCombinedStatusForRef_Original: Anon_EndpointParamsPromiseReposGetCombinedStatusForRefParams = js.native
   /**
-    * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.,* ,*
+    * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
     */
   @JSName("getCommitActivityStats")
   var getCommitActivityStats_Original: Anon_EndpointParamsPromiseReposGetCommitActivityStatsParams = js.native
   @JSName("getCommitComment")
   var getCommitComment_Original: Anon_EndpointParamsPromiseReposGetCommitCommentParams = js.native
   /**
-    * **Note:** To access this endpoint, you must provide a custom [media type](https://developer.github.com/v3/media) in the `Accept` header:,* ,* ```,* application/vnd.github.VERSION.sha,* ,* ```,* ,* Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.,* ,*
+    * **Note:** To access this endpoint, you must provide a custom [media type](https://developer.github.com/v3/media) in the `Accept` header:
+    *
+    * ```
+    * application/vnd.github.VERSION.sha
+    *
+    * ```
+    *
+    * Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.
     */
   @JSName("getCommitRefSha")
   var getCommitRefSha_Original: Anon_EndpointParamsPromiseReposGetCommitRefShaParams = js.native
   /**
-    * Diffs with binary data will have no `patch` property. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Diffs with binary data will have no `patch` property. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("getCommit")
   var getCommit_Original: Anon_EndpointParamsPromiseReposGetCommitParams = js.native
   /**
-    * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.,* ,* Files and symlinks support [a custom media type](#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](#custom-media-types) to ensure the content is returned in a consistent object format.,* ,* **Note**:,* ,* *   To get a repository's contents recursively, you can [recursively get the tree](https://developer.github.com/v3/git/trees/).,* *   This API has an upper limit of 1,000 files for a directory. If you need to retrieve more files, use the [Git Trees API](https://developer.github.com/v3/git/trees/#get-a-tree).,* *   This API supports files up to 1 megabyte in size.,* ,* The response will be an array of objects, one object for each item in the directory.,* ,* When listing the contents of a directory, submodules have their "type" specified as "file". Logically, the value _should_ be "submodule". This behavior exists in API v3 [for backwards compatibility purposes](https://git.io/v1YCW). In the next major version of the API, the type will be returned as "submodule".,* ,* If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](#response-if-content-is-a-file)).,* ,* Otherwise, the API responds with an object describing the symlink itself:,* ,* The `submodule_git_url` identifies the location of the submodule repository, and the `sha` identifies a specific commit within the submodule repository. Git uses the given URL when cloning the submodule repository, and checks out the submodule at that specific commit.,* ,* If the submodule repository is not hosted on github.com, the Git URLs (`git_url` and `_links["git"]`) and the github.com URLs (`html_url` and `_links["html"]`) will have null values.
+    * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.
+    *
+    * Files and symlinks support [a custom media type](#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](#custom-media-types) to ensure the content is returned in a consistent object format.
+    *
+    * **Note**:
+    *
+    * *   To get a repository's contents recursively, you can [recursively get the tree](https://developer.github.com/v3/git/trees/).
+    * *   This API has an upper limit of 1,000 files for a directory. If you need to retrieve more files, use the [Git Trees API](https://developer.github.com/v3/git/trees/#get-a-tree).
+    * *   This API supports files up to 1 megabyte in size.
+    *
+    * The response will be an array of objects, one object for each item in the directory.
+    *
+    * When listing the contents of a directory, submodules have their "type" specified as "file". Logically, the value _should_ be "submodule". This behavior exists in API v3 [for backwards compatibility purposes](https://git.io/v1YCW). In the next major version of the API, the type will be returned as "submodule".
+    *
+    * If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](#response-if-content-is-a-file)).
+    *
+    * Otherwise, the API responds with an object describing the symlink itself:
+    *
+    * The `submodule_git_url` identifies the location of the submodule repository, and the `sha` identifies a specific commit within the submodule repository. Git uses the given URL when cloning the submodule repository, and checks out the submodule at that specific commit.
+    *
+    * If the submodule repository is not hosted on github.com, the Git URLs (`git_url` and `_links["git"]`) and the github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
   @JSName("getContents")
   var getContents_Original: Anon_EndpointParamsAnyResponsePromiseReposGetContentsParams = js.native
   /**
-    * *   `total` - The Total number of commits authored by the contributor.,* ,* Weekly Hash (`weeks` array):,* ,* *   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).,* *   `a` - Number of additions,* *   `d` - Number of deletions,* *   `c` - Number of commits,* ,*
+    * *   `total` - The Total number of commits authored by the contributor.
+    *
+    * Weekly Hash (`weeks` array):
+    *
+    * *   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).
+    * *   `a` - Number of additions
+    * *   `d` - Number of deletions
+    * *   `c` - Number of commits
     */
   @JSName("getContributorsStats")
   var getContributorsStats_Original: Anon_EndpointParamsPromiseReposGetContributorsStatsParams = js.native
@@ -210,7 +401,9 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getLatestPagesBuild")
   var getLatestPagesBuild_Original: Anon_EndpointParamsPromiseReposGetLatestPagesBuildParams = js.native
   /**
-    * View the latest published full release for the repository.,* ,* The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
+    * View the latest published full release for the repository.
+    *
+    * The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
     */
   @JSName("getLatestRelease")
   var getLatestRelease_Original: Anon_EndpointParamsPromiseReposGetLatestReleaseParams = js.native
@@ -219,7 +412,9 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getPages")
   var getPages_Original: Anon_EndpointParamsPromiseReposGetPagesParams = js.native
   /**
-    * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.,* ,* The array order is oldest week (index 0) to most recent week.,* ,*
+    * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.
+    *
+    * The array order is oldest week (index 0) to most recent week.
     */
   @JSName("getParticipationStats")
   var getParticipationStats_Original: Anon_EndpointParamsPromiseReposGetParticipationStatsParams = js.native
@@ -234,7 +429,11 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getProtectedBranchPullRequestReviewEnforcement")
   var getProtectedBranchPullRequestReviewEnforcement_Original: Anon_EndpointParamsAnyResponsePromiseReposGetProtectedBranchPullRequestReviewEnforcementParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* When authenticated with admin or owner permissions to the repository, you can use this endpoint to check whether a branch requires signed commits. An enabled status of `true` indicates you must sign commits on this branch. For more information, see [Signing commits with GPG](https://help.github.com/articles/signing-commits-with-gpg) in GitHub Help.,* ,* **Note**: You must enable branch protection to require signed commits.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * When authenticated with admin or owner permissions to the repository, you can use this endpoint to check whether a branch requires signed commits. An enabled status of `true` indicates you must sign commits on this branch. For more information, see [Signing commits with GPG](https://help.github.com/articles/signing-commits-with-gpg) in GitHub Help.
+    *
+    * **Note**: You must enable branch protection to require signed commits.
     */
   @JSName("getProtectedBranchRequiredSignatures")
   var getProtectedBranchRequiredSignatures_Original: Anon_EndpointParamsPromiseReposGetProtectedBranchRequiredSignaturesParams = js.native
@@ -244,17 +443,27 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("getProtectedBranchRequiredStatusChecks")
   var getProtectedBranchRequiredStatusChecks_Original: Anon_EndpointParamsPromiseReposGetProtectedBranchRequiredStatusChecksParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* **Note**: Teams and users `restrictions` are only available for organization-owned repositories.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * **Note**: Teams and users `restrictions` are only available for organization-owned repositories.
     */
   @JSName("getProtectedBranchRestrictions")
   var getProtectedBranchRestrictions_Original: Anon_EndpointParamsAnyResponsePromiseReposGetProtectedBranchRestrictionsParams = js.native
   /**
-    * Each array contains the day number, hour number, and number of commits:,* ,* *   `0-6`: Sunday - Saturday,* *   `0-23`: Hour of day,* *   Number of commits,* ,* For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
+    * Each array contains the day number, hour number, and number of commits:
+    *
+    * *   `0-6`: Sunday - Saturday
+    * *   `0-23`: Hour of day
+    * *   Number of commits
+    *
+    * For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
     */
   @JSName("getPunchCardStats")
   var getPunchCardStats_Original: Anon_EndpointParamsPromiseReposGetPunchCardStatsParams = js.native
   /**
-    * Gets the preferred README for a repository.,* ,* READMEs support [custom media types](#custom-media-types) for retrieving the raw content or rendered HTML.
+    * Gets the preferred README for a repository.
+    *
+    * READMEs support [custom media types](#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   @JSName("getReadme")
   var getReadme_Original: Anon_EndpointParamsPromiseReposGetReadmeParams = js.native
@@ -295,27 +504,60 @@ trait Anon_AcceptInvitation extends js.Object {
   var get_Original: Anon_EndpointParamsPromiseReposGetParams = js.native
   @JSName("listAssetsForRelease")
   var listAssetsForRelease_Original: Anon_EndpointParamsPromiseReposListAssetsForReleaseParams = js.native
+  /**
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Returns all branches where the given commit SHA is the HEAD, or latest commit for the branch.
+    */
+  @JSName("listBranchesForHeadCommit")
+  var listBranchesForHeadCommit_Original: Anon_EndpointParamsPromiseReposListBranchesForHeadCommitParams = js.native
   @JSName("listBranches")
   var listBranches_Original: Anon_EndpointParamsPromiseReposListBranchesParams = js.native
   /**
-    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.,* ,* If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
+    *
+    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.
     */
   @JSName("listCollaborators")
   var listCollaborators_Original: Anon_EndpointParamsPromiseReposListCollaboratorsParams = js.native
   @JSName("listCommentsForCommit")
   var listCommentsForCommit_Original: Anon_EndpointParamsPromiseReposListCommentsForCommitParams = js.native
   /**
-    * Commit Comments use [these custom media types](#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).,* ,* Comments are ordered by ascending ID.,* ,*
+    * Commit Comments use [these custom media types](#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
+    *
+    * Comments are ordered by ascending ID.
     */
   @JSName("listCommitComments")
   var listCommitComments_Original: Anon_EndpointParamsPromiseReposListCommitCommentsParams = js.native
   /**
-    * **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("listCommits")
   var listCommits_Original: Anon_EndpointParamsPromiseReposListCommitsParams = js.native
   /**
-    * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API v3 caches contributor data to improve performance.,* ,* GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
+    * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API v3 caches contributor data to improve performance.
+    *
+    * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
   @JSName("listContributors")
   var listContributors_Original: Anon_EndpointParamsAnyResponsePromiseReposListContributorsParams = js.native
@@ -348,12 +590,12 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("listHooks")
   var listHooks_Original: Anon_EndpointParamsPromiseReposListHooksParams = js.native
   /**
-    * When authenticating as a user, this endpoint will list all currently open repository invitations for that user.,* ,*
+    * When authenticating as a user, this endpoint will list all currently open repository invitations for that user.
     */
   @JSName("listInvitationsForAuthenticatedUser")
   var listInvitationsForAuthenticatedUser_Original: Anon_EndpointParamsPromiseReposListInvitationsForAuthenticatedUserParams = js.native
   /**
-    * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.,* ,*
+    * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
     */
   @JSName("listInvitations")
   var listInvitations_Original: Anon_EndpointParamsPromiseReposListInvitationsParams = js.native
@@ -370,27 +612,42 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("listProtectedBranchRequiredStatusChecksContexts")
   var listProtectedBranchRequiredStatusChecksContexts_Original: Anon_EndpointParamsAnyResponsePromiseReposListProtectedBranchRequiredStatusChecksContextsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
     */
   @JSName("listProtectedBranchTeamRestrictions")
   var listProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposListProtectedBranchTeamRestrictionsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Lists the people who have push access to this branch.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the people who have push access to this branch.
     */
   @JSName("listProtectedBranchUserRestrictions")
   var listProtectedBranchUserRestrictions_Original: Anon_EndpointParamsAnyResponsePromiseReposListProtectedBranchUserRestrictionsParams = js.native
   /**
-    * This provides a dump of every public repository, in the order that they were created.,* ,* Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
+    * This provides a dump of every public repository, in the order that they were created.
+    *
+    * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
     */
   @JSName("listPublic")
   var listPublic_Original: Anon_EndpointParamsPromiseReposListPublicParams = js.native
   /**
-    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://developer.github.com/v3/repos/#list-tags).,* ,* Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
+    * Lists all pull requests containing the provided commit SHA, which can be from any point in the commit history. The results will include open and closed pull requests. Additional preview headers may be required to see certain details for associated pull requests, such as whether a pull request is in a draft state. For more information about previews that might affect this endpoint, see the [List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests) endpoint.
+    */
+  @JSName("listPullRequestsAssociatedWithCommit")
+  var listPullRequestsAssociatedWithCommit_Original: Anon_EndpointParamsPromiseReposListPullRequestsAssociatedWithCommitParams = js.native
+  /**
+    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://developer.github.com/v3/repos/#list-tags).
+    *
+    * Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
     */
   @JSName("listReleases")
   var listReleases_Original: Anon_EndpointParamsPromiseReposListReleasesParams = js.native
   /**
-    * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.,* ,* This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
+    * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.
+    *
+    * This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
     */
   @JSName("listStatusesForRef")
   var listStatusesForRef_Original: Anon_EndpointParamsPromiseReposListStatusesForRefParams = js.native
@@ -401,7 +658,9 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("listTopics")
   var listTopics_Original: Anon_EndpointParamsPromiseReposListTopicsParams = js.native
   /**
-    * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.,* ,* The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
+    * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
+    *
+    * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
   @JSName("list")
   var list_Original: Anon_EndpointParamsAnyResponsePromiseReposListParams = js.native
@@ -422,7 +681,9 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("removeDeployKey")
   var removeDeployKey_Original: Anon_EndpointParamsPromiseReposRemoveDeployKeyParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("removeProtectedBranchAdminEnforcement")
   var removeProtectedBranchAdminEnforcement_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveProtectedBranchAdminEnforcementParams = js.native
@@ -432,7 +693,9 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("removeProtectedBranchPullRequestReviewEnforcement")
   var removeProtectedBranchPullRequestReviewEnforcement_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveProtectedBranchPullRequestReviewEnforcementParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("removeProtectedBranchRequiredSignatures")
   var removeProtectedBranchRequiredSignatures_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveProtectedBranchRequiredSignaturesParams = js.native
@@ -447,17 +710,31 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("removeProtectedBranchRequiredStatusChecks")
   var removeProtectedBranchRequiredStatusChecks_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveProtectedBranchRequiredStatusChecksParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Disables the ability to restrict who can push to this branch.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Disables the ability to restrict who can push to this branch.
     */
   @JSName("removeProtectedBranchRestrictions")
   var removeProtectedBranchRestrictions_Original: Anon_EndpointParamsAnyResponsePromiseReposRemoveProtectedBranchRestrictionsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Removes the ability of a team to push to this branch. If you pass the `hellcat-preview` media type, you can include child teams.,* ,* | Type    | Description                                                                                                                                  |,* | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removes the ability of a team to push to this branch. If you pass the `hellcat-preview` media type, you can include child teams.
+    *
+    * | Type    | Description                                                                                                                                  |
+    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   @JSName("removeProtectedBranchTeamRestrictions")
   var removeProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposRemoveProtectedBranchTeamRestrictionsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Removes the ability of a team to push to this branch.,* ,* | Type    | Description                                                                                                                            |,* | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removes the ability of a team to push to this branch.
+    *
+    * | Type    | Description                                                                                                                            |
+    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   @JSName("removeProtectedBranchUserRestrictions")
   var removeProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposRemoveProtectedBranchUserRestrictionsParams = js.native
@@ -467,19 +744,33 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("replaceProtectedBranchRequiredStatusChecksContexts")
   var replaceProtectedBranchRequiredStatusChecksContexts_Original: Anon_EndpointParamsPromiseReposReplaceProtectedBranchRequiredStatusChecksContextsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Replaces the list of teams that have push access to this branch. This removes all teams that previously had push access and grants push access to the new list of teams. If you pass the `hellcat-preview` media type, you can include child teams.,* ,* | Type    | Description                                                                                                                         |,* | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Replaces the list of teams that have push access to this branch. This removes all teams that previously had push access and grants push access to the new list of teams. If you pass the `hellcat-preview` media type, you can include child teams.
+    *
+    * | Type    | Description                                                                                                                         |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   @JSName("replaceProtectedBranchTeamRestrictions")
   var replaceProtectedBranchTeamRestrictions_Original: Anon_EndpointParamsPromiseReposReplaceProtectedBranchTeamRestrictionsParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Replaces the list of people that have push access to this branch. This removes all people that previously had push access and grants push access to the new list of people.,* ,* | Type    | Description                                                                                                            |,* | ------- | ---------------------------------------------------------------------------------------------------------------------- |,* | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Replaces the list of people that have push access to this branch. This removes all people that previously had push access and grants push access to the new list of people.
+    *
+    * | Type    | Description                                                                                                            |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   @JSName("replaceProtectedBranchUserRestrictions")
   var replaceProtectedBranchUserRestrictions_Original: Anon_EndpointParamsPromiseReposReplaceProtectedBranchUserRestrictionsParams = js.native
   @JSName("replaceTopics")
   var replaceTopics_Original: Anon_EndpointParamsPromiseReposReplaceTopicsParams = js.native
   /**
-    * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.,* ,* Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
+    * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.
+    *
+    * Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
     */
   @JSName("requestPageBuild")
   var requestPageBuild_Original: Anon_EndpointParamsPromiseReposRequestPageBuildParams = js.native
@@ -489,7 +780,9 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("retrieveCommunityProfileMetrics")
   var retrieveCommunityProfileMetrics_Original: Anon_EndpointParamsPromiseReposRetrieveCommunityProfileMetricsParams = js.native
   /**
-    * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.,* ,* **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
+    * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.
+    *
+    * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
   @JSName("testPushHook")
   var testPushHook_Original: Anon_EndpointParamsPromiseReposTestPushHookParams = js.native
@@ -499,7 +792,13 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("transfer")
   var transfer_Original: Anon_EndpointParamsPromiseReposTransferParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Protecting a branch requires admin or owner permissions to the repository.,* ,* **Note**: Passing new arrays of `users` and `teams` replaces their previous values.,* ,* **Note**: The list of users and teams in total is limited to 100 items.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Protecting a branch requires admin or owner permissions to the repository.
+    *
+    * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
+    *
+    * **Note**: The list of users and teams in total is limited to 100 items.
     */
   @JSName("updateBranchProtection")
   var updateBranchProtection_Original: Anon_EndpointParamsPromiseReposUpdateBranchProtectionParams = js.native
@@ -517,12 +816,18 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("updateInvitation")
   var updateInvitation_Original: Anon_EndpointParamsPromiseReposUpdateInvitationParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Updating pull request review enforcement requires admin or owner permissions to the repository and branch protection to be enabled.,* ,* **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Updating pull request review enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
+    *
+    * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     */
   @JSName("updateProtectedBranchPullRequestReviewEnforcement")
   var updateProtectedBranchPullRequestReviewEnforcement_Original: Anon_EndpointParamsPromiseReposUpdateProtectedBranchPullRequestReviewEnforcementParams = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("updateProtectedBranchRequiredStatusChecks")
   var updateProtectedBranchRequiredStatusChecks_Original: Anon_EndpointParamsPromiseReposUpdateProtectedBranchRequiredStatusChecksParams = js.native
@@ -542,7 +847,13 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("update")
   var update_Original: Anon_EndpointParamsPromiseReposUpdateParams = js.native
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.,* ,* The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.,* ,* Send the raw binary content of the asset as the request body.,* ,* This may leave an empty asset with a state of `"new"`. It can be safely deleted.
+    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
+    *
+    * The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
+    *
+    * Send the raw binary content of the asset as the request body.
+    *
+    * This may leave an empty asset with a state of `"new"`. It can be safely deleted.
     */
   @JSName("uploadReleaseAsset")
   var uploadReleaseAsset_Original: Anon_EndpointParamsAnyResponsePromiseReposUploadReleaseAssetParams = js.native
@@ -553,12 +864,20 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposAcceptInvitationResponse]
   ] = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.,* ,* Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs).",* ,* The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://developer.github.com/v3/repos/invitations/).,* ,* **Rate limits**,* ,* To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    *
+    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    *
+    * The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://developer.github.com/v3/repos/invitations/).
+    *
+    * **Rate limits**
+    *
+    * To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
   def addCollaborator(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def addCollaborator(params: atOctokitRestLib.atOctokitRestMod.ReposAddCollaboratorParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Here's how you can create a read-only deploy key:,* ,*
+    * Here's how you can create a read-only deploy key:
     */
   def addDeployKey(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposAddDeployKeyResponse]
@@ -567,7 +886,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposAddDeployKeyResponse]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   def addProtectedBranchAdminEnforcement(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -580,7 +901,9 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
     */
   def addProtectedBranchRequiredSignatures(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -608,7 +931,13 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.,* ,* | Type    | Description                                                                                                                         |,* | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.
+    *
+    * | Type    | Description                                                                                                                         |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   def addProtectedBranchTeamRestrictions(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -621,7 +950,13 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Grants the specified people push access for this branch.,* ,* | Type    | Description                                                                                                            |,* | ------- | ---------------------------------------------------------------------------------------------------------------------- |,* | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Grants the specified people push access for this branch.
+    *
+    * | Type    | Description                                                                                                            |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   def addProtectedBranchUserRestrictions(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -634,12 +969,44 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.,* ,* If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
+    *
+    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.
     */
   def checkCollaborator(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def checkCollaborator(params: atOctokitRestLib.atOctokitRestMod.ReposCheckCollaboratorParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.,* ,* The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in reverse chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.,* ,* **Working with large comparisons**,* ,* The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository) to enumerate all commits in the range.,* ,* For comparisons with extremely large diffs, you may receive an error response indicating that the diff took too long to generate. You can typically resolve this error by using a smaller commit range.,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
+    *
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in reverse chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    *
+    * **Working with large comparisons**
+    *
+    * The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository) to enumerate all commits in the range.
+    *
+    * For comparisons with extremely large diffs, you may receive an error response indicating that the diff took too long to generate. You can typically resolve this error by using a smaller commit range.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   def compareCommits(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCompareCommitsResponse]
@@ -657,12 +1024,44 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateCommitCommentResponse]
   ] = js.native
   /**
-    * Deployments offer a few configurable parameters with sane defaults.,* ,* The `ref` parameter can be any named branch, tag, or SHA. At GitHub we often deploy branches and verify them before we merge a pull request.,* ,* The `environment` parameter allows deployments to be issued to different runtime environments. Teams often have multiple environments for verifying their applications, such as `production`, `staging`, and `qa`. This parameter makes it easier to track which environments have requested deployments. The default environment is `production`.,* ,* The `auto_merge` parameter is used to ensure that the requested ref is not behind the repository's default branch. If the ref _is_ behind the default branch for the repository, we will attempt to merge it for you. If the merge succeeds, the API will return a successful merge commit. If merge conflicts prevent the merge from succeeding, the API will return a failure response.,* ,* By default, [commit statuses](https://developer.github.com/v3/repos/statuses) for every submitted context must be in a `success` state. The `required_contexts` parameter allows you to specify a subset of contexts that must be `success`, or to specify contexts that have not yet been submitted. You are not required to use commit statuses to deploy. If you do not require any contexts or create any commit statuses, the deployment will always succeed.,* ,* The `payload` parameter is available for any extra information that a deployment system might need. It is a JSON text field that will be passed on when a deployment event is dispatched.,* ,* The `task` parameter is used by the deployment system to allow different execution paths. In the web world this might be `deploy:migrations` to run schema changes on the system. In the compiled world this could be a flag to compile an application with debugging enabled.,* ,* Users with `repo` or `repo_deployment` scopes can create a deployment for a given ref:,* ,* A simple example putting the user and room into the payload to notify back to chat networks.,* ,* A more advanced example specifying required commit statuses and bypassing auto-merging.,* ,* You will see this response when GitHub automatically merges the base branch into the topic branch instead of creating a deployment. This auto-merge happens when:,* ,* *   Auto-merge option is enabled in the repository,* *   Topic branch does not include the latest changes on the base branch, which is `master`in the response example,* *   There are no merge conflicts,* ,* If there are no new commits in the base branch, a new request to create a deployment should give a successful response.,* ,* This error happens when the `auto_merge` option is enabled and when the default branch (in this case `master`), can't be merged into the branch that's being deployed (in this case `topic-branch`), due to merge conflicts.,* ,* This error happens when the `required_contexts` parameter indicates that one or more contexts need to have a `success` status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
+    * Deployments offer a few configurable parameters with sane defaults.
+    *
+    * The `ref` parameter can be any named branch, tag, or SHA. At GitHub we often deploy branches and verify them before we merge a pull request.
+    *
+    * The `environment` parameter allows deployments to be issued to different runtime environments. Teams often have multiple environments for verifying their applications, such as `production`, `staging`, and `qa`. This parameter makes it easier to track which environments have requested deployments. The default environment is `production`.
+    *
+    * The `auto_merge` parameter is used to ensure that the requested ref is not behind the repository's default branch. If the ref _is_ behind the default branch for the repository, we will attempt to merge it for you. If the merge succeeds, the API will return a successful merge commit. If merge conflicts prevent the merge from succeeding, the API will return a failure response.
+    *
+    * By default, [commit statuses](https://developer.github.com/v3/repos/statuses) for every submitted context must be in a `success` state. The `required_contexts` parameter allows you to specify a subset of contexts that must be `success`, or to specify contexts that have not yet been submitted. You are not required to use commit statuses to deploy. If you do not require any contexts or create any commit statuses, the deployment will always succeed.
+    *
+    * The `payload` parameter is available for any extra information that a deployment system might need. It is a JSON text field that will be passed on when a deployment event is dispatched.
+    *
+    * The `task` parameter is used by the deployment system to allow different execution paths. In the web world this might be `deploy:migrations` to run schema changes on the system. In the compiled world this could be a flag to compile an application with debugging enabled.
+    *
+    * Users with `repo` or `repo_deployment` scopes can create a deployment for a given ref:
+    *
+    * A simple example putting the user and room into the payload to notify back to chat networks.
+    *
+    * A more advanced example specifying required commit statuses and bypassing auto-merging.
+    *
+    * You will see this response when GitHub automatically merges the base branch into the topic branch instead of creating a deployment. This auto-merge happens when:
+    *
+    * *   Auto-merge option is enabled in the repository
+    * *   Topic branch does not include the latest changes on the base branch, which is `master`in the response example
+    * *   There are no merge conflicts
+    *
+    * If there are no new commits in the base branch, a new request to create a deployment should give a successful response.
+    *
+    * This error happens when the `auto_merge` option is enabled and when the default branch (in this case `master`), can't be merged into the branch that's being deployed (in this case `topic-branch`), due to merge conflicts.
+    *
+    * This error happens when the `required_contexts` parameter indicates that one or more contexts need to have a `success` status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
   def createDeployment(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def createDeployment(params: atOctokitRestLib.atOctokitRestMod.ReposCreateDeploymentParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Users with `push` access can create deployment statuses for a given deployment.,* ,* GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
+    * Users with `push` access can create deployment statuses for a given deployment.
+    *
+    * GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
     */
   def createDeploymentStatus(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateDeploymentStatusResponse]
@@ -680,7 +1079,14 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateFileResponse]
   ] = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).,* ,* **OAuth scope requirements**,* ,* When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:,* ,* *   `public_repo` scope or `repo` scope to create a public repository,* *   `repo` scope to create a private repository
+    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    *
+    * **OAuth scope requirements**
+    *
+    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    *
+    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `repo` scope to create a private repository
     */
   def createForAuthenticatedUser(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateForAuthenticatedUserResponse]
@@ -689,7 +1095,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateForAuthenticatedUserResponse]
   ] = js.native
   /**
-    * Create a fork for the authenticated user.,* ,* **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://github.com/contact).
+    * Create a fork for the authenticated user.
+    *
+    * **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://github.com/contact).
     */
   def createFork(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateForkResponse]
@@ -698,7 +1106,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateForkResponse]
   ] = js.native
   /**
-    * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can share the same `config` as long as those webhooks do not have any `events` that overlap.,* ,* Here's how you can create a hook that posts payloads in JSON format:
+    * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can share the same `config` as long as those webhooks do not have any `events` that overlap.
+    *
+    * Here's how you can create a hook that posts payloads in JSON format:
     */
   def createHook(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateHookResponse]
@@ -707,7 +1117,14 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateHookResponse]
   ] = js.native
   /**
-    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).,* ,* **OAuth scope requirements**,* ,* When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:,* ,* *   `public_repo` scope or `repo` scope to create a public repository,* *   `repo` scope to create a private repository
+    * **Note**: There are two endpoints for creating a repository: one to create a repository on a user account, and one to create a repository in an organization. The organization endpoint is fully enabled for [GitHub Apps](https://developer.github.com/v3/apps/available-endpoints/), whereas the user endpoint is enabled only for [user-to-server requests](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#user-to-server-requests).
+    *
+    * **OAuth scope requirements**
+    *
+    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    *
+    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `repo` scope to create a private repository
     */
   def createInOrg(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateInOrgResponse]
@@ -716,7 +1133,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateInOrgResponse]
   ] = js.native
   /**
-    * Users with push access to the repository can create a release.,* ,* This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * Users with push access to the repository can create a release.
+    *
+    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def createRelease(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateReleaseResponse]
@@ -725,7 +1144,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateReleaseResponse]
   ] = js.native
   /**
-    * Users with push access in a repository can create commit statuses for a given SHA.,* ,* Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
+    * Users with push access in a repository can create commit statuses for a given SHA.
+    *
+    * Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
     */
   def createStatus(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateStatusResponse]
@@ -740,7 +1161,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDeclineInvitationResponse]
   ] = js.native
   /**
-    * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.,* ,* If an organization owner has configured the organization to prevent members from deleting organization-owned repositories, a member will get this response:
+    * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
+    *
+    * If an organization owner has configured the organization to prevent members from deleting organization-owned repositories, a member will get this response:
     */
   def delete(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDeleteResponse]
@@ -761,7 +1184,18 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDeleteDownloadResponse]
   ] = js.native
   /**
-    * Deletes a file in a repository.,* ,* The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.,* ,* You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.,* ,* Both the `author` and `committer` parameters have the same keys:,* ,* | name  | type   | description                                          |,* | ----- | ------ | ---------------------------------------------------- |,* | name  | string | The name of the author (or committer) of the commit  |,* | email | string | The email of the author (or committer) of the commit |
+    * Deletes a file in a repository.
+    *
+    * The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.
+    *
+    * You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.
+    *
+    * Both the `author` and `committer` parameters have the same keys:
+    *
+    * | name  | type   | description                                          |
+    * | ----- | ------ | ---------------------------------------------------- |
+    * | name  | string | The name of the author (or committer) of the commit  |
+    * | email | string | The email of the author (or committer) of the commit |
     */
   def deleteFile(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDeleteFileResponse]
@@ -818,7 +1252,11 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetResponse]
   ] = js.native
   /**
-    * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.,* ,* _Note_: For private repositories, these links are temporary and expire after five minutes.,* ,* To follow redirects with curl, use the `-L` switch:,* ,*
+    * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.
+    *
+    * _Note_: For private repositories, these links are temporary and expire after five minutes.
+    *
+    * To follow redirects with curl, use the `-L` switch:
     */
   def getArchiveLink(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetArchiveLinkResponse]
@@ -851,7 +1289,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetClonesResponse]
   ] = js.native
   /**
-    * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.,* ,*
+    * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
     */
   def getCodeFrequencyStats(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCodeFrequencyStatsResponse]
@@ -865,7 +1303,15 @@ trait Anon_AcceptInvitation extends js.Object {
   def getCollaboratorPermissionLevel(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getCollaboratorPermissionLevel(params: atOctokitRestLib.atOctokitRestMod.ReposGetCollaboratorPermissionLevelParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.,* ,* The most recent status for each context is returned, up to 100. This field [paginates](https://developer.github.com/v3/#pagination) if there are over 100 contexts.,* ,* Additionally, a combined `state` is returned. The `state` is one of:,* ,* *   **failure** if any of the contexts report as `error` or `failure`,* *   **pending** if there are no statuses or a context is `pending`,* *   **success** if the latest status for all contexts is `success`
+    * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
+    *
+    * The most recent status for each context is returned, up to 100. This field [paginates](https://developer.github.com/v3/#pagination) if there are over 100 contexts.
+    *
+    * Additionally, a combined `state` is returned. The `state` is one of:
+    *
+    * *   **failure** if any of the contexts report as `error` or `failure`
+    * *   **pending** if there are no statuses or a context is `pending`
+    * *   **success** if the latest status for all contexts is `success`
     */
   def getCombinedStatusForRef(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCombinedStatusForRefResponse]
@@ -874,7 +1320,29 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCombinedStatusForRefResponse]
   ] = js.native
   /**
-    * Diffs with binary data will have no `patch` property. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Diffs with binary data will have no `patch` property. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   def getCommit(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
@@ -882,8 +1350,11 @@ trait Anon_AcceptInvitation extends js.Object {
   def getCommit(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
   ] = js.native
+  def getCommit(params: atOctokitRestLib.atOctokitRestMod.ReposGetCommitParamsDeprecatedSha): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitResponse]
+  ] = js.native
   /**
-    * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.,* ,*
+    * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
     */
   def getCommitActivityStats(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitActivityStatsResponse]
@@ -898,7 +1369,14 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitCommentResponse]
   ] = js.native
   /**
-    * **Note:** To access this endpoint, you must provide a custom [media type](https://developer.github.com/v3/media) in the `Accept` header:,* ,* ```,* application/vnd.github.VERSION.sha,* ,* ```,* ,* Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.,* ,*
+    * **Note:** To access this endpoint, you must provide a custom [media type](https://developer.github.com/v3/media) in the `Accept` header:
+    *
+    * ```
+    * application/vnd.github.VERSION.sha
+    *
+    * ```
+    *
+    * Returns the SHA-1 of the commit reference. You must have `read` access for the repository to get the SHA-1 of a commit reference. You can use this endpoint to check if a remote reference's SHA-1 is the same as your local reference's SHA-1 by providing the local SHA-1 reference as the ETag.
     */
   def getCommitRefSha(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitRefShaResponse]
@@ -907,12 +1385,39 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetCommitRefShaResponse]
   ] = js.native
   /**
-    * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.,* ,* Files and symlinks support [a custom media type](#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](#custom-media-types) to ensure the content is returned in a consistent object format.,* ,* **Note**:,* ,* *   To get a repository's contents recursively, you can [recursively get the tree](https://developer.github.com/v3/git/trees/).,* *   This API has an upper limit of 1,000 files for a directory. If you need to retrieve more files, use the [Git Trees API](https://developer.github.com/v3/git/trees/#get-a-tree).,* *   This API supports files up to 1 megabyte in size.,* ,* The response will be an array of objects, one object for each item in the directory.,* ,* When listing the contents of a directory, submodules have their "type" specified as "file". Logically, the value _should_ be "submodule". This behavior exists in API v3 [for backwards compatibility purposes](https://git.io/v1YCW). In the next major version of the API, the type will be returned as "submodule".,* ,* If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](#response-if-content-is-a-file)).,* ,* Otherwise, the API responds with an object describing the symlink itself:,* ,* The `submodule_git_url` identifies the location of the submodule repository, and the `sha` identifies a specific commit within the submodule repository. Git uses the given URL when cloning the submodule repository, and checks out the submodule at that specific commit.,* ,* If the submodule repository is not hosted on github.com, the Git URLs (`git_url` and `_links["git"]`) and the github.com URLs (`html_url` and `_links["html"]`) will have null values.
+    * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.
+    *
+    * Files and symlinks support [a custom media type](#custom-media-types) for retrieving the raw content or rendered HTML (when supported). All content types support [a custom media type](#custom-media-types) to ensure the content is returned in a consistent object format.
+    *
+    * **Note**:
+    *
+    * *   To get a repository's contents recursively, you can [recursively get the tree](https://developer.github.com/v3/git/trees/).
+    * *   This API has an upper limit of 1,000 files for a directory. If you need to retrieve more files, use the [Git Trees API](https://developer.github.com/v3/git/trees/#get-a-tree).
+    * *   This API supports files up to 1 megabyte in size.
+    *
+    * The response will be an array of objects, one object for each item in the directory.
+    *
+    * When listing the contents of a directory, submodules have their "type" specified as "file". Logically, the value _should_ be "submodule". This behavior exists in API v3 [for backwards compatibility purposes](https://git.io/v1YCW). In the next major version of the API, the type will be returned as "submodule".
+    *
+    * If the requested `:path` points to a symlink, and the symlink's target is a normal file in the repository, then the API responds with the content of the file (in the [format shown above](#response-if-content-is-a-file)).
+    *
+    * Otherwise, the API responds with an object describing the symlink itself:
+    *
+    * The `submodule_git_url` identifies the location of the submodule repository, and the `sha` identifies a specific commit within the submodule repository. Git uses the given URL when cloning the submodule repository, and checks out the submodule at that specific commit.
+    *
+    * If the submodule repository is not hosted on github.com, the Git URLs (`git_url` and `_links["git"]`) and the github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
   def getContents(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getContents(params: atOctokitRestLib.atOctokitRestMod.ReposGetContentsParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * *   `total` - The Total number of commits authored by the contributor.,* ,* Weekly Hash (`weeks` array):,* ,* *   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).,* *   `a` - Number of additions,* *   `d` - Number of deletions,* *   `c` - Number of commits,* ,*
+    * *   `total` - The Total number of commits authored by the contributor.
+    *
+    * Weekly Hash (`weeks` array):
+    *
+    * *   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).
+    * *   `a` - Number of additions
+    * *   `d` - Number of deletions
+    * *   `c` - Number of commits
     */
   def getContributorsStats(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetContributorsStatsResponse]
@@ -960,7 +1465,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetLatestPagesBuildResponse]
   ] = js.native
   /**
-    * View the latest published full release for the repository.,* ,* The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
+    * View the latest published full release for the repository.
+    *
+    * The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
     */
   def getLatestRelease(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetLatestReleaseResponse]
@@ -981,7 +1488,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetPagesBuildResponse]
   ] = js.native
   /**
-    * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.,* ,* The array order is oldest week (index 0) to most recent week.,* ,*
+    * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.
+    *
+    * The array order is oldest week (index 0) to most recent week.
     */
   def getParticipationStats(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetParticipationStatsResponse]
@@ -1002,7 +1511,11 @@ trait Anon_AcceptInvitation extends js.Object {
     params: atOctokitRestLib.atOctokitRestMod.ReposGetProtectedBranchPullRequestReviewEnforcementParams
   ): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* When authenticated with admin or owner permissions to the repository, you can use this endpoint to check whether a branch requires signed commits. An enabled status of `true` indicates you must sign commits on this branch. For more information, see [Signing commits with GPG](https://help.github.com/articles/signing-commits-with-gpg) in GitHub Help.,* ,* **Note**: You must enable branch protection to require signed commits.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * When authenticated with admin or owner permissions to the repository, you can use this endpoint to check whether a branch requires signed commits. An enabled status of `true` indicates you must sign commits on this branch. For more information, see [Signing commits with GPG](https://help.github.com/articles/signing-commits-with-gpg) in GitHub Help.
+    *
+    * **Note**: You must enable branch protection to require signed commits.
     */
   def getProtectedBranchRequiredSignatures(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1028,12 +1541,20 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* **Note**: Teams and users `restrictions` are only available for organization-owned repositories.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * **Note**: Teams and users `restrictions` are only available for organization-owned repositories.
     */
   def getProtectedBranchRestrictions(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getProtectedBranchRestrictions(params: atOctokitRestLib.atOctokitRestMod.ReposGetProtectedBranchRestrictionsParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Each array contains the day number, hour number, and number of commits:,* ,* *   `0-6`: Sunday - Saturday,* *   `0-23`: Hour of day,* *   Number of commits,* ,* For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
+    * Each array contains the day number, hour number, and number of commits:
+    *
+    * *   `0-6`: Sunday - Saturday
+    * *   `0-23`: Hour of day
+    * *   Number of commits
+    *
+    * For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
     */
   def getPunchCardStats(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetPunchCardStatsResponse]
@@ -1042,7 +1563,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetPunchCardStatsResponse]
   ] = js.native
   /**
-    * Gets the preferred README for a repository.,* ,* READMEs support [custom media types](#custom-media-types) for retrieving the raw content or rendered HTML.
+    * Gets the preferred README for a repository.
+    *
+    * READMEs support [custom media types](#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   def getReadme(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetReadmeResponse]
@@ -1105,7 +1628,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposGetViewsResponse]
   ] = js.native
   /**
-    * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.,* ,* The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
+    * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
+    *
+    * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
   def list(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def list(params: atOctokitRestLib.atOctokitRestMod.ReposListParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -1122,7 +1647,20 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListBranchesResponse]
   ] = js.native
   /**
-    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.,* ,* If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Returns all branches where the given commit SHA is the HEAD, or latest commit for the branch.
+    */
+  def listBranchesForHeadCommit(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListBranchesForHeadCommitResponse]
+  ] = js.native
+  def listBranchesForHeadCommit(params: atOctokitRestLib.atOctokitRestMod.ReposListBranchesForHeadCommitParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListBranchesForHeadCommitResponse]
+  ] = js.native
+  /**
+    * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
+    *
+    * If you pass the `hellcat-preview` media type, team members will include the members of child teams.
     */
   def listCollaborators(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCollaboratorsResponse]
@@ -1137,7 +1675,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommentsForCommitResponse]
   ] = js.native
   /**
-    * Commit Comments use [these custom media types](#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).,* ,* Comments are ordered by ascending ID.,* ,*
+    * Commit Comments use [these custom media types](#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
+    *
+    * Comments are ordered by ascending ID.
     */
   def listCommitComments(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommitCommentsResponse]
@@ -1146,7 +1686,27 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommitCommentsResponse]
   ] = js.native
   /**
-    * **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   def listCommits(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommitsResponse]
@@ -1155,7 +1715,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommitsResponse]
   ] = js.native
   /**
-    * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API v3 caches contributor data to improve performance.,* ,* GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
+    * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API v3 caches contributor data to improve performance.
+    *
+    * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
   def listContributors(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def listContributors(params: atOctokitRestLib.atOctokitRestMod.ReposListContributorsParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -1216,7 +1778,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListHooksResponse]
   ] = js.native
   /**
-    * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.,* ,*
+    * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
     */
   def listInvitations(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListInvitationsResponse]
@@ -1225,7 +1787,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListInvitationsResponse]
   ] = js.native
   /**
-    * When authenticating as a user, this endpoint will list all currently open repository invitations for that user.,* ,*
+    * When authenticating as a user, this endpoint will list all currently open repository invitations for that user.
     */
   def listInvitationsForAuthenticatedUser(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1260,7 +1822,9 @@ trait Anon_AcceptInvitation extends js.Object {
     params: atOctokitRestLib.atOctokitRestMod.ReposListProtectedBranchRequiredStatusChecksContextsParams
   ): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
     */
   def listProtectedBranchTeamRestrictions(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1273,12 +1837,16 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Lists the people who have push access to this branch.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Lists the people who have push access to this branch.
     */
   def listProtectedBranchUserRestrictions(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def listProtectedBranchUserRestrictions(params: atOctokitRestLib.atOctokitRestMod.ReposListProtectedBranchUserRestrictionsParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * This provides a dump of every public repository, in the order that they were created.,* ,* Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
+    * This provides a dump of every public repository, in the order that they were created.
+    *
+    * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
     */
   def listPublic(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListPublicResponse]
@@ -1287,7 +1855,22 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListPublicResponse]
   ] = js.native
   /**
-    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://developer.github.com/v3/repos/#list-tags).,* ,* Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
+    * Lists all pull requests containing the provided commit SHA, which can be from any point in the commit history. The results will include open and closed pull requests. Additional preview headers may be required to see certain details for associated pull requests, such as whether a pull request is in a draft state. For more information about previews that might affect this endpoint, see the [List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests) endpoint.
+    */
+  def listPullRequestsAssociatedWithCommit(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[
+      atOctokitRestLib.atOctokitRestMod.ReposListPullRequestsAssociatedWithCommitResponse
+    ]
+  ] = js.native
+  def listPullRequestsAssociatedWithCommit(params: atOctokitRestLib.atOctokitRestMod.ReposListPullRequestsAssociatedWithCommitParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[
+      atOctokitRestLib.atOctokitRestMod.ReposListPullRequestsAssociatedWithCommitResponse
+    ]
+  ] = js.native
+  /**
+    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://developer.github.com/v3/repos/#list-tags).
+    *
+    * Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
     */
   def listReleases(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListReleasesResponse]
@@ -1296,7 +1879,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListReleasesResponse]
   ] = js.native
   /**
-    * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.,* ,* This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
+    * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.
+    *
+    * This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
     */
   def listStatusesForRef(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListStatusesForRefResponse]
@@ -1355,7 +1940,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposRemoveDeployKeyResponse]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   def removeProtectedBranchAdminEnforcement(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def removeProtectedBranchAdminEnforcement(params: atOctokitRestLib.atOctokitRestMod.ReposRemoveProtectedBranchAdminEnforcementParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -1367,7 +1954,9 @@ trait Anon_AcceptInvitation extends js.Object {
     params: atOctokitRestLib.atOctokitRestMod.ReposRemoveProtectedBranchPullRequestReviewEnforcementParams
   ): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
     */
   def removeProtectedBranchRequiredSignatures(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def removeProtectedBranchRequiredSignatures(params: atOctokitRestLib.atOctokitRestMod.ReposRemoveProtectedBranchRequiredSignaturesParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -1392,12 +1981,20 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Disables the ability to restrict who can push to this branch.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Disables the ability to restrict who can push to this branch.
     */
   def removeProtectedBranchRestrictions(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def removeProtectedBranchRestrictions(params: atOctokitRestLib.atOctokitRestMod.ReposRemoveProtectedBranchRestrictionsParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Removes the ability of a team to push to this branch. If you pass the `hellcat-preview` media type, you can include child teams.,* ,* | Type    | Description                                                                                                                                  |,* | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removes the ability of a team to push to this branch. If you pass the `hellcat-preview` media type, you can include child teams.
+    *
+    * | Type    | Description                                                                                                                                  |
+    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   def removeProtectedBranchTeamRestrictions(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1410,7 +2007,13 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Removes the ability of a team to push to this branch.,* ,* | Type    | Description                                                                                                                            |,* | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Removes the ability of a team to push to this branch.
+    *
+    * | Type    | Description                                                                                                                            |
+    * | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   def removeProtectedBranchUserRestrictions(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1438,7 +2041,13 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Replaces the list of teams that have push access to this branch. This removes all teams that previously had push access and grants push access to the new list of teams. If you pass the `hellcat-preview` media type, you can include child teams.,* ,* | Type    | Description                                                                                                                         |,* | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |,* | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Replaces the list of teams that have push access to this branch. This removes all teams that previously had push access and grants push access to the new list of teams. If you pass the `hellcat-preview` media type, you can include child teams.
+    *
+    * | Type    | Description                                                                                                                         |
+    * | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   def replaceProtectedBranchTeamRestrictions(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1451,7 +2060,13 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Replaces the list of people that have push access to this branch. This removes all people that previously had push access and grants push access to the new list of people.,* ,* | Type    | Description                                                                                                            |,* | ------- | ---------------------------------------------------------------------------------------------------------------------- |,* | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Replaces the list of people that have push access to this branch. This removes all people that previously had push access and grants push access to the new list of people.
+    *
+    * | Type    | Description                                                                                                            |
+    * | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+    * | `array` | Usernames for people who can have push access. **Note**: The list of users and teams in total is limited to 100 items. |
     */
   def replaceProtectedBranchUserRestrictions(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1470,7 +2085,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposReplaceTopicsResponse]
   ] = js.native
   /**
-    * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.,* ,* Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
+    * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.
+    *
+    * Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
     */
   def requestPageBuild(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposRequestPageBuildResponse]
@@ -1488,7 +2105,9 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposRetrieveCommunityProfileMetricsResponse]
   ] = js.native
   /**
-    * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.,* ,* **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
+    * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.
+    *
+    * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
   def testPushHook(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposTestPushHookResponse]
@@ -1515,7 +2134,13 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateResponse]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Protecting a branch requires admin or owner permissions to the repository.,* ,* **Note**: Passing new arrays of `users` and `teams` replaces their previous values.,* ,* **Note**: The list of users and teams in total is limited to 100 items.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Protecting a branch requires admin or owner permissions to the repository.
+    *
+    * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
+    *
+    * **Note**: The list of users and teams in total is limited to 100 items.
     */
   def updateBranchProtection(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateBranchProtectionResponse]
@@ -1557,7 +2182,11 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateInvitationResponse]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Updating pull request review enforcement requires admin or owner permissions to the repository and branch protection to be enabled.,* ,* **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Updating pull request review enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
+    *
+    * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     */
   def updateProtectedBranchPullRequestReviewEnforcement(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1572,7 +2201,9 @@ trait Anon_AcceptInvitation extends js.Object {
     ]
   ] = js.native
   /**
-    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.,* ,* Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
+    * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+    *
+    * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   def updateProtectedBranchRequiredStatusChecks(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[
@@ -1603,7 +2234,13 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateReleaseAssetResponse]
   ] = js.native
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.,* ,* The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.,* ,* Send the raw binary content of the asset as the request body.,* ,* This may leave an empty asset with a state of `"new"`. It can be safely deleted.
+    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. This endpoint is provided by a URI template in [the release's API response](#get-a-single-release). You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
+    *
+    * The asset data is expected in its raw binary form, rather than JSON. Everything else about the endpoint is the same as the rest of the API. For example, you'll still need to pass your authentication to be able to upload an asset.
+    *
+    * Send the raw binary content of the asset as the request body.
+    *
+    * This may leave an empty asset with a state of `"new"`. It can be safely deleted.
     */
   def uploadReleaseAsset(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def uploadReleaseAsset(params: atOctokitRestLib.atOctokitRestMod.ReposUploadReleaseAssetParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native

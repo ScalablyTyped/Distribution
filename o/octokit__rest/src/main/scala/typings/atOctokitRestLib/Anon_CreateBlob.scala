@@ -10,7 +10,33 @@ trait Anon_CreateBlob extends js.Object {
   @JSName("createBlob")
   var createBlob_Original: Anon_EndpointParamsGitCreateBlobParams = js.native
   /**
-    * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).,* ,* In this example, the payload of the signature would be:,* ,* ,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
+    *
+    * In this example, the payload of the signature would be:
+    *
+    *
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("createCommit")
   var createCommit_Original: Anon_EndpointParamsGitCreateCommitParams = js.native
@@ -20,7 +46,29 @@ trait Anon_CreateBlob extends js.Object {
   @JSName("createRef")
   var createRef_Original: Anon_EndpointParamsGitCreateRefParams = js.native
   /**
-    * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("createTag")
   var createTag_Original: Anon_EndpointParamsGitCreateTagParams = js.native
@@ -30,17 +78,47 @@ trait Anon_CreateBlob extends js.Object {
   @JSName("createTree")
   var createTree_Original: Anon_EndpointParamsGitCreateTreeParams = js.native
   /**
-    * ```,* DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a,* ```,* ,* ```,* DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0,* ```
+    * ```
+    * DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a
+    * ```
+    *
+    * ```
+    * DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
+    * ```
     */
   @JSName("deleteRef")
   var deleteRef_Original: Anon_EndpointParamsGitDeleteRefParams = js.native
   /**
-    * The `content` in the response will always be Base64 encoded.,* ,* _Note_: This API supports blobs up to 100 megabytes in size.
+    * The `content` in the response will always be Base64 encoded.
+    *
+    * _Note_: This API supports blobs up to 100 megabytes in size.
     */
   @JSName("getBlob")
   var getBlob_Original: Anon_EndpointParamsGitGetBlobParams = js.native
   /**
-    * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("getCommit")
   var getCommit_Original: Anon_EndpointParamsGitGetCommitParams = js.native
@@ -50,7 +128,27 @@ trait Anon_CreateBlob extends js.Object {
   @JSName("getRef")
   var getRef_Original: Anon_EndpointParamsAnyResponseGitGetRefParams = js.native
   /**
-    * **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("getTag")
   var getTag_Original: Anon_EndpointParamsGitGetTagParams = js.native
@@ -73,7 +171,33 @@ trait Anon_CreateBlob extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitCreateBlobResponse]
   ] = js.native
   /**
-    * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).,* ,* In this example, the payload of the signature would be:,* ,* ,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
+    *
+    * In this example, the payload of the signature would be:
+    *
+    *
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   def createCommit(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitCreateCommitResponse]
@@ -91,7 +215,29 @@ trait Anon_CreateBlob extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitCreateRefResponse]
   ] = js.native
   /**
-    * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   def createTag(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitCreateTagResponse]
@@ -109,7 +255,13 @@ trait Anon_CreateBlob extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitCreateTreeResponse]
   ] = js.native
   /**
-    * ```,* DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a,* ```,* ,* ```,* DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0,* ```
+    * ```
+    * DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a
+    * ```
+    *
+    * ```
+    * DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
+    * ```
     */
   def deleteRef(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitDeleteRefResponse]
@@ -118,7 +270,9 @@ trait Anon_CreateBlob extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitDeleteRefResponse]
   ] = js.native
   /**
-    * The `content` in the response will always be Base64 encoded.,* ,* _Note_: This API supports blobs up to 100 megabytes in size.
+    * The `content` in the response will always be Base64 encoded.
+    *
+    * _Note_: This API supports blobs up to 100 megabytes in size.
     */
   def getBlob(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitGetBlobResponse]
@@ -127,7 +281,29 @@ trait Anon_CreateBlob extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitGetBlobResponse]
   ] = js.native
   /**
-    * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).,* ,* **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   def getCommit(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitGetCommitResponse]
@@ -141,7 +317,27 @@ trait Anon_CreateBlob extends js.Object {
   def getRef(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def getRef(params: atOctokitRestLib.atOctokitRestMod.GitGetRefParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * **Signature verification object**,* ,* The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:,* ,* These are the possible values for `reason` in the `verification` object:,* ,* | Value                    | Description                                                                                                                       |,* | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |,* | `expired_key`            | The key that made the signature is expired.                                                                                       |,* | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |,* | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |,* | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |,* | `unsigned`               | The object does not include a signature.                                                                                          |,* | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |,* | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |,* | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |,* | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |,* | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |,* | `malformed_signature`    | There was an error parsing the signature.                                                                                         |,* | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |,* | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value                    | Description                                                                                                                       |
+    * | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+    * | `expired_key`            | The key that made the signature is expired.                                                                                       |
+    * | `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+    * | `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+    * | `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+    * | `unsigned`               | The object does not include a signature.                                                                                          |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+    * | `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+    * | `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+    * | `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+    * | `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+    * | `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+    * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   def getTag(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitGetTagResponse]

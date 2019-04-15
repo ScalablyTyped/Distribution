@@ -16,7 +16,8 @@ trait ChecksUpdateParams extends js.Object {
     */
   var completed_at: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * **Required if you provide `completed_at` or a `status` of `completed`**. The final conclusion of the check. Can be one of `success`, `failure`, `neutral`, `cancelled`, `timed_out`, or `action_required`.  ,* **Note:** Providing `conclusion` will automatically set the `status` parameter to `completed`.
+    * **Required if you provide `completed_at` or a `status` of `completed`**. The final conclusion of the check. Can be one of `success`, `failure`, `neutral`, `cancelled`, `timed_out`, or `action_required`.
+    * **Note:** Providing `conclusion` will automatically set the `status` parameter to `completed`.
     */
   var conclusion: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.success | atOctokitRestLib.atOctokitRestLibStrings.failure | atOctokitRestLib.atOctokitRestLibStrings.neutral | atOctokitRestLib.atOctokitRestLibStrings.cancelled | atOctokitRestLib.atOctokitRestLibStrings.timed_out | atOctokitRestLib.atOctokitRestLibStrings.action_required

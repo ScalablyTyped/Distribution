@@ -12,7 +12,9 @@ trait Anon_CheckIsStarred extends js.Object {
   @JSName("createComment")
   var createComment_Original: Anon_EndpointParamsGistsCreateCommentParams = js.native
   /**
-    * Allows you to add a new gist with one or more files.,* ,* **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
+    * Allows you to add a new gist with one or more files.
+    *
+    * **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
     */
   @JSName("create")
   var create_Original: Anon_EndpointParamsGistsCreateParams = js.native
@@ -40,7 +42,9 @@ trait Anon_CheckIsStarred extends js.Object {
   @JSName("listPublicForUser")
   var listPublicForUser_Original: Anon_EndpointParamsGistsListPublicForUserParams = js.native
   /**
-    * List all public gists sorted by most recently updated to least recently updated.,* ,* Note: With [pagination](https://developer.github.com/v3/#pagination), you can fetch up to 3000 gists. For example, you can fetch 100 pages with 30 gists per page or 30 pages with 100 gists per page.
+    * List all public gists sorted by most recently updated to least recently updated.
+    *
+    * Note: With [pagination](https://developer.github.com/v3/#pagination), you can fetch up to 3000 gists. For example, you can fetch 100 pages with 30 gists per page or 30 pages with 100 gists per page.
     */
   @JSName("listPublic")
   var listPublic_Original: Anon_EndpointParamsGistsListPublicParams = js.native
@@ -68,7 +72,9 @@ trait Anon_CheckIsStarred extends js.Object {
   def checkIsStarred(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def checkIsStarred(params: atOctokitRestLib.atOctokitRestMod.GistsCheckIsStarredParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * Allows you to add a new gist with one or more files.,* ,* **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
+    * Allows you to add a new gist with one or more files.
+    *
+    * **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
     */
   def create(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GistsCreateResponse]
@@ -146,7 +152,9 @@ trait Anon_CheckIsStarred extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GistsListForksResponse]
   ] = js.native
   /**
-    * List all public gists sorted by most recently updated to least recently updated.,* ,* Note: With [pagination](https://developer.github.com/v3/#pagination), you can fetch up to 3000 gists. For example, you can fetch 100 pages with 30 gists per page or 30 pages with 100 gists per page.
+    * List all public gists sorted by most recently updated to least recently updated.
+    *
+    * Note: With [pagination](https://developer.github.com/v3/#pagination), you can fetch up to 3000 gists. For example, you can fetch 100 pages with 30 gists per page or 30 pages with 100 gists per page.
     */
   def listPublic(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GistsListPublicResponse]

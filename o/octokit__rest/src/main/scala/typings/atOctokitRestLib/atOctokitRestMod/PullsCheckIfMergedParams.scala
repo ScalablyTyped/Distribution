@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PullsCheckIfMergedParams extends js.Object {
-  var number: scala.Double
   var owner: java.lang.String
+  var pull_number: scala.Double
   var repo: java.lang.String
 }
 
 object PullsCheckIfMergedParams {
   @scala.inline
-  def apply(number: scala.Double, owner: java.lang.String, repo: java.lang.String): PullsCheckIfMergedParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+  def apply(owner: java.lang.String, pull_number: scala.Double, repo: java.lang.String): PullsCheckIfMergedParams = {
+    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
   
     __obj.asInstanceOf[PullsCheckIfMergedParams]
   }

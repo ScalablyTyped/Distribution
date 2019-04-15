@@ -91,6 +91,9 @@ object detectDashBrowserLibStrings {
   sealed trait bb10 extends Browser
   
   @js.native
+  sealed trait beaker extends Browser
+  
+  @js.native
   sealed trait bot extends js.Object
   
   @js.native
@@ -101,6 +104,9 @@ object detectDashBrowserLibStrings {
   
   @js.native
   sealed trait edge extends Browser
+  
+  @js.native
+  sealed trait `edge-chromium` extends Browser
   
   @js.native
   sealed trait facebook extends Browser
@@ -219,6 +225,8 @@ object detectDashBrowserLibStrings {
   @scala.inline
   def bb10: bb10 = "bb10".asInstanceOf[bb10]
   @scala.inline
+  def beaker: beaker = "beaker".asInstanceOf[beaker]
+  @scala.inline
   def bot: bot = "bot".asInstanceOf[bot]
   @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]
@@ -226,6 +234,8 @@ object detectDashBrowserLibStrings {
   def crios: crios = "crios".asInstanceOf[crios]
   @scala.inline
   def edge: edge = "edge".asInstanceOf[edge]
+  @scala.inline
+  def `edge-chromium`: `edge-chromium` = "edge-chromium".asInstanceOf[`edge-chromium`]
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   @scala.inline

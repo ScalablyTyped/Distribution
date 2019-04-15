@@ -15,6 +15,9 @@ trait Anon_EndpointParamsPromisePullsListReviewRequestsParams extends js.Object 
   def apply(params: atOctokitRestLib.atOctokitRestMod.PullsListReviewRequestsParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsListReviewRequestsResponse]
   ] = js.native
+  def apply(params: atOctokitRestLib.atOctokitRestMod.PullsListReviewRequestsParamsDeprecatedNumber): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsListReviewRequestsResponse]
+  ] = js.native
   def endpoint(EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String, EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native

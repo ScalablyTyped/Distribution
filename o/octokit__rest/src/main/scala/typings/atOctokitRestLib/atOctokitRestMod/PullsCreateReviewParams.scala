@@ -24,23 +24,23 @@ trait PullsCreateReviewParams extends js.Object {
   var event: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.APPROVE | atOctokitRestLib.atOctokitRestLibStrings.REQUEST_CHANGES | atOctokitRestLib.atOctokitRestLibStrings.COMMENT
   ] = js.undefined
-  var number: scala.Double
   var owner: java.lang.String
+  var pull_number: scala.Double
   var repo: java.lang.String
 }
 
 object PullsCreateReviewParams {
   @scala.inline
   def apply(
-    number: scala.Double,
     owner: java.lang.String,
+    pull_number: scala.Double,
     repo: java.lang.String,
     body: java.lang.String = null,
     comments: js.Array[PullsCreateReviewParamsComments] = null,
     commit_id: java.lang.String = null,
     event: atOctokitRestLib.atOctokitRestLibStrings.APPROVE | atOctokitRestLib.atOctokitRestLibStrings.REQUEST_CHANGES | atOctokitRestLib.atOctokitRestLibStrings.COMMENT = null
   ): PullsCreateReviewParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
     if (body != null) __obj.updateDynamic("body")(body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (commit_id != null) __obj.updateDynamic("commit_id")(commit_id)

@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait OrgsAddOrUpdateMembershipParams extends js.Object {
   var org: java.lang.String
   /**
-    * The role to give the user in the organization. Can be one of:  ,* \* `admin` - The user will become an owner of the organization.  ,* \* `member` - The user will become a non-owner member of the organization.
+    * The role to give the user in the organization. Can be one of:
+    * \* `admin` - The user will become an owner of the organization.
+    * \* `member` - The user will become a non-owner member of the organization.
     */
   var role: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.admin | atOctokitRestLib.atOctokitRestLibStrings.member

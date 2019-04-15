@@ -90,6 +90,9 @@ trait Anon_CreateForCommitComment extends js.Object {
   def createForIssue(params: atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueResponse]
   ] = js.native
+  def createForIssue(params: atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueParamsDeprecatedNumber): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReactionsCreateForIssueResponse]
+  ] = js.native
   /**
     * Create a reaction to an [issue comment](https://developer.github.com/v3/issues/comments/). A response with a `Status: 200 OK` means that you already added the reaction type to this issue comment.
     */
@@ -159,6 +162,9 @@ trait Anon_CreateForCommitComment extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReactionsListForIssueResponse]
   ] = js.native
   def listForIssue(params: atOctokitRestLib.atOctokitRestMod.ReactionsListForIssueParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReactionsListForIssueResponse]
+  ] = js.native
+  def listForIssue(params: atOctokitRestLib.atOctokitRestMod.ReactionsListForIssueParamsDeprecatedNumber): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReactionsListForIssueResponse]
   ] = js.native
   /**

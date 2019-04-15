@@ -12,7 +12,7 @@ trait ReactionsListForIssueParams extends js.Object {
   var content: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.`+1` | atOctokitRestLib.atOctokitRestLibStrings.`-1` | atOctokitRestLib.atOctokitRestLibStrings.laugh | atOctokitRestLib.atOctokitRestLibStrings.confused | atOctokitRestLib.atOctokitRestLibStrings.heart | atOctokitRestLib.atOctokitRestLibStrings.hooray
   ] = js.undefined
-  var number: scala.Double
+  var issue_number: scala.Double
   var owner: java.lang.String
   /**
     * Page number of the results to fetch.
@@ -28,14 +28,14 @@ trait ReactionsListForIssueParams extends js.Object {
 object ReactionsListForIssueParams {
   @scala.inline
   def apply(
-    number: scala.Double,
+    issue_number: scala.Double,
     owner: java.lang.String,
     repo: java.lang.String,
     content: atOctokitRestLib.atOctokitRestLibStrings.`+1` | atOctokitRestLib.atOctokitRestLibStrings.`-1` | atOctokitRestLib.atOctokitRestLibStrings.laugh | atOctokitRestLib.atOctokitRestLibStrings.confused | atOctokitRestLib.atOctokitRestLibStrings.heart | atOctokitRestLib.atOctokitRestLibStrings.hooray = null,
     page: scala.Int | scala.Double = null,
     per_page: scala.Int | scala.Double = null
   ): ReactionsListForIssueParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(issue_number = issue_number, owner = owner, repo = repo)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

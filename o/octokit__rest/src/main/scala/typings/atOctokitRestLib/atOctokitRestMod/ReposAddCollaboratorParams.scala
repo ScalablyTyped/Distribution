@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 trait ReposAddCollaboratorParams extends js.Object {
   var owner: java.lang.String
   /**
-    * The permission to grant the collaborator. **Only valid on organization-owned repositories.** Can be one of:  ,* \* `pull` - can pull, but not push to or administer this repository.  ,* \* `push` - can pull and push, but not administer this repository.  ,* \* `admin` - can pull, push and administer this repository.
+    * The permission to grant the collaborator. **Only valid on organization-owned repositories.** Can be one of:
+    * \* `pull` - can pull, but not push to or administer this repository.
+    * \* `push` - can pull and push, but not administer this repository.
+    * \* `admin` - can pull, push and administer this repository.
     */
   var permission: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.pull | atOctokitRestLib.atOctokitRestLibStrings.push | atOctokitRestLib.atOctokitRestLibStrings.admin

@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait OrgsListOutsideCollaboratorsParams extends js.Object {
   /**
-    * Filter the list of outside collaborators. Can be one of:  ,* \* `2fa_disabled`: Outside collaborators without [two-factor authentication](https://github.com/blog/1614-two-factor-authentication) enabled.  ,* \* `all`: All outside collaborators.
+    * Filter the list of outside collaborators. Can be one of:
+    * \* `2fa_disabled`: Outside collaborators without [two-factor authentication](https://github.com/blog/1614-two-factor-authentication) enabled.
+    * \* `all`: All outside collaborators.
     */
   var filter: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.`2fa_disabled` | atOctokitRestLib.atOctokitRestLibStrings.all

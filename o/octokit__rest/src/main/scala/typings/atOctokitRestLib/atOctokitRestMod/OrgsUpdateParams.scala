@@ -15,7 +15,11 @@ trait OrgsUpdateParams extends js.Object {
     */
   var company: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Default permission level members have for organization repositories:  ,* \* `read` - can pull, but not push to or administer this repository.  ,* \* `write` - can pull and push, but not administer this repository.  ,* \* `admin` - can pull, push, and administer this repository.  ,* \* `none` - no permissions granted by default.
+    * Default permission level members have for organization repositories:
+    * \* `read` - can pull, but not push to or administer this repository.
+    * \* `write` - can pull and push, but not administer this repository.
+    * \* `admin` - can pull, push, and administer this repository.
+    * \* `none` - no permissions granted by default.
     */
   var default_repository_permission: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.read | atOctokitRestLib.atOctokitRestLibStrings.write | atOctokitRestLib.atOctokitRestLibStrings.admin | atOctokitRestLib.atOctokitRestLibStrings.none
@@ -41,13 +45,21 @@ trait OrgsUpdateParams extends js.Object {
     */
   var location: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Specifies which types of repositories non-admin organization members can create. Can be one of:  ,* \* `all` - all organization members can create public and private repositories.  ,* \* `private` - members can create private repositories. This option is only available to repositories that are part of an organization on [GitHub Business Cloud](https://github.com/pricing/business-cloud).  ,* \* `none` - only admin members can create repositories.  ,* **Note:** Using this parameter will override values set in `members_can_create_repositories`. See [this note](#members_can_create_repositories) for details.
+    * Specifies which types of repositories non-admin organization members can create. Can be one of:
+    * \* `all` - all organization members can create public and private repositories.
+    * \* `private` - members can create private repositories. This option is only available to repositories that are part of an organization on [GitHub Business Cloud](https://github.com/pricing/business-cloud).
+    * \* `none` - only admin members can create repositories.
+    * **Note:** Using this parameter will override values set in `members_can_create_repositories`. See [this note](#members_can_create_repositories) for details.
     */
   var members_allowed_repository_creation_type: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.all | atOctokitRestLib.atOctokitRestLibStrings.`private` | atOctokitRestLib.atOctokitRestLibStrings.none
   ] = js.undefined
   /**
-    * Toggles the ability of non-admin organization members to create repositories. Can be one of:  ,* \* `true` - all organization members can create repositories.  ,* \* `false` - only admin members can create repositories.  ,* Default: `true`  ,* **Note:** Another parameter can override the this parameter. See [this note](#members_can_create_repositories) for details. **Note:** Another parameter can override the this parameter. See [this note](#members_can_create_repositories) for details.
+    * Toggles the ability of non-admin organization members to create repositories. Can be one of:
+    * \* `true` - all organization members can create repositories.
+    * \* `false` - only admin members can create repositories.
+    * Default: `true`
+    * **Note:** Another parameter can override the this parameter. See [this note](#members_can_create_repositories) for details. **Note:** Another parameter can override the this parameter. See [this note](#members_can_create_repositories) for details.
     */
   var members_can_create_repositories: js.UndefOr[scala.Boolean] = js.undefined
   /**

@@ -14,7 +14,7 @@ trait IssuesUpdateMilestoneParams extends js.Object {
     * The milestone due date. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
   var due_on: js.UndefOr[java.lang.String] = js.undefined
-  var number: scala.Double
+  var milestone_number: scala.Double
   var owner: java.lang.String
   var repo: java.lang.String
   /**
@@ -32,7 +32,7 @@ trait IssuesUpdateMilestoneParams extends js.Object {
 object IssuesUpdateMilestoneParams {
   @scala.inline
   def apply(
-    number: scala.Double,
+    milestone_number: scala.Double,
     owner: java.lang.String,
     repo: java.lang.String,
     description: java.lang.String = null,
@@ -40,7 +40,7 @@ object IssuesUpdateMilestoneParams {
     state: atOctokitRestLib.atOctokitRestLibStrings.open | atOctokitRestLib.atOctokitRestLibStrings.closed = null,
     title: java.lang.String = null
   ): IssuesUpdateMilestoneParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(milestone_number = milestone_number, owner = owner, repo = repo)
     if (description != null) __obj.updateDynamic("description")(description)
     if (due_on != null) __obj.updateDynamic("due_on")(due_on)
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

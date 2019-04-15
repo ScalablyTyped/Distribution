@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ProjectsListCollaboratorsParams extends js.Object {
   /**
-    * Filters the collaborators by their affiliation. Can be one of:  ,* \* `outside`: Outside collaborators of a project that are not a member of the project's organization.  ,* \* `direct`: Collaborators with permissions to a project, regardless of organization membership status.  ,* \* `all`: All collaborators the authenticated user can see.
+    * Filters the collaborators by their affiliation. Can be one of:
+    * \* `outside`: Outside collaborators of a project that are not a member of the project's organization.
+    * \* `direct`: Collaborators with permissions to a project, regardless of organization membership status.
+    * \* `all`: All collaborators the authenticated user can see.
     */
   var affiliation: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.outside | atOctokitRestLib.atOctokitRestLibStrings.direct | atOctokitRestLib.atOctokitRestLibStrings.all

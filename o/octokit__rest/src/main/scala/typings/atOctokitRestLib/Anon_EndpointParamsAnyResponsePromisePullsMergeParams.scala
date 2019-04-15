@@ -11,6 +11,7 @@ trait Anon_EndpointParamsAnyResponsePromisePullsMergeParams extends js.Object {
   var endpoint_Original: atOctokitRestLib.atOctokitRestMod.Endpoint = js.native
   def apply(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def apply(params: atOctokitRestLib.atOctokitRestMod.PullsMergeParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
+  def apply(params: atOctokitRestLib.atOctokitRestMod.PullsMergeParamsDeprecatedNumber): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def endpoint(EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String, EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native

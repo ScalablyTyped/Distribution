@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_GetGetForRepo extends js.Object {
   /**
-    * This method returns the contents of the repository's license file, if one is detected.,* ,* Similar to [the repository contents API](https://developer.github.com/v3/repos/contents/#get-contents), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
+    * This method returns the contents of the repository's license file, if one is detected.
+    *
+    * Similar to [the repository contents API](https://developer.github.com/v3/repos/contents/#get-contents), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
     */
   @JSName("getForRepo")
   var getForRepo_Original: Anon_EndpointParamsLicensesGetForRepoParams = js.native
@@ -25,7 +27,9 @@ trait Anon_GetGetForRepo extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.LicensesGetResponse]
   ] = js.native
   /**
-    * This method returns the contents of the repository's license file, if one is detected.,* ,* Similar to [the repository contents API](https://developer.github.com/v3/repos/contents/#get-contents), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
+    * This method returns the contents of the repository's license file, if one is detected.
+    *
+    * Similar to [the repository contents API](https://developer.github.com/v3/repos/contents/#get-contents), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
     */
   def getForRepo(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.LicensesGetForRepoResponse]

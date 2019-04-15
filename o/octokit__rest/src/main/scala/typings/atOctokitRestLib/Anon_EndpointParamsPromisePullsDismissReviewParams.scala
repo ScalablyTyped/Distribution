@@ -15,6 +15,9 @@ trait Anon_EndpointParamsPromisePullsDismissReviewParams extends js.Object {
   def apply(params: atOctokitRestLib.atOctokitRestMod.PullsDismissReviewParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsDismissReviewResponse]
   ] = js.native
+  def apply(params: atOctokitRestLib.atOctokitRestMod.PullsDismissReviewParamsDeprecatedNumber): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsDismissReviewResponse]
+  ] = js.native
   def endpoint(EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native
   def endpoint(Route: java.lang.String, EndpointOptions: atOctokitRestLib.atOctokitRestMod.EndpointOptions): atOctokitRestLib.atOctokitRestMod.RequestOptions = js.native

@@ -15,7 +15,10 @@ trait TeamsListMembersParams extends js.Object {
     */
   var per_page: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Filters members returned by their role in the team. Can be one of:  ,* \* `member` - normal members of the team.  ,* \* `maintainer` - team maintainers.  ,* \* `all` - all members of the team.
+    * Filters members returned by their role in the team. Can be one of:
+    * \* `member` - normal members of the team.
+    * \* `maintainer` - team maintainers.
+    * \* `all` - all members of the team.
     */
   var role: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.member | atOctokitRestLib.atOctokitRestLibStrings.maintainer | atOctokitRestLib.atOctokitRestLibStrings.all

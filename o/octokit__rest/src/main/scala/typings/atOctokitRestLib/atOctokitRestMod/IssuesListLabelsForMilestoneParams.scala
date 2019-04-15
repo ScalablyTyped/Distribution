@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IssuesListLabelsForMilestoneParams extends js.Object {
-  var number: scala.Double
+  var milestone_number: scala.Double
   var owner: java.lang.String
   /**
     * Page number of the results to fetch.
@@ -22,13 +22,13 @@ trait IssuesListLabelsForMilestoneParams extends js.Object {
 object IssuesListLabelsForMilestoneParams {
   @scala.inline
   def apply(
-    number: scala.Double,
+    milestone_number: scala.Double,
     owner: java.lang.String,
     repo: java.lang.String,
     page: scala.Int | scala.Double = null,
     per_page: scala.Int | scala.Double = null
   ): IssuesListLabelsForMilestoneParams = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(milestone_number = milestone_number, owner = owner, repo = repo)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesListLabelsForMilestoneParams]

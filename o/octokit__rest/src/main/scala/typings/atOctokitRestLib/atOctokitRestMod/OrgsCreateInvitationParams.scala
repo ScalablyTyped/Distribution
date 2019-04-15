@@ -16,7 +16,10 @@ trait OrgsCreateInvitationParams extends js.Object {
   var invitee_id: js.UndefOr[scala.Double] = js.undefined
   var org: java.lang.String
   /**
-    * Specify role for new member. Can be one of:  ,* \* `admin` - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.  ,* \* `direct_member` - Non-owner organization members with ability to see other members and join teams by invitation.  ,* \* `billing_manager` - Non-owner organization members with ability to manage the billing settings of your organization.
+    * Specify role for new member. Can be one of:
+    * \* `admin` - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.
+    * \* `direct_member` - Non-owner organization members with ability to see other members and join teams by invitation.
+    * \* `billing_manager` - Non-owner organization members with ability to manage the billing settings of your organization.
     */
   var role: js.UndefOr[
     atOctokitRestLib.atOctokitRestLibStrings.admin | atOctokitRestLib.atOctokitRestLibStrings.direct_member | atOctokitRestLib.atOctokitRestLibStrings.billing_manager

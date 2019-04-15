@@ -25,7 +25,9 @@ trait Anon_CheckStarringRepo extends js.Object {
   @JSName("getRepoSubscription")
   var getRepoSubscription_Original: Anon_EndpointParamsActivityGetRepoSubscriptionParams = js.native
   /**
-    * This checks to see if the current user is subscribed to a thread. You can also [get a repository subscription](https://developer.github.com/v3/activity/watching/#get-a-repository-subscription).,* ,* Note that subscriptions are only generated if a user is participating in a conversation--for example, they've replied to the thread, were **@mentioned**, or manually subscribe to a thread.
+    * This checks to see if the current user is subscribed to a thread. You can also [get a repository subscription](https://developer.github.com/v3/activity/watching/#get-a-repository-subscription).
+    *
+    * Note that subscriptions are only generated if a user is participating in a conversation--for example, they've replied to the thread, were **@mentioned**, or manually subscribe to a thread.
     */
   @JSName("getThreadSubscription")
   var getThreadSubscription_Original: Anon_EndpointParamsActivityGetThreadSubscriptionParams = js.native
@@ -42,7 +44,17 @@ trait Anon_CheckStarringRepo extends js.Object {
   @JSName("listEventsForUser")
   var listEventsForUser_Original: Anon_EndpointParamsActivityListEventsForUserParams = js.native
   /**
-    * GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wiki/Atom_(standard)) format. The Feeds API lists all the feeds available to the authenticated user:,* ,* *   **Timeline**: The GitHub global public timeline,* *   **User**: The public timeline for any user, using [URI template](https://developer.github.com/v3/#hypermedia),* *   **Current user public**: The public timeline for the authenticated user,* *   **Current user**: The private timeline for the authenticated user,* *   **Current user actor**: The private timeline for activity created by the authenticated user,* *   **Current user organizations**: The private timeline for the organizations the authenticated user is a member of.,* *   **Security advisories**: A collection of public announcements that provide information about security-related vulnerabilities in software on GitHub.,* ,* **Note**: Private feeds are only returned when [authenticating via Basic Auth](https://developer.github.com/v3/#basic-authentication) since current feed URIs use the older, non revocable auth tokens.
+    * GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wiki/Atom_(standard)) format. The Feeds API lists all the feeds available to the authenticated user:
+    *
+    * *   **Timeline**: The GitHub global public timeline
+    * *   **User**: The public timeline for any user, using [URI template](https://developer.github.com/v3/#hypermedia)
+    * *   **Current user public**: The public timeline for the authenticated user
+    * *   **Current user**: The private timeline for the authenticated user
+    * *   **Current user actor**: The private timeline for activity created by the authenticated user
+    * *   **Current user organizations**: The private timeline for the organizations the authenticated user is a member of.
+    * *   **Security advisories**: A collection of public announcements that provide information about security-related vulnerabilities in software on GitHub.
+    *
+    * **Note**: Private feeds are only returned when [authenticating via Basic Auth](https://developer.github.com/v3/#basic-authentication) since current feed URIs use the older, non revocable auth tokens.
     */
   @JSName("listFeeds")
   var listFeeds_Original: Anon_EndpointParamsActivityListFeedsResponse = js.native
@@ -52,7 +64,9 @@ trait Anon_CheckStarringRepo extends js.Object {
   @JSName("listNotificationsForRepo")
   var listNotificationsForRepo_Original: Anon_EndpointParamsActivityListNotificationsForRepoParams = js.native
   /**
-    * List all notifications for the current user, sorted by most recently updated.,* ,* The following example uses the `since` parameter to list notifications that have been updated after the specified time.
+    * List all notifications for the current user, sorted by most recently updated.
+    *
+    * The following example uses the `since` parameter to list notifications that have been updated after the specified time.
     */
   @JSName("listNotifications")
   var listNotifications_Original: Anon_EndpointParamsActivityListNotificationsParams = js.native
@@ -120,7 +134,9 @@ trait Anon_CheckStarringRepo extends js.Object {
   @JSName("setThreadSubscription")
   var setThreadSubscription_Original: Anon_EndpointParamsActivitySetThreadSubscriptionParams = js.native
   /**
-    * Requires for the user to be authenticated.,* ,* Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * Requires for the user to be authenticated.
+    *
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("starRepo")
   var starRepo_Original: Anon_EndpointParamsActivityStarRepoParams = js.native
@@ -161,7 +177,9 @@ trait Anon_CheckStarringRepo extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityGetThreadResponse]
   ] = js.native
   /**
-    * This checks to see if the current user is subscribed to a thread. You can also [get a repository subscription](https://developer.github.com/v3/activity/watching/#get-a-repository-subscription).,* ,* Note that subscriptions are only generated if a user is participating in a conversation--for example, they've replied to the thread, were **@mentioned**, or manually subscribe to a thread.
+    * This checks to see if the current user is subscribed to a thread. You can also [get a repository subscription](https://developer.github.com/v3/activity/watching/#get-a-repository-subscription).
+    *
+    * Note that subscriptions are only generated if a user is participating in a conversation--for example, they've replied to the thread, were **@mentioned**, or manually subscribe to a thread.
     */
   def getThreadSubscription(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityGetThreadSubscriptionResponse]
@@ -180,7 +198,17 @@ trait Anon_CheckStarringRepo extends js.Object {
   def listEventsForUser(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def listEventsForUser(params: atOctokitRestLib.atOctokitRestMod.ActivityListEventsForUserParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   /**
-    * GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wiki/Atom_(standard)) format. The Feeds API lists all the feeds available to the authenticated user:,* ,* *   **Timeline**: The GitHub global public timeline,* *   **User**: The public timeline for any user, using [URI template](https://developer.github.com/v3/#hypermedia),* *   **Current user public**: The public timeline for the authenticated user,* *   **Current user**: The private timeline for the authenticated user,* *   **Current user actor**: The private timeline for activity created by the authenticated user,* *   **Current user organizations**: The private timeline for the organizations the authenticated user is a member of.,* *   **Security advisories**: A collection of public announcements that provide information about security-related vulnerabilities in software on GitHub.,* ,* **Note**: Private feeds are only returned when [authenticating via Basic Auth](https://developer.github.com/v3/#basic-authentication) since current feed URIs use the older, non revocable auth tokens.
+    * GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wiki/Atom_(standard)) format. The Feeds API lists all the feeds available to the authenticated user:
+    *
+    * *   **Timeline**: The GitHub global public timeline
+    * *   **User**: The public timeline for any user, using [URI template](https://developer.github.com/v3/#hypermedia)
+    * *   **Current user public**: The public timeline for the authenticated user
+    * *   **Current user**: The private timeline for the authenticated user
+    * *   **Current user actor**: The private timeline for activity created by the authenticated user
+    * *   **Current user organizations**: The private timeline for the organizations the authenticated user is a member of.
+    * *   **Security advisories**: A collection of public announcements that provide information about security-related vulnerabilities in software on GitHub.
+    *
+    * **Note**: Private feeds are only returned when [authenticating via Basic Auth](https://developer.github.com/v3/#basic-authentication) since current feed URIs use the older, non revocable auth tokens.
     */
   def listFeeds(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityListFeedsResponse]
@@ -189,7 +217,9 @@ trait Anon_CheckStarringRepo extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityListFeedsResponse]
   ] = js.native
   /**
-    * List all notifications for the current user, sorted by most recently updated.,* ,* The following example uses the `since` parameter to list notifications that have been updated after the specified time.
+    * List all notifications for the current user, sorted by most recently updated.
+    *
+    * The following example uses the `since` parameter to list notifications that have been updated after the specified time.
     */
   def listNotifications(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityListNotificationsResponse]
@@ -322,7 +352,9 @@ trait Anon_CheckStarringRepo extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivitySetThreadSubscriptionResponse]
   ] = js.native
   /**
-    * Requires for the user to be authenticated.,* ,* Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * Requires for the user to be authenticated.
+    *
+    * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   def starRepo(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ActivityStarRepoResponse]

@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_GetTemplate extends js.Object {
   /**
-    * The API also allows fetching the source of a single template.,* ,* Use the raw [media type](https://developer.github.com/v3/media/) to get the raw contents.,* ,*
+    * The API also allows fetching the source of a single template.
+    *
+    * Use the raw [media type](https://developer.github.com/v3/media/) to get the raw contents.
     */
   @JSName("getTemplate")
   var getTemplate_Original: Anon_EndpointParamsGitignoreGetTemplateParams = js.native
@@ -18,7 +20,9 @@ trait Anon_GetTemplate extends js.Object {
   @JSName("listTemplates")
   var listTemplates_Original: Anon_EndpointParamsEmptyParams = js.native
   /**
-    * The API also allows fetching the source of a single template.,* ,* Use the raw [media type](https://developer.github.com/v3/media/) to get the raw contents.,* ,*
+    * The API also allows fetching the source of a single template.
+    *
+    * Use the raw [media type](https://developer.github.com/v3/media/) to get the raw contents.
     */
   def getTemplate(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.GitignoreGetTemplateResponse]
