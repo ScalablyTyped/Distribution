@@ -14,12 +14,12 @@ class Order () extends js.Object {
     */
   var discounts: js.UndefOr[js.Array[OrderLineItemDiscount]] = js.native
   /**
-    * Details on order fulfillment.  Orders can only be created with at most one fulfillment. However, orders returned
+    * Details on order fulfillment. Orders can only be created with at most one fulfillment. However, orders returned
     * by the API may contain multiple fulfillments.
     */
   var fulfillments: js.UndefOr[js.Array[OrderFulfillment]] = js.native
   /**
-    * The order's unique ID.  This value is only present for Order objects created by the Orders API through the
+    * The order's unique ID. This value is only present for Order objects created by the Orders API through the
     * [CreateOrder](#endpoint-createorder) endpoint.
     */
   var id: js.UndefOr[java.lang.String] = js.native
@@ -30,7 +30,7 @@ class Order () extends js.Object {
   /**
     * The ID of the merchant location this order is associated with.
     */
-  var location_id: java.lang.String = js.native
+  var location_id: js.UndefOr[java.lang.String] = js.native
   /**
     * A client specified identifier to associate an entity in another system with this order.
     */

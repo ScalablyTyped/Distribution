@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObtainTokenResponse () extends js.Object {
   /**
-    * A valid OAuth access token. Provide the access token in a header with every request to Connect API endpoints. See
-    * the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
+    * A valid OAuth access token. Provide the access token in a header with every request to Connect API endpoints.
+    * See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
     */
   var access_token: js.UndefOr[java.lang.String] = js.native
   /**
@@ -18,8 +18,8 @@ class ObtainTokenResponse () extends js.Object {
     */
   var expires_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * Then OpenID token belonging to this this person. Only present if the OPENID scope is included in the authorize
-    * request.
+    * Then OpenID token belonging to this this person.
+    * Only present if the OPENID scope is included in the authorize request.
     */
   var id_token: js.UndefOr[java.lang.String] = js.native
   /**
@@ -32,13 +32,13 @@ class ObtainTokenResponse () extends js.Object {
     */
   var plan_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * A refresh token.  For more information, see [OAuth access token
-    * management](/authz/oauth/how-it-works#oauth-access-token-management).
+    * A refresh token.
+    * For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
     */
   var refresh_token: js.UndefOr[java.lang.String] = js.native
   /**
-    * __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if  the merchant signed
-    * up for a subscription during authorization.
+    * __Legacy field__. The ID of a subscription plan the merchant signed up for.
+    * Only present if the merchant signed up for a subscription during authorization.
     */
   var subscription_id: js.UndefOr[java.lang.String] = js.native
   /**

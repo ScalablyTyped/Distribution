@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("shelljs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val ShellString: ShellStringConstructor = js.native
   val cat: CatFunction = js.native
   val chmod: ChmodFunction = js.native
   val config: ShellConfig = js.native

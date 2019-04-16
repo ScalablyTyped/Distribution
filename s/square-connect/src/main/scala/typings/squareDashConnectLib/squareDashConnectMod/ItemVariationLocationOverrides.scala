@@ -15,8 +15,8 @@ class ItemVariationLocationOverrides () extends js.Object {
   var inventory_alert_threshold: js.UndefOr[scala.Double] = js.native
   /**
     * Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory
-    * quantity is less than or equal to its `inventory_alert_threshold`. See
-    * [InventoryAlertType](#type-inventoryalerttype) for all possible values.
+    * quantity is less than or equal to its `inventory_alert_threshold`.
+    * See [InventoryAlertType](#type-inventoryalerttype) for all possible values.
     */
   var inventory_alert_type: js.UndefOr[
     squareDashConnectLib.squareDashConnectMod.ItemVariationLocationOverridesNs.InventoryAlertTypeEnum

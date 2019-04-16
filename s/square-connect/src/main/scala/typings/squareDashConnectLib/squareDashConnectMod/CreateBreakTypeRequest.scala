@@ -13,7 +13,7 @@ class CreateBreakTypeRequest () extends js.Object {
     */
   var break_type: BreakType = js.native
   /**
-    * Unique string value to insure idempotency of the operation
+    * Unique string value to insure idempotency of the operation.
     */
   var idempotency_key: js.UndefOr[java.lang.String] = js.native
 }

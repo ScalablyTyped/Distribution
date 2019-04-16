@@ -17,8 +17,7 @@ class BreakType () extends js.Object {
     */
   var created_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * Format: RFC-3339 P[n]Y[n]M[n]DT[n]H[n]M[n]S. The expected length of this break. Precision below minutes is
-    * truncated.
+    * Format: RFC-3339 P[n]Y[n]M[n]DT[n]H[n]M[n]S. The expected length of this break. Precision below minutes is truncated.
     */
   var expected_duration: java.lang.String = js.native
   /**

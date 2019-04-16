@@ -15,14 +15,14 @@ trait MediaTrackSettings extends js.Object {
   //sampleRate: number;
   //sampleSize: number;
   //echoCancellation: boolean;
-  var latency: scala.Double
+  var latency: js.UndefOr[scala.Double] = js.undefined
 }
 
 object MediaTrackSettings {
   @scala.inline
-  def apply(latency: scala.Double): MediaTrackSettings = {
-    val __obj = js.Dynamic.literal(latency = latency)
-  
+  def apply(latency: scala.Int | scala.Double = null): MediaTrackSettings = {
+    val __obj = js.Dynamic.literal()
+    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackSettings]
   }
 }

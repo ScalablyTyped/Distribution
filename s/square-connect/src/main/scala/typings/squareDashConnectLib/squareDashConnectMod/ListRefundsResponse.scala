@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class ListRefundsResponse () extends js.Object {
   /**
     * A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor`
-    * parameter in a subsequent request to this endpoint.  See [Pagination](/basics/api101/pagination) for more
-    * information.
+    * parameter in a subsequent request to this endpoint.
+    * See [Pagination](/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**

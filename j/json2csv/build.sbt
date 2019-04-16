@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json2csv"
-version := "4.2-dt-20181016Z-3d845f"
+version := "4.4-dt-20190415Z-096c15"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

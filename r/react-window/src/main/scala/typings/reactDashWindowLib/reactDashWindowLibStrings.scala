@@ -40,6 +40,10 @@ object reactDashWindowLibStrings {
     extends reactDashWindowLib.reactDashWindowMod.CSSDirection
   
   @js.native
+  sealed trait smart
+    extends reactDashWindowLib.reactDashWindowMod.Align
+  
+  @js.native
   sealed trait start
     extends reactDashWindowLib.reactDashWindowMod.Align
   
@@ -64,6 +68,8 @@ object reactDashWindowLibStrings {
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @scala.inline
+  def smart: smart = "smart".asInstanceOf[smart]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline

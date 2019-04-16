@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-merge"
-version := "4.1-dt-20180723Z-221396"
+version := "4.1-dt-20190415Z-6997c7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

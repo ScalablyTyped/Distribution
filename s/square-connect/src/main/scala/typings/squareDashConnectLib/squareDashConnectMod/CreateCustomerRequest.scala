@@ -35,8 +35,7 @@ class CreateCustomerRequest () extends js.Object {
     */
   var given_name: js.UndefOr[java.lang.String] = js.native
   /**
-    * The idempotency key for the request. See the [Idempotency](/basics/api101/idempotency) guide for more
-    * information.
+    * The idempotency key for the request. See the [Idempotency](/basics/api101/idempotency) guide for more information.
     */
   var idempotency_key: js.UndefOr[java.lang.String] = js.native
   /**

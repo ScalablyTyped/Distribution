@@ -42,7 +42,7 @@ class OrderLineItemDiscount () extends js.Object {
   /**
     * The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.
     * VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or
-    * amount has to be specified.  See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible
+    * amount has to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible
     * values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum] = js.native

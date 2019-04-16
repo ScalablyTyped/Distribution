@@ -12,7 +12,7 @@ class LogisticRegressionClassifier () extends js.Object {
   def addDocument(text: java.lang.String, stem: java.lang.String): scala.Unit = js.native
   def addDocument(text: js.Array[java.lang.String], stem: java.lang.String): scala.Unit = js.native
   def classify(observation: java.lang.String): java.lang.String = js.native
-  def getClassifications(observation: java.lang.String): js.Array[java.lang.String] = js.native
+  def getClassifications(observation: java.lang.String): js.Array[LogisticRegressionClassifierClassification] = js.native
   def save(filename: java.lang.String, callback: LogisticRegressionClassifierCallback): scala.Unit = js.native
   def train(): scala.Unit = js.native
 }

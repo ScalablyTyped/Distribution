@@ -5,11 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Type storage and type generator from `Schema Definition Language` (`SDL`).
-  * This is slightly rewritten [buildASTSchema](https://github.com/graphql/graphql-js/blob/master/src/utilities/buildASTSchema.js)
-  * utility from `graphql-js` that allows to create type from a string (SDL).
-  */
 @JSImport("graphql-compose/lib/TypeMapper", "TypeMapper")
 @js.native
 class TypeMapper[TContext] protected () extends js.Object {
@@ -78,17 +73,13 @@ class TypeMapper[TContext] protected () extends js.Object {
     composeFields: (graphqlDashComposeLib.libObjectTypeComposerMod.ComposeFieldConfigMap[TSource, TContext]) | (graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]),
     typeName: java.lang.String
   ): graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def convertOutputType(composeType: graphqlDashComposeLib.libObjectTypeComposerMod.ComposeObjectType): graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def createGraphQLType(str: TypeDefinitionString): graphqlLib.typeDefinitionMod.GraphQLType | scala.Unit = js.native
-  def createType(str: TypeDefinitionString): graphqlDashComposeLib.libSchemaComposerMod.AnyComposeType[TContext] | scala.Unit = js.native
+  def convertOutputType(composeType: ComposeObjectType): graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def createType(str: TypeDefinitionString): graphqlLib.typeDefinitionMod.GraphQLNamedType | scala.Unit = js.native
   def get(name: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLNamedType | scala.Unit = js.native
   def getWrapped(str: TypeNameString | TypeWrappedString): graphqlLib.typeDefinitionMod.GraphQLType | scala.Null = js.native
   def has(name: java.lang.String): scala.Boolean = js.native
   def parseTypesFromAst(astDocument: graphqlLib.languageAstMod.DocumentNode): graphqlDashComposeLib.libTypeStorageMod.TypeStorage[java.lang.String, graphqlLib.typeDefinitionMod.GraphQLNamedType] = js.native
-  def parseTypesFromString(str: java.lang.String): graphqlDashComposeLib.libTypeStorageMod.TypeStorage[
-    java.lang.String, 
-    graphqlDashComposeLib.libSchemaComposerMod.AnyComposeType[TContext]
-  ] = js.native
-  def set(name: java.lang.String, `type`: graphqlDashComposeLib.libSchemaComposerMod.AnyType[_]): scala.Unit = js.native
+  def parseTypesFromString(str: java.lang.String): graphqlDashComposeLib.libTypeStorageMod.TypeStorage[java.lang.String, graphqlLib.typeDefinitionMod.GraphQLNamedType] = js.native
+  def set(name: java.lang.String, `type`: graphqlLib.typeDefinitionMod.GraphQLNamedType): scala.Unit = js.native
 }
 

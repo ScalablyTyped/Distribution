@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CreateOrderRequestLineItem () extends js.Object {
   /**
-    * The base price for a single unit of the line item.  `base_price_money` is required for ad hoc line items and
+    * The base price for a single unit of the line item. `base_price_money` is required for ad hoc line items and
     * variable priced [CatalogItemVariation](#type-catalogitemvariation)s. If both `catalog_object_id` and
     * `base_price_money` are set, `base_price_money` will override the CatalogItemVariation's price.
     */

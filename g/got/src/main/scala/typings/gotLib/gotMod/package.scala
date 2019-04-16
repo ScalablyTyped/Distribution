@@ -29,6 +29,10 @@ package object gotMod {
     * @param retryCount Number of retry.
     */
   type BeforeRetryHook[Options] = js.Function3[/* options */ Options, /* error */ GotError, /* retryCount */ scala.Double, js.Any]
+  type GotInstance[T] = T with (stdLib.Record[
+    gotLib.gotLibStrings.get | gotLib.gotLibStrings.post | gotLib.gotLibStrings.put | gotLib.gotLibStrings.patch | gotLib.gotLibStrings.head | gotLib.gotLibStrings.delete, 
+    T
+  ]) with gotLib.Anon_CancelError
   type GotPromise[B /* <: nodeLib.Buffer | java.lang.String | js.Object */] = js.Promise[Response[B]] with gotLib.Anon_Cancel
   type GotStreamFn = js.Function2[
     /* url */ GotUrl, 

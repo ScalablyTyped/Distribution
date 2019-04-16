@@ -17,7 +17,7 @@ trait TaskStatusAware[Result, Args /* <: js.Array[_] */]
   val state: TaskState = js.native
   def `match`[TaskMatchResult](props: TaskMatchProps[Args, TaskMatchResult, Result]): TaskMatchResult = js.native
   def reset(): scala.Unit = js.native
-  def setState(props: mobxDashTaskLib.Anon_Result[Result]): scala.Unit = js.native
+  def setState(props: TaskOptions[Result]): scala.Unit = js.native
   def wrap[R, A /* <: js.Array[_] */](
     func: js.Function1[
       /* inner */ TaskStatusAware[Result, Args], 

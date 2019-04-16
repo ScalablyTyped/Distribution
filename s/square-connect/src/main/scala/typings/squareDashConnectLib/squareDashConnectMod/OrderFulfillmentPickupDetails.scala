@@ -14,7 +14,7 @@ class OrderFulfillmentPickupDetails () extends js.Object {
     */
   var accepted_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The auto completion duration in RFC3339 duration format, e.g., \"P1W3D\". If set, an open and accepted pickup
+    * The auto completion duration in RFC3339 duration format, e.g., "P1W3D". If set, an open and accepted pickup
     * fulfillment will automatically move to the `COMPLETED` state after this period of time. If not set, this pickup
     * fulfillment will remain accepted until it is canceled or completed.
     */
@@ -51,13 +51,13 @@ class OrderFulfillmentPickupDetails () extends js.Object {
     */
   var picked_up_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The pickup [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\". For
+    * The pickup [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., "2016-09-04T23:59:33.123Z". For
     * fulfillments with the schedule type `ASAP`, this is automatically set to the current time plus the expected
     * duration to prepare the fulfillment. This represents the start of the pickup window.
     */
   var pickup_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The pickup window duration in RFC3339 duration format, e.g., \"P1W3D\". This duration represents the window of
+    * The pickup window duration in RFC3339 duration format, e.g., "P1W3D". This duration represents the window of
     * time for which the order should be picked up after the `pickup_at` time. Can be used as an informational
     * guideline for merchants.
     */

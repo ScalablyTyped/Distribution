@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class CreateOrderRequest () extends js.Object {
   /**
-    * @deprecated Please set the discounts on the nested [order](#type-order) field instead.  The discounts to
-    * include on the order.
+    * @deprecated Please set the discounts on the nested [order](#type-order) field instead.
+    * The discounts to include on the order.
     */
   var discounts: js.UndefOr[js.Array[CreateOrderRequestDiscount]] = js.native
   /**
     * A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a
     * particular order was created successfully, you can reattempt it with the same idempotency key without worrying
-    * about creating duplicate orders.  See [Idempotency](/basics/api101/idempotency) for more information.
+    * about creating duplicate orders. See [Idempotency](/basics/api101/idempotency) for more information.
     */
   var idempotency_key: js.UndefOr[java.lang.String] = js.native
   /**
@@ -35,8 +35,7 @@ class CreateOrderRequest () extends js.Object {
     */
   var reference_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * @deprecated Please set the taxes on the nested [order](#type-order) field instead.  The taxes to include on
-    * the order.
+    * @deprecated Please set the taxes on the nested [order](#type-order) field instead. The taxes to include on the order.
     */
   var taxes: js.UndefOr[js.Array[CreateOrderRequestTax]] = js.native
 }

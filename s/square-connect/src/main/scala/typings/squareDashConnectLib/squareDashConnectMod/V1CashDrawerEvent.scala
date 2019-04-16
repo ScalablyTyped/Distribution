@@ -21,8 +21,8 @@ class V1CashDrawerEvent () extends js.Object {
     */
   var employee_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * The amount of money that was added to or removed from the cash drawer because of the event. This value can be
-    * positive (for added money) or negative (for removed money).
+    * The amount of money that was added to or removed from the cash drawer because of the event.
+    * This value can be positive (for added money) or negative (for removed money).
     */
   var event_money: js.UndefOr[V1Money] = js.native
   /**

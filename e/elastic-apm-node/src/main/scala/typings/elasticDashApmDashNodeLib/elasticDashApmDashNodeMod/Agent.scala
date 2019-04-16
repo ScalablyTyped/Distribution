@@ -10,6 +10,8 @@ trait Agent
   extends Taggable
      with StartSpanFn {
   var currentSpan: Span | scala.Null = js.native
+  // Distributed Tracing
+  var currentTraceparent: java.lang.String | scala.Null = js.native
   var currentTransaction: Transaction | scala.Null = js.native
   // Utils
   var logger: Logger = js.native

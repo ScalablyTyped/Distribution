@@ -52,6 +52,10 @@ class VariableSizeGrid ()
     * You can control the alignment of the item though by specifying an `align` property. Acceptable values are:
     *
     * - auto (default) - Scroll as little as possible to ensure the item is visible. (If the item is already visible, it won't scroll at all.)
+    * - smart
+    *   - If the item is already visible, don't scroll at all.
+    *   - If it is less than one viewport away, scroll as little as possible so that it becomes visible.
+    *   - If it is more than one viewport away, scroll so that it is centered within the grid.
     * - center - Center align the item within the grid.
     * - end - Align the item to the bottom, right hand side of the grid.
     * - start - Align the item to the top, left hand of the grid.

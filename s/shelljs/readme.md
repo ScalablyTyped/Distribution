@@ -7,5 +7,6 @@
 //                 Paul Huynh <https://github.com/pheromonez>
 //                 Alexander Futász <https://github.com/aldafu>
 //                 ExE Boss <https://github.com/ExE-Boss>
+//                 Mirco Sanguineti <https://github.com/msanguineti>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

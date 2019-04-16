@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Navigator extends js.Object {
   @JSName("getUserMedia")
   var getUserMedia_Original: NavigatorGetUserMedia = js.native
-  var mediaDevices: MediaDevices = js.native
+  val mediaDevices: MediaDevices = js.native
   @JSName("mozGetUserMedia")
   var mozGetUserMedia_Original: NavigatorGetUserMedia = js.native
   @JSName("msGetUserMedia")

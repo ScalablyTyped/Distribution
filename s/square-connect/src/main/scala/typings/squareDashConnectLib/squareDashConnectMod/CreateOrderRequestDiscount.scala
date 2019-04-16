@@ -23,7 +23,7 @@ class CreateOrderRequestDiscount () extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.native
   /**
     * Only used for ad hoc discounts. The percentage of the discount, as a string representation of a decimal number.
-    * A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
+    * A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0.
     */
   var percentage: js.UndefOr[java.lang.String] = js.native
 }

@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-beautiful-dnd 10.1
+// Type definitions for react-beautiful-dnd 11.0
 // Project: https://github.com/atlassian/react-beautiful-dnd
 // Definitions by: varHarrie <https://github.com/varHarrie>
 //                 Bradley Ayers <https://github.com/bradleyayers>

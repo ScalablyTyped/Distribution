@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1UpdatePageCellRequest () extends js.Object {
   /**
-    * An object containing the fields to POST for the request.  See the corresponding object definition for field
+    * An object containing the fields to POST for the request. See the corresponding object definition for field
     * details.
     */
   var body: V1PageCell = js.native

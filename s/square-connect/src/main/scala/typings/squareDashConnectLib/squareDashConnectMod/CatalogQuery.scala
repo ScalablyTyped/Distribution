@@ -38,9 +38,8 @@ class CatalogQuery () extends js.Object {
   var sorted_attribute_query: js.UndefOr[CatalogQuerySortedAttribute] = js.native
   /**
     * A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For
-    * example, if a [CatalogItem](#type-catalogitem) contains attributes `{\"name\": \"t-shirt\"}` and
-    * `{\"description\": \"Small, Purple\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sma\",
-    * \"purp\"]}`.
+    * example, if a [CatalogItem](#type-catalogitem) contains attributes `{"name": "t-shirt"}` and
+    * `{"description": "Small, Purple"}`, it will be matched by the query `{"keywords": ["shirt", "sma", "purp"]}`.
     */
   var text_query: js.UndefOr[CatalogQueryText] = js.native
 }

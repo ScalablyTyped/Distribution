@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchDeleteCatalogObjectsResponse () extends js.Object {
   /**
-    * The database [timestamp](#workingwithdates) of this deletion in RFC 3339 format, e.g.,
-    * \"2016-09-04T23:59:33.123Z\".
+    * The database [timestamp](#workingwithdates) of this deletion in RFC 3339 format, e.g., "2016-09-04T23:59:33.123Z".
     */
   var deleted_at: js.UndefOr[java.lang.String] = js.native
   /**

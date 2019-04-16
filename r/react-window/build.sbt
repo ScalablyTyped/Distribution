@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-window"
-version := "1.7-dt-20190402Z-3855df"
+version := "1.8-dt-20190412Z-653701"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

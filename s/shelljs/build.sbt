@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shelljs"
-version := "0.8-dt-20190401Z-7a7fcf"
+version := "0.8-dt-20190412Z-283e8d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

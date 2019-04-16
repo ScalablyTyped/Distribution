@@ -12,5 +12,26 @@ object ^ extends js.Object {
   def parse[T](data: js.Array[T], opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]): java.lang.String = js.native
   def parse[T](data: stdLib.Readonly[T]): java.lang.String = js.native
   def parse[T](data: stdLib.Readonly[T], opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]): java.lang.String = js.native
+  def parseAsync[T](data: js.Array[T]): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](data: js.Array[T], opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](
+    data: js.Array[T],
+    opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T],
+    transformOpts: nodeLib.streamMod.TransformOptions
+  ): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](data: nodeLib.streamMod.Readable): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](data: nodeLib.streamMod.Readable, opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](
+    data: nodeLib.streamMod.Readable,
+    opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T],
+    transformOpts: nodeLib.streamMod.TransformOptions
+  ): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](data: stdLib.Readonly[T]): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](data: stdLib.Readonly[T], opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T]): js.Promise[java.lang.String] = js.native
+  def parseAsync[T](
+    data: stdLib.Readonly[T],
+    opts: json2csvLib.jSON2CSVBaseMod.json2csvNs.Options[T],
+    transformOpts: nodeLib.streamMod.TransformOptions
+  ): js.Promise[java.lang.String] = js.native
 }
 

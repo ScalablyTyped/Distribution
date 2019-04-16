@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-window 1.7
+// Type definitions for react-window 1.8
 // Project: https://github.com/bvaughn/react-window/, http://react-window.now.sh
 // Definitions by: Martynas Kadiša <https://github.com/martynaskadisa>
 //                 Alex Guerra <https://github.com/heyimalex>

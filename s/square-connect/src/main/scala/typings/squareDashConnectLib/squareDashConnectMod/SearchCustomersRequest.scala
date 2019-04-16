@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SearchCustomersRequest () extends js.Object {
   /**
     * Include the pagination cursor in subsequent calls to this endpoint to retrieve the next set of results associated
-    * with the original query.  See [Pagination](/basics/api101/pagination) for more information.
+    * with the original query. See [Pagination](/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**

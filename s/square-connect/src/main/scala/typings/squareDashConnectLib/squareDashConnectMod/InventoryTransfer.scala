@@ -26,8 +26,7 @@ class InventoryTransfer () extends js.Object {
     */
   var employee_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * The Square ID of the [Location](#type-location) where the related quantity of items were tracked before the
-    * transfer.
+    * The Square ID of the [Location](#type-location) where the related quantity of items were tracked before the transfer.
     */
   var from_location_id: js.UndefOr[java.lang.String] = js.native
   /**
@@ -44,8 +43,7 @@ class InventoryTransfer () extends js.Object {
     */
   var quantity: js.UndefOr[java.lang.String] = js.native
   /**
-    * An optional ID provided by the application to tie the [InventoryTransfer](#type-inventorytransfer) to an external
-    * system.
+    * An optional ID provided by the application to tie the [InventoryTransfer](#type-inventorytransfer) to an external system.
     */
   var reference_id: js.UndefOr[java.lang.String] = js.native
   /**
@@ -57,8 +55,7 @@ class InventoryTransfer () extends js.Object {
     */
   var state: js.UndefOr[squareDashConnectLib.squareDashConnectMod.InventoryTransferNs.StateEnum] = js.native
   /**
-    * The Square ID of the [Location](#type-location) where the related quantity of items were tracked after the
-    * transfer.
+    * The Square ID of the [Location](#type-location) where the related quantity of items were tracked after the transfer.
     */
   var to_location_id: js.UndefOr[java.lang.String] = js.native
 }

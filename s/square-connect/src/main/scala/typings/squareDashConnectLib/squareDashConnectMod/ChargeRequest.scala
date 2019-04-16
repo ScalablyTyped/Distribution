@@ -19,8 +19,8 @@ class ChargeRequest () extends js.Object {
   /**
     * The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable
     * currency__. For example, US dollar amounts are specified in cents. See [Working with monetary
-    * amounts](#workingwithmonetaryamounts) for details.  The value of `currency` must match the currency associated
-    * with the business that is charging the card.
+    * amounts](#workingwithmonetaryamounts) for details.
+    * The value of `currency` must match the currency associated with the business that is charging the card.
     */
   var amount_money: Money = js.native
   /**
@@ -36,8 +36,8 @@ class ChargeRequest () extends js.Object {
   /**
     * A nonce generated from the `SqPaymentForm` that represents the card to charge.  The application that provides a
     * nonce to this endpoint must be the _same application_ that generated the nonce with the `SqPaymentForm`.
-    * Otherwise, the nonce is invalid.  Do not provide a value for this field if you provide a value for
-    * `customer_card_id`.
+    * Otherwise, the nonce is invalid.
+    * Do not provide a value for this field if you provide a value for `customer_card_id`.
     */
   var card_nonce: js.UndefOr[java.lang.String] = js.native
   /**
@@ -46,31 +46,31 @@ class ChargeRequest () extends js.Object {
     */
   var customer_card_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * The ID of the customer to associate this transaction with. This field is required if you provide a value for
-    * `customer_card_id`, and optional otherwise.
+    * The ID of the customer to associate this transaction with.
+    * This field is required if you provide a value for `customer_card_id`, and optional otherwise.
     */
   var customer_id: js.UndefOr[java.lang.String] = js.native
   /**
     * If `true`, the request will only perform an Auth on the provided card. You can then later perform either a
     * Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the
-    * [VoidTransaction](#endpoint-voidtransaction) endpoint).  Default value: `false`
+    * [VoidTransaction](#endpoint-voidtransaction) endpoint). Default value: `false`
     */
   var delay_capture: js.UndefOr[scala.Boolean] = js.native
   /**
     * A value you specify that uniquely identifies this transaction among transactions you've created.  If you're
     * unsure whether a particular transaction succeeded, you can reattempt it with the same idempotency key without
-    * worrying about double-charging the buyer.  See [Idempotency](/basics/api101/idempotency) for more information.
+    * worrying about double-charging the buyer. See [Idempotency](/basics/api101/idempotency) for more information.
     */
   var idempotency_key: java.lang.String = js.native
   var note: js.UndefOr[java.lang.String] = js.native
   /**
-    * The ID of the order to associate with this transaction.  If you provide this value, the `amount_money` value of
+    * The ID of the order to associate with this transaction. If you provide this value, the `amount_money` value of
     * your request must __exactly match__ the value of the order's `total_money` field.
     */
   var order_id: js.UndefOr[java.lang.String] = js.native
   /**
     * An optional ID you can associate with the transaction for your own purposes (such as to associate the transaction
-    * with an entity ID in your own database).  This value cannot exceed 40 characters.
+    * with an entity ID in your own database). This value cannot exceed 40 characters.
     */
   var reference_id: js.UndefOr[java.lang.String] = js.native
   /**

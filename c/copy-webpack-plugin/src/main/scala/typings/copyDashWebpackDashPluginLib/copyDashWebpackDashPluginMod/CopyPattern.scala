@@ -41,7 +41,11 @@ trait CopyPattern extends js.Object {
   ] = js.undefined
   /** Function that modifies file contents before writing to webpack. (default: `(content, path) => content`) */
   var transform: js.UndefOr[
-    js.Function2[/* content */ java.lang.String, /* path */ java.lang.String, java.lang.String]
+    js.Function2[
+      /* content */ nodeLib.Buffer, 
+      /* path */ java.lang.String, 
+      java.lang.String | nodeLib.Buffer
+    ]
   ] = js.undefined
 }
 
@@ -57,7 +61,7 @@ object CopyPattern {
     ignore: js.Array[java.lang.String | MiniMatchGlob] = null,
     to: java.lang.String = null,
     toType: copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.file | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.dir | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.template = null,
-    transform: (/* content */ java.lang.String, /* path */ java.lang.String) => java.lang.String = null
+    transform: (/* content */ nodeLib.Buffer, /* path */ java.lang.String) => java.lang.String | nodeLib.Buffer = null
   ): CopyPattern = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])

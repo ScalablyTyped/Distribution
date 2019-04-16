@@ -31,7 +31,7 @@ class OrderLineItemTax () extends js.Object {
     */
   var scope: js.UndefOr[squareDashConnectLib.squareDashConnectMod.OrderLineItemTaxNs.ScopeEnum] = js.native
   /**
-    * Indicates the calculation method used to apply the tax.  See [OrderLineItemTaxType](#type-orderlineitemtaxtype)
+    * Indicates the calculation method used to apply the tax. See [OrderLineItemTaxType](#type-orderlineitemtaxtype)
     * for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.OrderLineItemTaxNs.TypeEnum] = js.native

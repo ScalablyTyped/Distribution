@@ -13,8 +13,8 @@ class BatchRetrieveInventoryChangesResponse () extends js.Object {
     */
   var changes: js.UndefOr[js.Array[InventoryChange]] = js.native
   /**
-    * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See
-    * [Pagination](/basics/api101/pagination) for more information.
+    * The pagination cursor to be used in a subsequent request. If unset, this is the final response.
+    * See [Pagination](/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**

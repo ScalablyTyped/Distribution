@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sc-broker-cluster"
-version := "6.1-dt-20181218Z-c5912d"
+version := "6.1-dt-20190415Z-8a227d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

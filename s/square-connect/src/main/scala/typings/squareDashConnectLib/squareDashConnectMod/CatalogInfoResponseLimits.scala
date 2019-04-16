@@ -47,13 +47,11 @@ class CatalogInfoResponseLimits () extends js.Object {
     */
   var update_item_taxes_max_item_ids: js.UndefOr[scala.Double] = js.native
   /**
-    * The maximum number of tax IDs to be disabled that may be included in a single `/v2/catalog/update-item-taxes`
-    * request.
+    * The maximum number of tax IDs to be disabled that may be included in a single `/v2/catalog/update-item-taxes` request.
     */
   var update_item_taxes_max_taxes_to_disable: js.UndefOr[scala.Double] = js.native
   /**
-    * The maximum number of tax IDs to be enabled that may be included in a single `/v2/catalog/update-item-taxes`
-    * request.
+    * The maximum number of tax IDs to be enabled that may be included in a single `/v2/catalog/update-item-taxes` request.
     */
   var update_item_taxes_max_taxes_to_enable: js.UndefOr[scala.Double] = js.native
 }

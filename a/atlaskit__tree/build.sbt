@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__tree"
-version := "4.1-dt-20181206Z-7a5987"
+version := "4.1-dt-20181206Z-2ab63d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-7e744c",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-5f45a9",
-  "org.scalablytyped" %%% "react-beautiful-dnd" % "10.1-dt-20190319Z-7c1bd1",
+  "org.scalablytyped" %%% "react-beautiful-dnd" % "11.0-dt-20190415Z-829738",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListCustomersResponse () extends js.Object {
   /**
-    * A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is
-    * present only if the request succeeded and additional results are available.  See
-    * [Pagination](/basics/api101/pagination) for more information.
+    * A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+    * This value is present only if the request succeeded and additional results are available.
+    * See [Pagination](/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**

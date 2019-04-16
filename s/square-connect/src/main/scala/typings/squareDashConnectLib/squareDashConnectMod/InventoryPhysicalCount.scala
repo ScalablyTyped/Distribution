@@ -34,9 +34,8 @@ class InventoryPhysicalCount () extends js.Object {
     */
   var location_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * A client-generated timestamp in RFC 3339 format that indicates when the physical count took place. For write
-    * actions, the `occurred_at` timestamp cannot be older than 24 hours or in the future relative to the time of the
-    * request.
+    * A client-generated timestamp in RFC 3339 format that indicates when the physical count took place. For write actions,
+    * the `occurred_at` timestamp cannot be older than 24 hours or in the future relative to the time of the request.
     */
   var occurred_at: js.UndefOr[java.lang.String] = js.native
   /**

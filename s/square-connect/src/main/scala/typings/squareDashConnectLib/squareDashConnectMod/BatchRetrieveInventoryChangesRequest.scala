@@ -14,7 +14,7 @@ class BatchRetrieveInventoryChangesRequest () extends js.Object {
   var catalog_object_ids: js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
     * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of
-    * results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+    * results for the original query. See [Pagination](/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**

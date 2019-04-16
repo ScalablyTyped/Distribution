@@ -13,8 +13,7 @@ class SourceApplication () extends js.Object {
     */
   var application_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * Read-only display name assigned to the application (e.g. `\"Custom Application\"`, `\"Square POS 4.74 for
-    * Android\"`).
+    * Read-only display name assigned to the application (e.g. "Custom Application", "Square POS 4.74 for Android").
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**

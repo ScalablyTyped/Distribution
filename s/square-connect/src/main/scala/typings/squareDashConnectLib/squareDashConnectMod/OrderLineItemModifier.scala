@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OrderLineItemModifier () extends js.Object {
   /**
-    * The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both
+    * The base price for the modifier. `base_price_money` is required for ad hoc modifiers. If both
     * `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined
     * [CatalogModifier](#type-catalogmodifier) price.
     */

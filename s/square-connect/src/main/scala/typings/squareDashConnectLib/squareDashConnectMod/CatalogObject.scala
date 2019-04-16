@@ -72,7 +72,7 @@ class CatalogObject () extends js.Object {
   var tax_data: js.UndefOr[CatalogTax] = js.native
   /**
     * The type of this object. Each object type has expected properties expressed in a structured format within its
-    * corresponding `*_data` field below.  See [CatalogObjectType](#type-catalogobjecttype) for all possible values.
+    * corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for all possible values.
     */
   var `type`: squareDashConnectLib.squareDashConnectMod.CatalogObjectNs.TypeEnum = js.native
   /**

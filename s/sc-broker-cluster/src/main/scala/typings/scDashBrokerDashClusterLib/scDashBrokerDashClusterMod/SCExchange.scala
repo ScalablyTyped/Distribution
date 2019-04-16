@@ -16,6 +16,7 @@ class SCExchange protected () extends AbstractDataClient {
   def isSubscribed(channelName: java.lang.String): scala.Boolean = js.native
   def isSubscribed(channelName: java.lang.String, includePending: scala.Boolean): scala.Boolean = js.native
   def map(keyChain: fleximapLib.fleximapMod.KeyChain, method: java.lang.String): scDashBrokerDashClusterLib.Anon_Targets = js.native
+  def publish(channelName: java.lang.String, data: js.Any): scala.Unit = js.native
   def publish(
     channelName: java.lang.String,
     data: js.Any,
@@ -26,24 +27,24 @@ class SCExchange protected () extends AbstractDataClient {
   def send(
     data: js.Any,
     mapIndex: java.lang.String,
-    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
+    callback: asyncLib.asyncMod.AsyncResultArrayCallback[_, stdLib.Error]
   ): scala.Unit = js.native
   def send(data: js.Any, mapIndex: js.Array[java.lang.String]): scala.Unit = js.native
   def send(
     data: js.Any,
     mapIndex: js.Array[java.lang.String],
-    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
+    callback: asyncLib.asyncMod.AsyncResultArrayCallback[_, stdLib.Error]
   ): scala.Unit = js.native
   def send(data: js.Any, mapIndex: scala.Double): scala.Unit = js.native
   def send(
     data: js.Any,
     mapIndex: scala.Double,
-    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
+    callback: asyncLib.asyncMod.AsyncResultArrayCallback[_, stdLib.Error]
   ): scala.Unit = js.native
   def send(
     data: js.Any,
     mapIndex: scala.Null,
-    callback: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
+    callback: asyncLib.asyncMod.AsyncResultArrayCallback[_, stdLib.Error]
   ): scala.Unit = js.native
   def setMapper(mapper: mapperFunction): scala.Unit = js.native
   def subscribe(channelName: java.lang.String): scDashChannelLib.scDashChannelMod.SCChannel = js.native

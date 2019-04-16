@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webrtc"
-version := "2016-09-13-dt-20190322Z-41122f"
+version := "2016-09-13-dt-20190415Z-c61e44"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

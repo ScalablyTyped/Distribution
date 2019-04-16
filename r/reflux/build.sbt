@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reflux"
-version := "6.4-dt-20190225Z-46aa3d"
+version := "6.4-dt-20190412Z-46aa3d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

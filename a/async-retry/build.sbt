@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "async-retry"
-version := "1.4-dt-20190404Z-7dce5e"
+version := "1.4-dt-20190411Z-74605b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

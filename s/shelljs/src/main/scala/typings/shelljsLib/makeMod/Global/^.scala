@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
+  val ShellString: shelljsLib.shelljsMod.ShellStringConstructor = js.native
   val cat: shelljsLib.shelljsMod.CatFunction = js.native
   val cd: js.Function1[/* dir */ js.UndefOr[java.lang.String], shelljsLib.shelljsMod.ShellString] = js.native
   val chmod: shelljsLib.shelljsMod.ChmodFunction = js.native

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait IStyleSheetConfig extends js.Object {
   /**
+    * CSP settings
+    */
+  var cspSettings: js.UndefOr[ICSPSettings] = js.undefined
+  /**
     * Default 'displayName' to use for a className.
     * @defaultvalue 'css'
     */
@@ -28,12 +32,14 @@ trait IStyleSheetConfig extends js.Object {
 object IStyleSheetConfig {
   @scala.inline
   def apply(
+    cspSettings: ICSPSettings = null,
     defaultPrefix: java.lang.String = null,
     injectionMode: InjectionMode = null,
     namespace: java.lang.String = null,
     onInsertRule: /* rule */ java.lang.String => scala.Unit = null
   ): IStyleSheetConfig = {
     val __obj = js.Dynamic.literal()
+    if (cspSettings != null) __obj.updateDynamic("cspSettings")(cspSettings)
     if (defaultPrefix != null) __obj.updateDynamic("defaultPrefix")(defaultPrefix)
     if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)

@@ -53,17 +53,17 @@ class CatalogItem () extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
-    * The product type of the item. May not be changed once an item has been created.  Only items of product type
-    * `REGULAR` may be created by this API; items with other product types are read-only. See
-    * [CatalogItemProductType](#type-catalogitemproducttype) for all possible values.
+    * The product type of the item. May not be changed once an item has been created.
+    * Only items of product type `REGULAR` may be created by this API; items with other product types are read-only.
+    * See [CatalogItemProductType](#type-catalogitemproducttype) for all possible values.
     */
   var product_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CatalogItemNs.ProductTypeEnum] = js.native
   /**
     * If `false`, the Square Point of Sale app will present the [CatalogItem](#type-catalogitem)'s details screen
     * immediately, allowing the merchant to choose [CatalogModifier](#type-catalogmodifier)s before adding the item to
-    * the cart.  This is the default behavior.  If `true`, the Square Point of Sale app will immediately add the item
+    * the cart. This is the default behavior. If `true`, the Square Point of Sale app will immediately add the item
     * to the cart with the pre-selected modifiers, and merchants can edit modifiers by drilling down onto the item's
-    * details.  Third-party clients are encouraged to implement similar behaviors.
+    * details. Third-party clients are encouraged to implement similar behaviors.
     */
   var skip_modifier_screen: js.UndefOr[scala.Boolean] = js.native
   /**

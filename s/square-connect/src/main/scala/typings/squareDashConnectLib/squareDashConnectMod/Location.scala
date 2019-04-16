@@ -18,12 +18,12 @@ class Location () extends js.Object {
     */
   var business_name: js.UndefOr[java.lang.String] = js.native
   /**
-    * Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability)
+    * Indicates which Square features are enabled for the location. See [LocationCapability](#type-locationcapability)
     * for possible values.
     */
   var capabilities: js.UndefOr[js.Array[squareDashConnectLib.squareDashConnectMod.LocationNs.CapabilitiesEnum]] = js.native
   /**
-    * The location's country, in ISO 3166-1-alpha-2 format.  See [Country](#type-country) for possible values.
+    * The location's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values.
     */
   var country: js.UndefOr[squareDashConnectLib.squareDashConnectMod.LocationNs.CountryEnum] = js.native
   /**
@@ -32,7 +32,7 @@ class Location () extends js.Object {
   var created_at: js.UndefOr[java.lang.String] = js.native
   /**
     * The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the
-    * currency for a location processing transactions in the United States is 'USD'.  See [Currency](#type-currency)
+    * currency for a location processing transactions in the United States is 'USD'. See [Currency](#type-currency)
     * for possible values.
     */
   var currency: js.UndefOr[squareDashConnectLib.squareDashConnectMod.LocationNs.CurrencyEnum] = js.native

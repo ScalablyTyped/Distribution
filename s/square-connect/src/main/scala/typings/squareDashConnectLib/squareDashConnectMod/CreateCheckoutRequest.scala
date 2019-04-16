@@ -27,18 +27,18 @@ class CreateCheckoutRequest () extends js.Object {
     * processing the same order more than once. If you're unsure whether a particular checkout was created
     * successfully, you can reattempt it with the same idempotency key and all the same other parameters without
     * worrying about creating duplicates.  We recommend using a random number/string generator native to the language
-    * you are working in to generate strings for your idempotency keys.  See [Idempotency](/basics/api101/idempotency)
+    * you are working in to generate strings for your idempotency keys. See [Idempotency](/basics/api101/idempotency)
     * for more information.
     */
   var idempotency_key: java.lang.String = js.native
   /**
     * The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can
-    * use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary
-    * email address associated with the merchant's Square account.  Default: none; only exists if explicitly set.
+    * use to contact the merchant. If this value is not set, the confirmation page and email will display the primary
+    * email address associated with the merchant's Square account. Default: none; only exists if explicitly set.
     */
   var merchant_support_email: js.UndefOr[java.lang.String] = js.native
   /**
-    * An optional note to associate with the checkout object.  This value cannot exceed 60 characters.
+    * An optional note to associate with the checkout object. This value cannot exceed 60 characters.
     */
   var note: js.UndefOr[java.lang.String] = js.native
   /**
@@ -62,8 +62,8 @@ class CreateCheckoutRequest () extends js.Object {
     * `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`
     * If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf;
     * however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and
-    * finalize the order through your existing/normal confirmation workflow.  Default: none; only exists if explicitly
-    * set.
+    * finalize the order through your existing/normal confirmation workflow.
+    * Default: none; only exists if explicitly set.
     */
   var redirect_url: js.UndefOr[java.lang.String] = js.native
 }

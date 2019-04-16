@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libInterfaceTypeComposerMod {
-  type ComposeInterfaceType = (InterfaceTypeComposer[js.Any, js.Any]) | graphqlLib.graphqlMod.GraphQLInterfaceType | graphqlDashComposeLib.libTypeMapperMod.TypeDefinitionString | graphqlDashComposeLib.libTypeMapperMod.TypeAsString
   type GraphQLInterfaceTypeExtended[TSource, TContext] = graphqlLib.graphqlMod.GraphQLInterfaceType with (graphqlDashComposeLib.Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer[TSource, TContext])
   type InterfaceTypeComposeDefinition[TSource, TContext] = graphqlDashComposeLib.libTypeMapperMod.TypeAsString | (ComposeInterfaceTypeConfig[TSource, TContext])
   type InterfaceTypeResolverCheckFn[TSource, TContext] = js.Function3[

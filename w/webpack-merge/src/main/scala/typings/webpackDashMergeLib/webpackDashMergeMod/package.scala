@@ -24,6 +24,11 @@ package object webpackDashMergeMod {
     js.UndefOr[js.Object | scala.Null]
   ]
   type MergeFunction = ConfigurationMergeFunction | ConfigurationMergeConfigFunction
+  type MultipleConfiguration = org.scalablytyped.runtime.StringDictionary[webpackLib.webpackMod.Configuration]
+  type MultipleConfigurationMergeFunction = js.Function1[
+    /* repeated */ MultipleConfiguration, 
+    js.Array[webpackLib.webpackMod.Configuration]
+  ]
   type UniqueFunction = js.Function3[
     /* field */ java.lang.String, 
     /* fields */ js.Array[java.lang.String], 

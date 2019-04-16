@@ -84,6 +84,21 @@ trait Mailbox extends js.Object {
     */
   var item: Item with ItemCompose with ItemRead with MessageRead with MessageCompose with AppointmentRead with AppointmentCompose = js.native
   /**
+    * Gets an object that provides methods to manage the categories master list associated with a mailbox.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadMailbox</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
+    *
+    * @beta
+    */
+  var masterCategories: MasterCategories = js.native
+  /**
     * Gets the URL of the REST endpoint for this email account.
     *
     * Your app must have the ReadItem permission specified in its manifest to call the restUrl member in read mode.
