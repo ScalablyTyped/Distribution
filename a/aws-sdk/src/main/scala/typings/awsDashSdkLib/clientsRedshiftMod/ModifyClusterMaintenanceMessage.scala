@@ -15,7 +15,7 @@ trait ModifyClusterMaintenanceMessage extends js.Object {
     */
   var DeferMaintenance: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * An integer indicating the duration of the maintenance window in days. If you specify a duration, you can't specify an end time. The duration must be 14 days or less.
+    * An integer indicating the duration of the maintenance window in days. If you specify a duration, you can't specify an end time. The duration must be 45 days or less.
     */
   var DeferMaintenanceDuration: js.UndefOr[IntegerOptional] = js.undefined
   /**

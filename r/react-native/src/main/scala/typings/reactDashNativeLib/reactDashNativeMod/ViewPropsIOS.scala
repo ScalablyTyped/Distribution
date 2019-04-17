@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ViewPropsIOS extends js.Object {
+trait ViewPropsIOS extends TVViewPropsIOS {
   /**
     * Provides an array of custom actions available for accessibility.
     * @platform ios
@@ -40,14 +40,28 @@ object ViewPropsIOS {
   def apply(
     accessibilityActions: js.Array[java.lang.String] = null,
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     onAccessibilityAction: () => scala.Unit = null,
-    shouldRasterizeIOS: js.UndefOr[scala.Boolean] = js.undefined
+    shouldRasterizeIOS: js.UndefOr[scala.Boolean] = js.undefined,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null
   ): ViewPropsIOS = {
     val __obj = js.Dynamic.literal()
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS)
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsIOS]
   }
 }

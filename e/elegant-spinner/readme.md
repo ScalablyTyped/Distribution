@@ -1,6 +1,19 @@
 ```
-// Type definitions for elegant-spinner 1.0
-// Project: https://github.com/sindresorhus/elegant-spinner
-// Definitions by: Daniel Byrne <https://github.com/danwbyrne>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Elegant spinner for interactive CLI apps.
+
+__You probably want [`ora`](https://github.com/sindresorhus/ora) instead, which includes this spinner and handles the animation for you.__
+
+@example
+```
+import elegantSpinner = require('elegant-spinner');
+import logUpdate = require('log-update');
+
+const frame = elegantSpinner();
+
+setInterval(() => {
+	logUpdate(frame());
+}, 50);
+```
+*/
 ```

@@ -109,6 +109,11 @@ class Question protected ()
   var locOwner: ILocalizableOwner = js.native
   val locRequiredErrorText: LocalizableString = js.native
   val locTitle: LocalizableString = js.native
+  /**
+    * The property returns the question number. If question is invisible then it returns empty string.
+    * If visibleIndex is 1, then no is 2, or 'B' if survey.questionStartIndex is 'A'.
+    * @see SurveyModel.questionStartIndex
+    */
   val no: java.lang.String = js.native
   var paddingLeft: java.lang.String = js.native
   var paddingRight: java.lang.String = js.native

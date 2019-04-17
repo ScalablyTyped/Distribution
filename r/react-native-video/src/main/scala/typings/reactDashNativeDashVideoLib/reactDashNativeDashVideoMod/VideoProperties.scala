@@ -104,9 +104,11 @@ object VideoProperties {
     currentTime: scala.Int | scala.Double = null,
     disableFocus: js.UndefOr[scala.Boolean] = js.undefined,
     fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
     ignoreSilentSwitch: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.ignore | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.obey = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     muted: js.UndefOr[scala.Boolean] = js.undefined,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
@@ -184,6 +186,11 @@ object VideoProperties {
     textTracks: js.Array[reactDashNativeDashVideoLib.Anon_Applicationttmlxml] = null,
     translateX: scala.Int | scala.Double = null,
     translateY: scala.Int | scala.Double = null,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: reactDashNativeLib.reactDashNativeMod.TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null,
     useTextureView: js.UndefOr[scala.Boolean] = js.undefined,
     volume: scala.Int | scala.Double = null
   ): VideoProperties = {
@@ -206,9 +213,11 @@ object VideoProperties {
     if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
     if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus)
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (ignoreSilentSwitch != null) __obj.updateDynamic("ignoreSilentSwitch")(ignoreSilentSwitch.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
@@ -286,6 +295,11 @@ object VideoProperties {
     if (textTracks != null) __obj.updateDynamic("textTracks")(textTracks)
     if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
     if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     if (!js.isUndefined(useTextureView)) __obj.updateDynamic("useTextureView")(useTextureView)
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProperties]

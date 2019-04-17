@@ -1,6 +1,24 @@
 ```
-// Type definitions for builtin-modules 2.0
-// Project: https://github.com/sindresorhus/builtin-modules#readme
-// Definitions by: Klaus Meinhardt <https://github.com/ajafff>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+List of the Node.js builtin modules.
+
+@example
+```
+import builtinModules = require('builtin-modules');
+
+console.log(builtinModules);
+//=> ['assert', 'buffer', …]
+```
+*/
+/**
+Static list of the Node.js builtin modules.
+
+@example
+```
+import builtinModulesStatic = require('builtin-modules/static');
+
+console.log(builtinModulesStatic);
+//=> ['assert', 'buffer', …]
+```
+*/
 ```

@@ -52,11 +52,15 @@ package object clientsMqMod {
   type __boolean = scala.Boolean
   type __integer = scala.Double
   type __integerMin5Max100 = scala.Double
+  type __listOfAvailabilityZone = js.Array[AvailabilityZone]
+  type __listOfBrokerEngineType = js.Array[BrokerEngineType]
   type __listOfBrokerInstance = js.Array[BrokerInstance]
+  type __listOfBrokerInstanceOption = js.Array[BrokerInstanceOption]
   type __listOfBrokerSummary = js.Array[BrokerSummary]
   type __listOfConfiguration = js.Array[Configuration]
   type __listOfConfigurationId = js.Array[ConfigurationId]
   type __listOfConfigurationRevision = js.Array[ConfigurationRevision]
+  type __listOfEngineVersion = js.Array[EngineVersion]
   type __listOfSanitizationWarning = js.Array[SanitizationWarning]
   type __listOfUser = js.Array[User]
   type __listOfUserSummary = js.Array[UserSummary]

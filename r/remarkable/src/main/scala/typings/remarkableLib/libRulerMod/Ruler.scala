@@ -56,7 +56,7 @@ trait Ruler[RULE] extends js.Object {
   /**
     * Get a rules list as an array of functions.
     */
-  def getRules(chainName: java.lang.String): js.Array[remarkableLib.libMod.Rule] = js.native
+  def getRules(chainName: java.lang.String): js.Array[remarkableLib.libMod.Rule[remarkableLib.libMod.TagToken, java.lang.String]] = js.native
   /**
     * Add a rule to the end of chain.
     */

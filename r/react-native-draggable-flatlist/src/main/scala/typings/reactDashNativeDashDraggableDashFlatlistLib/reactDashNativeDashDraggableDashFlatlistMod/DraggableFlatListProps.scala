@@ -73,6 +73,7 @@ object DraggableFlatListProps {
     getItem: (/* data */ js.Any, /* index */ scala.Double) => Item = null,
     getItemCount: /* data */ js.Any => scala.Double = null,
     getItemLayout: (/* data */ js.Any, /* index */ scala.Double) => reactDashNativeLib.Anon_Index = null,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
@@ -81,6 +82,7 @@ object DraggableFlatListProps {
     initialScrollIndex: scala.Int | scala.Double = null,
     invertStickyHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     keyExtractor: (Item, /* index */ scala.Double) => java.lang.String = null,
     keyboardDismissMode: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.interactive | reactDashNativeLib.reactDashNativeLibStrings.`on-drag` = null,
     keyboardShouldPersistTaps: scala.Boolean | reactDashNativeLib.reactDashNativeLibStrings.always | reactDashNativeLib.reactDashNativeLibStrings.never | reactDashNativeLib.reactDashNativeLibStrings.handled = null,
@@ -153,6 +155,11 @@ object DraggableFlatListProps {
     stickyHeaderIndices: js.Array[scala.Double] = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     testID: java.lang.String = null,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: reactDashNativeLib.reactDashNativeMod.TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null,
     updateCellsBatchingPeriod: scala.Int | scala.Double = null,
     viewabilityConfig: reactDashNativeLib.reactDashNativeMod.ViewabilityConfig = null,
     viewabilityConfigCallbackPairs: reactDashNativeLib.reactDashNativeMod.ViewabilityConfigCallbackPairs = null,
@@ -197,6 +204,7 @@ object DraggableFlatListProps {
     if (getItem != null) __obj.updateDynamic("getItem")(js.Any.fromFunction2(getItem))
     if (getItemCount != null) __obj.updateDynamic("getItemCount")(js.Any.fromFunction1(getItemCount))
     if (getItemLayout != null) __obj.updateDynamic("getItemLayout")(js.Any.fromFunction2(getItemLayout))
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
@@ -205,6 +213,7 @@ object DraggableFlatListProps {
     if (initialScrollIndex != null) __obj.updateDynamic("initialScrollIndex")(initialScrollIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(invertStickyHeaders)) __obj.updateDynamic("invertStickyHeaders")(invertStickyHeaders)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
     if (keyboardDismissMode != null) __obj.updateDynamic("keyboardDismissMode")(keyboardDismissMode.asInstanceOf[js.Any])
     if (keyboardShouldPersistTaps != null) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
@@ -277,6 +286,11 @@ object DraggableFlatListProps {
     if (stickyHeaderIndices != null) __obj.updateDynamic("stickyHeaderIndices")(stickyHeaderIndices)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     if (updateCellsBatchingPeriod != null) __obj.updateDynamic("updateCellsBatchingPeriod")(updateCellsBatchingPeriod.asInstanceOf[js.Any])
     if (viewabilityConfig != null) __obj.updateDynamic("viewabilityConfig")(viewabilityConfig)
     if (viewabilityConfigCallbackPairs != null) __obj.updateDynamic("viewabilityConfigCallbackPairs")(viewabilityConfigCallbackPairs)

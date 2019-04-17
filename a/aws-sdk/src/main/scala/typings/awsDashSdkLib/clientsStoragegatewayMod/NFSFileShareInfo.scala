@@ -33,13 +33,13 @@ trait NFSFileShareInfo extends js.Object {
     */
   var ReadOnly: js.UndefOr[Boolean] = js.undefined
   /**
-    * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
+    * A value that sets who pays the cost of the request and the cost associated with data download from the S3 bucket. If this value is set to true, the requester pays the costs. Otherwise the S3 bucket owner pays. However, the S3 bucket owner always pays the cost of storing data.   RequesterPays is a configuration for the S3 bucket that backs the file share, so make sure that the configuration on the file share is the same as the S3 bucket configuration. 
     */
   var RequesterPays: js.UndefOr[Boolean] = js.undefined
   var Role: js.UndefOr[Role] = js.undefined
   var Squash: js.UndefOr[Squash] = js.undefined
   /**
-    * A list of up to 10 tags assigned to the NFS file share, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
+    * A list of up to 50 tags assigned to the NFS file share, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
     */
   var Tags: js.UndefOr[Tags] = js.undefined
 }

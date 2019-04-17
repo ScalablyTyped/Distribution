@@ -30,8 +30,10 @@ object BarCodeScannerProps {
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     barCodeTypes: js.Array[java.lang.String] = null,
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
     onAccessibilityAction: () => scala.Unit = null,
@@ -63,6 +65,11 @@ object BarCodeScannerProps {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     testID: java.lang.String = null,
     torchMode: expoLib.expoLibStrings.on | expoLib.expoLibStrings.off = null,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: reactDashNativeLib.reactDashNativeMod.TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null,
     `type`: expoLib.expoLibStrings.front | expoLib.expoLibStrings.back = null
   ): BarCodeScannerProps = {
     val __obj = js.Dynamic.literal()
@@ -80,8 +87,10 @@ object BarCodeScannerProps {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (barCodeTypes != null) __obj.updateDynamic("barCodeTypes")(barCodeTypes)
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
@@ -113,6 +122,11 @@ object BarCodeScannerProps {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (torchMode != null) __obj.updateDynamic("torchMode")(torchMode.asInstanceOf[js.Any])
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarCodeScannerProps]
   }

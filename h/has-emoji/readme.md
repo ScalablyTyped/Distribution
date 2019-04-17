@@ -1,6 +1,16 @@
 ```
-// Type definitions for has-emoji 1.0
-// Project: https://github.com/sindresorhus/has-emoji#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check whether a string has any emoji.
+
+@example
+```
+import hasEmoji = require('has-emoji');
+
+hasEmoji('Unicorn 🦄');
+//=> true
+
+hasEmoji('Cat');
+//=> false
+```
+*/
 ```

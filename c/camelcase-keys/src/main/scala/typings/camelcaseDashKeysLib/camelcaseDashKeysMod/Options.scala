@@ -6,8 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var deep: js.UndefOr[scala.Boolean] = js.undefined
-  var exclude: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
+  /**
+  		Recurse nested objects and objects in arrays.
+  		@default false
+  		*/
+  val deep: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Exclude keys from being camelCased.
+  		@default []
+  		*/
+  val exclude: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
 }
 
 object Options {

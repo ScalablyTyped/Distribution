@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait GatewayInfo extends js.Object {
   /**
+    * The ID of the Amazon EC2 instance that was used to launch the gateway.
+    */
+  var Ec2InstanceId: js.UndefOr[Ec2InstanceId] = js.undefined
+  /**
+    * The AWS Region where the Amazon EC2 instance is located.
+    */
+  var Ec2InstanceRegion: js.UndefOr[Ec2InstanceRegion] = js.undefined
+  /**
     * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and region.
     */
   var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
@@ -31,6 +39,8 @@ trait GatewayInfo extends js.Object {
 object GatewayInfo {
   @scala.inline
   def apply(
+    Ec2InstanceId: Ec2InstanceId = null,
+    Ec2InstanceRegion: Ec2InstanceRegion = null,
     GatewayARN: GatewayARN = null,
     GatewayId: GatewayId = null,
     GatewayName: java.lang.String = null,
@@ -38,6 +48,8 @@ object GatewayInfo {
     GatewayType: GatewayType = null
   ): GatewayInfo = {
     val __obj = js.Dynamic.literal()
+    if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId)
+    if (Ec2InstanceRegion != null) __obj.updateDynamic("Ec2InstanceRegion")(Ec2InstanceRegion)
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN)
     if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId)
     if (GatewayName != null) __obj.updateDynamic("GatewayName")(GatewayName)

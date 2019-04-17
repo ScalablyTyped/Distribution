@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AcceptReservedNodeExchangeOutputMessage extends js.Object {
+  /**
+    * 
+    */
   var ExchangedReservedNode: js.UndefOr[ReservedNode] = js.undefined
 }
 

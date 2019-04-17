@@ -167,6 +167,31 @@ object v2Ns extends js.Object {
     var port: scala.Double = js.native
     var scopes: js.Array[java.lang.String] = js.native
     var servicePath: java.lang.String = js.native
+    def batchCreateEntities(request: dialogflowLib.dialogflowMod.BatchCreateEntitiesRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchCreateEntities(
+      request: dialogflowLib.dialogflowMod.BatchCreateEntitiesRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchDeleteEntities(request: dialogflowLib.dialogflowMod.BatchDeleteEntitiesRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchDeleteEntities(
+      request: dialogflowLib.dialogflowMod.BatchDeleteEntitiesRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchDeleteEntityTypes(request: dialogflowLib.dialogflowMod.BatchDeleteEntityTypesRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchDeleteEntityTypes(
+      request: dialogflowLib.dialogflowMod.BatchDeleteEntityTypesRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchUpdateEntities(request: dialogflowLib.dialogflowMod.BatchUpdateEntitiesRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchUpdateEntities(
+      request: dialogflowLib.dialogflowMod.BatchUpdateEntitiesRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchUpdateEntityTypes(request: dialogflowLib.dialogflowMod.BatchUpdateEntityTypesRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchUpdateEntityTypes(
+      request: dialogflowLib.dialogflowMod.BatchUpdateEntityTypesRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
     def createEntityType(request: dialogflowLib.dialogflowMod.CreateEntityTypeRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.EntityType]] = js.native
     def createEntityType(
       request: dialogflowLib.dialogflowMod.CreateEntityTypeRequest,
@@ -200,12 +225,6 @@ object v2Ns extends js.Object {
     def matchEntityTypeFromEntityTypeName(entityTypeName: java.lang.String): java.lang.String = js.native
     def matchProjectFromEntityTypeName(entityTypeName: java.lang.String): java.lang.String = js.native
     def matchProjectFromProjectAgentName(entityTypeName: java.lang.String): java.lang.String = js.native
-    // TODO: add batch style calls
-    // batchUpdateEntityTypes
-    // batchDeleteEntityTypes
-    // batchCreateEntities
-    // batchUpdateEntities
-    // batchDeleteEntities
     def projectAgentPath(project: java.lang.String): java.lang.String = js.native
     def updateEntityType(request: dialogflowLib.dialogflowMod.UpdateEntityTypeRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.EntityType]] = js.native
     def updateEntityType(
@@ -221,6 +240,16 @@ object v2Ns extends js.Object {
     var scopes: js.Array[java.lang.String] = js.native
     var servicePath: java.lang.String = js.native
     def agentPath(project: java.lang.String, agent: java.lang.String): java.lang.String = js.native
+    def batchDeleteIntents(request: dialogflowLib.dialogflowMod.BatchDeleteIntentsRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchDeleteIntents(
+      request: dialogflowLib.dialogflowMod.BatchDeleteIntentsRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchUpdateIntents(request: dialogflowLib.dialogflowMod.BatchUpdateIntentsRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
+    def batchUpdateIntents(
+      request: dialogflowLib.dialogflowMod.BatchUpdateIntentsRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.gaxNs.Operation]] = js.native
     def createIntent(request: dialogflowLib.dialogflowMod.CreateIntentRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.Intent]] = js.native
     def createIntent(
       request: dialogflowLib.dialogflowMod.CreateIntentRequest,
@@ -251,9 +280,6 @@ object v2Ns extends js.Object {
     def matchProjectFromAgentName(agentName: java.lang.String): java.lang.String = js.native
     def matchProjectFromIntentName(intentName: java.lang.String): java.lang.String = js.native
     def matchProjectFromProjectAgentName(projectAgentName: java.lang.String): java.lang.String = js.native
-    // TODO: add batch style calls
-    // batchUpdateIntents(request: BatchUpdateIntentsRequest): void;
-    // batchDeleteIntents(request: BatchDeleteIntentsRequest): void;
     def projectAgentPath(project: java.lang.String): java.lang.String = js.native
     def updateIntent(request: dialogflowLib.dialogflowMod.UpdateIntentRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.Intent]] = js.native
     def updateIntent(

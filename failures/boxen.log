@@ -2,7 +2,6 @@
 [info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/boxen/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/boxen),TsIdentLibrarySimple(boxen)),TsIdentModule(None,List(boxen))) [id => boxen, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(boxen)) [id => boxen, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(boxen) [id => boxen, phase => typescript] 
-[warn ] QualifyReferences.scala:32 Couldn't qualify BoxStyle [id => boxen, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(boxen) / TsExport() / TsExporteeTree() / TsDeclInterface(CustomBorderStyle) / TsTypeRef())] 
 [warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof BorderStyle [id => boxen, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(boxen) / TsDeclVar(boxen))] 
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(BorderStyle)))) [id => boxen, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(boxen) / TsDeclVar(boxen) / TsTypeObject() / TsMemberProperty(BorderStyle) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(boxen)))) [id => boxen, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(boxen) / TsDeclVar(boxen) / TsTypeObject() / TsMemberProperty(default) / TsTypeQuery())] 

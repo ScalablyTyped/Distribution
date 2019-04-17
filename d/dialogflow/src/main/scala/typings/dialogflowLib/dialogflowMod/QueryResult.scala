@@ -13,6 +13,7 @@ trait QueryResult extends js.Object {
   var fulfillmentText: java.lang.String
   var intent: Intent
   var intentDetectionConfidence: scala.Double
+  var knowledgeAnswers: js.Any
   var languageCode: java.lang.String
   var outputContexts: js.Array[Context[java.lang.String, _]]
   var parameters: js.Any
@@ -33,6 +34,7 @@ object QueryResult {
     fulfillmentText: java.lang.String,
     intent: Intent,
     intentDetectionConfidence: scala.Double,
+    knowledgeAnswers: js.Any,
     languageCode: java.lang.String,
     outputContexts: js.Array[Context[java.lang.String, _]],
     parameters: js.Any,
@@ -42,7 +44,7 @@ object QueryResult {
     webhookSource: java.lang.String,
     sentimentAnalysisResult: dialogflowLib.Anon_QueryTextSentiment = null
   ): QueryResult = {
-    val __obj = js.Dynamic.literal(action = action, allRequiredParamsSent = allRequiredParamsSent, diagnosticInfo = diagnosticInfo, fulfillmentMessages = fulfillmentMessages, fulfillmentText = fulfillmentText, intent = intent, intentDetectionConfidence = intentDetectionConfidence, languageCode = languageCode, outputContexts = outputContexts, parameters = parameters, queryText = queryText, speechRecognitionConfidence = speechRecognitionConfidence, webhookPayload = webhookPayload, webhookSource = webhookSource)
+    val __obj = js.Dynamic.literal(action = action, allRequiredParamsSent = allRequiredParamsSent, diagnosticInfo = diagnosticInfo, fulfillmentMessages = fulfillmentMessages, fulfillmentText = fulfillmentText, intent = intent, intentDetectionConfidence = intentDetectionConfidence, knowledgeAnswers = knowledgeAnswers, languageCode = languageCode, outputContexts = outputContexts, parameters = parameters, queryText = queryText, speechRecognitionConfidence = speechRecognitionConfidence, webhookPayload = webhookPayload, webhookSource = webhookSource)
     if (sentimentAnalysisResult != null) __obj.updateDynamic("sentimentAnalysisResult")(sentimentAnalysisResult)
     __obj.asInstanceOf[QueryResult]
   }

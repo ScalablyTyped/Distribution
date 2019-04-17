@@ -6,11 +6,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /**
+  		Maps keys in `input` to an aliased name. Matching keys are converted to arguments with a single dash (`-`) in front of the aliased key and the value in a separate array item. Keys are still affected by `includes` and `excludes`.
+  		*/
   var aliases: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  /**
+  		By default, camelCased keys will be hyphenated. Enabling this will bypass the conversion process.
+  		@default false
+  		@example
+  		```
+  		console.log(dargs({fooBar: 'baz'}));
+  		//=> ['--foo-bar', 'baz']
+  		console.log(dargs({fooBar: 'baz'}, {allowCamelCase: true}));
+  		//=> ['--fooBar', 'baz']
+  		```
+  		*/
   var allowCamelCase: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Keys or regex of keys to exclude. Takes precedence over `includes`.
+  		*/
   var excludes: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
+  /**
+  		Exclude `false` values. Can be useful when dealing with strict argument parsers that throw on unknown arguments like `--no-foo`.
+  		@default false
+  		*/
   var ignoreFalse: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Keys or regex of keys to include.
+  		*/
   var includes: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
+  /**
+  		Setting this to `false` makes it return the key and value as separate array items instead of using a `=` separator in one item. This can be useful for tools that doesn't support `--foo=bar` style flags.
+  		@default true
+  		@example
+  		```
+  		console.log(dargs({foo: 'bar'}, {useEquals: false}));
+  		// [
+  		// 	'--foo', 'bar'
+  		// ]
+  		```
+  		*/
   var useEquals: js.UndefOr[scala.Boolean] = js.undefined
 }
 

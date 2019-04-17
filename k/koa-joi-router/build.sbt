@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-joi-router"
-version := "5.2-dt-20190209Z-ba5a10"
+version := "5.2-dt-20190209Z-b9541a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-ac8609",
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-647453",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-7a04b0",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-097c0f",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-daf975",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-a9fbc4",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-4c470c",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-291dac",

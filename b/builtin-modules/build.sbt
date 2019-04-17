@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "builtin-modules"
-version := "2.0-dt-20180214Z-8f76eb"
+version := "3.1.0-8f76eb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

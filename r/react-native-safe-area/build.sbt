@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-safe-area"
-version := "0.5-dt-20181123Z-b25dd6"
+version := "0.5-dt-20181123Z-4164db"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-7e744c",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-5f45a9",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190410Z-71fdcd",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190416Z-d088dc",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

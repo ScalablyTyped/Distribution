@@ -18,12 +18,12 @@ trait Intent extends js.Object {
   var name: java.lang.String
   var outputContexts: js.UndefOr[js.Array[Context[java.lang.String, _]]] = js.undefined
   var parameters: js.UndefOr[js.Array[Parameter]] = js.undefined
-  var parentFollowupIntentName: java.lang.String
+  var parentFollowupIntentName: js.UndefOr[java.lang.String] = js.undefined
   var priority: js.UndefOr[scala.Double] = js.undefined
   var resetContexts: js.UndefOr[scala.Boolean] = js.undefined
-  var rootFollowupIntentName: java.lang.String
+  var rootFollowupIntentName: js.UndefOr[java.lang.String] = js.undefined
   var trainingPhrases: js.UndefOr[js.Array[TrainingPhrase]] = js.undefined
-  var webhookState: java.lang.String
+  var webhookState: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Intent {
@@ -31,9 +31,6 @@ object Intent {
   def apply(
     displayName: java.lang.String,
     name: java.lang.String,
-    parentFollowupIntentName: java.lang.String,
-    rootFollowupIntentName: java.lang.String,
-    webhookState: java.lang.String,
     action: java.lang.String = null,
     defaultResponsePlatforms: js.Array[java.lang.String] = null,
     events: js.Array[java.lang.String] = null,
@@ -44,11 +41,14 @@ object Intent {
     mlEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     outputContexts: js.Array[Context[java.lang.String, _]] = null,
     parameters: js.Array[Parameter] = null,
+    parentFollowupIntentName: java.lang.String = null,
     priority: scala.Int | scala.Double = null,
     resetContexts: js.UndefOr[scala.Boolean] = js.undefined,
-    trainingPhrases: js.Array[TrainingPhrase] = null
+    rootFollowupIntentName: java.lang.String = null,
+    trainingPhrases: js.Array[TrainingPhrase] = null,
+    webhookState: java.lang.String = null
   ): Intent = {
-    val __obj = js.Dynamic.literal(displayName = displayName, name = name, parentFollowupIntentName = parentFollowupIntentName, rootFollowupIntentName = rootFollowupIntentName, webhookState = webhookState)
+    val __obj = js.Dynamic.literal(displayName = displayName, name = name)
     if (action != null) __obj.updateDynamic("action")(action)
     if (defaultResponsePlatforms != null) __obj.updateDynamic("defaultResponsePlatforms")(defaultResponsePlatforms)
     if (events != null) __obj.updateDynamic("events")(events)
@@ -59,9 +59,12 @@ object Intent {
     if (!js.isUndefined(mlEnabled)) __obj.updateDynamic("mlEnabled")(mlEnabled)
     if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (parentFollowupIntentName != null) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (!js.isUndefined(resetContexts)) __obj.updateDynamic("resetContexts")(resetContexts)
+    if (rootFollowupIntentName != null) __obj.updateDynamic("rootFollowupIntentName")(rootFollowupIntentName)
     if (trainingPhrases != null) __obj.updateDynamic("trainingPhrases")(trainingPhrases)
+    if (webhookState != null) __obj.updateDynamic("webhookState")(webhookState)
     __obj.asInstanceOf[Intent]
   }
 }

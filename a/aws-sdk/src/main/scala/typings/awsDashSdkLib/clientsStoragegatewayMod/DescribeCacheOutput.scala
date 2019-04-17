@@ -19,7 +19,7 @@ trait DescribeCacheOutput extends js.Object {
     */
   var CacheHitPercentage: js.UndefOr[double] = js.undefined
   /**
-    * 
+    * Percent of application read operations from the file shares that are not served from cache. The sample is taken at the end of the reporting period.
     */
   var CacheMissPercentage: js.UndefOr[double] = js.undefined
   /**

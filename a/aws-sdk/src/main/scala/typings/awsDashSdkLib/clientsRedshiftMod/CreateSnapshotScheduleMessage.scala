@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateSnapshotScheduleMessage extends js.Object {
+  /**
+    * 
+    */
   var DryRun: js.UndefOr[BooleanOptional] = js.undefined
+  /**
+    * 
+    */
   var NextInvocations: js.UndefOr[IntegerOptional] = js.undefined
   /**
     * The definition of the snapshot schedule. The definition is made up of schedule expressions, for example "cron(30 12 *)" or "rate(12 hours)". 
@@ -20,6 +26,9 @@ trait CreateSnapshotScheduleMessage extends js.Object {
     * A unique identifier for a snapshot schedule. Only alphanumeric characters are allowed for the identifier.
     */
   var ScheduleIdentifier: js.UndefOr[String] = js.undefined
+  /**
+    * An optional set of tags you can use to search for the schedule.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 

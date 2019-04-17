@@ -1,6 +1,7 @@
 ```
-// Type definitions for clipboardy 1.1
-// Project: https://github.com/sindresorhus/clipboardy#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Write (copy) to the clipboard asynchronously.
+
+@param text - The text to write to the clipboard.
+*/
 ```

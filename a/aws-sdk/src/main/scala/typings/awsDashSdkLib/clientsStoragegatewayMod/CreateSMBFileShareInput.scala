@@ -51,7 +51,7 @@ trait CreateSMBFileShareInput extends js.Object {
     */
   var ReadOnly: js.UndefOr[Boolean] = js.undefined
   /**
-    * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
+    * A value that sets who pays the cost of the request and the cost associated with data download from the S3 bucket. If this value is set to true, the requester pays the costs. Otherwise the S3 bucket owner pays. However, the S3 bucket owner always pays the cost of storing data.   RequesterPays is a configuration for the S3 bucket that backs the file share, so make sure that the configuration on the file share is the same as the S3 bucket configuration. 
     */
   var RequesterPays: js.UndefOr[Boolean] = js.undefined
   /**
@@ -59,7 +59,7 @@ trait CreateSMBFileShareInput extends js.Object {
     */
   var Role: awsDashSdkLib.clientsStoragegatewayMod.Role
   /**
-    * A list of up to 10 tags that can be assigned to the NFS file share. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+    * A list of up to 50 tags that can be assigned to the NFS file share. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
     */
   var Tags: js.UndefOr[Tags] = js.undefined
   /**

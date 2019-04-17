@@ -10,10 +10,12 @@ object devtoolsDashDetectLibStrings {
   sealed trait devtoolschange extends js.Object
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends devtoolsDashDetectLib.devtoolsDashDetectMod.Orientation
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends devtoolsDashDetectLib.devtoolsDashDetectMod.Orientation
   
   @scala.inline
   def devtoolschange: devtoolschange = "devtoolschange".asInstanceOf[devtoolschange]

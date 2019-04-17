@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait StarRatingProps extends js.Object {
   /**
+    * Number between 0 to 1 to determine the opacity of the button.
+    * Default is 0.2
+    */
+  var activeOpacity: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Style of the button containing the star.
     */
   var buttonStyle: js.UndefOr[
@@ -118,6 +123,7 @@ trait StarRatingProps extends js.Object {
 object StarRatingProps {
   @scala.inline
   def apply(
+    activeOpacity: scala.Int | scala.Double = null,
     buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -137,6 +143,7 @@ object StarRatingProps {
     starStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): StarRatingProps = {
     val __obj = js.Dynamic.literal()
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

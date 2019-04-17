@@ -6,13 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var detectIndent: js.UndefOr[scala.Boolean] = js.undefined
-  var indent: js.UndefOr[java.lang.String | scala.Double | scala.Null] = js.undefined
-  var mode: js.UndefOr[scala.Double] = js.undefined
-  var replacer: js.UndefOr[Replacer | (js.Array[scala.Double | java.lang.String]) | scala.Null] = js.undefined
-  var sortKeys: js.UndefOr[
-    scala.Boolean | (js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Double])
-  ] = js.undefined
+  /**
+  		Detect indentation automatically if the file exists.
+  		@default false
+  		*/
+  val detectIndent: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Indentation as a string or number of spaces. Pass in null for no formatting.
+  		@default '\t'
+  		*/
+  val indent: js.UndefOr[java.lang.String | scala.Double | scala.Null] = js.undefined
+  /**
+  		Mode used when writing the file.
+  		@default 0o666
+  		*/
+  val mode: js.UndefOr[scala.Double] = js.undefined
+  /**
+  		Passed into `JSON.stringify`.
+  		*/
+  val replacer: js.UndefOr[Replacer | (js.Array[scala.Double | java.lang.String])] = js.undefined
+  /**
+  		Sort the keys recursively. Optionally pass in a compare function.
+  		@default false
+  		*/
+  val sortKeys: js.UndefOr[scala.Boolean | SortKeys] = js.undefined
 }
 
 object Options {
@@ -22,7 +39,7 @@ object Options {
     indent: java.lang.String | scala.Double = null,
     mode: scala.Int | scala.Double = null,
     replacer: Replacer | (js.Array[scala.Double | java.lang.String]) = null,
-    sortKeys: scala.Boolean | (js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Double]) = null
+    sortKeys: scala.Boolean | SortKeys = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(detectIndent)) __obj.updateDynamic("detectIndent")(detectIndent)

@@ -1,6 +1,17 @@
 ```
-// Type definitions for git-remote-origin-url 2.0
-// Project: https://github.com/sindresorhus/git-remote-origin-url#readme
-// Definitions by: Jay Anslow <https://github.com/janslow>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Get the remote origin url of a Git repository.
+
+@param cwd - The current working directory. Default: `process.cwd()`.
+
+@example
+```
+import gitRemoteOriginUrl = require('git-remote-origin-url');
+
+(async() => {
+	console.log(await gitRemoteOriginUrl());
+	//=> 'git@github.com:sindresorhus/git-remote-origin-url.git'
+})();
+```
+*/
 ```

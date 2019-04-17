@@ -4185,6 +4185,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._AacCodingMode
   
   @js.native
+  sealed trait COGNITO_DEFAULT
+    extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._EmailSendingAccountType
+  
+  @js.native
   sealed trait COGNITO_IDENTITY_POOL
     extends awsDashSdkLib.clientsIotMod._ResourceType
   
@@ -5941,6 +5945,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DEU
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
+  
+  @js.native
+  sealed trait DEVELOPER
+    extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._EmailSendingAccountType
   
   @js.native
   sealed trait DEVELOPMENT
@@ -29454,6 +29462,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CODING_MODE_5_1: CODING_MODE_5_1 = "CODING_MODE_5_1".asInstanceOf[CODING_MODE_5_1]
   @scala.inline
+  def COGNITO_DEFAULT: COGNITO_DEFAULT = "COGNITO_DEFAULT".asInstanceOf[COGNITO_DEFAULT]
+  @scala.inline
   def COGNITO_IDENTITY_POOL: COGNITO_IDENTITY_POOL = "COGNITO_IDENTITY_POOL".asInstanceOf[COGNITO_IDENTITY_POOL]
   @scala.inline
   def COGNITO_USER_POOLS: COGNITO_USER_POOLS = "COGNITO_USER_POOLS".asInstanceOf[COGNITO_USER_POOLS]
@@ -30123,6 +30133,8 @@ object awsDashSdkLibStrings {
   def DETECTION_IN_PROGRESS: DETECTION_IN_PROGRESS = "DETECTION_IN_PROGRESS".asInstanceOf[DETECTION_IN_PROGRESS]
   @scala.inline
   def DEU: DEU = "DEU".asInstanceOf[DEU]
+  @scala.inline
+  def DEVELOPER: DEVELOPER = "DEVELOPER".asInstanceOf[DEVELOPER]
   @scala.inline
   def DEVELOPMENT: DEVELOPMENT = "DEVELOPMENT".asInstanceOf[DEVELOPMENT]
   @scala.inline

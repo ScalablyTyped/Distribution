@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ extends js.Object {
-  var `!..`: js.Tuple2[scala.Double, scala.Double]
+  var `!..`: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String])
   @JSName("$between")
   var $between: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[stdLib.Date, stdLib.Date])
   @JSName("$contained")
@@ -44,7 +44,7 @@ trait Anon_ extends js.Object {
   @JSName("$overlap")
   var $overlap: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String])
   var `&&`: js.Tuple2[scala.Double, scala.Double]
-  var `..`: js.Tuple2[scala.Double, scala.Double]
+  var `..`: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String])
   var `<@`: js.Any
   var `@>`: js.Any
 }
@@ -52,7 +52,7 @@ trait Anon_ extends js.Object {
 object Anon_ {
   @scala.inline
   def apply(
-    `!..`: js.Tuple2[scala.Double, scala.Double],
+    `!..`: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String]),
     $between: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[stdLib.Date, stdLib.Date]),
     $contained: js.Any,
     $contains: js.Any,
@@ -72,14 +72,14 @@ object Anon_ {
     $notLike: java.lang.String | sequelizeLib.sequelizeMod.WherePGStatement,
     $overlap: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String]),
     `&&`: js.Tuple2[scala.Double, scala.Double],
-    `..`: js.Tuple2[scala.Double, scala.Double],
+    `..`: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String]),
     `<@`: js.Any,
     `@>`: js.Any
   ): Anon_ = {
     val __obj = js.Dynamic.literal($between = $between.asInstanceOf[js.Any], $contained = $contained, $contains = $contains, $gt = $gt.asInstanceOf[js.Any], $gte = $gte.asInstanceOf[js.Any], $iLike = $iLike.asInstanceOf[js.Any], $ilike = $ilike.asInstanceOf[js.Any], $in = $in.asInstanceOf[js.Any], $like = $like.asInstanceOf[js.Any], $lt = $lt.asInstanceOf[js.Any], $lte = $lte.asInstanceOf[js.Any], $ne = $ne.asInstanceOf[js.Any], $not = $not.asInstanceOf[js.Any], $notBetween = $notBetween, $notILike = $notILike.asInstanceOf[js.Any], $notIn = $notIn.asInstanceOf[js.Any], $notLike = $notLike.asInstanceOf[js.Any], $overlap = $overlap.asInstanceOf[js.Any])
-    __obj.updateDynamic("!..")(`!..`)
+    __obj.updateDynamic("!..")(`!..`.asInstanceOf[js.Any])
     __obj.updateDynamic("&&")(`&&`)
-    __obj.updateDynamic("..")(`..`)
+    __obj.updateDynamic("..")(`..`.asInstanceOf[js.Any])
     __obj.updateDynamic("<@")(`<@`)
     __obj.updateDynamic("@>")(`@>`)
     __obj.asInstanceOf[Anon_]

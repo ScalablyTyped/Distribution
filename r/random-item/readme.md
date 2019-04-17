@@ -1,6 +1,16 @@
 ```
-// Type definitions for random-item 1.0
-// Project: https://github.com/sindresorhus/random-item
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Get a random item from an [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol).
+
+@example
+```
+import randomItem = require('random-item');
+
+randomItem(['🐴', '🦄', '🌈']);
+//=> '🦄'
+
+randomItem(new Set(['🐴', '🦄', '🌈']);
+//=> '🌈'
+```
+*/
 ```

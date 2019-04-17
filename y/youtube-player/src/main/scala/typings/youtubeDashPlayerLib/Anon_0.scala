@@ -40,7 +40,7 @@ trait Anon_0 extends js.Object {
   ] = js.undefined
   var modestbranding: js.UndefOr[youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1`] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined
-  var playlist: java.lang.String
+  var playlist: js.UndefOr[java.lang.String] = js.undefined
   var playsinline: js.UndefOr[
     youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`0` | youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1`
   ] = js.undefined
@@ -54,7 +54,6 @@ trait Anon_0 extends js.Object {
 object Anon_0 {
   @scala.inline
   def apply(
-    playlist: java.lang.String,
     autoplay: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`0` | youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1` = null,
     cc_lang_pref: java.lang.String = null,
     cc_load_policy: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1` = null,
@@ -71,12 +70,13 @@ object Anon_0 {
     loop: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`0` | youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1` = null,
     modestbranding: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1` = null,
     origin: java.lang.String = null,
+    playlist: java.lang.String = null,
     playsinline: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`0` | youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1` = null,
     rel: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`0` | youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`1` = null,
     start: scala.Int | scala.Double = null,
     widget_referrer: java.lang.String = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(playlist = playlist)
+    val __obj = js.Dynamic.literal()
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (cc_lang_pref != null) __obj.updateDynamic("cc_lang_pref")(cc_lang_pref)
     if (cc_load_policy != null) __obj.updateDynamic("cc_load_policy")(cc_load_policy)
@@ -93,6 +93,7 @@ object Anon_0 {
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (modestbranding != null) __obj.updateDynamic("modestbranding")(modestbranding)
     if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (playlist != null) __obj.updateDynamic("playlist")(playlist)
     if (playsinline != null) __obj.updateDynamic("playsinline")(playsinline.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

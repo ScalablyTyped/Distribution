@@ -34,6 +34,9 @@ trait ReservedNodeOffering extends js.Object {
     * The offering identifier.
     */
   var ReservedNodeOfferingId: js.UndefOr[String] = js.undefined
+  /**
+    * 
+    */
   var ReservedNodeOfferingType: js.UndefOr[ReservedNodeOfferingType] = js.undefined
   /**
     * The rate you are charged for each hour the cluster that is using the offering is running.

@@ -57,8 +57,10 @@ object TabBarIOSProps {
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     barTintColor: java.lang.String = null,
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     itemPositioning: reactDashNativeLib.reactDashNativeLibStrings.fill | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
@@ -91,6 +93,11 @@ object TabBarIOSProps {
     testID: java.lang.String = null,
     tintColor: java.lang.String = null,
     translucent: js.UndefOr[scala.Boolean] = js.undefined,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null,
     unselectedItemTintColor: java.lang.String = null,
     unselectedTintColor: java.lang.String = null
   ): TabBarIOSProps = {
@@ -109,8 +116,10 @@ object TabBarIOSProps {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor)
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (itemPositioning != null) __obj.updateDynamic("itemPositioning")(itemPositioning.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
@@ -143,6 +152,11 @@ object TabBarIOSProps {
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
     if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     if (unselectedItemTintColor != null) __obj.updateDynamic("unselectedItemTintColor")(unselectedItemTintColor)
     if (unselectedTintColor != null) __obj.updateDynamic("unselectedTintColor")(unselectedTintColor)
     __obj.asInstanceOf[TabBarIOSProps]

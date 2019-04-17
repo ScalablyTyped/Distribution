@@ -68,6 +68,7 @@ trait ArraySchema extends AnySchema {
     */
   def unique(): this.type = js.native
   def unique(comparator: java.lang.String): this.type = js.native
+  def unique(comparator: java.lang.String, options: ArrayUniqueOptions): this.type = js.native
   def unique[T](comparator: js.Function2[/* a */ T, /* b */ T, scala.Boolean]): this.type = js.native
   @JSName("unique")
   def unique_T[T](): this.type = js.native

@@ -10,6 +10,9 @@ trait AvailabilityZone extends js.Object {
     * The name of the availability zone.
     */
   var Name: js.UndefOr[String] = js.undefined
+  /**
+    * 
+    */
   var SupportedPlatforms: js.UndefOr[SupportedPlatformsList] = js.undefined
 }
 

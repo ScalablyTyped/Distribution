@@ -6,11 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SnapshotSchedule extends js.Object {
+  /**
+    * The number of clusters associated with the schedule.
+    */
   var AssociatedClusterCount: js.UndefOr[IntegerOptional] = js.undefined
+  /**
+    * A list of clusters associated with the schedule. A maximum of 100 clusters is returned.
+    */
   var AssociatedClusters: js.UndefOr[AssociatedClusterList] = js.undefined
+  /**
+    * 
+    */
   var NextInvocations: js.UndefOr[ScheduledSnapshotTimeList] = js.undefined
   /**
-    * A list of ScheduleDefinitions
+    * A list of ScheduleDefinitions.
     */
   var ScheduleDefinitions: js.UndefOr[ScheduleDefinitionList] = js.undefined
   /**

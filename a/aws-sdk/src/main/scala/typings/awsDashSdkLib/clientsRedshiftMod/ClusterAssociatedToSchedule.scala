@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClusterAssociatedToSchedule extends js.Object {
+  /**
+    * 
+    */
   var ClusterIdentifier: js.UndefOr[String] = js.undefined
+  /**
+    * 
+    */
   var ScheduleAssociationState: js.UndefOr[ScheduleState] = js.undefined
 }
 

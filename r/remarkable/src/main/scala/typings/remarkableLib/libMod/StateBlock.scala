@@ -28,7 +28,7 @@ trait StateBlock extends js.Object {
   var tShift: js.Array[scala.Double]
   /** loose/tight mode for lists */
   var tight: scala.Boolean
-  var tokens: js.Array[ContentToken]
+  var tokens: js.Array[BlockContentToken]
   def getLines(begin: scala.Double, end: scala.Double, indent: scala.Double, keepLastLF: scala.Boolean): java.lang.String
   def isEmpty(line: scala.Double): scala.Boolean
   def skipChars(pos: scala.Double, code: scala.Double): scala.Double
@@ -59,7 +59,7 @@ object StateBlock {
     src: java.lang.String,
     tShift: js.Array[scala.Double],
     tight: scala.Boolean,
-    tokens: js.Array[ContentToken]
+    tokens: js.Array[BlockContentToken]
   ): StateBlock = {
     val __obj = js.Dynamic.literal(bMarks = bMarks, blkIndent = blkIndent, ddIndent = ddIndent, eMarks = eMarks, env = env, getLines = js.Any.fromFunction4(getLines), isEmpty = js.Any.fromFunction1(isEmpty), level = level, line = line, lineMax = lineMax, options = options, parentType = parentType.asInstanceOf[js.Any], parser = parser, result = result, skipChars = js.Any.fromFunction2(skipChars), skipEmptyLines = js.Any.fromFunction1(skipEmptyLines), skipSpaces = js.Any.fromFunction1(skipSpaces), src = src, tShift = tShift, tight = tight, tokens = tokens)
   

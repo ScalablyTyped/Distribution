@@ -32,6 +32,10 @@ trait CreateStorediSCSIVolumeInput extends js.Object {
     */
   var SnapshotId: js.UndefOr[SnapshotId] = js.undefined
   /**
+    * A list of up to 50 tags that can be assigned to a stored volume. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
+  /**
     * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
     */
   var TargetName: awsDashSdkLib.clientsStoragegatewayMod.TargetName
@@ -47,12 +51,14 @@ object CreateStorediSCSIVolumeInput {
     TargetName: TargetName,
     KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
     KMSKey: KMSKey = null,
-    SnapshotId: SnapshotId = null
+    SnapshotId: SnapshotId = null,
+    Tags: Tags = null
   ): CreateStorediSCSIVolumeInput = {
     val __obj = js.Dynamic.literal(DiskId = DiskId, GatewayARN = GatewayARN, NetworkInterfaceId = NetworkInterfaceId, PreserveExistingData = PreserveExistingData, TargetName = TargetName)
     if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted)
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey)
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateStorediSCSIVolumeInput]
   }
 }

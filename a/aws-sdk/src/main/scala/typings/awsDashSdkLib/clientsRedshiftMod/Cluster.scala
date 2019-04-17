@@ -66,6 +66,9 @@ trait Cluster extends js.Object {
     * The name of the initial database that was created when the cluster was created. This same name is returned for the life of the cluster. If an initial database was not specified, a database named devdev was created by default. 
     */
   var DBName: js.UndefOr[String] = js.undefined
+  /**
+    * 
+    */
   var DataTransferProgress: js.UndefOr[DataTransferProgress] = js.undefined
   /**
     * Describes a group of DeferredMaintenanceWindow objects.

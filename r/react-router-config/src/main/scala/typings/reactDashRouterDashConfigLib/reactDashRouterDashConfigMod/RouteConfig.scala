@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RouteConfig extends js.Object {
+trait RouteConfig
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var component: js.UndefOr[
     reactLib.reactMod.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ComponentType[js.Object]
   ] = js.undefined
@@ -20,6 +21,7 @@ trait RouteConfig extends js.Object {
 object RouteConfig {
   @scala.inline
   def apply(
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     component: reactLib.reactMod.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ComponentType[js.Object] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.Key = null,
@@ -29,6 +31,7 @@ object RouteConfig {
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): RouteConfig = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

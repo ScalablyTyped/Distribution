@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "elegant-spinner"
-version := "1.0-dt-20180828Z-602c6e"
+version := "2.0.0-5de909"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,34 +6,72 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CallSite extends js.Object {
-  def getColumnNumber(): scala.Double
-  def getEvalOrigin(): CallSite | java.lang.String
-  def getFileName(): js.UndefOr[java.lang.String]
+  /**
+  		Returns the current column number if this function was defined in a script.
+  		*/
+  def getColumnNumber(): scala.Double | scala.Null
+  /**
+  		Returns a string representing the location where `eval` was called if this function was created using a call to `eval`.
+  		*/
+  def getEvalOrigin(): js.UndefOr[java.lang.String]
+  /**
+  		Returns the name of the script if this function was defined in a script.
+  		*/
+  def getFileName(): java.lang.String | scala.Null
+  /**
+  		Returns the current function.
+  		*/
   def getFunction(): js.UndefOr[js.Function]
-   // tslint:disable-line ban-types
-  def getFunctionName(): java.lang.String
-  def getLineNumber(): scala.Double
-  def getMethodName(): java.lang.String | scala.Null
-  def getThis(): js.UndefOr[js.Object]
-  def getTypeName(): java.lang.String
+  /**
+  		Returns the name of the current function, typically its `name` property. If a name property is not available an attempt will be made to try to infer a name from the function's context.
+  		*/
+  def getFunctionName(): java.lang.String | scala.Null
+  /**
+  		Returns the current line number if this function was defined in a script.
+  		*/
+  def getLineNumber(): scala.Double | scala.Null
+  /**
+  		Returns the name of the property of `this` or one of its prototypes that holds the current function.
+  		*/
+  def getMethodName(): js.UndefOr[java.lang.String]
+  /**
+  		Returns the value of `this`.
+  		*/
+  def getThis(): js.UndefOr[_]
+  /**
+  		Returns the type of `this` as a string. This is the name of the function stored in the constructor field of `this`, if available, otherwise the object's `[[Class]]` internal property.
+  		*/
+  def getTypeName(): java.lang.String | scala.Null
+  /**
+  		Returns `true` if this is a constructor call.
+  		*/
   def isConstructor(): scala.Boolean
+  /**
+  		Returns `true` if this call takes place in code defined by a call to `eval`.
+  		*/
   def isEval(): scala.Boolean
+  /**
+  		Returns `true` if this call is in native V8 code.
+  		*/
   def isNative(): scala.Boolean
+  /**
+  		Returns `true` if this is a top-level invocation, that is, if it's a global object.
+  		*/
   def isToplevel(): scala.Boolean
 }
 
 object CallSite {
   @scala.inline
   def apply(
-    getColumnNumber: () => scala.Double,
-    getEvalOrigin: () => CallSite | java.lang.String,
-    getFileName: () => js.UndefOr[java.lang.String],
+    getColumnNumber: () => scala.Double | scala.Null,
+    getEvalOrigin: () => js.UndefOr[java.lang.String],
+    getFileName: () => java.lang.String | scala.Null,
     getFunction: () => js.UndefOr[js.Function],
-    getFunctionName: () => java.lang.String,
-    getLineNumber: () => scala.Double,
-    getMethodName: () => java.lang.String | scala.Null,
-    getThis: () => js.UndefOr[js.Object],
-    getTypeName: () => java.lang.String,
+    getFunctionName: () => java.lang.String | scala.Null,
+    getLineNumber: () => scala.Double | scala.Null,
+    getMethodName: () => js.UndefOr[java.lang.String],
+    getThis: () => js.UndefOr[_],
+    getTypeName: () => java.lang.String | scala.Null,
     isConstructor: () => scala.Boolean,
     isEval: () => scala.Boolean,
     isNative: () => scala.Boolean,

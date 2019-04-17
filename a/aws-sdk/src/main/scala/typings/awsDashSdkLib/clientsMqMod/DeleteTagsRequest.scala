@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteTagsRequest extends js.Object {
   /**
-    * the Amazon Resource Name (ARN)
+    * The Amazon Resource Name (ARN) of the resource tag.
     */
   var ResourceArn: __string
   /**

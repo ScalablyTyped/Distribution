@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SupportedPlatform extends js.Object {
+  /**
+    * 
+    */
   var Name: js.UndefOr[String] = js.undefined
 }
 

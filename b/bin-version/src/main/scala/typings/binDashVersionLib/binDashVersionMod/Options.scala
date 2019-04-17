@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /**
+  		The arguments to pass to `binary` so that it will print its version.
+  		@default ['--version']
+  		*/
   var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

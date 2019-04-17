@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "recompose"
-version := "0.30-dt-20190322Z-ed9714"
+version := "0.30-dt-20190411Z-4090eb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

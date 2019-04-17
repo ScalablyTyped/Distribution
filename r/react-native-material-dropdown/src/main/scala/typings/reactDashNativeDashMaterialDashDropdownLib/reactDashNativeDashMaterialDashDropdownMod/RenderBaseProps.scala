@@ -38,6 +38,7 @@ object RenderBaseProps {
     dropdownOffset: DropDownOffset = null,
     dropdownPosition: scala.Int | scala.Double = null,
     fontSize: scala.Int | scala.Double = null,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: DropDownInsets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     itemColor: java.lang.String = null,
@@ -74,6 +75,7 @@ object RenderBaseProps {
     supportedOrientations: js.Array[java.lang.String] = null,
     testID: java.lang.String = null,
     textColor: java.lang.String = null,
+    tvParallaxProperties: reactDashNativeLib.reactDashNativeMod.TVParallaxProperties = null,
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String | scala.Double = null,
     valueExtractor: (/* item */ DropDownData, /* index */ scala.Double) => java.lang.String = null
@@ -102,6 +104,7 @@ object RenderBaseProps {
     if (dropdownOffset != null) __obj.updateDynamic("dropdownOffset")(dropdownOffset)
     if (dropdownPosition != null) __obj.updateDynamic("dropdownPosition")(dropdownPosition.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)
@@ -138,6 +141,7 @@ object RenderBaseProps {
     if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations)
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
     if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueExtractor != null) __obj.updateDynamic("valueExtractor")(js.Any.fromFunction2(valueExtractor))

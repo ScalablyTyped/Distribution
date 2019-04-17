@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("unique-random-array", JSImport.Namespace)
 @js.native
 object uniqueDashRandomDashArrayMod extends js.Object {
-  def apply[T](input: js.Array[T]): js.Function0[T] = js.native
+  def apply[ValueType](array: js.Array[ValueType]): js.Function0[ValueType] = js.native
 }
 

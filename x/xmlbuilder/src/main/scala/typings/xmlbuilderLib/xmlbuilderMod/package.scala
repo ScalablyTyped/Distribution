@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 package object xmlbuilderMod {
   type XMLStringifier = org.scalablytyped.runtime.StringDictionary[(js.Function1[/* v */ js.Any, java.lang.String]) | java.lang.String]
   type XMLWriter = org.scalablytyped.runtime.StringDictionary[
-    js.Function2[/* e */ XMLElementOrXMLNode, /* level */ js.UndefOr[scala.Double], scala.Unit]
+    js.Function3[
+      /* e */ XMLElementOrXMLNode, 
+      /* options */ WriterOptions, 
+      /* level */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ]
   ]
 }

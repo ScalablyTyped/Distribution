@@ -39,7 +39,7 @@ trait UpdateSMBFileShareInput extends js.Object {
     */
   var ReadOnly: js.UndefOr[Boolean] = js.undefined
   /**
-    * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
+    * A value that sets who pays the cost of the request and the cost associated with data download from the S3 bucket. If this value is set to true, the requester pays the costs. Otherwise the S3 bucket owner pays. However, the S3 bucket owner always pays the cost of storing data.   RequesterPays is a configuration for the S3 bucket that backs the file share, so make sure that the configuration on the file share is the same as the S3 bucket configuration. 
     */
   var RequesterPays: js.UndefOr[Boolean] = js.undefined
   /**

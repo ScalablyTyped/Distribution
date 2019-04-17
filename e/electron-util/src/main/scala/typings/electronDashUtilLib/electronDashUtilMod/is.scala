@@ -8,14 +8,41 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-util", "is")
 @js.native
 object is extends js.Object {
-  var development: scala.Boolean = js.native
-  var linux: scala.Boolean = js.native
-  var macAppStore: scala.Boolean = js.native
-  var macos: scala.Boolean = js.native
-  var main: scala.Boolean = js.native
-  var renderer: scala.Boolean = js.native
-  var usingAsar: scala.Boolean = js.native
-  var windows: scala.Boolean = js.native
-  var windowsStore: scala.Boolean = js.native
+  /**
+  	 * Running in development, not in production.
+  	 */
+  val development: scala.Boolean = js.native
+  /**
+  	 * Running on Linux.
+  	 */
+  val linux: scala.Boolean = js.native
+  /**
+  	 * The app is an Mac App Store build.
+  	 */
+  val macAppStore: scala.Boolean = js.native
+  /**
+  	 * Running on macOS.
+  	 */
+  val macos: scala.Boolean = js.native
+  /**
+  	 * Running on the [main process](https://electronjs.org/docs/tutorial/quick-start/#main-process).
+  	 */
+  val main: scala.Boolean = js.native
+  /**
+  	 * Running on the [renderer process](https://electronjs.org/docs/tutorial/quick-start/#renderer-process).
+  	 */
+  val renderer: scala.Boolean = js.native
+  /**
+  	 * The app is using [ASAR](https://electronjs.org/docs/tutorial/application-packaging/).
+  	 */
+  val usingAsar: scala.Boolean = js.native
+  /**
+  	 * Running on Windows.
+  	 */
+  val windows: scala.Boolean = js.native
+  /**
+  	 * The app is a Windows Store AppX build.
+  	 */
+  val windowsStore: scala.Boolean = js.native
 }
 

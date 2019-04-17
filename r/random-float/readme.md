@@ -1,6 +1,20 @@
 ```
-// Type definitions for random-float 1.0
-// Project: https://github.com/sindresorhus/random-float
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Generate a random [float](https://en.wikipedia.org/wiki/Floating_point).
+
+@param minimumValue - Minimum float to return. Default: `1`.
+@param maximumValue - Maximum float to return. Default: `1`.
+@returns A float from `minimumValue` to `maximumValue`.
+
+@example
+```
+import randomFloat = require('random-float');
+
+randomFloat(5);
+//=> 4.401887938147411
+
+randomFloat(10, 100);
+//=> 72.34217455144972
+```
+*/
 ```

@@ -118,10 +118,12 @@ object WebViewProps {
     dataDetectorTypes: reactDashNativeLib.DataDetectorTypes | js.Array[reactDashNativeLib.DataDetectorTypes] = null,
     decelerationRate: reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.fast | scala.Double = null,
     domStorageEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: Insets = null,
     html: java.lang.String = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     injectedJavaScript: java.lang.String = null,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     javaScriptEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     mediaPlaybackRequiresUserAction: js.UndefOr[scala.Boolean] = js.undefined,
     mixedContentMode: reactDashNativeLib.reactDashNativeLibStrings.never | reactDashNativeLib.reactDashNativeLibStrings.always | reactDashNativeLib.reactDashNativeLibStrings.compatibility = null,
@@ -170,6 +172,11 @@ object WebViewProps {
     startInLoadingState: js.UndefOr[scala.Boolean] = js.undefined,
     style: StyleProp[ViewStyle] = null,
     testID: java.lang.String = null,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null,
     url: java.lang.String = null,
     useWebKit: js.UndefOr[scala.Boolean] = js.undefined,
     userAgent: java.lang.String = null
@@ -196,10 +203,12 @@ object WebViewProps {
     if (dataDetectorTypes != null) __obj.updateDynamic("dataDetectorTypes")(dataDetectorTypes.asInstanceOf[js.Any])
     if (decelerationRate != null) __obj.updateDynamic("decelerationRate")(decelerationRate.asInstanceOf[js.Any])
     if (!js.isUndefined(domStorageEnabled)) __obj.updateDynamic("domStorageEnabled")(domStorageEnabled)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (html != null) __obj.updateDynamic("html")(html)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (injectedJavaScript != null) __obj.updateDynamic("injectedJavaScript")(injectedJavaScript)
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (!js.isUndefined(javaScriptEnabled)) __obj.updateDynamic("javaScriptEnabled")(javaScriptEnabled)
     if (!js.isUndefined(mediaPlaybackRequiresUserAction)) __obj.updateDynamic("mediaPlaybackRequiresUserAction")(mediaPlaybackRequiresUserAction)
     if (mixedContentMode != null) __obj.updateDynamic("mixedContentMode")(mixedContentMode.asInstanceOf[js.Any])
@@ -248,6 +257,11 @@ object WebViewProps {
     if (!js.isUndefined(startInLoadingState)) __obj.updateDynamic("startInLoadingState")(startInLoadingState)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(useWebKit)) __obj.updateDynamic("useWebKit")(useWebKit)
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)

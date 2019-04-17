@@ -49,9 +49,9 @@ trait Nodes extends js.Object {
     * node, this call is used to get access to the running
     * instance.
     * @param id - the id of the node.
-    * @return - the node matching the given id.
+    * @return - the node matching the given id, or null if it does not exist.
     */
-  def getNode(id: NodeId): Node = js.native
+  def getNode(id: NodeId): Node | scala.Null = js.native
   /**
     * Registers a node constructor.
     *

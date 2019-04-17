@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 // lifecycle: https://github.com/acdlite/recompose/blob/master/docs/API.md#lifecycle
 trait ReactLifeCycleFunctions[TProps, TState, TInstance] extends js.Object {
+  var componentDidCatch: js.UndefOr[
+    js.ThisFunction2[
+      /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
+      /* error */ stdLib.Error, 
+      /* info */ reactLib.reactMod.ErrorInfo, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var componentDidMount: js.UndefOr[
     js.ThisFunction0[
       /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
@@ -61,6 +69,12 @@ trait ReactLifeCycleFunctions[TProps, TState, TInstance] extends js.Object {
 object ReactLifeCycleFunctions {
   @scala.inline
   def apply[TProps, TState, TInstance](
+    componentDidCatch: js.ThisFunction2[
+      /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
+      /* error */ stdLib.Error, 
+      /* info */ reactLib.reactMod.ErrorInfo, 
+      scala.Unit
+    ] = null,
     componentDidMount: js.ThisFunction0[
       /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
       scala.Unit
@@ -98,6 +112,7 @@ object ReactLifeCycleFunctions {
     ] = null
   ): ReactLifeCycleFunctions[TProps, TState, TInstance] = {
     val __obj = js.Dynamic.literal()
+    if (componentDidCatch != null) __obj.updateDynamic("componentDidCatch")(componentDidCatch)
     if (componentDidMount != null) __obj.updateDynamic("componentDidMount")(componentDidMount)
     if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate)
     if (componentWillMount != null) __obj.updateDynamic("componentWillMount")(componentWillMount)

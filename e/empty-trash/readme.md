@@ -1,7 +1,14 @@
 ```
-// Type definitions for empty-trash 2.1
-// Project: https://github.com/sindresorhus/empty-trash#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
+/**
+Empty the [trash](https://en.wikipedia.org/wiki/Trash_(computing)).
+
+@example
+```
+import emptyTrash = require('empty-trash');
+
+(async () => {
+	await emptyTrash();
+})();
+```
+*/
 ```

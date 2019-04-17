@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DescribeClusterSnapshotsMessage extends js.Object {
   /**
-    * A value that indicates whether to return snapshots only for an existing cluster. Table-level restore can be performed only using a snapshot of an existing cluster, that is, a cluster that has not been deleted. If ClusterExists is set to true, ClusterIdentifier is required.
+    * A value that indicates whether to return snapshots only for an existing cluster. You can perform table-level restore only by using a snapshot of an existing cluster, that is, a cluster that has not been deleted. Values for this parameter work as follows:    If ClusterExists is set to true, ClusterIdentifier is required.   If ClusterExists is set to false and ClusterIdentifier isn't specified, all snapshots associated with deleted clusters (orphaned snapshots) are returned.    If ClusterExists is set to false and ClusterIdentifier is specified for a deleted cluster, snapshots associated with that cluster are returned.   If ClusterExists is set to false and ClusterIdentifier is specified for an existing cluster, no snapshots are returned.   
     */
   var ClusterExists: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The identifier of the cluster for which information about snapshots is requested.
+    * The identifier of the cluster which generated the requested snapshots.
     */
   var ClusterIdentifier: js.UndefOr[String] = js.undefined
   /**
@@ -38,6 +38,9 @@ trait DescribeClusterSnapshotsMessage extends js.Object {
     * The type of snapshots for which you are requesting information. By default, snapshots of all types are returned. Valid Values: automated | manual 
     */
   var SnapshotType: js.UndefOr[String] = js.undefined
+  /**
+    * 
+    */
   var SortingEntities: js.UndefOr[SnapshotSortingEntityList] = js.undefined
   /**
     * A value that requests only snapshots created at or after the specified time. The time value is specified in ISO 8601 format. For more information about ISO 8601, go to the ISO8601 Wikipedia page.  Example: 2012-07-16T18:00:00Z 

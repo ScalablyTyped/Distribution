@@ -7,8 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait Options
   extends normalizeDashUrlLib.normalizeDashUrlMod.Options {
-  var exclude: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var extractFromQueryString: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Exclude URLs that match URLs in the given array.
+  		@default []
+  		*/
+  val exclude: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+  		Extract URLs that appear as query parameters in the found URLs.
+  		@default false
+  		*/
+  val extractFromQueryString: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {

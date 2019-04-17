@@ -42,6 +42,9 @@ trait ReservedNode extends js.Object {
     * The identifier for the reserved node offering.
     */
   var ReservedNodeOfferingId: js.UndefOr[String] = js.undefined
+  /**
+    * 
+    */
   var ReservedNodeOfferingType: js.UndefOr[ReservedNodeOfferingType] = js.undefined
   /**
     * The time the reservation started. You purchase a reserved node offering for a duration. This is the start time of that duration.

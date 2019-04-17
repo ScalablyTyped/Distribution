@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait UpdateMaintenanceStartTimeInput extends js.Object {
   /**
-    * The maintenance start time day of the week represented as an ordinal number from 0 to 6, where 0 represents Sunday and 6 Saturday.
+    * The day of the month component of the maintenance start time represented as an ordinal number from 1 to 28, where 1 represents the first day of the month and 28 represents the last day of the month.  This value is only available for tape and volume gateways. 
     */
-  var DayOfWeek: awsDashSdkLib.clientsStoragegatewayMod.DayOfWeek
+  var DayOfMonth: js.UndefOr[DayOfMonth] = js.undefined
+  /**
+    * The day of the week component of the maintenance start time week represented as an ordinal number from 0 to 6, where 0 represents Sunday and 6 Saturday.
+    */
+  var DayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
   var GatewayARN: awsDashSdkLib.clientsStoragegatewayMod.GatewayARN
   /**
     * The hour component of the maintenance start time represented as hh, where hh is the hour (00 to 23). The hour of the day is in the time zone of the gateway.
@@ -23,9 +27,16 @@ trait UpdateMaintenanceStartTimeInput extends js.Object {
 
 object UpdateMaintenanceStartTimeInput {
   @scala.inline
-  def apply(DayOfWeek: DayOfWeek, GatewayARN: GatewayARN, HourOfDay: HourOfDay, MinuteOfHour: MinuteOfHour): UpdateMaintenanceStartTimeInput = {
-    val __obj = js.Dynamic.literal(DayOfWeek = DayOfWeek, GatewayARN = GatewayARN, HourOfDay = HourOfDay, MinuteOfHour = MinuteOfHour)
-  
+  def apply(
+    GatewayARN: GatewayARN,
+    HourOfDay: HourOfDay,
+    MinuteOfHour: MinuteOfHour,
+    DayOfMonth: js.UndefOr[DayOfMonth] = js.undefined,
+    DayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
+  ): UpdateMaintenanceStartTimeInput = {
+    val __obj = js.Dynamic.literal(GatewayARN = GatewayARN, HourOfDay = HourOfDay, MinuteOfHour = MinuteOfHour)
+    if (!js.isUndefined(DayOfMonth)) __obj.updateDynamic("DayOfMonth")(DayOfMonth)
+    if (!js.isUndefined(DayOfWeek)) __obj.updateDynamic("DayOfWeek")(DayOfWeek)
     __obj.asInstanceOf[UpdateMaintenanceStartTimeInput]
   }
 }

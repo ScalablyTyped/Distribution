@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TouchableWithoutFeedbackProps extends AccessibilityProps {
+trait TouchableWithoutFeedbackProps
+  extends AccessibilityProps
+     with TouchableWithoutFeedbackPropsIOS {
   /**
     * Delay in ms, from onPressIn, before onLongPress is called.
     */
@@ -79,6 +81,7 @@ object TouchableWithoutFeedbackProps {
     delayPressIn: scala.Int | scala.Double = null,
     delayPressOut: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     onAccessibilityTap: () => scala.Unit = null,
@@ -90,7 +93,8 @@ object TouchableWithoutFeedbackProps {
     onPressOut: /* event */ GestureResponderEvent => scala.Unit = null,
     pressRetentionOffset: Insets = null,
     style: StyleProp[ViewStyle] = null,
-    testID: java.lang.String = null
+    testID: java.lang.String = null,
+    tvParallaxProperties: TVParallaxProperties = null
   ): TouchableWithoutFeedbackProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
@@ -107,6 +111,7 @@ object TouchableWithoutFeedbackProps {
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
@@ -119,6 +124,7 @@ object TouchableWithoutFeedbackProps {
     if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
     __obj.asInstanceOf[TouchableWithoutFeedbackProps]
   }
 }

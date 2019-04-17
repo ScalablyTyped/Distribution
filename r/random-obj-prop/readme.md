@@ -1,6 +1,13 @@
 ```
-// Type definitions for random-obj-prop 1.0
-// Project: https://github.com/sindresorhus/random-obj-prop
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Get a random property from an object.
+
+@example
+```
+import randomObjProp = require('random-obj-prop');
+
+randomObjProp({foo: '🐴', bar: '🦄'});
+//=> '🦄'
+```
+*/
 ```

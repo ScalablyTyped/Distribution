@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dynogels"
-version := "9.0-dt-20180314Z-e8f88c"
+version := "9.0-dt-20180314Z-96ab70"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.437.0-61d5b8",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-097c0f",
+  "org.scalablytyped" %%% "aws-sdk" % "2.438.0-822eab",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-daf975",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false

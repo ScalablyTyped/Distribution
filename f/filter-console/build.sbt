@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "filter-console"
-version := "0.1-dt-20190117Z-e535e8"
+version := "0.1.1-ef41e1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

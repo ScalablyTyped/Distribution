@@ -18,6 +18,7 @@ package object clientsStoragegatewayMod {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientToken = java.lang.String
   type CreatedDate = stdLib.Date
+  type DayOfMonth = scala.Double
   type DayOfWeek = scala.Double
   type Description = java.lang.String
   type DeviceType = java.lang.String
@@ -31,6 +32,8 @@ package object clientsStoragegatewayMod {
   type DomainUserName = java.lang.String
   type DomainUserPassword = java.lang.String
   type DoubleObject = scala.Double
+  type Ec2InstanceId = java.lang.String
+  type Ec2InstanceRegion = java.lang.String
   type FileShareARN = java.lang.String
   type FileShareARNList = js.Array[FileShareARN]
   type FileShareClientList = js.Array[IPV4AddressCIDR]

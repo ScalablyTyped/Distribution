@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-waypoint"
-version := "9.0.1-84bff4"
+version := "9.0.2-84bff4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

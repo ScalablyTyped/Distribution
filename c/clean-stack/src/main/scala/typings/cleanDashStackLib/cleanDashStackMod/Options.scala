@@ -6,7 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var pretty: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Prettify the file paths in the stack:
+  		`/Users/sindresorhus/dev/clean-stack/unicorn.js:2:15` → `~/dev/clean-stack/unicorn.js:2:15`
+  		@default false
+  		*/
+  val pretty: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {

@@ -149,6 +149,12 @@ package object clientsCognitoidentityserviceproviderMod {
   type EmailAddressType = java.lang.String
   type EmailNotificationBodyType = java.lang.String
   type EmailNotificationSubjectType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.COGNITO_DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.DEVELOPER
+    - java.lang.String
+  */
+  type EmailSendingAccountType = _EmailSendingAccountType | java.lang.String
   type EmailVerificationMessageByLinkType = java.lang.String
   type EmailVerificationMessageType = java.lang.String
   type EmailVerificationSubjectByLinkType = java.lang.String

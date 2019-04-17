@@ -556,6 +556,12 @@ class SurveyModel ()
     * @see sendResultOnPageNext
     */
   var onPartialSend: Event[js.Function1[/* sender */ this.type, _], _] = js.native
+  /**
+    * Use this event to modify the html before rendering, for example completeHtml or loadingHtml.
+    * options.html - change this html property before the library rendered it
+    * @see completedHtml
+    * @see loadingHtml
+    */
   var onProcessHtml: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * The event is fired on processing the text when it finds a text in brackets: {somevalue}. By default it uses the value of survey question values and variables.
@@ -673,6 +679,12 @@ class SurveyModel ()
     * @see onServerValidateQuestions
     */
   var onValidateQuestion: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
+    * Use the this event to be notified when the survey finished validate questions on the current page. It commonly happens when a user try to go to the next page or complete the survey
+    * options.questions - the list of questions that have errors
+    * options.errors - the list of errors
+    */
+  var onValidatedErrorsOnCurrentPage: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * The event is fired when the question value is changed. It can be done via UI by a user or programmatically on calling setValue method.
     * Please use onDynamicPanelItemValueChanged and onMatrixCellValueChanged events to handle changes a question in the Panel Dynamic and a cell question in matrices.

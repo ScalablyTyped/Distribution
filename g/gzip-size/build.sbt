@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gzip-size"
-version := "4.1-dt-20180214Z-07a05d"
+version := "5.1.0-711867"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

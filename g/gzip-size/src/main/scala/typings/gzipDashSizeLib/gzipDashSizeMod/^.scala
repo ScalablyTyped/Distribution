@@ -9,33 +9,40 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * Returns a Promise for the size.
-    * @param input A string or Buffer to determine the gzip size of
-    * @param options Any zlib option
-    */
-  def apply(input: java.lang.String | nodeLib.Buffer): js.Promise[scala.Double] = js.native
-  def apply(input: java.lang.String | nodeLib.Buffer, options: nodeLib.zlibMod.ZlibOptions): js.Promise[scala.Double] = js.native
+  	Get the gzipped size of a string or buffer.
+  	@returns The gzipped size of `input`.
+  	*/
+  def apply(input: java.lang.String): js.Promise[scala.Double] = js.native
+  def apply(input: java.lang.String, options: Options): js.Promise[scala.Double] = js.native
+  def apply(input: nodeLib.Buffer): js.Promise[scala.Double] = js.native
+  def apply(input: nodeLib.Buffer, options: Options): js.Promise[scala.Double] = js.native
   /**
-    * Returns a Promise for the size of the file.
-    * @param path The path to the file
-    * @param options Any zlib option
-    */
+  	Get the gzipped size of a file.
+  	@returns The size of the file.
+  	*/
   def file(path: java.lang.String): js.Promise[scala.Double] = js.native
-  def file(path: java.lang.String, options: nodeLib.zlibMod.ZlibOptions): js.Promise[scala.Double] = js.native
+  def file(path: java.lang.String, options: Options): js.Promise[scala.Double] = js.native
   /**
-    * Returns a stream.PassThrough. The stream emits a gzip-size event and has a gzipSize property.
-    * @param options Any zlib option
-    */
+  	@returns A stream that emits a `gzip-size` event and has a `gzipSize` property.
+  	*/
   def stream(): GzipSizeStream = js.native
-  def stream(options: nodeLib.zlibMod.ZlibOptions): GzipSizeStream = js.native
+  def stream(options: Options): GzipSizeStream = js.native
   /**
-    * Returns the size synchronously
-    * @param input A string or Buffer to determine the gzip size of
-    * @param options Any zlib option
-    */
+  	Synchronously get the gzipped size of a string or buffer.
+  	@returns The gzipped size of `input`.
+  	@example
+  	```
+  	import gzipSize = require('gzip-size');
+  	const text = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.';
+  	console.log(text.length);
+  	//=> 191
+  	console.log(gzipSize.sync(text));
+  	//=> 78
+  	```
+  	*/
   def sync(input: java.lang.String): scala.Double = js.native
-  def sync(input: java.lang.String, options: nodeLib.zlibMod.ZlibOptions): scala.Double = js.native
+  def sync(input: java.lang.String, options: Options): scala.Double = js.native
   def sync(input: nodeLib.Buffer): scala.Double = js.native
-  def sync(input: nodeLib.Buffer, options: nodeLib.zlibMod.ZlibOptions): scala.Double = js.native
+  def sync(input: nodeLib.Buffer, options: Options): scala.Double = js.native
 }
 

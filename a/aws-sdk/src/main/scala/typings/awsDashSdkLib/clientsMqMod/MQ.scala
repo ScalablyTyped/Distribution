@@ -118,14 +118,14 @@ trait MQ
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Remove a tag from a resource.
+    * Removes a tag from a resource.
     */
   def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTags(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Remove a tag from a resource.
+    * Removes a tag from a resource.
     */
   def deleteTags(params: DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTags(
@@ -178,6 +178,52 @@ trait MQ
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describe available engine types and versions.
+    */
+  def describeBrokerEngineTypes(): awsDashSdkLib.libRequestMod.Request[DescribeBrokerEngineTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeBrokerEngineTypes(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeBrokerEngineTypesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBrokerEngineTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describe available engine types and versions.
+    */
+  def describeBrokerEngineTypes(params: DescribeBrokerEngineTypesRequest): awsDashSdkLib.libRequestMod.Request[DescribeBrokerEngineTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeBrokerEngineTypes(
+    params: DescribeBrokerEngineTypesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeBrokerEngineTypesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBrokerEngineTypesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describe available broker instance options.
+    */
+  def describeBrokerInstanceOptions(): awsDashSdkLib.libRequestMod.Request[DescribeBrokerInstanceOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeBrokerInstanceOptions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeBrokerInstanceOptionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBrokerInstanceOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describe available broker instance options.
+    */
+  def describeBrokerInstanceOptions(params: DescribeBrokerInstanceOptionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeBrokerInstanceOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeBrokerInstanceOptions(
+    params: DescribeBrokerInstanceOptionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeBrokerInstanceOptionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeBrokerInstanceOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about the specified configuration.
     */

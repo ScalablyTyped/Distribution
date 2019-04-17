@@ -119,6 +119,7 @@ trait ReactDatePickerProps extends js.Object {
   var showDisabledMonthNavigation: js.UndefOr[scala.Boolean] = js.native
   var showMonthDropdown: js.UndefOr[scala.Boolean] = js.native
   var showMonthYearDropdown: js.UndefOr[scala.Boolean] = js.native
+  var showMonthYearPicker: js.UndefOr[scala.Boolean] = js.native
   var showTimeSelect: js.UndefOr[scala.Boolean] = js.native
   var showTimeSelectOnly: js.UndefOr[scala.Boolean] = js.native
   var showWeekNumbers: js.UndefOr[scala.Boolean] = js.native

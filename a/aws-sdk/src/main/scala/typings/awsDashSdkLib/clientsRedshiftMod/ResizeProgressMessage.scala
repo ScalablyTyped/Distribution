@@ -11,6 +11,10 @@ trait ResizeProgressMessage extends js.Object {
     */
   var AvgResizeRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined
   /**
+    * The percent of data transferred from source cluster to target cluster.
+    */
+  var DataTransferProgressPercent: js.UndefOr[DoubleOptional] = js.undefined
+  /**
     * The amount of seconds that have elapsed since the resize operation began. After the resize operation completes, this value shows the total actual time, in seconds, for the resize operation.
     */
   var ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined
@@ -72,6 +76,7 @@ object ResizeProgressMessage {
   @scala.inline
   def apply(
     AvgResizeRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined,
+    DataTransferProgressPercent: js.UndefOr[DoubleOptional] = js.undefined,
     ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined,
     EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.undefined,
     ImportTablesCompleted: ImportTablesCompleted = null,
@@ -89,6 +94,7 @@ object ResizeProgressMessage {
   ): ResizeProgressMessage = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AvgResizeRateInMegaBytesPerSecond)) __obj.updateDynamic("AvgResizeRateInMegaBytesPerSecond")(AvgResizeRateInMegaBytesPerSecond)
+    if (!js.isUndefined(DataTransferProgressPercent)) __obj.updateDynamic("DataTransferProgressPercent")(DataTransferProgressPercent)
     if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds)
     if (!js.isUndefined(EstimatedTimeToCompletionInSeconds)) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds)
     if (ImportTablesCompleted != null) __obj.updateDynamic("ImportTablesCompleted")(ImportTablesCompleted)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "callsites"
-version := "2.0-dt-20180214Z-85abc8"
+version := "3.1.0-07268d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

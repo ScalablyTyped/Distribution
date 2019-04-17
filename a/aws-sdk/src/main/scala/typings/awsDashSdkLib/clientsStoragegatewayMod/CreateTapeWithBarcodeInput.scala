@@ -23,6 +23,10 @@ trait CreateTapeWithBarcodeInput extends js.Object {
     */
   var PoolId: js.UndefOr[PoolId] = js.undefined
   /**
+    * A list of up to 50 tags that can be assigned to a virtual tape that has a barcode. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
+  /**
     * The barcode that you want to assign to the tape.  Barcodes cannot be reused. This includes barcodes used for tapes that have been deleted. 
     */
   var TapeBarcode: awsDashSdkLib.clientsStoragegatewayMod.TapeBarcode
@@ -40,12 +44,14 @@ object CreateTapeWithBarcodeInput {
     TapeSizeInBytes: TapeSize,
     KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
     KMSKey: KMSKey = null,
-    PoolId: PoolId = null
+    PoolId: PoolId = null,
+    Tags: Tags = null
   ): CreateTapeWithBarcodeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN, TapeBarcode = TapeBarcode, TapeSizeInBytes = TapeSizeInBytes)
     if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted)
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey)
     if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateTapeWithBarcodeInput]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-node-runner"
-version := "0.6-dt-20190212Z-8ceb57"
+version := "0.6-dt-20190212Z-cb2c59"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,9 +12,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-b54bcb",
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-647453",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-7a04b0",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-baea3c",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190416Z-2ec479",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-64a34b",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-097c0f",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-daf975",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-b7b3da",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-e0e89b",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-329130",

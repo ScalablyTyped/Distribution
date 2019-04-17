@@ -6,6 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DescribeGatewayInformationOutput extends js.Object {
+  /**
+    * The ID of the Amazon EC2 instance that was used to launch the gateway.
+    */
+  var Ec2InstanceId: js.UndefOr[Ec2InstanceId] = js.undefined
+  /**
+    * The AWS Region where the Amazon EC2 instance is located.
+    */
+  var Ec2InstanceRegion: js.UndefOr[Ec2InstanceRegion] = js.undefined
   var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
   /**
     * The unique identifier assigned to your gateway during activation. This ID becomes part of the gateway Amazon Resource Name (ARN), which you use as input for other operations.
@@ -40,7 +48,7 @@ trait DescribeGatewayInformationOutput extends js.Object {
     */
   var NextUpdateAvailabilityDate: js.UndefOr[NextUpdateAvailabilityDate] = js.undefined
   /**
-    * A list of up to 10 tags assigned to the gateway, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
+    * A list of up to 50 tags assigned to the gateway, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
     */
   var Tags: js.UndefOr[Tags] = js.undefined
 }
@@ -48,6 +56,8 @@ trait DescribeGatewayInformationOutput extends js.Object {
 object DescribeGatewayInformationOutput {
   @scala.inline
   def apply(
+    Ec2InstanceId: Ec2InstanceId = null,
+    Ec2InstanceRegion: Ec2InstanceRegion = null,
     GatewayARN: GatewayARN = null,
     GatewayId: GatewayId = null,
     GatewayName: java.lang.String = null,
@@ -60,6 +70,8 @@ object DescribeGatewayInformationOutput {
     Tags: Tags = null
   ): DescribeGatewayInformationOutput = {
     val __obj = js.Dynamic.literal()
+    if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId)
+    if (Ec2InstanceRegion != null) __obj.updateDynamic("Ec2InstanceRegion")(Ec2InstanceRegion)
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN)
     if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId)
     if (GatewayName != null) __obj.updateDynamic("GatewayName")(GatewayName)

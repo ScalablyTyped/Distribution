@@ -70,9 +70,11 @@ object TabBarIOSItemProps {
     badge: java.lang.String | scala.Double = null,
     badgeColor: java.lang.String = null,
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: Insets = null,
     icon: ImageURISource = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
     onAccessibilityAction: () => scala.Unit = null,
@@ -107,7 +109,12 @@ object TabBarIOSItemProps {
     style: StyleProp[ViewStyle] = null,
     systemIcon: reactDashNativeLib.reactDashNativeLibStrings.bookmarks | reactDashNativeLib.reactDashNativeLibStrings.contacts | reactDashNativeLib.reactDashNativeLibStrings.downloads | reactDashNativeLib.reactDashNativeLibStrings.favorites | reactDashNativeLib.reactDashNativeLibStrings.featured | reactDashNativeLib.reactDashNativeLibStrings.history | reactDashNativeLib.reactDashNativeLibStrings.more | reactDashNativeLib.reactDashNativeLibStrings.`most-recent` | reactDashNativeLib.reactDashNativeLibStrings.`most-viewed` | reactDashNativeLib.reactDashNativeLibStrings.recents | reactDashNativeLib.reactDashNativeLibStrings.search | reactDashNativeLib.reactDashNativeLibStrings.`top-rated` = null,
     testID: java.lang.String = null,
-    title: java.lang.String = null
+    title: java.lang.String = null,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null
   ): TabBarIOSItemProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
@@ -125,9 +132,11 @@ object TabBarIOSItemProps {
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor)
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
@@ -163,6 +172,11 @@ object TabBarIOSItemProps {
     if (systemIcon != null) __obj.updateDynamic("systemIcon")(systemIcon.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (title != null) __obj.updateDynamic("title")(title)
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarIOSItemProps]
   }
 }

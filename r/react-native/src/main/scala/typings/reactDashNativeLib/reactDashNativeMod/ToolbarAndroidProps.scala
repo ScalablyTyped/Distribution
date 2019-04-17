@@ -104,8 +104,10 @@ object ToolbarAndroidProps {
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
     contentInsetEnd: scala.Int | scala.Double = null,
     contentInsetStart: scala.Int | scala.Double = null,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
     logo: ImageURISource = null,
     nativeID: java.lang.String = null,
     navIcon: ImageURISource = null,
@@ -144,7 +146,12 @@ object ToolbarAndroidProps {
     subtitleColor: java.lang.String = null,
     testID: java.lang.String = null,
     title: java.lang.String = null,
-    titleColor: java.lang.String = null
+    titleColor: java.lang.String = null,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null
   ): ToolbarAndroidProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
@@ -163,8 +170,10 @@ object ToolbarAndroidProps {
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
     if (contentInsetEnd != null) __obj.updateDynamic("contentInsetEnd")(contentInsetEnd.asInstanceOf[js.Any])
     if (contentInsetStart != null) __obj.updateDynamic("contentInsetStart")(contentInsetStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (logo != null) __obj.updateDynamic("logo")(logo)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (navIcon != null) __obj.updateDynamic("navIcon")(navIcon)
@@ -204,6 +213,11 @@ object ToolbarAndroidProps {
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor)
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarAndroidProps]
   }
 }
