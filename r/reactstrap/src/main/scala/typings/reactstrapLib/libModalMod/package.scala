@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libModalMod {
-  type Modal[T] = reactLib.reactMod.Component[ModalProps[T], js.Object, js.Any]
-  type ModalProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_AutoFocus with T
+  type Modal[T] = reactLib.reactMod.Component[ModalProps, js.Object, js.Any]
 }

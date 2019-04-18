@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "commercetools__enzyme-extensions"
-version := "3.0-dt-20190219Z-2a05b4"
+version := "3.0-dt-20190219Z-ee76a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190322Z-ab6494",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190322Z-50601c",
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
-  "org.scalablytyped" %%% "enzyme" % "3.9-dt-20190322Z-139419",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-7e744c",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-5f45a9",
+  "org.scalablytyped" %%% "enzyme" % "3.9-dt-20190322Z-a80bef",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-26e47b",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

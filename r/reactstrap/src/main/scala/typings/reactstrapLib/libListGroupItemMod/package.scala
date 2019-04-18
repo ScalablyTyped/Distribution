@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libListGroupItemMod {
-  type ListGroupItem[T] = reactLib.reactMod.Component[ListGroupItemProps[T], js.Object, js.Any]
-  type ListGroupItemProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_Action with T
+  type ListGroupItem[T] = reactLib.reactMod.Component[ListGroupItemProps, js.Object, js.Any]
 }

@@ -10,7 +10,7 @@ trait SetNavigationBarColorOptions
   /**
   		 * 动画效果
   		 */
-  var animation: js.UndefOr[weixinDashAppLib.Anon_Duratio] = js.undefined
+  var animation: js.UndefOr[weixinDashAppLib.Anon_Duration] = js.undefined
   /**
   		 * 背景颜色值，有效值为十六进制颜色
   		 */
@@ -26,7 +26,7 @@ object SetNavigationBarColorOptions {
   def apply(
     backgroundColor: java.lang.String,
     frontColor: weixinDashAppLib.weixinDashAppLibStrings.`#ffffff` | weixinDashAppLib.weixinDashAppLibStrings.`#000000`,
-    animation: weixinDashAppLib.Anon_Duratio = null,
+    animation: weixinDashAppLib.Anon_Duration = null,
     complete: /* res */ js.Any => scala.Unit = null,
     fail: js.Any => scala.Unit = null,
     success: js.Any => scala.Unit = null

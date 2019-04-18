@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait IncomingHttpHeaders
   extends /* header */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]] {
   var accept: js.UndefOr[java.lang.String] = js.undefined
+  var `accept-language`: js.UndefOr[java.lang.String] = js.undefined
   var `accept-patch`: js.UndefOr[java.lang.String] = js.undefined
   var `accept-ranges`: js.UndefOr[java.lang.String] = js.undefined
   var `access-control-allow-credentials`: js.UndefOr[java.lang.String] = js.undefined
@@ -68,6 +69,7 @@ object IncomingHttpHeaders {
   def apply(
     StringDictionary: /* header */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]] = null,
     accept: java.lang.String = null,
+    `accept-language`: java.lang.String = null,
     `accept-patch`: java.lang.String = null,
     `accept-ranges`: java.lang.String = null,
     `access-control-allow-credentials`: java.lang.String = null,
@@ -124,6 +126,7 @@ object IncomingHttpHeaders {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (`accept-language` != null) __obj.updateDynamic("accept-language")(`accept-language`)
     if (`accept-patch` != null) __obj.updateDynamic("accept-patch")(`accept-patch`)
     if (`accept-ranges` != null) __obj.updateDynamic("accept-ranges")(`accept-ranges`)
     if (`access-control-allow-credentials` != null) __obj.updateDynamic("access-control-allow-credentials")(`access-control-allow-credentials`)

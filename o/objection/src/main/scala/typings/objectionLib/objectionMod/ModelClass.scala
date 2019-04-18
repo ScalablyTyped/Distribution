@@ -27,6 +27,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var jsonAttributes: js.Array[java.lang.String] = js.native
   var jsonSchema: JsonSchema = js.native
   var modelPaths: js.Array[java.lang.String] = js.native
+  var modifiers: Modifiers = js.native
   var pickJsonSchemaProperties: scala.Boolean = js.native
   var propRefRegex: stdLib.RegExp = js.native
   @JSName("raw")

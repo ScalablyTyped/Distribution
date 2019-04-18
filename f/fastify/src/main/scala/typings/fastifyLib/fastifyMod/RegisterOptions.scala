@@ -30,7 +30,45 @@ object RegisterOptions {
     bodyLimit: scala.Int | scala.Double = null,
     config: js.Any = null,
     logLevel: java.lang.String = null,
+    onRequest: (FastifyMiddleware[
+      HttpServer, 
+      HttpRequest, 
+      HttpResponse, 
+      DefaultQuery, 
+      DefaultParams, 
+      DefaultHeaders, 
+      DefaultBody
+    ]) | (js.Array[
+      FastifyMiddleware[
+        HttpServer, 
+        HttpRequest, 
+        HttpResponse, 
+        DefaultQuery, 
+        DefaultParams, 
+        DefaultHeaders, 
+        DefaultBody
+      ]
+    ]) = null,
     preHandler: (FastifyMiddleware[
+      HttpServer, 
+      HttpRequest, 
+      HttpResponse, 
+      DefaultQuery, 
+      DefaultParams, 
+      DefaultHeaders, 
+      DefaultBody
+    ]) | (js.Array[
+      FastifyMiddleware[
+        HttpServer, 
+        HttpRequest, 
+        HttpResponse, 
+        DefaultQuery, 
+        DefaultParams, 
+        DefaultHeaders, 
+        DefaultBody
+      ]
+    ]) = null,
+    preParsing: (FastifyMiddleware[
       HttpServer, 
       HttpRequest, 
       HttpResponse, 
@@ -98,7 +136,9 @@ object RegisterOptions {
     if (bodyLimit != null) __obj.updateDynamic("bodyLimit")(bodyLimit.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config)
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (onRequest != null) __obj.updateDynamic("onRequest")(onRequest.asInstanceOf[js.Any])
     if (preHandler != null) __obj.updateDynamic("preHandler")(preHandler.asInstanceOf[js.Any])
+    if (preParsing != null) __obj.updateDynamic("preParsing")(preParsing.asInstanceOf[js.Any])
     if (preSerialization != null) __obj.updateDynamic("preSerialization")(preSerialization.asInstanceOf[js.Any])
     if (preValidation != null) __obj.updateDynamic("preValidation")(preValidation.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.1]
   *
   * @remarks
-  * <table>
-  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-  * </table>
+  * 
+  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * 
+  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
 trait Body extends js.Object {
@@ -31,10 +31,10 @@ trait Body extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
     * @param coercionType - The format for the returned body.
     * @param options - Optional. An object literal that contains one or more of the following properties:
@@ -59,10 +59,10 @@ trait Body extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -88,11 +88,14 @@ trait Body extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
     * 
     * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -125,12 +128,16 @@ trait Body extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
-    *   <tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
+    * 
+    * - InvalidFormatError: The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
     * 
     * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -163,12 +170,16 @@ trait Body extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
-    *   <tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
+    * 
+    * - InvalidFormatError: The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
     * 
     * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
     * @param options - Optional. An object literal that contains one or more of the following properties.

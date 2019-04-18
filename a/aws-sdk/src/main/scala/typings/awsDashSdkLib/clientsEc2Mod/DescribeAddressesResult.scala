@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeAddressesResult extends js.Object {
   /**
-    * Information about one or more Elastic IP addresses.
+    * Information about the Elastic IP addresses.
     */
   var Addresses: js.UndefOr[AddressList] = js.undefined
 }

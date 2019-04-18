@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeImagesResult extends js.Object {
   /**
-    * Information about one or more images.
+    * Information about the images.
     */
   var Images: js.UndefOr[ImageList] = js.undefined
 }

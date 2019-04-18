@@ -51,6 +51,7 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var printLoggerMessage: js.Any
   var reportFiles: js.Any
   var service: js.UndefOr[js.Any] = js.undefined
+  var serviceRpc: js.UndefOr[js.Any] = js.undefined
   var silent: js.Any
   var spawnService: js.Any
   var startAt: js.Any
@@ -133,6 +134,7 @@ object ForkTsCheckerWebpackPlugin {
     cancellationToken: js.Any = null,
     elapsed: js.Any = null,
     service: js.Any = null,
+    serviceRpc: js.Any = null,
     started: js.Any = null,
     tsconfigPath: js.Any = null,
     tslint: js.Any = null,
@@ -142,6 +144,7 @@ object ForkTsCheckerWebpackPlugin {
     if (cancellationToken != null) __obj.updateDynamic("cancellationToken")(cancellationToken)
     if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed)
     if (service != null) __obj.updateDynamic("service")(service)
+    if (serviceRpc != null) __obj.updateDynamic("serviceRpc")(serviceRpc)
     if (started != null) __obj.updateDynamic("started")(started)
     if (tsconfigPath != null) __obj.updateDynamic("tsconfigPath")(tsconfigPath)
     if (tslint != null) __obj.updateDynamic("tslint")(tslint)

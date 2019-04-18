@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox Preview]
   *
   * @remarks
-  * <table>
-  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-  * </table>
+  * 
+  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * 
+  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
   * 
   * @beta
   */
@@ -30,10 +30,10 @@ trait InternetHeaders extends js.Object {
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
     * @param names - The names of the internet headers to be returned.
     * @param options - Optional. An object literal that contains one or more of the following properties:
@@ -60,10 +60,10 @@ trait InternetHeaders extends js.Object {
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose 
     * 
     * @param names - The names of the internet headers to be removed.
     * @param options - Optional. An object literal that contains one or more of the following properties:
@@ -93,10 +93,10 @@ trait InternetHeaders extends js.Object {
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose 
     *
     * @param headers - The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the 
     *                internet headers and values being the values of the internet headers.

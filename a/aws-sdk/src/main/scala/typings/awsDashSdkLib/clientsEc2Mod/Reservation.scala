@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Reservation extends js.Object {
   /**
-    * [EC2-Classic only] One or more security groups.
+    * [EC2-Classic only] The security groups.
     */
   var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   /**
-    * One or more instances.
+    * The instances.
     */
   var Instances: js.UndefOr[InstanceList] = js.undefined
   /**

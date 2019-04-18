@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateImageRequest extends js.Object {
   /**
-    * Information about one or more block device mappings. This parameter cannot be used to modify the encryption status of existing volumes or snapshots. To create an AMI with encrypted snapshots, use the CopyImage action.
+    * Tthe block device mappings. This parameter cannot be used to modify the encryption status of existing volumes or snapshots. To create an AMI with encrypted snapshots, use the CopyImage action.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
   /**

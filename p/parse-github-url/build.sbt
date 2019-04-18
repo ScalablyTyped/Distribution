@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "parse-github-url"
-version := "1.0-dt-20180715Z-af1d61"
+version := "1.0-dt-20180715Z-8ee864"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

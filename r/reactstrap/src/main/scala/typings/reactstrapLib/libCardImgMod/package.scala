@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libCardImgMod {
-  type CardImg[T] = reactLib.reactMod.Component[CardImgProps[T], js.Object, js.Any]
-  type CardImgProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_Alt with T
+  type CardImg[T] = reactLib.reactMod.Component[CardImgProps, js.Object, js.Any]
 }

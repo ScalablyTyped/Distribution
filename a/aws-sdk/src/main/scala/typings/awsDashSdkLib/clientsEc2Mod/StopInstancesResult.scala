@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StopInstancesResult extends js.Object {
   /**
-    * Information about one or more stopped instances.
+    * Information about the stopped instances.
     */
   var StoppingInstances: js.UndefOr[InstanceStateChangeList] = js.undefined
 }

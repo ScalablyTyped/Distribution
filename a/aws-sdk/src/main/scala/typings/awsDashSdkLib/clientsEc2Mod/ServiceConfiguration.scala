@@ -19,6 +19,10 @@ trait ServiceConfiguration extends js.Object {
     */
   var BaseEndpointDnsNames: js.UndefOr[ValueStringList] = js.undefined
   /**
+    * Indicates whether the service manages it's VPC Endpoints. Management of the service VPC Endpoints using the VPC Endpoint API is restricted.
+    */
+  var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined
+  /**
     * The Amazon Resource Names (ARNs) of the Network Load Balancers for the service.
     */
   var NetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
@@ -50,6 +54,7 @@ object ServiceConfiguration {
     AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
     AvailabilityZones: ValueStringList = null,
     BaseEndpointDnsNames: ValueStringList = null,
+    ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined,
     NetworkLoadBalancerArns: ValueStringList = null,
     PrivateDnsName: String = null,
     ServiceId: String = null,
@@ -61,6 +66,7 @@ object ServiceConfiguration {
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
     if (BaseEndpointDnsNames != null) __obj.updateDynamic("BaseEndpointDnsNames")(BaseEndpointDnsNames)
+    if (!js.isUndefined(ManagesVpcEndpoints)) __obj.updateDynamic("ManagesVpcEndpoints")(ManagesVpcEndpoints)
     if (NetworkLoadBalancerArns != null) __obj.updateDynamic("NetworkLoadBalancerArns")(NetworkLoadBalancerArns)
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName)
     if (ServiceId != null) __obj.updateDynamic("ServiceId")(ServiceId)

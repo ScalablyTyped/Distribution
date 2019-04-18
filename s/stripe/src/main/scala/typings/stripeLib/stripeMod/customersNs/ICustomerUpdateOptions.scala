@@ -31,6 +31,10 @@ trait ICustomerUpdateOptions
     * This can be unset by updating the value to null and then saving.
     */
   var email: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The prefix for the customer used to generate unique invoice numbers.
+    */
+  var invoice_prefix: js.UndefOr[java.lang.String] = js.undefined
   var shipping: js.UndefOr[stripeLib.stripeMod.IShippingInformation] = js.undefined
   /**
     * The source can either be a token, like the ones returned by our Stripe.js, or
@@ -54,6 +58,7 @@ object ICustomerUpdateOptions {
     email: java.lang.String = null,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
+    invoice_prefix: java.lang.String = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptionsExtended = null
@@ -66,6 +71,7 @@ object ICustomerUpdateOptions {
     if (email != null) __obj.updateDynamic("email")(email)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
+    if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

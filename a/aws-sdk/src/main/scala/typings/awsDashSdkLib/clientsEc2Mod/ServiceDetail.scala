@@ -19,6 +19,10 @@ trait ServiceDetail extends js.Object {
     */
   var BaseEndpointDnsNames: js.UndefOr[ValueStringList] = js.undefined
   /**
+    * Indicates whether the service manages it's VPC Endpoints. Management of the service VPC Endpoints using the VPC Endpoint API is restricted.
+    */
+  var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined
+  /**
     * The AWS account ID of the service owner.
     */
   var Owner: js.UndefOr[String] = js.undefined
@@ -46,6 +50,7 @@ object ServiceDetail {
     AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
     AvailabilityZones: ValueStringList = null,
     BaseEndpointDnsNames: ValueStringList = null,
+    ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined,
     Owner: String = null,
     PrivateDnsName: String = null,
     ServiceName: String = null,
@@ -56,6 +61,7 @@ object ServiceDetail {
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
     if (BaseEndpointDnsNames != null) __obj.updateDynamic("BaseEndpointDnsNames")(BaseEndpointDnsNames)
+    if (!js.isUndefined(ManagesVpcEndpoints)) __obj.updateDynamic("ManagesVpcEndpoints")(ManagesVpcEndpoints)
     if (Owner != null) __obj.updateDynamic("Owner")(Owner)
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName)
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)

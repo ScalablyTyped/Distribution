@@ -11,7 +11,7 @@ trait DescribeVolumesModificationsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters. Supported filters: volume-id, modification-state, target-size, target-iops, target-volume-type, original-size, original-iops, original-volume-type, start-time. 
+    * The filters. Supported filters: volume-id, modification-state, target-size, target-iops, target-volume-type, original-size, original-iops, original-volume-type, start-time. 
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait DescribeVolumesModificationsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.undefined
   /**
-    * One or more volume IDs for which in-progress modifications will be described.
+    * The IDs of the volumes for which in-progress modifications will be described.
     */
   var VolumeIds: js.UndefOr[VolumeIdStringList] = js.undefined
 }

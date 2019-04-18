@@ -22,10 +22,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     */
   var bcc: Recipients = js.native
   /**
@@ -39,10 +38,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     */
   var cc: Recipients = js.native
   /**
@@ -57,10 +55,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     */
   var from: From = js.native
   /**
@@ -72,10 +69,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
     * @beta
     */
@@ -91,10 +87,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     */
   var subject: Subject = js.native
   /**
@@ -107,10 +102,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     */
   var to: Recipients = js.native
   /**
@@ -123,13 +117,18 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
-    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
-    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**: 
+    * 
+    * - AttachmentSizeExceeded: The attachment is larger than allowed.
+    * 
+    * - FileTypeNotSupported: The attachment has an extension that is not allowed.
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -152,13 +151,18 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
-    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
-    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - AttachmentSizeExceeded: The attachment is larger than allowed.
+    * 
+    * - FileTypeNotSupported: The attachment has an extension that is not allowed.
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -198,13 +202,18 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
-    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
-    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**: 
+    * 
+    * - AttachmentSizeExceeded: The attachment is larger than allowed.
+    * 
+    * - FileTypeNotSupported: The attachment has an extension that is not allowed.
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
     * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -227,13 +236,18 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
-    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
-    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - AttachmentSizeExceeded: The attachment is larger than allowed.
+    * 
+    * - FileTypeNotSupported: The attachment has an extension that is not allowed.
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
     * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -279,11 +293,14 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**: 
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -310,11 +327,14 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
     * 
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -352,11 +372,10 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     */
   /**
     * Closes the current item that is being composed
@@ -373,10 +392,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     */
   def close(): scala.Unit = js.native
   /**
@@ -386,10 +404,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     * 
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -406,10 +423,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     * 
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -442,10 +458,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -467,11 +482,10 @@ trait MessageCompose extends Message {
     * The selected data as a string with format determined by coercionType.
     *
     * @remarks
-    *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -495,10 +509,9 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -522,11 +535,10 @@ trait MessageCompose extends Message {
     * The selected data as a string with format determined by coercionType.
     *
     * @remarks
-    *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    * </table>
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -553,11 +565,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param attachmentId - The identifier of the attachment to remove.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -579,11 +593,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param attachmentId - The identifier of the attachment to remove.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -628,11 +644,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     *
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
@@ -662,11 +680,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     *
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
@@ -698,11 +718,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -734,11 +756,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -761,11 +785,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
@@ -791,11 +817,13 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**: 
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.

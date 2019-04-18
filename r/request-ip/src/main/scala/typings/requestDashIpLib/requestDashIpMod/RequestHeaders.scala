@@ -19,6 +19,7 @@ object RequestHeaders {
   @scala.inline
   def apply(
     accept: java.lang.String = null,
+    `accept-language`: java.lang.String = null,
     `accept-patch`: java.lang.String = null,
     `accept-ranges`: java.lang.String = null,
     `access-control-allow-credentials`: java.lang.String = null,
@@ -80,6 +81,7 @@ object RequestHeaders {
   ): RequestHeaders = {
     val __obj = js.Dynamic.literal()
     if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (`accept-language` != null) __obj.updateDynamic("accept-language")(`accept-language`)
     if (`accept-patch` != null) __obj.updateDynamic("accept-patch")(`accept-patch`)
     if (`accept-ranges` != null) __obj.updateDynamic("accept-ranges")(`accept-ranges`)
     if (`access-control-allow-credentials` != null) __obj.updateDynamic("access-control-allow-credentials")(`access-control-allow-credentials`)

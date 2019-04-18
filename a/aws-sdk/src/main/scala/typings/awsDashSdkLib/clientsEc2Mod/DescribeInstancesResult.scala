@@ -11,7 +11,7 @@ trait DescribeInstancesResult extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.undefined
   /**
-    * Zero or more reservations.
+    * Information about the reservations.
     */
   var Reservations: js.UndefOr[ReservationList] = js.undefined
 }

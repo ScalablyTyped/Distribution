@@ -15,11 +15,11 @@ trait StaleIpPermission extends js.Object {
     */
   var IpProtocol: js.UndefOr[String] = js.undefined
   /**
-    * One or more IP ranges. Not applicable for stale security group rules.
+    * The IP ranges. Not applicable for stale security group rules.
     */
   var IpRanges: js.UndefOr[IpRanges] = js.undefined
   /**
-    * One or more prefix list IDs for an AWS service. Not applicable for stale security group rules.
+    * The prefix list IDs for an AWS service. Not applicable for stale security group rules.
     */
   var PrefixListIds: js.UndefOr[PrefixListIdSet] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait StaleIpPermission extends js.Object {
     */
   var ToPort: js.UndefOr[Integer] = js.undefined
   /**
-    * One or more security group pairs. Returns the ID of the referenced security group and VPC, and the ID and status of the VPC peering connection.
+    * The security group pairs. Returns the ID of the referenced security group and VPC, and the ID and status of the VPC peering connection.
     */
   var UserIdGroupPairs: js.UndefOr[UserIdGroupPairSet] = js.undefined
 }

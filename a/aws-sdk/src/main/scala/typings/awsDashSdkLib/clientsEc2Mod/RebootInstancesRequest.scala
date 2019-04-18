@@ -11,7 +11,7 @@ trait RebootInstancesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more instance IDs.
+    * The instance IDs.
     */
   var InstanceIds: InstanceIdStringList
 }

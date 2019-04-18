@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libCarouselCaptionMod {
-  type CarouselCaption[T] = reactLib.reactMod.Component[CarouselCaptionProps[T], js.Object, js.Any]
-  type CarouselCaptionProps[T] = reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with reactstrapLib.Anon_CaptionHeader with T
+  type CarouselCaption[T] = reactLib.reactMod.Component[CarouselCaptionProps, js.Object, js.Any]
 }

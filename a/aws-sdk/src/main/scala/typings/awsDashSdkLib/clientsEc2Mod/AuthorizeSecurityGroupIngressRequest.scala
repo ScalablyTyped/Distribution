@@ -27,7 +27,7 @@ trait AuthorizeSecurityGroupIngressRequest extends js.Object {
     */
   var GroupName: js.UndefOr[String] = js.undefined
   /**
-    * One or more sets of IP permissions. Can be used to specify multiple rules in a single command.
+    * The sets of IP permissions. Can be used to specify multiple rules in a single command.
     */
   var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   /**

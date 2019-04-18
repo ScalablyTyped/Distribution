@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeKeyPairsResult extends js.Object {
   /**
-    * Information about one or more key pairs.
+    * Information about the key pairs.
     */
   var KeyPairs: js.UndefOr[KeyPairList] = js.undefined
 }

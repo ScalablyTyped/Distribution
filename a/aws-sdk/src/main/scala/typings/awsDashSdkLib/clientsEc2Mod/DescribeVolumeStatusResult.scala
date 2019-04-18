@@ -11,7 +11,7 @@ trait DescribeVolumeStatusResult extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.undefined
   /**
-    * A list of volumes.
+    * Information about the status of the volumes.
     */
   var VolumeStatuses: js.UndefOr[VolumeStatusList] = js.undefined
 }

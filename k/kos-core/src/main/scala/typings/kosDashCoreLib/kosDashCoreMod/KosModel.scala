@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait KosModel[T] extends js.Object {
   var asyncs: org.scalablytyped.runtime.StringDictionary[
     js.Function3[
-      /* dispatch */ KosDispatch, 
-      /* getState */ GetKosState[T], 
-      /* action */ Action[_], 
+      /* dispatch */ js.UndefOr[KosDispatch], 
+      /* getState */ js.UndefOr[GetKosState[T]], 
+      /* action */ js.UndefOr[kosDashCoreLib.Anon_Payload[T]], 
       scala.Unit
     ]
   ]
@@ -35,9 +35,9 @@ object KosModel {
   def apply[T](
     asyncs: org.scalablytyped.runtime.StringDictionary[
       js.Function3[
-        /* dispatch */ KosDispatch, 
-        /* getState */ GetKosState[T], 
-        /* action */ Action[_], 
+        /* dispatch */ js.UndefOr[KosDispatch], 
+        /* getState */ js.UndefOr[GetKosState[T]], 
+        /* action */ js.UndefOr[kosDashCoreLib.Anon_Payload[T]], 
         scala.Unit
       ]
     ],

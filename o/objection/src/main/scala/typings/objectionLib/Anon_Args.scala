@@ -25,6 +25,7 @@ trait Anon_Args
   var jsonAttributes: js.Array[java.lang.String] = js.native
   var jsonSchema: objectionLib.objectionMod.JsonSchema = js.native
   var modelPaths: js.Array[java.lang.String] = js.native
+  var modifiers: objectionLib.objectionMod.Modifiers = js.native
   var pickJsonSchemaProperties: scala.Boolean = js.native
   var propRefRegex: stdLib.RegExp = js.native
   @JSName("raw")

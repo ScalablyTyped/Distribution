@@ -11,11 +11,11 @@ trait DescribeKeyPairsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.    fingerprint - The fingerprint of the key pair.    key-name - The name of the key pair.  
+    * The filters.    fingerprint - The fingerprint of the key pair.    key-name - The name of the key pair.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * One or more key pair names. Default: Describes all your key pairs.
+    * The key pair names. Default: Describes all your key pairs.
     */
   var KeyNames: js.UndefOr[KeyNameStringList] = js.undefined
 }

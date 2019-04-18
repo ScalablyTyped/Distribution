@@ -14,9 +14,8 @@ sealed trait Days extends js.Object
   * [Api set: Mailbox 1.7]
   *
   * @remarks
-  * <table>
-  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
-  * </table>
+  * 
+  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.Days")
 @js.native

@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var dryRun: js.UndefOr[scala.Boolean] = js.undefined
+  val dryRun: js.UndefOr[scala.Boolean] = js.undefined
   val engineAddr: js.UndefOr[java.lang.String] = js.undefined
   val monitorAddr: js.UndefOr[java.lang.String] = js.undefined
   val parallel: js.UndefOr[scala.Double] = js.undefined
   val project: js.UndefOr[java.lang.String] = js.undefined
   val stack: js.UndefOr[java.lang.String] = js.undefined
+  val testModeEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {
@@ -22,7 +23,8 @@ object Options {
     monitorAddr: java.lang.String = null,
     parallel: scala.Int | scala.Double = null,
     project: java.lang.String = null,
-    stack: java.lang.String = null
+    stack: java.lang.String = null,
+    testModeEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
@@ -31,6 +33,7 @@ object Options {
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
     if (project != null) __obj.updateDynamic("project")(project)
     if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (!js.isUndefined(testModeEnabled)) __obj.updateDynamic("testModeEnabled")(testModeEnabled)
     __obj.asInstanceOf[Options]
   }
 }

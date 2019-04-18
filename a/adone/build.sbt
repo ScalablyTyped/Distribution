@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "adone"
-version := "0.6-dt-20190311Z-b9a79f"
+version := "0.6-dt-20190311Z-0ac6ca"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "async" % "2.4-dt-20190212Z-5fd0a3",
   "org.scalablytyped" %%% "benchmark" % "v1.0.0-dt-20190322Z-c03c7a",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-ea402e",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

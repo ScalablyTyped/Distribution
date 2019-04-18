@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeAccountAttributesRequest extends js.Object {
   /**
-    * One or more account attribute names.
+    * The account attribute names.
     */
   var AttributeNames: js.UndefOr[AccountAttributeNameStringList] = js.undefined
   /**

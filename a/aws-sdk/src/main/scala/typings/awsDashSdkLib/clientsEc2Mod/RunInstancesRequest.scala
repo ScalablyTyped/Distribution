@@ -11,7 +11,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var AdditionalInfo: js.UndefOr[String] = js.undefined
   /**
-    * One or more block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
+    * The block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
   /**
@@ -79,7 +79,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   /**
-    * [EC2-VPC] Specify one or more IPv6 addresses from the range of the subnet to associate with the primary network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
+    * [EC2-VPC] The IPv6 addresses from the range of the subnet to associate with the primary network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
     */
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   /**
-    * One or more network interfaces. You cannot specify this option and the network interfaces option in the same request.
+    * The network interfaces. You cannot specify this option and the network interfaces option in the same request.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   /**
@@ -127,11 +127,11 @@ trait RunInstancesRequest extends js.Object {
     */
   var RamdiskId: js.UndefOr[String] = js.undefined
   /**
-    * One or more security group IDs. You can create a security group using CreateSecurityGroup. Default: Amazon EC2 uses the default security group. You cannot specify this option and the network interfaces option in the same request.
+    * The IDs of the security groups. You can create a security group using CreateSecurityGroup. Default: Amazon EC2 uses the default security group. You cannot specify this option and the network interfaces option in the same request.
     */
   var SecurityGroupIds: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   /**
-    * [EC2-Classic, default VPC] One or more security group names. For a nondefault VPC, you must use security group IDs instead. You cannot specify this option and the network interfaces option in the same request. Default: Amazon EC2 uses the default security group.
+    * [EC2-Classic, default VPC] The names of the security groups. For a nondefault VPC, you must use security group IDs instead. You cannot specify this option and the network interfaces option in the same request. Default: Amazon EC2 uses the default security group.
     */
   var SecurityGroups: js.UndefOr[SecurityGroupStringList] = js.undefined
   /**

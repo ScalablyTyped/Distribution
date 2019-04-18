@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StartInstancesResult extends js.Object {
   /**
-    * Information about one or more started instances.
+    * Information about the started instances.
     */
   var StartingInstances: js.UndefOr[InstanceStateChangeList] = js.undefined
 }

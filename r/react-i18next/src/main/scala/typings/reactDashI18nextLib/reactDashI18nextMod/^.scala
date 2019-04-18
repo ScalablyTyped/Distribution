@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-i18next", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val I18nContext: reactLib.reactMod.Context[i18nextLib.i18nextMod.i18n] = js.native
   val I18nextProvider: reactLib.reactMod.FunctionComponent[I18nextProviderProps] = js.native
   def Trans(props: TransProps): js.Any = js.native
   def Translation(props: TranslationProps): js.Any = js.native

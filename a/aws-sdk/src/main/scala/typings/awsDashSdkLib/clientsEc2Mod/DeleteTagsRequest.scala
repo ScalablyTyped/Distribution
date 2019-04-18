@@ -11,7 +11,7 @@ trait DeleteTagsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * The IDs of one or more resources, separated by spaces. Constraints: Up to 1000 resource IDs. We recommend breaking up this request into smaller batches.
+    * The IDs of the resources, separated by spaces. Constraints: Up to 1000 resource IDs. We recommend breaking up this request into smaller batches.
     */
   var Resources: ResourceIdList
   /**

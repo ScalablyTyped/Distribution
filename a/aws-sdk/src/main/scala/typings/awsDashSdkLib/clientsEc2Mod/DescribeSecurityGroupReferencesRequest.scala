@@ -11,7 +11,7 @@ trait DescribeSecurityGroupReferencesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more security group IDs in your account.
+    * The IDs of the security groups in your account.
     */
   var GroupId: GroupIds
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeAvailabilityZonesResult extends js.Object {
   /**
-    * Information about one or more Availability Zones.
+    * Information about the Availability Zones.
     */
   var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
 }

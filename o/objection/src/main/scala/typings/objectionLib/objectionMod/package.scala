@@ -76,17 +76,15 @@ package object objectionMod {
   type Literal = Castable
   type LiteralBuilder = js.Function1[/* value */ Value | LiteralObject, Literal]
   type LiteralObject = org.scalablytyped.runtime.StringDictionary[Value]
-  type ModifyEager[QM1 /* <: Model */, RM1, RV1] = js.Function2[
-    /* relationExpression */ RelationExpression, 
-    /* modifier */ js.Function1[
+  type Modifiers = org.scalablytyped.runtime.StringDictionary[
+    js.Function1[
       /* builder */ QueryBuilder[
-        Model, 
-        js.Array[Model], 
+        js.Any, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ js.Any, 
         /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
       ], 
       scala.Unit
-    ], 
-    QueryBuilder[QM1, RM1, RV1]
+    ]
   ]
   type NodeStyleCallback = js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], scala.Unit]
   type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any

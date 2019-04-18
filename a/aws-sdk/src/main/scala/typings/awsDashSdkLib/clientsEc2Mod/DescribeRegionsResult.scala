@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeRegionsResult extends js.Object {
   /**
-    * Information about one or more regions.
+    * Information about the regions.
     */
   var Regions: js.UndefOr[RegionList] = js.undefined
 }

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ionic__utils-fs"
-version := "1.2.0-c03822"
+version := "1.2.0-fab0c5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-225486",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-e23b50",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

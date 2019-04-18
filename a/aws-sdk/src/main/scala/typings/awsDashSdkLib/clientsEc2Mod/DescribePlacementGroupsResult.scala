@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribePlacementGroupsResult extends js.Object {
   /**
-    * One or more placement groups.
+    * Information about the placement groups.
     */
   var PlacementGroups: js.UndefOr[PlacementGroupList] = js.undefined
 }

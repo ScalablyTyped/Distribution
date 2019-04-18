@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "istanbul-reports"
-version := "1.1-dt-20180214Z-09fd7e"
+version := "1.1-dt-20190417Z-09fd7e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

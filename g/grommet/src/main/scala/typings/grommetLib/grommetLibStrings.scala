@@ -310,6 +310,9 @@ object grommetLibStrings {
   sealed trait reset extends js.Object
   
   @js.native
+  sealed trait reverse extends js.Object
+  
+  @js.native
   sealed trait ridge extends js.Object
   
   @js.native
@@ -608,6 +611,8 @@ object grommetLibStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
+  def reverse: reverse = "reverse".asInstanceOf[reverse]
   @scala.inline
   def ridge: ridge = "ridge".asInstanceOf[ridge]
   @scala.inline

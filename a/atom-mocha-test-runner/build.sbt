@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "atom-mocha-test-runner"
-version := "1.0-dt-20180214Z-f04697"
+version := "1.0-dt-20180214Z-af9476"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "atom" % "1.31-dt-20190213Z-bb8be2",
+  "org.scalablytyped" %%% "atom" % "1.31-dt-20190213Z-5ab757",
   "org.scalablytyped" %%% "mocha" % "5.2-dt-20190212Z-a079dc",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

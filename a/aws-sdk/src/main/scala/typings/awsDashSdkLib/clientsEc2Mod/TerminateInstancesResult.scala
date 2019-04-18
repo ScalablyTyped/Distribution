@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TerminateInstancesResult extends js.Object {
   /**
-    * Information about one or more terminated instances.
+    * Information about the terminated instances.
     */
   var TerminatingInstances: js.UndefOr[InstanceStateChangeList] = js.undefined
 }

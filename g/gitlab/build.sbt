@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gitlab"
-version := "4.5.1-527cc9"
+version := "4.5.1-2b8083"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
   "org.scalablytyped" %%% "xhr" % "2.5.0-12dce6")
 publishArtifact in packageDoc := false

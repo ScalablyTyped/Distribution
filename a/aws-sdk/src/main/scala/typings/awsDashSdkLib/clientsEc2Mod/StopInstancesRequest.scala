@@ -19,7 +19,7 @@ trait StopInstancesRequest extends js.Object {
     */
   var Hibernate: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more instance IDs.
+    * The IDs of the instances.
     */
   var InstanceIds: InstanceIdStringList
 }

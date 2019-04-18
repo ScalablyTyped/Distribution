@@ -11,7 +11,7 @@ trait DescribeSecurityGroupsResult extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.undefined
   /**
-    * Information about one or more security groups.
+    * Information about the security groups.
     */
   var SecurityGroups: js.UndefOr[SecurityGroupList] = js.undefined
 }

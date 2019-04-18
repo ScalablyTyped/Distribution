@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "electron-util"
-version := "0.11.0-9ec73f"
+version := "0.11.0-52086d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "electron" % "4.1.4-441aff",
+  "org.scalablytyped" %%% "electron" % "4.1.4-f1855b",
   "org.scalablytyped" %%% "new-github-issue-url" % "0.1-dt-20190109Z-60daae",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

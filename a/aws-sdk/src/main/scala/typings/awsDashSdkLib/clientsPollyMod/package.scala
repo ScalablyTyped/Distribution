@@ -19,6 +19,7 @@ package object clientsPollyMod {
   type Gender = _Gender | java.lang.String
   type IncludeAdditionalLanguageCodes = scala.Boolean
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.arb
     - awsDashSdkLib.awsDashSdkLibStrings.`cmn-CN`
     - awsDashSdkLib.awsDashSdkLibStrings.`cy-GB`
     - awsDashSdkLib.awsDashSdkLibStrings.`da-DK`
@@ -104,63 +105,64 @@ package object clientsPollyMod {
   */
   type TextType = _TextType | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - awsDashSdkLib.awsDashSdkLibStrings.Geraint
-    - awsDashSdkLib.awsDashSdkLibStrings.Gwyneth
-    - awsDashSdkLib.awsDashSdkLibStrings.Mads
-    - awsDashSdkLib.awsDashSdkLibStrings.Naja
-    - awsDashSdkLib.awsDashSdkLibStrings.Hans
-    - awsDashSdkLib.awsDashSdkLibStrings.Marlene
-    - awsDashSdkLib.awsDashSdkLibStrings.Nicole
-    - awsDashSdkLib.awsDashSdkLibStrings.Russell
+    - awsDashSdkLib.awsDashSdkLibStrings.Aditi
     - awsDashSdkLib.awsDashSdkLibStrings.Amy
+    - awsDashSdkLib.awsDashSdkLibStrings.Astrid
+    - awsDashSdkLib.awsDashSdkLibStrings.Bianca
     - awsDashSdkLib.awsDashSdkLibStrings.Brian
+    - awsDashSdkLib.awsDashSdkLibStrings.Carla
+    - awsDashSdkLib.awsDashSdkLibStrings.Carmen
+    - awsDashSdkLib.awsDashSdkLibStrings.Celine
+    - awsDashSdkLib.awsDashSdkLibStrings.Chantal
+    - awsDashSdkLib.awsDashSdkLibStrings.Conchita
+    - awsDashSdkLib.awsDashSdkLibStrings.Cristiano
+    - awsDashSdkLib.awsDashSdkLibStrings.Dora
     - awsDashSdkLib.awsDashSdkLibStrings.Emma
-    - awsDashSdkLib.awsDashSdkLibStrings.Raveena
+    - awsDashSdkLib.awsDashSdkLibStrings.Enrique
+    - awsDashSdkLib.awsDashSdkLibStrings.Ewa
+    - awsDashSdkLib.awsDashSdkLibStrings.Filiz
+    - awsDashSdkLib.awsDashSdkLibStrings.Geraint
+    - awsDashSdkLib.awsDashSdkLibStrings.Giorgio
+    - awsDashSdkLib.awsDashSdkLibStrings.Gwyneth
+    - awsDashSdkLib.awsDashSdkLibStrings.Hans
+    - awsDashSdkLib.awsDashSdkLibStrings.Ines
     - awsDashSdkLib.awsDashSdkLibStrings.Ivy
+    - awsDashSdkLib.awsDashSdkLibStrings.Jacek
+    - awsDashSdkLib.awsDashSdkLibStrings.Jan
     - awsDashSdkLib.awsDashSdkLibStrings.Joanna
     - awsDashSdkLib.awsDashSdkLibStrings.Joey
     - awsDashSdkLib.awsDashSdkLibStrings.Justin
+    - awsDashSdkLib.awsDashSdkLibStrings.Karl
     - awsDashSdkLib.awsDashSdkLibStrings.Kendra
     - awsDashSdkLib.awsDashSdkLibStrings.Kimberly
-    - awsDashSdkLib.awsDashSdkLibStrings.Matthew
-    - awsDashSdkLib.awsDashSdkLibStrings.Salli
-    - awsDashSdkLib.awsDashSdkLibStrings.Conchita
-    - awsDashSdkLib.awsDashSdkLibStrings.Enrique
-    - awsDashSdkLib.awsDashSdkLibStrings.Miguel
-    - awsDashSdkLib.awsDashSdkLibStrings.Penelope
-    - awsDashSdkLib.awsDashSdkLibStrings.Chantal
-    - awsDashSdkLib.awsDashSdkLibStrings.Celine
     - awsDashSdkLib.awsDashSdkLibStrings.Lea
-    - awsDashSdkLib.awsDashSdkLibStrings.Mathieu
-    - awsDashSdkLib.awsDashSdkLibStrings.Dora
-    - awsDashSdkLib.awsDashSdkLibStrings.Karl
-    - awsDashSdkLib.awsDashSdkLibStrings.Carla
-    - awsDashSdkLib.awsDashSdkLibStrings.Giorgio
-    - awsDashSdkLib.awsDashSdkLibStrings.Mizuki
     - awsDashSdkLib.awsDashSdkLibStrings.Liv
     - awsDashSdkLib.awsDashSdkLibStrings.Lotte
-    - awsDashSdkLib.awsDashSdkLibStrings.Ruben
-    - awsDashSdkLib.awsDashSdkLibStrings.Ewa
-    - awsDashSdkLib.awsDashSdkLibStrings.Jacek
-    - awsDashSdkLib.awsDashSdkLibStrings.Jan
-    - awsDashSdkLib.awsDashSdkLibStrings.Maja
-    - awsDashSdkLib.awsDashSdkLibStrings.Ricardo
-    - awsDashSdkLib.awsDashSdkLibStrings.Vitoria
-    - awsDashSdkLib.awsDashSdkLibStrings.Cristiano
-    - awsDashSdkLib.awsDashSdkLibStrings.Ines
-    - awsDashSdkLib.awsDashSdkLibStrings.Carmen
-    - awsDashSdkLib.awsDashSdkLibStrings.Maxim
-    - awsDashSdkLib.awsDashSdkLibStrings.Tatyana
-    - awsDashSdkLib.awsDashSdkLibStrings.Astrid
-    - awsDashSdkLib.awsDashSdkLibStrings.Filiz
-    - awsDashSdkLib.awsDashSdkLibStrings.Vicki
-    - awsDashSdkLib.awsDashSdkLibStrings.Takumi
-    - awsDashSdkLib.awsDashSdkLibStrings.Seoyeon
-    - awsDashSdkLib.awsDashSdkLibStrings.Aditi
-    - awsDashSdkLib.awsDashSdkLibStrings.Zhiyu
-    - awsDashSdkLib.awsDashSdkLibStrings.Bianca
     - awsDashSdkLib.awsDashSdkLibStrings.Lucia
+    - awsDashSdkLib.awsDashSdkLibStrings.Mads
+    - awsDashSdkLib.awsDashSdkLibStrings.Maja
+    - awsDashSdkLib.awsDashSdkLibStrings.Marlene
+    - awsDashSdkLib.awsDashSdkLibStrings.Mathieu
+    - awsDashSdkLib.awsDashSdkLibStrings.Matthew
+    - awsDashSdkLib.awsDashSdkLibStrings.Maxim
     - awsDashSdkLib.awsDashSdkLibStrings.Mia
+    - awsDashSdkLib.awsDashSdkLibStrings.Miguel
+    - awsDashSdkLib.awsDashSdkLibStrings.Mizuki
+    - awsDashSdkLib.awsDashSdkLibStrings.Naja
+    - awsDashSdkLib.awsDashSdkLibStrings.Nicole
+    - awsDashSdkLib.awsDashSdkLibStrings.Penelope
+    - awsDashSdkLib.awsDashSdkLibStrings.Raveena
+    - awsDashSdkLib.awsDashSdkLibStrings.Ricardo
+    - awsDashSdkLib.awsDashSdkLibStrings.Ruben
+    - awsDashSdkLib.awsDashSdkLibStrings.Russell
+    - awsDashSdkLib.awsDashSdkLibStrings.Salli
+    - awsDashSdkLib.awsDashSdkLibStrings.Seoyeon
+    - awsDashSdkLib.awsDashSdkLibStrings.Takumi
+    - awsDashSdkLib.awsDashSdkLibStrings.Tatyana
+    - awsDashSdkLib.awsDashSdkLibStrings.Vicki
+    - awsDashSdkLib.awsDashSdkLibStrings.Vitoria
+    - awsDashSdkLib.awsDashSdkLibStrings.Zeina
+    - awsDashSdkLib.awsDashSdkLibStrings.Zhiyu
     - java.lang.String
   */
   type VoiceId = _VoiceId | java.lang.String

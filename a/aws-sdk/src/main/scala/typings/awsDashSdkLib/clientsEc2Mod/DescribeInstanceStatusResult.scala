@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeInstanceStatusResult extends js.Object {
   /**
-    * One or more instance status descriptions.
+    * Information about the status of the instances.
     */
   var InstanceStatuses: js.UndefOr[InstanceStatusList] = js.undefined
   /**

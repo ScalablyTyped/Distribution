@@ -11,7 +11,7 @@ trait Filter extends js.Object {
     */
   var Name: js.UndefOr[String] = js.undefined
   /**
-    * One or more filter values. Filter values are case-sensitive.
+    * The filter values. Filter values are case-sensitive.
     */
   var Values: js.UndefOr[ValueStringList] = js.undefined
 }

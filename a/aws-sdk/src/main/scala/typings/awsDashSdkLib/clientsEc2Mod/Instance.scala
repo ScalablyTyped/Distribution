@@ -99,7 +99,7 @@ trait Instance extends js.Object {
     */
   var Monitoring: js.UndefOr[Monitoring] = js.undefined
   /**
-    * [EC2-VPC] One or more network interfaces for the instance.
+    * [EC2-VPC] The network interfaces for the instance.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceList] = js.undefined
   /**
@@ -143,7 +143,7 @@ trait Instance extends js.Object {
     */
   var RootDeviceType: js.UndefOr[DeviceType] = js.undefined
   /**
-    * One or more security groups for the instance.
+    * The security groups for the instance.
     */
   var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   /**

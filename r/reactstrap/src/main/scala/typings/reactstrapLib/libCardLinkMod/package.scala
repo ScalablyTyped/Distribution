@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libCardLinkMod {
-  type CardLink[T] = reactLib.reactMod.Component[CardLinkProps[T], js.Object, js.Any]
-  type CardLinkProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleHref with T
+  type CardLink[T] = reactLib.reactMod.Component[CardLinkProps, js.Object, js.Any]
 }

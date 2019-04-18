@@ -11,11 +11,11 @@ trait DescribePlacementGroupsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.    group-name - The name of the placement group.    state - The state of the placement group (pending | available | deleting | deleted).    strategy - The strategy of the placement group (cluster | spread | partition).  
+    * The filters.    group-name - The name of the placement group.    state - The state of the placement group (pending | available | deleting | deleted).    strategy - The strategy of the placement group (cluster | spread | partition).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * One or more placement group names. Default: Describes all your placement groups, or only those otherwise specified.
+    * The names of the placement groups. Default: Describes all your placement groups, or only those otherwise specified.
     */
   var GroupNames: js.UndefOr[PlacementGroupStringList] = js.undefined
 }

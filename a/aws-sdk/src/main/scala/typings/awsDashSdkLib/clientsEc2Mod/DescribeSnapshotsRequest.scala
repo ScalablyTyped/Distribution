@@ -11,7 +11,7 @@ trait DescribeSnapshotsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.    description - A description of the snapshot.    owner-alias - Value from an Amazon-maintained list (amazon | aws-marketplace | microsoft) of snapshot owners. Not to be confused with the user-configured AWS account alias, which is set from the IAM console.    owner-id - The ID of the AWS account that owns the snapshot.    progress - The progress of the snapshot, as a percentage (for example, 80%).    snapshot-id - The snapshot ID.    start-time - The time stamp when the snapshot was initiated.    status - The status of the snapshot (pending | completed | error).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    volume-id - The ID of the volume the snapshot is for.    volume-size - The size of the volume, in GiB.  
+    * The filters.    description - A description of the snapshot.    owner-alias - Value from an Amazon-maintained list (amazon | self | all | aws-marketplace | microsoft) of snapshot owners. Not to be confused with the user-configured AWS account alias, which is set from the IAM console.    owner-id - The ID of the AWS account that owns the snapshot.    progress - The progress of the snapshot, as a percentage (for example, 80%).    snapshot-id - The snapshot ID.    start-time - The time stamp when the snapshot was initiated.    status - The status of the snapshot (pending | completed | error).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    volume-id - The ID of the volume the snapshot is for.    volume-size - The size of the volume, in GiB.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
@@ -23,15 +23,15 @@ trait DescribeSnapshotsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.undefined
   /**
-    * Describes the snapshots owned by one or more owners.
+    * Describes the snapshots owned by these owners.
     */
   var OwnerIds: js.UndefOr[OwnerStringList] = js.undefined
   /**
-    * One or more AWS accounts IDs that can create volumes from the snapshot.
+    * The IDs of the AWS accounts that can create volumes from the snapshot.
     */
   var RestorableByUserIds: js.UndefOr[RestorableByStringList] = js.undefined
   /**
-    * One or more snapshot IDs. Default: Describes the snapshots for which you have create volume permissions.
+    * The snapshot IDs. Default: Describes the snapshots for which you have create volume permissions.
     */
   var SnapshotIds: js.UndefOr[SnapshotIdStringList] = js.undefined
 }

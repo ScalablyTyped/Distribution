@@ -117,6 +117,8 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def eager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
   def eagerAlgorithm(algo: EagerAlgorithm): this.type = js.native
   def eagerOptions(opts: EagerOptions): this.type = js.native
+  def filterEager[QM2 /* <: Model */](relationExpression: RelationExpression, modifier: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
+  def filterEager[QM2 /* <: Model */](relationExpression: RelationExpression, modifier: js.Array[java.lang.String]): QueryBuilder[QM, RM, RV] = js.native
   def filterEager[QM2 /* <: Model */](
     relationExpression: RelationExpression,
     modifier: js.Function1[
@@ -415,6 +417,8 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def modelClass(): objectionLib.Anon_Args = js.native
   def modify(func: js.Function1[/* builder */ this.type, scala.Unit]): this.type = js.native
   def modify(namedFilter: java.lang.String): this.type = js.native
+  def modifyEager[QM2 /* <: Model */](relationExpression: RelationExpression, modifier: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
+  def modifyEager[QM2 /* <: Model */](relationExpression: RelationExpression, modifier: js.Array[java.lang.String]): QueryBuilder[QM, RM, RV] = js.native
   def modifyEager[QM2 /* <: Model */](
     relationExpression: RelationExpression,
     modifier: js.Function1[

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bunyan-blackhole"
-version := "0.2-dt-20180214Z-5250ff"
+version := "0.2-dt-20180214Z-2805c9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-bba342",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-28d4e0",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-b2ddd8",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

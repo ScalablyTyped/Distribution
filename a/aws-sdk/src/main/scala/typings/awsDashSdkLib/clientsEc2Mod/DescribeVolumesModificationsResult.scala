@@ -11,7 +11,7 @@ trait DescribeVolumesModificationsResult extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.undefined
   /**
-    * A list of returned VolumeModification objects.
+    * Information about the volume modifications.
     */
   var VolumesModifications: js.UndefOr[VolumeModificationList] = js.undefined
 }

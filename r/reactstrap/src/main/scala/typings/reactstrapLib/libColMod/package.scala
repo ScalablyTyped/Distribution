@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libColMod {
-  type Col[T] = reactLib.reactMod.Component[ColProps[T], js.Object, js.Any]
-  type ColProps[T] = reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] with reactstrapLib.Anon_Lg with T
+  type Col[T] = reactLib.reactMod.Component[ColProps, js.Object, js.Any]
   type ColumnProps = java.lang.String | scala.Boolean | scala.Double | reactstrapLib.Anon_Offset
 }

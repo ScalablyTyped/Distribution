@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-redux-contrib"
-version := "201904131134-95ef6c"
+version := "201904131134-205086"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-f44982",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-7e744c",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-5f45a9",
-  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190330Z-ba225d",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-803042",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-26e47b",
+  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190417Z-9ff18b",
   "org.scalablytyped" %%% "redux" % "4.0.1-99337b",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false

@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPaginationMod {
-  type Pagination[T] = reactLib.reactMod.Component[PaginationProps[T], js.Object, js.Any]
-  type PaginationProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ArialabelClassNameCssModule with T
+  type Pagination[T] = reactLib.reactMod.Component[PaginationProps, js.Object, js.Any]
 }

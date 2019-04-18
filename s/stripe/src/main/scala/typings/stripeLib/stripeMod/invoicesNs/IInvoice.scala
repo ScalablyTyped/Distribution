@@ -168,6 +168,10 @@ trait IInvoice
     */
   var statement_descriptor: java.lang.String
   /**
+    * The status of the invoice, one of draft, open, paid, uncollectible, or void.
+    */
+  var status: java.lang.String
+  /**
     * The subscription that this invoice was prepared for, if any.
     */
   var subscription: java.lang.String | stripeLib.stripeMod.subscriptionsNs.ISubscription
@@ -234,6 +238,7 @@ object IInvoice {
     receipt_number: java.lang.String,
     starting_balance: scala.Double,
     statement_descriptor: java.lang.String,
+    status: java.lang.String,
     subscription: java.lang.String | stripeLib.stripeMod.subscriptionsNs.ISubscription,
     subscription_proration_date: scala.Double,
     subtotal: scala.Double,
@@ -247,7 +252,7 @@ object IInvoice {
     tax: scala.Int | scala.Double = null,
     tax_percent: scala.Int | scala.Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, currency = currency, customer = customer, date = date, description = description, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, total = total, webhooks_delivered_at = webhooks_delivered_at)
+    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, currency = currency, customer = customer, date = date, description = description, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, total = total, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])

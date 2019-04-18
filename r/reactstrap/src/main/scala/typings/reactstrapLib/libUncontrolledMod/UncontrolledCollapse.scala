@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledCollapse")
 @js.native
 class UncontrolledCollapse[T] ()
-  extends reactLib.reactMod.Component[reactstrapLib.libCollapseMod.UncontrolledCollapseProps[T], js.Object, js.Any]
+  extends reactLib.reactMod.Component[reactstrapLib.libCollapseMod.UncontrolledCollapseProps, js.Object, js.Any]
 

@@ -68,7 +68,7 @@ trait BoxProps extends js.Object {
   var width: js.UndefOr[
     grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String
   ] = js.undefined
-  var wrap: js.UndefOr[scala.Boolean] = js.undefined
+  var wrap: js.UndefOr[scala.Boolean | grommetLib.grommetLibStrings.reverse] = js.undefined
 }
 
 object BoxProps {
@@ -100,7 +100,7 @@ object BoxProps {
     round: scala.Boolean | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | java.lang.String | grommetLib.Anon_BottomBottomleft = null,
     tag: grommetLib.utilsMod.PolymorphicType = null,
     width: grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String = null,
-    wrap: js.UndefOr[scala.Boolean] = js.undefined
+    wrap: scala.Boolean | grommetLib.grommetLibStrings.reverse = null
   ): BoxProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
@@ -127,7 +127,7 @@ object BoxProps {
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxProps]
   }
 }

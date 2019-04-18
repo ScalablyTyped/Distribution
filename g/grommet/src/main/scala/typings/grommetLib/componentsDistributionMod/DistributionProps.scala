@@ -19,13 +19,13 @@ trait DistributionProps extends js.Object {
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String
   ] = js.undefined
-  var values: js.Array[grommetLib.Anon_Value]
+  var values: js.Array[grommetLib.Anon_ColorValue]
 }
 
 object DistributionProps {
   @scala.inline
   def apply(
-    values: js.Array[grommetLib.Anon_Value],
+    values: js.Array[grommetLib.Anon_ColorValue],
     a11yTitle: java.lang.String = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
     children: /* repeated */ js.Any => _ = null,

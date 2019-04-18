@@ -23,7 +23,7 @@ trait AuthorizeSecurityGroupEgressRequest extends js.Object {
     */
   var GroupId: String
   /**
-    * One or more sets of IP permissions. You can't specify a destination security group and a CIDR IP address range in the same set of permissions.
+    * The sets of IP permissions. You can't specify a destination security group and a CIDR IP address range in the same set of permissions.
     */
   var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   /**

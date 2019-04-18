@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libNavbarTogglerMod {
-  type NavbarToggler[T] = reactLib.reactMod.Component[NavbarTogglerProps[T], js.Object, js.Any]
-  type NavbarTogglerProps[T] = reactLib.reactMod.HTMLProps[stdLib.HTMLAnchorElement] with reactstrapLib.Anon_ClassNameCssModuleTagType with T
+  type NavbarToggler[T] = reactLib.reactMod.Component[NavbarTogglerProps, js.Object, js.Any]
 }

@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libBreadcrumbItemMod {
-  type BreadcrumbItem[T] = reactLib.reactMod.Component[BreadcrumbItemProps[T], js.Object, js.Any]
-  type BreadcrumbItemProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_Active with T
+  type BreadcrumbItem[T] = reactLib.reactMod.Component[BreadcrumbItemProps, js.Object, js.Any]
 }

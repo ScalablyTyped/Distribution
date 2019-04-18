@@ -11,15 +11,15 @@ trait DescribeAvailabilityZonesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.    message - Information about the Availability Zone.    region-name - The name of the region for the Availability Zone (for example, us-east-1).    state - The state of the Availability Zone (available | information | impaired | unavailable).    zone-id - The ID of the Availability Zone (for example, use1-az1).    zone-name - The name of the Availability Zone (for example, us-east-1a).  
+    * The filters.    message - Information about the Availability Zone.    region-name - The name of the region for the Availability Zone (for example, us-east-1).    state - The state of the Availability Zone (available | information | impaired | unavailable).    zone-id - The ID of the Availability Zone (for example, use1-az1).    zone-name - The name of the Availability Zone (for example, us-east-1a).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * The IDs of one or more Availability Zones.
+    * The IDs of the Availability Zones.
     */
   var ZoneIds: js.UndefOr[ZoneIdStringList] = js.undefined
   /**
-    * The names of one or more Availability Zones.
+    * The names of the Availability Zones.
     */
   var ZoneNames: js.UndefOr[ZoneNameStringList] = js.undefined
 }

@@ -23,6 +23,10 @@ trait IInvoiceListOptions
     */
   var customer: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * @deprecated Use created property instead as of api version 2019-03-14.
+    */
+  var date: js.UndefOr[stripeLib.stripeMod.IDateFilter] = js.undefined
+  /**
     * A filter on the list based on the object due_date field. The value can be a string with an integer Unix timestamp,
     * or it can be a dictionary with the following options:
     */
@@ -39,6 +43,7 @@ object IInvoiceListOptions {
     billing: stripeLib.stripeLibStrings.charge_automatically | stripeLib.stripeLibStrings.send_invoice = null,
     created: stripeLib.stripeMod.IDateFilter = null,
     customer: java.lang.String = null,
+    date: stripeLib.stripeMod.IDateFilter = null,
     due_date: stripeLib.stripeMod.IDateFilter = null,
     ending_before: java.lang.String = null,
     expand: js.Array[java.lang.String] = null,
@@ -51,6 +56,7 @@ object IInvoiceListOptions {
     if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
     if (expand != null) __obj.updateDynamic("expand")(expand)

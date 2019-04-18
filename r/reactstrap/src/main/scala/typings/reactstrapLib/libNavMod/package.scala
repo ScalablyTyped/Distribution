@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libNavMod {
-  type Nav[T] = reactLib.reactMod.Component[NavProps[T], js.Object, js.Any]
-  type NavProps[T] = reactLib.reactMod.HTMLProps[stdLib.HTMLUListElement] with reactstrapLib.Anon_Card with T
+  type Nav[T] = reactLib.reactMod.Component[NavProps, js.Object, js.Any]
 }

@@ -11,7 +11,7 @@ trait AccountAttribute extends js.Object {
     */
   var AttributeName: js.UndefOr[String] = js.undefined
   /**
-    * One or more values for the account attribute.
+    * The values for the account attribute.
     */
   var AttributeValues: js.UndefOr[AccountAttributeValueList] = js.undefined
 }

@@ -116,6 +116,12 @@ trait ICharge
     */
   var receipt_number: java.lang.String | scala.Null
   /**
+    * This is the URL to view the receipt for this charge. The receipt is kept up-to-date to the
+    * latest state of the charge, including any refunds. If the charge is for an Invoice, the
+    * receipt will be stylized as an Invoice receipt.
+    */
+  var receipt_url: java.lang.String
+  /**
     * Whether or not the charge has been fully refunded. If the charge is only partially refunded,
     * this attribute will still be false.
     */
@@ -181,6 +187,7 @@ object ICharge {
     metadata: stripeLib.stripeMod.IMetadata,
     `object`: stripeLib.stripeLibStrings.charge,
     paid: scala.Boolean,
+    receipt_url: java.lang.String,
     refunded: scala.Boolean,
     refunds: IChargeRefunds,
     source: stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount,
@@ -206,7 +213,7 @@ object ICharge {
     transfer: java.lang.String | stripeLib.stripeMod.transfersNs.ITransfer = null,
     transfer_group: java.lang.String = null
   ): ICharge = {
-    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, refunded = refunded, refunds = refunds, source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, receipt_url = receipt_url, refunded = refunded, refunds = refunds, source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])

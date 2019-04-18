@@ -15,15 +15,15 @@ trait IpPermission extends js.Object {
     */
   var IpProtocol: js.UndefOr[String] = js.undefined
   /**
-    * One or more IPv4 ranges.
+    * The IPv4 ranges.
     */
   var IpRanges: js.UndefOr[IpRangeList] = js.undefined
   /**
-    * [EC2-VPC only] One or more IPv6 ranges.
+    * [EC2-VPC only] The IPv6 ranges.
     */
   var Ipv6Ranges: js.UndefOr[Ipv6RangeList] = js.undefined
   /**
-    * [EC2-VPC only] One or more prefix list IDs for an AWS service. With AuthorizeSecurityGroupEgress, this is the AWS service that you want to access through a VPC endpoint from instances associated with the security group.
+    * [EC2-VPC only] The prefix list IDs for an AWS service. With AuthorizeSecurityGroupEgress, this is the AWS service that you want to access through a VPC endpoint from instances associated with the security group.
     */
   var PrefixListIds: js.UndefOr[PrefixListIdList] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait IpPermission extends js.Object {
     */
   var ToPort: js.UndefOr[Integer] = js.undefined
   /**
-    * One or more security group and AWS account ID pairs.
+    * The security group and AWS account ID pairs.
     */
   var UserIdGroupPairs: js.UndefOr[UserIdGroupPairList] = js.undefined
 }

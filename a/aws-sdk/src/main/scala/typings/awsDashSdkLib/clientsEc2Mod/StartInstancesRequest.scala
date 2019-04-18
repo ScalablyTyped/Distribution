@@ -15,7 +15,7 @@ trait StartInstancesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more instance IDs.
+    * The IDs of the instances.
     */
   var InstanceIds: InstanceIdStringList
 }

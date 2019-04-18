@@ -21,6 +21,7 @@ object IncomingHttpHeaders {
     `:path`: java.lang.String = null,
     `:scheme`: java.lang.String = null,
     accept: java.lang.String = null,
+    `accept-language`: java.lang.String = null,
     `accept-patch`: java.lang.String = null,
     `accept-ranges`: java.lang.String = null,
     `access-control-allow-credentials`: java.lang.String = null,
@@ -80,6 +81,7 @@ object IncomingHttpHeaders {
     if (`:path` != null) __obj.updateDynamic(":path")(`:path`)
     if (`:scheme` != null) __obj.updateDynamic(":scheme")(`:scheme`)
     if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (`accept-language` != null) __obj.updateDynamic("accept-language")(`accept-language`)
     if (`accept-patch` != null) __obj.updateDynamic("accept-patch")(`accept-patch`)
     if (`accept-ranges` != null) __obj.updateDynamic("accept-ranges")(`accept-ranges`)
     if (`access-control-allow-credentials` != null) __obj.updateDynamic("access-control-allow-credentials")(`access-control-allow-credentials`)

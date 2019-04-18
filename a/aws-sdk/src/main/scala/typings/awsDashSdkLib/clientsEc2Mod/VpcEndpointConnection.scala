@@ -9,7 +9,7 @@ trait VpcEndpointConnection extends js.Object {
   /**
     * The date and time the VPC endpoint was created.
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
+  var CreationTimestamp: js.UndefOr[MillisecondDateTime] = js.undefined
   /**
     * The ID of the service to which the endpoint is connected.
     */
@@ -31,7 +31,7 @@ trait VpcEndpointConnection extends js.Object {
 object VpcEndpointConnection {
   @scala.inline
   def apply(
-    CreationTimestamp: DateTime = null,
+    CreationTimestamp: MillisecondDateTime = null,
     ServiceId: String = null,
     VpcEndpointId: String = null,
     VpcEndpointOwner: String = null,

@@ -19,11 +19,11 @@ trait SecurityGroup extends js.Object {
     */
   var GroupName: js.UndefOr[String] = js.undefined
   /**
-    * One or more inbound rules associated with the security group.
+    * The inbound rules associated with the security group.
     */
   var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   /**
-    * [EC2-VPC] One or more outbound rules associated with the security group.
+    * [EC2-VPC] The outbound rules associated with the security group.
     */
   var IpPermissionsEgress: js.UndefOr[IpPermissionList] = js.undefined
   /**

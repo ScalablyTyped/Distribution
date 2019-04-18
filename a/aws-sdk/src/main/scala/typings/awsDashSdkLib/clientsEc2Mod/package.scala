@@ -928,6 +928,7 @@ package object clientsEc2Mod {
   type Long = scala.Double
   type MarketType = awsDashSdkLib.awsDashSdkLibStrings.spot | java.lang.String
   type MaxResults = scala.Double
+  type MillisecondDateTime = stdLib.Date
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.disabled
     - awsDashSdkLib.awsDashSdkLibStrings.disabling

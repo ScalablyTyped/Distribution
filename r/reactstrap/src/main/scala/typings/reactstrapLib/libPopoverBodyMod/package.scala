@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPopoverBodyMod {
-  type PopoverBody[T] = reactLib.reactMod.Component[PopoverBodyProps[T], js.Object, js.Any]
-  type PopoverBodyProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameCssModuleTag with T
+  type PopoverBody[T] = reactLib.reactMod.Component[PopoverBodyProps, js.Object, js.Any]
 }

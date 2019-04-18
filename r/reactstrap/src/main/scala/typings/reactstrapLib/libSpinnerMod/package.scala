@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libSpinnerMod {
-  type Spinner[T] = reactLib.reactMod.Component[SpinnerProps[T], js.Object, js.Any]
-  type SpinnerProps[T] = reactLib.reactMod.HTMLProps[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameColorCssModuleSize with T
+  type Spinner[T] = reactLib.reactMod.Component[SpinnerProps, js.Object, js.Any]
 }

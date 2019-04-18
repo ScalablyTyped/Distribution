@@ -54,6 +54,10 @@ trait IInvoiceLineItem
     */
   var subscription: java.lang.String
   /**
+    * The subscription item that generated this invoice item. Left empty if the line item is not an explicit result of a subscription.
+    */
+  var subscription_item: java.lang.String
+  /**
     * A string identifying the type of the source of this line item, either an invoiceitem or a subscription
     */
   var `type`: stripeLib.stripeLibStrings.invoiceitem | stripeLib.stripeLibStrings.subscription
@@ -75,9 +79,10 @@ object IInvoiceLineItem {
     proration: scala.Boolean,
     quantity: scala.Double,
     subscription: java.lang.String,
+    subscription_item: java.lang.String,
     `type`: stripeLib.stripeLibStrings.invoiceitem | stripeLib.stripeLibStrings.subscription
   ): IInvoiceLineItem = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription, subscription_item = subscription_item)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceLineItem]

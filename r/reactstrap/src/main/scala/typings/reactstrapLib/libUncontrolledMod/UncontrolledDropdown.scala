@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledDropdown")
 @js.native
 class UncontrolledDropdown[T] ()
-  extends reactLib.reactMod.Component[reactstrapLib.libDropdownMod.UncontrolledDropdownProps[T], js.Object, js.Any]
+  extends reactLib.reactMod.Component[reactstrapLib.libDropdownMod.UncontrolledDropdownProps, js.Object, js.Any]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeAddressesRequest extends js.Object {
   /**
-    * [EC2-VPC] One or more allocation IDs. Default: Describes all your Elastic IP addresses.
+    * [EC2-VPC] Information about the allocation IDs.
     */
   var AllocationIds: js.UndefOr[AllocationIdList] = js.undefined
   /**

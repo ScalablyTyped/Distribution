@@ -21645,6 +21645,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
   
   @js.native
+  sealed trait Zeina
+    extends awsDashSdkLib.clientsPollyMod._VoiceId
+  
+  @js.native
   sealed trait Zhiyu
     extends awsDashSdkLib.clientsPollyMod._VoiceId
   
@@ -21866,6 +21870,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ar
     extends awsDashSdkLib.clientsCloudsearchMod._AnalysisSchemeLanguage
+  
+  @js.native
+  sealed trait arb
+    extends awsDashSdkLib.clientsPollyMod._LanguageCode
   
   @js.native
   sealed trait archive
@@ -36654,6 +36662,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ZW: ZW = "ZW".asInstanceOf[ZW]
   @scala.inline
+  def Zeina: Zeina = "Zeina".asInstanceOf[Zeina]
+  @scala.inline
   def Zhiyu: Zhiyu = "Zhiyu".asInstanceOf[Zhiyu]
   @scala.inline
   def Zip: Zip = "Zip".asInstanceOf[Zip]
@@ -36741,6 +36751,8 @@ object awsDashSdkLibStrings {
   def `appstream:fleet:DesiredCapacity`: `appstream:fleet:DesiredCapacity` = "appstream:fleet:DesiredCapacity".asInstanceOf[`appstream:fleet:DesiredCapacity`]
   @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
+  def arb: arb = "arb".asInstanceOf[arb]
   @scala.inline
   def archive: archive = "archive".asInstanceOf[archive]
   @scala.inline

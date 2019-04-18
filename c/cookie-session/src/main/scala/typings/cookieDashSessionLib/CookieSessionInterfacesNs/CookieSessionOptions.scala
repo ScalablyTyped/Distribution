@@ -21,7 +21,7 @@ trait CookieSessionOptions extends js.Object {
   /**
     * The list of keys to use to sign & verify cookie values. Set cookies are always signed with keys[0], while the other keys are valid for verification, allowing for key rotation.
     */
-  var keys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var keys: js.UndefOr[js.Array[java.lang.String] | keygripLib.keygripMod.Keygrip] = js.undefined
   /**
     * a number representing the milliseconds from Date.now() for expiry.
     */
@@ -69,7 +69,7 @@ object CookieSessionOptions {
     domain: java.lang.String = null,
     expires: stdLib.Date = null,
     httpOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    keys: js.Array[java.lang.String] = null,
+    keys: js.Array[java.lang.String] | keygripLib.keygripMod.Keygrip = null,
     maxAge: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     overwrite: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,7 +84,7 @@ object CookieSessionOptions {
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (expires != null) __obj.updateDynamic("expires")(expires)
     if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)

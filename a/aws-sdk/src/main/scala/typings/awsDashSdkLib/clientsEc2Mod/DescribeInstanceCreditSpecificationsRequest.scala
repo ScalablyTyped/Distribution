@@ -11,11 +11,11 @@ trait DescribeInstanceCreditSpecificationsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.    instance-id - The ID of the instance.  
+    * The filters.    instance-id - The ID of the instance.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * One or more instance IDs. Default: Describes all your instances. Constraints: Maximum 1000 explicitly specified instance IDs.
+    * The instance IDs. Default: Describes all your instances. Constraints: Maximum 1000 explicitly specified instance IDs.
     */
   var InstanceIds: js.UndefOr[InstanceIdStringList] = js.undefined
   /**

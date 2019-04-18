@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledAlert")
 @js.native
 class UncontrolledAlert[T] ()
-  extends reactLib.reactMod.Component[reactstrapLib.libAlertMod.UncontrolledAlertProps[T], js.Object, js.Any]
+  extends reactLib.reactMod.Component[reactstrapLib.libAlertMod.UncontrolledAlertProps, js.Object, js.Any]
 

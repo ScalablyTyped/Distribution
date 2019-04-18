@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeBundleTasksResult extends js.Object {
   /**
-    * Information about one or more bundle tasks.
+    * Information about the bundle tasks.
     */
   var BundleTasks: js.UndefOr[BundleTaskList] = js.undefined
 }

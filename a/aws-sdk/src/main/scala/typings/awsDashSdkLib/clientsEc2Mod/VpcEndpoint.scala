@@ -9,7 +9,7 @@ trait VpcEndpoint extends js.Object {
   /**
     * The date and time the VPC endpoint was created.
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
+  var CreationTimestamp: js.UndefOr[MillisecondDateTime] = js.undefined
   /**
     * (Interface endpoint) The DNS entries for the endpoint.
     */
@@ -30,6 +30,10 @@ trait VpcEndpoint extends js.Object {
     * (Interface endpoint) Indicates whether the VPC is associated with a private hosted zone.
     */
   var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Indicates whether the VPC Endpoint is being managed by its service.
+    */
+  var RequesterManaged: js.UndefOr[Boolean] = js.undefined
   /**
     * (Gateway endpoint) One or more route tables associated with the endpoint.
     */
@@ -63,12 +67,13 @@ trait VpcEndpoint extends js.Object {
 object VpcEndpoint {
   @scala.inline
   def apply(
-    CreationTimestamp: DateTime = null,
+    CreationTimestamp: MillisecondDateTime = null,
     DnsEntries: DnsEntrySet = null,
     Groups: GroupIdentifierSet = null,
     NetworkInterfaceIds: ValueStringList = null,
     PolicyDocument: String = null,
     PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined,
+    RequesterManaged: js.UndefOr[Boolean] = js.undefined,
     RouteTableIds: ValueStringList = null,
     ServiceName: String = null,
     State: State = null,
@@ -84,6 +89,7 @@ object VpcEndpoint {
     if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds)
     if (PolicyDocument != null) __obj.updateDynamic("PolicyDocument")(PolicyDocument)
     if (!js.isUndefined(PrivateDnsEnabled)) __obj.updateDynamic("PrivateDnsEnabled")(PrivateDnsEnabled)
+    if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged)
     if (RouteTableIds != null) __obj.updateDynamic("RouteTableIds")(RouteTableIds)
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-motion-slider"
-version := "0.4.1-dt-20190322Z-3834a9"
+version := "0.4.1-dt-20190322Z-9bcd9b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-7e744c",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-5f45a9",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190322Z-753026",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-26e47b",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190322Z-72171d",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

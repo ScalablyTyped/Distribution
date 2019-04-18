@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTagMod {
-  type Tag[T] = reactLib.reactMod.Component[TagProps[T], js.Object, js.Any]
-  type TagProps[T] = reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] with reactstrapLib.Anon_ClassNameColor with T
+  type Tag[T] = reactLib.reactMod.Component[TagProps, js.Object, js.Any]
 }

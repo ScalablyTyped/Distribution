@@ -10,7 +10,7 @@ trait TableCardHeaderProps
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var actions: js.UndefOr[reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]]] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
   var contextualChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var contextualTitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -33,7 +33,7 @@ object TableCardHeaderProps {
     StringDictionary: // for the `component` prop until refactored out
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     actions: reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]] = null,
-    children: reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]] = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     component: reactLib.reactMod.ReactType[_] = null,
     contextualChildren: reactLib.reactMod.ReactNode = null,
